@@ -1,35 +1,35 @@
 package typings.blueprintjsSelect
 
-import org.scalablytyped.runtime.TopLevel
-import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
-import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsCore.propsMod.HTMLInputProps
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsCore.tagInputMod.TagInputAddMethod
-import typings.blueprintjsCore.tagMod.TagProps
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.PopoverInteractionKind
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
+import typings.blueprintjsCore.libEsmComponentsTagInputTagInputMod.TagInputAddMethod
+import typings.blueprintjsCore.libEsmComponentsTagTagMod.TagProps
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsPopover2.anon.PartialModifieranyobject
+import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
+import typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind
 import typings.blueprintjsPopover2.mod.Popover2
-import typings.blueprintjsPopover2.popover2Mod.Popover2InteractionKind
-import typings.blueprintjsPopover2.popupKindMod.PopupKind
+import typings.blueprintjsSelect.`libEsm@ExamplesFilmsMod`.Film
 import typings.blueprintjsSelect.blueprintjsSelectBooleans.`false`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.first
 import typings.blueprintjsSelect.blueprintjsSelectStrings.last
-import typings.blueprintjsSelect.itemListRendererMod.ItemListRenderer
-import typings.blueprintjsSelect.itemListRendererMod.ItemListRendererProps
-import typings.blueprintjsSelect.itemRendererMod.ItemRenderer
-import typings.blueprintjsSelect.itemRendererMod.ItemRendererProps
-import typings.blueprintjsSelect.listItemsPropsMod.ItemsEqualProp
-import typings.blueprintjsSelect.listItemsUtilsMod.CreateNewItem
-import typings.blueprintjsSelect.predicateMod.ItemListPredicate
-import typings.blueprintjsSelect.predicateMod.ItemPredicate
+import typings.blueprintjsSelect.libEsmCommonItemListRendererMod.ItemListRenderer
+import typings.blueprintjsSelect.libEsmCommonItemListRendererMod.ItemListRendererProps
+import typings.blueprintjsSelect.libEsmCommonItemRendererMod.ItemRenderer
+import typings.blueprintjsSelect.libEsmCommonItemRendererMod.ItemRendererProps
+import typings.blueprintjsSelect.libEsmCommonListItemsPropsMod.ItemsEqualProp
+import typings.blueprintjsSelect.libEsmCommonListItemsUtilsMod.CreateNewItem
+import typings.blueprintjsSelect.libEsmCommonPredicateMod.ItemListPredicate
+import typings.blueprintjsSelect.libEsmCommonPredicateMod.ItemPredicate
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
 import typings.popperJs.mod.Placement
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.typesMod.PositioningStrategy
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libTypesMod.PositioningStrategy
 import typings.react.mod.ChangeEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
@@ -53,6 +53,31 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait CreatedItems extends StObject {
+    
+    var createdItems: js.Array[Film]
+    
+    var items: js.Array[Film]
+  }
+  object CreatedItems {
+    
+    inline def apply(createdItems: js.Array[Film], items: js.Array[Film]): CreatedItems = {
+      val __obj = js.Dynamic.literal(createdItems = createdItems.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreatedItems]
+    }
+    
+    extension [Self <: CreatedItems](x: Self) {
+      
+      inline def setCreatedItems(value: js.Array[Film]): Self = StObject.set(x, "createdItems", value.asInstanceOf[js.Any])
+      
+      inline def setCreatedItemsVarargs(value: Film*): Self = StObject.set(x, "createdItems", js.Array(value*))
+      
+      inline def setItems(value: js.Array[Film]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsVarargs(value: Film*): Self = StObject.set(x, "items", js.Array(value*))
+    }
+  }
   
   trait Disabled extends StObject {
     
@@ -186,7 +211,7 @@ object anon {
     var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -194,7 +219,7 @@ object anon {
     var usePortal: js.UndefOr[Boolean] = js.undefined
     
     var wrapperTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
       ] = js.undefined
   }
   object PartialIPopoverProps {
@@ -362,7 +387,9 @@ object anon {
       
       inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
+      ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       
@@ -376,7 +403,9 @@ object anon {
       
       inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
       
-      inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+      inline def setWrapperTagName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
+      ): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
       
       inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
     }
@@ -389,7 +418,7 @@ object anon {
     
     var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
-    var boundary: js.UndefOr[typings.popperjsCore.enumsMod.Boundary] = js.undefined
+    var boundary: js.UndefOr[typings.popperjsCore.libEnumsMod.Boundary] = js.undefined
     
     var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
@@ -421,9 +450,7 @@ object anon {
     
     var modifiers: js.UndefOr[
         Partial[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-      */ typings.blueprintjsSelect.blueprintjsSelectStrings.PartialOmitPopover2PropsH & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
         ]
       ] = js.undefined
     
@@ -449,7 +476,7 @@ object anon {
     
     var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
     
-    var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
+    var placement: js.UndefOr[typings.popperjsCore.libEnumsMod.Placement] = js.undefined
     
     var popoverClassName: js.UndefOr[String] = js.undefined
     
@@ -490,7 +517,7 @@ object anon {
       
       inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
       
-      inline def setBoundary(value: typings.popperjsCore.enumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: typings.popperjsCore.libEnumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
       inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
@@ -554,9 +581,7 @@ object anon {
       
       inline def setModifiers(
         value: Partial[
-              /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>}
-        */ typings.blueprintjsSelect.blueprintjsSelectStrings.PartialOmitPopover2PropsH & TopLevel[Any]
+              /* import warning: importer.ImportType#apply Failed type conversion: {[ M in @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.StrictModifierNames ]: std.Partial<std.Omit<react-popper.react-popper.StrictModifier<M>, 'name'>>} */ js.Any
             ]
       ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -598,7 +623,7 @@ object anon {
       
       inline def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
       
-      inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: typings.popperjsCore.libEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       

@@ -19,6 +19,10 @@ object Helpers {
   inline def convertArrayValueToObject(src: Any, propName: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayValueToObject")(src.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   inline def convertArrayValueToObject(src: Any, propName: String, dest: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayValueToObject")(src.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
+  inline def convertDateToString(date: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDateToString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def convertValToQuestionVal(`val`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertValToQuestionVal")(`val`.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
   inline def correctAfterMultiple(a: Double, b: Double, res: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctAfterMultiple")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def correctAfterPlusMinis(a: Double, b: Double, res: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctAfterPlusMinis")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Double]

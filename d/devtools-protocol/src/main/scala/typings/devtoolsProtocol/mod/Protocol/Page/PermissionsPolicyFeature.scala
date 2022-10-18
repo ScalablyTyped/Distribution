@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-downlink`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ect`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-prefers-color-scheme`
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-prefers-reduced-motion`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-rtt`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-save-data`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-ua`
@@ -43,7 +44,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`encrypted-media`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`execution-while-out-of-viewport`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`execution-while-not-rendered`
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.`federated-credentials`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`focus-without-user-activation`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.fullscreen
   - typings.devtoolsProtocol.devtoolsProtocolStrings.frobulate
@@ -51,6 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.geolocation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.gyroscope
   - typings.devtoolsProtocol.devtoolsProtocolStrings.hid
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.`identity-credentials-get`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`idle-detection`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`interest-cohort`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`join-ad-interest-group`
@@ -105,6 +106,8 @@ object PermissionsPolicyFeature {
   
   inline def `ch-prefers-color-scheme`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-prefers-color-scheme` = "ch-prefers-color-scheme".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-prefers-color-scheme`]
   
+  inline def `ch-prefers-reduced-motion`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-prefers-reduced-motion` = "ch-prefers-reduced-motion".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-prefers-reduced-motion`]
+  
   inline def `ch-rtt`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-rtt` = "ch-rtt".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-rtt`]
   
   inline def `ch-save-data`: typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-save-data` = "ch-save-data".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`ch-save-data`]
@@ -157,8 +160,6 @@ object PermissionsPolicyFeature {
   
   inline def `execution-while-out-of-viewport`: typings.devtoolsProtocol.devtoolsProtocolStrings.`execution-while-out-of-viewport` = "execution-while-out-of-viewport".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`execution-while-out-of-viewport`]
   
-  inline def `federated-credentials`: typings.devtoolsProtocol.devtoolsProtocolStrings.`federated-credentials` = "federated-credentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`federated-credentials`]
-  
   inline def `focus-without-user-activation`: typings.devtoolsProtocol.devtoolsProtocolStrings.`focus-without-user-activation` = "focus-without-user-activation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`focus-without-user-activation`]
   
   inline def frobulate: typings.devtoolsProtocol.devtoolsProtocolStrings.frobulate = "frobulate".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.frobulate]
@@ -172,6 +173,8 @@ object PermissionsPolicyFeature {
   inline def gyroscope: typings.devtoolsProtocol.devtoolsProtocolStrings.gyroscope = "gyroscope".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.gyroscope]
   
   inline def hid: typings.devtoolsProtocol.devtoolsProtocolStrings.hid = "hid".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hid]
+  
+  inline def `identity-credentials-get`: typings.devtoolsProtocol.devtoolsProtocolStrings.`identity-credentials-get` = "identity-credentials-get".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`identity-credentials-get`]
   
   inline def `idle-detection`: typings.devtoolsProtocol.devtoolsProtocolStrings.`idle-detection` = "idle-detection".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`idle-detection`]
   

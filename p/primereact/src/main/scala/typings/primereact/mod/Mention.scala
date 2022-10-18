@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.mentionMod.MentionProps
+import typings.primereact.mentionMentionMod.MentionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Mention")
 @js.native
 open class Mention protected ()
-  extends typings.primereact.mentionMod.Mention {
+  extends typings.primereact.mentionMentionMod.Mention {
   def this(props: MentionProps) = this()
   /**
     * @deprecated

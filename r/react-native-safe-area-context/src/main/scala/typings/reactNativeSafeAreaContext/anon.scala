@@ -1,6 +1,6 @@
 package typings.reactNativeSafeAreaContext
 
-import typings.reactNative.codegenTypesMod.Double
+import typings.reactNative.librariesTypesCodegenTypesMod.Double
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

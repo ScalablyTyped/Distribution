@@ -1,10 +1,10 @@
 package typings.cypress.mochaMod
 
-import typings.cypress.Mocha.ISuite
+import typings.cypress.Mocha.RunnerConstants
 import typings.cypress.Mocha.Suite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runner "pending" event
 // #region Runner untyped events
@@ -38,20 +38,25 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Runner")
 @js.native
-class Runner protected ()
-  extends typings.cypress.Mocha.Runner {
-  /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
-  def this(suite: ISuite, delay: Boolean) = this()
+open class Runner protected ()
+  extends StObject
+     with typings.cypress.Mocha.Runner {
   def this(suite: Suite, delay: Boolean) = this()
 }
-
-/* static members */
-@JSImport("mocha", "Runner")
-@js.native
-object Runner extends js.Object {
+object Runner {
+  
+  @JSImport("mocha", "Runner")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mocha", "Runner.constants")
+  @js.native
+  val constants: RunnerConstants = js.native
+  
   /**
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */
-  /* protected */ def immediately(callback: js.Function): Unit = js.native
+  /* static member */
+  inline def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

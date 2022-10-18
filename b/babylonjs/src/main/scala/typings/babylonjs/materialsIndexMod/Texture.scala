@@ -1,9 +1,9 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.observableMod.Observable
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
+import typings.babylonjs.materialsTexturesTextureMod.ITextureCreationOptions
+import typings.babylonjs.miscObservableMod.Observable
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.textureMod.ITextureCreationOptions
-import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Blob
 import typings.std.HTMLImageElement
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "Texture")
 @js.native
 open class Texture protected ()
-  extends typings.babylonjs.texturesIndexMod.Texture {
+  extends typings.babylonjs.materialsTexturesIndexMod.Texture {
   /**
     * Instantiates a new texture.
     * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
@@ -107,7 +107,7 @@ object Texture {
     onError: js.UndefOr[Nullable[js.Function0[Unit]]],
     format: js.UndefOr[Double],
     creationFlags: js.UndefOr[Double]
-  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+  ): typings.babylonjs.materialsTexturesTextureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesTextureMod.Texture]
   
   /** Equirectangular coordinates mode */
   @JSImport("babylonjs/Materials/index", "Texture.EQUIRECTANGULAR_MODE")
@@ -204,7 +204,7 @@ object Texture {
     ],
     format: js.UndefOr[Double],
     creationFlags: js.UndefOr[Double]
-  ): typings.babylonjs.textureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.textureMod.Texture]
+  ): typings.babylonjs.materialsTexturesTextureMod.Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesTextureMod.Texture]
   
   /** Texture is repeating and mirrored */
   @JSImport("babylonjs/Materials/index", "Texture.MIRROR_ADDRESSMODE")
@@ -251,8 +251,8 @@ object Texture {
     */
   @JSImport("babylonjs/Materials/index", "Texture.OnTextureLoadErrorObservable")
   @js.native
-  def OnTextureLoadErrorObservable: Observable[typings.babylonjs.baseTextureMod.BaseTexture] = js.native
-  inline def OnTextureLoadErrorObservable_=(x: Observable[typings.babylonjs.baseTextureMod.BaseTexture]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnTextureLoadErrorObservable")(x.asInstanceOf[js.Any])
+  def OnTextureLoadErrorObservable: Observable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture] = js.native
+  inline def OnTextureLoadErrorObservable_=(x: Observable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnTextureLoadErrorObservable")(x.asInstanceOf[js.Any])
   
   /** Planar coordinates mode */
   @JSImport("babylonjs/Materials/index", "Texture.PLANAR_MODE")
@@ -271,7 +271,7 @@ object Texture {
     * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
     * @returns The parsed texture if successful
     */
-  inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.baseTextureMod.BaseTexture]]
+  inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture]]
   
   /** Inverse Cubic coordinates mode */
   @JSImport("babylonjs/Materials/index", "Texture.SKYBOX_MODE")
@@ -312,22 +312,22 @@ object Texture {
   /**
     * @internal
     */
-  inline def _CreateMirror(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): typings.babylonjs.mirrorTextureMod.MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mirrorTextureMod.MirrorTexture]
+  inline def _CreateMirror(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): typings.babylonjs.materialsTexturesMirrorTextureMod.MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesMirrorTextureMod.MirrorTexture]
   
   /**
     * @internal
     */
-  inline def _CreateRenderTargetTexture(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): typings.babylonjs.renderTargetTextureMod.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]
+  inline def _CreateRenderTargetTexture(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture]
   inline def _CreateRenderTargetTexture(
     name: String,
     renderTargetSize: Double,
     scene: Scene,
     generateMipMaps: Boolean,
     creationFlags: Double
-  ): typings.babylonjs.renderTargetTextureMod.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.renderTargetTextureMod.RenderTargetTexture]
+  ): typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture]
   
   /**
     * @internal
     */
-  inline def _CubeTextureParser(jsonTexture: Any, scene: Scene, rootUrl: String): typings.babylonjs.cubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.cubeTextureMod.CubeTexture]
+  inline def _CubeTextureParser(jsonTexture: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
 }

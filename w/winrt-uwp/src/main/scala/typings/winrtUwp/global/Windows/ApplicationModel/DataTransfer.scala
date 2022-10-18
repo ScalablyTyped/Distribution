@@ -24,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DataTransfer {
   
   /** Gets and sets information from the clipboard object. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard")
   @js.native
-  abstract class Clipboard ()
+  open class Clipboard ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.Clipboard
   object Clipboard {
@@ -105,9 +105,9 @@ object DataTransfer {
   }
   
   /** Defines a set of properties to use with a DataPackage object. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySet")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySet")
   @js.native
-  abstract class DataPackagePropertySet ()
+  open class DataPackagePropertySet ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackagePropertySet {
     
@@ -215,9 +215,9 @@ object DataTransfer {
   }
   
   /** Gets the set of properties of a DataPackageView object. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView")
   @js.native
-  abstract class DataPackagePropertySetView ()
+  open class DataPackagePropertySetView ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView {
     
@@ -304,16 +304,16 @@ object DataTransfer {
   }
   
   /** A read-only version of a DataPackage . Apps that receive shared content get this object when acquiring content. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackageView")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackageView")
   @js.native
-  abstract class DataPackageView ()
+  open class DataPackageView ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataPackageView
   
   /** Used by a source app's deferral delegate to notify a DataPackage object that the source app will produce data from another asynchronous function. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderDeferral")
   @js.native
-  abstract class DataProviderDeferral ()
+  open class DataProviderDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataProviderDeferral {
     
@@ -323,9 +323,9 @@ object DataTransfer {
   }
   
   /** An object of this type is passed to the DataProviderHandler delegate. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderRequest")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderRequest")
   @js.native
-  abstract class DataProviderRequest ()
+  open class DataProviderRequest ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataProviderRequest {
     
@@ -353,9 +353,9 @@ object DataTransfer {
   }
   
   /** Lets your app supply the content the user wants to share or specify a message, if an error occurs. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequest")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequest")
   @js.native
-  abstract class DataRequest ()
+  open class DataRequest ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataRequest {
     
@@ -383,9 +383,9 @@ object DataTransfer {
   }
   
   /** Enables you to exchange content with a target app asynchronously. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestDeferral")
   @js.native
-  abstract class DataRequestDeferral ()
+  open class DataRequestDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataRequestDeferral {
     
@@ -395,9 +395,9 @@ object DataTransfer {
   }
   
   /** Contains information about the DataRequested event. The system fires this event when the user invokes the Share UI. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs")
   @js.native
-  abstract class DataRequestedEventArgs ()
+  open class DataRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs {
     
@@ -407,9 +407,9 @@ object DataTransfer {
   }
   
   /** Programmatically initiates an exchange of content with other apps. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
   @js.native
-  abstract class DataTransferManager ()
+  open class DataTransferManager ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataTransferManager
   object DataTransferManager {
@@ -431,9 +431,9 @@ object DataTransfer {
   }
   
   /** Responsible for formatting HTML content that you want to share or add to the Clipboard. Also allows you to get HTML fragments from the content. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.HtmlFormatHelper")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.HtmlFormatHelper")
   @js.native
-  abstract class HtmlFormatHelper ()
+  open class HtmlFormatHelper ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.HtmlFormatHelper
   object HtmlFormatHelper {
@@ -460,9 +460,9 @@ object DataTransfer {
   }
   
   /** Contains info about the action that a target app completed during a paste operation. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
   @js.native
-  abstract class OperationCompletedEventArgs ()
+  open class OperationCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs {
     
@@ -508,17 +508,17 @@ object DataTransfer {
     }
     
     /** Handles the bulk of the work during a share operation. This includes the data that the user wants to share, setting or removing QuickLinks, and informing the system about the status of the operation. */
-    @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation")
     @js.native
-    abstract class ShareOperation ()
+    open class ShareOperation ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation
   }
   
   /** Enables an app to share a file with another app by passing a token as part of a Uri activation. The target app redeems the token to get the file shared by the source app. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.SharedStorageAccessManager")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.SharedStorageAccessManager")
   @js.native
-  abstract class SharedStorageAccessManager ()
+  open class SharedStorageAccessManager ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.SharedStorageAccessManager
   object SharedStorageAccessManager {
@@ -552,9 +552,9 @@ object DataTransfer {
   }
   
   /** Contains static properties that return string values. Each string corresponds to a known format ID. Use this class to avoid errors in using string constants to specify data formats. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats")
   @js.native
-  abstract class StandardDataFormats ()
+  open class StandardDataFormats ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.StandardDataFormats
   object StandardDataFormats {
@@ -621,9 +621,9 @@ object DataTransfer {
   }
   
   /** Contains information about the target app the user chose to share content with. To get this object, you must handle the TargetApplicationChosen event. */
-  @JSGlobal("Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs")
   @js.native
-  abstract class TargetApplicationChosenEventArgs ()
+  open class TargetApplicationChosenEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs {
     

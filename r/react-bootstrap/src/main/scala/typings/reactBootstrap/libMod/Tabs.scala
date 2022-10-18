@@ -1,6 +1,6 @@
 package typings.reactBootstrap.libMod
 
-import typings.reactBootstrap.tabsMod.^
+import typings.reactBootstrap.libTabsMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

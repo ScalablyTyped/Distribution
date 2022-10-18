@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsTrademarkCircleFilledMod.TrademarkCircleFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trademarkCircleFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/TrademarkCircleFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/TrademarkCircleFilled", JSImport.Default)
   @js.native
   val default: TrademarkCircleFilledIconType = js.native
-  
-  @js.native
-  trait TrademarkCircleFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_TrademarkCircleFilledIconType: String = js.native
-  }
   
   type _To = TrademarkCircleFilledIconType
   

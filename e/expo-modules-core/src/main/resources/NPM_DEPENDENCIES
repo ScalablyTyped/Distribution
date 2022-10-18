@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "expo-modules-core" : "0.11.5"
+      "expo-modules-core" : "0.11.8"
     }
   ],
   "test-dependencies" : [
     {
-      "expo-modules-core" : "0.11.5"
+      "expo-modules-core" : "0.11.8"
     }
   ],
   "compile-devDependencies" : [

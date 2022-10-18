@@ -1,9 +1,9 @@
 package typings.fpTs.mod
 
-import typings.fpTs.contravariantMod.Contravariant1
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libContravariantMod.Contravariant1
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libSemigroupMod.Semigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object predicate {
   
   @JSImport("fp-ts", "predicate.Contravariant")
   @js.native
-  val Contravariant: Contravariant1[typings.fpTs.predicateMod.URI] = js.native
+  val Contravariant: Contravariant1[typings.fpTs.libPredicateMod.URI] = js.native
   
   @JSImport("fp-ts", "predicate.URI")
   @js.native
@@ -38,6 +38,7 @@ object predicate {
   
   inline def or[A](second: Predicate[A]): js.Function1[/* first */ Predicate[A], Predicate[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ Predicate[A], Predicate[A]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

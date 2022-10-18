@@ -116,9 +116,6 @@ trait GPUDevice
     * Destroys the device, preventing further operations on it.
     * Outstanding asynchronous operations will fail.
     * Note: It is valid to destroy a device multiple times.
-    * Note: Since no further operations can be enqueued on this device, implementations can abort
-    * outstanding asynchronous operations immediately and free resource allocations, including
-    * mapped memory that was just unmapped.
     */
   def destroy(): Unit = js.native
   
@@ -141,10 +138,9 @@ trait GPUDevice
   val limits: GPUSupportedLimits = js.native
   
   /**
-    * A promise which is created with the device, remains pending for the lifetime of the device,
-    * then resolves when the device is lost.
-    * This attribute is backed by an immutable internal slot of the same name, initially set
-    * to a new promise, and always returns its value.
+    * A slot-backed attribute holding a promise which is created with the device, remains
+    * pending for the lifetime of the device, then resolves when the device is lost.
+    * Upon initialization, it is set to a new promise.
     */
   val lost: js.Promise[GPUDeviceLostInfo] = js.native
   
@@ -155,7 +151,8 @@ trait GPUDevice
   
   /**
     * Pops a GPU error scope off the {@link GPUDevice#[[errorScopeStack]]} for `this`
-    * and resolves to a {@link GPUError} if one was observed by the error scope.
+    * and resolves to **any** {@link GPUError} observed by the error scope, or `null` if none.
+    * There is no guarantee of the ordering of promise resolution.
     */
   def popErrorScope(): js.Promise[GPUError | Null] = js.native
   

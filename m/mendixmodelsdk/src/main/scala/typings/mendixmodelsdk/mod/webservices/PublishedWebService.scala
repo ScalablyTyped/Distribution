@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.webservices
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "webservices.PublishedWebService")
 @js.native
 open class PublishedWebService protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.webservices.PublishedWebService {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.webservices.PublishedWebService {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ object PublishedWebService {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.webservicesMod.webservices.PublishedWebService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PublishedWebService]
+  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedWebService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedWebService]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.PublishedWebService.structureTypeName")

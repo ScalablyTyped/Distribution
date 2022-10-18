@@ -1,15 +1,15 @@
 package typings.expoConfig
 
 import typings.expoConfig.anon.Platform
-import typings.expoConfig.configTypesMod.ProjectConfig
-import typings.expoConfig.extensionsMod.LanguageOptions
+import typings.expoConfig.buildConfigDottypesMod.ProjectConfig
+import typings.expoConfig.buildPathsExtensionsMod.LanguageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathsMod {
   
-  @JSImport("@expo/config/build/paths", JSImport.Namespace)
+  @JSImport("@expo/config/paths", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

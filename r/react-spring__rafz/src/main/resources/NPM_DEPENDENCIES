@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-spring/rafz" : "9.5.4"
+      "@react-spring/rafz" : "9.5.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-spring/rafz" : "9.5.4"
+      "@react-spring/rafz" : "9.5.5"
     }
   ],
   "compile-devDependencies" : [

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rollup.rollupStrings.augmentChunkHash
   - typings.rollup.rollupStrings.outputOptions
   - typings.rollup.rollupStrings.renderDynamicImport
-  - typings.rollup.rollupStrings.resolveAssetUrl
   - typings.rollup.rollupStrings.resolveFileUrl
   - typings.rollup.rollupStrings.resolveImportMeta
 */
@@ -20,8 +19,6 @@ object SyncPluginHooks {
   inline def outputOptions: typings.rollup.rollupStrings.outputOptions = "outputOptions".asInstanceOf[typings.rollup.rollupStrings.outputOptions]
   
   inline def renderDynamicImport: typings.rollup.rollupStrings.renderDynamicImport = "renderDynamicImport".asInstanceOf[typings.rollup.rollupStrings.renderDynamicImport]
-  
-  inline def resolveAssetUrl: typings.rollup.rollupStrings.resolveAssetUrl = "resolveAssetUrl".asInstanceOf[typings.rollup.rollupStrings.resolveAssetUrl]
   
   inline def resolveFileUrl: typings.rollup.rollupStrings.resolveFileUrl = "resolveFileUrl".asInstanceOf[typings.rollup.rollupStrings.resolveFileUrl]
   

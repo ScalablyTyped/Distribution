@@ -1,6 +1,6 @@
 package typings.symbolTree
 
-import typings.symbolTree.treeIteratorMod.IterateFunction
+import typings.symbolTree.libTreeIteratorMod.IterateFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

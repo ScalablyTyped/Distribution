@@ -12,7 +12,15 @@ open class QuestionBooleanModel protected () extends Question {
   def allowClick: Boolean = js.native
   
   /*
-    * Get/set question value in 3 modes: indeterminate (value is empty), true (check is set) and false (check is unset).
+    * Gets or sets the question value as a Boolean value.
+    * 
+    * If you set the `valueTrue` and `valueFalse` properties, the `value` property contains their values instead of Boolean values. This may be inconvenient when you operate the question value in code. To access the standard Boolean values, use the `booleanValue` property.
+    */
+  def booleanValue: Any = js.native
+  def booleanValue_=(`val`: Any): Unit = js.native
+  
+  /*
+    * Obsolete, please use booleanValue property
     */
   def checkedValue: Any = js.native
   def checkedValue_=(`val`: Any): Unit = js.native
@@ -29,24 +37,22 @@ open class QuestionBooleanModel protected () extends Question {
   
   def isDeterminated: Boolean = js.native
   
-  /*
-    * Returns true if the question check will be rendered in indeterminate mode. value is empty.
-    */
   def isIndeterminate: Boolean = js.native
   
-  /*
-    * The checkbox label. If it is empty and showTitle is false then title is rendered
-    */
   def label: String = js.native
   
   /*
-    * Set this property, if you want to have a different label for state when check is unset.
+    * Gets or sets a text label that corresponds to a negative answer.
+    * 
+    * Default value: "No"
     */
   def labelFalse: Any = js.native
   def labelFalse_=(`val`: Any): Unit = js.native
   
   /*
-    * Set this property, if you want to have a different label for state when check is set.
+    * Gets or sets a text label that corresponds to a positive answer.
+    * 
+    * Default value: "Yes"
     */
   def labelTrue: Any = js.native
   def labelTrue_=(`val`: Any): Unit = js.native
@@ -67,20 +73,21 @@ open class QuestionBooleanModel protected () extends Question {
   
   def onSwitchClickModel(event: Any): Boolean = js.native
   
-  /*
-    * Set this property to true to show the question title. It is hidden by default.
-    */
   var showTitle: Boolean = js.native
   
   def svgIcon: String = js.native
   
   /*
-    * Set this property, if you want to have a different value from false when check is unset.
+    * A value to save in survey results when respondents give a negative answer.
+    * 
+    * Default value: `false`
     */
   var valueFalse: Any = js.native
   
   /*
-    * Set this property, if you want to have a different value from true when check is set.
+    * A value to save in survey results when respondents give a positive answer.
+    * 
+    * Default value: `true`
     */
   var valueTrue: Any = js.native
 }

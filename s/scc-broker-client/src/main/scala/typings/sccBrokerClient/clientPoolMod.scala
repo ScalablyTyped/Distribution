@@ -8,7 +8,7 @@ import typings.sccBrokerClient.sccBrokerClientStrings.publish
 import typings.sccBrokerClient.sccBrokerClientStrings.publishFail
 import typings.sccBrokerClient.sccBrokerClientStrings.subscribe
 import typings.sccBrokerClient.sccBrokerClientStrings.subscribeFail
-import typings.socketclusterClient.clientsocketMod.SubscribeOptions
+import typings.socketclusterClient.libClientsocketMod.SubscribeOptions
 import typings.socketclusterClient.mod.AGClientSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

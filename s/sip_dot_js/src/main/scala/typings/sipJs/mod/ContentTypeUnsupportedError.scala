@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "ContentTypeUnsupportedError")
 @js.native
 open class ContentTypeUnsupportedError ()
-  extends typings.sipJs.apiMod.ContentTypeUnsupportedError {
+  extends typings.sipJs.libApiMod.ContentTypeUnsupportedError {
   def this(message: String) = this()
 }

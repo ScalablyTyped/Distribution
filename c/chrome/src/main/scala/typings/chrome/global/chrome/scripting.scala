@@ -34,4 +34,9 @@ object scripting {
   inline def insertCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(injection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def insertCSS_Promise(injection: CSSInjection): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCSS")(injection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def removeCSS(injection: CSSInjection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(injection.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(injection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeCSS_Promise(injection: CSSInjection): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCSS")(injection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

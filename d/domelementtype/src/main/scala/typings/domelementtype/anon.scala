@@ -1,6 +1,6 @@
 package typings.domelementtype
 
-import typings.domelementtype.esmMod.ElementType
+import typings.domelementtype.libEsmMod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

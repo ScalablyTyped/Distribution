@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "ProvisioningRequest")
 @js.native
 open class ProvisioningRequest[Params, ResBody, ReqBody, ReqQuery] protected ()
-  extends typings.matrixAppserviceBridge.provisioningMod.ProvisioningRequest[Params, ResBody, ReqBody, ReqQuery] {
+  extends typings.matrixAppserviceBridge.libProvisioningMod.ProvisioningRequest[Params, ResBody, ReqBody, ReqQuery] {
   def this(
     expressReq: Request_[Params, ResBody, ReqBody, ReqQuery, Record[String, Any]],
     userId: String,

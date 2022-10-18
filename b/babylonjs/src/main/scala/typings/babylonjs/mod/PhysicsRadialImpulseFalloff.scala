@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PhysicsRadialImpulseFalloff extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff & Double] = js.native
   
-  /* 0 */ val Constant: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
+  /* 0 */ val Constant: typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
   
-  /* 1 */ val Linear: typings.babylonjs.physicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
+  /* 1 */ val Linear: typings.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
 }

@@ -10,22 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueReactivityStrings {
   
   @js.native
-  sealed trait DeepReadonly extends StObject
-  inline def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
-  
-  @js.native
-  sealed trait ShallowUnwrapRef extends StObject
-  inline def ShallowUnwrapRef: ShallowUnwrapRef = "ShallowUnwrapRef".asInstanceOf[ShallowUnwrapRef]
-  
-  @js.native
-  sealed trait ToRefs extends StObject
-  inline def ToRefs: ToRefs = "ToRefs".asInstanceOf[ToRefs]
-  
-  @js.native
-  sealed trait UnwrapRefSimple extends StObject
-  inline def UnwrapRefSimple: UnwrapRefSimple = "UnwrapRefSimple".asInstanceOf[UnwrapRefSimple]
-  
-  @js.native
   sealed trait __v_isReactive
     extends StObject
        with ReactiveFlags

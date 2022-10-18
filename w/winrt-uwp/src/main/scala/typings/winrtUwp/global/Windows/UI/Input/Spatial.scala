@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Spatial {
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureRecognizer")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialGestureRecognizer")
   @js.native
-  abstract class SpatialGestureRecognizer ()
+  open class SpatialGestureRecognizer ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialGestureRecognizer {
     
@@ -164,9 +164,9 @@ object Spatial {
     inline def tap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tap")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs")
   @js.native
-  abstract class SpatialHoldCanceledEventArgs ()
+  open class SpatialHoldCanceledEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialHoldCanceledEventArgs {
     
@@ -174,9 +174,9 @@ object Spatial {
     var interactionSourceKind: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldCompletedEventArgs")
   @js.native
-  abstract class SpatialHoldCompletedEventArgs ()
+  open class SpatialHoldCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialHoldCompletedEventArgs {
     
@@ -184,9 +184,9 @@ object Spatial {
     var interactionSourceKind: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldStartedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialHoldStartedEventArgs")
   @js.native
-  abstract class SpatialHoldStartedEventArgs ()
+  open class SpatialHoldStartedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialHoldStartedEventArgs {
     
@@ -198,9 +198,9 @@ object Spatial {
     var tryGetPointerPose: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteraction")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteraction")
   @js.native
-  abstract class SpatialInteraction ()
+  open class SpatialInteraction ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteraction {
     
@@ -208,9 +208,9 @@ object Spatial {
     var sourceState: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionDetectedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionDetectedEventArgs")
   @js.native
-  abstract class SpatialInteractionDetectedEventArgs ()
+  open class SpatialInteractionDetectedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionDetectedEventArgs {
     
@@ -226,9 +226,9 @@ object Spatial {
     var tryGetPointerPose: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionManager")
   @js.native
-  abstract class SpatialInteractionManager ()
+  open class SpatialInteractionManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionManager {
     
@@ -281,9 +281,9 @@ object Spatial {
     inline def getForCurrentView_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getForCurrentView")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSource")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSource")
   @js.native
-  abstract class SpatialInteractionSource ()
+  open class SpatialInteractionSource ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSource {
     
@@ -295,9 +295,9 @@ object Spatial {
     var kind: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs")
   @js.native
-  abstract class SpatialInteractionSourceEventArgs ()
+  open class SpatialInteractionSourceEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceEventArgs {
     
@@ -335,9 +335,9 @@ object Spatial {
     inline def voice_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("voice")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceLocation")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceLocation")
   @js.native
-  abstract class SpatialInteractionSourceLocation ()
+  open class SpatialInteractionSourceLocation ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceLocation {
     
@@ -349,9 +349,9 @@ object Spatial {
     var velocity: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceProperties")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceProperties")
   @js.native
-  abstract class SpatialInteractionSourceProperties ()
+  open class SpatialInteractionSourceProperties ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceProperties {
     
@@ -367,9 +367,9 @@ object Spatial {
     var tryGetSourceLossMitigationDirection: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceState")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionSourceState")
   @js.native
-  abstract class SpatialInteractionSourceState ()
+  open class SpatialInteractionSourceState ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialInteractionSourceState {
     
@@ -393,9 +393,9 @@ object Spatial {
     var tryGetPointerPose: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationCanceledEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationCanceledEventArgs")
   @js.native
-  abstract class SpatialManipulationCanceledEventArgs ()
+  open class SpatialManipulationCanceledEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationCanceledEventArgs {
     
@@ -403,9 +403,9 @@ object Spatial {
     var interactionSourceKind: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationCompletedEventArgs")
   @js.native
-  abstract class SpatialManipulationCompletedEventArgs ()
+  open class SpatialManipulationCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationCompletedEventArgs {
     
@@ -417,9 +417,9 @@ object Spatial {
     var tryGetCumulativeDelta: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationDelta")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationDelta")
   @js.native
-  abstract class SpatialManipulationDelta ()
+  open class SpatialManipulationDelta ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationDelta {
     
@@ -427,9 +427,9 @@ object Spatial {
     var translation: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs")
   @js.native
-  abstract class SpatialManipulationStartedEventArgs ()
+  open class SpatialManipulationStartedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationStartedEventArgs {
     
@@ -441,9 +441,9 @@ object Spatial {
     var tryGetPointerPose: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationUpdatedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialManipulationUpdatedEventArgs")
   @js.native
-  abstract class SpatialManipulationUpdatedEventArgs ()
+  open class SpatialManipulationUpdatedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialManipulationUpdatedEventArgs {
     
@@ -455,9 +455,9 @@ object Spatial {
     var tryGetCumulativeDelta: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationCanceledEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationCanceledEventArgs")
   @js.native
-  abstract class SpatialNavigationCanceledEventArgs ()
+  open class SpatialNavigationCanceledEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationCanceledEventArgs {
     
@@ -465,9 +465,9 @@ object Spatial {
     var interactionSourceKind: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationCompletedEventArgs")
   @js.native
-  abstract class SpatialNavigationCompletedEventArgs ()
+  open class SpatialNavigationCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationCompletedEventArgs {
     
@@ -479,9 +479,9 @@ object Spatial {
     var normalizedOffset: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs")
   @js.native
-  abstract class SpatialNavigationStartedEventArgs ()
+  open class SpatialNavigationStartedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs {
     
@@ -505,9 +505,9 @@ object Spatial {
     var tryGetPointerPose: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationUpdatedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationUpdatedEventArgs")
   @js.native
-  abstract class SpatialNavigationUpdatedEventArgs ()
+  open class SpatialNavigationUpdatedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialNavigationUpdatedEventArgs {
     
@@ -519,9 +519,9 @@ object Spatial {
     var normalizedOffset: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
   @js.native
-  abstract class SpatialPointerPose ()
+  open class SpatialPointerPose ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialPointerPose {
     
@@ -546,9 +546,9 @@ object Spatial {
     inline def tryGetAtTimestamp_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tryGetAtTimestamp")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs")
   @js.native
-  abstract class SpatialRecognitionEndedEventArgs ()
+  open class SpatialRecognitionEndedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs {
     
@@ -556,9 +556,9 @@ object Spatial {
     var interactionSourceKind: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs")
   @js.native
-  abstract class SpatialRecognitionStartedEventArgs ()
+  open class SpatialRecognitionStartedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialRecognitionStartedEventArgs {
     
@@ -574,9 +574,9 @@ object Spatial {
     var tryGetPointerPose: Any = js.native
   }
   
-  @JSGlobal("Windows.UI.Input.Spatial.SpatialTappedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Input.Spatial.SpatialTappedEventArgs")
   @js.native
-  abstract class SpatialTappedEventArgs ()
+  open class SpatialTappedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Spatial.SpatialTappedEventArgs {
     

@@ -1,9 +1,7 @@
 package typings.hapiHoek
 
-import org.scalablytyped.runtime.TopLevel
 import typings.hapiHoek.anon.OmitOptionsonce
 import typings.hapiHoek.hapiHoekBooleans.`false`
-import typings.hapiHoek.mod.internals.Without
 import typings.hapiHoek.mod.reach.Options
 import typings.std.ArrayLike
 import typings.std.Partial
@@ -529,9 +527,15 @@ object mod {
   
   object internals {
     
-    type Without[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in std.Exclude<keyof T, keyof U> ]:? never}
-      */ typings.hapiHoek.hapiHoekStrings.Without & TopLevel[Any]
+    /** NOTE: Mapped type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      {[ P in std.Exclude<keyof T, keyof U> ]:? never}
+      }}}
+      */
+    @js.native
+    trait Without[T, U] extends StObject
   }
   
   object ts {
@@ -539,6 +543,14 @@ object mod {
     /**
       * Defines a type that can must be one of T or U but not both.
       */
-    type XOR[T, U] = T | U | ((Without[T, U]) & U) | ((Without[U, T]) & T)
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      T | U extends object ? @hapi/hoek.@hapi/hoek.internals.Without<T, U> & U | @hapi/hoek.@hapi/hoek.internals.Without<U, T> & T : T | U
+      }}}
+      */
+    @js.native
+    trait XOR[T, U] extends StObject
   }
 }

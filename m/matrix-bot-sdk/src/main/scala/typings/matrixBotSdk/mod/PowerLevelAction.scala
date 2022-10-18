@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PowerLevelAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.matrixBotSdk.powerLevelActionMod.PowerLevelAction & String] = js.native
+  def apply(value: String): js.UndefOr[typings.matrixBotSdk.libModelsPowerLevelActionMod.PowerLevelAction & String] = js.native
   
-  /* "ban" */ val Ban: typings.matrixBotSdk.powerLevelActionMod.PowerLevelAction.Ban & String = js.native
+  /* "ban" */ val Ban: typings.matrixBotSdk.libModelsPowerLevelActionMod.PowerLevelAction.Ban & String = js.native
   
-  /* "invite" */ val Invite: typings.matrixBotSdk.powerLevelActionMod.PowerLevelAction.Invite & String = js.native
+  /* "invite" */ val Invite: typings.matrixBotSdk.libModelsPowerLevelActionMod.PowerLevelAction.Invite & String = js.native
   
-  /* "kick" */ val Kick: typings.matrixBotSdk.powerLevelActionMod.PowerLevelAction.Kick & String = js.native
+  /* "kick" */ val Kick: typings.matrixBotSdk.libModelsPowerLevelActionMod.PowerLevelAction.Kick & String = js.native
   
-  /* "notifications.room" */ val NotifyRoom: typings.matrixBotSdk.powerLevelActionMod.PowerLevelAction.NotifyRoom & String = js.native
+  /* "notifications.room" */ val NotifyRoom: typings.matrixBotSdk.libModelsPowerLevelActionMod.PowerLevelAction.NotifyRoom & String = js.native
   
-  /* "redact" */ val RedactEvents: typings.matrixBotSdk.powerLevelActionMod.PowerLevelAction.RedactEvents & String = js.native
+  /* "redact" */ val RedactEvents: typings.matrixBotSdk.libModelsPowerLevelActionMod.PowerLevelAction.RedactEvents & String = js.native
 }

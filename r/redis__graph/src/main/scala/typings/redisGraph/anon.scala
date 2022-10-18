@@ -1,13 +1,13 @@
 package typings.redisGraph
 
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisGraph.configGETMod.ConfigItem
-import typings.redisGraph.queryMod.QueryRawReply
-import typings.redisGraph.queryMod.QueryReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisGraph.distCommandsConfigGETMod.ConfigItem
+import typings.redisGraph.distCommandsQueryMod.QueryRawReply
+import typings.redisGraph.distCommandsQueryMod.QueryReply
+import typings.redisGraph.distCommandsSlowlogMod.SlowLogRawReply
+import typings.redisGraph.distCommandsSlowlogMod.SlowLogReply
 import typings.redisGraph.redisGraphStrings.OK
-import typings.redisGraph.slowlogMod.SlowLogRawReply
-import typings.redisGraph.slowlogMod.SlowLogReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

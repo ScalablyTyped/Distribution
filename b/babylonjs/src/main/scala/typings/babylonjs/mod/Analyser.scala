@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param scene defines hosting scene
   */
 open class Analyser ()
-  extends typings.babylonjs.legacyMod.Analyser {
+  extends typings.babylonjs.legacyLegacyMod.Analyser {
   def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }

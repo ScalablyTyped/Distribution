@@ -1,6 +1,6 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentVariableType
+import typings.awsLambda.triggerCodebuildCloudwatchStateMod.CodeBuildEnvironmentVariableType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,5 +1,6 @@
 package typings.concurrently.anon
 
+import typings.rxjs.distTypesInternalTypesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +9,15 @@ trait Delay extends StObject {
   
   var delay: js.UndefOr[Double] = js.undefined
   
-  var logger: typings.concurrently.loggerMod.Logger
+  var logger: typings.concurrently.distSrcLoggerMod.Logger
   
-  var scheduler: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rx.SchedulerLike */ Any
-  ] = js.undefined
+  var scheduler: js.UndefOr[SchedulerLike] = js.undefined
   
   var tries: js.UndefOr[Double] = js.undefined
 }
 object Delay {
   
-  inline def apply(logger: typings.concurrently.loggerMod.Logger): Delay = {
+  inline def apply(logger: typings.concurrently.distSrcLoggerMod.Logger): Delay = {
     val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delay]
   }
@@ -29,11 +28,9 @@ object Delay {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setLogger(value: typings.concurrently.loggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    inline def setScheduler(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rx.SchedulerLike */ Any
-    ): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
+    inline def setScheduler(value: SchedulerLike): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
     
     inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
     

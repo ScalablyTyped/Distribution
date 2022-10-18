@@ -1,8 +1,8 @@
 package typings.wordpressUrl
 
 import typings.std.Record
-import typings.wordpressUrl.getQueryArgMod.QueryArgParsed
-import typings.wordpressUrl.getQueryArgsMod.QueryArgs
+import typings.wordpressUrl.buildTypesGetQueryArgMod.QueryArgParsed
+import typings.wordpressUrl.buildTypesGetQueryArgsMod.QueryArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

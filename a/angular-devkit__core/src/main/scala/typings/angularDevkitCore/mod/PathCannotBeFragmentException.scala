@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "PathCannotBeFragmentException")
 @js.native
 open class PathCannotBeFragmentException protected ()
-  extends typings.angularDevkitCore.virtualFsMod.PathCannotBeFragmentException {
+  extends typings.angularDevkitCore.srcVirtualFsMod.PathCannotBeFragmentException {
   def this(path: String) = this()
 }

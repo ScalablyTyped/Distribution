@@ -3,9 +3,9 @@ package typings.docxTemplates
 import typings.docxTemplates.anon.Category
 import typings.docxTemplates.docxTemplatesStrings.JS
 import typings.docxTemplates.docxTemplatesStrings.XML
-import typings.docxTemplates.typesMod.CommandSummary
-import typings.docxTemplates.typesMod.Node
-import typings.docxTemplates.typesMod.UserOptions
+import typings.docxTemplates.libTypesMod.CommandSummary
+import typings.docxTemplates.libTypesMod.Node
+import typings.docxTemplates.libTypesMod.UserOptions
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,56 +46,56 @@ object mod {
   @JSImport("docx-templates", "CommandExecutionError")
   @js.native
   open class CommandExecutionError protected ()
-    extends typings.docxTemplates.errorsMod.CommandExecutionError {
+    extends typings.docxTemplates.libErrorsMod.CommandExecutionError {
     def this(err: js.Error, command: String) = this()
   }
   
   @JSImport("docx-templates", "CommandSyntaxError")
   @js.native
   open class CommandSyntaxError protected ()
-    extends typings.docxTemplates.errorsMod.CommandSyntaxError {
+    extends typings.docxTemplates.libErrorsMod.CommandSyntaxError {
     def this(command: String) = this()
   }
   
   @JSImport("docx-templates", "ImageError")
   @js.native
   open class ImageError protected ()
-    extends typings.docxTemplates.errorsMod.ImageError {
+    extends typings.docxTemplates.libErrorsMod.ImageError {
     def this(err: js.Error, command: String) = this()
   }
   
   @JSImport("docx-templates", "InternalError")
   @js.native
   open class InternalError protected ()
-    extends typings.docxTemplates.errorsMod.InternalError {
+    extends typings.docxTemplates.libErrorsMod.InternalError {
     def this(msg: String) = this()
   }
   
   @JSImport("docx-templates", "InvalidCommandError")
   @js.native
   open class InvalidCommandError protected ()
-    extends typings.docxTemplates.errorsMod.InvalidCommandError {
+    extends typings.docxTemplates.libErrorsMod.InvalidCommandError {
     def this(msg: String, command: String) = this()
   }
   
   @JSImport("docx-templates", "NullishCommandResultError")
   @js.native
   open class NullishCommandResultError protected ()
-    extends typings.docxTemplates.errorsMod.NullishCommandResultError {
+    extends typings.docxTemplates.libErrorsMod.NullishCommandResultError {
     def this(command: String) = this()
   }
   
   @JSImport("docx-templates", "ObjectCommandResultError")
   @js.native
   open class ObjectCommandResultError protected ()
-    extends typings.docxTemplates.errorsMod.ObjectCommandResultError {
+    extends typings.docxTemplates.libErrorsMod.ObjectCommandResultError {
     def this(command: String) = this()
   }
   
   @JSImport("docx-templates", "TemplateParseError")
   @js.native
   open class TemplateParseError ()
-    extends typings.docxTemplates.errorsMod.TemplateParseError
+    extends typings.docxTemplates.libErrorsMod.TemplateParseError
   
   /**
     * Create Report from docx template

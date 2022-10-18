@@ -3,11 +3,11 @@ package typings.angularCompilerCli.anon
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3DirectiveMetadata
 import typings.angularCompilerCli.angularCompilerCliStrings.dynamic
-import typings.angularCompilerCli.metadataSrcApiMod.DirectiveTypeCheckMeta
-import typings.angularCompilerCli.ngtscImportsMod.Reference
-import typings.angularCompilerCli.ngtscMetadataMod.ClassPropertyMapping
-import typings.angularCompilerCli.srcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscImportsMod.Reference
+import typings.angularCompilerCli.srcNgtscMetadataMod.ClassPropertyMapping
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveTypeCheckMeta
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

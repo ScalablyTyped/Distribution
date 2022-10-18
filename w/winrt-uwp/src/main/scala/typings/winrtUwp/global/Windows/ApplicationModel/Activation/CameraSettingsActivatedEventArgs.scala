@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables a camera settings app to handle the activation parameters for the app. */
-@JSGlobal("Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs")
 @js.native
-abstract class CameraSettingsActivatedEventArgs ()
+open class CameraSettingsActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.CameraSettingsActivatedEventArgs {
   

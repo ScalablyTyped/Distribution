@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BitmapTextRendererCanvas")
 @js.native
 open class BitmapTextRendererCanvas ()
-  extends typings.blackEngine.bitmapTextRendererCanvasMod.BitmapTextRendererCanvas
+  extends typings.blackEngine.driversCanvasBitmapTextRendererCanvasMod.BitmapTextRendererCanvas

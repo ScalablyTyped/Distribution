@@ -185,8 +185,6 @@ object ComponentInternalInstance {
         ]
     ): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
     
-    inline def setEmitFunction2(value: ((/* event */ Any) | (/* event */ String), /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
-    
     inline def setExposeProxy(value: Record[String, Any]): Self = StObject.set(x, "exposeProxy", value.asInstanceOf[js.Any])
     
     inline def setExposeProxyNull: Self = StObject.set(x, "exposeProxy", null)

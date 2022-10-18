@@ -1,7 +1,6 @@
 package typings.petitDom.mod
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
@@ -227,9 +226,14 @@ object PetitDom {
   
   type Content = String | VNode
   
-  type DOMElementProps[E /* <: Element */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof E ]:? E[P]}
-    */ typings.petitDom.petitDomStrings.DOMElementProps & TopLevel[E]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ P in keyof E ]:? E[P]}
+    }}}
+    */
+  type DOMElementProps[E /* <: Element */] = E
   
   /* Inlined parent std.HTMLElementTagNameMap */
   /* Inlined parent std.Pick<std.SVGElementTagNameMap, std.Exclude<keyof std.SVGElementTagNameMap, 'a' | 'script' | 'style' | 'title'>> */
@@ -1209,7 +1213,7 @@ object PetitDom {
     }
   }
   
-  trait ElementNode[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */]
+  trait ElementNode[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.petitDom.petitDomStrings.main, typings.petitDom.petitDomStrings.a, typings.petitDom.petitDomStrings.abbr */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */]
     extends StObject
        with VNode {
     
@@ -1221,13 +1225,13 @@ object PetitDom {
   }
   object ElementNode {
     
-    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](content: js.Array[VNode], isSVG: Boolean, props: Props[E], `type`: T): ElementNode[T, E] = {
+    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.petitDom.petitDomStrings.main, typings.petitDom.petitDomStrings.a, typings.petitDom.petitDomStrings.abbr */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](content: js.Array[VNode], isSVG: Boolean, props: Props[E], `type`: T): ElementNode[T, E] = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isSVG = isSVG.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementNode[T, E]]
     }
     
-    extension [Self <: ElementNode[?, ?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](x: Self & (ElementNode[T, E])) {
+    extension [Self <: ElementNode[?, ?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.petitDom.petitDomStrings.main, typings.petitDom.petitDomStrings.a, typings.petitDom.petitDomStrings.abbr */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](x: Self & (ElementNode[T, E])) {
       
       inline def setProps(value: Props[E]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       

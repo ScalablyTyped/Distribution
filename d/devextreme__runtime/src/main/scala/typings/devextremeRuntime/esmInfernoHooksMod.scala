@@ -8,14 +8,14 @@ import typings.devextremeRuntime.anon.ForwardRefanyanydefaultPr
 import typings.devextremeRuntime.anon.FunctiondefaultPropsunkno
 import typings.devextremeRuntime.anon.IComponentanyanydefaultPr
 import typings.devextremeRuntime.anon.RenderRef
-import typings.devextremeRuntime.infernoHooksContainerMod.RefObject
-import typings.devextremeRuntime.infernoHooksHooksMod.Dispatch
-import typings.devextremeRuntime.infernoHooksHooksMod.SetStateAction
-import typings.devextremeRuntime.infernoHooksPortalMod.PortalProps
-import typings.inferno.typesMod.ForwardRef
-import typings.inferno.typesMod.IComponent
-import typings.inferno.typesMod.Props
-import typings.inferno.typesMod.VNode
+import typings.devextremeRuntime.esmInfernoHooksContainerMod.RefObject
+import typings.devextremeRuntime.esmInfernoHooksHooksMod.Dispatch
+import typings.devextremeRuntime.esmInfernoHooksHooksMod.SetStateAction
+import typings.devextremeRuntime.esmInfernoHooksPortalMod.PortalProps
+import typings.inferno.distCoreTypesMod.ForwardRef
+import typings.inferno.distCoreTypesMod.IComponent
+import typings.inferno.distCoreTypesMod.Props
+import typings.inferno.distCoreTypesMod.VNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,7 +30,7 @@ object esmInfernoHooksMod {
   @JSImport("@devextreme/runtime/esm/inferno-hooks", "HookContainer")
   @js.native
   open class HookContainer ()
-    extends typings.devextremeRuntime.infernoHooksContainerMod.HookContainer {
+    extends typings.devextremeRuntime.esmInfernoHooksContainerMod.HookContainer {
     def this(props: RenderRef) = this()
     def this(props: Unit, context: Any) = this()
     def this(props: RenderRef, context: Any) = this()
@@ -39,7 +39,7 @@ object esmInfernoHooksMod {
   @JSImport("@devextreme/runtime/esm/inferno-hooks", "InfernoWrapperComponent")
   @js.native
   open class InfernoWrapperComponent ()
-    extends typings.devextremeRuntime.infernoHooksBaseHooksComponentMod.InfernoWrapperComponent {
+    extends typings.devextremeRuntime.esmInfernoHooksBaseHooksComponentMod.InfernoWrapperComponent {
     def this(props: RenderRef) = this()
     def this(props: Unit, context: Any) = this()
     def this(props: RenderRef, context: Any) = this()
@@ -51,7 +51,7 @@ object esmInfernoHooksMod {
   
   inline def createContext[T](defaultValue: T): DefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[DefaultValue]
   
-  inline def createRecorder(component: typings.devextremeRuntime.infernoHooksContainerMod.HookContainer): ComponentDidMount = ^.asInstanceOf[js.Dynamic].applyDynamic("createRecorder")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentDidMount]
+  inline def createRecorder(component: typings.devextremeRuntime.esmInfernoHooksContainerMod.HookContainer): ComponentDidMount = ^.asInstanceOf[js.Dynamic].applyDynamic("createRecorder")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentDidMount]
   
   object currentComponent {
     
@@ -104,7 +104,7 @@ object esmInfernoHooksMod {
   ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode])]
   
   inline def renderChild(
-    component: typings.devextremeRuntime.infernoHooksContainerMod.HookContainer,
+    component: typings.devextremeRuntime.esmInfernoHooksContainerMod.HookContainer,
     hasRenderFnRenderPropsRenderRef: Any,
     context: Any
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderChild")(component.asInstanceOf[js.Any], hasRenderFnRenderPropsRenderRef.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]

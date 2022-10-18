@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValueAlign extends StObject {
   
-  var value: typings.vegaTypings.encodeMod.Align
+  var value: typings.vegaTypings.typesSpecEncodeMod.Align
 }
 object ValueAlign {
   
-  inline def apply(value: typings.vegaTypings.encodeMod.Align): ValueAlign = {
+  inline def apply(value: typings.vegaTypings.typesSpecEncodeMod.Align): ValueAlign = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAlign]
   }
   
   extension [Self <: ValueAlign](x: Self) {
     
-    inline def setValue(value: typings.vegaTypings.encodeMod.Align): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.vegaTypings.typesSpecEncodeMod.Align): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

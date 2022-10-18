@@ -77,6 +77,7 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: CSSModules = ^
   
+  /* augmented module */
   object reactAugmentingMod {
     
     trait Attributes extends StObject {

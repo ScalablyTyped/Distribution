@@ -18,5 +18,5 @@ object mod {
   @js.native
   val katakana: js.Array[String] = js.native
   
-  inline def presentIn[T](input: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("presentIn")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def presentIn[T](input: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? boolean : false */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("presentIn")(input.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends string ? boolean : false */ js.Any]
 }

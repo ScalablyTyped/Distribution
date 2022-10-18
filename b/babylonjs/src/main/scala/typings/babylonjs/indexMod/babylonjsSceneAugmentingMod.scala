@@ -3,13 +3,14 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.AdditiveAnimations
 import typings.babylonjs.anon.Animations
 import typings.babylonjs.anon.PartialIEnvironmentHelper
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
-import typings.babylonjs.iphysicsengineMod.IPhysicsEngine
-import typings.babylonjs.iphysicsengineMod.IPhysicsEnginePlugin
-import typings.babylonjs.rayMod.TrianglePickingPredicate
-import typings.babylonjs.spriteManagerMod.ISpriteManager
+import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelperOptions
+import typings.babylonjs.cullingRayMod.TrianglePickingPredicate
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEngine
+import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
+import typings.babylonjs.spritesSpriteManagerMod.ISpriteManager
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,10 +22,10 @@ object babylonjsSceneAugmentingMod {
   trait Scene extends StObject {
     
     /** @internal (Backing field) */
-    var _boundingBoxRenderer: typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer = js.native
+    var _boundingBoxRenderer: typings.babylonjs.renderingBoundingBoxRendererMod.BoundingBoxRenderer = js.native
     
     /** @internal */
-    var _cachedRayForTransform: typings.babylonjs.rayMod.Ray = js.native
+    var _cachedRayForTransform: typings.babylonjs.cullingRayMod.Ray = js.native
     
     /** @internal */
     def _createMultiviewUbo(): Unit = js.native
@@ -33,496 +34,500 @@ object babylonjsSceneAugmentingMod {
       * @internal
       * Backing field
       */
-    var _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer = js.native
+    var _debugLayer: typings.babylonjs.debugDebugLayerMod.DebugLayer = js.native
     
     /** @internal (Backing field) */
-    var _depthPeelingRenderer: Nullable[typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer] = js.native
+    var _depthPeelingRenderer: Nullable[typings.babylonjs.renderingDepthPeelingRendererMod.DepthPeelingRenderer] = js.native
     
     /** @internal (Backing field) */
-    var _depthRenderer: org.scalablytyped.runtime.StringDictionary[typings.babylonjs.depthRendererMod.DepthRenderer] = js.native
+    var _depthRenderer: org.scalablytyped.runtime.StringDictionary[typings.babylonjs.renderingDepthRendererMod.DepthRenderer] = js.native
     
     /** @internal */
-    var _edgeRenderLineShader: Nullable[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = js.native
+    var _edgeRenderLineShader: Nullable[typings.babylonjs.materialsShaderMaterialMod.ShaderMaterial] = js.native
     
     /** @internal (Backing field) */
     var _forceShowBoundingBoxes: Boolean = js.native
     
     /** @internal */
-    var _gamepadManager: Nullable[typings.babylonjs.gamepadManagerMod.GamepadManager] = js.native
+    var _gamepadManager: Nullable[typings.babylonjs.gamepadsGamepadManagerMod.GamepadManager] = js.native
     
     /** @internal (Backing field) */
-    var _geometryBufferRenderer: Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    var _geometryBufferRenderer: Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
     /** @internal */
     def _internalMultiPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ]
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean]
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean]
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     
     /** @internal */
-    def _internalMultiPickSprites(ray: typings.babylonjs.rayMod.Ray): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+    def _internalMultiPickSprites(ray: typings.babylonjs.cullingRayMod.Ray): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def _internalMultiPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
-    def _internalMultiPickSprites(ray: typings.babylonjs.rayMod.Ray, predicate: Unit, camera: typings.babylonjs.cameraMod.Camera): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
+    def _internalMultiPickSprites(
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: Unit,
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     
     /** @internal */
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ]
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean]
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean]
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      predicate: js.Function1[/* mesh */ typings.babylonjs.abstractMeshMod.AbstractMesh, Boolean],
+      predicate: js.Function1[/* mesh */ typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, Boolean],
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPick(
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
       predicate: Unit,
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     
     /** @internal */
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: Unit,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: Unit,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Boolean,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: Unit,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Boolean,
       trianglePredicate: TrianglePickingPredicate,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: Unit,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickForMesh(
-      pickingInfo: Nullable[typings.babylonjs.pickingInfoMod.PickingInfo],
+      pickingInfo: Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo],
       rayFunction: js.Function2[
-          /* world */ typings.babylonjs.mathVectorMod.Matrix, 
+          /* world */ typings.babylonjs.mathsMathDotvectorMod.Matrix, 
           /* enableDistantPicking */ Boolean, 
-          typings.babylonjs.rayMod.Ray
+          typings.babylonjs.cullingRayMod.Ray
         ],
-      mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-      world: typings.babylonjs.mathVectorMod.Matrix,
+      mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+      world: typings.babylonjs.mathsMathDotvectorMod.Matrix,
       fastCheck: Unit,
       onlyBoundingInfo: Unit,
       trianglePredicate: TrianglePickingPredicate,
       skipBoundingInfo: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     
     /** @internal */
-    def _internalPickSprites(ray: typings.babylonjs.rayMod.Ray): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    def _internalPickSprites(ray: typings.babylonjs.cullingRayMod.Ray): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Boolean,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Unit,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
-    def _internalPickSprites(ray: typings.babylonjs.rayMod.Ray, predicate: Unit, fastCheck: Boolean): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    def _internalPickSprites(ray: typings.babylonjs.cullingRayMod.Ray, predicate: Unit, fastCheck: Boolean): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
+      ray: typings.babylonjs.cullingRayMod.Ray,
       predicate: Unit,
       fastCheck: Boolean,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def _internalPickSprites(
-      ray: typings.babylonjs.rayMod.Ray,
+      ray: typings.babylonjs.cullingRayMod.Ray,
       predicate: Unit,
       fastCheck: Unit,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     
     /**
       * @internal
       * Backing field
       */
-    var _mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack = js.native
+    var _mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack = js.native
     
     /** @internal */
-    var _multiviewSceneUbo: Nullable[typings.babylonjs.uniformBufferMod.UniformBuffer] = js.native
+    var _multiviewSceneUbo: Nullable[typings.babylonjs.materialsUniformBufferMod.UniformBuffer] = js.native
     
     /** @internal */
-    var _outlineRenderer: typings.babylonjs.outlineRendererMod.OutlineRenderer = js.native
+    var _outlineRenderer: typings.babylonjs.renderingOutlineRendererMod.OutlineRenderer = js.native
     
     /** @internal (Backing field) */
     var _physicsEngine: Nullable[IPhysicsEngine] = js.native
@@ -531,16 +536,16 @@ object babylonjsSceneAugmentingMod {
     var _physicsTimeAccumulator: Double = js.native
     
     /** @internal */
-    var _pickWithRayInverseMatrix: typings.babylonjs.mathVectorMod.Matrix = js.native
+    var _pickWithRayInverseMatrix: typings.babylonjs.mathsMathDotvectorMod.Matrix = js.native
     
     /** @internal */
-    var _pickedDownSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
+    var _pickedDownSprite: Nullable[typings.babylonjs.spritesSpriteMod.Sprite] = js.native
     
     /** @internal */
-    var _pointerOverSprite: Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
+    var _pointerOverSprite: Nullable[typings.babylonjs.spritesSpriteMod.Sprite] = js.native
     
     /** @internal (Backing field) */
-    var _postProcessRenderPipelineManager: typings.babylonjs.postProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager = js.native
+    var _postProcessRenderPipelineManager: typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager = js.native
     
     /** @internal */
     def _processLateAnimationBindings(): Unit = js.native
@@ -549,37 +554,43 @@ object babylonjsSceneAugmentingMod {
     def _processLateAnimationBindingsForMatrices(holder: AdditiveAnimations): Any = js.native
     
     /** @internal */
-    def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: typings.babylonjs.mathVectorMod.Quaternion): typings.babylonjs.mathVectorMod.Quaternion = js.native
+    def _processLateAnimationBindingsForQuaternions(holder: Animations, refQuaternion: typings.babylonjs.mathsMathDotvectorMod.Quaternion): typings.babylonjs.mathsMathDotvectorMod.Quaternion = js.native
     
     /** @internal */
-    def _registerTargetForLateAnimationBinding(runtimeAnimation: typings.babylonjs.runtimeAnimationMod.RuntimeAnimation, originalValue: Any): Unit = js.native
+    def _registerTargetForLateAnimationBinding(
+      runtimeAnimation: typings.babylonjs.animationsRuntimeAnimationMod.RuntimeAnimation,
+      originalValue: Any
+    ): Unit = js.native
     
     /** @internal */
-    def _renderMultiviewToSingleView(camera: typings.babylonjs.cameraMod.Camera): Unit = js.native
+    def _renderMultiviewToSingleView(camera: typings.babylonjs.camerasCameraMod.Camera): Unit = js.native
     
     /**
       * @internal
       * Backing Filed
       */
-    var _selectionOctree: typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    var _selectionOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /** @internal (Backing field) */
-    var _simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue = js.native
+    var _simplificationQueue: typings.babylonjs.meshesMeshSimplificationMod.SimplificationQueue = js.native
     
     /** @internal */
-    var _tempPickingRay: Nullable[typings.babylonjs.rayMod.Ray] = js.native
+    var _tempPickingRay: Nullable[typings.babylonjs.cullingRayMod.Ray] = js.native
     
     /** @internal */
-    var _tempSpritePickingRay: Nullable[typings.babylonjs.rayMod.Ray] = js.native
+    var _tempSpritePickingRay: Nullable[typings.babylonjs.cullingRayMod.Ray] = js.native
     
     /** @internal */
-    var _transformMatrixR: typings.babylonjs.mathVectorMod.Matrix = js.native
+    var _transformMatrixR: typings.babylonjs.mathsMathDotvectorMod.Matrix = js.native
     
     /** @internal */
     def _updateMultiviewUbo(): Unit = js.native
-    def _updateMultiviewUbo(viewR: Unit, projectionR: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
-    def _updateMultiviewUbo(viewR: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
-    def _updateMultiviewUbo(viewR: typings.babylonjs.mathVectorMod.Matrix, projectionR: typings.babylonjs.mathVectorMod.Matrix): Unit = js.native
+    def _updateMultiviewUbo(viewR: Unit, projectionR: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = js.native
+    def _updateMultiviewUbo(viewR: typings.babylonjs.mathsMathDotvectorMod.Matrix): Unit = js.native
+    def _updateMultiviewUbo(
+      viewR: typings.babylonjs.mathsMathDotvectorMod.Matrix,
+      projectionR: typings.babylonjs.mathsMathDotvectorMod.Matrix
+    ): Unit = js.native
     
     /** @internal */
     var _useOrderIndependentTransparency: Boolean = js.native
@@ -594,7 +605,7 @@ object babylonjsSceneAugmentingMod {
       * Gets or sets custom audio listener position provider
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
       */
-    var audioListenerPositionProvider: Nullable[js.Function0[typings.babylonjs.mathVectorMod.Vector3]] = js.native
+    var audioListenerPositionProvider: Nullable[js.Function0[typings.babylonjs.mathsMathDotvectorMod.Vector3]] = js.native
     
     /**
       * Gets or sets a refresh rate when using 3D audio positioning
@@ -623,12 +634,12 @@ object babylonjsSceneAugmentingMod {
       loop: js.UndefOr[Boolean],
       speedRatio: js.UndefOr[Double],
       onAnimationEnd: js.UndefOr[js.Function0[Unit]],
-      animatable: js.UndefOr[typings.babylonjs.animatableMod.Animatable],
+      animatable: js.UndefOr[typings.babylonjs.animationsAnimatableMod.Animatable],
       stopCurrent: js.UndefOr[Boolean],
       targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
       onAnimationLoop: js.UndefOr[js.Function0[Unit]],
       isAdditive: js.UndefOr[Boolean]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     
     /**
       * Begin a new animation on a given node
@@ -645,47 +656,47 @@ object babylonjsSceneAugmentingMod {
       */
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -693,10 +704,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -704,20 +715,20 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -725,10 +736,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -736,29 +747,29 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -766,10 +777,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -777,20 +788,20 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Unit,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -798,10 +809,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -809,37 +820,37 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -847,10 +858,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -858,20 +869,20 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -879,10 +890,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -890,29 +901,29 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -920,10 +931,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -931,20 +942,20 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Unit,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -952,10 +963,10 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     def beginDirectAnimation(
       target: Any,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -963,7 +974,7 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     
     /**
       * Begin a new animation on a given node and its hierarchy
@@ -982,52 +993,52 @@ object babylonjsSceneAugmentingMod {
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1035,11 +1046,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1047,22 +1058,22 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Double,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1070,11 +1081,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1082,32 +1093,32 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1115,11 +1126,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1127,22 +1138,22 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
       speedRatio: Unit,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1150,11 +1161,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Boolean,
@@ -1162,41 +1173,41 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1204,11 +1215,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1216,22 +1227,22 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Double,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1239,11 +1250,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1251,32 +1262,32 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Unit,
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1284,11 +1295,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1296,22 +1307,22 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: js.Function0[Unit],
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
       speedRatio: Unit,
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1319,11 +1330,11 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: js.Function0[Unit],
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     def beginDirectHierarchyAnimation(
       target: typings.babylonjs.nodeMod.Node,
       directDescendantsOnly: Boolean,
-      animations: js.Array[typings.babylonjs.animationMod.Animation],
+      animations: js.Array[typings.babylonjs.animationsAnimationMod.Animation],
       from: Double,
       to: Double,
       loop: Unit,
@@ -1331,7 +1342,7 @@ object babylonjsSceneAugmentingMod {
       onAnimationEnd: Unit,
       onAnimationLoop: Unit,
       isAdditive: Boolean
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     
     /**
       * Will start the animation sequence of a given target and its hierarchy
@@ -1357,12 +1368,12 @@ object babylonjsSceneAugmentingMod {
       loop: js.UndefOr[Boolean],
       speedRatio: js.UndefOr[Double],
       onAnimationEnd: js.UndefOr[js.Function0[Unit]],
-      animatable: js.UndefOr[typings.babylonjs.animatableMod.Animatable],
+      animatable: js.UndefOr[typings.babylonjs.animationsAnimatableMod.Animatable],
       stopCurrent: js.UndefOr[Boolean],
       targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
       onAnimationLoop: js.UndefOr[js.Function0[Unit]],
       isAdditive: js.UndefOr[Boolean]
-    ): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    ): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     
     /**
       * Will start the animation sequence of a given target
@@ -1387,11 +1398,11 @@ object babylonjsSceneAugmentingMod {
       loop: js.UndefOr[Boolean],
       speedRatio: js.UndefOr[Double],
       onAnimationEnd: js.UndefOr[js.Function0[Unit]],
-      animatable: js.UndefOr[typings.babylonjs.animatableMod.Animatable],
+      animatable: js.UndefOr[typings.babylonjs.animationsAnimatableMod.Animatable],
       targetMask: js.UndefOr[js.Function1[/* target */ Any, Boolean]],
       onAnimationLoop: js.UndefOr[js.Function0[Unit]],
       isAdditive: js.UndefOr[Boolean]
-    ): typings.babylonjs.animatableMod.Animatable = js.native
+    ): typings.babylonjs.animationsAnimatableMod.Animatable = js.native
     
     /**
       * Creates a default camera for the scene.
@@ -1431,8 +1442,8 @@ object babylonjsSceneAugmentingMod {
       * @param options defines the options you can use to configure the environment
       * @returns the new EnvironmentHelper
       */
-    def createDefaultEnvironment(): Nullable[typings.babylonjs.environmentHelperMod.EnvironmentHelper] = js.native
-    def createDefaultEnvironment(options: PartialIEnvironmentHelper): Nullable[typings.babylonjs.environmentHelperMod.EnvironmentHelper] = js.native
+    def createDefaultEnvironment(): Nullable[typings.babylonjs.helpersEnvironmentHelperMod.EnvironmentHelper] = js.native
+    def createDefaultEnvironment(options: PartialIEnvironmentHelper): Nullable[typings.babylonjs.helpersEnvironmentHelperMod.EnvironmentHelper] = js.native
     
     /**
       * Creates a default light for the scene.
@@ -1452,106 +1463,114 @@ object babylonjsSceneAugmentingMod {
       * @param setGlobalEnvTexture has default true indicating that scene.environmentTexture must match the current skybox texture
       * @returns a new mesh holding the sky box
       */
-    def createDefaultSkybox(): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture, pbr: Boolean): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture, pbr: Boolean, scale: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    def createDefaultSkybox(): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Boolean, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Double, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Double, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: Unit, pbr: Unit, scale: Unit, blur: Unit, setGlobalEnvTexture: Boolean): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture): Nullable[Mesh] = js.native
+    def createDefaultSkybox(environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture, pbr: Boolean): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+      pbr: Boolean,
+      scale: Double
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double,
       blur: Double
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Double,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Unit,
       blur: Double
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Unit,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Boolean,
       scale: Unit,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
-    def createDefaultSkybox(environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture, pbr: Unit, scale: Double): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
+      pbr: Unit,
+      scale: Double
+    ): Nullable[Mesh] = js.native
+    def createDefaultSkybox(
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double,
       blur: Double
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Double,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Unit,
       blur: Double
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Unit,
       blur: Double,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     def createDefaultSkybox(
-      environmentTexture: typings.babylonjs.baseTextureMod.BaseTexture,
+      environmentTexture: typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture,
       pbr: Unit,
       scale: Unit,
       blur: Unit,
       setGlobalEnvTexture: Boolean
-    ): Nullable[typings.babylonjs.meshMod.Mesh] = js.native
+    ): Nullable[Mesh] = js.native
     
     /**
       * Creates a new VREXperienceHelper
@@ -1560,8 +1579,8 @@ object babylonjsSceneAugmentingMod {
       * @deprecated Please use createDefaultXRExperienceAsync instead
       * @returns a new VREXperienceHelper
       */
-    def createDefaultVRExperience(): typings.babylonjs.vrExperienceHelperMod.VRExperienceHelper = js.native
-    def createDefaultVRExperience(webVROptions: VRExperienceHelperOptions): typings.babylonjs.vrExperienceHelperMod.VRExperienceHelper = js.native
+    def createDefaultVRExperience(): typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelper = js.native
+    def createDefaultVRExperience(webVROptions: VRExperienceHelperOptions): typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelper = js.native
     
     /**
       * Creates a new WebXRDefaultExperience
@@ -1569,8 +1588,8 @@ object babylonjsSceneAugmentingMod {
       * @param options experience options
       * @returns a promise for a new WebXRDefaultExperience
       */
-    def createDefaultXRExperienceAsync(): js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience] = js.native
-    def createDefaultXRExperienceAsync(options: typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions): js.Promise[typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience] = js.native
+    def createDefaultXRExperienceAsync(): js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience] = js.native
+    def createDefaultXRExperienceAsync(options: typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperienceOptions): js.Promise[typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience] = js.native
     
     /**
       * Creates or updates the octree used to boost selection (picking)
@@ -1579,16 +1598,16 @@ object babylonjsSceneAugmentingMod {
       * @param maxDepth defines the maximum depth of the octree
       * @returns an octree of AbstractMesh
       */
-    def createOrUpdateSelectionOctree(): typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
-    def createOrUpdateSelectionOctree(maxCapacity: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
-    def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
-    def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    def createOrUpdateSelectionOctree(): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
+    def createOrUpdateSelectionOctree(maxCapacity: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
+    def createOrUpdateSelectionOctree(maxCapacity: Double, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
+    def createOrUpdateSelectionOctree(maxCapacity: Unit, maxDepth: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /**
       * Gets the debug layer (aka Inspector) associated with the scene
-      * @see https://doc.babylonjs.com/features/playground_debuglayer
+      * @see https://doc.babylonjs.com/toolsAndResources/inspector
       */
-    var debugLayer: typings.babylonjs.debugLayerMod.DebugLayer = js.native
+    var debugLayer: typings.babylonjs.debugDebugLayerMod.DebugLayer = js.native
     
     /**
       * Deletes a physics compound impostor
@@ -1604,14 +1623,14 @@ object babylonjsSceneAugmentingMod {
     /**
       * The depth peeling renderer
       */
-    var depthPeelingRenderer: Nullable[typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer] = js.native
+    var depthPeelingRenderer: Nullable[typings.babylonjs.renderingDepthPeelingRendererMod.DepthPeelingRenderer] = js.native
     
     /**
       * Disables a depth renderer for a given camera
       * @param camera The camera to disable the depth renderer on (default: scene's active camera)
       */
     def disableDepthRenderer(): Unit = js.native
-    def disableDepthRenderer(camera: Nullable[typings.babylonjs.cameraMod.Camera]): Unit = js.native
+    def disableDepthRenderer(camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]): Unit = js.native
     
     /**
       * Disables the GeometryBufferRender associated with the scene
@@ -1630,22 +1649,22 @@ object babylonjsSceneAugmentingMod {
       * @param force32bitsFloat Forces 32 bits float when supported (else 16 bits float is prioritized over 32 bits float if supported)
       * @returns the created depth renderer
       */
-    def enableDepthRenderer(): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Nullable[typings.babylonjs.cameraMod.Camera]): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Nullable[typings.babylonjs.cameraMod.Camera], storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[typings.babylonjs.camerasCameraMod.Camera], storeNonLinearDepth: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
     def enableDepthRenderer(
-      camera: Nullable[typings.babylonjs.cameraMod.Camera],
+      camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
       storeNonLinearDepth: Boolean,
       force32bitsFloat: Boolean
-    ): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+    ): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
     def enableDepthRenderer(
-      camera: Nullable[typings.babylonjs.cameraMod.Camera],
+      camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
       storeNonLinearDepth: Unit,
       force32bitsFloat: Boolean
-    ): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+    ): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
     
     /**
       * Enables a GeometryBufferRender and associates it with the scene
@@ -1653,10 +1672,10 @@ object babylonjsSceneAugmentingMod {
       * @param depthFormat Format of the depth texture (default: Constants.TEXTUREFORMAT_DEPTH16)
       * @returns the GeometryBufferRenderer
       */
-    def enableGeometryBufferRenderer(): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
-    def enableGeometryBufferRenderer(ratio: Double): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
-    def enableGeometryBufferRenderer(ratio: Double, depthFormat: Double): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
-    def enableGeometryBufferRenderer(ratio: Unit, depthFormat: Double): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Double): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Double, depthFormat: Double): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Unit, depthFormat: Double): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
     /**
       * Enables physics to the current scene
@@ -1666,8 +1685,8 @@ object babylonjsSceneAugmentingMod {
       */
     def enablePhysics(): Boolean = js.native
     def enablePhysics(gravity: Unit, plugin: IPhysicsEnginePlugin): Boolean = js.native
-    def enablePhysics(gravity: Nullable[typings.babylonjs.mathVectorMod.Vector3]): Boolean = js.native
-    def enablePhysics(gravity: Nullable[typings.babylonjs.mathVectorMod.Vector3], plugin: IPhysicsEnginePlugin): Boolean = js.native
+    def enablePhysics(gravity: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]): Boolean = js.native
+    def enablePhysics(gravity: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3], plugin: IPhysicsEnginePlugin): Boolean = js.native
     
     /**
       * Gets or sets a boolean indicating if all bounding boxes must be rendered
@@ -1678,26 +1697,26 @@ object babylonjsSceneAugmentingMod {
       * Gets the gamepad manager associated with the scene
       * @see https://doc.babylonjs.com/how_to/how_to_use_gamepads
       */
-    var gamepadManager: typings.babylonjs.gamepadManagerMod.GamepadManager = js.native
+    var gamepadManager: typings.babylonjs.gamepadsGamepadManagerMod.GamepadManager = js.native
     
     /**
       * Gets or Sets the current geometry buffer associated to the scene.
       */
-    var geometryBufferRenderer: Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    var geometryBufferRenderer: Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
     /**
       * Gets all animatables associated with a given target
       * @param target defines the target to look animatables for
       * @returns an array of Animatables
       */
-    def getAllAnimatablesByTarget(target: Any): js.Array[typings.babylonjs.animatableMod.Animatable] = js.native
+    def getAllAnimatablesByTarget(target: Any): js.Array[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     
     /**
       * Gets the animatable associated with a specific target
       * @param target defines the target of the animatable
       * @returns the required animatable if found
       */
-    def getAnimatableByTarget(target: Any): Nullable[typings.babylonjs.animatableMod.Animatable] = js.native
+    def getAnimatableByTarget(target: Any): Nullable[typings.babylonjs.animationsAnimatableMod.Animatable] = js.native
     
     /**
       * Gets a bone using its Id
@@ -1705,13 +1724,13 @@ object babylonjsSceneAugmentingMod {
       * @returns the bone or null if not found
       * @deprecated Please use getBoneById instead
       */
-    def getBoneByID(id: String): Nullable[typings.babylonjs.boneMod.Bone] = js.native
+    def getBoneByID(id: String): Nullable[typings.babylonjs.bonesBoneMod.Bone] = js.native
     
     /**
       * Gets the bounding box renderer associated with the scene
       * @returns a BoundingBoxRenderer
       */
-    def getBoundingBoxRenderer(): typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer = js.native
+    def getBoundingBoxRenderer(): typings.babylonjs.renderingBoundingBoxRendererMod.BoundingBoxRenderer = js.native
     
     /**
       * Gets a camera using its Id
@@ -1719,7 +1738,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the camera or null if not found
       * @deprecated Please use getCameraById instead
       */
-    def getCameraByID(id: String): Nullable[typings.babylonjs.cameraMod.Camera] = js.native
+    def getCameraByID(id: String): Nullable[typings.babylonjs.camerasCameraMod.Camera] = js.native
     
     /**
       * Gets a camera using its unique Id
@@ -1727,7 +1746,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the camera or null if not found
       * @deprecated Please use getCameraByUniqueId instead
       */
-    def getCameraByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.cameraMod.Camera] = js.native
+    def getCameraByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.camerasCameraMod.Camera] = js.native
     
     /**
       * Gets a geometry using its Id
@@ -1735,7 +1754,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the geometry or null if none found.
       * @deprecated Please use getGeometryById instead
       */
-    def getGeometryByID(id: String): Nullable[typings.babylonjs.geometryMod.Geometry] = js.native
+    def getGeometryByID(id: String): Nullable[typings.babylonjs.meshesGeometryMod.Geometry] = js.native
     
     /**
       * Gets a the last added node (Mesh, Camera, Light) using a given Id
@@ -1751,7 +1770,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the last material with the given id or null if none found.
       * @deprecated Please use getLastMaterialById instead
       */
-    def getLastMaterialByID(id: String): Nullable[typings.babylonjs.materialMod.Material] = js.native
+    def getLastMaterialByID(id: String): Nullable[typings.babylonjs.materialsMaterialMod.Material] = js.native
     
     /**
       * Gets a the last added mesh using a given Id
@@ -1759,7 +1778,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the found mesh or null if not found at all.
       * @deprecated Please use getLastMeshById instead
       */
-    def getLastMeshByID(id: String): Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    def getLastMeshByID(id: String): Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /**
       * Gets a skeleton using a given Id (if many are found, this function will pick the last one)
@@ -1767,7 +1786,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the found skeleton or null if not found at all.
       * @deprecated Please use getLastSkeletonById instead
       */
-    def getLastSkeletonByID(id: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = js.native
+    def getLastSkeletonByID(id: String): Nullable[typings.babylonjs.bonesSkeletonMod.Skeleton] = js.native
     
     /**
       * Gets a light node using its Id
@@ -1775,7 +1794,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the light or null if none found.
       * @deprecated Please use getLightById instead
       */
-    def getLightByID(id: String): Nullable[typings.babylonjs.lightMod.Light] = js.native
+    def getLightByID(id: String): Nullable[typings.babylonjs.lightsLightMod.Light] = js.native
     
     /**
       * Gets a light node using its scene-generated unique Id
@@ -1783,7 +1802,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the light or null if none found.
       * @deprecated Please use getLightByUniqueId instead
       */
-    def getLightByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.lightMod.Light] = js.native
+    def getLightByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.lightsLightMod.Light] = js.native
     
     /**
       * Get a material using its id
@@ -1791,7 +1810,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the material or null if none found.
       * @deprecated Please use getMaterialById instead
       */
-    def getMaterialByID(id: String): Nullable[typings.babylonjs.materialMod.Material] = js.native
+    def getMaterialByID(id: String): Nullable[typings.babylonjs.materialsMaterialMod.Material] = js.native
     
     /**
       * Gets the first added mesh found of a given Id
@@ -1799,7 +1818,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the mesh found or null if not found at all
       * @deprecated Please use getMeshById instead
       */
-    def getMeshByID(id: String): Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    def getMeshByID(id: String): Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /**
       * Gets a mesh with its auto-generated unique Id
@@ -1807,7 +1826,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the found mesh or null if not found at all.
       * @deprecated Please use getMeshByUniqueId instead
       */
-    def getMeshByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    def getMeshByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /**
       * Gets a list of meshes using their Id
@@ -1815,7 +1834,7 @@ object babylonjsSceneAugmentingMod {
       * @returns a list of meshes
       * @deprecated Please use getMeshesById instead
       */
-    def getMeshesByID(id: String): js.Array[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    def getMeshesByID(id: String): js.Array[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /**
       * Gets a node (Mesh, Camera, Light) using a given Id
@@ -1829,7 +1848,7 @@ object babylonjsSceneAugmentingMod {
       * Gets the outline renderer associated with the scene
       * @returns a OutlineRenderer
       */
-    def getOutlineRenderer(): typings.babylonjs.outlineRendererMod.OutlineRenderer = js.native
+    def getOutlineRenderer(): typings.babylonjs.renderingOutlineRendererMod.OutlineRenderer = js.native
     
     /**
       * Gets a particle system by Id
@@ -1849,14 +1868,14 @@ object babylonjsSceneAugmentingMod {
       * Gets the sprite under the pointer
       * @returns a Sprite or null if no sprite is under the pointer
       */
-    def getPointerOverSprite(): Nullable[typings.babylonjs.spriteMod.Sprite] = js.native
+    def getPointerOverSprite(): Nullable[typings.babylonjs.spritesSpriteMod.Sprite] = js.native
     
     /**
       * Gets a sound using a given name
       * @param name defines the name to search for
       * @returns the found sound or null if not found at all.
       */
-    def getSoundByName(name: String): Nullable[typings.babylonjs.soundMod.Sound] = js.native
+    def getSoundByName(name: String): Nullable[typings.babylonjs.audioSoundMod.Sound] = js.native
     
     /**
       * Get a texture using its unique id
@@ -1864,7 +1883,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the texture or null if none found.
       * @deprecated Please use getTextureByUniqueId instead
       */
-    def getTextureByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = js.native
+    def getTextureByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture] = js.native
     
     /**
       * Gets the first added transform node found of a given Id
@@ -1872,7 +1891,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the found transform node or null if not found at all.
       * @deprecated Please use getTransformNodeById instead
       */
-    def getTransformNodeByID(id: String): Nullable[typings.babylonjs.transformNodeMod.TransformNode] = js.native
+    def getTransformNodeByID(id: String): Nullable[typings.babylonjs.meshesTransformNodeMod.TransformNode] = js.native
     
     /**
       * Gets a transform node with its auto-generated unique Id
@@ -1880,7 +1899,7 @@ object babylonjsSceneAugmentingMod {
       * @returns the found transform node or null if not found at all.
       * @deprecated Please use getTransformNodeByUniqueId instead
       */
-    def getTransformNodeByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.transformNodeMod.TransformNode] = js.native
+    def getTransformNodeByUniqueID(uniqueId: Double): Nullable[typings.babylonjs.meshesTransformNodeMod.TransformNode] = js.native
     
     /**
       * Gets a list of transform nodes using their Id
@@ -1888,7 +1907,7 @@ object babylonjsSceneAugmentingMod {
       * @returns a list of transform nodes
       * @deprecated Please use getTransformNodesById instead
       */
-    def getTransformNodesByID(id: String): js.Array[typings.babylonjs.transformNodeMod.TransformNode] = js.native
+    def getTransformNodesByID(id: String): js.Array[typings.babylonjs.meshesTransformNodeMod.TransformNode] = js.native
     
     /**
       * Gets or sets if audio will be output to headphones
@@ -1906,7 +1925,7 @@ object babylonjsSceneAugmentingMod {
       * The main sound track played by the scene.
       * It contains your primary collection of sounds.
       */
-    var mainSoundTrack: typings.babylonjs.soundTrackMod.SoundTrack = js.native
+    var mainSoundTrack: typings.babylonjs.audioSoundTrackMod.SoundTrack = js.native
     
     /** Launch a ray to try to pick sprites in the scene
       * @param x position on screen
@@ -1915,19 +1934,19 @@ object babylonjsSceneAugmentingMod {
       * @param camera camera to use for computing the picking ray. Can be set to null. In this case, the scene.activeCamera will be used
       * @returns a PickingInfo array
       */
-    def multiPickSprite(x: Double, y: Double): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+    def multiPickSprite(x: Double, y: Double): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def multiPickSprite(
       x: Double,
       y: Double,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def multiPickSprite(
       x: Double,
       y: Double,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
-    def multiPickSprite(x: Double, y: Double, predicate: Unit, camera: typings.babylonjs.cameraMod.Camera): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
+    def multiPickSprite(x: Double, y: Double, predicate: Unit, camera: typings.babylonjs.camerasCameraMod.Camera): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     
     /** Use the given ray to pick sprites in the scene
       * @param ray The ray (in world space) to use to pick meshes
@@ -1935,39 +1954,51 @@ object babylonjsSceneAugmentingMod {
       * @param camera camera to use. Can be set to null. In this case, the scene.activeCamera will be used
       * @returns a PickingInfo array
       */
-    def multiPickSpriteWithRay(ray: typings.babylonjs.rayMod.Ray): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+    def multiPickSpriteWithRay(ray: typings.babylonjs.cullingRayMod.Ray): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def multiPickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     def multiPickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
-    def multiPickSpriteWithRay(ray: typings.babylonjs.rayMod.Ray, predicate: Unit, camera: typings.babylonjs.cameraMod.Camera): Nullable[js.Array[typings.babylonjs.pickingInfoMod.PickingInfo]] = js.native
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
+    def multiPickSpriteWithRay(
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: Unit,
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[js.Array[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]] = js.native
     
     /**
       * An event triggered when physic simulation has been done
       */
-    var onAfterPhysicsObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.physicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onAfterPhysicsObservable: typings.babylonjs.miscObservableMod.Observable[
+        typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered when sprites rendering is done
       * Note: This event can be trigger more than once per frame (because sprites can be rendered by render target textures as well)
       */
-    var onAfterSpritesRenderingObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.spriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onAfterSpritesRenderingObservable: typings.babylonjs.miscObservableMod.Observable[
+        typings.babylonjs.spritesSpriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered when physic simulation is about to be run
       */
-    var onBeforePhysicsObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.physicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onBeforePhysicsObservable: typings.babylonjs.miscObservableMod.Observable[
+        typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /**
       * An event triggered when sprites rendering is about to start
       * Note: This event can be trigger more than once per frame (because sprites can be rendered by render target textures as well)
       */
-    var onBeforeSpritesRenderingObservable: typings.babylonjs.observableMod.Observable[typings.babylonjs.spriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene] = js.native
+    var onBeforeSpritesRenderingObservable: typings.babylonjs.miscObservableMod.Observable[
+        typings.babylonjs.spritesSpriteSceneComponentMod.babylonjsSceneAugmentingMod.Scene
+      ] = js.native
     
     /** Launch a ray to try to pick a sprite in the scene
       * @param x position on screen
@@ -1977,41 +2008,47 @@ object babylonjsSceneAugmentingMod {
       * @param camera camera to use for computing the picking ray. Can be set to null. In this case, the scene.activeCamera will be used
       * @returns a PickingInfo
       */
-    def pickSprite(x: Double, y: Double): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    def pickSprite(x: Double, y: Double): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSprite(
       x: Double,
       y: Double,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSprite(
       x: Double,
       y: Double,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSprite(
       x: Double,
       y: Double,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Boolean,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSprite(
       x: Double,
       y: Double,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Unit,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
-    def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Boolean): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSprite(
       x: Double,
       y: Double,
       predicate: Unit,
       fastCheck: Boolean,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
-    def pickSprite(x: Double, y: Double, predicate: Unit, fastCheck: Unit, camera: typings.babylonjs.cameraMod.Camera): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    def pickSprite(
+      x: Double,
+      y: Double,
+      predicate: Unit,
+      fastCheck: Unit,
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     
     /** Use the given ray to pick a sprite in the scene
       * @param ray The ray (in world space) to use to pick meshes
@@ -2020,54 +2057,54 @@ object babylonjsSceneAugmentingMod {
       * @param camera camera to use. Can be set to null. In this case, the scene.activeCamera will be used
       * @returns a PickingInfo
       */
-    def pickSpriteWithRay(ray: typings.babylonjs.rayMod.Ray): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    def pickSpriteWithRay(ray: typings.babylonjs.cullingRayMod.Ray): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean]
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean]
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Boolean
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Boolean,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
-      predicate: js.Function1[/* sprite */ typings.babylonjs.spriteMod.Sprite, Boolean],
+      ray: typings.babylonjs.cullingRayMod.Ray,
+      predicate: js.Function1[/* sprite */ typings.babylonjs.spritesSpriteMod.Sprite, Boolean],
       fastCheck: Unit,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
-    def pickSpriteWithRay(ray: typings.babylonjs.rayMod.Ray, predicate: Unit, fastCheck: Boolean): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
+    def pickSpriteWithRay(ray: typings.babylonjs.cullingRayMod.Ray, predicate: Unit, fastCheck: Boolean): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
+      ray: typings.babylonjs.cullingRayMod.Ray,
       predicate: Unit,
       fastCheck: Boolean,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     def pickSpriteWithRay(
-      ray: typings.babylonjs.rayMod.Ray,
+      ray: typings.babylonjs.cullingRayMod.Ray,
       predicate: Unit,
       fastCheck: Unit,
-      camera: typings.babylonjs.cameraMod.Camera
-    ): Nullable[typings.babylonjs.pickingInfoMod.PickingInfo] = js.native
+      camera: typings.babylonjs.camerasCameraMod.Camera
+    ): Nullable[typings.babylonjs.collisionsPickingInfoMod.PickingInfo] = js.native
     
     /**
       * Gets the postprocess render pipeline manager
       * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
       * @see https://doc.babylonjs.com/how_to/using_default_rendering_pipeline
       */
-    val postProcessRenderPipelineManager: typings.babylonjs.postProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager = js.native
+    val postProcessRenderPipelineManager: typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager = js.native
     
     /**
       * Gets the octree used to boost mesh selection (picking)
       * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
       */
-    var selectionOctree: typings.babylonjs.octreeMod.Octree[typings.babylonjs.abstractMeshMod.AbstractMesh] = js.native
+    var selectionOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh] = js.native
     
     /**
       * Sets the active camera of the scene using its Id
@@ -2075,25 +2112,25 @@ object babylonjsSceneAugmentingMod {
       * @returns the new active camera or null if none found.
       * @deprecated Please use setActiveCameraById instead
       */
-    def setActiveCameraByID(id: String): Nullable[typings.babylonjs.cameraMod.Camera] = js.native
+    def setActiveCameraByID(id: String): Nullable[typings.babylonjs.camerasCameraMod.Camera] = js.native
     
     /**
       * Force the sprite under the pointer
       * @param sprite defines the sprite to use
       */
-    def setPointerOverSprite(sprite: Nullable[typings.babylonjs.spriteMod.Sprite]): Unit = js.native
+    def setPointerOverSprite(sprite: Nullable[typings.babylonjs.spritesSpriteMod.Sprite]): Unit = js.native
     
     /**
       * Gets or sets the simplification queue attached to the scene
       * @see https://doc.babylonjs.com/how_to/in-browser_mesh_simplification
       */
-    var simplificationQueue: typings.babylonjs.meshSimplificationMod.SimplificationQueue = js.native
+    var simplificationQueue: typings.babylonjs.meshesMeshSimplificationMod.SimplificationQueue = js.native
     
     /**
       * The list of sound tracks added to the scene
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
       */
-    var soundTracks: Nullable[js.Array[typings.babylonjs.soundTrackMod.SoundTrack]] = js.native
+    var soundTracks: Nullable[js.Array[typings.babylonjs.audioSoundTrackMod.SoundTrack]] = js.native
     
     /**
       * All of the sprite managers added to this scene

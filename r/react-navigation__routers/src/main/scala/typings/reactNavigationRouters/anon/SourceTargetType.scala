@@ -1,7 +1,7 @@
 package typings.reactNavigationRouters.anon
 
+import typings.reactNavigationRouters.libTypescriptSrcStackRouterMod.StackActionType
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.POP_TO_TOP
-import typings.reactNavigationRouters.stackRouterMod.StackActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.ImageName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.ImageName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeImageRequestwaite extends StObject {
   /**
     * The name of the image to describe.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName
+  var ImageName: typings.awsSdk.clientsSagemakerMod.ImageName
 }
 object DescribeImageRequestwaite {
   

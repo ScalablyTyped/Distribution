@@ -187,8 +187,8 @@ object mod {
     trait Moment extends StObject {
       
       def tz(): js.UndefOr[String] = js.native
-      def tz(timezone: String): typings.moment.momentMod.Moment = js.native
-      def tz(timezone: String, keepLocalTime: Boolean): typings.moment.momentMod.Moment = js.native
+      def tz(timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def tz(timezone: String, keepLocalTime: Boolean): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
       
       def zoneAbbr(): String = js.native
       
@@ -198,39 +198,45 @@ object mod {
     @js.native
     trait MomentTimezone extends StObject {
       
-      def apply(): typings.moment.momentMod.Moment = js.native
+      def apply(): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
       def apply(
         date: String,
-        format: typings.moment.momentMod.MomentFormatSpecification,
+        format: typings.moment.ts3Dot1TypingsMomentMod.MomentFormatSpecification,
         language: String,
         strict: Boolean,
         timezone: String
-      ): typings.moment.momentMod.Moment = js.native
+      ): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
       def apply(
         date: String,
-        format: typings.moment.momentMod.MomentFormatSpecification,
+        format: typings.moment.ts3Dot1TypingsMomentMod.MomentFormatSpecification,
         language: String,
         timezone: String
-      ): typings.moment.momentMod.Moment = js.native
+      ): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
       def apply(
         date: String,
-        format: typings.moment.momentMod.MomentFormatSpecification,
+        format: typings.moment.ts3Dot1TypingsMomentMod.MomentFormatSpecification,
         strict: Boolean,
         timezone: String
-      ): typings.moment.momentMod.Moment = js.native
-      def apply(date: String, format: typings.moment.momentMod.MomentFormatSpecification, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: String, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: js.Array[Double], timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: js.Date, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: Any, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: Double, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(date: typings.moment.momentMod.Moment, timezone: String): typings.moment.momentMod.Moment = js.native
-      def apply(timezone: String): typings.moment.momentMod.Moment = js.native
+      ): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(
+        date: String,
+        format: typings.moment.ts3Dot1TypingsMomentMod.MomentFormatSpecification,
+        timezone: String
+      ): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(date: String, timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(date: js.Array[Double], timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(date: js.Date, timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(date: Any, timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(date: Double, timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(date: typings.moment.ts3Dot1TypingsMomentMod.Moment, timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
+      def apply(timezone: String): typings.moment.ts3Dot1TypingsMomentMod.Moment = js.native
       
       def add(packedZoneString: String): Unit = js.native
       def add(packedZoneString: js.Array[String]): Unit = js.native
       
       def countries(): js.Array[String] = js.native
+      
+      var dataVersion: String = js.native
       
       def guess(): String = js.native
       def guess(ignoreCache: Boolean): String = js.native
@@ -249,9 +255,9 @@ object mod {
       
       def zonesForCountry(country: String): js.Array[MomentZoneOffset | String] = js.native
       def zonesForCountry(country: String, with_offset: Boolean): js.Array[MomentZoneOffset | String] = js.native
-      def zonesForCountry[T /* <: `true` */](country: String, with_offset: T): js.Array[MomentZoneOffset] = js.native
+      def zonesForCountry[T /* <: `true` */](country: String, with_offset: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? std.Array<moment-timezone.moment-timezone.moment.MomentZoneOffset> : never */ js.Any = js.native
       @JSName("zonesForCountry")
-      def zonesForCountry_T[T /* <: `false` */](country: String): js.Array[String] = js.native
+      def zonesForCountry_T_Any[T /* <: `false` */](country: String): /* import warning: importer.ImportType#apply Failed type conversion: T extends false ? std.Array<string> : never */ js.Any = js.native
     }
     
     trait MomentZone extends StObject {

@@ -1,6 +1,6 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.dropindexMod.DropIndexOptions
+import typings.redisSearch.distCommandsDropindexMod.DropIndexOptions
 import typings.redisSearch.redisSearchStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

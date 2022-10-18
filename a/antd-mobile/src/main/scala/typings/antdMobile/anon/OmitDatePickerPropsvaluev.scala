@@ -40,10 +40,10 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.datePickerUtilsMod.DatePickerFilter
-import typings.antdMobile.datePickerUtilsMod.Precision
-import typings.antdMobile.renderToContainerMod.GetContainer
-import typings.antdMobile.withStopPropagationMod.PropagationEvent
+import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.DatePickerFilter
+import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.Precision
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement

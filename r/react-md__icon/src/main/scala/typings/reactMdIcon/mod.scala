@@ -4,9 +4,6 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
-import typings.reactMdIcon.fontIconMod.FontIconProps
-import typings.reactMdIcon.iconProviderMod.IconProviderProps
-import typings.reactMdIcon.iconRotatorMod.IconRotatorProps
 import typings.reactMdIcon.reactMdIconStrings.back
 import typings.reactMdIcon.reactMdIconStrings.checkbox
 import typings.reactMdIcon.reactMdIconStrings.dropdown
@@ -20,8 +17,11 @@ import typings.reactMdIcon.reactMdIconStrings.radio
 import typings.reactMdIcon.reactMdIconStrings.selected
 import typings.reactMdIcon.reactMdIconStrings.sort
 import typings.reactMdIcon.reactMdIconStrings.upload
-import typings.reactMdIcon.svgiconMod.SVGIconProps
-import typings.reactMdIcon.textIconSpacingMod.TextIconSpacingProps
+import typings.reactMdIcon.typesFontIconMod.FontIconProps
+import typings.reactMdIcon.typesIconProviderMod.IconProviderProps
+import typings.reactMdIcon.typesIconRotatorMod.IconRotatorProps
+import typings.reactMdIcon.typesSvgiconMod.SVGIconProps
+import typings.reactMdIcon.typesTextIconSpacingMod.TextIconSpacingProps
 import typings.std.HTMLElement
 import typings.std.HTMLSpanElement
 import typings.std.SVGSVGElement

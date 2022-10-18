@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +46,7 @@ open class Certificate () extends StObject {
     * @returns `true` if the given `spkac` data structure is valid,
     * `false` otherwise.
     */
-  def verifySpkac(spkac: js.typedarray.ArrayBufferView): Boolean = js.native
+  def verifySpkac(spkac: ArrayBufferView): Boolean = js.native
 }
 object Certificate {
   
@@ -98,5 +99,5 @@ object Certificate {
     * @return `true` if the given `spkac` data structure is valid, `false` otherwise.
     */
   /* static member */
-  inline def verifySpkac(spkac: js.typedarray.ArrayBufferView): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySpkac")(spkac.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def verifySpkac(spkac: ArrayBufferView): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySpkac")(spkac.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

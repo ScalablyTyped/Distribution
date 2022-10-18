@@ -1,9 +1,9 @@
 package typings.awsSdkClientCognitoIdentityBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCognitoIdentityBrowser.typesCognitoIdentityProviderMod.CognitoIdentityProvider
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientCognitoIdentityBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

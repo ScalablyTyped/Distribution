@@ -1,8 +1,8 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeLanguageserver.serverMod.Features
-import typings.vscodeLanguageserver.serverMod._Connection
-import typings.vscodeLanguageserver.serverMod._underscore
+import typings.vscodeLanguageserver.libCommonServerMod.Features
+import typings.vscodeLanguageserver.libCommonServerMod._Connection
+import typings.vscodeLanguageserver.libCommonServerMod._underscore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

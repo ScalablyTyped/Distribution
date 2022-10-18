@@ -1,6 +1,6 @@
 package typings.firebaseAuth
 
-import typings.firebaseLogger.srcLoggerMod.LogLevel
+import typings.firebaseLogger.distSrcLoggerMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,19 +16,19 @@ object distSrcCoreUtilLogMod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.firebaseLogger.srcLoggerMod.LogLevel & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.firebaseLogger.distSrcLoggerMod.LogLevel & Double] = js.native
     
-    /* 0 */ val DEBUG: typings.firebaseLogger.srcLoggerMod.LogLevel.DEBUG & Double = js.native
+    /* 0 */ val DEBUG: typings.firebaseLogger.distSrcLoggerMod.LogLevel.DEBUG & Double = js.native
     
-    /* 4 */ val ERROR: typings.firebaseLogger.srcLoggerMod.LogLevel.ERROR & Double = js.native
+    /* 4 */ val ERROR: typings.firebaseLogger.distSrcLoggerMod.LogLevel.ERROR & Double = js.native
     
-    /* 2 */ val INFO: typings.firebaseLogger.srcLoggerMod.LogLevel.INFO & Double = js.native
+    /* 2 */ val INFO: typings.firebaseLogger.distSrcLoggerMod.LogLevel.INFO & Double = js.native
     
-    /* 5 */ val SILENT: typings.firebaseLogger.srcLoggerMod.LogLevel.SILENT & Double = js.native
+    /* 5 */ val SILENT: typings.firebaseLogger.distSrcLoggerMod.LogLevel.SILENT & Double = js.native
     
-    /* 1 */ val VERBOSE: typings.firebaseLogger.srcLoggerMod.LogLevel.VERBOSE & Double = js.native
+    /* 1 */ val VERBOSE: typings.firebaseLogger.distSrcLoggerMod.LogLevel.VERBOSE & Double = js.native
     
-    /* 3 */ val WARN: typings.firebaseLogger.srcLoggerMod.LogLevel.WARN & Double = js.native
+    /* 3 */ val WARN: typings.firebaseLogger.distSrcLoggerMod.LogLevel.WARN & Double = js.native
   }
   
   inline def getLogLevel(): LogLevel = ^.asInstanceOf[js.Dynamic].applyDynamic("_getLogLevel")().asInstanceOf[LogLevel]

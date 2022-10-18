@@ -1,5 +1,6 @@
 package typings.playcanvas.global.pc
 
+import typings.playcanvas.mod.AnimEvaluator
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,7 +38,7 @@ open class AnimController protected ()
     * have been consumed by a transition.
     */
   def this(
-    animEvaluator: typings.playcanvas.mod.AnimEvaluator,
+    animEvaluator: AnimEvaluator,
     states: js.Array[js.Object],
     transitions: js.Array[js.Object],
     parameters: js.Array[js.Object],

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class UrlRuleFactory protected ()
   extends typings.uirouterCore.libUrlMod.UrlRuleFactory {
-  def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(router: typings.uirouterCore.libRouterMod.UIRouter) = this()
 }
 /* static members */
 object UrlRuleFactory {

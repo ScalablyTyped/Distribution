@@ -1,6 +1,6 @@
 package typings.reactPopperTooltip
 
-import typings.reactPopperTooltip.typesMod.TriggerTypes
+import typings.reactPopperTooltip.distTypesMod.TriggerTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

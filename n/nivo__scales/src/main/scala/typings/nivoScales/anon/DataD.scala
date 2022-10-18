@@ -1,6 +1,6 @@
 package typings.nivoScales.anon
 
-import typings.nivoScales.computeMod.SerieDatum
+import typings.nivoScales.distTypesComputeMod.SerieDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

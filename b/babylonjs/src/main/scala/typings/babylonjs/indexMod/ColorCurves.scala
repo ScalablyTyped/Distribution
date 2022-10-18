@@ -24,50 +24,50 @@ object ColorCurves {
     * @param negativeUniform The negative uniform shader parameter
     */
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: String,
     neutralUniform: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: String,
     neutralUniform: String,
     negativeUniform: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: String,
     neutralUniform: Unit,
     negativeUniform: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: Unit,
     neutralUniform: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: Unit,
     neutralUniform: String,
     negativeUniform: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Bind")(colorCurves.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], positiveUniform.asInstanceOf[js.Any], neutralUniform.asInstanceOf[js.Any], negativeUniform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def Bind(
-    colorCurves: typings.babylonjs.colorCurvesMod.ColorCurves,
-    effect: typings.babylonjs.effectMod.Effect,
+    colorCurves: typings.babylonjs.materialsColorCurvesMod.ColorCurves,
+    effect: typings.babylonjs.materialsEffectMod.Effect,
     positiveUniform: Unit,
     neutralUniform: Unit,
     negativeUniform: String
@@ -78,7 +78,7 @@ object ColorCurves {
     * @param source the JSON source to parse
     * @returns The parsed curves
     */
-  inline def Parse(source: Any): typings.babylonjs.colorCurvesMod.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.colorCurvesMod.ColorCurves]
+  inline def Parse(source: Any): typings.babylonjs.materialsColorCurvesMod.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsColorCurvesMod.ColorCurves]
   
   /**
     * Prepare the list of uniforms associated with the ColorCurves effects.

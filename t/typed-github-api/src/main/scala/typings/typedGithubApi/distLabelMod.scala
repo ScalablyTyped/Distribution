@@ -1,8 +1,8 @@
 package typings.typedGithubApi
 
-import typings.typedGithubApi.githubRefMod.GitHubRef
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.interfacesLabelMod.Label
+import typings.typedGithubApi.distGithubRefMod.GitHubRef
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesLabelMod.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object distLabelMod {
   open class LabelClass protected ()
     extends GitHubRef
        with Label {
-    def this(data: typings.typedGithubApi.labelMod.Label, options: OptionsOrRef) = this()
+    def this(data: typings.typedGithubApi.distApiInterfacesLabelMod.Label, options: OptionsOrRef) = this()
     
     /* CompleteClass */
     var default: Boolean = js.native

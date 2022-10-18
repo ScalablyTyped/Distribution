@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Media extends StObject {
   
-  var bridgeId: String
-  
   var lang: js.UndefOr[String] = js.undefined
   
   var media: String | js.Array[String]
@@ -20,14 +18,12 @@ trait Media extends StObject {
 }
 object Media {
   
-  inline def apply(bridgeId: String, media: String | js.Array[String], playbackId: String): Media = {
-    val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], playbackId = playbackId.asInstanceOf[js.Any])
+  inline def apply(media: String | js.Array[String], playbackId: String): Media = {
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any], playbackId = playbackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Media]
   }
   
   extension [Self <: Media](x: Self) {
-    
-    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

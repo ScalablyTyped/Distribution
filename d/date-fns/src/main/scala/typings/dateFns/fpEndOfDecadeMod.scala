@@ -9,7 +9,7 @@ object fpEndOfDecadeMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/endOfDecade", JSImport.Default)
+    @JSImport("date-fns/fp/endOfDecade", JSImport.Default)
     @js.native
     val ^ : CurriedFn1[js.Date | Double, js.Date] = js.native
     

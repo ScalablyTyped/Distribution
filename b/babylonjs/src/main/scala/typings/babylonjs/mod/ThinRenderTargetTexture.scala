@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.textureCreationOptionsMod.RenderTargetCreationOptions
-import typings.babylonjs.textureCreationOptionsMod.TextureSize
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.RenderTargetCreationOptions
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.TextureSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ThinRenderTargetTexture")
 @js.native
 open class ThinRenderTargetTexture protected ()
-  extends typings.babylonjs.legacyMod.ThinRenderTargetTexture {
+  extends typings.babylonjs.legacyLegacyMod.ThinRenderTargetTexture {
   /**
     * Instantiates a new ThinRenderTargetTexture.
     * Tiny helper class to wrap a RenderTargetWrapper in a texture.
@@ -19,7 +19,7 @@ open class ThinRenderTargetTexture protected ()
     * @param options Define rendertarget options
     */
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     size: TextureSize,
     options: RenderTargetCreationOptions
   ) = this()

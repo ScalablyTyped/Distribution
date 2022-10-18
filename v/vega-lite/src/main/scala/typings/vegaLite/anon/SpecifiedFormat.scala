@@ -1,16 +1,16 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.srcTypeMod.Type
-import typings.vegaLite.utilMod.Dict
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcTypeMod.Type
+import typings.vegaLite.buildSrcUtilMod.Dict
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SpecifiedFormat extends StObject {
   
-  var config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]
+  var config: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]
   
   var normalizeStack: js.UndefOr[Boolean] = js.undefined
   
@@ -20,7 +20,7 @@ trait SpecifiedFormat extends StObject {
 }
 object SpecifiedFormat {
   
-  inline def apply(config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef], `type`: Type): SpecifiedFormat = {
+  inline def apply(config: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef], `type`: Type): SpecifiedFormat = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecifiedFormat]
@@ -28,7 +28,7 @@ object SpecifiedFormat {
   
   extension [Self <: SpecifiedFormat](x: Self) {
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setNormalizeStack(value: Boolean): Self = StObject.set(x, "normalizeStack", value.asInstanceOf[js.Any])
     

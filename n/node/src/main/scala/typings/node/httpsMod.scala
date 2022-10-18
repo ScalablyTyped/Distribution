@@ -5,11 +5,13 @@ import typings.node.anon.ReqInstanceType
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.RequestListener
-import typings.node.nodeHttpMod.ClientRequest
-import typings.node.nodeHttpMod.IncomingMessage
-import typings.node.nodeHttpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeStreamMod.Duplex
+import typings.node.nodeColonhttpMod.ClientRequest
+import typings.node.nodeColonhttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.ServerResponse
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonstreamMod.Duplex
+import typings.node.nodeColontlsMod.TLSSocket
+import typings.node.nodeColonurlMod.URL
 import typings.node.nodeStrings.OCSPRequest
 import typings.node.nodeStrings.checkContinue
 import typings.node.nodeStrings.checkExpectation
@@ -26,8 +28,6 @@ import typings.node.nodeStrings.resumeSession
 import typings.node.nodeStrings.secureConnection
 import typings.node.nodeStrings.tlsClientError
 import typings.node.nodeStrings.upgrade
-import typings.node.nodeTlsMod.TLSSocket
-import typings.node.nodeUrlMod.URL
 import typings.node.tlsMod.CommonConnectionOptions
 import typings.node.tlsMod.PSKCallbackNegotation
 import typings.node.tlsMod.PeerCertificate
@@ -51,7 +51,7 @@ object httpsMod {
   @JSImport("https", "Agent")
   @js.native
   open class Agent ()
-    extends typings.node.nodeHttpMod.Agent {
+    extends typings.node.nodeColonhttpMod.Agent {
     def this(options: AgentOptions) = this()
     
     var options: AgentOptions = js.native

@@ -20,5 +20,6 @@ trait Log4js extends StObject {
   // express.Handler;
   var levels: Levels_ = js.native
   
-  def shutdown(cb: js.Function1[/* error */ js.Error, Unit]): Unit | Null = js.native
+  def shutdown(): Unit = js.native
+  def shutdown(cb: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
 }

@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsYoutubeFilledSmallMod.YoutubeFilledSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubeFilledSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/YoutubeFilledSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/YoutubeFilledSmall", JSImport.Default)
   @js.native
   val default: FC[YoutubeFilledSmallProps] = js.native
-  
-  trait YoutubeFilledSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object YoutubeFilledSmallProps {
-    
-    inline def apply(): YoutubeFilledSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[YoutubeFilledSmallProps]
-    }
-    
-    extension [Self <: YoutubeFilledSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[YoutubeFilledSmallProps]
   

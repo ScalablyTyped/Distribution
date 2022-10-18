@@ -167,9 +167,9 @@ object AtomPub {
   }
   
   /** Encapsulates one or more collections within a workspace. */
-  @JSGlobal("Windows.Web.AtomPub.ResourceCollection")
+  /* note: abstract class */ @JSGlobal("Windows.Web.AtomPub.ResourceCollection")
   @js.native
-  abstract class ResourceCollection ()
+  open class ResourceCollection ()
     extends StObject
        with typings.winrtUwp.Windows.Web.AtomPub.ResourceCollection {
     
@@ -227,9 +227,9 @@ object AtomPub {
   }
   
   /** Encapsulates a service document. */
-  @JSGlobal("Windows.Web.AtomPub.ServiceDocument")
+  /* note: abstract class */ @JSGlobal("Windows.Web.AtomPub.ServiceDocument")
   @js.native
-  abstract class ServiceDocument ()
+  open class ServiceDocument ()
     extends StObject
        with typings.winrtUwp.Windows.Web.AtomPub.ServiceDocument {
     
@@ -275,9 +275,9 @@ object AtomPub {
   }
   
   /** Encapsulates a workspace in a service document. */
-  @JSGlobal("Windows.Web.AtomPub.Workspace")
+  /* note: abstract class */ @JSGlobal("Windows.Web.AtomPub.Workspace")
   @js.native
-  abstract class Workspace ()
+  open class Workspace ()
     extends StObject
        with typings.winrtUwp.Windows.Web.AtomPub.Workspace {
     

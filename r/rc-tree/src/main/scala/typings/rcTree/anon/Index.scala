@@ -1,6 +1,6 @@
 package typings.rcTree.anon
 
-import typings.rcTree.interfaceMod.DataNode
+import typings.rcTree.esInterfaceMod.DataNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait Index extends StObject {
   
   var index: Double
   
-  var key: typings.rcTree.interfaceMod.Key
+  var key: typings.rcTree.esInterfaceMod.Key
   
   var level: Double
   
@@ -25,7 +25,7 @@ object Index {
   
   inline def apply(
     index: Double,
-    key: typings.rcTree.interfaceMod.Key,
+    key: typings.rcTree.esInterfaceMod.Key,
     level: Double,
     node: DataNode,
     nodes: js.Array[DataNode],
@@ -40,7 +40,7 @@ object Index {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

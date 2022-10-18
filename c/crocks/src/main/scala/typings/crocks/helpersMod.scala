@@ -1,11 +1,11 @@
 package typings.crocks
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.crocks.internalTypesMod.BinaryFunction
+import typings.crocks.internalTypesMod.TernaryFunction
+import typings.crocks.internalTypesMod.UnaryFunction
+import typings.crocks.internalTypesMod.VariadicFunction
 import typings.crocks.pairMod.default
-import typings.crocks.typesMod.BinaryFunction
-import typings.crocks.typesMod.TernaryFunction
-import typings.crocks.typesMod.UnaryFunction
-import typings.crocks.typesMod.VariadicFunction
 import typings.std.Exclude
 import typings.std.Omit
 import typings.std.Pick

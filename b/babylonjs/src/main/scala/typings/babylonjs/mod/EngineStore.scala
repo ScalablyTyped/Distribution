@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EngineStore")
 @js.native
 open class EngineStore ()
-  extends typings.babylonjs.legacyMod.EngineStore
+  extends typings.babylonjs.legacyLegacyMod.EngineStore
 /* static members */
 object EngineStore {
   
@@ -28,8 +28,8 @@ object EngineStore {
   /** Gets the list of created engines */
   @JSImport("babylonjs", "EngineStore.Instances")
   @js.native
-  def Instances: js.Array[typings.babylonjs.engineMod.Engine] = js.native
-  inline def Instances_=(x: js.Array[typings.babylonjs.engineMod.Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
+  def Instances: js.Array[typings.babylonjs.enginesEngineMod.Engine] = js.native
+  inline def Instances_=(x: js.Array[typings.babylonjs.enginesEngineMod.Engine]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
   
   /**
     * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ref: https://immersive-web.github.io/webxr/#xrpose-interface
   */
-@JSGlobal("XRPose")
+/* note: abstract class */ @JSGlobal("XRPose")
 @js.native
-abstract class XRPose ()
+open class XRPose ()
   extends StObject
      with typings.webxr.XRPose {
   

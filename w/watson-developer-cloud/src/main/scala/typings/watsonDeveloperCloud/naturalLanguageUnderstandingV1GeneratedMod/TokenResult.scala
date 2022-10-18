@@ -36,7 +36,7 @@ object TokenResult {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     

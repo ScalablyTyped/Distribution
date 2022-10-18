@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "Polyline")
 @js.native
-open class Polyline protected () extends StObject {
-  def this(options: typings.cesium.anon.DistanceDisplayCondition, polylineCollection: PolylineCollection) = this()
+open class Polyline () extends StObject {
   
   /**
     * Gets or sets the condition specifying at what distance from the camera that this polyline will be displayed.

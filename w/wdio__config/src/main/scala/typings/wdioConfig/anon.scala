@@ -5,24 +5,25 @@ import typings.std.NonNullable
 import typings.std.Record
 import typings.wdioConfig.wdioConfigStrings.local
 import typings.wdioTypes.anon.Http
-import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
-import typings.wdioTypes.capabilitiesMod.RemoteCapabilities
-import typings.wdioTypes.capabilitiesMod.RemoteCapability
-import typings.wdioTypes.capabilitiesMod.W3CCapabilities
-import typings.wdioTypes.frameworksMod.Suite
-import typings.wdioTypes.frameworksMod.Test
-import typings.wdioTypes.frameworksMod.TestResult
+import typings.wdioTypes.anon.OmitTestrunnercapabilitieAfter
+import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.RemoteCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability
+import typings.wdioTypes.buildCapabilitiesMod.W3CCapabilities
+import typings.wdioTypes.buildFrameworksMod.Suite
+import typings.wdioTypes.buildFrameworksMod.Test
+import typings.wdioTypes.buildFrameworksMod.TestResult
+import typings.wdioTypes.buildOptionsMod.AutoCompileConfig
+import typings.wdioTypes.buildOptionsMod.RequestLibOptions
+import typings.wdioTypes.buildOptionsMod.RequestLibResponse
+import typings.wdioTypes.buildOptionsMod.SauceRegions
+import typings.wdioTypes.buildOptionsMod.SupportedProtocols
+import typings.wdioTypes.buildOptionsMod.WebDriverLogTypes
+import typings.wdioTypes.buildReportersMod.ReporterEntry
+import typings.wdioTypes.buildServicesMod.ServiceEntry
 import typings.wdioTypes.mod.global.WebdriverIO.CucumberOpts
 import typings.wdioTypes.mod.global.WebdriverIO.JasmineOpts
 import typings.wdioTypes.mod.global.WebdriverIO.MochaOpts
-import typings.wdioTypes.optionsMod.AutoCompileConfig
-import typings.wdioTypes.optionsMod.RequestLibOptions
-import typings.wdioTypes.optionsMod.RequestLibResponse
-import typings.wdioTypes.optionsMod.SauceRegions
-import typings.wdioTypes.optionsMod.SupportedProtocols
-import typings.wdioTypes.optionsMod.WebDriverLogTypes
-import typings.wdioTypes.reportersMod.ReporterEntry
-import typings.wdioTypes.servicesMod.ServiceEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,7 +159,7 @@ object anon {
     
     var beforeSession: js.UndefOr[
         (js.Function4[
-          /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+          /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -167,7 +168,7 @@ object anon {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -227,7 +228,7 @@ object anon {
     var onComplete: js.UndefOr[
         (js.Function4[
           /* exitCode */ Double, 
-          /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+          /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -236,7 +237,7 @@ object anon {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -613,7 +614,7 @@ object anon {
       
       inline def setBeforeSession(
         value: (js.Function4[
-              /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -622,7 +623,7 @@ object anon {
               NonNullable[
                 js.UndefOr[
                   js.Function4[
-                    /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                    /* config */ OmitTestrunnercapabilitieAfter, 
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
                     /* cid */ String, 
@@ -634,7 +635,7 @@ object anon {
       ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
       
       inline def setBeforeSessionFunction4(
-        value: (/* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
       ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
       
       inline def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
@@ -643,7 +644,7 @@ object anon {
         value: (NonNullable[
               js.UndefOr[
                 js.Function4[
-                  /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                  /* config */ OmitTestrunnercapabilitieAfter, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* cid */ String, 
@@ -775,7 +776,7 @@ object anon {
       inline def setOnComplete(
         value: (js.Function4[
               /* exitCode */ Double, 
-              /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit
@@ -784,7 +785,7 @@ object anon {
                 js.UndefOr[
                   js.Function4[
                     /* exitCode */ Double, 
-                    /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                    /* config */ OmitTestrunnercapabilitieAfter, 
                     /* capabilities */ RemoteCapabilities, 
                     /* results */ Any, 
                     Unit
@@ -795,7 +796,7 @@ object anon {
       ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteFunction4(
-        value: (/* exitCode */ Double, /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
       ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
@@ -805,7 +806,7 @@ object anon {
               js.UndefOr[
                 js.Function4[
                   /* exitCode */ Double, 
-                  /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                  /* config */ OmitTestrunnercapabilitieAfter, 
                   /* capabilities */ RemoteCapabilities, 
                   /* results */ Any, 
                   Unit
@@ -1178,7 +1179,7 @@ object anon {
     var beforeHook: (js.Function2[/* test */ Any, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]]])
     
     var beforeSession: (js.Function4[
-        /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+        /* config */ OmitTestrunnercapabilitieAfter, 
         /* capabilities */ RemoteCapability, 
         /* specs */ js.Array[String], 
         /* cid */ String, 
@@ -1187,7 +1188,7 @@ object anon {
         NonNullable[
           js.UndefOr[
             js.Function4[
-              /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -1243,7 +1244,7 @@ object anon {
     
     var onComplete: (js.Function4[
         /* exitCode */ Double, 
-        /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+        /* config */ OmitTestrunnercapabilitieAfter, 
         /* capabilities */ RemoteCapabilities, 
         /* results */ Any, 
         Unit
@@ -1252,7 +1253,7 @@ object anon {
           js.UndefOr[
             js.Function4[
               /* exitCode */ Double, 
-              /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit
@@ -1469,7 +1470,7 @@ object anon {
         ]),
       beforeHook: (js.Function2[/* test */ Any, /* context */ Any, Unit]) | (js.Array[NonNullable[js.UndefOr[js.Function2[/* test */ Any, /* context */ Any, Unit]]]]),
       beforeSession: (js.Function4[
-          /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+          /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapability, 
           /* specs */ js.Array[String], 
           /* cid */ String, 
@@ -1478,7 +1479,7 @@ object anon {
           NonNullable[
             js.UndefOr[
               js.Function4[
-                /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapability, 
                 /* specs */ js.Array[String], 
                 /* cid */ String, 
@@ -1511,7 +1512,7 @@ object anon {
       mochaOpts: MochaOpts,
       onComplete: (js.Function4[
           /* exitCode */ Double, 
-          /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+          /* config */ OmitTestrunnercapabilitieAfter, 
           /* capabilities */ RemoteCapabilities, 
           /* results */ Any, 
           Unit
@@ -1520,7 +1521,7 @@ object anon {
             js.UndefOr[
               js.Function4[
                 /* exitCode */ Double, 
-                /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                /* config */ OmitTestrunnercapabilitieAfter, 
                 /* capabilities */ RemoteCapabilities, 
                 /* results */ Any, 
                 Unit
@@ -1822,7 +1823,7 @@ object anon {
       
       inline def setBeforeSession(
         value: (js.Function4[
-              /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapability, 
               /* specs */ js.Array[String], 
               /* cid */ String, 
@@ -1831,7 +1832,7 @@ object anon {
               NonNullable[
                 js.UndefOr[
                   js.Function4[
-                    /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                    /* config */ OmitTestrunnercapabilitieAfter, 
                     /* capabilities */ RemoteCapability, 
                     /* specs */ js.Array[String], 
                     /* cid */ String, 
@@ -1843,14 +1844,14 @@ object anon {
       ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
       
       inline def setBeforeSessionFunction4(
-        value: (/* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
+        value: (/* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapability, /* specs */ js.Array[String], /* cid */ String) => Unit
       ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction4(value))
       
       inline def setBeforeSessionVarargs(
         value: (NonNullable[
               js.UndefOr[
                 js.Function4[
-                  /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                  /* config */ OmitTestrunnercapabilitieAfter, 
                   /* capabilities */ RemoteCapability, 
                   /* specs */ js.Array[String], 
                   /* cid */ String, 
@@ -1942,7 +1943,7 @@ object anon {
       inline def setOnComplete(
         value: (js.Function4[
               /* exitCode */ Double, 
-              /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+              /* config */ OmitTestrunnercapabilitieAfter, 
               /* capabilities */ RemoteCapabilities, 
               /* results */ Any, 
               Unit
@@ -1951,7 +1952,7 @@ object anon {
                 js.UndefOr[
                   js.Function4[
                     /* exitCode */ Double, 
-                    /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                    /* config */ OmitTestrunnercapabilitieAfter, 
                     /* capabilities */ RemoteCapabilities, 
                     /* results */ Any, 
                     Unit
@@ -1962,7 +1963,7 @@ object anon {
       ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
       
       inline def setOnCompleteFunction4(
-        value: (/* exitCode */ Double, /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
+        value: (/* exitCode */ Double, /* config */ OmitTestrunnercapabilitieAfter, /* capabilities */ RemoteCapabilities, /* results */ Any) => Unit
       ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
       
       inline def setOnCompleteVarargs(
@@ -1970,7 +1971,7 @@ object anon {
               js.UndefOr[
                 js.Function4[
                   /* exitCode */ Double, 
-                  /* config */ typings.wdioTypes.anon.OmitTestrunnercapabilitie, 
+                  /* config */ OmitTestrunnercapabilitieAfter, 
                   /* capabilities */ RemoteCapabilities, 
                   /* results */ Any, 
                   Unit

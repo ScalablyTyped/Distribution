@@ -18,8 +18,9 @@ import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconType
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distIconsIconMod.IconType
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all
@@ -41,7 +42,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import typings.reactNativeVectorIcons.iconMod.IconProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject

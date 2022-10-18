@@ -2,6 +2,11 @@ package typings.nivoRadar
 
 import typings.nivoRadar.anon.From
 import typings.nivoRadar.anon.Scheme
+import typings.nivoRadar.distTypesRadarDotsMod.RadarDotsProps
+import typings.nivoRadar.distTypesTypesMod.GridLabelProps
+import typings.nivoRadar.distTypesTypesMod.RadarLayerId
+import typings.nivoRadar.distTypesTypesMod.RadarSliceTooltipProps
+import typings.nivoRadar.distTypesTypesMod.RadarSvgProps
 import typings.nivoRadar.nivoRadarStrings.auto
 import typings.nivoRadar.nivoRadarStrings.circular
 import typings.nivoRadar.nivoRadarStrings.gentle
@@ -9,11 +14,6 @@ import typings.nivoRadar.nivoRadarStrings.height
 import typings.nivoRadar.nivoRadarStrings.linearClosed
 import typings.nivoRadar.nivoRadarStrings.normal
 import typings.nivoRadar.nivoRadarStrings.width
-import typings.nivoRadar.radarDotsMod.RadarDotsProps
-import typings.nivoRadar.typesMod.GridLabelProps
-import typings.nivoRadar.typesMod.RadarLayerId
-import typings.nivoRadar.typesMod.RadarSliceTooltipProps
-import typings.nivoRadar.typesMod.RadarSvgProps
 import typings.react.mod.global.JSX.Element
 import typings.std.Omit
 import typings.std.Record

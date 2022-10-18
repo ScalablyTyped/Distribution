@@ -1,6 +1,6 @@
 package typings.xstate
 
-import typings.xstate.typesMod._StateTypes
+import typings.xstate.libTypesMod._StateTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,104 +12,8 @@ object xstateStrings {
   inline def `@@xstateSlashtypegen`: `@@xstateSlashtypegen` = "@@xstate/typegen".asInstanceOf[`@@xstateSlashtypegen`]
   
   @js.native
-  sealed trait ActionCreators extends StObject
-  inline def ActionCreators: ActionCreators = "ActionCreators".asInstanceOf[ActionCreators]
-  
-  @js.native
-  sealed trait ActionFunctionMap extends StObject
-  inline def ActionFunctionMap: ActionFunctionMap = "ActionFunctionMap".asInstanceOf[ActionFunctionMap]
-  
-  @js.native
-  sealed trait `An action creator must return an object` extends StObject
-  inline def `An action creator must return an object`: `An action creator must return an object` = ("An action creator must return an object").asInstanceOf[`An action creator must return an object`]
-  
-  @js.native
-  sealed trait `An event creator must return an object` extends StObject
-  inline def `An event creator must return an object`: `An event creator must return an object` = ("An event creator must return an object").asInstanceOf[`An event creator must return an object`]
-  
-  @js.native
   sealed trait Asterisk extends StObject
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
-  
-  @js.native
-  sealed trait Compute extends StObject
-  inline def Compute: Compute = "Compute".asInstanceOf[Compute]
-  
-  @js.native
-  sealed trait EventCreators extends StObject
-  inline def EventCreators: EventCreators = "EventCreators".asInstanceOf[EventCreators]
-  
-  @js.native
-  sealed trait ExcludeType extends StObject
-  inline def ExcludeType: ExcludeType = "ExcludeType".asInstanceOf[ExcludeType]
-  
-  @js.native
-  sealed trait FinalActionCreators extends StObject
-  inline def FinalActionCreators: FinalActionCreators = "FinalActionCreators".asInstanceOf[FinalActionCreators]
-  
-  @js.native
-  sealed trait FinalEventCreators extends StObject
-  inline def FinalEventCreators: FinalEventCreators = "FinalEventCreators".asInstanceOf[FinalEventCreators]
-  
-  @js.native
-  sealed trait IndexByType extends StObject
-  inline def IndexByType: IndexByType = "IndexByType".asInstanceOf[IndexByType]
-  
-  @js.native
-  sealed trait MachineOptionsActions extends StObject
-  inline def MachineOptionsActions: MachineOptionsActions = "MachineOptionsActions".asInstanceOf[MachineOptionsActions]
-  
-  @js.native
-  sealed trait MachineOptionsDelays extends StObject
-  inline def MachineOptionsDelays: MachineOptionsDelays = "MachineOptionsDelays".asInstanceOf[MachineOptionsDelays]
-  
-  @js.native
-  sealed trait MachineOptionsGuards extends StObject
-  inline def MachineOptionsGuards: MachineOptionsGuards = "MachineOptionsGuards".asInstanceOf[MachineOptionsGuards]
-  
-  @js.native
-  sealed trait MachineOptionsServices extends StObject
-  inline def MachineOptionsServices: MachineOptionsServices = "MachineOptionsServices".asInstanceOf[MachineOptionsServices]
-  
-  @js.native
-  sealed trait MakeKeysRequired extends StObject
-  inline def MakeKeysRequired: MakeKeysRequired = "MakeKeysRequired".asInstanceOf[MakeKeysRequired]
-  
-  @js.native
-  sealed trait MaybeMakeMissingImplementationsRequired extends StObject
-  inline def MaybeMakeMissingImplementationsRequired: MaybeMakeMissingImplementationsRequired = "MaybeMakeMissingImplementationsRequired".asInstanceOf[MaybeMakeMissingImplementationsRequired]
-  
-  @js.native
-  sealed trait PropertyAssigner extends StObject
-  inline def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
-  
-  @js.native
-  sealed trait PropertyMapper extends StObject
-  inline def PropertyMapper: PropertyMapper = "PropertyMapper".asInstanceOf[PropertyMapper]
-  
-  @js.native
-  sealed trait `Some implementations missing` extends StObject
-  inline def `Some implementations missing`: `Some implementations missing` = ("Some implementations missing").asInstanceOf[`Some implementations missing`]
-  
-  @js.native
-  sealed trait StateNodesConfig extends StObject
-  inline def StateNodesConfig: StateNodesConfig = "StateNodesConfig".asInstanceOf[StateNodesConfig]
-  
-  @js.native
-  sealed trait StatesConfig extends StObject
-  inline def StatesConfig: StatesConfig = "StatesConfig".asInstanceOf[StatesConfig]
-  
-  @js.native
-  sealed trait StatesDefinition extends StObject
-  inline def StatesDefinition: StatesDefinition = "StatesDefinition".asInstanceOf[StatesDefinition]
-  
-  @js.native
-  sealed trait TransitionDefinitionMap extends StObject
-  inline def TransitionDefinitionMap: TransitionDefinitionMap = "TransitionDefinitionMap".asInstanceOf[TransitionDefinitionMap]
-  
-  @js.native
-  sealed trait TransitionsConfigMap extends StObject
-  inline def TransitionsConfigMap: TransitionsConfigMap = "TransitionsConfigMap".asInstanceOf[TransitionsConfigMap]
   
   @js.native
   sealed trait __XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__ extends StObject
@@ -236,16 +140,8 @@ object xstateStrings {
   inline def machine: machine = "machine".asInstanceOf[machine]
   
   @js.native
-  sealed trait mapValues extends StObject
-  inline def mapValues: mapValues = "mapValues".asInstanceOf[mapValues]
-  
-  @js.native
   sealed trait matches extends StObject
   inline def matches: matches = "matches".asInstanceOf[matches]
-  
-  @js.native
-  sealed trait matchesStates extends StObject
-  inline def matchesStates: matchesStates = "matchesStates".asInstanceOf[matchesStates]
   
   @js.native
   sealed trait missingImplementations extends StObject

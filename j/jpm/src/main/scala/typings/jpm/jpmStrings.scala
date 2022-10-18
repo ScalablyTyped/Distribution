@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.pageModMod.attachmentMode
+import typings.jpm.sdkPageModMod.attachmentMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

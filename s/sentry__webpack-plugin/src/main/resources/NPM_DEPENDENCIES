@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry/webpack-plugin" : "1.19.0"
+      "@sentry/webpack-plugin" : "1.19.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry/webpack-plugin" : "1.19.0"
+      "@sentry/webpack-plugin" : "1.19.1"
     }
   ],
   "compile-devDependencies" : [

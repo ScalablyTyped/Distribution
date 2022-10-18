@@ -2,20 +2,21 @@ package typings.tensorflowTfjsNode
 
 import typings.std.RequestInit
 import typings.tensorflowTfjsCore.anon.Data
-import typings.tensorflowTfjsCore.kernelNamesMod.PackAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.PackInputs
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
-import typings.tensorflowTfjsCore.typesMod.IOHandler
-import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
-import typings.tensorflowTfjsCore.typesMod.LoadOptions
-import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
-import typings.tensorflowTfjsCore.typesMod.TrainingConfig
-import typings.tensorflowTfjsCore.typesMod.WeightGroup
-import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
-import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
-import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandler
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandlerSync
+import typings.tensorflowTfjsCore.distIoTypesMod.LoadOptions
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelArtifacts
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelJSON
+import typings.tensorflowTfjsCore.distIoTypesMod.TrainingConfig
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightGroup
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightsManifestConfig
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightsManifestEntry
+import typings.tensorflowTfjsCore.distKernelNamesMod.PackAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.PackInputs
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensor
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
+import typings.tensorflowTfjsNode.distNodejsKernelBackendMod.NodeJSKernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -249,6 +250,19 @@ object anon {
       weightData: Unit,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
+  }
+  
+  @js.native
+  trait FnCallModelJSONWeightSpecsWeightData extends StObject {
+    
+    def apply(modelJSON: ModelJSON): ModelArtifacts = js.native
+    def apply(modelJSON: ModelJSON, weightSpecs: js.Array[WeightsManifestEntry]): ModelArtifacts = js.native
+    def apply(
+      modelJSON: ModelJSON,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: js.typedarray.ArrayBuffer
+    ): ModelArtifacts = js.native
+    def apply(modelJSON: ModelJSON, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): ModelArtifacts = js.native
   }
   
   @js.native

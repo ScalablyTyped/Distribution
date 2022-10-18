@@ -1,8 +1,8 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.LegendMarkerCfg
-import typings.antvGBase.typesMod.PathCommand
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvComponent.libTypesMod.LegendMarkerCfg
+import typings.antvGBase.libTypesMod.PathCommand
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.nivoAnnotations.anon
 
-import typings.nivoAnnotations.typesMod.ListIterateeCustom
+import typings.nivoAnnotations.distTypesTypesMod.ListIterateeCustom
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

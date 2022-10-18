@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.anon
 
-import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentContentChangeEvent
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentContentChangeEvent
 import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

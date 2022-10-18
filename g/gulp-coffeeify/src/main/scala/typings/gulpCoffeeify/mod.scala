@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.gulpCoffeeify.anon.Base
 import typings.gulpCoffeeify.anon.Debug
 import typings.gulpCoffeeify.anon.Ext
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ object mod extends Shortcut {
   
   type Aliases = js.Array[Base]
   
-  type Coffeeify = js.Function1[
-    /* option */ js.UndefOr[Option], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]
+  type Coffeeify = js.Function1[/* option */ js.UndefOr[Option], ReadWriteStream]
   
   trait Option extends StObject {
     

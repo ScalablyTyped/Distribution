@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.ProcessingJobName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.ProcessingJobName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeProcessingJobRequ extends StObject {
   /**
     * The name of the processing job. The name must be unique within an Amazon Web Services Region in the Amazon Web Services account.
     */
-  var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName
+  var ProcessingJobName: typings.awsSdk.clientsSagemakerMod.ProcessingJobName
 }
 object DescribeProcessingJobRequ {
   

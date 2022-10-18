@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.Options
-import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
-import typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType
+import typings.officeUiFabricReact.libComponentsDropdownDropdownDottypesMod.IDropdownProps
+import typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object libDropdownMod {
   @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase")
   @js.native
   open class DropdownBase protected ()
-    extends typings.officeUiFabricReact.dropdownMod.DropdownBase {
+    extends typings.officeUiFabricReact.libComponentsDropdownMod.DropdownBase {
     def this(props: IDropdownProps) = this()
   }
   /* static members */
@@ -40,11 +40,11 @@ object libDropdownMod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SelectableOptionMenuItemType & Double] = js.native
     
-    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
+    /* 1 */ val Divider: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
     
-    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header & Double = js.native
+    /* 2 */ val Header: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Header & Double = js.native
     
-    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
+    /* 0 */ val Normal: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Dropdown", "ResponsiveMode")
@@ -52,20 +52,22 @@ object libDropdownMod {
   object ResponsiveMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode & Double
+      ] = js.native
     
-    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large & Double = js.native
+    /* 2 */ val large: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.large & Double = js.native
     
-    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium & Double = js.native
+    /* 1 */ val medium: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.medium & Double = js.native
     
-    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small & Double = js.native
+    /* 0 */ val small: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.small & Double = js.native
     
-    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
+    /* 999 */ val unknown: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
     
-    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
+    /* 3 */ val xLarge: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
     
-    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
+    /* 4 */ val xxLarge: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
     
-    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
+    /* 5 */ val xxxLarge: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
   }
 }

@@ -28,11 +28,11 @@ object AuthError {
     * @param errDesc
     * @returns
     */
-  inline def createPostRequestFailed(errDesc: String): typings.azureMsalCommon.authErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostRequestFailed")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.authErrorMod.AuthError]
+  inline def createPostRequestFailed(errDesc: String): typings.azureMsalCommon.distErrorAuthErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostRequestFailed")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorAuthErrorMod.AuthError]
   
   /**
     * Creates an error that is thrown when something unexpected happens in the library.
     * @param errDesc
     */
-  inline def createUnexpectedError(errDesc: String): typings.azureMsalCommon.authErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedError")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.authErrorMod.AuthError]
+  inline def createUnexpectedError(errDesc: String): typings.azureMsalCommon.distErrorAuthErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedError")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorAuthErrorMod.AuthError]
 }

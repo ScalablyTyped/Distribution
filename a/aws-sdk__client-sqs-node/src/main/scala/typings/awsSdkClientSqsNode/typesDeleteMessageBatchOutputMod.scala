@@ -1,9 +1,9 @@
 package typings.awsSdkClientSqsNode
 
-import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientSqsNode.typesBatchResultErrorEntryMod.UnmarshalledBatchResultErrorEntry
 import typings.awsSdkClientSqsNode.typesDeleteMessageBatchResultEntryMod.UnmarshalledDeleteMessageBatchResultEntry
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientSqsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -38,7 +38,7 @@ object Classification {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     

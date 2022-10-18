@@ -2,8 +2,8 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.antDesignReactNative.pickerMixinMod.ItemProps
-import typings.antDesignReactNative.pickerTypesMod.PickerProps
+import typings.antDesignReactNative.libPickerPickerMixinMod.ItemProps
+import typings.antDesignReactNative.libPickerPickerTypesMod.PickerProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

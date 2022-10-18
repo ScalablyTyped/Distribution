@@ -1,7 +1,5 @@
 package typings.pkijs.mod
 
-import typings.asn1js.mod.BitString
-import typings.asn1js.mod.Integer
 import typings.asn1js.mod.Sequence
 import typings.std.CryptoKey
 import org.scalablytyped.runtime.StObject
@@ -86,17 +84,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * const raw = certificate.toSchema().toBER();
   * ```
   */
-@JSImport("pkijs", "Certificate")
 @js.native
-/**
-  * Initializes a new instance of the {@link Certificate} class
-  * @param parameters Initialization parameters
-  */
-open class Certificate ()
-  extends PkiObject
+trait Certificate
+  extends StObject
+     with PkiObject
      with ICertificate
      with CertificateSetItem {
-  def this(parameters: CertificateParameters) = this()
   
   /**
     * Creates ASN.1 schema for existing values of TBS part for the certificate
@@ -127,30 +120,6 @@ open class Certificate ()
   def getPublicKey(parameters: CryptoEnginePublicKeyParams, crypto: ICryptoEngine): js.Promise[CryptoKey] = js.native
   
   /**
-    * The issuer field identifies the entity that has signed and issued the certificate
-    */
-  /* CompleteClass */
-  var issuer: RelativeDistinguishedNames = js.native
-  
-  /**
-    * The date on which the certificate validity period ends
-    */
-  /* CompleteClass */
-  var notAfter: Time = js.native
-  
-  /**
-    * The date on which the certificate validity period begins
-    */
-  /* CompleteClass */
-  var notBefore: Time = js.native
-  
-  /**
-    * Serial number of the certificate
-    */
-  /* CompleteClass */
-  var serialNumber: Integer = js.native
-  
-  /**
     * Make a signature for current value from TBS section
     * @param privateKey Private key for SUBJECT_PUBLIC_KEY_INFO structure
     * @param hashAlgorithm Hashing algorithm
@@ -160,42 +129,6 @@ open class Certificate ()
   def sign(privateKey: CryptoKey, hashAlgorithm: String): js.Promise[Unit] = js.native
   def sign(privateKey: CryptoKey, hashAlgorithm: String, crypto: ICryptoEngine): js.Promise[Unit] = js.native
   def sign(privateKey: CryptoKey, hashAlgorithm: Unit, crypto: ICryptoEngine): js.Promise[Unit] = js.native
-  
-  /**
-    * This field contains the algorithm identifier for the algorithm used by the CA to sign the certificate
-    */
-  /* CompleteClass */
-  var signature: AlgorithmIdentifier = js.native
-  
-  /**
-    * The signatureAlgorithm field contains the identifier for the cryptographic algorithm used by the CA to sign this certificate
-    */
-  /* CompleteClass */
-  var signatureAlgorithm: AlgorithmIdentifier = js.native
-  
-  /**
-    * The signatureValue field contains a digital signature computed upon the ASN.1 DER encoded tbsCertificate
-    */
-  /* CompleteClass */
-  var signatureValue: BitString = js.native
-  
-  /**
-    * The subject field identifies the entity associated with the public key stored in the subject public key field
-    */
-  /* CompleteClass */
-  var subject: RelativeDistinguishedNames = js.native
-  
-  /**
-    * This field is used to carry the public key and identify the algorithm with which the key is used
-    */
-  /* CompleteClass */
-  var subjectPublicKeyInfo: PublicKeyInfo = js.native
-  
-  /**
-    * ToBeSigned (TBS) part of the certificate
-    */
-  /* CompleteClass */
-  var tbs: js.typedarray.ArrayBuffer = js.native
   
   var tbsView: js.typedarray.Uint8Array = js.native
   
@@ -214,113 +147,4 @@ open class Certificate ()
   def verify(issuerCertificate: Unit, crypto: ICryptoEngine): js.Promise[Boolean] = js.native
   def verify(issuerCertificate: Certificate): js.Promise[Boolean] = js.native
   def verify(issuerCertificate: Certificate, crypto: ICryptoEngine): js.Promise[Boolean] = js.native
-  
-  /**
-    * Version number
-    */
-  /* CompleteClass */
-  var version: Double = js.native
-}
-object Certificate {
-  
-  @JSImport("pkijs", "Certificate")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("pkijs", "Certificate.CLASS_NAME")
-  @js.native
-  def CLASS_NAME: String = js.native
-  inline def CLASS_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASS_NAME")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  inline def defaultValues(memberName: /* "serialNumber" */ String): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[Integer]
-  
-  /* static member */
-  inline def defaultValues_AlgorithmIdentifier(memberName: /* "signature" */ String): AlgorithmIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[AlgorithmIdentifier]
-  
-  /* static member */
-  inline def defaultValues_Array(memberName: /* "extensions" */ String): js.Array[Extension] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Array[Extension]]
-  
-  /**
-    * Return default values for all class members
-    * @param memberName String name for a class member
-    * @returns Predefined default value
-    */
-  /* static member */
-  inline def defaultValues_ArrayBuffer(memberName: /* "tbs" */ String): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
-  
-  /* static member */
-  inline def defaultValues_BitString(memberName: /* "signatureValue" */ String): BitString = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[BitString]
-  
-  /* static member */
-  inline def defaultValues_Double(memberName: /* "version" */ String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  /* static member */
-  inline def defaultValues_PublicKeyInfo(memberName: /* "subjectPublicKeyInfo" */ String): PublicKeyInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[PublicKeyInfo]
-  
-  /* static member */
-  inline def defaultValues_RelativeDistinguishedNames(memberName: /* "issuer" */ String): RelativeDistinguishedNames = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[RelativeDistinguishedNames]
-  
-  /* static member */
-  inline def defaultValues_Time(memberName: /* "notBefore" */ String): Time = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[Time]
-  
-  /**
-    * @inheritdoc
-    * @asn ASN.1 schema
-    * ```asn
-    * Certificate ::= SEQUENCE  {
-    *    tbsCertificate       TBSCertificate,
-    *    signatureAlgorithm   AlgorithmIdentifier,
-    *    signatureValue       BIT STRING  }
-    *
-    * TBSCertificate ::= SEQUENCE  {
-    *     version         [0]  EXPLICIT Version DEFAULT v1,
-    *     serialNumber         CertificateSerialNumber,
-    *     signature            AlgorithmIdentifier,
-    *     issuer               Name,
-    *     validity             Validity,
-    *     subject              Name,
-    *     subjectPublicKeyInfo SubjectPublicKeyInfo,
-    *     issuerUniqueID  [1]  IMPLICIT UniqueIdentifier OPTIONAL,
-    *                           -- If present, version MUST be v2 or v3
-    *     subjectUniqueID [2]  IMPLICIT UniqueIdentifier OPTIONAL,
-    *                           -- If present, version MUST be v2 or v3
-    *     extensions      [3]  EXPLICIT Extensions OPTIONAL
-    *                           -- If present, version MUST be v3
-    *     }
-    *
-    * Version ::= INTEGER  {  v1(0), v2(1), v3(2)  }
-    *
-    * CertificateSerialNumber ::= INTEGER
-    *
-    * Validity ::= SEQUENCE {
-    *     notBefore      Time,
-    *     notAfter       Time }
-    *
-    * Time ::= CHOICE {
-    *     utcTime        UTCTime,
-    *     generalTime    GeneralizedTime }
-    *
-    * UniqueIdentifier ::= BIT STRING
-    *
-    * SubjectPublicKeyInfo ::= SEQUENCE  {
-    *     algorithm            AlgorithmIdentifier,
-    *     subjectPublicKey     BIT STRING  }
-    *
-    * Extensions ::= SEQUENCE SIZE (1..MAX) OF Extension
-    *
-    * Extension ::= SEQUENCE  {
-    *     extnID      OBJECT IDENTIFIER,
-    *     critical    BOOLEAN DEFAULT FALSE,
-    *     extnValue   OCTET STRING
-    *                 -- contains the DER encoding of an ASN.1 value
-    *                 -- corresponding to the extension type identified
-    *                 -- by extnID
-    *     }
-    *```
-    */
-  /* static member */
-  inline def schema(): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[SchemaType]
-  inline def schema(parameters: CertificateSchema): SchemaType = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[SchemaType]
 }

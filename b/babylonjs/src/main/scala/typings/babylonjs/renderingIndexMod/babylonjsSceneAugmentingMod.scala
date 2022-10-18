@@ -1,8 +1,8 @@
 package typings.babylonjs.renderingIndexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.shaderMaterialMod.ShaderMaterial
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.materialsShaderMaterialMod.ShaderMaterial
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,13 +15,13 @@ object babylonjsSceneAugmentingMod {
   trait Scene extends StObject {
     
     /** @internal (Backing field) */
-    var _boundingBoxRenderer: typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer = js.native
+    var _boundingBoxRenderer: typings.babylonjs.renderingBoundingBoxRendererMod.BoundingBoxRenderer = js.native
     
     /** @internal (Backing field) */
-    var _depthPeelingRenderer: Nullable[typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer] = js.native
+    var _depthPeelingRenderer: Nullable[typings.babylonjs.renderingDepthPeelingRendererMod.DepthPeelingRenderer] = js.native
     
     /** @internal (Backing field) */
-    var _depthRenderer: StringDictionary[typings.babylonjs.depthRendererMod.DepthRenderer] = js.native
+    var _depthRenderer: StringDictionary[typings.babylonjs.renderingDepthRendererMod.DepthRenderer] = js.native
     
     /** @internal */
     var _edgeRenderLineShader: Nullable[ShaderMaterial] = js.native
@@ -30,10 +30,10 @@ object babylonjsSceneAugmentingMod {
     var _forceShowBoundingBoxes: Boolean = js.native
     
     /** @internal (Backing field) */
-    var _geometryBufferRenderer: Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    var _geometryBufferRenderer: Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
     /** @internal */
-    var _outlineRenderer: typings.babylonjs.outlineRendererMod.OutlineRenderer = js.native
+    var _outlineRenderer: typings.babylonjs.renderingOutlineRendererMod.OutlineRenderer = js.native
     
     /** @internal */
     var _useOrderIndependentTransparency: Boolean = js.native
@@ -41,7 +41,7 @@ object babylonjsSceneAugmentingMod {
     /**
       * The depth peeling renderer
       */
-    var depthPeelingRenderer: Nullable[typings.babylonjs.depthPeelingRendererMod.DepthPeelingRenderer] = js.native
+    var depthPeelingRenderer: Nullable[typings.babylonjs.renderingDepthPeelingRendererMod.DepthPeelingRenderer] = js.native
     
     /**
       * Disables a depth renderer for a given camera
@@ -62,14 +62,14 @@ object babylonjsSceneAugmentingMod {
       * @param force32bitsFloat Forces 32 bits float when supported (else 16 bits float is prioritized over 32 bits float if supported)
       * @returns the created depth renderer
       */
-    def enableDepthRenderer(): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Nullable[Camera]): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
-    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.depthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera]): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): typings.babylonjs.renderingDepthRendererMod.DepthRenderer = js.native
     
     /**
       * Enables a GeometryBufferRender and associates it with the scene
@@ -77,10 +77,10 @@ object babylonjsSceneAugmentingMod {
       * @param depthFormat Format of the depth texture (default: Constants.TEXTUREFORMAT_DEPTH16)
       * @returns the GeometryBufferRenderer
       */
-    def enableGeometryBufferRenderer(): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
-    def enableGeometryBufferRenderer(ratio: Double): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
-    def enableGeometryBufferRenderer(ratio: Double, depthFormat: Double): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
-    def enableGeometryBufferRenderer(ratio: Unit, depthFormat: Double): Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Double): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Double, depthFormat: Double): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    def enableGeometryBufferRenderer(ratio: Unit, depthFormat: Double): Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
     /**
       * Gets or sets a boolean indicating if all bounding boxes must be rendered
@@ -90,19 +90,19 @@ object babylonjsSceneAugmentingMod {
     /**
       * Gets or Sets the current geometry buffer associated to the scene.
       */
-    var geometryBufferRenderer: Nullable[typings.babylonjs.geometryBufferRendererMod.GeometryBufferRenderer] = js.native
+    var geometryBufferRenderer: Nullable[typings.babylonjs.renderingGeometryBufferRendererMod.GeometryBufferRenderer] = js.native
     
     /**
       * Gets the bounding box renderer associated with the scene
       * @returns a BoundingBoxRenderer
       */
-    def getBoundingBoxRenderer(): typings.babylonjs.boundingBoxRendererMod.BoundingBoxRenderer = js.native
+    def getBoundingBoxRenderer(): typings.babylonjs.renderingBoundingBoxRendererMod.BoundingBoxRenderer = js.native
     
     /**
       * Gets the outline renderer associated with the scene
       * @returns a OutlineRenderer
       */
-    def getOutlineRenderer(): typings.babylonjs.outlineRendererMod.OutlineRenderer = js.native
+    def getOutlineRenderer(): typings.babylonjs.renderingOutlineRendererMod.OutlineRenderer = js.native
     
     /**
       * Flag to indicate if we want to use order independent transparency, despite the performance hit

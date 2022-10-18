@@ -1,11 +1,10 @@
 package typings.ethersprojectAbstractProvider
 
-import org.scalablytyped.runtime.TopLevel
 import typings.ethersprojectAbstractProvider.anon.DeferrableTransactionRequ
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
-import typings.ethersprojectNetworks.typesMod.Network
+import typings.ethersprojectNetworks.libTypesMod.Network
 import typings.ethersprojectProperties.mod.Description
 import typings.ethersprojectTransactions.anon.Address
 import typings.ethersprojectTransactions.mod.AccessListish
@@ -30,14 +29,12 @@ object mod {
     val blockHash: String = js.native
   }
   
-  @JSImport("@ethersproject/abstract-provider", "ForkEvent")
+  /* note: abstract class */ @JSImport("@ethersproject/abstract-provider", "ForkEvent")
   @js.native
-  abstract class ForkEvent protected ()
+  open class ForkEvent protected ()
     extends Description[Any]
        with _EventType {
-    def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: any[K]}
-      */ typings.ethersprojectAbstractProvider.ethersprojectAbstractProviderStrings.ForkEvent & TopLevel[Any]) = this()
+    def this(info: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof any ]: any[K]} */ js.Any) = this()
     
     val _isForkEvent: js.UndefOr[Boolean] = js.native
     
@@ -53,9 +50,9 @@ object mod {
     inline def isForkEvent(value: Any): /* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForkEvent")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-provider.@ethersproject/abstract-provider.ForkEvent */ Boolean]
   }
   
-  @JSImport("@ethersproject/abstract-provider", "Provider")
+  /* note: abstract class */ @JSImport("@ethersproject/abstract-provider", "Provider")
   @js.native
-  abstract class Provider ()
+  open class Provider ()
     extends StObject
        with OnceBlockable {
     

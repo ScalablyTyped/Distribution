@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "MessageBinding")
 @js.native
 open class MessageBinding protected ()
-  extends typings.blackEngine.messageBindingMod.MessageBinding {
+  extends typings.blackEngine.messagesMessageBindingMod.MessageBinding {
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
     context: Any
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
     context: Any,
-    `type`: typings.blackEngine.bindingTypeMod.BindingType
+    `type`: typings.blackEngine.messagesBindingTypeMod.BindingType
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
     context: Unit,
-    `type`: typings.blackEngine.bindingTypeMod.BindingType
+    `type`: typings.blackEngine.messagesBindingTypeMod.BindingType
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
@@ -47,16 +47,16 @@ open class MessageBinding protected ()
     pathPattern: String
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
     context: Any,
-    `type`: typings.blackEngine.bindingTypeMod.BindingType,
+    `type`: typings.blackEngine.messagesBindingTypeMod.BindingType,
     pathPattern: String
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
@@ -65,12 +65,12 @@ open class MessageBinding protected ()
     pathPattern: String
   ) = this()
   def this(
-    owner: typings.blackEngine.messageDispatcherMod.MessageDispatcher,
+    owner: typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher,
     name: String,
     callback: js.Function1[/* repeated */ Any, Unit],
     isOnce: Boolean,
     context: Unit,
-    `type`: typings.blackEngine.bindingTypeMod.BindingType,
+    `type`: typings.blackEngine.messagesBindingTypeMod.BindingType,
     pathPattern: String
   ) = this()
 }

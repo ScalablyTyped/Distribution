@@ -1,0 +1,28 @@
+package typings.reactNativeSvg.libTypescriptReactNativeSVGMod
+
+import typings.reactNativeSvg.anon.X2
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "LinearGradient")
+@js.native
+open class LinearGradient ()
+  extends typings.reactNativeSvg.libTypescriptElementsLinearGradientMod.default
+/* static members */
+object LinearGradient {
+  
+  @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "LinearGradient")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "LinearGradient.defaultProps")
+  @js.native
+  def defaultProps: X2 = js.native
+  inline def defaultProps_=(x: X2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-svg/lib/typescript/ReactNativeSVG", "LinearGradient.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

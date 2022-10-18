@@ -1,9 +1,9 @@
 package typings.canvg.mod.elements
 
 import typings.canvg.anon.TypeofPathElement
-import typings.canvg.documentDocumentMod.Document
+import typings.canvg.distDocumentDocumentMod.Document
+import typings.canvg.distDocumentPathElementMod.PathElement
 import typings.canvg.mod.elements.^
-import typings.canvg.pathElementMod.PathElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

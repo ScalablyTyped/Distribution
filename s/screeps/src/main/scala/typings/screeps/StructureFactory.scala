@@ -12,8 +12,7 @@ trait StructureFactory
   extends StObject
      with OwnedStructure[STRUCTURE_FACTORY]
      with AnyOwnedStructure
-     with AnyStoreStructure
-     with ConcreteStructure[Any] {
+     with AnyStoreStructure {
   
   /**
     * The amount of game ticks the factory has to wait until the next produce is possible.

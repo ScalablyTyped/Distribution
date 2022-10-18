@@ -1,6 +1,6 @@
 package typings.mdxJsReact
 
-import typings.mdx.mod.MDXComponents
+import typings.mdx.typesMod.MDXComponents
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element

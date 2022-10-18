@@ -1,9 +1,9 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +23,14 @@ object businessevents {
   @JSImport("mendixmodelsdk", "businessevents.ConsumedBusinessEvent")
   @js.native
   open class ConsumedBusinessEvent protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.businessevents.ConsumedBusinessEvent {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.businessevents.ConsumedBusinessEvent {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object ConsumedBusinessEvent {
@@ -45,7 +45,7 @@ object businessevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEvent]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEvent]
     
     /**
       * Creates and returns a new ConsumedBusinessEvent instance in the SDK and on the server.
@@ -56,7 +56,9 @@ object businessevents {
       *  9.11.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEventService): typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEvent]
+    inline def createIn(
+      container: typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEventService
+    ): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEvent]
     
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.ConsumedBusinessEvent.structureTypeName")
@@ -67,8 +69,8 @@ object businessevents {
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.ConsumedBusinessEvent.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -81,9 +83,9 @@ object businessevents {
   @JSImport("mendixmodelsdk", "businessevents.ConsumedBusinessEventService")
   @js.native
   open class ConsumedBusinessEventService protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.businessevents.ConsumedBusinessEventService {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.businessevents.ConsumedBusinessEventService {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -101,7 +103,7 @@ object businessevents {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEventService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.ConsumedBusinessEventService]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEventService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.ConsumedBusinessEventService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.ConsumedBusinessEventService.structureTypeName")
@@ -112,8 +114,8 @@ object businessevents {
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.ConsumedBusinessEventService.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -126,9 +128,9 @@ object businessevents {
   @JSImport("mendixmodelsdk", "businessevents.PublishedBusinessEventService")
   @js.native
   open class PublishedBusinessEventService protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.businessevents.PublishedBusinessEventService {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.businessevents.PublishedBusinessEventService {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -146,7 +148,7 @@ object businessevents {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedBusinessEventService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedBusinessEventService]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedBusinessEventService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedBusinessEventService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedBusinessEventService.structureTypeName")
@@ -157,8 +159,8 @@ object businessevents {
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedBusinessEventService.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -171,14 +173,14 @@ object businessevents {
   @JSImport("mendixmodelsdk", "businessevents.PublishedChannel")
   @js.native
   open class PublishedChannel protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.businessevents.PublishedChannel {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.businessevents.PublishedChannel {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object PublishedChannel {
@@ -193,7 +195,7 @@ object businessevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedChannel]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedChannel]
     
     /**
       * Creates and returns a new PublishedChannel instance in the SDK and on the server.
@@ -204,7 +206,9 @@ object businessevents {
       *  9.11.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedBusinessEventService): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedChannel]
+    inline def createIn(
+      container: typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedBusinessEventService
+    ): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedChannel]
     
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedChannel.structureTypeName")
@@ -215,8 +219,8 @@ object businessevents {
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedChannel.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -229,14 +233,14 @@ object businessevents {
   @JSImport("mendixmodelsdk", "businessevents.PublishedMessage")
   @js.native
   open class PublishedMessage protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.businessevents.PublishedMessage {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.businessevents.PublishedMessage {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object PublishedMessage {
@@ -251,7 +255,7 @@ object businessevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessage]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessage]
     
     /**
       * Creates and returns a new PublishedMessage instance in the SDK and on the server.
@@ -262,7 +266,7 @@ object businessevents {
       *  9.11.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedChannel): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessage]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedChannel): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessage]
     
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedMessage.structureTypeName")
@@ -273,8 +277,8 @@ object businessevents {
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedMessage.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -287,14 +291,14 @@ object businessevents {
   @JSImport("mendixmodelsdk", "businessevents.PublishedMessageAttribute")
   @js.native
   open class PublishedMessageAttribute protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.businessevents.PublishedMessageAttribute {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.businessevents.PublishedMessageAttribute {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object PublishedMessageAttribute {
@@ -309,7 +313,7 @@ object businessevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessageAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessageAttribute]
     
     /**
       * Creates and returns a new PublishedMessageAttribute instance in the SDK and on the server.
@@ -320,7 +324,7 @@ object businessevents {
       *  9.11.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessage): typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.businesseventsMod.businessevents.PublishedMessageAttribute]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessage): typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessageAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessageAttribute]
     
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedMessageAttribute.structureTypeName")
@@ -331,7 +335,7 @@ object businessevents {
     /* static member */
     @JSImport("mendixmodelsdk", "businessevents.PublishedMessageAttribute.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.businesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenBusinesseventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

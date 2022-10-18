@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "DisplayObjectPool")
 @js.native
 open class DisplayObjectPool ()
-  extends typings.antvGLite.displayObjectsMod.DisplayObjectPool
+  extends typings.antvGLite.distDisplayObjectsMod.DisplayObjectPool

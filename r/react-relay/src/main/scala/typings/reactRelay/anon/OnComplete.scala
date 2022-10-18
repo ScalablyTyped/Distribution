@@ -1,7 +1,7 @@
 package typings.reactRelay.anon
 
-import typings.relayRuntime.relayRuntimeTypesMod.OperationType
-import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.VariablesOf
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnknownPipeException")
 @js.native
 open class UnknownPipeException protected ()
-  extends typings.angularDevkitSchematics.templateMod.UnknownPipeException {
+  extends typings.angularDevkitSchematics.srcRulesTemplateMod.UnknownPipeException {
   def this(name: String) = this()
 }

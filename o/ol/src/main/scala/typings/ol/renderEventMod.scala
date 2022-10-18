@@ -1,8 +1,8 @@
 package typings.ol
 
-import typings.ol.olMod.Transform
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventTypeMod.EventType
+import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +45,7 @@ object renderEventMod {
   
   @js.native
   trait RenderEvent
-    extends typings.ol.eventMod.default {
+    extends typings.ol.eventsEventMod.default {
     
     /**
       * Canvas context. Not available when the event is dispatched by the map. Only available

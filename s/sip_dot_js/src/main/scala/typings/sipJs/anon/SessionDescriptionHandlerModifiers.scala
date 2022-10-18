@@ -1,7 +1,7 @@
 package typings.sipJs.anon
 
-import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
-import typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
+import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandlerModifier
+import typings.sipJs.libApiSessionDescriptionHandlerMod.SessionDescriptionHandlerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

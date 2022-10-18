@@ -39,7 +39,7 @@ object geolocationMod {
     /**
       * Get a geometry of the position accuracy.
       */
-    def getAccuracyGeometry(): typings.ol.polygonMod.default = js.native
+    def getAccuracyGeometry(): typings.ol.geomPolygonMod.default = js.native
     
     /**
       * Get the altitude associated with the position.
@@ -66,7 +66,7 @@ object geolocationMod {
     /**
       * Get the projection associated with the position.
       */
-    def getProjection(): js.UndefOr[typings.ol.projectionMod.default] = js.native
+    def getProjection(): js.UndefOr[typings.ol.projProjectionMod.default] = js.native
     
     /**
       * Get the speed in meters per second.
@@ -166,7 +166,7 @@ object geolocationMod {
   
   @js.native
   trait GeolocationError
-    extends typings.ol.eventMod.default {
+    extends typings.ol.eventsEventMod.default {
     
     var code: Double = js.native
     

@@ -1,11 +1,11 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.15.0: deleted
   * In version 7.1.0: introduced
   */
-@JSImport("mendixmodelsdk", "pages.MasterDetailRegion")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "pages.MasterDetailRegion")
 @js.native
-abstract class MasterDetailRegion protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.MasterDetailRegion {
+open class MasterDetailRegion protected ()
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.MasterDetailRegion {
   def this(
     model: AbstractModel,
     structureTypeName: String,

@@ -1,9 +1,9 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.specBaseMod.LayoutSizeMixins
-import typings.vegaLite.specMod.NormalizedSpec
-import typings.vegaLite.toplevelMod.TopLevel
-import typings.vegaTypings.specMod.Spec
+import typings.vegaLite.buildSrcSpecBaseMod.LayoutSizeMixins
+import typings.vegaLite.buildSrcSpecMod.NormalizedSpec
+import typings.vegaLite.buildSrcSpecToplevelMod.TopLevel
+import typings.vegaTypings.typesSpecMod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

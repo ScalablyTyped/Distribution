@@ -1,10 +1,10 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
 import typings.grommet.grommetStrings.key
 import typings.grommet.grommetStrings.ref
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.BackgroundType
 import typings.react.mod.ComponentProps
 import typings.react.mod.ReactComponentElement
@@ -21,15 +21,15 @@ trait Clear extends StObject {
   
   var clear: js.UndefOr[ContainerText] = js.undefined
   
-  var container: js.UndefOr[`16`] = js.undefined
+  var container: js.UndefOr[`10`] = js.undefined
   
   var control: js.UndefOr[Open] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var icons: js.UndefOr[Up] = js.undefined
+  var icons: js.UndefOr[ColorDown] = js.undefined
   
-  var options: js.UndefOr[`18`] = js.undefined
+  var options: js.UndefOr[`32`] = js.undefined
   
   // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37506
   var searchInput: js.UndefOr[
@@ -61,7 +61,7 @@ object Clear {
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setContainer(value: `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: `10`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -75,11 +75,11 @@ object Clear {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setIcons(value: Up): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: ColorDown): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setOptions(value: `18`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: `32`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

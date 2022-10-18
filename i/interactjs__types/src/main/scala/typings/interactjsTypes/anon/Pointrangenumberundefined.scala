@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.gridMod.GridOptions
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.snappersGridMod.GridOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait Pointrangenumberundefined
   extends StObject
      with GridOptions {
   
-  var limits: js.UndefOr[typings.interactjsTypes.typesMod.Rect] = js.undefined
+  var limits: js.UndefOr[typings.interactjsTypes.coreTypesMod.Rect] = js.undefined
   
   var offset: js.UndefOr[Point] = js.undefined
   
@@ -30,7 +30,7 @@ object Pointrangenumberundefined {
   
   extension [Self <: Pointrangenumberundefined](x: Self) {
     
-    inline def setLimits(value: typings.interactjsTypes.typesMod.Rect): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     

@@ -1,7 +1,7 @@
 package typings.lodashDecorators
 
 import org.scalablytyped.runtime.Shortcut
-import typings.lodashDecorators.commonMod.BiTypedDecorator2
+import typings.lodashDecorators.factoryCommonMod.BiTypedDecorator2
 import typings.lodashDecorators.sharedMod.ThrottleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

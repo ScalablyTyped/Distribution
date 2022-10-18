@@ -1,5 +1,6 @@
 package typings.walk
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.fsMod.Stats
 import typings.walk.walkStrings.FIFO
 import typings.walk.walkStrings.blockDevice
@@ -170,9 +171,7 @@ object mod {
   @js.native
   trait WalkStats extends Stats {
     
-    var error: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ] = js.native
+    var error: js.UndefOr[ErrnoException] = js.native
     
     var name: String = js.native
     

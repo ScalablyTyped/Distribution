@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "TexturePackerFrame")
 @js.native
 open class TexturePackerFrame protected ()
-  extends typings.babylonjs.legacyMod.TexturePackerFrame {
+  extends typings.babylonjs.legacyLegacyMod.TexturePackerFrame {
   /**
     * Initializes a texture package frame.
     * @param id The numerical frame identifier
@@ -17,7 +17,7 @@ open class TexturePackerFrame protected ()
     */
   def this(
     id: Double,
-    scale: typings.babylonjs.mathVectorMod.Vector2,
-    offset: typings.babylonjs.mathVectorMod.Vector2
+    scale: typings.babylonjs.mathsMathDotvectorMod.Vector2,
+    offset: typings.babylonjs.mathsMathDotvectorMod.Vector2
   ) = this()
 }

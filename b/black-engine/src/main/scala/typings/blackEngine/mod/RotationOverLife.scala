@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RotationOverLife")
 @js.native
 open class RotationOverLife protected ()
-  extends typings.blackEngine.rotationOverLifeMod.RotationOverLife {
-  def this(values: (Double | typings.blackEngine.floatScatterBaseMod.FloatScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsRotationOverLifeMod.RotationOverLife {
+  def this(values: (Double | typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase)*) = this()
 }

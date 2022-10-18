@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.browserfs.fileSystemMod.BFSCallback
-import typings.browserfs.fileSystemMod.FileSystemOptions
-import typings.browserfs.html5fsMod.HTML5FS
-import typings.browserfs.html5fsMod.HTML5FSOptions
-import typings.browserfs.html5fsMod.default
+import typings.browserfs.distNodeBackendHtml5fsMod.HTML5FS
+import typings.browserfs.distNodeBackendHtml5fsMod.HTML5FSOptions
+import typings.browserfs.distNodeBackendHtml5fsMod.default
+import typings.browserfs.distNodeCoreFileSystemMod.BFSCallback
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystemOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

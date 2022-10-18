@@ -6,35 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait T extends StObject {
   
-  var N: Unit
-  
   var T: Unit
   
-  var Tidx: Unit
+  var Tin: Unit
+  
+  var Tout: Unit
+  
+  var _has_manual_control_dependencies: Unit
   
   var dtype: Type
   
-  var shape: ShapeDimArray
-  
-  var transpose_a: Unit
-  
-  var transpose_b: Unit
+  var shape: Shape
   
   var value: Unit
 }
 object T {
   
   inline def apply(
-    N: Unit,
     T: Unit,
-    Tidx: Unit,
+    Tin: Unit,
+    Tout: Unit,
+    _has_manual_control_dependencies: Unit,
     dtype: Type,
-    shape: ShapeDimArray,
-    transpose_a: Unit,
-    transpose_b: Unit,
+    shape: Shape,
     value: Unit
   ): T = {
-    val __obj = js.Dynamic.literal(N = N.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], Tidx = Tidx.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], transpose_a = transpose_a.asInstanceOf[js.Any], transpose_b = transpose_b.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(T = T.asInstanceOf[js.Any], Tin = Tin.asInstanceOf[js.Any], Tout = Tout.asInstanceOf[js.Any], _has_manual_control_dependencies = _has_manual_control_dependencies.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[T]
   }
   
@@ -42,18 +39,16 @@ object T {
     
     inline def setDtype(value: Type): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    inline def setN(value: Unit): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
-    
-    inline def setShape(value: ShapeDimArray): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setT(value: Unit): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
     
-    inline def setTidx(value: Unit): Self = StObject.set(x, "Tidx", value.asInstanceOf[js.Any])
+    inline def setTin(value: Unit): Self = StObject.set(x, "Tin", value.asInstanceOf[js.Any])
     
-    inline def setTranspose_a(value: Unit): Self = StObject.set(x, "transpose_a", value.asInstanceOf[js.Any])
-    
-    inline def setTranspose_b(value: Unit): Self = StObject.set(x, "transpose_b", value.asInstanceOf[js.Any])
+    inline def setTout(value: Unit): Self = StObject.set(x, "Tout", value.asInstanceOf[js.Any])
     
     inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def set_has_manual_control_dependencies(value: Unit): Self = StObject.set(x, "_has_manual_control_dependencies", value.asInstanceOf[js.Any])
   }
 }

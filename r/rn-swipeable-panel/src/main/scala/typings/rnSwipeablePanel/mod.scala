@@ -1,6 +1,6 @@
 package typings.rnSwipeablePanel
 
-import typings.rnSwipeablePanel.panelMod.SwipeablePanelProps
+import typings.rnSwipeablePanel.distPanelMod.SwipeablePanelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object mod {
   @JSImport("rn-swipeable-panel", "SwipeablePanel")
   @js.native
   open class SwipeablePanel protected ()
-    extends typings.rnSwipeablePanel.panelMod.SwipeablePanel {
+    extends typings.rnSwipeablePanel.distPanelMod.SwipeablePanel {
     def this(props: SwipeablePanelProps) = this()
   }
 }

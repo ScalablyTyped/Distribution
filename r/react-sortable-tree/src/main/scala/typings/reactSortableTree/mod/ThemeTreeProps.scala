@@ -1,8 +1,8 @@
 package typings.reactSortableTree.mod
 
 import typings.react.mod.CSSProperties
-import typings.reactSortableTree.anon.PartialListProps
 import typings.reactVirtualized.mod.Index
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,11 @@ trait ThemeTreeProps[T] extends StObject {
   
   var placeholderRenderer: js.UndefOr[PlaceholderRenderer[T]] = js.undefined
   
-  var reactVirtualizedListProps: js.UndefOr[PartialListProps] = js.undefined
+  var reactVirtualizedListProps: js.UndefOr[
+    Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any
+    ]
+  ] = js.undefined
   
   var rowHeight: js.UndefOr[(js.Function1[/* info */ NodeData[T] & Index, Double]) | Double] = js.undefined
   
@@ -46,7 +50,11 @@ object ThemeTreeProps {
     
     inline def setPlaceholderRendererUndefined: Self = StObject.set(x, "placeholderRenderer", js.undefined)
     
-    inline def setReactVirtualizedListProps(value: PartialListProps): Self = StObject.set(x, "reactVirtualizedListProps", value.asInstanceOf[js.Any])
+    inline def setReactVirtualizedListProps(
+      value: Partial[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any
+        ]
+    ): Self = StObject.set(x, "reactVirtualizedListProps", value.asInstanceOf[js.Any])
     
     inline def setReactVirtualizedListPropsUndefined: Self = StObject.set(x, "reactVirtualizedListProps", js.undefined)
     

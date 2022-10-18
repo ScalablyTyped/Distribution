@@ -8,5 +8,5 @@ object UserActivityTrackerConfig {
   
   @JSImport("matrix-appservice-bridge", "UserActivityTrackerConfig.DEFAULT")
   @js.native
-  val DEFAULT: typings.matrixAppserviceBridge.userActivityMod.UserActivityTrackerConfig = js.native
+  val DEFAULT: typings.matrixAppserviceBridge.libComponentsUserActivityMod.UserActivityTrackerConfig = js.native
 }

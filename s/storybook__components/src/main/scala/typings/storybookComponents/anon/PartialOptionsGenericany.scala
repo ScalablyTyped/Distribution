@@ -1,6 +1,6 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,9 @@ trait PartialOptionsGenericany extends StObject {
   
   var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
   
-  var placement: js.UndefOr[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[
+    typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+  ] = js.undefined
   
   var strategy: js.UndefOr[PositioningStrategy] = js.undefined
 }
@@ -35,7 +37,7 @@ object PartialOptionsGenericany {
     
     inline def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
     
-    inline def setPlacement(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

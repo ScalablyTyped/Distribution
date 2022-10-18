@@ -1,8 +1,8 @@
 package typings.reactSelect.anon
 
-import typings.emotionReact.emotionReactMod.jsx.JSX.Element
-import typings.reactSelect.indicatorsMod.LoadingIndicatorProps
-import typings.reactSelect.typesMod.GroupBase
+import typings.emotionReact.mod.jsx.JSX.Element
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.LoadingIndicatorProps
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

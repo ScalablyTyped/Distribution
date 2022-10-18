@@ -16,16 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments Component
   */
-@JSImport("playcanvas", "ScriptComponent")
 @js.native
-open class ScriptComponent protected () extends Component {
-  /**
-    * Create a new ScriptComponent instance.
-    *
-    * @param {ScriptComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
-    */
-  def this(system: ScriptComponentSystem, entity: Entity) = this()
+trait ScriptComponent extends Component {
   
   def _beginLooping(): Boolean = js.native
   
@@ -330,39 +322,4 @@ open class ScriptComponent protected () extends Component {
     * @private
     */
   /* private */ var swap: Any = js.native
-}
-object ScriptComponent {
-  
-  /* static member */
-  object scriptMethods {
-    
-    @JSImport("playcanvas", "ScriptComponent.scriptMethods")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("playcanvas", "ScriptComponent.scriptMethods.initialize")
-    @js.native
-    def initialize: String = js.native
-    inline def initialize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialize")(x.asInstanceOf[js.Any])
-    
-    @JSImport("playcanvas", "ScriptComponent.scriptMethods.postInitialize")
-    @js.native
-    def postInitialize: String = js.native
-    inline def postInitialize_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postInitialize")(x.asInstanceOf[js.Any])
-    
-    @JSImport("playcanvas", "ScriptComponent.scriptMethods.postUpdate")
-    @js.native
-    def postUpdate: String = js.native
-    inline def postUpdate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postUpdate")(x.asInstanceOf[js.Any])
-    
-    @JSImport("playcanvas", "ScriptComponent.scriptMethods.swap")
-    @js.native
-    def swap: String = js.native
-    inline def swap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("swap")(x.asInstanceOf[js.Any])
-    
-    @JSImport("playcanvas", "ScriptComponent.scriptMethods.update")
-    @js.native
-    def update: String = js.native
-    inline def update_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("update")(x.asInstanceOf[js.Any])
-  }
 }

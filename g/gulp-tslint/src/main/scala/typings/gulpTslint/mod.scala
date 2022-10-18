@@ -1,6 +1,7 @@
 package typings.gulpTslint
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -157,13 +158,13 @@ object mod extends Shortcut {
   @js.native
   trait TslintPlugin extends StObject {
     
-    def apply(): Any = js.native
-    def apply(pluginOptions: PluginOptions): Any = js.native
+    def apply(): ReadWriteStream = js.native
+    def apply(pluginOptions: PluginOptions): ReadWriteStream = js.native
     
     var pluginOptions: PluginOptions = js.native
     
-    def report(): Any = js.native
-    def report(options: ReportOptions): Any = js.native
+    def report(): ReadWriteStream = js.native
+    def report(options: ReportOptions): ReadWriteStream = js.native
   }
   
   type _To = TslintPlugin

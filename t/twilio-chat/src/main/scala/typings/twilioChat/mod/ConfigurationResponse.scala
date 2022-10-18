@@ -1,7 +1,7 @@
 package typings.twilioChat.mod
 
 import typings.twilioChat.anon.Consumptionreportinterval
-import typings.twilioChat.anon.Conversations
+import typings.twilioChat.anon.Currentuser
 import typings.twilioChat.anon.Myconversations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ trait ConfigurationResponse extends StObject {
   
   var identity: String
   
-  var links: Conversations
+  var links: Currentuser
   
   var options: Consumptionreportinterval
   
@@ -23,7 +23,7 @@ object ConfigurationResponse {
   
   inline def apply(
     identity: String,
-    links: Conversations,
+    links: Currentuser,
     options: Consumptionreportinterval,
     sync_objects: Myconversations,
     url: String
@@ -36,7 +36,7 @@ object ConfigurationResponse {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    inline def setLinks(value: Conversations): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Currentuser): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setOptions(value: Consumptionreportinterval): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

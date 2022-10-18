@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-node", "PutBucketVersioningCommand")
 @js.native
 open class PutBucketVersioningCommand protected ()
-  extends typings.awsSdkClientS3Node.putBucketVersioningCommandMod.PutBucketVersioningCommand {
+  extends typings.awsSdkClientS3Node.commandsPutBucketVersioningCommandMod.PutBucketVersioningCommand {
   def this(input: PutBucketVersioningInput) = this()
 }

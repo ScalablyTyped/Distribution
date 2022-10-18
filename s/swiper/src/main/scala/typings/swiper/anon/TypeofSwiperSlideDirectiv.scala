@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.swiper.angularAngularSrcSwiperSlideDotdirectiveMod.SwiperSlideDirective
 import typings.swiper.swiperBooleans.`false`
-import typings.swiper.swiperSlideDirectiveMod.SwiperSlideDirective
 import typings.swiper.swiperStrings.`ng-template[swiperSlide]`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

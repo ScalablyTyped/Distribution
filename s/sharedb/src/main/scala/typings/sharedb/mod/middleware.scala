@@ -2,7 +2,7 @@ package typings.sharedb.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sharedb.anon.Source
-import typings.sharedb.sharedbMod.ClientRequest
+import typings.sharedb.libSharedbMod.ClientRequest
 import typings.sharedb.sharedbStrings.afterSubmit
 import typings.sharedb.sharedbStrings.afterWrite
 import typings.sharedb.sharedbStrings.apply
@@ -122,7 +122,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       collection: String,
       extra: Source,
@@ -144,7 +144,7 @@ object middleware {
     
     var action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit
     
-    var agent: typings.sharedb.agentMod.^[Any]
+    var agent: typings.sharedb.libAgentMod.^[Any]
     
     var backend: sharedb
   }
@@ -152,7 +152,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb
     ): BaseContext = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any])
@@ -165,7 +165,7 @@ object middleware {
         value: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setAgent(value: typings.sharedb.agentMod.^[Any]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: typings.sharedb.libAgentMod.^[Any]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setBackend(value: sharedb): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     }
@@ -179,7 +179,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       collection: String,
       extra: Source,
@@ -209,7 +209,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       req: Any,
       stream: Any
@@ -240,7 +240,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       collection: String,
       id: String,
@@ -274,7 +274,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       collection: String,
       id: String,
@@ -306,7 +306,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       presence: PresenceMessage
     ): PresenceContext = {
@@ -350,7 +350,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       channel: String,
       collection: String,
@@ -405,7 +405,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       collection: String,
       snapshotType: SnapshotType,
@@ -437,7 +437,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       data: StringDictionary[Any]
     ): ReceiveContext = {
@@ -463,7 +463,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       reply: StringDictionary[Any],
       request: ClientRequest
@@ -503,7 +503,7 @@ object middleware {
     
     inline def apply(
       action: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit,
-      agent: typings.sharedb.agentMod.^[Any],
+      agent: typings.sharedb.libAgentMod.^[Any],
       backend: sharedb,
       collection: String,
       extra: Source,

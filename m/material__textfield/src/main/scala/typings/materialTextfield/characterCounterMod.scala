@@ -8,14 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object characterCounterMod {
   
+  @JSImport("@material/textfield/character-counter", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialTextfield.characterCounterFoundationMod.default {
+    def this(adapter: PartialMDCTextFieldCharac) = this()
+  }
+  
   @JSImport("@material/textfield/character-counter", "MDCTextFieldCharacterCounter")
   @js.native
   open class MDCTextFieldCharacterCounter protected ()
-    extends typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter {
+    extends typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation,
+      foundation: typings.materialTextfield.characterCounterFoundationMod.MDCTextFieldCharacterCounterFoundation,
       args: Any*
     ) = this()
   }
@@ -26,13 +33,13 @@ object characterCounterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter]
   }
   
   @JSImport("@material/textfield/character-counter", "MDCTextFieldCharacterCounterFoundation")
   @js.native
   open class MDCTextFieldCharacterCounterFoundation ()
-    extends typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation {
+    extends typings.materialTextfield.characterCounterFoundationMod.MDCTextFieldCharacterCounterFoundation {
     def this(adapter: PartialMDCTextFieldCharac) = this()
   }
   

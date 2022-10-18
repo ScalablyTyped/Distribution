@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the PosPrinter.StatusUpdated event that occurs when the status of a point-of-service printer changes. */
-@JSGlobal("Windows.Devices.PointOfService.PosPrinterStatusUpdatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.PosPrinterStatusUpdatedEventArgs")
 @js.native
-abstract class PosPrinterStatusUpdatedEventArgs ()
+open class PosPrinterStatusUpdatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.PosPrinterStatusUpdatedEventArgs {
   

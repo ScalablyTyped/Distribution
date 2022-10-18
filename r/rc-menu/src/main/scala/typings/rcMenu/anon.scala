@@ -1,6 +1,6 @@
 package typings.rcMenu
 
-import typings.rcMotion.cssmotionMod.CSSMotionProps
+import typings.rcMotion.esCssmotionMod.CSSMotionProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactInstance

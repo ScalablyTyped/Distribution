@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.effectRendererMod.IEffectRendererOptions
-import typings.babylonjs.thinEngineMod.ThinEngine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
+import typings.babylonjs.materialsEffectRendererMod.IEffectRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "EffectRenderer")
 @js.native
 open class EffectRenderer protected ()
-  extends typings.babylonjs.effectRendererMod.EffectRenderer {
+  extends typings.babylonjs.materialsEffectRendererMod.EffectRenderer {
   /**
     * Creates an effect renderer
     * @param _engine the engine to use for rendering

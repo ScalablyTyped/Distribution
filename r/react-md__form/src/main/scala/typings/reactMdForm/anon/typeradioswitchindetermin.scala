@@ -35,7 +35,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdForm.menuItemInputToggleMod.StrictMenuItemInputToggleProps
 import typings.reactMdForm.reactMdFormStrings.`additions removals`
 import typings.reactMdForm.reactMdFormStrings.`additions text`
 import typings.reactMdForm.reactMdFormStrings.`inline`
@@ -88,9 +87,10 @@ import typings.reactMdForm.reactMdFormStrings.tree
 import typings.reactMdForm.reactMdFormStrings.url
 import typings.reactMdForm.reactMdFormStrings.vertical
 import typings.reactMdForm.reactMdFormStrings.yes
-import typings.reactMdList.getListItemHeightMod.ListItemHeight
-import typings.reactMdList.listItemAddonMod.ListItemAddonPosition
-import typings.reactMdList.listItemAddonMod.ListItemAddonType
+import typings.reactMdForm.typesMenuMenuItemInputToggleMod.StrictMenuItemInputToggleProps
+import typings.reactMdList.typesGetListItemHeightMod.ListItemHeight
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonPosition
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonType
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLLIElement

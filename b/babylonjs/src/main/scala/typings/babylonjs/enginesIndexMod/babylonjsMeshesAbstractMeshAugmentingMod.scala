@@ -13,13 +13,13 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * Backing filed
       * @internal
       */
-    var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
+    var __occlusionDataStorage: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage
     
     /**
       * Access property
       * @internal
       */
-    var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage
+    var _occlusionDataStorage: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage
     
     /**
       * Flag to force rendering the mesh even if occluded
@@ -66,8 +66,8 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
   object AbstractMesh {
     
     inline def apply(
-      __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage,
-      _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage,
+      __occlusionDataStorage: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage,
+      _occlusionDataStorage: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage,
       forceRenderingWhenOccluded: Boolean,
       isOccluded: Boolean,
       isOcclusionQueryInProgress: Boolean,
@@ -93,9 +93,9 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       
       inline def setOcclusionType(value: Double): Self = StObject.set(x, "occlusionType", value.asInstanceOf[js.Any])
       
-      inline def set__occlusionDataStorage(value: typings.babylonjs.engineQueryMod.OcclusionDataStorage): Self = StObject.set(x, "__occlusionDataStorage", value.asInstanceOf[js.Any])
+      inline def set__occlusionDataStorage(value: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage): Self = StObject.set(x, "__occlusionDataStorage", value.asInstanceOf[js.Any])
       
-      inline def set_occlusionDataStorage(value: typings.babylonjs.engineQueryMod.OcclusionDataStorage): Self = StObject.set(x, "_occlusionDataStorage", value.asInstanceOf[js.Any])
+      inline def set_occlusionDataStorage(value: typings.babylonjs.enginesExtensionsEngineDotqueryMod.OcclusionDataStorage): Self = StObject.set(x, "_occlusionDataStorage", value.asInstanceOf[js.Any])
     }
   }
 }

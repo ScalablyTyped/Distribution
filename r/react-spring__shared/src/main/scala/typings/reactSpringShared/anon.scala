@@ -1,7 +1,7 @@
 package typings.reactSpringShared
 
-import typings.reactSpringShared.fluidsMod.FluidEvent
-import typings.reactSpringShared.fluidsMod.FluidValue
+import typings.reactSpringShared.distDeclarationsSrcFluidsMod.FluidEvent
+import typings.reactSpringShared.distDeclarationsSrcFluidsMod.FluidValue
 import typings.reactSpringTypes.interpolationMod.InterpolatorArgs
 import typings.reactSpringTypes.utilMod.OneOrMore
 import org.scalablytyped.runtime.StObject

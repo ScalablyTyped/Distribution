@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Perlin")
 @js.native
 open class Perlin ()
-  extends typings.blackEngine.perlinMod.Perlin {
+  extends typings.blackEngine.mathPerlinMod.Perlin {
   def this(repeat: Double) = this()
 }

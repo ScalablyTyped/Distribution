@@ -148,7 +148,7 @@ object jsonldMod {
     
     var `@graph`: OrArray[NodeObject]
     
-    var `@id`: js.UndefOr[String] = js.undefined
+    var `@id`: js.UndefOr[OrArray[String]] = js.undefined
     
     var `@index`: js.UndefOr[String] = js.undefined
   }
@@ -174,9 +174,11 @@ object jsonldMod {
       
       inline def `set@graphVarargs`(value: NodeObject*): Self = StObject.set(x, "@graph", js.Array(value*))
       
-      inline def `set@id`(value: String): Self = StObject.set(x, "@id", value.asInstanceOf[js.Any])
+      inline def `set@id`(value: OrArray[String]): Self = StObject.set(x, "@id", value.asInstanceOf[js.Any])
       
       inline def `set@idUndefined`: Self = StObject.set(x, "@id", js.undefined)
+      
+      inline def `set@idVarargs`(value: String*): Self = StObject.set(x, "@id", js.Array(value*))
       
       inline def `set@index`(value: String): Self = StObject.set(x, "@index", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,7 @@ object jsonldMod {
     
     var `@graph`: OrArray[ValueObject | NodeObject]
     
-    var `@id`: String
+    var `@id`: OrArray[String]
     
     var `@import`: String
     
@@ -281,7 +283,7 @@ object jsonldMod {
     
     inline def apply(
       `@graph`: OrArray[ValueObject | NodeObject],
-      `@id`: String,
+      `@id`: OrArray[String],
       `@import`: String,
       `@included`: IncludedBlock,
       `@index`: String,
@@ -346,7 +348,9 @@ object jsonldMod {
       
       inline def `set@graphVarargs`(value: (ValueObject | NodeObject)*): Self = StObject.set(x, "@graph", js.Array(value*))
       
-      inline def `set@id`(value: String): Self = StObject.set(x, "@id", value.asInstanceOf[js.Any])
+      inline def `set@id`(value: OrArray[String]): Self = StObject.set(x, "@id", value.asInstanceOf[js.Any])
+      
+      inline def `set@idVarargs`(value: String*): Self = StObject.set(x, "@id", js.Array(value*))
       
       inline def `set@import`(value: String): Self = StObject.set(x, "@import", value.asInstanceOf[js.Any])
       
@@ -445,7 +449,7 @@ object jsonldMod {
     
     var `@graph`: js.UndefOr[OrArray[NodeObject]] = js.undefined
     
-    var `@id`: js.UndefOr[String] = js.undefined
+    var `@id`: js.UndefOr[OrArray[String]] = js.undefined
     
     var `@included`: js.UndefOr[IncludedBlock] = js.undefined
     
@@ -480,9 +484,11 @@ object jsonldMod {
       
       inline def `set@graphVarargs`(value: NodeObject*): Self = StObject.set(x, "@graph", js.Array(value*))
       
-      inline def `set@id`(value: String): Self = StObject.set(x, "@id", value.asInstanceOf[js.Any])
+      inline def `set@id`(value: OrArray[String]): Self = StObject.set(x, "@id", value.asInstanceOf[js.Any])
       
       inline def `set@idUndefined`: Self = StObject.set(x, "@id", js.undefined)
+      
+      inline def `set@idVarargs`(value: String*): Self = StObject.set(x, "@id", js.Array(value*))
       
       inline def `set@included`(value: IncludedBlock): Self = StObject.set(x, "@included", value.asInstanceOf[js.Any])
       

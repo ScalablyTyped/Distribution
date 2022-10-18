@@ -34,7 +34,6 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getBlob(): js.Promise[Blob] = js.native
   def getBlob(mimeType: String): js.Promise[Blob] = js.native
   def getBlob(mimeType: String, options: EntryGetDataOptions): js.Promise[Blob] = js.native
-  def getBlob(mimeType: Null, options: EntryGetDataOptions): js.Promise[Blob] = js.native
   def getBlob(mimeType: Unit, options: EntryGetDataOptions): js.Promise[Blob] = js.native
   
   /**
@@ -57,7 +56,6 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getData64URI(): js.Promise[String] = js.native
   def getData64URI(mimeType: String): js.Promise[String] = js.native
   def getData64URI(mimeType: String, options: EntryGetDataOptions): js.Promise[String] = js.native
-  def getData64URI(mimeType: Null, options: EntryGetDataOptions): js.Promise[String] = js.native
   def getData64URI(mimeType: Unit, options: EntryGetDataOptions): js.Promise[String] = js.native
   
   /**
@@ -82,7 +80,6 @@ open class ZipFileEntry[ReaderType, WriterType] ()
   def getText(): js.Promise[String] = js.native
   def getText(encoding: String): js.Promise[String] = js.native
   def getText(encoding: String, options: EntryGetDataOptions): js.Promise[String] = js.native
-  def getText(encoding: Null, options: EntryGetDataOptions): js.Promise[String] = js.native
   def getText(encoding: Unit, options: EntryGetDataOptions): js.Promise[String] = js.native
   
   /**
@@ -102,7 +99,6 @@ open class ZipFileEntry[ReaderType, WriterType] ()
     * @returns A promise resolving to the `WritableStream` instance.
     */
   def getWritable(): js.Promise[WritableStream[Any]] = js.native
-  def getWritable(writable: Null, options: EntryGetDataOptions): js.Promise[WritableStream[Any]] = js.native
   def getWritable(writable: Unit, options: EntryGetDataOptions): js.Promise[WritableStream[Any]] = js.native
   def getWritable(writable: WritableStream[Any]): js.Promise[WritableStream[Any]] = js.native
   def getWritable(writable: WritableStream[Any], options: EntryGetDataOptions): js.Promise[WritableStream[Any]] = js.native

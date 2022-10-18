@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "SVGFontLoader")
 @js.native
 open class SVGFontLoader protected ()
-  extends typings.canvg.svgfontloaderMod.SVGFontLoader {
-  def this(document: typings.canvg.documentMod.Document) = this()
+  extends typings.canvg.distSvgfontloaderMod.SVGFontLoader {
+  def this(document: typings.canvg.distDocumentMod.Document) = this()
 }

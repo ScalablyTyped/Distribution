@@ -1,8 +1,8 @@
 package typings.uirouterAngularjs.mod.core
 
-import typings.uirouterCore.paramsInterfaceMod.RawParams
-import typings.uirouterCore.stateInterfaceMod.StateOrName
-import typings.uirouterCore.transitionInterfaceMod.TransitionOptions
+import typings.uirouterCore.libParamsInterfaceMod.RawParams
+import typings.uirouterCore.libStateInterfaceMod.StateOrName
+import typings.uirouterCore.libTransitionInterfaceMod.TransitionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,20 +25,23 @@ open class TargetState protected ()
     *
     * @internal
     */
-  def this(_stateRegistry: typings.uirouterCore.stateRegistryMod.StateRegistry, _identifier: StateOrName) = this()
   def this(
-    _stateRegistry: typings.uirouterCore.stateRegistryMod.StateRegistry,
+    _stateRegistry: typings.uirouterCore.libStateStateRegistryMod.StateRegistry,
+    _identifier: StateOrName
+  ) = this()
+  def this(
+    _stateRegistry: typings.uirouterCore.libStateStateRegistryMod.StateRegistry,
     _identifier: StateOrName,
     _params: RawParams
   ) = this()
   def this(
-    _stateRegistry: typings.uirouterCore.stateRegistryMod.StateRegistry,
+    _stateRegistry: typings.uirouterCore.libStateStateRegistryMod.StateRegistry,
     _identifier: StateOrName,
     _params: Unit,
     _options: TransitionOptions
   ) = this()
   def this(
-    _stateRegistry: typings.uirouterCore.stateRegistryMod.StateRegistry,
+    _stateRegistry: typings.uirouterCore.libStateStateRegistryMod.StateRegistry,
     _identifier: StateOrName,
     _params: RawParams,
     _options: TransitionOptions

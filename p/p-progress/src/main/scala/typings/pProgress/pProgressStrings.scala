@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object pProgressStrings {
   
   @js.native
-  sealed trait all extends StObject
-  inline def all: all = "all".asInstanceOf[all]
-  
-  @js.native
-  sealed trait allSettled extends StObject
-  inline def allSettled: allSettled = "allSettled".asInstanceOf[allSettled]
-  
-  @js.native
   sealed trait fulfilled extends StObject
   inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   

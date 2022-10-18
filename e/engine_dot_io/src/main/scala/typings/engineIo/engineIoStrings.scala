@@ -1,6 +1,6 @@
 package typings.engineIo
 
-import typings.engineIo.serverMod.Transport
+import typings.engineIo.buildServerMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,7 @@ trait ɵDirectiveDef[T] extends StObject {
     * @deprecated This is only here because `NgOnChanges` incorrectly uses declared name instead of
     * public or minified name.
     */
-  val declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
+  val declaredInputs: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any
   
   /**
     * Name under which the directive is exported (for use with local references in template)
@@ -86,18 +83,14 @@ trait ɵDirectiveDef[T] extends StObject {
     * are their aliases if any, or their original unminified property names
     * (as in `@Input('alias') propertyName: any;`).
     */
-  val inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
+  val inputs: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any
   
   /**
     * A dictionary mapping the outputs' minified property names to their public API names, which
     * are their aliases if any, or their original unminified property names
     * (as in `@Output('alias') propertyName: any;`).
     */
-  val outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
+  val outputs: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any
   
   /** Function that resolves providers and publishes them into the DI system. */
   var providersResolver: (js.Function2[
@@ -136,16 +129,10 @@ trait ɵDirectiveDef[T] extends StObject {
 object ɵDirectiveDef {
   
   inline def apply[T](
-    declaredInputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any],
+    declaredInputs: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any,
     hostVars: Double,
-    inputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any],
-    outputs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: string}
-    */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any],
+    inputs: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any,
+    outputs: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any,
     selectors: ɵCssSelectorList,
     standalone: Boolean,
     `type`: Type[T]
@@ -162,9 +149,7 @@ object ɵDirectiveDef {
     inline def setContentQueriesNull: Self = StObject.set(x, "contentQueries", null)
     
     inline def setDeclaredInputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any
     ): Self = StObject.set(x, "declaredInputs", value.asInstanceOf[js.Any])
     
     inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
@@ -196,15 +181,11 @@ object ɵDirectiveDef {
     inline def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
     
     inline def setInputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setOutputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: string}
-      */ typings.angularCore.angularCoreStrings.ɵDirectiveDef & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: string} */ js.Any
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setProvidersResolver(

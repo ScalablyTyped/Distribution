@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CullMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.CullMode & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CullMode & String] = js.native
   
-  /* "back" */ val Back: typings.babylonjs.webgpuConstantsMod.CullMode.Back & String = js.native
+  /* "back" */ val Back: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CullMode.Back & String = js.native
   
-  /* "front" */ val Front: typings.babylonjs.webgpuConstantsMod.CullMode.Front & String = js.native
+  /* "front" */ val Front: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CullMode.Front & String = js.native
   
-  /* "none" */ val None: typings.babylonjs.webgpuConstantsMod.CullMode.None & String = js.native
+  /* "none" */ val None: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CullMode.None & String = js.native
 }

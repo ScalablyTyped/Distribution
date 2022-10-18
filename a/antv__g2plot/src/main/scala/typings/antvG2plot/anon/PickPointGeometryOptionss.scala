@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@antv/g2plot.@antv/g2plot/lib/adaptor/geometries.PointGeometryOptions, 'state'> */
 trait PickPointGeometryOptionss extends StObject {
   
-  var state: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  var state: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
 }
 object PickPointGeometryOptionss {
   
@@ -18,7 +18,7 @@ object PickPointGeometryOptionss {
   
   extension [Self <: PickPointGeometryOptionss](x: Self) {
     
-    inline def setState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

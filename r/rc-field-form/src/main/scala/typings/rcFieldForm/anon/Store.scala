@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Store extends StObject {
   
-  var store: typings.rcFieldForm.interfaceMod.Store
+  var store: typings.rcFieldForm.esInterfaceMod.Store
 }
 object Store {
   
-  inline def apply(store: typings.rcFieldForm.interfaceMod.Store): Store = {
+  inline def apply(store: typings.rcFieldForm.esInterfaceMod.Store): Store = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
     __obj.asInstanceOf[Store]
   }
   
   extension [Self <: Store](x: Self) {
     
-    inline def setStore(value: typings.rcFieldForm.interfaceMod.Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: typings.rcFieldForm.esInterfaceMod.Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

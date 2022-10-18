@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler", "ElementSchemaRegistry")
+/* note: abstract class */ @JSImport("@angular/compiler", "ElementSchemaRegistry")
 @js.native
-abstract class ElementSchemaRegistry () extends StObject {
+open class ElementSchemaRegistry () extends StObject {
   
   def allKnownElementNames(): js.Array[String] = js.native
   

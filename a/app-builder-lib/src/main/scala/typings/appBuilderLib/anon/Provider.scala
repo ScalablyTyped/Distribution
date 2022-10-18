@@ -1,6 +1,6 @@
 package typings.appBuilderLib.anon
 
-import typings.builderUtilRuntime.publishOptionsMod.PublishProvider
+import typings.builderUtilRuntime.outPublishOptionsMod.PublishProvider
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

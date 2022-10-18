@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
+import typings.officeUiFabricReact.libComponentsComboBoxComboBoxDottypesMod.IComboBoxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object libComboBoxMod {
   @JSImport("office-ui-fabric-react/lib/ComboBox", "ComboBox")
   @js.native
   open class ComboBox protected ()
-    extends typings.officeUiFabricReact.comboBoxMod.ComboBox {
+    extends typings.officeUiFabricReact.libComponentsComboBoxMod.ComboBox {
     def this(props: IComboBoxProps) = this()
   }
   /* static members */
@@ -32,20 +32,20 @@ object libComboBoxMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType & Double
+        typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType & Double
       ] = js.native
     
-    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
+    /* 1 */ val Divider: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
     
-    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header & Double = js.native
+    /* 2 */ val Header: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Header & Double = js.native
     
-    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
+    /* 0 */ val Normal: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/ComboBox", "VirtualizedComboBox")
   @js.native
   open class VirtualizedComboBox protected ()
-    extends typings.officeUiFabricReact.comboBoxMod.VirtualizedComboBox {
+    extends typings.officeUiFabricReact.libComponentsComboBoxMod.VirtualizedComboBox {
     def this(props: IComboBoxProps) = this()
   }
 }

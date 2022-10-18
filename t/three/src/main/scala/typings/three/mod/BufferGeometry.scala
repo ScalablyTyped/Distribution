@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This creates a new BufferGeometry. It also sets several properties to an default value.
   */
 open class BufferGeometry ()
-  extends typings.three.threeMod.BufferGeometry
+  extends typings.three.srcThreeMod.BufferGeometry

@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.webXRInputSourceMod.IWebXRControllerOptions
+import typings.babylonjs.xRWebXRInputSourceMod.IWebXRControllerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

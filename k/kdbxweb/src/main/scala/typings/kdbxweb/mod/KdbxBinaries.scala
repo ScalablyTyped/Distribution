@@ -1,7 +1,7 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.kdbxBinariesMod.KdbxBinaryOrRef
-import typings.kdbxweb.kdbxBinariesMod.KdbxBinaryWithHash
+import typings.kdbxweb.distTypesFormatKdbxBinariesMod.KdbxBinaryOrRef
+import typings.kdbxweb.distTypesFormatKdbxBinariesMod.KdbxBinaryWithHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxBinaries")
 @js.native
 open class KdbxBinaries ()
-  extends typings.kdbxweb.kdbxBinariesMod.KdbxBinaries
+  extends typings.kdbxweb.distTypesFormatKdbxBinariesMod.KdbxBinaries
 /* static members */
 object KdbxBinaries {
   

@@ -1,12 +1,12 @@
 package typings.rcTrigger
 
-import typings.rcMotion.cssmotionMod.CSSMotionProps
-import typings.rcTrigger.interfaceMod.ActionType
-import typings.rcTrigger.interfaceMod.AlignType
-import typings.rcTrigger.interfaceMod.AnimationType
-import typings.rcTrigger.interfaceMod.BuildInPlacements
-import typings.rcTrigger.interfaceMod.MobileConfig
-import typings.rcTrigger.interfaceMod.TransitionNameType
+import typings.rcMotion.esCssmotionMod.CSSMotionProps
+import typings.rcTrigger.esInterfaceMod.ActionType
+import typings.rcTrigger.esInterfaceMod.AlignType
+import typings.rcTrigger.esInterfaceMod.AnimationType
+import typings.rcTrigger.esInterfaceMod.BuildInPlacements
+import typings.rcTrigger.esInterfaceMod.MobileConfig
+import typings.rcTrigger.esInterfaceMod.TransitionNameType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass

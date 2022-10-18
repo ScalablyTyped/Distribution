@@ -1,7 +1,7 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.cellValueMod.NoErrorCellValue
-import typings.hyperformula.criterionMod.CriterionType
+import typings.hyperformula.typingsCellValueMod.NoErrorCellValue
+import typings.hyperformula.typingsInterpreterCriterionMod.CriterionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

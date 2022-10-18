@@ -1,6 +1,6 @@
 package typings.fluentuiDomUtilities
 
-import typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement
+import typings.fluentuiDomUtilities.libIvirtualelementMod.IVirtualElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

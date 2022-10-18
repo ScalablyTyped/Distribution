@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait LinkedEntityId extends StObject {
   
@@ -17,8 +16,7 @@ trait LinkedEntityId extends StObject {
     * Represents which language culture was used to create this `CellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var culture: String
   
@@ -26,8 +24,7 @@ trait LinkedEntityId extends StObject {
     * Represents a domain specific to a service used to create the `CellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var domainId: js.UndefOr[String] = js.undefined
   
@@ -35,8 +32,7 @@ trait LinkedEntityId extends StObject {
     * Represents an identifier specific to a service used to create the `CellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var entityId: String
   
@@ -44,8 +40,7 @@ trait LinkedEntityId extends StObject {
     * Represents which service was used to create the `CellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var serviceId: Double
 }

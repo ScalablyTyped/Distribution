@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsLayers.baseCallbacksMod.CustomCallbackArgs
-import typings.tensorflowTfjsLayers.baseCallbacksMod.YieldEveryOptions
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.CustomCallbackArgs
+import typings.tensorflowTfjsLayers.distBaseCallbacksMod.YieldEveryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

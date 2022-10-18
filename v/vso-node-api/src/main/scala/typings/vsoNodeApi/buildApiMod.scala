@@ -1,38 +1,38 @@
 package typings.vsoNodeApi
 
-import typings.std.ReadableStream
-import typings.vsoNodeApi.buildInterfacesMod.Build
-import typings.vsoNodeApi.buildInterfacesMod.BuildArtifact
-import typings.vsoNodeApi.buildInterfacesMod.BuildBadge
-import typings.vsoNodeApi.buildInterfacesMod.BuildController
-import typings.vsoNodeApi.buildInterfacesMod.BuildDefinition
-import typings.vsoNodeApi.buildInterfacesMod.BuildDefinitionReference
-import typings.vsoNodeApi.buildInterfacesMod.BuildDefinitionRevision
-import typings.vsoNodeApi.buildInterfacesMod.BuildDefinitionTemplate
-import typings.vsoNodeApi.buildInterfacesMod.BuildLog
-import typings.vsoNodeApi.buildInterfacesMod.BuildMetric
-import typings.vsoNodeApi.buildInterfacesMod.BuildOptionDefinition
-import typings.vsoNodeApi.buildInterfacesMod.BuildQueryOrder
-import typings.vsoNodeApi.buildInterfacesMod.BuildReason
-import typings.vsoNodeApi.buildInterfacesMod.BuildReportMetadata
-import typings.vsoNodeApi.buildInterfacesMod.BuildResourceUsage
-import typings.vsoNodeApi.buildInterfacesMod.BuildResult
-import typings.vsoNodeApi.buildInterfacesMod.BuildSettings
-import typings.vsoNodeApi.buildInterfacesMod.BuildStatus
-import typings.vsoNodeApi.buildInterfacesMod.Change
-import typings.vsoNodeApi.buildInterfacesMod.DefinitionQueryOrder
-import typings.vsoNodeApi.buildInterfacesMod.Folder
-import typings.vsoNodeApi.buildInterfacesMod.FolderQueryOrder
-import typings.vsoNodeApi.buildInterfacesMod.QueryDeletedOption
-import typings.vsoNodeApi.buildInterfacesMod.RepositoryWebhook
-import typings.vsoNodeApi.buildInterfacesMod.SourceProviderAttributes
-import typings.vsoNodeApi.buildInterfacesMod.SourceRepository
-import typings.vsoNodeApi.buildInterfacesMod.Timeline
+import typings.node.NodeJS.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
-import typings.vsoNodeApi.vssinterfacesMod.JsonPatchDocument
-import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.Build
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildArtifact
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildBadge
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildController
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildDefinition
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildDefinitionReference
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildDefinitionRevision
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildDefinitionTemplate
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildLog
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildMetric
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildOptionDefinition
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildQueryOrder
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildReason
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildReportMetadata
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildResourceUsage
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildResult
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildSettings
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.BuildStatus
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.Change
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.DefinitionQueryOrder
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.Folder
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.FolderQueryOrder
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.QueryDeletedOption
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.RepositoryWebhook
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.SourceProviderAttributes
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.SourceRepository
+import typings.vsoNodeApi.interfacesBuildInterfacesMod.Timeline
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.JsonPatchDocument
+import typings.vsoNodeApi.interfacesCommonVssinterfacesMod.ResourceRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,8 +115,8 @@ object buildApiMod {
     def getArtifact(buildId: Double, artifactName: String): js.Promise[BuildArtifact] = js.native
     def getArtifact(buildId: Double, artifactName: String, project: String): js.Promise[BuildArtifact] = js.native
     
-    def getArtifactContentZip(buildId: Double, artifactName: String): js.Promise[ReadableStream[Any]] = js.native
-    def getArtifactContentZip(buildId: Double, artifactName: String, project: String): js.Promise[ReadableStream[Any]] = js.native
+    def getArtifactContentZip(buildId: Double, artifactName: String): js.Promise[ReadableStream] = js.native
+    def getArtifactContentZip(buildId: Double, artifactName: String, project: String): js.Promise[ReadableStream] = js.native
     
     def getArtifacts(buildId: Double): js.Promise[js.Array[BuildArtifact]] = js.native
     def getArtifacts(buildId: Double, project: String): js.Promise[js.Array[BuildArtifact]] = js.native
@@ -171,10 +171,10 @@ object buildApiMod {
     def getBuildControllers(): js.Promise[js.Array[BuildController]] = js.native
     def getBuildControllers(name: String): js.Promise[js.Array[BuildController]] = js.native
     
-    def getBuildLog(project: String, buildId: Double, logId: Double): js.Promise[ReadableStream[Any]] = js.native
-    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[ReadableStream[Any]] = js.native
-    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double, endLine: Double): js.Promise[ReadableStream[Any]] = js.native
-    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Unit, endLine: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double): js.Promise[ReadableStream] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[ReadableStream] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double, endLine: Double): js.Promise[ReadableStream] = js.native
+    def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Unit, endLine: Double): js.Promise[ReadableStream] = js.native
     
     def getBuildLogLines(project: String, buildId: Double, logId: Double): js.Promise[js.Array[String]] = js.native
     def getBuildLogLines(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[js.Array[String]] = js.native
@@ -183,7 +183,7 @@ object buildApiMod {
     
     def getBuildLogs(project: String, buildId: Double): js.Promise[js.Array[BuildLog]] = js.native
     
-    def getBuildLogsZip(project: String, buildId: Double): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildLogsZip(project: String, buildId: Double): js.Promise[ReadableStream] = js.native
     
     def getBuildOptionDefinitions(): js.Promise[js.Array[BuildOptionDefinition]] = js.native
     def getBuildOptionDefinitions(project: String): js.Promise[js.Array[BuildOptionDefinition]] = js.native
@@ -194,8 +194,8 @@ object buildApiMod {
     def getBuildReport(project: String, buildId: Double): js.Promise[BuildReportMetadata] = js.native
     def getBuildReport(project: String, buildId: Double, `type`: String): js.Promise[BuildReportMetadata] = js.native
     
-    def getBuildReportHtmlContent(project: String, buildId: Double): js.Promise[ReadableStream[Any]] = js.native
-    def getBuildReportHtmlContent(project: String, buildId: Double, `type`: String): js.Promise[ReadableStream[Any]] = js.native
+    def getBuildReportHtmlContent(project: String, buildId: Double): js.Promise[ReadableStream] = js.native
+    def getBuildReportHtmlContent(project: String, buildId: Double, `type`: String): js.Promise[ReadableStream] = js.native
     
     def getBuildSettings(): js.Promise[BuildSettings] = js.native
     

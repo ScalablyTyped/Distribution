@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "SoapApi")
 @js.native
 open class SoapApi protected ()
-  extends typings.jsforce.soapMod.SoapApi {
+  extends typings.jsforce.apiSoapMod.SoapApi {
   def this(conn: typings.jsforce.connectionMod.Connection) = this()
 }

@@ -279,7 +279,9 @@ trait FieldProps[T, F]
   
   /** The field change event handler; called with the updated form data and an optional `ErrorSchema` */
   def onChange(newFormData: T): Any = js.native
+  def onChange(newFormData: T, es: Unit, id: String): Any = js.native
   def onChange(newFormData: T, es: ErrorSchema[T]): Any = js.native
+  def onChange(newFormData: T, es: ErrorSchema[T], id: String): Any = js.native
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
   

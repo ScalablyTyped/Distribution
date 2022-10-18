@@ -1,6 +1,5 @@
 package typings.yaireoTagify.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.yaireoTagify.anon.PartialInvalidTagsMessage
 import typings.yaireoTagify.yaireoTagifyBooleans.`false`
 import typings.yaireoTagify.yaireoTagifyInts.`1`
@@ -36,9 +35,7 @@ trait TagifySettings[T /* <: BaseTagData */] extends StObject {
   var blacklist: js.UndefOr[js.Array[String]] = js.undefined
   
   var callbacks: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void}
-    */ typings.yaireoTagify.yaireoTagifyStrings.TagifySettings & TopLevel[EventDataMap[T]]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void} */ js.Any
   ] = js.undefined
   
   /**
@@ -160,9 +157,7 @@ object TagifySettings {
     inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
     
     inline def setCallbacks(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void}
-      */ typings.yaireoTagify.yaireoTagifyStrings.TagifySettings & TopLevel[EventDataMap[T]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof @yaireo/tagify.@yaireo/tagify.EventDataMap<@yaireo/tagify.@yaireo/tagify.TagData> ]:? (event : std.CustomEvent<@yaireo/tagify.@yaireo/tagify.EventDataMap<T>[K]>): void} */ js.Any
     ): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)

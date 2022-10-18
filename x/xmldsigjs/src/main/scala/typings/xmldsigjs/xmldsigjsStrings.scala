@@ -1,8 +1,8 @@
 package typings.xmldsigjs
 
-import typings.xmldsigjs.ecdsaKeyMod._NamedCurveType
-import typings.xmldsigjs.signedXmlMod.OptionsSignTransform
-import typings.xmldsigjs.x509Mod._DigestAlgorithm
+import typings.xmldsigjs.buildTypesPkiX509Mod._DigestAlgorithm
+import typings.xmldsigjs.buildTypesSignedXmlMod.OptionsSignTransform
+import typings.xmldsigjs.buildTypesXmlKeyInfosEcdsaKeyMod._NamedCurveType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

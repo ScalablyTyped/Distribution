@@ -1,12 +1,10 @@
 package typings.axiosCaseConverter
 
 import typings.axios.mod.AxiosRequestConfig
-import typings.axios.mod.AxiosRequestHeaders
 import typings.axios.mod.AxiosRequestTransformer
-import typings.axios.mod.AxiosResponseHeaders
 import typings.axios.mod.AxiosResponseTransformer
-import typings.axiosCaseConverter.typesMod.AxiosInterceptor
-import typings.axiosCaseConverter.typesMod.CaseFunction
+import typings.axiosCaseConverter.typingsTypesMod.AxiosInterceptor
+import typings.axiosCaseConverter.typingsTypesMod.CaseFunction
 import typings.noCase.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -67,11 +65,11 @@ object anon {
       
       inline def setRequestInterceptorUndefined: Self = StObject.set(x, "requestInterceptor", js.undefined)
       
-      inline def setRequestTransformer(value: (/* data */ Any, /* headers */ js.UndefOr[AxiosRequestHeaders]) => Any): Self = StObject.set(x, "requestTransformer", js.Any.fromFunction2(value))
+      inline def setRequestTransformer(value: AxiosRequestTransformer): Self = StObject.set(x, "requestTransformer", value.asInstanceOf[js.Any])
       
       inline def setRequestTransformerUndefined: Self = StObject.set(x, "requestTransformer", js.undefined)
       
-      inline def setResponseTransformer(value: (/* data */ Any, /* headers */ js.UndefOr[AxiosResponseHeaders]) => Any): Self = StObject.set(x, "responseTransformer", js.Any.fromFunction2(value))
+      inline def setResponseTransformer(value: AxiosResponseTransformer): Self = StObject.set(x, "responseTransformer", value.asInstanceOf[js.Any])
       
       inline def setResponseTransformerUndefined: Self = StObject.set(x, "responseTransformer", js.undefined)
     }

@@ -1,6 +1,6 @@
 package typings.angularCli.anon
 
-import typings.angularCli.packageMetadataMod.PackageManifest
+import typings.angularCli.srcUtilitiesPackageMetadataMod.PackageManifest
 import typings.pacote.anon.Created
 import typings.pacote.anon.Directory
 import typings.pacote.anon.Email

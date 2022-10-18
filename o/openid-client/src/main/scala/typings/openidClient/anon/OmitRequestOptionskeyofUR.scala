@@ -1,15 +1,16 @@
 package typings.openidClient.anon
 
+import typings.node.AbortSignal
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.httpMod.Agent
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.LookupFunction
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureVersion
-import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -187,12 +188,7 @@ object OmitRequestOptionskeyofUR {
     inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ Double, 
-          Unit
-        ]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

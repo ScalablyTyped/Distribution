@@ -5,16 +5,15 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
-import typings.cheerio.cheerioMod.Cheerio
-import typings.cheerio.libLoadMod.CheerioAPI
-import typings.cheerio.libOptionsMod.CheerioOptions
+import typings.cheerio.libEsmCheerioMod.Cheerio
+import typings.cheerio.libEsmLoadMod.CheerioAPI
+import typings.cheerio.libEsmOptionsMod.CheerioOptions
+import typings.cheerio.libEsmTypesMod.BasicAcceptedElems
 import typings.cheerio.libOptionsMod.InternalOptions
 import typings.cheerio.libStaticMod.WritableArrayLike
-import typings.cheerio.libTypesMod.BasicAcceptedElems
 import typings.domhandler.libNodeMod.AnyNode
 import typings.domhandler.libNodeMod.ChildNode
 import typings.domhandler.mod.Document
-import typings.domhandler.mod.Element
 import typings.hoxy.hoxyStrings._empty
 import typings.node.bufferMod.global.Buffer
 import typings.std.ArrayLike
@@ -97,25 +96,33 @@ object anon {
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Null, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
@@ -126,19 +133,25 @@ object anon {
       context: Null,
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
@@ -149,13 +162,17 @@ object anon {
       context: Unit,
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: BasicAcceptedElems[AnyNode]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: BasicAcceptedElems[T] | S, context: BasicAcceptedElems[AnyNode]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
@@ -166,7 +183,9 @@ object anon {
       context: BasicAcceptedElems[AnyNode],
       root: Unit,
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
@@ -176,7 +195,9 @@ object anon {
       selector: BasicAcceptedElems[T] | S,
       context: BasicAcceptedElems[AnyNode],
       root: BasicAcceptedElems[Document]
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
@@ -187,61 +208,81 @@ object anon {
       context: BasicAcceptedElems[AnyNode],
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Null, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: Unit, root: BasicAcceptedElems[Document], options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: Unit, options: CheerioOptions): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: Unit, options: CheerioOptions): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
       * @deprecated Use the function returned by `load` instead.
       */
-    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: BasicAcceptedElems[Document]): Cheerio[T | Element] = js.native
+    def default[T /* <: AnyNode */, S /* <: String */](selector: Unit, context: BasicAcceptedElems[AnyNode], root: BasicAcceptedElems[Document]): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     /**
       * The default cheerio instance.
       *
@@ -252,13 +293,15 @@ object anon {
       context: BasicAcceptedElems[AnyNode],
       root: BasicAcceptedElems[Document],
       options: CheerioOptions
-    ): Cheerio[T | Element] = js.native
+    ): Cheerio[
+        /* import warning: importer.ImportType#apply Failed type conversion: S extends cheerio.cheerio/lib/esm/types.SelectorType ? domhandler.domhandler.Element : T */ js.Any
+      ] = js.native
     
     var Cheerio: Instantiable3[
         /* elements */ ArrayLike[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
-        /* root */ typings.cheerio.cheerioMod.Cheerio[Document], 
+        /* root */ typings.cheerio.libCheerioMod.Cheerio[Document], 
         /* options */ InternalOptions, 
-        typings.cheerio.cheerioMod.Cheerio[js.Object]
+        typings.cheerio.libCheerioMod.Cheerio[js.Object]
       ] = js.native
     
     var Document: Instantiable1[/* children */ js.Array[ChildNode], typings.cheerio.mod.Document] = js.native
@@ -282,10 +325,13 @@ object anon {
     val default_Original: CheerioAPI = js.native
     
     def html(): String = js.native
-    def html(dom: Unit, options: CheerioOptions): String = js.native
-    def html(dom: BasicAcceptedElems[AnyNode]): String = js.native
-    def html(dom: BasicAcceptedElems[AnyNode], options: CheerioOptions): String = js.native
-    def html(options: CheerioOptions): String = js.native
+    def html(dom: Unit, options: typings.cheerio.libOptionsMod.CheerioOptions): String = js.native
+    def html(dom: typings.cheerio.libTypesMod.BasicAcceptedElems[AnyNode]): String = js.native
+    def html(
+      dom: typings.cheerio.libTypesMod.BasicAcceptedElems[AnyNode],
+      options: typings.cheerio.libOptionsMod.CheerioOptions
+    ): String = js.native
+    def html(options: typings.cheerio.libOptionsMod.CheerioOptions): String = js.native
     
     def load(content: String): CheerioAPI = js.native
     def load(content: String, options: Null, isDocument: Boolean): CheerioAPI = js.native
@@ -312,13 +358,13 @@ object anon {
     
     val parseHTML: TypeofparseHTML = js.native
     
-    def root(): Cheerio[Document] = js.native
+    def root(): typings.cheerio.libCheerioMod.Cheerio[Document] = js.native
     
     def text(): String = js.native
     def text(elements: ArrayLike[AnyNode]): String = js.native
     
     def xml(): String = js.native
-    def xml(dom: BasicAcceptedElems[AnyNode]): String = js.native
+    def xml(dom: typings.cheerio.libTypesMod.BasicAcceptedElems[AnyNode]): String = js.native
   }
   
   @js.native

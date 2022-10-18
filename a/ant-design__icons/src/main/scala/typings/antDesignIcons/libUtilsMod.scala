@@ -2,7 +2,7 @@ package typings.antDesignIcons
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignIcons.antDesignIconsBooleans.`false`
-import typings.antDesignIconsSvg.typesMod.AbstractNode
+import typings.antDesignIconsSvg.libTypesMod.AbstractNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

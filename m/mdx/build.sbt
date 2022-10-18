@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mdx"
-version := "2.0-dt-20220624Z-7850d9"
+version := "2.0-dt-20220624Z-c56a1c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

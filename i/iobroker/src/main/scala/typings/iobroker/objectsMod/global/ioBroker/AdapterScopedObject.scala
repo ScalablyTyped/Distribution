@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.objectsMod.global.ioBroker.ChannelObject
   - typings.iobroker.objectsMod.global.ioBroker.StateObject
 */
-trait AdapterScopedObject
-  extends StObject
-     with _ObjectIdToObjectType[Any, Any]
+trait AdapterScopedObject extends StObject
 object AdapterScopedObject {
   
   inline def ChannelObject(_id: String, common: ChannelCommon, native: Record[String, Any]): typings.iobroker.objectsMod.global.ioBroker.ChannelObject = {

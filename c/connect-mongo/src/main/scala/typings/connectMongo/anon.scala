@@ -1,11 +1,11 @@
 package typings.connectMongo
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.connectMongo.buildMainLibMongoStoreMod.CryptoOptions
+import typings.connectMongo.buildMainLibMongoStoreMod.default
 import typings.connectMongo.connectMongoStrings.disabled
 import typings.connectMongo.connectMongoStrings.interval
 import typings.connectMongo.connectMongoStrings.native
-import typings.connectMongo.mongoStoreMod.CryptoOptions
-import typings.connectMongo.mongoStoreMod.default
 import typings.expressSession.mod.Cookie
 import typings.expressSession.mod.SessionData
 import typings.mongodb.mod.MongoClient

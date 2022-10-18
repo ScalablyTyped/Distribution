@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.domainmodels
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenRestMod.rest.ODataKeyPart
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "domainmodels.CurrencyAttributeType")
 @js.native
 open class CurrencyAttributeType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.domainmodels.CurrencyAttributeType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.CurrencyAttributeType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,7 +41,7 @@ object CurrencyAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object CurrencyAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -63,7 +63,7 @@ object CurrencyAttributeType {
     *  6.0.0 to 9.0.5
     */
   /* static member */
-  inline def createInAttributeUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
+  inline def createInAttributeUnderType(container: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.Attribute): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -74,7 +74,7 @@ object CurrencyAttributeType {
     *  8.9.0 to 9.0.5
     */
   /* static member */
-  inline def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
+  inline def createInEntityKeyPartUnderType(container: typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.EntityKeyPart): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType]
   
   /**
     * Creates and returns a new CurrencyAttributeType instance in the SDK and on the server.
@@ -85,7 +85,7 @@ object CurrencyAttributeType {
     *  8.9.0 to 9.0.5
     */
   /* static member */
-  inline def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CurrencyAttributeType]
+  inline def createInODataKeyPartUnderType(container: ODataKeyPart): typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.CurrencyAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.CurrencyAttributeType.structureTypeName")

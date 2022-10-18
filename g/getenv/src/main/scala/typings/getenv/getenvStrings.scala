@@ -32,10 +32,6 @@ object getenvStrings {
   inline def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait multi extends StObject
-  inline def multi: multi = "multi".asInstanceOf[multi]
-  
-  @js.native
   sealed trait string
     extends StObject
        with ParseTypes

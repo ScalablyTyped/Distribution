@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClusterOptions
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   /** directory of application, default to `process.cwd()` */
   var baseDir: js.UndefOr[String] = js.undefined

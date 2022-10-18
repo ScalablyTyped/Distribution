@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Pnp {
   
   /** Represents a PnP object. This class allows access to well-known properties of a PnP object as well as a property store of additional properties that are specified to be retrieved from the the PnP object. */
-  @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObject")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObject")
   @js.native
-  abstract class PnpObject ()
+  open class PnpObject ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject {
     
@@ -91,9 +91,9 @@ object Pnp {
   }
   
   /** Represents an iterable collection of Pnp device objects. */
-  @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectCollection")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectCollection")
   @js.native
-  abstract class PnpObjectCollection ()
+  open class PnpObjectCollection ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection
   
@@ -123,9 +123,9 @@ object Pnp {
   }
   
   /** Contains the updated properties of a PnpObject . */
-  @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectUpdate")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectUpdate")
   @js.native
-  abstract class PnpObjectUpdate ()
+  open class PnpObjectUpdate ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectUpdate {
     
@@ -143,9 +143,9 @@ object Pnp {
   }
   
   /** Raises events to notify the client that a PnpObject has been added, updated, or removed from an enumerated collection of Pnp device objects in an incremental and asynchronous way. */
-  @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectWatcher")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObjectWatcher")
   @js.native
-  abstract class PnpObjectWatcher ()
+  open class PnpObjectWatcher ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "QuaternionLinearInterpolant")
 @js.native
 open class QuaternionLinearInterpolant protected ()
-  extends typings.three.threeMod.QuaternionLinearInterpolant {
+  extends typings.three.srcThreeMod.QuaternionLinearInterpolant {
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double) = this()
   def this(parameterPositions: Any, samplesValues: Any, sampleSize: Double, resultBuffer: Any) = this()
 }

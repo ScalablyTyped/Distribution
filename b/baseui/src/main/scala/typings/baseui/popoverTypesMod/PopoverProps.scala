@@ -1,6 +1,5 @@
 package typings.baseui.popoverTypesMod
 
-import typings.baseui.layerTypesMod.TetherPlacement
 import typings.react.mod.ReactNode
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -30,8 +29,8 @@ trait PopoverProps
 }
 object PopoverProps {
   
-  inline def apply(isOpen: Boolean, placement: TetherPlacement, triggerType: TriggerType): PopoverProps = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+  inline def apply(isOpen: Boolean): PopoverProps = {
+    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }
   

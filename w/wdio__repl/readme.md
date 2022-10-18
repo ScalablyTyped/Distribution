@@ -1,7 +1,7 @@
 
 # Scala.js typings for wdio__repl
 
-Typings are for version 7.25.0
+Typings are for version 7.25.1
 
 ## Library description:
 A WDIO helper utility to provide a repl interface for WebdriverIO

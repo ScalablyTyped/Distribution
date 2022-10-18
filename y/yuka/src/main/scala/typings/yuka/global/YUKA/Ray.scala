@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Ray ()
   extends typings.yuka.mod.Ray {
-  def this(origin: typings.yuka.vector3Mod.Vector3) = this()
-  def this(origin: Unit, direction: typings.yuka.vector3Mod.Vector3) = this()
-  def this(origin: typings.yuka.vector3Mod.Vector3, direction: typings.yuka.vector3Mod.Vector3) = this()
+  def this(origin: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(origin: Unit, direction: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(origin: typings.yuka.srcMathVector3Mod.Vector3, direction: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

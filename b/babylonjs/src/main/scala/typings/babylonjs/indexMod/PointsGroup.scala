@@ -18,7 +18,7 @@ open class PointsGroup protected ()
     id: Double,
     posFunction: Nullable[
         js.Function3[
-          /* particle */ typings.babylonjs.cloudPointMod.CloudPoint, 
+          /* particle */ typings.babylonjs.particlesCloudPointMod.CloudPoint, 
           /* i */ js.UndefOr[Double], 
           /* s */ js.UndefOr[Double], 
           Unit

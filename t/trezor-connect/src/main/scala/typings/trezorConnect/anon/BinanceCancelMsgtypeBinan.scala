@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.binanceMod.BinancePreparedMessage
+import typings.trezorConnect.libTypescriptNetworksBinanceMod.BinancePreparedMessage
 import typings.trezorConnect.trezorConnectStrings.BinanceCancelMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

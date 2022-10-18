@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<plotly.js.plotly.js.PolarLayout> */
 trait PartialPolarLayoutAngularaxis extends StObject {
   
-  var angularaxis: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var angularaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
   var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
@@ -19,7 +19,7 @@ trait PartialPolarLayoutAngularaxis extends StObject {
   
   var hole: js.UndefOr[Double] = js.undefined
   
-  var radialaxis: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var radialaxis: js.UndefOr[PartialLayoutAxisAnchor] = js.undefined
   
   var sector: js.UndefOr[js.Array[Double]] = js.undefined
   
@@ -34,7 +34,7 @@ object PartialPolarLayoutAngularaxis {
   
   extension [Self <: PartialPolarLayoutAngularaxis](x: Self) {
     
-    inline def setAngularaxis(value: PartialLayoutAxisAngle): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
+    inline def setAngularaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     
     inline def setAngularaxisUndefined: Self = StObject.set(x, "angularaxis", js.undefined)
     
@@ -56,7 +56,7 @@ object PartialPolarLayoutAngularaxis {
     
     inline def setHoleUndefined: Self = StObject.set(x, "hole", js.undefined)
     
-    inline def setRadialaxis(value: PartialLayoutAxisAngle): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
     inline def setRadialaxisUndefined: Self = StObject.set(x, "radialaxis", js.undefined)
     

@@ -3,32 +3,31 @@ package typings.firebaseAuth.internalMod
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseAuth.anon.DisableWarnings
 import typings.firebaseAuth.anon.DisplayName
-import typings.firebaseAuth.assertMod.LessAppName
-import typings.firebaseAuth.coreErrorsMod.AuthErrorCode
+import typings.firebaseAuth.distSrcCoreErrorsMod.AuthErrorCode
+import typings.firebaseAuth.distSrcCoreUtilVersionMod.ClientPlatform
+import typings.firebaseAuth.distSrcModelAuthMod.ApiKey
+import typings.firebaseAuth.distSrcModelAuthMod.AppName
+import typings.firebaseAuth.distSrcModelAuthMod.AuthInternal
+import typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeInfo
+import typings.firebaseAuth.distSrcModelPublicTypesMod.ActionCodeSettings
+import typings.firebaseAuth.distSrcModelPublicTypesMod.AdditionalUserInfo
+import typings.firebaseAuth.distSrcModelPublicTypesMod.ApplicationVerifier
+import typings.firebaseAuth.distSrcModelPublicTypesMod.Auth
+import typings.firebaseAuth.distSrcModelPublicTypesMod.AuthErrorMap
+import typings.firebaseAuth.distSrcModelPublicTypesMod.AuthProvider
+import typings.firebaseAuth.distSrcModelPublicTypesMod.ConfirmationResult
+import typings.firebaseAuth.distSrcModelPublicTypesMod.Dependencies
+import typings.firebaseAuth.distSrcModelPublicTypesMod.IdTokenResult
+import typings.firebaseAuth.distSrcModelPublicTypesMod.MultiFactorError
+import typings.firebaseAuth.distSrcModelPublicTypesMod.MultiFactorResolver
+import typings.firebaseAuth.distSrcModelPublicTypesMod.MultiFactorUser
+import typings.firebaseAuth.distSrcModelPublicTypesMod.NextOrObserver
+import typings.firebaseAuth.distSrcModelPublicTypesMod.Persistence
+import typings.firebaseAuth.distSrcModelPublicTypesMod.PopupRedirectResolver
+import typings.firebaseAuth.distSrcModelPublicTypesMod.User
+import typings.firebaseAuth.distSrcModelPublicTypesMod.UserCredential
+import typings.firebaseAuth.distSrcModelUserMod.UserCredentialInternal
 import typings.firebaseAuth.internalMod.^
-import typings.firebaseAuth.modelAuthMod.ApiKey
-import typings.firebaseAuth.modelAuthMod.AppName
-import typings.firebaseAuth.modelAuthMod.AuthInternal
-import typings.firebaseAuth.publicTypesMod.ActionCodeInfo
-import typings.firebaseAuth.publicTypesMod.ActionCodeSettings
-import typings.firebaseAuth.publicTypesMod.AdditionalUserInfo
-import typings.firebaseAuth.publicTypesMod.ApplicationVerifier
-import typings.firebaseAuth.publicTypesMod.Auth
-import typings.firebaseAuth.publicTypesMod.AuthErrorMap
-import typings.firebaseAuth.publicTypesMod.AuthProvider
-import typings.firebaseAuth.publicTypesMod.ConfirmationResult
-import typings.firebaseAuth.publicTypesMod.Dependencies
-import typings.firebaseAuth.publicTypesMod.IdTokenResult
-import typings.firebaseAuth.publicTypesMod.MultiFactorError
-import typings.firebaseAuth.publicTypesMod.MultiFactorResolver
-import typings.firebaseAuth.publicTypesMod.MultiFactorUser
-import typings.firebaseAuth.publicTypesMod.NextOrObserver
-import typings.firebaseAuth.publicTypesMod.Persistence
-import typings.firebaseAuth.publicTypesMod.PopupRedirectResolver
-import typings.firebaseAuth.publicTypesMod.User
-import typings.firebaseAuth.publicTypesMod.UserCredential
-import typings.firebaseAuth.userMod.UserCredentialInternal
-import typings.firebaseAuth.versionMod.ClientPlatform
 import typings.firebaseUtil.mod.CompleteFn
 import typings.firebaseUtil.mod.ErrorFn
 import typings.firebaseUtil.mod.Unsubscribe
@@ -50,16 +49,12 @@ inline def assert[K /* <: AuthErrorCode */](
   assertion: Any,
   auth: Auth,
   code: K,
-  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: js.Array[js.UndefOr[LessAppName[K]]]
+  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> ? [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K>] */ js.Any
 ): /* asserts assertion */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_assert")(assertion.asInstanceOf[js.Any], auth.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[/* asserts assertion */ Boolean]
 inline def assert[K /* <: AuthErrorCode */](
   assertion: Any,
   code: K,
-  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: js.Array[
-  js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorParams[K] */ js.Any
-  ]
-]
+  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] ? [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K]] */ js.Any
 ): /* asserts assertion */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("_assert")(assertion.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[/* asserts assertion */ Boolean]
 
 inline def beforeAuthStateChanged(auth: Auth, callback: js.Function1[/* user */ User | Null, Unit | js.Promise[Unit]]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeAuthStateChanged")(auth.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
@@ -95,15 +90,11 @@ inline def deleteUser(user: User): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic]
 inline def fail[K /* <: AuthErrorCode */](
   auth: Auth,
   code: K,
-  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: js.Array[js.UndefOr[LessAppName[K]]]
+  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends LessAppName<K> ? [LessAppName<K> | undefined] : [LessAppName<K>] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> ? [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K> | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/util/assert.LessAppName<K>] */ js.Any
 ): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("_fail")(auth.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
 inline def fail[K /* <: AuthErrorCode */](
   code: K,
-  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: js.Array[
-  js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.@firebase/auth/dist/cordova/src/core/errors.AuthErrorParams[K] */ js.Any
-  ]
-]
+  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type {} extends AuthErrorParams[K] ? [AuthErrorParams[K] | undefined] : [AuthErrorParams[K]] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: {} extends @firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] ? [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K] | undefined] : [@firebase/auth.@firebase/auth/dist/src/core/errors.AuthErrorParams[K]] */ js.Any
 ): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("_fail")(code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
 
 inline def fetchSignInMethodsForEmail(auth: Auth, email: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchSignInMethodsForEmail")(auth.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
@@ -143,7 +134,7 @@ inline def initializeAuth(app: FirebaseApp, deps: Dependencies): Auth = (^.asIns
 
 inline def isSignInWithEmailLink(auth: Auth, emailLink: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignInWithEmailLink")(auth.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def linkWithCredential(user: User, credential: typings.firebaseAuth.credentialsMod.AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkWithCredential")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
+inline def linkWithCredential(user: User, credential: typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkWithCredential")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
 
 inline def linkWithPhoneNumber(user: User, phoneNumber: String, appVerifier: ApplicationVerifier): js.Promise[ConfirmationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkWithPhoneNumber")(user.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any], appVerifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfirmationResult]]
 
@@ -167,13 +158,13 @@ inline def onIdTokenChanged(auth: Auth, nextOrObserver: NextOrObserver[User], er
 
 inline def overrideRedirectResult(auth: AuthInternal, result: js.Function0[js.Promise[UserCredentialInternal | Null]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_overrideRedirectResult")(auth.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def parseActionCodeURL(link: String): typings.firebaseAuth.actionCodeUrlMod.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseActionCodeURL")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.actionCodeUrlMod.ActionCodeURL | Null]
+inline def parseActionCodeURL(link: String): typings.firebaseAuth.distSrcCoreActionCodeUrlMod.ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseActionCodeURL")(link.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreActionCodeUrlMod.ActionCodeURL | Null]
 
 inline def persistenceKeyName(key: String, apiKey: ApiKey, appName: AppName): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_persistenceKeyName")(key.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], appName.asInstanceOf[js.Any])).asInstanceOf[String]
 
 inline def prodErrorMap: AuthErrorMap = ^.asInstanceOf[js.Dynamic].selectDynamic("prodErrorMap").asInstanceOf[AuthErrorMap]
 
-inline def reauthenticateWithCredential(user: User, credential: typings.firebaseAuth.credentialsMod.AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthenticateWithCredential")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
+inline def reauthenticateWithCredential(user: User, credential: typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthenticateWithCredential")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
 
 inline def reauthenticateWithPhoneNumber(user: User, phoneNumber: String, appVerifier: ApplicationVerifier): js.Promise[ConfirmationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthenticateWithPhoneNumber")(user.asInstanceOf[js.Any], phoneNumber.asInstanceOf[js.Any], appVerifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfirmationResult]]
 
@@ -197,7 +188,7 @@ inline def setPersistence(auth: Auth, persistence: Persistence): js.Promise[Unit
 
 inline def signInAnonymously(auth: Auth): js.Promise[UserCredential] = ^.asInstanceOf[js.Dynamic].applyDynamic("signInAnonymously")(auth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserCredential]]
 
-inline def signInWithCredential(auth: Auth, credential: typings.firebaseAuth.credentialsMod.AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("signInWithCredential")(auth.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
+inline def signInWithCredential(auth: Auth, credential: typings.firebaseAuth.distSrcCoreCredentialsMod.AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("signInWithCredential")(auth.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
 
 inline def signInWithCustomToken(auth: Auth, customToken: String): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("signInWithCustomToken")(auth.asInstanceOf[js.Any], customToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]
 
@@ -225,7 +216,7 @@ inline def updateEmail(user: User, newEmail: String): js.Promise[Unit] = (^.asIn
 
 inline def updatePassword(user: User, newPassword: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePassword")(user.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-inline def updatePhoneNumber(user: User, credential: typings.firebaseAuth.phoneMod.PhoneAuthCredential): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePhoneNumber")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def updatePhoneNumber(user: User, credential: typings.firebaseAuth.distSrcCoreCredentialsPhoneMod.PhoneAuthCredential): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updatePhoneNumber")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
 inline def updateProfile(user: User, hasDisplayNamePhotoUrl: DisplayName): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProfile")(user.asInstanceOf[js.Any], hasDisplayNamePhotoUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 

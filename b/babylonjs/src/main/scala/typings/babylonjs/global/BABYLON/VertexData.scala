@@ -3,23 +3,24 @@ package typings.babylonjs.global.BABYLON
 import typings.babylonjs.BABYLON.FloatArray
 import typings.babylonjs.BABYLON.ICreateCapsuleOptions
 import typings.babylonjs.BABYLON.IndicesArray
-import typings.babylonjs.anon.AlignHorizontalAlignVertical
+import typings.babylonjs.anon.AlignVerticalBackUVs
 import typings.babylonjs.anon.AlignVerticalDepth
 import typings.babylonjs.anon.ArcBackUVs
 import typings.babylonjs.anon.BackUVsDiameter
 import typings.babylonjs.anon.BbSize
-import typings.babylonjs.anon.DepthFaceColors
+import typings.babylonjs.anon.BufferHeight
+import typings.babylonjs.anon.ColorsLines
+import typings.babylonjs.anon.DiameterDiameterX
+import typings.babylonjs.anon.FaceColorsFaceUV
 import typings.babylonjs.anon.FrontUVsHeight
 import typings.babylonjs.anon.GapSize
 import typings.babylonjs.anon.HasRings
-import typings.babylonjs.anon.Lines
 import typings.babylonjs.anon.Offset
-import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.RadialSegments
 import typings.babylonjs.anon.RadiusY
-import typings.babylonjs.anon.SizeY
-import typings.babylonjs.anon.Slice
-import typings.babylonjs.anon.Subdivisions
+import typings.babylonjs.anon.SizeX
+import typings.babylonjs.anon.SubdivisionsX
+import typings.babylonjs.anon.Xmax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,7 +100,7 @@ object VertexData {
     * @returns the VertexData of the box
     * @deprecated Please use CreateBoxVertexData from the BoxBuilder file instead
     */
-  inline def CreateBox(options: DepthFaceColors): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateBox(options: FaceColorsFaceUV): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateBox")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData for a Capsule, inspired from https://github.com/maximeq/three-js-capsule-geometry/blob/master/src/CapsuleBufferGeometry.js
@@ -196,7 +197,7 @@ object VertexData {
     * @returns the VertexData of the Ground
     * @deprecated Please use CreateGroundVertexData instead
     */
-  inline def CreateGround(options: Subdivisions): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateGround(options: SubdivisionsX): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData of the Ground designed from a heightmap
@@ -224,7 +225,7 @@ object VertexData {
     * @returns the VertexData of the Ground designed from a heightmap
     * @deprecated use CreateGroundFromHeightMapVertexData instead
     */
-  inline def CreateGroundFromHeightMap(options: typings.babylonjs.anon.Buffer): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateGroundFromHeightMap(options: BufferHeight): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroundFromHeightMap")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData of the IcoSphere
@@ -262,7 +263,7 @@ object VertexData {
     * @returns the VertexData of the LineSystem
     * @deprecated use CreateLineSystemVertexData instead
     */
-  inline def CreateLineSystem(options: Lines): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateLineSystem(options: ColorsLines): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateLineSystem")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData for a Plane
@@ -585,7 +586,7 @@ object VertexData {
     * @returns the VertexData of the Polyhedron
     * @deprecated use CreatePolyhedronVertexData instead
     */
-  inline def CreatePolyhedron(options: SizeY): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreatePolyhedron(options: SizeX): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreatePolyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData for a Ribbon
@@ -641,7 +642,7 @@ object VertexData {
     * @returns the VertexData of the ellipsoid
     * @deprecated use CreateSphereVertexData instead
     */
-  inline def CreateSphere(options: Slice): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateSphere(options: DiameterDiameterX): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData for a tiled box
@@ -689,7 +690,7 @@ object VertexData {
     * @returns the VertexData of the TiledGround
     * @deprecated use CreateTiledGroundVertexData instead
     */
-  inline def CreateTiledGround(options: Precision): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateTiledGround(options: Xmax): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledGround")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData for a tiled plane
@@ -716,7 +717,7 @@ object VertexData {
     * @returns the VertexData of the tiled plane
     * @deprecated use CreateTiledPlaneVertexData instead
     */
-  inline def CreateTiledPlane(options: AlignHorizontalAlignVertical): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
+  inline def CreateTiledPlane(options: AlignVerticalBackUVs): typings.babylonjs.BABYLON.VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTiledPlane")(options.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.VertexData]
   
   /**
     * Creates the VertexData for a torus

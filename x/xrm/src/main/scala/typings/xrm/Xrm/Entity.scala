@@ -2,7 +2,9 @@ package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Attributes.Attribute
 import typings.xrm.Xrm.Collection.ItemCollection
-import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import typings.xrm.Xrm.Events.PostSaveEventHandler
+import typings.xrm.Xrm.Events.SaveEventHandler
+import typings.xrm.Xrm.Events.SaveEventHandlerAsync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,13 +22,13 @@ trait Entity extends StObject {
     * @remarks Added in 9.2
     * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/events/postsave External Link: PostSave Event Documentation}
     */
-  def addOnPostSave(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnPostSave(handler: PostSaveEventHandler): Unit = js.native
   
   /**
     * Adds a handler to be called when the record is saved.
     * @param handler The handler.
     */
-  def addOnSave(handler: ContextSensitiveHandler): Unit = js.native
+  def addOnSave(handler: SaveEventHandler | SaveEventHandlerAsync): Unit = js.native
   
   /**
     * The collection of attributes for the record.
@@ -84,10 +86,15 @@ trait Entity extends StObject {
   def isValid(): Boolean = js.native
   
   /**
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/controls/removeonpostsave removeOnPostSave (Client API reference)}
+    */
+  def removeOnPostSave(handler: PostSaveEventHandler): Unit = js.native
+  
+  /**
     * Removes the handler from the "on save" event.
     * @param handler The handler.
     */
-  def removeOnSave(handler: ContextSensitiveHandler): Unit = js.native
+  def removeOnSave(handler: SaveEventHandler | SaveEventHandlerAsync): Unit = js.native
   
   /**
     * Saves the record synchronously with the options to close the form or open a new form after the save is completed.

@@ -1,41 +1,35 @@
 package typings.cadesplugin.CAPICOM
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cadesplugin.CADESCommon.PromisifiedFunction
-import typings.cadesplugin.CADESCommon.Unpacked
-import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.PublicKey> */
-trait PublicKeyAsync
-  extends StObject
-     with _Unpacked[Any] {
+trait PublicKeyAsync extends StObject {
   
-  val Algorithm: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[OID]]) | PromisifiedFunction[OID]
+  val Algorithm: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.OID> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.OID>> */ js.Any
   
-  val EncodedKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData]
+  val EncodedKey: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EncodedData extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EncodedData> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.EncodedData>> */ js.Any
   
-  val EncodedParameters: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData]
+  val EncodedParameters: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EncodedData extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EncodedData> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.EncodedData>> */ js.Any
   
-  val Length: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+  val Length: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
 }
 object PublicKeyAsync {
   
   inline def apply(
-    Algorithm: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[OID]]) | PromisifiedFunction[OID],
-    EncodedKey: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData],
-    EncodedParameters: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData],
-    Length: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+    Algorithm: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.OID> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.OID>> */ js.Any,
+    EncodedKey: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EncodedData extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EncodedData> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.EncodedData>> */ js.Any,
+    EncodedParameters: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EncodedData extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EncodedData> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.EncodedData>> */ js.Any,
+    Length: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
   ): PublicKeyAsync = {
     val __obj = js.Dynamic.literal(Algorithm = Algorithm.asInstanceOf[js.Any], EncodedKey = EncodedKey.asInstanceOf[js.Any], EncodedParameters = EncodedParameters.asInstanceOf[js.Any], Length = Length.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyAsync]
@@ -43,46 +37,24 @@ object PublicKeyAsync {
   
   extension [Self <: PublicKeyAsync](x: Self) {
     
-    inline def setAlgorithm(value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[OID]]) | PromisifiedFunction[OID]): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
-    
-    inline def setAlgorithmFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Algorithm", js.Any.fromFunction1(value))
+    inline def setAlgorithm(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.OID> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.OID>> */ js.Any
+    ): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
     inline def setEncodedKey(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EncodedData extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EncodedData> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.EncodedData>> */ js.Any
     ): Self = StObject.set(x, "EncodedKey", value.asInstanceOf[js.Any])
     
-    inline def setEncodedKeyFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "EncodedKey", js.Any.fromFunction1(value))
-    
     inline def setEncodedParameters(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[EncodedData]]) | PromisifiedFunction[EncodedData]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EncodedData extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EncodedData> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.EncodedData>> */ js.Any
     ): Self = StObject.set(x, "EncodedParameters", value.asInstanceOf[js.Any])
     
-    inline def setEncodedParametersFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "EncodedParameters", js.Any.fromFunction1(value))
-    
     inline def setLength(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Double]]) | PromisifiedFunction[Double]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<number>> */ js.Any
     ): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
-    
-    inline def setLengthFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Length", js.Any.fromFunction1(value))
   }
 }

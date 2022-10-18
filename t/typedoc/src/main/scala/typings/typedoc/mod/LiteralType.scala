@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "LiteralType")
 @js.native
 open class LiteralType ()
-  extends typings.typedoc.modelsMod.LiteralType {
+  extends typings.typedoc.distLibModelsMod.LiteralType {
   def this(value: String) = this()
   def this(value: js.BigInt) = this()
   def this(value: Boolean) = this()

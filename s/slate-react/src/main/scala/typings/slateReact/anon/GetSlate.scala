@@ -1,7 +1,7 @@
 package typings.slateReact.anon
 
-import typings.slateReact.reactEditorMod.ReactEditor
-import typings.slateReact.useSlateSelectorMod.EditorChangeHandler
+import typings.slateReact.distHooksUseSlateSelectorMod.EditorChangeHandler
+import typings.slateReact.distPluginReactEditorMod.ReactEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

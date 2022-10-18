@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object numberMod {
   
-  @JSImport("@formatjs/icu-skeleton-parser/lib/number", JSImport.Namespace)
+  @JSImport("@formatjs/icu-skeleton-parser/number", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

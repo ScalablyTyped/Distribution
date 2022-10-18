@@ -15,12 +15,12 @@ open class InternalTexture protected ()
     * @param delayAllocation if the texture allocation should be delayed (default: false)
     */
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    source: typings.babylonjs.internalTextureMod.InternalTextureSource
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    source: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTextureSource
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
-    source: typings.babylonjs.internalTextureMod.InternalTextureSource,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    source: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTextureSource,
     delayAllocation: Boolean
   ) = this()
 }

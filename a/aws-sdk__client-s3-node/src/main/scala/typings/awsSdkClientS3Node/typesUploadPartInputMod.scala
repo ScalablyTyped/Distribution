@@ -1,8 +1,8 @@
 package typings.awsSdkClientS3Node
 
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.requester_
-import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.awsSdkTypes.cryptoMod.SourceData
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
+import typings.awsSdkTypes.distTypesCryptoMod.SourceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

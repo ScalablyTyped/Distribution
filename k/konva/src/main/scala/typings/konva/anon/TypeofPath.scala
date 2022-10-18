@@ -2,8 +2,8 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.konva.pathMod.Path
-import typings.konva.pathMod.PathConfig
+import typings.konva.libShapesPathMod.Path
+import typings.konva.libShapesPathMod.PathConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

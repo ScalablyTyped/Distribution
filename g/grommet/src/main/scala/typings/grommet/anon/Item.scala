@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,9 +15,9 @@ trait Item extends StObject {
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var icons: js.UndefOr[DownUp] = js.undefined
+  var icons: js.UndefOr[Down] = js.undefined
   
-  var item: js.UndefOr[ExtendPad] = js.undefined
+  var item: js.UndefOr[DisabledExtend] = js.undefined
 }
 object Item {
   
@@ -38,11 +38,11 @@ object Item {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setIcons(value: DownUp): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Down): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setItem(value: ExtendPad): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: DisabledExtend): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }

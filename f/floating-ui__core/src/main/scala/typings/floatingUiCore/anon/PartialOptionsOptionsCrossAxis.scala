@@ -1,8 +1,8 @@
 package typings.floatingUiCore.anon
 
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
-import typings.floatingUiCore.typesMod.RootBoundary
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
+import typings.floatingUiCore.srcTypesMod.RootBoundary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,13 @@ trait PartialOptionsOptionsCrossAxis extends StObject {
   
   var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiCore.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.Boundary] = js.undefined
   
   var crossAxis: js.UndefOr[Boolean] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
-  var limiter: js.UndefOr[Fn] = js.undefined
+  var limiter: js.UndefOr[Options] = js.undefined
   
   var mainAxis: js.UndefOr[Boolean] = js.undefined
   
@@ -39,7 +39,7 @@ object PartialOptionsOptionsCrossAxis {
     
     inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiCore.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiCore.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
@@ -51,7 +51,7 @@ object PartialOptionsOptionsCrossAxis {
     
     inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
     
-    inline def setLimiter(value: Fn): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+    inline def setLimiter(value: Options): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
     
     inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
     

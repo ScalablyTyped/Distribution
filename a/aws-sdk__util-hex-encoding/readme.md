@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-hex-encoding
 
-Typings are for version 3.170.0
+Typings are for version 3.188.0
 
 ## Library description:
 Converts binary buffers to and from lowercase hexadecimal encoding

@@ -2,12 +2,12 @@ package typings.swaggerStats
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
-import typings.fastify.instanceMod.FastifyInstance
-import typings.fastify.loggerMod.FastifyBaseLogger
-import typings.fastify.typeProviderMod.FastifyTypeProviderDefault
-import typings.fastify.utilsMod.RawReplyDefaultExpression
-import typings.fastify.utilsMod.RawRequestDefaultExpression
-import typings.fastify.utilsMod.RawServerDefault
+import typings.fastify.typesInstanceMod.FastifyInstance
+import typings.fastify.typesLoggerMod.FastifyBaseLogger
+import typings.fastify.typesTypeProviderMod.FastifyTypeProviderDefault
+import typings.fastify.typesUtilsMod.RawReplyDefaultExpression
+import typings.fastify.typesUtilsMod.RawRequestDefaultExpression
+import typings.fastify.typesUtilsMod.RawServerDefault
 import typings.hapiHapi.mod.Server_
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse

@@ -36,9 +36,9 @@ object WiFi {
   }
   
   /** Use this class to enumerate local Wi-Fi adapters, initiate Wi-Fi scans, enumerate scan results, and to connect or disconnect individual adapters. */
-  @JSGlobal("Windows.Devices.WiFi.WiFiAdapter")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFi.WiFiAdapter")
   @js.native
-  abstract class WiFiAdapter ()
+  open class WiFiAdapter ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFi.WiFiAdapter
   object WiFiAdapter {
@@ -78,9 +78,9 @@ object WiFi {
   }
   
   /** Describes an available Wi-Fi network. */
-  @JSGlobal("Windows.Devices.WiFi.WiFiAvailableNetwork")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFi.WiFiAvailableNetwork")
   @js.native
-  abstract class WiFiAvailableNetwork ()
+  open class WiFiAvailableNetwork ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFi.WiFiAvailableNetwork {
     
@@ -130,9 +130,9 @@ object WiFi {
   }
   
   /** Describes the results of an attempt to connect to a Wi-Fi network. */
-  @JSGlobal("Windows.Devices.WiFi.WiFiConnectionResult")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFi.WiFiConnectionResult")
   @js.native
-  abstract class WiFiConnectionResult ()
+  open class WiFiConnectionResult ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFi.WiFiConnectionResult {
     
@@ -180,9 +180,9 @@ object WiFi {
   }
   
   /** Contains the result of a network scan operation. */
-  @JSGlobal("Windows.Devices.WiFi.WiFiNetworkReport")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.WiFi.WiFiNetworkReport")
   @js.native
-  abstract class WiFiNetworkReport ()
+  open class WiFiNetworkReport ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.WiFi.WiFiNetworkReport {
     

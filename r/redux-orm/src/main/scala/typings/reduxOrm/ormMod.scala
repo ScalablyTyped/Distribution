@@ -1,8 +1,7 @@
 package typings.reduxOrm
 
-import org.scalablytyped.runtime.TopLevel
-import typings.reduxOrm.databaseMod.Database
-import typings.reduxOrm.databaseMod.DatabaseCreator
+import typings.reduxOrm.dbDatabaseMod.Database
+import typings.reduxOrm.dbDatabaseMod.DatabaseCreator
 import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
@@ -60,9 +59,7 @@ object ormMod {
       */
     def getDatabase(): Database[
         I, 
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.ORM & TopLevel[I]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>} */ js.Any
       ] = js.native
     
     /**
@@ -113,11 +110,14 @@ object ormMod {
     def session(state: OrmState[I]): OrmSession[I] = js.native
   }
   
-  type IndexedModelClasses[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof T ]: new (): redux-orm.redux-orm/Model.AnyModel}
-    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses & TopLevel[Any] */, K /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in K ]: T[K]}
-    */ typings.reduxOrm.reduxOrmStrings.IndexedModelClasses & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ k in K ]: T[K]}
+    }}}
+    */
+  type IndexedModelClasses[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof T ]: new (): redux-orm.redux-orm/Model.AnyModel} */ js.Any */, K /* <: /* keyof T */ String */] = T
   
   trait ORMOpts[MClassMap] extends StObject {
     
@@ -144,13 +144,19 @@ object ormMod {
     }
   }
   
-  type OrmState[MClassMap /* <: IndexedModelClasses[
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof MClassMap ]: redux-orm.redux-orm/db/Table.TableState<MClassMap[K]>}
+    }}}
+    */
+  @js.native
+  trait OrmState[MClassMap /* <: IndexedModelClasses[
     Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
-  ] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof MClassMap ]: redux-orm.redux-orm/db/Table.TableState<MClassMap[K]>}
-    */ typings.reduxOrm.reduxOrmStrings.OrmState & TopLevel[MClassMap]
+  ] */] extends StObject
 }

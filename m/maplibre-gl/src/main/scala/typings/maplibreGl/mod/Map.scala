@@ -2,11 +2,10 @@ package typings.maplibreGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.DataHeight
+import typings.maplibreGl.anon.Data
 import typings.maplibreGl.anon.Delegates
 import typings.maplibreGl.anon.Filter
 import typings.maplibreGl.anon.PartialStyleImageMetadata
-import typings.maplibreGl.anon.`5`
 import typings.maplibreGl.anon.diffbooleanundefinedStyle
 import typings.maplibreGl.maplibreGlStrings.boxzoomcancel
 import typings.maplibreGl.maplibreGlStrings.boxzoomend
@@ -250,8 +249,8 @@ open class Map protected () extends Camera {
   def addControl(control: IControl): this.type = js.native
   def addControl(control: IControl, position: ControlPosition): this.type = js.native
   
-  def addImage(id: String, image: DataHeight): this.type = js.native
-  def addImage(id: String, image: DataHeight, hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata): this.type = js.native
+  def addImage(id: String, image: Data): this.type = js.native
+  def addImage(id: String, image: Data, hasPixelRatioSdfStretchXStretchYContent: PartialStyleImageMetadata): this.type = js.native
   def addImage(id: String, image: StyleImageInterface): this.type = js.native
   def addImage(
     id: String,
@@ -426,8 +425,8 @@ open class Map protected () extends Camera {
   	 * @see [Add a vector tile source](https://maplibre.org/maplibre-gl-js-docs/example/vector-source/)
   	 * @see [Add a WMS source](https://maplibre.org/maplibre-gl-js-docs/example/wms/)
   	 */
-  def addLayer(layer: LayerSpecification & `5`): this.type = js.native
-  def addLayer(layer: LayerSpecification & `5`, beforeId: String): this.type = js.native
+  def addLayer(layer: LayerSpecification & typings.maplibreGl.anon.Source): this.type = js.native
+  def addLayer(layer: LayerSpecification & typings.maplibreGl.anon.Source, beforeId: String): this.type = js.native
   def addLayer(layer: CustomLayerInterface): this.type = js.native
   def addLayer(layer: CustomLayerInterface, beforeId: String): this.type = js.native
   
@@ -2555,7 +2554,7 @@ open class Map protected () extends Camera {
   	 */
   def unproject(point: PointLike): LngLat = js.native
   
-  def updateImage(id: String, image: DataHeight): this.type = js.native
+  def updateImage(id: String, image: Data): this.type = js.native
   def updateImage(id: String, image: StyleImageInterface): this.type = js.native
   /**
   	 * Update an existing image in a style. This image can be displayed on the map like any other icon in the style's

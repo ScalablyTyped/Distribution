@@ -2,8 +2,8 @@ package typings.vsoNodeApi
 
 import typings.typedRestClient.httpClientMod.HttpClient
 import typings.typedRestClient.restClientMod.RestClient
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vsoClientMod.VsoClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

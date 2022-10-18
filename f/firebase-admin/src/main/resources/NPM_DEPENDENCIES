@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "firebase-admin" : "11.0.1"
+      "firebase-admin" : "11.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "firebase-admin" : "11.0.1"
+      "firebase-admin" : "11.2.0"
     }
   ],
   "compile-devDependencies" : [

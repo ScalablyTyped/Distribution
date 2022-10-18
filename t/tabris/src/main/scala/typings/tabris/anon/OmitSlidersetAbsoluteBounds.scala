@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.ChangeListeners
 import typings.tabris.mod.ColorValue
@@ -223,7 +224,7 @@ trait OmitSlidersetAbsoluteBounds extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   def animate(properties: Opacity, options: AnimationOptions): js.Promise[Unit]
   @JSName("animate")
@@ -239,7 +240,7 @@ trait OmitSlidersetAbsoluteBounds extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var centerX: typings.tabris.mod.Offset | auto | `true`
   
@@ -308,7 +309,7 @@ trait OmitSlidersetAbsoluteBounds extends StObject {
       typings.tabris.global.tabris.widgets.Slider, 
       set | typings.tabris.tabrisStrings.jsxAttributes
     ]
-  ]) & Children
+  ]) & `3`
   
   var layoutData: LayoutDataValue
   
@@ -534,12 +535,12 @@ object OmitSlidersetAbsoluteBounds {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     appendTo: /* parent */ Composite[Widget[Any]] => typings.tabris.global.tabris.widgets.Slider,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
     cid: String,
@@ -562,7 +563,7 @@ object OmitSlidersetAbsoluteBounds {
     jsxAttributes: (JSXAttributes[
       typings.tabris.global.tabris.widgets.Slider, 
       Omit[typings.tabris.global.tabris.widgets.Slider, set | jsxAttributes]
-    ]) & Children,
+    ]) & `3`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     maximum: Double,
@@ -649,7 +650,7 @@ object OmitSlidersetAbsoluteBounds {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
@@ -663,7 +664,7 @@ object OmitSlidersetAbsoluteBounds {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCenterX(value: typings.tabris.mod.Offset | auto | `true`): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
@@ -733,7 +734,7 @@ object OmitSlidersetAbsoluteBounds {
       value: (JSXAttributes[
           typings.tabris.global.tabris.widgets.Slider, 
           Omit[typings.tabris.global.tabris.widgets.Slider, set | jsxAttributes]
-        ]) & Children
+        ]) & `3`
     ): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])

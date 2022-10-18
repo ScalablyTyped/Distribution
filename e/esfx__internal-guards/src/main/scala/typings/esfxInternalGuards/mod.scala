@@ -39,5 +39,13 @@ object mod {
   
   inline def isString(value: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  type AbstractInstanceType[T /* <: Instantiable1[/* args */ Any, Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends abstract new (args : any): infer R ? R : any
+    }}}
+    */
+  @js.native
+  trait AbstractInstanceType[T /* <: Instantiable1[/* args */ Any, Any] */] extends StObject
 }

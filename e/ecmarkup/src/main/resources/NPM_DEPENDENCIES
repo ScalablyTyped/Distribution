@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ecmarkup" : "4.2.1"
+      "ecmarkup" : "15.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ecmarkup" : "4.2.1"
+      "ecmarkup" : "15.0.2"
     }
   ],
   "compile-devDependencies" : [

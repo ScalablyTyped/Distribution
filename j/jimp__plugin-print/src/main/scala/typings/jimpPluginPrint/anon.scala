@@ -1,6 +1,6 @@
 package typings.jimpPluginPrint
 
-import typings.jimpCore.etcMod.GenericCallback
+import typings.jimpCore.typesEtcMod.GenericCallback
 import typings.jimpPluginPrint.mod.Font
 import typings.jimpPluginPrint.mod.PrintableText
 import org.scalablytyped.runtime.StObject

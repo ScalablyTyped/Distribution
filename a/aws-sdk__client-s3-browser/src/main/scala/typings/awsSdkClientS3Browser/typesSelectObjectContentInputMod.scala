@@ -1,12 +1,12 @@
 package typings.awsSdkClientS3Browser
 
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.SQL
-import typings.awsSdkClientS3Browser.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkClientS3Browser.typesInputSerializationMod.InputSerialization
+import typings.awsSdkClientS3Browser.typesInputTypesUnionMod._InputTypesUnion
 import typings.awsSdkClientS3Browser.typesOutputSerializationMod.OutputSerialization
 import typings.awsSdkClientS3Browser.typesRequestProgressMod.RequestProgress
-import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.awsSdkTypes.cryptoMod.SourceData
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
+import typings.awsSdkTypes.distTypesCryptoMod.SourceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

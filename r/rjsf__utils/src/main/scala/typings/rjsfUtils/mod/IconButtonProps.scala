@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The type that defines the props for an Icon button, extending from a basic HTML button attributes */
-trait IconButtonProps
+trait IconButtonProps[T, F]
   extends StObject
      with ButtonHTMLAttributes[HTMLButtonElement] {
   
@@ -17,15 +17,18 @@ trait IconButtonProps
   
   /** An alternative specification for the type of the icon button */
   var iconType: js.UndefOr[String] = js.undefined
+  
+  /** The uiSchema for this widget */
+  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
 }
 object IconButtonProps {
   
-  inline def apply(): IconButtonProps = {
+  inline def apply[T, F](): IconButtonProps[T, F] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[IconButtonProps]
+    __obj.asInstanceOf[IconButtonProps[T, F]]
   }
   
-  extension [Self <: IconButtonProps](x: Self) {
+  extension [Self <: IconButtonProps[?, ?], T, F](x: Self & (IconButtonProps[T, F])) {
     
     inline def setIcon(value: String | ReactElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
@@ -34,5 +37,9 @@ object IconButtonProps {
     inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
   }
 }

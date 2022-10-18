@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Component")
 @js.native
 open class Component ()
-  extends typings.blackEngine.componentMod.Component
+  extends typings.blackEngine.coreComponentMod.Component

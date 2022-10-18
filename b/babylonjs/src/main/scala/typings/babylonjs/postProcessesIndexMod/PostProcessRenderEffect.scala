@@ -1,6 +1,6 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.enginesEngineMod.Engine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "PostProcessRenderEffect")
 @js.native
 open class PostProcessRenderEffect protected ()
-  extends typings.babylonjs.renderPipelineIndexMod.PostProcessRenderEffect {
+  extends typings.babylonjs.postProcessesRenderPipelineIndexMod.PostProcessRenderEffect {
   /**
     * Instantiates a post process render effect.
     * A post process can be used to apply a shader to a texture after it is rendered.
@@ -23,7 +23,7 @@ open class PostProcessRenderEffect protected ()
     name: String,
     getPostProcesses: js.Function0[
         Nullable[
-          typings.babylonjs.postProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessMod.PostProcess]
+          typings.babylonjs.postProcessesPostProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessesPostProcessMod.PostProcess]
         ]
       ]
   ) = this()
@@ -32,7 +32,7 @@ open class PostProcessRenderEffect protected ()
     name: String,
     getPostProcesses: js.Function0[
         Nullable[
-          typings.babylonjs.postProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessMod.PostProcess]
+          typings.babylonjs.postProcessesPostProcessMod.PostProcess | js.Array[typings.babylonjs.postProcessesPostProcessMod.PostProcess]
         ]
       ],
     singleInstance: Boolean

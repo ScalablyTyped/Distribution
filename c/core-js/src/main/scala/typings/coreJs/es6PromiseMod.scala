@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object es6PromiseMod extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("core-js/library/es6/promise", JSImport.Namespace)
+  @JSImport("core-js/es6/promise", JSImport.Namespace)
   @js.native
   open class ^[T] protected ()
     extends StObject
@@ -29,7 +29,7 @@ object es6PromiseMod extends Shortcut {
             Unit
           ]) = this()
   }
-  @JSImport("core-js/library/es6/promise", JSImport.Namespace)
+  @JSImport("core-js/es6/promise", JSImport.Namespace)
   @js.native
   val ^ : js.Object & PromiseConstructor = js.native
   

@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Slider, 'pause' | 'start' | 'next' | 'prev' | 'destroy'> */
 trait PickSliderpausestartnextp extends StObject {
   
-  var destroy: js.UndefOr[Any] = js.undefined
+  def destroy(): Unit
+  @JSName("destroy")
+  var destroy_Original: js.Function0[Unit]
   
-  var next: js.UndefOr[Any] = js.undefined
+  def next(): Unit
+  @JSName("next")
+  var next_Original: js.Function0[Unit]
   
-  var pause: js.UndefOr[Any] = js.undefined
+  def pause(): Unit
+  @JSName("pause")
+  var pause_Original: js.Function0[Unit]
   
-  var prev: js.UndefOr[Any] = js.undefined
+  def prev(): Unit
+  @JSName("prev")
+  var prev_Original: js.Function0[Unit]
   
-  var start: js.UndefOr[Any] = js.undefined
+  def start(): Unit
+  @JSName("start")
+  var start_Original: js.Function0[Unit]
 }
 object PickSliderpausestartnextp {
   
-  inline def apply(): PickSliderpausestartnextp = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(destroy: () => Unit, next: () => Unit, pause: () => Unit, prev: () => Unit, start: () => Unit): PickSliderpausestartnextp = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), next = js.Any.fromFunction0(next), pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[PickSliderpausestartnextp]
   }
   
   extension [Self <: PickSliderpausestartnextp](x: Self) {
     
-    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
-    inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
-    inline def setPause(value: Any): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
-    
-    inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
-    
-    inline def setPrev(value: Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
-    
-    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
-    
-    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
-    
-    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

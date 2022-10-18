@@ -12,6 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object textField {
   
+  @JSImport("material-components-web", "textField.default")
+  @js.native
+  open class default ()
+    extends typings.materialTextfield.mod.default {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
+  }
+  
   /**
     * Label should always float for these types as they show some UI even if value
     * is empty.
@@ -27,7 +34,7 @@ object textField {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation,
+      foundation: typings.materialTextfield.foundationMod.MDCTextFieldFoundation,
       args: Any*
     ) = this()
   }
@@ -38,7 +45,7 @@ object textField {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialTextfield.materialTextfieldMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.materialTextfieldMod.MDCTextField]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.componentMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextField]
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldCharacterCounter")
@@ -48,7 +55,7 @@ object textField {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation,
+      foundation: typings.materialTextfield.characterCounterFoundationMod.MDCTextFieldCharacterCounterFoundation,
       args: Any*
     ) = this()
   }
@@ -59,7 +66,7 @@ object textField {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter]
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldCharacterCounterFoundation")

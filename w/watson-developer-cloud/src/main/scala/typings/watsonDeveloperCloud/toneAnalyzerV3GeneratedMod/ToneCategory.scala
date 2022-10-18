@@ -31,6 +31,6 @@ object ToneCategory {
     
     inline def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
-    inline def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value*))
   }
 }

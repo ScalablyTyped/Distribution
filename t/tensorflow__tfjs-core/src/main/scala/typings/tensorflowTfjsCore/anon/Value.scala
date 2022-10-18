@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsCore.anon
 
 import typings.tensorflowTfjsCore.distTensorMod.Scalar
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

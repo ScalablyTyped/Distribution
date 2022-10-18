@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection properties that are specific to the Digital Rights Management (DRM) protection of the MediaStreamSample . */
-@JSGlobal("Windows.Media.Core.MediaStreamSampleProtectionProperties")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.MediaStreamSampleProtectionProperties")
 @js.native
-abstract class MediaStreamSampleProtectionProperties ()
+open class MediaStreamSampleProtectionProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaStreamSampleProtectionProperties {
   

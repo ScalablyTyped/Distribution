@@ -2,6 +2,7 @@ package typings.reactNativeWindows.rntypesMod
 
 import typings.react.mod.Component
 import typings.reactNativeWindows.anon.AnimatedBoolean
+import typings.reactNativeWindows.anon.AnimatedX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,10 +49,10 @@ open class ScrollView ()
   def scrollTo(y: Unit, x: Double): Unit = js.native
   def scrollTo(y: Unit, x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: Unit, x: Unit, animated: Boolean): Unit = js.native
-  def scrollTo(y: typings.reactNativeWindows.anon.Animated): Unit = js.native
-  def scrollTo(y: typings.reactNativeWindows.anon.Animated, x: Double): Unit = js.native
-  def scrollTo(y: typings.reactNativeWindows.anon.Animated, x: Double, animated: Boolean): Unit = js.native
-  def scrollTo(y: typings.reactNativeWindows.anon.Animated, x: Unit, animated: Boolean): Unit = js.native
+  def scrollTo(y: AnimatedX): Unit = js.native
+  def scrollTo(y: AnimatedX, x: Double): Unit = js.native
+  def scrollTo(y: AnimatedX, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: AnimatedX, x: Unit, animated: Boolean): Unit = js.native
   
   /**
     * A helper function that scrolls to the end of the scrollview;

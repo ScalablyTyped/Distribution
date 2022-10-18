@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RawTexture3D")
 @js.native
 open class RawTexture3D protected ()
-  extends typings.babylonjs.legacyMod.RawTexture3D {
+  extends typings.babylonjs.legacyLegacyMod.RawTexture3D {
   /**
     * Create a new RawTexture3D
     * @param data defines the data of the texture

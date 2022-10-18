@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that the specified type is exclusive to this type. */
-@JSGlobal("Windows.Foundation.Metadata.ExclusiveToAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.ExclusiveToAttribute")
 @js.native
-abstract class ExclusiveToAttribute ()
+open class ExclusiveToAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.ExclusiveToAttribute

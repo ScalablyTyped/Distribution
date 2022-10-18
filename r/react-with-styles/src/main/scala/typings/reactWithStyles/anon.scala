@@ -1,10 +1,9 @@
 package typings.reactWithStyles
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.aphrodite.cssPropertiesMod.CSSProperties
-import typings.aphrodite.cssPropertiesMod.CSSWideKeyword
-import typings.aphrodite.fontFamilyMod.FontFamily
-import typings.react.mod.ReactNode
+import typings.aphrodite.typingsCssPropertiesMod.CSSProperties
+import typings.aphrodite.typingsCssPropertiesMod.CSSWideKeyword
+import typings.aphrodite.typingsFontFamilyMod.FontFamily
 import typings.reactWithStyles.mod.Styles
 import typings.reactWithStyles.reactWithStylesInts.`100`
 import typings.reactWithStyles.reactWithStylesInts.`200`
@@ -267,7 +266,7 @@ object anon {
     extends StObject
        with /* propertyName */ /* pseudoSelectorOrMediaQuery */ StringDictionary[
           js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 261 */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 261, starting with typings.reactWithStyles.reactWithStylesInts.`100`, typings.reactWithStyles.reactWithStylesInts.`200`, typings.reactWithStyles.reactWithStylesInts.`300` */ Any
           ]
         ] {
     
@@ -3324,25 +3323,6 @@ object anon {
       inline def setZoom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
       inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
-    }
-  }
-  
-  trait Children extends StObject {
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
-  }
-  object Children {
-    
-    inline def apply(): Children = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Children]
-    }
-    
-    extension [Self <: Children](x: Self) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   

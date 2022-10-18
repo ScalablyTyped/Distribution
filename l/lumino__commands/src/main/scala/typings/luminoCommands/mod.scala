@@ -12,8 +12,8 @@ import typings.luminoCommands.mod.CommandRegistry.ICommandOptions
 import typings.luminoCommands.mod.CommandRegistry.IKeyBinding
 import typings.luminoCommands.mod.CommandRegistry.IKeyBindingChangedArgs
 import typings.luminoCommands.mod.CommandRegistry.IKeyBindingOptions
-import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
-import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONObject
+import typings.luminoCoreutils.typesJsonMod.ReadonlyJSONObject
+import typings.luminoCoreutils.typesJsonMod.ReadonlyPartialJSONObject
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import typings.luminoVirtualdom.mod.VirtualElement.IRenderer

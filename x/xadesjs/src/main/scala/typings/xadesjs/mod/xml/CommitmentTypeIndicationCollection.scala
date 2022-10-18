@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.CommitmentTypeIndicationCollection")
 @js.native
 open class CommitmentTypeIndicationCollection ()
-  extends typings.xadesjs.typesXmlMod.CommitmentTypeIndicationCollection {
+  extends typings.xadesjs.buildTypesXmlMod.CommitmentTypeIndicationCollection {
   def this(properties: js.Object) = this()
 }

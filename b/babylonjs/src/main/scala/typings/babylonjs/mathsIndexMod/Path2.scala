@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Maths/index", "Path2")
 @js.native
 open class Path2 protected ()
-  extends typings.babylonjs.mathMod.Path2 {
+  extends typings.babylonjs.mathsMathMod.Path2 {
   /**
     * Creates a Path2 object from the starting 2D coordinates x and y.
     * @param x the starting points x value
@@ -28,5 +28,5 @@ object Path2 {
     * @param y starting y value
     * @returns a new Path2 starting at the coordinates (x, y).
     */
-  inline def StartingAt(x: Double, y: Double): typings.babylonjs.mathPathMod.Path2 = (^.asInstanceOf[js.Dynamic].applyDynamic("StartingAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Path2]
+  inline def StartingAt(x: Double, y: Double): typings.babylonjs.mathsMathDotpathMod.Path2 = (^.asInstanceOf[js.Dynamic].applyDynamic("StartingAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotpathMod.Path2]
 }

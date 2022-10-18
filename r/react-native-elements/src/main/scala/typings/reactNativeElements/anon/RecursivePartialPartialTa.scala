@@ -2,10 +2,10 @@ package typings.reactNativeElements.anon
 
 import typings.reactNative.mod.Animated.SpringAnimationConfig
 import typings.reactNative.mod.Animated.TimingAnimationConfig
+import typings.reactNativeElements.distConfigThemeProviderMod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.spring
 import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.toValue
-import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,12 +1,12 @@
 package typings.playable.anon
 
-import typings.playable.configMod.IPlayerConfig
-import typings.playable.eventEmitterTypesMod.IEventEmitter
-import typings.playable.loaderTypesMod.ILoader
-import typings.playable.mainUiBlockTypesMod.IMainUIBlock
-import typings.playable.playbackEngineTypesMod.IPlaybackEngine
-import typings.playable.rootContainerTypesMod.IRootContainer
-import typings.playable.themeTypesMod.IThemeService
+import typings.playable.distSrcCoreConfigMod.IPlayerConfig
+import typings.playable.distSrcModulesEventEmitterTypesMod.IEventEmitter
+import typings.playable.distSrcModulesPlaybackEngineTypesMod.IPlaybackEngine
+import typings.playable.distSrcModulesRootContainerTypesMod.IRootContainer
+import typings.playable.distSrcModulesUiCoreThemeTypesMod.IThemeService
+import typings.playable.distSrcModulesUiLoaderTypesMod.ILoader
+import typings.playable.distSrcModulesUiMainUiBlockTypesMod.IMainUIBlock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,19 +13,19 @@ object utils {
   @JSImport("image-q", "utils.HueStatistics")
   @js.native
   open class HueStatistics protected ()
-    extends typings.imageQ.utilsMod.HueStatistics {
+    extends typings.imageQ.distTypesSrcUtilsMod.HueStatistics {
     def this(numGroups: Double, minCols: Double) = this()
   }
   
   @JSImport("image-q", "utils.Palette")
   @js.native
   open class Palette ()
-    extends typings.imageQ.utilsMod.Palette
+    extends typings.imageQ.distTypesSrcUtilsMod.Palette
   
   @JSImport("image-q", "utils.Point")
   @js.native
   open class Point ()
-    extends typings.imageQ.utilsMod.Point
+    extends typings.imageQ.distTypesSrcUtilsMod.Point
   /* static members */
   object Point {
     
@@ -33,17 +33,17 @@ object utils {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createByQuadruplet(quadruplet: js.Array[Double]): typings.imageQ.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByQuadruplet")(quadruplet.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.pointMod.Point]
+    inline def createByQuadruplet(quadruplet: js.Array[Double]): typings.imageQ.distTypesSrcUtilsPointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByQuadruplet")(quadruplet.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointMod.Point]
     
-    inline def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): typings.imageQ.pointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("createByRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.pointMod.Point]
+    inline def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): typings.imageQ.distTypesSrcUtilsPointMod.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("createByRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointMod.Point]
     
-    inline def createByUint32(uint32: Double): typings.imageQ.pointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByUint32")(uint32.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.pointMod.Point]
+    inline def createByUint32(uint32: Double): typings.imageQ.distTypesSrcUtilsPointMod.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByUint32")(uint32.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointMod.Point]
   }
   
   @JSImport("image-q", "utils.PointContainer")
   @js.native
   open class PointContainer ()
-    extends typings.imageQ.utilsMod.PointContainer
+    extends typings.imageQ.distTypesSrcUtilsMod.PointContainer
   /* static members */
   object PointContainer {
     
@@ -51,25 +51,25 @@ object utils {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromBuffer(buffer: Buffer, width: Double, height: Double): typings.imageQ.pointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
+    inline def fromBuffer(buffer: Buffer, width: Double, height: Double): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
     
-    inline def fromHTMLCanvasElement(canvas: HTMLCanvasElement): typings.imageQ.pointContainerMod.PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLCanvasElement")(canvas.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
+    inline def fromHTMLCanvasElement(canvas: HTMLCanvasElement): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLCanvasElement")(canvas.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
     
-    inline def fromHTMLImageElement(img: HTMLImageElement): typings.imageQ.pointContainerMod.PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLImageElement")(img.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
+    inline def fromHTMLImageElement(img: HTMLImageElement): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTMLImageElement")(img.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
     
-    inline def fromImageData(imageData: ImageData): typings.imageQ.pointContainerMod.PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
+    inline def fromImageData(imageData: ImageData): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImageData")(imageData.asInstanceOf[js.Any]).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
     
-    inline def fromUint32Array(uint32Array: js.typedarray.Uint32Array, width: Double, height: Double): typings.imageQ.pointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint32Array")(uint32Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
+    inline def fromUint32Array(uint32Array: js.typedarray.Uint32Array, width: Double, height: Double): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint32Array")(uint32Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
     
-    inline def fromUint8Array(uint8Array: js.Array[Double], width: Double, height: Double): typings.imageQ.pointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
-    inline def fromUint8Array(uint8Array: js.typedarray.Uint8Array, width: Double, height: Double): typings.imageQ.pointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
-    inline def fromUint8Array(uint8Array: js.typedarray.Uint8ClampedArray, width: Double, height: Double): typings.imageQ.pointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.pointContainerMod.PointContainer]
+    inline def fromUint8Array(uint8Array: js.Array[Double], width: Double, height: Double): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
+    inline def fromUint8Array(uint8Array: js.typedarray.Uint8Array, width: Double, height: Double): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
+    inline def fromUint8Array(uint8Array: js.typedarray.Uint8ClampedArray, width: Double, height: Double): typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(uint8Array.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer]
   }
   
   @JSImport("image-q", "utils.ProgressTracker")
   @js.native
   open class ProgressTracker protected ()
-    extends typings.imageQ.utilsMod.ProgressTracker {
+    extends typings.imageQ.distTypesSrcUtilsMod.ProgressTracker {
     def this(valueRange: Double, progressRange: Double) = this()
   }
   /* static members */

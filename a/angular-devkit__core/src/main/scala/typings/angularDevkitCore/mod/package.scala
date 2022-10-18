@@ -1,14 +1,14 @@
 package typings.angularDevkitCore.mod
 
-import typings.angularDevkitCore.literalsMod.TemplateTag
 import typings.angularDevkitCore.mod.^
-import typings.angularDevkitCore.pathMod.PathFragment
-import typings.angularDevkitCore.pathMod.Path_
-import typings.angularDevkitCore.pathMod.PosixPath
-import typings.angularDevkitCore.pathMod.WindowsPath
-import typings.angularDevkitCore.templateMod.TemplateAst
-import typings.angularDevkitCore.templateMod.TemplateOptions
-import typings.angularDevkitCore.utilsMod.JsonValue
+import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
+import typings.angularDevkitCore.srcUtilsLiteralsMod.TemplateTag
+import typings.angularDevkitCore.srcUtilsTemplateMod.TemplateAst
+import typings.angularDevkitCore.srcUtilsTemplateMod.TemplateOptions
+import typings.angularDevkitCore.srcVirtualFsPathMod.PathFragment
+import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
+import typings.angularDevkitCore.srcVirtualFsPathMod.PosixPath
+import typings.angularDevkitCore.srcVirtualFsPathMod.WindowsPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

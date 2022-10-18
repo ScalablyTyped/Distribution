@@ -1,9 +1,9 @@
 package typings.reactAliceCarousel.anon
 
-import typings.reactAliceCarousel.typesMod.AnimationType
-import typings.reactAliceCarousel.typesMod.AutoPlayStrategy
-import typings.reactAliceCarousel.typesMod.AutoplayDirection
-import typings.reactAliceCarousel.typesMod.ControlsStrategy
+import typings.reactAliceCarousel.libTypesMod.AnimationType
+import typings.reactAliceCarousel.libTypesMod.AutoPlayStrategy
+import typings.reactAliceCarousel.libTypesMod.AutoplayDirection
+import typings.reactAliceCarousel.libTypesMod.ControlsStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

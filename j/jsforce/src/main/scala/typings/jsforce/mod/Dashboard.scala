@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "Dashboard")
 @js.native
 open class Dashboard ()
-  extends typings.jsforce.analyticsMod.Dashboard
+  extends typings.jsforce.apiAnalyticsMod.Dashboard

@@ -35,6 +35,12 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.reactColorful.distTypesMod.HslColor
+import typings.reactColorful.distTypesMod.HslaColor
+import typings.reactColorful.distTypesMod.HsvColor
+import typings.reactColorful.distTypesMod.HsvaColor
+import typings.reactColorful.distTypesMod.RgbColor
+import typings.reactColorful.distTypesMod.RgbaColor
 import typings.reactColorful.reactColorfulStrings.`additions removals`
 import typings.reactColorful.reactColorfulStrings.`additions text`
 import typings.reactColorful.reactColorfulStrings.`inline`
@@ -85,12 +91,6 @@ import typings.reactColorful.reactColorfulStrings.tree
 import typings.reactColorful.reactColorfulStrings.url
 import typings.reactColorful.reactColorfulStrings.vertical
 import typings.reactColorful.reactColorfulStrings.yes
-import typings.reactColorful.typesMod.HslColor
-import typings.reactColorful.typesMod.HslaColor
-import typings.reactColorful.typesMod.HsvColor
-import typings.reactColorful.typesMod.HsvaColor
-import typings.reactColorful.typesMod.RgbColor
-import typings.reactColorful.typesMod.RgbaColor
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement

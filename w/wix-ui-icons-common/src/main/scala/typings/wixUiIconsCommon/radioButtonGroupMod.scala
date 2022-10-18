@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsRadioButtonGroupMod.RadioButtonGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioButtonGroupMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/RadioButtonGroup", JSImport.Default)
+  @JSImport("wix-ui-icons-common/RadioButtonGroup", JSImport.Default)
   @js.native
   val default: FC[RadioButtonGroupProps] = js.native
-  
-  trait RadioButtonGroupProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object RadioButtonGroupProps {
-    
-    inline def apply(): RadioButtonGroupProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RadioButtonGroupProps]
-    }
-    
-    extension [Self <: RadioButtonGroupProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[RadioButtonGroupProps]
   

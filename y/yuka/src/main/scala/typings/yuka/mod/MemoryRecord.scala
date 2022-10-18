@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [entity=null] - The game entity that is represented by this memory record.
   */
 open class MemoryRecord ()
-  extends typings.yuka.yukaMod.MemoryRecord {
-  def this(entity: typings.yuka.gameEntityMod.GameEntity) = this()
+  extends typings.yuka.srcYukaMod.MemoryRecord {
+  def this(entity: typings.yuka.srcCoreGameEntityMod.GameEntity) = this()
 }

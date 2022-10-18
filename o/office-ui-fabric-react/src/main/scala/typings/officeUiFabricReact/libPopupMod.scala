@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.popupTypesMod.IPopupProps
+import typings.officeUiFabricReact.libComponentsPopupPopupDottypesMod.IPopupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object libPopupMod {
   @JSImport("office-ui-fabric-react/lib/Popup", "Popup")
   @js.native
   open class Popup protected ()
-    extends typings.officeUiFabricReact.popupMod.Popup {
+    extends typings.officeUiFabricReact.libComponentsPopupMod.Popup {
     def this(props: IPopupProps) = this()
   }
   /* static members */

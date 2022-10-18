@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsTrophyFilledMod.TrophyFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trophyFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/TrophyFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/TrophyFilled", JSImport.Default)
   @js.native
   val default: TrophyFilledIconType = js.native
-  
-  @js.native
-  trait TrophyFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_TrophyFilledIconType: String = js.native
-  }
   
   type _To = TrophyFilledIconType
   

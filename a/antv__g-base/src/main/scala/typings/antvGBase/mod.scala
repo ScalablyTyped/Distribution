@@ -1,12 +1,12 @@
 package typings.antvGBase
 
-import typings.antvGBase.canvasMod.default
-import typings.antvGBase.interfacesMod.IBase
-import typings.antvGBase.registerMod.EaseFn
-import typings.antvGBase.typesMod.CanvasCfg
-import typings.antvGBase.typesMod.PathCommand
-import typings.antvGBase.typesMod.ShapeAttrs
-import typings.antvGBase.typesMod.ShapeCfg
+import typings.antvGBase.libAbstractCanvasMod.default
+import typings.antvGBase.libAnimateRegisterMod.EaseFn
+import typings.antvGBase.libInterfacesMod.IBase
+import typings.antvGBase.libTypesMod.CanvasCfg
+import typings.antvGBase.libTypesMod.PathCommand
+import typings.antvGBase.libTypesMod.ShapeAttrs
+import typings.antvGBase.libTypesMod.ShapeCfg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,35 +17,35 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@antv/g-base", "AbstractCanvas")
+  /* note: abstract class */ @JSImport("@antv/g-base", "AbstractCanvas")
   @js.native
-  abstract class AbstractCanvas protected () extends default {
+  open class AbstractCanvas protected () extends default {
     def this(cfg: CanvasCfg) = this()
   }
   
-  @JSImport("@antv/g-base", "AbstractGroup")
+  /* note: abstract class */ @JSImport("@antv/g-base", "AbstractGroup")
   @js.native
-  abstract class AbstractGroup ()
-    extends typings.antvGBase.groupMod.default
+  open class AbstractGroup ()
+    extends typings.antvGBase.libAbstractGroupMod.default
   
-  @JSImport("@antv/g-base", "AbstractShape")
+  /* note: abstract class */ @JSImport("@antv/g-base", "AbstractShape")
   @js.native
-  abstract class AbstractShape protected ()
-    extends typings.antvGBase.shapeMod.default {
+  open class AbstractShape protected ()
+    extends typings.antvGBase.libAbstractShapeMod.default {
     def this(cfg: ShapeCfg) = this()
   }
   
-  @JSImport("@antv/g-base", "Base")
+  /* note: abstract class */ @JSImport("@antv/g-base", "Base")
   @js.native
-  abstract class Base protected ()
-    extends typings.antvGBase.baseMod.default {
+  open class Base protected ()
+    extends typings.antvGBase.libAbstractBaseMod.default {
     def this(cfg: Any) = this()
   }
   
   @JSImport("@antv/g-base", "Event")
   @js.native
   open class Event protected ()
-    extends typings.antvGBase.graphEventMod.default {
+    extends typings.antvGBase.libEventGraphEventMod.default {
     def this(`type`: Any, event: Any) = this()
   }
   

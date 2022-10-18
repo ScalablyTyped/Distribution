@@ -1,7 +1,7 @@
 package typings.luminoPolling
 
 import typings.luminoPolling.mod.IPoll._Phase
-import typings.luminoPolling.pollMod.Poll.Standby
+import typings.luminoPolling.typesPollMod.Poll.Standby
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

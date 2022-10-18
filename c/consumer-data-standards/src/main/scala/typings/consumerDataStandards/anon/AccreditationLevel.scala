@@ -25,7 +25,7 @@ trait AccreditationLevel
     */
   var accreditationNumber: String
   
-  var dataRecipientBrands: js.UndefOr[js.Array[DataRecipientBrandId] | Null] = js.undefined
+  var dataRecipientBrands: js.UndefOr[js.Array[BrandName] | Null] = js.undefined
   
   /**
     * The date/time that the Legal Entity was last updated in the CDR Register
@@ -73,13 +73,13 @@ object AccreditationLevel {
     
     inline def setAccreditationNumber(value: String): Self = StObject.set(x, "accreditationNumber", value.asInstanceOf[js.Any])
     
-    inline def setDataRecipientBrands(value: js.Array[DataRecipientBrandId]): Self = StObject.set(x, "dataRecipientBrands", value.asInstanceOf[js.Any])
+    inline def setDataRecipientBrands(value: js.Array[BrandName]): Self = StObject.set(x, "dataRecipientBrands", value.asInstanceOf[js.Any])
     
     inline def setDataRecipientBrandsNull: Self = StObject.set(x, "dataRecipientBrands", null)
     
     inline def setDataRecipientBrandsUndefined: Self = StObject.set(x, "dataRecipientBrands", js.undefined)
     
-    inline def setDataRecipientBrandsVarargs(value: DataRecipientBrandId*): Self = StObject.set(x, "dataRecipientBrands", js.Array(value*))
+    inline def setDataRecipientBrandsVarargs(value: BrandName*): Self = StObject.set(x, "dataRecipientBrands", js.Array(value*))
     
     inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     

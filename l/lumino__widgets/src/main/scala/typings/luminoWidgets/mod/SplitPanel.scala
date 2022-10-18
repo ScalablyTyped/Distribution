@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.splitpanelMod.SplitPanel.IOptions
+import typings.luminoWidgets.typesSplitpanelMod.SplitPanel.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - The options for initializing the split panel.
   */
 open class SplitPanel ()
-  extends typings.luminoWidgets.splitpanelMod.SplitPanel {
+  extends typings.luminoWidgets.typesSplitpanelMod.SplitPanel {
   def this(options: IOptions) = this()
 }
 object SplitPanel {
@@ -28,14 +28,14 @@ object SplitPanel {
   @JSImport("@lumino/widgets", "SplitPanel.Renderer")
   @js.native
   open class Renderer ()
-    extends typings.luminoWidgets.splitpanelMod.SplitPanel.Renderer
+    extends typings.luminoWidgets.typesSplitpanelMod.SplitPanel.Renderer
   
   /**
     * The default `Renderer` instance.
     */
   @JSImport("@lumino/widgets", "SplitPanel.defaultRenderer")
   @js.native
-  val defaultRenderer: typings.luminoWidgets.splitpanelMod.SplitPanel.Renderer = js.native
+  val defaultRenderer: typings.luminoWidgets.typesSplitpanelMod.SplitPanel.Renderer = js.native
   
   /**
     * Get the split panel stretch factor for the given widget.
@@ -44,7 +44,7 @@ object SplitPanel {
     *
     * @returns The split panel stretch factor for the widget.
     */
-  inline def getStretch(widget: typings.luminoWidgets.widgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStretch(widget: typings.luminoWidgets.typesWidgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Set the split panel stretch factor for the given widget.
@@ -53,5 +53,5 @@ object SplitPanel {
     *
     * @param value - The value for the stretch factor.
     */
-  inline def setStretch(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStretch(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
-import typings.rmcCalendar.calendarPropsMod.SelectDateType
-import typings.rmcCalendar.dataTypesMod.Models.ExtraData
-import typings.rmcCalendar.dataTypesMod.Models.Locale
-import typings.rmcCalendar.headerMod.PropsType
-import typings.rmcCalendar.headerMod.default
+import typings.rmcCalendar.libCalendarHeaderMod.PropsType
+import typings.rmcCalendar.libCalendarHeaderMod.default
+import typings.rmcCalendar.libCalendarPropsMod.SelectDateType
+import typings.rmcCalendar.libDateDataTypesMod.Models.ExtraData
+import typings.rmcCalendar.libDateDataTypesMod.Models.Locale
 import typings.rmcCalendar.rmcCalendarStrings.horizontal
 import typings.rmcCalendar.rmcCalendarStrings.normal
 import typings.rmcCalendar.rmcCalendarStrings.one

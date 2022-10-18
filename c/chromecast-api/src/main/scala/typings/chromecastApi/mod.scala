@@ -12,5 +12,5 @@ object mod {
   @JSImport("chromecast-api", JSImport.Namespace)
   @js.native
   open class ^ ()
-    extends typings.chromecastApi.clientMod.^
+    extends typings.chromecastApi.libClientMod.^
 }

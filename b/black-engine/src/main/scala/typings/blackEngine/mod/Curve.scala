@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Curve")
 @js.native
 open class Curve ()
-  extends typings.blackEngine.curveMod.Curve
+  extends typings.blackEngine.geomCurveMod.Curve
 /* static members */
 object Curve {
   
@@ -17,7 +17,7 @@ object Curve {
   
   @JSImport("black-engine", "Curve.__cache")
   @js.native
-  val cache: typings.blackEngine.curveMod.Curve = js.native
+  val cache: typings.blackEngine.geomCurveMod.Curve = js.native
   
   inline def getLength(points: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(points.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Double]
   
@@ -31,7 +31,7 @@ object Curve {
     cpEndY: Double,
     endX: Double,
     endY: Double
-  ): typings.blackEngine.vectorMod.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(t.asInstanceOf[js.Any], startX.asInstanceOf[js.Any], startY.asInstanceOf[js.Any], cpStartX.asInstanceOf[js.Any], cpStartY.asInstanceOf[js.Any], cpEndX.asInstanceOf[js.Any], cpEndY.asInstanceOf[js.Any], endX.asInstanceOf[js.Any], endY.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.vectorMod.Vector]
+  ): typings.blackEngine.geomVectorMod.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(t.asInstanceOf[js.Any], startX.asInstanceOf[js.Any], startY.asInstanceOf[js.Any], cpStartX.asInstanceOf[js.Any], cpStartY.asInstanceOf[js.Any], cpEndX.asInstanceOf[js.Any], cpEndY.asInstanceOf[js.Any], endX.asInstanceOf[js.Any], endY.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.geomVectorMod.Vector]
   inline def lerp(
     t: Double,
     startX: Double,
@@ -42,6 +42,6 @@ object Curve {
     cpEndY: Double,
     endX: Double,
     endY: Double,
-    outVector: typings.blackEngine.vectorMod.Vector
-  ): typings.blackEngine.vectorMod.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(t.asInstanceOf[js.Any], startX.asInstanceOf[js.Any], startY.asInstanceOf[js.Any], cpStartX.asInstanceOf[js.Any], cpStartY.asInstanceOf[js.Any], cpEndX.asInstanceOf[js.Any], cpEndY.asInstanceOf[js.Any], endX.asInstanceOf[js.Any], endY.asInstanceOf[js.Any], outVector.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.vectorMod.Vector]
+    outVector: typings.blackEngine.geomVectorMod.Vector
+  ): typings.blackEngine.geomVectorMod.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(t.asInstanceOf[js.Any], startX.asInstanceOf[js.Any], startY.asInstanceOf[js.Any], cpStartX.asInstanceOf[js.Any], cpStartY.asInstanceOf[js.Any], cpEndX.asInstanceOf[js.Any], cpEndY.asInstanceOf[js.Any], endX.asInstanceOf[js.Any], endY.asInstanceOf[js.Any], outVector.asInstanceOf[js.Any])).asInstanceOf[typings.blackEngine.geomVectorMod.Vector]
 }

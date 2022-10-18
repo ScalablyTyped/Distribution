@@ -1,8 +1,7 @@
 package typings.jupyterlabTranslation
 
-import typings.jupyterlabServices.serverconnectionMod.ServerConnection.ISettings
-import typings.jupyterlabTranslation.baseMod.NullTranslator_
-import typings.jupyterlabTranslation.gettextMod.IOptions
+import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
+import typings.jupyterlabTranslation.libBaseMod.NullTranslator_
 import typings.luminoCoreutils.mod.Token
 import typings.std.RequestInit
 import org.scalablytyped.runtime.StObject
@@ -15,48 +14,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Gettext class providing localization methods.
-    */
-  @JSImport("@jupyterlab/translation", "Gettext")
-  @js.native
-  open class Gettext ()
-    extends typings.jupyterlabTranslation.gettextMod.Gettext {
-    def this(options: IOptions) = this()
-  }
-  object Gettext {
-    
-    @JSImport("@jupyterlab/translation", "Gettext")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * `sprintf` equivalent, takes a string and some arguments to make a
-      * computed string.
-      *
-      * @param fmt - The string to interpolate.
-      * @param args - The variables to use in interpolation.
-      *
-      * ### Examples
-      * strfmt("%1 dogs are in %2", 7, "the kitchen"); => "7 dogs are in the kitchen"
-      * strfmt("I like %1, bananas and %1", "apples"); => "I like apples, bananas and apples"
-      */
-    /* static member */
-    inline def strfmt(fmt: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strfmt")(scala.List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
-  }
-  
   @JSImport("@jupyterlab/translation", "ITranslator")
   @js.native
-  val ITranslator: Token[typings.jupyterlabTranslation.tokensMod.ITranslator] = js.native
+  val ITranslator: Token[typings.jupyterlabTranslation.libTokensMod.ITranslator] = js.native
   
   @JSImport("@jupyterlab/translation", "ITranslatorConnector")
   @js.native
-  val ITranslatorConnector: Token[typings.jupyterlabTranslation.tokensMod.ITranslatorConnector] = js.native
+  val ITranslatorConnector: Token[typings.jupyterlabTranslation.libTokensMod.ITranslatorConnector] = js.native
   
   @JSImport("@jupyterlab/translation", "TranslationManager")
   @js.native
   open class TranslationManager ()
-    extends typings.jupyterlabTranslation.managerMod.TranslationManager {
+    extends typings.jupyterlabTranslation.libManagerMod.TranslationManager {
     def this(translationsUrl: String) = this()
     def this(translationsUrl: String, stringsPrefix: String) = this()
     def this(translationsUrl: Unit, stringsPrefix: String) = this()
@@ -69,7 +38,7 @@ object mod {
   @JSImport("@jupyterlab/translation", "TranslatorConnector")
   @js.native
   open class TranslatorConnector ()
-    extends typings.jupyterlabTranslation.tokensMod.TranslatorConnector {
+    extends typings.jupyterlabTranslation.libTokensMod.TranslatorConnector {
     def this(translationsUrl: String) = this()
     def this(translationsUrl: String, serverSettings: ISettings) = this()
     def this(translationsUrl: Unit, serverSettings: ISettings) = this()

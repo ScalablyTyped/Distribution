@@ -1,8 +1,8 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashtypeDefinition
-import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionParams
-import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDottypeDefinitionMod.TypeDefinitionParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDottypeDefinitionMod.TypeDefinitionRegistrationOptions
 import typings.vscodeLanguageserverTypes.mod.Definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object TypeDefinitionRequest {
   
   @JSImport("vscode-languageserver", "TypeDefinitionRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "TypeDefinitionRequest.method")
   @js.native
@@ -20,7 +20,7 @@ object TypeDefinitionRequest {
   
   @JSImport("vscode-languageserver", "TypeDefinitionRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     TypeDefinitionParams, 
     Definition | js.Array[typings.vscodeLanguageserverTypes.mod.LocationLink] | Null, 
     js.Array[

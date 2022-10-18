@@ -29,8 +29,6 @@ trait AlignVerticalBackUVs extends StObject {
   
   var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var updatable: js.UndefOr[Boolean] = js.undefined
-  
   var width: js.UndefOr[Double] = js.undefined
 }
 object AlignVerticalBackUVs {
@@ -85,10 +83,6 @@ object AlignVerticalBackUVs {
     inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Hide extends StObject {
   
-  def apply(): Unit = js.native
+  def apply(): scala.Unit = js.native
   
   /**
     * Hide legend for each target.
     * @param targetIds If targetIds is given, specified target's legend will be hidden. If only one target is the candidate, String can be passed. If no argument is given, all of target's
     * legend will be hidden.
     */
-  def hide(): Unit = js.native
-  def hide(targetIds: ArrayOrString): Unit = js.native
+  def hide(): scala.Unit = js.native
+  def hide(targetIds: ArrayOrString): scala.Unit = js.native
   
   /**
     * Show legend for each target.
     * @param targetIds If targetIds is given, specified target's legend will be shown. If only one target is the candidate, String can be passed. If no argument is given, all of target's
     * legend will be shown.
     */
-  def show(): Unit = js.native
-  def show(targetIds: ArrayOrString): Unit = js.native
+  def show(): scala.Unit = js.native
+  def show(targetIds: ArrayOrString): scala.Unit = js.native
 }

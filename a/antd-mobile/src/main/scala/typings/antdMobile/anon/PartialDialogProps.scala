@@ -40,8 +40,8 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.renderToContainerMod.GetContainer
-import typings.antdMobile.withStopPropagationMod.PropagationEvent
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -57,7 +57,7 @@ trait PartialDialogProps extends StObject {
   
   var actions: js.UndefOr[
     js.Array[
-      typings.antdMobile.dialogActionButtonMod.Action | js.Array[typings.antdMobile.dialogActionButtonMod.Action]
+      typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action | js.Array[typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action]
     ]
   ] = js.undefined
   
@@ -193,7 +193,7 @@ trait PartialDialogProps extends StObject {
   
   var onAction: js.UndefOr[
     js.Function2[
-      /* action */ typings.antdMobile.dialogActionButtonMod.Action, 
+      /* action */ typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action, 
       /* index */ Double, 
       Unit | js.Promise[Unit]
     ]
@@ -222,14 +222,14 @@ object PartialDialogProps {
     
     inline def setActions(
       value: js.Array[
-          typings.antdMobile.dialogActionButtonMod.Action | js.Array[typings.antdMobile.dialogActionButtonMod.Action]
+          typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action | js.Array[typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action]
         ]
     ): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     inline def setActionsVarargs(
-      value: (typings.antdMobile.dialogActionButtonMod.Action | js.Array[typings.antdMobile.dialogActionButtonMod.Action])*
+      value: (typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action | js.Array[typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action])*
     ): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
@@ -495,7 +495,7 @@ object PartialDialogProps {
     inline def setMaskStyleUndefined: Self = StObject.set(x, "maskStyle", js.undefined)
     
     inline def setOnAction(
-      value: (/* action */ typings.antdMobile.dialogActionButtonMod.Action, /* index */ Double) => Unit | js.Promise[Unit]
+      value: (/* action */ typings.antdMobile.esComponentsDialogDialogActionButtonMod.Action, /* index */ Double) => Unit | js.Promise[Unit]
     ): Self = StObject.set(x, "onAction", js.Any.fromFunction2(value))
     
     inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)

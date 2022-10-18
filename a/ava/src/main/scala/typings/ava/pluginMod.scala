@@ -3,7 +3,7 @@ package typings.ava
 import typings.ava.avaStrings.`ava-4`
 import typings.ava.pluginMod.SharedWorker.Plugin.Protocol
 import typings.ava.pluginMod.SharedWorker.Plugin.RegistrationOptions
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonurlMod.URL
 import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

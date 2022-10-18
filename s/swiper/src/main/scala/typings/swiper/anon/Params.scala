@@ -1,6 +1,6 @@
 package typings.swiper.anon
 
-import typings.swiper.getParamsMod.KeyValueType
+import typings.swiper.angularAngularSrcUtilsGetParamsMod.KeyValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

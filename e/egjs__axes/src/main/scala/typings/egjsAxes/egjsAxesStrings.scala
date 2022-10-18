@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object egjsAxesStrings {
   
   @js.native
-  sealed trait AxesMethods extends StObject
-  inline def AxesMethods: AxesMethods = "AxesMethods".asInstanceOf[AxesMethods]
-  
-  @js.native
   sealed trait animationEnd extends StObject
   inline def animationEnd: animationEnd = "animationEnd".asInstanceOf[animationEnd]
   

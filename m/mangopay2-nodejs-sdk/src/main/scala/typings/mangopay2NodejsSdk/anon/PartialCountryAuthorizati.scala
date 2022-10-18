@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.countryAuthorizationMod.countryAuthorization.AuthorizationData
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsModelsCountryAuthorizationMod.countryAuthorization.AuthorizationData
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

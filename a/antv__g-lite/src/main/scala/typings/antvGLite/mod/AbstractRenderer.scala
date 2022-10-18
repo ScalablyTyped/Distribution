@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "AbstractRenderer")
 @js.native
 open class AbstractRenderer ()
-  extends typings.antvGLite.abstractRendererMod.AbstractRenderer {
+  extends typings.antvGLite.distAbstractRendererMod.AbstractRenderer {
   def this(config: PartialRendererConfig) = this()
 }

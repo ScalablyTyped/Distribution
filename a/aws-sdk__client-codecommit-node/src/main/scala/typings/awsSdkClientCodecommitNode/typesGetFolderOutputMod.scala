@@ -1,11 +1,11 @@
 package typings.awsSdkClientCodecommitNode
 
-import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientCodecommitNode.typesFileMod.UnmarshalledFile
 import typings.awsSdkClientCodecommitNode.typesFolderMod.UnmarshalledFolder
+import typings.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientCodecommitNode.typesSubModuleMod.UnmarshalledSubModule
 import typings.awsSdkClientCodecommitNode.typesSymbolicLinkMod.UnmarshalledSymbolicLink
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

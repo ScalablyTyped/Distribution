@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebGLHardwareTexture")
 @js.native
 open class WebGLHardwareTexture protected ()
-  extends typings.babylonjs.legacyMod.WebGLHardwareTexture {
+  extends typings.babylonjs.legacyLegacyMod.WebGLHardwareTexture {
   def this(existingTexture: Unit, context: WebGLRenderingContext) = this()
   def this(existingTexture: Nullable[WebGLTexture], context: WebGLRenderingContext) = this()
 }

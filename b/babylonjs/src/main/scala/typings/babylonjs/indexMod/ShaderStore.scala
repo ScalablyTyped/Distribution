@@ -21,7 +21,7 @@ object ShaderStore {
     * @returns the include shaders store
     */
   inline def GetIncludesShadersStore(): org.scalablytyped.runtime.StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetIncludesShadersStore")().asInstanceOf[org.scalablytyped.runtime.StringDictionary[String]]
-  inline def GetIncludesShadersStore(shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage): org.scalablytyped.runtime.StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetIncludesShadersStore")(shaderLanguage.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[String]]
+  inline def GetIncludesShadersStore(shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage): org.scalablytyped.runtime.StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetIncludesShadersStore")(shaderLanguage.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[String]]
   
   /**
     * Gets the shaders repository path for a given shader language
@@ -29,7 +29,7 @@ object ShaderStore {
     * @returns the path to the shaders repository
     */
   inline def GetShadersRepository(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetShadersRepository")().asInstanceOf[String]
-  inline def GetShadersRepository(shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetShadersRepository")(shaderLanguage.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def GetShadersRepository(shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetShadersRepository")(shaderLanguage.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Gets the shaders store of a given shader language
@@ -37,7 +37,7 @@ object ShaderStore {
     * @returns the shaders store
     */
   inline def GetShadersStore(): org.scalablytyped.runtime.StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetShadersStore")().asInstanceOf[org.scalablytyped.runtime.StringDictionary[String]]
-  inline def GetShadersStore(shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage): org.scalablytyped.runtime.StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetShadersStore")(shaderLanguage.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[String]]
+  inline def GetShadersStore(shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage): org.scalablytyped.runtime.StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetShadersStore")(shaderLanguage.asInstanceOf[js.Any]).asInstanceOf[org.scalablytyped.runtime.StringDictionary[String]]
   
   /**
     * Store of each included file for a shader (The can be looked up using effect.key)

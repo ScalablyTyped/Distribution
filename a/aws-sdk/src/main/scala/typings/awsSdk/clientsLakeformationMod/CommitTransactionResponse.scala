@@ -1,0 +1,27 @@
+package typings.awsSdk.clientsLakeformationMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait CommitTransactionResponse extends StObject {
+  
+  /**
+    * The status of the transaction.
+    */
+  var TransactionStatus: js.UndefOr[typings.awsSdk.clientsLakeformationMod.TransactionStatus] = js.undefined
+}
+object CommitTransactionResponse {
+  
+  inline def apply(): CommitTransactionResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[CommitTransactionResponse]
+  }
+  
+  extension [Self <: CommitTransactionResponse](x: Self) {
+    
+    inline def setTransactionStatus(value: TransactionStatus): Self = StObject.set(x, "TransactionStatus", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionStatusUndefined: Self = StObject.set(x, "TransactionStatus", js.undefined)
+  }
+}

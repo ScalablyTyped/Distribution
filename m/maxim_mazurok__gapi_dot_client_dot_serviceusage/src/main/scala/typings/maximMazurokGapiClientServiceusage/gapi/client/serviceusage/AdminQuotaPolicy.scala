@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +16,7 @@ trait AdminQuotaPolicy extends StObject {
     * `region` or `zone` are not valid.
     */
   var dimensions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The name of the metric to which this policy applies. An example name would be: `compute.googleapis.com/cpus` */
@@ -54,9 +51,7 @@ object AdminQuotaPolicy {
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setDimensions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.AdminQuotaPolicy & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)

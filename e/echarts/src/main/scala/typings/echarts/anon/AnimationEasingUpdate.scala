@@ -134,7 +134,7 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data
     */
-  var data: js.UndefOr[SymbolOffset] = js.undefined
+  var data: js.UndefOr[SymbolKeepAspect] = js.undefined
   
   /**
     * Mark point style.
@@ -142,7 +142,7 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
+  var itemStyle: js.UndefOr[BorderWidth] = js.undefined
   
   /**
     * Label of mark point.
@@ -150,7 +150,7 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.label
     */
-  var label: js.UndefOr[BorderWidth] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.undefined
   
   /**
     * Whether to ignore mouse events.
@@ -315,15 +315,15 @@ object AnimationEasingUpdate {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setData(value: SymbolOffset): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SymbolKeepAspect): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: BorderWidth): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

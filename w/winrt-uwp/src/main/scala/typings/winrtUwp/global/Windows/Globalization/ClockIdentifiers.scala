@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the clock identifiers for the supported clocks, as static properties. */
-@JSGlobal("Windows.Globalization.ClockIdentifiers")
+/* note: abstract class */ @JSGlobal("Windows.Globalization.ClockIdentifiers")
 @js.native
-abstract class ClockIdentifiers ()
+open class ClockIdentifiers ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.ClockIdentifiers
 object ClockIdentifiers {

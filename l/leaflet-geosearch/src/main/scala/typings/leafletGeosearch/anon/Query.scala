@@ -1,7 +1,7 @@
 package typings.leafletGeosearch.anon
 
-import typings.leafletGeosearch.providerMod.SearchResult
-import typings.leafletGeosearch.searchControlMod.Selection
+import typings.leafletGeosearch.distProvidersProviderMod.SearchResult
+import typings.leafletGeosearch.distSearchControlMod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

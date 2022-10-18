@@ -92,7 +92,7 @@ object transitionGroupMod {
     }
   }
   
-  trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */]
+  trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.reactTransitionGroup.reactTransitionGroupStrings.a, typings.reactTransitionGroup.reactTransitionGroupStrings.abbr, typings.reactTransitionGroup.reactTransitionGroupStrings.address */ Any */]
     extends StObject
        with TransitionActions {
     
@@ -100,12 +100,12 @@ object transitionGroupMod {
   }
   object IntrinsicTransitionGroupProps {
     
-    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](): IntrinsicTransitionGroupProps[T] = {
+    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.reactTransitionGroup.reactTransitionGroupStrings.a, typings.reactTransitionGroup.reactTransitionGroupStrings.abbr, typings.reactTransitionGroup.reactTransitionGroupStrings.address */ Any */](): IntrinsicTransitionGroupProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntrinsicTransitionGroupProps[T]]
     }
     
-    extension [Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */](x: Self & IntrinsicTransitionGroupProps[T]) {
+    extension [Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.reactTransitionGroup.reactTransitionGroupStrings.a, typings.reactTransitionGroup.reactTransitionGroupStrings.abbr, typings.reactTransitionGroup.reactTransitionGroupStrings.address */ Any */](x: Self & IntrinsicTransitionGroupProps[T]) {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -174,5 +174,5 @@ object transitionGroupMod {
     */
   type TransitionGroup = Component[TransitionGroupProps[div, Any], js.Object, Any]
   
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, V /* <: ElementType[Any] */] = (IntrinsicTransitionGroupProps[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] & Dictprop)
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.reactTransitionGroup.reactTransitionGroupStrings.a, typings.reactTransitionGroup.reactTransitionGroupStrings.abbr, typings.reactTransitionGroup.reactTransitionGroupStrings.address */ Any */, V /* <: ElementType[Any] */] = (IntrinsicTransitionGroupProps[T] & (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] & Dictprop)
 }

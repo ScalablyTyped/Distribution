@@ -2,8 +2,8 @@ package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.Instantiable7
 import typings.babylonjs.indexMod.AxesViewer
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

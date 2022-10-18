@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TextureSampleType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.TextureSampleType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureSampleType & String] = js.native
   
-  /* "depth" */ val Depth: typings.babylonjs.webgpuConstantsMod.TextureSampleType.Depth & String = js.native
+  /* "depth" */ val Depth: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureSampleType.Depth & String = js.native
   
-  /* "float" */ val Float: typings.babylonjs.webgpuConstantsMod.TextureSampleType.Float & String = js.native
+  /* "float" */ val Float: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureSampleType.Float & String = js.native
   
-  /* "sint" */ val Sint: typings.babylonjs.webgpuConstantsMod.TextureSampleType.Sint & String = js.native
+  /* "sint" */ val Sint: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureSampleType.Sint & String = js.native
   
-  /* "uint" */ val Uint: typings.babylonjs.webgpuConstantsMod.TextureSampleType.Uint & String = js.native
+  /* "uint" */ val Uint: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureSampleType.Uint & String = js.native
   
-  /* "unfilterable-float" */ val UnfilterableFloat: typings.babylonjs.webgpuConstantsMod.TextureSampleType.UnfilterableFloat & String = js.native
+  /* "unfilterable-float" */ val UnfilterableFloat: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.TextureSampleType.UnfilterableFloat & String = js.native
 }

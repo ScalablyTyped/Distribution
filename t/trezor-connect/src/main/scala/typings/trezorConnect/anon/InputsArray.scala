@@ -1,8 +1,8 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.protobufMod.PrevInput
-import typings.trezorConnect.protobufMod.TxAckResponse
-import typings.trezorConnect.protobufMod.TxInputType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.PrevInput
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxAckResponse
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

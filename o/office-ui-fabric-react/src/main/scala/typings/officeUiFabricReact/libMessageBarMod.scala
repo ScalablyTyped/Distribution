@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
+import typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.IMessageBarProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libMessageBarMod {
   @JSImport("office-ui-fabric-react/lib/MessageBar", "MessageBarBase")
   @js.native
   open class MessageBarBase protected ()
-    extends typings.officeUiFabricReact.messageBarMod.MessageBarBase {
+    extends typings.officeUiFabricReact.libComponentsMessageBarMod.MessageBarBase {
     def this(props: IMessageBarProps) = this()
   }
   /* static members */
@@ -36,18 +36,20 @@ object libMessageBarMod {
   object MessageBarType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.messageBarTypesMod.MessageBarType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType & Double
+      ] = js.native
     
-    /* 2 */ val blocked: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.blocked & Double = js.native
+    /* 2 */ val blocked: typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.blocked & Double = js.native
     
-    /* 1 */ val error: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.error & Double = js.native
+    /* 1 */ val error: typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.error & Double = js.native
     
-    /* 0 */ val info: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.info & Double = js.native
+    /* 0 */ val info: typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.info & Double = js.native
     
-    /* 3 */ val severeWarning: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.severeWarning & Double = js.native
+    /* 3 */ val severeWarning: typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.severeWarning & Double = js.native
     
-    /* 4 */ val success: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.success & Double = js.native
+    /* 4 */ val success: typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.success & Double = js.native
     
-    /* 5 */ val warning: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.warning & Double = js.native
+    /* 5 */ val warning: typings.officeUiFabricReact.libComponentsMessageBarMessageBarDottypesMod.MessageBarType.warning & Double = js.native
   }
 }

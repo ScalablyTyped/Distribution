@@ -2,12 +2,12 @@ package typings.blackEngine
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.blackEngine.componentMod.Component
-import typings.blackEngine.gameObjectMod.GameObject
-import typings.blackEngine.messageDispatcherMod.MessageDispatcher
-import typings.blackEngine.systemMod.System
-import typings.blackEngine.videoNullDriverMod.VideoNullDriver
-import typings.blackEngine.viewportMod.Viewport
+import typings.blackEngine.coreComponentMod.Component
+import typings.blackEngine.coreGameObjectMod.GameObject
+import typings.blackEngine.coreSystemMod.System
+import typings.blackEngine.coreViewportMod.Viewport
+import typings.blackEngine.driversVideoNullDriverMod.VideoNullDriver
+import typings.blackEngine.messagesMessageDispatcherMod.MessageDispatcher
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

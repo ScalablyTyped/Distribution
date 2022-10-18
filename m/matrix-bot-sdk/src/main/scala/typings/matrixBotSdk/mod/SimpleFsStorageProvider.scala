@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "SimpleFsStorageProvider")
 @js.native
 open class SimpleFsStorageProvider protected ()
-  extends typings.matrixBotSdk.simpleFsStorageProviderMod.SimpleFsStorageProvider {
+  extends typings.matrixBotSdk.libStorageSimpleFsStorageProviderMod.SimpleFsStorageProvider {
   /**
     * Creates a new simple file system storage provider.
     * @param {string} filename The file name (typically 'storage.json') to store data within.

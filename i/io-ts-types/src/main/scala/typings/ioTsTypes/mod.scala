@@ -1,7 +1,6 @@
 package typings.ioTsTypes
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.ordMod.Ord_
+import typings.fpTs.libOrdMod.Ord_
 import typings.ioTs.mod.Any_
 import typings.ioTs.mod.BrandC
 import typings.ioTs.mod.Context
@@ -11,26 +10,26 @@ import typings.ioTs.mod.OutputOf
 import typings.ioTs.mod.StringC
 import typings.ioTs.mod.TypeOf
 import typings.ioTs.mod.Type_
-import typings.ioTsTypes.bigIntFromStringMod.BigIntFromStringC
-import typings.ioTsTypes.booleanFromNumberMod.BooleanFromNumberC
-import typings.ioTsTypes.booleanFromStringMod.BooleanFromStringC
-import typings.ioTsTypes.dateFromISOStringMod.DateFromISOStringC
-import typings.ioTsTypes.dateFromNumberMod.DateFromNumberC
-import typings.ioTsTypes.dateFromUnixTimeMod.DateFromUnixTimeC
-import typings.ioTsTypes.dateMod.DateC
-import typings.ioTsTypes.eitherMod.EitherC
-import typings.ioTsTypes.getLensesMod.HasLenses
-import typings.ioTsTypes.intFromStringMod.IntFromStringC
-import typings.ioTsTypes.nonEmptyArrayMod.NonEmptyArrayC
-import typings.ioTsTypes.nonEmptyStringMod.NonEmptyStringC
-import typings.ioTsTypes.numberFromStringMod.NumberFromStringC
-import typings.ioTsTypes.optionFromNullableMod.OptionFromNullableC
-import typings.ioTsTypes.optionMod.OptionC
-import typings.ioTsTypes.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArrayC
-import typings.ioTsTypes.readonlySetFromArrayMod.ReadonlySetFromArrayC
-import typings.ioTsTypes.regexpMod.RegExpC
-import typings.ioTsTypes.setFromArrayMod.SetFromArrayC
-import typings.ioTsTypes.uuidMod.UUIDBrand
+import typings.ioTsTypes.libBigIntFromStringMod.BigIntFromStringC
+import typings.ioTsTypes.libBooleanFromNumberMod.BooleanFromNumberC
+import typings.ioTsTypes.libBooleanFromStringMod.BooleanFromStringC
+import typings.ioTsTypes.libDateFromISOStringMod.DateFromISOStringC
+import typings.ioTsTypes.libDateFromNumberMod.DateFromNumberC
+import typings.ioTsTypes.libDateFromUnixTimeMod.DateFromUnixTimeC
+import typings.ioTsTypes.libDateMod.DateC
+import typings.ioTsTypes.libEitherMod.EitherC
+import typings.ioTsTypes.libGetLensesMod.HasLenses
+import typings.ioTsTypes.libIntFromStringMod.IntFromStringC
+import typings.ioTsTypes.libNonEmptyArrayMod.NonEmptyArrayC
+import typings.ioTsTypes.libNonEmptyStringMod.NonEmptyStringC
+import typings.ioTsTypes.libNumberFromStringMod.NumberFromStringC
+import typings.ioTsTypes.libOptionFromNullableMod.OptionFromNullableC
+import typings.ioTsTypes.libOptionMod.OptionC
+import typings.ioTsTypes.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArrayC
+import typings.ioTsTypes.libReadonlySetFromArrayMod.ReadonlySetFromArrayC
+import typings.ioTsTypes.libRegexpMod.RegExpC
+import typings.ioTsTypes.libSetFromArrayMod.SetFromArrayC
+import typings.ioTsTypes.libUuidMod.UUIDBrand
 import typings.newtypeTs.mod.AnyNewtype
 import typings.newtypeTs.mod.CarrierOf
 import org.scalablytyped.runtime.StObject
@@ -74,28 +73,28 @@ object mod {
   @JSImport("io-ts-types", "Json")
   @js.native
   val Json: Type_[
-    typings.ioTsTypes.jsonFromStringMod.Json, 
-    typings.ioTsTypes.jsonFromStringMod.Json, 
+    typings.ioTsTypes.libJsonFromStringMod.Json, 
+    typings.ioTsTypes.libJsonFromStringMod.Json, 
     Any
   ] = js.native
   
   @JSImport("io-ts-types", "JsonArray")
   @js.native
   val JsonArray: Type_[
-    typings.ioTsTypes.jsonFromStringMod.JsonArray, 
-    typings.ioTsTypes.jsonFromStringMod.JsonArray, 
+    typings.ioTsTypes.libJsonFromStringMod.JsonArray, 
+    typings.ioTsTypes.libJsonFromStringMod.JsonArray, 
     Any
   ] = js.native
   
   @JSImport("io-ts-types", "JsonFromString")
   @js.native
-  val JsonFromString: Type_[typings.ioTsTypes.jsonFromStringMod.Json, String, String] = js.native
+  val JsonFromString: Type_[typings.ioTsTypes.libJsonFromStringMod.Json, String, String] = js.native
   
   @JSImport("io-ts-types", "JsonRecord")
   @js.native
   val JsonRecord: Type_[
-    typings.ioTsTypes.jsonFromStringMod.JsonRecord, 
-    typings.ioTsTypes.jsonFromStringMod.JsonRecord, 
+    typings.ioTsTypes.libJsonFromStringMod.JsonRecord, 
+    typings.ioTsTypes.libJsonFromStringMod.JsonRecord, 
     Any
   ] = js.native
   
@@ -128,11 +127,7 @@ object mod {
   
   inline def fromRefinement[A](name: String, is: js.Function1[/* u */ Any, /* is A */ Boolean]): Type_[A, A, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRefinement")(name.asInstanceOf[js.Any], is.asInstanceOf[js.Any])).asInstanceOf[Type_[A, A, Any]]
   
-  inline def getLenses[C /* <: HasLenses */](codec: C): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof io-ts.io-ts.TypeOf<C> ]: monocle-ts.monocle-ts.Lens<io-ts.io-ts.TypeOf<C>, io-ts.io-ts.TypeOf<C>[K]>}
-    */ typings.ioTsTypes.ioTsTypesStrings.getLenses & TopLevel[TypeOf[C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLenses")(codec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof io-ts.io-ts.TypeOf<C> ]: monocle-ts.monocle-ts.Lens<io-ts.io-ts.TypeOf<C>, io-ts.io-ts.TypeOf<C>[K]>}
-    */ typings.ioTsTypes.ioTsTypesStrings.getLenses & TopLevel[TypeOf[C]]]
+  inline def getLenses[C /* <: HasLenses */](codec: C): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof io-ts.io-ts.TypeOf<C> ]: monocle-ts.monocle-ts.Lens<io-ts.io-ts.TypeOf<C>, io-ts.io-ts.TypeOf<C>[K]>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLenses")(codec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof io-ts.io-ts.TypeOf<C> ]: monocle-ts.monocle-ts.Lens<io-ts.io-ts.TypeOf<C>, io-ts.io-ts.TypeOf<C>[K]>} */ js.Any]
   
   inline def mapOutput[A, O, I, P](codec: Type_[A, O, I], f: js.Function1[/* p */ O, P]): Type_[A, P, I] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapOutput")(codec.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Type_[A, P, I]]
   inline def mapOutput[A, O, I, P](codec: Type_[A, O, I], f: js.Function1[/* p */ O, P], name: String): Type_[A, P, I] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapOutput")(codec.asInstanceOf[js.Any], f.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Type_[A, P, I]]

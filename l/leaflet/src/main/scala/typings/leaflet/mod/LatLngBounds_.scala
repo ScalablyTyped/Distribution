@@ -16,7 +16,7 @@ open class LatLngBounds_ protected () extends StObject {
   
   def extend(latlngOrBounds: LatLngBoundsExpression | LatLngExpression): this.type = js.native
   
-  // does this modify the current instance or does it return a new one?
+  // Returns a new LatLngBounds
   def getCenter(): LatLng_ = js.native
   
   def getEast(): Double = js.native

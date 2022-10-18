@@ -15,8 +15,8 @@ import typings.openpgp.anon.EncryptResultdatastringRe
 import typings.openpgp.anon.EncryptResultdatastringsi
 import typings.openpgp.anon.EncryptResultmessageMessa
 import typings.openpgp.anon.EncryptResultmessageMessaMessage
-import typings.openpgp.anon.KeyKey
 import typings.openpgp.anon.PrivateKey
+import typings.openpgp.anon.PrivateKeyArmored
 import typings.openpgp.anon.PublicKey
 import typings.openpgp.anon.SignOptionsarmorfalsedeta
 import typings.openpgp.anon.SignOptionsarmorfalsedetaArmor
@@ -47,8 +47,8 @@ inline def decrypt(options: DecryptOptionsformatbinar): js.Promise[DecryptResult
 inline def decrypt(options: DecryptOptionsformatutf8): js.Promise[DecryptResultdatastringRe] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DecryptResultdatastringRe]]
 inline def decrypt(options: DecryptOptions): js.Promise[DecryptResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DecryptResult]]
 
-inline def decryptKey(privateKey: Key, passphrase: String): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
-inline def decryptKey(privateKey: Key, passphrase: js.Array[Any]): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
+inline def decryptKey(privateKey: Key, passphrase: String): js.Promise[typings.openpgp.anon.Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
+inline def decryptKey(privateKey: Key, passphrase: js.Array[Any]): js.Promise[typings.openpgp.anon.Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
 
 inline def decryptSessionKeys(message: Message): js.Promise[js.UndefOr[js.Array[Algorithm]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
 inline def decryptSessionKeys(message: Message, privateKeys: js.Array[Key]): js.Promise[js.UndefOr[js.Array[Algorithm]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptSessionKeys")(message.asInstanceOf[js.Any], privateKeys.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[js.Array[Algorithm]]]]
@@ -68,8 +68,8 @@ inline def encrypt(options: EncryptOptionsarmortrueun): js.Promise[EncryptResult
 inline def encrypt(options: EncryptOptionsarmortrueunArmor): js.Promise[EncryptResultdatastringsi] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultdatastringsi]]
 inline def encrypt(options: EncryptOptions): js.Promise[EncryptResultdatastringRe] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[EncryptResultdatastringRe]]
 
-inline def encryptKey(privateKey: Key, passphrase: String): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
-inline def encryptKey(privateKey: Key, passphrase: js.Array[Any]): js.Promise[KeyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyKey]]
+inline def encryptKey(privateKey: Key, passphrase: String): js.Promise[typings.openpgp.anon.Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
+inline def encryptKey(privateKey: Key, passphrase: js.Array[Any]): js.Promise[typings.openpgp.anon.Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKey")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
 
 inline def encryptSessionKey(
   data: js.typedarray.Uint8Array,
@@ -82,7 +82,7 @@ inline def encryptSessionKey(
   toUserIds: js.UndefOr[js.Array[Any]]
 ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptSessionKey")(data.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], aeadAlgorithm.asInstanceOf[js.Any], publicKeys.asInstanceOf[js.Any], passwords.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any], date.asInstanceOf[js.Any], toUserIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
 
-inline def generateKey(option: KeyOptions): js.Promise[typings.openpgp.anon.Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openpgp.anon.Key]]
+inline def generateKey(option: KeyOptions): js.Promise[PrivateKeyArmored] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(option.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PrivateKeyArmored]]
 
 inline def getWorker(): AsyncProxy | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorker")().asInstanceOf[AsyncProxy | Null]
 

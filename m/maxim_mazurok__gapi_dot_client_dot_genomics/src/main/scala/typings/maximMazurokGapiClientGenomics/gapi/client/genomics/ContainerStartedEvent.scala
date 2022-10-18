@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait ContainerStartedEvent extends StObject {
     * `Action` definition.
     */
   var portMappings: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.ContainerStartedEvent & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
   ] = js.undefined
 }
 object ContainerStartedEvent {
@@ -44,9 +41,7 @@ object ContainerStartedEvent {
     inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     inline def setPortMappings(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.ContainerStartedEvent & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the Guacamole.Keyboard instance to have any effect.
   */
 open class Keyboard ()
-  extends typings.guacamoleCommonJs.keyboardMod.Keyboard {
+  extends typings.guacamoleCommonJs.libKeyboardMod.Keyboard {
   def this(element: HTMLDocument) = this()
   def this(element: HTMLElement) = this()
 }
@@ -25,7 +25,7 @@ object Keyboard {
   @JSImport("guacamole-common-js", "Keyboard.ModifierState")
   @js.native
   open class ModifierState ()
-    extends typings.guacamoleCommonJs.keyboardMod.Keyboard.ModifierState
+    extends typings.guacamoleCommonJs.libKeyboardMod.Keyboard.ModifierState
   /* static members */
   object ModifierState {
     
@@ -38,6 +38,6 @@ object Keyboard {
       * @param event The keyboard event to read.
       * @returns The current state of keyboard modifiers.
       */
-    inline def fromKeyboardEvent(event: KeyboardEvent): typings.guacamoleCommonJs.keyboardMod.Keyboard.ModifierState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeyboardEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.keyboardMod.Keyboard.ModifierState]
+    inline def fromKeyboardEvent(event: KeyboardEvent): typings.guacamoleCommonJs.libKeyboardMod.Keyboard.ModifierState = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeyboardEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.libKeyboardMod.Keyboard.ModifierState]
   }
 }

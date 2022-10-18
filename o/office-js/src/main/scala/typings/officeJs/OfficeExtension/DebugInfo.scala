@@ -25,13 +25,13 @@ trait DebugInfo extends StObject {
   /** Inner error, if applicable. */
   var innerError: js.UndefOr[DebugInfo | String] = js.undefined
   
-  /** The error message passed through from the host Office application. */
+  /** The error message passed through from the Office application. */
   var message: String
   
   /**
     * The statement that caused the error, if available.
     *
-    * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
+    * This statement will never contain any potentially sensitive data and may not match the code exactly as written,
     * but will be a close approximation.
     */
   var statement: js.UndefOr[String] = js.undefined
@@ -39,7 +39,7 @@ trait DebugInfo extends StObject {
   /**
     * The statements that closely precede and follow the statement that caused the error, if available.
     *
-    * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, 
+    * These statements will never contain any potentially sensitive data and may not match the code exactly as written,
     * but will be a close approximation.
     */
   var surroundingStatements: js.UndefOr[js.Array[String]] = js.undefined

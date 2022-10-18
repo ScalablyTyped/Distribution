@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-yarn-global"
-version := "0.4.0-1549bd"
+version := "0.4.0-79862d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,23 +10,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@antv/g2plot.@antv/g2plot/lib/utils/hierarchy/types.HierarchyOption, 'as' | 'type'> & { readonly field :string | undefined,  readonly ignoreParentValue :boolean | undefined,  readonly activeDepth :number | undefined} */
+/* Inlined std.Omit<@antv/g2plot.@antv/g2plot/lib/utils/hierarchy/types.HierarchyOption, 'as' | 'type' | 'field'> */
 trait OmitHierarchyOptionastype extends StObject {
   
-  /**
-    * @title 展示的层级深度
-    * @description  取值 > 0 默认空, 代表全部展示
-    */
-  val activeDepth: js.UndefOr[Double] = js.undefined
-  
-  /** default: 'value', required data to be like: { name: 'xx', [field]: 12, children: [] } */
-  var field: js.UndefOr[String] = js.undefined
-  
-  /**
-    * @title 是否忽略父节点的权重
-    * @description  其父节点的权重不由子节点权重总和决定
-    * @default false
-    */
   var ignoreParentValue: js.UndefOr[Boolean] = js.undefined
   
   var padding: js.UndefOr[Double] = js.undefined
@@ -63,14 +49,6 @@ object OmitHierarchyOptionastype {
   }
   
   extension [Self <: OmitHierarchyOptionastype](x: Self) {
-    
-    inline def setActiveDepth(value: Double): Self = StObject.set(x, "activeDepth", value.asInstanceOf[js.Any])
-    
-    inline def setActiveDepthUndefined: Self = StObject.set(x, "activeDepth", js.undefined)
-    
-    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-    
-    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     inline def setIgnoreParentValue(value: Boolean): Self = StObject.set(x, "ignoreParentValue", value.asInstanceOf[js.Any])
     

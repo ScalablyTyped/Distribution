@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class ObstacleAvoidanceBehavior ()
   extends typings.yuka.mod.ObstacleAvoidanceBehavior {
-  def this(obstacles: js.Array[typings.yuka.gameEntityMod.GameEntity]) = this()
+  def this(obstacles: js.Array[typings.yuka.srcCoreGameEntityMod.GameEntity]) = this()
 }

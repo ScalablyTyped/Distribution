@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a source of timed text data. */
-@JSGlobal("Windows.Media.Core.TimedTextSource")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.TimedTextSource")
 @js.native
-abstract class TimedTextSource ()
+open class TimedTextSource ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedTextSource
 object TimedTextSource {

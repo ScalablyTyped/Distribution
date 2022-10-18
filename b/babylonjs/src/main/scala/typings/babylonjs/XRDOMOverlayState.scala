@@ -6,23 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XRDOMOverlayState extends StObject {
   
-  /**
-    * set if supported, or is null if the feature is not supported
-    */
-  var `type`: XRDOMOverlayType | Null
+  var `type`: XRDOMOverlayType
 }
 object XRDOMOverlayState {
   
-  inline def apply(): XRDOMOverlayState = {
+  inline def apply(`type`: XRDOMOverlayType): XRDOMOverlayState = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRDOMOverlayState]
   }
   
   extension [Self <: XRDOMOverlayState](x: Self) {
     
     inline def setType(value: XRDOMOverlayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeNull: Self = StObject.set(x, "type", null)
   }
 }

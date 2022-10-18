@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "RBTree")
 @js.native
 open class RBTree[T] protected ()
-  extends typings.webcola.rbtreeMod.RBTree[T] {
+  extends typings.webcola.distSrcRbtreeMod.RBTree[T] {
   def this(comparator: js.Function2[/* a */ T, /* b */ T, Double]) = this()
 }
 /* static members */

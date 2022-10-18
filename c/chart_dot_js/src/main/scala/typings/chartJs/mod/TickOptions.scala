@@ -2,8 +2,8 @@ package typings.chartJs.mod
 
 import typings.chartJs.anon.Enabled
 import typings.chartJs.anon.PartialFontSpec
-import typings.chartJs.colorMod.Color
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.typesColorMod.Color
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

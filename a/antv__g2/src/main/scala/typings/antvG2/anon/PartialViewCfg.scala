@@ -1,15 +1,15 @@
 package typings.antvG2.anon
 
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.LooseObject
 import typings.antvG2.libInterfaceMod.Options
 import typings.antvG2.libInterfaceMod.Region
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
 import typings.antvG2.libInterfaceMod.ViewAppendPadding
 import typings.antvG2.libInterfaceMod.ViewPadding
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
-import typings.antvGBase.interfacesMod.ICanvas
-import typings.antvGBase.interfacesMod.IGroup
+import typings.antvGBase.libInterfacesMod.ICanvas
+import typings.antvGBase.libInterfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

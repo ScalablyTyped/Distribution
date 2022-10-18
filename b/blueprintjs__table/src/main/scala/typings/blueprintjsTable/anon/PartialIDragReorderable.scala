@@ -1,8 +1,8 @@
 package typings.blueprintjsTable.anon
 
-import typings.blueprintjsTable.cellTypesMod.FocusedCellCoordinates
-import typings.blueprintjsTable.dragTypesMod.ICoordinateData
-import typings.blueprintjsTable.esmRegionsMod.Region
+import typings.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typings.blueprintjsTable.libEsmInteractionsDragTypesMod.ICoordinateData
+import typings.blueprintjsTable.libEsmRegionsMod.Region
 import typings.react.mod.ReactNode
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject

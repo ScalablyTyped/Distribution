@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.SPURI")
 @js.native
 open class SPURI ()
-  extends typings.xadesjs.typesXmlMod.SPURI {
+  extends typings.xadesjs.buildTypesXmlMod.SPURI {
   def this(properties: js.Object) = this()
 }

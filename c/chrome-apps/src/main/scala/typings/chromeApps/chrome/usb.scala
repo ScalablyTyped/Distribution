@@ -24,29 +24,6 @@ import typings.chromeApps.chromeAppsStrings.RESERVED
 import typings.chromeApps.chromeAppsStrings.STANDARD
 import typings.chromeApps.chromeAppsStrings.SYNCHRONOUS
 import typings.chromeApps.chromeAppsStrings.VENDOR
-import typings.chromeApps.chromeAppsStrings.adaptive_
-import typings.chromeApps.chromeAppsStrings.asynchronous_
-import typings.chromeApps.chromeAppsStrings.bulk_
-import typings.chromeApps.chromeAppsStrings.class_
-import typings.chromeApps.chromeAppsStrings.control_
-import typings.chromeApps.chromeAppsStrings.data_
-import typings.chromeApps.chromeAppsStrings.device__
-import typings.chromeApps.chromeAppsStrings.endpoint_
-import typings.chromeApps.chromeAppsStrings.explicitFeedback
-import typings.chromeApps.chromeAppsStrings.feedback_
-import typings.chromeApps.chromeAppsStrings.in_
-import typings.chromeApps.chromeAppsStrings.interface_
-import typings.chromeApps.chromeAppsStrings.interrupt_
-import typings.chromeApps.chromeAppsStrings.isochronous_
-import typings.chromeApps.chromeAppsStrings.notification_
-import typings.chromeApps.chromeAppsStrings.other_
-import typings.chromeApps.chromeAppsStrings.out_
-import typings.chromeApps.chromeAppsStrings.periodic_
-import typings.chromeApps.chromeAppsStrings.reserved_
-import typings.chromeApps.chromeAppsStrings.standard_
-import typings.chromeApps.chromeAppsStrings.synchronous_
-import typings.chromeApps.chromeAppsStrings.vendor_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -349,10 +326,7 @@ object usb {
     var direction: ToStringLiteral[
         IN, 
         /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-        Exclude[
-          /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-          in_ | out_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
       ]
     
     /**
@@ -375,10 +349,7 @@ object usb {
         ToStringLiteral[
           ADAPTIVE, 
           /* keyof chrome-apps.anon.ADAPTIVE */ ASYNCHRONOUS | typings.chromeApps.chromeAppsStrings.ADAPTIVE | SYNCHRONOUS, 
-          Exclude[
-            /* keyof chrome-apps.anon.ADAPTIVE */ ASYNCHRONOUS | typings.chromeApps.chromeAppsStrings.ADAPTIVE | SYNCHRONOUS, 
-            asynchronous_ | adaptive_ | synchronous_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ASYNCHRONOUS :'asynchronous',   ADAPTIVE :'adaptive',   SYNCHRONOUS :'synchronous'} extends keyof {  ASYNCHRONOUS :'asynchronous',   ADAPTIVE :'adaptive',   SYNCHRONOUS :'synchronous'} ? std.Exclude<keyof {  ASYNCHRONOUS :'asynchronous',   ADAPTIVE :'adaptive',   SYNCHRONOUS :'synchronous'}, 'asynchronous' | 'adaptive' | 'synchronous'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -390,10 +361,7 @@ object usb {
     var `type`: ToStringLiteral[
         BULK, 
         /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
-        Exclude[
-          /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
-          control_ | interrupt_ | isochronous_ | bulk_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'} extends keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'} ? std.Exclude<keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'}, 'control' | 'interrupt' | 'isochronous' | 'bulk'> : never */ js.Any
       ]
     
     /**
@@ -404,10 +372,7 @@ object usb {
         ToStringLiteral[
           DATA_, 
           /* keyof chrome-apps.anon.DATA */ DATA | FEEDBACK | EXPLICIT_FEEDBACK | PERIODIC | NOTIFICATION, 
-          Exclude[
-            /* keyof chrome-apps.anon.DATA */ DATA | FEEDBACK | EXPLICIT_FEEDBACK | PERIODIC | NOTIFICATION, 
-            notification_ | data_ | periodic_ | feedback_ | explicitFeedback
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  DATA :'data',   FEEDBACK :'feedback',   EXPLICIT_FEEDBACK :'explicitFeedback',   PERIODIC :'periodic',   NOTIFICATION :'notification'} extends keyof {  DATA :'data',   FEEDBACK :'feedback',   EXPLICIT_FEEDBACK :'explicitFeedback',   PERIODIC :'periodic',   NOTIFICATION :'notification'} ? std.Exclude<keyof {  DATA :'data',   FEEDBACK :'feedback',   EXPLICIT_FEEDBACK :'explicitFeedback',   PERIODIC :'periodic',   NOTIFICATION :'notification'}, 'notification' | 'data' | 'periodic' | 'feedback' | 'explicitFeedback'> : never */ js.Any
         ]
       ] = js.undefined
   }
@@ -418,20 +383,14 @@ object usb {
       direction: ToStringLiteral[
           IN, 
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-          Exclude[
-            /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-            in_ | out_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
         ],
       extra_data: js.typedarray.ArrayBuffer,
       maximumPacketSize: integer,
       `type`: ToStringLiteral[
           BULK, 
           /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
-          Exclude[
-            /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
-            control_ | interrupt_ | isochronous_ | bulk_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'} extends keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'} ? std.Exclude<keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'}, 'control' | 'interrupt' | 'isochronous' | 'bulk'> : never */ js.Any
         ]
     ): EndpointDescriptor = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], extra_data = extra_data.asInstanceOf[js.Any], maximumPacketSize = maximumPacketSize.asInstanceOf[js.Any])
@@ -447,10 +406,7 @@ object usb {
         value: ToStringLiteral[
               IN, 
               /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-              Exclude[
-                /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-                in_ | out_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -466,10 +422,7 @@ object usb {
         value: ToStringLiteral[
               ADAPTIVE, 
               /* keyof chrome-apps.anon.ADAPTIVE */ ASYNCHRONOUS | typings.chromeApps.chromeAppsStrings.ADAPTIVE | SYNCHRONOUS, 
-              Exclude[
-                /* keyof chrome-apps.anon.ADAPTIVE */ ASYNCHRONOUS | typings.chromeApps.chromeAppsStrings.ADAPTIVE | SYNCHRONOUS, 
-                asynchronous_ | adaptive_ | synchronous_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ASYNCHRONOUS :'asynchronous',   ADAPTIVE :'adaptive',   SYNCHRONOUS :'synchronous'} extends keyof {  ASYNCHRONOUS :'asynchronous',   ADAPTIVE :'adaptive',   SYNCHRONOUS :'synchronous'} ? std.Exclude<keyof {  ASYNCHRONOUS :'asynchronous',   ADAPTIVE :'adaptive',   SYNCHRONOUS :'synchronous'}, 'asynchronous' | 'adaptive' | 'synchronous'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
       
@@ -479,10 +432,7 @@ object usb {
         value: ToStringLiteral[
               BULK, 
               /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
-              Exclude[
-                /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
-                control_ | interrupt_ | isochronous_ | bulk_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'} extends keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'} ? std.Exclude<keyof {  CONTROL :'control',   INTERRUPT :'interrupt',   ISOCHRONOUS :'isochronous',   BULK :'bulk'}, 'control' | 'interrupt' | 'isochronous' | 'bulk'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -490,10 +440,7 @@ object usb {
         value: ToStringLiteral[
               DATA_, 
               /* keyof chrome-apps.anon.DATA */ DATA | FEEDBACK | EXPLICIT_FEEDBACK | PERIODIC | NOTIFICATION, 
-              Exclude[
-                /* keyof chrome-apps.anon.DATA */ DATA | FEEDBACK | EXPLICIT_FEEDBACK | PERIODIC | NOTIFICATION, 
-                notification_ | data_ | periodic_ | feedback_ | explicitFeedback
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  DATA :'data',   FEEDBACK :'feedback',   EXPLICIT_FEEDBACK :'explicitFeedback',   PERIODIC :'periodic',   NOTIFICATION :'notification'} extends keyof {  DATA :'data',   FEEDBACK :'feedback',   EXPLICIT_FEEDBACK :'explicitFeedback',   PERIODIC :'periodic',   NOTIFICATION :'notification'} ? std.Exclude<keyof {  DATA :'data',   FEEDBACK :'feedback',   EXPLICIT_FEEDBACK :'explicitFeedback',   PERIODIC :'periodic',   NOTIFICATION :'notification'}, 'notification' | 'data' | 'periodic' | 'feedback' | 'explicitFeedback'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
@@ -513,10 +460,7 @@ object usb {
     var direction: ToStringLiteral[
         IN, 
         /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-        Exclude[
-          /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-          in_ | out_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
       ]
     
     /** The target endpoint address. The interface containing this endpoint must be claimed. */
@@ -538,10 +482,7 @@ object usb {
       direction: ToStringLiteral[
           IN, 
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-          Exclude[
-            /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-            in_ | out_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
         ],
       endpoint: integer
     ): GenericTransferInfo = {
@@ -559,10 +500,7 @@ object usb {
         value: ToStringLiteral[
               IN, 
               /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-              Exclude[
-                /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-                in_ | out_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -694,10 +632,7 @@ object usb {
     var direction: ToStringLiteral[
         IN, 
         /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-        Exclude[
-          /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-          in_ | out_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
       ]
     
     /** The wIndex field, see *Ibid*. */
@@ -714,10 +649,7 @@ object usb {
     var recipient: ToStringLiteral[
         DEVICE, 
         /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
-        Exclude[
-          /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
-          device__ | interface_ | endpoint_ | other_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'} extends keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'} ? std.Exclude<keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'}, 'device' | 'interface' | 'endpoint' | 'other'> : never */ js.Any
       ]
     
     /** The bRequest field, see *Universal Serial Bus Specification Revision 1.1 § 9.3.* */
@@ -730,10 +662,7 @@ object usb {
     var requestType: ToStringLiteral[
         CLASS, 
         /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
-        Exclude[
-          /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
-          standard_ | class_ | vendor_ | reserved_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'} extends keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'} ? std.Exclude<keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'}, 'standard' | 'class' | 'vendor' | 'reserved'> : never */ js.Any
       ]
     
     /**
@@ -753,28 +682,19 @@ object usb {
       direction: ToStringLiteral[
           IN, 
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-          Exclude[
-            /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-            in_ | out_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
         ],
       index: integer,
       recipient: ToStringLiteral[
           DEVICE, 
           /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
-          Exclude[
-            /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
-            device__ | interface_ | endpoint_ | other_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'} extends keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'} ? std.Exclude<keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'}, 'device' | 'interface' | 'endpoint' | 'other'> : never */ js.Any
         ],
       request: integer,
       requestType: ToStringLiteral[
           CLASS, 
           /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
-          Exclude[
-            /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
-            standard_ | class_ | vendor_ | reserved_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'} extends keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'} ? std.Exclude<keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'}, 'standard' | 'class' | 'vendor' | 'reserved'> : never */ js.Any
         ],
       value: integer
     ): TransferInfo = {
@@ -792,10 +712,7 @@ object usb {
         value: ToStringLiteral[
               IN, 
               /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-              Exclude[
-                /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
-                in_ | out_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  IN :'in',   OUT :'out'} extends keyof {  IN :'in',   OUT :'out'} ? std.Exclude<keyof {  IN :'in',   OUT :'out'}, 'in' | 'out'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -809,10 +726,7 @@ object usb {
         value: ToStringLiteral[
               DEVICE, 
               /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
-              Exclude[
-                /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
-                device__ | interface_ | endpoint_ | other_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'} extends keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'} ? std.Exclude<keyof {  DEVICE :'device',   INTERFACE :'interface',   ENDPOINT :'endpoint',   OTHER :'other'}, 'device' | 'interface' | 'endpoint' | 'other'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
       
@@ -822,10 +736,7 @@ object usb {
         value: ToStringLiteral[
               CLASS, 
               /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
-              Exclude[
-                /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
-                standard_ | class_ | vendor_ | reserved_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'} extends keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'} ? std.Exclude<keyof {  STANDARD :'standard',   CLASS :'class',   VENDOR :'vendor',   RESERVED :'reserved'}, 'standard' | 'class' | 'vendor' | 'reserved'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       

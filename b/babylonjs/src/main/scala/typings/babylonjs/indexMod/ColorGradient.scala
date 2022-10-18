@@ -22,7 +22,7 @@ open class ColorGradient protected ()
     /**
     * Gets or sets first associated color
     */
-  color1: typings.babylonjs.mathColorMod.Color4
+  color1: typings.babylonjs.mathsMathDotcolorMod.Color4
   ) = this()
   def this(
     /**
@@ -32,10 +32,10 @@ open class ColorGradient protected ()
     /**
     * Gets or sets first associated color
     */
-  color1: typings.babylonjs.mathColorMod.Color4,
+  color1: typings.babylonjs.mathsMathDotcolorMod.Color4,
     /**
     * Gets or sets second associated color
     */
-  color2: typings.babylonjs.mathColorMod.Color4
+  color2: typings.babylonjs.mathsMathDotcolorMod.Color4
   ) = this()
 }

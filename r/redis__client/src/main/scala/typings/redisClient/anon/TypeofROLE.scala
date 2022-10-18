@@ -1,7 +1,7 @@
 package typings.redisClient.anon
 
-import typings.redisClient.roleMod.RoleRawReply
-import typings.redisClient.roleMod.RoleReply
+import typings.redisClient.distLibCommandsRoleMod.RoleRawReply
+import typings.redisClient.distLibCommandsRoleMod.RoleReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

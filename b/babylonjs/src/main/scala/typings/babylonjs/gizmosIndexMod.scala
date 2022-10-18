@@ -1,17 +1,17 @@
 package typings.babylonjs
 
-import typings.babylonjs.gizmoMod.GizmoAxisCache
-import typings.babylonjs.mathColorMod.Color3
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.meshMod.Mesh
-import typings.babylonjs.observableMod.Observer
-import typings.babylonjs.pointerEventsMod.PointerInfo
-import typings.babylonjs.rotationGizmoMod.RotationGizmoOptions
+import typings.babylonjs.eventsPointerEventsMod.PointerInfo
+import typings.babylonjs.gizmosGizmoMod.GizmoAxisCache
+import typings.babylonjs.gizmosRotationGizmoMod.RotationGizmoOptions
+import typings.babylonjs.materialsStandardMaterialMod.StandardMaterial
+import typings.babylonjs.mathsMathDotcolorMod.Color3
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
+import typings.babylonjs.miscObservableMod.Observer
+import typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.standardMaterialMod.StandardMaterial
-import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object gizmosIndexMod {
   @JSImport("babylonjs/Gizmos/index", "AxisDragGizmo")
   @js.native
   open class AxisDragGizmo protected ()
-    extends typings.babylonjs.axisDragGizmoMod.AxisDragGizmo {
+    extends typings.babylonjs.gizmosAxisDragGizmoMod.AxisDragGizmo {
     /**
       * Creates an AxisDragGizmo
       * @param dragAxis The axis which the gizmo will be able to drag on
@@ -39,32 +39,32 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
       thickness: Double
     ) = this()
     def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Unit, thickness: Double) = this()
@@ -72,7 +72,7 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
       thickness: Double
     ) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
@@ -80,7 +80,7 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
       thickness: Double
     ) = this()
     def this(
@@ -94,7 +94,7 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo],
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo],
       thickness: Double
     ) = this()
   }
@@ -122,7 +122,7 @@ object gizmosIndexMod {
   @JSImport("babylonjs/Gizmos/index", "AxisScaleGizmo")
   @js.native
   open class AxisScaleGizmo protected ()
-    extends typings.babylonjs.axisScaleGizmoMod.AxisScaleGizmo {
+    extends typings.babylonjs.gizmosAxisScaleGizmoMod.AxisScaleGizmo {
     /**
       * Creates an AxisScaleGizmo
       * @param dragAxis The axis which the gizmo will be able to scale on
@@ -139,32 +139,32 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo]
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo]
     ) = this()
     def this(dragAxis: Vector3, color: Unit, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
     def this(
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
       thickness: Double
     ) = this()
     def this(dragAxis: Vector3, color: Unit, gizmoLayer: UtilityLayerRenderer, parent: Unit, thickness: Double) = this()
@@ -172,7 +172,7 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
       thickness: Double
     ) = this()
     def this(dragAxis: Vector3, color: Color3, gizmoLayer: Unit, parent: Unit, thickness: Double) = this()
@@ -180,7 +180,7 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
       thickness: Double
     ) = this()
     def this(
@@ -194,7 +194,7 @@ object gizmosIndexMod {
       dragAxis: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.scaleGizmoMod.ScaleGizmo],
+      parent: Nullable[typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo],
       thickness: Double
     ) = this()
   }
@@ -207,7 +207,7 @@ object gizmosIndexMod {
     * @param gizmoLayer The utility layer the gizmo will be added to
     */
   open class BoundingBoxGizmo ()
-    extends typings.babylonjs.boundingBoxGizmoMod.BoundingBoxGizmo {
+    extends typings.babylonjs.gizmosBoundingBoxGizmoMod.BoundingBoxGizmo {
     def this(color: Color3) = this()
     def this(color: Unit, gizmoLayer: UtilityLayerRenderer) = this()
     def this(color: Color3, gizmoLayer: UtilityLayerRenderer) = this()
@@ -234,7 +234,7 @@ object gizmosIndexMod {
     * @param gizmoLayer The utility layer the gizmo will be added to
     */
   open class CameraGizmo ()
-    extends typings.babylonjs.cameraGizmoMod.CameraGizmo {
+    extends typings.babylonjs.gizmosCameraGizmoMod.CameraGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
@@ -267,7 +267,7 @@ object gizmosIndexMod {
     * @param gizmoLayer The utility layer the gizmo will be added to
     */
   open class Gizmo ()
-    extends typings.babylonjs.gizmoMod.Gizmo {
+    extends typings.babylonjs.gizmosGizmoMod.Gizmo {
     def this(/** The utility layer the gizmo will be added to */
     gizmoLayer: UtilityLayerRenderer) = this()
   }
@@ -299,7 +299,7 @@ object gizmosIndexMod {
   @JSImport("babylonjs/Gizmos/index", "GizmoManager")
   @js.native
   open class GizmoManager protected ()
-    extends typings.babylonjs.gizmoManagerMod.GizmoManager {
+    extends typings.babylonjs.gizmosGizmoManagerMod.GizmoManager {
     /**
       * Instantiates a gizmo manager
       * @param _scene the scene to overlay the gizmos on top of
@@ -334,7 +334,7 @@ object gizmosIndexMod {
     * @param gizmoLayer The utility layer the gizmo will be added to
     */
   open class LightGizmo ()
-    extends typings.babylonjs.lightGizmoMod.LightGizmo {
+    extends typings.babylonjs.gizmosLightGizmoMod.LightGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
   }
   /* static members */
@@ -383,7 +383,7 @@ object gizmosIndexMod {
   @JSImport("babylonjs/Gizmos/index", "PlaneDragGizmo")
   @js.native
   open class PlaneDragGizmo protected ()
-    extends typings.babylonjs.planeDragGizmoMod.PlaneDragGizmo {
+    extends typings.babylonjs.gizmosPlaneDragGizmoMod.PlaneDragGizmo {
     /**
       * Creates a PlaneDragGizmo
       * @param dragPlaneNormal The axis normal to which the gizmo will be able to drag on
@@ -399,25 +399,25 @@ object gizmosIndexMod {
       dragPlaneNormal: Vector3,
       color: Unit,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragPlaneNormal: Vector3,
       color: Unit,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragPlaneNormal: Vector3,
       color: Color3,
       gizmoLayer: Unit,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
     def this(
       dragPlaneNormal: Vector3,
       color: Color3,
       gizmoLayer: UtilityLayerRenderer,
-      parent: Nullable[typings.babylonjs.positionGizmoMod.PositionGizmo]
+      parent: Nullable[typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo]
     ) = this()
   }
   /* static members */
@@ -436,7 +436,7 @@ object gizmosIndexMod {
   @JSImport("babylonjs/Gizmos/index", "PlaneRotationGizmo")
   @js.native
   open class PlaneRotationGizmo protected ()
-    extends typings.babylonjs.planeRotationGizmoMod.PlaneRotationGizmo {
+    extends typings.babylonjs.gizmosPlaneRotationGizmoMod.PlaneRotationGizmo {
     /**
       * Creates a PlaneRotationGizmo
       * @param planeNormal The normal of the plane which the gizmo will be able to rotate on
@@ -452,7 +452,7 @@ object gizmosIndexMod {
       color: js.UndefOr[Color3],
       gizmoLayer: js.UndefOr[UtilityLayerRenderer],
       tessellation: js.UndefOr[Double],
-      parent: js.UndefOr[Nullable[typings.babylonjs.rotationGizmoMod.RotationGizmo]],
+      parent: js.UndefOr[Nullable[typings.babylonjs.gizmosRotationGizmoMod.RotationGizmo]],
       useEulerRotation: js.UndefOr[Boolean],
       thickness: js.UndefOr[Double]
     ) = this()
@@ -493,28 +493,36 @@ object gizmosIndexMod {
     * @param gizmoManager
     */
   open class PositionGizmo ()
-    extends typings.babylonjs.positionGizmoMod.PositionGizmo {
+    extends typings.babylonjs.gizmosPositionGizmoMod.PositionGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
     def this(gizmoLayer: Unit, thickness: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, thickness: Double) = this()
-    def this(gizmoLayer: Unit, thickness: Double, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
-    def this(gizmoLayer: Unit, thickness: Unit, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
+    def this(
+      gizmoLayer: Unit,
+      thickness: Double,
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      thickness: Unit,
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+    ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       thickness: Double,
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       thickness: Unit,
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
     ) = this()
   }
   
   @JSImport("babylonjs/Gizmos/index", "RotationGizmo")
   @js.native
   open class RotationGizmo protected ()
-    extends typings.babylonjs.rotationGizmoMod.RotationGizmo {
+    extends typings.babylonjs.gizmosRotationGizmoMod.RotationGizmo {
     /**
       * Creates a RotationGizmo
       * @param gizmoLayer The utility layer the gizmo will be added to
@@ -529,7 +537,7 @@ object gizmosIndexMod {
       tessellation: js.UndefOr[Double],
       useEulerRotation: js.UndefOr[Boolean],
       thickness: js.UndefOr[Double],
-      gizmoManager: js.UndefOr[typings.babylonjs.gizmoManagerMod.GizmoManager],
+      gizmoManager: js.UndefOr[typings.babylonjs.gizmosGizmoManagerMod.GizmoManager],
       options: js.UndefOr[RotationGizmoOptions]
     ) = this()
   }
@@ -543,21 +551,29 @@ object gizmosIndexMod {
     * @param gizmoManager
     */
   open class ScaleGizmo ()
-    extends typings.babylonjs.scaleGizmoMod.ScaleGizmo {
+    extends typings.babylonjs.gizmosScaleGizmoMod.ScaleGizmo {
     def this(gizmoLayer: UtilityLayerRenderer) = this()
     def this(gizmoLayer: Unit, thickness: Double) = this()
     def this(gizmoLayer: UtilityLayerRenderer, thickness: Double) = this()
-    def this(gizmoLayer: Unit, thickness: Double, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
-    def this(gizmoLayer: Unit, thickness: Unit, gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager) = this()
+    def this(
+      gizmoLayer: Unit,
+      thickness: Double,
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+    ) = this()
+    def this(
+      gizmoLayer: Unit,
+      thickness: Unit,
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
+    ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       thickness: Double,
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
     ) = this()
     def this(
       gizmoLayer: UtilityLayerRenderer,
       thickness: Unit,
-      gizmoManager: typings.babylonjs.gizmoManagerMod.GizmoManager
+      gizmoManager: typings.babylonjs.gizmosGizmoManagerMod.GizmoManager
     ) = this()
   }
 }

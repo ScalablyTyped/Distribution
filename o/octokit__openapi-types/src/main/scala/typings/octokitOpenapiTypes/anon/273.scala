@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `273` extends StObject {
   
-  var labels: js.UndefOr[js.Array[NameString]] = js.undefined
+  /** The unique identifier of the gist. */
+  var gist_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['gist-id'] */ js.Any
 }
 object `273` {
   
-  inline def apply(): `273` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    gist_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['gist-id'] */ js.Any
+  ): `273` = {
+    val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`273`]
   }
   
   extension [Self <: `273`](x: Self) {
     
-    inline def setLabels(value: js.Array[NameString]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
-    
-    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
-    
-    inline def setLabelsVarargs(value: NameString*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setGist_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['gist-id'] */ js.Any
+    ): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

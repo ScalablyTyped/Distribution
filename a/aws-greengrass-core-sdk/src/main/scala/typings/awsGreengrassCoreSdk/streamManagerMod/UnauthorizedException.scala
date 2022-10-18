@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "UnauthorizedException")
 @js.native
 open class UnauthorizedException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.UnauthorizedException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.UnauthorizedException

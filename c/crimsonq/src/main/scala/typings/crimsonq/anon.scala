@@ -10,16 +10,16 @@ import typings.crimsonq.crimsonqStrings.VALID_IN_SUBSCRIBER_MODE
 import typings.crimsonq.crimsonqStrings.WILL_DISCONNECT
 import typings.ioredis.anon.PartialSentinelAddress
 import typings.ioredis.anon.keyinkeyofCommandNameFlag
-import typings.ioredis.clusterMod.ClusterNode
-import typings.ioredis.clusterMod.default
-import typings.ioredis.clusterOptionsMod.ClusterOptions
-import typings.ioredis.commandMod.ArgumentTransformer
-import typings.ioredis.commandMod.ReplyTransformer
+import typings.ioredis.builtClusterClusterOptionsMod.ClusterOptions
+import typings.ioredis.builtClusterMod.ClusterNode
+import typings.ioredis.builtClusterMod.default
+import typings.ioredis.builtCommandMod.ArgumentTransformer
+import typings.ioredis.builtCommandMod.ReplyTransformer
+import typings.ioredis.builtConnectorsSentinelConnectorMod.SentinelConnectionOptions
+import typings.ioredis.builtRedisMod.Redis
+import typings.ioredis.builtRedisRedisOptionsMod.RedisOptions
+import typings.ioredis.builtScanStreamMod.Options
 import typings.ioredis.mod.Command
-import typings.ioredis.redisMod.Redis
-import typings.ioredis.redisOptionsMod.RedisOptions
-import typings.ioredis.scanStreamMod.Options
-import typings.ioredis.sentinelConnectorMod.SentinelConnectionOptions
 import typings.std.ConstructorParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -181,7 +181,7 @@ object anon {
     
     var Command: TypeofCommandInstantiable = js.native
     
-    var Pipeline: Instantiable1[/* redis */ typings.ioredis.redisMod.default, typings.ioredis.mod.Pipeline] = js.native
+    var Pipeline: Instantiable1[/* redis */ typings.ioredis.builtRedisMod.default, typings.ioredis.mod.Pipeline] = js.native
     
     /**
       * This is the major component of ioredis.

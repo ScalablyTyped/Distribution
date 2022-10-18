@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRCamera")
 @js.native
 open class WebXRCamera protected ()
-  extends typings.babylonjs.legacyMod.WebXRCamera {
+  extends typings.babylonjs.legacyLegacyMod.WebXRCamera {
   /**
     * Creates a new webXRCamera, this should only be set at the camera after it has been updated by the xrSessionManager
     * @param name the name of the camera
@@ -17,7 +17,7 @@ open class WebXRCamera protected ()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager
   ) = this()
 }
 /* static members */

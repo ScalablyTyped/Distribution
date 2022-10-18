@@ -216,7 +216,11 @@ trait TypeofMongoNpmModule extends StObject {
   
   var ConnectionReadyEvent: Instantiable0[typings.mongodb.mod.ConnectionReadyEvent]
   
-  var DBRef: Instantiable2[/* collection */ String, /* oid */ ObjectId, typings.mongodb.mod.DBRef]
+  var DBRef: Instantiable2[
+    /* collection */ String, 
+    /* oid */ typings.bson.mod.ObjectId, 
+    typings.mongodb.mod.DBRef
+  ]
   
   var Db: TypeofDb
   
@@ -374,14 +378,9 @@ trait TypeofMongoNpmModule extends StObject {
   
   var MongoWriteConcernError: Instantiable1[/* message */ ErrorDescription, typings.mongodb.mod.MongoWriteConcernError]
   
-  val ObjectID: Instantiable0[ObjectId] & typings.mongodb.anon.TypeofObjectId
+  val ObjectID: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any
   
-  /**
-    * A class representation of the BSON ObjectId type.
-    * @public
-    * @category BSONType
-    */
-  var ObjectId: Instantiable0[typings.mongodb.mod.ObjectId] & TypeofObjectId
+  val ObjectId: Any
   
   var OrderedBulkOperation: Instantiable0[typings.mongodb.mod.OrderedBulkOperation]
   
@@ -446,7 +445,7 @@ trait TypeofMongoNpmModule extends StObject {
     /* serverDescriptions */ js.UndefOr[(Map[String, ServerDescription]) | Null], 
     /* setName */ js.UndefOr[String | Null], 
     /* maxSetVersion */ js.UndefOr[Double | Null], 
-    /* maxElectionId */ js.UndefOr[ObjectId | Null], 
+    /* maxElectionId */ js.UndefOr[typings.bson.mod.ObjectId | Null], 
     /* commonWireVersion */ js.UndefOr[Double | Null], 
     /* options */ js.UndefOr[TopologyDescriptionOptions | Null], 
     typings.mongodb.mod.TopologyDescription
@@ -590,8 +589,8 @@ object TypeofMongoNpmModule {
     MongoTransactionError: Instantiable1[/* message */ String, MongoTransactionError],
     MongoUnexpectedServerResponseError: Instantiable1[/* message */ String, MongoUnexpectedServerResponseError],
     MongoWriteConcernError: Instantiable1[/* message */ ErrorDescription, MongoWriteConcernError],
-    ObjectID: Instantiable0[ObjectId] & typings.mongodb.anon.TypeofObjectId,
-    ObjectId: Instantiable0[typings.mongodb.mod.ObjectId] & TypeofObjectId,
+    ObjectID: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any,
+    ObjectId: Any,
     OrderedBulkOperation: Instantiable0[OrderedBulkOperation],
     ProfilingLevel: TypeofProfilingLevel,
     Promise: TypeofPromise & Instantiable0[Promise],
@@ -860,7 +859,7 @@ object TypeofMongoNpmModule {
     
     inline def setMongoWriteConcernError(value: Instantiable1[/* message */ ErrorDescription, MongoWriteConcernError]): Self = StObject.set(x, "MongoWriteConcernError", value.asInstanceOf[js.Any])
     
-    inline def setObjectID(value: Instantiable0[ObjectId] & typings.mongodb.anon.TypeofObjectId): Self = StObject.set(x, "ObjectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectId */ Any): Self = StObject.set(x, "ObjectID", value.asInstanceOf[js.Any])
     
     inline def setOrderedBulkOperation(value: Instantiable0[OrderedBulkOperation]): Self = StObject.set(x, "OrderedBulkOperation", value.asInstanceOf[js.Any])
     

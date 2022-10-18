@@ -1,7 +1,6 @@
 package typings.jspreadsheetCe.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.jspreadsheetCe.anon.Colspan
 import typings.jspreadsheetCe.jspreadsheetCeStrings.center
 import typings.jspreadsheetCe.jspreadsheetCeStrings.left
@@ -77,9 +76,7 @@ trait InitializationOptions extends StObject {
   /** Load this data into the javascript table: array */
   var data: js.UndefOr[
     js.Array[
-      (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-    */ typings.jspreadsheetCe.jspreadsheetCeStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue]
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue]
     ]
   ] = js.undefined
   
@@ -278,18 +275,14 @@ object InitializationOptions {
     
     inline def setData(
       value: js.Array[
-          (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-      */ typings.jspreadsheetCe.jspreadsheetCeStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue]
+          (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue]
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setDataVarargs(
-      value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-      */ typings.jspreadsheetCe.jspreadsheetCeStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue])*
+      value: ((/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue])*
     ): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDefaultColAlign(value: center | left | right): Self = StObject.set(x, "defaultColAlign", value.asInstanceOf[js.Any])

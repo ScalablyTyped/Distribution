@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DrawerSize extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.blueprintjsCore.drawerMod.DrawerSize & String] = js.native
+  def apply(value: String): js.UndefOr[typings.blueprintjsCore.libEsmComponentsDrawerDrawerMod.DrawerSize & String] = js.native
   
-  /* "90%" */ val LARGE: typings.blueprintjsCore.drawerMod.DrawerSize.LARGE & String = js.native
+  /* "90%" */ val LARGE: typings.blueprintjsCore.libEsmComponentsDrawerDrawerMod.DrawerSize.LARGE & String = js.native
   
-  /* "360px" */ val SMALL: typings.blueprintjsCore.drawerMod.DrawerSize.SMALL & String = js.native
+  /* "360px" */ val SMALL: typings.blueprintjsCore.libEsmComponentsDrawerDrawerMod.DrawerSize.SMALL & String = js.native
   
-  /* "50%" */ val STANDARD: typings.blueprintjsCore.drawerMod.DrawerSize.STANDARD & String = js.native
+  /* "50%" */ val STANDARD: typings.blueprintjsCore.libEsmComponentsDrawerDrawerMod.DrawerSize.STANDARD & String = js.native
 }

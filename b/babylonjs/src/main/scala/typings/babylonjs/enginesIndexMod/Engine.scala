@@ -3,12 +3,12 @@ package typings.babylonjs.enginesIndexMod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.WebGL2RenderingContext
-import typings.babylonjs.iaudioengineMod.IAudioEngine
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
-import typings.babylonjs.loadingScreenMod.ILoadingScreen
-import typings.babylonjs.materialMod.Material
-import typings.babylonjs.postProcessMod.PostProcess
-import typings.babylonjs.thinEngineMod.EngineOptions
+import typings.babylonjs.audioInterfacesIaudioengineMod.IAudioEngine
+import typings.babylonjs.enginesThinEngineMod.EngineOptions
+import typings.babylonjs.loadingLoadingScreenMod.ILoadingScreen
+import typings.babylonjs.materialsMaterialMod.Material
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
+import typings.babylonjs.postProcessesPostProcessMod.PostProcess
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioContext
 import typings.std.AudioDestinationNode
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "Engine")
 @js.native
 open class Engine protected ()
-  extends typings.babylonjs.engineMod.Engine {
+  extends typings.babylonjs.enginesEngineMod.Engine {
   /**
     * Creates a new engine
     * @param canvasOrContext defines the canvas or WebGL context to use for rendering. If you provide a WebGL context, Babylon.js will not hook events on the canvas (like pointers, keyboards, etc...) so no event observables will be available. This is mostly used when Babylon.js is used as a plugin on a system which already used the WebGL context

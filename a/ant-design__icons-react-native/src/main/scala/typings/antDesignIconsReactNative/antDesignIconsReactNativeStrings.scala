@@ -1,7 +1,7 @@
 package typings.antDesignIconsReactNative
 
-import typings.antDesignIconsReactNative.fillMod.FillGlyphMapType
-import typings.antDesignIconsReactNative.outlineMod.OutlineGlyphMapType
+import typings.antDesignIconsReactNative.libFillMod.FillGlyphMapType
+import typings.antDesignIconsReactNative.libOutlineMod.OutlineGlyphMapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,10 +1,9 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.fpTs.anon.FnCallStartWithAs
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.readonlyRecordMod.ReadonlyRecord_
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libReadonlyRecordMod.ReadonlyRecord_
+import typings.fpTs.libSemigroupMod.Semigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,21 +39,15 @@ object semigroup {
   inline def getObjectSemigroup[A /* <: js.Object */](): Semigroup[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getObjectSemigroup")().asInstanceOf[Semigroup[A]]
   
   inline def getStructSemigroup[O /* <: ReadonlyRecord_[String, Any] */](
-    semigroups: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof O ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<O[K]>}
-    */ typings.fpTs.fpTsStrings.getStructSemigroup & TopLevel[O]
+    semigroups: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof O ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<O[K]>} */ js.Any
   ): Semigroup[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStructSemigroup")(semigroups.asInstanceOf[js.Any]).asInstanceOf[Semigroup[O]]
   
   inline def getTupleSemigroup[T /* <: js.Array[Semigroup[Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param semigroups because its type T is not an array type */ semigroups: T
   ): Semigroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleSemigroup & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? A : never} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTupleSemigroup")(semigroups.asInstanceOf[js.Any]).asInstanceOf[Semigroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleSemigroup & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? A : never} */ js.Any
   ]]
   
   inline def intercalate[A](middle: A): js.Function1[/* S */ Semigroup[A], Semigroup[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intercalate")(middle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* S */ Semigroup[A], Semigroup[A]]]
@@ -92,22 +85,14 @@ object semigroup {
   val semigroupVoid: Semigroup[Unit] = js.native
   
   inline def struct[A](
-    semigroups: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<A[K]>}
-    */ typings.fpTs.fpTsStrings.struct & TopLevel[A]
+    semigroups: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<A[K]>} */ js.Any
   ): Semigroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K_1 in keyof A ]: A[K_1]}
-    */ typings.fpTs.fpTsStrings.struct & TopLevel[A]
+    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K_1 in keyof A ]: A[K_1]} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(semigroups.asInstanceOf[js.Any]).asInstanceOf[Semigroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K_1 in keyof A ]: A[K_1]}
-    */ typings.fpTs.fpTsStrings.struct & TopLevel[A]
+    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K_1 in keyof A ]: A[K_1]} */ js.Any
   ]]
   
   inline def tuple[A /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param semigroups because its type {[ K in keyof A ]: Semigroup<A[K]>} is not an array type */ semigroups: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<A[K]>}
-    */ typings.fpTs.fpTsStrings.tuple & TopLevel[A]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param semigroups because its type {[ K in keyof A ]: Semigroup<A[K]>} is not an array type */ semigroups: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<A[K]>} */ js.Any
   ): Semigroup[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(semigroups.asInstanceOf[js.Any]).asInstanceOf[Semigroup[A]]
 }

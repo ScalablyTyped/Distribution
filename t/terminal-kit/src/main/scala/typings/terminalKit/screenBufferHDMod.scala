@@ -1,7 +1,7 @@
 package typings.terminalKit
 
+import typings.terminalKit.anon.AttrChar
 import typings.terminalKit.anon.`0`
-import typings.terminalKit.anon.`1`
 import typings.terminalKit.screenBufferMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -260,6 +260,6 @@ object screenBufferHDMod {
     
     def draw(options: typings.terminalKit.anon.Blending): Unit = js.native
     
-    def fill(options: `1`): Unit = js.native
+    def fill(options: AttrChar): Unit = js.native
   }
 }

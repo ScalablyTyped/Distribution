@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongodb", "AbstractCursor")
+/* note: abstract class */ @JSImport("mongodb", "AbstractCursor")
 @js.native
-abstract class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] () extends TypedEventEmitter[CursorEvents] {
+open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] () extends TypedEventEmitter[CursorEvents] {
   def this(options: EventEmitterOptions) = this()
   
   /**

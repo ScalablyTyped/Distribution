@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "remx" : "4.0.108-rc.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "remx" : "4.0.108-rc.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

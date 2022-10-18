@@ -1,18 +1,18 @@
 package typings.victoryCore
 
-import typings.victoryCore.addEventsMod.VictoryComponentCommonRole
-import typings.victoryCore.lineHelpersMod.CurveName
-import typings.victoryCore.propTypesMod.AxisType
-import typings.victoryCore.propTypesMod.InterpolationPropType
-import typings.victoryCore.propTypesMod.ScaleName
-import typings.victoryCore.propTypesMod.SortOrderPropType
-import typings.victoryCore.propTypesMod._ColorScalePropType
-import typings.victoryCore.typesMod.ScatterSymbolType
-import typings.victoryCore.victoryAnimationMod.AnimationEasing
-import typings.victoryCore.victoryLabelMod.LabelOrientationType
-import typings.victoryCore.victoryLabelMod.TextAnchorType
-import typings.victoryCore.victoryThemeTypesMod.OrientationTypes
-import typings.victoryCore.victoryThemeTypesMod.VerticalAnchorType
+import typings.victoryCore.libTypesPropTypesMod.AxisType
+import typings.victoryCore.libTypesPropTypesMod.InterpolationPropType
+import typings.victoryCore.libTypesPropTypesMod.ScaleName
+import typings.victoryCore.libTypesPropTypesMod.SortOrderPropType
+import typings.victoryCore.libTypesPropTypesMod._ColorScalePropType
+import typings.victoryCore.libVictoryAnimationVictoryAnimationMod.AnimationEasing
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.LabelOrientationType
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.TextAnchorType
+import typings.victoryCore.libVictoryPrimitivesTypesMod.ScatterSymbolType
+import typings.victoryCore.libVictoryThemeTypesMod.OrientationTypes
+import typings.victoryCore.libVictoryThemeTypesMod.VerticalAnchorType
+import typings.victoryCore.libVictoryUtilAddEventsMod.VictoryComponentCommonRole
+import typings.victoryCore.libVictoryUtilLineHelpersMod.CurveName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

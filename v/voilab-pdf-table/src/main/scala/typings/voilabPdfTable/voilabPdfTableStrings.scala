@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object voilabPdfTableStrings {
   
   @js.native
-  sealed trait VoilabPdfTableHeader extends StObject
-  inline def VoilabPdfTableHeader: VoilabPdfTableHeader = "VoilabPdfTableHeader".asInstanceOf[VoilabPdfTableHeader]
-  
-  @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   

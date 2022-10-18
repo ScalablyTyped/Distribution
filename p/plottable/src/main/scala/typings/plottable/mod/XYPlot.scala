@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Scale} yScale The y scale to use.
   */
 open class XYPlot[X, Y] ()
-  extends typings.plottable.xyPlotMod.XYPlot[X, Y]
+  extends typings.plottable.buildSrcPlotsXyPlotMod.XYPlot[X, Y]
 /* static members */
 object XYPlot {
   

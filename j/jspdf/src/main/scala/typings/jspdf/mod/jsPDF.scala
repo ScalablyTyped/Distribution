@@ -1323,7 +1323,9 @@ open class jsPDF () extends StObject {
   def setHeaderFunction(func: js.Function2[/* jsPDFInstance */ this.type, /* pages */ Double, js.Array[Double]]): jsPDF = js.native
   
   // jsPDF plugin: setlanguage
-  def setLanguage(langCode: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 196 */ Any): jsPDF = js.native
+  def setLanguage(
+    langCode: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 196, starting with typings.jspdf.jspdfStrings.af, typings.jspdf.jspdfStrings.sq, typings.jspdf.jspdfStrings.ar */ Any
+  ): jsPDF = js.native
   
   def setLineCap(style: String): jsPDF = js.native
   def setLineCap(style: Double): jsPDF = js.native

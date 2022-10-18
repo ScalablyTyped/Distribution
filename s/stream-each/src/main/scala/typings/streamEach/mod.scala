@@ -1,7 +1,7 @@
 package typings.streamEach
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(
-    stream: ReadableStream[Any],
+    stream: ReadableStream,
     iterator: js.Function2[
       /* data */ Buffer | String, 
       /* next */ js.Function1[/* error */ js.UndefOr[js.Error], Unit], 

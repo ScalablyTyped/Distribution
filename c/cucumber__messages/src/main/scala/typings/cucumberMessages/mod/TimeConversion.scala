@@ -11,15 +11,15 @@ object TimeConversion {
   val ^ : js.Any = js.native
   
   inline def addDurations(
-    durationA: typings.cucumberMessages.messagesMod.Duration,
-    durationB: typings.cucumberMessages.messagesMod.Duration
-  ): typings.cucumberMessages.messagesMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("addDurations")(durationA.asInstanceOf[js.Any], durationB.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.messagesMod.Duration]
+    durationA: typings.cucumberMessages.distCjsSrcMessagesMod.Duration,
+    durationB: typings.cucumberMessages.distCjsSrcMessagesMod.Duration
+  ): typings.cucumberMessages.distCjsSrcMessagesMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("addDurations")(durationA.asInstanceOf[js.Any], durationB.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.distCjsSrcMessagesMod.Duration]
   
-  inline def durationToMilliseconds(duration: typings.cucumberMessages.messagesMod.Duration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("durationToMilliseconds")(duration.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def durationToMilliseconds(duration: typings.cucumberMessages.distCjsSrcMessagesMod.Duration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("durationToMilliseconds")(duration.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def millisecondsSinceEpochToTimestamp(millisecondsSinceEpoch: Double): typings.cucumberMessages.messagesMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("millisecondsSinceEpochToTimestamp")(millisecondsSinceEpoch.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.messagesMod.Timestamp]
+  inline def millisecondsSinceEpochToTimestamp(millisecondsSinceEpoch: Double): typings.cucumberMessages.distCjsSrcMessagesMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("millisecondsSinceEpochToTimestamp")(millisecondsSinceEpoch.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distCjsSrcMessagesMod.Timestamp]
   
-  inline def millisecondsToDuration(durationInMilliseconds: Double): typings.cucumberMessages.messagesMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("millisecondsToDuration")(durationInMilliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.messagesMod.Duration]
+  inline def millisecondsToDuration(durationInMilliseconds: Double): typings.cucumberMessages.distCjsSrcMessagesMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("millisecondsToDuration")(durationInMilliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.distCjsSrcMessagesMod.Duration]
   
-  inline def timestampToMillisecondsSinceEpoch(timestamp: typings.cucumberMessages.messagesMod.Timestamp): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampToMillisecondsSinceEpoch")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def timestampToMillisecondsSinceEpoch(timestamp: typings.cucumberMessages.distCjsSrcMessagesMod.Timestamp): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampToMillisecondsSinceEpoch")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class WebGLUniforms protected ()
   extends typings.three.mod.WebGLUniforms {
-  def this(gl: WebGLRenderingContext, program: typings.three.webGLProgramMod.WebGLProgram) = this()
+  def this(gl: WebGLRenderingContext, program: typings.three.srcRenderersWebglWebGLProgramMod.WebGLProgram) = this()
 }
 /* static members */
 object WebGLUniforms {
@@ -24,6 +24,6 @@ object WebGLUniforms {
     gl: WebGLRenderingContext,
     seq: Any,
     values: js.Array[Any],
-    textures: typings.three.webGLTexturesMod.WebGLTextures
+    textures: typings.three.srcRenderersWebglWebGLTexturesMod.WebGLTextures
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("upload")(gl.asInstanceOf[js.Any], seq.asInstanceOf[js.Any], values.asInstanceOf[js.Any], textures.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

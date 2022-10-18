@@ -1,6 +1,6 @@
 package typings.grommet.anon
 
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
 import typings.grommet.utilsMod.AlignContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

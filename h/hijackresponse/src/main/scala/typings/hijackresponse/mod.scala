@@ -20,7 +20,9 @@ object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in std.Exclude<keyof node.stream.Readable, keyof express.express.Response<any, std.Record<string, any>>> ]: node.stream.Readable[P]} */ @js.native
-  trait HijackedResponse[ResBody] extends Response {
+  trait HijackedResponse[ResBody]
+    extends StObject
+       with Response {
     
     def destroyHijacked(): Boolean = js.native
     

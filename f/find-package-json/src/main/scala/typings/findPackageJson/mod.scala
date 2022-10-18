@@ -2,6 +2,7 @@ package typings.findPackageJson
 
 import typings.findPackageJson.findPackageJsonBooleans.`false`
 import typings.findPackageJson.findPackageJsonBooleans.`true`
+import typings.node.NodeModule
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,9 +18,7 @@ object mod {
     */
   inline def apply(): FinderIterator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FinderIterator]
   inline def apply(root: String): FinderIterator = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[FinderIterator]
-  inline def apply(
-    root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
-  ): FinderIterator = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[FinderIterator]
+  inline def apply(root: NodeModule): FinderIterator = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[FinderIterator]
   
   @JSImport("find-package-json", JSImport.Namespace)
   @js.native

@@ -1,6 +1,5 @@
 package typings.barnard59Base
 
-import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,5 +26,13 @@ object combineMod {
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof streams */ Any
   ]]
   
-  type FirstOrDuplex[First, T /* <: js.Array[typings.node.streamMod.^] */] = First | Duplex
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T[1] extends never ? node.stream.Duplex : First
+    }}}
+    */
+  @js.native
+  trait FirstOrDuplex[First, T /* <: js.Array[typings.node.streamMod.^] */] extends StObject
 }

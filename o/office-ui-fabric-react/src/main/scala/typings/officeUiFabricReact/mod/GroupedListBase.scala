@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.Compact
-import typings.officeUiFabricReact.groupedListBaseMod.IGroupedListState
-import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDotbaseMod.IGroupedListState
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroupedListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

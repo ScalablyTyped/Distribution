@@ -40,7 +40,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.swiperSwiperMod.SwiperRef
+import typings.antdMobile.esComponentsSwiperSwiperMod.SwiperRef
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactElement

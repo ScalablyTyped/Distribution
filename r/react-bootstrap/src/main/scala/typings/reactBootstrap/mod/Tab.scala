@@ -19,32 +19,32 @@ object Tab {
   @JSImport("react-bootstrap", "Tab.Container")
   @js.native
   open class Container ()
-    extends typings.reactBootstrap.tabContainerMod.^
+    extends typings.reactBootstrap.libTabContainerMod.^
   /* static member */
   @JSImport("react-bootstrap", "Tab.Container")
   @js.native
-  def Container: Instantiable0[typings.reactBootstrap.tabContainerMod.^] = js.native
-  inline def Container_=(x: Instantiable0[typings.reactBootstrap.tabContainerMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
+  def Container: Instantiable0[typings.reactBootstrap.libTabContainerMod.^] = js.native
+  inline def Container_=(x: Instantiable0[typings.reactBootstrap.libTabContainerMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Tab.Content")
   @js.native
   open class Content ()
-    extends typings.reactBootstrap.tabContentMod.^
+    extends typings.reactBootstrap.libTabContentMod.^
   /* static member */
   @JSImport("react-bootstrap", "Tab.Content")
   @js.native
-  def Content: Instantiable0[typings.reactBootstrap.tabContentMod.^] = js.native
-  inline def Content_=(x: Instantiable0[typings.reactBootstrap.tabContentMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  def Content: Instantiable0[typings.reactBootstrap.libTabContentMod.^] = js.native
+  inline def Content_=(x: Instantiable0[typings.reactBootstrap.libTabContentMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Tab.Pane")
   @js.native
   open class Pane ()
-    extends typings.reactBootstrap.tabPaneMod.^
+    extends typings.reactBootstrap.libTabPaneMod.^
   /* static member */
   @JSImport("react-bootstrap", "Tab.Pane")
   @js.native
-  def Pane: Instantiable0[typings.reactBootstrap.tabPaneMod.^] = js.native
-  inline def Pane_=(x: Instantiable0[typings.reactBootstrap.tabPaneMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pane")(x.asInstanceOf[js.Any])
+  def Pane: Instantiable0[typings.reactBootstrap.libTabPaneMod.^] = js.native
+  inline def Pane_=(x: Instantiable0[typings.reactBootstrap.libTabPaneMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pane")(x.asInstanceOf[js.Any])
 }

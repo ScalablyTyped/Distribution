@@ -3,11 +3,12 @@ package typings.angularForms.mod
 import typings.angularForms.anon.EmitEvent
 import typings.angularForms.anon.OnlySelf
 import typings.angularForms.anon.`0`
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "AbstractControl")
+/* note: abstract class */ @JSImport("@angular/forms", "AbstractControl")
 @js.native
 /**
   * Initialize the AbstractControl instance.
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param asyncValidators The function or array of functions that is used to determine validity of
   *     this control asynchronously.
   */
-abstract class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObject {
+open class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObject {
   def this(validators: js.Array[ValidatorFn]) = this()
   def this(validators: ValidatorFn) = this()
   def this(validators: js.Array[ValidatorFn], asyncValidators: js.Array[AsyncValidatorFn]) = this()
@@ -507,6 +508,11 @@ abstract class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StO
     *
     * Calling `setErrors` also updates the validity of the parent control.
     *
+    * @param opts Configuration options that determine how the control propagates
+    * changes and emits events after the control errors are set.
+    * * `emitEvent`: When true or not supplied (the default), the `statusChanges`
+    * observable emits an event after the errors are set.
+    *
     * @usageNotes
     *
     * ### Manually set the errors for a control
@@ -577,7 +583,7 @@ abstract class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StO
     * @see {@link AbstractControl.status}
     *
     */
-  val statusChanges: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<FormControlStatus> */ Any = js.native
+  val statusChanges: Observable_[FormControlStatus] = js.native
   
   /**
     * True if the control is marked as `touched`.
@@ -656,5 +662,5 @@ abstract class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StO
     * the UI or programmatically. It also emits an event each time you call enable() or disable()
     * without passing along {emitEvent: false} as a function argument.
     */
-  val valueChanges: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<TValue> */ Any = js.native
+  val valueChanges: Observable_[TValue] = js.native
 }

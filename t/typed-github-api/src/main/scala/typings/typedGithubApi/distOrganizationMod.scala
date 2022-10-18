@@ -2,12 +2,12 @@ package typings.typedGithubApi
 
 import typings.moment.mod.Moment
 import typings.typedGithubApi.anon.Name
+import typings.typedGithubApi.distApiInterfacesUserMod.Organization
+import typings.typedGithubApi.distApiInterfacesUserMod.OrganizationSummary
+import typings.typedGithubApi.distApiInterfacesUserMod.PrivateOrganization
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesOrganizationMod.MyOrganization
 import typings.typedGithubApi.distOwnerRefMod.OwnerRefClass
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.organizationMod.MyOrganization
-import typings.typedGithubApi.userMod.Organization
-import typings.typedGithubApi.userMod.OrganizationSummary
-import typings.typedGithubApi.userMod.PrivateOrganization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,9 +50,9 @@ object distOrganizationMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
-  - typings.typedGithubApi.organizationMod.OrganizationSummary because Already inherited
-  - typings.typedGithubApi.organizationMod.Organization because var conflicts: avatarUri, description, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt, htmlUri, hasOrganizationProjects, hasRepositoryProjects */ @JSImport("typed-github-api/dist/organization", "OrganizationClass")
+  - typings.typedGithubApi.distInterfacesOwnerRefMod.OwnerRef because Already inherited
+  - typings.typedGithubApi.distInterfacesOrganizationMod.OrganizationSummary because Already inherited
+  - typings.typedGithubApi.distInterfacesOrganizationMod.Organization because var conflicts: avatarUri, description, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt, htmlUri, hasOrganizationProjects, hasRepositoryProjects */ @JSImport("typed-github-api/dist/organization", "OrganizationClass")
   @js.native
   open class OrganizationClass protected () extends OrganizationSummaryClass {
     def this(data: Organization, options: OptionsOrRef) = this()
@@ -87,8 +87,8 @@ object distOrganizationMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.typedGithubApi.ownerRefMod.OwnerRef because Already inherited
-  - typings.typedGithubApi.organizationMod.OrganizationSummary because var conflicts: login. Inlined id, avatarUri, description */ @JSImport("typed-github-api/dist/organization", "OrganizationSummaryClass")
+  - typings.typedGithubApi.distInterfacesOwnerRefMod.OwnerRef because Already inherited
+  - typings.typedGithubApi.distInterfacesOrganizationMod.OrganizationSummary because var conflicts: login. Inlined id, avatarUri, description */ @JSImport("typed-github-api/dist/organization", "OrganizationSummaryClass")
   @js.native
   open class OrganizationSummaryClass protected () extends OwnerRefClass {
     def this(data: OrganizationSummary, options: OptionsOrRef) = this()

@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.saxes.mod.SaxesAttributeNS
   - typings.saxes.mod.SaxesAttributePlain
 */
-trait SaxesAttribute
-  extends StObject
-     with AttributeEventForOptions[Any]
+trait SaxesAttribute extends StObject
 object SaxesAttribute {
   
   inline def SaxesAttributeNS(local: String, name: String, prefix: String, uri: String, value: String): typings.saxes.mod.SaxesAttributeNS = {

@@ -1,8 +1,8 @@
 package typings.reactMovable
 
 import typings.reactMovable.anon.Canceled
-import typings.reactMovable.listMod.default
-import typings.reactMovable.typesMod.IProps
+import typings.reactMovable.libListMod.default
+import typings.reactMovable.libTypesMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

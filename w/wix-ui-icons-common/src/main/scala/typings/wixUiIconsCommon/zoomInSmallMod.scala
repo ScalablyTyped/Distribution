@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsZoomInSmallMod.ZoomInSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomInSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ZoomInSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ZoomInSmall", JSImport.Default)
   @js.native
   val default: FC[ZoomInSmallProps] = js.native
-  
-  trait ZoomInSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object ZoomInSmallProps {
-    
-    inline def apply(): ZoomInSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ZoomInSmallProps]
-    }
-    
-    extension [Self <: ZoomInSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[ZoomInSmallProps]
   

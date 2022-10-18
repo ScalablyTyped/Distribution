@@ -50,6 +50,9 @@ trait TemplatesType[T, F] extends StObject {
   
   /** The template to use for rendering information about an unsupported field type in the schema */
   var UnsupportedFieldTemplate: ComponentType[UnsupportedFieldProps[T, F]]
+  
+  /** The template to use for rendering a field that allows a user to add additional properties */
+  var WrapIfAdditionalTemplate: ComponentType[WrapIfAdditionalTemplateProps[T, F]]
 }
 object TemplatesType {
   
@@ -67,9 +70,10 @@ object TemplatesType {
     FieldTemplate: ComponentType[FieldTemplateProps[T, F]],
     ObjectFieldTemplate: ComponentType[ObjectFieldTemplateProps[T, F]],
     TitleFieldTemplate: ComponentType[TitleFieldProps[T, F]],
-    UnsupportedFieldTemplate: ComponentType[UnsupportedFieldProps[T, F]]
+    UnsupportedFieldTemplate: ComponentType[UnsupportedFieldProps[T, F]],
+    WrapIfAdditionalTemplate: ComponentType[WrapIfAdditionalTemplateProps[T, F]]
   ): TemplatesType[T, F] = {
-    val __obj = js.Dynamic.literal(ArrayFieldDescriptionTemplate = ArrayFieldDescriptionTemplate.asInstanceOf[js.Any], ArrayFieldItemTemplate = ArrayFieldItemTemplate.asInstanceOf[js.Any], ArrayFieldTemplate = ArrayFieldTemplate.asInstanceOf[js.Any], ArrayFieldTitleTemplate = ArrayFieldTitleTemplate.asInstanceOf[js.Any], BaseInputTemplate = BaseInputTemplate.asInstanceOf[js.Any], ButtonTemplates = ButtonTemplates.asInstanceOf[js.Any], DescriptionFieldTemplate = DescriptionFieldTemplate.asInstanceOf[js.Any], ErrorListTemplate = ErrorListTemplate.asInstanceOf[js.Any], FieldErrorTemplate = FieldErrorTemplate.asInstanceOf[js.Any], FieldHelpTemplate = FieldHelpTemplate.asInstanceOf[js.Any], FieldTemplate = FieldTemplate.asInstanceOf[js.Any], ObjectFieldTemplate = ObjectFieldTemplate.asInstanceOf[js.Any], TitleFieldTemplate = TitleFieldTemplate.asInstanceOf[js.Any], UnsupportedFieldTemplate = UnsupportedFieldTemplate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ArrayFieldDescriptionTemplate = ArrayFieldDescriptionTemplate.asInstanceOf[js.Any], ArrayFieldItemTemplate = ArrayFieldItemTemplate.asInstanceOf[js.Any], ArrayFieldTemplate = ArrayFieldTemplate.asInstanceOf[js.Any], ArrayFieldTitleTemplate = ArrayFieldTitleTemplate.asInstanceOf[js.Any], BaseInputTemplate = BaseInputTemplate.asInstanceOf[js.Any], ButtonTemplates = ButtonTemplates.asInstanceOf[js.Any], DescriptionFieldTemplate = DescriptionFieldTemplate.asInstanceOf[js.Any], ErrorListTemplate = ErrorListTemplate.asInstanceOf[js.Any], FieldErrorTemplate = FieldErrorTemplate.asInstanceOf[js.Any], FieldHelpTemplate = FieldHelpTemplate.asInstanceOf[js.Any], FieldTemplate = FieldTemplate.asInstanceOf[js.Any], ObjectFieldTemplate = ObjectFieldTemplate.asInstanceOf[js.Any], TitleFieldTemplate = TitleFieldTemplate.asInstanceOf[js.Any], UnsupportedFieldTemplate = UnsupportedFieldTemplate.asInstanceOf[js.Any], WrapIfAdditionalTemplate = WrapIfAdditionalTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplatesType[T, F]]
   }
   
@@ -102,5 +106,7 @@ object TemplatesType {
     inline def setTitleFieldTemplate(value: ComponentType[TitleFieldProps[T, F]]): Self = StObject.set(x, "TitleFieldTemplate", value.asInstanceOf[js.Any])
     
     inline def setUnsupportedFieldTemplate(value: ComponentType[UnsupportedFieldProps[T, F]]): Self = StObject.set(x, "UnsupportedFieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setWrapIfAdditionalTemplate(value: ComponentType[WrapIfAdditionalTemplateProps[T, F]]): Self = StObject.set(x, "WrapIfAdditionalTemplate", value.asInstanceOf[js.Any])
   }
 }

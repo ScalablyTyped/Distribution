@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "Constants")
 @js.native
 open class Constants ()
-  extends typings.babylonjs.constantsMod.Constants
+  extends typings.babylonjs.enginesConstantsMod.Constants
 /* static members */
 object Constants {
   

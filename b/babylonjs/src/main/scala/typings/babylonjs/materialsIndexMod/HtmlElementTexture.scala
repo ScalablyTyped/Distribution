@@ -2,7 +2,7 @@ package typings.babylonjs.materialsIndexMod
 
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
-import typings.babylonjs.htmlElementTextureMod.IHtmlElementTextureOptions
+import typings.babylonjs.materialsTexturesHtmlElementTextureMod.IHtmlElementTextureOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "HtmlElementTexture")
 @js.native
 open class HtmlElementTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.HtmlElementTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.HtmlElementTexture {
   def this(name: String, element: HTMLCanvasElement, options: IHtmlElementTextureOptions) = this()
   /**
     * Instantiates a HtmlElementTexture from the following parameters.

@@ -1,7 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.DebitedBankAccountData
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsModelsBankAccountMod.bankAccount.DebitedBankAccountData
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,5 +47,5 @@ open class DebitedBankAccount protected ()
     * The Type of the bank account
     */
   /* CompleteClass */
-  var Type: typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.BankAccountType = js.native
+  var Type: typings.mangopay2NodejsSdk.typingsModelsBankAccountMod.bankAccount.BankAccountType = js.native
 }

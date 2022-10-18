@@ -1,8 +1,8 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.RouteConfigComponent
-import typings.reactNavigationCore.typesMod.ScreenComponentType
-import typings.reactNavigationRouters.typesMod.ParamListBase
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.RouteConfigComponent
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.ScreenComponentType
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -8,11 +8,11 @@ trait ParametersPathRunnergroupid extends StObject {
   
   var parameters: PathRunnergroupid
   
-  var responses: `200Content20`
+  var responses: `200ContentApplicationjsonAllowspublicrepositories`
 }
 object ParametersPathRunnergroupid {
   
-  inline def apply(parameters: PathRunnergroupid, responses: `200Content20`): ParametersPathRunnergroupid = {
+  inline def apply(parameters: PathRunnergroupid, responses: `200ContentApplicationjsonAllowspublicrepositories`): ParametersPathRunnergroupid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRunnergroupid]
   }
@@ -21,6 +21,6 @@ object ParametersPathRunnergroupid {
     
     inline def setParameters(value: PathRunnergroupid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content20`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonAllowspublicrepositories`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

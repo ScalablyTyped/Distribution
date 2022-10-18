@@ -1,6 +1,6 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.mathVectorMod.Vector2
+import typings.babylonjs.mathsMathDotvectorMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "TexturePackerFrame")
 @js.native
 open class TexturePackerFrame protected ()
-  extends typings.babylonjs.texturesIndexMod.TexturePackerFrame {
+  extends typings.babylonjs.materialsTexturesIndexMod.TexturePackerFrame {
   /**
     * Initializes a texture package frame.
     * @param id The numerical frame identifier

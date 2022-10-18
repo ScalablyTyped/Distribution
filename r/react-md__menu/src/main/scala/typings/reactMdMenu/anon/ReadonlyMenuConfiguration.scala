@@ -1,9 +1,9 @@
 package typings.reactMdMenu.anon
 
 import typings.react.mod.ReactNode
-import typings.reactMdMenu.typesMod.RenderMenuAsSheet
-import typings.reactMdSheet.sheetMod.SheetPosition
-import typings.reactMdSheet.sheetMod.SheetVerticalSize
+import typings.reactMdMenu.typesTypesMod.RenderMenuAsSheet
+import typings.reactMdSheet.typesSheetMod.SheetPosition
+import typings.reactMdSheet.typesSheetMod.SheetVerticalSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

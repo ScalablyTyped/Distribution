@@ -4,7 +4,7 @@ import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.left
 import typings.baseui.baseuiStrings.right
 import typings.baseui.baseuiStrings.top
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject

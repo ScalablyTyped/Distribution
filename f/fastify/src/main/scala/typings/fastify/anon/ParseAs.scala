@@ -1,7 +1,5 @@
 package typings.fastify.anon
 
-import typings.fastify.fastifyStrings.buffer
-import typings.fastify.fastifyStrings.string
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +9,13 @@ trait ParseAs[parseAs /* <: String | Buffer */] extends StObject {
   
   var bodyLimit: js.UndefOr[Double] = js.undefined
   
-  var parseAs: string | buffer
+  var parseAs: /* import warning: importer.ImportType#apply Failed type conversion: parseAs extends node.buffer.<global>.Buffer ? 'buffer' : 'string' */ js.Any
 }
 object ParseAs {
   
-  inline def apply[parseAs /* <: String | Buffer */](parseAs: string | buffer): ParseAs[parseAs] = {
+  inline def apply[parseAs /* <: String | Buffer */](
+    parseAs: /* import warning: importer.ImportType#apply Failed type conversion: parseAs extends node.buffer.<global>.Buffer ? 'buffer' : 'string' */ js.Any
+  ): ParseAs[parseAs] = {
     val __obj = js.Dynamic.literal(parseAs = parseAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseAs[parseAs]]
   }
@@ -26,6 +26,8 @@ object ParseAs {
     
     inline def setBodyLimitUndefined: Self = StObject.set(x, "bodyLimit", js.undefined)
     
-    inline def setParseAs(value: string | buffer): Self = StObject.set(x, "parseAs", value.asInstanceOf[js.Any])
+    inline def setParseAs(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: parseAs extends node.buffer.<global>.Buffer ? 'buffer' : 'string' */ js.Any
+    ): Self = StObject.set(x, "parseAs", value.asInstanceOf[js.Any])
   }
 }

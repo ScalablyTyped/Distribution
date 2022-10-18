@@ -1,6 +1,6 @@
 package typings.yuka.mod
 
-import typings.yuka.priorityQueueMod.CompareFunction
+import typings.yuka.srcGraphExtraPriorityQueueMod.CompareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [compare] - The compare function used for sorting.
   */
 open class PriorityQueue[T] ()
-  extends typings.yuka.yukaMod.PriorityQueue[T] {
+  extends typings.yuka.srcYukaMod.PriorityQueue[T] {
   def this(compare: CompareFunction[T]) = this()
 }

@@ -7,6 +7,7 @@ import typings.gulpTypedoc.gulpTypedocStrings.modules
 import typings.gulpTypedoc.gulpTypedocStrings.none
 import typings.gulpTypedoc.gulpTypedocStrings.system
 import typings.gulpTypedoc.gulpTypedocStrings.umd
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ object mod {
     * @param options Typedoc options
     * @return Empty output stream (ends when the files are written)
     */
-  inline def apply(options: Options): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-typedoc", JSImport.Namespace)
   @js.native

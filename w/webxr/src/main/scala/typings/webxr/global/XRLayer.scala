@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ref: https://immersive-web.github.io/webxr/#xrlayer-interface
   */
 // tslint:disable-next-line no-empty-interface
-@JSGlobal("XRLayer")
+/* note: abstract class */ @JSGlobal("XRLayer")
 @js.native
-abstract class XRLayer ()
+open class XRLayer ()
   extends StObject
      with EventTarget

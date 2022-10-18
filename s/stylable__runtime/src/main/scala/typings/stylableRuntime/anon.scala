@@ -71,6 +71,7 @@ import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
+import typings.stylableRuntime.distTypesMod.StateMap
 import typings.stylableRuntime.stylableRuntimeStrings.`object`
 import typings.stylableRuntime.stylableRuntimeStrings.`var`
 import typings.stylableRuntime.stylableRuntimeStrings.a
@@ -211,7 +212,6 @@ import typings.stylableRuntime.stylableRuntimeStrings.ul
 import typings.stylableRuntime.stylableRuntimeStrings.video
 import typings.stylableRuntime.stylableRuntimeStrings.wbr
 import typings.stylableRuntime.stylableRuntimeStrings.xmp
-import typings.stylableRuntime.typesMod.StateMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

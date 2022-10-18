@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app sets the version of the application data in its app data store. */
-@JSGlobal("Windows.Storage.SetVersionRequest")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SetVersionRequest")
 @js.native
-abstract class SetVersionRequest ()
+open class SetVersionRequest ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SetVersionRequest {
   

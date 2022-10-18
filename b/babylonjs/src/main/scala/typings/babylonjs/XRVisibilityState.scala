@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * ref: https://immersive-web.github.io/webxr/#xrsession-interface
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.babylonjs.babylonjsStrings.visible
   - typings.babylonjs.babylonjsStrings.`visible-blurred`

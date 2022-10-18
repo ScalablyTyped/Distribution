@@ -1,6 +1,6 @@
 package typings.rcInputNumber
 
-import typings.rcInputNumber.miniDecimalMod.ValueType
+import typings.rcInputNumber.esUtilsMiniDecimalMod.ValueType
 import typings.rcInputNumber.rcInputNumberStrings.down
 import typings.rcInputNumber.rcInputNumberStrings.up
 import typings.react.mod.ReactNode

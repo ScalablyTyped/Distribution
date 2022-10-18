@@ -1,7 +1,7 @@
 package typings.expoDevServer.anon
 
 import typings.expoBunyan.mod.^
-import typings.expoDevServer.symbolicatorMod.StackFrame
+import typings.expoDevServer.buildWebpackSymbolicatorMod.StackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

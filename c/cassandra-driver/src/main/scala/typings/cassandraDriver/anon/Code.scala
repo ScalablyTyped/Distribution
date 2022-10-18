@@ -1,6 +1,6 @@
 package typings.cassandraDriver.anon
 
-import typings.cassandraDriver.typesMod.types.dataTypes
+import typings.cassandraDriver.libTypesMod.types.dataTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

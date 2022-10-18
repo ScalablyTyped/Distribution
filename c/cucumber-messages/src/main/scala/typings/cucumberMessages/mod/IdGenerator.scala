@@ -1,6 +1,6 @@
 package typings.cucumberMessages.mod
 
-import typings.cucumberMessages.idGeneratorMod.NewId
+import typings.cucumberMessages.distSrcIdGeneratorMod.NewId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.autolinker
 
-import typings.autolinker.stateMod.State
+import typings.autolinker.distCommonjsHtmlParserStateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

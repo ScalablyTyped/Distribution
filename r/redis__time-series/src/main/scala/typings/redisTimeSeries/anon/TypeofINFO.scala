@@ -1,7 +1,7 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisTimeSeries.infoMod.InfoRawReply
-import typings.redisTimeSeries.infoMod.InfoReply
+import typings.redisTimeSeries.distCommandsInfoMod.InfoRawReply
+import typings.redisTimeSeries.distCommandsInfoMod.InfoReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

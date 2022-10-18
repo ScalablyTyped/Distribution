@@ -34,10 +34,10 @@ trait SelectorQuery extends StObject {
   ```
   *
   * 最低基础库： `1.6.0` */
-  def in(/** 自定义组件实例 */
-  component: TrivialInstance): SelectorQuery = js.native
-  def in(/** 自定义组件实例 */
-  component: typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance): SelectorQuery = js.native
+  def in(
+    /** 自定义组件实例 */
+  component: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance
+  ): SelectorQuery = js.native
   
   /** [[NodesRef](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.html) SelectorQuery.select(string selector)](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.select.html)
     *

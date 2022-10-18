@@ -8,7 +8,7 @@ object DiagnosticRefreshRequest {
   
   @JSImport("vscode-languageserver", "DiagnosticRefreshRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "DiagnosticRefreshRequest.method")
   @js.native
@@ -16,5 +16,5 @@ object DiagnosticRefreshRequest {
   
   @JSImport("vscode-languageserver", "DiagnosticRefreshRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
 }

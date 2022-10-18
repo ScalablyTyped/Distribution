@@ -2,6 +2,7 @@ package typings.gulpPugLinter
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpPugLinter.mod.GulpPugLinter.Options
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,10 +40,7 @@ object mod extends Shortcut {
       }
     }
   }
-  type GulpPugLinter = js.Function1[
-    /* options */ js.UndefOr[Options], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]
+  type GulpPugLinter = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
   type _To = GulpPugLinter
   

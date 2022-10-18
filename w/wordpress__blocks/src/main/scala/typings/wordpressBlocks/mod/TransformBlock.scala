@@ -2,7 +2,7 @@ package typings.wordpressBlocks.mod
 
 import typings.std.Partial
 import typings.std.Record
-import typings.wordpressBlocks.wordpressBlocksStrings.block_
+import typings.wordpressBlocks.wordpressBlocksStrings.block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait TransformBlock[T /* <: Record[String, Any] */]
   
   def transform(attributes: T): BlockInstance[Partial[T]]
   
-  var `type`: block_
+  var `type`: block
 }
 object TransformBlock {
   
@@ -51,6 +51,6 @@ object TransformBlock {
     
     inline def setTransform(value: T => BlockInstance[Partial[T]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    inline def setType(value: block_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

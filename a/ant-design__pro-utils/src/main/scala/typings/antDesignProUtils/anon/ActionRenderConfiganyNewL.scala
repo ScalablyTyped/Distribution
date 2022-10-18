@@ -2,10 +2,10 @@ package typings.antDesignProUtils.anon
 
 import typings.antDesignProUtils.antDesignProUtilsStrings.Array
 import typings.antDesignProUtils.antDesignProUtilsStrings.Map
-import typings.antDesignProUtils.useEditableArrayMod.AddLineOptions
-import typings.antDesignProUtils.useEditableArrayMod.NewLineConfig
-import typings.antDesignProUtils.useEditableArrayMod.RecordKey
-import typings.rcFieldForm.interfaceMod.NamePath
+import typings.antDesignProUtils.esUseEditableArrayMod.AddLineOptions
+import typings.antDesignProUtils.esUseEditableArrayMod.NewLineConfig
+import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
+import typings.rcFieldForm.esInterfaceMod.NamePath
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject

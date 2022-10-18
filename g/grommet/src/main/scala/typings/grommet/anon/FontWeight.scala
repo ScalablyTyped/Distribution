@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
-import typings.grommet.anchorMod.AnchorExtendedProps
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
+import typings.grommet.componentsAnchorMod.AnchorExtendedProps
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.PropsOf

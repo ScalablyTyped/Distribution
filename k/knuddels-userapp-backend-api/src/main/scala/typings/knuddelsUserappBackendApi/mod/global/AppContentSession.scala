@@ -38,6 +38,11 @@ open class AppContentSession () extends StObject {
   def getUser(): User = js.native
   
   /**
+    * @see https://developer.knuddels.de/docs/classes/AppContentSession.html#method_isConnectedUsingDirectConnection
+    */
+  def isConnectedUsingDirectConnection(): Boolean = js.native
+  
+  /**
     * @see https://developer.knuddels.de/docs/classes/AppContentSession.html#method_remove
     */
   def remove(): Unit = js.native

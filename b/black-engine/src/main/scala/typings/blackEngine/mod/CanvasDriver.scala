@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "CanvasDriver")
 @js.native
 open class CanvasDriver protected ()
-  extends typings.blackEngine.canvasDriverMod.CanvasDriver {
+  extends typings.blackEngine.driversCanvasCanvasDriverMod.CanvasDriver {
   def this(containerElement: HTMLElement, width: Double, height: Double) = this()
 }

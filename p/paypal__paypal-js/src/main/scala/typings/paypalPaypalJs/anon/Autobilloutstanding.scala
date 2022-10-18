@@ -1,10 +1,10 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.commonsMod.AmountWithCurrencyCode
 import typings.paypalPaypalJs.paypalPaypalJsStrings.CANCEL
 import typings.paypalPaypalJs.paypalPaypalJsStrings.CONTINUE
 import typings.paypalPaypalJs.paypalPaypalJsStrings.POSTPAID
 import typings.paypalPaypalJs.paypalPaypalJsStrings.PREPAID
+import typings.paypalPaypalJs.typesApisCommonsMod.AmountWithCurrencyCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.meow
 
-import org.scalablytyped.runtime.TopLevel
 import typings.meow.meowBooleans.`false`
 import typings.meow.meowBooleans.`true`
 import typings.meow.meowStrings.boolean
@@ -8,7 +7,8 @@ import typings.meow.meowStrings.number
 import typings.meow.meowStrings.string
 import typings.std.ImportMeta
 import typings.std.Record
-import typings.typeFest.packageJsonMod.PackageJson
+import typings.typeFest.sourceCamelCasedPropertiesMod.CamelCasedProperties
+import typings.typeFest.sourcePackageJsonMod.PackageJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,8 +20,6 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default[Flags /* <: AnyFlags */](): Result[Flags] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result[Flags]]
-  inline def default[Flags /* <: AnyFlags */](helpMessage: String): Result[Flags] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(helpMessage.asInstanceOf[js.Any]).asInstanceOf[Result[Flags]]
-  inline def default[Flags /* <: AnyFlags */](helpMessage: String, options: Options[Flags]): Result[Flags] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(helpMessage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result[Flags]]
   inline def default[Flags /* <: AnyFlags */](options: Options[Flags]): Result[Flags] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Result[Flags]]
   
   type AnyFlag = StringFlag | BooleanFlag | NumberFlag
@@ -322,7 +320,15 @@ object mod {
     }
   }
   
-  type PossiblyOptionalFlag[Flag /* <: AnyFlag */, FlagType] = js.UndefOr[FlagType]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Flag extends {  isRequired :true} ? FlagType : Flag extends {  default :any} ? FlagType : FlagType | undefined
+    }}}
+    */
+  @js.native
+  trait PossiblyOptionalFlag[Flag /* <: AnyFlag */, FlagType] extends StObject
   
   @js.native
   trait Result[Flags /* <: AnyFlags */] extends StObject {
@@ -330,7 +336,7 @@ object mod {
     /**
     	Flags converted to camelCase excluding aliases.
     	*/
-    var flags: TypedFlags[Flags] & (Record[String, Any]) = js.native
+    var flags: CamelCasedProperties[TypedFlags[Flags]] & (Record[String, Any]) = js.native
     
     /**
     	The help text used with `--help`.
@@ -367,9 +373,23 @@ object mod {
   
   type StringFlag = Flag[string, js.Array[String] | String, `false` | `true`]
   
-  type TypedFlag[Flag /* <: AnyFlag */] = Any | Boolean | String | Double
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Flag extends {  type :'number'} ? number : Flag extends {  type :'string'} ? string : Flag extends {  type :'boolean'} ? boolean : unknown
+    }}}
+    */
+  @js.native
+  trait TypedFlag[Flag /* <: AnyFlag */] extends StObject
   
-  type TypedFlags[Flags /* <: AnyFlags */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ F in keyof Flags ]: Flags[F] extends {  isMultiple :true}? meow.meow.PossiblyOptionalFlag<Flags[F], std.Array<meow.meow.TypedFlag<Flags[F]>>> : meow.meow.PossiblyOptionalFlag<Flags[F], meow.meow.TypedFlag<Flags[F]>>}
-    */ typings.meow.meowStrings.TypedFlags & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ F in keyof Flags ]: Flags[F] extends {  isMultiple :true}? meow.meow.PossiblyOptionalFlag<Flags[F], std.Array<meow.meow.TypedFlag<Flags[F]>>> : meow.meow.PossiblyOptionalFlag<Flags[F], meow.meow.TypedFlag<Flags[F]>>}
+    }}}
+    */
+  @js.native
+  trait TypedFlags[Flags /* <: AnyFlags */] extends StObject
 }

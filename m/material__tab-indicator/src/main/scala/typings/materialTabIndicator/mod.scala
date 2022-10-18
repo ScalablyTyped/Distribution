@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/tab-indicator", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialTabIndicator.slidingFoundationMod.default {
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
+  }
+  
   @JSImport("@material/tab-indicator", "MDCFadingTabIndicatorFoundation")
   @js.native
   open class MDCFadingTabIndicatorFoundation ()
@@ -43,9 +50,9 @@ object mod {
     inline def attachTo(root: typings.std.Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabIndicator.componentMod.MDCTabIndicator]
   }
   
-  @JSImport("@material/tab-indicator", "MDCTabIndicatorFoundation")
+  /* note: abstract class */ @JSImport("@material/tab-indicator", "MDCTabIndicatorFoundation")
   @js.native
-  abstract class MDCTabIndicatorFoundation ()
+  open class MDCTabIndicatorFoundation ()
     extends typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
   }

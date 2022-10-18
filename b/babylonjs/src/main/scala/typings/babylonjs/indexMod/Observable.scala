@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class Observable[T] ()
   extends typings.babylonjs.miscIndexMod.Observable[T] {
-  def this(onObserverAdded: js.Function1[/* observer */ typings.babylonjs.observableMod.Observer[T], Unit]) = this()
+  def this(onObserverAdded: js.Function1[/* observer */ typings.babylonjs.miscObservableMod.Observer[T], Unit]) = this()
 }
 /* static members */
 object Observable {
@@ -27,6 +27,6 @@ object Observable {
     * @param onErrorObservable an observable to notify if a promise was rejected.
     * @returns the new Observable
     */
-  inline def FromPromise[T, E](promise: js.Promise[T]): typings.babylonjs.observableMod.Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.observableMod.Observable[T]]
-  inline def FromPromise[T, E](promise: js.Promise[T], onErrorObservable: typings.babylonjs.observableMod.Observable[E]): typings.babylonjs.observableMod.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPromise")(promise.asInstanceOf[js.Any], onErrorObservable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.observableMod.Observable[T]]
+  inline def FromPromise[T, E](promise: js.Promise[T]): typings.babylonjs.miscObservableMod.Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("FromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscObservableMod.Observable[T]]
+  inline def FromPromise[T, E](promise: js.Promise[T], onErrorObservable: typings.babylonjs.miscObservableMod.Observable[E]): typings.babylonjs.miscObservableMod.Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("FromPromise")(promise.asInstanceOf[js.Any], onErrorObservable.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.miscObservableMod.Observable[T]]
 }

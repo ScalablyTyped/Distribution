@@ -1,8 +1,8 @@
 package typings.markdownItExternalLinks
 
 import typings.markdownIt.libMod.Options
-import typings.markdownIt.rendererMod.Renderer
-import typings.markdownIt.tokenMod.^
+import typings.markdownIt.libRendererMod.Renderer
+import typings.markdownIt.libTokenMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

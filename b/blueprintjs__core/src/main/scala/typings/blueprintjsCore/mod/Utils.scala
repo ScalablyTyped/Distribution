@@ -1,10 +1,10 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.Key
-import typings.blueprintjsCore.compareUtilsMod.KeyAllowlist
-import typings.blueprintjsCore.compareUtilsMod.KeyDenylist
-import typings.blueprintjsCore.domUtilsMod.IThrottledReactEventOptions
-import typings.blueprintjsCore.reactUtilsMod.INamed
+import typings.blueprintjsCore.libEsmCommonUtilsCompareUtilsMod.KeyAllowlist
+import typings.blueprintjsCore.libEsmCommonUtilsCompareUtilsMod.KeyDenylist
+import typings.blueprintjsCore.libEsmCommonUtilsDomUtilsMod.IThrottledReactEventOptions
+import typings.blueprintjsCore.libEsmCommonUtilsReactUtilsMod.INamed
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -49,12 +49,12 @@ object Utils {
   inline def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
   inline def ensureElement(
     child: Unit,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
   inline def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
   inline def ensureElement(
     child: ReactNode,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
   
   inline def getActiveElement(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")().asInstanceOf[Element | Null]

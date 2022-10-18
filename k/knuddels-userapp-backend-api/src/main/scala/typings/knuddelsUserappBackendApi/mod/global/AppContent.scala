@@ -58,6 +58,11 @@ open class AppContent () extends StObject {
   def isAllowJFXBrowser(): Boolean = js.native
   
   /**
+    * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_isResponsive
+    */
+  def isResponsive(): Boolean = js.native
+  
+  /**
     * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_remove
     */
   def remove(): Unit = js.native
@@ -77,6 +82,11 @@ open class AppContent () extends StObject {
     * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_setAllowJFXBrowser
     */
   def setAllowJFXBrowser(allowJFXBrowser: Boolean): Unit = js.native
+  
+  /**
+    * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_setResponsive
+    */
+  def setResponsive(isResponsive: Boolean): Unit = js.native
 }
 object AppContent {
   

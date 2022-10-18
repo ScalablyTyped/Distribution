@@ -8,7 +8,7 @@ trait Sources extends StObject {
   
   var excludeSources: js.UndefOr[js.Array[String]] = js.undefined
   
-  var scope: js.UndefOr[typings.atom.mod.ScopeDescriptor] = js.undefined
+  var scope: js.UndefOr[typings.atom.srcScopeDescriptorMod.ScopeDescriptor] = js.undefined
   
   var sources: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -25,9 +25,9 @@ object Sources {
     
     inline def setExcludeSourcesUndefined: Self = StObject.set(x, "excludeSources", js.undefined)
     
-    inline def setExcludeSourcesVarargs(value: String*): Self = StObject.set(x, "excludeSources", js.Array(value :_*))
+    inline def setExcludeSourcesVarargs(value: String*): Self = StObject.set(x, "excludeSources", js.Array(value*))
     
-    inline def setScope(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -35,6 +35,6 @@ object Sources {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

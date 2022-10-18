@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.OnPress
-import typings.antDesignReactNative.noticeBarMod.NoticeNativeProps
-import typings.antDesignReactNative.noticeBarMod.default
+import typings.antDesignReactNative.libNoticeBarMod.NoticeNativeProps
+import typings.antDesignReactNative.libNoticeBarMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

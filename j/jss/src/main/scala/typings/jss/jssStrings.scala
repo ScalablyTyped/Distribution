@@ -9,8 +9,4 @@ object jssStrings {
   @js.native
   sealed trait Exclamationmarkimportant extends StObject
   inline def Exclamationmarkimportant: Exclamationmarkimportant = "!important".asInstanceOf[Exclamationmarkimportant]
-  
-  @js.native
-  sealed trait JssStyle extends StObject
-  inline def JssStyle: JssStyle = "JssStyle".asInstanceOf[JssStyle]
 }

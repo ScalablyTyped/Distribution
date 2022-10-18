@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__launcher-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Launcher Page Extension
@@ -10,10 +10,10 @@ JupyterLab - Launcher Page Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/launcher-extension |
 | Keywords           | - |
-| # releases         | 130 |
-| # dependents       | 1 |
-| # downloads        | 1457845 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 192981.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

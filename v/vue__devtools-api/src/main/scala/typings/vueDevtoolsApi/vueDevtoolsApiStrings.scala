@@ -1,7 +1,7 @@
 package typings.vueDevtoolsApi
 
-import typings.vueDevtoolsApi.componentMod.ComponentBuiltinCustomStateTypes
-import typings.vueDevtoolsApi.hooksMod.Hooks
+import typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentBuiltinCustomStateTypes
+import typings.vueDevtoolsApi.libEsmApiHooksMod.Hooks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,18 +11,6 @@ object vueDevtoolsApiStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait Exact extends StObject
-  inline def Exact: Exact = "Exact".asInstanceOf[Exact]
-  
-  @js.native
-  sealed trait ExtractSettingsTypes extends StObject
-  inline def ExtractSettingsTypes: ExtractSettingsTypes = "ExtractSettingsTypes".asInstanceOf[ExtractSettingsTypes]
-  
-  @js.native
-  sealed trait Narrow extends StObject
-  inline def Narrow: Narrow = "Narrow".asInstanceOf[Narrow]
   
   @js.native
   sealed trait boolean extends StObject

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompilerError
   extends StObject
-     with Error
-     with InferCompilerError[Any] {
+     with Error {
   
   var code: Double | String
   

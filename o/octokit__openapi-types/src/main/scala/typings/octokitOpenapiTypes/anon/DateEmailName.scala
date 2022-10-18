@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateEmailName extends StObject {
   
-  var date: js.UndefOr[String] = js.undefined
+  var date: String
   
-  var email: js.UndefOr[String] = js.undefined
+  var email: String
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: String
 }
 object DateEmailName {
   
-  inline def apply(): DateEmailName = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(date: String, email: String, name: String): DateEmailName = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateEmailName]
   }
   
@@ -23,14 +23,8 @@ object DateEmailName {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
-    
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

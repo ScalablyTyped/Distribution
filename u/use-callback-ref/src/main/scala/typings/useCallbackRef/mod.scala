@@ -2,8 +2,8 @@ package typings.useCallbackRef
 
 import typings.react.mod.MutableRefObject
 import typings.react.mod.RefObject
-import typings.useCallbackRef.typesMod.ReactRef
-import typings.useCallbackRef.typesMod.RefCallback
+import typings.useCallbackRef.distEs5TypesMod.ReactRef
+import typings.useCallbackRef.distEs5TypesMod.RefCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object mod {
   
   inline def refToCallback[T](ref: ReactRef[T]): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("refToCallback")(ref.asInstanceOf[js.Any]).asInstanceOf[RefCallback[T]]
   
-  inline def transformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T | Null, K]): typings.useCallbackRef.typesMod.RefObject[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRef")(ref.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[typings.useCallbackRef.typesMod.RefObject[T]]
+  inline def transformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T | Null, K]): typings.useCallbackRef.distEs5TypesMod.RefObject[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRef")(ref.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[typings.useCallbackRef.distEs5TypesMod.RefObject[T]]
   
   inline def useCallbackRef[T](initialValue: T, callback: js.Function2[/* newValue */ T | Null, /* lastValue */ T | Null, Unit]): MutableRefObject[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCallbackRef")(initialValue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MutableRefObject[T | Null]]
   inline def useCallbackRef[T](
@@ -36,5 +36,5 @@ object mod {
   
   inline def useRefToCallback[T](ref: ReactRef[T]): RefCallback[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefToCallback")(ref.asInstanceOf[js.Any]).asInstanceOf[RefCallback[T]]
   
-  inline def useTransformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T | Null, K]): typings.useCallbackRef.typesMod.RefObject[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTransformRef")(ref.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[typings.useCallbackRef.typesMod.RefObject[T]]
+  inline def useTransformRef[T, K](ref: ReactRef[K], transformer: js.Function1[/* original */ T | Null, K]): typings.useCallbackRef.distEs5TypesMod.RefObject[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTransformRef")(ref.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[typings.useCallbackRef.distEs5TypesMod.RefObject[T]]
 }

@@ -32,13 +32,13 @@ object DocumentAnalysis {
     
     inline def setTone_categoriesUndefined: Self = StObject.set(x, "tone_categories", js.undefined)
     
-    inline def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value :_*))
+    inline def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value*))
     
     inline def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
     inline def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
-    inline def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value*))
     
     inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

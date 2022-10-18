@@ -20,6 +20,8 @@ open class DropdownListModel protected () extends Base {
   
   /* protected */ def getAvailableItems(): js.Array[Action] = js.native
   
+  def getSelectedAction(): Action = js.native
+  
   def inputReadOnly: Boolean = js.native
   
   def keyHandler(event: Any): Unit = js.native

@@ -1,9 +1,9 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.postProcessMod.PostProcessOptions
-import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.enginesEngineMod.Engine
+import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "CircleOfConfusionPostProcess")
 @js.native
 open class CircleOfConfusionPostProcess protected ()
-  extends typings.babylonjs.circleOfConfusionPostProcessMod.CircleOfConfusionPostProcess {
+  extends typings.babylonjs.postProcessesCircleOfConfusionPostProcessMod.CircleOfConfusionPostProcess {
   /**
     * Creates a new instance CircleOfConfusionPostProcess
     * @param name The name of the effect.

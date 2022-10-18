@@ -7,22 +7,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/find.html#db-index
+/** Mango create index parameters.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/database/find.html#db-index} */
 trait CreateIndexRequest extends StObject {
   
-  // Name of the design document in which the index will be created.
+  /** Name of the design document in which the index will be created. */
   var ddoc: js.UndefOr[String] = js.undefined
   
-  // JSON object describing the index to create
+  /** JSON object describing the index to create */
   var index: Fields
   
-  // Name of the index. If no name is provided, a name will be generated automatically.
+  /** Name of the index. If no name is provided, a name will be generated automatically. */
   var name: js.UndefOr[String] = js.undefined
   
-  // This field sets whether the created index will be a partitioned or global index.
+  /** This field sets whether the created index will be a partitioned or global index. */
   var partitioned: js.UndefOr[Boolean] = js.undefined
   
-  // Can be "json" or "text". Defaults to json.
+  /** Can be "json" or "text".
+    *
+    * @default "json" */
   var `type`: js.UndefOr[json | text] = js.undefined
 }
 object CreateIndexRequest {

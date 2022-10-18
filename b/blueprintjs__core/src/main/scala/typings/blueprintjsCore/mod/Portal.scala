@@ -2,7 +2,7 @@ package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialPortalProps
 import typings.blueprintjsCore.anon.ValidationMapPortalLegacy
-import typings.blueprintjsCore.portalMod.PortalProps
+import typings.blueprintjsCore.libEsmComponentsPortalPortalMod.PortalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Portal")
 @js.native
 open class Portal protected ()
-  extends typings.blueprintjsCore.componentsMod.Portal {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Portal {
   def this(props: PortalProps) = this()
   /**
     * @deprecated

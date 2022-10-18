@@ -1,0 +1,30 @@
+package typings.antDesignReactNative
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libPickerLocalePtBRMod {
+  
+  object default {
+    
+    @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", "default.dismissText")
+    @js.native
+    def dismissText: String = js.native
+    inline def dismissText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dismissText")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", "default.extra")
+    @js.native
+    def extra: String = js.native
+    inline def extra_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extra")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/react-native/lib/picker/locale/pt_BR", "default.okText")
+    @js.native
+    def okText: String = js.native
+    inline def okText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("okText")(x.asInstanceOf[js.Any])
+  }
+}

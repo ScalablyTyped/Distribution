@@ -1,6 +1,6 @@
 package typings.antvG2.anon
 
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

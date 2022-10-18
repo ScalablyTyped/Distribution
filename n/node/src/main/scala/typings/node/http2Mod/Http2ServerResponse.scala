@@ -2,8 +2,9 @@ package typings.node.http2Mod
 
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColontlsMod.TLSSocket
 import typings.node.nodeStrings._empty
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.drain
@@ -11,7 +12,7 @@ import typings.node.nodeStrings.error
 import typings.node.nodeStrings.finish
 import typings.node.nodeStrings.pipe
 import typings.node.nodeStrings.unpipe
-import typings.node.nodeTlsMod.TLSSocket
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -417,6 +418,35 @@ open class Http2ServerResponse protected () extends StObject {
     * @since v8.4.0
     */
   def writeContinue(): Unit = js.native
+  
+  /**
+    * Sends a status `103 Early Hints` to the client with a Link header,
+    * indicating that the user agent can preload/preconnect the linked resources.
+    * The `hints` is an object containing the values of headers to be sent with
+    * early hints message.
+    *
+    * Example:
+    *
+    * ```js
+    * const earlyHintsLink = '</styles.css>; rel=preload; as=style';
+    * response.writeEarlyHints({
+    *   'link': earlyHintsLink,
+    * });
+    *
+    * const earlyHintsLinks = [
+    *   '</styles.css>; rel=preload; as=style',
+    *   '</scripts.js>; rel=preload; as=script',
+    * ];
+    * response.writeEarlyHints({
+    *   'link': earlyHintsLinks,
+    *   'x-trace-id': 'id for diagnostics'
+    * });
+    * ```
+    *
+    * @since v18.11.0
+    * @param hints An object containing the values of headers
+    */
+  def writeEarlyHints(hints: Record[String, String | js.Array[String]]): Unit = js.native
   
   /**
     * Sends a response header to the request. The status code is a 3-digit HTTP

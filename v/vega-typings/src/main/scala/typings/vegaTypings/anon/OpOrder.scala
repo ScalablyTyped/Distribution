@@ -1,7 +1,7 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.scaleMod.SortOrder
-import typings.vegaTypings.scaleMod._UnionSortField
+import typings.vegaTypings.typesSpecScaleMod.SortOrder
+import typings.vegaTypings.typesSpecScaleMod._UnionSortField
 import typings.vegaTypings.vegaTypingsStrings.count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

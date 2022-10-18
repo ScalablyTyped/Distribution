@@ -1,6 +1,5 @@
 package typings.baiduApp.swan
 
-import org.scalablytyped.runtime.TopLevel
 import typings.baiduApp.anon.Partialbubblesbooleancomp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,9 +27,7 @@ trait Component[D, P] extends StObject {
   /**
     * 组件数据，包括内部数据和属性值
     */
-  var data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any] = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>} */ js.Any = js.native
   
   /**
     * 节点dataset
@@ -58,9 +55,7 @@ trait Component[D, P] extends StObject {
   /**
     * 组件数据，包括内部数据和属性值（与 data 一致）
     */
-  var properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any] = js.native
+  var properties: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>} */ js.Any = js.native
   
   /**
     * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
@@ -73,31 +68,6 @@ trait Component[D, P] extends StObject {
     */
   def selectComponent(selector: String): Component[Any, Any] = js.native
   
-  def setData(
-    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any]
-  ): Unit = js.native
-  def setData(
-    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any],
-    value: Any
-  ): Unit = js.native
-  def setData(
-    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any],
-    value: Any,
-    callback: js.Function0[Unit]
-  ): Unit = js.native
-  def setData(
-    key: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.baiduApp.baiduAppStrings.Component & TopLevel[Any],
-    value: Unit,
-    callback: js.Function0[Unit]
-  ): Unit = js.native
   /**
     * 将数据从逻辑层发送到视图层，同时改变对应的 this.data 的值
     * 1. 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。
@@ -110,6 +80,23 @@ trait Component[D, P] extends StObject {
   def setData(key: String, value: Any): Unit = js.native
   def setData(key: String, value: Any, callback: js.Function0[Unit]): Unit = js.native
   def setData(key: String, value: Unit, callback: js.Function0[Unit]): Unit = js.native
+  def setData(
+    key: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>} */ js.Any
+  ): Unit = js.native
+  def setData(
+    key: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>} */ js.Any,
+    value: Any
+  ): Unit = js.native
+  def setData(
+    key: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>} */ js.Any,
+    value: Any,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def setData(
+    key: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>} */ js.Any,
+    value: Unit,
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   
   /**
     * 触发事件，参见 [组件事件](https://smartprogram.baidu.com/docs/develop/framework/custom-component_cont/)

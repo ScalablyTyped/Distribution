@@ -1,10 +1,10 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.encodeMod.ColorHCL
-import typings.vegaTypings.encodeMod.ColorHSL
-import typings.vegaTypings.encodeMod.ColorLAB
-import typings.vegaTypings.encodeMod.ColorRGB
-import typings.vegaTypings.encodeMod._ColorValueRef
+import typings.vegaTypings.typesSpecEncodeMod.ColorHCL
+import typings.vegaTypings.typesSpecEncodeMod.ColorHSL
+import typings.vegaTypings.typesSpecEncodeMod.ColorLAB
+import typings.vegaTypings.typesSpecEncodeMod.ColorRGB
+import typings.vegaTypings.typesSpecEncodeMod._ColorValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

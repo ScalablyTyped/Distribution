@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
-import typings.interactjsTypes.interactjsModifiersTypesMod.ModifierState
+import typings.interactjsTypes.modifiersTypesMod.Modifier
+import typings.interactjsTypes.modifiersTypesMod.ModifierState
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

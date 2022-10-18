@@ -6,6 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("puppeteer-core", "TimeoutError")
 @js.native
-open class TimeoutError () extends CustomError {
-  def this(message: String) = this()
-}
+open class TimeoutError () extends CustomError

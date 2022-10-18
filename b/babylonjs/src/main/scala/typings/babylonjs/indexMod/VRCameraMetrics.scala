@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "VRCameraMetrics")
 @js.native
 open class VRCameraMetrics ()
-  extends typings.babylonjs.babylonjsMod.VRCameraMetrics
+  extends typings.babylonjs.camerasIndexMod.VRCameraMetrics
 /* static members */
 object VRCameraMetrics {
   
@@ -19,5 +19,5 @@ object VRCameraMetrics {
     * Get the default VRMetrics based on the most generic setup.
     * @returns the default vr metrics
     */
-  inline def GetDefault(): typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefault")().asInstanceOf[typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics]
+  inline def GetDefault(): typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDefault")().asInstanceOf[typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics]
 }

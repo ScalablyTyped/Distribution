@@ -9,7 +9,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.timersMod.global.NodeJS.Timeout
 import typings.scopedHttpClient.mod.Options
 import typings.scopedHttpClient.mod.ScopedClient

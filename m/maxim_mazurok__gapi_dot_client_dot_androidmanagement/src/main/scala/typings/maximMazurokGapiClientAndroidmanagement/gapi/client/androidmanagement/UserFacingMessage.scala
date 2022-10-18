@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait UserFacingMessage extends StObject {
   
   /** A map containing pairs, where locale is a well-formed BCP 47 language (https://www.w3.org/International/articles/language-tags/) code, such as en-US, es-ES, or fr. */
   var localizedMessages: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object UserFacingMessage {
@@ -34,9 +31,7 @@ object UserFacingMessage {
     inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
     
     inline def setLocalizedMessages(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "localizedMessages", value.asInstanceOf[js.Any])
     
     inline def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)

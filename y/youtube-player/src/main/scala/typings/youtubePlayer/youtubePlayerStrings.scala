@@ -1,6 +1,6 @@
 package typings.youtubePlayer
 
-import typings.youtubePlayer.eventNamesMod.EventType
+import typings.youtubePlayer.distEventNamesMod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

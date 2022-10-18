@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "BaseContextClass")
 @js.native
-class BaseContextClass protected ()
-  extends typings.eggCore.mod.BaseContextClass[Context, Application, EggAppConfig, IService] {
-  def this(ctx: Context) = this()
+open class BaseContextClass protected ()
+  extends typings.eggCore.mod.BaseContextClass[Context[Any], Application, EggAppConfig, IService] {
+  def this(ctx: Context[Any]) = this()
   
   // tslint:disable-line
   /**

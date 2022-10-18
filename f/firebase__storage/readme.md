@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__storage
 
-Typings are for version 0.9.9
+Typings are for version 0.9.12
 
 ## Library description:
 This is the Cloud Storage component of the Firebase JS SDK.

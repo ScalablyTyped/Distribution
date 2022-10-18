@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CubeTextureAssetTask")
 @js.native
 open class CubeTextureAssetTask protected ()
-  extends typings.babylonjs.legacyMod.CubeTextureAssetTask {
+  extends typings.babylonjs.legacyLegacyMod.CubeTextureAssetTask {
   /**
     * Creates a new CubeTextureAssetTask
     * @param name defines the name of the task

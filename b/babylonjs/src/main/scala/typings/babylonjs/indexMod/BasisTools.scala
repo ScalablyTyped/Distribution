@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.basisMod.TranscodeResult
+import typings.babylonjs.miscBasisMod.TranscodeResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object BasisTools {
     * @param basisFormat format chosen from GetSupportedTranscodeFormat
     * @returns internal format corresponding to the Basis format
     */
-  inline def GetInternalFormatFromBasisFormat(basisFormat: Double, engine: typings.babylonjs.engineMod.Engine): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def GetInternalFormatFromBasisFormat(basisFormat: Double, engine: typings.babylonjs.enginesEngineMod.Engine): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetInternalFormatFromBasisFormat")(basisFormat.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * URL to use when loading the basis transcoder
@@ -31,11 +31,14 @@ object BasisTools {
     * @param texture texture load to
     * @param transcodeResult the result of transcoding the basis file to load from
     */
-  inline def LoadTextureFromTranscodeResult(texture: typings.babylonjs.internalTextureMod.InternalTexture, transcodeResult: TranscodeResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LoadTextureFromTranscodeResult(
+    texture: typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture,
+    transcodeResult: TranscodeResult
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadTextureFromTranscodeResult")(texture.asInstanceOf[js.Any], transcodeResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def TranscodeAsync(
     data: js.typedarray.ArrayBufferView,
-    config: typings.babylonjs.basisMod.BasisTranscodeConfiguration
+    config: typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration
   ): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
   /**
     * Transcodes a loaded image file to compressed pixel data
@@ -43,7 +46,10 @@ object BasisTools {
     * @param config configuration options for the transcoding
     * @returns a promise resulting in the transcoded image
     */
-  inline def TranscodeAsync(data: js.typedarray.ArrayBuffer, config: typings.babylonjs.basisMod.BasisTranscodeConfiguration): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
+  inline def TranscodeAsync(
+    data: js.typedarray.ArrayBuffer,
+    config: typings.babylonjs.miscBasisMod.BasisTranscodeConfiguration
+  ): js.Promise[TranscodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("TranscodeAsync")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TranscodeResult]]
   
   /**
     * URL to use when loading the wasm module for the transcoder

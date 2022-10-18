@@ -1,12 +1,12 @@
 package typings.expoConfigPlugins
 
-import typings.expoConfigPlugins.errorsMod.PluginErrorCode
-import typings.expoConfigPlugins.iosConfigTypesMod.InterfaceOrientation
-import typings.expoConfigPlugins.iosConfigTypesMod.InterfaceStyle
-import typings.expoConfigPlugins.iosPathsMod.AppleLanguage
-import typings.expoConfigPlugins.manifestMod.StringBoolean
-import typings.expoConfigPlugins.pluginTypesMod.ModPlatform
-import typings.expoConfigPlugins.resourcesMod.ResourceKind
+import typings.expoConfigPlugins.buildAndroidManifestMod.StringBoolean
+import typings.expoConfigPlugins.buildAndroidResourcesMod.ResourceKind
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.InterfaceOrientation
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.InterfaceStyle
+import typings.expoConfigPlugins.buildIosPathsMod.AppleLanguage
+import typings.expoConfigPlugins.buildPluginDottypesMod.ModPlatform
+import typings.expoConfigPlugins.buildUtilsErrorsMod.PluginErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

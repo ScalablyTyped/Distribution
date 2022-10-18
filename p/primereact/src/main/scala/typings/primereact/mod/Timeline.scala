@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.timelineMod.TimelineProps
+import typings.primereact.timelineTimelineMod.TimelineProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Timeline")
 @js.native
 open class Timeline protected ()
-  extends typings.primereact.timelineMod.Timeline {
+  extends typings.primereact.timelineTimelineMod.Timeline {
   def this(props: TimelineProps) = this()
   /**
     * @deprecated

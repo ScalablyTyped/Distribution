@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "DatePicker")
 @js.native
 open class DatePicker protected ()
-  extends typings.carbonComponents.componentsMod.DatePicker {
+  extends typings.carbonComponents.globalsJsComponentsMod.DatePicker {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialDatePickerOptions) = this()
 }

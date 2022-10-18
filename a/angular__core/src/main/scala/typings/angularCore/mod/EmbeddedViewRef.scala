@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "EmbeddedViewRef")
+/* note: abstract class */ @JSImport("@angular/core", "EmbeddedViewRef")
 @js.native
-abstract class EmbeddedViewRef[C] () extends ViewRef {
+open class EmbeddedViewRef[C] () extends ViewRef {
   
   /**
     * The context for this view, inherited from the anchor element.

@@ -8,7 +8,7 @@ trait Geometry[T] extends StObject {
   
   var data: T
   
-  var geometry: typings.three.geometryMod.Geometry
+  var geometry: typings.three.examplesJsmDeprecatedGeometryMod.Geometry
   
   def init(data: Any): Unit
   
@@ -20,7 +20,7 @@ object Geometry {
   
   inline def apply[T](
     data: T,
-    geometry: typings.three.geometryMod.Geometry,
+    geometry: typings.three.examplesJsmDeprecatedGeometryMod.Geometry,
     init: Any => Unit,
     name: String,
     schema: Schema_[Any]
@@ -33,7 +33,7 @@ object Geometry {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setGeometry(value: typings.three.geometryMod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: typings.three.examplesJsmDeprecatedGeometryMod.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setInit(value: Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     

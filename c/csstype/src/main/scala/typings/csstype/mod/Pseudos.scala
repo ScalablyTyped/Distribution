@@ -10,7 +10,7 @@ object Pseudos {
   
   inline def `Colon-moz-any-link`: typings.csstype.csstypeStrings.`Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[typings.csstype.csstypeStrings.`Colon-moz-any-link`]
   
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: /* :-moz-any() */ String = ":-moz-any()".asInstanceOf[/* :-moz-any() */ String]
   
   inline def `Colon-moz-dir`: typings.csstype.csstypeStrings.`Colon-moz-dir` = ":-moz-dir".asInstanceOf[typings.csstype.csstypeStrings.`Colon-moz-dir`]
   
@@ -34,7 +34,7 @@ object Pseudos {
   
   inline def `Colon-webkit-any-link`: typings.csstype.csstypeStrings.`Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[typings.csstype.csstypeStrings.`Colon-webkit-any-link`]
   
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: /* :-webkit-any() */ String = ":-webkit-any()".asInstanceOf[/* :-webkit-any() */ String]
   
   inline def `Colon-webkit-full-screen`: typings.csstype.csstypeStrings.`Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[typings.csstype.csstypeStrings.`Colon-webkit-full-screen`]
   
@@ -200,7 +200,7 @@ object Pseudos {
   
   inline def `Colonlocal-link`: typings.csstype.csstypeStrings.`Colonlocal-link` = ":local-link".asInstanceOf[typings.csstype.csstypeStrings.`Colonlocal-link`]
   
-  inline def ColonmatchesLeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
+  inline def ColonmatchesLeftparenthesisRightparenthesis: /* :matches() */ String = ":matches()".asInstanceOf[/* :matches() */ String]
   
   inline def Colonnot: typings.csstype.csstypeStrings.Colonnot = ":not".asInstanceOf[typings.csstype.csstypeStrings.Colonnot]
   

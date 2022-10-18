@@ -1,6 +1,6 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.configMod.DefaultsConfig
+import typings.vegaTypings.typesSpecConfigMod.DefaultsConfig
 import typings.vegaTypings.vegaTypingsStrings.any
 import typings.vegaTypings.vegaTypingsStrings.container
 import typings.vegaTypings.vegaTypingsStrings.none

@@ -1,13 +1,13 @@
 package typings.jridgewellSourceMap
 
+import typings.jridgewellGenMapping.distTypesTypesMod.DecodedSourceMap
+import typings.jridgewellGenMapping.distTypesTypesMod.EncodedSourceMap
 import typings.jridgewellGenMapping.mod.GenMapping
-import typings.jridgewellGenMapping.typesMod.DecodedSourceMap
-import typings.jridgewellGenMapping.typesMod.EncodedSourceMap
 import typings.jridgewellSourceMap.anon.TypeofmaybeAddMapping
-import typings.jridgewellTraceMapping.typesMod.InvalidOriginalMapping
-import typings.jridgewellTraceMapping.typesMod.Needle
-import typings.jridgewellTraceMapping.typesMod.OriginalMapping
-import typings.jridgewellTraceMapping.typesMod.SourceMapInput
+import typings.jridgewellTraceMapping.distTypesTypesMod.InvalidOriginalMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.Needle
+import typings.jridgewellTraceMapping.distTypesTypesMod.OriginalMapping
+import typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

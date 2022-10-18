@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param directionRandomizer defines how much to randomize the particle direction [0-1]
   */
 open class HemisphericParticleEmitter ()
-  extends typings.babylonjs.legacyMod.HemisphericParticleEmitter {
+  extends typings.babylonjs.legacyLegacyMod.HemisphericParticleEmitter {
   def this(/**
     * The radius of the emission hemisphere.
     */

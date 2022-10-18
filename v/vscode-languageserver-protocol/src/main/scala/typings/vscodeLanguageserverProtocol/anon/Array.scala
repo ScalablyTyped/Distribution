@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.anon
 
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.NotebookCellArrayChange
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.NotebookCellArrayChange
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import typings.vscodeLanguageserverTypes.mod.TextDocumentItem
 import org.scalablytyped.runtime.StObject

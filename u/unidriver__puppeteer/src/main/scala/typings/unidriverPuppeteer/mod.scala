@@ -3,9 +3,9 @@ package typings.unidriverPuppeteer
 import typings.unidriverCore.mod.DriverContext
 import typings.unidriverCore.mod.UniDriver
 import typings.unidriverCore.mod.UniDriverList
-import typings.unidriverPuppeteer.pptrVersionSelectorMod.ElementHandle
-import typings.unidriverPuppeteer.pptrVersionSelectorMod.Frame
-import typings.unidriverPuppeteer.pptrVersionSelectorMod.Page
+import typings.unidriverPuppeteer.distPptrVersionSelectorMod.ElementHandle
+import typings.unidriverPuppeteer.distPptrVersionSelectorMod.Frame
+import typings.unidriverPuppeteer.distPptrVersionSelectorMod.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

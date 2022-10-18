@@ -1,6 +1,6 @@
 package typings.postcssMergeLonghand
 
-import typings.postcss.declarationMod.DeclarationRaws
+import typings.postcss.libDeclarationMod.DeclarationRaws
 import typings.postcss.mod.Rule_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

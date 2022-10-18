@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.effectRendererMod.IEffectRendererOptions
+import typings.babylonjs.materialsEffectRendererMod.IEffectRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "EffectRenderer")
 @js.native
 open class EffectRenderer protected ()
-  extends typings.babylonjs.legacyMod.EffectRenderer {
+  extends typings.babylonjs.legacyLegacyMod.EffectRenderer {
   /**
     * Creates an effect renderer
     * @param _engine the engine to use for rendering
     * @param options defines the options of the effect renderer
     */
-  def this(_engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
-  def this(_engine: typings.babylonjs.thinEngineMod.ThinEngine, options: IEffectRendererOptions) = this()
+  def this(_engine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
+  def this(_engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, options: IEffectRendererOptions) = this()
 }
 /* static members */
 object EffectRenderer {

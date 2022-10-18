@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class LineCurve protected ()
   extends typings.three.mod.LineCurve {
-  def this(v1: typings.three.vector2Mod.Vector2, v2: typings.three.vector2Mod.Vector2) = this()
+  def this(v1: typings.three.srcMathVector2Mod.Vector2, v2: typings.three.srcMathVector2Mod.Vector2) = this()
 }

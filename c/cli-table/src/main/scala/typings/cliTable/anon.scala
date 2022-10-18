@@ -1,6 +1,5 @@
 package typings.cliTable
 
-import typings.cliTable.cliTableStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,23 +50,6 @@ object anon {
       inline def `setPadding-right`(value: Double): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
       
       inline def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
-    }
-  }
-  
-  trait Head extends StObject {
-    
-    var head: Array[_empty | String]
-  }
-  object Head {
-    
-    inline def apply(head: Array[_empty | String]): Head = {
-      val __obj = js.Dynamic.literal(head = head.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Head]
-    }
-    
-    extension [Self <: Head](x: Self) {
-      
-      inline def setHead(value: Array[_empty | String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     }
   }
   

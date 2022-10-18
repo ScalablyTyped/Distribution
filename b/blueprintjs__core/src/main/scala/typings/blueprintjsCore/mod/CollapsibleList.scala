@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.PartialCollapsibleListPro
-import typings.blueprintjsCore.collapsibleListMod.CollapsibleListProps
+import typings.blueprintjsCore.libEsmComponentsCollapsibleListCollapsibleListMod.CollapsibleListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "CollapsibleList")
 @js.native
 open class CollapsibleList protected ()
-  extends typings.blueprintjsCore.componentsMod.CollapsibleList {
+  extends typings.blueprintjsCore.libEsmComponentsMod.CollapsibleList {
   def this(props: CollapsibleListProps) = this()
   /**
     * @deprecated

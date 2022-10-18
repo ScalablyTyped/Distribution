@@ -14,7 +14,16 @@ trait TypeofMaxValidator
   extends StObject
      with Instantiable0[MaxValidator] {
   
-  var ɵdir: ɵɵDirectiveDeclaration[MaxValidator, String, scala.Nothing, Max, js.Object, scala.Nothing, scala.Nothing, `false`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    MaxValidator, 
+    /* input[type=number][max][formControlName],input[type=number][max][formControl],input[type=number][max][ngModel] */ String, 
+    scala.Nothing, 
+    Max, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[MaxValidator, scala.Nothing] = js.native
 }

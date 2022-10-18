@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Describes a single view into an XR scene for a given frame.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrview-interface
+  */
 trait XRView extends StObject {
   
   val eye: XREye

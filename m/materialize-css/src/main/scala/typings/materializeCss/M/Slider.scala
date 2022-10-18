@@ -5,8 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SliderOptions> * / any */ trait Slider extends StObject {
+trait Slider
+  extends StObject
+     with Component[SliderOptions] {
   
   /**
     * Index of current slide
@@ -14,19 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var activeIndex: Double
   
   /**
-    * ID of the dropdown element
-    */
-  var el: Element
-  
-  /**
     * Move to next slider
     */
   def next(): Unit
-  
-  /**
-    * ID of the dropdown element
-    */
-  var options: SliderOptions
   
   /**
     * Pause slider autoslide
@@ -47,6 +38,7 @@ object Slider {
   
   inline def apply(
     activeIndex: Double,
+    destroy: () => Unit,
     el: Element,
     next: () => Unit,
     options: SliderOptions,
@@ -54,7 +46,7 @@ object Slider {
     prev: () => Unit,
     start: () => Unit
   ): Slider = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), options = options.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev), start = js.Any.fromFunction0(start))
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), options = options.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), prev = js.Any.fromFunction0(prev), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[Slider]
   }
   
@@ -62,11 +54,7 @@ object Slider {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
-    
     inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
-    
-    inline def setOptions(value: SliderOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     

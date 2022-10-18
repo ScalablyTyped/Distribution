@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the activation arguments when an app is launched via LaunchUriForResultsAsync . */
-@JSGlobal("Windows.UI.WebUI.WebUIProtocolForResultsActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIProtocolForResultsActivatedEventArgs")
 @js.native
-abstract class WebUIProtocolForResultsActivatedEventArgs ()
+open class WebUIProtocolForResultsActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIProtocolForResultsActivatedEventArgs {
   

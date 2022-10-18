@@ -1,13 +1,13 @@
 package typings.node.http2Mod
 
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColontlsMod.TLSSocket
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.data
 import typings.node.nodeStrings.end
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.readable
-import typings.node.nodeTlsMod.TLSSocket
 import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

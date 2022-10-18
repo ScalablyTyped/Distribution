@@ -10,14 +10,34 @@ object mod {
   
   type And[A /* <: Boolean */, B /* <: Boolean */] = LogicalTable[A, B, `true`, `false`, `false`, `false`]
   
-  type If[Boolean /* <: scala.Boolean */, WhenTrue, WhenFalse] = WhenFalse | WhenTrue
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Boolean extends true ? WhenTrue : WhenFalse
+    }}}
+    */
+  @js.native
+  trait If[Boolean /* <: scala.Boolean */, WhenTrue, WhenFalse] extends StObject
   
-  type LogicalTable[A /* <: Boolean */, B /* <: Boolean */, AB, AnB, nAB, nAnB] = nAnB | nAB | AnB | AB
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    A extends true ? B extends true ? AB : AnB : B extends true ? nAB : nAnB
+    }}}
+    */
+  @js.native
+  trait LogicalTable[A /* <: Boolean */, B /* <: Boolean */, AB, AnB, nAB, nAnB] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.typescriptLogic.typescriptLogicBooleans.`true`
-    - typings.typescriptLogic.typescriptLogicBooleans.`false`
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    X extends true ? false : true
+    }}}
+    */
+  @js.native
   trait Not[X /* <: Boolean */] extends StObject
   
   type Or[A /* <: Boolean */, B /* <: Boolean */] = LogicalTable[A, B, `true`, `true`, `true`, `false`]

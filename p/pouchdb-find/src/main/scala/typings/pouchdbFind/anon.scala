@@ -1,6 +1,7 @@
 package typings.pouchdbFind
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pouchdbFind.PouchDB.Find.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +18,9 @@ object anon {
     
     /** Name of the index, auto-generated if you don't include it */
     var name: js.UndefOr[String] = js.undefined
+    
+    /** The same syntax as the selector you’d pass to find(), and only documents matching the selector will be included in the index. */
+    var partial_filter_selector: js.UndefOr[Selector] = js.undefined
     
     /** Only supports 'json', and it's also the default */
     var `type`: js.UndefOr[String] = js.undefined
@@ -41,6 +45,10 @@ object anon {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setPartial_filter_selector(value: Selector): Self = StObject.set(x, "partial_filter_selector", value.asInstanceOf[js.Any])
+      
+      inline def setPartial_filter_selectorUndefined: Self = StObject.set(x, "partial_filter_selector", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

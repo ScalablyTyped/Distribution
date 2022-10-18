@@ -26,7 +26,9 @@ object mod {
   val ^ : js.Any = js.native
   
   @js.native
-  trait LevelTTL[K, V] extends LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] {
+  trait LevelTTL[K, V]
+    extends StObject
+       with LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] {
     
     def stop(): Unit = js.native
     def stop(callback: ErrorCallback): Unit = js.native

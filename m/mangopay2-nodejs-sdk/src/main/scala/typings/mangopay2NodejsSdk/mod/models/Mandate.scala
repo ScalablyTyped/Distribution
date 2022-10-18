@@ -1,10 +1,10 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialMandateData
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateCultureCode
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateData
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateExecutionType
-import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateScheme
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateCultureCode
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateData
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateExecutionType
+import typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +56,7 @@ open class Mandate ()
     * The type of Mandate
     */
   /* CompleteClass */
-  var MandateType: typings.mangopay2NodejsSdk.mandateMod.mandate.MandateType = js.native
+  var MandateType: typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateType = js.native
   
   /**
     * The URL to redirect to user to for them to proceed with the payment
@@ -92,7 +92,7 @@ open class Mandate ()
     * The status of the mandate:
     */
   /* CompleteClass */
-  var Status: typings.mangopay2NodejsSdk.mandateMod.mandate.MandateStatus = js.native
+  var Status: typings.mangopay2NodejsSdk.typingsModelsMandateMod.mandate.MandateStatus = js.native
   
   /* CompleteClass */
   var Tag: String = js.native

@@ -8,20 +8,20 @@ object anon {
   
   trait Comparison extends StObject {
     
-    var comparison: typings.ajvDraft04.limitNumberMod.Comparison
+    var comparison: typings.ajvDraft04.distVocabularyValidationLimitNumberMod.Comparison
     
     var limit: Double
   }
   object Comparison {
     
-    inline def apply(comparison: typings.ajvDraft04.limitNumberMod.Comparison, limit: Double): Comparison = {
+    inline def apply(comparison: typings.ajvDraft04.distVocabularyValidationLimitNumberMod.Comparison, limit: Double): Comparison = {
       val __obj = js.Dynamic.literal(comparison = comparison.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comparison]
     }
     
     extension [Self <: Comparison](x: Self) {
       
-      inline def setComparison(value: typings.ajvDraft04.limitNumberMod.Comparison): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
+      inline def setComparison(value: typings.ajvDraft04.distVocabularyValidationLimitNumberMod.Comparison): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     }

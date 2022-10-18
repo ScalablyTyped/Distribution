@@ -3,7 +3,7 @@ package typings.jpm.anon
 import typings.jpm.jpmStrings.end
 import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.start
-import typings.jpm.panelMod.PanelPosition
+import typings.jpm.sdkPanelMod.PanelPosition
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

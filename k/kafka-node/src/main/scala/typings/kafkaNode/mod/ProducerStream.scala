@@ -21,6 +21,7 @@ open class ProducerStream () extends Writable {
   @JSName("_writev")
   def _writev_MProducerStream(chunks: js.Array[Chunk], cb: js.Function2[/* error */ Any, /* data */ Any, Any]): Unit = js.native
   
+  def close(): Unit = js.native
   def close(cb: js.Function0[Any]): Unit = js.native
   
   def sendPayload(payloads: js.Array[ProduceRequest], cb: js.Function2[/* error */ Any, /* data */ Any, Any]): Unit = js.native

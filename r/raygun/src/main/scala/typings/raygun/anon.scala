@@ -1,13 +1,13 @@
 package typings.raygun
 
-import typings.raygun.typesMod.BuiltError
-import typings.raygun.typesMod.CustomData
-import typings.raygun.typesMod.Environment
-import typings.raygun.typesMod.HTTPOptions
-import typings.raygun.typesMod.RequestDetails
-import typings.raygun.typesMod.RequestParams
-import typings.raygun.typesMod.Tag
-import typings.raygun.typesMod.UserDetails
+import typings.raygun.buildTypesMod.BuiltError
+import typings.raygun.buildTypesMod.CustomData
+import typings.raygun.buildTypesMod.Environment
+import typings.raygun.buildTypesMod.HTTPOptions
+import typings.raygun.buildTypesMod.RequestDetails
+import typings.raygun.buildTypesMod.RequestParams
+import typings.raygun.buildTypesMod.Tag
+import typings.raygun.buildTypesMod.UserDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.ajvKeywords
 
-import typings.ajvKeywords.definitionsRangeMod.RangeKwd
-import typings.ajvKeywords.requiredMod.RequiredKwd
-import typings.ajvKeywords.transformMod.TransformName
+import typings.ajvKeywords.distDefinitionsRangeMod_.RangeKwd
+import typings.ajvKeywords.distDefinitionsRequiredMod.RequiredKwd
+import typings.ajvKeywords.distDefinitionsTransformMod.TransformName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

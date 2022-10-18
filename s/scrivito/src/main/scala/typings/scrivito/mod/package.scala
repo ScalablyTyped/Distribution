@@ -2,7 +2,6 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.scrivito.anon.Content
 import typings.scrivito.anon.DumpLoaded
@@ -107,11 +106,6 @@ inline def validationResultsFor(model: Obj, attribute: String): js.Array[Validat
 inline def validationResultsFor(model: Widget, attribute: String): js.Array[ValidationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("validationResultsFor")(model.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationResult]]
 
 type AttributeBasedValidation = js.Tuple2[String, AttributeValidationCallback]
-
-// utility types
-type AttributeKeys[T /* <: WidgetClassOptions | ObjClassOptions */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Property in keyof T['attributes'] ]: any}
-  */ typings.scrivito.scrivitoStrings.AttributeKeys & TopLevel[Any]
 
 type AttributeValidationCallback = js.Function2[/* current */ Any, /* options */ js.UndefOr[Content], ValidationReturnType]
 

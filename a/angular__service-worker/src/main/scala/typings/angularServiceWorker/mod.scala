@@ -12,10 +12,14 @@ import typings.angularServiceWorker.angularServiceWorkerStrings.UPDATE_AVAILABLE
 import typings.angularServiceWorker.angularServiceWorkerStrings.VERSION_DETECTED
 import typings.angularServiceWorker.angularServiceWorkerStrings.VERSION_INSTALLATION_FAILED
 import typings.angularServiceWorker.angularServiceWorkerStrings.VERSION_READY
+import typings.angularServiceWorker.anon.Action
 import typings.angularServiceWorker.anon.AppData
 import typings.angularServiceWorker.anon.Hash
 import typings.angularServiceWorker.anon.ServerPublicKey
+import typings.rxjs.mod.Observable_
 import typings.std.PushSubscription
+import typings.std.ServiceWorker
+import typings.std.ServiceWorkerRegistration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,7 +77,7 @@ object mod {
     /**
       * Emits the payloads of the received push notification messages.
       */
-    val messages: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<object> */ Any = js.native
+    val messages: Observable_[js.Object] = js.native
     
     /**
       * Emits the payloads of the received push notification messages as well as the action the user
@@ -86,7 +90,7 @@ object mod {
       *
       * [Mozilla Notification]: https://developer.mozilla.org/en-US/docs/Web/API/Notification
       */
-    val notificationClicks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<{  action :string,   notification :NotificationOptions & {  title :string}}> */ Any = js.native
+    val notificationClicks: Observable_[Action] = js.native
     
     /* private */ var pushManager: Any = js.native
     
@@ -104,7 +108,7 @@ object mod {
       * [PushSubscription](https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription)
       * associated to the Service Worker registration or `null` if there is no subscription.
       */
-    val subscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<PushSubscription | null> */ Any = js.native
+    val subscription: Observable_[PushSubscription | Null] = js.native
     
     /* private */ var subscriptionChanges: Any = js.native
     
@@ -136,9 +140,9 @@ object mod {
     inline def ɵprov_=(x: ɵɵInjectableDeclaration[SwPush]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@angular/service-worker", "SwRegistrationOptions")
+  /* note: abstract class */ @JSImport("@angular/service-worker", "SwRegistrationOptions")
   @js.native
-  abstract class SwRegistrationOptions () extends StObject {
+  open class SwRegistrationOptions () extends StObject {
     
     /**
       * Whether the ServiceWorker will be registered and the related services (such as `SwPush` and
@@ -177,11 +181,7 @@ object mod {
       *
       * Default: 'registerWhenStable:30000'
       */
-    var registrationStrategy: js.UndefOr[
-        String | (js.Function0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<unknown> */ Any
-        ])
-      ] = js.native
+    var registrationStrategy: js.UndefOr[String | js.Function0[Observable_[Any]]] = js.native
     
     /**
       * A URL that defines the ServiceWorker's registration scope; that is, what range of URLs it can
@@ -228,7 +228,7 @@ object mod {
       * @deprecated Use the return value of {@link SwUpdate#activateUpdate} instead.
       *
       */
-    val activated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<UpdateActivatedEvent> */ Any = js.native
+    val activated: Observable_[UpdateActivatedEvent] = js.native
     
     /**
       * Emits an `UpdateAvailableEvent` event whenever a new app version is available.
@@ -241,7 +241,7 @@ object mod {
       * {@example service-worker-getting-started/src/app/prompt-update.service.ts
       * region='sw-replicate-available'}
       */
-    val available: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<UpdateAvailableEvent> */ Any = js.native
+    val available: Observable_[UpdateAvailableEvent] = js.native
     
     /**
       * Checks for an update and waits until the new version is downloaded from the server and ready
@@ -267,7 +267,7 @@ object mod {
       * worker to serve this client is in a broken state that cannot be recovered from without a full
       * page reload.
       */
-    val unrecoverable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<UnrecoverableStateEvent> */ Any = js.native
+    val unrecoverable: Observable_[UnrecoverableStateEvent] = js.native
     
     /**
       * Emits a `VersionDetectedEvent` event whenever a new version is detected on the server.
@@ -278,7 +278,7 @@ object mod {
       * Emits a `VersionReadyEvent` event whenever a new version has been downloaded and is ready for
       * activation.
       */
-    val versionUpdates: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<VersionEvent> */ Any = js.native
+    val versionUpdates: Observable_[VersionEvent] = js.native
   }
   /* static members */
   object SwUpdate {
@@ -304,35 +304,35 @@ object mod {
   @js.native
   trait NgswCommChannel extends StObject {
     
-    val events: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<TypedEvent> */ Any = js.native
+    val events: Observable_[TypedEvent] = js.native
     
     @JSName("eventsOfType")
-    def eventsOfType_type[T /* <: TypedEvent */](`type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any): Any = js.native
+    def eventsOfType_type[T /* <: TypedEvent */](`type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any): Observable_[T] = js.native
     @JSName("eventsOfType")
     def eventsOfType_type[T /* <: TypedEvent */](
       `type`: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any
         ]
-    ): Any = js.native
+    ): Observable_[T] = js.native
     
     def generateNonce(): Double = js.native
     
     def isEnabled: Boolean = js.native
     
     @JSName("nextEventOfType")
-    def nextEventOfType_type[T /* <: TypedEvent */](`type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any): Any = js.native
+    def nextEventOfType_type[T /* <: TypedEvent */](`type`: /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any): Observable_[T] = js.native
     
     def postMessage(action: String, payload: js.Object): js.Promise[Unit] = js.native
     
     def postMessageWithOperation(`type`: String, payload: js.Object, operationNonce: Double): js.Promise[Boolean] = js.native
     
-    val registration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<ServiceWorkerRegistration> */ Any = js.native
+    val registration: Observable_[ServiceWorkerRegistration] = js.native
     
     /* private */ var serviceWorker: Any = js.native
     
     def waitForOperationCompleted(nonce: Double): js.Promise[Boolean] = js.native
     
-    val worker: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<ServiceWorker> */ Any = js.native
+    val worker: Observable_[ServiceWorker] = js.native
   }
   
   trait NoNewVersionDetectedEvent

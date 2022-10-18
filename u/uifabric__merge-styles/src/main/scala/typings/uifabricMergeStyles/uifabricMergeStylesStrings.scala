@@ -1,11 +1,11 @@
 package typings.uifabricMergeStyles
 
-import typings.uifabricMergeStyles.irawstylebaseMod.ICSSBaselinePositionRule
-import typings.uifabricMergeStyles.irawstylebaseMod.ICSSDisplayRule
-import typings.uifabricMergeStyles.irawstylebaseMod.ICSSOverflowAndSelfPositionRule
-import typings.uifabricMergeStyles.irawstylebaseMod.ICSSRule
-import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
-import typings.uifabricMergeStyles.irawstylebaseMod.IMixBlendModes
+import typings.uifabricMergeStyles.libIrawstylebaseMod.ICSSBaselinePositionRule
+import typings.uifabricMergeStyles.libIrawstylebaseMod.ICSSDisplayRule
+import typings.uifabricMergeStyles.libIrawstylebaseMod.ICSSOverflowAndSelfPositionRule
+import typings.uifabricMergeStyles.libIrawstylebaseMod.ICSSRule
+import typings.uifabricMergeStyles.libIrawstylebaseMod.IFontWeight
+import typings.uifabricMergeStyles.libIrawstylebaseMod.IMixBlendModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,22 +69,6 @@ object uifabricMergeStylesStrings {
     extends StObject
        with IFontWeight
   inline def `900`: `900` = "900".asInstanceOf[`900`]
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
-  
-  @js.native
-  sealed trait IConcatenatedStyleSet extends StObject
-  inline def IConcatenatedStyleSet: IConcatenatedStyleSet = "IConcatenatedStyleSet".asInstanceOf[IConcatenatedStyleSet]
-  
-  @js.native
-  sealed trait IProcessedStyleSet extends StObject
-  inline def IProcessedStyleSet: IProcessedStyleSet = "IProcessedStyleSet".asInstanceOf[IProcessedStyleSet]
-  
-  @js.native
-  sealed trait IStyleSet extends StObject
-  inline def IStyleSet: IStyleSet = "IStyleSet".asInstanceOf[IStyleSet]
   
   @js.native
   sealed trait absolute extends StObject

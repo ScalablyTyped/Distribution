@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of methods and properties for managing the options which define how the content is to be printed. */
-@JSGlobal("Windows.Graphics.Printing.PrintTaskOptions")
+/* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.PrintTaskOptions")
 @js.native
-abstract class PrintTaskOptions ()
+open class PrintTaskOptions ()
   extends StObject
      with typings.winrtUwp.Windows.Graphics.Printing.PrintTaskOptions {
   

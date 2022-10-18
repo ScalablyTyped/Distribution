@@ -1,9 +1,9 @@
 package typings.antd.anon
 
-import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.generatePickerMod.DataPickerPlacement
-import typings.antd.generatePickerMod.PickerLocale
-import typings.antd.statusUtilsMod.InputStatus
+import typings.antd.libConfigProviderSizeContextMod.SizeType
+import typings.antd.libDatePickerGeneratePickerMod.DataPickerPlacement
+import typings.antd.libDatePickerGeneratePickerMod.PickerLocale
+import typings.antd.libUtilStatusUtilsMod.InputStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

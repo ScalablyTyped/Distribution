@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.MessageActionItem
-import typings.vscodeLanguageserverProtocol.protocolMod.ShowMessageRequestParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.MessageActionItem
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ShowMessageRequestParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.windowSlashshowMessageRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object ShowMessageRequest {
   
   @JSImport("vscode-languageserver-protocol", "ShowMessageRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "ShowMessageRequest.method")
   @js.native
@@ -19,5 +19,5 @@ object ShowMessageRequest {
   
   @JSImport("vscode-languageserver-protocol", "ShowMessageRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[ShowMessageRequestParams, MessageActionItem | Null, scala.Nothing, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ShowMessageRequestParams, MessageActionItem | Null, scala.Nothing, Unit, Unit] = js.native
 }

@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/line-ripple", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialLineRipple.foundationMod.default {
+    def this(adapter: PartialMDCLineRippleAdapt) = this()
+  }
+  
   @JSImport("@material/line-ripple", "MDCLineRipple")
   @js.native
   open class MDCLineRipple protected ()

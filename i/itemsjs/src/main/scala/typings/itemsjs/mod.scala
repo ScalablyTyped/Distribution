@@ -205,7 +205,10 @@ object mod {
       * Find similar items.
       * Uses the `id` key on items to check for uniqueness
       */
-    def similar(id: Any, options: SimilarOptions[I]): DataPagination[I] = js.native
+    def similar(
+      id: /* import warning: importer.ImportType#apply Failed type conversion: I extends {  id :infer ID} ? ID : unknown */ js.Any,
+      options: SimilarOptions[I]
+    ): DataPagination[I] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

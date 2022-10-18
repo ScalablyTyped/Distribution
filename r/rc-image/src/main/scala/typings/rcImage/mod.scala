@@ -1,8 +1,8 @@
 package typings.rcImage
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcImage.imageMod.CompoundedComponent
-import typings.rcImage.imageMod.ImageProps
+import typings.rcImage.libImageMod.CompoundedComponent
+import typings.rcImage.libImageMod.ImageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

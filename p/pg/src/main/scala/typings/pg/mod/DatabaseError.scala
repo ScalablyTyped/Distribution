@@ -1,6 +1,6 @@
 package typings.pg.mod
 
-import typings.pgProtocol.messagesMod.MessageName
+import typings.pgProtocol.distMessagesMod.MessageName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

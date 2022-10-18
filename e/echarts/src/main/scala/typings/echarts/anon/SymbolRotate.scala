@@ -7,41 +7,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SymbolRotate extends StObject {
   
   /**
-    * Label of this data item, which will be merged with
-    * `label` of starting point and ending point.
+    * Coordinates of the starting point or ending point, whose
+    * format depends on the coordinate of the series.
+    * It can be `x`, and `y` for
+    * [rectangular coordinates](https://echarts.apache.org/en/option.html#grid)
+    * , or `radius`, and `angle` for
+    * [polar coordinates](https://echarts.apache.org/en/option.html#polar)
+    * .
+    *
+    * **Notice:** For axis with
+    * [axis.type](https://echarts.apache.org/en/option.html#xAixs.type)
+    * `'category'`:
+    *
+    * + If coord value is `number`, it represents index of
+    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
+    * .
+    * + If coord value is `string`, it represents concrete
+    * value in
+    * [axis.data](https://echarts.apache.org/en/option.html#xAxis.data)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.label
+    * Please notice that in this case `xAxis.data`
+    * must not be written as \[number, number,
+    *
+    *
+    *
+    * \], but can only be written \[string, string,
+    *
+    *
+    *
+    * \].
+    * Otherwise it is not able to be located by markPoint /
+    * markLine.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.coord
     */
-  var label: js.UndefOr[Position] = js.undefined
+  var coord: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * Line style of this data item, which will be merged
-    * with `lineStyle` of starting point and ending point.
+    * Mark point style.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.itemStyle
     */
-  var lineStyle: js.UndefOr[ShadowOffsetX] = js.undefined
+  var itemStyle: js.UndefOr[BorderWidth] = js.undefined
   
   /**
-    * Name of the marker, which will display as a label.
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.label
+    */
+  var label: js.UndefOr[Emphasis] = js.undefined
+  
+  /**
+    * Mark point name.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.1.name
+    * @default
+    * ''
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.name
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Symbol of ending point.
+    * Symbol of .
     *
-    * Icon types provided by ECharts includes `'circle'`,
-    * `'rect'`, `'roundRect'`, `'triangle'`, `'diamond'`,
-    * `'pin'`, `'arrow'`, `'none'`
+    * Icon types provided by ECharts includes `'circle'`, `'rect'`,
+    * `'roundRect'`, `'triangle'`, `'diamond'`, `'pin'`, `'arrow'`,
+    * `'none'`
     *
-    * It can be set to an image with `'image://url'` ,
-    * in which URL is the link to an image, or `dataURI`
-    * of an image.
+    * It can be set to an image with `'image://url'` , in which
+    * URL is the link to an image, or `dataURI` of an image.
     *
     * An image URL example:
     *
@@ -52,82 +91,79 @@ trait SymbolRotate extends StObject {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
-    * As compared with raster image, vector paths prevent
-    * from jagging and blurring when scaled, and have a
-    * better control over changing colors.
+    * As compared with raster image, vector paths prevent from
+    * jagging and blurring when scaled, and have a better control
+    * over changing colors.
     * Size of vectoer icon will be adapted automatically.
     * Refer to
     * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
     * for more information about format of path.
-    * You may export vector paths from tools like Adobe
-    * Illustrator.
+    * You may export vector paths from tools like Adobe Illustrator.
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-map.map.markPoint.data)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbol
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to keep aspect for symbols in the form of
-    * `path://`.
+    * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Offset of ending point symbol relative to original
-    * position.
+    * Offset of symbol relative to original position.
     * By default, symbol will be put in the center position
     * of data.
-    * But if symbol is from user-defined vector path or
-    * image, you may not expect symbol to be in center.
+    * But if symbol is from user-defined vector path or image,
+    * you may not expect symbol to be in center.
     * In this case, you may use this attribute to set offset
     * to default position.
-    * It can be in absolute pixel value, or in relative
-    * percentage value.
+    * It can be in absolute pixel value, or in relative percentage
+    * value.
     *
-    * For example, `[0, '50%']` means to move upside side
-    * position of symbol height.
-    * It can be used to make the arrow in the bottom to
-    * be at data position when symbol is pin.
+    * For example, `[0, '50%']` means to move upside side position
+    * of symbol height.
+    * It can be used to make the arrow in the bottom to be
+    * at data position when symbol is pin.
     *
     *
     * @default
     * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * Rotate degree of ending point symbol.
-    * Note that when `symbol` is set to be `'arrow'` in
-    * `markLine`, `symbolRotate` value will be ignored,
-    * and compulsively use tangent angle.
+    * Rotate degree of symbol.
+    * Note that when `symbol` is set to be `'arrow'` in `markLine`,
+    * `symbolRotate` value will be ignored, and compulsively
+    * use tangent angle.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   
   /**
-    * ending point symbol size.
-    * It can be set to single numbers like `10`, or use
-    * an array to represent width and height.
-    * For example, `[20, 10]` means symbol width is `20`,
-    * and height is`10`.
+    * symbol size.
+    * It can be set to single numbers like `10`, or use an
+    * array to represent width and height.
+    * For example, `[20, 10]` means symbol width is `20`, and
+    * height is`10`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
@@ -135,15 +171,43 @@ trait SymbolRotate extends StObject {
     * Label value, which can be ignored.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.value
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.value
     */
   var value: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Works only when
+    * [type](https://echarts.apache.org/en/option.html#series-map.markPoint.data.type)
+    * is assigned.
+    * It is used to state the dimension used to calculate maximum
+    * value or minimum value.
+    * It may be the direct name of a dimension, like `x`, or
+    * `angle` for line charts, or `open`, or `close` for candlestick
+    * charts.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.valueDim
+    */
+  var valueDim: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Available when using
+    * [type](https://echarts.apache.org/en/option.html#series-map.markPoint.data.type)
+    * it is used to assign maximum value and minimum value
+    * in dimensions, it could be `0` (xAxis, radiusAxis), `1`
+    * (yAxis, angleAxis), and use the first value axis dimension
+    * by default.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.valueIndex
+    */
+  var valueIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * X position according to container, in pixel.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.x
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.x
     */
   var x: js.UndefOr[Double] = js.undefined
   
@@ -151,7 +215,7 @@ trait SymbolRotate extends StObject {
     * Y position according to container, in pixel.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1.y
+    * @see https://echarts.apache.org/en/option.html#series-map.markPoint.data.y
     */
   var y: js.UndefOr[Double] = js.undefined
 }
@@ -164,13 +228,19 @@ object SymbolRotate {
   
   extension [Self <: SymbolRotate](x: Self) {
     
-    inline def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+    
+    inline def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
+    
+    inline def setCoordVarargs(value: Any*): Self = StObject.set(x, "coord", js.Array(value*))
+    
+    inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    
+    inline def setLabel(value: Emphasis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setLineStyle(value: ShadowOffsetX): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
-    
-    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -201,6 +271,14 @@ object SymbolRotate {
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueDim(value: String): Self = StObject.set(x, "valueDim", value.asInstanceOf[js.Any])
+    
+    inline def setValueDimUndefined: Self = StObject.set(x, "valueDim", js.undefined)
+    
+    inline def setValueIndex(value: Double): Self = StObject.set(x, "valueIndex", value.asInstanceOf[js.Any])
+    
+    inline def setValueIndexUndefined: Self = StObject.set(x, "valueIndex", js.undefined)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

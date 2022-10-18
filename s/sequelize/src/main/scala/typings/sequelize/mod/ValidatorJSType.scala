@@ -4,9 +4,9 @@ import typings.sequelize.sequelizeBooleans.`false`
 import typings.sequelize.sequelizeStrings.any
 import typings.validator.anon.StrongPasswordOptionsretu
 import typings.validator.anon.StrongPasswordOptionsretuMinLength
-import typings.validator.isEmailMod.IsEmailOptions
-import typings.validator.isFQDNMod.IsFQDNOptions
-import typings.validator.isURLMod.IsURLOptions
+import typings.validator.libIsEmailMod.IsEmailOptions
+import typings.validator.libIsFQDNMod.IsFQDNOptions
+import typings.validator.libIsURLMod.IsURLOptions
 import typings.validator.mod.validator.AlphaLocale
 import typings.validator.mod.validator.AlphanumericLocale
 import typings.validator.mod.validator.FloatLocale
@@ -78,7 +78,7 @@ trait ValidatorJSType extends StObject {
   
   /* was `typeof _isIBAN.locales` */
   val ibanLocales: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 78, starting with typings.sequelize.sequelizeStrings.AD, typings.sequelize.sequelizeStrings.AE, typings.sequelize.sequelizeStrings.AL */ Any
   ] = js.native
   
   /**
@@ -153,7 +153,7 @@ trait ValidatorJSType extends StObject {
   
   /* was `typeof _isBoolean.default` */
   def isBoolean(str: String): Boolean = js.native
-  def isBoolean(str: String, options: typings.validator.isBooleanMod.Options): Boolean = js.native
+  def isBoolean(str: String, options: typings.validator.libIsBooleanMod.Options): Boolean = js.native
   
   /**
     * Check if the string is a valid BTC address.
@@ -307,9 +307,7 @@ trait ValidatorJSType extends StObject {
     */
   def isISIN(str: String): Boolean = js.native
   
-  /**
-    * Check if the string is a valid [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) officially assigned country code.
-    */
+  /* was `typeof _isISO31661Alpha2.default` */
   def isISO31661Alpha2(str: String): Boolean = js.native
   
   /**

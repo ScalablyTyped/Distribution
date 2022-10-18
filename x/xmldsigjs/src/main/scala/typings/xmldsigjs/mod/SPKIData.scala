@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "SPKIData")
 @js.native
 open class SPKIData ()
-  extends typings.xmldsigjs.keyInfosMod.SPKIData {
+  extends typings.xmldsigjs.buildTypesXmlKeyInfosMod.SPKIData {
   def this(properties: js.Object) = this()
 }

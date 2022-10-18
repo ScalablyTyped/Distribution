@@ -1,9 +1,9 @@
 package typings.reapop
 
-import typings.reapop.typesMod.NewNotification
-import typings.reapop.typesMod.NotificationButton
-import typings.reapop.typesMod.Position
-import typings.reapop.typesMod.Status
+import typings.reapop.distReducersNotificationsTypesMod.NewNotification
+import typings.reapop.distReducersNotificationsTypesMod.NotificationButton
+import typings.reapop.distReducersNotificationsTypesMod.Position
+import typings.reapop.distReducersNotificationsTypesMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,16 @@ object anon {
   
   trait DismissNotification extends StObject {
     
-    var dismissNotification: typings.reapop.notificationsSystemMod.DismissNotification
+    var dismissNotification: typings.reapop.distComponentsNotificationsSystemMod.DismissNotification
     
-    var notification: typings.reapop.typesMod.Notification
+    var notification: typings.reapop.distReducersNotificationsTypesMod.Notification
   }
   object DismissNotification {
     
-    inline def apply(dismissNotification: /* id */ String => Unit, notification: typings.reapop.typesMod.Notification): DismissNotification = {
+    inline def apply(
+      dismissNotification: /* id */ String => Unit,
+      notification: typings.reapop.distReducersNotificationsTypesMod.Notification
+    ): DismissNotification = {
       val __obj = js.Dynamic.literal(dismissNotification = js.Any.fromFunction1(dismissNotification), notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[DismissNotification]
     }
@@ -27,7 +30,7 @@ object anon {
       
       inline def setDismissNotification(value: /* id */ String => Unit): Self = StObject.set(x, "dismissNotification", js.Any.fromFunction1(value))
       
-      inline def setNotification(value: typings.reapop.typesMod.Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: typings.reapop.distReducersNotificationsTypesMod.Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,23 +62,23 @@ object anon {
           js.UndefOr[PartialNotification | Status], 
           js.UndefOr[PartialNotification]
         ]
-    ): typings.reapop.typesMod.Notification = js.native
-    def apply(message: String): typings.reapop.typesMod.Notification = js.native
-    def apply(message: String, options: PartialNotification): typings.reapop.typesMod.Notification = js.native
-    def apply(message: String, status: Status): typings.reapop.typesMod.Notification = js.native
-    def apply(message: String, status: Status, options: PartialNotification): typings.reapop.typesMod.Notification = js.native
-    def apply(notification: PartialNotification): typings.reapop.typesMod.Notification = js.native
+    ): typings.reapop.distReducersNotificationsTypesMod.Notification = js.native
+    def apply(message: String): typings.reapop.distReducersNotificationsTypesMod.Notification = js.native
+    def apply(message: String, options: PartialNotification): typings.reapop.distReducersNotificationsTypesMod.Notification = js.native
+    def apply(message: String, status: Status): typings.reapop.distReducersNotificationsTypesMod.Notification = js.native
+    def apply(message: String, status: Status, options: PartialNotification): typings.reapop.distReducersNotificationsTypesMod.Notification = js.native
+    def apply(notification: PartialNotification): typings.reapop.distReducersNotificationsTypesMod.Notification = js.native
   }
   
   trait Notification extends StObject {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var notification: typings.reapop.typesMod.Notification
+    var notification: typings.reapop.distReducersNotificationsTypesMod.Notification
   }
   object Notification {
     
-    inline def apply(notification: typings.reapop.typesMod.Notification): Notification = {
+    inline def apply(notification: typings.reapop.distReducersNotificationsTypesMod.Notification): Notification = {
       val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[Notification]
     }
@@ -86,7 +89,7 @@ object anon {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setNotification(value: typings.reapop.typesMod.Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: typings.reapop.distReducersNotificationsTypesMod.Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
   

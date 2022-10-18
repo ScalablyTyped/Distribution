@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AnaglyphArcRotateCamera")
 @js.native
 open class AnaglyphArcRotateCamera protected ()
-  extends typings.babylonjs.legacyMod.AnaglyphArcRotateCamera {
+  extends typings.babylonjs.legacyLegacyMod.AnaglyphArcRotateCamera {
   /**
     * Creates a new AnaglyphArcRotateCamera
     * @param name defines camera name
@@ -23,7 +23,7 @@ open class AnaglyphArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     interaxialDistance: Double
   ) = this()
   def this(
@@ -31,7 +31,7 @@ open class AnaglyphArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     interaxialDistance: Double,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()

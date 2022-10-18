@@ -4,14 +4,14 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MessageSocket extends StObject {
   
-  var messageSocket: typings.expoDevServer.metroDevServerMod.MessageSocket
+  var messageSocket: typings.expoDevServer.buildMetroDevServerMod.MessageSocket
   
   var middleware: Any
   
@@ -26,7 +26,7 @@ trait MessageSocket extends StObject {
 object MessageSocket {
   
   inline def apply(
-    messageSocket: typings.expoDevServer.metroDevServerMod.MessageSocket,
+    messageSocket: typings.expoDevServer.buildMetroDevServerMod.MessageSocket,
     middleware: Any,
     server: Server[
       Instantiable1[/* socket */ Socket, IncomingMessage], 
@@ -42,7 +42,7 @@ object MessageSocket {
   
   extension [Self <: MessageSocket](x: Self) {
     
-    inline def setMessageSocket(value: typings.expoDevServer.metroDevServerMod.MessageSocket): Self = StObject.set(x, "messageSocket", value.asInstanceOf[js.Any])
+    inline def setMessageSocket(value: typings.expoDevServer.buildMetroDevServerMod.MessageSocket): Self = StObject.set(x, "messageSocket", value.asInstanceOf[js.Any])
     
     inline def setMiddleware(value: Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     

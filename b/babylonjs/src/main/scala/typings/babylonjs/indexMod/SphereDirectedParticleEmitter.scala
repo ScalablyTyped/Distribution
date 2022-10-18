@@ -20,14 +20,14 @@ open class SphereDirectedParticleEmitter ()
     /**
     * The min limit of the emission direction.
     */
-  direction1: typings.babylonjs.mathVectorMod.Vector3
+  direction1: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     radius: Unit,
     /**
     * The min limit of the emission direction.
     */
-  direction1: typings.babylonjs.mathVectorMod.Vector3
+  direction1: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     radius: Double,
@@ -38,18 +38,18 @@ open class SphereDirectedParticleEmitter ()
     /**
     * The max limit of the emission direction.
     */
-  direction2: typings.babylonjs.mathVectorMod.Vector3
+  direction2: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     radius: Double,
     /**
     * The min limit of the emission direction.
     */
-  direction1: typings.babylonjs.mathVectorMod.Vector3,
+  direction1: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     /**
     * The max limit of the emission direction.
     */
-  direction2: typings.babylonjs.mathVectorMod.Vector3
+  direction2: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     radius: Unit,
@@ -60,17 +60,17 @@ open class SphereDirectedParticleEmitter ()
     /**
     * The max limit of the emission direction.
     */
-  direction2: typings.babylonjs.mathVectorMod.Vector3
+  direction2: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
     radius: Unit,
     /**
     * The min limit of the emission direction.
     */
-  direction1: typings.babylonjs.mathVectorMod.Vector3,
+  direction1: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     /**
     * The max limit of the emission direction.
     */
-  direction2: typings.babylonjs.mathVectorMod.Vector3
+  direction2: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
 }

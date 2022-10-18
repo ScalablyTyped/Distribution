@@ -1,6 +1,6 @@
 package typings.antDesignReactNative.anon
 
-import typings.antDesignReactNative.radioDemoBasicMod.RadioValue
+import typings.antDesignReactNative.libRadioDemoBasicMod.RadioValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

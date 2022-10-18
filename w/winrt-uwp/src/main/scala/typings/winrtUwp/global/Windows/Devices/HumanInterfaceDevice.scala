@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object HumanInterfaceDevice {
   
   /** Represents a simple Boolean control on a HID device that returns on/off values. An example would be the LED light on a keyboard. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidBooleanControl")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidBooleanControl")
   @js.native
-  abstract class HidBooleanControl ()
+  open class HidBooleanControl ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidBooleanControl {
     
@@ -42,9 +42,9 @@ object HumanInterfaceDevice {
   }
   
   /** Describes a Boolean control for a given HID device. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidBooleanControlDescription")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidBooleanControlDescription")
   @js.native
-  abstract class HidBooleanControlDescription ()
+  open class HidBooleanControlDescription ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidBooleanControlDescription {
     
@@ -74,9 +74,9 @@ object HumanInterfaceDevice {
   }
   
   /** Retrieves the collection information for a group of related controls. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidCollection")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidCollection")
   @js.native
-  abstract class HidCollection ()
+  open class HidCollection ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidCollection {
     
@@ -123,9 +123,9 @@ object HumanInterfaceDevice {
   }
   
   /** Represents a top-level collection and the corresponding device. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidDevice")
   @js.native
-  abstract class HidDevice ()
+  open class HidDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidDevice
   object HidDevice {
@@ -164,9 +164,9 @@ object HumanInterfaceDevice {
   }
   
   /** Represents a feature report. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidFeatureReport")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidFeatureReport")
   @js.native
-  abstract class HidFeatureReport ()
+  open class HidFeatureReport ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidFeatureReport {
     
@@ -218,9 +218,9 @@ object HumanInterfaceDevice {
   }
   
   /** Represents an input report. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidInputReport")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidInputReport")
   @js.native
-  abstract class HidInputReport ()
+  open class HidInputReport ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidInputReport {
     
@@ -270,9 +270,9 @@ object HumanInterfaceDevice {
   }
   
   /** Represents the arguments which the HID API sends as part of an input-report event. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidInputReportReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidInputReportReceivedEventArgs")
   @js.native
-  abstract class HidInputReportReceivedEventArgs ()
+  open class HidInputReportReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidInputReportReceivedEventArgs {
     
@@ -282,9 +282,9 @@ object HumanInterfaceDevice {
   }
   
   /** Represents a numeric control on a HID device that returns a range of values. An example would be the volume control on a speaker. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidNumericControl")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidNumericControl")
   @js.native
-  abstract class HidNumericControl ()
+  open class HidNumericControl ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidNumericControl {
     
@@ -318,9 +318,9 @@ object HumanInterfaceDevice {
   }
   
   /** Describes a numeric control for a given HID device. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription")
   @js.native
-  abstract class HidNumericControlDescription ()
+  open class HidNumericControlDescription ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidNumericControlDescription {
     
@@ -390,9 +390,9 @@ object HumanInterfaceDevice {
   }
   
   /** Represents an output report. */
-  @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidOutputReport")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidOutputReport")
   @js.native
-  abstract class HidOutputReport ()
+  open class HidOutputReport ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidOutputReport {
     

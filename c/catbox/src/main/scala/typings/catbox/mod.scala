@@ -74,7 +74,9 @@ object mod {
       * @param id the unique item identifier (within the policy segment).
       * Can be a string or an object with the required 'id' key.
       */
-    def get(id: Id): js.Promise[T | Null | DecoratedResult[T]] = js.native
+    def get(id: Id): js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: O extends catbox.catbox.DecoratedPolicyOptions<T> ? catbox.catbox.DecoratedResult<T> : T | null */ js.Any
+      ] = js.native
     
     /**
       * returns true if cache engine determines itself as ready, false if it is not ready or if

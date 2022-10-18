@@ -1,7 +1,7 @@
 package typings.rcRate
 
-import typings.rcRate.rateMod.RateProps
-import typings.rcRate.rateMod.RateState
+import typings.rcRate.esRateMod.RateProps
+import typings.rcRate.esRateMod.RateState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object mod {
   @JSImport("rc-rate", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.rcRate.rateMod.default {
+    extends typings.rcRate.esRateMod.default {
     def this(props: RateProps) = this()
   }
   object default {

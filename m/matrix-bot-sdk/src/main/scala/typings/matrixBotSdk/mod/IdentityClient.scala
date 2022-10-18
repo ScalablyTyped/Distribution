@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.openIDConnectMod.OpenIDConnectToken
+import typings.matrixBotSdk.libModelsOpenIDConnectMod.OpenIDConnectToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "IdentityClient")
 @js.native
 /* private */ open class IdentityClient ()
-  extends typings.matrixBotSdk.identityClientMod.IdentityClient
+  extends typings.matrixBotSdk.libIdentityIdentityClientMod.IdentityClient
 /* static members */
 object IdentityClient {
   
@@ -24,6 +24,6 @@ object IdentityClient {
   inline def acquire(
     oidc: OpenIDConnectToken,
     serverUrl: String,
-    mxClient: typings.matrixBotSdk.matrixClientMod.MatrixClient
-  ): js.Promise[typings.matrixBotSdk.identityClientMod.IdentityClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("acquire")(oidc.asInstanceOf[js.Any], serverUrl.asInstanceOf[js.Any], mxClient.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.identityClientMod.IdentityClient]]
+    mxClient: typings.matrixBotSdk.libMatrixClientMod.MatrixClient
+  ): js.Promise[typings.matrixBotSdk.libIdentityIdentityClientMod.IdentityClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("acquire")(oidc.asInstanceOf[js.Any], serverUrl.asInstanceOf[js.Any], mxClient.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.matrixBotSdk.libIdentityIdentityClientMod.IdentityClient]]
 }

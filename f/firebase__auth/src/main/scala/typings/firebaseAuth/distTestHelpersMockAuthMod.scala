@@ -6,6 +6,8 @@ import typings.firebaseAuth.distSrcCorePersistenceMod.PersistedBlob
 import typings.firebaseAuth.distSrcModelAuthMod.AuthInternal
 import typings.firebaseAuth.distSrcModelPublicTypesMod.PopupRedirectResolver
 import typings.firebaseAuth.distSrcModelUserMod.UserInternal
+import typings.firebaseAuth.firebaseAuthStrings.heartbeat
+import typings.firebaseComponent.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +29,7 @@ object distTestHelpersMockAuthMod {
   
   @JSImport("@firebase/auth/dist/test/helpers/mock_auth", "FAKE_HEARTBEAT_CONTROLLER_PROVIDER")
   @js.native
-  val FAKE_HEARTBEAT_CONTROLLER_PROVIDER: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<'heartbeat'> */ Any = js.native
+  val FAKE_HEARTBEAT_CONTROLLER_PROVIDER: Provider[heartbeat] = js.native
   
   @JSImport("@firebase/auth/dist/test/helpers/mock_auth", "MockPersistenceLayer")
   @js.native

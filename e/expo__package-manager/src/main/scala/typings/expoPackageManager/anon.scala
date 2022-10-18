@@ -1,6 +1,6 @@
 package typings.expoPackageManager
 
-import typings.expoPackageManager.packageManagerMod.Logger
+import typings.expoPackageManager.buildPackageManagerMod.Logger
 import typings.expoSpawnAsync.mod.SpawnOptions
 import typings.ora.mod.Ora
 import org.scalablytyped.runtime.StObject

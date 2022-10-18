@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "EventTarget")
 @js.native
 open class EventTarget ()
-  extends typings.antvGLite.domMod.EventTarget
+  extends typings.antvGLite.distDomMod.EventTarget

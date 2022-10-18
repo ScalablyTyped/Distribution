@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "QueryType")
 @js.native
 open class QueryType protected ()
-  extends typings.typedoc.modelsMod.QueryType {
-  def this(reference: typings.typedoc.modelsTypesMod.ReferenceType) = this()
+  extends typings.typedoc.distLibModelsMod.QueryType {
+  def this(reference: typings.typedoc.distLibModelsTypesMod.ReferenceType) = this()
 }

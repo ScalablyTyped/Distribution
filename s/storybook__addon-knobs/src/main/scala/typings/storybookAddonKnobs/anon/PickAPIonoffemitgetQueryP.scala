@@ -1,6 +1,6 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.storybookApi.urlMod.QueryParams
+import typings.storybookApi.distTs3Dot9ModulesUrlMod.QueryParams
 import typings.storybookChannels.mod.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

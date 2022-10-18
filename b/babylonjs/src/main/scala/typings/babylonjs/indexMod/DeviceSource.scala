@@ -1,13 +1,13 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.inputInterfacesMod.IDeviceInputSystem
+import typings.babylonjs.deviceInputInputInterfacesMod.IDeviceInputSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/index", "DeviceSource")
 @js.native
-open class DeviceSource[T /* <: typings.babylonjs.deviceEnumsMod.DeviceType */] protected ()
+open class DeviceSource[T /* <: typings.babylonjs.deviceInputInputDevicesDeviceEnumsMod.DeviceType */] protected ()
   extends typings.babylonjs.deviceInputIndexMod.DeviceSource[T] {
   /**
     * Default Constructor

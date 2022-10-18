@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "IntersectionInfo")
 @js.native
 open class IntersectionInfo protected ()
-  extends typings.babylonjs.legacyMod.IntersectionInfo {
+  extends typings.babylonjs.legacyLegacyMod.IntersectionInfo {
   def this(bu: Nullable[Double], bv: Nullable[Double], distance: Double) = this()
 }

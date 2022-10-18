@@ -2,7 +2,7 @@ package typings.xml
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.xml.anon.Attr
 import typings.xml.anon.Encoding
 import typings.xml.anon.streamtrueOption
@@ -16,7 +16,7 @@ object mod {
   inline def apply(xmlObject: js.Array[XmlObject]): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(xmlObject: js.Array[XmlObject], options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: js.Array[XmlObject], options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(xmlObject: js.Array[XmlObject], options: streamtrueOption): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(xmlObject: js.Array[XmlObject], options: streamtrueOption): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   inline def apply(xmlObject: js.Array[XmlObject], options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: Unit, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: Unit, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -24,7 +24,7 @@ object mod {
   inline def apply(xmlObject: XmlObject): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def apply(xmlObject: XmlObject, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def apply(xmlObject: XmlObject, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(xmlObject: XmlObject, options: streamtrueOption): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(xmlObject: XmlObject, options: streamtrueOption): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   inline def apply(xmlObject: XmlObject, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xml", JSImport.Namespace)

@@ -6,21 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ref extends StObject {
   
-  var ref: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
-  ] = js.undefined
+  var ref: Any
 }
 object Ref {
   
-  inline def apply(): Ref = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(ref: Any): Ref = {
+    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ref]
   }
   
   extension [Self <: Ref](x: Self) {
     
-    inline def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRef(value: Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }
 }

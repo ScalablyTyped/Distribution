@@ -25,15 +25,6 @@ object mod {
     def this(data: StringDictionary[Dictkey]) = this()
     def this(data: StringDictionary[Dictkey], options: TanninOptions) = this()
   }
-  object default {
-    
-    @JSImport("tannin", JSImport.Default)
-    @js.native
-    def apply(data: StringDictionary[Dictkey]): Unit = js.native
-    @JSImport("tannin", JSImport.Default)
-    @js.native
-    def apply(data: StringDictionary[Dictkey], options: TanninOptions): Unit = js.native
-  }
   
   @js.native
   trait Tannin extends StObject {

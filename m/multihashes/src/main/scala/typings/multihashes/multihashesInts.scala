@@ -1,6 +1,6 @@
 package typings.multihashes
 
-import typings.multihashes.constantsMod.HashCode
+import typings.multihashes.distSrcConstantsMod.HashCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

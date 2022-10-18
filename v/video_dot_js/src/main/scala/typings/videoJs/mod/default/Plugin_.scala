@@ -1,7 +1,7 @@
 package typings.videoJs.mod.default
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.videoJs.anon.TypeofPlugin
+import typings.videoJs.anon.BASEPLUGINNAME
 import typings.videoJs.mod.videojs.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,7 +56,7 @@ object Plugin_ {
     *
     * @return The plugin (or `undefined`).
     */
-  inline def getPlugin(name: String): TypeofPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlugin]
+  inline def getPlugin(name: String): BASEPLUGINNAME = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[BASEPLUGINNAME]
   
   /**
     * Gets a plugin's version, if available
@@ -95,7 +95,7 @@ object Plugin_ {
   inline def isBasic(plugin: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isBasic(plugin: js.Function0[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBasic")(plugin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def registerPlugin[T /* <: TypeofPlugin */](name: String, plugin: T): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
+  inline def registerPlugin[T /* <: BASEPLUGINNAME */](name: String, plugin: T): js.Function0[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(name.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.Function0[T]]
   /**
     * Register a Video.js plugin.
     *

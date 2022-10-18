@@ -17,7 +17,7 @@ open class WebXRCamera protected ()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager
   ) = this()
 }
 /* static members */

@@ -2,12 +2,12 @@ package typings.luminoAlgorithm
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.luminoAlgorithm.anon.Index
-import typings.luminoAlgorithm.arrayMod.ArrayExt.MutableArrayLike
-import typings.luminoAlgorithm.arrayMod.ArrayExt.slice.IOptions
-import typings.luminoAlgorithm.iterMod.IIterator
-import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
-import typings.luminoAlgorithm.retroMod.RetroableOrArrayLike
-import typings.luminoAlgorithm.stringMod.StringExt.IMatchResult
+import typings.luminoAlgorithm.typesArrayMod.ArrayExt.MutableArrayLike
+import typings.luminoAlgorithm.typesArrayMod.ArrayExt.slice.IOptions
+import typings.luminoAlgorithm.typesIterMod.IIterator
+import typings.luminoAlgorithm.typesIterMod.IterableOrArrayLike
+import typings.luminoAlgorithm.typesRetroMod.RetroableOrArrayLike
+import typings.luminoAlgorithm.typesStringMod.StringExt.IMatchResult
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -1064,7 +1064,7 @@ object mod {
   @JSImport("@lumino/algorithm", "ArrayIterator")
   @js.native
   open class ArrayIterator[T] protected ()
-    extends typings.luminoAlgorithm.iterMod.ArrayIterator[T] {
+    extends typings.luminoAlgorithm.typesIterMod.ArrayIterator[T] {
     /**
       * Construct a new array iterator.
       *
@@ -1076,7 +1076,7 @@ object mod {
   @JSImport("@lumino/algorithm", "ChainIterator")
   @js.native
   open class ChainIterator[T] protected ()
-    extends typings.luminoAlgorithm.chainMod.ChainIterator[T] {
+    extends typings.luminoAlgorithm.typesChainMod.ChainIterator[T] {
     /**
       * Construct a new chain iterator.
       *
@@ -1088,12 +1088,12 @@ object mod {
   @JSImport("@lumino/algorithm", "EmptyIterator")
   @js.native
   open class EmptyIterator[T] ()
-    extends typings.luminoAlgorithm.emptyMod.EmptyIterator[T]
+    extends typings.luminoAlgorithm.typesEmptyMod.EmptyIterator[T]
   
   @JSImport("@lumino/algorithm", "EnumerateIterator")
   @js.native
   open class EnumerateIterator[T] protected ()
-    extends typings.luminoAlgorithm.enumerateMod.EnumerateIterator[T] {
+    extends typings.luminoAlgorithm.typesEnumerateMod.EnumerateIterator[T] {
     /**
       * Construct a new enumerate iterator.
       *
@@ -1107,7 +1107,7 @@ object mod {
   @JSImport("@lumino/algorithm", "FilterIterator")
   @js.native
   open class FilterIterator[T] protected ()
-    extends typings.luminoAlgorithm.filterMod.FilterIterator[T] {
+    extends typings.luminoAlgorithm.typesFilterMod.FilterIterator[T] {
     /**
       * Construct a new filter iterator.
       *
@@ -1121,7 +1121,7 @@ object mod {
   @JSImport("@lumino/algorithm", "FnIterator")
   @js.native
   open class FnIterator[T] protected ()
-    extends typings.luminoAlgorithm.iterMod.FnIterator[T] {
+    extends typings.luminoAlgorithm.typesIterMod.FnIterator[T] {
     /**
       * Construct a new function iterator.
       *
@@ -1133,7 +1133,7 @@ object mod {
   @JSImport("@lumino/algorithm", "ItemIterator")
   @js.native
   open class ItemIterator[T] protected ()
-    extends typings.luminoAlgorithm.iterMod.ItemIterator[T] {
+    extends typings.luminoAlgorithm.typesIterMod.ItemIterator[T] {
     /**
       * Construct a new item iterator.
       *
@@ -1148,7 +1148,7 @@ object mod {
   @JSImport("@lumino/algorithm", "KeyIterator")
   @js.native
   open class KeyIterator protected ()
-    extends typings.luminoAlgorithm.iterMod.KeyIterator {
+    extends typings.luminoAlgorithm.typesIterMod.KeyIterator {
     /**
       * Construct a new key iterator.
       *
@@ -1163,7 +1163,7 @@ object mod {
   @JSImport("@lumino/algorithm", "MapIterator")
   @js.native
   open class MapIterator[T, U] protected ()
-    extends typings.luminoAlgorithm.mapMod.MapIterator[T, U] {
+    extends typings.luminoAlgorithm.typesMapMod.MapIterator[T, U] {
     /**
       * Construct a new map iterator.
       *
@@ -1177,7 +1177,7 @@ object mod {
   @JSImport("@lumino/algorithm", "RangeIterator")
   @js.native
   open class RangeIterator protected ()
-    extends typings.luminoAlgorithm.rangeMod.RangeIterator {
+    extends typings.luminoAlgorithm.typesRangeMod.RangeIterator {
     /**
       * Construct a new range iterator.
       *
@@ -1193,7 +1193,7 @@ object mod {
   @JSImport("@lumino/algorithm", "RepeatIterator")
   @js.native
   open class RepeatIterator[T] protected ()
-    extends typings.luminoAlgorithm.repeatMod.RepeatIterator[T] {
+    extends typings.luminoAlgorithm.typesRepeatMod.RepeatIterator[T] {
     /**
       * Construct a new repeat iterator.
       *
@@ -1207,7 +1207,7 @@ object mod {
   @JSImport("@lumino/algorithm", "RetroArrayIterator")
   @js.native
   open class RetroArrayIterator[T] protected ()
-    extends typings.luminoAlgorithm.retroMod.RetroArrayIterator[T] {
+    extends typings.luminoAlgorithm.typesRetroMod.RetroArrayIterator[T] {
     /**
       * Construct a new retro iterator.
       *
@@ -1219,7 +1219,7 @@ object mod {
   @JSImport("@lumino/algorithm", "StrideIterator")
   @js.native
   open class StrideIterator[T] protected ()
-    extends typings.luminoAlgorithm.strideMod.StrideIterator[T] {
+    extends typings.luminoAlgorithm.typesStrideMod.StrideIterator[T] {
     /**
       * Construct a new stride iterator.
       *
@@ -1341,7 +1341,7 @@ object mod {
   @JSImport("@lumino/algorithm", "TakeIterator")
   @js.native
   open class TakeIterator[T] protected ()
-    extends typings.luminoAlgorithm.takeMod.TakeIterator[T] {
+    extends typings.luminoAlgorithm.typesTakeMod.TakeIterator[T] {
     /**
       * Construct a new take iterator.
       *
@@ -1355,7 +1355,7 @@ object mod {
   @JSImport("@lumino/algorithm", "ValueIterator")
   @js.native
   open class ValueIterator[T] protected ()
-    extends typings.luminoAlgorithm.iterMod.ValueIterator[T] {
+    extends typings.luminoAlgorithm.typesIterMod.ValueIterator[T] {
     /**
       * Construct a new value iterator.
       *
@@ -1370,7 +1370,7 @@ object mod {
   @JSImport("@lumino/algorithm", "ZipIterator")
   @js.native
   open class ZipIterator[T] protected ()
-    extends typings.luminoAlgorithm.zipMod.ZipIterator[T] {
+    extends typings.luminoAlgorithm.typesZipMod.ZipIterator[T] {
     /**
       * Construct a new zip iterator.
       *

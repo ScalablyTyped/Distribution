@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ToneAnalyzerV3 extends BaseService {
   
+  var name: String = js.native
+  
+  var serviceVersion: String = js.native
+  
   /*************************
     * methods
     ************************/
@@ -61,8 +65,8 @@ trait ToneAnalyzerV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def tone(params: ToneParams): js.Promise[js.Any] | Unit = js.native
-  def tone(params: ToneParams, callback: Callback[ToneAnalysis]): js.Promise[js.Any] | Unit = js.native
+  def tone(params: ToneParams): js.Promise[Any] | Unit = js.native
+  def tone(params: ToneParams, callback: Callback[ToneAnalysis]): js.Promise[Any] | Unit = js.native
   
   /**
     * Analyze customer engagement tone.
@@ -96,6 +100,6 @@ trait ToneAnalyzerV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def toneChat(params: ToneChatParams): js.Promise[js.Any] | Unit = js.native
-  def toneChat(params: ToneChatParams, callback: Callback[UtteranceAnalyses]): js.Promise[js.Any] | Unit = js.native
+  def toneChat(params: ToneChatParams): js.Promise[Any] | Unit = js.native
+  def toneChat(params: ToneChatParams, callback: Callback[UtteranceAnalyses]): js.Promise[Any] | Unit = js.native
 }

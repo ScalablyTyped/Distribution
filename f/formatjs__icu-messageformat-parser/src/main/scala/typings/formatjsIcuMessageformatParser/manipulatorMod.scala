@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object manipulatorMod {
   
-  @JSImport("@formatjs/icu-messageformat-parser/lib/manipulator", JSImport.Namespace)
+  @JSImport("@formatjs/icu-messageformat-parser/manipulator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

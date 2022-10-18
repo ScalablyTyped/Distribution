@@ -1,11 +1,11 @@
 package typings.postcssJs
 
+import typings.postcss.libNodeMod.AnyNode
 import typings.postcss.mod.Builder
 import typings.postcss.mod.Root_
 import typings.postcss.mod.SourceMapOptions
 import typings.postcss.mod.Stringifier
 import typings.postcss.mod.Syntax
-import typings.postcss.nodeMod.AnyNode
 import typings.postcssJs.mod.CssInJs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

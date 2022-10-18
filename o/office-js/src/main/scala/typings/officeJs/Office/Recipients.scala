@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Represents recipients of an item. Compose mode only.
-  * 
+  *
   * @remarks
   * [Api set: Mailbox 1.1]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
   */
 @js.native
@@ -39,15 +39,15 @@ trait Recipients extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
-    * 
+    *
     * @param recipients - The recipients to add to the recipients list.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
@@ -79,17 +79,17 @@ trait Recipients extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
-    * 
+    *
     * @param recipients - The recipients to add to the recipients list.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
@@ -113,9 +113,9 @@ trait Recipients extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
@@ -135,7 +135,7 @@ trait Recipients extends StObject {
     * 
     * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
     * the auto-complete list.
-    * 
+    *
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
     */
@@ -152,9 +152,9 @@ trait Recipients extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     * 
     * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
@@ -174,8 +174,8 @@ trait Recipients extends StObject {
     * 
     * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
     * the auto-complete list.
-    * 
-    * @param options - An object literal that contains one or more of the following properties.
+    *
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
@@ -209,17 +209,17 @@ trait Recipients extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
     *
     * @param recipients - The recipients to add to the recipients list.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
     *                 indicates any error that occurred while adding the data.
     */
@@ -251,19 +251,19 @@ trait Recipients extends StObject {
     *
     * @remarks
     * [Api set: Mailbox 1.1]
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
-    * 
+    *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-    * 
+    *
     * **Errors**:
-    * 
+    *
     * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
-    * 
+    *
     * @param recipients - The recipients to add to the recipients list.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
     *                 indicates any error that occurred while adding the data.
     */

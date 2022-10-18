@@ -1,12 +1,12 @@
 package typings.nivoLine.mod
 
-import typings.nivoAxes.typesMod.AxisProps
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoAxes.distTypesTypesMod.AxisProps
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.CartesianMarkerProps
 import typings.nivoCore.mod.Theme
 import typings.nivoCore.mod.ValueFormat
-import typings.nivoLegends.typesTypesMod.LegendProps
+import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.nivoLine.anon.ReadonlyPointSymbolProps
 import typings.nivoLine.nivoLineBooleans.`false`
 import typings.nivoLine.nivoLineStrings.basis
@@ -21,9 +21,9 @@ import typings.nivoLine.nivoLineStrings.stepAfter
 import typings.nivoLine.nivoLineStrings.stepBefore
 import typings.nivoLine.nivoLineStrings.x
 import typings.nivoLine.nivoLineStrings.y
-import typings.nivoScales.typesMod.ScaleSpec
-import typings.nivoScales.typesMod.TicksSpec
-import typings.nivoTooltip.typesMod.CrosshairType
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
+import typings.nivoScales.distTypesTypesMod.TicksSpec
+import typings.nivoTooltip.distTypesTypesMod.CrosshairType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -307,19 +307,11 @@ object LineProps {
     
     inline def setTooltipFormat(value: ValueFormat[DatumValue, Unit]): Self = StObject.set(x, "tooltipFormat", value.asInstanceOf[js.Any])
     
-    inline def setTooltipFormatFunction1(value: DatumValue => String): Self = StObject.set(x, "tooltipFormat", js.Any.fromFunction1(value))
-    
-    inline def setTooltipFormatFunction2(value: (DatumValue, Unit) => String): Self = StObject.set(x, "tooltipFormat", js.Any.fromFunction2(value))
-    
     inline def setTooltipFormatUndefined: Self = StObject.set(x, "tooltipFormat", js.undefined)
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     inline def setXFormat(value: ValueFormat[DatumValue, Unit]): Self = StObject.set(x, "xFormat", value.asInstanceOf[js.Any])
-    
-    inline def setXFormatFunction1(value: DatumValue => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction1(value))
-    
-    inline def setXFormatFunction2(value: (DatumValue, Unit) => String): Self = StObject.set(x, "xFormat", js.Any.fromFunction2(value))
     
     inline def setXFormatUndefined: Self = StObject.set(x, "xFormat", js.undefined)
     
@@ -328,10 +320,6 @@ object LineProps {
     inline def setXScaleUndefined: Self = StObject.set(x, "xScale", js.undefined)
     
     inline def setYFormat(value: ValueFormat[DatumValue, Unit]): Self = StObject.set(x, "yFormat", value.asInstanceOf[js.Any])
-    
-    inline def setYFormatFunction1(value: DatumValue => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction1(value))
-    
-    inline def setYFormatFunction2(value: (DatumValue, Unit) => String): Self = StObject.set(x, "yFormat", js.Any.fromFunction2(value))
     
     inline def setYFormatUndefined: Self = StObject.set(x, "yFormat", js.undefined)
     

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "Task")
 @js.native
 open class Task ()
-  extends typings.yuka.yukaMod.Task
+  extends typings.yuka.srcYukaMod.Task

@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.columnMod.IColumnProps
+import typings.blueprintjsTable.libEsmColumnMod.IColumnProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "Column")
 @js.native
 open class Column protected ()
-  extends typings.blueprintjsTable.columnMod.Column {
+  extends typings.blueprintjsTable.libEsmColumnMod.Column {
   def this(props: IColumnProps) = this()
   /**
     * @deprecated

@@ -1,7 +1,7 @@
 package typings.babylonjs.renderingIndexMod
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.edgesRendererMod.IEdgesRendererOptions
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.renderingEdgesRendererMod.IEdgesRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "EdgesRenderer")
 @js.native
 open class EdgesRenderer protected ()
-  extends typings.babylonjs.edgesRendererMod.EdgesRenderer {
+  extends typings.babylonjs.renderingEdgesRendererMod.EdgesRenderer {
   /**
     * Creates an instance of the EdgesRenderer. It is primarily use to display edges of a mesh.
     * Beware when you use this class with complex objects as the adjacencies computation can be really long

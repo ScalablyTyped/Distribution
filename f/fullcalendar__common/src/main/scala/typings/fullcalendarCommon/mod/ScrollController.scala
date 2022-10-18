@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fullcalendar/common", "ScrollController")
+/* note: abstract class */ @JSImport("@fullcalendar/common", "ScrollController")
 @js.native
-abstract class ScrollController () extends StObject {
+open class ScrollController () extends StObject {
   
   def canScrollDown(): Boolean = js.native
   

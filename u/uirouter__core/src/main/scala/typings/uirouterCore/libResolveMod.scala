@@ -2,9 +2,9 @@ package typings.uirouterCore
 
 import typings.uirouterCore.anon.EAGER
 import typings.uirouterCore.anon.NOWAIT
-import typings.uirouterCore.pathNodeMod.PathNode
-import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
-import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
+import typings.uirouterCore.libPathPathNodeMod.PathNode
+import typings.uirouterCore.libResolveInterfaceMod.ResolvableLiteral
+import typings.uirouterCore.libResolveInterfaceMod.ResolvePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +22,11 @@ object libResolveMod {
   @JSImport("@uirouter/core/lib/resolve", "Resolvable")
   @js.native
   open class Resolvable protected ()
-    extends typings.uirouterCore.resolvableMod.Resolvable {
-    /** This constructor creates a Resolvable copy */
-    def this(resolvable: typings.uirouterCore.resolvableMod.Resolvable) = this()
+    extends typings.uirouterCore.libResolveResolvableMod.Resolvable {
     /** This constructor creates a new Resolvable from the plain old [[ResolvableLiteral]] javascript object */
     def this(resolvable: ResolvableLiteral) = this()
+    /** This constructor creates a Resolvable copy */
+    def this(resolvable: typings.uirouterCore.libResolveResolvableMod.Resolvable) = this()
     /**
       * This constructor creates a new `Resolvable`
       *
@@ -62,13 +62,13 @@ object libResolveMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromData(token: Any, data: Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
+    inline def fromData(token: Any, data: Any): typings.uirouterCore.libResolveResolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.libResolveResolvableMod.Resolvable]
   }
   
   @JSImport("@uirouter/core/lib/resolve", "ResolveContext")
   @js.native
   open class ResolveContext protected ()
-    extends typings.uirouterCore.resolveContextMod.ResolveContext {
+    extends typings.uirouterCore.libResolveResolveContextMod.ResolveContext {
     def this(_path: js.Array[PathNode]) = this()
   }
   

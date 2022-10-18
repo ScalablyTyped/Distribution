@@ -1,7 +1,7 @@
 package typings.webicon
 
-import typings.webicon.configMod.Config
-import typings.webicon.configurationHandlerMod.ConfigurationHandler
+import typings.webicon.systemConfigMod.Config
+import typings.webicon.systemConfigurationHandlerMod.ConfigurationHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

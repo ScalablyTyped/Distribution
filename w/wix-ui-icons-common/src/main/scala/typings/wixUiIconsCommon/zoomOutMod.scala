@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsZoomOutMod.ZoomOutProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsZoomOutMod.ZoomOutProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomOutMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/ZoomOut", JSImport.Default)
+  @JSImport("wix-ui-icons-common/ZoomOut", JSImport.Default)
   @js.native
   val default: FC[ZoomOutProps] = js.native
   

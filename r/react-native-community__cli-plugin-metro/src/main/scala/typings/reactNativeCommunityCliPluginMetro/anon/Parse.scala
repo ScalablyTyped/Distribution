@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parse extends StObject {
   
-  var default: Unit
+  var default: Boolean
   
   var description: String
   
@@ -16,14 +16,14 @@ trait Parse extends StObject {
 }
 object Parse {
   
-  inline def apply(default: Unit, description: String, name: String, parse: String => Boolean): Parse = {
+  inline def apply(default: Boolean, description: String, name: String, parse: String => Boolean): Parse = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[Parse]
   }
   
   extension [Self <: Parse](x: Self) {
     
-    inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

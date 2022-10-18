@@ -1,5 +1,6 @@
 package typings.reactNativeWindowsFs.anon
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathOrFileDescriptor
 import typings.node.fsMod.WriteFileOptions
@@ -13,10 +14,10 @@ trait TypeofwriteFile extends StObject {
   def apply(file: PathOrFileDescriptor, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
   def apply(
     file: PathOrFileDescriptor,
-    data: js.typedarray.ArrayBufferView,
+    data: ArrayBufferView,
     options: WriteFileOptions,
     callback: NoParamCallback
   ): Unit = js.native
   def apply(path: PathOrFileDescriptor, data: String, callback: NoParamCallback): Unit = js.native
-  def apply(path: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, callback: NoParamCallback): Unit = js.native
+  def apply(path: PathOrFileDescriptor, data: ArrayBufferView, callback: NoParamCallback): Unit = js.native
 }

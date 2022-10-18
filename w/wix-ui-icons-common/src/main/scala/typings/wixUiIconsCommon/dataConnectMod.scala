@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDataConnectMod.DataConnectProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataConnectMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/DataConnect", JSImport.Default)
+  @JSImport("wix-ui-icons-common/DataConnect", JSImport.Default)
   @js.native
   val default: FC[DataConnectProps] = js.native
-  
-  trait DataConnectProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object DataConnectProps {
-    
-    inline def apply(): DataConnectProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DataConnectProps]
-    }
-    
-    extension [Self <: DataConnectProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[DataConnectProps]
   

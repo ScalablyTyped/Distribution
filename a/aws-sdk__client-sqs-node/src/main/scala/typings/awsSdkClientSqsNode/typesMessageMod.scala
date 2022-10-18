@@ -1,7 +1,6 @@
 package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ApproximateFirstReceiveTimestamp
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ApproximateReceiveCount
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.MessageDeduplicationId
@@ -9,8 +8,6 @@ import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.MessageGroupId
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SenderId
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SentTimestamp
 import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SequenceNumber
-import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings._Message
-import typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings._UnmarshalledMessage
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.MessageAttributeValue
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.UnmarshalledMessageAttributeValue
 import org.scalablytyped.runtime.StObject
@@ -25,9 +22,7 @@ object typesMessageMod {
       * <p>A map of the attributes requested in <code> <a>ReceiveMessage</a> </code> to their respective values. Supported attributes:</p> <ul> <li> <p> <code>ApproximateReceiveCount</code> </p> </li> <li> <p> <code>ApproximateFirstReceiveTimestamp</code> </p> </li> <li> <p> <code>MessageDeduplicationId</code> </p> </li> <li> <p> <code>MessageGroupId</code> </p> </li> <li> <p> <code>SenderId</code> </p> </li> <li> <p> <code>SentTimestamp</code> </p> </li> <li> <p> <code>SequenceNumber</code> </p> </li> </ul> <p> <code>ApproximateFirstReceiveTimestamp</code> and <code>SentTimestamp</code> are each returned as an integer representing the <a href="http://en.wikipedia.org/wiki/Unix_time">epoch time</a> in milliseconds.</p>
       */
     var Attributes: js.UndefOr[
-        (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-      */ _Message & TopLevel[Any]) | (js.Iterable[
+        (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string} */ js.Any) | (js.Iterable[
           js.Tuple2[
             SenderId | SentTimestamp | ApproximateReceiveCount | ApproximateFirstReceiveTimestamp | SequenceNumber | MessageDeduplicationId | MessageGroupId | String, 
             String
@@ -77,9 +72,7 @@ object typesMessageMod {
     extension [Self <: Message](x: Self) {
       
       inline def setAttributes(
-        value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-        */ _Message & TopLevel[Any]) | (js.Iterable[
+        value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string} */ js.Any) | (js.Iterable[
               js.Tuple2[
                 SenderId | SentTimestamp | ApproximateReceiveCount | ApproximateFirstReceiveTimestamp | SequenceNumber | MessageDeduplicationId | MessageGroupId | String, 
                 String
@@ -126,9 +119,7 @@ object typesMessageMod {
       */
     @JSName("Attributes")
     var Attributes_UnmarshalledMessage: js.UndefOr[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-      */ _UnmarshalledMessage & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string} */ js.Any
       ] = js.undefined
     
     /**
@@ -147,9 +138,7 @@ object typesMessageMod {
     extension [Self <: UnmarshalledMessage](x: Self) {
       
       inline def setAttributes(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string}
-        */ _UnmarshalledMessage & TopLevel[Any]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in 'SenderId' | 'SentTimestamp' | 'ApproximateReceiveCount' | 'ApproximateFirstReceiveTimestamp' | 'SequenceNumber' | 'MessageDeduplicationId' | 'MessageGroupId' | string ]: string} */ js.Any
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)

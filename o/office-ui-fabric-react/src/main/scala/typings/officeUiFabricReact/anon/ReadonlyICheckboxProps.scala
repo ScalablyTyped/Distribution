@@ -1,12 +1,12 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.checkboxTypesMod.ICheckbox
-import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
-import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxStyleProps
-import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxStyles
-import typings.officeUiFabricReact.iconTypesMod.IIconProps
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDottypesMod.ICheckbox
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDottypesMod.ICheckboxProps
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDottypesMod.ICheckboxStyleProps
+import typings.officeUiFabricReact.libComponentsCheckboxCheckboxDottypesMod.ICheckboxStyles
+import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconProps
+import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -103,10 +103,10 @@ import typings.std.Event
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

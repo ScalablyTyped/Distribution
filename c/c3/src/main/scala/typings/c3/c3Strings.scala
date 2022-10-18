@@ -11,14 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object c3Strings {
   
   @js.native
-  sealed trait `4` extends StObject
-  inline def `4`: `4` = "4".asInstanceOf[`4`]
-  
-  @js.native
-  sealed trait MaxMin extends StObject
-  inline def MaxMin: MaxMin = "MaxMin".asInstanceOf[MaxMin]
-  
-  @js.native
   sealed trait area
     extends StObject
        with ChartType

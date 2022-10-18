@@ -6,7 +6,6 @@ import typings.ltx.anon.TypeofParser
 import typings.ltx.anon.TypeofParserInstantiable
 import typings.ltx.srcElementMod.Node
 import typings.ltx.srcElementMod.default
-import typings.ltx.srcJsonifyMod.ElementJson
 import typings.ltx.srcParserMod.ParserOptions
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
@@ -22,19 +21,19 @@ object mod {
   @JSImport("ltx", "Element")
   @js.native
   open class Element protected ()
-    extends typings.ltx.ltxMod.Element {
+    extends typings.ltx.libLtxMod.Element {
     def this(name: String) = this()
     def this(name: String, attrs: String) = this()
     def this(name: String, attrs: StringDictionary[Any]) = this()
   }
   
-  inline def JSONify(el: String): String | ElementJson = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONify")(el.asInstanceOf[js.Any]).asInstanceOf[String | ElementJson]
-  inline def JSONify(el: typings.ltx.srcElementMod.Element): typings.ltx.srcElementMod.Element | ElementJson = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONify")(el.asInstanceOf[js.Any]).asInstanceOf[typings.ltx.srcElementMod.Element | ElementJson]
+  inline def JSONify(el: String): /* import warning: importer.ImportType#apply Failed type conversion: string extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : string */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONify")(el.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: string extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : string */ js.Any]
+  inline def JSONify(el: typings.ltx.srcElementMod.Element): /* import warning: importer.ImportType#apply Failed type conversion: ltx.ltx/src/Element.Element extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : ltx.ltx/src/Element.Element */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JSONify")(el.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: ltx.ltx/src/Element.Element extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : ltx.ltx/src/Element.Element */ js.Any]
   
   @JSImport("ltx", "Parser")
   @js.native
   open class Parser ()
-    extends typings.ltx.ltxMod.Parser {
+    extends typings.ltx.libLtxMod.Parser {
     def this(options: ParserOptions) = this()
   }
   /* static members */

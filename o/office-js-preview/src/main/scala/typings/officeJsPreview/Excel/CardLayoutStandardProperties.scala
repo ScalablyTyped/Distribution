@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties of a card layout relevant to most card layouts.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CardLayoutStandardProperties extends StObject {
   
@@ -17,8 +16,7 @@ trait CardLayoutStandardProperties extends StObject {
     * Specifies a property which will be used as the main image of the card.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var mainImage: js.UndefOr[CardLayoutPropertyReference] = js.undefined
   
@@ -26,8 +24,7 @@ trait CardLayoutStandardProperties extends StObject {
     * Represents the sections of the card.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var sections: js.UndefOr[js.Array[CardLayoutSection]] = js.undefined
   
@@ -35,8 +32,7 @@ trait CardLayoutStandardProperties extends StObject {
     * Represents a specification of which property contains the subtitle of the card.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var subTitle: js.UndefOr[CardLayoutPropertyReference] = js.undefined
   
@@ -44,8 +40,7 @@ trait CardLayoutStandardProperties extends StObject {
     * Represents the title of the card or the specification of which property contains the title of the card.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var title: js.UndefOr[String | CardLayoutPropertyReference] = js.undefined
 }

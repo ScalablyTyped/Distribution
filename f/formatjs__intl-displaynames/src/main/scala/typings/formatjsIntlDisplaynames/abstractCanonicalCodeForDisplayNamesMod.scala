@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractCanonicalCodeForDisplayNamesMod {
   
-  @JSImport("@formatjs/intl-displaynames/lib/abstract/CanonicalCodeForDisplayNames", JSImport.Namespace)
+  @JSImport("@formatjs/intl-displaynames/abstract/CanonicalCodeForDisplayNames", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

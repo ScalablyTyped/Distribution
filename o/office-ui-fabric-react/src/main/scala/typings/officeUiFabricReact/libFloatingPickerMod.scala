@@ -1,13 +1,13 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.baseFloatingPickerTypesMod.IBaseFloatingPickerProps
-import typings.officeUiFabricReact.floatingPeoplePickerMod.IPeopleFloatingPickerProps
-import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
-import typings.officeUiFabricReact.suggestionsDottypesMod.ISuggestionsControlProps
-import typings.officeUiFabricReact.suggestionsDottypesMod.ISuggestionsCoreProps
-import typings.officeUiFabricReact.suggestionsDottypesMod.ISuggestionsHeaderFooterItemProps
-import typings.officeUiFabricReact.suggestionsStoreMod.SuggestionsStoreOptions
-import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
+import typings.officeUiFabricReact.libComponentsFloatingPickerBaseFloatingPickerDottypesMod.IBaseFloatingPickerProps
+import typings.officeUiFabricReact.libComponentsFloatingPickerPeoplePickerFloatingPeoplePickerMod.IPeopleFloatingPickerProps
+import typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsDottypesMod.ISuggestionsControlProps
+import typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsDottypesMod.ISuggestionsCoreProps
+import typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsDottypesMod.ISuggestionsHeaderFooterItemProps
+import typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsStoreMod.SuggestionsStoreOptions
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaProps
+import typings.officeUiFabricReact.libComponentsPickersSuggestionsSuggestionsDottypesMod.ISuggestionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,21 +21,21 @@ object libFloatingPickerMod {
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "BaseFloatingPeoplePicker")
   @js.native
   open class BaseFloatingPeoplePicker protected ()
-    extends typings.officeUiFabricReact.floatingPickerMod.BaseFloatingPeoplePicker {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.BaseFloatingPeoplePicker {
     def this(basePickerProps: IPeopleFloatingPickerProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "BaseFloatingPicker")
   @js.native
   open class BaseFloatingPicker[T, P /* <: IBaseFloatingPickerProps[T] */] protected ()
-    extends typings.officeUiFabricReact.floatingPickerMod.BaseFloatingPicker[T, P] {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.BaseFloatingPicker[T, P] {
     def this(basePickerProps: P) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "FloatingPeoplePicker")
   @js.native
   open class FloatingPeoplePicker protected ()
-    extends typings.officeUiFabricReact.floatingPickerMod.FloatingPeoplePicker {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.FloatingPeoplePicker {
     def this(basePickerProps: IPeopleFloatingPickerProps) = this()
   }
   /* static members */
@@ -56,40 +56,42 @@ object libFloatingPickerMod {
   object SuggestionItemType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType & Double
+      ] = js.native
     
-    /* 2 */ val footer: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.footer & Double = js.native
+    /* 2 */ val footer: typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.footer & Double = js.native
     
-    /* 0 */ val header: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.header & Double = js.native
+    /* 0 */ val header: typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.header & Double = js.native
     
-    /* 1 */ val suggestion: typings.officeUiFabricReact.suggestionsControlMod.SuggestionItemType.suggestion & Double = js.native
+    /* 1 */ val suggestion: typings.officeUiFabricReact.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionItemType.suggestion & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "SuggestionsControl")
   @js.native
   open class SuggestionsControl[T] protected ()
-    extends typings.officeUiFabricReact.floatingPickerMod.SuggestionsControl[T] {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.SuggestionsControl[T] {
     def this(suggestionsProps: ISuggestionsControlProps[T]) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "SuggestionsCore")
   @js.native
   open class SuggestionsCore[T] protected ()
-    extends typings.officeUiFabricReact.floatingPickerMod.SuggestionsCore[T] {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.SuggestionsCore[T] {
     def this(suggestionsProps: ISuggestionsCoreProps[T]) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "SuggestionsHeaderFooterItem")
   @js.native
   open class SuggestionsHeaderFooterItem protected ()
-    extends typings.officeUiFabricReact.floatingPickerMod.SuggestionsHeaderFooterItem {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.SuggestionsHeaderFooterItem {
     def this(props: ISuggestionsHeaderFooterItemProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/FloatingPicker", "SuggestionsStore")
   @js.native
   open class SuggestionsStore[T] ()
-    extends typings.officeUiFabricReact.floatingPickerMod.SuggestionsStore[T] {
+    extends typings.officeUiFabricReact.libComponentsFloatingPickerMod.SuggestionsStore[T] {
     def this(options: SuggestionsStoreOptions[T]) = this()
   }
   

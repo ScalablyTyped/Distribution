@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.webGLRendererMod.WebGLRendererParameters
+import typings.three.srcRenderersWebGLRendererMod.WebGLRendererParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In all cases, it will assume sane defaults when parameters are missing.
   */
 open class WebGLRenderer ()
-  extends typings.three.threeMod.WebGLRenderer {
+  extends typings.three.srcThreeMod.WebGLRenderer {
   def this(parameters: WebGLRendererParameters) = this()
 }

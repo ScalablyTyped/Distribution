@@ -14,7 +14,7 @@ import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.genericTouchableMod.default
+import typings.reactNativeGestureHandler.libTypescriptComponentsTouchablesGenericTouchableMod.default
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.`no-hide-descendants`
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.assertive
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto

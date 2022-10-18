@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudRecommenderV1MarkInsightAcceptedRequest extends StObject {
   
   /** Optional. State properties user wish to include with this state. Full replace of the current state_metadata. */
   var stateMetadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkInsightAcceptedRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudRecommenderV1MarkInsightAcceptedRequest {
@@ -31,9 +28,7 @@ object GoogleCloudRecommenderV1MarkInsightAcceptedRequest {
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setStateMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkInsightAcceptedRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
     inline def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)

@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.webGLRenderTargetMod.WebGLRenderTargetOptions
+import typings.three.srcRenderersWebGLRenderTargetMod.WebGLRenderTargetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebGLMultisampleRenderTarget")
 @js.native
 open class WebGLMultisampleRenderTarget protected ()
-  extends typings.three.threeMod.WebGLMultisampleRenderTarget {
+  extends typings.three.srcThreeMod.WebGLMultisampleRenderTarget {
   def this(width: Double, height: Double) = this()
   def this(width: Double, height: Double, options: WebGLRenderTargetOptions) = this()
 }

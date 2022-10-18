@@ -8,6 +8,8 @@ trait Format extends StObject {
   
   var beep: js.UndefOr[Boolean] = js.undefined
   
+  var bridgeId: String
+  
   var format: String
   
   var ifExists: js.UndefOr[String] = js.undefined
@@ -22,8 +24,8 @@ trait Format extends StObject {
 }
 object Format {
   
-  inline def apply(format: String, name: String): Format = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(bridgeId: String, format: String, name: String): Format = {
+    val __obj = js.Dynamic.literal(bridgeId = bridgeId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
@@ -32,6 +34,8 @@ object Format {
     inline def setBeep(value: Boolean): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
     
     inline def setBeepUndefined: Self = StObject.set(x, "beep", js.undefined)
+    
+    inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

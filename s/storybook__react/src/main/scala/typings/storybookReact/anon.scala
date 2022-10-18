@@ -2,13 +2,13 @@ package typings.storybookReact
 
 import typings.std.Parameters
 import typings.std.Partial
-import typings.storybookDocsTools.argTypesTypesMod.Component
-import typings.storybookDocsTools.docgenTypesMod.ArgTypesExtractor
-import typings.storybookDocsTools.propDefMod.PropDef
-import typings.storybookDocsTools.propDefMod.PropDefaultValue
-import typings.storybookReact.createFromRawDefaultPropMod.TypeResolver
-import typings.storybookReact.previewTypesMod.StoryFnReactReturnType
-import typings.storybookStore.typesMod.ComposedStoryPlayFn
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenPropDefMod.PropDef
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenPropDefMod.PropDefaultValue
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.ArgTypesExtractor
+import typings.storybookDocsTools.distTs3Dot9ArgTypesTypesMod.Component
+import typings.storybookReact.distTs3Dot9ClientDocsLibDefaultValuesCreateFromRawDefaultPropMod.TypeResolver
+import typings.storybookReact.distTs3Dot9ClientPreviewTypesMod.StoryFnReactReturnType
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.ComposedStoryPlayFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

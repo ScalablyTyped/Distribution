@@ -1,10 +1,10 @@
 package typings.rdflib.anon
 
-import typings.rdflib.statementMod.default
-import typings.rdflib.typesMod.GraphType
-import typings.rdflib.typesMod.ObjectType
-import typings.rdflib.typesMod.PredicateType
-import typings.rdflib.typesMod.SubjectType
+import typings.rdflib.libStatementMod.default
+import typings.rdflib.libTypesMod.GraphType
+import typings.rdflib.libTypesMod.ObjectType
+import typings.rdflib.libTypesMod.PredicateType
+import typings.rdflib.libTypesMod.SubjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

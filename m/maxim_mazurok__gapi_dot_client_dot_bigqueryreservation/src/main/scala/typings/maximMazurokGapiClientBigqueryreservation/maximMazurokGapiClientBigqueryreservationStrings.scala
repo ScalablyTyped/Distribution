@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientBigqueryreservationStrings {
   
   @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait bigqueryreservation extends StObject
   inline def bigqueryreservation: bigqueryreservation = "bigqueryreservation".asInstanceOf[bigqueryreservation]
   

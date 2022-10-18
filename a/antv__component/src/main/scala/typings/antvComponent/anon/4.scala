@@ -1,13 +1,12 @@
 package typings.antvComponent.anon
 
-import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `4` extends StObject {
   
-  var style: js.UndefOr[ShapeAttrs] = js.undefined
+  var style: js.UndefOr[`3`] = js.undefined
 }
 object `4` {
   
@@ -18,7 +17,7 @@ object `4` {
   
   extension [Self <: `4`](x: Self) {
     
-    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: `3`): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

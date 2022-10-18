@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  within the boundary's jurisdiction.
   */
 open class FederatedMouseEvent ()
-  extends typings.antvGLite.domMod.FederatedMouseEvent {
-  def this(manager: typings.antvGLite.servicesMod.EventService) = this()
+  extends typings.antvGLite.distDomMod.FederatedMouseEvent {
+  def this(manager: typings.antvGLite.distServicesMod.EventService) = this()
 }

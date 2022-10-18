@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "RefreshTokenEntity")
 @js.native
 open class RefreshTokenEntity ()
-  extends typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity
+  extends typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity
 /* static members */
 object RefreshTokenEntity {
   
@@ -22,14 +22,14 @@ object RefreshTokenEntity {
     * @param clientId
     * @param authority
     */
-  inline def createRefreshTokenEntity(homeAccountId: String, environment: String, refreshToken: String, clientId: String): typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity]
+  inline def createRefreshTokenEntity(homeAccountId: String, environment: String, refreshToken: String, clientId: String): typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity]
   inline def createRefreshTokenEntity(
     homeAccountId: String,
     environment: String,
     refreshToken: String,
     clientId: String,
     familyId: String
-  ): typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity]
   inline def createRefreshTokenEntity(
     homeAccountId: String,
     environment: String,
@@ -37,7 +37,7 @@ object RefreshTokenEntity {
     clientId: String,
     familyId: String,
     userAssertionHash: String
-  ): typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], userAssertionHash.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], userAssertionHash.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity]
   inline def createRefreshTokenEntity(
     homeAccountId: String,
     environment: String,
@@ -45,7 +45,7 @@ object RefreshTokenEntity {
     clientId: String,
     familyId: Unit,
     userAssertionHash: String
-  ): typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], userAssertionHash.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.refreshTokenEntityMod.RefreshTokenEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshTokenEntity")(homeAccountId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any], familyId.asInstanceOf[js.Any], userAssertionHash.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesRefreshTokenEntityMod.RefreshTokenEntity]
   
   /**
     * Validates an entity: checks for all expected params

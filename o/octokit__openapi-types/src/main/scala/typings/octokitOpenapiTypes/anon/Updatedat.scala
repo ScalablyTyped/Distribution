@@ -17,7 +17,7 @@ trait Updatedat extends StObject {
   /** Format: uri */
   var url: js.UndefOr[String] = js.undefined
   
-  var user: js.UndefOr[Blog] = js.undefined
+  var user: js.UndefOr[Bio] = js.undefined
 }
 object Updatedat {
   
@@ -44,7 +44,7 @@ object Updatedat {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUser(value: Blog): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Bio): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }

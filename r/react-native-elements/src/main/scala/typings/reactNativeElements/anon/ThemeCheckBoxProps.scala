@@ -19,8 +19,9 @@ import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconType
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distIconsIconMod.IconType
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
 import typings.reactNativeElements.reactNativeElementsStrings.auto
@@ -28,7 +29,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
 import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

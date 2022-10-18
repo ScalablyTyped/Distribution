@@ -296,6 +296,24 @@ trait Tasks
   def getTask(taskGid: String, params: Any, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   def getTask(taskGid: String, params: Unit, dispatchOptions: Any): ^[typings.asana.mod.resources.Tasks.Type] = js.native
   
+  // https://developers.asana.com/docs/get-tasks-from-a-section
+  // https://github.com/Asana/node-asana/blob/master/lib/resources/gen/tasks.js#L314-L333
+  /**
+    * Get tasks from a section
+    * @param {String} sectionGid: (required) The globally unique identifier for the section.
+    * @param {Object} [params]: Parameters for the request
+    * @param {Object} [dispatchOptions]: Options, if any, to pass the dispatcher for the request
+    * @return {Promise} The requested resource
+    */
+  def getTasksForSection(sectionGid: String): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: Double): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def getTasksForSection(sectionGid: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  
   /**
     * * Returns a compact representation of all of the projects the task is in.
     *   * @param {String|Number} task The task to get projects on.

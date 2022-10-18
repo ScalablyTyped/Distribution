@@ -1,6 +1,6 @@
 package typings.reactBootstrapTable.mod
 
-import typings.reactBootstrapTable.anon.Text
+import typings.reactBootstrapTable.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +63,7 @@ object SizePerPageFunctionProps {
     
     inline def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
-    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value*))
+    inline def setSizePerPageListVarargs(value: (Double | Value)*): Self = StObject.set(x, "sizePerPageList", js.Array(value*))
     
     inline def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
   }

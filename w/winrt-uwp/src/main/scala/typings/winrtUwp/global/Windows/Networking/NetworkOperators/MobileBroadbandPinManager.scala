@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the PIN manager for a given mobile broadband modem and SIM Card. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinManager")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinManager")
 @js.native
-abstract class MobileBroadbandPinManager ()
+open class MobileBroadbandPinManager ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinManager {
   

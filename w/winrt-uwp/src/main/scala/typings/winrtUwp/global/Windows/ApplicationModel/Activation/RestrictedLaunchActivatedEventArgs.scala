@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event information when a restricted app is launched. */
-@JSGlobal("Windows.ApplicationModel.Activation.RestrictedLaunchActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.RestrictedLaunchActivatedEventArgs")
 @js.native
-abstract class RestrictedLaunchActivatedEventArgs ()
+open class RestrictedLaunchActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.RestrictedLaunchActivatedEventArgs {
   

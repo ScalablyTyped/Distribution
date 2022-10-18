@@ -1,13 +1,13 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.ec2Mod.Boolean
-import typings.awsSdk.ec2Mod.Filter
-import typings.awsSdk.ec2Mod.FilterList
-import typings.awsSdk.ec2Mod.Integer
-import typings.awsSdk.ec2Mod.SpotInstanceRequestId
-import typings.awsSdk.ec2Mod.SpotInstanceRequestIdList
-import typings.awsSdk.ec2Mod.String
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEc2Mod.Boolean
+import typings.awsSdk.clientsEc2Mod.Filter
+import typings.awsSdk.clientsEc2Mod.FilterList
+import typings.awsSdk.clientsEc2Mod.Integer
+import typings.awsSdk.clientsEc2Mod.SpotInstanceRequestId
+import typings.awsSdk.clientsEc2Mod.SpotInstanceRequestIdList
+import typings.awsSdk.clientsEc2Mod.String
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

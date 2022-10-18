@@ -7,22 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientAnalyticsStrings {
   
   @js.native
-  sealed trait Column extends StObject
-  inline def Column: Column = "Column".asInstanceOf[Column]
-  
-  @js.native
-  sealed trait GaData extends StObject
-  inline def GaData: GaData = "GaData".asInstanceOf[GaData]
-  
-  @js.native
-  sealed trait McfData extends StObject
-  inline def McfData: McfData = "McfData".asInstanceOf[McfData]
-  
-  @js.native
-  sealed trait RealtimeData extends StObject
-  inline def RealtimeData: RealtimeData = "RealtimeData".asInstanceOf[RealtimeData]
-  
-  @js.native
   sealed trait analytics extends StObject
   inline def analytics: analytics = "analytics".asInstanceOf[analytics]
   

@@ -40,7 +40,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.renderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<antd-mobile.antd-mobile/es/components/action-sheet/action-sheet.ActionSheetProps, 'visible' | 'destroyOnClose' | 'forceRender'> */
 trait OmitActionSheetPropsvisib extends StObject {
   
-  var actions: js.Array[typings.antdMobile.actionSheetActionSheetMod.Action]
+  var actions: js.Array[typings.antdMobile.esComponentsActionSheetActionSheetMod.Action]
   
   var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -170,7 +170,7 @@ trait OmitActionSheetPropsvisib extends StObject {
   
   var onAction: js.UndefOr[
     js.Function2[
-      /* action */ typings.antdMobile.actionSheetActionSheetMod.Action, 
+      /* action */ typings.antdMobile.esComponentsActionSheetActionSheetMod.Action, 
       /* index */ Double, 
       Unit
     ]
@@ -192,16 +192,16 @@ trait OmitActionSheetPropsvisib extends StObject {
 }
 object OmitActionSheetPropsvisib {
   
-  inline def apply(actions: js.Array[typings.antdMobile.actionSheetActionSheetMod.Action]): OmitActionSheetPropsvisib = {
+  inline def apply(actions: js.Array[typings.antdMobile.esComponentsActionSheetActionSheetMod.Action]): OmitActionSheetPropsvisib = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitActionSheetPropsvisib]
   }
   
   extension [Self <: OmitActionSheetPropsvisib](x: Self) {
     
-    inline def setActions(value: js.Array[typings.antdMobile.actionSheetActionSheetMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[typings.antdMobile.esComponentsActionSheetActionSheetMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: typings.antdMobile.actionSheetActionSheetMod.Action*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: typings.antdMobile.esComponentsActionSheetActionSheetMod.Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     
@@ -430,7 +430,7 @@ object OmitActionSheetPropsvisib {
     inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     
     inline def setOnAction(
-      value: (/* action */ typings.antdMobile.actionSheetActionSheetMod.Action, /* index */ Double) => Unit
+      value: (/* action */ typings.antdMobile.esComponentsActionSheetActionSheetMod.Action, /* index */ Double) => Unit
     ): Self = StObject.set(x, "onAction", js.Any.fromFunction2(value))
     
     inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)

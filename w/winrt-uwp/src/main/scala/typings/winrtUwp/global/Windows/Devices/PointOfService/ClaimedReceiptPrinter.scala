@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a receipt printer station that has been claimed for use. */
-@JSGlobal("Windows.Devices.PointOfService.ClaimedReceiptPrinter")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.ClaimedReceiptPrinter")
 @js.native
-abstract class ClaimedReceiptPrinter ()
+open class ClaimedReceiptPrinter ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.ClaimedReceiptPrinter {
   

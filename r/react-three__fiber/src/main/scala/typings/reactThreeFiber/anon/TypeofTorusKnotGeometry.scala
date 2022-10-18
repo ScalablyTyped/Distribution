@@ -19,5 +19,5 @@ trait TypeofTorusKnotGeometry
       TorusKnotGeometry
     ] {
   
-  def fromJSON(data: Any): typings.three.torusKnotGeometryMod.TorusKnotGeometry = js.native
+  def fromJSON(data: Any): typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry = js.native
 }

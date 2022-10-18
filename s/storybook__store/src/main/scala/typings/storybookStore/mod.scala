@@ -3,24 +3,24 @@ package typings.storybookStore
 import typings.std.Partial
 import typings.std.Record
 import typings.storybookAddons.anon.Current
-import typings.storybookAddons.hooksMod.EventMap
-import typings.storybookAddons.typesMod.Parameters
-import typings.storybookAddons.typesMod.StorySortParameter
-import typings.storybookAddons.typesMod.StorySortParameterV7
+import typings.storybookAddons.distTs3Dot9HooksMod.EventMap
+import typings.storybookAddons.distTs3Dot9TypesMod.Parameters
+import typings.storybookAddons.distTs3Dot9TypesMod.StorySortParameter
+import typings.storybookAddons.distTs3Dot9TypesMod.StorySortParameterV7
 import typings.storybookStore.anon.Call
-import typings.storybookStore.autoTitleMod.NormalizedStoriesSpecifier
-import typings.storybookStore.filterArgTypesMod.PropDescriptor
-import typings.storybookStore.testingUtilsMod.ComposeStory_
-import typings.storybookStore.ts39TypesMod.CSFFile
-import typings.storybookStore.ts39TypesMod.ModuleExports
-import typings.storybookStore.ts39TypesMod.NormalizedComponentAnnotations
-import typings.storybookStore.ts39TypesMod.NormalizedProjectAnnotations
-import typings.storybookStore.ts39TypesMod.NormalizedStoryAnnotations
-import typings.storybookStore.ts39TypesMod.Path
-import typings.storybookStore.ts39TypesMod.Story
-import typings.storybookStore.ts39TypesMod.StoryIndexEntry
-import typings.storybookStore.ts39TypesMod.WebProjectAnnotations
-import typings.storybookStore.typesMod.CSFExports
+import typings.storybookStore.distTs3Dot9AutoTitleMod.NormalizedStoriesSpecifier
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsMod.ComposeStory_
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.CSFExports
+import typings.storybookStore.distTs3Dot9FilterArgTypesMod.PropDescriptor
+import typings.storybookStore.distTs3Dot9TypesMod.CSFFile
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleExports
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedComponentAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedProjectAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedStoryAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.Path
+import typings.storybookStore.distTs3Dot9TypesMod.Story
+import typings.storybookStore.distTs3Dot9TypesMod.StoryIndexEntry
+import typings.storybookStore.distTs3Dot9TypesMod.WebProjectAnnotations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +38,7 @@ object mod {
   @JSImport("@storybook/store", "HooksContext")
   @js.native
   open class HooksContext[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
-    extends typings.storybookStore.hooksMod.HooksContext[TFramework]
+    extends typings.storybookStore.distTs3Dot9HooksMod.HooksContext[TFramework]
   
   @JSImport("@storybook/store", "NO_TARGET_NAME")
   @js.native
@@ -47,7 +47,7 @@ object mod {
   @JSImport("@storybook/store", "StoryStore")
   @js.native
   open class StoryStore[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
-    extends typings.storybookStore.storyStoreMod.StoryStore[TFramework]
+    extends typings.storybookStore.distTs3Dot9StoryStoreMod.StoryStore[TFramework]
   
   inline def applyHooks[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](
     applyDecorators: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DecoratorApplicator<TFramework, Args> */ Any

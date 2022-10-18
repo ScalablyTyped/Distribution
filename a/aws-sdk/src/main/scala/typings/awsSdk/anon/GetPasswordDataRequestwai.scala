@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.ec2Mod.Boolean
-import typings.awsSdk.ec2Mod.InstanceId
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEc2Mod.Boolean
+import typings.awsSdk.clientsEc2Mod.InstanceId
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait GetPasswordDataRequestwai extends StObject {
   /**
     * The ID of the Windows instance.
     */
-  var InstanceId: typings.awsSdk.ec2Mod.InstanceId
+  var InstanceId: typings.awsSdk.clientsEc2Mod.InstanceId
 }
 object GetPasswordDataRequestwai {
   

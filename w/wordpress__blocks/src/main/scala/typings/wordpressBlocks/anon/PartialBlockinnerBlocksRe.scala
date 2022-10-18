@@ -1,6 +1,5 @@
 package typings.wordpressBlocks.anon
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.std.Record
 import typings.wordpressBlocks.mod.BlockDeprecation
@@ -20,9 +19,7 @@ trait PartialBlockinnerBlocksRe extends StObject {
   var apiVersion: js.UndefOr[Double] = js.undefined
   
   var attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ k in keyof {} ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? any : {}[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.PartialBlockinnerBlocksRe & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof {} ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? U : {}[k]>} */ js.Any
   ] = js.undefined
   
   var category: js.UndefOr[String] = js.undefined
@@ -91,9 +88,7 @@ object PartialBlockinnerBlocksRe {
     inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {readonly [ k in keyof {} ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? any : {}[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.PartialBlockinnerBlocksRe & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof {} ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? U : {}[k]>} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

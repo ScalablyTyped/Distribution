@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.streamManagerMod
 
-import typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskExecutorConfigMap
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskExecutorConfigMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "S3ExportTaskExecutorConfig")
 @js.native
 open class S3ExportTaskExecutorConfig protected ()
-  extends typings.awsGreengrassCoreSdk.clientMod.S3ExportTaskExecutorConfig {
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.S3ExportTaskExecutorConfig {
   /**
     * @param identifier A unique identifier to identify this individual upload task.
     * Must be an alphanumeric string including spaces, commas, periods, hyphens, and underscores with length between 1 and 255.
@@ -26,7 +26,7 @@ open class S3ExportTaskExecutorConfig protected ()
     sizeThresholdForMultipartUploadBytes: js.UndefOr[Double | Null],
     priority: js.UndefOr[Double | Null],
     disabled: js.UndefOr[Boolean | Null],
-    statusConfig: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.StatusConfig | Null]
+    statusConfig: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusConfig | Null]
   ) = this()
 }
 /* static members */
@@ -41,7 +41,7 @@ object S3ExportTaskExecutorConfig {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: S3ExportTaskExecutorConfigMap): typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskExecutorConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.S3ExportTaskExecutorConfig]
+  inline def fromMap(d: S3ExportTaskExecutorConfigMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskExecutorConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.S3ExportTaskExecutorConfig]
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "S3ExportTaskExecutorConfig.typesMap")
   @js.native

@@ -1,19 +1,19 @@
 package typings.fundamentalReact
 
-import typings.fundamentalReact.avatarMod.AvatarSize
-import typings.fundamentalReact.busyIndicatorMod.BusyIndicatorSizes
-import typings.fundamentalReact.buttonMod.ButtonOptions
-import typings.fundamentalReact.buttonMod.ButtonTypes
-import typings.fundamentalReact.iconMod.IconGlyph
-import typings.fundamentalReact.iconMod.IconSize
-import typings.fundamentalReact.imageMod.imageSize
-import typings.fundamentalReact.inlineHelpMod.InlineHelpPlacement
-import typings.fundamentalReact.inputGroupMod.InputGroupAddonPosition
-import typings.fundamentalReact.inputGroupMod.InputGroupTypes
-import typings.fundamentalReact.objectStatusMod.ObjectStatusTypes
-import typings.fundamentalReact.popoverMod.PopoverTypes
-import typings.fundamentalReact.popoverMod.PopperPlacement
-import typings.fundamentalReact.popoverMod.PopperSizingTypes
+import typings.fundamentalReact.libAvatarAvatarMod.AvatarSize
+import typings.fundamentalReact.libBusyIndicatorBusyIndicatorMod.BusyIndicatorSizes
+import typings.fundamentalReact.libButtonButtonMod.ButtonOptions
+import typings.fundamentalReact.libButtonButtonMod.ButtonTypes
+import typings.fundamentalReact.libIconIconMod.IconGlyph
+import typings.fundamentalReact.libIconIconMod.IconSize
+import typings.fundamentalReact.libImageImageMod.imageSize
+import typings.fundamentalReact.libInlineHelpInlineHelpMod.InlineHelpPlacement
+import typings.fundamentalReact.libInputGroupInputGroupMod.InputGroupAddonPosition
+import typings.fundamentalReact.libInputGroupInputGroupMod.InputGroupTypes
+import typings.fundamentalReact.libObjectStatusObjectStatusMod.ObjectStatusTypes
+import typings.fundamentalReact.libPopoverPopoverMod.PopoverTypes
+import typings.fundamentalReact.libPopoverPopoverMod.PopperPlacement
+import typings.fundamentalReact.libPopoverPopoverMod.PopperSizingTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

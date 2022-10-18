@@ -6,19 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `290` extends StObject {
   
-  /** Response */
-  var `200`: Content270
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['marketplace-purchase'] */ js.Any
+  ]
 }
 object `290` {
   
-  inline def apply(`200`: Content270): `290` = {
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['marketplace-purchase'] */ js.Any
+    ]
+  ): `290` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`290`]
   }
   
   extension [Self <: `290`](x: Self) {
     
-    inline def set200(value: Content270): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['marketplace-purchase'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['marketplace-purchase'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

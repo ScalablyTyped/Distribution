@@ -1,6 +1,7 @@
 package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -478,4 +479,231 @@ object distTypesMod {
   ])
   
   type TypedArray = js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.A
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.B
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.G
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.R
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GAB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GAR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABGR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABRG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGBR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGRB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARBG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARGB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAGR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BARG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGAR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGRA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRAG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRGA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GABR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GARB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBAR
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBRA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRAB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRBA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RABG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAGB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBAG
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBGA
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGAB
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGBA
+  */
+  trait WebGLChannels extends StObject
+  object WebGLChannels {
+    
+    inline def A: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.A = "A".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.A]
+    
+    inline def AB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AB = "AB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AB]
+    
+    inline def ABG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABG = "ABG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABG]
+    
+    inline def ABGR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABGR = "ABGR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABGR]
+    
+    inline def ABR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABR = "ABR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABR]
+    
+    inline def ABRG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABRG = "ABRG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ABRG]
+    
+    inline def AG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AG = "AG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AG]
+    
+    inline def AGB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGB = "AGB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGB]
+    
+    inline def AGBR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGBR = "AGBR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGBR]
+    
+    inline def AGR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGR = "AGR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGR]
+    
+    inline def AGRB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGRB = "AGRB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AGRB]
+    
+    inline def AR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AR = "AR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.AR]
+    
+    inline def ARB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARB = "ARB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARB]
+    
+    inline def ARBG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARBG = "ARBG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARBG]
+    
+    inline def ARG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARG = "ARG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARG]
+    
+    inline def ARGB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARGB = "ARGB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ARGB]
+    
+    inline def B: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.B = "B".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.B]
+    
+    inline def BA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BA = "BA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BA]
+    
+    inline def BAG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAG = "BAG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAG]
+    
+    inline def BAGR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAGR = "BAGR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAGR]
+    
+    inline def BAR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAR = "BAR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BAR]
+    
+    inline def BARG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BARG = "BARG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BARG]
+    
+    inline def BG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BG = "BG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BG]
+    
+    inline def BGA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGA = "BGA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGA]
+    
+    inline def BGAR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGAR = "BGAR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGAR]
+    
+    inline def BGR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGR = "BGR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGR]
+    
+    inline def BGRA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGRA = "BGRA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BGRA]
+    
+    inline def BR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BR = "BR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BR]
+    
+    inline def BRA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRA = "BRA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRA]
+    
+    inline def BRAG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRAG = "BRAG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRAG]
+    
+    inline def BRG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRG = "BRG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRG]
+    
+    inline def BRGA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRGA = "BRGA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BRGA]
+    
+    inline def G: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.G = "G".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.G]
+    
+    inline def GA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GA = "GA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GA]
+    
+    inline def GAB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GAB = "GAB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GAB]
+    
+    inline def GABR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GABR = "GABR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GABR]
+    
+    inline def GAR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GAR = "GAR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GAR]
+    
+    inline def GARB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GARB = "GARB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GARB]
+    
+    inline def GB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GB = "GB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GB]
+    
+    inline def GBA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBA = "GBA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBA]
+    
+    inline def GBAR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBAR = "GBAR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBAR]
+    
+    inline def GBR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBR = "GBR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBR]
+    
+    inline def GBRA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBRA = "GBRA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GBRA]
+    
+    inline def GR: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GR = "GR".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GR]
+    
+    inline def GRA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRA = "GRA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRA]
+    
+    inline def GRAB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRAB = "GRAB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRAB]
+    
+    inline def GRB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRB = "GRB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRB]
+    
+    inline def GRBA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRBA = "GRBA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.GRBA]
+    
+    inline def R: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.R = "R".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.R]
+    
+    inline def RA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RA = "RA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RA]
+    
+    inline def RAB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAB = "RAB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAB]
+    
+    inline def RABG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RABG = "RABG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RABG]
+    
+    inline def RAG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAG = "RAG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAG]
+    
+    inline def RAGB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAGB = "RAGB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RAGB]
+    
+    inline def RB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RB = "RB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RB]
+    
+    inline def RBA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBA = "RBA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBA]
+    
+    inline def RBAG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBAG = "RBAG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBAG]
+    
+    inline def RBG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBG = "RBG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBG]
+    
+    inline def RBGA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBGA = "RBGA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RBGA]
+    
+    inline def RG: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RG = "RG".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RG]
+    
+    inline def RGA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGA = "RGA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGA]
+    
+    inline def RGAB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGAB = "RGAB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGAB]
+    
+    inline def RGB: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGB = "RGB".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGB]
+    
+    inline def RGBA: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGBA = "RGBA".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.RGBA]
+  }
+  
+  trait WebGLData extends StObject {
+    
+    var channels: WebGLChannels
+    
+    var height: Double
+    
+    var texture: WebGLTexture
+    
+    var width: Double
+  }
+  object WebGLData {
+    
+    inline def apply(channels: WebGLChannels, height: Double, texture: WebGLTexture, width: Double): WebGLData = {
+      val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], texture = texture.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebGLData]
+    }
+    
+    extension [Self <: WebGLData](x: Self) {
+      
+      inline def setChannels(value: WebGLChannels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
 }

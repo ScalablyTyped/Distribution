@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.dracoCompressionMod.IDracoCompressionConfiguration
+import typings.babylonjs.meshesCompressionDracoCompressionMod.IDracoCompressionConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
   */
 open class DracoCompression ()
-  extends typings.babylonjs.legacyMod.DracoCompression {
+  extends typings.babylonjs.legacyLegacyMod.DracoCompression {
   def this(numWorkers: Double) = this()
 }
 /* static members */

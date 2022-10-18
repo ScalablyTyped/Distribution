@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.interfacesMod.IColor
-import typings.officeUiFabricReact.ithemerulesMod.IThemeRules
-import typings.officeUiFabricReact.ithemeslotruleMod.IThemeSlotRule
+import typings.officeUiFabricReact.libComponentsThemeGeneratorIthemerulesMod.IThemeRules
+import typings.officeUiFabricReact.libComponentsThemeGeneratorIthemeslotruleMod.IThemeSlotRule
+import typings.officeUiFabricReact.libUtilitiesColorInterfacesMod.IColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

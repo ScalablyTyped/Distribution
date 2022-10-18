@@ -6,25 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Long extends StObject {
   
-  var long: js.UndefOr[js.Tuple2[String, String]] = js.undefined
+  var long: js.Array[String]
   
-  var short: js.UndefOr[js.Tuple2[String, String]] = js.undefined
+  var narrow: js.Array[String]
+  
+  var short: js.Array[String]
 }
 object Long {
   
-  inline def apply(): Long = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(long: js.Array[String], narrow: js.Array[String], short: js.Array[String]): Long = {
+    val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Long]
   }
   
   extension [Self <: Long](x: Self) {
     
-    inline def setLong(value: js.Tuple2[String, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+    inline def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value*))
     
-    inline def setShort(value: js.Tuple2[String, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: js.Array[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+    inline def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value*))
+    
+    inline def setShort(value: js.Array[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    
+    inline def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "Telegram")
 @js.native
 open class Telegram protected ()
-  extends typings.yuka.yukaMod.Telegram {
+  extends typings.yuka.srcYukaMod.Telegram {
   /**
     * Constructs a new telegram object.
     *
@@ -18,8 +18,8 @@ open class Telegram protected ()
     * @param data - An object for custom data.
     */
   def this(
-    sender: typings.yuka.gameEntityMod.GameEntity,
-    receiver: typings.yuka.gameEntityMod.GameEntity,
+    sender: typings.yuka.srcCoreGameEntityMod.GameEntity,
+    receiver: typings.yuka.srcCoreGameEntityMod.GameEntity,
     message: String,
     delay: Double,
     data: js.Object

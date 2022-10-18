@@ -1,7 +1,6 @@
 package typings.dbus
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.dbus.anon.Bus
 import typings.dbus.anon.Getter
 import typings.dbus.anon.In
@@ -226,9 +225,15 @@ object mod {
     }
   }
   
-  type PickMatching[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: T[P] extends U? T[P] : never}
-    */ typings.dbus.dbusStrings.PickMatching & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: T[P] extends U? T[P] : never}
+    }}}
+    */
+  @js.native
+  trait PickMatching[T, U] extends StObject
   
   type PropsCB = js.Function2[/* err */ js.UndefOr[Error], /* value */ Any, Unit]
   

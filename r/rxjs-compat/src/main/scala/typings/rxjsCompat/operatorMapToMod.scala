@@ -1,5 +1,6 @@
 package typings.rxjsCompat
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,5 +11,5 @@ object operatorMapToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def mapTo[T, R](value: R): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mapTo")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def mapTo[T, R](value: R): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapTo")(value.asInstanceOf[js.Any]).asInstanceOf[Observable_[R]]
 }

@@ -16,10 +16,6 @@ trait CrlExtensions extends StObject {
   
   var signature: js.UndefOr[AlgorithmIdentifierSchema] = js.undefined
   
-  var signatureAlgorithm: js.UndefOr[AlgorithmIdentifierSchema] = js.undefined
-  
-  var signatureValue: js.UndefOr[String] = js.undefined
-  
   var tbsCertListNextUpdate: js.UndefOr[TimeSchema] = js.undefined
   
   var tbsCertListRevokedCertificates: js.UndefOr[String] = js.undefined
@@ -47,15 +43,7 @@ object CrlExtensions {
     
     inline def setSignature(value: AlgorithmIdentifierSchema): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    inline def setSignatureAlgorithm(value: AlgorithmIdentifierSchema): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
-    
-    inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
-    
     inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
-    
-    inline def setSignatureValue(value: String): Self = StObject.set(x, "signatureValue", value.asInstanceOf[js.Any])
-    
-    inline def setSignatureValueUndefined: Self = StObject.set(x, "signatureValue", js.undefined)
     
     inline def setTbsCertListNextUpdate(value: TimeSchema): Self = StObject.set(x, "tbsCertListNextUpdate", value.asInstanceOf[js.Any])
     

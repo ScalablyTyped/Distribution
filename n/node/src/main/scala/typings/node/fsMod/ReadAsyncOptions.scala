@@ -1,10 +1,11 @@
 package typings.node.fsMod
 
+import typings.node.NodeJS.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadAsyncOptions[TBuffer /* <: js.typedarray.ArrayBufferView */]
+trait ReadAsyncOptions[TBuffer /* <: ArrayBufferView */]
   extends StObject
      with ReadSyncOptions {
   
@@ -12,12 +13,12 @@ trait ReadAsyncOptions[TBuffer /* <: js.typedarray.ArrayBufferView */]
 }
 object ReadAsyncOptions {
   
-  inline def apply[TBuffer /* <: js.typedarray.ArrayBufferView */](): ReadAsyncOptions[TBuffer] = {
+  inline def apply[TBuffer /* <: ArrayBufferView */](): ReadAsyncOptions[TBuffer] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadAsyncOptions[TBuffer]]
   }
   
-  extension [Self <: ReadAsyncOptions[?], TBuffer /* <: js.typedarray.ArrayBufferView */](x: Self & ReadAsyncOptions[TBuffer]) {
+  extension [Self <: ReadAsyncOptions[?], TBuffer /* <: ArrayBufferView */](x: Self & ReadAsyncOptions[TBuffer]) {
     
     inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object mapEventMod {
   
   @js.native
   trait MapEvent
-    extends typings.ol.eventMod.default {
+    extends typings.ol.eventsEventMod.default {
     
     /**
       * The frame state at the time of the event.

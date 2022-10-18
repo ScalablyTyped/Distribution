@@ -1,7 +1,7 @@
 package typings.markdownItAnchor
 
 import typings.markdownIt.libMod.MarkdownIt
-import typings.markdownIt.tokenMod.^
+import typings.markdownIt.libTokenMod.^
 import typings.markdownItAnchor.markdownItAnchorBooleans.`false`
 import typings.markdownItAnchor.markdownItAnchorStrings.`aria-describedby`
 import typings.markdownItAnchor.markdownItAnchorStrings.`aria-label`
@@ -114,7 +114,7 @@ object mod {
         inline def setLevelVarargs(value: Double*): Self = StObject.set(x, "level", js.Array(value*))
         
         inline def setPermalink(
-          value: (/* slug */ String, /* opts */ PermalinkOptions, /* state */ typings.markdownIt.stateCoreMod.^, /* index */ Double) => Unit
+          value: (/* slug */ String, /* opts */ PermalinkOptions, /* state */ typings.markdownIt.libRulesCoreStateCoreMod.^, /* index */ Double) => Unit
         ): Self = StObject.set(x, "permalink", js.Any.fromFunction4(value))
         
         inline def setPermalinkUndefined: Self = StObject.set(x, "permalink", js.undefined)
@@ -270,7 +270,7 @@ object mod {
     type PermalinkGenerator = js.Function4[
         /* slug */ String, 
         /* opts */ PermalinkOptions, 
-        /* state */ typings.markdownIt.stateCoreMod.^, 
+        /* state */ typings.markdownIt.libRulesCoreStateCoreMod.^, 
         /* index */ Double, 
         Unit
       ]
@@ -299,12 +299,12 @@ object mod {
         inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
         
         inline def setRenderAttrs(
-          value: (/* slug */ String, /* state */ typings.markdownIt.stateCoreMod.^) => Record[String, String | Double]
+          value: (/* slug */ String, /* state */ typings.markdownIt.libRulesCoreStateCoreMod.^) => Record[String, String | Double]
         ): Self = StObject.set(x, "renderAttrs", js.Any.fromFunction2(value))
         
         inline def setRenderAttrsUndefined: Self = StObject.set(x, "renderAttrs", js.undefined)
         
-        inline def setRenderHref(value: (/* slug */ String, /* state */ typings.markdownIt.stateCoreMod.^) => String): Self = StObject.set(x, "renderHref", js.Any.fromFunction2(value))
+        inline def setRenderHref(value: (/* slug */ String, /* state */ typings.markdownIt.libRulesCoreStateCoreMod.^) => String): Self = StObject.set(x, "renderHref", js.Any.fromFunction2(value))
         
         inline def setRenderHrefUndefined: Self = StObject.set(x, "renderHref", js.undefined)
         
@@ -316,10 +316,10 @@ object mod {
     
     type RenderAttrs = js.Function2[
         /* slug */ String, 
-        /* state */ typings.markdownIt.stateCoreMod.^, 
+        /* state */ typings.markdownIt.libRulesCoreStateCoreMod.^, 
         Record[String, String | Double]
       ]
     
-    type RenderHref = js.Function2[/* slug */ String, /* state */ typings.markdownIt.stateCoreMod.^, String]
+    type RenderHref = js.Function2[/* slug */ String, /* state */ typings.markdownIt.libRulesCoreStateCoreMod.^, String]
   }
 }

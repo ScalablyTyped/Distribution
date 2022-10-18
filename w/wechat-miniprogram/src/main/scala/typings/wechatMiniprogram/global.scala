@@ -234,9 +234,9 @@ object global {
       /* private */ def this(docId: Double, database: typings.wechatMiniprogram.DB.Database) = this()
     }
     
-    @JSGlobal("DB.GeoLineString")
+    /* note: abstract class */ @JSGlobal("DB.GeoLineString")
     @js.native
-    abstract class GeoLineString protected ()
+    open class GeoLineString protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.GeoLineString {
       def this(points: js.Array[typings.wechatMiniprogram.DB.GeoPoint]) = this()
@@ -248,9 +248,9 @@ object global {
       override def toJSON(): IGeoJSONLineString = js.native
     }
     
-    @JSGlobal("DB.GeoMultiLineString")
+    /* note: abstract class */ @JSGlobal("DB.GeoMultiLineString")
     @js.native
-    abstract class GeoMultiLineString protected ()
+    open class GeoMultiLineString protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.GeoMultiLineString {
       def this(lines: js.Array[typings.wechatMiniprogram.DB.GeoLineString]) = this()
@@ -262,9 +262,9 @@ object global {
       override def toJSON(): IGeoJSONMultiLineString = js.native
     }
     
-    @JSGlobal("DB.GeoMultiPoint")
+    /* note: abstract class */ @JSGlobal("DB.GeoMultiPoint")
     @js.native
-    abstract class GeoMultiPoint protected ()
+    open class GeoMultiPoint protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.GeoMultiPoint {
       def this(points: js.Array[typings.wechatMiniprogram.DB.GeoPoint]) = this()
@@ -276,9 +276,9 @@ object global {
       override def toJSON(): IGeoJSONMultiPoint = js.native
     }
     
-    @JSGlobal("DB.GeoMultiPolygon")
+    /* note: abstract class */ @JSGlobal("DB.GeoMultiPolygon")
     @js.native
-    abstract class GeoMultiPolygon protected ()
+    open class GeoMultiPolygon protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.GeoMultiPolygon {
       def this(polygons: js.Array[typings.wechatMiniprogram.DB.GeoPolygon]) = this()
@@ -290,9 +290,9 @@ object global {
       override def toJSON(): IGeoJSONMultiPolygon = js.native
     }
     
-    @JSGlobal("DB.GeoPoint")
+    /* note: abstract class */ @JSGlobal("DB.GeoPoint")
     @js.native
-    abstract class GeoPoint protected ()
+    open class GeoPoint protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.GeoPoint {
       def this(longitude: Double, latitude: Double) = this()
@@ -307,9 +307,9 @@ object global {
       override def toJSON(): Record[String, Any] = js.native
     }
     
-    @JSGlobal("DB.GeoPolygon")
+    /* note: abstract class */ @JSGlobal("DB.GeoPolygon")
     @js.native
-    abstract class GeoPolygon protected ()
+    open class GeoPolygon protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.GeoPolygon {
       def this(lines: js.Array[typings.wechatMiniprogram.DB.GeoLineString]) = this()
@@ -404,9 +404,9 @@ object global {
       override def close(): js.Promise[Unit] = js.native
     }
     
-    @JSGlobal("DB.RegExp")
+    /* note: abstract class */ @JSGlobal("DB.RegExp")
     @js.native
-    abstract class RegExp protected ()
+    open class RegExp protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.RegExp {
       def this(options: IRegExpOptions) = this()
@@ -418,9 +418,9 @@ object global {
       override val regexp: String = js.native
     }
     
-    @JSGlobal("DB.ServerDate")
+    /* note: abstract class */ @JSGlobal("DB.ServerDate")
     @js.native
-    abstract class ServerDate ()
+    open class ServerDate ()
       extends StObject
          with typings.wechatMiniprogram.DB.ServerDate {
       def this(options: IServerDateOptions) = this()
@@ -472,9 +472,9 @@ object global {
     
     // === end ===
     // === API: CDN ===
-    @JSGlobal("ICloud.CDN")
+    /* note: abstract class */ @JSGlobal("ICloud.CDN")
     @js.native
-    abstract class CDN protected ()
+    open class CDN protected ()
       extends StObject
          with typings.wechatMiniprogram.ICloud.CDN {
       def this(target: String) = this()
@@ -487,9 +487,9 @@ object global {
     
     // === end ===
     // === API: CloudID ===
-    @JSGlobal("ICloud.CloudID")
+    /* note: abstract class */ @JSGlobal("ICloud.CloudID")
     @js.native
-    abstract class CloudID protected ()
+    open class CloudID protected ()
       extends StObject
          with typings.wechatMiniprogram.ICloud.CloudID {
       def this(cloudID: String) = this()

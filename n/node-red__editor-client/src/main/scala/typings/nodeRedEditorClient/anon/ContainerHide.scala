@@ -14,5 +14,5 @@ trait ContainerHide extends StObject {
   def hide(): Unit = js.native
   def hide(dispose: Boolean): Unit = js.native
   
-  def show(options: Offset): Unit = js.native
+  def show(options: Dispose): Unit = js.native
 }

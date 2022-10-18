@@ -1,6 +1,6 @@
 package typings.recurlyRecurlyJs
 
-import typings.recurlyRecurlyJs.recurlyMod.Recurly
+import typings.recurlyRecurlyJs.libRecurlyMod.Recurly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.chartJs.anon
 
-import typings.chartJs.animationMod.AnimationEvent
 import typings.chartJs.mod.ChartType
+import typings.chartJs.typesAnimationMod.AnimationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

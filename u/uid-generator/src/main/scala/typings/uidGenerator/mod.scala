@@ -45,13 +45,13 @@ object mod extends Shortcut {
     
     val BASE58: `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` = js.native
     
-    val BASE62: String = js.native
+    val BASE62: /* 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz */ String = js.native
     
-    val BASE66: String = js.native
+    val BASE66: /* 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-._~ */ String = js.native
     
-    val BASE71: String = js.native
+    val BASE71: /* 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!'()*-._~ */ String = js.native
     
-    val BASE94: String = js.native
+    val BASE94: /* !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ */ String = js.native
   }
   
   @js.native

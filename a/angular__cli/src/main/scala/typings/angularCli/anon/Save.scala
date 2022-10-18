@@ -1,6 +1,6 @@
 package typings.angularCli.anon
 
-import typings.angularCli.packageMetadataMod.NgAddSaveDependency
+import typings.angularCli.srcUtilitiesPackageMetadataMod.NgAddSaveDependency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

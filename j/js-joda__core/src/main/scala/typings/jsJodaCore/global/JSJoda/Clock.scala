@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JSJoda.Clock")
+/* note: abstract class */ @JSGlobal("JSJoda.Clock")
 @js.native
-abstract class Clock ()
+open class Clock ()
   extends typings.jsJodaCore.mod.Clock
 /* static members */
 object Clock {

@@ -15,23 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    var source: wave
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal(source = "wave")
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setSource(value: wave): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Options
     extends StObject
        with _SoundDescription {

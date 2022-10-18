@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new convex hull.
   */
 open class ConvexHull ()
-  extends typings.yuka.yukaMod.ConvexHull
+  extends typings.yuka.srcYukaMod.ConvexHull

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "InputSink")
 @js.native
 open class InputSink ()
-  extends typings.guacamoleCommonJs.inputSinkMod.InputSink
+  extends typings.guacamoleCommonJs.libInputSinkMod.InputSink

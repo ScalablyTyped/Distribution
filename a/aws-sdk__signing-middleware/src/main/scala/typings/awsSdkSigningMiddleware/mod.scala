@@ -1,6 +1,6 @@
 package typings.awsSdkSigningMiddleware
 
-import typings.awsSdkTypes.signatureMod.RequestSigner
+import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -2,13 +2,13 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.angularCompilerCli.dynamicMod.DynamicValue
-import typings.angularCompilerCli.migrationsMod.PartialEvaluator
-import typings.angularCompilerCli.migrationsMod.StaticInterpreter
-import typings.angularCompilerCli.migrationsMod.TypeScriptReflectionHost
-import typings.angularCompilerCli.ngtscImportsMod.Reference
-import typings.angularCompilerCli.resultMod.ResolvedValue
-import typings.angularCompilerCli.srcHostMod.ReflectionHost
+import typings.angularCompilerCli.privateMigrationsMod.PartialEvaluator
+import typings.angularCompilerCli.privateMigrationsMod.StaticInterpreter
+import typings.angularCompilerCli.privateMigrationsMod.TypeScriptReflectionHost
+import typings.angularCompilerCli.srcNgtscImportsMod.Reference
+import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcDynamicMod.DynamicValue
+import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcResultMod.ResolvedValue
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.std.Map
 import typings.typescript.mod.CallExpression
 import typings.typescript.mod.Expression
@@ -29,23 +29,23 @@ trait TypeofimportedMigrations extends StObject {
   var PartialEvaluator: Instantiable2[
     /* host */ ReflectionHost, 
     /* checker */ TypeChecker, 
-    typings.angularCompilerCli.migrationsMod.PartialEvaluator
+    typings.angularCompilerCli.privateMigrationsMod.PartialEvaluator
   ]
   
   var Reference: Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam T */ /* node */ Any, 
-    typings.angularCompilerCli.migrationsMod.Reference[Node]
+    typings.angularCompilerCli.privateMigrationsMod.Reference[Node]
   ]
   
   var StaticInterpreter: Instantiable2[
     /* host */ ReflectionHost, 
     /* checker */ TypeChecker, 
-    typings.angularCompilerCli.migrationsMod.StaticInterpreter
+    typings.angularCompilerCli.privateMigrationsMod.StaticInterpreter
   ]
   
   var TypeScriptReflectionHost: Instantiable1[
     /* checker */ TypeChecker, 
-    typings.angularCompilerCli.migrationsMod.TypeScriptReflectionHost
+    typings.angularCompilerCli.privateMigrationsMod.TypeScriptReflectionHost
   ]
   
   def forwardRefResolver(
@@ -64,7 +64,7 @@ object TypeofimportedMigrations {
     PartialEvaluator: Instantiable2[/* host */ ReflectionHost, /* checker */ TypeChecker, PartialEvaluator],
     Reference: Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam T */ /* node */ Any, 
-      typings.angularCompilerCli.migrationsMod.Reference[Node]
+      typings.angularCompilerCli.privateMigrationsMod.Reference[Node]
     ],
     StaticInterpreter: Instantiable2[/* host */ ReflectionHost, /* checker */ TypeChecker, StaticInterpreter],
     TypeScriptReflectionHost: Instantiable1[/* checker */ TypeChecker, TypeScriptReflectionHost],
@@ -88,7 +88,7 @@ object TypeofimportedMigrations {
     inline def setReference(
       value: Instantiable1[
           /* import warning: RewrittenClass.unapply cls was tparam T */ /* node */ Any, 
-          typings.angularCompilerCli.migrationsMod.Reference[Node]
+          typings.angularCompilerCli.privateMigrationsMod.Reference[Node]
         ]
     ): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     

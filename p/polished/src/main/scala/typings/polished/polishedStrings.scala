@@ -1,9 +1,9 @@
 package typings.polished
 
-import typings.polished.interactionStateMod._InteractionState
-import typings.polished.modularScaleRatioMod._ModularScaleRatio
-import typings.polished.sideKeywordMod.SideKeyword
-import typings.polished.timingFunctionMod.TimingFunction
+import typings.polished.libTypesInteractionStateMod._InteractionState
+import typings.polished.libTypesModularScaleRatioMod._ModularScaleRatio
+import typings.polished.libTypesSideKeywordMod.SideKeyword
+import typings.polished.libTypesTimingFunctionMod.TimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

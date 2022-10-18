@@ -1,9 +1,9 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.textFieldTypesMod.IMaskedTextFieldProps
-import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
-import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldStyleProps
-import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldStyles
+import typings.officeUiFabricReact.libComponentsTextFieldTextFieldDottypesMod.IMaskedTextFieldProps
+import typings.officeUiFabricReact.libComponentsTextFieldTextFieldDottypesMod.ITextFieldProps
+import typings.officeUiFabricReact.libComponentsTextFieldTextFieldDottypesMod.ITextFieldStyleProps
+import typings.officeUiFabricReact.libComponentsTextFieldTextFieldDottypesMod.ITextFieldStyles
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object libTextFieldMod {
   @JSImport("office-ui-fabric-react/lib/TextField", "MaskedTextField")
   @js.native
   open class MaskedTextField protected ()
-    extends typings.officeUiFabricReact.textFieldMod.MaskedTextField {
+    extends typings.officeUiFabricReact.libComponentsTextFieldMod.MaskedTextField {
     def this(props: IMaskedTextFieldProps) = this()
   }
   /* static members */
@@ -45,7 +45,7 @@ object libTextFieldMod {
   @JSImport("office-ui-fabric-react/lib/TextField", "TextFieldBase")
   @js.native
   open class TextFieldBase protected ()
-    extends typings.officeUiFabricReact.textFieldMod.TextFieldBase {
+    extends typings.officeUiFabricReact.libComponentsTextFieldMod.TextFieldBase {
     def this(props: ITextFieldProps) = this()
   }
   /* static members */

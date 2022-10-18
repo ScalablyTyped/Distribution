@@ -1,18 +1,18 @@
 package typings.sentryTypes
 
-import typings.sentryTypes.clientreportMod.EventDropReason
-import typings.sentryTypes.datacategoryMod.DataCategory
-import typings.sentryTypes.debugMetaMod.DebugImageType
-import typings.sentryTypes.dsnMod.DsnProtocol
-import typings.sentryTypes.envelopeMod.EnvelopeItemType
-import typings.sentryTypes.measurementMod.DurationUnit
-import typings.sentryTypes.measurementMod.FractionUnit
-import typings.sentryTypes.measurementMod.InformationUnit
-import typings.sentryTypes.measurementMod.NoneUnit
-import typings.sentryTypes.sessionMod.RequestSessionStatus
-import typings.sentryTypes.sessionMod.SessionStatus
-import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.transactionMod.TransactionSource
+import typings.sentryTypes.typesClientreportMod.EventDropReason
+import typings.sentryTypes.typesDatacategoryMod.DataCategory
+import typings.sentryTypes.typesDebugMetaMod.DebugImageType
+import typings.sentryTypes.typesDsnMod.DsnProtocol
+import typings.sentryTypes.typesEnvelopeMod.EnvelopeItemType
+import typings.sentryTypes.typesMeasurementMod.DurationUnit
+import typings.sentryTypes.typesMeasurementMod.FractionUnit
+import typings.sentryTypes.typesMeasurementMod.InformationUnit
+import typings.sentryTypes.typesMeasurementMod.NoneUnit
+import typings.sentryTypes.typesSessionMod.RequestSessionStatus
+import typings.sentryTypes.typesSessionMod.SessionStatus
+import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesTransactionMod.TransactionSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

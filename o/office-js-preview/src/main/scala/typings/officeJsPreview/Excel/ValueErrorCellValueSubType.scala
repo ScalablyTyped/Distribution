@@ -10,8 +10,7 @@ sealed trait ValueErrorCellValueSubType extends StObject
   * Represents types of #VALUE! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.ValueErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by encountering a string where a boolean was expected, and that string not being coercible to a boolean. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait coerceStringToBoolInvalid
@@ -33,8 +31,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by conversion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait coerceStringToInvalidType
@@ -45,8 +42,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by encountering a string where a number was expected, and that string not being coercible to a number. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait coerceStringToNumberInvalid
@@ -57,8 +53,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by HLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait hlookupResultNotFound
@@ -69,8 +64,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by a row_index_num parameter of HLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait hlookupRowIndexLessThanOne
@@ -81,8 +75,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by a `WebImageValue` with an invalid URL. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait invalidImageUrl
@@ -93,8 +86,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait lambdaWrongParamCount
@@ -105,8 +97,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by passing an end_date parameter that precedes the start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryEndBeforeStart
@@ -117,8 +108,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by passing an invalid date to STOCKHISTORY. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryInvalidDate
@@ -129,8 +119,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryInvalidEnum
@@ -141,8 +130,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryNonTradingDays
@@ -153,8 +141,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryNotAStock
@@ -165,8 +152,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryNotFound
@@ -177,8 +163,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryOnlyDateRequested
@@ -189,8 +174,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by passing a future start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait stockHistoryStartInFuture
@@ -201,8 +185,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by SUBARRAY missing a start column. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait subArrayStartColumnMissingEndColumnNot
@@ -213,8 +196,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by SUBARRAY missing a start row. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait subArrayStartRowMissingEndRowNot
@@ -225,8 +207,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown
@@ -237,8 +218,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by a column_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait vlookupColumnIndexLessThanOne
@@ -249,8 +229,7 @@ object ValueErrorCellValueSubType extends StObject {
     * An error caused by VLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait vlookupResultNotFound

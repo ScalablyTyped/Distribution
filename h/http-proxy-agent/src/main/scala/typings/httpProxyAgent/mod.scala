@@ -2,7 +2,7 @@ package typings.httpProxyAgent
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.agentBase.mod.AgentOptions
-import typings.httpProxyAgent.agentMod.default
+import typings.httpProxyAgent.distAgentMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

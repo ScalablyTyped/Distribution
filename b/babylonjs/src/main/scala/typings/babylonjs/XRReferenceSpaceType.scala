@@ -11,10 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babylonjs.babylonjsStrings.viewer
   - typings.babylonjs.babylonjsStrings.local
   - typings.babylonjs.babylonjsStrings.`local-floor`
+  - typings.babylonjs.babylonjsStrings.`bounded-floor`
   - typings.babylonjs.babylonjsStrings.unbounded
 */
 trait XRReferenceSpaceType extends StObject
 object XRReferenceSpaceType {
+  
+  inline def `bounded-floor`: typings.babylonjs.babylonjsStrings.`bounded-floor` = "bounded-floor".asInstanceOf[typings.babylonjs.babylonjsStrings.`bounded-floor`]
   
   inline def local: typings.babylonjs.babylonjsStrings.local = "local".asInstanceOf[typings.babylonjs.babylonjsStrings.local]
   

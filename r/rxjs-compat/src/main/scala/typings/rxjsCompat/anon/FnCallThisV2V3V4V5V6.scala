@@ -1,5 +1,7 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,38 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisV2V3V4V5V6 extends StObject {
   
-  def apply[T](): Any = js.native
-  def apply[T, R](
-    array: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any
-    ]
-  ): Any = js.native
-  def apply[T, R](
-    observables: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<any> */ Any)*
-  ): Any = js.native
-  def apply[T, R](
-    v: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
-  ): Any = js.native
-  def apply[T, T2, T3, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
-  ): Any = js.native
-  def apply[T, T2, T3, T4, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
-  ): Any = js.native
-  def apply[T, T2, T3, T4, T5, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
-    v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
-  ): Any = js.native
+  def apply[T](): Observable_[T] = js.native
+  def apply[T, R](array: js.Array[ObservableInput[Any]]): Observable_[T | R] = js.native
+  def apply[T, R](observables: ObservableInput[Any]*): Observable_[T | R] = js.native
+  def apply[T, R](v: ObservableInput[R]): Observable_[T | R] = js.native
+  def apply[T, T2, T3, R](v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable_[T | T2 | T3 | R] = js.native
+  def apply[T, T2, T3, T4, R](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable_[T | T2 | T3 | T4 | R] = js.native
+  def apply[T, T2, T3, T4, T5, R](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): Observable_[T | T2 | T3 | T4 | T5 | R] = js.native
   def apply[T, T2, T3, T4, T5, T6, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
-    v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
-    v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
-  ): Any = js.native
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    v6: ObservableInput[T6]
+  ): Observable_[T | T2 | T3 | T4 | T5 | T6 | R] = js.native
 }

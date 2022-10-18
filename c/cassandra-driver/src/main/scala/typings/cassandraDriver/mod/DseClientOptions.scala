@@ -1,7 +1,7 @@
 package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.anon.Enabled
-import typings.cassandraDriver.typesMod.types.Uuid
+import typings.cassandraDriver.libTypesMod.types.Uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

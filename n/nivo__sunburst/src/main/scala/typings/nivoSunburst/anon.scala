@@ -1,15 +1,15 @@
 package typings.nivoSunburst
 
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.ValueFormat
+import typings.nivoSunburst.distTypesTypesMod.ComputedDatum
+import typings.nivoSunburst.distTypesTypesMod.DatumId
 import typings.nivoSunburst.nivoSunburstStrings.color
 import typings.nivoSunburst.nivoSunburstStrings.depth
 import typings.nivoSunburst.nivoSunburstStrings.fill
 import typings.nivoSunburst.nivoSunburstStrings.id
-import typings.nivoSunburst.typesMod.ComputedDatum
-import typings.nivoSunburst.typesMod.DatumId
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,14 +19,14 @@ object anon {
   
   trait ArcGenerator[RawDatum] extends StObject {
     
-    var arcGenerator: typings.nivoArcs.typesTypesMod.ArcGenerator
+    var arcGenerator: typings.nivoArcs.distTypesTypesMod.ArcGenerator
     
     var nodes: js.Array[ComputedDatum[RawDatum]]
   }
   object ArcGenerator {
     
     inline def apply[RawDatum](
-      arcGenerator: typings.nivoArcs.typesTypesMod.ArcGenerator,
+      arcGenerator: typings.nivoArcs.distTypesTypesMod.ArcGenerator,
       nodes: js.Array[ComputedDatum[RawDatum]]
     ): ArcGenerator[RawDatum] = {
       val __obj = js.Dynamic.literal(arcGenerator = arcGenerator.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
@@ -35,7 +35,7 @@ object anon {
     
     extension [Self <: ArcGenerator[?], RawDatum](x: Self & ArcGenerator[RawDatum]) {
       
-      inline def setArcGenerator(value: typings.nivoArcs.typesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
+      inline def setArcGenerator(value: typings.nivoArcs.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
       inline def setNodes(value: js.Array[ComputedDatum[RawDatum]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -111,10 +111,6 @@ object anon {
       inline def setValue(value: PropertyAccessor[RawDatum, Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-      
-      inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-      
-      inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
       
       inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
       

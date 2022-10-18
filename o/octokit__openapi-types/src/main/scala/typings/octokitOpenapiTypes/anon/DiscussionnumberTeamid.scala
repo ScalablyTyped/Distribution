@@ -7,29 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DiscussionnumberTeamid extends StObject {
   
   /** The number that identifies the discussion. */
-  var discussion_number: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['discussion-number'] */ js.Any
+  var discussion_number: Double
   
   /** The unique identifier of the team. */
-  var team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+  var team_id: Double
 }
 object DiscussionnumberTeamid {
   
-  inline def apply(
-    discussion_number: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['discussion-number'] */ js.Any,
-    team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
-  ): DiscussionnumberTeamid = {
+  inline def apply(discussion_number: Double, team_id: Double): DiscussionnumberTeamid = {
     val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscussionnumberTeamid]
   }
   
   extension [Self <: DiscussionnumberTeamid](x: Self) {
     
-    inline def setDiscussion_number(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['discussion-number'] */ js.Any
-    ): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    inline def setTeam_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
-    ): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

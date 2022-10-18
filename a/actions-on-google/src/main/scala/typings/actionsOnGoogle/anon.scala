@@ -2,8 +2,8 @@ package typings.actionsOnGoogle
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.actionsOnGoogle.actionsOnGoogleStrings.actionDotdevicesDotDISCONNECT
-import typings.actionsOnGoogle.apiV1Mod.challengeType
-import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import typings.actionsOnGoogle.distCommonMod.ApiClientObjectMap
+import typings.actionsOnGoogle.distServiceSmarthomeApiV1Mod.challengeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

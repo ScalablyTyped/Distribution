@@ -72,7 +72,7 @@ trait NotificationMessages extends StObject {
     *             Developers can use it to modify this message later. It can't be longer than 32 characters.
     * @param JSONmessage - A JSON object that contains the notification message to be added to the item.
     *                    It contains a `NotificationMessageDetails` object.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.
@@ -110,7 +110,7 @@ trait NotificationMessages extends StObject {
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.
@@ -148,7 +148,7 @@ trait NotificationMessages extends StObject {
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
     * @param key - The key for the notification message to remove.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.
@@ -199,7 +199,7 @@ trait NotificationMessages extends StObject {
     * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
     * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message.
     *                    It contains a `NotificationMessageDetails` object.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties:-
     *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
     * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
     *                 of type `Office.AsyncResult`.

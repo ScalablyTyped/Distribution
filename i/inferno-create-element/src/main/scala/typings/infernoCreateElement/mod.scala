@@ -1,9 +1,9 @@
 package typings.infernoCreateElement
 
-import typings.inferno.typesMod.Inferno.ComponentClass
-import typings.inferno.typesMod.Inferno.StatelessComponent
-import typings.inferno.typesMod.Props
-import typings.inferno.typesMod.VNode
+import typings.inferno.distCoreTypesMod.Inferno.ComponentClass
+import typings.inferno.distCoreTypesMod.Inferno.StatelessComponent
+import typings.inferno.distCoreTypesMod.Props
+import typings.inferno.distCoreTypesMod.VNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -16,7 +16,7 @@ trait TypeofSelectControlValueA
   
   var ɵdir: ɵɵDirectiveDeclaration[
     SelectControlValueAccessor, 
-    String, 
+    /* select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel] */ String, 
     scala.Nothing, 
     CompareWith, 
     js.Object, 

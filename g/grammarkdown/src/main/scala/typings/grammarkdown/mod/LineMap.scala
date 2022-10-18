@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "LineMap")
 @js.native
-class LineMap protected ()
-  extends typings.grammarkdown.diagnosticsMod.LineMap {
+open class LineMap protected ()
+  extends typings.grammarkdown.distDiagnosticsMod.LineMap {
   def this(text: String) = this()
 }

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "UnknownType")
 @js.native
 open class UnknownType protected ()
-  extends typings.typedoc.modelsMod.UnknownType {
+  extends typings.typedoc.distLibModelsMod.UnknownType {
   def this(name: String) = this()
 }

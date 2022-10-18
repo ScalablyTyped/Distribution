@@ -1,7 +1,7 @@
 package typings.slateReact.anon
 
-import typings.slate.elementMod.Element
-import typings.slate.textMod.Text
+import typings.slate.distInterfacesElementMod.Element
+import typings.slate.distInterfacesTextMod.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

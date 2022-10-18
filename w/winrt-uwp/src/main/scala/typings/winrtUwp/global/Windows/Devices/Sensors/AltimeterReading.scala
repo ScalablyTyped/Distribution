@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an altimeter reading. */
-@JSGlobal("Windows.Devices.Sensors.AltimeterReading")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.AltimeterReading")
 @js.native
-abstract class AltimeterReading ()
+open class AltimeterReading ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.AltimeterReading {
   

@@ -1,9 +1,9 @@
 package typings.firebaseAppTypes
 
 import typings.firebaseAppTypes.anon.Call
-import typings.firebaseLogger.srcLoggerMod.LogCallback
-import typings.firebaseLogger.srcLoggerMod.LogLevelString
-import typings.firebaseLogger.srcLoggerMod.LogOptions
+import typings.firebaseLogger.distSrcLoggerMod.LogCallback
+import typings.firebaseLogger.distSrcLoggerMod.LogLevelString
+import typings.firebaseLogger.distSrcLoggerMod.LogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -192,6 +192,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

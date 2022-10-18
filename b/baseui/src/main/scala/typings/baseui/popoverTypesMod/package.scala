@@ -1,6 +1,6 @@
 package typings.baseui.popoverTypesMod
 
-import typings.baseui.anon.`256`
+import typings.baseui.anon.`253`
 import typings.baseui.layerTypesMod.TetherPlacement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -24,4 +24,4 @@ type StateReducer = js.Function3[
 /* currentState */ State, 
 State]
 
-type StatefulContentRenderProp = js.Function1[/* a */ `256`, ReactNode]
+type StatefulContentRenderProp = js.Function1[/* a */ `253`, ReactNode]

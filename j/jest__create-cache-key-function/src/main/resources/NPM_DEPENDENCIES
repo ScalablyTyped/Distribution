@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/create-cache-key-function" : "29.0.3"
+      "@jest/create-cache-key-function" : "29.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/create-cache-key-function" : "29.0.3"
+      "@jest/create-cache-key-function" : "29.1.2"
     }
   ],
   "compile-devDependencies" : [

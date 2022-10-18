@@ -1,5 +1,7 @@
 package typings.materializecssMaterialize.mod
 
+import typings.materializecssMaterialize.M.TooltipOptions
+import typings.materializecssMaterialize.MElements
 import typings.materializecssMaterialize.anon.PartialTooltipOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -12,11 +14,20 @@ open class Tooltip ()
   extends StObject
      with typings.materializecssMaterialize.M.Tooltip {
   
-  /**
-    * Hide tooltip.
-    */
   /* CompleteClass */
   override def close(): Unit = js.native
+  
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
   
   /**
     * If tooltip is hovered.
@@ -24,17 +35,17 @@ open class Tooltip ()
   /* CompleteClass */
   var isHovered: Boolean = js.native
   
-  /**
-    * If tooltip is open.
-    */
   /* CompleteClass */
   var isOpen: Boolean = js.native
   
-  /**
-    * Show tooltip.
-    */
   /* CompleteClass */
   override def open(): Unit = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: TooltipOptions = js.native
 }
 object Tooltip {
   
@@ -52,13 +63,8 @@ object Tooltip {
     * Init Tooltips
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializecssMaterialize.M.Tooltip] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Tooltip]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialTooltipOptions
-  ): js.Array[typings.materializecssMaterialize.M.Tooltip] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Tooltip]]
+  inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.Tooltip] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Tooltip]]
+  inline def init(els: MElements, options: PartialTooltipOptions): js.Array[typings.materializecssMaterialize.M.Tooltip] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.Tooltip]]
   /**
     * Init Tooltip
     */

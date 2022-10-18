@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/fetch-http-handler" : "3.178.0"
+      "@aws-sdk/fetch-http-handler" : "3.190.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/fetch-http-handler" : "3.178.0"
+      "@aws-sdk/fetch-http-handler" : "3.190.0"
     }
   ],
   "compile-devDependencies" : [

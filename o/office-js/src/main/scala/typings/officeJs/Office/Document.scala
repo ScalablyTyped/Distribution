@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An abstract class that represents the document the add-in is interacting with.
   *
   * @remarks
-  * 
-  * **Hosts**: Excel, PowerPoint, Project, Word
+  *
+  * **Applications**: Excel, PowerPoint, Project, Word
   */
 @js.native
 trait Document extends StObject {
@@ -20,12 +20,12 @@ trait Document extends StObject {
     * Adds an event handler for a Document object event.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
-    * @param eventType For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
+    * @param eventType For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or
     *                  `Office.EventType.Document.ActiveViewChanged`, or the corresponding text value of this enumeration.
     * @param handler The event handler function to add, whose only parameter is of type {@link Office.DocumentSelectionChangedEventArgs}. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -51,8 +51,8 @@ trait Document extends StObject {
     * Gets an object that provides access to the bindings defined in the document.
     *
     * @remarks
-    * 
-    * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current 
+    *
+    * You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current
     * document or worksheet, use `Office.context.document` in your script.
     */
   var bindings: Bindings = js.native
@@ -66,14 +66,14 @@ trait Document extends StObject {
     * Returns the state of the current view of the presentation (edit or read).
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview | ActiveView}
     *
     * Can trigger an event when the view changes.
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    *                  The `value` property of the result is the state of the presentation's current view. 
+    *                  The `value` property of the result is the state of the presentation's current view.
     *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides:
     *                  Normal, Slide Sorter, or Outline View. "read" corresponds to either Slide Show or Reading View.
     */
@@ -84,32 +84,32 @@ trait Document extends StObject {
   def getActiveViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[edit | read], Unit]): Unit = js.native
   
   /**
-    * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iPad, file slice is supported up to 65536 (64 KB). 
+    * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iPad, file slice is supported up to 65536 (64 KB).
     * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
     *
     * @remarks
-    * 
-    * **Requirement sets**: 
-    * 
+    *
+    * **Requirement sets**:
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
     *
-    * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up 
-    * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to 
+    * For add-ins running in Office applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
+    * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to
     * 65536 (64 KB).
     *
-    * The `fileType` parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
-    * the host:
-    * 
+    * The `fileType` parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with
+    * the application.
+    *
     * *Supported FileTypes, by platform*
     *  <table>
-    *   <tr><th>                             </th><th> Office on Windows           </th><th> Office on the web           </th><th> Office on iPad      </th><th> Office on Mac               </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`         </td><td>                     </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`         </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`, `Text` </td></tr> 
+    *   <tr><th>                             </th><th> Office on Windows                                          </th><th> Office on the web                                          </th><th> Office on iPad                          </th><th> Office on Mac                                              </th></tr>
+    *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td>                                         </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
     *  </table>
     *
     * @param fileType The format in which the file will be returned
@@ -131,7 +131,7 @@ trait Document extends StObject {
     * Gets file properties of the current document.
     *
     * @remarks
-    * 
+    *
     * **Requirement sets**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * You get the file's URL with the url property `asyncResult.value.url`.
@@ -151,13 +151,13 @@ trait Document extends StObject {
   
   /**
     * Project documents only. Get the maximum index of the collection of resources in the current project.
-    * 
+    *
     * **Important**: This API works only in Project 2016 on Windows desktop.
-    * 
+    *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the highest index number in the current project's resource collection.
-    * 
+    *
     */
   def getMaxResourceIndexAsync(): Unit = js.native
   def getMaxResourceIndexAsync(callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
@@ -167,13 +167,13 @@ trait Document extends StObject {
   
   /**
     * Project documents only. Get the maximum index of the collection of tasks in the current project.
-    * 
+    *
     * **Important**: This API works only in Project 2016 on Windows desktop.
-    * 
+    *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the highest index number in the current project's task collection.
-    * 
+    *
     */
   def getMaxTaskIndexAsync(): Unit = js.native
   def getMaxTaskIndexAsync(callback: js.Function1[/* result */ AsyncResult[Double], Unit]): Unit = js.native
@@ -200,14 +200,14 @@ trait Document extends StObject {
   
   /**
     * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
-    * 
+    *
     * **Important**: This API works only in Project 2016 on Windows desktop.
-    * 
+    *
     * @param resourceIndex The index of the resource in the collection of resources for the project.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
-    * 
+    *
     */
   def getResourceByIndexAsync(resourceIndex: Double): Unit = js.native
   def getResourceByIndexAsync(resourceIndex: Double, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
@@ -230,7 +230,7 @@ trait Document extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
-    * 
+    *
     */
   def getResourceFieldAsync(resourceId: String, fieldId: Double): Unit = js.native
   def getResourceFieldAsync(
@@ -256,91 +256,91 @@ trait Document extends StObject {
     * Reads the data contained in the current selection in the document.
     *
     * @remarks
-    * 
-    * **Requirement sets**: 
-    * 
+    *
+    * **Requirement sets**:
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
-    * 
-    * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return 
+    *
+    * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return
     * the following information.
-    * 
+    *
     * <table>
     *   <tr>
     *     <th>Property</th>
-    *     <th>Use to...</th>
+    *     <th>Use</th>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.value</td>
-    *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+    *     <td><code>AsyncResult.value</code></td>
+    *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.status</td>
-    *     <td>Determine the success or failure of the operation.</td>
+    *     <td><code>AsyncResult.status</code></td>
+    *     <td>Determine the success or failure of the operation</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.error</td>
-    *     <td>Access an Error object that provides error information if the operation failed.</td>
+    *     <td><code>AsyncResult.error</code></td>
+    *     <td>Access an Error object that provides error information if the operation failed</td>
     *   </tr>
     *   <tr>
-    *     <td>AsyncResult.asyncContext</td>
-    *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+    *     <td><code>AsyncResult.asyncContext</code></td>
+    *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
     *   </tr>
     * </table>
-    * 
-    * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
-    * 
+    *
+    * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
+    *
     * <table>
     *   <tr>
-    *     <th>Host</th>
-    *     <th>Supported coercionType</th>
+    *     <th><code>CoercionType</code></th>
+    *     <th>Supported applications</th>
     *   </tr>
     *   <tr>
-    *     <td>Excel, PowerPoint, Project, and Word</td>
-    *     <td>`Office.CoercionType.Text` (string)</td>
+    *     <td><code>Office.CoercionType.Html</code></td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+    *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Table` (TableData object)</td>
+    *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+    *     <td>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Word</td>
-    *     <td>`Office.CoercionType.Html`</td>
+    *     <td><code>Office.CoercionType.SlideRange</code></td>
+    *     <td>- PowerPoint on the web and on Windows</td>
     *   </tr>
     *   <tr>
-    *     <td>Word</td>
-    *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+    *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+    *     <td>- Excel<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>PowerPoint on the web and Windows</td>
-    *     <td>`Office.CoercionType.SlideRange`</td>
+    *     <td><code>Office.CoercionType.Text</code> (string)</td>
+    *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
     *   </tr>
     *   <tr>
-    *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-    *     <td>`Office.CoercionType.XmlSvg`</td>
+    *     <td><code>Office.CoercionType.XmlSvg</code></td>
+    *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
     *   </tr>
     * </table>
-    * 
-    * @param coercionType The type of data structure to return. See the remarks section for each host's supported coercion types.
-    * 
+    *
+    * @param coercionType The type of data structure to return. See the Remarks section for each application's supported coercion types.
+    *
     * @param options Provides options for customizing what data is returned and how it is formatted.
-    * 
+    *
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    *                  The `value` property of the result is the data in the current selection. 
-    *                  This is returned in the data structure or format you specified with the coercionType parameter. 
+    *                  The `value` property of the result is the data in the current selection.
+    *                  This is returned in the data structure or format you specified with the coercionType parameter.
     *                  (See Remarks for more information about data coercion.)
     */
   def getSelectedDataAsync[T](coercionType: CoercionType): Unit = js.native
@@ -362,7 +362,7 @@ trait Document extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
-    * 
+    *
     */
   def getSelectedResourceAsync(): Unit = js.native
   def getSelectedResourceAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
@@ -375,7 +375,7 @@ trait Document extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the resource as a string.
-    * 
+    *
     */
   def getSelectedTaskAsync(): Unit = js.native
   def getSelectedTaskAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
@@ -390,7 +390,7 @@ trait Document extends StObject {
     *                  The `value` property of the result contains the following properties:
     *                  `viewName` - The name of the view, as a ProjectViewTypes constant.
     *                  `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
-    * 
+    *
     */
   def getSelectedViewAsync(): Unit = js.native
   def getSelectedViewAsync(callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
@@ -407,7 +407,7 @@ trait Document extends StObject {
     *                  `taskName` - The name of the task.
     *                  `wssTaskId` - The ID of the task in the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value is 0.
     *                  `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
-    * 
+    *
     */
   def getTaskAsync(taskId: String): Unit = js.native
   def getTaskAsync(taskId: String, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
@@ -421,14 +421,14 @@ trait Document extends StObject {
   
   /**
     * Project documents only. Get the GUID of the task that has the specified index in the task collection.
-    * 
+    *
     * **Important**: This API works only in Project 2016 on Windows desktop.
-    * 
+    *
     * @param taskIndex The index of the task in the collection of tasks for the project.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is the GUID of the task as a string.
-    * 
+    *
     */
   def getTaskByIndexAsync(taskIndex: Double): Unit = js.native
   def getTaskByIndexAsync(taskIndex: Double, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
@@ -447,7 +447,7 @@ trait Document extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result contains the `fieldValue` property, which represents the value of the specified field.
-    * 
+    *
     */
   def getTaskFieldAsync(taskId: String, fieldId: Double): Unit = js.native
   def getTaskFieldAsync(taskId: String, fieldId: Double, callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
@@ -472,7 +472,7 @@ trait Document extends StObject {
     *                  The `value` property of the result contains the following properties:
     *                  `listName` - the name of the synchronized SharePoint task list.
     *                  `serverUrl` - the URL of the synchronized SharePoint task list.
-    * 
+    *
     */
   def getWSSUrlAsync(): Unit = js.native
   def getWSSUrlAsync(callback: js.Function1[/* result */ AsyncResult[Any], Unit]): Unit = js.native
@@ -484,20 +484,20 @@ trait Document extends StObject {
     * Goes to the specified object or location in the document.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
     *
     * PowerPoint doesn't support the goToByIdAsync method in Master Views.
     *
-    * The behavior caused by the selectionMode option varies by host:
+    * The behavior caused by the selectionMode option varies by Office application:
     *
-    * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings, 
+    * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings,
     * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
     *
-    * In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide. 
+    * In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
     * `Office.SelectionMode.None` doesn't select anything.
     *
-    * In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text bindings, moves the cursor 
+    * In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text bindings, moves the cursor
     * to the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
     *
     * @param id The identifier of the object or location to go to.
@@ -546,7 +546,7 @@ trait Document extends StObject {
     * Removes an event handler for the specified event type.
     *
     * @remarks
-    * 
+    *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
     *
     * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
@@ -565,15 +565,15 @@ trait Document extends StObject {
   
   /**
     * Project documents only. Set resource field for specified resource Id.
-    * 
+    *
     * **Important**: This API works only in Project 2016 on Windows desktop.
-    * 
+    *
     * @param resourceId Either a string or value of the Resource Id.
     * @param fieldId Resource Fields.
     * @param fieldValue Value of the target field.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    * 
+    *
     */
   def setResourceFieldAsync(resourceId: String, fieldId: Double, fieldValue: String): Unit = js.native
   def setResourceFieldAsync(
@@ -668,190 +668,189 @@ trait Document extends StObject {
     * Writes the specified data into the current selection.
     *
     * @remarks
-    * 
-    * **Requirement sets**: 
-    * 
+    *
+    * **Requirement sets**:
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
-    * 
+    *
     * **Application-specific behaviors**
-    * 
+    *
     * The following application-specific actions apply when writing data to a selection.
-    * 
+    *
     * <table>
     *   <tr>
     *     <td>Word</td>
-    *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
-    *     <td>If `data` is a string, the specified text is inserted.</td>
+    *     <td>If there is no selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the insertion point</td>
+    *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
+    *     <td>If <code>data</code> is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+    *     <td>If <code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is Office Open XML, the specified XML is inserted.</td>
+    *     <td>If <code>data</code> is Office Open XML, the specified XML is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is a base64 encoded image stream, the specified image is inserted.</td>
+    *     <td>If <code>data</code> is a base64 encoded image stream, the specified image is inserted.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>If there is a selection</td>
-    *     <td>It will be replaced with the specified `data` following the same rules as above.</td>
+    *     <td>It will be replaced with the specified <code>data</code> following the same rules as above.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>Insert images</td>
     *     <td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
     * </tr>
-    * 
+    *
     *   <tr>
     *     <td>Excel</td>
     *     <td>If a single cell is selected</td>
-    *     <td>If `data` is a string, the specified text is inserted as the value of the current cell.</td>
+    *     <td>If <code>data</code> is a string, the specified text is inserted as the value of the current cell.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
+    *     <td>If <code>data</code> is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+    *     <td>If <code>data</code> is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>If multiple cells are selected</td>
-    *     <td>If the shape does not match the shape of `data`, an error is returned.</td>
+    *     <td>If the shape does not match the shape of <code>data</code>, an error is returned.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td>
+    *     <td>If the shape of the selection exactly matches the shape of <code>data</code>, the values of the selected cells are updated based on the values in <code>data</code>.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>Insert images</td>
-    *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+    *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cells. Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td>All other cases</td>
     *     <td>An error is returned.</td>
     *   </tr>
-    * 
+    *
     *   <tr>
     *     <td>Excel on the web</td>
     *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
-    *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
+    *     <td>The total number of cells you can write to a worksheet with the <code>data</code> parameter can't exceed 20,000 in a single call to this method.</td>
     *   </tr>
     *   <tr>
     *     <td></td>
     *     <td></td>
-    *     <td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
+    *     <td>The number of formatting groups passed to the <code>cellFormat</code> parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
     *   </tr>
-    * 
+    *
     *   <tr>
     *     <td>PowerPoint</td>
     *     <td>Insert image</td>
     *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
     *   </tr>
     * </table>
-    * 
-    * **Hosts**
-    * 
-    * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
-    * 
+    *
+    * **Applications**
+    *
+    * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
+    *
     * <table>
     *   <tr>
-    *     <th>Host</th>
-    *     <th>Supported coercionType</th>
+    *     <th><code>CoercionType</code></th>
+    *     <th>Supported applications</th>
     *   </tr>
     *   <tr>
-    *     <td>Excel, PowerPoint, Project, and Word</td>
-    *     <td>`Office.CoercionType.Text` (string)</td>
-    *   </tr>
-    *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
-    *   </tr>
-    *   <tr>
-    *     <td>Excel and Word</td>
-    *     <td>`Office.CoercionType.Table` (TableData object)</td>
-    *   </tr>
-    *   <tr>
+    *     <td><code>Office.CoercionType.Html</code></td>
     *     <td>Word</td>
-    *     <td>`Office.CoercionType.Html`</td>
     *   </tr>
     *   <tr>
+    *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+    *     <td>Excel and Word</td>
+    *   </tr>
+    *   <tr>
+    *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
     *     <td>Word</td>
-    *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
     *   </tr>
     *   <tr>
+    *     <td><code>Office.CoercionType.SlideRange</code></td>
     *     <td>PowerPoint on the web and Windows</td>
-    *     <td>`Office.CoercionType.SlideRange`</td>
     *   </tr>
     *   <tr>
+    *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+    *     <td>Excel and Word</td>
+    *   </tr>
+    *   <tr>
+    *     <td><code>Office.CoercionType.Text</code> (string)</td>
+    *     <td>Excel, PowerPoint, Project, and Word</td>
+    *   </tr>
+    *   <tr>
+    *     <td><code>Office.CoercionType.XmlSvg</code></td>
     *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-    *     <td>`Office.CoercionType.XmlSvg`</td>
     *   </tr>
     * </table>
-    * 
-    * 
+    *
     * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
-    * 
+    *
     * If the value passed for `data` is:
-    * 
-    * - A string: Plain text or anything that can be coerced to a string will be inserted. 
-    * In Excel, you can also specify data as a valid formula to add that formula to the selected cell. For example, setting data to "=SUM(A1:A5)" 
-    * will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added 
-    * formula (or any pre-existing formula) from the bound cell. If you call the Document.getSelectedDataAsync method on the selected cell to 
+    *
+    * - A string: Plain text or anything that can be coerced to a string will be inserted.
+    * In Excel, you can also specify data as a valid formula to add that formula to the selected cell. For example, setting data to "=SUM(A1:A5)"
+    * will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added
+    * formula (or any pre-existing formula) from the bound cell. If you call the Document.getSelectedDataAsync method on the selected cell to
     * read its data, the method can return only the data displayed in the cell (the formula's result).
-    * 
-    * - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns, 
-    * you can pass an array like this: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]. To write a single column of three rows, pass an 
+    *
+    * - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns,
+    * you can pass an array like this: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]. To write a single column of three rows, pass an
     * array like this: [["R1C1"], ["R2C1"], ["R3C1"]]
-    * 
-    * In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no 
-    * other data will be overwritten, setting data to [["=SUM(A1:A5)","=AVERAGE(A1:A5)"]] will add those two formulas to the selection. Just as 
-    * when setting a formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after they have been 
+    *
+    * In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no
+    * other data will be overwritten, setting data to [["=SUM(A1:A5)","=AVERAGE(A1:A5)"]] will add those two formulas to the selection. Just as
+    * when setting a formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after they have been
     * set - you can only read the formulas' results.
-    * 
+    *
     * - A TableData object: A table with headers will be inserted.
-    * In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to 
-    * the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to 
-    * write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and 
-    * specify the coercionType as Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature only 
-    * when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2) there are already at least two 
+    * In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to
+    * the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
+    * write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and
+    * specify the coercionType as Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature only
+    * when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2) there are already at least two
     * different formulas in the column.
-    * 
+    *
     * @param options Provides options for how to insert data to the selection.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    *                  The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
+    *                  The AsyncResult.value property always returns `undefined` because there is no object or data to retrieve.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
   def setSelectedDataAsync(data: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
@@ -887,15 +886,15 @@ trait Document extends StObject {
   
   /**
     * Project documents only. Set task field for specified task Id.
-    * 
+    *
     * **Important**: This API works only in Project 2016 on Windows desktop.
-    * 
+    *
     * @param taskId Either a string or value of the Task Id.
     * @param fieldId Task Fields.
     * @param fieldValue Value of the target field.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-    * 
+    *
     */
   def setTaskFieldAsync(taskId: String, fieldId: Double, fieldValue: String): Unit = js.native
   def setTaskFieldAsync(
@@ -992,7 +991,7 @@ trait Document extends StObject {
   var settings: Settings = js.native
   
   /**
-    * Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
+    * Gets the URL of the document that the Office application currently has open. Returns null if the URL is unavailable.
     */
   var url: String = js.native
 }

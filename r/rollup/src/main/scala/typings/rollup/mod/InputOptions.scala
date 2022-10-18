@@ -37,13 +37,13 @@ trait InputOptions extends StObject {
   /** @deprecated Use the "maxParallelFileOps" option instead. */
   var maxParallelFileReads: js.UndefOr[Double] = js.undefined
   
-  var moduleContext: js.UndefOr[(js.Function1[/* id */ String, String | Null | Unit]) | StringDictionary[String]] = js.undefined
+  var moduleContext: js.UndefOr[(js.Function1[/* id */ String, String | NullValue]) | StringDictionary[String]] = js.undefined
   
   var onwarn: js.UndefOr[WarningHandlerWithDefault] = js.undefined
   
   var perf: js.UndefOr[Boolean] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[js.UndefOr[Plugin | Null | `false`]]] = js.undefined
+  var plugins: js.UndefOr[InputPluginOption] = js.undefined
   
   var preserveEntrySignatures: js.UndefOr[PreserveEntrySignaturesOption] = js.undefined
   
@@ -96,7 +96,7 @@ object InputOptions {
     inline def setExternal(value: ExternalOption): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     inline def setExternalFunction3(
-      value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean | Null | Unit
+      value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean | NullValue
     ): Self = StObject.set(x, "external", js.Any.fromFunction3(value))
     
     inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
@@ -119,7 +119,7 @@ object InputOptions {
     
     inline def setManualChunks(value: ManualChunksOption): Self = StObject.set(x, "manualChunks", value.asInstanceOf[js.Any])
     
-    inline def setManualChunksFunction2(value: (/* id */ String, /* api */ GetManualChunkApi) => String | Null | Unit): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
+    inline def setManualChunksFunction2(value: (/* id */ String, /* meta */ ManualChunkMeta) => String | NullValue): Self = StObject.set(x, "manualChunks", js.Any.fromFunction2(value))
     
     inline def setManualChunksUndefined: Self = StObject.set(x, "manualChunks", js.undefined)
     
@@ -131,9 +131,9 @@ object InputOptions {
     
     inline def setMaxParallelFileReadsUndefined: Self = StObject.set(x, "maxParallelFileReads", js.undefined)
     
-    inline def setModuleContext(value: (js.Function1[/* id */ String, String | Null | Unit]) | StringDictionary[String]): Self = StObject.set(x, "moduleContext", value.asInstanceOf[js.Any])
+    inline def setModuleContext(value: (js.Function1[/* id */ String, String | NullValue]) | StringDictionary[String]): Self = StObject.set(x, "moduleContext", value.asInstanceOf[js.Any])
     
-    inline def setModuleContextFunction1(value: /* id */ String => String | Null | Unit): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
+    inline def setModuleContextFunction1(value: /* id */ String => String | NullValue): Self = StObject.set(x, "moduleContext", js.Any.fromFunction1(value))
     
     inline def setModuleContextUndefined: Self = StObject.set(x, "moduleContext", js.undefined)
     
@@ -145,11 +145,9 @@ object InputOptions {
     
     inline def setPerfUndefined: Self = StObject.set(x, "perf", js.undefined)
     
-    inline def setPlugins(value: js.Array[js.UndefOr[Plugin | Null | `false`]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: InputPluginOption): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-    
-    inline def setPluginsVarargs(value: (js.UndefOr[Plugin | Null | `false`])*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreserveEntrySignatures(value: PreserveEntrySignaturesOption): Self = StObject.set(x, "preserveEntrySignatures", value.asInstanceOf[js.Any])
     

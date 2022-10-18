@@ -1,10 +1,10 @@
 package typings.nivoWaffle
 
-import typings.nivoWaffle.typesTypesMod.Cell
-import typings.nivoWaffle.typesTypesMod.ComputedDatum
-import typings.nivoWaffle.typesTypesMod.Datum
-import typings.nivoWaffle.typesTypesMod.DatumId
-import typings.nivoWaffle.typesTypesMod.EmptyCell
+import typings.nivoWaffle.distTypesTypesMod.Cell
+import typings.nivoWaffle.distTypesTypesMod.ComputedDatum
+import typings.nivoWaffle.distTypesTypesMod.Datum
+import typings.nivoWaffle.distTypesTypesMod.DatumId
+import typings.nivoWaffle.distTypesTypesMod.EmptyCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object webpackConfigUtilsStrings {
   
   @js.native
-  sealed trait NonEmptyObject extends StObject
-  inline def NonEmptyObject: NonEmptyObject = "NonEmptyObject".asInstanceOf[NonEmptyObject]
-  
-  @js.native
   sealed trait _empty
     extends StObject
        with _Falsy
@@ -37,10 +33,6 @@ object webpackConfigUtilsStrings {
   inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
-  sealed trait getIfUtils extends StObject
-  inline def getIfUtils: getIfUtils = "getIfUtils".asInstanceOf[getIfUtils]
-  
-  @js.native
   sealed trait prod
     extends StObject
        with EnvVars
@@ -51,10 +43,6 @@ object webpackConfigUtilsStrings {
     extends StObject
        with EnvVars
   inline def production: production = "production".asInstanceOf[production]
-  
-  @js.native
-  sealed trait removeEmpty extends StObject
-  inline def removeEmpty: removeEmpty = "removeEmpty".asInstanceOf[removeEmpty]
   
   @js.native
   sealed trait test

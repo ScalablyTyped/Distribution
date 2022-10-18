@@ -18,13 +18,8 @@ trait GPUUncapturedErrorEvent
   val __brand: typings.webgpuTypes.webgpuTypesStrings.GPUUncapturedErrorEvent = js.native
   
   /**
-    * Object representing the error that was uncaptured.
+    * A slot-backed attribute holding an object representing the error that was uncaptured.
     * This has the same type as errors returned by {@link GPUDevice#popErrorScope}.
-    * This attribute is backed by an immutable internal slot of the same name, and
-    * always returns its value.
-    * Issue(whatwg/webidl#1077): This attribute should be `[SameObject]`.
-    * (If GPUError [becomes an interface](https://github.com/gpuweb/gpuweb/issues/1884) then
-    * we can do this without resolving the WebIDL issue.)
     */
   val error: GPUError = js.native
 }

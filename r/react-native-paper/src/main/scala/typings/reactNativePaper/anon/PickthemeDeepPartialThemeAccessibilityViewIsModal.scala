@@ -6,19 +6,23 @@ import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
+import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
+import typings.reactNativePaper.libTypescriptTypesMod.EllipsizeProp
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
 import typings.reactNativePaper.reactNativePaperStrings.assertive
 import typings.reactNativePaper.reactNativePaperStrings.auto
-import typings.reactNativePaper.reactNativePaperStrings.elevated
+import typings.reactNativePaper.reactNativePaperStrings.flat
 import typings.reactNativePaper.reactNativePaperStrings.no
 import typings.reactNativePaper.reactNativePaperStrings.none
 import typings.reactNativePaper.reactNativePaperStrings.outlined
@@ -28,7 +32,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   children :react.react.ReactNode | undefined,   elevation :number | undefined,   onLongPress :(): void | undefined,   onPress :(): void | undefined,   mode :'outlined' | 'elevated' | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   testID :string | undefined,   accessible :boolean | undefined} & react-native-paper.react-native-paper/lib/typescript/components/Card/Card.ElevatedCardProps & std.Pick<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :false | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.Animated.Value | react-native.react-native.Animated.AnimatedInterpolation<number | string> | react-native.react-native.Animated.WithAnimatedObject<react-native.react-native.ViewStyle> | react-native.react-native.Animated.WithAnimatedArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.RecursiveArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>> | std.Array<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>>> | null | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View>>, 'onPress' | 'onLongPress' | keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View> | keyof react-native-paper.react-native-paper/lib/typescript/components/Card/Card.ElevatedCardProps> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
+/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   mode :'flat' | 'outlined' | undefined,   children :react.react.ReactNode,   icon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource | undefined,   avatar :react.react.ReactNode | undefined,   closeIcon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource | undefined,   selected :boolean | undefined,   selectedColor :string | undefined,   disabled :boolean | undefined,   accessibilityLabel :string | undefined,   closeIconAccessibilityLabel :string | undefined,   onPress :(): void | undefined,   onLongPress :(): void | undefined,   onClose :(): void | undefined,   textStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   testID :string | undefined,   ellipsizeMode :react-native-paper.react-native-paper/lib/typescript/types.EllipsizeProp | undefined} & std.Pick<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :false | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.Animated.Value | react-native.react-native.Animated.AnimatedInterpolation<number | string> | react-native.react-native.Animated.WithAnimatedObject<react-native.react-native.ViewStyle> | react-native.react-native.Animated.WithAnimatedArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.RecursiveArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>> | std.Array<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>>> | null | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View>>, 'ellipsizeMode' | 'onPress' | 'onLongPress' | 'icon' | keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View> | 'mode' | 'disabled' | 'selected' | 'avatar' | 'closeIconAccessibilityLabel' | 'onClose' | 'closeIcon' | 'textStyle' | 'selectedColor'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
 trait PickthemeDeepPartialThemeAccessibilityViewIsModal extends StObject {
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
@@ -57,11 +61,19 @@ trait PickthemeDeepPartialThemeAccessibilityViewIsModal extends StObject {
   
   var accessible: js.UndefOr[Boolean] = js.undefined
   
+  var avatar: js.UndefOr[ReactNode] = js.undefined
+  
   var children: js.UndefOr[ReactNode] = js.undefined
+  
+  var closeIcon: js.UndefOr[IconSource] = js.undefined
+  
+  var closeIconAccessibilityLabel: js.UndefOr[String] = js.undefined
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
-  var elevation: js.UndefOr[Double] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var ellipsizeMode: js.UndefOr[EllipsizeProp] = js.undefined
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
@@ -69,13 +81,15 @@ trait PickthemeDeepPartialThemeAccessibilityViewIsModal extends StObject {
   
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
+  var icon: js.UndefOr[IconSource] = js.undefined
+  
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var mode: js.UndefOr[outlined | elevated] = js.undefined
+  var mode: js.UndefOr[flat | outlined] = js.undefined
   
   var nativeID: js.UndefOr[String] = js.undefined
   
@@ -86,6 +100,8 @@ trait PickthemeDeepPartialThemeAccessibilityViewIsModal extends StObject {
   var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
@@ -161,11 +177,17 @@ trait PickthemeDeepPartialThemeAccessibilityViewIsModal extends StObject {
   
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
+  var selected: js.UndefOr[Boolean] = js.undefined
+  
+  var selectedColor: js.UndefOr[String] = js.undefined
+  
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
+  
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var theme: js.UndefOr[DeepPartialTheme] = js.undefined
   
@@ -244,17 +266,37 @@ object PickthemeDeepPartialThemeAccessibilityViewIsModal {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
+    inline def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    
+    inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+    
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setCloseIcon(value: IconSource): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+    
+    inline def setCloseIconAccessibilityLabel(value: String): Self = StObject.set(x, "closeIconAccessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCloseIconAccessibilityLabelUndefined: Self = StObject.set(x, "closeIconAccessibilityLabel", js.undefined)
+    
+    inline def setCloseIconFunction1(value: /* props */ IconPropscolorstring => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+    
+    inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+    
+    inline def setCloseIconVarargs(value: ImageURISource*): Self = StObject.set(x, "closeIcon", js.Array(value*))
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
     inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
-    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEllipsizeMode(value: EllipsizeProp): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+    
+    inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
     
     inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
@@ -267,6 +309,14 @@ object PickthemeDeepPartialThemeAccessibilityViewIsModal {
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
+    
+    inline def setIcon(value: IconSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconFunction1(value: /* props */ IconPropscolorstring => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value*))
     
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
@@ -282,7 +332,7 @@ object PickthemeDeepPartialThemeAccessibilityViewIsModal {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMode(value: outlined | elevated): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: flat | outlined): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
@@ -305,6 +355,10 @@ object PickthemeDeepPartialThemeAccessibilityViewIsModal {
     inline def setOnAccessibilityTap(value: () => Unit): Self = StObject.set(x, "onAccessibilityTap", js.Any.fromFunction0(value))
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
+    
+    inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
@@ -458,6 +512,14 @@ object PickthemeDeepPartialThemeAccessibilityViewIsModal {
     
     inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
     
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
     inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     
     inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
@@ -471,6 +533,12 @@ object PickthemeDeepPartialThemeAccessibilityViewIsModal {
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     inline def setTheme(value: DeepPartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

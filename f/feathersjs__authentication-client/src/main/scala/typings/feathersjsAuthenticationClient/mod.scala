@@ -183,6 +183,7 @@ object mod extends Shortcut {
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
   override def _to: (js.Function1[/* config */ js.UndefOr[FeathersAuthClientConfig], js.Function0[Unit]]) & Typeofself = default
   
+  /* augmented module */
   object feathersjsFeathersAugmentingMod {
     
     @js.native

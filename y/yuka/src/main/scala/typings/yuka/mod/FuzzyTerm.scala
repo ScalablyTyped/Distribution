@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "FuzzyTerm")
 @js.native
 open class FuzzyTerm ()
-  extends typings.yuka.yukaMod.FuzzyTerm
+  extends typings.yuka.srcYukaMod.FuzzyTerm

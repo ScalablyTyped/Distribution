@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.babylonjs.anon.PartialISkeletonViewerOpt
 import typings.babylonjs.anon.TypeofAxesViewer
 import typings.babylonjs.anon.TypeofSkeletonViewer
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,9 +40,9 @@ object Debug {
       scene: js.UndefOr[typings.babylonjs.sceneMod.Scene],
       scaleLines: js.UndefOr[Double],
       renderingGroupId: js.UndefOr[Nullable[Double]],
-      xAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
-      yAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
-      zAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
+      xAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
+      yAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
+      zAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
       lineThickness: js.UndefOr[Double]
     ) = this()
   }
@@ -52,8 +53,8 @@ object Debug {
   @js.native
   def BoneAxesViewer: Instantiable4[
     /* scene */ typings.babylonjs.sceneMod.Scene, 
-    /* bone */ typings.babylonjs.boneMod.Bone, 
-    /* mesh */ typings.babylonjs.meshMod.Mesh, 
+    /* bone */ typings.babylonjs.bonesBoneMod.Bone, 
+    /* mesh */ Mesh, 
     /* scaleLines */ js.UndefOr[Double], 
     typings.babylonjs.indexMod.BoneAxesViewer
   ] = js.native
@@ -70,15 +71,11 @@ object Debug {
       * @param mesh defines the target mesh
       * @param scaleLines defines a scaling factor for line length (1 by default)
       */
+    def this(scene: typings.babylonjs.sceneMod.Scene, bone: typings.babylonjs.bonesBoneMod.Bone, mesh: Mesh) = this()
     def this(
       scene: typings.babylonjs.sceneMod.Scene,
-      bone: typings.babylonjs.boneMod.Bone,
-      mesh: typings.babylonjs.meshMod.Mesh
-    ) = this()
-    def this(
-      scene: typings.babylonjs.sceneMod.Scene,
-      bone: typings.babylonjs.boneMod.Bone,
-      mesh: typings.babylonjs.meshMod.Mesh,
+      bone: typings.babylonjs.bonesBoneMod.Bone,
+      mesh: Mesh,
       scaleLines: Double
     ) = this()
   }
@@ -86,8 +83,8 @@ object Debug {
   inline def BoneAxesViewer_=(
     x: Instantiable4[
       /* scene */ typings.babylonjs.sceneMod.Scene, 
-      /* bone */ typings.babylonjs.boneMod.Bone, 
-      /* mesh */ typings.babylonjs.meshMod.Mesh, 
+      /* bone */ typings.babylonjs.bonesBoneMod.Bone, 
+      /* mesh */ Mesh, 
       /* scaleLines */ js.UndefOr[Double], 
       typings.babylonjs.indexMod.BoneAxesViewer
     ]
@@ -139,17 +136,17 @@ object Debug {
       */
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
@@ -157,9 +154,9 @@ object Debug {
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
@@ -169,9 +166,9 @@ object Debug {
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
@@ -181,9 +178,9 @@ object Debug {
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
@@ -195,9 +192,9 @@ object Debug {
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
@@ -209,9 +206,9 @@ object Debug {
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */
@@ -223,9 +220,9 @@ object Debug {
     ) = this()
     def this(
       /** defines the skeleton to render */
-    skeleton: typings.babylonjs.skeletonMod.Skeleton,
+    skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton,
       /** defines the mesh attached to the skeleton */
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
       /** The Scene scope*/
     scene: typings.babylonjs.sceneMod.Scene,
       /** defines a boolean indicating if bones matrices must be forced to update before rendering (true by default)  */

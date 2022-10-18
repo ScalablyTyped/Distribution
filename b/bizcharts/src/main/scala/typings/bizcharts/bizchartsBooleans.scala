@@ -1,9 +1,9 @@
 package typings.bizcharts
 
-import typings.bizcharts.coreInterfaceMod.AxisAPIOptions
-import typings.bizcharts.coreInterfaceMod.LabelAPIOptions
-import typings.bizcharts.coreInterfaceMod.LengendAPIOptions
-import typings.bizcharts.coreInterfaceMod.TooltipAPIOptions
+import typings.bizcharts.libPlotsCoreInterfaceMod.AxisAPIOptions
+import typings.bizcharts.libPlotsCoreInterfaceMod.LabelAPIOptions
+import typings.bizcharts.libPlotsCoreInterfaceMod.LengendAPIOptions
+import typings.bizcharts.libPlotsCoreInterfaceMod.TooltipAPIOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

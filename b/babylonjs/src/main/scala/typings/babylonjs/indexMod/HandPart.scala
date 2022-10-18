@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object HandPart extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webXRHandTrackingMod.HandPart & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart & String] = js.native
   
-  /* "index" */ val INDEX: typings.babylonjs.webXRHandTrackingMod.HandPart.INDEX & String = js.native
+  /* "index" */ val INDEX: typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart.INDEX & String = js.native
   
-  /* "little" */ val LITTLE: typings.babylonjs.webXRHandTrackingMod.HandPart.LITTLE & String = js.native
+  /* "little" */ val LITTLE: typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart.LITTLE & String = js.native
   
-  /* "middle" */ val MIDDLE: typings.babylonjs.webXRHandTrackingMod.HandPart.MIDDLE & String = js.native
+  /* "middle" */ val MIDDLE: typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart.MIDDLE & String = js.native
   
-  /* "ring" */ val RING: typings.babylonjs.webXRHandTrackingMod.HandPart.RING & String = js.native
+  /* "ring" */ val RING: typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart.RING & String = js.native
   
-  /* "thumb" */ val THUMB: typings.babylonjs.webXRHandTrackingMod.HandPart.THUMB & String = js.native
+  /* "thumb" */ val THUMB: typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart.THUMB & String = js.native
   
-  /* "wrist" */ val WRIST: typings.babylonjs.webXRHandTrackingMod.HandPart.WRIST & String = js.native
+  /* "wrist" */ val WRIST: typings.babylonjs.xRFeaturesWebXRHandTrackingMod.HandPart.WRIST & String = js.native
 }

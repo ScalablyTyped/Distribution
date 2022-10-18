@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MinHeap[TItem /* <: HeapItem */] extends StObject {
   
-  /* private */ var _heap: Any
+  /* private */ val _heap: Any
   
   def add(item: TItem): Unit
   

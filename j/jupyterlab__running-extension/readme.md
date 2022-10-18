@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__running-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Running Sessions Extension
@@ -10,10 +10,10 @@ JupyterLab - Running Sessions Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/running-extension |
 | Keywords           | - |
-| # releases         | 130 |
-| # dependents       | 1 |
-| # downloads        | 1456717 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193309.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

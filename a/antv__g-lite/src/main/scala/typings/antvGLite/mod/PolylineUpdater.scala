@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "PolylineUpdater")
 @js.native
 open class PolylineUpdater ()
-  extends typings.antvGLite.servicesMod.PolylineUpdater
+  extends typings.antvGLite.distServicesMod.PolylineUpdater

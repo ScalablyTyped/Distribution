@@ -1,11 +1,10 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.contravariantMod.Contravariant1
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.orderingMod.Ordering
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libContravariantMod.Contravariant1
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libOrderingMod.Ordering
+import typings.fpTs.libSemigroupMod.Semigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object ord {
   
   @JSImport("fp-ts", "ord.Contravariant")
   @js.native
-  val Contravariant: Contravariant1[typings.fpTs.ordMod.URI] = js.native
+  val Contravariant: Contravariant1[typings.fpTs.libOrdMod.URI] = js.native
   
   @JSImport("fp-ts", "ord.URI")
   @js.native
@@ -47,13 +46,9 @@ object ord {
   inline def getTupleOrd[T /* <: js.Array[Ord_[Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ords because its type T is not an array type */ ords: T
   ): Ord_[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ord.Ord<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleOrd & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ord.Ord<infer A>? A : never} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTupleOrd")(ords.asInstanceOf[js.Any]).asInstanceOf[Ord_[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ord.Ord<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleOrd & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ord.Ord<infer A>? A : never} */ js.Any
   ]]
   
   inline def gt[A](O: Ord_[A]): js.Function2[/* first */ A, /* second */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* first */ A, /* second */ A, Boolean]]
@@ -68,7 +63,7 @@ object ord {
   
   @JSImport("fp-ts", "ord.ord")
   @js.native
-  val ord: Contravariant1[typings.fpTs.ordMod.URI] = js.native
+  val ord: Contravariant1[typings.fpTs.libOrdMod.URI] = js.native
   
   @JSImport("fp-ts", "ord.ordBoolean")
   @js.native
@@ -93,11 +88,10 @@ object ord {
   val trivial: Ord_[Any] = js.native
   
   inline def tuple[A /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ords because its type {[ K in keyof A ]: Ord<A[K]>} is not an array type */ ords: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: fp-ts.fp-ts/lib/Ord.Ord<A[K]>}
-    */ typings.fpTs.fpTsStrings.tuple & TopLevel[A]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ords because its type {[ K in keyof A ]: Ord<A[K]>} is not an array type */ ords: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: fp-ts.fp-ts/lib/Ord.Ord<A[K]>} */ js.Any
   ): Ord_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(ords.asInstanceOf[js.Any]).asInstanceOf[Ord_[A]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native

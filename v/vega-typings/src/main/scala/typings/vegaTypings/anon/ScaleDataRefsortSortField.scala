@@ -1,8 +1,8 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.scaleMod.ScaleData
-import typings.vegaTypings.scaleMod.ScaleField
-import typings.vegaTypings.scaleMod.SortField
+import typings.vegaTypings.typesSpecScaleMod.ScaleData
+import typings.vegaTypings.typesSpecScaleMod.ScaleField
+import typings.vegaTypings.typesSpecScaleMod.SortField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

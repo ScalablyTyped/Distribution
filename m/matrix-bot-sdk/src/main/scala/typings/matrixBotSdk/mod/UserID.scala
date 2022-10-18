@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "UserID")
 @js.native
 open class UserID protected ()
-  extends typings.matrixBotSdk.matrixEntityMod.UserID {
+  extends typings.matrixBotSdk.libHelpersMatrixEntityMod.UserID {
   def this(userId: String) = this()
 }

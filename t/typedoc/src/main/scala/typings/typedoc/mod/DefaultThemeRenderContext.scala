@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "DefaultThemeRenderContext")
 @js.native
 open class DefaultThemeRenderContext protected ()
-  extends typings.typedoc.outputMod.DefaultThemeRenderContext {
-  def this(theme: typings.typedoc.defaultThemeMod.DefaultTheme, options: typings.typedoc.libUtilsMod.Options) = this()
+  extends typings.typedoc.distLibOutputMod.DefaultThemeRenderContext {
+  def this(
+    theme: typings.typedoc.distLibOutputThemesDefaultDefaultThemeMod.DefaultTheme,
+    options: typings.typedoc.distLibUtilsMod.Options
+  ) = this()
 }

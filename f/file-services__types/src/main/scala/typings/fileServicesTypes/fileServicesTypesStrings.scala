@@ -1,6 +1,6 @@
 package typings.fileServicesTypes
 
-import typings.fileServicesTypes.commonFsTypesMod.BufferEncoding
+import typings.fileServicesTypes.distCommonFsTypesMod.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

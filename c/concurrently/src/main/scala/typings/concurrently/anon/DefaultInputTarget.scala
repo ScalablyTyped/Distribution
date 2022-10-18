@@ -1,6 +1,6 @@
 package typings.concurrently.anon
 
-import typings.concurrently.commandMod.CommandIdentifier
+import typings.concurrently.distSrcCommandMod.CommandIdentifier
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,13 +12,13 @@ trait DefaultInputTarget extends StObject {
   
   var inputStream: Readable
   
-  var logger: typings.concurrently.loggerMod.Logger
+  var logger: typings.concurrently.distSrcLoggerMod.Logger
   
   var pauseInputStreamOnFinish: js.UndefOr[Boolean] = js.undefined
 }
 object DefaultInputTarget {
   
-  inline def apply(inputStream: Readable, logger: typings.concurrently.loggerMod.Logger): DefaultInputTarget = {
+  inline def apply(inputStream: Readable, logger: typings.concurrently.distSrcLoggerMod.Logger): DefaultInputTarget = {
     val __obj = js.Dynamic.literal(inputStream = inputStream.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultInputTarget]
   }
@@ -31,7 +31,7 @@ object DefaultInputTarget {
     
     inline def setInputStream(value: Readable): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
     
-    inline def setLogger(value: typings.concurrently.loggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setPauseInputStreamOnFinish(value: Boolean): Self = StObject.set(x, "pauseInputStreamOnFinish", value.asInstanceOf[js.Any])
     

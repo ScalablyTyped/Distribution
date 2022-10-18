@@ -1,6 +1,6 @@
 package typings.node.childProcessMod
 
-import typings.node.nodeStreamMod.Stream
+import typings.node.nodeColonstreamMod.Stream
 import typings.node.nodeStrings.ipc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

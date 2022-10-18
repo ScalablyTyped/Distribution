@@ -1,7 +1,7 @@
 package typings.promptly
 
-import typings.std.ReadableStream
-import typings.std.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,9 +38,9 @@ object mod {
     
     var default: js.UndefOr[String] = js.undefined
     
-    var input: js.UndefOr[ReadableStream[Any]] = js.undefined
+    var input: js.UndefOr[ReadableStream] = js.undefined
     
-    var output: js.UndefOr[WritableStream[Any]] = js.undefined
+    var output: js.UndefOr[WritableStream] = js.undefined
     
     var replace: js.UndefOr[String] = js.undefined
     
@@ -65,11 +65,11 @@ object mod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setInput(value: ReadableStream[Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      inline def setOutput(value: WritableStream[Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       

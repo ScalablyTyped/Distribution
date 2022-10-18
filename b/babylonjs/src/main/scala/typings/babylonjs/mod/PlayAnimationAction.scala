@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PlayAnimationAction")
 @js.native
 open class PlayAnimationAction protected ()
-  extends typings.babylonjs.legacyMod.PlayAnimationAction {
+  extends typings.babylonjs.legacyLegacyMod.PlayAnimationAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -25,7 +25,7 @@ open class PlayAnimationAction protected ()
     from: Double,
     to: Double,
     loop: Boolean,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
   def this(
     triggerOptions: Any,
@@ -33,6 +33,6 @@ open class PlayAnimationAction protected ()
     from: Double,
     to: Double,
     loop: Unit,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

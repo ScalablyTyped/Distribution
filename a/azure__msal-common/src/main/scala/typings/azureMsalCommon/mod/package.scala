@@ -1,8 +1,8 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.clientInfoMod.ClientInfo
-import typings.azureMsalCommon.icryptoMod.ICrypto
-import typings.azureMsalCommon.inetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distAccountClientInfoMod.ClientInfo
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
+import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import typings.azureMsalCommon.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

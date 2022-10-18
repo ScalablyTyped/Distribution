@@ -352,17 +352,23 @@ object mod {
     /**
       * Override the default filtering function.
       */
-    var filterCallback: js.UndefOr[js.Function2[/* option */ Option[T], /* filterInput */ String, Boolean]] = js.undefined
+    var filterCallback: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: F extends true ? (option : react-dual-listbox.react-dual-listbox.Option<T>, filterInput : string): boolean : undefined */ js.Any
+      ] = js.undefined
     
     /**
       * Override the default filter placeholder.
       */
-    var filterPlaceholder: js.UndefOr[String] = js.undefined
+    var filterPlaceholder: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: F extends true ? string : undefined */ js.Any
+      ] = js.undefined
     
     /**
       * Handle filter change.
       */
-    var onFilterChange: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.undefined
+    var onFilterChange: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: F extends true ? (filter : string): void : undefined */ js.Any
+      ] = js.undefined
   }
   object FilterProperties {
     
@@ -379,17 +385,23 @@ object mod {
       
       inline def setFilter(value: Filter[T]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFilterCallback(value: (/* option */ Option[T], /* filterInput */ String) => Boolean): Self = StObject.set(x, "filterCallback", js.Any.fromFunction2(value))
+      inline def setFilterCallback(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: F extends true ? (option : react-dual-listbox.react-dual-listbox.Option<T>, filterInput : string): boolean : undefined */ js.Any
+      ): Self = StObject.set(x, "filterCallback", value.asInstanceOf[js.Any])
       
       inline def setFilterCallbackUndefined: Self = StObject.set(x, "filterCallback", js.undefined)
       
-      inline def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
+      inline def setFilterPlaceholder(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: F extends true ? string : undefined */ js.Any
+      ): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setOnFilterChange(value: /* filter */ String => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
+      inline def setOnFilterChange(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: F extends true ? (filter : string): void : undefined */ js.Any
+      ): Self = StObject.set(x, "onFilterChange", value.asInstanceOf[js.Any])
       
       inline def setOnFilterChangeUndefined: Self = StObject.set(x, "onFilterChange", js.undefined)
     }
@@ -468,7 +480,12 @@ object mod {
       * The handler called when options are moved to either side.
       */
     // onChange?: (selected: (T | Option<T>)[]) => void;
-    var onChange: js.UndefOr[js.Function1[/* selected */ js.Array[Option[T] | T], Unit]] = js.undefined
+    var onChange: js.UndefOr[
+        js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: V extends true ? std.Array<T> : std.Array<react-dual-listbox.react-dual-listbox.Option<T>> */ /* selected */ js.Any, 
+          Unit
+        ]
+      ] = js.undefined
     
     /**
       * If true, the selected value passed in onChange is an array of string values.
@@ -487,7 +504,9 @@ object mod {
     
     extension [Self <: ValueProperties[?, ?], T, V /* <: Boolean */](x: Self & (ValueProperties[T, V])) {
       
-      inline def setOnChange(value: /* selected */ js.Array[Option[T] | T] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: V extends true ? std.Array<T> : std.Array<react-dual-listbox.react-dual-listbox.Option<T>> */ /* selected */ js.Any => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       

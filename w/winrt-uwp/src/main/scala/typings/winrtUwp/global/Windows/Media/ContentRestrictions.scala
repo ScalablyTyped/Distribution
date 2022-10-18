@@ -30,9 +30,9 @@ object ContentRestrictions {
   }
   
   /** Contains information used to filter an app's content catalog. */
-  @JSGlobal("Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy")
+  /* note: abstract class */ @JSGlobal("Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy")
   @js.native
-  abstract class ContentRestrictionsBrowsePolicy ()
+  open class ContentRestrictionsBrowsePolicy ()
     extends StObject
        with typings.winrtUwp.Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy {
     

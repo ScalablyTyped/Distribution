@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialScatterOptions
-import typings.antvG2plot.scatterTypesMod.ScatterOptions
+import typings.antvG2plot.libPlotsScatterTypesMod.ScatterOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Scatter")
 @js.native
 open class Scatter protected ()
-  extends typings.antvG2plot.scatterMod.Scatter {
+  extends typings.antvG2plot.libPlotsScatterMod.Scatter {
   def this(container: String, options: ScatterOptions) = this()
   def this(container: HTMLElement, options: ScatterOptions) = this()
 }

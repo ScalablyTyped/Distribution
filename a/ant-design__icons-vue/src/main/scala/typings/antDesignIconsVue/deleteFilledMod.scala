@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDeleteFilledMod.DeleteFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DeleteFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DeleteFilled", JSImport.Default)
   @js.native
   val default: DeleteFilledIconType = js.native
-  
-  @js.native
-  trait DeleteFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DeleteFilledIconType: String = js.native
-  }
   
   type _To = DeleteFilledIconType
   

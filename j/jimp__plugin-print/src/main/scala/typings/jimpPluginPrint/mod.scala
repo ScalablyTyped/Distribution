@@ -1,7 +1,7 @@
 package typings.jimpPluginPrint
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jimpCore.etcMod.ImageCallback
+import typings.jimpCore.typesEtcMod.ImageCallback
 import typings.jimpPluginPrint.anon.AlignmentX
 import typings.jimpPluginPrint.anon.FONTSANS10BLACK
 import org.scalablytyped.runtime.StObject

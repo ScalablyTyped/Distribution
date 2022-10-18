@@ -450,6 +450,7 @@ object Vector3 {
   
   /**
     * Gets the rotation that aligns the roll axis (Y) to the line joining the start point to the target point
+    * Example PG https://playground.babylonjs.com/#R1F8YU#188
     * @param start the starting point
     * @param target the target point
     * @returns the rotation in the form (pitch, yaw, 0)
@@ -458,6 +459,7 @@ object Vector3 {
   
   /**
     * Gets the rotation that aligns the roll axis (Y) to the line joining the start point to the target point and stores it in the ref Vector3
+    * Example PG https://playground.babylonjs.com/#R1F8YU#189
     * @param start the starting point
     * @param target the target point
     * @param ref the vector3 to store the result

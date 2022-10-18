@@ -8,7 +8,7 @@ object CompletionsTriggerCharacter {
   
   inline def `@`: typings.typescript.typescriptStrings.`@` = "@".asInstanceOf[typings.typescript.typescriptStrings.`@`]
   
-  inline def Apostrophe: java.lang.String = java.lang.String.asInstanceOf[java.lang.String]
+  inline def Apostrophe: /* ' */ java.lang.String = "'".asInstanceOf[/* ' */ java.lang.String]
   
   inline def Dot: typings.typescript.typescriptStrings.Dot = ".".asInstanceOf[typings.typescript.typescriptStrings.Dot]
   

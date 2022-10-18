@@ -1,8 +1,8 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.downcastdispatcherMod.DowncastConversionApi
-import typings.ckeditorCkeditor5Engine.elementMod.default
-import typings.ckeditorCkeditor5Engine.elementdefinitionMod.ElementDefinition
+import typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.DowncastConversionApi
+import typings.ckeditorCkeditor5Engine.srcModelElementMod.default
+import typings.ckeditorCkeditor5Engine.srcViewElementdefinitionMod.ElementDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +15,12 @@ trait TriggerBy extends StObject {
   
   var model: String
   
-  var triggerBy: js.UndefOr[AttributesChildren] = js.undefined
+  var triggerBy: js.UndefOr[Attributes] = js.undefined
   
   var view: ElementDefinition | (js.Function2[
     /* element */ default, 
     /* api */ DowncastConversionApi[Any], 
-    typings.ckeditorCkeditor5Engine.containerelementMod.default
+    typings.ckeditorCkeditor5Engine.srcViewContainerelementMod.default
   ])
 }
 object TriggerBy {
@@ -30,7 +30,7 @@ object TriggerBy {
     view: ElementDefinition | (js.Function2[
       /* element */ default, 
       /* api */ DowncastConversionApi[Any], 
-      typings.ckeditorCkeditor5Engine.containerelementMod.default
+      typings.ckeditorCkeditor5Engine.srcViewContainerelementMod.default
     ])
   ): TriggerBy = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object TriggerBy {
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    inline def setTriggerBy(value: AttributesChildren): Self = StObject.set(x, "triggerBy", value.asInstanceOf[js.Any])
+    inline def setTriggerBy(value: Attributes): Self = StObject.set(x, "triggerBy", value.asInstanceOf[js.Any])
     
     inline def setTriggerByUndefined: Self = StObject.set(x, "triggerBy", js.undefined)
     
@@ -55,12 +55,12 @@ object TriggerBy {
       value: ElementDefinition | (js.Function2[
           /* element */ default, 
           /* api */ DowncastConversionApi[Any], 
-          typings.ckeditorCkeditor5Engine.containerelementMod.default
+          typings.ckeditorCkeditor5Engine.srcViewContainerelementMod.default
         ])
     ): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewFunction2(
-      value: (/* element */ default, /* api */ DowncastConversionApi[Any]) => typings.ckeditorCkeditor5Engine.containerelementMod.default
+      value: (/* element */ default, /* api */ DowncastConversionApi[Any]) => typings.ckeditorCkeditor5Engine.srcViewContainerelementMod.default
     ): Self = StObject.set(x, "view", js.Any.fromFunction2(value))
   }
 }

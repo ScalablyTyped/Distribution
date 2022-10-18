@@ -10,5 +10,5 @@ object BulkUnregistration {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(): typings.vscodeLanguageserver.serverMod.BulkUnregistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.vscodeLanguageserver.serverMod.BulkUnregistration]
+  inline def create(): typings.vscodeLanguageserver.libCommonServerMod.BulkUnregistration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.vscodeLanguageserver.libCommonServerMod.BulkUnregistration]
 }

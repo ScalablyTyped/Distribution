@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "VectorSplitterBlock")
 @js.native
 open class VectorSplitterBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.VectorSplitterBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.VectorSplitterBlock {
   /**
     * Create a new VectorSplitterBlock
     * @param name defines the block name

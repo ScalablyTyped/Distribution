@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties used by `CellValueAndPropertyMetadata`. These properties refer to the metadata and not to a `CellValue`.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait EntityPropertyExtraProperties extends StObject {
   
@@ -17,8 +16,7 @@ trait EntityPropertyExtraProperties extends StObject {
     * Represents metadata about the property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var propertyMetadata: js.UndefOr[CellValuePropertyMetadata] = js.undefined
 }

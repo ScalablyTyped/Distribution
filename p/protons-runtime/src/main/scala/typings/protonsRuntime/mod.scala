@@ -1,7 +1,7 @@
 package typings.protonsRuntime
 
-import typings.protonsRuntime.codecMod.Codec
-import typings.protonsRuntime.codecMod.EncodeOptions
+import typings.protonsRuntime.distSrcCodecMod.Codec
+import typings.protonsRuntime.distSrcCodecMod.EncodeOptions
 import typings.protonsRuntime.protonsRuntimeBooleans.`true`
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject

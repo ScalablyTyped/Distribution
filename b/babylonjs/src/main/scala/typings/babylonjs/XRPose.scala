@@ -5,6 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Describes a position and orientation in space relative to an XRSpace.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrpose-interface
+  */
 trait XRPose extends StObject {
   
   val angularVelocity: js.UndefOr[DOMPointReadOnly] = js.undefined

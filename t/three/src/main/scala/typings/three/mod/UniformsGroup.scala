@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "UniformsGroup")
 @js.native
 open class UniformsGroup ()
-  extends typings.three.threeMod.UniformsGroup
+  extends typings.three.srcThreeMod.UniformsGroup

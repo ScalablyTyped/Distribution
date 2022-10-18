@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "IncrementValueAction")
 @js.native
 open class IncrementValueAction protected ()
-  extends typings.babylonjs.legacyMod.IncrementValueAction {
+  extends typings.babylonjs.legacyLegacyMod.IncrementValueAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -22,6 +22,6 @@ open class IncrementValueAction protected ()
     target: Any,
     propertyPath: String,
     value: Any,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

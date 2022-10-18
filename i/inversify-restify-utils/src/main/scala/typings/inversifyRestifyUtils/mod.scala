@@ -1,9 +1,9 @@
 package typings.inversifyRestifyUtils
 
 import typings.inversify.mod.Container
-import typings.inversifyRestifyUtils.interfacesMod.interfaces.HandlerDecorator
-import typings.inversifyRestifyUtils.interfacesMod.interfaces.Middleware
-import typings.inversifyRestifyUtils.interfacesMod.interfaces.RouteOptions
+import typings.inversifyRestifyUtils.dtsInterfacesMod.interfaces.HandlerDecorator
+import typings.inversifyRestifyUtils.dtsInterfacesMod.interfaces.Middleware
+import typings.inversifyRestifyUtils.dtsInterfacesMod.interfaces.RouteOptions
 import typings.restify.mod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,11 +26,11 @@ object mod {
   @JSImport("inversify-restify-utils", "InversifyRestifyServer")
   @js.native
   open class InversifyRestifyServer protected ()
-    extends typings.inversifyRestifyUtils.serverMod.InversifyRestifyServer {
+    extends typings.inversifyRestifyUtils.dtsServerMod.InversifyRestifyServer {
     def this(container: Container) = this()
     def this(
       container: Container,
-      opts: ServerOptions & typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
+      opts: ServerOptions & typings.inversifyRestifyUtils.dtsInterfacesMod.interfaces.ServerOptions
     ) = this()
   }
   

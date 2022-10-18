@@ -14,6 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ripple {
   
+  @JSImport("material-components-web", "ripple.default")
+  @js.native
+  open class default ()
+    extends typings.materialRipple.mod.default {
+    def this(adapter: PartialMDCRippleAdapter) = this()
+  }
+  
   @JSImport("material-components-web", "ripple.MDCRipple")
   @js.native
   open class MDCRipple protected ()

@@ -1,7 +1,7 @@
 
 # Scala.js typings for consumer-data-standards
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 
 

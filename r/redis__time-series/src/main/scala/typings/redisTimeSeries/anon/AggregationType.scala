@@ -1,6 +1,6 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType
+import typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

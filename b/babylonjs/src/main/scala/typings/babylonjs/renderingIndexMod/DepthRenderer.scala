@@ -1,6 +1,6 @@
 package typings.babylonjs.renderingIndexMod
 
-import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "DepthRenderer")
 @js.native
 open class DepthRenderer protected ()
-  extends typings.babylonjs.depthRendererMod.DepthRenderer {
+  extends typings.babylonjs.renderingDepthRendererMod.DepthRenderer {
   /**
     * Instantiates a depth renderer
     * @param scene The scene the renderer belongs to

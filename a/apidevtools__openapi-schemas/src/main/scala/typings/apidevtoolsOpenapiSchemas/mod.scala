@@ -1,7 +1,7 @@
 package typings.apidevtoolsOpenapiSchemas
 
-import typings.apidevtoolsOpenapiSchemas.jsonSchemaMod.JsonSchemaDraft202012
-import typings.apidevtoolsOpenapiSchemas.jsonSchemaMod.JsonSchemaDraft4
+import typings.apidevtoolsOpenapiSchemas.libJsonSchemaMod.JsonSchemaDraft202012
+import typings.apidevtoolsOpenapiSchemas.libJsonSchemaMod.JsonSchemaDraft4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

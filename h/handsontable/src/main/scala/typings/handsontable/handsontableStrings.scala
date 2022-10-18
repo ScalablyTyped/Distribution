@@ -1,18 +1,18 @@
 package typings.handsontable
 
-import typings.handsontable.autofillAutofillMod.Direction
+import typings.handsontable.`3rdpartyWalkontableSrcMod`.OverlayType
 import typings.handsontable.cellTypesMod.CellType
-import typings.handsontable.columnSortingColumnSortingMod.SortOrderType
 import typings.handsontable.commonMod.ChangeSource
-import typings.handsontable.conditionCollectionMod.ConditionName
-import typings.handsontable.contextMenuContextMenuMod.PredefinedMenuItemKey
-import typings.handsontable.copyPasteCopyPasteMod.PasteModeType
 import typings.handsontable.editorsMod.EditorType
-import typings.handsontable.filtersFiltersMod._ConditionName
-import typings.handsontable.filtersFiltersMod._OperationType
-import typings.handsontable.indexMapperMod.MapTypes
+import typings.handsontable.pluginsAutofillAutofillMod.Direction
+import typings.handsontable.pluginsColumnSortingColumnSortingMod.SortOrderType
+import typings.handsontable.pluginsContextMenuContextMenuMod.PredefinedMenuItemKey
+import typings.handsontable.pluginsCopyPasteCopyPasteMod.PasteModeType
+import typings.handsontable.pluginsFiltersConditionCollectionMod.ConditionName
+import typings.handsontable.pluginsFiltersFiltersMod._ConditionName
+import typings.handsontable.pluginsFiltersFiltersMod._OperationType
 import typings.handsontable.renderersMod.RendererType
-import typings.handsontable.srcMod.OverlayType
+import typings.handsontable.translationsIndexMapperMod.MapTypes
 import typings.handsontable.validatorsMod.ValidatorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsforce", "Chatter")
 @js.native
 open class Chatter protected ()
-  extends typings.jsforce.chatterMod.Chatter {
+  extends typings.jsforce.apiChatterMod.Chatter {
   def this(conn: typings.jsforce.connectionMod.Connection) = this()
 }

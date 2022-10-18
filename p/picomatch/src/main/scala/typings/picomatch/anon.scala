@@ -22,23 +22,23 @@ object anon {
     
     var alpha: `a-zA-Z`
     
-    var ascii: String
+    var ascii: /* \x00-\x7F */ String
     
-    var blank: String
+    var blank: /*  \t */ String
     
-    var cntrl: String
+    var cntrl: /* \x00-\x1F\x7F */ String
     
     var digit: `0-9`
     
-    var graph: String
+    var graph: /* \x21-\x7E */ String
     
     var lower: `a-z_`
     
-    var print: String
+    var print: /* \x20-\x7E  */ String
     
-    var punct: String
+    var punct: /* \-!"#$%&'()\*+,./:;<=>?@[\]^_`{|}~ */ String
     
-    var space: String
+    var space: /*  \t\r\n\v\f */ String
     
     var upper: `A-Z`
     
@@ -59,23 +59,23 @@ object anon {
       
       inline def setAlpha(value: `a-zA-Z`): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      inline def setAscii(value: String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+      inline def setAscii(value: /* \x00-\x7F */ String): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
-      inline def setBlank(value: String): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
+      inline def setBlank(value: /*  \t */ String): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
       
-      inline def setCntrl(value: String): Self = StObject.set(x, "cntrl", value.asInstanceOf[js.Any])
+      inline def setCntrl(value: /* \x00-\x1F\x7F */ String): Self = StObject.set(x, "cntrl", value.asInstanceOf[js.Any])
       
       inline def setDigit(value: `0-9`): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
       
-      inline def setGraph(value: String): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: /* \x21-\x7E */ String): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
       inline def setLower(value: `a-z_`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
       
-      inline def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: /* \x20-\x7E  */ String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
-      inline def setPunct(value: String): Self = StObject.set(x, "punct", value.asInstanceOf[js.Any])
+      inline def setPunct(value: /* \-!"#$%&'()\*+,./:;<=>?@[\]^_`{|}~ */ String): Self = StObject.set(x, "punct", value.asInstanceOf[js.Any])
       
-      inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: /*  \t\r\n\v\f */ String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
       inline def setUpper(value: `A-Z`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
       
@@ -108,164 +108,6 @@ object anon {
       inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DOTLITERAL extends StObject {
-    
-    var DOTS_SLASH: String
-    
-    var DOT_LITERAL: String
-    
-    var END_ANCHOR: String
-    
-    var NO_DOT: String
-    
-    var NO_DOTS: String
-    
-    var NO_DOTS_SLASH: String
-    
-    var NO_DOT_SLASH: String
-    
-    var ONE_CHAR: String
-    
-    var PLUS_LITERAL: String
-    
-    var QMARK: String
-    
-    var QMARK_LITERAL: String
-    
-    var QMARK_NO_DOT: String
-    
-    var SLASH_LITERAL: String
-    
-    var STAR: String
-    
-    var START_ANCHOR: String
-  }
-  object DOTLITERAL {
-    
-    inline def apply(
-      DOTS_SLASH: String,
-      DOT_LITERAL: String,
-      END_ANCHOR: String,
-      NO_DOT: String,
-      NO_DOTS: String,
-      NO_DOTS_SLASH: String,
-      NO_DOT_SLASH: String,
-      ONE_CHAR: String,
-      PLUS_LITERAL: String,
-      QMARK: String,
-      QMARK_LITERAL: String,
-      QMARK_NO_DOT: String,
-      SLASH_LITERAL: String,
-      STAR: String,
-      START_ANCHOR: String
-    ): DOTLITERAL = {
-      val __obj = js.Dynamic.literal(DOTS_SLASH = DOTS_SLASH.asInstanceOf[js.Any], DOT_LITERAL = DOT_LITERAL.asInstanceOf[js.Any], END_ANCHOR = END_ANCHOR.asInstanceOf[js.Any], NO_DOT = NO_DOT.asInstanceOf[js.Any], NO_DOTS = NO_DOTS.asInstanceOf[js.Any], NO_DOTS_SLASH = NO_DOTS_SLASH.asInstanceOf[js.Any], NO_DOT_SLASH = NO_DOT_SLASH.asInstanceOf[js.Any], ONE_CHAR = ONE_CHAR.asInstanceOf[js.Any], PLUS_LITERAL = PLUS_LITERAL.asInstanceOf[js.Any], QMARK = QMARK.asInstanceOf[js.Any], QMARK_LITERAL = QMARK_LITERAL.asInstanceOf[js.Any], QMARK_NO_DOT = QMARK_NO_DOT.asInstanceOf[js.Any], SLASH_LITERAL = SLASH_LITERAL.asInstanceOf[js.Any], STAR = STAR.asInstanceOf[js.Any], START_ANCHOR = START_ANCHOR.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DOTLITERAL]
-    }
-    
-    extension [Self <: DOTLITERAL](x: Self) {
-      
-      inline def setDOTS_SLASH(value: String): Self = StObject.set(x, "DOTS_SLASH", value.asInstanceOf[js.Any])
-      
-      inline def setDOT_LITERAL(value: String): Self = StObject.set(x, "DOT_LITERAL", value.asInstanceOf[js.Any])
-      
-      inline def setEND_ANCHOR(value: String): Self = StObject.set(x, "END_ANCHOR", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOT(value: String): Self = StObject.set(x, "NO_DOT", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOTS(value: String): Self = StObject.set(x, "NO_DOTS", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOTS_SLASH(value: String): Self = StObject.set(x, "NO_DOTS_SLASH", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOT_SLASH(value: String): Self = StObject.set(x, "NO_DOT_SLASH", value.asInstanceOf[js.Any])
-      
-      inline def setONE_CHAR(value: String): Self = StObject.set(x, "ONE_CHAR", value.asInstanceOf[js.Any])
-      
-      inline def setPLUS_LITERAL(value: String): Self = StObject.set(x, "PLUS_LITERAL", value.asInstanceOf[js.Any])
-      
-      inline def setQMARK(value: String): Self = StObject.set(x, "QMARK", value.asInstanceOf[js.Any])
-      
-      inline def setQMARK_LITERAL(value: String): Self = StObject.set(x, "QMARK_LITERAL", value.asInstanceOf[js.Any])
-      
-      inline def setQMARK_NO_DOT(value: String): Self = StObject.set(x, "QMARK_NO_DOT", value.asInstanceOf[js.Any])
-      
-      inline def setSLASH_LITERAL(value: String): Self = StObject.set(x, "SLASH_LITERAL", value.asInstanceOf[js.Any])
-      
-      inline def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
-      
-      inline def setSTART_ANCHOR(value: String): Self = StObject.set(x, "START_ANCHOR", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DOTSSLASH extends StObject {
-    
-    var DOTS_SLASH: String
-    
-    var END_ANCHOR: String
-    
-    var NO_DOT: String
-    
-    var NO_DOTS: String
-    
-    var NO_DOTS_SLASH: String
-    
-    var NO_DOT_SLASH: String
-    
-    var QMARK: String
-    
-    var QMARK_NO_DOT: String
-    
-    var SLASH_LITERAL: String
-    
-    var STAR: String
-    
-    var START_ANCHOR: String
-  }
-  object DOTSSLASH {
-    
-    inline def apply(
-      DOTS_SLASH: String,
-      END_ANCHOR: String,
-      NO_DOT: String,
-      NO_DOTS: String,
-      NO_DOTS_SLASH: String,
-      NO_DOT_SLASH: String,
-      QMARK: String,
-      QMARK_NO_DOT: String,
-      SLASH_LITERAL: String,
-      STAR: String,
-      START_ANCHOR: String
-    ): DOTSSLASH = {
-      val __obj = js.Dynamic.literal(DOTS_SLASH = DOTS_SLASH.asInstanceOf[js.Any], END_ANCHOR = END_ANCHOR.asInstanceOf[js.Any], NO_DOT = NO_DOT.asInstanceOf[js.Any], NO_DOTS = NO_DOTS.asInstanceOf[js.Any], NO_DOTS_SLASH = NO_DOTS_SLASH.asInstanceOf[js.Any], NO_DOT_SLASH = NO_DOT_SLASH.asInstanceOf[js.Any], QMARK = QMARK.asInstanceOf[js.Any], QMARK_NO_DOT = QMARK_NO_DOT.asInstanceOf[js.Any], SLASH_LITERAL = SLASH_LITERAL.asInstanceOf[js.Any], STAR = STAR.asInstanceOf[js.Any], START_ANCHOR = START_ANCHOR.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DOTSSLASH]
-    }
-    
-    extension [Self <: DOTSSLASH](x: Self) {
-      
-      inline def setDOTS_SLASH(value: String): Self = StObject.set(x, "DOTS_SLASH", value.asInstanceOf[js.Any])
-      
-      inline def setEND_ANCHOR(value: String): Self = StObject.set(x, "END_ANCHOR", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOT(value: String): Self = StObject.set(x, "NO_DOT", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOTS(value: String): Self = StObject.set(x, "NO_DOTS", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOTS_SLASH(value: String): Self = StObject.set(x, "NO_DOTS_SLASH", value.asInstanceOf[js.Any])
-      
-      inline def setNO_DOT_SLASH(value: String): Self = StObject.set(x, "NO_DOT_SLASH", value.asInstanceOf[js.Any])
-      
-      inline def setQMARK(value: String): Self = StObject.set(x, "QMARK", value.asInstanceOf[js.Any])
-      
-      inline def setQMARK_NO_DOT(value: String): Self = StObject.set(x, "QMARK_NO_DOT", value.asInstanceOf[js.Any])
-      
-      inline def setSLASH_LITERAL(value: String): Self = StObject.set(x, "SLASH_LITERAL", value.asInstanceOf[js.Any])
-      
-      inline def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
-      
-      inline def setSTART_ANCHOR(value: String): Self = StObject.set(x, "START_ANCHOR", value.asInstanceOf[js.Any])
     }
   }
   

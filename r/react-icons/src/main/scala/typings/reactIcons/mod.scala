@@ -3,9 +3,9 @@ package typings.reactIcons
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element
 import typings.reactIcons.anon.IconBasePropsattrundefine
-import typings.reactIcons.iconBaseMod.IconBaseProps
-import typings.reactIcons.iconBaseMod.IconTree
-import typings.reactIcons.iconsManifestMod.IconManifest
+import typings.reactIcons.libEsmIconBaseMod.IconBaseProps
+import typings.reactIcons.libEsmIconBaseMod.IconTree
+import typings.reactIcons.libEsmIconsManifestMod.IconManifest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("react-icons", "DefaultContext")
   @js.native
-  val DefaultContext: typings.reactIcons.iconContextMod.IconContext = js.native
+  val DefaultContext: typings.reactIcons.libEsmIconContextMod.IconContext = js.native
   
   inline def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenIcon")(data.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ IconBaseProps, Element]]
   
@@ -26,7 +26,7 @@ object mod {
   
   @JSImport("react-icons", "IconContext")
   @js.native
-  val IconContext: Context[typings.reactIcons.iconContextMod.IconContext] = js.native
+  val IconContext: Context[typings.reactIcons.libEsmIconContextMod.IconContext] = js.native
   
   @JSImport("react-icons", "icons")
   @js.native

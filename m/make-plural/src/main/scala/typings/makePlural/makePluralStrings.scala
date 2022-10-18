@@ -1,6 +1,6 @@
 package typings.makePlural
 
-import typings.makePlural.mod.PluralCategory
+import typings.makePlural.cardinalsMod.PluralCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

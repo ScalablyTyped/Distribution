@@ -1,7 +1,7 @@
 package typings.eyes
 
 import typings.eyes.anon.All
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ object mod {
     var pretty: js.UndefOr[Boolean] = js.undefined
     
     /** Stream to write to, or null */
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /** Styles applied to stdout */
     var styles: js.UndefOr[All] = js.undefined
@@ -56,7 +56,7 @@ object mod {
       
       inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

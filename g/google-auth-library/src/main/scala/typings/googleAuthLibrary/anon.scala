@@ -2,11 +2,11 @@ package typings.googleAuthLibrary
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.gaxios.commonMod.GaxiosResponse
-import typings.googleAuthLibrary.downscopedclientMod.AccessBoundaryRule
-import typings.googleAuthLibrary.identitypoolclientMod.SubjectTokenFormatType
-import typings.googleAuthLibrary.loginticketMod.TokenPayload
-import typings.googleAuthLibrary.transportersMod.DefaultTransporter
+import typings.gaxios.buildSrcCommonMod.GaxiosResponse
+import typings.googleAuthLibrary.buildSrcAuthDownscopedclientMod.AccessBoundaryRule
+import typings.googleAuthLibrary.buildSrcAuthIdentitypoolclientMod.SubjectTokenFormatType
+import typings.googleAuthLibrary.buildSrcAuthLoginticketMod.TokenPayload
+import typings.googleAuthLibrary.buildSrcTransportersMod.DefaultTransporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -224,7 +224,7 @@ object anon {
   
   trait Headers extends StObject {
     
-    var headers: js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.Headers] = js.undefined
+    var headers: js.UndefOr[typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.Headers] = js.undefined
     
     var uri: js.UndefOr[String] = js.undefined
     
@@ -239,7 +239,7 @@ object anon {
     
     extension [Self <: Headers](x: Self) {
       
-      inline def setHeaders(value: typings.googleAuthLibrary.oauth2clientMod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       

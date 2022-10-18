@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "preact-render-to-string" : "5.2.4"
+      "preact-render-to-string" : "5.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "preact-render-to-string" : "5.2.4"
+      "preact-render-to-string" : "5.2.5"
     }
   ],
   "compile-devDependencies" : [

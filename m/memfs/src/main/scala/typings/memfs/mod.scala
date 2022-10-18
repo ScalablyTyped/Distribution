@@ -3,13 +3,13 @@ package typings.memfs
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.memfs.anon.COPYFILEEXCL
-import typings.memfs.direntMod.default
-import typings.memfs.promisesMod.IPromisesAPI
-import typings.memfs.statsMod.TStatNumber
-import typings.memfs.volumeMod.DirectoryJSON
-import typings.memfs.volumeMod.IReadStream
-import typings.memfs.volumeMod.IWriteStream
-import typings.memfs.volumeMod.NestedDirectoryJSON
+import typings.memfs.libDirentMod.default
+import typings.memfs.libPromisesMod.IPromisesAPI
+import typings.memfs.libStatsMod.TStatNumber
+import typings.memfs.libVolumeMod.DirectoryJSON
+import typings.memfs.libVolumeMod.IReadStream
+import typings.memfs.libVolumeMod.IWriteStream
+import typings.memfs.libVolumeMod.NestedDirectoryJSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object mod {
   @JSImport("memfs", "Volume")
   @js.native
   open class Volume ()
-    extends typings.memfs.volumeMod.Volume {
+    extends typings.memfs.libVolumeMod.Volume {
     def this(props: js.Object) = this()
   }
   object Volume {
@@ -45,14 +45,14 @@ object mod {
     def fd: Double = js.native
     inline def fd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
     
-    inline def fromJSON(json: DirectoryJSON): typings.memfs.volumeMod.Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.volumeMod.Volume]
-    inline def fromJSON(json: DirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.volumeMod.Volume]
+    inline def fromJSON(json: DirectoryJSON): typings.memfs.libVolumeMod.Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.libVolumeMod.Volume]
+    inline def fromJSON(json: DirectoryJSON, cwd: String): typings.memfs.libVolumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.libVolumeMod.Volume]
     
-    inline def fromNestedJSON(json: NestedDirectoryJSON): typings.memfs.volumeMod.Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.volumeMod.Volume]
-    inline def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): typings.memfs.volumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.volumeMod.Volume]
+    inline def fromNestedJSON(json: NestedDirectoryJSON): typings.memfs.libVolumeMod.Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.memfs.libVolumeMod.Volume]
+    inline def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): typings.memfs.libVolumeMod.Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[typings.memfs.libVolumeMod.Volume]
   }
   
-  inline def createFsFromVolume(vol: typings.memfs.volumeMod.Volume): IFs = ^.asInstanceOf[js.Dynamic].applyDynamic("createFsFromVolume")(vol.asInstanceOf[js.Any]).asInstanceOf[IFs]
+  inline def createFsFromVolume(vol: typings.memfs.libVolumeMod.Volume): IFs = ^.asInstanceOf[js.Dynamic].applyDynamic("createFsFromVolume")(vol.asInstanceOf[js.Any]).asInstanceOf[IFs]
   
   object fs extends Shortcut {
     
@@ -71,7 +71,7 @@ object mod {
     @JSImport("memfs", "fs.FSWatcher")
     @js.native
     open class FSWatcher ()
-      extends typings.memfs.volumeMod.FSWatcher
+      extends typings.memfs.libVolumeMod.FSWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.ReadStream")
@@ -84,13 +84,13 @@ object mod {
     @JSImport("memfs", "fs.StatWatcher")
     @js.native
     open class StatWatcher ()
-      extends typings.memfs.volumeMod.StatWatcher
+      extends typings.memfs.libVolumeMod.StatWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "fs.Stats")
     @js.native
     open class Stats protected ()
-      extends typings.memfs.statsMod.default[TStatNumber] {
+      extends typings.memfs.libStatsMod.default[TStatNumber] {
       def this(args: Any*) = this()
     }
     
@@ -111,13 +111,13 @@ object mod {
     
     @JSImport("memfs", "vol")
     @js.native
-    val ^ : typings.memfs.volumeMod.Volume = js.native
+    val ^ : typings.memfs.libVolumeMod.Volume = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.FSWatcher")
     @js.native
     open class FSWatcher ()
-      extends typings.memfs.volumeMod.FSWatcher
+      extends typings.memfs.libVolumeMod.FSWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.ReadStream")
@@ -130,7 +130,7 @@ object mod {
     @JSImport("memfs", "vol.StatWatcher")
     @js.native
     open class StatWatcher ()
-      extends typings.memfs.volumeMod.StatWatcher
+      extends typings.memfs.libVolumeMod.StatWatcher
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("memfs", "vol.WriteStream")
@@ -139,19 +139,19 @@ object mod {
       def this(args: Any*) = this()
     }
     
-    type _To = typings.memfs.volumeMod.Volume
+    type _To = typings.memfs.libVolumeMod.Volume
     
     /* This means you don't have to write `^`, but can instead just say `vol.foo` */
-    override def _to: typings.memfs.volumeMod.Volume = ^
+    override def _to: typings.memfs.libVolumeMod.Volume = ^
   }
   
   @js.native
   trait IFs
-    extends typings.memfs.volumeMod.Volume {
+    extends typings.memfs.libVolumeMod.Volume {
     
     var Dirent: Instantiable1[/* args (repeated) */ Any, default] = js.native
     
-    var Stats: Instantiable1[/* args (repeated) */ Any, typings.memfs.statsMod.default[TStatNumber]] = js.native
+    var Stats: Instantiable1[/* args (repeated) */ Any, typings.memfs.libStatsMod.default[TStatNumber]] = js.native
     
     var _toUnixTimestamp: Any = js.native
     

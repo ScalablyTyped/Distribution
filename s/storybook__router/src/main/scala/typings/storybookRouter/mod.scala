@@ -8,9 +8,9 @@ import typings.std.ReturnType
 import typings.storybookRouter.anon.PartialLocationAncestorOrigins
 import typings.storybookRouter.anon.Path
 import typings.storybookRouter.anon.Plain
-import typings.storybookRouter.reactRouterDomIndexMod.BrowserRouterProps
-import typings.storybookRouter.reactRouterIndexMod.NavigateFunction
-import typings.storybookRouter.reactRouterIndexMod.RouterProps
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterDomIndexMod.BrowserRouterProps
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterIndexMod.NavigateFunction
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterIndexMod.RouterProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

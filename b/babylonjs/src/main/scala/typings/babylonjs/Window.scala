@@ -1,11 +1,8 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.Instantiable2
 import typings.babylonjs.babylonjsStrings.vrdisplayconnected
 import typings.babylonjs.babylonjsStrings.vrdisplaydisconnected
 import typings.babylonjs.babylonjsStrings.vrdisplaypresentchange
-import typings.node.anon.TypeofURL
-import typings.node.urlMod.URL_
 import typings.std.AudioContext
 import typings.std.Event
 import typings.std.Float32ArrayConstructor
@@ -55,11 +52,11 @@ trait Window extends StObject {
   
   def mozRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
-  var mozURL: TypeofURL & (Instantiable2[/* input */ String, /* base */ js.UndefOr[String | URL_], URL_]) = js.native
+  var mozURL: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any = js.native
   
   var msIndexedDB: IDBFactory = js.native
   
-  var msURL: TypeofURL & (Instantiable2[/* input */ String, /* base */ js.UndefOr[String | URL_], URL_]) = js.native
+  var msURL: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any = js.native
   
   def oRequestAnimationFrame(callback: FrameRequestCallback): Double = js.native
   
@@ -75,5 +72,5 @@ trait Window extends StObject {
   
   var webkitIndexedDB: IDBFactory = js.native
   
-  var webkitURL: TypeofURL & (Instantiable2[/* input */ String, /* base */ js.UndefOr[String | URL_], URL_]) = js.native
+  var webkitURL: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   URL :infer T} ? T : {readonly createObjectURL (blob : node.node:buffer.Blob): string, readonly revokeObjectURL (objectUrl : string): void} & new (input : string, base : string | node.url.URL | undefined): node.url.URL */ js.Any = js.native
 }

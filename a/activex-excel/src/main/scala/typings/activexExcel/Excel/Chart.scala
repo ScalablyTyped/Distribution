@@ -65,7 +65,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Chart
   extends StObject
-     with AddSheetResult[Any]
      with Sheet {
   
   def Activate(): Unit = js.native

@@ -1161,12 +1161,10 @@ object Mixins {
     def currentLineHeight(): Double = js.native
     def currentLineHeight(includeGap: Boolean): Double = js.native
     
-    def font(buffer: Buffer): this.type = js.native
-    def font(src: String): this.type = js.native
-    def font(src: String, family: String): this.type = js.native
-    def font(src: String, family: String, size: Double): this.type = js.native
-    def font(src: String, family: Unit, size: Double): this.type = js.native
-    def font(src: String, size: Double): this.type = js.native
+    def font(src: PDFFontSource): this.type = js.native
+    def font(src: PDFFontSource, family: String): this.type = js.native
+    def font(src: PDFFontSource, family: String, size: Double): this.type = js.native
+    def font(src: PDFFontSource, size: Double): this.type = js.native
     
     def fontSize(size: Double): this.type = js.native
     

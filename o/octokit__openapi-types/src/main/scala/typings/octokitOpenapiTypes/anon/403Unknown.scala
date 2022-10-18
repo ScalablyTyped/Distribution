@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `403Unknown` extends StObject {
   
   /** Response */
-  var `200`: Content124
+  var `200`: ContentApplicationjsonRole
   
   /** Forbidden if team synchronization is set up */
   var `403`: Any
@@ -17,7 +17,7 @@ trait `403Unknown` extends StObject {
 }
 object `403Unknown` {
   
-  inline def apply(`200`: Content124, `403`: Any, `422`: Any): `403Unknown` = {
+  inline def apply(`200`: ContentApplicationjsonRole, `403`: Any, `422`: Any): `403Unknown` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
@@ -27,7 +27,7 @@ object `403Unknown` {
   
   extension [Self <: `403Unknown`](x: Self) {
     
-    inline def set200(value: Content124): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonRole): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set403(value: Any): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     

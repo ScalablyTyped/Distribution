@@ -11,10 +11,10 @@ import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.nav
 import typings.baseui.baseuiStrings.ul
-import typings.baseui.navMod.default
+import typings.baseui.sideNavigationNavMod.default
 import typings.baseui.sideNavigationTypesMod.SharedProps
 import typings.react.mod.MemoExoticComponent
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,18 +25,18 @@ object sideNavigationMod {
     
     @JSImport("baseui/side-navigation", "NavItem")
     @js.native
-    val ^ : MemoExoticComponent[TypeofNavItem & Instantiable0[typings.baseui.navItemMod.NavItem]] = js.native
+    val ^ : MemoExoticComponent[TypeofNavItem & Instantiable0[typings.baseui.sideNavigationNavItemMod.NavItem]] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("baseui/side-navigation", "NavItem.type")
     @js.native
     open class `type` ()
-      extends typings.baseui.navItemMod.NavItem
+      extends typings.baseui.sideNavigationNavItemMod.NavItem
     
-    type _To = MemoExoticComponent[TypeofNavItem & Instantiable0[typings.baseui.navItemMod.NavItem]]
+    type _To = MemoExoticComponent[TypeofNavItem & Instantiable0[typings.baseui.sideNavigationNavItemMod.NavItem]]
     
     /* This means you don't have to write `^`, but can instead just say `NavItem.foo` */
-    override def _to: MemoExoticComponent[TypeofNavItem & Instantiable0[typings.baseui.navItemMod.NavItem]] = ^
+    override def _to: MemoExoticComponent[TypeofNavItem & Instantiable0[typings.baseui.sideNavigationNavItemMod.NavItem]] = ^
   }
   
   @JSImport("baseui/side-navigation", "Navigation")

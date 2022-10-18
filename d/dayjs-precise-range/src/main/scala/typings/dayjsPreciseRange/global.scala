@@ -53,42 +53,8 @@ object global {
       def this(config: ConfigType) = this()
     }
     
-    @JSGlobal("preciseDiff.duration")
-    @js.native
-    val duration: CreateDurationType = js.native
-    
-    inline def extend[T](plugin: PluginFunc[T]): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
-    inline def extend[T](plugin: PluginFunc[T], option: T): typings.dayjs.mod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.mod.Dayjs]
-    
-    inline def isDayjs(d: Any): /* is dayjs.dayjs.Dayjs */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDayjs")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs.Dayjs */ Boolean]
-    
-    inline def isDuration(d: Any): /* is dayjs.dayjs/plugin/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/plugin/duration.Duration */ Boolean]
-    
-    inline def isMoment(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    
-    inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
-    inline def locale(preset: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def locale(preset: String, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: String, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: String, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: Unit, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: Unit, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: Unit, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: ILocale): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def locale(preset: ILocale, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: ILocale, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def locale(preset: ILocale, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def localeData(): GlobalLocaleDataReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[GlobalLocaleDataReturn]
-    
-    inline def max(dayjs: typings.dayjs.mod.Dayjs*): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.dayjs.mod.Dayjs]
-    inline def max(dayjs: js.Array[typings.dayjs.mod.Dayjs]): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
-    
-    inline def min(dayjs: typings.dayjs.mod.Dayjs*): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.dayjs.mod.Dayjs]
-    inline def min(dayjs: js.Array[typings.dayjs.mod.Dayjs]): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
-    
     /* augmented module */
-    object mod {
+    object dayjsMod {
       
       @JSImport("dayjs", JSImport.Namespace)
       @js.native
@@ -165,6 +131,40 @@ object global {
         }
       }
     }
+    
+    @JSGlobal("preciseDiff.duration")
+    @js.native
+    val duration: CreateDurationType = js.native
+    
+    inline def extend[T](plugin: PluginFunc[T]): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
+    inline def extend[T](plugin: PluginFunc[T], option: T): typings.dayjs.mod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.mod.Dayjs]
+    
+    inline def isDayjs(d: Any): /* is dayjs.dayjs.Dayjs */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDayjs")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs.Dayjs */ Boolean]
+    
+    inline def isDuration(d: Any): /* is dayjs.dayjs/plugin/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/plugin/duration.Duration */ Boolean]
+    
+    inline def isMoment(input: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+    inline def locale(preset: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def locale(preset: String, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: String, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: String, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: Unit, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: Unit, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: Unit, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: ILocale): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def locale(preset: ILocale, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: ILocale, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def locale(preset: ILocale, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def localeData(): GlobalLocaleDataReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[GlobalLocaleDataReturn]
+    
+    inline def max(dayjs: typings.dayjs.mod.Dayjs*): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.dayjs.mod.Dayjs]
+    inline def max(dayjs: js.Array[typings.dayjs.mod.Dayjs]): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
+    
+    inline def min(dayjs: typings.dayjs.mod.Dayjs*): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.dayjs.mod.Dayjs]
+    inline def min(dayjs: js.Array[typings.dayjs.mod.Dayjs]): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
     
     inline def months(): MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[MonthNames]
     

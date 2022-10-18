@@ -22,8 +22,12 @@ trait Table[T, TKey] extends StObject {
   def bulkAdd(items: js.Array[T], keys: Unit, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
   def bulkAdd(items: js.Array[T], keys: IndexableTypeArrayReadonly): PromiseExtended[TKey] = js.native
   def bulkAdd(items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
-  def bulkAdd[B /* <: Boolean */](items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
-  def bulkAdd[B /* <: Boolean */](items: js.Array[T], options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
+  def bulkAdd[B /* <: Boolean */](items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeys[B]): PromiseExtended[
+    /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? std.Array<TKey> : TKey */ js.Any
+  ] = js.native
+  def bulkAdd[B /* <: Boolean */](items: js.Array[T], options: AllKeys[B]): PromiseExtended[
+    /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? std.Array<TKey> : TKey */ js.Any
+  ] = js.native
   
   def bulkDelete(keys: js.Array[TKey]): PromiseExtended[Unit] = js.native
   
@@ -33,8 +37,12 @@ trait Table[T, TKey] extends StObject {
   def bulkPut(items: js.Array[T], keys: Unit, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
   def bulkPut(items: js.Array[T], keys: IndexableTypeArrayReadonly): PromiseExtended[TKey] = js.native
   def bulkPut(items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeysBoolean): PromiseExtended[TKey] = js.native
-  def bulkPut[B /* <: Boolean */](items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
-  def bulkPut[B /* <: Boolean */](items: js.Array[T], options: AllKeys[B]): PromiseExtended[TKey | js.Array[TKey]] = js.native
+  def bulkPut[B /* <: Boolean */](items: js.Array[T], keys: IndexableTypeArrayReadonly, options: AllKeys[B]): PromiseExtended[
+    /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? std.Array<TKey> : TKey */ js.Any
+  ] = js.native
+  def bulkPut[B /* <: Boolean */](items: js.Array[T], options: AllKeys[B]): PromiseExtended[
+    /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? std.Array<TKey> : TKey */ js.Any
+  ] = js.native
   
   def clear(): PromiseExtended[Unit] = js.native
   

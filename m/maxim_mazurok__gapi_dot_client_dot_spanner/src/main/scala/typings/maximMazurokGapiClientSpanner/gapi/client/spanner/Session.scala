@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait Session extends StObject {
     * See https://goo.gl/xmQnxf for more information on and examples of labels.
     */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The name of the session. This is always system-assigned. */
@@ -52,9 +49,7 @@ object Session {
     inline def setCreatorRoleUndefined: Self = StObject.set(x, "creatorRole", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

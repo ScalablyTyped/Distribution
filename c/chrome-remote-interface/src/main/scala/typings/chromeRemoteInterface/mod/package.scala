@@ -1,8 +1,6 @@
 package typings.chromeRemoteInterface.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.chromeRemoteInterface.mod.^
-import typings.devtoolsProtocol.protocolMappingMod.ProtocolMapping.Events
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,12 +29,3 @@ inline def New(): js.Promise[Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("
 inline def New(callback: js.Function2[/* err */ js.Error | Null, /* target */ Target, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("New")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def New(options: NewOptions): js.Promise[Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("New")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Target]]
 inline def New(options: NewOptions, callback: js.Function2[/* err */ js.Error | Null, /* target */ Target, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("New")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-type EventCallbacks[T /* <: Events */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Property in keyof T ]: (callback : (params : T[Property] extends [any]? T[Property][0] : undefined, sessionId : string | undefined): void): (): chrome-remote-interface.chrome-remote-interface.Client}
-  */ typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.EventCallbacks & TopLevel[Any]
-
-// '<domain>.<event>' i.e. Page.loadEventFired
-type EventPromises[T /* <: Events */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Property in keyof T ]: (): T[Property] extends [any]? std.Promise<T[Property][0]> : std.Promise<void>}
-  */ typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.EventPromises & TopLevel[Any]

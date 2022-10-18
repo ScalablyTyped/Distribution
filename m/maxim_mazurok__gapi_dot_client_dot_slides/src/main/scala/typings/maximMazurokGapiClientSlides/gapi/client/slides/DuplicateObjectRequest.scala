@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ trait DuplicateObjectRequest extends StObject {
     * objects are omitted from the map, a new random ID will be assigned. If the map is empty or unset, all duplicate objects will receive a new random ID.
     */
   var objectIds: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object DuplicateObjectRequest {
@@ -38,9 +35,7 @@ object DuplicateObjectRequest {
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     inline def setObjectIds(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)

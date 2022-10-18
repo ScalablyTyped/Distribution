@@ -24,6 +24,6 @@ object Grammar {
     
     inline def setLists(value: js.Array[HTMLUListElement]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
-    inline def setListsVarargs(value: HTMLUListElement*): Self = StObject.set(x, "lists", js.Array(value :_*))
+    inline def setListsVarargs(value: HTMLUListElement*): Self = StObject.set(x, "lists", js.Array(value*))
   }
 }

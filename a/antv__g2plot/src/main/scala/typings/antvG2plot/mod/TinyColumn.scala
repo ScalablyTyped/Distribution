@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialTinyColumnOptions
-import typings.antvG2plot.tinyColumnTypesMod.TinyColumnOptions
+import typings.antvG2plot.libPlotsTinyColumnTypesMod.TinyColumnOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "TinyColumn")
 @js.native
 open class TinyColumn protected ()
-  extends typings.antvG2plot.tinyColumnMod.TinyColumn {
+  extends typings.antvG2plot.libPlotsTinyColumnMod.TinyColumn {
   def this(container: String, options: TinyColumnOptions) = this()
   def this(container: HTMLElement, options: TinyColumnOptions) = this()
 }

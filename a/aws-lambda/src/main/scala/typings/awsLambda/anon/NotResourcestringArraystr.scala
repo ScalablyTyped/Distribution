@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.apiGatewayAuthorizerMod.PrincipalValue
-import typings.awsLambda.apiGatewayAuthorizerMod.StatementResource
+import typings.awsLambda.triggerApiGatewayAuthorizerMod.PrincipalValue
+import typings.awsLambda.triggerApiGatewayAuthorizerMod.StatementResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,26 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactSpringNativeStrings {
   
   @js.native
-  sealed trait AnimatedArray extends StObject
-  inline def AnimatedArray: AnimatedArray = "AnimatedArray".asInstanceOf[AnimatedArray]
-  
-  @js.native
-  sealed trait AnimatedProps extends StObject
-  inline def AnimatedProps: AnimatedProps = "AnimatedProps".asInstanceOf[AnimatedProps]
-  
-  @js.native
-  sealed trait AnimatedStyle extends StObject
-  inline def AnimatedStyle: AnimatedStyle = "AnimatedStyle".asInstanceOf[AnimatedStyle]
-  
-  @js.native
-  sealed trait AnimatedStyles extends StObject
-  inline def AnimatedStyles: AnimatedStyles = "AnimatedStyles".asInstanceOf[AnimatedStyles]
-  
-  @js.native
-  sealed trait AnimatedTransform extends StObject
-  inline def AnimatedTransform: AnimatedTransform = "AnimatedTransform".asInstanceOf[AnimatedTransform]
-  
-  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   

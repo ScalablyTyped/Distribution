@@ -1,13 +1,13 @@
 package typings.mendixmodelsdk.mod.codeactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.codeactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.microflows.Microflow
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCodeactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.Microflow
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "codeactions.MicroflowActionInfo")
 @js.native
 open class MicroflowActionInfo protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.codeactions.MicroflowActionInfo {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.codeactions.MicroflowActionInfo {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object MicroflowActionInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object MicroflowActionInfo {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object MicroflowActionInfo {
     *  7.21.0 and higher
     */
   /* static member */
-  inline def createInCodeActionUnderModelerActionInfo(container: typings.mendixmodelsdk.codeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderModelerActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
+  inline def createInCodeActionUnderModelerActionInfo(container: typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.CodeAction): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderModelerActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -73,7 +73,7 @@ object MicroflowActionInfo {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createInMicroflowUnderMicroflowActionInfo(container: Microflow): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderMicroflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
+  inline def createInMicroflowUnderMicroflowActionInfo(container: Microflow): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderMicroflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo]
   
   /**
     * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
@@ -84,7 +84,7 @@ object MicroflowActionInfo {
     *  9.0.2 and higher
     */
   /* static member */
-  inline def createInMicroflowUnderWorkflowActionInfo(container: Microflow): typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderWorkflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.codeactionsMod.codeactions.MicroflowActionInfo]
+  inline def createInMicroflowUnderWorkflowActionInfo(container: Microflow): typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowUnderWorkflowActionInfo")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.MicroflowActionInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk", "codeactions.MicroflowActionInfo.structureTypeName")

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRProjectionLayerWrapper")
 @js.native
 open class WebXRProjectionLayerWrapper protected ()
-  extends typings.babylonjs.legacyMod.WebXRProjectionLayerWrapper {
+  extends typings.babylonjs.legacyLegacyMod.WebXRProjectionLayerWrapper {
   def this(layer: XRProjectionLayer, isMultiview: Boolean, xrGLBinding: XRWebGLBinding) = this()
 }

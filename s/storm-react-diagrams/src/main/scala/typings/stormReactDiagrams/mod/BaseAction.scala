@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "BaseAction")
 @js.native
 open class BaseAction protected ()
-  extends typings.stormReactDiagrams.baseActionMod.BaseAction {
+  extends typings.stormReactDiagrams.distSrcActionsBaseActionMod.BaseAction {
   def this(mouseX: Double, mouseY: Double) = this()
 }

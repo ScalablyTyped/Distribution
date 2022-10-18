@@ -1,6 +1,6 @@
 package typings.roarr
 
-import typings.roarr.typesMod.LogLevelName
+import typings.roarr.distSrcTypesMod.LogLevelName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

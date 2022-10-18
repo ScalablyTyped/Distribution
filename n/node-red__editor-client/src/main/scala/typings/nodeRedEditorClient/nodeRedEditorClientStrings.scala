@@ -14,14 +14,6 @@ object nodeRedEditorClientStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait NodeCredentials extends StObject
-  inline def NodeCredentials: NodeCredentials = "NodeCredentials".asInstanceOf[NodeCredentials]
-  
-  @js.native
-  sealed trait NodePropertiesDef extends StObject
-  inline def NodePropertiesDef: NodePropertiesDef = "NodePropertiesDef".asInstanceOf[NodePropertiesDef]
-  
-  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   

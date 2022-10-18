@@ -1,14 +1,14 @@
 package typings.nodePowershell
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.nodePowershell.nodePowershellStrings.Bypass
 import typings.nodePowershell.nodePowershellStrings.end
 import typings.nodePowershell.nodePowershellStrings.err
 import typings.nodePowershell.nodePowershellStrings.output
 import typings.std.PropertyKey
-import typings.std.ReadableStream
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -163,26 +163,26 @@ object mod {
   
   trait NodePowerShellStream extends StObject {
     
-    var err: ReadableStream[Any]
+    var err: ReadableStream
     
-    var stdin: WritableStream[Any]
+    var stdin: WritableStream
     
-    var stdout: ReadableStream[Any]
+    var stdout: ReadableStream
   }
   object NodePowerShellStream {
     
-    inline def apply(err: ReadableStream[Any], stdin: WritableStream[Any], stdout: ReadableStream[Any]): NodePowerShellStream = {
+    inline def apply(err: ReadableStream, stdin: WritableStream, stdout: ReadableStream): NodePowerShellStream = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], stdin = stdin.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodePowerShellStream]
     }
     
     extension [Self <: NodePowerShellStream](x: Self) {
       
-      inline def setErr(value: ReadableStream[Any]): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: ReadableStream): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      inline def setStdin(value: WritableStream[Any]): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: WritableStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      inline def setStdout(value: ReadableStream[Any]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: ReadableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AcOutputFormat = String
+type AcOutputFormat = /* Microsoft Active Server Pages (*.asp) */ String
 
 type ByteArray = SafeArray[Double]
 
@@ -19,7 +19,7 @@ type ByteArray = SafeArray[Double]
   - typings.activexAccess.activexAccessInts.`0`
   - typings.activexAccess.activexAccessInts.`6`
   - typings.activexAccess.activexAccessInts.`5`
-  - java.lang.String
+  - / * Microsoft Active Server Pages (*.asp) * / java.lang.String
   - typings.activexAccess.activexAccessInts.`-1`
   - typings.activexAccess.activexAccessInts.`8`
   - typings.activexAccess.activexAccessInts.`9`
@@ -129,10 +129,10 @@ type ByteArray = SafeArray[Double]
   - typings.activexAccess.activexAccessInts.`89`
   - typings.activexAccess.activexAccessInts.`90`
 */
-type Constants = _Constants | String
+type Constants = _Constants | (/* Microsoft Active Server Pages (*.asp) */ String)
 
 /* Rewritten from type alias, can be one of: 
-  - java.lang.String
+  - / * Microsoft Access (default) * / java.lang.String
   - typings.activexAccess.activexAccessStrings.`Jet 2Dotx`
   - typings.activexAccess.activexAccessStrings.`Jet 3Dotx`
   - typings.activexAccess.activexAccessStrings.`dBase III`
@@ -145,7 +145,7 @@ type Constants = _Constants | String
   - typings.activexAccess.activexAccessStrings.`ODBC Database`
   - typings.activexAccess.activexAccessStrings.WSS
 */
-type DatabaseType = _DatabaseType | String
+type DatabaseType = _DatabaseType | (/* Microsoft Access (default) */ String)
 
 /* Rewritten from type alias, can be one of: 
   - typings.activexAccess.activexAccessInts.`0`
@@ -155,7 +155,7 @@ type DatabaseType = _DatabaseType | String
   - typings.activexAccess.activexAccessInts.`6`
   - typings.activexAccess.activexAccessInts.`7`
   - typings.activexAccess.activexAccessInts.`4`
-  - java.lang.String
+  - / * Rich Text Format (*.rtf) * / java.lang.String
   - typings.activexAccess.activexAccessInts.`11`
   - typings.activexAccess.activexAccessInts.`20`
   - typings.activexAccess.activexAccessInts.`5`
@@ -220,4 +220,4 @@ type DatabaseType = _DatabaseType | String
   - typings.activexAccess.activexAccessInts.`-1`
   - typings.activexAccess.activexAccessInts.`-2147483646`
 */
-type OldConstants = _OldConstants | String
+type OldConstants = _OldConstants | (/* Rich Text Format (*.rtf) */ String)

@@ -10,8 +10,7 @@ sealed trait RefErrorCellValueSubType extends StObject
   * Represents types of #REF! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.RefErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object RefErrorCellValueSubType extends StObject {
     * An error caused by dynamic array references from the linked workbook. Displays as error type #REF! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksCalculatedRef
@@ -33,8 +31,7 @@ object RefErrorCellValueSubType extends StObject {
     * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait externalLinksStructuredRef
@@ -45,8 +42,7 @@ object RefErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #REF! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown

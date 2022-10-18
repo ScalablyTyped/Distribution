@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "ContentHasMutatedException")
 @js.native
 open class ContentHasMutatedException protected ()
-  extends typings.angularDevkitCore.exceptionMod.ContentHasMutatedException {
+  extends typings.angularDevkitCore.srcExceptionMod.ContentHasMutatedException {
   def this(path: String) = this()
 }

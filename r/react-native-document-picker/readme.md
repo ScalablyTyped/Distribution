@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-document-picker
 
-Typings are for version 8.1.1
+Typings are for version 8.1.2
 
 ## Library description:
 A react native interface to access documents from dropbox, google drive, iCloud...

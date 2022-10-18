@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/common.html#delete--db
-// http://docs.couchdb.org/en/latest/api/database/compact.html#post--db-_compact
+/** OK response
+  * @see Delete docs: {@link http://docs.couchdb.org/en/latest/api/database/common.html#delete--db}
+  * @see Compaction docs: {@link http://docs.couchdb.org/en/latest/api/database/compact.html#post--db-_compact} */
 trait OkResponse extends StObject {
   
-  // Operation status
+  /** Operation status */
   var ok: Boolean
 }
 object OkResponse {

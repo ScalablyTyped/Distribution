@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "FileAlreadyExistException")
 @js.native
 open class FileAlreadyExistException protected ()
-  extends typings.angularDevkitCore.exceptionMod.FileAlreadyExistException {
+  extends typings.angularDevkitCore.srcExceptionMod.FileAlreadyExistException {
   def this(path: String) = this()
 }

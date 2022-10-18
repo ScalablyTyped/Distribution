@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
 import typings.tabris.anon.OmitStatusBarset
-import typings.tabris.anon.`15`
+import typings.tabris.anon.`4`
 import typings.tabris.tabrisStrings.background
 import typings.tabris.tabrisStrings.dark
 import typings.tabris.tabrisStrings.default
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_StatusBar_ : (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `15` = js.native
+  val jsxAttributes_StatusBar_ : (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `4` = js.native
   
   /**
     * Fired when the [*background*](#background) property has changed.

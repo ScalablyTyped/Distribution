@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "ServerTimeoutException")
 @js.native
 open class ServerTimeoutException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.ServerTimeoutException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.ServerTimeoutException

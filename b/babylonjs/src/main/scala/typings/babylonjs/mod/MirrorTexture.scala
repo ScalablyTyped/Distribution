@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MirrorTexture")
 @js.native
 open class MirrorTexture protected ()
-  extends typings.babylonjs.legacyMod.MirrorTexture {
+  extends typings.babylonjs.legacyLegacyMod.MirrorTexture {
   /**
     * Instantiates a Mirror Texture.
     * Mirror texture can be used to simulate the view from a mirror in a scene.

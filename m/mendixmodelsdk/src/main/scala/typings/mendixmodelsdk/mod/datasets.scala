@@ -1,10 +1,10 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +17,9 @@ object datasets {
   @JSImport("mendixmodelsdk", "datasets.DataSet")
   @js.native
   open class DataSet protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSet {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSet {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -37,7 +37,7 @@ object datasets {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.datasetsMod.datasets.DataSet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSet]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSet]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSet.structureTypeName")
@@ -48,21 +48,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSet.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetAccess")
   @js.native
   open class DataSetAccess protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetAccess {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetAccess {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetAccess {
@@ -77,7 +77,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetAccess]
     
     /**
       * Creates and returns a new DataSetAccess instance in the SDK and on the server.
@@ -85,7 +85,7 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSet): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetAccess.structureTypeName")
@@ -96,21 +96,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetAccess.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetColumn")
   @js.native
   open class DataSetColumn protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetColumn {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetColumn {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetColumn {
@@ -125,7 +125,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn]
     
     /**
       * Creates and returns a new DataSetColumn instance in the SDK and on the server.
@@ -133,7 +133,7 @@ object datasets {
       * of the parent JavaDataSetSource element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource): typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetColumn]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.JavaDataSetSource): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetColumn.structureTypeName")
@@ -144,21 +144,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetColumn.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetConstraintAccess")
   @js.native
   open class DataSetConstraintAccess protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetConstraintAccess {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetConstraintAccess {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetConstraintAccess {
@@ -173,7 +173,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetConstraintAccess]
     
     /**
       * Creates and returns a new DataSetConstraintAccess instance in the SDK and on the server.
@@ -181,7 +181,7 @@ object datasets {
       * of the parent DataSetParameterAccess element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetConstraintAccess]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameterAccess): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetConstraintAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetConstraintAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetConstraintAccess.structureTypeName")
@@ -192,21 +192,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetConstraintAccess.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetDateTimeConstraint")
   @js.native
   open class DataSetDateTimeConstraint protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetDateTimeConstraint {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetDateTimeConstraint {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetDateTimeConstraint {
@@ -221,7 +221,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetDateTimeConstraint]
     
     /**
       * Creates and returns a new DataSetDateTimeConstraint instance in the SDK and on the server.
@@ -229,7 +229,7 @@ object datasets {
       * of the parent DataSetParameter element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetDateTimeConstraint]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetDateTimeConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetDateTimeConstraint]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetDateTimeConstraint.structureTypeName")
@@ -240,21 +240,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetDateTimeConstraint.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetModuleRoleAccess")
   @js.native
   open class DataSetModuleRoleAccess protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetModuleRoleAccess {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetModuleRoleAccess {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetModuleRoleAccess {
@@ -269,7 +269,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetModuleRoleAccess]
     
     /**
       * Creates and returns a new DataSetModuleRoleAccess instance in the SDK and on the server.
@@ -277,7 +277,7 @@ object datasets {
       * of the parent DataSetAccess element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetAccess): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetModuleRoleAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetModuleRoleAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetModuleRoleAccess.structureTypeName")
@@ -288,21 +288,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetModuleRoleAccess.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetNumericConstraint")
   @js.native
   open class DataSetNumericConstraint protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetNumericConstraint {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetNumericConstraint {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetNumericConstraint {
@@ -317,7 +317,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetNumericConstraint]
     
     /**
       * Creates and returns a new DataSetNumericConstraint instance in the SDK and on the server.
@@ -325,7 +325,7 @@ object datasets {
       * of the parent DataSetParameter element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetNumericConstraint]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetNumericConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetNumericConstraint]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetNumericConstraint.structureTypeName")
@@ -336,21 +336,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetNumericConstraint.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetObjectConstraint")
   @js.native
   open class DataSetObjectConstraint protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetObjectConstraint {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetObjectConstraint {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetObjectConstraint {
@@ -365,7 +365,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetObjectConstraint]
     
     /**
       * Creates and returns a new DataSetObjectConstraint instance in the SDK and on the server.
@@ -373,7 +373,7 @@ object datasets {
       * of the parent DataSetParameter element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetObjectConstraint]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetObjectConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetObjectConstraint]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetObjectConstraint.structureTypeName")
@@ -384,21 +384,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetObjectConstraint.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetParameter")
   @js.native
   open class DataSetParameter protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetParameter {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetParameter {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetParameter {
@@ -413,7 +413,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter]
     
     /**
       * Creates and returns a new DataSetParameter instance in the SDK and on the server.
@@ -421,7 +421,7 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameter]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSet): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetParameter.structureTypeName")
@@ -432,21 +432,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetParameter.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DataSetParameterAccess")
   @js.native
   open class DataSetParameterAccess protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetParameterAccess {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetParameterAccess {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetParameterAccess {
@@ -461,7 +461,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameterAccess]
     
     /**
       * Creates and returns a new DataSetParameterAccess instance in the SDK and on the server.
@@ -469,7 +469,7 @@ object datasets {
       * of the parent DataSetModuleRoleAccess element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSetModuleRoleAccess): typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.DataSetParameterAccess]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetModuleRoleAccess): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameterAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameterAccess]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetParameterAccess.structureTypeName")
@@ -480,21 +480,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetParameterAccess.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk", "datasets.DataSetParameterConstraint")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "datasets.DataSetParameterConstraint")
   @js.native
-  abstract class DataSetParameterConstraint protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetParameterConstraint {
+  open class DataSetParameterConstraint protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetParameterConstraint {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetParameterConstraint {
@@ -512,21 +512,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetParameterConstraint.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mendixmodelsdk", "datasets.DataSetSource")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "datasets.DataSetSource")
   @js.native
-  abstract class DataSetSource protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DataSetSource {
+  open class DataSetSource protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DataSetSource {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DataSetSource {
@@ -544,14 +544,14 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DataSetSource.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength")
   @js.native
   open class DateTimeIntervalLength protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DateTimeIntervalLength {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DateTimeIntervalLength {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object DateTimeIntervalLength {
@@ -563,44 +563,44 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength.Day")
     @js.native
-    def Day: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength = js.native
-    inline def Day_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
+    def Day: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength = js.native
+    inline def Day_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength.Month")
     @js.native
-    def Month: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength = js.native
-    inline def Month_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
+    def Month: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength = js.native
+    inline def Month_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength.Period")
     @js.native
-    def Period: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength = js.native
-    inline def Period_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Period")(x.asInstanceOf[js.Any])
+    def Period: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength = js.native
+    inline def Period_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Period")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength.Quarter")
     @js.native
-    def Quarter: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength = js.native
-    inline def Quarter_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quarter")(x.asInstanceOf[js.Any])
+    def Quarter: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength = js.native
+    inline def Quarter_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Quarter")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength.Week")
     @js.native
-    def Week: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength = js.native
-    inline def Week_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
+    def Week: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength = js.native
+    inline def Week_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalLength.Year")
     @js.native
-    def Year: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength = js.native
-    inline def Year_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
+    def Year: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength = js.native
+    inline def Year_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalLength): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier")
   @js.native
   open class DateTimeIntervalModifier protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.DateTimeIntervalModifier {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.DateTimeIntervalModifier {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object DateTimeIntervalModifier {
@@ -612,51 +612,51 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier.Always")
     @js.native
-    def Always: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier = js.native
-    inline def Always_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Always")(x.asInstanceOf[js.Any])
+    def Always: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier = js.native
+    inline def Always_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Always")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier.Future")
     @js.native
-    def Future: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier = js.native
-    inline def Future_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Future")(x.asInstanceOf[js.Any])
+    def Future: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier = js.native
+    inline def Future_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Future")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier.Last")
     @js.native
-    def Last: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier = js.native
-    inline def Last_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
+    def Last: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier = js.native
+    inline def Last_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier.Next")
     @js.native
-    def Next: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier = js.native
-    inline def Next_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Next")(x.asInstanceOf[js.Any])
+    def Next: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier = js.native
+    inline def Next_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Next")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier.Past")
     @js.native
-    def Past: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier = js.native
-    inline def Past_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Past")(x.asInstanceOf[js.Any])
+    def Past: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier = js.native
+    inline def Past_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Past")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.DateTimeIntervalModifier.This")
     @js.native
-    def This: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier = js.native
-    inline def This_=(x: typings.mendixmodelsdk.datasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("This")(x.asInstanceOf[js.Any])
+    def This: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier = js.native
+    inline def This_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DateTimeIntervalModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("This")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.JavaDataSetSource")
   @js.native
   open class JavaDataSetSource protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.JavaDataSetSource {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.JavaDataSetSource {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object JavaDataSetSource {
@@ -671,7 +671,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.JavaDataSetSource]
     
     /**
       * Creates and returns a new JavaDataSetSource instance in the SDK and on the server.
@@ -679,7 +679,7 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.JavaDataSetSource]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSet): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.JavaDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.JavaDataSetSource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.JavaDataSetSource.structureTypeName")
@@ -690,21 +690,21 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.JavaDataSetSource.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "datasets.OqlDataSetSource")
   @js.native
   open class OqlDataSetSource protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.datasets.OqlDataSetSource {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.datasets.OqlDataSetSource {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object OqlDataSetSource {
@@ -719,7 +719,7 @@ object datasets {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.OqlDataSetSource]
     
     /**
       * Creates and returns a new OqlDataSetSource instance in the SDK and on the server.
@@ -727,7 +727,7 @@ object datasets {
       * of the parent DataSet element passed as argument.
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.datasetsMod.datasets.DataSet): typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.datasetsMod.datasets.OqlDataSetSource]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSet): typings.mendixmodelsdk.srcGenDatasetsMod.datasets.OqlDataSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDatasetsMod.datasets.OqlDataSetSource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.OqlDataSetSource.structureTypeName")
@@ -738,7 +738,7 @@ object datasets {
     /* static member */
     @JSImport("mendixmodelsdk", "datasets.OqlDataSetSource.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.datasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenDatasetsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

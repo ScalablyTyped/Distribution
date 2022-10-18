@@ -1,7 +1,7 @@
 package typings.antd.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antd.progressProgressMod.ProgressGradient
+import typings.antd.libProgressProgressMod.ProgressGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

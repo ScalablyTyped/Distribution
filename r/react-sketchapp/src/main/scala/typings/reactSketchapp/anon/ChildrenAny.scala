@@ -8,7 +8,7 @@ trait ChildrenAny extends StObject {
   
   var children: Any
   
-  var style: js.UndefOr[typings.reactSketchapp.stylesheetTypesMod.Style] = js.undefined
+  var style: js.UndefOr[typings.reactSketchapp.libModuleStylesheetTypesMod.Style] = js.undefined
 }
 object ChildrenAny {
   
@@ -21,7 +21,7 @@ object ChildrenAny {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: typings.reactSketchapp.stylesheetTypesMod.Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: typings.reactSketchapp.libModuleStylesheetTypesMod.Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

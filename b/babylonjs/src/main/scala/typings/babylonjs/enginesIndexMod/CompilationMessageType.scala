@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CompilationMessageType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.CompilationMessageType & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompilationMessageType & String
+  ] = js.native
   
-  /* "error" */ val Error: typings.babylonjs.webgpuConstantsMod.CompilationMessageType.Error & String = js.native
+  /* "error" */ val Error: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompilationMessageType.Error & String = js.native
   
-  /* "info" */ val Info: typings.babylonjs.webgpuConstantsMod.CompilationMessageType.Info & String = js.native
+  /* "info" */ val Info: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompilationMessageType.Info & String = js.native
   
-  /* "warning" */ val Warning: typings.babylonjs.webgpuConstantsMod.CompilationMessageType.Warning & String = js.native
+  /* "warning" */ val Warning: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.CompilationMessageType.Warning & String = js.native
 }

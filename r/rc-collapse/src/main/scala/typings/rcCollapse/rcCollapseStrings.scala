@@ -1,6 +1,6 @@
 package typings.rcCollapse
 
-import typings.rcCollapse.interfaceMod.CollapsibleType
+import typings.rcCollapse.esInterfaceMod.CollapsibleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

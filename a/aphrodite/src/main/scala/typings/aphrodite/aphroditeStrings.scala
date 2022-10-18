@@ -1,6 +1,6 @@
 package typings.aphrodite
 
-import typings.aphrodite.cssPropertiesMod.CSSWideKeyword
+import typings.aphrodite.typingsCssPropertiesMod.CSSWideKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -238,14 +238,6 @@ object aphroditeStrings {
   @js.native
   sealed trait Colonvisited extends StObject
   inline def Colonvisited: Colonvisited = ":visited".asInstanceOf[Colonvisited]
-  
-  @js.native
-  sealed trait StyleDeclaration extends StObject
-  inline def StyleDeclaration: StyleDeclaration = "StyleDeclaration".asInstanceOf[StyleDeclaration]
-  
-  @js.native
-  sealed trait StyleSheetStatic extends StObject
-  inline def StyleSheetStatic: StyleSheetStatic = "StyleSheetStatic".asInstanceOf[StyleSheetStatic]
   
   @js.native
   sealed trait absolute extends StObject

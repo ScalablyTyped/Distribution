@@ -1,24 +1,30 @@
 package typings.tuyaPanelKit.anon
 
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `2`[Data] extends StObject {
+trait `2` extends StObject {
   
-  val data: js.UndefOr[Data] = js.undefined
+  /**
+    * The updated state object after the state change.
+    */
+  var state: js.UndefOr[NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]] = js.undefined
 }
 object `2` {
   
-  inline def apply[Data](): `2`[Data] = {
+  inline def apply(): `2` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`2`[Data]]
+    __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`[?], Data](x: Self & `2`[Data]) {
+  extension [Self <: `2`](x: Self) {
     
-    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setState(value: NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

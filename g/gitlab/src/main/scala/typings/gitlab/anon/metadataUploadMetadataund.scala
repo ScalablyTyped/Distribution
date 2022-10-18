@@ -1,6 +1,6 @@
 package typings.gitlab.anon
 
-import typings.gitlab.projectImportExportMod.UploadMetadata
+import typings.gitlab.distTypesCoreServicesProjectImportExportMod.UploadMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

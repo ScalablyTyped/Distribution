@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RatingSize extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.ratingTypesMod.RatingSize & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsRatingRatingDottypesMod.RatingSize & Double
+  ] = js.native
   
-  /* 1 */ val Large: typings.officeUiFabricReact.ratingTypesMod.RatingSize.Large & Double = js.native
+  /* 1 */ val Large: typings.officeUiFabricReact.libComponentsRatingRatingDottypesMod.RatingSize.Large & Double = js.native
   
-  /* 0 */ val Small: typings.officeUiFabricReact.ratingTypesMod.RatingSize.Small & Double = js.native
+  /* 0 */ val Small: typings.officeUiFabricReact.libComponentsRatingRatingDottypesMod.RatingSize.Small & Double = js.native
 }

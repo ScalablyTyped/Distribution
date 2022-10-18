@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.textureCreationOptionsMod.TextureSize
+import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.TextureSize
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ProceduralTexture")
 @js.native
 open class ProceduralTexture protected ()
-  extends typings.babylonjs.legacyMod.ProceduralTexture {
+  extends typings.babylonjs.legacyLegacyMod.ProceduralTexture {
   /**
     * Instantiates a new procedural texture.
     * Procedural texturing is a way to programmatically create a texture. There are 2 types of procedural textures: code-only, and code that references some classic 2D images, sometimes called 'refMaps' or 'sampler' images.
@@ -30,7 +30,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture]
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture]
   ) = this()
   def this(
     name: String,
@@ -45,7 +45,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Boolean
   ) = this()
   def this(
@@ -71,7 +71,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Boolean,
     isCube: Boolean
   ) = this()
@@ -80,7 +80,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Unit,
     isCube: Boolean
   ) = this()
@@ -129,7 +129,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Boolean,
     isCube: Boolean,
     textureType: Double
@@ -139,7 +139,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Boolean,
     isCube: Unit,
     textureType: Double
@@ -149,7 +149,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Unit,
     isCube: Boolean,
     textureType: Double
@@ -159,7 +159,7 @@ open class ProceduralTexture protected ()
     size: TextureSize,
     fragment: Any,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: Nullable[typings.babylonjs.textureMod.Texture],
+    fallbackTexture: Nullable[typings.babylonjs.materialsTexturesTextureMod.Texture],
     generateMipMaps: Unit,
     isCube: Unit,
     textureType: Double

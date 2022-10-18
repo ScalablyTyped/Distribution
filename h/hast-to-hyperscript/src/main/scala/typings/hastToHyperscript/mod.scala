@@ -2,7 +2,7 @@ package typings.hastToHyperscript
 
 import typings.hastToHyperscript.hastToHyperscriptStrings.html
 import typings.hastToHyperscript.hastToHyperscriptStrings.svg
-import typings.propertyInformation.schemaMod.Schema
+import typings.propertyInformation.libUtilSchemaMod.Schema
 import typings.std.ReturnType
 import typings.unistUtilIs.mod.AssertPredicate
 import org.scalablytyped.runtime.StObject

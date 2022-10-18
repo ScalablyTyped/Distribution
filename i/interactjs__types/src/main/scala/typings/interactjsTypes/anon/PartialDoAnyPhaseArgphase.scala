@@ -1,10 +1,10 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactEventMod.EventPhase
-import typings.interactjsTypes.interactEventMod.InteractEvent
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.Point
-import typings.interactjsTypes.typesMod.PointerEventType
+import typings.interactjsTypes.coreInteractEventMod.EventPhase
+import typings.interactjsTypes.coreInteractEventMod.InteractEvent
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.coreTypesMod.PointerEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait PartialDoAnyPhaseArgphase extends StObject {
   
   var iEvent: js.UndefOr[InteractEvent[ActionName, EventPhase]] = js.undefined
   
-  var interaction: js.UndefOr[typings.interactjsTypes.interactionMod.Interaction[ActionName]] = js.undefined
+  var interaction: js.UndefOr[typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] = js.undefined
   
   var modifiedCoords: js.UndefOr[Point] = js.undefined
   
@@ -45,7 +45,7 @@ object PartialDoAnyPhaseArgphase {
     
     inline def setIEventUndefined: Self = StObject.set(x, "iEvent", js.undefined)
     
-    inline def setInteraction(value: typings.interactjsTypes.interactionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     

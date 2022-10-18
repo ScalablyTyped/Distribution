@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsMoneyCollectTwoToneMod.MoneyCollectTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moneyCollectTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/MoneyCollectTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/MoneyCollectTwoTone", JSImport.Default)
   @js.native
   val default: MoneyCollectTwoToneIconType = js.native
-  
-  @js.native
-  trait MoneyCollectTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_MoneyCollectTwoToneIconType: String = js.native
-  }
   
   type _To = MoneyCollectTwoToneIconType
   

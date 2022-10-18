@@ -1,12 +1,9 @@
 package typings.pkgjsParseargs
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.pkgjsParseargs.anon.IndexKind
 import typings.pkgjsParseargs.anon.Kind
-import typings.pkgjsParseargs.anon.Name
 import typings.pkgjsParseargs.anon.Positionals
-import typings.pkgjsParseargs.anon.Tokens
 import typings.pkgjsParseargs.anon.Values
 import typings.pkgjsParseargs.pkgjsParseargsStrings.boolean
 import typings.pkgjsParseargs.pkgjsParseargsStrings.string
@@ -24,12 +21,20 @@ object mod {
   
   type ExtractOptionValue[T /* <: ParseArgsConfig */, O /* <: ParseArgsOptionConfig */] = IfDefaultsTrue[
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
-    String | Boolean, 
+    /* import warning: importer.ImportType#apply Failed type conversion: O['type'] extends 'string' ? string : O['type'] extends 'boolean' ? boolean : string | boolean */ js.Any, 
     String | Boolean
   ]
   
   // we put the `extends false` condition first here because `undefined` compares like `any` when `strictNullChecks: false`
-  type IfDefaultsFalse[T, IfTrue, IfFalse] = IfFalse | IfTrue
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends false ? IfFalse : T extends true ? IfTrue : IfFalse
+    }}}
+    */
+  @js.native
+  trait IfDefaultsFalse[T, IfTrue, IfFalse] extends StObject
   
   /*
   IfDefaultsTrue and IfDefaultsFalse are helpers to handle default values for missing boolean properties.
@@ -40,25 +45,33 @@ object mod {
   This is technically incorrect but is a much nicer UX for the common case.
   The IfDefaultsTrue version is for things which default to true; the IfDefaultsFalse version is for things which default to false.
   */
-  type IfDefaultsTrue[T, IfTrue, IfFalse] = IfTrue | IfFalse
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends true ? IfTrue : T extends false ? IfFalse : IfTrue
+    }}}
+    */
+  @js.native
+  trait IfDefaultsTrue[T, IfTrue, IfFalse] extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - typings.pkgjsParseargs.anon.RawName
-    - typings.pkgjsParseargs.anon.Value
+    - typings.pkgjsParseargs.anon.Index
+    - typings.pkgjsParseargs.anon.InlineValue
   */
   trait OptionToken
     extends StObject
        with Token
   object OptionToken {
     
-    inline def RawName(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.RawName = {
+    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.RawName]
+      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Index]
     }
     
-    inline def Value(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.Value = {
+    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Value]
+      __obj.asInstanceOf[typings.pkgjsParseargs.anon.InlineValue]
     }
   }
   
@@ -178,7 +191,15 @@ object mod {
   
   // If ParseArgsConfig extends T, then the user passed config constructed elsewhere.
   // So we can't rely on the `"not definitely present" implies "definitely not present"` assumption mentioned above.
-  type ParsedResults[T /* <: ParseArgsConfig */] = PreciseParsedResults[T] | Tokens
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    @pkgjs/parseargs.@pkgjs/parseargs.ParseArgsConfig extends T ? {  values :{[longOption: string] : undefined | string | boolean | std.Array<string | boolean>},   positionals :std.Array<string>,   tokens :std.Array<@pkgjs/parseargs.@pkgjs/parseargs.Token> | undefined} : @pkgjs/parseargs.@pkgjs/parseargs.PreciseParsedResults<T>
+    }}}
+    */
+  @js.native
+  trait ParsedResults[T /* <: ParseArgsConfig */] extends StObject
   
   type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind]
   
@@ -186,9 +207,7 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
     Any, 
     StringDictionary[js.UndefOr[String | Boolean]]
-  ]) & (js.Object | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ LongOption in keyof T['options'] ]: @pkgjs/parseargs.@pkgjs/parseargs.IfDefaultsFalse<T['options'][LongOption]['multiple'], undefined | std.Array<@pkgjs/parseargs.@pkgjs/parseargs.ExtractOptionValue<T, T['options'][LongOption]>>, undefined | @pkgjs/parseargs.@pkgjs/parseargs.ExtractOptionValue<T, T['options'][LongOption]>>}
-    */ typings.pkgjsParseargs.pkgjsParseargsStrings.ParsedValues & TopLevel[Any]))
+  ]) & (/* import warning: importer.ImportType#apply Failed type conversion: T['options'] extends @pkgjs/parseargs.@pkgjs/parseargs.ParseArgsOptionsConfig ? {-readonly [ LongOption in keyof T['options'] ]: @pkgjs/parseargs.@pkgjs/parseargs.IfDefaultsFalse<T['options'][LongOption]['multiple'], undefined | std.Array<@pkgjs/parseargs.@pkgjs/parseargs.ExtractOptionValue<T, T['options'][LongOption]>>, undefined | @pkgjs/parseargs.@pkgjs/parseargs.ExtractOptionValue<T, T['options'][LongOption]>>} : {} */ js.Any)
   
   type PreciseParsedResults[T /* <: ParseArgsConfig */] = IfDefaultsFalse[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tokens'] */ js.Any, 
@@ -196,12 +215,15 @@ object mod {
     Values[T]
   ]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.pkgjsParseargs.mod.OptionToken & typings.pkgjsParseargs.anon.Name[K]
-    - typings.pkgjsParseargs.anon.InlineValue[K]
-    - typings.pkgjsParseargs.anon.Index[K]
-  */
-  type PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] = (_PreciseTokenForOptions[K, O]) | (OptionToken & Name[K])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O['type'] extends 'string' ? {  kind :'option',   index :number,   name :K,   rawName :string,   value :string,   inlineValue :boolean} : O['type'] extends 'boolean' ? {  kind :'option',   index :number,   name :K,   rawName :string,   value :undefined,   inlineValue :undefined} : @pkgjs/parseargs.@pkgjs/parseargs.OptionToken & {  name :K}
+    }}}
+    */
+  @js.native
+  trait PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.pkgjsParseargs.mod.OptionToken
@@ -211,43 +233,34 @@ object mod {
   trait Token extends StObject
   object Token {
     
+    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.Index = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Index]
+    }
+    
     inline def IndexKind(index: Double): typings.pkgjsParseargs.anon.IndexKind = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
       __obj.asInstanceOf[typings.pkgjsParseargs.anon.IndexKind]
+    }
+    
+    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.InlineValue = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.pkgjsParseargs.anon.InlineValue]
     }
     
     inline def Kind(index: Double, value: String): typings.pkgjsParseargs.anon.Kind = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pkgjsParseargs.anon.Kind]
     }
-    
-    inline def RawName(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.pkgjsParseargs.anon.RawName = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.RawName]
-    }
-    
-    inline def Value(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.pkgjsParseargs.anon.Value = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Value]
-    }
   }
   
-  type TokenForOptions[T /* <: ParseArgsConfig */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['options'] */ js.Any */] = OptionToken | (PreciseTokenForOptions[
-    K & String, 
-    /* import warning: importer.ImportType#apply Failed type conversion: T['options'][K] */ js.Any
-  ])
-  
-  trait _PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] extends StObject
-  object _PreciseTokenForOptions {
-    
-    inline def Index[K /* <: String */](index: Double, inlineValue: Boolean, name: K, rawName: String, value: String): typings.pkgjsParseargs.anon.Index[K] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.Index[K]]
-    }
-    
-    inline def InlineValue[K /* <: String */](index: Double, inlineValue: Unit, name: K, rawName: String, value: Unit): typings.pkgjsParseargs.anon.InlineValue[K] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.pkgjsParseargs.anon.InlineValue[K]]
-    }
-  }
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends unknown ? T['options'] extends @pkgjs/parseargs.@pkgjs/parseargs.ParseArgsOptionsConfig ? @pkgjs/parseargs.@pkgjs/parseargs.PreciseTokenForOptions<K & string, T['options'][K]> : @pkgjs/parseargs.@pkgjs/parseargs.OptionToken : never
+    }}}
+    */
+  @js.native
+  trait TokenForOptions[T /* <: ParseArgsConfig */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['options'] */ js.Any */] extends StObject
 }

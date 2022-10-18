@@ -28,31 +28,31 @@ open class SolidParticle protected ()
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem
   ) = this()
   def this(
     particleIndex: Double,
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
-    modelBoundingInfo: Nullable[typings.babylonjs.boundingInfoMod.BoundingInfo]
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem,
+    modelBoundingInfo: Nullable[typings.babylonjs.cullingBoundingInfoMod.BoundingInfo]
   ) = this()
   def this(
     particleIndex: Double,
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem,
     modelBoundingInfo: Unit,
     materialIndex: Nullable[Double]
   ) = this()
@@ -61,11 +61,11 @@ open class SolidParticle protected ()
     particleId: Double,
     positionIndex: Double,
     indiceIndex: Double,
-    model: Nullable[typings.babylonjs.solidParticleMod.ModelShape],
+    model: Nullable[typings.babylonjs.particlesSolidParticleMod.ModelShape],
     shapeId: Double,
     idxInShape: Double,
-    sps: typings.babylonjs.solidParticleSystemMod.SolidParticleSystem,
-    modelBoundingInfo: Nullable[typings.babylonjs.boundingInfoMod.BoundingInfo],
+    sps: typings.babylonjs.particlesSolidParticleSystemMod.SolidParticleSystem,
+    modelBoundingInfo: Nullable[typings.babylonjs.cullingBoundingInfoMod.BoundingInfo],
     materialIndex: Nullable[Double]
   ) = this()
 }

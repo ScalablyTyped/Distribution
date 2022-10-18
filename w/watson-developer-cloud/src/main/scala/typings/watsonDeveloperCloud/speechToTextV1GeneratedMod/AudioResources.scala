@@ -24,7 +24,7 @@ object AudioResources {
     
     inline def setAudio(value: js.Array[AudioResource]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    inline def setAudioVarargs(value: AudioResource*): Self = StObject.set(x, "audio", js.Array(value :_*))
+    inline def setAudioVarargs(value: AudioResource*): Self = StObject.set(x, "audio", js.Array(value*))
     
     inline def setTotal_minutes_of_audio(value: Double): Self = StObject.set(x, "total_minutes_of_audio", value.asInstanceOf[js.Any])
   }

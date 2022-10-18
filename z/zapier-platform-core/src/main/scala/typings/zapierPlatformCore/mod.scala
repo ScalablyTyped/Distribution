@@ -1,11 +1,11 @@
 package typings.zapierPlatformCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.std.Console
 import typings.std.Partial
-import typings.std.ReadableStream
 import typings.zapierPlatformCore.anon.Body
 import typings.zapierPlatformCore.anon.CustomStoreKey
 import typings.zapierPlatformCore.anon.Error
@@ -222,7 +222,7 @@ object mod {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -265,7 +265,7 @@ object mod {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -372,7 +372,7 @@ object mod {
     extends StObject
        with BaseHttpResponse {
     
-    var body: ReadableStream[Any]
+    var body: ReadableStream
     
     var content: Buffer
     
@@ -381,7 +381,7 @@ object mod {
   object RawHttpResponse {
     
     inline def apply(
-      body: ReadableStream[Any],
+      body: ReadableStream,
       content: Buffer,
       getHeader: String => js.UndefOr[String],
       headers: StringDictionary[String],
@@ -397,7 +397,7 @@ object mod {
     
     extension [Self <: RawHttpResponse](x: Self) {
       
-      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -464,6 +464,14 @@ object mod {
       * turns a file or request into a file into a publicly accessible url
       */
     def stashFile(input: js.Promise[RawHttpResponse | String]): String = js.native
+    def stashFile(input: ReadableStream): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Double): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Double, filename: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Double, filename: String, contentType: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Double, filename: Unit, contentType: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Unit, filename: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Unit, filename: String, contentType: String): String = js.native
+    def stashFile(input: ReadableStream, knownLength: Unit, filename: Unit, contentType: String): String = js.native
     def stashFile(input: Buffer): String = js.native
     def stashFile(input: Buffer, knownLength: Double): String = js.native
     def stashFile(input: Buffer, knownLength: Double, filename: String): String = js.native
@@ -472,13 +480,5 @@ object mod {
     def stashFile(input: Buffer, knownLength: Unit, filename: String): String = js.native
     def stashFile(input: Buffer, knownLength: Unit, filename: String, contentType: String): String = js.native
     def stashFile(input: Buffer, knownLength: Unit, filename: Unit, contentType: String): String = js.native
-    def stashFile(input: ReadableStream[Any]): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Double): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Double, filename: String): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Double, filename: String, contentType: String): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Double, filename: Unit, contentType: String): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Unit, filename: String): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Unit, filename: String, contentType: String): String = js.native
-    def stashFile(input: ReadableStream[Any], knownLength: Unit, filename: Unit, contentType: String): String = js.native
   }
 }

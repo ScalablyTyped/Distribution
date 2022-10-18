@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object chips {
   
+  @JSImport("material-components-web", "chips.default")
+  @js.native
+  open class default ()
+    extends typings.materialChips.deprecatedMod.default {
+    def this(adapter: PartialMDCChipSetAdapterAnnounceMessage) = this()
+  }
+  
   @JSImport("material-components-web", "chips.MDCChip")
   @js.native
   open class MDCChip protected ()
@@ -73,7 +80,7 @@ object chips {
     def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
-      foundation: typings.materialChips.trailingactionFoundationMod.MDCChipTrailingActionFoundation,
+      foundation: typings.materialChips.deprecatedTrailingactionFoundationMod.MDCChipTrailingActionFoundation,
       args: Any*
     ) = this()
   }
@@ -84,7 +91,7 @@ object chips {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: typings.std.Element): typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction]
+    inline def attachTo(root: typings.std.Element): typings.materialChips.deprecatedTrailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.deprecatedTrailingactionComponentMod.MDCChipTrailingAction]
   }
   
   @JSImport("material-components-web", "chips.MDCChipTrailingActionFoundation")

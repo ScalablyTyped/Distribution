@@ -11,10 +11,6 @@ object cadespluginStrings {
   inline def AddressBook: AddressBook = "AddressBook".asInstanceOf[AddressBook]
   
   @js.native
-  sealed trait Async extends StObject
-  inline def Async: Async = "Async".asInstanceOf[Async]
-  
-  @js.native
   sealed trait CAPICOMDotStore extends StObject
   inline def CAPICOMDotStore: CAPICOMDotStore = "CAPICOM.Store".asInstanceOf[CAPICOMDotStore]
   
@@ -57,10 +53,6 @@ object cadespluginStrings {
   @js.native
   sealed trait My extends StObject
   inline def My: My = "My".asInstanceOf[My]
-  
-  @js.native
-  sealed trait PromisifiedFunction extends StObject
-  inline def PromisifiedFunction: PromisifiedFunction = "PromisifiedFunction".asInstanceOf[PromisifiedFunction]
   
   @js.native
   sealed trait Root extends StObject

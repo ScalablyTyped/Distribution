@@ -5,13 +5,13 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectContracts.anon.Nonce
 import typings.ethersprojectContracts.anon.Object
 import typings.ethersprojectContracts.mod.ContractInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethers", "ContractFactory")
 @js.native
-class ContractFactory protected ()
+open class ContractFactory protected ()
   extends typings.ethersprojectContracts.mod.ContractFactory {
   def this(contractInterface: ContractInterface, bytecode: BytesLike) = this()
   def this(contractInterface: ContractInterface, bytecode: Object) = this()
@@ -27,21 +27,23 @@ class ContractFactory protected ()
   ) = this()
 }
 /* static members */
-@JSImport("ethers", "ContractFactory")
-@js.native
-object ContractFactory extends js.Object {
+object ContractFactory {
   
-  def fromSolidity(compilerOutput: js.Any): typings.ethersprojectContracts.mod.ContractFactory = js.native
-  def fromSolidity(compilerOutput: js.Any, signer: typings.ethersprojectAbstractSigner.mod.Signer): typings.ethersprojectContracts.mod.ContractFactory = js.native
+  @JSImport("ethers", "ContractFactory")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def getContract(address: String, contractInterface: ContractInterface): typings.ethersprojectContracts.mod.Contract = js.native
-  def getContract(
+  inline def fromSolidity(compilerOutput: Any): typings.ethersprojectContracts.mod.ContractFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSolidity")(compilerOutput.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectContracts.mod.ContractFactory]
+  inline def fromSolidity(compilerOutput: Any, signer: typings.ethersprojectAbstractSigner.mod.Signer): typings.ethersprojectContracts.mod.ContractFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSolidity")(compilerOutput.asInstanceOf[js.Any], signer.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectContracts.mod.ContractFactory]
+  
+  inline def getContract(address: String, contractInterface: ContractInterface): typings.ethersprojectContracts.mod.Contract = (^.asInstanceOf[js.Dynamic].applyDynamic("getContract")(address.asInstanceOf[js.Any], contractInterface.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectContracts.mod.Contract]
+  inline def getContract(
     address: String,
     contractInterface: ContractInterface,
     signer: typings.ethersprojectAbstractSigner.mod.Signer
-  ): typings.ethersprojectContracts.mod.Contract = js.native
+  ): typings.ethersprojectContracts.mod.Contract = (^.asInstanceOf[js.Dynamic].applyDynamic("getContract")(address.asInstanceOf[js.Any], contractInterface.asInstanceOf[js.Any], signer.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectContracts.mod.Contract]
   
-  def getContractAddress(tx: Nonce): String = js.native
+  inline def getContractAddress(tx: Nonce): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContractAddress")(tx.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  def getInterface(contractInterface: ContractInterface): Interface = js.native
+  inline def getInterface(contractInterface: ContractInterface): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("getInterface")(contractInterface.asInstanceOf[js.Any]).asInstanceOf[Interface]
 }

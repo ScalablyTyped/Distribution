@@ -3,8 +3,8 @@ package typings.reactSortableTree.mod
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
-import typings.reactDnd.typesConnectorsMod.ConnectDropTarget
-import typings.reactDnd.typesConnectorsMod.ConnectableElement
+import typings.reactDnd.distTypesConnectorsMod.ConnectDropTarget
+import typings.reactDnd.distTypesConnectorsMod.ConnectableElement
 import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject

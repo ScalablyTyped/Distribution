@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.checkboxMod.CheckboxProps
+import typings.primereact.checkboxCheckboxMod.CheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Checkbox")
 @js.native
 open class Checkbox protected ()
-  extends typings.primereact.checkboxMod.Checkbox {
+  extends typings.primereact.checkboxCheckboxMod.Checkbox {
   def this(props: CheckboxProps) = this()
   /**
     * @deprecated

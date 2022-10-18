@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.Disabled
-import typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps
-import typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps
+import typings.officeUiFabricReact.libUtilitiesButtonGridButtonGridCellDottypesMod.IButtonGridCellProps
+import typings.officeUiFabricReact.libUtilitiesButtonGridButtonGridDottypesMod.IButtonGridProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object libButtonGridMod {
   @JSImport("office-ui-fabric-react/lib/ButtonGrid", "ButtonGridCell")
   @js.native
   open class ButtonGridCell[T, P /* <: IButtonGridCellProps[T] */] protected ()
-    extends typings.officeUiFabricReact.buttonGridMod.ButtonGridCell[T, P] {
+    extends typings.officeUiFabricReact.libUtilitiesButtonGridMod.ButtonGridCell[T, P] {
     def this(props: P) = this()
     /**
       * @deprecated
@@ -46,7 +46,7 @@ object libButtonGridMod {
   @JSImport("office-ui-fabric-react/lib/ButtonGrid", "GridCell")
   @js.native
   open class GridCell[T, P /* <: IButtonGridCellProps[/* import warning: RewrittenClass.unapply cls was tparam T */ Any] */] ()
-    extends typings.officeUiFabricReact.buttonGridCellMod.ButtonGridCell[T, P]
+    extends typings.officeUiFabricReact.libUtilitiesButtonGridButtonGridCellMod.ButtonGridCell[T, P]
   object GridCell {
     
     @JSImport("office-ui-fabric-react/lib/ButtonGrid", "GridCell")

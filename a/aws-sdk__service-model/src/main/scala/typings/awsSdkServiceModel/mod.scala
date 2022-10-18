@@ -1,8 +1,8 @@
 package typings.awsSdkServiceModel
 
-import typings.awsSdkBuildTypes.apiModelMod.ApiModel
-import typings.awsSdkBuildTypes.smokeTestModelMod.SmokeTestModel
-import typings.awsSdkBuildTypes.treeModelMod.TreeModel
+import typings.awsSdkBuildTypes.buildApiModelMod.ApiModel
+import typings.awsSdkBuildTypes.buildSmokeTestModelMod.SmokeTestModel
+import typings.awsSdkBuildTypes.buildTreeModelMod.TreeModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

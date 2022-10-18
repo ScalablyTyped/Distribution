@@ -1,6 +1,6 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalBrowser.eventMessageMod.EventMessage
+import typings.azureMsalBrowser.distEventEventMessageMod.EventMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-browser", "EventMessageUtils")
 @js.native
 open class EventMessageUtils ()
-  extends typings.azureMsalBrowser.eventMessageMod.EventMessageUtils
+  extends typings.azureMsalBrowser.distEventEventMessageMod.EventMessageUtils
 /* static members */
 object EventMessageUtils {
   
@@ -21,9 +21,9 @@ object EventMessageUtils {
     * @param message
     * @param currentStatus
     */
-  inline def getInteractionStatusFromEvent(message: EventMessage): typings.azureMsalBrowser.browserConstantsMod.InteractionStatus | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteractionStatusFromEvent")(message.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalBrowser.browserConstantsMod.InteractionStatus | Null]
+  inline def getInteractionStatusFromEvent(message: EventMessage): typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionStatus | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInteractionStatusFromEvent")(message.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionStatus | Null]
   inline def getInteractionStatusFromEvent(
     message: EventMessage,
-    currentStatus: typings.azureMsalBrowser.browserConstantsMod.InteractionStatus
-  ): typings.azureMsalBrowser.browserConstantsMod.InteractionStatus | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInteractionStatusFromEvent")(message.asInstanceOf[js.Any], currentStatus.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalBrowser.browserConstantsMod.InteractionStatus | Null]
+    currentStatus: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionStatus
+  ): typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionStatus | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInteractionStatusFromEvent")(message.asInstanceOf[js.Any], currentStatus.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionStatus | Null]
 }

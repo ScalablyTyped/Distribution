@@ -1,9 +1,9 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.cloudformationMod.ChangeSetNameOrId
-import typings.awsSdk.cloudformationMod.NextToken
-import typings.awsSdk.cloudformationMod.StackNameOrId
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsCloudformationMod.ChangeSetNameOrId
+import typings.awsSdk.clientsCloudformationMod.NextToken
+import typings.awsSdk.clientsCloudformationMod.StackNameOrId
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ trait DescribeChangeSetInputwai extends StObject {
   /**
     * A string (provided by the DescribeChangeSet response output) that identifies the next page of information that you want to retrieve.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.clientsCloudformationMod.NextToken] = js.undefined
   
   /**
     * If you specified the name of a change set, specify the stack name or ID (ARN) of the change set you want to describe.

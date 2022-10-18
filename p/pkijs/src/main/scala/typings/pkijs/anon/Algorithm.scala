@@ -9,7 +9,7 @@ trait Algorithm extends StObject {
   
   var algorithm: js.UndefOr[AlgorithmIdentifierSchema] = js.undefined
   
-  var publicKey: js.UndefOr[String] = js.undefined
+  var subjectPublicKey: js.UndefOr[String] = js.undefined
 }
 object Algorithm {
   
@@ -24,8 +24,8 @@ object Algorithm {
     
     inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setSubjectPublicKey(value: String): Self = StObject.set(x, "subjectPublicKey", value.asInstanceOf[js.Any])
     
-    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setSubjectPublicKeyUndefined: Self = StObject.set(x, "subjectPublicKey", js.undefined)
   }
 }

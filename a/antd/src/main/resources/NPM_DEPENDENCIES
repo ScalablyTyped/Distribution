@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "antd" : "4.23.3"
+      "antd" : "4.23.6"
     }
   ],
   "test-dependencies" : [
     {
-      "antd" : "4.23.3"
+      "antd" : "4.23.6"
     }
   ],
   "compile-devDependencies" : [

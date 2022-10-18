@@ -205,7 +205,7 @@ object mod {
       Record[String, Any]
     ], 
     /* token */ js.UndefOr[Jwt], 
-    Secret | js.Promise[Secret]
+    js.UndefOr[Secret | js.Promise[js.UndefOr[Secret]]]
   ]
   
   type HapiCallback = js.Function3[/* err */ js.Error | Null, /* publicKey */ String, /* signingKey */ SigningKey, Unit]

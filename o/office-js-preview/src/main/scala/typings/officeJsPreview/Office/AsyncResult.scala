@@ -33,9 +33,9 @@ trait AsyncResult[T] extends StObject {
     *
     * *Supported errors*
     * <table>
-    *   <tr><th>`AsyncResult.error.name`            </th><th>`AsyncResult.error.message`                                                                       </th><th>Description of diagnostics object returned                                                                                          </th></tr>
-    *   <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object for the HTTP error code.            </td><td>The HTTP error code in a JSON object e.g., `{"HTTPCode":"401"}`                                                                     </td></tr>
-    *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., `{"ErrorText": "The mailbox database is temporarily unavailable"}`</td></tr>
+    *   <tr><th><code>AsyncResult.error.name</code> </th><th><code>AsyncResult.error.message</code>                                                            </th><th>Description of diagnostics object returned                                                                                                     </th></tr>
+    *   <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object for the HTTP error code.            </td><td>The HTTP error code in a JSON object e.g., <code>{"HTTPCode":"401"}</code>                                                                     </td></tr>
+    *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., <code>{"ErrorText": "The mailbox database is temporarily unavailable"}</code></td></tr>
     * </table>
     */
   var diagnostics: Any

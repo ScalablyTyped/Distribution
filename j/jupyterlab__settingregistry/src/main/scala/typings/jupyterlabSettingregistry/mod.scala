@@ -1,10 +1,10 @@
 package typings.jupyterlabSettingregistry
 
-import typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry.IOptions
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IMenu
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IMenuItem
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IShortcut
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IToolbarItem
+import typings.jupyterlabSettingregistry.libSettingregistryMod.SettingRegistry.IOptions
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IMenu
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IMenuItem
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IShortcut
+import typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry.IToolbarItem
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,16 +18,16 @@ object mod {
     * Instantiate a schema validator.
     */
   open class DefaultSchemaValidator ()
-    extends typings.jupyterlabSettingregistry.settingregistryMod.DefaultSchemaValidator
+    extends typings.jupyterlabSettingregistry.libSettingregistryMod.DefaultSchemaValidator
   
   @JSImport("@jupyterlab/settingregistry", "ISettingRegistry")
   @js.native
-  val ISettingRegistry: Token[typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry] = js.native
+  val ISettingRegistry: Token[typings.jupyterlabSettingregistry.libTokensMod.ISettingRegistry] = js.native
   
   @JSImport("@jupyterlab/settingregistry", "SettingRegistry")
   @js.native
   open class SettingRegistry protected ()
-    extends typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry {
+    extends typings.jupyterlabSettingregistry.libSettingregistryMod.SettingRegistry {
     /**
       * Create a new setting registry.
       */
@@ -129,10 +129,10 @@ object mod {
   @JSImport("@jupyterlab/settingregistry", "Settings")
   @js.native
   open class Settings protected ()
-    extends typings.jupyterlabSettingregistry.settingregistryMod.Settings {
+    extends typings.jupyterlabSettingregistry.libSettingregistryMod.Settings {
     /**
       * Instantiate a new plugin settings manager.
       */
-    def this(options: typings.jupyterlabSettingregistry.settingregistryMod.Settings.IOptions) = this()
+    def this(options: typings.jupyterlabSettingregistry.libSettingregistryMod.Settings.IOptions) = this()
   }
 }

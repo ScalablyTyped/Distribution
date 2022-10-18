@@ -1,6 +1,5 @@
 package typings.invertKv
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -13,9 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: Record[PropertyKey, PropertyKey] */](`object`: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T as T[P] ]: keyof T extends number? std.Exclude<keyof T, number> | string : P}
-    */ typings.invertKv.invertKvStrings.default & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T as T[P] ]: keyof T extends number? std.Exclude<keyof T, number> | string : P}
-    */ typings.invertKv.invertKvStrings.default & TopLevel[Any]]
+  inline def default[T /* <: Record[PropertyKey, PropertyKey] */](`object`: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T as T[P] ]: keyof T extends number? std.Exclude<keyof T, number> | string : P} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T as T[P] ]: keyof T extends number? std.Exclude<keyof T, number> | string : P} */ js.Any]
 }

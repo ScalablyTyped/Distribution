@@ -114,7 +114,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def convert[T /* <: Any */](a: T): T | Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(a.asInstanceOf[js.Any]).asInstanceOf[T | Point]
+  inline def convert[T /* <: Any */](a: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<number> ? @mapbox/point-geometry.@mapbox/point-geometry.Point : T extends @mapbox/point-geometry.@mapbox/point-geometry.Point ? @mapbox/point-geometry.@mapbox/point-geometry.Point : T */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(a.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<number> ? @mapbox/point-geometry.@mapbox/point-geometry.Point : T extends @mapbox/point-geometry.@mapbox/point-geometry.Point ? @mapbox/point-geometry.@mapbox/point-geometry.Point : T */ js.Any]
   
   trait Point extends StObject {
     

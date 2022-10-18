@@ -15,5 +15,5 @@ open class ThinTexture protected ()
     * This can be used as an internal texture wrapper in ThinEngine to benefit from the cache
     * @param internalTexture Define the internalTexture to wrap
     */
-  def this(internalTexture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture]) = this()
+  def this(internalTexture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]) = this()
 }

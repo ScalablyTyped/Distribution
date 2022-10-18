@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new alignment behavior.
   */
 open class AlignmentBehavior ()
-  extends typings.yuka.yukaMod.AlignmentBehavior
+  extends typings.yuka.srcYukaMod.AlignmentBehavior

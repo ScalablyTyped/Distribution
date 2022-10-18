@@ -1,9 +1,9 @@
 package typings.babylonjs.enginesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.mathVectorMod.Matrix
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.materialsUniformBufferMod.UniformBuffer
+import typings.babylonjs.mathsMathDotvectorMod.Matrix
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.uniformBufferMod.UniformBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

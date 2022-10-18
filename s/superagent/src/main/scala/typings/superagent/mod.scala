@@ -3,6 +3,8 @@ package typings.superagent
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.cookiejar.mod.CookieJar
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.ReadStream
 import typings.node.httpMod.Agent
@@ -11,9 +13,7 @@ import typings.node.streamMod.Writable
 import typings.std.Blob
 import typings.std.Error
 import typings.std.Promise
-import typings.std.ReadableStream
 import typings.std.Record
-import typings.std.WritableStream
 import typings.superagent.anon.ContentType
 import typings.superagent.anon.Deadline
 import typings.superagent.anon.Passphrase
@@ -187,8 +187,8 @@ object mod extends Shortcut {
     def pfx(cert: Buffer): this.type = js.native
     def pfx(cert: Passphrase): this.type = js.native
     
-    def pipe(stream: WritableStream[Any]): Writable = js.native
-    def pipe(stream: WritableStream[Any], options: js.Object): Writable = js.native
+    def pipe(stream: WritableStream): Writable = js.native
+    def pipe(stream: WritableStream, options: js.Object): Writable = js.native
     
     def query(`val`: String): this.type = js.native
     def query(`val`: js.Object): this.type = js.native
@@ -236,7 +236,7 @@ object mod extends Shortcut {
   @js.native
   trait Response
     extends StObject
-       with ReadableStream[Any] {
+       with ReadableStream {
     
     var accepted: Boolean = js.native
     

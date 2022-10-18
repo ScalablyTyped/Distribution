@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains basic information about a user. */
-@JSGlobal("Windows.System.KnownUserProperties")
+/* note: abstract class */ @JSGlobal("Windows.System.KnownUserProperties")
 @js.native
-abstract class KnownUserProperties ()
+open class KnownUserProperties ()
   extends StObject
      with typings.winrtUwp.Windows.System.KnownUserProperties
 object KnownUserProperties {

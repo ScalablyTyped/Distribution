@@ -1,6 +1,6 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.pluginTypesMod.ModPlatform
+import typings.expoConfigPlugins.buildPluginDottypesMod.ModPlatform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

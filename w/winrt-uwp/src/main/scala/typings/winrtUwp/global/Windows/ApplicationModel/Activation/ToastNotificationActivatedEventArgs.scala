@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an event that occurs when the app is activated because a user tapped on the body of a toast notification or performed an action inside a toast notification. */
-@JSGlobal("Windows.ApplicationModel.Activation.ToastNotificationActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.ToastNotificationActivatedEventArgs")
 @js.native
-abstract class ToastNotificationActivatedEventArgs ()
+open class ToastNotificationActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.ToastNotificationActivatedEventArgs {
   

@@ -12,5 +12,5 @@ open class FuzzyAND protected ()
     * Constructs a new fuzzy AND operator with the given values.
     * The constructor accepts and arbitrary amount of fuzzy terms.
     */
-  def this(terms: typings.yuka.fuzzyTermMod.FuzzyTerm*) = this()
+  def this(terms: typings.yuka.srcFuzzyFuzzyTermMod.FuzzyTerm*) = this()
 }

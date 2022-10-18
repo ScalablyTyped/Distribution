@@ -10,8 +10,7 @@ trait DeviceObject
   extends StObject
      with BaseObject
      with AdapterScopedObject
-     with AnyObject
-     with _InferGetObjectViewItemType[Any, Any] {
+     with AnyObject {
   
   @JSName("common")
   var common_DeviceObject: DeviceCommon

@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event that fires after the app was suspended for a file open picker operation. */
-@JSGlobal("Windows.ApplicationModel.Activation.FileOpenPickerContinuationEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.FileOpenPickerContinuationEventArgs")
 @js.native
-abstract class FileOpenPickerContinuationEventArgs ()
+open class FileOpenPickerContinuationEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.FileOpenPickerContinuationEventArgs {
   

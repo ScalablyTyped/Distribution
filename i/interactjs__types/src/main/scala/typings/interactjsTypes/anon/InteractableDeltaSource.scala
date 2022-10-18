@@ -1,15 +1,28 @@
 package typings.interactjsTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.interactjsTypes.dropPluginMod.DropzoneMethod
-import typings.interactjsTypes.dropPluginMod.DropzoneOptions
-import typings.interactjsTypes.gesturePluginMod.GesturableMethod
-import typings.interactjsTypes.gesturePluginMod.GesturableOptions
-import typings.interactjsTypes.interactEventMod.EventPhase
-import typings.interactjsTypes.interactEventMod.InteractEvent
-import typings.interactjsTypes.interactableMod.DeltaSource
-import typings.interactjsTypes.interactableMod.IgnoreValue
-import typings.interactjsTypes.interactjsDevToolsPluginMod.DevToolsOptions
+import typings.interactjsTypes.actionsDragPluginMod.DraggableMethod
+import typings.interactjsTypes.actionsDragPluginMod.DraggableOptions
+import typings.interactjsTypes.actionsDropPluginMod.DropzoneMethod
+import typings.interactjsTypes.actionsDropPluginMod.DropzoneOptions
+import typings.interactjsTypes.actionsGesturePluginMod.GesturableMethod
+import typings.interactjsTypes.actionsGesturePluginMod.GesturableOptions
+import typings.interactjsTypes.actionsResizePluginMod.ResizableMethod
+import typings.interactjsTypes.actionsResizePluginMod.ResizableOptions
+import typings.interactjsTypes.coreInteractEventMod.EventPhase
+import typings.interactjsTypes.coreInteractEventMod.InteractEvent
+import typings.interactjsTypes.coreInteractableMod.DeltaSource
+import typings.interactjsTypes.coreInteractableMod.IgnoreValue
+import typings.interactjsTypes.coreOptionsMod.OptionsArg
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.ActionProps
+import typings.interactjsTypes.coreTypesMod.Actions
+import typings.interactjsTypes.coreTypesMod.EventTypes
+import typings.interactjsTypes.coreTypesMod.ListenersArg
+import typings.interactjsTypes.coreTypesMod.OptionMethod
+import typings.interactjsTypes.coreTypesMod.OrBoolean
+import typings.interactjsTypes.coreTypesMod.PointerEventType
+import typings.interactjsTypes.devToolsPluginMod.DevToolsOptions
 import typings.interactjsTypes.interactjsTypesStrings.actionChecker
 import typings.interactjsTypes.interactjsTypesStrings.allowFrom
 import typings.interactjsTypes.interactjsTypesStrings.autoScroll
@@ -38,20 +51,7 @@ import typings.interactjsTypes.interactjsTypesStrings.pointerEvents
 import typings.interactjsTypes.interactjsTypesStrings.preventDefault
 import typings.interactjsTypes.interactjsTypesStrings.resize
 import typings.interactjsTypes.interactjsTypesStrings.styleCursor
-import typings.interactjsTypes.normalizeListenersMod.NormalizedListeners
-import typings.interactjsTypes.optionsMod.OptionsArg
-import typings.interactjsTypes.pluginMod.DraggableMethod
-import typings.interactjsTypes.pluginMod.DraggableOptions
-import typings.interactjsTypes.resizePluginMod.ResizableMethod
-import typings.interactjsTypes.resizePluginMod.ResizableOptions
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.ActionProps
-import typings.interactjsTypes.typesMod.Actions
-import typings.interactjsTypes.typesMod.EventTypes
-import typings.interactjsTypes.typesMod.ListenersArg
-import typings.interactjsTypes.typesMod.OptionMethod
-import typings.interactjsTypes.typesMod.OrBoolean
-import typings.interactjsTypes.typesMod.PointerEventType
+import typings.interactjsTypes.utilsNormalizeListenersMod.NormalizedListeners
 import typings.std.NonNullable
 import typings.std.Partial
 import typings.std.ReturnType
@@ -73,7 +73,7 @@ trait InteractableDeltaSource extends StObject {
     newValue: Any
   ): Any = js.native
   
-  val _context: typings.interactjsTypes.typesMod.Context = js.native
+  val _context: typings.interactjsTypes.coreTypesMod.Context = js.native
   
   val _doc: typings.std.Document = js.native
   
@@ -104,7 +104,7 @@ trait InteractableDeltaSource extends StObject {
     *
     * @return {Node} The context Node of this Interactable
     */
-  def context(): typings.interactjsTypes.typesMod.Context = js.native
+  def context(): typings.interactjsTypes.coreTypesMod.Context = js.native
   
   /**
     * Returns or sets the mouse coordinate types used to calculate the
@@ -132,8 +132,8 @@ trait InteractableDeltaSource extends StObject {
     dragEvent: InteractEvent[scala.Nothing, EventPhase],
     event: PointerEventType,
     draggable: this.type,
-    draggableElement: typings.interactjsTypes.typesMod.Element,
-    dropElemen: typings.interactjsTypes.typesMod.Element,
+    draggableElement: typings.interactjsTypes.coreTypesMod.Element,
+    dropElemen: typings.interactjsTypes.coreTypesMod.Element,
     rect: Any
   ): Boolean = js.native
   
@@ -143,7 +143,7 @@ trait InteractableDeltaSource extends StObject {
   @JSName("dropzone")
   var dropzone_Original: DropzoneMethod = js.native
   
-  val events: typings.interactjsTypes.eventableMod.Eventable = js.native
+  val events: typings.interactjsTypes.coreEventableMod.Eventable = js.native
   
   var fire: js.UndefOr[js.Function1[/* event */ PropagationStopped, Unit]] = js.native
   /**
@@ -163,14 +163,14 @@ trait InteractableDeltaSource extends StObject {
   var gesturable_Original: GesturableMethod = js.native
   
   def getAction(
-    pointer: typings.interactjsTypes.typesMod.PointerType,
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType,
     event: PointerEventType,
-    interaction: typings.interactjsTypes.interactionMod.Interaction[ActionName],
-    element: typings.interactjsTypes.typesMod.Element
+    interaction: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName],
+    element: typings.interactjsTypes.coreTypesMod.Element
   ): ActionProps[scala.Nothing] | Null = js.native
   
   var getRect: js.UndefOr[
-    js.Function1[/* _element */ typings.std.Element, typings.interactjsTypes.typesMod.Rect]
+    js.Function1[/* _element */ typings.std.Element, typings.interactjsTypes.coreTypesMod.Rect]
   ] = js.native
   /**
     * The default function to get an Interactables bounding rect. Can be
@@ -179,7 +179,7 @@ trait InteractableDeltaSource extends StObject {
     * @param {Element} [element] The element to measure.
     * @return {Rect} The object's bounding rectangle.
     */
-  def getRect(element: typings.interactjsTypes.typesMod.Element): RequiredRect = js.native
+  def getRect(element: typings.interactjsTypes.coreTypesMod.Element): RequiredRect = js.native
   
   var global: js.UndefOr[Any] = js.native
   
@@ -259,8 +259,8 @@ trait InteractableDeltaSource extends StObject {
     * bounding rectangle. See {@link Interactable.getRect}
     * @return {function | object} The checker function or this Interactable
     */
-  def rectChecker(): js.Function1[/* element */ typings.interactjsTypes.typesMod.Element, Any | Null] = js.native
-  def rectChecker(checker: js.Function1[/* element */ typings.interactjsTypes.typesMod.Element, Any]): this.type = js.native
+  def rectChecker(): js.Function1[/* element */ typings.interactjsTypes.coreTypesMod.Element, Any | Null] = js.native
+  def rectChecker(checker: js.Function1[/* element */ typings.interactjsTypes.coreTypesMod.Element, Any]): this.type = js.native
   
   @JSName("reflow")
   def reflow_drag(action: ActionProps[drag]): ReturnType[
@@ -299,7 +299,7 @@ trait InteractableDeltaSource extends StObject {
   
   var styleCursor: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof styleCursor */ Any = js.native
   
-  val target: typings.interactjsTypes.typesMod.Target = js.native
+  val target: typings.interactjsTypes.coreTypesMod.Target = js.native
   
   def testAllow(allowFrom: IgnoreValue, targetNode: typings.std.Node, element: typings.std.Node): Boolean = js.native
   
@@ -317,7 +317,7 @@ trait InteractableDeltaSource extends StObject {
   
   def updatePerActionListeners(
     actionName: ActionName,
-    prev: typings.interactjsTypes.typesMod.Listeners,
-    cur: typings.interactjsTypes.typesMod.Listeners
+    prev: typings.interactjsTypes.coreTypesMod.Listeners,
+    cur: typings.interactjsTypes.coreTypesMod.Listeners
   ): Unit = js.native
 }

@@ -1,7 +1,6 @@
 package typings.wordpressBlocks.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -13,9 +12,7 @@ trait BlockDeprecation[// The new block attribute types.
 N /* <: Record[String, Any] */, // The old block attribute types.
 O /* <: Record[String, Any] */] extends StObject {
   
-  var attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? any : O[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[Any]
+  var attributes: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? U : O[k]>} */ js.Any
   
   /**
     * A function which, given the attributes and inner blocks of the
@@ -54,9 +51,7 @@ object BlockDeprecation {
   inline def apply[// The new block attribute types.
   N /* <: Record[String, Any] */, // The old block attribute types.
   O /* <: Record[String, Any] */](
-    attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? any : O[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[Any],
+    attributes: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? U : O[k]>} */ js.Any,
     save: ComponentType[BlockSaveProps[O]]
   ): BlockDeprecation[N, O] = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any])
@@ -68,9 +63,7 @@ object BlockDeprecation {
   O /* <: Record[String, Any] */](x: Self & (BlockDeprecation[N, O])) {
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? any : O[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.BlockDeprecation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof O ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<O[k] extends std.Array<infer U>? U : O[k]>} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setIsEligible(

@@ -1,6 +1,6 @@
 package typings.reactstrap.mod
 
-import typings.reactstrap.modalBodyMod.default
+import typings.reactstrap.typesLibModalBodyMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

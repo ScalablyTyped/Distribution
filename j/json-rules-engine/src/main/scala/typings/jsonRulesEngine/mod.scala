@@ -131,7 +131,7 @@ object mod {
     def setPriority(priority: Double): this.type = js.native
     
     def toJSON(): String = js.native
-    def toJSON[T /* <: Boolean */](stringify: T): RuleSerializable | String = js.native
+    def toJSON[T /* <: Boolean */](stringify: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? string : json-rules-engine.json-rules-engine.RuleSerializable */ js.Any = js.native
   }
   
   trait AllConditions

@@ -1,6 +1,6 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.commandsMod.SchemaTextFieldPhonetics
+import typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics
 import typings.redisSearch.redisSearchBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,7 +1,6 @@
 package typings.simpleOauth2
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.simpleOauth2.anon.AuthorizationMethod
 import typings.simpleOauth2.anon.AuthorizeHost
 import typings.simpleOauth2.anon.Id
@@ -31,7 +30,9 @@ object mod {
       * @return the absolute authorization url
       */
     def authorizeURL(): String = js.native
-    def authorizeURL(params: typings.simpleOauth2.simpleOauth2Strings.AuthorizationCode & TopLevel[Any] & Redirecturi): String = js.native
+    def authorizeURL(
+      params: (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in ClientIdName ]:? string} */ js.Any) & Redirecturi
+    ): String = js.native
     
     /**
       * Creates a new access token by providing a token object as specified by RFC6750.

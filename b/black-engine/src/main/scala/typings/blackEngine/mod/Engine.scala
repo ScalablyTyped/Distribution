@@ -13,23 +13,23 @@ open class Engine protected ()
   extends typings.blackEngine.engineMod.Engine {
   def this(
     containerElementId: String,
-    gameClass: Instantiable0[typings.blackEngine.gameObjectMod.GameObject],
+    gameClass: Instantiable0[typings.blackEngine.coreGameObjectMod.GameObject],
     videoDriverClass: Instantiable3[
         /* arg1 */ HTMLElement, 
         /* arg2 */ Double, 
         /* arg3 */ Double, 
-        typings.blackEngine.videoNullDriverMod.VideoNullDriver
+        typings.blackEngine.driversVideoNullDriverMod.VideoNullDriver
       ]
   ) = this()
   def this(
     containerElementId: String,
-    gameClass: Instantiable0[typings.blackEngine.gameObjectMod.GameObject],
+    gameClass: Instantiable0[typings.blackEngine.coreGameObjectMod.GameObject],
     videoDriverClass: Instantiable3[
         /* arg1 */ HTMLElement, 
         /* arg2 */ Double, 
         /* arg3 */ Double, 
-        typings.blackEngine.videoNullDriverMod.VideoNullDriver
+        typings.blackEngine.driversVideoNullDriverMod.VideoNullDriver
       ],
-    systemClasses: js.Array[Instantiable0[typings.blackEngine.systemMod.System]]
+    systemClasses: js.Array[Instantiable0[typings.blackEngine.coreSystemMod.System]]
   ) = this()
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video frame that includes the results of the scene analysis operation. */
-@JSGlobal("Windows.Media.Core.SceneAnalysisEffectFrame")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.SceneAnalysisEffectFrame")
 @js.native
-abstract class SceneAnalysisEffectFrame ()
+open class SceneAnalysisEffectFrame ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.SceneAnalysisEffectFrame {
   

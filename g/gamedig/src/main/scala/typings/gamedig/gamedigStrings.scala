@@ -146,6 +146,12 @@ object gamedigStrings {
   inline def baldursgate: baldursgate = "baldursgate".asInstanceOf[baldursgate]
   
   @js.native
+  sealed trait barotrauma
+    extends StObject
+       with Type
+  inline def barotrauma: barotrauma = "barotrauma".asInstanceOf[barotrauma]
+  
+  @js.native
   sealed trait bat1944
     extends StObject
        with Type
@@ -458,6 +464,12 @@ object gamedigStrings {
   inline def dirttrackracing2: dirttrackracing2 = "dirttrackracing2".asInstanceOf[dirttrackracing2]
   
   @js.native
+  sealed trait discord
+    extends StObject
+       with Type
+  inline def discord: discord = "discord".asInstanceOf[discord]
+  
+  @js.native
   sealed trait dmomam
     extends StObject
        with Type
@@ -630,6 +642,12 @@ object gamedigStrings {
     extends StObject
        with Type
   inline def graw2: graw2 = "graw2".asInstanceOf[graw2]
+  
+  @js.native
+  sealed trait groundbreach
+    extends StObject
+       with Type
+  inline def groundbreach: groundbreach = "groundbreach".asInstanceOf[groundbreach]
   
   @js.native
   sealed trait gunmanchronicles
@@ -1076,6 +1094,18 @@ object gamedigStrings {
   inline def primalcarnage: primalcarnage = "primalcarnage".asInstanceOf[primalcarnage]
   
   @js.native
+  sealed trait przomboid
+    extends StObject
+       with Type
+  inline def przomboid: przomboid = "przomboid".asInstanceOf[przomboid]
+  
+  @js.native
+  sealed trait ps
+    extends StObject
+       with Type
+  inline def ps: ps = "ps".asInstanceOf[ps]
+  
+  @js.native
   sealed trait quake1
     extends StObject
        with Type
@@ -1212,6 +1242,12 @@ object gamedigStrings {
     extends StObject
        with Type
   inline def samp: samp = "samp".asInstanceOf[samp]
+  
+  @js.native
+  sealed trait savage2
+    extends StObject
+       with Type
+  inline def savage2: savage2 = "savage2".asInstanceOf[savage2]
   
   @js.native
   sealed trait shatteredhorizon
@@ -1566,6 +1602,12 @@ object gamedigStrings {
     extends StObject
        with Type
   inline def v8supercar: v8supercar = "v8supercar".asInstanceOf[v8supercar]
+  
+  @js.native
+  sealed trait valheim
+    extends StObject
+       with Type
+  inline def valheim: valheim = "valheim".asInstanceOf[valheim]
   
   @js.native
   sealed trait vcmp

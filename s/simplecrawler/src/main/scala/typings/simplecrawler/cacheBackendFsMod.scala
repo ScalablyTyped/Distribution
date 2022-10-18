@@ -1,5 +1,6 @@
 package typings.simplecrawler
 
+import typings.node.NodeJS.ErrnoException
 import typings.simplecrawler.queueMod.QueueItem
 import typings.simplecrawler.simplecrawlerBooleans.`false`
 import org.scalablytyped.runtime.StObject
@@ -38,12 +39,7 @@ object cacheBackendFsMod {
     var location: String = js.native
     
     def saveCache(): Unit = js.native
-    def saveCache(
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
-    ): Unit = js.native
+    def saveCache(callback: js.Function1[/* err */ ErrnoException | Null, Unit]): Unit = js.native
     
     def setItem(queueObject: QueueItem, data: Any): Unit = js.native
     def setItem(queueObject: QueueItem, data: Any, callback: js.Function0[Unit]): Unit = js.native

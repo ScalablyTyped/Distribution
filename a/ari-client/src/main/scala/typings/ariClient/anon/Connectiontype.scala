@@ -9,8 +9,6 @@ trait Connectiontype extends StObject {
   
   var app: String
   
-  var channelId: js.UndefOr[String] = js.undefined
-  
   var connection_type: js.UndefOr[String] = js.undefined
   
   var direction: js.UndefOr[String] = js.undefined
@@ -35,10 +33,6 @@ object Connectiontype {
   extension [Self <: Connectiontype](x: Self) {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
-    
-    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     inline def setConnection_type(value: String): Self = StObject.set(x, "connection_type", value.asInstanceOf[js.Any])
     

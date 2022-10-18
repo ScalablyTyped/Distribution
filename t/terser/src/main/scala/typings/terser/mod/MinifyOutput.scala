@@ -1,7 +1,7 @@
 package typings.terser.mod
 
-import typings.jridgewellGenMapping.typesMod.DecodedSourceMap
-import typings.jridgewellGenMapping.typesMod.EncodedSourceMap
+import typings.jridgewellGenMapping.distTypesTypesMod.DecodedSourceMap
+import typings.jridgewellGenMapping.distTypesTypesMod.EncodedSourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

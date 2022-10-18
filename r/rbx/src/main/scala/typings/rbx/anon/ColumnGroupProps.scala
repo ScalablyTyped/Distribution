@@ -1,6 +1,6 @@
 package typings.rbx.anon
 
-import typings.rbx.columnGroupMod.ColumnGroupBreakpointOptions
+import typings.rbx.gridColumnsColumnGroupMod.ColumnGroupBreakpointOptions
 import typings.rbx.rbxInts.`7`
 import typings.rbx.rbxInts.`8`
 import typings.rbx.rbxStrings.`black-bis`

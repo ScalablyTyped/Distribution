@@ -19,7 +19,7 @@ import typings.ckeditorCkeditor5Heading.ckeditorCkeditor5HeadingStrings.none
 import typings.ckeditorCkeditor5Heading.ckeditorCkeditor5HeadingStrings.p
 import typings.ckeditorCkeditor5Heading.ckeditorCkeditor5HeadingStrings.td
 import typings.ckeditorCkeditor5Heading.ckeditorCkeditor5HeadingStrings.th
-import typings.ckeditorCkeditor5Heading.headingeditingMod.default
+import typings.ckeditorCkeditor5Heading.srcHeadingeditingMod.default
 import typings.ckeditorCkeditor5Paragraph.mod.Paragraph
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -68,7 +68,7 @@ object anon {
   @js.native
   trait TypeofHeadingUI
     extends StObject
-       with Instantiable0[typings.ckeditorCkeditor5Heading.headinguiMod.default] {
+       with Instantiable0[typings.ckeditorCkeditor5Heading.srcHeadinguiMod.default] {
     
     val pluginName: HeadingUI = js.native
   }

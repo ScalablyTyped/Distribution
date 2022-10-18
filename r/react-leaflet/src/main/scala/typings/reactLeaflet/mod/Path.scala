@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-leaflet", "Path")
+/* note: abstract class */ @JSImport("react-leaflet", "Path")
 @js.native
-abstract class Path[P /* <: PathProps */, E /* <: typings.leaflet.mod.Path */] protected () extends MapLayer[P, E] {
+open class Path[P /* <: PathProps */, E /* <: typings.leaflet.mod.Path */] protected () extends MapLayer[P, E] {
   def this(props: P) = this()
   /**
     * @deprecated

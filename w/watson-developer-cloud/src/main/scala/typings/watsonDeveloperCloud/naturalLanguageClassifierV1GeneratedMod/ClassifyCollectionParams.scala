@@ -30,7 +30,7 @@ object ClassifyCollectionParams {
     
     inline def setCollection(value: js.Array[ClassifyInput]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    inline def setCollectionVarargs(value: ClassifyInput*): Self = StObject.set(x, "collection", js.Array(value :_*))
+    inline def setCollectionVarargs(value: ClassifyInput*): Self = StObject.set(x, "collection", js.Array(value*))
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

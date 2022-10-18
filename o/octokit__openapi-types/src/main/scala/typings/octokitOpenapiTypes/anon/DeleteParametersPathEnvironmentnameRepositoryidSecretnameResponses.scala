@@ -89,14 +89,14 @@ trait DeleteParametersPathEnvironmentnameRepositoryidSecretnameResponses extends
     * puts Base64.strict_encode64(encrypted_secret)
     * ```
     */
-  var put: RequestBodyContentApplicationjsonEncryptedvalueString
+  var put: ParametersPathEnvironmentnameRepositoryidSecretnameRequestBodyContentApplicationjsonEncryptedvalueString
 }
 object DeleteParametersPathEnvironmentnameRepositoryidSecretnameResponses {
   
   inline def apply(
     delete: ParametersPathEnvironmentnameRepositoryidSecretnameResponses,
     get: ParametersPathEnvironmentnameRepositoryidSecretname,
-    put: RequestBodyContentApplicationjsonEncryptedvalueString
+    put: ParametersPathEnvironmentnameRepositoryidSecretnameRequestBodyContentApplicationjsonEncryptedvalueString
   ): DeleteParametersPathEnvironmentnameRepositoryidSecretnameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathEnvironmentnameRepositoryidSecretnameResponses]
@@ -108,6 +108,8 @@ object DeleteParametersPathEnvironmentnameRepositoryidSecretnameResponses {
     
     inline def setGet(value: ParametersPathEnvironmentnameRepositoryidSecretname): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjsonEncryptedvalueString): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(
+      value: ParametersPathEnvironmentnameRepositoryidSecretnameRequestBodyContentApplicationjsonEncryptedvalueString
+    ): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

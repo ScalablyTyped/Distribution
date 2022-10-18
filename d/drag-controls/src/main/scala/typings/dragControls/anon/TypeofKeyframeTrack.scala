@@ -17,5 +17,5 @@ trait TypeofKeyframeTrack
       KeyframeTrack
     ] {
   
-  def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): Any = js.native
+  def toJSON(track: typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack): Any = js.native
 }

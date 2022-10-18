@@ -1,8 +1,8 @@
 package typings.imageQ
 
-import typings.imageQ.basicAPIMod.ColorDistanceFormula
-import typings.imageQ.basicAPIMod.ImageQuantization
-import typings.imageQ.basicAPIMod.PaletteQuantization
+import typings.imageQ.distTypesSrcBasicAPIMod.ColorDistanceFormula
+import typings.imageQ.distTypesSrcBasicAPIMod.ImageQuantization
+import typings.imageQ.distTypesSrcBasicAPIMod.PaletteQuantization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,6 @@
 package typings.jspreadsheetCe.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.jspreadsheetCe.anon.Colspan
 import typings.jspreadsheetCe.jspreadsheetCeStrings.center
 import typings.jspreadsheetCe.jspreadsheetCeStrings.left
@@ -104,9 +103,7 @@ trait TabOptions extends StObject {
   /** Load this data into the javascript table: array */
   var data: js.UndefOr[
     js.Array[
-      (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-    */ typings.jspreadsheetCe.jspreadsheetCeStrings.TabOptions & TopLevel[Any]) | js.Array[CellValue]
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue]
     ]
   ] = js.undefined
   
@@ -162,9 +159,7 @@ trait TabOptions extends StObject {
   
   var footers: js.UndefOr[
     js.Array[
-      (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-    */ typings.jspreadsheetCe.jspreadsheetCeStrings.TabOptions & TopLevel[Any]) | js.Array[CellValue]
+      (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue]
     ]
   ] = js.undefined
   
@@ -930,18 +925,14 @@ object TabOptions {
     
     inline def setData(
       value: js.Array[
-          (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-      */ typings.jspreadsheetCe.jspreadsheetCeStrings.TabOptions & TopLevel[Any]) | js.Array[CellValue]
+          (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue]
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setDataVarargs(
-      value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-      */ typings.jspreadsheetCe.jspreadsheetCeStrings.TabOptions & TopLevel[Any]) | js.Array[CellValue])*
+      value: ((/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue])*
     ): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDefaultColAlign(value: center | left | right): Self = StObject.set(x, "defaultColAlign", value.asInstanceOf[js.Any])
@@ -990,18 +981,14 @@ object TabOptions {
     
     inline def setFooters(
       value: js.Array[
-          (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-      */ typings.jspreadsheetCe.jspreadsheetCeStrings.TabOptions & TopLevel[Any]) | js.Array[CellValue]
+          (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue]
         ]
     ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
     inline def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
     
     inline def setFootersVarargs(
-      value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue}
-      */ typings.jspreadsheetCe.jspreadsheetCeStrings.TabOptions & TopLevel[Any]) | js.Array[CellValue])*
+      value: ((/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jspreadsheet-ce.jspreadsheet-ce.CellValue} */ js.Any) | js.Array[CellValue])*
     ): Self = StObject.set(x, "footers", js.Array(value*))
     
     inline def setFreezeColumns(value: Double): Self = StObject.set(x, "freezeColumns", value.asInstanceOf[js.Any])

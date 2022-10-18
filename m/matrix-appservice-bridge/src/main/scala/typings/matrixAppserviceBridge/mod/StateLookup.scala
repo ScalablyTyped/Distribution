@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.stateLookupMod.StateLookupOpts
+import typings.matrixAppserviceBridge.libComponentsStateLookupMod.StateLookupOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "StateLookup")
 @js.native
 open class StateLookup protected ()
-  extends typings.matrixAppserviceBridge.stateLookupMod.StateLookup {
+  extends typings.matrixAppserviceBridge.libComponentsStateLookupMod.StateLookup {
   /**
     * Construct a new state lookup entity.
     *

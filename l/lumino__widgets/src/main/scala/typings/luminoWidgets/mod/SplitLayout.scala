@@ -1,6 +1,6 @@
 package typings.luminoWidgets.mod
 
-import typings.luminoWidgets.splitlayoutMod.SplitLayout.IOptions
+import typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@lumino/widgets", "SplitLayout")
 @js.native
 open class SplitLayout protected ()
-  extends typings.luminoWidgets.splitlayoutMod.SplitLayout {
+  extends typings.luminoWidgets.typesSplitlayoutMod.SplitLayout {
   /**
     * Construct a new split layout.
     *
@@ -29,7 +29,7 @@ object SplitLayout {
     *
     * @returns The split layout stretch factor for the widget.
     */
-  inline def getStretch(widget: typings.luminoWidgets.widgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStretch(widget: typings.luminoWidgets.typesWidgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Set the split layout stretch factor for the given widget.
@@ -38,5 +38,5 @@ object SplitLayout {
     *
     * @param value - The value for the stretch factor.
     */
-  inline def setStretch(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStretch(widget: typings.luminoWidgets.typesWidgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

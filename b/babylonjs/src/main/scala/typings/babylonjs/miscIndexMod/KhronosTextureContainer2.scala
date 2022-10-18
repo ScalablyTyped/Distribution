@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
 import typings.babylonjs.anon.JsDecoderModule
-import typings.babylonjs.thinEngineMod.ThinEngine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "KhronosTextureContainer2")
 @js.native
 open class KhronosTextureContainer2 protected ()
-  extends typings.babylonjs.khronosTextureContainer2Mod.KhronosTextureContainer2 {
+  extends typings.babylonjs.miscKhronosTextureContainer2Mod.KhronosTextureContainer2 {
   /**
     * Constructor
     * @param engine The engine to use

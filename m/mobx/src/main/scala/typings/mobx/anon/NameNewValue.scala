@@ -1,8 +1,8 @@
 package typings.mobx.anon
 
+import typings.mobx.distTypesObservableobjectMod.IObjectWillChange
 import typings.mobx.mobxStrings.add
 import typings.mobx.mobxStrings.update
-import typings.mobx.observableobjectMod.IObjectWillChange
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,9 +1,9 @@
 package typings.maplibreGl.anon
 
+import typings.maplibreGl.distStyleSpecMod.ExpressionSpecificationDefinition
+import typings.maplibreGl.distStyleSpecMod.ExpressionType
+import typings.maplibreGl.distStyleSpecMod.StylePropertySpecification
 import typings.maplibreGl.maplibreGlStrings.color
-import typings.maplibreGl.styleSpecMod.ExpressionSpecificationDefinition
-import typings.maplibreGl.styleSpecMod.ExpressionType
-import typings.maplibreGl.styleSpecMod.StylePropertySpecification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

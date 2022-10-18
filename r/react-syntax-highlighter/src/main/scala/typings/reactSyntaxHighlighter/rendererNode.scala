@@ -14,7 +14,7 @@ trait rendererNode extends StObject {
   var properties: js.UndefOr[Dictkey] = js.undefined
   
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
   ] = js.undefined
   
   var `type`: element | text
@@ -41,7 +41,9 @@ object rendererNode {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+    ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     

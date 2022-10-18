@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "TargetCamera")
 @js.native
 open class TargetCamera protected ()
-  extends typings.babylonjs.legacyMod.TargetCamera {
+  extends typings.babylonjs.legacyLegacyMod.TargetCamera {
   /**
     * Instantiates a target camera that takes a mesh or position as a target and continues to look at it while it moves.
     * This is the base of the follow, arc rotate cameras and Free camera
@@ -17,21 +17,21 @@ open class TargetCamera protected ()
     * @param scene Defines the scene the camera belongs to
     * @param setActiveOnSceneIfNoneActive Defines whether the camera should be marked as active if not other active cameras have been defined
     */
-  def this(name: String, position: typings.babylonjs.mathVectorMod.Vector3) = this()
+  def this(name: String, position: typings.babylonjs.mathsMathDotvectorMod.Vector3) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: Unit,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene,
     setActiveOnSceneIfNoneActive: Boolean
   ) = this()

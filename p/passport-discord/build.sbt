@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "passport-discord"
-version := "0.1-dt-20220712Z-e83082"
+version := "0.1-dt-20220712Z-d25bc2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-646db4",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-53b851",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-fb8f3f",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "oauth" % "0.9-dt-20211202Z-f3261c",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20220912Z-92a982",
-  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20211202Z-7982af",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-4e85dc",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-170623",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-d74acb",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-06d29e",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "oauth" % "0.9-dt-20211202Z-eea88d",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20220912Z-611eaa",
+  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20211202Z-93cdbb",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-696f82",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

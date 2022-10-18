@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Files
-import typings.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps
-import typings.antdMobileRn.imagePickerIndexNativeMod.default
+import typings.antdMobileRn.libImagePickerIndexDotnativeMod.ImagePickerNativeProps
+import typings.antdMobileRn.libImagePickerIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

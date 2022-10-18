@@ -12,7 +12,7 @@ object mod {
   @JSImport("iitc", "DataCache")
   @js.native
   open class DataCache ()
-    extends typings.iitc.dataCacheMod.DataCache
+    extends typings.iitc.coreDataCacheMod.DataCache
   
   object IITC {
     
@@ -20,7 +20,7 @@ object mod {
     @JSImport("iitc", "IITC.Field")
     @js.native
     open class Field protected ()
-      extends typings.iitc.iitctypesMod.IITC.Field {
+      extends typings.iitc.coreIitctypesMod.IITC.Field {
       def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
       def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
     }
@@ -29,7 +29,7 @@ object mod {
     @JSImport("iitc", "IITC.Link")
     @js.native
     open class Link protected ()
-      extends typings.iitc.iitctypesMod.IITC.Link {
+      extends typings.iitc.coreIitctypesMod.IITC.Link {
       def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression]) = this()
       def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
     }
@@ -38,7 +38,7 @@ object mod {
     @JSImport("iitc", "IITC.Portal")
     @js.native
     open class Portal protected ()
-      extends typings.iitc.iitctypesMod.IITC.Portal {
+      extends typings.iitc.coreIitctypesMod.IITC.Portal {
       def this(latlng: LatLngExpression) = this()
       def this(latlng: LatLngExpression, options: CircleMarkerOptions) = this()
     }
@@ -47,15 +47,15 @@ object mod {
   @JSImport("iitc", "MapDataRequest")
   @js.native
   open class MapDataRequest ()
-    extends typings.iitc.mapDataRequestMod.MapDataRequest
+    extends typings.iitc.coreMapDataRequestMod.MapDataRequest
   
   @JSImport("iitc", "Render")
   @js.native
   open class Render ()
-    extends typings.iitc.mapDataRenderMod.Render
+    extends typings.iitc.coreMapDataRenderMod.Render
   
   @JSImport("iitc", "RenderDebugTiles")
   @js.native
   open class RenderDebugTiles ()
-    extends typings.iitc.mapDataDebugMod.RenderDebugTiles
+    extends typings.iitc.coreMapDataDebugMod.RenderDebugTiles
 }

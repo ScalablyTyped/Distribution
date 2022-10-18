@@ -6,12 +6,12 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeElements.distConfigThemeProviderMod.RecursivePartial
 import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.error
 import typings.reactNativeElements.reactNativeElementsStrings.primary
 import typings.reactNativeElements.reactNativeElementsStrings.success
 import typings.reactNativeElements.reactNativeElementsStrings.warning
-import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

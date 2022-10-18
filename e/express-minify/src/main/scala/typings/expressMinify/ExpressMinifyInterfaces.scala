@@ -1,5 +1,6 @@
 package typings.expressMinify
 
+import typings.node.NodeRequire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,7 @@ object ExpressMinifyInterfaces {
     /**
       * Customize cssmin instance (require('cssmin')).
       */
-    var cssmin: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-      ] = js.undefined
+    var cssmin: js.UndefOr[NodeRequire] = js.undefined
     
     /**
       * Matches JavaScript content-type.
@@ -63,9 +62,7 @@ object ExpressMinifyInterfaces {
     /**
       * Customize UglifyJS instance (require('uglify-js')).
       */
-    var uglifyJS: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-      ] = js.undefined
+    var uglifyJS: js.UndefOr[NodeRequire] = js.undefined
   }
   object ExpressMinifyOptions {
     
@@ -88,9 +85,7 @@ object ExpressMinifyInterfaces {
       
       inline def setCss_matchUndefined: Self = StObject.set(x, "css_match", js.undefined)
       
-      inline def setCssmin(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-      ): Self = StObject.set(x, "cssmin", value.asInstanceOf[js.Any])
+      inline def setCssmin(value: NodeRequire): Self = StObject.set(x, "cssmin", value.asInstanceOf[js.Any])
       
       inline def setCssminUndefined: Self = StObject.set(x, "cssmin", js.undefined)
       
@@ -118,9 +113,7 @@ object ExpressMinifyInterfaces {
       
       inline def setStylus_matchUndefined: Self = StObject.set(x, "stylus_match", js.undefined)
       
-      inline def setUglifyJS(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-      ): Self = StObject.set(x, "uglifyJS", value.asInstanceOf[js.Any])
+      inline def setUglifyJS(value: NodeRequire): Self = StObject.set(x, "uglifyJS", value.asInstanceOf[js.Any])
       
       inline def setUglifyJSUndefined: Self = StObject.set(x, "uglifyJS", js.undefined)
     }

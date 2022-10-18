@@ -1,6 +1,6 @@
 package typings.dockerode.mod
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,10 +33,10 @@ open class Service protected ()
   def inspect(options: js.Object): js.Promise[Any] = js.native
   def inspect(options: js.Object, callback: Callback[Any]): Unit = js.native
   
-  def logs(): js.Promise[ReadableStream[Any]] = js.native
-  def logs(callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def logs(options: ContainerLogsOptions): js.Promise[ReadableStream[Any]] = js.native
-  def logs(options: ContainerLogsOptions, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def logs(): js.Promise[ReadableStream] = js.native
+  def logs(callback: Callback[ReadableStream]): Unit = js.native
+  def logs(options: ContainerLogsOptions): js.Promise[ReadableStream] = js.native
+  def logs(options: ContainerLogsOptions, callback: Callback[ReadableStream]): Unit = js.native
   
   var modem: Any = js.native
   

@@ -1,8 +1,8 @@
 package typings.rrule
 
-import typings.rrule.cacheMod.CacheKeys
-import typings.rrule.typesMod.QueryMethodTypes
-import typings.rrule.weekdayMod.WeekdayStr
+import typings.rrule.distEsmCacheMod.CacheKeys
+import typings.rrule.distEsmTypesMod.QueryMethodTypes
+import typings.rrule.distEsmWeekdayMod.WeekdayStr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

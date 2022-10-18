@@ -1,16 +1,16 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channeldefMod.PositionFieldDef
-import typings.vegaLite.compositemarkCommonMod.GenericCompositeMarkDef
-import typings.vegaLite.errorbandMod.ErrorBand
-import typings.vegaLite.errorbandMod.ErrorBandDef
-import typings.vegaLite.errorbarMod.ErrorBar
-import typings.vegaLite.errorbarMod.ErrorBarDef
-import typings.vegaLite.errorbarMod.ErrorEncoding
-import typings.vegaLite.transformMod.Transform
+import typings.vegaLite.buildSrcChanneldefMod.PositionFieldDef
+import typings.vegaLite.buildSrcCompositemarkCommonMod.GenericCompositeMarkDef
+import typings.vegaLite.buildSrcCompositemarkErrorbandMod.ErrorBand
+import typings.vegaLite.buildSrcCompositemarkErrorbandMod.ErrorBandDef
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorBar
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorBarDef
+import typings.vegaLite.buildSrcCompositemarkErrorbarMod.ErrorEncoding
+import typings.vegaLite.buildSrcTransformMod.Transform
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
-import typings.vegaTypings.encodeMod.Orientation
+import typings.vegaTypings.typesSpecEncodeMod.Orientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

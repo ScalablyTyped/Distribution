@@ -1,153 +1,98 @@
 package typings.nextReduxWrapper
 
-import typings.next.libUtilsMod.NextPageContext
-import typings.next.mod.GetStaticProps
-import typings.nextReduxWrapper.mod.GetServerSidePropsContext
-import typings.nextReduxWrapper.mod.GetStaticPropsContext
-import typings.nextReduxWrapper.mod.WrapperProps
-import typings.node.querystringMod.ParsedUrlQuery
-import typings.react.mod.PropsWithChildren
-import typings.react.mod.ReactElement
-import typings.react.mod.ValidationMap
-import typings.react.mod.Validator
-import typings.redux.mod.Action
+import typings.next.appMod.default
+import typings.next.distSharedLibUtilsMod.NextComponentType
+import typings.next.typesMod.GetServerSideProps
+import typings.next.typesMod.GetStaticProps
+import typings.next.typesMod.PreviewData
+import typings.nextReduxWrapper.mod.AppCallback
+import typings.nextReduxWrapper.mod.GetServerSidePropsCallback
+import typings.nextReduxWrapper.mod.GetStaticPropsCallback
+import typings.nextReduxWrapper.mod.PageCallback
+import typings.nextReduxWrapper.mod.nextAugmentingMod.NextPageContext
+import typings.react.mod.global.JSX.Element
+import typings.redux.mod.AnyAction
+import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined react.react.FunctionComponent<next-redux-wrapper.next-redux-wrapper.WrapperProps> & {  getInitialProps :(context : next.next.NextPageContext): next-redux-wrapper.next-redux-wrapper.WrapperProps | std.Promise<next-redux-wrapper.next-redux-wrapper.WrapperProps> | undefined} */
   @js.native
-  trait FunctionComponentWrapperP extends StObject {
+  trait Call extends StObject {
     
-    def apply(props: PropsWithChildren[WrapperProps]): ReactElement | Null = js.native
-    def apply(props: PropsWithChildren[WrapperProps], context: js.Any): ReactElement | Null = js.native
+    def apply(props: Any): Element = js.native
     
-    var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+    var displayName: String = js.native
     
-    var defaultProps: js.UndefOr[PartialWrapperProps] = js.native
+    var getInitialProps: Any = js.native
+  }
+  
+  @js.native
+  trait GetInitialAppProps[S /* <: Store[Any, AnyAction] */] extends StObject {
     
-    var displayName: js.UndefOr[String] = js.native
+    def getInitialAppProps[P_2 /* <: js.Object */](callback: AppCallback[S, P_2]): typings.nextReduxWrapper.mod.GetInitialAppProps[P_2] = js.native
     
-    var getInitialProps: js.UndefOr[
-        js.Function1[/* context */ NextPageContext, WrapperProps | js.Promise[WrapperProps]]
+    def getInitialPageProps[P_3 /* <: js.Object */](callback: PageCallback[S, P_3]): js.UndefOr[js.Function1[/* context */ NextPageContext[Any], Any]] = js.native
+    
+    def getServerSideProps[P /* <: js.Object */](callback: GetServerSidePropsCallback[S, P]): GetServerSideProps[
+        P, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_querystring.ParsedUrlQuery */ Any, 
+        PreviewData
       ] = js.native
     
-    var propTypes: js.UndefOr[WeakValidationMapWrapperP] = js.native
+    def getStaticProps[P_1 /* <: js.Object */](callback: GetStaticPropsCallback[S, P_1]): GetStaticProps[
+        P_1, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_querystring.ParsedUrlQuery */ Any, 
+        PreviewData
+      ] = js.native
+    
+    def useWrappedStore(hasInitialStateInitialPropsProps: Any): Props[S] = js.native
+    def useWrappedStore(hasInitialStateInitialPropsProps: Any, displayName: String): Props[S] = js.native
+    
+    def withRedux(Component: Any): Call = js.native
+    def withRedux(Component: default[js.Object, js.Object, js.Object]): Call = js.native
+    def withRedux(
+      Component: NextComponentType[typings.next.distSharedLibUtilsMod.NextPageContext, js.Object, js.Object]
+    ): Call = js.native
   }
   
-  trait GetServerSideProps[S /* <: js.Object */, A /* <: Action[js.Any] */] extends StObject {
+  trait PageProps[P] extends StObject {
     
-    def getServerSideProps[P /* <: js.Object */](callback: js.Function1[/* context */ GetServerSidePropsContext & (Store[S, A]), Unit | P]): typings.next.mod.GetServerSideProps[P, ParsedUrlQuery]
-    
-    def getStaticProps[P_1 /* <: js.Object */](callback: js.Function1[/* context */ GetStaticPropsContext & (Store[S, A]), Unit | P_1]): GetStaticProps[P_1, ParsedUrlQuery]
-    
-    def withRedux(Component: js.Any): FunctionComponentWrapperP
+    var pageProps: P
   }
-  object GetServerSideProps {
+  object PageProps {
     
-    inline def apply[S /* <: js.Object */, A /* <: Action[js.Any] */](
-      getServerSideProps: js.Function1[/* context */ GetServerSidePropsContext & (Store[S, A]), Unit | js.Any] => typings.next.mod.GetServerSideProps[js.Any, ParsedUrlQuery],
-      getStaticProps: js.Function1[/* context */ GetStaticPropsContext & (Store[S, A]), Unit | js.Any] => GetStaticProps[js.Any, ParsedUrlQuery],
-      withRedux: js.Any => FunctionComponentWrapperP
-    ): GetServerSideProps[S, A] = {
-      val __obj = js.Dynamic.literal(getServerSideProps = js.Any.fromFunction1(getServerSideProps), getStaticProps = js.Any.fromFunction1(getStaticProps), withRedux = js.Any.fromFunction1(withRedux))
-      __obj.asInstanceOf[GetServerSideProps[S, A]]
+    inline def apply[P](pageProps: P): PageProps[P] = {
+      val __obj = js.Dynamic.literal(pageProps = pageProps.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PageProps[P]]
     }
     
-    extension [Self <: GetServerSideProps[?, ?], S /* <: js.Object */, A /* <: Action[js.Any] */](x: Self & (GetServerSideProps[S, A])) {
+    extension [Self <: PageProps[?], P](x: Self & PageProps[P]) {
       
-      inline def setGetServerSideProps(
-        value: js.Function1[/* context */ GetServerSidePropsContext & (Store[S, A]), Unit | js.Any] => typings.next.mod.GetServerSideProps[js.Any, ParsedUrlQuery]
-      ): Self = StObject.set(x, "getServerSideProps", js.Any.fromFunction1(value))
-      
-      inline def setGetStaticProps(
-        value: js.Function1[/* context */ GetStaticPropsContext & (Store[S, A]), Unit | js.Any] => GetStaticProps[js.Any, ParsedUrlQuery]
-      ): Self = StObject.set(x, "getStaticProps", js.Any.fromFunction1(value))
-      
-      inline def setWithRedux(value: js.Any => FunctionComponentWrapperP): Self = StObject.set(x, "withRedux", js.Any.fromFunction1(value))
+      inline def setPageProps(value: P): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined std.Partial<next-redux-wrapper.next-redux-wrapper.WrapperProps> */
-  trait PartialWrapperProps extends StObject {
+  trait Props[S /* <: Store[Any, AnyAction] */] extends StObject {
     
-    var initialProps: js.UndefOr[js.Any] = js.undefined
+    var props: Any
     
-    var initialState: js.UndefOr[js.Any] = js.undefined
-    
-    var pageProps: js.UndefOr[js.Any] = js.undefined
+    var store: S
   }
-  object PartialWrapperProps {
+  object Props {
     
-    inline def apply(): PartialWrapperProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialWrapperProps]
+    inline def apply[S /* <: Store[Any, AnyAction] */](props: Any, store: S): Props[S] = {
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Props[S]]
     }
     
-    extension [Self <: PartialWrapperProps](x: Self) {
+    extension [Self <: Props[?], S /* <: Store[Any, AnyAction] */](x: Self & Props[S]) {
       
-      inline def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
-      
-      inline def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
-      
-      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
-      
-      inline def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
-      
-      inline def setPagePropsUndefined: Self = StObject.set(x, "pageProps", js.undefined)
-    }
-  }
-  
-  trait Store[S /* <: js.Object */, A /* <: Action[js.Any] */] extends StObject {
-    
-    var store: typings.redux.mod.Store[S, A]
-  }
-  object Store {
-    
-    inline def apply[S /* <: js.Object */, A /* <: Action[js.Any] */](store: typings.redux.mod.Store[S, A]): Store[S, A] = {
-      val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Store[S, A]]
-    }
-    
-    extension [Self <: Store[?, ?], S /* <: js.Object */, A /* <: Action[js.Any] */](x: Self & (Store[S, A])) {
-      
-      inline def setStore(value: typings.redux.mod.Store[S, A]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined react.react.WeakValidationMap<next-redux-wrapper.next-redux-wrapper.WrapperProps> */
-  trait WeakValidationMapWrapperP extends StObject {
-    
-    var initialProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-    
-    var initialState: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-    
-    var pageProps: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  }
-  object WeakValidationMapWrapperP {
-    
-    inline def apply(): WeakValidationMapWrapperP = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[WeakValidationMapWrapperP]
-    }
-    
-    extension [Self <: WeakValidationMapWrapperP](x: Self) {
-      
-      inline def setInitialProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
-      
-      inline def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
-      
-      inline def setInitialState(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
-      
-      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
-      
-      inline def setPageProps(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
-      
-      inline def setPagePropsUndefined: Self = StObject.set(x, "pageProps", js.undefined)
+      inline def setStore(value: S): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
 }

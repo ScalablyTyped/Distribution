@@ -74,15 +74,15 @@ object mod extends Shortcut {
   
   object Bounds {
     
-    inline def LeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
+    inline def LeftparenthesisRightparenthesis: /* () */ String = "()".asInstanceOf[/* () */ String]
     
-    inline def `Leftparenthesis]`: String = String.asInstanceOf[String]
+    inline def `Leftparenthesis]`: /* (] */ String = "(]".asInstanceOf[/* (] */ String]
     
-    inline def `[Rightparenthesis`: String = String.asInstanceOf[String]
+    inline def `[Rightparenthesis`: /* [) */ String = "[)".asInstanceOf[/* [) */ String]
     
     inline def `[]`: typings.strange.strangeStrings.`[]` = "[]".asInstanceOf[typings.strange.strangeStrings.`[]`]
   }
-  type Bounds = String | `[]`
+  type Bounds = (/* () */ String) | `[]`
   
   type Endpoint = js.Date | Double | String
   

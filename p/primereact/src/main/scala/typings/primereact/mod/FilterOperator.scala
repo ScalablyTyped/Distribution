@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FilterOperator extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.primereact.apiMod.FilterOperator & String] = js.native
+  def apply(value: String): js.UndefOr[typings.primereact.apiApiMod.FilterOperator & String] = js.native
   
-  /* "and" */ val AND: typings.primereact.apiMod.FilterOperator.AND & String = js.native
+  /* "and" */ val AND: typings.primereact.apiApiMod.FilterOperator.AND & String = js.native
   
-  /* "or" */ val OR: typings.primereact.apiMod.FilterOperator.OR & String = js.native
+  /* "or" */ val OR: typings.primereact.apiApiMod.FilterOperator.OR & String = js.native
 }

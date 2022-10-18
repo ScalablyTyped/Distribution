@@ -1,6 +1,7 @@
 package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.ColorScale
+import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.DataTransform
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.ErrorBar
@@ -128,7 +129,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotData> */
-trait PartialPlotData extends StObject {
+trait PartialPlotData
+  extends StObject
+     with Data {
   
   var autobinx: js.UndefOr[Boolean] = js.undefined
   
@@ -178,7 +181,7 @@ trait PartialPlotData extends StObject {
     all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
   ] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
+  var hoverlabel: js.UndefOr[PartialHoverLabel] = js.undefined
   
   var hoveron: js.UndefOr[points | fills] = js.undefined
   
@@ -335,6 +338,8 @@ trait PartialPlotData extends StObject {
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none
   ] = js.undefined
   
+  var texttemplate: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
   
   var title: js.UndefOr[PartialDataTitle] = js.undefined
@@ -361,6 +366,8 @@ trait PartialPlotData extends StObject {
   
   var xgap: js.UndefOr[Double] = js.undefined
   
+  var xhoverformat: js.UndefOr[String] = js.undefined
+  
   var xy: js.UndefOr[js.typedarray.Float32Array] = js.undefined
   
   var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
@@ -368,6 +375,8 @@ trait PartialPlotData extends StObject {
   var yaxis: js.UndefOr[String] = js.undefined
   
   var ygap: js.UndefOr[Double] = js.undefined
+  
+  var yhoverformat: js.UndefOr[String] = js.undefined
   
   var z: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
@@ -484,7 +493,7 @@ object PartialPlotData {
     
     inline def setHoverinfoUndefined: Self = StObject.set(x, "hoverinfo", js.undefined)
     
-    inline def setHoverlabel(value: PartialHoverLabelAlign): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
+    inline def setHoverlabel(value: PartialHoverLabel): Self = StObject.set(x, "hoverlabel", value.asInstanceOf[js.Any])
     
     inline def setHoverlabelUndefined: Self = StObject.set(x, "hoverlabel", js.undefined)
     
@@ -780,6 +789,12 @@ object PartialPlotData {
     
     inline def setTextpositionUndefined: Self = StObject.set(x, "textposition", js.undefined)
     
+    inline def setTexttemplate(value: String | js.Array[String]): Self = StObject.set(x, "texttemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTexttemplateUndefined: Self = StObject.set(x, "texttemplate", js.undefined)
+    
+    inline def setTexttemplateVarargs(value: String*): Self = StObject.set(x, "texttemplate", js.Array(value*))
+    
     inline def setTheta(value: js.Array[Datum]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
     inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
@@ -842,6 +857,10 @@ object PartialPlotData {
     
     inline def setXgapUndefined: Self = StObject.set(x, "xgap", js.undefined)
     
+    inline def setXhoverformat(value: String): Self = StObject.set(x, "xhoverformat", value.asInstanceOf[js.Any])
+    
+    inline def setXhoverformatUndefined: Self = StObject.set(x, "xhoverformat", js.undefined)
+    
     inline def setXy(value: js.typedarray.Float32Array): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
     inline def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
@@ -859,6 +878,10 @@ object PartialPlotData {
     inline def setYgap(value: Double): Self = StObject.set(x, "ygap", value.asInstanceOf[js.Any])
     
     inline def setYgapUndefined: Self = StObject.set(x, "ygap", js.undefined)
+    
+    inline def setYhoverformat(value: String): Self = StObject.set(x, "yhoverformat", value.asInstanceOf[js.Any])
+    
+    inline def setYhoverformatUndefined: Self = StObject.set(x, "yhoverformat", js.undefined)
     
     inline def setZ(value: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     

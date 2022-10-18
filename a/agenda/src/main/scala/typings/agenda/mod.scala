@@ -1,8 +1,8 @@
 package typings.agenda
 
-import typings.agenda.agendaMod.AgendaConfig
-import typings.agenda.jobMod.JobAttributes
-import typings.agenda.jobMod.JobAttributesData
+import typings.agenda.distAgendaMod.AgendaConfig
+import typings.agenda.distJobMod.JobAttributes
+import typings.agenda.distJobMod.JobAttributesData
 import typings.mongodb.mod.AnyError
 import typings.mongodb.mod.Collection
 import org.scalablytyped.runtime.StObject
@@ -40,7 +40,7 @@ object mod {
     * @param cb Optional callback called with the MongoDB collection.
     */
   open class default ()
-    extends typings.agenda.agendaMod.Agenda {
+    extends typings.agenda.distAgendaMod.Agenda {
     def this(config: AgendaConfig) = this()
     def this(
       config: Unit,
@@ -81,7 +81,7 @@ object mod {
     * @param cb Optional callback called with the MongoDB collection.
     */
   open class Agenda ()
-    extends typings.agenda.agendaMod.Agenda {
+    extends typings.agenda.distAgendaMod.Agenda {
     def this(config: AgendaConfig) = this()
     def this(
       config: Unit,
@@ -102,7 +102,7 @@ object mod {
   @JSImport("agenda", "Job")
   @js.native
   open class Job[T /* <: JobAttributesData */] protected ()
-    extends typings.agenda.jobMod.Job[T] {
+    extends typings.agenda.distJobMod.Job[T] {
     def this(options: JobAttributes[T]) = this()
   }
   
@@ -111,16 +111,16 @@ object mod {
   object JobPriority extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.agenda.defineMod.JobPriority & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.agenda.distAgendaDefineMod.JobPriority & Double] = js.native
     
-    /* 10 */ val high: typings.agenda.defineMod.JobPriority.high & Double = js.native
+    /* 10 */ val high: typings.agenda.distAgendaDefineMod.JobPriority.high & Double = js.native
     
-    /* 20 */ val highest: typings.agenda.defineMod.JobPriority.highest & Double = js.native
+    /* 20 */ val highest: typings.agenda.distAgendaDefineMod.JobPriority.highest & Double = js.native
     
-    /* -10 */ val low: typings.agenda.defineMod.JobPriority.low & Double = js.native
+    /* -10 */ val low: typings.agenda.distAgendaDefineMod.JobPriority.low & Double = js.native
     
-    /* -20 */ val lowest: typings.agenda.defineMod.JobPriority.lowest & Double = js.native
+    /* -20 */ val lowest: typings.agenda.distAgendaDefineMod.JobPriority.lowest & Double = js.native
     
-    /* 0 */ val normal: typings.agenda.defineMod.JobPriority.normal & Double = js.native
+    /* 0 */ val normal: typings.agenda.distAgendaDefineMod.JobPriority.normal & Double = js.native
   }
 }

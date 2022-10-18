@@ -5,8 +5,8 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenConfig
 import typings.reactNavigation.mod.NavigationScreenConfigProps
-import typings.reactNavigationDrawer.typesMod.NavigationDrawerOptions
-import typings.reactNavigationDrawer.typesMod.NavigationDrawerProp
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerOptions
+import typings.reactNavigationDrawer.libTypescriptSrcTypesMod.NavigationDrawerProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

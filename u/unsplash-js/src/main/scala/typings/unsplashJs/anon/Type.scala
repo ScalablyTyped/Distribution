@@ -1,7 +1,7 @@
 package typings.unsplashJs.anon
 
-import typings.unsplashJs.photosTypesMod.RelatedCollectionsType
-import typings.unsplashJs.typesMod.Basic
+import typings.unsplashJs.distMethodsCollectionsTypesMod.Basic
+import typings.unsplashJs.distMethodsPhotosTypesMod.RelatedCollectionsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

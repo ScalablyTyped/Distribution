@@ -1,6 +1,6 @@
 package typings.braintreeWeb.anon
 
-import typings.braintreeWeb.paypalMod.PayPalShippingAddress
+import typings.braintreeWeb.modulesPaypalMod.PayPalShippingAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

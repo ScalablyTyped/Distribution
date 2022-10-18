@@ -1,6 +1,6 @@
 package typings.gitlab.mod
 
-import typings.gitlab.baseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("gitlab", "ProtectedBranches")
 @js.native
 open class ProtectedBranches ()
-  extends typings.gitlab.servicesMod.ProtectedBranches {
+  extends typings.gitlab.distTypesCoreServicesMod.ProtectedBranches {
   def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
 }

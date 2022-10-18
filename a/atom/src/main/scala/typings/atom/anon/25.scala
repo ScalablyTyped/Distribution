@@ -1,30 +1,26 @@
 package typings.atom.anon
 
-import typings.atom.atomStrings.Bottom
-import typings.atom.atomStrings.Left
-import typings.atom.atomStrings.Right
-import typings.atom.atomStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `25` extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
+  var scopeDescriptor: typings.atom.srcScopeDescriptorMod.ScopeDescriptor
   
-  var value: Top | Right | Bottom | Left
+  var value: String | Double
 }
 object `25` {
   
-  inline def apply(scopeDescriptor: typings.atom.mod.ScopeDescriptor, value: Top | Right | Bottom | Left): `25` = {
+  inline def apply(scopeDescriptor: typings.atom.srcScopeDescriptorMod.ScopeDescriptor, value: String | Double): `25` = {
     val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`25`]
   }
   
   extension [Self <: `25`](x: Self) {
     
-    inline def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+    inline def setScopeDescriptor(value: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Top | Right | Bottom | Left): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

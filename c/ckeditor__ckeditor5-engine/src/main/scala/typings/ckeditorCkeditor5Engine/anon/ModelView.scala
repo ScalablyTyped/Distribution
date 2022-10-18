@@ -1,8 +1,8 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.downcastdispatcherMod.DowncastConversionApi
-import typings.ckeditorCkeditor5Engine.elementdefinitionMod.ElementDefinition
-import typings.ckeditorCkeditor5Engine.uielementMod.default
+import typings.ckeditorCkeditor5Engine.srcConversionDowncastdispatcherMod.DowncastConversionApi
+import typings.ckeditorCkeditor5Engine.srcViewElementdefinitionMod.ElementDefinition
+import typings.ckeditorCkeditor5Engine.srcViewUielementMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

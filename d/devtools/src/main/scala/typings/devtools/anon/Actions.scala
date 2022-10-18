@@ -1,6 +1,6 @@
 package typings.devtools.anon
 
-import typings.devtools.performActionsMod.ActionsParameter
+import typings.devtools.buildCommandsPerformActionsMod.ActionsParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

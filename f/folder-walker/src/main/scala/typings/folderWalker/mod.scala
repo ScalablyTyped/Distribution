@@ -2,16 +2,17 @@ package typings.folderWalker
 
 import typings.folderWalker.folderWalkerStrings.directory
 import typings.folderWalker.folderWalkerStrings.file
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeRequire
 import typings.node.fsMod.Stats
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(dirs: js.Array[String]): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(dirs.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def apply(dirs: js.Array[String], opts: WalkerOptions): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(dirs.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(dirs: js.Array[String]): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(dirs.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(dirs: js.Array[String], opts: WalkerOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(dirs.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   @JSImport("folder-walker", JSImport.Namespace)
   @js.native
@@ -66,9 +67,7 @@ object mod {
     
     def filter(filename: String): Boolean
     
-    var fs: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-      ] = js.undefined
+    var fs: js.UndefOr[NodeRequire] = js.undefined
     
     var maxDepth: js.UndefOr[Double] = js.undefined
   }
@@ -83,9 +82,7 @@ object mod {
       
       inline def setFilter(value: String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      inline def setFs(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any
-      ): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: NodeRequire): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       

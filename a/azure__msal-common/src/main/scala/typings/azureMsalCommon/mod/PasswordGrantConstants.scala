@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PasswordGrantConstants extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.constantsMod.PasswordGrantConstants & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.PasswordGrantConstants & String] = js.native
   
-  /* "password" */ val password: typings.azureMsalCommon.constantsMod.PasswordGrantConstants.password & String = js.native
+  /* "password" */ val password: typings.azureMsalCommon.distUtilsConstantsMod.PasswordGrantConstants.password & String = js.native
   
-  /* "username" */ val username: typings.azureMsalCommon.constantsMod.PasswordGrantConstants.username & String = js.native
+  /* "username" */ val username: typings.azureMsalCommon.distUtilsConstantsMod.PasswordGrantConstants.username & String = js.native
 }

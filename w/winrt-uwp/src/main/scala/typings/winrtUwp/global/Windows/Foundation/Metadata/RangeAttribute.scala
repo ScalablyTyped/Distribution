@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the numeric range constraints for the value of a data field. */
-@JSGlobal("Windows.Foundation.Metadata.RangeAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.RangeAttribute")
 @js.native
-abstract class RangeAttribute ()
+open class RangeAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.RangeAttribute

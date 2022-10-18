@@ -1,6 +1,6 @@
 package typings.fpTs.anon
 
-import typings.fpTs.theseTMod.TheseT
+import typings.fpTs.libTheseTMod.TheseT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,15 +1,15 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.documentCardActionsTypesMod.IDocumentCardActionsProps
-import typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps
-import typings.officeUiFabricReact.documentCardDetailsTypesMod.IDocumentCardDetailsProps
-import typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps
-import typings.officeUiFabricReact.documentCardLocationTypesMod.IDocumentCardLocationProps
-import typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps
-import typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps
-import typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps
-import typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps
-import typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardActionsDottypesMod.IDocumentCardActionsProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardActivityDottypesMod.IDocumentCardActivityProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDetailsDottypesMod.IDocumentCardDetailsProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.IDocumentCardProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardImageDottypesMod.IDocumentCardImageProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardLocationDottypesMod.IDocumentCardLocationProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardLogoDottypesMod.IDocumentCardLogoProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardPreviewDottypesMod.IDocumentCardPreviewProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardStatusDottypesMod.IDocumentCardStatusProps
+import typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardTitleDottypesMod.IDocumentCardTitleProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,10 +62,12 @@ object libDocumentCardMod {
   object DocumentCardType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.DocumentCardType & Double
+      ] = js.native
     
-    /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact & Double = js.native
+    /* 1 */ val compact: typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.DocumentCardType.compact & Double = js.native
     
-    /* 0 */ val normal: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.normal & Double = js.native
+    /* 0 */ val normal: typings.officeUiFabricReact.libComponentsDocumentCardDocumentCardDottypesMod.DocumentCardType.normal & Double = js.native
   }
 }

@@ -50,7 +50,6 @@ import typings.bluebirdGlobal.anon.FnCallValuesReducerInitialValue
 import typings.std.IterableIterator
 import typings.std.Map
 import typings.std.PromiseLike
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,9 +81,7 @@ object mod {
       var bind_Original: js.Function1[/* thisArg */ Any, Bluebird[T]] = js.native
       
       def call[U /* <: /* keyof Q */ String */, Q](propertyName: U, args: Any*): Bluebird[
-            ReturnType[
-              /* import warning: importer.ImportType#apply Failed type conversion: Q[U] */ js.Any
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: Q[U] extends (args : ...any): any ? std.ReturnType<Q[U]> : never */ js.Any
           ] = js.native
       @JSName("call")
       var call_Original: js.ThisFunction2[
@@ -92,9 +89,7 @@ object mod {
             /* keyof any */ /* propertyName */ String, 
             /* repeated */ Any, 
             Bluebird[
-              ReturnType[
-                /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] extends (args : ...any): any ? std.ReturnType<any[keyof any]> : never */ js.Any
             ]
           ] = js.native
       

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.settings
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "settings.HashAlgorithmType")
 @js.native
 open class HashAlgorithmType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.settings.HashAlgorithmType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.settings.HashAlgorithmType {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object HashAlgorithmType {
@@ -20,24 +20,24 @@ object HashAlgorithmType {
   /* static member */
   @JSImport("mendixmodelsdk", "settings.HashAlgorithmType.BCrypt")
   @js.native
-  def BCrypt: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType = js.native
-  inline def BCrypt_=(x: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BCrypt")(x.asInstanceOf[js.Any])
+  def BCrypt: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType = js.native
+  inline def BCrypt_=(x: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BCrypt")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.HashAlgorithmType.MD5")
   @js.native
-  def MD5: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType = js.native
-  inline def MD5_=(x: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MD5")(x.asInstanceOf[js.Any])
+  def MD5: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType = js.native
+  inline def MD5_=(x: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MD5")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.HashAlgorithmType.SHA256")
   @js.native
-  def SHA256: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType = js.native
-  inline def SHA256_=(x: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHA256")(x.asInstanceOf[js.Any])
+  def SHA256: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType = js.native
+  inline def SHA256_=(x: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHA256")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "settings.HashAlgorithmType.SSHA256")
   @js.native
-  def SSHA256: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType = js.native
-  inline def SSHA256_=(x: typings.mendixmodelsdk.settingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSHA256")(x.asInstanceOf[js.Any])
+  def SSHA256: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType = js.native
+  inline def SSHA256_=(x: typings.mendixmodelsdk.srcGenSettingsMod.settings.HashAlgorithmType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SSHA256")(x.asInstanceOf[js.Any])
 }

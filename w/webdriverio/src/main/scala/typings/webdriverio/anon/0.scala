@@ -1,6 +1,6 @@
 package typings.webdriverio.anon
 
-import typings.wdioTypes.optionsMod.SauceRegions
+import typings.wdioTypes.buildOptionsMod.SauceRegions
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

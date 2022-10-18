@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "UnknownException")
 @js.native
 open class UnknownException protected ()
-  extends typings.angularDevkitCore.exceptionMod.UnknownException {
+  extends typings.angularDevkitCore.srcExceptionMod.UnknownException {
   def this(message: String) = this()
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "DataTexture")
 @js.native
 open class DataTexture protected ()
-  extends typings.three.threeMod.DataTexture {
+  extends typings.three.srcThreeMod.DataTexture {
   /**
     * @param data
     * @param width

@@ -2,8 +2,8 @@ package typings.antDesignReactNative.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.antDesignReactNative.anon.Direction
-import typings.antDesignReactNative.stepsMod.StepsProps
-import typings.antDesignReactNative.stepsMod.default
+import typings.antDesignReactNative.libStepsMod.StepsProps
+import typings.antDesignReactNative.libStepsMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +22,8 @@ object Steps {
   
   @JSImport("@ant-design/react-native", "Steps.Step")
   @js.native
-  def Step: Instantiable0[typings.antDesignReactNative.stepsItemMod.default] = js.native
-  inline def Step_=(x: Instantiable0[typings.antDesignReactNative.stepsItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+  def Step: Instantiable0[typings.antDesignReactNative.libStepsStepsItemMod.default] = js.native
+  inline def Step_=(x: Instantiable0[typings.antDesignReactNative.libStepsStepsItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Steps.defaultProps")
   @js.native

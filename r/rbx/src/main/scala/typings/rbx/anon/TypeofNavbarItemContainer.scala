@@ -1,8 +1,8 @@
 package typings.rbx.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.rbx.navbarItemContainerMod.NavbarItemContainer
-import typings.rbx.navbarItemContainerMod.NavbarItemContainerProps
+import typings.rbx.componentsNavbarNavbarItemContainerMod.NavbarItemContainer
+import typings.rbx.componentsNavbarNavbarItemContainerMod.NavbarItemContainerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

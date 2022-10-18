@@ -26,7 +26,6 @@ import typings.chromeApps.chromeAppsStrings.resume_
 import typings.chromeApps.chromeAppsStrings.showAddDialog
 import typings.chromeApps.chromeAppsStrings.showConfigureDialog
 import typings.chromeApps.chromeAppsStrings.suspend_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -199,20 +198,14 @@ object vpnProvider {
     state: ToStringLiteral[
       CONNECTEDFAILURE, 
       /* keyof chrome-apps.anon.CONNECTEDFAILURE */ CONNECTED | FAILURE, 
-      Exclude[
-        /* keyof chrome-apps.anon.CONNECTEDFAILURE */ CONNECTED | FAILURE, 
-        connected__ | failure_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTED :'connected',   FAILURE :'failure'} extends keyof {  CONNECTED :'connected',   FAILURE :'failure'} ? std.Exclude<keyof {  CONNECTED :'connected',   FAILURE :'failure'}, 'connected' | 'failure'> : never */ js.Any
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def notifyConnectionStateChanged(
     state: ToStringLiteral[
       CONNECTEDFAILURE, 
       /* keyof chrome-apps.anon.CONNECTEDFAILURE */ CONNECTED | FAILURE, 
-      Exclude[
-        /* keyof chrome-apps.anon.CONNECTEDFAILURE */ CONNECTED | FAILURE, 
-        connected__ | failure_
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTED :'connected',   FAILURE :'failure'} extends keyof {  CONNECTED :'connected',   FAILURE :'failure'} ? std.Exclude<keyof {  CONNECTED :'connected',   FAILURE :'failure'}, 'connected' | 'failure'> : never */ js.Any
     ],
     callback: js.Function0[Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -241,10 +234,7 @@ object vpnProvider {
       /* message */ ToStringLiteral[
         DISCONNECTED, 
         /* keyof chrome-apps.anon.DISCONNECTED */ CONNECTED | typings.chromeApps.chromeAppsStrings.DISCONNECTED | ERROR | LINK_DOWN | LINK_UP | LINK_CHANGED | SUSPEND | RESUME, 
-        Exclude[
-          /* keyof chrome-apps.anon.DISCONNECTED */ CONNECTED | typings.chromeApps.chromeAppsStrings.DISCONNECTED | ERROR | LINK_DOWN | LINK_UP | LINK_CHANGED | SUSPEND | RESUME, 
-          linkUp | linkChanged | suspend_ | resume_ | linkDown | connected__ | error_ | disconnected__
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CONNECTED :'connected',   DISCONNECTED :'disconnected',   ERROR :'error',   LINK_DOWN :'linkDown',   LINK_UP :'linkUp',   LINK_CHANGED :'linkChanged',   SUSPEND :'suspend',   RESUME :'resume'} extends keyof {  CONNECTED :'connected',   DISCONNECTED :'disconnected',   ERROR :'error',   LINK_DOWN :'linkDown',   LINK_UP :'linkUp',   LINK_CHANGED :'linkChanged',   SUSPEND :'suspend',   RESUME :'resume'} ? std.Exclude<keyof {  CONNECTED :'connected',   DISCONNECTED :'disconnected',   ERROR :'error',   LINK_DOWN :'linkDown',   LINK_UP :'linkUp',   LINK_CHANGED :'linkChanged',   SUSPEND :'suspend',   RESUME :'resume'}, 'linkUp' | 'linkChanged' | 'suspend' | 'resume' | 'linkDown' | 'connected' | 'error' | 'disconnected'> : never */ js.Any
       ], 
       /* error */ String, 
       Unit
@@ -262,10 +252,7 @@ object vpnProvider {
       /* event */ ToStringLiteral[
         SHOWADDDIALOG, 
         /* keyof chrome-apps.anon.SHOWADDDIALOG */ SHOW_ADD_DIALOG | SHOW_CONFIGURE_DIALOG, 
-        Exclude[
-          /* keyof chrome-apps.anon.SHOWADDDIALOG */ SHOW_ADD_DIALOG | SHOW_CONFIGURE_DIALOG, 
-          showAddDialog | showConfigureDialog
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SHOW_ADD_DIALOG :'showAddDialog',   SHOW_CONFIGURE_DIALOG :'showConfigureDialog'} extends keyof {  SHOW_ADD_DIALOG :'showAddDialog',   SHOW_CONFIGURE_DIALOG :'showConfigureDialog'} ? std.Exclude<keyof {  SHOW_ADD_DIALOG :'showAddDialog',   SHOW_CONFIGURE_DIALOG :'showConfigureDialog'}, 'showAddDialog' | 'showConfigureDialog'> : never */ js.Any
       ], 
       /* id */ js.UndefOr[String], 
       Unit

@@ -11,7 +11,7 @@ trait Active
   
   var active: Boolean
   
-  var baseline: js.UndefOr[Dictkey] = js.undefined
+  var baseline: js.UndefOr[Lowerboundary] = js.undefined
   
   var baseline_url: String
   
@@ -30,7 +30,7 @@ object Active {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    inline def setBaseline(value: Dictkey): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: Lowerboundary): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
     inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     

@@ -40,32 +40,25 @@ object mod {
   @js.native
   object REGIONS extends StObject {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[REGIONS & String] = js.native
-    
     @js.native
     sealed trait EUROPE
       extends StObject
          with REGIONS
-    /* "eu1" */ val EUROPE: typings.clevertap.mod.REGIONS.EUROPE & String = js.native
     
     @js.native
     sealed trait INDIA
       extends StObject
          with REGIONS
-    /* "in1" */ val INDIA: typings.clevertap.mod.REGIONS.INDIA & String = js.native
     
     @js.native
     sealed trait SINGAPORE
       extends StObject
          with REGIONS
-    /* "sg1" */ val SINGAPORE: typings.clevertap.mod.REGIONS.SINGAPORE & String = js.native
     
     @js.native
     sealed trait US
       extends StObject
          with REGIONS
-    /* "us1" */ val US: typings.clevertap.mod.REGIONS.US & String = js.native
   }
   
   /**

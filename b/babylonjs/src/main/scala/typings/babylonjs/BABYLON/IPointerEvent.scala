@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IPointerEvent
   extends StObject
-     with IMouseEvent
-     with DeviceSourceEvent[Any] {
+     with IMouseEvent {
   
   /**
     * Subset of possible PointerInput values for events, excluding ones that CANNOT be in events organically and mouse wheel values

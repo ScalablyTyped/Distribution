@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialRingProgressOption
-import typings.antvG2plot.ringProgressTypesMod.RingProgressOptions
+import typings.antvG2plot.libPlotsRingProgressTypesMod.RingProgressOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "RingProgress")
 @js.native
 open class RingProgress protected ()
-  extends typings.antvG2plot.ringProgressMod.RingProgress {
+  extends typings.antvG2plot.libPlotsRingProgressMod.RingProgress {
   def this(container: String, options: RingProgressOptions) = this()
   def this(container: HTMLElement, options: RingProgressOptions) = this()
 }

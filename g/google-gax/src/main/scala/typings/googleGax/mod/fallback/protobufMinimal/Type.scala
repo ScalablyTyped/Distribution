@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobufMinimal.Type")
 @js.native
 open class Type protected ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.Type {
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.Type {
   /**
     * Constructs a new reflected message type instance.
     * @param name Message name

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * An interface that contains all the functionality provided to manage the state of the Office ribbon.
-	 *
-	 * @remarks
+  *
+  * @remarks
   *
   * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
   */
@@ -29,15 +29,15 @@ trait Ribbon extends StObject {
   
   /**
     * Sends a request to Office to update the ribbon.
-  		 *
-  		 * @remarks
+    *
+    * @remarks
     *
     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
-  		 *
+    *
     * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
     * 
     * For code examples, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
-  		 *
+    *
     * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.
     */
   def requestUpdate(input: RibbonUpdaterData): js.Promise[Unit]

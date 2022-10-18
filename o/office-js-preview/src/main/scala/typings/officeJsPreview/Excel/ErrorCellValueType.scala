@@ -10,8 +10,7 @@ sealed trait ErrorCellValueType extends StObject
   * Represents the types of the `ErrorCellValue` object.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.ErrorCellValueType")
 @js.native
@@ -21,8 +20,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `BlockedErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait blocked
@@ -33,8 +31,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `BusyErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait busy
@@ -45,8 +42,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `CalcErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait calc
@@ -57,8 +53,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `ConnectErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait connect
@@ -69,8 +64,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `Div0ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait div0
@@ -81,8 +75,7 @@ object ErrorCellValueType extends StObject {
     * Represents an `ExternalErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait external
@@ -93,8 +86,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `FieldErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait field
@@ -105,8 +97,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `GettingDataErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait gettingData
@@ -117,8 +108,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `NameErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait name
@@ -129,8 +119,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `NotAvailableErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait notAvailable
@@ -141,8 +130,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `NullErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait `null`
@@ -153,8 +141,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `NumErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait num
@@ -165,8 +152,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `PlaceholderErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait placeholder
@@ -177,8 +163,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `RefErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait ref
@@ -189,8 +174,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `SpillErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait spill
@@ -201,8 +185,7 @@ object ErrorCellValueType extends StObject {
     * Represents a `ValueErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait value

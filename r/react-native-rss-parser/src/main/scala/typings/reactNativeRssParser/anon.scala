@@ -9,69 +9,6 @@ object anon {
   
   trait Authors extends StObject {
     
-    var authors: Maybe[js.Array[Name]]
-    
-    var block: Maybe[String]
-    
-    var duration: String
-    
-    var explicit: String
-    
-    var image: Maybe[String]
-    
-    var isClosedCaptioned: Maybe[String]
-    
-    var order: Maybe[String]
-    
-    var subtitle: String
-    
-    var summary: Maybe[String]
-  }
-  object Authors {
-    
-    inline def apply(duration: String, explicit: String, subtitle: String): Authors = {
-      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Authors]
-    }
-    
-    extension [Self <: Authors](x: Self) {
-      
-      inline def setAuthors(value: Maybe[js.Array[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
-      
-      inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
-      
-      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value*))
-      
-      inline def setBlock(value: Maybe[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
-      
-      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
-      
-      inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      inline def setExplicit(value: String): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
-      
-      inline def setImage(value: Maybe[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
-      
-      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
-      
-      inline def setIsClosedCaptioned(value: Maybe[String]): Self = StObject.set(x, "isClosedCaptioned", value.asInstanceOf[js.Any])
-      
-      inline def setIsClosedCaptionedUndefined: Self = StObject.set(x, "isClosedCaptioned", js.undefined)
-      
-      inline def setOrder(value: Maybe[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
-      
-      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
-      
-      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
-      
-      inline def setSummary(value: Maybe[String]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
-      
-      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
-    }
-  }
-  
-  trait Block extends StObject {
-    
     var authors: js.Array[Name]
     
     var block: Maybe[String]
@@ -92,7 +29,7 @@ object anon {
     
     var summary: String
   }
-  object Block {
+  object Authors {
     
     inline def apply(
       authors: js.Array[Name],
@@ -101,12 +38,12 @@ object anon {
       image: String,
       owner: Email,
       summary: String
-    ): Block = {
+    ): Authors = {
       val __obj = js.Dynamic.literal(authors = authors.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Block]
+      __obj.asInstanceOf[Authors]
     }
     
-    extension [Self <: Block](x: Self) {
+    extension [Self <: Authors](x: Self) {
       
       inline def setAuthors(value: js.Array[Name]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
@@ -139,6 +76,69 @@ object anon {
       inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
       inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Block extends StObject {
+    
+    var authors: Maybe[js.Array[Name]]
+    
+    var block: Maybe[String]
+    
+    var duration: String
+    
+    var explicit: String
+    
+    var image: Maybe[String]
+    
+    var isClosedCaptioned: Maybe[String]
+    
+    var order: Maybe[String]
+    
+    var subtitle: String
+    
+    var summary: Maybe[String]
+  }
+  object Block {
+    
+    inline def apply(duration: String, explicit: String, subtitle: String): Block = {
+      val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], subtitle = subtitle.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Block]
+    }
+    
+    extension [Self <: Block](x: Self) {
+      
+      inline def setAuthors(value: Maybe[js.Array[Name]]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+      
+      inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
+      
+      inline def setAuthorsVarargs(value: Name*): Self = StObject.set(x, "authors", js.Array(value*))
+      
+      inline def setBlock(value: Maybe[String]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      
+      inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      
+      inline def setExplicit(value: String): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+      
+      inline def setImage(value: Maybe[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      
+      inline def setIsClosedCaptioned(value: Maybe[String]): Self = StObject.set(x, "isClosedCaptioned", value.asInstanceOf[js.Any])
+      
+      inline def setIsClosedCaptionedUndefined: Self = StObject.set(x, "isClosedCaptioned", js.undefined)
+      
+      inline def setOrder(value: Maybe[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      
+      inline def setSummary(value: Maybe[String]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     }
   }
   

@@ -15,20 +15,8 @@ object wojtekmajReactDaterangePickerStrings {
   inline def decade: decade = "decade".asInstanceOf[decade]
   
   @js.native
-  sealed trait end extends StObject
-  inline def end: end = "end".asInstanceOf[end]
-  
-  @js.native
   sealed trait month extends StObject
   inline def month: month = "month".asInstanceOf[month]
-  
-  @js.native
-  sealed trait range extends StObject
-  inline def range: range = "range".asInstanceOf[range]
-  
-  @js.native
-  sealed trait start extends StObject
-  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait year extends StObject

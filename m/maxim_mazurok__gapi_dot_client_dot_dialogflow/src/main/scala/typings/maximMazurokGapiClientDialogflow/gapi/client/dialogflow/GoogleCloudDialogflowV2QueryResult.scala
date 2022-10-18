@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +26,7 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
     * structure. The data may contain: - webhook call latency - webhook errors
     */
   var diagnosticInfo: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** The collection of rich messages to present to the user. */
@@ -67,9 +64,7 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
     * composite entity property names to property values - Else: parameter value
     */
   var parameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -91,9 +86,7 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
   
   /** If the query was fulfilled by a webhook call, this field is set to the value of the `payload` field returned in the webhook response. */
   var webhookPayload: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** If the query was fulfilled by a webhook call, this field is set to the value of the `source` field returned in the webhook response. */
@@ -121,9 +114,7 @@ object GoogleCloudDialogflowV2QueryResult {
     inline def setCancelsSlotFillingUndefined: Self = StObject.set(x, "cancelsSlotFilling", js.undefined)
     
     inline def setDiagnosticInfo(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
@@ -157,9 +148,7 @@ object GoogleCloudDialogflowV2QueryResult {
     inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value*))
     
     inline def setParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -177,9 +166,7 @@ object GoogleCloudDialogflowV2QueryResult {
     inline def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
     
     inline def setWebhookPayload(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryResult & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
     inline def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)

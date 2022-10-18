@@ -18,9 +18,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("yog-ral", "Balance")
+  /* note: abstract class */ @JSImport("yog-ral", "Balance")
   @js.native
-  abstract class Balance ()
+  open class Balance ()
     extends typings.nodeRal.mod.Balance
   /* static members */
   object Balance {
@@ -47,14 +47,14 @@ object mod {
   @js.native
   val Config: typings.nodeRal.mod.Config = js.native
   
-  @JSImport("yog-ral", "ConfigNormalizer")
+  /* note: abstract class */ @JSImport("yog-ral", "ConfigNormalizer")
   @js.native
-  abstract class ConfigNormalizer ()
+  open class ConfigNormalizer ()
     extends typings.nodeRal.mod.ConfigNormalizer
   
-  @JSImport("yog-ral", "Converter")
+  /* note: abstract class */ @JSImport("yog-ral", "Converter")
   @js.native
-  abstract class Converter ()
+  open class Converter ()
     extends typings.nodeRal.mod.Converter
   
   @JSImport("yog-ral", "Logger")
@@ -108,9 +108,9 @@ object mod {
     Unit
   ]]
   
-  @JSImport("yog-ral", "Protocol")
+  /* note: abstract class */ @JSImport("yog-ral", "Protocol")
   @js.native
-  abstract class Protocol ()
+  open class Protocol ()
     extends typings.nodeRal.mod.Protocol
   /* static members */
   object Protocol {
@@ -164,9 +164,9 @@ object mod {
   inline def RALPromise[T](name: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   inline def RALPromise[T](name: String, options: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("yog-ral", "RalModule")
+  /* note: abstract class */ @JSImport("yog-ral", "RalModule")
   @js.native
-  abstract class RalModule ()
+  open class RalModule ()
     extends typings.nodeRal.mod.RalModule
   /* static members */
   object RalModule {

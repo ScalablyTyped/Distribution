@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSquareRatioSmallMod.SquareRatioSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object squareRatioSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SquareRatioSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SquareRatioSmall", JSImport.Default)
   @js.native
   val default: FC[SquareRatioSmallProps] = js.native
-  
-  trait SquareRatioSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SquareRatioSmallProps {
-    
-    inline def apply(): SquareRatioSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SquareRatioSmallProps]
-    }
-    
-    extension [Self <: SquareRatioSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SquareRatioSmallProps]
   

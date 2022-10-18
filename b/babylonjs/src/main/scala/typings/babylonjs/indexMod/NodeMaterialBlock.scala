@@ -16,24 +16,27 @@ open class NodeMaterialBlock protected ()
     * @param isInput defines a boolean indicating that this block is an input (e.g. it sends data to the shader). Default is false
     */
   def this(name: String) = this()
-  def this(name: String, target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets) = this()
+  def this(
+    name: String,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
+  ) = this()
   def this(name: String, target: Unit, isFinalMerger: Boolean) = this()
   def this(
     name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Boolean
   ) = this()
   def this(name: String, target: Unit, isFinalMerger: Boolean, isInput: Boolean) = this()
   def this(name: String, target: Unit, isFinalMerger: Unit, isInput: Boolean) = this()
   def this(
     name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Boolean,
     isInput: Boolean
   ) = this()
   def this(
     name: String,
-    target: typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
+    target: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockTargetsMod.NodeMaterialBlockTargets,
     isFinalMerger: Unit,
     isInput: Boolean
   ) = this()

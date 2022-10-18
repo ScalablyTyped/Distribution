@@ -6,25 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CodeMessage extends StObject {
   
-  var code: js.UndefOr[String] = js.undefined
+  var code: Double | Null
   
-  var message: js.UndefOr[String] = js.undefined
+  var message: String | Null
+  
+  var status: String | Null
 }
 object CodeMessage {
   
   inline def apply(): CodeMessage = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(code = null, message = null, status = null)
     __obj.asInstanceOf[CodeMessage]
   }
   
   extension [Self <: CodeMessage](x: Self) {
     
-    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
   }
 }

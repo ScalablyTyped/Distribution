@@ -1,17 +1,17 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.abstractSceneMod.AbstractScene
 import typings.babylonjs.anon.Action
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.deviceInputEventsMod.IPointerEvent
-import typings.babylonjs.effectMod.Effect
-import typings.babylonjs.meshMod.Mesh
-import typings.babylonjs.pickingInfoMod.PickingInfo
-import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.eventsDeviceInputEventsMod.IPointerEvent
+import typings.babylonjs.materialsEffectMod.Effect
+import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.meshesSubMeshMod.SubMesh
+import typings.babylonjs.miscSmartArrayMod.SmartArrayNoDuplicate
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.smartArrayMod.SmartArrayNoDuplicate
-import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Array
 import typings.std.HTMLElement

@@ -1,9 +1,9 @@
 package typings.typedoc.mod
 
 import typings.typedoc.anon.Html
-import typings.typedoc.jsxElementsMod.JsxChildren
-import typings.typedoc.jsxElementsMod.JsxComponent
-import typings.typedoc.jsxElementsMod.JsxElement
+import typings.typedoc.distLibUtilsJsxDotelementsMod.JsxChildren
+import typings.typedoc.distLibUtilsJsxDotelementsMod.JsxComponent
+import typings.typedoc.distLibUtilsJsxDotelementsMod.JsxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

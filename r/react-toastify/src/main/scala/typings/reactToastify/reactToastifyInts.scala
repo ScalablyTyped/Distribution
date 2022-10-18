@@ -1,7 +1,7 @@
 package typings.reactToastify
 
-import typings.reactToastify.constantMod.Default
-import typings.reactToastify.eventManagerMod.Event
+import typings.reactToastify.distCoreEventManagerMod.Event
+import typings.reactToastify.distUtilsConstantMod.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

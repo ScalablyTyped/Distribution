@@ -560,6 +560,7 @@ object mod {
     - typings.flickity.flickityStrings.bgLazyLoad
     - typings.flickity.flickityStrings.fullscreenChange
     - typings.flickity.flickityStrings.change
+    - typings.flickity.flickityStrings.destroy
   */
   trait FlickityEvents extends StObject
   object FlickityEvents {
@@ -569,6 +570,8 @@ object mod {
     inline def cellSelect: typings.flickity.flickityStrings.cellSelect = "cellSelect".asInstanceOf[typings.flickity.flickityStrings.cellSelect]
     
     inline def change: typings.flickity.flickityStrings.change = "change".asInstanceOf[typings.flickity.flickityStrings.change]
+    
+    inline def destroy: typings.flickity.flickityStrings.destroy = "destroy".asInstanceOf[typings.flickity.flickityStrings.destroy]
     
     inline def dragEnd: typings.flickity.flickityStrings.dragEnd = "dragEnd".asInstanceOf[typings.flickity.flickityStrings.dragEnd]
     

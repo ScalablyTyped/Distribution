@@ -20,6 +20,13 @@ import typings.firebaseAnalytics.anon.Searchterm
 import typings.firebaseAnalytics.anon.ShippingtierValue
 import typings.firebaseAnalytics.anon.Transactionid
 import typings.firebaseAnalytics.anon.Value
+import typings.firebaseAnalytics.distSrcApiMod.CustomEventName
+import typings.firebaseAnalytics.distSrcPublicTypesMod.Analytics
+import typings.firebaseAnalytics.distSrcPublicTypesMod.AnalyticsCallOptions
+import typings.firebaseAnalytics.distSrcPublicTypesMod.AnalyticsSettings
+import typings.firebaseAnalytics.distSrcPublicTypesMod.ConsentSettings
+import typings.firebaseAnalytics.distSrcPublicTypesMod.CustomParams
+import typings.firebaseAnalytics.distSrcPublicTypesMod.SettingsOptions
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.add_payment_info
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.add_shipping_info
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.add_to_cart
@@ -47,13 +54,6 @@ import typings.firebaseAnalytics.firebaseAnalyticsStrings.view_item
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.view_item_list
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.view_promotion
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.view_search_results
-import typings.firebaseAnalytics.srcApiMod.CustomEventName
-import typings.firebaseAnalytics.srcPublicTypesMod.Analytics
-import typings.firebaseAnalytics.srcPublicTypesMod.AnalyticsCallOptions
-import typings.firebaseAnalytics.srcPublicTypesMod.AnalyticsSettings
-import typings.firebaseAnalytics.srcPublicTypesMod.ConsentSettings
-import typings.firebaseAnalytics.srcPublicTypesMod.CustomParams
-import typings.firebaseAnalytics.srcPublicTypesMod.SettingsOptions
 import typings.firebaseApp.mod.FirebaseApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -365,14 +365,17 @@ object distSrcMod {
   
   inline def setDefaultEventParameters(customParams: CustomParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultEventParameters")(customParams.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def setUserId(analyticsInstance: Analytics): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(analyticsInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def setUserId(analyticsInstance: Analytics, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(analyticsInstance.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setUserId(analyticsInstance: Analytics, id: String, options: AnalyticsCallOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(analyticsInstance.asInstanceOf[js.Any], id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setUserId(analyticsInstance: Analytics, id: Null, options: AnalyticsCallOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(analyticsInstance.asInstanceOf[js.Any], id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setUserProperties(analyticsInstance: Analytics, properties: CustomParams): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(analyticsInstance.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setUserProperties(analyticsInstance: Analytics, properties: CustomParams, options: AnalyticsCallOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(analyticsInstance.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def settings(options: SettingsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     @js.native

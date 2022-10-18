@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "VertexOutputBlock")
 @js.native
 open class VertexOutputBlock protected ()
-  extends typings.babylonjs.legacyMod.VertexOutputBlock {
+  extends typings.babylonjs.legacyLegacyMod.VertexOutputBlock {
   /**
     * Creates a new VertexOutputBlock
     * @param name defines the block name

@@ -2,8 +2,8 @@ package typings.achingbrainNatPortMapper
 
 import typings.achingbrainNatPortMapper.achingbrainNatPortMapperStrings.TCP
 import typings.achingbrainNatPortMapper.achingbrainNatPortMapperStrings.UDP
-import typings.achingbrainNatPortMapper.deviceMod.GatewayDevice
-import typings.achingbrainNatPortMapper.deviceMod.GatewayService
+import typings.achingbrainNatPortMapper.distSrcUpnpDeviceMod.GatewayDevice
+import typings.achingbrainNatPortMapper.distSrcUpnpDeviceMod.GatewayService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

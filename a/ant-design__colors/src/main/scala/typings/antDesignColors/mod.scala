@@ -2,7 +2,7 @@ package typings.antDesignColors
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignColors.anon.Arraystringprimarystringu
-import typings.antDesignColors.generateMod.Opts
+import typings.antDesignColors.distSrcGenerateMod.Opts
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject

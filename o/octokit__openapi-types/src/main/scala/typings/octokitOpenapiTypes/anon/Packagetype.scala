@@ -1,10 +1,13 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.container
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.docker
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.internal
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maven
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.npm
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.nuget
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rubygems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,9 +19,7 @@ trait Packagetype extends StObject {
   var package_type: npm | maven | rubygems | docker | nuget | container
   
   /** The selected visibility of the packages. Only `container` package_types currently support `internal` visibility properly. For other ecosystems `internal` is synonymous with `private`. This parameter is optional and only filters an existing result set. */
-  var visibility: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['package-visibility'] */ js.Any
-  ] = js.undefined
+  var visibility: js.UndefOr[public | `private` | internal] = js.undefined
 }
 object Packagetype {
   
@@ -31,9 +32,7 @@ object Packagetype {
     
     inline def setPackage_type(value: npm | maven | rubygems | docker | nuget | container): Self = StObject.set(x, "package_type", value.asInstanceOf[js.Any])
     
-    inline def setVisibility(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['package-visibility'] */ js.Any
-    ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: public | `private` | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }

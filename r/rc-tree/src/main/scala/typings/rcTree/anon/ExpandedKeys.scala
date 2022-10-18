@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExpandedKeys extends StObject {
   
-  var expandedKeys: js.Array[typings.rcTree.interfaceMod.Key]
+  var expandedKeys: js.Array[typings.rcTree.esInterfaceMod.Key]
 }
 object ExpandedKeys {
   
-  inline def apply(expandedKeys: js.Array[typings.rcTree.interfaceMod.Key]): ExpandedKeys = {
+  inline def apply(expandedKeys: js.Array[typings.rcTree.esInterfaceMod.Key]): ExpandedKeys = {
     val __obj = js.Dynamic.literal(expandedKeys = expandedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandedKeys]
   }
   
   extension [Self <: ExpandedKeys](x: Self) {
     
-    inline def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+    inline def setExpandedKeys(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     
-    inline def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value*))
+    inline def setExpandedKeysVarargs(value: typings.rcTree.esInterfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value*))
   }
 }

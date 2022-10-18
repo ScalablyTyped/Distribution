@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sharedb", "MilestoneDB")
+/* note: abstract class */ @JSImport("sharedb", "MilestoneDB")
 @js.native
-abstract class MilestoneDB () extends StObject {
+open class MilestoneDB () extends StObject {
   
   def close(): Unit = js.native
   def close(callback: BasicCallback): Unit = js.native

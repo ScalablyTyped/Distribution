@@ -1,6 +1,8 @@
 package typings.oclazyload
 
 import org.scalablytyped.runtime.Shortcut
+import typings.angular.mod.IModule
+import typings.angular.mod.global.Function
 import typings.oclazyload.oc.IModuleConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +19,7 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: String = ^
   
+  /* augmented module */
   object angularAugmentingMod {
     
     @js.native
@@ -31,10 +34,10 @@ object mod extends Shortcut {
         * @param requires The names of modules this module depends on, and/or ocLazyLoad module configurations. If specified then new module is being created. If unspecified then the module is being retrieved for further configuration.
         * @param configFn Optional configuration function for the module.
         */
-      def module(name: String): Any = js.native
-      def module(name: String, requires: js.Array[String | IModuleConfig]): Any = js.native
-      def module(name: String, requires: js.Array[String | IModuleConfig], configFn: js.Function): Any = js.native
-      def module(name: String, requires: Unit, configFn: js.Function): Any = js.native
+      def module(name: String): IModule = js.native
+      def module(name: String, requires: js.Array[String | IModuleConfig]): IModule = js.native
+      def module(name: String, requires: js.Array[String | IModuleConfig], configFn: Function): IModule = js.native
+      def module(name: String, requires: Unit, configFn: Function): IModule = js.native
     }
   }
 }

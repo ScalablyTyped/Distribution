@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "ChangeDetectorRef")
+/* note: abstract class */ @JSImport("@angular/core", "ChangeDetectorRef")
 @js.native
-abstract class ChangeDetectorRef () extends StObject {
+open class ChangeDetectorRef () extends StObject {
   
   /**
     * Checks the change detector and its children, and throws if any changes are detected.

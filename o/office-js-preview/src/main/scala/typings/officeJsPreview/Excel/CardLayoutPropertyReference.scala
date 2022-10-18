@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a reference to a property used by the card layout.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CardLayoutPropertyReference extends StObject {
   
@@ -17,8 +16,7 @@ trait CardLayoutPropertyReference extends StObject {
     * Represents the name of the property referenced by the card layout.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var property: String
 }

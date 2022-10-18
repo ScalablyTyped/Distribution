@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
 import typings.babylonjs.anon.PartialVideoRecorderOptio
-import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.enginesEngineMod.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "VideoRecorder")
 @js.native
 open class VideoRecorder protected ()
-  extends typings.babylonjs.videoRecorderMod.VideoRecorder {
+  extends typings.babylonjs.miscVideoRecorderMod.VideoRecorder {
   /**
     * Create a new VideoCapture object which can help converting what you see in Babylon to a video file.
     * @param engine Defines the BabylonJS Engine you wish to record.

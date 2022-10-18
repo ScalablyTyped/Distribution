@@ -2,9 +2,11 @@ package typings.firebaseAppCheck
 
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseAppCheck.distSrcMod.CustomProvider
-import typings.firebaseAppCheck.srcPublicTypesMod.AppCheck
-import typings.firebaseAppCheck.srcRecaptchaMod.GreCAPTCHA
-import typings.firebaseAppCheck.srcRecaptchaMod.GreCAPTCHATopLevel
+import typings.firebaseAppCheck.distSrcPublicTypesMod.AppCheck
+import typings.firebaseAppCheck.distSrcRecaptchaMod.GreCAPTCHA
+import typings.firebaseAppCheck.distSrcRecaptchaMod.GreCAPTCHATopLevel
+import typings.firebaseAppCheck.firebaseAppCheckStrings.heartbeat
+import typings.firebaseComponent.mod.Provider
 import typings.std.HTMLScriptElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -33,8 +35,8 @@ object distTestUtilMod {
   inline def getFakeGreCAPTCHA(): GreCAPTCHATopLevel | GreCAPTCHA = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeGreCAPTCHA")().asInstanceOf[GreCAPTCHATopLevel | GreCAPTCHA]
   inline def getFakeGreCAPTCHA(isTopLevel: Boolean): GreCAPTCHATopLevel | GreCAPTCHA = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeGreCAPTCHA")(isTopLevel.asInstanceOf[js.Any]).asInstanceOf[GreCAPTCHATopLevel | GreCAPTCHA]
   
-  inline def getFakeHeartbeatServiceProvider(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeHeartbeatServiceProvider")().asInstanceOf[Any]
-  inline def getFakeHeartbeatServiceProvider(fakeLogString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeHeartbeatServiceProvider")(fakeLogString.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getFakeHeartbeatServiceProvider(): Provider[heartbeat] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeHeartbeatServiceProvider")().asInstanceOf[Provider[heartbeat]]
+  inline def getFakeHeartbeatServiceProvider(fakeLogString: String): Provider[heartbeat] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeHeartbeatServiceProvider")(fakeLogString.asInstanceOf[js.Any]).asInstanceOf[Provider[heartbeat]]
   
   inline def getFullApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullApp")().asInstanceOf[FirebaseApp]
   

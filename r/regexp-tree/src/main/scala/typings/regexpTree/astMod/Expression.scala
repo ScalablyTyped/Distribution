@@ -81,7 +81,7 @@ object Expression {
     __obj.asInstanceOf[typings.regexpTree.astMod.Repetition]
   }
   
-  inline def SimpleAssertion(kind: ^ | $ | String): typings.regexpTree.astMod.SimpleAssertion = {
+  inline def SimpleAssertion(kind: ^ | $ | (/* \b */ String)): typings.regexpTree.astMod.SimpleAssertion = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[typings.regexpTree.astMod.SimpleAssertion]

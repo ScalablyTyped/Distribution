@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/blob" : "3.18.0"
+      "@wordpress/blob" : "3.19.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/blob" : "3.18.0"
+      "@wordpress/blob" : "3.19.0"
     }
   ],
   "compile-devDependencies" : [

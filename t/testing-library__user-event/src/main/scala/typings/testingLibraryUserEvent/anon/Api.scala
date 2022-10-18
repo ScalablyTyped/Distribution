@@ -1,7 +1,7 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.setupSetupMod.UserEvent
-import typings.testingLibraryUserEvent.systemMod.System
+import typings.testingLibraryUserEvent.distTypesSetupSetupMod.Instance
+import typings.testingLibraryUserEvent.distTypesSetupSetupMod.UserEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +10,12 @@ trait Api extends StObject {
   
   var api: UserEvent
   
-  var system: System
+  var instance: Instance
 }
 object Api {
   
-  inline def apply(api: UserEvent, system: System): Api = {
-    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
+  inline def apply(api: UserEvent, instance: Instance): Api = {
+    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Api]
   }
   
@@ -23,6 +23,6 @@ object Api {
     
     inline def setApi(value: UserEvent): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    inline def setSystem(value: System): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
   }
 }

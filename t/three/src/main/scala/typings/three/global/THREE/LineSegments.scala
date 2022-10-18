@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.LineSegments")
 @js.native
-open class LineSegments[TGeometry /* <: typings.three.bufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material] */] ()
+open class LineSegments[TGeometry /* <: typings.three.srcCoreBufferGeometryMod.BufferGeometry */, TMaterial /* <: typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material] */] ()
   extends typings.three.mod.LineSegments[TGeometry, TMaterial] {
   def this(geometry: TGeometry) = this()
   def this(geometry: TGeometry, material: TMaterial) = this()

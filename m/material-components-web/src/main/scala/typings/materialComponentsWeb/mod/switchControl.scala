@@ -32,7 +32,7 @@ object switchControl {
     def this(root: HTMLButtonElement) = this()
     def this(
       root: HTMLButtonElement,
-      foundation: typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation
+      foundation: typings.materialSwitch.foundationMod.MDCSwitchRenderFoundation
     ) = this()
   }
   /* static members */
@@ -76,12 +76,23 @@ object switchControl {
   
   object deprecated {
     
+    @JSImport("material-components-web", "switchControl.deprecated.default")
+    @js.native
+    open class default ()
+      extends typings.materialSwitch.mod.deprecated.default {
+      def this(adapter: PartialMDCSwitchAdapter) = this()
+    }
+    
     @JSImport("material-components-web", "switchControl.deprecated.MDCSwitch")
     @js.native
     open class MDCSwitch protected ()
       extends typings.materialSwitch.mod.deprecated.MDCSwitch {
       def this(root: Element, foundation: Unit, args: Any*) = this()
-      def this(root: Element, foundation: typings.materialSwitch.foundationMod.MDCSwitchFoundation, args: Any*) = this()
+      def this(
+        root: Element,
+        foundation: typings.materialSwitch.deprecatedFoundationMod.MDCSwitchFoundation,
+        args: Any*
+      ) = this()
     }
     /* static members */
     object MDCSwitch {

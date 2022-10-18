@@ -4,7 +4,7 @@ import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
 import typings.node.streamMod.TransformOptions
-import typings.pgPacketStream.messagesMod.Mode
+import typings.pgPacketStream.distMessagesMod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

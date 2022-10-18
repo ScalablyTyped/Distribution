@@ -10,45 +10,41 @@ trait Repositoryurl extends StObject {
     * Format: date-time
     * @example 2012-10-06T21:34:12Z
     */
-  var created_at: String | Null
+  var created_at: String
   
+  /** @description Determines if all notifications should be blocked from this repository. */
   var ignored: Boolean
   
   var reason: String | Null
   
   /**
     * Format: uri
-    * @example https://api.github.com/repos/1
+    * @example https://api.github.com/repos/octocat/example
     */
-  var repository_url: js.UndefOr[String] = js.undefined
+  var repository_url: String
   
-  /** @example true */
+  /**
+    * @description Determines if notifications should be received from this repository.
+    * @example true
+    */
   var subscribed: Boolean
   
   /**
     * Format: uri
-    * @example https://api.github.com/notifications/threads/1
-    */
-  var thread_url: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Format: uri
-    * @example https://api.github.com/notifications/threads/1/subscription
+    * @example https://api.github.com/repos/octocat/example/subscription
     */
   var url: String
 }
 object Repositoryurl {
   
-  inline def apply(ignored: Boolean, subscribed: Boolean, url: String): Repositoryurl = {
-    val __obj = js.Dynamic.literal(ignored = ignored.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], created_at = null, reason = null)
+  inline def apply(created_at: String, ignored: Boolean, repository_url: String, subscribed: Boolean, url: String): Repositoryurl = {
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], ignored = ignored.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], reason = null)
     __obj.asInstanceOf[Repositoryurl]
   }
   
   extension [Self <: Repositoryurl](x: Self) {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
-    
-    inline def setCreated_atNull: Self = StObject.set(x, "created_at", null)
     
     inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
@@ -58,13 +54,7 @@ object Repositoryurl {
     
     inline def setRepository_url(value: String): Self = StObject.set(x, "repository_url", value.asInstanceOf[js.Any])
     
-    inline def setRepository_urlUndefined: Self = StObject.set(x, "repository_url", js.undefined)
-    
     inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
-    
-    inline def setThread_url(value: String): Self = StObject.set(x, "thread_url", value.asInstanceOf[js.Any])
-    
-    inline def setThread_urlUndefined: Self = StObject.set(x, "thread_url", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

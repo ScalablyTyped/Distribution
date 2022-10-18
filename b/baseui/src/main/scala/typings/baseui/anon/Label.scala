@@ -12,7 +12,7 @@ trait Label extends StObject {
   
   val id: AL
   
-  val label: String
+  val label: /* Albania (Shqipëri) */ String
 }
 object Label {
   
@@ -27,6 +27,6 @@ object Label {
     
     inline def setId(value: AL): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: /* Albania (Shqipëri) */ String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

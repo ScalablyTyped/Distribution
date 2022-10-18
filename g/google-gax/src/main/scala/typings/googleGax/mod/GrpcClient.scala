@@ -1,7 +1,7 @@
 package typings.googleGax.mod
 
 import typings.googleGax.anon.TypeofMessage
-import typings.googleGax.grpcMod.GrpcClientOptions
+import typings.googleGax.buildSrcGrpcMod.GrpcClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   */
 open class GrpcClient ()
-  extends typings.googleGax.grpcMod.GrpcClient {
+  extends typings.googleGax.buildSrcGrpcMod.GrpcClient {
   def this(options: GrpcClientOptions) = this()
 }
 /* static members */

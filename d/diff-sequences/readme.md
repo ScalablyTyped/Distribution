@@ -1,7 +1,7 @@
 
 # Scala.js typings for diff-sequences
 
-Typings are for version 29.0.0
+Typings are for version 29.2.0
 
 ## Library description:
 Compare items in two sequences to find a longest common subsequence

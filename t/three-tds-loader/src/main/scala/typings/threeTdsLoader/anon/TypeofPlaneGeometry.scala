@@ -11,5 +11,5 @@ trait TypeofPlaneGeometry
   extends StObject
      with Instantiable0[PlaneGeometry] {
   
-  def fromJSON(data: Any): typings.three.planeGeometryMod.PlaneGeometry = js.native
+  def fromJSON(data: Any): typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry = js.native
 }

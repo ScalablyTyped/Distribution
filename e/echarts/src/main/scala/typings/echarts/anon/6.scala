@@ -12,7 +12,7 @@ trait `6` extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.0
     */
-  var `0`: js.UndefOr[SymbolRotate] = js.undefined
+  var `0`: js.UndefOr[SymbolOffset] = js.undefined
   
   /**
     * Data of the ending point.
@@ -20,7 +20,7 @@ trait `6` extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data.1
     */
-  var `1`: js.UndefOr[SymbolRotate] = js.undefined
+  var `1`: js.UndefOr[SymbolOffset] = js.undefined
 }
 object `6` {
   
@@ -31,11 +31,11 @@ object `6` {
   
   extension [Self <: `6`](x: Self) {
     
-    inline def set0(value: SymbolRotate): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: SymbolOffset): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
     
-    inline def set1(value: SymbolRotate): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: SymbolOffset): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     inline def set1Undefined: Self = StObject.set(x, "1", js.undefined)
   }

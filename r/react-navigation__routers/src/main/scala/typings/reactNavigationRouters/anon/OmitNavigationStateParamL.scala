@@ -1,9 +1,9 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.commonActionsMod._ResetState
+import typings.reactNavigationRouters.libTypescriptSrcCommonActionsMod._ResetState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.key
-import typings.reactNavigationRouters.typesMod.Route
 import typings.std.Extract
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject

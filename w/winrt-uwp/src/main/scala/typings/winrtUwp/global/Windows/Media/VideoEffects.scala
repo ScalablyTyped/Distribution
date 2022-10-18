@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides video-related effects. */
-@JSGlobal("Windows.Media.VideoEffects")
+/* note: abstract class */ @JSGlobal("Windows.Media.VideoEffects")
 @js.native
-abstract class VideoEffects ()
+open class VideoEffects ()
   extends StObject
      with typings.winrtUwp.Windows.Media.VideoEffects
 object VideoEffects {

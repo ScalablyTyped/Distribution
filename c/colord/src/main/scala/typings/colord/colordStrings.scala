@@ -1,6 +1,6 @@
 package typings.colord
 
-import typings.colord.harmoniesMod.HarmonyType
+import typings.colord.pluginsHarmoniesMod.HarmonyType
 import typings.colord.typesMod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

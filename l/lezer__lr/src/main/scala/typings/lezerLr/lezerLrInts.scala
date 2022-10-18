@@ -1,12 +1,12 @@
 package typings.lezerLr
 
-import typings.lezerLr.constantsMod.Action
-import typings.lezerLr.constantsMod.Encode
-import typings.lezerLr.constantsMod.ParseState
-import typings.lezerLr.constantsMod.Seq
-import typings.lezerLr.constantsMod.Specialize
-import typings.lezerLr.constantsMod.StateFlag
-import typings.lezerLr.stackMod.Recover
+import typings.lezerLr.distConstantsMod.Action
+import typings.lezerLr.distConstantsMod.Encode
+import typings.lezerLr.distConstantsMod.ParseState
+import typings.lezerLr.distConstantsMod.Seq
+import typings.lezerLr.distConstantsMod.Specialize
+import typings.lezerLr.distConstantsMod.StateFlag
+import typings.lezerLr.distStackMod.Recover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

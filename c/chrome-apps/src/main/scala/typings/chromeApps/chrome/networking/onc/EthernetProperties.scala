@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EthernetProperties[M /* <: ManagedObject */] extends StObject {
   
   /** The authentication used by the Ethernet network. Possible values are None and 8021X. */
-  var Authentication: js.UndefOr[EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]] = js.undefined
+  var Authentication: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.EthernetAuthenticationType> : chrome-apps.chrome.networking.onc.EthernetAuthenticationType | undefined */ js.Any
+  ] = js.undefined
   
   /** Whether the Ethernet network should be connected automatically. */
-  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.undefined
+  var AutoConnect: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean | undefined */ js.Any
+  ] = js.undefined
   
   /** Network's EAP settings. Required for 8021X authentication. */
   var EAP: js.UndefOr[EAPProperties] = js.undefined
@@ -24,11 +28,15 @@ object EthernetProperties {
   
   extension [Self <: EthernetProperties[?], M /* <: ManagedObject */](x: Self & EthernetProperties[M]) {
     
-    inline def setAuthentication(value: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.EthernetAuthenticationType> : chrome-apps.chrome.networking.onc.EthernetAuthenticationType | undefined */ js.Any
+    ): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
     
-    inline def setAutoConnect(value: Boolean | ManagedBoolean): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
+    inline def setAutoConnect(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedBoolean : boolean | undefined */ js.Any
+    ): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
     inline def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     

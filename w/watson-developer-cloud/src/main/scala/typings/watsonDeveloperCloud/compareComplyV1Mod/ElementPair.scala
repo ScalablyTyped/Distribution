@@ -38,13 +38,13 @@ object ElementPair {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setCategories(value: js.Array[CategoryComparison]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: CategoryComparison*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: CategoryComparison*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDocument_label(value: String): Self = StObject.set(x, "document_label", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object ElementPair {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: TypeLabelComparison*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeLabelComparison*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

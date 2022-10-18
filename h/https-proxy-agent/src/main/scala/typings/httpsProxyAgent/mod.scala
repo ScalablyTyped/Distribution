@@ -2,7 +2,7 @@ package typings.httpsProxyAgent
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.agentBase.mod.AgentOptions
-import typings.httpsProxyAgent.agentMod.default
+import typings.httpsProxyAgent.distAgentMod.default
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

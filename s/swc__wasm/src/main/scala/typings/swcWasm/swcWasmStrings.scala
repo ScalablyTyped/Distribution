@@ -646,10 +646,6 @@ object swcWasmStrings {
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
-  sealed trait ToSnakeCaseProperties extends StObject
-  inline def ToSnakeCaseProperties: ToSnakeCaseProperties = "ToSnakeCaseProperties".asInstanceOf[ToSnakeCaseProperties]
-  
-  @js.native
   sealed trait TryStatement extends StObject
   inline def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
   

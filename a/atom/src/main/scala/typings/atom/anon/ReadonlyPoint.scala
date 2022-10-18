@@ -1,11 +1,11 @@
 package typings.atom.anon
 
-import typings.atom.mod.PointCompatible
+import typings.atom.dependenciesTextBufferSrcPointMod.PointCompatible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Readonly<atom.atom.Point> */
+/* Inlined std.Readonly<atom.atom/dependencies/text-buffer/src/point.Point> */
 @js.native
 trait ReadonlyPoint extends StObject {
   
@@ -17,7 +17,7 @@ trait ReadonlyPoint extends StObject {
   
   def freeze(): this.type = js.native
   
-  val fromObject: js.UndefOr[js.Any] = js.native
+  val fromObject: js.UndefOr[Any] = js.native
   
   def isEqual(other: PointCompatible): Boolean = js.native
   
@@ -29,7 +29,7 @@ trait ReadonlyPoint extends StObject {
   
   def isLessThanOrEqual(other: PointCompatible): Boolean = js.native
   
-  val min: js.UndefOr[js.Any] = js.native
+  val min: js.UndefOr[Any] = js.native
   
   def negate(): this.type = js.native
   

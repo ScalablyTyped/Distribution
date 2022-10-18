@@ -21,6 +21,6 @@ object SpeechModels {
     
     inline def setModels(value: js.Array[SpeechModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    inline def setModelsVarargs(value: SpeechModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SpeechModel*): Self = StObject.set(x, "models", js.Array(value*))
   }
 }

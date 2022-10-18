@@ -1,11 +1,11 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactEventMod.EventPhase
-import typings.interactjsTypes.interactjsModifiersTypesMod.ModifierState
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.EdgeOptions
-import typings.interactjsTypes.typesMod.FullRect
-import typings.interactjsTypes.typesMod.Point
+import typings.interactjsTypes.coreInteractEventMod.EventPhase
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.EdgeOptions
+import typings.interactjsTypes.coreTypesMod.FullRect
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.modifiersTypesMod.ModifierState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait MethodArgPartialModifierA extends StObject {
   
   var interactable: js.UndefOr[InteractableAllowFrom] = js.undefined
   
-  var interaction: js.UndefOr[typings.interactjsTypes.interactionMod.Interaction[ActionName]] = js.undefined
+  var interaction: js.UndefOr[typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] = js.undefined
   
   var pageCoords: Point & js.UndefOr[Point]
   
@@ -37,7 +37,7 @@ trait MethodArgPartialModifierA extends StObject {
   
   var skipModifiers: js.UndefOr[Double] = js.undefined
   
-  var startOffset: js.UndefOr[typings.interactjsTypes.typesMod.Rect] = js.undefined
+  var startOffset: js.UndefOr[typings.interactjsTypes.coreTypesMod.Rect] = js.undefined
   
   var state: js.UndefOr[ModifierState[Any, Any, Any]] = js.undefined
 }
@@ -69,7 +69,7 @@ object MethodArgPartialModifierA {
     
     inline def setInteractableUndefined: Self = StObject.set(x, "interactable", js.undefined)
     
-    inline def setInteraction(value: typings.interactjsTypes.interactionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
@@ -95,7 +95,7 @@ object MethodArgPartialModifierA {
     
     inline def setSkipModifiersUndefined: Self = StObject.set(x, "skipModifiers", js.undefined)
     
-    inline def setStartOffset(value: typings.interactjsTypes.typesMod.Rect): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    inline def setStartOffset(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     

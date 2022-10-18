@@ -1,7 +1,7 @@
 package typings.antDesignProUtils.anon
 
-import typings.rcTable.interfaceMod.GetRowKey
-import typings.rcTable.interfaceMod.Key
+import typings.rcTable.libInterfaceMod.GetRowKey
+import typings.rcTable.libInterfaceMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -25,5 +25,5 @@ trait SinonStubStatic extends StObject {
     * An exception is thrown if the property is not already a function.
     * The original function can be restored by calling object.method.restore(); (or stub.restore();).
     */
-  def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[Any | js.Array[Any], Any] = js.native
+  def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends (args : infer TArgs): infer TReturnValue ? sinon.sinon.SinonStub<TArgs, TReturnValue> : sinon.sinon.SinonStub<std.Array<any>, any> */ js.Any = js.native
 }

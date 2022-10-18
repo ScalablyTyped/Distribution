@@ -1,5 +1,6 @@
 package typings.fullcalendarCommon.mod
 
+import typings.fullcalendarCommon.anon.TypeData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ trait EventDef extends StObject {
   
   var publicId: String
   
-  var recurringDef: typings.fullcalendarCommon.anon.Duration | Null
+  var recurringDef: TypeData | Null
   
   var sourceId: String
   
@@ -66,7 +67,7 @@ object EventDef {
     
     inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    inline def setRecurringDef(value: typings.fullcalendarCommon.anon.Duration): Self = StObject.set(x, "recurringDef", value.asInstanceOf[js.Any])
+    inline def setRecurringDef(value: TypeData): Self = StObject.set(x, "recurringDef", value.asInstanceOf[js.Any])
     
     inline def setRecurringDefNull: Self = StObject.set(x, "recurringDef", null)
     

@@ -291,6 +291,22 @@ object mod {
     val yellowBright: CSPair = js.native
   }
   
+  @JSImport("ansi-styles", "backgroundColorNames")
+  @js.native
+  val backgroundColorNames: js.Array[BackgroundColorName] = js.native
+  
+  @JSImport("ansi-styles", "colorNames")
+  @js.native
+  val colorNames: js.Array[ColorName] = js.native
+  
+  @JSImport("ansi-styles", "foregroundColorNames")
+  @js.native
+  val foregroundColorNames: js.Array[ForegroundColorName] = js.native
+  
+  @JSImport("ansi-styles", "modifierNames")
+  @js.native
+  val modifierNames: js.Array[ModifierName] = js.native
+  
   trait BackgroundColor extends StObject {
     
     val bgBlack: CSPair
@@ -401,6 +417,30 @@ object mod {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.ansiStyles.ansiStylesStrings.bgBlack
+    - typings.ansiStyles.ansiStylesStrings.bgRed
+    - typings.ansiStyles.ansiStylesStrings.bgGreen
+    - typings.ansiStyles.ansiStylesStrings.bgYellow
+    - typings.ansiStyles.ansiStylesStrings.bgBlue
+    - typings.ansiStyles.ansiStylesStrings.bgCyan
+    - typings.ansiStyles.ansiStylesStrings.bgMagenta
+    - typings.ansiStyles.ansiStylesStrings.bgWhite
+    - typings.ansiStyles.ansiStylesStrings.bgGray
+    - typings.ansiStyles.ansiStylesStrings.bgGrey
+    - typings.ansiStyles.ansiStylesStrings.bgBlackBright
+    - typings.ansiStyles.ansiStylesStrings.bgRedBright
+    - typings.ansiStyles.ansiStylesStrings.bgGreenBright
+    - typings.ansiStyles.ansiStylesStrings.bgYellowBright
+    - typings.ansiStyles.ansiStylesStrings.bgBlueBright
+    - typings.ansiStyles.ansiStylesStrings.bgCyanBright
+    - typings.ansiStyles.ansiStylesStrings.bgMagentaBright
+    - typings.ansiStyles.ansiStylesStrings.bgWhiteBright
+  */
+  trait BackgroundColorName
+    extends StObject
+       with ColorName
+  
   trait CSPair extends StObject {
     
     /**
@@ -465,6 +505,12 @@ object mod {
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ansiStyles.mod.ForegroundColorName
+    - typings.ansiStyles.mod.BackgroundColorName
+  */
+  trait ColorName extends StObject
   
   trait ConvertColor extends StObject {
     
@@ -648,6 +694,30 @@ object mod {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.ansiStyles.ansiStylesStrings.black
+    - typings.ansiStyles.ansiStylesStrings.red
+    - typings.ansiStyles.ansiStylesStrings.green
+    - typings.ansiStyles.ansiStylesStrings.yellow
+    - typings.ansiStyles.ansiStylesStrings.blue
+    - typings.ansiStyles.ansiStylesStrings.cyan
+    - typings.ansiStyles.ansiStylesStrings.magenta
+    - typings.ansiStyles.ansiStylesStrings.white
+    - typings.ansiStyles.ansiStylesStrings.gray
+    - typings.ansiStyles.ansiStylesStrings.grey
+    - typings.ansiStyles.ansiStylesStrings.blackBright
+    - typings.ansiStyles.ansiStylesStrings.redBright
+    - typings.ansiStyles.ansiStylesStrings.greenBright
+    - typings.ansiStyles.ansiStylesStrings.yellowBright
+    - typings.ansiStyles.ansiStylesStrings.blueBright
+    - typings.ansiStyles.ansiStylesStrings.cyanBright
+    - typings.ansiStyles.ansiStylesStrings.magentaBright
+    - typings.ansiStyles.ansiStylesStrings.whiteBright
+  */
+  trait ForegroundColorName
+    extends StObject
+       with ColorName
+  
   trait Modifier extends StObject {
     
     /**
@@ -734,4 +804,17 @@ object mod {
       inline def setUnderline(value: CSPair): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ansiStyles.ansiStylesStrings.reset
+    - typings.ansiStyles.ansiStylesStrings.bold
+    - typings.ansiStyles.ansiStylesStrings.dim
+    - typings.ansiStyles.ansiStylesStrings.italic
+    - typings.ansiStyles.ansiStylesStrings.underline
+    - typings.ansiStyles.ansiStylesStrings.overline
+    - typings.ansiStyles.ansiStylesStrings.inverse
+    - typings.ansiStyles.ansiStylesStrings.hidden
+    - typings.ansiStyles.ansiStylesStrings.strikethrough
+  */
+  trait ModifierName extends StObject
 }

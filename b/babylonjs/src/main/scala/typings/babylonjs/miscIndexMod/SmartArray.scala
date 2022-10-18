@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "SmartArray")
 @js.native
 open class SmartArray[T] protected ()
-  extends typings.babylonjs.smartArrayMod.SmartArray[T] {
+  extends typings.babylonjs.miscSmartArrayMod.SmartArray[T] {
   /**
     * Instantiates a Smart Array.
     * @param capacity defines the default capacity of the array.

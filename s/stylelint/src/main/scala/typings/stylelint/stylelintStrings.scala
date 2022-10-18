@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object stylelintStrings {
   
   @js.native
-  sealed trait CheckAgainstRule extends StObject
-  inline def CheckAgainstRule: CheckAgainstRule = "CheckAgainstRule".asInstanceOf[CheckAgainstRule]
-  
-  @js.native
   sealed trait animation extends StObject
   inline def animation: animation = "animation".asInstanceOf[animation]
   

@@ -1,14 +1,14 @@
 package typings.node.anon
 
 import typings.node.nodeStrings.option
-import typings.node.utilMod._PreciseTokenForOptions
+import typings.node.utilMod.OptionToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Index[K /* <: String */]
+trait Index
   extends StObject
-     with _PreciseTokenForOptions[K, Any] {
+     with OptionToken {
   
   var index: Double
   
@@ -16,7 +16,7 @@ trait Index[K /* <: String */]
   
   var kind: option
   
-  var name: K
+  var name: String
   
   var rawName: String
   
@@ -24,12 +24,12 @@ trait Index[K /* <: String */]
 }
 object Index {
   
-  inline def apply[K /* <: String */](index: Double, inlineValue: Boolean, name: K, rawName: String, value: String): Index[K] = {
+  inline def apply(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): Index = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Index[K]]
+    __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index[?], K /* <: String */](x: Self & Index[K]) {
+  extension [Self <: Index](x: Self) {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -37,7 +37,7 @@ object Index {
     
     inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
     

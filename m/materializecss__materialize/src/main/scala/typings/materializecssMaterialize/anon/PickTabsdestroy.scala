@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Tabs, 'destroy'> */
 trait PickTabsdestroy extends StObject {
   
-  var destroy: js.UndefOr[Any] = js.undefined
+  def destroy(): Unit
+  @JSName("destroy")
+  var destroy_Original: js.Function0[Unit]
 }
 object PickTabsdestroy {
   
-  inline def apply(): PickTabsdestroy = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(destroy: () => Unit): PickTabsdestroy = {
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
     __obj.asInstanceOf[PickTabsdestroy]
   }
   
   extension [Self <: PickTabsdestroy](x: Self) {
     
-    inline def setDestroy(value: Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
-    
-    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }
 }

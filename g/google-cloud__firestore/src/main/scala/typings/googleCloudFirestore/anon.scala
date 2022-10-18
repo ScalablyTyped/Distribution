@@ -2,11 +2,11 @@ package typings.googleCloudFirestore
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import typings.googleCloudFirestore.FirebaseFirestore.AggregateField
 import typings.googleCloudFirestore.FirebaseFirestore.FieldPath
 import typings.googleCloudFirestore.FirebaseFirestore.SetOptions
-import typings.googleCloudFirestore.firestoreAdminClientMod.FirestoreAdminClient
-import typings.googleCloudFirestore.firestoreClientMod.FirestoreClient
-import typings.googleGax.clientInterfaceMod.ClientOptions
+import typings.googleCloudFirestore.typesV1beta1FirestoreClientMod.FirestoreClient
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +38,23 @@ object anon {
     }
   }
   
+  trait Count extends StObject {
+    
+    var count: AggregateField[Double]
+  }
+  object Count {
+    
+    inline def apply(count: AggregateField[Double]): Count = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Count]
+    }
+    
+    extension [Self <: Count](x: Self) {
+      
+      inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait InitialOpsPerSecond extends StObject {
     
     var initialOpsPerSecond: js.UndefOr[Double] = js.undefined
@@ -61,44 +78,6 @@ object anon {
       
       inline def setMaxOpsPerSecondUndefined: Self = StObject.set(x, "maxOpsPerSecond", js.undefined)
     }
-  }
-  
-  @js.native
-  trait Instantiable
-    extends StObject
-       with Instantiable0[
-          FirestoreClient | typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient
-        ]
-       with Instantiable1[
-          /* opts */ ClientOptions, 
-          FirestoreClient | typings.googleCloudFirestore.v1FirestoreClientMod.FirestoreClient
-        ] {
-    
-    /**
-      * The DNS address for this API service - same as servicePath(),
-      * exists for compatibility reasons.
-      * @returns {string} The DNS address for this service.
-      */
-    def apiEndpoint: String = js.native
-    
-    /**
-      * The port for this API service.
-      * @returns {number} The default port for this service.
-      */
-    def port: Double = js.native
-    
-    /**
-      * The scopes needed to make gRPC calls for every method defined
-      * in this service.
-      * @returns {string[]} List of default scopes.
-      */
-    def scopes: js.Array[String] = js.native
-    
-    /**
-      * The DNS address for this API service.
-      * @returns {string} The DNS address for this service.
-      */
-    def servicePath: String = js.native
   }
   
   trait Merge
@@ -146,10 +125,10 @@ object anon {
   }
   
   @js.native
-  trait TypeofFirestoreAdminClien
+  trait TypeofFirestoreClient
     extends StObject
-       with Instantiable0[FirestoreAdminClient]
-       with Instantiable1[/* opts */ ClientOptions, FirestoreAdminClient] {
+       with Instantiable0[FirestoreClient]
+       with Instantiable1[/* opts */ ClientOptions, FirestoreClient] {
     
     /**
       * The DNS address for this API service - same as servicePath(),

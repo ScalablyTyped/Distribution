@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nock.anon.Context
 import typings.nock.anon.Headers
 import typings.nock.anon.Pass
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.fsMod.ReadStream
@@ -352,11 +353,7 @@ object mod {
           /* this */ ReplyFnContext, 
           /* uri */ String, 
           /* body */ Body, 
-          /* callback */ js.Function2[
-            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-            /* result */ ReplyFnResult, 
-            Unit
-          ], 
+          /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ ReplyFnResult, Unit], 
           Unit
         ]
     ): Scope = js.native
@@ -381,11 +378,7 @@ object mod {
           /* this */ ReplyFnContext, 
           /* uri */ String, 
           /* body */ Body, 
-          /* callback */ js.Function2[
-            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-            /* result */ ReplyBody, 
-            Unit
-          ], 
+          /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ ReplyBody, Unit], 
           Unit
         ]
     ): Scope = js.native
@@ -395,11 +388,7 @@ object mod {
           /* this */ ReplyFnContext, 
           /* uri */ String, 
           /* body */ Body, 
-          /* callback */ js.Function2[
-            /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-            /* result */ ReplyBody, 
-            Unit
-          ], 
+          /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ ReplyBody, Unit], 
           Unit
         ],
       headers: ReplyHeaders

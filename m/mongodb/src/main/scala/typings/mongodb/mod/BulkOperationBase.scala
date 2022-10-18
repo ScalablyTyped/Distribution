@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongodb", "BulkOperationBase")
+/* note: abstract class */ @JSImport("mongodb", "BulkOperationBase")
 @js.native
-abstract class BulkOperationBase () extends StObject {
+open class BulkOperationBase () extends StObject {
   
   /* Excluded from this release type: handleWriteError */
   def addToOperationsList(batchType: BatchType, document: Document): this.type = js.native

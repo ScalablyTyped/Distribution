@@ -1,7 +1,6 @@
 package typings.uifabricUtilities
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement
+import typings.fluentuiDomUtilities.libIvirtualelementMod.IVirtualElement
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -22,37 +21,37 @@ import typings.std.Partial
 import typings.std.Record
 import typings.std.TypedPropertyDescriptor
 import typings.std.Window
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
-import typings.uifabricMergeStyles.istylesetMod.IStyleSet
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typings.uifabricMergeStyles.libIstylesetMod.IStyleSet
 import typings.uifabricUtilities.anon.AsyncPlaceholder
 import typings.uifabricUtilities.anon.Configurable
 import typings.uifabricUtilities.anon.Delay
 import typings.uifabricUtilities.anon.Focus
 import typings.uifabricUtilities.anon.RootRef
 import typings.uifabricUtilities.anon.Rtl
-import typings.uifabricUtilities.asAsyncMod.IAsAsyncOptions
-import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
-import typings.uifabricUtilities.classNamesFunctionMod.IClassNamesFunctionOptions
-import typings.uifabricUtilities.cssMod.ICssInput
-import typings.uifabricUtilities.customizationsMod.ICustomizations
-import typings.uifabricUtilities.customizationsMod.ISettings
-import typings.uifabricUtilities.customizationsMod.ISettingsFunction
-import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
-import typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
-import typings.uifabricUtilities.delayedRenderMod.IDelayedRenderProps
-import typings.uifabricUtilities.fabricPerformanceMod.IPerfSummary
-import typings.uifabricUtilities.globalSettingsMod.IChangeEventCallback
-import typings.uifabricUtilities.icomponentasMod.IComponentAs
-import typings.uifabricUtilities.irectangleMod.IRectangle
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
-import typings.uifabricUtilities.isizeMod.ISize
-import typings.uifabricUtilities.mathMod.IFitContentToBoundsOptions
-import typings.uifabricUtilities.pointMod.Point
-import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
-import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
-import typings.uifabricUtilities.styledMod.ICustomizableProps
-import typings.uifabricUtilities.styledMod.IPropsWithStyles
+import typings.uifabricUtilities.libAsAsyncMod.IAsAsyncOptions
+import typings.uifabricUtilities.libBaseComponentDottypesMod.IBaseProps
+import typings.uifabricUtilities.libClassNamesFunctionMod.IClassNamesFunctionOptions
+import typings.uifabricUtilities.libCssMod.ICssInput
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ICustomizations
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ISettings
+import typings.uifabricUtilities.libCustomizationsCustomizationsMod.ISettingsFunction
+import typings.uifabricUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
+import typings.uifabricUtilities.libCustomizationsCustomizerDottypesMod.ICustomizerProps
+import typings.uifabricUtilities.libDelayedRenderMod.IDelayedRenderProps
+import typings.uifabricUtilities.libFabricPerformanceMod.IPerfSummary
+import typings.uifabricUtilities.libGlobalSettingsMod.IChangeEventCallback
+import typings.uifabricUtilities.libIcomponentasMod.IComponentAs
+import typings.uifabricUtilities.libIrectangleMod.IRectangle
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
+import typings.uifabricUtilities.libIsizeMod.ISize
+import typings.uifabricUtilities.libMathMod.IFitContentToBoundsOptions
+import typings.uifabricUtilities.libPointMod.Point
+import typings.uifabricUtilities.libStyledMod.ICustomizableProps
+import typings.uifabricUtilities.libStyledMod.IPropsWithStyles
+import typings.uifabricUtilities.libWarnWarnControlledUsageMod.IWarnControlledUsageParams
+import typings.uifabricUtilities.libWarnWarnMod.ISettingsMap
 import typings.uifabricUtilities.uifabricUtilitiesBooleans.`false`
 import typings.uifabricUtilities.uifabricUtilitiesInts.`100`
 import typings.uifabricUtilities.uifabricUtilitiesInts.`101`
@@ -158,8 +157,6 @@ import typings.uifabricUtilities.uifabricUtilitiesStrings.`data-no-vertical-wrap
 import typings.uifabricUtilities.uifabricUtilitiesStrings.localStorage
 import typings.uifabricUtilities.uifabricUtilitiesStrings.none
 import typings.uifabricUtilities.uifabricUtilitiesStrings.sessionStorage
-import typings.uifabricUtilities.warnControlledUsageMod.IWarnControlledUsageParams
-import typings.uifabricUtilities.warnWarnMod.ISettingsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -173,7 +170,7 @@ object mod {
   @JSImport("@uifabric/utilities", "Async")
   @js.native
   open class Async ()
-    extends typings.uifabricUtilities.asyncMod.Async {
+    extends typings.uifabricUtilities.libAsyncMod.Async {
     def this(parent: js.Object) = this()
     def this(parent: js.Object, onError: js.Function1[/* e */ Any, Unit]) = this()
     def this(parent: Unit, onError: js.Function1[/* e */ Any, Unit]) = this()
@@ -182,14 +179,14 @@ object mod {
   @JSImport("@uifabric/utilities", "AutoScroll")
   @js.native
   open class AutoScroll protected ()
-    extends typings.uifabricUtilities.autoScrollMod.AutoScroll {
+    extends typings.uifabricUtilities.libAutoScrollMod.AutoScroll {
     def this(element: HTMLElement) = this()
   }
   
   @JSImport("@uifabric/utilities", "BaseComponent")
   @js.native
   open class BaseComponent[TProps /* <: IBaseProps[Any] */, TState] protected ()
-    extends typings.uifabricUtilities.baseComponentMod.BaseComponent[TProps, TState] {
+    extends typings.uifabricUtilities.libBaseComponentMod.BaseComponent[TProps, TState] {
     /**
       * BaseComponent constructor
       * @param props - The props for the component.
@@ -217,7 +214,7 @@ object mod {
   @JSImport("@uifabric/utilities", "Customizations")
   @js.native
   open class Customizations ()
-    extends typings.uifabricUtilities.customizationsMod.Customizations
+    extends typings.uifabricUtilities.libCustomizationsCustomizationsMod.Customizations
   /* static members */
   object Customizations {
     
@@ -268,7 +265,7 @@ object mod {
   @JSImport("@uifabric/utilities", "Customizer")
   @js.native
   open class Customizer protected ()
-    extends typings.uifabricUtilities.customizerMod.Customizer {
+    extends typings.uifabricUtilities.libCustomizationsCustomizerMod.Customizer {
     def this(props: ICustomizerProps) = this()
     /**
       * @deprecated
@@ -292,7 +289,7 @@ object mod {
   @JSImport("@uifabric/utilities", "DelayedRender")
   @js.native
   open class DelayedRender protected ()
-    extends typings.uifabricUtilities.delayedRenderMod.DelayedRender {
+    extends typings.uifabricUtilities.libDelayedRenderMod.DelayedRender {
     def this(props: IDelayedRenderProps) = this()
   }
   /* static members */
@@ -311,7 +308,7 @@ object mod {
   @JSImport("@uifabric/utilities", "EventGroup")
   @js.native
   open class EventGroup protected ()
-    extends typings.uifabricUtilities.eventGroupMod.EventGroup {
+    extends typings.uifabricUtilities.libEventGroupMod.EventGroup {
     /** parent: the context in which events attached to non-HTMLElements are called */
     def this(parent: Any) = this()
   }
@@ -354,7 +351,7 @@ object mod {
   @JSImport("@uifabric/utilities", "FabricPerformance")
   @js.native
   open class FabricPerformance ()
-    extends typings.uifabricUtilities.fabricPerformanceMod.FabricPerformance
+    extends typings.uifabricUtilities.libFabricPerformanceMod.FabricPerformance
   /* static members */
   object FabricPerformance {
     
@@ -392,7 +389,7 @@ object mod {
   @JSImport("@uifabric/utilities", "GlobalSettings")
   @js.native
   open class GlobalSettings ()
-    extends typings.uifabricUtilities.globalSettingsMod.GlobalSettings
+    extends typings.uifabricUtilities.libGlobalSettingsMod.GlobalSettings
   /* static members */
   object GlobalSettings {
     
@@ -944,7 +941,7 @@ object mod {
   @JSImport("@uifabric/utilities", "Rectangle")
   @js.native
   open class Rectangle ()
-    extends typings.uifabricUtilities.rectangleMod.Rectangle {
+    extends typings.uifabricUtilities.libRectangleMod.Rectangle {
     def this(left: Double) = this()
     def this(left: Double, right: Double) = this()
     def this(left: Unit, right: Double) = this()
@@ -973,13 +970,13 @@ object mod {
   @JSImport("@uifabric/utilities", "Selection")
   @js.native
   open class Selection[TItem] protected ()
-    extends typings.uifabricUtilities.selectionMod.Selection[TItem] {
+    extends typings.uifabricUtilities.libSelectionMod.Selection[TItem] {
     /**
       * Create a new Selection. If `TItem` does not have a `key` property, you must provide an options
       * object with a `getKey` implementation. Providing options is optional otherwise.
       * (At most one `options` object is accepted.)
       */
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: /* import warning: importer.ImportType#apply Failed type conversion: TItem extends @uifabric/utilities.@uifabric/utilities/lib/selection/Selection.types.IObjectWithKey ? [] | [@uifabric/utilities.@uifabric/utilities/lib/selection/Selection.ISelectionOptions<TItem>] : [@uifabric/utilities.@uifabric/utilities/lib/selection/Selection.ISelectionOptionsWithRequiredGetKey<TItem>] */ js.Any) = this()
   }
   
   @JSImport("@uifabric/utilities", "SelectionDirection")
@@ -987,11 +984,13 @@ object mod {
   object SelectionDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uifabricUtilities.selectionTypesMod.SelectionDirection & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionDirection & Double
+      ] = js.native
     
-    /* 0 */ val horizontal: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.horizontal & Double = js.native
+    /* 0 */ val horizontal: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionDirection.horizontal & Double = js.native
     
-    /* 1 */ val vertical: typings.uifabricUtilities.selectionTypesMod.SelectionDirection.vertical & Double = js.native
+    /* 1 */ val vertical: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionDirection.vertical & Double = js.native
   }
   
   @JSImport("@uifabric/utilities", "SelectionMode")
@@ -999,24 +998,26 @@ object mod {
   object SelectionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.uifabricUtilities.selectionTypesMod.SelectionMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode & Double
+      ] = js.native
     
-    /* 2 */ val multiple: typings.uifabricUtilities.selectionTypesMod.SelectionMode.multiple & Double = js.native
+    /* 2 */ val multiple: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode.multiple & Double = js.native
     
-    /* 0 */ val none: typings.uifabricUtilities.selectionTypesMod.SelectionMode.none & Double = js.native
+    /* 0 */ val none: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode.none & Double = js.native
     
-    /* 1 */ val single: typings.uifabricUtilities.selectionTypesMod.SelectionMode.single & Double = js.native
+    /* 1 */ val single: typings.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode.single & Double = js.native
   }
   
   inline def addDirectionalKeyCode(which: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addDirectionalKeyCode")(which.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def addElementAtIndex[T](array: js.Array[T], index: Double, itemToAdd: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("addElementAtIndex")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], itemToAdd.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def allowOverscrollOnElement(element: Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def allowOverscrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowOverscrollOnElement(element: Null, events: typings.uifabricUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowOverscrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowOverscrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def allowScrollOnElement(element: Null, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def allowScrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.eventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowScrollOnElement(element: Null, events: typings.uifabricUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def allowScrollOnElement(element: HTMLElement, events: typings.uifabricUtilities.libEventGroupMod.EventGroup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("allowScrollOnElement")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@uifabric/utilities", "anchorProperties")
   @js.native
@@ -1141,9 +1142,7 @@ object mod {
   
   inline def extendComponent[T /* <: Component[js.Object, js.Object, Any] */](
     parent: T,
-    methods: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? T[key]}
-    */ typings.uifabricUtilities.uifabricUtilitiesStrings.extendComponent & TopLevel[T]
+    methods: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? T[key]} */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extendComponent")(parent.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def filteredAssign(isAllowed: js.Function1[/* propName */ String, Boolean], target: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filteredAssign")((scala.List(isAllowed.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]

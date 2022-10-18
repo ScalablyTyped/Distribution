@@ -17,6 +17,6 @@ open class AssetsProgressEvent protected ()
   def this(
     remainingCount: Double,
     totalCount: Double,
-    task: typings.babylonjs.assetsManagerMod.AbstractAssetTask
+    task: typings.babylonjs.miscAssetsManagerMod.AbstractAssetTask
   ) = this()
 }

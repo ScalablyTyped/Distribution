@@ -1,6 +1,6 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayReplaySubjectMod.Event
+import typings.relayRuntime.libUtilRelayReplaySubjectMod.Event
 import typings.relayRuntime.relayRuntimeStrings.next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

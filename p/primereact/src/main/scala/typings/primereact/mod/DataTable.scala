@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.datatableMod.DataTableProps
+import typings.primereact.datatableDatatableMod.DataTableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "DataTable")
 @js.native
 open class DataTable protected ()
-  extends typings.primereact.datatableMod.DataTable {
+  extends typings.primereact.datatableDatatableMod.DataTable {
   def this(props: DataTableProps) = this()
   /**
     * @deprecated

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "datastore-pubsub" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "datastore-pubsub" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

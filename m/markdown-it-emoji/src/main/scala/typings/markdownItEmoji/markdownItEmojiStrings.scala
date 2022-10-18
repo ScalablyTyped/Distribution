@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object markdownItEmojiStrings {
   
   @js.native
-  sealed trait PartialRecord extends StObject
-  inline def PartialRecord: PartialRecord = "PartialRecord".asInstanceOf[PartialRecord]
-  
-  @js.native
   sealed trait angry extends StObject
   inline def angry: angry = "angry".asInstanceOf[angry]
   

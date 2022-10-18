@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "DeepCopier")
 @js.native
 open class DeepCopier ()
-  extends typings.babylonjs.deepCopierMod.DeepCopier
+  extends typings.babylonjs.miscDeepCopierMod.DeepCopier
 /* static members */
 object DeepCopier {
   

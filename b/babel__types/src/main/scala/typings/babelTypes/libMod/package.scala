@@ -89,26 +89,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 inline def ACCESSOR_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ACCESSOR_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ACCESSOR_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def ASSIGNMENT_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("ASSIGNMENT_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def BINARY_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BINARY_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BINARY_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def BLOCKPARENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCKPARENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCKPARENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def BLOCK_SCOPED_SYMBOL: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCK_SCOPED_SYMBOL").asInstanceOf[js.Symbol]
 
 inline def BLOCK_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCK_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("BLOCK_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def BOOLEAN_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BOOLEAN_BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
@@ -119,128 +119,128 @@ inline def BOOLEAN_UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic
 inline def BUILDER_KEYS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("BUILDER_KEYS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def CLASS_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASS_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASS_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def COMMENT_KEYS: js.Tuple3[leadingComments, trailingComments, innerComments] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMMENT_KEYS").asInstanceOf[js.Tuple3[leadingComments, trailingComments, innerComments]]
 
 inline def COMPARISON_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPARISON_BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def COMPLETIONSTATEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPLETIONSTATEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPLETIONSTATEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def CONDITIONAL_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("CONDITIONAL_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("CONDITIONAL_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def DECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("DECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("DECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def DEPRECATED_KEYS: Record[String, NodeTypesWithoutComment] = ^.asInstanceOf[js.Dynamic].selectDynamic("DEPRECATED_KEYS").asInstanceOf[Record[String, NodeTypesWithoutComment]]
 
 inline def ENUMBODY_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMBODY_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMBODY_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def ENUMMEMBER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMMEMBER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENUMMEMBER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def EQUALITY_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EQUALITY_BINARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def EXPORTDECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPORTDECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPORTDECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def EXPRESSIONWRAPPER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSIONWRAPPER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSIONWRAPPER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def EXPRESSION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("EXPRESSION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FLATTENABLE_KEYS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLATTENABLE_KEYS").asInstanceOf[js.Array[String]]
 
 inline def FLIPPED_ALIAS_KEYS: Record[String, js.Array[NodeTypesWithoutComment]] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLIPPED_ALIAS_KEYS").asInstanceOf[Record[String, js.Array[NodeTypesWithoutComment]]]
 
 inline def FLOWBASEANNOTATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWBASEANNOTATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWBASEANNOTATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FLOWDECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWDECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWDECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FLOWPREDICATE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWPREDICATE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWPREDICATE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FLOWTYPE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWTYPE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOWTYPE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FLOW_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOW_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FLOW_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FORXSTATEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FORXSTATEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FORXSTATEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FOR_INIT_KEYS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("FOR_INIT_KEYS").asInstanceOf[js.Array[String]]
 
 inline def FOR_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FOR_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FOR_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FUNCTIONPARENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTIONPARENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTIONPARENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def FUNCTION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("FUNCTION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def IMMUTABLE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMMUTABLE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("IMMUTABLE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def JSX_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("JSX_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("JSX_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def LITERAL_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LITERAL_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LITERAL_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def LOGICAL_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOGICAL_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def LOOP_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOOP_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOOP_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def LVAL_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LVAL_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("LVAL_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def METHOD_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("METHOD_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("METHOD_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def MISCELLANEOUS_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MISCELLANEOUS_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MISCELLANEOUS_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def MODULEDECLARATION_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULEDECLARATION_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULEDECLARATION_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def MODULESPECIFIER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULESPECIFIER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("MODULESPECIFIER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def NODE_FIELDS: Record[String, FieldDefinitions] = ^.asInstanceOf[js.Dynamic].selectDynamic("NODE_FIELDS").asInstanceOf[Record[String, FieldDefinitions]]
 
@@ -253,16 +253,16 @@ inline def NUMBER_BINARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic
 inline def NUMBER_UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("NUMBER_UNARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def OBJECTMEMBER_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("OBJECTMEMBER_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("OBJECTMEMBER_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def PATTERNLIKE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERNLIKE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERNLIKE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def PATTERN_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERN_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PATTERN_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def PLACEHOLDERS: js.Tuple8[
 Identifier, 
@@ -287,77 +287,77 @@ inline def PLACEHOLDERS_ALIAS: Record[String, js.Array[String]] = ^.asInstanceOf
 inline def PLACEHOLDERS_FLIPPED_ALIAS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLACEHOLDERS_FLIPPED_ALIAS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def PRIVATE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PRIVATE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PRIVATE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def PROPERTY_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PROPERTY_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PROPERTY_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def PUREISH_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PUREISH_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("PUREISH_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def SCOPABLE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("SCOPABLE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("SCOPABLE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def STANDARDIZED_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("STANDARDIZED_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("STANDARDIZED_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def STATEMENT_OR_BLOCK_KEYS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("STATEMENT_OR_BLOCK_KEYS").asInstanceOf[js.Array[String]]
 
 inline def STATEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("STATEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("STATEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def STRING_UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("STRING_UNARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def TERMINATORLESS_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TERMINATORLESS_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TERMINATORLESS_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def TSBASETYPE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSBASETYPE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSBASETYPE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def TSENTITYNAME_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSENTITYNAME_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSENTITYNAME_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def TSTYPEELEMENT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPEELEMENT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPEELEMENT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def TSTYPE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TSTYPE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def TYPES: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TYPES").asInstanceOf[js.Array[String]]
 
 inline def TYPESCRIPT_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TYPESCRIPT_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("TYPESCRIPT_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def UNARYLIKE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("UNARYLIKE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("UNARYLIKE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 inline def UNARY_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("UNARY_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def UPDATE_OPERATORS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("UPDATE_OPERATORS").asInstanceOf[js.Array[String]]
 
 inline def USERWHITESPACABLE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("USERWHITESPACABLE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("USERWHITESPACABLE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 //# sourceMappingURL=valueToNode.d.ts.map
 inline def VISITOR_KEYS: Record[String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("VISITOR_KEYS").asInstanceOf[Record[String, js.Array[String]]]
 
 inline def WHILE_TYPES: js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("WHILE_TYPES").asInstanceOf[js.Array[
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("WHILE_TYPES").asInstanceOf[js.Array[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 301, starting with typings.babelTypes.babelTypesStrings.ArrayExpression, typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder */ Any]]
 
 /**
   * Add comment of certain type to a node.
@@ -2991,11 +2991,14 @@ inline def is(`type`: String, node: Null, opts: Partial[Node]): /* is @babel/typ
 inline def is(`type`: String, node: Unit, opts: Partial[Node]): /* is @babel/types.@babel/types/lib.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.Node */ Boolean]
 inline def is(`type`: String, node: Node): /* is @babel/types.@babel/types/lib.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.Node */ Boolean]
 inline def is(`type`: String, node: Node, opts: Partial[Node]): /* is @babel/types.@babel/types/lib.Node */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.Node */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ Any */](`type`: T, node: Node): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */](`type`: T): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */](`type`: T, node: Node): /* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is std.Extract<@babel/types.@babel/types/lib.Node, @babel/types.anon.TypeT<T>> */ Boolean]
+inline def is[P /* <: Node */](`type`: String, node: Null, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[P /* <: Node */](`type`: String, node: Unit, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[P /* <: Node */](`type`: String, node: Node, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Null, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Unit, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
+inline def is[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */, P /* <: Extract[Node, TypeT[T]] */](`type`: T, n: Node, required: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], n.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
 
 inline def isAccessor(): /* is @babel/types.@babel/types/lib.Accessor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")().asInstanceOf[/* is @babel/types.@babel/types/lib.Accessor */ Boolean]
 inline def isAccessor(node: js.Object): /* is @babel/types.@babel/types/lib.Accessor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessor")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types/lib.Accessor */ Boolean]
@@ -4717,7 +4720,7 @@ inline def isTupleTypeAnnotation(node: Unit, opts: js.Object): /* is @babel/type
 inline def isType(nodeType: String, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def isType(nodeType: Null, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 inline def isType(nodeType: Unit, targetType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252 */ Any */](nodeType: String, targetType: T): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
+inline def isType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 252, starting with typings.babelTypes.babelTypesStrings.AnyTypeAnnotation, typings.babelTypes.babelTypesStrings.ArgumentPlaceholder, typings.babelTypes.babelTypesStrings.ArrayExpression */ Any */](nodeType: String, targetType: T): /* is T */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(nodeType.asInstanceOf[js.Any], targetType.asInstanceOf[js.Any])).asInstanceOf[/* is T */ Boolean]
 
 inline def isTypeAlias(): /* is @babel/types.@babel/types/lib.TypeAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAlias")().asInstanceOf[/* is @babel/types.@babel/types/lib.TypeAlias */ Boolean]
 inline def isTypeAlias(node: js.Object): /* is @babel/types.@babel/types/lib.TypeAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAlias")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types/lib.TypeAlias */ Boolean]
@@ -4869,10 +4872,6 @@ inline def isYieldExpression(node: js.Object): /* is @babel/types.@babel/types/l
 inline def isYieldExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
 inline def isYieldExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
 inline def isYieldExpression(node: Unit, opts: js.Object): /* is @babel/types.@babel/types/lib.YieldExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isYieldExpression")(node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is @babel/types.@babel/types/lib.YieldExpression */ Boolean]
-
-inline def is_P[P /* <: Node */](`type`: String, node: Null, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is_P[P /* <: Node */](`type`: String, node: Unit, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
-inline def is_P[P /* <: Node */](`type`: String, node: Node, opts: Partial[P]): /* is P */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* is P */ Boolean]
 
 inline def jSXAttribute_(name: JSXIdentifier__): JSXAttribute__ = ^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any]).asInstanceOf[JSXAttribute__]
 inline def jSXAttribute_(name: JSXIdentifier__, value: JSXElement__): JSXAttribute__ = (^.asInstanceOf[js.Dynamic].applyDynamic("jSXAttribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[JSXAttribute__]

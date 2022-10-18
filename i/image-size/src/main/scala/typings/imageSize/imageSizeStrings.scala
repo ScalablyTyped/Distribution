@@ -1,6 +1,6 @@
 package typings.imageSize
 
-import typings.imageSize.typesMod.imageType
+import typings.imageSize.distTypesMod.imageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,26 +4,26 @@ import typings.awsSdkClientSso.anon.ExceptionOptionTypeInvali
 import typings.awsSdkClientSso.anon.ExceptionOptionTypeResour
 import typings.awsSdkClientSso.anon.ExceptionOptionTypeTooMan
 import typings.awsSdkClientSso.anon.ExceptionOptionTypeUnauth
-import typings.awsSdkClientSso.getRoleCredentialsCommandMod.GetRoleCredentialsCommandInput
-import typings.awsSdkClientSso.interfacesMod.SSOPaginationConfiguration
-import typings.awsSdkClientSso.listAccountRolesCommandMod.ListAccountRolesCommandInput
-import typings.awsSdkClientSso.listAccountRolesCommandMod.ListAccountRolesCommandOutput
-import typings.awsSdkClientSso.listAccountsCommandMod.ListAccountsCommandInput
-import typings.awsSdkClientSso.listAccountsCommandMod.ListAccountsCommandOutput
-import typings.awsSdkClientSso.logoutCommandMod.LogoutCommandInput
-import typings.awsSdkClientSso.models0Mod.AccountInfo
-import typings.awsSdkClientSso.models0Mod.GetRoleCredentialsRequest
-import typings.awsSdkClientSso.models0Mod.GetRoleCredentialsResponse
-import typings.awsSdkClientSso.models0Mod.ListAccountRolesRequest
-import typings.awsSdkClientSso.models0Mod.ListAccountRolesResponse
-import typings.awsSdkClientSso.models0Mod.ListAccountsRequest
-import typings.awsSdkClientSso.models0Mod.ListAccountsResponse
-import typings.awsSdkClientSso.models0Mod.LogoutRequest
-import typings.awsSdkClientSso.models0Mod.RoleCredentials
-import typings.awsSdkClientSso.models0Mod.RoleInfo
-import typings.awsSdkClientSso.ssoclientMod.SSOClientConfig
-import typings.awsSdkSmithyClient.exceptionsMod.ServiceExceptionOptions
-import typings.awsSdkTypes.paginationMod.Paginator
+import typings.awsSdkClientSso.distTypesCommandsGetRoleCredentialsCommandMod.GetRoleCredentialsCommandInput
+import typings.awsSdkClientSso.distTypesCommandsListAccountRolesCommandMod.ListAccountRolesCommandInput
+import typings.awsSdkClientSso.distTypesCommandsListAccountRolesCommandMod.ListAccountRolesCommandOutput
+import typings.awsSdkClientSso.distTypesCommandsListAccountsCommandMod.ListAccountsCommandInput
+import typings.awsSdkClientSso.distTypesCommandsListAccountsCommandMod.ListAccountsCommandOutput
+import typings.awsSdkClientSso.distTypesCommandsLogoutCommandMod.LogoutCommandInput
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.AccountInfo
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.GetRoleCredentialsRequest
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.GetRoleCredentialsResponse
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountRolesRequest
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountRolesResponse
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountsRequest
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountsResponse
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.LogoutRequest
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.RoleCredentials
+import typings.awsSdkClientSso.distTypesModelsModels0Mod.RoleInfo
+import typings.awsSdkClientSso.distTypesPaginationInterfacesMod.SSOPaginationConfiguration
+import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClientConfig
+import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
+import typings.awsSdkTypes.distTypesPaginationMod.Paginator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "GetRoleCredentialsCommand")
   @js.native
   open class GetRoleCredentialsCommand protected ()
-    extends typings.awsSdkClientSso.commandsMod.GetRoleCredentialsCommand {
+    extends typings.awsSdkClientSso.distTypesCommandsMod.GetRoleCredentialsCommand {
     def this(input: GetRoleCredentialsCommandInput) = this()
   }
   
@@ -50,7 +50,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "InvalidRequestException")
   @js.native
   open class InvalidRequestException protected ()
-    extends typings.awsSdkClientSso.modelsMod.InvalidRequestException {
+    extends typings.awsSdkClientSso.distTypesModelsMod.InvalidRequestException {
     /**
       * @internal
       */
@@ -60,7 +60,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "ListAccountRolesCommand")
   @js.native
   open class ListAccountRolesCommand protected ()
-    extends typings.awsSdkClientSso.commandsMod.ListAccountRolesCommand {
+    extends typings.awsSdkClientSso.distTypesCommandsMod.ListAccountRolesCommand {
     def this(input: ListAccountRolesCommandInput) = this()
   }
   
@@ -71,7 +71,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "ListAccountsCommand")
   @js.native
   open class ListAccountsCommand protected ()
-    extends typings.awsSdkClientSso.commandsMod.ListAccountsCommand {
+    extends typings.awsSdkClientSso.distTypesCommandsMod.ListAccountsCommand {
     def this(input: ListAccountsCommandInput) = this()
   }
   
@@ -82,7 +82,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "LogoutCommand")
   @js.native
   open class LogoutCommand protected ()
-    extends typings.awsSdkClientSso.commandsMod.LogoutCommand {
+    extends typings.awsSdkClientSso.distTypesCommandsMod.LogoutCommand {
     def this(input: LogoutCommandInput) = this()
   }
   
@@ -91,7 +91,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "ResourceNotFoundException")
   @js.native
   open class ResourceNotFoundException protected ()
-    extends typings.awsSdkClientSso.modelsMod.ResourceNotFoundException {
+    extends typings.awsSdkClientSso.distTypesModelsMod.ResourceNotFoundException {
     /**
       * @internal
       */
@@ -105,21 +105,21 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "SSO")
   @js.native
   open class SSO protected ()
-    extends typings.awsSdkClientSso.ssoMod.SSO {
+    extends typings.awsSdkClientSso.distTypesSsoMod.SSO {
     def this(configuration: SSOClientConfig) = this()
   }
   
   @JSImport("@aws-sdk/client-sso", "SSOClient")
   @js.native
   open class SSOClient protected ()
-    extends typings.awsSdkClientSso.ssoclientMod.SSOClient {
+    extends typings.awsSdkClientSso.distTypesSsoclientMod.SSOClient {
     def this(configuration: SSOClientConfig) = this()
   }
   
   @JSImport("@aws-sdk/client-sso", "SSOServiceException")
   @js.native
   open class SSOServiceException protected ()
-    extends typings.awsSdkClientSso.ssoserviceexceptionMod.SSOServiceException {
+    extends typings.awsSdkClientSso.distTypesModelsSsoserviceexceptionMod.SSOServiceException {
     /**
       * @internal
       */
@@ -129,7 +129,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "TooManyRequestsException")
   @js.native
   open class TooManyRequestsException protected ()
-    extends typings.awsSdkClientSso.modelsMod.TooManyRequestsException {
+    extends typings.awsSdkClientSso.distTypesModelsMod.TooManyRequestsException {
     /**
       * @internal
       */
@@ -139,7 +139,7 @@ object mod {
   @JSImport("@aws-sdk/client-sso", "UnauthorizedException")
   @js.native
   open class UnauthorizedException protected ()
-    extends typings.awsSdkClientSso.modelsMod.UnauthorizedException {
+    extends typings.awsSdkClientSso.distTypesModelsMod.UnauthorizedException {
     /**
       * @internal
       */

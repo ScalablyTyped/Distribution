@@ -82,9 +82,9 @@ object mod {
   
   inline def isValidUsername(username: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUsername")(username.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def modifyIndicesFromUTF16ToUnicode[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUTF16ToUnicode")(i.asInstanceOf[js.Any]).asInstanceOf[I]
+  inline def modifyIndicesFromUTF16ToUnicode(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUTF16ToUnicode")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def modifyIndicesFromUnicodeToUTF16[I](i: I): I = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUnicodeToUTF16")(i.asInstanceOf[js.Any]).asInstanceOf[I]
+  inline def modifyIndicesFromUnicodeToUTF16(text: String, entities: js.Array[EntityWithIndices]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyIndicesFromUnicodeToUTF16")(text.asInstanceOf[js.Any], entities.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def parseTweet(text: String): ParsedTweet = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any]).asInstanceOf[ParsedTweet]
   inline def parseTweet(text: String, options: ParseTweetOptions): ParsedTweet = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTweet]

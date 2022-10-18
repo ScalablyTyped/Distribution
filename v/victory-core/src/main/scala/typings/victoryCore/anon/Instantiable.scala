@@ -3,7 +3,7 @@ package typings.victoryCore.anon
 import org.scalablytyped.runtime.Instantiable1
 import typings.react.mod.ReactNode
 import typings.std.Record
-import typings.victoryCore.addEventsMod.EventMixinCommonProps
+import typings.victoryCore.libVictoryUtilAddEventsMod.EventMixinCommonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.rcTabs
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcTabs.tabsMod.TabsProps
+import typings.rcTabs.esTabsMod.TabsProps
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement

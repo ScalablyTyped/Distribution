@@ -1,13 +1,13 @@
 package typings.storybookDocsTools
 
-import typings.storybookAddons.typesMod.Parameters
-import typings.storybookCoreCommon.typesMod.StorybookConfigOptions
-import typings.storybookDocsTools.argTypesTypesMod.Component
-import typings.storybookDocsTools.docgenTypesMod.DocgenInfo
-import typings.storybookDocsTools.extractDocgenPropsMod.ExtractProps
-import typings.storybookDocsTools.extractDocgenPropsMod.ExtractedProp
-import typings.storybookDocsTools.jsdocParserMod.ParseJsDoc_
-import typings.storybookDocsTools.propDefMod.PropSummaryValue
+import typings.storybookAddons.distTs3Dot9TypesMod.Parameters
+import typings.storybookCoreCommon.distTs3Dot9TypesMod.StorybookConfigOptions
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenExtractDocgenPropsMod.ExtractProps
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenExtractDocgenPropsMod.ExtractedProp
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenPropDefMod.PropSummaryValue
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.DocgenInfo
+import typings.storybookDocsTools.distTs3Dot9ArgTypesJsdocParserMod.ParseJsDoc_
+import typings.storybookDocsTools.distTs3Dot9ArgTypesTypesMod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,13 +47,13 @@ object mod {
   object SourceType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookDocsTools.sharedMod.SourceType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookDocsTools.distTs3Dot9SharedMod.SourceType & String] = js.native
     
-    /* "auto" */ val AUTO: typings.storybookDocsTools.sharedMod.SourceType.AUTO & String = js.native
+    /* "auto" */ val AUTO: typings.storybookDocsTools.distTs3Dot9SharedMod.SourceType.AUTO & String = js.native
     
-    /* "code" */ val CODE: typings.storybookDocsTools.sharedMod.SourceType.CODE & String = js.native
+    /* "code" */ val CODE: typings.storybookDocsTools.distTs3Dot9SharedMod.SourceType.CODE & String = js.native
     
-    /* "dynamic" */ val DYNAMIC: typings.storybookDocsTools.sharedMod.SourceType.DYNAMIC & String = js.native
+    /* "dynamic" */ val DYNAMIC: typings.storybookDocsTools.distTs3Dot9SharedMod.SourceType.DYNAMIC & String = js.native
   }
   
   @JSImport("@storybook/docs-tools", "TypeSystem")
@@ -61,15 +61,15 @@ object mod {
   object TypeSystem extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookDocsTools.docgenTypesMod.TypeSystem & String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.TypeSystem & String] = js.native
     
-    /* "Flow" */ val FLOW: typings.storybookDocsTools.docgenTypesMod.TypeSystem.FLOW & String = js.native
+    /* "Flow" */ val FLOW: typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.TypeSystem.FLOW & String = js.native
     
-    /* "JavaScript" */ val JAVASCRIPT: typings.storybookDocsTools.docgenTypesMod.TypeSystem.JAVASCRIPT & String = js.native
+    /* "JavaScript" */ val JAVASCRIPT: typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.TypeSystem.JAVASCRIPT & String = js.native
     
-    /* "TypeScript" */ val TYPESCRIPT: typings.storybookDocsTools.docgenTypesMod.TypeSystem.TYPESCRIPT & String = js.native
+    /* "TypeScript" */ val TYPESCRIPT: typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.TypeSystem.TYPESCRIPT & String = js.native
     
-    /* "Unknown" */ val UNKNOWN: typings.storybookDocsTools.docgenTypesMod.TypeSystem.UNKNOWN & String = js.native
+    /* "Unknown" */ val UNKNOWN: typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenTypesMod.TypeSystem.UNKNOWN & String = js.native
   }
   
   inline def convert(docgenInfo: DocgenInfo): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(docgenInfo.asInstanceOf[js.Any]).asInstanceOf[Any]

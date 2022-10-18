@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "ThrottlingEntity")
 @js.native
 open class ThrottlingEntity ()
-  extends typings.azureMsalCommon.throttlingEntityMod.ThrottlingEntity
+  extends typings.azureMsalCommon.distCacheEntitiesThrottlingEntityMod.ThrottlingEntity
 /* static members */
 object ThrottlingEntity {
   

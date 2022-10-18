@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class WebGLUniforms protected ()
   extends typings.three.mod.WebGLUniforms {
-  def this(gl: WebGLRenderingContext, program: typings.three.webGLProgramMod.WebGLProgram) = this()
+  def this(gl: WebGLRenderingContext, program: typings.three.srcRenderersWebglWebGLProgramMod.WebGLProgram) = this()
 }

@@ -1,8 +1,8 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
-import typings.relayRuntime.relayObservableMod.RelayObservable
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
+import typings.relayRuntime.libNetworkRelayObservableMod.RelayObservable
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

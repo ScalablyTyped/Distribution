@@ -1,16 +1,14 @@
 package typings.next.anon
 
-import typings.next.mod.GetServerSidePropsResult
-import typings.next.mod.GetStaticPropsResult
 import typings.next.nextBooleans.`true`
+import typings.next.typesMod.GetServerSidePropsResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NotFound
   extends StObject
-     with GetServerSidePropsResult[js.Any]
-     with GetStaticPropsResult[js.Any] {
+     with GetServerSidePropsResult[Any] {
   
   var notFound: `true`
 }

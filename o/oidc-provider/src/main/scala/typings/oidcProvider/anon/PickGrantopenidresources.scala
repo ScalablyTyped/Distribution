@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<oidc-provider.oidc-provider.Grant, 'openid' | 'resources'> */
 trait PickGrantopenidresources extends StObject {
   
-  var openid: js.UndefOr[Scope] = js.undefined
+  var openid: js.UndefOr[Claims] = js.undefined
   
   var resources: js.UndefOr[StringDictionary[String]] = js.undefined
 }
@@ -21,7 +21,7 @@ object PickGrantopenidresources {
   
   extension [Self <: PickGrantopenidresources](x: Self) {
     
-    inline def setOpenid(value: Scope): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+    inline def setOpenid(value: Claims): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
     
     inline def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
     

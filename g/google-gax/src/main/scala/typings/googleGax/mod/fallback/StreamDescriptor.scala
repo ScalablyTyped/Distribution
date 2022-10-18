@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.StreamDescriptor")
 @js.native
 open class StreamDescriptor protected ()
-  extends typings.googleGax.fallbackMod.StreamDescriptor {
-  def this(streamType: typings.googleGax.streamingMod.StreamType) = this()
-  def this(streamType: typings.googleGax.streamingMod.StreamType, rest: Boolean) = this()
+  extends typings.googleGax.buildSrcFallbackMod.StreamDescriptor {
+  def this(streamType: typings.googleGax.buildSrcStreamingCallsStreamingMod.StreamType) = this()
+  def this(streamType: typings.googleGax.buildSrcStreamingCallsStreamingMod.StreamType, rest: Boolean) = this()
 }

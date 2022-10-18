@@ -1,7 +1,7 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.modelPopupRedirectMod.AuthEventError
-import typings.firebaseAuth.modelPopupRedirectMod.AuthEventType
+import typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventError
+import typings.firebaseAuth.distEsm2017SrcModelPopupRedirectMod.AuthEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

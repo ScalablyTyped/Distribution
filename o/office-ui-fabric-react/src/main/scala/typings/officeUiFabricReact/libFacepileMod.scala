@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
+import typings.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.IFacepileProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libFacepileMod {
   @JSImport("office-ui-fabric-react/lib/Facepile", "FacepileBase")
   @js.native
   open class FacepileBase protected ()
-    extends typings.officeUiFabricReact.facepileMod.FacepileBase {
+    extends typings.officeUiFabricReact.libComponentsFacepileMod.FacepileBase {
     def this(props: IFacepileProps) = this()
   }
   /* static members */
@@ -36,14 +36,16 @@ object libFacepileMod {
   object OverflowButtonType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.OverflowButtonType & Double
+      ] = js.native
     
-    /* 1 */ val descriptive: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.descriptive & Double = js.native
+    /* 1 */ val descriptive: typings.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.OverflowButtonType.descriptive & Double = js.native
     
-    /* 3 */ val downArrow: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.downArrow & Double = js.native
+    /* 3 */ val downArrow: typings.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.OverflowButtonType.downArrow & Double = js.native
     
-    /* 2 */ val more: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.more & Double = js.native
+    /* 2 */ val more: typings.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.OverflowButtonType.more & Double = js.native
     
-    /* 0 */ val none: typings.officeUiFabricReact.facepileTypesMod.OverflowButtonType.none & Double = js.native
+    /* 0 */ val none: typings.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.OverflowButtonType.none & Double = js.native
   }
 }

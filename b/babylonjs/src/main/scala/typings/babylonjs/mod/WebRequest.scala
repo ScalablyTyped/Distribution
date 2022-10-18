@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebRequest")
 @js.native
 open class WebRequest ()
-  extends typings.babylonjs.legacyMod.WebRequest
+  extends typings.babylonjs.legacyLegacyMod.WebRequest
 /* static members */
 object WebRequest {
   

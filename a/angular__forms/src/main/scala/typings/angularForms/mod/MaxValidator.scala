@@ -73,9 +73,27 @@ object MaxValidator {
   
   @JSImport("@angular/forms", "MaxValidator.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[MaxValidator, String, scala.Nothing, Max, js.Object, scala.Nothing, scala.Nothing, `false`] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    MaxValidator, 
+    /* input[type=number][max][formControlName],input[type=number][max][formControl],input[type=number][max][ngModel] */ String, 
+    scala.Nothing, 
+    Max, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[MaxValidator, String, scala.Nothing, Max, js.Object, scala.Nothing, scala.Nothing, `false`]
+    x: ɵɵDirectiveDeclaration[
+      MaxValidator, 
+      /* input[type=number][max][formControlName],input[type=number][max][formControl],input[type=number][max][ngModel] */ String, 
+      scala.Nothing, 
+      Max, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "MaxValidator.\u0275fac")

@@ -9,20 +9,27 @@ trait XRWebGLSubImage
   extends StObject
      with XRSubImage {
   
-  var colorTexture: WebGLTexture
+  val colorTexture: WebGLTexture
   
-  var depthStencilTexture: js.UndefOr[WebGLTexture] = js.undefined
+  val depthStencilTexture: WebGLTexture
   
-  var imageIndex: js.UndefOr[Double] = js.undefined
+  val imageIndex: Double
   
-  var textureHeight: Double
+  val textureHeight: Double
   
-  var textureWidth: Double
+  val textureWidth: Double
 }
 object XRWebGLSubImage {
   
-  inline def apply(colorTexture: WebGLTexture, textureHeight: Double, textureWidth: Double, viewport: XRViewport): XRWebGLSubImage = {
-    val __obj = js.Dynamic.literal(colorTexture = colorTexture.asInstanceOf[js.Any], textureHeight = textureHeight.asInstanceOf[js.Any], textureWidth = textureWidth.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+  inline def apply(
+    colorTexture: WebGLTexture,
+    depthStencilTexture: WebGLTexture,
+    imageIndex: Double,
+    textureHeight: Double,
+    textureWidth: Double,
+    viewport: XRViewport
+  ): XRWebGLSubImage = {
+    val __obj = js.Dynamic.literal(colorTexture = colorTexture.asInstanceOf[js.Any], depthStencilTexture = depthStencilTexture.asInstanceOf[js.Any], imageIndex = imageIndex.asInstanceOf[js.Any], textureHeight = textureHeight.asInstanceOf[js.Any], textureWidth = textureWidth.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRWebGLSubImage]
   }
   
@@ -32,11 +39,7 @@ object XRWebGLSubImage {
     
     inline def setDepthStencilTexture(value: WebGLTexture): Self = StObject.set(x, "depthStencilTexture", value.asInstanceOf[js.Any])
     
-    inline def setDepthStencilTextureUndefined: Self = StObject.set(x, "depthStencilTexture", js.undefined)
-    
     inline def setImageIndex(value: Double): Self = StObject.set(x, "imageIndex", value.asInstanceOf[js.Any])
-    
-    inline def setImageIndexUndefined: Self = StObject.set(x, "imageIndex", js.undefined)
     
     inline def setTextureHeight(value: Double): Self = StObject.set(x, "textureHeight", value.asInstanceOf[js.Any])
     

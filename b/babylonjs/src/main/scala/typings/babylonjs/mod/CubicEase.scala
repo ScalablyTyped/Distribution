@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "CubicEase")
 @js.native
 open class CubicEase ()
-  extends typings.babylonjs.legacyMod.CubicEase
+  extends typings.babylonjs.legacyLegacyMod.CubicEase

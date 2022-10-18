@@ -1,9 +1,9 @@
 package typings.awsGreengrassCoreSdk
 
-import typings.awsGreengrassCoreSdk.dataMod.StatusLevelMap
-import typings.awsGreengrassCoreSdk.dataMod.StatusLevelValue
-import typings.awsGreengrassCoreSdk.dataMod.StatusMap
-import typings.awsGreengrassCoreSdk.dataMod.StatusValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevelMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusLevelValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.StatusValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

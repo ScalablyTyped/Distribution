@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.BuildingBlock")
 @js.native
 open class BuildingBlock protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.BuildingBlock {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.BuildingBlock {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -35,7 +35,7 @@ object BuildingBlock {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.pagesMod.pages.BuildingBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.BuildingBlock]
+  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenPagesMod.pages.BuildingBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.BuildingBlock]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.BuildingBlock.structureTypeName")

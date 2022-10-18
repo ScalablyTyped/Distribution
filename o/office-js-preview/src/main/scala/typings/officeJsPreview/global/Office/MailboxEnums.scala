@@ -452,6 +452,8 @@ object MailboxEnums {
     
     /* "OneColumn" */ val OneColumn: typings.officeJsPreview.Office.MailboxEnums.OWAView.OneColumn & String = js.native
     
+    /* "OneColumnNarrow" */ val OneColumnNarrow: typings.officeJsPreview.Office.MailboxEnums.OWAView.OneColumnNarrow & String = js.native
+    
     /* "ThreeColumns" */ val ThreeColumns: typings.officeJsPreview.Office.MailboxEnums.OWAView.ThreeColumns & String = js.native
     
     /* "TwoColumns" */ val TwoColumns: typings.officeJsPreview.Office.MailboxEnums.OWAView.TwoColumns & String = js.native

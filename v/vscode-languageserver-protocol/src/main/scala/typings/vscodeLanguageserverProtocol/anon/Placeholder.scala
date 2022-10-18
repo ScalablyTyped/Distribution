@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.anon
 
-import typings.vscodeLanguageserverProtocol.protocolMod._PrepareRenameResult
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod._PrepareRenameResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

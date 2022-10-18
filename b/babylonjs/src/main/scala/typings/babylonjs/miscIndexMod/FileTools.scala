@@ -1,8 +1,8 @@
 package typings.babylonjs.miscIndexMod
 
 import typings.babylonjs.anon.CrossOrigin
-import typings.babylonjs.fileRequestMod.IFileRequest
-import typings.babylonjs.iofflineproviderMod.IOfflineProvider
+import typings.babylonjs.miscFileRequestMod.IFileRequest
+import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Blob
 import typings.std.EventTarget
@@ -56,12 +56,12 @@ object FileTools {
     useArrayBuffer: js.UndefOr[Boolean],
     onError: js.UndefOr[
       js.Function2[
-        /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-        /* exception */ js.UndefOr[typings.babylonjs.fileToolsMod.LoadFileError], 
+        /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
+        /* exception */ js.UndefOr[typings.babylonjs.miscFileToolsMod.LoadFileError], 
         Unit
       ]
     ],
-    onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]]
+    onOpened: js.UndefOr[js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(fileOrUrl.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   
   inline def LoadImage(
@@ -203,14 +203,14 @@ object FileTools {
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
@@ -223,21 +223,21 @@ object FileTools {
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
     onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -245,7 +245,7 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
@@ -254,7 +254,7 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
@@ -265,83 +265,83 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: Unit,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: Unit,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
@@ -351,7 +351,7 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
@@ -362,83 +362,83 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
@@ -449,83 +449,83 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
@@ -535,7 +535,7 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
@@ -546,77 +546,77 @@ object FileTools {
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
-    onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.RequestFileError, Unit],
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onError: js.Function1[/* error */ typings.babylonjs.miscFileToolsMod.RequestFileError, Unit],
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def RequestFile(
     url: String,
     onSuccess: js.Function2[
       /* data */ String | js.typedarray.ArrayBuffer, 
-      /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
+      /* request */ js.UndefOr[typings.babylonjs.miscWebRequestMod.WebRequest], 
       Unit
     ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: Unit,
-    onOpened: js.Function1[/* request */ typings.babylonjs.webRequestMod.WebRequest, Unit]
+    onOpened: js.Function1[/* request */ typings.babylonjs.miscWebRequestMod.WebRequest, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("RequestFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], onOpened.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   
   inline def SetCorsBehavior(url: String, element: CrossOrigin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCorsBehavior")(url.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]

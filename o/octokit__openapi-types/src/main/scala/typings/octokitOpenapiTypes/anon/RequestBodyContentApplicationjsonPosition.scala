@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonPosition extends StObject {
   
-  var parameters: Path135
+  var parameters: PathColumnidNumber
   
   var requestBody: ContentApplicationjsonPosition
   
@@ -14,14 +14,18 @@ trait RequestBodyContentApplicationjsonPosition extends StObject {
 }
 object RequestBodyContentApplicationjsonPosition {
   
-  inline def apply(parameters: Path135, requestBody: ContentApplicationjsonPosition, responses: `401403422`): RequestBodyContentApplicationjsonPosition = {
+  inline def apply(
+    parameters: PathColumnidNumber,
+    requestBody: ContentApplicationjsonPosition,
+    responses: `401403422`
+  ): RequestBodyContentApplicationjsonPosition = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonPosition]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonPosition](x: Self) {
     
-    inline def setParameters(value: Path135): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathColumnidNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonPosition): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

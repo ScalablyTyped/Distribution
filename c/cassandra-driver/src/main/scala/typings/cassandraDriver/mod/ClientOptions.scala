@@ -7,9 +7,9 @@ import typings.cassandraDriver.anon.CoreConnectionsPerHost
 import typings.cassandraDriver.anon.MaxSchemaAgreementWaitSeconds
 import typings.cassandraDriver.anon.Password
 import typings.cassandraDriver.anon.SecureConnectBundle
-import typings.cassandraDriver.authMod.auth.AuthProvider
-import typings.cassandraDriver.metricsMod.metrics.ClientMetrics
-import typings.cassandraDriver.trackerMod.tracker.RequestTracker
+import typings.cassandraDriver.libAuthMod.auth.AuthProvider
+import typings.cassandraDriver.libMetricsMod.metrics.ClientMetrics
+import typings.cassandraDriver.libTrackerMod.tracker.RequestTracker
 import typings.node.tlsMod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

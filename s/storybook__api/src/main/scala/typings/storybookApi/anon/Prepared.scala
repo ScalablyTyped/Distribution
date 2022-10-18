@@ -8,11 +8,11 @@ trait Prepared extends StObject {
   
   var prepared: js.UndefOr[Boolean] = js.undefined
   
-  var provider: typings.storybookApi.providerMod.Provider
+  var provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider
 }
 object Prepared {
   
-  inline def apply(provider: typings.storybookApi.providerMod.Provider): Prepared = {
+  inline def apply(provider: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider): Prepared = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prepared]
   }
@@ -23,6 +23,6 @@ object Prepared {
     
     inline def setPreparedUndefined: Self = StObject.set(x, "prepared", js.undefined)
     
-    inline def setProvider(value: typings.storybookApi.providerMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: typings.storybookApi.distTs3Dot9ModulesProviderMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
   }
 }

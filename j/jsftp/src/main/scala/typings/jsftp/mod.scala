@@ -3,10 +3,10 @@ package typings.jsftp
 import typings.jsftp.anon.Code
 import typings.jsftp.anon.Host
 import typings.jsftp.anon.Name
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,8 +39,8 @@ object mod {
     def ls(filePath: String, callback: LsCallback): Unit = js.native
     
     def put(source: String, remotePath: String, callback: ErrorCallback): Unit = js.native
+    def put(source: ReadableStream, remotePath: String, callback: ErrorCallback): Unit = js.native
     def put(source: Buffer, remotePath: String, callback: ErrorCallback): Unit = js.native
-    def put(source: ReadableStream[Any], remotePath: String, callback: ErrorCallback): Unit = js.native
     
     def raw(command: String, arg1: Any, arg2: Any, arg3: Any, arg4: Any, callback: RawCallback): Unit = js.native
     def raw(command: String, arg1: Any, arg2: Any, arg3: Any, callback: RawCallback): Unit = js.native

@@ -36,7 +36,7 @@ object SpeechRecognitionAlternative {
     
     inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: String*): Self = StObject.set(x, "timestamps", js.Array(value*))
     
     inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object SpeechRecognitionAlternative {
     
     inline def setWord_confidenceUndefined: Self = StObject.set(x, "word_confidence", js.undefined)
     
-    inline def setWord_confidenceVarargs(value: String*): Self = StObject.set(x, "word_confidence", js.Array(value :_*))
+    inline def setWord_confidenceVarargs(value: String*): Self = StObject.set(x, "word_confidence", js.Array(value*))
   }
 }

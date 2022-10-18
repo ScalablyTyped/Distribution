@@ -155,20 +155,20 @@ object mod {
     
     /**
       * Module name
-      * 
+      *
       * To handle escape sequences in specifier strings, the .n field of imported specifiers will be provided where possible.
-      * 
+      *
       * For dynamic import expressions, this field will be empty if not a valid JS string.
-      * 
+      *
       * @example
       * const [imports1, exports1] = parse(String.raw`import './\\u0061\\u0062.js'`);
       * imports1[0].n;
       * // Returns "./ab.js"
-      * 
+      *
       * const [imports2, exports2] = parse(`import("./ab.js")`);
       * imports2[0].n;
       * // Returns "./ab.js"
-      * 
+      *
       * const [imports3, exports3] = parse(`import("./" + "ab.js")`);
       * imports3[0].n;
       * // Returns undefined
@@ -177,7 +177,7 @@ object mod {
     
     /**
       * Start of module specifier
-      * 
+      *
       * @example
       * const source = `import { a } from 'asdf'`;
       * const [imports, exports] = parse(source);
@@ -193,7 +193,7 @@ object mod {
     
     /**
       * Start of import statement
-      * 
+      *
       * @example
       * const source = `import { a } from 'asdf'`;
       * const [imports, exports] = parse(source);

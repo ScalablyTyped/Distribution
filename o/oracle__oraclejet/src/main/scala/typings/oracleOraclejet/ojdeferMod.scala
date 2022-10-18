@@ -1036,8 +1036,9 @@ object ojdeferMod {
     
     def setProperty[T /* <: /* keyof @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties */ String */](
       property: T,
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties[T] */ js.Any) | (JetSetPropertyType[T, ojDeferSettableProperties])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojdefer.ojDeferSettableProperties[T] */ js.Any
     ): Unit = js.native
+    def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojDeferSettableProperties]): Unit = js.native
   }
   
   type ojDeferEventMap = HTMLElementEventMap

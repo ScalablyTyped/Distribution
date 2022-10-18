@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__notebook-extension
 
-Typings are for version 2.2.7
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Notebook Extension
@@ -10,10 +10,10 @@ JupyterLab - Notebook Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/notebook-extension |
 | Keywords           | - |
-| # releases         | 132 |
-| # dependents       | 2 |
-| # downloads        | 1472941 |
-| # stars            | 0 |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 193748.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

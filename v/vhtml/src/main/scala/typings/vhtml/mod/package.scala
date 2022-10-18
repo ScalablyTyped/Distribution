@@ -2,11 +2,8 @@ package typings.vhtml.mod
 
 import typings.std.Exclude
 import typings.std.Pick
-import typings.vhtml.anon.ChildrenAny
 import typings.vhtml.anon.ChildrenChildren
 import typings.vhtml.anon.Dictattr
-import typings.vhtml.anon.`2`
-import typings.vhtml.anon.`3`
 import typings.vhtml.mod.^
 import typings.vhtml.vhtmlStrings.children
 import org.scalablytyped.runtime.StObject
@@ -58,7 +55,7 @@ inline def apply[Props, Children /* <: js.Array[Any] */](
   * - Components with arbitrary number of children (props.children is an array)
   * - Forbidding components whose props.children is not an array
   */
-type ComponentPropTransform[TComp, TProps] = (SafeEmptyType[typings.std.Omit[TProps, children]]) & (js.Object | `3` | `2` | ChildrenAny)
+type ComponentPropTransform[TComp, TProps] = (SafeEmptyType[typings.std.Omit[TProps, children]]) & (/* import warning: importer.ImportType#apply Failed type conversion: TProps extends {  children :[]} ? {} : TProps extends {  children :[infer ChildType]} ? {  children :ChildType} : TProps extends {  children :[infer ChildType | undefined]} ? {  children :ChildType | undefined} : TProps extends {  children :std.Array<infer ChildrenType>} ? {  children :ChildrenType | std.Array<ChildrenType> | undefined} : TProps extends {  children :any} ? never : {} */ js.Any)
 
 /**
   * @internal
@@ -73,7 +70,7 @@ type ComponentPropTransform[TComp, TProps] = (SafeEmptyType[typings.std.Omit[TPr
   *    since TypeScript already supports arbitrary `data-*` attributes in JSX
   *    (see "Note" in https://www.typescriptlang.org/docs/handbook/jsx.html#attribute-type-checking)
   */
-type HtmlElementAttr[Tag /* <: String */] = (js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: vhtml.vhtml.JSX.IntrinsicElements[Tag] */ js.Any)) & Dictattr
+type HtmlElementAttr[Tag /* <: String */] = (/* import warning: importer.ImportType#apply Failed type conversion: Tag extends 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'slot' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'template' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' ? vhtml.vhtml.JSX.IntrinsicElements[Tag] : {} */ js.Any) & Dictattr
 
 /**
   * @internal
@@ -81,14 +78,3 @@ type HtmlElementAttr[Tag /* <: String */] = (js.Object | (/* import warning: imp
   * Added here so that we can support older versions of TypeScript.
   */
 type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
-
-/**
-  * @internal
-  * Empty mapped types (`Pick<{}, never>`) are almost identical to the empty
-  * object type (`{}`). However, TypeScript seems to treat them differently for
-  * the purposes of checking `JSX.LibraryManagedAttributes`.
-  *
-  * This type alias converts any empty-ish type to a plain empty object type, so
-  * that we can work around said behavior.
-  */
-type SafeEmptyType[T] = T | js.Object

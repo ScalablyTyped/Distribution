@@ -1,7 +1,7 @@
 package typings.nivoBar.anon
 
-import typings.nivoBar.typesMod.BarDatum
-import typings.nivoBar.typesMod.ComputedDatum
+import typings.nivoBar.distTypesTypesMod.BarDatum
+import typings.nivoBar.distTypesTypesMod.ComputedDatum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

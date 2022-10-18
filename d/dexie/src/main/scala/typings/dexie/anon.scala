@@ -34,23 +34,6 @@ object anon {
     }
   }
   
-  trait `1` extends StObject {
-    
-    var stack: dbcore
-  }
-  object `1` {
-    
-    inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal(stack = "dbcore")
-      __obj.asInstanceOf[`1`]
-    }
-    
-    extension [Self <: `1`](x: Self) {
-      
-      inline def setStack(value: dbcore): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait AllKeys[B /* <: Boolean */] extends StObject {
     
     var allKeys: B
@@ -242,16 +225,33 @@ object anon {
   
   trait Stack extends StObject {
     
-    var stack: String
+    var stack: dbcore
   }
   object Stack {
     
-    inline def apply(stack: String): Stack = {
-      val __obj = js.Dynamic.literal(stack = stack.asInstanceOf[js.Any])
+    inline def apply(): Stack = {
+      val __obj = js.Dynamic.literal(stack = "dbcore")
       __obj.asInstanceOf[Stack]
     }
     
     extension [Self <: Stack](x: Self) {
+      
+      inline def setStack(value: dbcore): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait StackString extends StObject {
+    
+    var stack: String
+  }
+  object StackString {
+    
+    inline def apply(stack: String): StackString = {
+      val __obj = js.Dynamic.literal(stack = stack.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StackString]
+    }
+    
+    extension [Self <: StackString](x: Self) {
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }

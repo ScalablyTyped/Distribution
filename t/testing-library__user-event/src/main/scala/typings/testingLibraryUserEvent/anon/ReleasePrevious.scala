@@ -1,6 +1,6 @@
 package typings.testingLibraryUserEvent.anon
 
-import typings.testingLibraryUserEvent.sharedMod.pointerKey
+import typings.testingLibraryUserEvent.distTypesSystemPointerSharedMod.pointerKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

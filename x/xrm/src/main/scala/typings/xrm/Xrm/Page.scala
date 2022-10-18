@@ -377,7 +377,8 @@ object Page {
   /**
     * Interface for a process stage select event context
     * @deprecated  Use {@link Xrm.Events.StageSelectedEventContext} instead.
-    */ type StageSelectedEventContext = typings.xrm.Xrm.Events.StageSelectedEventContext
+    */
+  type StageSelectedEventContext = typings.xrm.Xrm.Events.StageSelectedEventContext
   
   /**
     * Status for Xrm.Page.Stage.getStatus().

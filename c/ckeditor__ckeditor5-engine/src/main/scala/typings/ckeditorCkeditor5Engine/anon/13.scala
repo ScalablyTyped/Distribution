@@ -6,21 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `13` extends StObject {
   
-  var renderUnsafeAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  var baseVersion: Double | Null
 }
 object `13` {
   
   inline def apply(): `13` = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(baseVersion = null)
     __obj.asInstanceOf[`13`]
   }
   
   extension [Self <: `13`](x: Self) {
     
-    inline def setRenderUnsafeAttributes(value: js.Array[String]): Self = StObject.set(x, "renderUnsafeAttributes", value.asInstanceOf[js.Any])
+    inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     
-    inline def setRenderUnsafeAttributesUndefined: Self = StObject.set(x, "renderUnsafeAttributes", js.undefined)
-    
-    inline def setRenderUnsafeAttributesVarargs(value: String*): Self = StObject.set(x, "renderUnsafeAttributes", js.Array(value*))
+    inline def setBaseVersionNull: Self = StObject.set(x, "baseVersion", null)
   }
 }

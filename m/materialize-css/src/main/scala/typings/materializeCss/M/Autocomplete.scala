@@ -5,9 +5,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<AutocompleteOptions> * / any
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ trait Autocomplete extends StObject {
+trait Autocomplete
+  extends StObject
+     with Component[AutocompleteOptions]
+     with Openable {
   
   /**
     * Index of the current selected option.
@@ -15,24 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var activeIndex: Double
   
   /**
-    * Hide autocomplete.
-    */
-  def close(): Unit
-  
-  /**
     * Number of matching autocomplete options.
     */
   var count: Double
-  
-  /**
-    * If the autocomplete is open.
-    */
-  var isOpen: Boolean
-  
-  /**
-    * Show autocomplete.
-    */
-  def open(): Unit
   
   /**
     * Select a specific autocomplete options.
@@ -52,12 +38,15 @@ object Autocomplete {
     activeIndex: Double,
     close: () => Unit,
     count: Double,
+    destroy: () => Unit,
+    el: Element,
     isOpen: Boolean,
     open: () => Unit,
+    options: AutocompleteOptions,
     selectOption: Element => Unit,
     updateData: AutocompleteData => Unit
   ): Autocomplete = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
     __obj.asInstanceOf[Autocomplete]
   }
   
@@ -65,13 +54,7 @@ object Autocomplete {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
-    
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
-    
-    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
-    
-    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     inline def setSelectOption(value: Element => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
     

@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object angularQExtrasStrings {
   
   @js.native
-  sealed trait IQService extends StObject
-  inline def IQService: IQService = "IQService".asInstanceOf[IQService]
-  
-  @js.native
   sealed trait fulfilled
     extends StObject
        with PromiseState

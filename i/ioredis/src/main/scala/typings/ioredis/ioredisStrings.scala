@@ -1,10 +1,10 @@
 package typings.ioredis
 
-import typings.ioredis.clusterMod.ClusterStatus
-import typings.ioredis.redisMod.RedisStatus
-import typings.ioredis.subscriptionSetMod.AddSet
-import typings.ioredis.subscriptionSetMod.DelSet
-import typings.ioredis.utilMod.NodeRole
+import typings.ioredis.builtClusterMod.ClusterStatus
+import typings.ioredis.builtClusterUtilMod.NodeRole
+import typings.ioredis.builtRedisMod.RedisStatus
+import typings.ioredis.builtSubscriptionSetMod.AddSet
+import typings.ioredis.builtSubscriptionSetMod.DelSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

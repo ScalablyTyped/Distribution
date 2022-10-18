@@ -21,7 +21,7 @@ object mod {
     
     var Console: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Console_2 */ Any = js.native
     
-    /* private */ var _buffer: Any = js.native
+    /* private */ val _buffer: Any = js.native
     
     /* private */ var _counters: Any = js.native
     
@@ -97,7 +97,7 @@ object mod {
     
     /* private */ var _counters: Any = js.native
     
-    /* private */ var _formatBuffer: Any = js.native
+    /* private */ val _formatBuffer: Any = js.native
     
     /* private */ var _groupDepth: Any = js.native
     
@@ -105,9 +105,9 @@ object mod {
     
     /* private */ var _logError: Any = js.native
     
-    /* private */ var _stderr: Any = js.native
+    /* private */ val _stderr: Any = js.native
     
-    /* private */ var _stdout: Any = js.native
+    /* private */ val _stdout: Any = js.native
     
     /* private */ var _timers: Any = js.native
     

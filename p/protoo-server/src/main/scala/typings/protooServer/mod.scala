@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.protooServer.protooServerBooleans.`true`
 import typings.protooServer.protooServerStrings.close
 import typings.protooServer.protooServerStrings.connectionrequest
@@ -47,10 +47,10 @@ object mod {
             ]
           ]) = this()
     def this(server: typings.node.httpsMod.Server[
-            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
             Instantiable1[
               /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
             ]
           ]) = this()
     def this(
@@ -65,10 +65,10 @@ object mod {
     ) = this()
     def this(
       server: typings.node.httpsMod.Server[
-            Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+            Instantiable1[/* socket */ Socket, typings.node.nodeColonhttpMod.IncomingMessage], 
             Instantiable1[
               /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
-              typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              typings.node.nodeColonhttpMod.ServerResponse[IncomingMessage]
             ]
           ],
       options: WebSocketServerOptions

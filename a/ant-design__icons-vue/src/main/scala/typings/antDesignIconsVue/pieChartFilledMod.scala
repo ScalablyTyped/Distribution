@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPieChartFilledMod.PieChartFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pieChartFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PieChartFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PieChartFilled", JSImport.Default)
   @js.native
   val default: PieChartFilledIconType = js.native
-  
-  @js.native
-  trait PieChartFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PieChartFilledIconType: String = js.native
-  }
   
   type _To = PieChartFilledIconType
   

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pixi.js", "AbstractRenderer")
+/* note: abstract class */ @JSImport("pixi.js", "AbstractRenderer")
 @js.native
 /**
   * @param type - The renderer type.
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  (shown if not transparent).
   * @param {number} [options.backgroundAlpha=1] - Value from 0 (fully transparent) to 1 (fully opaque).
   */
-abstract class AbstractRenderer ()
+open class AbstractRenderer ()
   extends typings.pixiCore.mod.AbstractRenderer {
   def this(`type`: typings.pixiConstants.mod.RENDERER_TYPE) = this()
   def this(`type`: Unit, options: IRendererOptions) = this()

@@ -1,9 +1,6 @@
 package typings.pify
 
-import org.scalablytyped.runtime.TopLevel
-import typings.pify.pifyBooleans.`false`
 import typings.pify.pifyBooleans.`true`
-import typings.std.Parameters
 import typings.std.PromiseConstructor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -16,26 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[FirstArgument, Arguments /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](input: js.Function2[/* argument */ FirstArgument, /* arguments_ */ Arguments, Any]): Promisify[
-    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
-    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Promisify[
-    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
-    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
-  ]]
   inline def default[Module /* <: Record[String, Any] */, Includes /* <: js.Array[/* keyof Module */ String] */, Excludes /* <: js.Array[/* keyof Module */ String] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](// eslint-disable-next-line unicorn/prefer-module
   module: Module): PromisifyModule[Module, MultiArgs, ErrorFirst, Includes, Excludes] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(module.asInstanceOf[js.Any]).asInstanceOf[PromisifyModule[Module, MultiArgs, ErrorFirst, Includes, Excludes]]
-  
-  inline def default_false[FirstArgument, Arguments /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](
-    input: js.Function2[/* argument */ FirstArgument, /* arguments_ */ Arguments, Any],
-    options: Options[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst, `false`]
-  ): Promisify[
-    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
-    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promisify[
-    /* import warning: importer.ImportType#apply c repeated non-array type: Arguments */ js.Array[Arguments], 
-    InternalOptions[js.Array[Any], js.Array[Any], MultiArgs, ErrorFirst]
-  ]]
   
   inline def default_true[Module /* <: Record[String, Any] */, Includes /* <: js.Array[/* keyof Module */ String] */, Excludes /* <: js.Array[/* keyof Module */ String] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */](
     // eslint-disable-next-line unicorn/prefer-module
@@ -43,7 +22,15 @@ object mod {
     options: Options[Includes, Excludes, MultiArgs, ErrorFirst, `true`]
   ): PromisifyModule[Module, MultiArgs, ErrorFirst, Includes, Excludes] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PromisifyModule[Module, MultiArgs, ErrorFirst, Includes, Excludes]]
   
-  type DropLastArrayElement[T /* <: js.Array[Any] */] = js.Array[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [...infer U, unknown] ? U : []
+    }}}
+    */
+  @js.native
+  trait DropLastArrayElement[T /* <: js.Array[Any] */] extends StObject
   
   trait InternalOptions[Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */] extends StObject {
     
@@ -74,7 +61,15 @@ object mod {
     }
   }
   
-  type LastArrayElement[T /* <: js.Array[Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [...any, infer L] ? L : never
+    }}}
+    */
+  @js.native
+  trait LastArrayElement[T /* <: js.Array[Any] */] extends StObject
   
   trait Options[Includes /* <: js.Array[Any] */, Excludes /* <: js.Array[Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */, ExcludeMain /* <: Boolean */] extends StObject {
     
@@ -127,18 +122,26 @@ object mod {
   
   type Promisify[Args /* <: js.Array[Any] */, GenericOptions /* <: InternalOptions[js.Array[Any], js.Array[Any], Boolean, Boolean] */] = js.Function1[
     /* args */ DropLastArrayElement[Args], 
-    js.Promise[
-      Any | LastArrayElement[Parameters[LastArrayElement[Args]]] | Parameters[LastArrayElement[Args]]
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: pify.pify.LastArrayElement<Args> extends (arguments_ : any): any ? std.Parameters<pify.pify.LastArrayElement<Args>> extends [infer SingleCallbackArg] ? GenericOptions extends {  errorFirst :true} ? std.Promise<unknown> : std.Promise<SingleCallbackArg> : std.Promise<GenericOptions extends {  multiArgs :false} ? pify.pify.LastArrayElement<std.Parameters<pify.pify.LastArrayElement<Args>>> : std.Parameters<pify.pify.LastArrayElement<Args>>> : std.Promise<unknown> */ js.Any
   ]
   
-  type PromisifyModule[Module /* <: Record[String, Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */, Includes /* <: js.Array[/* keyof Module */ String] */, Excludes /* <: js.Array[/* keyof Module */ String] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Module ]: Module[K] extends (arguments_ : infer Arguments): any? K extends Includes[number]? pify.pify.Promisify<any, pify.pify.InternalOptions<Includes, Excludes, MultiArgs, true>> : K extends Excludes[number]? Module[K] : pify.pify.StringEndsWith<K, 'Sync' | 'Stream'> extends true? Module[K] : pify.pify.Promisify<any, pify.pify.InternalOptions<Includes, Excludes, MultiArgs, ErrorFirst>> : Module[K]}
-    */ typings.pify.pifyStrings.PromisifyModule & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof Module ]: Module[K] extends (arguments_ : infer Arguments): any? K extends Includes[number]? pify.pify.Promisify<Arguments, pify.pify.InternalOptions<Includes, Excludes, MultiArgs, true>> : K extends Excludes[number]? Module[K] : pify.pify.StringEndsWith<K, 'Sync' | 'Stream'> extends true? Module[K] : pify.pify.Promisify<Arguments, pify.pify.InternalOptions<Includes, Excludes, MultiArgs, ErrorFirst>> : Module[K]}
+    }}}
+    */
+  @js.native
+  trait PromisifyModule[Module /* <: Record[String, Any] */, MultiArgs /* <: Boolean */, ErrorFirst /* <: Boolean */, Includes /* <: js.Array[/* keyof Module */ String] */, Excludes /* <: js.Array[/* keyof Module */ String] */] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.pify.pifyBooleans.`false`
-    - typings.pify.pifyBooleans.`true`
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends / * template literal string: ${infer_}${X} * / string ? true : false
+    }}}
+    */
+  @js.native
   trait StringEndsWith[S, X /* <: String */] extends StObject
 }

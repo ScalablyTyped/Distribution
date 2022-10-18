@@ -1,5 +1,7 @@
 package typings.webpackEnv
 
+import typings.node.NodeModule
+import typings.node.NodeRequire
 import typings.webpackEnv.NodeJS.Process
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

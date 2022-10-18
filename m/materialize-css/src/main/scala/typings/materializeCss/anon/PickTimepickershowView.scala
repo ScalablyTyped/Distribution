@@ -1,5 +1,6 @@
 package typings.materializeCss.anon
 
+import typings.materializeCss.M.Views
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Timepicker, 'showView'> */
 trait PickTimepickershowView extends StObject {
   
-  var showView: js.UndefOr[Any] = js.undefined
+  def showView(view: Views): Unit
+  @JSName("showView")
+  var showView_Original: js.Function1[/* view */ Views, Unit]
 }
 object PickTimepickershowView {
   
-  inline def apply(): PickTimepickershowView = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(showView: /* view */ Views => Unit): PickTimepickershowView = {
+    val __obj = js.Dynamic.literal(showView = js.Any.fromFunction1(showView))
     __obj.asInstanceOf[PickTimepickershowView]
   }
   
   extension [Self <: PickTimepickershowView](x: Self) {
     
-    inline def setShowView(value: Any): Self = StObject.set(x, "showView", value.asInstanceOf[js.Any])
-    
-    inline def setShowViewUndefined: Self = StObject.set(x, "showView", js.undefined)
+    inline def setShowView(value: /* view */ Views => Unit): Self = StObject.set(x, "showView", js.Any.fromFunction1(value))
   }
 }

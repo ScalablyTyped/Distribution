@@ -1,7 +1,7 @@
 package typings.mithril.mod
 
 import typings.mithril.anon.Fn0
-import typings.mithril.anon.FnCallElementComponent
+import typings.mithril.anon.FnCall
 import typings.mithril.anon.FnCallUrlOptions
 import typings.mithril.anon.JsonpOptionsurlstring
 import typings.mithril.anon.Url
@@ -31,7 +31,7 @@ trait Static
   def mount(element: Element, component: Null): Unit = js.native
   def mount(element: Element, component: ComponentTypes[Any, Any]): Unit = js.native
   @JSName("mount")
-  var mount_Original: FnCallElementComponent = js.native
+  var mount_Original: FnCall = js.native
   
   /** Parse path name */
   def parsePathname(url: String): typings.mithril.anon.Params = js.native

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object svelteLeafletjsStrings {
   
   @js.native
-  sealed trait CreateSvelteEventMap extends StObject
-  inline def CreateSvelteEventMap: CreateSvelteEventMap = "CreateSvelteEventMap".asInstanceOf[CreateSvelteEventMap]
-  
-  @js.native
   sealed trait onadd extends StObject
   inline def onadd: onadd = "onadd".asInstanceOf[onadd]
   

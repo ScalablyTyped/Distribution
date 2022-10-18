@@ -4,43 +4,42 @@ import typings.nivoCalendar.nivoCalendarStrings.after
 import typings.nivoCalendar.nivoCalendarStrings.before
 import typings.nivoCalendar.nivoCalendarStrings.horizontal
 import typings.nivoCalendar.nivoCalendarStrings.vertical
-import typings.nivoCalendar.typesMod.Year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Direction extends StObject {
+trait Direction[Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */] extends StObject {
   
   var direction: horizontal | vertical
   
-  var yearLegendOffset: Double
+  var monthLegendOffset: Double
   
-  var yearLegendPosition: before | after
+  var monthLegendPosition: before | after
   
-  var years: js.Array[Year]
+  var months: js.Array[Month]
 }
 object Direction {
   
-  inline def apply(
+  inline def apply[Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */](
     direction: horizontal | vertical,
-    yearLegendOffset: Double,
-    yearLegendPosition: before | after,
-    years: js.Array[Year]
-  ): Direction = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], yearLegendOffset = yearLegendOffset.asInstanceOf[js.Any], yearLegendPosition = yearLegendPosition.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Direction]
+    monthLegendOffset: Double,
+    monthLegendPosition: before | after,
+    months: js.Array[Month]
+  ): Direction[Month] = {
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], monthLegendOffset = monthLegendOffset.asInstanceOf[js.Any], monthLegendPosition = monthLegendPosition.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Direction[Month]]
   }
   
-  extension [Self <: Direction](x: Self) {
+  extension [Self <: Direction[?], Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */](x: Self & Direction[Month]) {
     
     inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    inline def setYearLegendOffset(value: Double): Self = StObject.set(x, "yearLegendOffset", value.asInstanceOf[js.Any])
+    inline def setMonthLegendOffset(value: Double): Self = StObject.set(x, "monthLegendOffset", value.asInstanceOf[js.Any])
     
-    inline def setYearLegendPosition(value: before | after): Self = StObject.set(x, "yearLegendPosition", value.asInstanceOf[js.Any])
+    inline def setMonthLegendPosition(value: before | after): Self = StObject.set(x, "monthLegendPosition", value.asInstanceOf[js.Any])
     
-    inline def setYears(value: js.Array[Year]): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    inline def setMonths(value: js.Array[Month]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
-    inline def setYearsVarargs(value: Year*): Self = StObject.set(x, "years", js.Array(value*))
+    inline def setMonthsVarargs(value: Month*): Self = StObject.set(x, "months", js.Array(value*))
   }
 }

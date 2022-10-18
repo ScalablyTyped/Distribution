@@ -1,6 +1,6 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.typingMod.ProSchema
+import typings.antDesignProUtils.esTypingMod.ProSchema
 import typings.react.mod.Key
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject

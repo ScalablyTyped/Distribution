@@ -1,11 +1,11 @@
 package typings.firebaseAppCheck
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebaseAppCheck.factoryMod.AppCheckService
-import typings.firebaseAppCheck.srcPublicTypesMod.AppCheck
-import typings.firebaseAppCheck.srcPublicTypesMod.AppCheckOptions
-import typings.firebaseAppCheck.srcPublicTypesMod.AppCheckTokenResult
-import typings.firebaseAppCheck.srcPublicTypesMod.CustomProviderOptions
+import typings.firebaseAppCheck.distSrcFactoryMod.AppCheckService
+import typings.firebaseAppCheck.distSrcPublicTypesMod.AppCheck
+import typings.firebaseAppCheck.distSrcPublicTypesMod.AppCheckOptions
+import typings.firebaseAppCheck.distSrcPublicTypesMod.AppCheckTokenResult
+import typings.firebaseAppCheck.distSrcPublicTypesMod.CustomProviderOptions
 import typings.firebaseUtil.mod.PartialObserver
 import typings.firebaseUtil.mod.Unsubscribe
 import org.scalablytyped.runtime.StObject
@@ -21,14 +21,14 @@ object distSrcMod {
   @JSImport("@firebase/app-check/dist/src", "CustomProvider")
   @js.native
   open class CustomProvider protected ()
-    extends typings.firebaseAppCheck.srcApiMod.CustomProvider {
+    extends typings.firebaseAppCheck.distSrcApiMod.CustomProvider {
     def this(_customProviderOptions: CustomProviderOptions) = this()
   }
   
   @JSImport("@firebase/app-check/dist/src", "ReCaptchaEnterpriseProvider")
   @js.native
   open class ReCaptchaEnterpriseProvider protected ()
-    extends typings.firebaseAppCheck.srcApiMod.ReCaptchaEnterpriseProvider {
+    extends typings.firebaseAppCheck.distSrcApiMod.ReCaptchaEnterpriseProvider {
     /**
       * Create a ReCaptchaEnterpriseProvider instance.
       * @param siteKey - reCAPTCHA Enterprise score-based site key.
@@ -39,7 +39,7 @@ object distSrcMod {
   @JSImport("@firebase/app-check/dist/src", "ReCaptchaV3Provider")
   @js.native
   open class ReCaptchaV3Provider protected ()
-    extends typings.firebaseAppCheck.srcApiMod.ReCaptchaV3Provider {
+    extends typings.firebaseAppCheck.distSrcApiMod.ReCaptchaV3Provider {
     /**
       * Create a ReCaptchaV3Provider instance.
       * @param siteKey - ReCAPTCHA V3 siteKey.
@@ -75,6 +75,7 @@ object distSrcMod {
   
   inline def setTokenAutoRefreshEnabled(appCheckInstance: AppCheck, isTokenAutoRefreshEnabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTokenAutoRefreshEnabled")(appCheckInstance.asInstanceOf[js.Any], isTokenAutoRefreshEnabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

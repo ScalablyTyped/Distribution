@@ -23,6 +23,8 @@ object ClassAttributes {
     
     inline def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

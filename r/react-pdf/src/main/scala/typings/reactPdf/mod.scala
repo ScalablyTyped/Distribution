@@ -1,22 +1,22 @@
 package typings.reactPdf
 
-import typings.pdfjsDist.annotationEditorLayerMod.AnnotationEditorLayerOptions
-import typings.pdfjsDist.annotationLayerMod.AnnotationLayerParameters
-import typings.pdfjsDist.annotationLayerMod.PageViewport
 import typings.pdfjsDist.anon.Element
 import typings.pdfjsDist.anon.Name
 import typings.pdfjsDist.anon.Rotation
 import typings.pdfjsDist.anon.TextDivs
-import typings.pdfjsDist.apiMod.GetDocumentParameters
-import typings.pdfjsDist.apiMod.PDFDocumentLoadingTask
-import typings.pdfjsDist.apiMod.PDFWorkerParameters
-import typings.pdfjsDist.textLayerMod.TextLayerRenderParameters
-import typings.pdfjsDist.textLayerMod.TextLayerRenderTask
-import typings.pdfjsDist.toolsMod.KeyboardManager
-import typings.pdfjsDist.utilMod.PromiseCapability
-import typings.pdfjsDist.workerOptionsMod.GlobalWorkerOptionsType
-import typings.pdfjsDist.xfaLayerMod.XfaLayerParameters
-import typings.reactPdf.documentMod.default
+import typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.AnnotationLayerParameters
+import typings.pdfjsDist.typesSrcDisplayAnnotationLayerMod.PageViewport
+import typings.pdfjsDist.typesSrcDisplayApiMod.GetDocumentParameters
+import typings.pdfjsDist.typesSrcDisplayApiMod.PDFDocumentLoadingTask
+import typings.pdfjsDist.typesSrcDisplayApiMod.PDFWorkerParameters
+import typings.pdfjsDist.typesSrcDisplayEditorAnnotationEditorLayerMod.AnnotationEditorLayerOptions
+import typings.pdfjsDist.typesSrcDisplayEditorToolsMod.KeyboardManager
+import typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderParameters
+import typings.pdfjsDist.typesSrcDisplayTextLayerMod.TextLayerRenderTask
+import typings.pdfjsDist.typesSrcDisplayWorkerOptionsMod.GlobalWorkerOptionsType
+import typings.pdfjsDist.typesSrcDisplayXfaLayerMod.XfaLayerParameters
+import typings.pdfjsDist.typesSrcSharedUtilMod.PromiseCapability
+import typings.reactPdf.distDocumentMod.default
 import typings.std.HTMLDivElement
 import typings.std.URL
 import typings.std.WeakMap
@@ -33,12 +33,12 @@ object mod {
   @JSImport("react-pdf", "Outline")
   @js.native
   open class Outline ()
-    extends typings.reactPdf.outlineMod.default
+    extends typings.reactPdf.distOutlineMod.default
   
   @JSImport("react-pdf", "Page")
   @js.native
   open class Page ()
-    extends typings.reactPdf.pageMod.default
+    extends typings.reactPdf.distPageMod.default
   
   object pdfjs {
     
@@ -49,7 +49,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.AnnotationEditorLayer")
     @js.native
     open class AnnotationEditorLayer protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.AnnotationEditorLayer {
+      extends typings.reactPdf.distPdfjsDistMod.default.AnnotationEditorLayer {
       /**
         * @param {AnnotationEditorLayerOptions} options
         */
@@ -117,7 +117,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.AnnotationEditorUIManager")
     @js.native
     open class AnnotationEditorUIManager protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.AnnotationEditorUIManager {
+      extends typings.reactPdf.distPdfjsDistMod.default.AnnotationEditorUIManager {
       def this(container: Any, eventBus: Any) = this()
     }
     /* static members */
@@ -136,7 +136,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.AnnotationLayer")
     @js.native
     open class AnnotationLayer ()
-      extends typings.reactPdf.pdfjsDistMod.default.AnnotationLayer
+      extends typings.reactPdf.distPdfjsDistMod.default.AnnotationLayer
     /* static members */
     object AnnotationLayer {
       
@@ -214,19 +214,19 @@ object mod {
     @JSImport("react-pdf", "pdfjs.InvalidPDFException")
     @js.native
     open class InvalidPDFException protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.InvalidPDFException {
+      extends typings.reactPdf.distPdfjsDistMod.default.InvalidPDFException {
       def this(msg: Any) = this()
     }
     
     @JSImport("react-pdf", "pdfjs.LoopbackPort")
     @js.native
     open class LoopbackPort ()
-      extends typings.reactPdf.pdfjsDistMod.default.LoopbackPort
+      extends typings.reactPdf.distPdfjsDistMod.default.LoopbackPort
     
     @JSImport("react-pdf", "pdfjs.MissingPDFException")
     @js.native
     open class MissingPDFException protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.MissingPDFException {
+      extends typings.reactPdf.distPdfjsDistMod.default.MissingPDFException {
       def this(msg: Any) = this()
     }
     
@@ -600,7 +600,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.PDFDataRangeTransport")
     @js.native
     open class PDFDataRangeTransport protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.PDFDataRangeTransport {
+      extends typings.reactPdf.distPdfjsDistMod.default.PDFDataRangeTransport {
       /**
         * @param {number} length
         * @param {Uint8Array} initialData
@@ -626,7 +626,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.PDFDateString")
     @js.native
     open class PDFDateString ()
-      extends typings.reactPdf.pdfjsDistMod.default.PDFDateString
+      extends typings.reactPdf.distPdfjsDistMod.default.PDFDateString
     /* static members */
     object PDFDateString {
       
@@ -656,7 +656,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.PDFWorker")
     @js.native
     open class PDFWorker ()
-      extends typings.reactPdf.pdfjsDistMod.default.PDFWorker {
+      extends typings.reactPdf.distPdfjsDistMod.default.PDFWorker {
       def this(hasNamePortVerbosity: Name) = this()
     }
     /* static members */
@@ -725,7 +725,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.PixelsPerInch")
     @js.native
     open class PixelsPerInch ()
-      extends typings.reactPdf.pdfjsDistMod.default.PixelsPerInch
+      extends typings.reactPdf.distPdfjsDistMod.default.PixelsPerInch
     /* static members */
     object PixelsPerInch {
       
@@ -752,7 +752,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.RenderingCancelledException")
     @js.native
     open class RenderingCancelledException protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.RenderingCancelledException {
+      extends typings.reactPdf.distPdfjsDistMod.default.RenderingCancelledException {
       def this(msg: Any, `type`: Any) = this()
     }
     
@@ -855,14 +855,14 @@ object mod {
     @JSImport("react-pdf", "pdfjs.UnexpectedResponseException")
     @js.native
     open class UnexpectedResponseException protected ()
-      extends typings.reactPdf.pdfjsDistMod.default.UnexpectedResponseException {
+      extends typings.reactPdf.distPdfjsDistMod.default.UnexpectedResponseException {
       def this(msg: Any, status: Any) = this()
     }
     
     @JSImport("react-pdf", "pdfjs.Util")
     @js.native
     open class Util ()
-      extends typings.reactPdf.pdfjsDistMod.default.Util
+      extends typings.reactPdf.distPdfjsDistMod.default.Util
     /* static members */
     object Util {
       
@@ -913,7 +913,7 @@ object mod {
     @JSImport("react-pdf", "pdfjs.XfaLayer")
     @js.native
     open class XfaLayer ()
-      extends typings.reactPdf.pdfjsDistMod.default.XfaLayer
+      extends typings.reactPdf.distPdfjsDistMod.default.XfaLayer
     /* static members */
     object XfaLayer {
       
@@ -966,7 +966,7 @@ object mod {
     inline def getPdfFilenameFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def getPdfFilenameFromUrl(url: String, defaultFilename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPdfFilenameFromUrl")(url.asInstanceOf[js.Any], defaultFilename.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def getXfaPageViewport(xfaPage: Any, hasScaleRotation: Rotation): typings.pdfjsDist.displayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], hasScaleRotation.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.displayUtilsMod.PageViewport]
+    inline def getXfaPageViewport(xfaPage: Any, hasScaleRotation: Rotation): typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getXfaPageViewport")(xfaPage.asInstanceOf[js.Any], hasScaleRotation.asInstanceOf[js.Any])).asInstanceOf[typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport]
     
     inline def isPdfFile(filename: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPdfFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     

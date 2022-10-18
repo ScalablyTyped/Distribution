@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new polygon.
   */
 open class Polygon ()
-  extends typings.yuka.yukaMod.Polygon
+  extends typings.yuka.srcYukaMod.Polygon

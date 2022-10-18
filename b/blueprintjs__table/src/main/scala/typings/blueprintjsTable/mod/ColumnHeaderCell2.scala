@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.columnHeaderCell2Mod.ColumnHeaderCell2Props
+import typings.blueprintjsTable.libEsmHeadersColumnHeaderCell2Mod.ColumnHeaderCell2Props
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "ColumnHeaderCell2")
 @js.native
 open class ColumnHeaderCell2 protected ()
-  extends typings.blueprintjsTable.columnHeaderCell2Mod.ColumnHeaderCell2 {
+  extends typings.blueprintjsTable.libEsmHeadersColumnHeaderCell2Mod.ColumnHeaderCell2 {
   def this(props: ColumnHeaderCell2Props) = this()
   def this(props: ColumnHeaderCell2Props, context: Any) = this()
 }

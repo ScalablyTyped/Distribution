@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Block")
 @js.native
 open class Block protected ()
-  extends typings.webcola.vpscMod.Block {
-  def this(v: typings.webcola.vpscMod.Variable) = this()
+  extends typings.webcola.distSrcVpscMod.Block {
+  def this(v: typings.webcola.distSrcVpscMod.Variable) = this()
 }
 /* static members */
 object Block {
@@ -22,5 +22,5 @@ object Block {
   def createSplitBlock: Any = js.native
   inline def createSplitBlock_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
   
-  inline def split(c: typings.webcola.vpscMod.Constraint): js.Array[typings.webcola.vpscMod.Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.webcola.vpscMod.Block]]
+  inline def split(c: typings.webcola.distSrcVpscMod.Constraint): js.Array[typings.webcola.distSrcVpscMod.Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.webcola.distSrcVpscMod.Block]]
 }

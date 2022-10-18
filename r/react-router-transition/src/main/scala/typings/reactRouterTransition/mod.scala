@@ -5391,7 +5391,7 @@ object mod {
       */
     var atLeave: AnimatableStyles
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     /**
       * A class name to apply to the root node of the transition.
@@ -5416,7 +5416,7 @@ object mod {
       */
     var mapStyles: js.UndefOr[js.Function1[/* originalStylesObject */ Any, AnimatableStyles]] = js.undefined
     
-    var path: js.UndefOr[String] = js.undefined
+    var path: js.UndefOr[Any] = js.undefined
     
     var render: js.UndefOr[Any] = js.undefined
     
@@ -5436,7 +5436,7 @@ object mod {
       * consuming a `style` prop that gets injected into your component</u>.
       */
     var wrapperComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.reactRouterTransition.reactRouterTransitionBooleans.`false`, typings.reactRouterTransition.reactRouterTransitionStrings.a, typings.reactRouterTransition.reactRouterTransitionStrings.abbr */ Any
       ] = js.undefined
   }
   object AnimatedRouteProps {
@@ -5454,7 +5454,7 @@ object mod {
       
       inline def setAtLeave(value: AnimatableStyles): Self = StObject.set(x, "atLeave", value.asInstanceOf[js.Any])
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -5478,7 +5478,7 @@ object mod {
       
       inline def setMapStylesUndefined: Self = StObject.set(x, "mapStyles", js.undefined)
       
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
@@ -5498,7 +5498,9 @@ object mod {
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      inline def setWrapperComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any): Self = StObject.set(x, "wrapperComponent", value.asInstanceOf[js.Any])
+      inline def setWrapperComponent(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.reactRouterTransition.reactRouterTransitionBooleans.`false`, typings.reactRouterTransition.reactRouterTransitionStrings.a, typings.reactRouterTransition.reactRouterTransitionStrings.abbr */ Any
+      ): Self = StObject.set(x, "wrapperComponent", value.asInstanceOf[js.Any])
       
       inline def setWrapperComponentUndefined: Self = StObject.set(x, "wrapperComponent", js.undefined)
     }
@@ -5573,7 +5575,7 @@ object mod {
       * consuming a `style` prop that gets injected into your component</u>.
       */
     var wrapperComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.reactRouterTransition.reactRouterTransitionBooleans.`false`, typings.reactRouterTransition.reactRouterTransitionStrings.a, typings.reactRouterTransition.reactRouterTransitionStrings.abbr */ Any
       ] = js.undefined
   }
   object CommonProps {
@@ -5607,7 +5609,9 @@ object mod {
       
       inline def setRunOnMountUndefined: Self = StObject.set(x, "runOnMount", js.undefined)
       
-      inline def setWrapperComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114 */ Any): Self = StObject.set(x, "wrapperComponent", value.asInstanceOf[js.Any])
+      inline def setWrapperComponent(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 114, starting with typings.reactRouterTransition.reactRouterTransitionBooleans.`false`, typings.reactRouterTransition.reactRouterTransitionStrings.a, typings.reactRouterTransition.reactRouterTransitionStrings.abbr */ Any
+      ): Self = StObject.set(x, "wrapperComponent", value.asInstanceOf[js.Any])
       
       inline def setWrapperComponentUndefined: Self = StObject.set(x, "wrapperComponent", js.undefined)
     }

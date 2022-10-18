@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.imageMod.ImageProps
+import typings.primereact.imageImageMod.ImageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Image")
 @js.native
 open class Image protected ()
-  extends typings.primereact.imageMod.Image {
+  extends typings.primereact.imageImageMod.Image {
   def this(props: ImageProps) = this()
   /**
     * @deprecated

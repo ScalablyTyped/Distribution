@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.navigationBuilderContextMod.ChildBeforeRemoveListener
-import typings.reactNavigationCore.navigationBuilderContextMod.GetStateListener
+import typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.ChildBeforeRemoveListener
+import typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.GetStateListener
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

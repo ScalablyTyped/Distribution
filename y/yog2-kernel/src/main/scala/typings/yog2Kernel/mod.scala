@@ -313,7 +313,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Response
-    extends typings.expressServeStaticCore.mod.Response {
+    extends StObject
+       with typings.expressServeStaticCore.mod.Response {
     
     var bigpipe: BigPipe = js.native
   }

@@ -16,6 +16,8 @@ trait Face extends StObject {
   
   var size: js.UndefOr[String] = js.undefined
   
+  var variant: js.UndefOr[String] = js.undefined
+  
   var weight: js.UndefOr[Double | String] = js.undefined
 }
 object Face {
@@ -46,6 +48,10 @@ object Face {
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
     inline def setWeight(value: Double | String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     

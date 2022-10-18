@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antd.tableInterfaceMod.RowSelectMethod
+import typings.antd.libTableInterfaceMod.RowSelectMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

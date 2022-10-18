@@ -1,7 +1,7 @@
 package typings.inlineCss
 
-import typings.cheerio.libLoadMod.CheerioAPI
-import typings.cheerio.libOptionsMod.CheerioOptions
+import typings.cheerio.libEsmLoadMod.CheerioAPI
+import typings.cheerio.libEsmOptionsMod.CheerioOptions
 import typings.domhandler.libNodeMod.AnyNode
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject

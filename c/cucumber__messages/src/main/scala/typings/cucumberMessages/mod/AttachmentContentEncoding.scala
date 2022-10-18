@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AttachmentContentEncoding extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.cucumberMessages.messagesMod.AttachmentContentEncoding & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.cucumberMessages.distCjsSrcMessagesMod.AttachmentContentEncoding & String
+  ] = js.native
   
-  /* "BASE64" */ val BASE64: typings.cucumberMessages.messagesMod.AttachmentContentEncoding.BASE64 & String = js.native
+  /* "BASE64" */ val BASE64: typings.cucumberMessages.distCjsSrcMessagesMod.AttachmentContentEncoding.BASE64 & String = js.native
   
-  /* "IDENTITY" */ val IDENTITY: typings.cucumberMessages.messagesMod.AttachmentContentEncoding.IDENTITY & String = js.native
+  /* "IDENTITY" */ val IDENTITY: typings.cucumberMessages.distCjsSrcMessagesMod.AttachmentContentEncoding.IDENTITY & String = js.native
 }

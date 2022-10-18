@@ -1,6 +1,6 @@
 package typings.mdx
 
-import typings.mdx.mod.Component
+import typings.mdx.typesMod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.plottable.mod
 
-import typings.plottable.symbolFactoriesMod.SymbolFactory
+import typings.plottable.buildSrcCoreSymbolFactoriesMod.SymbolFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

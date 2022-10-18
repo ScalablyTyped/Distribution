@@ -1,42 +1,15 @@
 package typings.saxes.mod
 
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.saxes.mod.SaxesTag
-  - typings.saxes.mod.SaxesTagPlain
-  - typings.saxes.mod.SaxesTagNS
-*/
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately. 
+  * TS definition: {{{
+  O extends {  xmlns :true} ? saxes.saxes.SaxesTagNS : O extends {  xmlns :false | undefined} ? saxes.saxes.SaxesTagPlain : saxes.saxes.SaxesTag
+  }}}
+  */
+@js.native
 trait TagForOptions[O /* <: SaxesOptions */] extends StObject
-object TagForOptions {
-  
-  inline def SaxesTag(attributes: Record[String, SaxesAttributeNS | String], isSelfClosing: Boolean, name: String): typings.saxes.mod.SaxesTag = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.saxes.mod.SaxesTag]
-  }
-  
-  inline def SaxesTagNS(
-    attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, SaxesAttributeNS]),
-    isSelfClosing: Boolean,
-    local: String,
-    name: String,
-    ns: Record[String, String],
-    prefix: String,
-    uri: String
-  ): typings.saxes.mod.SaxesTagNS = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.saxes.mod.SaxesTagNS]
-  }
-  
-  inline def SaxesTagPlain(
-    attributes: (Record[String, SaxesAttributeNS | String]) & (Record[String, String]),
-    isSelfClosing: Boolean,
-    name: String
-  ): typings.saxes.mod.SaxesTagPlain = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.saxes.mod.SaxesTagPlain]
-  }
-}

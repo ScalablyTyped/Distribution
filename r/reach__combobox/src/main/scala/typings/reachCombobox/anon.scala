@@ -1,159 +1,78 @@
 package typings.reachCombobox
 
-import typings.reachCombobox.utilsMod.Chunk
+import typings.reachPopover.mod.Position
+import typings.reachPopover.mod.PossibleNode
+import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait AutoEscape extends StObject {
+  /* Inlined @reach/combobox.@reach/combobox.ComboboxPopoverProps & std.Partial<std.Omit<@reach/popover.@reach/popover.PopoverProps, 'unstable_skipInitialRender'>> */
+  trait ComboboxPopoverPropsParti extends StObject {
     
-    var autoEscape: js.UndefOr[Boolean] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var caseSensitive: js.UndefOr[Boolean] = js.undefined
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var findChunks: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof defaultFindChunks */ js.Any
-      ] = js.undefined
+    /**
+      * If you pass `<ComboboxPopover portal={false} />` the popover will not
+      * render inside of a portal, but in the same order as the React tree. This
+      * is mostly useful for styling the entire component together, like the pink
+      * focus outline in the example earlier in this page.
+      *
+      * @see Docs https://reach.tech/combobox#comboboxpopover-portal
+      */
+    var portal: js.UndefOr[Boolean] = js.undefined
     
-    var sanitize: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof defaultSanitize */ js.Any
-      ] = js.undefined
+    var position: js.UndefOr[Position] = js.undefined
     
-    var searchWords: js.Array[String]
+    var targetRef: js.UndefOr[RefObject[PossibleNode]] = js.undefined
     
-    var textToHighlight: js.UndefOr[String | Null] = js.undefined
+    var unstable_observableRefs: js.UndefOr[js.Array[RefObject[PossibleNode]]] = js.undefined
+    
+    var unstable_skipInitialPortalRender: js.UndefOr[Boolean] = js.undefined
   }
-  object AutoEscape {
+  object ComboboxPopoverPropsParti {
     
-    inline def apply(searchWords: js.Array[String]): AutoEscape = {
-      val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AutoEscape]
+    inline def apply(): ComboboxPopoverPropsParti = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComboboxPopoverPropsParti]
     }
     
-    extension [Self <: AutoEscape](x: Self) {
+    extension [Self <: ComboboxPopoverPropsParti](x: Self) {
       
-      inline def setAutoEscape(value: Boolean): Self = StObject.set(x, "autoEscape", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setAutoEscapeUndefined: Self = StObject.set(x, "autoEscape", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setFindChunks(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: typeof defaultFindChunks */ js.Any
-      ): Self = StObject.set(x, "findChunks", value.asInstanceOf[js.Any])
+      inline def setPortal(value: Boolean): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
       
-      inline def setFindChunksUndefined: Self = StObject.set(x, "findChunks", js.undefined)
+      inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
       
-      inline def setSanitize(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: typeof defaultSanitize */ js.Any
-      ): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
+      inline def setTargetRef(value: RefObject[PossibleNode]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
       
-      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value*))
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
       
-      inline def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
+      inline def setUnstable_observableRefs(value: js.Array[RefObject[PossibleNode]]): Self = StObject.set(x, "unstable_observableRefs", value.asInstanceOf[js.Any])
       
-      inline def setTextToHighlightNull: Self = StObject.set(x, "textToHighlight", null)
+      inline def setUnstable_observableRefsUndefined: Self = StObject.set(x, "unstable_observableRefs", js.undefined)
       
-      inline def setTextToHighlightUndefined: Self = StObject.set(x, "textToHighlight", js.undefined)
-    }
-  }
-  
-  trait CaseSensitive extends StObject {
-    
-    var autoEscape: js.UndefOr[Boolean] = js.undefined
-    
-    var caseSensitive: js.UndefOr[Boolean] = js.undefined
-    
-    var sanitize: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof defaultSanitize */ js.Any
-      ] = js.undefined
-    
-    var searchWords: js.Array[String]
-    
-    var textToHighlight: js.UndefOr[String | Null] = js.undefined
-  }
-  object CaseSensitive {
-    
-    inline def apply(searchWords: js.Array[String]): CaseSensitive = {
-      val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CaseSensitive]
-    }
-    
-    extension [Self <: CaseSensitive](x: Self) {
+      inline def setUnstable_observableRefsVarargs(value: RefObject[PossibleNode]*): Self = StObject.set(x, "unstable_observableRefs", js.Array(value*))
       
-      inline def setAutoEscape(value: Boolean): Self = StObject.set(x, "autoEscape", value.asInstanceOf[js.Any])
+      inline def setUnstable_skipInitialPortalRender(value: Boolean): Self = StObject.set(x, "unstable_skipInitialPortalRender", value.asInstanceOf[js.Any])
       
-      inline def setAutoEscapeUndefined: Self = StObject.set(x, "autoEscape", js.undefined)
-      
-      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
-      
-      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
-      
-      inline def setSanitize(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: typeof defaultSanitize */ js.Any
-      ): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
-      
-      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
-      
-      inline def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
-      
-      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value*))
-      
-      inline def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
-      
-      inline def setTextToHighlightNull: Self = StObject.set(x, "textToHighlight", null)
-      
-      inline def setTextToHighlightUndefined: Self = StObject.set(x, "textToHighlight", js.undefined)
-    }
-  }
-  
-  trait Chunks extends StObject {
-    
-    var chunks: js.Array[Chunk]
-  }
-  object Chunks {
-    
-    inline def apply(chunks: js.Array[Chunk]): Chunks = {
-      val __obj = js.Dynamic.literal(chunks = chunks.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Chunks]
-    }
-    
-    extension [Self <: Chunks](x: Self) {
-      
-      inline def setChunks(value: js.Array[Chunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
-      
-      inline def setChunksVarargs(value: Chunk*): Self = StObject.set(x, "chunks", js.Array(value*))
-    }
-  }
-  
-  trait ChunksToHighlight extends StObject {
-    
-    var chunksToHighlight: js.Array[Chunk]
-    
-    var totalLength: Double
-  }
-  object ChunksToHighlight {
-    
-    inline def apply(chunksToHighlight: js.Array[Chunk], totalLength: Double): ChunksToHighlight = {
-      val __obj = js.Dynamic.literal(chunksToHighlight = chunksToHighlight.asInstanceOf[js.Any], totalLength = totalLength.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ChunksToHighlight]
-    }
-    
-    extension [Self <: ChunksToHighlight](x: Self) {
-      
-      inline def setChunksToHighlight(value: js.Array[Chunk]): Self = StObject.set(x, "chunksToHighlight", value.asInstanceOf[js.Any])
-      
-      inline def setChunksToHighlightVarargs(value: Chunk*): Self = StObject.set(x, "chunksToHighlight", js.Array(value*))
-      
-      inline def setTotalLength(value: Double): Self = StObject.set(x, "totalLength", value.asInstanceOf[js.Any])
+      inline def setUnstable_skipInitialPortalRenderUndefined: Self = StObject.set(x, "unstable_skipInitialPortalRender", js.undefined)
     }
   }
 }

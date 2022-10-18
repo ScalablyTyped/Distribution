@@ -11,10 +11,6 @@ object mirrorxStrings {
   inline def `@@routerSlashCALL_HISTORY_METHOD`: `@@routerSlashCALL_HISTORY_METHOD` = "@@router/CALL_HISTORY_METHOD".asInstanceOf[`@@routerSlashCALL_HISTORY_METHOD`]
   
   @js.native
-  sealed trait RouteComponentProps extends StObject
-  inline def RouteComponentProps: RouteComponentProps = "RouteComponentProps".asInstanceOf[RouteComponentProps]
-  
-  @js.native
   sealed trait history extends StObject
   inline def history: history = "history".asInstanceOf[history]
   

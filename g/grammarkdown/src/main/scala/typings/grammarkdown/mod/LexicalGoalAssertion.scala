@@ -1,64 +1,64 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
-import typings.grammarkdown.tokensMod.SyntaxKind.GoalKeyword
-import typings.grammarkdown.tokensMod.SyntaxKind.LexicalKeyword
-import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.GoalKeyword
+import typings.grammarkdown.distTokensMod.SyntaxKind.LexicalKeyword
+import typings.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "LexicalGoalAssertion")
 @js.native
-class LexicalGoalAssertion protected ()
-  extends typings.grammarkdown.nodesMod.LexicalGoalAssertion {
+open class LexicalGoalAssertion protected ()
+  extends typings.grammarkdown.distNodesMod.LexicalGoalAssertion {
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword]
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: typings.grammarkdown.nodesMod.Token[GoalKeyword]
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
+    goalKeyword: typings.grammarkdown.distNodesMod.Token[GoalKeyword]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
     goalKeyword: Unit,
-    symbol: typings.grammarkdown.nodesMod.Identifier
+    symbol: typings.grammarkdown.distNodesMod.Identifier
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: typings.grammarkdown.nodesMod.Token[GoalKeyword],
-    symbol: typings.grammarkdown.nodesMod.Identifier
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
+    goalKeyword: typings.grammarkdown.distNodesMod.Token[GoalKeyword],
+    symbol: typings.grammarkdown.distNodesMod.Identifier
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
     goalKeyword: Unit,
     symbol: Unit,
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
     goalKeyword: Unit,
-    symbol: typings.grammarkdown.nodesMod.Identifier,
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    symbol: typings.grammarkdown.distNodesMod.Identifier,
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: typings.grammarkdown.nodesMod.Token[GoalKeyword],
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
+    goalKeyword: typings.grammarkdown.distNodesMod.Token[GoalKeyword],
     symbol: Unit,
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: typings.grammarkdown.nodesMod.Token[GoalKeyword],
-    symbol: typings.grammarkdown.nodesMod.Identifier,
-    closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typings.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    lexicalKeyword: typings.grammarkdown.distNodesMod.Token[LexicalKeyword],
+    goalKeyword: typings.grammarkdown.distNodesMod.Token[GoalKeyword],
+    symbol: typings.grammarkdown.distNodesMod.Identifier,
+    closeBracketToken: typings.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
 }

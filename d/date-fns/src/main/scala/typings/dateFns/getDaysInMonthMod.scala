@@ -1,21 +1,18 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDaysInMonthMod {
   
-  object default extends Shortcut {
+  object default {
     
-    @JSImport("date-fns/esm/fp/getDaysInMonth", JSImport.Default)
+    inline def apply(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(date: Double): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @JSImport("date-fns/getDaysInMonth", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[js.Date | Double, Double] = js.native
-    
-    type _To = CurriedFn1[js.Date | Double, Double]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[js.Date | Double, Double] = ^
+    val ^ : js.Any = js.native
   }
 }

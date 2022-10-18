@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxContext")
 @js.native
 open class KdbxContext protected ()
-  extends typings.kdbxweb.kdbxContextMod.KdbxContext {
+  extends typings.kdbxweb.distTypesFormatKdbxContextMod.KdbxContext {
   def this(opts: ExportXml) = this()
 }

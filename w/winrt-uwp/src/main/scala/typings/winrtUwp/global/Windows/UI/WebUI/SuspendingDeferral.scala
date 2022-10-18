@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages delayed suspension for an app. GetDeferral */
-@JSGlobal("Windows.UI.WebUI.SuspendingDeferral")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.SuspendingDeferral")
 @js.native
-abstract class SuspendingDeferral ()
+open class SuspendingDeferral ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.SuspendingDeferral {
   

@@ -1,7 +1,7 @@
 package typings.pump
 
-import typings.std.ReadableStream
-import typings.std.WritableStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,5 +19,5 @@ object mod {
   
   type Callback = js.Function1[/* err */ js.UndefOr[js.Error], Any]
   
-  type Stream = ReadableStream[Any] | WritableStream[Any]
+  type Stream = ReadableStream | WritableStream
 }

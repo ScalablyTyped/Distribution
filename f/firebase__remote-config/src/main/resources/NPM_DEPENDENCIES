@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/remote-config" : "0.3.11"
+      "@firebase/remote-config" : "0.3.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/remote-config" : "0.3.11"
+      "@firebase/remote-config" : "0.3.14"
     }
   ],
   "compile-devDependencies" : [

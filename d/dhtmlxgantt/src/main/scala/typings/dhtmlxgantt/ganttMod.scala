@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ganttMod extends Shortcut {
   
-  @JSImport("Gantt", JSImport.Namespace)
+  @JSImport("gantt", JSImport.Namespace)
   @js.native
-  val ^ : GanttEnterprise = js.native
+  val ^ : GanttStatic = js.native
   
-  type _To = GanttEnterprise
+  type _To = GanttStatic
   
   /* This means you don't have to write `^`, but can instead just say `ganttMod.foo` */
-  override def _to: GanttEnterprise = ^
+  override def _to: GanttStatic = ^
 }

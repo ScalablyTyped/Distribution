@@ -13,9 +13,6 @@ The different types of blocks that can occur in an editor view.
 @js.native
 object BlockType extends StObject {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BlockType & Double] = js.native
-  
   /**
     A line of text.
     */
@@ -23,7 +20,6 @@ object BlockType extends StObject {
   sealed trait Text
     extends StObject
        with BlockType
-  /* 0 */ val Text: typings.codemirrorView.mod.BlockType.Text & Double = js.native
   
   /**
     A block widget associated with the position before it.
@@ -32,7 +28,6 @@ object BlockType extends StObject {
   sealed trait WidgetAfter
     extends StObject
        with BlockType
-  /* 2 */ val WidgetAfter: typings.codemirrorView.mod.BlockType.WidgetAfter & Double = js.native
   
   /**
     A block widget associated with the position after it.
@@ -41,7 +36,6 @@ object BlockType extends StObject {
   sealed trait WidgetBefore
     extends StObject
        with BlockType
-  /* 1 */ val WidgetBefore: typings.codemirrorView.mod.BlockType.WidgetBefore & Double = js.native
   
   /**
     A block widget [replacing](https://codemirror.net/6/docs/ref/#view.Decoration^replace) a range of content.
@@ -50,5 +44,4 @@ object BlockType extends StObject {
   sealed trait WidgetRange
     extends StObject
        with BlockType
-  /* 3 */ val WidgetRange: typings.codemirrorView.mod.BlockType.WidgetRange & Double = js.native
 }

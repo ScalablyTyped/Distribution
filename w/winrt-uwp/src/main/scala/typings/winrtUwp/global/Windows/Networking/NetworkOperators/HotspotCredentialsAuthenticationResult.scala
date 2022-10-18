@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the results of a Hotspot authentication request. */
-@JSGlobal("Windows.Networking.NetworkOperators.HotspotCredentialsAuthenticationResult")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.HotspotCredentialsAuthenticationResult")
 @js.native
-abstract class HotspotCredentialsAuthenticationResult ()
+open class HotspotCredentialsAuthenticationResult ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.HotspotCredentialsAuthenticationResult {
   

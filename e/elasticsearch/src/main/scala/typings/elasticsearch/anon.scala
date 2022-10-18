@@ -98,11 +98,11 @@ object anon {
     
     var script: js.UndefOr[Inline] = js.undefined
     
-    var source: Index
+    var source: Query
   }
   object Conflicts {
     
-    inline def apply(dest: Optype, source: Index): Conflicts = {
+    inline def apply(dest: Optype, source: Query): Conflicts = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Conflicts]
     }
@@ -119,7 +119,7 @@ object anon {
       
       inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      inline def setSource(value: Index): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Query): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,52 +277,32 @@ object anon {
   
   trait Index extends StObject {
     
-    var index: String | js.Array[String]
+    var alias: String
     
-    var query: js.UndefOr[Any] = js.undefined
+    var index: js.UndefOr[String] = js.undefined
     
-    var remote: js.UndefOr[Host] = js.undefined
-    
-    var size: js.UndefOr[Double] = js.undefined
-    
-    var sort: js.UndefOr[Any] = js.undefined
-    
-    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
+    var indices: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Index {
     
-    inline def apply(index: String | js.Array[String]): Index = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    inline def apply(alias: String): Index = {
+      val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
     extension [Self <: Index](x: Self) {
       
-      inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setIndices(value: js.Array[String]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      inline def setRemote(value: Host): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
       
-      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
-      
-      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
-      
-      inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
+      inline def setIndicesVarargs(value: String*): Self = StObject.set(x, "indices", js.Array(value*))
     }
   }
   
@@ -340,37 +320,6 @@ object anon {
     extension [Self <: IndexString](x: Self) {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Indices extends StObject {
-    
-    var alias: String
-    
-    var index: js.UndefOr[String] = js.undefined
-    
-    var indices: js.UndefOr[js.Array[String]] = js.undefined
-  }
-  object Indices {
-    
-    inline def apply(alias: String): Indices = {
-      val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Indices]
-    }
-    
-    extension [Self <: Indices](x: Self) {
-      
-      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
-      
-      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
-      
-      inline def setIndices(value: js.Array[String]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
-      
-      inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
-      
-      inline def setIndicesVarargs(value: String*): Self = StObject.set(x, "indices", js.Array(value*))
     }
   }
   
@@ -434,6 +383,57 @@ object anon {
       inline def setVersion_type(value: String): Self = StObject.set(x, "version_type", value.asInstanceOf[js.Any])
       
       inline def setVersion_typeUndefined: Self = StObject.set(x, "version_type", js.undefined)
+    }
+  }
+  
+  trait Query extends StObject {
+    
+    var index: String | js.Array[String]
+    
+    var query: js.UndefOr[Any] = js.undefined
+    
+    var remote: js.UndefOr[Host] = js.undefined
+    
+    var size: js.UndefOr[Double] = js.undefined
+    
+    var sort: js.UndefOr[Any] = js.undefined
+    
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
+  }
+  object Query {
+    
+    inline def apply(index: String | js.Array[String]): Query = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Query]
+    }
+    
+    extension [Self <: Query](x: Self) {
+      
+      inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+      
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      
+      inline def setRemote(value: Host): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      
+      inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
 }

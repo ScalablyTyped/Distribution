@@ -8,11 +8,11 @@ trait Height extends StObject {
   
   var height: Double
   
-  var route: typings.reactNavigationStack.vendorTypesMod.Route[String]
+  var route: typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.Route[String]
 }
 object Height {
   
-  inline def apply(height: Double, route: typings.reactNavigationStack.vendorTypesMod.Route[String]): Height = {
+  inline def apply(height: Double, route: typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.Route[String]): Height = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Height]
   }
@@ -21,6 +21,6 @@ object Height {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setRoute(value: typings.reactNavigationStack.vendorTypesMod.Route[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.Route[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

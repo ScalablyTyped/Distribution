@@ -3,9 +3,9 @@ package typings.notyf
 import typings.notyf.anon.DeepPartialINotyfNotifica
 import typings.notyf.anon.PartialINotyfNotification
 import typings.notyf.anon.PartialINotyfOptions
-import typings.notyf.notyfModelsMod.NotyfArray
-import typings.notyf.notyfModelsMod.NotyfNotification
-import typings.notyf.notyfOptionsMod.INotyfOptions
+import typings.notyf.notyfDotmodelsMod.NotyfArray
+import typings.notyf.notyfDotmodelsMod.NotyfNotification
+import typings.notyf.notyfDotoptionsMod.INotyfOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.uirouterCore.mod
 
-import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
+import typings.uirouterCore.libUrlInterfaceMod.UrlMatcherCompileConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +17,13 @@ open class UrlMatcher protected ()
     */
   def this(
     pattern: String,
-    paramTypes: typings.uirouterCore.paramTypesMod.ParamTypes,
-    paramFactory: typings.uirouterCore.urlMatcherFactoryMod.ParamFactory
+    paramTypes: typings.uirouterCore.libParamsParamTypesMod.ParamTypes,
+    paramFactory: typings.uirouterCore.libUrlUrlMatcherFactoryMod.ParamFactory
   ) = this()
   def this(
     pattern: String,
-    paramTypes: typings.uirouterCore.paramTypesMod.ParamTypes,
-    paramFactory: typings.uirouterCore.urlMatcherFactoryMod.ParamFactory,
+    paramTypes: typings.uirouterCore.libParamsParamTypesMod.ParamTypes,
+    paramFactory: typings.uirouterCore.libUrlUrlMatcherFactoryMod.ParamFactory,
     config: UrlMatcherCompileConfig
   ) = this()
 }
@@ -43,7 +43,10 @@ object UrlMatcher {
     *
     * The comparison function sorts static segments before dynamic ones.
     */
-  inline def compare(a: typings.uirouterCore.urlMatcherMod.UrlMatcher, b: typings.uirouterCore.urlMatcherMod.UrlMatcher): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(
+    a: typings.uirouterCore.libUrlUrlMatcherMod.UrlMatcher,
+    b: typings.uirouterCore.libUrlUrlMatcherMod.UrlMatcher
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** @internal */
   inline def encodeDashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -55,8 +58,8 @@ object UrlMatcher {
   inline def nameValidator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
   
   /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-  inline def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def pathSegmentsAndParams(matcher: typings.uirouterCore.libUrlUrlMatcherMod.UrlMatcher): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** @internal Given a matcher, return an array with the matcher's query params */
-  inline def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+  inline def queryParams(matcher: typings.uirouterCore.libUrlUrlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.libParamsParamMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.libParamsParamMod.Param]]
 }

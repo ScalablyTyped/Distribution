@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.styleclassMod.StyleClassProps
+import typings.primereact.styleclassStyleclassMod.StyleClassProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "StyleClass")
 @js.native
 open class StyleClass protected ()
-  extends typings.primereact.styleclassMod.StyleClass {
+  extends typings.primereact.styleclassStyleclassMod.StyleClass {
   def this(props: StyleClassProps) = this()
   /**
     * @deprecated

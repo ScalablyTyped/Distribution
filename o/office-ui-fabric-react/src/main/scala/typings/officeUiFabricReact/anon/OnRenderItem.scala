@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.tagPickerTypesMod.ITag
-import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITag
+import typings.officeUiFabricReact.libComponentsPickersTagPickerTagPickerDottypesMod.ITagItemProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

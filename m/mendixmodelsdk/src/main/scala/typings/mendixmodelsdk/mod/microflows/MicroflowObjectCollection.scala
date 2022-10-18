@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.microflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "microflows.MicroflowObjectCollection")
 @js.native
 open class MicroflowObjectCollection protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.MicroflowObjectCollection {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.microflows.MicroflowObjectCollection {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object MicroflowObjectCollection {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowObjectCollection]
   
   /**
     * Creates and returns a new MicroflowObjectCollection instance in the SDK and on the server.
@@ -44,7 +44,7 @@ object MicroflowObjectCollection {
     * of the parent LoopedActivity element passed as argument.
     */
   /* static member */
-  inline def createInLoopedActivityUnderObjectCollection(container: typings.mendixmodelsdk.microflowsMod.microflows.LoopedActivity): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoopedActivityUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection]
+  inline def createInLoopedActivityUnderObjectCollection(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.LoopedActivity): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLoopedActivityUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowObjectCollection]
   
   /**
     * Creates and returns a new MicroflowObjectCollection instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object MicroflowObjectCollection {
     * of the parent MicroflowBase element passed as argument.
     */
   /* static member */
-  inline def createInMicroflowBaseUnderObjectCollection(container: typings.mendixmodelsdk.microflowsMod.microflows.MicroflowBase): typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.MicroflowObjectCollection]
+  inline def createInMicroflowBaseUnderObjectCollection(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowBase): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowObjectCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderObjectCollection")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowObjectCollection]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.MicroflowObjectCollection.structureTypeName")

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
+import typings.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofillProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - js.Any because Already inherited
 - typings.react.mod.ComponentLifecycle because Already inherited
 - js.Object because Already inherited
-- typings.officeUiFabricReact.autofillTypesMod.IAutofill because Already inherited
+- typings.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofill because Already inherited
 - typings.react.mod.Component because Already inherited
-- typings.officeUiFabricReact.autofillAutofillMod.Autofill because Already inherited
-- typings.officeUiFabricReact.autofillAutofillMod.BaseAutoFill because Already inherited
-- typings.officeUiFabricReact.baseAutoFillMod.BaseAutoFill because Inheritance from two classes. Inlined 
-- typings.officeUiFabricReact.pickersMod.BaseAutoFill because Inheritance from two classes. Inlined 
+- typings.officeUiFabricReact.libComponentsAutofillAutofillMod.Autofill because Already inherited
+- typings.officeUiFabricReact.libComponentsAutofillAutofillMod.BaseAutoFill because Already inherited
+- typings.officeUiFabricReact.libComponentsPickersAutoFillBaseAutoFillMod.BaseAutoFill because Inheritance from two classes. Inlined 
+- typings.officeUiFabricReact.libComponentsPickersMod.BaseAutoFill because Inheritance from two classes. Inlined 
 - typings.officeUiFabricReact.libPickersMod.BaseAutoFill because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "BaseAutoFill")
 @js.native
 open class BaseAutoFill protected ()

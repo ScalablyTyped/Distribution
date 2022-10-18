@@ -1,15 +1,15 @@
 package typings.nlapack
 
-import typings.nlapack.typesMod.MatrixDistribution
-import typings.nlapack.typesMod.MatrixEigenvector
-import typings.nlapack.typesMod.MatrixEquilibration
-import typings.nlapack.typesMod.MatrixMode
-import typings.nlapack.typesMod.MatrixNorm
-import typings.nlapack.typesMod.MatrixPacking
-import typings.nlapack.typesMod.MatrixSymmetry
-import typings.nlapack.typesMod.MatrixTrans
-import typings.nlapack.typesMod.MatrixUnit
-import typings.nlapack.typesMod.MatrixUpperLower
+import typings.nlapack.builtTypesMod.MatrixDistribution
+import typings.nlapack.builtTypesMod.MatrixEigenvector
+import typings.nlapack.builtTypesMod.MatrixEquilibration
+import typings.nlapack.builtTypesMod.MatrixMode
+import typings.nlapack.builtTypesMod.MatrixNorm
+import typings.nlapack.builtTypesMod.MatrixPacking
+import typings.nlapack.builtTypesMod.MatrixSymmetry
+import typings.nlapack.builtTypesMod.MatrixTrans
+import typings.nlapack.builtTypesMod.MatrixUnit
+import typings.nlapack.builtTypesMod.MatrixUpperLower
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

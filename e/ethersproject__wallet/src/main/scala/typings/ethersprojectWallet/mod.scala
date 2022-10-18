@@ -11,7 +11,7 @@ import typings.ethersprojectBytes.mod.Bytes
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectBytes.mod.SignatureLike
 import typings.ethersprojectHdnode.mod.Mnemonic
-import typings.ethersprojectJsonWallets.keystoreMod.ProgressCallback
+import typings.ethersprojectJsonWallets.libKeystoreMod.ProgressCallback
 import typings.ethersprojectSigningKey.mod.SigningKey
 import typings.ethersprojectWordlists.mod.Wordlist
 import typings.std.Record

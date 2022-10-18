@@ -1,11 +1,10 @@
 package typings.vueRouter.mod
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.vueRouter.anon.Slots
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* augmented module */
 object vueRuntimeCoreAugmentingMod {
   
   trait ComponentCustomOptions extends StObject {
@@ -22,7 +21,10 @@ object vueRuntimeCoreAugmentingMod {
       * @param next - function to validate, cancel or modify (by redirecting) the
       * navigation
       */
-    var beforeRouteEnter: js.UndefOr[NavigationGuardWithThis[Unit]] = js.undefined
+    var beforeRouteEnter: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteEnter', infer T> * /
+    {  beforeRouteEnter :infer T} ? T : vue-router.vue-router.NavigationGuardWithThis<undefined> */ js.Any
+      ] = js.undefined
     
     /**
       * Guard called when the router is navigating away from the current route that
@@ -33,7 +35,10 @@ object vueRuntimeCoreAugmentingMod {
       * @param next - function to validate, cancel or modify (by redirecting) the
       * navigation
       */
-    var beforeRouteLeave: js.UndefOr[NavigationGuard] = js.undefined
+    var beforeRouteLeave: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteLeave', infer T> * /
+    {  beforeRouteLeave :infer T} ? T : vue-router.vue-router.NavigationGuard */ js.Any
+      ] = js.undefined
     
     /**
       * Guard called whenever the route that renders this component has changed, but
@@ -45,7 +50,10 @@ object vueRuntimeCoreAugmentingMod {
       * @param next - function to validate, cancel or modify (by redirecting) the
       * navigation
       */
-    var beforeRouteUpdate: js.UndefOr[NavigationGuard] = js.undefined
+    var beforeRouteUpdate: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteUpdate', infer T> * /
+    {  beforeRouteUpdate :infer T} ? T : vue-router.vue-router.NavigationGuard */ js.Any
+      ] = js.undefined
   }
   object ComponentCustomOptions {
     
@@ -56,19 +64,24 @@ object vueRuntimeCoreAugmentingMod {
     
     extension [Self <: ComponentCustomOptions](x: Self) {
       
-      inline def setBeforeRouteEnter(value: NavigationGuardWithThis[Unit]): Self = StObject.set(x, "beforeRouteEnter", value.asInstanceOf[js.Any])
+      inline def setBeforeRouteEnter(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteEnter', infer T> * /
+      {  beforeRouteEnter :infer T} ? T : vue-router.vue-router.NavigationGuardWithThis<undefined> */ js.Any
+      ): Self = StObject.set(x, "beforeRouteEnter", value.asInstanceOf[js.Any])
       
       inline def setBeforeRouteEnterUndefined: Self = StObject.set(x, "beforeRouteEnter", js.undefined)
       
       inline def setBeforeRouteLeave(
-        value: (/* to */ RouteLocationNormalized, /* from */ RouteLocationNormalized, /* next */ NavigationGuardNext) => NavigationGuardReturn | js.Promise[NavigationGuardReturn]
-      ): Self = StObject.set(x, "beforeRouteLeave", js.Any.fromFunction3(value))
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteLeave', infer T> * /
+      {  beforeRouteLeave :infer T} ? T : vue-router.vue-router.NavigationGuard */ js.Any
+      ): Self = StObject.set(x, "beforeRouteLeave", value.asInstanceOf[js.Any])
       
       inline def setBeforeRouteLeaveUndefined: Self = StObject.set(x, "beforeRouteLeave", js.undefined)
       
       inline def setBeforeRouteUpdate(
-        value: (/* to */ RouteLocationNormalized, /* from */ RouteLocationNormalized, /* next */ NavigationGuardNext) => NavigationGuardReturn | js.Promise[NavigationGuardReturn]
-      ): Self = StObject.set(x, "beforeRouteUpdate", js.Any.fromFunction3(value))
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteUpdate', infer T> * /
+      {  beforeRouteUpdate :infer T} ? T : vue-router.vue-router.NavigationGuard */ js.Any
+      ): Self = StObject.set(x, "beforeRouteUpdate", value.asInstanceOf[js.Any])
       
       inline def setBeforeRouteUpdateUndefined: Self = StObject.set(x, "beforeRouteUpdate", js.undefined)
     }
@@ -80,47 +93,73 @@ object vueRuntimeCoreAugmentingMod {
       * Normalized current location. See {@link RouteLocationNormalizedLoaded}.
       */
     @JSName("$route")
-    var $route: RouteLocationNormalizedLoaded
+    var $route: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$route', infer T> * /
+    {  $route :infer T} ? T : vue-router.vue-router.RouteLocationNormalizedLoaded */ js.Any
     
     /**
       * {@link Router} instance used by the application.
       */
     @JSName("$router")
-    var $router: Router
+    var $router: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$router', infer T> * /
+    {  $router :infer T} ? T : vue-router.vue-router.Router */ js.Any
   }
   object ComponentCustomProperties {
     
-    inline def apply($route: RouteLocationNormalizedLoaded, $router: Router): ComponentCustomProperties = {
+    inline def apply(
+      $route: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$route', infer T> * /
+    {  $route :infer T} ? T : vue-router.vue-router.RouteLocationNormalizedLoaded */ js.Any,
+      $router: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$router', infer T> * /
+    {  $router :infer T} ? T : vue-router.vue-router.Router */ js.Any
+    ): ComponentCustomProperties = {
       val __obj = js.Dynamic.literal($route = $route.asInstanceOf[js.Any], $router = $router.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentCustomProperties]
     }
     
     extension [Self <: ComponentCustomProperties](x: Self) {
       
-      inline def set$route(value: RouteLocationNormalizedLoaded): Self = StObject.set(x, "$route", value.asInstanceOf[js.Any])
+      inline def set$route(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$route', infer T> * /
+      {  $route :infer T} ? T : vue-router.vue-router.RouteLocationNormalizedLoaded */ js.Any
+      ): Self = StObject.set(x, "$route", value.asInstanceOf[js.Any])
       
-      inline def set$router(value: Router): Self = StObject.set(x, "$router", value.asInstanceOf[js.Any])
+      inline def set$router(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$router', infer T> * /
+      {  $router :infer T} ? T : vue-router.vue-router.Router */ js.Any
+      ): Self = StObject.set(x, "$router", value.asInstanceOf[js.Any])
     }
   }
   
   trait GlobalComponents extends StObject {
     
-    var RouterLink: RouterLinkI
+    var RouterLink: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterLink', infer T> * /
+    {  RouterLink :infer T} ? T : vue-router.vue-router._RouterLinkI */ js.Any
     
-    var RouterView: Instantiable0[Slots]
+    var RouterView: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterView', infer T> * /
+    {  RouterView :infer T} ? T : new (): {  $props :@vue/runtime-core.@vue/runtime-core.AllowedComponentProps & @vue/runtime-core.@vue/runtime-core.ComponentCustomProps & @vue/runtime-core.@vue/runtime-core.VNodeProps & vue-router.vue-router.RouterViewProps,   $slots :{default (arg : {  Component :@vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}>,   route :vue-router.vue-router.RouteLocationNormalizedLoaded}): std.Array<@vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}>>}} */ js.Any
   }
   object GlobalComponents {
     
-    inline def apply(RouterLink: RouterLinkI, RouterView: Instantiable0[Slots]): GlobalComponents = {
+    inline def apply(
+      RouterLink: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterLink', infer T> * /
+    {  RouterLink :infer T} ? T : vue-router.vue-router._RouterLinkI */ js.Any,
+      RouterView: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterView', infer T> * /
+    {  RouterView :infer T} ? T : new (): {  $props :@vue/runtime-core.@vue/runtime-core.AllowedComponentProps & @vue/runtime-core.@vue/runtime-core.ComponentCustomProps & @vue/runtime-core.@vue/runtime-core.VNodeProps & vue-router.vue-router.RouterViewProps,   $slots :{default (arg : {  Component :@vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}>,   route :vue-router.vue-router.RouteLocationNormalizedLoaded}): std.Array<@vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}>>}} */ js.Any
+    ): GlobalComponents = {
       val __obj = js.Dynamic.literal(RouterLink = RouterLink.asInstanceOf[js.Any], RouterView = RouterView.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalComponents]
     }
     
     extension [Self <: GlobalComponents](x: Self) {
       
-      inline def setRouterLink(value: RouterLinkI): Self = StObject.set(x, "RouterLink", value.asInstanceOf[js.Any])
+      inline def setRouterLink(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterLink', infer T> * /
+      {  RouterLink :infer T} ? T : vue-router.vue-router._RouterLinkI */ js.Any
+      ): Self = StObject.set(x, "RouterLink", value.asInstanceOf[js.Any])
       
-      inline def setRouterView(value: Instantiable0[Slots]): Self = StObject.set(x, "RouterView", value.asInstanceOf[js.Any])
+      inline def setRouterView(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterView', infer T> * /
+      {  RouterView :infer T} ? T : new (): {  $props :@vue/runtime-core.@vue/runtime-core.AllowedComponentProps & @vue/runtime-core.@vue/runtime-core.ComponentCustomProps & @vue/runtime-core.@vue/runtime-core.VNodeProps & vue-router.vue-router.RouterViewProps,   $slots :{default (arg : {  Component :@vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}>,   route :vue-router.vue-router.RouteLocationNormalizedLoaded}): std.Array<@vue/runtime-core.@vue/runtime-core.VNode<@vue/runtime-core.@vue/runtime-core.RendererNode, @vue/runtime-core.@vue/runtime-core.RendererElement, {[key: string] : any}>>}} */ js.Any
+      ): Self = StObject.set(x, "RouterView", value.asInstanceOf[js.Any])
     }
   }
 }

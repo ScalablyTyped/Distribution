@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPlayCircleOutlinedMod.PlayCircleOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playCircleOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PlayCircleOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PlayCircleOutlined", JSImport.Default)
   @js.native
   val default: PlayCircleOutlinedIconType = js.native
-  
-  @js.native
-  trait PlayCircleOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PlayCircleOutlinedIconType: String = js.native
-  }
   
   type _To = PlayCircleOutlinedIconType
   

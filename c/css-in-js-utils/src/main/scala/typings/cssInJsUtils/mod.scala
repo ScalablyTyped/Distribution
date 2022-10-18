@@ -1,6 +1,6 @@
 package typings.cssInJsUtils
 
-import typings.cssInJsUtils.assignStyleMod.StyleObject
+import typings.cssInJsUtils.esAssignStyleMod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object mod {
   inline def cssifyDeclaration(property: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cssifyDeclaration")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cssifyDeclaration(property: String, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cssifyDeclaration")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def cssifyObject(style: typings.cssInJsUtils.cssifyObjectMod.StyleObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssifyObject")(style.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cssifyObject(style: typings.cssInJsUtils.esCssifyObjectMod.StyleObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cssifyObject")(style.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def hyphenateProperty(property: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenateProperty")(property.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def hyphenateProperty(property: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenateProperty")(property.asInstanceOf[js.Any]).asInstanceOf[String]

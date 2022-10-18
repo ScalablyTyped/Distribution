@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TimestampFormat extends StObject {
   
-  var logger: js.UndefOr[typings.concurrently.loggerMod.Logger] = js.undefined
+  var logger: js.UndefOr[typings.concurrently.distSrcLoggerMod.Logger] = js.undefined
   
   var timestampFormat: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +19,7 @@ object TimestampFormat {
   
   extension [Self <: TimestampFormat](x: Self) {
     
-    inline def setLogger(value: typings.concurrently.loggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     

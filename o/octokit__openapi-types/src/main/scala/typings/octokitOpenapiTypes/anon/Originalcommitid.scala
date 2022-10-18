@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Originalcommitid extends StObject {
   
-  var _links: PullrequestSelf
+  var _links: HtmlPullrequest
   
   var author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER
   
@@ -93,7 +93,7 @@ trait Originalcommitid extends StObject {
     */
   var pull_request_url: String
   
-  var reactions: js.UndefOr[Confused] = js.undefined
+  var reactions: js.UndefOr[`1`] = js.undefined
   
   /**
     * @description The side of the first line of the range for a multi-line comment.
@@ -132,7 +132,7 @@ trait Originalcommitid extends StObject {
 object Originalcommitid {
   
   inline def apply(
-    _links: PullrequestSelf,
+    _links: HtmlPullrequest,
     author_association: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER,
     body: String,
     commit_id: String,
@@ -214,7 +214,7 @@ object Originalcommitid {
     
     inline def setPull_request_url(value: String): Self = StObject.set(x, "pull_request_url", value.asInstanceOf[js.Any])
     
-    inline def setReactions(value: Confused): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     
@@ -242,6 +242,6 @@ object Originalcommitid {
     
     inline def setUserNull: Self = StObject.set(x, "user", null)
     
-    inline def set_links(value: PullrequestSelf): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: HtmlPullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

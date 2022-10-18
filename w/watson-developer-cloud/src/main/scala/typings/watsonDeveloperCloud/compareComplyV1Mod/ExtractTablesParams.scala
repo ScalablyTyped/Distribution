@@ -1,8 +1,8 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
-import typings.ibmCloudSdkCore.helperMod.FileObject
-import typings.node.Buffer
+import typings.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.watsonDeveloperCloud.compareComplyV1Mod.ExtractTablesConstants.FileContentType
 import typings.watsonDeveloperCloud.compareComplyV1Mod.ExtractTablesConstants.Model
 import org.scalablytyped.runtime.StObject

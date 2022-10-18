@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofBrief
   extends StObject
-     with Instantiable0[typings.antdMobileRn.listItemNativeMod.Brief] {
+     with Instantiable0[typings.antdMobileRn.libListListItemDotnativeMod.Brief] {
   
   var defaultProps: Styles = js.native
 }

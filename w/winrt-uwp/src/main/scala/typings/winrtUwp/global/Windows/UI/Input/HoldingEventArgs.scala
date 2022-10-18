@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the Holding event. */
-@JSGlobal("Windows.UI.Input.HoldingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.HoldingEventArgs")
 @js.native
-abstract class HoldingEventArgs ()
+open class HoldingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.HoldingEventArgs {
   

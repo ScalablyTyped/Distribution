@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Worksheet
   extends StObject
-     with AddSheetResult[Any]
      with Sheet {
   
   def Activate(): Unit = js.native

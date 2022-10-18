@@ -1,8 +1,8 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.adaptersMod.TimeUnit
 import typings.chartJs.chartJsBooleans.`false`
+import typings.chartJs.typesAdaptersMod.TimeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

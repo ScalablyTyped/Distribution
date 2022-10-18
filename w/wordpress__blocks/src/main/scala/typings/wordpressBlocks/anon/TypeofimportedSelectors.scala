@@ -1,7 +1,7 @@
 package typings.wordpressBlocks.anon
 
 import typings.std.Record
-import typings.wordpressBlocks.categoriesMod.Category
+import typings.wordpressBlocks.apiCategoriesMod.Category
 import typings.wordpressBlocks.mod.Block
 import typings.wordpressBlocks.mod.BlockStyle
 import typings.wordpressBlocks.wordpressBlocksStrings.align
@@ -38,12 +38,12 @@ trait TypeofimportedSelectors extends StObject {
     nameOrType: String,
     feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
     defaultSupports: T
-  ): T | Boolean | Double | String = js.native
+  ): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T extends boolean ? boolean : T */ js.Any = js.native
   def getBlockSupport[T](
     nameOrType: Block[Any],
     feature: align | alignWide | anchor | color | customClassName | className | html | inserter | multiple | reusable | spacing | lock | typography,
     defaultSupports: T
-  ): T | Boolean | Double | String = js.native
+  ): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T extends boolean ? boolean : T */ js.Any = js.native
   
   def getBlockType[T /* <: Record[String, Any] */](): js.UndefOr[Block[T]] = js.native
   def getBlockType[T /* <: Record[String, Any] */](name: String): js.UndefOr[Block[T]] = js.native

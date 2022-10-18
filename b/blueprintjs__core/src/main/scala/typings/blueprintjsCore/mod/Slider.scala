@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.sliderMod.SliderProps
+import typings.blueprintjsCore.libEsmComponentsSliderSliderMod.SliderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Slider")
 @js.native
 open class Slider protected ()
-  extends typings.blueprintjsCore.componentsMod.Slider {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Slider {
   def this(props: SliderProps) = this()
   def this(props: SliderProps, context: Any) = this()
 }

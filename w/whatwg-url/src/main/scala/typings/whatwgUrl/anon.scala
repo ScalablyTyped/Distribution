@@ -1,5 +1,6 @@
 package typings.whatwgUrl
 
+import typings.whatwgUrl.mod.StateOverride
 import typings.whatwgUrl.mod.URLRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ object anon {
   
   trait `0` extends StObject {
     
-    var doNotStripQMark: js.UndefOr[Boolean] = js.undefined
+    val baseURL: js.UndefOr[String] = js.undefined
   }
   object `0` {
     
@@ -20,6 +21,25 @@ object anon {
     
     extension [Self <: `0`](x: Self) {
       
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+    }
+  }
+  
+  trait `1` extends StObject {
+    
+    var doNotStripQMark: js.UndefOr[Boolean] = js.undefined
+  }
+  object `1` {
+    
+    inline def apply(): `1` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`1`]
+    }
+    
+    extension [Self <: `1`](x: Self) {
+      
       inline def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
       
       inline def setDoNotStripQMarkUndefined: Self = StObject.set(x, "doNotStripQMark", js.undefined)
@@ -28,7 +48,11 @@ object anon {
   
   trait BaseURL extends StObject {
     
-    val baseURL: js.UndefOr[String] = js.undefined
+    var baseURL: js.UndefOr[String] = js.undefined
+    
+    var stateOverride: js.UndefOr[StateOverride] = js.undefined
+    
+    var url: js.UndefOr[URLRecord] = js.undefined
   }
   object BaseURL {
     
@@ -42,6 +66,14 @@ object anon {
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
       inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      
+      inline def setStateOverride(value: StateOverride): Self = StObject.set(x, "stateOverride", value.asInstanceOf[js.Any])
+      
+      inline def setStateOverrideUndefined: Self = StObject.set(x, "stateOverride", js.undefined)
+      
+      inline def setUrl(value: URLRecord): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -78,37 +110,6 @@ object anon {
       inline def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
       
       inline def setDoNotStripQMarkUndefined: Self = StObject.set(x, "doNotStripQMark", js.undefined)
-    }
-  }
-  
-  trait StateOverride extends StObject {
-    
-    var baseURL: js.UndefOr[String] = js.undefined
-    
-    var stateOverride: js.UndefOr[typings.whatwgUrl.mod.StateOverride] = js.undefined
-    
-    var url: js.UndefOr[URLRecord] = js.undefined
-  }
-  object StateOverride {
-    
-    inline def apply(): StateOverride = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StateOverride]
-    }
-    
-    extension [Self <: StateOverride](x: Self) {
-      
-      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
-      
-      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
-      
-      inline def setStateOverride(value: typings.whatwgUrl.mod.StateOverride): Self = StObject.set(x, "stateOverride", value.asInstanceOf[js.Any])
-      
-      inline def setStateOverrideUndefined: Self = StObject.set(x, "stateOverride", js.undefined)
-      
-      inline def setUrl(value: URLRecord): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

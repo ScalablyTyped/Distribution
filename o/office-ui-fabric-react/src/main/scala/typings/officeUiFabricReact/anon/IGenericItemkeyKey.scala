@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.basePickerTypesMod.ValidationState
+import typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker.IGenericItem & {  key :react.react.Key} */
 trait IGenericItemkeyKey extends StObject {
   
-  var ValidationState: typings.officeUiFabricReact.basePickerTypesMod.ValidationState
+  var ValidationState: typings.officeUiFabricReact.libComponentsPickersBasePickerDottypesMod.ValidationState
   
   var imageInitials: String
   

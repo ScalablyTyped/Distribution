@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies options for user interface elements such as the application picker that can be invoked by this API. */
-@JSGlobal("Windows.System.LauncherUIOptions")
+/* note: abstract class */ @JSGlobal("Windows.System.LauncherUIOptions")
 @js.native
-abstract class LauncherUIOptions ()
+open class LauncherUIOptions ()
   extends StObject
      with typings.winrtUwp.Windows.System.LauncherUIOptions {
   

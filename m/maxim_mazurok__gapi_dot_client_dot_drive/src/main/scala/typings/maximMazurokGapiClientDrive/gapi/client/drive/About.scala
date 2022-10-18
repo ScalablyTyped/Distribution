@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientDrive.anon.BackgroundImageLink
 import typings.maximMazurokGapiClientDrive.anon.Limit
 import org.scalablytyped.runtime.StObject
@@ -23,9 +22,7 @@ trait About extends StObject {
   
   /** A map of source MIME type to possible targets for all supported exports. */
   var exportFormats: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: std.Array<string>}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: std.Array<string>} */ js.Any
   ] = js.undefined
   
   /** The currently supported folder colors as RGB hex strings. */
@@ -33,9 +30,7 @@ trait About extends StObject {
   
   /** A map of source MIME type to possible targets for all supported imports. */
   var importFormats: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: std.Array<string>}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: std.Array<string>} */ js.Any
   ] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#about". */
@@ -43,9 +38,7 @@ trait About extends StObject {
   
   /** A map of maximum import sizes by MIME type, in bytes. */
   var maxImportSizes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The maximum upload size in bytes. */
@@ -88,9 +81,7 @@ object About {
     inline def setDriveThemesVarargs(value: BackgroundImageLink*): Self = StObject.set(x, "driveThemes", js.Array(value*))
     
     inline def setExportFormats(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: std.Array<string>}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: std.Array<string>} */ js.Any
     ): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     inline def setExportFormatsUndefined: Self = StObject.set(x, "exportFormats", js.undefined)
@@ -102,9 +93,7 @@ object About {
     inline def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value*))
     
     inline def setImportFormats(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: std.Array<string>}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: std.Array<string>} */ js.Any
     ): Self = StObject.set(x, "importFormats", value.asInstanceOf[js.Any])
     
     inline def setImportFormatsUndefined: Self = StObject.set(x, "importFormats", js.undefined)
@@ -114,9 +103,7 @@ object About {
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setMaxImportSizes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDrive.maximMazurokGapiClientDriveStrings.About & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "maxImportSizes", value.asInstanceOf[js.Any])
     
     inline def setMaxImportSizesUndefined: Self = StObject.set(x, "maxImportSizes", js.undefined)

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Theme extends StObject {
   
-  var theme: typings.emotionReact.emotionReactMod.Theme
+  var theme: typings.emotionReact.mod.Theme
 }
 object Theme {
   
-  inline def apply(theme: typings.emotionReact.emotionReactMod.Theme): Theme = {
+  inline def apply(theme: typings.emotionReact.mod.Theme): Theme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
   
   extension [Self <: Theme](x: Self) {
     
-    inline def setTheme(value: typings.emotionReact.emotionReactMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

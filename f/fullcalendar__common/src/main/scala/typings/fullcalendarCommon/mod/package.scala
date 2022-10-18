@@ -2,7 +2,6 @@ package typings.fullcalendarCommon.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.fullcalendarCommon.anon.Allow
 import typings.fullcalendarCommon.anon.Arialabel
 import typings.fullcalendarCommon.anon.ArialabelString
@@ -732,10 +731,6 @@ type DurationInput = DurationObjectInput | String | Double
 
 type EqualityFunc[T] = js.Function2[/* a */ T, /* b */ T, Boolean]
 
-type EqualityFuncs[ObjType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof ObjType ]:? @fullcalendar/common.@fullcalendar/common.EqualityThing<ObjType[K]>}
-  */ typings.fullcalendarCommon.fullcalendarCommonStrings.EqualityFuncs & TopLevel[ObjType]
-
 type EqualityThing[T] = EqualityFunc[T] | `true`
 
 type EventDefHash = StringDictionary[EventDef]
@@ -843,19 +838,11 @@ type OptionChangeHandlerMap = StringDictionary[OptionChangeHandler]
 
 type OverlapFunc = js.Function2[/* stillEvent */ EventApi, /* movingEvent */ EventApi | Null, Boolean]
 
-type RawOptionsFromRefiners[Refiners /* <: GenericRefiners */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Prop in keyof Refiners ]:? Refiners[Prop] extends (input : infer RawType): infer RefinedType? any extends any? any : any : never}
-  */ typings.fullcalendarCommon.fullcalendarCommonStrings.RawOptionsFromRefiners & TopLevel[Refiners]
-
 type ReducerFunc = js.Function3[
 /* currentState */ Dictionary | Null, 
 /* action */ Action | Null, 
 /* context */ CalendarContext & CalendarDataManagerState, 
 Dictionary]
-
-type RefinedOptionsFromRefiners[Refiners /* <: GenericRefiners */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Prop in keyof Refiners ]:? Refiners[Prop] extends (input : any): infer RefinedType? any : never}
-  */ typings.fullcalendarCommon.fullcalendarCommonStrings.RefinedOptionsFromRefiners & TopLevel[Refiners]
 
 type RenderHookPropsChildren = js.Function4[
 /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ /* rootElRef */ Any, 

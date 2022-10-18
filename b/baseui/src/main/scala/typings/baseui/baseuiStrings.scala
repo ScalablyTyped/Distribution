@@ -18,6 +18,7 @@ import typings.baseui.blockTypesMod.Position
 import typings.baseui.blockTypesMod.WhiteSpace
 import typings.baseui.checkboxTypesMod.LabelPlacement
 import typings.baseui.checkboxTypesMod.StyleType
+import typings.baseui.dataTableFilterShellMod.ExcludeKind
 import typings.baseui.dataTableTypesMod.Columns
 import typings.baseui.dataTableTypesMod.SortDirections
 import typings.baseui.datepickerTypesMod.Density
@@ -25,7 +26,6 @@ import typings.baseui.datepickerTypesMod._InputRole
 import typings.baseui.datepickerTypesMod._RangedCalendarBehavior
 import typings.baseui.datepickerTypesMod._StateChangeType
 import typings.baseui.drawerTypesMod.Anchor
-import typings.baseui.filterShellMod.ExcludeKind
 import typings.baseui.inputTypesMod.Adjoined
 import typings.baseui.layerTypesMod.TetherPlacement
 import typings.baseui.layoutGridTypesMod.CSSLengthUnit

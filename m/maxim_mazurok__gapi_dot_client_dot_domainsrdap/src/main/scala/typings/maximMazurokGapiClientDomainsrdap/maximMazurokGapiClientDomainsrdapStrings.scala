@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientDomainsrdapStrings {
   
   @js.native
-  sealed trait HttpBody extends StObject
-  inline def HttpBody: HttpBody = "HttpBody".asInstanceOf[HttpBody]
-  
-  @js.native
   sealed trait domainsrdap extends StObject
   inline def domainsrdap: domainsrdap = "domainsrdap".asInstanceOf[domainsrdap]
   

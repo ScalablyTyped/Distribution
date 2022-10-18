@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NodeMaterialConnectionPoint")
 @js.native
 open class NodeMaterialConnectionPoint protected ()
-  extends typings.babylonjs.legacyMod.NodeMaterialConnectionPoint {
+  extends typings.babylonjs.legacyLegacyMod.NodeMaterialConnectionPoint {
   /**
     * Creates a new connection point
     * @param name defines the connection point name
@@ -16,8 +16,8 @@ open class NodeMaterialConnectionPoint protected ()
     */
   def this(
     name: String,
-    ownerBlock: typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock,
-    direction: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection
+    ownerBlock: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock,
+    direction: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection
   ) = this()
 }
 /* static members */

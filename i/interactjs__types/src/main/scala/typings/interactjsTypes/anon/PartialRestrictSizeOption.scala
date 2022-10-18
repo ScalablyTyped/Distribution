@@ -1,9 +1,9 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.Point
-import typings.interactjsTypes.typesMod.RectResolvable
-import typings.interactjsTypes.typesMod.Size
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.coreTypesMod.RectResolvable
+import typings.interactjsTypes.coreTypesMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +17,13 @@ trait PartialRestrictSizeOption extends StObject {
   
   var max: js.UndefOr[
     Size | Point | (RectResolvable[
-      js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]]
+      js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]
     ])
   ] = js.undefined
   
   var min: js.UndefOr[
     Size | Point | (RectResolvable[
-      js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]]
+      js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]
     ])
   ] = js.undefined
 }
@@ -46,24 +46,24 @@ object PartialRestrictSizeOption {
     
     inline def setMax(
       value: Size | Point | (RectResolvable[
-          js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]]
+          js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]
         ])
     ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxFunction1(
-      value: js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]] => typings.interactjsTypes.typesMod.Rect | typings.interactjsTypes.typesMod.Element
+      value: js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] => typings.interactjsTypes.coreTypesMod.Rect | typings.interactjsTypes.coreTypesMod.Element
     ): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     inline def setMin(
       value: Size | Point | (RectResolvable[
-          js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]]
+          js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]
         ])
     ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinFunction1(
-      value: js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]] => typings.interactjsTypes.typesMod.Rect | typings.interactjsTypes.typesMod.Element
+      value: js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] => typings.interactjsTypes.coreTypesMod.Rect | typings.interactjsTypes.coreTypesMod.Element
     ): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)

@@ -65,7 +65,7 @@ object mod {
       */
     def mode_=(arg: js.UndefOr[Double]): Unit = js.native
     
-    var mtime: js.UndefOr[typings.ipfsUnixfs.typesMod.Mtime] = js.native
+    var mtime: js.UndefOr[typings.ipfsUnixfs.distSrcTypesMod.Mtime] = js.native
     
     /**
       * @param {number} index
@@ -93,9 +93,9 @@ object mod {
   inline def parseMode(mode: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMode")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   inline def parseMode(mode: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMode")(mode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  inline def parseMtime(input: Any): js.UndefOr[typings.ipfsUnixfs.typesMod.Mtime] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMtime")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.ipfsUnixfs.typesMod.Mtime]]
+  inline def parseMtime(input: Any): js.UndefOr[typings.ipfsUnixfs.distSrcTypesMod.Mtime] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMtime")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.ipfsUnixfs.distSrcTypesMod.Mtime]]
   
-  type Mtime = typings.ipfsUnixfs.typesMod.Mtime
+  type Mtime = typings.ipfsUnixfs.distSrcTypesMod.Mtime
   
-  type MtimeLike = typings.ipfsUnixfs.typesMod.MtimeLike
+  type MtimeLike = typings.ipfsUnixfs.distSrcTypesMod.MtimeLike
 }

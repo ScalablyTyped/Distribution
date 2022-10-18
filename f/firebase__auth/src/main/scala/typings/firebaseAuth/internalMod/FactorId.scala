@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FactorId {
   
   /** Phone as second factor */
-  @JSImport("@firebase/auth/dist/cordova/internal", "FactorId.PHONE")
+  @JSImport("@firebase/auth/internal", "FactorId.PHONE")
   @js.native
   val PHONE: phone = js.native
 }

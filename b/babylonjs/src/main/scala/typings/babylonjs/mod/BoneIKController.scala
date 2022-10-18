@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "BoneIKController")
 @js.native
 open class BoneIKController protected ()
-  extends typings.babylonjs.legacyMod.BoneIKController {
+  extends typings.babylonjs.legacyLegacyMod.BoneIKController {
   /**
     * Creates a new BoneIKController
     * @param mesh defines the TransformNode to control
@@ -23,10 +23,13 @@ open class BoneIKController protected ()
     * @param options.maxAngle
     * @param options.slerpAmount
     */
-  def this(mesh: typings.babylonjs.transformNodeMod.TransformNode, bone: typings.babylonjs.boneMod.Bone) = this()
   def this(
-    mesh: typings.babylonjs.transformNodeMod.TransformNode,
-    bone: typings.babylonjs.boneMod.Bone,
+    mesh: typings.babylonjs.meshesTransformNodeMod.TransformNode,
+    bone: typings.babylonjs.bonesBoneMod.Bone
+  ) = this()
+  def this(
+    mesh: typings.babylonjs.meshesTransformNodeMod.TransformNode,
+    bone: typings.babylonjs.bonesBoneMod.Bone,
     options: BendAxis
   ) = this()
 }

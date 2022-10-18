@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "VectorField")
 @js.native
 open class VectorField protected ()
-  extends typings.blackEngine.vectorFieldMod.VectorField {
+  extends typings.blackEngine.particlesModsVectorFieldMod.VectorField {
   def this(x: Double, y: Double, width: Double, height: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double, resolution: Double) = this()
 }

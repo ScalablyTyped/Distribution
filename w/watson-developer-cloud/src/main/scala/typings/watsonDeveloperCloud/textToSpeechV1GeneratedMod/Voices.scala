@@ -21,6 +21,6 @@ object Voices {
     
     inline def setVoices(value: js.Array[Voice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
     
-    inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "voices", js.Array(value*))
   }
 }

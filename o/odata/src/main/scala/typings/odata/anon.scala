@@ -1,8 +1,8 @@
 package typings.odata
 
-import typings.odata.odataConfigMod.OdataBatchConfig
-import typings.odata.odataQueryMod.OdataQuery
-import typings.odata.ohandlerMod.OHandler
+import typings.odata.distTypesOdataConfigMod.OdataBatchConfig
+import typings.odata.distTypesOdataQueryMod.OdataQuery
+import typings.odata.distTypesOhandlerMod.OHandler
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit

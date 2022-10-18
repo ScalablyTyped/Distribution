@@ -1,7 +1,6 @@
 package typings.redux
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.redux.anon.DispatchExt
 import typings.redux.anon.`0`
 import typings.redux.anon.`1`
@@ -124,9 +123,25 @@ object mod {
   
   type ActionCreatorsMapObject[A] = StringDictionary[ActionCreator[A]]
   
-  type ActionFromReducer[R] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    R extends redux.redux.Reducer<any, infer A> ? A : never
+    }}}
+    */
+  @js.native
+  trait ActionFromReducer[R] extends StObject
   
-  type ActionFromReducersMapObject[M] = ActionFromReducer[ReducerFromReducersMapObject[M]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    M extends redux.redux.ReducersMapObject<any, any> ? redux.redux.ActionFromReducer<redux.redux.ReducerFromReducersMapObject<M>> : never
+    }}}
+    */
+  @js.native
+  trait ActionFromReducersMapObject[M] extends StObject
   
   trait AnyAction
     extends StObject
@@ -144,9 +159,15 @@ object mod {
   
   type CombinedState[S] = EmptyObject & S
   
-  type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? T[K] extends object? redux.redux.DeepPartial<T[K]> : T[K]}
-    */ typings.redux.reduxStrings.DeepPartial & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]:? T[K] extends object? redux.redux.DeepPartial<T[K]> : T[K]}
+    }}}
+    */
+  @js.native
+  trait DeepPartial[T] extends StObject
   
   type Dispatch[A /* <: Action[Any] */] = js.Function1[/* action */ A, A]
   
@@ -211,8 +232,6 @@ object mod {
   @js.native
   trait Observable[T] extends StObject {
     
-    def apply(): Observable[T] = js.native
-    
     /**
       * The minimal observable subscription method.
       * @param {Object} observer Any object that can be used as an observer.
@@ -221,7 +240,7 @@ object mod {
       * be used to unsubscribe the observable from the store, and prevent further
       * emission of values from the observable.
       */
-    def subscribe(observer: Observer[T]): /* import warning: importer.ImportType#apply Failed type conversion: redux.anon.Unsubscribe[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
+    def subscribe(observer: Observer[T]): typings.redux.anon.Unsubscribe = js.native
   }
   
   trait Observer[T] extends StObject {
@@ -243,26 +262,50 @@ object mod {
     }
   }
   
-  type PreloadedState[S] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]: S[K] extends string | number | boolean | symbol? S[K] : redux.redux.PreloadedState<S[K]>}
-    */ typings.redux.reduxStrings.PreloadedState & TopLevel[Any]) | S
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    std.Required<S> extends redux.redux.EmptyObject ? S extends redux.redux.CombinedState<infer S1> ? {[ K in keyof S1 ]:? S1[K] extends object? redux.redux.PreloadedState<S1[K]> : S1[K]} : S : {[ K in keyof S ]: S[K] extends string | number | boolean | symbol? S[K] : redux.redux.PreloadedState<S[K]>}
+    }}}
+    */
+  @js.native
+  trait PreloadedState[S] extends StObject
   
   type Reducer[S, A /* <: Action[Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   
-  type ReducerFromReducersMapObject[M] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    M extends {[ P in keyof M ]: infer R} ? R extends redux.redux.Reducer<any, any> ? R : never : never
+    }}}
+    */
+  @js.native
+  trait ReducerFromReducersMapObject[M] extends StObject
   
-  type ReducersMapObject[S, A /* <: Action[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]: redux.redux.Reducer<S[K], A>}
-    */ typings.redux.reduxStrings.ReducersMapObject & TopLevel[S]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof S ]: redux.redux.Reducer<S[K], A>}
+    }}}
+    */
+  @js.native
+  trait ReducersMapObject[S, A /* <: Action[Any] */] extends StObject
   
-  type StateFromReducersMapObject[M] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof M ]: M[P] extends redux.redux.Reducer<infer S, any>? any : never}
-    */ typings.redux.reduxStrings.StateFromReducersMapObject & TopLevel[M]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    M extends redux.redux.ReducersMapObject<any, any> ? {[ P in keyof M ]: M[P] extends redux.redux.Reducer<infer S, any>? S : never} : never
+    }}}
+    */
+  @js.native
+  trait StateFromReducersMapObject[M] extends StObject
   
   @js.native
   trait Store[S, A /* <: Action[Any] */] extends StObject {
-    
-    def apply(): Observable[S] = js.native
     
     /**
       * Dispatches an action. It is the only way to trigger a state change.
@@ -336,7 +379,7 @@ object mod {
       *
       * @param nextReducer The reducer for the store to use instead.
       */
-    def replaceReducer(nextReducer: Reducer[S, A]): /* import warning: importer.ImportType#apply Failed type conversion: void[/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Symbol.observable * / any] */ js.Any = js.native
+    def replaceReducer(nextReducer: Reducer[S, A]): Unit = js.native
     
     /**
       * Adds a change listener. It will be called any time an action is

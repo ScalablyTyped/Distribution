@@ -8,13 +8,13 @@ trait Error extends StObject {
   
   var error: js.Error
   
-  var options: typings.naja.najaMod.Options
+  var options: typings.naja.distNajaMod.Options
   
   var request: typings.std.Request
 }
 object Error {
   
-  inline def apply(error: js.Error, options: typings.naja.najaMod.Options, request: typings.std.Request): Error = {
+  inline def apply(error: js.Error, options: typings.naja.distNajaMod.Options, request: typings.std.Request): Error = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
@@ -23,7 +23,7 @@ object Error {
     
     inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

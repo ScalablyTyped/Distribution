@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Envelope")
 @js.native
 open class Envelope ()
-  extends typings.cucumberMessages.messagesMod.Envelope
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Envelope

@@ -6,7 +6,7 @@ import typings.devtools.devtoolsStrings.function
 import typings.devtools.devtoolsStrings.number
 import typings.devtools.devtoolsStrings.string
 import typings.std.Record
-import typings.wdioTypes.optionsMod.WebDriverLogTypes
+import typings.wdioTypes.buildOptionsMod.WebDriverLogTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

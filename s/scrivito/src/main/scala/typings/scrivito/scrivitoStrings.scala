@@ -19,10 +19,6 @@ object scrivitoStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait AttributeKeys extends StObject
-  inline def AttributeKeys: AttributeKeys = "AttributeKeys".asInstanceOf[AttributeKeys]
-  
-  @js.native
   sealed trait MetadataCollection
     extends StObject
        with _ObjSearchSingleAttribute

@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify typeSystem.ITypeDefinition * / any */ @JSImport("raml-1-parser", "ds.AbstractType")
 @js.native
 open class AbstractType ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.AbstractType
+  extends typings.ramlDefinitionSystem.mod.AbstractType

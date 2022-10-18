@@ -9,7 +9,7 @@ object fpDaysToWeeksIndexMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/daysToWeeks/index", JSImport.Default)
+    @JSImport("date-fns/fp/daysToWeeks/index", JSImport.Default)
     @js.native
     val ^ : CurriedFn1[Double, Double] = js.native
     

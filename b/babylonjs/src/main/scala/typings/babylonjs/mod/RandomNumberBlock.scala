@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RandomNumberBlock")
 @js.native
 open class RandomNumberBlock protected ()
-  extends typings.babylonjs.legacyMod.RandomNumberBlock {
+  extends typings.babylonjs.legacyLegacyMod.RandomNumberBlock {
   /**
     * Creates a new RandomNumberBlock
     * @param name defines the block name

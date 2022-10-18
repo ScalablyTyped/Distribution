@@ -12,20 +12,20 @@ object anon {
   
   trait `0` extends StObject {
     
-    var device: js.UndefOr[RawDevice] = js.undefined
+    var device: RawDevice | js.Array[RawDevice]
   }
   object `0` {
     
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(device: RawDevice | js.Array[RawDevice]): `0` = {
+      val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`]
     }
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setDevice(value: RawDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: RawDevice | js.Array[RawDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+      inline def setDeviceVarargs(value: RawDevice*): Self = StObject.set(x, "device", js.Array(value*))
     }
   }
   
@@ -56,20 +56,20 @@ object anon {
   
   trait Device extends StObject {
     
-    var device: RawDevice | js.Array[RawDevice]
+    var device: js.UndefOr[RawDevice] = js.undefined
   }
   object Device {
     
-    inline def apply(device: RawDevice | js.Array[RawDevice]): Device = {
-      val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
+    inline def apply(): Device = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Device]
     }
     
     extension [Self <: Device](x: Self) {
       
-      inline def setDevice(value: RawDevice | js.Array[RawDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: RawDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      inline def setDeviceVarargs(value: RawDevice*): Self = StObject.set(x, "device", js.Array(value*))
+      inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     }
   }
   
@@ -120,18 +120,39 @@ object anon {
   
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.undefined
+    var host: String
     
-    var port: js.UndefOr[Double] = js.undefined
+    var port: Double
   }
   object Host {
     
-    inline def apply(): Host = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(host: String, port: Double): Host = {
+      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
     extension [Self <: Host](x: Self) {
+      
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Port extends StObject {
+    
+    var host: js.UndefOr[String] = js.undefined
+    
+    var port: js.UndefOr[Double] = js.undefined
+  }
+  object Port {
+    
+    inline def apply(): Port = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Port]
+    }
+    
+    extension [Self <: Port](x: Self) {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -140,27 +161,6 @@ object anon {
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-    }
-  }
-  
-  trait Port extends StObject {
-    
-    var host: String
-    
-    var port: Double
-  }
-  object Port {
-    
-    inline def apply(host: String, port: Double): Port = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Port]
-    }
-    
-    extension [Self <: Port](x: Self) {
-      
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-      
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   

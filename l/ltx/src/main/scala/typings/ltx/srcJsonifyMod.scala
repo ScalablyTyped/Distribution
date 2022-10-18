@@ -13,8 +13,8 @@ object srcJsonifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(el: String): String | ElementJson = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any]).asInstanceOf[String | ElementJson]
-  inline def default(el: Element): Element | ElementJson = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any]).asInstanceOf[Element | ElementJson]
+  inline def default(el: String): /* import warning: importer.ImportType#apply Failed type conversion: string extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : string */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: string extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : string */ js.Any]
+  inline def default(el: Element): /* import warning: importer.ImportType#apply Failed type conversion: ltx.ltx/src/Element.Element extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : ltx.ltx/src/Element.Element */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: ltx.ltx/src/Element.Element extends ltx.ltx/src/Element.default ? ltx.ltx/src/JSONify.ElementJson : ltx.ltx/src/Element.Element */ js.Any]
   
   trait ElementJson extends StObject {
     

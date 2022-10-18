@@ -7,6 +7,7 @@ import typings.exceljs.anon.PartialZlibOptions
 import typings.exceljs.exceljsStrings.cache
 import typings.exceljs.exceljsStrings.emit
 import typings.exceljs.exceljsStrings.ignore
+import typings.node.NodeJS.TypedArray
 import typings.node.streamMod.Stream
 import typings.std.AsyncIterator
 import org.scalablytyped.runtime.StObject
@@ -276,7 +277,7 @@ object stream {
       var chunkSize: Double
       
       // compression only
-      var dictionary: js.typedarray.ArrayBuffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
+      var dictionary: js.typedarray.ArrayBuffer | TypedArray | js.typedarray.DataView
       
       /**
       			 * @default constants.Z_FINISH
@@ -302,7 +303,7 @@ object stream {
       
       inline def apply(
         chunkSize: Double,
-        dictionary: js.typedarray.ArrayBuffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView,
+        dictionary: js.typedarray.ArrayBuffer | TypedArray | js.typedarray.DataView,
         finishFlush: Double,
         flush: Double,
         level: Double,
@@ -318,9 +319,7 @@ object stream {
         
         inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
         
-        inline def setDictionary(
-          value: js.typedarray.ArrayBuffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
-        ): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+        inline def setDictionary(value: js.typedarray.ArrayBuffer | TypedArray | js.typedarray.DataView): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
         
         inline def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
         

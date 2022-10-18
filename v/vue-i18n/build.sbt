@@ -1,12 +1,20 @@
 organization := "org.scalablytyped"
 name := "vue-i18n"
-version := "8.22.2-6d417a"
-scalaVersion := "3.0.1"
+version := "9.2.2-c9a5b3"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "vue" % "2.6.12-a5f695")
+  "org.scalablytyped" %%% "intlify__core-base" % "9.2.2-f8ff7e",
+  "org.scalablytyped" %%% "intlify__devtools-if" % "9.2.2-6f3919",
+  "org.scalablytyped" %%% "intlify__message-compiler" % "9.2.2-d6b5e2",
+  "org.scalablytyped" %%% "intlify__shared" % "9.2.2-ba769c",
+  "org.scalablytyped" %%% "intlify__vue-devtools" % "9.2.2-f744d2",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.41-669f2b",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.41-c55f63",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.41-1967a8")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

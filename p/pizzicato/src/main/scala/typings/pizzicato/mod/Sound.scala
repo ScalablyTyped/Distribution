@@ -41,7 +41,7 @@ open class Sound[D /* <: SoundDescription */] ()
   var effects: js.Array[Effect] = js.native
   
   /** Frequency of the wave if the sound's source is a wave */
-  var frequency: Null | Double = js.native
+  var frequency: /* import warning: importer.ImportType#apply Failed type conversion: D extends {  source :'wave'} ? number : null */ js.Any = js.native
   
   val loop: Boolean = js.native
   

@@ -39,9 +39,9 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdList.getListItemHeightMod.ListItemHeight
-import typings.reactMdList.listItemAddonMod.ListItemAddonPosition
-import typings.reactMdList.listItemAddonMod.ListItemAddonType
+import typings.reactMdList.typesGetListItemHeightMod.ListItemHeight
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonPosition
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonType
 import typings.reactMdTree.reactMdTreeStrings.`additions removals`
 import typings.reactMdTree.reactMdTreeStrings.`additions text`
 import typings.reactMdTree.reactMdTreeStrings.`inline`
@@ -92,11 +92,11 @@ import typings.reactMdTree.reactMdTreeStrings.tree
 import typings.reactMdTree.reactMdTreeStrings.url
 import typings.reactMdTree.reactMdTreeStrings.vertical
 import typings.reactMdTree.reactMdTreeStrings.yes
-import typings.reactMdTree.typesMod.BaseTreeItem
-import typings.reactMdTree.typesMod.SelectedIds
-import typings.reactMdTree.typesMod.TreeItemId
-import typings.reactMdTree.typesMod.UnknownTreeItem
-import typings.reactMdTree.useNestedTreeListMod.NestedTreeItem
+import typings.reactMdTree.typesTypesMod.BaseTreeItem
+import typings.reactMdTree.typesTypesMod.SelectedIds
+import typings.reactMdTree.typesTypesMod.TreeItemId
+import typings.reactMdTree.typesTypesMod.UnknownTreeItem
+import typings.reactMdTree.typesUseNestedTreeListMod.NestedTreeItem
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLLIElement

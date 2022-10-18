@@ -1,9 +1,9 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.formControlFormControlMod.FormControlTypeMap
+import typings.materialUiCore.formControlUseFormControlMod.FormControlState
 import typings.materialUiCore.materialUiCoreStrings.div
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
-import typings.materialUiCore.useFormControlMod.FormControlState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

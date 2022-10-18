@@ -9,7 +9,7 @@ import typings.pg.mod.ConnectionConfig
 import typings.pg.mod.Defaults_
 import typings.pg.mod.PoolConfig
 import typings.pg.mod.QueryResultRow
-import typings.pgProtocol.messagesMod.MessageName
+import typings.pgProtocol.distMessagesMod.MessageName
 import typings.pgTypes.mod.TypeId
 import typings.pgTypes.mod.TypeParser
 import typings.promisePg.promisePgStrings.binary

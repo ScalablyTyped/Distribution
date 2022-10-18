@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the task fields that are available as a parameter for the {@link Office.Document | Document}.getTaskFieldAsync method.
   *
   * @remarks
-  * 
+  *
   * A ProjectTaskFields constant can be used as a parameter of the {@link Office.Document | Document}.getTaskFieldAsync method.
   *
-  * For more information about working with fields in Project, see the 
-  * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. 
+  * For more information about working with fields in Project, see the
+  * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference.
   * In Project Help, search for Available fields.
   */
 @JSGlobal("Office.ProjectTaskFields")

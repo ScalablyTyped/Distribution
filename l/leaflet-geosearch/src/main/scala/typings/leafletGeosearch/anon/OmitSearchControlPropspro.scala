@@ -2,9 +2,9 @@ package typings.leafletGeosearch.anon
 
 import typings.leaflet.mod.ControlPosition
 import typings.leaflet.mod.MarkerOptions
+import typings.leafletGeosearch.distProvidersMod.Provider
 import typings.leafletGeosearch.leafletGeosearchStrings.bar
 import typings.leafletGeosearch.leafletGeosearchStrings.button
-import typings.leafletGeosearch.providersMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,8 @@ trait OmitSearchControlPropspro extends StObject {
   var autoCompleteDelay: Double
   
   var classNames: Button
+  
+  var clearSearchLabel: String
   
   var keepResult: Boolean
   
@@ -68,6 +70,7 @@ object OmitSearchControlPropspro {
     autoComplete: Boolean,
     autoCompleteDelay: Double,
     classNames: Button,
+    clearSearchLabel: String,
     keepResult: Boolean,
     marker: MarkerOptions,
     maxMarkers: Double,
@@ -85,7 +88,7 @@ object OmitSearchControlPropspro {
     updateMap: Boolean,
     zoomLevel: Double
   ): OmitSearchControlPropspro = {
-    val __obj = js.Dynamic.literal(animateZoom = animateZoom.asInstanceOf[js.Any], autoClose = autoClose.asInstanceOf[js.Any], autoComplete = autoComplete.asInstanceOf[js.Any], autoCompleteDelay = autoCompleteDelay.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], keepResult = keepResult.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], maxMarkers = maxMarkers.asInstanceOf[js.Any], maxSuggestions = maxSuggestions.asInstanceOf[js.Any], messageHideDelay = messageHideDelay.asInstanceOf[js.Any], notFoundMessage = notFoundMessage.asInstanceOf[js.Any], popupFormat = js.Any.fromFunction1(popupFormat), position = position.asInstanceOf[js.Any], resultFormat = js.Any.fromFunction1(resultFormat), retainZoomLevel = retainZoomLevel.asInstanceOf[js.Any], searchLabel = searchLabel.asInstanceOf[js.Any], showMarker = showMarker.asInstanceOf[js.Any], showPopup = showPopup.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], updateMap = updateMap.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animateZoom = animateZoom.asInstanceOf[js.Any], autoClose = autoClose.asInstanceOf[js.Any], autoComplete = autoComplete.asInstanceOf[js.Any], autoCompleteDelay = autoCompleteDelay.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], clearSearchLabel = clearSearchLabel.asInstanceOf[js.Any], keepResult = keepResult.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], maxMarkers = maxMarkers.asInstanceOf[js.Any], maxSuggestions = maxSuggestions.asInstanceOf[js.Any], messageHideDelay = messageHideDelay.asInstanceOf[js.Any], notFoundMessage = notFoundMessage.asInstanceOf[js.Any], popupFormat = js.Any.fromFunction1(popupFormat), position = position.asInstanceOf[js.Any], resultFormat = js.Any.fromFunction1(resultFormat), retainZoomLevel = retainZoomLevel.asInstanceOf[js.Any], searchLabel = searchLabel.asInstanceOf[js.Any], showMarker = showMarker.asInstanceOf[js.Any], showPopup = showPopup.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], updateMap = updateMap.asInstanceOf[js.Any], zoomLevel = zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitSearchControlPropspro]
   }
   
@@ -100,6 +103,8 @@ object OmitSearchControlPropspro {
     inline def setAutoCompleteDelay(value: Double): Self = StObject.set(x, "autoCompleteDelay", value.asInstanceOf[js.Any])
     
     inline def setClassNames(value: Button): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+    
+    inline def setClearSearchLabel(value: String): Self = StObject.set(x, "clearSearchLabel", value.asInstanceOf[js.Any])
     
     inline def setKeepResult(value: Boolean): Self = StObject.set(x, "keepResult", value.asInstanceOf[js.Any])
     

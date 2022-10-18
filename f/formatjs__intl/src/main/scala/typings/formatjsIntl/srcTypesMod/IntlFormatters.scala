@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntlFormatters[T, R] extends StObject {
+trait IntlFormatters[TBase] extends StObject {
   
   @JSName("$t")
   def $t(descriptor: MessageDescriptor): String = js.native
@@ -32,20 +32,26 @@ trait IntlFormatters[T, R] extends StObject {
     opts: Options
   ): String = js.native
   @JSName("$t")
-  def $t_R(descriptor: MessageDescriptor): R = js.native
+  def $t_T_Union[T /* <: TBase */](descriptor: MessageDescriptor): String | T | (js.Array[T | String]) = js.native
   @JSName("$t")
-  def $t_R(descriptor: MessageDescriptor, values: Unit, opts: Options): R = js.native
+  def $t_T_Union[T /* <: TBase */](descriptor: MessageDescriptor, values: Unit, opts: Options): String | T | (js.Array[T | String]) = js.native
   @JSName("$t")
-  def $t_R(
+  def $t_T_Union[T /* <: TBase */](
     descriptor: MessageDescriptor,
-    values: Record[String, PrimitiveType | T | (FormatXMLElementFn[T, R])]
-  ): R = js.native
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ]
+  ): String | T | (js.Array[T | String]) = js.native
   @JSName("$t")
-  def $t_R(
+  def $t_T_Union[T /* <: TBase */](
     descriptor: MessageDescriptor,
-    values: Record[String, PrimitiveType | T | (FormatXMLElementFn[T, R])],
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
     opts: Options
-  ): R = js.native
+  ): String | T | (js.Array[T | String]) = js.native
   
   def formatDate(value: String): String = js.native
   def formatDate(value: String, opts: FormatDateOptions): String = js.native
@@ -91,13 +97,13 @@ trait IntlFormatters[T, R] extends StObject {
   def formatList(values: js.Array[String]): String = js.native
   def formatList(values: js.Array[String], opts: FormatListOptions): String = js.native
   
-  def formatListToParts(values: js.Array[String | T]): js.Array[Part[String]] = js.native
-  def formatListToParts(values: js.Array[String | T], opts: FormatListOptions): js.Array[Part[String]] = js.native
+  def formatListToParts[T /* <: TBase */](values: js.Array[String | T]): js.Array[Part[String]] = js.native
+  def formatListToParts[T /* <: TBase */](values: js.Array[String | T], opts: FormatListOptions): js.Array[Part[String]] = js.native
   
   @JSName("formatList")
-  def formatList_Union(values: js.Array[String | T]): T | String | (js.Array[String | T]) = js.native
+  def formatList_T_Union[T /* <: TBase */](values: js.Array[String | T]): T | String | (js.Array[String | T]) = js.native
   @JSName("formatList")
-  def formatList_Union(values: js.Array[String | T], opts: FormatListOptions): T | String | (js.Array[String | T]) = js.native
+  def formatList_T_Union[T /* <: TBase */](values: js.Array[String | T], opts: FormatListOptions): T | String | (js.Array[String | T]) = js.native
   
   def formatMessage(descriptor: MessageDescriptor): String = js.native
   def formatMessage(descriptor: MessageDescriptor, values: Unit, opts: Options): String = js.native
@@ -111,20 +117,26 @@ trait IntlFormatters[T, R] extends StObject {
     opts: Options
   ): String = js.native
   @JSName("formatMessage")
-  def formatMessage_R(descriptor: MessageDescriptor): R = js.native
+  def formatMessage_T_Union[T /* <: TBase */](descriptor: MessageDescriptor): String | T | (js.Array[T | String]) = js.native
   @JSName("formatMessage")
-  def formatMessage_R(descriptor: MessageDescriptor, values: Unit, opts: Options): R = js.native
+  def formatMessage_T_Union[T /* <: TBase */](descriptor: MessageDescriptor, values: Unit, opts: Options): String | T | (js.Array[T | String]) = js.native
   @JSName("formatMessage")
-  def formatMessage_R(
+  def formatMessage_T_Union[T /* <: TBase */](
     descriptor: MessageDescriptor,
-    values: Record[String, PrimitiveType | T | (FormatXMLElementFn[T, R])]
-  ): R = js.native
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ]
+  ): String | T | (js.Array[T | String]) = js.native
   @JSName("formatMessage")
-  def formatMessage_R(
+  def formatMessage_T_Union[T /* <: TBase */](
     descriptor: MessageDescriptor,
-    values: Record[String, PrimitiveType | T | (FormatXMLElementFn[T, R])],
+    values: Record[
+      String, 
+      PrimitiveType | T | (FormatXMLElementFn[T, String | T | (js.Array[String | T])])
+    ],
     opts: Options
-  ): R = js.native
+  ): String | T | (js.Array[T | String]) = js.native
   
   @JSName("formatNumberToParts")
   def formatNumberToParts_0(

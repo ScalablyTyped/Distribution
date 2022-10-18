@@ -4,7 +4,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
+import typings.reactNativePaper.libTypescriptComponentsIconMod.IconSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ trait Animated extends StObject {
   
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   var uppercase: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +45,10 @@ trait Animated extends StObject {
 }
 object Animated {
   
-  inline def apply(icon: IconSource, theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Animated = {
+  inline def apply(
+    icon: IconSource,
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
+  ): Animated = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animated]
   }
@@ -108,7 +111,7 @@ object Animated {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
     

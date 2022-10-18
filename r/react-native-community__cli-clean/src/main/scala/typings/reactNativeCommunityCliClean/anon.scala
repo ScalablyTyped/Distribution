@@ -1,6 +1,6 @@
 package typings.reactNativeCommunityCliClean
 
-import typings.reactNativeCommunityCliClean.cleanMod.Args
+import typings.reactNativeCommunityCliClean.buildCleanMod.Args
 import typings.reactNativeCommunityCliTypes.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

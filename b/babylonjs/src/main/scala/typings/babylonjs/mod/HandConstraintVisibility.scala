@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object HandConstraintVisibility extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility & Double
+  ] = js.native
   
-  /* 0 */ val ALWAYS_VISIBLE: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.ALWAYS_VISIBLE & Double = js.native
+  /* 0 */ val ALWAYS_VISIBLE: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.ALWAYS_VISIBLE & Double = js.native
   
-  /* 2 */ val GAZE_FOCUS: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.GAZE_FOCUS & Double = js.native
+  /* 2 */ val GAZE_FOCUS: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.GAZE_FOCUS & Double = js.native
   
-  /* 3 */ val PALM_AND_GAZE: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.PALM_AND_GAZE & Double = js.native
+  /* 3 */ val PALM_AND_GAZE: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.PALM_AND_GAZE & Double = js.native
   
-  /* 1 */ val PALM_UP: typings.babylonjs.handConstraintBehaviorMod.HandConstraintVisibility.PALM_UP & Double = js.native
+  /* 1 */ val PALM_UP: typings.babylonjs.behaviorsMeshesHandConstraintBehaviorMod.HandConstraintVisibility.PALM_UP & Double = js.native
 }

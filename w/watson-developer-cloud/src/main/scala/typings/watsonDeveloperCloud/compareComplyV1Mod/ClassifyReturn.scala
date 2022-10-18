@@ -53,13 +53,13 @@ object ClassifyReturn {
     
     inline def setContract_amountsUndefined: Self = StObject.set(x, "contract_amounts", js.undefined)
     
-    inline def setContract_amountsVarargs(value: ContractAmts*): Self = StObject.set(x, "contract_amounts", js.Array(value :_*))
+    inline def setContract_amountsVarargs(value: ContractAmts*): Self = StObject.set(x, "contract_amounts", js.Array(value*))
     
     inline def setContract_type(value: js.Array[ContractType]): Self = StObject.set(x, "contract_type", value.asInstanceOf[js.Any])
     
     inline def setContract_typeUndefined: Self = StObject.set(x, "contract_type", js.undefined)
     
-    inline def setContract_typeVarargs(value: ContractType*): Self = StObject.set(x, "contract_type", js.Array(value :_*))
+    inline def setContract_typeVarargs(value: ContractType*): Self = StObject.set(x, "contract_type", js.Array(value*))
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
@@ -73,13 +73,13 @@ object ClassifyReturn {
     
     inline def setEffective_datesUndefined: Self = StObject.set(x, "effective_dates", js.undefined)
     
-    inline def setEffective_datesVarargs(value: EffectiveDates*): Self = StObject.set(x, "effective_dates", js.Array(value :_*))
+    inline def setEffective_datesVarargs(value: EffectiveDates*): Self = StObject.set(x, "effective_dates", js.Array(value*))
     
     inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
@@ -93,18 +93,18 @@ object ClassifyReturn {
     
     inline def setPartiesUndefined: Self = StObject.set(x, "parties", js.undefined)
     
-    inline def setPartiesVarargs(value: Parties*): Self = StObject.set(x, "parties", js.Array(value :_*))
+    inline def setPartiesVarargs(value: Parties*): Self = StObject.set(x, "parties", js.Array(value*))
     
     inline def setTables(value: js.Array[Tables]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: Tables*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: Tables*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setTermination_dates(value: js.Array[TerminationDates]): Self = StObject.set(x, "termination_dates", value.asInstanceOf[js.Any])
     
     inline def setTermination_datesUndefined: Self = StObject.set(x, "termination_dates", js.undefined)
     
-    inline def setTermination_datesVarargs(value: TerminationDates*): Self = StObject.set(x, "termination_dates", js.Array(value :_*))
+    inline def setTermination_datesVarargs(value: TerminationDates*): Self = StObject.set(x, "termination_dates", js.Array(value*))
   }
 }

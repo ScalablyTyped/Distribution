@@ -11,10 +11,6 @@ object formatjsIntlStrings {
   inline def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
   
   @js.native
-  sealed trait auto extends StObject
-  inline def auto: auto = "auto".asInstanceOf[auto]
-  
-  @js.native
   sealed trait basic extends StObject
   inline def basic: basic = "basic".asInstanceOf[basic]
   
@@ -75,10 +71,6 @@ object formatjsIntlStrings {
   inline def language: language = "language".asInstanceOf[language]
   
   @js.native
-  sealed trait lessPrecision extends StObject
-  inline def lessPrecision: lessPrecision = "lessPrecision".asInstanceOf[lessPrecision]
-  
-  @js.native
   sealed trait long extends StObject
   inline def long: long = "long".asInstanceOf[long]
   
@@ -93,10 +85,6 @@ object formatjsIntlStrings {
   @js.native
   sealed trait medium extends StObject
   inline def medium: medium = "medium".asInstanceOf[medium]
-  
-  @js.native
-  sealed trait morePrecision extends StObject
-  inline def morePrecision: morePrecision = "morePrecision".asInstanceOf[morePrecision]
   
   @js.native
   sealed trait narrow extends StObject
@@ -145,10 +133,6 @@ object formatjsIntlStrings {
   @js.native
   sealed trait standard extends StObject
   inline def standard: standard = "standard".asInstanceOf[standard]
-  
-  @js.native
-  sealed trait stripIfInteger extends StObject
-  inline def stripIfInteger: stripIfInteger = "stripIfInteger".asInstanceOf[stripIfInteger]
   
   @js.native
   sealed trait time extends StObject

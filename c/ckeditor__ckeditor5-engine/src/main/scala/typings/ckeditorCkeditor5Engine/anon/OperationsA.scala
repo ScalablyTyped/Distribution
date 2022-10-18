@@ -1,6 +1,6 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.operationMod.Operation
+import typings.ckeditorCkeditor5Engine.srcModelOperationOperationMod.Operation
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

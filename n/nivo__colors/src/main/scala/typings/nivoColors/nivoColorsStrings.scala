@@ -1,11 +1,11 @@
 package typings.nivoColors
 
-import typings.nivoColors.categoricalMod.CategoricalColorSchemeId
-import typings.nivoColors.cyclicalMod.CyclicalColorInterpolatorId
-import typings.nivoColors.divergingMod.DivergingColorInterpolatorId
-import typings.nivoColors.divergingMod.DivergingColorSchemeId
-import typings.nivoColors.sequentialMod.SequentialColorInterpolatorId
-import typings.nivoColors.sequentialMod.SequentialColorSchemeId
+import typings.nivoColors.distTypesSchemesCategoricalMod.CategoricalColorSchemeId
+import typings.nivoColors.distTypesSchemesCyclicalMod.CyclicalColorInterpolatorId
+import typings.nivoColors.distTypesSchemesDivergingMod.DivergingColorInterpolatorId
+import typings.nivoColors.distTypesSchemesDivergingMod.DivergingColorSchemeId
+import typings.nivoColors.distTypesSchemesSequentialMod.SequentialColorInterpolatorId
+import typings.nivoColors.distTypesSchemesSequentialMod.SequentialColorSchemeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

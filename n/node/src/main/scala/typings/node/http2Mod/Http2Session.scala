@@ -1,14 +1,15 @@
 package typings.node.http2Mod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColontlsMod.TLSSocket
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.frameError
 import typings.node.nodeStrings.goaway
 import typings.node.nodeStrings.ping
 import typings.node.nodeStrings.timeout
-import typings.node.nodeTlsMod.TLSSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -140,11 +141,11 @@ trait Http2Session extends StObject {
   def goaway(): Unit = js.native
   def goaway(code: Double): Unit = js.native
   def goaway(code: Double, lastStreamID: Double): Unit = js.native
-  def goaway(code: Double, lastStreamID: Double, opaqueData: js.typedarray.ArrayBufferView): Unit = js.native
-  def goaway(code: Double, lastStreamID: Unit, opaqueData: js.typedarray.ArrayBufferView): Unit = js.native
+  def goaway(code: Double, lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
+  def goaway(code: Double, lastStreamID: Unit, opaqueData: ArrayBufferView): Unit = js.native
   def goaway(code: Unit, lastStreamID: Double): Unit = js.native
-  def goaway(code: Unit, lastStreamID: Double, opaqueData: js.typedarray.ArrayBufferView): Unit = js.native
-  def goaway(code: Unit, lastStreamID: Unit, opaqueData: js.typedarray.ArrayBufferView): Unit = js.native
+  def goaway(code: Unit, lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
+  def goaway(code: Unit, lastStreamID: Unit, opaqueData: ArrayBufferView): Unit = js.native
   
   /**
     * A prototype-less object describing the current local settings of this`Http2Session`. The local settings are local to _this_`Http2Session` instance.
@@ -263,7 +264,7 @@ trait Http2Session extends StObject {
     callback: js.Function3[/* err */ js.Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]
   ): Boolean = js.native
   def ping(
-    payload: js.typedarray.ArrayBufferView,
+    payload: ArrayBufferView,
     callback: js.Function3[/* err */ js.Error | Null, /* duration */ Double, /* payload */ Buffer, Unit]
   ): Boolean = js.native
   

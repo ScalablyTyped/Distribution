@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.columngroupMod.ColumnGroupProps
+import typings.primereact.columngroupColumngroupMod.ColumnGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ColumnGroup")
 @js.native
 open class ColumnGroup protected ()
-  extends typings.primereact.columngroupMod.ColumnGroup {
+  extends typings.primereact.columngroupColumngroupMod.ColumnGroup {
   def this(props: ColumnGroupProps) = this()
   /**
     * @deprecated

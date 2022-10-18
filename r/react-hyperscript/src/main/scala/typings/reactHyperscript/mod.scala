@@ -33,7 +33,7 @@ object mod {
   inline def apply(): ReactElement = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReactElement]
   inline def apply(children: Children): ReactElement = ^.asInstanceOf[js.Dynamic].apply(children.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   inline def apply(
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.reactHyperscript.reactHyperscriptStrings.animate, typings.reactHyperscript.reactHyperscriptStrings.circle, typings.reactHyperscript.reactHyperscriptStrings.clipPath */ Any,
     children: Children
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   // dom elements with attributes
@@ -77,21 +77,21 @@ object mod {
   inline def apply[T /* <: Element */](tag: String): DOMElement[DOMAttributes[T], T] = ^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any]).asInstanceOf[DOMElement[DOMAttributes[T], T]]
   inline def apply[T /* <: Element */](tag: String, children: Children): DOMElement[DOMAttributes[T], T] = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[DOMAttributes[T], T]]
   inline def apply[T /* <: SVGElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.reactHyperscript.reactHyperscriptStrings.animate, typings.reactHyperscript.reactHyperscriptStrings.circle, typings.reactHyperscript.reactHyperscriptStrings.clipPath */ Any,
     attributes: ClassAttributes[T] & SVGAttributes[T]
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   inline def apply[T /* <: SVGElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.reactHyperscript.reactHyperscriptStrings.animate, typings.reactHyperscript.reactHyperscriptStrings.circle, typings.reactHyperscript.reactHyperscriptStrings.clipPath */ Any,
     attributes: ClassAttributes[T] & SVGAttributes[T],
     children: Children
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   inline def apply[T /* <: SVGElement */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.reactHyperscript.reactHyperscriptStrings.animate, typings.reactHyperscript.reactHyperscriptStrings.circle, typings.reactHyperscript.reactHyperscriptStrings.clipPath */ Any,
     attributes: Unit,
     children: Children
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   inline def apply[T /* <: HTMLElement */, P /* <: HTMLAttributes[T] */](
-    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    tag: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.reactHyperscript.reactHyperscriptStrings.a, typings.reactHyperscript.reactHyperscriptStrings.abbr, typings.reactHyperscript.reactHyperscriptStrings.address */ Any,
     attributes: ClassAttributes[T] & P,
     children: Children
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]

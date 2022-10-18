@@ -1,6 +1,6 @@
 package typings.nivoCalendar.anon
 
-import typings.nivoCalendar.typesMod.BBox
+import typings.nivoCalendar.distTypesTypesMod.BBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

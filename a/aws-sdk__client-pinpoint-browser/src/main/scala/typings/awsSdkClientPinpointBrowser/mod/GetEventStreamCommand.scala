@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetEventStreamCommand")
 @js.native
 open class GetEventStreamCommand protected ()
-  extends typings.awsSdkClientPinpointBrowser.getEventStreamCommandMod.GetEventStreamCommand {
+  extends typings.awsSdkClientPinpointBrowser.commandsGetEventStreamCommandMod.GetEventStreamCommand {
   def this(input: GetEventStreamInput) = this()
 }

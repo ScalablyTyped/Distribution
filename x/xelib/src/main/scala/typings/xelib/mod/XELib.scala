@@ -1,7 +1,6 @@
 package typings.xelib.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.ImageData
 import typings.xelib.anon.Data
 import typings.xelib.xelibBooleans.`false`
@@ -1318,18 +1317,14 @@ trait XELib extends StObject {
     * @returns object constructed by mapping each value in the `paths` object
     * to an element resolved relative to `id`.
     */
-  def ResolveElements[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof P ]: xelib.xelib.Zeroable<xelib.xelib.ElementHandle>}
-    */ typings.xelib.xelibStrings.XELib & TopLevel[Any] = js.native
+  def ResolveElements[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: xelib.xelib.Zeroable<xelib.xelib.ElementHandle>} */ js.Any = js.native
   
   /**
     * Raises an exception if any element fails to resolve.
     * @returns object constructed by mapping each value in the `paths` object
     * to an element resolved relative to `id`.
     */
-  def ResolveElementsEx[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof P ]: xelib.xelib.ElementHandle}
-    */ typings.xelib.xelibStrings.XELib & TopLevel[Any] = js.native
+  def ResolveElementsEx[P /* <: StringDictionary[String] */](id: Handle, paths: P): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof P ]: xelib.xelib.ElementHandle} */ js.Any = js.native
   
   /**
     * Rotates record id by vector degrees.

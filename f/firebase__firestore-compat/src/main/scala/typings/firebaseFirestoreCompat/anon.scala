@@ -3,15 +3,18 @@ package typings.firebaseFirestoreCompat
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.firebaseFirestore.mod.AggregateField
 import typings.firebaseFirestore.mod.DocumentSnapshot
 import typings.firebaseFirestore.mod.FirestoreError
 import typings.firebaseFirestore.mod.QuerySnapshot
-import typings.firebaseFirestoreCompat.firebaseFirestoreCompatMod.firebaseAppCompatAugmentingMod.FirebaseApp
+import typings.firebaseFirestore.mod.Query_
+import typings.firebaseFirestoreCompat.appCompatMod.FirebaseApp
 import typings.firebaseFirestoreTypes.mod.FieldPath
 import typings.firebaseFirestoreTypes.mod.FieldValue
 import typings.firebaseFirestoreTypes.mod.FirebaseFirestore
 import typings.firebaseFirestoreTypes.mod.LogLevel
 import typings.firebaseFirestoreTypes.mod.Timestamp
+import typings.firebaseUtil.mod.Compat
 import typings.firebaseUtil.mod.EmulatorMockTokenOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +27,7 @@ object anon {
     
     def apply(): FirebaseFirestore = js.native
     def apply(app: FirebaseApp): FirebaseFirestore = js.native
-    def apply(app: typings.firebaseFirestoreCompat.mod.FirebaseApp): FirebaseFirestore = js.native
+    def apply(app: typings.firebaseFirestoreCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp): FirebaseFirestore = js.native
     
     var Blob: TypeofBlob = js.native
     
@@ -67,7 +70,7 @@ object anon {
   trait Call extends StObject {
     
     def apply(): FirebaseFirestore = js.native
-    def apply(app: FirebaseApp): FirebaseFirestore = js.native
+    def apply(app: typings.firebaseFirestoreCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp): FirebaseFirestore = js.native
     
     var Blob: TypeofBlob = js.native
     
@@ -134,6 +137,44 @@ object anon {
       inline def setNext(value: /* snapshot */ DocumentSnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    }
+  }
+  
+  trait Count extends StObject {
+    
+    def count(query: Compat[Query_[Any]]): js.Promise[Double]
+    
+    def delete(): js.Promise[Unit]
+  }
+  object Count {
+    
+    inline def apply(count: Compat[Query_[Any]] => js.Promise[Double], delete: () => js.Promise[Unit]): Count = {
+      val __obj = js.Dynamic.literal(count = js.Any.fromFunction1(count), delete = js.Any.fromFunction0(delete))
+      __obj.asInstanceOf[Count]
+    }
+    
+    extension [Self <: Count](x: Self) {
+      
+      inline def setCount(value: Compat[Query_[Any]] => js.Promise[Double]): Self = StObject.set(x, "count", js.Any.fromFunction1(value))
+      
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait CountAggregateField extends StObject {
+    
+    var count: AggregateField[Double]
+  }
+  object CountAggregateField {
+    
+    inline def apply(count: AggregateField[Double]): CountAggregateField = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CountAggregateField]
+    }
+    
+    extension [Self <: CountAggregateField](x: Self) {
+      
+      inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
   }
   

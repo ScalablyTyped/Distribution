@@ -47,7 +47,7 @@ import typings.amapJsApi.amapJsApiStrings.zoomchange
 import typings.amapJsApi.amapJsApiStrings.zoomend
 import typings.amapJsApi.amapJsApiStrings.zoomstart
 import typings.amapJsApi.anon.City
-import typings.amapJsApi.anon.IsIndoorPOI
+import typings.amapJsApi.anon.Id
 import typings.amapJsApi.anon.Location
 import typings.amapJsApi.anon.PartialStatus
 import typings.std.HTMLElement
@@ -643,7 +643,7 @@ object Map {
     inline def road: typings.amapJsApi.amapJsApiStrings.road = "road".asInstanceOf[typings.amapJsApi.amapJsApiStrings.road]
   }
   
-  type HotspotEvent[N /* <: String */] = Event_[N, IsIndoorPOI]
+  type HotspotEvent[N /* <: String */] = Event_[N, Id]
   
   trait Options extends StObject {
     

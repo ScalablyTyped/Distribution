@@ -1,7 +1,7 @@
 package typings.electron.Electron
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,7 +64,7 @@ trait Protocol extends StObject {
     scheme: String,
     handler: js.Function2[
       /* request */ ProtocolRequest, 
-      /* callback */ js.Function1[/* response */ ReadableStream[Any] | ProtocolResponse, Unit], 
+      /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
       Unit
     ]
   ): Boolean
@@ -211,7 +211,7 @@ trait Protocol extends StObject {
     scheme: String,
     handler: js.Function2[
       /* request */ ProtocolRequest, 
-      /* callback */ js.Function1[/* response */ ReadableStream[Any] | ProtocolResponse, Unit], 
+      /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
       Unit
     ]
   ): Boolean
@@ -268,7 +268,7 @@ object Protocol {
     ]) => Boolean,
     interceptStreamProtocol: (String, js.Function2[
       /* request */ ProtocolRequest, 
-      /* callback */ js.Function1[/* response */ ReadableStream[Any] | ProtocolResponse, Unit], 
+      /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
       Unit
     ]) => Boolean,
     interceptStringProtocol: (String, js.Function2[
@@ -296,7 +296,7 @@ object Protocol {
     registerSchemesAsPrivileged: js.Array[CustomScheme] => Unit,
     registerStreamProtocol: (String, js.Function2[
       /* request */ ProtocolRequest, 
-      /* callback */ js.Function1[/* response */ ReadableStream[Any] | ProtocolResponse, Unit], 
+      /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
       Unit
     ]) => Boolean,
     registerStringProtocol: (String, js.Function2[
@@ -340,7 +340,7 @@ object Protocol {
     inline def setInterceptStreamProtocol(
       value: (String, js.Function2[
           /* request */ ProtocolRequest, 
-          /* callback */ js.Function1[/* response */ ReadableStream[Any] | ProtocolResponse, Unit], 
+          /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
     ): Self = StObject.set(x, "interceptStreamProtocol", js.Any.fromFunction2(value))
@@ -386,7 +386,7 @@ object Protocol {
     inline def setRegisterStreamProtocol(
       value: (String, js.Function2[
           /* request */ ProtocolRequest, 
-          /* callback */ js.Function1[/* response */ ReadableStream[Any] | ProtocolResponse, Unit], 
+          /* callback */ js.Function1[/* response */ ReadableStream | ProtocolResponse, Unit], 
           Unit
         ]) => Boolean
     ): Self = StObject.set(x, "registerStreamProtocol", js.Any.fromFunction2(value))

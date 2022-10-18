@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.inputtextareaMod.InputTextareaProps
+import typings.primereact.inputtextareaInputtextareaMod.InputTextareaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "InputTextarea")
 @js.native
 open class InputTextarea protected ()
-  extends typings.primereact.inputtextareaMod.InputTextarea {
+  extends typings.primereact.inputtextareaInputtextareaMod.InputTextarea {
   def this(props: InputTextareaProps) = this()
   /**
     * @deprecated

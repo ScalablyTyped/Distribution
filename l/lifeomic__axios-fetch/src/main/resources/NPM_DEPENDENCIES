@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lifeomic/axios-fetch" : "3.0.0"
+      "@lifeomic/axios-fetch" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@lifeomic/axios-fetch" : "3.0.0"
+      "@lifeomic/axios-fetch" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

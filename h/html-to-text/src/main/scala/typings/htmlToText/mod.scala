@@ -1,10 +1,10 @@
 package typings.htmlToText
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.htmlToText.blockTextBuilderMod.BlockTextBuilder
 import typings.htmlToText.htmlToTextBooleans.`false`
 import typings.htmlToText.htmlToTextStrings.occurrence
 import typings.htmlToText.htmlToTextStrings.selectors
+import typings.htmlToText.libBlockTextBuilderMod.BlockTextBuilder
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

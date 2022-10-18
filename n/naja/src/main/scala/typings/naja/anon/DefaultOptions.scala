@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultOptions extends StObject {
   
-  var defaultOptions: typings.naja.najaMod.Options
+  var defaultOptions: typings.naja.distNajaMod.Options
 }
 object DefaultOptions {
   
-  inline def apply(defaultOptions: typings.naja.najaMod.Options): DefaultOptions = {
+  inline def apply(defaultOptions: typings.naja.distNajaMod.Options): DefaultOptions = {
     val __obj = js.Dynamic.literal(defaultOptions = defaultOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultOptions]
   }
   
   extension [Self <: DefaultOptions](x: Self) {
     
-    inline def setDefaultOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
   }
 }

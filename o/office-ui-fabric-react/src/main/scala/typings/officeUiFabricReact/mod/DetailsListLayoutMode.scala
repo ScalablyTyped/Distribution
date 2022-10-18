@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DetailsListLayoutMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode & Double
+  ] = js.native
   
-  /* 0 */ val fixedColumns: typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode.fixedColumns & Double = js.native
+  /* 0 */ val fixedColumns: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode.fixedColumns & Double = js.native
   
-  /* 1 */ val justified: typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode.justified & Double = js.native
+  /* 1 */ val justified: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode.justified & Double = js.native
 }

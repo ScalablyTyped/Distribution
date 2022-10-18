@@ -1,6 +1,6 @@
 package typings.node.childProcessMod
 
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonurlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

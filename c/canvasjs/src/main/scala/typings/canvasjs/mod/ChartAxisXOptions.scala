@@ -1,6 +1,6 @@
 package typings.canvasjs.mod
 
-import typings.canvasjs.anon.Label
+import typings.canvasjs.anon.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,7 +120,7 @@ trait ChartAxisXOptions
     * 1.labelFormatter function should return a string.
     * 2.You can use formatNumber and formatDate functions to format number/date values inside the formatter function.
     */
-  var labelFormatter: js.UndefOr[js.Function1[/* e */ Label, String]] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function1[/* e */ Axis, String]] = js.undefined
   
   /**
     * Sets the maximum width of label after which it gets wrapped or clipped depending on whether labelWrap is set to true (default) or false.
@@ -284,7 +284,7 @@ object ChartAxisXOptions {
     
     inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
     
-    inline def setLabelFormatter(value: /* e */ Label => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction1(value))
+    inline def setLabelFormatter(value: /* e */ Axis => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction1(value))
     
     inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
     

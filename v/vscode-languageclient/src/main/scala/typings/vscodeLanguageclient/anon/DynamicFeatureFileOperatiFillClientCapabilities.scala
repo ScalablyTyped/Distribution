@@ -1,13 +1,13 @@
 package typings.vscodeLanguageclient.anon
 
 import typings.vscode.mod.FileDeleteEvent
-import typings.vscodeLanguageclient.featuresMod.FeatureState
-import typings.vscodeLanguageclient.featuresMod.RegistrationData
+import typings.vscodeLanguageclient.libCommonFeaturesMod.FeatureState
+import typings.vscodeLanguageclient.libCommonFeaturesMod.RegistrationData
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotfileOperationsMod.FileOperationRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ClientCapabilities
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.InitializeParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ServerCapabilities
 import typings.vscodeLanguageserverProtocol.mod.RegistrationType
-import typings.vscodeLanguageserverProtocol.protocolFileOperationsMod.FileOperationRegistrationOptions
-import typings.vscodeLanguageserverProtocol.protocolMod.ClientCapabilities
-import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
-import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
 import typings.vscodeLanguageserverTypes.mod.LSPAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,7 +55,7 @@ trait DynamicFeatureFileOperatiFillClientCapabilities extends StObject {
   def initialize(capabilities: ServerCapabilities[LSPAny]): Unit = js.native
   def initialize(
     capabilities: ServerCapabilities[LSPAny],
-    documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
+    documentSelector: typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentSelector
   ): Unit = js.native
   
   /**
@@ -70,7 +70,7 @@ trait DynamicFeatureFileOperatiFillClientCapabilities extends StObject {
   var preInitialize: js.UndefOr[
     js.Function2[
       /* capabilities */ ServerCapabilities[LSPAny], 
-      /* documentSelector */ js.UndefOr[typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector], 
+      /* documentSelector */ js.UndefOr[typings.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentSelector], 
       Unit
     ]
   ] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__docmanager-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Document Manager Extension
@@ -10,10 +10,10 @@ JupyterLab - Document Manager Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docmanager-extension |
 | Keywords           | - |
-| # releases         | 128 |
-| # dependents       | 1 |
-| # downloads        | 1465759 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193761.66666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

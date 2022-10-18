@@ -14,9 +14,9 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@noble/hashes/utils", "Hash")
+  /* note: abstract class */ @JSImport("@noble/hashes/utils", "Hash")
   @js.native
-  abstract class Hash[T /* <: Hash[T] */] () extends StObject {
+  open class Hash[T /* <: Hash[T] */] () extends StObject {
     
     def _cloneInto(): T = js.native
     def _cloneInto(to: T): T = js.native

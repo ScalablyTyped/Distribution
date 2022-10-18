@@ -147,7 +147,7 @@ trait Ariaactivedescendant extends StObject {
   
   var `aria-level`: js.UndefOr[Double] = js.undefined
   
-  var `aria-live`: js.UndefOr[polite | assertive | off] = js.undefined
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
   var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
@@ -223,7 +223,7 @@ trait Ariaactivedescendant extends StObject {
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: Boolean
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -271,7 +271,7 @@ trait Ariaactivedescendant extends StObject {
   
   var onBeforeInputCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
+  def onBlur(event: FocusEvent[HTMLDivElement, Element]): Any
   
   var onBlurCapture: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
@@ -387,7 +387,7 @@ trait Ariaactivedescendant extends StObject {
   
   var onInvalidCapture: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  def onKeyDown(event: KeyboardEvent[HTMLDivElement]): Any
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
   var onKeyDownCapture: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
@@ -595,7 +595,7 @@ trait Ariaactivedescendant extends StObject {
   
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  var tabIndex: Double
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -609,8 +609,8 @@ trait Ariaactivedescendant extends StObject {
 }
 object Ariaactivedescendant {
   
-  inline def apply(onKeyDown: KeyboardEvent[HTMLDivElement] => Any, ref: Any => Unit, tabIndex: Double): Ariaactivedescendant = {
-    val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown), ref = js.Any.fromFunction1(ref), tabIndex = tabIndex.asInstanceOf[js.Any])
+  inline def apply(hidden: Boolean, onBlur: FocusEvent[HTMLDivElement, Element] => Any, ref: Any => Unit): Ariaactivedescendant = {
+    val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), ref = js.Any.fromFunction1(ref))
     __obj.asInstanceOf[Ariaactivedescendant]
   }
   
@@ -724,7 +724,7 @@ object Ariaactivedescendant {
     
     inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
-    inline def `setAria-live`(value: polite | assertive | off): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+    inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
@@ -878,8 +878,6 @@ object Ariaactivedescendant {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
-    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -974,13 +972,11 @@ object Ariaactivedescendant {
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
-    inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: FocusEvent[HTMLDivElement, Element] => Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurCapture(value: FocusEvent[HTMLDivElement, Element] => Unit): Self = StObject.set(x, "onBlurCapture", js.Any.fromFunction1(value))
     
     inline def setOnBlurCaptureUndefined: Self = StObject.set(x, "onBlurCapture", js.undefined)
-    
-    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     inline def setOnCanPlay(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onCanPlay", js.Any.fromFunction1(value))
     
@@ -1206,11 +1202,13 @@ object Ariaactivedescendant {
     
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
-    inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownCapture(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDownCapture", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
+    
+    inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
     inline def setOnKeyPress(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
     
@@ -1619,6 +1617,8 @@ object Ariaactivedescendant {
     inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
     
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

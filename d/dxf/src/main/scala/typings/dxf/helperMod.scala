@@ -1,7 +1,7 @@
 package typings.dxf
 
-import typings.dxf.entitiesMod.Entity
-import typings.dxf.entitiesMod.LayerGroupedEntities
+import typings.dxf.handlersEntitiesMod.Entity
+import typings.dxf.handlersEntitiesMod.LayerGroupedEntities
 import typings.dxf.informationMod.FileInfo
 import typings.dxf.informationMod.Polyline
 import typings.dxf.informationMod.Property

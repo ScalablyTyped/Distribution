@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "Client")
 @js.native
 open class Client protected ()
-  extends typings.guacamoleCommonJs.clientMod.Client {
+  extends typings.guacamoleCommonJs.libClientMod.Client {
   /**
     * @param tunnel The tunnel to use to send and receive Guacamole instructions.
     */
-  def this(tunnel: typings.guacamoleCommonJs.tunnelMod.Tunnel) = this()
+  def this(tunnel: typings.guacamoleCommonJs.libTunnelMod.Tunnel) = this()
 }

@@ -50,7 +50,7 @@ import typings.fundamentalReact.fundamentalReactStrings.tree
 import typings.fundamentalReact.fundamentalReactStrings.url
 import typings.fundamentalReact.fundamentalReactStrings.vertical
 import typings.fundamentalReact.fundamentalReactStrings.yes
-import typings.fundamentalReact.iconMod.IconGlyph
+import typings.fundamentalReact.libIconIconMod.IconGlyph
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler

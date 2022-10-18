@@ -11,9 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * http://js.cytoscape.org/#eles.closenessCentralityNormalized
   */
-/**
-  * http://js.cytoscape.org/#eles.closenessCentralityNormalized
-  */
 trait SearchClosenessCentralityNormalizedOptions extends StObject {
   
   var directed: js.UndefOr[Boolean] = js.undefined

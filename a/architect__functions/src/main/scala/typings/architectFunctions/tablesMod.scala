@@ -1,8 +1,8 @@
 package typings.architectFunctions
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.dynamodbMod.DocumentClient
-import typings.awsSdk.dynamodbMod.^
+import typings.awsSdk.clientsDynamodbMod.DocumentClient
+import typings.awsSdk.clientsDynamodbMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

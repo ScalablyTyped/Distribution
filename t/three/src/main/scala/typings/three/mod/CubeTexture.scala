@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "CubeTexture")
 @js.native
 open class CubeTexture protected ()
-  extends typings.three.threeMod.CubeTexture {
+  extends typings.three.srcThreeMod.CubeTexture {
   /**
     * @param [images=[]]
     * @param [mapping=THREE.CubeReflectionMapping]

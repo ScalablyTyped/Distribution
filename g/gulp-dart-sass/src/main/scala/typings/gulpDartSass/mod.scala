@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.gulpDartSass.anon.Duration
 import typings.gulpDartSass.gulpDartSassStrings.async
 import typings.gulpDartSass.gulpDartSassStrings.sync
+import typings.node.NodeJS.ReadWriteStream
 import typings.sass.typesOptionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -57,14 +58,14 @@ object mod extends Shortcut {
   @js.native
   trait Sass extends StObject {
     
-    def apply(): Any = js.native
-    def apply(opts: GulpSassOptions): Any = js.native
+    def apply(): ReadWriteStream = js.native
+    def apply(opts: GulpSassOptions): ReadWriteStream = js.native
     
     def logError(): Unit = js.native
     def logError(error: String): Unit = js.native
     
-    def sync(): Any = js.native
-    def sync(options: GulpSassOptions): Any = js.native
+    def sync(): ReadWriteStream = js.native
+    def sync(options: GulpSassOptions): ReadWriteStream = js.native
   }
   
   trait SassOptions

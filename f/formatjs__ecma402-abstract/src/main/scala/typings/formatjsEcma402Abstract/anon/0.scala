@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatInternal
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatInternal
 import typings.std.Intl.NumberFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

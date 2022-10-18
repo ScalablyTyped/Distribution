@@ -1,8 +1,8 @@
 package typings.ajvDraft04
 
-import typings.ajvDraft04.limitNumberMod.Comparison
-import typings.ajvDraft04.limitNumberMod.ExclusiveLimitKwd
-import typings.ajvDraft04.limitNumberMod.LimitKwd
+import typings.ajvDraft04.distVocabularyValidationLimitNumberMod.Comparison
+import typings.ajvDraft04.distVocabularyValidationLimitNumberMod.ExclusiveLimitKwd
+import typings.ajvDraft04.distVocabularyValidationLimitNumberMod.LimitKwd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,24 +10,24 @@ object anon {
   
   trait Children[T] extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    def children(value: T): ReactNode
     
-    var value: T
+    var unstable_observedBits: js.UndefOr[Double] = js.undefined
   }
   object Children {
     
-    inline def apply[T](value: T): Children[T] = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    inline def apply[T](children: T => ReactNode): Children[T] = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children[T]]
     }
     
     extension [Self <: Children[?], T](x: Self & Children[T]) {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setUnstable_observedBits(value: Double): Self = StObject.set(x, "unstable_observedBits", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setUnstable_observedBitsUndefined: Self = StObject.set(x, "unstable_observedBits", js.undefined)
     }
   }
   
@@ -143,26 +143,26 @@ object anon {
     }
   }
   
-  trait UnstableobservedBits[T] extends StObject {
+  trait Value[T] extends StObject {
     
-    def children(value: T): ReactNode
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var unstable_observedBits: js.UndefOr[Double] = js.undefined
+    var value: T
   }
-  object UnstableobservedBits {
+  object Value {
     
-    inline def apply[T](children: T => ReactNode): UnstableobservedBits[T] = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-      __obj.asInstanceOf[UnstableobservedBits[T]]
+    inline def apply[T](value: T): Value[T] = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: UnstableobservedBits[?], T](x: Self & UnstableobservedBits[T]) {
+    extension [Self <: Value[?], T](x: Self & Value[T]) {
       
-      inline def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setUnstable_observedBits(value: Double): Self = StObject.set(x, "unstable_observedBits", value.asInstanceOf[js.Any])
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setUnstable_observedBitsUndefined: Self = StObject.set(x, "unstable_observedBits", js.undefined)
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

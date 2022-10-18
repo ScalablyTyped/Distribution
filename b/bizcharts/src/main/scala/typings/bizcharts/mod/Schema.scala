@@ -1,6 +1,6 @@
 package typings.bizcharts.mod
 
-import typings.bizcharts.schemaMod.default
+import typings.bizcharts.libGeometrySchemaMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

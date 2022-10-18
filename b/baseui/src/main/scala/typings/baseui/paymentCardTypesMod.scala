@@ -1,6 +1,7 @@
 package typings.baseui
 
 import typings.baseui.baseuiStrings.any
+import typings.baseui.helpersOverridesMod.Override
 import typings.baseui.inputTypesMod.Adjoined
 import typings.baseui.inputTypesMod.InputOverrides
 import typings.baseui.inputTypesMod.InputProps
@@ -9,7 +10,6 @@ import typings.baseui.inputTypesMod.Size
 import typings.baseui.inputTypesMod.State
 import typings.baseui.inputTypesMod.StateReducer
 import typings.baseui.inputTypesMod.StateType
-import typings.baseui.overridesMod.Override
 import typings.csstype.mod.Property.Resize
 import typings.react.mod.ChangeEvent
 import typings.react.mod.FocusEvent

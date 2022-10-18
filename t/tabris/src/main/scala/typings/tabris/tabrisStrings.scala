@@ -53,26 +53,10 @@ object tabrisStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait ColorResourceData extends StObject
-  inline def ColorResourceData: ColorResourceData = "ColorResourceData".asInstanceOf[ColorResourceData]
-  
-  @js.native
   sealed trait Exclamationmark
     extends StObject
        with _ReservedResourceKeys
   inline def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
-  
-  @js.native
-  sealed trait FontResourceData extends StObject
-  inline def FontResourceData: FontResourceData = "FontResourceData".asInstanceOf[FontResourceData]
-  
-  @js.native
-  sealed trait ListenersMap extends StObject
-  inline def ListenersMap: ListenersMap = "ListenersMap".asInstanceOf[ListenersMap]
-  
-  @js.native
-  sealed trait NamedResources extends StObject
-  inline def NamedResources: NamedResources = "NamedResources".asInstanceOf[NamedResources]
   
   @js.native
   sealed trait `SHA-1` extends StObject
@@ -97,10 +81,6 @@ object tabrisStrings {
   inline def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native
-  sealed trait TextResourceData extends StObject
-  inline def TextResourceData: TextResourceData = "TextResourceData".asInstanceOf[TextResourceData]
-  
-  @js.native
   sealed trait _empty
     extends StObject
        with _ReservedResourceKeys
@@ -115,10 +95,6 @@ object tabrisStrings {
   @js.native
   sealed trait abort extends StObject
   inline def abort: abort = "abort".asInstanceOf[abort]
-  
-  @js.native
-  sealed trait absoluteBounds extends StObject
-  inline def absoluteBounds: absoluteBounds = "absoluteBounds".asInstanceOf[absoluteBounds]
   
   @js.native
   sealed trait actionColor extends StObject
@@ -321,10 +297,6 @@ object tabrisStrings {
   @js.native
   sealed trait checkedTintColor extends StObject
   inline def checkedTintColor: checkedTintColor = "checkedTintColor".asInstanceOf[checkedTintColor]
-  
-  @js.native
-  sealed trait cid extends StObject
-  inline def cid: cid = "cid".asInstanceOf[cid]
   
   @js.native
   sealed trait `class` extends StObject

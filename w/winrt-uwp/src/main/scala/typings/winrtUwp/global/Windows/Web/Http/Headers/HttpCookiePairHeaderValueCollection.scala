@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Cookie HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValueCollection")
+/* note: abstract class */ @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValueCollection")
 @js.native
-abstract class HttpCookiePairHeaderValueCollection ()
+open class HttpCookiePairHeaderValueCollection ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValueCollection

@@ -5,25 +5,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "CleanPlugin")
-@js.native
-open class CleanPlugin () extends StObject {
-  def this(options: CleanOptions) = this()
+trait CleanPlugin extends StObject {
   
   /**
   	 * Apply the plugin
   	 */
   @JSName("apply")
-  def apply(compiler: Compiler): Unit = js.native
+  def apply(compiler: Compiler): Unit
   
-  var options: Dry = js.native
+  var options: Dry
 }
 object CleanPlugin {
   
-  @JSImport("webpack", "CleanPlugin")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply(apply: Compiler => Unit, options: Dry): CleanPlugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CleanPlugin]
+  }
   
-  /* static member */
-  inline def getCompilationHooks(compilation: Compilation): CleanPluginCompilationHooks = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompilationHooks")(compilation.asInstanceOf[js.Any]).asInstanceOf[CleanPluginCompilationHooks]
+  extension [Self <: CleanPlugin](x: Self) {
+    
+    inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+    
+    inline def setOptions(value: Dry): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+  }
 }

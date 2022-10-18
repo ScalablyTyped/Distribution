@@ -1,15 +1,15 @@
 package typings.scormBrowser
 
-import typings.scormBrowser.cmidatatypesMod.CMIBoolean
-import typings.scormBrowser.cmidatatypesMod.CMIFeedbackTrueFalse
-import typings.scormBrowser.cmidatatypesMod.Char
-import typings.scormBrowser.cmivocabularyMod.CMIVocabularyCredit
-import typings.scormBrowser.cmivocabularyMod.CMIVocabularyEntry
-import typings.scormBrowser.cmivocabularyMod.CMIVocabularyExit
-import typings.scormBrowser.cmivocabularyMod.CMIVocabularyInteraction
-import typings.scormBrowser.cmivocabularyMod.CMIVocabularyMode
-import typings.scormBrowser.cmivocabularyMod.CMIVocabularyStatus
-import typings.scormBrowser.cmivocabularyMod._CMIVocabularyResult
+import typings.scormBrowser.`1Dot2CmidatatypesMod`.CMIBoolean
+import typings.scormBrowser.`1Dot2CmidatatypesMod`.CMIFeedbackTrueFalse
+import typings.scormBrowser.`1Dot2CmidatatypesMod`.Char
+import typings.scormBrowser.`1Dot2CmivocabularyMod`.CMIVocabularyCredit
+import typings.scormBrowser.`1Dot2CmivocabularyMod`.CMIVocabularyEntry
+import typings.scormBrowser.`1Dot2CmivocabularyMod`.CMIVocabularyExit
+import typings.scormBrowser.`1Dot2CmivocabularyMod`.CMIVocabularyInteraction
+import typings.scormBrowser.`1Dot2CmivocabularyMod`.CMIVocabularyMode
+import typings.scormBrowser.`1Dot2CmivocabularyMod`.CMIVocabularyStatus
+import typings.scormBrowser.`1Dot2CmivocabularyMod`._CMIVocabularyResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

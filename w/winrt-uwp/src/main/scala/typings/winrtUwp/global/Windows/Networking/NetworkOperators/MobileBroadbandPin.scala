@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the properties and methods associated with a mobile broadband PIN. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPin")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPin")
 @js.native
-abstract class MobileBroadbandPin ()
+open class MobileBroadbandPin ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandPin {
   

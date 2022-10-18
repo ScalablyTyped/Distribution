@@ -1,8 +1,8 @@
 package typings.yaml.anon
 
-import typings.yaml.directivesMod.Directives
-import typings.yaml.errorsMod.YAMLParseError
-import typings.yaml.errorsMod.YAMLWarning
+import typings.yaml.distDocDirectivesMod.Directives
+import typings.yaml.distErrorsMod.YAMLParseError
+import typings.yaml.distErrorsMod.YAMLWarning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

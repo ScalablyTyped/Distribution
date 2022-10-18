@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents and email folder. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailFolder")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailFolder")
 @js.native
-abstract class EmailFolder ()
+open class EmailFolder ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailFolder

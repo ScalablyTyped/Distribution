@@ -4,6 +4,7 @@ import typings.hapiShot.anon.Close
 import typings.hapiShot.anon.ReadonlyIncomingHttpHeade
 import typings.hapiShot.anon.Req
 import typings.hapiShot.hapiShotStrings.`1Dot1`
+import typings.node.NodeJS.Dict
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
@@ -264,7 +265,7 @@ object mod {
     /**
       * An object containing the response trailers
       */
-    var trailers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
+    var trailers: Dict[String]
   }
   object ResponseObject {
     
@@ -275,7 +276,7 @@ object mod {
       rawPayload: Buffer,
       statusCode: Double,
       statusMessage: String,
-      trailers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
+      trailers: Dict[String]
     ): ResponseObject = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], rawPayload = rawPayload.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusMessage = statusMessage.asInstanceOf[js.Any], trailers = trailers.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseObject]
@@ -295,9 +296,7 @@ object mod {
       
       inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      inline def setTrailers(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
-      ): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
+      inline def setTrailers(value: Dict[String]): Self = StObject.set(x, "trailers", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.resizeGroupBaseMod.IResizeGroupState
-import typings.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
+import typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDotbaseMod.IResizeGroupState
+import typings.officeUiFabricReact.libComponentsResizeGroupResizeGroupDottypesMod.IResizeGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

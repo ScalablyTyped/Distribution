@@ -5,15 +5,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A transform described by a position and orientation. When interpreting an
+  * XRRigidTransform the orientation is always applied prior to the position.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrrigidtransform-interface
+  */
 trait XRRigidTransform extends StObject {
   
-  var inverse: XRRigidTransform
+  val inverse: XRRigidTransform
   
-  var matrix: js.typedarray.Float32Array
+  val matrix: js.typedarray.Float32Array
   
-  var orientation: DOMPointReadOnly
+  val orientation: DOMPointReadOnly
   
-  var position: DOMPointReadOnly
+  val position: DOMPointReadOnly
 }
 object XRRigidTransform {
   

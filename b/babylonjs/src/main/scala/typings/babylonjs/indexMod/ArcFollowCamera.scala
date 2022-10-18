@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "ArcFollowCamera")
 @js.native
 open class ArcFollowCamera protected ()
-  extends typings.babylonjs.babylonjsMod.ArcFollowCamera {
+  extends typings.babylonjs.camerasIndexMod.ArcFollowCamera {
   /**
     * Instantiates a new ArcFollowCamera
     * @see https://doc.babylonjs.com/features/cameras#follow-camera
@@ -28,7 +28,7 @@ open class ArcFollowCamera protected ()
     /** The radius of the camera from its target */
   radius: Double,
     /** Define the camera target (the mesh it should follow) */
-  target: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
+  target: Nullable[typings.babylonjs.meshesAbstractMeshMod.AbstractMesh],
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

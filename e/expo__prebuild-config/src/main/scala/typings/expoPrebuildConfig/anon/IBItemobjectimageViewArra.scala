@@ -1,7 +1,7 @@
 package typings.expoPrebuildConfig.anon
 
-import typings.expoPrebuildConfig.interfaceBuilderMod.IBImageView
-import typings.expoPrebuildConfig.interfaceBuilderMod.IBLabel
+import typings.expoPrebuildConfig.buildPluginsUnversionedExpoSplashScreenInterfaceBuilderMod.IBImageView
+import typings.expoPrebuildConfig.buildPluginsUnversionedExpoSplashScreenInterfaceBuilderMod.IBLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

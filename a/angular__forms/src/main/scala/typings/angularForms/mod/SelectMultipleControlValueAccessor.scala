@@ -117,7 +117,7 @@ object SelectMultipleControlValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     SelectMultipleControlValueAccessor, 
-    String, 
+    /* select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel] */ String, 
     scala.Nothing, 
     CompareWith, 
     js.Object, 
@@ -128,7 +128,7 @@ object SelectMultipleControlValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       SelectMultipleControlValueAccessor, 
-      String, 
+      /* select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel] */ String, 
       scala.Nothing, 
       CompareWith, 
       js.Object, 

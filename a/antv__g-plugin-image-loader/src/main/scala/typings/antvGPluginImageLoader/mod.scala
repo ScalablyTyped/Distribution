@@ -11,7 +11,7 @@ object mod {
   @JSImport("@antv/g-plugin-image-loader", "ImagePool")
   @js.native
   open class ImagePool protected ()
-    extends typings.antvGPluginImageLoader.imagePoolMod.ImagePool {
+    extends typings.antvGPluginImageLoader.distImagePoolMod.ImagePool {
     def this(canvasConfig: CanvasConfig) = this()
   }
   

@@ -1,23 +1,23 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.compositemarkMod.SharedCompositeEncoding
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.projectionMod.Projection
-import typings.vegaLite.specBaseMod.ViewBackground
-import typings.vegaLite.specLayerMod.LayerSpec
-import typings.vegaLite.specMod._TopLevelSpec
-import typings.vegaLite.specUnitMod.UnitSpec
-import typings.vegaLite.srcResolveMod.Resolve
-import typings.vegaLite.titleMod.TitleParams
-import typings.vegaLite.toplevelMod.AutoSizeParams
-import typings.vegaLite.toplevelMod.AutosizeType
-import typings.vegaLite.toplevelMod.Padding
-import typings.vegaLite.toplevelMod.TopLevelParameter
-import typings.vegaLite.transformMod.Transform
-import typings.vegaLite.utilMod.Dict
+import typings.vegaLite.buildSrcCompositemarkMod.SharedCompositeEncoding
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcProjectionMod.Projection
+import typings.vegaLite.buildSrcResolveMod.Resolve
+import typings.vegaLite.buildSrcSpecBaseMod.ViewBackground
+import typings.vegaLite.buildSrcSpecLayerMod.LayerSpec
+import typings.vegaLite.buildSrcSpecMod._TopLevelSpec
+import typings.vegaLite.buildSrcSpecToplevelMod.AutoSizeParams
+import typings.vegaLite.buildSrcSpecToplevelMod.AutosizeType
+import typings.vegaLite.buildSrcSpecToplevelMod.Padding
+import typings.vegaLite.buildSrcSpecToplevelMod.TopLevelParameter
+import typings.vegaLite.buildSrcSpecUnitMod.UnitSpec
+import typings.vegaLite.buildSrcTitleMod.TitleParams
+import typings.vegaLite.buildSrcTransformMod.Transform
+import typings.vegaLite.buildSrcUtilMod.Dict
 import typings.vegaLite.vegaLiteStrings.container
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,23 +47,23 @@ trait TopLevelLayerSpecField
     *
     * __Default value:__ `"white"`
     */
-  var background: js.UndefOr[typings.vegaTypings.colorMod.Color | ExprRef | SignalRef] = js.undefined
+  var background: js.UndefOr[typings.vegaTypings.typesSpecColorMod.Color | ExprRef | SignalRef] = js.undefined
   
   /**
     * Vega-Lite configuration object. This property can only be defined at the top-level of a specification.
     */
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
+  var config: js.UndefOr[typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
   
   /**
     * An object describing the data source. Set to `null` to ignore the parent's data source. If no data is set, it is derived from the parent.
     */
-  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data | Null] = js.undefined
+  var data: js.UndefOr[typings.vegaLite.buildSrcDataMod.Data | Null] = js.undefined
   
   /**
     * A global data store for named datasets. This is a mapping from names to inline datasets.
     * This can be an array of objects or primitive values or a string. Arrays of primitive values are ingested as objects with a `data` property.
     */
-  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.undefined
+  var datasets: js.UndefOr[typings.vegaLite.buildSrcSpecToplevelMod.Datasets] = js.undefined
   
   /**
     * Description of this mark for commenting purpose.
@@ -73,7 +73,7 @@ trait TopLevelLayerSpecField
   /**
     * A shared key-value mapping between encoding channels and definition of fields in the underlying layers.
     */
-  var encoding: js.UndefOr[SharedCompositeEncoding[typings.vegaLite.channeldefMod.Field]] = js.undefined
+  var encoding: js.UndefOr[SharedCompositeEncoding[typings.vegaLite.buildSrcChanneldefMod.Field]] = js.undefined
   
   /**
     * The height of a visualization.
@@ -88,7 +88,7 @@ trait TopLevelLayerSpecField
     *
     * __See also:__ [`height`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
+  var height: js.UndefOr[Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step] = js.undefined
   
   /**
     * Layer or single view specifications to be layered.
@@ -96,7 +96,7 @@ trait TopLevelLayerSpecField
     * __Note__: Specifications inside `layer` cannot use `row` and `column` channels as layering facet specifications is not allowed. Instead, use the [facet operator](https://vega.github.io/vega-lite/docs/facet.html) and place a layer inside a facet.
     */
   var layer: js.Array[
-    LayerSpec[typings.vegaLite.channeldefMod.Field] | UnitSpec[typings.vegaLite.channeldefMod.Field]
+    LayerSpec[typings.vegaLite.buildSrcChanneldefMod.Field] | UnitSpec[typings.vegaLite.buildSrcChanneldefMod.Field]
   ]
   
   /**
@@ -164,13 +164,13 @@ trait TopLevelLayerSpecField
     *
     * __See also:__ [`width`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
+  var width: js.UndefOr[Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step] = js.undefined
 }
 object TopLevelLayerSpecField {
   
   inline def apply(
     layer: js.Array[
-      LayerSpec[typings.vegaLite.channeldefMod.Field] | UnitSpec[typings.vegaLite.channeldefMod.Field]
+      LayerSpec[typings.vegaLite.buildSrcChanneldefMod.Field] | UnitSpec[typings.vegaLite.buildSrcChanneldefMod.Field]
     ]
   ): TopLevelLayerSpecField = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
@@ -187,21 +187,21 @@ object TopLevelLayerSpecField {
     
     inline def setAutosizeUndefined: Self = StObject.set(x, "autosize", js.undefined)
     
-    inline def setBackground(value: typings.vegaTypings.colorMod.Color | ExprRef | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: typings.vegaTypings.typesSpecColorMod.Color | ExprRef | SignalRef): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setData(value: typings.vegaLite.srcDataMod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typings.vegaLite.buildSrcDataMod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDatasets(value: typings.vegaLite.toplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: typings.vegaLite.buildSrcSpecToplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
@@ -209,22 +209,22 @@ object TopLevelLayerSpecField {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setEncoding(value: SharedCompositeEncoding[typings.vegaLite.channeldefMod.Field]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: SharedCompositeEncoding[typings.vegaLite.buildSrcChanneldefMod.Field]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setHeight(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setLayer(
       value: js.Array[
-          LayerSpec[typings.vegaLite.channeldefMod.Field] | UnitSpec[typings.vegaLite.channeldefMod.Field]
+          LayerSpec[typings.vegaLite.buildSrcChanneldefMod.Field] | UnitSpec[typings.vegaLite.buildSrcChanneldefMod.Field]
         ]
     ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLayerVarargs(
-      value: (LayerSpec[typings.vegaLite.channeldefMod.Field] | UnitSpec[typings.vegaLite.channeldefMod.Field])*
+      value: (LayerSpec[typings.vegaLite.buildSrcChanneldefMod.Field] | UnitSpec[typings.vegaLite.buildSrcChanneldefMod.Field])*
     ): Self = StObject.set(x, "layer", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -269,7 +269,7 @@ object TopLevelLayerSpecField {
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    inline def setWidth(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

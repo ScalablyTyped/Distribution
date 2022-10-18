@@ -6,19 +6,18 @@ import typings.egg.anon.FnCall
 import typings.koa.mod.BaseContext
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.urlMod.URL_
-import typings.urllib.mod.Callback
-import typings.urllib.mod.HttpClientResponse
-import typings.urllib.mod.RequestOptions2
+import typings.urllib.srcEsmRequestMod.RequestOptions
+import typings.urllib.srcEsmRequestMod.RequestURL
+import typings.urllib.srcEsmResponseMod.HttpClientResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context
+trait Context[ResponseBodyT]
   extends StObject
      with BaseContext
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   def __(key: String, values: String*): String = js.native
   
@@ -34,6 +33,9 @@ trait Context
   
   var app: Application = js.native
   
+  @JSName("body")
+  var body_Context: ResponseBodyT = js.native
+  
   // The new 'cookies' instead of Koa's.
   var cookies: typings.eggCookies.mod.^ = js.native
   
@@ -42,49 +44,13 @@ trait Context
     * Keep the same api with httpclient.request(url, args).
     * See https://github.com/node-modules/urllib#api-doc for more details.
     */
-  def curl[T](url: String): js.Promise[HttpClientResponse[T]] = js.native
+  def curl(url: RequestURL): js.Promise[HttpClientResponse] = js.native
   /**
     * http request helper base on httpclient, it will auto save httpclient log.
     * Keep the same api with httpclient.request(url, args).
     * See https://github.com/node-modules/urllib#api-doc for more details.
     */
-  def curl[T](url: String, callback: Callback[T]): Unit = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: String, options: RequestOptions2): js.Promise[HttpClientResponse[T]] = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: String, options: RequestOptions2, callback: Callback[T]): Unit = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: URL_): js.Promise[HttpClientResponse[T]] = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: URL_, callback: Callback[T]): Unit = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: URL_, options: RequestOptions2): js.Promise[HttpClientResponse[T]] = js.native
-  /**
-    * http request helper base on httpclient, it will auto save httpclient log.
-    * Keep the same api with httpclient.request(url, args).
-    * See https://github.com/node-modules/urllib#api-doc for more details.
-    */
-  def curl[T](url: URL_, options: RequestOptions2, callback: Callback[T]): Unit = js.native
+  def curl(url: RequestURL, options: RequestOptions): js.Promise[HttpClientResponse] = js.native
   /**
     * http request helper base on httpclient, it will auto save httpclient log.
     * Keep the same api with httpclient.request(url, args).
@@ -118,7 +84,7 @@ trait Context
     * }
     * ```
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * get upload file stream
@@ -210,7 +176,7 @@ trait Context
     * }
     * ```
     */
-  var meta: js.Any = js.native
+  var meta: Any = js.native
   
   var originalUrl: String = js.native
   
@@ -242,12 +208,23 @@ trait Context
     *
     * The number of every page, `GET /api/users?per_page=20` => `20`
     */
-  var params: js.Any = js.native
+  var params: Any = js.native
   
   /**
-    * @see Request#accept
+    * Request start timer using `performance.now()`
+    */
+  var performanceStarttime: js.UndefOr[Double] = js.native
+  
+  /**
+    * @see Request#queries
     */
   var queries: PlainObject[js.Array[String]] = js.native
+  
+  /**
+    * @see Request#query
+    */
+  @JSName("query")
+  var query_Context: PlainObject[String] = js.native
   
   /**
     * @see Response#realStatus
@@ -259,11 +236,11 @@ trait Context
   
   var request: Request = js.native
   
-  var res: ServerResponse = js.native
+  var res: ServerResponse[IncomingMessage] = js.native
   
   var respond: js.UndefOr[Boolean] = js.native
   
-  var response: Response = js.native
+  var response: Response[ResponseBodyT] = js.native
   
   var service: IService = js.native
   
@@ -275,5 +252,5 @@ trait Context
   /**
     * alias to {@link locals}, compatible with koa that use this variable
     */
-  var state: js.Any = js.native
+  var state: Any = js.native
 }

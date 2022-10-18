@@ -20,7 +20,7 @@ object TrajectoryClassifier {
     * @param json JSON serialization
     * @returns deserialized TrajectorySet
     */
-  inline def Deserialize(json: String): typings.babylonjs.trajectoryClassifierMod.TrajectoryClassifier = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.trajectoryClassifierMod.TrajectoryClassifier]
+  inline def Deserialize(json: String): typings.babylonjs.miscTrajectoryClassifierMod.TrajectoryClassifier = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.miscTrajectoryClassifierMod.TrajectoryClassifier]
   
   /**
     * Initialize a new empty TrajectorySet with auto-generated Alphabets.
@@ -28,5 +28,5 @@ object TrajectoryClassifier {
     * sets. Better version later, probably eliminating this one.
     * @returns auto-generated TrajectorySet
     */
-  inline def Generate(): typings.babylonjs.trajectoryClassifierMod.TrajectoryClassifier = ^.asInstanceOf[js.Dynamic].applyDynamic("Generate")().asInstanceOf[typings.babylonjs.trajectoryClassifierMod.TrajectoryClassifier]
+  inline def Generate(): typings.babylonjs.miscTrajectoryClassifierMod.TrajectoryClassifier = ^.asInstanceOf[js.Dynamic].applyDynamic("Generate")().asInstanceOf[typings.babylonjs.miscTrajectoryClassifierMod.TrajectoryClassifier]
 }

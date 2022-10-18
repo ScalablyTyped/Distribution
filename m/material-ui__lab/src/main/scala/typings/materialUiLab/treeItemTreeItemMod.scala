@@ -1,6 +1,6 @@
 package typings.materialUiLab
 
-import typings.materialUiCore.transitionMod.TransitionProps
+import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.materialUiLab.anon.PartialClassNameMapTreeIt
 import typings.materialUiLab.materialUiLabStrings.`additions removals`
 import typings.materialUiLab.materialUiLabStrings.`additions text`
@@ -143,7 +143,7 @@ object treeItemTreeItemMod {
     /**
       * Props applied to the [`Transition`](http://reactcommunity.org/react-transition-group/transition#Transition-props) element.
       */
-    var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.undefined
+    var TransitionProps: js.UndefOr[typings.materialUiCore.transitionsTransitionMod.TransitionProps] = js.undefined
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -513,7 +513,9 @@ object treeItemTreeItemMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLLIElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
@@ -1232,11 +1234,9 @@ object treeItemTreeItemMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.HTMLAttributes<std.HTMLLIElement> extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       

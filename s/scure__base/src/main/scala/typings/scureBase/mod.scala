@@ -1,6 +1,5 @@
 package typings.scureBase
 
-import org.scalablytyped.runtime.TopLevel
 import typings.scureBase.anon.FnCall
 import typings.scureBase.scureBaseBooleans.`false`
 import org.scalablytyped.runtime.StObject
@@ -227,9 +226,15 @@ object mod {
   
   type Alphabet = js.Array[String] | String
   
-  type AsChain[C /* <: Chain */, Rest] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof C ]: @scure/base.@scure/base.Coder<@scure/base.@scure/base.Input<C[K]>, @scure/base.@scure/base.Input<K extends keyof Rest? Rest[K] : any>>}
-    */ typings.scureBase.scureBaseStrings.AsChain & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof C ]: @scure/base.@scure/base.Coder<@scure/base.@scure/base.Input<C[K]>, @scure/base.@scure/base.Input<K extends keyof Rest? Rest[K] : any>>}
+    }}}
+    */
+  @js.native
+  trait AsChain[C /* <: Chain */, Rest] extends StObject
   
   trait Bech32Decoded extends StObject {
     
@@ -327,13 +332,53 @@ object mod {
   */
   trait CoderType extends StObject
   
-  type First[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [infer U, ...std.Array<any>] ? U : never
+    }}}
+    */
+  @js.native
+  trait First[T] extends StObject
   
-  type Input[F] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    F extends @scure/base.@scure/base.Coder<infer T, any> ? T : never
+    }}}
+    */
+  @js.native
+  trait Input[F] extends StObject
   
-  type Last[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [...std.Array<any>, infer U] ? U : never
+    }}}
+    */
+  @js.native
+  trait Last[T] extends StObject
   
-  type Output[F] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    F extends @scure/base.@scure/base.Coder<any, infer T> ? T : never
+    }}}
+    */
+  @js.native
+  trait Output[F] extends StObject
   
-  type Tail[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends [any, ...infer U] ? U : never
+    }}}
+    */
+  @js.native
+  trait Tail[T] extends StObject
 }

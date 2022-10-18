@@ -33,9 +33,9 @@ object Transcoding {
   }
   
   /** Represents an asynchronous media transcode deferral operation which can be used to start the transcode operation. */
-  @JSGlobal("Windows.Media.Transcoding.PrepareTranscodeResult")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Transcoding.PrepareTranscodeResult")
   @js.native
-  abstract class PrepareTranscodeResult ()
+  open class PrepareTranscodeResult ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Transcoding.PrepareTranscodeResult {
     

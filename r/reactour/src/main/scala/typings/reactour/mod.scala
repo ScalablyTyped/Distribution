@@ -93,7 +93,7 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'span' extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ trait BadgeProps extends StObject {
+  - Dropped 'span' extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<P> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ trait BadgeProps extends StObject {
     
     var accentColor: js.UndefOr[String] = js.undefined
   }
@@ -175,7 +175,7 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'button' extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'button'>> : react.react.PropsWithRef<react.react.ComponentProps<'button'>> */ trait DotProps extends StObject {
+  - Dropped 'button' extends new (props : infer P): react.react.Component<any, any, any> ? react.react.PropsWithoutRef<P> & react.react.RefAttributes<std.InstanceType<'button'>> : react.react.PropsWithRef<react.react.ComponentProps<'button'>> */ trait DotProps extends StObject {
     
     var accentColor: js.UndefOr[String] = js.undefined
     

@@ -1,6 +1,6 @@
 package typings.jupyterlabFileeditor
 
-import typings.jupyterlabFileeditor.widgetMod.FileEditor.IOptions
+import typings.jupyterlabFileeditor.libWidgetMod.FileEditor.IOptions
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("@jupyterlab/fileeditor", "FileEditor")
   @js.native
-  class FileEditor protected ()
-    extends typings.jupyterlabFileeditor.widgetMod.FileEditor {
+  open class FileEditor protected ()
+    extends typings.jupyterlabFileeditor.libWidgetMod.FileEditor {
     /**
       * Construct a new editor widget.
       */
@@ -20,8 +20,8 @@ object mod {
   
   @JSImport("@jupyterlab/fileeditor", "FileEditorCodeWrapper")
   @js.native
-  class FileEditorCodeWrapper protected ()
-    extends typings.jupyterlabFileeditor.widgetMod.FileEditorCodeWrapper {
+  open class FileEditorCodeWrapper protected ()
+    extends typings.jupyterlabFileeditor.libWidgetMod.FileEditorCodeWrapper {
     /**
       * Construct a new editor widget.
       */
@@ -30,26 +30,26 @@ object mod {
   
   @JSImport("@jupyterlab/fileeditor", "FileEditorFactory")
   @js.native
-  class FileEditorFactory protected ()
-    extends typings.jupyterlabFileeditor.widgetMod.FileEditorFactory {
+  open class FileEditorFactory protected ()
+    extends typings.jupyterlabFileeditor.libWidgetMod.FileEditorFactory {
     /**
       * Construct a new editor widget factory.
       */
-    def this(options: typings.jupyterlabFileeditor.widgetMod.FileEditorFactory.IOptions) = this()
+    def this(options: typings.jupyterlabFileeditor.libWidgetMod.FileEditorFactory.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/fileeditor", "IEditorTracker")
   @js.native
-  val IEditorTracker: Token[typings.jupyterlabFileeditor.tokensMod.IEditorTracker] = js.native
+  val IEditorTracker: Token[typings.jupyterlabFileeditor.libTokensMod.IEditorTracker] = js.native
   
   @JSImport("@jupyterlab/fileeditor", "TabSpaceStatus")
   @js.native
-  class TabSpaceStatus protected ()
-    extends typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus {
+  open class TabSpaceStatus protected ()
+    extends typings.jupyterlabFileeditor.libTabspacestatusMod.TabSpaceStatus {
     /**
       * Create a new tab/space status item.
       */
-    def this(options: typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.IOptions) = this()
+    def this(options: typings.jupyterlabFileeditor.libTabspacestatusMod.TabSpaceStatus.IOptions) = this()
   }
   object TabSpaceStatus {
     
@@ -58,7 +58,7 @@ object mod {
       */
     @JSImport("@jupyterlab/fileeditor", "TabSpaceStatus.Model")
     @js.native
-    class Model ()
-      extends typings.jupyterlabFileeditor.tabspacestatusMod.TabSpaceStatus.Model
+    open class Model ()
+      extends typings.jupyterlabFileeditor.libTabspacestatusMod.TabSpaceStatus.Model
   }
 }

@@ -1,9 +1,9 @@
 package typings.redisSearch.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisSearch.commandsMod.SearchReply
-import typings.redisSearch.searchMod.SearchOptions
-import typings.redisSearch.searchMod.SearchRawReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisSearch.distCommandsMod.SearchReply
+import typings.redisSearch.distCommandsSearchMod.SearchOptions
+import typings.redisSearch.distCommandsSearchMod.SearchRawReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

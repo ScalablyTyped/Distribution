@@ -11,6 +11,8 @@ trait DiameterZ extends StObject {
   
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
+  var dedupTopBottomIndices: js.UndefOr[Boolean] = js.undefined
+  
   var diameter: js.UndefOr[Double] = js.undefined
   
   var diameterX: js.UndefOr[Double] = js.undefined
@@ -26,8 +28,6 @@ trait DiameterZ extends StObject {
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
   var slice: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object DiameterZ {
   
@@ -45,6 +45,10 @@ object DiameterZ {
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
+    
+    inline def setDedupTopBottomIndices(value: Boolean): Self = StObject.set(x, "dedupTopBottomIndices", value.asInstanceOf[js.Any])
+    
+    inline def setDedupTopBottomIndicesUndefined: Self = StObject.set(x, "dedupTopBottomIndices", js.undefined)
     
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     
@@ -77,9 +81,5 @@ object DiameterZ {
     inline def setSlice(value: Double): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
     inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

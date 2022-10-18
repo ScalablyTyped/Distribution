@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRRenderState")
+/* note: abstract class */ @JSGlobal("XRRenderState")
 @js.native
-abstract class XRRenderState ()
+open class XRRenderState ()
   extends StObject
      with typings.webxr.XRRenderState {
   

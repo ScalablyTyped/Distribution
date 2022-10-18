@@ -1,7 +1,7 @@
 package typings.googleGax.mod
 
-import typings.proto3JsonSerializer.toproto3jsonMod.ToProto3JSONOptions
-import typings.proto3JsonSerializer.typesMod.JSONValue
+import typings.proto3JsonSerializer.buildSrcToproto3jsonMod.ToProto3JSONOptions
+import typings.proto3JsonSerializer.buildSrcTypesMod.JSONValue
 import typings.protobufjs.mod.Message
 import typings.protobufjs.mod.Type
 import org.scalablytyped.runtime.StObject

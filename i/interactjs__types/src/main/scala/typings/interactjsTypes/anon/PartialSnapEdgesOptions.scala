@@ -1,10 +1,10 @@
 package typings.interactjsTypes.anon
 
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.Point
+import typings.interactjsTypes.coreTypesMod.RectResolvable
 import typings.interactjsTypes.interactjsTypesStrings.startCoords
-import typings.interactjsTypes.snapPointerMod.SnapTarget
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.Point
-import typings.interactjsTypes.typesMod.RectResolvable
+import typings.interactjsTypes.modifiersSnapPointerMod.SnapTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait PartialSnapEdgesOptions extends StObject {
   var endOnly: js.UndefOr[Boolean] = js.undefined
   
   var offset: js.UndefOr[
-    Point | RectResolvable[js.Array[typings.interactjsTypes.interactionMod.Interaction[ActionName]]] | startCoords | Null
+    Point | RectResolvable[js.Array[typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]] | startCoords | Null
   ] = js.undefined
   
   var range: js.UndefOr[Double] = js.undefined
@@ -42,11 +42,11 @@ object PartialSnapEdgesOptions {
     inline def setEndOnlyUndefined: Self = StObject.set(x, "endOnly", js.undefined)
     
     inline def setOffset(
-      value: Point | RectResolvable[js.Array[typings.interactjsTypes.interactionMod.Interaction[ActionName]]] | startCoords
+      value: Point | RectResolvable[js.Array[typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]] | startCoords
     ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetFunction1(
-      value: js.Array[typings.interactjsTypes.interactionMod.Interaction[ActionName]] => typings.interactjsTypes.typesMod.Rect | typings.interactjsTypes.typesMod.Element
+      value: js.Array[typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] => typings.interactjsTypes.coreTypesMod.Rect | typings.interactjsTypes.coreTypesMod.Element
     ): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     
     inline def setOffsetNull: Self = StObject.set(x, "offset", null)

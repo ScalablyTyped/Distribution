@@ -1,7 +1,7 @@
 package typings.fastPrintf
 
-import typings.fastPrintf.createPrintfMod.Configuration
-import typings.fastPrintf.createPrintfMod.Printf
+import typings.fastPrintf.distSrcCreatePrintfMod.Configuration
+import typings.fastPrintf.distSrcCreatePrintfMod.Printf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

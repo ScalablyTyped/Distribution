@@ -1,7 +1,7 @@
 package typings.ismobilejs
 
-import typings.ismobilejs.isMobileMod.IsMobileParameter
-import typings.ismobilejs.isMobileMod.isMobileResult
+import typings.ismobilejs.typesIsMobileMod.IsMobileParameter
+import typings.ismobilejs.typesIsMobileMod.isMobileResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

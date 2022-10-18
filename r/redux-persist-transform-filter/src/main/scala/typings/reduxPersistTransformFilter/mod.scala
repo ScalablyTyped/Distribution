@@ -1,6 +1,6 @@
 package typings.reduxPersistTransformFilter
 
-import typings.reduxPersist.typesMod.Transform
+import typings.reduxPersist.esTypesMod.Transform
 import typings.reduxPersistTransformFilter.anon.FilterFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

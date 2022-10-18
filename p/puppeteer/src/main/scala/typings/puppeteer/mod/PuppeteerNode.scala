@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class PuppeteerNode () extends Puppeteer {
   
   /**
+    * @deprecated Import {@link BrowserFetcher} directly and use the constructor.
+    *
     * @param options - Set of configurable options to specify the settings of the
     * BrowserFetcher.
     * @returns A new BrowserFetcher instance.

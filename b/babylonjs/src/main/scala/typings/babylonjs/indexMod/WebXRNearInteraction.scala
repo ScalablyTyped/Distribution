@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.webXRNearInteractionMod.IWebXRNearInteractionOptions
+import typings.babylonjs.xRFeaturesWebXRNearInteractionMod.IWebXRNearInteractionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ open class WebXRNearInteraction protected ()
     * @param _options read-only options to be used in this module
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     _options: IWebXRNearInteractionOptions
   ) = this()
 }
@@ -41,14 +41,14 @@ object WebXRNearInteraction {
     * @returns the picking info
     */
   inline def PickMeshWithSphere(
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    sphere: typings.babylonjs.boundingSphereMod.BoundingSphere
-  ): typings.babylonjs.pickingInfoMod.PickingInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("PickMeshWithSphere")(mesh.asInstanceOf[js.Any], sphere.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pickingInfoMod.PickingInfo]
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+    sphere: typings.babylonjs.cullingBoundingSphereMod.BoundingSphere
+  ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("PickMeshWithSphere")(mesh.asInstanceOf[js.Any], sphere.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]
   inline def PickMeshWithSphere(
-    mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
-    sphere: typings.babylonjs.boundingSphereMod.BoundingSphere,
+    mesh: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
+    sphere: typings.babylonjs.cullingBoundingSphereMod.BoundingSphere,
     skipBoundingInfo: Boolean
-  ): typings.babylonjs.pickingInfoMod.PickingInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("PickMeshWithSphere")(mesh.asInstanceOf[js.Any], sphere.asInstanceOf[js.Any], skipBoundingInfo.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pickingInfoMod.PickingInfo]
+  ): typings.babylonjs.collisionsPickingInfoMod.PickingInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("PickMeshWithSphere")(mesh.asInstanceOf[js.Any], sphere.asInstanceOf[js.Any], skipBoundingInfo.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.collisionsPickingInfoMod.PickingInfo]
   
   /**
     * The (Babylon) version of this module.

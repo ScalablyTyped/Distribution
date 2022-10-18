@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "InvalidSchematicsNameException")
 @js.native
 open class InvalidSchematicsNameException protected ()
-  extends typings.angularDevkitSchematics.engineMod.InvalidSchematicsNameException {
+  extends typings.angularDevkitSchematics.srcEngineMod.InvalidSchematicsNameException {
   def this(name: String) = this()
 }

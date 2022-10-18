@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Tags")
 @js.native
 open class Tags ()
-  extends typings.babylonjs.legacyMod.Tags
+  extends typings.babylonjs.legacyLegacyMod.Tags
 /* static members */
 object Tags {
   

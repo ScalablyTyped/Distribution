@@ -1,8 +1,8 @@
 package typings.awsLambdaHttpServer
 
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyCallback
-import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEvent
 import typings.awsLambda.handlerMod.Context
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyCallback
+import typings.awsLambda.triggerApiGatewayProxyMod.APIGatewayProxyEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

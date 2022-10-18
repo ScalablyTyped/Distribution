@@ -1,7 +1,7 @@
 package typings.luaparse
 
-import typings.luaparse.astMod.Identifier
-import typings.luaparse.astMod.Node
+import typings.luaparse.libAstMod.Identifier
+import typings.luaparse.libAstMod.Node
 import typings.luaparse.luaparseBooleans.`false`
 import typings.luaparse.luaparseBooleans.`true`
 import typings.luaparse.luaparseStrings.LuaJIT

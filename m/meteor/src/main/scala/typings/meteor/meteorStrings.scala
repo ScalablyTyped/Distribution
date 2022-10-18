@@ -17,16 +17,8 @@ object meteorStrings {
   inline def ALPNProtocols: ALPNProtocols = "ALPNProtocols".asInstanceOf[ALPNProtocols]
   
   @js.native
-  sealed trait ArraysOrEach extends StObject
-  inline def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]
-  
-  @js.native
   sealed trait DEFAULT extends StObject
   inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  
-  @js.native
-  sealed trait ElementsOf extends StObject
-  inline def ElementsOf: ElementsOf = "ElementsOf".asInstanceOf[ElementsOf]
   
   @js.native
   sealed trait GSSAPI extends StObject
@@ -65,20 +57,8 @@ object meteorStrings {
   inline def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
   
   @js.native
-  sealed trait PatternMatch extends StObject
-  inline def PatternMatch: PatternMatch = "PatternMatch".asInstanceOf[PatternMatch]
-  
-  @js.native
   sealed trait PossiblePrimary extends StObject
   inline def PossiblePrimary: PossiblePrimary = "PossiblePrimary".asInstanceOf[PossiblePrimary]
-  
-  @js.native
-  sealed trait PushModifier extends StObject
-  inline def PushModifier: PushModifier = "PushModifier".asInstanceOf[PushModifier]
-  
-  @js.native
-  sealed trait Query extends StObject
-  inline def Query: Query = "Query".asInstanceOf[Query]
   
   @js.native
   sealed trait RSArbiter extends StObject
@@ -139,10 +119,6 @@ object meteorStrings {
   @js.native
   sealed trait Standalone extends StObject
   inline def Standalone: Standalone = "Standalone".asInstanceOf[Standalone]
-  
-  @js.native
-  sealed trait TemplateStaticTyped extends StObject
-  inline def TemplateStaticTyped: TemplateStaticTyped = "TemplateStaticTyped".asInstanceOf[TemplateStaticTyped]
   
   @js.native
   sealed trait TransientTransactionError extends StObject

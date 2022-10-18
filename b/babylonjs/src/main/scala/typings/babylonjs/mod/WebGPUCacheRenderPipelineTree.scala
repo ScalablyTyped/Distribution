@@ -2,7 +2,7 @@ package typings.babylonjs.mod
 
 import typings.babylonjs.GPUDevice
 import typings.babylonjs.anon.NodeCount
-import typings.babylonjs.webgpuCacheRenderPipelineTreeMod.NodeState
+import typings.babylonjs.enginesWebGPUWebgpuCacheRenderPipelineTreeMod.NodeState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebGPUCacheRenderPipelineTree")
 @js.native
 open class WebGPUCacheRenderPipelineTree protected ()
-  extends typings.babylonjs.legacyMod.WebGPUCacheRenderPipelineTree {
+  extends typings.babylonjs.legacyLegacyMod.WebGPUCacheRenderPipelineTree {
   def this(
     device: GPUDevice,
-    emptyVertexBuffer: typings.babylonjs.bufferMod.VertexBuffer,
+    emptyVertexBuffer: typings.babylonjs.buffersBufferMod.VertexBuffer,
     useTextureStage: Boolean
   ) = this()
 }

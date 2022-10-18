@@ -61,7 +61,5 @@ object FullProperty {
     inline def setValue(value: ValueType[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    
-    inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

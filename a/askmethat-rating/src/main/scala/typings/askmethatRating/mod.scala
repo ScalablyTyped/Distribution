@@ -1,6 +1,6 @@
 package typings.askmethatRating
 
-import typings.askmethatRating.amtRatingPopoverMod.AskmethatRatingPopoverOptions
+import typings.askmethatRating.distAmtRatingPopoverMod.AskmethatRatingPopoverOptions
 import typings.std.HTMLDivElement
 import typings.std.MutationRecord
 import org.scalablytyped.runtime.StObject

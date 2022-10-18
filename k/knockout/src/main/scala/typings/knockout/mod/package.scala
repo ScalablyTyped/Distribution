@@ -1,7 +1,6 @@
 package typings.knockout.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.knockout.knockoutStrings.ignoreTargetNode
 import typings.knockout.knockoutStrings.replaceChildren
 import typings.knockout.knockoutStrings.replaceNode
@@ -146,10 +145,6 @@ inline def when[T, TTarget](
   context: TTarget
 ): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Subscription]
 
-type AsExtenders[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: knockout.knockout.Extender<knockout.knockout.Subscribable<any>, T[P]>}
-  */ typings.knockout.knockoutStrings.AsExtenders & TopLevel[T]
-
 type BindingAccessors = StringDictionary[js.Function]
 
 type BindingContextExtendCallback[T] = js.Function3[
@@ -172,8 +167,6 @@ type ComputedWriteFunction[T, TTarget] = js.ThisFunction1[/* this */ TTarget, /*
 
 type Extender[T /* <: Subscribable_[Any] */, O] = js.Function2[/* target */ T, /* options */ O, T]
 
-type Flatten[T] = T
-
 type MaybeComputed[T] = T | Computed_[T]
 
 type MaybeObservable[T] = T | Observable_[T]
@@ -193,9 +186,3 @@ js.Function0[Unit]]
 type Subscribable_[T] = SubscribableFunctions[T]
 
 type SubscriptionCallback[T, TTarget] = js.ThisFunction1[/* this */ TTarget, /* val */ T, Unit]
-
-//#endregion
-//#region subscribables/mappingHelpers.js
-type Unwrapped[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: knockout.knockout.Unwrapped<T[P]>}
-  */ typings.knockout.knockoutStrings.Unwrapped & TopLevel[T])

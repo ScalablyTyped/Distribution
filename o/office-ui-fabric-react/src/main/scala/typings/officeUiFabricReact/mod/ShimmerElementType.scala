@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShimmerElementType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType & Double
+  ] = js.native
   
-  /* 2 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.circle & Double = js.native
+  /* 2 */ val circle: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.circle & Double = js.native
   
-  /* 3 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.gap & Double = js.native
+  /* 3 */ val gap: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.gap & Double = js.native
   
-  /* 1 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.line & Double = js.native
+  /* 1 */ val line: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.line & Double = js.native
 }

@@ -1,7 +1,6 @@
 package typings.baidumapWebSdk.global.BMap
 
 import typings.baidumapWebSdk.BMap.PointCollectionOption
-import typings.baidumapWebSdk.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +17,13 @@ open class PointCollection protected ()
   override def clear(): Unit = js.native
   
   /* CompleteClass */
-  override def onclick(event: Type): Unit = js.native
+  override def onclick(event: typings.baidumapWebSdk.anon.Point): Unit = js.native
   
   /* CompleteClass */
-  override def onmouseout(event: Type): Unit = js.native
+  override def onmouseout(event: typings.baidumapWebSdk.anon.Point): Unit = js.native
   
   /* CompleteClass */
-  override def onmouseover(event: Type): Unit = js.native
+  override def onmouseover(event: typings.baidumapWebSdk.anon.Point): Unit = js.native
   
   /* CompleteClass */
   override def setPoints(points: js.Array[typings.baidumapWebSdk.BMap.Point]): Unit = js.native

@@ -1,9 +1,9 @@
 package typings.cypress.mochaMod
 
 import typings.cypress.Mocha.Test
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialize a new `Test` with the given `title` and callback `fn`.
@@ -12,5 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Test")
 @js.native
-class Test_ () extends Test
-
+open class Test_ ()
+  extends StObject
+     with Test

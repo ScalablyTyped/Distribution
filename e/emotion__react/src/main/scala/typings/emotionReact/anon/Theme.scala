@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Theme extends StObject {
   
-  var theme: js.UndefOr[typings.emotionReact.emotionReactMod.Theme] = js.undefined
+  var theme: js.UndefOr[typings.emotionReact.mod.Theme] = js.undefined
 }
 object Theme {
   
@@ -17,7 +17,7 @@ object Theme {
   
   extension [Self <: Theme](x: Self) {
     
-    inline def setTheme(value: typings.emotionReact.emotionReactMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

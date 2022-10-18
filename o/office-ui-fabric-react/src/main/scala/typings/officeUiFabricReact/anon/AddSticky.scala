@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.anon
 
-import typings.officeUiFabricReact.stickyStickyMod.Sticky
+import typings.officeUiFabricReact.libComponentsStickyStickyMod.Sticky
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

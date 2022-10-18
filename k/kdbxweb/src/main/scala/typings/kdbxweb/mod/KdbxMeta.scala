@@ -1,6 +1,6 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.xmlUtilsMod.global.Node
+import typings.kdbxweb.distTypesUtilsXmlUtilsMod.global.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxMeta")
 @js.native
 open class KdbxMeta ()
-  extends typings.kdbxweb.kdbxMetaMod.KdbxMeta
+  extends typings.kdbxweb.distTypesFormatKdbxMetaMod.KdbxMeta
 /* static members */
 object KdbxMeta {
   
@@ -20,7 +20,7 @@ object KdbxMeta {
     * Creates new meta
     * @returns {KdbxMeta}
     */
-  inline def create(): typings.kdbxweb.kdbxMetaMod.KdbxMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.kdbxweb.kdbxMetaMod.KdbxMeta]
+  inline def create(): typings.kdbxweb.distTypesFormatKdbxMetaMod.KdbxMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.kdbxweb.distTypesFormatKdbxMetaMod.KdbxMeta]
   
-  inline def read(xmlNode: Node, ctx: typings.kdbxweb.kdbxContextMod.KdbxContext): typings.kdbxweb.kdbxMetaMod.KdbxMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.kdbxweb.kdbxMetaMod.KdbxMeta]
+  inline def read(xmlNode: Node, ctx: typings.kdbxweb.distTypesFormatKdbxContextMod.KdbxContext): typings.kdbxweb.distTypesFormatKdbxMetaMod.KdbxMeta = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(xmlNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[typings.kdbxweb.distTypesFormatKdbxMetaMod.KdbxMeta]
 }

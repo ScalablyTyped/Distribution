@@ -1,7 +1,7 @@
 package typings.adobePdfservicesNodeSdk
 
+import typings.adobePdfservicesNodeSdk.authCredentialsMod.Credentials
 import typings.adobePdfservicesNodeSdk.clientConfigMod.ClientConfig
-import typings.adobePdfservicesNodeSdk.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

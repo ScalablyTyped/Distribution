@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientWorkflows
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientWorkflows.anon.Accesstoken
 import typings.maximMazurokGapiClientWorkflows.anon.Alt
@@ -125,9 +124,7 @@ object gapi {
         
         /** Cross-service attributes for the location. For example {"cloud.googleapis.com/region": "us-east1"} */
         var labels: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
               ] = js.undefined
         
         /** The canonical id for this location. For example: `"us-east1"`. */
@@ -135,9 +132,7 @@ object gapi {
         
         /** Service-specific metadata. For example the available capacity at the given location. */
         var metadata: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
         
         /** Resource name for the location, which may vary between implementations. For example: `"projects/example-project/locations/us-east1"` */
@@ -157,9 +152,7 @@ object gapi {
           inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
           
           inline def setLabels(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -169,9 +162,7 @@ object gapi {
           inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
           
           inline def setMetadata(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -211,9 +202,7 @@ object gapi {
           * metadata. Any method that returns a long-running operation should document the metadata type, if any.
           */
         var metadata: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
         
         /**
@@ -228,9 +217,7 @@ object gapi {
           * original method name. For example, if the original method name is `TakeSnapshot()`, the inferred response type is `TakeSnapshotResponse`.
           */
         var response: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
       }
       object Operation {
@@ -251,9 +238,7 @@ object gapi {
           inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
           inline def setMetadata(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -263,9 +248,7 @@ object gapi {
           inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
           inline def setResponse(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
           inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
@@ -369,9 +352,7 @@ object gapi {
         /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
         var details: js.UndefOr[
                 js.Array[
-                  /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[Any]
+                  /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                 ]
               ] = js.undefined
         
@@ -396,18 +377,14 @@ object gapi {
           
           inline def setDetails(
             value: js.Array[
-                      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[Any]
+                      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
           inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
           
           inline def setDetailsVarargs(
-            value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[Any])*
+            value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
           ): Self = StObject.set(x, "details", js.Array(value*))
           
           inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
@@ -429,9 +406,7 @@ object gapi {
           * characters, underscores and dashes. Label keys must start with a letter. International characters are allowed.
           */
         var labels: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
               ] = js.undefined
         
         /** The resource name of the workflow. Format: projects/{project}/locations/{location}/workflows/{workflow} */
@@ -482,9 +457,7 @@ object gapi {
           inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
           inline def setLabels(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

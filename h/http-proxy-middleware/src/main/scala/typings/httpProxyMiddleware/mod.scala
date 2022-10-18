@@ -1,9 +1,9 @@
 package typings.httpProxyMiddleware
 
-import typings.httpProxyMiddleware.responseInterceptorMod.Interceptor
-import typings.httpProxyMiddleware.typesMod.Filter
-import typings.httpProxyMiddleware.typesMod.Options
-import typings.httpProxyMiddleware.typesMod.RequestHandler
+import typings.httpProxyMiddleware.distHandlersResponseInterceptorMod.Interceptor
+import typings.httpProxyMiddleware.distTypesMod.Filter
+import typings.httpProxyMiddleware.distTypesMod.Options
+import typings.httpProxyMiddleware.distTypesMod.RequestHandler
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse

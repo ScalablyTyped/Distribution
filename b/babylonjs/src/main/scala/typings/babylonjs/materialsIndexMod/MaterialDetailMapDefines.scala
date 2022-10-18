@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param externalProperties list of external properties to inject into the object
   */
 open class MaterialDetailMapDefines ()
-  extends typings.babylonjs.materialDetailMapConfigurationMod.MaterialDetailMapDefines {
+  extends typings.babylonjs.materialsMaterialDotdetailMapConfigurationMod.MaterialDetailMapDefines {
   def this(externalProperties: StringDictionary[Default]) = this()
 }

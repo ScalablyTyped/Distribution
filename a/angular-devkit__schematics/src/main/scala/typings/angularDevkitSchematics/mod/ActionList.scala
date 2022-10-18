@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "ActionList")
 @js.native
 open class ActionList ()
-  extends typings.angularDevkitSchematics.actionMod.ActionList
+  extends typings.angularDevkitSchematics.srcTreeActionMod.ActionList

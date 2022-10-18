@@ -40,7 +40,7 @@ object mod {
   type FilterOrLookup[IsFilter /* <: Boolean */] = js.Function2[
     /* tags */ Tag | Tags, 
     /* ranges */ js.UndefOr[String | Ranges], 
-    js.UndefOr[Tag | Tags]
+    /* import warning: importer.ImportType#apply Failed type conversion: IsFilter extends true ? bcp-47-match.bcp-47-match.Tags : bcp-47-match.bcp-47-match.Tag | undefined */ js.Any
   ]
   
   type Lookup_ = FilterOrLookup[`false`]

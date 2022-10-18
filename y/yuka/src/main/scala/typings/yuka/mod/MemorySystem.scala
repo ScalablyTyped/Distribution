@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [owner=null] - The game entity that owns this memory system.
   */
 open class MemorySystem ()
-  extends typings.yuka.yukaMod.MemorySystem {
-  def this(owner: typings.yuka.gameEntityMod.GameEntity) = this()
+  extends typings.yuka.srcYukaMod.MemorySystem {
+  def this(owner: typings.yuka.srcCoreGameEntityMod.GameEntity) = this()
 }

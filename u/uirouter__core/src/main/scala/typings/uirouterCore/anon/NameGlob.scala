@@ -1,6 +1,6 @@
 package typings.uirouterCore.anon
 
-import typings.uirouterCore.globMod.Glob
+import typings.uirouterCore.libCommonGlobMod.Glob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.vegaSchemaMod.VgValueRef
+import typings.vegaLite.buildSrcVegaDotschemaMod.VgValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +22,7 @@ trait VgValueRefteststringundef extends StObject {
   
   var test: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[typings.vegaLite.channeldefMod.Value[scala.Nothing]] = js.undefined
+  var value: js.UndefOr[typings.vegaLite.buildSrcChanneldefMod.Value[scala.Nothing]] = js.undefined
 }
 object VgValueRefteststringundef {
   
@@ -61,7 +61,7 @@ object VgValueRefteststringundef {
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setValue(value: typings.vegaLite.channeldefMod.Value[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.vegaLite.buildSrcChanneldefMod.Value[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `607` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[IdKey]
+  /** The unique identifier of the team. */
+  var team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
 }
 object `607` {
   
-  inline def apply(applicationSlashjson: js.Array[IdKey]): `607` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(
+    team_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+  ): `607` = {
+    val __obj = js.Dynamic.literal(team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`607`]
   }
   
   extension [Self <: `607`](x: Self) {
     
-    inline def setApplicationSlashjson(value: js.Array[IdKey]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: IdKey*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setTeam_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-id'] */ js.Any
+    ): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

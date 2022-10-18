@@ -3,7 +3,7 @@ package typings.ansiEscapes
 import typings.ansiEscapes.anon.Annotation
 import typings.ansiEscapes.ansiEscapesStrings.auto
 import typings.node.bufferMod.global.Buffer
-import typings.typeFest.literalUnionMod.LiteralUnion
+import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

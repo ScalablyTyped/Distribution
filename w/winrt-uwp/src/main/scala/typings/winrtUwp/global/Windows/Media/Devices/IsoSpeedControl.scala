@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the ISO film speed settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.IsoSpeedControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.IsoSpeedControl")
 @js.native
-abstract class IsoSpeedControl ()
+open class IsoSpeedControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.IsoSpeedControl {
   

@@ -37,7 +37,7 @@ open class Mouse () extends StObject {
   
   /**
     * Performs a drag, dragenter, dragover, and drop in sequence.
-    * @param target - point to drag from
+    * @param start - point to drag from
     * @param target - point to drop on
     * @param options - An object of options. Accepts delay which,
     * if specified, is the time to wait between `dragover` and `drop` in milliseconds.

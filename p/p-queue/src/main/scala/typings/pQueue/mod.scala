@@ -1,11 +1,11 @@
 package typings.pQueue
 
 import typings.eventemitter3.mod.^
-import typings.pQueue.optionsMod.Options
-import typings.pQueue.optionsMod.QueueAddOptions
-import typings.pQueue.optionsMod.TaskOptions
-import typings.pQueue.queueMod.Queue
-import typings.pQueue.queueMod.RunFunction
+import typings.pQueue.distOptionsMod.Options
+import typings.pQueue.distOptionsMod.QueueAddOptions
+import typings.pQueue.distOptionsMod.TaskOptions
+import typings.pQueue.distQueueMod.Queue
+import typings.pQueue.distQueueMod.RunFunction
 import typings.std.Error
 import typings.std.Partial
 import typings.std.PromiseLike

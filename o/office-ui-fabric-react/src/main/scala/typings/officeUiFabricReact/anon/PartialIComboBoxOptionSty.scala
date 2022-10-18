@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.anon
 
-import typings.uifabricMergeStyles.istyleMod.IStyle
+import typings.uifabricMergeStyles.libIstyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

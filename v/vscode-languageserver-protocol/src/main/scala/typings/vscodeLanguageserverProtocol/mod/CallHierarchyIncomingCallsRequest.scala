@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolCallHierarchyMod.CallHierarchyIncomingCallsParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotcallHierarchyMod.CallHierarchyIncomingCallsParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.callHierarchySlashincomingCalls
 import typings.vscodeLanguageserverTypes.mod.CallHierarchyIncomingCall
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object CallHierarchyIncomingCallsRequest {
   
   @JSImport("vscode-languageserver-protocol", "CallHierarchyIncomingCallsRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "CallHierarchyIncomingCallsRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object CallHierarchyIncomingCallsRequest {
   
   @JSImport("vscode-languageserver-protocol", "CallHierarchyIncomingCallsRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     CallHierarchyIncomingCallsParams, 
     js.Array[CallHierarchyIncomingCall] | Null, 
     js.Array[CallHierarchyIncomingCall], 

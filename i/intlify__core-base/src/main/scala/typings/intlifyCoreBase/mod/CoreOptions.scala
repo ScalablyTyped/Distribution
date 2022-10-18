@@ -1,6 +1,5 @@
 package typings.intlifyCoreBase.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.intlifyCoreBase.anon.Datetime
 import typings.intlifyCoreBase.anon.DatetimeFormats
 import typings.intlifyMessageCompiler.mod.CompileOptions
@@ -12,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CoreOptions[Message, Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, Message] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */] extends StObject {
   
   var datetimeFormats: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof _DateTimeFormats ]: DateTimeSchema}
-    */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreOptions & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _DateTimeFormats ]: DateTimeSchema} */ js.Any
   ] = js.undefined
   
   var escapeParameter: js.UndefOr[Boolean] = js.undefined
@@ -29,10 +26,7 @@ trait CoreOptions[Message, Schema /* <: Datetime */, Locales /* <: DatetimeForma
         NonNullable[DateTimeFormatsLocales | MessagesLocales | NumberFormatsLocales], 
         /* keyof std.NonNullable<MessagesLocales> */ String
       ], 
-      (PickupLocales[
-        NonNullable[DateTimeFormatsLocales | MessagesLocales | NumberFormatsLocales], 
-        /* keyof std.NonNullable<MessagesLocales> */ String
-      ]) | Locale
+      /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<MessagesLocales>, keyof std.NonNullable<MessagesLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormatsLocales>, keyof std.NonNullable<DateTimeFormatsLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormatsLocales>, keyof std.NonNullable<NumberFormatsLocales>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<MessagesLocales>, keyof std.NonNullable<MessagesLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormatsLocales>, keyof std.NonNullable<DateTimeFormatsLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormatsLocales>, keyof std.NonNullable<NumberFormatsLocales>> */ js.Any
     ]
   ] = js.undefined
   
@@ -51,9 +45,7 @@ trait CoreOptions[Message, Schema /* <: Datetime */, Locales /* <: DatetimeForma
   var messageResolver: js.UndefOr[MessageResolver] = js.undefined
   
   var messages: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof _Messages ]: MessageSchema}
-    */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreOptions & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _Messages ]: MessageSchema} */ js.Any
   ] = js.undefined
   
   var missing: js.UndefOr[CoreMissingHandler[Message]] = js.undefined
@@ -63,9 +55,7 @@ trait CoreOptions[Message, Schema /* <: Datetime */, Locales /* <: DatetimeForma
   var modifiers: js.UndefOr[LinkedModifiers[Message]] = js.undefined
   
   var numberFormats: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof _NumberFormats ]: NumberSchema}
-    */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreOptions & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _NumberFormats ]: NumberSchema} */ js.Any
   ] = js.undefined
   
   var onWarn: js.UndefOr[js.Function2[/* msg */ String, /* err */ js.UndefOr[js.Error], Unit]] = js.undefined
@@ -131,9 +121,7 @@ object CoreOptions {
       ])) {
     
     inline def setDatetimeFormats(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof _DateTimeFormats ]: DateTimeSchema}
-      */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreOptions & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _DateTimeFormats ]: DateTimeSchema} */ js.Any
     ): Self = StObject.set(x, "datetimeFormats", value.asInstanceOf[js.Any])
     
     inline def setDatetimeFormatsUndefined: Self = StObject.set(x, "datetimeFormats", js.undefined)
@@ -152,10 +140,7 @@ object CoreOptions {
             NonNullable[DateTimeFormatsLocales | MessagesLocales | NumberFormatsLocales], 
             /* keyof std.NonNullable<MessagesLocales> */ String
           ], 
-          (PickupLocales[
-            NonNullable[DateTimeFormatsLocales | MessagesLocales | NumberFormatsLocales], 
-            /* keyof std.NonNullable<MessagesLocales> */ String
-          ]) | Locale
+          /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<MessagesLocales>, keyof std.NonNullable<MessagesLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormatsLocales>, keyof std.NonNullable<DateTimeFormatsLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormatsLocales>, keyof std.NonNullable<NumberFormatsLocales>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<MessagesLocales>, keyof std.NonNullable<MessagesLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormatsLocales>, keyof std.NonNullable<DateTimeFormatsLocales>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormatsLocales>, keyof std.NonNullable<NumberFormatsLocales>> */ js.Any
         ]
     ): Self = StObject.set(x, "fallbackContext", value.asInstanceOf[js.Any])
     
@@ -185,8 +170,19 @@ object CoreOptions {
           js.Object, 
           PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
     {} */ String], 
-          (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-    {} */ String]) | Locale
+          /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+    {}, keyof / * Inlined std.NonNullable<{}> * /
+    {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+    {}, keyof / * Inlined std.NonNullable<{}> * /
+    {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+    {}, keyof / * Inlined std.NonNullable<{}> * /
+    {}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+    {}, keyof / * Inlined std.NonNullable<{}> * /
+    {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+    {}, keyof / * Inlined std.NonNullable<{}> * /
+    {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+    {}, keyof / * Inlined std.NonNullable<{}> * /
+    {}> */ js.Any
         ], /* fallback */ FallbackLocale, /* start */ Locale) => js.Array[Locale]
     ): Self = StObject.set(x, "localeFallbacker", js.Any.fromFunction3(value))
     
@@ -203,9 +199,7 @@ object CoreOptions {
     inline def setMessageResolverUndefined: Self = StObject.set(x, "messageResolver", js.undefined)
     
     inline def setMessages(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof _Messages ]: MessageSchema}
-      */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreOptions & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _Messages ]: MessageSchema} */ js.Any
     ): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
@@ -223,9 +217,7 @@ object CoreOptions {
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     inline def setNumberFormats(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof _NumberFormats ]: NumberSchema}
-      */ typings.intlifyCoreBase.intlifyCoreBaseStrings.CoreOptions & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _NumberFormats ]: NumberSchema} */ js.Any
     ): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
     
     inline def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)

@@ -1,6 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
-import typings.babylonjs.webXRImageTrackingMod.IWebXRImageTrackingOptions
+import typings.babylonjs.xRFeaturesWebXRImageTrackingMod.IWebXRImageTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRImageTracking")
 @js.native
 open class WebXRImageTracking protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRImageTracking {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRImageTracking {
   /**
     * constructs the image tracking feature
     * @param _xrSessionManager the session manager for this module
     * @param options read-only options to be used in this module
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     /**
     * read-only options to be used in this module
     */

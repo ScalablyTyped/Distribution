@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
 import typings.node.bufferMod.global.Buffer
-import typings.trezorConnect.protobufMod.StellarSignerType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.StellarSignerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

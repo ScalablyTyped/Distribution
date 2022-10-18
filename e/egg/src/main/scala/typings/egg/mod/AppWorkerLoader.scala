@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "AppWorkerLoader")
 @js.native
-class AppWorkerLoader protected ()
+open class AppWorkerLoader protected ()
   extends typings.eggCore.mod.EggLoader[
-      EggCore[typings.eggCore.mod.PlainObject[js.Any]], 
-      js.Any, 
+      EggCore[typings.eggCore.mod.PlainObject[Any]], 
+      Any, 
       typings.eggCore.mod.EggLoaderOptions
     ] {
   /**

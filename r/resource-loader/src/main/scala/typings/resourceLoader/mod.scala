@@ -1,47 +1,47 @@
 package typings.resourceLoader
 
-import typings.resourceLoader.abstractLoadStrategyMod.AbstractLoadStrategyCtor
-import typings.resourceLoader.abstractLoadStrategyMod.ILoadConfig
 import typings.resourceLoader.anon.TypeofLoader
-import typings.resourceLoader.imageLoadStrategyMod.IImageLoadConfig
-import typings.resourceLoader.loaderMod.Loader.MiddlewareFn
-import typings.resourceLoader.mediaElementLoadStrategyMod.IMediaElementLoadConfig
+import typings.resourceLoader.distLoadStrategiesAbstractLoadStrategyMod.AbstractLoadStrategyCtor
+import typings.resourceLoader.distLoadStrategiesAbstractLoadStrategyMod.ILoadConfig
+import typings.resourceLoader.distLoadStrategiesImageLoadStrategyMod.IImageLoadConfig
+import typings.resourceLoader.distLoadStrategiesMediaElementLoadStrategyMod.IMediaElementLoadConfig
+import typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.IXhrLoadConfig
+import typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType
+import typings.resourceLoader.distLoaderMod.Loader.MiddlewareFn
+import typings.resourceLoader.distResourceMod.IResourceOptions
 import typings.resourceLoader.resourceLoaderStrings.audio
 import typings.resourceLoader.resourceLoaderStrings.video
-import typings.resourceLoader.resourceMod.IResourceOptions
-import typings.resourceLoader.xhrLoadStrategyMod.IXhrLoadConfig
-import typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("resource-loader", "AbstractLoadStrategy")
+  /* note: abstract class */ @JSImport("resource-loader", "AbstractLoadStrategy")
   @js.native
-  abstract class AbstractLoadStrategy[C /* <: ILoadConfig */] protected ()
-    extends typings.resourceLoader.abstractLoadStrategyMod.AbstractLoadStrategy[C] {
+  open class AbstractLoadStrategy[C /* <: ILoadConfig */] protected ()
+    extends typings.resourceLoader.distLoadStrategiesAbstractLoadStrategyMod.AbstractLoadStrategy[C] {
     def this(config: C) = this()
   }
   
   @JSImport("resource-loader", "AudioLoadStrategy")
   @js.native
   open class AudioLoadStrategy protected ()
-    extends typings.resourceLoader.audioLoadStrategyMod.AudioLoadStrategy {
+    extends typings.resourceLoader.distLoadStrategiesAudioLoadStrategyMod.AudioLoadStrategy {
     def this(config: IMediaElementLoadConfig) = this()
   }
   
   @JSImport("resource-loader", "ImageLoadStrategy")
   @js.native
   open class ImageLoadStrategy protected ()
-    extends typings.resourceLoader.imageLoadStrategyMod.ImageLoadStrategy {
+    extends typings.resourceLoader.distLoadStrategiesImageLoadStrategyMod.ImageLoadStrategy {
     def this(config: IImageLoadConfig) = this()
   }
   
   @JSImport("resource-loader", "Loader")
   @js.native
   open class Loader ()
-    extends typings.resourceLoader.loaderMod.Loader {
+    extends typings.resourceLoader.distLoaderMod.Loader {
     def this(baseUrl: String) = this()
     def this(baseUrl: String, concurrency: Double) = this()
     def this(baseUrl: Unit, concurrency: Double) = this()
@@ -66,17 +66,17 @@ object mod {
     inline def use(fn: MiddlewareFn, priority: Double): TypeofLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(fn.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[TypeofLoader]
   }
   
-  @JSImport("resource-loader", "MediaElementLoadStrategy")
+  /* note: abstract class */ @JSImport("resource-loader", "MediaElementLoadStrategy")
   @js.native
-  abstract class MediaElementLoadStrategy protected ()
-    extends typings.resourceLoader.mediaElementLoadStrategyMod.MediaElementLoadStrategy {
+  open class MediaElementLoadStrategy protected ()
+    extends typings.resourceLoader.distLoadStrategiesMediaElementLoadStrategyMod.MediaElementLoadStrategy {
     def this(config: IMediaElementLoadConfig, elementType: audio | video) = this()
   }
   
   @JSImport("resource-loader", "Resource")
   @js.native
   open class Resource protected ()
-    extends typings.resourceLoader.resourceMod.Resource {
+    extends typings.resourceLoader.distResourceMod.Resource {
     def this(name: String, options: IResourceOptions) = this()
   }
   /* static members */
@@ -111,13 +111,13 @@ object mod {
   object ResourceState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.resourceLoader.resourceTypeMod.ResourceState & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.resourceLoader.distResourceTypeMod.ResourceState & Double] = js.native
     
-    /* 2 */ val Complete: typings.resourceLoader.resourceTypeMod.ResourceState.Complete & Double = js.native
+    /* 2 */ val Complete: typings.resourceLoader.distResourceTypeMod.ResourceState.Complete & Double = js.native
     
-    /* 1 */ val Loading: typings.resourceLoader.resourceTypeMod.ResourceState.Loading & Double = js.native
+    /* 1 */ val Loading: typings.resourceLoader.distResourceTypeMod.ResourceState.Loading & Double = js.native
     
-    /* 0 */ val NotStarted: typings.resourceLoader.resourceTypeMod.ResourceState.NotStarted & Double = js.native
+    /* 0 */ val NotStarted: typings.resourceLoader.distResourceTypeMod.ResourceState.NotStarted & Double = js.native
   }
   
   @JSImport("resource-loader", "ResourceType")
@@ -125,38 +125,38 @@ object mod {
   object ResourceType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.resourceLoader.resourceTypeMod.ResourceType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.resourceLoader.distResourceTypeMod.ResourceType & Double] = js.native
     
-    /* 6 */ val Audio: typings.resourceLoader.resourceTypeMod.ResourceType.Audio & Double = js.native
+    /* 6 */ val Audio: typings.resourceLoader.distResourceTypeMod.ResourceType.Audio & Double = js.native
     
-    /* 2 */ val Blob: typings.resourceLoader.resourceTypeMod.ResourceType.Blob & Double = js.native
+    /* 2 */ val Blob: typings.resourceLoader.distResourceTypeMod.ResourceType.Blob & Double = js.native
     
-    /* 1 */ val Buffer: typings.resourceLoader.resourceTypeMod.ResourceType.Buffer & Double = js.native
+    /* 1 */ val Buffer: typings.resourceLoader.distResourceTypeMod.ResourceType.Buffer & Double = js.native
     
-    /* 5 */ val Image: typings.resourceLoader.resourceTypeMod.ResourceType.Image & Double = js.native
+    /* 5 */ val Image: typings.resourceLoader.distResourceTypeMod.ResourceType.Image & Double = js.native
     
-    /* 3 */ val Json: typings.resourceLoader.resourceTypeMod.ResourceType.Json & Double = js.native
+    /* 3 */ val Json: typings.resourceLoader.distResourceTypeMod.ResourceType.Json & Double = js.native
     
-    /* 8 */ val Text: typings.resourceLoader.resourceTypeMod.ResourceType.Text & Double = js.native
+    /* 8 */ val Text: typings.resourceLoader.distResourceTypeMod.ResourceType.Text & Double = js.native
     
-    /* 0 */ val Unknown: typings.resourceLoader.resourceTypeMod.ResourceType.Unknown & Double = js.native
+    /* 0 */ val Unknown: typings.resourceLoader.distResourceTypeMod.ResourceType.Unknown & Double = js.native
     
-    /* 7 */ val Video: typings.resourceLoader.resourceTypeMod.ResourceType.Video & Double = js.native
+    /* 7 */ val Video: typings.resourceLoader.distResourceTypeMod.ResourceType.Video & Double = js.native
     
-    /* 4 */ val Xml: typings.resourceLoader.resourceTypeMod.ResourceType.Xml & Double = js.native
+    /* 4 */ val Xml: typings.resourceLoader.distResourceTypeMod.ResourceType.Xml & Double = js.native
   }
   
   @JSImport("resource-loader", "VideoLoadStrategy")
   @js.native
   open class VideoLoadStrategy protected ()
-    extends typings.resourceLoader.videoLoadStrategyMod.VideoLoadStrategy {
+    extends typings.resourceLoader.distLoadStrategiesVideoLoadStrategyMod.VideoLoadStrategy {
     def this(config: IMediaElementLoadConfig) = this()
   }
   
   @JSImport("resource-loader", "XhrLoadStrategy")
   @js.native
   open class XhrLoadStrategy protected ()
-    extends typings.resourceLoader.xhrLoadStrategyMod.XhrLoadStrategy {
+    extends typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrLoadStrategy {
     def this(config: IXhrLoadConfig) = this()
   }
   /* static members */
@@ -183,18 +183,20 @@ object mod {
   object XhrResponseType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType & String
+      ] = js.native
     
-    /* "blob" */ val Blob: typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType.Blob & String = js.native
+    /* "blob" */ val Blob: typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType.Blob & String = js.native
     
-    /* "arraybuffer" */ val Buffer: typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType.Buffer & String = js.native
+    /* "arraybuffer" */ val Buffer: typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType.Buffer & String = js.native
     
-    /* "text" */ val Default: typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType.Default & String = js.native
+    /* "text" */ val Default: typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType.Default & String = js.native
     
-    /* "document" */ val Document: typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType.Document & String = js.native
+    /* "document" */ val Document: typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType.Document & String = js.native
     
-    /* "json" */ val Json: typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType.Json & String = js.native
+    /* "json" */ val Json: typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType.Json & String = js.native
     
-    /* "text" */ val Text: typings.resourceLoader.xhrLoadStrategyMod.XhrResponseType.Text & String = js.native
+    /* "text" */ val Text: typings.resourceLoader.distLoadStrategiesXhrLoadStrategyMod.XhrResponseType.Text & String = js.native
   }
 }

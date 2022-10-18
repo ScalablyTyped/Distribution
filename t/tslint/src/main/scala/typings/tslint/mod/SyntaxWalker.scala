@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("tslint", "SyntaxWalker")
 @js.native
 open class SyntaxWalker ()
-  extends typings.tslint.walkerMod.SyntaxWalker
+  extends typings.tslint.libLanguageWalkerMod.SyntaxWalker

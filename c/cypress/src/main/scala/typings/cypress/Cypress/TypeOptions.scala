@@ -1,8 +1,8 @@
 package typings.cypress.Cypress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that control `cy.type` command
@@ -10,20 +10,18 @@ import scala.scalajs.js.annotation._
   * @see https://on.cypress.io/type
   */
 trait TypeOptions
-  extends Loggable
-     with Timeoutable {
+  extends StObject
+     with Loggable
+     with Timeoutable
+     with ActionableOptions {
+  
   /**
     * Delay after each keypress (ms)
     *
     * @default 10
     */
   var delay: Double
-  /**
-    * Forces the action, disables waiting for actionability
-    *
-    * @default false
-    */
-  var force: Boolean
+  
   /**
     * Parse special characters for strings surrounded by `{}`,
     * such as `{esc}`. Set to `false` to type the literal characters instead
@@ -31,6 +29,7 @@ trait TypeOptions
     * @default true
     */
   var parseSpecialCharSequences: Boolean
+  
   /**
     * Keep a modifier activated between commands
     *
@@ -38,19 +37,29 @@ trait TypeOptions
     */
   var release: Boolean
 }
-
 object TypeOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
+    animationDistanceThreshold: Double,
     delay: Double,
     force: Boolean,
     log: Boolean,
     parseSpecialCharSequences: Boolean,
     release: Boolean,
-    timeout: Double
+    scrollBehavior: scrollBehaviorOptions,
+    timeout: Double,
+    waitForAnimations: Boolean
   ): TypeOptions = {
-    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], parseSpecialCharSequences = parseSpecialCharSequences.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animationDistanceThreshold = animationDistanceThreshold.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], parseSpecialCharSequences = parseSpecialCharSequences.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], scrollBehavior = scrollBehavior.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], waitForAnimations = waitForAnimations.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeOptions]
   }
+  
+  extension [Self <: TypeOptions](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setParseSpecialCharSequences(value: Boolean): Self = StObject.set(x, "parseSpecialCharSequences", value.asInstanceOf[js.Any])
+    
+    inline def setRelease(value: Boolean): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+  }
 }
-

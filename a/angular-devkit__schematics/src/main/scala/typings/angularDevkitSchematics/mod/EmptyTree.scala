@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "EmptyTree")
 @js.native
 open class EmptyTree ()
-  extends typings.angularDevkitSchematics.emptyMod.EmptyTree
+  extends typings.angularDevkitSchematics.srcTreeEmptyMod.EmptyTree

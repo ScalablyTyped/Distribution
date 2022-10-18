@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonAutotriggerchecks extends StObject {
   
-  var parameters: `144`
+  var parameters: `76`
   
   var requestBody: ContentApplicationjsonAutotriggerchecks
   
-  var responses: `200Content186`
+  var responses: `200ContentApplicationjsonPreferencesRepository`
 }
 object RequestBodyContentApplicationjsonAutotriggerchecks {
   
   inline def apply(
-    parameters: `144`,
+    parameters: `76`,
     requestBody: ContentApplicationjsonAutotriggerchecks,
-    responses: `200Content186`
+    responses: `200ContentApplicationjsonPreferencesRepository`
   ): RequestBodyContentApplicationjsonAutotriggerchecks = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAutotriggerchecks]
@@ -25,10 +25,10 @@ object RequestBodyContentApplicationjsonAutotriggerchecks {
   
   extension [Self <: RequestBodyContentApplicationjsonAutotriggerchecks](x: Self) {
     
-    inline def setParameters(value: `144`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonAutotriggerchecks): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content186`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonPreferencesRepository`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -195,6 +195,10 @@ object ddTraceStrings {
   inline def manualDotkeep: manualDotkeep = "manual.keep".asInstanceOf[manualDotkeep]
   
   @js.native
+  sealed trait mariadb extends StObject
+  inline def mariadb: mariadb = "mariadb".asInstanceOf[mariadb]
+  
+  @js.native
   sealed trait memcached extends StObject
   inline def memcached: memcached = "memcached".asInstanceOf[memcached]
   

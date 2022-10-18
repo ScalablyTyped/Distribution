@@ -1,6 +1,7 @@
 package typings.node
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -904,7 +905,7 @@ object zlibMod {
        with Zlib
        with ZlibReset
   
-  type InputType = String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
+  type InputType = String | js.typedarray.ArrayBuffer | ArrayBufferView
   
   @js.native
   trait Unzip_
@@ -939,7 +940,7 @@ object zlibMod {
     var chunkSize: js.UndefOr[Double] = js.undefined
     
     // compression only
-    var dictionary: js.UndefOr[js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer] = js.undefined
+    var dictionary: js.UndefOr[ArrayBufferView | js.typedarray.ArrayBuffer] = js.undefined
     
     /**
       * @default constants.Z_FINISH
@@ -979,7 +980,7 @@ object zlibMod {
       
       inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      inline def setDictionary(value: js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: ArrayBufferView | js.typedarray.ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
       inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
       

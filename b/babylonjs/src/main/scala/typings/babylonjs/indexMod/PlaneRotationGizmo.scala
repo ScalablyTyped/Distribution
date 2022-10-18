@@ -20,11 +20,11 @@ open class PlaneRotationGizmo protected ()
     * @param thickness display gizmo axis thickness
     */
   def this(
-    planeNormal: typings.babylonjs.mathVectorMod.Vector3,
-    color: js.UndefOr[typings.babylonjs.mathColorMod.Color3],
-    gizmoLayer: js.UndefOr[typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer],
+    planeNormal: typings.babylonjs.mathsMathDotvectorMod.Vector3,
+    color: js.UndefOr[typings.babylonjs.mathsMathDotcolorMod.Color3],
+    gizmoLayer: js.UndefOr[typings.babylonjs.renderingUtilityLayerRendererMod.UtilityLayerRenderer],
     tessellation: js.UndefOr[Double],
-    parent: js.UndefOr[Nullable[typings.babylonjs.rotationGizmoMod.RotationGizmo]],
+    parent: js.UndefOr[Nullable[typings.babylonjs.gizmosRotationGizmoMod.RotationGizmo]],
     useEulerRotation: js.UndefOr[Boolean],
     thickness: js.UndefOr[Double]
   ) = this()

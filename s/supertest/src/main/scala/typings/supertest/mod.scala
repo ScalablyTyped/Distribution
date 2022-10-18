@@ -50,7 +50,9 @@ object mod {
   type SuperTest[T /* <: SuperAgentRequest */] = SuperAgent[T]
   
   @js.native
-  trait SuperTestWithHost[T /* <: SuperAgentRequest */] extends SuperAgent[T] {
+  trait SuperTestWithHost[T /* <: SuperAgentRequest */]
+    extends StObject
+       with SuperAgent[T] {
     
     def host(host: String): this.type = js.native
   }

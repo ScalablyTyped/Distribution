@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/compiler-sfc" : "3.2.40"
+      "@vue/compiler-sfc" : "3.2.41"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/compiler-sfc" : "3.2.40"
+      "@vue/compiler-sfc" : "3.2.41"
     }
   ],
   "compile-devDependencies" : [

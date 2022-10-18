@@ -7,7 +7,7 @@ import typings.node.httpMod.ServerOptions
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.ListenOptions
 import typings.node.netMod.Server
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.webpack.webpackStrings.http
 import typings.webpack.webpackStrings.https
 import org.scalablytyped.runtime.StObject

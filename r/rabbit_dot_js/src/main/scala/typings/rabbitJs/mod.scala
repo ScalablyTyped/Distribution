@@ -35,10 +35,6 @@ object mod {
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    /* standard dom */
-    /* InferMemberOverrides */
-    override def close(): js.Promise[Unit] & Any = js.native
-    
     def publish(topic: String, chunk: String): Any = js.native
     def publish(topic: String, chunk: String, encoding: String): Any = js.native
     def publish(topic: String, chunk: Buffer): Any = js.native
@@ -59,10 +55,6 @@ object mod {
     extends Writable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
-    
-    /* standard dom */
-    /* InferMemberOverrides */
-    override def close(): js.Promise[Unit] & Any = js.native
   }
   
   @JSImport("rabbit.js", "RepSocket")
@@ -105,10 +97,6 @@ object mod {
     extends Writable
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
-    
-    /* standard dom */
-    /* InferMemberOverrides */
-    override def close(): js.Promise[Unit] & Any = js.native
     
     def post(task: String, chunk: String): Any = js.native
     def post(task: String, chunk: String, encoding: String): Any = js.native

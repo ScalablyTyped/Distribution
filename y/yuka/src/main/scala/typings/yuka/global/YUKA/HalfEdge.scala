@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class HalfEdge ()
   extends typings.yuka.mod.HalfEdge {
-  def this(vertex: typings.yuka.vector3Mod.Vector3) = this()
+  def this(vertex: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

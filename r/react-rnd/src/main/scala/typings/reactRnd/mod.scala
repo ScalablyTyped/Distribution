@@ -11,11 +11,11 @@ import typings.react.mod.ReactNode
 import typings.reactDraggable.mod.DraggableEvent
 import typings.reactDraggable.mod.DraggableEventHandler
 import typings.reactRnd.anon.Bottom
-import typings.reactRnd.anon.BottomLeft
 import typings.reactRnd.anon.Current
 import typings.reactRnd.anon.Height
 import typings.reactRnd.anon.HeightWidth
 import typings.reactRnd.anon.Left
+import typings.reactRnd.anon.Right
 import typings.reactRnd.anon.Top
 import typings.reactRnd.anon.Width
 import typings.reactRnd.anon.X
@@ -723,7 +723,7 @@ object mod {
     }
   }
   
-  type ResizeEnable = BottomLeft | Boolean
+  type ResizeEnable = Bottom | Boolean
   
   type RndDragCallback = DraggableEventHandler
   
@@ -768,7 +768,7 @@ object mod {
   
   trait State extends StObject {
     
-    var bounds: Bottom
+    var bounds: Right
     
     var maxHeight: js.UndefOr[Double | String] = js.undefined
     
@@ -778,14 +778,14 @@ object mod {
   }
   object State {
     
-    inline def apply(bounds: Bottom, resizing: Boolean): State = {
+    inline def apply(bounds: Right, resizing: Boolean): State = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], resizing = resizing.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
     extension [Self <: State](x: Self) {
       
-      inline def setBounds(value: Bottom): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Right): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setMaxHeight(value: Double | String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       

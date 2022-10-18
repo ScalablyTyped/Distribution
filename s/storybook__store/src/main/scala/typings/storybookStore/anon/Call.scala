@@ -2,7 +2,7 @@ package typings.storybookStore.anon
 
 import typings.std.Parameters
 import typings.std.Partial
-import typings.storybookStore.typesMod.ComposedStoryPlayFn
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.ComposedStoryPlayFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxFormat")
 @js.native
 open class KdbxFormat protected ()
-  extends typings.kdbxweb.kdbxFormatMod.KdbxFormat {
-  def this(kdbx: typings.kdbxweb.kdbxMod.Kdbx) = this()
+  extends typings.kdbxweb.distTypesFormatKdbxFormatMod.KdbxFormat {
+  def this(kdbx: typings.kdbxweb.distTypesFormatKdbxMod.Kdbx) = this()
 }

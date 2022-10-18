@@ -8,11 +8,11 @@ trait Preferences extends StObject {
   
   var preferences: Autotriggerchecks
   
-  var repository: Branchesurl
+  var repository: Blobsurl
 }
 object Preferences {
   
-  inline def apply(preferences: Autotriggerchecks, repository: Branchesurl): Preferences = {
+  inline def apply(preferences: Autotriggerchecks, repository: Blobsurl): Preferences = {
     val __obj = js.Dynamic.literal(preferences = preferences.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[Preferences]
   }
@@ -21,6 +21,6 @@ object Preferences {
     
     inline def setPreferences(value: Autotriggerchecks): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

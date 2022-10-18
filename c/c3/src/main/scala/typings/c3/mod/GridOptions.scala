@@ -1,14 +1,14 @@
 package typings.c3.mod
 
 import typings.c3.anon.Front
-import typings.c3.anon.Show
+import typings.c3.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridOptions extends StObject {
   
-  var focus: js.UndefOr[Show] = js.undefined
+  var focus: js.UndefOr[`1`] = js.undefined
   
   var lines: js.UndefOr[Front] = js.undefined
   
@@ -25,7 +25,7 @@ object GridOptions {
   
   extension [Self <: GridOptions](x: Self) {
     
-    inline def setFocus(value: Show): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: `1`): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     

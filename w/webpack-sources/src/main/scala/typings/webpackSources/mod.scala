@@ -3,7 +3,7 @@ package typings.webpackSources
 import typings.node.bufferMod.global.Buffer
 import typings.sourceMap.mod.RawSourceMap
 import typings.sourceMap.mod.SourceMapGenerator
-import typings.webpackSources.cachedSourceMod.^
+import typings.webpackSources.libCachedSourceMod.^
 import typings.webpackSources.libMod.CachedData
 import typings.webpackSources.libMod.SourceLike
 import org.scalablytyped.runtime.StObject
@@ -19,15 +19,15 @@ object mod {
   @JSImport("webpack-sources", "CachedSource")
   @js.native
   open class CachedSource protected () extends ^ {
-    def this(source: typings.webpackSources.sourceMod.^) = this()
-    def this(source: js.Function0[typings.webpackSources.sourceMod.^], cachedData: CachedData) = this()
+    def this(source: typings.webpackSources.libSourceMod.^) = this()
+    def this(source: js.Function0[typings.webpackSources.libSourceMod.^], cachedData: CachedData) = this()
     def this(source: Null, cachedData: CachedData) = this()
   }
   
   @JSImport("webpack-sources", "CompatSource")
   @js.native
   open class CompatSource protected ()
-    extends typings.webpackSources.compatSourceMod.^ {
+    extends typings.webpackSources.libCompatSourceMod.^ {
     def this(sourceLike: SourceLike) = this()
   }
   object CompatSource {
@@ -37,7 +37,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource]
+    inline def from(sourceLike: SourceLike): typings.webpackSources.libSourceMod.^ | typings.webpackSources.libCompatSourceMod.CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.libSourceMod.^ | typings.webpackSources.libCompatSourceMod.CompatSource]
   }
   
   /**
@@ -46,8 +46,8 @@ object mod {
   @JSImport("webpack-sources", "ConcatSource")
   @js.native
   open class ConcatSource protected ()
-    extends typings.webpackSources.concatSourceMod.^ {
-    def this(args: (String | typings.webpackSources.sourceMod.^)*) = this()
+    extends typings.webpackSources.libConcatSourceMod.^ {
+    def this(args: (String | typings.webpackSources.libSourceMod.^)*) = this()
   }
   
   /**
@@ -56,7 +56,7 @@ object mod {
   @JSImport("webpack-sources", "OriginalSource")
   @js.native
   open class OriginalSource protected ()
-    extends typings.webpackSources.originalSourceMod.^ {
+    extends typings.webpackSources.libOriginalSourceMod.^ {
     /**
       * OriginalSource tries to create column mappings if requested, by splitting the source code at typical statement borders (;, {, }).
       */
@@ -70,11 +70,11 @@ object mod {
   @JSImport("webpack-sources", "PrefixSource")
   @js.native
   open class PrefixSource protected ()
-    extends typings.webpackSources.prefixSourceMod.^ {
+    extends typings.webpackSources.libPrefixSourceMod.^ {
     def this(prefix: String, source: String) = this()
-    def this(prefix: String, source: typings.webpackSources.sourceMod.^) = this()
-    def this(prefix: typings.webpackSources.sourceMod.^, source: String) = this()
-    def this(prefix: typings.webpackSources.sourceMod.^, source: typings.webpackSources.sourceMod.^) = this()
+    def this(prefix: String, source: typings.webpackSources.libSourceMod.^) = this()
+    def this(prefix: typings.webpackSources.libSourceMod.^, source: String) = this()
+    def this(prefix: typings.webpackSources.libSourceMod.^, source: typings.webpackSources.libSourceMod.^) = this()
   }
   
   /**
@@ -83,7 +83,7 @@ object mod {
   @JSImport("webpack-sources", "RawSource")
   @js.native
   open class RawSource protected ()
-    extends typings.webpackSources.rawSourceMod.^ {
+    extends typings.webpackSources.libRawSourceMod.^ {
     def this(value: String) = this()
   }
   
@@ -94,19 +94,19 @@ object mod {
   @JSImport("webpack-sources", "ReplaceSource")
   @js.native
   open class ReplaceSource protected ()
-    extends typings.webpackSources.replaceSourceMod.^ {
+    extends typings.webpackSources.libReplaceSourceMod.^ {
     /**
       * The ReplaceSource supports "identity" mappings for child source.
       * When original source matches generated source for a mapping it's assumed to be mapped char by char allowing to split mappings at replacements/insertions.
       */
-    def this(source: typings.webpackSources.sourceMod.^) = this()
-    def this(source: typings.webpackSources.sourceMod.^, name: String) = this()
+    def this(source: typings.webpackSources.libSourceMod.^) = this()
+    def this(source: typings.webpackSources.libSourceMod.^, name: String) = this()
   }
   
   @JSImport("webpack-sources", "SizeOnlySource")
   @js.native
   open class SizeOnlySource protected ()
-    extends typings.webpackSources.sizeOnlySourceMod.^ {
+    extends typings.webpackSources.libSizeOnlySourceMod.^ {
     def this(size: Double) = this()
   }
   
@@ -114,10 +114,10 @@ object mod {
     * Base class for all sources.
     * A Source can be asked for source code, size, source map and hash.
     */
-  @JSImport("webpack-sources", "Source")
+  /* note: abstract class */ @JSImport("webpack-sources", "Source")
   @js.native
-  abstract class Source ()
-    extends typings.webpackSources.sourceMod.^
+  open class Source ()
+    extends typings.webpackSources.libSourceMod.^
   
   /**
     * Represents source code with SourceMap, optionally having an additional SourceMap for the original source.
@@ -125,7 +125,7 @@ object mod {
   @JSImport("webpack-sources", "SourceMapSource")
   @js.native
   open class SourceMapSource protected ()
-    extends typings.webpackSources.sourceMapSourceMod.^ {
+    extends typings.webpackSources.libSourceMapSourceMod.^ {
     def this(sourceCode: String, name: String, sourceMap: RawSourceMap) = this()
     def this(sourceCode: String, name: String, sourceMap: SourceMapGenerator) = this()
     def this(sourceCode: String, name: String, sourceMap: RawSourceMap, originalSource: String) = this()

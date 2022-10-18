@@ -1,6 +1,6 @@
 package typings.ionicCliFrameworkOutput
 
-import typings.ionicCliFrameworkOutput.loggerMod.LoggerLevel
+import typings.ionicCliFrameworkOutput.distLoggerMod.LoggerLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

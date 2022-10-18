@@ -1,23 +1,25 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.mathsMathDotvectorMod.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FrontUVs extends StObject {
   
+  var arc: js.UndefOr[Double] = js.undefined
+  
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var diameter: js.UndefOr[Double] = js.undefined
-  
   var frontUVs: js.UndefOr[Vector4] = js.undefined
+  
+  var radius: js.UndefOr[Double] = js.undefined
   
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
   var tessellation: js.UndefOr[Double] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.undefined
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object FrontUVs {
   
@@ -28,17 +30,21 @@ object FrontUVs {
   
   extension [Self <: FrontUVs](x: Self) {
     
+    inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    
+    inline def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
+    
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
-    
-    inline def setDiameterUndefined: Self = StObject.set(x, "diameter", js.undefined)
-    
     inline def setFrontUVs(value: Vector4): Self = StObject.set(x, "frontUVs", value.asInstanceOf[js.Any])
     
     inline def setFrontUVsUndefined: Self = StObject.set(x, "frontUVs", js.undefined)
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     inline def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
@@ -48,8 +54,8 @@ object FrontUVs {
     
     inline def setTessellationUndefined: Self = StObject.set(x, "tessellation", js.undefined)
     
-    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
-    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

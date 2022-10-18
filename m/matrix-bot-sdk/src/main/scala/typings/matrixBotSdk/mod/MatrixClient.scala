@@ -1,7 +1,7 @@
 package typings.matrixBotSdk.mod
 
-import typings.matrixBotSdk.icryptostorageproviderMod.ICryptoStorageProvider
-import typings.matrixBotSdk.istorageproviderMod.IStorageProvider
+import typings.matrixBotSdk.libStorageIcryptostorageproviderMod.ICryptoStorageProvider
+import typings.matrixBotSdk.libStorageIstorageproviderMod.IStorageProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "MatrixClient")
 @js.native
 open class MatrixClient protected ()
-  extends typings.matrixBotSdk.matrixClientMod.MatrixClient {
+  extends typings.matrixBotSdk.libMatrixClientMod.MatrixClient {
   /**
     * Creates a new matrix client
     * @param {string} homeserverUrl The homeserver's client-server API URL

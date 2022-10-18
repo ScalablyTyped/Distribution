@@ -4,16 +4,16 @@ import typings.ethersprojectAbstractProvider.mod.Provider
 import typings.ethersprojectAbstractSigner.mod.ExternallyOwnedAccount
 import typings.ethersprojectBytes.mod.Bytes
 import typings.ethersprojectBytes.mod.BytesLike
-import typings.ethersprojectJsonWallets.keystoreMod.ProgressCallback
+import typings.ethersprojectJsonWallets.libKeystoreMod.ProgressCallback
 import typings.ethersprojectSigningKey.mod.SigningKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ethers", "ethers.Wallet")
 @js.native
-class Wallet protected ()
-  extends typings.ethers.ethersMod.Wallet {
+open class Wallet protected ()
+  extends typings.ethers.libEthersMod.Wallet {
   def this(privateKey: ExternallyOwnedAccount) = this()
   def this(privateKey: BytesLike) = this()
   def this(privateKey: SigningKey) = this()
@@ -22,30 +22,28 @@ class Wallet protected ()
   def this(privateKey: SigningKey, provider: Provider) = this()
 }
 /* static members */
-@JSImport("ethers", "ethers.Wallet")
-@js.native
-object Wallet extends js.Object {
+object Wallet {
+  
+  @JSImport("ethers", "ethers.Wallet")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     *  Static methods to create Wallet instances.
     */
-  def createRandom(): typings.ethersprojectWallet.mod.Wallet = js.native
-  def createRandom(options: js.Any): typings.ethersprojectWallet.mod.Wallet = js.native
+  inline def createRandom(): typings.ethersprojectWallet.mod.Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def createRandom(options: Any): typings.ethersprojectWallet.mod.Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
   
-  def fromEncryptedJson(json: String, password: String): js.Promise[typings.ethersprojectWallet.mod.Wallet] = js.native
-  def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[typings.ethersprojectWallet.mod.Wallet] = js.native
-  def fromEncryptedJson(json: String, password: Bytes): js.Promise[typings.ethersprojectWallet.mod.Wallet] = js.native
-  def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[typings.ethersprojectWallet.mod.Wallet] = js.native
+  inline def fromEncryptedJson(json: String, password: String): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
+  inline def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
+  inline def fromEncryptedJson(json: String, password: Bytes): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
+  inline def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[typings.ethersprojectWallet.mod.Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ethersprojectWallet.mod.Wallet]]
   
-  def fromEncryptedJsonSync(json: String, password: String): typings.ethersprojectWallet.mod.Wallet = js.native
-  def fromEncryptedJsonSync(json: String, password: Bytes): typings.ethersprojectWallet.mod.Wallet = js.native
+  inline def fromEncryptedJsonSync(json: String, password: String): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def fromEncryptedJsonSync(json: String, password: Bytes): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
   
-  def fromMnemonic(mnemonic: String): typings.ethersprojectWallet.mod.Wallet = js.native
-  def fromMnemonic(
-    mnemonic: String,
-    path: js.UndefOr[scala.Nothing],
-    wordlist: typings.ethersprojectWordlists.mod.Wordlist
-  ): typings.ethersprojectWallet.mod.Wallet = js.native
-  def fromMnemonic(mnemonic: String, path: String): typings.ethersprojectWallet.mod.Wallet = js.native
-  def fromMnemonic(mnemonic: String, path: String, wordlist: typings.ethersprojectWordlists.mod.Wordlist): typings.ethersprojectWallet.mod.Wallet = js.native
+  inline def fromMnemonic(mnemonic: String): typings.ethersprojectWallet.mod.Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def fromMnemonic(mnemonic: String, path: String): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def fromMnemonic(mnemonic: String, path: String, wordlist: typings.ethersprojectWordlists.mod.Wordlist): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
+  inline def fromMnemonic(mnemonic: String, path: Unit, wordlist: typings.ethersprojectWordlists.mod.Wordlist): typings.ethersprojectWallet.mod.Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectWallet.mod.Wallet]
 }

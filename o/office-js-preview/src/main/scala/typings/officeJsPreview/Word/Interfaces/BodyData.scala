@@ -80,7 +80,7 @@ trait BodyData extends StObject {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any
   ] = js.undefined
   
   /**
@@ -100,7 +100,7 @@ trait BodyData extends StObject {
   var text: js.UndefOr[String] = js.undefined
   
   /**
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and ‘NoteItem’ are supported in WordApiOnline 1.1 and later.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -154,7 +154,9 @@ object BodyData {
     
     inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    inline def setStyleBuiltIn(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ Any): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    inline def setStyleBuiltIn(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any
+    ): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     

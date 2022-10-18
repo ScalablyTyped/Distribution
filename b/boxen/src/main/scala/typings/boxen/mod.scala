@@ -30,7 +30,7 @@ import typings.boxen.boxenStrings.whiteBright
 import typings.boxen.boxenStrings.yellow
 import typings.boxen.boxenStrings.yellowBright
 import typings.cliBoxes.mod.BoxStyle
-import typings.typeFest.literalUnionMod.LiteralUnion
+import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

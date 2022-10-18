@@ -1,9 +1,9 @@
 package typings.focusLock
 
 import typings.focusLock.anon.Node
-import typings.focusLock.focusablesMod.FocusableIn
-import typings.focusLock.setFocusMod.FocusLockFocusOptions
-import typings.focusLock.siblingMod.FocusNextOptions
+import typings.focusLock.distEs5FocusablesMod.FocusableIn
+import typings.focusLock.distEs5SetFocusMod.FocusLockFocusOptions
+import typings.focusLock.distEs5SiblingMod.FocusNextOptions
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject

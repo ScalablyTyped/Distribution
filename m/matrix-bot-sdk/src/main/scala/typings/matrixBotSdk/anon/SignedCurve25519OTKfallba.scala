@@ -1,6 +1,6 @@
 package typings.matrixBotSdk.anon
 
-import typings.matrixBotSdk.cryptoMod.Signatures
+import typings.matrixBotSdk.libModelsCryptoMod.Signatures
 import typings.matrixBotSdk.matrixBotSdkBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

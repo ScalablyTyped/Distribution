@@ -1,7 +1,7 @@
 
 # Scala.js typings for fp-ts
 
-Typings are for version 2.12.3
+Typings are for version 2.13.1
 
 ## Library description:
 Functional programming in TypeScript

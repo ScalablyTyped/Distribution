@@ -1,18 +1,13 @@
 package typings.jssha.anon
 
-import typings.jssha.sha512Mod.EncodingType
-import typings.jssha.sha512Mod.FixedLengthOptionsEncodingType
+import typings.jssha.distSha512Mod.EncodingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `16`
-  extends StObject
-     with FixedLengthOptionsEncodingType {
+trait `16` extends StObject {
   
   var encoding: js.UndefOr[EncodingType] = js.undefined
-  
-  var numRounds: js.UndefOr[Double] = js.undefined
 }
 object `16` {
   
@@ -26,9 +21,5 @@ object `16` {
     inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-    
-    inline def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
-    
-    inline def setNumRoundsUndefined: Self = StObject.set(x, "numRounds", js.undefined)
   }
 }

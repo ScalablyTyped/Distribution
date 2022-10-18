@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `15` extends StObject {
   
-  var includeDates: js.UndefOr[js.Array[js.Date]] = js.undefined
-  
-  var maxDate: js.UndefOr[js.Date] = js.undefined
+  var closeSource: js.UndefOr[typings.baseui.modalTypesMod.CloseSource] = js.undefined
 }
 object `15` {
   
@@ -19,14 +17,8 @@ object `15` {
   
   extension [Self <: `15`](x: Self) {
     
-    inline def setIncludeDates(value: js.Array[js.Date]): Self = StObject.set(x, "includeDates", value.asInstanceOf[js.Any])
+    inline def setCloseSource(value: typings.baseui.modalTypesMod.CloseSource): Self = StObject.set(x, "closeSource", value.asInstanceOf[js.Any])
     
-    inline def setIncludeDatesUndefined: Self = StObject.set(x, "includeDates", js.undefined)
-    
-    inline def setIncludeDatesVarargs(value: js.Date*): Self = StObject.set(x, "includeDates", js.Array(value*))
-    
-    inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
-    
-    inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+    inline def setCloseSourceUndefined: Self = StObject.set(x, "closeSource", js.undefined)
   }
 }

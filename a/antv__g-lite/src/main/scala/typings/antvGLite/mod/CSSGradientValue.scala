@@ -1,7 +1,7 @@
 package typings.antvGLite.mod
 
-import typings.antvGLite.cssgradientvalueMod.LinearGradient
-import typings.antvGLite.cssgradientvalueMod.RadialGradient
+import typings.antvGLite.distCssCssomCssgradientvalueMod.LinearGradient
+import typings.antvGLite.distCssCssomCssgradientvalueMod.RadialGradient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CSSGradientValue")
 @js.native
 open class CSSGradientValue protected ()
-  extends typings.antvGLite.cssMod.CSSGradientValue {
-  def this(`type`: typings.antvGLite.cssgradientvalueMod.GradientType, value: LinearGradient) = this()
-  def this(`type`: typings.antvGLite.cssgradientvalueMod.GradientType, value: RadialGradient) = this()
+  extends typings.antvGLite.distCssMod.CSSGradientValue {
+  def this(`type`: typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType, value: LinearGradient) = this()
+  def this(`type`: typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType, value: RadialGradient) = this()
 }

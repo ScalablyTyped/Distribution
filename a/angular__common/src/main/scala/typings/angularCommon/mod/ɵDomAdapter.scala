@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common", "\u0275DomAdapter")
+/* note: abstract class */ @JSImport("@angular/common", "\u0275DomAdapter")
 @js.native
-abstract class ɵDomAdapter () extends StObject {
+open class ɵDomAdapter () extends StObject {
   
   def createElement(tagName: Any): HTMLElement = js.native
   def createElement(tagName: Any, doc: Any): HTMLElement = js.native

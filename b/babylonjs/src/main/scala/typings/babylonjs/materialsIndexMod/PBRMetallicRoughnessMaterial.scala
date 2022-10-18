@@ -31,5 +31,5 @@ object PBRMetallicRoughnessMaterial {
     * @param scene
     * @param rootUrl
     */
-  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial]
+  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsPbrPbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsPbrPbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial]
 }

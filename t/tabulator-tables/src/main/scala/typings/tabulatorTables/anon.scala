@@ -103,6 +103,8 @@ object anon {
     
     var cellEditing: js.UndefOr[CellEditEventCallback] = js.undefined
     
+    var cellMouseDown: js.UndefOr[CellEventCallback] = js.undefined
+    
     var cellMouseEnter: js.UndefOr[CellEventCallback] = js.undefined
     
     var cellMouseLeave: js.UndefOr[CellEventCallback] = js.undefined
@@ -112,6 +114,8 @@ object anon {
     var cellMouseOut: js.UndefOr[CellEventCallback] = js.undefined
     
     var cellMouseOver: js.UndefOr[CellEventCallback] = js.undefined
+    
+    var cellMouseUp: js.UndefOr[CellEventCallback] = js.undefined
     
     var cellPopup: js.UndefOr[
         String | (js.Function3[
@@ -135,6 +139,10 @@ object anon {
     var contextMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
     
     var cssClass: js.UndefOr[String] = js.undefined
+    
+    var dblClickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
+    
+    var dblClickPopup: js.UndefOr[String] = js.undefined
     
     var download: js.UndefOr[Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])] = js.undefined
     
@@ -174,6 +182,10 @@ object anon {
     
     var headerDblClick: js.UndefOr[ColumnEventCallback] = js.undefined
     
+    var headerDblClickMenu: js.UndefOr[js.Array[MenuObject[CellComponent] | MenuSeparator]] = js.undefined
+    
+    var headerDblClickPopup: js.UndefOr[String] = js.undefined
+    
     var headerDblTap: js.UndefOr[ColumnEventCallback] = js.undefined
     
     var headerFilter: js.UndefOr[Editor] = js.undefined
@@ -202,6 +214,14 @@ object anon {
     
     var headerMenu: js.UndefOr[js.Array[MenuObject[ColumnComponent] | MenuSeparator]] = js.undefined
     
+    var headerMenuIcon: js.UndefOr[
+        String | HTMLElement | (js.Function1[/* component */ ColumnComponent, HTMLElement | String])
+      ] = js.undefined
+    
+    var headerMouseDown: js.UndefOr[ColumnEventCallback] = js.undefined
+    
+    var headerMouseUp: js.UndefOr[ColumnEventCallback] = js.undefined
+    
     var headerSort: js.UndefOr[Boolean] = js.undefined
     
     var headerSortStartingDir: js.UndefOr[SortDirection] = js.undefined
@@ -215,6 +235,8 @@ object anon {
     var headerTooltip: js.UndefOr[Boolean | String | (js.Function1[/* column */ ColumnComponent, String])] = js.undefined
     
     var headerVertical: js.UndefOr[Boolean | flip] = js.undefined
+    
+    var headerWordWrap: js.UndefOr[Boolean] = js.undefined
     
     var hideInHtml: js.UndefOr[Boolean] = js.undefined
     
@@ -436,6 +458,10 @@ object anon {
       
       inline def setCellEditingUndefined: Self = StObject.set(x, "cellEditing", js.undefined)
       
+      inline def setCellMouseDown(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseDown", js.Any.fromFunction2(value))
+      
+      inline def setCellMouseDownUndefined: Self = StObject.set(x, "cellMouseDown", js.undefined)
+      
       inline def setCellMouseEnter(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseEnter", js.Any.fromFunction2(value))
       
       inline def setCellMouseEnterUndefined: Self = StObject.set(x, "cellMouseEnter", js.undefined)
@@ -455,6 +481,10 @@ object anon {
       inline def setCellMouseOver(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseOver", js.Any.fromFunction2(value))
       
       inline def setCellMouseOverUndefined: Self = StObject.set(x, "cellMouseOver", js.undefined)
+      
+      inline def setCellMouseUp(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellMouseUp", js.Any.fromFunction2(value))
+      
+      inline def setCellMouseUpUndefined: Self = StObject.set(x, "cellMouseUp", js.undefined)
       
       inline def setCellPopup(
         value: String | (js.Function3[
@@ -506,6 +536,16 @@ object anon {
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      
+      inline def setDblClickMenu(value: js.Array[MenuObject[CellComponent] | MenuSeparator]): Self = StObject.set(x, "dblClickMenu", value.asInstanceOf[js.Any])
+      
+      inline def setDblClickMenuUndefined: Self = StObject.set(x, "dblClickMenu", js.undefined)
+      
+      inline def setDblClickMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "dblClickMenu", js.Array(value*))
+      
+      inline def setDblClickPopup(value: String): Self = StObject.set(x, "dblClickPopup", value.asInstanceOf[js.Any])
+      
+      inline def setDblClickPopupUndefined: Self = StObject.set(x, "dblClickPopup", js.undefined)
       
       inline def setDownload(value: Boolean | (js.Function1[/* column */ ColumnComponent, Boolean])): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -617,6 +657,16 @@ object anon {
       
       inline def setHeaderDblClick(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerDblClick", js.Any.fromFunction2(value))
       
+      inline def setHeaderDblClickMenu(value: js.Array[MenuObject[CellComponent] | MenuSeparator]): Self = StObject.set(x, "headerDblClickMenu", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderDblClickMenuUndefined: Self = StObject.set(x, "headerDblClickMenu", js.undefined)
+      
+      inline def setHeaderDblClickMenuVarargs(value: (MenuObject[CellComponent] | MenuSeparator)*): Self = StObject.set(x, "headerDblClickMenu", js.Array(value*))
+      
+      inline def setHeaderDblClickPopup(value: String): Self = StObject.set(x, "headerDblClickPopup", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderDblClickPopupUndefined: Self = StObject.set(x, "headerDblClickPopup", js.undefined)
+      
       inline def setHeaderDblClickUndefined: Self = StObject.set(x, "headerDblClick", js.undefined)
       
       inline def setHeaderDblTap(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerDblTap", js.Any.fromFunction2(value))
@@ -675,9 +725,25 @@ object anon {
       
       inline def setHeaderMenu(value: js.Array[MenuObject[ColumnComponent] | MenuSeparator]): Self = StObject.set(x, "headerMenu", value.asInstanceOf[js.Any])
       
+      inline def setHeaderMenuIcon(
+        value: String | HTMLElement | (js.Function1[/* component */ ColumnComponent, HTMLElement | String])
+      ): Self = StObject.set(x, "headerMenuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderMenuIconFunction1(value: /* component */ ColumnComponent => HTMLElement | String): Self = StObject.set(x, "headerMenuIcon", js.Any.fromFunction1(value))
+      
+      inline def setHeaderMenuIconUndefined: Self = StObject.set(x, "headerMenuIcon", js.undefined)
+      
       inline def setHeaderMenuUndefined: Self = StObject.set(x, "headerMenu", js.undefined)
       
       inline def setHeaderMenuVarargs(value: (MenuObject[ColumnComponent] | MenuSeparator)*): Self = StObject.set(x, "headerMenu", js.Array(value*))
+      
+      inline def setHeaderMouseDown(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerMouseDown", js.Any.fromFunction2(value))
+      
+      inline def setHeaderMouseDownUndefined: Self = StObject.set(x, "headerMouseDown", js.undefined)
+      
+      inline def setHeaderMouseUp(value: (/* e */ UIEvent, /* column */ ColumnComponent) => Unit): Self = StObject.set(x, "headerMouseUp", js.Any.fromFunction2(value))
+      
+      inline def setHeaderMouseUpUndefined: Self = StObject.set(x, "headerMouseUp", js.undefined)
       
       inline def setHeaderSort(value: Boolean): Self = StObject.set(x, "headerSort", value.asInstanceOf[js.Any])
       
@@ -708,6 +774,10 @@ object anon {
       inline def setHeaderVertical(value: Boolean | flip): Self = StObject.set(x, "headerVertical", value.asInstanceOf[js.Any])
       
       inline def setHeaderVerticalUndefined: Self = StObject.set(x, "headerVertical", js.undefined)
+      
+      inline def setHeaderWordWrap(value: Boolean): Self = StObject.set(x, "headerWordWrap", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderWordWrapUndefined: Self = StObject.set(x, "headerWordWrap", js.undefined)
       
       inline def setHideInHtml(value: Boolean): Self = StObject.set(x, "hideInHtml", value.asInstanceOf[js.Any])
       

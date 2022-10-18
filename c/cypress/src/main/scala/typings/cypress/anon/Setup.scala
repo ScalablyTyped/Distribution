@@ -3,11 +3,14 @@ package typings.cypress.anon
 import typings.cypress.JQuery.EventHandler
 import typings.cypress.JQuery._SpecialEventHook
 import typings.cypress.cypressBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Setup[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
+trait Setup[TTarget, TData]
+  extends StObject
+     with _SpecialEventHook[TTarget, TData] {
+  
   /**
     * The setup hook is called the first time an event of a particular type is attached to an element; this provides the hook an opportunity to do processing that will apply to all events of this type on this element. The `this` keyword will be a reference to the element where the event is being attached and `eventHandle` is jQuery's event handler function. In most cases the `namespaces` argument should not be used, since it only represents the namespaces of the _first_ event being attached; subsequent events may not have this same namespaces.
     *
@@ -16,12 +19,15 @@ trait Setup[TTarget, TData] extends _SpecialEventHook[TTarget, TData] {
     */
   def setup(data: TData, namespaces: String, eventHandle: EventHandler[TTarget, TData]): Unit | `false`
 }
-
 object Setup {
-  @scala.inline
-  def apply[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Setup[TTarget, TData] = {
+  
+  inline def apply[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Setup[TTarget, TData] = {
     val __obj = js.Dynamic.literal(setup = js.Any.fromFunction3(setup))
     __obj.asInstanceOf[Setup[TTarget, TData]]
   }
+  
+  extension [Self <: Setup[?, ?], TTarget, TData](x: Self & (Setup[TTarget, TData])) {
+    
+    inline def setSetup(value: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Self = StObject.set(x, "setup", js.Any.fromFunction3(value))
+  }
 }
-

@@ -4,6 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "VideoElement")
+/* note: abstract class */ @JSImport("k6/html", "VideoElement")
 @js.native
-abstract class VideoElement () extends MediaElement
+open class VideoElement () extends MediaElement

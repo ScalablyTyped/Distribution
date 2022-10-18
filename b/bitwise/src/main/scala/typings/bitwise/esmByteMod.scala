@@ -23,7 +23,7 @@ object esmByteMod {
     inline def write(byte: Byte): UInt8 = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(byte.asInstanceOf[js.Any]).asInstanceOf[UInt8]
   }
   
-  inline def read(byte: UInt8): Byte = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(byte.asInstanceOf[js.Any]).asInstanceOf[Byte]
+  inline def read(byte: typings.bitwise.esmTypesMod.UInt8): typings.bitwise.esmTypesMod.Byte = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(byte.asInstanceOf[js.Any]).asInstanceOf[typings.bitwise.esmTypesMod.Byte]
   
-  inline def write(byte: Byte): UInt8 = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(byte.asInstanceOf[js.Any]).asInstanceOf[UInt8]
+  inline def write(byte: typings.bitwise.esmTypesMod.Byte): typings.bitwise.esmTypesMod.UInt8 = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(byte.asInstanceOf[js.Any]).asInstanceOf[typings.bitwise.esmTypesMod.UInt8]
 }

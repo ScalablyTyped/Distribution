@@ -1,7 +1,7 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.clipboardOperationsMod.ClipboardCell
-import typings.hyperformula.namedExpressionsMod.InternalNamedExpression
+import typings.hyperformula.typingsClipboardOperationsMod.ClipboardCell
+import typings.hyperformula.typingsNamedExpressionsMod.InternalNamedExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

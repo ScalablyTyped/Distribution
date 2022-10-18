@@ -1,8 +1,8 @@
 package typings.firebaseAnalytics.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAnalytics.srcTypesMod.DynamicConfig
-import typings.firebaseAnalytics.srcTypesMod.MinimalDynamicConfig
+import typings.firebaseAnalytics.distSrcTypesMod.DynamicConfig
+import typings.firebaseAnalytics.distSrcTypesMod.MinimalDynamicConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

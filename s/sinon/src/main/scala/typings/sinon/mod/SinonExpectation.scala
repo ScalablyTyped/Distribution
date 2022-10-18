@@ -450,7 +450,9 @@ trait SinonExpectation extends StObject {
     * Since sinon@2.0.0
     */
   def resolves(): SinonStub[js.Array[Any], Any] = js.native
-  def resolves(value: Any): SinonStub[js.Array[Any], Any] = js.native
+  def resolves(
+    value: /* import warning: importer.ImportType#apply Failed type conversion: any extends std.PromiseLike<infer TResolveValue> ? TResolveValue : any */ js.Any
+  ): SinonStub[js.Array[Any], Any] = js.native
   
   /**
     * Causes the stub to return a Promise which resolves to the argument at the provided index.

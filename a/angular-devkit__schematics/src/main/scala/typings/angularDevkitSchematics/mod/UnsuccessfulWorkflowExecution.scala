@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnsuccessfulWorkflowExecution")
 @js.native
 open class UnsuccessfulWorkflowExecution ()
-  extends typings.angularDevkitSchematics.exceptionMod.UnsuccessfulWorkflowExecution
+  extends typings.angularDevkitSchematics.srcExceptionExceptionMod.UnsuccessfulWorkflowExecution

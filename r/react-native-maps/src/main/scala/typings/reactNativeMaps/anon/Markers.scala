@@ -1,6 +1,6 @@
 package typings.reactNativeMaps.anon
 
-import typings.reactNativeMaps.mod.KmlMarker
+import typings.reactNativeMaps.libMapViewDottypesMod.KmlMarker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +20,6 @@ object Markers {
     
     inline def setMarkers(value: js.Array[KmlMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    inline def setMarkersVarargs(value: KmlMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: KmlMarker*): Self = StObject.set(x, "markers", js.Array(value*))
   }
 }

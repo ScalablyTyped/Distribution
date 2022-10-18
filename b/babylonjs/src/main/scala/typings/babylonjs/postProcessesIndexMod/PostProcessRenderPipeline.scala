@@ -1,6 +1,6 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.enginesEngineMod.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "PostProcessRenderPipeline")
 @js.native
 open class PostProcessRenderPipeline protected ()
-  extends typings.babylonjs.renderPipelineIndexMod.PostProcessRenderPipeline {
+  extends typings.babylonjs.postProcessesRenderPipelineIndexMod.PostProcessRenderPipeline {
   /**
     * Initializes a PostProcessRenderPipeline
     * @param _engine engine to add the pipeline to

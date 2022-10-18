@@ -1,19 +1,19 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.PartialISkeletonViewerOpt
-import typings.babylonjs.boneMod.Bone
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.directionalLightMod.DirectionalLight
-import typings.babylonjs.iskeletonviewerMod.IBoneWeightShaderOptions
-import typings.babylonjs.iskeletonviewerMod.ISkeletonMapShaderOptions
-import typings.babylonjs.mathColorMod.Color3
-import typings.babylonjs.meshMod.Mesh
-import typings.babylonjs.rayMod.Ray
+import typings.babylonjs.bonesBoneMod.Bone
+import typings.babylonjs.bonesSkeletonMod.Skeleton
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.cullingRayMod.Ray
+import typings.babylonjs.debugIskeletonviewerMod.IBoneWeightShaderOptions
+import typings.babylonjs.debugIskeletonviewerMod.ISkeletonMapShaderOptions
+import typings.babylonjs.lightsDirectionalLightMod.DirectionalLight
+import typings.babylonjs.materialsShaderMaterialMod.ShaderMaterial
+import typings.babylonjs.mathsMathDotcolorMod.Color3
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
+import typings.babylonjs.meshesMeshMod.Mesh
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.shaderMaterialMod.ShaderMaterial
-import typings.babylonjs.skeletonMod.Skeleton
-import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object debugIndexMod {
   @JSImport("babylonjs/Debug/index", "AxesViewer")
   @js.native
   open class AxesViewer protected ()
-    extends typings.babylonjs.axesViewerMod.AxesViewer {
+    extends typings.babylonjs.debugAxesViewerMod.AxesViewer {
     /**
       * Creates a new AxesViewer
       * @param scene defines the hosting scene
@@ -61,7 +61,7 @@ object debugIndexMod {
   @JSImport("babylonjs/Debug/index", "BoneAxesViewer")
   @js.native
   open class BoneAxesViewer protected ()
-    extends typings.babylonjs.boneAxesViewerMod.BoneAxesViewer {
+    extends typings.babylonjs.debugBoneAxesViewerMod.BoneAxesViewer {
     /**
       * Creates a new BoneAxesViewer
       * @param scene defines the hosting scene
@@ -79,11 +79,11 @@ object debugIndexMod {
     * Instantiates a new debug layer.
     * The debug layer (aka Inspector) is the go to tool in order to better understand
     * what is happening in your scene
-    * @see https://doc.babylonjs.com/features/playground_debuglayer
+    * @see https://doc.babylonjs.com/toolsAndResources/inspector
     * @param scene Defines the scene to inspect
     */
   open class DebugLayer ()
-    extends typings.babylonjs.debugLayerMod.DebugLayer {
+    extends typings.babylonjs.debugDebugLayerMod.DebugLayer {
     def this(scene: Scene) = this()
   }
   /* static members */
@@ -109,23 +109,23 @@ object debugIndexMod {
   object DebugLayerTab extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.babylonjs.debugLayerMod.DebugLayerTab & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.babylonjs.debugDebugLayerMod.DebugLayerTab & Double] = js.native
     
-    /* 1 */ val Debug: typings.babylonjs.debugLayerMod.DebugLayerTab.Debug & Double = js.native
+    /* 1 */ val Debug: typings.babylonjs.debugDebugLayerMod.DebugLayerTab.Debug & Double = js.native
     
-    /* 0 */ val Properties: typings.babylonjs.debugLayerMod.DebugLayerTab.Properties & Double = js.native
+    /* 0 */ val Properties: typings.babylonjs.debugDebugLayerMod.DebugLayerTab.Properties & Double = js.native
     
-    /* 4 */ val Settings: typings.babylonjs.debugLayerMod.DebugLayerTab.Settings & Double = js.native
+    /* 4 */ val Settings: typings.babylonjs.debugDebugLayerMod.DebugLayerTab.Settings & Double = js.native
     
-    /* 2 */ val Statistics: typings.babylonjs.debugLayerMod.DebugLayerTab.Statistics & Double = js.native
+    /* 2 */ val Statistics: typings.babylonjs.debugDebugLayerMod.DebugLayerTab.Statistics & Double = js.native
     
-    /* 3 */ val Tools: typings.babylonjs.debugLayerMod.DebugLayerTab.Tools & Double = js.native
+    /* 3 */ val Tools: typings.babylonjs.debugDebugLayerMod.DebugLayerTab.Tools & Double = js.native
   }
   
   @JSImport("babylonjs/Debug/index", "DirectionalLightFrustumViewer")
   @js.native
   open class DirectionalLightFrustumViewer protected ()
-    extends typings.babylonjs.directionalLightFrustumViewerMod.DirectionalLightFrustumViewer {
+    extends typings.babylonjs.debugDirectionalLightFrustumViewerMod.DirectionalLightFrustumViewer {
     /**
       * Creates a new frustum viewer
       * @param light directional light to display the frustum for
@@ -141,14 +141,14 @@ object debugIndexMod {
     * @param scene defines the hosting scene
     */
   open class PhysicsViewer ()
-    extends typings.babylonjs.physicsViewerMod.PhysicsViewer {
+    extends typings.babylonjs.debugPhysicsViewerMod.PhysicsViewer {
     def this(scene: Scene) = this()
   }
   
   @JSImport("babylonjs/Debug/index", "RayHelper")
   @js.native
   open class RayHelper protected ()
-    extends typings.babylonjs.rayHelperMod.RayHelper {
+    extends typings.babylonjs.debugRayHelperMod.RayHelper {
     /**
       * Instantiate a new ray helper.
       * As raycast might be hard to debug, the RayHelper can help rendering the different rays
@@ -172,13 +172,13 @@ object debugIndexMod {
       * @param color Defines the color we want to see the ray in
       * @returns The newly created ray helper.
       */
-    inline def CreateAndShow(ray: Ray, scene: Scene, color: Color3): typings.babylonjs.rayHelperMod.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayHelperMod.RayHelper]
+    inline def CreateAndShow(ray: Ray, scene: Scene, color: Color3): typings.babylonjs.debugRayHelperMod.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.debugRayHelperMod.RayHelper]
   }
   
   @JSImport("babylonjs/Debug/index", "SkeletonViewer")
   @js.native
   open class SkeletonViewer protected ()
-    extends typings.babylonjs.skeletonViewerMod.SkeletonViewer {
+    extends typings.babylonjs.debugSkeletonViewerMod.SkeletonViewer {
     /**
       * Creates a new SkeletonViewer
       * @param skeleton defines the skeleton to render
@@ -345,19 +345,19 @@ object debugIndexMod {
         * @internal
         * Backing field
         */
-      var _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer
+      var _debugLayer: typings.babylonjs.debugDebugLayerMod.DebugLayer
       
       /**
         * Gets the debug layer (aka Inspector) associated with the scene
-        * @see https://doc.babylonjs.com/features/playground_debuglayer
+        * @see https://doc.babylonjs.com/toolsAndResources/inspector
         */
-      var debugLayer: typings.babylonjs.debugLayerMod.DebugLayer
+      var debugLayer: typings.babylonjs.debugDebugLayerMod.DebugLayer
     }
     object Scene {
       
       inline def apply(
-        _debugLayer: typings.babylonjs.debugLayerMod.DebugLayer,
-        debugLayer: typings.babylonjs.debugLayerMod.DebugLayer
+        _debugLayer: typings.babylonjs.debugDebugLayerMod.DebugLayer,
+        debugLayer: typings.babylonjs.debugDebugLayerMod.DebugLayer
       ): typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene = {
         val __obj = js.Dynamic.literal(_debugLayer = _debugLayer.asInstanceOf[js.Any], debugLayer = debugLayer.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene]
@@ -365,9 +365,9 @@ object debugIndexMod {
       
       extension [Self <: typings.babylonjs.debugIndexMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
         
-        inline def setDebugLayer(value: typings.babylonjs.debugLayerMod.DebugLayer): Self = StObject.set(x, "debugLayer", value.asInstanceOf[js.Any])
+        inline def setDebugLayer(value: typings.babylonjs.debugDebugLayerMod.DebugLayer): Self = StObject.set(x, "debugLayer", value.asInstanceOf[js.Any])
         
-        inline def set_debugLayer(value: typings.babylonjs.debugLayerMod.DebugLayer): Self = StObject.set(x, "_debugLayer", value.asInstanceOf[js.Any])
+        inline def set_debugLayer(value: typings.babylonjs.debugDebugLayerMod.DebugLayer): Self = StObject.set(x, "_debugLayer", value.asInstanceOf[js.Any])
       }
     }
   }

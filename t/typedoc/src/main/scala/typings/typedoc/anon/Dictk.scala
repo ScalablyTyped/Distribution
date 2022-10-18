@@ -1,7 +1,7 @@
 package typings.typedoc.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.typedoc.validationMod.Schema
+import typings.typedoc.distLibUtilsValidationMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

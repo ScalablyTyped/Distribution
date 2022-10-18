@@ -10,7 +10,7 @@ sealed trait AttachmentType extends StObject
   * Specifies an attachment's type.
   *
   * @remarks
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.AttachmentType")

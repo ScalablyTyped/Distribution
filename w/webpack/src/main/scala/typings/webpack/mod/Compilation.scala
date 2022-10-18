@@ -5,8 +5,7 @@ import typings.std.Set
 import typings.std.WeakMap
 import typings.std.WeakSet
 import typings.webpack.anon.Add
-import typings.webpack.anon.ChunkGraphEntries
-import typings.webpack.anon.ContextInfo
+import typings.webpack.anon.Context
 import typings.webpack.anon.FactorizeModuleOptionsfac
 import typings.webpack.anon.FactorizeModuleOptionsfacContext
 import typings.webpack.anon.Info
@@ -17,13 +16,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "Compilation")
 @js.native
-open class Compilation protected () extends StObject {
-  /**
-  	 * Creates an instance of Compilation.
-  	 */
-  def this(compiler: Compiler, params: CompilationParams) = this()
+trait Compilation extends StObject {
   
   def addAsyncEntrypoint(options: EntryOptions, module: Module, loc: DependencyLocation, request: String): Entrypoint = js.native
   
@@ -96,7 +90,7 @@ open class Compilation protected () extends StObject {
   var addModuleQueue: AsyncQueue[Module, String, Module] = js.native
   
   def addModuleTree(
-    __0: ContextInfo,
+    __0: Context,
     callback: js.Function2[/* err */ js.UndefOr[Null | WebpackError], /* result */ js.UndefOr[Module], Unit]
   ): Unit = js.native
   
@@ -383,7 +377,7 @@ open class Compilation protected () extends StObject {
   def processModuleDependenciesNonRecursive(module: Module): Unit = js.native
   
   def processRuntimeRequirements(): Unit = js.native
-  def processRuntimeRequirements(__0: ChunkGraphEntries): Unit = js.native
+  def processRuntimeRequirements(__0: typings.webpack.anon.ChunkGraph): Unit = js.native
   
   var profile: Boolean = js.native
   
@@ -449,151 +443,4 @@ open class Compilation protected () extends StObject {
   var valueCacheVersions: Map[String, String | Set[String]] = js.native
   
   var warnings: js.Array[WebpackError] = js.native
-}
-object Compilation {
-  
-  @JSImport("webpack", "Compilation")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-  	 * Add additional assets to the compilation.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_ADDITIONAL")
-  @js.native
-  def PROCESS_ASSETS_STAGE_ADDITIONAL: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_ADDITIONAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_ADDITIONAL")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Add additional sections to existing assets, like a banner or initialization code.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_ADDITIONS")
-  @js.native
-  def PROCESS_ASSETS_STAGE_ADDITIONS: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_ADDITIONS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_ADDITIONS")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Analyse existing assets.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_ANALYSE")
-  @js.native
-  def PROCESS_ASSETS_STAGE_ANALYSE: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_ANALYSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_ANALYSE")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Derive new assets from existing assets.
-  	 * Existing assets should not be treated as complete.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_DERIVED")
-  @js.native
-  def PROCESS_ASSETS_STAGE_DERIVED: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_DERIVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_DERIVED")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Add development tooling to assets, e. g. by extracting a SourceMap.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_DEV_TOOLING")
-  @js.native
-  def PROCESS_ASSETS_STAGE_DEV_TOOLING: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_DEV_TOOLING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_DEV_TOOLING")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize existing assets in a general way.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize the compatibility of existing assets, e. g. add polyfills or vendor-prefixes.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_COMPATIBILITY")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE_COMPATIBILITY: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_COMPATIBILITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE_COMPATIBILITY")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize the count of existing assets, e. g. by merging them.
-  	 * Only assets of the same type should be merged.
-  	 * For assets of different types see PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_COUNT")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE_COUNT: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE_COUNT")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize the hashes of the assets, e. g. by generating real hashes of the asset content.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_HASH")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE_HASH: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_HASH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE_HASH")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize the count of existing assets, e. g. by inlining assets of into other assets.
-  	 * Only assets of different types should be inlined.
-  	 * For assets of the same type see PROCESS_ASSETS_STAGE_OPTIMIZE_COUNT.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize the size of existing assets, e. g. by minimizing or omitting whitespace.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_SIZE")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE_SIZE: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE_SIZE")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Optimize the transfer of existing assets, e. g. by preparing a compressed (gzip) file as separate asset.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_TRANSFER")
-  @js.native
-  def PROCESS_ASSETS_STAGE_OPTIMIZE_TRANSFER: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_OPTIMIZE_TRANSFER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_OPTIMIZE_TRANSFER")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Basic preprocessing of assets.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_PRE_PROCESS")
-  @js.native
-  def PROCESS_ASSETS_STAGE_PRE_PROCESS: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_PRE_PROCESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_PRE_PROCESS")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Creating assets for reporting purposes.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_REPORT")
-  @js.native
-  def PROCESS_ASSETS_STAGE_REPORT: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_REPORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_REPORT")(x.asInstanceOf[js.Any])
-  
-  /**
-  	 * Summarize the list of existing assets
-  	 * e. g. creating an assets manifest of Service Workers.
-  	 */
-  /* static member */
-  @JSImport("webpack", "Compilation.PROCESS_ASSETS_STAGE_SUMMARIZE")
-  @js.native
-  def PROCESS_ASSETS_STAGE_SUMMARIZE: Double = js.native
-  inline def PROCESS_ASSETS_STAGE_SUMMARIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESS_ASSETS_STAGE_SUMMARIZE")(x.asInstanceOf[js.Any])
 }

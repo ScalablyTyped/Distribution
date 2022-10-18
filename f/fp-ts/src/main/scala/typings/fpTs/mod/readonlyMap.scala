@@ -5,33 +5,33 @@ import typings.fpTs.anon.Fn22
 import typings.fpTs.anon.Fn23
 import typings.fpTs.anon.Fn24
 import typings.fpTs.anon.Fn25
-import typings.fpTs.compactableMod.Compactable2
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.filterableMod.Filterable2
-import typings.fpTs.filterableWithIndexMod.FilterableWithIndex2C
-import typings.fpTs.foldableMod.Foldable
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.foldableMod.Foldable2
-import typings.fpTs.foldableMod.Foldable2C
-import typings.fpTs.foldableMod.Foldable3
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex2C
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.functorWithIndexMod.FunctorWithIndex2C
-import typings.fpTs.magmaMod.Magma
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.ordMod.Ord_
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.separatedMod.Separated_
-import typings.fpTs.showMod.Show
-import typings.fpTs.traversableMod.Traversable2C
-import typings.fpTs.traversableWithIndexMod.TraversableWithIndex2C
-import typings.fpTs.unfoldableMod.Unfoldable
-import typings.fpTs.unfoldableMod.Unfoldable1
-import typings.fpTs.witherableMod.Witherable2C
+import typings.fpTs.libCompactableMod.Compactable2
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFilterableMod.Filterable2
+import typings.fpTs.libFilterableWithIndexMod.FilterableWithIndex2C
+import typings.fpTs.libFoldableMod.Foldable
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFoldableMod.Foldable2
+import typings.fpTs.libFoldableMod.Foldable2C
+import typings.fpTs.libFoldableMod.Foldable3
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex2C
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libFunctorWithIndexMod.FunctorWithIndex2C
+import typings.fpTs.libMagmaMod.Magma
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libOrdMod.Ord_
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSeparatedMod.Separated_
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTraversableMod.Traversable2C
+import typings.fpTs.libTraversableWithIndexMod.TraversableWithIndex2C
+import typings.fpTs.libUnfoldableMod.Unfoldable
+import typings.fpTs.libUnfoldableMod.Unfoldable1
+import typings.fpTs.libWitherableMod.Witherable2C
 import typings.std.Map
 import typings.std.ReadonlyMap
 import org.scalablytyped.runtime.StObject
@@ -46,15 +46,15 @@ object readonlyMap {
   
   @JSImport("fp-ts", "readonlyMap.Compactable")
   @js.native
-  val Compactable: Compactable2[typings.fpTs.readonlyMapMod.URI] = js.native
+  val Compactable: Compactable2[typings.fpTs.libReadonlyMapMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyMap.Filterable")
   @js.native
-  val Filterable: Filterable2[typings.fpTs.readonlyMapMod.URI] = js.native
+  val Filterable: Filterable2[typings.fpTs.libReadonlyMapMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyMap.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.readonlyMapMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libReadonlyMapMod.URI] = js.native
   
   @JSImport("fp-ts", "readonlyMap.URI")
   @js.native
@@ -80,7 +80,7 @@ object readonlyMap {
     js.Function1[/* first */ ReadonlyMap[K, Any], ReadonlyMap[K, Any]]
   ]]
   
-  inline def elem[A](E: Eq[A]): Fn22[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[Fn22[A]]
+  inline def elem[A](E: Eq[A]): Fn21[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[Fn21[A]]
   
   @JSImport("fp-ts", "readonlyMap.empty")
   @js.native
@@ -163,7 +163,7 @@ object readonlyMap {
   
   inline def getEq[K, A](SK: Eq[K], SA: Eq[A]): Eq[ReadonlyMap[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Eq[ReadonlyMap[K, A]]]
   
-  inline def getFilterableWithIndex[K](): FilterableWithIndex2C[typings.fpTs.readonlyMapMod.URI, K, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterableWithIndex")().asInstanceOf[FilterableWithIndex2C[typings.fpTs.readonlyMapMod.URI, K, K]]
+  inline def getFilterableWithIndex[K](): FilterableWithIndex2C[typings.fpTs.libReadonlyMapMod.URI, K, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterableWithIndex")().asInstanceOf[FilterableWithIndex2C[typings.fpTs.libReadonlyMapMod.URI, K, K]]
   
   inline def getFoldable[K](O: Ord_[K]): Foldable2C[typings.fpTs.fpTsStrings.ReadonlyMap, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFoldable")(O.asInstanceOf[js.Any]).asInstanceOf[Foldable2C[typings.fpTs.fpTsStrings.ReadonlyMap, K]]
   
@@ -185,7 +185,7 @@ object readonlyMap {
   
   inline def getUnionSemigroup[K, A](E: Eq[K], S: Semigroup[A]): Semigroup[ReadonlyMap[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnionSemigroup")(E.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[Semigroup[ReadonlyMap[K, A]]]
   
-  inline def getWitherable[K](O: Ord_[K]): (Witherable2C[typings.fpTs.readonlyMapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.readonlyMapMod.URI, K, K]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[(Witherable2C[typings.fpTs.readonlyMapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.readonlyMapMod.URI, K, K])]
+  inline def getWitherable[K](O: Ord_[K]): (Witherable2C[typings.fpTs.libReadonlyMapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.libReadonlyMapMod.URI, K, K]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[(Witherable2C[typings.fpTs.libReadonlyMapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.libReadonlyMapMod.URI, K, K])]
   
   inline def insertAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 
@@ -207,19 +207,19 @@ object readonlyMap {
   
   inline def isEmpty[K, A](m: ReadonlyMap[K, A]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(m.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isSubmap[K, A](SK: Eq[K], SA: Eq[A]): Fn25[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubmap")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Fn25[K, A]]
+  inline def isSubmap[K, A](SK: Eq[K], SA: Eq[A]): Fn22[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubmap")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Fn22[K, A]]
   
   inline def keys[K](O: Ord_[K]): js.Function1[/* m */ ReadonlyMap[K, Any], js.Array[K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ ReadonlyMap[K, Any], js.Array[K]]]
   
-  inline def lookup[K](E: Eq[K]): Fn24[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn24[K]]
+  inline def lookup[K](E: Eq[K]): Fn23[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn23[K]]
   
-  inline def lookupWithKey[K](E: Eq[K]): Fn23[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn23[K]]
+  inline def lookupWithKey[K](E: Eq[K]): Fn24[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn24[K]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[Any, A], ReadonlyMap[Any, B]]]
   
   inline def mapWithIndex[K, A, B](f: js.Function2[/* k */ K, /* a */ A, B]): js.Function1[/* fa */ ReadonlyMap[K, A], ReadonlyMap[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ ReadonlyMap[K, A], ReadonlyMap[K, B]]]
   
-  inline def member[K](E: Eq[K]): Fn21[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[Fn21[K]]
+  inline def member[K](E: Eq[K]): Fn25[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[Fn25[K]]
   
   inline def modifyAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 
@@ -253,7 +253,7 @@ object readonlyMap {
   
   @JSImport("fp-ts", "readonlyMap.readonlyMap")
   @js.native
-  val readonlyMap: Filterable2[typings.fpTs.readonlyMapMod.URI] = js.native
+  val readonlyMap: Filterable2[typings.fpTs.libReadonlyMapMod.URI] = js.native
   
   inline def reduce[K](O: Ord_[K]): js.Function2[
     /* b */ Any, 

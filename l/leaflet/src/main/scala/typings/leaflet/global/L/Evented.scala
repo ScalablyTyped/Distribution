@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("L.Evented")
+/* note: abstract class */ @JSGlobal("L.Evented")
 @js.native
-abstract class Evented ()
+open class Evented ()
   extends typings.leaflet.mod.Evented

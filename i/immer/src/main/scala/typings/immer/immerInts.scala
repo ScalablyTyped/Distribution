@@ -1,7 +1,7 @@
 package typings.immer
 
-import typings.immer.typesInternalMod.Archtype
-import typings.immer.typesInternalMod.ProxyType
+import typings.immer.distTypesTypesInternalMod.Archtype
+import typings.immer.distTypesTypesInternalMod.ProxyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

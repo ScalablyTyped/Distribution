@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Rendering/index", "RenderingGroupInfo")
 @js.native
 open class RenderingGroupInfo ()
-  extends typings.babylonjs.renderingManagerMod.RenderingGroupInfo
+  extends typings.babylonjs.renderingRenderingManagerMod.RenderingGroupInfo

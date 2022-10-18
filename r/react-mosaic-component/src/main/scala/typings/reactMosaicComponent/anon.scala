@@ -1,26 +1,26 @@
 package typings.reactMosaicComponent
 
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.reactDnd.optionsMod.DragPreviewOptions
-import typings.reactDnd.optionsMod.DragSourceOptions
-import typings.reactDnd.typesConnectorsMod.ConnectDragPreview
-import typings.reactDnd.typesConnectorsMod.ConnectDragSource
-import typings.reactDnd.typesConnectorsMod.ConnectDropTarget
-import typings.reactDnd.typesConnectorsMod.ConnectableElement
-import typings.reactMosaicComponent.mosaicWindowMod.MosaicWindowProps
+import typings.reactDnd.distTypesConnectorsMod.ConnectDragPreview
+import typings.reactDnd.distTypesConnectorsMod.ConnectDragSource
+import typings.reactDnd.distTypesConnectorsMod.ConnectDropTarget
+import typings.reactDnd.distTypesConnectorsMod.ConnectableElement
+import typings.reactDnd.distTypesOptionsMod.DragPreviewOptions
+import typings.reactDnd.distTypesOptionsMod.DragSourceOptions
+import typings.reactMosaicComponent.libMosaicWindowMod.MosaicWindowProps
+import typings.reactMosaicComponent.libTypesMod.CreateNode
+import typings.reactMosaicComponent.libTypesMod.MosaicBranch
+import typings.reactMosaicComponent.libTypesMod.MosaicKey
+import typings.reactMosaicComponent.libTypesMod.MosaicNode
 import typings.reactMosaicComponent.reactMosaicComponentStrings.drop
-import typings.reactMosaicComponent.reactMosaicComponentStrings.large_
+import typings.reactMosaicComponent.reactMosaicComponentStrings.large
 import typings.reactMosaicComponent.reactMosaicComponentStrings.reset__
 import typings.reactMosaicComponent.reactMosaicComponentStrings.standard
-import typings.reactMosaicComponent.typesMod.CreateNode
-import typings.reactMosaicComponent.typesMod.MosaicBranch
-import typings.reactMosaicComponent.typesMod.MosaicKey
-import typings.reactMosaicComponent.typesMod.MosaicNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,14 +120,14 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1116 */ Any
+    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     
-    var size: js.UndefOr[standard | large_] = js.undefined
+    var size: js.UndefOr[standard | large] = js.undefined
   }
   object Icon {
     
     inline def apply(
-      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1116 */ Any
+      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     ): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
@@ -140,10 +140,10 @@ object anon {
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setIcon(
-        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1116 */ Any
+        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setSize(value: standard | large_): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: standard | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
@@ -392,6 +392,8 @@ object anon {
     
     var ALIGN_RIGHT: BlueprintIcons16Id
     
+    var ANCHOR: BlueprintIcons16Id
+    
     var ANNOTATION: BlueprintIcons16Id
     
     var ANTENNA: BlueprintIcons16Id
@@ -483,6 +485,8 @@ object anon {
     var AlignmentTop: BlueprintIcons16Id
     
     var AlignmentVerticalCenter: BlueprintIcons16Id
+    
+    var Anchor: BlueprintIcons16Id
     
     var Annotation: BlueprintIcons16Id
     
@@ -1956,6 +1960,8 @@ object anon {
     
     var REFRESH: BlueprintIcons16Id
     
+    var REGEX: BlueprintIcons16Id
+    
     var REGRESSION_CHART: BlueprintIcons16Id
     
     var REMOVE: BlueprintIcons16Id
@@ -2007,6 +2013,8 @@ object anon {
     var Redo: BlueprintIcons16Id
     
     var Refresh: BlueprintIcons16Id
+    
+    var Regex: BlueprintIcons16Id
     
     var RegressionChart: BlueprintIcons16Id
     
@@ -2627,6 +2635,8 @@ object anon {
       inline def setALIGN_LEFT(value: BlueprintIcons16Id): Self = StObject.set(x, "ALIGN_LEFT", value.asInstanceOf[js.Any])
       
       inline def setALIGN_RIGHT(value: BlueprintIcons16Id): Self = StObject.set(x, "ALIGN_RIGHT", value.asInstanceOf[js.Any])
+      
+      inline def setANCHOR(value: BlueprintIcons16Id): Self = StObject.set(x, "ANCHOR", value.asInstanceOf[js.Any])
       
       inline def setANNOTATION(value: BlueprintIcons16Id): Self = StObject.set(x, "ANNOTATION", value.asInstanceOf[js.Any])
       
@@ -3853,6 +3863,8 @@ object anon {
       inline def setREDO(value: BlueprintIcons16Id): Self = StObject.set(x, "REDO", value.asInstanceOf[js.Any])
       
       inline def setREFRESH(value: BlueprintIcons16Id): Self = StObject.set(x, "REFRESH", value.asInstanceOf[js.Any])
+      
+      inline def setREGEX(value: BlueprintIcons16Id): Self = StObject.set(x, "REGEX", value.asInstanceOf[js.Any])
       
       inline def setREGRESSION_CHART(value: BlueprintIcons16Id): Self = StObject.set(x, "REGRESSION_CHART", value.asInstanceOf[js.Any])
       

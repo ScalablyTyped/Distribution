@@ -8,43 +8,43 @@ import typings.awsSdkClientSts.anon.ExceptionOptionTypeMalfor
 import typings.awsSdkClientSts.anon.ExceptionOptionTypePacked
 import typings.awsSdkClientSts.anon.ExceptionOptionTypeRegion
 import typings.awsSdkClientSts.anon.PickSTSClientConfiglogger
-import typings.awsSdkClientSts.assumeRoleCommandMod.AssumeRoleCommandInput
-import typings.awsSdkClientSts.assumeRoleWithSAMLCommandMod.AssumeRoleWithSAMLCommandInput
-import typings.awsSdkClientSts.assumeRoleWithWebIdentityCommandMod.AssumeRoleWithWebIdentityCommandInput
-import typings.awsSdkClientSts.decodeAuthorizationMessageCommandMod.DecodeAuthorizationMessageCommandInput
-import typings.awsSdkClientSts.defaultStsRoleAssumersMod.DefaultCredentialProvider
-import typings.awsSdkClientSts.defaultStsRoleAssumersMod.RoleAssumer
-import typings.awsSdkClientSts.defaultStsRoleAssumersMod.RoleAssumerWithWebIdentity
-import typings.awsSdkClientSts.getAccessKeyInfoCommandMod.GetAccessKeyInfoCommandInput
-import typings.awsSdkClientSts.getCallerIdentityCommandMod.GetCallerIdentityCommandInput
-import typings.awsSdkClientSts.getFederationTokenCommandMod.GetFederationTokenCommandInput
-import typings.awsSdkClientSts.getSessionTokenCommandMod.GetSessionTokenCommandInput
-import typings.awsSdkClientSts.models0Mod.AssumeRoleRequest
-import typings.awsSdkClientSts.models0Mod.AssumeRoleResponse
-import typings.awsSdkClientSts.models0Mod.AssumeRoleWithSAMLRequest
-import typings.awsSdkClientSts.models0Mod.AssumeRoleWithSAMLResponse
-import typings.awsSdkClientSts.models0Mod.AssumeRoleWithWebIdentityRequest
-import typings.awsSdkClientSts.models0Mod.AssumeRoleWithWebIdentityResponse
-import typings.awsSdkClientSts.models0Mod.AssumedRoleUser
-import typings.awsSdkClientSts.models0Mod.Credentials
-import typings.awsSdkClientSts.models0Mod.DecodeAuthorizationMessageRequest
-import typings.awsSdkClientSts.models0Mod.DecodeAuthorizationMessageResponse
-import typings.awsSdkClientSts.models0Mod.FederatedUser
-import typings.awsSdkClientSts.models0Mod.GetAccessKeyInfoRequest
-import typings.awsSdkClientSts.models0Mod.GetAccessKeyInfoResponse
-import typings.awsSdkClientSts.models0Mod.GetCallerIdentityRequest
-import typings.awsSdkClientSts.models0Mod.GetCallerIdentityResponse
-import typings.awsSdkClientSts.models0Mod.GetFederationTokenRequest
-import typings.awsSdkClientSts.models0Mod.GetFederationTokenResponse
-import typings.awsSdkClientSts.models0Mod.GetSessionTokenRequest
-import typings.awsSdkClientSts.models0Mod.GetSessionTokenResponse
-import typings.awsSdkClientSts.models0Mod.PolicyDescriptorType
-import typings.awsSdkClientSts.models0Mod.Tag
-import typings.awsSdkClientSts.stsclientMod.STSClientConfig
-import typings.awsSdkClientSts.stsclientMod.ServiceInputTypes
-import typings.awsSdkClientSts.stsclientMod.ServiceOutputTypes
-import typings.awsSdkSmithyClient.exceptionsMod.ServiceExceptionOptions
-import typings.awsSdkTypes.middlewareMod.Pluggable
+import typings.awsSdkClientSts.distTypesCommandsAssumeRoleCommandMod.AssumeRoleCommandInput
+import typings.awsSdkClientSts.distTypesCommandsAssumeRoleWithSAMLCommandMod.AssumeRoleWithSAMLCommandInput
+import typings.awsSdkClientSts.distTypesCommandsAssumeRoleWithWebIdentityCommandMod.AssumeRoleWithWebIdentityCommandInput
+import typings.awsSdkClientSts.distTypesCommandsDecodeAuthorizationMessageCommandMod.DecodeAuthorizationMessageCommandInput
+import typings.awsSdkClientSts.distTypesCommandsGetAccessKeyInfoCommandMod.GetAccessKeyInfoCommandInput
+import typings.awsSdkClientSts.distTypesCommandsGetCallerIdentityCommandMod.GetCallerIdentityCommandInput
+import typings.awsSdkClientSts.distTypesCommandsGetFederationTokenCommandMod.GetFederationTokenCommandInput
+import typings.awsSdkClientSts.distTypesCommandsGetSessionTokenCommandMod.GetSessionTokenCommandInput
+import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.DefaultCredentialProvider
+import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.RoleAssumer
+import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.RoleAssumerWithWebIdentity
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithSAMLRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithSAMLResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithWebIdentityRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithWebIdentityResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumedRoleUser
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.Credentials
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.DecodeAuthorizationMessageRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.DecodeAuthorizationMessageResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.FederatedUser
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetAccessKeyInfoRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetAccessKeyInfoResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetCallerIdentityRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetCallerIdentityResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetFederationTokenRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetFederationTokenResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetSessionTokenRequest
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetSessionTokenResponse
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.PolicyDescriptorType
+import typings.awsSdkClientSts.distTypesModelsModels0Mod.Tag
+import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
+import typings.awsSdkClientSts.distTypesStsclientMod.ServiceInputTypes
+import typings.awsSdkClientSts.distTypesStsclientMod.ServiceOutputTypes
+import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +58,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "AssumeRoleCommand")
   @js.native
   open class AssumeRoleCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.AssumeRoleCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleCommand {
     def this(input: AssumeRoleCommandInput) = this()
   }
   
@@ -69,7 +69,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "AssumeRoleWithSAMLCommand")
   @js.native
   open class AssumeRoleWithSAMLCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.AssumeRoleWithSAMLCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleWithSAMLCommand {
     def this(input: AssumeRoleWithSAMLCommandInput) = this()
   }
   
@@ -80,7 +80,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "AssumeRoleWithWebIdentityCommand")
   @js.native
   open class AssumeRoleWithWebIdentityCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.AssumeRoleWithWebIdentityCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleWithWebIdentityCommand {
     def this(input: AssumeRoleWithWebIdentityCommandInput) = this()
   }
   
@@ -95,7 +95,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "DecodeAuthorizationMessageCommand")
   @js.native
   open class DecodeAuthorizationMessageCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.DecodeAuthorizationMessageCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.DecodeAuthorizationMessageCommand {
     def this(input: DecodeAuthorizationMessageCommandInput) = this()
   }
   
@@ -106,7 +106,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "ExpiredTokenException")
   @js.native
   open class ExpiredTokenException protected ()
-    extends typings.awsSdkClientSts.modelsMod.ExpiredTokenException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.ExpiredTokenException {
     /**
       * @internal
       */
@@ -118,7 +118,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "GetAccessKeyInfoCommand")
   @js.native
   open class GetAccessKeyInfoCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.GetAccessKeyInfoCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.GetAccessKeyInfoCommand {
     def this(input: GetAccessKeyInfoCommandInput) = this()
   }
   
@@ -129,7 +129,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "GetCallerIdentityCommand")
   @js.native
   open class GetCallerIdentityCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.GetCallerIdentityCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.GetCallerIdentityCommand {
     def this(input: GetCallerIdentityCommandInput) = this()
   }
   
@@ -140,7 +140,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "GetFederationTokenCommand")
   @js.native
   open class GetFederationTokenCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.GetFederationTokenCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.GetFederationTokenCommand {
     def this(input: GetFederationTokenCommandInput) = this()
   }
   
@@ -151,7 +151,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "GetSessionTokenCommand")
   @js.native
   open class GetSessionTokenCommand protected ()
-    extends typings.awsSdkClientSts.commandsMod.GetSessionTokenCommand {
+    extends typings.awsSdkClientSts.distTypesCommandsMod.GetSessionTokenCommand {
     def this(input: GetSessionTokenCommandInput) = this()
   }
   
@@ -162,7 +162,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "IDPCommunicationErrorException")
   @js.native
   open class IDPCommunicationErrorException protected ()
-    extends typings.awsSdkClientSts.modelsMod.IDPCommunicationErrorException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.IDPCommunicationErrorException {
     /**
       * @internal
       */
@@ -172,7 +172,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "IDPRejectedClaimException")
   @js.native
   open class IDPRejectedClaimException protected ()
-    extends typings.awsSdkClientSts.modelsMod.IDPRejectedClaimException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.IDPRejectedClaimException {
     /**
       * @internal
       */
@@ -182,7 +182,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "InvalidAuthorizationMessageException")
   @js.native
   open class InvalidAuthorizationMessageException protected ()
-    extends typings.awsSdkClientSts.modelsMod.InvalidAuthorizationMessageException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.InvalidAuthorizationMessageException {
     /**
       * @internal
       */
@@ -192,7 +192,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "InvalidIdentityTokenException")
   @js.native
   open class InvalidIdentityTokenException protected ()
-    extends typings.awsSdkClientSts.modelsMod.InvalidIdentityTokenException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.InvalidIdentityTokenException {
     /**
       * @internal
       */
@@ -202,7 +202,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "MalformedPolicyDocumentException")
   @js.native
   open class MalformedPolicyDocumentException protected ()
-    extends typings.awsSdkClientSts.modelsMod.MalformedPolicyDocumentException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.MalformedPolicyDocumentException {
     /**
       * @internal
       */
@@ -212,7 +212,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "PackedPolicyTooLargeException")
   @js.native
   open class PackedPolicyTooLargeException protected ()
-    extends typings.awsSdkClientSts.modelsMod.PackedPolicyTooLargeException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.PackedPolicyTooLargeException {
     /**
       * @internal
       */
@@ -224,7 +224,7 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "RegionDisabledException")
   @js.native
   open class RegionDisabledException protected ()
-    extends typings.awsSdkClientSts.modelsMod.RegionDisabledException {
+    extends typings.awsSdkClientSts.distTypesModelsMod.RegionDisabledException {
     /**
       * @internal
       */
@@ -234,21 +234,21 @@ object mod {
   @JSImport("@aws-sdk/client-sts", "STS")
   @js.native
   open class STS protected ()
-    extends typings.awsSdkClientSts.stsMod.STS {
+    extends typings.awsSdkClientSts.distTypesStsMod.STS {
     def this(configuration: STSClientConfig) = this()
   }
   
   @JSImport("@aws-sdk/client-sts", "STSClient")
   @js.native
   open class STSClient protected ()
-    extends typings.awsSdkClientSts.stsclientMod.STSClient {
+    extends typings.awsSdkClientSts.distTypesStsclientMod.STSClient {
     def this(configuration: STSClientConfig) = this()
   }
   
   @JSImport("@aws-sdk/client-sts", "STSServiceException")
   @js.native
   open class STSServiceException protected ()
-    extends typings.awsSdkClientSts.stsserviceexceptionMod.STSServiceException {
+    extends typings.awsSdkClientSts.distTypesModelsStsserviceexceptionMod.STSServiceException {
     /**
       * @internal
       */

@@ -28,7 +28,7 @@ trait NativeFormatterOptions
 }
 object NativeFormatterOptions {
   
-  inline def apply(formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): NativeFormatterOptions = {
+  inline def apply(formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): NativeFormatterOptions = {
     val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeFormatterOptions]
   }

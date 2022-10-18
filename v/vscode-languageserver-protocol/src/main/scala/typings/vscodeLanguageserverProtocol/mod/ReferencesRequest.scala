@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.ReferenceParams
-import typings.vscodeLanguageserverProtocol.protocolMod.ReferenceRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ReferenceParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.ReferenceRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashreferences
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object ReferencesRequest {
   
   @JSImport("vscode-languageserver-protocol", "ReferencesRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "ReferencesRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object ReferencesRequest {
   
   @JSImport("vscode-languageserver-protocol", "ReferencesRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     ReferenceParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.Location] | Null, 
     js.Array[typings.vscodeLanguageserverTypes.mod.Location], 

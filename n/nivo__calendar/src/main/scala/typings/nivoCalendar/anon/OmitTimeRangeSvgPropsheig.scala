@@ -1,5 +1,11 @@
 package typings.nivoCalendar.anon
 
+import typings.nivoCalendar.distTypesTypesMod.CalendarDatum
+import typings.nivoCalendar.distTypesTypesMod.CalendarLegendProps
+import typings.nivoCalendar.distTypesTypesMod.CalendarTooltipProps
+import typings.nivoCalendar.distTypesTypesMod.ColorScale
+import typings.nivoCalendar.distTypesTypesMod.DateOrString
+import typings.nivoCalendar.distTypesTypesMod.TimeRangeDayData
 import typings.nivoCalendar.nivoCalendarInts.`0`
 import typings.nivoCalendar.nivoCalendarInts.`1`
 import typings.nivoCalendar.nivoCalendarInts.`2`
@@ -12,12 +18,6 @@ import typings.nivoCalendar.nivoCalendarStrings.auto
 import typings.nivoCalendar.nivoCalendarStrings.before
 import typings.nivoCalendar.nivoCalendarStrings.horizontal
 import typings.nivoCalendar.nivoCalendarStrings.vertical
-import typings.nivoCalendar.typesMod.CalendarDatum
-import typings.nivoCalendar.typesMod.CalendarLegendProps
-import typings.nivoCalendar.typesMod.CalendarTooltipProps
-import typings.nivoCalendar.typesMod.ColorScale
-import typings.nivoCalendar.typesMod.DateOrString
-import typings.nivoCalendar.typesMod.TimeRangeDayData
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.BoxAlign
 import typings.nivoCore.mod.Theme
@@ -186,10 +186,6 @@ object OmitTimeRangeSvgPropsheig {
     
     inline def setLegendFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "legendFormat", value.asInstanceOf[js.Any])
     
-    inline def setLegendFormatFunction1(value: Double => String): Self = StObject.set(x, "legendFormat", js.Any.fromFunction1(value))
-    
-    inline def setLegendFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "legendFormat", js.Any.fromFunction2(value))
-    
     inline def setLegendFormatUndefined: Self = StObject.set(x, "legendFormat", js.undefined)
     
     inline def setLegends(value: js.Array[CalendarLegendProps]): Self = StObject.set(x, "legends", value.asInstanceOf[js.Any])
@@ -271,10 +267,6 @@ object OmitTimeRangeSvgPropsheig {
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-    
-    inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-    
-    inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
     
     inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
     

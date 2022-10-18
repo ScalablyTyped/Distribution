@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.PageForSpecialization")
 @js.native
 open class PageForSpecialization protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.PageForSpecialization {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.PageForSpecialization {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -36,7 +36,7 @@ object PageForSpecialization {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageForSpecialization]
   
   /**
     * Creates and returns a new PageForSpecialization instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object PageForSpecialization {
     *  6.0.0 to 7.16.0
     */
   /* static member */
-  inline def createInGridEditButtonUnderPagesForSpecializations(container: typings.mendixmodelsdk.pagesMod.pages.GridEditButton): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization]
+  inline def createInGridEditButtonUnderPagesForSpecializations(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GridEditButton): typings.mendixmodelsdk.srcGenPagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageForSpecialization]
   
   /**
     * Creates and returns a new PageForSpecialization instance in the SDK and on the server.
@@ -58,7 +58,7 @@ object PageForSpecialization {
     *  7.17.0 and higher
     */
   /* static member */
-  inline def createInPageClientActionUnderPagesForSpecializations(container: typings.mendixmodelsdk.pagesMod.pages.PageClientAction): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization]
+  inline def createInPageClientActionUnderPagesForSpecializations(container: typings.mendixmodelsdk.srcGenPagesMod.pages.PageClientAction): typings.mendixmodelsdk.srcGenPagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageForSpecialization]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.PageForSpecialization.structureTypeName")

@@ -23,6 +23,7 @@ object mod {
   
   inline def useColorMode[T /* <: String */](): js.Tuple2[T, Dispatch[SetStateAction[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useColorMode")().asInstanceOf[js.Tuple2[T, Dispatch[SetStateAction[T]]]]
   
+  /* augmented module */
   object themeUiCoreAugmentingMod {
     
     trait ThemeUIContextValue extends StObject {

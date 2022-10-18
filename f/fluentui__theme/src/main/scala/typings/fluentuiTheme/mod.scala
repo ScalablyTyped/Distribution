@@ -1,15 +1,15 @@
 package typings.fluentuiTheme
 
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
-import typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles
-import typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables
-import typings.fluentuiTheme.ieffectsMod.IEffects
-import typings.fluentuiTheme.ifontstylesMod.IFontStyles
-import typings.fluentuiTheme.ipaletteMod.IPalette
-import typings.fluentuiTheme.ispacingMod.ISpacing
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.fluentuiTheme.themeMod.PartialTheme
-import typings.fluentuiTheme.themeMod.Theme
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
+import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationStyles
+import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationVariables
+import typings.fluentuiTheme.libTypesIeffectsMod.IEffects
+import typings.fluentuiTheme.libTypesIfontstylesMod.IFontStyles
+import typings.fluentuiTheme.libTypesIpaletteMod.IPalette
+import typings.fluentuiTheme.libTypesIspacingMod.ISpacing
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.fluentuiTheme.libTypesThemeMod.PartialTheme
+import typings.fluentuiTheme.libTypesThemeMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.v8ToIstanbul
 
-import typings.jridgewellTraceMapping.typesMod.SourceMapInput
+import typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput
 import typings.v8ToIstanbul.mod.Sources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

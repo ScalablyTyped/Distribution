@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Complete extends StObject {
+  trait Complete[T] extends StObject {
     
     var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.undefined
+    var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.undefined
   }
   object Complete {
     
-    inline def apply(): Complete = {
+    inline def apply[T](): Complete[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Complete]
+      __obj.asInstanceOf[Complete[T]]
     }
     
-    extension [Self <: Complete](x: Self) {
+    extension [Self <: Complete[?], T](x: Self & Complete[T]) {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -35,7 +35,7 @@ object anon {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setNext(value: /* value */ Unit => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* snapshot */ DocumentSnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }
@@ -58,22 +58,22 @@ object anon {
     }
   }
   
-  trait Error[T] extends StObject {
+  trait Error extends StObject {
     
     var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.undefined
+    var next: js.UndefOr[js.Function1[/* value */ Unit, Unit]] = js.undefined
   }
   object Error {
     
-    inline def apply[T](): Error[T] = {
+    inline def apply(): Error = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Error[T]]
+      __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error[?], T](x: Self & Error[T]) {
+    extension [Self <: Error](x: Self) {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -83,7 +83,7 @@ object anon {
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setNext(value: /* snapshot */ DocumentSnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* value */ Unit => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     }

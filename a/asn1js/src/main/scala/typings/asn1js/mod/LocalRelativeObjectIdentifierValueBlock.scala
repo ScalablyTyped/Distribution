@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait LocalRelativeObjectIdentifierValueBlock
-  extends ValueBlock
+  extends StObject
+     with ValueBlock
      with IStringConvertible {
   
   var value: js.Array[LocalRelativeSidValueBlock] = js.native

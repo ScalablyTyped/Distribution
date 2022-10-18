@@ -1,10 +1,10 @@
 package typings.mangopay2NodejsSdk.mod.models
 
 import typings.mangopay2NodejsSdk.anon.PartialBankingAliasData
-import typings.mangopay2NodejsSdk.bankingAliasMod.bankingAlias.BankingAliasType
-import typings.mangopay2NodejsSdk.bankingAliasMod.bankingAlias.IBANBankingAliasData
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IBAN
-import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typingsModelsBankingAliasMod.bankingAlias.BankingAliasType
+import typings.mangopay2NodejsSdk.typingsModelsBankingAliasMod.bankingAlias.IBANBankingAliasData
+import typings.mangopay2NodejsSdk.typingsTypesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

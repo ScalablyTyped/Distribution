@@ -7,29 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AxiosInterceptorManager[V] extends StObject {
   
+  def clear(): Unit = js.native
+  
   def eject(id: Double): Unit = js.native
   
-  def use[T](): Double = js.native
-  def use[T](onFulfilled: js.Function1[/* value */ V, T | js.Promise[T]]): Double = js.native
-  def use[T](
-    onFulfilled: js.Function1[/* value */ V, T | js.Promise[T]],
+  def use(): Double = js.native
+  def use(onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]]): Double = js.native
+  def use(
+    onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]],
     onRejected: js.Function1[/* error */ Any, Any]
   ): Double = js.native
-  def use[T](
-    onFulfilled: js.Function1[/* value */ V, T | js.Promise[T]],
+  def use(
+    onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]],
     onRejected: js.Function1[/* error */ Any, Any],
     options: AxiosInterceptorOptions
   ): Double = js.native
-  def use[T](
-    onFulfilled: js.Function1[/* value */ V, T | js.Promise[T]],
+  def use(
+    onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]],
     onRejected: Unit,
     options: AxiosInterceptorOptions
   ): Double = js.native
-  def use[T](onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, Any]): Double = js.native
-  def use[T](
+  def use(onFulfilled: Unit, onRejected: js.Function1[/* error */ Any, Any]): Double = js.native
+  def use(
     onFulfilled: Unit,
     onRejected: js.Function1[/* error */ Any, Any],
     options: AxiosInterceptorOptions
   ): Double = js.native
-  def use[T](onFulfilled: Unit, onRejected: Unit, options: AxiosInterceptorOptions): Double = js.native
+  def use(onFulfilled: Unit, onRejected: Unit, options: AxiosInterceptorOptions): Double = js.native
 }

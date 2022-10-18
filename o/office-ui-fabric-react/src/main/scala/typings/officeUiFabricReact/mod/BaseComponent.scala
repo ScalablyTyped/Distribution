@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
+import typings.uifabricUtilities.libBaseComponentDottypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "BaseComponent")
 @js.native
 open class BaseComponent[TProps /* <: IBaseProps[Any] */, TState] protected ()
-  extends typings.officeUiFabricReact.utilitiesMod.BaseComponent[TProps, TState] {
+  extends typings.officeUiFabricReact.libUtilitiesMod.BaseComponent[TProps, TState] {
   /**
     * BaseComponent constructor
     * @param props - The props for the component.

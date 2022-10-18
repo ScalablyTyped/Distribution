@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSmartdevicemanagement
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSmartdevicemanagement.anon.Accesstoken
 import typings.maximMazurokGapiClientSmartdevicemanagement.anon.Alt
@@ -63,9 +62,7 @@ object gapi {
         
         /** Output only. Device traits. */
         var traits: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
         
         /**
@@ -94,9 +91,7 @@ object gapi {
           inline def setParentRelationsVarargs(value: GoogleHomeEnterpriseSdmV1ParentRelation*): Self = StObject.set(x, "parentRelations", js.Array(value*))
           
           inline def setTraits(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Device & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
           inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
@@ -114,9 +109,7 @@ object gapi {
         
         /** The command message to execute, represented as a Struct. */
         var params: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest {
@@ -133,9 +126,7 @@ object gapi {
           inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
           
           inline def setParams(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
           inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -146,9 +137,7 @@ object gapi {
         
         /** The results of executing the command. */
         var results: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse {
@@ -161,9 +150,7 @@ object gapi {
         extension [Self <: GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse](x: Self) {
           
           inline def setResults(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
           
           inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
@@ -294,9 +281,7 @@ object gapi {
         
         /** Room traits. */
         var traits: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1Room {
@@ -313,9 +298,7 @@ object gapi {
           inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
           inline def setTraits(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Room & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
           inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
@@ -329,9 +312,7 @@ object gapi {
         
         /** Structure traits. */
         var traits: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
       }
       object GoogleHomeEnterpriseSdmV1Structure {
@@ -348,9 +329,7 @@ object gapi {
           inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
           inline def setTraits(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientSmartdevicemanagement.maximMazurokGapiClientSmartdevicemanagementStrings.GoogleHomeEnterpriseSdmV1Structure & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
           
           inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)

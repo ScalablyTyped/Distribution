@@ -1,15 +1,11 @@
 package typings.angularCli
 
-import typings.angularCli.packageMetadataMod._NgAddSaveDependency
+import typings.angularCli.srcUtilitiesPackageMetadataMod._NgAddSaveDependency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCliStrings {
-  
-  @js.native
-  sealed trait Options extends StObject
-  inline def Options: Options = "Options".asInstanceOf[Options]
   
   @js.native
   sealed trait dependencies

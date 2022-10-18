@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.Description
-import typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps
+import typings.officeUiFabricReact.libComponentsProgressIndicatorProgressIndicatorDottypesMod.IProgressIndicatorProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object libProgressIndicatorMod {
   @JSImport("office-ui-fabric-react/lib/ProgressIndicator", "ProgressIndicatorBase")
   @js.native
   open class ProgressIndicatorBase protected ()
-    extends typings.officeUiFabricReact.progressIndicatorMod.ProgressIndicatorBase {
+    extends typings.officeUiFabricReact.libComponentsProgressIndicatorMod.ProgressIndicatorBase {
     def this(props: IProgressIndicatorProps) = this()
   }
   /* static members */

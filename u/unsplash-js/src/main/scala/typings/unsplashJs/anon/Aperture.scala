@@ -1,6 +1,6 @@
 package typings.unsplashJs.anon
 
-import typings.unsplashJs.typescriptMod.Nullable
+import typings.unsplashJs.distHelpersTypescriptMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

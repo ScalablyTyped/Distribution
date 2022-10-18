@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.PBRBaseMaterial")
+/* note: abstract class */ @JSGlobal("BABYLON.PBRBaseMaterial")
 @js.native
-abstract class PBRBaseMaterial protected ()
+open class PBRBaseMaterial protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PBRBaseMaterial {
   /**

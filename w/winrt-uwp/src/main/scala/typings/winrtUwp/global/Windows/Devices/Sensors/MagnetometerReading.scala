@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a magnetometer reading. */
-@JSGlobal("Windows.Devices.Sensors.MagnetometerReading")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.MagnetometerReading")
 @js.native
-abstract class MagnetometerReading ()
+open class MagnetometerReading ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.MagnetometerReading {
   

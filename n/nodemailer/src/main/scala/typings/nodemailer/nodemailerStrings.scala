@@ -1,8 +1,8 @@
 package typings.nodemailer
 
-import typings.nodemailer.mailerMod.TextEncoding
-import typings.nodemailer.sharedMod.LoggerLevel
-import typings.nodemailer.smtpConnectionMod.DSNOption
+import typings.nodemailer.libMailerMod.TextEncoding
+import typings.nodemailer.libSharedMod.LoggerLevel
+import typings.nodemailer.libSmtpConnectionMod.DSNOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.gitlab.mod
 
 import typings.gitlab.anon.TypeofAPIServices
+import typings.gitlab.distTypesCoreInfrastructureUtilsMod.Bundle
 import typings.gitlab.mod.^
-import typings.gitlab.utilsMod.Bundle
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def Gitlab: Bundle[
 TypeofAPIServices, 
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 90 */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("Gitlab").asInstanceOf[Bundle[
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 90, starting with typings.gitlab.gitlabStrings.Groups, typings.gitlab.gitlabStrings.GroupAccessRequests, typings.gitlab.gitlabStrings.GroupBadges */ Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("Gitlab").asInstanceOf[Bundle[
 TypeofAPIServices, 
-/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 90 */ Any]]
+/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 90, starting with typings.gitlab.gitlabStrings.Groups, typings.gitlab.gitlabStrings.GroupAccessRequests, typings.gitlab.gitlabStrings.GroupBadges */ Any]]
 type Gitlab = InstanceType[
 Bundle[
   /* import warning: importer.ImportType#apply Failed type conversion: typeof APIServices */ js.Any, 
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 90 */ Any
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 90, starting with typings.gitlab.gitlabStrings.Groups, typings.gitlab.gitlabStrings.GroupAccessRequests, typings.gitlab.gitlabStrings.GroupBadges */ Any
 ]]
 
 inline def GroupsBundle: Bundle[

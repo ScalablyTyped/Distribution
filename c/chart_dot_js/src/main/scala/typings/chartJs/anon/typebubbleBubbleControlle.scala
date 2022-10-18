@@ -1,14 +1,14 @@
 package typings.chartJs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsBooleans.`false`
 import typings.chartJs.chartJsStrings.bubble
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.geometricMod.ChartArea
 import typings.chartJs.mod.ScriptableAndArray
 import typings.chartJs.mod.ScriptableContext
+import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.typesGeometricMod.ChartArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  type :'bubble'} & chart.js.chart.js.BubbleControllerDatasetOptions */
 trait typebubbleBubbleControlle extends StObject {
   
-  var backgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]
+  var backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
   
-  var borderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]
+  var borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
   
   var borderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
@@ -37,9 +37,9 @@ trait typebubbleBubbleControlle extends StObject {
   
   var hitRadius: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
-  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]
+  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
   
-  var hoverBorderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]
+  var hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]
   
   var hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]]
   
@@ -87,15 +87,15 @@ trait typebubbleBubbleControlle extends StObject {
 object typebubbleBubbleControlle {
   
   inline def apply(
-    backgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]],
-    borderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]],
+    backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
+    borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
     borderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]],
     clip: Double | ChartArea | `false`,
     drawActiveElementsOnTop: ScriptableAndArray[Boolean, ScriptableContext[bubble]],
     hidden: Boolean,
     hitRadius: ScriptableAndArray[Double, ScriptableContext[bubble]],
-    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]],
-    hoverBorderColor: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]],
+    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
+    hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]],
     hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[bubble]],
     hoverRadius: ScriptableAndArray[Double, ScriptableContext[bubble]],
     indexAxis: x | y,
@@ -115,21 +115,21 @@ object typebubbleBubbleControlle {
   
   extension [Self <: typebubbleBubbleControlle](x: Self) {
     
-    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
-    inline def setBackgroundColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    inline def setBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
-    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
-    inline def setBorderColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    inline def setBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
     inline def setBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[bubble]]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
@@ -153,21 +153,21 @@ object typebubbleBubbleControlle {
     
     inline def setHitRadiusVarargs(value: Double*): Self = StObject.set(x, "hitRadius", js.Array(value*))
     
-    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBackgroundColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "hoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
+    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
     
-    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.colorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderColorFunction2(
-      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.colorMod.Color]
+      value: (ScriptableContext[bubble], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
     ): Self = StObject.set(x, "hoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColorVarargs(value: typings.chartJs.colorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    inline def setHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
     
     inline def setHoverBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[bubble]]): Self = StObject.set(x, "hoverBorderWidth", value.asInstanceOf[js.Any])
     

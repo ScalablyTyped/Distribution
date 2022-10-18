@@ -1,6 +1,6 @@
 package typings.reactstrap.mod
 
-import typings.reactstrap.alertMod.UncontrolledAlertProps
+import typings.reactstrap.typesLibAlertMod.UncontrolledAlertProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("reactstrap", "UncontrolledAlert")
 @js.native
 open class UncontrolledAlert protected ()
-  extends typings.reactstrap.uncontrolledMod.UncontrolledAlert {
+  extends typings.reactstrap.typesLibUncontrolledMod.UncontrolledAlert {
   def this(props: UncontrolledAlertProps) = this()
   /**
     * @deprecated

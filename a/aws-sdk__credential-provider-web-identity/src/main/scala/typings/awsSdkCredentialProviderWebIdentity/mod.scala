@@ -1,8 +1,8 @@
 package typings.awsSdkCredentialProviderWebIdentity
 
-import typings.awsSdkCredentialProviderWebIdentity.fromTokenFileMod.FromTokenFileInit
-import typings.awsSdkCredentialProviderWebIdentity.fromWebTokenMod.FromWebTokenInit
-import typings.awsSdkTypes.credentialsMod.CredentialProvider
+import typings.awsSdkCredentialProviderWebIdentity.distTypesFromTokenFileMod.FromTokenFileInit
+import typings.awsSdkCredentialProviderWebIdentity.distTypesFromWebTokenMod.FromWebTokenInit
+import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

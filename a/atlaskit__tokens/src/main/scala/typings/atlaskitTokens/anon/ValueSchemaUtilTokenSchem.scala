@@ -1,7 +1,7 @@
 package typings.atlaskitTokens.anon
 
 import typings.atlaskitTokens.atlaskitTokensStrings.attributes
-import typings.atlaskitTokens.typesTypesMod.OmitDistributive
+import typings.atlaskitTokens.distTypesTypesMod.OmitDistributive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

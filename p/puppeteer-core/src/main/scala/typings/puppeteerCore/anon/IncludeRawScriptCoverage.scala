@@ -11,6 +11,8 @@ trait IncludeRawScriptCoverage extends StObject {
   var reportAnonymousScripts: js.UndefOr[Boolean] = js.undefined
   
   var resetOnNavigation: js.UndefOr[Boolean] = js.undefined
+  
+  var useBlockCoverage: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeRawScriptCoverage {
   
@@ -32,5 +34,9 @@ object IncludeRawScriptCoverage {
     inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
     
     inline def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
+    
+    inline def setUseBlockCoverage(value: Boolean): Self = StObject.set(x, "useBlockCoverage", value.asInstanceOf[js.Any])
+    
+    inline def setUseBlockCoverageUndefined: Self = StObject.set(x, "useBlockCoverage", js.undefined)
   }
 }

@@ -122,7 +122,15 @@ object mod {
     }
   }
   
-  type EqualityComparator[Meta] = js.Function3[/* a */ Any, /* b */ Any, js.UndefOr[/* meta */ Meta], Boolean]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Meta extends undefined ? <A, B>(a : A, b : B, meta : Meta | undefined): boolean : <A, B>(a : A, b : B, meta : Meta): boolean
+    }}}
+    */
+  @js.native
+  trait EqualityComparator[Meta] extends StObject
   
   type EqualityComparatorCreator[Meta] = js.Function1[/* fn */ EqualityComparator[Meta], InternalEqualityComparator[Meta]]
   

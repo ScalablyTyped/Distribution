@@ -1,6 +1,6 @@
 package typings.playable.anon
 
-import typings.playable.previewServiceTypesMod.IPreviewService
+import typings.playable.distSrcModulesUiPreviewServiceTypesMod.IPreviewService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

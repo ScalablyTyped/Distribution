@@ -227,9 +227,9 @@ object mod {
     def update(values: js.Object): js.Promise[Unit] = js.native
   }
   
-  @JSImport("@firebase/database", "QueryConstraint")
+  /* note: abstract class */ @JSImport("@firebase/database", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint () extends StObject {
+  open class QueryConstraint () extends StObject {
     
     /** The type of this query constraints */
     val `type`: QueryConstraintType = js.native

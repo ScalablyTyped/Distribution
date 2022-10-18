@@ -1,7 +1,7 @@
 package typings.firebaseAdmin.anon
 
-import typings.firebaseAdmin.credentialMod.Credential
-import typings.firebaseAdmin.credentialMod.ServiceAccount
+import typings.firebaseAdmin.libAppCredentialMod.Credential
+import typings.firebaseAdmin.libAppCredentialMod.ServiceAccount
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

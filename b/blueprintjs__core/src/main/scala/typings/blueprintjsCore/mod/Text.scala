@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Text")
 @js.native
 open class Text protected ()
-  extends typings.blueprintjsCore.componentsMod.Text {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Text {
   def this(props: TextPropsOmitHTMLAttribut) = this()
   def this(props: TextPropsOmitHTMLAttribut, context: Any) = this()
 }

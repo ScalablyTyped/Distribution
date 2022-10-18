@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helperTextMod {
   
+  @JSImport("@material/textfield/helper-text", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialTextfield.helperTextFoundationMod.default {
+    def this(adapter: PartialMDCTextFieldHelper) = this()
+  }
+  
   @JSImport("@material/textfield/helper-text", "MDCTextFieldHelperText")
   @js.native
   open class MDCTextFieldHelperText protected ()

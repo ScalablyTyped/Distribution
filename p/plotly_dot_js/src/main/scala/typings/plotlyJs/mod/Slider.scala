@@ -1,6 +1,6 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialCurrentValue
+import typings.plotlyJs.anon.PartialCurrentValueFont
 import typings.plotlyJs.anon.PartialPadding
 import typings.plotlyJs.anon.PartialSliderStep
 import typings.plotlyJs.plotlyJsStrings.auto
@@ -45,7 +45,7 @@ trait Slider extends StObject {
     */
   var borderwidth: Double
   
-  var currentvalue: PartialCurrentValue
+  var currentvalue: PartialCurrentValueFont
   
   /**
     * Sets the font of the slider step labels.
@@ -133,7 +133,7 @@ object Slider {
     bgcolor: Color,
     bordercolor: Color,
     borderwidth: Double,
-    currentvalue: PartialCurrentValue,
+    currentvalue: PartialCurrentValueFont,
     font: Font,
     len: Double,
     lenmode: fraction | pixels,
@@ -172,7 +172,7 @@ object Slider {
     
     inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    inline def setCurrentvalue(value: PartialCurrentValue): Self = StObject.set(x, "currentvalue", value.asInstanceOf[js.Any])
+    inline def setCurrentvalue(value: PartialCurrentValueFont): Self = StObject.set(x, "currentvalue", value.asInstanceOf[js.Any])
     
     inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,8 @@ import typings.dockerModem.anon.DictkeyBase64
 import typings.dockerModem.dockerModemStrings.http
 import typings.dockerModem.dockerModemStrings.https
 import typings.dockerModem.dockerModemStrings.ssh
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
@@ -20,8 +22,6 @@ import typings.node.streamMod.Stream
 import typings.ssh2.mod.ConnectConfig
 import typings.std.AbortSignal
 import typings.std.PromiseConstructor
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -168,7 +168,7 @@ object mod {
     
     var authconfig: js.UndefOr[Base64] = js.undefined
     
-    var file: js.UndefOr[String | Buffer | ReadableStream[Any]] = js.undefined
+    var file: js.UndefOr[String | Buffer | ReadableStream] = js.undefined
     
     var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
@@ -209,7 +209,7 @@ object mod {
       
       inline def setAuthconfigUndefined: Self = StObject.set(x, "authconfig", js.undefined)
       
-      inline def setFile(value: String | Buffer | ReadableStream[Any]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String | Buffer | ReadableStream): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
@@ -373,17 +373,12 @@ object mod {
     /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: String): Unit = js.native
     /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: String, callback: RequestCallback): Unit = js.native
     /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: Unit, callback: RequestCallback): Unit = js.native
+    /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: ReadableStream): Unit = js.native
+    /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: ReadableStream, callback: RequestCallback): Unit = js.native
     /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: Buffer): Unit = js.native
     /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: Buffer, callback: RequestCallback): Unit = js.native
-    /* private */ def buildRequest(options: RequestOptions, context: DialOptions, data: ReadableStream[Any]): Unit = js.native
-    /* private */ def buildRequest(
-      options: RequestOptions,
-      context: DialOptions,
-      data: ReadableStream[Any],
-      callback: RequestCallback
-    ): Unit = js.native
     
-    def demuxStream(stream: Stream, stdout: WritableStream[Any], stderr: WritableStream[Any]): Unit = js.native
+    def demuxStream(stream: Stream, stdout: WritableStream, stderr: WritableStream): Unit = js.native
     
     def dial(options: DialOptions): Unit = js.native
     def dial(options: DialOptions, callback: RequestCallback): Unit = js.native

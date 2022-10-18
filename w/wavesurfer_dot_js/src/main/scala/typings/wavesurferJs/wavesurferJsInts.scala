@@ -1,6 +1,6 @@
 package typings.wavesurferJs
 
-import typings.wavesurferJs.microphoneMod.BufferSize
+import typings.wavesurferJs.srcPluginMicrophoneMod.BufferSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

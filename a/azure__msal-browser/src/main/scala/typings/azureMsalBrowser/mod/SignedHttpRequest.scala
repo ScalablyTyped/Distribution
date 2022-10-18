@@ -1,7 +1,7 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalBrowser.signedHttpRequestMod.SignedHttpRequestOptions
-import typings.azureMsalCommon.icryptoMod.SignedHttpRequestParameters
+import typings.azureMsalBrowser.distCryptoSignedHttpRequestMod.SignedHttpRequestOptions
+import typings.azureMsalCommon.distCryptoIcryptoMod.SignedHttpRequestParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-browser", "SignedHttpRequest")
 @js.native
 open class SignedHttpRequest protected ()
-  extends typings.azureMsalBrowser.signedHttpRequestMod.SignedHttpRequest {
+  extends typings.azureMsalBrowser.distCryptoSignedHttpRequestMod.SignedHttpRequest {
   def this(shrParameters: SignedHttpRequestParameters) = this()
   def this(shrParameters: SignedHttpRequestParameters, shrOptions: SignedHttpRequestOptions) = this()
 }

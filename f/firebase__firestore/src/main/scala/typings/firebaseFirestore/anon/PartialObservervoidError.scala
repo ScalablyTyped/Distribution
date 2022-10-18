@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.utilErrorMod.FirestoreError
-import typings.firebaseFirestore.utilMiscMod.EventHandler
+import typings.firebaseFirestore.distLiteFirestoreSrcUtilErrorMod.FirestoreError
+import typings.firebaseFirestore.distLiteFirestoreSrcUtilMiscMod.EventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,9 +1,10 @@
 package typings.unidriverProtractor
 
-import typings.protractor.browserMod.ProtractorBrowser
-import typings.protractor.elementMod.ElementArrayFinder
-import typings.protractor.elementMod.ElementFinder
-import typings.protractor.locatorsMod.Locator
+import typings.protractor.builtBrowserMod.ProtractorBrowser
+import typings.protractor.builtElementMod.ElementArrayFinder
+import typings.protractor.builtElementMod.ElementFinder
+import typings.protractor.builtLocatorsMod.Locator
+import typings.seleniumWebdriver.libWebdriverMod.ShadowRootPromise
 import typings.seleniumWebdriver.mod.ILocation
 import typings.seleniumWebdriver.mod.IRectangle
 import typings.seleniumWebdriver.mod.ISize
@@ -11,7 +12,6 @@ import typings.seleniumWebdriver.mod.IWebElementId
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod.WebElementPromise
-import typings.seleniumWebdriver.webdriverMod.ShadowRootPromise
 import typings.unidriverCore.mod.DriverContext
 import typings.unidriverCore.mod.UniDriver
 import typings.unidriverCore.mod.UniDriverList

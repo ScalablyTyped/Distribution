@@ -1,7 +1,6 @@
 package typings.dmx.mod
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.dmx.dmxStrings.`dmxking-ultra-dmx-pro`
 import typings.dmx.dmxStrings.`enttec-open-usb-dmx`
 import typings.dmx.dmxStrings.`enttec-usb-dmx-pro`
@@ -22,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventEmitter * / any */ @js.native
-trait DMX[TDevices /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in string ]:? dmx.dmx.Device}
-  */ typings.dmx.dmxStrings.DMX & TopLevel[Any] */] extends StObject {
+trait DMX[TDevices /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]:? dmx.dmx.Device} */ js.Any */] extends StObject {
   
   def addListener(eventName: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   def addListener(eventName: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native

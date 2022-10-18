@@ -8,14 +8,14 @@ trait `372` extends StObject {
   
   @JSName("application/json")
   var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any
   ]
 }
 object `372` {
   
   inline def apply(
     applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any
     ]
   ): `372` = {
     val __obj = js.Dynamic.literal()
@@ -27,12 +27,12 @@ object `372` {
     
     inline def setApplicationSlashjson(
       value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any
         ]
     ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
     inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gpg-key'] */ js.Any)*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any)*
     ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

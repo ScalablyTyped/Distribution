@@ -1,9 +1,10 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
-import typings.grommet.utilsMod.ColorType
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
+import typings.grommet.utilsMod.BackgroundType
+import typings.grommet.utilsMod.PadType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,17 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Extend extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
   var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
-  var font: js.UndefOr[js.Object] = js.undefined
-  
-  var level: js.UndefOr[`3`] = js.undefined
-  
-  var responsiveBreakpoint: js.UndefOr[String] = js.undefined
-  
-  var weight: js.UndefOr[Double] = js.undefined
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object Extend {
   
@@ -32,9 +27,9 @@ object Extend {
   
   extension [Self <: Extend](x: Self) {
     
-    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
@@ -42,20 +37,8 @@ object Extend {
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    inline def setFont(value: js.Object): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
-    
-    inline def setLevel(value: `3`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
-    
-    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
-    
-    inline def setResponsiveBreakpoint(value: String): Self = StObject.set(x, "responsiveBreakpoint", value.asInstanceOf[js.Any])
-    
-    inline def setResponsiveBreakpointUndefined: Self = StObject.set(x, "responsiveBreakpoint", js.undefined)
-    
-    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
-    
-    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

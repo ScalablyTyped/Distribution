@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RemoteDesktop {
   
   /** Provides Remote Desktop information about the current session. */
-  @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession")
   @js.native
-  abstract class InteractiveSession ()
+  open class InteractiveSession ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteDesktop.InteractiveSession
   object InteractiveSession {

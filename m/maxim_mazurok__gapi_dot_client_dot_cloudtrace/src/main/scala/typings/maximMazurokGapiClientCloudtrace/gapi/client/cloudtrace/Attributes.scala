@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait Attributes extends StObject {
     * For example: "/instance_id": { "string_value": { "value": "my-instance" } } "/http/request_bytes": { "int_value": 300 } "abc.com/myattribute": { "bool_value": false }
     */
   var attributeMap: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
-    */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue} */ js.Any
   ] = js.undefined
   
   /**
@@ -33,9 +30,7 @@ object Attributes {
   extension [Self <: Attributes](x: Self) {
     
     inline def setAttributeMap(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
-      */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue} */ js.Any
     ): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
     
     inline def setAttributeMapUndefined: Self = StObject.set(x, "attributeMap", js.undefined)

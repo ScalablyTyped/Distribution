@@ -1,6 +1,6 @@
 package typings.shiki.mod
 
-import typings.vscodeTextmate.typesMod.IRawGrammar
+import typings.vscodeTextmate.releaseTypesMod.IRawGrammar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

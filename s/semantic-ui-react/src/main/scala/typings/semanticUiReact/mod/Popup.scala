@@ -2,9 +2,9 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
+import typings.semanticUiReact.distCommonjsModulesPopupPopupMod.PopupComponent
+import typings.semanticUiReact.distCommonjsModulesPopupPopupMod.PopupProps
 import typings.semanticUiReact.mod.^
-import typings.semanticUiReact.popupPopupMod.PopupComponent
-import typings.semanticUiReact.popupPopupMod.PopupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

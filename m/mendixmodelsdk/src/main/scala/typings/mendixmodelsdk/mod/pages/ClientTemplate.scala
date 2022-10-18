@@ -1,15 +1,15 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.CustomWidget
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetObject
-import typings.mendixmodelsdk.customwidgetsMod.customwidgets.WidgetValue
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.CustomWidget
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetObject
+import typings.mendixmodelsdk.srcGenCustomwidgetsMod.customwidgets.WidgetValue
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ClientTemplate")
 @js.native
 open class ClientTemplate protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ClientTemplate {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ClientTemplate {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object ClientTemplate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object ClientTemplate {
     * of the parent Button element passed as argument.
     */
   /* static member */
-  inline def createInButtonUnderCaption(container: typings.mendixmodelsdk.pagesMod.pages.Button): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInButtonUnderCaption(container: typings.mendixmodelsdk.srcGenPagesMod.pages.Button): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object ClientTemplate {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  inline def createInControlBarButtonUnderCaption(container: typings.mendixmodelsdk.pagesMod.pages.ControlBarButton): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInControlBarButtonUnderCaption(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ControlBarButton): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -66,7 +66,7 @@ object ClientTemplate {
     *  8.1.0 and higher
     */
   /* static member */
-  inline def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -77,7 +77,7 @@ object ClientTemplate {
     *  8.0.0 and higher
     */
   /* static member */
-  inline def createInDataGridUnderCaption(container: typings.mendixmodelsdk.pagesMod.pages.DataGrid): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInDataGridUnderCaption(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DataGrid): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -88,7 +88,7 @@ object ClientTemplate {
     *  8.6.0 and higher
     */
   /* static member */
-  inline def createInDynamicImageViewerUnderAlternativeText(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInDynamicImageViewerUnderAlternativeText(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -96,7 +96,7 @@ object ClientTemplate {
     * of the parent DynamicText element passed as argument.
     */
   /* static member */
-  inline def createInDynamicTextUnderContent(container: typings.mendixmodelsdk.pagesMod.pages.DynamicText): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicTextUnderContent")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInDynamicTextUnderContent(container: typings.mendixmodelsdk.srcGenPagesMod.pages.DynamicText): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicTextUnderContent")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -104,7 +104,7 @@ object ClientTemplate {
     * of the parent GroupBox element passed as argument.
     */
   /* static member */
-  inline def createInGroupBoxUnderCaption(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInGroupBoxUnderCaption(container: typings.mendixmodelsdk.srcGenPagesMod.pages.GroupBox): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -115,7 +115,7 @@ object ClientTemplate {
     *  7.18.0 and higher
     */
   /* static member */
-  inline def createInInputWidgetUnderLabelTemplate(container: typings.mendixmodelsdk.pagesMod.pages.InputWidget): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInInputWidgetUnderLabelTemplate(container: typings.mendixmodelsdk.srcGenPagesMod.pages.InputWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -126,7 +126,7 @@ object ClientTemplate {
     *  8.12.0 and higher
     */
   /* static member */
-  inline def createInInputWidgetUnderScreenReaderLabel(container: typings.mendixmodelsdk.pagesMod.pages.InputWidget): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderScreenReaderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInInputWidgetUnderScreenReaderLabel(container: typings.mendixmodelsdk.srcGenPagesMod.pages.InputWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderScreenReaderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -137,7 +137,7 @@ object ClientTemplate {
     *  8.6.0 and higher
     */
   /* static member */
-  inline def createInStaticImageViewerUnderAlternativeText(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInStaticImageViewerUnderAlternativeText(container: typings.mendixmodelsdk.srcGenPagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -148,7 +148,7 @@ object ClientTemplate {
     *  8.13.0 and higher
     */
   /* static member */
-  inline def createInTabPageUnderBadge(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderBadge")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInTabPageUnderBadge(container: typings.mendixmodelsdk.srcGenPagesMod.pages.TabPage): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderBadge")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -159,7 +159,7 @@ object ClientTemplate {
     *  7.23.0 to 8.0.0
     */
   /* static member */
-  inline def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetObjectUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetObjectUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -170,7 +170,7 @@ object ClientTemplate {
     *  7.23.0 and higher
     */
   /* static member */
-  inline def createInWidgetValueUnderTextTemplate(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTextTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ClientTemplate]
+  inline def createInWidgetValueUnderTextTemplate(container: WidgetValue): typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTextTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ClientTemplate.structureTypeName")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__sprite
 
-Typings are for version 6.5.4
+Typings are for version 6.5.6
 
 ## Library description:
 Base object for textured objects rendered to the screen

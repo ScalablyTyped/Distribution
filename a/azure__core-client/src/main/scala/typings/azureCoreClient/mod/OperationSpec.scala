@@ -8,7 +8,7 @@ import typings.azureCoreClient.azureCoreClientStrings.multipart
 import typings.azureCoreClient.azureCoreClientStrings.text
 import typings.azureCoreClient.azureCoreClientStrings.unknown
 import typings.azureCoreClient.azureCoreClientStrings.xml
-import typings.azureCoreRestPipeline.coreRestPipelineMod.HttpMethods
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.HttpMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "ChronoZonedDateTime")
+/* note: abstract class */ @JSImport("js-joda", "ChronoZonedDateTime")
 @js.native
-abstract class ChronoZonedDateTime () extends Temporal {
+open class ChronoZonedDateTime () extends Temporal {
   
   def compareTo(other: ChronoZonedDateTime): Double = js.native
   

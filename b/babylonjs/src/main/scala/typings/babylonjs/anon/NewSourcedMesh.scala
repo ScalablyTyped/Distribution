@@ -1,6 +1,6 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.transformNodeMod.TransformNode
+import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait NewSourcedMesh extends StObject {
   
   var doNotInstantiate: Boolean | (js.Function1[/* node */ TransformNode, Boolean])
   
-  var newSourcedMesh: js.UndefOr[typings.babylonjs.meshMod.Mesh] = js.undefined
+  var newSourcedMesh: js.UndefOr[typings.babylonjs.meshesMeshMod.Mesh] = js.undefined
 }
 object NewSourcedMesh {
   
@@ -24,7 +24,7 @@ object NewSourcedMesh {
     
     inline def setDoNotInstantiateFunction1(value: /* node */ TransformNode => Boolean): Self = StObject.set(x, "doNotInstantiate", js.Any.fromFunction1(value))
     
-    inline def setNewSourcedMesh(value: typings.babylonjs.meshMod.Mesh): Self = StObject.set(x, "newSourcedMesh", value.asInstanceOf[js.Any])
+    inline def setNewSourcedMesh(value: typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "newSourcedMesh", value.asInstanceOf[js.Any])
     
     inline def setNewSourcedMeshUndefined: Self = StObject.set(x, "newSourcedMesh", js.undefined)
   }

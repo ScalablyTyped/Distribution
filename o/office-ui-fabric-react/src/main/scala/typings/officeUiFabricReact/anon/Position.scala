@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.anon
 
+import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.IPosition
 import typings.officeUiFabricReact.officeUiFabricReactStrings.block
-import typings.officeUiFabricReact.positioningTypesMod.IPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

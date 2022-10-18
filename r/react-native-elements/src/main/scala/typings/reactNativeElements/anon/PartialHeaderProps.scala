@@ -20,7 +20,7 @@ import typings.reactNative.mod.StatusBarStyle
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.headerMod.HeaderSubComponent
+import typings.reactNativeElements.distHeaderHeaderMod.HeaderSubComponent
 import typings.reactNativeElements.reactNativeElementsStrings.ViewComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`box-none`
 import typings.reactNativeElements.reactNativeElementsStrings.`box-only`

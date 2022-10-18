@@ -1,9 +1,9 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.aspectRatioMod.AspectRatioOptions
-import typings.interactjsTypes.aspectRatioMod.AspectRatioState
-import typings.interactjsTypes.interactjsModifiersTypesMod.Modifier
 import typings.interactjsTypes.interactjsTypesStrings.aspectRatio
+import typings.interactjsTypes.modifiersAspectRatioMod.AspectRatioOptions
+import typings.interactjsTypes.modifiersAspectRatioMod.AspectRatioState
+import typings.interactjsTypes.modifiersTypesMod.Modifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

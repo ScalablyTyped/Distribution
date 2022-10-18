@@ -1,51 +1,46 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.altMod.Alt3
-import typings.fpTs.altMod.Alt3C
-import typings.fpTs.applicativeMod.Applicative3
-import typings.fpTs.applicativeMod.Applicative3C
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.applyMod.Apply3
-import typings.fpTs.bifunctorMod.Bifunctor3
-import typings.fpTs.chainMod.Chain3
-import typings.fpTs.compactableMod.Compactable3C
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.filterableMod.Filterable3C
 import typings.fpTs.fpTsStrings.ReaderTaskEither
-import typings.fpTs.fromEitherMod.FromEither3
-import typings.fpTs.fromIOMod.FromIO3
-import typings.fpTs.fromReaderMod.FromReader3
-import typings.fpTs.fromTaskMod.FromTask3
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functorMod.Functor3
-import typings.fpTs.iOMod.IO_
-import typings.fpTs.ioeitherMod.IOEither_
-import typings.fpTs.monadIOMod.MonadIO3
-import typings.fpTs.monadMod.Monad3
-import typings.fpTs.monadMod.Monad3C
-import typings.fpTs.monadTaskMod.MonadTask3
-import typings.fpTs.monadTaskMod.MonadTask3C
-import typings.fpTs.monadThrowMod.MonadThrow3
-import typings.fpTs.monadThrowMod.MonadThrow3C
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.naturalTransformationMod.NaturalTransformation13
-import typings.fpTs.naturalTransformationMod.NaturalTransformation13C
-import typings.fpTs.naturalTransformationMod.NaturalTransformation23
-import typings.fpTs.naturalTransformationMod.NaturalTransformation23R
-import typings.fpTs.naturalTransformationMod.NaturalTransformation33
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.pointedMod.Pointed3
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.readerEitherMod.ReaderEither_
-import typings.fpTs.readerMod.Reader_
-import typings.fpTs.readerTaskEitherMod.ReaderTaskEither_
-import typings.fpTs.readerTaskMod.ReaderTask_
-import typings.fpTs.readonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
-import typings.fpTs.refinementMod.Refinement
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.taskEitherMod.TaskEither_
-import typings.fpTs.taskMod.Task_
+import typings.fpTs.libAltMod.Alt3
+import typings.fpTs.libAltMod.Alt3C
+import typings.fpTs.libApplicativeMod.Applicative3
+import typings.fpTs.libApplicativeMod.Applicative3C
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libApplyMod.Apply3
+import typings.fpTs.libBifunctorMod.Bifunctor3
+import typings.fpTs.libChainMod.Chain3
+import typings.fpTs.libCompactableMod.Compactable3C
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libFilterableMod.Filterable3C
+import typings.fpTs.libFromEitherMod.FromEither3
+import typings.fpTs.libFromIOMod.FromIO3
+import typings.fpTs.libFromReaderMod.FromReader3
+import typings.fpTs.libFromTaskMod.FromTask3
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctorMod.Functor3
+import typings.fpTs.libIOMod.IO_
+import typings.fpTs.libIoeitherMod.IOEither_
+import typings.fpTs.libMonadIOMod.MonadIO3
+import typings.fpTs.libMonadMod.Monad3
+import typings.fpTs.libMonadMod.Monad3C
+import typings.fpTs.libMonadTaskMod.MonadTask3
+import typings.fpTs.libMonadTaskMod.MonadTask3C
+import typings.fpTs.libMonadThrowMod.MonadThrow3
+import typings.fpTs.libMonadThrowMod.MonadThrow3C
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libPointedMod.Pointed3
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libReaderEitherMod.ReaderEither_
+import typings.fpTs.libReaderIOMod.ReaderIO
+import typings.fpTs.libReaderMod.Reader_
+import typings.fpTs.libReaderTaskEitherMod.ReaderTaskEither_
+import typings.fpTs.libReaderTaskMod.ReaderTask_
+import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
+import typings.fpTs.libRefinementMod.Refinement
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libTaskEitherMod.TaskEither_
+import typings.fpTs.libTaskMod.Task_
 import typings.std.Exclude
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -60,7 +55,7 @@ object readerTaskEither {
   
   @JSImport("fp-ts", "readerTaskEither.Alt")
   @js.native
-  val Alt_ : Alt3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val Alt_ : Alt3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.ApT")
   @js.native
@@ -68,27 +63,27 @@ object readerTaskEither {
   
   @JSImport("fp-ts", "readerTaskEither.ApplicativePar")
   @js.native
-  val ApplicativePar: Applicative3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val ApplicativePar: Applicative3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.ApplicativeSeq")
   @js.native
-  val ApplicativeSeq: Applicative3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val ApplicativeSeq: Applicative3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.ApplyPar")
   @js.native
-  val ApplyPar: Apply3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val ApplyPar: Apply3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.ApplySeq")
   @js.native
-  val ApplySeq: Apply3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val ApplySeq: Apply3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.Bifunctor")
   @js.native
-  val Bifunctor: Bifunctor3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val Bifunctor: Bifunctor3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.Chain")
   @js.native
-  val Chain_ : Chain3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val Chain_ : Chain3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.Do")
   @js.native
@@ -96,43 +91,43 @@ object readerTaskEither {
   
   @JSImport("fp-ts", "readerTaskEither.FromEither")
   @js.native
-  val FromEither_ : FromEither3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val FromEither_ : FromEither3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.FromIO")
   @js.native
-  val FromIO_ : FromIO3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val FromIO_ : FromIO3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.FromReader")
   @js.native
-  val FromReader_ : FromReader3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val FromReader_ : FromReader3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.FromTask")
   @js.native
-  val FromTask_ : FromTask3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val FromTask_ : FromTask3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.Functor")
   @js.native
-  val Functor: Functor3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val Functor: Functor3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.Monad")
   @js.native
-  val Monad: Monad3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val Monad: Monad3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.MonadIO")
   @js.native
-  val MonadIO: MonadIO3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val MonadIO: MonadIO3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.MonadTask")
   @js.native
-  val MonadTask: MonadTask3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val MonadTask: MonadTask3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.MonadThrow")
   @js.native
-  val MonadThrow: MonadThrow3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val MonadThrow: MonadThrow3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.Pointed")
   @js.native
-  val Pointed: Pointed3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val Pointed: Pointed3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.URI")
   @js.native
@@ -171,18 +166,14 @@ object readerTaskEither {
     ReaderTaskEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReaderTaskEither_[R, E, A], 
     ReaderTaskEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -191,18 +182,14 @@ object readerTaskEither {
     ReaderTaskEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apSW")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReaderTaskEither_[Any, Any, A], 
     ReaderTaskEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apSW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -239,18 +226,14 @@ object readerTaskEither {
     ReaderTaskEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ ReaderTaskEither_[R, E, A], 
     ReaderTaskEither_[
       R, 
       E, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -259,18 +242,14 @@ object readerTaskEither {
     ReaderTaskEither_[
       Any, 
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ ReaderTaskEither_[Any, Any, Any], 
     ReaderTaskEither_[
       Any, 
       Any, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -279,18 +258,14 @@ object readerTaskEither {
     ReaderTaskEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindW")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ ReaderTaskEither_[Any, Any, A], 
     ReaderTaskEither_[
       Any & R2, 
       Any | E2, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bindW & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in keyof A | N ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -324,37 +299,17 @@ object readerTaskEither {
   
   inline def chainFirstReaderEitherKW[R2, E2, A, B](f: js.Function1[/* a */ A, ReaderEither_[R2, E2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any | E2, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any | E2, A]]]
   
-  inline def chainFirstReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, A]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, A]
-  ]]
+  inline def chainFirstReaderIOK[A, R, B](f: js.Function1[/* a */ A, ReaderIO[R, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, A]]]
   
-  inline def chainFirstReaderKW[A, R1, B](f: js.Function1[/* a */ A, Reader_[R1, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[R1 & Any, scala.Nothing, A]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[R1 & Any, scala.Nothing, A]
-  ]]
+  inline def chainFirstReaderIOKW[A, R2, B](f: js.Function1[/* a */ A, ReaderIO[R2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderIOKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, A]]]
   
-  inline def chainFirstReaderTaskK[A, R, B](f: js.Function1[/* a */ A, ReaderTask_[R, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, A]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, A]
-  ]]
+  inline def chainFirstReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, A]]]
   
-  inline def chainFirstReaderTaskKW[A, R2, B](f: js.Function1[/* a */ A, ReaderTask_[R2, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[Any & R2, scala.Nothing, A]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderTaskKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[Any & R2, scala.Nothing, A]
-  ]]
+  inline def chainFirstReaderKW[A, R1, B](f: js.Function1[/* a */ A, Reader_[R1, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[R1 & Any, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[R1 & Any, Any, A]]]
+  
+  inline def chainFirstReaderTaskK[A, R, B](f: js.Function1[/* a */ A, ReaderTask_[R, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, A]]]
+  
+  inline def chainFirstReaderTaskKW[A, R2, B](f: js.Function1[/* a */ A, ReaderTask_[R2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstReaderTaskKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, A]]]
   
   inline def chainFirstTaskEitherK[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, E, A], ReaderTaskEither_[Any, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirstTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, E, A], ReaderTaskEither_[Any, E, A]]]
   
@@ -396,37 +351,17 @@ object readerTaskEither {
   
   inline def chainReaderEitherKW[R2, E2, A, B](f: js.Function1[/* a */ A, ReaderEither_[R2, E2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any | E2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderEitherKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any | E2, B]]]
   
-  inline def chainReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, B]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, B]
-  ]]
+  inline def chainReaderIOK[A, R, B](f: js.Function1[/* a */ A, ReaderIO[R, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, B]]]
   
-  inline def chainReaderKW[A, R1, B](f: js.Function1[/* a */ A, Reader_[R1, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[R1 & Any, scala.Nothing, B]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[R1 & Any, scala.Nothing, B]
-  ]]
+  inline def chainReaderIOKW[A, R2, B](f: js.Function1[/* a */ A, ReaderIO[R2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderIOKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, B]]]
   
-  inline def chainReaderTaskK[A, R, B](f: js.Function1[/* a */ A, ReaderTask_[R, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, B]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[R, scala.Nothing, A], 
-    ReaderTaskEither_[R, scala.Nothing, B]
-  ]]
+  inline def chainReaderK[A, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, B]]]
   
-  inline def chainReaderTaskKW[A, R2, B](f: js.Function1[/* a */ A, ReaderTask_[R2, B]]): js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[Any & R2, scala.Nothing, B]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderTaskKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* ma */ ReaderTaskEither_[Any, scala.Nothing, A], 
-    ReaderTaskEither_[Any & R2, scala.Nothing, B]
-  ]]
+  inline def chainReaderKW[A, R1, B](f: js.Function1[/* a */ A, Reader_[R1, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[R1 & Any, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[R1 & Any, Any, B]]]
+  
+  inline def chainReaderTaskK[A, R, B](f: js.Function1[/* a */ A, ReaderTask_[R, B]]): js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, Any, A], ReaderTaskEither_[R, Any, B]]]
+  
+  inline def chainReaderTaskKW[A, R2, B](f: js.Function1[/* a */ A, ReaderTask_[R2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainReaderTaskKW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, Any, A], ReaderTaskEither_[Any & R2, Any, B]]]
   
   inline def chainTaskEitherK[E, A, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, E, A], ReaderTaskEither_[Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, E, A], ReaderTaskEither_[Any, E, B]]]
   
@@ -466,23 +401,17 @@ object readerTaskEither {
     onRight: js.Function1[/* a */ A, ReaderTask_[R3, C]]
   ): js.Function1[/* ma */ ReaderTaskEither_[Any, E, A], ReaderTask_[Any & R2 & R3, B | C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onLeft.asInstanceOf[js.Any], onRight.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, E, A], ReaderTask_[Any & R2 & R3, B | C]]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromEither")
-  @js.native
-  val fromEither: NaturalTransformation23[typings.fpTs.eitherMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromEither[E, A, R](fa: Either_[E, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def fromEitherK[E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Either_[E, B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromIO")
-  @js.native
-  val fromIO: NaturalTransformation13[typings.fpTs.iOMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromIO[A, R, E](fa: IO_[A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromIOEither")
-  @js.native
-  val fromIOEither: NaturalTransformation23[typings.fpTs.ioeitherMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromIOEither[E, A, R](fa: IOEither_[E, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEither")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def fromIOEitherK[E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IOEither_[E, B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]]]
   
-  inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, Any, B]]]
+  inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, scala.Nothing, B]]]
   
   inline def fromNullable[E](e: E): js.Function1[/* a */ Any, ReaderTaskEither_[Any, E, NonNullable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(e.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ Any, ReaderTaskEither_[Any, E, NonNullable[Any]]]]
   
@@ -494,7 +423,7 @@ object readerTaskEither {
     js.Function1[/* a */ js.Array[Any], ReaderTaskEither_[Any, E, NonNullable[Any]]]
   ]]
   
-  inline def fromOption[E](onNone: Lazy[E]): NaturalTransformation13C[typings.fpTs.optionMod.URI, typings.fpTs.readerTaskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[NaturalTransformation13C[typings.fpTs.optionMod.URI, typings.fpTs.readerTaskEitherMod.URI, E]]
+  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], ReaderTaskEither_[Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], ReaderTaskEither_[Any, E, Any]]]
   
   inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
@@ -508,35 +437,29 @@ object readerTaskEither {
   
   inline def fromPredicate_EAB[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromReader")
-  @js.native
-  val fromReader: NaturalTransformation23R[typings.fpTs.readerMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromReader[R, A, E](fa: Reader_[R, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReader")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromReaderEither")
-  @js.native
-  val fromReaderEither: NaturalTransformation33[typings.fpTs.readerEitherMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromReaderEither[R, E, A](fa: ReaderEither_[R, E, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderEither")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def fromReaderEitherK[R, E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, ReaderEither_[R, E, B]]): js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[R, E, B]]]
+  
+  inline def fromReaderIOK[A /* <: js.Array[Any] */, R, B](f: js.Function1[/* a */ A, ReaderIO[R, B]]): js.Function1[/* a */ A, ReaderTaskEither_[R, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[R, scala.Nothing, B]]]
   
   inline def fromReaderK[A /* <: js.Array[Any] */, R, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* a */ A, ReaderTaskEither_[R, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[R, scala.Nothing, B]]]
   
   inline def fromReaderTaskK[A /* <: js.Array[Any] */, R, B](f: js.Function1[/* a */ A, ReaderTask_[R, B]]): js.Function1[/* a */ A, ReaderTaskEither_[R, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReaderTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[R, scala.Nothing, B]]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromTask")
-  @js.native
-  val fromTask: NaturalTransformation13[typings.fpTs.taskMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromTask[A, R, E](fa: Task_[A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTask")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
-  @JSImport("fp-ts", "readerTaskEither.fromTaskEither")
-  @js.native
-  val fromTaskEither: NaturalTransformation23[typings.fpTs.taskEitherMod.URI, typings.fpTs.readerTaskEitherMod.URI] = js.native
+  inline def fromTaskEither[E, A, R](fa: TaskEither_[E, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEither")(fa.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def fromTaskEitherK[E, A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, TaskEither_[E, B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskEitherK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, E, B]]]
   
-  inline def fromTaskK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, Any, B]]]
+  inline def fromTaskK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* a */ A, ReaderTaskEither_[Any, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTaskK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, ReaderTaskEither_[Any, scala.Nothing, B]]]
   
-  inline def getAltReaderTaskValidation[E](S: Semigroup[E]): Alt3C[typings.fpTs.readerTaskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltReaderTaskValidation")(S.asInstanceOf[js.Any]).asInstanceOf[Alt3C[typings.fpTs.readerTaskEitherMod.URI, E]]
+  inline def getAltReaderTaskValidation[E](S: Semigroup[E]): Alt3C[typings.fpTs.libReaderTaskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltReaderTaskValidation")(S.asInstanceOf[js.Any]).asInstanceOf[Alt3C[typings.fpTs.libReaderTaskEitherMod.URI, E]]
   
-  inline def getApplicativeReaderTaskValidation[E](A: Apply1[typings.fpTs.taskMod.URI], S: Semigroup[E]): Applicative3C[typings.fpTs.readerTaskEitherMod.URI, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplicativeReaderTaskValidation")(A.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[Applicative3C[typings.fpTs.readerTaskEitherMod.URI, E]]
+  inline def getApplicativeReaderTaskValidation[E](A: Apply1[typings.fpTs.libTaskMod.URI], S: Semigroup[E]): Applicative3C[typings.fpTs.libReaderTaskEitherMod.URI, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplicativeReaderTaskValidation")(A.asInstanceOf[js.Any], S.asInstanceOf[js.Any])).asInstanceOf[Applicative3C[typings.fpTs.libReaderTaskEitherMod.URI, E]]
   
   inline def getApplyMonoid[R, E, A](M: Monoid[A]): Monoid[ReaderTaskEither_[R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplyMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[Monoid[ReaderTaskEither_[R, E, A]]]
   
@@ -544,13 +467,13 @@ object readerTaskEither {
   
   inline def getCompactable[E](M: Monoid[E]): Compactable3C[ReaderTaskEither, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompactable")(M.asInstanceOf[js.Any]).asInstanceOf[Compactable3C[ReaderTaskEither, E]]
   
-  inline def getFilterable[E](M: Monoid[E]): Filterable3C[typings.fpTs.readerTaskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterable")(M.asInstanceOf[js.Any]).asInstanceOf[Filterable3C[typings.fpTs.readerTaskEitherMod.URI, E]]
+  inline def getFilterable[E](M: Monoid[E]): Filterable3C[typings.fpTs.libReaderTaskEitherMod.URI, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterable")(M.asInstanceOf[js.Any]).asInstanceOf[Filterable3C[typings.fpTs.libReaderTaskEitherMod.URI, E]]
   
   inline def getOrElse[R, E, A](onLeft: js.Function1[/* e */ E, ReaderTask_[R, A]]): js.Function1[/* ma */ ReaderTaskEither_[R, E, A], ReaderTask_[R, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R, E, A], ReaderTask_[R, A]]]
   
   inline def getOrElseW[R2, E, B](onLeft: js.Function1[/* e */ E, ReaderTask_[R2, B]]): js.Function1[/* ma */ ReaderTaskEither_[Any, E, Any], ReaderTask_[Any & R2, Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[Any, E, Any], ReaderTask_[Any & R2, Any | B]]]
   
-  inline def getReaderTaskValidation[E](SE: Semigroup[E]): (Monad3C[typings.fpTs.readerTaskEitherMod.URI, E]) & Bifunctor3[typings.fpTs.readerTaskEitherMod.URI] & (Alt3C[typings.fpTs.readerTaskEitherMod.URI, E]) & (MonadTask3C[typings.fpTs.readerTaskEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.readerTaskEitherMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderTaskValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[(Monad3C[typings.fpTs.readerTaskEitherMod.URI, E]) & Bifunctor3[typings.fpTs.readerTaskEitherMod.URI] & (Alt3C[typings.fpTs.readerTaskEitherMod.URI, E]) & (MonadTask3C[typings.fpTs.readerTaskEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.readerTaskEitherMod.URI, E])]
+  inline def getReaderTaskValidation[E](SE: Semigroup[E]): (Monad3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) & Bifunctor3[typings.fpTs.libReaderTaskEitherMod.URI] & (Alt3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) & (MonadTask3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getReaderTaskValidation")(SE.asInstanceOf[js.Any]).asInstanceOf[(Monad3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) & Bifunctor3[typings.fpTs.libReaderTaskEitherMod.URI] & (Alt3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) & (MonadTask3C[typings.fpTs.libReaderTaskEitherMod.URI, E]) & (MonadThrow3C[typings.fpTs.libReaderTaskEitherMod.URI, E])]
   
   inline def getSemigroup[R, E, A](S: Semigroup[A]): Semigroup[ReaderTaskEither_[R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[Semigroup[ReaderTaskEither_[R, E, A]]]
   
@@ -560,9 +483,27 @@ object readerTaskEither {
   
   inline def leftReader[R, E, A](me: Reader_[R, E]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftReader")(me.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
+  inline def leftReaderIO[R, E, A](me: ReaderIO[R, E]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftReaderIO")(me.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
+  
   inline def leftReaderTask[R, E, A](me: ReaderTask_[R, E]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftReaderTask")(me.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def leftTask[R, E, A](me: Task_[E]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("leftTask")(me.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
+  
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ ReaderTaskEither_[Any, Any, A], 
+    ReaderTaskEither_[
+      Any, 
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ ReaderTaskEither_[Any, Any, A], 
+    ReaderTaskEither_[
+      Any, 
+      Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
   
   inline def local[R2, R1](f: js.Function1[/* r2 */ R2, R1]): js.Function1[/* ma */ ReaderTaskEither_[R1, Any, Any], ReaderTaskEither_[R2, Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ ReaderTaskEither_[R1, Any, Any], ReaderTaskEither_[R2, Any, Any]]]
   
@@ -604,17 +545,19 @@ object readerTaskEither {
   
   @JSImport("fp-ts", "readerTaskEither.readerTaskEither")
   @js.native
-  val readerTaskEither: Monad3[typings.fpTs.readerTaskEitherMod.URI] & Bifunctor3[typings.fpTs.readerTaskEitherMod.URI] & Alt3[typings.fpTs.readerTaskEitherMod.URI] & MonadTask3[typings.fpTs.readerTaskEitherMod.URI] & MonadThrow3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val readerTaskEither: Monad3[typings.fpTs.libReaderTaskEitherMod.URI] & Bifunctor3[typings.fpTs.libReaderTaskEitherMod.URI] & Alt3[typings.fpTs.libReaderTaskEitherMod.URI] & MonadTask3[typings.fpTs.libReaderTaskEitherMod.URI] & MonadThrow3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   @JSImport("fp-ts", "readerTaskEither.readerTaskEitherSeq")
   @js.native
-  val readerTaskEitherSeq: Monad3[typings.fpTs.readerTaskEitherMod.URI] & Bifunctor3[typings.fpTs.readerTaskEitherMod.URI] & Alt3[typings.fpTs.readerTaskEitherMod.URI] & MonadTask3[typings.fpTs.readerTaskEitherMod.URI] & MonadThrow3[typings.fpTs.readerTaskEitherMod.URI] = js.native
+  val readerTaskEitherSeq: Monad3[typings.fpTs.libReaderTaskEitherMod.URI] & Bifunctor3[typings.fpTs.libReaderTaskEitherMod.URI] & Alt3[typings.fpTs.libReaderTaskEitherMod.URI] & MonadTask3[typings.fpTs.libReaderTaskEitherMod.URI] & MonadThrow3[typings.fpTs.libReaderTaskEitherMod.URI] = js.native
   
   inline def right[R, E, A](a: A): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(a.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def rightIO[R, E, A](ma: IO_[A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightIO")(ma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def rightReader[R, E, A](ma: Reader_[R, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightReader")(ma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
+  
+  inline def rightReaderIO[R, E, A](ma: ReaderIO[R, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightReaderIO")(ma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
   inline def rightReaderTask[R, E, A](ma: ReaderTask_[R, A]): ReaderTaskEither_[R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("rightReaderTask")(ma.asInstanceOf[js.Any]).asInstanceOf[ReaderTaskEither_[R, E, A]]
   
@@ -665,9 +608,10 @@ object readerTaskEither {
   
   inline def traverseSeqArrayWithIndex[R, E, A, B](f: js.Function2[/* index */ Double, /* a */ A, ReaderTaskEither_[R, E, B]]): js.Function1[/* as */ js.Array[A], ReaderTaskEither_[R, E, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseSeqArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], ReaderTaskEither_[R, E, js.Array[B]]]]
   
+  /* augmented module */
   object HKTAugmentingMod {
     
     @js.native
-    trait URItoKind[A] extends StObject
+    trait URItoKind3[R, E, A] extends StObject
   }
 }

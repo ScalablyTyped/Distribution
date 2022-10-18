@@ -1,6 +1,6 @@
 package typings.fluentuiMergeStyles
 
-import typings.fluentuiMergeStyles.istyleMod._IStyleBase
+import typings.fluentuiMergeStyles.libIstyleMod._IStyleBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

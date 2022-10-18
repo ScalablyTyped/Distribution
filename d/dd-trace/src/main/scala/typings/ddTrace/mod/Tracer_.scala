@@ -27,6 +27,7 @@ import typings.ddTrace.ddTraceStrings.jest
 import typings.ddTrace.ddTraceStrings.kafkajs
 import typings.ddTrace.ddTraceStrings.knex
 import typings.ddTrace.ddTraceStrings.koa
+import typings.ddTrace.ddTraceStrings.mariadb
 import typings.ddTrace.ddTraceStrings.memcached
 import typings.ddTrace.ddTraceStrings.mocha
 import typings.ddTrace.ddTraceStrings.moleculer
@@ -52,8 +53,8 @@ import typings.ddTrace.mod.plugins.genericPool
 import typings.ddTrace.mod.plugins.googleCloudPubsub
 import typings.ddTrace.mod.plugins.microgatewayCore
 import typings.ddTrace.mod.plugins.mongodbCore
+import typings.opentracing.libTracerMod.SpanOptions
 import typings.opentracing.mod.Tracer
-import typings.opentracing.tracerMod.SpanOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -296,6 +297,12 @@ trait Tracer_ extends Tracer {
   def use_koa(plugin: koa, config: Boolean): this.type = js.native
   @JSName("use")
   def use_koa(plugin: koa, config: typings.ddTrace.mod.plugins.koa): this.type = js.native
+  @JSName("use")
+  def use_mariadb(plugin: mariadb): this.type = js.native
+  @JSName("use")
+  def use_mariadb(plugin: mariadb, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_mariadb(plugin: mariadb, config: typings.ddTrace.mod.plugins.mariadb): this.type = js.native
   @JSName("use")
   def use_memcached(plugin: memcached): this.type = js.native
   @JSName("use")

@@ -10,34 +10,32 @@ import typings.react.mod.RefAttributes
 import typings.reactReconciler.mod.Reconciler
 import typings.reactThreeFiber.anon.Dictkey
 import typings.reactThreeFiber.anon.HandlePointer
-import typings.reactThreeFiber.coreMod.InjectState
-import typings.reactThreeFiber.coreMod.ReconcilerRoot
-import typings.reactThreeFiber.coreMod.RenderProps
-import typings.reactThreeFiber.eventsMod.EventManager
-import typings.reactThreeFiber.hooksMod.BranchingReturn
-import typings.reactThreeFiber.hooksMod.Extensions
-import typings.reactThreeFiber.hooksMod.LoaderResult
-import typings.reactThreeFiber.loopMod.GlobalRenderCallback
-import typings.reactThreeFiber.rendererMod.Instance
-import typings.reactThreeFiber.rendererMod.LocalState
-import typings.reactThreeFiber.rendererMod.Root
-import typings.reactThreeFiber.storeMod.RenderCallback
-import typings.reactThreeFiber.storeMod.RootState
-import typings.reactThreeFiber.utilsMod.ObjectMap
-import typings.reactThreeFiber.webCanvasMod.Props
+import typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.EventManager
+import typings.reactThreeFiber.distDeclarationsSrcCoreHooksMod.Extensions
+import typings.reactThreeFiber.distDeclarationsSrcCoreHooksMod.LoaderResult
+import typings.reactThreeFiber.distDeclarationsSrcCoreLoopMod.GlobalRenderCallback
+import typings.reactThreeFiber.distDeclarationsSrcCoreMod.InjectState
+import typings.reactThreeFiber.distDeclarationsSrcCoreMod.ReconcilerRoot
+import typings.reactThreeFiber.distDeclarationsSrcCoreMod.RenderProps
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.Instance
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.LocalState
+import typings.reactThreeFiber.distDeclarationsSrcCoreRendererMod.Root
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.RenderCallback
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.RootState
+import typings.reactThreeFiber.distDeclarationsSrcCoreUtilsMod.ObjectMap
+import typings.reactThreeFiber.distDeclarationsSrcWebCanvasMod.Props
 import typings.std.Element
 import typings.std.EventTarget
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.ProgressEvent
-import typings.three.eventDispatcherMod.Event
-import typings.three.gltfloaderMod.GLTF
 import typings.three.mod.LoadingManager
 import typings.three.mod.Object3D
-import typings.zustand.zustandReactMod.UseBoundStore
-import typings.zustand.zustandVanillaMod.EqualityChecker
-import typings.zustand.zustandVanillaMod.StateSelector
+import typings.three.srcCoreEventDispatcherMod.Event
+import typings.zustand.reactMod.UseBoundStore
+import typings.zustand.vanillaMod.EqualityChecker
+import typings.zustand.vanillaMod.StateSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,45 +109,45 @@ object mod {
   
   object useLoader {
     
-    inline def apply[T](Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]], input: String): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    inline def apply[T](Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]], input: String): /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: String,
       extensions: Unit,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: String,
       extensions: Extensions
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: String,
       extensions: Extensions,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: string extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: js.Array[String]
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: js.Array[String],
       extensions: Unit,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: js.Array[String],
       extensions: Extensions
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     inline def apply[T](
       Proto: Instantiable1[/* manager */ js.UndefOr[LoadingManager], LoaderResult[T]],
       input: js.Array[String],
       extensions: Extensions,
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
-    ): (BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]]) = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[(BranchingReturn[T, GLTF, GLTF & ObjectMap]) | (js.Array[BranchingReturn[T, GLTF, GLTF & ObjectMap]])]
+    ): /* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any = (^.asInstanceOf[js.Dynamic].apply(Proto.asInstanceOf[js.Any], input.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: std.Array<string> extends std.Array<any> ? std.Array<@react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap>> : @react-three/fiber.@react-three/fiber/dist/declarations/src/core/hooks.BranchingReturn<T, three.three/examples/jsm/loaders/GLTFLoader.GLTF, three.three/examples/jsm/loaders/GLTFLoader.GLTF & @react-three/fiber.@react-three/fiber/dist/declarations/src/core/utils.ObjectMap> */ js.Any]
     
     @JSImport("@react-three/fiber", "useLoader")
     @js.native

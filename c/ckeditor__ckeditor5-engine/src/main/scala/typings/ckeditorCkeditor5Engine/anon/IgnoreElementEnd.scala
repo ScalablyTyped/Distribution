@@ -1,8 +1,8 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.rangeMod.default
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerDirection
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerOptions
+import typings.ckeditorCkeditor5Engine.srcModelRangeMod.default
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerDirection
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ trait IgnoreElementEnd
   
   var singleCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var startPosition: js.UndefOr[typings.ckeditorCkeditor5Engine.positionMod.default] = js.undefined
+  var startPosition: js.UndefOr[typings.ckeditorCkeditor5Engine.srcModelPositionMod.default] = js.undefined
 }
 object IgnoreElementEnd {
   
@@ -50,7 +50,7 @@ object IgnoreElementEnd {
     
     inline def setSingleCharactersUndefined: Self = StObject.set(x, "singleCharacters", js.undefined)
     
-    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.positionMod.default): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
   }

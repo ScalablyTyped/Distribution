@@ -9,7 +9,7 @@ import typings.reduxTestkit.anon.Flush
 import typings.reduxTestkit.anon.ReducerTestkitwithStatest
 import typings.reduxTestkit.anon.ThunkTestkitwithStatestat
 import typings.reduxTestkit.anon.ToChangeInState
-import typings.reduxThunk.typesMod.ThunkAction
+import typings.reduxThunk.esTypesMod.ThunkAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

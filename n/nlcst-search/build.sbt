@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "nlcst-search"
-version := "3.1.0-9873c4"
+version := "3.1.0-65693c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "nlcst" % "1.0-dt-20220624Z-d18930",
-  "org.scalablytyped" %%% "nlcst-normalize" % "3.1.0-dc896f",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-e82c50")
+  "org.scalablytyped" %%% "nlcst" % "1.0-dt-20220624Z-5107f7",
+  "org.scalablytyped" %%% "nlcst-normalize" % "3.1.0-13567a",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-e61dba")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

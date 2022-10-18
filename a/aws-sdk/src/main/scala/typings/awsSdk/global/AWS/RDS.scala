@@ -1,7 +1,6 @@
 package typings.awsSdk.global.AWS
 
-import typings.awsSdk.rdsMod.ClientConfiguration
-import typings.awsSdk.rdsSignerMod.Signer.SignerOptions
+import typings.awsSdk.clientsRdsMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +13,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class RDS ()
   extends typings.awsSdk.mod.RDS {
   def this(options: ClientConfiguration) = this()
-}
-object RDS {
-  
-  @JSGlobal("AWS.RDS.Signer")
-  @js.native
-  /**
-    * A signer object can be used to generate an auth token to a database.
-    */
-  open class Signer ()
-    extends typings.awsSdk.mod.RDS.Signer {
-    def this(options: SignerOptions) = this()
-  }
 }

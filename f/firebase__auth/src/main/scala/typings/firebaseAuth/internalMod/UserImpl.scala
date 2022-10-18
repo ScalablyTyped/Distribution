@@ -1,24 +1,24 @@
 package typings.firebaseAuth.internalMod
 
-import typings.firebaseAuth.idTokenMod.IdTokenResponse
-import typings.firebaseAuth.modelAuthMod.AuthInternal
-import typings.firebaseAuth.persistenceMod.PersistedBlob
-import typings.firebaseAuth.userMod.UserInternal
-import typings.firebaseAuth.userMod.UserParameters
+import typings.firebaseAuth.distSrcCorePersistenceMod.PersistedBlob
+import typings.firebaseAuth.distSrcModelAuthMod.AuthInternal
+import typings.firebaseAuth.distSrcModelIdTokenMod.IdTokenResponse
+import typings.firebaseAuth.distSrcModelUserMod.UserInternal
+import typings.firebaseAuth.distSrcModelUserMod.UserParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "UserImpl")
+@JSImport("@firebase/auth/internal", "UserImpl")
 @js.native
 open class UserImpl protected ()
-  extends typings.firebaseAuth.userImplMod.UserImpl {
+  extends typings.firebaseAuth.distInternalMod.UserImpl {
   def this(hasUidAuthStsTokenManagerOpt: UserParameters) = this()
 }
 /* static members */
 object UserImpl {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "UserImpl")
+  @JSImport("@firebase/auth/internal", "UserImpl")
   @js.native
   val ^ : js.Any = js.native
   

@@ -28,13 +28,13 @@ inline def extractMinAndMax(
   positions: FloatArray,
   start: Double,
   count: Double,
-  bias: Nullable[typings.babylonjs.mathVectorMod.Vector2]
+  bias: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector2]
 ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Maximum]
 inline def extractMinAndMax(
   positions: FloatArray,
   start: Double,
   count: Double,
-  bias: Nullable[typings.babylonjs.mathVectorMod.Vector2],
+  bias: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector2],
   stride: Double
 ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMax")(positions.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Maximum]
 
@@ -44,5 +44,5 @@ inline def extractMinAndMaxIndexed(
   indices: IndicesArray,
   indexStart: Double,
   indexCount: Double,
-  bias: Nullable[typings.babylonjs.mathVectorMod.Vector2]
+  bias: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector2]
 ): Maximum = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMinAndMaxIndexed")(positions.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], indexStart.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Maximum]

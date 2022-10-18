@@ -21,10 +21,12 @@ object mod {
     
     var all: EventHandlerMap[Events] = js.native
     
-    def emit[Key /* <: /* keyof Events */ String */](`type`: Key): Unit = js.native
     def emit[Key /* <: /* keyof Events */ String */](
       `type`: Key,
       event: /* import warning: importer.ImportType#apply Failed type conversion: Events[Key] */ js.Any
+    ): Unit = js.native
+    def emit[Key /* <: /* keyof Events */ String */](
+      `type`: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends Events[Key] ? Key : never */ js.Any
     ): Unit = js.native
     
     def off(`type`: Asterisk, handler: WildcardHandler[Events]): Unit = js.native

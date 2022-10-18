@@ -39,7 +39,7 @@ trait EmailAddressDetails extends StObject {
     * 
     * @remarks
     * **Important**: A `recipientType` property value isn't returned by the 
-    * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync}
     * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
     * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
     */

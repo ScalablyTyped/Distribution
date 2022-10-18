@@ -1,6 +1,6 @@
 package typings.xrm.Xrm.Controls
 
-import typings.xrm.Xrm.Events.ContextSensitiveHandler
+import typings.xrm.Xrm.Events.GridControl.LoadEventHandler
 import typings.xrm.XrmEnum.GridControlContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ trait GridControl
     *
     * @param handler The event handler.
     */
-  def addOnLoad(handler: ContextSensitiveHandler): Unit
+  def addOnLoad(handler: LoadEventHandler): Unit
   
   /**
     * This method returns context information about the GridControl.
@@ -70,7 +70,7 @@ trait GridControl
 object GridControl {
   
   inline def apply(
-    addOnLoad: ContextSensitiveHandler => Unit,
+    addOnLoad: LoadEventHandler => Unit,
     getContextType: () => GridControlContext,
     getControlType: () => ControlType | String,
     getEntityName: () => String,
@@ -92,7 +92,7 @@ object GridControl {
   
   extension [Self <: GridControl](x: Self) {
     
-    inline def setAddOnLoad(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnLoad", js.Any.fromFunction1(value))
+    inline def setAddOnLoad(value: LoadEventHandler => Unit): Self = StObject.set(x, "addOnLoad", js.Any.fromFunction1(value))
     
     inline def setGetContextType(value: () => GridControlContext): Self = StObject.set(x, "getContextType", js.Any.fromFunction0(value))
     

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait FileType extends StObject
 /**
   * Specifies the format in which to return the document.
-  *
   */
 @JSGlobal("Office.FileType")
 @js.native

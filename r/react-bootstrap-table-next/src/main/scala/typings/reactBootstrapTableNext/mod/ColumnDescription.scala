@@ -5,8 +5,8 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactBootstrapTableNext.anon.FilterElement
 import typings.reactBootstrapTableNext.anon.OnClick
-import typings.reactBootstrapTableNext.anon.Options
 import typings.reactBootstrapTableNext.anon.TooltipFormatter
+import typings.reactBootstrapTableNext.anon.Type
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc
 import org.scalablytyped.runtime.StObject
@@ -56,7 +56,7 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
     Boolean | (js.Function4[/* cell */ Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
   ] = js.undefined
   
-  var editor: js.UndefOr[Options] = js.undefined
+  var editor: js.UndefOr[Type] = js.undefined
   
   var filter: js.UndefOr[Boolean | (TableColumnFilterProps[Any, Any])] = js.undefined
   
@@ -212,7 +212,7 @@ object ColumnDescription {
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    inline def setEditor(value: Options): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Type): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     

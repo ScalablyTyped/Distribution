@@ -5,14 +5,14 @@ import typings.d3Drag.mod.DragBehavior
 import typings.d3Drag.mod.DraggedElementBaseType
 import typings.d3Drag.mod.SubjectPosition
 import typings.d3Timer.mod.Timer_
-import typings.webcola.geomMod.Point
-import typings.webcola.geomMod.VisibilityEdge
-import typings.webcola.geomMod.VisibilityVertex
-import typings.webcola.layoutMod.Layout
-import typings.webcola.layoutMod.Link
-import typings.webcola.layoutMod.Node
-import typings.webcola.powergraphMod.PowerEdge
-import typings.webcola.vpscMod.Block
+import typings.webcola.distSrcGeomMod.Point
+import typings.webcola.distSrcGeomMod.VisibilityEdge
+import typings.webcola.distSrcGeomMod.VisibilityVertex
+import typings.webcola.distSrcLayoutMod.Layout
+import typings.webcola.distSrcLayoutMod.Link
+import typings.webcola.distSrcLayoutMod.Node
+import typings.webcola.distSrcPowergraphMod.PowerEdge
+import typings.webcola.distSrcVpscMod.Block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,7 +88,7 @@ object anon {
   
   trait Constraint extends StObject {
     
-    var constraint: typings.webcola.vpscMod.Constraint
+    var constraint: typings.webcola.distSrcVpscMod.Constraint
     
     var lb: Block
     
@@ -96,14 +96,14 @@ object anon {
   }
   object Constraint {
     
-    inline def apply(constraint: typings.webcola.vpscMod.Constraint, lb: Block, rb: Block): Constraint = {
+    inline def apply(constraint: typings.webcola.distSrcVpscMod.Constraint, lb: Block, rb: Block): Constraint = {
       val __obj = js.Dynamic.literal(constraint = constraint.asInstanceOf[js.Any], lb = lb.asInstanceOf[js.Any], rb = rb.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constraint]
     }
     
     extension [Self <: Constraint](x: Self) {
       
-      inline def setConstraint(value: typings.webcola.vpscMod.Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+      inline def setConstraint(value: typings.webcola.distSrcVpscMod.Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
       
       inline def setLb(value: Block): Self = StObject.set(x, "lb", value.asInstanceOf[js.Any])
       

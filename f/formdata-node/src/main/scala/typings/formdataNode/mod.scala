@@ -1,8 +1,8 @@
 package typings.formdataNode
 
-import typings.formdataNode.blobMod.BlobParts
-import typings.formdataNode.blobMod.BlobPropertyBag
-import typings.formdataNode.fileMod.FilePropertyBag
+import typings.formdataNode.`@typeBlobMod`.BlobParts
+import typings.formdataNode.`@typeBlobMod`.BlobPropertyBag
+import typings.formdataNode.`@typeFileMod`.FilePropertyBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object mod {
     * @param options An optional object of type `BlobPropertyBag`.
     */
   open class Blob ()
-    extends typings.formdataNode.blobMod.Blob {
+    extends typings.formdataNode.`@typeBlobMod`.Blob {
     def this(blobParts: BlobParts) = this()
     def this(blobParts: Unit, options: BlobPropertyBag) = this()
     def this(blobParts: BlobParts, options: BlobPropertyBag) = this()
@@ -28,7 +28,7 @@ object mod {
   @JSImport("formdata-node", "File")
   @js.native
   open class File protected ()
-    extends typings.formdataNode.fileMod.File {
+    extends typings.formdataNode.`@typeFileMod`.File {
     /**
       * Creates a new File instance.
       *
@@ -43,5 +43,5 @@ object mod {
   @JSImport("formdata-node", "FormData")
   @js.native
   open class FormData ()
-    extends typings.formdataNode.formDataMod.FormData
+    extends typings.formdataNode.`@typeFormDataMod`.FormData
 }

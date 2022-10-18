@@ -1,6 +1,6 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.dropdownMod.DropdownOptions
+import typings.carbonComponents.componentsDropdownDropdownMod.DropdownOptions
 import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Dropdown")
 @js.native
 open class Dropdown protected ()
-  extends typings.carbonComponents.componentsMod.Dropdown {
+  extends typings.carbonComponents.globalsJsComponentsMod.Dropdown {
   def this(element: HTMLElement, options: DropdownOptions) = this()
 }
 object Dropdown {

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "DomHandler")
 @js.native
 open class DomHandler ()
-  extends typings.primereact.utilsMod.DomHandler
+  extends typings.primereact.utilsUtilsMod.DomHandler
 /* static members */
 object DomHandler {
   

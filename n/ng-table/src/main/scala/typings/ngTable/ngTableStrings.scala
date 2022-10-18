@@ -1,8 +1,8 @@
 package typings.ngTable
 
-import typings.ngTable.filterSettingsMod.FilterLayout
-import typings.ngTable.groupingFuncMod.GroupSort
-import typings.ngTable.sortingMod.SortDirection
+import typings.ngTable.srcCoreFilteringFilterSettingsMod.FilterLayout
+import typings.ngTable.srcCoreGroupingGroupingFuncMod.GroupSort
+import typings.ngTable.srcCoreSortingMod.SortDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object formatjsIntlLocalematcherStrings {
   
   @js.native
-  sealed trait ResolveLocale extends StObject
-  inline def ResolveLocale: ResolveLocale = "ResolveLocale".asInstanceOf[ResolveLocale]
-  
-  @js.native
   sealed trait `best fit` extends StObject
   inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   

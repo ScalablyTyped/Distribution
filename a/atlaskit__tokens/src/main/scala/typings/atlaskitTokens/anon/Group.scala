@@ -1,7 +1,7 @@
 package typings.atlaskitTokens.anon
 
 import typings.atlaskitTokens.atlaskitTokensStrings.palette
-import typings.atlaskitTokens.typesTypesMod.PaletteCategory
+import typings.atlaskitTokens.distTypesTypesMod.PaletteCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

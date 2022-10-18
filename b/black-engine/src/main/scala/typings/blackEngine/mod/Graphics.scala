@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Graphics")
 @js.native
 open class Graphics ()
-  extends typings.blackEngine.graphicsMod.Graphics {
+  extends typings.blackEngine.displayGraphicsMod.Graphics {
   def this(graphicsData: String) = this()
-  def this(graphicsData: typings.blackEngine.graphicsDataMod.GraphicsData) = this()
+  def this(graphicsData: typings.blackEngine.displayGraphicsDataMod.GraphicsData) = this()
   def this(graphicsData: String, trim: Boolean) = this()
   def this(graphicsData: Null, trim: Boolean) = this()
   def this(graphicsData: Unit, trim: Boolean) = this()
-  def this(graphicsData: typings.blackEngine.graphicsDataMod.GraphicsData, trim: Boolean) = this()
+  def this(graphicsData: typings.blackEngine.displayGraphicsDataMod.GraphicsData, trim: Boolean) = this()
 }

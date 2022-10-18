@@ -1,26 +1,26 @@
 package typings.vegaLite.anon
 
-import typings.vegaTypings.axisMod.LabelOverlap
-import typings.vegaTypings.axisMod.TickCount
-import typings.vegaTypings.axisMod.TimeFormatSpecifier
-import typings.vegaTypings.encodeMod.Orientation
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.layoutMod.LayoutAlign
-import typings.vegaTypings.legendMod.LegendEncode
-import typings.vegaTypings.legendMod.LegendOrient
-import typings.vegaTypings.legendMod.LegendType
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.valuesMod.AlignValue
-import typings.vegaTypings.valuesMod.AnchorValue
-import typings.vegaTypings.valuesMod.ColorValue
-import typings.vegaTypings.valuesMod.DashArrayValue
-import typings.vegaTypings.valuesMod.FontStyleValue
-import typings.vegaTypings.valuesMod.FontWeightValue
-import typings.vegaTypings.valuesMod.NumberValue
-import typings.vegaTypings.valuesMod.OrientValue
-import typings.vegaTypings.valuesMod.StringValue
-import typings.vegaTypings.valuesMod.SymbolShapeValue
-import typings.vegaTypings.valuesMod.TextBaselineValue
+import typings.vegaTypings.typesSpecAxisMod.LabelOverlap
+import typings.vegaTypings.typesSpecAxisMod.TickCount
+import typings.vegaTypings.typesSpecAxisMod.TimeFormatSpecifier
+import typings.vegaTypings.typesSpecEncodeMod.Orientation
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecLayoutMod.LayoutAlign
+import typings.vegaTypings.typesSpecLegendMod.LegendEncode
+import typings.vegaTypings.typesSpecLegendMod.LegendOrient
+import typings.vegaTypings.typesSpecLegendMod.LegendType
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
+import typings.vegaTypings.typesSpecValuesMod.AlignValue
+import typings.vegaTypings.typesSpecValuesMod.AnchorValue
+import typings.vegaTypings.typesSpecValuesMod.ColorValue
+import typings.vegaTypings.typesSpecValuesMod.DashArrayValue
+import typings.vegaTypings.typesSpecValuesMod.FontStyleValue
+import typings.vegaTypings.typesSpecValuesMod.FontWeightValue
+import typings.vegaTypings.typesSpecValuesMod.NumberValue
+import typings.vegaTypings.typesSpecValuesMod.OrientValue
+import typings.vegaTypings.typesSpecValuesMod.StringValue
+import typings.vegaTypings.typesSpecValuesMod.SymbolShapeValue
+import typings.vegaTypings.typesSpecValuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +49,7 @@ trait ClipHeight extends StObject {
   
   var format: js.UndefOr[String | SignalRef | TimeFormatSpecifier] = js.undefined
   
-  var formatType: js.UndefOr[SignalRef | typings.vegaTypings.axisMod.FormatType] = js.undefined
+  var formatType: js.UndefOr[SignalRef | typings.vegaTypings.typesSpecAxisMod.FormatType] = js.undefined
   
   var gradientLength: js.UndefOr[Double | SignalRef] = js.undefined
   
@@ -226,7 +226,7 @@ object ClipHeight {
     
     inline def setFormat(value: String | SignalRef | TimeFormatSpecifier): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatType(value: SignalRef | typings.vegaTypings.axisMod.FormatType): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: SignalRef | typings.vegaTypings.typesSpecAxisMod.FormatType): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     

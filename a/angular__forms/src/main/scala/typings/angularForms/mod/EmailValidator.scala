@@ -75,9 +75,27 @@ object EmailValidator {
   
   @JSImport("@angular/forms", "EmailValidator.\u0275dir")
   @js.native
-  def ɵdir: ɵɵDirectiveDeclaration[EmailValidator, String, scala.Nothing, Email, js.Object, scala.Nothing, scala.Nothing, `false`] = js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    EmailValidator, 
+    /* [email][formControlName],[email][formControl],[email][ngModel] */ String, 
+    scala.Nothing, 
+    Email, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   inline def ɵdir_=(
-    x: ɵɵDirectiveDeclaration[EmailValidator, String, scala.Nothing, Email, js.Object, scala.Nothing, scala.Nothing, `false`]
+    x: ɵɵDirectiveDeclaration[
+      EmailValidator, 
+      /* [email][formControlName],[email][formControl],[email][ngModel] */ String, 
+      scala.Nothing, 
+      Email, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "EmailValidator.\u0275fac")

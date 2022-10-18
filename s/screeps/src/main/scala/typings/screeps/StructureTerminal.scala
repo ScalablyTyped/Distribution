@@ -12,8 +12,7 @@ trait StructureTerminal
   extends StObject
      with OwnedStructure[STRUCTURE_TERMINAL]
      with AnyOwnedStructure
-     with AnyStoreStructure
-     with ConcreteStructure[Any] {
+     with AnyStoreStructure {
   
   /**
     * The remaining amount of ticks while this terminal cannot be used to make StructureTerminal.send or Game.market.deal calls.

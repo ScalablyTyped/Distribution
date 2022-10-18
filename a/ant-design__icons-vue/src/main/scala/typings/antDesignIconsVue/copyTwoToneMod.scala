@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCopyTwoToneMod.CopyTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CopyTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CopyTwoTone", JSImport.Default)
   @js.native
   val default: CopyTwoToneIconType = js.native
-  
-  @js.native
-  trait CopyTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CopyTwoToneIconType: String = js.native
-  }
   
   type _To = CopyTwoToneIconType
   

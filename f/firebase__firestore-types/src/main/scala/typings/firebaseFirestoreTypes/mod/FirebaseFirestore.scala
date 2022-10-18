@@ -1,7 +1,7 @@
 package typings.firebaseFirestoreTypes.mod
 
-import typings.firebaseFirestoreTypes.anon.Complete
 import typings.firebaseFirestoreTypes.anon.Delete
+import typings.firebaseFirestoreTypes.anon.Error
 import typings.firebaseFirestoreTypes.anon.MockUserToken
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   def namedQuery(name: String): js.Promise[Query[DocumentData] | Null] = js.native
   
-  def onSnapshotsInSync(observer: Complete): js.Function0[Unit] = js.native
+  def onSnapshotsInSync(observer: Error): js.Function0[Unit] = js.native
   def onSnapshotsInSync(onSync: js.Function0[Unit]): js.Function0[Unit] = js.native
   
   def runTransaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native

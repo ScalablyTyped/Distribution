@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The provider attributes object represents the set of details used in card view to provide specified branding information for a `CellValue` type that supports provider attributes.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CellValueProviderAttributes extends StObject {
   
@@ -18,8 +17,7 @@ trait CellValueProviderAttributes extends StObject {
     * If a logo is specified, this will be used as tooltip text.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -27,8 +25,7 @@ trait CellValueProviderAttributes extends StObject {
     * Represents a URL used to download an image that will be used as a logo in card view.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var logoSourceAddress: js.UndefOr[String] = js.undefined
   
@@ -36,8 +33,7 @@ trait CellValueProviderAttributes extends StObject {
     * Represents a URL that is the navigation target if the user clicks on the logo element in card view.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var logoTargetAddress: js.UndefOr[String] = js.undefined
 }

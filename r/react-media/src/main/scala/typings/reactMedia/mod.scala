@@ -1,7 +1,6 @@
 package typings.reactMedia
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.Partial
@@ -16,7 +15,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: SingleQueryProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   inline def default[Q](props: MultiQueryProps[Q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait BaseProps extends StObject {
@@ -106,9 +104,15 @@ object mod {
     *   matches => {}
     * }</Media>
     */
-  type QueryResults[Queries] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof Queries ]: boolean}
-    */ typings.reactMedia.reactMediaStrings.QueryResults & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in keyof Queries ]: boolean}
+    }}}
+    */
+  @js.native
+  trait QueryResults[Queries] extends StObject
   
   trait SingleQueryProps
     extends StObject

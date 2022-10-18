@@ -1,8 +1,8 @@
 package typings.reactMdList
 
-import typings.reactMdList.getListItemHeightMod.ListItemHeight
-import typings.reactMdList.listItemAddonMod.ListItemAddonPosition
-import typings.reactMdList.listItemAddonMod.ListItemAddonType
+import typings.reactMdList.typesGetListItemHeightMod.ListItemHeight
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonPosition
+import typings.reactMdList.typesListItemAddonMod.ListItemAddonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

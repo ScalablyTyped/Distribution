@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "Particle")
 @js.native
 open class Particle protected ()
-  extends typings.babylonjs.particleMod.Particle {
+  extends typings.babylonjs.particlesParticleMod.Particle {
   /**
     * Creates a new instance Particle
     * @param particleSystem the particle system the particle belongs to
@@ -15,7 +15,7 @@ open class Particle protected ()
   def this(/**
     * The particle system the particle belongs to.
     */
-  particleSystem: typings.babylonjs.particleSystemMod.ParticleSystem) = this()
+  particleSystem: typings.babylonjs.particlesParticleSystemMod.ParticleSystem) = this()
 }
 /* static members */
 object Particle {

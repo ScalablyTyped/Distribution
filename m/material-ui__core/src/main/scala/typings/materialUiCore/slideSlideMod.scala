@@ -4,7 +4,7 @@ import typings.materialUiCore.materialUiCoreStrings.down
 import typings.materialUiCore.materialUiCoreStrings.left
 import typings.materialUiCore.materialUiCoreStrings.right
 import typings.materialUiCore.materialUiCoreStrings.up
-import typings.materialUiCore.transitionMod.TransitionProps
+import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element

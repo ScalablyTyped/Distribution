@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ServiceKindSupportedChanged event. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsServiceKindSupportedChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsServiceKindSupportedChangedEventArgs")
 @js.native
-abstract class RcsServiceKindSupportedChangedEventArgs ()
+open class RcsServiceKindSupportedChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsServiceKindSupportedChangedEventArgs {
   

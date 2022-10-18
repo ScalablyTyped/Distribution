@@ -9,7 +9,7 @@ trait IsShown extends StObject {
   /**
     * Hides sub chart.
     */
-  def hide(): Unit
+  def hide(): scala.Unit
   
   /**
     * Returns true if the sub chart is shown.
@@ -19,21 +19,21 @@ trait IsShown extends StObject {
   /**
     * Shows sub chart at the bottom of the chart.
     */
-  def show(): Unit
+  def show(): scala.Unit
 }
 object IsShown {
   
-  inline def apply(hide: () => Unit, isShown: () => Boolean, show: () => Unit): IsShown = {
+  inline def apply(hide: () => scala.Unit, isShown: () => Boolean, show: () => scala.Unit): IsShown = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), isShown = js.Any.fromFunction0(isShown), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[IsShown]
   }
   
   extension [Self <: IsShown](x: Self) {
     
-    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => scala.Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     inline def setIsShown(value: () => Boolean): Self = StObject.set(x, "isShown", js.Any.fromFunction0(value))
     
-    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => scala.Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

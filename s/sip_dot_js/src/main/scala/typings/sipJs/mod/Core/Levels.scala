@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Levels extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.sipJs.levelsMod.Levels & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.sipJs.libCoreLogLevelsMod.Levels & Double] = js.native
   
-  /* 3 */ val debug: typings.sipJs.levelsMod.Levels.debug & Double = js.native
+  /* 3 */ val debug: typings.sipJs.libCoreLogLevelsMod.Levels.debug & Double = js.native
   
-  /* 0 */ val error: typings.sipJs.levelsMod.Levels.error & Double = js.native
+  /* 0 */ val error: typings.sipJs.libCoreLogLevelsMod.Levels.error & Double = js.native
   
-  /* 2 */ val log: typings.sipJs.levelsMod.Levels.log & Double = js.native
+  /* 2 */ val log: typings.sipJs.libCoreLogLevelsMod.Levels.log & Double = js.native
   
-  /* 1 */ val warn: typings.sipJs.levelsMod.Levels.warn & Double = js.native
+  /* 1 */ val warn: typings.sipJs.libCoreLogLevelsMod.Levels.warn & Double = js.native
 }

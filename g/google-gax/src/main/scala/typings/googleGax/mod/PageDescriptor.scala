@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "PageDescriptor")
 @js.native
 open class PageDescriptor protected ()
-  extends typings.googleGax.descriptorMod.PageDescriptor {
+  extends typings.googleGax.buildSrcDescriptorMod.PageDescriptor {
   def this(requestPageTokenField: String, responsePageTokenField: String, resourceField: String) = this()
 }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "DeleteBucketLifecycleCommand")
 @js.native
 open class DeleteBucketLifecycleCommand protected ()
-  extends typings.awsSdkClientS3Browser.deleteBucketLifecycleCommandMod.DeleteBucketLifecycleCommand {
+  extends typings.awsSdkClientS3Browser.commandsDeleteBucketLifecycleCommandMod.DeleteBucketLifecycleCommand {
   def this(input: DeleteBucketLifecycleInput) = this()
 }

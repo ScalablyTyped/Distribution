@@ -26,7 +26,7 @@ object EntityMention {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

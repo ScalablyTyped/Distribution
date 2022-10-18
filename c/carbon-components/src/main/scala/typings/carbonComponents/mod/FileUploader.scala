@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "FileUploader")
 @js.native
 open class FileUploader protected ()
-  extends typings.carbonComponents.componentsMod.FileUploader {
+  extends typings.carbonComponents.globalsJsComponentsMod.FileUploader {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialFileUploaderOption) = this()
 }

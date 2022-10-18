@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about components that need to be revoked and renewed. */
-@JSGlobal("Windows.Media.Protection.RevocationAndRenewalInformation")
+/* note: abstract class */ @JSGlobal("Windows.Media.Protection.RevocationAndRenewalInformation")
 @js.native
-abstract class RevocationAndRenewalInformation ()
+open class RevocationAndRenewalInformation ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.RevocationAndRenewalInformation {
   

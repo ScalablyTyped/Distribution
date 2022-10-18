@@ -1,10 +1,10 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.loggingMod.LogEntry
-import typings.matrixAppserviceBridge.loggingMod.LogEntryPart
-import typings.matrixAppserviceBridge.loggingMod.LoggerMetadata
-import typings.matrixAppserviceBridge.loggingMod.LoggingOpts
-import typings.matrixAppserviceBridge.loggingMod.LoggingOptsFile
+import typings.matrixAppserviceBridge.libComponentsLoggingMod.LogEntry
+import typings.matrixAppserviceBridge.libComponentsLoggingMod.LogEntryPart
+import typings.matrixAppserviceBridge.libComponentsLoggingMod.LoggerMetadata
+import typings.matrixAppserviceBridge.libComponentsLoggingMod.LoggingOpts
+import typings.matrixAppserviceBridge.libComponentsLoggingMod.LoggingOptsFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,18 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "Logger")
 @js.native
 open class Logger protected ()
-  extends typings.matrixAppserviceBridge.loggingMod.Logger {
+  extends typings.matrixAppserviceBridge.libComponentsLoggingMod.Logger {
   def this(module: String) = this()
   def this(module: String, additionalMeta: LoggerMetadata) = this()
   def this(
     module: String,
     additionalMeta: Unit,
-    logger: typings.matrixAppserviceBridge.loggingMod.GlobalLogger
+    logger: typings.matrixAppserviceBridge.libComponentsLoggingMod.GlobalLogger
   ) = this()
   def this(
     module: String,
     additionalMeta: LoggerMetadata,
-    logger: typings.matrixAppserviceBridge.loggingMod.GlobalLogger
+    logger: typings.matrixAppserviceBridge.libComponentsLoggingMod.GlobalLogger
   ) = this()
 }
 /* static members */
@@ -46,5 +46,5 @@ object Logger {
   
   @JSImport("matrix-appservice-bridge", "Logger.root")
   @js.native
-  val root: typings.matrixAppserviceBridge.loggingMod.GlobalLogger = js.native
+  val root: typings.matrixAppserviceBridge.libComponentsLoggingMod.GlobalLogger = js.native
 }

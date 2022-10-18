@@ -1,8 +1,8 @@
 package typings.syncRequest
 
-import typings.httpBasic.httpVerbMod.HttpVerb
+import typings.httpBasic.libHttpVerbMod.HttpVerb
 import typings.node.urlMod.URL_
-import typings.syncRequest.optionsMod.Options
+import typings.syncRequest.libOptionsMod.Options
 import typings.thenRequest.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,5 +22,5 @@ object mod {
   @JSImport("sync-request", "FormData")
   @js.native
   open class FormData ()
-    extends typings.syncRequest.formDataMod.FormData
+    extends typings.syncRequest.libFormDataMod.FormData
 }

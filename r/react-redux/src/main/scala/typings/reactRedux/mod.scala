@@ -2,10 +2,10 @@ package typings.reactRedux
 
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element
-import typings.reactRedux.connectMod.Connect
-import typings.reactRedux.contextMod.ReactReduxContextValue
-import typings.reactRedux.providerMod.ProviderProps
-import typings.reactRedux.typesMod.EqualityFn
+import typings.reactRedux.esComponentsConnectMod.Connect
+import typings.reactRedux.esComponentsContextMod.ReactReduxContextValue
+import typings.reactRedux.esComponentsProviderMod.ProviderProps
+import typings.reactRedux.esTypesMod.EqualityFn
 import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch

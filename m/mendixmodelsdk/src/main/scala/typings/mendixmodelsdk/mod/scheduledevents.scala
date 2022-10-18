@@ -1,10 +1,10 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,14 +17,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.DaySchedule")
   @js.native
   open class DaySchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.DaySchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.DaySchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object DaySchedule {
@@ -39,7 +39,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySchedule]
     
     /**
       * Creates and returns a new DaySchedule instance in the SDK and on the server.
@@ -50,7 +50,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySchedule.structureTypeName")
@@ -61,14 +61,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "scheduledevents.DaySelector")
   @js.native
   open class DaySelector protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.DaySelector {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.DaySelector {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object DaySelector {
@@ -80,32 +80,32 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySelector.First")
     @js.native
-    def First: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector = js.native
-    inline def First_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("First")(x.asInstanceOf[js.Any])
+    def First: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector = js.native
+    inline def First_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("First")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySelector.Fourth")
     @js.native
-    def Fourth: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector = js.native
-    inline def Fourth_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fourth")(x.asInstanceOf[js.Any])
+    def Fourth: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector = js.native
+    inline def Fourth_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fourth")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySelector.Last")
     @js.native
-    def Last: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector = js.native
-    inline def Last_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
+    def Last: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector = js.native
+    inline def Last_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Last")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySelector.Second")
     @js.native
-    def Second: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector = js.native
-    inline def Second_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Second")(x.asInstanceOf[js.Any])
+    def Second: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector = js.native
+    inline def Second_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Second")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.DaySelector.Third")
     @js.native
-    def Third: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector = js.native
-    inline def Third_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Third")(x.asInstanceOf[js.Any])
+    def Third: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector = js.native
+    inline def Third_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.DaySelector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Third")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -114,14 +114,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.HourSchedule")
   @js.native
   open class HourSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.HourSchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.HourSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object HourSchedule {
@@ -136,7 +136,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.HourSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.HourSchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.HourSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.HourSchedule]
     
     /**
       * Creates and returns a new HourSchedule instance in the SDK and on the server.
@@ -147,7 +147,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.HourSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.HourSchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.HourSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.HourSchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.HourSchedule.structureTypeName")
@@ -158,14 +158,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.HourSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "scheduledevents.IntervalType")
   @js.native
   open class IntervalType protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.IntervalType {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.IntervalType {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object IntervalType {
@@ -177,44 +177,44 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Day")
     @js.native
-    def Day: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Day_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
+    def Day: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Day_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Hour")
     @js.native
-    def Hour: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Hour_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hour")(x.asInstanceOf[js.Any])
+    def Hour: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Hour_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hour")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Minute")
     @js.native
-    def Minute: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Minute_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minute")(x.asInstanceOf[js.Any])
+    def Minute: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Minute_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minute")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Month")
     @js.native
-    def Month: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Month_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
+    def Month: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Month_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Second")
     @js.native
-    def Second: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Second_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Second")(x.asInstanceOf[js.Any])
+    def Second: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Second_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Second")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Week")
     @js.native
-    def Week: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Week_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
+    def Week: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Week_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.IntervalType.Year")
     @js.native
-    def Year: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType = js.native
-    inline def Year_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
+    def Year: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType = js.native
+    inline def Year_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -223,14 +223,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.MinuteSchedule")
   @js.native
   open class MinuteSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.MinuteSchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.MinuteSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MinuteSchedule {
@@ -245,7 +245,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MinuteSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MinuteSchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MinuteSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MinuteSchedule]
     
     /**
       * Creates and returns a new MinuteSchedule instance in the SDK and on the server.
@@ -256,7 +256,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MinuteSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MinuteSchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MinuteSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MinuteSchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MinuteSchedule.structureTypeName")
@@ -267,8 +267,8 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MinuteSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -277,14 +277,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.MonthDateSchedule")
   @js.native
   open class MonthDateSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.MonthDateSchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.MonthDateSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MonthDateSchedule {
@@ -299,7 +299,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthDateSchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthDateSchedule]
     
     /**
       * Creates and returns a new MonthDateSchedule instance in the SDK and on the server.
@@ -310,7 +310,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthDateSchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthDateSchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MonthDateSchedule.structureTypeName")
@@ -321,24 +321,24 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MonthDateSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * In version 9.12.0: introduced
     */
-  @JSImport("mendixmodelsdk", "scheduledevents.MonthSchedule")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "scheduledevents.MonthSchedule")
   @js.native
-  abstract class MonthSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.MonthSchedule {
+  open class MonthSchedule protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.MonthSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MonthSchedule {
@@ -356,8 +356,8 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MonthSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -366,14 +366,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.MonthWeekdaySchedule")
   @js.native
   open class MonthWeekdaySchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.MonthWeekdaySchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.MonthWeekdaySchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object MonthWeekdaySchedule {
@@ -388,7 +388,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthWeekdaySchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthWeekdaySchedule]
     
     /**
       * Creates and returns a new MonthWeekdaySchedule instance in the SDK and on the server.
@@ -399,7 +399,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.MonthWeekdaySchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.MonthWeekdaySchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MonthWeekdaySchedule.structureTypeName")
@@ -410,14 +410,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.MonthWeekdaySchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "scheduledevents.OverlapStrategy")
   @js.native
   open class OverlapStrategy protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.OverlapStrategy {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.OverlapStrategy {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object OverlapStrategy {
@@ -429,14 +429,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.OverlapStrategy.DelayNext")
     @js.native
-    def DelayNext: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.OverlapStrategy = js.native
-    inline def DelayNext_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.OverlapStrategy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DelayNext")(x.asInstanceOf[js.Any])
+    def DelayNext: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.OverlapStrategy = js.native
+    inline def DelayNext_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.OverlapStrategy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DelayNext")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.OverlapStrategy.SkipNext")
     @js.native
-    def SkipNext: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.OverlapStrategy = js.native
-    inline def SkipNext_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.OverlapStrategy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SkipNext")(x.asInstanceOf[js.Any])
+    def SkipNext: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.OverlapStrategy = js.native
+    inline def SkipNext_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.OverlapStrategy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SkipNext")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -445,17 +445,17 @@ object scheduledevents {
   /**
     * In version 9.12.0: introduced
     */
-  @JSImport("mendixmodelsdk", "scheduledevents.Schedule")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "scheduledevents.Schedule")
   @js.native
-  abstract class Schedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.Schedule {
+  open class Schedule protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.Schedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object Schedule {
@@ -473,8 +473,8 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Schedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -483,9 +483,9 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.ScheduledEvent")
   @js.native
   open class ScheduledEvent protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.ScheduledEvent {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.ScheduledEvent {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
@@ -503,7 +503,7 @@ object scheduledevents {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.ScheduledEvent.structureTypeName")
@@ -514,14 +514,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.ScheduledEvent.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "scheduledevents.TimeZoneEnum")
   @js.native
   open class TimeZoneEnum protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.TimeZoneEnum {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.TimeZoneEnum {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object TimeZoneEnum {
@@ -533,14 +533,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.TimeZoneEnum.Server")
     @js.native
-    def Server: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.TimeZoneEnum = js.native
-    inline def Server_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
+    def Server: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.TimeZoneEnum = js.native
+    inline def Server_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.TimeZoneEnum.UTC")
     @js.native
-    def UTC: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.TimeZoneEnum = js.native
-    inline def UTC_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
+    def UTC: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.TimeZoneEnum = js.native
+    inline def UTC_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -549,14 +549,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.WeekSchedule")
   @js.native
   open class WeekSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.WeekSchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.WeekSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object WeekSchedule {
@@ -571,7 +571,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.WeekSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.WeekSchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.WeekSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.WeekSchedule]
     
     /**
       * Creates and returns a new WeekSchedule instance in the SDK and on the server.
@@ -582,7 +582,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.WeekSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.WeekSchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.WeekSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.WeekSchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.WeekSchedule.structureTypeName")
@@ -593,14 +593,14 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.WeekSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mendixmodelsdk", "scheduledevents.Weekday")
   @js.native
   open class Weekday protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.Weekday {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.Weekday {
     def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
   }
   object Weekday {
@@ -612,44 +612,44 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Friday")
     @js.native
-    def Friday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Friday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Friday")(x.asInstanceOf[js.Any])
+    def Friday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Friday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Friday")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Monday")
     @js.native
-    def Monday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Monday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Monday")(x.asInstanceOf[js.Any])
+    def Monday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Monday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Monday")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Saturday")
     @js.native
-    def Saturday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Saturday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Saturday")(x.asInstanceOf[js.Any])
+    def Saturday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Saturday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Saturday")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Sunday")
     @js.native
-    def Sunday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Sunday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sunday")(x.asInstanceOf[js.Any])
+    def Sunday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Sunday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sunday")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Thursday")
     @js.native
-    def Thursday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Thursday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Thursday")(x.asInstanceOf[js.Any])
+    def Thursday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Thursday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Thursday")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Tuesday")
     @js.native
-    def Tuesday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Tuesday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tuesday")(x.asInstanceOf[js.Any])
+    def Tuesday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Tuesday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tuesday")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.Weekday.Wednesday")
     @js.native
-    def Wednesday: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday = js.native
-    inline def Wednesday_=(x: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wednesday")(x.asInstanceOf[js.Any])
+    def Wednesday: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday = js.native
+    inline def Wednesday_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Wednesday")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -658,14 +658,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.YearDateSchedule")
   @js.native
   open class YearDateSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.YearDateSchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.YearDateSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object YearDateSchedule {
@@ -680,7 +680,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearDateSchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearDateSchedule]
     
     /**
       * Creates and returns a new YearDateSchedule instance in the SDK and on the server.
@@ -691,7 +691,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearDateSchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearDateSchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearDateSchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.YearDateSchedule.structureTypeName")
@@ -702,24 +702,24 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.YearDateSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * In version 9.12.0: introduced
     */
-  @JSImport("mendixmodelsdk", "scheduledevents.YearSchedule")
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "scheduledevents.YearSchedule")
   @js.native
-  abstract class YearSchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.YearSchedule {
+  open class YearSchedule protected ()
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.YearSchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object YearSchedule {
@@ -737,8 +737,8 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.YearSchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -747,14 +747,14 @@ object scheduledevents {
   @JSImport("mendixmodelsdk", "scheduledevents.YearWeekdaySchedule")
   @js.native
   open class YearWeekdaySchedule protected ()
-    extends typings.mendixmodelsdk.allModelClassesMod.scheduledevents.YearWeekdaySchedule {
+    extends typings.mendixmodelsdk.srcGenAllModelClassesMod.scheduledevents.YearWeekdaySchedule {
     def this(
-      model: typings.mendixmodelsdk.internalMod.AbstractModel,
+      model: typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typings.mendixmodelsdk.internalMod.ModelUnit[IAbstractModel],
-      container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
+      unit: typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
   object YearWeekdaySchedule {
@@ -769,7 +769,7 @@ object scheduledevents {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    inline def create(model: IModel): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearWeekdaySchedule]
+    inline def create(model: IModel): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearWeekdaySchedule]
     
     /**
       * Creates and returns a new YearWeekdaySchedule instance in the SDK and on the server.
@@ -780,7 +780,7 @@ object scheduledevents {
       *  9.12.0 and higher
       */
     /* static member */
-    inline def createIn(container: typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.scheduledeventsMod.scheduledevents.YearWeekdaySchedule]
+    inline def createIn(container: typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.ScheduledEvent): typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearWeekdaySchedule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenScheduledeventsMod.scheduledevents.YearWeekdaySchedule]
     
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.YearWeekdaySchedule.structureTypeName")
@@ -791,7 +791,7 @@ object scheduledevents {
     /* static member */
     @JSImport("mendixmodelsdk", "scheduledevents.YearWeekdaySchedule.versionInfo")
     @js.native
-    def versionInfo: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo = js.native
-    inline def versionInfo_=(x: typings.mendixmodelsdk.scheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    def versionInfo: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typings.mendixmodelsdk.srcGenScheduledeventsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

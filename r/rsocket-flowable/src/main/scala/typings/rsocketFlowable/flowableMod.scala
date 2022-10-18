@@ -1,6 +1,7 @@
 package typings.rsocketFlowable
 
-import typings.std.Partial
+import typings.rsocketTypes.reactiveStreamTypesMod.IPublisher
+import typings.rsocketTypes.reactiveStreamTypesMod.ISubscriber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,32 +30,17 @@ object flowableMod {
     inline def never(): Flowable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Flowable[scala.Nothing]]
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> * / any */ @js.native
-  trait Flowable[T] extends StObject {
+  @js.native
+  trait Flowable[T]
+    extends StObject
+       with IPublisher[T] {
     
-    def lift[R](
-      onSubscribeLift: js.Function1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<R> */ /* subscriber */ Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ Any
-        ]
-    ): Flowable[R] = js.native
+    def lift[R](onSubscribeLift: js.Function1[/* subscriber */ ISubscriber[R], ISubscriber[T]]): Flowable[R] = js.native
     
-    def map[R](fn: js.Function1[/* data */ T, R]): Flowable[R] = js.native
-    
-    def subscribe(): Unit = js.native
     def subscribe(subscriberOrCallback: js.Function1[/* a */ T, Unit]): Unit = js.native
-    def subscribe(
-      subscriberOrCallback: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ Any
-        ]
-    ): Unit = js.native
     
     def take(toTake: Double): Flowable[T] = js.native
   }
   
-  type Source[T] = js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ /* subscriber */ Any, 
-    Unit
-  ]
+  type Source[T] = js.Function1[/* subscriber */ ISubscriber[T], Unit]
 }

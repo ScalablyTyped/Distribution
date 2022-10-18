@@ -31,5 +31,5 @@ object PBRSpecularGlossinessMaterial {
     * @param scene
     * @param rootUrl
     */
-  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial]
+  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsPbrPbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsPbrPbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial]
 }

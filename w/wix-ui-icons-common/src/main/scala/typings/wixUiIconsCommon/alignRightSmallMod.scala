@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsAlignRightSmallMod.AlignRightSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignRightSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/AlignRightSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/AlignRightSmall", JSImport.Default)
   @js.native
   val default: FC[AlignRightSmallProps] = js.native
-  
-  trait AlignRightSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object AlignRightSmallProps {
-    
-    inline def apply(): AlignRightSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AlignRightSmallProps]
-    }
-    
-    extension [Self <: AlignRightSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[AlignRightSmallProps]
   

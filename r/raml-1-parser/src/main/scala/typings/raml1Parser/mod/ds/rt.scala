@@ -1,6 +1,14 @@
 package typings.raml1Parser.mod.ds
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ramlTypesystem.distSrcNominalTypesMod.IAnnotationType
+import typings.ramlTypesystem.distSrcNominalTypesMod.ITypeDefinition
+import typings.ramlTypesystem.distSrcNominalTypesMod.IUniverse
+import typings.ramlTypesystem.distSrcNominalTypesMod.Injector
+import typings.ramlTypesystem.distSrcTypeExpressionUtilMod.BaseNode
+import typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IAnnotationValidationPlugin
+import typings.ramlTypesystem.distSrcTypesystemInterfacesMod.ITypeValidationPlugin
+import typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IValidationPath
 import typings.ramlTypesystem.mod.IFacetPrototype
 import typings.ramlTypesystem.mod.IParseNode
 import typings.ramlTypesystem.mod.IParsedType
@@ -9,14 +17,6 @@ import typings.ramlTypesystem.mod.IStatus
 import typings.ramlTypesystem.mod.IType
 import typings.ramlTypesystem.mod.ITypeCollection
 import typings.ramlTypesystem.mod.ITypeRegistry
-import typings.ramlTypesystem.nominalTypesMod.IAnnotationType
-import typings.ramlTypesystem.nominalTypesMod.ITypeDefinition
-import typings.ramlTypesystem.nominalTypesMod.IUniverse
-import typings.ramlTypesystem.nominalTypesMod.Injector
-import typings.ramlTypesystem.typeExpressionUtilMod.BaseNode
-import typings.ramlTypesystem.typesystemInterfacesMod.IAnnotationValidationPlugin
-import typings.ramlTypesystem.typesystemInterfacesMod.ITypeValidationPlugin
-import typings.ramlTypesystem.typesystemInterfacesMod.IValidationPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +59,7 @@ object rt {
   @JSImport("raml-1-parser", "ds.rt.TypeConstructor")
   @js.native
   open class TypeConstructor protected ()
-    extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.TypeConstructor {
+    extends typings.ramlDefinitionSystem.mod.rt.TypeConstructor {
     def this(target: IParsedType) = this()
   }
   
@@ -98,7 +98,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalInterfaces.ValueRequirement")
     @js.native
     open class ValueRequirement protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalInterfaces.ValueRequirement {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalInterfaces.ValueRequirement {
       /**
         *
         * @param name name of the property to discriminate
@@ -117,7 +117,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.AbstractType")
     @js.native
     open class AbstractType protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.AbstractType {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.AbstractType {
       def this(_name: String) = this()
       def this(_name: String, _universe: IUniverse) = this()
       def this(_name: String, _universe: Unit, _path: String) = this()
@@ -127,7 +127,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Adaptable")
     @js.native
     open class Adaptable ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Adaptable
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Adaptable
     /* static members */
     object Adaptable {
       
@@ -146,14 +146,14 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Annotation")
     @js.native
     open class Annotation protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Annotation {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Annotation {
       def this(`type`: IAnnotationType, parameters: StringDictionary[Any]) = this()
     }
     
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Array")
     @js.native
     open class Array protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Array {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Array {
       def this(_name: String) = this()
       def this(_name: String, _universe: IUniverse) = this()
       def this(_name: String, _universe: Unit, _path: String) = this()
@@ -163,7 +163,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Described")
     @js.native
     open class Described protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Described {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Described {
       def this(_name: String) = this()
       def this(_name: String, _description: String) = this()
     }
@@ -185,12 +185,12 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Empty")
     @js.native
     open class Empty ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Empty
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Empty
     
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.ExternalType")
     @js.native
     open class ExternalType protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.ExternalType {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.ExternalType {
       def this(_name: String) = this()
       def this(_name: String, _universe: IUniverse) = this()
       def this(_name: String, _universe: Unit, _path: String) = this()
@@ -200,7 +200,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Property")
     @js.native
     open class Property protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Property {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Property {
       def this(_name: String) = this()
       def this(_name: String, _description: String) = this()
     }
@@ -222,7 +222,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.StructuredType")
     @js.native
     open class StructuredType protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.StructuredType {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.StructuredType {
       def this(_name: String) = this()
       def this(_name: String, _universe: IUniverse) = this()
       def this(_name: String, _universe: Unit, _path: String) = this()
@@ -232,7 +232,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.Union")
     @js.native
     open class Union protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.Union {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.Union {
       def this(_name: String) = this()
       def this(_name: String, _universe: IUniverse) = this()
       def this(_name: String, _universe: Unit, _path: String) = this()
@@ -242,7 +242,7 @@ object rt {
     @JSImport("raml-1-parser", "ds.rt.nominalTypes.ValueType")
     @js.native
     open class ValueType protected ()
-      extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.rt.nominalTypes.ValueType {
+      extends typings.ramlDefinitionSystem.mod.rt.nominalTypes.ValueType {
       def this(name: String) = this()
       def this(name: String, _universe: IUniverse) = this()
       def this(name: String, _universe: Unit, path: String) = this()
@@ -420,57 +420,59 @@ object rt {
     object MetaInformationKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind & Double] = js.native
+      def apply(value: Double): js.UndefOr[
+            typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind & Double
+          ] = js.native
       
-      /* 22 */ val AcceptAllScalarsAsStrings: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.AcceptAllScalarsAsStrings & Double = js.native
+      /* 22 */ val AcceptAllScalarsAsStrings: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.AcceptAllScalarsAsStrings & Double = js.native
       
-      /* 10 */ val AllowedTargets: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.AllowedTargets & Double = js.native
+      /* 10 */ val AllowedTargets: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.AllowedTargets & Double = js.native
       
-      /* 4 */ val Annotation: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Annotation & Double = js.native
+      /* 4 */ val Annotation: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Annotation & Double = js.native
       
-      /* 14 */ val Constraint: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Constraint & Double = js.native
+      /* 14 */ val Constraint: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Constraint & Double = js.native
       
-      /* 6 */ val CustomFacet: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.CustomFacet & Double = js.native
+      /* 6 */ val CustomFacet: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.CustomFacet & Double = js.native
       
-      /* 13 */ val Default: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Default & Double = js.native
+      /* 13 */ val Default: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Default & Double = js.native
       
-      /* 0 */ val Description: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Description & Double = js.native
+      /* 0 */ val Description: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Description & Double = js.native
       
-      /* 16 */ val Discriminator: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Discriminator & Double = js.native
+      /* 16 */ val Discriminator: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Discriminator & Double = js.native
       
-      /* 17 */ val DiscriminatorValue: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.DiscriminatorValue & Double = js.native
+      /* 17 */ val DiscriminatorValue: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.DiscriminatorValue & Double = js.native
       
-      /* 2 */ val DisplayName: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.DisplayName & Double = js.native
+      /* 2 */ val DisplayName: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.DisplayName & Double = js.native
       
-      /* 7 */ val Example: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Example & Double = js.native
+      /* 7 */ val Example: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Example & Double = js.native
       
-      /* 11 */ val Examples: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Examples & Double = js.native
+      /* 11 */ val Examples: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Examples & Double = js.native
       
-      /* 5 */ val FacetDeclaration: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.FacetDeclaration & Double = js.native
+      /* 5 */ val FacetDeclaration: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.FacetDeclaration & Double = js.native
       
-      /* 9 */ val HasPropertiesFacet: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.HasPropertiesFacet & Double = js.native
+      /* 9 */ val HasPropertiesFacet: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.HasPropertiesFacet & Double = js.native
       
-      /* 21 */ val ImportedByChain: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.ImportedByChain & Double = js.native
+      /* 21 */ val ImportedByChain: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.ImportedByChain & Double = js.native
       
-      /* 15 */ val Modifier: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Modifier & Double = js.native
+      /* 15 */ val Modifier: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Modifier & Double = js.native
       
-      /* 1 */ val NotScalar: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.NotScalar & Double = js.native
+      /* 1 */ val NotScalar: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.NotScalar & Double = js.native
       
-      /* 20 */ val ParserMetadata: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.ParserMetadata & Double = js.native
+      /* 20 */ val ParserMetadata: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.ParserMetadata & Double = js.native
       
-      /* 8 */ val Required: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Required & Double = js.native
+      /* 8 */ val Required: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Required & Double = js.native
       
-      /* 18 */ val SchemaPath: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.SchemaPath & Double = js.native
+      /* 18 */ val SchemaPath: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.SchemaPath & Double = js.native
       
-      /* 23 */ val SkipValidation: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.SkipValidation & Double = js.native
+      /* 23 */ val SkipValidation: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.SkipValidation & Double = js.native
       
-      /* 19 */ val SourceMap: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.SourceMap & Double = js.native
+      /* 19 */ val SourceMap: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.SourceMap & Double = js.native
       
-      /* 24 */ val TypeAttributeValue: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.TypeAttributeValue & Double = js.native
+      /* 24 */ val TypeAttributeValue: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.TypeAttributeValue & Double = js.native
       
-      /* 3 */ val Usage: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.Usage & Double = js.native
+      /* 3 */ val Usage: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.Usage & Double = js.native
       
-      /* 12 */ val XMLInfo: typings.ramlTypesystem.typesystemInterfacesMod.MetaInformationKind.XMLInfo & Double = js.native
+      /* 12 */ val XMLInfo: typings.ramlTypesystem.distSrcTypesystemInterfacesMod.MetaInformationKind.XMLInfo & Double = js.native
     }
     
     @JSImport("raml-1-parser", "ds.rt.tsInterfaces.PARSE_ERROR")

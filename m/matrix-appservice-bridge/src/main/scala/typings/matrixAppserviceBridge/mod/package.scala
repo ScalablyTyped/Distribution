@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.membershipQueueMod.MembershipQueueOptsWithDefaults
+import typings.matrixAppserviceBridge.libComponentsMembershipQueueMod.MembershipQueueOptsWithDefaults
 import typings.matrixAppserviceBridge.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

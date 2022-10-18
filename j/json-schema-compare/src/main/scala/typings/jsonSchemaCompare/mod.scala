@@ -87,7 +87,15 @@ object mod {
   */
   type JSONSchemaKeys = _JSONSchemaKeys | KnownKeys[JSONSchema4] | (String & _empty)
   
-  type KnownKeys[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: string extends K? never : K} extends {[ _ in keyof T ]: infer U} ? U : never
+    }}}
+    */
+  @js.native
+  trait KnownKeys[T] extends StObject
   
   trait Options extends StObject {
     

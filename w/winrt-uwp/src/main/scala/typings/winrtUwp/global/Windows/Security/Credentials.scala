@@ -23,16 +23,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Credentials {
   
   /** Represents a key credential, an RSA, 2048-bit, asymmetric key that represents a user's identity for an application. */
-  @JSGlobal("Windows.Security.Credentials.KeyCredential")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.KeyCredential")
   @js.native
-  abstract class KeyCredential ()
+  open class KeyCredential ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.KeyCredential
   
   /** Represents the results of the KeyCredential.GetAttestationAsync method. */
-  @JSGlobal("Windows.Security.Credentials.KeyCredentialAttestationResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.KeyCredentialAttestationResult")
   @js.native
-  abstract class KeyCredentialAttestationResult ()
+  open class KeyCredentialAttestationResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.KeyCredentialAttestationResult {
     
@@ -84,9 +84,9 @@ object Credentials {
   }
   
   /** Contains methods for basic management of key credentials. */
-  @JSGlobal("Windows.Security.Credentials.KeyCredentialManager")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.KeyCredentialManager")
   @js.native
-  abstract class KeyCredentialManager ()
+  open class KeyCredentialManager ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.KeyCredentialManager
   object KeyCredentialManager {
@@ -136,9 +136,9 @@ object Credentials {
   }
   
   /** Represents the result of a key credential operation. */
-  @JSGlobal("Windows.Security.Credentials.KeyCredentialOperationResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.KeyCredentialOperationResult")
   @js.native
-  abstract class KeyCredentialOperationResult ()
+  open class KeyCredentialOperationResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.KeyCredentialOperationResult {
     
@@ -152,9 +152,9 @@ object Credentials {
   }
   
   /** Represents the result of a key credential retrieval. */
-  @JSGlobal("Windows.Security.Credentials.KeyCredentialRetrievalResult")
+  /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.KeyCredentialRetrievalResult")
   @js.native
-  abstract class KeyCredentialRetrievalResult ()
+  open class KeyCredentialRetrievalResult ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult {
     
@@ -316,9 +316,9 @@ object Credentials {
     }
     
     /** Creates an asynchronous object that displays a dialog box of credentials to the user and collects the user's response. */
-    @JSGlobal("Windows.Security.Credentials.UI.CredentialPicker")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.UI.CredentialPicker")
     @js.native
-    abstract class CredentialPicker ()
+    open class CredentialPicker ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPicker
     object CredentialPicker {
@@ -403,9 +403,9 @@ object Credentials {
     }
     
     /** Describes the results of the dialog box operation. */
-    @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerResults")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerResults")
     @js.native
-    abstract class CredentialPickerResults ()
+    open class CredentialPickerResults ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults {
       
@@ -479,9 +479,9 @@ object Credentials {
     }
     
     /** Checks for availability of a biometric (fingerprint) verifier device and performs a biometric verification. */
-    @JSGlobal("Windows.Security.Credentials.UI.UserConsentVerifier")
+    /* note: abstract class */ @JSGlobal("Windows.Security.Credentials.UI.UserConsentVerifier")
     @js.native
-    abstract class UserConsentVerifier ()
+    open class UserConsentVerifier ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Credentials.UI.UserConsentVerifier
     object UserConsentVerifier {

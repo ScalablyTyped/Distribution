@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iconMod {
   
+  @JSImport("@material/textfield/icon", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialTextfield.iconFoundationMod.default {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
+  }
+  
   @JSImport("@material/textfield/icon", "MDCTextFieldIcon")
   @js.native
   open class MDCTextFieldIcon protected ()

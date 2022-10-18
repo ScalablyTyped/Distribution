@@ -1,7 +1,7 @@
 package typings.autolinker
 
-import typings.autolinker.autolinkerMod.HashtagConfig
-import typings.autolinker.autolinkerMod.MentionConfig
+import typings.autolinker.distCommonjsAutolinkerMod.HashtagConfig
+import typings.autolinker.distCommonjsAutolinkerMod.MentionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

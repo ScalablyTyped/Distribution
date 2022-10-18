@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "NoiseProceduralTexture")
 @js.native
 open class NoiseProceduralTexture protected ()
-  extends typings.babylonjs.legacyMod.NoiseProceduralTexture {
+  extends typings.babylonjs.legacyLegacyMod.NoiseProceduralTexture {
   /**
     * Creates a new NoiseProceduralTexture
     * @param name defines the name fo the texture
@@ -21,26 +21,36 @@ open class NoiseProceduralTexture protected ()
   def this(name: String, size: Double) = this()
   def this(name: String, size: Double, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
   def this(name: String, size: Unit, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
-  def this(name: String, size: Double, scene: Unit, fallbackTexture: typings.babylonjs.textureMod.Texture) = this()
+  def this(
+    name: String,
+    size: Double,
+    scene: Unit,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture
+  ) = this()
   def this(
     name: String,
     size: Double,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: typings.babylonjs.textureMod.Texture
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture
   ) = this()
-  def this(name: String, size: Unit, scene: Unit, fallbackTexture: typings.babylonjs.textureMod.Texture) = this()
+  def this(
+    name: String,
+    size: Unit,
+    scene: Unit,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture
+  ) = this()
   def this(
     name: String,
     size: Unit,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: typings.babylonjs.textureMod.Texture
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture
   ) = this()
   def this(name: String, size: Double, scene: Unit, fallbackTexture: Unit, generateMipMaps: Boolean) = this()
   def this(
     name: String,
     size: Double,
     scene: Unit,
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Boolean
   ) = this()
   def this(
@@ -54,7 +64,7 @@ open class NoiseProceduralTexture protected ()
     name: String,
     size: Double,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Boolean
   ) = this()
   def this(name: String, size: Unit, scene: Unit, fallbackTexture: Unit, generateMipMaps: Boolean) = this()
@@ -62,7 +72,7 @@ open class NoiseProceduralTexture protected ()
     name: String,
     size: Unit,
     scene: Unit,
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Boolean
   ) = this()
   def this(
@@ -76,7 +86,7 @@ open class NoiseProceduralTexture protected ()
     name: String,
     size: Unit,
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
-    fallbackTexture: typings.babylonjs.textureMod.Texture,
+    fallbackTexture: typings.babylonjs.materialsTexturesTextureMod.Texture,
     generateMipMaps: Boolean
   ) = this()
 }
@@ -93,5 +103,5 @@ object NoiseProceduralTexture {
     * @param scene defines the current scene
     * @returns a parsed NoiseProceduralTexture
     */
-  inline def Parse(parsedTexture: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.noiseProceduralTextureMod.NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.noiseProceduralTextureMod.NoiseProceduralTexture]
+  inline def Parse(parsedTexture: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsTexturesProceduralsNoiseProceduralTextureMod.NoiseProceduralTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesProceduralsNoiseProceduralTextureMod.NoiseProceduralTexture]
 }

@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.unitsMod.IAbstractUnit
+import typings.mendixmodelsdk.srcSdkInternalUnitsMod.IAbstractUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "JavaScriptSerializer")
 @js.native
 open class JavaScriptSerializer protected ()
-  extends typings.mendixmodelsdk.javaScriptSerializerMod.JavaScriptSerializer {
+  extends typings.mendixmodelsdk.srcSdkExtrasJavaScriptSerializerMod.JavaScriptSerializer {
   def this(_unit: IAbstractUnit) = this()
 }
 /* static members */

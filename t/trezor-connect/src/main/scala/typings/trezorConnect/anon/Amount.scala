@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.cardanoMod.CardanoAssetGroup
-import typings.trezorConnect.cardanoMod.CardanoOutput
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoAssetGroup
+import typings.trezorConnect.libTypescriptNetworksCardanoMod.CardanoOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

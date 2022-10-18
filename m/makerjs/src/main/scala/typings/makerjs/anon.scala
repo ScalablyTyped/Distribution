@@ -2,9 +2,9 @@ package typings.makerjs
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.NumberDictionary
-import typings.danmarshallJscadTypings.csgMod.CSG.ICircleOptions
-import typings.danmarshallJscadTypings.csgMod.CSG.Vector2D
-import typings.danmarshallJscadTypings.mod.CAG
+import typings.danmarshallJscadTypings.typesCsgMod.CSG.ICircleOptions
+import typings.danmarshallJscadTypings.typesCsgMod.CSG.Vector2D
+import typings.danmarshallJscadTypings.typesMod.CAG
 import typings.makerjs.MakerJs.IModel
 import typings.makerjs.MakerJs.IPath
 import typings.makerjs.MakerJs.IPathLine
@@ -193,8 +193,8 @@ object anon {
     extends StObject
        with Instantiable0[CAG] {
     
-    def circle(options: ICircleOptions): typings.danmarshallJscadTypings.csgMod.CAG = js.native
+    def circle(options: ICircleOptions): typings.danmarshallJscadTypings.typesCsgMod.CAG = js.native
     
-    def fromPoints(points: js.Array[NumberDictionary[Double] | Vector2D]): typings.danmarshallJscadTypings.csgMod.CAG = js.native
+    def fromPoints(points: js.Array[NumberDictionary[Double] | Vector2D]): typings.danmarshallJscadTypings.typesCsgMod.CAG = js.native
   }
 }

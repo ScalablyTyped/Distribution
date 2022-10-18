@@ -14,6 +14,13 @@ trait Logger
   
   def addContext(key: String, value: Any): Unit = js.native
   
+  /**
+    * Adjust the value of linesToSkip when the parseFunction is called.
+    *
+    * Cannot be less than 0.
+    */
+  var callStackLinesToSkip: Double = js.native
+  
   val category: String = js.native
   
   def clearContext(): Unit = js.native
@@ -50,7 +57,12 @@ trait Logger
   
   def removeContext(key: String): Unit = js.native
   
-  def setParseCallStackFunction(parseFunction: js.Function): Unit = js.native
+  /**
+    * Replace the basic parse function with a new custom one
+    * - Note that linesToSkip will be based on the origin of the Error object in addition to the callStackLinesToSkip (at least 1)
+    * @param parseFunction the new parseFunction. Use `undefined` to reset to the base implementation
+    */
+  def setParseCallStackFunction(parseFunction: js.Function2[/* error */ js.Error, /* linesToSkip */ Double, js.UndefOr[CallStack]]): Unit = js.native
   
   def trace(message: Any, args: Any*): Unit = js.native
   

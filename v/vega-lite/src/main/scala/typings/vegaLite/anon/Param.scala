@@ -1,8 +1,8 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channeldefMod.FieldName
-import typings.vegaLite.parameterMod.ParameterName
-import typings.vegaLite.srcSelectionMod.ParameterExtent
+import typings.vegaLite.buildSrcChanneldefMod.FieldName
+import typings.vegaLite.buildSrcParameterMod.ParameterName
+import typings.vegaLite.buildSrcSelectionMod.ParameterExtent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

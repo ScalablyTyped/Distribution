@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object xstyledStyledComponentsStrings {
   
   @js.native
-  sealed trait WithBreakpointArgs extends StObject
-  inline def WithBreakpointArgs: WithBreakpointArgs = "WithBreakpointArgs".asInstanceOf[WithBreakpointArgs]
-  
-  @js.native
   sealed trait lg
     extends StObject
        with BreakpointName

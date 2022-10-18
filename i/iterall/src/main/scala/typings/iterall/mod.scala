@@ -90,7 +90,23 @@ object mod {
   @js.native
   val iterator: js.Symbol = js.native
   
-  type ResolvedOf[TCollection] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TCollection extends std.AsyncIterable<infer TValue> ? TValue : TCollection extends std.Iterable<infer U> ? U extends std.Promise<infer TValue> ? TValue : U : never
+    }}}
+    */
+  @js.native
+  trait ResolvedOf[TCollection] extends StObject
   
-  type ValueOf[TCollection] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TCollection extends std.Iterable<infer TValue> ? TValue : never
+    }}}
+    */
+  @js.native
+  trait ValueOf[TCollection] extends StObject
 }

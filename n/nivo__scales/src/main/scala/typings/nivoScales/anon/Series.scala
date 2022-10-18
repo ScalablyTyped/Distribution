@@ -1,14 +1,14 @@
 package typings.nivoScales.anon
 
 import typings.d3Scale.mod.NumberValue
-import typings.nivoScales.computeMod.ComputedSerie
-import typings.nivoScales.computeMod.SerieDatum
-import typings.nivoScales.typesMod.ScaleBand
-import typings.nivoScales.typesMod.ScaleLinear
-import typings.nivoScales.typesMod.ScaleLog
-import typings.nivoScales.typesMod.ScalePoint
-import typings.nivoScales.typesMod.ScaleSymlog
-import typings.nivoScales.typesMod.ScaleTime
+import typings.nivoScales.distTypesComputeMod.ComputedSerie
+import typings.nivoScales.distTypesComputeMod.SerieDatum
+import typings.nivoScales.distTypesTypesMod.ScaleBand
+import typings.nivoScales.distTypesTypesMod.ScaleLinear
+import typings.nivoScales.distTypesTypesMod.ScaleLog
+import typings.nivoScales.distTypesTypesMod.ScalePoint
+import typings.nivoScales.distTypesTypesMod.ScaleSymlog
+import typings.nivoScales.distTypesTypesMod.ScaleTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,9 +1,9 @@
 package typings.expoConfigPlugins.anon
 
+import typings.expoConfigPlugins.buildAndroidResourcesMod.ResourceKind
 import typings.expoConfigPlugins.expoConfigPluginsStrings.colors
 import typings.expoConfigPlugins.expoConfigPluginsStrings.strings
 import typings.expoConfigPlugins.expoConfigPluginsStrings.styles
-import typings.expoConfigPlugins.resourcesMod.ResourceKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

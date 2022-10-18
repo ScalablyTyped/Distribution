@@ -10,12 +10,13 @@ import typings.matrixJsSdk.anon.Displayname
 import typings.matrixJsSdk.anon.InviteSignUrl
 import typings.matrixJsSdk.anon.Keys
 import typings.matrixJsSdk.anon.Limit
+import typings.matrixJsSdk.anon.LimitTerm
 import typings.matrixJsSdk.anon.Limited
 import typings.matrixJsSdk.anon.Longdescription
+import typings.matrixJsSdk.anon.Presence
 import typings.matrixJsSdk.anon.Reason
 import typings.matrixJsSdk.anon.Replacementroom
 import typings.matrixJsSdk.anon.Roomalias
-import typings.matrixJsSdk.anon.Statusmsg
 import typings.matrixJsSdk.anon.Term
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
@@ -378,8 +379,8 @@ open class MatrixClient () extends EventEmitter {
   
   def prepareKeyBackupVersion(password: String): js.Promise[js.Object] = js.native
   
-  def publicRooms(options: typings.matrixJsSdk.anon.Filter): js.Promise[Unit] = js.native
-  def publicRooms(options: typings.matrixJsSdk.anon.Filter, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Unit] = js.native
+  def publicRooms(options: Limit): js.Promise[Unit] = js.native
+  def publicRooms(options: Limit, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Unit] = js.native
   
   // TODO: clarify return type
   def redactEvent(roomId: String, eventId: String): js.Promise[Any] = js.native
@@ -494,7 +495,7 @@ open class MatrixClient () extends EventEmitter {
   
   def searchRoomEvents(opts: Term): js.Promise[SearchResponse] = js.native
   
-  def searchUserDirectory(opts: Limit): js.Promise[Limited] = js.native
+  def searchUserDirectory(opts: LimitTerm): js.Promise[Limited] = js.native
   
   def sendEmoteMessage(roomId: String, body: String): js.Promise[Unit] = js.native
   def sendEmoteMessage(roomId: String, body: String, txnId: String): js.Promise[Unit] = js.native
@@ -623,8 +624,8 @@ open class MatrixClient () extends EventEmitter {
     callback: MatrixCallback
   ): js.Promise[Unit] = js.native
   
-  def setPresence(opts: Statusmsg): js.Promise[Unit] = js.native
-  def setPresence(opts: Statusmsg, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Unit] = js.native
+  def setPresence(opts: Presence): js.Promise[Unit] = js.native
+  def setPresence(opts: Presence, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Unit] = js.native
   
   def setProfileInfo(info: String, data: js.Object): js.Promise[Unit] = js.native
   def setProfileInfo(info: String, data: js.Object, callback: MatrixCallback): js.Promise[Unit] = js.native

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,9 +121,7 @@ trait TrainingOptions extends StObject {
   
   /** Weights associated with each label class, for rebalancing the training data. Only applicable for classification models. */
   var labelClassWeights: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.TrainingOptions & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
   ] = js.undefined
   
   /** Learning rate in training. Used only for iterative training algorithms. */
@@ -379,9 +376,7 @@ object TrainingOptions {
     inline def setL2RegularizationUndefined: Self = StObject.set(x, "l2Regularization", js.undefined)
     
     inline def setLabelClassWeights(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.TrainingOptions & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
     ): Self = StObject.set(x, "labelClassWeights", value.asInstanceOf[js.Any])
     
     inline def setLabelClassWeightsUndefined: Self = StObject.set(x, "labelClassWeights", js.undefined)

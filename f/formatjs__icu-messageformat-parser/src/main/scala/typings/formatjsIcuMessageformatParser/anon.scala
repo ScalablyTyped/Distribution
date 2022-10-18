@@ -10,7 +10,7 @@ object anon {
   trait Err[T]
     extends StObject
        with Result[T, Any]
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserParserMod.Result[T, Any] {
+       with typings.formatjsIcuMessageformatParser.libParserMod.Result[T, Any] {
     
     var err: Null
     
@@ -35,7 +35,7 @@ object anon {
   trait Val[E]
     extends StObject
        with Result[Any, E]
-       with typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserParserMod.Result[Any, E] {
+       with typings.formatjsIcuMessageformatParser.libParserMod.Result[Any, E] {
     
     var err: E
     

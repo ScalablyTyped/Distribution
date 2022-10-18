@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Legend extends StObject {
   
-  var geometryOption: typings.antvG2plot.dualAxesTypesMod.GeometryOption
+  var geometryOption: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption
   
-  var legend: typings.antvG2plot.typesLegendMod.Legend
+  var legend: typings.antvG2plot.libTypesLegendMod.Legend
   
   var view: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify View */ Any
   
@@ -17,8 +17,8 @@ trait Legend extends StObject {
 object Legend {
   
   inline def apply(
-    geometryOption: typings.antvG2plot.dualAxesTypesMod.GeometryOption,
-    legend: typings.antvG2plot.typesLegendMod.Legend,
+    geometryOption: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption,
+    legend: typings.antvG2plot.libTypesLegendMod.Legend,
     view: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify View */ Any,
     yField: String
   ): Legend = {
@@ -28,9 +28,9 @@ object Legend {
   
   extension [Self <: Legend](x: Self) {
     
-    inline def setGeometryOption(value: typings.antvG2plot.dualAxesTypesMod.GeometryOption): Self = StObject.set(x, "geometryOption", value.asInstanceOf[js.Any])
+    inline def setGeometryOption(value: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption): Self = StObject.set(x, "geometryOption", value.asInstanceOf[js.Any])
     
-    inline def setLegend(value: typings.antvG2plot.typesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.antvG2plot.libTypesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setView(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify View */ Any

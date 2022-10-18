@@ -410,33 +410,33 @@ object mod {
   object AggregateGroupByReducers extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisSearch.aggregateMod.AggregateGroupByReducers & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers & String] = js.native
     
-    /* "AVG" */ val AVG: typings.redisSearch.aggregateMod.AggregateGroupByReducers.AVG & String = js.native
+    /* "AVG" */ val AVG: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.AVG & String = js.native
     
-    /* "COUNT" */ val COUNT: typings.redisSearch.aggregateMod.AggregateGroupByReducers.COUNT & String = js.native
+    /* "COUNT" */ val COUNT: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.COUNT & String = js.native
     
-    /* "COUNT_DISTINCT" */ val COUNT_DISTINCT: typings.redisSearch.aggregateMod.AggregateGroupByReducers.COUNT_DISTINCT & String = js.native
+    /* "COUNT_DISTINCT" */ val COUNT_DISTINCT: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.COUNT_DISTINCT & String = js.native
     
-    /* "COUNT_DISTINCTISH" */ val COUNT_DISTINCTISH: typings.redisSearch.aggregateMod.AggregateGroupByReducers.COUNT_DISTINCTISH & String = js.native
+    /* "COUNT_DISTINCTISH" */ val COUNT_DISTINCTISH: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.COUNT_DISTINCTISH & String = js.native
     
-    /* "FIRST_VALUE" */ val FIRST_VALUE: typings.redisSearch.aggregateMod.AggregateGroupByReducers.FIRST_VALUE & String = js.native
+    /* "FIRST_VALUE" */ val FIRST_VALUE: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.FIRST_VALUE & String = js.native
     
-    /* "MAX" */ val MAX: typings.redisSearch.aggregateMod.AggregateGroupByReducers.MAX & String = js.native
+    /* "MAX" */ val MAX: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.MAX & String = js.native
     
-    /* "MIN" */ val MIN: typings.redisSearch.aggregateMod.AggregateGroupByReducers.MIN & String = js.native
+    /* "MIN" */ val MIN: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.MIN & String = js.native
     
-    /* "QUANTILE" */ val QUANTILE: typings.redisSearch.aggregateMod.AggregateGroupByReducers.QUANTILE & String = js.native
+    /* "QUANTILE" */ val QUANTILE: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.QUANTILE & String = js.native
     
-    /* "RANDOM_SAMPLE" */ val RANDOM_SAMPLE: typings.redisSearch.aggregateMod.AggregateGroupByReducers.RANDOM_SAMPLE & String = js.native
+    /* "RANDOM_SAMPLE" */ val RANDOM_SAMPLE: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.RANDOM_SAMPLE & String = js.native
     
-    /* "STDDEV" */ val STDDEV: typings.redisSearch.aggregateMod.AggregateGroupByReducers.STDDEV & String = js.native
+    /* "STDDEV" */ val STDDEV: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.STDDEV & String = js.native
     
-    /* "SUM" */ val SUM: typings.redisSearch.aggregateMod.AggregateGroupByReducers.SUM & String = js.native
+    /* "SUM" */ val SUM: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.SUM & String = js.native
     
-    /* "TOLIST" */ val TOLIST: typings.redisSearch.aggregateMod.AggregateGroupByReducers.TOLIST & String = js.native
+    /* "TOLIST" */ val TOLIST: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.TOLIST & String = js.native
     
-    /* "TOLIST" */ val TO_LIST: typings.redisSearch.aggregateMod.AggregateGroupByReducers.TO_LIST & String = js.native
+    /* "TOLIST" */ val TO_LIST: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.TO_LIST & String = js.native
   }
   
   @JSImport("@redis/search", "AggregateSteps")
@@ -444,17 +444,17 @@ object mod {
   object AggregateSteps extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisSearch.aggregateMod.AggregateSteps & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsAggregateMod.AggregateSteps & String] = js.native
     
-    /* "APPLY" */ val APPLY: typings.redisSearch.aggregateMod.AggregateSteps.APPLY & String = js.native
+    /* "APPLY" */ val APPLY: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.APPLY & String = js.native
     
-    /* "FILTER" */ val FILTER: typings.redisSearch.aggregateMod.AggregateSteps.FILTER & String = js.native
+    /* "FILTER" */ val FILTER: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.FILTER & String = js.native
     
-    /* "GROUPBY" */ val GROUPBY: typings.redisSearch.aggregateMod.AggregateSteps.GROUPBY & String = js.native
+    /* "GROUPBY" */ val GROUPBY: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.GROUPBY & String = js.native
     
-    /* "LIMIT" */ val LIMIT: typings.redisSearch.aggregateMod.AggregateSteps.LIMIT & String = js.native
+    /* "LIMIT" */ val LIMIT: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.LIMIT & String = js.native
     
-    /* "SORTBY" */ val SORTBY: typings.redisSearch.aggregateMod.AggregateSteps.SORTBY & String = js.native
+    /* "SORTBY" */ val SORTBY: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.SORTBY & String = js.native
   }
   
   @JSImport("@redis/search", "SchemaFieldTypes")
@@ -462,17 +462,17 @@ object mod {
   object SchemaFieldTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisSearch.commandsMod.SchemaFieldTypes & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsMod.SchemaFieldTypes & String] = js.native
     
-    /* "GEO" */ val GEO: typings.redisSearch.commandsMod.SchemaFieldTypes.GEO & String = js.native
+    /* "GEO" */ val GEO: typings.redisSearch.distCommandsMod.SchemaFieldTypes.GEO & String = js.native
     
-    /* "NUMERIC" */ val NUMERIC: typings.redisSearch.commandsMod.SchemaFieldTypes.NUMERIC & String = js.native
+    /* "NUMERIC" */ val NUMERIC: typings.redisSearch.distCommandsMod.SchemaFieldTypes.NUMERIC & String = js.native
     
-    /* "TAG" */ val TAG: typings.redisSearch.commandsMod.SchemaFieldTypes.TAG & String = js.native
+    /* "TAG" */ val TAG: typings.redisSearch.distCommandsMod.SchemaFieldTypes.TAG & String = js.native
     
-    /* "TEXT" */ val TEXT: typings.redisSearch.commandsMod.SchemaFieldTypes.TEXT & String = js.native
+    /* "TEXT" */ val TEXT: typings.redisSearch.distCommandsMod.SchemaFieldTypes.TEXT & String = js.native
     
-    /* "VECTOR" */ val VECTOR: typings.redisSearch.commandsMod.SchemaFieldTypes.VECTOR & String = js.native
+    /* "VECTOR" */ val VECTOR: typings.redisSearch.distCommandsMod.SchemaFieldTypes.VECTOR & String = js.native
   }
   
   @JSImport("@redis/search", "SchemaTextFieldPhonetics")
@@ -480,15 +480,15 @@ object mod {
   object SchemaTextFieldPhonetics extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisSearch.commandsMod.SchemaTextFieldPhonetics & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics & String] = js.native
     
-    /* "dm:en" */ val DM_EN: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.DM_EN & String = js.native
+    /* "dm:en" */ val DM_EN: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.DM_EN & String = js.native
     
-    /* "dm:es" */ val DM_ES: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.DM_ES & String = js.native
+    /* "dm:es" */ val DM_ES: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.DM_ES & String = js.native
     
-    /* "dm:fr" */ val DM_FR: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.DM_FR & String = js.native
+    /* "dm:fr" */ val DM_FR: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.DM_FR & String = js.native
     
-    /* "dm:pt" */ val FM_PT: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.FM_PT & String = js.native
+    /* "dm:pt" */ val FM_PT: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.FM_PT & String = js.native
   }
   
   @JSImport("@redis/search", "VectorAlgorithms")
@@ -496,10 +496,10 @@ object mod {
   object VectorAlgorithms extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.redisSearch.commandsMod.VectorAlgorithms & String] = js.native
+    def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsMod.VectorAlgorithms & String] = js.native
     
-    /* "FLAT" */ val FLAT: typings.redisSearch.commandsMod.VectorAlgorithms.FLAT & String = js.native
+    /* "FLAT" */ val FLAT: typings.redisSearch.distCommandsMod.VectorAlgorithms.FLAT & String = js.native
     
-    /* "HNSW" */ val HNSW: typings.redisSearch.commandsMod.VectorAlgorithms.HNSW & String = js.native
+    /* "HNSW" */ val HNSW: typings.redisSearch.distCommandsMod.VectorAlgorithms.HNSW & String = js.native
   }
 }

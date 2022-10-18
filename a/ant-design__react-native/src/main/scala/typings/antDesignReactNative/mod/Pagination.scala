@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.Current
-import typings.antDesignReactNative.paginationMod.PaginationNativeProps
-import typings.antDesignReactNative.paginationMod.default
+import typings.antDesignReactNative.libPaginationMod.PaginationNativeProps
+import typings.antDesignReactNative.libPaginationMod.default
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

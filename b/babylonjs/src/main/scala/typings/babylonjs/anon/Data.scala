@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.bufferMod.VertexBuffer
+import typings.babylonjs.buffersBufferMod.VertexBuffer
 import typings.babylonjs.typesMod.Nullable
 import typings.std.WebGLVertexArrayObject
 import org.scalablytyped.runtime.StObject

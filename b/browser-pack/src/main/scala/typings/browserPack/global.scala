@@ -1,6 +1,7 @@
 package typings.browserPack
 
 import typings.browserPack.mod.Options
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,6 @@ object global {
     *  - 'nomap' - When true, a source map is not generated for this module.
     *  - 'sourceFile' - The file name to use for this module in the source map.
     */
-  inline def browserPack(): Any = js.Dynamic.global.applyDynamic("browserPack")().asInstanceOf[Any]
-  inline def browserPack(opts: Options): Any = js.Dynamic.global.applyDynamic("browserPack")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def browserPack(): ReadWriteStream = js.Dynamic.global.applyDynamic("browserPack")().asInstanceOf[ReadWriteStream]
+  inline def browserPack(opts: Options): ReadWriteStream = js.Dynamic.global.applyDynamic("browserPack")(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
 }

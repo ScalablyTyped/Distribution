@@ -1,10 +1,10 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.protobufMod.DecredStakingSpendType
-import typings.trezorConnect.protobufMod.InternalInputScriptType
-import typings.trezorConnect.protobufMod.MultisigRedeemScriptType
-import typings.trezorConnect.protobufMod.TxInputType
-import typings.trezorConnect.protobufMod.UintType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.DecredStakingSpendType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.InternalInputScriptType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.MultisigRedeemScriptType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxInputType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.UintType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

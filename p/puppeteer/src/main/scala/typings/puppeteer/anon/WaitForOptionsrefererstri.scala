@@ -1,11 +1,11 @@
 package typings.puppeteer.anon
 
-import typings.puppeteer.lifecycleWatcherMod.PuppeteerLifeCycleEvent
+import typings.puppeteer.mod.PuppeteerLifeCycleEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined puppeteer.puppeteer/lib/cjs/puppeteer/api/Page.WaitForOptions & {  referer :string | undefined} */
+/* Inlined puppeteer.puppeteer.WaitForOptions & {  referer :string | undefined} */
 trait WaitForOptionsrefererstri extends StObject {
   
   var referer: js.UndefOr[String] = js.undefined

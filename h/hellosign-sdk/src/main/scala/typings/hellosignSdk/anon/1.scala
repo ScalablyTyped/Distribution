@@ -1,24 +1,26 @@
 package typings.hellosignSdk.anon
 
+import typings.hellosignSdk.hellosignSdkStrings.zip
+import typings.hellosignSdk.mod.FilesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `1` extends StObject {
+trait `1`
+  extends StObject
+     with FilesOptions {
   
-  var can_insert_everywhere: js.UndefOr[Boolean] = js.undefined
+  var file_type: zip
 }
 object `1` {
   
   inline def apply(): `1` = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(file_type = "zip")
     __obj.asInstanceOf[`1`]
   }
   
   extension [Self <: `1`](x: Self) {
     
-    inline def setCan_insert_everywhere(value: Boolean): Self = StObject.set(x, "can_insert_everywhere", value.asInstanceOf[js.Any])
-    
-    inline def setCan_insert_everywhereUndefined: Self = StObject.set(x, "can_insert_everywhere", js.undefined)
+    inline def setFile_type(value: zip): Self = StObject.set(x, "file_type", value.asInstanceOf[js.Any])
   }
 }

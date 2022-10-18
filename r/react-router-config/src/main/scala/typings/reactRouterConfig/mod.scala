@@ -1,7 +1,6 @@
 package typings.reactRouterConfig
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.Location
 import typings.react.mod.ComponentType
 import typings.react.mod.Key
@@ -17,9 +16,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def matchRoutes[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.matchRoutes & TopLevel[Any] */, TRouteConfig /* <: RouteConfig */](routes: js.Array[TRouteConfig], pathname: String): js.Array[MatchedRoute[Params, TRouteConfig]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[js.Array[MatchedRoute[Params, TRouteConfig]]]
+  inline def matchRoutes[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, TRouteConfig /* <: RouteConfig */](routes: js.Array[TRouteConfig], pathname: String): js.Array[MatchedRoute[Params, TRouteConfig]] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any])).asInstanceOf[js.Array[MatchedRoute[Params, TRouteConfig]]]
   
   inline def renderRoutes(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")().asInstanceOf[Element]
   inline def renderRoutes(routes: js.Array[RouteConfig]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -46,9 +43,7 @@ object mod {
     switchProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SwitchProps */ Any
   ): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("renderRoutes")(routes.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any], switchProps.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  trait MatchedRoute[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute & TopLevel[Any] */, TRouteConfig /* <: RouteConfig */] extends StObject {
+  trait MatchedRoute[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, TRouteConfig /* <: RouteConfig */] extends StObject {
     
     var `match`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any
     
@@ -56,9 +51,7 @@ object mod {
   }
   object MatchedRoute {
     
-    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute & TopLevel[Any] */, TRouteConfig /* <: RouteConfig */](
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, TRouteConfig /* <: RouteConfig */](
       `match`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any,
       route: TRouteConfig
     ): MatchedRoute[Params, TRouteConfig] = {
@@ -67,9 +60,7 @@ object mod {
       __obj.asInstanceOf[MatchedRoute[Params, TRouteConfig]]
     }
     
-    extension [Self <: MatchedRoute[?, ?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.MatchedRoute & TopLevel[Any] */, TRouteConfig /* <: RouteConfig */](x: Self & (MatchedRoute[Params, TRouteConfig])) {
+    extension [Self <: MatchedRoute[?, ?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, TRouteConfig /* <: RouteConfig */](x: Self & (MatchedRoute[Params, TRouteConfig])) {
       
       inline def setMatch(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify match<Params> */ Any
@@ -147,24 +138,18 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<Params> * / any */ trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps & TopLevel[Any] */] extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<Params> * / any */ trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] extends StObject {
     
     var route: js.UndefOr[RouteConfig] = js.undefined
   }
   object RouteConfigComponentProps {
     
-    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps & TopLevel[Any] */](): RouteConfigComponentProps[Params] = {
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](): RouteConfigComponentProps[Params] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteConfigComponentProps[Params]]
     }
     
-    extension [Self <: RouteConfigComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps & TopLevel[Any] */](x: Self & RouteConfigComponentProps[Params]) {
+    extension [Self <: RouteConfigComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & RouteConfigComponentProps[Params]) {
       
       inline def setRoute(value: RouteConfig): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       

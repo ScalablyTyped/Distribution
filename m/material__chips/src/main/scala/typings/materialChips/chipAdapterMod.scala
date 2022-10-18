@@ -1,10 +1,10 @@
 package typings.materialChips
 
+import typings.materialChips.actionConstantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.actionConstantsMod.MDCChipActionType
 import typings.materialChips.chipConstantsMod.MDCChipAttributes
 import typings.materialChips.chipConstantsMod.MDCChipCssClasses
 import typings.materialChips.chipConstantsMod.MDCChipEvents
-import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
-import typings.materialChips.constantsMod.MDCChipActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

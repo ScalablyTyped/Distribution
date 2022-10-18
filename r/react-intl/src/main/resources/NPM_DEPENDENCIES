@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-intl" : "6.1.1"
+      "react-intl" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-intl" : "6.1.1"
+      "react-intl" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

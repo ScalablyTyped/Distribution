@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCalendar.anon
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +24,7 @@ trait Display extends StObject {
   
   /** Preferences. */
   var preferences: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The gadget's title. Deprecated. */
@@ -65,9 +62,7 @@ object Display {
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     inline def setPreferences(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Display & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
     
     inline def setPreferencesUndefined: Self = StObject.set(x, "preferences", js.undefined)

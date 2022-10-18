@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "ProgressType")
 @js.native
 open class ProgressType[PR] ()
-  extends typings.vscodeJsonrpc.connectionMod.ProgressType[PR]
+  extends typings.vscodeJsonrpc.libCommonConnectionMod.ProgressType[PR]

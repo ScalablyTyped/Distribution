@@ -1,8 +1,8 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
-import typings.floatingUiCore.typesMod.Placement
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
+import typings.floatingUiCore.srcTypesMod.Placement
 import typings.floatingUiDom.floatingUiDomStrings.bestFit
 import typings.floatingUiDom.floatingUiDomStrings.initialPlacement
 import org.scalablytyped.runtime.StObject
@@ -14,7 +14,7 @@ trait PartialFlipOptionsDetectO extends StObject {
   
   var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiDom.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiDom.srcTypesMod.Boundary] = js.undefined
   
   var crossAxis: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +30,7 @@ trait PartialFlipOptionsDetectO extends StObject {
   
   var padding: js.UndefOr[Padding] = js.undefined
   
-  var rootBoundary: js.UndefOr[typings.floatingUiCore.typesMod.RootBoundary] = js.undefined
+  var rootBoundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.RootBoundary] = js.undefined
 }
 object PartialFlipOptionsDetectO {
   
@@ -45,7 +45,7 @@ object PartialFlipOptionsDetectO {
     
     inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiDom.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiDom.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
@@ -81,7 +81,7 @@ object PartialFlipOptionsDetectO {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setRootBoundary(value: typings.floatingUiCore.typesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+    inline def setRootBoundary(value: typings.floatingUiCore.srcTypesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
     
     inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
   }

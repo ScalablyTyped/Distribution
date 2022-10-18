@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.organizationchartMod.OrganizationChartProps
+import typings.primereact.organizationchartOrganizationchartMod.OrganizationChartProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "OrganizationChart")
 @js.native
 open class OrganizationChart protected ()
-  extends typings.primereact.organizationchartMod.OrganizationChart {
+  extends typings.primereact.organizationchartOrganizationchartMod.OrganizationChart {
   def this(props: OrganizationChartProps) = this()
   /**
     * @deprecated

@@ -1,6 +1,6 @@
 package typings.atlassianCrowdClient
 
-import typings.atlassianCrowdClient.userMod.^
+import typings.atlassianCrowdClient.libModelsUserMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -121,10 +121,10 @@ object anon {
     
     var children: Add = js.native
     
-    def create(group: typings.atlassianCrowdClient.groupMod.^): js.Promise[typings.atlassianCrowdClient.groupMod.^] = js.native
+    def create(group: typings.atlassianCrowdClient.libModelsGroupMod.^): js.Promise[typings.atlassianCrowdClient.libModelsGroupMod.^] = js.native
     
-    def get(groupname: String): js.Promise[typings.atlassianCrowdClient.groupMod.^] = js.native
-    def get(groupname: String, withAttributes: Boolean): js.Promise[typings.atlassianCrowdClient.groupMod.^] = js.native
+    def get(groupname: String): js.Promise[typings.atlassianCrowdClient.libModelsGroupMod.^] = js.native
+    def get(groupname: String, withAttributes: Boolean): js.Promise[typings.atlassianCrowdClient.libModelsGroupMod.^] = js.native
     
     def membership(): js.Promise[String] = js.native
     
@@ -132,7 +132,7 @@ object anon {
     
     def remove(groupname: String): js.Promise[Unit] = js.native
     
-    def update(groupname: String, group: typings.atlassianCrowdClient.groupMod.^): js.Promise[typings.atlassianCrowdClient.groupMod.^] = js.native
+    def update(groupname: String, group: typings.atlassianCrowdClient.libModelsGroupMod.^): js.Promise[typings.atlassianCrowdClient.libModelsGroupMod.^] = js.native
     
     var users: Get = js.native
   }
@@ -157,28 +157,28 @@ object anon {
   @js.native
   trait Create extends StObject {
     
-    def create(username: String, password: String): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
-    def create(username: String, password: String, validationFactors: Unit, duration: Double): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    def create(username: String, password: String): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
+    def create(username: String, password: String, validationFactors: Unit, duration: Double): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
     def create(
       username: String,
       password: String,
-      validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^
-    ): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+      validationFactors: typings.atlassianCrowdClient.libModelsValidationFactorsMod.^
+    ): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
     def create(
       username: String,
       password: String,
-      validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^,
+      validationFactors: typings.atlassianCrowdClient.libModelsValidationFactorsMod.^,
       duration: Double
-    ): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    ): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
     
-    def createUnvalidated(username: String): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
-    def createUnvalidated(username: String, validationFactors: Unit, duration: Double): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
-    def createUnvalidated(username: String, validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    def createUnvalidated(username: String): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
+    def createUnvalidated(username: String, validationFactors: Unit, duration: Double): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
+    def createUnvalidated(username: String, validationFactors: typings.atlassianCrowdClient.libModelsValidationFactorsMod.^): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
     def createUnvalidated(
       username: String,
-      validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^,
+      validationFactors: typings.atlassianCrowdClient.libModelsValidationFactorsMod.^,
       duration: Double
-    ): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    ): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
     
     def getUser(token: String): js.Promise[^] = js.native
     
@@ -187,8 +187,8 @@ object anon {
     def removeAll(username: String): js.Promise[Unit] = js.native
     def removeAll(username: String, exclude: String): js.Promise[Unit] = js.native
     
-    def validate(token: String): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
-    def validate(token: String, validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    def validate(token: String): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
+    def validate(token: String, validationFactors: typings.atlassianCrowdClient.libModelsValidationFactorsMod.^): js.Promise[typings.atlassianCrowdClient.libModelsSessionMod.^] = js.native
   }
   
   @js.native
@@ -222,14 +222,14 @@ object anon {
   @js.native
   trait Group extends StObject {
     
-    def group(restriction: String): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Boolean): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Boolean, startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Unit, startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
+    def group(restriction: String): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Boolean): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Boolean, startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Unit, startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
+    def group(restriction: String, expand: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.libModelsGroupMod.^]] = js.native
     
     def user(restriction: String): js.Promise[js.Array[String | ^]] = js.native
     def user(restriction: String, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
@@ -243,23 +243,23 @@ object anon {
   
   trait List extends StObject {
     
-    def list(username: String): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+    def list(username: String): js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
     
     var password: Reset
     
     def remove(username: String, attributename: String): js.Promise[Unit]
     
-    def set(username: String, attributes: typings.atlassianCrowdClient.attributesMod.^): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+    def set(username: String, attributes: typings.atlassianCrowdClient.libModelsAttributesMod.^): js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
     
     var username: Request
   }
   object List {
     
     inline def apply(
-      list: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^],
+      list: String => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^],
       password: Reset,
       remove: (String, String) => js.Promise[Unit],
-      set: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^],
+      set: (String, typings.atlassianCrowdClient.libModelsAttributesMod.^) => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^],
       username: Request
     ): typings.atlassianCrowdClient.anon.List = {
       val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), password = password.asInstanceOf[js.Any], remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set), username = username.asInstanceOf[js.Any])
@@ -268,14 +268,14 @@ object anon {
     
     extension [Self <: typings.atlassianCrowdClient.anon.List](x: Self) {
       
-      inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
       inline def setPassword(value: Reset): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setSet(
-        value: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+        value: (String, typings.atlassianCrowdClient.libModelsAttributesMod.^) => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
       inline def setUsername(value: Request): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
@@ -322,18 +322,18 @@ object anon {
   
   trait Remove extends StObject {
     
-    def list(groupname: String): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+    def list(groupname: String): js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
     
     def remove(groupname: String, attributename: String): js.Promise[Unit]
     
-    def set(groupname: String, attributes: typings.atlassianCrowdClient.attributesMod.^): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+    def set(groupname: String, attributes: typings.atlassianCrowdClient.libModelsAttributesMod.^): js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
   }
   object Remove {
     
     inline def apply(
-      list: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^],
+      list: String => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^],
       remove: (String, String) => js.Promise[Unit],
-      set: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+      set: (String, typings.atlassianCrowdClient.libModelsAttributesMod.^) => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
     ): Remove = {
       val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), remove = js.Any.fromFunction2(remove), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Remove]
@@ -341,12 +341,12 @@ object anon {
     
     extension [Self <: Remove](x: Self) {
       
-      inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
       inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setSet(
-        value: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^]
+        value: (String, typings.atlassianCrowdClient.libModelsAttributesMod.^) => js.Promise[typings.atlassianCrowdClient.libModelsAttributesMod.^]
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }

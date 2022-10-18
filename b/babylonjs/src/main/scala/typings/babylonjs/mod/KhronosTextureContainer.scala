@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "KhronosTextureContainer")
 @js.native
 open class KhronosTextureContainer protected ()
-  extends typings.babylonjs.legacyMod.KhronosTextureContainer {
+  extends typings.babylonjs.legacyLegacyMod.KhronosTextureContainer {
   /**
     * Creates a new KhronosTextureContainer
     * @param data contents of the KTX container file

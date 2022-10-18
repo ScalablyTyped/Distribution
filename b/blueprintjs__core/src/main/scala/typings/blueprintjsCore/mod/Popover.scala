@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.popoverMod.IPopoverProps
+import typings.blueprintjsCore.libEsmComponentsPopoverPopoverMod.IPopoverProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Popover")
 @js.native
 open class Popover protected ()
-  extends typings.blueprintjsCore.componentsMod.Popover {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Popover {
   def this(props: IPopoverProps) = this()
   def this(props: IPopoverProps, context: Any) = this()
 }

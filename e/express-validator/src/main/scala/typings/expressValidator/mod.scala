@@ -4,16 +4,16 @@ import typings.expressValidator.anon.ArrayValidationChainrunre
 import typings.expressValidator.anon.PartialMatchedDataOptions
 import typings.expressValidator.anon.Run
 import typings.expressValidator.anon.WithDefaults
-import typings.expressValidator.baseMod.Location
-import typings.expressValidator.baseMod.Middleware
-import typings.expressValidator.baseMod.Request
-import typings.expressValidator.baseMod.ValidationError
-import typings.expressValidator.oneOfMod.OneOfCustomMessageBuilder
-import typings.expressValidator.sanitizationChainMod.SanitizationChain
-import typings.expressValidator.schemaMod.Schema
-import typings.expressValidator.validationChainMod.ValidationChain
-import typings.expressValidator.validationResultMod.ErrorFormatter
-import typings.expressValidator.validationResultMod.ResultFactory
+import typings.expressValidator.srcBaseMod.Location
+import typings.expressValidator.srcBaseMod.Middleware
+import typings.expressValidator.srcBaseMod.Request
+import typings.expressValidator.srcBaseMod.ValidationError
+import typings.expressValidator.srcChainSanitizationChainMod.SanitizationChain
+import typings.expressValidator.srcChainValidationChainMod.ValidationChain
+import typings.expressValidator.srcMiddlewaresOneOfMod.OneOfCustomMessageBuilder
+import typings.expressValidator.srcMiddlewaresSchemaMod.Schema
+import typings.expressValidator.srcValidationResultMod.ErrorFormatter
+import typings.expressValidator.srcValidationResultMod.ResultFactory
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +28,7 @@ object mod {
   @JSImport("express-validator", "Result")
   @js.native
   open class Result[T] protected ()
-    extends typings.expressValidator.validationResultMod.Result[T] {
+    extends typings.expressValidator.srcValidationResultMod.Result[T] {
     def this(formatter: ErrorFormatter[T], errors: js.Array[ValidationError]) = this()
   }
   

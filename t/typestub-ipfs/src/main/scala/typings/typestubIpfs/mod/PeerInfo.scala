@@ -36,6 +36,6 @@ object PeerInfo {
     
     inline def setMultiaddrs(value: js.Array[Multiaddr]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
     
-    inline def setMultiaddrsVarargs(value: Multiaddr*): Self = StObject.set(x, "multiaddrs", js.Array(value :_*))
+    inline def setMultiaddrsVarargs(value: Multiaddr*): Self = StObject.set(x, "multiaddrs", js.Array(value*))
   }
 }

@@ -1523,7 +1523,7 @@ trait MathJsStatic
   def isNegative(x: MathCollection): Boolean = js.native
   def isNegative(x: Unit): Boolean = js.native
   
-  def isNode(x: Any): /* is mathjs.mathjs.MathNodeCommon */ Boolean = js.native
+  def isNode(x: Any): /* is mathjs.mathjs.MathNode */ Boolean = js.native
   
   def isNull(x: Any): /* is null */ Boolean = js.native
   
@@ -2296,6 +2296,19 @@ trait MathJsStatic
   def pickRandom[T](array: js.Array[T]): T = js.native
   def pickRandom[T](array: js.Array[T], number: Double): js.Array[T] = js.native
   def pickRandom[T](array: js.Array[T], number: Double, weights: js.Array[Double]): js.Array[T] = js.native
+  
+  def pinv(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
+  /**
+    * Calculate the Moore–Penrose inverse of a matrix.
+    * @param x Matrix to be inversed
+    * @return The inverse of `x`.
+    */
+  def pinv(x: Double): Double = js.native
+  def pinv(x: Decimal): Decimal = js.native
+  def pinv(x: Complex): Complex = js.native
+  def pinv(x: Fraction): Fraction = js.native
+  def pinv(x: Matrix): Matrix = js.native
+  def pinv(x: Unit): Unit = js.native
   
   /**
     * Calculates the power of x to y, x ^ y. Matrix exponentiation is

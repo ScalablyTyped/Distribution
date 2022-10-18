@@ -3,6 +3,7 @@ package typings.gulpCond
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpCond.mod.GulpCond.Condition
 import typings.gulpCond.mod.GulpCond.Expresion
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,15 +18,13 @@ object mod extends Shortcut {
     
     type Condition = Boolean | js.Function0[Boolean]
     
-    type Expresion = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any) | (js.Function0[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-      ])
+    type Expresion = ReadWriteStream | js.Function0[ReadWriteStream]
   }
   type GulpCond = js.Function3[
     /* condition */ Condition, 
     /* expr1 */ Expresion, 
     /* expr2 */ js.UndefOr[Expresion], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+    ReadWriteStream
   ]
   
   type _To = GulpCond

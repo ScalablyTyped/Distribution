@@ -2,7 +2,7 @@ package typings.tuyaPanelKit.anon
 
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.tuyaPanelKit.nativeTypesMod.ServerContainerRef
+import typings.tuyaPanelKit.`@reactNavigationNativeTypesMod`.ServerContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

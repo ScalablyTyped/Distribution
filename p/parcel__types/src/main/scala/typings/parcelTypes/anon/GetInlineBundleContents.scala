@@ -18,7 +18,7 @@ trait GetInlineBundleContents[ConfigType] extends StObject {
   
   var config: ConfigType = js.native
   
-  def getInlineBundleContents(arg0: typings.parcelTypes.mod.Bundle, arg1: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Async[Contents] = js.native
+  def getInlineBundleContents(arg0: typings.parcelTypes.mod.Bundle, arg1: typings.parcelTypes.mod.BundleGraph[NamedBundle]): Async[ContentsBlob] = js.native
   
   def getSourceMapReference(): Async[js.UndefOr[String | Null]] = js.native
   def getSourceMapReference(map: default): Async[js.UndefOr[String | Null]] = js.native

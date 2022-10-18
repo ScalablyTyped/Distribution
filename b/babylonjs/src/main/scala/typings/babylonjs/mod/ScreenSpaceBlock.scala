@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ScreenSpaceBlock")
 @js.native
 open class ScreenSpaceBlock protected ()
-  extends typings.babylonjs.legacyMod.ScreenSpaceBlock {
+  extends typings.babylonjs.legacyLegacyMod.ScreenSpaceBlock {
   /**
     * Creates a new ScreenSpaceBlock
     * @param name defines the block name

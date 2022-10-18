@@ -31,8 +31,6 @@ object mod {
       listener: /* import warning: importer.ImportType#apply Failed type conversion: busboy.busboy.BusboyEvents[Event] */ js.Any
     ): this.type = js.native
     
-    def off(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def off[Event /* <: /* keyof busboy.busboy.BusboyEvents */ file | field | partsLimit | filesLimit | fieldsLimit | error | finish | close */](
       event: Event,
       listener: /* import warning: importer.ImportType#apply Failed type conversion: busboy.busboy.BusboyEvents[Event] */ js.Any

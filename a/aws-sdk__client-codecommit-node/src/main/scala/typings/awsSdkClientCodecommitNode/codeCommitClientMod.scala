@@ -2,9 +2,9 @@ package typings.awsSdkClientCodecommitNode
 
 import typings.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitConfiguration
 import typings.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitResolvedConfiguration
-import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientCodecommitNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,9 +1,9 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.schemaMod.Schema
-import typings.ckeditorCkeditor5Engine.upcastdispatcherMod.UpcastConversionData
-import typings.ckeditorCkeditor5Engine.upcastdispatcherMod.ViewItem
-import typings.ckeditorCkeditor5Engine.viewconsumableMod.default
+import typings.ckeditorCkeditor5Engine.srcConversionUpcastdispatcherMod.UpcastConversionData
+import typings.ckeditorCkeditor5Engine.srcConversionUpcastdispatcherMod.ViewItem
+import typings.ckeditorCkeditor5Engine.srcConversionViewconsumableMod.default
+import typings.ckeditorCkeditor5Engine.srcModelSchemaMod.Schema
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait PartialUpcastConversionAp extends StObject {
   var convertChildren: js.UndefOr[
     js.Function2[
       /* viewItem */ ViewItem, 
-      /* positionOrElement */ typings.ckeditorCkeditor5Engine.positionMod.default | typings.ckeditorCkeditor5Engine.elementMod.default, 
+      /* positionOrElement */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default | typings.ckeditorCkeditor5Engine.srcModelElementMod.default, 
       ModelCursor
     ]
   ] = js.undefined
@@ -25,22 +25,22 @@ trait PartialUpcastConversionAp extends StObject {
   var convertItem: js.UndefOr[
     js.Function2[
       /* viewItem */ ViewItem, 
-      /* modelCursor */ typings.ckeditorCkeditor5Engine.positionMod.default, 
+      /* modelCursor */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default, 
       ModelCursor
     ]
   ] = js.undefined
   
   var getSplitParts: js.UndefOr[
     js.Function1[
-      /* element */ typings.ckeditorCkeditor5Engine.elementMod.default, 
-      js.Array[typings.ckeditorCkeditor5Engine.elementMod.default]
+      /* element */ typings.ckeditorCkeditor5Engine.srcModelElementMod.default, 
+      js.Array[typings.ckeditorCkeditor5Engine.srcModelElementMod.default]
     ]
   ] = js.undefined
   
   var safeInsert: js.UndefOr[
     js.Function2[
-      /* node */ typings.ckeditorCkeditor5Engine.nodeMod.default, 
-      /* position */ typings.ckeditorCkeditor5Engine.positionMod.default, 
+      /* node */ typings.ckeditorCkeditor5Engine.srcModelNodeMod.default, 
+      /* position */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default, 
       Boolean
     ]
   ] = js.undefined
@@ -49,8 +49,8 @@ trait PartialUpcastConversionAp extends StObject {
   
   var splitToAllowedParent: js.UndefOr[
     js.Function2[
-      /* position */ typings.ckeditorCkeditor5Engine.positionMod.default, 
-      /* node */ typings.ckeditorCkeditor5Engine.nodeMod.default, 
+      /* position */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default, 
+      /* node */ typings.ckeditorCkeditor5Engine.srcModelNodeMod.default, 
       Null | CursorParent
     ]
   ] = js.undefined
@@ -59,13 +59,13 @@ trait PartialUpcastConversionAp extends StObject {
   
   var updateConversionResult: js.UndefOr[
     js.Function2[
-      /* element */ typings.ckeditorCkeditor5Engine.elementMod.default, 
+      /* element */ typings.ckeditorCkeditor5Engine.srcModelElementMod.default, 
       /* data */ UpcastConversionData[ViewItem], 
       scala.Unit
     ]
   ] = js.undefined
   
-  var writer: js.UndefOr[typings.ckeditorCkeditor5Engine.writerMod.default] = js.undefined
+  var writer: js.UndefOr[typings.ckeditorCkeditor5Engine.srcModelWriterMod.default] = js.undefined
 }
 object PartialUpcastConversionAp {
   
@@ -81,25 +81,25 @@ object PartialUpcastConversionAp {
     inline def setConsumableUndefined: Self = StObject.set(x, "consumable", js.undefined)
     
     inline def setConvertChildren(
-      value: (/* viewItem */ ViewItem, /* positionOrElement */ typings.ckeditorCkeditor5Engine.positionMod.default | typings.ckeditorCkeditor5Engine.elementMod.default) => ModelCursor
+      value: (/* viewItem */ ViewItem, /* positionOrElement */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default | typings.ckeditorCkeditor5Engine.srcModelElementMod.default) => ModelCursor
     ): Self = StObject.set(x, "convertChildren", js.Any.fromFunction2(value))
     
     inline def setConvertChildrenUndefined: Self = StObject.set(x, "convertChildren", js.undefined)
     
     inline def setConvertItem(
-      value: (/* viewItem */ ViewItem, /* modelCursor */ typings.ckeditorCkeditor5Engine.positionMod.default) => ModelCursor
+      value: (/* viewItem */ ViewItem, /* modelCursor */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default) => ModelCursor
     ): Self = StObject.set(x, "convertItem", js.Any.fromFunction2(value))
     
     inline def setConvertItemUndefined: Self = StObject.set(x, "convertItem", js.undefined)
     
     inline def setGetSplitParts(
-      value: /* element */ typings.ckeditorCkeditor5Engine.elementMod.default => js.Array[typings.ckeditorCkeditor5Engine.elementMod.default]
+      value: /* element */ typings.ckeditorCkeditor5Engine.srcModelElementMod.default => js.Array[typings.ckeditorCkeditor5Engine.srcModelElementMod.default]
     ): Self = StObject.set(x, "getSplitParts", js.Any.fromFunction1(value))
     
     inline def setGetSplitPartsUndefined: Self = StObject.set(x, "getSplitParts", js.undefined)
     
     inline def setSafeInsert(
-      value: (/* node */ typings.ckeditorCkeditor5Engine.nodeMod.default, /* position */ typings.ckeditorCkeditor5Engine.positionMod.default) => Boolean
+      value: (/* node */ typings.ckeditorCkeditor5Engine.srcModelNodeMod.default, /* position */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default) => Boolean
     ): Self = StObject.set(x, "safeInsert", js.Any.fromFunction2(value))
     
     inline def setSafeInsertUndefined: Self = StObject.set(x, "safeInsert", js.undefined)
@@ -109,7 +109,7 @@ object PartialUpcastConversionAp {
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     inline def setSplitToAllowedParent(
-      value: (/* position */ typings.ckeditorCkeditor5Engine.positionMod.default, /* node */ typings.ckeditorCkeditor5Engine.nodeMod.default) => Null | CursorParent
+      value: (/* position */ typings.ckeditorCkeditor5Engine.srcModelPositionMod.default, /* node */ typings.ckeditorCkeditor5Engine.srcModelNodeMod.default) => Null | CursorParent
     ): Self = StObject.set(x, "splitToAllowedParent", js.Any.fromFunction2(value))
     
     inline def setSplitToAllowedParentUndefined: Self = StObject.set(x, "splitToAllowedParent", js.undefined)
@@ -119,12 +119,12 @@ object PartialUpcastConversionAp {
     inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     inline def setUpdateConversionResult(
-      value: (/* element */ typings.ckeditorCkeditor5Engine.elementMod.default, /* data */ UpcastConversionData[ViewItem]) => scala.Unit
+      value: (/* element */ typings.ckeditorCkeditor5Engine.srcModelElementMod.default, /* data */ UpcastConversionData[ViewItem]) => scala.Unit
     ): Self = StObject.set(x, "updateConversionResult", js.Any.fromFunction2(value))
     
     inline def setUpdateConversionResultUndefined: Self = StObject.set(x, "updateConversionResult", js.undefined)
     
-    inline def setWriter(value: typings.ckeditorCkeditor5Engine.writerMod.default): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+    inline def setWriter(value: typings.ckeditorCkeditor5Engine.srcModelWriterMod.default): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
     inline def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
   }

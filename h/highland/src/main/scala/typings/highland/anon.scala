@@ -8,24 +8,32 @@ object anon {
   
   trait Array[R] extends StObject {
     
-    var array: Flattened[Any]
+    var array: /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Array<infer U> ? highland.Flattened<U> : never */ js.Any
     
-    var stream: Flattened[Any]
+    var stream: /* import warning: importer.ImportType#apply Failed type conversion: R extends highland.Highland.Stream<infer U> ? highland.Flattened<U> : never */ js.Any
     
     var value: R
   }
   object Array {
     
-    inline def apply[R](array: Flattened[Any], stream: Flattened[Any], value: R): Array[R] = {
+    inline def apply[R](
+      array: /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Array<infer U> ? highland.Flattened<U> : never */ js.Any,
+      stream: /* import warning: importer.ImportType#apply Failed type conversion: R extends highland.Highland.Stream<infer U> ? highland.Flattened<U> : never */ js.Any,
+      value: R
+    ): Array[R] = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Array[R]]
     }
     
     extension [Self <: Array[?], R](x: Self & Array[R]) {
       
-      inline def setArray(value: Flattened[Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends std.Array<infer U> ? highland.Flattened<U> : never */ js.Any
+      ): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setStream(value: Flattened[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: R extends highland.Highland.Stream<infer U> ? highland.Flattened<U> : never */ js.Any
+      ): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setValue(value: R): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

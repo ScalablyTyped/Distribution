@@ -1,5 +1,6 @@
 package typings.matomoTrackerReactNative
 
+import typings.matomoTrackerReactNative.anon.Cid
 import typings.matomoTrackerReactNative.anon.TrackAction
 import typings.matomoTrackerReactNative.anon.Uid
 import typings.react.mod.Context
@@ -78,7 +79,7 @@ object mod {
   
   trait AppStart extends StObject {
     
-    var userInfo: js.UndefOr[Uid] = js.undefined
+    var userInfo: js.UndefOr[Cid] = js.undefined
   }
   object AppStart {
     
@@ -89,7 +90,7 @@ object mod {
     
     extension [Self <: AppStart](x: Self) {
       
-      inline def setUserInfo(value: Uid): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+      inline def setUserInfo(value: Cid): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
       
       inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
     }

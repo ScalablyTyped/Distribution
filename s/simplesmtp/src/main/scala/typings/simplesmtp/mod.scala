@@ -1,7 +1,7 @@
 package typings.simplesmtp
 
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +65,7 @@ object mod {
   @js.native
   trait SimpleServerConnection
     extends StObject
-       with ReadableStream[Any] {
+       with ReadableStream {
     
     /**
       * Accept the message with the selected ID

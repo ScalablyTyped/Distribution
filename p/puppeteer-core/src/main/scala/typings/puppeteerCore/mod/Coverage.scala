@@ -21,7 +21,8 @@ open class Coverage protected () extends StObject {
   
   /**
     * @param options - Set of configurable options for coverage defaults to
-    * `resetOnNavigation : true, reportAnonymousScripts : false`
+    * `resetOnNavigation : true, reportAnonymousScripts : false,`
+    * `includeRawScriptCoverage : false, useBlockCoverage : true`
     * @returns Promise that resolves when coverage is started.
     *
     * @remarks

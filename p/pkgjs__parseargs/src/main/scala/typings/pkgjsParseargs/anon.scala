@@ -1,6 +1,5 @@
 package typings.pkgjsParseargs
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.pkgjsParseargs.mod.OptionToken
 import typings.pkgjsParseargs.mod.ParseArgsConfig
 import typings.pkgjsParseargs.mod.ParsedOptionToken
@@ -9,7 +8,6 @@ import typings.pkgjsParseargs.mod.ParsedPositionals
 import typings.pkgjsParseargs.mod.ParsedTokens
 import typings.pkgjsParseargs.mod.ParsedValues
 import typings.pkgjsParseargs.mod.Token
-import typings.pkgjsParseargs.mod._PreciseTokenForOptions
 import typings.pkgjsParseargs.pkgjsParseargsStrings.`option-terminator`
 import typings.pkgjsParseargs.pkgjsParseargsStrings.option
 import typings.pkgjsParseargs.pkgjsParseargsStrings.positional
@@ -19,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Index[K /* <: String */]
+  trait Index
     extends StObject
-       with _PreciseTokenForOptions[K, Any] {
+       with OptionToken {
     
     var index: Double
     
@@ -29,7 +27,7 @@ object anon {
     
     var kind: option
     
-    var name: K
+    var name: String
     
     var rawName: String
     
@@ -37,12 +35,12 @@ object anon {
   }
   object Index {
     
-    inline def apply[K /* <: String */](index: Double, inlineValue: Boolean, name: K, rawName: String, value: String): Index[K] = {
+    inline def apply(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Index[K]]
+      __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index[?], K /* <: String */](x: Self & Index[K]) {
+    extension [Self <: Index](x: Self) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -50,7 +48,7 @@ object anon {
       
       inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
       
@@ -81,9 +79,9 @@ object anon {
     }
   }
   
-  trait InlineValue[K /* <: String */]
+  trait InlineValue
     extends StObject
-       with _PreciseTokenForOptions[K, Any] {
+       with OptionToken {
     
     var index: Double
     
@@ -91,7 +89,7 @@ object anon {
     
     var kind: option
     
-    var name: K
+    var name: String
     
     var rawName: String
     
@@ -99,12 +97,12 @@ object anon {
   }
   object InlineValue {
     
-    inline def apply[K /* <: String */](index: Double, inlineValue: Unit, name: K, rawName: String, value: Unit): InlineValue[K] = {
+    inline def apply(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InlineValue[K]]
+      __obj.asInstanceOf[InlineValue]
     }
     
-    extension [Self <: InlineValue[?], K /* <: String */](x: Self & InlineValue[K]) {
+    extension [Self <: InlineValue](x: Self) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -112,7 +110,7 @@ object anon {
       
       inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
       
@@ -147,23 +145,6 @@ object anon {
     }
   }
   
-  trait Name[K /* <: String */] extends StObject {
-    
-    var name: K
-  }
-  object Name {
-    
-    inline def apply[K /* <: String */](name: K): Name[K] = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name[K]]
-    }
-    
-    extension [Self <: Name[?], K /* <: String */](x: Self & Name[K]) {
-      
-      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Positionals[T /* <: ParseArgsConfig */] extends StObject {
     
     var positionals: ParsedPositionals[T]
@@ -183,125 +164,11 @@ object anon {
       
       inline def setPositionals(value: ParsedPositionals[T]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
       
-      inline def setPositionalsVarargs(value: (Any | String)*): Self = StObject.set(x, "positionals", js.Array(value*))
-      
       inline def setTokens(value: ParsedTokens[T]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
       inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind)*): Self = StObject.set(x, "tokens", js.Array(value*))
       
       inline def setValues(value: ParsedValues[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait RawName
-    extends StObject
-       with OptionToken {
-    
-    var index: Double
-    
-    var inlineValue: Boolean
-    
-    var kind: option
-    
-    var name: String
-    
-    var rawName: String
-    
-    var value: String
-  }
-  object RawName {
-    
-    inline def apply(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): RawName = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RawName]
-    }
-    
-    extension [Self <: RawName](x: Self) {
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setInlineValue(value: Boolean): Self = StObject.set(x, "inlineValue", value.asInstanceOf[js.Any])
-      
-      inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Tokens extends StObject {
-    
-    var positionals: js.Array[String]
-    
-    var tokens: js.UndefOr[js.Array[Token]] = js.undefined
-    
-    var values: StringDictionary[js.UndefOr[String | Boolean | (js.Array[String | Boolean])]]
-  }
-  object Tokens {
-    
-    inline def apply(
-      positionals: js.Array[String],
-      values: StringDictionary[js.UndefOr[String | Boolean | (js.Array[String | Boolean])]]
-    ): Tokens = {
-      val __obj = js.Dynamic.literal(positionals = positionals.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Tokens]
-    }
-    
-    extension [Self <: Tokens](x: Self) {
-      
-      inline def setPositionals(value: js.Array[String]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
-      
-      inline def setPositionalsVarargs(value: String*): Self = StObject.set(x, "positionals", js.Array(value*))
-      
-      inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
-      
-      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
-      
-      inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value*))
-      
-      inline def setValues(value: StringDictionary[js.UndefOr[String | Boolean | (js.Array[String | Boolean])]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Value
-    extends StObject
-       with OptionToken {
-    
-    var index: Double
-    
-    var inlineValue: Unit
-    
-    var kind: option
-    
-    var name: String
-    
-    var rawName: String
-    
-    var value: Unit
-  }
-  object Value {
-    
-    inline def apply(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): Value = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value]
-    }
-    
-    extension [Self <: Value](x: Self) {
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setInlineValue(value: Unit): Self = StObject.set(x, "inlineValue", value.asInstanceOf[js.Any])
-      
-      inline def setKind(value: option): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,8 +188,6 @@ object anon {
     extension [Self <: Values[?], T /* <: ParseArgsConfig */](x: Self & Values[T]) {
       
       inline def setPositionals(value: ParsedPositionals[T]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
-      
-      inline def setPositionalsVarargs(value: (Any | String)*): Self = StObject.set(x, "positionals", js.Array(value*))
       
       inline def setValues(value: ParsedValues[T]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }

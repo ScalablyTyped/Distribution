@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsBadgeMod.BadgeProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsBadgeMod.BadgeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Badge", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Badge", JSImport.Default)
   @js.native
   val default: FC[BadgeProps] = js.native
   

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "SteeringBehavior")
 @js.native
 open class SteeringBehavior ()
-  extends typings.yuka.yukaMod.SteeringBehavior
+  extends typings.yuka.srcYukaMod.SteeringBehavior

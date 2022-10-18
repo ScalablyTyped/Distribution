@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object promptsStrings {
   
   @js.native
-  sealed trait Answers extends StObject
-  inline def Answers: Answers = "Answers".asInstanceOf[Answers]
-  
-  @js.native
   sealed trait autocomplete
     extends StObject
        with PromptType

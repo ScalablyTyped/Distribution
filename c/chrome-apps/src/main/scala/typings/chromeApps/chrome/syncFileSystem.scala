@@ -9,16 +9,7 @@ import typings.chromeApps.chromeAppsStrings.PENDING
 import typings.chromeApps.chromeAppsStrings.REMOTE_TO_LOCAL
 import typings.chromeApps.chromeAppsStrings.SYNCED
 import typings.chromeApps.chromeAppsStrings.UPDATED
-import typings.chromeApps.chromeAppsStrings.added_
-import typings.chromeApps.chromeAppsStrings.conflicting_
-import typings.chromeApps.chromeAppsStrings.deleted_
-import typings.chromeApps.chromeAppsStrings.local_to_remote_
-import typings.chromeApps.chromeAppsStrings.pending_
-import typings.chromeApps.chromeAppsStrings.remote_to_local_
-import typings.chromeApps.chromeAppsStrings.synced_
-import typings.chromeApps.chromeAppsStrings.updated_
 import typings.filesystem.FileEntry
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,10 +43,7 @@ object syncFileSystem {
         ToStringLiteral[
           ADDED, 
           /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
-          Exclude[
-            /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
-            added_ | updated_ | deleted_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ADDED :'added',   UPDATED :'updated',   DELETED :'deleted'} extends keyof {  ADDED :'added',   UPDATED :'updated',   DELETED :'deleted'} ? std.Exclude<keyof {  ADDED :'added',   UPDATED :'updated',   DELETED :'deleted'}, 'added' | 'updated' | 'deleted'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -68,10 +56,7 @@ object syncFileSystem {
         ToStringLiteral[
           LOCALTOREMOTE, 
           /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
-          Exclude[
-            /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
-            local_to_remote_ | remote_to_local_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  LOCAL_TO_REMOTE :'local_to_remote',   REMOTE_TO_LOCAL :'remote_to_local'} extends keyof {  LOCAL_TO_REMOTE :'local_to_remote',   REMOTE_TO_LOCAL :'remote_to_local'} ? std.Exclude<keyof {  LOCAL_TO_REMOTE :'local_to_remote',   REMOTE_TO_LOCAL :'remote_to_local'}, 'local_to_remote' | 'remote_to_local'> : never */ js.Any
         ]
       ] = js.undefined
     
@@ -90,10 +75,7 @@ object syncFileSystem {
     var status: ToStringLiteral[
         CONFLICTING, 
         /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-        Exclude[
-          /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-          synced_ | pending_ | conflicting_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
       ]
   }
   object FileStatusChangedDetail {
@@ -103,10 +85,7 @@ object syncFileSystem {
       status: ToStringLiteral[
           CONFLICTING, 
           /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-          Exclude[
-            /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-            synced_ | pending_ | conflicting_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
         ]
     ): FileStatusChangedDetail = {
       val __obj = js.Dynamic.literal(fileEntry = fileEntry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -119,10 +98,7 @@ object syncFileSystem {
         value: ToStringLiteral[
               ADDED, 
               /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
-              Exclude[
-                /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
-                added_ | updated_ | deleted_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  ADDED :'added',   UPDATED :'updated',   DELETED :'deleted'} extends keyof {  ADDED :'added',   UPDATED :'updated',   DELETED :'deleted'} ? std.Exclude<keyof {  ADDED :'added',   UPDATED :'updated',   DELETED :'deleted'}, 'added' | 'updated' | 'deleted'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -132,10 +108,7 @@ object syncFileSystem {
         value: ToStringLiteral[
               LOCALTOREMOTE, 
               /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
-              Exclude[
-                /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
-                local_to_remote_ | remote_to_local_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  LOCAL_TO_REMOTE :'local_to_remote',   REMOTE_TO_LOCAL :'remote_to_local'} extends keyof {  LOCAL_TO_REMOTE :'local_to_remote',   REMOTE_TO_LOCAL :'remote_to_local'} ? std.Exclude<keyof {  LOCAL_TO_REMOTE :'local_to_remote',   REMOTE_TO_LOCAL :'remote_to_local'}, 'local_to_remote' | 'remote_to_local'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -147,10 +120,7 @@ object syncFileSystem {
         value: ToStringLiteral[
               CONFLICTING, 
               /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-              Exclude[
-                /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-                synced_ | pending_ | conflicting_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -171,10 +141,7 @@ object syncFileSystem {
     var status: ToStringLiteral[
         CONFLICTING, 
         /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-        Exclude[
-          /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-          synced_ | pending_ | conflicting_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
       ]
   }
   object FileStatusInfo {
@@ -184,10 +151,7 @@ object syncFileSystem {
       status: ToStringLiteral[
           CONFLICTING, 
           /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-          Exclude[
-            /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-            synced_ | pending_ | conflicting_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
         ]
     ): FileStatusInfo = {
       val __obj = js.Dynamic.literal(fileEntry = fileEntry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -206,10 +170,7 @@ object syncFileSystem {
         value: ToStringLiteral[
               CONFLICTING, 
               /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-              Exclude[
-                /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
-                synced_ | pending_ | conflicting_
-              ]
+              /* import warning: importer.ImportType#apply Failed type conversion: keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} extends keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'} ? std.Exclude<keyof {  SYNCED :'synced',   PENDING :'pending',   CONFLICTING :'conflicting'}, 'synced' | 'pending' | 'conflicting'> : never */ js.Any
             ]
       ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

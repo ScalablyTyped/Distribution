@@ -1,7 +1,7 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.libTracesOhclMod.HoverInfo
 import typings.plotlyJs.mod.Data
-import typings.plotlyJs.ohclMod.HoverInfo
 import typings.plotlyJs.plotlyJsStrings.candlestick
 import typings.plotlyJs.plotlyJsStrings.end
 import typings.plotlyJs.plotlyJsStrings.legendonly

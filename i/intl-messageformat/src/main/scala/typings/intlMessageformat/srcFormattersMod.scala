@@ -1,7 +1,7 @@
 package typings.intlMessageformat
 
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.intlMessageformat.anon.TypeofDateTimeFormat
 import typings.intlMessageformat.anon.TypeofPluralRules
 import typings.intlMessageformat.intlMessageformatStrings.date
@@ -200,7 +200,15 @@ object srcFormattersMod {
   inline def isFormatXMLElementFn[T](el: PrimitiveType | T): /* is intl-messageformat.intl-messageformat/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormatXMLElementFn")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat.intl-messageformat/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean]
   inline def isFormatXMLElementFn[T](el: FormatXMLElementFn[T, String | T | (js.Array[String | T])]): /* is intl-messageformat.intl-messageformat/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormatXMLElementFn")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat.intl-messageformat/src/formatters.FormatXMLElementFn<T, string | T | std.Array<string | T>> */ Boolean]
   
-  type Format[Source] = String | (/* import warning: importer.ImportType#apply Failed type conversion: intl-messageformat.intl-messageformat/src/formatters.<global>.FormatjsIntl.Formats[Source] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Source extends keyof intl-messageformat.intl-messageformat/src/formatters.<global>.FormatjsIntl.Formats ? intl-messageformat.intl-messageformat/src/formatters.<global>.FormatjsIntl.Formats[Source] : string
+    }}}
+    */
+  @js.native
+  trait Format[Source] extends StObject
   
   type FormatXMLElementFn[T, R] = js.Function1[/* parts */ js.Array[String | T], R]
   

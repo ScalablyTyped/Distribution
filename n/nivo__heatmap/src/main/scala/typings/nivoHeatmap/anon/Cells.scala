@@ -1,14 +1,14 @@
 package typings.nivoHeatmap.anon
 
+import typings.nivoHeatmap.distTypesTypesMod.ComputedCell
+import typings.nivoHeatmap.distTypesTypesMod.HeatMapDatum
 import typings.nivoHeatmap.nivoHeatmapStrings.borderColor
 import typings.nivoHeatmap.nivoHeatmapStrings.color
 import typings.nivoHeatmap.nivoHeatmapStrings.formattedValue
 import typings.nivoHeatmap.nivoHeatmapStrings.label
 import typings.nivoHeatmap.nivoHeatmapStrings.labelTextColor
 import typings.nivoHeatmap.nivoHeatmapStrings.opacity
-import typings.nivoHeatmap.typesMod.ComputedCell
-import typings.nivoHeatmap.typesMod.HeatMapDatum
-import typings.nivoScales.typesMod.ScaleBand
+import typings.nivoScales.distTypesTypesMod.ScaleBand
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

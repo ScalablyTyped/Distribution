@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "BoneLookController")
 @js.native
 open class BoneLookController protected ()
-  extends typings.babylonjs.legacyMod.BoneLookController {
+  extends typings.babylonjs.legacyLegacyMod.BoneLookController {
   /**
     * Create a BoneLookController
     * @param mesh the TransformNode that the bone belongs to
@@ -41,14 +41,14 @@ open class BoneLookController protected ()
     * @param options.adjustRoll
     **/
   def this(
-    mesh: typings.babylonjs.transformNodeMod.TransformNode,
-    bone: typings.babylonjs.boneMod.Bone,
-    target: typings.babylonjs.mathVectorMod.Vector3
+    mesh: typings.babylonjs.meshesTransformNodeMod.TransformNode,
+    bone: typings.babylonjs.bonesBoneMod.Bone,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3
   ) = this()
   def this(
-    mesh: typings.babylonjs.transformNodeMod.TransformNode,
-    bone: typings.babylonjs.boneMod.Bone,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    mesh: typings.babylonjs.meshesTransformNodeMod.TransformNode,
+    bone: typings.babylonjs.bonesBoneMod.Bone,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     options: AdjustPitch
   ) = this()
 }

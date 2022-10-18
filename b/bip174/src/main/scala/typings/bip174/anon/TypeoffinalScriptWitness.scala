@@ -1,7 +1,7 @@
 package typings.bip174.anon
 
-import typings.bip174.interfacesMod.FinalScriptWitness
-import typings.bip174.interfacesMod.KeyValue
+import typings.bip174.srcLibInterfacesMod.FinalScriptWitness
+import typings.bip174.srcLibInterfacesMod.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

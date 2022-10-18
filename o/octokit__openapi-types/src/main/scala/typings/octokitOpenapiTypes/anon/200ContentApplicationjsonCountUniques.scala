@@ -9,11 +9,11 @@ trait `200ContentApplicationjsonCountUniques` extends StObject {
   /** Response */
   var `200`: ContentApplicationjsonCountUniques
   
-  var `403`: Content55
+  var `403`: Content6
 }
 object `200ContentApplicationjsonCountUniques` {
   
-  inline def apply(`200`: ContentApplicationjsonCountUniques, `403`: Content55): `200ContentApplicationjsonCountUniques` = {
+  inline def apply(`200`: ContentApplicationjsonCountUniques, `403`: Content6): `200ContentApplicationjsonCountUniques` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
@@ -24,6 +24,6 @@ object `200ContentApplicationjsonCountUniques` {
     
     inline def set200(value: ContentApplicationjsonCountUniques): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content55): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content6): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
   }
 }

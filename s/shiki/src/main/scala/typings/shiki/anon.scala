@@ -2,7 +2,7 @@ package typings.shiki
 
 import typings.shiki.mod.ILanguageRegistration
 import typings.shiki.mod.Lang
-import typings.vscodeTextmate.typesMod.IRawGrammar
+import typings.vscodeTextmate.releaseTypesMod.IRawGrammar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

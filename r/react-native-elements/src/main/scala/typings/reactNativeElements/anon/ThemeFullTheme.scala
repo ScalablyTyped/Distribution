@@ -1,6 +1,6 @@
 package typings.reactNativeElements.anon
 
-import typings.reactNativeElements.themeMod.FullTheme
+import typings.reactNativeElements.distConfigThemeMod.FullTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

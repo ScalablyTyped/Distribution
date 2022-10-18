@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsDribbbleSquareOutlinedMod.DribbbleSquareOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dribbbleSquareOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/DribbbleSquareOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/DribbbleSquareOutlined", JSImport.Default)
   @js.native
   val default: DribbbleSquareOutlinedIconType = js.native
-  
-  @js.native
-  trait DribbbleSquareOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_DribbbleSquareOutlinedIconType: String = js.native
-  }
   
   type _To = DribbbleSquareOutlinedIconType
   

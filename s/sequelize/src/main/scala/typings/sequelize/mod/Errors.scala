@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait Errors extends StObject {
   
-  /* standard es2022.error */
+  /* standard es5 */
   def AccessDeniedError(): js.Error
   def AccessDeniedError(message: String): js.Error
   def AccessDeniedError(message: String, options: ErrorOptions): js.Error
@@ -20,7 +20,7 @@ trait Errors extends StObject {
   @JSName("AccessDeniedError")
   var AccessDeniedError_Original: AccessDeniedError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ConnectionError(): js.Error
   def ConnectionError(message: String): js.Error
   def ConnectionError(message: String, options: ErrorOptions): js.Error
@@ -28,7 +28,7 @@ trait Errors extends StObject {
   @JSName("ConnectionError")
   var ConnectionError_Original: ConnectionError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ConnectionRefusedError(): js.Error
   def ConnectionRefusedError(message: String): js.Error
   def ConnectionRefusedError(message: String, options: ErrorOptions): js.Error
@@ -36,7 +36,7 @@ trait Errors extends StObject {
   @JSName("ConnectionRefusedError")
   var ConnectionRefusedError_Original: ConnectionRefusedError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ConnectionTimedOutError(): js.Error
   def ConnectionTimedOutError(message: String): js.Error
   def ConnectionTimedOutError(message: String, options: ErrorOptions): js.Error
@@ -44,7 +44,7 @@ trait Errors extends StObject {
   @JSName("ConnectionTimedOutError")
   var ConnectionTimedOutError_Original: ConnectionTimedOutError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def DatabaseError(): js.Error
   def DatabaseError(message: String): js.Error
   def DatabaseError(message: String, options: ErrorOptions): js.Error
@@ -52,7 +52,7 @@ trait Errors extends StObject {
   @JSName("DatabaseError")
   var DatabaseError_Original: DatabaseError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def EmptyResultError(): js.Error
   def EmptyResultError(message: String): js.Error
   def EmptyResultError(message: String, options: ErrorOptions): js.Error
@@ -60,7 +60,7 @@ trait Errors extends StObject {
   @JSName("EmptyResultError")
   var EmptyResultError_Original: EmptyResultError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def Error(): js.Error
   def Error(message: String): js.Error
   def Error(message: String, options: ErrorOptions): js.Error
@@ -68,7 +68,7 @@ trait Errors extends StObject {
   @JSName("Error")
   var Error_Original: BaseError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ExclusionConstraintError(): js.Error
   def ExclusionConstraintError(message: String): js.Error
   def ExclusionConstraintError(message: String, options: ErrorOptions): js.Error
@@ -76,7 +76,7 @@ trait Errors extends StObject {
   @JSName("ExclusionConstraintError")
   var ExclusionConstraintError_Original: ExclusionConstraintError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ForeignKeyConstraintError(): js.Error
   def ForeignKeyConstraintError(message: String): js.Error
   def ForeignKeyConstraintError(message: String, options: ErrorOptions): js.Error
@@ -84,7 +84,7 @@ trait Errors extends StObject {
   @JSName("ForeignKeyConstraintError")
   var ForeignKeyConstraintError_Original: ForeignKeyConstraintError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def HostNotFoundError(): js.Error
   def HostNotFoundError(message: String): js.Error
   def HostNotFoundError(message: String, options: ErrorOptions): js.Error
@@ -92,7 +92,7 @@ trait Errors extends StObject {
   @JSName("HostNotFoundError")
   var HostNotFoundError_Original: HostNotFoundError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def HostNotReachableError(): js.Error
   def HostNotReachableError(message: String): js.Error
   def HostNotReachableError(message: String, options: ErrorOptions): js.Error
@@ -100,7 +100,7 @@ trait Errors extends StObject {
   @JSName("HostNotReachableError")
   var HostNotReachableError_Original: HostNotReachableError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def InvalidConnectionError(): js.Error
   def InvalidConnectionError(message: String): js.Error
   def InvalidConnectionError(message: String, options: ErrorOptions): js.Error
@@ -108,7 +108,7 @@ trait Errors extends StObject {
   @JSName("InvalidConnectionError")
   var InvalidConnectionError_Original: InvalidConnectionError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def TimeoutError(): js.Error
   def TimeoutError(message: String): js.Error
   def TimeoutError(message: String, options: ErrorOptions): js.Error
@@ -116,7 +116,7 @@ trait Errors extends StObject {
   @JSName("TimeoutError")
   var TimeoutError_Original: TimeoutError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def UniqueConstraintError(): js.Error
   def UniqueConstraintError(message: String): js.Error
   def UniqueConstraintError(message: String, options: ErrorOptions): js.Error
@@ -124,13 +124,13 @@ trait Errors extends StObject {
   @JSName("UniqueConstraintError")
   var UniqueConstraintError_Original: UniqueConstraintError
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ValidationError(): js.Error
   def ValidationError(message: String): js.Error
   def ValidationError(message: String, options: ErrorOptions): js.Error
   def ValidationError(message: Unit, options: ErrorOptions): js.Error
   
-  /* standard es2022.error */
+  /* standard es5 */
   def ValidationErrorItem(): js.Error
   def ValidationErrorItem(message: String): js.Error
   def ValidationErrorItem(message: String, options: ErrorOptions): js.Error

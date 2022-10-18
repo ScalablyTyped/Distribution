@@ -5,9 +5,9 @@ import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.IN
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.NONE
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.SIZE
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TOTAL
-import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientDynamodbBrowser.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesWriteRequestMod.WriteRequest
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

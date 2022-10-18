@@ -9,7 +9,7 @@ object fnGetIteratorMod {
   /* was `typeof core.getIterator` */
   inline def apply[T](iterable: js.Iterable[T]): js.Iterator[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[T]]
   
-  @JSImport("core-js/library/fn/get-iterator", JSImport.Namespace)
+  @JSImport("core-js/fn/get-iterator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

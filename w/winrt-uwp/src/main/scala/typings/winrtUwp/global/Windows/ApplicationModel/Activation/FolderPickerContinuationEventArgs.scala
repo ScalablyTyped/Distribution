@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an activated event that fires after the app was suspended for a folder picker operation. */
-@JSGlobal("Windows.ApplicationModel.Activation.FolderPickerContinuationEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Activation.FolderPickerContinuationEventArgs")
 @js.native
-abstract class FolderPickerContinuationEventArgs ()
+open class FolderPickerContinuationEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Activation.FolderPickerContinuationEventArgs {
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet
 
-Typings are for version 1.8
+Typings are for version 1.9
 
 ## Library description:
 JavaScript library for mobile-friendly interactive maps

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cliTableStrings {
   
   @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
   

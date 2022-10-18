@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.CreateServerRequest")
 @js.native
 open class CreateServerRequest protected ()
-  extends typings.postmark.modelsMod.CreateServerRequest {
+  extends typings.postmark.distClientModelsMod.CreateServerRequest {
   def this(
     Name: String,
     Color: js.UndefOr[String],
@@ -21,10 +21,10 @@ open class CreateServerRequest protected ()
     PostFirstOpenOnly: js.UndefOr[Boolean],
     InboundSpamThreshold: js.UndefOr[Double],
     TrackOpens: js.UndefOr[Boolean],
-    TrackLinks: js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkTrackingOptions],
+    TrackLinks: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions],
     IncludeBounceContentInHook: js.UndefOr[Boolean],
     EnableSmtpApiErrorHooks: js.UndefOr[Boolean],
     InboundDomain: js.UndefOr[String],
-    DeliveryType: js.UndefOr[typings.postmark.messageSupportingTypesMod.ServerDeliveryTypes]
+    DeliveryType: js.UndefOr[typings.postmark.distClientModelsMessageSupportingTypesMod.ServerDeliveryTypes]
   ) = this()
 }

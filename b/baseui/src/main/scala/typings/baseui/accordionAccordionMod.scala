@@ -1,10 +1,10 @@
 package typings.baseui
 
+import typings.baseui.accordionTypesMod.AccordionProps
+import typings.baseui.accordionTypesMod.AccordionState
+import typings.baseui.accordionTypesMod.StateChangeType
 import typings.baseui.anon.Expanded
 import typings.baseui.anon.PartialAccordionProps
-import typings.baseui.typesMod.AccordionProps
-import typings.baseui.typesMod.AccordionState
-import typings.baseui.typesMod.StateChangeType
 import typings.react.mod.Component
 import typings.react.mod.Key
 import typings.react.mod.RefObject

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.DidCloseNotebookDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.DidCloseNotebookDocumentParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashdidClose
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashsync
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object DidCloseNotebookDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidCloseNotebookDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidCloseNotebookDocumentNotification.method")
   @js.native
@@ -24,5 +24,5 @@ object DidCloseNotebookDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidCloseNotebookDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidCloseNotebookDocumentParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidCloseNotebookDocumentParams, Unit] = js.native
 }

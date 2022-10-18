@@ -14,7 +14,6 @@ import typings.chromeApps.chromeAppsStrings.granted_
 import typings.chromeApps.chromeAppsStrings.image_
 import typings.chromeApps.chromeAppsStrings.list_
 import typings.chromeApps.chromeAppsStrings.progress_
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -149,10 +148,7 @@ object notifications {
       /* level */ ToStringLiteral[
         DENIED, 
         /* keyof chrome-apps.anon.DENIED */ GRANTED | typings.chromeApps.chromeAppsStrings.DENIED, 
-        Exclude[
-          /* keyof chrome-apps.anon.DENIED */ GRANTED | typings.chromeApps.chromeAppsStrings.DENIED, 
-          granted_ | denied_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  GRANTED :'granted',   DENIED :'denied'} extends keyof {  GRANTED :'granted',   DENIED :'denied'} ? std.Exclude<keyof {  GRANTED :'granted',   DENIED :'denied'}, 'granted' | 'denied'> : never */ js.Any
       ], 
       Unit
     ]

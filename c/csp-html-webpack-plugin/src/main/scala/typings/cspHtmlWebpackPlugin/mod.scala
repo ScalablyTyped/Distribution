@@ -132,7 +132,15 @@ object mod {
   
   // HtmlWebpackPlugin v3 and v4 use different hook interfaces. Figure out
   // which we're using and infer the generic type variable inside.
-  type HtmlPluginData = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    html-webpack-plugin.html-webpack-plugin.Hooks extends csp-html-webpack-plugin.csp-html-webpack-plugin.HtmlPluginDataHookV3<infer T> ? T : html-webpack-plugin.html-webpack-plugin.Hooks extends csp-html-webpack-plugin.csp-html-webpack-plugin.HtmlPluginDataHookV4<infer U> ? U : any
+    }}}
+    */
+  @js.native
+  trait HtmlPluginData extends StObject
   
   // Helpers for extracting the relevant generic types from
   // HtmlWebpackPlugin.Hooks.

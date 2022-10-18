@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined @reach/menu-button.@reach/menu-button/dist/declarations/src.MenuContextValue & {  isOpen :boolean} */
+  /* Inlined @reach/menu-button.@reach/menu-button.MenuContextValue & {  isOpen :boolean} */
   trait MenuContextValueisOpenboo extends StObject {
     
     var isExpanded: Boolean

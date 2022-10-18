@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialChordOptions
-import typings.antvG2plot.chordTypesMod.ChordOptions
+import typings.antvG2plot.libPlotsChordTypesMod.ChordOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Chord")
 @js.native
 open class Chord protected ()
-  extends typings.antvG2plot.chordMod.Chord {
+  extends typings.antvG2plot.libPlotsChordMod.Chord {
   def this(container: String, options: ChordOptions) = this()
   def this(container: HTMLElement, options: ChordOptions) = this()
 }

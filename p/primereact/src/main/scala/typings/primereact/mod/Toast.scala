@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.toastMod.ToastProps
+import typings.primereact.toastToastMod.ToastProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Toast")
 @js.native
 open class Toast protected ()
-  extends typings.primereact.toastMod.Toast {
+  extends typings.primereact.toastToastMod.Toast {
   def this(props: ToastProps) = this()
   /**
     * @deprecated

@@ -45,20 +45,37 @@ object anon {
   
   trait Color extends StObject {
     
+    var color: String
+  }
+  object Color {
+    
+    inline def apply(color: String): Color = {
+      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Color]
+    }
+    
+    extension [Self <: Color](x: Self) {
+      
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Key extends StObject {
+    
     var color: js.UndefOr[String] = js.undefined
     
     var key: String
     
     var value: Double
   }
-  object Color {
+  object Key {
     
-    inline def apply(key: String, value: Double): Color = {
+    inline def apply(key: String, value: Double): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Color]
+      __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Color](x: Self) {
+    extension [Self <: Key](x: Self) {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -67,23 +84,6 @@ object anon {
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ColorString extends StObject {
-    
-    var color: String
-  }
-  object ColorString {
-    
-    inline def apply(color: String): ColorString = {
-      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ColorString]
-    }
-    
-    extension [Self <: ColorString](x: Self) {
-      
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
   

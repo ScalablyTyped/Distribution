@@ -2,9 +2,9 @@ package typings.ethersprojectJsonWallets
 
 import typings.ethersprojectAbstractSigner.mod.ExternallyOwnedAccount
 import typings.ethersprojectBytes.mod.Bytes
-import typings.ethersprojectJsonWallets.keystoreMod.EncryptOptions
-import typings.ethersprojectJsonWallets.keystoreMod.KeystoreAccount
-import typings.ethersprojectJsonWallets.keystoreMod.ProgressCallback
+import typings.ethersprojectJsonWallets.libKeystoreMod.EncryptOptions
+import typings.ethersprojectJsonWallets.libKeystoreMod.KeystoreAccount
+import typings.ethersprojectJsonWallets.libKeystoreMod.ProgressCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

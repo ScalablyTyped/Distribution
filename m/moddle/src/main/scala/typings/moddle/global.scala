@@ -79,7 +79,7 @@ object global {
       def this(packages: js.Array[PackageDefinition], properties: typings.moddle.mod.Properties) = this()
     }
     
-    inline def coerceType[T /* <: BuiltInTypes | String */, V](`type`: T, value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
+    inline def coerceType[T /* <: BuiltInTypes | String */, V](`type`: T, value: V): /* import warning: importer.ImportType#apply Failed type conversion: moddle.moddle.ModdleTypesMap extends std.Record<T, infer E> ? E : V */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: moddle.moddle.ModdleTypesMap extends std.Record<T, infer E> ? E : V */ js.Any]
     
     inline def isBuiltInType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuiltInType")().asInstanceOf[Boolean]
     inline def isBuiltInType(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuiltInType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]

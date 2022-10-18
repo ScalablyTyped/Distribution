@@ -1,9 +1,9 @@
 package typings.reactMdAutocomplete
 
-import typings.reactMdAutocomplete.typesMod.AutoCompleteData
-import typings.reactMdTransition.typesMod.TransitionEnterHandler
-import typings.reactMdTransition.typesMod.TransitionExitHandler
-import typings.reactMdUtils.searchUtilsMod.GetItemValue_
+import typings.reactMdAutocomplete.typesTypesMod.AutoCompleteData
+import typings.reactMdTransition.typesTypesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesTypesMod.TransitionExitHandler
+import typings.reactMdUtils.typesSearchUtilsMod.GetItemValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

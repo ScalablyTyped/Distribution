@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "MasterAudio")
 @js.native
 open class MasterAudio ()
-  extends typings.blackEngine.masterAudioMod.MasterAudio
+  extends typings.blackEngine.audioMasterAudioMod.MasterAudio

@@ -548,9 +548,9 @@ object mod {
     val STRICT: String = js.native
   }
   
-  @JSImport("tough-cookie", "Store")
+  /* note: abstract class */ @JSImport("tough-cookie", "Store")
   @js.native
-  abstract class Store () extends StObject {
+  open class Store () extends StObject {
     
     def findCookie(
       domain: String,

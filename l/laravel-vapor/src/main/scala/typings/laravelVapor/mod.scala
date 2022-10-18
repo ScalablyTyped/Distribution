@@ -27,13 +27,19 @@ object mod extends Shortcut {
     
     var bucket: js.UndefOr[String] = js.undefined
     
+    var cancelToken: js.UndefOr[String] = js.undefined
+    
     var contentType: js.UndefOr[String] = js.undefined
+    
+    var data: js.UndefOr[Any] = js.undefined
     
     var expires: js.UndefOr[String] = js.undefined
     
     var headers: js.UndefOr[Any] = js.undefined
     
     var options: js.UndefOr[Any] = js.undefined
+    
+    var progress: js.UndefOr[js.Function1[/* value */ Double, js.UndefOr[Unit]]] = js.undefined
     
     var visibility: js.UndefOr[String] = js.undefined
   }
@@ -54,9 +60,17 @@ object mod extends Shortcut {
       
       inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
+      inline def setCancelToken(value: String): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
+      
+      inline def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
+      
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -69,6 +83,10 @@ object mod extends Shortcut {
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setProgress(value: /* value */ Double => js.UndefOr[Unit]): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+      
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
       inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       

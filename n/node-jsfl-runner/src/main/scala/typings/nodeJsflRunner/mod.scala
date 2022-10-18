@@ -1,6 +1,7 @@
 package typings.nodeJsflRunner
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,28 +16,12 @@ object mod {
     jsfl: JSFL,
     fileName: String,
     initParams: js.Array[Any],
-    callback: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ]
+    callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSFL")(jsfl.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], initParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def deleteJSFL(
-    fileName: String,
-    callback: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteJSFL")(fileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deleteJSFL(fileName: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteJSFL")(fileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def runJSFL(
-    flashLocation: String,
-    fileName: String,
-    callback: js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runJSFL")(flashLocation.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def runJSFL(flashLocation: String, fileName: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runJSFL")(flashLocation.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait JSFL
     extends StObject

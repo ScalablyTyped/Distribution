@@ -1,6 +1,5 @@
 package typings.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +21,5 @@ trait IStandaloneCodeEditor
   def createContextKey(key: String, defaultValue: Double): IContextKey[Double] = js.native
   def createContextKey(key: String, defaultValue: Null): IContextKey[Null] = js.native
   def createContextKey(key: String, defaultValue: Unit): IContextKey[Unit] = js.native
-  def createContextKey[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: null | undefined | boolean | number | string}
-    */ typings.monacoEditor.monacoEditorStrings.IStandaloneCodeEditor & TopLevel[Any] */](key: String, defaultValue: T): IContextKey[T] = js.native
+  def createContextKey[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: null | undefined | boolean | number | string} */ js.Any */](key: String, defaultValue: T): IContextKey[T] = js.native
 }

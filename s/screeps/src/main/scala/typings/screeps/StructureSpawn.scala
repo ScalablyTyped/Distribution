@@ -16,8 +16,7 @@ trait StructureSpawn
   extends StObject
      with OwnedStructure[STRUCTURE_SPAWN]
      with AnyOwnedStructure
-     with AnyStoreStructure
-     with ConcreteStructure[Any] {
+     with AnyStoreStructure {
   
   /**
     * Check if a creep can be created.

@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.utilsMod.ColorRepresentation
+import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [color2=0x888888]
   */
 open class GridHelper ()
-  extends typings.three.threeMod.GridHelper {
+  extends typings.three.srcThreeMod.GridHelper {
   def this(size: Double) = this()
   def this(size: Double, divisions: Double) = this()
   def this(size: Unit, divisions: Double) = this()

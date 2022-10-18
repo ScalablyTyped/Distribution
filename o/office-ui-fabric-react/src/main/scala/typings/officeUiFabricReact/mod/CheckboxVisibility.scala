@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CheckboxVisibility extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility & Double
+  ] = js.native
   
-  /* 1 */ val always: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.always & Double = js.native
+  /* 1 */ val always: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility.always & Double = js.native
   
-  /* 2 */ val hidden: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.hidden & Double = js.native
+  /* 2 */ val hidden: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility.hidden & Double = js.native
   
-  /* 0 */ val onHover: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.onHover & Double = js.native
+  /* 0 */ val onHover: typings.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility.onHover & Double = js.native
 }

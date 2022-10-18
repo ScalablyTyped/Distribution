@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.mathColorMod.Color4
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

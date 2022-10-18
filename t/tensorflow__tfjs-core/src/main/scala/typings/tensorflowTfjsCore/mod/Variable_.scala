@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@tensorflow/tfjs-core", "Variable")
 @js.native
 open class Variable_[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */] protected ()
-  extends typings.tensorflowTfjsCore.baseMod.Variable_[R] {
+  extends typings.tensorflowTfjsCore.distBaseMod.Variable_[R] {
   def this(initialValue: Tensor[R], trainable: Boolean, name: String, tensorId: Double) = this()
 }

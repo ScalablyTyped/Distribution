@@ -178,14 +178,17 @@ import typings.monacoEditor.mod.editor.EditorOption.wrappingInfo
 import typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy
 import typings.monacoEditor.mod.editor.EditorWrappingInfo
 import typings.monacoEditor.mod.editor.FontInfo
+import typings.monacoEditor.mod.editor.IActionDescriptor
 import typings.monacoEditor.mod.editor.ICodeEditor
 import typings.monacoEditor.mod.editor.IColorizerElementOptions
 import typings.monacoEditor.mod.editor.IColorizerOptions
+import typings.monacoEditor.mod.editor.ICommandDescriptor
 import typings.monacoEditor.mod.editor.IDiffEditor
 import typings.monacoEditor.mod.editor.IDiffNavigator
 import typings.monacoEditor.mod.editor.IDiffNavigatorOptions
 import typings.monacoEditor.mod.editor.IEditorOption
 import typings.monacoEditor.mod.editor.IEditorOverrideServices
+import typings.monacoEditor.mod.editor.IKeybindingRule
 import typings.monacoEditor.mod.editor.IMarker
 import typings.monacoEditor.mod.editor.IMarkerData
 import typings.monacoEditor.mod.editor.IStandaloneCodeEditor
@@ -1471,6 +1474,14 @@ object anon {
     var FontInfo: Instantiable0[typings.monacoEditor.mod.editor.FontInfo] = js.native
     
     var TextModelResolvedOptions: Instantiable0[typings.monacoEditor.mod.editor.TextModelResolvedOptions] = js.native
+    
+    def addCommand(descriptor: ICommandDescriptor): IDisposable = js.native
+    
+    def addEditorAction(descriptor: IActionDescriptor): IDisposable = js.native
+    
+    def addKeybindingRule(rule: IKeybindingRule): IDisposable = js.native
+    
+    def addKeybindingRules(rules: js.Array[IKeybindingRule]): IDisposable = js.native
     
     def colorize(text: String, languageId: String, options: IColorizerOptions): js.Promise[String] = js.native
     

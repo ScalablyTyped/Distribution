@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsCouponSmallMod.CouponSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object couponSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/CouponSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/CouponSmall", JSImport.Default)
   @js.native
   val default: FC[CouponSmallProps] = js.native
-  
-  trait CouponSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object CouponSmallProps {
-    
-    inline def apply(): CouponSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CouponSmallProps]
-    }
-    
-    extension [Self <: CouponSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[CouponSmallProps]
   

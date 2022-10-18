@@ -1,7 +1,7 @@
 package typings.nivoArcs.anon
 
-import typings.nivoArcs.typesMod.ArcLinkWithDatum
-import typings.nivoArcs.typesTypesMod.DatumWithArc
+import typings.nivoArcs.distTypesArcLinkLabelsTypesMod.ArcLinkWithDatum
+import typings.nivoArcs.distTypesTypesMod.DatumWithArc
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

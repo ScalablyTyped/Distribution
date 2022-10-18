@@ -10,7 +10,7 @@ object tracker {
   @JSImport("cassandra-driver", "tracker.RequestLogger")
   @js.native
   open class RequestLogger protected ()
-    extends typings.cassandraDriver.trackerMod.tracker.RequestLogger {
+    extends typings.cassandraDriver.libTrackerMod.tracker.RequestLogger {
     def this(options: LogErroredRequests) = this()
   }
 }

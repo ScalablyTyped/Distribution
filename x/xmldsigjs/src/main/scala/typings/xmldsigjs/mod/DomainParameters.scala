@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "DomainParameters")
 @js.native
 open class DomainParameters ()
-  extends typings.xmldsigjs.keyInfosMod.DomainParameters {
+  extends typings.xmldsigjs.buildTypesXmlKeyInfosMod.DomainParameters {
   def this(properties: js.Object) = this()
 }

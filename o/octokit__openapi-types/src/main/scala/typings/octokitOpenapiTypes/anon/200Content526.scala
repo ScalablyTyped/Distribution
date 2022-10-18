@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content526` extends StObject {
   
-  /** if repository contains content */
+  /** Response */
   var `200`: Content526
   
-  var `403`: Content55
-  
-  var `404`: Content55
+  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
 }
 object `200Content526` {
   
-  inline def apply(`200`: Content526, `403`: Content55, `404`: Content55): `200Content526` = {
+  inline def apply(
+    `200`: Content526,
+    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  ): `200Content526` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content526`]
   }
@@ -27,8 +27,8 @@ object `200Content526` {
     
     inline def set200(value: Content526): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content55): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
-    
-    inline def set404(value: Content55): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

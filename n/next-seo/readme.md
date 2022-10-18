@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-seo
 
-Typings are for version 1.10
+Typings are for version 5.6.0
 
 ## Library description:
 SEO plugin for Next.js projects
@@ -10,10 +10,10 @@ SEO plugin for Next.js projects
 | ------------------ | :-------------: |
 | Full name          | next-seo |
 | Keywords           | next.js, seo, react, node, ssr |
-| # releases         | 43 |
-| # dependents       | 18 |
-| # downloads        | 2180686 |
-| # stars            | 0 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 1097220.0 |
+| # stars            | 5585.0 |
 
 ## Links
 - [Homepage](https://github.com/garmeeh/next-seo#readme)
@@ -24,7 +24,7 @@ SEO plugin for Next.js projects
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

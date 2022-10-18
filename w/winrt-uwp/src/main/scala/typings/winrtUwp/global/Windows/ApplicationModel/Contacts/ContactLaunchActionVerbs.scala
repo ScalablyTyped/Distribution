@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is launched to perform an action to a contact. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs")
 @js.native
-abstract class ContactLaunchActionVerbs ()
+open class ContactLaunchActionVerbs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs
 object ContactLaunchActionVerbs {

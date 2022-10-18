@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,44 +17,32 @@ trait Document extends StObject {
   
   /** Output only. The footers in the document, keyed by footer ID. */
   var footers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer} */ js.Any
   ] = js.undefined
   
   /** Output only. The footnotes in the document, keyed by footnote ID. */
   var footnotes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote} */ js.Any
   ] = js.undefined
   
   /** Output only. The headers in the document, keyed by header ID. */
   var headers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header} */ js.Any
   ] = js.undefined
   
   /** Output only. The inline objects in the document, keyed by object ID. */
   var inlineObjects: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject} */ js.Any
   ] = js.undefined
   
   /** Output only. The lists in the document, keyed by list ID. */
   var lists: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List} */ js.Any
   ] = js.undefined
   
   /** Output only. The named ranges in the document, keyed by name. */
   var namedRanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges} */ js.Any
   ] = js.undefined
   
   /** Output only. The named styles of the document. */
@@ -63,9 +50,7 @@ trait Document extends StObject {
   
   /** Output only. The positioned objects in the document, keyed by object ID. */
   var positionedObjects: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject} */ js.Any
   ] = js.undefined
   
   /**
@@ -79,16 +64,12 @@ trait Document extends StObject {
   
   /** Output only. The suggested changes to the style of the document, keyed by suggestion ID. */
   var suggestedDocumentStyleChanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle} */ js.Any
   ] = js.undefined
   
   /** Output only. The suggested changes to the named styles of the document, keyed by suggestion ID. */
   var suggestedNamedStylesChanges: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles} */ js.Any
   ] = js.undefined
   
   /** Output only. The suggestions view mode applied to the document. Note: When editing a document, changes must be based on a document with SUGGESTIONS_INLINE. */
@@ -119,49 +100,37 @@ object Document {
     inline def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
     
     inline def setFooters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footer} */ js.Any
     ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
     
     inline def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
     
     inline def setFootnotes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Footnote} */ js.Any
     ): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
     inline def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
     
     inline def setHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.Header} */ js.Any
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     inline def setInlineObjects(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.InlineObject} */ js.Any
     ): Self = StObject.set(x, "inlineObjects", value.asInstanceOf[js.Any])
     
     inline def setInlineObjectsUndefined: Self = StObject.set(x, "inlineObjects", js.undefined)
     
     inline def setLists(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.List} */ js.Any
     ): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
     inline def setNamedRanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.NamedRanges} */ js.Any
     ): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
@@ -171,9 +140,7 @@ object Document {
     inline def setNamedStylesUndefined: Self = StObject.set(x, "namedStyles", js.undefined)
     
     inline def setPositionedObjects(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.PositionedObject} */ js.Any
     ): Self = StObject.set(x, "positionedObjects", value.asInstanceOf[js.Any])
     
     inline def setPositionedObjectsUndefined: Self = StObject.set(x, "positionedObjects", js.undefined)
@@ -183,17 +150,13 @@ object Document {
     inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     inline def setSuggestedDocumentStyleChanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedDocumentStyle} */ js.Any
     ): Self = StObject.set(x, "suggestedDocumentStyleChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedDocumentStyleChangesUndefined: Self = StObject.set(x, "suggestedDocumentStyleChanges", js.undefined)
     
     inline def setSuggestedNamedStylesChanges(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedNamedStyles} */ js.Any
     ): Self = StObject.set(x, "suggestedNamedStylesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedNamedStylesChangesUndefined: Self = StObject.set(x, "suggestedNamedStylesChanges", js.undefined)

@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Background {
   
   /** Provides information about a BluetoothLEAdvertisementPublisher trigger. */
-  @JSGlobal("Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementPublisherTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementPublisherTriggerDetails")
   @js.native
-  abstract class BluetoothLEAdvertisementPublisherTriggerDetails ()
+  open class BluetoothLEAdvertisementPublisherTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementPublisherTriggerDetails {
     
@@ -31,9 +31,9 @@ object Background {
   }
   
   /** Provides information about a BluetoothLEAdvertisementWatcher trigger. */
-  @JSGlobal("Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementWatcherTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementWatcherTriggerDetails")
   @js.native
-  abstract class BluetoothLEAdvertisementWatcherTriggerDetails ()
+  open class BluetoothLEAdvertisementWatcherTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementWatcherTriggerDetails {
     
@@ -51,9 +51,9 @@ object Background {
   }
   
   /** Provides information about the Bluetooth LE device that caused this trigger to fire. */
-  @JSGlobal("Windows.Devices.Bluetooth.Background.GattCharacteristicNotificationTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Background.GattCharacteristicNotificationTriggerDetails")
   @js.native
-  abstract class GattCharacteristicNotificationTriggerDetails ()
+  open class GattCharacteristicNotificationTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Background.GattCharacteristicNotificationTriggerDetails {
     
@@ -67,9 +67,9 @@ object Background {
   }
   
   /** Provides information about the Bluetooth device that caused this trigger to fire. */
-  @JSGlobal("Windows.Devices.Bluetooth.Background.RfcommConnectionTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Background.RfcommConnectionTriggerDetails")
   @js.native
-  abstract class RfcommConnectionTriggerDetails ()
+  open class RfcommConnectionTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Background.RfcommConnectionTriggerDetails {
     
@@ -87,9 +87,9 @@ object Background {
   }
   
   /** Provides information about incoming RFCOMM connections. If an app wants the system to listen for incoming connections on behalf of an RfcommConnectionTrigger , the app must create this object and attach it to the RfcommConnectionTrigger. */
-  @JSGlobal("Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation")
   @js.native
-  abstract class RfcommInboundConnectionInformation ()
+  open class RfcommInboundConnectionInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation {
     
@@ -107,9 +107,9 @@ object Background {
   }
   
   /** Provides information for RFCOMM outbound connections. If an app wants the system to create outbound connections on its behalf, the app must create this object and attach it to the RfcommConnectionTrigger . */
-  @JSGlobal("Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation")
   @js.native
-  abstract class RfcommOutboundConnectionInformation ()
+  open class RfcommOutboundConnectionInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation {
     

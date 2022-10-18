@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Raw extends StObject {
   
-  var raw: String
+  var `protected`: Boolean
   
-  var rendered: String
+  var raw: String
 }
 object Raw {
   
-  inline def apply(raw: String, rendered: String): Raw = {
-    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], rendered = rendered.asInstanceOf[js.Any])
+  inline def apply(`protected`: Boolean, raw: String): Raw = {
+    val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
+    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Raw]
   }
   
   extension [Self <: Raw](x: Self) {
     
-    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    inline def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }
 }

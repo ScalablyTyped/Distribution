@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.messageMod.MessageProps
+import typings.primereact.messageMessageMod.MessageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Message")
 @js.native
 open class Message protected ()
-  extends typings.primereact.messageMod.Message {
+  extends typings.primereact.messageMessageMod.Message {
   def this(props: MessageProps) = this()
   /**
     * @deprecated

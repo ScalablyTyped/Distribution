@@ -1,7 +1,7 @@
 package typings.plottable.anon
 
-import typings.plottable.stackingUtilsMod.StackExtent
-import typings.plottable.utilsMod.Map
+import typings.plottable.buildSrcUtilsMod.Map
+import typings.plottable.buildSrcUtilsStackingUtilsMod.StackExtent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

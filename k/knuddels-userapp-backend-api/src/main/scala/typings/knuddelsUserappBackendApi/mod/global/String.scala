@@ -85,8 +85,8 @@ trait String extends StObject {
   /**
     * @see https://developer.knuddels.de/docs/classes/String.html#method_replaceAll
     */
-  def replaceAll(search: java.lang.String, replacement: java.lang.String): java.lang.String = js.native
-  def replaceAll(search: js.RegExp, replacement: java.lang.String): java.lang.String = js.native
+  def replaceAll(regexp: java.lang.String, replacement: java.lang.String): java.lang.String = js.native
+  def replaceAll(regexp: js.RegExp, replacement: java.lang.String): java.lang.String = js.native
   
   /**
     * @see https://developer.knuddels.de/docs/classes/String.html#method_startsWith

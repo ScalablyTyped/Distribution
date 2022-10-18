@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "CanvasTexture")
 @js.native
 open class CanvasTexture protected ()
-  extends typings.three.threeMod.CanvasTexture {
+  extends typings.three.srcThreeMod.CanvasTexture {
   /**
     * @param canvas
     * @param [format=THREE.RGBAFormat]

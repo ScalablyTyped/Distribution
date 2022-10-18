@@ -31,7 +31,7 @@ trait Filesize extends StObject {
   
   var path: String
   
-  var repository: Branchesurl
+  var repository: Blobsurl
   
   var score: Double
   
@@ -49,7 +49,7 @@ object Filesize {
     html_url: String,
     name: String,
     path: String,
-    repository: Branchesurl,
+    repository: Blobsurl,
     score: Double,
     sha: String,
     url: String
@@ -88,7 +88,7 @@ object Filesize {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Blobsurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

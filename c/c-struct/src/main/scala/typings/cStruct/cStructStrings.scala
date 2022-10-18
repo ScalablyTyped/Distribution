@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cStructStrings {
   
   @js.native
-  sealed trait SchemaDefinition extends StObject
-  inline def SchemaDefinition: SchemaDefinition = "SchemaDefinition".asInstanceOf[SchemaDefinition]
-  
-  @js.native
   sealed trait b extends StObject
   inline def b: b = "b".asInstanceOf[b]
   

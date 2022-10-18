@@ -1,7 +1,6 @@
 package typings.uifabricFoundation
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiTheme.ithemeMod.ITheme
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
 import typings.react.mod.ComponentType
 import typings.react.mod.ElementType
 import typings.react.mod.FunctionComponent
@@ -9,16 +8,32 @@ import typings.react.mod.PropsWithChildren
 import typings.std.ReturnType
 import typings.uifabricFoundation.anon.Slots
 import typings.uifabricFoundation.libIcomponentMod.IComponentStyles
-import typings.uifabricMergeStyles.istyleMod.IStyle
+import typings.uifabricMergeStyles.libIstyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libIslotsMod {
   
-  type ExtractProps[TUnion] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TUnion extends @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotProp<infer TProps, never> ? TProps : never
+    }}}
+    */
+  @js.native
+  trait ExtractProps[TUnion] extends StObject
   
-  type ExtractShorthand[TUnion] = String | Double | Boolean
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TUnion extends boolean ? boolean : TUnion extends number ? number : TUnion extends string ? string : never
+    }}}
+    */
+  @js.native
+  trait ExtractShorthand[TUnion] extends StObject
   
   trait IDefaultSlotProps[TSlots] extends StObject {
     
@@ -86,9 +101,15 @@ object libIslotsMod {
     }
   }
   
-  type ISlotDefinition[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ slot in keyof TSlots ]: react.react.ElementType<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.ISlotDefinition & TopLevel[TSlots]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ slot in keyof TSlots ]: react.react.ElementType<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
+    }}}
+    */
+  @js.native
+  trait ISlotDefinition[TSlots] extends StObject
   
   type ISlotFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] = js.Function5[
     /* componentProps */ TProps & IProcessedSlotProps, 
@@ -134,9 +155,15 @@ object libIslotsMod {
     ReturnType[FunctionComponent[TProps]]
   ]
   
-  type ISlots[TSlots] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ slot in keyof TSlots ]: @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlot<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
-    */ typings.uifabricFoundation.uifabricFoundationStrings.ISlots & TopLevel[TSlots]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ slot in keyof TSlots ]: @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlot<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[slot]>>}
+    }}}
+    */
+  @js.native
+  trait ISlots[TSlots] extends StObject
   
   type ISlottableComponentType[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */] = ComponentType[TProps] & (ISlotCreator[TProps, TShorthandProp])
   

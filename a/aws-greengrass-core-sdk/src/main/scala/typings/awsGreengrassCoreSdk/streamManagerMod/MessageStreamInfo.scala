@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable6
 import typings.awsGreengrassCoreSdk.anon.TypeofMessageStreamInfoEx
 import typings.awsGreengrassCoreSdk.anon.TypeofMessageStreamInfoSt
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
-import typings.awsGreengrassCoreSdk.messageStreamInfoMod.MessageStreamInfoExportStatuses
-import typings.awsGreengrassCoreSdk.messageStreamInfoMod.MessageStreamInfoStorageStatus
+import typings.awsGreengrassCoreSdk.streamManagerDataMessageStreamInfoMod.MessageStreamInfoExportStatuses
+import typings.awsGreengrassCoreSdk.streamManagerDataMessageStreamInfoMod.MessageStreamInfoStorageStatus
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,12 +21,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param exportStatuses
   */
 open class MessageStreamInfo ()
-  extends typings.awsGreengrassCoreSdk.clientMod.MessageStreamInfo {
-  def this(definition: typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition) = this()
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.MessageStreamInfo {
+  def this(definition: typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition) = this()
   def this(definition: Null, storageStatus: MessageStreamInfoStorageStatus) = this()
   def this(definition: Unit, storageStatus: MessageStreamInfoStorageStatus) = this()
   def this(
-    definition: typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition,
+    definition: typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition,
     storageStatus: MessageStreamInfoStorageStatus
   ) = this()
   def this(definition: Null, storageStatus: Null, exportStatuses: js.Array[MessageStreamInfoExportStatuses]) = this()
@@ -44,17 +44,17 @@ open class MessageStreamInfo ()
     exportStatuses: js.Array[MessageStreamInfoExportStatuses]
   ) = this()
   def this(
-    definition: typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition,
+    definition: typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition,
     storageStatus: Null,
     exportStatuses: js.Array[MessageStreamInfoExportStatuses]
   ) = this()
   def this(
-    definition: typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition,
+    definition: typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition,
     storageStatus: Unit,
     exportStatuses: js.Array[MessageStreamInfoExportStatuses]
   ) = this()
   def this(
-    definition: typings.awsGreengrassCoreSdk.dataMod.MessageStreamDefinition,
+    definition: typings.awsGreengrassCoreSdk.streamManagerDataMod.MessageStreamDefinition,
     storageStatus: MessageStreamInfoStorageStatus,
     exportStatuses: js.Array[MessageStreamInfoExportStatuses]
   ) = this()
@@ -114,7 +114,7 @@ object MessageStreamInfo {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: Record[String, Any]): typings.awsGreengrassCoreSdk.messageStreamInfoMod.MessageStreamInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.messageStreamInfoMod.MessageStreamInfo]
+  inline def fromMap(d: Record[String, Any]): typings.awsGreengrassCoreSdk.streamManagerDataMessageStreamInfoMod.MessageStreamInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMessageStreamInfoMod.MessageStreamInfo]
   
   @JSImport("aws-greengrass-core-sdk/stream-manager", "MessageStreamInfo.typesMap")
   @js.native

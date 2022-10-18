@@ -1,8 +1,8 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.addressMod.address.AddressType
 import typings.mangopay2NodejsSdk.anon.PartialClientData
-import typings.mangopay2NodejsSdk.clientMod.client.ClientData
+import typings.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressType
+import typings.mangopay2NodejsSdk.typingsModelsClientMod.client.ClientData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +78,7 @@ open class Client ()
     * The Categorization of your platform, in terms of Business Type and Sector
     */
   /* CompleteClass */
-  var PlatformCategorization: typings.mangopay2NodejsSdk.clientMod.client.PlatformCategorization = js.native
+  var PlatformCategorization: typings.mangopay2NodejsSdk.typingsModelsClientMod.client.PlatformCategorization = js.native
   
   /**
     * A description of what your platform does

@@ -1,6 +1,5 @@
 package typings.smooch
 
-import org.scalablytyped.runtime.TopLevel
 import typings.smooch.anon.ConversationDataavatarUrl
 import typings.smooch.anon.PartialConversation
 import typings.smooch.anon.PartialNullableConversati
@@ -360,7 +359,13 @@ object mod {
     */
   inline def updateUser(user: PartialUser): js.Promise[Status] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateUser")(user.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Status]]
   
-  type Nullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: T[P] | null}
-    */ typings.smooch.smoochStrings.Nullable & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: T[P] | null}
+    }}}
+    */
+  @js.native
+  trait Nullable[T] extends StObject
 }

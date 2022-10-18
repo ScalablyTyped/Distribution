@@ -43,7 +43,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.swipeActionSwipeActionMod.SwipeActionRef
+import typings.antdMobile.esComponentsSwipeActionSwipeActionMod.SwipeActionRef
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.MouseEvent
@@ -302,11 +302,11 @@ trait rightActionsArrayActionun extends StObject {
   
   var key: js.UndefOr[Key | Null] = js.undefined
   
-  var leftActions: js.UndefOr[js.Array[typings.antdMobile.swipeActionSwipeActionMod.Action]] = js.undefined
+  var leftActions: js.UndefOr[js.Array[typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action]] = js.undefined
   
   var onAction: js.UndefOr[
     js.Function2[
-      /* action */ typings.antdMobile.swipeActionSwipeActionMod.Action, 
+      /* action */ typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action, 
       /* e */ MouseEvent[Element, NativeMouseEvent], 
       Unit
     ]
@@ -316,7 +316,7 @@ trait rightActionsArrayActionun extends StObject {
   
   var ref: js.UndefOr[Ref[SwipeActionRef]] = js.undefined
   
-  var rightActions: js.UndefOr[js.Array[typings.antdMobile.swipeActionSwipeActionMod.Action]] = js.undefined
+  var rightActions: js.UndefOr[js.Array[typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action]] = js.undefined
   
   var stopPropagation: js.UndefOr[js.Array[click]] = js.undefined
   
@@ -549,14 +549,14 @@ object rightActionsArrayActionun {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLeftActions(value: js.Array[typings.antdMobile.swipeActionSwipeActionMod.Action]): Self = StObject.set(x, "leftActions", value.asInstanceOf[js.Any])
+    inline def setLeftActions(value: js.Array[typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action]): Self = StObject.set(x, "leftActions", value.asInstanceOf[js.Any])
     
     inline def setLeftActionsUndefined: Self = StObject.set(x, "leftActions", js.undefined)
     
-    inline def setLeftActionsVarargs(value: typings.antdMobile.swipeActionSwipeActionMod.Action*): Self = StObject.set(x, "leftActions", js.Array(value*))
+    inline def setLeftActionsVarargs(value: typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action*): Self = StObject.set(x, "leftActions", js.Array(value*))
     
     inline def setOnAction(
-      value: (/* action */ typings.antdMobile.swipeActionSwipeActionMod.Action, /* e */ MouseEvent[Element, NativeMouseEvent]) => Unit
+      value: (/* action */ typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action, /* e */ MouseEvent[Element, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onAction", js.Any.fromFunction2(value))
     
     inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)
@@ -573,11 +573,11 @@ object rightActionsArrayActionun {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setRightActions(value: js.Array[typings.antdMobile.swipeActionSwipeActionMod.Action]): Self = StObject.set(x, "rightActions", value.asInstanceOf[js.Any])
+    inline def setRightActions(value: js.Array[typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action]): Self = StObject.set(x, "rightActions", value.asInstanceOf[js.Any])
     
     inline def setRightActionsUndefined: Self = StObject.set(x, "rightActions", js.undefined)
     
-    inline def setRightActionsVarargs(value: typings.antdMobile.swipeActionSwipeActionMod.Action*): Self = StObject.set(x, "rightActions", js.Array(value*))
+    inline def setRightActionsVarargs(value: typings.antdMobile.esComponentsSwipeActionSwipeActionMod.Action*): Self = StObject.set(x, "rightActions", js.Array(value*))
     
     inline def setStopPropagation(value: js.Array[click]): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     

@@ -1,16 +1,16 @@
 package typings.azureMsalNode
 
 import typings.azureMsalCommon.anon.Code
-import typings.azureMsalCommon.clientConfigurationMod.LoggerOptions
-import typings.azureMsalCommon.icachepluginMod.ICachePlugin
-import typings.azureMsalCommon.icryptoMod.ICrypto
-import typings.azureMsalCommon.iserializabletokencacheMod.ISerializableTokenCache
-import typings.azureMsalNode.configurationMod.Configuration
-import typings.azureMsalNode.configurationMod.NodeConfiguration
-import typings.azureMsalNode.icacheclientMod.ICacheClient
-import typings.azureMsalNode.ipartitionmanagerMod.IPartitionManager
-import typings.azureMsalNode.serializerTypesMod.InMemoryCache
-import typings.azureMsalNode.serializerTypesMod.JsonCache
+import typings.azureMsalCommon.distCacheInterfaceIcachepluginMod.ICachePlugin
+import typings.azureMsalCommon.distCacheInterfaceIserializabletokencacheMod.ISerializableTokenCache
+import typings.azureMsalCommon.distConfigClientConfigurationMod.LoggerOptions
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
+import typings.azureMsalNode.distCacheDistributedIcacheclientMod.ICacheClient
+import typings.azureMsalNode.distCacheDistributedIpartitionmanagerMod.IPartitionManager
+import typings.azureMsalNode.distCacheSerializerSerializerTypesMod.InMemoryCache
+import typings.azureMsalNode.distCacheSerializerSerializerTypesMod.JsonCache
+import typings.azureMsalNode.distConfigConfigurationMod.Configuration
+import typings.azureMsalNode.distConfigConfigurationMod.NodeConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,13 +45,13 @@ object mod {
       * @param errDesc
       * @returns
       */
-    inline def createPostRequestFailed(errDesc: String): typings.azureMsalCommon.authErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostRequestFailed")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.authErrorMod.AuthError]
+    inline def createPostRequestFailed(errDesc: String): typings.azureMsalCommon.distErrorAuthErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostRequestFailed")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorAuthErrorMod.AuthError]
     
     /**
       * Creates an error that is thrown when something unexpected happens in the library.
       * @param errDesc
       */
-    inline def createUnexpectedError(errDesc: String): typings.azureMsalCommon.authErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedError")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.authErrorMod.AuthError]
+    inline def createUnexpectedError(errDesc: String): typings.azureMsalCommon.distErrorAuthErrorMod.AuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedError")(errDesc.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorAuthErrorMod.AuthError]
   }
   
   object AuthErrorMessage {
@@ -77,26 +77,26 @@ object mod {
     
     @JSBracketAccess
     def apply(value: Double | String): js.UndefOr[
-        typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance & (Double | String)
+        typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance & (Double | String)
       ] = js.native
     
-    /* "https://login.chinacloudapi.cn" */ val AzureChina: typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance.AzureChina & (Double | String) = js.native
+    /* "https://login.chinacloudapi.cn" */ val AzureChina: typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance.AzureChina & (Double | String) = js.native
     
-    /* "https://login.microsoftonline.de" */ val AzureGermany: typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance.AzureGermany & (Double | String) = js.native
+    /* "https://login.microsoftonline.de" */ val AzureGermany: typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance.AzureGermany & (Double | String) = js.native
     
-    /* "https://login.windows-ppe.net" */ val AzurePpe: typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance.AzurePpe & (Double | String) = js.native
+    /* "https://login.windows-ppe.net" */ val AzurePpe: typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance.AzurePpe & (Double | String) = js.native
     
-    /* "https://login.microsoftonline.com" */ val AzurePublic: typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance.AzurePublic & (Double | String) = js.native
+    /* "https://login.microsoftonline.com" */ val AzurePublic: typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance.AzurePublic & (Double | String) = js.native
     
-    /* "https://login.microsoftonline.us" */ val AzureUsGovernment: typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance.AzureUsGovernment & (Double | String) = js.native
+    /* "https://login.microsoftonline.us" */ val AzureUsGovernment: typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance.AzureUsGovernment & (Double | String) = js.native
     
-    /* 0 */ val None: typings.azureMsalCommon.authorityOptionsMod.AzureCloudInstance.None & (Double | String) = js.native
+    /* 0 */ val None: typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AzureCloudInstance.None & (Double | String) = js.native
   }
   
-  @JSImport("@azure/msal-node", "ClientApplication")
+  /* note: abstract class */ @JSImport("@azure/msal-node", "ClientApplication")
   @js.native
-  abstract class ClientApplication protected ()
-    extends typings.azureMsalNode.clientApplicationMod.ClientApplication {
+  open class ClientApplication protected ()
+    extends typings.azureMsalNode.distClientClientApplicationMod.ClientApplication {
     /**
       * Constructor for the ClientApplication
       */
@@ -106,7 +106,7 @@ object mod {
   @JSImport("@azure/msal-node", "ClientAssertion")
   @js.native
   open class ClientAssertion ()
-    extends typings.azureMsalNode.clientAssertionMod.ClientAssertion
+    extends typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion
   /* static members */
   object ClientAssertion {
     
@@ -118,7 +118,7 @@ object mod {
       * Initialize the ClientAssertion class from the clientAssertion passed by the user
       * @param assertion - refer https://tools.ietf.org/html/rfc7521
       */
-    inline def fromAssertion(assertion: String): typings.azureMsalNode.clientAssertionMod.ClientAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAssertion")(assertion.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalNode.clientAssertionMod.ClientAssertion]
+    inline def fromAssertion(assertion: String): typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAssertion")(assertion.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion]
     
     /**
       * Initialize the ClientAssertion class from the certificate passed by the user
@@ -126,8 +126,8 @@ object mod {
       * @param privateKey - secret key
       * @param publicCertificate - electronic document provided to prove the ownership of the public key
       */
-    inline def fromCertificate(thumbprint: String, privateKey: String): typings.azureMsalNode.clientAssertionMod.ClientAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCertificate")(thumbprint.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalNode.clientAssertionMod.ClientAssertion]
-    inline def fromCertificate(thumbprint: String, privateKey: String, publicCertificate: String): typings.azureMsalNode.clientAssertionMod.ClientAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCertificate")(thumbprint.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], publicCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalNode.clientAssertionMod.ClientAssertion]
+    inline def fromCertificate(thumbprint: String, privateKey: String): typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCertificate")(thumbprint.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion]
+    inline def fromCertificate(thumbprint: String, privateKey: String, publicCertificate: String): typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCertificate")(thumbprint.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], publicCertificate.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalNode.distClientClientAssertionMod.ClientAssertion]
     
     /**
       * Extracts the raw certs from a given certificate string and returns them in an array.
@@ -154,219 +154,219 @@ object mod {
       * Throws error when attempting to append a null, undefined or empty scope to a set
       * @param givenScope
       */
-    inline def createAppendEmptyScopeToSetError(givenScope: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppendEmptyScopeToSetError")(givenScope.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createAppendEmptyScopeToSetError(givenScope: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppendEmptyScopeToSetError")(givenScope.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when attempting to append null or empty ScopeSet.
       * @param appendError
       */
-    inline def createAppendScopeSetError(appendError: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppendScopeSetError")(appendError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createAppendScopeSetError(appendError: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createAppendScopeSetError")(appendError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
-    inline def createBindingKeyNotRemovedError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createBindingKeyNotRemovedError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createBindingKeyNotRemovedError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createBindingKeyNotRemovedError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if ICachePlugin not set on CacheManager.
       */
-    inline def createCachePluginError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createCachePluginError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createCachePluginError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createCachePluginError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when client info object doesn't decode correctly.
       * @param caughtError
       */
-    inline def createClientInfoDecodingError(caughtError: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientInfoDecodingError")(caughtError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createClientInfoDecodingError(caughtError: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientInfoDecodingError")(caughtError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown if the client info is empty.
       * @param rawClientInfo
       */
-    inline def createClientInfoEmptyError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientInfoEmptyError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createClientInfoEmptyError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientInfoEmptyError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if user sets CancellationToken.cancel = true during polling of token endpoint during device code flow
       */
-    inline def createDeviceCodeCancelledError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeviceCodeCancelledError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createDeviceCodeCancelledError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeviceCodeCancelledError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if device code is expired
       */
-    inline def createDeviceCodeExpiredError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeviceCodeExpiredError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createDeviceCodeExpiredError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeviceCodeExpiredError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if device code is expired
       */
-    inline def createDeviceCodeUnknownError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeviceCodeUnknownError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createDeviceCodeUnknownError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeviceCodeUnknownError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if ScopeSet is null or undefined.
       * @param givenScopeSet
       */
-    inline def createEmptyInputScopeSetError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyInputScopeSetError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createEmptyInputScopeSetError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyInputScopeSetError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the endpoint discovery doesn't complete correctly.
       */
-    inline def createEndpointDiscoveryIncompleteError(errDetail: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEndpointDiscoveryIncompleteError")(errDetail.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createEndpointDiscoveryIncompleteError(errDetail: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEndpointDiscoveryIncompleteError")(errDetail.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the hash cannot be deserialized.
       * @param hashParamObj
       */
-    inline def createHashNotDeserializedError(hashParamObj: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashNotDeserializedError")(hashParamObj.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createHashNotDeserializedError(hashParamObj: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashNotDeserializedError")(hashParamObj.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if client assertion is not valid.
       */
-    inline def createInvalidAssertionError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAssertionError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createInvalidAssertionError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAssertionError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when provided environment is not part of the CloudDiscoveryMetadata object
       */
-    inline def createInvalidCacheEnvironmentError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCacheEnvironmentError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createInvalidCacheEnvironmentError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCacheEnvironmentError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if cache type is invalid.
       */
-    inline def createInvalidCacheTypeError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCacheTypeError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createInvalidCacheTypeError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCacheTypeError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if client assertion is not valid.
       */
-    inline def createInvalidCredentialError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCredentialError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createInvalidCredentialError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCredentialError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the state cannot be parsed.
       * @param invalidState
       */
-    inline def createInvalidStateError(invalidState: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidStateError")(invalidState.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
-    inline def createInvalidStateError(invalidState: String, errorString: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidStateError")(invalidState.asInstanceOf[js.Any], errorString.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createInvalidStateError(invalidState: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidStateError")(invalidState.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
+    inline def createInvalidStateError(invalidState: String, errorString: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidStateError")(invalidState.asInstanceOf[js.Any], errorString.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Create an error when kid attribute is missing from a PoP token's cache record
       */
-    inline def createKeyIdMissingError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyIdMissingError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createKeyIdMissingError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyIdMissingError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Thrown when logout is attempted for an authority that doesnt have an end_session_endpoint
       */
-    inline def createLogoutNotSupportedError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogoutNotSupportedError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createLogoutNotSupportedError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogoutNotSupportedError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when multiple accounts are in cache for the given params
       */
-    inline def createMultipleMatchingAccountsInCacheError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingAccountsInCacheError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createMultipleMatchingAccountsInCacheError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingAccountsInCacheError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when multiple appMetada are in cache for the given clientId.
       */
-    inline def createMultipleMatchingAppMetadataInCacheError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingAppMetadataInCacheError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createMultipleMatchingAppMetadataInCacheError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingAppMetadataInCacheError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when multiple tokens are in cache.
       */
-    inline def createMultipleMatchingTokensInCacheError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingTokensInCacheError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createMultipleMatchingTokensInCacheError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultipleMatchingTokensInCacheError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the fetch client throws
       */
-    inline def createNetworkError(endpoint: String, errDetail: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = (^.asInstanceOf[js.Dynamic].applyDynamic("createNetworkError")(endpoint.asInstanceOf[js.Any], errDetail.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNetworkError(endpoint: String, errDetail: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = (^.asInstanceOf[js.Dynamic].applyDynamic("createNetworkError")(endpoint.asInstanceOf[js.Any], errDetail.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when account is not found in cache.
       */
-    inline def createNoAccountFoundError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoAccountFoundError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNoAccountFoundError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoAccountFoundError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when silent requests are made without an account object
       */
-    inline def createNoAccountInSilentRequestError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoAccountInSilentRequestError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNoAccountInSilentRequestError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoAccountInSilentRequestError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when the authorization code is missing from the server response
       */
-    inline def createNoAuthCodeInServerResponseError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoAuthCodeInServerResponseError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNoAuthCodeInServerResponseError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoAuthCodeInServerResponseError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if crypto object not found.
       * @param operationName
       */
-    inline def createNoCryptoObjectError(operationName: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoCryptoObjectError")(operationName.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNoCryptoObjectError(operationName: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoCryptoObjectError")(operationName.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the nonce does not match.
       */
-    inline def createNonceMismatchError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonceMismatchError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNonceMismatchError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonceMismatchError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the mnonce is not present
       * @param missingNonce
       */
-    inline def createNonceNotFoundError(missingNonce: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonceNotFoundError")(missingNonce.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNonceNotFoundError(missingNonce: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNonceNotFoundError")(missingNonce.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when cache record is null or undefined.
       */
-    inline def createNullOrUndefinedCacheRecord(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullOrUndefinedCacheRecord")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createNullOrUndefinedCacheRecord(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullOrUndefinedCacheRecord")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if token cannot be retrieved from cache due to refresh being required.
       */
-    inline def createRefreshRequiredError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshRequiredError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createRefreshRequiredError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createRefreshRequiredError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when attempting to append a null, undefined or empty scope to a set
       * @param givenScope
       */
-    inline def createRemoveEmptyScopeFromSetError(givenScope: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createRemoveEmptyScopeFromSetError")(givenScope.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createRemoveEmptyScopeFromSetError(givenScope: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createRemoveEmptyScopeFromSetError")(givenScope.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when two states do not match.
       */
-    inline def createStateMismatchError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateMismatchError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createStateMismatchError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateMismatchError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the state is not present
       * @param missingState
       */
-    inline def createStateNotFoundError(missingState: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateNotFoundError")(missingState.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createStateNotFoundError(missingState: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createStateNotFoundError")(missingState.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
-    inline def createTokenClaimsRequiredError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenClaimsRequiredError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createTokenClaimsRequiredError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenClaimsRequiredError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the id token string is null or empty.
       * @param invalidRawTokenString
       */
-    inline def createTokenNullOrEmptyError(invalidRawTokenString: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenNullOrEmptyError")(invalidRawTokenString.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createTokenNullOrEmptyError(invalidRawTokenString: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenNullOrEmptyError")(invalidRawTokenString.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the id token extraction errors out.
       * @param err
       */
-    inline def createTokenParsingError(caughtExtractionError: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenParsingError")(caughtExtractionError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createTokenParsingError(caughtExtractionError: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenParsingError")(caughtExtractionError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error when no auth code or refresh token is given to ServerTokenRequestParameters.
       */
-    inline def createTokenRequestCannotBeMadeError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenRequestCannotBeMadeError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createTokenRequestCannotBeMadeError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokenRequestCannotBeMadeError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Creates an error thrown when the openid-configuration endpoint cannot be reached or does not contain the required data
       */
-    inline def createUnableToGetOpenidConfigError(errDetail: String): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnableToGetOpenidConfigError")(errDetail.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createUnableToGetOpenidConfigError(errDetail: String): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnableToGetOpenidConfigError")(errDetail.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if unexpected account type.
       */
-    inline def createUnexpectedAccountTypeError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedAccountTypeError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createUnexpectedAccountTypeError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedAccountTypeError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if unexpected credential type.
       */
-    inline def createUnexpectedCredentialTypeError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedCredentialTypeError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createUnexpectedCredentialTypeError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUnexpectedCredentialTypeError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
     
     /**
       * Throws error if the user defined timeout is reached.
       */
-    inline def createUserTimeoutReachedError(): typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserTimeoutReachedError")().asInstanceOf[typings.azureMsalCommon.clientAuthErrorMod.ClientAuthError]
+    inline def createUserTimeoutReachedError(): typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserTimeoutReachedError")().asInstanceOf[typings.azureMsalCommon.distErrorClientAuthErrorMod.ClientAuthError]
   }
   
   object ClientAuthErrorMessage {
@@ -623,118 +623,118 @@ object mod {
     /**
       * Creates an error thrown when the claims request could not be successfully parsed
       */
-    inline def createClaimsRequestParsingError(claimsRequestParseError: String): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClaimsRequestParsingError")(claimsRequestParseError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createClaimsRequestParsingError(claimsRequestParseError: String): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClaimsRequestParsingError")(claimsRequestParseError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Error thrown when client id scope is not provided as single scope.
       * @param inputScopes
       */
-    inline def createClientIdSingleScopeError(inputScopes: js.Array[String]): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientIdSingleScopeError")(inputScopes.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createClientIdSingleScopeError(inputScopes: js.Array[String]): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientIdSingleScopeError")(inputScopes.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when token request is empty and nothing cached in storage.
       */
-    inline def createEmptyLogoutRequestError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyLogoutRequestError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createEmptyLogoutRequestError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyLogoutRequestError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Error thrown when scopes are empty.
       * @param scopesValue
       */
-    inline def createEmptyScopesArrayError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyScopesArrayError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createEmptyScopesArrayError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyScopesArrayError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when token request is empty and nothing cached in storage.
       */
-    inline def createEmptyTokenRequestError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyTokenRequestError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createEmptyTokenRequestError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createEmptyTokenRequestError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Creates an error thrown if authority uri is given an insecure protocol.
       * @param urlString
       */
-    inline def createInsecureAuthorityUriError(urlString: String): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecureAuthorityUriError")(urlString.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInsecureAuthorityUriError(urlString: String): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecureAuthorityUriError")(urlString.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when a provided header is invalid in any way
       */
-    inline def createInvalidAuthenticationHeaderError(invalidHeaderName: String, details: String): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAuthenticationHeaderError")(invalidHeaderName.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidAuthenticationHeaderError(invalidHeaderName: String, details: String): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAuthenticationHeaderError")(invalidHeaderName.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws an error when the user passes invalid cloudDiscoveryMetadata
       */
-    inline def createInvalidAuthorityMetadataError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAuthorityMetadataError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidAuthorityMetadataError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAuthorityMetadataError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when the AzureCloudInstance is set to an invalid value
       */
-    inline def createInvalidAzureCloudInstanceError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAzureCloudInstanceError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidAzureCloudInstanceError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidAzureCloudInstanceError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Creates error thrown when claims parameter is not a stringified JSON object
       */
-    inline def createInvalidClaimsRequestError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidClaimsRequestError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidClaimsRequestError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidClaimsRequestError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws an error when the user passes invalid cloudDiscoveryMetadata
       */
-    inline def createInvalidCloudDiscoveryMetadataError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCloudDiscoveryMetadataError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidCloudDiscoveryMetadataError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCloudDiscoveryMetadataError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when an invalid code_challenge_method is passed by the user
       */
-    inline def createInvalidCodeChallengeMethodError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCodeChallengeMethodError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidCodeChallengeMethodError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCodeChallengeMethodError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when both params: code_challenge and code_challenge_method are not passed together
       */
-    inline def createInvalidCodeChallengeParamsError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCodeChallengeParamsError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidCodeChallengeParamsError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidCodeChallengeParamsError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Error thrown when prompt is not an allowed type.
       * @param promptValue
       */
-    inline def createInvalidPromptError(promptValue: String): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidPromptError")(promptValue.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createInvalidPromptError(promptValue: String): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createInvalidPromptError")(promptValue.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when provided headers don't contain a header that a server nonce can be extracted from
       */
-    inline def createMissingNonceAuthenticationHeadersError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMissingNonceAuthenticationHeadersError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createMissingNonceAuthenticationHeadersError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMissingNonceAuthenticationHeadersError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws an error when the authentication scheme is set to SSH but the SSH public key is omitted from the request
       */
-    inline def createMissingSshJwkError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMissingSshJwkError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createMissingSshJwkError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMissingSshJwkError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws an error when the authentication scheme is set to SSH but the SSH public key ID is omitted from the request
       */
-    inline def createMissingSshKidError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMissingSshKidError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createMissingSshKidError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createMissingSshKidError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Creates an error thrown when the post-logout redirect uri is empty (not set by caller)
       */
-    inline def createPostLogoutRedirectUriEmptyError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostLogoutRedirectUriEmptyError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createPostLogoutRedirectUriEmptyError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createPostLogoutRedirectUriEmptyError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Creates an error thrown when the redirect uri is empty (not set by caller)
       */
-    inline def createRedirectUriEmptyError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createRedirectUriEmptyError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createRedirectUriEmptyError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createRedirectUriEmptyError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Throws error when provided authority is not a member of the trusted host list
       */
-    inline def createUntrustedAuthorityError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUntrustedAuthorityError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createUntrustedAuthorityError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUntrustedAuthorityError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Creates an error thrown if URL string is empty or null.
       * @param urlString
       */
-    inline def createUrlEmptyError(): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlEmptyError")().asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createUrlEmptyError(): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlEmptyError")().asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
     
     /**
       * Creates an error thrown if URL string does not parse into separate segments.
       * @param urlString
       */
-    inline def createUrlParseError(urlParseError: String): typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlParseError")(urlParseError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.clientConfigurationErrorMod.ClientConfigurationError]
+    inline def createUrlParseError(urlParseError: String): typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrlParseError")(urlParseError.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distErrorClientConfigurationErrorMod.ClientConfigurationError]
   }
   
   object ClientConfigurationErrorMessage {
@@ -862,7 +862,7 @@ object mod {
   @JSImport("@azure/msal-node", "ConfidentialClientApplication")
   @js.native
   open class ConfidentialClientApplication protected ()
-    extends typings.azureMsalNode.confidentialClientApplicationMod.ConfidentialClientApplication {
+    extends typings.azureMsalNode.distClientConfidentialClientApplicationMod.ConfidentialClientApplication {
     /**
       * Constructor for the ConfidentialClientApplication
       *
@@ -888,12 +888,12 @@ object mod {
   @JSImport("@azure/msal-node", "CryptoProvider")
   @js.native
   open class CryptoProvider ()
-    extends typings.azureMsalNode.cryptoProviderMod.CryptoProvider
+    extends typings.azureMsalNode.distCryptoCryptoProviderMod.CryptoProvider
   
   @JSImport("@azure/msal-node", "DistributedCachePlugin")
   @js.native
   open class DistributedCachePlugin protected ()
-    extends typings.azureMsalNode.distributedCachePluginMod.DistributedCachePlugin {
+    extends typings.azureMsalNode.distCacheDistributedDistributedCachePluginMod.DistributedCachePlugin {
     def this(client: ICacheClient, partitionManager: IPartitionManager) = this()
   }
   
@@ -920,12 +920,12 @@ object mod {
       * Creates an error thrown when the native broker returns ACCOUNT_UNAVAILABLE status, indicating that the account was removed and interactive sign-in is required
       * @returns
       */
-    inline def createNativeAccountUnavailableError(): typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeAccountUnavailableError")().asInstanceOf[typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError]
+    inline def createNativeAccountUnavailableError(): typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNativeAccountUnavailableError")().asInstanceOf[typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError]
     
     /**
       * Creates an error thrown when the authorization code required for a token request is null or empty.
       */
-    inline def createNoTokensFoundError(): typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoTokensFoundError")().asInstanceOf[typings.azureMsalCommon.interactionRequiredAuthErrorMod.InteractionRequiredAuthError]
+    inline def createNoTokensFoundError(): typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createNoTokensFoundError")().asInstanceOf[typings.azureMsalCommon.distErrorInteractionRequiredAuthErrorMod.InteractionRequiredAuthError]
     
     /**
       * Helper function used to determine if an error thrown by the server requires interaction to resolve
@@ -966,17 +966,17 @@ object mod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.azureMsalCommon.loggerMod.LogLevel & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.azureMsalCommon.distLoggerLoggerMod.LogLevel & Double] = js.native
     
-    /* 0 */ val Error: typings.azureMsalCommon.loggerMod.LogLevel.Error & Double = js.native
+    /* 0 */ val Error: typings.azureMsalCommon.distLoggerLoggerMod.LogLevel.Error & Double = js.native
     
-    /* 2 */ val Info: typings.azureMsalCommon.loggerMod.LogLevel.Info & Double = js.native
+    /* 2 */ val Info: typings.azureMsalCommon.distLoggerLoggerMod.LogLevel.Info & Double = js.native
     
-    /* 4 */ val Trace: typings.azureMsalCommon.loggerMod.LogLevel.Trace & Double = js.native
+    /* 4 */ val Trace: typings.azureMsalCommon.distLoggerLoggerMod.LogLevel.Trace & Double = js.native
     
-    /* 3 */ val Verbose: typings.azureMsalCommon.loggerMod.LogLevel.Verbose & Double = js.native
+    /* 3 */ val Verbose: typings.azureMsalCommon.distLoggerLoggerMod.LogLevel.Verbose & Double = js.native
     
-    /* 1 */ val Warning: typings.azureMsalCommon.loggerMod.LogLevel.Warning & Double = js.native
+    /* 1 */ val Warning: typings.azureMsalCommon.distLoggerLoggerMod.LogLevel.Warning & Double = js.native
   }
   
   @JSImport("@azure/msal-node", "Logger")
@@ -992,7 +992,7 @@ object mod {
   @JSImport("@azure/msal-node", "NodeStorage")
   @js.native
   open class NodeStorage protected ()
-    extends typings.azureMsalNode.nodeStorageMod.NodeStorage {
+    extends typings.azureMsalNode.distCacheNodeStorageMod.NodeStorage {
     def this(logger: typings.azureMsalCommon.mod.Logger, clientId: String, cryptoImpl: ICrypto) = this()
   }
   /* static members */
@@ -1052,17 +1052,17 @@ object mod {
   object ProtocolMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.azureMsalCommon.protocolModeMod.ProtocolMode & String] = js.native
+    def apply(value: String): js.UndefOr[typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode & String] = js.native
     
-    /* "AAD" */ val AAD: typings.azureMsalCommon.protocolModeMod.ProtocolMode.AAD & String = js.native
+    /* "AAD" */ val AAD: typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode.AAD & String = js.native
     
-    /* "OIDC" */ val OIDC: typings.azureMsalCommon.protocolModeMod.ProtocolMode.OIDC & String = js.native
+    /* "OIDC" */ val OIDC: typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode.OIDC & String = js.native
   }
   
   @JSImport("@azure/msal-node", "PublicClientApplication")
   @js.native
   open class PublicClientApplication protected ()
-    extends typings.azureMsalNode.publicClientApplicationMod.PublicClientApplication {
+    extends typings.azureMsalNode.distClientPublicClientApplicationMod.PublicClientApplication {
     /**
       * Important attributes in the Configuration object for auth are:
       * - clientID: the application ID of your application. You can obtain one by registering your application with our Application registration portal.
@@ -1088,13 +1088,13 @@ object mod {
   object ResponseMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.azureMsalCommon.constantsMod.ResponseMode & String] = js.native
+    def apply(value: String): js.UndefOr[typings.azureMsalCommon.distUtilsConstantsMod.ResponseMode & String] = js.native
     
-    /* "form_post" */ val FORM_POST: typings.azureMsalCommon.constantsMod.ResponseMode.FORM_POST & String = js.native
+    /* "form_post" */ val FORM_POST: typings.azureMsalCommon.distUtilsConstantsMod.ResponseMode.FORM_POST & String = js.native
     
-    /* "fragment" */ val FRAGMENT: typings.azureMsalCommon.constantsMod.ResponseMode.FRAGMENT & String = js.native
+    /* "fragment" */ val FRAGMENT: typings.azureMsalCommon.distUtilsConstantsMod.ResponseMode.FRAGMENT & String = js.native
     
-    /* "query" */ val QUERY: typings.azureMsalCommon.constantsMod.ResponseMode.QUERY & String = js.native
+    /* "query" */ val QUERY: typings.azureMsalCommon.distUtilsConstantsMod.ResponseMode.QUERY & String = js.native
   }
   
   @JSImport("@azure/msal-node", "ServerError")
@@ -1113,13 +1113,13 @@ object mod {
   @JSImport("@azure/msal-node", "TokenCache")
   @js.native
   open class TokenCache protected ()
-    extends typings.azureMsalNode.tokenCacheMod.TokenCache {
+    extends typings.azureMsalNode.distCacheTokenCacheMod.TokenCache {
     def this(
-      storage: typings.azureMsalNode.nodeStorageMod.NodeStorage,
+      storage: typings.azureMsalNode.distCacheNodeStorageMod.NodeStorage,
       logger: typings.azureMsalCommon.mod.Logger
     ) = this()
     def this(
-      storage: typings.azureMsalNode.nodeStorageMod.NodeStorage,
+      storage: typings.azureMsalNode.distCacheNodeStorageMod.NodeStorage,
       logger: typings.azureMsalCommon.mod.Logger,
       cachePlugin: ICachePlugin
     ) = this()

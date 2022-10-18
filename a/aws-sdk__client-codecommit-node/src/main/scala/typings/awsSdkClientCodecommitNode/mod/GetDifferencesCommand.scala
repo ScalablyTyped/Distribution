@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "GetDifferencesCommand")
 @js.native
 open class GetDifferencesCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.getDifferencesCommandMod.GetDifferencesCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsGetDifferencesCommandMod.GetDifferencesCommand {
   def this(input: GetDifferencesInput) = this()
 }

@@ -8,6 +8,7 @@ import typings.nodeTelegramBotApi.mod.MessageEntityType
 import typings.nodeTelegramBotApi.mod.MessageType
 import typings.nodeTelegramBotApi.mod.ParseMode
 import typings.nodeTelegramBotApi.mod.PollType
+import typings.nodeTelegramBotApi.mod.StickerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,6 +176,13 @@ object nodeTelegramBotApiStrings {
   inline def creator: creator = "creator".asInstanceOf[creator]
   
   @js.native
+  sealed trait custom_emoji
+    extends StObject
+       with MessageEntityType
+       with StickerType
+  inline def custom_emoji: custom_emoji = "custom_emoji".asInstanceOf[custom_emoji]
+  
+  @js.native
   sealed trait delete_chat_photo
     extends StObject
        with MessageType
@@ -295,6 +303,12 @@ object nodeTelegramBotApiStrings {
   inline def location: location = "location".asInstanceOf[location]
   
   @js.native
+  sealed trait mask
+    extends StObject
+       with StickerType
+  inline def mask: mask = "mask".asInstanceOf[mask]
+  
+  @js.native
   sealed trait member
     extends StObject
        with ChatMemberStatus
@@ -379,6 +393,10 @@ object nodeTelegramBotApiStrings {
   inline def pinned_message: pinned_message = "pinned_message".asInstanceOf[pinned_message]
   
   @js.native
+  sealed trait png_sticker extends StObject
+  inline def png_sticker: png_sticker = "png_sticker".asInstanceOf[png_sticker]
+  
+  @js.native
   sealed trait poll_answer extends StObject
   inline def poll_answer: poll_answer = "poll_answer".asInstanceOf[poll_answer]
   
@@ -430,6 +448,7 @@ object nodeTelegramBotApiStrings {
   sealed trait regular
     extends StObject
        with PollType
+       with StickerType
   inline def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
@@ -495,6 +514,10 @@ object nodeTelegramBotApiStrings {
     extends StObject
        with MessageEntityType
   inline def text_mention: text_mention = "text_mention".asInstanceOf[text_mention]
+  
+  @js.native
+  sealed trait tgs_sticker extends StObject
+  inline def tgs_sticker: tgs_sticker = "tgs_sticker".asInstanceOf[tgs_sticker]
   
   @js.native
   sealed trait typing
@@ -603,4 +626,8 @@ object nodeTelegramBotApiStrings {
   @js.native
   sealed trait webhook_error extends StObject
   inline def webhook_error: webhook_error = "webhook_error".asInstanceOf[webhook_error]
+  
+  @js.native
+  sealed trait webm_sticker extends StObject
+  inline def webm_sticker: webm_sticker = "webm_sticker".asInstanceOf[webm_sticker]
 }

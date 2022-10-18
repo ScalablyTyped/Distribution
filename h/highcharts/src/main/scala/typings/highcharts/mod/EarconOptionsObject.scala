@@ -17,7 +17,9 @@ trait EarconOptionsObject extends StObject {
   /**
     * The instruments and their options defining this earcon.
     */
-  var instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument]
+  var instruments: js.Array[
+    typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument
+  ]
   
   /**
     * Callback function to call when earcon has finished playing.
@@ -41,7 +43,11 @@ trait EarconOptionsObject extends StObject {
 }
 object EarconOptionsObject {
   
-  inline def apply(instruments: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument]): EarconOptionsObject = {
+  inline def apply(
+    instruments: js.Array[
+      typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument
+    ]
+  ): EarconOptionsObject = {
     val __obj = js.Dynamic.literal(instruments = instruments.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconOptionsObject]
   }
@@ -52,9 +58,13 @@ object EarconOptionsObject {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInstruments(value: js.Array[typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setInstruments(
+      value: js.Array[
+          typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument
+        ]
+    ): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
-    inline def setInstrumentsVarargs(value: typings.highcharts.sonificationMod.highchartsAugmentingMod.EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value*))
+    inline def setInstrumentsVarargs(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value*))
     
     inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     

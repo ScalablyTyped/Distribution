@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "DefaultSceneGraphService")
 @js.native
 open class DefaultSceneGraphService protected ()
-  extends typings.antvGLite.servicesMod.DefaultSceneGraphService {
-  def this(sceneGraphSelectorFactory: js.Function0[typings.antvGLite.sceneGraphSelectorMod.SceneGraphSelector]) = this()
+  extends typings.antvGLite.distServicesMod.DefaultSceneGraphService {
+  def this(sceneGraphSelectorFactory: js.Function0[typings.antvGLite.distServicesSceneGraphSelectorMod.SceneGraphSelector]) = this()
 }

@@ -1,16 +1,16 @@
 package typings.autolinker
 
-import typings.autolinker.abstractMatchMod.AbstractMatchConfig
-import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilderCfg
-import typings.autolinker.autolinkerMod.AutolinkerConfig
-import typings.autolinker.emailMatchMod.EmailMatchConfig
-import typings.autolinker.hashtagMatchMod.HashtagMatchConfig
-import typings.autolinker.htmlTagMod.HtmlTagCfg
-import typings.autolinker.matchMatchMod.Match
-import typings.autolinker.mentionMatchMod.MentionMatchConfig
-import typings.autolinker.parseMatchesMod.ParseMatchesArgs
-import typings.autolinker.phoneMatchMod.PhoneMatchConfig
-import typings.autolinker.urlMatchMod.UrlMatchConfig
+import typings.autolinker.distCommonjsAnchorTagBuilderMod.AnchorTagBuilderCfg
+import typings.autolinker.distCommonjsAutolinkerMod.AutolinkerConfig
+import typings.autolinker.distCommonjsHtmlTagMod.HtmlTagCfg
+import typings.autolinker.distCommonjsMatchAbstractMatchMod.AbstractMatchConfig
+import typings.autolinker.distCommonjsMatchEmailMatchMod.EmailMatchConfig
+import typings.autolinker.distCommonjsMatchHashtagMatchMod.HashtagMatchConfig
+import typings.autolinker.distCommonjsMatchMatchMod.Match
+import typings.autolinker.distCommonjsMatchMentionMatchMod.MentionMatchConfig
+import typings.autolinker.distCommonjsMatchPhoneMatchMod.PhoneMatchConfig
+import typings.autolinker.distCommonjsMatchUrlMatchMod.UrlMatchConfig
+import typings.autolinker.distCommonjsParserParseMatchesMod.ParseMatchesArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ object mod {
     *   specified in an Object (map).
     */
   open class default ()
-    extends typings.autolinker.autolinkerMod.default {
+    extends typings.autolinker.distCommonjsAutolinkerMod.default {
     def this(cfg: AutolinkerConfig) = this()
   }
   /* static members */
@@ -112,10 +112,10 @@ object mod {
     val version: /* "4.0.0" */ String = js.native
   }
   
-  @JSImport("autolinker", "AbstractMatch")
+  /* note: abstract class */ @JSImport("autolinker", "AbstractMatch")
   @js.native
-  abstract class AbstractMatch protected ()
-    extends typings.autolinker.matchMod.AbstractMatch {
+  open class AbstractMatch protected ()
+    extends typings.autolinker.distCommonjsMatchMod.AbstractMatch {
     /**
       * @member Autolinker.match.Match
       * @method constructor
@@ -132,7 +132,7 @@ object mod {
     * @param {Object} [cfg] The configuration options for the AnchorTagBuilder instance, specified in an Object (map).
     */
   open class AnchorTagBuilder ()
-    extends typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder {
+    extends typings.autolinker.distCommonjsAnchorTagBuilderMod.AnchorTagBuilder {
     def this(cfg: AnchorTagBuilderCfg) = this()
   }
   
@@ -144,7 +144,7 @@ object mod {
     *   specified in an Object (map).
     */
   open class Autolinker ()
-    extends typings.autolinker.autolinkerMod.default {
+    extends typings.autolinker.distCommonjsAutolinkerMod.default {
     def this(cfg: AutolinkerConfig) = this()
   }
   /* static members */
@@ -230,7 +230,7 @@ object mod {
   @JSImport("autolinker", "EmailMatch")
   @js.native
   open class EmailMatch protected ()
-    extends typings.autolinker.matchMod.EmailMatch {
+    extends typings.autolinker.distCommonjsMatchMod.EmailMatch {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -242,7 +242,7 @@ object mod {
   @JSImport("autolinker", "HashtagMatch")
   @js.native
   open class HashtagMatch protected ()
-    extends typings.autolinker.matchMod.HashtagMatch {
+    extends typings.autolinker.distCommonjsMatchMod.HashtagMatch {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -258,14 +258,14 @@ object mod {
     * @param {Object} [cfg] The configuration properties for this class, in an Object (map)
     */
   open class HtmlTag ()
-    extends typings.autolinker.htmlTagMod.HtmlTag {
+    extends typings.autolinker.distCommonjsHtmlTagMod.HtmlTag {
     def this(cfg: HtmlTagCfg) = this()
   }
   
   @JSImport("autolinker", "MentionMatch")
   @js.native
   open class MentionMatch protected ()
-    extends typings.autolinker.matchMod.MentionMatch {
+    extends typings.autolinker.distCommonjsMatchMod.MentionMatch {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -277,7 +277,7 @@ object mod {
   @JSImport("autolinker", "PhoneMatch")
   @js.native
   open class PhoneMatch protected ()
-    extends typings.autolinker.matchMod.PhoneMatch {
+    extends typings.autolinker.distCommonjsMatchMod.PhoneMatch {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -289,7 +289,7 @@ object mod {
   @JSImport("autolinker", "UrlMatch")
   @js.native
   open class UrlMatch protected ()
-    extends typings.autolinker.matchMod.UrlMatch {
+    extends typings.autolinker.distCommonjsMatchMod.UrlMatch {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match

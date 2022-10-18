@@ -174,7 +174,7 @@ import typings.antdMobile.antdMobileStrings.use
 import typings.antdMobile.antdMobileStrings.video
 import typings.antdMobile.antdMobileStrings.view
 import typings.antdMobile.antdMobileStrings.wbr
-import typings.antdMobile.renderMod.ContainerType
+import typings.antdMobile.esUtilsRenderMod.ContainerType
 import typings.std.AddEventListenerOptions
 import typings.std.Animation
 import typings.std.Attr

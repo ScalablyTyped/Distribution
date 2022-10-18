@@ -16,5 +16,10 @@ open class SetParentAction protected ()
     * @param condition defines the trigger related conditions
     */
   def this(triggerOptions: Any, target: Any, parent: Any) = this()
-  def this(triggerOptions: Any, target: Any, parent: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
+  def this(
+    triggerOptions: Any,
+    target: Any,
+    parent: Any,
+    condition: typings.babylonjs.actionsConditionMod.Condition
+  ) = this()
 }

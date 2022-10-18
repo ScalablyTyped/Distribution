@@ -4,94 +4,136 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/ddoc/views.html#get--db-_design-ddoc-_view-view
+/** View query parameters.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/ddoc/views.html#get--db-_design-ddoc-_view-view} */
 trait DocumentViewParams extends StObject {
   
-  // Include encoding information in attachment stubs if include_docs is true and the particular attachment is
-  // compressed. Ignored if include_docs isn’t true. Default is false.
+  /** Include encoding information in attachment stubs.
+    *
+    * Only if include_docs is true and the particular attachment is compressed.
+    *
+    * Ignored if include_docs isn’t true.
+    *
+    * @default false */
   var att_encoding_info: js.UndefOr[Boolean] = js.undefined
   
-  // Include the Base64-encoded content of attachments in the documents that are included if include_docs is
-  // true. Ignored if include_docs isn’t true. Default is false.
+  /** Include the Base64-encoded content of attachments in the documents that are included if include_docs is true.
+    *
+    * Ignored if include_docs isn’t true.
+    *
+    * @default false */
   var attachments: js.UndefOr[Boolean] = js.undefined
   
-  // Includes conflicts information in response. Ignored if include_docs isn’t true. Default is false.
+  /** Includes conflicts information in response.
+    *
+    * Ignored if include_docs isn’t true.
+    *
+    * @default false */
   var conflicts: js.UndefOr[Boolean] = js.undefined
   
-  // Return the documents in descending by key order. Default is false.
+  /** Return the documents in descending by key order.
+    *
+    * @default false */
   var descending: js.UndefOr[Boolean] = js.undefined
   
-  // Alias for endkey param.
-  var end_key: js.UndefOr[js.Any] = js.undefined
+  /** Alias for endkey param. */
+  var end_key: js.UndefOr[Any] = js.undefined
   
-  // Alias for endkey_docid param.
+  /** Alias for endkey_docid param. */
   var end_key_doc_id: js.UndefOr[String] = js.undefined
   
-  // Stop returning records when the specified key is reached.
-  var endkey: js.UndefOr[js.Any] = js.undefined
+  /** Stop returning records when the specified key is reached. */
+  var endkey: js.UndefOr[Any] = js.undefined
   
-  // Stop returning records when the specified document ID is reached. Requires endkey to be specified for this
-  // to have any effect.
+  /** Stop returning records when the specified document ID is reached.
+    *
+    * Requires endkey to be specified for this to have any effect. */
   var endkey_docid: js.UndefOr[String] = js.undefined
   
-  // Group the results using the reduce function to a group or single row. Default is false.
+  /** Group the results using the reduce function to a group or single row.
+    *
+    * @default false */
   var group: js.UndefOr[Boolean] = js.undefined
   
-  // Specify the group level to be used.
+  /** Specify the group level to be used. */
   var group_level: js.UndefOr[Double] = js.undefined
   
-  // Include the associated document with each row. Default is false.
+  /** Include the associated document with each row.
+    *
+    * @default false */
   var include_docs: js.UndefOr[Boolean] = js.undefined
   
-  // Specifies whether the specified end key should be included in the result. Default is true.
+  /** Specifies whether the specified end key should be included in the result.
+    *
+    * @default true */
   var inclusive_end: js.UndefOr[Boolean] = js.undefined
   
-  // Return only documents that match the specified key.
-  var key: js.UndefOr[js.Any] = js.undefined
+  /** Return only documents that match the specified key. */
+  var key: js.UndefOr[Any] = js.undefined
   
-  // Return only documents where the key matches one of the keys specified in the array.
-  var keys: js.UndefOr[js.Array[js.Any]] = js.undefined
+  /** Return only documents where the key matches one of the keys specified in the array. */
+  var keys: js.UndefOr[js.Array[Any]] = js.undefined
   
-  // Limit the number of the returned documents to the specified number.
+  /** Limit the number of the returned documents to the specified number. */
   var limit: js.UndefOr[Double] = js.undefined
   
-  // Use the reduction function. Default is true.
+  /** Use the reduction function.
+    *
+    * @default true */
   var reduce: js.UndefOr[Boolean] = js.undefined
   
-  // Skip this number of records before starting to return the results. Default is 0.
+  /** Skip this number of records before starting to return the results.
+    *
+    * @default 0 */
   var skip: js.UndefOr[Double] = js.undefined
   
-  // Sort returned rows. Setting this to false offers a performance boost. The total_rows and offset fields are
-  // not available when this is set to false. Default is true.
+  /** Sort returned rows.
+    * 
+    * Setting this to false offers a performance boost. The total_rows and offset fields are not available when this is
+    * set to false.
+    *
+    * @default true */
   var sorted: js.UndefOr[Boolean] = js.undefined
   
-  // Whether or not the view results should be returned from a stable set of shards. Default is false.
+  /** Whether or not the view results should be returned from a stable set of shards.
+    *
+    * @default false */
   var stable: js.UndefOr[Boolean] = js.undefined
   
-  // Allow the results from a stale view to be used. Supported values: ok, update_after and false. ok is
-  // equivalent to stable=true&update=false. update_after is equivalent to stable=true&update=lazy. false is
-  // equivalent to stable=false&update=true.
+  /** Allow the results from a stale view to be used.
+    * 
+    * Supported values: ok, update_after and false.
+    * 
+    * - ok is equivalent to stable=true&update=false.  
+    * - update_after is equivalent to stable=true&update=lazy.
+    * - false is equivalent to stable=false&update=true.
+    */
   var stale: js.UndefOr[String] = js.undefined
   
-  // Alias for startkey param
-  var start_key: js.UndefOr[js.Any] = js.undefined
+  /** Alias for startkey param */
+  var start_key: js.UndefOr[Any] = js.undefined
   
-  // Alias for startkey_docid param
+  /** Alias for startkey_docid param */
   var start_key_doc_id: js.UndefOr[String] = js.undefined
   
-  // Return records starting with the specified key.
-  var startkey: js.UndefOr[js.Any] = js.undefined
+  /** Return records starting with the specified key. */
+  var startkey: js.UndefOr[Any] = js.undefined
   
-  // Return records starting with the specified document ID. Requires startkey to be specified for this to have
-  // any effect.
+  /** Return records starting with the specified document ID.
+    *
+    * Requires startkey to be specified for this to have any effect. */
   var startkey_docid: js.UndefOr[String] = js.undefined
   
-  //  Whether or not the view in question should be updated prior to responding to the user. Supported values:
-  // true, false, lazy. Default is true.
+  /**  Whether or not the view in question should be updated prior to responding to the user.
+    *
+    * Supported values: true, false, lazy.
+    *
+    * @default true */
   var update: js.UndefOr[String] = js.undefined
   
-  // Response includes an update_seq value indicating which sequence id of the database the view reflects.
-  // Default is false.
+  /** Response includes an update_seq value indicating which sequence id of the database the view reflects.
+    *
+    * @default false */
   var update_seq: js.UndefOr[Boolean] = js.undefined
 }
 object DocumentViewParams {
@@ -119,7 +161,7 @@ object DocumentViewParams {
     
     inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
-    inline def setEnd_key(value: js.Any): Self = StObject.set(x, "end_key", value.asInstanceOf[js.Any])
+    inline def setEnd_key(value: Any): Self = StObject.set(x, "end_key", value.asInstanceOf[js.Any])
     
     inline def setEnd_keyUndefined: Self = StObject.set(x, "end_key", js.undefined)
     
@@ -127,7 +169,7 @@ object DocumentViewParams {
     
     inline def setEnd_key_doc_idUndefined: Self = StObject.set(x, "end_key_doc_id", js.undefined)
     
-    inline def setEndkey(value: js.Any): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
+    inline def setEndkey(value: Any): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
     
     inline def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
     
@@ -151,15 +193,15 @@ object DocumentViewParams {
     
     inline def setInclusive_endUndefined: Self = StObject.set(x, "inclusive_end", js.undefined)
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -185,7 +227,7 @@ object DocumentViewParams {
     
     inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
-    inline def setStart_key(value: js.Any): Self = StObject.set(x, "start_key", value.asInstanceOf[js.Any])
+    inline def setStart_key(value: Any): Self = StObject.set(x, "start_key", value.asInstanceOf[js.Any])
     
     inline def setStart_keyUndefined: Self = StObject.set(x, "start_key", js.undefined)
     
@@ -193,7 +235,7 @@ object DocumentViewParams {
     
     inline def setStart_key_doc_idUndefined: Self = StObject.set(x, "start_key_doc_id", js.undefined)
     
-    inline def setStartkey(value: js.Any): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
+    inline def setStartkey(value: Any): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
     
     inline def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
     

@@ -12,7 +12,7 @@ trait PathOverlay[ExtraData]
   /**
     * 获取范围
     */
-  def getBounds(): js.UndefOr[Bounds | Null] = js.native
+  def getBounds(): Bounds | (/* import warning: importer.ImportType#apply Failed type conversion: this extends amap-js-api.AMap.Rectangle<any> ? undefined : null */ js.Any) = js.native
 }
 object PathOverlay {
   

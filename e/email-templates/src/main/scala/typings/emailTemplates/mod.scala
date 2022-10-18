@@ -4,7 +4,7 @@ import typings.emailTemplates.anon.Dictkey
 import typings.emailTemplates.anon.PartialEmailMessage
 import typings.emailTemplates.emailTemplatesBooleans.`false`
 import typings.htmlToText.mod.HtmlToTextOptions
-import typings.nodemailer.mailerMod.Options
+import typings.nodemailer.libMailerMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -372,7 +372,7 @@ object mod {
   // email-templates accepts nodemailer.createTransport options directly
   // too and calls createTransport if given a non-function, thus a lot
   // of different types accepted for transport
-  type NodeMailerTransportOptions = typings.nodemailer.mailerMod.^[Any] | typings.nodemailer.smtpPoolMod.^ | typings.nodemailer.smtpPoolMod.Options | typings.nodemailer.sendmailTransportMod.^ | typings.nodemailer.sendmailTransportMod.Options | typings.nodemailer.streamTransportMod.^ | typings.nodemailer.streamTransportMod.Options | typings.nodemailer.jsonTransportMod.^ | typings.nodemailer.jsonTransportMod.Options | typings.nodemailer.sesTransportMod.^ | typings.nodemailer.sesTransportMod.Options | typings.nodemailer.smtpTransportMod.^ | typings.nodemailer.smtpTransportMod.Options | String
+  type NodeMailerTransportOptions = typings.nodemailer.libMailerMod.^[Any] | typings.nodemailer.libSmtpPoolMod.^ | typings.nodemailer.libSmtpPoolMod.Options | typings.nodemailer.libSendmailTransportMod.^ | typings.nodemailer.libSendmailTransportMod.Options | typings.nodemailer.libStreamTransportMod.^ | typings.nodemailer.libStreamTransportMod.Options | typings.nodemailer.libJsonTransportMod.^ | typings.nodemailer.libJsonTransportMod.Options | typings.nodemailer.libSesTransportMod.^ | typings.nodemailer.libSesTransportMod.Options | typings.nodemailer.libSmtpTransportMod.^ | typings.nodemailer.libSmtpTransportMod.Options | String
   
   // No typedef for https://github.com/forwardemail/preview-email
   trait PreviewEmailOpts extends StObject {

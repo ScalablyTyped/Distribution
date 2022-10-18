@@ -9,14 +9,26 @@ trait `200Content459` extends StObject {
   /** Response */
   var `200`: Content459
   
-  var `404`: Content55
+  var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
+  
+  /** Not Found if the sarif id does not match any upload */
+  var `404`: Any
+  
+  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
 }
 object `200Content459` {
   
-  inline def apply(`200`: Content459, `404`: Content55): `200Content459` = {
+  inline def apply(
+    `200`: Content459,
+    `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any,
+    `404`: Any,
+    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+  ): `200Content459` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+    __obj.updateDynamic("403")(`403`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
+    __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`200Content459`]
   }
   
@@ -24,6 +36,14 @@ object `200Content459` {
     
     inline def set200(value: Content459): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content55): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set403(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['code_scanning_forbidden_read'] */ js.Any
+    ): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    
+    inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    
+    inline def set503(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
   }
 }

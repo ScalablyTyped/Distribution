@@ -1,17 +1,40 @@
 package typings.debouncePromise
 
 import typings.std.Parameters
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
-  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
-  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
-  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Unit, options: DebounceOptions): js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Parameters[T], js.Promise[ReturnType[T]] | ReturnType[T]]]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T): js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double): js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Double, options: DebounceOptions): js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
+  inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](func: T, wait: Unit, options: DebounceOptions): js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* args */ Parameters[T], 
+    /* import warning: importer.ImportType#apply Failed type conversion: std.ReturnType<T> extends std.Promise<any> ? std.ReturnType<T> : std.Promise<std.ReturnType<T>> */ js.Any
+  ]]
   
   @JSImport("debounce-promise", JSImport.Namespace)
   @js.native

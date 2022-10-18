@@ -2,9 +2,9 @@ package typings.ncp
 
 import typings.ncp.mod.File
 import typings.ncp.ncpBooleans.`true`
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.fsMod.PathLike
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object anon {
     var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
       ] = js.undefined
   }
   object OptionserrsPathLike {
@@ -63,7 +63,7 @@ object anon {
       
       inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -85,7 +85,7 @@ object anon {
     var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
       ] = js.undefined
   }
   object Optionserrsundefined {
@@ -121,7 +121,7 @@ object anon {
       
       inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -143,7 +143,7 @@ object anon {
     var stopOnErr: js.UndefOr[Boolean] & `true`
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
       ] = js.undefined
   }
   object OptionsstopOnErrtrue {
@@ -179,7 +179,7 @@ object anon {
       
       inline def setStopOnErr(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

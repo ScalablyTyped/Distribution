@@ -1,6 +1,6 @@
 package typings.c3.mod
 
-import typings.c3.anon.PositionText
+import typings.c3.anon.TextString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ trait YAxisConfiguration
   /**
     * Set label on Y axis.
     */
-  var label: js.UndefOr[String | PositionText] = js.undefined
+  var label: js.UndefOr[String | TextString] = js.undefined
   
   @JSName("max")
   var max_YAxisConfiguration: js.UndefOr[Double] = js.undefined
@@ -61,7 +61,7 @@ object YAxisConfiguration {
     
     inline def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
-    inline def setLabel(value: String | PositionText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | TextString): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

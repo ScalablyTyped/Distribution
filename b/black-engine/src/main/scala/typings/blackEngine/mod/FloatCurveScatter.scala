@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "FloatCurveScatter")
 @js.native
 open class FloatCurveScatter protected ()
-  extends typings.blackEngine.floatCurveScatterMod.FloatCurveScatter {
+  extends typings.blackEngine.scattersFloatCurveScatterMod.FloatCurveScatter {
   def this(points: Double*) = this()
 }

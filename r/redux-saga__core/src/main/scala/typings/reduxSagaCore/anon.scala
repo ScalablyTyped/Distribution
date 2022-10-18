@@ -1,6 +1,5 @@
 package typings.reduxSagaCore
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,9 +39,7 @@ object anon {
     }
   }
   
-  trait Context[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[Any] */, Name /* <: String */] extends StObject {
+  trait Context[Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): any} */ js.Any */, Name /* <: String */] extends StObject {
     
     var context: Ctx
     
@@ -50,16 +47,12 @@ object anon {
   }
   object Context {
     
-    inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in Name ]: (this : Ctx, args : ...any): any}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[Any] */, Name /* <: String */](context: Ctx, fn: Name): Context[Ctx, Name] = {
+    inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): any} */ js.Any */, Name /* <: String */](context: Ctx, fn: Name): Context[Ctx, Name] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context[Ctx, Name]]
     }
     
-    extension [Self <: Context[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in Name ]: (this : Ctx, args : ...any): any}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[Any] */, Name /* <: String */](x: Self & (Context[Ctx, Name])) {
+    extension [Self <: Context[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): any} */ js.Any */, Name /* <: String */](x: Self & (Context[Ctx, Name])) {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -140,9 +133,7 @@ object anon {
     }
   }
   
-  trait Fn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[Any] */, Name /* <: String */] extends StObject {
+  trait Fn[Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): void} */ js.Any */, Name /* <: String */] extends StObject {
     
     var context: Ctx
     
@@ -150,16 +141,12 @@ object anon {
   }
   object Fn {
     
-    inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in Name ]: (this : Ctx, args : ...any): void}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[Any] */, Name /* <: String */](context: Ctx, fn: Name): Fn[Ctx, Name] = {
+    inline def apply[Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): void} */ js.Any */, Name /* <: String */](context: Ctx, fn: Name): Fn[Ctx, Name] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fn[Ctx, Name]]
     }
     
-    extension [Self <: Fn[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in Name ]: (this : Ctx, args : ...any): void}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[Any] */, Name /* <: String */](x: Self & (Fn[Ctx, Name])) {
+    extension [Self <: Fn[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): void} */ js.Any */, Name /* <: String */](x: Self & (Fn[Ctx, Name])) {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

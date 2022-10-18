@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("leaflet", "Popup")
 @js.native
 open class Popup_ () extends DivOverlay {
+  def this(latlng: LatLngExpression) = this()
   def this(options: PopupOptions) = this()
+  def this(latlng: LatLngExpression, options: TooltipOptions) = this()
   def this(options: Unit, source: Layer) = this()
   def this(options: PopupOptions, source: Layer) = this()
   

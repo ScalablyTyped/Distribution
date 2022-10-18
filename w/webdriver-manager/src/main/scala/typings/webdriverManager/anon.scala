@@ -2,8 +2,8 @@ package typings.webdriverManager
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.webdriverManager.binaryMod.OS
-import typings.webdriverManager.mod.Binary
+import typings.webdriverManager.builtLibBinariesBinaryMod.OS
+import typings.webdriverManager.builtLibBinariesMod.Binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

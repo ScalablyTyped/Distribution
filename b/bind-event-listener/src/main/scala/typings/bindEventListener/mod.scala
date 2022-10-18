@@ -1,7 +1,7 @@
 package typings.bindEventListener
 
-import typings.bindEventListener.typesMod.Binding
-import typings.bindEventListener.typesMod.UnbindFn
+import typings.bindEventListener.distTypesMod.Binding
+import typings.bindEventListener.distTypesMod.UnbindFn
 import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject

@@ -1,11 +1,11 @@
 package typings.amqpConnectionManager
 
-import typings.amqpConnectionManager.amqpConnectionManagerMod.AmqpConnectionManagerOptions
-import typings.amqpConnectionManager.amqpConnectionManagerMod.ConnectionUrl
-import typings.amqpConnectionManager.amqpConnectionManagerMod.IAmqpConnectionManager
-import typings.amqpConnectionManager.amqpConnectionManagerMod.default
-import typings.amqpConnectionManager.channelWrapperMod.CreateChannelOpts
-import typings.amqpConnectionManager.channelWrapperMod.PublishOptions
+import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.AmqpConnectionManagerOptions
+import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.ConnectionUrl
+import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.IAmqpConnectionManager
+import typings.amqpConnectionManager.distEsmAmqpConnectionManagerMod.default
+import typings.amqpConnectionManager.distEsmChannelWrapperMod.CreateChannelOpts
+import typings.amqpConnectionManager.distEsmChannelWrapperMod.PublishOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,7 +83,7 @@ object mod {
   @JSImport("amqp-connection-manager", "ChannelWrapper")
   @js.native
   open class ChannelWrapper protected ()
-    extends typings.amqpConnectionManager.channelWrapperMod.default {
+    extends typings.amqpConnectionManager.distEsmChannelWrapperMod.default {
     /**
       * Create a new ChannelWrapper.
       *

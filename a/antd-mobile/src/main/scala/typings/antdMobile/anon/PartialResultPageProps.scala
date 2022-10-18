@@ -45,9 +45,9 @@ import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.antdMobile.antdMobileStrings.waiting
 import typings.antdMobile.antdMobileStrings.warning
-import typings.antdMobile.resultPageResultPageMod.OnClick
-import typings.antdMobile.resultPageResultPageMod.ResultPageDetail
-import typings.antdMobile.resultPageResultPageMod.ResultPageDetails
+import typings.antdMobile.esComponentsResultPageResultPageMod.OnClick
+import typings.antdMobile.esComponentsResultPageResultPageMod.ResultPageDetail
+import typings.antdMobile.esComponentsResultPageResultPageMod.ResultPageDetails
 import typings.react.mod.Booleanish
 import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement

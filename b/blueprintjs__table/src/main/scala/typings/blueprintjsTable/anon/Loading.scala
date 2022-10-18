@@ -8,11 +8,11 @@ trait Loading extends StObject {
   
   var loading: Boolean
   
-  var renderMode: typings.blueprintjsTable.renderModeMod.RenderMode
+  var renderMode: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode
 }
 object Loading {
   
-  inline def apply(loading: Boolean, renderMode: typings.blueprintjsTable.renderModeMod.RenderMode): Loading = {
+  inline def apply(loading: Boolean, renderMode: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode): Loading = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loading]
   }
@@ -21,6 +21,6 @@ object Loading {
     
     inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    inline def setRenderMode(value: typings.blueprintjsTable.renderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+    inline def setRenderMode(value: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
   }
 }

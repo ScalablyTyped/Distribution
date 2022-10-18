@@ -44,9 +44,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def define(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def define(definitions: PartialPageDefinitions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def mixin(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mixin(definitions: PartialPageDefinitions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   inline def use(plugin: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -148,7 +148,7 @@ object mod {
        with PageHooks {
     
     @JSName("mixins")
-    var mixins_PageDefinitions: js.Array[PartialPageDefinitions] = js.native
+    var mixins_PageDefinitions: js.Array[PartialPageDefinitionsAttached] = js.native
   }
   
   trait PageEvents extends StObject {

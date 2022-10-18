@@ -1,7 +1,7 @@
 package typings.luminoCollections
 
-import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
-import typings.luminoCollections.linkedlistMod.LinkedList.INode
+import typings.luminoAlgorithm.typesIterMod.IterableOrArrayLike
+import typings.luminoCollections.typesLinkedlistMod.LinkedList.INode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object mod {
   @JSImport("@lumino/collections", "BPlusTree")
   @js.native
   open class BPlusTree[T] protected ()
-    extends typings.luminoCollections.bplustreeMod.BPlusTree[T] {
+    extends typings.luminoCollections.typesBplustreeMod.BPlusTree[T] {
     /**
       * Construct a new B+ tree.
       *
@@ -37,13 +37,13 @@ object mod {
       * #### Complexity
       * `O(n log32 n)`
       */
-    inline def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.bplustreeMod.BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[typings.luminoCollections.bplustreeMod.BPlusTree[T]]
+    inline def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.typesBplustreeMod.BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[typings.luminoCollections.typesBplustreeMod.BPlusTree[T]]
   }
   
   @JSImport("@lumino/collections", "LinkedList")
   @js.native
   open class LinkedList[T] ()
-    extends typings.luminoCollections.linkedlistMod.LinkedList[T]
+    extends typings.luminoCollections.typesLinkedlistMod.LinkedList[T]
   object LinkedList {
     
     @JSImport("@lumino/collections", "LinkedList")
@@ -61,7 +61,7 @@ object mod {
       * @param node - The first node in the list.
       */
     open class ForwardNodeIterator[T] ()
-      extends typings.luminoCollections.linkedlistMod.LinkedList.ForwardNodeIterator[T] {
+      extends typings.luminoCollections.typesLinkedlistMod.LinkedList.ForwardNodeIterator[T] {
       def this(node: INode[T]) = this()
     }
     
@@ -76,7 +76,7 @@ object mod {
       * @param node - The first node in the list.
       */
     open class ForwardValueIterator[T] ()
-      extends typings.luminoCollections.linkedlistMod.LinkedList.ForwardValueIterator[T] {
+      extends typings.luminoCollections.typesLinkedlistMod.LinkedList.ForwardValueIterator[T] {
       def this(node: INode[T]) = this()
     }
     
@@ -91,7 +91,7 @@ object mod {
       * @param node - The last node in the list.
       */
     open class RetroNodeIterator[T] ()
-      extends typings.luminoCollections.linkedlistMod.LinkedList.RetroNodeIterator[T] {
+      extends typings.luminoCollections.typesLinkedlistMod.LinkedList.RetroNodeIterator[T] {
       def this(node: INode[T]) = this()
     }
     
@@ -106,7 +106,7 @@ object mod {
       * @param node - The last node in the list.
       */
     open class RetroValueIterator[T] ()
-      extends typings.luminoCollections.linkedlistMod.LinkedList.RetroValueIterator[T] {
+      extends typings.luminoCollections.typesLinkedlistMod.LinkedList.RetroValueIterator[T] {
       def this(node: INode[T]) = this()
     }
     
@@ -120,6 +120,6 @@ object mod {
       * #### Complexity
       * Linear.
       */
-    inline def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[typings.luminoCollections.linkedlistMod.LinkedList[T]]
+    inline def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.typesLinkedlistMod.LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[typings.luminoCollections.typesLinkedlistMod.LinkedList[T]]
   }
 }

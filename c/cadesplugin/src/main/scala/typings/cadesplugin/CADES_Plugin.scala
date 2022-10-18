@@ -223,13 +223,13 @@ object CADES_Plugin {
   
   trait SignedXmlUrls extends StObject {
     
-    val XmlDsigGost3410Url: String
+    val XmlDsigGost3410Url: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411 */ String
     
-    val XmlDsigGost3410Url2012256: String
+    val XmlDsigGost3410Url2012256: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256 */ String
     
-    val XmlDsigGost3410Url2012512: String
+    val XmlDsigGost3410Url2012512: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-512 */ String
     
-    val XmlDsigGost3410UrlObsolete: String
+    val XmlDsigGost3410UrlObsolete: /* http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411 */ String
     
     val XmlDsigGost3411Url: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411
     
@@ -248,13 +248,13 @@ object CADES_Plugin {
     
     extension [Self <: SignedXmlUrls](x: Self) {
       
-      inline def setXmlDsigGost3410Url(value: String): Self = StObject.set(x, "XmlDsigGost3410Url", value.asInstanceOf[js.Any])
+      inline def setXmlDsigGost3410Url(value: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411 */ String): Self = StObject.set(x, "XmlDsigGost3410Url", value.asInstanceOf[js.Any])
       
-      inline def setXmlDsigGost3410Url2012256(value: String): Self = StObject.set(x, "XmlDsigGost3410Url2012256", value.asInstanceOf[js.Any])
+      inline def setXmlDsigGost3410Url2012256(value: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256 */ String): Self = StObject.set(x, "XmlDsigGost3410Url2012256", value.asInstanceOf[js.Any])
       
-      inline def setXmlDsigGost3410Url2012512(value: String): Self = StObject.set(x, "XmlDsigGost3410Url2012512", value.asInstanceOf[js.Any])
+      inline def setXmlDsigGost3410Url2012512(value: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-512 */ String): Self = StObject.set(x, "XmlDsigGost3410Url2012512", value.asInstanceOf[js.Any])
       
-      inline def setXmlDsigGost3410UrlObsolete(value: String): Self = StObject.set(x, "XmlDsigGost3410UrlObsolete", value.asInstanceOf[js.Any])
+      inline def setXmlDsigGost3410UrlObsolete(value: /* http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411 */ String): Self = StObject.set(x, "XmlDsigGost3410UrlObsolete", value.asInstanceOf[js.Any])
       
       inline def setXmlDsigGost3411Url(value: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411): Self = StObject.set(x, "XmlDsigGost3411Url", value.asInstanceOf[js.Any])
       

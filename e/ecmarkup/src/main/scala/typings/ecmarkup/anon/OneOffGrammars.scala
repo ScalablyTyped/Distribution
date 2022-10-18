@@ -23,6 +23,6 @@ object OneOffGrammars {
     
     inline def setOneOffGrammars(value: js.Array[GrammarEle]): Self = StObject.set(x, "oneOffGrammars", value.asInstanceOf[js.Any])
     
-    inline def setOneOffGrammarsVarargs(value: GrammarEle*): Self = StObject.set(x, "oneOffGrammars", js.Array(value :_*))
+    inline def setOneOffGrammarsVarargs(value: GrammarEle*): Self = StObject.set(x, "oneOffGrammars", js.Array(value*))
   }
 }

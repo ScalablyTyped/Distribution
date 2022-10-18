@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "TextureBlock")
 @js.native
 open class TextureBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.TextureBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.TextureBlock {
   /**
     * Create a new TextureBlock
     * @param name defines the block name

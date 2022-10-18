@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ParticleTextureBlock")
 @js.native
 open class ParticleTextureBlock protected ()
-  extends typings.babylonjs.legacyMod.ParticleTextureBlock {
+  extends typings.babylonjs.legacyLegacyMod.ParticleTextureBlock {
   /**
     * Create a new ParticleTextureBlock
     * @param name defines the block name

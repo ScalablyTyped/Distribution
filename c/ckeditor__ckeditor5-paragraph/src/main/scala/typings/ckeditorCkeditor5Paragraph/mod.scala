@@ -14,7 +14,7 @@ import typings.ckeditorCkeditor5Paragraph.ckeditorCkeditor5ParagraphStrings.li
 import typings.ckeditorCkeditor5Paragraph.ckeditorCkeditor5ParagraphStrings.p
 import typings.ckeditorCkeditor5Paragraph.ckeditorCkeditor5ParagraphStrings.td
 import typings.ckeditorCkeditor5Paragraph.ckeditorCkeditor5ParagraphStrings.th
-import typings.ckeditorCkeditor5Paragraph.paragraphMod.default
+import typings.ckeditorCkeditor5Paragraph.srcParagraphMod.default
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,7 +45,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-paragraph", "ParagraphButtonUI")
   @js.native
   open class ParagraphButtonUI protected ()
-    extends typings.ckeditorCkeditor5Paragraph.paragraphbuttonuiMod.default {
+    extends typings.ckeditorCkeditor5Paragraph.srcParagraphbuttonuiMod.default {
     def this(editor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorWithUI */ Any) = this()
   }
 }

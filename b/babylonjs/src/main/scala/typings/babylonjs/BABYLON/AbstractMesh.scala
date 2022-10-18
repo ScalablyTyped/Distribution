@@ -1116,6 +1116,14 @@ trait AbstractMesh
   var physicsImpostor: Nullable[PhysicsImpostor] = js.native
   
   /**
+    * Gets or sets the property which disables the test that is checking that the mesh under the pointer is the same than the previous time we tested for it (default: false).
+    * Set this property to true if you want thin instances picking to be reported accurately when moving over the mesh.
+    * Note that setting this property to true will incur some performance penalties when dealing with pointer events for this mesh so use it sparingly.
+    */
+  def pointerOverDisableMeshTesting: Boolean = js.native
+  def pointerOverDisableMeshTesting_=(disable: Boolean): Unit = js.native
+  
+  /**
     * Gets or sets a boolean indicating that this mesh can receive realtime shadows
     * @see https://doc.babylonjs.com/babylon101/shadows
     */

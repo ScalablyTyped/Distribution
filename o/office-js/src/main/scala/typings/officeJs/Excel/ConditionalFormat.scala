@@ -6,7 +6,6 @@ import typings.officeJs.Excel.Interfaces.ConditionalFormatUpdateData
 import typings.officeJs.OfficeExtension.ClientObject
 import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.anon.Expand
-import typings.officeJs.officeJsStrings.CellValue
 import typings.officeJs.officeJsStrings.ColorScale
 import typings.officeJs.officeJsStrings.ContainsText
 import typings.officeJs.officeJsStrings.Custom
@@ -260,5 +259,5 @@ trait ConditionalFormat
     * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  val `type`: ConditionalFormatType | Custom | DataBar | ColorScale | typings.officeJs.officeJsStrings.IconSet | TopBottom | PresetCriteria | ContainsText | CellValue = js.native
+  val `type`: ConditionalFormatType | Custom | DataBar | ColorScale | typings.officeJs.officeJsStrings.IconSet | TopBottom | PresetCriteria | ContainsText | typings.officeJs.officeJsStrings.CellValue = js.native
 }

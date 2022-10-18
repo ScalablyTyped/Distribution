@@ -1,15 +1,15 @@
 package typings.antvG2.libInterfaceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antvComponent.typesMod.ContinueLegendHandlerCfg
-import typings.antvComponent.typesMod.ContinueLegendLabelCfg
-import typings.antvComponent.typesMod.ContinueLegendRailCfg
-import typings.antvComponent.typesMod.ContinueLegendTrackCfg
-import typings.antvComponent.typesMod.LegendBackgroundCfg
-import typings.antvComponent.typesMod.LegendItemNameCfg
-import typings.antvComponent.typesMod.LegendItemValueCfg
-import typings.antvComponent.typesMod.LegendPageNavigatorCfg
-import typings.antvComponent.typesMod.LegendRadio
+import typings.antvComponent.libTypesMod.ContinueLegendHandlerCfg
+import typings.antvComponent.libTypesMod.ContinueLegendLabelCfg
+import typings.antvComponent.libTypesMod.ContinueLegendRailCfg
+import typings.antvComponent.libTypesMod.ContinueLegendTrackCfg
+import typings.antvComponent.libTypesMod.LegendBackgroundCfg
+import typings.antvComponent.libTypesMod.LegendItemNameCfg
+import typings.antvComponent.libTypesMod.LegendItemValueCfg
+import typings.antvComponent.libTypesMod.LegendPageNavigatorCfg
+import typings.antvComponent.libTypesMod.LegendRadio
 import typings.antvG2.anon.namestringvaluestringMark
 import typings.antvG2.antvG2Strings.`bottom-left`
 import typings.antvG2.antvG2Strings.`bottom-right`
@@ -25,7 +25,7 @@ import typings.antvG2.antvG2Strings.left
 import typings.antvG2.antvG2Strings.right
 import typings.antvG2.antvG2Strings.top
 import typings.antvG2.antvG2Strings.vertical
-import typings.antvGBase.interfacesMod.IGroup
+import typings.antvGBase.libInterfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

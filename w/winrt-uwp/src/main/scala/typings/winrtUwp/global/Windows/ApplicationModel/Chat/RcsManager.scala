@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to APIs for handling Rich Communication Services (RCS) messages. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsManager")
 @js.native
-abstract class RcsManager ()
+open class RcsManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsManager
 object RcsManager {

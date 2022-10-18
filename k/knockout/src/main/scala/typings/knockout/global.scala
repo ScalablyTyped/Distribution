@@ -402,9 +402,9 @@ object global {
       inline def scheduler_=(x: js.Function1[/* callback */ js.Function0[Any], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
     }
     
-    @JSGlobal("ko.templateEngine")
+    /* note: abstract class */ @JSGlobal("ko.templateEngine")
     @js.native
-    abstract class templateEngine ()
+    open class templateEngine ()
       extends typings.knockout.mod.templateEngine
     
     object templateSources {

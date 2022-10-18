@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait RecurrenceType extends StObject
 /**
   * Specifies the type of recurrence.
-  * 
+  *
   * @remarks
   * [Api set: Mailbox 1.7]
-  * 
+  *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.RecurrenceType")

@@ -29,21 +29,21 @@ object Angle {
     * @returns a new Angle
     */
   inline def BetweenTwoPoints(
-    a: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
-    b: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
-  ): typings.babylonjs.mathPathMod.Angle = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenTwoPoints")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathPathMod.Angle]
+    a: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector2],
+    b: DeepImmutable[typings.babylonjs.mathsMathDotvectorMod.Vector2]
+  ): typings.babylonjs.mathsMathDotpathMod.Angle = (^.asInstanceOf[js.Dynamic].applyDynamic("BetweenTwoPoints")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathsMathDotpathMod.Angle]
   
   /**
     * Gets a new Angle object from the given float in degrees
     * @param degrees defines the angle value in degrees
     * @returns a new Angle
     */
-  inline def FromDegrees(degrees: Double): typings.babylonjs.mathPathMod.Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDegrees")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPathMod.Angle]
+  inline def FromDegrees(degrees: Double): typings.babylonjs.mathsMathDotpathMod.Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDegrees")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotpathMod.Angle]
   
   /**
     * Gets a new Angle object from the given float in radians
     * @param radians defines the angle value in radians
     * @returns a new Angle
     */
-  inline def FromRadians(radians: Double): typings.babylonjs.mathPathMod.Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromRadians")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathPathMod.Angle]
+  inline def FromRadians(radians: Double): typings.babylonjs.mathsMathDotpathMod.Angle = ^.asInstanceOf[js.Dynamic].applyDynamic("FromRadians")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathsMathDotpathMod.Angle]
 }

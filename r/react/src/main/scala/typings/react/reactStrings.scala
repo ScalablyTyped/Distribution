@@ -21,20 +21,8 @@ object reactStrings {
   inline def A: A = "A".asInstanceOf[A]
   
   @js.native
-  sealed trait Fn1 extends StObject
-  inline def Fn1: Fn1 = "Fn1".asInstanceOf[Fn1]
-  
-  @js.native
   sealed trait I extends StObject
   inline def I: I = "I".asInstanceOf[I]
-  
-  @js.native
-  sealed trait InexactPartial extends StObject
-  inline def InexactPartial: InexactPartial = "InexactPartial".asInstanceOf[InexactPartial]
-  
-  @js.native
-  sealed trait WeakValidationMap extends StObject
-  inline def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   
   @js.native
   sealed trait _blank
@@ -1195,10 +1183,6 @@ object reactStrings {
   @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
-  
-  @js.native
-  sealed trait ref extends StObject
-  inline def ref: ref = "ref".asInstanceOf[ref]
   
   @js.native
   sealed trait region

@@ -1,7 +1,7 @@
 package typings.node.anon
 
-import typings.node.nodeTestMod.TestFn
-import typings.node.nodeTestMod.TestOptions
+import typings.node.nodeColontestMod.TestFn
+import typings.node.nodeColontestMod.TestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

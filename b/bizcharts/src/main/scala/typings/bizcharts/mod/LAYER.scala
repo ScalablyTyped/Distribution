@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LAYER extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.antvG2.constantMod.LAYER & String] = js.native
+  def apply(value: String): js.UndefOr[typings.antvG2.libConstantMod.LAYER & String] = js.native
   
-  /* "bg" */ val BG: typings.antvG2.constantMod.LAYER.BG & String = js.native
+  /* "bg" */ val BG: typings.antvG2.libConstantMod.LAYER.BG & String = js.native
   
-  /* "fore" */ val FORE: typings.antvG2.constantMod.LAYER.FORE & String = js.native
+  /* "fore" */ val FORE: typings.antvG2.libConstantMod.LAYER.FORE & String = js.native
   
-  /* "mid" */ val MID: typings.antvG2.constantMod.LAYER.MID & String = js.native
+  /* "mid" */ val MID: typings.antvG2.libConstantMod.LAYER.MID & String = js.native
 }

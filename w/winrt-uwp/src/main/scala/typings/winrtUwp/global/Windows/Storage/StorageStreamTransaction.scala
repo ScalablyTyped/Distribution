@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a write transaction for a random-access stream. */
-@JSGlobal("Windows.Storage.StorageStreamTransaction")
+/* note: abstract class */ @JSGlobal("Windows.Storage.StorageStreamTransaction")
 @js.native
-abstract class StorageStreamTransaction ()
+open class StorageStreamTransaction ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.StorageStreamTransaction {
   

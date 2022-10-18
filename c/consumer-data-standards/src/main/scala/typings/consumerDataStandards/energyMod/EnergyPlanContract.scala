@@ -1,15 +1,7 @@
 package typings.consumerDataStandards.energyMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.consumerDataStandards.anon.Category
-import typings.consumerDataStandards.anon.DailyCharge
-import typings.consumerDataStandards.anon.DailySupplyCharges
-import typings.consumerDataStandards.anon.Eligibility
 import typings.consumerDataStandards.anon.GreenPercentage
-import typings.consumerDataStandards.anon.Information
-import typings.consumerDataStandards.anon.PayerType
-import typings.consumerDataStandards.anon.Scheme
-import typings.consumerDataStandards.anon.Term
 import typings.consumerDataStandards.consumerDataStandardsStrings.AEST
 import typings.consumerDataStandards.consumerDataStandardsStrings.BPAY
 import typings.consumerDataStandards.consumerDataStandardsStrings.CREDIT_CARD
@@ -40,32 +32,32 @@ trait EnergyPlanContract
   /**
     * Required if pricing model is SINGLE_RATE_CONT_LOAD or TIME_OF_USE_CONT_LOAD or FLEXIBLE_CONT_LOAD
     */
-  var controlledLoad: js.UndefOr[DailyCharge] = js.undefined
+  var controlledLoad: js.UndefOr[js.Array[EnergyPlanControlledLoad]] = js.undefined
   
   /**
     * Optional list of discounts available for the contract
     */
-  var discounts: js.UndefOr[js.Array[Category]] = js.undefined
+  var discounts: js.UndefOr[js.Array[EnergyPlanDiscounts]] = js.undefined
   
   /**
     * Eligibility restrictions or requirements
     */
-  var eligibility: js.UndefOr[js.Array[Information]] = js.undefined
+  var eligibility: js.UndefOr[js.Array[EnergyPlanEligibility]] = js.undefined
   
   /**
     * An array of fees applicable to the plan
     */
-  var fees: js.UndefOr[js.Array[Term]] = js.undefined
+  var fees: js.UndefOr[js.Array[EnergyPlanFees]] = js.undefined
   
   /**
     * Optional list of charges applicable to green power
     */
-  var greenPowerCharges: js.UndefOr[js.Array[Scheme]] = js.undefined
+  var greenPowerCharges: js.UndefOr[js.Array[EnergyPlanGreenPowerCharges]] = js.undefined
   
   /**
     * Optional list of incentives available for the contract
     */
-  var incentives: js.UndefOr[js.Array[Eligibility]] = js.undefined
+  var incentives: js.UndefOr[js.Array[EnergyPlanIncentives]] = js.undefined
   
   /**
     * Describes intrinsic green power for the plan.  If present then the plan includes a percentage of green power in the base plan. Should not be present for gas contracts
@@ -95,12 +87,12 @@ trait EnergyPlanContract
   /**
     * Array of feed in tariffs for solar power
     */
-  var solarFeedInTariff: js.UndefOr[js.Array[PayerType]] = js.undefined
+  var solarFeedInTariff: js.UndefOr[js.Array[EnergyPlanSolarFeedInTariff]] = js.undefined
   
   /**
     * Array of tariff periods
     */
-  var tariffPeriod: js.Array[DailySupplyCharges]
+  var tariffPeriod: js.Array[EnergyPlanTariffPeriod]
   
   /**
     * Required if pricingModel is set to TIME_OF_USE.  Defines the time zone to use for calculation of the time of use thresholds. Defaults to AEST if absent
@@ -108,7 +100,7 @@ trait EnergyPlanContract
   var timeZone: js.UndefOr[LOCAL | AEST | Null] = js.undefined
   
   /**
-    * Free text description of price variation policy and conditions for the contract.  Mandatory if isFixed is true
+    * Free text description of price variation policy and conditions for the contract.  Mandatory if `isFixed` is false
     */
   var variation: js.UndefOr[String | Null] = js.undefined
 }
@@ -118,7 +110,7 @@ object EnergyPlanContract {
     isFixed: Boolean,
     paymentOption: js.Array[PAPER_BILL | CREDIT_CARD | DIRECT_DEBIT | BPAY | OTHER],
     pricingModel: SINGLE_RATE | SINGLE_RATE_CONT_LOAD | TIME_OF_USE | TIME_OF_USE_CONT_LOAD | FLEXIBLE | FLEXIBLE_CONT_LOAD | QUOTA,
-    tariffPeriod: js.Array[DailySupplyCharges]
+    tariffPeriod: js.Array[EnergyPlanTariffPeriod]
   ): EnergyPlanContract = {
     val __obj = js.Dynamic.literal(isFixed = isFixed.asInstanceOf[js.Any], paymentOption = paymentOption.asInstanceOf[js.Any], pricingModel = pricingModel.asInstanceOf[js.Any], tariffPeriod = tariffPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyPlanContract]
@@ -132,39 +124,41 @@ object EnergyPlanContract {
     
     inline def setAdditionalFeeInformationUndefined: Self = StObject.set(x, "additionalFeeInformation", js.undefined)
     
-    inline def setControlledLoad(value: DailyCharge): Self = StObject.set(x, "controlledLoad", value.asInstanceOf[js.Any])
+    inline def setControlledLoad(value: js.Array[EnergyPlanControlledLoad]): Self = StObject.set(x, "controlledLoad", value.asInstanceOf[js.Any])
     
     inline def setControlledLoadUndefined: Self = StObject.set(x, "controlledLoad", js.undefined)
     
-    inline def setDiscounts(value: js.Array[Category]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
+    inline def setControlledLoadVarargs(value: EnergyPlanControlledLoad*): Self = StObject.set(x, "controlledLoad", js.Array(value*))
+    
+    inline def setDiscounts(value: js.Array[EnergyPlanDiscounts]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
     
     inline def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
-    inline def setDiscountsVarargs(value: Category*): Self = StObject.set(x, "discounts", js.Array(value*))
+    inline def setDiscountsVarargs(value: EnergyPlanDiscounts*): Self = StObject.set(x, "discounts", js.Array(value*))
     
-    inline def setEligibility(value: js.Array[Information]): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
+    inline def setEligibility(value: js.Array[EnergyPlanEligibility]): Self = StObject.set(x, "eligibility", value.asInstanceOf[js.Any])
     
     inline def setEligibilityUndefined: Self = StObject.set(x, "eligibility", js.undefined)
     
-    inline def setEligibilityVarargs(value: Information*): Self = StObject.set(x, "eligibility", js.Array(value*))
+    inline def setEligibilityVarargs(value: EnergyPlanEligibility*): Self = StObject.set(x, "eligibility", js.Array(value*))
     
-    inline def setFees(value: js.Array[Term]): Self = StObject.set(x, "fees", value.asInstanceOf[js.Any])
+    inline def setFees(value: js.Array[EnergyPlanFees]): Self = StObject.set(x, "fees", value.asInstanceOf[js.Any])
     
     inline def setFeesUndefined: Self = StObject.set(x, "fees", js.undefined)
     
-    inline def setFeesVarargs(value: Term*): Self = StObject.set(x, "fees", js.Array(value*))
+    inline def setFeesVarargs(value: EnergyPlanFees*): Self = StObject.set(x, "fees", js.Array(value*))
     
-    inline def setGreenPowerCharges(value: js.Array[Scheme]): Self = StObject.set(x, "greenPowerCharges", value.asInstanceOf[js.Any])
+    inline def setGreenPowerCharges(value: js.Array[EnergyPlanGreenPowerCharges]): Self = StObject.set(x, "greenPowerCharges", value.asInstanceOf[js.Any])
     
     inline def setGreenPowerChargesUndefined: Self = StObject.set(x, "greenPowerCharges", js.undefined)
     
-    inline def setGreenPowerChargesVarargs(value: Scheme*): Self = StObject.set(x, "greenPowerCharges", js.Array(value*))
+    inline def setGreenPowerChargesVarargs(value: EnergyPlanGreenPowerCharges*): Self = StObject.set(x, "greenPowerCharges", js.Array(value*))
     
-    inline def setIncentives(value: js.Array[Eligibility]): Self = StObject.set(x, "incentives", value.asInstanceOf[js.Any])
+    inline def setIncentives(value: js.Array[EnergyPlanIncentives]): Self = StObject.set(x, "incentives", value.asInstanceOf[js.Any])
     
     inline def setIncentivesUndefined: Self = StObject.set(x, "incentives", js.undefined)
     
-    inline def setIncentivesVarargs(value: Eligibility*): Self = StObject.set(x, "incentives", js.Array(value*))
+    inline def setIncentivesVarargs(value: EnergyPlanIncentives*): Self = StObject.set(x, "incentives", js.Array(value*))
     
     inline def setIntrinsicGreenPower(value: GreenPercentage): Self = StObject.set(x, "intrinsicGreenPower", value.asInstanceOf[js.Any])
     
@@ -188,15 +182,15 @@ object EnergyPlanContract {
       value: SINGLE_RATE | SINGLE_RATE_CONT_LOAD | TIME_OF_USE | TIME_OF_USE_CONT_LOAD | FLEXIBLE | FLEXIBLE_CONT_LOAD | QUOTA
     ): Self = StObject.set(x, "pricingModel", value.asInstanceOf[js.Any])
     
-    inline def setSolarFeedInTariff(value: js.Array[PayerType]): Self = StObject.set(x, "solarFeedInTariff", value.asInstanceOf[js.Any])
+    inline def setSolarFeedInTariff(value: js.Array[EnergyPlanSolarFeedInTariff]): Self = StObject.set(x, "solarFeedInTariff", value.asInstanceOf[js.Any])
     
     inline def setSolarFeedInTariffUndefined: Self = StObject.set(x, "solarFeedInTariff", js.undefined)
     
-    inline def setSolarFeedInTariffVarargs(value: PayerType*): Self = StObject.set(x, "solarFeedInTariff", js.Array(value*))
+    inline def setSolarFeedInTariffVarargs(value: EnergyPlanSolarFeedInTariff*): Self = StObject.set(x, "solarFeedInTariff", js.Array(value*))
     
-    inline def setTariffPeriod(value: js.Array[DailySupplyCharges]): Self = StObject.set(x, "tariffPeriod", value.asInstanceOf[js.Any])
+    inline def setTariffPeriod(value: js.Array[EnergyPlanTariffPeriod]): Self = StObject.set(x, "tariffPeriod", value.asInstanceOf[js.Any])
     
-    inline def setTariffPeriodVarargs(value: DailySupplyCharges*): Self = StObject.set(x, "tariffPeriod", js.Array(value*))
+    inline def setTariffPeriodVarargs(value: EnergyPlanTariffPeriod*): Self = StObject.set(x, "tariffPeriod", js.Array(value*))
     
     inline def setTimeZone(value: LOCAL | AEST): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

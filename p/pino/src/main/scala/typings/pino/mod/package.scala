@@ -1,10 +1,10 @@
 package typings.pino.mod
 
+import typings.node.NodeJS.WritableStream
 import typings.pino.mod.^
 import typings.sonicBoom.mod.SonicBoom
 import typings.sonicBoom.mod.SonicBoomOpts
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def destination: js.Function1[
 /* dest */ js.UndefOr[
-  String | Double | SonicBoomOpts | typings.pino.mod.pino.DestinationStream | WritableStream[Any]
+  String | Double | SonicBoomOpts | typings.pino.mod.pino.DestinationStream | WritableStream
 ], 
 SonicBoom] = ^.asInstanceOf[js.Dynamic].selectDynamic("destination").asInstanceOf[js.Function1[
 /* dest */ js.UndefOr[
-  String | Double | SonicBoomOpts | typings.pino.mod.pino.DestinationStream | WritableStream[Any]
+  String | Double | SonicBoomOpts | typings.pino.mod.pino.DestinationStream | WritableStream
 ], 
 SonicBoom]]
 
@@ -41,10 +41,6 @@ type BaseLogger = typings.pino.mod.pino.BaseLogger
 type Bindings = typings.pino.mod.pino.Bindings
 
 type ChildLoggerOptions = typings.pino.mod.pino.ChildLoggerOptions
-
-type CustomLevelLogger[Options] = Record[
-(/* import warning: importer.ImportType#apply Failed type conversion: keyof Options['customLevels'] */ js.Any) | scala.Nothing, 
-LogFn]
 
 type DestinationStream = typings.pino.mod.pino.DestinationStream
 

@@ -1,6 +1,6 @@
 package typings.reactFloater.anon
 
-import typings.reactFloater.popperMod.PopperPlacement
+import typings.reactFloater.libTypesPopperMod.PopperPlacement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

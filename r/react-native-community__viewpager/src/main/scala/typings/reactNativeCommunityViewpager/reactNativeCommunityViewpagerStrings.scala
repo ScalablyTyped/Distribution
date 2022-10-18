@@ -1,9 +1,9 @@
 package typings.reactNativeCommunityViewpager
 
-import typings.reactNativeCommunityViewpager.typesMod.Orientation
-import typings.reactNativeCommunityViewpager.typesMod.OverScrollMode
-import typings.reactNativeCommunityViewpager.typesMod.PageScrollState
-import typings.reactNativeCommunityViewpager.typesMod.TransitionStyle
+import typings.reactNativeCommunityViewpager.libTypescriptSrcTypesMod.Orientation
+import typings.reactNativeCommunityViewpager.libTypescriptSrcTypesMod.OverScrollMode
+import typings.reactNativeCommunityViewpager.libTypescriptSrcTypesMod.PageScrollState
+import typings.reactNativeCommunityViewpager.libTypescriptSrcTypesMod.TransitionStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

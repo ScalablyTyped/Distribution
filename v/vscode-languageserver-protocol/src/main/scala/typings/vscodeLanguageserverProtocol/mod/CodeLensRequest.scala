@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensParams
-import typings.vscodeLanguageserverProtocol.protocolMod.CodeLensRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.CodeLensParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.CodeLensRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashcodeLens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object CodeLensRequest {
   
   @JSImport("vscode-languageserver-protocol", "CodeLensRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "CodeLensRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object CodeLensRequest {
   
   @JSImport("vscode-languageserver-protocol", "CodeLensRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     CodeLensParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens] | Null, 
     js.Array[typings.vscodeLanguageserverTypes.mod.CodeLens], 

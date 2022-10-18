@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.babylonjs.thinEngineMod.ThinEngine
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "UniformBuffer")
 @js.native
 open class UniformBuffer protected ()
-  extends typings.babylonjs.uniformBufferMod.UniformBuffer {
+  extends typings.babylonjs.materialsUniformBufferMod.UniformBuffer {
   /**
     * Instantiates a new Uniform buffer objects.
     *

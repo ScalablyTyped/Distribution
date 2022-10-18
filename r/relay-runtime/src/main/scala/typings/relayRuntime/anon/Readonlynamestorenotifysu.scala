@@ -1,9 +1,9 @@
 package typings.relayRuntime.anon
 
+import typings.relayRuntime.libStoreRelayStoreTypesMod.LogEvent
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Snapshot
 import typings.relayRuntime.relayRuntimeStrings.storeDotnotifyDotsubscription
-import typings.relayRuntime.relayStoreTypesMod.LogEvent
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
-import typings.relayRuntime.relayStoreTypesMod.Snapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

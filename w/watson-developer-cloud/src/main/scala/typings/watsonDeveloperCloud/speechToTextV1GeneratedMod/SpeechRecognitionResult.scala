@@ -30,7 +30,7 @@ object SpeechRecognitionResult {
     
     inline def setAlternatives(value: js.Array[SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    inline def setAlternativesVarargs(value: SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value*))
     
     inline def setFinal_results(value: Boolean): Self = StObject.set(x, "final_results", value.asInstanceOf[js.Any])
     
@@ -42,6 +42,6 @@ object SpeechRecognitionResult {
     
     inline def setWord_alternativesUndefined: Self = StObject.set(x, "word_alternatives", js.undefined)
     
-    inline def setWord_alternativesVarargs(value: WordAlternativeResults*): Self = StObject.set(x, "word_alternatives", js.Array(value :_*))
+    inline def setWord_alternativesVarargs(value: WordAlternativeResults*): Self = StObject.set(x, "word_alternatives", js.Array(value*))
   }
 }

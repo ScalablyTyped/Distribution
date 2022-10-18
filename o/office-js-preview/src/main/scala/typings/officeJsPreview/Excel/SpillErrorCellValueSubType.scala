@@ -10,8 +10,7 @@ sealed trait SpillErrorCellValueSubType extends StObject
   * Represents types of #SPILL! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.SpillErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An error caused by a dynamic array attempting to spill data into a cell that isn't empty. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait collision
@@ -33,8 +31,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An error caused by a dynamic array formula that can't be evaluated in a single calculation. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait indeterminateSize
@@ -45,8 +42,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An error caused by a merged cell blocking a dynamic array. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait mergedCell
@@ -57,8 +53,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An error caused by insufficient memory when attempting to calculate a dynamic array formula. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait outOfMemoryWhileCalc
@@ -69,8 +64,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An error caused by entering a dynamic array formula in a table. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait table
@@ -81,8 +75,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown
@@ -93,8 +86,7 @@ object SpillErrorCellValueSubType extends StObject {
     * An error caused by a dynamic array attempting to spill over the edge of the worksheet. Displays as error type #SPILL! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait worksheetEdge

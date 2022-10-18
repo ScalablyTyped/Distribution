@@ -1,6 +1,6 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalBrowser.ipublicclientapplicationMod.IPublicClientApplication
+import typings.azureMsalBrowser.distAppIpublicclientapplicationMod.IPublicClientApplication
 import typings.azureMsalBrowser.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SceneComponentConstants")
 @js.native
 open class SceneComponentConstants ()
-  extends typings.babylonjs.legacyMod.SceneComponentConstants
+  extends typings.babylonjs.legacyLegacyMod.SceneComponentConstants
 /* static members */
 object SceneComponentConstants {
   

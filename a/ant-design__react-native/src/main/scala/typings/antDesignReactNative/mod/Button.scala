@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.Disabled
-import typings.antDesignReactNative.buttonMod.ButtonProps
-import typings.antDesignReactNative.buttonMod.default
+import typings.antDesignReactNative.libButtonMod.ButtonProps
+import typings.antDesignReactNative.libButtonMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

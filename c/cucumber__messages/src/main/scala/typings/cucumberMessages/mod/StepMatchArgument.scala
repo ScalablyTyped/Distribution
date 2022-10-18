@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "StepMatchArgument")
 @js.native
 open class StepMatchArgument ()
-  extends typings.cucumberMessages.messagesMod.StepMatchArgument
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.StepMatchArgument

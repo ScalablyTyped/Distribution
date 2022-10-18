@@ -1,6 +1,6 @@
 package typings.angularDevkitCore
 
-import typings.angularDevkitCore.hostInterfaceMod.HostWatchEventType
+import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.HostWatchEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

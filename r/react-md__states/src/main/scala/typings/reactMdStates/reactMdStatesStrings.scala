@@ -1,7 +1,7 @@
 package typings.reactMdStates
 
-import typings.reactMdStates.typesMod.MergableRippleHandlerNames
-import typings.reactMdStates.typesMod.RippleType
+import typings.reactMdStates.typesRipplesTypesMod.MergableRippleHandlerNames
+import typings.reactMdStates.typesRipplesTypesMod.RippleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

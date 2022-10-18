@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-nested
 
-Typings are for version 5.0.6
+Typings are for version 6.0.0
 
 ## Library description:
 PostCSS plugin to unwrap nested rules like how Sass does it

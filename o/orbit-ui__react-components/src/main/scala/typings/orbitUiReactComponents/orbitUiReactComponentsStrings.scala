@@ -1,14 +1,14 @@
 package typings.orbitUiReactComponents
 
-import typings.orbitUiReactComponents.adaptersMod.Alignment
-import typings.orbitUiReactComponents.adaptersMod.Direction
-import typings.orbitUiReactComponents.adaptersMod.Orientation
-import typings.orbitUiReactComponents.sizeMod.Size
-import typings.orbitUiReactComponents.srcMenuMod.SelectionMode
-import typings.orbitUiReactComponents.srcThemeProviderMod.ColorScheme
-import typings.orbitUiReactComponents.srcThemeProviderMod.ColorSchemeOrSystem
-import typings.orbitUiReactComponents.srcThemeProviderMod.Theme
-import typings.orbitUiReactComponents.useOverlayTriggerMod.OverlayTrigger
+import typings.orbitUiReactComponents.distLayoutSrcAdaptersMod.Alignment
+import typings.orbitUiReactComponents.distLayoutSrcAdaptersMod.Direction
+import typings.orbitUiReactComponents.distLayoutSrcAdaptersMod.Orientation
+import typings.orbitUiReactComponents.distMenuSrcMenuMod.SelectionMode
+import typings.orbitUiReactComponents.distOverlaySrcUseOverlayTriggerMod.OverlayTrigger
+import typings.orbitUiReactComponents.distSharedSrcSizeMod.Size
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeProviderMod.ColorScheme
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeProviderMod.ColorSchemeOrSystem
+import typings.orbitUiReactComponents.distThemeProviderSrcThemeProviderMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,10 +44,6 @@ object orbitUiReactComponentsStrings {
     extends StObject
        with Size
   inline def `5xl`: `5xl` = "5xl".asInstanceOf[`5xl`]
-  
-  @js.native
-  sealed trait GetSlotsReturn extends StObject
-  inline def GetSlotsReturn: GetSlotsReturn = "GetSlotsReturn".asInstanceOf[GetSlotsReturn]
   
   @js.native
   sealed trait additions extends StObject
@@ -152,10 +148,6 @@ object orbitUiReactComponentsStrings {
   @js.native
   sealed trait checkbox extends StObject
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  
-  @js.native
-  sealed trait children extends StObject
-  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait circle extends StObject
@@ -413,7 +405,7 @@ object orbitUiReactComponentsStrings {
   sealed trait multiple
     extends StObject
        with SelectionMode
-       with typings.orbitUiReactComponents.srcListboxMod.SelectionMode
+       with typings.orbitUiReactComponents.distListboxSrcListboxMod.SelectionMode
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
@@ -433,7 +425,7 @@ object orbitUiReactComponentsStrings {
     extends StObject
        with OverlayTrigger
        with SelectionMode
-       with typings.orbitUiReactComponents.srcListboxMod.SelectionMode
+       with typings.orbitUiReactComponents.distListboxSrcListboxMod.SelectionMode
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -562,7 +554,7 @@ object orbitUiReactComponentsStrings {
   sealed trait single
     extends StObject
        with SelectionMode
-       with typings.orbitUiReactComponents.srcListboxMod.SelectionMode
+       with typings.orbitUiReactComponents.distListboxSrcListboxMod.SelectionMode
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native

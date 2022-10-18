@@ -1,20 +1,46 @@
 package typings.remarkMdx
 
-import org.scalablytyped.runtime.Shortcut
-import typings.unified.mod.Plugin
-import typings.unified.mod.Settings
+import typings.mdastUtilMdx.mod.FromMarkdownExtension
+import typings.mdastUtilMdx.mod.ToMarkdownExtension
+import typings.unified.mod.Transformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("remark-mdx", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[js.Array[js.Any], Settings] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = Plugin[js.Array[js.Any], Settings]
+  inline def default(): Unit | (Transformer[typings.mdast.mod.Root, typings.mdast.mod.Root]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit | (Transformer[typings.mdast.mod.Root, typings.mdast.mod.Root])]
+  inline def default(options: Unit): Unit | (Transformer[typings.mdast.mod.Root, typings.mdast.mod.Root]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | (Transformer[typings.mdast.mod.Root, typings.mdast.mod.Root])]
+  inline def default(options: Options): Unit | (Transformer[typings.mdast.mod.Root, typings.mdast.mod.Root]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit | (Transformer[typings.mdast.mod.Root, typings.mdast.mod.Root])]
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[js.Array[js.Any], Settings] = ^
+  @js.native
+  trait DoNotTouchAsThisImportItIncludesMdxInTree extends StObject {
+    
+    def mdxFromMarkdown(): js.Array[FromMarkdownExtension] = js.native
+    
+    def mdxToMarkdown(): ToMarkdownExtension = js.native
+    def mdxToMarkdown(options: typings.mdastUtilMdxJsx.libMod.ToMarkdownOptions): ToMarkdownExtension = js.native
+  }
+  
+  type MicromarkOptions = typings.micromarkExtensionMdxjs.mod.Options
+  
+  trait Options
+    extends StObject
+       with typings.micromarkExtensionMdxExpression.devLibSyntaxMod.Options
+       with typings.mdastUtilMdxJsx.libMod.ToMarkdownOptions
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+  }
+  
+  type Root = typings.mdast.mod.Root
+  
+  type ToMarkdownOptions = typings.mdastUtilMdx.mod.ToMarkdownOptions
 }

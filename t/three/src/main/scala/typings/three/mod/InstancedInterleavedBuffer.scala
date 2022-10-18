@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "InstancedInterleavedBuffer")
 @js.native
 open class InstancedInterleavedBuffer protected ()
-  extends typings.three.threeMod.InstancedInterleavedBuffer {
+  extends typings.three.srcThreeMod.InstancedInterleavedBuffer {
   def this(array: ArrayLike[Double], stride: Double) = this()
   def this(array: ArrayLike[Double], stride: Double, meshPerAttribute: Double) = this()
 }

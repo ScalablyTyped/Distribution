@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for reading messages from the message store. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageReader")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageReader")
 @js.native
-abstract class ChatMessageReader ()
+open class ChatMessageReader ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageReader

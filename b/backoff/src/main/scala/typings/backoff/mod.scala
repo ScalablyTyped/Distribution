@@ -170,7 +170,7 @@ object mod {
     def reset(): Unit = js.native
   }
   
-  @JSImport("backoff", "BackoffStrategy")
+  /* note: abstract class */ @JSImport("backoff", "BackoffStrategy")
   @js.native
   /**
     * The options are the following.
@@ -179,7 +179,7 @@ object mod {
     * @param options.initialDelay: defaults to 100 ms
     * @param options.maxDelay: defaults to 10000 ms
     */
-  abstract class BackoffStrategy () extends StObject {
+  open class BackoffStrategy () extends StObject {
     def this(options: Options) = this()
     
     def getInitialDelay(): Double = js.native

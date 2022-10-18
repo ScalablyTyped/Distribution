@@ -1,21 +1,16 @@
 package typings.dateFnsTz
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getTimezoneOffsetIndexMod {
   
-  object default extends Shortcut {
-    
-    @JSImport("date-fns-tz/esm/fp/getTimezoneOffset/index", JSImport.Default)
-    @js.native
-    val ^ : CurriedFn2[js.Date | Double, String, Double] = js.native
-    
-    type _To = CurriedFn2[js.Date | Double, String, Double]
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[js.Date | Double, String, Double] = ^
-  }
+  inline def apply(timeZone: String): Double = ^.asInstanceOf[js.Dynamic].apply(timeZone.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(timeZone: String, date: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(timeZone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(timeZone: String, date: Double): Double = (^.asInstanceOf[js.Dynamic].apply(timeZone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @JSImport("date-fns-tz/getTimezoneOffset/index", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

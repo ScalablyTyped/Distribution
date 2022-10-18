@@ -1,7 +1,7 @@
 package typings.nivoChord.anon
 
-import typings.nivoChord.typesMod.ArcDatum
-import typings.nivoChord.typesMod.RibbonDatum
+import typings.nivoChord.distTypesTypesMod.ArcDatum
+import typings.nivoChord.distTypesTypesMod.RibbonDatum
 import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import org.scalablytyped.runtime.StObject

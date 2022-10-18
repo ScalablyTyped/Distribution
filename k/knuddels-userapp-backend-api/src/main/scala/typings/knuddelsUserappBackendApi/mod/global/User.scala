@@ -72,6 +72,12 @@ open class User ()
   def getGender(): Gender = js.native
   
   /**
+    * @see https://developer.knuddels.de/docs/classes/User.html#method_getGenderDetailed
+    * @since AppServer 20220811170542
+    */
+  def getGenderDetailed(): GenderDetailed = js.native
+  
+  /**
     * @see https://developer.knuddels.de/docs/classes/User.html#method_getKnuddelAccount
     */
   def getKnuddelAccount(): KnuddelAccount = js.native

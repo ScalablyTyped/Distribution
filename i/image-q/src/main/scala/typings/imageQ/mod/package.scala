@@ -1,11 +1,11 @@
 package typings.imageQ.mod
 
-import typings.imageQ.basicAPIMod.ApplyPaletteOptions
-import typings.imageQ.basicAPIMod.BuildPaletteOptions
-import typings.imageQ.basicAPIMod.ProgressOptions
+import typings.imageQ.distTypesSrcBasicAPIMod.ApplyPaletteOptions
+import typings.imageQ.distTypesSrcBasicAPIMod.BuildPaletteOptions
+import typings.imageQ.distTypesSrcBasicAPIMod.ProgressOptions
+import typings.imageQ.distTypesSrcUtilsPaletteMod.Palette
+import typings.imageQ.distTypesSrcUtilsPointContainerMod.PointContainer
 import typings.imageQ.mod.^
-import typings.imageQ.pointContainerMod.PointContainer
-import typings.imageQ.utilsPaletteMod.Palette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

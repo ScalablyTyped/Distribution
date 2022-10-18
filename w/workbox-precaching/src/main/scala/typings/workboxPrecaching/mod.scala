@@ -1,8 +1,8 @@
 package typings.workboxPrecaching
 
-import typings.workboxCore.workboxPluginMod.WorkboxPlugin
-import typings.workboxPrecaching.fetchListenerOptionsMod.FetchListenerOptions
-import typings.workboxPrecaching.precacheEntryMod.PrecacheEntry
+import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
+import typings.workboxPrecaching.typesFetchListenerOptionsMod.FetchListenerOptions
+import typings.workboxPrecaching.typesPrecacheEntryMod.PrecacheEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

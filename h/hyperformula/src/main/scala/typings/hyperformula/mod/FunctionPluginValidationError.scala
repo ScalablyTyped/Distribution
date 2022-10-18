@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "FunctionPluginValidationError")
 @js.native
 open class FunctionPluginValidationError ()
-  extends typings.hyperformula.errorsMod.FunctionPluginValidationError
+  extends typings.hyperformula.typingsErrorsMod.FunctionPluginValidationError
 /* static members */
 object FunctionPluginValidationError {
   
@@ -15,7 +15,7 @@ object FunctionPluginValidationError {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def functionMethodNotFound(functionName: String, pluginName: String): typings.hyperformula.errorsMod.FunctionPluginValidationError = (^.asInstanceOf[js.Dynamic].applyDynamic("functionMethodNotFound")(functionName.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.errorsMod.FunctionPluginValidationError]
+  inline def functionMethodNotFound(functionName: String, pluginName: String): typings.hyperformula.typingsErrorsMod.FunctionPluginValidationError = (^.asInstanceOf[js.Dynamic].applyDynamic("functionMethodNotFound")(functionName.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsErrorsMod.FunctionPluginValidationError]
   
-  inline def functionNotDeclaredInPlugin(functionId: String, pluginName: String): typings.hyperformula.errorsMod.FunctionPluginValidationError = (^.asInstanceOf[js.Dynamic].applyDynamic("functionNotDeclaredInPlugin")(functionId.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.errorsMod.FunctionPluginValidationError]
+  inline def functionNotDeclaredInPlugin(functionId: String, pluginName: String): typings.hyperformula.typingsErrorsMod.FunctionPluginValidationError = (^.asInstanceOf[js.Dynamic].applyDynamic("functionNotDeclaredInPlugin")(functionId.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsErrorsMod.FunctionPluginValidationError]
 }

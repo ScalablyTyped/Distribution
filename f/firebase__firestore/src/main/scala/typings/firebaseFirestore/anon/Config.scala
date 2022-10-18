@@ -1,7 +1,7 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.specTestRunnerMod.SpecConfig
-import typings.firebaseFirestore.specTestRunnerMod.SpecStep
+import typings.firebaseFirestore.distFirestoreTestUnitSpecsSpecTestRunnerMod.SpecConfig
+import typings.firebaseFirestore.distFirestoreTestUnitSpecsSpecTestRunnerMod.SpecStep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

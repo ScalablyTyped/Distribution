@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "NotificationType0")
 @js.native
 open class NotificationType0 protected ()
-  extends typings.vscodeJsonrpc.messagesMod.NotificationType0 {
+  extends typings.vscodeJsonrpc.libCommonMessagesMod.NotificationType0 {
   def this(method: String) = this()
 }

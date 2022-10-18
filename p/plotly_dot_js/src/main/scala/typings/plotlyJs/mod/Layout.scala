@@ -1,19 +1,19 @@
 package typings.plotlyJs.mod
 
-import typings.plotlyJs.anon.PartialAnnotationsAlign
-import typings.plotlyJs.anon.PartialAxis
+import typings.plotlyJs.anon.PartialAnnotationsArrowcolor
+import typings.plotlyJs.anon.PartialAxisCalendar
 import typings.plotlyJs.anon.PartialFont
 import typings.plotlyJs.anon.PartialHoverLabel
 import typings.plotlyJs.anon.PartialImage
-import typings.plotlyJs.anon.PartialLayoutAxisAnchor
+import typings.plotlyJs.anon.PartialLayoutAxisAngle
 import typings.plotlyJs.anon.PartialLegend
-import typings.plotlyJs.anon.PartialMapbox
+import typings.plotlyJs.anon.PartialMapboxAccesstoken
 import typings.plotlyJs.anon.PartialMargin
 import typings.plotlyJs.anon.PartialModeBar
-import typings.plotlyJs.anon.PartialPolarLayout
-import typings.plotlyJs.anon.PartialScene
+import typings.plotlyJs.anon.PartialPolarLayoutAngularaxis
+import typings.plotlyJs.anon.PartialSceneAnnotations
 import typings.plotlyJs.anon.PartialShape
-import typings.plotlyJs.anon.PartialSlider
+import typings.plotlyJs.anon.PartialSliderActive
 import typings.plotlyJs.anon.Partialrowsnumberroworder
 import typings.plotlyJs.anon.PartialtextstringfontPart
 import typings.plotlyJs.plotlyJsBooleans.`false`
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Layout extends StObject {
   
-  var annotations: js.Array[PartialAnnotationsAlign]
+  var annotations: js.Array[PartialAnnotationsArrowcolor]
   
   var autosize: Boolean
   
@@ -96,7 +96,7 @@ trait Layout extends StObject {
   var legend: PartialLegend
   
   // TODO
-  var mapbox: PartialMapbox
+  var mapbox: PartialMapboxAccesstoken
   
   var margin: PartialMargin
   
@@ -108,27 +108,27 @@ trait Layout extends StObject {
   
   var plot_bgcolor: Color
   
-  var polar: PartialPolarLayout
+  var polar: PartialPolarLayoutAngularaxis
   
-  var polar2: PartialPolarLayout
+  var polar2: PartialPolarLayoutAngularaxis
   
-  var polar3: PartialPolarLayout
+  var polar3: PartialPolarLayoutAngularaxis
   
-  var polar4: PartialPolarLayout
+  var polar4: PartialPolarLayoutAngularaxis
   
-  var polar5: PartialPolarLayout
+  var polar5: PartialPolarLayoutAngularaxis
   
-  var polar6: PartialPolarLayout
+  var polar6: PartialPolarLayoutAngularaxis
   
-  var polar7: PartialPolarLayout
+  var polar7: PartialPolarLayoutAngularaxis
   
-  var polar8: PartialPolarLayout
+  var polar8: PartialPolarLayoutAngularaxis
   
-  var polar9: PartialPolarLayout
+  var polar9: PartialPolarLayoutAngularaxis
   
-  var radialaxis: PartialAxis
+  var radialaxis: PartialAxisCalendar
   
-  var scene: PartialScene
+  var scene: PartialSceneAnnotations
   
   var selectdirection: h | v | d | any
   
@@ -141,7 +141,7 @@ trait Layout extends StObject {
   var showlegend: Boolean
   
   // TODO
-  var sliders: js.Array[PartialSlider]
+  var sliders: js.Array[PartialSliderActive]
   
   var subplot: String
   
@@ -157,23 +157,23 @@ trait Layout extends StObject {
   
   var width: Double
   
-  var xaxis: PartialLayoutAxisAnchor
+  var xaxis: PartialLayoutAxisAngle
   
-  var xaxis2: PartialLayoutAxisAnchor
+  var xaxis2: PartialLayoutAxisAngle
   
-  var xaxis3: PartialLayoutAxisAnchor
+  var xaxis3: PartialLayoutAxisAngle
   
-  var xaxis4: PartialLayoutAxisAnchor
+  var xaxis4: PartialLayoutAxisAngle
   
-  var xaxis5: PartialLayoutAxisAnchor
+  var xaxis5: PartialLayoutAxisAngle
   
-  var xaxis6: PartialLayoutAxisAnchor
+  var xaxis6: PartialLayoutAxisAngle
   
-  var xaxis7: PartialLayoutAxisAnchor
+  var xaxis7: PartialLayoutAxisAngle
   
-  var xaxis8: PartialLayoutAxisAnchor
+  var xaxis8: PartialLayoutAxisAngle
   
-  var xaxis9: PartialLayoutAxisAnchor
+  var xaxis9: PartialLayoutAxisAngle
   
   @JSName("xaxis.autorange")
   var xaxisDotautorange: Boolean
@@ -193,23 +193,23 @@ trait Layout extends StObject {
   @JSName("xaxis.type")
   var xaxisDottype: AxisType
   
-  var yaxis: PartialLayoutAxisAnchor
+  var yaxis: PartialLayoutAxisAngle
   
-  var yaxis2: PartialLayoutAxisAnchor
+  var yaxis2: PartialLayoutAxisAngle
   
-  var yaxis3: PartialLayoutAxisAnchor
+  var yaxis3: PartialLayoutAxisAngle
   
-  var yaxis4: PartialLayoutAxisAnchor
+  var yaxis4: PartialLayoutAxisAngle
   
-  var yaxis5: PartialLayoutAxisAnchor
+  var yaxis5: PartialLayoutAxisAngle
   
-  var yaxis6: PartialLayoutAxisAnchor
+  var yaxis6: PartialLayoutAxisAngle
   
-  var yaxis7: PartialLayoutAxisAnchor
+  var yaxis7: PartialLayoutAxisAngle
   
-  var yaxis8: PartialLayoutAxisAnchor
+  var yaxis8: PartialLayoutAxisAngle
   
-  var yaxis9: PartialLayoutAxisAnchor
+  var yaxis9: PartialLayoutAxisAngle
   
   @JSName("yaxis.autorange")
   var yaxisDotautorange: Boolean
@@ -232,7 +232,7 @@ trait Layout extends StObject {
 object Layout {
   
   inline def apply(
-    annotations: js.Array[PartialAnnotationsAlign],
+    annotations: js.Array[PartialAnnotationsArrowcolor],
     autosize: Boolean,
     bargap: Double,
     bargroupgap: Double,
@@ -255,29 +255,29 @@ object Layout {
     hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false`,
     images: js.Array[PartialImage],
     legend: PartialLegend,
-    mapbox: PartialMapbox,
+    mapbox: PartialMapboxAccesstoken,
     margin: PartialMargin,
     modebar: PartialModeBar,
     orientation: Double,
     paper_bgcolor: Color,
     plot_bgcolor: Color,
-    polar: PartialPolarLayout,
-    polar2: PartialPolarLayout,
-    polar3: PartialPolarLayout,
-    polar4: PartialPolarLayout,
-    polar5: PartialPolarLayout,
-    polar6: PartialPolarLayout,
-    polar7: PartialPolarLayout,
-    polar8: PartialPolarLayout,
-    polar9: PartialPolarLayout,
-    radialaxis: PartialAxis,
-    scene: PartialScene,
+    polar: PartialPolarLayoutAngularaxis,
+    polar2: PartialPolarLayoutAngularaxis,
+    polar3: PartialPolarLayoutAngularaxis,
+    polar4: PartialPolarLayoutAngularaxis,
+    polar5: PartialPolarLayoutAngularaxis,
+    polar6: PartialPolarLayoutAngularaxis,
+    polar7: PartialPolarLayoutAngularaxis,
+    polar8: PartialPolarLayoutAngularaxis,
+    polar9: PartialPolarLayoutAngularaxis,
+    radialaxis: PartialAxisCalendar,
+    scene: PartialSceneAnnotations,
     selectdirection: h | v | d | any,
     selectionrevision: Double | String,
     separators: String,
     shapes: js.Array[PartialShape],
     showlegend: Boolean,
-    sliders: js.Array[PartialSlider],
+    sliders: js.Array[PartialSliderActive],
     subplot: String,
     template: Template,
     title: String | PartialtextstringfontPart,
@@ -285,28 +285,28 @@ object Layout {
     transition: Transition,
     uirevision: Double | String,
     width: Double,
-    xaxis: PartialLayoutAxisAnchor,
-    xaxis2: PartialLayoutAxisAnchor,
-    xaxis3: PartialLayoutAxisAnchor,
-    xaxis4: PartialLayoutAxisAnchor,
-    xaxis5: PartialLayoutAxisAnchor,
-    xaxis6: PartialLayoutAxisAnchor,
-    xaxis7: PartialLayoutAxisAnchor,
-    xaxis8: PartialLayoutAxisAnchor,
-    xaxis9: PartialLayoutAxisAnchor,
+    xaxis: PartialLayoutAxisAngle,
+    xaxis2: PartialLayoutAxisAngle,
+    xaxis3: PartialLayoutAxisAngle,
+    xaxis4: PartialLayoutAxisAngle,
+    xaxis5: PartialLayoutAxisAngle,
+    xaxis6: PartialLayoutAxisAngle,
+    xaxis7: PartialLayoutAxisAngle,
+    xaxis8: PartialLayoutAxisAngle,
+    xaxis9: PartialLayoutAxisAngle,
     xaxisDotautorange: Boolean,
     xaxisDotrange: js.Tuple2[Datum, Datum],
     xaxisDottitle: String,
     xaxisDottype: AxisType,
-    yaxis: PartialLayoutAxisAnchor,
-    yaxis2: PartialLayoutAxisAnchor,
-    yaxis3: PartialLayoutAxisAnchor,
-    yaxis4: PartialLayoutAxisAnchor,
-    yaxis5: PartialLayoutAxisAnchor,
-    yaxis6: PartialLayoutAxisAnchor,
-    yaxis7: PartialLayoutAxisAnchor,
-    yaxis8: PartialLayoutAxisAnchor,
-    yaxis9: PartialLayoutAxisAnchor,
+    yaxis: PartialLayoutAxisAngle,
+    yaxis2: PartialLayoutAxisAngle,
+    yaxis3: PartialLayoutAxisAngle,
+    yaxis4: PartialLayoutAxisAngle,
+    yaxis5: PartialLayoutAxisAngle,
+    yaxis6: PartialLayoutAxisAngle,
+    yaxis7: PartialLayoutAxisAngle,
+    yaxis8: PartialLayoutAxisAngle,
+    yaxis9: PartialLayoutAxisAngle,
     yaxisDotautorange: Boolean,
     yaxisDotrange: js.Tuple2[Datum, Datum],
     yaxisDottitle: String,
@@ -330,9 +330,9 @@ object Layout {
   
   extension [Self <: Layout](x: Self) {
     
-    inline def setAnnotations(value: js.Array[PartialAnnotationsAlign]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[PartialAnnotationsArrowcolor]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value*))
+    inline def setAnnotationsVarargs(value: PartialAnnotationsArrowcolor*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
@@ -384,7 +384,7 @@ object Layout {
     
     inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    inline def setMapbox(value: PartialMapbox): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
+    inline def setMapbox(value: PartialMapboxAccesstoken): Self = StObject.set(x, "mapbox", value.asInstanceOf[js.Any])
     
     inline def setMargin(value: PartialMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
@@ -400,27 +400,27 @@ object Layout {
     
     inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value*))
     
-    inline def setPolar(value: PartialPolarLayout): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
+    inline def setPolar(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
-    inline def setPolar2(value: PartialPolarLayout): Self = StObject.set(x, "polar2", value.asInstanceOf[js.Any])
+    inline def setPolar2(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar2", value.asInstanceOf[js.Any])
     
-    inline def setPolar3(value: PartialPolarLayout): Self = StObject.set(x, "polar3", value.asInstanceOf[js.Any])
+    inline def setPolar3(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar3", value.asInstanceOf[js.Any])
     
-    inline def setPolar4(value: PartialPolarLayout): Self = StObject.set(x, "polar4", value.asInstanceOf[js.Any])
+    inline def setPolar4(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar4", value.asInstanceOf[js.Any])
     
-    inline def setPolar5(value: PartialPolarLayout): Self = StObject.set(x, "polar5", value.asInstanceOf[js.Any])
+    inline def setPolar5(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar5", value.asInstanceOf[js.Any])
     
-    inline def setPolar6(value: PartialPolarLayout): Self = StObject.set(x, "polar6", value.asInstanceOf[js.Any])
+    inline def setPolar6(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar6", value.asInstanceOf[js.Any])
     
-    inline def setPolar7(value: PartialPolarLayout): Self = StObject.set(x, "polar7", value.asInstanceOf[js.Any])
+    inline def setPolar7(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar7", value.asInstanceOf[js.Any])
     
-    inline def setPolar8(value: PartialPolarLayout): Self = StObject.set(x, "polar8", value.asInstanceOf[js.Any])
+    inline def setPolar8(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar8", value.asInstanceOf[js.Any])
     
-    inline def setPolar9(value: PartialPolarLayout): Self = StObject.set(x, "polar9", value.asInstanceOf[js.Any])
+    inline def setPolar9(value: PartialPolarLayoutAngularaxis): Self = StObject.set(x, "polar9", value.asInstanceOf[js.Any])
     
-    inline def setRadialaxis(value: PartialAxis): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
+    inline def setRadialaxis(value: PartialAxisCalendar): Self = StObject.set(x, "radialaxis", value.asInstanceOf[js.Any])
     
-    inline def setScene(value: PartialScene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: PartialSceneAnnotations): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setSelectdirection(value: h | v | d | any): Self = StObject.set(x, "selectdirection", value.asInstanceOf[js.Any])
     
@@ -434,9 +434,9 @@ object Layout {
     
     inline def setShowlegend(value: Boolean): Self = StObject.set(x, "showlegend", value.asInstanceOf[js.Any])
     
-    inline def setSliders(value: js.Array[PartialSlider]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
+    inline def setSliders(value: js.Array[PartialSliderActive]): Self = StObject.set(x, "sliders", value.asInstanceOf[js.Any])
     
-    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value*))
+    inline def setSlidersVarargs(value: PartialSliderActive*): Self = StObject.set(x, "sliders", js.Array(value*))
     
     inline def setSubplot(value: String): Self = StObject.set(x, "subplot", value.asInstanceOf[js.Any])
     
@@ -452,23 +452,23 @@ object Layout {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    inline def setXaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    inline def setXaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis2", value.asInstanceOf[js.Any])
+    inline def setXaxis2(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis2", value.asInstanceOf[js.Any])
     
-    inline def setXaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis3", value.asInstanceOf[js.Any])
+    inline def setXaxis3(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis3", value.asInstanceOf[js.Any])
     
-    inline def setXaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis4", value.asInstanceOf[js.Any])
+    inline def setXaxis4(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis4", value.asInstanceOf[js.Any])
     
-    inline def setXaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis5", value.asInstanceOf[js.Any])
+    inline def setXaxis5(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis5", value.asInstanceOf[js.Any])
     
-    inline def setXaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis6", value.asInstanceOf[js.Any])
+    inline def setXaxis6(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis6", value.asInstanceOf[js.Any])
     
-    inline def setXaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis7", value.asInstanceOf[js.Any])
+    inline def setXaxis7(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis7", value.asInstanceOf[js.Any])
     
-    inline def setXaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis8", value.asInstanceOf[js.Any])
+    inline def setXaxis8(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis8", value.asInstanceOf[js.Any])
     
-    inline def setXaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "xaxis9", value.asInstanceOf[js.Any])
+    inline def setXaxis9(value: PartialLayoutAxisAngle): Self = StObject.set(x, "xaxis9", value.asInstanceOf[js.Any])
     
     inline def setXaxisDotautorange(value: Boolean): Self = StObject.set(x, "xaxis.autorange", value.asInstanceOf[js.Any])
     
@@ -486,23 +486,23 @@ object Layout {
     
     inline def setXaxisDottype(value: AxisType): Self = StObject.set(x, "xaxis.type", value.asInstanceOf[js.Any])
     
-    inline def setYaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
-    inline def setYaxis2(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis2", value.asInstanceOf[js.Any])
+    inline def setYaxis2(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis2", value.asInstanceOf[js.Any])
     
-    inline def setYaxis3(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis3", value.asInstanceOf[js.Any])
+    inline def setYaxis3(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis3", value.asInstanceOf[js.Any])
     
-    inline def setYaxis4(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis4", value.asInstanceOf[js.Any])
+    inline def setYaxis4(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis4", value.asInstanceOf[js.Any])
     
-    inline def setYaxis5(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis5", value.asInstanceOf[js.Any])
+    inline def setYaxis5(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis5", value.asInstanceOf[js.Any])
     
-    inline def setYaxis6(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis6", value.asInstanceOf[js.Any])
+    inline def setYaxis6(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis6", value.asInstanceOf[js.Any])
     
-    inline def setYaxis7(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis7", value.asInstanceOf[js.Any])
+    inline def setYaxis7(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis7", value.asInstanceOf[js.Any])
     
-    inline def setYaxis8(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis8", value.asInstanceOf[js.Any])
+    inline def setYaxis8(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis8", value.asInstanceOf[js.Any])
     
-    inline def setYaxis9(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "yaxis9", value.asInstanceOf[js.Any])
+    inline def setYaxis9(value: PartialLayoutAxisAngle): Self = StObject.set(x, "yaxis9", value.asInstanceOf[js.Any])
     
     inline def setYaxisDotautorange(value: Boolean): Self = StObject.set(x, "yaxis.autorange", value.asInstanceOf[js.Any])
     

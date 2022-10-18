@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Custom {
   
   /** Represents a custom device. */
-  @JSGlobal("Windows.Devices.Custom.CustomDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Custom.CustomDevice")
   @js.native
-  abstract class CustomDevice ()
+  open class CustomDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Custom.CustomDevice {
     
@@ -180,9 +180,9 @@ object Custom {
   }
   
   /** Represents know device types. */
-  @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes")
   @js.native
-  abstract class KnownDeviceTypes ()
+  open class KnownDeviceTypes ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Custom.KnownDeviceTypes
   object KnownDeviceTypes {

@@ -1,9 +1,9 @@
 package typings.three.anon
 
-import typings.three.threeMod.Matrix4
-import typings.three.threeMod.Texture
-import typings.three.threeMod.Vector2
-import typings.three.uniformsLibMod.IUniform
+import typings.three.srcRenderersShadersUniformsLibMod.IUniform
+import typings.three.srcThreeMod.Matrix4
+import typings.three.srcThreeMod.Texture
+import typings.three.srcThreeMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

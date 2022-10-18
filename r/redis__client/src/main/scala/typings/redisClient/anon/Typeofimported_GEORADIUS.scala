@@ -1,12 +1,12 @@
 package typings.redisClient.anon
 
-import typings.redisClient.genericTransformersMod.GeoCoordinates
-import typings.redisClient.genericTransformersMod.GeoReplyWith
-import typings.redisClient.genericTransformersMod.GeoReplyWithMember
-import typings.redisClient.genericTransformersMod.GeoSearchOptions
-import typings.redisClient.genericTransformersMod.GeoUnits
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsGenericTransformersMod.GeoCoordinates
+import typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith
+import typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWithMember
+import typings.redisClient.distLibCommandsGenericTransformersMod.GeoSearchOptions
+import typings.redisClient.distLibCommandsGenericTransformersMod.GeoUnits
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

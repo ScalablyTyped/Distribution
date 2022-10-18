@@ -1,8 +1,8 @@
 package typings.naja.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.naja.najaMod.Naja
-import typings.naja.uihandlerMod.UIHandler
+import typings.naja.distCoreUihandlerMod.UIHandler
+import typings.naja.distNajaMod.Naja
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

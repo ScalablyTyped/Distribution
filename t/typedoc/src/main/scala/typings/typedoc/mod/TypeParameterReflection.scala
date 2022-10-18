@@ -1,6 +1,6 @@
 package typings.typedoc.mod
 
-import typings.typedoc.modelsTypesMod.SomeType
+import typings.typedoc.distLibModelsTypesMod.SomeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,52 +8,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "TypeParameterReflection")
 @js.native
 open class TypeParameterReflection protected ()
-  extends typings.typedoc.modelsMod.TypeParameterReflection {
-  def this(name: String, constraint: Unit, defaultType: Unit, parent: typings.typedoc.abstractMod.Reflection) = this()
-  def this(
-    name: String,
-    constraint: Unit,
-    defaultType: SomeType,
-    parent: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    name: String,
-    constraint: SomeType,
-    defaultType: Unit,
-    parent: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    name: String,
-    constraint: SomeType,
-    defaultType: SomeType,
-    parent: typings.typedoc.abstractMod.Reflection
-  ) = this()
+  extends typings.typedoc.distLibModelsMod.TypeParameterReflection {
   def this(
     name: String,
     constraint: Unit,
     defaultType: Unit,
-    parent: typings.typedoc.abstractMod.Reflection,
-    varianceModifier: typings.typedoc.typeParameterMod.VarianceModifier
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
   ) = this()
   def this(
     name: String,
     constraint: Unit,
     defaultType: SomeType,
-    parent: typings.typedoc.abstractMod.Reflection,
-    varianceModifier: typings.typedoc.typeParameterMod.VarianceModifier
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
   ) = this()
   def this(
     name: String,
     constraint: SomeType,
     defaultType: Unit,
-    parent: typings.typedoc.abstractMod.Reflection,
-    varianceModifier: typings.typedoc.typeParameterMod.VarianceModifier
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
   ) = this()
   def this(
     name: String,
     constraint: SomeType,
     defaultType: SomeType,
-    parent: typings.typedoc.abstractMod.Reflection,
-    varianceModifier: typings.typedoc.typeParameterMod.VarianceModifier
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection
+  ) = this()
+  def this(
+    name: String,
+    constraint: Unit,
+    defaultType: Unit,
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection,
+    varianceModifier: typings.typedoc.distLibModelsReflectionsTypeParameterMod.VarianceModifier
+  ) = this()
+  def this(
+    name: String,
+    constraint: Unit,
+    defaultType: SomeType,
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection,
+    varianceModifier: typings.typedoc.distLibModelsReflectionsTypeParameterMod.VarianceModifier
+  ) = this()
+  def this(
+    name: String,
+    constraint: SomeType,
+    defaultType: Unit,
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection,
+    varianceModifier: typings.typedoc.distLibModelsReflectionsTypeParameterMod.VarianceModifier
+  ) = this()
+  def this(
+    name: String,
+    constraint: SomeType,
+    defaultType: SomeType,
+    parent: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection,
+    varianceModifier: typings.typedoc.distLibModelsReflectionsTypeParameterMod.VarianceModifier
   ) = this()
 }

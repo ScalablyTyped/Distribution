@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SetValueAction")
 @js.native
 open class SetValueAction protected ()
-  extends typings.babylonjs.legacyMod.SetValueAction {
+  extends typings.babylonjs.legacyLegacyMod.SetValueAction {
   /**
     * Instantiate the action
     * @param triggerOptions defines the trigger options
@@ -22,6 +22,6 @@ open class SetValueAction protected ()
     target: Any,
     propertyPath: String,
     value: Any,
-    condition: typings.babylonjs.conditionMod.Condition
+    condition: typings.babylonjs.actionsConditionMod.Condition
   ) = this()
 }

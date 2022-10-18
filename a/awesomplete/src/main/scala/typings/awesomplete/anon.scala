@@ -8,22 +8,22 @@ object anon {
   
   trait Label extends StObject {
     
-    var label: String | Any
+    var label: String
     
-    var value: String | Any
+    var value: Any
   }
   object Label {
     
-    inline def apply(label: String | Any, value: String | Any): Label = {
+    inline def apply(label: String, value: Any): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
     extension [Self <: Label](x: Self) {
       
-      inline def setLabel(value: String | Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,22 +46,22 @@ object anon {
   
   trait Value extends StObject {
     
-    var label: String
+    var label: String | Any
     
-    var value: Any
+    var value: String | Any
   }
   object Value {
     
-    inline def apply(label: String, value: Any): Value = {
+    inline def apply(label: String | Any, value: String | Any): Value = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
     extension [Self <: Value](x: Self) {
       
-      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

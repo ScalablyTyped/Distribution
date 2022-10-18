@@ -26,6 +26,12 @@ object flickityStrings {
   inline def change: change = "change".asInstanceOf[change]
   
   @js.native
+  sealed trait destroy
+    extends StObject
+       with FlickityEvents
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @js.native
   sealed trait dragEnd
     extends StObject
        with FlickityEvents

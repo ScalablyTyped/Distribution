@@ -48,8 +48,8 @@ object HighlightLayer {
     */
   @JSImport("babylonjs/index", "HighlightLayer.NeutralColor")
   @js.native
-  def NeutralColor: typings.babylonjs.mathColorMod.Color4 = js.native
-  inline def NeutralColor_=(x: typings.babylonjs.mathColorMod.Color4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NeutralColor")(x.asInstanceOf[js.Any])
+  def NeutralColor: typings.babylonjs.mathsMathDotcolorMod.Color4 = js.native
+  inline def NeutralColor_=(x: typings.babylonjs.mathsMathDotcolorMod.Color4): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NeutralColor")(x.asInstanceOf[js.Any])
   
   /**
     * Stencil value used for the other meshes in the scene.
@@ -66,5 +66,5 @@ object HighlightLayer {
     * @param rootUrl defines the root URL containing the Highlight layer information
     * @returns a parsed Highlight layer
     */
-  inline def Parse(parsedHightlightLayer: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.highlightLayerMod.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.highlightLayerMod.HighlightLayer]
+  inline def Parse(parsedHightlightLayer: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.layersHighlightLayerMod.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.layersHighlightLayerMod.HighlightLayer]
 }

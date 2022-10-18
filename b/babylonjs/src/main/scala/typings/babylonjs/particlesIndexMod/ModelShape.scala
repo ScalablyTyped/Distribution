@@ -1,7 +1,7 @@
 package typings.babylonjs.particlesIndexMod
 
-import typings.babylonjs.materialMod.Material
-import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.materialsMaterialMod.Material
+import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Particles/index", "ModelShape")
 @js.native
 open class ModelShape protected ()
-  extends typings.babylonjs.solidParticleMod.ModelShape {
+  extends typings.babylonjs.particlesSolidParticleMod.ModelShape {
   /**
     * Creates a ModelShape object. This is an internal simplified reference to a mesh used as for a model to replicate particles from by the SPS.
     * SPS internal tool, don't use it manually.
@@ -25,7 +25,7 @@ open class ModelShape protected ()
     shapeUV: js.Array[Double],
     posFunction: Nullable[
         js.Function3[
-          /* particle */ typings.babylonjs.solidParticleMod.SolidParticle, 
+          /* particle */ typings.babylonjs.particlesSolidParticleMod.SolidParticle, 
           /* i */ Double, 
           /* s */ Double, 
           Unit
@@ -33,7 +33,7 @@ open class ModelShape protected ()
       ],
     vtxFunction: Nullable[
         js.Function3[
-          /* particle */ typings.babylonjs.solidParticleMod.SolidParticle, 
+          /* particle */ typings.babylonjs.particlesSolidParticleMod.SolidParticle, 
           /* vertex */ Vector3, 
           /* i */ Double, 
           Unit

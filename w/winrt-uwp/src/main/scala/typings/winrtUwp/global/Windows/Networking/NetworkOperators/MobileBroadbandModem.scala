@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband modem. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandModem")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandModem")
 @js.native
-abstract class MobileBroadbandModem ()
+open class MobileBroadbandModem ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem {
   

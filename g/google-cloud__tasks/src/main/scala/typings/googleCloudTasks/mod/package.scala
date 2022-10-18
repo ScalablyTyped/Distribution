@@ -1,6 +1,5 @@
 package typings.googleCloudTasks.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.googleGax.mod.GoogleError
 import typings.std.Partial
 import typings.std.Pick
@@ -19,7 +18,7 @@ type APIPaginatedCallback[T, U, V] = js.Function4[
 /* rawResponse */ js.UndefOr[V], 
 Unit]
 
-type CreateNamedRequest[N /* <: String */, T] = ParentRequest & typings.googleCloudTasks.googleCloudTasksStrings.CreateNamedRequest & TopLevel[Any]
+type CreateNamedRequest[N /* <: String */, T] = ParentRequest & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in N ]: T} */ js.Any)
 
 type EnhancedPick[T, Req /* <: /* keyof T */ String */, Opt /* <: /* keyof T */ String */] = (Required[Pick[T, Req]]) & (Partial[Pick[T, Req]])
 
@@ -30,4 +29,4 @@ type ProjectIdCallback = js.Function2[
 /* projectId */ js.UndefOr[String | Null], 
 Unit]
 
-type UpdateNamedRequest[N /* <: String */, T] = ParentRequest & typings.googleCloudTasks.googleCloudTasksStrings.UpdateNamedRequest & TopLevel[Any]
+type UpdateNamedRequest[N /* <: String */, T] = ParentRequest & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in N ]: T} */ js.Any)

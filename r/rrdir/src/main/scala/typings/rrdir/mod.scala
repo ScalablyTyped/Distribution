@@ -3,7 +3,7 @@ package typings.rrdir
 import org.scalablytyped.runtime.Shortcut
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
-import typings.picomatch.picomatchMod.PicomatchOptions
+import typings.picomatch.libPicomatchMod.PicomatchOptions
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

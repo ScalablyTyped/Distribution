@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.edgesRendererMod.IEdgesRendererOptions
+import typings.babylonjs.renderingEdgesRendererMod.IEdgesRendererOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,93 +18,93 @@ open class EdgesRenderer protected ()
     * @param  generateEdgesLines - should generate Lines or only prepare resources.
     * @param  options The options to apply when generating the edges
     */
-  def this(source: typings.babylonjs.abstractMeshMod.AbstractMesh) = this()
-  def this(source: typings.babylonjs.abstractMeshMod.AbstractMesh, epsilon: Double) = this()
+  def this(source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh) = this()
+  def this(source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh, epsilon: Double) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Boolean
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Boolean
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Boolean
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Boolean
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Unit,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Double,
     checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Unit,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Boolean,
     generateEdgesLines: Unit,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Boolean,
     options: IEdgesRendererOptions
   ) = this()
   def this(
-    source: typings.babylonjs.abstractMeshMod.AbstractMesh,
+    source: typings.babylonjs.meshesAbstractMeshMod.AbstractMesh,
     epsilon: Unit,
     checkVerticesInsteadOfIndices: Unit,
     generateEdgesLines: Unit,

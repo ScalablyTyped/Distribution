@@ -1,15 +1,18 @@
 package typings.next.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.next.apiUtilsMod.ApiPreviewProps
-import typings.next.fontUtilsMod.FontManifest
+import typings.next.distServerApiUtilsMod.ApiPreviewProps
+import typings.next.distServerFontUtilsMod.FontConfig
+import typings.next.distServerFontUtilsMod.FontManifest
+import typings.next.distSharedLibImageConfigMod.ImageConfigComplete
+import typings.next.typesMod.ServerRuntime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AmpOptimizerConfig extends StObject {
   
-  var ampOptimizerConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var ampOptimizerConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var assetPrefix: js.UndefOr[String] = js.undefined
   
@@ -19,31 +22,57 @@ trait AmpOptimizerConfig extends StObject {
   
   var canonicalBase: String
   
+  var crossOrigin: js.UndefOr[String] = js.undefined
+  
   var customServer: js.UndefOr[Boolean] = js.undefined
   
   var defaultLocale: js.UndefOr[String] = js.undefined
   
   var dev: js.UndefOr[Boolean] = js.undefined
   
-  var fontManifest: FontManifest
+  var disableOptimizedLoading: js.UndefOr[Boolean] = js.undefined
+  
+  var distDir: String
+  
+  var domainLocales: js.UndefOr[js.Array[typings.next.distServerConfigSharedMod.DomainLocale]] = js.undefined
+  
+  var fontManifest: js.UndefOr[FontManifest] = js.undefined
   
   var generateEtags: Boolean
   
-  var images: String
+  var images: ImageConfigComplete
+  
+  var largePageDataBytes: js.UndefOr[Double] = js.undefined
   
   var locale: js.UndefOr[String] = js.undefined
   
   var locales: js.UndefOr[js.Array[String]] = js.undefined
   
-  var optimizeFonts: Boolean
+  var nextScriptWorkers: Any
   
-  var optimizeImages: Boolean
+  var optimizeCss: Any
+  
+  var optimizeFonts: FontConfig
   
   var poweredByHeader: Boolean
   
   var previewProps: ApiPreviewProps
   
-  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var renderServerComponentData: js.UndefOr[Boolean] = js.undefined
+  
+  var runtime: js.UndefOr[ServerRuntime] = js.undefined
+  
+  var runtimeConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var serverCSSManifest: js.UndefOr[Any] = js.undefined
+  
+  var serverComponentManifest: js.UndefOr[Any] = js.undefined
+  
+  var serverComponentProps: js.UndefOr[Any] = js.undefined
+  
+  var serverComponents: js.UndefOr[Boolean] = js.undefined
+  
+  var supportsDynamicHTML: js.UndefOr[Boolean] = js.undefined
 }
 object AmpOptimizerConfig {
   
@@ -51,21 +80,22 @@ object AmpOptimizerConfig {
     basePath: String,
     buildId: String,
     canonicalBase: String,
-    fontManifest: FontManifest,
+    distDir: String,
     generateEtags: Boolean,
-    images: String,
-    optimizeFonts: Boolean,
-    optimizeImages: Boolean,
+    images: ImageConfigComplete,
+    nextScriptWorkers: Any,
+    optimizeCss: Any,
+    optimizeFonts: FontConfig,
     poweredByHeader: Boolean,
     previewProps: ApiPreviewProps
   ): AmpOptimizerConfig = {
-    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], fontManifest = fontManifest.asInstanceOf[js.Any], generateEtags = generateEtags.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], optimizeFonts = optimizeFonts.asInstanceOf[js.Any], optimizeImages = optimizeImages.asInstanceOf[js.Any], poweredByHeader = poweredByHeader.asInstanceOf[js.Any], previewProps = previewProps.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any], buildId = buildId.asInstanceOf[js.Any], canonicalBase = canonicalBase.asInstanceOf[js.Any], distDir = distDir.asInstanceOf[js.Any], generateEtags = generateEtags.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], nextScriptWorkers = nextScriptWorkers.asInstanceOf[js.Any], optimizeCss = optimizeCss.asInstanceOf[js.Any], optimizeFonts = optimizeFonts.asInstanceOf[js.Any], poweredByHeader = poweredByHeader.asInstanceOf[js.Any], previewProps = previewProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmpOptimizerConfig]
   }
   
   extension [Self <: AmpOptimizerConfig](x: Self) {
     
-    inline def setAmpOptimizerConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "ampOptimizerConfig", value.asInstanceOf[js.Any])
+    inline def setAmpOptimizerConfig(value: StringDictionary[Any]): Self = StObject.set(x, "ampOptimizerConfig", value.asInstanceOf[js.Any])
     
     inline def setAmpOptimizerConfigUndefined: Self = StObject.set(x, "ampOptimizerConfig", js.undefined)
     
@@ -79,6 +109,10 @@ object AmpOptimizerConfig {
     
     inline def setCanonicalBase(value: String): Self = StObject.set(x, "canonicalBase", value.asInstanceOf[js.Any])
     
+    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
     inline def setCustomServer(value: Boolean): Self = StObject.set(x, "customServer", value.asInstanceOf[js.Any])
     
     inline def setCustomServerUndefined: Self = StObject.set(x, "customServer", js.undefined)
@@ -91,13 +125,31 @@ object AmpOptimizerConfig {
     
     inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
     
+    inline def setDisableOptimizedLoading(value: Boolean): Self = StObject.set(x, "disableOptimizedLoading", value.asInstanceOf[js.Any])
+    
+    inline def setDisableOptimizedLoadingUndefined: Self = StObject.set(x, "disableOptimizedLoading", js.undefined)
+    
+    inline def setDistDir(value: String): Self = StObject.set(x, "distDir", value.asInstanceOf[js.Any])
+    
+    inline def setDomainLocales(value: js.Array[typings.next.distServerConfigSharedMod.DomainLocale]): Self = StObject.set(x, "domainLocales", value.asInstanceOf[js.Any])
+    
+    inline def setDomainLocalesUndefined: Self = StObject.set(x, "domainLocales", js.undefined)
+    
+    inline def setDomainLocalesVarargs(value: typings.next.distServerConfigSharedMod.DomainLocale*): Self = StObject.set(x, "domainLocales", js.Array(value*))
+    
     inline def setFontManifest(value: FontManifest): Self = StObject.set(x, "fontManifest", value.asInstanceOf[js.Any])
     
-    inline def setFontManifestVarargs(value: Content*): Self = StObject.set(x, "fontManifest", js.Array(value :_*))
+    inline def setFontManifestUndefined: Self = StObject.set(x, "fontManifest", js.undefined)
+    
+    inline def setFontManifestVarargs(value: Content*): Self = StObject.set(x, "fontManifest", js.Array(value*))
     
     inline def setGenerateEtags(value: Boolean): Self = StObject.set(x, "generateEtags", value.asInstanceOf[js.Any])
     
-    inline def setImages(value: String): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: ImageConfigComplete): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    
+    inline def setLargePageDataBytes(value: Double): Self = StObject.set(x, "largePageDataBytes", value.asInstanceOf[js.Any])
+    
+    inline def setLargePageDataBytesUndefined: Self = StObject.set(x, "largePageDataBytes", js.undefined)
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -107,18 +159,48 @@ object AmpOptimizerConfig {
     
     inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
     
-    inline def setOptimizeFonts(value: Boolean): Self = StObject.set(x, "optimizeFonts", value.asInstanceOf[js.Any])
+    inline def setNextScriptWorkers(value: Any): Self = StObject.set(x, "nextScriptWorkers", value.asInstanceOf[js.Any])
     
-    inline def setOptimizeImages(value: Boolean): Self = StObject.set(x, "optimizeImages", value.asInstanceOf[js.Any])
+    inline def setOptimizeCss(value: Any): Self = StObject.set(x, "optimizeCss", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizeFonts(value: FontConfig): Self = StObject.set(x, "optimizeFonts", value.asInstanceOf[js.Any])
     
     inline def setPoweredByHeader(value: Boolean): Self = StObject.set(x, "poweredByHeader", value.asInstanceOf[js.Any])
     
     inline def setPreviewProps(value: ApiPreviewProps): Self = StObject.set(x, "previewProps", value.asInstanceOf[js.Any])
     
-    inline def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
+    inline def setRenderServerComponentData(value: Boolean): Self = StObject.set(x, "renderServerComponentData", value.asInstanceOf[js.Any])
+    
+    inline def setRenderServerComponentDataUndefined: Self = StObject.set(x, "renderServerComponentData", js.undefined)
+    
+    inline def setRuntime(value: ServerRuntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeConfig(value: StringDictionary[Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
     
     inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
+    
+    inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+    
+    inline def setServerCSSManifest(value: Any): Self = StObject.set(x, "serverCSSManifest", value.asInstanceOf[js.Any])
+    
+    inline def setServerCSSManifestUndefined: Self = StObject.set(x, "serverCSSManifest", js.undefined)
+    
+    inline def setServerComponentManifest(value: Any): Self = StObject.set(x, "serverComponentManifest", value.asInstanceOf[js.Any])
+    
+    inline def setServerComponentManifestUndefined: Self = StObject.set(x, "serverComponentManifest", js.undefined)
+    
+    inline def setServerComponentProps(value: Any): Self = StObject.set(x, "serverComponentProps", value.asInstanceOf[js.Any])
+    
+    inline def setServerComponentPropsUndefined: Self = StObject.set(x, "serverComponentProps", js.undefined)
+    
+    inline def setServerComponents(value: Boolean): Self = StObject.set(x, "serverComponents", value.asInstanceOf[js.Any])
+    
+    inline def setServerComponentsUndefined: Self = StObject.set(x, "serverComponents", js.undefined)
+    
+    inline def setSupportsDynamicHTML(value: Boolean): Self = StObject.set(x, "supportsDynamicHTML", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsDynamicHTMLUndefined: Self = StObject.set(x, "supportsDynamicHTML", js.undefined)
   }
 }

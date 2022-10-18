@@ -1,16 +1,16 @@
 package typings.idb
 
-import typings.idb.entryMod.DBSchema
-import typings.idb.entryMod.DeleteDBCallbacks
-import typings.idb.entryMod.IDBPDatabase
-import typings.idb.entryMod.IDBPIndex
-import typings.idb.entryMod.IDBPObjectStore
-import typings.idb.entryMod.IDBPTransaction
-import typings.idb.entryMod.IndexNames
-import typings.idb.entryMod.OpenDBCallbacks
-import typings.idb.entryMod.StoreNames
+import typings.idb.buildEntryMod.DBSchema
+import typings.idb.buildEntryMod.DeleteDBCallbacks
+import typings.idb.buildEntryMod.IDBPDatabase
+import typings.idb.buildEntryMod.IDBPIndex
+import typings.idb.buildEntryMod.IDBPObjectStore
+import typings.idb.buildEntryMod.IDBPTransaction
+import typings.idb.buildEntryMod.IndexNames
+import typings.idb.buildEntryMod.OpenDBCallbacks
+import typings.idb.buildEntryMod.StoreNames
+import typings.idb.buildWrapIdbValueMod.Unwrap_
 import typings.idb.idbStrings.readonly
-import typings.idb.wrapIdbValueMod.Unwrap_
 import typings.std.ArrayLike
 import typings.std.IDBDatabase
 import typings.std.IDBIndex

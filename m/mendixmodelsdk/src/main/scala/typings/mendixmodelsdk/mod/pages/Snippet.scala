@@ -1,8 +1,8 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.Snippet")
 @js.native
 open class Snippet protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.Snippet {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.Snippet {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -33,7 +33,7 @@ object Snippet {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.pagesMod.pages.Snippet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.Snippet]
+  inline def createIn(container: IFolderBase): typings.mendixmodelsdk.srcGenPagesMod.pages.Snippet = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.Snippet]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.Snippet.structureTypeName")

@@ -1,15 +1,12 @@
 package typings.rascal.mod
 
 import typings.node.eventsMod.EventEmitter
-import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rascal", "Broker")
 @js.native
-open class Broker () extends EventEmitter {
-  def this(options: EventEmitterOptions) = this()
+trait Broker extends EventEmitter {
   
   def bounce(next: ErrorCb): Unit = js.native
   
@@ -42,15 +39,4 @@ open class Broker () extends EventEmitter {
   def subscribeAll(next: Cb[js.Error, js.Array[SubscriptionSession]]): Unit = js.native
   
   def unsubscribeAll(next: ErrorCb): Unit = js.native
-}
-object Broker {
-  
-  @JSImport("rascal", "Broker")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  inline def create(config: BrokerConfig, components: Any, next: CreateCb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  /* static member */
-  inline def create(config: BrokerConfig, next: CreateCb): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

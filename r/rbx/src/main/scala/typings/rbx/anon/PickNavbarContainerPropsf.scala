@@ -1,6 +1,5 @@
 package typings.rbx.anon
 
-import org.scalablytyped.runtime.TopLevel
 import typings.rbx.rbxInts.`7`
 import typings.rbx.rbxStrings.`black-bis`
 import typings.rbx.rbxStrings.`black-ter`
@@ -129,9 +128,7 @@ trait PickNavbarContainerPropsf extends StObject {
   var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
   
   var tooltipResponsive: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.PickNavbarContainerPropsf & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'} */ js.Any
   ] = js.undefined
   
   var transparent: js.UndefOr[Boolean] = js.undefined
@@ -296,9 +293,7 @@ object PickNavbarContainerPropsf {
     inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
     
     inline def setTooltipResponsive(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.PickNavbarContainerPropsf & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'} */ js.Any
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)

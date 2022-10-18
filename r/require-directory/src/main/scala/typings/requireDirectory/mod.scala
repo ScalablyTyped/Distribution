@@ -1,6 +1,7 @@
 package typings.requireDirectory
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,32 +15,12 @@ object mod {
     * @param options object with options for require-directory call
     * @returns hash of modules in specified directory
     */
-  inline def apply[T, U](
-    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
-  ): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](
-    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    path: String
-  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](
-    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    path: String,
-    options: RequireDirectoryOptions[T, U]
-  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](
-    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    path: Unit,
-    options: RequireDirectoryOptions[T, U]
-  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](
-    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    path: RequireDirectoryOptions[T, U]
-  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](
-    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
-    path: RequireDirectoryOptions[T, U],
-    options: RequireDirectoryOptions[T, U]
-  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: Unit, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
   
   @JSImport("require-directory", JSImport.Namespace)
   @js.native

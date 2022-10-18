@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media sample used by the MediaStreamSource . */
-@JSGlobal("Windows.Media.Core.MediaStreamSample")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.MediaStreamSample")
 @js.native
-abstract class MediaStreamSample ()
+open class MediaStreamSample ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaStreamSample
 object MediaStreamSample {

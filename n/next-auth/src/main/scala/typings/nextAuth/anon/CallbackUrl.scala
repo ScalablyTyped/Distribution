@@ -6,12 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CallbackUrl extends StObject {
   
-  var callbackUrl: js.UndefOr[String] = js.undefined
+  var callbackUrl: String
+  
+  var callbackUrlCookie: js.UndefOr[String] = js.undefined
 }
 object CallbackUrl {
   
-  inline def apply(): CallbackUrl = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(callbackUrl: String): CallbackUrl = {
+    val __obj = js.Dynamic.literal(callbackUrl = callbackUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackUrl]
   }
   
@@ -19,6 +21,8 @@ object CallbackUrl {
     
     inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
-    inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+    inline def setCallbackUrlCookie(value: String): Self = StObject.set(x, "callbackUrlCookie", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUrlCookieUndefined: Self = StObject.set(x, "callbackUrlCookie", js.undefined)
   }
 }

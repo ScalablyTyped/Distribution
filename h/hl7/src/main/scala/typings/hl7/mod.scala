@@ -1,18 +1,18 @@
 package typings.hl7
 
-import typings.hl7.adtEventMod.ADT
-import typings.hl7.ailSegmentMod.AIL
-import typings.hl7.aisSegmentMod.AIS
-import typings.hl7.mshSegmentMod.MSH
-import typings.hl7.obrSegmentMod.OBR
-import typings.hl7.obxSegmentMod.OBX
-import typings.hl7.omgEventMod.OMG
-import typings.hl7.orcSegmentMod.ORC
-import typings.hl7.ormEventMod.ORM
-import typings.hl7.oruEventMod.ORU
-import typings.hl7.pidSegmentMod.PID
-import typings.hl7.pv1SegmentMod.PV1
-import typings.hl7.siuEventMod.SIU
+import typings.hl7.eventsAdtDoteventMod.ADT
+import typings.hl7.eventsOmgDoteventMod.OMG
+import typings.hl7.eventsOrmDoteventMod.ORM
+import typings.hl7.eventsOruDoteventMod.ORU
+import typings.hl7.eventsSiuDoteventMod.SIU
+import typings.hl7.segmentsAilDotsegmentMod.AIL
+import typings.hl7.segmentsAisDotsegmentMod.AIS
+import typings.hl7.segmentsMshDotsegmentMod.MSH
+import typings.hl7.segmentsObrDotsegmentMod.OBR
+import typings.hl7.segmentsObxDotsegmentMod.OBX
+import typings.hl7.segmentsOrcDotsegmentMod.ORC
+import typings.hl7.segmentsPidDotsegmentMod.PID
+import typings.hl7.segmentsPv1DotsegmentMod.PV1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,21 +31,21 @@ object mod {
       */
     trait Segment extends StObject {
       
-      var AIL: typings.hl7.ailSegmentMod.AIL
+      var AIL: typings.hl7.segmentsAilDotsegmentMod.AIL
       
-      var AIS: typings.hl7.aisSegmentMod.AIS
+      var AIS: typings.hl7.segmentsAisDotsegmentMod.AIS
       
-      var MSH: typings.hl7.mshSegmentMod.MSH
+      var MSH: typings.hl7.segmentsMshDotsegmentMod.MSH
       
-      var OBR: typings.hl7.obrSegmentMod.OBR
+      var OBR: typings.hl7.segmentsObrDotsegmentMod.OBR
       
-      var OBX: typings.hl7.obxSegmentMod.OBX
+      var OBX: typings.hl7.segmentsObxDotsegmentMod.OBX
       
-      var ORC: typings.hl7.orcSegmentMod.ORC
+      var ORC: typings.hl7.segmentsOrcDotsegmentMod.ORC
       
-      var PID: typings.hl7.pidSegmentMod.PID
+      var PID: typings.hl7.segmentsPidDotsegmentMod.PID
       
-      var PV1: typings.hl7.pv1SegmentMod.PV1
+      var PV1: typings.hl7.segmentsPv1DotsegmentMod.PV1
     }
     object Segment {
       
@@ -83,15 +83,15 @@ object mod {
       */
     trait TriggerEvent extends StObject {
       
-      var ADT: typings.hl7.adtEventMod.ADT
+      var ADT: typings.hl7.eventsAdtDoteventMod.ADT
       
-      var OMG: typings.hl7.omgEventMod.OMG
+      var OMG: typings.hl7.eventsOmgDoteventMod.OMG
       
-      var ORM: typings.hl7.ormEventMod.ORM
+      var ORM: typings.hl7.eventsOrmDoteventMod.ORM
       
-      var ORU: typings.hl7.oruEventMod.ORU
+      var ORU: typings.hl7.eventsOruDoteventMod.ORU
       
-      var SIU: typings.hl7.siuEventMod.SIU
+      var SIU: typings.hl7.eventsSiuDoteventMod.SIU
     }
     object TriggerEvent {
       

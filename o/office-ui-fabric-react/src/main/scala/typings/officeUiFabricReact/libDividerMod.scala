@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps
+import typings.officeUiFabricReact.libComponentsDividerVerticalDividerDottypesMod.IVerticalDividerProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

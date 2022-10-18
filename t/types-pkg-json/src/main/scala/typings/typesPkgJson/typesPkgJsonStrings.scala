@@ -11,10 +11,6 @@ object typesPkgJsonStrings {
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
-  sealed trait Engines extends StObject
-  inline def Engines: Engines = "Engines".asInstanceOf[Engines]
-  
-  @js.native
   sealed trait Exclamationmarkaix extends StObject
   inline def Exclamationmarkaix: Exclamationmarkaix = "!aix".asInstanceOf[Exclamationmarkaix]
   

@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Composition {
   
   /** Represents an animation. */
-  @JSGlobal("Windows.UI.Composition.CompositionAnimation")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Composition.CompositionAnimation")
   @js.native
-  abstract class CompositionAnimation ()
+  open class CompositionAnimation ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Composition.CompositionAnimation
   
   /** Represents a function for interpolating between animation key frames. */
-  @JSGlobal("Windows.UI.Composition.CompositionEasingFunction")
+  /* note: abstract class */ @JSGlobal("Windows.UI.Composition.CompositionEasingFunction")
   @js.native
-  abstract class CompositionEasingFunction ()
+  open class CompositionEasingFunction ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Composition.CompositionEasingFunction
 }

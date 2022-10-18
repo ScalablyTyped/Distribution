@@ -1,14 +1,21 @@
 package typings.obliterator
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type AnyMapping[K, V] = (Mapping[K, V]) | (Record[K, V])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends keyof any ? std.Record<K, V> | obliterator.obliterator/types.Mapping<K, V> : obliterator.obliterator/types.Mapping<K, V>
+    }}}
+    */
+  @js.native
+  trait AnyMapping[K, V] extends StObject
   
   type IntoEntriesIterator[K, V] = IntoInterator[js.Tuple2[K, V]]
   

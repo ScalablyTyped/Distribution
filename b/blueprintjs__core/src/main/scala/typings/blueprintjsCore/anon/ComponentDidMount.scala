@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.blueprintjsCore.hotkeysEventsMod.HotkeysEvents
+import typings.blueprintjsCore.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents
 import typings.react.mod.ErrorInfo
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
@@ -71,6 +71,8 @@ trait ComponentDidMount extends StObject {
   def renderHotkeys(): ReactElement = js.native
   
   def setState[K /* <: scala.Nothing */](): Unit = js.native
+  def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K])): Unit = js.native
+  def setState[K /* <: scala.Nothing */](state: js.Object | (Pick[js.Object, K]), callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[
       /* prevState */ js.Object, 
@@ -86,11 +88,7 @@ trait ComponentDidMount extends StObject {
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: js.Object): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: js.Object, callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: scala.Nothing */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K]): Unit = js.native
-  def setState[K /* <: scala.Nothing */](state: Pick[js.Object, K], callback: js.Function0[Unit]): Unit = js.native
   
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Boolean]

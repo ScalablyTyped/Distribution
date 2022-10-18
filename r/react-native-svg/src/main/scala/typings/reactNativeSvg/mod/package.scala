@@ -3,13 +3,13 @@ package typings.reactNativeSvg.mod
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.ImageSourcePropType
-import typings.reactNativeSvg.localSvgMod.LocalProps
+import typings.reactNativeSvg.libTypescriptLocalSvgMod.LocalProps
+import typings.reactNativeSvg.libTypescriptXmlMod.AstProps
+import typings.reactNativeSvg.libTypescriptXmlMod.JsxAST
+import typings.reactNativeSvg.libTypescriptXmlMod.Middleware
+import typings.reactNativeSvg.libTypescriptXmlMod.UriProps
+import typings.reactNativeSvg.libTypescriptXmlMod.XmlProps
 import typings.reactNativeSvg.mod.^
-import typings.reactNativeSvg.xmlMod.AstProps
-import typings.reactNativeSvg.xmlMod.JsxAST
-import typings.reactNativeSvg.xmlMod.Middleware
-import typings.reactNativeSvg.xmlMod.UriProps
-import typings.reactNativeSvg.xmlMod.XmlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

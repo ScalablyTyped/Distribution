@@ -1,8 +1,8 @@
 package typings.yuka
 
-import typings.yuka.gameEntityMod.GameEntity
-import typings.yuka.matrix3Mod.Matrix3
-import typings.yuka.memoryRecordMod.MemoryRecord
+import typings.yuka.srcCoreGameEntityMod.GameEntity
+import typings.yuka.srcMathMatrix3Mod.Matrix3
+import typings.yuka.srcPerceptionMemoryMemoryRecordMod.MemoryRecord
 import typings.yuka.yukaInts.`0`
 import typings.yuka.yukaInts.`1`
 import typings.yuka.yukaInts.`2`

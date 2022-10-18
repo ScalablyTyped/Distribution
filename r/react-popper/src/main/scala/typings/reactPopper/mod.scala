@@ -1,8 +1,8 @@
 package typings.reactPopper
 
-import typings.popperjsCore.enumsMod.Placement
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.VirtualElement
+import typings.popperjsCore.libEnumsMod.Placement
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.VirtualElement
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -24,7 +24,6 @@ import typings.reactPopper.reactPopperStrings.preventOverflow
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.NonNullable
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,7 +157,15 @@ object mod {
     }
   }
   
-  type Modifier[Name, Options /* <: js.Object */] = (Partial[typings.popperjsCore.typesMod.Modifier[Name, Options]]) | StrictModifier[Name]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Name extends react-popper.react-popper.StrictModifierNames ? react-popper.react-popper.StrictModifier<Name> : std.Partial<@popperjs/core.@popperjs/core/lib/types.Modifier<Name, Options>>
+    }}}
+    */
+  @js.native
+  trait Modifier[Name, Options /* <: js.Object */] extends StObject
   
   trait PopperArrowProps extends StObject {
     
@@ -366,5 +373,13 @@ object mod {
   ]
   
   // Utility type
-  type UnionWhere[U, M] = U
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    U extends M ? U : never
+    }}}
+    */
+  @js.native
+  trait UnionWhere[U, M] extends StObject
 }

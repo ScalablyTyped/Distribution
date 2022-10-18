@@ -1,10 +1,10 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvComponent.typesMod.EnhancedTextBackgroundCfg
+import typings.antvComponent.libTypesMod.EnhancedTextBackgroundCfg
 import typings.antvG2.antvG2Strings.head
 import typings.antvG2.antvG2Strings.middle
 import typings.antvG2.antvG2Strings.tail
-import typings.antvGBase.typesMod.ShapeAttrs
+import typings.antvGBase.libTypesMod.ShapeAttrs
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

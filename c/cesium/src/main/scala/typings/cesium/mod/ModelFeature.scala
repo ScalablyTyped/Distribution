@@ -66,14 +66,6 @@ open class ModelFeature protected () extends StObject {
   def getPropertyInherited(name: String): Any = js.native
   
   /**
-    * Returns an array of property names for the feature.
-    * @param [results] - An array into which to store the results.
-    * @returns The names of the feature's properties.
-    */
-  def getPropertyNames(): js.Array[String] = js.native
-  def getPropertyNames(results: js.Array[String]): js.Array[String] = js.native
-  
-  /**
     * Returns whether the feature contains this property.
     * @param name - The case-sensitive name of the property.
     * @returns Whether the feature contains this property.

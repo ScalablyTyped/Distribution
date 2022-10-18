@@ -17,8 +17,8 @@ open class RuntimeAnimation protected ()
     */
   def this(
     target: Any,
-    animation: typings.babylonjs.animationMod.Animation,
+    animation: typings.babylonjs.animationsAnimationMod.Animation,
     scene: typings.babylonjs.sceneMod.Scene,
-    host: typings.babylonjs.animatableMod.Animatable
+    host: typings.babylonjs.animationsAnimatableMod.Animatable
   ) = this()
 }

@@ -1,7 +1,6 @@
 package typings.monk
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.bson.mod.Document
 import typings.bson.mod.ObjectId
 import typings.mongodb.mod.ClientSession
@@ -225,43 +224,22 @@ object mod {
     
     def findOneAndUpdate(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | T,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T]
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T],
+      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
+    ): Unit = js.native
+    def findOneAndUpdate(
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T] | T,
       options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace & `0`,
       callback: Callback[FindOneResult[T]]
     ): Unit = js.native
     def findOneAndUpdate(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any
-    ): Unit = js.native
-    def findOneAndUpdate(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
-      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
-    ): Unit = js.native
-    def findOneAndUpdate(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
-      options: Unit,
-      callback: Callback[FindOneResult[T]]
-    ): Unit = js.native
-    def findOneAndUpdate(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T]
-    ): Unit = js.native
-    def findOneAndUpdate(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T],
-      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
-    ): Unit = js.native
-    def findOneAndUpdate(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T],
-      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace,
-      callback: Callback[FindOneResult[T]]
-    ): Unit = js.native
-    def findOneAndUpdate(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T],
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T],
       options: Unit,
       callback: Callback[FindOneResult[T]]
     ): Unit = js.native
@@ -270,24 +248,13 @@ object mod {
     @JSName("findOneAndUpdate")
     def findOneAndUpdate_Promise(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | T
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T] | T
     ): js.Promise[FindOneResult[T]] = js.native
     @JSName("findOneAndUpdate")
     def findOneAndUpdate_Promise(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | T,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T] | T,
       options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace & `0`
-    ): js.Promise[FindOneResult[T]] = js.native
-    @JSName("findOneAndUpdate")
-    def findOneAndUpdate_Promise(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T]
-    ): js.Promise[FindOneResult[T]] = js.native
-    @JSName("findOneAndUpdate")
-    def findOneAndUpdate_Promise(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T],
-      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FindOneAndUpdateOption<T> */ Any) & Replace
     ): js.Promise[FindOneResult[T]] = js.native
     
     def geoHaystackSearch(x: Double, y: Double): js.Promise[GeoHaystackSearchResult[T]] = js.native
@@ -424,32 +391,17 @@ object mod {
     // single
     def update(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T]
     ): js.Promise[UpdateResult] = js.native
     def update(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T],
       options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & Single & MultiReplace & ReplaceSingle,
       callback: Callback[UpdateResult]
     ): Unit = js.native
     def update(
       query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any,
-      options: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & ReplaceSingle) | (Single & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any)) | (MultiReplace & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any))
-    ): js.Promise[UpdateResult] = js.native
-    def update(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T]
-    ): js.Promise[UpdateResult] = js.native
-    def update(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T],
-      options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & Single & MultiReplace & ReplaceSingle,
-      callback: Callback[UpdateResult]
-    ): Unit = js.native
-    def update(
-      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilterQuery<T> */ Any,
-      update: Partial[T],
+      update: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateQuery<T> */ Any) | Partial[T],
       options: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateOneOptions */ Any) & Multi & ReplaceSingle) | (Single & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any)) | (MultiReplace & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UpdateManyOptions */ Any))
     ): js.Promise[UpdateResult] = js.native
   }
@@ -544,9 +496,7 @@ object mod {
     }
   }
   
-  type CreateIndexInput[T] = String | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? 1 | -1}
-    */ typings.monk.monkStrings.CreateIndexInput & TopLevel[Any])
+  type CreateIndexInput[T] = String | (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? 1 | -1} */ js.Any)
   
   type DropIndexInput[T] = CreateIndexInput[T] & js.Array[String]
   

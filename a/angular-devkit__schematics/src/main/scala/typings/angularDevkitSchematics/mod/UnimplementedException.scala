@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/schematics", "UnimplementedException")
 @js.native
 open class UnimplementedException ()
-  extends typings.angularDevkitSchematics.exceptionMod.UnimplementedException
+  extends typings.angularDevkitSchematics.srcExceptionExceptionMod.UnimplementedException

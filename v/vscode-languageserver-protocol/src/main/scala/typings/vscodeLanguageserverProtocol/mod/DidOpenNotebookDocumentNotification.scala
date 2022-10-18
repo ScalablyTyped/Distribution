@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.DidOpenNotebookDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.DidOpenNotebookDocumentParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashdidOpen
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.notebookDocumentSlashsync
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object DidOpenNotebookDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidOpenNotebookDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "DidOpenNotebookDocumentNotification.method")
   @js.native
@@ -24,5 +24,5 @@ object DidOpenNotebookDocumentNotification {
   
   @JSImport("vscode-languageserver-protocol", "DidOpenNotebookDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidOpenNotebookDocumentParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidOpenNotebookDocumentParams, Unit] = js.native
 }

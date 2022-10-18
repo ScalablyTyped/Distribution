@@ -1,6 +1,6 @@
 package typings.lineReader
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait Reader extends StObject {
   
   def close(cb: js.Function1[/* err */ js.Error, Unit]): Unit
   
-  def getReadStream(): ReadableStream[Any]
+  def getReadStream(): ReadableStream
   
   def hasNextLine(): Boolean
   
@@ -23,7 +23,7 @@ object Reader {
   
   inline def apply(
     close: js.Function1[/* err */ js.Error, Unit] => Unit,
-    getReadStream: () => ReadableStream[Any],
+    getReadStream: () => ReadableStream,
     hasNextLine: () => Boolean,
     isClosed: () => Boolean,
     isOpen: () => Boolean,
@@ -37,7 +37,7 @@ object Reader {
     
     inline def setClose(value: js.Function1[/* err */ js.Error, Unit] => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    inline def setGetReadStream(value: () => ReadableStream[Any]): Self = StObject.set(x, "getReadStream", js.Any.fromFunction0(value))
+    inline def setGetReadStream(value: () => ReadableStream): Self = StObject.set(x, "getReadStream", js.Any.fromFunction0(value))
     
     inline def setHasNextLine(value: () => Boolean): Self = StObject.set(x, "hasNextLine", js.Any.fromFunction0(value))
     

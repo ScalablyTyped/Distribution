@@ -1,7 +1,6 @@
 package typings.recompose
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
@@ -211,9 +210,15 @@ object mod {
   type HandleCreatorsFactory[TOutter, THandlers] = js.Function1[/* initialProps */ TOutter, HandleCreators[TOutter, THandlers]]
   
   // This type is required to infer THandlers
-  type HandleCreatorsHandlers[TOutter, THandlers] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof THandlers ]: (props : TOutter): THandlers[P]}
-    */ typings.recompose.recomposeStrings.HandleCreatorsHandlers & TopLevel[THandlers]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof THandlers ]: (props : TOutter): THandlers[P]}
+    }}}
+    */
+  @js.native
+  trait HandleCreatorsHandlers[TOutter, THandlers] extends StObject
   
   // This type is required to infer TOutter
   type HandleCreatorsStructure[TOutter] = StringDictionary[mapper[TOutter, EventHandler]]
@@ -482,9 +487,15 @@ object mod {
   
   type StateHandlerMap[TState] = StringDictionary[StateHandler[TState]]
   
-  type StateUpdaters[TOutter, TState, TUpdaters] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ updaterName in keyof TUpdaters ]: (state : TState, props : TOutter): TUpdaters[updaterName]}
-    */ typings.recompose.recomposeStrings.StateUpdaters & TopLevel[TUpdaters]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ updaterName in keyof TUpdaters ]: (state : TState, props : TOutter): TUpdaters[updaterName]}
+    }}}
+    */
+  @js.native
+  trait StateUpdaters[TOutter, TState, TUpdaters] extends StObject
   
   trait Subscribable[T] extends StObject {
     

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "tensorflow-models__face-detection"
-version := "1.0.1-924bec"
+version := "1.0.1-67d2cc"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-fdde97",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb",
-  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "3.20.0-ab77df",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "3.20.0-d049ea",
-  "org.scalablytyped" %%% "webgpu__types" % "0.1.21-cf69c2")
+  "org.scalablytyped" %%% "offscreencanvas" % "2019.7-dt-20220526Z-f25afc",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765",
+  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "4.0.0-512b78",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "4.0.0-7737a0",
+  "org.scalablytyped" %%% "webgpu__types" % "0.1.22-16be7f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

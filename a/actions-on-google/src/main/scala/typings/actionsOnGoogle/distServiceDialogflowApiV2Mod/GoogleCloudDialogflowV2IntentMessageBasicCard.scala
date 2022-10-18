@@ -1,0 +1,50 @@
+package typings.actionsOnGoogle.distServiceDialogflowApiV2Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GoogleCloudDialogflowV2IntentMessageBasicCard extends StObject {
+  
+  var buttons: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageBasicCardButton]] = js.undefined
+  
+  var formattedText: js.UndefOr[String] = js.undefined
+  
+  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
+  
+  var subtitle: js.UndefOr[String] = js.undefined
+  
+  var title: js.UndefOr[String] = js.undefined
+}
+object GoogleCloudDialogflowV2IntentMessageBasicCard {
+  
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageBasicCard = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageBasicCard]
+  }
+  
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageBasicCard](x: Self) {
+    
+    inline def setButtons(value: js.Array[GoogleCloudDialogflowV2IntentMessageBasicCardButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setButtonsVarargs(value: GoogleCloudDialogflowV2IntentMessageBasicCardButton*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
+    
+    inline def setFormattedTextUndefined: Self = StObject.set(x, "formattedText", js.undefined)
+    
+    inline def setImage(value: GoogleCloudDialogflowV2IntentMessageImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
+}

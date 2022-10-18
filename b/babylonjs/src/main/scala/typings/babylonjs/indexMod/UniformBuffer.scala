@@ -23,75 +23,84 @@ open class UniformBuffer protected ()
     * @param name to assign to the buffer (debugging purpose)
     * @param forceNoUniformBuffer define that this object must not rely on UBO objects
     */
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: js.Array[Double]) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: js.Array[Double], dynamic: Boolean) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: Unit, dynamic: Boolean) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, data: js.Array[Double]) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Boolean
+  ) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, data: Unit, dynamic: Boolean) = this()
+  def this(
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: js.Array[Double],
     dynamic: Boolean,
     name: String
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: js.Array[Double],
     dynamic: Unit,
     name: String
   ) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: Unit, dynamic: Boolean, name: String) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: Unit, dynamic: Unit, name: String) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
+    data: Unit,
+    dynamic: Boolean,
+    name: String
+  ) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, data: Unit, dynamic: Unit, name: String) = this()
+  def this(
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: js.Array[Double],
     dynamic: Boolean,
     name: String,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: js.Array[Double],
     dynamic: Boolean,
     name: Unit,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: js.Array[Double],
     dynamic: Unit,
     name: String,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: js.Array[Double],
     dynamic: Unit,
     name: Unit,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: Unit,
     dynamic: Boolean,
     name: String,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: Unit,
     dynamic: Boolean,
     name: Unit,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: Unit,
     dynamic: Unit,
     name: String,
     forceNoUniformBuffer: Boolean
   ) = this()
   def this(
-    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    engine: typings.babylonjs.enginesThinEngineMod.ThinEngine,
     data: Unit,
     dynamic: Unit,
     name: Unit,

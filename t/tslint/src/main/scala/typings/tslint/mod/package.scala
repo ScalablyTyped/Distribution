@@ -1,15 +1,15 @@
 package typings.tslint.mod
 
-import typings.tslint.formatterMod.FormatterConstructor
+import typings.tslint.libLanguageFormatterFormatterMod.FormatterConstructor
+import typings.tslint.libLanguageRuleRuleMod.IDisabledInterval
+import typings.tslint.libLanguageRuleRuleMod.IOptions
+import typings.tslint.libLanguageRuleRuleMod.IRule
+import typings.tslint.libLanguageRuleRuleMod.RuleConstructor
+import typings.tslint.libLanguageUtilsMod.EqualsKind
+import typings.tslint.libLanguageUtilsMod.FilterCallback
+import typings.tslint.libLanguageUtilsMod.ForEachCommentCallback
+import typings.tslint.libLanguageUtilsMod.ForEachTokenCallback
 import typings.tslint.mod.^
-import typings.tslint.ruleMod.IDisabledInterval
-import typings.tslint.ruleMod.IOptions
-import typings.tslint.ruleMod.IRule
-import typings.tslint.ruleMod.RuleConstructor
-import typings.tslint.utilsMod.EqualsKind
-import typings.tslint.utilsMod.FilterCallback
-import typings.tslint.utilsMod.ForEachCommentCallback
-import typings.tslint.utilsMod.ForEachTokenCallback
 import typings.typescript.mod.BinaryOperatorToken
 import typings.typescript.mod.BindingElement
 import typings.typescript.mod.CompilerOptions
@@ -41,7 +41,10 @@ inline def ancestorWhere[T /* <: Node */](node: Node, predicate: js.Function1[/*
 
 inline def childOfKind(node: Node, kind: SyntaxKind): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("childOfKind")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
 
-inline def doesIntersect(failure: typings.tslint.ruleMod.RuleFailure, disabledIntervals: js.Array[IDisabledInterval]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doesIntersect")(failure.asInstanceOf[js.Any], disabledIntervals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+inline def doesIntersect(
+  failure: typings.tslint.libLanguageRuleRuleMod.RuleFailure,
+  disabledIntervals: js.Array[IDisabledInterval]
+): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("doesIntersect")(failure.asInstanceOf[js.Any], disabledIntervals.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def findFormatter(name: String): js.UndefOr[FormatterConstructor] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFormatter")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[FormatterConstructor]]
 inline def findFormatter(name: String, formattersDirectory: String): js.UndefOr[FormatterConstructor] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFormatter")(name.asInstanceOf[js.Any], formattersDirectory.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[FormatterConstructor]]
@@ -112,7 +115,7 @@ inline def loadRules(ruleOptionsList: js.Array[IOptions], rulesDirectories: js.A
 inline def loadRules(ruleOptionsList: js.Array[IOptions], rulesDirectories: js.Array[String], isJs: Boolean): js.Array[IRule] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadRules")(ruleOptionsList.asInstanceOf[js.Any], rulesDirectories.asInstanceOf[js.Any], isJs.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRule]]
 inline def loadRules(ruleOptionsList: js.Array[IOptions], rulesDirectories: Unit, isJs: Boolean): js.Array[IRule] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadRules")(ruleOptionsList.asInstanceOf[js.Any], rulesDirectories.asInstanceOf[js.Any], isJs.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRule]]
 
-inline def removeDisabledFailures(sourceFile: SourceFile, failures: js.Array[typings.tslint.ruleMod.RuleFailure]): js.Array[typings.tslint.ruleMod.RuleFailure] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDisabledFailures")(sourceFile.asInstanceOf[js.Any], failures.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.tslint.ruleMod.RuleFailure]]
+inline def removeDisabledFailures(sourceFile: SourceFile, failures: js.Array[typings.tslint.libLanguageRuleRuleMod.RuleFailure]): js.Array[typings.tslint.libLanguageRuleRuleMod.RuleFailure] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDisabledFailures")(sourceFile.asInstanceOf[js.Any], failures.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.tslint.libLanguageRuleRuleMod.RuleFailure]]
 
 inline def someAncestor(node: Node, predicate: js.Function1[/* n */ Node, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("someAncestor")(node.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 

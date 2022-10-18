@@ -1,7 +1,7 @@
 package typings.webshotNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import typings.webshotNode.anon.Bottom
 import typings.webshotNode.anon.Height
 import typings.webshotNode.anon.Width
@@ -17,14 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(src: String): ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[ReadableStream[Any]]
-  inline def apply(src: String, cb: js.Function1[/* e */ js.Error | Null, Unit]): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(src: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(src: String, cb: js.Function1[/* e */ js.Error | Null, Unit]): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   inline def apply(src: String, dst: String): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(src: String, dst: String, cb: js.Function1[/* e */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(src: String, dst: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(src: String, dst: String, options: Options, cb: js.Function1[/* e */ js.Error | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(src: String, options: Options): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
-  inline def apply(src: String, options: Options, cb: js.Function1[/* e */ js.Error | Null, Unit]): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+  inline def apply(src: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(src: String, options: Options, cb: js.Function1[/* e */ js.Error | Null, Unit]): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   @JSImport("webshot-node", JSImport.Namespace)
   @js.native

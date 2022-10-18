@@ -1,8 +1,8 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.addressMod.address.AddressType
-import typings.mangopay2NodejsSdk.typesMod.Timestamp
-import typings.mangopay2NodejsSdk.uboDeclarationMod.uboDeclaration.UboData
+import typings.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressType
+import typings.mangopay2NodejsSdk.typingsModelsUboDeclarationMod.uboDeclaration.UboData
+import typings.mangopay2NodejsSdk.typingsTypesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ open class Ubo protected ()
   var Birthday: Timestamp = js.native
   
   /* CompleteClass */
-  var Birthplace: typings.mangopay2NodejsSdk.birthplaceMod.birthplace.Birthplace = js.native
+  var Birthplace: typings.mangopay2NodejsSdk.typingsModelsBirthplaceMod.birthplace.Birthplace = js.native
   
   /* CompleteClass */
   var CreationDate: Double = js.native

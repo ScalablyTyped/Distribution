@@ -1,7 +1,7 @@
 package typings.antvGLite.mod
 
 import typings.manaSyringe.anon.PartialTokenOption
-import typings.manaSyringe.coreMod.Syringe.InjectOption
+import typings.manaSyringe.libCoreMod.Syringe.InjectOption
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,18 +34,18 @@ object Syringe {
   object Lifecycle extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.manaSyringe.coreMod.Syringe.Lifecycle & String] = js.native
+    def apply(value: String): js.UndefOr[typings.manaSyringe.libCoreMod.Syringe.Lifecycle & String] = js.native
     
-    /* "singleton" */ val singleton: typings.manaSyringe.coreMod.Syringe.Lifecycle.singleton & String = js.native
+    /* "singleton" */ val singleton: typings.manaSyringe.libCoreMod.Syringe.Lifecycle.singleton & String = js.native
     
-    /* "transient" */ val transient: typings.manaSyringe.coreMod.Syringe.Lifecycle.transient & String = js.native
+    /* "transient" */ val transient: typings.manaSyringe.libCoreMod.Syringe.Lifecycle.transient & String = js.native
   }
   
   /**
     * 定义注入标识，默认允许多重注入
     */
-  inline def defineToken(name: String): typings.manaSyringe.coreMod.Syringe.DefinedToken = ^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.coreMod.Syringe.DefinedToken]
-  inline def defineToken(name: String, option: PartialTokenOption): typings.manaSyringe.coreMod.Syringe.DefinedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.manaSyringe.coreMod.Syringe.DefinedToken]
+  inline def defineToken(name: String): typings.manaSyringe.libCoreMod.Syringe.DefinedToken = ^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any]).asInstanceOf[typings.manaSyringe.libCoreMod.Syringe.DefinedToken]
+  inline def defineToken(name: String, option: PartialTokenOption): typings.manaSyringe.libCoreMod.Syringe.DefinedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("defineToken")(name.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[typings.manaSyringe.libCoreMod.Syringe.DefinedToken]
   
   inline def isModule(): /* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModule")().asInstanceOf[/* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean]
   inline def isModule(data: Record[Any, Any]): /* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModule")(data.asInstanceOf[js.Any]).asInstanceOf[/* is mana-syringe.mana-syringe/lib/core.Syringe.Module */ Boolean]

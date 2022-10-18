@@ -1,27 +1,23 @@
 package typings.xstate.anon
 
-import typings.xstate.typesMod.EventObject
+import typings.xstate.xstateStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Event[TEvent /* <: EventObject */] extends StObject {
+trait Event extends StObject {
   
-  var event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
+  var event: _empty
 }
 object Event {
   
-  inline def apply[TEvent /* <: EventObject */](
-    event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
-  ): Event[TEvent] = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Event[TEvent]]
+  inline def apply(): Event = {
+    val __obj = js.Dynamic.literal(event = "")
+    __obj.asInstanceOf[Event]
   }
   
-  extension [Self <: Event[?], TEvent /* <: EventObject */](x: Self & Event[TEvent]) {
+  extension [Self <: Event](x: Self) {
     
-    inline def setEvent(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
-    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: _empty): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

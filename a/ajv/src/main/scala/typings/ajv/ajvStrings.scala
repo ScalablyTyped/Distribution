@@ -1,14 +1,14 @@
 package typings.ajv
 
-import typings.ajv.jtdPropertiesMod.PropKeyword
-import typings.ajv.limitNumberMod.Comparison
-import typings.ajv.limitNumberMod.Kwd
-import typings.ajv.rulesMod.JSONType
-import typings.ajv.typeMod.IntType
-import typings.ajv.typeMod.JTDType
-import typings.ajv.typesJtdSchemaMod.NumberType
-import typings.ajv.typesJtdSchemaMod.StringType
-import typings.ajv.typesMod.JTDForm
+import typings.ajv.distCompileJtdTypesMod.JTDForm
+import typings.ajv.distCompileRulesMod.JSONType
+import typings.ajv.distTypesJtdSchemaMod.NumberType
+import typings.ajv.distTypesJtdSchemaMod.StringType
+import typings.ajv.distVocabulariesJtdPropertiesMod.PropKeyword
+import typings.ajv.distVocabulariesJtdTypeMod.IntType
+import typings.ajv.distVocabulariesJtdTypeMod.JTDType
+import typings.ajv.distVocabulariesValidationLimitNumberMod.Comparison
+import typings.ajv.distVocabulariesValidationLimitNumberMod.Kwd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,48 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ajvStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
   sealed trait $id extends StObject
   inline def $id: $id = "$id".asInstanceOf[$id]
-  
-  @js.native
-  sealed trait `11` extends StObject
-  inline def `11`: `11` = "11".asInstanceOf[`11`]
-  
-  @js.native
-  sealed trait `13` extends StObject
-  inline def `13`: `13` = "13".asInstanceOf[`13`]
-  
-  @js.native
-  sealed trait AdditionalProperties extends StObject
-  inline def AdditionalProperties: AdditionalProperties = "AdditionalProperties".asInstanceOf[AdditionalProperties]
-  
-  @js.native
-  sealed trait Ajv extends StObject
-  inline def Ajv: Ajv = "Ajv".asInstanceOf[Ajv]
-  
-  @js.native
-  sealed trait CurrentOptions extends StObject
-  inline def CurrentOptions: CurrentOptions = "CurrentOptions".asInstanceOf[CurrentOptions]
-  
-  @js.native
-  sealed trait DataValidationCxt extends StObject
-  inline def DataValidationCxt: DataValidationCxt = "DataValidationCxt".asInstanceOf[DataValidationCxt]
-  
-  @js.native
-  sealed trait Definitions extends StObject
-  inline def Definitions: Definitions = "Definitions".asInstanceOf[Definitions]
-  
-  @js.native
-  sealed trait DependenciesError extends StObject
-  inline def DependenciesError: DependenciesError = "DependenciesError".asInstanceOf[DependenciesError]
-  
-  @js.native
-  sealed trait EvaluatedProperties extends StObject
-  inline def EvaluatedProperties: EvaluatedProperties = "EvaluatedProperties".asInstanceOf[EvaluatedProperties]
   
   @js.native
   sealed trait Greaterthansign
@@ -72,24 +32,8 @@ object ajvStrings {
   inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait InstanceOptions extends StObject
-  inline def InstanceOptions: InstanceOptions = "InstanceOptions".asInstanceOf[InstanceOptions]
-  
-  @js.native
-  sealed trait Items extends StObject
-  inline def Items: Items = "Items".asInstanceOf[Items]
-  
-  @js.native
   sealed trait JSONSchemaType extends StObject
   inline def JSONSchemaType: JSONSchemaType = "JSONSchemaType".asInstanceOf[JSONSchemaType]
-  
-  @js.native
-  sealed trait JTDDataDef extends StObject
-  inline def JTDDataDef: JTDDataDef = "JTDDataDef".asInstanceOf[JTDDataDef]
-  
-  @js.native
-  sealed trait KeywordCxtParams extends StObject
-  inline def KeywordCxtParams: KeywordCxtParams = "KeywordCxtParams".asInstanceOf[KeywordCxtParams]
   
   @js.native
   sealed trait Lessthansign
@@ -104,80 +48,24 @@ object ajvStrings {
   inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait LocalRefs extends StObject
-  inline def LocalRefs: LocalRefs = "LocalRefs".asInstanceOf[LocalRefs]
-  
-  @js.native
   sealed trait PartialSchema extends StObject
   inline def PartialSchema: PartialSchema = "PartialSchema".asInstanceOf[PartialSchema]
-  
-  @js.native
-  sealed trait PropSchema extends StObject
-  inline def PropSchema: PropSchema = "PropSchema".asInstanceOf[PropSchema]
   
   @js.native
   sealed trait PropertiesSchema extends StObject
   inline def PropertiesSchema: PropertiesSchema = "PropertiesSchema".asInstanceOf[PropertiesSchema]
   
   @js.native
-  sealed trait PropertyDependencies extends StObject
-  inline def PropertyDependencies: PropertyDependencies = "PropertyDependencies".asInstanceOf[PropertyDependencies]
-  
-  @js.native
   sealed trait RequiredMembers extends StObject
   inline def RequiredMembers: RequiredMembers = "RequiredMembers".asInstanceOf[RequiredMembers]
-  
-  @js.native
-  sealed trait SchemaEnv extends StObject
-  inline def SchemaEnv: SchemaEnv = "SchemaEnv".asInstanceOf[SchemaEnv]
-  
-  @js.native
-  sealed trait SchemaMap extends StObject
-  inline def SchemaMap: SchemaMap = "SchemaMap".asInstanceOf[SchemaMap]
-  
-  @js.native
-  sealed trait SchemaObjectMap extends StObject
-  inline def SchemaObjectMap: SchemaObjectMap = "SchemaObjectMap".asInstanceOf[SchemaObjectMap]
-  
-  @js.native
-  sealed trait SchemaRefs extends StObject
-  inline def SchemaRefs: SchemaRefs = "SchemaRefs".asInstanceOf[SchemaRefs]
-  
-  @js.native
-  sealed trait Scope extends StObject
-  inline def Scope: Scope = "Scope".asInstanceOf[Scope]
-  
-  @js.native
-  sealed trait ScopeValueSets extends StObject
-  inline def ScopeValueSets: ScopeValueSets = "ScopeValueSets".asInstanceOf[ScopeValueSets]
-  
-  @js.native
-  sealed trait ScopeValues extends StObject
-  inline def ScopeValues: ScopeValues = "ScopeValues".asInstanceOf[ScopeValues]
-  
-  @js.native
-  sealed trait UncheckedPropertiesSchema extends StObject
-  inline def UncheckedPropertiesSchema: UncheckedPropertiesSchema = "UncheckedPropertiesSchema".asInstanceOf[UncheckedPropertiesSchema]
-  
-  @js.native
-  sealed trait UsedScopeValues extends StObject
-  inline def UsedScopeValues: UsedScopeValues = "UsedScopeValues".asInstanceOf[UsedScopeValues]
-  
-  @js.native
-  sealed trait ValidationRules extends StObject
-  inline def ValidationRules: ValidationRules = "ValidationRules".asInstanceOf[ValidationRules]
-  
-  @js.native
-  sealed trait ValidationTypes extends StObject
-  inline def ValidationTypes: ValidationTypes = "ValidationTypes".asInstanceOf[ValidationTypes]
   
   @js.native
   sealed trait additionalItems extends StObject
   inline def additionalItems: additionalItems = "additionalItems".asInstanceOf[additionalItems]
   
   @js.native
-  sealed trait additionalProperties_ extends StObject
-  inline def additionalProperties_ : additionalProperties_ = "additionalProperties".asInstanceOf[additionalProperties_]
+  sealed trait additionalProperties extends StObject
+  inline def additionalProperties: additionalProperties = "additionalProperties".asInstanceOf[additionalProperties]
   
   @js.native
   sealed trait all extends StObject
@@ -323,8 +211,8 @@ object ajvStrings {
   inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait items_ extends StObject
-  inline def items_ : items_ = "items".asInstanceOf[items_]
+  sealed trait items extends StObject
+  inline def items: items = "items".asInstanceOf[items]
   
   @js.native
   sealed trait log extends StObject
@@ -429,14 +317,6 @@ object ajvStrings {
   inline def required: required = "required".asInstanceOf[required]
   
   @js.native
-  sealed trait schemaHasRules extends StObject
-  inline def schemaHasRules: schemaHasRules = "schemaHasRules".asInstanceOf[schemaHasRules]
-  
-  @js.native
-  sealed trait setEvaluated extends StObject
-  inline def setEvaluated: setEvaluated = "setEvaluated".asInstanceOf[setEvaluated]
-  
-  @js.native
   sealed trait string
     extends StObject
        with JSONType
@@ -450,10 +330,6 @@ object ajvStrings {
        with JTDType
        with StringType
   inline def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
-  
-  @js.native
-  sealed trait toHash extends StObject
-  inline def toHash: toHash = "toHash".asInstanceOf[toHash]
   
   @js.native
   sealed trait `type`
@@ -496,10 +372,6 @@ object ajvStrings {
   @js.native
   sealed trait uniqueItems extends StObject
   inline def uniqueItems: uniqueItems = "uniqueItems".asInstanceOf[uniqueItems]
-  
-  @js.native
-  sealed trait validatePropertyDeps extends StObject
-  inline def validatePropertyDeps: validatePropertyDeps = "validatePropertyDeps".asInstanceOf[validatePropertyDeps]
   
   @js.native
   sealed trait values

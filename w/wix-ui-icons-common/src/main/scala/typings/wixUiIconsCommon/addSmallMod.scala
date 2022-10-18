@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsAddSmallMod.AddSmallProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsAddSmallMod.AddSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/AddSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/AddSmall", JSImport.Default)
   @js.native
   val default: FC[AddSmallProps] = js.native
   

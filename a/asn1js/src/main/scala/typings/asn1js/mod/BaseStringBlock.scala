@@ -1,17 +1,14 @@
 package typings.asn1js.mod
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "BaseStringBlock")
 @js.native
-abstract class BaseStringBlock[T /* <: LocalStringValueBlock */, J /* <: BaseStringBlockJson */] protected ()
-  extends BaseBlock[T, J]
+trait BaseStringBlock[T /* <: LocalStringValueBlock */, J /* <: BaseStringBlockJson */]
+  extends StObject
+     with BaseBlock[T, J]
      with IStringConvertible {
-  def this(hasValueParameters: Unit, stringValueBlockType: Instantiable0[T]) = this()
-  def this(hasValueParameters: BaseStringBlockParams, stringValueBlockType: Instantiable0[T]) = this()
   
   /**
     * Function converting ArrayBuffer into ASN.1 internal string
@@ -19,13 +16,6 @@ abstract class BaseStringBlock[T /* <: LocalStringValueBlock */, J /* <: BaseStr
     */
   def fromBuffer(inputBuffer: js.typedarray.ArrayBuffer): Unit = js.native
   def fromBuffer(inputBuffer: js.typedarray.Uint8Array): Unit = js.native
-  
-  /**
-    * Creates a class object from the string
-    * @param data Input string to convert from
-    */
-  /* CompleteClass */
-  override def fromString(data: String): Unit = js.native
   
   /**
     * String value
@@ -39,16 +29,4 @@ abstract class BaseStringBlock[T /* <: LocalStringValueBlock */, J /* <: BaseStr
     * @since 3.0.0
     */
   def setValue(value: String): Unit = js.native
-}
-object BaseStringBlock {
-  
-  @JSImport("asn1js", "BaseStringBlock")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("asn1js", "BaseStringBlock.NAME")
-  @js.native
-  def NAME: String = js.native
-  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

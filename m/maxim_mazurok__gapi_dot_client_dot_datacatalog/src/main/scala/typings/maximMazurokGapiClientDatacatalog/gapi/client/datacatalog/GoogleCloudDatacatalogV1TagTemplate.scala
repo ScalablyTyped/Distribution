@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +18,7 @@ trait GoogleCloudDatacatalogV1TagTemplate extends StObject {
     * Must be at least 1 character and at most 64 characters long. * Must start with a letter or underscore.
     */
   var fields: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1TagTemplateField}
-    */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1TagTemplate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1TagTemplateField} */ js.Any
   ] = js.undefined
   
   /**
@@ -47,9 +44,7 @@ object GoogleCloudDatacatalogV1TagTemplate {
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setFields(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1TagTemplateField}
-      */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1TagTemplate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1TagTemplateField} */ js.Any
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

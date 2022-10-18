@@ -1,6 +1,6 @@
 package typings.playable.anon
 
-import typings.playable.mediaStreamMod.MediaStreamType
+import typings.playable.distSrcConstantsMediaStreamMod.MediaStreamType
 import typings.playable.playableStrings.html5video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

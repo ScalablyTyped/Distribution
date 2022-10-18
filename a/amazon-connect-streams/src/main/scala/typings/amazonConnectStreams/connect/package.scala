@@ -1,7 +1,6 @@
 package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.amazonConnectStreams.anon.Name
 import typings.amazonConnectStreams.anon.Type
 import org.scalablytyped.runtime.StObject
@@ -15,10 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param agent The `Agent` API object instance.
   */
 type AgentCallback = js.Function1[/* agent */ Agent, Unit]
-
-type AgentChannelConcurrencyMap = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ channel in amazon-connect-streams.connect.ChannelType ]: number}
-  */ typings.amazonConnectStreams.amazonConnectStreamsStrings.AgentChannelConcurrencyMap & TopLevel[Any]
 
 /**
   * A callback to receive `AgentMutedStatus` API object instances.

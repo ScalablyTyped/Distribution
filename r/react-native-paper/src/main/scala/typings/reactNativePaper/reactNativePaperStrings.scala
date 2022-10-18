@@ -1,9 +1,9 @@
 package typings.reactNativePaper
 
-import typings.reactNativePaper.animatedFABAnimatedFABMod.AnimatedFABAnimateFrom
-import typings.reactNativePaper.animatedFABAnimatedFABMod.AnimatedFABIconMode
-import typings.reactNativePaper.typescriptTypesMod.EllipsizeProp
-import typings.reactNativePaper.typescriptTypesMod.Mode
+import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.AnimatedFABAnimateFrom
+import typings.reactNativePaper.libTypescriptComponentsFabAnimatedFABAnimatedFABMod.AnimatedFABIconMode
+import typings.reactNativePaper.libTypescriptTypesMod.EllipsizeProp
+import typings.reactNativePaper.libTypescriptTypesMod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

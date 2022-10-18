@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Skeleton")
 @js.native
 open class Skeleton protected ()
-  extends typings.babylonjs.legacyMod.Skeleton {
+  extends typings.babylonjs.legacyLegacyMod.Skeleton {
   /**
     * Creates a new skeleton
     * @param name defines the skeleton name
@@ -37,8 +37,8 @@ object Skeleton {
     * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
     * @returns the original skeleton
     */
-  inline def MakeAnimationAdditive(skeleton: typings.babylonjs.skeletonMod.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.skeletonMod.Skeleton]]
-  inline def MakeAnimationAdditive(skeleton: typings.babylonjs.skeletonMod.Skeleton, referenceFrame: Unit, range: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.skeletonMod.Skeleton]]
+  inline def MakeAnimationAdditive(skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.bonesSkeletonMod.Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.bonesSkeletonMod.Skeleton]]
+  inline def MakeAnimationAdditive(skeleton: typings.babylonjs.bonesSkeletonMod.Skeleton, referenceFrame: Unit, range: String): Nullable[typings.babylonjs.bonesSkeletonMod.Skeleton] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(skeleton.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.bonesSkeletonMod.Skeleton]]
   
   /**
     * Creates a new skeleton from serialized data
@@ -46,5 +46,5 @@ object Skeleton {
     * @param scene defines the hosting scene
     * @returns a new skeleton
     */
-  inline def Parse(parsedSkeleton: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.skeletonMod.Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.skeletonMod.Skeleton]
+  inline def Parse(parsedSkeleton: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.bonesSkeletonMod.Skeleton = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSkeleton.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.bonesSkeletonMod.Skeleton]
 }

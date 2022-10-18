@@ -8,7 +8,7 @@ object Pseudos {
   
   inline def `Colon-moz-any-link`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-any-link` = ":-moz-any-link".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-any-link`]
   
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: /* :-moz-any() */ String = ":-moz-any()".asInstanceOf[/* :-moz-any() */ String]
   
   inline def `Colon-moz-dir`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir` = ":-moz-dir".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`]
   
@@ -26,7 +26,7 @@ object Pseudos {
   
   inline def `Colon-webkit-any-link`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-any-link` = ":-webkit-any-link".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-any-link`]
   
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: /* :-webkit-any() */ String = ":-webkit-any()".asInstanceOf[/* :-webkit-any() */ String]
   
   inline def `Colon-webkit-full-screen`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-full-screen` = ":-webkit-full-screen".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-webkit-full-screen`]
   
@@ -176,7 +176,7 @@ object Pseudos {
   
   inline def Colonlink: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlink = ":link".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlink]
   
-  inline def ColonmatchesLeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
+  inline def ColonmatchesLeftparenthesisRightparenthesis: /* :matches() */ String = ":matches()".asInstanceOf[/* :matches() */ String]
   
   inline def Colonnot: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot = ":not".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot]
   

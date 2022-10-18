@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.referMod.IncomingReferRequest
+import typings.sipJs.libCoreMessagesMethodsReferMod.IncomingReferRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Referral")
 @js.native
 open class Referral protected ()
-  extends typings.sipJs.apiMod.Referral {
+  extends typings.sipJs.libApiMod.Referral {
   /** @internal */
-  def this(incomingReferRequest: IncomingReferRequest, session: typings.sipJs.sessionMod.Session) = this()
+  def this(incomingReferRequest: IncomingReferRequest, session: typings.sipJs.libApiSessionMod.Session) = this()
 }

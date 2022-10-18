@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.propertyBindingMod.ParseTrackNameResults
+import typings.three.srcAnimationPropertyBindingMod.ParseTrackNameResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +27,8 @@ object PropertyBinding {
     def this(targetGroup: Any, path: Any, parsedPath: Any) = this()
   }
   
-  inline def create(root: Any, path: Any): typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite]
-  inline def create(root: Any, path: Any, parsedPath: Any): typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite]
+  inline def create(root: Any, path: Any): typings.three.srcAnimationPropertyBindingMod.PropertyBinding | typings.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationPropertyBindingMod.PropertyBinding | typings.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite]
+  inline def create(root: Any, path: Any, parsedPath: Any): typings.three.srcAnimationPropertyBindingMod.PropertyBinding | typings.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcAnimationPropertyBindingMod.PropertyBinding | typings.three.srcAnimationPropertyBindingMod.PropertyBinding.Composite]
   
   inline def findNode(root: Any, nodeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[Any]
   

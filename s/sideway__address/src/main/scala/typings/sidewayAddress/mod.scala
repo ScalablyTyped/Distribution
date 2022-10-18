@@ -1,10 +1,10 @@
 package typings.sidewayAddress
 
-import typings.sidewayAddress.domainMod.Analysis
-import typings.sidewayAddress.domainMod.DomainOptions
-import typings.sidewayAddress.emailMod.EmailOptions
-import typings.sidewayAddress.ipMod.Expression
-import typings.sidewayAddress.ipMod.Options
+import typings.sidewayAddress.distDomainMod.Analysis
+import typings.sidewayAddress.distDomainMod.DomainOptions
+import typings.sidewayAddress.distEmailMod.EmailOptions
+import typings.sidewayAddress.distIpMod.Expression
+import typings.sidewayAddress.distIpMod.Options
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,8 +37,8 @@ object mod {
   
   inline def uriDecode(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriDecode")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def uriRegex(): typings.sidewayAddress.uriMod.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("uriRegex")().asInstanceOf[typings.sidewayAddress.uriMod.Expression]
-  inline def uriRegex(options: typings.sidewayAddress.uriMod.Options): typings.sidewayAddress.uriMod.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("uriRegex")(options.asInstanceOf[js.Any]).asInstanceOf[typings.sidewayAddress.uriMod.Expression]
+  inline def uriRegex(): typings.sidewayAddress.distUriMod.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("uriRegex")().asInstanceOf[typings.sidewayAddress.distUriMod.Expression]
+  inline def uriRegex(options: typings.sidewayAddress.distUriMod.Options): typings.sidewayAddress.distUriMod.Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("uriRegex")(options.asInstanceOf[js.Any]).asInstanceOf[typings.sidewayAddress.distUriMod.Expression]
   
   inline def validateDomainOptions(options: DomainOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateDomainOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

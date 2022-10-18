@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.useMergedRefsMod.MergedRef
+import typings.orbitUiReactComponents.distSharedSrcUseMergedRefsMod.MergedRef
 import typings.react.mod.KeyboardEvent
 import typings.std.Element
 import typings.std.HTMLElement

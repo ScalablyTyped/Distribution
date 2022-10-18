@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-memoize
 
-Typings are for version 7.1.0
+Typings are for version 7.1.1
 
 ## Library description:
 Memoize promise-returning & async functions

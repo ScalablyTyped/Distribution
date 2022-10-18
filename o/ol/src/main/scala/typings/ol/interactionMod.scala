@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.doubleClickZoomMod.Options
-import typings.ol.doubleClickZoomMod.default
+import typings.ol.interactionDoubleClickZoomMod.Options
+import typings.ol.interactionDoubleClickZoomMod.default
 import typings.ol.interactionInteractionMod.InteractionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,50 +22,50 @@ object interactionMod {
   @JSImport("ol/interaction", "DragAndDrop")
   @js.native
   open class DragAndDrop ()
-    extends typings.ol.dragAndDropMod.default {
-    def this(opt_options: typings.ol.dragAndDropMod.Options) = this()
+    extends typings.ol.interactionDragAndDropMod.default {
+    def this(opt_options: typings.ol.interactionDragAndDropMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragBox")
   @js.native
   open class DragBox ()
-    extends typings.ol.dragBoxMod.default {
-    def this(opt_options: typings.ol.dragBoxMod.Options) = this()
+    extends typings.ol.interactionDragBoxMod.default {
+    def this(opt_options: typings.ol.interactionDragBoxMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragPan")
   @js.native
   open class DragPan ()
-    extends typings.ol.dragPanMod.default {
-    def this(opt_options: typings.ol.dragPanMod.Options) = this()
+    extends typings.ol.interactionDragPanMod.default {
+    def this(opt_options: typings.ol.interactionDragPanMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragRotate")
   @js.native
   open class DragRotate ()
-    extends typings.ol.dragRotateMod.default {
-    def this(opt_options: typings.ol.dragRotateMod.Options) = this()
+    extends typings.ol.interactionDragRotateMod.default {
+    def this(opt_options: typings.ol.interactionDragRotateMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragRotateAndZoom")
   @js.native
   open class DragRotateAndZoom ()
-    extends typings.ol.dragRotateAndZoomMod.default {
-    def this(opt_options: typings.ol.dragRotateAndZoomMod.Options) = this()
+    extends typings.ol.interactionDragRotateAndZoomMod.default {
+    def this(opt_options: typings.ol.interactionDragRotateAndZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragZoom")
   @js.native
   open class DragZoom ()
-    extends typings.ol.dragZoomMod.default {
-    def this(opt_options: typings.ol.dragZoomMod.Options) = this()
+    extends typings.ol.interactionDragZoomMod.default {
+    def this(opt_options: typings.ol.interactionDragZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Draw")
   @js.native
   open class Draw protected ()
-    extends typings.ol.drawMod.default {
-    def this(options: typings.ol.drawMod.Options) = this()
+    extends typings.ol.interactionDrawMod.default {
+    def this(options: typings.ol.interactionDrawMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Extent")
@@ -85,71 +85,71 @@ object interactionMod {
   @JSImport("ol/interaction", "KeyboardPan")
   @js.native
   open class KeyboardPan ()
-    extends typings.ol.keyboardPanMod.default {
-    def this(opt_options: typings.ol.keyboardPanMod.Options) = this()
+    extends typings.ol.interactionKeyboardPanMod.default {
+    def this(opt_options: typings.ol.interactionKeyboardPanMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "KeyboardZoom")
   @js.native
   open class KeyboardZoom ()
-    extends typings.ol.keyboardZoomMod.default {
-    def this(opt_options: typings.ol.keyboardZoomMod.Options) = this()
+    extends typings.ol.interactionKeyboardZoomMod.default {
+    def this(opt_options: typings.ol.interactionKeyboardZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Modify")
   @js.native
   open class Modify protected ()
-    extends typings.ol.modifyMod.default {
-    def this(options: typings.ol.modifyMod.Options) = this()
+    extends typings.ol.interactionModifyMod.default {
+    def this(options: typings.ol.interactionModifyMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "MouseWheelZoom")
   @js.native
   open class MouseWheelZoom ()
-    extends typings.ol.mouseWheelZoomMod.default {
-    def this(opt_options: typings.ol.mouseWheelZoomMod.Options) = this()
+    extends typings.ol.interactionMouseWheelZoomMod.default {
+    def this(opt_options: typings.ol.interactionMouseWheelZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "PinchRotate")
   @js.native
   open class PinchRotate ()
-    extends typings.ol.pinchRotateMod.default {
-    def this(opt_options: typings.ol.pinchRotateMod.Options) = this()
+    extends typings.ol.interactionPinchRotateMod.default {
+    def this(opt_options: typings.ol.interactionPinchRotateMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "PinchZoom")
   @js.native
   open class PinchZoom ()
-    extends typings.ol.pinchZoomMod.default {
-    def this(opt_options: typings.ol.pinchZoomMod.Options) = this()
+    extends typings.ol.interactionPinchZoomMod.default {
+    def this(opt_options: typings.ol.interactionPinchZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Pointer")
   @js.native
   open class Pointer ()
-    extends typings.ol.pointerMod.default {
-    def this(opt_options: typings.ol.pointerMod.Options) = this()
+    extends typings.ol.interactionPointerMod.default {
+    def this(opt_options: typings.ol.interactionPointerMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Select")
   @js.native
   open class Select ()
-    extends typings.ol.selectMod.default {
-    def this(opt_options: typings.ol.selectMod.Options) = this()
+    extends typings.ol.interactionSelectMod.default {
+    def this(opt_options: typings.ol.interactionSelectMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Snap")
   @js.native
   open class Snap ()
-    extends typings.ol.snapMod.default {
-    def this(opt_options: typings.ol.snapMod.Options) = this()
+    extends typings.ol.interactionSnapMod.default {
+    def this(opt_options: typings.ol.interactionSnapMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Translate")
   @js.native
   open class Translate ()
-    extends typings.ol.translateMod.default {
-    def this(opt_options: typings.ol.translateMod.Options) = this()
+    extends typings.ol.interactionTranslateMod.default {
+    def this(opt_options: typings.ol.interactionTranslateMod.Options) = this()
   }
   
   inline def defaults(): typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]]

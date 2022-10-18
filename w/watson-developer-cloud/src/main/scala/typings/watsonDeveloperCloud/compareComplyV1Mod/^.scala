@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/compare-comply/v1", JSImport.Namespace)
 @js.native
-class ^ protected () extends CompareComplyV1 {
+open class ^ protected () extends CompareComplyV1 {
   /**
     * Construct a CompareComplyV1 object.
     *

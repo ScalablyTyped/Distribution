@@ -1,8 +1,7 @@
 package typings.tsToolbelt.anon
 
-import org.scalablytyped.runtime.TopLevel
-import typings.tsToolbelt.computeMod.ComputeDeep
-import typings.tsToolbelt.computeMod.ComputeFlat
+import typings.tsToolbelt.outAnyComputeMod.ComputeDeep
+import typings.tsToolbelt.outAnyComputeMod.ComputeFlat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +23,6 @@ object Deep {
     
     inline def setDeep(value: ComputeDeep[A, scala.Nothing]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     
-    inline def setDeepVarargs(value: (typings.tsToolbelt.tsToolbeltStrings.ComputeDeep & TopLevel[A] & Any)*): Self = StObject.set(x, "deep", js.Array(value*))
-    
     inline def setFlat(value: ComputeFlat[A]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
-    
-    inline def setFlatVarargs(value: (typings.tsToolbelt.tsToolbeltStrings.ComputeFlat & TopLevel[A] & Any)*): Self = StObject.set(x, "flat", js.Array(value*))
   }
 }

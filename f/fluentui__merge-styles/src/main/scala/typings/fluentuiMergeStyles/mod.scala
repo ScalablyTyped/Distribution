@@ -1,23 +1,23 @@
 package typings.fluentuiMergeStyles
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.fluentuiMergeStyles.deepPartialMod.DeepPartial
 import typings.fluentuiMergeStyles.fluentuiMergeStylesBooleans.`false`
 import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`0`
 import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`1`
 import typings.fluentuiMergeStyles.fluentuiMergeStylesInts.`2`
-import typings.fluentuiMergeStyles.ikeyframesMod.IKeyframes
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontFace
-import typings.fluentuiMergeStyles.istyleMod.IStyle
-import typings.fluentuiMergeStyles.istyleMod.IStyleBaseArray
-import typings.fluentuiMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.fluentuiMergeStyles.istyleoptionsMod.IStyleOptions
-import typings.fluentuiMergeStyles.istylesetMod.IConcatenatedStyleSet
-import typings.fluentuiMergeStyles.istylesetMod.IProcessedStyleSet
-import typings.fluentuiMergeStyles.istylesetMod.IStyleSet
-import typings.fluentuiMergeStyles.objectOnlyMod.ObjectOnly
-import typings.fluentuiMergeStyles.stylesheetMod.ISerializedStylesheet
-import typings.fluentuiMergeStyles.stylesheetMod.IStyleSheetConfig
+import typings.fluentuiMergeStyles.libDeepPartialMod.DeepPartial
+import typings.fluentuiMergeStyles.libIkeyframesMod.IKeyframes
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontFace
+import typings.fluentuiMergeStyles.libIstyleMod.IStyle
+import typings.fluentuiMergeStyles.libIstyleMod.IStyleBaseArray
+import typings.fluentuiMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.fluentuiMergeStyles.libIstyleoptionsMod.IStyleOptions
+import typings.fluentuiMergeStyles.libIstylesetMod.IConcatenatedStyleSet
+import typings.fluentuiMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typings.fluentuiMergeStyles.libIstylesetMod.IStyleSet
+import typings.fluentuiMergeStyles.libObjectOnlyMod.ObjectOnly
+import typings.fluentuiMergeStyles.libStylesheetMod.ISerializedStylesheet
+import typings.fluentuiMergeStyles.libStylesheetMod.IStyleSheetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,7 +62,7 @@ object mod {
   @JSImport("@fluentui/merge-styles", "Stylesheet")
   @js.native
   open class Stylesheet ()
-    extends typings.fluentuiMergeStyles.stylesheetMod.Stylesheet {
+    extends typings.fluentuiMergeStyles.libStylesheetMod.Stylesheet {
     def this(config: IStyleSheetConfig) = this()
     def this(config: Unit, serializedStylesheet: ISerializedStylesheet) = this()
     def this(config: IStyleSheetConfig, serializedStylesheet: ISerializedStylesheet) = this()
@@ -77,7 +77,7 @@ object mod {
     /**
       * Gets the singleton instance.
       */
-    inline def getInstance(): typings.fluentuiMergeStyles.stylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.fluentuiMergeStyles.stylesheetMod.Stylesheet]
+    inline def getInstance(): typings.fluentuiMergeStyles.libStylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.fluentuiMergeStyles.libStylesheetMod.Stylesheet]
   }
   
   inline def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]

@@ -1,5 +1,6 @@
 package typings.glaze.anon
 
+import typings.glaze.distTypesThemeMod.ScaleTokens
 import typings.glaze.glazeStrings.animationDuration
 import typings.glaze.glazeStrings.border
 import typings.glaze.glazeStrings.borderRadius
@@ -15,7 +16,6 @@ import typings.glaze.glazeStrings.margin
 import typings.glaze.glazeStrings.opacity
 import typings.glaze.glazeStrings.width
 import typings.glaze.glazeStrings.zIndex
-import typings.glaze.themeMod.ScaleTokens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

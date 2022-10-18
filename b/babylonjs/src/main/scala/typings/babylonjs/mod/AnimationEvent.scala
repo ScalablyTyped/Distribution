@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AnimationEvent")
 @js.native
 open class AnimationEvent protected ()
-  extends typings.babylonjs.legacyMod.AnimationEvent {
+  extends typings.babylonjs.legacyLegacyMod.AnimationEvent {
   /**
     * Initializes the animation event
     * @param frame The frame for which the event is triggered

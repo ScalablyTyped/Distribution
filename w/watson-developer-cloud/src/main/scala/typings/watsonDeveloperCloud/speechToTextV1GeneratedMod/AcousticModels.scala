@@ -21,6 +21,6 @@ object AcousticModels {
     
     inline def setCustomizations(value: js.Array[AcousticModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     
-    inline def setCustomizationsVarargs(value: AcousticModel*): Self = StObject.set(x, "customizations", js.Array(value :_*))
+    inline def setCustomizationsVarargs(value: AcousticModel*): Self = StObject.set(x, "customizations", js.Array(value*))
   }
 }

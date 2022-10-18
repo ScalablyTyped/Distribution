@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XREquirectLayer")
+/* note: abstract class */ @JSGlobal("XREquirectLayer")
 @js.native
-abstract class XREquirectLayer ()
+open class XREquirectLayer ()
   extends StObject
      with typings.webxr.XREquirectLayer

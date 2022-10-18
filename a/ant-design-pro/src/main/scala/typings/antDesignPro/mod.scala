@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.antDesignPro.anon.TypeofAuthorized
 import typings.antDesignPro.anon.TypeofTagSelectOption
-import typings.antDesignPro.avatarItemMod.AvatarItemProps
-import typings.antDesignPro.avatarListMod.default
-import typings.antDesignPro.loginItemMod.LoginItemProps
+import typings.antDesignPro.libAvatarListAvatarItemMod.AvatarItemProps
+import typings.antDesignPro.libAvatarListMod.default
+import typings.antDesignPro.libLoginLoginItemMod.LoginItemProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,19 +32,27 @@ object mod {
     
     @JSImport("ant-design-pro", "AvatarList.Item")
     @js.native
-    def Item: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default] = js.native
-    inline def Item_=(x: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Instantiable1[
+        /* props */ AvatarItemProps, 
+        typings.antDesignPro.libAvatarListAvatarItemMod.default
+      ] = js.native
+    inline def Item_=(
+      x: Instantiable1[
+          /* props */ AvatarItemProps, 
+          typings.antDesignPro.libAvatarListAvatarItemMod.default
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "CountDown")
   @js.native
   open class CountDown ()
-    extends typings.antDesignPro.countDownMod.default
+    extends typings.antDesignPro.libCountDownMod.default
   
   @JSImport("ant-design-pro", "DescriptionList")
   @js.native
   open class DescriptionList ()
-    extends typings.antDesignPro.descriptionListMod.default
+    extends typings.antDesignPro.libDescriptionListMod.default
   /* static members */
   object DescriptionList {
     
@@ -54,44 +62,44 @@ object mod {
     
     @JSImport("ant-design-pro", "DescriptionList.Description")
     @js.native
-    def Description: Instantiable0[typings.antDesignPro.descriptionMod.default] = js.native
-    inline def Description_=(x: Instantiable0[typings.antDesignPro.descriptionMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Description")(x.asInstanceOf[js.Any])
+    def Description: Instantiable0[typings.antDesignPro.libDescriptionListDescriptionMod.default] = js.native
+    inline def Description_=(x: Instantiable0[typings.antDesignPro.libDescriptionListDescriptionMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Description")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "Ellipsis")
   @js.native
   open class Ellipsis ()
-    extends typings.antDesignPro.ellipsisMod.default
+    extends typings.antDesignPro.libEllipsisMod.default
   
   @JSImport("ant-design-pro", "Exception")
   @js.native
   open class Exception ()
-    extends typings.antDesignPro.exceptionMod.default
+    extends typings.antDesignPro.libExceptionMod.default
   
   @JSImport("ant-design-pro", "FooterToolbar")
   @js.native
   open class FooterToolbar ()
-    extends typings.antDesignPro.footerToolbarMod.default
+    extends typings.antDesignPro.libFooterToolbarMod.default
   
   @JSImport("ant-design-pro", "GlobalFooter")
   @js.native
   open class GlobalFooter ()
-    extends typings.antDesignPro.globalFooterMod.default
+    extends typings.antDesignPro.libGlobalFooterMod.default
   
   @JSImport("ant-design-pro", "HeaderDropdown")
   @js.native
   open class HeaderDropdown ()
-    extends typings.antDesignPro.headerDropdownMod.default
+    extends typings.antDesignPro.libHeaderDropdownMod.default
   
   @JSImport("ant-design-pro", "HeaderSearch")
   @js.native
   open class HeaderSearch ()
-    extends typings.antDesignPro.headerSearchMod.default
+    extends typings.antDesignPro.libHeaderSearchMod.default
   
   @JSImport("ant-design-pro", "Login")
   @js.native
   open class Login ()
-    extends typings.antDesignPro.loginMod.default
+    extends typings.antDesignPro.libLoginMod.default
   object Login {
     
     @JSImport("ant-design-pro", "Login")
@@ -128,7 +136,7 @@ object mod {
     @JSImport("ant-design-pro", "Login.Tab")
     @js.native
     open class Tab ()
-      extends typings.antDesignPro.loginMod.default.Tab
+      extends typings.antDesignPro.libLoginMod.default.Tab
     
     /* static member */
     @JSImport("ant-design-pro", "Login.UserName")
@@ -140,7 +148,7 @@ object mod {
   @JSImport("ant-design-pro", "NoticeIcon")
   @js.native
   open class NoticeIcon ()
-    extends typings.antDesignPro.noticeIconMod.default
+    extends typings.antDesignPro.libNoticeIconMod.default
   /* static members */
   object NoticeIcon {
     
@@ -150,29 +158,29 @@ object mod {
     
     @JSImport("ant-design-pro", "NoticeIcon.Tab")
     @js.native
-    def Tab: Instantiable0[typings.antDesignPro.noticeIconTabMod.default] = js.native
-    inline def Tab_=(x: Instantiable0[typings.antDesignPro.noticeIconTabMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
+    def Tab: Instantiable0[typings.antDesignPro.libNoticeIconNoticeIconTabMod.default] = js.native
+    inline def Tab_=(x: Instantiable0[typings.antDesignPro.libNoticeIconNoticeIconTabMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "NumberInfo")
   @js.native
   open class NumberInfo ()
-    extends typings.antDesignPro.numberInfoMod.default
+    extends typings.antDesignPro.libNumberInfoMod.default
   
   @JSImport("ant-design-pro", "PageHeader")
   @js.native
   open class PageHeader ()
-    extends typings.antDesignPro.pageHeaderMod.default
+    extends typings.antDesignPro.libPageHeaderMod.default
   
   @JSImport("ant-design-pro", "Result")
   @js.native
   open class Result ()
-    extends typings.antDesignPro.resultMod.default
+    extends typings.antDesignPro.libResultMod.default
   
   @JSImport("ant-design-pro", "TagSelect")
   @js.native
   open class TagSelect ()
-    extends typings.antDesignPro.tagSelectMod.default
+    extends typings.antDesignPro.libTagSelectMod.default
   /* static members */
   object TagSelect {
     
@@ -189,5 +197,5 @@ object mod {
   @JSImport("ant-design-pro", "Trend")
   @js.native
   open class Trend ()
-    extends typings.antDesignPro.trendMod.default
+    extends typings.antDesignPro.libTrendMod.default
 }

@@ -1,16 +1,16 @@
 package typings.tsconfigPaths
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tsconfigPaths.configLoaderMod.ConfigLoaderResult
-import typings.tsconfigPaths.filesystemMod.FileExistsAsync_
-import typings.tsconfigPaths.filesystemMod.FileExistsSync_
-import typings.tsconfigPaths.filesystemMod.ReadJsonAsync
-import typings.tsconfigPaths.filesystemMod.ReadJsonSync
-import typings.tsconfigPaths.mappingEntryMod.MappingEntry
-import typings.tsconfigPaths.matchPathAsyncMod.MatchPathAsync
-import typings.tsconfigPaths.matchPathAsyncMod.MatchPathAsyncCallback
-import typings.tsconfigPaths.matchPathSyncMod.MatchPath
-import typings.tsconfigPaths.registerMod.RegisterParams
+import typings.tsconfigPaths.libConfigLoaderMod.ConfigLoaderResult
+import typings.tsconfigPaths.libFilesystemMod.FileExistsAsync_
+import typings.tsconfigPaths.libFilesystemMod.FileExistsSync_
+import typings.tsconfigPaths.libFilesystemMod.ReadJsonAsync
+import typings.tsconfigPaths.libFilesystemMod.ReadJsonSync
+import typings.tsconfigPaths.libMappingEntryMod.MappingEntry
+import typings.tsconfigPaths.libMatchPathAsyncMod.MatchPathAsync
+import typings.tsconfigPaths.libMatchPathAsyncMod.MatchPathAsyncCallback
+import typings.tsconfigPaths.libMatchPathSyncMod.MatchPath
+import typings.tsconfigPaths.libRegisterMod.RegisterParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

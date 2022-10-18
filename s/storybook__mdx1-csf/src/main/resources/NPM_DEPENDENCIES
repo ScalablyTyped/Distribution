@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/mdx1-csf" : "0.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/mdx1-csf" : "0.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

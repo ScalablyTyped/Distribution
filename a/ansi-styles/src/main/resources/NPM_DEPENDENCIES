@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ansi-styles" : "6.1.1"
+      "ansi-styles" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ansi-styles" : "6.1.1"
+      "ansi-styles" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -2,7 +2,6 @@ package typings.intlifyCoreBase.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.intlifyCoreBase.anon.Number
 import typings.intlifyCoreBase.intlifyCoreBaseBooleans.`false`
 import typings.intlifyCoreBase.intlifyCoreBaseInts.`15`
@@ -19,7 +18,6 @@ import typings.std.Intl.DateTimeFormatPart
 import typings.std.Intl.NumberFormatPart
 import typings.std.NonNullable
 import typings.std.Record
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,15 +47,25 @@ inline def createCoreContext[Message, Options /* <: CoreOptions[
 Message, 
 Number[Message], 
 Locale, 
-Locale, 
-Locale, 
-Locale, 
-LocaleMessage[Message], 
-DateTimeFormat, 
-NumberFormat, 
-LocaleMessages[LocaleMessage[Message], Locale, Message], 
-typings.intlifyCoreBase.mod.DateTimeFormats[DateTimeFormat, Locale], 
-typings.intlifyCoreBase.mod.NumberFormats[NumberFormat, Locale]] */, Messages, DateTimeFormats, NumberFormats](options: Options): CoreContext[
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  numberFormats :infer N} ? N : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {  message :@intlify/core-base.@intlify/core-base.LocaleMessage<Message>,   datetime :@intlify/core-base.@intlify/core-base.DateTimeFormat,   number :@intlify/core-base.@intlify/core-base.NumberFormat} extends {  message :infer M} ? M : @intlify/core-base.@intlify/core-base.LocaleMessage<Message> */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {  message :@intlify/core-base.@intlify/core-base.LocaleMessage<Message>,   datetime :@intlify/core-base.@intlify/core-base.DateTimeFormat,   number :@intlify/core-base.@intlify/core-base.NumberFormat} extends {  datetime :infer D} ? D : @intlify/core-base.@intlify/core-base.DateTimeFormat */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {  message :@intlify/core-base.@intlify/core-base.LocaleMessage<Message>,   datetime :@intlify/core-base.@intlify/core-base.DateTimeFormat,   number :@intlify/core-base.@intlify/core-base.NumberFormat} extends {  number :infer N} ? N : @intlify/core-base.@intlify/core-base.NumberFormat */ js.Any, 
+LocaleMessages[
+  /* import warning: importer.ImportType#apply Failed type conversion: {  message :@intlify/core-base.@intlify/core-base.LocaleMessage<Message>,   datetime :@intlify/core-base.@intlify/core-base.DateTimeFormat,   number :@intlify/core-base.@intlify/core-base.NumberFormat} extends {  message :infer M} ? M : @intlify/core-base.@intlify/core-base.LocaleMessage<Message> */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+  Message
+], 
+typings.intlifyCoreBase.mod.DateTimeFormats[
+  /* import warning: importer.ImportType#apply Failed type conversion: {  message :@intlify/core-base.@intlify/core-base.LocaleMessage<Message>,   datetime :@intlify/core-base.@intlify/core-base.DateTimeFormat,   number :@intlify/core-base.@intlify/core-base.NumberFormat} extends {  datetime :infer D} ? D : @intlify/core-base.@intlify/core-base.DateTimeFormat */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any
+], 
+typings.intlifyCoreBase.mod.NumberFormats[
+  /* import warning: importer.ImportType#apply Failed type conversion: {  message :@intlify/core-base.@intlify/core-base.LocaleMessage<Message>,   datetime :@intlify/core-base.@intlify/core-base.DateTimeFormat,   number :@intlify/core-base.@intlify/core-base.NumberFormat} extends {  number :infer N} ? N : @intlify/core-base.@intlify/core-base.NumberFormat */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.Locale extends {  numberFormats :infer N} ? N : @intlify/core-base.@intlify/core-base.Locale extends string ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.Locale */ js.Any
+]] */, Messages, DateTimeFormats, NumberFormats](options: Options): CoreContext[
 Message, 
 Messages, 
 DateTimeFormats, 
@@ -66,10 +74,7 @@ PickupLocales[
   NonNullable[DateTimeFormats | Messages | NumberFormats], 
   /* keyof std.NonNullable<Messages> */ String
 ], 
-(PickupLocales[
-  NonNullable[DateTimeFormats | Messages | NumberFormats], 
-  /* keyof std.NonNullable<Messages> */ String
-]) | Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoreContext")(options.asInstanceOf[js.Any]).asInstanceOf[CoreContext[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>> */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoreContext")(options.asInstanceOf[js.Any]).asInstanceOf[CoreContext[
 Message, 
 Messages, 
 DateTimeFormats, 
@@ -78,24 +83,31 @@ PickupLocales[
   NonNullable[DateTimeFormats | Messages | NumberFormats], 
   /* keyof std.NonNullable<Messages> */ String
 ], 
-(PickupLocales[
-  NonNullable[DateTimeFormats | Messages | NumberFormats], 
-  /* keyof std.NonNullable<Messages> */ String
-]) | Locale]]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>> */ js.Any]]
 
 inline def createCoreContext_SchemaLocalesMessageOptionsMessagesDateTimeFormatsNumberFormats[Schema, Locales, Message, Options /* <: CoreOptions[
 Message, 
 SchemaParams[Schema, Message], 
 LocaleParams[Locales, `en-US`], 
-Locale | (LocaleParams[Locales, `en-US`]), 
-Locale | (LocaleParams[Locales, `en-US`]), 
-Locale | (LocaleParams[Locales, `en-US`]), 
-LocaleMessage[Message], 
-DateTimeFormat, 
-NumberFormat, 
-LocaleMessages[LocaleMessage[Message], Locale | (LocaleParams[Locales, `en-US`]), Message], 
-typings.intlifyCoreBase.mod.DateTimeFormats[DateTimeFormat, Locale | (LocaleParams[Locales, `en-US`])], 
-typings.intlifyCoreBase.mod.NumberFormats[NumberFormat, Locale | (LocaleParams[Locales, `en-US`])]] */, Messages, DateTimeFormats, NumberFormats](options: Options): CoreContext[
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends string ? @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends string ? @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends {  numberFormats :infer N} ? N : @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends string ? @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.SchemaParams<Schema, Message> extends {  message :infer M} ? M : @intlify/core-base.@intlify/core-base.LocaleMessage<Message> */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.SchemaParams<Schema, Message> extends {  datetime :infer D} ? D : @intlify/core-base.@intlify/core-base.DateTimeFormat */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.SchemaParams<Schema, Message> extends {  number :infer N} ? N : @intlify/core-base.@intlify/core-base.NumberFormat */ js.Any, 
+LocaleMessages[
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.SchemaParams<Schema, Message> extends {  message :infer M} ? M : @intlify/core-base.@intlify/core-base.LocaleMessage<Message> */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends {  messages :infer M} ? M : @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends string ? @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
+  Message
+], 
+typings.intlifyCoreBase.mod.DateTimeFormats[
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.SchemaParams<Schema, Message> extends {  datetime :infer D} ? D : @intlify/core-base.@intlify/core-base.DateTimeFormat */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends {  datetimeFormats :infer D} ? D : @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends string ? @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> : @intlify/core-base.@intlify/core-base.Locale */ js.Any
+], 
+typings.intlifyCoreBase.mod.NumberFormats[
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.SchemaParams<Schema, Message> extends {  number :infer N} ? N : @intlify/core-base.@intlify/core-base.NumberFormat */ js.Any, 
+  /* import warning: importer.ImportType#apply Failed type conversion: @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends {  numberFormats :infer N} ? N : @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> extends string ? @intlify/core-base.@intlify/core-base.LocaleParams<Locales, 'en-US'> : @intlify/core-base.@intlify/core-base.Locale */ js.Any
+]] */, Messages, DateTimeFormats, NumberFormats](options: Options): CoreContext[
 Message, 
 Messages, 
 DateTimeFormats, 
@@ -104,10 +116,7 @@ PickupLocales[
   NonNullable[DateTimeFormats | Messages | NumberFormats], 
   /* keyof std.NonNullable<Messages> */ String
 ], 
-(PickupLocales[
-  NonNullable[DateTimeFormats | Messages | NumberFormats], 
-  /* keyof std.NonNullable<Messages> */ String
-]) | Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoreContext")(options.asInstanceOf[js.Any]).asInstanceOf[CoreContext[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>> */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoreContext")(options.asInstanceOf[js.Any]).asInstanceOf[CoreContext[
 Message, 
 Messages, 
 DateTimeFormats, 
@@ -116,10 +125,7 @@ PickupLocales[
   NonNullable[DateTimeFormats | Messages | NumberFormats], 
   /* keyof std.NonNullable<Messages> */ String
 ], 
-(PickupLocales[
-  NonNullable[DateTimeFormats | Messages | NumberFormats], 
-  /* keyof std.NonNullable<Messages> */ String
-]) | Locale]]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Messages>, keyof std.NonNullable<Messages>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<DateTimeFormats>, keyof std.NonNullable<DateTimeFormats>> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<NumberFormats>, keyof std.NonNullable<NumberFormats>> */ js.Any]]
 
 inline def createCoreError(code: CoreErrorCodes): CoreError = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoreError")(code.asInstanceOf[js.Any]).asInstanceOf[CoreError]
 
@@ -138,13 +144,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Message](context: Context, value: String): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Message](context: Context, value: String): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
 inline def datetime[Context /* <: CoreContext[
 Message, 
 js.Object, 
@@ -157,13 +165,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Message](context: Context, value: js.Date): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Message](context: Context, value: js.Date): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
 inline def datetime[Context /* <: CoreContext[
 Message, 
 js.Object, 
@@ -176,13 +186,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Message](context: Context, value: Double): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Message](context: Context, value: Double): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
 inline def datetime[Context /* <: CoreContext[
 Message, 
 js.Object, 
@@ -195,13 +207,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](context: Context, value: String, keyOrOptions: Key | ResourceKeys): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], keyOrOptions.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
 inline def datetime[Context /* <: CoreContext[
@@ -216,13 +230,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -242,13 +258,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](context: Context, value: js.Date, keyOrOptions: Key | ResourceKeys): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], keyOrOptions.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
 inline def datetime[Context /* <: CoreContext[
@@ -263,13 +281,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -289,13 +309,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](context: Context, value: Double, keyOrOptions: Key | ResourceKeys): String | Double | js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("datetime")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], keyOrOptions.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[DateTimeFormatPart]]
 inline def datetime[Context /* <: CoreContext[
@@ -310,13 +332,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -337,13 +361,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -363,13 +389,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -390,13 +418,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -418,13 +448,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -447,13 +479,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -477,13 +511,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -506,13 +542,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -532,13 +570,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -559,13 +599,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -587,13 +629,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -616,13 +660,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -646,13 +692,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -675,13 +723,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -701,13 +751,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -728,13 +780,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -756,13 +810,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -785,13 +841,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -815,13 +873,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['datetimeFormats']>, keyof std.NonNullable<Context['datetimeFormats']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['datetimeFormats'] */ js.Any, 
 /* keyof Context['datetimeFormats'] */ String] */, Message](
   context: Context,
@@ -841,8 +901,19 @@ inline def fallbackWithLocaleChain[Message](
   js.Object, 
   PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String], 
-  (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String]) | Locale
+  /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any
 ],
   fallback: FallbackLocale,
   start: Locale
@@ -856,8 +927,19 @@ inline def fallbackWithSimple[Message](
   js.Object, 
   PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String], 
-  (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String]) | Locale
+  /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any
 ],
   fallback: FallbackLocale,
   start: Locale
@@ -874,16 +956,38 @@ js.Object,
 js.Object, 
 PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String], 
-(PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String]) | Locale]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFallbackContext")().asInstanceOf[(CoreContext[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFallbackContext")().asInstanceOf[(CoreContext[
 String, 
 js.Object, 
 js.Object, 
 js.Object, 
 PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String], 
-(PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String]) | Locale]) | Null]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any]) | Null]
 
 inline def getWarnMessage(code: CoreWarnCodes, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWarnMessage")(scala.List(code.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 
@@ -904,13 +1008,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Message](context: Context, value: Double): String | Double | js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[NumberFormatPart]]
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Message](context: Context, value: Double): String | Double | js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[NumberFormatPart]]
 inline def number[Context /* <: CoreContext[
 Message, 
 js.Object, 
@@ -923,13 +1029,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](context: Context, value: Value, keyOrOptions: Key | ResourceKeys): String | Double | js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], keyOrOptions.asInstanceOf[js.Any])).asInstanceOf[String | Double | js.Array[NumberFormatPart]]
 inline def number[Context /* <: CoreContext[
@@ -944,13 +1052,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -971,13 +1081,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -997,13 +1109,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -1024,13 +1138,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -1052,13 +1168,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -1081,13 +1199,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -1111,13 +1231,15 @@ PickupLocales[
   /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any
-  ]) | js.Object, 
-  /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String
-]) | Locale] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['numberFormats']>, keyof std.NonNullable<Context['numberFormats']>> */ js.Any] */, Value /* <: Double */, Key /* <: String */, ResourceKeys /* <: PickupFormatKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['numberFormats'] */ js.Any, 
 /* keyof Context['numberFormats'] */ String] */, Message](
   context: Context,
@@ -1156,8 +1278,19 @@ inline def setFallbackContext(
   js.Object, 
   PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String], 
-  (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String]) | Locale
+  /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any
 ]
 ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFallbackContext")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
@@ -1172,12 +1305,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1191,12 +1327,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1210,12 +1349,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, list: js.Array[Any]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1229,12 +1371,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, list: js.Array[Any], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1248,12 +1393,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, list: js.Array[Any], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1267,12 +1415,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, named: NamedValue[js.Object]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1286,12 +1437,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, named: NamedValue[js.Object], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1305,12 +1459,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, named: NamedValue[js.Object], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1324,12 +1481,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Key | ResourceKeys, plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1343,12 +1503,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1362,12 +1525,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1381,12 +1547,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, list: js.Array[Any]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1400,12 +1569,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, list: js.Array[Any], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1419,12 +1591,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, list: js.Array[Any], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1438,12 +1613,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, named: NamedValue[js.Object]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1457,12 +1635,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, named: NamedValue[js.Object], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1476,12 +1657,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, named: NamedValue[js.Object], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1495,12 +1679,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: Double, plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1514,12 +1701,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1533,12 +1723,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1552,12 +1745,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], list: js.Array[Any]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1571,12 +1767,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], list: js.Array[Any], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1590,12 +1789,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], list: js.Array[Any], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], list.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1609,12 +1811,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], named: NamedValue[js.Object]): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1628,12 +1833,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], named: NamedValue[js.Object], defaultMsg: String): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any], defaultMsg.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1647,12 +1855,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], named: NamedValue[js.Object], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], named.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 inline def translate[Context /* <: CoreContext[
@@ -1666,12 +1877,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](context: Context, key: MessageFunction[Message], plural: Double): MessageType[Message] | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(context.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[MessageType[Message] | Double]
 
@@ -1690,12 +1904,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1716,12 +1933,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1742,12 +1962,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1768,12 +1991,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1794,12 +2020,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1820,12 +2049,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1846,12 +2078,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1872,12 +2107,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1898,12 +2136,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1924,12 +2165,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1950,12 +2194,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -1976,12 +2223,15 @@ PickupLocales[
   ]) | js.Object, 
   /* keyof std.NonNullable<Context['messages']> */ String
 ], 
-(PickupLocales[
-  (NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any
-  ]) | js.Object, 
-  /* keyof std.NonNullable<Context['messages']> */ String
-]) | Locale] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
+/* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales<std.NonNullable<Context['messages']>, keyof std.NonNullable<Context['messages']>> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any] */, Key /* <: String */, ResourceKeys /* <: PickupKeys[
 /* import warning: importer.ImportType#apply Failed type conversion: Context['messages'] */ js.Any, 
 /* keyof Context['messages'] */ String] */, Message](
   context: Context,
@@ -2002,17 +2252,11 @@ type ExtractToStringFunction[T] = /* import warning: importer.ImportType#apply F
 
 type ExtractToStringKey[T] = Extract[/* keyof T */ String, toString]
 
-type FallbackLocale = Locale | js.Array[Locale] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ locale in string ]: std.Array<@intlify/core-base.@intlify/core-base.Locale>}
-  */ typings.intlifyCoreBase.intlifyCoreBaseStrings.FallbackLocale & TopLevel[Any]) | `false`
+type FallbackLocale = Locale | js.Array[Locale] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ locale in string ]: std.Array<@intlify/core-base.@intlify/core-base.Locale>} */ js.Any) | `false`
 
-type FallbackLocales[Locales] = Locales | js.Array[Locales] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ locale in string ]: std.Array<@intlify/core-base.@intlify/core-base.PickupFallbackLocales<@intlify/core-base.@intlify/core-base.UnionToTuple<Locales, @intlify/core-base.@intlify/core-base.LastInUnion<Locales>>>>}
-  */ typings.intlifyCoreBase.intlifyCoreBaseStrings.FallbackLocales & TopLevel[Any]) | `false`
+type FallbackLocales[Locales] = Locales | js.Array[Locales] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ locale in string ]: std.Array<@intlify/core-base.@intlify/core-base.PickupFallbackLocales<@intlify/core-base.@intlify/core-base.UnionToTuple<Locales, @intlify/core-base.@intlify/core-base.LastInUnion<Locales>>>>} */ js.Any) | `false`
 
 type First[T /* <: js.Array[Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-
-type LastInUnion[U] = Any
 
 type LinkedModifiers[T] = StringDictionary[LinkedModify[T]]
 
@@ -2028,8 +2272,19 @@ type LocaleFallbacker = js.Function3[
   js.Object, 
   PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
 {} */ String], 
-  (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-{} */ String]) | Locale
+  /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+{}, keyof / * Inlined std.NonNullable<{}> * /
+{}> */ js.Any
 ], 
 /* fallback */ FallbackLocale, 
 /* start */ Locale, 
@@ -2037,23 +2292,9 @@ js.Array[Locale]]
 
 type LocaleMessage[Message] = Record[String, LocaleMessageValue[Message]]
 
-type LocaleMessageDictionary[T, Message] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: @intlify/core-base.@intlify/core-base.LocaleMessageType<T[K], Message>}
-  */ typings.intlifyCoreBase.intlifyCoreBaseStrings.LocaleMessageDictionary & TopLevel[T]
-
-type LocaleMessageType[T, Message] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: T[K]}
-  */ typings.intlifyCoreBase.intlifyCoreBaseStrings.LocaleMessageType & TopLevel[T]) | (LocaleMessageDictionary[Any | T, Message]) | (js.Function1[/* args */ Any, ReturnType[T]]) | String
-
 type LocaleMessageValue[Message] = (LocaleMessageDictionary[Any, Message]) | String
 
 type LocaleMessages[Schema, Locales, Message] = LocaleRecord[UnionToTuple[Locales, LastInUnion[Locales]], Schema]
-
-type LocaleParamsType[T, R] = R | T
-
-type LocaleRecord[T /* <: js.Array[Any] */, R] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in T[number] ]: R}
-  */ typings.intlifyCoreBase.intlifyCoreBaseStrings.LocaleRecord & TopLevel[Any]
 
 type MessageCompiler[Message] = js.Function2[
 /* source */ String, 
@@ -2071,8 +2312,6 @@ type MessageInterpolate[T] = js.Function1[/* val */ Any, MessageType[T]]
 type MessageNormalize[T] = js.Function1[/* values */ js.Array[MessageType[String | T]], MessageType[T | js.Array[T]]]
 
 type MessageResolveFunction[T] = js.Function1[/* key */ String, MessageFunction[T]]
-
-type MessageType[T] = StringConvertable[T] | String
 
 type MetaInfo = StringDictionary[Any]
 
@@ -2097,15 +2336,7 @@ type PathValue = String | Double | Boolean | js.Function | Null | StringDictiona
 
 type PickupFallbackLocales[T /* <: js.Array[Any] */] = (/* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any) | (/* template literal string: ${T[number]}! */ String)
 
-type PickupFormatKeys[T /* <: Record[String, Any] */, K] = ResourceFormatPath[
-/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
-
 type PickupFormatPathKeys[T /* <: js.Object */] = ResourceFormatPath[T]
-
-type PickupKeys[T /* <: Record[String, Any] */, K] = ResourcePath[
-/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any]
-
-type PickupLocales[T /* <: Record[String, Any] */, K] = K
 
 type PickupPaths[T /* <: js.Object */] = ResourcePath[T]
 
@@ -2113,26 +2344,6 @@ type PluralizationRules = StringDictionary[PluralizationRule]
 
 type PostTranslationHandler[Message] = js.Function2[/* translated */ MessageType[Message], /* key */ String, MessageType[Message]]
 
-type RemoveIndexSignature[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T as string extends K? never : number extends K? never : K ]: T[K]}
-  */ typings.intlifyCoreBase.intlifyCoreBaseStrings.RemoveIndexSignature & TopLevel[T]
-
-type ResourceFormatPath[T] = (/* keyof T */ String) | _ResourceFormatPath[T]
-
-type ResourcePath[T] = (/* keyof T */ String) | _ResourcePath[T]
-
-type ResourceValue[T, P /* <: ResourcePath[T] */] = (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any) | Any
-
-type StringConvertable[T] = Any | T
-
-type UnionToIntersection[U] = Any
-
-type UnionToTuple[U, Last] = /* import warning: importer.ImportType#apply c repeated non-array type: any */ js.Array[Any]
-
 type _ResourceFormatPath[T] = (__ResourceFormatPath[T, /* keyof T */ String]) | (/* keyof T */ String)
 
 type _ResourcePath[T] = (__ResourcePath[T, /* keyof T */ String]) | (/* keyof T */ String)
-
-type __ResourceFormatPath[T, Key /* <: /* keyof T */ String */] = /* template literal string: ${Key} */ String
-
-type __ResourcePath[T, Key /* <: /* keyof T */ String */] = /* template literal string: ${Key}.${__ResourcePath<T[Key],Exclude<keyofT[Key],keyofany[]>>&string} */ String

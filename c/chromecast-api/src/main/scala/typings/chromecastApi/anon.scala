@@ -19,11 +19,11 @@ import typings.chromecastApi.chromecastApiStrings.ROUNDED_CORNERS
 import typings.chromecastApi.chromecastApiStrings.SANS_SERIF
 import typings.chromecastApi.chromecastApiStrings.SERIF
 import typings.chromecastApi.chromecastApiStrings.SMALL_CAPITALS
-import typings.chromecastApi.deviceMod.GenericMediaMetadata
-import typings.chromecastApi.deviceMod.MovieMediaMetadata
-import typings.chromecastApi.deviceMod.MusicTrackMediaMetadata
-import typings.chromecastApi.deviceMod.PhotoMediaMetadata
-import typings.chromecastApi.deviceMod.TvShowMediaMetadata
+import typings.chromecastApi.libDeviceMod.GenericMediaMetadata
+import typings.chromecastApi.libDeviceMod.MovieMediaMetadata
+import typings.chromecastApi.libDeviceMod.MusicTrackMediaMetadata
+import typings.chromecastApi.libDeviceMod.PhotoMediaMetadata
+import typings.chromecastApi.libDeviceMod.TvShowMediaMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

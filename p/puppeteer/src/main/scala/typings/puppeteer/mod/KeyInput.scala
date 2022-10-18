@@ -75,7 +75,7 @@ object KeyInput {
   
   inline def Ampersand: typings.puppeteer.puppeteerStrings.Ampersand = "&".asInstanceOf[typings.puppeteer.puppeteerStrings.Ampersand]
   
-  inline def Apostrophe: String = String.asInstanceOf[String]
+  inline def Apostrophe: /* ' */ String = "'".asInstanceOf[/* ' */ String]
   
   inline def ArrowDown: typings.puppeteer.puppeteerStrings.ArrowDown = "ArrowDown".asInstanceOf[typings.puppeteer.puppeteerStrings.ArrowDown]
   
@@ -313,7 +313,7 @@ object KeyInput {
   
   inline def Leftcurlybracket: typings.puppeteer.puppeteerStrings.Leftcurlybracket = "{".asInstanceOf[typings.puppeteer.puppeteerStrings.Leftcurlybracket]
   
-  inline def Leftparenthesis: String = String.asInstanceOf[String]
+  inline def Leftparenthesis: /* ( */ String = "(".asInstanceOf[/* ( */ String]
   
   inline def Lessthansign: typings.puppeteer.puppeteerStrings.Lessthansign = "<".asInstanceOf[typings.puppeteer.puppeteerStrings.Lessthansign]
   
@@ -423,7 +423,7 @@ object KeyInput {
   
   inline def Rightcurlybracket: typings.puppeteer.puppeteerStrings.Rightcurlybracket = "}".asInstanceOf[typings.puppeteer.puppeteerStrings.Rightcurlybracket]
   
-  inline def Rightparenthesis: String = String.asInstanceOf[String]
+  inline def Rightparenthesis: /* ) */ String = ")".asInstanceOf[/* ) */ String]
   
   inline def S: typings.puppeteer.puppeteerStrings.S = "S".asInstanceOf[typings.puppeteer.puppeteerStrings.S]
   

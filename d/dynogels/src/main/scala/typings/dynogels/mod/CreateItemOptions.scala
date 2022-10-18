@@ -1,22 +1,22 @@
 package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.dynamodbMod.ConditionExpression
-import typings.awsSdk.dynamodbMod.ConditionalOperator
-import typings.awsSdk.dynamodbMod.ExpectedAttributeMap
-import typings.awsSdk.dynamodbMod.ExpressionAttributeNameMap
-import typings.awsSdk.dynamodbMod.ReturnConsumedCapacity
-import typings.awsSdk.dynamodbMod.ReturnItemCollectionMetrics
-import typings.awsSdk.dynamodbMod.ReturnValue
+import typings.awsSdk.clientsDynamodbMod.ConditionExpression
+import typings.awsSdk.clientsDynamodbMod.ConditionalOperator
+import typings.awsSdk.clientsDynamodbMod.ExpectedAttributeMap
+import typings.awsSdk.clientsDynamodbMod.ExpressionAttributeNameMap
+import typings.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity
+import typings.awsSdk.clientsDynamodbMod.ReturnItemCollectionMetrics
+import typings.awsSdk.clientsDynamodbMod.ReturnValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CreateItemOptions extends StObject {
   
-  var ConditionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionExpression] = js.undefined
+  var ConditionExpression: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ConditionExpression] = js.undefined
   
-  var ConditionalOperator: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionalOperator] = js.undefined
+  var ConditionalOperator: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ConditionalOperator] = js.undefined
   
   var Expected: js.UndefOr[ExpectedAttributeMap] = js.undefined
   
@@ -24,9 +24,9 @@ trait CreateItemOptions extends StObject {
   
   var ExpressionAttributeValues: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
+  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
   
-  var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnItemCollectionMetrics] = js.undefined
+  var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.clientsDynamodbMod.ReturnItemCollectionMetrics] = js.undefined
   
   var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
   

@@ -14,7 +14,7 @@ trait V3ResponseappliedRelevancyS[T] extends StObject {
   var v4: SearchResponse[T]
   
   // @ts-ignore
-  var v5: typings.algoliasearchHelper.algoliasearchMod.SearchResponse[
+  var v5: typings.algoliasearchHelper.typesAlgoliasearchMod.SearchResponse[
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
   ]
 }
@@ -23,7 +23,7 @@ object V3ResponseappliedRelevancyS {
   inline def apply[T](
     v3: ResponseappliedRelevancyS,
     v4: SearchResponse[T],
-    v5: typings.algoliasearchHelper.algoliasearchMod.SearchResponse[
+    v5: typings.algoliasearchHelper.typesAlgoliasearchMod.SearchResponse[
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
     ]
   ): V3ResponseappliedRelevancyS[T] = {
@@ -38,7 +38,7 @@ object V3ResponseappliedRelevancyS {
     inline def setV4(value: SearchResponse[T]): Self = StObject.set(x, "v4", value.asInstanceOf[js.Any])
     
     inline def setV5(
-      value: typings.algoliasearchHelper.algoliasearchMod.SearchResponse[
+      value: typings.algoliasearchHelper.typesAlgoliasearchMod.SearchResponse[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
         ]
     ): Self = StObject.set(x, "v5", value.asInstanceOf[js.Any])

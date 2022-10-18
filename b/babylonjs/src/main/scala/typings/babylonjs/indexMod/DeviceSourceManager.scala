@@ -12,5 +12,5 @@ open class DeviceSourceManager protected ()
     * Default constructor
     * @param engine - Used to get canvas (if applicable)
     */
-  def this(engine: typings.babylonjs.engineMod.Engine) = this()
+  def this(engine: typings.babylonjs.enginesEngineMod.Engine) = this()
 }

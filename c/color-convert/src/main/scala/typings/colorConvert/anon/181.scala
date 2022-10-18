@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `181` extends StObject {
   
-  def raw(from: APPLE_): RGB_
+  def raw(from: RGB_): APPLE_
   @JSName("raw")
-  var raw_Original: js.Function1[/* from */ APPLE_, RGB_]
+  var raw_Original: js.Function1[/* from */ RGB_, APPLE_]
 }
 object `181` {
   
-  inline def apply(raw: /* from */ APPLE_ => RGB_): `181` = {
+  inline def apply(raw: /* from */ RGB_ => APPLE_): `181` = {
     val __obj = js.Dynamic.literal(raw = js.Any.fromFunction1(raw))
     __obj.asInstanceOf[`181`]
   }
   
   extension [Self <: `181`](x: Self) {
     
-    inline def setRaw(value: /* from */ APPLE_ => RGB_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: /* from */ RGB_ => APPLE_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
   }
 }

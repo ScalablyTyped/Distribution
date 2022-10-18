@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isValidTimeZoneNameMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsValidTimeZoneName", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/IsValidTimeZoneName", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

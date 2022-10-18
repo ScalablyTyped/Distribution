@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.vector2Mod.Vector
+import typings.three.srcMathVector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "Curve")
 @js.native
 open class Curve[T /* <: Vector */] ()
-  extends typings.three.threeMod.Curve[T]
+  extends typings.three.srcThreeMod.Curve[T]
 /* static members */
 object Curve {
   

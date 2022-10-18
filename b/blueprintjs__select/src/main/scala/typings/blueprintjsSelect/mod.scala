@@ -6,17 +6,17 @@ import typings.blueprintjsSelect.anon.Fill
 import typings.blueprintjsSelect.anon.PartialSuggest2Propsany
 import typings.blueprintjsSelect.anon.PartialSuggestPropsany
 import typings.blueprintjsSelect.anon.ResetOnQuery
-import typings.blueprintjsSelect.itemListRendererMod.ItemListRendererProps
-import typings.blueprintjsSelect.listItemsPropsMod.ItemsEqualProp
-import typings.blueprintjsSelect.listItemsUtilsMod.CreateNewItem
-import typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2Props
-import typings.blueprintjsSelect.multiSelectMod.MultiSelectProps
-import typings.blueprintjsSelect.omnibarMod.OmnibarProps
-import typings.blueprintjsSelect.queryListMod.QueryListProps
-import typings.blueprintjsSelect.select2Mod.Select2Props
-import typings.blueprintjsSelect.selectMod.SelectProps
-import typings.blueprintjsSelect.suggest2Mod.Suggest2Props
-import typings.blueprintjsSelect.suggestMod.SuggestProps
+import typings.blueprintjsSelect.libEsmCommonItemListRendererMod.ItemListRendererProps
+import typings.blueprintjsSelect.libEsmCommonListItemsPropsMod.ItemsEqualProp
+import typings.blueprintjsSelect.libEsmCommonListItemsUtilsMod.CreateNewItem
+import typings.blueprintjsSelect.libEsmComponentsMultiSelectMultiSelect2Mod.MultiSelect2Props
+import typings.blueprintjsSelect.libEsmComponentsMultiSelectMultiSelectMod.MultiSelectProps
+import typings.blueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.OmnibarProps
+import typings.blueprintjsSelect.libEsmComponentsQueryListQueryListMod.QueryListProps
+import typings.blueprintjsSelect.libEsmComponentsSelectSelect2Mod.Select2Props
+import typings.blueprintjsSelect.libEsmComponentsSelectSelectMod.SelectProps
+import typings.blueprintjsSelect.libEsmComponentsSuggestSuggest2Mod.Suggest2Props
+import typings.blueprintjsSelect.libEsmComponentsSuggestSuggestMod.SuggestProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -70,7 +70,7 @@ object mod {
   @JSImport("@blueprintjs/select", "MultiSelect")
   @js.native
   open class MultiSelect[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.MultiSelect[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.MultiSelect[T] {
     def this(props: MultiSelectProps[T]) = this()
     def this(props: MultiSelectProps[T], context: Any) = this()
   }
@@ -93,17 +93,17 @@ object mod {
     
     inline def ofType[U](): Instantiable1[
         /* props */ MultiSelectProps[U], 
-        typings.blueprintjsSelect.multiSelectMod.MultiSelect[U]
+        typings.blueprintjsSelect.libEsmComponentsMultiSelectMultiSelectMod.MultiSelect[U]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
         /* props */ MultiSelectProps[U], 
-        typings.blueprintjsSelect.multiSelectMod.MultiSelect[U]
+        typings.blueprintjsSelect.libEsmComponentsMultiSelectMultiSelectMod.MultiSelect[U]
       ]]
   }
   
   @JSImport("@blueprintjs/select", "MultiSelect2")
   @js.native
   open class MultiSelect2[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.MultiSelect2[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.MultiSelect2[T] {
     def this(props: MultiSelect2Props[T]) = this()
     def this(props: MultiSelect2Props[T], context: Any) = this()
   }
@@ -124,19 +124,20 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
+    /** @deprecated no longer necessary now that the TypeScript parser supports type arguments on JSX element tags */
     inline def ofType[U](): Instantiable1[
         /* props */ MultiSelect2Props[U], 
-        typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2[U]
+        typings.blueprintjsSelect.libEsmComponentsMultiSelectMultiSelect2Mod.MultiSelect2[U]
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
         /* props */ MultiSelect2Props[U], 
-        typings.blueprintjsSelect.multiSelect2Mod.MultiSelect2[U]
+        typings.blueprintjsSelect.libEsmComponentsMultiSelectMultiSelect2Mod.MultiSelect2[U]
       ]]
   }
   
   @JSImport("@blueprintjs/select", "Omnibar")
   @js.native
   open class Omnibar[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.Omnibar[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.Omnibar[T] {
     def this(props: OmnibarProps[T]) = this()
     /**
       * @deprecated
@@ -156,13 +157,19 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ OmnibarProps[U], typings.blueprintjsSelect.omnibarMod.Omnibar[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ OmnibarProps[U], typings.blueprintjsSelect.omnibarMod.Omnibar[U]]]
+    inline def ofType[U](): Instantiable1[
+        /* props */ OmnibarProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.Omnibar[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ OmnibarProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsOmnibarOmnibarMod.Omnibar[U]
+      ]]
   }
   
   @JSImport("@blueprintjs/select", "QueryList")
   @js.native
   open class QueryList[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.QueryList[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.QueryList[T] {
     def this(props: QueryListProps[T]) = this()
     def this(props: QueryListProps[T], context: Any) = this()
   }
@@ -183,13 +190,20 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ QueryListProps[U], typings.blueprintjsSelect.queryListMod.QueryList[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ QueryListProps[U], typings.blueprintjsSelect.queryListMod.QueryList[U]]]
+    /** @deprecated no longer necessary now that the TypeScript parser supports type arguments on JSX element tags */
+    inline def ofType[U](): Instantiable1[
+        /* props */ QueryListProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsQueryListQueryListMod.QueryList[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ QueryListProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsQueryListQueryListMod.QueryList[U]
+      ]]
   }
   
   @JSImport("@blueprintjs/select", "Select")
   @js.native
   open class Select[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.Select[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.Select[T] {
     def this(props: SelectProps[T]) = this()
     def this(props: SelectProps[T], context: Any) = this()
   }
@@ -205,13 +219,19 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ SelectProps[U], typings.blueprintjsSelect.selectMod.Select[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ SelectProps[U], typings.blueprintjsSelect.selectMod.Select[U]]]
+    inline def ofType[U](): Instantiable1[
+        /* props */ SelectProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsSelectSelectMod.Select[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ SelectProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsSelectSelectMod.Select[U]
+      ]]
   }
   
   @JSImport("@blueprintjs/select", "Select2")
   @js.native
   open class Select2[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.Select2[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.Select2[T] {
     def this(props: Select2Props[T]) = this()
     def this(props: Select2Props[T], context: Any) = this()
   }
@@ -227,13 +247,20 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ Select2Props[U], typings.blueprintjsSelect.select2Mod.Select2[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ Select2Props[U], typings.blueprintjsSelect.select2Mod.Select2[U]]]
+    /** @deprecated no longer necessary now that the TypeScript parser supports type arguments on JSX element tags */
+    inline def ofType[U](): Instantiable1[
+        /* props */ Select2Props[U], 
+        typings.blueprintjsSelect.libEsmComponentsSelectSelect2Mod.Select2[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ Select2Props[U], 
+        typings.blueprintjsSelect.libEsmComponentsSelectSelect2Mod.Select2[U]
+      ]]
   }
   
   @JSImport("@blueprintjs/select", "Suggest")
   @js.native
   open class Suggest[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.Suggest[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.Suggest[T] {
     def this(props: SuggestProps[T]) = this()
     def this(props: SuggestProps[T], context: Any) = this()
   }
@@ -254,13 +281,19 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ SuggestProps[U], typings.blueprintjsSelect.suggestMod.Suggest[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ SuggestProps[U], typings.blueprintjsSelect.suggestMod.Suggest[U]]]
+    inline def ofType[U](): Instantiable1[
+        /* props */ SuggestProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsSuggestSuggestMod.Suggest[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ SuggestProps[U], 
+        typings.blueprintjsSelect.libEsmComponentsSuggestSuggestMod.Suggest[U]
+      ]]
   }
   
   @JSImport("@blueprintjs/select", "Suggest2")
   @js.native
   open class Suggest2[T] protected ()
-    extends typings.blueprintjsSelect.componentsMod.Suggest2[T] {
+    extends typings.blueprintjsSelect.libEsmComponentsMod.Suggest2[T] {
     def this(props: Suggest2Props[T]) = this()
     def this(props: Suggest2Props[T], context: Any) = this()
   }
@@ -281,7 +314,14 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def ofType[U](): Instantiable1[/* props */ Suggest2Props[U], typings.blueprintjsSelect.suggest2Mod.Suggest2[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ Suggest2Props[U], typings.blueprintjsSelect.suggest2Mod.Suggest2[U]]]
+    /** @deprecated no longer necessary now that the TypeScript parser supports type arguments on JSX element tags */
+    inline def ofType[U](): Instantiable1[
+        /* props */ Suggest2Props[U], 
+        typings.blueprintjsSelect.libEsmComponentsSuggestSuggest2Mod.Suggest2[U]
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+        /* props */ Suggest2Props[U], 
+        typings.blueprintjsSelect.libEsmComponentsSuggestSuggest2Mod.Suggest2[U]
+      ]]
   }
   
   inline def executeItemsEqual[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("executeItemsEqual")().asInstanceOf[Boolean]

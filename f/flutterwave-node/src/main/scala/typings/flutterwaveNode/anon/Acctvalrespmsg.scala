@@ -34,7 +34,7 @@ trait Acctvalrespmsg extends StObject {
   
   var currency: Double
   
-  var customer: Customertoken
+  var customer: CreatedAt
   
   var customerId: Double
   
@@ -103,7 +103,7 @@ object Acctvalrespmsg {
     charged_amount: Double,
     createdAt: Double,
     currency: Double,
-    customer: Customertoken,
+    customer: CreatedAt,
     customerId: Double,
     cycle: Double,
     deletedAt: Any,
@@ -162,7 +162,7 @@ object Acctvalrespmsg {
     
     inline def setCurrency(value: Double): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    inline def setCustomer(value: Customertoken): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: CreatedAt): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     inline def setCustomerId(value: Double): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.screeps.anon
 
-import typings.screeps.screepsStrings.LH
 import typings.screeps.screepsStrings.LO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait O extends StObject {
   
-  var H: LH
+  var H: typings.screeps.screepsStrings.LH
   
   var O: LO
   
@@ -23,7 +22,7 @@ object O {
   
   extension [Self <: O](x: Self) {
     
-    inline def setH(value: LH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+    inline def setH(value: typings.screeps.screepsStrings.LH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     
     inline def setO(value: LO): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
     

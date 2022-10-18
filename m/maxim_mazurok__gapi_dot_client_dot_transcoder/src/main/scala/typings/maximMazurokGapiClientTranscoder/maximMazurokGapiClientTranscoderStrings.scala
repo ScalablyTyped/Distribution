@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientTranscoderStrings {
   
   @js.native
-  sealed trait Job extends StObject
-  inline def Job: Job = "Job".asInstanceOf[Job]
-  
-  @js.native
-  sealed trait JobTemplate extends StObject
-  inline def JobTemplate: JobTemplate = "JobTemplate".asInstanceOf[JobTemplate]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait transcoder extends StObject
   inline def transcoder: transcoder = "transcoder".asInstanceOf[transcoder]
   

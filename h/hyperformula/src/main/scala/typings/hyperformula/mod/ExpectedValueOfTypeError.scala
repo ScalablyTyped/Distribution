@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "ExpectedValueOfTypeError")
 @js.native
 open class ExpectedValueOfTypeError protected ()
-  extends typings.hyperformula.errorsMod.ExpectedValueOfTypeError {
+  extends typings.hyperformula.typingsErrorsMod.ExpectedValueOfTypeError {
   def this(expectedType: String, paramName: String) = this()
 }

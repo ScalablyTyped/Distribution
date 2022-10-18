@@ -13,10 +13,10 @@ trait ExpandChoiceMap[T /* <: Answers */]
 object ExpandChoiceMap {
   
   inline def apply[T /* <: Answers */](
-    Choice: typings.inquirer.choiceMod.default[T],
+    Choice: typings.inquirer.libObjectsChoiceMod.default[T],
     ChoiceOptions: ChoiceOptions,
     ExpandChoiceOptions: ExpandChoiceOptions,
-    Separator: typings.inquirer.separatorMod.default,
+    Separator: typings.inquirer.libObjectsSeparatorMod.default,
     SeparatorOptions: SeparatorOptions
   ): ExpandChoiceMap[T] = {
     val __obj = js.Dynamic.literal(Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], ExpandChoiceOptions = ExpandChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])

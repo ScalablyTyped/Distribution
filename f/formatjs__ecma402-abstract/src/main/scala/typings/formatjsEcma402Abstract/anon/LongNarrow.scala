@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.displaynamesMod.LanguageTag
+import typings.formatjsEcma402Abstract.libTypesDisplaynamesMod.LanguageTag
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

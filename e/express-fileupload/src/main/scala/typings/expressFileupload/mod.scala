@@ -3,9 +3,6 @@ package typings.expressFileupload
 import org.scalablytyped.runtime.StringDictionary
 import typings.busboy.mod.Limits
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.std.Record
@@ -237,8 +234,6 @@ object mod {
             ])
       ): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
       
-      inline def setLimitHandlerFunction3(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "limitHandler", js.Any.fromFunction3(value))
-      
       inline def setLimitHandlerUndefined: Self = StObject.set(x, "limitHandler", js.undefined)
       
       inline def setLimits(value: Limits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
@@ -325,12 +320,12 @@ object mod {
       }
       object Request {
         
-        inline def apply(): typings.expressFileupload.mod.global.Express.Request = {
+        inline def apply(): Request = {
           val __obj = js.Dynamic.literal()
-          __obj.asInstanceOf[typings.expressFileupload.mod.global.Express.Request]
+          __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: typings.expressFileupload.mod.global.Express.Request](x: Self) {
+        extension [Self <: Request](x: Self) {
           
           inline def setFiles(value: FileArray): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           

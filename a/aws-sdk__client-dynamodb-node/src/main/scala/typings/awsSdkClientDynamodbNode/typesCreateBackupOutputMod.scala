@@ -1,8 +1,8 @@
 package typings.awsSdkClientDynamodbNode
 
-import typings.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesBackupDetailsMod.UnmarshalledBackupDetails
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientDynamodbNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

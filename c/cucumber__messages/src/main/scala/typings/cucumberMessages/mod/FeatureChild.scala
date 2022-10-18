@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "FeatureChild")
 @js.native
 open class FeatureChild ()
-  extends typings.cucumberMessages.messagesMod.FeatureChild
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.FeatureChild

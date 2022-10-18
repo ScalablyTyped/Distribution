@@ -1,6 +1,6 @@
 package typings.expoPrebuildConfig.anon
 
-import typings.expoPrebuildConfig.assetContentsMod.ContentsJsonImageIdiom
+import typings.expoPrebuildConfig.buildPluginsIconsAssetContentsMod.ContentsJsonImageIdiom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

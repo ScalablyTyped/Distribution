@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object WebXRTrackingState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.webXRTypesMod.WebXRTrackingState & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.xRWebXRTypesMod.WebXRTrackingState & Double] = js.native
   
-  /* 0 */ val NOT_TRACKING: typings.babylonjs.webXRTypesMod.WebXRTrackingState.NOT_TRACKING & Double = js.native
+  /* 0 */ val NOT_TRACKING: typings.babylonjs.xRWebXRTypesMod.WebXRTrackingState.NOT_TRACKING & Double = js.native
   
-  /* 2 */ val TRACKING: typings.babylonjs.webXRTypesMod.WebXRTrackingState.TRACKING & Double = js.native
+  /* 2 */ val TRACKING: typings.babylonjs.xRWebXRTypesMod.WebXRTrackingState.TRACKING & Double = js.native
   
-  /* 1 */ val TRACKING_LOST: typings.babylonjs.webXRTypesMod.WebXRTrackingState.TRACKING_LOST & Double = js.native
+  /* 1 */ val TRACKING_LOST: typings.babylonjs.xRWebXRTypesMod.WebXRTrackingState.TRACKING_LOST & Double = js.native
 }

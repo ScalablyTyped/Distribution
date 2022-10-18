@@ -1,7 +1,7 @@
 package typings.onfleetNodeOnfleet.anon
 
-import typings.onfleetNodeOnfleet.tasksMod.Barcode
-import typings.onfleetNodeOnfleet.tasksMod.CapturedBarcode
+import typings.onfleetNodeOnfleet.resourcesTasksMod.Barcode
+import typings.onfleetNodeOnfleet.resourcesTasksMod.CapturedBarcode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

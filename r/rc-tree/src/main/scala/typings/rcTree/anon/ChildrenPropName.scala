@@ -1,10 +1,10 @@
 package typings.rcTree.anon
 
-import typings.rcTree.interfaceMod.DataEntity
-import typings.rcTree.interfaceMod.DataNode
-import typings.rcTree.interfaceMod.FieldNames
-import typings.rcTree.treeUtilMod.ExternalGetKey
-import typings.rcTree.treeUtilMod.Wrapper
+import typings.rcTree.esInterfaceMod.DataEntity
+import typings.rcTree.esInterfaceMod.DataNode
+import typings.rcTree.esInterfaceMod.FieldNames
+import typings.rcTree.esUtilsTreeUtilMod.ExternalGetKey
+import typings.rcTree.esUtilsTreeUtilMod.Wrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +38,7 @@ object ChildrenPropName {
     
     inline def setExternalGetKey(value: ExternalGetKey): Self = StObject.set(x, "externalGetKey", value.asInstanceOf[js.Any])
     
-    inline def setExternalGetKeyFunction2(value: (DataNode, /* index */ js.UndefOr[Double]) => typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "externalGetKey", js.Any.fromFunction2(value))
+    inline def setExternalGetKeyFunction2(value: (DataNode, /* index */ js.UndefOr[Double]) => typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "externalGetKey", js.Any.fromFunction2(value))
     
     inline def setExternalGetKeyUndefined: Self = StObject.set(x, "externalGetKey", js.undefined)
     

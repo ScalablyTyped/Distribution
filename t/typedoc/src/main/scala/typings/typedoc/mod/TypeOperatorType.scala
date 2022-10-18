@@ -1,6 +1,6 @@
 package typings.typedoc.mod
 
-import typings.typedoc.modelsTypesMod.SomeType
+import typings.typedoc.distLibModelsTypesMod.SomeType
 import typings.typedoc.typedocStrings.keyof
 import typings.typedoc.typedocStrings.readonly
 import typings.typedoc.typedocStrings.unique
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "TypeOperatorType")
 @js.native
 open class TypeOperatorType protected ()
-  extends typings.typedoc.modelsMod.TypeOperatorType {
+  extends typings.typedoc.distLibModelsMod.TypeOperatorType {
   def this(target: SomeType, operator: keyof | unique | readonly) = this()
 }

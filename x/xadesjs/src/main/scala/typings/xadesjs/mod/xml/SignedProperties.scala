@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.SignedProperties")
 @js.native
 open class SignedProperties ()
-  extends typings.xadesjs.typesXmlMod.SignedProperties {
+  extends typings.xadesjs.buildTypesXmlMod.SignedProperties {
   def this(properties: js.Object) = this()
 }

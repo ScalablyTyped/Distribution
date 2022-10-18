@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object OperationType {
   
   /** Operation involving linking an additional provider to an already signed-in user. */
-  @JSImport("@firebase/auth/dist/cordova/internal", "OperationType.LINK")
+  @JSImport("@firebase/auth/internal", "OperationType.LINK")
   @js.native
   val LINK: link = js.native
   
   /** Operation involving using a provider to reauthenticate an already signed-in user. */
-  @JSImport("@firebase/auth/dist/cordova/internal", "OperationType.REAUTHENTICATE")
+  @JSImport("@firebase/auth/internal", "OperationType.REAUTHENTICATE")
   @js.native
   val REAUTHENTICATE: reauthenticate = js.native
   
   /** Operation involving signing in a user. */
-  @JSImport("@firebase/auth/dist/cordova/internal", "OperationType.SIGN_IN")
+  @JSImport("@firebase/auth/internal", "OperationType.SIGN_IN")
   @js.native
   val SIGN_IN: signIn = js.native
 }

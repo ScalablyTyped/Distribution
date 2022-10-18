@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BasePathDestination
   extends StObject
-     with typings.next.mod.Redirect {
+     with typings.next.typesMod.Redirect {
   
   var basePath: js.UndefOr[`false`] = js.undefined
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "NumberLiteral")
 @js.native
-class NumberLiteral ()
-  extends typings.grammarkdown.nodesMod.NumberLiteral {
+open class NumberLiteral ()
+  extends typings.grammarkdown.distNodesMod.NumberLiteral {
   def this(text: String) = this()
 }

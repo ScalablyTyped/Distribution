@@ -5,11 +5,11 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeDraggableFlatlist.typesMod.DragEndParams
-import typings.reactNativeDraggableFlatlist.typesMod.RenderItem
-import typings.reactNativeDraggableFlatlist.typesMod.RenderItemParams
-import typings.reactNativeDraggableFlatlist.typesMod.RenderPlaceholder
-import typings.reactNativeGestureHandler.gestureComponentsMod.FlatList
+import typings.reactNativeDraggableFlatlist.libTypesMod.DragEndParams
+import typings.reactNativeDraggableFlatlist.libTypesMod.RenderItem
+import typings.reactNativeDraggableFlatlist.libTypesMod.RenderItemParams
+import typings.reactNativeDraggableFlatlist.libTypesMod.RenderPlaceholder
+import typings.reactNativeGestureHandler.libTypescriptComponentsGestureComponentsMod.FlatList
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

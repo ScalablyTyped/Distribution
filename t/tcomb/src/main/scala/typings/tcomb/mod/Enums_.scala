@@ -1,6 +1,6 @@
 package typings.tcomb.mod
 
-import typings.tcomb.anon.Map
+import typings.tcomb.anon.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,5 +13,5 @@ trait Enums_
   extends Type[java.lang.String] {
   
   @JSName("meta")
-  var meta_Enums_ : Map = js.native
+  var meta_Enums_ : Identity = js.native
 }

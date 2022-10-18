@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialCirclePackingOptio
-import typings.antvG2plot.circlePackingTypesMod.CirclePackingOptions
+import typings.antvG2plot.libPlotsCirclePackingTypesMod.CirclePackingOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "CirclePacking")
 @js.native
 open class CirclePacking protected ()
-  extends typings.antvG2plot.circlePackingMod.CirclePacking {
+  extends typings.antvG2plot.libPlotsCirclePackingMod.CirclePacking {
   def this(container: String, options: CirclePackingOptions) = this()
   def this(container: HTMLElement, options: CirclePackingOptions) = this()
 }

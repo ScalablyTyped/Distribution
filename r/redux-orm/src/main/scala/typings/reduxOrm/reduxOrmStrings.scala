@@ -8,50 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reduxOrmStrings {
   
   @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait DatabaseCreator extends StObject
-  inline def DatabaseCreator: DatabaseCreator = "DatabaseCreator".asInstanceOf[DatabaseCreator]
-  
-  @js.native
-  sealed trait IndexedModelClasses extends StObject
-  inline def IndexedModelClasses: IndexedModelClasses = "IndexedModelClasses".asInstanceOf[IndexedModelClasses]
-  
-  @js.native
-  sealed trait ModelBlueprint extends StObject
-  inline def ModelBlueprint: ModelBlueprint = "ModelBlueprint".asInstanceOf[ModelBlueprint]
-  
-  @js.native
-  sealed trait ORM extends StObject
-  inline def ORM: ORM = "ORM".asInstanceOf[ORM]
-  
-  @js.native
-  sealed trait OrmSession extends StObject
-  inline def OrmSession: OrmSession = "OrmSession".asInstanceOf[OrmSession]
-  
-  @js.native
-  sealed trait OrmState extends StObject
-  inline def OrmState: OrmState = "OrmState".asInstanceOf[OrmState]
-  
-  @js.native
-  sealed trait Ref extends StObject
-  inline def Ref: Ref = "Ref".asInstanceOf[Ref]
-  
-  @js.native
-  sealed trait SchemaSpec extends StObject
-  inline def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
-  
-  @js.native
-  sealed trait SessionBoundModel extends StObject
-  inline def SessionBoundModel: SessionBoundModel = "SessionBoundModel".asInstanceOf[SessionBoundModel]
-  
-  @js.native
-  sealed trait TableIndexes extends StObject
-  inline def TableIndexes: TableIndexes = "TableIndexes".asInstanceOf[TableIndexes]
-  
-  @js.native
   sealed trait arrName extends StObject
   inline def arrName: arrName = "arrName".asInstanceOf[arrName]
   
@@ -64,10 +20,6 @@ object reduxOrmStrings {
   @js.native
   sealed trait attr extends StObject
   inline def attr: attr = "attr".asInstanceOf[attr]
-  
-  @js.native
-  sealed trait createDatabase extends StObject
-  inline def createDatabase: createDatabase = "createDatabase".asInstanceOf[createDatabase]
   
   @js.native
   sealed trait desc

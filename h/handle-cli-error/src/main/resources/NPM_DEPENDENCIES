@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "handle-cli-error" : "2.0.0"
+      "handle-cli-error" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "handle-cli-error" : "2.0.0"
+      "handle-cli-error" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

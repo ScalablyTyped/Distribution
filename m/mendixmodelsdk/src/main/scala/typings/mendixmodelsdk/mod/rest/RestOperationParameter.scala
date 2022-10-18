@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.restMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.RestOperationParameter")
 @js.native
 open class RestOperationParameter protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.RestOperationParameter {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.RestOperationParameter {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object RestOperationParameter {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.RestOperationParameter]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter]
   
   /**
     * Creates and returns a new RestOperationParameter instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object RestOperationParameter {
     *  7.17.0 and higher
     */
   /* static member */
-  inline def createInPublishedRestServiceOperationUnderParameters(container: typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceOperationUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.RestOperationParameter]
+  inline def createInPublishedRestServiceOperationUnderParameters(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestServiceOperation): typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceOperationUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter]
   
   /**
     * Creates and returns a new RestOperationParameter instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object RestOperationParameter {
     *  7.17.0 and higher
     */
   /* static member */
-  inline def createInPublishedRestServiceUnderParameters(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.RestOperationParameter]
+  inline def createInPublishedRestServiceUnderParameters(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestService): typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter]
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.RestOperationParameter.structureTypeName")

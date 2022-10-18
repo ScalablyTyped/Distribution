@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof core.Date` */
 object coreDateMod {
   
-  @JSImport("core-js/library/core/date", JSImport.Namespace)
+  @JSImport("core-js/core/date", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

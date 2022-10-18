@@ -4,7 +4,7 @@ import typings.blueprintjsCore.anon.PartialITagInputState
 import typings.blueprintjsCore.anon.PartialTagInputProps
 import typings.blueprintjsCore.anon.ReadonlyITagInputState
 import typings.blueprintjsCore.anon.ReadonlyTagInputProps
-import typings.blueprintjsCore.tagInputMod.TagInputProps
+import typings.blueprintjsCore.libEsmComponentsTagInputTagInputMod.TagInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "TagInput")
 @js.native
 open class TagInput protected ()
-  extends typings.blueprintjsCore.componentsMod.TagInput {
+  extends typings.blueprintjsCore.libEsmComponentsMod.TagInput {
   def this(props: TagInputProps) = this()
   def this(props: TagInputProps, context: Any) = this()
 }

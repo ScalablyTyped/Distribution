@@ -1,11 +1,11 @@
 package typings.awsSdk.global.AWS
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.converterMod.Converter.ConverterOptions
-import typings.awsSdk.documentClientMod.DocumentClient.DocumentClientOptions
-import typings.awsSdk.dynamodbMod.AttributeMap
-import typings.awsSdk.dynamodbMod.AttributeValue
-import typings.awsSdk.dynamodbMod.ClientConfiguration
+import typings.awsSdk.clientsDynamodbMod.AttributeMap
+import typings.awsSdk.clientsDynamodbMod.AttributeValue
+import typings.awsSdk.clientsDynamodbMod.ClientConfiguration
+import typings.awsSdk.libDynamodbConverterMod.Converter.ConverterOptions
+import typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.DocumentClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

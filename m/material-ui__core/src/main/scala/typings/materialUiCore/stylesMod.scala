@@ -2,20 +2,20 @@ package typings.materialUiCore
 
 import typings.jss.mod.GenerateId
 import typings.jss.mod.JssOptions
-import typings.materialUiCore.colorManipulatorMod.ColorObject
-import typings.materialUiCore.createThemeMod.Theme
-import typings.materialUiCore.createThemeMod.ThemeOptions
-import typings.materialUiCore.responsiveFontSizesMod.ResponsiveFontSizesOptions
-import typings.materialUiCore.styledMod.ComponentCreator
-import typings.materialUiCore.transitionsMod.Duration_
-import typings.materialUiCore.transitionsMod.Easing_
-import typings.materialUiCore.withStylesMod.WithStyles
-import typings.materialUiCore.withThemeMod.ThemedComponentProps
-import typings.materialUiCore.withThemeMod.WithTheme
+import typings.materialUiCore.stylesColorManipulatorMod.ColorObject
+import typings.materialUiCore.stylesCreateThemeMod.Theme
+import typings.materialUiCore.stylesCreateThemeMod.ThemeOptions
+import typings.materialUiCore.stylesResponsiveFontSizesMod.ResponsiveFontSizesOptions
+import typings.materialUiCore.stylesStyledMod.ComponentCreator
+import typings.materialUiCore.stylesTransitionsMod.Duration_
+import typings.materialUiCore.stylesTransitionsMod.Easing_
+import typings.materialUiCore.stylesTransitionsMod.Transitions
+import typings.materialUiCore.stylesWithStylesMod.WithStyles
+import typings.materialUiCore.stylesWithThemeMod.ThemedComponentProps
+import typings.materialUiCore.stylesWithThemeMod.WithTheme
 import typings.materialUiStyles.createGenerateClassNameCreateGenerateClassNameMod.GenerateClassNameOptions
 import typings.materialUiStyles.stylesProviderStylesProviderMod.StylesProviderProps
 import typings.materialUiStyles.themeProviderThemeProviderMod.ThemeProviderProps
-import typings.materialUiStyles.withStylesWithStylesMod.ClassNameMap
 import typings.materialUiStyles.withStylesWithStylesMod.StyleRules
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
 import typings.materialUiStyles.withStylesWithStylesMod.Styles
@@ -35,12 +35,18 @@ object stylesMod {
   @js.native
   val ^ : js.Any = js.native
   
+  // export type TransitionsOptions = DeepPartial<Transitions>;
+  @JSImport("@material-ui/core/styles", JSImport.Default)
+  @js.native
+  val default: Transitions = js.native
+  
   inline def MuiThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MuiThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@material-ui/core/styles", "ServerStyleSheets")
   @js.native
   open class ServerStyleSheets ()
-    extends typings.materialUiStyles.mod.ServerStyleSheets {
+    extends StObject
+       with typings.materialUiStyles.serverStyleSheetsServerStyleSheetsMod.ServerStyleSheets {
     def this(options: js.Object) = this()
   }
   
@@ -94,12 +100,12 @@ object stylesMod {
   
   inline def lighten(color: String, coefficient: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(color.asInstanceOf[js.Any], coefficient.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]]]
+  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
   inline def makeStyles_withTheme[Theme, Props /* <: js.Object */, ClassKey /* <: String */](
     styles: Styles[Theme, Props, ClassKey],
     options: Omit[WithStylesOptions[Theme], typings.materialUiCore.materialUiCoreStrings.withTheme]
-  ): js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
   inline def recomposeColor(color: ColorObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("recomposeColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   

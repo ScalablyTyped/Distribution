@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playablelocations
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse extends StObj
   
   /** Each PlayableLocation object corresponds to a game_object_type specified in the request. */
   var locationsPerGameObjectType: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList}
-    */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList} */ js.Any
   ] = js.undefined
   
   /**
@@ -31,9 +28,7 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse {
   extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse](x: Self) {
     
     inline def setLocationsPerGameObjectType(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList}
-      */ typings.maximMazurokGapiClientPlayablelocations.maximMazurokGapiClientPlayablelocationsStrings.GoogleMapsPlayablelocationsV3SamplePlayableLocationsResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.playablelocations.gapi.client.playablelocations.GoogleMapsPlayablelocationsV3SamplePlayableLocationList} */ js.Any
     ): Self = StObject.set(x, "locationsPerGameObjectType", value.asInstanceOf[js.Any])
     
     inline def setLocationsPerGameObjectTypeUndefined: Self = StObject.set(x, "locationsPerGameObjectType", js.undefined)

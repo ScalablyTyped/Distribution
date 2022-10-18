@@ -14,7 +14,7 @@ trait IsPreferred
      with /* k */ StringDictionary[Any] {
   
   /**
-    * A correctly formatted email address, as defined by the addr_spec format in **[[RFC5322]](#nref-RFC5322)**
+    * A correctly formatted email address, as defined by the addr-spec format in **[[RFC5322]](#nref-RFC5322)**
     */
   var address: String
   

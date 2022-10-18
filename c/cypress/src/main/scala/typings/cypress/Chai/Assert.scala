@@ -1,25 +1,25 @@
 package typings.cypress.Chai
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cypress.Object
-import typings.cypress.anon.LengthNumber
+import typings.cypress.anon.`0`
 import typings.std.Partial
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
-import typings.std.RegExp
 import typings.std.WeakSet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Assert extends js.Object {
+trait Assert extends StObject {
+  
   /**
     * @param expression    Expression to test for truthiness.
     * @param message    Message to display on error.
     */
-  def apply(expression: js.Any): Unit = js.native
-  def apply(expression: js.Any, message: String): Unit = js.native
+  def apply(expression: Any): Unit = js.native
+  def apply(expression: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that fn will throw an error.
     *
@@ -44,7 +44,7 @@ trait Assert extends js.Object {
     * @param constructor   Potential expected error constructor.
     * @param message   Message to display on error.
     */
-  def Throw(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: js.RegExp): Unit = js.native
   def Throw(fn: js.Function0[Unit], message: String): Unit = js.native
   /**
     * Asserts that function will throw an error with message matching regexp.
@@ -53,7 +53,8 @@ trait Assert extends js.Object {
     * @param regExp   Potential expected message match.
     * @param message   Message to display on error.
     */
-  def Throw(fn: js.Function0[Unit], regExp: RegExp): Unit = js.native
+  def Throw(fn: js.Function0[Unit], regExp: js.RegExp): Unit = js.native
+  
   /**
     * Asserts that the target is equal to expected, to within a +/- delta range.
     *
@@ -64,6 +65,7 @@ trait Assert extends js.Object {
     */
   def approximately(act: Double, exp: Double, delta: Double): Unit = js.native
   def approximately(act: Double, exp: Double, delta: Double, message: String): Unit = js.native
+  
   /**
     * Asserts that a function changes the value of a property.
     *
@@ -75,6 +77,7 @@ trait Assert extends js.Object {
     */
   def changes[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def changes[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that the target is equal to expected, to within a +/- delta range.
     *
@@ -85,6 +88,7 @@ trait Assert extends js.Object {
     */
   def closeTo(actual: Double, expected: Double, delta: Double): Unit = js.native
   def closeTo(actual: Double, expected: Double, delta: Double, message: String): Unit = js.native
+  
   /**
     * Asserts that `object` contains all of the `keys` provided.
     * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -97,10 +101,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def containsAllDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def containsAllDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` has all of the `keys` provided but may have more keys not listed.
     * You can also provide a single object instead of a `keys` array and its keys
@@ -111,10 +116,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def containsAllKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def containsAllKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def containsAllKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def containsAllKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that a function decreases an object property.
     *
@@ -126,6 +132,7 @@ trait Assert extends js.Object {
     */
   def decreases[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def decreases[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that actual is deeply equal (==) to expected.
     *
@@ -136,6 +143,7 @@ trait Assert extends js.Object {
     */
   def deepEqual[T](actual: T, expected: T): Unit = js.native
   def deepEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that haystack includes needle. Deep equality is used.
     *
@@ -155,8 +163,15 @@ trait Assert extends js.Object {
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
     */
-  def deepInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
-  def deepInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  def deepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any
+  ): Unit = js.native
+  def deepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any,
+    message: String
+  ): Unit = js.native
   /**
     * Asserts that haystack includes needle. Deep equality is used.
     *
@@ -167,10 +182,11 @@ trait Assert extends js.Object {
     */
   def deepInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def deepInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def deepInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
-  def deepInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def deepInclude[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def deepInclude[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def deepInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def deepInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while checking for deep equality
     *
@@ -184,8 +200,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def deepNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def deepNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def deepNestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def deepNestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property with a value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a deep equality check.
@@ -196,8 +213,9 @@ trait Assert extends js.Object {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def deepNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def deepNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def deepNestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def deepNestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while ignoring inherited properties and checking for deep
     *
@@ -205,8 +223,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def deepOwnInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def deepOwnInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def deepOwnInclude(haystack: Any, needle: Any): Unit = js.native
+  def deepOwnInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property, which can be a string
     * using dot- and bracket-notation for deep reference.
@@ -218,6 +237,7 @@ trait Assert extends js.Object {
     */
   def deepProperty[T](`object`: T, property: String): Unit = js.native
   def deepProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property, which can be a string
     * using dot- and bracket-notation for deep reference.
@@ -231,6 +251,7 @@ trait Assert extends js.Object {
     */
   def deepPropertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
   def deepPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  
   /**
     * Asserts that actual is deeply strict equal (===) to expected.
     *
@@ -241,6 +262,7 @@ trait Assert extends js.Object {
     */
   def deepStrictEqual[T](actual: T, expected: T): Unit = js.native
   def deepStrictEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that a function does not change the value of a property.
     *
@@ -252,6 +274,7 @@ trait Assert extends js.Object {
     */
   def doesNotChange[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def doesNotChange[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that a function does not decrease an object property.
     *
@@ -263,6 +286,7 @@ trait Assert extends js.Object {
     */
   def doesNotDecrease[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def doesNotDecrease[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that `object` contains all of the `keys` provided.
     * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -275,10 +299,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` does not have at least one of the `keys` provided.
     * You can also provide a single object instead of a `keys` array and its keys
@@ -289,10 +314,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` contains all of the `keys` provided.
     * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -305,10 +331,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` has none of the `keys` provided.
     * You can also provide a single object instead of a `keys` array and its keys
@@ -319,10 +346,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that a function does not increase an object property.
     *
@@ -334,6 +362,7 @@ trait Assert extends js.Object {
     */
   def doesNotIncrease[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def doesNotIncrease[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that fn will not throw an error.
     *
@@ -358,7 +387,7 @@ trait Assert extends js.Object {
     * @param constructor   Potential expected error constructor.
     * @param message   Message to display on error.
     */
-  def doesNotThrow(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: js.RegExp): Unit = js.native
   def doesNotThrow(fn: js.Function0[Unit], message: String): Unit = js.native
   /**
     * Asserts that function will throw an error with message matching regexp.
@@ -367,7 +396,8 @@ trait Assert extends js.Object {
     * @param regExp   Potential expected message match.
     * @param message   Message to display on error.
     */
-  def doesNotThrow(fn: js.Function0[Unit], regExp: RegExp): Unit = js.native
+  def doesNotThrow(fn: js.Function0[Unit], regExp: js.RegExp): Unit = js.native
+  
   /**
     * Asserts non-strict equality (==) of actual and expected.
     *
@@ -378,6 +408,7 @@ trait Assert extends js.Object {
     */
   def equal[T](actual: T, expected: T): Unit = js.native
   def equal[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that the target is neither null nor undefined.
     *
@@ -387,6 +418,7 @@ trait Assert extends js.Object {
     */
   def exists[T](value: T): Unit = js.native
   def exists[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is extensible (can have new properties added to it).
     *
@@ -396,6 +428,7 @@ trait Assert extends js.Object {
     */
   def extensible[T](`object`: T): Unit = js.native
   def extensible[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Throws a failure.
     *
@@ -417,6 +450,8 @@ trait Assert extends js.Object {
   def fail[T](actual: T, expected: T): scala.Nothing = js.native
   def fail[T](actual: T, expected: T, message: String): scala.Nothing = js.native
   def fail[T](actual: T, expected: T, message: String, operator: Operator): scala.Nothing = js.native
+  def fail[T](actual: T, expected: T, message: Unit, operator: Operator): scala.Nothing = js.native
+  
   /**
     * Asserts that object is frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
@@ -427,6 +462,7 @@ trait Assert extends js.Object {
     */
   def frozen[T](`object`: T): Unit = js.native
   def frozen[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that `object` has all and only all of the `keys` provided.
     * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -439,10 +475,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def hasAllDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def hasAllDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` has all and only all of the `keys` provided.
     * You can also provide a single object instead of a `keys` array and its keys
@@ -453,10 +490,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def hasAllKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def hasAllKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAllKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAllKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` has at least one of the `keys` provided.
     * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -469,10 +507,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts that `object` has at least one of the `keys` provided.
     * You can also provide a single object instead of a `keys` array and its keys
@@ -483,10 +522,11 @@ trait Assert extends js.Object {
     * @param keys   Keys to check
     * @param message    Message to display on error.
     */
-  def hasAnyKeys[T](`object`: T, keys: js.Array[Object | String]): Unit = js.native
-  def hasAnyKeys[T](`object`: T, keys: js.Array[Object | String], message: String): Unit = js.native
-  def hasAnyKeys[T](`object`: T, keys: StringDictionary[js.Any]): Unit = js.native
-  def hasAnyKeys[T](`object`: T, keys: StringDictionary[js.Any], message: String): Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: js.Array[js.Object | String]): Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: js.Array[js.Object | String], message: String): Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: StringDictionary[Any]): Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: StringDictionary[Any], message: String): Unit = js.native
+  
   /**
     * Asserts if value is not a false value, and throws if it is a true value.
     *
@@ -498,6 +538,7 @@ trait Assert extends js.Object {
     */
   def ifError[T](`object`: T): Unit = js.native
   def ifError[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that haystack includes needle.
     *
@@ -527,8 +568,8 @@ trait Assert extends js.Object {
     */
   def include[T](haystack: js.Array[T], needle: T): Unit = js.native
   def include[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def include[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
-  def include[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def include[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def include[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def include[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def include[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
@@ -541,6 +582,7 @@ trait Assert extends js.Object {
     */
   def include[T /* <: js.Object */](haystack: WeakSet[T], needle: T): Unit = js.native
   def include[T /* <: js.Object */](haystack: WeakSet[T], needle: T, message: String): Unit = js.native
+  
   /**
     * Asserts that subset is included in superset using deep equality checking.
     * Order is not take into account.
@@ -552,6 +594,7 @@ trait Assert extends js.Object {
     */
   def includeDeepMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def includeDeepMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that subset is included in superset in the same order beginning with the first element in superset.
     * Uses a deep equality check.
@@ -563,6 +606,7 @@ trait Assert extends js.Object {
     */
   def includeDeepOrderedMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def includeDeepOrderedMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that subset is included in superset. Order is not take into account.
     *
@@ -573,6 +617,7 @@ trait Assert extends js.Object {
     */
   def includeMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def includeMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that subset is included in superset in the same order beginning with the first element in superset.
     * Uses a strict equality check (===).
@@ -584,6 +629,7 @@ trait Assert extends js.Object {
     */
   def includeOrderedMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def includeOrderedMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that a function increases an object property.
     *
@@ -595,6 +641,7 @@ trait Assert extends js.Object {
     */
   def increases[T](modifier: js.Function, `object`: T, property: String): Unit = js.native
   def increases[T](modifier: js.Function, `object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that value is an instance of constructor.
     *
@@ -605,6 +652,7 @@ trait Assert extends js.Object {
     */
   def instanceOf[T](value: T, constructor: js.Function): Unit = js.native
   def instanceOf[T](value: T, constructor: js.Function, message: String): Unit = js.native
+  
   /**
     * Asserts valueToCheck is strictly greater than (>) valueToBeAbove.
     *
@@ -614,6 +662,7 @@ trait Assert extends js.Object {
     */
   def isAbove(valueToCheck: Double, valueToBeAbove: Double): Unit = js.native
   def isAbove(valueToCheck: Double, valueToBeAbove: Double, message: String): Unit = js.native
+  
   /**
     * Asserts that value is an array.
     *
@@ -623,6 +672,7 @@ trait Assert extends js.Object {
     */
   def isArray[T](value: T): Unit = js.native
   def isArray[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts valueToCheck is greater than or equal to (>=) valueToBeAtLeast.
     *
@@ -632,6 +682,7 @@ trait Assert extends js.Object {
     */
   def isAtLeast(valueToCheck: Double, valueToBeAtLeast: Double): Unit = js.native
   def isAtLeast(valueToCheck: Double, valueToBeAtLeast: Double, message: String): Unit = js.native
+  
   /**
     * Asserts valueToCheck is less than or equal to (<=) valueToBeAtMost.
     *
@@ -641,6 +692,7 @@ trait Assert extends js.Object {
     */
   def isAtMost(valueToCheck: Double, valueToBeAtMost: Double): Unit = js.native
   def isAtMost(valueToCheck: Double, valueToBeAtMost: Double, message: String): Unit = js.native
+  
   /**
     * Asserts valueToCheck is strictly less than (<) valueToBeBelow.
     *
@@ -650,6 +702,7 @@ trait Assert extends js.Object {
     */
   def isBelow(valueToCheck: Double, valueToBeBelow: Double): Unit = js.native
   def isBelow(valueToCheck: Double, valueToBeBelow: Double, message: String): Unit = js.native
+  
   /**
     * Asserts that value is a boolean.
     *
@@ -659,6 +712,7 @@ trait Assert extends js.Object {
     */
   def isBoolean[T](value: T): Unit = js.native
   def isBoolean[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not undefined.
     *
@@ -668,6 +722,7 @@ trait Assert extends js.Object {
     */
   def isDefined[T](value: T): Unit = js.native
   def isDefined[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that the target does not contain any values. For arrays and
     * strings, it checks the length property. For Map and Set instances, it
@@ -680,6 +735,7 @@ trait Assert extends js.Object {
     */
   def isEmpty[T](`object`: T): Unit = js.native
   def isEmpty[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is extensible (can have new properties added to it).
     *
@@ -689,6 +745,7 @@ trait Assert extends js.Object {
     */
   def isExtensible[T](`object`: T): Unit = js.native
   def isExtensible[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is false.
     *
@@ -698,6 +755,18 @@ trait Assert extends js.Object {
     */
   def isFalse[T](value: T): Unit = js.native
   def isFalse[T](value: T, message: String): Unit = js.native
+  
+  /**
+    * Asserts that value is a finite number.
+    * Unlike `.isNumber`, this will fail for `NaN` and `Infinity`.
+    *
+    * @type T   Type of value
+    * @param value    Actual value
+    * @param message   Message to display on error.
+    */
+  def isFinite[T](value: T): Unit = js.native
+  def isFinite[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
@@ -708,6 +777,7 @@ trait Assert extends js.Object {
     */
   def isFrozen[T](`object`: T): Unit = js.native
   def isFrozen[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is a function.
     *
@@ -717,6 +787,7 @@ trait Assert extends js.Object {
     */
   def isFunction[T](value: T): Unit = js.native
   def isFunction[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is NaN.
     *
@@ -726,6 +797,7 @@ trait Assert extends js.Object {
     */
   def isNaN[T](value: T): Unit = js.native
   def isNaN[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not an array.
     *
@@ -735,6 +807,7 @@ trait Assert extends js.Object {
     */
   def isNotArray[T](value: T): Unit = js.native
   def isNotArray[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not a boolean.
     *
@@ -744,6 +817,7 @@ trait Assert extends js.Object {
     */
   def isNotBoolean[T](value: T): Unit = js.native
   def isNotBoolean[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that the target contains values. For arrays and strings, it checks
     * the length property. For Map and Set instances, it checks the size property.
@@ -755,6 +829,7 @@ trait Assert extends js.Object {
     */
   def isNotEmpty[T](`object`: T): Unit = js.native
   def isNotEmpty[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is not extensible.
     *
@@ -764,6 +839,7 @@ trait Assert extends js.Object {
     */
   def isNotExtensible[T](`object`: T): Unit = js.native
   def isNotExtensible[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not false.
     *
@@ -773,6 +849,7 @@ trait Assert extends js.Object {
     */
   def isNotFalse[T](value: T): Unit = js.native
   def isNotFalse[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is not frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
@@ -783,6 +860,7 @@ trait Assert extends js.Object {
     */
   def isNotFrozen[T](`object`: T): Unit = js.native
   def isNotFrozen[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not a function.
     *
@@ -792,6 +870,7 @@ trait Assert extends js.Object {
     */
   def isNotFunction[T](value: T): Unit = js.native
   def isNotFunction[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not NaN.
     *
@@ -801,6 +880,7 @@ trait Assert extends js.Object {
     */
   def isNotNaN[T](value: T): Unit = js.native
   def isNotNaN[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not null.
     *
@@ -810,6 +890,7 @@ trait Assert extends js.Object {
     */
   def isNotNull[T](value: T): Unit = js.native
   def isNotNull[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not a number.
     *
@@ -819,6 +900,7 @@ trait Assert extends js.Object {
     */
   def isNotNumber[T](value: T): Unit = js.native
   def isNotNumber[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not an object of type 'Object'
     * (as revealed by Object.prototype.toString).
@@ -829,6 +911,7 @@ trait Assert extends js.Object {
     */
   def isNotObject[T](value: T): Unit = js.native
   def isNotObject[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is falsy.
     *
@@ -838,6 +921,7 @@ trait Assert extends js.Object {
     */
   def isNotOk[T](value: T): Unit = js.native
   def isNotOk[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is not sealed.
     *
@@ -847,6 +931,7 @@ trait Assert extends js.Object {
     */
   def isNotSealed[T](`object`: T): Unit = js.native
   def isNotSealed[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not a string.
     *
@@ -856,6 +941,7 @@ trait Assert extends js.Object {
     */
   def isNotString[T](value: T): Unit = js.native
   def isNotString[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is not true.
     *
@@ -865,6 +951,7 @@ trait Assert extends js.Object {
     */
   def isNotTrue[T](value: T): Unit = js.native
   def isNotTrue[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is null.
     *
@@ -874,6 +961,7 @@ trait Assert extends js.Object {
     */
   def isNull[T](value: T): Unit = js.native
   def isNull[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is a number.
     *
@@ -883,6 +971,7 @@ trait Assert extends js.Object {
     */
   def isNumber[T](value: T): Unit = js.native
   def isNumber[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is an object of type 'Object'
     * (as revealed by Object.prototype.toString).
@@ -894,6 +983,7 @@ trait Assert extends js.Object {
     */
   def isObject[T](value: T): Unit = js.native
   def isObject[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is truthy.
     *
@@ -903,6 +993,7 @@ trait Assert extends js.Object {
     */
   def isOk[T](value: T): Unit = js.native
   def isOk[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is sealed (can have new properties added to it
     * and its existing properties cannot be removed).
@@ -913,6 +1004,7 @@ trait Assert extends js.Object {
     */
   def isSealed[T](`object`: T): Unit = js.native
   def isSealed[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is a string.
     *
@@ -922,6 +1014,7 @@ trait Assert extends js.Object {
     */
   def isString[T](value: T): Unit = js.native
   def isString[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is true.
     *
@@ -931,6 +1024,7 @@ trait Assert extends js.Object {
     */
   def isTrue[T](value: T): Unit = js.native
   def isTrue[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value is undefined.
     *
@@ -940,6 +1034,7 @@ trait Assert extends js.Object {
     */
   def isUndefined[T](value: T): Unit = js.native
   def isUndefined[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a length property with the expected value.
     *
@@ -948,8 +1043,9 @@ trait Assert extends js.Object {
     * @param length   Potential expected length of object.
     * @param message   Message to display on error.
     */
-  def lengthOf[T /* <: LengthNumber */](`object`: T, length: Double): Unit = js.native
-  def lengthOf[T /* <: LengthNumber */](`object`: T, length: Double, message: String): Unit = js.native
+  def lengthOf[T /* <: `0` */](`object`: T, length: Double): Unit = js.native
+  def lengthOf[T /* <: `0` */](`object`: T, length: Double, message: String): Unit = js.native
+  
   /**
     * Asserts that value matches the regular expression regexp.
     *
@@ -957,8 +1053,9 @@ trait Assert extends js.Object {
     * @param regexp   Potential match of value.
     * @param message   Message to display on error.
     */
-  def `match`(value: String, regexp: RegExp): Unit = js.native
-  def `match`(value: String, regexp: RegExp, message: String): Unit = js.native
+  def `match`(value: String, regexp: js.RegExp): Unit = js.native
+  def `match`(value: String, regexp: js.RegExp, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object.
     *
@@ -972,8 +1069,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def nestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def nestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def nestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def nestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a direct or inherited property named by property,
     * which can be a string using dot- and bracket-notation for nested reference.
@@ -985,6 +1083,7 @@ trait Assert extends js.Object {
     */
   def nestedProperty[T](`object`: T, property: String): Unit = js.native
   def nestedProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property with value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===).
@@ -995,8 +1094,9 @@ trait Assert extends js.Object {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def nestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def nestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def nestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def nestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that actual is not deeply equal (==) to expected.
     *
@@ -1007,6 +1107,7 @@ trait Assert extends js.Object {
     */
   def notDeepEqual[T](actual: T, expected: T): Unit = js.native
   def notDeepEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that haystack does not includes needle. Deep equality is used.
     *
@@ -1026,8 +1127,15 @@ trait Assert extends js.Object {
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
     */
-  def notDeepInclude[T](haystack: T, needle: Partial[T]): Unit = js.native
-  def notDeepInclude[T](haystack: T, needle: Partial[T], message: String): Unit = js.native
+  def notDeepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any
+  ): Unit = js.native
+  def notDeepInclude[T](
+    haystack: T,
+    needle: /* import warning: importer.ImportType#apply Failed type conversion: T extends std.WeakSet<any> ? never : std.Partial<T> */ js.Any,
+    message: String
+  ): Unit = js.native
   /**
     * Asserts that haystack does not includes needle. Deep equality is used.
     *
@@ -1038,10 +1146,11 @@ trait Assert extends js.Object {
     */
   def notDeepInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def notDeepInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def notDeepInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
-  def notDeepInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def notDeepInclude[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def notDeepInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def notDeepInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ does not include ‘needle’. Can be used to assert the absence of a subset of properties in an object while checking for deep equality.
     *
@@ -1055,8 +1164,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notDeepNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notDeepNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notDeepNestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def notDeepNestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object does not have a property named by property with value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a deep equality check.
@@ -1067,8 +1177,9 @@ trait Assert extends js.Object {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def notDeepNestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the absence of a subset of properties in an object while ignoring inherited properties and checking for deep equality.
     *
@@ -1076,8 +1187,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notDeepOwnInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notDeepOwnInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notDeepOwnInclude(haystack: Any, needle: Any): Unit = js.native
+  def notDeepOwnInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object does not have a property named by property, which can be a
     * string using dot- and bracket-notation for deep reference.
@@ -1089,6 +1201,7 @@ trait Assert extends js.Object {
     */
   def notDeepProperty[T](`object`: T, property: String): Unit = js.native
   def notDeepProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object does not have a property named by property, which can be a
     * string using dot- and bracket-notation for deep reference.
@@ -1102,8 +1215,9 @@ trait Assert extends js.Object {
     */
   def notDeepPropertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
   def notDeepPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  
   /**
-    * Asserts non-strict inequality (==) of actual and expected.
+    * Asserts non-strict inequality (!=) of actual and expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -1112,6 +1226,7 @@ trait Assert extends js.Object {
     */
   def notEqual[T](actual: T, expected: T): Unit = js.native
   def notEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that the target is either null or undefined.
     *
@@ -1121,6 +1236,7 @@ trait Assert extends js.Object {
     */
   def notExists[T](value: T): Unit = js.native
   def notExists[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is not extensible.
     *
@@ -1130,6 +1246,7 @@ trait Assert extends js.Object {
     */
   def notExtensible[T](`object`: T): Unit = js.native
   def notExtensible[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that object is not frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
@@ -1140,6 +1257,7 @@ trait Assert extends js.Object {
     */
   def notFrozen[T](`object`: T): Unit = js.native
   def notFrozen[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts that haystack does not includes needle.
     *
@@ -1169,8 +1287,8 @@ trait Assert extends js.Object {
     */
   def notInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def notInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
-  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
-  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[Any, T], needle: T): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[Any, T], needle: T, message: String): Unit = js.native
   def notInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
   def notInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
@@ -1183,6 +1301,7 @@ trait Assert extends js.Object {
     */
   def notInclude[T /* <: js.Object */](haystack: WeakSet[T], needle: T): Unit = js.native
   def notInclude[T /* <: js.Object */](haystack: WeakSet[T], needle: T, message: String): Unit = js.native
+  
   /**
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
     * Uses a deep equality check.
@@ -1194,6 +1313,7 @@ trait Assert extends js.Object {
     */
   def notIncludeDeepOrderedMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def notIncludeDeepOrderedMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
     * Uses a strict equality check (===).
@@ -1205,6 +1325,7 @@ trait Assert extends js.Object {
     */
   def notIncludeOrderedMembers[T](superset: js.Array[T], subset: js.Array[T]): Unit = js.native
   def notIncludeOrderedMembers[T](superset: js.Array[T], subset: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that value is not an instance of constructor.
     *
@@ -1215,6 +1336,7 @@ trait Assert extends js.Object {
     */
   def notInstanceOf[T](value: T, `type`: js.Function): Unit = js.native
   def notInstanceOf[T](value: T, `type`: js.Function, message: String): Unit = js.native
+  
   /**
     * Asserts that value does not match the regular expression regexp.
     *
@@ -1222,8 +1344,9 @@ trait Assert extends js.Object {
     * @param regexp   Potential match of value.
     * @param message   Message to display on error.
     */
-  def notMatch(expected: js.Any, regexp: RegExp): Unit = js.native
-  def notMatch(expected: js.Any, regexp: RegExp, message: String): Unit = js.native
+  def notMatch(expected: Any, regexp: js.RegExp): Unit = js.native
+  def notMatch(expected: Any, regexp: js.RegExp, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ does not include ‘needle’. Can be used to assert the absence of a subset of properties in an object.
     *
@@ -1237,8 +1360,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notNestedInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notNestedInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notNestedInclude(haystack: Any, needle: Any): Unit = js.native
+  def notNestedInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object does not have a property named by property,
     * which can be a string using dot- and bracket-notation for nested reference.
@@ -1251,6 +1375,7 @@ trait Assert extends js.Object {
     */
   def notNestedProperty[T](`object`: T, property: String): Unit = js.native
   def notNestedProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object does not have a property named by property with value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===).
@@ -1261,8 +1386,9 @@ trait Assert extends js.Object {
     * @param value    Value to test.
     * @param message    Message to display on error.
     */
-  def notNestedPropertyVal[T](`object`: T, property: String, value: js.Any): Unit = js.native
-  def notNestedPropertyVal[T](`object`: T, property: String, value: js.Any, message: String): Unit = js.native
+  def notNestedPropertyVal[T](`object`: T, property: String, value: Any): Unit = js.native
+  def notNestedPropertyVal[T](`object`: T, property: String, value: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object is falsy.
     *
@@ -1272,6 +1398,7 @@ trait Assert extends js.Object {
     */
   def notOk[T](value: T): Unit = js.native
   def notOk[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the absence of a subset of properties in an object while ignoring inherited properties.
     *
@@ -1279,8 +1406,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def notOwnInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def notOwnInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def notOwnInclude(haystack: Any, needle: Any): Unit = js.native
+  def notOwnInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property.
     *
@@ -1291,6 +1419,7 @@ trait Assert extends js.Object {
     */
   def notProperty[T](`object`: T, property: String): Unit = js.native
   def notProperty[T](`object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property with value given by value.
     *
@@ -1303,6 +1432,7 @@ trait Assert extends js.Object {
     */
   def notPropertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
   def notPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  
   /**
     * Asserts that set1 and set2 don’t have the same members in the same order.
     * Uses a deep equality check.
@@ -1314,6 +1444,7 @@ trait Assert extends js.Object {
     */
   def notSameDeepOrderedMembers[T](set1: js.Array[T], set2: js.Array[T]): Unit = js.native
   def notSameDeepOrderedMembers[T](set1: js.Array[T], set2: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that set1 and set2 don’t have the same members in the same order.
     * Uses a strict equality check (===).
@@ -1325,6 +1456,7 @@ trait Assert extends js.Object {
     */
   def notSameOrderedMembers[T](set1: js.Array[T], set2: js.Array[T]): Unit = js.native
   def notSameOrderedMembers[T](set1: js.Array[T], set2: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that object is not sealed.
     *
@@ -1334,8 +1466,9 @@ trait Assert extends js.Object {
     */
   def notSealed[T](`object`: T): Unit = js.native
   def notSealed[T](`object`: T, message: String): Unit = js.native
+  
   /**
-    * Asserts strict inequality (==) of actual and expected.
+    * Asserts strict inequality (!==) of actual and expected.
     *
     * @type T   Type of the objects.
     * @param actual   Actual value.
@@ -1344,6 +1477,7 @@ trait Assert extends js.Object {
     */
   def notStrictEqual[T](actual: T, expected: T): Unit = js.native
   def notStrictEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that value's type is not name, as determined by Object.prototype.toString.
     *
@@ -1354,6 +1488,7 @@ trait Assert extends js.Object {
     */
   def notTypeOf[T](value: T, name: String): Unit = js.native
   def notTypeOf[T](value: T, name: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object is truthy.
     *
@@ -1363,6 +1498,7 @@ trait Assert extends js.Object {
     */
   def ok[T](value: T): Unit = js.native
   def ok[T](value: T, message: String): Unit = js.native
+  
   /**
     * Asserts that non-object, non-array value inList appears in the flat array list.
     *
@@ -1373,6 +1509,7 @@ trait Assert extends js.Object {
     */
   def oneOf[T](inList: T, list: js.Array[T]): Unit = js.native
   def oneOf[T](inList: T, list: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Compares two values using operator.
     *
@@ -1383,6 +1520,7 @@ trait Assert extends js.Object {
     */
   def operator(val1: OperatorComparable, operator: Operator, val2: OperatorComparable): Unit = js.native
   def operator(val1: OperatorComparable, operator: Operator, val2: OperatorComparable, message: String): Unit = js.native
+  
   /**
     * Asserts that ‘haystack’ includes ‘needle’. Can be used to assert the inclusion of a subset of properties in an object while ignoring inherited properties.
     *
@@ -1390,8 +1528,9 @@ trait Assert extends js.Object {
     * @param needle
     * @param message   Message to display on error.
     */
-  def ownInclude(haystack: js.Any, needle: js.Any): Unit = js.native
-  def ownInclude(haystack: js.Any, needle: js.Any, message: String): Unit = js.native
+  def ownInclude(haystack: Any, needle: Any): Unit = js.native
+  def ownInclude(haystack: Any, needle: Any, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property.
     *
@@ -1402,6 +1541,7 @@ trait Assert extends js.Object {
     */
   def property[T](`object`: T, property: String): Unit = js.native
   def property[T](`object`: T, property: String, message: String): Unit = js.native
+  
   /**
     * Asserts that object has a property named by property with value given by value.
     *
@@ -1414,6 +1554,7 @@ trait Assert extends js.Object {
     */
   def propertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
   def propertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  
   /**
     * Asserts that set1 and set2 have the same members using deep equality checking.
     * Order is not take into account.
@@ -1425,6 +1566,7 @@ trait Assert extends js.Object {
     */
   def sameDeepMembers[T](set1: js.Array[T], set2: js.Array[T]): Unit = js.native
   def sameDeepMembers[T](set1: js.Array[T], set2: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that set1 and set2 have the same members in the same order.
     * Uses a deep equality check.
@@ -1436,6 +1578,7 @@ trait Assert extends js.Object {
     */
   def sameDeepOrderedMembers[T](set1: js.Array[T], set2: js.Array[T]): Unit = js.native
   def sameDeepOrderedMembers[T](set1: js.Array[T], set2: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that set1 and set2 have the same members. Order is not take into account.
     *
@@ -1446,6 +1589,7 @@ trait Assert extends js.Object {
     */
   def sameMembers[T](set1: js.Array[T], set2: js.Array[T]): Unit = js.native
   def sameMembers[T](set1: js.Array[T], set2: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that set1 and set2 have the same members in the same order.
     * Uses a strict equality check (===).
@@ -1457,6 +1601,7 @@ trait Assert extends js.Object {
     */
   def sameOrderedMembers[T](set1: js.Array[T], set2: js.Array[T]): Unit = js.native
   def sameOrderedMembers[T](set1: js.Array[T], set2: js.Array[T], message: String): Unit = js.native
+  
   /**
     * Asserts that object is sealed (can have new properties added to it
     * and its existing properties cannot be removed).
@@ -1467,6 +1612,7 @@ trait Assert extends js.Object {
     */
   def `sealed`[T](`object`: T): Unit = js.native
   def `sealed`[T](`object`: T, message: String): Unit = js.native
+  
   /**
     * Asserts strict equality (===) of actual and expected.
     *
@@ -1477,6 +1623,7 @@ trait Assert extends js.Object {
     */
   def strictEqual[T](actual: T, expected: T): Unit = js.native
   def strictEqual[T](actual: T, expected: T, message: String): Unit = js.native
+  
   /**
     * Asserts that fn will throw an error.
     *
@@ -1501,7 +1648,7 @@ trait Assert extends js.Object {
     * @param constructor   Potential expected error constructor.
     * @param message   Message to display on error.
     */
-  def `throw`(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: js.RegExp): Unit = js.native
   def `throw`(fn: js.Function0[Unit], message: String): Unit = js.native
   /**
     * Asserts that function will throw an error with message matching regexp.
@@ -1510,7 +1657,8 @@ trait Assert extends js.Object {
     * @param regExp   Potential expected message match.
     * @param message   Message to display on error.
     */
-  def `throw`(fn: js.Function0[Unit], regExp: RegExp): Unit = js.native
+  def `throw`(fn: js.Function0[Unit], regExp: js.RegExp): Unit = js.native
+  
   /**
     * Asserts that fn will throw an error.
     *
@@ -1526,9 +1674,7 @@ trait Assert extends js.Object {
     * @param constructor   Potential expected error constructor.
     * @param message   Message to display on error.
     */
-  def throws(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: RegExp): Unit = js.native
-  def throws(fn: js.Function0[Unit], errType: ErrorConstructor): Unit = js.native
-  def throws(fn: js.Function0[Unit], errType: ErrorConstructor, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], constructor: ErrorConstructor, regExp: js.RegExp): Unit = js.native
   /**
     * Asserts that function will throw an error with message matching regexp.
     *
@@ -1536,9 +1682,12 @@ trait Assert extends js.Object {
     * @param errType  Potential expected message match or error constructor.
     * @param message   Message to display on error.
     */
-  def throws(fn: js.Function0[Unit], errType: RegExp): Unit = js.native
-  def throws(fn: js.Function0[Unit], errType: RegExp, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errType: js.RegExp): Unit = js.native
+  def throws(fn: js.Function0[Unit], errType: js.RegExp, message: String): Unit = js.native
+  def throws(fn: js.Function0[Unit], errType: ErrorConstructor): Unit = js.native
+  def throws(fn: js.Function0[Unit], errType: ErrorConstructor, message: String): Unit = js.native
   def throws(fn: js.Function0[Unit], message: String): Unit = js.native
+  
   /**
     * Asserts that value's type is name, as determined by Object.prototype.toString.
     *
@@ -1550,4 +1699,3 @@ trait Assert extends js.Object {
   def typeOf[T](value: T, name: String): Unit = js.native
   def typeOf[T](value: T, name: String, message: String): Unit = js.native
 }
-

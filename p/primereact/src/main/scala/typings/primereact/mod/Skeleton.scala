@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.skeletonMod.SkeletonProps
+import typings.primereact.skeletonSkeletonMod.SkeletonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Skeleton")
 @js.native
 open class Skeleton protected ()
-  extends typings.primereact.skeletonMod.Skeleton {
+  extends typings.primereact.skeletonSkeletonMod.Skeleton {
   def this(props: SkeletonProps) = this()
   /**
     * @deprecated

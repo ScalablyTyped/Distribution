@@ -1,17 +1,17 @@
 package typings.surveyKnockout.mod
 
-import typings.surveyKnockout.anon.ActionsCell
 import typings.surveyKnockout.anon.Body
 import typings.surveyKnockout.anon.ButtonPrevDisabled
 import typings.surveyKnockout.anon.CellTextDisabled
 import typings.surveyKnockout.anon.CheckboxItemChecked
 import typings.surveyKnockout.anon.ChoiceCell
-import typings.surveyKnockout.anon.CleanButtonIconId
+import typings.surveyKnockout.anon.CleanItemButton
 import typings.surveyKnockout.anon.Complete
 import typings.surveyKnockout.anon.ContentLeft
+import typings.surveyKnockout.anon.ControlInputFieldComponent
 import typings.surveyKnockout.anon.ControlLabel
-import typings.surveyKnockout.anon.ControlValue
 import typings.surveyKnockout.anon.Description
+import typings.surveyKnockout.anon.DetailCell
 import typings.surveyKnockout.anon.Error
 import typings.surveyKnockout.anon.FileInput
 import typings.surveyKnockout.anon.FilterStringInput
@@ -19,7 +19,7 @@ import typings.surveyKnockout.anon.Footer
 import typings.surveyKnockout.anon.Icon
 import typings.surveyKnockout.anon.Image
 import typings.surveyKnockout.anon.ItemDisabled
-import typings.surveyKnockout.anon.ItemSelectAll
+import typings.surveyKnockout.anon.ItemNone
 import typings.surveyKnockout.anon.ItemSvgIconId
 import typings.surveyKnockout.anon.ItemTitle
 import typings.surveyKnockout.anon.OnError
@@ -60,8 +60,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.checkbox")
   @js.native
-  def checkbox: ItemSelectAll = js.native
-  inline def checkbox_=(x: ItemSelectAll): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
+  def checkbox: ItemNone = js.native
+  inline def checkbox_=(x: ItemNone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.comment")
   @js.native
@@ -85,8 +85,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.dropdown")
   @js.native
-  def dropdown: ControlValue = js.native
-  inline def dropdown_=(x: ControlValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
+  def dropdown: ControlInputFieldComponent = js.native
+  inline def dropdown_=(x: ControlInputFieldComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.error")
   @js.native
@@ -152,13 +152,13 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.matrixdropdown")
   @js.native
-  def matrixdropdown: ActionsCell = js.native
-  inline def matrixdropdown_=(x: ActionsCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdropdown")(x.asInstanceOf[js.Any])
+  def matrixdropdown: ChoiceCell = js.native
+  inline def matrixdropdown_=(x: ChoiceCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdropdown")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.matrixdynamic")
   @js.native
-  def matrixdynamic: ChoiceCell = js.native
-  inline def matrixdynamic_=(x: ChoiceCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdynamic")(x.asInstanceOf[js.Any])
+  def matrixdynamic: DetailCell = js.native
+  inline def matrixdynamic_=(x: DetailCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matrixdynamic")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.multipletext")
   @js.native
@@ -328,8 +328,8 @@ object modernCss {
   
   @JSImport("survey-knockout", "modernCss.tagbox")
   @js.native
-  def tagbox: CleanButtonIconId = js.native
-  inline def tagbox_=(x: CleanButtonIconId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
+  def tagbox: CleanItemButton = js.native
+  inline def tagbox_=(x: CleanItemButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagbox")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "modernCss.text")
   @js.native

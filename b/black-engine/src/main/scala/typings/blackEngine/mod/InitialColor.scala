@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "InitialColor")
 @js.native
 open class InitialColor protected ()
-  extends typings.blackEngine.initialColorMod.InitialColor {
-  def this(values: (Double | typings.blackEngine.colorScatterBaseMod.ColorScatterBase)*) = this()
+  extends typings.blackEngine.particlesModsInitialColorMod.InitialColor {
+  def this(values: (Double | typings.blackEngine.scattersColorScatterBaseMod.ColorScatterBase)*) = this()
 }

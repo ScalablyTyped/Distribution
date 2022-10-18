@@ -6,15 +6,15 @@ import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.millisecond
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.minute
 import typings.blueprintjsDatetime.blueprintjsDatetimeStrings.second
-import typings.blueprintjsDatetime.dateFormatMod.DateFormatProps
-import typings.blueprintjsDatetime.dateInputMod.DateInputProps
-import typings.blueprintjsDatetime.datePickerCoreMod.DatePickerBaseProps
-import typings.blueprintjsDatetime.datePickerMod.DatePickerProps
-import typings.blueprintjsDatetime.dateRangeInputMod.DateRangeInputProps
-import typings.blueprintjsDatetime.dateRangeMod.DateRange
-import typings.blueprintjsDatetime.dateRangePickerMod.DateRangePickerProps
-import typings.blueprintjsDatetime.dateTimePickerMod.IDateTimePickerProps
-import typings.blueprintjsDatetime.timePickerMod.TimePickerProps
+import typings.blueprintjsDatetime.libEsmCommonDateRangeMod.DateRange
+import typings.blueprintjsDatetime.libEsmDateFormatMod.DateFormatProps
+import typings.blueprintjsDatetime.libEsmDateInputMod.DateInputProps
+import typings.blueprintjsDatetime.libEsmDatePickerCoreMod.DatePickerBaseProps
+import typings.blueprintjsDatetime.libEsmDatePickerMod.DatePickerProps
+import typings.blueprintjsDatetime.libEsmDateRangeInputMod.DateRangeInputProps
+import typings.blueprintjsDatetime.libEsmDateRangePickerMod.DateRangePickerProps
+import typings.blueprintjsDatetime.libEsmDateTimePickerMod.IDateTimePickerProps
+import typings.blueprintjsDatetime.libEsmTimePickerMod.TimePickerProps
 import typings.reactDayPicker.mod.DayModifiers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -188,7 +188,7 @@ object mod {
   @JSImport("@blueprintjs/datetime", "DateInput")
   @js.native
   open class DateInput protected ()
-    extends typings.blueprintjsDatetime.dateInputMod.DateInput {
+    extends typings.blueprintjsDatetime.libEsmDateInputMod.DateInput {
     def this(props: DateInputProps) = this()
     def this(props: DateInputProps, context: Any) = this()
   }
@@ -213,7 +213,7 @@ object mod {
   @JSImport("@blueprintjs/datetime", "DatePicker")
   @js.native
   open class DatePicker protected ()
-    extends typings.blueprintjsDatetime.datePickerMod.DatePicker {
+    extends typings.blueprintjsDatetime.libEsmDatePickerMod.DatePicker {
     def this(props: DatePickerProps) = this()
     def this(props: DatePickerProps, context: Any) = this()
   }
@@ -272,7 +272,7 @@ object mod {
   @JSImport("@blueprintjs/datetime", "DateRangeInput")
   @js.native
   open class DateRangeInput protected ()
-    extends typings.blueprintjsDatetime.dateRangeInputMod.DateRangeInput {
+    extends typings.blueprintjsDatetime.libEsmDateRangeInputMod.DateRangeInput {
     def this(props: DateRangeInputProps) = this()
   }
   /* static members */
@@ -296,7 +296,7 @@ object mod {
   @JSImport("@blueprintjs/datetime", "DateRangePicker")
   @js.native
   open class DateRangePicker protected ()
-    extends typings.blueprintjsDatetime.dateRangePickerMod.DateRangePicker {
+    extends typings.blueprintjsDatetime.libEsmDateRangePickerMod.DateRangePicker {
     def this(props: DateRangePickerProps) = this()
     def this(props: DateRangePickerProps, context: Any) = this()
   }
@@ -321,7 +321,7 @@ object mod {
   @JSImport("@blueprintjs/datetime", "DateTimePicker")
   @js.native
   open class DateTimePicker ()
-    extends typings.blueprintjsDatetime.dateTimePickerMod.DateTimePicker {
+    extends typings.blueprintjsDatetime.libEsmDateTimePickerMod.DateTimePicker {
     def this(props: IDateTimePickerProps) = this()
     def this(props: Unit, context: Any) = this()
     def this(props: IDateTimePickerProps, context: Any) = this()
@@ -413,37 +413,37 @@ object mod {
   object Months extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.blueprintjsDatetime.monthsMod.Months & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months & Double] = js.native
     
-    /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL & Double = js.native
+    /* 3 */ val APRIL: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.APRIL & Double = js.native
     
-    /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST & Double = js.native
+    /* 7 */ val AUGUST: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.AUGUST & Double = js.native
     
-    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.monthsMod.Months.DECEMBER & Double = js.native
+    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.DECEMBER & Double = js.native
     
-    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.monthsMod.Months.FEBRUARY & Double = js.native
+    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.FEBRUARY & Double = js.native
     
-    /* 0 */ val JANUARY: typings.blueprintjsDatetime.monthsMod.Months.JANUARY & Double = js.native
+    /* 0 */ val JANUARY: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.JANUARY & Double = js.native
     
-    /* 6 */ val JULY: typings.blueprintjsDatetime.monthsMod.Months.JULY & Double = js.native
+    /* 6 */ val JULY: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.JULY & Double = js.native
     
-    /* 5 */ val JUNE: typings.blueprintjsDatetime.monthsMod.Months.JUNE & Double = js.native
+    /* 5 */ val JUNE: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.JUNE & Double = js.native
     
-    /* 2 */ val MARCH: typings.blueprintjsDatetime.monthsMod.Months.MARCH & Double = js.native
+    /* 2 */ val MARCH: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.MARCH & Double = js.native
     
-    /* 4 */ val MAY: typings.blueprintjsDatetime.monthsMod.Months.MAY & Double = js.native
+    /* 4 */ val MAY: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.MAY & Double = js.native
     
-    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.monthsMod.Months.NOVEMBER & Double = js.native
+    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.NOVEMBER & Double = js.native
     
-    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.monthsMod.Months.OCTOBER & Double = js.native
+    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.OCTOBER & Double = js.native
     
-    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.monthsMod.Months.SEPTEMBER & Double = js.native
+    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.libEsmCommonMonthsMod.Months.SEPTEMBER & Double = js.native
   }
   
   @JSImport("@blueprintjs/datetime", "TimePicker")
   @js.native
   open class TimePicker ()
-    extends typings.blueprintjsDatetime.timePickerMod.TimePicker {
+    extends typings.blueprintjsDatetime.libEsmTimePickerMod.TimePicker {
     def this(props: TimePickerProps) = this()
     def this(props: Unit, context: Any) = this()
     def this(props: TimePickerProps, context: Any) = this()
@@ -493,17 +493,17 @@ object mod {
   object TimeUnit extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.blueprintjsDatetime.timeUnitMod.TimeUnit & String] = js.native
+    def apply(value: String): js.UndefOr[typings.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit & String] = js.native
     
-    /* "hour12" */ val HOUR_12: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_12 & String = js.native
+    /* "hour12" */ val HOUR_12: typings.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.HOUR_12 & String = js.native
     
-    /* "hour24" */ val HOUR_24: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.HOUR_24 & String = js.native
+    /* "hour24" */ val HOUR_24: typings.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.HOUR_24 & String = js.native
     
-    /* "minute" */ val MINUTE: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MINUTE & String = js.native
+    /* "minute" */ val MINUTE: typings.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.MINUTE & String = js.native
     
-    /* "ms" */ val MS: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.MS & String = js.native
+    /* "ms" */ val MS: typings.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.MS & String = js.native
     
-    /* "second" */ val SECOND: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.SECOND & String = js.native
+    /* "second" */ val SECOND: typings.blueprintjsDatetime.libEsmCommonTimeUnitMod.TimeUnit.SECOND & String = js.native
   }
   
   type DatePickerDayModifiers = DayModifiers

@@ -25,7 +25,8 @@ object mod {
   /* was `typeof Helmet` */
   @JSImport("react-helmet", JSImport.Default)
   @js.native
-  open class default () extends StObject
+  open class default ()
+    extends Component[HelmetProps, js.Object, Any]
   /* was `typeof Helmet` */
   object default {
     
@@ -49,39 +50,13 @@ object mod {
     inline def rewind(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[HelmetData]
   }
   
-  /* was `typeof Helmet` */
-  @JSImport("react-helmet", "Helmet")
-  @js.native
-  open class Helmet ()
-    extends Component[HelmetProps, js.Object, Any]
-  /* was `typeof Helmet` */
-  object Helmet {
-    
-    @JSImport("react-helmet", "Helmet")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    @JSImport("react-helmet", "Helmet.canUseDOM")
-    @js.native
-    def canUseDOM: Boolean = js.native
-    inline def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    inline def peek(): HelmetPropsToState = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetPropsToState]
-    
-    /* static member */
-    inline def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
-    
-    /* static member */
-    inline def rewind(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[HelmetData]
-  }
-  
   @JSImport("react-helmet", "canUseDOM")
   @js.native
   val canUseDOM: Boolean = js.native
   
   type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) & OtherElementAttributes
+  
+  type Helmet = Component[HelmetProps, js.Object, Any]
   
   trait HelmetData extends StObject {
     
@@ -363,14 +338,13 @@ object mod {
     
     inline def apply(
       baseTag: js.Array[Any],
-      encode: Required[js.UndefOr[Boolean]],
       linkTags: js.Array[HTMLLinkElement],
       metaTags: js.Array[HTMLMetaElement],
       noscriptTags: js.Array[Any],
       scriptTags: js.Array[HTMLScriptElement],
       styleTags: js.Array[HTMLStyleElement]
     ): HelmetPropsToState = {
-      val __obj = js.Dynamic.literal(baseTag = baseTag.asInstanceOf[js.Any], encode = encode.asInstanceOf[js.Any], linkTags = linkTags.asInstanceOf[js.Any], metaTags = metaTags.asInstanceOf[js.Any], noscriptTags = noscriptTags.asInstanceOf[js.Any], scriptTags = scriptTags.asInstanceOf[js.Any], styleTags = styleTags.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(baseTag = baseTag.asInstanceOf[js.Any], linkTags = linkTags.asInstanceOf[js.Any], metaTags = metaTags.asInstanceOf[js.Any], noscriptTags = noscriptTags.asInstanceOf[js.Any], scriptTags = scriptTags.asInstanceOf[js.Any], styleTags = styleTags.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelmetPropsToState]
     }
     
@@ -389,6 +363,8 @@ object mod {
       inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
       inline def setEncode(value: Required[js.UndefOr[Boolean]]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
       inline def setHtmlAttributes(value: HtmlProps): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       

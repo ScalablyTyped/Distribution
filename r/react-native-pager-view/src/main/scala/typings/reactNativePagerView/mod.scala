@@ -1,7 +1,7 @@
 package typings.reactNativePagerView
 
-import typings.reactNativePagerView.pagerViewMod.PagerView
-import typings.reactNativePagerView.typesMod.PagerViewProps
+import typings.reactNativePagerView.libTypescriptPagerViewMod.PagerView
+import typings.reactNativePagerView.libTypescriptTypesMod.PagerViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

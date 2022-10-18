@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__alert
 
-Typings are for version 0.17.0
+Typings are for version 0.18.0
 
 ## Library description:
 Screen-reader-friendly alert messages.

@@ -20,7 +20,7 @@ Instantiable1[(/* pattern */ js.RegExp) | (/* pattern */ java.lang.String), js.R
   
   def apply(pattern: java.lang.String): js.RegExp = js.native
   def apply(pattern: java.lang.String, flags: java.lang.String): js.RegExp = js.native
-  /* standard es2015.core */
+  /* standard es5 */
   def apply(pattern: js.RegExp): js.RegExp = js.native
   def apply(pattern: js.RegExp, flags: java.lang.String): js.RegExp = js.native
   

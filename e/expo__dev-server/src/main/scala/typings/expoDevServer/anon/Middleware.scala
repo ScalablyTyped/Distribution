@@ -4,14 +4,17 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.connect.mod.Server
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Middleware extends StObject {
   
-  var middleware: Server
+  def middleware(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit
+  def middleware(req: IncomingMessage, res: ServerResponse[IncomingMessage], next: js.Function): Unit
+  @JSName("middleware")
+  var middleware_Original: Server
   
   var server: typings.node.httpMod.Server[
     Instantiable1[/* socket */ Socket, IncomingMessage], 

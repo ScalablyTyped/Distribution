@@ -9,7 +9,7 @@ object fpCompareDescIndexMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/compareDesc/index", JSImport.Default)
+    @JSImport("date-fns/fp/compareDesc/index", JSImport.Default)
     @js.native
     val ^ : CurriedFn2[js.Date | Double, js.Date | Double, Double] = js.native
     

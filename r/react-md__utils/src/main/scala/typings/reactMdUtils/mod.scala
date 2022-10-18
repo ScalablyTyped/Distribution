@@ -12,98 +12,98 @@ import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import typings.react.mod.RefAttributes
 import typings.react.mod.RefCallback
-import typings.reactMdUtils.activeDescendantContextMod.ActiveDescendantContext
-import typings.reactMdUtils.activeDescendantMovementProviderMod.ActiveDescendantMovementProviderProps
 import typings.reactMdUtils.anon.AppSizeinitializedboolean
 import typings.reactMdUtils.anon.Current
 import typings.reactMdUtils.anon.ReadonlyActiveDescendantC
 import typings.reactMdUtils.anon.ReadonlyKeyboardFocusCont
-import typings.reactMdUtils.appSizeListenerMod.AppSizeListenerProps
-import typings.reactMdUtils.bemMod.BEMResult
-import typings.reactMdUtils.bemMod.Block
-import typings.reactMdUtils.caseInsensitiveFilterMod.CaseInsensitiveOptions
-import typings.reactMdUtils.containsElementMod.CheckableThing
-import typings.reactMdUtils.dirMod.DirProps
-import typings.reactMdUtils.dirMod.WritingDirection
-import typings.reactMdUtils.dirMod.WritingDirectionContext
-import typings.reactMdUtils.focusContainerMod.FocusContainerProps
-import typings.reactMdUtils.focusElementWithinMod.Focus
-import typings.reactMdUtils.getInstanceMod.RefOrInstance
-import typings.reactMdUtils.getPercentageMod.GetPercentageOptions
-import typings.reactMdUtils.gridCellMod.GridCellProps
-import typings.reactMdUtils.gridListCellMod.GridListCellProps
-import typings.reactMdUtils.gridListMod.GridListProps
-import typings.reactMdUtils.gridMod.GridProps
-import typings.reactMdUtils.hexToRGBMod.BlueBit
-import typings.reactMdUtils.hexToRGBMod.GreenBit
-import typings.reactMdUtils.hexToRGBMod.HexString
-import typings.reactMdUtils.hexToRGBMod.RedBit
-import typings.reactMdUtils.hoverModeProviderMod.HoverModeProviderProps
-import typings.reactMdUtils.isContrastCompliantMod.ContrastRatioCompliance
-import typings.reactMdUtils.isFocusableMod.ElementFocusType
-import typings.reactMdUtils.keyboardMovementProviderMod.KeyboardMovementProviderProps
-import typings.reactMdUtils.loopMod.LoopOptions
-import typings.reactMdUtils.mediaOnlyMod.MediaOnlyProps
-import typings.reactMdUtils.modeTypesMod.UserInteractionMode
-import typings.reactMdUtils.movementTypesMod.MovementConfig
-import typings.reactMdUtils.positioningTypesMod.Coords
-import typings.reactMdUtils.positioningTypesMod.FixedPosition
-import typings.reactMdUtils.positioningTypesMod.FixedPositionOptions
-import typings.reactMdUtils.positioningTypesMod.PositionAnchor
-import typings.reactMdUtils.radioGroupMod.RadioGroupProps
-import typings.reactMdUtils.radioTypesMod.RadioItem
-import typings.reactMdUtils.radioTypesMod.RadioItemStyleObject
-import typings.reactMdUtils.radioWidgetMod.RadioWidgetProps
 import typings.reactMdUtils.reactMdUtilsStrings.height
 import typings.reactMdUtils.reactMdUtilsStrings.max
 import typings.reactMdUtils.reactMdUtilsStrings.min
 import typings.reactMdUtils.reactMdUtilsStrings.width
-import typings.reactMdUtils.resizeListenerMod.ResizeListenerProps
-import typings.reactMdUtils.scrollListenerMod.ScrollListenerProps
-import typings.reactMdUtils.searchUtilsMod.GetItemValue_
-import typings.reactMdUtils.searchUtilsMod.SearchOptions
-import typings.reactMdUtils.sizingConstantsMod.QuerySize
-import typings.reactMdUtils.throttleMod.ThrottleableFunction
-import typings.reactMdUtils.throttleMod.ThrottledFunction
-import typings.reactMdUtils.tryToSubmitRelatedFormMod.KeyboardSubmitEventPartial
-import typings.reactMdUtils.typesMod.KeyboardFocusContext
+import typings.reactMdUtils.typesBemMod.BEMResult
+import typings.reactMdUtils.typesBemMod.Block
+import typings.reactMdUtils.typesColorsHexToRGBMod.BlueBit
+import typings.reactMdUtils.typesColorsHexToRGBMod.GreenBit
+import typings.reactMdUtils.typesColorsHexToRGBMod.HexString
+import typings.reactMdUtils.typesColorsHexToRGBMod.RedBit
+import typings.reactMdUtils.typesColorsIsContrastCompliantMod.ContrastRatioCompliance
+import typings.reactMdUtils.typesContainsElementMod.CheckableThing
+import typings.reactMdUtils.typesDirMod.DirProps
+import typings.reactMdUtils.typesDirMod.WritingDirection
+import typings.reactMdUtils.typesDirMod.WritingDirectionContext
+import typings.reactMdUtils.typesEventsScrollListenerMod.ScrollListenerProps
+import typings.reactMdUtils.typesEventsUseScrollListenerMod.ScrollListenerHookOptions
+import typings.reactMdUtils.typesEventsUtilsMod.DelegatedEventHandler
+import typings.reactMdUtils.typesEventsUtilsMod.DelegatedEventTarget
+import typings.reactMdUtils.typesGetPercentageMod.GetPercentageOptions
+import typings.reactMdUtils.typesHoverHoverModeProviderMod.HoverModeProviderProps
+import typings.reactMdUtils.typesHoverUseHoverModeContextMod.HoverModeContext
+import typings.reactMdUtils.typesHoverUseHoverModeMod.HoverModeHookReturnValue
+import typings.reactMdUtils.typesHoverUseHoverModeMod.HoverModeOptions
+import typings.reactMdUtils.typesKeyboardMovementActiveDescendantContextMod.ActiveDescendantContext
+import typings.reactMdUtils.typesKeyboardMovementActiveDescendantMovementProviderMod.ActiveDescendantMovementProviderProps
+import typings.reactMdUtils.typesKeyboardMovementKeyboardMovementProviderMod.KeyboardMovementProviderProps
+import typings.reactMdUtils.typesKeyboardMovementTypesMod.KeyboardFocusContext
+import typings.reactMdUtils.typesKeyboardMovementUseActiveDescendantFocusMod.ActiveDescendantFocusHookOptions
+import typings.reactMdUtils.typesKeyboardMovementUseActiveDescendantFocusMod.ActiveDescendantFocusHookReturnValue
+import typings.reactMdUtils.typesKeyboardMovementUseActiveDescendantMod.ActiveDescendantHookOptions
+import typings.reactMdUtils.typesKeyboardMovementUseActiveDescendantMod.ActiveDescendantHookReturnValue
+import typings.reactMdUtils.typesKeyboardMovementUseKeyboardFocusMod.KeyboardFocusHookOptions
+import typings.reactMdUtils.typesKeyboardMovementUseKeyboardFocusMod.KeyboardFocusHookReturnValue
+import typings.reactMdUtils.typesLayoutGridCellMod.GridCellProps
+import typings.reactMdUtils.typesLayoutGridListCellMod.GridListCellProps
+import typings.reactMdUtils.typesLayoutGridListMod.GridListProps
+import typings.reactMdUtils.typesLayoutGridMod.GridProps
+import typings.reactMdUtils.typesLayoutUseGridListMod.GridListSize
+import typings.reactMdUtils.typesLayoutUseGridListMod.UseGridListOptions
+import typings.reactMdUtils.typesLayoutUseGridListMod.UseGridListReturnValue
+import typings.reactMdUtils.typesLoopMod.LoopOptions
+import typings.reactMdUtils.typesModeTypesMod.UserInteractionMode
+import typings.reactMdUtils.typesModeUserInteractionModeListenerMod.UserInteractionModeListenerProps
+import typings.reactMdUtils.typesPositioningTypesMod.Coords
+import typings.reactMdUtils.typesPositioningTypesMod.FixedPosition
+import typings.reactMdUtils.typesPositioningTypesMod.FixedPositionOptions
+import typings.reactMdUtils.typesPositioningTypesMod.PositionAnchor
+import typings.reactMdUtils.typesSearchCaseInsensitiveFilterMod.CaseInsensitiveOptions
+import typings.reactMdUtils.typesSearchUseKeyboardSearchMod.KeyboardSearchOptions
+import typings.reactMdUtils.typesSearchUtilsMod.GetItemValue_
+import typings.reactMdUtils.typesSearchUtilsMod.SearchOptions
+import typings.reactMdUtils.typesSizingAppSizeListenerMod.AppSizeListenerProps
+import typings.reactMdUtils.typesSizingConstantsMod.QuerySize
+import typings.reactMdUtils.typesSizingMediaOnlyMod.MediaOnlyProps
+import typings.reactMdUtils.typesSizingResizeListenerMod.ResizeListenerProps
+import typings.reactMdUtils.typesSizingUseAppSizeMediaMod.AppSize
+import typings.reactMdUtils.typesSizingUseAppSizeMediaMod.AppSizeOptions
+import typings.reactMdUtils.typesSizingUseResizeListenerMod.ResizeListenerOptions
+import typings.reactMdUtils.typesSizingUseResizeObserverMod.OnResizeObserverChange
+import typings.reactMdUtils.typesSizingUseResizeObserverMod.UseResizeObserverOptions
+import typings.reactMdUtils.typesSizingUseWidthMediaQueryMod.WidthMediaQuery
+import typings.reactMdUtils.typesSizingUseWidthMediaQueryMod.WidthMediaQuerys
+import typings.reactMdUtils.typesThrottleMod.ThrottleableFunction
+import typings.reactMdUtils.typesThrottleMod.ThrottledFunction
 import typings.reactMdUtils.typesTypesMod.PropsWithRef
-import typings.reactMdUtils.unitToNumberMod.UnitToNumberOptions
-import typings.reactMdUtils.useActiveDescendantFocusMod.ActiveDescendantFocusHookOptions
-import typings.reactMdUtils.useActiveDescendantFocusMod.ActiveDescendantFocusHookReturnValue
-import typings.reactMdUtils.useActiveDescendantMod.ActiveDescendantHookOptions
-import typings.reactMdUtils.useActiveDescendantMod.ActiveDescendantHookReturnValue
-import typings.reactMdUtils.useActiveDescendantMovementMod.ActiveDescendantMovementProviders
-import typings.reactMdUtils.useActiveDescendantMovementMod.ActiveDescendantOptions
-import typings.reactMdUtils.useAppSizeMediaMod.AppSize
-import typings.reactMdUtils.useAppSizeMediaMod.AppSizeOptions
-import typings.reactMdUtils.useCloseOnOutsideClickMod.CloseOnOutsideClickOptions
-import typings.reactMdUtils.useDropzoneMod.DropzoneHandlers
-import typings.reactMdUtils.useDropzoneMod.DropzoneHookReturnValue
-import typings.reactMdUtils.useEnsuredRefMod.EnsuredRefs
-import typings.reactMdUtils.useFocusMovementMod.KeyboardFocusOptions
-import typings.reactMdUtils.useGridListMod.GridListSize
-import typings.reactMdUtils.useGridListMod.UseGridListOptions
-import typings.reactMdUtils.useGridListMod.UseGridListReturnValue
-import typings.reactMdUtils.useHoverModeContextMod.HoverModeContext
-import typings.reactMdUtils.useHoverModeMod.HoverModeHookReturnValue
-import typings.reactMdUtils.useHoverModeMod.HoverModeOptions
-import typings.reactMdUtils.useIntervalMod.ReturnValue
-import typings.reactMdUtils.useKeyboardFocusMod.KeyboardFocusHookOptions
-import typings.reactMdUtils.useKeyboardFocusMod.KeyboardFocusHookReturnValue
-import typings.reactMdUtils.useKeyboardMovementMod.KeyboardMovementOptions
-import typings.reactMdUtils.useKeyboardMovementMod.KeyboardMovementProviders
-import typings.reactMdUtils.useKeyboardSearchMod.KeyboardSearchOptions
-import typings.reactMdUtils.usePreviousFocusMod.FocusFallback
-import typings.reactMdUtils.useResizeListenerMod.ResizeListenerOptions
-import typings.reactMdUtils.useResizeObserverMod.OnResizeObserverChange
-import typings.reactMdUtils.useResizeObserverMod.UseResizeObserverOptions
-import typings.reactMdUtils.useScrollListenerMod.ScrollListenerHookOptions
-import typings.reactMdUtils.useWidthMediaQueryMod.WidthMediaQuery
-import typings.reactMdUtils.useWidthMediaQueryMod.WidthMediaQuerys
-import typings.reactMdUtils.userInteractionModeListenerMod.UserInteractionModeListenerProps
-import typings.reactMdUtils.utilsMod.DelegatedEventHandler
-import typings.reactMdUtils.utilsMod.DelegatedEventTarget
+import typings.reactMdUtils.typesUnitToNumberMod.UnitToNumberOptions
+import typings.reactMdUtils.typesUseCloseOnOutsideClickMod.CloseOnOutsideClickOptions
+import typings.reactMdUtils.typesUseDropzoneMod.DropzoneHandlers
+import typings.reactMdUtils.typesUseDropzoneMod.DropzoneHookReturnValue
+import typings.reactMdUtils.typesUseEnsuredRefMod.EnsuredRefs
+import typings.reactMdUtils.typesUseIntervalMod.ReturnValue
+import typings.reactMdUtils.typesWiaAriaFocusContainerMod.FocusContainerProps
+import typings.reactMdUtils.typesWiaAriaFocusElementWithinMod.Focus
+import typings.reactMdUtils.typesWiaAriaGetInstanceMod.RefOrInstance
+import typings.reactMdUtils.typesWiaAriaIsFocusableMod.ElementFocusType
+import typings.reactMdUtils.typesWiaAriaMovementTypesMod.MovementConfig
+import typings.reactMdUtils.typesWiaAriaMovementUseActiveDescendantMovementMod.ActiveDescendantMovementProviders
+import typings.reactMdUtils.typesWiaAriaMovementUseActiveDescendantMovementMod.ActiveDescendantOptions
+import typings.reactMdUtils.typesWiaAriaMovementUseFocusMovementMod.KeyboardFocusOptions
+import typings.reactMdUtils.typesWiaAriaMovementUseKeyboardMovementMod.KeyboardMovementOptions
+import typings.reactMdUtils.typesWiaAriaMovementUseKeyboardMovementMod.KeyboardMovementProviders
+import typings.reactMdUtils.typesWiaAriaRadioRadioGroupMod.RadioGroupProps
+import typings.reactMdUtils.typesWiaAriaRadioRadioWidgetMod.RadioWidgetProps
+import typings.reactMdUtils.typesWiaAriaRadioTypesMod.RadioItem
+import typings.reactMdUtils.typesWiaAriaRadioTypesMod.RadioItemStyleObject
+import typings.reactMdUtils.typesWiaAriaTryToSubmitRelatedFormMod.KeyboardSubmitEventPartial
+import typings.reactMdUtils.typesWiaAriaUsePreviousFocusMod.FocusFallback
 import typings.std.AddEventListenerOptions
 import typings.std.DOMRect
 import typings.std.Document
@@ -438,43 +438,43 @@ object mod {
   object IncrementMovementKey extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.IncrementMovementKey & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey & String] = js.native
     
-    /* "Alt+ArrowDown" */ val AltArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowDown & String = js.native
+    /* "Alt+ArrowDown" */ val AltArrowDown: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.AltArrowDown & String = js.native
     
-    /* "Alt+ArrowLeft" */ val AltArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowLeft & String = js.native
+    /* "Alt+ArrowLeft" */ val AltArrowLeft: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.AltArrowLeft & String = js.native
     
-    /* "Alt+ArrowRight" */ val AltArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowRight & String = js.native
+    /* "Alt+ArrowRight" */ val AltArrowRight: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.AltArrowRight & String = js.native
     
-    /* "Alt+ArrowUp" */ val AltArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowUp & String = js.native
+    /* "Alt+ArrowUp" */ val AltArrowUp: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.AltArrowUp & String = js.native
     
-    /* "Alt+PageDown" */ val AltPageDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltPageDown & String = js.native
+    /* "Alt+PageDown" */ val AltPageDown: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.AltPageDown & String = js.native
     
-    /* "Alt+PageUp" */ val AltPageUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltPageUp & String = js.native
+    /* "Alt+PageUp" */ val AltPageUp: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.AltPageUp & String = js.native
     
-    /* "ArrowDown" */ val ArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowDown & String = js.native
+    /* "ArrowDown" */ val ArrowDown: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ArrowDown & String = js.native
     
-    /* "ArrowLeft" */ val ArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowLeft & String = js.native
+    /* "ArrowLeft" */ val ArrowLeft: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ArrowLeft & String = js.native
     
-    /* "ArrowRight" */ val ArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowRight & String = js.native
+    /* "ArrowRight" */ val ArrowRight: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ArrowRight & String = js.native
     
-    /* "ArrowUp" */ val ArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowUp & String = js.native
+    /* "ArrowUp" */ val ArrowUp: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ArrowUp & String = js.native
     
-    /* "Control+ArrowDown" */ val ControlArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ControlArrowDown & String = js.native
+    /* "Control+ArrowDown" */ val ControlArrowDown: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ControlArrowDown & String = js.native
     
-    /* "Control+ArrowUp" */ val ControlArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ControlArrowUp & String = js.native
+    /* "Control+ArrowUp" */ val ControlArrowUp: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ControlArrowUp & String = js.native
     
-    /* "PageDown" */ val PageDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.PageDown & String = js.native
+    /* "PageDown" */ val PageDown: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.PageDown & String = js.native
     
-    /* "PageUp" */ val PageUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.PageUp & String = js.native
+    /* "PageUp" */ val PageUp: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.PageUp & String = js.native
     
-    /* "Shift+ArrowDown" */ val ShiftArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowDown & String = js.native
+    /* "Shift+ArrowDown" */ val ShiftArrowDown: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ShiftArrowDown & String = js.native
     
-    /* "Shift+ArrowLeft" */ val ShiftArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowLeft & String = js.native
+    /* "Shift+ArrowLeft" */ val ShiftArrowLeft: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ShiftArrowLeft & String = js.native
     
-    /* "Shift+ArrowRight" */ val ShiftArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowRight & String = js.native
+    /* "Shift+ArrowRight" */ val ShiftArrowRight: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ShiftArrowRight & String = js.native
     
-    /* "Shift+ArrowUp" */ val ShiftArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowUp & String = js.native
+    /* "Shift+ArrowUp" */ val ShiftArrowUp: typings.reactMdUtils.typesWiaAriaMovementTypesMod.IncrementMovementKey.ShiftArrowUp & String = js.native
   }
   
   @JSImport("@react-md/utils", "JumpMovementKey")
@@ -482,23 +482,23 @@ object mod {
   object JumpMovementKey extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.JumpMovementKey & String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey & String] = js.native
     
-    /* "Alt+End" */ val AltEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.AltEnd & String = js.native
+    /* "Alt+End" */ val AltEnd: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.AltEnd & String = js.native
     
-    /* "Alt+Home" */ val AltHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.AltHome & String = js.native
+    /* "Alt+Home" */ val AltHome: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.AltHome & String = js.native
     
-    /* "Control+End" */ val ControlEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlEnd & String = js.native
+    /* "Control+End" */ val ControlEnd: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.ControlEnd & String = js.native
     
-    /* "Control+Home" */ val ControlHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlHome & String = js.native
+    /* "Control+Home" */ val ControlHome: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.ControlHome & String = js.native
     
-    /* "Control+Shift+End" */ val ControlShiftEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlShiftEnd & String = js.native
+    /* "Control+Shift+End" */ val ControlShiftEnd: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.ControlShiftEnd & String = js.native
     
-    /* "Control+Shift+Home" */ val ControlShiftHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlShiftHome & String = js.native
+    /* "Control+Shift+Home" */ val ControlShiftHome: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.ControlShiftHome & String = js.native
     
-    /* "End" */ val End: typings.reactMdUtils.movementTypesMod.JumpMovementKey.End & String = js.native
+    /* "End" */ val End: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.End & String = js.native
     
-    /* "Home" */ val Home: typings.reactMdUtils.movementTypesMod.JumpMovementKey.Home & String = js.native
+    /* "Home" */ val Home: typings.reactMdUtils.typesWiaAriaMovementTypesMod.JumpMovementKey.Home & String = js.native
   }
   
   @JSImport("@react-md/utils", "KeyboardMovementContextProvider")
@@ -919,7 +919,7 @@ object mod {
   
   inline def useKeyboardSearch[D, E /* <: HTMLElement */](
     hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex: KeyboardSearchOptions[D, E]
-  ): typings.reactMdUtils.useKeyboardSearchMod.ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.useKeyboardSearchMod.ReturnValue[E]]
+  ): typings.reactMdUtils.typesSearchUseKeyboardSearchMod.ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.typesSearchUseKeyboardSearchMod.ReturnValue[E]]
   
   inline def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def useMediaQuery(query: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -954,15 +954,15 @@ object mod {
   inline def useScrollLock(enabled: Boolean, selectorOrElement: js.Function0[HTMLElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any], selectorOrElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useScrollLock(enabled: Boolean, selectorOrElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any], selectorOrElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def useTempValue[T](defaultValue: T): typings.reactMdUtils.useTempValueMod.ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.useTempValueMod.ReturnValue[T]]
-  inline def useTempValue[T](defaultValue: T, resetTime: Double): typings.reactMdUtils.useTempValueMod.ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any], resetTime.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.useTempValueMod.ReturnValue[T]]
+  inline def useTempValue[T](defaultValue: T): typings.reactMdUtils.typesUseTempValueMod.ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.typesUseTempValueMod.ReturnValue[T]]
+  inline def useTempValue[T](defaultValue: T, resetTime: Double): typings.reactMdUtils.typesUseTempValueMod.ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any], resetTime.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.typesUseTempValueMod.ReturnValue[T]]
   
-  inline def useTimeout(cb: js.Function0[Unit], delay: Double): typings.reactMdUtils.useTimeoutMod.ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useTimeout")(cb.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.useTimeoutMod.ReturnValue]
-  inline def useTimeout(cb: js.Function0[Unit], delay: Double, defaultStarted: js.Function0[Boolean]): typings.reactMdUtils.useTimeoutMod.ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useTimeout")(cb.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], defaultStarted.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.useTimeoutMod.ReturnValue]
-  inline def useTimeout(cb: js.Function0[Unit], delay: Double, defaultStarted: Boolean): typings.reactMdUtils.useTimeoutMod.ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useTimeout")(cb.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], defaultStarted.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.useTimeoutMod.ReturnValue]
+  inline def useTimeout(cb: js.Function0[Unit], delay: Double): typings.reactMdUtils.typesUseTimeoutMod.ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useTimeout")(cb.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.typesUseTimeoutMod.ReturnValue]
+  inline def useTimeout(cb: js.Function0[Unit], delay: Double, defaultStarted: js.Function0[Boolean]): typings.reactMdUtils.typesUseTimeoutMod.ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useTimeout")(cb.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], defaultStarted.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.typesUseTimeoutMod.ReturnValue]
+  inline def useTimeout(cb: js.Function0[Unit], delay: Double, defaultStarted: Boolean): typings.reactMdUtils.typesUseTimeoutMod.ReturnValue = (^.asInstanceOf[js.Dynamic].applyDynamic("useTimeout")(cb.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], defaultStarted.asInstanceOf[js.Any])).asInstanceOf[typings.reactMdUtils.typesUseTimeoutMod.ReturnValue]
   
-  inline def useToggle(defaultToggled: js.Function0[Boolean]): typings.reactMdUtils.useToggleMod.ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.useToggleMod.ReturnValue]
-  inline def useToggle(defaultToggled: Boolean): typings.reactMdUtils.useToggleMod.ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.useToggleMod.ReturnValue]
+  inline def useToggle(defaultToggled: js.Function0[Boolean]): typings.reactMdUtils.typesUseToggleMod.ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.typesUseToggleMod.ReturnValue]
+  inline def useToggle(defaultToggled: Boolean): typings.reactMdUtils.typesUseToggleMod.ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[typings.reactMdUtils.typesUseToggleMod.ReturnValue]
   
   inline def useUserInteractionMode(): UserInteractionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useUserInteractionMode")().asInstanceOf[UserInteractionMode]
   

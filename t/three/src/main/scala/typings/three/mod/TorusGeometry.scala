@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [arc=Math.PI * 2]
   */
 open class TorusGeometry ()
-  extends typings.three.threeMod.TorusGeometry {
+  extends typings.three.srcThreeMod.TorusGeometry {
   def this(radius: Double) = this()
   def this(radius: Double, tube: Double) = this()
   def this(radius: Unit, tube: Double) = this()
@@ -54,5 +54,5 @@ object TorusGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.torusGeometryMod.TorusGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.torusGeometryMod.TorusGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesTorusGeometryMod.TorusGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesTorusGeometryMod.TorusGeometry]
 }

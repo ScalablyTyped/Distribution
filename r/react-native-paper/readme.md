@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-paper
 
-Typings are for version 4.12.4
+Typings are for version 4.12.5
 
 ## Library description:
 Material design for React Native

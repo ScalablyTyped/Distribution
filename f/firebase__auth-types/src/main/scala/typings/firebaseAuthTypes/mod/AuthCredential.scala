@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth-types", "AuthCredential")
+/* note: abstract class */ @JSImport("@firebase/auth-types", "AuthCredential")
 @js.native
-abstract class AuthCredential () extends StObject {
+open class AuthCredential () extends StObject {
   
   var providerId: String = js.native
   

@@ -1,9 +1,9 @@
 package typings.reactNativeSvg.anon
 
-import typings.reactNativeSvg.typesMod.ColumnMajorTransformMatrix
-import typings.reactNativeSvg.typesMod.NumberArray
-import typings.reactNativeSvg.typesMod.NumberProp
-import typings.reactNativeSvg.typesMod.TransformObject
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformObject
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

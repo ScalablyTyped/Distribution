@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.webGLRenderTargetMod.WebGLRenderTargetOptions
+import typings.three.srcRenderersWebGLRenderTargetMod.WebGLRenderTargetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "WebGLMultipleRenderTargets")
 @js.native
 open class WebGLMultipleRenderTargets protected ()
-  extends typings.three.threeMod.WebGLMultipleRenderTargets {
+  extends typings.three.srcThreeMod.WebGLMultipleRenderTargets {
   /**
     * @param width The width of the render target.
     * @param height The height of the render target.

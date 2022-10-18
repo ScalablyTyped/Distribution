@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new polyhedron.
   */
 open class Polyhedron ()
-  extends typings.yuka.yukaMod.Polyhedron
+  extends typings.yuka.srcYukaMod.Polyhedron

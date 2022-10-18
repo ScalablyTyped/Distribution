@@ -1,13 +1,13 @@
 package typings.awsCrt.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsCrt.httpMod.HttpHeader
-import typings.awsCrt.httpMod.HttpProxyAuthenticationType
-import typings.awsCrt.nativeHttpMod.HttpProxyConnectionType
-import typings.awsCrt.nativeIoMod.ClientBootstrap
-import typings.awsCrt.nativeIoMod.InputStream
-import typings.awsCrt.nativeIoMod.SocketOptions
-import typings.awsCrt.nativeIoMod.TlsConnectionOptions
+import typings.awsCrt.distCommonHttpMod.HttpHeader
+import typings.awsCrt.distCommonHttpMod.HttpProxyAuthenticationType
+import typings.awsCrt.distNativeHttpMod.HttpProxyConnectionType
+import typings.awsCrt.distNativeIoMod.ClientBootstrap
+import typings.awsCrt.distNativeIoMod.InputStream
+import typings.awsCrt.distNativeIoMod.SocketOptions
+import typings.awsCrt.distNativeIoMod.TlsConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object http {
   @JSImport("aws-crt", "http.HttpClientConnection")
   @js.native
   open class HttpClientConnection protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpClientConnection {
+    extends typings.awsCrt.distNativeHttpMod.HttpClientConnection {
     def this(bootstrap: Unit, host_name: String, port: Double, socket_options: SocketOptions) = this()
     /** Asynchronously establish a new HttpClientConnection.
       * @param bootstrap Client bootstrap to use when initiating socket connection.  Leave undefined to use the
@@ -49,7 +49,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: Unit,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: Unit,
@@ -57,7 +57,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: TlsConnectionOptions,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: ClientBootstrap,
@@ -65,7 +65,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: Unit,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: ClientBootstrap,
@@ -73,7 +73,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: TlsConnectionOptions,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: Unit,
@@ -90,7 +90,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: Unit,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions,
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions,
       handle: Any
     ) = this()
     def this(
@@ -108,7 +108,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: TlsConnectionOptions,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions,
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions,
       handle: Any
     ) = this()
     def this(
@@ -126,7 +126,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: Unit,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions,
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions,
       handle: Any
     ) = this()
     def this(
@@ -144,7 +144,7 @@ object http {
       port: Double,
       socket_options: SocketOptions,
       tls_opts: TlsConnectionOptions,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions,
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions,
       handle: Any
     ) = this()
   }
@@ -152,7 +152,7 @@ object http {
   @JSImport("aws-crt", "http.HttpClientConnectionManager")
   @js.native
   open class HttpClientConnectionManager protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpClientConnectionManager {
+    extends typings.awsCrt.distNativeHttpMod.HttpClientConnectionManager {
     def this(
       bootstrap: Unit,
       host: String,
@@ -206,7 +206,7 @@ object http {
       initial_window_size: Double,
       socket_options: SocketOptions,
       tls_opts: Unit,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: Unit,
@@ -216,7 +216,7 @@ object http {
       initial_window_size: Double,
       socket_options: SocketOptions,
       tls_opts: TlsConnectionOptions,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: ClientBootstrap,
@@ -226,7 +226,7 @@ object http {
       initial_window_size: Double,
       socket_options: SocketOptions,
       tls_opts: Unit,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
     def this(
       bootstrap: ClientBootstrap,
@@ -236,18 +236,18 @@ object http {
       initial_window_size: Double,
       socket_options: SocketOptions,
       tls_opts: TlsConnectionOptions,
-      proxy_options: typings.awsCrt.nativeHttpMod.HttpProxyOptions
+      proxy_options: typings.awsCrt.distNativeHttpMod.HttpProxyOptions
     ) = this()
   }
   
   @JSImport("aws-crt", "http.HttpClientStream")
   @js.native
   open class HttpClientStream protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpClientStream {
+    extends typings.awsCrt.distNativeHttpMod.HttpClientStream {
     def this(
       native_handle: Any,
-      connection: typings.awsCrt.nativeHttpMod.HttpClientConnection,
-      request: typings.awsCrt.nativeHttpMod.HttpRequest
+      connection: typings.awsCrt.distNativeHttpMod.HttpClientConnection,
+      request: typings.awsCrt.distNativeHttpMod.HttpRequest
     ) = this()
   }
   /* static members */
@@ -311,7 +311,7 @@ object http {
   @JSImport("aws-crt", "http.HttpConnection")
   @js.native
   open class HttpConnection protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpConnection {
+    extends typings.awsCrt.distNativeHttpMod.HttpConnection {
     /* protected */ def this(native_handle: Any) = this()
   }
   /* static members */
@@ -356,7 +356,7 @@ object http {
   @js.native
   val HttpHeaders: Instantiable1[
     /* headers */ js.UndefOr[js.Array[HttpHeader]], 
-    typings.awsCrt.bindingMod.HttpHeaders
+    typings.awsCrt.distNativeBindingMod.HttpHeaders
   ] = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -364,7 +364,7 @@ object http {
   @js.native
   /** Construct from a collection of [name, value] pairs */
   open class HttpHeadersCls ()
-    extends typings.awsCrt.bindingMod.HttpHeaders {
+    extends typings.awsCrt.distNativeBindingMod.HttpHeaders {
     def this(headers: js.Array[HttpHeader]) = this()
   }
   
@@ -373,11 +373,11 @@ object http {
   object HttpProxyAuthenticationType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.httpMod.HttpProxyAuthenticationType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distCommonHttpMod.HttpProxyAuthenticationType & Double] = js.native
     
-    /* 1 */ val Basic: typings.awsCrt.httpMod.HttpProxyAuthenticationType.Basic & Double = js.native
+    /* 1 */ val Basic: typings.awsCrt.distCommonHttpMod.HttpProxyAuthenticationType.Basic & Double = js.native
     
-    /* 0 */ val None: typings.awsCrt.httpMod.HttpProxyAuthenticationType.None & Double = js.native
+    /* 0 */ val None: typings.awsCrt.distCommonHttpMod.HttpProxyAuthenticationType.None & Double = js.native
   }
   
   @JSImport("aws-crt", "http.HttpProxyConnectionType")
@@ -385,19 +385,19 @@ object http {
   object HttpProxyConnectionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.awsCrt.nativeHttpMod.HttpProxyConnectionType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.awsCrt.distNativeHttpMod.HttpProxyConnectionType & Double] = js.native
     
-    /* 1 */ val Forwarding: typings.awsCrt.nativeHttpMod.HttpProxyConnectionType.Forwarding & Double = js.native
+    /* 1 */ val Forwarding: typings.awsCrt.distNativeHttpMod.HttpProxyConnectionType.Forwarding & Double = js.native
     
-    /* 0 */ val Legacy: typings.awsCrt.nativeHttpMod.HttpProxyConnectionType.Legacy & Double = js.native
+    /* 0 */ val Legacy: typings.awsCrt.distNativeHttpMod.HttpProxyConnectionType.Legacy & Double = js.native
     
-    /* 2 */ val Tunneling: typings.awsCrt.nativeHttpMod.HttpProxyConnectionType.Tunneling & Double = js.native
+    /* 2 */ val Tunneling: typings.awsCrt.distNativeHttpMod.HttpProxyConnectionType.Tunneling & Double = js.native
   }
   
   @JSImport("aws-crt", "http.HttpProxyOptions")
   @js.native
   open class HttpProxyOptions protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpProxyOptions {
+    extends typings.awsCrt.distNativeHttpMod.HttpProxyOptions {
     /**
       *
       * @param host_name Name of the proxy server to connect through
@@ -644,17 +644,22 @@ object http {
   @JSImport("aws-crt", "http.HttpRequest")
   @js.native
   open class HttpRequest protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpRequest {
+    extends typings.awsCrt.distNativeHttpMod.HttpRequest {
     def this(method: String, path: String) = this()
-    def this(method: String, path: String, headers: typings.awsCrt.nativeHttpMod.HttpHeaders) = this()
+    def this(method: String, path: String, headers: typings.awsCrt.distNativeHttpMod.HttpHeaders) = this()
     def this(method: String, path: String, headers: Unit, body: InputStream) = this()
-    def this(method: String, path: String, headers: typings.awsCrt.nativeHttpMod.HttpHeaders, body: InputStream) = this()
+    def this(
+      method: String,
+      path: String,
+      headers: typings.awsCrt.distNativeHttpMod.HttpHeaders,
+      body: InputStream
+    ) = this()
   }
   
   @JSImport("aws-crt", "http.HttpStream")
   @js.native
   open class HttpStream protected ()
-    extends typings.awsCrt.nativeHttpMod.HttpStream {
-    /* protected */ def this(native_handle: Any, connection: typings.awsCrt.nativeHttpMod.HttpConnection) = this()
+    extends typings.awsCrt.distNativeHttpMod.HttpStream {
+    /* protected */ def this(native_handle: Any, connection: typings.awsCrt.distNativeHttpMod.HttpConnection) = this()
   }
 }

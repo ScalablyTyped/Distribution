@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/visual-recognition/v3-generated", JSImport.Namespace)
 @js.native
-class ^ protected () extends VisualRecognitionV3 {
+open class ^ protected () extends VisualRecognitionV3 {
   /**
     * Construct a VisualRecognitionV3 object.
     *

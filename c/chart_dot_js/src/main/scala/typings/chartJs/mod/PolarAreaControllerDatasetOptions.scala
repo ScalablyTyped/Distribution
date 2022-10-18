@@ -8,8 +8,8 @@ import typings.chartJs.chartJsStrings.doughnut
 import typings.chartJs.chartJsStrings.inner
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.colorMod.Color
-import typings.chartJs.geometricMod.ChartArea
+import typings.chartJs.typesColorMod.Color
+import typings.chartJs.typesGeometricMod.ChartArea
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

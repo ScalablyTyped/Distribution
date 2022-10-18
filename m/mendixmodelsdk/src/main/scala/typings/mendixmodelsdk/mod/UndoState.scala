@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.deltaManagerMod.IDeltaManager
+import typings.mendixmodelsdk.srcSdkInternalDeltasDeltaManagerMod.IDeltaManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "UndoState")
 @js.native
 open class UndoState protected ()
-  extends typings.mendixmodelsdk.internalMod.UndoState {
+  extends typings.mendixmodelsdk.srcSdkInternalMod.UndoState {
   def this(deltaManager: IDeltaManager) = this()
 }

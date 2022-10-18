@@ -1,7 +1,7 @@
 package typings.nivoTooltip
 
-import typings.nivoTooltip.typesMod.CrosshairType
-import typings.nivoTooltip.typesMod.TooltipAnchor
+import typings.nivoTooltip.distTypesTypesMod.CrosshairType
+import typings.nivoTooltip.distTypesTypesMod.TooltipAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "MorphTargetsBlock")
 @js.native
 open class MorphTargetsBlock protected ()
-  extends typings.babylonjs.legacyMod.MorphTargetsBlock {
+  extends typings.babylonjs.legacyLegacyMod.MorphTargetsBlock {
   /**
     * Create a new MorphTargetsBlock
     * @param name defines the block name

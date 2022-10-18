@@ -3,8 +3,8 @@ package typings.babylonjs.indexMod
 import typings.babylonjs.anon.Data
 import typings.babylonjs.anon.DeepImmutableObjectMatrix
 import typings.babylonjs.anon.Sizes
-import typings.babylonjs.iparticlesystemMod.IParticleSystem
-import typings.babylonjs.meshSimplificationMod.ISimplificationSettings
+import typings.babylonjs.meshesMeshSimplificationMod.ISimplificationSettings
+import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object babylonjsMeshesMeshAugmentingMod {
     def _invalidateInstanceVertexArrayObject(): Unit = js.native
     
     /** @internal */
-    def _thinInstanceCreateMatrixBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], staticBuffer: Boolean): typings.babylonjs.bufferMod.Buffer = js.native
+    def _thinInstanceCreateMatrixBuffer(kind: String, buffer: Nullable[js.typedarray.Float32Array], staticBuffer: Boolean): typings.babylonjs.buffersBufferMod.Buffer = js.native
     
     /** @internal */
     def _thinInstanceInitializeUserStorage(): Unit = js.native
@@ -68,7 +68,7 @@ object babylonjsMeshesMeshAugmentingMod {
       * @returns the current mesh
       * @deprecated Please use MeshBuilder instead Please use setMaterialById instead
       */
-    def setMaterialByID(id: String): typings.babylonjs.meshMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    def setMaterialByID(id: String): typings.babylonjs.meshesMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     
     /**
       * Simplify the mesh according to the given array of settings.
@@ -79,42 +79,42 @@ object babylonjsMeshesMeshAugmentingMod {
       * @param successCallback optional success callback to be called after the simplification finished processing all settings
       * @returns the current mesh
       */
-    def simplify(settings: js.Array[ISimplificationSettings]): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
-    def simplify(settings: js.Array[ISimplificationSettings], parallelProcessing: Boolean): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    def simplify(settings: js.Array[ISimplificationSettings]): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    def simplify(settings: js.Array[ISimplificationSettings], parallelProcessing: Boolean): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Boolean,
       simplificationType: Unit,
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    ): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Boolean,
-      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+      simplificationType: typings.babylonjs.meshesMeshSimplificationMod.SimplificationType
+    ): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Boolean,
-      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType,
+      simplificationType: typings.babylonjs.meshesMeshSimplificationMod.SimplificationType,
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    ): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Unit,
       simplificationType: Unit,
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    ): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Unit,
-      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+      simplificationType: typings.babylonjs.meshesMeshSimplificationMod.SimplificationType
+    ): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     def simplify(
       settings: js.Array[ISimplificationSettings],
       parallelProcessing: Unit,
-      simplificationType: typings.babylonjs.meshSimplificationMod.SimplificationType,
+      simplificationType: typings.babylonjs.meshesMeshSimplificationMod.SimplificationType,
       successCallback: js.Function2[/* mesh */ js.UndefOr[this.type], /* submeshIndex */ js.UndefOr[Double], Unit]
-    ): typings.babylonjs.meshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
+    ): typings.babylonjs.meshesMeshSimplificationSceneComponentMod.babylonjsMeshesMeshAugmentingMod.Mesh = js.native
     
     def thinInstanceAdd(matrix: js.Array[DeepImmutableObjectMatrix]): Double = js.native
     def thinInstanceAdd(matrix: js.Array[DeepImmutableObjectMatrix], refresh: Boolean): Double = js.native
@@ -155,7 +155,7 @@ object babylonjsMeshesMeshAugmentingMod {
       * Gets the list of world matrices
       * @returns an array containing all the world matrices from the thin instances
       */
-    def thinInstanceGetWorldMatrices(): js.Array[typings.babylonjs.mathVectorMod.Matrix] = js.native
+    def thinInstanceGetWorldMatrices(): js.Array[typings.babylonjs.mathsMathDotvectorMod.Matrix] = js.native
     
     /**
       * Applies a partial update to a buffer directly on the GPU

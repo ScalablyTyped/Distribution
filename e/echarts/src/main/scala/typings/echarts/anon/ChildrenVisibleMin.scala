@@ -298,7 +298,7 @@ trait ChildrenVisibleMin extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels.upperLabel
     */
-  var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
+  var upperLabel: js.UndefOr[TextBorderWidth] = js.undefined
   
   /**
     * A node will not be shown when its area size is smaller than
@@ -445,7 +445,7 @@ object ChildrenVisibleMin {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setUpperLabel(value: TextShadowColor): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
+    inline def setUpperLabel(value: TextBorderWidth): Self = StObject.set(x, "upperLabel", value.asInstanceOf[js.Any])
     
     inline def setUpperLabelUndefined: Self = StObject.set(x, "upperLabel", js.undefined)
     

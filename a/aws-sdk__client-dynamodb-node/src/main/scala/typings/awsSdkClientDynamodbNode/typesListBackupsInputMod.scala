@@ -3,8 +3,8 @@ package typings.awsSdkClientDynamodbNode
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ALL
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.SYSTEM
 import typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.USER
-import typings.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientDynamodbNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

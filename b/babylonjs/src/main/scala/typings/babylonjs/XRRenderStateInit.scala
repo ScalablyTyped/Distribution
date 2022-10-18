@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// https://immersive-web.github.io/webxr/#dictdef-xrrenderstateinit
 trait XRRenderStateInit extends StObject {
   
   var baseLayer: js.UndefOr[XRWebGLLayer] = js.undefined
   
-  var depthFar: Double
+  var depthFar: js.UndefOr[Double] = js.undefined
   
-  var depthNear: Double
+  var depthNear: js.UndefOr[Double] = js.undefined
   
   var inlineVerticalFieldOfView: js.UndefOr[Double] = js.undefined
   
@@ -19,8 +18,8 @@ trait XRRenderStateInit extends StObject {
 }
 object XRRenderStateInit {
   
-  inline def apply(depthFar: Double, depthNear: Double): XRRenderStateInit = {
-    val __obj = js.Dynamic.literal(depthFar = depthFar.asInstanceOf[js.Any], depthNear = depthNear.asInstanceOf[js.Any])
+  inline def apply(): XRRenderStateInit = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XRRenderStateInit]
   }
   
@@ -32,7 +31,11 @@ object XRRenderStateInit {
     
     inline def setDepthFar(value: Double): Self = StObject.set(x, "depthFar", value.asInstanceOf[js.Any])
     
+    inline def setDepthFarUndefined: Self = StObject.set(x, "depthFar", js.undefined)
+    
     inline def setDepthNear(value: Double): Self = StObject.set(x, "depthNear", value.asInstanceOf[js.Any])
+    
+    inline def setDepthNearUndefined: Self = StObject.set(x, "depthNear", js.undefined)
     
     inline def setInlineVerticalFieldOfView(value: Double): Self = StObject.set(x, "inlineVerticalFieldOfView", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ open class DirectionalLight protected ()
     */
   def this(
     name: String,
-    direction: typings.babylonjs.mathVectorMod.Vector3,
+    direction: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }

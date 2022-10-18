@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
-import typings.tabris.anon.Children
 import typings.tabris.anon.OmitDateDialogset
+import typings.tabris.anon.`3`
 import typings.tabris.tabrisStrings.date
 import typings.tabris.tabrisStrings.maxDate
 import typings.tabris.tabrisStrings.minDate
@@ -32,7 +32,7 @@ open class DateDialog () extends Popup {
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_DateDialog: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children = js.native
+  val jsxAttributes_DateDialog: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3` = js.native
   
   /**
     * Limits the selectable date range to the given future date. No limit is applied when not set.

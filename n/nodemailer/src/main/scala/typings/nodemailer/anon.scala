@@ -2,10 +2,10 @@ package typings.nodemailer
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
-import typings.nodemailer.mailerMod.^
+import typings.nodemailer.libMailerMod.^
+import typings.nodemailer.libSesTransportMod.SentMessageInfo
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerBooleans.`true`
-import typings.nodemailer.sesTransportMod.SentMessageInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

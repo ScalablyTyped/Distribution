@@ -1,6 +1,6 @@
 package typings.parcelCache
 
-import typings.parcelCache.typesMod.Cache
+import typings.parcelCache.libTypesMod.Cache
 import typings.parcelTypes.mod.FilePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

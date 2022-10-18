@@ -1,7 +1,6 @@
 package typings.getenv
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.getenv.getenvStrings.bool
 import typings.getenv.getenvStrings.boolish
 import typings.getenv.getenvStrings.float
@@ -113,11 +112,7 @@ object mod {
     *  });
     * ```
     */
-  inline def multi[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
-    */ typings.getenv.getenvStrings.multi & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multi")(spec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
-    */ typings.getenv.getenvStrings.multi & TopLevel[Any]]
+  inline def multi[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("multi")(spec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string} */ js.Any]
   
   /**
     * Return as string.

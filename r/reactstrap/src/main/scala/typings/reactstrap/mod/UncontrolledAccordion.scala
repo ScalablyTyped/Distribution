@@ -1,6 +1,6 @@
 package typings.reactstrap.mod
 
-import typings.reactstrap.accordionMod.UncontrolledAccordionProps
+import typings.reactstrap.typesLibAccordionMod.UncontrolledAccordionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("reactstrap", "UncontrolledAccordion")
 @js.native
 open class UncontrolledAccordion protected ()
-  extends typings.reactstrap.uncontrolledMod.UncontrolledAccordion {
+  extends typings.reactstrap.typesLibUncontrolledMod.UncontrolledAccordion {
   def this(props: UncontrolledAccordionProps) = this()
   /**
     * @deprecated

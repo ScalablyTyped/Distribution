@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("chart.js", "Animator")
 @js.native
 open class Animator ()
-  extends typings.chartJs.animationMod.Animator
+  extends typings.chartJs.typesAnimationMod.Animator

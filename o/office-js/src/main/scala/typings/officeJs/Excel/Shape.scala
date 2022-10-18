@@ -125,7 +125,7 @@ trait Shape
     * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ Any = js.native
+  var geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.officeJs.Excel.GeometricShapeType, typings.officeJs.officeJsStrings.LineInverse, typings.officeJs.officeJsStrings.Triangle */ Any = js.native
   
   /**
     * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.

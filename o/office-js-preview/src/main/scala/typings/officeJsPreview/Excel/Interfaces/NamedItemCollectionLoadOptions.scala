@@ -80,8 +80,7 @@ trait NamedItemCollectionLoadOptions extends StObject {
     Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var valueAsJson: js.UndefOr[Boolean] = js.undefined
   
@@ -91,8 +90,7 @@ trait NamedItemCollectionLoadOptions extends StObject {
     Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var valueAsJsonLocal: js.UndefOr[Boolean] = js.undefined
   

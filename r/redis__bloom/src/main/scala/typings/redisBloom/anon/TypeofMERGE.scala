@@ -1,6 +1,6 @@
 package typings.redisBloom.anon
 
-import typings.redisBloom.mergeMod.Sketches
+import typings.redisBloom.distCommandsCountMinSketchMergeMod.Sketches
 import typings.redisBloom.redisBloomStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

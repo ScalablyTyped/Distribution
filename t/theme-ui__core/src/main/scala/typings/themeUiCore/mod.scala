@@ -27,9 +27,9 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.SVGElement
 import typings.themeUiCore.anon.FnCall
-import typings.themeUiCore.srcMod.ThemeProviderProps
-import typings.themeUiCore.srcMod.ThemeUIContextValue
-import typings.themeUiCore.srcMod.ThemeUIInternalBaseThemeProviderProps
+import typings.themeUiCore.distDeclarationsSrcMod.ThemeProviderProps
+import typings.themeUiCore.distDeclarationsSrcMod.ThemeUIContextValue
+import typings.themeUiCore.distDeclarationsSrcMod.ThemeUIInternalBaseThemeProviderProps
 import typings.themeUiCore.themeUiCoreStrings.input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -85,17 +85,17 @@ object mod {
   inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
   inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
   inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.themeUiCore.themeUiCoreStrings.a, typings.themeUiCore.themeUiCoreStrings.abbr, typings.themeUiCore.themeUiCoreStrings.address */ Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
   inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.themeUiCore.themeUiCoreStrings.a, typings.themeUiCore.themeUiCoreStrings.abbr, typings.themeUiCore.themeUiCoreStrings.address */ Any,
     props: Null,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
   inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.themeUiCore.themeUiCoreStrings.a, typings.themeUiCore.themeUiCoreStrings.abbr, typings.themeUiCore.themeUiCoreStrings.address */ Any,
     props: Unit,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -109,17 +109,17 @@ object mod {
   inline def jsx_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
   
   inline def jsx_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.themeUiCore.themeUiCoreStrings.animate, typings.themeUiCore.themeUiCoreStrings.circle, typings.themeUiCore.themeUiCoreStrings.clipPath */ Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
   inline def jsx_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.themeUiCore.themeUiCoreStrings.animate, typings.themeUiCore.themeUiCoreStrings.circle, typings.themeUiCore.themeUiCoreStrings.clipPath */ Any,
     props: Null,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
   inline def jsx_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.themeUiCore.themeUiCoreStrings.animate, typings.themeUiCore.themeUiCoreStrings.circle, typings.themeUiCore.themeUiCoreStrings.clipPath */ Any,
     props: Unit,
     children: ReactNode*
   ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]

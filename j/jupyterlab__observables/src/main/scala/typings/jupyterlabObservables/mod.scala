@@ -1,10 +1,10 @@
 package typings.jupyterlabObservables
 
-import typings.jupyterlabObservables.modeldbMod.ModelDB.ICreateOptions
-import typings.jupyterlabObservables.observablejsonMod.IObservableJSON.IChangedArgs
-import typings.jupyterlabObservables.observablejsonMod.ObservableJSON.IOptions
-import typings.jupyterlabObservables.undoablelistMod.ISerializer
-import typings.luminoCoreutils.jsonMod.JSONValue
+import typings.jupyterlabObservables.libModeldbMod.ModelDB.ICreateOptions
+import typings.jupyterlabObservables.libObservablejsonMod.IObservableJSON.IChangedArgs
+import typings.jupyterlabObservables.libObservablejsonMod.ObservableJSON.IOptions
+import typings.jupyterlabObservables.libUndoablelistMod.ISerializer
+import typings.luminoCoreutils.typesJsonMod.JSONValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ object mod {
     * Constructor for the `ModelDB`.
     */
   open class ModelDB ()
-    extends typings.jupyterlabObservables.modeldbMod.ModelDB {
+    extends typings.jupyterlabObservables.libModeldbMod.ModelDB {
     def this(options: ICreateOptions) = this()
   }
   
@@ -27,7 +27,7 @@ object mod {
     * Construct a new observable JSON object.
     */
   open class ObservableJSON ()
-    extends typings.jupyterlabObservables.observablejsonMod.ObservableJSON {
+    extends typings.jupyterlabObservables.libObservablejsonMod.ObservableJSON {
     def this(options: IOptions) = this()
   }
   object ObservableJSON {
@@ -38,7 +38,7 @@ object mod {
     @JSImport("@jupyterlab/observables", "ObservableJSON.ChangeMessage")
     @js.native
     open class ChangeMessage protected ()
-      extends typings.jupyterlabObservables.observablejsonMod.ObservableJSON.ChangeMessage {
+      extends typings.jupyterlabObservables.libObservablejsonMod.ObservableJSON.ChangeMessage {
       /**
         * Create a new metadata changed message.
         */
@@ -52,8 +52,8 @@ object mod {
     * Construct a new observable map.
     */
   open class ObservableList[T] ()
-    extends typings.jupyterlabObservables.observablelistMod.ObservableList[T] {
-    def this(options: typings.jupyterlabObservables.observablelistMod.ObservableList.IOptions[T]) = this()
+    extends typings.jupyterlabObservables.libObservablelistMod.ObservableList[T] {
+    def this(options: typings.jupyterlabObservables.libObservablelistMod.ObservableList.IOptions[T]) = this()
   }
   
   @JSImport("@jupyterlab/observables", "ObservableMap")
@@ -62,8 +62,8 @@ object mod {
     * Construct a new observable map.
     */
   open class ObservableMap[T] ()
-    extends typings.jupyterlabObservables.observablemapMod.ObservableMap[T] {
-    def this(options: typings.jupyterlabObservables.observablemapMod.ObservableMap.IOptions[T]) = this()
+    extends typings.jupyterlabObservables.libObservablemapMod.ObservableMap[T] {
+    def this(options: typings.jupyterlabObservables.libObservablemapMod.ObservableMap.IOptions[T]) = this()
   }
   
   @JSImport("@jupyterlab/observables", "ObservableString")
@@ -72,14 +72,14 @@ object mod {
     * Construct a new observable string.
     */
   open class ObservableString ()
-    extends typings.jupyterlabObservables.observablestringMod.ObservableString {
+    extends typings.jupyterlabObservables.libObservablestringMod.ObservableString {
     def this(initialText: String) = this()
   }
   
   @JSImport("@jupyterlab/observables", "ObservableUndoableList")
   @js.native
   open class ObservableUndoableList[T] protected ()
-    extends typings.jupyterlabObservables.undoablelistMod.ObservableUndoableList[T] {
+    extends typings.jupyterlabObservables.libUndoablelistMod.ObservableUndoableList[T] {
     /**
       * Construct a new undoable observable list.
       */
@@ -93,7 +93,7 @@ object mod {
     @JSImport("@jupyterlab/observables", "ObservableUndoableList.IdentitySerializer")
     @js.native
     open class IdentitySerializer[T /* <: JSONValue */] ()
-      extends typings.jupyterlabObservables.undoablelistMod.ObservableUndoableList.IdentitySerializer[T]
+      extends typings.jupyterlabObservables.libUndoablelistMod.ObservableUndoableList.IdentitySerializer[T]
   }
   
   @JSImport("@jupyterlab/observables", "ObservableValue")
@@ -104,7 +104,7 @@ object mod {
     * @param initialValue: the starting value for the `ObservableValue`.
     */
   open class ObservableValue ()
-    extends typings.jupyterlabObservables.modeldbMod.ObservableValue {
+    extends typings.jupyterlabObservables.libModeldbMod.ObservableValue {
     def this(initialValue: JSONValue) = this()
   }
   object ObservableValue {
@@ -115,6 +115,6 @@ object mod {
     @JSImport("@jupyterlab/observables", "ObservableValue.IChangedArgs")
     @js.native
     open class IChangedArgs ()
-      extends typings.jupyterlabObservables.modeldbMod.ObservableValue.IChangedArgs
+      extends typings.jupyterlabObservables.libModeldbMod.ObservableValue.IChangedArgs
   }
 }

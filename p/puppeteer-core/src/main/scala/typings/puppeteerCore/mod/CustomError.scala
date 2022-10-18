@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class CustomError ()
   extends StObject
      with Error {
-  def this(message: String) = this()
   
   /* standard es5 */
   /* CompleteClass */

@@ -1,15 +1,15 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.elasticbeanstalkMod.ApplicationName
-import typings.awsSdk.elasticbeanstalkMod.EnvironmentId
-import typings.awsSdk.elasticbeanstalkMod.EnvironmentIdList
-import typings.awsSdk.elasticbeanstalkMod.EnvironmentName
-import typings.awsSdk.elasticbeanstalkMod.EnvironmentNamesList
-import typings.awsSdk.elasticbeanstalkMod.IncludeDeleted
-import typings.awsSdk.elasticbeanstalkMod.MaxRecords
-import typings.awsSdk.elasticbeanstalkMod.Token
-import typings.awsSdk.elasticbeanstalkMod.VersionLabel
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsElasticbeanstalkMod.ApplicationName
+import typings.awsSdk.clientsElasticbeanstalkMod.EnvironmentId
+import typings.awsSdk.clientsElasticbeanstalkMod.EnvironmentIdList
+import typings.awsSdk.clientsElasticbeanstalkMod.EnvironmentName
+import typings.awsSdk.clientsElasticbeanstalkMod.EnvironmentNamesList
+import typings.awsSdk.clientsElasticbeanstalkMod.IncludeDeleted
+import typings.awsSdk.clientsElasticbeanstalkMod.MaxRecords
+import typings.awsSdk.clientsElasticbeanstalkMod.Token
+import typings.awsSdk.clientsElasticbeanstalkMod.VersionLabel
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait DescribeEnvironmentsMessa extends StObject {
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those that are associated with this application.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
+  var ApplicationName: js.UndefOr[typings.awsSdk.clientsElasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those that have the specified IDs.
@@ -38,7 +38,7 @@ trait DescribeEnvironmentsMessa extends StObject {
   /**
     * Indicates whether to include deleted environments:  true: Environments that have been deleted after IncludedDeletedBackTo are displayed.  false: Do not include deleted environments.
     */
-  var IncludeDeleted: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.IncludeDeleted] = js.undefined
+  var IncludeDeleted: js.UndefOr[typings.awsSdk.clientsElasticbeanstalkMod.IncludeDeleted] = js.undefined
   
   /**
     *  If specified when IncludeDeleted is set to true, then environments deleted after this date are displayed. 
@@ -48,7 +48,7 @@ trait DescribeEnvironmentsMessa extends StObject {
   /**
     * For a paginated request. Specify a maximum number of environments to include in each response. If no MaxRecords is specified, all available environments are retrieved in a single response.
     */
-  var MaxRecords: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.MaxRecords] = js.undefined
+  var MaxRecords: js.UndefOr[typings.awsSdk.clientsElasticbeanstalkMod.MaxRecords] = js.undefined
   
   /**
     * For a paginated request. Specify a token from a previous response page to retrieve the next response page. All other parameter values must be identical to the ones specified in the initial request. If no NextToken is specified, the first page is retrieved.
@@ -58,7 +58,7 @@ trait DescribeEnvironmentsMessa extends StObject {
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those that are associated with this application version.
     */
-  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.undefined
+  var VersionLabel: js.UndefOr[typings.awsSdk.clientsElasticbeanstalkMod.VersionLabel] = js.undefined
 }
 object DescribeEnvironmentsMessa {
   

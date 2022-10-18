@@ -7,6 +7,7 @@ import typings.images.imagesInts.`1`
 import typings.images.imagesInts.`2`
 import typings.images.imagesInts.`3`
 import typings.images.imagesInts.`4`
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -75,54 +76,21 @@ object mod {
     def save(file: String, `type`: TYPE): this.type = js.native
     def save(file: String, `type`: TYPE, config: EncoderConfig): this.type = js.native
     
-    def saveAsync(
-      file: String,
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
-    ): this.type = js.native
-    def saveAsync(
-      file: String,
-      config: EncoderConfig,
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
-    ): this.type = js.native
-    def saveAsync(
-      file: String,
-      `type`: FILE_TYPE,
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
-    ): this.type = js.native
+    def saveAsync(file: String, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): this.type = js.native
+    def saveAsync(file: String, config: EncoderConfig, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): this.type = js.native
+    def saveAsync(file: String, `type`: FILE_TYPE, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): this.type = js.native
     def saveAsync(
       file: String,
       `type`: FILE_TYPE,
       config: EncoderConfig,
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
+      callback: js.Function1[/* err */ ErrnoException | Null, Unit]
     ): this.type = js.native
-    def saveAsync(
-      file: String,
-      `type`: TYPE,
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
-    ): this.type = js.native
+    def saveAsync(file: String, `type`: TYPE, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): this.type = js.native
     def saveAsync(
       file: String,
       `type`: TYPE,
       config: EncoderConfig,
-      callback: js.Function1[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          Unit
-        ]
+      callback: js.Function1[/* err */ ErrnoException | Null, Unit]
     ): this.type = js.native
     
     def size(): Height = js.native

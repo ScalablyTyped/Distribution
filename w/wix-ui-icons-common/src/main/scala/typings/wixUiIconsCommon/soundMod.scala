@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsSoundMod.SoundProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSoundMod.SoundProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object soundMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Sound", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Sound", JSImport.Default)
   @js.native
   val default: FC[SoundProps] = js.native
   

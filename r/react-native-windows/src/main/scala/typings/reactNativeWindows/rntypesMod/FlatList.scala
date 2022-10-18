@@ -5,11 +5,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementRef
 import typings.react.mod.global.JSX.Element
+import typings.reactNativeWindows.anon.Index
 import typings.reactNativeWindows.anon.Item
 import typings.reactNativeWindows.anon.Offset
 import typings.reactNativeWindows.anon.TypeofView
-import typings.reactNativeWindows.anon.ViewOffset
-import typings.reactNativeWindows.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,14 +52,14 @@ open class FlatList[ItemT] protected ()
     * Scrolls to the end of the content. May be janky without `getItemLayout` prop.
     */
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(params: `0`): Unit = js.native
+  def scrollToEnd(params: typings.reactNativeWindows.anon.Animated): Unit = js.native
   
   /**
     * Scrolls to the item at the specified index such that it is positioned in the viewable area
     * such that viewPosition 0 places it at the top, 1 at the bottom, and 0.5 centered in the middle.
     * Cannot scroll to locations outside the render window without specifying the getItemLayout prop.
     */
-  def scrollToIndex(params: ViewOffset): Unit = js.native
+  def scrollToIndex(params: Index): Unit = js.native
   
   /**
     * Requires linear scan through data - use `scrollToIndex` instead if possible.

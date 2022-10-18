@@ -1,6 +1,7 @@
 package typings.npmRegistryFetch
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
@@ -52,8 +53,8 @@ object mod {
       * stream (unlike default `JSONStreams`), has a valid `Symbol.asyncIterator`
       * implementation.
       */
-    inline def stream(url: String, jsonPath: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any])).asInstanceOf[Any]
-    inline def stream(url: String, jsonPath: String, opts: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def stream(url: String, jsonPath: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+    inline def stream(url: String, jsonPath: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   }
   
   inline def pickRegistry(spec: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pickRegistry")(spec.asInstanceOf[js.Any]).asInstanceOf[String]

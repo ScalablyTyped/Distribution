@@ -22,5 +22,7 @@ object LineUtil {
   
   inline def pointToSegmentDistance(p: Point_, p1: Point_, p2: Point_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToSegmentDistance")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  inline def polylineCenter(latlngs: js.Array[LatLngExpression], crs: CRS): LatLng_ = (^.asInstanceOf[js.Dynamic].applyDynamic("polylineCenter")(latlngs.asInstanceOf[js.Any], crs.asInstanceOf[js.Any])).asInstanceOf[LatLng_]
+  
   inline def simplify(points: js.Array[Point_], tolerance: Double): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(points.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
 }

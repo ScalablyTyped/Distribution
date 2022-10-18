@@ -1,6 +1,6 @@
 package typings.victoryCore.anon
 
-import typings.victoryCore.propTypesMod._CategoryPropType
+import typings.victoryCore.libTypesPropTypesMod._CategoryPropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.dataviewMod.DataViewLayoutOptionsProps
+import typings.primereact.dataviewDataviewMod.DataViewLayoutOptionsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "DataViewLayoutOptions")
 @js.native
 open class DataViewLayoutOptions protected ()
-  extends typings.primereact.dataviewMod.DataViewLayoutOptions {
+  extends typings.primereact.dataviewDataviewMod.DataViewLayoutOptions {
   def this(props: DataViewLayoutOptionsProps) = this()
   /**
     * @deprecated

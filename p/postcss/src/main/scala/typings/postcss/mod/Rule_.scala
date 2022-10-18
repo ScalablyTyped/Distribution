@@ -1,6 +1,6 @@
 package typings.postcss.mod
 
-import typings.postcss.ruleMod.RuleProps
+import typings.postcss.libRuleMod.RuleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postcss", "Rule")
 @js.native
 open class Rule_ ()
-  extends typings.postcss.ruleMod.default {
+  extends typings.postcss.libRuleMod.default {
   def this(defaults: RuleProps) = this()
 }

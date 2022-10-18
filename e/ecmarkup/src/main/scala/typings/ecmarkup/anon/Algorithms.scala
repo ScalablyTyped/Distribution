@@ -1,7 +1,7 @@
 package typings.ecmarkup.anon
 
-import typings.ecmarkup.collectNodesMod.CollectNodesReturnType
 import typings.ecmarkup.ecmarkupBooleans.`true`
+import typings.ecmarkup.libLintCollectNodesMod.CollectNodesReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Algorithms
   
   var earlyErrors: js.Array[Grammar]
   
-  var headers: js.Array[Contents]
+  var headers: js.Array[ContentsElement]
   
   var mainGrammar: js.Array[Source]
   
@@ -27,7 +27,7 @@ object Algorithms {
   inline def apply(
     algorithms: js.Array[Element],
     earlyErrors: js.Array[Grammar],
-    headers: js.Array[Contents],
+    headers: js.Array[ContentsElement],
     mainGrammar: js.Array[Source],
     sdos: js.Array[Alg]
   ): Algorithms = {
@@ -39,23 +39,23 @@ object Algorithms {
     
     inline def setAlgorithms(value: js.Array[Element]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
-    inline def setAlgorithmsVarargs(value: Element*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+    inline def setAlgorithmsVarargs(value: Element*): Self = StObject.set(x, "algorithms", js.Array(value*))
     
     inline def setEarlyErrors(value: js.Array[Grammar]): Self = StObject.set(x, "earlyErrors", value.asInstanceOf[js.Any])
     
-    inline def setEarlyErrorsVarargs(value: Grammar*): Self = StObject.set(x, "earlyErrors", js.Array(value :_*))
+    inline def setEarlyErrorsVarargs(value: Grammar*): Self = StObject.set(x, "earlyErrors", js.Array(value*))
     
-    inline def setHeaders(value: js.Array[Contents]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[ContentsElement]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setHeadersVarargs(value: Contents*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: ContentsElement*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setMainGrammar(value: js.Array[Source]): Self = StObject.set(x, "mainGrammar", value.asInstanceOf[js.Any])
     
-    inline def setMainGrammarVarargs(value: Source*): Self = StObject.set(x, "mainGrammar", js.Array(value :_*))
+    inline def setMainGrammarVarargs(value: Source*): Self = StObject.set(x, "mainGrammar", js.Array(value*))
     
     inline def setSdos(value: js.Array[Alg]): Self = StObject.set(x, "sdos", value.asInstanceOf[js.Any])
     
-    inline def setSdosVarargs(value: Alg*): Self = StObject.set(x, "sdos", js.Array(value :_*))
+    inline def setSdosVarargs(value: Alg*): Self = StObject.set(x, "sdos", js.Array(value*))
     
     inline def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

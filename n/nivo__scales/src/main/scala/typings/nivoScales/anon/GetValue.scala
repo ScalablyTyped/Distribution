@@ -1,7 +1,7 @@
 package typings.nivoScales.anon
 
-import typings.nivoScales.typesMod.ScaleAxis
-import typings.nivoScales.typesMod.ScaleValue
+import typings.nivoScales.distTypesTypesMod.ScaleAxis
+import typings.nivoScales.distTypesTypesMod.ScaleValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientAndroiddeviceprovisioningStrings {
   
   @js.native
-  sealed trait DeviceMetadata extends StObject
-  inline def DeviceMetadata: DeviceMetadata = "DeviceMetadata".asInstanceOf[DeviceMetadata]
-  
-  @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
   sealed trait androiddeviceprovisioning extends StObject
   inline def androiddeviceprovisioning: androiddeviceprovisioning = "androiddeviceprovisioning".asInstanceOf[androiddeviceprovisioning]
   

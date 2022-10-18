@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.truncatedFormatMod.TruncatedFormatProps
+import typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedFormatProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "TruncatedFormat")
 @js.native
 open class TruncatedFormat protected ()
-  extends typings.blueprintjsTable.truncatedFormatMod.TruncatedFormat {
+  extends typings.blueprintjsTable.libEsmCellFormatsTruncatedFormatMod.TruncatedFormat {
   def this(props: TruncatedFormatProps) = this()
   /**
     * @deprecated

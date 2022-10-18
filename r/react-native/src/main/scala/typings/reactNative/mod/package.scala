@@ -422,6 +422,8 @@ type StatusBarPropertiesIOS = StatusBarPropsIOS
 
 type StyleProp[T] = T | RegisteredStyle[T] | Any | Falsy
 
+type SwitchChangeEvent = NativeSyntheticEvent[SwitchChangeEventData]
+
 /**
   * Renders a boolean input.
   *

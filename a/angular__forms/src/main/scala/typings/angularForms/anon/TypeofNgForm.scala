@@ -23,7 +23,16 @@ trait TypeofNgForm
       NgForm
     ] {
   
-  var ɵdir: ɵɵDirectiveDeclaration[NgForm, String, js.Array[ngForm], Options, NgSubmit, scala.Nothing, scala.Nothing, `false`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    NgForm, 
+    /* form:not([ngNoForm]):not([formGroup]),ng-form,[ngForm] */ String, 
+    js.Array[ngForm], 
+    Options, 
+    NgSubmit, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]] = js.native
 }

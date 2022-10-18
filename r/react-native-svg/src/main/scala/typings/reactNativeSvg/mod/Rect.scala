@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.mod
 
-import typings.reactNativeSvg.anon.Height
+import typings.reactNativeSvg.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Rect")
 @js.native
 open class Rect ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Rect
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Rect
 /* static members */
 object Rect {
   
@@ -18,8 +18,8 @@ object Rect {
   
   @JSImport("react-native-svg", "Rect.defaultProps")
   @js.native
-  def defaultProps: Height = js.native
-  inline def defaultProps_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: Width = js.native
+  inline def defaultProps_=(x: Width): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-native-svg", "Rect.displayName")
   @js.native

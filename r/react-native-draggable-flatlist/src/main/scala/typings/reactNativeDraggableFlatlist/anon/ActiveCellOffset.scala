@@ -1,6 +1,6 @@
 package typings.reactNativeDraggableFlatlist.anon
 
-import typings.reactNativeGestureHandler.stateMod.State
+import typings.reactNativeGestureHandler.libTypescriptStateMod.State
 import typings.reactNativeReanimated.mod.SharedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

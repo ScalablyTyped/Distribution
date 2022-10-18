@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__application-extension
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Application Extension
@@ -10,10 +10,10 @@ JupyterLab - Application Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/application-extension |
 | Keywords           | - |
-| # releases         | 127 |
-| # dependents       | 1 |
-| # downloads        | 1464450 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 193787.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

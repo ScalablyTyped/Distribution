@@ -24,8 +24,8 @@ import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.tab
 import typings.jpm.jpmStrings.uninitialized
 import typings.jpm.jpmStrings.window
-import typings.jpm.panelMod.PanelPosition
-import typings.jpm.toolbarMod.ToolbarItem
+import typings.jpm.sdkPanelMod.PanelPosition
+import typings.jpm.sdkUiToolbarMod.ToolbarItem
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.inputmaskMod.InputMaskProps
+import typings.primereact.inputmaskInputmaskMod.InputMaskProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "InputMask")
 @js.native
 open class InputMask protected ()
-  extends typings.primereact.inputmaskMod.InputMask {
+  extends typings.primereact.inputmaskInputmaskMod.InputMask {
   def this(props: InputMaskProps) = this()
   /**
     * @deprecated

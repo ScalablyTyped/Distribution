@@ -5,10 +5,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.FocusEvent
 import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.century
 import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.decade
-import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.end
 import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.month
-import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.range
-import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.start
 import typings.wojtekmajReactDaterangePicker.wojtekmajReactDaterangePickerStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,11 +53,15 @@ object mod {
     
     var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var maxDetails: js.UndefOr[century | decade | year | month] = js.undefined
+    var maxDetail: js.UndefOr[century | decade | year | month] = js.undefined
     
     var minDate: js.UndefOr[js.Date] = js.undefined
     
+    var minDetail: js.UndefOr[century | decade | year | month] = js.undefined
+    
     var monthAriaLabel: js.UndefOr[String] = js.undefined
+    
+    var monthPlaceholder: js.UndefOr[String] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -79,8 +80,6 @@ object mod {
     var rangeDivider: js.UndefOr[ReactNode] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
-    
-    var returnValue: js.UndefOr[start | end | range] = js.undefined
     
     var showLeadingZeros: js.UndefOr[Boolean] = js.undefined
     
@@ -167,17 +166,25 @@ object mod {
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMaxDetails(value: century | decade | year | month): Self = StObject.set(x, "maxDetails", value.asInstanceOf[js.Any])
+      inline def setMaxDetail(value: century | decade | year | month): Self = StObject.set(x, "maxDetail", value.asInstanceOf[js.Any])
       
-      inline def setMaxDetailsUndefined: Self = StObject.set(x, "maxDetails", js.undefined)
+      inline def setMaxDetailUndefined: Self = StObject.set(x, "maxDetail", js.undefined)
       
       inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
+      inline def setMinDetail(value: century | decade | year | month): Self = StObject.set(x, "minDetail", value.asInstanceOf[js.Any])
+      
+      inline def setMinDetailUndefined: Self = StObject.set(x, "minDetail", js.undefined)
+      
       inline def setMonthAriaLabel(value: String): Self = StObject.set(x, "monthAriaLabel", value.asInstanceOf[js.Any])
       
       inline def setMonthAriaLabelUndefined: Self = StObject.set(x, "monthAriaLabel", js.undefined)
+      
+      inline def setMonthPlaceholder(value: String): Self = StObject.set(x, "monthPlaceholder", value.asInstanceOf[js.Any])
+      
+      inline def setMonthPlaceholderUndefined: Self = StObject.set(x, "monthPlaceholder", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -214,10 +221,6 @@ object mod {
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
-      
-      inline def setReturnValue(value: start | end | range): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
-      
-      inline def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
       
       inline def setShowLeadingZeros(value: Boolean): Self = StObject.set(x, "showLeadingZeros", value.asInstanceOf[js.Any])
       

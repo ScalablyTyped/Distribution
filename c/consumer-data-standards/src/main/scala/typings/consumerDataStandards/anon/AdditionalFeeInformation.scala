@@ -31,7 +31,7 @@ trait AdditionalFeeInformation
   /**
     * Required if pricing model is SINGLE_RATE_CONT_LOAD or TIME_OF_USE_CONT_LOAD or FLEXIBLE_CONT_LOAD
     */
-  var controlledLoad: js.UndefOr[DailyCharge] = js.undefined
+  var controlledLoad: js.UndefOr[js.Array[EndDate]] = js.undefined
   
   /**
     * Optional list of discounts available for the contract
@@ -99,7 +99,7 @@ trait AdditionalFeeInformation
   var timeZone: js.UndefOr[LOCAL | AEST | Null] = js.undefined
   
   /**
-    * Free text description of price variation policy and conditions for the contract.  Mandatory if isFixed is true
+    * Free text description of price variation policy and conditions for the contract.  Mandatory if `isFixed` is false
     */
   var variation: js.UndefOr[String | Null] = js.undefined
 }
@@ -123,9 +123,11 @@ object AdditionalFeeInformation {
     
     inline def setAdditionalFeeInformationUndefined: Self = StObject.set(x, "additionalFeeInformation", js.undefined)
     
-    inline def setControlledLoad(value: DailyCharge): Self = StObject.set(x, "controlledLoad", value.asInstanceOf[js.Any])
+    inline def setControlledLoad(value: js.Array[EndDate]): Self = StObject.set(x, "controlledLoad", value.asInstanceOf[js.Any])
     
     inline def setControlledLoadUndefined: Self = StObject.set(x, "controlledLoad", js.undefined)
+    
+    inline def setControlledLoadVarargs(value: EndDate*): Self = StObject.set(x, "controlledLoad", js.Array(value*))
     
     inline def setDiscounts(value: js.Array[Category]): Self = StObject.set(x, "discounts", value.asInstanceOf[js.Any])
     

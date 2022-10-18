@@ -1,25 +1,25 @@
 package typings.wdioUtils
 
 import typings.std.Record
-import typings.wdioTypes.capabilitiesMod.Capabilities
-import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
-import typings.wdioTypes.optionsMod.Testrunner
-import typings.wdioTypes.servicesMod.RunnerPlugin
-import typings.wdioTypes.servicesMod.ServiceInstance
-import typings.wdioTypes.servicesMod.ServicePlugin
+import typings.wdioTypes.buildCapabilitiesMod.Capabilities
+import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.buildOptionsMod.Testrunner
+import typings.wdioTypes.buildServicesMod.RunnerPlugin
+import typings.wdioTypes.buildServicesMod.ServiceInstance
+import typings.wdioTypes.buildServicesMod.ServicePlugin
 import typings.wdioUtils.anon.Call
 import typings.wdioUtils.anon.File
 import typings.wdioUtils.anon.IgnoredWorkerServices
 import typings.wdioUtils.anon.IsAndroid
 import typings.wdioUtils.anon.IsChrome
-import typings.wdioUtils.anon.IsDevTools
+import typings.wdioUtils.anon.IsFirefox
 import typings.wdioUtils.anon.OmitTestrunnercapabilitie
-import typings.wdioUtils.monadMod.PropertiesObject
-import typings.wdioUtils.shimMod.Retries
-import typings.wdioUtils.typesMod.AfterHookParam
-import typings.wdioUtils.typesMod.BeforeHookParam
-import typings.wdioUtils.typesMod.HookFnArgs
-import typings.wdioUtils.typesMod.SpecFunction
+import typings.wdioUtils.buildMonadMod.PropertiesObject
+import typings.wdioUtils.buildShimMod.Retries
+import typings.wdioUtils.buildTestFrameworkTypesMod.AfterHookParam
+import typings.wdioUtils.buildTestFrameworkTypesMod.BeforeHookParam
+import typings.wdioUtils.buildTestFrameworkTypesMod.HookFnArgs
+import typings.wdioUtils.buildTestFrameworkTypesMod.SpecFunction
 import typings.wdioUtils.wdioUtilsStrings.`QuotationmarkLessthansignScreenshot[base64]GreaterthansignQuotationmark`
 import typings.wdioUtils.wdioUtilsStrings.`QuotationmarkLessthansignScript[base64]GreaterthansignQuotationmark`
 import typings.wdioUtils.wdioUtilsStrings.`null`
@@ -449,7 +449,7 @@ object mod {
   
   inline def commandCallStructure(commandName: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("commandCallStructure")(commandName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def devtoolsEnvironmentDetector(hasBrowserName: Capabilities): IsDevTools = ^.asInstanceOf[js.Dynamic].applyDynamic("devtoolsEnvironmentDetector")(hasBrowserName.asInstanceOf[js.Any]).asInstanceOf[IsDevTools]
+  inline def devtoolsEnvironmentDetector(hasBrowserName: Capabilities): IsChrome = ^.asInstanceOf[js.Dynamic].applyDynamic("devtoolsEnvironmentDetector")(hasBrowserName.asInstanceOf[js.Any]).asInstanceOf[IsChrome]
   
   /**
     * execute test or hook asynchronously
@@ -605,7 +605,7 @@ object mod {
   
   inline def safeRequire(name: String): ServicePlugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("safeRequire")(name.asInstanceOf[js.Any]).asInstanceOf[ServicePlugin | Null]
   
-  inline def sessionEnvironmentDetector(hasCapabilitiesRequestedCapabilities: typings.wdioUtils.anon.Capabilities): IsChrome = ^.asInstanceOf[js.Dynamic].applyDynamic("sessionEnvironmentDetector")(hasCapabilitiesRequestedCapabilities.asInstanceOf[js.Any]).asInstanceOf[IsChrome]
+  inline def sessionEnvironmentDetector(hasCapabilitiesRequestedCapabilities: typings.wdioUtils.anon.Capabilities): IsFirefox = ^.asInstanceOf[js.Dynamic].applyDynamic("sessionEnvironmentDetector")(hasCapabilitiesRequestedCapabilities.asInstanceOf[js.Any]).asInstanceOf[IsFirefox]
   
   inline def sleep(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[js.Promise[Any]]
   inline def sleep(ms: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]

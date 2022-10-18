@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PolyhedronData")
 @js.native
 open class PolyhedronData protected ()
-  extends typings.babylonjs.legacyMod.PolyhedronData {
+  extends typings.babylonjs.legacyLegacyMod.PolyhedronData {
   def this(
     name: String,
     category: String,

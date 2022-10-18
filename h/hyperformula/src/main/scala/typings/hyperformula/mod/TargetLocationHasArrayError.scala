@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "TargetLocationHasArrayError")
 @js.native
 open class TargetLocationHasArrayError ()
-  extends typings.hyperformula.errorsMod.TargetLocationHasArrayError
+  extends typings.hyperformula.typingsErrorsMod.TargetLocationHasArrayError

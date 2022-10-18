@@ -1,8 +1,9 @@
 package typings.jupyterlabStatusbar
 
-import typings.jupyterlabStatusbar.groupMod.GroupItem.IProps
-import typings.jupyterlabStatusbar.kernelStatusMod.KernelStatus.IOptions
-import typings.jupyterlabStatusbar.statusbarMod.StatusBar
+import typings.jupyterlabStatusbar.libComponentsGroupMod.GroupItem.IProps
+import typings.jupyterlabStatusbar.libDefaultsKernelStatusMod.KernelStatus.IOptions
+import typings.jupyterlabStatusbar.libStatusbarMod.StatusBar
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoCoreutils.mod.Token
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactElement
@@ -23,16 +24,17 @@ object mod {
   
   @JSImport("@jupyterlab/statusbar", "IStatusBar")
   @js.native
-  val IStatusBar: Token[typings.jupyterlabStatusbar.tokensMod.IStatusBar] = js.native
+  val IStatusBar: Token[typings.jupyterlabStatusbar.libTokensMod.IStatusBar] = js.native
   
   @JSImport("@jupyterlab/statusbar", "KernelStatus")
   @js.native
-  class KernelStatus protected ()
-    extends typings.jupyterlabStatusbar.defaultsMod.KernelStatus {
+  open class KernelStatus protected ()
+    extends typings.jupyterlabStatusbar.libDefaultsMod.KernelStatus {
     /**
       * Construct the kernel status widget.
       */
     def this(opts: IOptions) = this()
+    def this(opts: IOptions, translator: ITranslator) = this()
   }
   object KernelStatus {
     
@@ -41,8 +43,10 @@ object mod {
       */
     @JSImport("@jupyterlab/statusbar", "KernelStatus.Model")
     @js.native
-    class Model ()
-      extends typings.jupyterlabStatusbar.defaultsMod.KernelStatus.Model
+    open class Model ()
+      extends typings.jupyterlabStatusbar.libDefaultsMod.KernelStatus.Model {
+      def this(translator: ITranslator) = this()
+    }
   }
   
   @JSImport("@jupyterlab/statusbar", "LineCol")
@@ -50,8 +54,10 @@ object mod {
   /**
     * Construct a new LineCol status item.
     */
-  class LineCol ()
-    extends typings.jupyterlabStatusbar.defaultsMod.LineCol
+  open class LineCol ()
+    extends typings.jupyterlabStatusbar.libDefaultsMod.LineCol {
+    def this(translator: ITranslator) = this()
+  }
   object LineCol {
     
     /**
@@ -59,72 +65,51 @@ object mod {
       */
     @JSImport("@jupyterlab/statusbar", "LineCol.Model")
     @js.native
-    class Model ()
-      extends typings.jupyterlabStatusbar.defaultsMod.LineCol.Model
-  }
-  
-  @JSImport("@jupyterlab/statusbar", "MemoryUsage")
-  @js.native
-  /**
-    * Construct a new memory usage status item.
-    */
-  class MemoryUsage ()
-    extends typings.jupyterlabStatusbar.defaultsMod.MemoryUsage
-  object MemoryUsage {
-    
-    /**
-      * A VDomModel for the memory usage status item.
-      */
-    @JSImport("@jupyterlab/statusbar", "MemoryUsage.Model")
-    @js.native
-    class Model protected ()
-      extends typings.jupyterlabStatusbar.defaultsMod.MemoryUsage.Model {
-      /**
-        * Construct a new memory usage model.
-        *
-        * @param options: the options for creating the model.
-        */
-      def this(options: typings.jupyterlabStatusbar.memoryUsageMod.MemoryUsage.Model.IOptions) = this()
-    }
+    open class Model ()
+      extends typings.jupyterlabStatusbar.libDefaultsMod.LineCol.Model
   }
   
   @JSImport("@jupyterlab/statusbar", "Popup")
   @js.native
-  class Popup protected ()
-    extends typings.jupyterlabStatusbar.componentsMod.Popup {
+  open class Popup protected ()
+    extends typings.jupyterlabStatusbar.libComponentsMod.Popup {
     /**
       * Construct a new Popup.
       */
-    def this(options: typings.jupyterlabStatusbar.hoverMod.Popup.IOptions) = this()
+    def this(options: typings.jupyterlabStatusbar.libComponentsHoverMod.Popup.IOptions) = this()
   }
   
-  inline def ProgressBar(props: typings.jupyterlabStatusbar.progressBarMod.ProgressBar.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ProgressBar(props: typings.jupyterlabStatusbar.libComponentsProgressBarMod.ProgressBar.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressBar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def ProgressCircle(props: typings.jupyterlabStatusbar.libComponentsProgressCircleMod.ProgressCircle.IProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ProgressCircle")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@jupyterlab/statusbar", "RunningSessions")
   @js.native
-  class RunningSessions protected ()
-    extends typings.jupyterlabStatusbar.defaultsMod.RunningSessions {
+  open class RunningSessions protected ()
+    extends typings.jupyterlabStatusbar.libDefaultsMod.RunningSessions {
     /**
       * Create a new RunningSessions widget.
       */
-    def this(opts: typings.jupyterlabStatusbar.runningSessionsMod.RunningSessions.IOptions) = this()
+    def this(opts: typings.jupyterlabStatusbar.libDefaultsRunningSessionsMod.RunningSessions.IOptions) = this()
   }
   object RunningSessions {
     
     /**
-      * A VDomModel for the RunninSessions status item.
+      * A VDomModel for the RunningSessions status item.
       */
     @JSImport("@jupyterlab/statusbar", "RunningSessions.Model")
     @js.native
-    class Model ()
-      extends typings.jupyterlabStatusbar.defaultsMod.RunningSessions.Model
+    open class Model ()
+      extends typings.jupyterlabStatusbar.libDefaultsMod.RunningSessions.Model
   }
   
   @JSImport("@jupyterlab/statusbar", "StatusBar")
   @js.native
-  class StatusBar_ () extends StatusBar
+  open class StatusBar_ () extends StatusBar
   
-  inline def TextItem(props: typings.jupyterlabStatusbar.textMod.TextItem.IProps & HTMLAttributes[HTMLSpanElement]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TextItem(
+    props: typings.jupyterlabStatusbar.libComponentsTextMod.TextItem.IProps & HTMLAttributes[HTMLSpanElement]
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TextItem")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@jupyterlab/statusbar", "clickedItem")
   @js.native
@@ -146,7 +131,7 @@ object mod {
   @js.native
   val rightSide: String = js.native
   
-  inline def showPopup(options: typings.jupyterlabStatusbar.hoverMod.Popup.IOptions): typings.jupyterlabStatusbar.hoverMod.Popup = ^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabStatusbar.hoverMod.Popup]
+  inline def showPopup(options: typings.jupyterlabStatusbar.libComponentsHoverMod.Popup.IOptions): typings.jupyterlabStatusbar.libComponentsHoverMod.Popup = ^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(options.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabStatusbar.libComponentsHoverMod.Popup]
   
   @JSImport("@jupyterlab/statusbar", "side")
   @js.native

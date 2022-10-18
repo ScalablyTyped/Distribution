@@ -1,6 +1,7 @@
 package typings.wiredep
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadWriteStream
 import typings.wiredep.anon.Block
 import typings.wiredep.anon.BlockDetect
 import typings.wiredep.anon.Detect
@@ -32,7 +33,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stream(config: WiredepParams): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def stream(config: WiredepParams): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   trait FileObject extends StObject {
     

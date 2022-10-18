@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.Integer")
 @js.native
 open class Integer ()
-  extends typings.xadesjs.typesXmlMod.Integer {
+  extends typings.xadesjs.buildTypesXmlMod.Integer {
   def this(properties: js.Object) = this()
 }

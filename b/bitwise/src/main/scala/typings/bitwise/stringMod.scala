@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object stringMod {
   
-  @JSImport("bitwise/esm/string", JSImport.Namespace)
+  @JSImport("bitwise/string", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object default {
     
-    @JSImport("bitwise/esm/string", JSImport.Default)
+    @JSImport("bitwise/string", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.documenttemplates
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.documenttemplatesMod.StructureVersionInfo
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenDocumenttemplatesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell")
 @js.native
 open class DataGridCell protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.documenttemplates.DataGridCell {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.documenttemplates.DataGridCell {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -39,7 +39,7 @@ object DataGridCell {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridCell]
   
   /**
     * Creates and returns a new DataGridCell instance in the SDK and on the server.
@@ -47,7 +47,7 @@ object DataGridCell {
     * of the parent DataGridColumn element passed as argument.
     */
   /* static member */
-  inline def createInDataGridColumnUnderEvenRowsCell(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderEvenRowsCell")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell]
+  inline def createInDataGridColumnUnderEvenRowsCell(container: typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderEvenRowsCell")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridCell]
   
   /**
     * Creates and returns a new DataGridCell instance in the SDK and on the server.
@@ -55,7 +55,7 @@ object DataGridCell {
     * of the parent DataGridColumn element passed as argument.
     */
   /* static member */
-  inline def createInDataGridColumnUnderOddRowsCell(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderOddRowsCell")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell]
+  inline def createInDataGridColumnUnderOddRowsCell(container: typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderOddRowsCell")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenDocumenttemplatesMod.documenttemplates.DataGridCell]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell.structureTypeName")

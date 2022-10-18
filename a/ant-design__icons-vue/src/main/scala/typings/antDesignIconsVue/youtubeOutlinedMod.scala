@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsYoutubeOutlinedMod.YoutubeOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubeOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/YoutubeOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/YoutubeOutlined", JSImport.Default)
   @js.native
   val default: YoutubeOutlinedIconType = js.native
-  
-  @js.native
-  trait YoutubeOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_YoutubeOutlinedIconType: String = js.native
-  }
   
   type _To = YoutubeOutlinedIconType
   

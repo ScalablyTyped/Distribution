@@ -1,16 +1,13 @@
 package typings.reduxDevtoolsInstrument.mod
 
 import typings.redux.mod.Action
-import typings.redux.mod.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InstrumentExt[S, A /* <: Action[Any] */, MonitorState] extends StObject {
   
-  def liftedStore(): Observable[LiftedState[S, A, MonitorState]]
-  @JSName("liftedStore")
-  var liftedStore_Original: LiftedStore[S, A, MonitorState]
+  var liftedStore: LiftedStore[S, A, MonitorState]
 }
 object InstrumentExt {
   

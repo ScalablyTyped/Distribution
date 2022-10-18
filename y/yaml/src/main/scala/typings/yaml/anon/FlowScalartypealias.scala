@@ -1,6 +1,6 @@
 package typings.yaml.anon
 
-import typings.yaml.cstMod.SourceToken
+import typings.yaml.distParseCstMod.SourceToken
 import typings.yaml.yamlStrings.`double-quoted-scalar`
 import typings.yaml.yamlStrings.`single-quoted-scalar`
 import typings.yaml.yamlStrings.alias

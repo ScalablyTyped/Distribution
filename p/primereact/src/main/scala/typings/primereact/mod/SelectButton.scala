@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.selectbuttonMod.SelectButtonProps
+import typings.primereact.selectbuttonSelectbuttonMod.SelectButtonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "SelectButton")
 @js.native
 open class SelectButton protected ()
-  extends typings.primereact.selectbuttonMod.SelectButton {
+  extends typings.primereact.selectbuttonSelectbuttonMod.SelectButton {
   def this(props: SelectButtonProps) = this()
   /**
     * @deprecated

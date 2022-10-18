@@ -1,9 +1,9 @@
 package typings.formstate
 
-import typings.formstate.formStateLazyMod.ValidatableArray
-import typings.formstate.formStateMod.ValidatableMapOrArray
 import typings.formstate.formstateBooleans.`false`
 import typings.formstate.formstateBooleans.`true`
+import typings.formstate.libCoreFormStateLazyMod.ValidatableArray
+import typings.formstate.libCoreFormStateMod.ValidatableMapOrArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.CounterSignature")
 @js.native
 open class CounterSignature ()
-  extends typings.xadesjs.typesXmlMod.CounterSignature {
+  extends typings.xadesjs.buildTypesXmlMod.CounterSignature {
   def this(properties: js.Object) = this()
 }

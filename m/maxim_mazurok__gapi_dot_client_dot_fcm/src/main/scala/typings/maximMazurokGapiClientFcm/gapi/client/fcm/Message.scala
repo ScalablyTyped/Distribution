@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait Message extends StObject {
     * [`ApnsConfig`](/docs/reference/fcm/rest/v1/projects.messages#apnsconfig).
     */
   var data: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Input only. Template for FCM SDK feature options to use across all platforms. */
@@ -67,9 +64,7 @@ object Message {
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     inline def setData(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

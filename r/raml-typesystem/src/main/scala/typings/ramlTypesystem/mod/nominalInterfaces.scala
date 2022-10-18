@@ -9,7 +9,7 @@ object nominalInterfaces {
   @JSImport("raml-typesystem", "nominalInterfaces.ValueRequirement")
   @js.native
   open class ValueRequirement protected ()
-    extends typings.ramlTypesystem.nominalInterfacesMod.ValueRequirement {
+    extends typings.ramlTypesystem.distSrcNominalInterfacesMod.ValueRequirement {
     /**
       *
       * @param name name of the property to discriminate

@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for a device that invokes AutoPlay. */
-@JSGlobal("Windows.UI.WebUI.WebUIDeviceActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIDeviceActivatedEventArgs")
 @js.native
-abstract class WebUIDeviceActivatedEventArgs ()
+open class WebUIDeviceActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIDeviceActivatedEventArgs {
   

@@ -50,8 +50,10 @@ open class Point () extends StObject {
     * - `dataGroup.length` is the amount of points in the group.
     */
   var dataGroup: (js.UndefOr[
-    typings.highcharts.datagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
-  ]) & js.UndefOr[typings.highcharts.stockMod.highchartsAugmentingMod.DataGroupingInfoObject] = js.native
+    typings.highcharts.modulesDatagroupingMod.highchartsAugmentingMod.DataGroupingInfoObject
+  ]) & (js.UndefOr[
+    typings.highcharts.modulesStockMod.highchartsAugmentingMod.DataGroupingInfoObject
+  ]) = js.native
   
   /**
     * Perform drilldown on a point instance. The drilldown property must be
@@ -339,7 +341,9 @@ open class Point () extends StObject {
     * @param options
     *        Options for the sonification of the point.
     */
-  def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.PointSonifyOptionsObject): Unit = js.native
+  def sonify(
+    options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointSonifyOptionsObject
+  ): Unit = js.native
   
   /**
     * Extendable method for formatting each point's tooltip line.

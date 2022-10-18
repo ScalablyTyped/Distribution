@@ -9,7 +9,7 @@ trait EnhancedLocationsChangedEventArgs extends StObject {
   
   /**
     * Gets the set of enhanced locations.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     */
@@ -17,7 +17,7 @@ trait EnhancedLocationsChangedEventArgs extends StObject {
   
   /**
     * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
-    * 
+    *
     * @remarks
     * [Api set: Mailbox 1.8]
     */

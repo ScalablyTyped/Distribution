@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomStoreEntryDoc
+import typings.matrixAppserviceBridge.libComponentsRoomBridgeStoreMod.RoomStoreEntryDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RoomBridgeStoreEntry")
 @js.native
 open class RoomBridgeStoreEntry ()
-  extends typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry {
+  extends typings.matrixAppserviceBridge.libComponentsRoomBridgeStoreMod.RoomBridgeStoreEntry {
   def this(doc: RoomStoreEntryDoc) = this()
 }
 /* static members */
@@ -18,5 +18,5 @@ object RoomBridgeStoreEntry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def serializeEntry(entry: typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
+  inline def serializeEntry(entry: typings.matrixAppserviceBridge.libComponentsRoomBridgeStoreMod.RoomBridgeStoreEntry): RoomStoreEntryDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[RoomStoreEntryDoc]
 }

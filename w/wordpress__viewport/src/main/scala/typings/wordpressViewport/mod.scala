@@ -1,7 +1,6 @@
 package typings.wordpressViewport
 
 import typings.react.mod.ComponentType
-import typings.std.Omit
 import typings.std.Record
 import typings.wordpressViewport.anon.TypeofimportedActions
 import typings.wordpressViewport.anon.TypeofimportedSelectors
@@ -32,7 +31,13 @@ object mod {
     * ```
     */
   // prettier-ignore
-  inline def ifViewportMatches(query: String): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifViewportMatches")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
+  inline def ifViewportMatches(query: String): js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifViewportMatches")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
+  ]]
   
   /**
     * Higher-order component creator, creating a new component which renders with the given prop names,
@@ -54,7 +59,13 @@ object mod {
     * ```
     */
   // prettier-ignore
-  inline def withViewportMatch[T /* <: Record[String, String] */](queries: T): js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewportMatch")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Omit[Any, /* keyof T */ String]]]]
+  inline def withViewportMatch[T /* <: Record[String, String] */](queries: T): js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof T>> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withViewportMatch")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof T>> : never */ js.Any
+  ]]
   
   /* augmented module */
   object wordpressDataAugmentingMod {

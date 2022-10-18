@@ -1,10 +1,10 @@
 package typings.tuyaPanelKit.anon
 
 import typings.std.Partial
-import typings.tuyaPanelKit.routersTypesMod.NavigationState
-import typings.tuyaPanelKit.routersTypesMod.ParamListBase
-import typings.tuyaPanelKit.typesMod.EventMapBase
-import typings.tuyaPanelKit.typesMod.ScreenListeners
+import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.EventMapBase
+import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.ScreenListeners
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

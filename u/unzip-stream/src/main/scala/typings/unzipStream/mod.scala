@@ -1,8 +1,8 @@
 package typings.unzipStream
 
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.PassThrough
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import typings.unzipStream.anon.DecodeString
 import typings.unzipStream.anon.`0`
 import typings.unzipStream.unzipStreamStrings.Directory
@@ -17,10 +17,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Extract(options: DecodeString): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any]]
+  inline def Extract(options: DecodeString): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
   
-  inline def Parse(): WritableStream[Any] & ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[WritableStream[Any] & ReadableStream[Any]]
-  inline def Parse(options: `0`): WritableStream[Any] & ReadableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any] & ReadableStream[Any]]
+  inline def Parse(): WritableStream & ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[WritableStream & ReadableStream]
+  inline def Parse(options: `0`): WritableStream & ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream & ReadableStream]
   
   @js.native
   trait Entry extends PassThrough {

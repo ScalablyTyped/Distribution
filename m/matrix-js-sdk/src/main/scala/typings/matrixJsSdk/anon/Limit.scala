@@ -6,24 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Limit extends StObject {
   
-  // the term with which to search.
-  var limit: js.UndefOr[Double] = js.undefined
+  //  Token to paginate from
+  var filter: Genericsearchterm
   
-  var term: String
+  //  The remote server to query for the room list. Optional. If unspecified, get the local home server's public room list.
+  var limit: Double
+  
+  var server: String
+  
+  //  Maximum number of entries to return
+  var since: String
 }
 object Limit {
   
-  inline def apply(term: String): Limit = {
-    val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
+  inline def apply(filter: Genericsearchterm, limit: Double, server: String, since: String): Limit = {
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
   
   extension [Self <: Limit](x: Self) {
     
+    inline def setFilter(value: Genericsearchterm): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
   }
 }

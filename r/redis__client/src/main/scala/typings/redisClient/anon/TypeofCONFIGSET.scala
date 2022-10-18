@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.configSETMod.MultipleParameters
-import typings.redisClient.configSETMod.SingleParameter
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsConfigSETMod.MultipleParameters
+import typings.redisClient.distLibCommandsConfigSETMod.SingleParameter
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

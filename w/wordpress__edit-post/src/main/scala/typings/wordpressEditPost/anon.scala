@@ -453,7 +453,7 @@ object anon {
     def getMetaBoxesPerLocation(location: MetaboxLocation): js.UndefOr[js.Array[MetaboxDescriptor]] = js.native
     
     def getPreference[T](preferenceKey: String): js.UndefOr[T] = js.native
-    def getPreference[T](preferenceKey: String, defaultValue: T): T | Double | String = js.native
+    def getPreference[T](preferenceKey: String, defaultValue: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? string : T extends number ? number : T */ js.Any = js.native
     
     def getPreferences(): Record[String, Any] = js.native
     

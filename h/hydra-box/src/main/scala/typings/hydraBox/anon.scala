@@ -2,7 +2,7 @@ package typings.hydraBox
 
 import typings.clownface.mod.GraphPointer
 import typings.node.streamMod.Readable
-import typings.rdfExt.datasetMod.^
+import typings.rdfExt.libDatasetMod.^
 import typings.rdfjsTypes.dataModelMod.NamedNode
 import typings.rdfjsTypes.dataModelMod.Quad
 import typings.rdfjsTypes.datasetMod.DatasetCore

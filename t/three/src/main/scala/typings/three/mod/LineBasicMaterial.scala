@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.lineBasicMaterialMod.LineBasicMaterialParameters
+import typings.three.srcMaterialsLineBasicMaterialMod.LineBasicMaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "LineBasicMaterial")
 @js.native
 open class LineBasicMaterial ()
-  extends typings.three.threeMod.LineBasicMaterial {
+  extends typings.three.srcThreeMod.LineBasicMaterial {
   def this(parameters: LineBasicMaterialParameters) = this()
 }

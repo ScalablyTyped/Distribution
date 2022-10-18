@@ -2,10 +2,10 @@ package typings.reactThemeableTs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Validator
-import typings.reactThemeableTs.hocMod.IThemeDecoratorArgs
-import typings.reactThemeableTs.hocMod.TDecComponent
-import typings.reactThemeableTs.themeProviderMod.IThemeProviderProps
-import typings.reactThemeableTs.themeableMod.IStaticFn
+import typings.reactThemeableTs.buildEs5HocMod.IThemeDecoratorArgs
+import typings.reactThemeableTs.buildEs5HocMod.TDecComponent
+import typings.reactThemeableTs.buildEs5ThemeProviderMod.IThemeProviderProps
+import typings.reactThemeableTs.buildEs5ThemeableMod.IStaticFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object mod {
   @JSImport("react-themeable-ts", "ThemeProvider")
   @js.native
   open class ThemeProvider protected ()
-    extends typings.reactThemeableTs.themeProviderMod.ThemeProvider {
+    extends typings.reactThemeableTs.buildEs5ThemeProviderMod.ThemeProvider {
     def this(props: IThemeProviderProps) = this()
     /**
       * @deprecated

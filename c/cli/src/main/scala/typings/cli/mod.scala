@@ -3,7 +3,7 @@ package typings.cli
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.cli.anon.`0`
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,8 +110,8 @@ object mod extends Shortcut {
     
     def progress(progress: Double): Unit = js.native
     def progress(progress: Double, decimals: Double): Unit = js.native
-    def progress(progress: Double, decimals: Double, stream: WritableStream[Any]): Unit = js.native
-    def progress(progress: Double, decimals: Unit, stream: WritableStream[Any]): Unit = js.native
+    def progress(progress: Double, decimals: Double, stream: WritableStream): Unit = js.native
+    def progress(progress: Double, decimals: Unit, stream: WritableStream): Unit = js.native
     
     def setApp(appName: String, version: String): CLI = js.native
     def setApp(packageJson: String): CLI = js.native
@@ -126,15 +126,15 @@ object mod extends Shortcut {
     def spinner(): Unit = js.native
     def spinner(prefix: String): Unit = js.native
     def spinner(prefix: String, end: Boolean): Unit = js.native
-    def spinner(prefix: String, end: Boolean, stream: WritableStream[Any]): Unit = js.native
-    def spinner(prefix: String, end: Unit, stream: WritableStream[Any]): Unit = js.native
+    def spinner(prefix: String, end: Boolean, stream: WritableStream): Unit = js.native
+    def spinner(prefix: String, end: Unit, stream: WritableStream): Unit = js.native
     def spinner(prefix: Boolean): Unit = js.native
     def spinner(prefix: Boolean, end: Boolean): Unit = js.native
-    def spinner(prefix: Boolean, end: Boolean, stream: WritableStream[Any]): Unit = js.native
-    def spinner(prefix: Boolean, end: Unit, stream: WritableStream[Any]): Unit = js.native
+    def spinner(prefix: Boolean, end: Boolean, stream: WritableStream): Unit = js.native
+    def spinner(prefix: Boolean, end: Unit, stream: WritableStream): Unit = js.native
     def spinner(prefix: Unit, end: Boolean): Unit = js.native
-    def spinner(prefix: Unit, end: Boolean, stream: WritableStream[Any]): Unit = js.native
-    def spinner(prefix: Unit, end: Unit, stream: WritableStream[Any]): Unit = js.native
+    def spinner(prefix: Unit, end: Boolean, stream: WritableStream): Unit = js.native
+    def spinner(prefix: Unit, end: Unit, stream: WritableStream): Unit = js.native
     
     def toType(`object`: Any): String = js.native
     

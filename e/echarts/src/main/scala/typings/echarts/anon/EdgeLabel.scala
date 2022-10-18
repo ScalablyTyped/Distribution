@@ -9,7 +9,7 @@ trait EdgeLabel extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.edgeLabel
     */
-  var edgeLabel: js.UndefOr[FontSize] = js.undefined
+  var edgeLabel: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis.itemStyle
@@ -35,7 +35,7 @@ object EdgeLabel {
   
   extension [Self <: EdgeLabel](x: Self) {
     
-    inline def setEdgeLabel(value: FontSize): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
+    inline def setEdgeLabel(value: FontFamily): Self = StObject.set(x, "edgeLabel", value.asInstanceOf[js.Any])
     
     inline def setEdgeLabelUndefined: Self = StObject.set(x, "edgeLabel", js.undefined)
     

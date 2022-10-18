@@ -3,22 +3,22 @@ package typings.reactShare
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.global.JSX.Element
-import typings.reactShare.anon.PickHTMLAttributesHTMLSpa
-import typings.reactShare.anon.PickPropsOptionsclassName
-import typings.reactShare.anon.PickPropsOptionsclassNameAbout
-import typings.reactShare.anon.PickPropsOptionsclassNameAccessKey
-import typings.reactShare.anon.PickPropsOptionsclassNameAriaactivedescendant
-import typings.reactShare.anon.PickPropsOptionstagsstrin
-import typings.reactShare.anon.PickPropsmediastringdescr
-import typings.reactShare.anon.PickPropsquotestringundef
-import typings.reactShare.anon.PickPropstitlestringundef
-import typings.reactShare.anon.PickPropstitlestringundefAbout
-import typings.reactShare.anon.PickPropstitlestringundefAccessKey
-import typings.reactShare.anon.PickPropstitlestringundefAriaactivedescendant
-import typings.reactShare.anon.PickPropstitlestringundefAriaatomic
-import typings.reactShare.anon.PickPropstitlestringundefAriaautocomplete
-import typings.reactShare.anon.PickPropstitlestringundefAriabusy
-import typings.reactShare.anon.PickSVGPropsSVGSVGElement
+import typings.reactShare.anon.OmitHTMLAttributesHTMLSpa
+import typings.reactShare.anon.OmitPropsOptionsforwarded
+import typings.reactShare.anon.OmitPropsOptionsforwardedAbout
+import typings.reactShare.anon.OmitPropsOptionsforwardedAccessKey
+import typings.reactShare.anon.OmitPropsOptionsforwardedAriaactivedescendant
+import typings.reactShare.anon.OmitPropsOptionstagsstrin
+import typings.reactShare.anon.OmitPropsmediastringdescr
+import typings.reactShare.anon.OmitPropsquotestringundef
+import typings.reactShare.anon.OmitPropstitlestringundef
+import typings.reactShare.anon.OmitPropstitlestringundefAbout
+import typings.reactShare.anon.OmitPropstitlestringundefAccessKey
+import typings.reactShare.anon.OmitPropstitlestringundefAriaactivedescendant
+import typings.reactShare.anon.OmitPropstitlestringundefAriaatomic
+import typings.reactShare.anon.OmitPropstitlestringundefAriaautocomplete
+import typings.reactShare.anon.OmitPropstitlestringundefAriabusy
+import typings.reactShare.anon.OmitSVGPropsSVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,31 +27,31 @@ object mod {
   
   @JSImport("react-share", "EmailIcon")
   @js.native
-  val EmailIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val EmailIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "EmailShareButton")
   @js.native
-  val EmailShareButton: ForwardRefExoticComponent[PickPropsOptionsclassName] = js.native
+  val EmailShareButton: ForwardRefExoticComponent[OmitPropsOptionsforwarded] = js.native
   
   @JSImport("react-share", "FacebookIcon")
   @js.native
-  val FacebookIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val FacebookIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "FacebookMessengerIcon")
   @js.native
-  val FacebookMessengerIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val FacebookMessengerIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "FacebookMessengerShareButton")
   @js.native
-  val FacebookMessengerShareButton: ForwardRefExoticComponent[PickPropsOptionsclassNameAbout] = js.native
+  val FacebookMessengerShareButton: ForwardRefExoticComponent[OmitPropsOptionsforwardedAbout] = js.native
   
   @JSImport("react-share", "FacebookShareButton")
   @js.native
-  val FacebookShareButton: ForwardRefExoticComponent[PickPropsquotestringundef] = js.native
+  val FacebookShareButton: ForwardRefExoticComponent[OmitPropsquotestringundef] = js.native
   
   object FacebookShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "FacebookShareCount")
     @js.native
@@ -65,15 +65,15 @@ object mod {
   
   @JSImport("react-share", "HatenaIcon")
   @js.native
-  val HatenaIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val HatenaIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "HatenaShareButton")
   @js.native
-  val HatenaShareButton: ForwardRefExoticComponent[PickPropstitlestringundef] = js.native
+  val HatenaShareButton: ForwardRefExoticComponent[OmitPropstitlestringundef] = js.native
   
   object HatenaShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "HatenaShareCount")
     @js.native
@@ -87,55 +87,55 @@ object mod {
   
   @JSImport("react-share", "InstapaperIcon")
   @js.native
-  val InstapaperIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val InstapaperIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "InstapaperShareButton")
   @js.native
-  val InstapaperShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAbout] = js.native
+  val InstapaperShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAbout] = js.native
   
   @JSImport("react-share", "LineIcon")
   @js.native
-  val LineIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val LineIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "LineShareButton")
   @js.native
-  val LineShareButton: ForwardRefExoticComponent[PickPropstitlestringundef] = js.native
+  val LineShareButton: ForwardRefExoticComponent[OmitPropstitlestringundef] = js.native
   
   @JSImport("react-share", "LinkedinIcon")
   @js.native
-  val LinkedinIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val LinkedinIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "LinkedinShareButton")
   @js.native
-  val LinkedinShareButton: ForwardRefExoticComponent[PickPropsOptionsclassNameAccessKey] = js.native
+  val LinkedinShareButton: ForwardRefExoticComponent[OmitPropsOptionsforwardedAccessKey] = js.native
   
   @JSImport("react-share", "LivejournalIcon")
   @js.native
-  val LivejournalIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val LivejournalIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "LivejournalShareButton")
   @js.native
-  val LivejournalShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAbout] = js.native
+  val LivejournalShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAbout] = js.native
   
   @JSImport("react-share", "MailruIcon")
   @js.native
-  val MailruIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val MailruIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "MailruShareButton")
   @js.native
-  val MailruShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAccessKey] = js.native
+  val MailruShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAccessKey] = js.native
   
   @JSImport("react-share", "OKIcon")
   @js.native
-  val OKIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val OKIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "OKShareButton")
   @js.native
-  val OKShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAriaactivedescendant] = js.native
+  val OKShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriaactivedescendant] = js.native
   
   object OKShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "OKShareCount")
     @js.native
@@ -149,15 +149,15 @@ object mod {
   
   @JSImport("react-share", "PinterestIcon")
   @js.native
-  val PinterestIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val PinterestIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "PinterestShareButton")
   @js.native
-  val PinterestShareButton: ForwardRefExoticComponent[PickPropsmediastringdescr] = js.native
+  val PinterestShareButton: ForwardRefExoticComponent[OmitPropsmediastringdescr] = js.native
   
   object PinterestShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "PinterestShareCount")
     @js.native
@@ -171,23 +171,23 @@ object mod {
   
   @JSImport("react-share", "PocketIcon")
   @js.native
-  val PocketIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val PocketIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "PocketShareButton")
   @js.native
-  val PocketShareButton: ForwardRefExoticComponent[PickPropstitlestringundef] = js.native
+  val PocketShareButton: ForwardRefExoticComponent[OmitPropstitlestringundef] = js.native
   
   @JSImport("react-share", "RedditIcon")
   @js.native
-  val RedditIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val RedditIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "RedditShareButton")
   @js.native
-  val RedditShareButton: ForwardRefExoticComponent[PickPropstitlestringundef] = js.native
+  val RedditShareButton: ForwardRefExoticComponent[OmitPropstitlestringundef] = js.native
   
   object RedditShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "RedditShareCount")
     @js.native
@@ -201,23 +201,23 @@ object mod {
   
   @JSImport("react-share", "TelegramIcon")
   @js.native
-  val TelegramIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val TelegramIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "TelegramShareButton")
   @js.native
-  val TelegramShareButton: ForwardRefExoticComponent[PickPropstitlestringundef] = js.native
+  val TelegramShareButton: ForwardRefExoticComponent[OmitPropstitlestringundef] = js.native
   
   @JSImport("react-share", "TumblrIcon")
   @js.native
-  val TumblrIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val TumblrIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "TumblrShareButton")
   @js.native
-  val TumblrShareButton: ForwardRefExoticComponent[PickPropsOptionstagsstrin] = js.native
+  val TumblrShareButton: ForwardRefExoticComponent[OmitPropsOptionstagsstrin] = js.native
   
   object TumblrShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "TumblrShareCount")
     @js.native
@@ -231,23 +231,23 @@ object mod {
   
   @JSImport("react-share", "TwitterIcon")
   @js.native
-  val TwitterIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val TwitterIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "TwitterShareButton")
   @js.native
-  val TwitterShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAriaatomic] = js.native
+  val TwitterShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriaatomic] = js.native
   
   @JSImport("react-share", "VKIcon")
   @js.native
-  val VKIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val VKIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "VKShareButton")
   @js.native
-  val VKShareButton: ForwardRefExoticComponent[PickPropsOptionsclassNameAriaactivedescendant] = js.native
+  val VKShareButton: ForwardRefExoticComponent[OmitPropsOptionsforwardedAriaactivedescendant] = js.native
   
   object VKShareCount {
     
-    inline def apply(props: PickHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: OmitHTMLAttributesHTMLSpa): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-share", "VKShareCount")
     @js.native
@@ -261,33 +261,33 @@ object mod {
   
   @JSImport("react-share", "ViberIcon")
   @js.native
-  val ViberIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val ViberIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "ViberShareButton")
   @js.native
-  val ViberShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAriaautocomplete] = js.native
+  val ViberShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriaautocomplete] = js.native
   
   @JSImport("react-share", "WeiboIcon")
   @js.native
-  val WeiboIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val WeiboIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "WeiboShareButton")
   @js.native
-  val WeiboShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAriabusy] = js.native
+  val WeiboShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriabusy] = js.native
   
   @JSImport("react-share", "WhatsappIcon")
   @js.native
-  val WhatsappIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val WhatsappIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "WhatsappShareButton")
   @js.native
-  val WhatsappShareButton: ForwardRefExoticComponent[PickPropstitlestringundefAriaautocomplete] = js.native
+  val WhatsappShareButton: ForwardRefExoticComponent[OmitPropstitlestringundefAriaautocomplete] = js.native
   
   @JSImport("react-share", "WorkplaceIcon")
   @js.native
-  val WorkplaceIcon: FC[PickSVGPropsSVGSVGElement] = js.native
+  val WorkplaceIcon: FC[OmitSVGPropsSVGSVGElement] = js.native
   
   @JSImport("react-share", "WorkplaceShareButton")
   @js.native
-  val WorkplaceShareButton: ForwardRefExoticComponent[PickPropsquotestringundef] = js.native
+  val WorkplaceShareButton: ForwardRefExoticComponent[OmitPropsquotestringundef] = js.native
 }

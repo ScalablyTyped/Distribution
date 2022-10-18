@@ -1,7 +1,7 @@
 package typings.jupyterlabServices.anon
 
-import typings.jupyterlabServices.kernelRestapiMod.IModel
-import typings.jupyterlabServices.sessionRestapiMod.DeepPartial
+import typings.jupyterlabServices.libKernelRestapiMod.IModel
+import typings.jupyterlabServices.libSessionRestapiMod.DeepPartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

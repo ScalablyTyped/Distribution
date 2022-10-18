@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RecastJSCrowd")
 @js.native
 open class RecastJSCrowd protected ()
-  extends typings.babylonjs.legacyMod.RecastJSCrowd {
+  extends typings.babylonjs.legacyLegacyMod.RecastJSCrowd {
   /**
     * Constructor
     * @param plugin recastJS plugin
@@ -17,7 +17,7 @@ open class RecastJSCrowd protected ()
     * @returns the crowd you can add agents to
     */
   def this(
-    plugin: typings.babylonjs.recastJSPluginMod.RecastJSPlugin,
+    plugin: typings.babylonjs.navigationPluginsRecastJSPluginMod.RecastJSPlugin,
     maxAgents: Double,
     maxAgentRadius: Double,
     scene: typings.babylonjs.sceneMod.Scene

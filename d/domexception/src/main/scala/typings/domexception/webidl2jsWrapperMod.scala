@@ -1,6 +1,6 @@
 package typings.domexception
 
-import typings.domexception.domexceptionImplMod.implementation
+import typings.domexception.libDomexceptionImplMod.implementation
 import typings.domexception.mod.DOMException
 import typings.webidlConversions.mod.Options
 import org.scalablytyped.runtime.StObject

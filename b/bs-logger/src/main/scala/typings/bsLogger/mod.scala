@@ -1,11 +1,11 @@
 package typings.bsLogger
 
-import typings.bsLogger.loggerMod.CreateLoggerOptions
-import typings.bsLogger.loggerMod.Logger
-import typings.bsLogger.messageMod.LogMessageFormatter
-import typings.bsLogger.targetMockMod.ExtendedArray
-import typings.bsLogger.targetMod.LogTarget
-import typings.bsLogger.testingMod.LoggerMock
+import typings.bsLogger.distLoggerMessageMod.LogMessageFormatter
+import typings.bsLogger.distLoggerMod.CreateLoggerOptions
+import typings.bsLogger.distLoggerMod.Logger
+import typings.bsLogger.distLoggerTargetMod.LogTarget
+import typings.bsLogger.distTestingMod.LoggerMock
+import typings.bsLogger.distTestingTargetMockMod.ExtendedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,17 +29,17 @@ object mod {
   object LogContexts extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bsLogger.contextMod.LogContexts & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bsLogger.distLoggerContextMod.LogContexts & String] = js.native
     
-    /* "package" */ val _package: typings.bsLogger.contextMod.LogContexts._package & String = js.native
+    /* "package" */ val _package: typings.bsLogger.distLoggerContextMod.LogContexts._package & String = js.native
     
-    /* "application" */ val application: typings.bsLogger.contextMod.LogContexts.application & String = js.native
+    /* "application" */ val application: typings.bsLogger.distLoggerContextMod.LogContexts.application & String = js.native
     
-    /* "hostname" */ val hostname: typings.bsLogger.contextMod.LogContexts.hostname & String = js.native
+    /* "hostname" */ val hostname: typings.bsLogger.distLoggerContextMod.LogContexts.hostname & String = js.native
     
-    /* "logLevel" */ val logLevel: typings.bsLogger.contextMod.LogContexts.logLevel & String = js.native
+    /* "logLevel" */ val logLevel: typings.bsLogger.distLoggerContextMod.LogContexts.logLevel & String = js.native
     
-    /* "namespace" */ val namespace: typings.bsLogger.contextMod.LogContexts.namespace & String = js.native
+    /* "namespace" */ val namespace: typings.bsLogger.distLoggerContextMod.LogContexts.namespace & String = js.native
   }
   
   object LogLevels {
@@ -124,18 +124,18 @@ object mod {
     @JSImport("bs-logger", "testing.LogTargetMock")
     @js.native
     open class LogTargetMock ()
-      extends typings.bsLogger.testingMod.LogTargetMock {
+      extends typings.bsLogger.distTestingMod.LogTargetMock {
       def this(minLevel: Double) = this()
     }
     
     inline def createLoggerMock(): LoggerMock = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerMock")().asInstanceOf[LoggerMock]
-    inline def createLoggerMock(options: Unit, target: typings.bsLogger.targetMockMod.LogTargetMock): LoggerMock = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerMock")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[LoggerMock]
+    inline def createLoggerMock(options: Unit, target: typings.bsLogger.distTestingTargetMockMod.LogTargetMock): LoggerMock = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerMock")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[LoggerMock]
     inline def createLoggerMock(options: CreateLoggerOptions): LoggerMock = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerMock")(options.asInstanceOf[js.Any]).asInstanceOf[LoggerMock]
-    inline def createLoggerMock(options: CreateLoggerOptions, target: typings.bsLogger.targetMockMod.LogTargetMock): LoggerMock = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerMock")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[LoggerMock]
+    inline def createLoggerMock(options: CreateLoggerOptions, target: typings.bsLogger.distTestingTargetMockMod.LogTargetMock): LoggerMock = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoggerMock")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[LoggerMock]
     
     inline def extendArray[T](array: js.Array[T]): ExtendedArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("extendArray")(array.asInstanceOf[js.Any]).asInstanceOf[ExtendedArray[T]]
     
     inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
-    inline def setup(target: typings.bsLogger.targetMockMod.LogTargetMock): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setup(target: typings.bsLogger.distTestingTargetMockMod.LogTargetMock): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

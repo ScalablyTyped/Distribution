@@ -1,7 +1,7 @@
 
 # Scala.js typings for jssha
 
-Typings are for version 3.2.0
+Typings are for version 3.3.0
 
 ## Library description:
 jsSHA implements the complete Secure Hash Standard (SHA) family (SHA-1, SHA-224/256/384/512, SHA3-224/256/384/512, SHAKE128/256, cSHAKE128/256, and KMAC128/256) with HMAC

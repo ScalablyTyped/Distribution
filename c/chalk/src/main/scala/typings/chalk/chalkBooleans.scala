@@ -1,6 +1,6 @@
 package typings.chalk
 
-import typings.chalk.supportsColorMod.ColorInfo
+import typings.chalk.sourceVendorSupportsColorMod.ColorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

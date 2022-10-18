@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Emitter")
 @js.native
 open class Emitter ()
-  extends typings.blackEngine.emitterMod.Emitter
+  extends typings.blackEngine.particlesEmitterMod.Emitter

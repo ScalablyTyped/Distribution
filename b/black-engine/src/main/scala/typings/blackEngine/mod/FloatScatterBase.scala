@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "FloatScatterBase")
 @js.native
 open class FloatScatterBase ()
-  extends typings.blackEngine.floatScatterBaseMod.FloatScatterBase
+  extends typings.blackEngine.scattersFloatScatterBaseMod.FloatScatterBase

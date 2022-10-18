@@ -16,7 +16,7 @@ object materialsPbrIndexMod {
     * @param externalProperties list of external properties to inject into the object
     */
   open class MaterialAnisotropicDefines ()
-    extends typings.babylonjs.pbrAnisotropicConfigurationMod.MaterialAnisotropicDefines {
+    extends typings.babylonjs.materialsPbrPbrAnisotropicConfigurationMod.MaterialAnisotropicDefines {
     def this(externalProperties: StringDictionary[Default]) = this()
   }
   
@@ -27,7 +27,7 @@ object materialsPbrIndexMod {
     * @param externalProperties list of external properties to inject into the object
     */
   open class MaterialClearCoatDefines ()
-    extends typings.babylonjs.pbrClearCoatConfigurationMod.MaterialClearCoatDefines {
+    extends typings.babylonjs.materialsPbrPbrClearCoatConfigurationMod.MaterialClearCoatDefines {
     def this(externalProperties: StringDictionary[Default]) = this()
   }
   
@@ -38,7 +38,7 @@ object materialsPbrIndexMod {
     * @param externalProperties list of external properties to inject into the object
     */
   open class MaterialIridescenceDefines ()
-    extends typings.babylonjs.pbrIridescenceConfigurationMod.MaterialIridescenceDefines {
+    extends typings.babylonjs.materialsPbrPbrIridescenceConfigurationMod.MaterialIridescenceDefines {
     def this(externalProperties: StringDictionary[Default]) = this()
   }
   
@@ -49,7 +49,7 @@ object materialsPbrIndexMod {
     * @param externalProperties list of external properties to inject into the object
     */
   open class MaterialSheenDefines ()
-    extends typings.babylonjs.pbrSheenConfigurationMod.MaterialSheenDefines {
+    extends typings.babylonjs.materialsPbrPbrSheenConfigurationMod.MaterialSheenDefines {
     def this(externalProperties: StringDictionary[Default]) = this()
   }
   
@@ -60,22 +60,25 @@ object materialsPbrIndexMod {
     * @param externalProperties list of external properties to inject into the object
     */
   open class MaterialSubSurfaceDefines ()
-    extends typings.babylonjs.pbrSubSurfaceConfigurationMod.MaterialSubSurfaceDefines {
+    extends typings.babylonjs.materialsPbrPbrSubSurfaceConfigurationMod.MaterialSubSurfaceDefines {
     def this(externalProperties: StringDictionary[Default]) = this()
   }
   
   @JSImport("babylonjs/Materials/PBR/index", "PBRAnisotropicConfiguration")
   @js.native
   open class PBRAnisotropicConfiguration protected ()
-    extends typings.babylonjs.pbrAnisotropicConfigurationMod.PBRAnisotropicConfiguration {
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+    extends typings.babylonjs.materialsPbrPbrAnisotropicConfigurationMod.PBRAnisotropicConfiguration {
+    def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+    def this(
+      material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+      addToPluginList: Boolean
+    ) = this()
   }
   
-  @JSImport("babylonjs/Materials/PBR/index", "PBRBaseMaterial")
+  /* note: abstract class */ @JSImport("babylonjs/Materials/PBR/index", "PBRBaseMaterial")
   @js.native
-  abstract class PBRBaseMaterial protected ()
-    extends typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial {
+  open class PBRBaseMaterial protected ()
+    extends typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial {
     /**
       * Instantiates a new PBRMaterial instance.
       *
@@ -154,10 +157,10 @@ object materialsPbrIndexMod {
     val PBRMATERIAL_OPAQUE: Double = js.native
   }
   
-  @JSImport("babylonjs/Materials/PBR/index", "PBRBaseSimpleMaterial")
+  /* note: abstract class */ @JSImport("babylonjs/Materials/PBR/index", "PBRBaseSimpleMaterial")
   @js.native
-  abstract class PBRBaseSimpleMaterial protected ()
-    extends typings.babylonjs.pbrBaseSimpleMaterialMod.PBRBaseSimpleMaterial {
+  open class PBRBaseSimpleMaterial protected ()
+    extends typings.babylonjs.materialsPbrPbrBaseSimpleMaterialMod.PBRBaseSimpleMaterial {
     /**
       * Instantiates a new PBRMaterial instance.
       *
@@ -171,9 +174,12 @@ object materialsPbrIndexMod {
   @JSImport("babylonjs/Materials/PBR/index", "PBRClearCoatConfiguration")
   @js.native
   open class PBRClearCoatConfiguration protected ()
-    extends typings.babylonjs.pbrClearCoatConfigurationMod.PBRClearCoatConfiguration {
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+    extends typings.babylonjs.materialsPbrPbrClearCoatConfigurationMod.PBRClearCoatConfiguration {
+    def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+    def this(
+      material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+      addToPluginList: Boolean
+    ) = this()
   }
   /* static members */
   object PBRClearCoatConfiguration {
@@ -191,9 +197,12 @@ object materialsPbrIndexMod {
   @JSImport("babylonjs/Materials/PBR/index", "PBRIridescenceConfiguration")
   @js.native
   open class PBRIridescenceConfiguration protected ()
-    extends typings.babylonjs.pbrIridescenceConfigurationMod.PBRIridescenceConfiguration {
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+    extends typings.babylonjs.materialsPbrPbrIridescenceConfigurationMod.PBRIridescenceConfiguration {
+    def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+    def this(
+      material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+      addToPluginList: Boolean
+    ) = this()
   }
   /* static members */
   object PBRIridescenceConfiguration {
@@ -229,7 +238,7 @@ object materialsPbrIndexMod {
   @JSImport("babylonjs/Materials/PBR/index", "PBRMaterial")
   @js.native
   open class PBRMaterial protected ()
-    extends typings.babylonjs.pbrMaterialMod.PBRMaterial {
+    extends typings.babylonjs.materialsPbrPbrMaterialMod.PBRMaterial {
     /**
       * Instantiates a new PBRMaterial instance.
       *
@@ -291,7 +300,7 @@ object materialsPbrIndexMod {
       * @param rootUrl - url for the scene object
       * @returns - PBRMaterial
       */
-    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMaterialMod.PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrMaterialMod.PBRMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsPbrPbrMaterialMod.PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsPbrPbrMaterialMod.PBRMaterial]
   }
   
   @JSImport("babylonjs/Materials/PBR/index", "PBRMaterialDefines")
@@ -301,14 +310,14 @@ object materialsPbrIndexMod {
     * @param externalProperties The external properties
     */
   open class PBRMaterialDefines ()
-    extends typings.babylonjs.pbrBaseMaterialMod.PBRMaterialDefines {
+    extends typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRMaterialDefines {
     def this(externalProperties: StringDictionary[Default]) = this()
   }
   
   @JSImport("babylonjs/Materials/PBR/index", "PBRMetallicRoughnessMaterial")
   @js.native
   open class PBRMetallicRoughnessMaterial protected ()
-    extends typings.babylonjs.pbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial {
+    extends typings.babylonjs.materialsPbrPbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial {
     /**
       * Instantiates a new PBRMetalRoughnessMaterial instance.
       *
@@ -331,21 +340,24 @@ object materialsPbrIndexMod {
       * @param scene
       * @param rootUrl
       */
-    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsPbrPbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsPbrPbrMetallicRoughnessMaterialMod.PBRMetallicRoughnessMaterial]
   }
   
   @JSImport("babylonjs/Materials/PBR/index", "PBRSheenConfiguration")
   @js.native
   open class PBRSheenConfiguration protected ()
-    extends typings.babylonjs.pbrSheenConfigurationMod.PBRSheenConfiguration {
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+    extends typings.babylonjs.materialsPbrPbrSheenConfigurationMod.PBRSheenConfiguration {
+    def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+    def this(
+      material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+      addToPluginList: Boolean
+    ) = this()
   }
   
   @JSImport("babylonjs/Materials/PBR/index", "PBRSpecularGlossinessMaterial")
   @js.native
   open class PBRSpecularGlossinessMaterial protected ()
-    extends typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial {
+    extends typings.babylonjs.materialsPbrPbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial {
     /**
       * Instantiates a new PBRSpecularGlossinessMaterial instance.
       *
@@ -368,14 +380,17 @@ object materialsPbrIndexMod {
       * @param scene
       * @param rootUrl
       */
-    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.materialsPbrPbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsPbrPbrSpecularGlossinessMaterialMod.PBRSpecularGlossinessMaterial]
   }
   
   @JSImport("babylonjs/Materials/PBR/index", "PBRSubSurfaceConfiguration")
   @js.native
   open class PBRSubSurfaceConfiguration protected ()
-    extends typings.babylonjs.pbrSubSurfaceConfigurationMod.PBRSubSurfaceConfiguration {
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial) = this()
-    def this(material: typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial, addToPluginList: Boolean) = this()
+    extends typings.babylonjs.materialsPbrPbrSubSurfaceConfigurationMod.PBRSubSurfaceConfiguration {
+    def this(material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial) = this()
+    def this(
+      material: typings.babylonjs.materialsPbrPbrBaseMaterialMod.PBRBaseMaterial,
+      addToPluginList: Boolean
+    ) = this()
   }
 }

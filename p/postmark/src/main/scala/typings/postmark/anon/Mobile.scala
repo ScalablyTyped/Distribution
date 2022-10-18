@@ -8,16 +8,18 @@ trait Mobile extends StObject {
   
   var Date: String
   
-  var Desktop: Double
+  var Desktop: js.UndefOr[Double] = js.undefined
   
-  var Mobile: Double
+  var Mobile: js.UndefOr[Double] = js.undefined
   
-  var Unknown: Double
+  var Unknown: js.UndefOr[Double] = js.undefined
+  
+  var WebMail: js.UndefOr[Double] = js.undefined
 }
 object Mobile {
   
-  inline def apply(Date: String, Desktop: Double, Mobile: Double, Unknown: Double): Mobile = {
-    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Desktop = Desktop.asInstanceOf[js.Any], Mobile = Mobile.asInstanceOf[js.Any], Unknown = Unknown.asInstanceOf[js.Any])
+  inline def apply(Date: String): Mobile = {
+    val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mobile]
   }
   
@@ -27,8 +29,18 @@ object Mobile {
     
     inline def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
     
+    inline def setDesktopUndefined: Self = StObject.set(x, "Desktop", js.undefined)
+    
     inline def setMobile(value: Double): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
     
+    inline def setMobileUndefined: Self = StObject.set(x, "Mobile", js.undefined)
+    
     inline def setUnknown(value: Double): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
+    
+    inline def setUnknownUndefined: Self = StObject.set(x, "Unknown", js.undefined)
+    
+    inline def setWebMail(value: Double): Self = StObject.set(x, "WebMail", value.asInstanceOf[js.Any])
+    
+    inline def setWebMailUndefined: Self = StObject.set(x, "WebMail", js.undefined)
   }
 }

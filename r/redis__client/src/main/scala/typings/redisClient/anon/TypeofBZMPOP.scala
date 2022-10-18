@@ -1,11 +1,11 @@
 package typings.redisClient.anon
 
-import typings.redisClient.genericTransformersMod.SortedSetSide
-import typings.redisClient.genericTransformersMod.ZMPopOptions
-import typings.redisClient.libCommandsMod.RedisCommandArgument
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisClient.zmpopMod.ZMPopRawReply
-import typings.redisClient.zmpopMod.ZMPopReply
+import typings.redisClient.distLibCommandsGenericTransformersMod.SortedSetSide
+import typings.redisClient.distLibCommandsGenericTransformersMod.ZMPopOptions
+import typings.redisClient.distLibCommandsMod.RedisCommandArgument
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsZmpopMod.ZMPopRawReply
+import typings.redisClient.distLibCommandsZmpopMod.ZMPopReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

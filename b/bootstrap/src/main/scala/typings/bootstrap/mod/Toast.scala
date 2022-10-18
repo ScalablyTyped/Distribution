@@ -1,12 +1,12 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptionsAnimation
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistToastMod.Toast.Options
+import typings.bootstrap.jsDistToastMod.Toast.jQueryInterface
+import typings.bootstrap.jsDistToastMod.default
 import typings.bootstrap.mod.global.Element
-import typings.bootstrap.toastMod.Toast.Options
-import typings.bootstrap.toastMod.Toast.jQueryInterface
-import typings.bootstrap.toastMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,15 +41,15 @@ object Toast {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.toastMod.Toast.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistToastMod.Toast.Events & String] = js.native
     
-    /* "hidden.bs.toast" */ val hidden: typings.bootstrap.toastMod.Toast.Events.hidden & String = js.native
+    /* "hidden.bs.toast" */ val hidden: typings.bootstrap.jsDistToastMod.Toast.Events.hidden & String = js.native
     
-    /* "hide.bs.toast" */ val hide: typings.bootstrap.toastMod.Toast.Events.hide & String = js.native
+    /* "hide.bs.toast" */ val hide: typings.bootstrap.jsDistToastMod.Toast.Events.hide & String = js.native
     
-    /* "show.bs.toast" */ val show: typings.bootstrap.toastMod.Toast.Events.show & String = js.native
+    /* "show.bs.toast" */ val show: typings.bootstrap.jsDistToastMod.Toast.Events.show & String = js.native
     
-    /* "shown.bs.toast" */ val shown: typings.bootstrap.toastMod.Toast.Events.shown & String = js.native
+    /* "shown.bs.toast" */ val shown: typings.bootstrap.jsDistToastMod.Toast.Events.shown & String = js.native
   }
   
   /**
@@ -59,8 +59,8 @@ object Toast {
   /* static member */
   @JSImport("bootstrap", "Toast.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.toastMod.Toast] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.toastMod.Toast]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistToastMod.Toast] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistToastMod.Toast]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which allows you to get the scrollspy instance associated with a
@@ -69,12 +69,12 @@ object Toast {
   /* static member */
   @JSImport("bootstrap", "Toast.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.toastMod.Toast, PartialOptionsAnimation] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.toastMod.Toast, PartialOptionsAnimation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistToastMod.Toast, PartialOptionsAnimation] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistToastMod.Toast, PartialOptionsAnimation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Toast.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.toastMod.Toast.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistToastMod.Toast.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

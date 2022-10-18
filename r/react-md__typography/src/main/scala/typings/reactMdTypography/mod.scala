@@ -3,10 +3,10 @@ package typings.reactMdTypography
 import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdTypography.srOnlyMod.SrOnlyProps
-import typings.reactMdTypography.textContainerMod.TextContainerProps
-import typings.reactMdTypography.typographyMod.TypographyHTMLElement
-import typings.reactMdTypography.typographyMod.TypographyProps
+import typings.reactMdTypography.typesSrOnlyMod.SrOnlyProps
+import typings.reactMdTypography.typesTextContainerMod.TextContainerProps
+import typings.reactMdTypography.typesTypographyMod.TypographyHTMLElement
+import typings.reactMdTypography.typesTypographyMod.TypographyProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

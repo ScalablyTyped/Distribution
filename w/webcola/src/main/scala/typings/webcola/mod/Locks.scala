@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Locks")
 @js.native
 open class Locks ()
-  extends typings.webcola.descentMod.Locks
+  extends typings.webcola.distSrcDescentMod.Locks

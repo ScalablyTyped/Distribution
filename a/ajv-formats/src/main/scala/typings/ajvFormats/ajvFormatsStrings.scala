@@ -1,9 +1,9 @@
 package typings.ajvFormats
 
-import typings.ajvFormats.formatsMod.FormatMode
-import typings.ajvFormats.formatsMod.FormatName
-import typings.ajvFormats.limitMod.Comparison
-import typings.ajvFormats.limitMod.Kwd
+import typings.ajvFormats.distFormatsMod.FormatMode
+import typings.ajvFormats.distFormatsMod.FormatName
+import typings.ajvFormats.distLimitMod.Comparison
+import typings.ajvFormats.distLimitMod.Kwd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

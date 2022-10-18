@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.ShouldFadeIn
-import typings.officeUiFabricReact.imageTypesMod.IImageProps
+import typings.officeUiFabricReact.libComponentsImageImageDottypesMod.IImageProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object libImageMod {
   @JSImport("office-ui-fabric-react/lib/Image", "ImageBase")
   @js.native
   open class ImageBase protected ()
-    extends typings.officeUiFabricReact.imageMod.ImageBase {
+    extends typings.officeUiFabricReact.libComponentsImageMod.ImageBase {
     def this(props: IImageProps) = this()
   }
   /* static members */
@@ -42,11 +42,13 @@ object libImageMod {
   object ImageCoverStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageCoverStyle & Double
+      ] = js.native
     
-    /* 0 */ val landscape: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.landscape & Double = js.native
+    /* 0 */ val landscape: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageCoverStyle.landscape & Double = js.native
     
-    /* 1 */ val portrait: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.portrait & Double = js.native
+    /* 1 */ val portrait: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageCoverStyle.portrait & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Image", "ImageFit")
@@ -54,19 +56,19 @@ object libImageMod {
   object ImageFit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageFit & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit & Double] = js.native
     
-    /* 0 */ val center: typings.officeUiFabricReact.imageTypesMod.ImageFit.center & Double = js.native
+    /* 0 */ val center: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit.center & Double = js.native
     
-    /* 5 */ val centerContain: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerContain & Double = js.native
+    /* 5 */ val centerContain: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit.centerContain & Double = js.native
     
-    /* 4 */ val centerCover: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerCover & Double = js.native
+    /* 4 */ val centerCover: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit.centerCover & Double = js.native
     
-    /* 1 */ val contain: typings.officeUiFabricReact.imageTypesMod.ImageFit.contain & Double = js.native
+    /* 1 */ val contain: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit.contain & Double = js.native
     
-    /* 2 */ val cover: typings.officeUiFabricReact.imageTypesMod.ImageFit.cover & Double = js.native
+    /* 2 */ val cover: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit.cover & Double = js.native
     
-    /* 3 */ val none: typings.officeUiFabricReact.imageTypesMod.ImageFit.none & Double = js.native
+    /* 3 */ val none: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageFit.none & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Image", "ImageLoadState")
@@ -74,14 +76,16 @@ object libImageMod {
   object ImageLoadState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.imageTypesMod.ImageLoadState & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState & Double
+      ] = js.native
     
-    /* 2 */ val error: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.error & Double = js.native
+    /* 2 */ val error: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.error & Double = js.native
     
-    /* 3 */ val errorLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.errorLoaded & Double = js.native
+    /* 3 */ val errorLoaded: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.errorLoaded & Double = js.native
     
-    /* 1 */ val loaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.loaded & Double = js.native
+    /* 1 */ val loaded: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.loaded & Double = js.native
     
-    /* 0 */ val notLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.notLoaded & Double = js.native
+    /* 0 */ val notLoaded: typings.officeUiFabricReact.libComponentsImageImageDottypesMod.ImageLoadState.notLoaded & Double = js.native
   }
 }

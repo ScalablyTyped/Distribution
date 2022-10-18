@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Freetrialendson extends StObject {
   
-  var account: Organizationbillingemail
+  var account: Login
   
   /** @example monthly */
   var billing_cycle: String
@@ -38,19 +38,14 @@ trait Freetrialendson extends StObject {
 }
 object Freetrialendson {
   
-  inline def apply(
-    account: Organizationbillingemail,
-    billing_cycle: String,
-    on_free_trial: Boolean,
-    plan: Accountsurl
-  ): Freetrialendson = {
+  inline def apply(account: Login, billing_cycle: String, on_free_trial: Boolean, plan: Accountsurl): Freetrialendson = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], billing_cycle = billing_cycle.asInstanceOf[js.Any], on_free_trial = on_free_trial.asInstanceOf[js.Any], plan = plan.asInstanceOf[js.Any], free_trial_ends_on = null, next_billing_date = null, unit_count = null, updated_at = null)
     __obj.asInstanceOf[Freetrialendson]
   }
   
   extension [Self <: Freetrialendson](x: Self) {
     
-    inline def setAccount(value: Organizationbillingemail): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Login): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     inline def setBilling_cycle(value: String): Self = StObject.set(x, "billing_cycle", value.asInstanceOf[js.Any])
     

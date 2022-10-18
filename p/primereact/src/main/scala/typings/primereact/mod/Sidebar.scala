@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.sidebarMod.SidebarProps
+import typings.primereact.sidebarSidebarMod.SidebarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Sidebar")
 @js.native
 open class Sidebar protected ()
-  extends typings.primereact.sidebarMod.Sidebar {
+  extends typings.primereact.sidebarSidebarMod.Sidebar {
   def this(props: SidebarProps) = this()
   /**
     * @deprecated

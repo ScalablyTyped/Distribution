@@ -27,7 +27,7 @@ object ClassifierResult {
     
     inline def setClasses(value: js.Array[ClassResult]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    inline def setClassesVarargs(value: ClassResult*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: ClassResult*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/reporters" : "29.1.2"
+      "@jest/reporters" : "29.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/reporters" : "29.1.2"
+      "@jest/reporters" : "29.2.0"
     }
   ],
   "compile-devDependencies" : [

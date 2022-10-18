@@ -49,6 +49,8 @@ trait InternalAbstractMeshDataInfo extends StObject {
   
   var _onlyForInstancesIntermediate: Boolean
   
+  var _pointerOverDisableMeshTesting: Boolean
+  
   var _positions: Nullable[js.Array[Vector3]]
   
   var _receiveShadows: Boolean
@@ -80,12 +82,13 @@ object InternalAbstractMeshDataInfo {
     _numBoneInfluencers: Double,
     _onlyForInstances: Boolean,
     _onlyForInstancesIntermediate: Boolean,
+    _pointerOverDisableMeshTesting: Boolean,
     _receiveShadows: Boolean,
     _renderingGroupId: Double,
     _useVertexColors: Boolean,
     _visibility: Double
   ): InternalAbstractMeshDataInfo = {
-    val __obj = js.Dynamic.literal(_actAsRegularMesh = _actAsRegularMesh.asInstanceOf[js.Any], _applyFog = _applyFog.asInstanceOf[js.Any], _collisionRetryCount = _collisionRetryCount.asInstanceOf[js.Any], _computeBonesUsingShaders = _computeBonesUsingShaders.asInstanceOf[js.Any], _currentLODIsUpToDate = _currentLODIsUpToDate.asInstanceOf[js.Any], _enableDistantPicking = _enableDistantPicking.asInstanceOf[js.Any], _facetData = _facetData.asInstanceOf[js.Any], _hasVertexAlpha = _hasVertexAlpha.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _isActiveIntermediate = _isActiveIntermediate.asInstanceOf[js.Any], _layerMask = _layerMask.asInstanceOf[js.Any], _materialForRenderPass = _materialForRenderPass.asInstanceOf[js.Any], _meshCollisionData = _meshCollisionData.asInstanceOf[js.Any], _numBoneInfluencers = _numBoneInfluencers.asInstanceOf[js.Any], _onlyForInstances = _onlyForInstances.asInstanceOf[js.Any], _onlyForInstancesIntermediate = _onlyForInstancesIntermediate.asInstanceOf[js.Any], _receiveShadows = _receiveShadows.asInstanceOf[js.Any], _renderingGroupId = _renderingGroupId.asInstanceOf[js.Any], _useVertexColors = _useVertexColors.asInstanceOf[js.Any], _visibility = _visibility.asInstanceOf[js.Any], _bakedVertexAnimationManager = null, _currentLOD = null, _material = null, _morphTargetManager = null, _positions = null, _skeleton = null)
+    val __obj = js.Dynamic.literal(_actAsRegularMesh = _actAsRegularMesh.asInstanceOf[js.Any], _applyFog = _applyFog.asInstanceOf[js.Any], _collisionRetryCount = _collisionRetryCount.asInstanceOf[js.Any], _computeBonesUsingShaders = _computeBonesUsingShaders.asInstanceOf[js.Any], _currentLODIsUpToDate = _currentLODIsUpToDate.asInstanceOf[js.Any], _enableDistantPicking = _enableDistantPicking.asInstanceOf[js.Any], _facetData = _facetData.asInstanceOf[js.Any], _hasVertexAlpha = _hasVertexAlpha.asInstanceOf[js.Any], _isActive = _isActive.asInstanceOf[js.Any], _isActiveIntermediate = _isActiveIntermediate.asInstanceOf[js.Any], _layerMask = _layerMask.asInstanceOf[js.Any], _materialForRenderPass = _materialForRenderPass.asInstanceOf[js.Any], _meshCollisionData = _meshCollisionData.asInstanceOf[js.Any], _numBoneInfluencers = _numBoneInfluencers.asInstanceOf[js.Any], _onlyForInstances = _onlyForInstances.asInstanceOf[js.Any], _onlyForInstancesIntermediate = _onlyForInstancesIntermediate.asInstanceOf[js.Any], _pointerOverDisableMeshTesting = _pointerOverDisableMeshTesting.asInstanceOf[js.Any], _receiveShadows = _receiveShadows.asInstanceOf[js.Any], _renderingGroupId = _renderingGroupId.asInstanceOf[js.Any], _useVertexColors = _useVertexColors.asInstanceOf[js.Any], _visibility = _visibility.asInstanceOf[js.Any], _bakedVertexAnimationManager = null, _currentLOD = null, _material = null, _morphTargetManager = null, _positions = null, _skeleton = null)
     __obj.asInstanceOf[InternalAbstractMeshDataInfo]
   }
   
@@ -140,6 +143,8 @@ object InternalAbstractMeshDataInfo {
     inline def set_onlyForInstances(value: Boolean): Self = StObject.set(x, "_onlyForInstances", value.asInstanceOf[js.Any])
     
     inline def set_onlyForInstancesIntermediate(value: Boolean): Self = StObject.set(x, "_onlyForInstancesIntermediate", value.asInstanceOf[js.Any])
+    
+    inline def set_pointerOverDisableMeshTesting(value: Boolean): Self = StObject.set(x, "_pointerOverDisableMeshTesting", value.asInstanceOf[js.Any])
     
     inline def set_positions(value: Nullable[js.Array[Vector3]]): Self = StObject.set(x, "_positions", value.asInstanceOf[js.Any])
     

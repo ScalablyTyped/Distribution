@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.toplevelMod.AutoSizeParams
-import typings.vegaLite.toplevelMod.AutosizeType
+import typings.vegaLite.buildSrcSpecToplevelMod.AutoSizeParams
+import typings.vegaLite.buildSrcSpecToplevelMod.AutosizeType
 import typings.vegaLite.vegaLiteStrings.container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +25,7 @@ trait autosizeAutosizeTypeAutoS extends StObject {
     *
     * __See also:__ [`height`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
+  var height: js.UndefOr[Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step] = js.undefined
   
   /**
     * The width of a visualization.
@@ -41,7 +41,7 @@ trait autosizeAutosizeTypeAutoS extends StObject {
     *
     * __See also:__ [`width`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
+  var width: js.UndefOr[Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step] = js.undefined
 }
 object autosizeAutosizeTypeAutoS {
   
@@ -54,11 +54,11 @@ object autosizeAutosizeTypeAutoS {
     
     inline def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
-    inline def setHeight(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setWidth(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

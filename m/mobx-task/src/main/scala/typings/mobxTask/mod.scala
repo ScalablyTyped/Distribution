@@ -1,7 +1,7 @@
 package typings.mobxTask
 
-import typings.mobxTask.taskMod.TaskFactory
-import typings.mobxTask.taskMod.Task_
+import typings.mobxTask.libTaskMod.TaskFactory
+import typings.mobxTask.libTaskMod.Task_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def TaskGroup[A /* <: js.Array[Any] */, R](tasks: js.Array[Task_[A, R]]): typings.mobxTask.taskGroupMod.TaskGroup[A, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("TaskGroup")(tasks.asInstanceOf[js.Any]).asInstanceOf[typings.mobxTask.taskGroupMod.TaskGroup[A, R]]
+  inline def TaskGroup[A /* <: js.Array[Any] */, R](tasks: js.Array[Task_[A, R]]): typings.mobxTask.libTaskGroupMod.TaskGroup[A, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("TaskGroup")(tasks.asInstanceOf[js.Any]).asInstanceOf[typings.mobxTask.libTaskGroupMod.TaskGroup[A, R]]
   
   /**
     * Creates a task in the `pending` state.

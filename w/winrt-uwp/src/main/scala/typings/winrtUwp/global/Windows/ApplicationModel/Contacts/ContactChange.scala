@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a change to a Contact . */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactChange")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactChange")
 @js.native
-abstract class ContactChange ()
+open class ContactChange ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChange {
   

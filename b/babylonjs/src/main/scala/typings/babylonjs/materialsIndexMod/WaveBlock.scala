@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "WaveBlock")
 @js.native
 open class WaveBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.WaveBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.WaveBlock {
   /**
     * Creates a new WaveBlock
     * @param name defines the block name

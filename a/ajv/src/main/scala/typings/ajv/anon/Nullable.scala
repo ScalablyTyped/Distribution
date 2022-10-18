@@ -1,31 +1,27 @@
 package typings.ajv.anon
 
-import typings.ajv.ajvBooleans.`true`
-import typings.ajv.ajvStrings.`null`
-import typings.ajv.jsonSchemaMod.JSONType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Nullable[IsPartial /* <: Boolean */] extends StObject {
+trait Nullable[T /* <: String */] extends StObject {
   
-  var nullable: `true`
+  var nullable: Boolean
   
-  var `type`: JSONType[`null`, IsPartial]
+  var `type`: T
 }
 object Nullable {
   
-  inline def apply[IsPartial /* <: Boolean */](): Nullable[IsPartial] = {
-    val __obj = js.Dynamic.literal(nullable = true)
-    __obj.asInstanceOf[Nullable[IsPartial]]
+  inline def apply[T /* <: String */](nullable: Boolean, `type`: T): Nullable[T] = {
+    val __obj = js.Dynamic.literal(nullable = nullable.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Nullable[T]]
   }
   
-  extension [Self <: Nullable[?], IsPartial /* <: Boolean */](x: Self & Nullable[IsPartial]) {
+  extension [Self <: Nullable[?], T /* <: String */](x: Self & Nullable[T]) {
     
-    inline def setNullable(value: `true`): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    inline def setType(value: JSONType[`null`, IsPartial]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

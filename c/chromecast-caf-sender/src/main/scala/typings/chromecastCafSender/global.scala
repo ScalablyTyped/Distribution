@@ -173,9 +173,9 @@ object global {
         var `type`: String = js.native
       }
       
-      @JSGlobal("cast.framework.EventData")
+      /* note: abstract class */ @JSGlobal("cast.framework.EventData")
       @js.native
-      abstract class EventData protected ()
+      open class EventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.EventData {
         def this(`type`: String) = this()

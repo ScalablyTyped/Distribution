@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.ShadowLight")
+/* note: abstract class */ @JSGlobal("BABYLON.ShadowLight")
 @js.native
-abstract class ShadowLight ()
+open class ShadowLight ()
   extends StObject
      with typings.babylonjs.BABYLON.ShadowLight {
   

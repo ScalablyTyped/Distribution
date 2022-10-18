@@ -1,9 +1,9 @@
 package typings.jimpCustom
 
-import typings.jimpCore.etcMod.Image
-import typings.jimpCore.pluginsMod.JimpPlugin
-import typings.jimpCore.pluginsMod.JimpType
-import typings.jimpCore.utilsMod.FunctionRet
+import typings.jimpCore.typesEtcMod.Image
+import typings.jimpCore.typesPluginsMod.JimpPlugin
+import typings.jimpCore.typesPluginsMod.JimpType
+import typings.jimpCore.typesUtilsMod.FunctionRet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

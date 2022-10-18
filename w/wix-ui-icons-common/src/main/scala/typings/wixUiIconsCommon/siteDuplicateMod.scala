@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSiteDuplicateMod.SiteDuplicateProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siteDuplicateMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/SiteDuplicate", JSImport.Default)
+  @JSImport("wix-ui-icons-common/SiteDuplicate", JSImport.Default)
   @js.native
   val default: FC[SiteDuplicateProps] = js.native
-  
-  trait SiteDuplicateProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object SiteDuplicateProps {
-    
-    inline def apply(): SiteDuplicateProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SiteDuplicateProps]
-    }
-    
-    extension [Self <: SiteDuplicateProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[SiteDuplicateProps]
   

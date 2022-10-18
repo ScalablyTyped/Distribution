@@ -1,17 +1,17 @@
 package typings.fpTs.mod
 
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex1
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex2
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndex2C
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition11
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition12
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition21
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition22
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition22C
-import typings.fpTs.foldableWithIndexMod.FoldableWithIndexComposition2C1
-import typings.fpTs.monoidMod.Monoid
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex1
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex2
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex2C
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition11
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition12
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition21
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition22
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition22C
+import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndexComposition2C1
+import typings.fpTs.libMonoidMod.Monoid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

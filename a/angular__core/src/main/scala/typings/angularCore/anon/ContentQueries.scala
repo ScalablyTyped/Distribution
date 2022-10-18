@@ -1,6 +1,5 @@
 package typings.angularCore.anon
 
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ContentQueriesFunction
 import typings.angularCore.mod.CssSelector
 import typings.angularCore.mod.DirectiveDefFeature
@@ -125,9 +124,7 @@ trait ContentQueries[T] extends StObject {
     *    API will be simplified to be consistent with `output`.
     */
   var inputs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | [string, string] | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | [string, string] | undefined} */ js.Any
   ] = js.undefined
   
   /**
@@ -141,9 +138,7 @@ trait ContentQueries[T] extends StObject {
     * of properties.
     */
   var outputs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P_1 in keyof T ]:? string | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P_1 in keyof T ]:? string | undefined} */ js.Any
   ] = js.undefined
   
   /** The selectors that will be used to match nodes to this directive. */
@@ -201,17 +196,13 @@ object ContentQueries {
     inline def setHostVarsUndefined: Self = StObject.set(x, "hostVars", js.undefined)
     
     inline def setInputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]:? string | [string, string] | undefined}
-      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? string | [string, string] | undefined} */ js.Any
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     inline def setOutputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P_1 in keyof T ]:? string | undefined}
-      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P_1 in keyof T ]:? string | undefined} */ js.Any
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)

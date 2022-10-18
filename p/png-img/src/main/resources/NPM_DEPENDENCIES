@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "png-img" : "5.0.0"
+      "png-img" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "png-img" : "5.0.0"
+      "png-img" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

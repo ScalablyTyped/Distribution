@@ -4,10 +4,10 @@ import typings.cssSelectorParser.cssSelectorParserStrings.numeric
 import typings.cssSelectorParser.cssSelectorParserStrings.selector
 import typings.cssSelectorParser.cssSelectorParserStrings.string
 import typings.cssSelectorParser.cssSelectorParserStrings.substitute
-import typings.cssSelectorParser.selectorMod.AttrValueType
-import typings.cssSelectorParser.selectorMod.RuleAttr
-import typings.cssSelectorParser.selectorMod.RulePseudo
-import typings.cssSelectorParser.selectorMod.Selector
+import typings.cssSelectorParser.libSelectorMod.AttrValueType
+import typings.cssSelectorParser.libSelectorMod.RuleAttr
+import typings.cssSelectorParser.libSelectorMod.RulePseudo
+import typings.cssSelectorParser.libSelectorMod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,7 +9,7 @@ trait FuncRegSymbolSymbol extends StObject {
   
   var func: NotationPrecedenceRightToLeft
   
-  var regSymbol: String
+  var regSymbol: /* sqrt\b */ String
   
   var symbol: sqrt
 }
@@ -24,7 +24,7 @@ object FuncRegSymbolSymbol {
     
     inline def setFunc(value: NotationPrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: /* sqrt\b */ String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: sqrt): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

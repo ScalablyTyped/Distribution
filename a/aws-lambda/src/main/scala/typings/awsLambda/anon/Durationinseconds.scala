@@ -1,7 +1,7 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildPhaseStatusType
-import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildPhaseType
+import typings.awsLambda.triggerCodebuildCloudwatchStateMod.CodeBuildPhaseStatusType
+import typings.awsLambda.triggerCodebuildCloudwatchStateMod.CodeBuildPhaseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object OptionDetails {
   
   /** Represents the list of print binding options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails")
   @js.native
-  abstract class PrintBindingOptionDetails ()
+  open class PrintBindingOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintBindingOptionDetails {
     
@@ -51,9 +51,9 @@ object OptionDetails {
   }
   
   /** Represents the list of print collation options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails")
   @js.native
-  abstract class PrintCollationOptionDetails ()
+  open class PrintCollationOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintCollationOptionDetails {
     
@@ -91,9 +91,9 @@ object OptionDetails {
   }
   
   /** Represents the list of print color mode options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails")
   @js.native
-  abstract class PrintColorModeOptionDetails ()
+  open class PrintColorModeOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintColorModeOptionDetails {
     
@@ -131,9 +131,9 @@ object OptionDetails {
   }
   
   /** Represents the option for the number of printed copies. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails")
   @js.native
-  abstract class PrintCopiesOptionDetails ()
+  open class PrintCopiesOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintCopiesOptionDetails {
     
@@ -175,9 +175,9 @@ object OptionDetails {
   }
   
   /** Allows apps to add a collection of enumerable options to the app print experience. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails")
   @js.native
-  abstract class PrintCustomItemDetails ()
+  open class PrintCustomItemDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintCustomItemDetails {
     
@@ -191,9 +191,9 @@ object OptionDetails {
   }
   
   /** Represents a list of the custom print task option items. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails")
   @js.native
-  abstract class PrintCustomItemListOptionDetails ()
+  open class PrintCustomItemListOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails {
     
@@ -243,9 +243,9 @@ object OptionDetails {
   }
   
   /** Represents a custom print task option. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails")
   @js.native
-  abstract class PrintCustomTextOptionDetails ()
+  open class PrintCustomTextOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintCustomTextOptionDetails {
     
@@ -287,9 +287,9 @@ object OptionDetails {
   }
   
   /** Represents the list of print duplex options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails")
   @js.native
-  abstract class PrintDuplexOptionDetails ()
+  open class PrintDuplexOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintDuplexOptionDetails {
     
@@ -327,9 +327,9 @@ object OptionDetails {
   }
   
   /** Represents the list of punch hole options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails")
   @js.native
-  abstract class PrintHolePunchOptionDetails ()
+  open class PrintHolePunchOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintHolePunchOptionDetails {
     
@@ -367,9 +367,9 @@ object OptionDetails {
   }
   
   /** Represents the list of media size options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails")
   @js.native
-  abstract class PrintMediaSizeOptionDetails ()
+  open class PrintMediaSizeOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintMediaSizeOptionDetails {
     
@@ -407,9 +407,9 @@ object OptionDetails {
   }
   
   /** Represents the list of print media type options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails")
   @js.native
-  abstract class PrintMediaTypeOptionDetails ()
+  open class PrintMediaTypeOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintMediaTypeOptionDetails {
     
@@ -483,9 +483,9 @@ object OptionDetails {
   }
   
   /** Represents the list of print orientation options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails")
   @js.native
-  abstract class PrintOrientationOptionDetails ()
+  open class PrintOrientationOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintOrientationOptionDetails {
     
@@ -523,9 +523,9 @@ object OptionDetails {
   }
   
   /** Represents the list of print quality options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails")
   @js.native
-  abstract class PrintQualityOptionDetails ()
+  open class PrintQualityOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintQualityOptionDetails {
     
@@ -563,9 +563,9 @@ object OptionDetails {
   }
   
   /** Represents a list of the stapling options. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails")
   @js.native
-  abstract class PrintStapleOptionDetails ()
+  open class PrintStapleOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintStapleOptionDetails {
     
@@ -603,9 +603,9 @@ object OptionDetails {
   }
   
   /** Called when a print task option has changed. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs")
   @js.native
-  abstract class PrintTaskOptionChangedEventArgs ()
+  open class PrintTaskOptionChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionChangedEventArgs {
     
@@ -615,9 +615,9 @@ object OptionDetails {
   }
   
   /** A collection of events, methods and properties for advanced print tasks. */
-  @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
   @js.native
-  abstract class PrintTaskOptionDetails ()
+  open class PrintTaskOptionDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails
   object PrintTaskOptionDetails {

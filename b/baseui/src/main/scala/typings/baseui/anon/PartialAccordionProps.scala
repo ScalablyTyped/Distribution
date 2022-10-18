@@ -1,9 +1,9 @@
 package typings.baseui.anon
 
-import typings.baseui.typesMod.AccordionOnChangeHandler
-import typings.baseui.typesMod.AccordionOverrides
-import typings.baseui.typesMod.AccordionState
-import typings.baseui.typesMod.StateChangeType
+import typings.baseui.accordionTypesMod.AccordionOnChangeHandler
+import typings.baseui.accordionTypesMod.AccordionOverrides
+import typings.baseui.accordionTypesMod.AccordionState
+import typings.baseui.accordionTypesMod.StateChangeType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait PartialAccordionProps extends StObject {
   
   var renderAll: js.UndefOr[Boolean] = js.undefined
   
-  var stateReducer: js.UndefOr[typings.baseui.typesMod.StateReducer] = js.undefined
+  var stateReducer: js.UndefOr[typings.baseui.accordionTypesMod.StateReducer] = js.undefined
 }
 object PartialAccordionProps {
   

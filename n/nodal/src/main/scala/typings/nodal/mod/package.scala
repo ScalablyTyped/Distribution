@@ -2,6 +2,7 @@ package typings.nodal.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodal.mod.^
+import typings.node.NodeRequire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ inline def CLI: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("CLI").asInstance
 
 inline def mime: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("mime").asInstanceOf[Any]
 
-inline def require: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequire */ Any]
+inline def require: NodeRequire = ^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[NodeRequire]
 
 type IAnyObject = StringDictionary[Any]
 

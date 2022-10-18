@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.errorMod.ErrorCodesType
+import typings.babylonjs.miscErrorMod.ErrorCodesType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "RuntimeError")
 @js.native
 open class RuntimeError protected ()
-  extends typings.babylonjs.errorMod.RuntimeError {
+  extends typings.babylonjs.miscErrorMod.RuntimeError {
   /**
     * Creates a new RuntimeError
     * @param message defines the message of the error

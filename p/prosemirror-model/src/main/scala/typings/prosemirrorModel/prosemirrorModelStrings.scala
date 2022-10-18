@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object prosemirrorModelStrings {
   
   @js.native
-  sealed trait Schema extends StObject
-  inline def Schema: Schema = "Schema".asInstanceOf[Schema]
-  
-  @js.native
-  sealed trait SchemaSpec extends StObject
-  inline def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
-  
-  @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
   

@@ -1,17 +1,17 @@
 package typings.jupyterlabCodemirror
 
-import typings.codemirror.mod.Editor
-import typings.codemirror.mod.StyleActiveLine
-import typings.jupyterlabCodeeditor.tokensMod.IEditorServices
+import typings.jupyterlabCodeeditor.libTokensMod.IEditorServices
 import typings.jupyterlabCodemirror.anon.PartialIConfig
-import typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor.IOptions
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.bounded
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.off
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.on
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.wordWrapColumn
-import typings.jupyterlabCodemirror.modeMod.Mode.IMode
-import typings.jupyterlabCodemirror.modeMod.Mode.ISpec
-import typings.jupyterlabCodemirror.modeMod.Mode.ISpecLoader
+import typings.jupyterlabCodemirror.libEditorMod.CodeMirrorEditor.IOptions
+import typings.jupyterlabCodemirror.libModeMod.Mode.IMode
+import typings.jupyterlabCodemirror.libModeMod.Mode.ISpec
+import typings.jupyterlabCodemirror.libModeMod.Mode.ISpecLoader
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
+import typings.luminoCoreutils.mod.Token
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,8 +21,8 @@ object mod {
   
   @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor")
   @js.native
-  class CodeMirrorEditor protected ()
-    extends typings.jupyterlabCodemirror.editorMod.CodeMirrorEditor {
+  open class CodeMirrorEditor protected ()
+    extends typings.jupyterlabCodemirror.libEditorMod.CodeMirrorEditor {
     /**
       * Construct a CodeMirror editor.
       */
@@ -41,7 +41,13 @@ object mod {
       *
       * @param command - The command function.
       */
-    inline def addCommand(name: String, command: js.Function1[/* cm */ Editor, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(name.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addCommand(
+      name: String,
+      command: js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ /* cm */ Any, 
+          Unit
+        ]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(name.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * The default configuration options for an editor.
@@ -68,6 +74,11 @@ object mod {
       def coverGutterNextToScrollbar: Boolean = js.native
       inline def coverGutterNextToScrollbar_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("coverGutterNextToScrollbar")(x.asInstanceOf[js.Any])
       
+      @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.cursorBlinkRate")
+      @js.native
+      def cursorBlinkRate: Double = js.native
+      inline def cursorBlinkRate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorBlinkRate")(x.asInstanceOf[js.Any])
+      
       @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.dragDrop")
       @js.native
       def dragDrop: Boolean = js.native
@@ -80,8 +91,10 @@ object mod {
       
       @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.extraKeys")
       @js.native
-      def extraKeys: js.Any = js.native
-      inline def extraKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraKeys")(x.asInstanceOf[js.Any])
+      def extraKeys: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.KeyMap */ Any = js.native
+      inline def extraKeys_=(
+        x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.KeyMap */ Any
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraKeys")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.fixedGutter")
       @js.native
@@ -188,6 +201,11 @@ object mod {
       def showCursorWhenSelecting: Boolean = js.native
       inline def showCursorWhenSelecting_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showCursorWhenSelecting")(x.asInstanceOf[js.Any])
       
+      @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.showTrailingSpace")
+      @js.native
+      def showTrailingSpace: Boolean = js.native
+      inline def showTrailingSpace_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showTrailingSpace")(x.asInstanceOf[js.Any])
+      
       @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.smartIndent")
       @js.native
       def smartIndent: Boolean = js.native
@@ -195,8 +213,10 @@ object mod {
       
       @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.styleActiveLine")
       @js.native
-      def styleActiveLine: Boolean | StyleActiveLine = js.native
-      inline def styleActiveLine_=(x: Boolean | StyleActiveLine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleActiveLine")(x.asInstanceOf[js.Any])
+      def styleActiveLine: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ Any) = js.native
+      inline def styleActiveLine_=(
+        x: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ Any)
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styleActiveLine")(x.asInstanceOf[js.Any])
       
       @JSImport("@jupyterlab/codemirror", "CodeMirrorEditor.defaultConfig.styleSelectedText")
       @js.native
@@ -225,24 +245,26 @@ object mod {
   /**
     * Construct an IEditorFactoryService for CodeMirrorEditors.
     */
-  class CodeMirrorEditorFactory ()
-    extends typings.jupyterlabCodemirror.factoryMod.CodeMirrorEditorFactory {
+  open class CodeMirrorEditorFactory ()
+    extends typings.jupyterlabCodemirror.libFactoryMod.CodeMirrorEditorFactory {
     def this(defaults: PartialIConfig) = this()
+    def this(defaults: Unit, translator: ITranslator) = this()
+    def this(defaults: PartialIConfig, translator: ITranslator) = this()
   }
   
   @JSImport("@jupyterlab/codemirror", "CodeMirrorMimeTypeService")
   @js.native
-  class CodeMirrorMimeTypeService ()
-    extends typings.jupyterlabCodemirror.mimetypeMod.CodeMirrorMimeTypeService
+  open class CodeMirrorMimeTypeService ()
+    extends typings.jupyterlabCodemirror.libMimetypeMod.CodeMirrorMimeTypeService
   
   @JSImport("@jupyterlab/codemirror", "EditorSyntaxStatus")
   @js.native
-  class EditorSyntaxStatus protected ()
-    extends typings.jupyterlabCodemirror.syntaxstatusMod.EditorSyntaxStatus {
+  open class EditorSyntaxStatus protected ()
+    extends typings.jupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus {
     /**
       * Construct a new VDomRenderer for the status item.
       */
-    def this(opts: typings.jupyterlabCodemirror.syntaxstatusMod.EditorSyntaxStatus.IOptions) = this()
+    def this(opts: typings.jupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus.IOptions) = this()
   }
   object EditorSyntaxStatus {
     
@@ -251,9 +273,13 @@ object mod {
       */
     @JSImport("@jupyterlab/codemirror", "EditorSyntaxStatus.Model")
     @js.native
-    class Model ()
-      extends typings.jupyterlabCodemirror.syntaxstatusMod.EditorSyntaxStatus.Model
+    open class Model ()
+      extends typings.jupyterlabCodemirror.libSyntaxstatusMod.EditorSyntaxStatus.Model
   }
+  
+  @JSImport("@jupyterlab/codemirror", "ICodeMirror")
+  @js.native
+  val ICodeMirror: Token[typings.jupyterlabCodemirror.libTokensMod.ICodeMirror] = js.native
   
   object Mode {
     

@@ -1,36 +1,30 @@
 package typings.cadesplugin.CAPICOM
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cadesplugin.CADESCommon.PromisifiedFunction
-import typings.cadesplugin.CADESCommon.Unpacked
-import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.OID> */
-trait OIDAsync
-  extends StObject
-     with _Unpacked[Any] {
+trait OIDAsync extends StObject {
   
-  val FriendlyName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val FriendlyName: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val Name: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[CAPICOM_OID]]) | PromisifiedFunction[CAPICOM_OID]
+  val Name: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.CAPICOM_OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.CAPICOM_OID> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.CAPICOM_OID>> */ js.Any
   
-  val Value: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val Value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
 }
 object OIDAsync {
   
   inline def apply(
-    FriendlyName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    Name: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[CAPICOM_OID]]) | PromisifiedFunction[CAPICOM_OID],
-    Value: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+    FriendlyName: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    Name: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.CAPICOM_OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.CAPICOM_OID> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.CAPICOM_OID>> */ js.Any,
+    Value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   ): OIDAsync = {
     val __obj = js.Dynamic.literal(FriendlyName = FriendlyName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OIDAsync]
@@ -39,36 +33,18 @@ object OIDAsync {
   extension [Self <: OIDAsync](x: Self) {
     
     inline def setFriendlyName(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
-    inline def setFriendlyNameFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "FriendlyName", js.Any.fromFunction1(value))
-    
     inline def setName(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[CAPICOM_OID]]) | PromisifiedFunction[CAPICOM_OID]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.CAPICOM_OID extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.CAPICOM_OID> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.CAPICOM_OID>> */ js.Any
     ): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setNameFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
-    
     inline def setValue(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
-    
-    inline def setValueFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Value", js.Any.fromFunction1(value))
   }
 }

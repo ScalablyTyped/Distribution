@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
+import typings.officeUiFabricReact.libComponentsAnnouncedAnnouncedDottypesMod.IAnnouncedProps
 import typings.react.mod.FunctionComponent
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,7 @@ object libAnnouncedMod {
   @JSImport("office-ui-fabric-react/lib/Announced", "AnnouncedBase")
   @js.native
   open class AnnouncedBase protected ()
-    extends typings.officeUiFabricReact.announcedMod.AnnouncedBase {
+    extends typings.officeUiFabricReact.libComponentsAnnouncedMod.AnnouncedBase {
     def this(props: IAnnouncedProps) = this()
     /**
       * @deprecated

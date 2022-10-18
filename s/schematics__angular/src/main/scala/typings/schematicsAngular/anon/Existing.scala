@@ -1,8 +1,8 @@
 package typings.schematicsAngular.anon
 
-import typings.schematicsAngular.dependencyMod.DependencyType
-import typings.schematicsAngular.dependencyMod.ExistingBehavior
-import typings.schematicsAngular.dependencyMod.InstallBehavior
+import typings.schematicsAngular.utilityDependencyMod.DependencyType
+import typings.schematicsAngular.utilityDependencyMod.ExistingBehavior
+import typings.schematicsAngular.utilityDependencyMod.InstallBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

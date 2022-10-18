@@ -30,7 +30,7 @@ object SfProductCard extends Shortcut {
     
     var showAddedToCartBadge: Boolean
     
-    var wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | String
+    var wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | (/* sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist */ String)
   }
   object Computed {
     
@@ -41,7 +41,7 @@ object SfProductCard extends Shortcut {
       isSFColors: Boolean,
       linkComponentTag: String,
       showAddedToCartBadge: Boolean,
-      wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | String
+      wishlistIconClasses: (`sf-button--pure sf-product-card__wishlist-icon`) | (/* sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist */ String)
     ): Computed = {
       val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], badgeColorClass = badgeColorClass.asInstanceOf[js.Any], currentWishlistIcon = currentWishlistIcon.asInstanceOf[js.Any], isSFColors = isSFColors.asInstanceOf[js.Any], linkComponentTag = linkComponentTag.asInstanceOf[js.Any], showAddedToCartBadge = showAddedToCartBadge.asInstanceOf[js.Any], wishlistIconClasses = wishlistIconClasses.asInstanceOf[js.Any])
       __obj.asInstanceOf[Computed]
@@ -61,7 +61,9 @@ object SfProductCard extends Shortcut {
       
       inline def setShowAddedToCartBadge(value: Boolean): Self = StObject.set(x, "showAddedToCartBadge", value.asInstanceOf[js.Any])
       
-      inline def setWishlistIconClasses(value: (`sf-button--pure sf-product-card__wishlist-icon`) | String): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
+      inline def setWishlistIconClasses(
+        value: (`sf-button--pure sf-product-card__wishlist-icon`) | (/* sf-button--pure sf-product-card__wishlist-icon sf-product-card--on-wishlist */ String)
+      ): Self = StObject.set(x, "wishlistIconClasses", value.asInstanceOf[js.Any])
     }
   }
   

@@ -2,39 +2,39 @@ package typings.postcss.mod
 
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import typings.postcss.anon.ToString
-import typings.postcss.atRuleMod.AtRuleProps
-import typings.postcss.commentMod.CommentProps
-import typings.postcss.declarationMod.DeclarationProps
+import typings.postcss.libAtRuleMod.AtRuleProps
+import typings.postcss.libCommentMod.CommentProps
+import typings.postcss.libDeclarationMod.DeclarationProps
+import typings.postcss.libNodeMod.AnyNode
+import typings.postcss.libRootMod.RootProps
+import typings.postcss.libRuleMod.RuleProps
 import typings.postcss.mod.^
-import typings.postcss.nodeMod.AnyNode
 import typings.postcss.postcssStrings.end
 import typings.postcss.postcssStrings.start
-import typings.postcss.rootMod.RootProps
-import typings.postcss.ruleMod.RuleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def atRule: js.Function1[/* defaults */ js.UndefOr[AtRuleProps], typings.postcss.atRuleMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("atRule").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[AtRuleProps], typings.postcss.atRuleMod.default]]
+inline def atRule: js.Function1[/* defaults */ js.UndefOr[AtRuleProps], typings.postcss.libAtRuleMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("atRule").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[AtRuleProps], typings.postcss.libAtRuleMod.default]]
 
-inline def comment: js.Function1[/* defaults */ js.UndefOr[CommentProps], typings.postcss.commentMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("comment").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[CommentProps], typings.postcss.commentMod.default]]
+inline def comment: js.Function1[/* defaults */ js.UndefOr[CommentProps], typings.postcss.libCommentMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("comment").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[CommentProps], typings.postcss.libCommentMod.default]]
 
 inline def decl: js.Function1[
 /* defaults */ js.UndefOr[DeclarationProps], 
-typings.postcss.declarationMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("decl").asInstanceOf[js.Function1[
+typings.postcss.libDeclarationMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("decl").asInstanceOf[js.Function1[
 /* defaults */ js.UndefOr[DeclarationProps], 
-typings.postcss.declarationMod.default]]
+typings.postcss.libDeclarationMod.default]]
 
 inline def fromJSON: JSONHydrator = ^.asInstanceOf[js.Dynamic].selectDynamic("fromJSON").asInstanceOf[JSONHydrator]
 
-inline def list: typings.postcss.listMod.List = ^.asInstanceOf[js.Dynamic].selectDynamic("list").asInstanceOf[typings.postcss.listMod.List]
+inline def list: typings.postcss.libListMod.List = ^.asInstanceOf[js.Dynamic].selectDynamic("list").asInstanceOf[typings.postcss.libListMod.List]
 
-inline def parse: Parser[typings.postcss.rootMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("parse").asInstanceOf[Parser[typings.postcss.rootMod.default]]
+inline def parse: Parser[typings.postcss.libRootMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("parse").asInstanceOf[Parser[typings.postcss.libRootMod.default]]
 
-inline def root: js.Function1[/* defaults */ js.UndefOr[RootProps], typings.postcss.rootMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("root").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[RootProps], typings.postcss.rootMod.default]]
+inline def root: js.Function1[/* defaults */ js.UndefOr[RootProps], typings.postcss.libRootMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("root").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[RootProps], typings.postcss.libRootMod.default]]
 
-inline def rule: js.Function1[/* defaults */ js.UndefOr[RuleProps], typings.postcss.ruleMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("rule").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[RuleProps], typings.postcss.ruleMod.default]]
+inline def rule: js.Function1[/* defaults */ js.UndefOr[RuleProps], typings.postcss.libRuleMod.default] = ^.asInstanceOf[js.Dynamic].selectDynamic("rule").asInstanceOf[js.Function1[/* defaults */ js.UndefOr[RuleProps], typings.postcss.libRuleMod.default]]
 
 inline def stringify: Stringifier = ^.asInstanceOf[js.Dynamic].selectDynamic("stringify").asInstanceOf[Stringifier]
 
@@ -44,12 +44,12 @@ inline def stringify: Stringifier = ^.asInstanceOf[js.Dynamic].selectDynamic("st
   - typings.postcss.mod.OldPlugin[scala.Any]
   - typings.postcss.mod.TransformCallback
   - typings.postcss.anon.Postcss
-  - typings.postcss.processorMod.default
+  - typings.postcss.libProcessorMod.default
 */
 type AcceptedPlugin = _AcceptedPlugin | PluginCreator[Any] | OldPlugin[Any] | TransformCallback
 
 type AtRuleProcessor = js.Function2[
-/* atRule */ typings.postcss.atRuleMod.default, 
+/* atRule */ typings.postcss.libAtRuleMod.default, 
 /* helper */ Helpers, 
 js.Promise[Unit] | Unit]
 
@@ -60,17 +60,17 @@ type Builder = js.Function3[
 Unit]
 
 type CommentProcessor = js.Function2[
-/* comment */ typings.postcss.commentMod.default, 
+/* comment */ typings.postcss.libCommentMod.default, 
 /* helper */ Helpers, 
 js.Promise[Unit] | Unit]
 
 type DeclarationProcessor = js.Function2[
-/* decl */ typings.postcss.declarationMod.default, 
+/* decl */ typings.postcss.libDeclarationMod.default, 
 /* helper */ Helpers, 
 js.Promise[Unit] | Unit]
 
 type DocumentProcessor = js.Function2[
-/* document */ typings.postcss.documentMod.default, 
+/* document */ typings.postcss.libDocumentMod.default, 
 /* helper */ Helpers, 
 js.Promise[Unit] | Unit]
 
@@ -80,18 +80,18 @@ type Parser[RootNode] = js.Function2[
 RootNode]
 
 type RootProcessor = js.Function2[
-/* root */ typings.postcss.rootMod.default, 
+/* root */ typings.postcss.libRootMod.default, 
 /* helper */ Helpers, 
 js.Promise[Unit] | Unit]
 
 type RuleProcessor = js.Function2[
-/* rule */ typings.postcss.ruleMod.default, 
+/* rule */ typings.postcss.libRuleMod.default, 
 /* helper */ Helpers, 
 js.Promise[Unit] | Unit]
 
 type Stringifier = js.Function2[/* node */ AnyNode, /* builder */ Builder, Unit]
 
 type TransformCallback = js.Function2[
-/* root */ typings.postcss.rootMod.default, 
-/* result */ typings.postcss.resultMod.default, 
+/* root */ typings.postcss.libRootMod.default, 
+/* result */ typings.postcss.libResultMod.default, 
 js.Promise[Unit] | Unit]

@@ -1,13 +1,14 @@
 package typings.cypress.Cypress
 
 import typings.cypress.cypressStrings.withArgs
-import typings.cypress.sinonMod.SinonSpy
+import typings.cypress.typesSinonMod.SinonSpy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSpyAgent[A /* <: SinonSpy */] extends js.Object {
+trait SinonSpyAgent[A /* <: SinonSpy[js.Array[Any], Any] */] extends StObject {
+  
   /**
     * Saves current spy / stub under an alias.
     * @see https://on.cypress.io/stubs-spies-and-clocks
@@ -15,9 +16,11 @@ trait SinonSpyAgent[A /* <: SinonSpy */] extends js.Object {
     * @example
     *    cy.spy(win, 'fetch').as('winFetch') // Alias 'window.fetch' spy as "winFetch"
     */
-  def as(alias: String): (Omit[A, withArgs]) with Agent[A] = js.native
-  def log(): (Omit[A, withArgs]) with Agent[A] = js.native
-  def log(shouldOutput: Boolean): (Omit[A, withArgs]) with Agent[A] = js.native
+  def as(alias: String): (Omit[A, withArgs]) & Agent[A] = js.native
+  
+  def log(): (Omit[A, withArgs]) & Agent[A] = js.native
+  def log(shouldOutput: Boolean): (Omit[A, withArgs]) & Agent[A] = js.native
+  
   /**
     * Creates a spy / stub but only for calls with given arguments.
     * @see https://on.cypress.io/stubs-spies-and-clocks
@@ -27,6 +30,5 @@ trait SinonSpyAgent[A /* <: SinonSpy */] extends js.Object {
     *    expect(JSON.parse('invalid')).to.equal(42)
     *    expect(s).to.have.been.calledOnce
     */
-  def withArgs(args: js.Any*): (Omit[A, typings.cypress.cypressStrings.withArgs]) with Agent[A] = js.native
+  def withArgs(args: Any*): (Omit[A, typings.cypress.cypressStrings.withArgs]) & Agent[A] = js.native
 }
-

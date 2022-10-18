@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [indices=null] - The index buffer (Uint16Array/Uint32Array).
   */
 open class MeshGeometry ()
-  extends typings.yuka.yukaMod.MeshGeometry {
+  extends typings.yuka.srcYukaMod.MeshGeometry {
   def this(vertices: js.typedarray.Float32Array) = this()
   def this(vertices: js.typedarray.Float32Array, indices: js.typedarray.Uint16Array) = this()
   def this(vertices: js.typedarray.Float32Array, indices: js.typedarray.Uint32Array) = this()

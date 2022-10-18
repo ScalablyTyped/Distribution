@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio
 
-Typings are for version 3.82.1
+Typings are for version 3.82.2
 
 ## Library description:
 A Twilio helper library

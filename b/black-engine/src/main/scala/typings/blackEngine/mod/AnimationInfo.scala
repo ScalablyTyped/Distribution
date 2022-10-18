@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "AnimationInfo")
 @js.native
 open class AnimationInfo protected ()
-  extends typings.blackEngine.animationInfoMod.AnimationInfo {
+  extends typings.blackEngine.animationAnimationInfoMod.AnimationInfo {
   def this(
-    controller: typings.blackEngine.animationControllerMod.AnimationController,
+    controller: typings.blackEngine.animationAnimationControllerMod.AnimationController,
     name: String,
-    frames: js.Array[typings.blackEngine.textureMod.Texture]
+    frames: js.Array[typings.blackEngine.texturesTextureMod.Texture]
   ) = this()
   def this(
-    controller: typings.blackEngine.animationControllerMod.AnimationController,
+    controller: typings.blackEngine.animationAnimationControllerMod.AnimationController,
     name: String,
-    frames: js.Array[typings.blackEngine.textureMod.Texture],
+    frames: js.Array[typings.blackEngine.texturesTextureMod.Texture],
     fps: Double
   ) = this()
   def this(
-    controller: typings.blackEngine.animationControllerMod.AnimationController,
+    controller: typings.blackEngine.animationAnimationControllerMod.AnimationController,
     name: String,
-    frames: js.Array[typings.blackEngine.textureMod.Texture],
+    frames: js.Array[typings.blackEngine.texturesTextureMod.Texture],
     fps: Double,
     loop: Boolean
   ) = this()
   def this(
-    controller: typings.blackEngine.animationControllerMod.AnimationController,
+    controller: typings.blackEngine.animationAnimationControllerMod.AnimationController,
     name: String,
-    frames: js.Array[typings.blackEngine.textureMod.Texture],
+    frames: js.Array[typings.blackEngine.texturesTextureMod.Texture],
     fps: Unit,
     loop: Boolean
   ) = this()

@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.gridMod.GridOptions
-import typings.interactjsTypes.snapPointerMod.SnapFunction
+import typings.interactjsTypes.modifiersSnapPointerMod.SnapFunction
+import typings.interactjsTypes.snappersGridMod.GridOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

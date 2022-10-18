@@ -16,8 +16,8 @@ open class NodeMaterialConnectionPoint protected ()
     */
   def this(
     name: String,
-    ownerBlock: typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock,
-    direction: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection
+    ownerBlock: typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock,
+    direction: typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection
   ) = this()
 }
 /* static members */

@@ -1,99 +1,99 @@
 package typings.webextensionPolyfill
 
-import typings.webextensionPolyfill.actionMod.Action.OnClickDataModifiersItemEnum
-import typings.webextensionPolyfill.activityLogMod.ActivityLog.OnExtensionActivityDetailsTypeTypeEnum
-import typings.webextensionPolyfill.activityLogMod.ActivityLog.OnExtensionActivityDetailsTypeViewTypeEnum
-import typings.webextensionPolyfill.bookmarksMod.Bookmarks.BookmarkTreeNodeType
-import typings.webextensionPolyfill.browserSettingsMod.BrowserSettings.ColorManagementMode
-import typings.webextensionPolyfill.browserSettingsMod.BrowserSettings.ContextMenuMouseEvent
-import typings.webextensionPolyfill.browserSettingsMod.BrowserSettings.ImageAnimationBehavior
-import typings.webextensionPolyfill.captivePortalMod.CaptivePortal.OnConnectivityAvailableStatusEnum
-import typings.webextensionPolyfill.captivePortalMod.CaptivePortal.OnStateChangedDetailsTypeStateEnum
-import typings.webextensionPolyfill.clipboardMod.Clipboard.SetImageDataImageTypeEnum
-import typings.webextensionPolyfill.cookiesMod.Cookies.OnChangedCause
-import typings.webextensionPolyfill.cookiesMod.Cookies.SameSiteStatus
-import typings.webextensionPolyfill.dnsMod.Dns.ResolveFlagsItemEnum
-import typings.webextensionPolyfill.downloadsMod.Downloads.DangerType
-import typings.webextensionPolyfill.downloadsMod.Downloads.DownloadOptionsTypeMethodEnum
-import typings.webextensionPolyfill.downloadsMod.Downloads.FilenameConflictAction
-import typings.webextensionPolyfill.downloadsMod.Downloads.InterruptReason
-import typings.webextensionPolyfill.downloadsMod.Downloads.State
-import typings.webextensionPolyfill.experimentsMod.Experiments.APIChildScope
-import typings.webextensionPolyfill.experimentsMod.Experiments.APIParentScope
-import typings.webextensionPolyfill.extensionMod.Extension.ViewType
-import typings.webextensionPolyfill.extensionTypesMod.ExtensionTypes.CSSOrigin
-import typings.webextensionPolyfill.extensionTypesMod.ExtensionTypes.ImageFormat
-import typings.webextensionPolyfill.extensionTypesMod.ExtensionTypes.RunAt
-import typings.webextensionPolyfill.geckoProfilerMod.GeckoProfiler.ProfilerFeature
-import typings.webextensionPolyfill.idleMod.Idle.IdleState
-import typings.webextensionPolyfill.managementMod.Management.ExtensionDisabledReason
-import typings.webextensionPolyfill.managementMod.Management.ExtensionInstallType
-import typings.webextensionPolyfill.managementMod.Management.ExtensionType
-import typings.webextensionPolyfill.manifestMod.Manifest.ActionManifestDefaultAreaEnum
-import typings.webextensionPolyfill.manifestMod.Manifest.OptionalPermission
-import typings.webextensionPolyfill.manifestMod.Manifest.OptionalPermissionNoPrompt
-import typings.webextensionPolyfill.manifestMod.Manifest.PermissionNoPrompt
-import typings.webextensionPolyfill.manifestMod.Manifest.PermissionPrivileged
-import typings.webextensionPolyfill.manifestMod.Manifest.SitePermission
-import typings.webextensionPolyfill.manifestMod.Manifest.ThemeTypePropertiesAdditionalBackgroundsAlignmentItemEnum
-import typings.webextensionPolyfill.manifestMod.Manifest.ThemeTypePropertiesAdditionalBackgroundsTilingItemEnum
-import typings.webextensionPolyfill.manifestMod.Manifest.ThemeTypePropertiesColorSchemeEnum
-import typings.webextensionPolyfill.manifestMod.Manifest.ThemeTypePropertiesContentColorSchemeEnum
-import typings.webextensionPolyfill.manifestMod.Manifest.WebExtensionManifestIncognitoEnum
-import typings.webextensionPolyfill.menusMod.Menus.ContextType
-import typings.webextensionPolyfill.menusMod.Menus.ItemType
-import typings.webextensionPolyfill.menusMod.Menus.OverrideContextContextOptionsTypeContextEnum
-import typings.webextensionPolyfill.networkStatusMod.NetworkStatus.NetworkLinkInfoStatusEnum
-import typings.webextensionPolyfill.networkStatusMod.NetworkStatus.NetworkLinkInfoTypeEnum
-import typings.webextensionPolyfill.notificationsMod.Notifications.PermissionLevel
-import typings.webextensionPolyfill.notificationsMod.Notifications.TemplateType
-import typings.webextensionPolyfill.omniboxMod.Omnibox.DescriptionStyleType
-import typings.webextensionPolyfill.omniboxMod.Omnibox.OnInputEnteredDisposition
-import typings.webextensionPolyfill.privacyNetworkMod.PrivacyNetwork.HTTPSOnlyModeOption
-import typings.webextensionPolyfill.privacyNetworkMod.PrivacyNetwork.IPHandlingPolicy
-import typings.webextensionPolyfill.privacyNetworkMod.PrivacyNetwork.TlsVersionRestrictionConfigMaximumEnum
-import typings.webextensionPolyfill.privacyNetworkMod.PrivacyNetwork.TlsVersionRestrictionConfigMinimumEnum
-import typings.webextensionPolyfill.privacyWebsitesMod.PrivacyWebsites.CookieConfigBehaviorEnum
-import typings.webextensionPolyfill.privacyWebsitesMod.PrivacyWebsites.TrackingProtectionModeOption
-import typings.webextensionPolyfill.proxyMod.Proxy.ProxyConfigProxyTypeEnum
-import typings.webextensionPolyfill.runtimeMod.Runtime.OnInstalledReason
-import typings.webextensionPolyfill.runtimeMod.Runtime.OnRestartRequiredReason
-import typings.webextensionPolyfill.runtimeMod.Runtime.PlatformArch
-import typings.webextensionPolyfill.runtimeMod.Runtime.PlatformOs
-import typings.webextensionPolyfill.runtimeMod.Runtime.RequestUpdateCheckStatus
-import typings.webextensionPolyfill.scriptingMod.Scripting.CSSInjectionOriginEnum
-import typings.webextensionPolyfill.scriptingMod.Scripting.StyleOrigin
-import typings.webextensionPolyfill.tabsMod.Tabs.MutedInfoReason
-import typings.webextensionPolyfill.tabsMod.Tabs.TabStatus
-import typings.webextensionPolyfill.tabsMod.Tabs.UpdatePropertyName
-import typings.webextensionPolyfill.tabsMod.Tabs.WindowType
-import typings.webextensionPolyfill.tabsMod.Tabs.ZoomSettingsMode
-import typings.webextensionPolyfill.tabsMod.Tabs.ZoomSettingsScope
-import typings.webextensionPolyfill.topSitesMod.TopSites.MostVisitedURLTypeEnum
-import typings.webextensionPolyfill.typesMod.Types.LevelOfControl
-import typings.webextensionPolyfill.typesMod.Types.SettingScope
-import typings.webextensionPolyfill.urlbarMod.Urlbar.EngagementState
-import typings.webextensionPolyfill.urlbarMod.Urlbar.OnBehaviorRequestedReturnEnum
-import typings.webextensionPolyfill.urlbarMod.Urlbar.ResultType
-import typings.webextensionPolyfill.urlbarMod.Urlbar.SourceType
-import typings.webextensionPolyfill.webNavigationMod.WebNavigation.TransitionQualifier
-import typings.webextensionPolyfill.webNavigationMod.WebNavigation.TransitionType
-import typings.webextensionPolyfill.webRequestMod.WebRequest.CertificateTransparencyStatus
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnAuthRequiredOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnBeforeRedirectOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnBeforeRequestOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnBeforeSendHeadersOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnCompletedOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnHeadersReceivedOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnResponseStartedOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.OnSendHeadersOptions
-import typings.webextensionPolyfill.webRequestMod.WebRequest.ResourceType
-import typings.webextensionPolyfill.webRequestMod.WebRequest.SecurityInfoProtocolVersionEnum
-import typings.webextensionPolyfill.webRequestMod.WebRequest.SecurityInfoStateEnum
-import typings.webextensionPolyfill.webRequestMod.WebRequest.StreamFilterStatus
-import typings.webextensionPolyfill.webRequestMod.WebRequest.UrlClassificationFlags
-import typings.webextensionPolyfill.windowsMod.Windows.CreateType
-import typings.webextensionPolyfill.windowsMod.Windows.WindowState
+import typings.webextensionPolyfill.namespacesActivityLogMod.ActivityLog.OnExtensionActivityDetailsTypeTypeEnum
+import typings.webextensionPolyfill.namespacesActivityLogMod.ActivityLog.OnExtensionActivityDetailsTypeViewTypeEnum
+import typings.webextensionPolyfill.namespacesBookmarksMod.Bookmarks.BookmarkTreeNodeType
+import typings.webextensionPolyfill.namespacesBrowserSettingsMod.BrowserSettings.ColorManagementMode
+import typings.webextensionPolyfill.namespacesBrowserSettingsMod.BrowserSettings.ContextMenuMouseEvent
+import typings.webextensionPolyfill.namespacesBrowserSettingsMod.BrowserSettings.ImageAnimationBehavior
+import typings.webextensionPolyfill.namespacesCaptivePortalMod.CaptivePortal.OnConnectivityAvailableStatusEnum
+import typings.webextensionPolyfill.namespacesCaptivePortalMod.CaptivePortal.OnStateChangedDetailsTypeStateEnum
+import typings.webextensionPolyfill.namespacesClipboardMod.Clipboard.SetImageDataImageTypeEnum
+import typings.webextensionPolyfill.namespacesCookiesMod.Cookies.OnChangedCause
+import typings.webextensionPolyfill.namespacesCookiesMod.Cookies.SameSiteStatus
+import typings.webextensionPolyfill.namespacesDnsMod.Dns.ResolveFlagsItemEnum
+import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.DangerType
+import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.DownloadOptionsTypeMethodEnum
+import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.FilenameConflictAction
+import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.InterruptReason
+import typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.State
+import typings.webextensionPolyfill.namespacesExperimentsMod.Experiments.APIChildScope
+import typings.webextensionPolyfill.namespacesExperimentsMod.Experiments.APIParentScope
+import typings.webextensionPolyfill.namespacesExtensionMod.Extension.ViewType
+import typings.webextensionPolyfill.namespacesExtensionTypesMod.ExtensionTypes.CSSOrigin
+import typings.webextensionPolyfill.namespacesExtensionTypesMod.ExtensionTypes.ImageFormat
+import typings.webextensionPolyfill.namespacesExtensionTypesMod.ExtensionTypes.RunAt
+import typings.webextensionPolyfill.namespacesGeckoProfilerMod.GeckoProfiler.ProfilerFeature
+import typings.webextensionPolyfill.namespacesIdleMod.Idle.IdleState
+import typings.webextensionPolyfill.namespacesManagementMod.Management.ExtensionDisabledReason
+import typings.webextensionPolyfill.namespacesManagementMod.Management.ExtensionInstallType
+import typings.webextensionPolyfill.namespacesManagementMod.Management.ExtensionType
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ActionManifestDefaultAreaEnum
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.OptionalPermission
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.OptionalPermissionNoPrompt
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.PermissionNoPrompt
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.PermissionPrivileged
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.SitePermission
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypePropertiesAdditionalBackgroundsAlignmentItemEnum
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypePropertiesAdditionalBackgroundsTilingItemEnum
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypePropertiesColorSchemeEnum
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.ThemeTypePropertiesContentColorSchemeEnum
+import typings.webextensionPolyfill.namespacesManifestMod.Manifest.WebExtensionManifestIncognitoEnum
+import typings.webextensionPolyfill.namespacesMenusMod.Menus.ContextType
+import typings.webextensionPolyfill.namespacesMenusMod.Menus.ItemType
+import typings.webextensionPolyfill.namespacesMenusMod.Menus.OnClickDataModifiersItemEnum
+import typings.webextensionPolyfill.namespacesMenusMod.Menus.OverrideContextContextOptionsTypeContextEnum
+import typings.webextensionPolyfill.namespacesNetworkStatusMod.NetworkStatus.NetworkLinkInfoStatusEnum
+import typings.webextensionPolyfill.namespacesNetworkStatusMod.NetworkStatus.NetworkLinkInfoTypeEnum
+import typings.webextensionPolyfill.namespacesNotificationsMod.Notifications.PermissionLevel
+import typings.webextensionPolyfill.namespacesNotificationsMod.Notifications.TemplateType
+import typings.webextensionPolyfill.namespacesOmniboxMod.Omnibox.DescriptionStyleType
+import typings.webextensionPolyfill.namespacesOmniboxMod.Omnibox.OnInputEnteredDisposition
+import typings.webextensionPolyfill.namespacesPrivacyNetworkMod.PrivacyNetwork.HTTPSOnlyModeOption
+import typings.webextensionPolyfill.namespacesPrivacyNetworkMod.PrivacyNetwork.IPHandlingPolicy
+import typings.webextensionPolyfill.namespacesPrivacyNetworkMod.PrivacyNetwork.TlsVersionRestrictionConfigMaximumEnum
+import typings.webextensionPolyfill.namespacesPrivacyNetworkMod.PrivacyNetwork.TlsVersionRestrictionConfigMinimumEnum
+import typings.webextensionPolyfill.namespacesPrivacyWebsitesMod.PrivacyWebsites.CookieConfigBehaviorEnum
+import typings.webextensionPolyfill.namespacesPrivacyWebsitesMod.PrivacyWebsites.TrackingProtectionModeOption
+import typings.webextensionPolyfill.namespacesProxyMod.Proxy.ProxyConfigProxyTypeEnum
+import typings.webextensionPolyfill.namespacesRuntimeMod.Runtime.OnInstalledReason
+import typings.webextensionPolyfill.namespacesRuntimeMod.Runtime.OnRestartRequiredReason
+import typings.webextensionPolyfill.namespacesRuntimeMod.Runtime.PlatformArch
+import typings.webextensionPolyfill.namespacesRuntimeMod.Runtime.PlatformOs
+import typings.webextensionPolyfill.namespacesRuntimeMod.Runtime.RequestUpdateCheckStatus
+import typings.webextensionPolyfill.namespacesScriptingMod.Scripting.CSSInjectionOriginEnum
+import typings.webextensionPolyfill.namespacesScriptingMod.Scripting.StyleOrigin
+import typings.webextensionPolyfill.namespacesTabsMod.Tabs.MutedInfoReason
+import typings.webextensionPolyfill.namespacesTabsMod.Tabs.TabStatus
+import typings.webextensionPolyfill.namespacesTabsMod.Tabs.UpdatePropertyName
+import typings.webextensionPolyfill.namespacesTabsMod.Tabs.WindowType
+import typings.webextensionPolyfill.namespacesTabsMod.Tabs.ZoomSettingsMode
+import typings.webextensionPolyfill.namespacesTabsMod.Tabs.ZoomSettingsScope
+import typings.webextensionPolyfill.namespacesTopSitesMod.TopSites.MostVisitedURLTypeEnum
+import typings.webextensionPolyfill.namespacesTypesMod.Types.LevelOfControl
+import typings.webextensionPolyfill.namespacesTypesMod.Types.SettingScope
+import typings.webextensionPolyfill.namespacesUrlbarMod.Urlbar.EngagementState
+import typings.webextensionPolyfill.namespacesUrlbarMod.Urlbar.OnBehaviorRequestedReturnEnum
+import typings.webextensionPolyfill.namespacesUrlbarMod.Urlbar.ResultType
+import typings.webextensionPolyfill.namespacesUrlbarMod.Urlbar.SourceType
+import typings.webextensionPolyfill.namespacesWebNavigationMod.WebNavigation.TransitionQualifier
+import typings.webextensionPolyfill.namespacesWebNavigationMod.WebNavigation.TransitionType
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.CertificateTransparencyStatus
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnAuthRequiredOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnBeforeRedirectOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnBeforeRequestOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnBeforeSendHeadersOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnCompletedOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnHeadersReceivedOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnResponseStartedOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.OnSendHeadersOptions
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.ResourceType
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.SecurityInfoProtocolVersionEnum
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.SecurityInfoStateEnum
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.StreamFilterStatus
+import typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.UrlClassificationFlags
+import typings.webextensionPolyfill.namespacesWindowsMod.Windows.CreateType
+import typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,8 +117,8 @@ object webextensionPolyfillStrings {
   sealed trait Alt
     extends StObject
        with OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.menusMod.Menus.OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.pageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesPageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesActionMod.Action.OnClickDataModifiersItemEnum
   inline def Alt: Alt = "Alt".asInstanceOf[Alt]
   
   @js.native
@@ -135,16 +135,16 @@ object webextensionPolyfillStrings {
   sealed trait Command
     extends StObject
        with OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.menusMod.Menus.OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.pageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesPageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesActionMod.Action.OnClickDataModifiersItemEnum
   inline def Command: Command = "Command".asInstanceOf[Command]
   
   @js.native
   sealed trait Ctrl
     extends StObject
        with OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.menusMod.Menus.OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.pageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesPageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesActionMod.Action.OnClickDataModifiersItemEnum
   inline def Ctrl: Ctrl = "Ctrl".asInstanceOf[Ctrl]
   
   @js.native
@@ -225,8 +225,8 @@ object webextensionPolyfillStrings {
   sealed trait MacCtrl
     extends StObject
        with OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.menusMod.Menus.OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.pageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesPageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesActionMod.Action.OnClickDataModifiersItemEnum
   inline def MacCtrl: MacCtrl = "MacCtrl".asInstanceOf[MacCtrl]
   
   @js.native
@@ -309,8 +309,8 @@ object webextensionPolyfillStrings {
   sealed trait Shift
     extends StObject
        with OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.menusMod.Menus.OnClickDataModifiersItemEnum
-       with typings.webextensionPolyfill.pageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesPageActionMod.PageAction.OnClickDataModifiersItemEnum
+       with typings.webextensionPolyfill.namespacesActionMod.Action.OnClickDataModifiersItemEnum
   inline def Shift: Shift = "Shift".asInstanceOf[Shift]
   
   @js.native
@@ -523,7 +523,7 @@ object webextensionPolyfillStrings {
   sealed trait app
     extends StObject
        with WindowType
-       with typings.webextensionPolyfill.windowsMod.Windows.WindowType
+       with typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowType
   inline def app: app = "app".asInstanceOf[app]
   
   @js.native
@@ -597,20 +597,20 @@ object webextensionPolyfillStrings {
   sealed trait auto_bookmark
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def auto_bookmark: auto_bookmark = "auto_bookmark".asInstanceOf[auto_bookmark]
   
   @js.native
   sealed trait auto_subframe
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def auto_subframe: auto_subframe = "auto_subframe".asInstanceOf[auto_subframe]
   
   @js.native
   sealed trait auto_toplevel
     extends StObject
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def auto_toplevel: auto_toplevel = "auto_toplevel".asInstanceOf[auto_toplevel]
   
   @js.native
@@ -956,7 +956,7 @@ object webextensionPolyfillStrings {
     extends StObject
        with OptionalPermission
        with WindowType
-       with typings.webextensionPolyfill.windowsMod.Windows.WindowType
+       with typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowType
   inline def devtools: devtools = "devtools".asInstanceOf[devtools]
   
   @js.native
@@ -1227,7 +1227,7 @@ object webextensionPolyfillStrings {
   sealed trait form_submit
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def form_submit: form_submit = "form_submit".asInstanceOf[form_submit]
   
   @js.native
@@ -1274,7 +1274,7 @@ object webextensionPolyfillStrings {
   sealed trait generated
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def generated: generated = "generated".asInstanceOf[generated]
   
   @js.native
@@ -1464,14 +1464,14 @@ object webextensionPolyfillStrings {
   sealed trait keyword
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def keyword: keyword = "keyword".asInstanceOf[keyword]
   
   @js.native
   sealed trait keyword_generated
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def keyword_generated: keyword_generated = "keyword_generated".asInstanceOf[keyword_generated]
   
   @js.native
@@ -1528,7 +1528,7 @@ object webextensionPolyfillStrings {
     extends StObject
        with ContextType
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
@@ -1614,7 +1614,7 @@ object webextensionPolyfillStrings {
   sealed trait manual_subframe
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def manual_subframe: manual_subframe = "manual_subframe".asInstanceOf[manual_subframe]
   
   @js.native
@@ -1826,7 +1826,7 @@ object webextensionPolyfillStrings {
        with ItemType
        with WindowState
        with WindowType
-       with typings.webextensionPolyfill.windowsMod.Windows.WindowType
+       with typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowType
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -1951,7 +1951,7 @@ object webextensionPolyfillStrings {
     extends StObject
        with CreateType
        with WindowType
-       with typings.webextensionPolyfill.windowsMod.Windows.WindowType
+       with typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowType
   inline def panel: panel = "panel".asInstanceOf[panel]
   
   @js.native
@@ -2040,7 +2040,7 @@ object webextensionPolyfillStrings {
        with OnExtensionActivityDetailsTypeViewTypeEnum
        with ViewType
        with WindowType
-       with typings.webextensionPolyfill.windowsMod.Windows.WindowType
+       with typings.webextensionPolyfill.namespacesWindowsMod.Windows.WindowType
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
@@ -2164,7 +2164,7 @@ object webextensionPolyfillStrings {
   sealed trait reload
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def reload: reload = "reload".asInstanceOf[reload]
   
   @js.native
@@ -2591,7 +2591,7 @@ object webextensionPolyfillStrings {
   sealed trait typed
     extends StObject
        with TransitionType
-       with typings.webextensionPolyfill.historyMod.History.TransitionType
+       with typings.webextensionPolyfill.namespacesHistoryMod.History.TransitionType
   inline def typed: typed = "typed".asInstanceOf[typed]
   
   @js.native

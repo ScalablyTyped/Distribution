@@ -1,7 +1,7 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.GlobalEventHandlers
 import typings.std.Event
-import typings.std.GlobalEventHandlers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

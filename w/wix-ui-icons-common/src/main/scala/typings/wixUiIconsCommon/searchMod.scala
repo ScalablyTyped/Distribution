@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsSearchMod.SearchProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsSearchMod.SearchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Search", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Search", JSImport.Default)
   @js.native
   val default: FC[SearchProps] = js.native
   

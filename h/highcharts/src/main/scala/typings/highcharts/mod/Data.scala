@@ -20,7 +20,7 @@ trait Data extends StObject {
     * A collection of available date formats, extendable from the outside
     * to support custom date formats.
     */
-  var dateFormats: Dictionary[typings.highcharts.dataMod.highchartsAugmentingMod.DataDateFormatObject] = js.native
+  var dateFormats: Dictionary[typings.highcharts.modulesDataMod.highchartsAugmentingMod.DataDateFormatObject] = js.native
   
   /**
     * Fetch or refetch live data

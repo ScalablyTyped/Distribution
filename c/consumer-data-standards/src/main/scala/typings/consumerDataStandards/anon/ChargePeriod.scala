@@ -3,14 +3,22 @@ package typings.consumerDataStandards.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.consumerDataStandards.consumerDataStandardsStrings.DAY
 import typings.consumerDataStandards.consumerDataStandardsStrings.DAYS
+import typings.consumerDataStandards.consumerDataStandardsStrings.FRI
 import typings.consumerDataStandards.consumerDataStandardsStrings.KVA
 import typings.consumerDataStandards.consumerDataStandardsStrings.KVAR
 import typings.consumerDataStandards.consumerDataStandardsStrings.KVARH
 import typings.consumerDataStandards.consumerDataStandardsStrings.KW
 import typings.consumerDataStandards.consumerDataStandardsStrings.KWH
 import typings.consumerDataStandards.consumerDataStandardsStrings.METER
+import typings.consumerDataStandards.consumerDataStandardsStrings.MON
 import typings.consumerDataStandards.consumerDataStandardsStrings.MONTH
+import typings.consumerDataStandards.consumerDataStandardsStrings.PUBLIC_HOLIDAYS
+import typings.consumerDataStandards.consumerDataStandardsStrings.SAT
+import typings.consumerDataStandards.consumerDataStandardsStrings.SUN
 import typings.consumerDataStandards.consumerDataStandardsStrings.TARIFF_PERIOD
+import typings.consumerDataStandards.consumerDataStandardsStrings.THU
+import typings.consumerDataStandards.consumerDataStandardsStrings.TUE
+import typings.consumerDataStandards.consumerDataStandardsStrings.WED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +38,9 @@ trait ChargePeriod
   var chargePeriod: DAY | MONTH | TARIFF_PERIOD
   
   /**
-    * Object containing demand tariff by day of week
+    * The days that the demand tariff applies to
     */
-  var days: js.UndefOr[Saturday] = js.undefined
+  var days: js.UndefOr[js.Array[SUN | MON | TUE | WED | THU | FRI | SAT | PUBLIC_HOLIDAYS]] = js.undefined
   
   /**
     * Description of the charge
@@ -45,7 +53,7 @@ trait ChargePeriod
   var displayName: String
   
   /**
-    * End of the period in HHMM format using 24 hour clock format
+    * End of the period
     */
   var endTime: String
   
@@ -70,7 +78,7 @@ trait ChargePeriod
   var minDemand: js.UndefOr[String] = js.undefined
   
   /**
-    * Start of the period in HHMM format using 24 hour clock format
+    * Start of the period
     */
   var startTime: String
 }
@@ -94,9 +102,11 @@ object ChargePeriod {
     
     inline def setChargePeriod(value: DAY | MONTH | TARIFF_PERIOD): Self = StObject.set(x, "chargePeriod", value.asInstanceOf[js.Any])
     
-    inline def setDays(value: Saturday): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: js.Array[SUN | MON | TUE | WED | THU | FRI | SAT | PUBLIC_HOLIDAYS]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    
+    inline def setDaysVarargs(value: (SUN | MON | TUE | WED | THU | FRI | SAT | PUBLIC_HOLIDAYS)*): Self = StObject.set(x, "days", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

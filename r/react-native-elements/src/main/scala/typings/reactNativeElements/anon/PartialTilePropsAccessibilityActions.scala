@@ -20,8 +20,8 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconObject
-import typings.reactNativeElements.iconMod.IconProps
+import typings.reactNativeElements.distIconsIconMod.IconObject
+import typings.reactNativeElements.distIconsIconMod.IconProps
 import typings.reactNativeElements.reactNativeElementsStrings.ImageComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive

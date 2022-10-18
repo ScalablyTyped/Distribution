@@ -30,8 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing a #CONNECT! error.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait ConnectErrorCellValue
   extends StObject
@@ -41,8 +40,7 @@ trait ConnectErrorCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -52,8 +50,7 @@ trait ConnectErrorCellValue
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignCONNECTExclamationmark | String] = js.undefined
   
@@ -61,8 +58,7 @@ trait ConnectErrorCellValue
     * Represents the type of `ConnectErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[
     ConnectErrorCellValueSubType | Unknown_ | ServiceError | ExternalLinks | ExternalLinksNonCloudLocation | DataTypeNoConnection | DataTypeServiceError | MissingContent | RequestThrottle | ExternalLinksFailedToRefresh | ExternalLinksAccessFailed | ExternalLinksServerError | ExternalLinksInvalidRequest | ExternalLinksUnAuthenticated | ExternalLinksThrottledByHost | ExternalLinksFileTooLarge | OutdatedLinkedEntity | GenericServerError
@@ -72,8 +68,7 @@ trait ConnectErrorCellValue
     * Represents the type of `ErrorCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var errorType: js.UndefOr[connect | Connect] = js.undefined
   
@@ -81,8 +76,7 @@ trait ConnectErrorCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: typings.officeJsPreview.Excel.CellValueType.error | Error
 }

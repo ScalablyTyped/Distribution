@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.physicsJointMod.PhysicsJointData
+import typings.babylonjs.physicsPhysicsJointMod.PhysicsJointData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PhysicsJoint")
 @js.native
 open class PhysicsJoint protected ()
-  extends typings.babylonjs.legacyMod.PhysicsJoint {
+  extends typings.babylonjs.legacyLegacyMod.PhysicsJoint {
   /**
     * Initializes the physics joint
     * @param type The type of the physics joint

@@ -1,6 +1,7 @@
 package typings.baseui
 
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,10 @@ object headerNavigationTypesMod {
     }
   }
   
+  /* Inlined react.react.PropsWithChildren<{  overrides :baseui.baseui/header-navigation/types.HeaderNavigationOverrides}> */
   trait HeaderNavigationProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var overrides: HeaderNavigationOverrides
   }
@@ -38,6 +42,10 @@ object headerNavigationTypesMod {
     }
     
     extension [Self <: HeaderNavigationProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setOverrides(value: HeaderNavigationOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     }

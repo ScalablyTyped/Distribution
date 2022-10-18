@@ -6,20 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Spdxid extends StObject {
   
-  var key: js.UndefOr[String] = js.undefined
+  var key: String
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: String
   
-  var node_id: js.UndefOr[String] = js.undefined
+  var node_id: String
   
-  var spdx_id: js.UndefOr[String] = js.undefined
+  var spdx_id: String | Null
   
-  var url: js.UndefOr[String] = js.undefined
+  /** Format: uri */
+  var url: String | Null
 }
 object Spdxid {
   
-  inline def apply(): Spdxid = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(key: String, name: String, node_id: String): Spdxid = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], spdx_id = null, url = null)
     __obj.asInstanceOf[Spdxid]
   }
   
@@ -27,22 +28,16 @@ object Spdxid {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
-    
     inline def setSpdx_id(value: String): Self = StObject.set(x, "spdx_id", value.asInstanceOf[js.Any])
     
-    inline def setSpdx_idUndefined: Self = StObject.set(x, "spdx_id", js.undefined)
+    inline def setSpdx_idNull: Self = StObject.set(x, "spdx_id", null)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
   }
 }

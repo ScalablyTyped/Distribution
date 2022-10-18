@@ -1,7 +1,10 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipProps
+import typings.officeUiFabricReact.libComponentsToggleToggleDottypesMod.IToggle
+import typings.officeUiFabricReact.libComponentsToggleToggleDottypesMod.IToggleStyleProps
+import typings.officeUiFabricReact.libComponentsToggleToggleDottypesMod.IToggleStyles
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -55,9 +58,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.tree
 import typings.officeUiFabricReact.officeUiFabricReactStrings.url
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
-import typings.officeUiFabricReact.toggleTypesMod.IToggle
-import typings.officeUiFabricReact.toggleTypesMod.IToggleStyleProps
-import typings.officeUiFabricReact.toggleTypesMod.IToggleStyles
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -96,10 +96,10 @@ import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.icomponentasMod.IComponentAs
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIcomponentasMod.IComponentAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

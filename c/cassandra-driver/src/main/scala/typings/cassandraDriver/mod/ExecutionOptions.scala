@@ -1,10 +1,10 @@
 package typings.cassandraDriver.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.cassandraDriver.policiesMod.policies.loadBalancing.LoadBalancingPolicy
-import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
-import typings.cassandraDriver.typesMod.types.Long
-import typings.cassandraDriver.typesMod.types.consistencies
+import typings.cassandraDriver.libPoliciesMod.policies.loadBalancing.LoadBalancingPolicy
+import typings.cassandraDriver.libPoliciesMod.policies.retry.RetryPolicy
+import typings.cassandraDriver.libTypesMod.types.Long
+import typings.cassandraDriver.libTypesMod.types.consistencies
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

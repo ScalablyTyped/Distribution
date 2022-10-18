@@ -1,6 +1,6 @@
 package typings.guacamoleCommonJs.mod
 
-import typings.guacamoleCommonJs.guacCommonMod.Mimetype
+import typings.guacamoleCommonJs.libGuacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "RawAudioFormat")
 @js.native
 open class RawAudioFormat protected ()
-  extends typings.guacamoleCommonJs.rawAudioFormatMod.RawAudioFormat {
+  extends typings.guacamoleCommonJs.libRawAudioFormatMod.RawAudioFormat {
   /**
     * @param template The object whose properties should be copied into the corresponding
     * properties of the new Guacamole.RawAudioFormat.
     */
-  def this(template: typings.guacamoleCommonJs.rawAudioFormatMod.RawAudioFormat) = this()
+  def this(template: typings.guacamoleCommonJs.libRawAudioFormatMod.RawAudioFormat) = this()
 }
 /* static members */
 object RawAudioFormat {
@@ -33,5 +33,5 @@ object RawAudioFormat {
     *     audio data represented by the given mimetype, or null if the given
     *     mimetype is not supported.
     */
-  inline def parse(mimetype: Mimetype): typings.guacamoleCommonJs.rawAudioFormatMod.RawAudioFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mimetype.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.rawAudioFormatMod.RawAudioFormat]
+  inline def parse(mimetype: Mimetype): typings.guacamoleCommonJs.libRawAudioFormatMod.RawAudioFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mimetype.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.libRawAudioFormatMod.RawAudioFormat]
 }

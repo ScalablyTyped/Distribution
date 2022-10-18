@@ -11,11 +11,11 @@ import typings.metamaskUtils.anon.MessageStack
 import typings.metamaskUtils.anon.MethodStringParams
 import typings.metamaskUtils.anon.OmitidStructstringnumbern
 import typings.metamaskUtils.anon.ResultJson
-import typings.metamaskUtils.jsonMod.Json
-import typings.metamaskUtils.jsonMod.JsonRpcValidatorOptions
+import typings.metamaskUtils.distJsonMod.Json
+import typings.metamaskUtils.distJsonMod.JsonRpcValidatorOptions
+import typings.metamaskUtils.distMiscMod.RuntimeObject
+import typings.metamaskUtils.distTimeMod.Duration
 import typings.metamaskUtils.metamaskUtilsStrings.`2Dot0`
-import typings.metamaskUtils.miscMod.RuntimeObject
-import typings.metamaskUtils.timeMod.Duration
 import typings.std.Record
 import typings.superstruct.mod.Struct_
 import org.scalablytyped.runtime.StObject
@@ -33,21 +33,21 @@ object mod {
   object Duration extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.metamaskUtils.timeMod.Duration & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.metamaskUtils.distTimeMod.Duration & Double] = js.native
     
-    /* 86400000 */ val Day: typings.metamaskUtils.timeMod.Duration.Day & Double = js.native
+    /* 86400000 */ val Day: typings.metamaskUtils.distTimeMod.Duration.Day & Double = js.native
     
-    /* 3600000 */ val Hour: typings.metamaskUtils.timeMod.Duration.Hour & Double = js.native
+    /* 3600000 */ val Hour: typings.metamaskUtils.distTimeMod.Duration.Hour & Double = js.native
     
-    /* 1 */ val Millisecond: typings.metamaskUtils.timeMod.Duration.Millisecond & Double = js.native
+    /* 1 */ val Millisecond: typings.metamaskUtils.distTimeMod.Duration.Millisecond & Double = js.native
     
-    /* 60000 */ val Minute: typings.metamaskUtils.timeMod.Duration.Minute & Double = js.native
+    /* 60000 */ val Minute: typings.metamaskUtils.distTimeMod.Duration.Minute & Double = js.native
     
-    /* 1000 */ val Second: typings.metamaskUtils.timeMod.Duration.Second & Double = js.native
+    /* 1000 */ val Second: typings.metamaskUtils.distTimeMod.Duration.Second & Double = js.native
     
-    /* 604800000 */ val Week: typings.metamaskUtils.timeMod.Duration.Week & Double = js.native
+    /* 604800000 */ val Week: typings.metamaskUtils.distTimeMod.Duration.Week & Double = js.native
     
-    /* 31536000000.0 */ val Year: typings.metamaskUtils.timeMod.Duration.Year & Double = js.native
+    /* 31536000000.0 */ val Year: typings.metamaskUtils.distTimeMod.Duration.Year & Double = js.native
   }
   
   @JSImport("@metamask/utils", "ESCAPE_CHARACTERS_REGEXP")
@@ -57,7 +57,7 @@ object mod {
   @JSImport("@metamask/utils", "FrozenMap")
   @js.native
   open class FrozenMap[Key, Value] ()
-    extends typings.metamaskUtils.collectionsMod.FrozenMap[Key, Value] {
+    extends typings.metamaskUtils.distCollectionsMod.FrozenMap[Key, Value] {
     def this(entries: js.Array[js.Tuple2[Key, Value]]) = this()
   }
   
@@ -70,7 +70,7 @@ object mod {
   @JSImport("@metamask/utils", "FrozenSet")
   @js.native
   open class FrozenSet[Value] ()
-    extends typings.metamaskUtils.collectionsMod.FrozenSet[Value] {
+    extends typings.metamaskUtils.distCollectionsMod.FrozenSet[Value] {
     def this(values: js.Array[Value]) = this()
   }
   
@@ -88,7 +88,7 @@ object mod {
   
   @JSImport("@metamask/utils", "JsonRpcNotificationStruct")
   @js.native
-  val JsonRpcNotificationStruct: Struct_[MethodStringParams, OmitidStructstringnumbern] = js.native
+  val JsonRpcNotificationStruct: Struct_[JsonrpcMethodString, OmitidStructstringnumbern] = js.native
   
   @JSImport("@metamask/utils", "JsonRpcParamsStruct")
   @js.native
@@ -96,7 +96,7 @@ object mod {
   
   @JSImport("@metamask/utils", "JsonRpcRequestStruct")
   @js.native
-  val JsonRpcRequestStruct: Struct_[JsonrpcMethodString, IdStruct] = js.native
+  val JsonRpcRequestStruct: Struct_[MethodStringParams, IdStruct] = js.native
   
   @JSImport("@metamask/utils", "JsonRpcResponseStruct")
   @js.native
@@ -115,23 +115,23 @@ object mod {
   object JsonSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.metamaskUtils.miscMod.JsonSize & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.metamaskUtils.distMiscMod.JsonSize & Double] = js.native
     
-    /* 1 */ val Colon: typings.metamaskUtils.miscMod.JsonSize.Colon & Double = js.native
+    /* 1 */ val Colon: typings.metamaskUtils.distMiscMod.JsonSize.Colon & Double = js.native
     
-    /* 1 */ val Comma: typings.metamaskUtils.miscMod.JsonSize.Comma & Double = js.native
+    /* 1 */ val Comma: typings.metamaskUtils.distMiscMod.JsonSize.Comma & Double = js.native
     
-    /* 24 */ val Date: typings.metamaskUtils.miscMod.JsonSize.Date & Double = js.native
+    /* 24 */ val Date: typings.metamaskUtils.distMiscMod.JsonSize.Date & Double = js.native
     
-    /* 5 */ val False: typings.metamaskUtils.miscMod.JsonSize.False & Double = js.native
+    /* 5 */ val False: typings.metamaskUtils.distMiscMod.JsonSize.False & Double = js.native
     
-    /* 4 */ val Null: typings.metamaskUtils.miscMod.JsonSize.Null & Double = js.native
+    /* 4 */ val Null: typings.metamaskUtils.distMiscMod.JsonSize.Null & Double = js.native
     
-    /* 1 */ val Quote: typings.metamaskUtils.miscMod.JsonSize.Quote & Double = js.native
+    /* 1 */ val Quote: typings.metamaskUtils.distMiscMod.JsonSize.Quote & Double = js.native
     
-    /* 4 */ val True: typings.metamaskUtils.miscMod.JsonSize.True & Double = js.native
+    /* 4 */ val True: typings.metamaskUtils.distMiscMod.JsonSize.True & Double = js.native
     
-    /* 1 */ val Wrapper: typings.metamaskUtils.miscMod.JsonSize.Wrapper & Double = js.native
+    /* 1 */ val Wrapper: typings.metamaskUtils.distMiscMod.JsonSize.Wrapper & Double = js.native
   }
   
   @JSImport("@metamask/utils", "JsonStruct")

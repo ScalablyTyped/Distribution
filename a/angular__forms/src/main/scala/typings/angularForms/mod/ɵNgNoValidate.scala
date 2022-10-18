@@ -21,7 +21,7 @@ object ɵNgNoValidate {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     ɵNgNoValidate, 
-    String, 
+    /* form:not([ngNoForm]):not([ngNativeValidate]) */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 
@@ -32,7 +32,7 @@ object ɵNgNoValidate {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       ɵNgNoValidate, 
-      String, 
+      /* form:not([ngNoForm]):not([ngNativeValidate]) */ String, 
       scala.Nothing, 
       js.Object, 
       js.Object, 

@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video profile that indicates a configuration supported by the video capture device. */
-@JSGlobal("Windows.Media.Capture.MediaCaptureVideoProfile")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.MediaCaptureVideoProfile")
 @js.native
-abstract class MediaCaptureVideoProfile ()
+open class MediaCaptureVideoProfile ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.MediaCaptureVideoProfile {
   

@@ -2,16 +2,16 @@ package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.antDesignProLayoutStrings.group
 import typings.antDesignProLayout.antDesignProLayoutStrings.sub
-import typings.antDesignProLayout.getPageTitleMod.GetPageTitleProps
-import typings.antDesignProLayout.headerMod.HeaderViewProps
-import typings.antDesignProLayout.localesMod.LocaleType
-import typings.antDesignProLayout.proLayoutMod.LayoutBreadcrumbProps
-import typings.antDesignProLayout.typingsMod.MenuDataItem
-import typings.antDesignProLayout.typingsMod.MessageDescriptor
-import typings.antDesignProLayout.typingsMod.WithFalse
-import typings.antDesignProLayout.waterMarkMod.WaterMarkProps
-import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.antd.breadcrumbBreadcrumbMod.Route
+import typings.antDesignProLayout.esComponentsHeaderMod.HeaderViewProps
+import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
+import typings.antDesignProLayout.esGetPageTitleMod.GetPageTitleProps
+import typings.antDesignProLayout.esLocalesMod.LocaleType
+import typings.antDesignProLayout.esProLayoutMod.LayoutBreadcrumbProps
+import typings.antDesignProLayout.esTypingsMod.MenuDataItem
+import typings.antDesignProLayout.esTypingsMod.MessageDescriptor
+import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.antd.libBreadcrumbBreadcrumbMod.Route
 import typings.react.mod.CSSProperties
 import typings.react.mod.MutableRefObject
 import typings.react.mod.ReactNode

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.rollup.rollupStrings.load
   - typings.rollup.rollupStrings.renderDynamicImport
-  - typings.rollup.rollupStrings.resolveAssetUrl
   - typings.rollup.rollupStrings.resolveDynamicImport
   - typings.rollup.rollupStrings.resolveFileUrl
   - typings.rollup.rollupStrings.resolveId
@@ -20,8 +19,6 @@ object FirstPluginHooks {
   inline def load: typings.rollup.rollupStrings.load = "load".asInstanceOf[typings.rollup.rollupStrings.load]
   
   inline def renderDynamicImport: typings.rollup.rollupStrings.renderDynamicImport = "renderDynamicImport".asInstanceOf[typings.rollup.rollupStrings.renderDynamicImport]
-  
-  inline def resolveAssetUrl: typings.rollup.rollupStrings.resolveAssetUrl = "resolveAssetUrl".asInstanceOf[typings.rollup.rollupStrings.resolveAssetUrl]
   
   inline def resolveDynamicImport: typings.rollup.rollupStrings.resolveDynamicImport = "resolveDynamicImport".asInstanceOf[typings.rollup.rollupStrings.resolveDynamicImport]
   

@@ -6,44 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[TPayload] extends StObject {
-    
-    @JSName("_")
-    var _underscore: TPayload
-  }
-  object `0` {
-    
-    inline def apply[TPayload](_underscore: TPayload): `0`[TPayload] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`[TPayload]]
-    }
-    
-    extension [Self <: `0`[?], TPayload](x: Self & `0`[TPayload]) {
-      
-      inline def set_underscore(value: TPayload): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1`[TPayload] extends StObject {
-    
-    @JSName("_")
-    var _underscore: TPayload
-  }
-  object `1` {
-    
-    inline def apply[TPayload](_underscore: TPayload): `1`[TPayload] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`1`[TPayload]]
-    }
-    
-    extension [Self <: `1`[?], TPayload](x: Self & `1`[TPayload]) {
-      
-      inline def set_underscore(value: TPayload): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait FAILURE_[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator] extends StObject {
     
     var FAILURE: js.UndefOr[TFailurePayloadCreator] = js.undefined
@@ -242,8 +204,6 @@ object anon {
       inline def setTrigger(value: TTriggerActionCreator): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait _empty extends StObject
   
   /* Inlined {[ key in redux-saga-routines.redux-saga-routines.RoutineStages ]: string} */
   trait keyinRoutineStagesstring extends StObject {

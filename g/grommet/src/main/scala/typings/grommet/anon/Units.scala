@@ -1,9 +1,9 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
-import typings.grommet.textMod.TextProps
+import typings.grommet.componentsTextMod.TextProps
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.BorderType
 import typings.grommet.utilsMod.ColorType
@@ -28,7 +28,7 @@ trait Units extends StObject {
   
   var gap: js.UndefOr[GapType] = js.undefined
   
-  var hover: js.UndefOr[`5`] = js.undefined
+  var hover: js.UndefOr[`18`] = js.undefined
   
   var pad: js.UndefOr[PadType] = js.undefined
   
@@ -71,7 +71,7 @@ object Units {
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setHover(value: `5`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: `18`): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     

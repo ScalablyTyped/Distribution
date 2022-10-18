@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new moving entity.
   */
 open class Vehicle ()
-  extends typings.yuka.yukaMod.Vehicle
+  extends typings.yuka.srcYukaMod.Vehicle

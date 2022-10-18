@@ -1,6 +1,5 @@
 package typings.reactBulmaComponents.anon
 
-import typings.reactBulmaComponents.componentsMod.DisplayModifier
 import typings.reactBulmaComponents.reactBulmaComponentsInts.`2`
 import typings.reactBulmaComponents.reactBulmaComponentsInts.`3`
 import typings.reactBulmaComponents.reactBulmaComponentsInts.`4`
@@ -11,6 +10,7 @@ import typings.reactBulmaComponents.reactBulmaComponentsStrings.center
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.justify
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.left
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.right
+import typings.reactBulmaComponents.srcComponentsMod.DisplayModifier
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -85,7 +85,7 @@ trait OperationAttributes extends StObject {
   
   var `job-mandatory-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
     ]
   ] = js.undefined
   
@@ -165,7 +165,7 @@ trait OperationAttributes extends StObject {
   
   var `requested-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589, starting with typings.ipp.mod.RequestedJobAttributeGroups, typings.ipp.mod.RequestedPrinterAttributeGroups, typings.ipp.ippStrings.`chamber-humidity` */ Any
     ]
   ] = js.undefined
   
@@ -386,13 +386,15 @@ object OperationAttributes {
     
     inline def `setJob-mandatory-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any
         ]
     ): Self = StObject.set(x, "job-mandatory-attributes", value.asInstanceOf[js.Any])
     
     inline def `setJob-mandatory-attributesUndefined`: Self = StObject.set(x, "job-mandatory-attributes", js.undefined)
     
-    inline def `setJob-mandatory-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ Any)*): Self = StObject.set(x, "job-mandatory-attributes", js.Array(value*))
+    inline def `setJob-mandatory-attributesVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.ipp.ippStrings.`chamber-humidity`, typings.ipp.ippStrings.`chamber-temperature`, typings.ipp.ippStrings.`confirmation-sheet-print` */ Any)*
+    ): Self = StObject.set(x, "job-mandatory-attributes", js.Array(value*))
     
     inline def `setJob-media-sheets`(value: Double): Self = StObject.set(x, "job-media-sheets", value.asInstanceOf[js.Any])
     
@@ -560,13 +562,15 @@ object OperationAttributes {
     
     inline def `setRequested-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589, starting with typings.ipp.mod.RequestedJobAttributeGroups, typings.ipp.mod.RequestedPrinterAttributeGroups, typings.ipp.ippStrings.`chamber-humidity` */ Any
         ]
     ): Self = StObject.set(x, "requested-attributes", value.asInstanceOf[js.Any])
     
     inline def `setRequested-attributesUndefined`: Self = StObject.set(x, "requested-attributes", js.undefined)
     
-    inline def `setRequested-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ Any)*): Self = StObject.set(x, "requested-attributes", js.Array(value*))
+    inline def `setRequested-attributesVarargs`(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589, starting with typings.ipp.mod.RequestedJobAttributeGroups, typings.ipp.mod.RequestedPrinterAttributeGroups, typings.ipp.ippStrings.`chamber-humidity` */ Any)*
+    ): Self = StObject.set(x, "requested-attributes", js.Array(value*))
     
     inline def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
     

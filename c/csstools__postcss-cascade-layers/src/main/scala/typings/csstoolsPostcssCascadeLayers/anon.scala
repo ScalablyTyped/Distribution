@@ -1,6 +1,6 @@
 package typings.csstoolsPostcssCascadeLayers
 
-import typings.csstoolsPostcssCascadeLayers.optionsMod.pluginOptions
+import typings.csstoolsPostcssCascadeLayers.distOptionsMod.pluginOptions
 import typings.postcss.mod.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

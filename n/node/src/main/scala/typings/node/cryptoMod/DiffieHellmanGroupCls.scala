@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,11 +15,11 @@ open class DiffieHellmanGroupCls protected ()
   def this(name: String) = this()
   
   /* CompleteClass */
-  override def computeSecret(otherPublicKey: js.typedarray.ArrayBufferView): Buffer = js.native
+  override def computeSecret(otherPublicKey: ArrayBufferView): Buffer = js.native
   /* CompleteClass */
   @JSName("computeSecret")
   var computeSecret_Original: js.Function3[
-    /* otherPublicKey */ js.typedarray.ArrayBufferView, 
+    /* otherPublicKey */ ArrayBufferView, 
     /* inputEncoding */ js.UndefOr[Null], 
     /* outputEncoding */ js.UndefOr[Null], 
     Buffer

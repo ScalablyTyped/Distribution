@@ -6,33 +6,29 @@ import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
-import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativePaper.iconMod.IconSource
 import typings.reactNativePaper.reactNativePaperStrings.`box-none`
 import typings.reactNativePaper.reactNativePaperStrings.`box-only`
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
 import typings.reactNativePaper.reactNativePaperStrings.assertive
 import typings.reactNativePaper.reactNativePaperStrings.auto
-import typings.reactNativePaper.reactNativePaperStrings.contained
+import typings.reactNativePaper.reactNativePaperStrings.elevated
 import typings.reactNativePaper.reactNativePaperStrings.no
 import typings.reactNativePaper.reactNativePaperStrings.none
 import typings.reactNativePaper.reactNativePaperStrings.outlined
 import typings.reactNativePaper.reactNativePaperStrings.polite
-import typings.reactNativePaper.reactNativePaperStrings.text
 import typings.reactNativePaper.reactNativePaperStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   children :react.react.ReactNode | undefined,   mode :'text' | 'outlined' | 'contained' | undefined,   dark :boolean | undefined,   compact :boolean | undefined,   color :string | undefined,   loading :boolean | undefined,   icon :react-native-paper.react-native-paper/lib/typescript/components/Icon.IconSource | undefined,   disabled :boolean | undefined,   children :react.react.ReactNode,   uppercase :boolean | undefined,   accessibilityLabel :string | undefined,   accessibilityHint :string | undefined,   onPress :(): void | undefined,   onLongPress :(): void | undefined,   contentStyle :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   labelStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   testID :string | undefined} & std.Pick<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :false | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.Animated.Value | react-native.react-native.Animated.AnimatedInterpolation<number | string> | react-native.react-native.Animated.WithAnimatedObject<react-native.react-native.ViewStyle> | react-native.react-native.Animated.WithAnimatedArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.RecursiveArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>> | std.Array<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>>> | null | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View>>, 'color' | 'onPress' | 'onLongPress' | 'icon' | keyof react-native.react-native.ViewProps | 'dark' | keyof react.react.RefAttributes<react-native.react-native.View> | 'mode' | 'uppercase' | 'labelStyle' | 'disabled' | 'compact' | 'loading' | 'contentStyle'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
+/* Inlined std.Pick<{  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined,   elevation :number | undefined,   onLongPress :(): void | undefined,   onPress :(): void | undefined,   mode :'outlined' | 'elevated' | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme,   testID :string | undefined,   accessible :boolean | undefined} & react-native-paper.react-native-paper/lib/typescript/components/Card/Card.OutlinedCardProps & std.Pick<react-native.react-native.ViewProps & react.react.RefAttributes<react-native.react-native.View> & {  children :react.react.ReactNode,   style :false | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.Animated.Value | react-native.react-native.Animated.AnimatedInterpolation<number | string> | react-native.react-native.Animated.WithAnimatedObject<react-native.react-native.ViewStyle> | react-native.react-native.Animated.WithAnimatedArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle> | react-native.react-native.RecursiveArray<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>> | std.Array<react-native.react-native.ViewStyle | react-native.react-native.Falsy | react-native.react-native.RegisteredStyle<react-native.react-native.ViewStyle>>> | null | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View>>, 'onPress' | 'onLongPress' | keyof react-native.react-native.ViewProps | keyof react.react.RefAttributes<react-native.react-native.View> | keyof react-native-paper.react-native-paper/lib/typescript/components/Card/Card.OutlinedCardProps> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
 trait PickthemeDeepPartialThemeAccessibilityLiveRegion extends StObject {
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
@@ -65,15 +61,7 @@ trait PickthemeDeepPartialThemeAccessibilityLiveRegion extends StObject {
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[String] = js.undefined
-  
-  var compact: js.UndefOr[Boolean] = js.undefined
-  
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  
-  var dark: js.UndefOr[Boolean] = js.undefined
-  
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var elevation: js.UndefOr[Double] = js.undefined
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
@@ -81,19 +69,13 @@ trait PickthemeDeepPartialThemeAccessibilityLiveRegion extends StObject {
   
   var hitSlop: js.UndefOr[Insets] = js.undefined
   
-  var icon: js.UndefOr[IconSource] = js.undefined
-  
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  
-  var loading: js.UndefOr[Boolean] = js.undefined
-  
-  var mode: js.UndefOr[text | outlined | contained] = js.undefined
+  var mode: js.UndefOr[outlined | elevated] = js.undefined
   
   var nativeID: js.UndefOr[String] = js.undefined
   
@@ -196,8 +178,6 @@ trait PickthemeDeepPartialThemeAccessibilityLiveRegion extends StObject {
   var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
-  
-  var uppercase: js.UndefOr[Boolean] = js.undefined
 }
 object PickthemeDeepPartialThemeAccessibilityLiveRegion {
   
@@ -272,27 +252,9 @@ object PickthemeDeepPartialThemeAccessibilityLiveRegion {
     
     inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
-    
-    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
-    
-    inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
-    
-    inline def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
-    
-    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
-    
-    inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
-    
-    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
-    
-    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
     inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
@@ -305,14 +267,6 @@ object PickthemeDeepPartialThemeAccessibilityLiveRegion {
     inline def setHitSlop(value: Insets): Self = StObject.set(x, "hitSlop", value.asInstanceOf[js.Any])
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
-    
-    inline def setIcon(value: IconSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-    
-    inline def setIconFunction1(value: /* props */ IconPropscolorstring => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
-    
-    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-    
-    inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value*))
     
     inline def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = StObject.set(x, "importantForAccessibility", value.asInstanceOf[js.Any])
     
@@ -328,17 +282,7 @@ object PickthemeDeepPartialThemeAccessibilityLiveRegion {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
-    
-    inline def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
-    
-    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
-    
-    inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
-    
-    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
-    
-    inline def setMode(value: text | outlined | contained): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: outlined | elevated): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
@@ -551,9 +495,5 @@ object PickthemeDeepPartialThemeAccessibilityLiveRegion {
     inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
-    
-    inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
-    
-    inline def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
   }
 }

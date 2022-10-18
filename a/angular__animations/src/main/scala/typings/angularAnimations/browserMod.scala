@@ -22,9 +22,9 @@ object browserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@angular/animations/browser", "AnimationDriver")
+  /* note: abstract class */ @JSImport("@angular/animations/browser", "AnimationDriver")
   @js.native
-  abstract class AnimationDriver () extends StObject {
+  open class AnimationDriver () extends StObject {
     
     def animate(element: Any, keyframes: js.Array[Map[String, String | Double]], duration: Double, delay: Double): Any = js.native
     def animate(
@@ -267,9 +267,9 @@ object browserMod {
     def whenRenderingDone(): js.Promise[Any] = js.native
   }
   
-  @JSImport("@angular/animations/browser", "\u0275AnimationStyleNormalizer")
+  /* note: abstract class */ @JSImport("@angular/animations/browser", "\u0275AnimationStyleNormalizer")
   @js.native
-  abstract class ɵAnimationStyleNormalizer () extends StObject {
+  open class ɵAnimationStyleNormalizer () extends StObject {
     
     def normalizePropertyName(propertyName: String, errors: js.Array[js.Error]): String = js.native
     

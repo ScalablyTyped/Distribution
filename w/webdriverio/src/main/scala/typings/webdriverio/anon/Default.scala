@@ -1,8 +1,8 @@
 package typings.webdriverio.anon
 
 import typings.std.NonNullable
-import typings.wdioTypes.frameworksMod.Test
-import typings.wdioTypes.frameworksMod.TestResult
+import typings.wdioTypes.buildFrameworksMod.Test
+import typings.wdioTypes.buildFrameworksMod.TestResult
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

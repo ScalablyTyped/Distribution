@@ -1,6 +1,6 @@
 package typings.reactNativeGestureHandler.anon
 
-import typings.reactNativeGestureHandler.stateMod.State
+import typings.reactNativeGestureHandler.libTypescriptStateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.tldjs
 
-import typings.tldjs.anon.Domain
 import typings.tldjs.anon.ExtractHostname
 import typings.tldjs.anon.GetDomain
+import typings.tldjs.anon.Hostname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mod {
   
   inline def isValidHostname(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHostname")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def parse(host: String): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(host.asInstanceOf[js.Any]).asInstanceOf[Domain]
+  inline def parse(host: String): Hostname = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(host.asInstanceOf[js.Any]).asInstanceOf[Hostname]
   
   inline def tldExists(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tldExists")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

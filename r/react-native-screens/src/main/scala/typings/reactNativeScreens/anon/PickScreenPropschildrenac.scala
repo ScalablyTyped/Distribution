@@ -19,6 +19,13 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeReanimated.mod.Animated.AnimateProps
+import typings.reactNativeScreens.libTypescriptTypesMod.GestureResponseDistanceType
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenOrientationTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.ScreenReplaceTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.StackAnimationTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.StackPresentationTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.SwipeDirectionTypes
+import typings.reactNativeScreens.libTypescriptTypesMod.TransitionProgressEventType
 import typings.reactNativeScreens.reactNativeScreensInts.`1`
 import typings.reactNativeScreens.reactNativeScreensInts.`2`
 import typings.reactNativeScreens.reactNativeScreensStrings.`box-none`
@@ -35,18 +42,11 @@ import typings.reactNativeScreens.reactNativeScreensStrings.none
 import typings.reactNativeScreens.reactNativeScreensStrings.polite
 import typings.reactNativeScreens.reactNativeScreensStrings.slide
 import typings.reactNativeScreens.reactNativeScreensStrings.yes
-import typings.reactNativeScreens.typescriptTypesMod.GestureResponseDistanceType
-import typings.reactNativeScreens.typescriptTypesMod.ScreenOrientationTypes
-import typings.reactNativeScreens.typescriptTypesMod.ScreenReplaceTypes
-import typings.reactNativeScreens.typescriptTypesMod.StackAnimationTypes
-import typings.reactNativeScreens.typescriptTypesMod.StackPresentationTypes
-import typings.reactNativeScreens.typescriptTypesMod.SwipeDirectionTypes
-import typings.reactNativeScreens.typescriptTypesMod.TransitionProgressEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<react-native-screens.react-native-screens.ScreenProps, 'children' | 'active' | 'activityState' | 'customAnimationOnSwipe' | 'enabled' | 'isNativeStack' | 'fullScreenSwipeEnabled' | 'gestureEnabled' | 'gestureResponseDistance' | 'homeIndicatorHidden' | 'hideKeyboardOnSwipe' | 'nativeBackButtonDismissalEnabled' | 'navigationBarColor' | 'navigationBarHidden' | 'onAppear' | 'onComponentRef' | 'onDisappear' | 'onDismissed' | 'onHeaderBackButtonClicked' | 'onTransitionProgress' | 'onWillAppear' | 'onWillDisappear' | 'replaceAnimation' | 'screenOrientation' | 'stackAnimation' | 'stackPresentation' | 'statusBarAnimation' | 'statusBarColor' | 'statusBarHidden' | 'statusBarStyle' | 'statusBarTranslucent' | 'swipeDirection' | 'transitionDuration' | 'freezeOnBlur' | 'hitSlop' | 'onLayout' | 'pointerEvents' | 'removeClippedSubviews' | 'style' | 'testID' | 'nativeID' | 'collapsable' | 'needsOffscreenAlphaCompositing' | 'renderToHardwareTextureAndroid' | 'focusable' | 'shouldRasterizeIOS' | 'isTVSelectable' | 'hasTVPreferredFocus' | 'tvParallaxProperties' | 'tvParallaxShiftDistanceX' | 'tvParallaxShiftDistanceY' | 'tvParallaxTiltAngle' | 'tvParallaxMagnification' | 'onStartShouldSetResponder' | 'onMoveShouldSetResponder' | 'onResponderEnd' | 'onResponderGrant' | 'onResponderReject' | 'onResponderMove' | 'onResponderRelease' | 'onResponderStart' | 'onResponderTerminationRequest' | 'onResponderTerminate' | 'onStartShouldSetResponderCapture' | 'onMoveShouldSetResponderCapture' | 'onTouchStart' | 'onTouchMove' | 'onTouchEnd' | 'onTouchCancel' | 'onTouchEndCapture' | 'accessible' | 'accessibilityActions' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityState' | 'accessibilityHint' | 'accessibilityValue' | 'onAccessibilityAction' | 'accessibilityComponentType' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityTraits' | 'accessibilityViewIsModal' | 'onAccessibilityEscape' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors'> & react.react.RefAttributes<react.react.ComponentClass<react-native-reanimated.react-native-reanimated.default.AnimateProps<{}>, any>> */
+/* Inlined std.Pick<react-native-screens.react-native-screens.ScreenProps, 'children' | 'active' | 'activityState' | 'customAnimationOnSwipe' | 'enabled' | 'isNativeStack' | 'freezeOnBlur' | 'fullScreenSwipeEnabled' | 'gestureEnabled' | 'gestureResponseDistance' | 'homeIndicatorHidden' | 'hideKeyboardOnSwipe' | 'nativeBackButtonDismissalEnabled' | 'navigationBarColor' | 'navigationBarHidden' | 'onAppear' | 'onComponentRef' | 'onDisappear' | 'onDismissed' | 'onHeaderBackButtonClicked' | 'onNativeDismissCancelled' | 'onTransitionProgress' | 'onWillAppear' | 'onWillDisappear' | 'preventNativeDismiss' | 'replaceAnimation' | 'screenOrientation' | 'stackAnimation' | 'stackPresentation' | 'statusBarAnimation' | 'statusBarColor' | 'statusBarHidden' | 'statusBarStyle' | 'statusBarTranslucent' | 'swipeDirection' | 'transitionDuration' | 'hitSlop' | 'onLayout' | 'pointerEvents' | 'removeClippedSubviews' | 'style' | 'testID' | 'nativeID' | 'collapsable' | 'needsOffscreenAlphaCompositing' | 'renderToHardwareTextureAndroid' | 'focusable' | 'shouldRasterizeIOS' | 'isTVSelectable' | 'hasTVPreferredFocus' | 'tvParallaxProperties' | 'tvParallaxShiftDistanceX' | 'tvParallaxShiftDistanceY' | 'tvParallaxTiltAngle' | 'tvParallaxMagnification' | 'onStartShouldSetResponder' | 'onMoveShouldSetResponder' | 'onResponderEnd' | 'onResponderGrant' | 'onResponderReject' | 'onResponderMove' | 'onResponderRelease' | 'onResponderStart' | 'onResponderTerminationRequest' | 'onResponderTerminate' | 'onStartShouldSetResponderCapture' | 'onMoveShouldSetResponderCapture' | 'onTouchStart' | 'onTouchMove' | 'onTouchEnd' | 'onTouchCancel' | 'onTouchEndCapture' | 'accessible' | 'accessibilityActions' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityState' | 'accessibilityHint' | 'accessibilityValue' | 'onAccessibilityAction' | 'accessibilityComponentType' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityTraits' | 'accessibilityViewIsModal' | 'onAccessibilityEscape' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors'> & react.react.RefAttributes<react.react.ComponentClass<react-native-reanimated.react-native-reanimated.default.AnimateProps<{}>, any>> */
 trait PickScreenPropschildrenac extends StObject {
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
@@ -151,6 +151,8 @@ trait PickScreenPropschildrenac extends StObject {
   
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
+  var onNativeDismissCancelled: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[DismissCount], Unit]] = js.undefined
+  
   var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
   var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
@@ -188,6 +190,8 @@ trait PickScreenPropschildrenac extends StObject {
   var onWillDisappear: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   
   var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  
+  var preventNativeDismiss: js.UndefOr[Boolean] = js.undefined
   
   var ref: js.UndefOr[Ref[ComponentClass[AnimateProps[js.Object], Any]]] = js.undefined
   
@@ -446,6 +450,10 @@ object PickScreenPropschildrenac {
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
+    inline def setOnNativeDismissCancelled(value: /* e */ NativeSyntheticEvent[DismissCount] => Unit): Self = StObject.set(x, "onNativeDismissCancelled", js.Any.fromFunction1(value))
+    
+    inline def setOnNativeDismissCancelledUndefined: Self = StObject.set(x, "onNativeDismissCancelled", js.undefined)
+    
     inline def setOnResponderEnd(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onResponderEnd", js.Any.fromFunction1(value))
     
     inline def setOnResponderEndUndefined: Self = StObject.set(x, "onResponderEnd", js.undefined)
@@ -521,6 +529,10 @@ object PickScreenPropschildrenac {
     inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
     inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    
+    inline def setPreventNativeDismiss(value: Boolean): Self = StObject.set(x, "preventNativeDismiss", value.asInstanceOf[js.Any])
+    
+    inline def setPreventNativeDismissUndefined: Self = StObject.set(x, "preventNativeDismiss", js.undefined)
     
     inline def setRef(value: Ref[ComponentClass[AnimateProps[js.Object], Any]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

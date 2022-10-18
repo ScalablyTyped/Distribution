@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Fonts {
   
   /** Provides data related to a particular font recommendation for a given language. */
-  @JSGlobal("Windows.Globalization.Fonts.LanguageFont")
+  /* note: abstract class */ @JSGlobal("Windows.Globalization.Fonts.LanguageFont")
   @js.native
-  abstract class LanguageFont ()
+  open class LanguageFont ()
     extends StObject
        with typings.winrtUwp.Windows.Globalization.Fonts.LanguageFont {
     

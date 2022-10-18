@@ -1,7 +1,7 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Align
-import typings.antdMobileRn.flexIndexNativeMod.default
+import typings.antdMobileRn.libFlexIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

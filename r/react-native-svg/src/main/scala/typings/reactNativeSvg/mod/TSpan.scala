@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "TSpan")
 @js.native
 open class TSpan ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.TSpan
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.TSpan
 /* static members */
 object TSpan {
   

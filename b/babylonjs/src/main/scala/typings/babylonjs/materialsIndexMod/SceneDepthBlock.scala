@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "SceneDepthBlock")
 @js.native
 open class SceneDepthBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.SceneDepthBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.SceneDepthBlock {
   /**
     * Create a new SceneDepthBlock
     * @param name defines the block name

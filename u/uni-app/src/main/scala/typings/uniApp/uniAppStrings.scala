@@ -51,10 +51,6 @@ object uniAppStrings {
   inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait KVInfer extends StObject
-  inline def KVInfer: KVInfer = "KVInfer".asInstanceOf[KVInfer]
-  
-  @js.native
   sealed trait OPTIONS extends StObject
   inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   

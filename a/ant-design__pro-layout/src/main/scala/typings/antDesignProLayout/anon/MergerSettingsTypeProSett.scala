@@ -8,7 +8,7 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.side
 import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
-import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

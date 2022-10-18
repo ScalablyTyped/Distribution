@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "lumino__widgets"
-version := "1.34.0-6d24ab"
+version := "1.34.1-4b2902"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-b93451",
-  "org.scalablytyped" %%% "lumino__commands" % "1.20.1-f4ba85",
-  "org.scalablytyped" %%% "lumino__coreutils" % "1.12.1-214cfb",
-  "org.scalablytyped" %%% "lumino__disposable" % "1.10.2-6c68d7",
-  "org.scalablytyped" %%% "lumino__messaging" % "1.10.2-73efa5",
-  "org.scalablytyped" %%% "lumino__signaling" % "1.10.2-583455",
-  "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-dd3ffe",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "lumino__algorithm" % "1.9.2-3e1ceb",
+  "org.scalablytyped" %%% "lumino__commands" % "1.20.1-f6d697",
+  "org.scalablytyped" %%% "lumino__coreutils" % "1.12.1-0dc8fb",
+  "org.scalablytyped" %%% "lumino__disposable" % "1.10.2-350acb",
+  "org.scalablytyped" %%% "lumino__messaging" % "1.10.3-51bd04",
+  "org.scalablytyped" %%% "lumino__signaling" % "1.10.2-f14e47",
+  "org.scalablytyped" %%% "lumino__virtualdom" % "1.14.2-bf27c0",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,16 +8,16 @@ import typings.photoshop.anon.MenuID
 import typings.photoshop.anon.Message
 import typings.photoshop.anon.TypeofphotoshopAction
 import typings.photoshop.anon.TypeofphotoshopCore
-import typings.photoshop.colorTypesMod.ColorDescriptor
-import typings.photoshop.coreModulesMod.ActionDescriptor
-import typings.photoshop.coreModulesMod.BatchPlayCommandOptions
-import typings.photoshop.coreModulesMod.CPUInfo
-import typings.photoshop.coreModulesMod.ColorConversionModel
-import typings.photoshop.coreModulesMod.ExecuteAsModalOptions
-import typings.photoshop.coreModulesMod.ExecutionContext
-import typings.photoshop.coreModulesMod.GPUInfo
-import typings.photoshop.coreModulesMod.NotificationListener
-import typings.photoshop.photoshopMod.Photoshop
+import typings.photoshop.domCoreModulesMod.ActionDescriptor
+import typings.photoshop.domCoreModulesMod.BatchPlayCommandOptions
+import typings.photoshop.domCoreModulesMod.CPUInfo
+import typings.photoshop.domCoreModulesMod.ColorConversionModel
+import typings.photoshop.domCoreModulesMod.ExecuteAsModalOptions
+import typings.photoshop.domCoreModulesMod.ExecutionContext
+import typings.photoshop.domCoreModulesMod.GPUInfo
+import typings.photoshop.domCoreModulesMod.NotificationListener
+import typings.photoshop.domPhotoshopMod.Photoshop
+import typings.photoshop.utilColorTypesMod.ColorDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,7 +92,7 @@ object mod {
     
     @JSImport("photoshop", "app")
     @js.native
-    val ^ : typings.photoshop.photoshopMod.Photoshop = js.native
+    val ^ : typings.photoshop.domPhotoshopMod.Photoshop = js.native
     
     /**
       * @ignore
@@ -102,7 +102,7 @@ object mod {
     @JSImport("photoshop", "app.Action")
     @js.native
     open class Action protected ()
-      extends typings.photoshop.actionsMod.Action {
+      extends typings.photoshop.domActionsMod.Action {
       /**
         * @ignore
         */
@@ -117,7 +117,7 @@ object mod {
     @JSImport("photoshop", "app.ActionSet")
     @js.native
     open class ActionSet protected ()
-      extends typings.photoshop.actionsMod.ActionSet {
+      extends typings.photoshop.domActionsMod.ActionSet {
       /**
         * @ignore
         */
@@ -132,7 +132,7 @@ object mod {
     @JSImport("photoshop", "app.Document")
     @js.native
     open class Document protected ()
-      extends typings.photoshop.documentMod.Document {
+      extends typings.photoshop.domDocumentMod.Document {
       /**
         * @ignore
         */
@@ -147,7 +147,7 @@ object mod {
     @JSImport("photoshop", "app.Layer")
     @js.native
     open class Layer protected ()
-      extends typings.photoshop.layerMod.Layer {
+      extends typings.photoshop.domLayerMod.Layer {
       /**
         * @ignore
         */
@@ -165,7 +165,7 @@ object mod {
       * @ignore
       */
     open class Photoshop ()
-      extends typings.photoshop.photoshopMod.Photoshop
+      extends typings.photoshop.domPhotoshopMod.Photoshop
     
     /**
       * @ignore
@@ -175,12 +175,12 @@ object mod {
     @JSImport("photoshop", "app.SolidColor")
     @js.native
     open class SolidColor ()
-      extends typings.photoshop.solidColorMod.SolidColor
+      extends typings.photoshop.domObjectsSolidColorMod.SolidColor
     
-    type _To = typings.photoshop.photoshopMod.Photoshop
+    type _To = typings.photoshop.domPhotoshopMod.Photoshop
     
     /* This means you don't have to write `^`, but can instead just say `app.foo` */
-    override def _to: typings.photoshop.photoshopMod.Photoshop = ^
+    override def _to: typings.photoshop.domPhotoshopMod.Photoshop = ^
   }
   
   @JSImport("photoshop", "constants")

@@ -11,7 +11,6 @@ import typings.baseui.anon.PartialfilterOptionoption
 import typings.baseui.anon.Readonlyxstringanyidstrin
 import typings.baseui.anon.TypeofSelectComponent
 import typings.baseui.anon.ValueArray
-import typings.baseui.autosizeInputMod.default
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.input
@@ -20,6 +19,7 @@ import typings.baseui.baseuiStrings.li_
 import typings.baseui.baseuiStrings.select
 import typings.baseui.baseuiStrings.svg
 import typings.baseui.baseuiStrings.ul
+import typings.baseui.selectAutosizeInputMod.default
 import typings.baseui.selectTypesMod.Optgroups
 import typings.baseui.selectTypesMod.Options
 import typings.baseui.selectTypesMod.SelectProps
@@ -29,7 +29,7 @@ import typings.baseui.selectTypesMod.StatefulSelectProps
 import typings.baseui.selectTypesMod.Value
 import typings.react.mod.ComponentProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,14 +102,14 @@ object selectMod {
   
   inline def Select(
     props: ComponentProps[
-      (Instantiable1[/* props */ SelectProps, typings.baseui.selectComponentMod.default]) & TypeofSelectComponent
+      (Instantiable1[/* props */ SelectProps, typings.baseui.selectSelectComponentMod.default]) & TypeofSelectComponent
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Select")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("baseui/select", "SelectDropdown")
   @js.native
   open class SelectDropdown ()
-    extends typings.baseui.dropdownMod.default
+    extends typings.baseui.selectDropdownMod.default
   
   inline def SingleSelect(props: PartialSelectProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SingleSelect")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
@@ -332,7 +332,7 @@ object selectMod {
   @JSImport("baseui/select", "StatefulSelectContainer")
   @js.native
   open class StatefulSelectContainer ()
-    extends typings.baseui.statefulSelectContainerMod.default
+    extends typings.baseui.selectStatefulSelectContainerMod.default
   object StatefulSelectContainer {
     
     /* static member */

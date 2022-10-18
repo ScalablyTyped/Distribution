@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-message-util" : "29.1.2"
+      "jest-message-util" : "29.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-message-util" : "29.1.2"
+      "jest-message-util" : "29.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Font")
 @js.native
 open class Font protected ()
-  extends typings.canvg.fontMod.Font {
+  extends typings.canvg.distFontMod.Font {
   def this(fontStyle: String, fontVariant: String, fontWeight: String, fontSize: String, fontFamily: String) = this()
   def this(
     fontStyle: String,
@@ -23,7 +23,7 @@ open class Font protected ()
     fontWeight: String,
     fontSize: String,
     fontFamily: String,
-    inherit: typings.canvg.fontMod.Font
+    inherit: typings.canvg.distFontMod.Font
   ) = this()
 }
 /* static members */
@@ -33,12 +33,12 @@ object Font {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(): typings.canvg.fontMod.Font = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[typings.canvg.fontMod.Font]
-  inline def parse(font: String): typings.canvg.fontMod.Font = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.fontMod.Font]
-  inline def parse(font: String, inherit: String): typings.canvg.fontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.fontMod.Font]
-  inline def parse(font: String, inherit: typings.canvg.fontMod.Font): typings.canvg.fontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.fontMod.Font]
-  inline def parse(font: Unit, inherit: String): typings.canvg.fontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.fontMod.Font]
-  inline def parse(font: Unit, inherit: typings.canvg.fontMod.Font): typings.canvg.fontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.fontMod.Font]
+  inline def parse(): typings.canvg.distFontMod.Font = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[typings.canvg.distFontMod.Font]
+  inline def parse(font: String): typings.canvg.distFontMod.Font = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any]).asInstanceOf[typings.canvg.distFontMod.Font]
+  inline def parse(font: String, inherit: String): typings.canvg.distFontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distFontMod.Font]
+  inline def parse(font: String, inherit: typings.canvg.distFontMod.Font): typings.canvg.distFontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distFontMod.Font]
+  inline def parse(font: Unit, inherit: String): typings.canvg.distFontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distFontMod.Font]
+  inline def parse(font: Unit, inherit: typings.canvg.distFontMod.Font): typings.canvg.distFontMod.Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(font.asInstanceOf[js.Any], inherit.asInstanceOf[js.Any])).asInstanceOf[typings.canvg.distFontMod.Font]
   
   @JSImport("canvg", "Font.styles")
   @js.native

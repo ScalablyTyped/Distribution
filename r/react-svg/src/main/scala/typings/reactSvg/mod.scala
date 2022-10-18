@@ -2,7 +2,7 @@ package typings.reactSvg
 
 import typings.reactSvg.anon.AfterInjection
 import typings.reactSvg.anon.BeforeInjection
-import typings.reactSvg.typesMod.Props
+import typings.reactSvg.distTypesMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   @JSImport("react-svg", "ReactSVG")
   @js.native
   open class ReactSVG protected ()
-    extends typings.reactSvg.reactSVGMod.ReactSVG {
+    extends typings.reactSvg.distReactSVGMod.ReactSVG {
     def this(props: Props) = this()
     /**
       * @deprecated

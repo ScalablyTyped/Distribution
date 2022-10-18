@@ -1,10 +1,10 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.dialogStepButtonMod.DialogStepButtonProps
-import typings.blueprintjsCore.dialogStepMod.DialogStepId
-import typings.blueprintjsCore.multistepDialogMod.MultistepDialogNavPosition
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsCore.libEsmComponentsDialogDialogStepButtonMod.DialogStepButtonProps
+import typings.blueprintjsCore.libEsmComponentsDialogDialogStepMod.DialogStepId
+import typings.blueprintjsCore.libEsmComponentsDialogMultistepDialogMod.MultistepDialogNavPosition
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLProps
 import typings.react.mod.MouseEvent

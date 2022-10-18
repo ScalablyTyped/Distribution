@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-arn-parser
 
-Typings are for version 3.170.0
+Typings are for version 3.188.0
 
 ## Library description:
 A parser to Amazon Resource Names

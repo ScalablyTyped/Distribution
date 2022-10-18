@@ -274,6 +274,26 @@ trait RangeCollectionLoadOptions extends StObject {
   var values: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
+    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valuesAsJson: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
+    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    */
+  var valuesAsJsonLocal: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
     *
     * @remarks
@@ -423,6 +443,14 @@ object RangeCollectionLoadOptions {
     inline def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
     inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJson(value: Boolean): Self = StObject.set(x, "valuesAsJson", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJsonLocal(value: Boolean): Self = StObject.set(x, "valuesAsJsonLocal", value.asInstanceOf[js.Any])
+    
+    inline def setValuesAsJsonLocalUndefined: Self = StObject.set(x, "valuesAsJsonLocal", js.undefined)
+    
+    inline def setValuesAsJsonUndefined: Self = StObject.set(x, "valuesAsJson", js.undefined)
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     

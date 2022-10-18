@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.PartialIColorPickerProps
-import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
+import typings.officeUiFabricReact.libComponentsColorPickerColorPickerDottypesMod.IColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

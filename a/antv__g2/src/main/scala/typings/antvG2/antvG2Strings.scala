@@ -1,6 +1,6 @@
 package typings.antvG2
 
-import typings.antvG2.labelInterfaceMod.TextAlign
+import typings.antvG2.libGeometryLabelInterfaceMod.TextAlign
 import typings.antvG2.libInterfaceMod.AdjustType
 import typings.antvG2.libInterfaceMod.AttributeType
 import typings.antvG2.libInterfaceMod.IntervalGeometryLabelPosition
@@ -12,10 +12,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antvG2Strings {
-  
-  @js.native
-  sealed trait Writeable extends StObject
-  inline def Writeable: Writeable = "Writeable".asInstanceOf[Writeable]
   
   @js.native
   sealed trait annotation extends StObject

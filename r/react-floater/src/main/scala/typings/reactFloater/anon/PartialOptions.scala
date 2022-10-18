@@ -1,7 +1,7 @@
 package typings.reactFloater.anon
 
 import typings.popperjsCore.anon.Placement
-import typings.popperjsCore.typesMod.Padding
+import typings.popperjsCore.libTypesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

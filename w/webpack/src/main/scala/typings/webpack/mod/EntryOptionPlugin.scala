@@ -4,22 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "EntryOptionPlugin")
-@js.native
-open class EntryOptionPlugin () extends StObject {
+trait EntryOptionPlugin extends StObject {
   
   @JSName("apply")
-  def apply(compiler: Compiler): Unit = js.native
+  def apply(compiler: Compiler): Unit
 }
 object EntryOptionPlugin {
   
-  @JSImport("webpack", "EntryOptionPlugin")
-  @js.native
-  val ^ : js.Any = js.native
+  inline def apply(apply: Compiler => Unit): EntryOptionPlugin = {
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+    __obj.asInstanceOf[EntryOptionPlugin]
+  }
   
-  /* static member */
-  inline def applyEntryOption(compiler: Compiler, context: String, entry: EntryNormalized): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyEntryOption")(compiler.asInstanceOf[js.Any], context.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /* static member */
-  inline def entryDescriptionToOptions(compiler: Compiler, name: String, desc: EntryDescriptionNormalized): EntryOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("entryDescriptionToOptions")(compiler.asInstanceOf[js.Any], name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[EntryOptions]
+  extension [Self <: EntryOptionPlugin](x: Self) {
+    
+    inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+  }
 }

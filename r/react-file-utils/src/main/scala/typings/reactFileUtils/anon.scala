@@ -2,11 +2,11 @@ package typings.reactFileUtils
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
-import typings.reactFileUtils.mimeTypesMod.GeneralType
-import typings.reactFileUtils.mimeTypesMod.SupportedMimeType
+import typings.reactFileUtils.distComponentsFileIconFileIconSetV1Mod.IconPropsV1
+import typings.reactFileUtils.distComponentsFileIconFileIconSetV2Mod.IconPropsV2
+import typings.reactFileUtils.distComponentsFileIconMimeTypesMod.GeneralType
+import typings.reactFileUtils.distComponentsFileIconMimeTypesMod.SupportedMimeType
 import typings.reactFileUtils.reactFileUtilsStrings.fallback
-import typings.reactFileUtils.v1Mod.IconPropsV1
-import typings.reactFileUtils.v2Mod.IconPropsV2
 import typings.std.File
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "LanguageNotRegisteredError")
 @js.native
 open class LanguageNotRegisteredError ()
-  extends typings.hyperformula.errorsMod.LanguageNotRegisteredError
+  extends typings.hyperformula.typingsErrorsMod.LanguageNotRegisteredError

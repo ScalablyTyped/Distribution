@@ -1,7 +1,7 @@
 package typings.cheerio
 
-import typings.cheerio.cheerioMod.Cheerio
 import typings.cheerio.cheerioStrings._empty
+import typings.cheerio.libCheerioMod.Cheerio
 import typings.cheerio.libOptionsMod.CheerioOptions
 import typings.cheerio.libTypesMod.BasicAcceptedElems
 import typings.domhandler.libNodeMod.AnyNode

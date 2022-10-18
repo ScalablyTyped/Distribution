@@ -1,91 +1,19 @@
 package typings.ipfsHttpGateway
 
-import typings.debug.mod.Debugger
-import typings.joi.mod.ObjectSchema
+import typings.hapiHapi.mod.Request
+import typings.hapiHapi.mod.ResponseObject
+import typings.hapiHapi.mod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait CopyWithin extends StObject {
-    
-    var copyWithin: Boolean
-    
-    var entries: Boolean
-    
-    var fill: Boolean
-    
-    var find: Boolean
-    
-    var findIndex: Boolean
-    
-    var keys: Boolean
-    
-    var values: Boolean
-  }
-  object CopyWithin {
-    
-    inline def apply(
-      copyWithin: Boolean,
-      entries: Boolean,
-      fill: Boolean,
-      find: Boolean,
-      findIndex: Boolean,
-      keys: Boolean,
-      values: Boolean
-    ): CopyWithin = {
-      val __obj = js.Dynamic.literal(copyWithin = copyWithin.asInstanceOf[js.Any], entries = entries.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], findIndex = findIndex.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CopyWithin]
-    }
-    
-    extension [Self <: CopyWithin](x: Self) {
-      
-      inline def setCopyWithin(value: Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
-      
-      inline def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
-      
-      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      inline def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
-      
-      inline def setFindIndex(value: Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
-      
-      inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
-      
-      inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined debug.debug.Debugger & {  error :debug.debug.Debugger} */
-  @js.native
-  trait DebuggererrorDebugger extends StObject {
-    
-    def apply(formatter: js.Any, args: js.Any*): Unit = js.native
-    
-    var color: String = js.native
-    
-    def destroy(): Boolean = js.native
-    
-    var enabled: Boolean = js.native
-    
-    def error(formatter: js.Any, args: js.Any*): Unit = js.native
-    @JSName("error")
-    var error_Original: Debugger = js.native
-    
-    def extend(namespace: String): Debugger = js.native
-    def extend(namespace: String, delimiter: String): Debugger = js.native
-    
-    def log(args: js.Any*): js.Any = js.native
-    
-    var namespace: String = js.native
-  }
-  
   trait Ext extends StObject {
     
     var ext: OnPostHandler
     
-    def handler(request: js.Any, h: js.Any): js.Promise[js.Any]
+    def handler(request: Request, h: ResponseToolkit): js.Promise[ResponseObject]
     
     var response: Ranges
     
@@ -95,7 +23,7 @@ object anon {
     
     inline def apply(
       ext: OnPostHandler,
-      handler: (js.Any, js.Any) => js.Promise[js.Any],
+      handler: (Request, ResponseToolkit) => js.Promise[ResponseObject],
       response: Ranges,
       validate: Params
     ): Ext = {
@@ -107,7 +35,7 @@ object anon {
       
       inline def setExt(value: OnPostHandler): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      inline def setHandler(value: (Request, ResponseToolkit) => js.Promise[ResponseObject]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
       inline def setResponse(value: Ranges): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
@@ -117,18 +45,18 @@ object anon {
   
   trait Method extends StObject {
     
-    def method(request: js.Any, h: js.Any): js.Any
+    def method(request: Request, h: ResponseToolkit): js.Symbol
   }
   object Method {
     
-    inline def apply(method: (js.Any, js.Any) => js.Any): Method = {
+    inline def apply(method: (Request, ResponseToolkit) => js.Symbol): Method = {
       val __obj = js.Dynamic.literal(method = js.Any.fromFunction2(method))
       __obj.asInstanceOf[Method]
     }
     
     extension [Self <: Method](x: Self) {
       
-      inline def setMethod(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
+      inline def setMethod(value: (Request, ResponseToolkit) => js.Symbol): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
     }
   }
   
@@ -176,18 +104,22 @@ object anon {
   
   trait Params extends StObject {
     
-    var params: ObjectSchema[js.Any]
+    var params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Joi.ObjectSchema<any> */ Any
   }
   object Params {
     
-    inline def apply(params: ObjectSchema[js.Any]): Params = {
+    inline def apply(
+      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Joi.ObjectSchema<any> */ Any
+    ): Params = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
     extension [Self <: Params](x: Self) {
       
-      inline def setParams(value: ObjectSchema[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Joi.ObjectSchema<any> */ Any
+      ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   

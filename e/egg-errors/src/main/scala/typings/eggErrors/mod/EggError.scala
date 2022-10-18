@@ -1,6 +1,6 @@
 package typings.eggErrors.mod
 
-import typings.eggErrors.errorMod.default
+import typings.eggErrors.libErrorMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

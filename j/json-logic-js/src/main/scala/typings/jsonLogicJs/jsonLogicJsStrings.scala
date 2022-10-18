@@ -92,10 +92,6 @@ object jsonLogicJsStrings {
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
-  sealed trait RenameToIn extends StObject
-  inline def RenameToIn: RenameToIn = "RenameToIn".asInstanceOf[RenameToIn]
-  
-  @js.native
   sealed trait Slash
     extends StObject
        with ReservedOperations

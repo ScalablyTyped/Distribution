@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsPieChartTwoToneMod.PieChartTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pieChartTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/PieChartTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/PieChartTwoTone", JSImport.Default)
   @js.native
   val default: PieChartTwoToneIconType = js.native
-  
-  @js.native
-  trait PieChartTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_PieChartTwoToneIconType: String = js.native
-  }
   
   type _To = PieChartTwoToneIconType
   

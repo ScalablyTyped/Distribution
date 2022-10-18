@@ -1,11 +1,11 @@
 package typings.awsSdkClientDynamodbNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientDynamodbNode.typesAttributeValueMod.UnmarshalledAttributeValue
 import typings.awsSdkClientDynamodbNode.typesConsumedCapacityMod.UnmarshalledConsumedCapacity
 import typings.awsSdkClientDynamodbNode.typesItemCollectionMetricsMod.UnmarshalledItemCollectionMetrics
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientDynamodbNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAdmin
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdmin.anon.Accesstoken
 import typings.maximMazurokGapiClientAdmin.anon.ActorIpAddress
@@ -166,9 +165,7 @@ object gapi {
         
         /** Additional parameters controlling delivery channel behavior. Optional. */
         var params: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
               ] = js.undefined
         
         /** A Boolean value to indicate whether payload is wanted. Optional. */
@@ -212,9 +209,7 @@ object gapi {
           inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
           inline def setParams(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientAdmin.maximMazurokGapiClientAdminStrings.Channel & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
           ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
           inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

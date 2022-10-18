@@ -1,9 +1,9 @@
 package typings.dwt
 
 import org.scalablytyped.runtime.Shortcut
-import typings.dwt.addonOCRProMod.Settings
+import typings.dwt.addonDotOCRProMod.Settings
 import typings.dwt.anon.TypeofDynamsoftStatic
-import typings.dwt.dynamsoftFileUploaderMod.FileUploader
+import typings.dwt.dynamsoftDotFileUploaderMod.FileUploader
 import typings.dwt.webTwainMod.WebTwain
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
@@ -25,7 +25,7 @@ object dynamsoftMod extends Shortcut {
     
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.FileUploader")
     @js.native
-    def FileUploader: typings.dwt.dynamsoftFileUploaderMod.FileUploader = js.native
+    def FileUploader: typings.dwt.dynamsoftDotFileUploaderMod.FileUploader = js.native
     inline def FileUploader_=(x: FileUploader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileUploader")(x.asInstanceOf[js.Any])
     
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.Lib")

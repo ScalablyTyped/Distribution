@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__metapackage
 
-Typings are for version 2.2.7
+Typings are for version 3.4.8
 
 ## Library description:
 JupyterLab - Meta Package.  All of the packages used by the core JupyterLab application
@@ -10,10 +10,10 @@ JupyterLab - Meta Package.  All of the packages used by the core JupyterLab appl
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/metapackage |
 | Keywords           | - |
-| # releases         | 144 |
-| # dependents       | 0 |
-| # downloads        | 1409499 |
-| # stars            | 0 |
+| # releases         | 149 |
+| # dependents       | 0.0 |
+| # downloads        | 191970.66666666666 |
+| # stars            | 12379.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

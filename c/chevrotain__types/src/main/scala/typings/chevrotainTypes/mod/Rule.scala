@@ -1,6 +1,6 @@
 package typings.chevrotainTypes.mod
 
-import typings.chevrotainTypes.anon.Definition
+import typings.chevrotainTypes.anon.OrgText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@chevrotain/types", "Rule")
 @js.native
 open class Rule protected () extends StObject {
-  def this(options: Definition) = this()
+  def this(options: OrgText) = this()
   
   def accept(visitor: IGASTVisitor): Unit = js.native
   

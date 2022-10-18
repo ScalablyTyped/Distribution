@@ -1,10 +1,10 @@
 package typings.firebaseInstallations
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebaseInstallations.apiOnIdChangeMod.IdChangeCallbackFn
-import typings.firebaseInstallations.apiOnIdChangeMod.IdChangeUnsubscribeFn
-import typings.firebaseInstallations.interfacesPublicTypesMod.Installations
-import typings.firebaseInstallations.publicTypesMod.FirebaseInstallationsInternal
+import typings.firebaseInstallations.distSrcApiOnIdChangeMod.IdChangeCallbackFn
+import typings.firebaseInstallations.distSrcApiOnIdChangeMod.IdChangeUnsubscribeFn
+import typings.firebaseInstallations.distSrcInterfacesPublicTypesMod.FirebaseInstallationsInternal
+import typings.firebaseInstallations.distSrcInterfacesPublicTypesMod.Installations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,20 +27,18 @@ object distSrcMod {
   
   inline def onIdChange(installations: Installations, callback: IdChangeCallbackFn): IdChangeUnsubscribeFn = (^.asInstanceOf[js.Dynamic].applyDynamic("onIdChange")(installations.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IdChangeUnsubscribeFn]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var installations: typings.firebaseInstallations.publicTypesMod.Installations
+      var installations: Installations
       
       var `installations-internal`: FirebaseInstallationsInternal
     }
     object NameServiceMapping {
       
-      inline def apply(
-        installations: typings.firebaseInstallations.publicTypesMod.Installations,
-        `installations-internal`: FirebaseInstallationsInternal
-      ): NameServiceMapping = {
+      inline def apply(installations: Installations, `installations-internal`: FirebaseInstallationsInternal): NameServiceMapping = {
         val __obj = js.Dynamic.literal(installations = installations.asInstanceOf[js.Any])
         __obj.updateDynamic("installations-internal")(`installations-internal`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
@@ -48,7 +46,7 @@ object distSrcMod {
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setInstallations(value: typings.firebaseInstallations.publicTypesMod.Installations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
+        inline def setInstallations(value: Installations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
         
         inline def `setInstallations-internal`(value: FirebaseInstallationsInternal): Self = StObject.set(x, "installations-internal", value.asInstanceOf[js.Any])
       }

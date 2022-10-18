@@ -1,14 +1,14 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.dropMod.DropBack
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.prependMod.Prepend
-import typings.tsToolbelt.prevMod.Prev
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationPrevMod.Prev
+import typings.tsToolbelt.outListDropMod.DropBack
+import typings.tsToolbelt.outListPrependMod.Prepend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0DropBack`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */] extends StObject {
+trait `0DropBack`[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] extends StObject {
   
   var `0`: DropBack[
     L, 
@@ -24,7 +24,7 @@ trait `0DropBack`[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Itera
 }
 object `0DropBack` {
   
-  inline def apply[L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](
+  inline def apply[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](
     `0`: DropBack[
       L, 
       N, 
@@ -42,7 +42,7 @@ object `0DropBack` {
     __obj.asInstanceOf[`0DropBack`[L, N, I, LN]]
   }
   
-  extension [Self <: `0DropBack`[?, ?, ?, ?], L /* <: typings.tsToolbelt.listMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.listMod.List[Any] */](x: Self & (`0DropBack`[L, N, I, LN])) {
+  extension [Self <: `0DropBack`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Iteration */, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0DropBack`[L, N, I, LN])) {
     
     inline def set0(
       value: DropBack[

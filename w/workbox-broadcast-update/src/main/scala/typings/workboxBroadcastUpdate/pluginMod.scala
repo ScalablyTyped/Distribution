@@ -1,9 +1,9 @@
 package typings.workboxBroadcastUpdate
 
 import typings.workboxBroadcastUpdate.broadcastCacheUpdateMod.BroadcastCacheUpdateOptions
-import typings.workboxCore.workboxPluginMod.CacheDidUpdateCallback
-import typings.workboxCore.workboxPluginMod.CacheDidUpdateCallbackParam
-import typings.workboxCore.workboxPluginMod.WorkboxPlugin
+import typings.workboxCore.typesWorkboxPluginMod.CacheDidUpdateCallback
+import typings.workboxCore.typesWorkboxPluginMod.CacheDidUpdateCallbackParam
+import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

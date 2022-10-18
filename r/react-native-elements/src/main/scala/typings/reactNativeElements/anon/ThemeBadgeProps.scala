@@ -7,12 +7,12 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.reactNativeElements.reactNativeElementsStrings.error
 import typings.reactNativeElements.reactNativeElementsStrings.primary
 import typings.reactNativeElements.reactNativeElementsStrings.success
 import typings.reactNativeElements.reactNativeElementsStrings.warning
-import typings.reactNativeElements.searchBarMod.SearchBarProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

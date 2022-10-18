@@ -15,6 +15,12 @@ trait GlowLayer
   
   /* private */ var _excludedMeshes: Any = js.native
   
+  /**
+    * @returns The blur kernel size used by the glow.
+    * Note: The value passed in the options is divided by 2 for back compatibility.
+    */
+  /* private */ var _getEffectiveBlurKernelSize: Any = js.native
+  
   /* private */ var _horizontalBlurPostprocess1: Any = js.native
   
   /* private */ var _horizontalBlurPostprocess2: Any = js.native

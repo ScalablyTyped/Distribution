@@ -6,16 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateEmail extends StObject {
   
-  /**
-    * Format: date-time
-    * @description Indicates when this commit was authored (or committed). This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
-    */
   var date: js.UndefOr[String] = js.undefined
   
-  /** @description The email of the author (or committer) of the commit */
   var email: js.UndefOr[String] = js.undefined
   
-  /** @description The name of the author (or committer) of the commit */
   var name: js.UndefOr[String] = js.undefined
 }
 object DateEmail {

@@ -149,6 +149,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object vueTypesVueAugmentingMod {
     
     @js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ErrorHandlerContext extends StObject {
   
-  var agent: js.UndefOr[typings.sharedb.agentMod.^[Any]] = js.undefined
+  var agent: js.UndefOr[typings.sharedb.libAgentMod.^[Any]] = js.undefined
 }
 object ErrorHandlerContext {
   
@@ -17,7 +17,7 @@ object ErrorHandlerContext {
   
   extension [Self <: ErrorHandlerContext](x: Self) {
     
-    inline def setAgent(value: typings.sharedb.agentMod.^[Any]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: typings.sharedb.libAgentMod.^[Any]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
   }

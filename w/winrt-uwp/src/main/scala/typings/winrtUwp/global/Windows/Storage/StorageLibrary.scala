@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Lets you add and remove folders from a library like Music or Videos and lets you get a list of folders included in the library. */
-@JSGlobal("Windows.Storage.StorageLibrary")
+/* note: abstract class */ @JSGlobal("Windows.Storage.StorageLibrary")
 @js.native
-abstract class StorageLibrary ()
+open class StorageLibrary ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.StorageLibrary
 object StorageLibrary {

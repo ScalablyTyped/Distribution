@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains read-only configuration settings for the MediaCapture object. */
-@JSGlobal("Windows.Media.Capture.MediaCaptureSettings")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.MediaCaptureSettings")
 @js.native
-abstract class MediaCaptureSettings ()
+open class MediaCaptureSettings ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.MediaCaptureSettings {
   

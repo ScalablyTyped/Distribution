@@ -8,7 +8,7 @@ object jestSetupMod {
   
   object consoleErrors {
     
-    @JSImport("wix-ui-test-utils/dist/src/jest-setup", "consoleErrors")
+    @JSImport("wix-ui-test-utils/jest-setup", "consoleErrors")
     @js.native
     val ^ : js.Any = js.native
     

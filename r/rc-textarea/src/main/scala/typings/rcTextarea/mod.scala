@@ -2,11 +2,14 @@ package typings.rcTextarea
 
 import typings.rcTextarea.anon.Height
 import typings.rcTextarea.anon.Value
-import typings.rcTextarea.resizableTextAreaMod.AutoSizeType
+import typings.rcTextarea.esResizableTextAreaMod.AutoSizeType
+import typings.rcTextarea.esResizableTextAreaMod.ResizableTextAreaRef
 import typings.react.mod.ChangeEvent
 import typings.react.mod.Component
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.RefAttributes
 import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
@@ -32,10 +35,7 @@ object mod {
   
   @JSImport("rc-textarea", "ResizableTextArea")
   @js.native
-  open class ResizableTextArea protected ()
-    extends typings.rcTextarea.resizableTextAreaMod.default {
-    def this(props: TextAreaProps) = this()
-  }
+  val ResizableTextArea: ForwardRefExoticComponent[TextAreaProps & RefAttributes[ResizableTextAreaRef]] = js.native
   
   type HTMLTextareaProps = TextareaHTMLAttributes[HTMLTextAreaElement]
   
@@ -50,9 +50,9 @@ object mod {
     
     def handleKeyDown(e: KeyboardEvent[HTMLTextAreaElement]): Unit = js.native
     
-    var resizableTextArea: typings.rcTextarea.resizableTextAreaMod.default = js.native
+    var resizableTextArea: ResizableTextAreaRef = js.native
     
-    def saveTextArea(resizableTextArea: typings.rcTextarea.resizableTextAreaMod.default): Unit = js.native
+    def saveTextArea(resizableTextArea: ResizableTextAreaRef): Unit = js.native
     
     def setValue(value: String): Unit = js.native
     def setValue(value: String, callback: js.Function0[Unit]): Unit = js.native

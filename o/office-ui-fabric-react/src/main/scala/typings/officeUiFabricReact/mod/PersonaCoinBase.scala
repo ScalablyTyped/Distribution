@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
+import typings.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaCoinProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.react.mod.ComponentLifecycle because Already inherited
 - js.Object because Already inherited
 - typings.react.mod.Component because Already inherited
-- typings.officeUiFabricReact.personaCoinBaseMod.PersonaCoinBase because Already inherited
-- typings.officeUiFabricReact.personaCoinMod.PersonaCoinBase because Already inherited
-- typings.officeUiFabricReact.personaMod.PersonaCoinBase because Already inherited
+- typings.officeUiFabricReact.libComponentsPersonaPersonaCoinPersonaCoinDotbaseMod.PersonaCoinBase because Already inherited
+- typings.officeUiFabricReact.libComponentsPersonaPersonaCoinMod.PersonaCoinBase because Already inherited
+- typings.officeUiFabricReact.libComponentsPersonaMod.PersonaCoinBase because Already inherited
 - typings.officeUiFabricReact.libPersonaCoinMod.PersonaCoinBase because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "PersonaCoinBase")
 @js.native
 open class PersonaCoinBase protected ()

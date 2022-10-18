@@ -1,7 +1,7 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.anon.PartialWithMobileDialog
-import typings.materialUiCore.createBreakpointsMod.Breakpoint
+import typings.materialUiCore.stylesCreateBreakpointsMod.Breakpoint
 import typings.materialUiCore.withWidthWithWidthMod.WithWidth
 import typings.materialUiTypes.mod.PropInjector
 import org.scalablytyped.runtime.StObject

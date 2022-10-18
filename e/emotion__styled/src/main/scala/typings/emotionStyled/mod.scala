@@ -2,7 +2,7 @@ package typings.emotionStyled
 
 import org.scalablytyped.runtime.Shortcut
 import typings.emotionStyled.anon.As
-import typings.emotionStyled.baseMod.CreateStyledComponent
+import typings.emotionStyled.typesBaseMod.CreateStyledComponent
 import typings.react.HTMLWebViewElement
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.AreaHTMLAttributes
@@ -187,7 +187,7 @@ object mod extends Shortcut {
   @js.native
   trait CreateStyled
     extends StObject
-       with typings.emotionStyled.baseMod.CreateStyled
+       with typings.emotionStyled.typesBaseMod.CreateStyled
        with StyledTags
   
   /* Inlined {[ Tag in keyof react.react.<global>.JSX.IntrinsicElements ]: @emotion/styled.@emotion/styled/types/base.CreateStyledComponent<{  theme :@emotion/react.@emotion/react.Theme | undefined,   as :react.react.ElementType<any> | undefined}, react.react.<global>.JSX.IntrinsicElements[Tag], {}>} */

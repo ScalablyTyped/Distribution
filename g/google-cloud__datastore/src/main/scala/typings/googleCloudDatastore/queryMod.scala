@@ -6,7 +6,7 @@ import typings.googleCloudDatastore.googleCloudDatastoreStrings.MORE_RESULTS_AFT
 import typings.googleCloudDatastore.googleCloudDatastoreStrings.NO_MORE_RESULTS
 import typings.googleCloudDatastore.googleCloudDatastoreStrings.eventual
 import typings.googleCloudDatastore.googleCloudDatastoreStrings.strong
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ object queryMod {
     def run(options: QueryOptions): js.Promise[QueryResult] = js.native
     def run(options: QueryOptions, callback: QueryCallback): Unit = js.native
     
-    def runStream(): ReadableStream[Any] = js.native
+    def runStream(): ReadableStream = js.native
     
     def select(properties: String): this.type = js.native
     def select(properties: js.Array[String]): this.type = js.native

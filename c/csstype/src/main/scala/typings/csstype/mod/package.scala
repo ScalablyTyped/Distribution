@@ -1,13 +1,12 @@
 package typings.csstype.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /* Rewritten from type alias, can be one of: 
-  - java.lang.String
+  - / * :-moz-any() * / java.lang.String
   - typings.csstype.csstypeStrings.`Colon-moz-dir`
   - typings.csstype.csstypeStrings.ColonColoncue
   - typings.csstype.csstypeStrings.`ColonColoncue-region`
@@ -26,16 +25,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`Colonnth-of-type`
   - typings.csstype.csstypeStrings.Colonwhere
 */
-type AdvancedPseudos = _AdvancedPseudos | String
-
-type Fallback[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: T[P] | std.Array<std.NonNullable<T[P]>>}
-  */ typings.csstype.csstypeStrings.Fallback & TopLevel[Any]
-
-type PropertyValue[TValue] = TValue | js.Array[Any]
+type AdvancedPseudos = _AdvancedPseudos | (/* :-moz-any() */ String)
 
 /* Rewritten from type alias, can be one of: 
-  - java.lang.String
+  - / * :-moz-any() * / java.lang.String
   - typings.csstype.csstypeStrings.`Colon-moz-dir`
   - typings.csstype.csstypeStrings.ColonColoncue
   - typings.csstype.csstypeStrings.`ColonColoncue-region`
@@ -161,4 +154,4 @@ type PropertyValue[TValue] = TValue | js.Array[Any]
   - typings.csstype.csstypeStrings.Colonvalid
   - typings.csstype.csstypeStrings.Colonvisited
 */
-type Pseudos = _Pseudos | String
+type Pseudos = _Pseudos | (/* :-moz-any() */ String)

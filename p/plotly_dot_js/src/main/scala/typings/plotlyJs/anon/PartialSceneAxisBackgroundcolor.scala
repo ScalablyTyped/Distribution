@@ -164,7 +164,7 @@ trait PartialSceneAxisBackgroundcolor extends StObject {
   
   var tickwidth: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String | PartialDataTitleFont] = js.undefined
+  var title: js.UndefOr[String | PartialDataTitle] = js.undefined
   
   var titlefont: js.UndefOr[PartialFont] = js.undefined
   
@@ -419,7 +419,7 @@ object PartialSceneAxisBackgroundcolor {
     
     inline def setTickwidthUndefined: Self = StObject.set(x, "tickwidth", js.undefined)
     
-    inline def setTitle(value: String | PartialDataTitleFont): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | PartialDataTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     

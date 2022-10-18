@@ -1,36 +1,35 @@
 package typings.uifabricStyling
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
-import typings.fluentuiTheme.ianimationstylesMod.IAnimationStyles
-import typings.fluentuiTheme.ianimationstylesMod.IAnimationVariables
-import typings.fluentuiTheme.ieffectsMod.IEffects
-import typings.fluentuiTheme.ifontstylesMod.IFontStyles
-import typings.fluentuiTheme.ipaletteMod.IPalette
-import typings.fluentuiTheme.ischemeMod.ISchemeNames
-import typings.fluentuiTheme.ithemeMod.IPartialTheme
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.fluentuiTheme.themeMod.PartialTheme
-import typings.fluentuiTheme.themeMod.Theme
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.ikeyframesMod.IKeyframes
-import typings.uifabricMergeStyles.irawstyleMod.IRawStyle
-import typings.uifabricMergeStyles.irawstylebaseMod.IFontFace
-import typings.uifabricMergeStyles.istyleMod.IStyle
-import typings.uifabricMergeStyles.istyleMod.IStyleBaseArray
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricMergeStyles.istylesetMod.IConcatenatedStyleSet
-import typings.uifabricMergeStyles.istylesetMod.IProcessedStyleSet
-import typings.uifabricMergeStyles.istylesetMod.IStyleSet
-import typings.uifabricMergeStyles.objectOnlyMod.ObjectOnly
-import typings.uifabricMergeStyles.stylesheetMod.IStyleSheetConfig
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
+import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationStyles
+import typings.fluentuiTheme.libTypesIanimationstylesMod.IAnimationVariables
+import typings.fluentuiTheme.libTypesIeffectsMod.IEffects
+import typings.fluentuiTheme.libTypesIfontstylesMod.IFontStyles
+import typings.fluentuiTheme.libTypesIpaletteMod.IPalette
+import typings.fluentuiTheme.libTypesIschemeMod.ISchemeNames
+import typings.fluentuiTheme.libTypesIthemeMod.IPartialTheme
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.fluentuiTheme.libTypesThemeMod.PartialTheme
+import typings.fluentuiTheme.libTypesThemeMod.Theme
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIkeyframesMod.IKeyframes
+import typings.uifabricMergeStyles.libIrawstyleMod.IRawStyle
+import typings.uifabricMergeStyles.libIrawstylebaseMod.IFontFace
+import typings.uifabricMergeStyles.libIstyleMod.IStyle
+import typings.uifabricMergeStyles.libIstyleMod.IStyleBaseArray
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricMergeStyles.libIstylesetMod.IConcatenatedStyleSet
+import typings.uifabricMergeStyles.libIstylesetMod.IProcessedStyleSet
+import typings.uifabricMergeStyles.libIstylesetMod.IStyleSet
+import typings.uifabricMergeStyles.libObjectOnlyMod.ObjectOnly
+import typings.uifabricMergeStyles.libStylesheetMod.IStyleSheetConfig
 import typings.uifabricStyling.anon.PartialIIconOptions
-import typings.uifabricStyling.colorClassNamesMod.IColorClassNames
-import typings.uifabricStyling.getGlobalClassNamesMod.GlobalClassNames
-import typings.uifabricStyling.iconsMod.IIconRecord
-import typings.uifabricStyling.iconsMod.IIconSubset
-import typings.uifabricStyling.igetfocusstylesMod.IGetFocusStylesOptions
+import typings.uifabricStyling.libClassNamesColorClassNamesMod.IColorClassNames
+import typings.uifabricStyling.libInterfacesIgetfocusstylesMod.IGetFocusStylesOptions
+import typings.uifabricStyling.libStylesGetGlobalClassNamesMod.GlobalClassNames
+import typings.uifabricStyling.libUtilitiesIconsMod.IIconRecord
+import typings.uifabricStyling.libUtilitiesIconsMod.IIconSubset
 import typings.uifabricStyling.uifabricStylingBooleans.`false`
 import typings.uifabricStyling.uifabricStylingInts.`0`
 import typings.uifabricStyling.uifabricStylingInts.`1`
@@ -41,7 +40,7 @@ import typings.uifabricStyling.uifabricStylingStrings.borderBottom
 import typings.uifabricStyling.uifabricStylingStrings.horizontal
 import typings.uifabricStyling.uifabricStylingStrings.relative
 import typings.uifabricStyling.uifabricStylingStrings.vertical
-import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
+import typings.uifabricUtilities.libCustomizationsCustomizerContextMod.ICustomizerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -563,6 +562,13 @@ object mod {
         /* borderWidth */ String, 
         String
       ] = js.native
+    inline def continuousPulseAnimationDouble(
+      beaconColorOne: String,
+      beaconColorTwo: String,
+      innerDimension: String,
+      outerDimension: String,
+      borderWidth: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("continuousPulseAnimationDouble")(beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], innerDimension.asInstanceOf[js.Any], outerDimension.asInstanceOf[js.Any], borderWidth.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def continuousPulseAnimationDouble_=(
       x: js.Function5[
           /* beaconColorOne */ String, 
@@ -584,6 +590,13 @@ object mod {
         /* borderWidth */ String, 
         String
       ] = js.native
+    inline def continuousPulseAnimationSingle(
+      beaconColorOne: String,
+      beaconColorTwo: String,
+      innerDimension: String,
+      outerDimension: String,
+      borderWidth: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("continuousPulseAnimationSingle")(beaconColorOne.asInstanceOf[js.Any], beaconColorTwo.asInstanceOf[js.Any], innerDimension.asInstanceOf[js.Any], outerDimension.asInstanceOf[js.Any], borderWidth.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def continuousPulseAnimationSingle_=(
       x: js.Function5[
           /* beaconColorOne */ String, 
@@ -598,6 +611,8 @@ object mod {
     @JSImport("@uifabric/styling", "PulsingBeaconAnimationStyles.createDefaultAnimation")
     @js.native
     def createDefaultAnimation: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle] = js.native
+    inline def createDefaultAnimation(animationName: String): IRawStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultAnimation")(animationName.asInstanceOf[js.Any]).asInstanceOf[IRawStyle]
+    inline def createDefaultAnimation(animationName: String, delayLength: String): IRawStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultAnimation")(animationName.asInstanceOf[js.Any], delayLength.asInstanceOf[js.Any])).asInstanceOf[IRawStyle]
     inline def createDefaultAnimation_=(x: js.Function2[/* animationName */ String, /* delayLength */ js.UndefOr[String], IRawStyle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createDefaultAnimation")(x.asInstanceOf[js.Any])
   }
   
@@ -652,7 +667,7 @@ object mod {
   @JSImport("@uifabric/styling", "Stylesheet")
   @js.native
   open class Stylesheet ()
-    extends typings.uifabricStyling.mergeStylesMod.Stylesheet {
+    extends typings.uifabricStyling.libMergeStylesMod.Stylesheet {
     def this(config: IStyleSheetConfig) = this()
   }
   /* static members */
@@ -665,7 +680,7 @@ object mod {
     /**
       * Gets the singleton instance.
       */
-    inline def getInstance(): typings.uifabricMergeStyles.stylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.uifabricMergeStyles.stylesheetMod.Stylesheet]
+    inline def getInstance(): typings.uifabricMergeStyles.libStylesheetMod.Stylesheet = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.uifabricMergeStyles.libStylesheetMod.Stylesheet]
   }
   
   @JSImport("@uifabric/styling", "ThemeSettingName")
@@ -702,11 +717,7 @@ object mod {
     val ScrollablePane: Double = js.native
   }
   
-  inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? string}
-    */ typings.uifabricStyling.uifabricStylingStrings.buildClassMap & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]:? string}
-    */ typings.uifabricStyling.uifabricStylingStrings.buildClassMap & TopLevel[Any]]
+  inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]:? string} */ js.Any]
   
   inline def concatStyleSets[TStyleSet](): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")().asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
   inline def concatStyleSets[TStyleSet](styleSet: TStyleSet): IConcatenatedStyleSet[ObjectOnly[TStyleSet]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatStyleSets")(styleSet.asInstanceOf[js.Any]).asInstanceOf[IConcatenatedStyleSet[ObjectOnly[TStyleSet]]]
@@ -784,7 +795,7 @@ object mod {
   inline def getFadedOverflowStyle(
     theme: ITheme,
     color: js.UndefOr[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154 */ Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uifabricStyling.uifabricStylingStrings.bodyBackground, typings.uifabricStyling.uifabricStylingStrings.bodyBackgroundHovered, typings.uifabricStyling.uifabricStylingStrings.bodyBackgroundChecked */ Any
     ],
     direction: js.UndefOr[horizontal | vertical],
     width: js.UndefOr[String | Double],
@@ -859,8 +870,6 @@ object mod {
   @JSImport("@uifabric/styling", "hiddenContentStyle")
   @js.native
   val hiddenContentStyle: IRawStyle = js.native
-  
-  inline def initializeThemeInCustomizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeThemeInCustomizations")().asInstanceOf[Unit]
   
   inline def keyframes(timeline: IKeyframes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(timeline.asInstanceOf[js.Any]).asInstanceOf[String]
   

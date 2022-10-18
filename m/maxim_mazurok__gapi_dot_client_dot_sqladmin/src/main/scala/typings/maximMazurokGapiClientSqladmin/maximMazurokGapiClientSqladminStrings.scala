@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientSqladminStrings {
   
   @js.native
-  sealed trait Settings extends StObject
-  inline def Settings: Settings = "Settings".asInstanceOf[Settings]
-  
-  @js.native
   sealed trait sqladmin extends StObject
   inline def sqladmin: sqladmin = "sqladmin".asInstanceOf[sqladmin]
   

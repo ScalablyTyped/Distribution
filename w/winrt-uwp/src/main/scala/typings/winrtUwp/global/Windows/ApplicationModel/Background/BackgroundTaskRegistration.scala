@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a background task that has been registered with the system. */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
 @js.native
-abstract class BackgroundTaskRegistration ()
+open class BackgroundTaskRegistration ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskRegistration
 object BackgroundTaskRegistration {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__icu-messageformat-parser
 
-Typings are for version 2.1.7
+Typings are for version 2.1.10
 
 
 

@@ -1,6 +1,6 @@
 package typings.prettierPackageJson
 
-import typings.prettierPackageJson.typesMod.PackageJsonKey
+import typings.prettierPackageJson.buildTypesMod.PackageJsonKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,10 +88,6 @@ object prettierPackageJsonStrings {
   @js.native
   sealed trait Exclamationmarkx64 extends StObject
   inline def Exclamationmarkx64: Exclamationmarkx64 = "!x64".asInstanceOf[Exclamationmarkx64]
-  
-  @js.native
-  sealed trait PackageJson extends StObject
-  inline def PackageJson: PackageJson = "PackageJson".asInstanceOf[PackageJson]
   
   @js.native
   sealed trait aix extends StObject

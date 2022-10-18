@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("egg", "Boot")
 @js.native
-class Boot () extends StObject {
+open class Boot () extends StObject {
   
   /**
     * The instance of agent

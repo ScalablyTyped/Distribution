@@ -1,5 +1,6 @@
 package typings.toVfile
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.urlMod.URL_
 import typings.toVfile.anon.Encoding
 import typings.toVfile.anon.Flag
@@ -35,11 +36,7 @@ object libMod {
   
   type BufferEncoding = typings.vfile.libMod.BufferEncoding
   
-  type Callback = js.Function2[
-    /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-    /* file */ VFile | Null, 
-    Any
-  ]
+  type Callback = js.Function2[/* error */ ErrnoException | Null, /* file */ VFile | Null, Any]
   
   type Compatible = Path | Options | VFile
   

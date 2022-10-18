@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "ConcurrentModificationException")
 @js.native
 open class ConcurrentModificationException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.ConcurrentModificationException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.ConcurrentModificationException {
   /**
     * @internal
     */

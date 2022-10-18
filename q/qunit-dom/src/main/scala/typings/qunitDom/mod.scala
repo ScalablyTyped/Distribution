@@ -1,8 +1,8 @@
 package typings.qunitDom
 
-import typings.qunitDom.assertionsMod.default
+import typings.qunitDom.distAssertionsMod.default
+import typings.qunitDom.distQunitDomModulesMod.SetupOptions
 import typings.qunitDom.mod.global.Assert
-import typings.qunitDom.qunitDomModulesMod.SetupOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

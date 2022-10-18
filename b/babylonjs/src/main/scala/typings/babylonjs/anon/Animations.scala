@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathVectorMod.Quaternion
-import typings.babylonjs.runtimeAnimationMod.RuntimeAnimation
+import typings.babylonjs.animationsRuntimeAnimationMod.RuntimeAnimation
+import typings.babylonjs.mathsMathDotvectorMod.Quaternion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

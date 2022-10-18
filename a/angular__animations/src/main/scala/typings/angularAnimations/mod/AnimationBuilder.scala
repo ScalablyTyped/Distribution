@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/animations", "AnimationBuilder")
+/* note: abstract class */ @JSImport("@angular/animations", "AnimationBuilder")
 @js.native
-abstract class AnimationBuilder () extends StObject {
+open class AnimationBuilder () extends StObject {
   
   def build(animation: js.Array[AnimationMetadata]): AnimationFactory = js.native
   /**

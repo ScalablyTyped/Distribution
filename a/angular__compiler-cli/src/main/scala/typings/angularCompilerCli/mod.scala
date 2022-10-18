@@ -8,17 +8,17 @@ import typings.angularCompilerCli.anon.FileName
 import typings.angularCompilerCli.anon.Host
 import typings.angularCompilerCli.anon.Options
 import typings.angularCompilerCli.anon.PickCompilerHostgetCanoni
-import typings.angularCompilerCli.loggerMod.LogLevel
-import typings.angularCompilerCli.optionsMod.NgCompilerOptions
-import typings.angularCompilerCli.performCompileMod.ConfigurationHost
-import typings.angularCompilerCli.performCompileMod.ParsedConfiguration
-import typings.angularCompilerCli.performCompileMod.PerformCompilationResult
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcTypesMod.BrandedPath
-import typings.angularCompilerCli.srcTypesMod.FileSystem
-import typings.angularCompilerCli.srcTypesMod.PathSegment
-import typings.angularCompilerCli.srcTypesMod.PathString
-import typings.angularCompilerCli.transformersApiMod.CompilerHost
+import typings.angularCompilerCli.srcNgtscCoreApiSrcOptionsMod.NgCompilerOptions
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.BrandedPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.FileSystem
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathSegment
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathString
+import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel
+import typings.angularCompilerCli.srcPerformCompileMod.ConfigurationHost
+import typings.angularCompilerCli.srcPerformCompileMod.ParsedConfiguration
+import typings.angularCompilerCli.srcPerformCompileMod.PerformCompilationResult
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerHost
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.FormatDiagnosticsHost
@@ -38,7 +38,7 @@ object mod {
   @JSImport("@angular/compiler-cli", "ConsoleLogger")
   @js.native
   open class ConsoleLogger protected ()
-    extends typings.angularCompilerCli.loggingMod.ConsoleLogger {
+    extends typings.angularCompilerCli.srcNgtscLoggingMod.ConsoleLogger {
     def this(level: LogLevel) = this()
   }
   
@@ -51,21 +51,21 @@ object mod {
   object EmitFlags extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.transformersApiMod.EmitFlags & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.EmitFlags & Double] = js.native
     
-    /* 31 */ val All: typings.angularCompilerCli.transformersApiMod.EmitFlags.All & Double = js.native
+    /* 31 */ val All: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.All & Double = js.native
     
-    /* 16 */ val Codegen: typings.angularCompilerCli.transformersApiMod.EmitFlags.Codegen & Double = js.native
+    /* 16 */ val Codegen: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.Codegen & Double = js.native
     
-    /* 1 */ val DTS: typings.angularCompilerCli.transformersApiMod.EmitFlags.DTS & Double = js.native
+    /* 1 */ val DTS: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.DTS & Double = js.native
     
-    /* 19 */ val Default: typings.angularCompilerCli.transformersApiMod.EmitFlags.Default & Double = js.native
+    /* 19 */ val Default: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.Default & Double = js.native
     
-    /* 8 */ val I18nBundle: typings.angularCompilerCli.transformersApiMod.EmitFlags.I18nBundle & Double = js.native
+    /* 8 */ val I18nBundle: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.I18nBundle & Double = js.native
     
-    /* 2 */ val JS: typings.angularCompilerCli.transformersApiMod.EmitFlags.JS & Double = js.native
+    /* 2 */ val JS: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.JS & Double = js.native
     
-    /* 4 */ val Metadata: typings.angularCompilerCli.transformersApiMod.EmitFlags.Metadata & Double = js.native
+    /* 4 */ val Metadata: typings.angularCompilerCli.srcTransformersApiMod.EmitFlags.Metadata & Double = js.native
   }
   
   object GLOBAL_DEFS_FOR_TERSER {
@@ -112,21 +112,21 @@ object mod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.loggerMod.LogLevel & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel & Double] = js.native
     
-    /* 0 */ val debug: typings.angularCompilerCli.loggerMod.LogLevel.debug & Double = js.native
+    /* 0 */ val debug: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.debug & Double = js.native
     
-    /* 3 */ val error: typings.angularCompilerCli.loggerMod.LogLevel.error & Double = js.native
+    /* 3 */ val error: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.error & Double = js.native
     
-    /* 1 */ val info: typings.angularCompilerCli.loggerMod.LogLevel.info & Double = js.native
+    /* 1 */ val info: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.info & Double = js.native
     
-    /* 2 */ val warn: typings.angularCompilerCli.loggerMod.LogLevel.warn & Double = js.native
+    /* 2 */ val warn: typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel.warn & Double = js.native
   }
   
   @JSImport("@angular/compiler-cli", "LogicalFileSystem")
   @js.native
   open class LogicalFileSystem protected ()
-    extends typings.angularCompilerCli.fileSystemMod.LogicalFileSystem {
+    extends typings.angularCompilerCli.srcNgtscFileSystemMod.LogicalFileSystem {
     def this(rootDirs: js.Array[AbsoluteFsPath], compilerHost: PickCompilerHostgetCanoni) = this()
   }
   
@@ -143,22 +143,22 @@ object mod {
       * importing from `to`.
       */
     inline def relativePathBetween(
-      from: typings.angularCompilerCli.logicalMod.LogicalProjectPath,
-      to: typings.angularCompilerCli.logicalMod.LogicalProjectPath
+      from: typings.angularCompilerCli.srcNgtscFileSystemSrcLogicalMod.LogicalProjectPath,
+      to: typings.angularCompilerCli.srcNgtscFileSystemSrcLogicalMod.LogicalProjectPath
     ): PathSegment = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePathBetween")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[PathSegment]
   }
   
   @JSImport("@angular/compiler-cli", "NgTscPlugin")
   @js.native
   open class NgTscPlugin protected ()
-    extends typings.angularCompilerCli.tscPluginMod.NgTscPlugin {
+    extends typings.angularCompilerCli.srcNgtscTscPluginMod.NgTscPlugin {
     def this(ngOptions: js.Object) = this()
   }
   
   @JSImport("@angular/compiler-cli", "NgtscCompilerHost")
   @js.native
   open class NgtscCompilerHost protected ()
-    extends typings.angularCompilerCli.fileSystemMod.NgtscCompilerHost {
+    extends typings.angularCompilerCli.srcNgtscFileSystemMod.NgtscCompilerHost {
     def this(fs: FileSystem) = this()
     def this(fs: FileSystem, options: CompilerOptions) = this()
   }
@@ -166,31 +166,31 @@ object mod {
   @JSImport("@angular/compiler-cli", "NgtscProgram")
   @js.native
   open class NgtscProgram protected ()
-    extends typings.angularCompilerCli.programMod.NgtscProgram {
+    extends typings.angularCompilerCli.srcNgtscProgramMod.NgtscProgram {
     def this(rootNames: js.Array[String], options: NgCompilerOptions, delegateHost: CompilerHost) = this()
     def this(
       rootNames: js.Array[String],
       options: NgCompilerOptions,
       delegateHost: CompilerHost,
-      oldProgram: typings.angularCompilerCli.programMod.NgtscProgram
+      oldProgram: typings.angularCompilerCli.srcNgtscProgramMod.NgtscProgram
     ) = this()
   }
   
   @JSImport("@angular/compiler-cli", "NodeJSFileSystem")
   @js.native
   open class NodeJSFileSystem ()
-    extends typings.angularCompilerCli.fileSystemMod.NodeJSFileSystem
+    extends typings.angularCompilerCli.srcNgtscFileSystemMod.NodeJSFileSystem
   
   @JSImport("@angular/compiler-cli", "OptimizeFor")
   @js.native
   object OptimizeFor extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.checkerMod.OptimizeFor & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularCompilerCli.srcNgtscTypecheckApiCheckerMod.OptimizeFor & Double] = js.native
     
-    /* 0 */ val SingleFile: typings.angularCompilerCli.checkerMod.OptimizeFor.SingleFile & Double = js.native
+    /* 0 */ val SingleFile: typings.angularCompilerCli.srcNgtscTypecheckApiCheckerMod.OptimizeFor.SingleFile & Double = js.native
     
-    /* 1 */ val WholeProgram: typings.angularCompilerCli.checkerMod.OptimizeFor.WholeProgram & Double = js.native
+    /* 1 */ val WholeProgram: typings.angularCompilerCli.srcNgtscTypecheckApiCheckerMod.OptimizeFor.WholeProgram & Double = js.native
   }
   
   @JSImport("@angular/compiler-cli", "SOURCE")
@@ -219,9 +219,9 @@ object mod {
   
   inline def createCompilerHost(hasOptionsTsHost: Options): CompilerHost = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompilerHost")(hasOptionsTsHost.asInstanceOf[js.Any]).asInstanceOf[CompilerHost]
   
-  inline def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.transformersApiMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(hasRootNamesOptionsHostOldProgram.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompilerCli.transformersApiMod.Program]
+  inline def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgram")(hasRootNamesOptionsHostOldProgram.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompilerCli.srcTransformersApiMod.Program]
   
-  inline def defaultGatherDiagnostics(program: typings.angularCompilerCli.transformersApiMod.Program): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGatherDiagnostics")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
+  inline def defaultGatherDiagnostics(program: typings.angularCompilerCli.srcTransformersApiMod.Program): js.Array[Diagnostic] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGatherDiagnostics")(program.asInstanceOf[js.Any]).asInstanceOf[js.Array[Diagnostic]]
   
   inline def dirname(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -265,10 +265,10 @@ object mod {
   
   inline def readConfiguration(project: String): ParsedConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any]).asInstanceOf[ParsedConfiguration]
   inline def readConfiguration(project: String, existingOptions: Unit, host: ConfigurationHost): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]
-  inline def readConfiguration(project: String, existingOptions: typings.angularCompilerCli.transformersApiMod.CompilerOptions): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]
+  inline def readConfiguration(project: String, existingOptions: typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]
   inline def readConfiguration(
     project: String,
-    existingOptions: typings.angularCompilerCli.transformersApiMod.CompilerOptions,
+    existingOptions: typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions,
     host: ConfigurationHost
   ): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]
   

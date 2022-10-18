@@ -1,5 +1,6 @@
 package typings.intoStream
 
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.std.AsyncIterable
@@ -39,7 +40,7 @@ object mod {
     inline def `object`(input: ObjectInput): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(input.asInstanceOf[js.Any]).asInstanceOf[Readable]
   }
   
-  type Input = Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.ArrayBuffer | String | (js.Iterable[Buffer | String]) | (AsyncIterable[Buffer | String])
+  type Input = Buffer | TypedArray | js.typedarray.ArrayBuffer | String | (js.Iterable[Buffer | String]) | (AsyncIterable[Buffer | String])
   
   type ObjectInput = js.Object | js.Iterable[js.Object] | AsyncIterable[js.Object]
 }

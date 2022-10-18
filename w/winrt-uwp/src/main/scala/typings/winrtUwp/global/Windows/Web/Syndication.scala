@@ -238,9 +238,9 @@ object Syndication {
   }
   
   /** Represents an error encountered during a Syndication operation. */
-  @JSGlobal("Windows.Web.Syndication.SyndicationError")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Syndication.SyndicationError")
   @js.native
-  abstract class SyndicationError ()
+  open class SyndicationError ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationError
   object SyndicationError {

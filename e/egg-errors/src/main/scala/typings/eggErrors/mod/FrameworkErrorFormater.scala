@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("egg-errors", "FrameworkErrorFormater")
 @js.native
 open class FrameworkErrorFormater ()
-  extends typings.eggErrors.formatterMod.FrameworkErrorFormater
+  extends typings.eggErrors.libFrameworkFormatterMod.FrameworkErrorFormater
 /* static members */
 object FrameworkErrorFormater {
   

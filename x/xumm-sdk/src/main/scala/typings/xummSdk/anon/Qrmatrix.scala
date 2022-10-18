@@ -1,6 +1,6 @@
 package typings.xummSdk.anon
 
-import typings.xummSdk.xummApiMod.XummQrQuality
+import typings.xummSdk.distSrcTypesXummApiMod.XummQrQuality
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

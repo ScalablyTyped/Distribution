@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NewLineKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.grammarkdown.optionsMod.NewLineKind & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.grammarkdown.distOptionsMod.NewLineKind & Double] = js.native
   
-  /* 1 */ val CarriageReturnLineFeed: typings.grammarkdown.optionsMod.NewLineKind.CarriageReturnLineFeed & Double = js.native
+  /* 1 */ val CarriageReturnLineFeed: typings.grammarkdown.distOptionsMod.NewLineKind.CarriageReturnLineFeed & Double = js.native
   
-  /* 0 */ val LineFeed: typings.grammarkdown.optionsMod.NewLineKind.LineFeed & Double = js.native
+  /* 0 */ val LineFeed: typings.grammarkdown.distOptionsMod.NewLineKind.LineFeed & Double = js.native
 }

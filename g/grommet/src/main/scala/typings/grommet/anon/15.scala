@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
+import typings.grommet.componentsBoxMod.BoxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `15` extends StObject {
   
-  var icon: js.UndefOr[`14`] = js.undefined
+  var container: js.UndefOr[BoxProps] = js.undefined
 }
 object `15` {
   
@@ -17,8 +18,8 @@ object `15` {
   
   extension [Self <: `15`](x: Self) {
     
-    inline def setIcon(value: `14`): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
   }
 }

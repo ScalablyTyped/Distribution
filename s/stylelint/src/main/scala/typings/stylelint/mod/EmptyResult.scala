@@ -1,6 +1,6 @@
 package typings.stylelint.mod
 
-import typings.postcss.resultMod.Message
+import typings.postcss.libResultMod.Message
 import typings.stylelint.anon.Nodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

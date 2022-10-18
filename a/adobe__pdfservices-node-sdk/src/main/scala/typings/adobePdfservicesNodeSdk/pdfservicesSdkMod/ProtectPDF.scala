@@ -14,14 +14,14 @@ object ProtectPDF {
     
     @JSImport("@adobe/pdfservices-node-sdk/pdfservices-sdk", "ProtectPDF.options.ContentEncryption")
     @js.native
-    val ContentEncryption: typings.adobePdfservicesNodeSdk.passwordProtectOptionsMod.ContentEncryption = js.native
+    val ContentEncryption: typings.adobePdfservicesNodeSdk.operationOptionProtectpdfPasswordProtectOptionsMod.ContentEncryption = js.native
     
     @JSImport("@adobe/pdfservices-node-sdk/pdfservices-sdk", "ProtectPDF.options.EncryptionAlgorithm")
     @js.native
-    val EncryptionAlgorithm: typings.adobePdfservicesNodeSdk.passwordProtectOptionsMod.EncryptionAlgorithm = js.native
+    val EncryptionAlgorithm: typings.adobePdfservicesNodeSdk.operationOptionProtectpdfPasswordProtectOptionsMod.EncryptionAlgorithm = js.native
     
     @JSImport("@adobe/pdfservices-node-sdk/pdfservices-sdk", "ProtectPDF.options.Permission")
     @js.native
-    val Permission: typings.adobePdfservicesNodeSdk.passwordProtectOptionsMod.Permission = js.native
+    val Permission: typings.adobePdfservicesNodeSdk.operationOptionProtectpdfPasswordProtectOptionsMod.Permission = js.native
   }
 }

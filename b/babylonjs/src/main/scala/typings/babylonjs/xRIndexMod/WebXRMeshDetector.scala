@@ -1,6 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
-import typings.babylonjs.webXRMeshDetectorMod.IWebXRMeshDetectorOptions
+import typings.babylonjs.xRFeaturesWebXRMeshDetectorMod.IWebXRMeshDetectorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRMeshDetector")
 @js.native
 open class WebXRMeshDetector protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRMeshDetector {
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRMeshDetector {
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
     _options: IWebXRMeshDetectorOptions
   ) = this()
 }

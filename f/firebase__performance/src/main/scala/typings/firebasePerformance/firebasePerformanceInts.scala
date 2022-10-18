@@ -1,8 +1,8 @@
 package typings.firebasePerformance
 
-import typings.firebasePerformance.attributesUtilsMod.EffectiveConnectionType
-import typings.firebasePerformance.attributesUtilsMod.ServiceWorkerStatus
-import typings.firebasePerformance.networkRequestMod.HttpMethod
+import typings.firebasePerformance.distSrcResourcesNetworkRequestMod.HttpMethod
+import typings.firebasePerformance.distSrcUtilsAttributesUtilsMod.EffectiveConnectionType
+import typings.firebasePerformance.distSrcUtilsAttributesUtilsMod.ServiceWorkerStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

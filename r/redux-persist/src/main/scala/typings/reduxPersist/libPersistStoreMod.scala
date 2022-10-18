@@ -2,8 +2,8 @@ package typings.reduxPersist
 
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
-import typings.reduxPersist.typesMod.Persistor
-import typings.reduxPersist.typesMod.PersistorOptions
+import typings.reduxPersist.esTypesMod.Persistor
+import typings.reduxPersist.esTypesMod.PersistorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -37,6 +37,9 @@ trait Pushprotectionbypassed extends StObject {
   
   var resolution: js.UndefOr[Null | false_positive | wont_fix | revoked | used_in_tests] = js.undefined
   
+  /** @description The comment that was optionally added when this alert was closed */
+  var resolution_comment: js.UndefOr[String | Null] = js.undefined
+  
   /**
     * Format: date-time
     * @description The time that the alert was resolved in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
@@ -111,6 +114,12 @@ object Pushprotectionbypassed {
     inline def setResolutionNull: Self = StObject.set(x, "resolution", null)
     
     inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    
+    inline def setResolution_comment(value: String): Self = StObject.set(x, "resolution_comment", value.asInstanceOf[js.Any])
+    
+    inline def setResolution_commentNull: Self = StObject.set(x, "resolution_comment", null)
+    
+    inline def setResolution_commentUndefined: Self = StObject.set(x, "resolution_comment", js.undefined)
     
     inline def setResolved_at(value: String): Self = StObject.set(x, "resolved_at", value.asInstanceOf[js.Any])
     

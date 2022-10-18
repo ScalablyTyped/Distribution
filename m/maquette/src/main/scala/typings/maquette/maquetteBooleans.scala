@@ -1,6 +1,6 @@
 package typings.maquette
 
-import typings.maquette.interfacesMod._VNodeChild
+import typings.maquette.distInterfacesMod._VNodeChild
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -90,9 +90,9 @@ object Filters {
   }
   
   /** Provides control of the local HTTP cache for responses to HTTP requests by methods in the Windows.Web.Http and Windows.Web.Http.Filters namespaces. */
-  @JSGlobal("Windows.Web.Http.Filters.HttpCacheControl")
+  /* note: abstract class */ @JSGlobal("Windows.Web.Http.Filters.HttpCacheControl")
   @js.native
-  abstract class HttpCacheControl ()
+  open class HttpCacheControl ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Filters.HttpCacheControl {
     

@@ -44,6 +44,12 @@ object INTERNAL_FORMATS extends StObject {
   /* 37496 */ val COMPRESSED_RGBA8_ETC2_EAC: typings.pixiCompressedTextures.mod.INTERNAL_FORMATS.COMPRESSED_RGBA8_ETC2_EAC & Double = js.native
   
   @js.native
+  sealed trait COMPRESSED_RGBA_ASTC_4x4_KHR
+    extends StObject
+       with INTERNAL_FORMATS
+  /* 37808 */ val COMPRESSED_RGBA_ASTC_4x4_KHR: typings.pixiCompressedTextures.mod.INTERNAL_FORMATS.COMPRESSED_RGBA_ASTC_4x4_KHR & Double = js.native
+  
+  @js.native
   sealed trait COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL
     extends StObject
        with INTERNAL_FORMATS

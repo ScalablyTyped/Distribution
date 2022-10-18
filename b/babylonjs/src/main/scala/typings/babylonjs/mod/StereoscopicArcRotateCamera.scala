@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "StereoscopicArcRotateCamera")
 @js.native
 open class StereoscopicArcRotateCamera protected ()
-  extends typings.babylonjs.legacyMod.StereoscopicArcRotateCamera {
+  extends typings.babylonjs.legacyLegacyMod.StereoscopicArcRotateCamera {
   /**
     * Creates a new StereoscopicArcRotateCamera
     * @param name defines camera name
@@ -24,7 +24,7 @@ open class StereoscopicArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     interaxialDistance: Double,
     isStereoscopicSideBySide: Boolean
   ) = this()
@@ -33,7 +33,7 @@ open class StereoscopicArcRotateCamera protected ()
     alpha: Double,
     beta: Double,
     radius: Double,
-    target: typings.babylonjs.mathVectorMod.Vector3,
+    target: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     interaxialDistance: Double,
     isStereoscopicSideBySide: Boolean,
     scene: typings.babylonjs.sceneMod.Scene

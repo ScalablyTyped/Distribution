@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ImageProcessingConfigurationDefines")
 @js.native
 open class ImageProcessingConfigurationDefines ()
-  extends typings.babylonjs.legacyMod.ImageProcessingConfigurationDefines
+  extends typings.babylonjs.legacyLegacyMod.ImageProcessingConfigurationDefines

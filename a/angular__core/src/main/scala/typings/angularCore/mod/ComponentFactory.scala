@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Angular no longer requires Component factories. Please use other APIs where
   *     Component class can be used directly.
   */
-@JSImport("@angular/core", "ComponentFactory")
+/* note: abstract class */ @JSImport("@angular/core", "ComponentFactory")
 @js.native
-abstract class ComponentFactory[C] () extends StObject {
+open class ComponentFactory[C] () extends StObject {
   
   /**
     * The type of component the factory will create.

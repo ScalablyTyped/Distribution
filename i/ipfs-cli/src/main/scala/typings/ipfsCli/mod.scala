@@ -1,14 +1,15 @@
 package typings.ipfsCli
 
+import typings.yargs.mod.MiddlewareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(command: js.Any, ctxMiddleware: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].apply(command.asInstanceOf[js.Any], ctxMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  
-  @JSImport("ipfs-cli/dist/src", JSImport.Namespace)
+  @JSImport("ipfs-cli", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def cli(command: js.Array[String], ctxMiddleware: MiddlewareFunction[js.Object]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("cli")(command.asInstanceOf[js.Any], ctxMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

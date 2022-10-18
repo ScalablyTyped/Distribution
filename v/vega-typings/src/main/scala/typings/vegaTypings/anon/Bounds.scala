@@ -1,14 +1,14 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.dataflowMod.Operator
-import typings.vegaTypings.sceneMod.SceneItem
+import typings.vegaTypings.typesRuntimeDataflowMod.Operator
+import typings.vegaTypings.typesRuntimeSceneMod.SceneItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Bounds extends StObject {
   
-  var bounds: typings.vegaTypings.sceneMod.Bounds
+  var bounds: typings.vegaTypings.typesRuntimeSceneMod.Bounds
   
   var clip: Boolean
   
@@ -27,7 +27,7 @@ trait Bounds extends StObject {
 object Bounds {
   
   inline def apply(
-    bounds: typings.vegaTypings.sceneMod.Bounds,
+    bounds: typings.vegaTypings.typesRuntimeSceneMod.Bounds,
     clip: Boolean,
     interactive: Boolean,
     items: js.Array[SceneItem],
@@ -42,7 +42,7 @@ object Bounds {
   
   extension [Self <: Bounds](x: Self) {
     
-    inline def setBounds(value: typings.vegaTypings.sceneMod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: typings.vegaTypings.typesRuntimeSceneMod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

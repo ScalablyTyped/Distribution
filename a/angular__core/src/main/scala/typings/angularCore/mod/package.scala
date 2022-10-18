@@ -18,7 +18,6 @@ import typings.angularCore.anon.ContentQueries
 import typings.angularCore.anon.CtorParameters
 import typings.angularCore.anon.Declarations
 import typings.angularCore.anon.ElementInjector
-import typings.angularCore.anon.Factory
 import typings.angularCore.anon.Fn0
 import typings.angularCore.anon.FnCall
 import typings.angularCore.anon.FnCallPropNameValueSanitizer
@@ -28,7 +27,10 @@ import typings.angularCore.anon.InjectOptionsoptionalfals
 import typings.angularCore.anon.Pure
 import typings.angularCore.anon.RElementownerDocumentDocu
 import typings.angularCore.anon.Text
+import typings.angularCore.anon.Token
 import typings.angularCore.mod.^
+import typings.rxjs.distTypesInternalTypesMod.Subscribable
+import typings.rxjs.mod.Observable_
 import typings.std.Document
 import typings.std.Element
 import typings.std.EventTarget
@@ -50,17 +52,7 @@ inline def APP_BOOTSTRAP_LISTENER: InjectionToken[js.Array[js.Function1[/* compR
 
 inline def APP_ID: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_ID").asInstanceOf[InjectionToken[String]]
 
-inline def APP_INITIALIZER: InjectionToken[
-js.Array[
-  js.Function0[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<unknown> */ Any) | js.Promise[Any] | Unit
-  ]
-]] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_INITIALIZER").asInstanceOf[InjectionToken[
-js.Array[
-  js.Function0[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<unknown> */ Any) | js.Promise[Any] | Unit
-  ]
-]]]
+inline def APP_INITIALIZER: InjectionToken[js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_INITIALIZER").asInstanceOf[InjectionToken[js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]]]
 
 inline def COMPILER_OPTIONS: InjectionToken[js.Array[CompilerOptions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPILER_OPTIONS").asInstanceOf[InjectionToken[js.Array[CompilerOptions]]]
 
@@ -133,7 +125,7 @@ inline def createPlatformFactory(
 inline def createPlatformFactory(parentPlatformFactory: Null, name: String): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
 inline def createPlatformFactory(parentPlatformFactory: Null, name: String, providers: js.Array[StaticProvider]): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any], providers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
 
-inline def defineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def defineInjectable[T](opts: Token[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def destroyPlatform(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyPlatform")().asInstanceOf[Unit]
 
@@ -314,17 +306,15 @@ inline def ɵisInjectable(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].app
 
 inline def ɵisListLikeIterable(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isListLikeIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵisObservable(
-  obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
-): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> * / any */ Boolean]
+inline def ɵisObservable(obj: Any): /* is rxjs.rxjs.Observable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs.Observable<any> */ Boolean]
+inline def ɵisObservable(obj: Observable_[Any]): /* is rxjs.rxjs.Observable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs.Observable<any> */ Boolean]
 
 inline def ɵisPromise[T](obj: Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
 
 inline def ɵisStandalone[T](`type`: Type[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isStandalone")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵisSubscribable(
-  obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscribable<any> */ Any
-): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscribable<any> * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscribable<any> * / any */ Boolean]
+inline def ɵisSubscribable(obj: Any): /* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean]
+inline def ɵisSubscribable(obj: Subscribable[Any]): /* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean]
 
 inline def ɵivyEnabled: /* true */ Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ivyEnabled").asInstanceOf[/* true */ Boolean]
 
@@ -2050,7 +2040,7 @@ inline def ɵɵdefineComponent[T](componentDefinition: ChangeDetection[T]): Any 
 
 inline def ɵɵdefineDirective[T](directiveDefinition: ContentQueries[T]): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineDirective")(directiveDefinition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 
-inline def ɵɵdefineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def ɵɵdefineInjectable[T](opts: Token[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def ɵɵdefineInjector(options: Imports): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjector")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
 

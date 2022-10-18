@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@materializecss/materialize.M.Collapsible, 'open'> */
 trait PickCollapsibleopen extends StObject {
   
-  var open: js.UndefOr[Any] = js.undefined
+  def open(n: Double): Unit
+  @JSName("open")
+  var open_Original: js.Function1[/* n */ Double, Unit]
 }
 object PickCollapsibleopen {
   
-  inline def apply(): PickCollapsibleopen = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(open: /* n */ Double => Unit): PickCollapsibleopen = {
+    val __obj = js.Dynamic.literal(open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[PickCollapsibleopen]
   }
   
   extension [Self <: PickCollapsibleopen](x: Self) {
     
-    inline def setOpen(value: Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
-    
-    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpen(value: /* n */ Double => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

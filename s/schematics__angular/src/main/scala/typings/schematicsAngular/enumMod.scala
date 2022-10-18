@@ -1,6 +1,6 @@
 package typings.schematicsAngular
 
-import typings.angularDevkitSchematics.interfaceMod.Rule
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.Rule
 import typings.schematicsAngular.enumSchemaMod.Schema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

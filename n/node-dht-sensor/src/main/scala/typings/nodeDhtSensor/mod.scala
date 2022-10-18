@@ -1,5 +1,6 @@
 package typings.nodeDhtSensor
 
+import typings.node.NodeJS.ErrnoException
 import typings.nodeDhtSensor.anon.Test
 import typings.nodeDhtSensor.nodeDhtSensorInts.`11`
 import typings.nodeDhtSensor.nodeDhtSensorInts.`22`
@@ -45,12 +46,7 @@ object mod {
   inline def read(
     `type`: SensorType,
     pin: Double,
-    callback: js.Function3[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* temperature */ Double, 
-      /* humidity */ Double, 
-      Unit
-    ]
+    callback: js.Function3[/* err */ ErrnoException | Null, /* temperature */ Double, /* humidity */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]

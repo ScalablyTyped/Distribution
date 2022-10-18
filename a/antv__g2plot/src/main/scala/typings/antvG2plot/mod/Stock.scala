@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialStockOptions
-import typings.antvG2plot.stockTypesMod.StockOptions
+import typings.antvG2plot.libPlotsStockTypesMod.StockOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Stock")
 @js.native
 open class Stock protected ()
-  extends typings.antvG2plot.stockMod.Stock {
+  extends typings.antvG2plot.libPlotsStockMod.Stock {
   def this(container: String, options: StockOptions) = this()
   def this(container: HTMLElement, options: StockOptions) = this()
 }

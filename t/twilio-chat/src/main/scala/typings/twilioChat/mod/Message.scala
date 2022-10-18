@@ -8,20 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A message in a channel.
   */
-@JSImport("twilio-chat", "Message")
 @js.native
-open class Message protected () extends ReplayEventEmitter[MessageEvents] {
-  /**
-    * @internal
-    */
-  def this(
-    index: Double,
-    data: Any,
-    channel: Channel,
-    links: MessageLinks,
-    configuration: Configuration,
-    services: MessageServices
-  ) = this()
+trait Message extends ReplayEventEmitter[MessageEvents] {
   
   def _update(data: Any): Unit = js.native
   
@@ -122,19 +110,4 @@ open class Message protected () extends ReplayEventEmitter[MessageEvents] {
     * @param body New body of the message.
     */
   def updateBody(body: String): js.Promise[Message] = js.native
-}
-object Message {
-  
-  /**
-    * Fired when the properties or the body of the message have been updated.
-    *
-    * Parameters:
-    * 1. object `data` - info object provided with the event. It has the following properties:
-    *     * {@link Message} message - the message in question
-    *     * {@link MessageUpdateReason}[] updateReasons - array of reasons for the update
-    */
-  /* static member */
-  @JSImport("twilio-chat", "Message.updated")
-  @js.native
-  val updated: /* "updated" */ String = js.native
 }

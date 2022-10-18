@@ -17,42 +17,42 @@ import typings.std.HTMLProgressElement
 import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import typings.std.SVGSVGElement
-import typings.themeUiComponents.alertMod.AlertProps
 import typings.themeUiComponents.anon.Size
-import typings.themeUiComponents.aspectImageMod.AspectImageProps
-import typings.themeUiComponents.aspectRatioMod.AspectRatioProps
-import typings.themeUiComponents.avatarMod.AvatarProps
-import typings.themeUiComponents.badgeMod.BadgeProps
-import typings.themeUiComponents.boxMod.BoxProps
-import typings.themeUiComponents.buttonMod.ButtonProps
-import typings.themeUiComponents.cardMod.CardProps
-import typings.themeUiComponents.checkboxMod.CheckboxProps
-import typings.themeUiComponents.closeMod.CloseProps
-import typings.themeUiComponents.containerMod.ContainerProps
-import typings.themeUiComponents.dividerMod.DividerProps
-import typings.themeUiComponents.donutMod.DonutProps
-import typings.themeUiComponents.embedMod.EmbedProps
-import typings.themeUiComponents.flexMod.FlexProps
-import typings.themeUiComponents.gridMod.GridProps
-import typings.themeUiComponents.headingMod.HeadingProps
-import typings.themeUiComponents.iconButtonMod.IconButtonProps
-import typings.themeUiComponents.imageMod.ImageProps
-import typings.themeUiComponents.inputMod.InputProps
-import typings.themeUiComponents.labelMod.LabelProps
-import typings.themeUiComponents.linkMod.LinkProps
-import typings.themeUiComponents.menuButtonMod.MenuButtonProps
-import typings.themeUiComponents.messageMod.MessageProps
-import typings.themeUiComponents.navLinkMod.NavLinkProps
-import typings.themeUiComponents.paragraphMod.ParagraphProps
-import typings.themeUiComponents.progressMod.ProgressProps
-import typings.themeUiComponents.radioMod.RadioProps
-import typings.themeUiComponents.selectMod.SelectProps
-import typings.themeUiComponents.sliderMod.SliderProps
-import typings.themeUiComponents.spinnerMod.SpinnerProps
-import typings.themeUiComponents.switchMod.SwitchProps
-import typings.themeUiComponents.textMod.TextProps
-import typings.themeUiComponents.textareaMod.TextareaProps
-import typings.themeUiComponents.typesMod.ForwardRef
+import typings.themeUiComponents.distDeclarationsSrcAlertMod.AlertProps
+import typings.themeUiComponents.distDeclarationsSrcAspectImageMod.AspectImageProps
+import typings.themeUiComponents.distDeclarationsSrcAspectRatioMod.AspectRatioProps
+import typings.themeUiComponents.distDeclarationsSrcAvatarMod.AvatarProps
+import typings.themeUiComponents.distDeclarationsSrcBadgeMod.BadgeProps
+import typings.themeUiComponents.distDeclarationsSrcBoxMod.BoxProps
+import typings.themeUiComponents.distDeclarationsSrcButtonMod.ButtonProps
+import typings.themeUiComponents.distDeclarationsSrcCardMod.CardProps
+import typings.themeUiComponents.distDeclarationsSrcCheckboxMod.CheckboxProps
+import typings.themeUiComponents.distDeclarationsSrcCloseMod.CloseProps
+import typings.themeUiComponents.distDeclarationsSrcContainerMod.ContainerProps
+import typings.themeUiComponents.distDeclarationsSrcDividerMod.DividerProps
+import typings.themeUiComponents.distDeclarationsSrcDonutMod.DonutProps
+import typings.themeUiComponents.distDeclarationsSrcEmbedMod.EmbedProps
+import typings.themeUiComponents.distDeclarationsSrcFlexMod.FlexProps
+import typings.themeUiComponents.distDeclarationsSrcGridMod.GridProps
+import typings.themeUiComponents.distDeclarationsSrcHeadingMod.HeadingProps
+import typings.themeUiComponents.distDeclarationsSrcIconButtonMod.IconButtonProps
+import typings.themeUiComponents.distDeclarationsSrcImageMod.ImageProps
+import typings.themeUiComponents.distDeclarationsSrcInputMod.InputProps
+import typings.themeUiComponents.distDeclarationsSrcLabelMod.LabelProps
+import typings.themeUiComponents.distDeclarationsSrcLinkMod.LinkProps
+import typings.themeUiComponents.distDeclarationsSrcMenuButtonMod.MenuButtonProps
+import typings.themeUiComponents.distDeclarationsSrcMessageMod.MessageProps
+import typings.themeUiComponents.distDeclarationsSrcNavLinkMod.NavLinkProps
+import typings.themeUiComponents.distDeclarationsSrcParagraphMod.ParagraphProps
+import typings.themeUiComponents.distDeclarationsSrcProgressMod.ProgressProps
+import typings.themeUiComponents.distDeclarationsSrcRadioMod.RadioProps
+import typings.themeUiComponents.distDeclarationsSrcSelectMod.SelectProps
+import typings.themeUiComponents.distDeclarationsSrcSliderMod.SliderProps
+import typings.themeUiComponents.distDeclarationsSrcSpinnerMod.SpinnerProps
+import typings.themeUiComponents.distDeclarationsSrcSwitchMod.SwitchProps
+import typings.themeUiComponents.distDeclarationsSrcTextMod.TextProps
+import typings.themeUiComponents.distDeclarationsSrcTextareaMod.TextareaProps
+import typings.themeUiComponents.distDeclarationsSrcTypesMod.ForwardRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,7 +125,7 @@ object mod {
   
   @JSImport("@theme-ui/components", "Field")
   @js.native
-  val Field: typings.themeUiComponents.fieldMod.Field = js.native
+  val Field: typings.themeUiComponents.distDeclarationsSrcFieldMod.Field = js.native
   
   @JSImport("@theme-ui/components", "Flex")
   @js.native
@@ -163,7 +163,7 @@ object mod {
   @js.native
   val MenuButton: ForwardRef[HTMLButtonElement, MenuButtonProps] = js.native
   
-  inline def MenuIcon(hasSize: Size): typings.emotionReact.emotionReactMod.jsx.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(hasSize.asInstanceOf[js.Any]).asInstanceOf[typings.emotionReact.emotionReactMod.jsx.JSX.Element]
+  inline def MenuIcon(hasSize: Size): typings.emotionReact.mod.jsx.JSX.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuIcon")(hasSize.asInstanceOf[js.Any]).asInstanceOf[typings.emotionReact.mod.jsx.JSX.Element]
   
   @JSImport("@theme-ui/components", "Message")
   @js.native

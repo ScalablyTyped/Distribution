@@ -1,6 +1,6 @@
 package typings.atom.anon
 
-import typings.atom.mod.MarkerLayer
+import typings.atom.dependenciesTextBufferSrcMarkerLayerMod.MarkerLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

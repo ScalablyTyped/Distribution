@@ -4,6 +4,7 @@ import typings.blessed.mod.BlessedProgram
 import typings.blessed.mod.Widgets.Types.TCursor
 import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
+import typings.node.NodeJS.ErrnoException
 import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcess
 import typings.node.streamMod.Readable
@@ -305,24 +306,11 @@ open class Screen protected () extends NodeWithEvents {
     */
   var program: BlessedProgram = js.native
   
-  def readEditor(
-    callback: js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* data */ Buffer, 
-      Unit
-    ]
-  ): Unit = js.native
+  def readEditor(callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
   /**
     * Read data from text editor.
     */
-  def readEditor(
-    options: Any,
-    callback: js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* data */ Buffer, 
-      Unit
-    ]
-  ): Unit = js.native
+  def readEditor(options: Any, callback: js.Function2[/* err */ ErrnoException, /* data */ Buffer, Unit]): Unit = js.native
   
   /**
     * Reallocate the screen buffers and clear the screen.

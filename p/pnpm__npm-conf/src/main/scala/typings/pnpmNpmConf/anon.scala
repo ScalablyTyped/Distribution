@@ -3,7 +3,7 @@ package typings.pnpmNpmConf
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.ClientRequestArgs
-import typings.node.nodeBufferMod.Blob
+import typings.node.nodeColonbufferMod.Blob
 import typings.node.urlMod.URLFormatOptions
 import typings.node.urlMod.URL_
 import typings.node.urlMod.Url

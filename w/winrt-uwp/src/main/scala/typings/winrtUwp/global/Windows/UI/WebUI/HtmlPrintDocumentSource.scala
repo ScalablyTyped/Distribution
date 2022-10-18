@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages the document source for app printing. */
-@JSGlobal("Windows.UI.WebUI.HtmlPrintDocumentSource")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.HtmlPrintDocumentSource")
 @js.native
-abstract class HtmlPrintDocumentSource ()
+open class HtmlPrintDocumentSource ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.HtmlPrintDocumentSource {
   

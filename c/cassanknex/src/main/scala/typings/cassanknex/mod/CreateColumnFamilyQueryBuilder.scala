@@ -1,13 +1,13 @@
 package typings.cassanknex.mod
 
+import typings.cassandraDriver.libTypesMod.types.ResultSet
+import typings.cassandraDriver.libTypesMod.types.Row
 import typings.cassandraDriver.mod.ValueCallback
 import typings.cassandraDriver.mod.types.BigDecimal
 import typings.cassandraDriver.mod.types.InetAddress
 import typings.cassandraDriver.mod.types.LocalDate
 import typings.cassandraDriver.mod.types.TimeUuid
 import typings.cassandraDriver.mod.types.Uuid
-import typings.cassandraDriver.typesMod.types.ResultSet
-import typings.cassandraDriver.typesMod.types.Row
 import typings.cassanknex.cassanknexStrings.asc
 import typings.cassanknex.cassanknexStrings.desc
 import typings.node.bufferMod.global.Buffer

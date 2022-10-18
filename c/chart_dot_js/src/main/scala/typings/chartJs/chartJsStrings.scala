@@ -1,7 +1,5 @@
 package typings.chartJs
 
-import typings.chartJs.adaptersMod.TimeUnit
-import typings.chartJs.layoutMod._LayoutPosition
 import typings.chartJs.mod.Align
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.DecimationAlgorithm
@@ -15,6 +13,8 @@ import typings.chartJs.mod.TooltipXAlignment
 import typings.chartJs.mod.TooltipYAlignment
 import typings.chartJs.mod._FillTarget
 import typings.chartJs.mod._PointStyle
+import typings.chartJs.typesAdaptersMod.TimeUnit
+import typings.chartJs.typesLayoutMod._LayoutPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,22 +24,6 @@ object chartJsStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait DatasetChartOptions extends StObject
-  inline def DatasetChartOptions: DatasetChartOptions = "DatasetChartOptions".asInstanceOf[DatasetChartOptions]
-  
-  @js.native
-  sealed trait ScriptableAndArrayOptions extends StObject
-  inline def ScriptableAndArrayOptions: ScriptableAndArrayOptions = "ScriptableAndArrayOptions".asInstanceOf[ScriptableAndArrayOptions]
-  
-  @js.native
-  sealed trait ScriptableOptions extends StObject
-  inline def ScriptableOptions: ScriptableOptions = "ScriptableOptions".asInstanceOf[ScriptableOptions]
-  
-  @js.native
-  sealed trait _DeepPartialObject extends StObject
-  inline def _DeepPartialObject: _DeepPartialObject = "_DeepPartialObject".asInstanceOf[_DeepPartialObject]
   
   @js.native
   sealed trait abort extends StObject

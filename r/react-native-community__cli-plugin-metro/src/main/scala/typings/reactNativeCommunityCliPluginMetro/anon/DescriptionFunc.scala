@@ -1,6 +1,6 @@
 package typings.reactNativeCommunityCliPluginMetro.anon
 
-import typings.reactNativeCommunityCliPluginMetro.runServerMod.Args
+import typings.reactNativeCommunityCliPluginMetro.buildCommandsStartRunServerMod.Args
 import typings.reactNativeCommunityCliTypes.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,12 +10,14 @@ trait DescriptionFunc extends StObject {
   
   var description: String
   
-  var func: js.Function3[/* _argv */ js.Array[String], /* ctx */ Config, /* args */ Args, js.Promise[Unit]]
+  def func(_argv: js.Array[String], ctx: Config, args: Args): js.Promise[Unit]
+  @JSName("func")
+  var func_Original: js.Function3[/* _argv */ js.Array[String], /* ctx */ Config, /* args */ Args, js.Promise[Unit]]
   
   var name: String
   
   var options: js.Array[
-    DefaultDescriptionName | DescriptionNameParse | NameParse | DefaultDescriptionNameParse | DefaultDescription | DefaultUndefined
+    DescriptionNameParse | DefaultDescriptionNameParse | DefaultDescriptionName | DefaultUndefined | DescriptionName | DescriptionString
   ]
 }
 object DescriptionFunc {
@@ -25,7 +27,7 @@ object DescriptionFunc {
     func: (/* _argv */ js.Array[String], /* ctx */ Config, /* args */ Args) => js.Promise[Unit],
     name: String,
     options: js.Array[
-      DefaultDescriptionName | DescriptionNameParse | NameParse | DefaultDescriptionNameParse | DefaultDescription | DefaultUndefined
+      DescriptionNameParse | DefaultDescriptionNameParse | DefaultDescriptionName | DefaultUndefined | DescriptionName | DescriptionString
     ]
   ): DescriptionFunc = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], func = js.Any.fromFunction3(func), name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
@@ -42,12 +44,12 @@ object DescriptionFunc {
     
     inline def setOptions(
       value: js.Array[
-          DefaultDescriptionName | DescriptionNameParse | NameParse | DefaultDescriptionNameParse | DefaultDescription | DefaultUndefined
+          DescriptionNameParse | DefaultDescriptionNameParse | DefaultDescriptionName | DefaultUndefined | DescriptionName | DescriptionString
         ]
     ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsVarargs(
-      value: (DefaultDescriptionName | DescriptionNameParse | NameParse | DefaultDescriptionNameParse | DefaultDescription | DefaultUndefined)*
+      value: (DescriptionNameParse | DefaultDescriptionNameParse | DefaultDescriptionName | DefaultUndefined | DescriptionName | DescriptionString)*
     ): Self = StObject.set(x, "options", js.Array(value*))
   }
 }

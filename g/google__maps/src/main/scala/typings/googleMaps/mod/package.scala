@@ -37,9 +37,9 @@ type LatLngString = String
   - typings.googleMaps.googleMapsStrings.geocode
   - typings.googleMaps.googleMapsStrings.address
   - typings.googleMaps.googleMapsStrings.establishment
-  - java.lang.String
+  - / * (regions) * / java.lang.String
 */
-type PlaceAutocompleteType = _PlaceAutocompleteType | String
+type PlaceAutocompleteType = _PlaceAutocompleteType | (/* (regions) */ String)
 
 type PlaceDetailsAddressComponentType = street_number
 

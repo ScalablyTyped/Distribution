@@ -1,8 +1,8 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.transformMod.AggregatedFieldDef
-import typings.vegaLite.transformMod.BinTransform
-import typings.vegaLite.transformMod.TimeUnitTransform
+import typings.vegaLite.buildSrcTransformMod.AggregatedFieldDef
+import typings.vegaLite.buildSrcTransformMod.BinTransform
+import typings.vegaLite.buildSrcTransformMod.TimeUnitTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait Bins extends StObject {
   
   var bins: js.Array[BinTransform]
   
-  var encoding: typings.vegaLite.encodingMod.Encoding[String]
+  var encoding: typings.vegaLite.buildSrcEncodingMod.Encoding[String]
   
   var groupby: js.Array[String]
   
@@ -24,7 +24,7 @@ object Bins {
   inline def apply(
     aggregate: js.Array[AggregatedFieldDef],
     bins: js.Array[BinTransform],
-    encoding: typings.vegaLite.encodingMod.Encoding[String],
+    encoding: typings.vegaLite.buildSrcEncodingMod.Encoding[String],
     groupby: js.Array[String],
     timeUnits: js.Array[TimeUnitTransform]
   ): Bins = {
@@ -42,7 +42,7 @@ object Bins {
     
     inline def setBinsVarargs(value: BinTransform*): Self = StObject.set(x, "bins", js.Array(value*))
     
-    inline def setEncoding(value: typings.vegaLite.encodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: typings.vegaLite.buildSrcEncodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setGroupby(value: js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     

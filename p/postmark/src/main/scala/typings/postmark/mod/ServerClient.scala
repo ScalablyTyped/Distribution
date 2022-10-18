@@ -1,7 +1,7 @@
 package typings.postmark.mod
 
-import typings.postmark.modelsMod.ClientOptions.Configuration
-import typings.postmark.serverClientMod.default
+import typings.postmark.distClientModelsMod.ClientOptions.Configuration
+import typings.postmark.distClientServerClientMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

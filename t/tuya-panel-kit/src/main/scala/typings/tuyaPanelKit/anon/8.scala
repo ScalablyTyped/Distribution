@@ -1,28 +1,26 @@
 package typings.tuyaPanelKit.anon
 
-import typings.std.Extract
-import typings.tuyaPanelKit.typesMod.EventMapBase
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `8`[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */] extends StObject {
+trait `8` extends StObject {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
+  var state: js.UndefOr[NavigationState[ParamListBase] | PartialStateNavigationSta] = js.undefined
 }
 object `8` {
   
-  inline def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](
-    data: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-  ): `8`[EventMap, EventName] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`8`[EventMap, EventName]]
+  inline def apply(): `8` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`8`]
   }
   
-  extension [Self <: `8`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](x: Self & (`8`[EventMap, EventName])) {
+  extension [Self <: `8`](x: Self) {
     
-    inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setState(value: NavigationState[ParamListBase] | PartialStateNavigationSta): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -1,5 +1,7 @@
 package typings.jupyterlabApplication
 
+import typings.jupyterlabApplication.jupyterlabApplicationStrings.display
+import typings.jupyterlabApplication.jupyterlabApplicationStrings.scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +13,8 @@ object anon {
     val app: String
     
     val base: String
+    
+    val doc: String
     
     val hubHost: js.UndefOr[String] = js.undefined
     
@@ -28,22 +32,20 @@ object anon {
     
     val themes: String
     
-    val tree: String
-    
-    val workspaces: String
+    val translations: String
   }
   object App {
     
     inline def apply(
       app: String,
       base: String,
+      doc: String,
       settings: String,
       static: String,
       themes: String,
-      tree: String,
-      workspaces: String
+      translations: String
     ): App = {
-      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], doc = doc.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
       __obj.asInstanceOf[App]
     }
     
@@ -52,6 +54,8 @@ object anon {
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      
+      inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
       inline def setHubHost(value: String): Self = StObject.set(x, "hubHost", value.asInstanceOf[js.Any])
       
@@ -79,9 +83,7 @@ object anon {
       
       inline def setThemes(value: String): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
       
-      inline def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
-      
-      inline def setWorkspaces(value: String): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+      inline def setTranslations(value: String): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,11 +179,31 @@ object anon {
       
       inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
       
       inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
+    }
+  }
+  
+  /* Inlined std.Partial<@jupyterlab/application.@jupyterlab/application/lib/shell.ILabShell.IConfig> */
+  trait PartialIConfig extends StObject {
+    
+    var hiddenMode: js.UndefOr[display | scale] = js.undefined
+  }
+  object PartialIConfig {
+    
+    inline def apply(): PartialIConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialIConfig]
+    }
+    
+    extension [Self <: PartialIConfig](x: Self) {
+      
+      inline def setHiddenMode(value: display | scale): Self = StObject.set(x, "hiddenMode", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenModeUndefined: Self = StObject.set(x, "hiddenMode", js.undefined)
     }
   }
   

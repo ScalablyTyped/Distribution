@@ -2,7 +2,7 @@ package typings.vscodeLanguageclient.anon
 
 import typings.vscode.mod.NotebookCell
 import typings.vscode.mod.NotebookDocument
-import typings.vscodeLanguageclient.notebookMod.VNotebookDocumentChangeEvent
+import typings.vscodeLanguageclient.libCommonNotebookMod.VNotebookDocumentChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

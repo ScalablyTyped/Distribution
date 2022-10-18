@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "NativeDataStream")
 @js.native
 open class NativeDataStream ()
-  extends typings.babylonjs.nativeIndexMod.NativeDataStream
+  extends typings.babylonjs.enginesNativeIndexMod.NativeDataStream
 /* static members */
 object NativeDataStream {
   

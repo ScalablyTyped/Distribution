@@ -1,7 +1,7 @@
 package typings.emojiMart
 
-import typings.emojiMart.nimbleEmojiIndexMod.EmojiSkin
-import typings.emojiMart.sharedPropsMod.EmojiSheetSize
+import typings.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.EmojiSkin
+import typings.emojiMart.distEsUtilsSharedPropsMod.EmojiSheetSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

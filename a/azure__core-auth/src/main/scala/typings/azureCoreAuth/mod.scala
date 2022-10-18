@@ -1,6 +1,6 @@
 package typings.azureCoreAuth
 
-import typings.azureAbortController.abortSignalMod.AbortSignalLike
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignalLike
 import typings.azureCoreAuth.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

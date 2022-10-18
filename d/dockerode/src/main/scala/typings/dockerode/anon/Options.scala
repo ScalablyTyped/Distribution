@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Options extends StObject {
   
-  var Name: js.UndefOr[String] = js.undefined
+  var Name: String
   
-  var Options: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Options: StringDictionary[String]
 }
 object Options {
   
-  inline def apply(): Options = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Name: String, Options: StringDictionary[String]): Options = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
@@ -22,10 +22,6 @@ object Options {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
-    
     inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
-    
-    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
   }
 }

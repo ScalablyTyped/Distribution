@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.anon
 
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsCompactDisplay
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsCurrencyDisplay
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsCurrencySign
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsNotation
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsStyle
-import typings.formatjsEcma402Abstract.numberMod.NumberFormatOptionsUnitDisplay
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptionsCompactDisplay
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptionsCurrencyDisplay
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptionsCurrencySign
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptionsNotation
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptionsStyle
+import typings.formatjsEcma402Abstract.libTypesNumberMod.NumberFormatOptionsUnitDisplay
+import typings.formatjsEcma402Abstract.libTypesNumberMod.UseGroupingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,17 +31,12 @@ trait Currency extends StObject {
   
   var unitDisplay: js.UndefOr[NumberFormatOptionsUnitDisplay] = js.undefined
   
-  var useGrouping: Boolean
+  var useGrouping: js.UndefOr[UseGroupingType] = js.undefined
 }
 object Currency {
   
-  inline def apply(
-    notation: NumberFormatOptionsNotation,
-    numberingSystem: String,
-    style: NumberFormatOptionsStyle,
-    useGrouping: Boolean
-  ): Currency = {
-    val __obj = js.Dynamic.literal(notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
+  inline def apply(notation: NumberFormatOptionsNotation, numberingSystem: String, style: NumberFormatOptionsStyle): Currency = {
+    val __obj = js.Dynamic.literal(notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Currency]
   }
   
@@ -76,6 +72,8 @@ object Currency {
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    inline def setUseGrouping(value: UseGroupingType): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }
 }

@@ -2,8 +2,8 @@ package typings.reactStyleSingleton
 
 import typings.react.mod.FC
 import typings.reactStyleSingleton.anon.Add
-import typings.reactStyleSingleton.componentMod.Props
-import typings.reactStyleSingleton.hookMod.StyleSingletonHook
+import typings.reactStyleSingleton.distEs5ComponentMod.Props
+import typings.reactStyleSingleton.distEs5HookMod.StyleSingletonHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

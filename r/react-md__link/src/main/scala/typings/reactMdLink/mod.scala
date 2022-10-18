@@ -4,8 +4,8 @@ import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdLink.anon.PickLinkWithComponentProp
-import typings.reactMdLink.linkMod.LinkProps
-import typings.reactMdLink.skipToMainContentMod.SkipToMainContentProps
+import typings.reactMdLink.typesLinkMod.LinkProps
+import typings.reactMdLink.typesSkipToMainContentMod.SkipToMainContentProps
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

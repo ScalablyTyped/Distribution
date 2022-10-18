@@ -1,8 +1,8 @@
 package typings.popperjsCore.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.popperjsCore.typesMod.OffsetData
-import typings.popperjsCore.typesMod.Offsets
+import typings.popperjsCore.libTypesMod.OffsetData
+import typings.popperjsCore.libTypesMod.Offsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

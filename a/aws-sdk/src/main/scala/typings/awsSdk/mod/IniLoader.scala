@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "IniLoader")
 @js.native
 open class IniLoader ()
-  extends typings.awsSdk.coreMod.IniLoader
+  extends typings.awsSdk.libCoreMod.IniLoader

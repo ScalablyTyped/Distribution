@@ -1,7 +1,7 @@
 package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.elasticsearch.httpMod.^
+import typings.elasticsearch.srcLibConnectorsHttpMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

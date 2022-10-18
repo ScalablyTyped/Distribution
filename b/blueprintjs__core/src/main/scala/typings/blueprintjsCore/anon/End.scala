@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.anon
 
-import typings.blueprintjsCore.handlePropsMod.HandleHtmlProps
+import typings.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.HandleHtmlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

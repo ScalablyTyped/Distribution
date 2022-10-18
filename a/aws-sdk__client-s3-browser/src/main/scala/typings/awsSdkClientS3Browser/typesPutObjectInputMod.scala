@@ -15,8 +15,8 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.`public-read-w
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.`public-read`
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.awsColonkms
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.requester_
-import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.awsSdkTypes.cryptoMod.SourceData
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
+import typings.awsSdkTypes.distTypesCryptoMod.SourceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

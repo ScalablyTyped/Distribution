@@ -1,7 +1,7 @@
 package typings.awsSyntheticsPuppeteer.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsSdk.managedUploadMod.ManagedUpload.ManagedUploadOptions
+import typings.awsSdk.libS3ManagedUploadMod.ManagedUpload.ManagedUploadOptions
 import typings.awsSdk.mod.S3.ManagedUpload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

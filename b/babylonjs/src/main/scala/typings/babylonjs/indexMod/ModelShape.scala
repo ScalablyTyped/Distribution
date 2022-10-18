@@ -16,14 +16,14 @@ open class ModelShape protected ()
     */
   def this(
     id: Double,
-    shape: js.Array[typings.babylonjs.mathVectorMod.Vector3],
+    shape: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector3],
     indices: js.Array[Double],
     normals: js.Array[Double],
     colors: js.Array[Double],
     shapeUV: js.Array[Double],
     posFunction: Nullable[
         js.Function3[
-          /* particle */ typings.babylonjs.solidParticleMod.SolidParticle, 
+          /* particle */ typings.babylonjs.particlesSolidParticleMod.SolidParticle, 
           /* i */ Double, 
           /* s */ Double, 
           Unit
@@ -31,12 +31,12 @@ open class ModelShape protected ()
       ],
     vtxFunction: Nullable[
         js.Function3[
-          /* particle */ typings.babylonjs.solidParticleMod.SolidParticle, 
-          /* vertex */ typings.babylonjs.mathVectorMod.Vector3, 
+          /* particle */ typings.babylonjs.particlesSolidParticleMod.SolidParticle, 
+          /* vertex */ typings.babylonjs.mathsMathDotvectorMod.Vector3, 
           /* i */ Double, 
           Unit
         ]
       ],
-    material: Nullable[typings.babylonjs.materialMod.Material]
+    material: Nullable[typings.babylonjs.materialsMaterialMod.Material]
   ) = this()
 }

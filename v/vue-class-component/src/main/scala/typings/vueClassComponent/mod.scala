@@ -1,9 +1,9 @@
 package typings.vueClassComponent
 
 import typings.std.ThisType
-import typings.vueClassComponent.declarationsMod.VueClass
-import typings.vueClassComponent.utilMod.MixedVueClass
-import typings.vueClassComponent.utilMod.VueDecorator
+import typings.vueClassComponent.libDeclarationsMod.VueClass
+import typings.vueClassComponent.libUtilMod.MixedVueClass
+import typings.vueClassComponent.libUtilMod.VueDecorator
 import typings.vueRuntimeCore.mod.ComponentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

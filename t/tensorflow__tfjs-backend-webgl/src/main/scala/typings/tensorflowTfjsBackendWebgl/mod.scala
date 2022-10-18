@@ -14,13 +14,13 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLShader
 import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
+import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.Texture
+import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.TextureConfig
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`1`
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`2`
-import typings.tensorflowTfjsBackendWebgl.texUtilMod.Texture
-import typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureConfig
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.PixelData
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,17 +34,17 @@ object mod {
   @JSImport("@tensorflow/tfjs-backend-webgl", "GPGPUContext")
   @js.native
   open class GPGPUContext ()
-    extends typings.tensorflowTfjsBackendWebgl.baseMod.GPGPUContext {
+    extends typings.tensorflowTfjsBackendWebgl.distBaseMod.GPGPUContext {
     def this(gl: WebGLRenderingContext) = this()
   }
   
   @JSImport("@tensorflow/tfjs-backend-webgl", "MathBackendWebGL")
   @js.native
   open class MathBackendWebGL ()
-    extends typings.tensorflowTfjsBackendWebgl.baseMod.MathBackendWebGL {
+    extends typings.tensorflowTfjsBackendWebgl.distBaseMod.MathBackendWebGL {
     def this(gpuResource: OffscreenCanvas) = this()
     def this(gpuResource: HTMLCanvasElement) = this()
-    def this(gpuResource: typings.tensorflowTfjsBackendWebgl.gpgpuContextMod.GPGPUContext) = this()
+    def this(gpuResource: typings.tensorflowTfjsBackendWebgl.distGpgpuContextMod.GPGPUContext) = this()
   }
   /* static members */
   object MathBackendWebGL {
@@ -135,7 +135,7 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl", "version_webgl")
   @js.native
-  val versionWebgl: /* "3.20.0" */ String = js.native
+  val versionWebgl: /* "4.0.0" */ String = js.native
   
   object webgl {
     

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.RevocationValues")
 @js.native
 open class RevocationValues ()
-  extends typings.xadesjs.typesXmlMod.RevocationValues {
+  extends typings.xadesjs.buildTypesXmlMod.RevocationValues {
   def this(properties: js.Object) = this()
 }

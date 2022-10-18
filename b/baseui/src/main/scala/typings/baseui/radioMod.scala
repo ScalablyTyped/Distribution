@@ -12,7 +12,7 @@ import typings.baseui.radioTypesMod.StyleProps
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,7 +96,7 @@ object radioMod {
   @JSImport("baseui/radio", "RadioGroup")
   @js.native
   open class RadioGroup ()
-    extends typings.baseui.radiogroupMod.default
+    extends typings.baseui.radioRadiogroupMod.default
   object RadioGroup {
     
     @JSImport("baseui/radio", "RadioGroup")
@@ -113,7 +113,7 @@ object radioMod {
   @JSImport("baseui/radio", "StatefulContainer")
   @js.native
   open class StatefulContainer protected ()
-    extends typings.baseui.statefulRadiogroupContainerMod.default {
+    extends typings.baseui.radioStatefulRadiogroupContainerMod.default {
     def this(props: StatefulContainerProps) = this()
   }
   object StatefulContainer {

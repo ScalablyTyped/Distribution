@@ -1,11 +1,11 @@
 package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientLambdaNode.typesConcurrencyMod.UnmarshalledConcurrency
 import typings.awsSdkClientLambdaNode.typesFunctionCodeLocationMod.UnmarshalledFunctionCodeLocation
 import typings.awsSdkClientLambdaNode.typesFunctionConfigurationMod.UnmarshalledFunctionConfiguration
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientLambdaNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

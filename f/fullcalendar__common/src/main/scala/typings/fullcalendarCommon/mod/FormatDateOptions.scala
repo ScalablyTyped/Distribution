@@ -14,7 +14,7 @@ trait FormatDateOptions
 }
 object FormatDateOptions {
   
-  inline def apply(formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): FormatDateOptions = {
+  inline def apply(formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): FormatDateOptions = {
     val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatDateOptions]
   }

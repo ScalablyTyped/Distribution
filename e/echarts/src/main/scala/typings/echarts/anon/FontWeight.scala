@@ -16,13 +16,13 @@ trait FontWeight extends StObject {
     * + `'center'`
     * + `'right'`
     *
-    * If `align` is not set in `rich`, `align` in parent level
-    * will be used. For example:
+    * If `align` is not set in `rich`, `align` in parent
+    * level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.emphasis.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.align
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.align
     */
   var align: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ trait FontWeight extends StObject {
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.emphasis.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -41,7 +41,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
@@ -51,7 +51,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ trait FontWeight extends StObject {
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
@@ -67,7 +67,7 @@ trait FontWeight extends StObject {
     * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
@@ -77,7 +77,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * ""#fff""
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.color
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   
@@ -89,7 +89,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -99,7 +99,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * 12
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.fontSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -115,7 +115,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -133,7 +133,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.fontWeight
     */
   var fontWeight: js.UndefOr[String | Double] = js.undefined
   
@@ -143,91 +143,63 @@ trait FontWeight extends StObject {
     * You may want to use it in some cases like using background
     * image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Notice, `width` and `height` only work when `rich`
+    * specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.height
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Line height of the text fregment.
     *
-    * If `lineHeight` is not set in `rich`, `lineHeight` in
-    * parent level will be used. For example:
+    * If `lineHeight` is not set in `rich`, `lineHeight`
+    * in parent level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.emphasis.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
     *
-    * + `padding: [3, 4, 5, 6]`: represents padding of `[top,
-    * right, bottom, left]`.
+    * + `padding: [3, 4, 5, 6]`: represents padding of
+    * `[top, right, bottom, left]`.
     * + `padding: 4`: represents `padding: [4, 4, 4, 4]`.
-    * + `padding: [3, 4]`: represents `padding: [3, 4, 3, 4]`.
+    * + `padding: [3, 4]`: represents `padding: [3, 4,
+    * 3, 4]`.
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
-    * The position of label.
+    * "Rich text styles" can be defined in this `rich`
+    * property. For example:
     *
-    * **Options:**
-    *
-    * + `'outside'`
-    *
-    * Outside of sectors of pie chart, which relates to corresponding
-    * sector through
-    * [visual guide line](https://echarts.apache.org/en/option.html#series-pie.labelLine)
-    * .
-    *
-    * + `'inside'`
-    *
-    * Inside the sectors of pie chart.
-    *
-    * + `'inner'` is the same with `'inside'`.
-    *
-    * + `'center'`
-    *
-    * In the center of pie chart. See
-    * [pie-doughnut example](https://echarts.apache.org/examples/en/editor.html?c=pie-doughnut)
-    *
-    *
-    * @default
-    * "outside"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.position
-    */
-  var position: js.UndefOr[String] = js.undefined
-  
-  /**
-    * "Rich text styles" can be defined in this `rich` property.
-    * For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.emphasis.label)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
@@ -236,7 +208,7 @@ trait FontWeight extends StObject {
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -246,7 +218,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -254,7 +226,7 @@ trait FontWeight extends StObject {
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -262,12 +234,12 @@ trait FontWeight extends StObject {
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.show
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
@@ -277,7 +249,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -285,7 +257,7 @@ trait FontWeight extends StObject {
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -293,7 +265,7 @@ trait FontWeight extends StObject {
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -303,7 +275,7 @@ trait FontWeight extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -311,7 +283,7 @@ trait FontWeight extends StObject {
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -319,7 +291,7 @@ trait FontWeight extends StObject {
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   
@@ -335,10 +307,10 @@ trait FontWeight extends StObject {
     * If `verticalAlign` is not set in `rich`, `verticalAlign`
     * in parent level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.data.emphasis.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.verticalAlign
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.verticalAlign
     */
   var verticalAlign: js.UndefOr[String] = js.undefined
   
@@ -349,21 +321,23 @@ trait FontWeight extends StObject {
     * You may want to use it in some cases like make simple
     * table or using background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and
-    * height of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width
+    * and height of the content, without `padding`.
     *
-    * `width` can also be percent string, like `'100%'`, which
-    * represents the percent of `contentWidth` (that is, the
-    * width without `padding`) of its container box.
+    * `width` can also be percent string, like `'100%'`,
+    * which represents the percent of `contentWidth` (that
+    * is, the width without `padding`) of its container
+    * box.
     * It is based on `contentWidth` because that each text
     * fregment is layout based on the `content box`, where
-    * it makes no sense that calculating width based on `outerWith`
-    * in prectice.
+    * it makes no sense that calculating width based on
+    * `outerWith` in prectice.
     *
-    * Notice, `width` and `height` only work when `rich` specified.
+    * Notice, `width` and `height` only work when `rich`
+    * specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.data.label.width
+    * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -430,13 +404,9 @@ object FontWeight {
     
     inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-    
     inline def setRich(
       value: /**
-      * @see https://echarts.apache.org/en/option.html#series-pie.data.label.rich.%3Cuser%20defined%20style%20name%3E
+      * @see https://echarts.apache.org/en/option.html#series-pie.data.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])

@@ -14,27 +14,27 @@ trait LiveClientHandshake extends StObject {
     /* number */ String | Double, 
     /* message */ L, 
     /* client */ ^, 
-    typings.kahootJsUpdated.liveClientHandshakeMod.^
+    typings.kahootJsUpdated.srcAssetsLiveClientHandshakeMod.^
   ]
   
   var LiveJoinPacket: Instantiable2[
     /* client */ ^, 
     /* name */ js.UndefOr[String], 
-    typings.kahootJsUpdated.liveJoinPacketMod.^
+    typings.kahootJsUpdated.srcAssetsLiveJoinPacketMod.^
   ]
   
   var LiveJoinTeamPacket: Instantiable2[
     /* client */ ^, 
     /* team */ js.Array[String], 
-    typings.kahootJsUpdated.liveJoinTeamPacketMod.^
+    typings.kahootJsUpdated.srcAssetsLiveJoinTeamPacketMod.^
   ]
   
-  var LiveLeavePacket: Instantiable1[/* client */ ^, typings.kahootJsUpdated.liveLeavePacketMod.^]
+  var LiveLeavePacket: Instantiable1[/* client */ ^, typings.kahootJsUpdated.srcAssetsLiveLeavePacketMod.^]
   
   var LiveTwoStepAnswer: Instantiable2[
     /* client */ ^, 
     /* sequence */ js.Array[Double], 
-    typings.kahootJsUpdated.liveTwoStepAnswerMod.^
+    typings.kahootJsUpdated.srcAssetsLiveTwoStepAnswerMod.^
   ]
 }
 object LiveClientHandshake {
@@ -44,23 +44,23 @@ object LiveClientHandshake {
       /* number */ String | Double, 
       /* message */ L, 
       /* client */ ^, 
-      typings.kahootJsUpdated.liveClientHandshakeMod.^
+      typings.kahootJsUpdated.srcAssetsLiveClientHandshakeMod.^
     ],
     LiveJoinPacket: Instantiable2[
       /* client */ ^, 
       /* name */ js.UndefOr[String], 
-      typings.kahootJsUpdated.liveJoinPacketMod.^
+      typings.kahootJsUpdated.srcAssetsLiveJoinPacketMod.^
     ],
     LiveJoinTeamPacket: Instantiable2[
       /* client */ ^, 
       /* team */ js.Array[String], 
-      typings.kahootJsUpdated.liveJoinTeamPacketMod.^
+      typings.kahootJsUpdated.srcAssetsLiveJoinTeamPacketMod.^
     ],
-    LiveLeavePacket: Instantiable1[/* client */ ^, typings.kahootJsUpdated.liveLeavePacketMod.^],
+    LiveLeavePacket: Instantiable1[/* client */ ^, typings.kahootJsUpdated.srcAssetsLiveLeavePacketMod.^],
     LiveTwoStepAnswer: Instantiable2[
       /* client */ ^, 
       /* sequence */ js.Array[Double], 
-      typings.kahootJsUpdated.liveTwoStepAnswerMod.^
+      typings.kahootJsUpdated.srcAssetsLiveTwoStepAnswerMod.^
     ]
   ): LiveClientHandshake = {
     val __obj = js.Dynamic.literal(LiveClientHandshake = LiveClientHandshake.asInstanceOf[js.Any], LiveJoinPacket = LiveJoinPacket.asInstanceOf[js.Any], LiveJoinTeamPacket = LiveJoinTeamPacket.asInstanceOf[js.Any], LiveLeavePacket = LiveLeavePacket.asInstanceOf[js.Any], LiveTwoStepAnswer = LiveTwoStepAnswer.asInstanceOf[js.Any])
@@ -74,7 +74,7 @@ object LiveClientHandshake {
           /* number */ String | Double, 
           /* message */ L, 
           /* client */ ^, 
-          typings.kahootJsUpdated.liveClientHandshakeMod.^
+          typings.kahootJsUpdated.srcAssetsLiveClientHandshakeMod.^
         ]
     ): Self = StObject.set(x, "LiveClientHandshake", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object LiveClientHandshake {
       value: Instantiable2[
           /* client */ ^, 
           /* name */ js.UndefOr[String], 
-          typings.kahootJsUpdated.liveJoinPacketMod.^
+          typings.kahootJsUpdated.srcAssetsLiveJoinPacketMod.^
         ]
     ): Self = StObject.set(x, "LiveJoinPacket", value.asInstanceOf[js.Any])
     
@@ -90,17 +90,17 @@ object LiveClientHandshake {
       value: Instantiable2[
           /* client */ ^, 
           /* team */ js.Array[String], 
-          typings.kahootJsUpdated.liveJoinTeamPacketMod.^
+          typings.kahootJsUpdated.srcAssetsLiveJoinTeamPacketMod.^
         ]
     ): Self = StObject.set(x, "LiveJoinTeamPacket", value.asInstanceOf[js.Any])
     
-    inline def setLiveLeavePacket(value: Instantiable1[/* client */ ^, typings.kahootJsUpdated.liveLeavePacketMod.^]): Self = StObject.set(x, "LiveLeavePacket", value.asInstanceOf[js.Any])
+    inline def setLiveLeavePacket(value: Instantiable1[/* client */ ^, typings.kahootJsUpdated.srcAssetsLiveLeavePacketMod.^]): Self = StObject.set(x, "LiveLeavePacket", value.asInstanceOf[js.Any])
     
     inline def setLiveTwoStepAnswer(
       value: Instantiable2[
           /* client */ ^, 
           /* sequence */ js.Array[Double], 
-          typings.kahootJsUpdated.liveTwoStepAnswerMod.^
+          typings.kahootJsUpdated.srcAssetsLiveTwoStepAnswerMod.^
         ]
     ): Self = StObject.set(x, "LiveTwoStepAnswer", value.asInstanceOf[js.Any])
   }

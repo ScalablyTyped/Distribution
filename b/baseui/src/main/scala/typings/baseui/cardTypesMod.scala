@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.anon.Thumbnail
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -73,7 +73,7 @@ object cardTypesMod {
     val children: js.UndefOr[ReactNode] = js.undefined
     
     /** Function that takes Card props and returns a boolean that represents if a thumbnail will be rendered. */
-    def hasThumbnail(a: Thumbnail): Boolean
+    val hasThumbnail: js.UndefOr[js.Function1[/* a */ Thumbnail, Boolean]] = js.undefined
     
     /** Image to be positioned at the top of the Card. Can be a string representing the img src or an object with img attrs */
     val headerImage: js.UndefOr[String | ImageProps] = js.undefined
@@ -88,8 +88,8 @@ object cardTypesMod {
   }
   object CardProps {
     
-    inline def apply(hasThumbnail: Thumbnail => Boolean, overrides: CardOverrides): CardProps = {
-      val __obj = js.Dynamic.literal(hasThumbnail = js.Any.fromFunction1(hasThumbnail), overrides = overrides.asInstanceOf[js.Any])
+    inline def apply(overrides: CardOverrides): CardProps = {
+      val __obj = js.Dynamic.literal(overrides = overrides.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardProps]
     }
     
@@ -103,7 +103,9 @@ object cardTypesMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setHasThumbnail(value: Thumbnail => Boolean): Self = StObject.set(x, "hasThumbnail", js.Any.fromFunction1(value))
+      inline def setHasThumbnail(value: /* a */ Thumbnail => Boolean): Self = StObject.set(x, "hasThumbnail", js.Any.fromFunction1(value))
+      
+      inline def setHasThumbnailUndefined: Self = StObject.set(x, "hasThumbnail", js.undefined)
       
       inline def setHeaderImage(value: String | ImageProps): Self = StObject.set(x, "headerImage", value.asInstanceOf[js.Any])
       

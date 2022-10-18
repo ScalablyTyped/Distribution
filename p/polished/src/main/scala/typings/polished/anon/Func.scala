@@ -9,7 +9,7 @@ trait Func extends StObject {
   
   var func: PrecedenceRightToLeft
   
-  var regSymbol: String
+  var regSymbol: /* min\b */ String
   
   var symbol: min
 }
@@ -24,7 +24,7 @@ object Func {
     
     inline def setFunc(value: PrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: /* min\b */ String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: min): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

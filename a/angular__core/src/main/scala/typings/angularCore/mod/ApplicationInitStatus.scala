@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,11 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/core", "ApplicationInitStatus")
 @js.native
 open class ApplicationInitStatus protected () extends StObject {
-  def this(appInits: js.Array[
-        js.Function0[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<unknown> */ Any) | js.Promise[Any] | Unit
-        ]
-      ]) = this()
+  def this(appInits: js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]) = this()
   
   /* private */ val appInits: Any = js.native
   

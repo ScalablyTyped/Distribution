@@ -760,6 +760,22 @@ trait Diagnostic extends StObject {
   ] = js.native
   
   /**
+    * ANDROID ONLY
+    *
+    * Checks if mobile data is enabled on device.
+    *
+    * @param successCallback
+    * @param errorCallback
+    */
+  var isMobileDataEnabled: js.UndefOr[
+    js.Function2[
+      /* successCallback */ js.Function0[Boolean], 
+      /* errorCallback */ js.Function1[/* error */ String, Unit], 
+      Unit
+    ]
+  ] = js.native
+  
+  /**
     * iOS ONLY
     * Checks if motion tracking is available on the current device.
     * @param successCallback

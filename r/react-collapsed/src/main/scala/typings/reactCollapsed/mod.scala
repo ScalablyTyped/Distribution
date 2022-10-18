@@ -1,7 +1,7 @@
 package typings.reactCollapsed
 
-import typings.reactCollapsed.typesMod.UseCollapseInput
-import typings.reactCollapsed.typesMod.UseCollapseOutput
+import typings.reactCollapsed.distTypesMod.UseCollapseInput
+import typings.reactCollapsed.distTypesMod.UseCollapseOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

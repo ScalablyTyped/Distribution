@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.dividerMod.DividerProps
+import typings.primereact.dividerDividerMod.DividerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Divider")
 @js.native
 open class Divider protected ()
-  extends typings.primereact.dividerMod.Divider {
+  extends typings.primereact.dividerDividerMod.Divider {
   def this(props: DividerProps) = this()
   /**
     * @deprecated

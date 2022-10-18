@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LockScreen {
   
   /** Allows the lock screen app to request that the device unlocks, and allows the app to register to be notified when the device begins to unlock. */
-  @JSGlobal("Windows.ApplicationModel.LockScreen.LockApplicationHost")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.LockScreen.LockApplicationHost")
   @js.native
-  abstract class LockApplicationHost ()
+  open class LockApplicationHost ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockApplicationHost
   object LockApplicationHost {
@@ -29,9 +29,9 @@ object LockScreen {
   }
   
   /** Represents a lock screen badge for an app. */
-  @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenBadge")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenBadge")
   @js.native
-  abstract class LockScreenBadge ()
+  open class LockScreenBadge ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockScreenBadge {
     
@@ -57,16 +57,16 @@ object LockScreen {
   }
   
   /** Provides access to the same data that the default lock screen has access to, such as wallpaper, badges, and so on. */
-  @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenInfo")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenInfo")
   @js.native
-  abstract class LockScreenInfo ()
+  open class LockScreenInfo ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockScreenInfo
   
   /** Represents an unlock deferral. */
-  @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral")
   @js.native
-  abstract class LockScreenUnlockingDeferral ()
+  open class LockScreenUnlockingDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral {
     
@@ -76,9 +76,9 @@ object LockScreen {
   }
   
   /** Represents the lock screen unlocking events. */
-  @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs")
   @js.native
-  abstract class LockScreenUnlockingEventArgs ()
+  open class LockScreenUnlockingEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs {
     

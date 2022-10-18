@@ -26,7 +26,7 @@ trait TypeofRadioControlValueAc
   
   var ɵdir: ɵɵDirectiveDeclaration[
     RadioControlValueAccessor, 
-    String, 
+    /* input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel] */ String, 
     scala.Nothing, 
     FormControlName, 
     js.Object, 

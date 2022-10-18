@@ -6,7 +6,7 @@ import typings.accepts.mod.Accepts
 import typings.contentDisposition.mod.Options
 import typings.cookies.mod.Cookies
 import typings.keygrip.mod.Keygrip
-import typings.koa.anon.BodyUnknown
+import typings.koa.anon.Body
 import typings.koa.anon.Env
 import typings.koa.anon.FnCall
 import typings.koa.koaBooleans.`false`
@@ -19,7 +19,7 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.ListenOptions
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.node.urlMod.URL_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -1038,7 +1038,7 @@ object mod {
       */
     var respond: js.UndefOr[Boolean] = js.native
     
-    var response: BodyUnknown & Response = js.native
+    var response: Body & Response = js.native
     
     /**
       * Get the search string. Same as the querystring

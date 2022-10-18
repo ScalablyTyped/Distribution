@@ -8,8 +8,8 @@ object speechToTextV1Mod {
   
   @JSImport("watson-developer-cloud/speech-to-text/v1", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SpeechToTextV1 {
-    def this(options: js.Any) = this()
+  open class ^ protected () extends SpeechToTextV1 {
+    def this(options: Any) = this()
   }
   @JSImport("watson-developer-cloud/speech-to-text/v1", JSImport.Namespace)
   @js.native
@@ -31,7 +31,7 @@ object speechToTextV1Mod {
   trait SpeechToTextV1
     extends typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.^ {
     
-    def recognize(params: js.Any, callback: js.Any): Unit | js.Promise[js.Any] = js.native
+    def recognize(params: Any, callback: Any): Unit | js.Promise[Any] = js.native
     
     /**
       * Use the recognize function with a single 2-way stream over websockets
@@ -39,7 +39,7 @@ object speechToTextV1Mod {
       * @param {Object} params The parameters
       * @return {RecognizeStream}
       */
-    def recognizeUsingWebSocket(params: js.Any): typings.watsonDeveloperCloud.recognizeStreamMod.^ = js.native
+    def recognizeUsingWebSocket(params: Any): typings.watsonDeveloperCloud.libRecognizeStreamMod.^ = js.native
     
     /**
       * Waits while corpora analysis status is 'being_processes', fires callback once the status is 'analyzed'
@@ -53,7 +53,7 @@ object speechToTextV1Mod {
       * @param {Number} [params.times=30] - maximum number of attempts
       * @param {Function} callback
       */
-    def whenCorporaAnalyzed(params: js.Any, callback: js.Any): Unit = js.native
+    def whenCorporaAnalyzed(params: Any, callback: Any): Unit = js.native
     
     /**
       * Waits while a customization status is 'pending' or 'training', fires callback once the status is 'ready' or 'available'.
@@ -68,6 +68,6 @@ object speechToTextV1Mod {
       * @param {Number} [params.times=30] - maximum number of attempts
       * @param {Function} callback
       */
-    def whenCustomizationReady(params: js.Any, callback: js.Any): Unit = js.native
+    def whenCustomizationReady(params: Any, callback: Any): Unit = js.native
   }
 }

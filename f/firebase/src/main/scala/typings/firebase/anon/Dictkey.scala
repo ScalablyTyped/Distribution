@@ -1,14 +1,15 @@
 package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebase.firebaseMod.firebase.analytics.Item
+import typings.firebase.compatMod.firebase.analytics.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[Any] {
+     with /** Custom claims set by the developer */
+/* claim */ StringDictionary[Any] {
   
   var coupon: js.UndefOr[String] = js.undefined
   

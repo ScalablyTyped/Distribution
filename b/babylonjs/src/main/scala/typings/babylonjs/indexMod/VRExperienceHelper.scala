@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
+import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "VRExperienceHelper")
 @js.native
 open class VRExperienceHelper protected ()
-  extends typings.babylonjs.babylonjsMod.VRExperienceHelper {
+  extends typings.babylonjs.camerasIndexMod.VRExperienceHelper {
   /**
     * Instantiates a VRExperienceHelper.
     * Helps to quickly add VR support to an existing scene.

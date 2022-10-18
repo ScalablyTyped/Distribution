@@ -32,7 +32,7 @@ object SectionTitles {
     
     inline def setElement_locationsUndefined: Self = StObject.set(x, "element_locations", js.undefined)
     
-    inline def setElement_locationsVarargs(value: ElementLocations*): Self = StObject.set(x, "element_locations", js.Array(value :_*))
+    inline def setElement_locationsVarargs(value: ElementLocations*): Self = StObject.set(x, "element_locations", js.Array(value*))
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

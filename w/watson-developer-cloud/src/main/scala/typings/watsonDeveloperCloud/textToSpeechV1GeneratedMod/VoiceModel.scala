@@ -70,6 +70,6 @@ object VoiceModel {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: Word*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

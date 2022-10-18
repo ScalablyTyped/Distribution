@@ -1,8 +1,8 @@
 package typings.poi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.htmlWebpackPlugin.anon.BodyTags
-import typings.htmlWebpackPlugin.anon.Css
+import typings.htmlWebpackPlugin.anon.BodyTagsHeadTags
+import typings.htmlWebpackPlugin.anon.Favicon
 import typings.htmlWebpackPlugin.mod.MinifyOptions
 import typings.htmlWebpackPlugin.mod.ProcessedOptions
 import typings.poi.poiBooleans.`false`
@@ -86,8 +86,8 @@ object anon {
     var templateParameters: js.UndefOr[
         `false` | (js.Function4[
           /* compilation */ Any, 
-          /* assets */ Css, 
-          /* assetTags */ BodyTags, 
+          /* assets */ Favicon, 
+          /* assetTags */ BodyTagsHeadTags, 
           /* options */ ProcessedOptions, 
           StringDictionary[Any] | js.Promise[StringDictionary[Any]]
         ]) | StringDictionary[Any]
@@ -177,15 +177,15 @@ object anon {
       inline def setTemplateParameters(
         value: `false` | (js.Function4[
               /* compilation */ Any, 
-              /* assets */ Css, 
-              /* assetTags */ BodyTags, 
+              /* assets */ Favicon, 
+              /* assetTags */ BodyTagsHeadTags, 
               /* options */ ProcessedOptions, 
               StringDictionary[Any] | js.Promise[StringDictionary[Any]]
             ]) | StringDictionary[Any]
       ): Self = StObject.set(x, "templateParameters", value.asInstanceOf[js.Any])
       
       inline def setTemplateParametersFunction4(
-        value: (/* compilation */ Any, /* assets */ Css, /* assetTags */ BodyTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
+        value: (/* compilation */ Any, /* assets */ Favicon, /* assetTags */ BodyTagsHeadTags, /* options */ ProcessedOptions) => StringDictionary[Any] | js.Promise[StringDictionary[Any]]
       ): Self = StObject.set(x, "templateParameters", js.Any.fromFunction4(value))
       
       inline def setTemplateParametersUndefined: Self = StObject.set(x, "templateParameters", js.undefined)

@@ -1,10 +1,9 @@
 package typings.zustand
 
 import typings.std.Omit
+import typings.zustand.vanillaMod.StateCreator
 import typings.zustand.zustandBooleans.`true`
 import typings.zustand.zustandStrings.zustandSlashredux
-import typings.zustand.zustandVanillaMod.StateCreator
-import typings.zustand.zustandVanillaMod.StoreMutatorIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,16 +49,16 @@ object middlewareReduxMod {
     }
   }
   
-  @js.native
-  trait Redux_ extends StObject {
-    
-    def apply[T, A /* <: Action */, Cms /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */](reducer: js.Function2[/* state */ T, /* action */ A, T], initialState: T): StateCreator[
-        Write[T, ReduxState[A]], 
-        Cms, 
-        js.Array[js.Tuple2[zustandSlashredux, A]], 
-        Write[T, ReduxState[A]]
-      ] = js.native
-  }
+  type Redux_ = js.Function2[
+    /* reducer */ js.Function2[/* state */ Any, /* action */ Action, Any], 
+    /* initialState */ Any, 
+    StateCreator[
+      Write[Any, ReduxState[Action]], 
+      js.Array[Any], 
+      js.Array[js.Tuple2[zustandSlashredux, Action]], 
+      Write[Any, ReduxState[Action]]
+    ]
+  ]
   
   trait StoreRedux[A] extends StObject {
     

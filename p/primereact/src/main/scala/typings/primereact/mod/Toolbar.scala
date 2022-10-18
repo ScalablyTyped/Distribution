@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.toolbarMod.ToolbarProps
+import typings.primereact.toolbarToolbarMod.ToolbarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Toolbar")
 @js.native
 open class Toolbar protected ()
-  extends typings.primereact.toolbarMod.Toolbar {
+  extends typings.primereact.toolbarToolbarMod.Toolbar {
   def this(props: ToolbarProps) = this()
   /**
     * @deprecated

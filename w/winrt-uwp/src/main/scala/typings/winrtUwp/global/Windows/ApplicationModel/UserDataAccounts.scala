@@ -110,9 +110,9 @@ object UserDataAccounts {
     }
     
     /** Provides the ability to display the system UI for managing sync relationships. */
-    @JSGlobal("Windows.ApplicationModel.UserDataAccounts.SystemAccess.UserDataAccountSystemAccessManager")
+    /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.UserDataAccounts.SystemAccess.UserDataAccountSystemAccessManager")
     @js.native
-    abstract class UserDataAccountSystemAccessManager ()
+    open class UserDataAccountSystemAccessManager ()
       extends StObject
          with typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.SystemAccess.UserDataAccountSystemAccessManager
     object UserDataAccountSystemAccessManager {
@@ -136,9 +136,9 @@ object UserDataAccounts {
   }
   
   /** Represents a user data account used to access email, contacts, calendars, and so on. */
-  @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccount")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccount")
   @js.native
-  abstract class UserDataAccount ()
+  open class UserDataAccount ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccount {
     
@@ -235,9 +235,9 @@ object UserDataAccounts {
   }
   
   /** Provides APIs to interact with the user’s data accounts including those implemented by the operating system. */
-  @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccountManager")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccountManager")
   @js.native
-  abstract class UserDataAccountManager ()
+  open class UserDataAccountManager ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountManager
   object UserDataAccountManager {
@@ -295,9 +295,9 @@ object UserDataAccounts {
   }
   
   /** Represents a data store that contains user accounts. */
-  @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore")
+  /* note: abstract class */ @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore")
   @js.native
-  abstract class UserDataAccountStore ()
+  open class UserDataAccountStore ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore {
     

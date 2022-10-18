@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "TransformBlock")
 @js.native
 open class TransformBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.TransformBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.TransformBlock {
   /**
     * Creates a new TransformBlock
     * @param name defines the block name

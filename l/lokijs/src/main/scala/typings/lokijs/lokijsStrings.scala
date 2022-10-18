@@ -51,14 +51,6 @@ object lokijsStrings {
   inline def CORDOVA: CORDOVA = "CORDOVA".asInstanceOf[CORDOVA]
   
   @js.native
-  sealed trait Collection extends StObject
-  inline def Collection: Collection = "Collection".asInstanceOf[Collection]
-  
-  @js.native
-  sealed trait Exact extends StObject
-  inline def Exact: Exact = "Exact".asInstanceOf[Exact]
-  
-  @js.native
   sealed trait NA extends StObject
   inline def NA: NA = "NA".asInstanceOf[NA]
   
@@ -69,10 +61,6 @@ object lokijsStrings {
   @js.native
   sealed trait NODEJS extends StObject
   inline def NODEJS: NODEJS = "NODEJS".asInstanceOf[NODEJS]
-  
-  @js.native
-  sealed trait PartialModel extends StObject
-  inline def PartialModel: PartialModel = "PartialModel".asInstanceOf[PartialModel]
   
   @js.native
   sealed trait active extends StObject

@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object OutboundMessageStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.messageFilteringParametersMod.OutboundMessageStatus & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus & String
+  ] = js.native
   
-  /* "processed" */ val Processed: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Processed & String = js.native
+  /* "processed" */ val Processed: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Processed & String = js.native
   
-  /* "queued" */ val Queued: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Queued & String = js.native
+  /* "queued" */ val Queued: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Queued & String = js.native
   
-  /* "sent" */ val Sent: typings.postmark.messageFilteringParametersMod.OutboundMessageStatus.Sent & String = js.native
+  /* "sent" */ val Sent: typings.postmark.distClientModelsMessagesMessageFilteringParametersMod.OutboundMessageStatus.Sent & String = js.native
 }

@@ -11,8 +11,7 @@ trait StructureContainer
   extends StObject
      with Structure[STRUCTURE_CONTAINER]
      with AnyStoreStructure
-     with AnyStructure
-     with ConcreteStructure[Any] {
+     with AnyStructure {
   
   /**
     * An object with the structure contents. Each object key is one of the RESOURCE_* constants, values are resources

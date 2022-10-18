@@ -7,9 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/index", "AbstractScene")
+/* note: abstract class */ @JSImport("babylonjs/index", "AbstractScene")
 @js.native
-abstract class AbstractScene ()
+open class AbstractScene ()
   extends typings.babylonjs.abstractSceneMod.AbstractScene
 /* static members */
 object AbstractScene {

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "TemporalUnit")
+/* note: abstract class */ @JSImport("js-joda", "TemporalUnit")
 @js.native
-abstract class TemporalUnit () extends StObject {
+open class TemporalUnit () extends StObject {
   
   def addTo[T /* <: Temporal */](temporal: T, amount: Double): T = js.native
   

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
-import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps
+import typings.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupDottypesMod.IChoiceGroupProps
+import typings.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod.IChoiceGroupOptionProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object libChoiceGroupMod {
   @JSImport("office-ui-fabric-react/lib/ChoiceGroup", "ChoiceGroupBase")
   @js.native
   open class ChoiceGroupBase protected ()
-    extends typings.officeUiFabricReact.choiceGroupMod.ChoiceGroupBase {
+    extends typings.officeUiFabricReact.libComponentsChoiceGroupMod.ChoiceGroupBase {
     def this(props: IChoiceGroupProps) = this()
   }
   

@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object GenericAttributeProfile {
   
   /** Represents a Characteristic of a GATT service. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
   @js.native
-  abstract class GattCharacteristic ()
+  open class GattCharacteristic ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
   object GattCharacteristic {
@@ -69,9 +69,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents an enumeration of the most well known Characteristic UUID values, and provides convenience methods for working with GATT characteristic UUIDs, and static properties providing characteristic UUIDs for common GATT characteristics. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids")
   @js.native
-  abstract class GattCharacteristicUuids ()
+  open class GattCharacteristicUuids ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids
   object GattCharacteristicUuids {
@@ -685,9 +685,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents a Descriptor of a GATT Characteristic. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor")
   @js.native
-  abstract class GattDescriptor ()
+  open class GattDescriptor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor
   object GattDescriptor {
@@ -706,9 +706,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents an enumeration of the most well known Descriptor UUID values, and provides convenience methods for working with GATT descriptor UUIDs, and static properties providing descriptor UUIDs for common GATT descriptors. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids")
   @js.native
-  abstract class GattDescriptorUuids ()
+  open class GattDescriptorUuids ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptorUuids
   object GattDescriptorUuids {
@@ -761,9 +761,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents a GATT Primary Service on a Bluetooth device. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")
   @js.native
-  abstract class GattDeviceService ()
+  open class GattDeviceService ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService {
     
@@ -875,9 +875,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents the value of a single Presentation Format GATT Descriptor. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
   @js.native
-  abstract class GattPresentationFormat ()
+  open class GattPresentationFormat ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat {
     
@@ -916,9 +916,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents the different well-known values that the GattPresentationFormat.FormatType property can take. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes")
   @js.native
-  abstract class GattPresentationFormatTypes ()
+  open class GattPresentationFormatTypes ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes
   object GattPresentationFormatTypes {
@@ -1140,9 +1140,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents the result of reading a GATT Client CharacteristicConfigurationClientDescriptor value. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult")
   @js.native
-  abstract class GattReadClientCharacteristicConfigurationDescriptorResult ()
+  open class GattReadClientCharacteristicConfigurationDescriptorResult ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadClientCharacteristicConfigurationDescriptorResult {
     
@@ -1156,9 +1156,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents the result of an asynchronous read operation of a GATT Characteristic or Descriptor value. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult")
   @js.native
-  abstract class GattReadResult ()
+  open class GattReadResult ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattReadResult {
     
@@ -1199,9 +1199,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents an enumeration of the most well known Service UUID values, and provides convenience methods for working with GATT service UUIDs, and static properties providing service UUIDs for common GATT services. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids")
   @js.native
-  abstract class GattServiceUuids ()
+  open class GattServiceUuids ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids
   object GattServiceUuids {
@@ -1366,9 +1366,9 @@ object GenericAttributeProfile {
   }
   
   /** Represents the value received when registering to receive notifications or indications from a Bluetooth LE device. */
-  @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs")
   @js.native
-  abstract class GattValueChangedEventArgs ()
+  open class GattValueChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattValueChangedEventArgs {
     

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: scrollable - Note: If the scrollable option is enabled, Element inherits all methods from ScrollableBox.
-@JSImport("blessed", "Widgets.BlessedElement")
+/* note: abstract class */ @JSImport("blessed", "Widgets.BlessedElement")
 @js.native
-abstract class BlessedElement protected () extends NodeWithEvents {
+open class BlessedElement protected () extends NodeWithEvents {
   def this(opts: ElementOptions) = this()
   
   /**

@@ -2,6 +2,7 @@ package typings.bmapgl.BMapGL
 
 import typings.bmapgl.anon.Spots
 import typings.bmapgl.anon.Target
+import typings.bmapgl.anon.Type
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -124,7 +125,7 @@ trait Map extends StObject {
   
   def onhotspotover(event: Spots): Unit = js.native
   
-  def onload(event: typings.bmapgl.anon.Point): Unit = js.native
+  def onload(event: Type): Unit = js.native
   
   def onlongpress(event: typings.bmapgl.anon.Pixel): Unit = js.native
   

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads infrared frames from a infrared frame source. */
-@JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameReader")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionInfraredFrameReader")
 @js.native
-abstract class PerceptionInfraredFrameReader ()
+open class PerceptionInfraredFrameReader ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionInfraredFrameReader

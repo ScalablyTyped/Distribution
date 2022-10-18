@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsBugOutlinedMod.BugOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bugOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/BugOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/BugOutlined", JSImport.Default)
   @js.native
   val default: BugOutlinedIconType = js.native
-  
-  @js.native
-  trait BugOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_BugOutlinedIconType: String = js.native
-  }
   
   type _To = BugOutlinedIconType
   

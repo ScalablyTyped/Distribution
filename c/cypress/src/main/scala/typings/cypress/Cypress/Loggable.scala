@@ -1,13 +1,14 @@
 package typings.cypress.Cypress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that control how a command is logged in the Reporter
   */
-trait Loggable extends js.Object {
+trait Loggable extends StObject {
+  
   /**
     * Displays the command in the Command Log
     *
@@ -15,12 +16,15 @@ trait Loggable extends js.Object {
     */
   var log: Boolean
 }
-
 object Loggable {
-  @scala.inline
-  def apply(log: Boolean): Loggable = {
+  
+  inline def apply(log: Boolean): Loggable = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loggable]
   }
+  
+  extension [Self <: Loggable](x: Self) {
+    
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+  }
 }
-

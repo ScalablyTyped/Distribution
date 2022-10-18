@@ -27,6 +27,6 @@ object CopyActiveItem {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

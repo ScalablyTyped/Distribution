@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a Windows.Media.VideoFrame with the color frame data. */
-@JSGlobal("Windows.Devices.Perception.PerceptionColorFrame")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionColorFrame")
 @js.native
-abstract class PerceptionColorFrame ()
+open class PerceptionColorFrame ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionColorFrame {
   

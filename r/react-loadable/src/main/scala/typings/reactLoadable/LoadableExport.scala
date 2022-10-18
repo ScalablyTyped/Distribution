@@ -1,7 +1,6 @@
 package typings.reactLoadable
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.reactLoadable.anon.Default
@@ -245,9 +244,7 @@ object LoadableExport {
     /**
       * An object containing functions which return promises, which resolve to an object to be passed to `render` on success.
       */
-    var loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-      */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports]
+    var loader: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Exports ]: (): std.Promise<Exports[P]>} */ js.Any
     
     /**
       * If you want to customize what gets rendered from your loader you can also pass `render`.
@@ -269,9 +266,7 @@ object LoadableExport {
   object OptionsWithMap {
     
     inline def apply[Props, Exports /* <: StringDictionary[Any] */](
-      loader: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-      */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports],
+      loader: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Exports ]: (): std.Promise<Exports[P]>} */ js.Any,
       loading: ComponentType[LoadingComponentProps],
       render: (Exports, Props) => ReactNode
     ): OptionsWithMap[Props, Exports] = {
@@ -282,9 +277,7 @@ object LoadableExport {
     extension [Self <: OptionsWithMap[?, ?], Props, Exports /* <: StringDictionary[Any] */](x: Self & (OptionsWithMap[Props, Exports])) {
       
       inline def setLoader(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
-        */ typings.reactLoadable.reactLoadableStrings.OptionsWithMap & TopLevel[Exports]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof Exports ]: (): std.Promise<Exports[P]>} */ js.Any
       ): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       inline def setRender(value: (Exports, Props) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction2(value))

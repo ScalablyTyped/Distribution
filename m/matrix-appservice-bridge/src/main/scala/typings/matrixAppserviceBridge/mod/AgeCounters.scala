@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 7d would be 7 days. If not given, the periods are 1h, 1d and 7d.
   */
 open class AgeCounters ()
-  extends typings.matrixAppserviceBridge.agecountersMod.AgeCounters {
+  extends typings.matrixAppserviceBridge.libComponentsAgecountersMod.AgeCounters {
   def this(counterPeriods: js.Array[String]) = this()
 }

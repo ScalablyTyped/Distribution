@@ -3,7 +3,6 @@ package typings.fastifyBusboy
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.fastifyBusboy.anon.FieldNameSize
-import typings.fastifyBusboy.dicerMod.Dicer.Config
 import typings.fastifyBusboy.fastifyBusboyStrings.error
 import typings.fastifyBusboy.fastifyBusboyStrings.field
 import typings.fastifyBusboy.fastifyBusboyStrings.fieldsLimit
@@ -32,8 +31,6 @@ object mod extends Shortcut {
       listener: /* import warning: importer.ImportType#apply Failed type conversion: @fastify/busboy.@fastify/busboy.BusboyEvents[Event] */ js.Any
     ): this.type = js.native
     
-    def off(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def off[Event /* <: /* keyof @fastify/busboy.@fastify/busboy.BusboyEvents */ file | field | finish | partsLimit | filesLimit | fieldsLimit | error */](
       event: Event,
       listener: /* import warning: importer.ImportType#apply Failed type conversion: @fastify/busboy.@fastify/busboy.BusboyEvents[Event] */ js.Any
@@ -74,18 +71,6 @@ object mod extends Shortcut {
   open class BusboyCls protected ()
     extends typings.fastifyBusboy.mod.Busboy {
     def this(options: BusboyConfig) = this()
-  }
-  
-  @JSImport("@fastify/busboy", "Dicer")
-  @js.native
-  open class Dicer protected ()
-    extends typings.fastifyBusboy.dicerMod.Dicer {
-    /**
-      * Creates and returns a new Dicer instance with the following valid config settings:
-      *
-      * @param config The configuration to use
-      */
-    def this(config: Config) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

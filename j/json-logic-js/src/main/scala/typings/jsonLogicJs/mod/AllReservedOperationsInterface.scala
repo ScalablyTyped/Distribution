@@ -129,7 +129,9 @@ object AllReservedOperationsInterface {
     
     inline def setIf(value: AnyArrayOfOddLengthMin3): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     
-    inline def setIfVarargs(value: (Any | js.Array[Any])*): Self = StObject.set(x, "if", js.Array(value*))
+    inline def setIfVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: []['length'] extends json-logic-js.json-logic-js.MAXIMUM_ALLOWED_BOUNDARY ? [] : [any, any] extends [] ? [] : [] extends [] ? json-logic-js.json-logic-js.Mapped<[any, any], [any, any], [...[], 1]> : json-logic-js.json-logic-js.Mapped<[any, any], [] | [...[], ...[any, any]], [...[], 1]> */ js.Any)*
+    ): Self = StObject.set(x, "if", js.Array(value*))
     
     inline def setInArray(value: js.Tuple2[RulesLogic[AddOps], js.Array[RulesLogic[AddOps]]]): Self = StObject.set(x, "inArray", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait RootComponent[T] extends StObject {
   /**
     * @summary  页面返回事件 返回true表示要拦截返回事件，不做页面关闭；返回false表示不做拦截，可以正常关闭页面
     */
-  def onBack(): Boolean | T
+  def onBack(): /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? T : boolean */ js.Any
   
   def onCreate(): T
   
@@ -32,7 +32,7 @@ object RootComponent {
   
   inline def apply[T](
     onAppear: () => T,
-    onBack: () => Boolean | T,
+    onBack: () => /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? T : boolean */ js.Any,
     onCreate: () => T,
     onDestroy: () => T,
     onDisappear: () => T
@@ -45,7 +45,9 @@ object RootComponent {
     
     inline def setOnAppear(value: () => T): Self = StObject.set(x, "onAppear", js.Any.fromFunction0(value))
     
-    inline def setOnBack(value: () => Boolean | T): Self = StObject.set(x, "onBack", js.Any.fromFunction0(value))
+    inline def setOnBack(
+      value: () => /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? T : boolean */ js.Any
+    ): Self = StObject.set(x, "onBack", js.Any.fromFunction0(value))
     
     inline def setOnCreate(value: () => T): Self = StObject.set(x, "onCreate", js.Any.fromFunction0(value))
     

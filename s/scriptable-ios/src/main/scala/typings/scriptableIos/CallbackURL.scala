@@ -1,7 +1,5 @@
 package typings.scriptableIos
 
-import typings.scriptableIos.anon.Result
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,14 +39,18 @@ trait CallbackURL[T /* <: String */] extends StObject {
     * not invoke the callback.
     * @see https://docs.scriptable.app/callbackurl/#-open
     */
-  def open(): js.Promise[(Record[String, String | Double | Boolean | Null]) | Result]
+  def open(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: shortcuts://x-callback-url/${string} * / string ? {  result :string | number | boolean | null} : std.Record<string, string | number | boolean | null> */ js.Any
+  ]
 }
 object CallbackURL {
   
   inline def apply[T /* <: String */](
     addParameter: (String, String) => Unit,
     getURL: () => String,
-    open: () => js.Promise[(Record[String, String | Double | Boolean | Null]) | Result]
+    open: () => js.Promise[
+      /* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: shortcuts://x-callback-url/${string} * / string ? {  result :string | number | boolean | null} : std.Record<string, string | number | boolean | null> */ js.Any
+    ]
   ): CallbackURL[T] = {
     val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction2(addParameter), getURL = js.Any.fromFunction0(getURL), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[CallbackURL[T]]
@@ -60,6 +62,10 @@ object CallbackURL {
     
     inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    inline def setOpen(value: () => js.Promise[(Record[String, String | Double | Boolean | Null]) | Result]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(
+      value: () => js.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: shortcuts://x-callback-url/${string} * / string ? {  result :string | number | boolean | null} : std.Record<string, string | number | boolean | null> */ js.Any
+        ]
+    ): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

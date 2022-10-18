@@ -1,6 +1,6 @@
 package typings.plottable.mod
 
-import typings.plottable.barPlotMod.BarOrientation
+import typings.plottable.buildSrcPlotsBarPlotMod.BarOrientation
 import typings.plottable.plottableStrings.basis
 import typings.plottable.plottableStrings.basisClosed
 import typings.plottable.plottableStrings.basisOpen
@@ -51,7 +51,7 @@ object Plots {
     * @constructor
     */
   open class Area[X] ()
-    extends typings.plottable.plotsMod.Area[X]
+    extends typings.plottable.buildSrcPlotsMod.Area[X]
   /* static members */
   object Area {
     
@@ -74,7 +74,7 @@ object Plots {
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
   open class Bar[X, Y] ()
-    extends typings.plottable.plotsMod.Bar[X, Y] {
+    extends typings.plottable.buildSrcPlotsMod.Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
   }
   /* static members */
@@ -179,7 +179,7 @@ object Plots {
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
   open class ClusteredBar[X, Y] ()
-    extends typings.plottable.plotsMod.ClusteredBar[X, Y] {
+    extends typings.plottable.buildSrcPlotsMod.ClusteredBar[X, Y] {
     def this(orientation: BarOrientation) = this()
   }
   
@@ -294,7 +294,7 @@ object Plots {
     * @constructor
     */
   open class Line[X] ()
-    extends typings.plottable.plotsMod.Line[X]
+    extends typings.plottable.buildSrcPlotsMod.Line[X]
   
   @JSImport("plottable", "Plots.Pie")
   @js.native
@@ -302,7 +302,7 @@ object Plots {
     * @constructor
     */
   open class Pie ()
-    extends typings.plottable.plotsMod.Pie
+    extends typings.plottable.buildSrcPlotsMod.Pie
   /* static members */
   object Pie {
     
@@ -342,7 +342,7 @@ object Plots {
     * @param {Scale.Scale} yScale
     */
   open class Rectangle[X, Y] ()
-    extends typings.plottable.plotsMod.Rectangle[X, Y]
+    extends typings.plottable.buildSrcPlotsMod.Rectangle[X, Y]
   /* static members */
   object Rectangle {
     
@@ -369,7 +369,7 @@ object Plots {
     * @constructor
     */
   open class Scatter[X, Y] ()
-    extends typings.plottable.plotsMod.Scatter[X, Y]
+    extends typings.plottable.buildSrcPlotsMod.Scatter[X, Y]
   /* static members */
   object Scatter {
     
@@ -406,7 +406,7 @@ object Plots {
     * @constructor
     */
   open class Segment[X, Y] ()
-    extends typings.plottable.plotsMod.Segment[X, Y]
+    extends typings.plottable.buildSrcPlotsMod.Segment[X, Y]
   /* static members */
   object Segment {
     
@@ -431,7 +431,7 @@ object Plots {
     * @constructor
     */
   open class StackedArea[X] ()
-    extends typings.plottable.plotsMod.StackedArea[X]
+    extends typings.plottable.buildSrcPlotsMod.StackedArea[X]
   /* static members */
   object StackedArea {
     
@@ -467,7 +467,7 @@ object Plots {
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
   open class StackedBar[X, Y] ()
-    extends typings.plottable.plotsMod.StackedBar[X, Y] {
+    extends typings.plottable.buildSrcPlotsMod.StackedBar[X, Y] {
     def this(orientation: BarOrientation) = this()
   }
   /* static members */
@@ -486,7 +486,7 @@ object Plots {
   @JSImport("plottable", "Plots.Waterfall")
   @js.native
   open class Waterfall[X, Y] ()
-    extends typings.plottable.plotsMod.Waterfall[X, Y]
+    extends typings.plottable.buildSrcPlotsMod.Waterfall[X, Y]
   /* static members */
   object Waterfall {
     

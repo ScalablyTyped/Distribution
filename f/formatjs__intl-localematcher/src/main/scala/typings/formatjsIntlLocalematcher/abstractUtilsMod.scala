@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractUtilsMod {
   
-  @JSImport("@formatjs/intl-localematcher/lib/abstract/utils", JSImport.Namespace)
+  @JSImport("@formatjs/intl-localematcher/abstract/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@formatjs/intl-localematcher/lib/abstract/utils", "UNICODE_EXTENSION_SEQUENCE_REGEX")
+  @JSImport("@formatjs/intl-localematcher/abstract/utils", "UNICODE_EXTENSION_SEQUENCE_REGEX")
   @js.native
   val UNICODE_EXTENSION_SEQUENCE_REGEX: js.RegExp = js.native
   

@@ -1,6 +1,5 @@
 package typings.aphrodite
 
-import org.scalablytyped.runtime.TopLevel
 import typings.aphrodite.anon.Content
 import typings.aphrodite.aphroditeBooleans.`false`
 import typings.std.Map
@@ -134,12 +133,18 @@ object mod {
     }
   }
   
-  type StyleDeclaration[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: aphrodite.aphrodite/typings/css-properties.CSSProperties | aphrodite.aphrodite.StyleDeclarationMap}
-    */ typings.aphrodite.aphroditeStrings.StyleDeclaration & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: aphrodite.aphrodite/typings/css-properties.CSSProperties | aphrodite.aphrodite.StyleDeclarationMap}
+    }}}
+    */
+  @js.native
+  trait StyleDeclaration[T] extends StObject
   
   type StyleDeclarationMap = Map[
-    /* keyof aphrodite.aphrodite/typings/css-properties.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 340 */ Any, 
+    /* keyof aphrodite.aphrodite/typings/css-properties.CSSProperties */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 340, starting with typings.aphrodite.aphroditeStrings.alignContent, typings.aphrodite.aphroditeStrings.alignItems, typings.aphrodite.aphroditeStrings.alignSelf */ Any, 
     String | Double
   ]
   
@@ -170,9 +175,7 @@ object mod {
     /**
       * Create style sheet
       */
-    def create[T](styles: StyleDeclaration[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[Any]
+    def create[T](styles: StyleDeclaration[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue} */ js.Any
     
     def extend(extensions: js.Array[Extension]): Exports
     
@@ -184,9 +187,7 @@ object mod {
   object StyleSheetStatic {
     
     inline def apply(
-      create: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-      */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[Any],
+      create: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue} */ js.Any,
       extend: js.Array[Extension] => Exports,
       rehydrate: js.Array[String] => Unit
     ): StyleSheetStatic = {
@@ -197,9 +198,7 @@ object mod {
     extension [Self <: StyleSheetStatic](x: Self) {
       
       inline def setCreate(
-        value: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue}
-        */ typings.aphrodite.aphroditeStrings.StyleSheetStatic & TopLevel[Any]
+        value: StyleDeclaration[Any] => /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: aphrodite.aphrodite.StyleDeclarationValue} */ js.Any
       ): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
       inline def setExtend(value: js.Array[Extension] => Exports): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Router extends StObject {
   
-  var router: typings.next.routerMod.Router
+  var router: typings.next.distSharedLibRouterRouterMod.Router
 }
 object Router {
   
-  inline def apply(router: typings.next.routerMod.Router): Router = {
+  inline def apply(router: typings.next.distSharedLibRouterRouterMod.Router): Router = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[Router]
   }
   
   extension [Self <: Router](x: Self) {
     
-    inline def setRouter(value: typings.next.routerMod.Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: typings.next.distSharedLibRouterRouterMod.Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,9 @@ import typings.reactNative.mod.TVParallaxProperties
 import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconObject
-import typings.reactNativeElements.iconMod.IconProps
+import typings.reactNativeElements.distConfigThemeProviderMod.RecursivePartial
+import typings.reactNativeElements.distIconsIconMod.IconObject
+import typings.reactNativeElements.distIconsIconMod.IconProps
 import typings.reactNativeElements.reactNativeElementsStrings.ImageComponent
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.assertive
@@ -30,7 +31,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.no
 import typings.reactNativeElements.reactNativeElementsStrings.none
 import typings.reactNativeElements.reactNativeElementsStrings.polite
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.themeProviderMod.RecursivePartial
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

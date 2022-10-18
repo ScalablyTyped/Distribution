@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__types
 
-Typings are for version 7.5.0
+Typings are for version 8.0.0
 
 ## Library description:
 Shared TypeScript definitions for Octokit projects

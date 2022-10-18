@@ -8,7 +8,7 @@ object CodeLensRefreshRequest {
   
   @JSImport("vscode-languageserver", "CodeLensRefreshRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "CodeLensRefreshRequest.method")
   @js.native
@@ -16,5 +16,5 @@ object CodeLensRefreshRequest {
   
   @JSImport("vscode-languageserver", "CodeLensRefreshRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
 }

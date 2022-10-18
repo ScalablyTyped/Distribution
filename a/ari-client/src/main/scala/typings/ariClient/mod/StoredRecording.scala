@@ -1,6 +1,6 @@
 package typings.ariClient.mod
 
-import typings.ariClient.anon.DestinationRecordingNameString
+import typings.ariClient.anon.DestinationRecordingName
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,14 +25,14 @@ trait StoredRecording
     *
     * @param params.destinationRecordingName - The destination name of the recording.
     */
-  def copyStored(params: DestinationRecordingNameString): js.Promise[StoredRecording] = js.native
+  def copyStored(params: DestinationRecordingName): js.Promise[StoredRecording] = js.native
   /**
     * Copy a stored recording.
     *
     * @param params.destinationRecordingName - The destination name of the recording.
     */
   def copyStored(
-    params: DestinationRecordingNameString,
+    params: DestinationRecordingName,
     callback: js.Function2[/* err */ js.Error, /* storedrecording */ this.type, Unit]
   ): Unit = js.native
   

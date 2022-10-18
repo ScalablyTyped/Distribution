@@ -1,6 +1,6 @@
 package typings.stormReactDiagrams.mod
 
-import typings.stormReactDiagrams.diagramWidgetMod.DiagramProps
+import typings.stormReactDiagrams.distSrcWidgetsDiagramWidgetMod.DiagramProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "DiagramWidget")
 @js.native
 open class DiagramWidget protected ()
-  extends typings.stormReactDiagrams.diagramWidgetMod.DiagramWidget {
+  extends typings.stormReactDiagrams.distSrcWidgetsDiagramWidgetMod.DiagramWidget {
   def this(props: DiagramProps) = this()
 }
 /* static members */

@@ -9,10 +9,10 @@ import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.Pick
-import typings.storybookAddonJest.provideJestResultMod.AssertionResult
-import typings.storybookAddonJest.provideJestResultMod.HocProps
-import typings.storybookAddonJest.provideJestResultMod.HocState
-import typings.storybookAddonJest.provideJestResultMod.Test
+import typings.storybookAddonJest.distTs3Dot9HocProvideJestResultMod.AssertionResult
+import typings.storybookAddonJest.distTs3Dot9HocProvideJestResultMod.HocProps
+import typings.storybookAddonJest.distTs3Dot9HocProvideJestResultMod.HocState
+import typings.storybookAddonJest.distTs3Dot9HocProvideJestResultMod.Test
 import typings.storybookAddonJest.storybookAddonJestBooleans.`true`
 import typings.storybookAddonJest.storybookAddonJestStrings.kind
 import typings.storybookAddonJest.storybookAddonJestStrings.storyName
@@ -127,6 +127,8 @@ object anon {
     
     def render(): Element = js.native
     
+    def setState[K /* <: storyName | kind | tests */](state: HocState | (Pick[HocState, K])): Unit = js.native
+    def setState[K /* <: storyName | kind | tests */](state: HocState | (Pick[HocState, K]), callback: js.Function0[Unit]): Unit = js.native
     def setState[K /* <: storyName | kind | tests */](
       state: js.Function2[
           /* prevState */ ReadonlyHocState, 
@@ -142,10 +144,6 @@ object anon {
         ],
       callback: js.Function0[Unit]
     ): Unit = js.native
-    def setState[K /* <: storyName | kind | tests */](state: Pick[HocState, K]): Unit = js.native
-    def setState[K /* <: storyName | kind | tests */](state: Pick[HocState, K], callback: js.Function0[Unit]): Unit = js.native
-    def setState[K /* <: storyName | kind | tests */](state: HocState): Unit = js.native
-    def setState[K /* <: storyName | kind | tests */](state: HocState, callback: js.Function0[Unit]): Unit = js.native
     
     var shouldComponentUpdate: js.UndefOr[
         js.Function3[

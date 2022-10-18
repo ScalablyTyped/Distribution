@@ -12,11 +12,11 @@ trait DefaultDescription extends StObject {
   
   var name: String
   
-  def parse(workers: String): Double
+  def parse(`val`: String): Boolean
 }
 object DefaultDescription {
   
-  inline def apply(default: Unit, description: String, name: String, parse: String => Double): DefaultDescription = {
+  inline def apply(default: Unit, description: String, name: String, parse: String => Boolean): DefaultDescription = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[DefaultDescription]
   }
@@ -29,6 +29,6 @@ object DefaultDescription {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setParse(value: String => Double): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

@@ -106,18 +106,18 @@ object anon {
   /* Inlined std.Readonly<@reach/router.@reach/router.LocationProps> */
   trait ReadonlyLocationProps extends StObject {
     
-    val children: LocationProviderRenderFn
+    def children(context: LocationContext): ReactNode
   }
   object ReadonlyLocationProps {
     
-    inline def apply(children: /* context */ LocationContext => ReactNode): ReadonlyLocationProps = {
+    inline def apply(children: LocationContext => ReactNode): ReadonlyLocationProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[ReadonlyLocationProps]
     }
     
     extension [Self <: ReadonlyLocationProps](x: Self) {
       
-      inline def setChildren(value: /* context */ LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   

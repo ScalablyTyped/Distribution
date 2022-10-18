@@ -1,42 +1,30 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.asc
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.desc
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.forks
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.full_name
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.internal
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pushed
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.sources
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Type extends StObject {
   
-  /** The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
-  var direction: js.UndefOr[asc | desc] = js.undefined
+  var _links: js.UndefOr[Self] = js.undefined
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-  ] = js.undefined
+  var download_url: js.UndefOr[String] = js.undefined
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-  ] = js.undefined
+  var git_url: js.UndefOr[String] = js.undefined
   
-  /** The property to sort the results by. */
-  var sort: js.UndefOr[created_ | updated | pushed | full_name] = js.undefined
+  var html_url: js.UndefOr[String] = js.undefined
   
-  /** Specifies the types of repositories you want returned. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `type` can also be `internal`. However, the `internal` value is not yet supported when a GitHub App calls this API with an installation access token. */
-  var `type`: js.UndefOr[all | public | `private` | forks | sources | member_ | internal] = js.undefined
+  var name: js.UndefOr[String] = js.undefined
+  
+  var path: js.UndefOr[String] = js.undefined
+  
+  var sha: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[Double] = js.undefined
+  
+  var `type`: js.UndefOr[String] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
 }
 object Type {
   
@@ -47,28 +35,44 @@ object Type {
   
   extension [Self <: Type](x: Self) {
     
-    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDownload_url(value: String): Self = StObject.set(x, "download_url", value.asInstanceOf[js.Any])
     
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDownload_urlUndefined: Self = StObject.set(x, "download_url", js.undefined)
     
-    inline def setPage(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setGit_url(value: String): Self = StObject.set(x, "git_url", value.asInstanceOf[js.Any])
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setGit_urlUndefined: Self = StObject.set(x, "git_url", js.undefined)
     
-    inline def setPer_page(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setHtml_urlUndefined: Self = StObject.set(x, "html_url", js.undefined)
     
-    inline def setSort(value: created_ | updated | pushed | full_name): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setType(value: all | public | `private` | forks | sources | member_ | internal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def set_links(value: typings.octokitOpenapiTypes.anon.Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    
+    inline def set_linksUndefined: Self = StObject.set(x, "_links", js.undefined)
   }
 }

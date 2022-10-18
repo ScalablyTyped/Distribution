@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "MemoryProvisioningStore")
 @js.native
 open class MemoryProvisioningStore ()
-  extends typings.matrixAppserviceBridge.provisioningMod.MemoryProvisioningStore
+  extends typings.matrixAppserviceBridge.libProvisioningMod.MemoryProvisioningStore

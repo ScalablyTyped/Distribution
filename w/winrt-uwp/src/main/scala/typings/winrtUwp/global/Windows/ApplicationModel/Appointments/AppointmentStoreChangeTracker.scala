@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for managing change tracking for appointments. */
-@JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker")
 @js.native
-abstract class AppointmentStoreChangeTracker ()
+open class AppointmentStoreChangeTracker ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStoreChangeTracker {
   

@@ -8,11 +8,9 @@ import typings.std.ReturnType
 import typings.storybookAddonInfo.anon.DefaultValue
 import typings.storybookAddonInfo.anon.ParametersinfoOptions
 import typings.storybookAddonInfo.storybookAddonInfoBooleans.`false`
-import typings.storybookAddons.typesMod.Args
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.StoryApi
-import typings.storybookAddons.typesMod.StoryContext
-import typings.storybookAddons.typesMod.StoryFn
+import typings.storybookAddons.distTs3Dot9TypesMod.DecoratorFunction
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryApi
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +24,36 @@ object mod {
   inline def setDefaults(newDefaults: Options): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(newDefaults.asInstanceOf[js.Any]).asInstanceOf[Options]
   
   inline def withInfo(): js.Function1[
-    /* storyFn */ StoryFn[js.Any], 
+    /* storyFn */ StoryFn[Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")().asInstanceOf[js.Function1[
-    /* storyFn */ StoryFn[js.Any], 
+    /* storyFn */ StoryFn[Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ]]
   inline def withInfo(textOrOptions: String): js.Function1[
-    /* storyFn */ StoryFn[js.Any], 
+    /* storyFn */ StoryFn[Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(textOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* storyFn */ StoryFn[js.Any], 
+    /* storyFn */ StoryFn[Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ]]
   inline def withInfo(textOrOptions: Options): js.Function1[
-    /* storyFn */ StoryFn[js.Any], 
+    /* storyFn */ StoryFn[Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(textOrOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* storyFn */ StoryFn[js.Any], 
+    /* storyFn */ StoryFn[Any], 
     js.Function1[/* context */ js.UndefOr[js.Object], ReactElement]
   ]]
-  inline def withInfo[A](story: StoryFn[A], context: StoryContext): ReturnType[DecoratorFunction[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(story.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[DecoratorFunction[A]]]
+  inline def withInfo[A](
+    story: StoryFn[A],
+    context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContext<{  component :any,   storyResult :A}> */ Any
+  ): ReturnType[DecoratorFunction[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withInfo")(story.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReturnType[DecoratorFunction[A]]]
   
   trait Options extends StObject {
     
     var TableComponent: js.UndefOr[ComponentType[TableComponentOptionProps]] = js.undefined
     
-    var components: js.UndefOr[StringDictionary[ComponentType[js.Any]]] = js.undefined
+    var components: js.UndefOr[StringDictionary[ComponentType[Any]]] = js.undefined
     
     var excludedPropTypes: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -73,9 +74,9 @@ object mod {
     
     var maxPropsIntoLine: js.UndefOr[Double] = js.undefined
     
-    var propTables: js.UndefOr[js.Array[ComponentType[js.Any]] | `false`] = js.undefined
+    var propTables: js.UndefOr[js.Array[ComponentType[Any]] | `false`] = js.undefined
     
-    var propTablesExclude: js.UndefOr[js.Array[ComponentType[js.Any]]] = js.undefined
+    var propTablesExclude: js.UndefOr[js.Array[ComponentType[Any]]] = js.undefined
     
     var source: js.UndefOr[Boolean] = js.undefined
     
@@ -92,7 +93,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setComponents(value: StringDictionary[ComponentType[js.Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: StringDictionary[ComponentType[Any]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
@@ -100,7 +101,7 @@ object mod {
       
       inline def setExcludedPropTypesUndefined: Self = StObject.set(x, "excludedPropTypes", js.undefined)
       
-      inline def setExcludedPropTypesVarargs(value: String*): Self = StObject.set(x, "excludedPropTypes", js.Array(value :_*))
+      inline def setExcludedPropTypesVarargs(value: String*): Self = StObject.set(x, "excludedPropTypes", js.Array(value*))
       
       inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -130,17 +131,17 @@ object mod {
       
       inline def setMaxPropsIntoLineUndefined: Self = StObject.set(x, "maxPropsIntoLine", js.undefined)
       
-      inline def setPropTables(value: js.Array[ComponentType[js.Any]] | `false`): Self = StObject.set(x, "propTables", value.asInstanceOf[js.Any])
+      inline def setPropTables(value: js.Array[ComponentType[Any]] | `false`): Self = StObject.set(x, "propTables", value.asInstanceOf[js.Any])
       
-      inline def setPropTablesExclude(value: js.Array[ComponentType[js.Any]]): Self = StObject.set(x, "propTablesExclude", value.asInstanceOf[js.Any])
+      inline def setPropTablesExclude(value: js.Array[ComponentType[Any]]): Self = StObject.set(x, "propTablesExclude", value.asInstanceOf[js.Any])
       
       inline def setPropTablesExcludeUndefined: Self = StObject.set(x, "propTablesExclude", js.undefined)
       
-      inline def setPropTablesExcludeVarargs(value: ComponentType[js.Any]*): Self = StObject.set(x, "propTablesExclude", js.Array(value :_*))
+      inline def setPropTablesExcludeVarargs(value: ComponentType[Any]*): Self = StObject.set(x, "propTablesExclude", js.Array(value*))
       
       inline def setPropTablesUndefined: Self = StObject.set(x, "propTables", js.undefined)
       
-      inline def setPropTablesVarargs(value: ComponentType[js.Any]*): Self = StObject.set(x, "propTables", js.Array(value :_*))
+      inline def setPropTablesVarargs(value: ComponentType[Any]*): Self = StObject.set(x, "propTables", js.Array(value*))
       
       inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,7 @@ object mod {
       
       inline def setPropDefinitions(value: js.Array[DefaultValue]): Self = StObject.set(x, "propDefinitions", value.asInstanceOf[js.Any])
       
-      inline def setPropDefinitionsVarargs(value: DefaultValue*): Self = StObject.set(x, "propDefinitions", js.Array(value :_*))
+      inline def setPropDefinitionsVarargs(value: DefaultValue*): Self = StObject.set(x, "propDefinitions", js.Array(value*))
     }
   }
   
@@ -185,7 +186,7 @@ object mod {
     
     var options: js.UndefOr[js.Object] = js.undefined
     
-    var storyFn: js.UndefOr[StoryFn[js.Any]] = js.undefined
+    var storyFn: js.UndefOr[StoryFn[Any]] = js.undefined
   }
   object WrapStoryProps {
     
@@ -204,11 +205,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
-      
-      inline def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
-      
-      inline def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+      inline def setStoryFn(value: StoryFn[Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
       
       inline def setStoryFnUndefined: Self = StObject.set(x, "storyFn", js.undefined)
     }

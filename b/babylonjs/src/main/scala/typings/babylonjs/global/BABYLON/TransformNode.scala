@@ -96,6 +96,14 @@ object TransformNode {
   inline def BILLBOARDMODE_Z_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BILLBOARDMODE_Z")(x.asInstanceOf[js.Any])
   
   /**
+    * Child transform with Billboard flags should or should not apply parent rotation (default if off)
+    */
+  @JSGlobal("BABYLON.TransformNode.BillboardUseParentOrientation")
+  @js.native
+  def BillboardUseParentOrientation: Boolean = js.native
+  inline def BillboardUseParentOrientation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BillboardUseParentOrientation")(x.asInstanceOf[js.Any])
+  
+  /**
     * Returns a new TransformNode object parsed from the source provided.
     * @param parsedTransformNode is the source.
     * @param scene the scene the object belongs to

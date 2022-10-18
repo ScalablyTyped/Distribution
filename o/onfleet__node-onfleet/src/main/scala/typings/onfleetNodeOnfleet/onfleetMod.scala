@@ -182,10 +182,10 @@ object onfleetMod {
     ) = this()
     
     /* CompleteClass */
-    var administrators: typings.onfleetNodeOnfleet.administratorsMod.^ = js.native
+    var administrators: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^ = js.native
     
     /* CompleteClass */
-    var admins: typings.onfleetNodeOnfleet.administratorsMod.^ = js.native
+    var admins: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^ = js.native
     
     /* CompleteClass */
     var api: BaseUrl = js.native
@@ -194,34 +194,34 @@ object onfleetMod {
     var apiKey: String = js.native
     
     /* CompleteClass */
-    var containers: typings.onfleetNodeOnfleet.containersMod.^ = js.native
+    var containers: typings.onfleetNodeOnfleet.resourcesContainersMod.^ = js.native
     
     /* CompleteClass */
-    var destinations: typings.onfleetNodeOnfleet.destinationsMod.^ = js.native
+    var destinations: typings.onfleetNodeOnfleet.resourcesDestinationsMod.^ = js.native
     
     /* CompleteClass */
-    var hubs: typings.onfleetNodeOnfleet.hubsMod.^ = js.native
+    var hubs: typings.onfleetNodeOnfleet.resourcesHubsMod.^ = js.native
     
     /* CompleteClass */
-    var organization: typings.onfleetNodeOnfleet.organizationMod.^ = js.native
+    var organization: typings.onfleetNodeOnfleet.resourcesOrganizationMod.^ = js.native
     
     /* CompleteClass */
-    var recipients: typings.onfleetNodeOnfleet.recipientsMod.^ = js.native
+    var recipients: typings.onfleetNodeOnfleet.resourcesRecipientsMod.^ = js.native
     
     /* CompleteClass */
-    var tasks: typings.onfleetNodeOnfleet.tasksMod.^ = js.native
+    var tasks: typings.onfleetNodeOnfleet.resourcesTasksMod.^ = js.native
     
     /* CompleteClass */
-    var teams: typings.onfleetNodeOnfleet.teamsMod.^ = js.native
+    var teams: typings.onfleetNodeOnfleet.resourcesTeamsMod.^ = js.native
     
     /* CompleteClass */
     override def verifyKey(): js.Promise[Boolean] = js.native
     
     /* CompleteClass */
-    var webhooks: typings.onfleetNodeOnfleet.webhooksMod.^ = js.native
+    var webhooks: typings.onfleetNodeOnfleet.resourcesWebhooksMod.^ = js.native
     
     /* CompleteClass */
-    var workers: typings.onfleetNodeOnfleet.workersMod.^ = js.native
+    var workers: typings.onfleetNodeOnfleet.resourcesWorkersMod.^ = js.native
   }
   
   trait BottleneckOptions extends StObject {
@@ -267,51 +267,51 @@ object onfleetMod {
   
   trait Onfleet extends StObject {
     
-    var administrators: typings.onfleetNodeOnfleet.administratorsMod.^
+    var administrators: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^
     
-    var admins: typings.onfleetNodeOnfleet.administratorsMod.^
+    var admins: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^
     
     var api: BaseUrl
     
     var apiKey: String
     
-    var containers: typings.onfleetNodeOnfleet.containersMod.^
+    var containers: typings.onfleetNodeOnfleet.resourcesContainersMod.^
     
-    var destinations: typings.onfleetNodeOnfleet.destinationsMod.^
+    var destinations: typings.onfleetNodeOnfleet.resourcesDestinationsMod.^
     
-    var hubs: typings.onfleetNodeOnfleet.hubsMod.^
+    var hubs: typings.onfleetNodeOnfleet.resourcesHubsMod.^
     
-    var organization: typings.onfleetNodeOnfleet.organizationMod.^
+    var organization: typings.onfleetNodeOnfleet.resourcesOrganizationMod.^
     
-    var recipients: typings.onfleetNodeOnfleet.recipientsMod.^
+    var recipients: typings.onfleetNodeOnfleet.resourcesRecipientsMod.^
     
-    var tasks: typings.onfleetNodeOnfleet.tasksMod.^
+    var tasks: typings.onfleetNodeOnfleet.resourcesTasksMod.^
     
-    var teams: typings.onfleetNodeOnfleet.teamsMod.^
+    var teams: typings.onfleetNodeOnfleet.resourcesTeamsMod.^
     
     def verifyKey(): js.Promise[Boolean]
     
-    var webhooks: typings.onfleetNodeOnfleet.webhooksMod.^
+    var webhooks: typings.onfleetNodeOnfleet.resourcesWebhooksMod.^
     
-    var workers: typings.onfleetNodeOnfleet.workersMod.^
+    var workers: typings.onfleetNodeOnfleet.resourcesWorkersMod.^
   }
   object Onfleet {
     
     inline def apply(
-      administrators: typings.onfleetNodeOnfleet.administratorsMod.^,
-      admins: typings.onfleetNodeOnfleet.administratorsMod.^,
+      administrators: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^,
+      admins: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^,
       api: BaseUrl,
       apiKey: String,
-      containers: typings.onfleetNodeOnfleet.containersMod.^,
-      destinations: typings.onfleetNodeOnfleet.destinationsMod.^,
-      hubs: typings.onfleetNodeOnfleet.hubsMod.^,
-      organization: typings.onfleetNodeOnfleet.organizationMod.^,
-      recipients: typings.onfleetNodeOnfleet.recipientsMod.^,
-      tasks: typings.onfleetNodeOnfleet.tasksMod.^,
-      teams: typings.onfleetNodeOnfleet.teamsMod.^,
+      containers: typings.onfleetNodeOnfleet.resourcesContainersMod.^,
+      destinations: typings.onfleetNodeOnfleet.resourcesDestinationsMod.^,
+      hubs: typings.onfleetNodeOnfleet.resourcesHubsMod.^,
+      organization: typings.onfleetNodeOnfleet.resourcesOrganizationMod.^,
+      recipients: typings.onfleetNodeOnfleet.resourcesRecipientsMod.^,
+      tasks: typings.onfleetNodeOnfleet.resourcesTasksMod.^,
+      teams: typings.onfleetNodeOnfleet.resourcesTeamsMod.^,
       verifyKey: () => js.Promise[Boolean],
-      webhooks: typings.onfleetNodeOnfleet.webhooksMod.^,
-      workers: typings.onfleetNodeOnfleet.workersMod.^
+      webhooks: typings.onfleetNodeOnfleet.resourcesWebhooksMod.^,
+      workers: typings.onfleetNodeOnfleet.resourcesWorkersMod.^
     ): Onfleet = {
       val __obj = js.Dynamic.literal(administrators = administrators.asInstanceOf[js.Any], admins = admins.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], apiKey = apiKey.asInstanceOf[js.Any], containers = containers.asInstanceOf[js.Any], destinations = destinations.asInstanceOf[js.Any], hubs = hubs.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], recipients = recipients.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], verifyKey = js.Any.fromFunction0(verifyKey), webhooks = webhooks.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Onfleet]
@@ -319,33 +319,33 @@ object onfleetMod {
     
     extension [Self <: Onfleet](x: Self) {
       
-      inline def setAdministrators(value: typings.onfleetNodeOnfleet.administratorsMod.^): Self = StObject.set(x, "administrators", value.asInstanceOf[js.Any])
+      inline def setAdministrators(value: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^): Self = StObject.set(x, "administrators", value.asInstanceOf[js.Any])
       
-      inline def setAdmins(value: typings.onfleetNodeOnfleet.administratorsMod.^): Self = StObject.set(x, "admins", value.asInstanceOf[js.Any])
+      inline def setAdmins(value: typings.onfleetNodeOnfleet.resourcesAdministratorsMod.^): Self = StObject.set(x, "admins", value.asInstanceOf[js.Any])
       
       inline def setApi(value: BaseUrl): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      inline def setContainers(value: typings.onfleetNodeOnfleet.containersMod.^): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+      inline def setContainers(value: typings.onfleetNodeOnfleet.resourcesContainersMod.^): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      inline def setDestinations(value: typings.onfleetNodeOnfleet.destinationsMod.^): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+      inline def setDestinations(value: typings.onfleetNodeOnfleet.resourcesDestinationsMod.^): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      inline def setHubs(value: typings.onfleetNodeOnfleet.hubsMod.^): Self = StObject.set(x, "hubs", value.asInstanceOf[js.Any])
+      inline def setHubs(value: typings.onfleetNodeOnfleet.resourcesHubsMod.^): Self = StObject.set(x, "hubs", value.asInstanceOf[js.Any])
       
-      inline def setOrganization(value: typings.onfleetNodeOnfleet.organizationMod.^): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: typings.onfleetNodeOnfleet.resourcesOrganizationMod.^): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      inline def setRecipients(value: typings.onfleetNodeOnfleet.recipientsMod.^): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+      inline def setRecipients(value: typings.onfleetNodeOnfleet.resourcesRecipientsMod.^): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
       
-      inline def setTasks(value: typings.onfleetNodeOnfleet.tasksMod.^): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+      inline def setTasks(value: typings.onfleetNodeOnfleet.resourcesTasksMod.^): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      inline def setTeams(value: typings.onfleetNodeOnfleet.teamsMod.^): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: typings.onfleetNodeOnfleet.resourcesTeamsMod.^): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
       inline def setVerifyKey(value: () => js.Promise[Boolean]): Self = StObject.set(x, "verifyKey", js.Any.fromFunction0(value))
       
-      inline def setWebhooks(value: typings.onfleetNodeOnfleet.webhooksMod.^): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: typings.onfleetNodeOnfleet.resourcesWebhooksMod.^): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      inline def setWorkers(value: typings.onfleetNodeOnfleet.workersMod.^): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: typings.onfleetNodeOnfleet.resourcesWorkersMod.^): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     }
   }
 }

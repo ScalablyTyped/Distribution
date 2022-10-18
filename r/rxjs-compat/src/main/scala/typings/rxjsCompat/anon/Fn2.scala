@@ -1,5 +1,6 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn2 extends StObject {
   
-  def apply[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Any = js.native
-  def apply[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: Any): Any = js.native
+  def apply[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean]): Observable_[T] = js.native
+  def apply[T](predicate: js.Function2[/* value */ T, /* index */ Double, Boolean], thisArg: Any): Observable_[T] = js.native
 }

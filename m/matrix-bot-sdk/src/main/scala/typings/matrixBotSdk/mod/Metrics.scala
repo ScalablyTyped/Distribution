@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Metrics} parent Optional parent for upstream metrics.
   */
 open class Metrics ()
-  extends typings.matrixBotSdk.metricsMod.Metrics {
-  def this(parent: typings.matrixBotSdk.metricsMod.Metrics) = this()
+  extends typings.matrixBotSdk.libMetricsMetricsMod.Metrics {
+  def this(parent: typings.matrixBotSdk.libMetricsMetricsMod.Metrics) = this()
 }

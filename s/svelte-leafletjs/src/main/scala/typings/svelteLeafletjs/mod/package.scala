@@ -1,6 +1,5 @@
 package typings.svelteLeafletjs.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.svelteLeafletjs.svelteLeafletjsStrings.onadd
 import typings.svelteLeafletjs.svelteLeafletjsStrings.onautopanstart
 import typings.svelteLeafletjs.svelteLeafletjsStrings.onbaselayerchange
@@ -48,29 +47,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/** This is technically not required since we know every property is a function, but TS doesn't know that */
-type AssertIsFunction[T] = T
-
-/**
-  * Helper to transform the event maps defined in `@types/react-leaflet`.
-  * This makes `@types/react-leaflet` the source of truth for the events in `@types/svelte-leafletjs`.
-  *
-  * ```ts
-  * // original
-  * type ReactEventMap = {
-  *   onsomething?(e: SomeEvent): void
-  * }
-  *
-  * // converted
-  * type SvelteEventMap = {
-  *   something: SomeEvent;
-  * }
-  * ```
-  */
-type CreateSvelteEventMap[ReactEventMap] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ EventName in keyof ReactEventMap as svelte-leafletjs.svelte-leafletjs.RemoveOn<EventName> ]: -? std.NonNullable<std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<ReactEventMap[EventName]>>>[0]>}
-  */ typings.svelteLeafletjs.svelteLeafletjsStrings.CreateSvelteEventMap & TopLevel[ReactEventMap]
-
 type MapEventKeys = js.Array[
 onlocationfound | ondragstart | onzoomlevelschange | onzoom | ondrag | ondblclick | onbaselayerchange | oncontextmenu | onoverlayadd | onmouseout | onviewreset | onoverlayremove | onzoomstart | onlayerremove | onclick | onresize | onmovestart | onfocus | onmouseup | onmoveend | onmove | onmouseover | onpreclick | onzoomend | onautopanstart | onblur | onload | ondragend | onlocationerror | onpopupopen | onmousemove | onpopupclose | onunload | onlayeradd | onmousedown]
 
@@ -79,8 +55,5 @@ ondragstart | ondrag | ondblclick | oncontextmenu | onremove | onmouseout | onad
 
 type PathEventKeys = js.Array[
 ondblclick | oncontextmenu | onremove | onmouseout | onadd | onclick | onmouseover | onpopupopen | onpopupclose | onmousedown]
-
-/** Given a string `onX`, this returns `X` */
-type RemoveOn[T] = Any
 
 type TileLayerEventKeys = js.Array[ontileloadstart | ontileerror | ontileload | onloading | onload | ontileunload]

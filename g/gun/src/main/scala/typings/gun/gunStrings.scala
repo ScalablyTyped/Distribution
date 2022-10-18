@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object gunStrings {
   
   @js.native
-  sealed trait AccessObject extends StObject
-  inline def AccessObject: AccessObject = "AccessObject".asInstanceOf[AccessObject]
-  
-  @js.native
   sealed trait PBKDF2 extends StObject
   inline def PBKDF2: PBKDF2 = "PBKDF2".asInstanceOf[PBKDF2]
   

@@ -1,7 +1,7 @@
 package typings.consola.mod
 
 import typings.consola.anon.typeinlogTypeConsolaLogOb
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +18,9 @@ trait ConsolaOptions extends StObject {
   
   var reporters: js.UndefOr[js.Array[ConsolaReporter]] = js.undefined
   
-  var stderr: js.UndefOr[WritableStream[Any]] = js.undefined
+  var stderr: js.UndefOr[WritableStream] = js.undefined
   
-  var stdout: js.UndefOr[WritableStream[Any]] = js.undefined
+  var stdout: js.UndefOr[WritableStream] = js.undefined
   
   var throttle: js.UndefOr[Double] = js.undefined
   
@@ -57,11 +57,11 @@ object ConsolaOptions {
     
     inline def setReportersVarargs(value: ConsolaReporter*): Self = StObject.set(x, "reporters", js.Array(value*))
     
-    inline def setStderr(value: WritableStream[Any]): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
-    inline def setStdout(value: WritableStream[Any]): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
     inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     

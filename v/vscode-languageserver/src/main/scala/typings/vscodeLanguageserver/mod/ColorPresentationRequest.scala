@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashcolorPresentation
-import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.ColorPresentationParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.ColorPresentationParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object ColorPresentationRequest {
   
   @JSImport("vscode-languageserver", "ColorPresentationRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "ColorPresentationRequest.method")
   @js.native
@@ -18,11 +18,11 @@ object ColorPresentationRequest {
   
   @JSImport("vscode-languageserver", "ColorPresentationRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     ColorPresentationParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.ColorPresentation], 
     js.Array[typings.vscodeLanguageserverTypes.mod.ColorPresentation], 
     Unit, 
-    typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressOptions & typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+    typings.vscodeLanguageserverProtocol.libCommonProtocolMod.WorkDoneProgressOptions & typings.vscodeLanguageserverProtocol.libCommonProtocolMod.TextDocumentRegistrationOptions
   ] = js.native
 }

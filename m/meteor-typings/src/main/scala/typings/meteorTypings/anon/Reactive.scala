@@ -1,7 +1,7 @@
 package typings.meteorTypings.anon
 
-import typings.meteorTypings.mongoMod.Mongo.FieldSpecifier
-import typings.meteorTypings.mongoMod.Mongo.SortSpecifier
+import typings.meteorTypings.meteorMongoMod.Mongo.FieldSpecifier
+import typings.meteorTypings.meteorMongoMod.Mongo.SortSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

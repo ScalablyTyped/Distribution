@@ -2,7 +2,7 @@ package typings.materialUiCore
 
 import typings.materialUiCore.anon.PartialClassNameMapCollap
 import typings.materialUiCore.materialUiCoreStrings.auto
-import typings.materialUiCore.transitionMod.TransitionProps
+import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
@@ -109,7 +109,9 @@ object collapseCollapseMod {
     
     var onExiting: js.UndefOr[Any] = js.undefined
     
-    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    var ref: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/transitions/transition.TransitionProps extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -216,11 +218,9 @@ object collapseCollapseMod {
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
-      
-      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRef(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: @material-ui/core.@material-ui/core/transitions/transition.TransitionProps extends {  ref :infer RefType | undefined} ? RefType : react.react.Ref<unknown> */ js.Any
+      ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       

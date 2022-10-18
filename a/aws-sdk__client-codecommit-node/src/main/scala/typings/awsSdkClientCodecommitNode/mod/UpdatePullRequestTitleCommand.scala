@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "UpdatePullRequestTitleCommand")
 @js.native
 open class UpdatePullRequestTitleCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.updatePullRequestTitleCommandMod.UpdatePullRequestTitleCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsUpdatePullRequestTitleCommandMod.UpdatePullRequestTitleCommand {
   def this(input: UpdatePullRequestTitleInput) = this()
 }

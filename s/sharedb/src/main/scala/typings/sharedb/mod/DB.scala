@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sharedb", "DB")
+/* note: abstract class */ @JSImport("sharedb", "DB")
 @js.native
-abstract class DB () extends StObject {
+open class DB () extends StObject {
   
   def canPollDoc(): Boolean = js.native
   

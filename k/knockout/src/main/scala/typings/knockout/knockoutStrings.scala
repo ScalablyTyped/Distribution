@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object knockoutStrings {
   
   @js.native
-  sealed trait AsExtenders extends StObject
-  inline def AsExtenders: AsExtenders = "AsExtenders".asInstanceOf[AsExtenders]
-  
-  @js.native
-  sealed trait Unwrapped extends StObject
-  inline def Unwrapped: Unwrapped = "Unwrapped".asInstanceOf[Unwrapped]
-  
-  @js.native
   sealed trait added extends StObject
   inline def added: added = "added".asInstanceOf[added]
   

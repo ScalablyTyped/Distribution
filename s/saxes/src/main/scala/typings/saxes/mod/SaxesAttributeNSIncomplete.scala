@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.saxes.saxesStrings.prefix
   - typings.saxes.saxesStrings.name
 */
-trait SaxesAttributeNSIncomplete
-  extends StObject
-     with AttributeEventForOptions[Any]
+trait SaxesAttributeNSIncomplete extends StObject
 object SaxesAttributeNSIncomplete {
   
   inline def local: typings.saxes.saxesStrings.local = "local".asInstanceOf[typings.saxes.saxesStrings.local]

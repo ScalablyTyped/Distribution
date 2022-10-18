@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * ref: https://immersive-web.github.io/webxr/#feature-dependencies
+  */
 trait XRSessionInit extends StObject {
   
-  /**
-    * When 'dom-overly' is (optionally) requested the application MUST provide configuration for the DOM overlay
-    */
   var domOverlay: js.UndefOr[XRDOMOverlayInit] = js.undefined
   
   var optionalFeatures: js.UndefOr[js.Array[String]] = js.undefined

@@ -1,7 +1,7 @@
 package typings.serverless
 
-import typings.serverless.awsProviderMod._Filter
-import typings.serverless.validateMod.HttpMethod
+import typings.serverless.pluginsAwsPackageCompileEventsApiGatewayLibValidateMod.HttpMethod
+import typings.serverless.pluginsAwsProviderAwsProviderMod._Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

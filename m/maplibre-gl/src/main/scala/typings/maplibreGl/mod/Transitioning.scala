@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ open class Transitioning[Props] protected () extends StObject {
   
   var _properties: Properties[Props] = js.native
   
-  var _values: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Props ]: maplibre-gl.maplibre-gl.PossiblyEvaluatedPropertyValue<unknown>}
-    */ typings.maplibreGl.maplibreGlStrings.Transitioning & TopLevel[Any] = js.native
+  var _values: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Props ]: maplibre-gl.maplibre-gl.PossiblyEvaluatedPropertyValue<unknown>} */ js.Any = js.native
   
   def hasTransition(): Boolean = js.native
   

@@ -45,140 +45,140 @@ object mod {
   @JSImport("@aws-sdk/client-kms-browser", "CancelKeyDeletionCommand")
   @js.native
   open class CancelKeyDeletionCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.cancelKeyDeletionCommandMod.CancelKeyDeletionCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsCancelKeyDeletionCommandMod.CancelKeyDeletionCommand {
     def this(input: CancelKeyDeletionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "CreateAliasCommand")
   @js.native
   open class CreateAliasCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.createAliasCommandMod.CreateAliasCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsCreateAliasCommandMod.CreateAliasCommand {
     def this(input: CreateAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "CreateGrantCommand")
   @js.native
   open class CreateGrantCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.createGrantCommandMod.CreateGrantCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsCreateGrantCommandMod.CreateGrantCommand {
     def this(input: CreateGrantInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "CreateKeyCommand")
   @js.native
   open class CreateKeyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.createKeyCommandMod.CreateKeyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsCreateKeyCommandMod.CreateKeyCommand {
     def this(input: CreateKeyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "DecryptCommand")
   @js.native
   open class DecryptCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.decryptCommandMod.DecryptCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsDecryptCommandMod.DecryptCommand {
     def this(input: DecryptInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "DeleteAliasCommand")
   @js.native
   open class DeleteAliasCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.deleteAliasCommandMod.DeleteAliasCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsDeleteAliasCommandMod.DeleteAliasCommand {
     def this(input: DeleteAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "DeleteImportedKeyMaterialCommand")
   @js.native
   open class DeleteImportedKeyMaterialCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.deleteImportedKeyMaterialCommandMod.DeleteImportedKeyMaterialCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsDeleteImportedKeyMaterialCommandMod.DeleteImportedKeyMaterialCommand {
     def this(input: DeleteImportedKeyMaterialInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "DescribeKeyCommand")
   @js.native
   open class DescribeKeyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.describeKeyCommandMod.DescribeKeyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsDescribeKeyCommandMod.DescribeKeyCommand {
     def this(input: DescribeKeyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "DisableKeyCommand")
   @js.native
   open class DisableKeyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.disableKeyCommandMod.DisableKeyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsDisableKeyCommandMod.DisableKeyCommand {
     def this(input: DisableKeyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "DisableKeyRotationCommand")
   @js.native
   open class DisableKeyRotationCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.disableKeyRotationCommandMod.DisableKeyRotationCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsDisableKeyRotationCommandMod.DisableKeyRotationCommand {
     def this(input: DisableKeyRotationInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "EnableKeyCommand")
   @js.native
   open class EnableKeyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.enableKeyCommandMod.EnableKeyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsEnableKeyCommandMod.EnableKeyCommand {
     def this(input: EnableKeyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "EnableKeyRotationCommand")
   @js.native
   open class EnableKeyRotationCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.enableKeyRotationCommandMod.EnableKeyRotationCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsEnableKeyRotationCommandMod.EnableKeyRotationCommand {
     def this(input: EnableKeyRotationInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "EncryptCommand")
   @js.native
   open class EncryptCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.encryptCommandMod.EncryptCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsEncryptCommandMod.EncryptCommand {
     def this(input: EncryptInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "GenerateDataKeyCommand")
   @js.native
   open class GenerateDataKeyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.generateDataKeyCommandMod.GenerateDataKeyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsGenerateDataKeyCommandMod.GenerateDataKeyCommand {
     def this(input: GenerateDataKeyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "GenerateDataKeyWithoutPlaintextCommand")
   @js.native
   open class GenerateDataKeyWithoutPlaintextCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.generateDataKeyWithoutPlaintextCommandMod.GenerateDataKeyWithoutPlaintextCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsGenerateDataKeyWithoutPlaintextCommandMod.GenerateDataKeyWithoutPlaintextCommand {
     def this(input: GenerateDataKeyWithoutPlaintextInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "GenerateRandomCommand")
   @js.native
   open class GenerateRandomCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.generateRandomCommandMod.GenerateRandomCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsGenerateRandomCommandMod.GenerateRandomCommand {
     def this(input: GenerateRandomInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "GetKeyPolicyCommand")
   @js.native
   open class GetKeyPolicyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.getKeyPolicyCommandMod.GetKeyPolicyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsGetKeyPolicyCommandMod.GetKeyPolicyCommand {
     def this(input: GetKeyPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "GetKeyRotationStatusCommand")
   @js.native
   open class GetKeyRotationStatusCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.getKeyRotationStatusCommandMod.GetKeyRotationStatusCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsGetKeyRotationStatusCommandMod.GetKeyRotationStatusCommand {
     def this(input: GetKeyRotationStatusInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "GetParametersForImportCommand")
   @js.native
   open class GetParametersForImportCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.getParametersForImportCommandMod.GetParametersForImportCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsGetParametersForImportCommandMod.GetParametersForImportCommand {
     def this(input: GetParametersForImportInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ImportKeyMaterialCommand")
   @js.native
   open class ImportKeyMaterialCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.importKeyMaterialCommandMod.ImportKeyMaterialCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsImportKeyMaterialCommandMod.ImportKeyMaterialCommand {
     def this(input: ImportKeyMaterialInput) = this()
   }
   
@@ -199,105 +199,105 @@ object mod {
   @JSImport("@aws-sdk/client-kms-browser", "ListAliasesCommand")
   @js.native
   open class ListAliasesCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.listAliasesCommandMod.ListAliasesCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsListAliasesCommandMod.ListAliasesCommand {
     def this(input: ListAliasesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ListGrantsCommand")
   @js.native
   open class ListGrantsCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.listGrantsCommandMod.ListGrantsCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsListGrantsCommandMod.ListGrantsCommand {
     def this(input: ListGrantsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ListKeyPoliciesCommand")
   @js.native
   open class ListKeyPoliciesCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.listKeyPoliciesCommandMod.ListKeyPoliciesCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsListKeyPoliciesCommandMod.ListKeyPoliciesCommand {
     def this(input: ListKeyPoliciesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ListKeysCommand")
   @js.native
   open class ListKeysCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.listKeysCommandMod.ListKeysCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsListKeysCommandMod.ListKeysCommand {
     def this(input: ListKeysInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ListResourceTagsCommand")
   @js.native
   open class ListResourceTagsCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.listResourceTagsCommandMod.ListResourceTagsCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsListResourceTagsCommandMod.ListResourceTagsCommand {
     def this(input: ListResourceTagsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ListRetirableGrantsCommand")
   @js.native
   open class ListRetirableGrantsCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.listRetirableGrantsCommandMod.ListRetirableGrantsCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsListRetirableGrantsCommandMod.ListRetirableGrantsCommand {
     def this(input: ListRetirableGrantsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "PutKeyPolicyCommand")
   @js.native
   open class PutKeyPolicyCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.putKeyPolicyCommandMod.PutKeyPolicyCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsPutKeyPolicyCommandMod.PutKeyPolicyCommand {
     def this(input: PutKeyPolicyInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ReEncryptCommand")
   @js.native
   open class ReEncryptCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.reEncryptCommandMod.ReEncryptCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsReEncryptCommandMod.ReEncryptCommand {
     def this(input: ReEncryptInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "RetireGrantCommand")
   @js.native
   open class RetireGrantCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.retireGrantCommandMod.RetireGrantCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsRetireGrantCommandMod.RetireGrantCommand {
     def this(input: RetireGrantInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "RevokeGrantCommand")
   @js.native
   open class RevokeGrantCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.revokeGrantCommandMod.RevokeGrantCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsRevokeGrantCommandMod.RevokeGrantCommand {
     def this(input: RevokeGrantInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "ScheduleKeyDeletionCommand")
   @js.native
   open class ScheduleKeyDeletionCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.scheduleKeyDeletionCommandMod.ScheduleKeyDeletionCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsScheduleKeyDeletionCommandMod.ScheduleKeyDeletionCommand {
     def this(input: ScheduleKeyDeletionInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "TagResourceCommand")
   @js.native
   open class TagResourceCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.tagResourceCommandMod.TagResourceCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsTagResourceCommandMod.TagResourceCommand {
     def this(input: TagResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "UntagResourceCommand")
   @js.native
   open class UntagResourceCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.untagResourceCommandMod.UntagResourceCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsUntagResourceCommandMod.UntagResourceCommand {
     def this(input: UntagResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "UpdateAliasCommand")
   @js.native
   open class UpdateAliasCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.updateAliasCommandMod.UpdateAliasCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsUpdateAliasCommandMod.UpdateAliasCommand {
     def this(input: UpdateAliasInput) = this()
   }
   
   @JSImport("@aws-sdk/client-kms-browser", "UpdateKeyDescriptionCommand")
   @js.native
   open class UpdateKeyDescriptionCommand protected ()
-    extends typings.awsSdkClientKmsBrowser.updateKeyDescriptionCommandMod.UpdateKeyDescriptionCommand {
+    extends typings.awsSdkClientKmsBrowser.commandsUpdateKeyDescriptionCommandMod.UpdateKeyDescriptionCommand {
     def this(input: UpdateKeyDescriptionInput) = this()
   }
   

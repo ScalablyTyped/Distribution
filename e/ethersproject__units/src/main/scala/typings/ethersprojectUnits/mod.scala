@@ -1,6 +1,6 @@
 package typings.ethersprojectUnits
 
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

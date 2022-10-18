@@ -1,14 +1,15 @@
 package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
-import typings.antDesignProLayout.pageContainerMod.PageContainerProps
-import typings.antDesignProLayout.typingsMod.WithFalse
-import typings.antDesignProLayout.waterMarkMod.WaterMarkProps
-import typings.antd.avatarAvatarMod.AvatarProps
-import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.antd.spinMod.SpinProps
-import typings.antd.tabsMod.TabsProps
-import typings.rcTabs.interfaceMod.TabBarExtraContent
+import typings.antDesignProLayout.esComponentsPageContainerMod.PageContainerProps
+import typings.antDesignProLayout.esComponentsPageContainerStyleMod.pageContainerToken
+import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
+import typings.antDesignProLayout.esTypingsMod.WithFalse
+import typings.antd.libAvatarAvatarMod.AvatarProps
+import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.antd.libSpinMod.SpinProps
+import typings.antd.libTabsMod.TabsProps
+import typings.rcTabs.esInterfaceMod.TabBarExtraContent
 import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -111,6 +112,11 @@ trait PageContainerPropsprefixe extends StObject {
   var tags: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
   
   var title: js.UndefOr[ReactNode | `false`] = js.undefined
+  
+  /**
+    * 自定义的 token
+    */
+  var token: js.UndefOr[pageContainerToken] = js.undefined
   
   /** @name 水印的配置 */
   var waterMarkProps: js.UndefOr[WaterMarkProps] = js.undefined
@@ -247,6 +253,10 @@ object PageContainerPropsprefixe {
     inline def setTitle(value: ReactNode | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setToken(value: pageContainerToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     inline def setWaterMarkProps(value: WaterMarkProps): Self = StObject.set(x, "waterMarkProps", value.asInstanceOf[js.Any])
     

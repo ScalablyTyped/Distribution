@@ -1,6 +1,6 @@
 package typings.awsSdkServiceErrorClassification
 
-import typings.awsSdkTypes.shapesMod.SdkError
+import typings.awsSdkTypes.distTypesShapesMod.SdkError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

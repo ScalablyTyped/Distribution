@@ -1,7 +1,7 @@
 
 # Scala.js typings for pretty-format
 
-Typings are for version 29.1.2
+Typings are for version 29.2.0
 
 ## Library description:
 Stringify any JavaScript value.

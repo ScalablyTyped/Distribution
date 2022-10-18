@@ -2,6 +2,7 @@ package typings.pdfkit.PDFKit
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import typings.node.NodeJS.ReadableStream
 import typings.pdfkit.PDFKit.Mixins.PDFAcroForm
 import typings.pdfkit.PDFKit.Mixins.PDFAnnotation
 import typings.pdfkit.PDFKit.Mixins.PDFAttachment
@@ -12,7 +13,6 @@ import typings.pdfkit.PDFKit.Mixins.PDFMarking
 import typings.pdfkit.PDFKit.Mixins.PDFText
 import typings.pdfkit.PDFKit.Mixins.PDFVector
 import typings.pdfkit.anon.Count
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PDFDocument
   extends StObject
-     with ReadableStream[Any]
+     with ReadableStream
      with PDFAnnotation
      with PDFColor
      with PDFImage

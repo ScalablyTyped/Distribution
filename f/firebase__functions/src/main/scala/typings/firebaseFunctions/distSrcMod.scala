@@ -1,9 +1,9 @@
 package typings.firebaseFunctions
 
 import typings.firebaseApp.mod.FirebaseApp
-import typings.firebaseFunctions.srcPublicTypesMod.Functions
-import typings.firebaseFunctions.srcPublicTypesMod.HttpsCallable
-import typings.firebaseFunctions.srcPublicTypesMod.HttpsCallableOptions
+import typings.firebaseFunctions.distSrcPublicTypesMod.Functions
+import typings.firebaseFunctions.distSrcPublicTypesMod.HttpsCallable
+import typings.firebaseFunctions.distSrcPublicTypesMod.HttpsCallableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,22 +27,23 @@ object distSrcMod {
   inline def httpsCallableFromURL[RequestData, ResponseData](functionsInstance: Functions, url: String): HttpsCallable[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallableFromURL")(functionsInstance.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable[RequestData, ResponseData]]
   inline def httpsCallableFromURL[RequestData, ResponseData](functionsInstance: Functions, url: String, options: HttpsCallableOptions): HttpsCallable[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallableFromURL")(functionsInstance.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable[RequestData, ResponseData]]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var functions: typings.firebaseFunctions.publicTypesMod.Functions
+      var functions: Functions
     }
     object NameServiceMapping {
       
-      inline def apply(functions: typings.firebaseFunctions.publicTypesMod.Functions): NameServiceMapping = {
+      inline def apply(functions: Functions): NameServiceMapping = {
         val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setFunctions(value: typings.firebaseFunctions.publicTypesMod.Functions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+        inline def setFunctions(value: Functions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       }
     }
   }

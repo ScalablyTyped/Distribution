@@ -2,9 +2,9 @@ package typings.superagentRetryDelay
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cookiejar.mod.CookieJar
+import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
-import typings.std.WritableStream
 import typings.superagent.mod.MultipartValue
 import typings.superagent.mod.MultipartValueSingle
 import typings.superagent.mod.Plugin
@@ -220,9 +220,9 @@ object mod {
     @JSName("pfx")
     var pfx_Original: js.Function1[/* cert */ String, this.type] = js.native
     
-    def pipe(stream: WritableStream[Any]): Writable = js.native
+    def pipe(stream: WritableStream): Writable = js.native
     @JSName("pipe")
-    var pipe_Original: js.Function1[/* stream */ WritableStream[Any], Writable] = js.native
+    var pipe_Original: js.Function1[/* stream */ WritableStream, Writable] = js.native
     
     def query(`val`: js.Object): this.type = js.native
     @JSName("query")

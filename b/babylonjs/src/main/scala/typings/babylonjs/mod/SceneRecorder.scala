@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SceneRecorder")
 @js.native
 open class SceneRecorder ()
-  extends typings.babylonjs.legacyMod.SceneRecorder
+  extends typings.babylonjs.legacyLegacyMod.SceneRecorder
 /* static members */
 object SceneRecorder {
   

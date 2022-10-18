@@ -3,9 +3,6 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.DTickValue
-import typings.plotlyJs.mod.DataTitle
-import typings.plotlyJs.mod.Font
-import typings.plotlyJs.mod.TickFormatStop
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.B
@@ -54,7 +51,6 @@ import typings.plotlyJs.plotlyJsStrings.toaxisPlussignacrossPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.toaxisPlussignmarker
 import typings.plotlyJs.plotlyJsStrings.tozero
 import typings.plotlyJs.plotlyJsStrings.trace
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,11 +134,11 @@ trait PartialAxisCalendar extends StObject {
   
   var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var tickfont: js.UndefOr[Partial[Font]] = js.undefined
+  var tickfont: js.UndefOr[PartialFont] = js.undefined
   
   var tickformat: js.UndefOr[String] = js.undefined
   
-  var tickformatstops: js.UndefOr[js.Array[Partial[TickFormatStop]]] = js.undefined
+  var tickformatstops: js.UndefOr[js.Array[PartialTickFormatStop]] = js.undefined
   
   var ticklen: js.UndefOr[Double] = js.undefined
   
@@ -160,9 +156,9 @@ trait PartialAxisCalendar extends StObject {
   
   var tickwidth: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String | Partial[DataTitle]] = js.undefined
+  var title: js.UndefOr[String | PartialDataTitle] = js.undefined
   
-  var titlefont: js.UndefOr[Partial[Font]] = js.undefined
+  var titlefont: js.UndefOr[PartialFont] = js.undefined
   
   var `type`: js.UndefOr[AxisType] = js.undefined
   
@@ -347,7 +343,7 @@ object PartialAxisCalendar {
     
     inline def setTickcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "tickcolor", js.Array(value*))
     
-    inline def setTickfont(value: Partial[Font]): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
+    inline def setTickfont(value: PartialFont): Self = StObject.set(x, "tickfont", value.asInstanceOf[js.Any])
     
     inline def setTickfontUndefined: Self = StObject.set(x, "tickfont", js.undefined)
     
@@ -355,11 +351,11 @@ object PartialAxisCalendar {
     
     inline def setTickformatUndefined: Self = StObject.set(x, "tickformat", js.undefined)
     
-    inline def setTickformatstops(value: js.Array[Partial[TickFormatStop]]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
+    inline def setTickformatstops(value: js.Array[PartialTickFormatStop]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
     
     inline def setTickformatstopsUndefined: Self = StObject.set(x, "tickformatstops", js.undefined)
     
-    inline def setTickformatstopsVarargs(value: Partial[TickFormatStop]*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
+    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     
@@ -397,11 +393,11 @@ object PartialAxisCalendar {
     
     inline def setTickwidthUndefined: Self = StObject.set(x, "tickwidth", js.undefined)
     
-    inline def setTitle(value: String | Partial[DataTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | PartialDataTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitlefont(value: Partial[Font]): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
+    inline def setTitlefont(value: PartialFont): Self = StObject.set(x, "titlefont", value.asInstanceOf[js.Any])
     
     inline def setTitlefontUndefined: Self = StObject.set(x, "titlefont", js.undefined)
     

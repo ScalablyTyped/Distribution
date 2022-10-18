@@ -21,7 +21,7 @@ object mod extends Shortcut {
   
   @JSImport("@jupyterlab/javascript-extension", "ExperimentalRenderedJavascript")
   @js.native
-  class ExperimentalRenderedJavascript protected () extends RenderedJavaScript {
+  open class ExperimentalRenderedJavascript protected () extends RenderedJavaScript {
     /**
       * Construct a new rendered text widget.
       *

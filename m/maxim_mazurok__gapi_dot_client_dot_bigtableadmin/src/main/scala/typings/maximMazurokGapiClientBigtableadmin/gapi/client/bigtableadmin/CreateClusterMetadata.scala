@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,7 @@ trait CreateClusterMetadata extends StObject {
     * API call will be created in the new cluster by that API call, not this one. Values: information on how much of a table's data has been copied to the newly-created cluster so far.
     */
   var tables: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress} */ js.Any
   ] = js.undefined
 }
 object CreateClusterMetadata {
@@ -48,9 +45,7 @@ object CreateClusterMetadata {
     inline def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
     
     inline def setTables(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress} */ js.Any
     ): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)

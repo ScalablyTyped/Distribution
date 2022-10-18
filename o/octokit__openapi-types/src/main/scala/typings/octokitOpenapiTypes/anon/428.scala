@@ -6,27 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `428` extends StObject {
   
-  var runners: js.UndefOr[js.Array[Os]] = js.undefined
+  var secrets: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any
+  ]
   
-  var total_count: js.UndefOr[Double] = js.undefined
+  var total_count: Double
 }
 object `428` {
   
-  inline def apply(): `428` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    secrets: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any
+    ],
+    total_count: Double
+  ): `428` = {
+    val __obj = js.Dynamic.literal(secrets = secrets.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[`428`]
   }
   
   extension [Self <: `428`](x: Self) {
     
-    inline def setRunners(value: js.Array[Os]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    inline def setSecrets(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
-    
-    inline def setRunnersVarargs(value: Os*): Self = StObject.set(x, "runners", js.Array(value*))
+    inline def setSecretsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-secret'] */ js.Any)*
+    ): Self = StObject.set(x, "secrets", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
-    
-    inline def setTotal_countUndefined: Self = StObject.set(x, "total_count", js.undefined)
   }
 }

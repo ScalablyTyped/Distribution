@@ -9,7 +9,7 @@ trait DeviceEventeventstring extends StObject {
   
   var event: /* "DEVICE_EVENT" */ String
   
-  var payload: typings.trezorConnect.deviceMod.Device
+  var payload: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device
   
   var `type`: /* "device-connect" */ String
 }
@@ -17,7 +17,7 @@ object DeviceEventeventstring {
   
   inline def apply(
     event: /* "DEVICE_EVENT" */ String,
-    payload: typings.trezorConnect.deviceMod.Device,
+    payload: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device,
     `type`: /* "device-connect" */ String
   ): DeviceEventeventstring = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
@@ -29,7 +29,7 @@ object DeviceEventeventstring {
     
     inline def setEvent(value: /* "DEVICE_EVENT" */ String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setPayload(value: typings.trezorConnect.deviceMod.Device): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setType(value: /* "device-connect" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

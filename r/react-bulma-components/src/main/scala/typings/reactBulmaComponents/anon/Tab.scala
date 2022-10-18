@@ -1,10 +1,10 @@
 package typings.reactBulmaComponents.anon
 
 import typings.react.mod.ReactElement
-import typings.reactBulmaComponents.componentsMod.BulmaComponent
-import typings.reactBulmaComponents.componentsMod.ElementProps
-import typings.reactBulmaComponents.panelMod.PanelTabProps
 import typings.reactBulmaComponents.reactBulmaComponentsStrings.a
+import typings.reactBulmaComponents.srcComponentsMod.BulmaComponent
+import typings.reactBulmaComponents.srcComponentsMod.ElementProps
+import typings.reactBulmaComponents.srcComponentsPanelMod.PanelTabProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

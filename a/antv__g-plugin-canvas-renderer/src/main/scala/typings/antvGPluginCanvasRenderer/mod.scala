@@ -13,7 +13,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "CircleRenderer")
   @js.native
   open class CircleRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.CircleRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.CircleRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -24,7 +24,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "EllipseRenderer")
   @js.native
   open class EllipseRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.EllipseRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.EllipseRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -35,7 +35,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "ImageRenderer")
   @js.native
   open class ImageRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.ImageRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.ImageRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -46,7 +46,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "LineRenderer")
   @js.native
   open class LineRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.LineRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.LineRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -57,7 +57,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "PathRenderer")
   @js.native
   open class PathRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.PathRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.PathRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -76,7 +76,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "PolygonRenderer")
   @js.native
   open class PolygonRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.PolygonRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.PolygonRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -87,7 +87,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "PolylineRenderer")
   @js.native
   open class PolylineRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.PolylineRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.PolylineRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -98,7 +98,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "RectRenderer")
   @js.native
   open class RectRenderer protected ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.RectRenderer {
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.RectRenderer {
     def this(imagePool: ImagePool) = this()
   }
   
@@ -113,7 +113,7 @@ object mod {
   @JSImport("@antv/g-plugin-canvas-renderer", "TextRenderer")
   @js.native
   open class TextRenderer ()
-    extends typings.antvGPluginCanvasRenderer.stylesMod.TextRenderer
+    extends typings.antvGPluginCanvasRenderer.distShapesStylesMod.TextRenderer
   
   @JSImport("@antv/g-plugin-canvas-renderer", "TextRendererContribution")
   @js.native

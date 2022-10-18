@@ -2,7 +2,6 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.integer
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +29,7 @@ trait TypeofdesktopCapture extends StObject {
       ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
         /* keyof typeof DesktopCaptureSourceType */ String, 
-        Exclude[
-          /* keyof typeof DesktopCaptureSourceType */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof DesktopCaptureSourceType extends keyof typeof DesktopCaptureSourceType ? std.Exclude<keyof typeof DesktopCaptureSourceType, typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType]> : never */ js.Any
       ]
     ],
     callback: js.Function1[/* streamId */ String, Unit]
@@ -48,10 +44,7 @@ object TypeofdesktopCapture {
       ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
         /* keyof typeof DesktopCaptureSourceType */ String, 
-        Exclude[
-          /* keyof typeof DesktopCaptureSourceType */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof DesktopCaptureSourceType extends keyof typeof DesktopCaptureSourceType ? std.Exclude<keyof typeof DesktopCaptureSourceType, typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType]> : never */ js.Any
       ]
     ], js.Function1[/* streamId */ String, Unit]) => integer
   ): TypeofdesktopCapture = {
@@ -68,10 +61,7 @@ object TypeofdesktopCapture {
           ToStringLiteral[
             /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
             /* keyof typeof DesktopCaptureSourceType */ String, 
-            Exclude[
-              /* keyof typeof DesktopCaptureSourceType */ String, 
-              /* import warning: importer.ImportType#apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
-            ]
+            /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof DesktopCaptureSourceType extends keyof typeof DesktopCaptureSourceType ? std.Exclude<keyof typeof DesktopCaptureSourceType, typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType]> : never */ js.Any
           ]
         ], js.Function1[/* streamId */ String, Unit]) => integer
     ): Self = StObject.set(x, "chooseDesktopMedia", js.Any.fromFunction2(value))

@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RoomEncryptionAlgorithm extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.matrixBotSdk.encryptionEventMod.RoomEncryptionAlgorithm & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.matrixBotSdk.libModelsEventsEncryptionEventMod.RoomEncryptionAlgorithm & String
+  ] = js.native
   
-  /* "m.megolm.v1.aes-sha2" */ val MegolmV1AesSha2: typings.matrixBotSdk.encryptionEventMod.RoomEncryptionAlgorithm.MegolmV1AesSha2 & String = js.native
+  /* "m.megolm.v1.aes-sha2" */ val MegolmV1AesSha2: typings.matrixBotSdk.libModelsEventsEncryptionEventMod.RoomEncryptionAlgorithm.MegolmV1AesSha2 & String = js.native
 }

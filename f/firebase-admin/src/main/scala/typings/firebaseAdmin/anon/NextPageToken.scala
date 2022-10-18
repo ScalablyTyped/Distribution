@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.anon
 
-import typings.firebaseAdmin.tenantMod.TenantServerResponse
+import typings.firebaseAdmin.libAuthTenantMod.TenantServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

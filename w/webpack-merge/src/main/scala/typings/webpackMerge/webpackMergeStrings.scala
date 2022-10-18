@@ -1,6 +1,6 @@
 package typings.webpackMerge
 
-import typings.webpackMerge.typesMod.CustomizeRuleString
+import typings.webpackMerge.distTypesMod.CustomizeRuleString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

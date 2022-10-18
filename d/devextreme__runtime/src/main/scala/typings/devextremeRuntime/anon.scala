@@ -1,7 +1,7 @@
 package typings.devextremeRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.devextremeRuntime.containerMod.RefObject
+import typings.devextremeRuntime.cjsInfernoHooksContainerMod.RefObject
 import typings.devextremeRuntime.devextremeRuntimeStrings.`object`
 import typings.devextremeRuntime.devextremeRuntimeStrings.`var`
 import typings.devextremeRuntime.devextremeRuntimeStrings.a
@@ -271,10 +271,10 @@ import typings.devextremeRuntime.devextremeRuntimeStrings.webkitanimationstart
 import typings.devextremeRuntime.devextremeRuntimeStrings.webkittransitionend
 import typings.devextremeRuntime.devextremeRuntimeStrings.wheel
 import typings.inferno.anon.Children
-import typings.inferno.typesMod.Inferno.InfernoElement
-import typings.inferno.typesMod.Inferno.InfernoNode
-import typings.inferno.typesMod.Ref
-import typings.inferno.typesMod.Refs
+import typings.inferno.distCoreTypesMod.Inferno.InfernoElement
+import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.Ref
+import typings.inferno.distCoreTypesMod.Refs
 import typings.std.AddEventListenerOptions
 import typings.std.Animation
 import typings.std.AnimationEvent
@@ -11742,6 +11742,8 @@ object anon {
     def render(nextProps: Children & Any, nextState: Any, nextContext: Any): InfernoNode = js.native
     
     def setState[K /* <: /* keyof any */ String */](): Unit = js.native
+    def setState[K /* <: /* keyof any */ String */](newState: Any | (Pick[Any, K])): Unit = js.native
+    def setState[K /* <: /* keyof any */ String */](newState: Any | (Pick[Any, K]), callback: js.Function0[Unit]): Unit = js.native
     def setState[K /* <: /* keyof any */ String */](
       newState: js.Function2[/* prevState */ Any, /* props */ Children & Any, (Pick[Any, K]) | Any | Null]
     ): Unit = js.native
@@ -11749,11 +11751,7 @@ object anon {
       newState: js.Function2[/* prevState */ Any, /* props */ Children & Any, (Pick[Any, K]) | Any | Null],
       callback: js.Function0[Unit]
     ): Unit = js.native
-    def setState[K /* <: /* keyof any */ String */](newState: Any): Unit = js.native
-    def setState[K /* <: /* keyof any */ String */](newState: Any, callback: js.Function0[Unit]): Unit = js.native
     def setState[K /* <: /* keyof any */ String */](newState: Null, callback: js.Function0[Unit]): Unit = js.native
-    def setState[K /* <: /* keyof any */ String */](newState: Pick[Any, K]): Unit = js.native
-    def setState[K /* <: /* keyof any */ String */](newState: Pick[Any, K], callback: js.Function0[Unit]): Unit = js.native
     
     var shouldComponentUpdate: js.UndefOr[
         js.Function3[/* nextProps */ Children & Any, /* nextState */ Any, /* context */ Any, Boolean]
@@ -11876,8 +11874,8 @@ object anon {
   @js.native
   trait RenderFn extends StObject {
     
-    def renderFn(props: Any): typings.inferno.typesMod.global.JSX.Element = js.native
-    def renderFn(props: Any, ref: Any): typings.inferno.typesMod.global.JSX.Element = js.native
+    def renderFn(props: Any): typings.inferno.distCoreTypesMod.global.JSX.Element = js.native
+    def renderFn(props: Any, ref: Any): typings.inferno.distCoreTypesMod.global.JSX.Element = js.native
     
     var renderProps: js.UndefOr[Record[String, Any]] = js.native
     
@@ -11912,13 +11910,13 @@ object anon {
   @js.native
   trait RenderRef extends StObject {
     
-    def renderFn(props: Any): typings.inferno.typesMod.global.JSX.Element = js.native
-    def renderFn(props: Any, ref: Any): typings.inferno.typesMod.global.JSX.Element = js.native
+    def renderFn(props: Any): typings.inferno.distCoreTypesMod.global.JSX.Element = js.native
+    def renderFn(props: Any, ref: Any): typings.inferno.distCoreTypesMod.global.JSX.Element = js.native
     
     var renderProps: js.UndefOr[Record[String, Any]] = js.native
     
     var renderRef: js.UndefOr[
-        typings.devextremeRuntime.infernoHooksContainerMod.RefObject[Record[String, Any]]
+        typings.devextremeRuntime.esmInfernoHooksContainerMod.RefObject[Record[String, Any]]
       ] = js.native
   }
 }

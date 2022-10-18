@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XR input sources.
   * ref: https://immersive-web.github.io/webxr/#xrinputsource-interface
   */
-@JSGlobal("XRInputSource")
+/* note: abstract class */ @JSGlobal("XRInputSource")
 @js.native
-abstract class XRInputSource ()
+open class XRInputSource ()
   extends StObject
      with typings.webxr.XRInputSource {
   

@@ -1,8 +1,8 @@
 package typings.awsLambda.anon
 
-import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentComputeType
-import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentPullCredentialsType
-import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentType
+import typings.awsLambda.triggerCodebuildCloudwatchStateMod.CodeBuildEnvironmentComputeType
+import typings.awsLambda.triggerCodebuildCloudwatchStateMod.CodeBuildEnvironmentPullCredentialsType
+import typings.awsLambda.triggerCodebuildCloudwatchStateMod.CodeBuildEnvironmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

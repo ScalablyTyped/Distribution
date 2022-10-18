@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("YUKA.State")
 @js.native
-open class State[T /* <: typings.yuka.gameEntityMod.GameEntity */] ()
+open class State[T /* <: typings.yuka.srcCoreGameEntityMod.GameEntity */] ()
   extends typings.yuka.mod.State[T]

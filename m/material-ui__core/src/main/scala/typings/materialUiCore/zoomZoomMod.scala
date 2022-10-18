@@ -1,6 +1,6 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.transitionMod.TransitionProps
+import typings.materialUiCore.transitionsTransitionMod.TransitionProps
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element

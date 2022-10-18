@@ -1,7 +1,7 @@
 package typings.awsSdkRetryMiddleware
 
-import typings.awsSdkTypes.middlewareMod.FinalizeHandler
-import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesMiddlewareMod.FinalizeHandler
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

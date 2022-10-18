@@ -15,8 +15,8 @@ import typings.firebaseStorageCompat.anon.MockUserToken
 import typings.firebaseStorageCompat.mod.firebaseAppCompatAugmentingMod.FirebaseApp
 import typings.firebaseStorageTypes.mod.FirebaseStorage
 import typings.firebaseStorageTypes.mod.Reference
+import typings.node.NodeJS.ReadableStream
 import typings.std.Blob
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +48,7 @@ object mod {
     
     inline def getStorage(app: js.UndefOr[FirebaseApp], bucketUrl: js.UndefOr[String]): typings.firebaseStorage.mod.FirebaseStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any], bucketUrl.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseStorage.mod.FirebaseStorage]
     
-    inline def getStream(ref: Reference, maxDownloadSizeBytes: js.UndefOr[Double]): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
+    inline def getStream(ref: Reference, maxDownloadSizeBytes: js.UndefOr[Double]): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
     
     inline def list(ref: Reference, options: js.UndefOr[ListOptions]): js.Promise[ListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListResult]]
     

@@ -8,26 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object yargsStrings {
   
   @js.native
-  sealed trait Argv extends StObject
-  inline def Argv: Argv = "Argv".asInstanceOf[Argv]
-  
-  @js.native
-  sealed trait Defined extends StObject
-  inline def Defined: Defined = "Defined".asInstanceOf[Defined]
-  
-  @js.native
-  sealed trait InferredOptionTypes extends StObject
-  inline def InferredOptionTypes: InferredOptionTypes = "InferredOptionTypes".asInstanceOf[InferredOptionTypes]
-  
-  @js.native
-  sealed trait Omit extends StObject
-  inline def Omit: Omit = "Omit".asInstanceOf[Omit]
-  
-  @js.native
-  sealed trait _empty extends StObject
-  inline def _empty: _empty = "".asInstanceOf[_empty]
-  
-  @js.native
   sealed trait array extends StObject
   inline def array: array = "array".asInstanceOf[array]
   

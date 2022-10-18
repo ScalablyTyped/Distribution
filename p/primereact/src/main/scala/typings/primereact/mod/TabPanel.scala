@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.tabviewMod.TabPanelProps
+import typings.primereact.tabviewTabviewMod.TabPanelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "TabPanel")
 @js.native
 open class TabPanel protected ()
-  extends typings.primereact.tabviewMod.TabPanel {
+  extends typings.primereact.tabviewTabviewMod.TabPanel {
   def this(props: TabPanelProps) = this()
   /**
     * @deprecated

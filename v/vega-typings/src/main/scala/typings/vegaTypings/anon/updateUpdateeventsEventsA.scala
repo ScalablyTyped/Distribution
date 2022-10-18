@@ -1,9 +1,9 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.onEventsMod.EventListener
-import typings.vegaTypings.onEventsMod.Events
-import typings.vegaTypings.onEventsMod.OnEvent
-import typings.vegaTypings.onEventsMod.Update
+import typings.vegaTypings.typesSpecOnEventsMod.EventListener
+import typings.vegaTypings.typesSpecOnEventsMod.Events
+import typings.vegaTypings.typesSpecOnEventsMod.OnEvent
+import typings.vegaTypings.typesSpecOnEventsMod.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

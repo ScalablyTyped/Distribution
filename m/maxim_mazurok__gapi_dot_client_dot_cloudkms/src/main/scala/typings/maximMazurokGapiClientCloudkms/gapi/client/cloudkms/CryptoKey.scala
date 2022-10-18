@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +27,7 @@ trait CryptoKey extends StObject {
   
   /** Labels with user-defined metadata. For more information, see [Labeling Keys](https://cloud.google.com/kms/docs/labeling-keys). */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.CryptoKey & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Output only. The resource name for this CryptoKey in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *`. */
@@ -90,9 +87,7 @@ object CryptoKey {
     inline def setImportOnlyUndefined: Self = StObject.set(x, "importOnly", js.undefined)
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudkms.maximMazurokGapiClientCloudkmsStrings.CryptoKey & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

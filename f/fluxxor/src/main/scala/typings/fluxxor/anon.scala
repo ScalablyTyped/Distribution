@@ -46,6 +46,8 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactHTMLElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactSVGElement
+import typings.react.mod.Reducer
+import typings.react.mod.ReducerAction
 import typings.react.mod.ReducerState
 import typings.react.mod.ReducerStateWithoutAction
 import typings.react.mod.ReducerWithoutAction
@@ -78,10 +80,10 @@ object anon {
     def forEach[C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, Unit]): Unit = js.native
     def forEach[C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, Unit]): Unit = js.native
     
-    def map[T, C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, T]): (js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C = js.native
-    def map[T, C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, T]): (js.Array[Exclude[T, js.UndefOr[Boolean | Null]]]) | C = js.native
+    def map[T, C](children: C, fn: js.Function2[/* child */ C, /* index */ Double, T]): /* import warning: importer.ImportType#apply Failed type conversion: C extends null | undefined ? C : std.Array<std.Exclude<T, boolean | null | undefined>> */ js.Any = js.native
+    def map[T, C](children: js.Array[C], fn: js.Function2[/* child */ C, /* index */ Double, T]): /* import warning: importer.ImportType#apply Failed type conversion: C extends null | undefined ? C : std.Array<std.Exclude<T, boolean | null | undefined>> */ js.Any = js.native
     
-    def only[C](children: C): C = js.native
+    def only[C](children: C): /* import warning: importer.ImportType#apply Failed type conversion: C extends std.Array<any> ? never : C */ js.Any = js.native
     
     def toArray(children: js.Array[ReactNode]): js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]] = js.native
     def toArray(children: ReactNode): js.Array[Exclude[ReactNode, js.UndefOr[Boolean | Null]]] = js.native
@@ -210,17 +212,17 @@ object anon {
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.fluxxor.fluxxorStrings.a, typings.fluxxor.fluxxorStrings.abbr, typings.fluxxor.fluxxorStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.fluxxor.fluxxorStrings.a, typings.fluxxor.fluxxorStrings.abbr, typings.fluxxor.fluxxorStrings.address */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.fluxxor.fluxxorStrings.a, typings.fluxxor.fluxxorStrings.abbr, typings.fluxxor.fluxxorStrings.address */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
@@ -238,19 +240,19 @@ object anon {
     def createElement_PT_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = js.native
     @JSName("createElement")
     def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.fluxxor.fluxxorStrings.animate, typings.fluxxor.fluxxorStrings.circle, typings.fluxxor.fluxxorStrings.clipPath */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): ReactSVGElement = js.native
     @JSName("createElement")
     def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.fluxxor.fluxxorStrings.animate, typings.fluxxor.fluxxorStrings.circle, typings.fluxxor.fluxxorStrings.clipPath */ Any,
       props: Null,
       children: ReactNode*
     ): ReactSVGElement = js.native
     @JSName("createElement")
     def createElement_PT_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.fluxxor.fluxxorStrings.animate, typings.fluxxor.fluxxorStrings.circle, typings.fluxxor.fluxxorStrings.clipPath */ Any,
       props: Unit,
       children: ReactNode*
     ): ReactSVGElement = js.native
@@ -273,7 +275,9 @@ object anon {
     @JSName("createElement")
     def createElement_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
     
-    def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any): SVGFactory = js.native
+    def createFactory(
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55, starting with typings.fluxxor.fluxxorStrings.animate, typings.fluxxor.fluxxorStrings.circle, typings.fluxxor.fluxxorStrings.clipPath */ Any
+    ): SVGFactory = js.native
     def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = js.native
     def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = js.native
     // Custom components
@@ -286,7 +290,9 @@ object anon {
     // ----------------------------------------------------------------------
     // DOM Elements
     @JSName("createFactory")
-    def createFactory_T_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any): HTMLFactory[T] = js.native
+    def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.fluxxor.fluxxorStrings.a, typings.fluxxor.fluxxorStrings.abbr, typings.fluxxor.fluxxorStrings.address */ Any
+    ): HTMLFactory[T] = js.native
     
     def createRef[T](): RefObject[T] = js.native
     
@@ -422,7 +428,14 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
-    // overload where dispatch could accept 0 arguments.
+    // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
+    // The Flow types do have an overload for 3-ary invocation with undefined initializer.
+    // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
+    // supertype between the reducer's return type and the initialState (or the initializer's return type),
+    // which would prevent autocompletion from ever working.
+    // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
+    // in older versions, or a regression in newer versions of the typescript completion service.
+    def useReducer[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
     /**
       * An alternative to `useState`.
       *
@@ -433,14 +446,8 @@ object anon {
       * @version 16.8.0
       * @see https://reactjs.org/docs/hooks-reference.html#usereducer
       */
-    // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
-    // The Flow types do have an overload for 3-ary invocation with undefined initializer.
-    // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
-    // supertype between the reducer's return type and the initialState (or the initializer's return type),
-    // which would prevent autocompletion from ever working.
-    // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
-    // in older versions, or a regression in newer versions of the typescript completion service.
-    def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerState[R] | ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+    // overload where dispatch could accept 0 arguments.
+    def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
     /**
       * An alternative to `useState`.
       *

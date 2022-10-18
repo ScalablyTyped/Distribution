@@ -1,6 +1,6 @@
 package typings.mockAwsS3.mod
 
-import typings.awsSdk.webIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
+import typings.awsSdk.libCredentialsWebIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,6 @@ open class WebIdentityCredentials ()
   def this(options: WebIdentityCredentialsOptions) = this()
   def this(
     options: WebIdentityCredentialsOptions,
-    clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions
+    clientConfig: typings.awsSdk.libConfigBaseMod.ConfigurationOptions
   ) = this()
 }

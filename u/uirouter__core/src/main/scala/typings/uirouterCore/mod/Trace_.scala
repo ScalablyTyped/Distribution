@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** @internal */
 open class Trace_ ()
-  extends typings.uirouterCore.commonMod.Trace_
+  extends typings.uirouterCore.libCommonMod.Trace_

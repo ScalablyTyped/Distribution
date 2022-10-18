@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.editorMod.EditorProps
+import typings.primereact.editorEditorMod.EditorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Editor")
 @js.native
 open class Editor protected ()
-  extends typings.primereact.editorMod.Editor {
+  extends typings.primereact.editorEditorMod.Editor {
   def this(props: EditorProps) = this()
   /**
     * @deprecated

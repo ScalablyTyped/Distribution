@@ -2,12 +2,12 @@ package typings.engineIo
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.engineIo.anon.Typeofpolling
-import typings.engineIo.serverMod.AttachOptions
-import typings.engineIo.serverMod.ServerOptions
-import typings.engineIo.transportsWebsocketMod.WebSocket
-import typings.engineIoParser.commonsMod.BinaryType
-import typings.engineIoParser.commonsMod.Packet
-import typings.engineIoParser.commonsMod.RawData
+import typings.engineIo.buildServerMod.AttachOptions
+import typings.engineIo.buildServerMod.ServerOptions
+import typings.engineIo.buildTransportsWebsocketMod.WebSocket
+import typings.engineIoParser.buildEsmCommonsMod.BinaryType
+import typings.engineIoParser.buildEsmCommonsMod.Packet
+import typings.engineIoParser.buildEsmCommonsMod.RawData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,14 +27,14 @@ object mod {
     * @api public
     */
   open class Server ()
-    extends typings.engineIo.serverMod.Server {
+    extends typings.engineIo.buildServerMod.Server {
     def this(opts: ServerOptions) = this()
   }
   
   @JSImport("engine.io", "Socket")
   @js.native
   open class Socket protected ()
-    extends typings.engineIo.socketMod.Socket {
+    extends typings.engineIo.buildSocketMod.Socket {
     /**
       * Client class (abstract).
       *
@@ -43,10 +43,10 @@ object mod {
     def this(id: Any, server: Any, transport: Any, req: Any, protocol: Any) = this()
   }
   
-  @JSImport("engine.io", "Transport")
+  /* note: abstract class */ @JSImport("engine.io", "Transport")
   @js.native
-  abstract class Transport protected ()
-    extends typings.engineIo.transportMod.Transport {
+  open class Transport protected ()
+    extends typings.engineIo.buildTransportMod.Transport {
     /**
       * Transport constructor.
       *
@@ -64,7 +64,7 @@ object mod {
     * @return {Server} engine server
     * @api public
     */
-  inline def attach(server: Any, options: AttachOptions & ServerOptions): typings.engineIo.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.engineIo.serverMod.Server]
+  inline def attach(server: Any, options: AttachOptions & ServerOptions): typings.engineIo.buildServerMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.engineIo.buildServerMod.Server]
   
   /**
     * Creates an http.Server exclusively used for WS upgrades.
@@ -75,7 +75,7 @@ object mod {
     * @return {Server} websocket.io server
     * @api public
     */
-  inline def listen(port: Any, options: AttachOptions & ServerOptions, fn: Any): typings.engineIo.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.engineIo.serverMod.Server]
+  inline def listen(port: Any, options: AttachOptions & ServerOptions, fn: Any): typings.engineIo.buildServerMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.engineIo.buildServerMod.Server]
   
   object parser {
     
@@ -144,7 +144,7 @@ object mod {
     * @api public
     */
   open class uServer ()
-    extends typings.engineIo.userverMod.uServer {
+    extends typings.engineIo.buildUserverMod.uServer {
     def this(opts: ServerOptions) = this()
   }
 }

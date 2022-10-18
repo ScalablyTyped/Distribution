@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SourceFeatureState () extends StObject {
   
   def coalesceChanges(
-    tiles: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ _ in any ]: maplibre-gl.maplibre-gl.Tile}
-    */ typings.maplibreGl.maplibreGlStrings.SourceFeatureState & TopLevel[Any],
+    tiles: /* import warning: importer.ImportType#apply Failed type conversion: {[ _ in any ]: maplibre-gl.maplibre-gl.Tile} */ js.Any,
     painter: Any
   ): scala.Unit = js.native
   

@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.anon
 
 import typings.react.mod.Validator
-import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
+import typings.storybookAddonKnobs.distComponentsTypesTypesMod.KnobControlConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

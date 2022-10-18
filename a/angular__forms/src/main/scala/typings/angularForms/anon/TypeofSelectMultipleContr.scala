@@ -16,7 +16,7 @@ trait TypeofSelectMultipleContr
   
   var ɵdir: ɵɵDirectiveDeclaration[
     SelectMultipleControlValueAccessor, 
-    String, 
+    /* select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel] */ String, 
     scala.Nothing, 
     CompareWith, 
     js.Object, 

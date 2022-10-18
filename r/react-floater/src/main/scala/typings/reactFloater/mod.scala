@@ -1,7 +1,7 @@
 package typings.reactFloater
 
 import typings.react.mod.global.JSX.Element
-import typings.reactFloater.typesMod.Props
+import typings.reactFloater.libTypesMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

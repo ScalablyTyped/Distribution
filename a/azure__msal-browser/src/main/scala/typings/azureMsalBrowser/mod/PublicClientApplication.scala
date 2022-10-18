@@ -1,6 +1,6 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalBrowser.configurationMod.Configuration
+import typings.azureMsalBrowser.distConfigConfigurationMod.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-browser", "PublicClientApplication")
 @js.native
 open class PublicClientApplication protected ()
-  extends typings.azureMsalBrowser.publicClientApplicationMod.PublicClientApplication {
+  extends typings.azureMsalBrowser.distAppPublicClientApplicationMod.PublicClientApplication {
   /**
     * @constructor
     * Constructor for the PublicClientApplication used to instantiate the PublicClientApplication object

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudMemcacheV1LocationMetadata extends StObject {
     * creating a Memcached instance.
     */
   var availableZones: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudMemcacheV1LocationMetadata & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudMemcacheV1LocationMetadata {
@@ -27,9 +24,7 @@ object GoogleCloudMemcacheV1LocationMetadata {
   extension [Self <: GoogleCloudMemcacheV1LocationMetadata](x: Self) {
     
     inline def setAvailableZones(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudMemcacheV1LocationMetadata & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
     inline def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)

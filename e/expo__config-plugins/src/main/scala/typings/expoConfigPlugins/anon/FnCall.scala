@@ -1,7 +1,7 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.createBaseModMod.ForwardedBaseModOptions
-import typings.expoConfigPlugins.pluginTypesMod.ExportedConfig
+import typings.expoConfigPlugins.buildPluginDottypesMod.ExportedConfig
+import typings.expoConfigPlugins.buildPluginsCreateBaseModMod.ForwardedBaseModOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

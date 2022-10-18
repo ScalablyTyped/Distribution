@@ -17,7 +17,6 @@ import typings.materialUiStyles.stylesProviderStylesProviderMod.StylesOptions
 import typings.materialUiStyles.stylesProviderStylesProviderMod.StylesProviderProps
 import typings.materialUiStyles.themeProviderThemeProviderMod.ThemeProviderProps
 import typings.materialUiStyles.withStylesWithStylesMod.ClassKeyOfStyles
-import typings.materialUiStyles.withStylesWithStylesMod.ClassNameMap
 import typings.materialUiStyles.withStylesWithStylesMod.PropsOfStyles
 import typings.materialUiStyles.withStylesWithStylesMod.StyleRules
 import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
@@ -51,6 +50,45 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default[Theme](component: ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]): ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState], 
+        ComponentProps[
+          ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
+        ]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState], 
+        ComponentProps[
+          ComponentClass[ConsistentWith[ComponentProps[Any], WithTheme[Theme]], ComponentState]
+        ]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
+  inline def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]): ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
+  
   @JSImport("@material-ui/styles", "ServerStyleSheets")
   @js.native
   open class ServerStyleSheets () extends default {
@@ -76,9 +114,9 @@ object mod {
   
   inline def jssPreset(): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("jssPreset")().asInstanceOf[JssOptions]
   
-  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]]]
+  inline def makeStyles[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
-  inline def makeStyles_withTheme[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[js.UndefOr[Any | (/* props */ Props)], ClassNameMap[ClassKey]]]
+  inline def makeStyles_withTheme[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): /* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: keyof Props extends never ? (props : any | undefined): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> : (props : Props): @material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<ClassKey> */ js.Any]
   
   inline def mergeClasses(): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClasses")().asInstanceOf[Classes]
   inline def mergeClasses(options: MergeClassesOption): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClasses")(options.asInstanceOf[js.Any]).asInstanceOf[Classes]

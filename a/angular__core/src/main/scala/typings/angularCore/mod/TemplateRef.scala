@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "TemplateRef")
+/* note: abstract class */ @JSImport("@angular/core", "TemplateRef")
 @js.native
-abstract class TemplateRef[C] () extends StObject {
+open class TemplateRef[C] () extends StObject {
   
   /**
     * Instantiates an unattached embedded view based on this template.

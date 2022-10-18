@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object classMod {
   
-  @JSImport("@wordpress/customize-browser/Class", "Class")
+  /* note: abstract class */ @JSImport("@wordpress/customize-browser/Class", "Class")
   @js.native
-  abstract class Class protected () extends StObject {
+  open class Class protected () extends StObject {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

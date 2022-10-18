@@ -1,6 +1,6 @@
 package typings.rdflib
 
-import typings.rdflib.fetcherMod._StatusValues
+import typings.rdflib.libFetcherMod._StatusValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

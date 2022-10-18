@@ -1,7 +1,6 @@
 package typings.combineReducers
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S](reducers: ReducersMapObject[S, Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
-  
-  inline def default_SA[S, A /* <: Action[Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
+  inline def default[S, A /* <: Action[Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
   
   trait Action[T] extends StObject {
     
@@ -50,7 +47,13 @@ object mod {
   
   type Reducer[S, A /* <: Action[Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   
-  type ReducersMapObject[S, A /* <: Action[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]: combine-reducers.combine-reducers.Reducer<S[K], A>}
-    */ typings.combineReducers.combineReducersStrings.ReducersMapObject & TopLevel[S]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof S ]: combine-reducers.combine-reducers.Reducer<S[K], A>}
+    }}}
+    */
+  @js.native
+  trait ReducersMapObject[S, A /* <: Action[Any] */] extends StObject
 }

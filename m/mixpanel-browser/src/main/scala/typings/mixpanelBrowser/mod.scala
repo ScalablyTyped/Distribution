@@ -384,21 +384,49 @@ object mod {
     def remove(list_name: String, value: String, callback: Callback): Group = js.native
     
     def set(prop: String): Group = js.native
-    def set(prop: String, to: js.UndefOr[String]): Group = js.native
-    def set(prop: String, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def set(
+      prop: String,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: string extends string ? string : undefined */ js.Any
+    ): Group = js.native
+    def set(
+      prop: String,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: string extends string ? string : undefined */ js.Any,
+      callback: Callback
+    ): Group = js.native
     def set(prop: String, to: Unit, callback: Callback): Group = js.native
     def set(prop: Dict): Group = js.native
-    def set(prop: Dict, to: js.UndefOr[String]): Group = js.native
-    def set(prop: Dict, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def set(
+      prop: Dict,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: mixpanel-browser.mixpanel-browser.Dict extends string ? string : undefined */ js.Any
+    ): Group = js.native
+    def set(
+      prop: Dict,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: mixpanel-browser.mixpanel-browser.Dict extends string ? string : undefined */ js.Any,
+      callback: Callback
+    ): Group = js.native
     def set(prop: Dict, to: Unit, callback: Callback): Group = js.native
     
     def set_once(prop: String): Group = js.native
-    def set_once(prop: String, to: js.UndefOr[String]): Group = js.native
-    def set_once(prop: String, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def set_once(
+      prop: String,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: string extends string ? string : undefined */ js.Any
+    ): Group = js.native
+    def set_once(
+      prop: String,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: string extends string ? string : undefined */ js.Any,
+      callback: Callback
+    ): Group = js.native
     def set_once(prop: String, to: Unit, callback: Callback): Group = js.native
     def set_once(prop: Dict): Group = js.native
-    def set_once(prop: Dict, to: js.UndefOr[String]): Group = js.native
-    def set_once(prop: Dict, to: js.UndefOr[String], callback: Callback): Group = js.native
+    def set_once(
+      prop: Dict,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: mixpanel-browser.mixpanel-browser.Dict extends string ? string : undefined */ js.Any
+    ): Group = js.native
+    def set_once(
+      prop: Dict,
+      to: /* import warning: importer.ImportType#apply Failed type conversion: mixpanel-browser.mixpanel-browser.Dict extends string ? string : undefined */ js.Any,
+      callback: Callback
+    ): Group = js.native
     def set_once(prop: Dict, to: Unit, callback: Callback): Group = js.native
     
     def union(list_name: String, values: js.Array[String | Double]): Group = js.native

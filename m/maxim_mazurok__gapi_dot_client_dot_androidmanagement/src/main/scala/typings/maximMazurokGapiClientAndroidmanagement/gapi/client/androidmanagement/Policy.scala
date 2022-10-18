@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -183,9 +182,7 @@ trait Policy extends StObject {
   
   /** Network configuration for the device. See configure networks for more information. */
   var openNetworkConfiguration: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Whether using NFC to beam data from apps is disabled. */
@@ -553,9 +550,7 @@ object Policy {
     inline def setOncCertificateProvidersVarargs(value: OncCertificateProvider*): Self = StObject.set(x, "oncCertificateProviders", js.Array(value*))
     
     inline def setOpenNetworkConfiguration(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Policy & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "openNetworkConfiguration", value.asInstanceOf[js.Any])
     
     inline def setOpenNetworkConfigurationUndefined: Self = StObject.set(x, "openNetworkConfiguration", js.undefined)

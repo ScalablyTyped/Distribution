@@ -1,7 +1,6 @@
 package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.pubnub.anon.AuthKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,11 +34,6 @@ type GetUUIDMetadataResponse[Custom /* <: ObjectCustom */] = ObjectsResponse[UUI
 type ManageChannelMembersResponse[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] = PagedObjectsResponse[UUIDMembershipObject[MembershipCustom, UUIDCustom]]
 
 type ManageMembershipsResponse[MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */] = PagedObjectsResponse[ChannelMembershipObject[MembershipCustom, ChannelCustom]]
-
-// partial but everything can be null (even with strictNullChecks)
-type Nullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P] | null}
-  */ typings.pubnub.pubnubStrings.Nullable & TopLevel[T]
 
 // Objects v2
 // Object

@@ -1,15 +1,15 @@
 package typings.fpTs.mod
 
-import typings.fpTs.monadMod.Monad
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.monadMod.Monad2
-import typings.fpTs.monadMod.Monad2C
-import typings.fpTs.monadMod.Monad3
-import typings.fpTs.writerTMod.WriterM
-import typings.fpTs.writerTMod.WriterM1
-import typings.fpTs.writerTMod.WriterM2
-import typings.fpTs.writerTMod.WriterM2C
-import typings.fpTs.writerTMod.WriterM3
+import typings.fpTs.libMonadMod.Monad
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libMonadMod.Monad2
+import typings.fpTs.libMonadMod.Monad2C
+import typings.fpTs.libMonadMod.Monad3
+import typings.fpTs.libWriterTMod.WriterM
+import typings.fpTs.libWriterTMod.WriterM1
+import typings.fpTs.libWriterTMod.WriterM2
+import typings.fpTs.libWriterTMod.WriterM2C
+import typings.fpTs.libWriterTMod.WriterM3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200Content66` extends StObject {
   
-  /** A JSON serialized template for OIDC subject claim customization */
+  /** Response */
   var `200`: Content66
 }
 object `200Content66` {

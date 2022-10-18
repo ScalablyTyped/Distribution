@@ -1,14 +1,14 @@
 package typings.wordpressI18n
 
-import typings.wordpressHooks.createHooksMod._Hooks
-import typings.wordpressI18n.createI18nMod.GetLocaleData
-import typings.wordpressI18n.createI18nMod.HasTranslation
-import typings.wordpressI18n.createI18nMod.I18n
-import typings.wordpressI18n.createI18nMod.IsRtl
-import typings.wordpressI18n.createI18nMod.LocaleData
-import typings.wordpressI18n.createI18nMod.ResetLocaleData
-import typings.wordpressI18n.createI18nMod.SetLocaleData
-import typings.wordpressI18n.createI18nMod.Subscribe
+import typings.wordpressHooks.buildTypesCreateHooksMod._Hooks
+import typings.wordpressI18n.buildTypesCreateI18nMod.GetLocaleData
+import typings.wordpressI18n.buildTypesCreateI18nMod.HasTranslation
+import typings.wordpressI18n.buildTypesCreateI18nMod.I18n
+import typings.wordpressI18n.buildTypesCreateI18nMod.IsRtl
+import typings.wordpressI18n.buildTypesCreateI18nMod.LocaleData
+import typings.wordpressI18n.buildTypesCreateI18nMod.ResetLocaleData
+import typings.wordpressI18n.buildTypesCreateI18nMod.SetLocaleData
+import typings.wordpressI18n.buildTypesCreateI18nMod.Subscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,7 @@ object mod {
   
   @JSImport("@wordpress/i18n", "__")
   @js.native
-  val __ : typings.wordpressI18n.createI18nMod.__ = js.native
+  val __ : typings.wordpressI18n.buildTypesCreateI18nMod.__ = js.native
   
   inline def createI18n(): I18n = ^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")().asInstanceOf[I18n]
   inline def createI18n(initialData: Unit, initialDomain: String): I18n = (^.asInstanceOf[js.Dynamic].applyDynamic("createI18n")(initialData.asInstanceOf[js.Any], initialDomain.asInstanceOf[js.Any])).asInstanceOf[I18n]
@@ -50,11 +50,11 @@ object mod {
   
   @JSImport("@wordpress/i18n", "_n")
   @js.native
-  val n: typings.wordpressI18n.createI18nMod.n = js.native
+  val n: typings.wordpressI18n.buildTypesCreateI18nMod.n = js.native
   
   @JSImport("@wordpress/i18n", "_nx")
   @js.native
-  val nx: typings.wordpressI18n.createI18nMod.nx = js.native
+  val nx: typings.wordpressI18n.buildTypesCreateI18nMod.nx = js.native
   
   @JSImport("@wordpress/i18n", "resetLocaleData")
   @js.native
@@ -72,5 +72,5 @@ object mod {
   
   @JSImport("@wordpress/i18n", "_x")
   @js.native
-  val x: typings.wordpressI18n.createI18nMod.x = js.native
+  val x: typings.wordpressI18n.buildTypesCreateI18nMod.x = js.native
 }

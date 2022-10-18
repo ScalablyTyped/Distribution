@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PhysicsUpdraftEventOptions")
 @js.native
 open class PhysicsUpdraftEventOptions ()
-  extends typings.babylonjs.legacyMod.PhysicsUpdraftEventOptions
+  extends typings.babylonjs.legacyLegacyMod.PhysicsUpdraftEventOptions

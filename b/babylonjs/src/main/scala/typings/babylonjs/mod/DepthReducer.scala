@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DepthReducer")
 @js.native
 open class DepthReducer protected ()
-  extends typings.babylonjs.legacyMod.DepthReducer {
+  extends typings.babylonjs.legacyLegacyMod.DepthReducer {
   /**
     * Creates a depth reducer
     * @param camera The camera used to render the depth texture
     */
-  def this(camera: typings.babylonjs.cameraMod.Camera) = this()
+  def this(camera: typings.babylonjs.camerasCameraMod.Camera) = this()
 }

@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the thumbnail image for a device. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceThumbnail")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceThumbnail")
 @js.native
-abstract class DeviceThumbnail ()
+open class DeviceThumbnail ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceThumbnail {
   

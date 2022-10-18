@@ -17,19 +17,19 @@ object mod extends Shortcut {
   
   @JSImport("naja", JSImport.Default)
   @js.native
-  val default: typings.naja.najaMod.Naja = js.native
+  val default: typings.naja.distNajaMod.Naja = js.native
   
   @JSImport("naja", "HttpError")
   @js.native
   open class HttpError protected ()
-    extends typings.naja.najaMod.HttpError {
+    extends typings.naja.distNajaMod.HttpError {
     def this(response: Response) = this()
   }
   
   @JSImport("naja", "Naja")
   @js.native
   open class Naja protected ()
-    extends typings.naja.najaMod.Naja {
+    extends typings.naja.distNajaMod.Naja {
     def this(
       uiHandler: js.UndefOr[Instantiable],
       redirectHandler: js.UndefOr[InstantiableRedirectHandler],
@@ -41,8 +41,8 @@ object mod extends Shortcut {
     ) = this()
   }
   
-  type _To = typings.naja.najaMod.Naja
+  type _To = typings.naja.distNajaMod.Naja
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: typings.naja.najaMod.Naja = default
+  override def _to: typings.naja.distNajaMod.Naja = default
 }

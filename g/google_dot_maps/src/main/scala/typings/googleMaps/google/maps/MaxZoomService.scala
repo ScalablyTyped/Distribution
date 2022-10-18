@@ -18,8 +18,6 @@ trait MaxZoomService extends StObject {
     * function which will be executed upon completion of the request, being
     * passed a <code>MaxZoomResult</code>.
     */
-  def getMaxZoomAtLatLng(): js.Promise[MaxZoomResult] = js.native
-  def getMaxZoomAtLatLng(latlng: Null, callback: js.Function1[/* a */ MaxZoomResult, Unit]): js.Promise[MaxZoomResult] = js.native
   def getMaxZoomAtLatLng(latlng: LatLng): js.Promise[MaxZoomResult] = js.native
   def getMaxZoomAtLatLng(latlng: LatLngLiteral): js.Promise[MaxZoomResult] = js.native
   def getMaxZoomAtLatLng(latlng: LatLngLiteral, callback: js.Function1[/* a */ MaxZoomResult, Unit]): js.Promise[MaxZoomResult] = js.native

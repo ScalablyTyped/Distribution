@@ -2,9 +2,9 @@ package typings.awsSdkClientGlacierNode
 
 import typings.awsSdkClientGlacierNode.glacierConfigurationMod.GlacierConfiguration
 import typings.awsSdkClientGlacierNode.glacierConfigurationMod.GlacierResolvedConfiguration
-import typings.awsSdkClientGlacierNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientGlacierNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientGlacierNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientGlacierNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

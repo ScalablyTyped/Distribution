@@ -1,6 +1,5 @@
 package typings.ldapjs.mod
 
-import typings.ldapjs.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ApproximateFilter protected ()
   extends StObject
      with Filter {
-  def this(options: Value) = this()
+  def this(options: typings.ldapjs.anon.Attribute) = this()
   
   /* CompleteClass */
   override def matches(obj: Any): Boolean = js.native

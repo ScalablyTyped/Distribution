@@ -27,10 +27,6 @@ object simperiumStrings {
   inline def I: I = "I".asInstanceOf[I]
   
   @js.native
-  sealed trait JSONDiff extends StObject
-  inline def JSONDiff: JSONDiff = "JSONDiff".asInstanceOf[JSONDiff]
-  
-  @js.native
   sealed trait L extends StObject
   inline def L: L = "L".asInstanceOf[L]
   

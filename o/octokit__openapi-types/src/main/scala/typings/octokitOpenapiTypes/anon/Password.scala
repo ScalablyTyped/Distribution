@@ -8,34 +8,22 @@ trait Password extends StObject {
   
   var content_type: js.UndefOr[String] = js.undefined
   
-  /** @example "sha256" */
-  var digest: js.UndefOr[String] = js.undefined
-  
-  /** @example "foo@bar.com" */
-  var email: js.UndefOr[String] = js.undefined
-  
   var insecure_ssl: js.UndefOr[String | Double] = js.undefined
   
-  /** @example "foo" */
+  /** @example "password" */
   var password: js.UndefOr[String] = js.undefined
-  
-  /** @example "roomer" */
-  var room: js.UndefOr[String] = js.undefined
   
   var secret: js.UndefOr[String] = js.undefined
   
-  /** @example "foo" */
-  var subdomain: js.UndefOr[String] = js.undefined
+  var url: String
   
-  /** @example "abc" */
-  var token: js.UndefOr[String] = js.undefined
-  
-  var url: js.UndefOr[String] = js.undefined
+  /** @example "kdaigle" */
+  var username: js.UndefOr[String] = js.undefined
 }
 object Password {
   
-  inline def apply(): Password = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(url: String): Password = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Password]
   }
   
@@ -45,14 +33,6 @@ object Password {
     
     inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
-    
-    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
-    
-    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-    
-    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
-    
     inline def setInsecure_ssl(value: String | Double): Self = StObject.set(x, "insecure_ssl", value.asInstanceOf[js.Any])
     
     inline def setInsecure_sslUndefined: Self = StObject.set(x, "insecure_ssl", js.undefined)
@@ -61,24 +41,14 @@ object Password {
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
-    
-    inline def setRoomUndefined: Self = StObject.set(x, "room", js.undefined)
-    
     inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    inline def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
-    
-    inline def setSubdomainUndefined: Self = StObject.set(x, "subdomain", js.undefined)
-    
-    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
-    
-    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
-    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

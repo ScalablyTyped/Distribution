@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "FontMetrics")
 @js.native
 /* private */ open class FontMetrics ()
-  extends typings.blackEngine.fontMetricsMod.FontMetrics
+  extends typings.blackEngine.displayTextFontMetricsMod.FontMetrics
 /* static members */
 object FontMetrics {
   
@@ -15,5 +15,5 @@ object FontMetrics {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def get(fontName: String): typings.blackEngine.fontMetricsMod.FontMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(fontName.asInstanceOf[js.Any]).asInstanceOf[typings.blackEngine.fontMetricsMod.FontMetrics]
+  inline def get(fontName: String): typings.blackEngine.displayTextFontMetricsMod.FontMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(fontName.asInstanceOf[js.Any]).asInstanceOf[typings.blackEngine.displayTextFontMetricsMod.FontMetrics]
 }

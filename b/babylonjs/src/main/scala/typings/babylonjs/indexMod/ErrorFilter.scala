@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ErrorFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.ErrorFilter & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ErrorFilter & String] = js.native
   
-  /* "out-of-memory" */ val OutOfMemory: typings.babylonjs.webgpuConstantsMod.ErrorFilter.OutOfMemory & String = js.native
+  /* "out-of-memory" */ val OutOfMemory: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ErrorFilter.OutOfMemory & String = js.native
   
-  /* "validation" */ val Validation: typings.babylonjs.webgpuConstantsMod.ErrorFilter.Validation & String = js.native
+  /* "validation" */ val Validation: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ErrorFilter.Validation & String = js.native
 }

@@ -1,8 +1,8 @@
 package typings.physijs.mod
 
 import typings.physijs.anon.Target
-import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.mod.Vector3
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Mesh protected ()
   extends typings.three.mod.Mesh[
       BufferGeometry, 
-      typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+      typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ] {
   def this(geometry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify THREE.Geometry */ Any) = this()
   def this(

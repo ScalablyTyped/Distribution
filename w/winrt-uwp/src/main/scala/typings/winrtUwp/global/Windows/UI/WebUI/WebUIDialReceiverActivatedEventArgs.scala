@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated from another app by using the DIAL protocol. */
-@JSGlobal("Windows.UI.WebUI.WebUIDialReceiverActivatedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIDialReceiverActivatedEventArgs")
 @js.native
-abstract class WebUIDialReceiverActivatedEventArgs ()
+open class WebUIDialReceiverActivatedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIDialReceiverActivatedEventArgs {
   

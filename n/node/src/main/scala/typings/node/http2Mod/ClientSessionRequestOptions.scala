@@ -1,6 +1,6 @@
 package typings.node.http2Mod
 
-import typings.std.AbortSignal
+import typings.node.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

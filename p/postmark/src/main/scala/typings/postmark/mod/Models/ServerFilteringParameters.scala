@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Models.ServerFilteringParameters")
 @js.native
 open class ServerFilteringParameters ()
-  extends typings.postmark.modelsMod.ServerFilteringParameters {
+  extends typings.postmark.distClientModelsMod.ServerFilteringParameters {
   def this(count: Double) = this()
   def this(count: Double, offset: Double) = this()
   def this(count: Unit, offset: Double) = this()

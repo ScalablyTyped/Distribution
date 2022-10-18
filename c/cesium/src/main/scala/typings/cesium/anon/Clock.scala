@@ -1,25 +1,29 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.JulianDate
-import typings.std.HTMLVideoElement
+import typings.cesium.mod.TimeIntervalCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Clock extends StObject {
   
-  var clock: js.UndefOr[typings.cesium.mod.Clock] = js.undefined
+  var clock: typings.cesium.mod.Clock
   
-  var element: js.UndefOr[HTMLVideoElement] = js.undefined
+  def reloadFunction(params: Any*): Any
   
-  var epoch: js.UndefOr[JulianDate] = js.undefined
+  def requestImageFunction(params: Any*): Any
   
-  var tolerance: js.UndefOr[Double] = js.undefined
+  var times: TimeIntervalCollection
 }
 object Clock {
   
-  inline def apply(): Clock = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    clock: typings.cesium.mod.Clock,
+    reloadFunction: /* repeated */ Any => Any,
+    requestImageFunction: /* repeated */ Any => Any,
+    times: TimeIntervalCollection
+  ): Clock = {
+    val __obj = js.Dynamic.literal(clock = clock.asInstanceOf[js.Any], reloadFunction = js.Any.fromFunction1(reloadFunction), requestImageFunction = js.Any.fromFunction1(requestImageFunction), times = times.asInstanceOf[js.Any])
     __obj.asInstanceOf[Clock]
   }
   
@@ -27,18 +31,10 @@ object Clock {
     
     inline def setClock(value: typings.cesium.mod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
-    inline def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
+    inline def setReloadFunction(value: /* repeated */ Any => Any): Self = StObject.set(x, "reloadFunction", js.Any.fromFunction1(value))
     
-    inline def setElement(value: HTMLVideoElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setRequestImageFunction(value: /* repeated */ Any => Any): Self = StObject.set(x, "requestImageFunction", js.Any.fromFunction1(value))
     
-    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setEpoch(value: JulianDate): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
-    
-    inline def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
-    
-    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
-    
-    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+    inline def setTimes(value: TimeIntervalCollection): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
   }
 }

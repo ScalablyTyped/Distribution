@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JSJoda.ZoneId")
+/* note: abstract class */ @JSGlobal("JSJoda.ZoneId")
 @js.native
-abstract class ZoneId ()
+open class ZoneId ()
   extends typings.jsJodaCore.mod.ZoneId
 /* static members */
 object ZoneId {

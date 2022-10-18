@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about the cached file operation that invoked the trigger. */
-@JSGlobal("Windows.ApplicationModel.Background.CachedFileUpdaterTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.CachedFileUpdaterTriggerDetails")
 @js.native
-abstract class CachedFileUpdaterTriggerDetails ()
+open class CachedFileUpdaterTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.CachedFileUpdaterTriggerDetails {
   

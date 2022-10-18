@@ -2,8 +2,8 @@ package typings.awsSdkUtilCreateRequest
 
 import typings.awsSdkSmithyClient.mod.Client
 import typings.awsSdkSmithyClient.mod.Command
-import typings.awsSdkTypes.httpMod.HttpRequest
-import typings.awsSdkTypes.responseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesHttpMod.HttpRequest
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

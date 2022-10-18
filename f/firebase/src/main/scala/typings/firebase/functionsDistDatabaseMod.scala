@@ -15,31 +15,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object functionsDistDatabaseMod {
   
-  @JSImport("firebase/compat/functions/dist/database", JSImport.Namespace)
+  @JSImport("firebase/functions/dist/database", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase/compat/functions/dist/database", "DataSnapshot")
+  @JSImport("firebase/functions/dist/database", "DataSnapshot")
   @js.native
   /* private */ open class DataSnapshot ()
     extends typings.firebaseDatabase.mod.DataSnapshot
   
-  @JSImport("firebase/compat/functions/dist/database", "Database")
+  @JSImport("firebase/functions/dist/database", "Database")
   @js.native
   /* private */ open class Database ()
     extends typings.firebaseDatabase.mod.Database
   
-  @JSImport("firebase/compat/functions/dist/database", "OnDisconnect")
+  @JSImport("firebase/functions/dist/database", "OnDisconnect")
   @js.native
   /* private */ open class OnDisconnect_ ()
     extends typings.firebaseDatabase.mod.OnDisconnect_
   
-  @JSImport("firebase/compat/functions/dist/database", "QueryConstraint")
+  /* note: abstract class */ @JSImport("firebase/functions/dist/database", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
+  open class QueryConstraint ()
     extends typings.firebaseDatabase.mod.QueryConstraint
   
-  @JSImport("firebase/compat/functions/dist/database", "TransactionResult")
+  @JSImport("firebase/functions/dist/database", "TransactionResult")
   @js.native
   /* private */ open class TransactionResult ()
     extends typings.firebaseDatabase.mod.TransactionResult

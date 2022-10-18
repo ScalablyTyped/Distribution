@@ -7,20 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueRuntimeDomStrings {
   
   @js.native
-  sealed trait apply extends StObject
-  inline def apply: apply = "<apply>".asInstanceOf[apply]
-  
-  @js.native
   sealed trait `1` extends StObject
   inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
   sealed trait A extends StObject
   inline def A: A = "A".asInstanceOf[A]
-  
-  @js.native
-  sealed trait EventHandlers extends StObject
-  inline def EventHandlers: EventHandlers = "EventHandlers".asInstanceOf[EventHandlers]
   
   @js.native
   sealed trait I extends StObject
@@ -137,18 +129,6 @@ object vueRuntimeDomStrings {
   @js.native
   sealed trait decimal extends StObject
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
-  
-  @js.native
-  sealed trait defineComponent extends StObject
-  inline def defineComponent: defineComponent = "defineComponent".asInstanceOf[defineComponent]
-  
-  @js.native
-  sealed trait defineCustomElement extends StObject
-  inline def defineCustomElement: defineCustomElement = "defineCustomElement".asInstanceOf[defineCustomElement]
-  
-  @js.native
-  sealed trait defineProps extends StObject
-  inline def defineProps: defineProps = "defineProps".asInstanceOf[defineProps]
   
   @js.native
   sealed trait descending extends StObject

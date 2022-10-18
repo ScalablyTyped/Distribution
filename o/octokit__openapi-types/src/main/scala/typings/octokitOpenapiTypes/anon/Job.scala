@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Job extends StObject {
   
   /** @description A description of the detector used. */
-  var detector: UrlVersion
+  var detector: NameUrl
   
   var job: Correlator
   
@@ -47,14 +47,14 @@ trait Job extends StObject {
 }
 object Job {
   
-  inline def apply(detector: UrlVersion, job: Correlator, ref: String, scanned: String, sha: String, version: Double): Job = {
+  inline def apply(detector: NameUrl, job: Correlator, ref: String, scanned: String, sha: String, version: Double): Job = {
     val __obj = js.Dynamic.literal(detector = detector.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], scanned = scanned.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job]
   }
   
   extension [Self <: Job](x: Self) {
     
-    inline def setDetector(value: UrlVersion): Self = StObject.set(x, "detector", value.asInstanceOf[js.Any])
+    inline def setDetector(value: NameUrl): Self = StObject.set(x, "detector", value.asInstanceOf[js.Any])
     
     inline def setJob(value: Correlator): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     

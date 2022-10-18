@@ -14,7 +14,7 @@ trait Padding extends StObject {
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -22,17 +22,17 @@ trait Padding extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
-    * Border color of the text fregment.
+    * Border color of the text fragment.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -40,15 +40,15 @@ trait Padding extends StObject {
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
-    * Border width of the text fregment.
+    * Border width of the text fragment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
@@ -57,20 +57,10 @@ trait Padding extends StObject {
     *
     *
     * @default
-    * ""#fff""
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.color
+    * "auto"
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.color
     */
   var color: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The distance between the label and tick line.
-    *
-    *
-    * @default
-    * "true"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.distance
-    */
-  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * font family
@@ -80,7 +70,7 @@ trait Padding extends StObject {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -89,8 +79,8 @@ trait Padding extends StObject {
     *
     *
     * @default
-    * 12
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontSize
+    * 15
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -106,7 +96,7 @@ trait Padding extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -124,20 +114,17 @@ trait Padding extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontWeight
     */
   var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * The content formatter of scale label, which supports both
-    * string template and callback function. Example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * Formatter is used to format detail, which supports string template and callback function.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.formatter
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.formatter
     */
-  var formatter: js.UndefOr[js.Function | String] = js.undefined
+  var formatter: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * Height of the text block.
@@ -151,7 +138,7 @@ trait Padding extends StObject {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.height
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -161,12 +148,26 @@ trait Padding extends StObject {
     * If `lineHeight` is not set in `rich`, `lineHeight` in parent
     * level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The offset position relative to the center of gauge chart.
+    * The first item of array is the horizontal offset; the second
+    * item of array is the vertical offset.
+    * It could be absolute value and also the percentage relative
+    * to the radius of gauge chart.
+    *
+    *
+    * @default
+    * [0, '40%']
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.offsetCenter
+    */
+  var offsetCenter: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
@@ -180,7 +181,7 @@ trait Padding extends StObject {
     * of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.padding
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
@@ -188,18 +189,30 @@ trait Padding extends StObject {
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.axisLabel)
+    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.rich
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.rich.%3Cuser%20defined%20style%20name%3E
+    * The text color. Defaults to use
+    * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
+    * where the numerical value belongs to.
+    *
+    *
+    * @todo check that the option is valid and should be here
+    * @default
+    * "auto"
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
+    */
+  // color?: string;
+  /**
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
@@ -208,7 +221,7 @@ trait Padding extends StObject {
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -218,7 +231,7 @@ trait Padding extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -226,7 +239,7 @@ trait Padding extends StObject {
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -234,17 +247,17 @@ trait Padding extends StObject {
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether to show the label.
+    * Whether to show the details.
     *
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.show
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
@@ -254,7 +267,7 @@ trait Padding extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -262,7 +275,7 @@ trait Padding extends StObject {
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -270,7 +283,7 @@ trait Padding extends StObject {
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -280,7 +293,7 @@ trait Padding extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -288,7 +301,7 @@ trait Padding extends StObject {
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -296,7 +309,7 @@ trait Padding extends StObject {
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   
@@ -320,7 +333,7 @@ trait Padding extends StObject {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.width
+    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -353,10 +366,6 @@ object Padding {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
-    
-    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
-    
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -373,7 +382,7 @@ object Padding {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: String | js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
@@ -385,6 +394,12 @@ object Padding {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
+    inline def setOffsetCenter(value: js.Array[Any]): Self = StObject.set(x, "offsetCenter", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetCenterUndefined: Self = StObject.set(x, "offsetCenter", js.undefined)
+    
+    inline def setOffsetCenterVarargs(value: Any*): Self = StObject.set(x, "offsetCenter", js.Array(value*))
+    
     inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
@@ -393,7 +408,19 @@ object Padding {
     
     inline def setRich(
       value: /**
-      * @see https://echarts.apache.org/en/option.html#series-gauge.axisLabel.rich.%3Cuser%20defined%20style%20name%3E
+      * The text color. Defaults to use
+      * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
+      * where the numerical value belongs to.
+      *
+      *
+      * @todo check that the option is valid and should be here
+      * @default
+      * "auto"
+      * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
+      */
+    // color?: string;
+    /**
+      * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])

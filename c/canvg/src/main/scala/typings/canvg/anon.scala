@@ -6,16 +6,16 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.canvg.canvgInts.`0`
 import typings.canvg.canvgInts.`1`
-import typings.canvg.documentDocumentMod.Document
-import typings.canvg.filterElementMod.FilterElement
-import typings.canvg.glyphElementMod.GlyphElement
-import typings.canvg.maskElementMod.MaskElement
-import typings.canvg.nodeMod.Fetch
-import typings.canvg.pathElementMod.PathElement
-import typings.canvg.pathParserMod.PathParser
-import typings.canvg.styleElementMod.StyleElement
-import typings.canvg.textPathElementMod.ICachedPoint
-import typings.canvg.typesMod.DOMParser
+import typings.canvg.distDocumentDocumentMod.Document
+import typings.canvg.distDocumentFilterElementMod.FilterElement
+import typings.canvg.distDocumentGlyphElementMod.GlyphElement
+import typings.canvg.distDocumentMaskElementMod.MaskElement
+import typings.canvg.distDocumentPathElementMod.PathElement
+import typings.canvg.distDocumentStyleElementMod.StyleElement
+import typings.canvg.distDocumentTextPathElementMod.ICachedPoint
+import typings.canvg.distPathParserMod.PathParser
+import typings.canvg.distPresetsNodeMod.Fetch
+import typings.canvg.distPresetsTypesMod.DOMParser
 import typings.offscreencanvas.OffscreenCanvas
 import typings.std.HTMLElement
 import typings.std.ImageBitmap
@@ -35,9 +35,9 @@ object anon {
     
     var ad: Double
     
-    var centp: typings.canvg.pointMod.Point
+    var centp: typings.canvg.distPointMod.Point
     
-    var currentPoint: typings.canvg.pointMod.Point
+    var currentPoint: typings.canvg.distPointMod.Point
     
     var rX: Double
     
@@ -52,8 +52,8 @@ object anon {
     inline def apply(
       a1: Double,
       ad: Double,
-      centp: typings.canvg.pointMod.Point,
-      currentPoint: typings.canvg.pointMod.Point,
+      centp: typings.canvg.distPointMod.Point,
+      currentPoint: typings.canvg.distPointMod.Point,
       rX: Double,
       rY: Double,
       sweepFlag: `0` | `1`,
@@ -69,9 +69,9 @@ object anon {
       
       inline def setAd(value: Double): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
       
-      inline def setCentp(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "centp", value.asInstanceOf[js.Any])
+      inline def setCentp(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "centp", value.asInstanceOf[js.Any])
       
-      inline def setCurrentPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
+      inline def setCurrentPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
       
       inline def setRX(value: Double): Self = StObject.set(x, "rX", value.asInstanceOf[js.Any])
       
@@ -85,21 +85,21 @@ object anon {
   
   trait ControlPoint extends StObject {
     
-    var controlPoint: typings.canvg.pointMod.Point
+    var controlPoint: typings.canvg.distPointMod.Point
     
-    var current: typings.canvg.pointMod.Point
+    var current: typings.canvg.distPointMod.Point
     
-    var currentPoint: typings.canvg.pointMod.Point
+    var currentPoint: typings.canvg.distPointMod.Point
     
-    var point: typings.canvg.pointMod.Point
+    var point: typings.canvg.distPointMod.Point
   }
   object ControlPoint {
     
     inline def apply(
-      controlPoint: typings.canvg.pointMod.Point,
-      current: typings.canvg.pointMod.Point,
-      currentPoint: typings.canvg.pointMod.Point,
-      point: typings.canvg.pointMod.Point
+      controlPoint: typings.canvg.distPointMod.Point,
+      current: typings.canvg.distPointMod.Point,
+      currentPoint: typings.canvg.distPointMod.Point,
+      point: typings.canvg.distPointMod.Point
     ): ControlPoint = {
       val __obj = js.Dynamic.literal(controlPoint = controlPoint.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], currentPoint = currentPoint.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlPoint]
@@ -107,63 +107,19 @@ object anon {
     
     extension [Self <: ControlPoint](x: Self) {
       
-      inline def setControlPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
+      inline def setControlPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
       
-      inline def setCurrent(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      inline def setCurrentPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
+      inline def setCurrentPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
       
-      inline def setPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     }
   }
   
   trait CreateCanvas extends StObject {
     
-    var DOMParser: typings.canvg.typesMod.DOMParser
-    
-    def createCanvas(width: Double, height: Double): OffscreenCanvas
-    
-    def createImage(url: String): js.Promise[ImageBitmap]
-    
-    var ignoreAnimation: Boolean
-    
-    var ignoreMouse: Boolean
-    
-    var window: Any
-  }
-  object CreateCanvas {
-    
-    inline def apply(
-      DOMParser: DOMParser,
-      createCanvas: (Double, Double) => OffscreenCanvas,
-      createImage: String => js.Promise[ImageBitmap],
-      ignoreAnimation: Boolean,
-      ignoreMouse: Boolean,
-      window: Any
-    ): CreateCanvas = {
-      val __obj = js.Dynamic.literal(DOMParser = DOMParser.asInstanceOf[js.Any], createCanvas = js.Any.fromFunction2(createCanvas), createImage = js.Any.fromFunction1(createImage), ignoreAnimation = ignoreAnimation.asInstanceOf[js.Any], ignoreMouse = ignoreMouse.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CreateCanvas]
-    }
-    
-    extension [Self <: CreateCanvas](x: Self) {
-      
-      inline def setCreateCanvas(value: (Double, Double) => OffscreenCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
-      
-      inline def setCreateImage(value: String => js.Promise[ImageBitmap]): Self = StObject.set(x, "createImage", js.Any.fromFunction1(value))
-      
-      inline def setDOMParser(value: DOMParser): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreAnimation(value: Boolean): Self = StObject.set(x, "ignoreAnimation", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreMouse(value: Boolean): Self = StObject.set(x, "ignoreMouse", value.asInstanceOf[js.Any])
-      
-      inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait CreateImage extends StObject {
-    
-    var DOMParser: typings.canvg.typesMod.DOMParser
+    var DOMParser: typings.canvg.distPresetsTypesMod.DOMParser
     
     def createCanvas(width: Double, height: Double): Any
     
@@ -180,7 +136,7 @@ object anon {
     
     var window: Any
   }
-  object CreateImage {
+  object CreateCanvas {
     
     inline def apply(
       DOMParser: DOMParser,
@@ -190,12 +146,12 @@ object anon {
       ignoreAnimation: Boolean,
       ignoreMouse: Boolean,
       window: Any
-    ): CreateImage = {
+    ): CreateCanvas = {
       val __obj = js.Dynamic.literal(DOMParser = DOMParser.asInstanceOf[js.Any], createCanvas = js.Any.fromFunction2(createCanvas), createImage = js.Any.fromFunction1(createImage), fetch = js.Any.fromFunction2(fetch), ignoreAnimation = ignoreAnimation.asInstanceOf[js.Any], ignoreMouse = ignoreMouse.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CreateImage]
+      __obj.asInstanceOf[CreateCanvas]
     }
     
-    extension [Self <: CreateImage](x: Self) {
+    extension [Self <: CreateCanvas](x: Self) {
       
       inline def setCreateCanvas(value: (Double, Double) => Any): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
       
@@ -213,41 +169,85 @@ object anon {
     }
   }
   
+  trait CreateImage extends StObject {
+    
+    var DOMParser: typings.canvg.distPresetsTypesMod.DOMParser
+    
+    def createCanvas(width: Double, height: Double): OffscreenCanvas
+    
+    def createImage(url: String): js.Promise[ImageBitmap]
+    
+    var ignoreAnimation: Boolean
+    
+    var ignoreMouse: Boolean
+    
+    var window: Any
+  }
+  object CreateImage {
+    
+    inline def apply(
+      DOMParser: DOMParser,
+      createCanvas: (Double, Double) => OffscreenCanvas,
+      createImage: String => js.Promise[ImageBitmap],
+      ignoreAnimation: Boolean,
+      ignoreMouse: Boolean,
+      window: Any
+    ): CreateImage = {
+      val __obj = js.Dynamic.literal(DOMParser = DOMParser.asInstanceOf[js.Any], createCanvas = js.Any.fromFunction2(createCanvas), createImage = js.Any.fromFunction1(createImage), ignoreAnimation = ignoreAnimation.asInstanceOf[js.Any], ignoreMouse = ignoreMouse.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateImage]
+    }
+    
+    extension [Self <: CreateImage](x: Self) {
+      
+      inline def setCreateCanvas(value: (Double, Double) => OffscreenCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
+      
+      inline def setCreateImage(value: String => js.Promise[ImageBitmap]): Self = StObject.set(x, "createImage", js.Any.fromFunction1(value))
+      
+      inline def setDOMParser(value: DOMParser): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreAnimation(value: Boolean): Self = StObject.set(x, "ignoreAnimation", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreMouse(value: Boolean): Self = StObject.set(x, "ignoreMouse", value.asInstanceOf[js.Any])
+      
+      inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Current extends StObject {
     
-    var current: typings.canvg.pointMod.Point
+    var current: typings.canvg.distPointMod.Point
     
-    var point: typings.canvg.pointMod.Point
+    var point: typings.canvg.distPointMod.Point
   }
   object Current {
     
-    inline def apply(current: typings.canvg.pointMod.Point, point: typings.canvg.pointMod.Point): Current = {
+    inline def apply(current: typings.canvg.distPointMod.Point, point: typings.canvg.distPointMod.Point): Current = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current]
     }
     
     extension [Self <: Current](x: Self) {
       
-      inline def setCurrent(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      inline def setPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     }
   }
   
   trait CurrentPoint extends StObject {
     
-    var controlPoint: typings.canvg.pointMod.Point
+    var controlPoint: typings.canvg.distPointMod.Point
     
-    var current: typings.canvg.pointMod.Point
+    var current: typings.canvg.distPointMod.Point
     
-    var currentPoint: typings.canvg.pointMod.Point
+    var currentPoint: typings.canvg.distPointMod.Point
   }
   object CurrentPoint {
     
     inline def apply(
-      controlPoint: typings.canvg.pointMod.Point,
-      current: typings.canvg.pointMod.Point,
-      currentPoint: typings.canvg.pointMod.Point
+      controlPoint: typings.canvg.distPointMod.Point,
+      current: typings.canvg.distPointMod.Point,
+      currentPoint: typings.canvg.distPointMod.Point
     ): CurrentPoint = {
       val __obj = js.Dynamic.literal(controlPoint = controlPoint.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], currentPoint = currentPoint.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurrentPoint]
@@ -255,11 +255,11 @@ object anon {
     
     extension [Self <: CurrentPoint](x: Self) {
       
-      inline def setControlPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
+      inline def setControlPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
       
-      inline def setCurrent(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      inline def setCurrentPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
+      inline def setCurrentPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -358,18 +358,18 @@ object anon {
   
   trait Point extends StObject {
     
-    var point: typings.canvg.pointMod.Point
+    var point: typings.canvg.distPointMod.Point
   }
   object Point {
     
-    inline def apply(point: typings.canvg.pointMod.Point): Point = {
+    inline def apply(point: typings.canvg.distPointMod.Point): Point = {
       val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
     extension [Self <: Point](x: Self) {
       
-      inline def setPoint(value: typings.canvg.pointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     }
   }
   

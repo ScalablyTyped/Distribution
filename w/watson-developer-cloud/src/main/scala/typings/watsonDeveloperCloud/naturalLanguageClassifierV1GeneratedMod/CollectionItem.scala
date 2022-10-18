@@ -29,7 +29,7 @@ object CollectionItem {
     
     inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    inline def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: ClassifiedClass*): Self = StObject.set(x, "classes", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

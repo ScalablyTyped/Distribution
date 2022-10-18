@@ -1,8 +1,8 @@
 package typings.sauronjs
 
-import typings.sauronjs.componentMod.ComponentParameters
-import typings.sauronjs.sauronMod.SauronComponentMap
-import typings.sauronjs.sauronMod.SauronInstance
+import typings.sauronjs.srcCoreComponentMod.ComponentParameters
+import typings.sauronjs.srcCoreSauronMod.SauronComponentMap
+import typings.sauronjs.srcCoreSauronMod.SauronInstance
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object mod {
   @JSImport("sauronjs", "Component")
   @js.native
   open class Component protected ()
-    extends typings.sauronjs.componentMod.^ {
+    extends typings.sauronjs.srcCoreComponentMod.^ {
     def this(params: ComponentParameters) = this()
   }
   object Component {
@@ -37,7 +37,7 @@ object mod {
   @JSImport("sauronjs", "Service")
   @js.native
   open class Service protected ()
-    extends typings.sauronjs.serviceMod.^ {
+    extends typings.sauronjs.srcCoreServiceMod.^ {
     def this(pubs: js.Array[String], subs: js.Array[String]) = this()
   }
   

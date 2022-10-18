@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Serves as a base for commands with the Boolean state.
   */
-@JSGlobal("CommandWithBooleanStateBase")
+/* note: abstract class */ @JSGlobal("CommandWithBooleanStateBase")
 @js.native
-abstract class CommandWithBooleanStateBase ()
+open class CommandWithBooleanStateBase ()
   extends StObject
      with typings.devexpressWeb.CommandWithBooleanStateBase {
   

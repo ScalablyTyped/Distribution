@@ -7,7 +7,7 @@ import typings.jenkins.jenkinsStrings.list
 import typings.jenkins.jenkinsStrings.my
 import typings.jenkins.jenkinsStrings.text
 import typings.jenkins.mod.JobBuildOptions
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -324,8 +324,8 @@ object anon {
       callback: js.Function2[/* err */ js.Error, /* data */ Any, Unit]
     ): Unit = js.native
     
-    def logStream(name: String, n: Double): ReadableStream[Any] = js.native
-    def logStream(name: String, n: Double, options: Delay): ReadableStream[Any] = js.native
+    def logStream(name: String, n: Double): ReadableStream = js.native
+    def logStream(name: String, n: Double, options: Delay): ReadableStream = js.native
     
     def stop(name: String, n: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     

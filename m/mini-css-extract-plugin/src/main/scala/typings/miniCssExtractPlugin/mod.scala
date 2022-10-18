@@ -3,6 +3,7 @@ package typings.miniCssExtractPlugin
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
+import typings.miniCssExtractPlugin.anon.FnCall
 import typings.miniCssExtractPlugin.miniCssExtractPluginBooleans.`false`
 import typings.miniCssExtractPlugin.miniCssExtractPluginStrings.`mini-css-extract-plugin`
 import typings.miniCssExtractPlugin.miniCssExtractPluginStrings.textSlashcss
@@ -10,6 +11,10 @@ import typings.node.bufferMod.global.Buffer
 import typings.std.HTMLLinkElement
 import typings.std.Map
 import typings.std.Record
+import typings.webpack.mod.CallbackWebpack
+import typings.webpack.mod.MultiCompiler
+import typings.webpack.mod.MultiCompilerOptions
+import typings.webpack.mod.MultiStats
 import typings.webpack.mod.PathData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -99,8 +104,12 @@ object mod {
     * @returns {CssDependencyConstructor}
     */
   /* static member */
-  inline def getCssDependency_webpack(
-    webpack: /* import warning: importer.ImportType#apply Failed type conversion: mini-css-extract-plugin.mini-css-extract-plugin.Compiler['webpack'] */ js.Any
+  inline def getCssDependency(
+    webpack: (js.Function2[
+      /* options */ js.Array[typings.webpack.mod.Configuration] & MultiCompilerOptions, 
+      /* callback */ js.UndefOr[CallbackWebpack[MultiStats]], 
+      MultiCompiler
+    ]) & FnCall
   ): CssDependencyConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getCssDependency")(webpack.asInstanceOf[js.Any]).asInstanceOf[CssDependencyConstructor]
   
   /**
@@ -108,8 +117,12 @@ object mod {
     * @returns {CssModuleConstructor}
     */
   /* static member */
-  inline def getCssModule_webpack(
-    webpack: /* import warning: importer.ImportType#apply Failed type conversion: mini-css-extract-plugin.mini-css-extract-plugin.Compiler['webpack'] */ js.Any
+  inline def getCssModule(
+    webpack: (js.Function2[
+      /* options */ js.Array[typings.webpack.mod.Configuration] & MultiCompilerOptions, 
+      /* callback */ js.UndefOr[CallbackWebpack[MultiStats]], 
+      MultiCompiler
+    ]) & FnCall
   ): CssModuleConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getCssModule")(webpack.asInstanceOf[js.Any]).asInstanceOf[CssModuleConstructor]
   
   @JSImport("mini-css-extract-plugin", "loader")
@@ -190,7 +203,8 @@ object mod {
   
   @js.native
   trait CssDependency
-    extends typings.webpack.mod.Dependency
+    extends StObject
+       with typings.webpack.mod.Dependency
        with CssModuleDependency
   
   type CssDependencyConstructor = Instantiable3[
@@ -335,7 +349,7 @@ object mod {
   
   type Dependency = typings.webpack.mod.Dependency
   
-  type LoaderDependency = typings.miniCssExtractPlugin.loaderMod.Dependency
+  type LoaderDependency = typings.miniCssExtractPlugin.typesLoaderMod.Dependency
   
   trait LoaderOptions extends StObject {
     
@@ -688,7 +702,7 @@ object mod {
     }
   }
   
-  type Schema = typings.schemaUtils.validateMod.Schema
+  type Schema = typings.schemaUtils.declarationsValidateMod.Schema
   
   type Source = typings.webpack.mod.Source
   

@@ -25,9 +25,9 @@ object mod {
     def openReadStream(options: ZipFileOptions): js.Promise[Readable] = js.native
   }
   
-  @JSImport("yauzl-promise", "RandomAccessReader")
+  /* note: abstract class */ @JSImport("yauzl-promise", "RandomAccessReader")
   @js.native
-  abstract class RandomAccessReader ()
+  open class RandomAccessReader ()
     extends typings.yauzl.mod.RandomAccessReader {
     def this(options: EventEmitterOptions) = this()
   }

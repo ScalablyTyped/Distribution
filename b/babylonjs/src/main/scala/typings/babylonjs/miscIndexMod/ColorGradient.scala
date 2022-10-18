@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.mathColorMod.Color4
+import typings.babylonjs.mathsMathDotcolorMod.Color4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "ColorGradient")
 @js.native
 open class ColorGradient protected ()
-  extends typings.babylonjs.gradientsMod.ColorGradient {
+  extends typings.babylonjs.miscGradientsMod.ColorGradient {
   /**
     * Creates a new color4 gradient
     * @param gradient gets or sets the gradient value (between 0 and 1)

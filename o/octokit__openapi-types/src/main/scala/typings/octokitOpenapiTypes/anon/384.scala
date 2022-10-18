@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `384` extends StObject {
   
-  var exclude: js.UndefOr[js.Array[String]] = js.undefined
+  /** The unique identifier of the card. */
+  var card_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any
 }
 object `384` {
   
-  inline def apply(): `384` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    card_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any
+  ): `384` = {
+    val __obj = js.Dynamic.literal(card_id = card_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[`384`]
   }
   
   extension [Self <: `384`](x: Self) {
     
-    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
-    
-    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
-    
-    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
+    inline def setCard_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any
+    ): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
   }
 }

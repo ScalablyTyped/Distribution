@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.postProcessMod.PostProcessOptions
+import typings.babylonjs.postProcessesPostProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,14 +29,14 @@ open class DepthOfFieldBlurPostProcess protected ()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
-    direction: typings.babylonjs.mathVectorMod.Vector2,
+    direction: typings.babylonjs.mathsMathDotvectorMod.Vector2,
     kernel: Double,
     options: Double | PostProcessOptions,
-    camera: Nullable[typings.babylonjs.cameraMod.Camera],
-    circleOfConfusion: typings.babylonjs.postProcessMod.PostProcess,
-    imageToBlur: js.UndefOr[Nullable[typings.babylonjs.postProcessMod.PostProcess]],
+    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
+    circleOfConfusion: typings.babylonjs.postProcessesPostProcessMod.PostProcess,
+    imageToBlur: js.UndefOr[Nullable[typings.babylonjs.postProcessesPostProcessMod.PostProcess]],
     samplingMode: js.UndefOr[Double],
-    engine: js.UndefOr[typings.babylonjs.engineMod.Engine],
+    engine: js.UndefOr[typings.babylonjs.enginesEngineMod.Engine],
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     blockCompilation: js.UndefOr[Boolean]

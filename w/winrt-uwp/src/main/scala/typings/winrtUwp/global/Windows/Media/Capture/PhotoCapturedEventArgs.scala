@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the photo sequence PhotoCaptured event. */
-@JSGlobal("Windows.Media.Capture.PhotoCapturedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.PhotoCapturedEventArgs")
 @js.native
-abstract class PhotoCapturedEventArgs ()
+open class PhotoCapturedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.PhotoCapturedEventArgs {
   

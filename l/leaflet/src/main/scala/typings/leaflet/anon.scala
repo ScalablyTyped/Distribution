@@ -188,6 +188,8 @@ object anon {
     def getMousePosition(ev: MouseEvent): Point_ = js.native
     def getMousePosition(ev: MouseEvent, container: HTMLElement): Point_ = js.native
     
+    def getPropagationPath(ev: Event): js.Array[HTMLElement] = js.native
+    
     def getWheelDelta(ev: Event): Double = js.native
     
     // tslint:disable:unified-signatures

@@ -50,7 +50,7 @@ object mod {
     /**
       * Render the dropdown menu and sub-items.
       */
-    def render(view: EditorView): Update = js.native
+    def render(view: EditorView): Dom = js.native
   }
   
   @JSImport("prosemirror-menu", "DropdownSubmenu")
@@ -69,7 +69,7 @@ object mod {
     /**
       * Renders the submenu.
       */
-    def render(view: EditorView): Dom = js.native
+    def render(view: EditorView): Update = js.native
   }
   
   @JSImport("prosemirror-menu", "MenuItem")
@@ -82,7 +82,7 @@ object mod {
       * spec](#menu.MenuItemSpec.display), and adds an event handler which
       * executes the command when the representation is clicked.
       */
-    def render(view: EditorView): Dom = js.native
+    def render(view: EditorView): Update = js.native
     
     /**
       * The spec used to create the menu item.
@@ -125,18 +125,18 @@ object mod {
       * a new state. The `update` function will return false if the
       * update hid the entire element.
       */
-    def render(pm: EditorView): Dom
+    def render(pm: EditorView): Update
   }
   object MenuElement {
     
-    inline def apply[S /* <: Schema[Any, Any] */](render: EditorView => Dom): MenuElement[S] = {
+    inline def apply[S /* <: Schema[Any, Any] */](render: EditorView => Update): MenuElement[S] = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[MenuElement[S]]
     }
     
     extension [Self <: MenuElement[?], S /* <: Schema[Any, Any] */](x: Self & MenuElement[S]) {
       
-      inline def setRender(value: EditorView => Dom): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: EditorView => Update): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
   }
   

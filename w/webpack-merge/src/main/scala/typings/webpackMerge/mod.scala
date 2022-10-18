@@ -1,10 +1,10 @@
 package typings.webpackMerge
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpackMerge.typesMod.CustomizeRule
-import typings.webpackMerge.typesMod.CustomizeRuleString
-import typings.webpackMerge.typesMod.ICustomizeOptions
-import typings.webpackMerge.typesMod.Key
+import typings.webpackMerge.distTypesMod.CustomizeRule
+import typings.webpackMerge.distTypesMod.CustomizeRuleString
+import typings.webpackMerge.distTypesMod.ICustomizeOptions
+import typings.webpackMerge.distTypesMod.Key
 import typings.webpackMerge.webpackMergeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,17 +24,17 @@ object mod {
   object CustomizeRule extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.webpackMerge.typesMod.CustomizeRule & String] = js.native
+    def apply(value: String): js.UndefOr[typings.webpackMerge.distTypesMod.CustomizeRule & String] = js.native
     
-    /* "append" */ val Append: typings.webpackMerge.typesMod.CustomizeRule.Append & String = js.native
+    /* "append" */ val Append: typings.webpackMerge.distTypesMod.CustomizeRule.Append & String = js.native
     
-    /* "match" */ val Match: typings.webpackMerge.typesMod.CustomizeRule.Match & String = js.native
+    /* "match" */ val Match: typings.webpackMerge.distTypesMod.CustomizeRule.Match & String = js.native
     
-    /* "merge" */ val Merge: typings.webpackMerge.typesMod.CustomizeRule.Merge & String = js.native
+    /* "merge" */ val Merge: typings.webpackMerge.distTypesMod.CustomizeRule.Merge & String = js.native
     
-    /* "prepend" */ val Prepend: typings.webpackMerge.typesMod.CustomizeRule.Prepend & String = js.native
+    /* "prepend" */ val Prepend: typings.webpackMerge.distTypesMod.CustomizeRule.Prepend & String = js.native
     
-    /* "replace" */ val Replace: typings.webpackMerge.typesMod.CustomizeRule.Replace & String = js.native
+    /* "replace" */ val Replace: typings.webpackMerge.distTypesMod.CustomizeRule.Replace & String = js.native
   }
   
   inline def customizeArray(rules: StringDictionary[CustomizeRule | CustomizeRuleString]): js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("customizeArray")(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* a */ Any, /* b */ Any, /* key */ Key, Any]]

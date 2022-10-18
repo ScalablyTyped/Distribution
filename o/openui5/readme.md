@@ -1,7 +1,7 @@
 
 # Scala.js typings for openui5
 
-Typings are for version 1.40
+Typings are for version 1.107
 
 
 

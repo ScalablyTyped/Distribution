@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CustomElementRegistry")
 @js.native
 open class CustomElementRegistry ()
-  extends typings.antvGLite.domMod.CustomElementRegistry
+  extends typings.antvGLite.distDomMod.CustomElementRegistry

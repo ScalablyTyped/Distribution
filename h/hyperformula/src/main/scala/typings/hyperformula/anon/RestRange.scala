@@ -1,7 +1,7 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.absoluteCellRangeMod.AbsoluteCellRange
-import typings.hyperformula.dependencyGraphMod.RangeVertex
+import typings.hyperformula.typingsAbsoluteCellRangeMod.AbsoluteCellRange
+import typings.hyperformula.typingsDependencyGraphMod.RangeVertex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

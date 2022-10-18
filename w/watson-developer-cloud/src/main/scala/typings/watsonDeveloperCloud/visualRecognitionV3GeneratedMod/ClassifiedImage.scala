@@ -33,7 +33,7 @@ object ClassifiedImage {
     
     inline def setClassifiers(value: js.Array[ClassifierResult]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
     
-    inline def setClassifiersVarargs(value: ClassifierResult*): Self = StObject.set(x, "classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: ClassifierResult*): Self = StObject.set(x, "classifiers", js.Array(value*))
     
     inline def setError(value: ErrorInfo): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

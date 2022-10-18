@@ -2,7 +2,7 @@ package typings.googleCloudSpanner.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.googleGax.mod.grpc.ServerCredentials
-import typings.grpcGrpcJs.serverCredentialsMod.KeyCertPair
+import typings.grpcGrpcJs.buildSrcServerCredentialsMod.KeyCertPair
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,10 +13,10 @@ trait TypeofServerCredentials
   extends StObject
      with Instantiable0[ServerCredentials] {
   
-  def createInsecure(): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
+  def createInsecure(): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
   
-  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
-  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
-  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
-  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.serverCredentialsMod.ServerCredentials = js.native
+  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
+  def createSsl(rootCerts: Null, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
+  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair]): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
+  def createSsl(rootCerts: Buffer, keyCertPairs: js.Array[KeyCertPair], checkClientCertificate: Boolean): typings.grpcGrpcJs.buildSrcServerCredentialsMod.ServerCredentials = js.native
 }

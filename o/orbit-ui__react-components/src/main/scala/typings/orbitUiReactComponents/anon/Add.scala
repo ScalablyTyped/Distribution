@@ -1,6 +1,6 @@
 package typings.orbitUiReactComponents.anon
 
-import typings.orbitUiReactComponents.useDisposablesMod.DisposableFunction
+import typings.orbitUiReactComponents.distSharedSrcUseDisposablesMod.DisposableFunction
 import typings.std.FrameRequestCallback
 import typings.std.TimerHandler
 import org.scalablytyped.runtime.StObject

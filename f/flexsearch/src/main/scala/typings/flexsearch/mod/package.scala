@@ -15,10 +15,6 @@ inline def registerCharset(name: String, charset: CharsetOptions): Unit = (^.asI
 
 inline def registerLanguage(name: String, language: LanguageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-type AsyncCallback[T] = (js.Function1[/* result */ T, Unit]) | js.Function0[Unit]
-
-type DocumentSearchResult[T, Store /* <: StoreOption */, Enrich /* <: Boolean */] = js.Array[EnrichedDocumentSearchResultSetUnit[T] | SimpleDocumentSearchResultSetUnit]
-
 /* Rewritten from type alias, can be one of: 
   - typings.flexsearch.flexsearchBooleans.`false`
   - typings.flexsearch.flexsearchStrings.default

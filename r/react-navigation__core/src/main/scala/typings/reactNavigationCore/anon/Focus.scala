@@ -1,7 +1,7 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.navigationBuilderContextMod.ChildActionListener
-import typings.reactNavigationCore.navigationBuilderContextMod.FocusedNavigationListener
+import typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.ChildActionListener
+import typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.FocusedNavigationListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

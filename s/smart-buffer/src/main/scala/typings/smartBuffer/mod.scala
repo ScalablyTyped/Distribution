@@ -8,15 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("smart-buffer", "SmartBuffer")
   @js.native
-  /**
-    * Creates a new SmartBuffer instance.
-    *
-    * @param options { SmartBufferOptions } The SmartBufferOptions to apply to this instance.
-    */
-  open class SmartBuffer () extends StObject {
-    def this(options: SmartBufferOptions) = this()
+  trait SmartBuffer extends StObject {
     
     /* private */ var _buff: Any = js.native
     
@@ -867,50 +860,6 @@ object mod {
       */
     def writeUInt8(value: Double): SmartBuffer = js.native
     def writeUInt8(value: Double, offset: Double): SmartBuffer = js.native
-  }
-  object SmartBuffer {
-    
-    @JSImport("smart-buffer", "SmartBuffer")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Creates a new SmartBuffer instance with the provided Buffer and optional encoding.
-      *
-      * @param buffer { Buffer } The Buffer to use as the internal Buffer value.
-      * @param encoding { String } The BufferEncoding to use for strings.
-      *
-      * @return { SmartBuffer }
-      */
-    /* static member */
-    inline def fromBuffer(buff: Buffer): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
-    inline def fromBuffer(buff: Buffer, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buff.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
-    
-    /**
-      * Creates a new SmartBuffer instance with the provided SmartBufferOptions options.
-      *
-      * @param options { SmartBufferOptions } The options to use when creating the SmartBuffer instance.
-      */
-    /* static member */
-    inline def fromOptions(options: SmartBufferOptions): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
-    
-    /**
-      * Creates a new SmartBuffer instance with the provided internal Buffer size and optional encoding.
-      *
-      * @param size { Number } The size of the internal Buffer.
-      * @param encoding { String } The BufferEncoding to use for strings.
-      *
-      * @return { SmartBuffer }
-      */
-    /* static member */
-    inline def fromSize(size: Double): SmartBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any]).asInstanceOf[SmartBuffer]
-    inline def fromSize(size: Double, encoding: BufferEncoding): SmartBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSize")(size.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[SmartBuffer]
-    
-    /**
-      * Type checking function that determines if an object is a SmartBufferOptions object.
-      */
-    /* static member */
-    inline def isSmartBufferOptions(options: SmartBufferOptions): /* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSmartBufferOptions")(options.asInstanceOf[js.Any]).asInstanceOf[/* is smart-buffer.smart-buffer.SmartBufferOptions */ Boolean]
   }
   
   /**

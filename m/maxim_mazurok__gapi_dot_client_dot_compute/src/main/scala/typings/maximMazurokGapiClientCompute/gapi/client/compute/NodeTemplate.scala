@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,9 +34,7 @@ trait NodeTemplate extends StObject {
   
   /** Labels to use for node affinity, which will be used in instance scheduling. */
   var nodeAffinityLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The node type to use for nodes group that are created from this template. */
@@ -113,9 +110,7 @@ object NodeTemplate {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNodeAffinityLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NodeTemplate & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "nodeAffinityLabels", value.asInstanceOf[js.Any])
     
     inline def setNodeAffinityLabelsUndefined: Self = StObject.set(x, "nodeAffinityLabels", js.undefined)

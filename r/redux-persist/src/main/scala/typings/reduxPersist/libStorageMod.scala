@@ -1,7 +1,7 @@
 package typings.reduxPersist
 
 import org.scalablytyped.runtime.Shortcut
-import typings.reduxPersist.typesMod.WebStorage
+import typings.reduxPersist.esTypesMod.WebStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

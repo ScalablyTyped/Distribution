@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cache-manager" : "5.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cache-manager" : "5.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -13,18 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @implements {ResourceHandler}
   */
-@JSImport("playcanvas", "ScriptHandler")
 @js.native
-open class ScriptHandler protected ()
+trait ScriptHandler
   extends StObject
      with ResourceHandler {
-  /**
-    * Create a new ScriptHandler instance.
-    *
-    * @param {AppBase} app - The running {@link AppBase}.
-    * @hideconstructor
-    */
-  def this(app: AppBase) = this()
   
   var _app: AppBase = js.native
   
@@ -43,20 +35,4 @@ open class ScriptHandler protected ()
   
   @JSName("patch")
   def patch_MScriptHandler(asset: Any, assets: Any): Unit = js.native
-}
-object ScriptHandler {
-  
-  @JSImport("playcanvas", "ScriptHandler")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  inline def push(Type: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_push")(Type.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  /* static member */
-  @JSImport("playcanvas", "ScriptHandler._types")
-  @js.native
-  def types: js.Array[Any] = js.native
-  
-  inline def types_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_types")(x.asInstanceOf[js.Any])
 }

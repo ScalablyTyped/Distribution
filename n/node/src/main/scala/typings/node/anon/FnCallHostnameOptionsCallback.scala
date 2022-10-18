@@ -1,5 +1,6 @@
 package typings.node.anon
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.RecordWithTtl
 import typings.node.dnsMod.ResolveOptions
 import typings.node.dnsMod.ResolveWithTtlOptions
@@ -12,17 +13,13 @@ trait FnCallHostnameOptionsCallback extends StObject {
   
   def apply(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   def apply(
     hostname: String,
     options: ResolveOptions,
     callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* err */ ErrnoException | Null, 
       /* addresses */ js.Array[RecordWithTtl | String], 
       Unit
     ]
@@ -30,10 +27,6 @@ trait FnCallHostnameOptionsCallback extends StObject {
   def apply(
     hostname: String,
     options: ResolveWithTtlOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = js.native
 }

@@ -9,16 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ^ protected ()
   extends StObject
      with Server {
+  def this(options: Unit, compiler: Compiler) = this()
+  def this(options: Unit, compiler: Configuration) = this()
+  def this(options: Unit, compiler: MultiCompiler) = this()
   /**
     * @param {Configuration | Compiler | MultiCompiler} options
     * @param {Compiler | MultiCompiler | Configuration} compiler
     */
-  def this(options: Compiler | MultiCompiler, compiler: Compiler | MultiCompiler) = this()
-  def this(options: Compiler | MultiCompiler, compiler: Configuration) = this()
-  def this(options: Unit, compiler: Compiler | MultiCompiler) = this()
-  def this(options: Unit, compiler: Configuration) = this()
-  def this(options: Configuration, compiler: Compiler | MultiCompiler) = this()
+  def this(options: typings.webpack.mod.Compiler, compiler: Compiler) = this()
+  def this(options: typings.webpack.mod.Compiler, compiler: Configuration) = this()
+  def this(options: typings.webpack.mod.Compiler, compiler: MultiCompiler) = this()
+  def this(options: typings.webpack.mod.MultiCompiler, compiler: Compiler) = this()
+  def this(options: typings.webpack.mod.MultiCompiler, compiler: Configuration) = this()
+  def this(options: typings.webpack.mod.MultiCompiler, compiler: MultiCompiler) = this()
+  def this(options: Configuration, compiler: Compiler) = this()
   def this(options: Configuration, compiler: Configuration) = this()
+  def this(options: Configuration, compiler: MultiCompiler) = this()
 }
 @JSImport("webpack-dev-server", JSImport.Namespace)
 @js.native

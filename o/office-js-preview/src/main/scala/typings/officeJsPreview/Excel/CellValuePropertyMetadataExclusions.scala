@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the exclusion of a property in `EntityCellValue.properties` from features of Excel.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CellValuePropertyMetadataExclusions extends StObject {
   
@@ -17,8 +16,7 @@ trait CellValuePropertyMetadataExclusions extends StObject {
     * True represents that the property is excluded from the properties shown by auto complete. False and undefined represent the default behavior of including the property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var autoComplete: js.UndefOr[Boolean] = js.undefined
   
@@ -26,8 +24,7 @@ trait CellValuePropertyMetadataExclusions extends StObject {
     * True represents that the property is excluded from the properties used to compare cell values during recalc. False and undefined represent the default behavior of including the property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var calcCompare: js.UndefOr[Boolean] = js.undefined
   
@@ -35,8 +32,7 @@ trait CellValuePropertyMetadataExclusions extends StObject {
     * True represents that the property is excluded from the properties shown by card view. False and undefined represent the default behavior of including the property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var cardView: js.UndefOr[Boolean] = js.undefined
   
@@ -44,8 +40,7 @@ trait CellValuePropertyMetadataExclusions extends StObject {
     * True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE function. False and undefined represent the default behavior of including the property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var dotNotation: js.UndefOr[Boolean] = js.undefined
 }

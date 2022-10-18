@@ -1,6 +1,12 @@
 package typings.restartHooks
 
 import typings.react.mod.MutableRefObject
+import typings.restartHooks.cjsUseEventListenerMod.EventHandler
+import typings.restartHooks.cjsUseGlobalListenerMod.DocumentEventHandler
+import typings.restartHooks.cjsUseImageMod.State
+import typings.restartHooks.cjsUseMergeStateFromPropsMod.Mapper
+import typings.restartHooks.cjsUseMergeStateMod.MergeStateSetter
+import typings.restartHooks.cjsUseResizeObserverMod.Rect
 import typings.restartHooks.restartHooksStrings.DOMContentLoaded
 import typings.restartHooks.restartHooksStrings.`use-credentials`
 import typings.restartHooks.restartHooksStrings.abort
@@ -108,12 +114,6 @@ import typings.restartHooks.restartHooksStrings.webkitanimationiteration
 import typings.restartHooks.restartHooksStrings.webkitanimationstart
 import typings.restartHooks.restartHooksStrings.webkittransitionend
 import typings.restartHooks.restartHooksStrings.wheel
-import typings.restartHooks.useEventListenerMod.EventHandler
-import typings.restartHooks.useGlobalListenerMod.DocumentEventHandler
-import typings.restartHooks.useImageMod.State
-import typings.restartHooks.useMergeStateFromPropsMod.Mapper
-import typings.restartHooks.useMergeStateMod.MergeStateSetter
-import typings.restartHooks.useResizeObserverMod.Rect
 import typings.std.AddEventListenerOptions
 import typings.std.Document
 import typings.std.Element

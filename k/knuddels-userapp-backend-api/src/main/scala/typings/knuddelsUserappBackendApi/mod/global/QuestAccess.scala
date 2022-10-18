@@ -38,5 +38,5 @@ open class QuestAccess () extends StObject {
   /**
     * @see https://developer.knuddels.de/docs/classes/QuestAccess.html#method_solvedQuest
     */
-  def solvedQuest(questKey: java.lang.String, count: Double): Unit = js.native
+  def solvedQuest(questKey: java.lang.String): Unit = js.native
 }

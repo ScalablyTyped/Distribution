@@ -12,10 +12,6 @@ object reactInstantsearchCoreStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait HighlightResult extends StObject
-  inline def HighlightResult: HighlightResult = "HighlightResult".asInstanceOf[HighlightResult]
-  
-  @js.native
   sealed trait and extends StObject
   inline def and: and = "and".asInstanceOf[and]
   

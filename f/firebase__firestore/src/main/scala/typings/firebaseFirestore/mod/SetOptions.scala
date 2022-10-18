@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseFirestore.anon.Merge
-  - typings.firebaseFirestore.anon.`3`
+  - typings.firebaseFirestore.anon.`4`
 */
 trait SetOptions extends StObject
 object SetOptions {
   
-  inline def `3`(): typings.firebaseFirestore.anon.`3` = {
+  inline def `4`(): typings.firebaseFirestore.anon.`4` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[typings.firebaseFirestore.anon.`3`]
+    __obj.asInstanceOf[typings.firebaseFirestore.anon.`4`]
   }
   
   inline def Merge(): typings.firebaseFirestore.anon.Merge = {

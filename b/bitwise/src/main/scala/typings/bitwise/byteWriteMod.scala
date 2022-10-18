@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object byteWriteMod {
   
-  @JSImport("bitwise/esm/byte/write", JSImport.Namespace)
+  @JSImport("bitwise/byte/write", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ref: https://immersive-web.github.io/webxr/#xrreferencespace-interface
   */
-@JSGlobal("XRReferenceSpace")
+/* note: abstract class */ @JSGlobal("XRReferenceSpace")
 @js.native
-abstract class XRReferenceSpace ()
+open class XRReferenceSpace ()
   extends StObject
      with typings.webxr.XRReferenceSpace

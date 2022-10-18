@@ -10,9 +10,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcrypto-core", "EllipticProvider")
+/* note: abstract class */ @JSImport("webcrypto-core", "EllipticProvider")
 @js.native
-abstract class EllipticProvider () extends ProviderCrypto {
+open class EllipticProvider () extends ProviderCrypto {
   
   def checkGenerateKeyParams(algorithm: EcKeyGenParams): Unit = js.native
   

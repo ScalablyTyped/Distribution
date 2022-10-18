@@ -1,15 +1,11 @@
 package typings.dmgLicense
 
-import typings.dmgLicense.bufferSplitMod._Delimiter
+import typings.dmgLicense.libUtilBufferSplitMod._Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dmgLicenseStrings {
-  
-  @js.native
-  sealed trait default extends StObject
-  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait `RTF ` extends StObject
@@ -58,10 +54,6 @@ object dmgLicenseStrings {
     extends StObject
        with _Delimiter
   inline def lf: lf = "lf".asInstanceOf[lf]
-  
-  @js.native
-  sealed trait mapObjByKeys extends StObject
-  inline def mapObjByKeys: mapObjByKeys = "mapObjByKeys".asInstanceOf[mapObjByKeys]
   
   @js.native
   sealed trait message extends StObject

@@ -14,7 +14,7 @@ object Dispatchers {
     * @constructor
     */
   open class Key ()
-    extends typings.plottable.dispatchersMod.Key
+    extends typings.plottable.buildSrcDispatchersMod.Key
   /* static members */
   object Key {
     
@@ -43,7 +43,7 @@ object Dispatchers {
       *
       * @return {Dispatchers.Key}
       */
-    inline def getDispatcher(): typings.plottable.dispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typings.plottable.dispatchersMod.Key]
+    inline def getDispatcher(): typings.plottable.buildSrcDispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typings.plottable.buildSrcDispatchersMod.Key]
   }
   
   @JSImport("plottable", "Dispatchers.Mouse")
@@ -54,7 +54,7 @@ object Dispatchers {
     * @constructor
     */
   /* private */ open class Mouse ()
-    extends typings.plottable.dispatchersMod.Mouse
+    extends typings.plottable.buildSrcDispatchersMod.Mouse
   /* static members */
   object Mouse {
     
@@ -109,19 +109,19 @@ object Dispatchers {
       * @param {SVGElement} elem
       * @return {Dispatchers.Mouse}
       */
-    inline def getDispatcher(component: typings.plottable.componentMod.Component): typings.plottable.dispatchersMod.Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.dispatchersMod.Mouse]
+    inline def getDispatcher(component: typings.plottable.buildSrcComponentsComponentMod.Component): typings.plottable.buildSrcDispatchersMod.Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcDispatchersMod.Mouse]
   }
   
   @JSImport("plottable", "Dispatchers.Touch")
   @js.native
   open class Touch protected ()
-    extends typings.plottable.dispatchersMod.Touch {
+    extends typings.plottable.buildSrcDispatchersMod.Touch {
     /**
       * This constructor should not be invoked directly.
       *
       * @param {SVGElement} svg The root <svg> to attach to.
       */
-    def this(component: typings.plottable.componentMod.Component) = this()
+    def this(component: typings.plottable.buildSrcComponentsComponentMod.Component) = this()
   }
   /* static members */
   object Touch {
@@ -162,6 +162,6 @@ object Dispatchers {
       * @param component
       * @return {Dispatchers.Touch}
       */
-    inline def getDispatcher(component: typings.plottable.componentMod.Component): typings.plottable.dispatchersMod.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.dispatchersMod.Touch]
+    inline def getDispatcher(component: typings.plottable.buildSrcComponentsComponentMod.Component): typings.plottable.buildSrcDispatchersMod.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.buildSrcDispatchersMod.Touch]
   }
 }

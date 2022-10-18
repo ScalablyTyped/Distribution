@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebGPUCacheSampler")
 @js.native
 open class WebGPUCacheSampler protected ()
-  extends typings.babylonjs.legacyMod.WebGPUCacheSampler {
+  extends typings.babylonjs.legacyLegacyMod.WebGPUCacheSampler {
   def this(device: GPUDevice) = this()
 }
 /* static members */
@@ -22,7 +22,7 @@ object WebGPUCacheSampler {
   
   inline def GetCompareFunction(compareFunction: Nullable[Double]): GPUCompareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCompareFunction")(compareFunction.asInstanceOf[js.Any]).asInstanceOf[GPUCompareFunction]
   
-  inline def GetSamplerHashCode(sampler: typings.babylonjs.textureSamplerMod.TextureSampler): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSamplerHashCode")(sampler.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def GetSamplerHashCode(sampler: typings.babylonjs.materialsTexturesTextureSamplerMod.TextureSampler): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSamplerHashCode")(sampler.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("babylonjs", "WebGPUCacheSampler._GetSamplerDescriptor")
   @js.native

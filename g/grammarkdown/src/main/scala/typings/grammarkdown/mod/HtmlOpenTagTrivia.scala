@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "HtmlOpenTagTrivia")
 @js.native
-class HtmlOpenTagTrivia protected ()
-  extends typings.grammarkdown.nodesMod.HtmlOpenTagTrivia {
+open class HtmlOpenTagTrivia protected ()
+  extends typings.grammarkdown.distNodesMod.HtmlOpenTagTrivia {
   def this(tagName: String) = this()
 }

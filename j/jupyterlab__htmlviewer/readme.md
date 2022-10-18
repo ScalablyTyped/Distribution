@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__htmlviewer
 
-Typings are for version 2.2.6
+Typings are for version 3.4.8
 
 ## Library description:
 A viewer for HTML documents.
@@ -10,10 +10,10 @@ A viewer for HTML documents.
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/htmlviewer |
 | Keywords           | - |
-| # releases         | 131 |
-| # dependents       | 2 |
-| # downloads        | 1426646 |
-| # stars            | 0 |
+| # releases         | 143 |
+| # dependents       | 0.0 |
+| # downloads        | 192516.0 |
+| # stars            | 12379.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

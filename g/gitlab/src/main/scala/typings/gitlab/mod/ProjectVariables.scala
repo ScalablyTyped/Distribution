@@ -1,6 +1,6 @@
 package typings.gitlab.mod
 
-import typings.gitlab.baseServiceMod.BaseServiceOptions
+import typings.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("gitlab", "ProjectVariables")
 @js.native
 open class ProjectVariables protected ()
-  extends typings.gitlab.servicesMod.ProjectVariables {
+  extends typings.gitlab.distTypesCoreServicesMod.ProjectVariables {
   def this(options: BaseServiceOptions) = this()
 }

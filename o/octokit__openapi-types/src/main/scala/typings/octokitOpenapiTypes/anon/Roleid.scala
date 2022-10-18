@@ -8,17 +8,14 @@ trait Roleid extends StObject {
   
   /** The organization name. The name is not case sensitive. */
   @JSName("org")
-  var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+  var org_ : String
   
   /** The unique identifier of the role. */
-  var role_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['role-id'] */ js.Any
+  var role_id: Double
 }
 object Roleid {
   
-  inline def apply(
-    org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any,
-    role_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['role-id'] */ js.Any
-  ): Roleid = {
+  inline def apply(org_ : String, role_id: Double): Roleid = {
     val __obj = js.Dynamic.literal(role_id = role_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Roleid]
@@ -26,12 +23,8 @@ object Roleid {
   
   extension [Self <: Roleid](x: Self) {
     
-    inline def setOrg_(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
-    ): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    inline def setRole_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['role-id'] */ js.Any
-    ): Self = StObject.set(x, "role_id", value.asInstanceOf[js.Any])
+    inline def setRole_id(value: Double): Self = StObject.set(x, "role_id", value.asInstanceOf[js.Any])
   }
 }

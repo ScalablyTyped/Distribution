@@ -16,48 +16,12 @@ object sinclairTypeboxStrings {
   inline def `8bit`: `8bit` = "8bit".asInstanceOf[`8bit`]
   
   @js.native
-  sealed trait IntersectEvaluate extends StObject
-  inline def IntersectEvaluate: IntersectEvaluate = "IntersectEvaluate".asInstanceOf[IntersectEvaluate]
-  
-  @js.native
-  sealed trait IntersectProperties extends StObject
-  inline def IntersectProperties: IntersectProperties = "IntersectProperties".asInstanceOf[IntersectProperties]
-  
-  @js.native
-  sealed trait PropertiesReduce extends StObject
-  inline def PropertiesReduce: PropertiesReduce = "PropertiesReduce".asInstanceOf[PropertiesReduce]
-  
-  @js.native
-  sealed trait StaticContructorParameters extends StObject
-  inline def StaticContructorParameters: StaticContructorParameters = "StaticContructorParameters".asInstanceOf[StaticContructorParameters]
-  
-  @js.native
-  sealed trait StaticFunctionParameters extends StObject
-  inline def StaticFunctionParameters: StaticFunctionParameters = "StaticFunctionParameters".asInstanceOf[StaticFunctionParameters]
-  
-  @js.native
-  sealed trait TPick extends StObject
-  inline def TPick: TPick = "TPick".asInstanceOf[TPick]
-  
-  @js.native
-  sealed trait TRecordProperties extends StObject
-  inline def TRecordProperties: TRecordProperties = "TRecordProperties".asInstanceOf[TRecordProperties]
-  
-  @js.native
-  sealed trait TTuple extends StObject
-  inline def TTuple: TTuple = "TTuple".asInstanceOf[TTuple]
-  
-  @js.native
   sealed trait Uint8Array extends StObject
   inline def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
   
   @js.native
   sealed trait Undefined extends StObject
   inline def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
-  
-  @js.native
-  sealed trait UnionStringLiteralToTuple extends StObject
-  inline def UnionStringLiteralToTuple: UnionStringLiteralToTuple = "UnionStringLiteralToTuple".asInstanceOf[UnionStringLiteralToTuple]
   
   @js.native
   sealed trait array extends StObject

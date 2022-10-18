@@ -1,13 +1,13 @@
 package typings.yamlAstParser
 
-import typings.yamlAstParser.loaderMod.LoadOptions
-import typings.yamlAstParser.scalarInferenceMod.ScalarType
-import typings.yamlAstParser.yamlASTMod.YAMLAnchorReference
-import typings.yamlAstParser.yamlASTMod.YAMLMapping
-import typings.yamlAstParser.yamlASTMod.YAMLNode
-import typings.yamlAstParser.yamlASTMod.YAMLScalar
-import typings.yamlAstParser.yamlASTMod.YAMLSequence
-import typings.yamlAstParser.yamlASTMod.YamlMap
+import typings.yamlAstParser.distSrcLoaderMod.LoadOptions
+import typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType
+import typings.yamlAstParser.distSrcYamlASTMod.YAMLAnchorReference
+import typings.yamlAstParser.distSrcYamlASTMod.YAMLMapping
+import typings.yamlAstParser.distSrcYamlASTMod.YAMLNode
+import typings.yamlAstParser.distSrcYamlASTMod.YAMLScalar
+import typings.yamlAstParser.distSrcYamlASTMod.YAMLSequence
+import typings.yamlAstParser.distSrcYamlASTMod.YamlMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,19 +23,19 @@ object mod {
   object Kind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.yamlAstParser.yamlASTMod.Kind & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.yamlAstParser.distSrcYamlASTMod.Kind & Double] = js.native
     
-    /* 4 */ val ANCHOR_REF: typings.yamlAstParser.yamlASTMod.Kind.ANCHOR_REF & Double = js.native
+    /* 4 */ val ANCHOR_REF: typings.yamlAstParser.distSrcYamlASTMod.Kind.ANCHOR_REF & Double = js.native
     
-    /* 5 */ val INCLUDE_REF: typings.yamlAstParser.yamlASTMod.Kind.INCLUDE_REF & Double = js.native
+    /* 5 */ val INCLUDE_REF: typings.yamlAstParser.distSrcYamlASTMod.Kind.INCLUDE_REF & Double = js.native
     
-    /* 2 */ val MAP: typings.yamlAstParser.yamlASTMod.Kind.MAP & Double = js.native
+    /* 2 */ val MAP: typings.yamlAstParser.distSrcYamlASTMod.Kind.MAP & Double = js.native
     
-    /* 1 */ val MAPPING: typings.yamlAstParser.yamlASTMod.Kind.MAPPING & Double = js.native
+    /* 1 */ val MAPPING: typings.yamlAstParser.distSrcYamlASTMod.Kind.MAPPING & Double = js.native
     
-    /* 0 */ val SCALAR: typings.yamlAstParser.yamlASTMod.Kind.SCALAR & Double = js.native
+    /* 0 */ val SCALAR: typings.yamlAstParser.distSrcYamlASTMod.Kind.SCALAR & Double = js.native
     
-    /* 3 */ val SEQ: typings.yamlAstParser.yamlASTMod.Kind.SEQ & Double = js.native
+    /* 3 */ val SEQ: typings.yamlAstParser.distSrcYamlASTMod.Kind.SEQ & Double = js.native
   }
   
   @JSImport("yaml-ast-parser", "ScalarType")
@@ -43,27 +43,27 @@ object mod {
   object ScalarType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.yamlAstParser.scalarInferenceMod.ScalarType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType & Double] = js.native
     
-    /* 1 */ val bool: typings.yamlAstParser.scalarInferenceMod.ScalarType.bool & Double = js.native
+    /* 1 */ val bool: typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType.bool & Double = js.native
     
-    /* 3 */ val float: typings.yamlAstParser.scalarInferenceMod.ScalarType.float & Double = js.native
+    /* 3 */ val float: typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType.float & Double = js.native
     
-    /* 2 */ val int: typings.yamlAstParser.scalarInferenceMod.ScalarType.int & Double = js.native
+    /* 2 */ val int: typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType.int & Double = js.native
     
-    /* 0 */ val `null`: typings.yamlAstParser.scalarInferenceMod.ScalarType.`null` & Double = js.native
+    /* 0 */ val `null`: typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType.`null` & Double = js.native
     
-    /* 4 */ val string: typings.yamlAstParser.scalarInferenceMod.ScalarType.string & Double = js.native
+    /* 4 */ val string: typings.yamlAstParser.distSrcScalarInferenceMod.ScalarType.string & Double = js.native
   }
   
   @JSImport("yaml-ast-parser", "YAMLException")
   @js.native
   open class YAMLException protected ()
-    extends typings.yamlAstParser.exceptionMod.^ {
+    extends typings.yamlAstParser.distSrcExceptionMod.^ {
     def this(reason: String) = this()
-    def this(reason: String, mark: typings.yamlAstParser.markMod.^) = this()
+    def this(reason: String, mark: typings.yamlAstParser.distSrcMarkMod.^) = this()
     def this(reason: String, mark: Unit, isWarning: Boolean) = this()
-    def this(reason: String, mark: typings.yamlAstParser.markMod.^, isWarning: Boolean) = this()
+    def this(reason: String, mark: typings.yamlAstParser.distSrcMarkMod.^, isWarning: Boolean) = this()
   }
   object YAMLException {
     

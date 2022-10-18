@@ -5,10 +5,10 @@ import typings.workboxBuild.anon.ChannelName
 import typings.workboxBuild.anon.Headers
 import typings.workboxBuild.anon.MaxAgeSeconds
 import typings.workboxBuild.anon.Name
-import typings.workboxRouting.routeHandlerMod.RouteHandlerCallback
-import typings.workboxRouting.routeHandlerMod.RouteHandlerCallbackContext
-import typings.workboxRouting.routeMatchCallbackMod.RouteMatchCallback
-import typings.workboxRouting.routeMatchCallbackMod.RouteMatchCallbackOptions
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallback
+import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallbackContext
+import typings.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallback
+import typings.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallbackOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

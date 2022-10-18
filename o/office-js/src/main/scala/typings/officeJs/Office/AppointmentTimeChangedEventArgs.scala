@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AppointmentTimeChangedEventArgs extends StObject {
   
-  /** 
-    * Gets the appointment end date and time. 
-    * 
+  /**
+    * Gets the appointment end date and time.
+    *
     * @remarks
-    * [Api set: Mailbox 1.7] 
-    */ 
+    * [Api set: Mailbox 1.7]
+    */
   var end: js.Date
   
-  /** 
-    * Gets the appointment start date and time. 
-    * 
+  /**
+    * Gets the appointment start date and time.
+    *
     * @remarks
-    * [Api set: Mailbox 1.7] 
-    */ 
+    * [Api set: Mailbox 1.7]
+    */
   var start: js.Date
   
-  /** 
+  /**
     * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
-    * 
+    *
     * @remarks
-    * [Api set: Mailbox 1.7] 
-    */ 
+    * [Api set: Mailbox 1.7]
+    */
   var `type`: olkAppointmentTimeChanged
 }
 object AppointmentTimeChangedEventArgs {

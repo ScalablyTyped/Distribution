@@ -10,9 +10,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webcrypto-core", "RsaProvider")
+/* note: abstract class */ @JSImport("webcrypto-core", "RsaProvider")
 @js.native
-abstract class RsaProvider () extends ProviderCrypto {
+open class RsaProvider () extends ProviderCrypto {
   
   def checkGenerateKeyParams(algorithm: RsaHashedKeyGenParams): Unit = js.native
   

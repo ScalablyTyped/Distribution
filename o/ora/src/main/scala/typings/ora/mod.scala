@@ -1,8 +1,8 @@
 package typings.ora
 
 import typings.cliSpinners.mod.SpinnerName
+import typings.node.NodeJS.WritableStream
 import typings.std.PromiseLike
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,7 +127,7 @@ object mod {
     	You could for example set this to `process.stdout` instead.
     	@default process.stderr
     	*/
-    val stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    val stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
     	Text to display after the spinner.
@@ -181,7 +181,7 @@ object mod {
       
       inline def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

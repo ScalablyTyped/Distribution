@@ -1,10 +1,15 @@
 package typings.nivoSunburst
 
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoSunburst.anon.ArcGenerator
 import typings.nivoSunburst.anon.ChildColor
 import typings.nivoSunburst.anon.From
 import typings.nivoSunburst.anon.Theme
+import typings.nivoSunburst.distTypesResponsiveSunburstMod.ResponsiveSunburstProps
+import typings.nivoSunburst.distTypesTypesMod.ComputedDatum
+import typings.nivoSunburst.distTypesTypesMod.SunburstCustomLayerProps
+import typings.nivoSunburst.distTypesTypesMod.SunburstLayerId
+import typings.nivoSunburst.distTypesTypesMod.SunburstSvgProps
 import typings.nivoSunburst.nivoSunburstStrings.centerRadius
 import typings.nivoSunburst.nivoSunburstStrings.data
 import typings.nivoSunburst.nivoSunburstStrings.endAngle
@@ -17,11 +22,6 @@ import typings.nivoSunburst.nivoSunburstStrings.pushIn
 import typings.nivoSunburst.nivoSunburstStrings.pushOut
 import typings.nivoSunburst.nivoSunburstStrings.startAngle
 import typings.nivoSunburst.nivoSunburstStrings.width
-import typings.nivoSunburst.responsiveSunburstMod.ResponsiveSunburstProps
-import typings.nivoSunburst.typesMod.ComputedDatum
-import typings.nivoSunburst.typesMod.SunburstCustomLayerProps
-import typings.nivoSunburst.typesMod.SunburstLayerId
-import typings.nivoSunburst.typesMod.SunburstSvgProps
 import typings.react.mod.global.JSX.Element
 import typings.std.Omit
 import typings.std.Partial

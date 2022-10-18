@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xmldsigjs", "RsaKeyValue")
 @js.native
 open class RsaKeyValue ()
-  extends typings.xmldsigjs.keyInfosMod.RsaKeyValue {
+  extends typings.xmldsigjs.buildTypesXmlKeyInfosMod.RsaKeyValue {
   def this(properties: js.Object) = this()
 }

@@ -51,7 +51,9 @@ object mod {
   type RequestPayload = Dictionary[Any]
   
   @js.native
-  trait ResponseOutput extends Response {
+  trait ResponseOutput
+    extends StObject
+       with Response {
     
     // Methods
     def clearCookie(

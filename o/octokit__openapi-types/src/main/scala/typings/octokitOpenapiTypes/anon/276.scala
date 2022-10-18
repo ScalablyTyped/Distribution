@@ -8,14 +8,14 @@ trait `276` extends StObject {
   
   @JSName("application/json")
   var applicationSlashjson: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['timeline-issue-events'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any
   ]
 }
 object `276` {
   
   inline def apply(
     applicationSlashjson: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['timeline-issue-events'] */ js.Any
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any
     ]
   ): `276` = {
     val __obj = js.Dynamic.literal()
@@ -27,12 +27,12 @@ object `276` {
     
     inline def setApplicationSlashjson(
       value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['timeline-issue-events'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any
         ]
     ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
     inline def setApplicationSlashjsonVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['timeline-issue-events'] */ js.Any)*
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-comment'] */ js.Any)*
     ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

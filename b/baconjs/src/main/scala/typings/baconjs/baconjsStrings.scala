@@ -9,8 +9,4 @@ object baconjsStrings {
   @js.native
   sealed trait `Lessthansignno-moreGreaterthansign` extends StObject
   inline def `Lessthansignno-moreGreaterthansign`: `Lessthansignno-moreGreaterthansign` = "<no-more>".asInstanceOf[`Lessthansignno-moreGreaterthansign`]
-  
-  @js.native
-  sealed trait ObjectTemplate extends StObject
-  inline def ObjectTemplate: ObjectTemplate = "ObjectTemplate".asInstanceOf[ObjectTemplate]
 }

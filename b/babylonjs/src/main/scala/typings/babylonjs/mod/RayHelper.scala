@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RayHelper")
 @js.native
 open class RayHelper protected ()
-  extends typings.babylonjs.legacyMod.RayHelper {
+  extends typings.babylonjs.legacyLegacyMod.RayHelper {
   /**
     * Instantiate a new ray helper.
     * As raycast might be hard to debug, the RayHelper can help rendering the different rays
@@ -15,7 +15,7 @@ open class RayHelper protected ()
     * @see https://doc.babylonjs.com/babylon101/raycasts#debugging
     * @param ray Defines the ray we are currently tryin to visualize
     */
-  def this(ray: typings.babylonjs.rayMod.Ray) = this()
+  def this(ray: typings.babylonjs.cullingRayMod.Ray) = this()
 }
 /* static members */
 object RayHelper {
@@ -32,8 +32,8 @@ object RayHelper {
     * @returns The newly created ray helper.
     */
   inline def CreateAndShow(
-    ray: typings.babylonjs.rayMod.Ray,
+    ray: typings.babylonjs.cullingRayMod.Ray,
     scene: typings.babylonjs.sceneMod.Scene,
-    color: typings.babylonjs.mathColorMod.Color3
-  ): typings.babylonjs.rayHelperMod.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.rayHelperMod.RayHelper]
+    color: typings.babylonjs.mathsMathDotcolorMod.Color3
+  ): typings.babylonjs.debugRayHelperMod.RayHelper = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateAndShow")(ray.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.debugRayHelperMod.RayHelper]
 }

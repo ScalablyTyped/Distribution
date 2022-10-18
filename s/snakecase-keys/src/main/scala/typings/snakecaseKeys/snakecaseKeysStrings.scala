@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object snakecaseKeysStrings {
   
   @js.native
-  sealed trait SnakeCaseKeys extends StObject
-  inline def SnakeCaseKeys: SnakeCaseKeys = "SnakeCaseKeys".asInstanceOf[SnakeCaseKeys]
-  
-  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
 }

@@ -16,12 +16,12 @@ object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
       * Adds gamepad input support to the FreeCameraInputsManager.
       * @returns the FreeCameraInputsManager
       */
-    def addGamepad(): typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager
+    def addGamepad(): typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager
   }
   object FreeCameraInputsManager {
     
     inline def apply(
-      addGamepad: () => typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager
+      addGamepad: () => typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager
     ): FreeCameraInputsManager = {
       val __obj = js.Dynamic.literal(addGamepad = js.Any.fromFunction0(addGamepad))
       __obj.asInstanceOf[FreeCameraInputsManager]
@@ -30,7 +30,7 @@ object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
     extension [Self <: FreeCameraInputsManager](x: Self) {
       
       inline def setAddGamepad(
-        value: () => typings.babylonjs.gamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager
+        value: () => typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager
       ): Self = StObject.set(x, "addGamepad", js.Any.fromFunction0(value))
     }
   }

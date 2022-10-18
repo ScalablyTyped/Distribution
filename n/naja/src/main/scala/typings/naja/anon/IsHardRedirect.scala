@@ -8,7 +8,7 @@ trait IsHardRedirect extends StObject {
   
   var isHardRedirect: Boolean
   
-  var options: typings.naja.najaMod.Options
+  var options: typings.naja.distNajaMod.Options
   
   def setHardRedirect(value: Boolean): Unit
   
@@ -18,7 +18,7 @@ object IsHardRedirect {
   
   inline def apply(
     isHardRedirect: Boolean,
-    options: typings.naja.najaMod.Options,
+    options: typings.naja.distNajaMod.Options,
     setHardRedirect: Boolean => Unit,
     url: String
   ): IsHardRedirect = {
@@ -30,7 +30,7 @@ object IsHardRedirect {
     
     inline def setIsHardRedirect(value: Boolean): Self = StObject.set(x, "isHardRedirect", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setSetHardRedirect(value: Boolean => Unit): Self = StObject.set(x, "setHardRedirect", js.Any.fromFunction1(value))
     

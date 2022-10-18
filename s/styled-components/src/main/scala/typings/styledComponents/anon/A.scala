@@ -167,7 +167,7 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.styledComponents.constructWithOptionsMod.Styled
+import typings.styledComponents.nativeDistConstructorsConstructWithOptionsMod.Styled
 import typings.styledComponents.styledComponentsStrings.`object`
 import typings.styledComponents.styledComponentsStrings.`var`
 import typings.styledComponents.styledComponentsStrings.a

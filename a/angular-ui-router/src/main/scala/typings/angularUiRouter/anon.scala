@@ -2,8 +2,8 @@ package typings.angularUiRouter
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularUiRouter.interfaceMod.Ng1StateDeclaration
-import typings.uirouterCore.commonCommonMod.Obj
+import typings.angularUiRouter.libInterfaceMod.Ng1StateDeclaration
+import typings.uirouterCore.libCommonCommonMod.Obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

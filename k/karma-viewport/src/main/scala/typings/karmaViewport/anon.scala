@@ -1,6 +1,6 @@
 package typings.karmaViewport
 
-import typings.karmaViewport.viewportMod.ViewportBreakpoint
+import typings.karmaViewport.distAdapterViewportMod.ViewportBreakpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

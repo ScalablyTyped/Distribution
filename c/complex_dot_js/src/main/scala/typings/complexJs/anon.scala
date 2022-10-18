@@ -1,6 +1,6 @@
 package typings.complexJs
 
-import typings.complexJs.mod._AValue
+import typings.complexJs.complexMod._AValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

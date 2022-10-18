@@ -101,7 +101,9 @@ object mod {
     object ChaiHttp {
       
       @js.native
-      trait Agent extends SuperAgentStatic {
+      trait Agent
+        extends StObject
+           with SuperAgentStatic {
         
         def close(): Agent = js.native
         def close(callback: js.Function1[/* err */ Any, Unit]): Agent = js.native

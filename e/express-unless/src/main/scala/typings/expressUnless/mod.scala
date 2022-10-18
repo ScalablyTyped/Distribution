@@ -1,6 +1,7 @@
 package typings.expressUnless
 
 import typings.express.mod.Request_
+import typings.expressUnless.anon.FnCall
 import typings.expressUnless.anon.Method
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -158,9 +159,7 @@ object mod {
   trait RequestHandler
     extends typings.expressServeStaticCore.mod.RequestHandler {
     
-    var unless: js.UndefOr[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unless */ Any
-      ] = js.native
+    var unless: js.UndefOr[FnCall] = js.native
   }
   
   type pathFilter = String | js.RegExp | Method

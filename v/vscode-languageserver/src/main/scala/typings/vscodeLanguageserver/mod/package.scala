@@ -1,20 +1,20 @@
 package typings.vscodeLanguageserver.mod
 
-import typings.vscodeJsonrpc.connectionMod.Logger
-import typings.vscodeJsonrpc.connectionMod.MessageConnection
+import typings.vscodeJsonrpc.libCommonConnectionMod.Logger
+import typings.vscodeJsonrpc.libCommonConnectionMod.MessageConnection
+import typings.vscodeLanguageserver.libCommonServerMod.ClientFeature
+import typings.vscodeLanguageserver.libCommonServerMod.ConsoleFeature
+import typings.vscodeLanguageserver.libCommonServerMod.Features
+import typings.vscodeLanguageserver.libCommonServerMod.LanguagesFeature
+import typings.vscodeLanguageserver.libCommonServerMod.NotebooksFeature
+import typings.vscodeLanguageserver.libCommonServerMod.TelemetryFeature
+import typings.vscodeLanguageserver.libCommonServerMod.TracerFeature
+import typings.vscodeLanguageserver.libCommonServerMod.WatchDog
+import typings.vscodeLanguageserver.libCommonServerMod.WindowFeature
+import typings.vscodeLanguageserver.libCommonServerMod.WorkspaceFeature
+import typings.vscodeLanguageserver.libCommonServerMod._Connection
 import typings.vscodeLanguageserver.mod.^
-import typings.vscodeLanguageserver.serverMod.ClientFeature
-import typings.vscodeLanguageserver.serverMod.ConsoleFeature
-import typings.vscodeLanguageserver.serverMod.Features
-import typings.vscodeLanguageserver.serverMod.LanguagesFeature
-import typings.vscodeLanguageserver.serverMod.NotebooksFeature
-import typings.vscodeLanguageserver.serverMod.TelemetryFeature
-import typings.vscodeLanguageserver.serverMod.TracerFeature
-import typings.vscodeLanguageserver.serverMod.WatchDog
-import typings.vscodeLanguageserver.serverMod.WindowFeature
-import typings.vscodeLanguageserver.serverMod.WorkspaceFeature
-import typings.vscodeLanguageserver.serverMod._Connection
-import typings.vscodeLanguageserverProtocol.connectionMod.ProtocolConnection
+import typings.vscodeLanguageserverProtocol.libCommonConnectionMod.ProtocolConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,57 +69,57 @@ inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWo
 ): _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionFactory.asInstanceOf[js.Any], watchDog.asInstanceOf[js.Any], factories.asInstanceOf[js.Any])).asInstanceOf[_Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks]]
 
 inline def createMessageConnection(
-  messageReader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  messageWriter: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
+  messageReader: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  messageWriter: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter
 ): MessageConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(messageReader.asInstanceOf[js.Any], messageWriter.asInstanceOf[js.Any])).asInstanceOf[MessageConnection]
 inline def createMessageConnection(
-  messageReader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  messageWriter: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  messageReader: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  messageWriter: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   _logger: Unit,
-  options: typings.vscodeJsonrpc.connectionMod.ConnectionOptions
+  options: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionOptions
 ): MessageConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(messageReader.asInstanceOf[js.Any], messageWriter.asInstanceOf[js.Any], _logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MessageConnection]
 inline def createMessageConnection(
-  messageReader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  messageWriter: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  messageReader: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  messageWriter: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   _logger: Logger
 ): MessageConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(messageReader.asInstanceOf[js.Any], messageWriter.asInstanceOf[js.Any], _logger.asInstanceOf[js.Any])).asInstanceOf[MessageConnection]
 inline def createMessageConnection(
-  messageReader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  messageWriter: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  messageReader: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  messageWriter: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   _logger: Logger,
-  options: typings.vscodeJsonrpc.connectionMod.ConnectionOptions
+  options: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionOptions
 ): MessageConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(messageReader.asInstanceOf[js.Any], messageWriter.asInstanceOf[js.Any], _logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MessageConnection]
 
 inline def createProtocolConnection(
-  input: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  output: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
+  input: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  output: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter
 ): ProtocolConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ProtocolConnection]
 inline def createProtocolConnection(
-  input: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  output: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  input: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  output: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   logger: Unit,
-  options: typings.vscodeJsonrpc.connectionMod.ConnectionOptions
+  options: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionOptions
 ): ProtocolConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProtocolConnection]
 inline def createProtocolConnection(
-  input: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  output: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  input: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  output: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   logger: Unit,
-  options: typings.vscodeJsonrpc.connectionMod.ConnectionStrategy
+  options: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionStrategy
 ): ProtocolConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProtocolConnection]
 inline def createProtocolConnection(
-  input: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  output: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  input: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  output: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   logger: Logger
 ): ProtocolConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[ProtocolConnection]
 inline def createProtocolConnection(
-  input: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  output: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  input: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  output: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   logger: Logger,
-  options: typings.vscodeJsonrpc.connectionMod.ConnectionOptions
+  options: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionOptions
 ): ProtocolConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProtocolConnection]
 inline def createProtocolConnection(
-  input: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
-  output: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
+  input: typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader,
+  output: typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter,
   logger: Logger,
-  options: typings.vscodeJsonrpc.connectionMod.ConnectionStrategy
+  options: typings.vscodeJsonrpc.libCommonConnectionMod.ConnectionStrategy
 ): ProtocolConnection = (^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProtocolConnection]

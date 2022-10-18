@@ -1,8 +1,8 @@
 package typings.reactNativeGoogleAnalyticsBridge
 
-import typings.reactNativeGoogleAnalyticsBridge.customMod.CustomDimensionsFieldIndexMap
-import typings.reactNativeGoogleAnalyticsBridge.dataLayerEventMod.DataLayerEvent
-import typings.reactNativeGoogleAnalyticsBridge.googleAnalyticsSettingsMod.default
+import typings.reactNativeGoogleAnalyticsBridge.distGoogleAnalyticsSettingsMod.default
+import typings.reactNativeGoogleAnalyticsBridge.distModelsCustomMod.CustomDimensionsFieldIndexMap
+import typings.reactNativeGoogleAnalyticsBridge.distModelsDataLayerEventMod.DataLayerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +69,7 @@ object mod {
   @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsTracker")
   @js.native
   open class GoogleAnalyticsTracker protected ()
-    extends typings.reactNativeGoogleAnalyticsBridge.googleAnalyticsTrackerMod.default {
+    extends typings.reactNativeGoogleAnalyticsBridge.distGoogleAnalyticsTrackerMod.default {
     /**
       * Save all tracker related data that is needed to call native methods with proper data.
       * @param {string} trackerId Your tracker id, something like: UA-12345-1
@@ -92,7 +92,7 @@ object mod {
   @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
   @js.native
   open class GoogleTagManager ()
-    extends typings.reactNativeGoogleAnalyticsBridge.googleTagManagerMod.default
+    extends typings.reactNativeGoogleAnalyticsBridge.distGoogleTagManagerMod.default
   object GoogleTagManager {
     
     @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
@@ -181,22 +181,24 @@ object mod {
   object ProductActionEnum extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum & Double
+      ] = js.native
     
-    /* 3 */ val Add: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Add & Double = js.native
+    /* 3 */ val Add: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Add & Double = js.native
     
-    /* 5 */ val Checkout: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Checkout & Double = js.native
+    /* 5 */ val Checkout: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Checkout & Double = js.native
     
-    /* 6 */ val CheckoutOption: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.CheckoutOption & Double = js.native
+    /* 6 */ val CheckoutOption: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.CheckoutOption & Double = js.native
     
-    /* 2 */ val Click: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Click & Double = js.native
+    /* 2 */ val Click: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Click & Double = js.native
     
-    /* 1 */ val Detail: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Detail & Double = js.native
+    /* 1 */ val Detail: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Detail & Double = js.native
     
-    /* 7 */ val Purchase: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Purchase & Double = js.native
+    /* 7 */ val Purchase: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Purchase & Double = js.native
     
-    /* 8 */ val Refund: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Refund & Double = js.native
+    /* 8 */ val Refund: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Refund & Double = js.native
     
-    /* 4 */ val Remove: typings.reactNativeGoogleAnalyticsBridge.productMod.ProductActionEnum.Remove & Double = js.native
+    /* 4 */ val Remove: typings.reactNativeGoogleAnalyticsBridge.distModelsProductMod.ProductActionEnum.Remove & Double = js.native
   }
 }

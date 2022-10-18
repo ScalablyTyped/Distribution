@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TintColor extends StObject {
   
-  var tintColor: js.UndefOr[String] = js.undefined
+  var tintColor: String
 }
 object TintColor {
   
-  inline def apply(): TintColor = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(tintColor: String): TintColor = {
+    val __obj = js.Dynamic.literal(tintColor = tintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TintColor]
   }
   
   extension [Self <: TintColor](x: Self) {
     
     inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
-    
-    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
   }
 }

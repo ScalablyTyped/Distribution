@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXREyeTracking")
 @js.native
 open class WebXREyeTracking protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXREyeTracking {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXREyeTracking {
   /**
     * Creates a new instance of the XR eye tracking feature.
     * @param _xrSessionManager An instance of WebXRSessionManager.
     */
-  def this(_xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager) = this()
+  def this(_xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager) = this()
 }
 /* static members */
 object WebXREyeTracking {

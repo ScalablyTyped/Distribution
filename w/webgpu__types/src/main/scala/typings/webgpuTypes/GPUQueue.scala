@@ -41,6 +41,9 @@ trait GPUQueue
   /**
     * Returns a {@link Promise} that resolves once this queue finishes processing all the work submitted
     * up to this moment.
+    * Resolution of this {@link Promise} implies the completion of
+    * {@link GPUBuffer#mapAsync} calls made prior to that call,
+    * on {@link GPUBuffer}s last used exclusively on that queue.
     */
   def onSubmittedWorkDone(): js.Promise[Unit] = js.native
   

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserver.anon
 
-import typings.vscodeLanguageserver.serverMod.RemoteWindow
+import typings.vscodeLanguageserver.libCommonServerMod.RemoteWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

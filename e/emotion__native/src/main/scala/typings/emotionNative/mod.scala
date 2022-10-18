@@ -30,11 +30,11 @@ import typings.emotionNative.anon.TypeofView
 import typings.emotionNative.anon.TypeofYellowBox
 import typings.emotionNative.anon.Typeofaddons
 import typings.emotionNative.anon.`0`
-import typings.emotionNative.baseMod.CSSInterpolation
-import typings.emotionNative.baseMod.CreateStyledComponent
-import typings.emotionNative.baseMod.Interpolation
-import typings.emotionNative.baseMod.ReactNativeStyle
-import typings.emotionNative.baseMod.ReactNativeStyleType
+import typings.emotionNative.typesBaseMod.CSSInterpolation
+import typings.emotionNative.typesBaseMod.CreateStyledComponent
+import typings.emotionNative.typesBaseMod.Interpolation
+import typings.emotionNative.typesBaseMod.ReactNativeStyle
+import typings.emotionNative.typesBaseMod.ReactNativeStyleType
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentProps
@@ -139,7 +139,7 @@ object mod {
   @js.native
   trait CreateStyled
     extends StObject
-       with typings.emotionNative.baseMod.CreateStyled
+       with typings.emotionNative.typesBaseMod.CreateStyled
        with StyledComponents
   
   // those 2 are just copies of the `BaseCreateStyled` with supplied `C` type argument

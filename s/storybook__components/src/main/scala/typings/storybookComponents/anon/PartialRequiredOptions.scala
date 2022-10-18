@@ -1,5 +1,12 @@
 package typings.storybookComponents.anon
 
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.AST
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.BuiltInParserName
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.BuiltInParsers
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.CustomParser
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.LiteralUnion
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.Options
+import typings.storybookComponents.`distTs3Dot9Modules@typesPrettierIndexMod`.Plugin
 import typings.storybookComponents.storybookComponentsStrings.`as-needed`
 import typings.storybookComponents.storybookComponentsStrings.all
 import typings.storybookComponents.storybookComponentsStrings.always
@@ -17,13 +24,6 @@ import typings.storybookComponents.storybookComponentsStrings.none
 import typings.storybookComponents.storybookComponentsStrings.off
 import typings.storybookComponents.storybookComponentsStrings.preserve
 import typings.storybookComponents.storybookComponentsStrings.strict
-import typings.storybookComponents.typesPrettierIndexMod.AST
-import typings.storybookComponents.typesPrettierIndexMod.BuiltInParserName
-import typings.storybookComponents.typesPrettierIndexMod.BuiltInParsers
-import typings.storybookComponents.typesPrettierIndexMod.CustomParser
-import typings.storybookComponents.typesPrettierIndexMod.LiteralUnion
-import typings.storybookComponents.typesPrettierIndexMod.Options
-import typings.storybookComponents.typesPrettierIndexMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

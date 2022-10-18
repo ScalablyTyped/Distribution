@@ -1,7 +1,7 @@
 package typings.baseui.popoverTypesMod
 
 import typings.baseui.anon.OmitPopoverPropschildren
-import typings.baseui.anon.`256`
+import typings.baseui.anon.`253`
 import typings.baseui.layerTypesMod.TetherPlacement
 import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
@@ -31,9 +31,9 @@ trait StatefulPopoverContainerProps extends StObject {
   
   var `data-baseweb`: js.UndefOr[String] = js.undefined
   
-  var dismissOnClickOutside: Boolean
+  var dismissOnClickOutside: js.UndefOr[Boolean] = js.undefined
   
-  var dismissOnEsc: Boolean
+  var dismissOnEsc: js.UndefOr[Boolean] = js.undefined
   
   var focusLock: js.UndefOr[Boolean] = js.undefined
   
@@ -67,7 +67,7 @@ trait StatefulPopoverContainerProps extends StObject {
   
   var overrides: js.UndefOr[PopoverOverrides] = js.undefined
   
-  var placement: TetherPlacement
+  var placement: js.UndefOr[TetherPlacement] = js.undefined
   
   var popoverMargin: js.UndefOr[Double] = js.undefined
   
@@ -83,18 +83,12 @@ trait StatefulPopoverContainerProps extends StObject {
   
   var stateReducer: js.UndefOr[StateReducer] = js.undefined
   
-  var triggerType: TriggerType
+  var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 object StatefulPopoverContainerProps {
   
-  inline def apply(
-    children: OmitPopoverPropschildren => ReactNode,
-    dismissOnClickOutside: Boolean,
-    dismissOnEsc: Boolean,
-    placement: TetherPlacement,
-    triggerType: TriggerType
-  ): StatefulPopoverContainerProps = {
-    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), dismissOnClickOutside = dismissOnClickOutside.asInstanceOf[js.Any], dismissOnEsc = dismissOnEsc.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
+  inline def apply(children: OmitPopoverPropschildren => ReactNode): StatefulPopoverContainerProps = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[StatefulPopoverContainerProps]
   }
   
@@ -116,7 +110,7 @@ object StatefulPopoverContainerProps {
     
     inline def setContent(value: ReactNode | StatefulContentRenderProp): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentFunction1(value: /* a */ `256` => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    inline def setContentFunction1(value: /* a */ `253` => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
@@ -126,7 +120,11 @@ object StatefulPopoverContainerProps {
     
     inline def setDismissOnClickOutside(value: Boolean): Self = StObject.set(x, "dismissOnClickOutside", value.asInstanceOf[js.Any])
     
+    inline def setDismissOnClickOutsideUndefined: Self = StObject.set(x, "dismissOnClickOutside", js.undefined)
+    
     inline def setDismissOnEsc(value: Boolean): Self = StObject.set(x, "dismissOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setDismissOnEscUndefined: Self = StObject.set(x, "dismissOnEsc", js.undefined)
     
     inline def setFocusLock(value: Boolean): Self = StObject.set(x, "focusLock", value.asInstanceOf[js.Any])
     
@@ -194,6 +192,8 @@ object StatefulPopoverContainerProps {
     
     inline def setPlacement(value: TetherPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
     inline def setPopoverMargin(value: Double): Self = StObject.set(x, "popoverMargin", value.asInstanceOf[js.Any])
     
     inline def setPopoverMarginUndefined: Self = StObject.set(x, "popoverMargin", js.undefined)
@@ -223,5 +223,7 @@ object StatefulPopoverContainerProps {
     inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     
     inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

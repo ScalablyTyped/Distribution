@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.Files
-import typings.antDesignReactNative.imagePickerMod.ImagePickerProps
-import typings.antDesignReactNative.imagePickerMod.default
+import typings.antDesignReactNative.libImagePickerMod.ImagePickerProps
+import typings.antDesignReactNative.libImagePickerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

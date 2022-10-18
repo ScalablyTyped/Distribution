@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "axios-cookiejar-support" : "4.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "axios-cookiejar-support" : "4.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

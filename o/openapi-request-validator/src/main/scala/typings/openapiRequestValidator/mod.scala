@@ -1,7 +1,7 @@
 package typings.openapiRequestValidator
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ajv.coreMod.Options
+import typings.ajv.distCoreMod.Options
 import typings.ajv.distTypesMod.ErrorObject
 import typings.ajv.distTypesMod.Format
 import typings.ajv.distTypesMod.FormatDefinition

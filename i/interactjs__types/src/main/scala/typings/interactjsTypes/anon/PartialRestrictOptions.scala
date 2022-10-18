@@ -1,7 +1,7 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.typesMod.ActionName
-import typings.interactjsTypes.typesMod.RectResolvable
+import typings.interactjsTypes.coreTypesMod.ActionName
+import typings.interactjsTypes.coreTypesMod.RectResolvable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@interactjs/types.@interactjs/modifiers/restrict/pointer.RestrictOptions> */
 trait PartialRestrictOptions extends StObject {
   
-  var elementRect: js.UndefOr[typings.interactjsTypes.typesMod.Rect] = js.undefined
+  var elementRect: js.UndefOr[typings.interactjsTypes.coreTypesMod.Rect] = js.undefined
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   var endOnly: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[typings.interactjsTypes.typesMod.Rect] = js.undefined
+  var offset: js.UndefOr[typings.interactjsTypes.coreTypesMod.Rect] = js.undefined
   
   var restriction: js.UndefOr[
     RectResolvable[
-      js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]]
+      js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]
     ]
   ] = js.undefined
 }
@@ -32,7 +32,7 @@ object PartialRestrictOptions {
   
   extension [Self <: PartialRestrictOptions](x: Self) {
     
-    inline def setElementRect(value: typings.interactjsTypes.typesMod.Rect): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
+    inline def setElementRect(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "elementRect", value.asInstanceOf[js.Any])
     
     inline def setElementRectUndefined: Self = StObject.set(x, "elementRect", js.undefined)
     
@@ -44,18 +44,18 @@ object PartialRestrictOptions {
     
     inline def setEndOnlyUndefined: Self = StObject.set(x, "endOnly", js.undefined)
     
-    inline def setOffset(value: typings.interactjsTypes.typesMod.Rect): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     inline def setRestriction(
       value: RectResolvable[
-          js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]]
+          js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]]
         ]
     ): Self = StObject.set(x, "restriction", value.asInstanceOf[js.Any])
     
     inline def setRestrictionFunction1(
-      value: js.Tuple3[Double, Double, typings.interactjsTypes.interactionMod.Interaction[ActionName]] => typings.interactjsTypes.typesMod.Rect | typings.interactjsTypes.typesMod.Element
+      value: js.Tuple3[Double, Double, typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]] => typings.interactjsTypes.coreTypesMod.Rect | typings.interactjsTypes.coreTypesMod.Element
     ): Self = StObject.set(x, "restriction", js.Any.fromFunction1(value))
     
     inline def setRestrictionUndefined: Self = StObject.set(x, "restriction", js.undefined)

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Pwm {
   
-  @JSGlobal("Windows.Devices.Pwm.PwmController")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Pwm.PwmController")
   @js.native
-  abstract class PwmController ()
+  open class PwmController ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Pwm.PwmController {
     
@@ -56,9 +56,9 @@ object Pwm {
     inline def getDefaultAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultAsync")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("Windows.Devices.Pwm.PwmPin")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Pwm.PwmPin")
   @js.native
-  abstract class PwmPin ()
+  open class PwmPin ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Pwm.PwmPin {
     

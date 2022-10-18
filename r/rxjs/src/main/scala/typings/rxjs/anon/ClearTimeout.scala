@@ -1,8 +1,8 @@
 package typings.rxjs.anon
 
-import typings.rxjs.timeoutProviderMod.ClearTimeoutFunction
-import typings.rxjs.timeoutProviderMod.SetTimeoutFunction
-import typings.rxjs.timerHandleMod.TimerHandle
+import typings.rxjs.distTypesInternalSchedulerTimeoutProviderMod.ClearTimeoutFunction
+import typings.rxjs.distTypesInternalSchedulerTimeoutProviderMod.SetTimeoutFunction
+import typings.rxjs.distTypesInternalSchedulerTimerHandleMod.TimerHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

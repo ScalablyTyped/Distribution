@@ -1,8 +1,8 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.ReadMessagesOptionsMap
-import typings.awsGreengrassCoreSdk.dataMod.TypesMap
-import typings.awsGreengrassCoreSdk.dataMod.ValidationsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ReadMessagesOptionsMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.TypesMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.ValidationsMap
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +44,7 @@ object ReadMessagesOptions {
   def formatsMap: Record[String, scala.Nothing] = js.native
   inline def formatsMap_=(x: Record[String, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatsMap")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: ReadMessagesOptionsMap): typings.awsGreengrassCoreSdk.dataMod.ReadMessagesOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.ReadMessagesOptions]
+  inline def fromMap(d: ReadMessagesOptionsMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.ReadMessagesOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.ReadMessagesOptions]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.ReadMessagesOptions.typesMap")
   @js.native

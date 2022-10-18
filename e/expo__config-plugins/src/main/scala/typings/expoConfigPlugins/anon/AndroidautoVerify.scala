@@ -1,6 +1,6 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.manifestMod.StringBoolean
+import typings.expoConfigPlugins.buildAndroidManifestMod.StringBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

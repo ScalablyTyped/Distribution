@@ -1,7 +1,7 @@
 package typings.reactMdMenu.anon
 
-import typings.reactMdUtils.positioningTypesMod.PositionAnchor
-import typings.reactMdUtils.positioningTypesMod.PositionWidth
+import typings.reactMdUtils.typesPositioningTypesMod.PositionAnchor
+import typings.reactMdUtils.typesPositioningTypesMod.PositionWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

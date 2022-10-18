@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SocketConnection")
+/* note: abstract class */ @JSGlobal("SocketConnection")
 @js.native
-abstract class SocketConnection ()
+open class SocketConnection ()
   extends StObject
      with typings.fridaGum.SocketConnection {
   

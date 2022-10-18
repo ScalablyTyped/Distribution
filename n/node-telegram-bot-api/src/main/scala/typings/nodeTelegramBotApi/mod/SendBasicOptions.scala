@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SendBasicOptions extends StObject {
   
+  var allow_sending_without_reply: js.UndefOr[Boolean] = js.undefined
+  
   var disable_notification: js.UndefOr[Boolean] = js.undefined
   
   var protect_content: js.UndefOr[Boolean] = js.undefined
@@ -22,6 +24,10 @@ object SendBasicOptions {
   }
   
   extension [Self <: SendBasicOptions](x: Self) {
+    
+    inline def setAllow_sending_without_reply(value: Boolean): Self = StObject.set(x, "allow_sending_without_reply", value.asInstanceOf[js.Any])
+    
+    inline def setAllow_sending_without_replyUndefined: Self = StObject.set(x, "allow_sending_without_reply", js.undefined)
     
     inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     

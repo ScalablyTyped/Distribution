@@ -1,21 +1,21 @@
 package typings.timezonecomplete
 
-import typings.timezonecomplete.basicsMod.TimeComponentOpts
-import typings.timezonecomplete.basicsMod.TimeComponents
-import typings.timezonecomplete.basicsMod.TimeUnit
-import typings.timezonecomplete.basicsMod.WeekDay
-import typings.timezonecomplete.javascriptMod.DateFunctions
-import typings.timezonecomplete.localeMod.Locale
-import typings.timezonecomplete.localeMod.PartialLocale
-import typings.timezonecomplete.parseMod.AwareTimeStruct
-import typings.timezonecomplete.periodMod.PeriodDst
-import typings.timezonecomplete.periodMod.PeriodJson
-import typings.timezonecomplete.periodMod.WeekTimeOpts
-import typings.timezonecomplete.timesourceMod.TimeSource
-import typings.timezonecomplete.tzDatabaseMod.AtType
-import typings.timezonecomplete.tzDatabaseMod.OnType
-import typings.timezonecomplete.tzDatabaseMod.RuleType
-import typings.timezonecomplete.tzDatabaseMod.ToType
+import typings.timezonecomplete.distLibBasicsMod.TimeComponentOpts
+import typings.timezonecomplete.distLibBasicsMod.TimeComponents
+import typings.timezonecomplete.distLibBasicsMod.TimeUnit
+import typings.timezonecomplete.distLibBasicsMod.WeekDay
+import typings.timezonecomplete.distLibJavascriptMod.DateFunctions
+import typings.timezonecomplete.distLibLocaleMod.Locale
+import typings.timezonecomplete.distLibLocaleMod.PartialLocale
+import typings.timezonecomplete.distLibParseMod.AwareTimeStruct
+import typings.timezonecomplete.distLibPeriodMod.PeriodDst
+import typings.timezonecomplete.distLibPeriodMod.PeriodJson
+import typings.timezonecomplete.distLibPeriodMod.WeekTimeOpts
+import typings.timezonecomplete.distLibTimesourceMod.TimeSource
+import typings.timezonecomplete.distLibTzDatabaseMod.AtType
+import typings.timezonecomplete.distLibTzDatabaseMod.OnType
+import typings.timezonecomplete.distLibTzDatabaseMod.RuleType
+import typings.timezonecomplete.distLibTzDatabaseMod.ToType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,13 +31,13 @@ object mod {
   object AtType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.AtType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibTzDatabaseMod.AtType & Double] = js.native
     
-    /* 0 */ val Standard: typings.timezonecomplete.tzDatabaseMod.AtType.Standard & Double = js.native
+    /* 0 */ val Standard: typings.timezonecomplete.distLibTzDatabaseMod.AtType.Standard & Double = js.native
     
-    /* 2 */ val Utc: typings.timezonecomplete.tzDatabaseMod.AtType.Utc & Double = js.native
+    /* 2 */ val Utc: typings.timezonecomplete.distLibTzDatabaseMod.AtType.Utc & Double = js.native
     
-    /* 1 */ val Wall: typings.timezonecomplete.tzDatabaseMod.AtType.Wall & Double = js.native
+    /* 1 */ val Wall: typings.timezonecomplete.distLibTzDatabaseMod.AtType.Wall & Double = js.native
   }
   
   object DAY_PERIODS_ABBREVIATED {
@@ -130,11 +130,11 @@ object mod {
   object DateFunctions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.javascriptMod.DateFunctions & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibJavascriptMod.DateFunctions & Double] = js.native
     
-    /* 0 */ val Get: typings.timezonecomplete.javascriptMod.DateFunctions.Get & Double = js.native
+    /* 0 */ val Get: typings.timezonecomplete.distLibJavascriptMod.DateFunctions.Get & Double = js.native
     
-    /* 1 */ val GetUTC: typings.timezonecomplete.javascriptMod.DateFunctions.GetUTC & Double = js.native
+    /* 1 */ val GetUTC: typings.timezonecomplete.distLibJavascriptMod.DateFunctions.GetUTC & Double = js.native
   }
   
   @JSImport("timezonecomplete", "DateTime")
@@ -144,7 +144,7 @@ object mod {
     * @throws nothing
     */
   open class DateTime ()
-    extends typings.timezonecomplete.datetimeMod.DateTime {
+    extends typings.timezonecomplete.distLibDatetimeMod.DateTime {
     /**
       * Constructor. Parses ISO timestamp string.
       * Non-existing local times are normalized by rounding up to the next DST offset.
@@ -166,7 +166,7 @@ object mod {
       * Get a date from a TimeStruct
       * @throws timezonecomplete.Argument.TimeZone if the given time zone argument is invalid
       */
-    def this(tm: typings.timezonecomplete.basicsMod.TimeStruct) = this()
+    def this(tm: typings.timezonecomplete.distLibBasicsMod.TimeStruct) = this()
     /**
       * Constructor
       * @param unixTimestamp	milliseconds since 1970-01-01T00:00:00.000
@@ -206,14 +206,22 @@ object mod {
       * @throws timezonecomplete.Argument.TimeZone if the time zone argument is invalid
       */
     def this(date: js.Date, getFuncs: DateFunctions) = this()
-    def this(isoString: String, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
+    def this(isoString: String, timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone) = this()
     def this(
-      tm: typings.timezonecomplete.basicsMod.TimeStruct,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      tm: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
-    def this(unixTimestamp: Double, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
-    def this(dateString: String, formatString: String, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
-    def this(date: js.Date, getFuncs: DateFunctions, timeZone: typings.timezonecomplete.timezoneMod.TimeZone) = this()
+    def this(unixTimestamp: Double, timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone) = this()
+    def this(
+      dateString: String,
+      formatString: String,
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
+    ) = this()
+    def this(
+      date: js.Date,
+      getFuncs: DateFunctions,
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
+    ) = this()
     /**
       * Constructor. Note that unlike JavaScript dates we require fields to be in normal ranges.
       * Use the add(duration) or sub(duration) for arithmetic.
@@ -321,7 +329,7 @@ object mod {
       minute: Double,
       second: Double,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -331,7 +339,7 @@ object mod {
       minute: Double,
       second: Double,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -341,7 +349,7 @@ object mod {
       minute: Double,
       second: Unit,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -351,7 +359,7 @@ object mod {
       minute: Double,
       second: Unit,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -361,7 +369,7 @@ object mod {
       minute: Unit,
       second: Double,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -371,7 +379,7 @@ object mod {
       minute: Unit,
       second: Double,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -381,7 +389,7 @@ object mod {
       minute: Unit,
       second: Unit,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -391,7 +399,7 @@ object mod {
       minute: Unit,
       second: Unit,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -401,7 +409,7 @@ object mod {
       minute: Double,
       second: Double,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -411,7 +419,7 @@ object mod {
       minute: Double,
       second: Double,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -421,7 +429,7 @@ object mod {
       minute: Double,
       second: Unit,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -431,7 +439,7 @@ object mod {
       minute: Double,
       second: Unit,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -441,7 +449,7 @@ object mod {
       minute: Unit,
       second: Double,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -451,7 +459,7 @@ object mod {
       minute: Unit,
       second: Double,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -461,7 +469,7 @@ object mod {
       minute: Unit,
       second: Unit,
       millisecond: Double,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
     def this(
       year: Double,
@@ -471,7 +479,7 @@ object mod {
       minute: Unit,
       second: Unit,
       millisecond: Unit,
-      timeZone: typings.timezonecomplete.timezoneMod.TimeZone
+      timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
     ) = this()
   }
   /* static members */
@@ -509,7 +517,7 @@ object mod {
       minute: js.UndefOr[Double],
       second: js.UndefOr[Double],
       millisecond: js.UndefOr[Double],
-      zone: js.UndefOr[typings.timezonecomplete.timezoneMod.TimeZone | Null],
+      zone: js.UndefOr[typings.timezonecomplete.distLibTimezoneMod.TimeZone | Null],
       allowPre1970: js.UndefOr[Boolean]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], millisecond.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], allowPre1970.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
@@ -523,28 +531,28 @@ object mod {
       * @throws timezonecomplete.Argument.N if n is not a finite number
       * @throws timezonecomplete.Argument.TimeZone if the given time zone is invalid
       */
-    inline def fromExcel(n: Double): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-    inline def fromExcel(n: Double, timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    inline def fromExcel(n: Double): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+    inline def fromExcel(n: Double, timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExcel")(n.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     
     /**
       * Current date+time in the given time zone
       * @param timeZone	The desired time zone (optional, defaults to UTC).
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    inline def now(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-    inline def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    inline def now(): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+    inline def now(timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     
     /**
       * Current date+time in local time
       * @throws nothing
       */
-    inline def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    inline def nowLocal(): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     
     /**
       * Current date+time in UTC time
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    inline def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    inline def nowUtc(): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     
     /**
       * Parse a date in a given format
@@ -556,31 +564,31 @@ object mod {
       * @throws timezonecomplete.ParseError if the given dateTimeString is wrong or not according to the pattern
       * @throws timezonecomplete.Argument.FormatString if the given format string is invalid
       */
-    inline def parse(s: String, format: String): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-    inline def parse(s: String, format: String, zone: Unit, locale: Unit, allowTrailing: Boolean): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-    inline def parse(s: String, format: String, zone: Unit, locale: PartialLocale): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-    inline def parse(s: String, format: String, zone: Unit, locale: PartialLocale, allowTrailing: Boolean): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-    inline def parse(s: String, format: String, zone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    inline def parse(s: String, format: String): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+    inline def parse(s: String, format: String, zone: Unit, locale: Unit, allowTrailing: Boolean): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+    inline def parse(s: String, format: String, zone: Unit, locale: PartialLocale): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+    inline def parse(s: String, format: String, zone: Unit, locale: PartialLocale, allowTrailing: Boolean): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+    inline def parse(s: String, format: String, zone: typings.timezonecomplete.distLibTimezoneMod.TimeZone): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     inline def parse(
       s: String,
       format: String,
-      zone: typings.timezonecomplete.timezoneMod.TimeZone,
+      zone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
       locale: Unit,
       allowTrailing: Boolean
-    ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    ): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     inline def parse(
       s: String,
       format: String,
-      zone: typings.timezonecomplete.timezoneMod.TimeZone,
+      zone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
       locale: PartialLocale
-    ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    ): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     inline def parse(
       s: String,
       format: String,
-      zone: typings.timezonecomplete.timezoneMod.TimeZone,
+      zone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
       locale: PartialLocale,
       allowTrailing: Boolean
-    ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    ): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], format.asInstanceOf[js.Any], zone.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
     
     /**
       * Actual time source in use. Setting this property allows to
@@ -600,7 +608,7 @@ object mod {
     * @throws nothing
     */
   open class Duration ()
-    extends typings.timezonecomplete.durationMod.Duration {
+    extends typings.timezonecomplete.distLibDurationMod.Duration {
     /**
       * Construct a duration from an amount and a time unit.
       * @param amount	Number of units
@@ -631,7 +639,7 @@ object mod {
       * @return A duration of n days
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def days(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def days(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
     
     /**
       * Construct a time duration
@@ -639,7 +647,7 @@ object mod {
       * @return A duration of n hours
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def hours(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def hours(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
     
     /**
       * Construct a time duration
@@ -647,7 +655,7 @@ object mod {
       * @return A duration of n milliseconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def milliseconds(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def milliseconds(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
     
     /**
       * Construct a time duration
@@ -655,7 +663,7 @@ object mod {
       * @return A duration of n minutes
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def minutes(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def minutes(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
     
     /**
       * Construct a time duration
@@ -663,7 +671,7 @@ object mod {
       * @return A duration of n months
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def months(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def months(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
     
     /**
       * Construct a time duration
@@ -671,7 +679,7 @@ object mod {
       * @return A duration of n seconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def seconds(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def seconds(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
     
     /**
       * Construct a time duration
@@ -679,7 +687,7 @@ object mod {
       * @return A duration of n years
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    inline def years(amount: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    inline def years(amount: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(amount.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   }
   
   @JSImport("timezonecomplete", "ERA_NAMES_ABBREVIATED")
@@ -711,11 +719,11 @@ object mod {
   object NormalizeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.NormalizeOption & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibTzDatabaseMod.NormalizeOption & Double] = js.native
     
-    /* 1 */ val Down: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Down & Double = js.native
+    /* 1 */ val Down: typings.timezonecomplete.distLibTzDatabaseMod.NormalizeOption.Down & Double = js.native
     
-    /* 0 */ val Up: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Up & Double = js.native
+    /* 0 */ val Up: typings.timezonecomplete.distLibTzDatabaseMod.NormalizeOption.Up & Double = js.native
   }
   
   @JSImport("timezonecomplete", "OnType")
@@ -723,21 +731,21 @@ object mod {
   object OnType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.OnType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibTzDatabaseMod.OnType & Double] = js.native
     
-    /* 0 */ val DayNum: typings.timezonecomplete.tzDatabaseMod.OnType.DayNum & Double = js.native
+    /* 0 */ val DayNum: typings.timezonecomplete.distLibTzDatabaseMod.OnType.DayNum & Double = js.native
     
-    /* 2 */ val GreqX: typings.timezonecomplete.tzDatabaseMod.OnType.GreqX & Double = js.native
+    /* 2 */ val GreqX: typings.timezonecomplete.distLibTzDatabaseMod.OnType.GreqX & Double = js.native
     
-    /* 1 */ val LastX: typings.timezonecomplete.tzDatabaseMod.OnType.LastX & Double = js.native
+    /* 1 */ val LastX: typings.timezonecomplete.distLibTzDatabaseMod.OnType.LastX & Double = js.native
     
-    /* 3 */ val LeqX: typings.timezonecomplete.tzDatabaseMod.OnType.LeqX & Double = js.native
+    /* 3 */ val LeqX: typings.timezonecomplete.distLibTzDatabaseMod.OnType.LeqX & Double = js.native
   }
   
   @JSImport("timezonecomplete", "Period")
   @js.native
   open class Period protected ()
-    extends typings.timezonecomplete.periodMod.Period {
+    extends typings.timezonecomplete.distLibPeriodMod.Period {
     /**
       * Constructor
       * LIMITATION: if dst equals RegularLocalTime, and unit is Second, Minute or Hour,
@@ -769,8 +777,8 @@ object mod {
       * @throws timezonecomplete.Argument.Interval.NotImplemented if dst=RegularLocalTime and the interval is not a multiple of one day
       */
     def this(
-      reference: typings.timezonecomplete.datetimeMod.DateTime,
-      interval: typings.timezonecomplete.durationMod.Duration
+      reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
+      interval: typings.timezonecomplete.distLibDurationMod.Duration
     ) = this()
     /**
       * Constructor
@@ -792,14 +800,14 @@ object mod {
       * @throws timezonecomplete.Argument.Interval.NotImplemented if dst=RegularLocalTime and the interval is not a multiple of one day
       * @throws timezonecomplete.Argument.Dst for invalid dst value
       */
-    def this(reference: typings.timezonecomplete.datetimeMod.DateTime, amount: Double, unit: TimeUnit) = this()
+    def this(reference: typings.timezonecomplete.distLibDatetimeMod.DateTime, amount: Double, unit: TimeUnit) = this()
     def this(
-      reference: typings.timezonecomplete.datetimeMod.DateTime,
-      interval: typings.timezonecomplete.durationMod.Duration,
+      reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
+      interval: typings.timezonecomplete.distLibDurationMod.Duration,
       dst: PeriodDst
     ) = this()
     def this(
-      reference: typings.timezonecomplete.datetimeMod.DateTime,
+      reference: typings.timezonecomplete.distLibDatetimeMod.DateTime,
       amount: Double,
       unit: TimeUnit,
       dst: PeriodDst
@@ -811,13 +819,13 @@ object mod {
   object PeriodDst extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.periodMod.PeriodDst & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibPeriodMod.PeriodDst & Double] = js.native
     
-    /* 2 */ val MAX: typings.timezonecomplete.periodMod.PeriodDst.MAX & Double = js.native
+    /* 2 */ val MAX: typings.timezonecomplete.distLibPeriodMod.PeriodDst.MAX & Double = js.native
     
-    /* 0 */ val RegularIntervals: typings.timezonecomplete.periodMod.PeriodDst.RegularIntervals & Double = js.native
+    /* 0 */ val RegularIntervals: typings.timezonecomplete.distLibPeriodMod.PeriodDst.RegularIntervals & Double = js.native
     
-    /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime & Double = js.native
+    /* 1 */ val RegularLocalTime: typings.timezonecomplete.distLibPeriodMod.PeriodDst.RegularLocalTime & Double = js.native
   }
   
   @JSImport("timezonecomplete", "QUARTER_ABBREVIATIONS")
@@ -835,12 +843,12 @@ object mod {
   @JSImport("timezonecomplete", "RealTimeSource")
   @js.native
   open class RealTimeSource ()
-    extends typings.timezonecomplete.timesourceMod.RealTimeSource
+    extends typings.timezonecomplete.distLibTimesourceMod.RealTimeSource
   
   @JSImport("timezonecomplete", "RuleInfo")
   @js.native
   open class RuleInfo protected ()
-    extends typings.timezonecomplete.tzDatabaseMod.RuleInfo {
+    extends typings.timezonecomplete.distLibTzDatabaseMod.RuleInfo {
     /**
       * Constructor
       * @param from
@@ -911,7 +919,7 @@ object mod {
       /**
       * DST offset from local standard time (NOT from UTC!)
       */
-    save: typings.timezonecomplete.durationMod.Duration,
+    save: typings.timezonecomplete.distLibDurationMod.Duration,
       /**
       * Character to insert in %s for time zone abbreviation
       * Note if TZ database indicates "-" this is the empty string
@@ -925,13 +933,13 @@ object mod {
   object RuleType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.RuleType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibTzDatabaseMod.RuleType & Double] = js.native
     
-    /* 0 */ val None: typings.timezonecomplete.tzDatabaseMod.RuleType.None & Double = js.native
+    /* 0 */ val None: typings.timezonecomplete.distLibTzDatabaseMod.RuleType.None & Double = js.native
     
-    /* 1 */ val Offset: typings.timezonecomplete.tzDatabaseMod.RuleType.Offset & Double = js.native
+    /* 1 */ val Offset: typings.timezonecomplete.distLibTzDatabaseMod.RuleType.Offset & Double = js.native
     
-    /* 2 */ val RuleName: typings.timezonecomplete.tzDatabaseMod.RuleType.RuleName & Double = js.native
+    /* 2 */ val RuleName: typings.timezonecomplete.distLibTzDatabaseMod.RuleType.RuleName & Double = js.native
   }
   
   @JSImport("timezonecomplete", "SHORT_MONTH_NAMES")
@@ -969,7 +977,7 @@ object mod {
   @JSImport("timezonecomplete", "TimeStruct")
   @js.native
   open class TimeStruct protected ()
-    extends typings.timezonecomplete.basicsMod.TimeStruct {
+    extends typings.timezonecomplete.distLibBasicsMod.TimeStruct {
     /**
       * Constructor
       *
@@ -1019,7 +1027,7 @@ object mod {
       minute: js.UndefOr[Double],
       second: js.UndefOr[Double],
       milli: js.UndefOr[Double]
-    ): typings.timezonecomplete.basicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromComponents")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], milli.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
+    ): typings.timezonecomplete.distLibBasicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromComponents")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any], milli.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibBasicsMod.TimeStruct]
     
     /**
       * Create a TimeStruct from a JavaScript date
@@ -1028,20 +1036,20 @@ object mod {
       * @param df Which functions to take (getX() or getUTCX())
       * @throws nothing
       */
-    inline def fromDate(d: js.Date, df: DateFunctions): typings.timezonecomplete.basicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
+    inline def fromDate(d: js.Date, df: DateFunctions): typings.timezonecomplete.distLibBasicsMod.TimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(d.asInstanceOf[js.Any], df.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibBasicsMod.TimeStruct]
     
     /**
       * Returns a TimeStruct from an ISO 8601 string WITHOUT time zone
       * @throws timezonecomplete.Argument.S if `s` is not a proper iso string
       */
-    inline def fromString(s: String): typings.timezonecomplete.basicsMod.TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
+    inline def fromString(s: String): typings.timezonecomplete.distLibBasicsMod.TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibBasicsMod.TimeStruct]
     
     /**
       * Create a TimeStruct from a number of unix milliseconds
       * (backward compatibility)
       * @throws timezonecomplete.Argument.UnixMillis for non-integer milliseconds
       */
-    inline def fromUnix(unixMillis: Double): typings.timezonecomplete.basicsMod.TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnix")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.basicsMod.TimeStruct]
+    inline def fromUnix(unixMillis: Double): typings.timezonecomplete.distLibBasicsMod.TimeStruct = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnix")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibBasicsMod.TimeStruct]
   }
   
   @JSImport("timezonecomplete", "TimeUnit")
@@ -1049,25 +1057,25 @@ object mod {
   object TimeUnit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.basicsMod.TimeUnit & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibBasicsMod.TimeUnit & Double] = js.native
     
-    /* 4 */ val Day: typings.timezonecomplete.basicsMod.TimeUnit.Day & Double = js.native
+    /* 4 */ val Day: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Day & Double = js.native
     
-    /* 3 */ val Hour: typings.timezonecomplete.basicsMod.TimeUnit.Hour & Double = js.native
+    /* 3 */ val Hour: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Hour & Double = js.native
     
-    /* 8 */ val MAX: typings.timezonecomplete.basicsMod.TimeUnit.MAX & Double = js.native
+    /* 8 */ val MAX: typings.timezonecomplete.distLibBasicsMod.TimeUnit.MAX & Double = js.native
     
-    /* 0 */ val Millisecond: typings.timezonecomplete.basicsMod.TimeUnit.Millisecond & Double = js.native
+    /* 0 */ val Millisecond: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Millisecond & Double = js.native
     
-    /* 2 */ val Minute: typings.timezonecomplete.basicsMod.TimeUnit.Minute & Double = js.native
+    /* 2 */ val Minute: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Minute & Double = js.native
     
-    /* 6 */ val Month: typings.timezonecomplete.basicsMod.TimeUnit.Month & Double = js.native
+    /* 6 */ val Month: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Month & Double = js.native
     
-    /* 1 */ val Second: typings.timezonecomplete.basicsMod.TimeUnit.Second & Double = js.native
+    /* 1 */ val Second: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Second & Double = js.native
     
-    /* 5 */ val Week: typings.timezonecomplete.basicsMod.TimeUnit.Week & Double = js.native
+    /* 5 */ val Week: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Week & Double = js.native
     
-    /* 7 */ val Year: typings.timezonecomplete.basicsMod.TimeUnit.Year & Double = js.native
+    /* 7 */ val Year: typings.timezonecomplete.distLibBasicsMod.TimeUnit.Year & Double = js.native
   }
   
   @JSImport("timezonecomplete", "TimeZone")
@@ -1081,7 +1089,7 @@ object mod {
     * @throws timezonecomplete.InvalidTimeZoneData if the time zone database is invalid
     */
   /* private */ open class TimeZone ()
-    extends typings.timezonecomplete.timezoneMod.TimeZone
+    extends typings.timezonecomplete.distLibTimezoneMod.TimeZone
   /* static members */
   object TimeZone {
     
@@ -1133,7 +1141,7 @@ object mod {
       * 2014-01-01 is +01:00 and amsterdam time for 2014-07-01 is +02:00
       * @throws nothing
       */
-    inline def local(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+    inline def local(): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
     
     /**
       * Convert an offset number into an offset string
@@ -1155,14 +1163,14 @@ object mod {
       * The UTC time zone.
       * @throws timezonecomplete.NotFound.Zone if the UTC time zone doesn't exist in the time zone database
       */
-    inline def utc(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+    inline def utc(): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
     
     /**
       * Time zone with a fixed offset
       * @param offset	offset w.r.t. UTC in minutes, e.g. 90 for +01:30
       * @throws timezonecomplete.Argument.Offset if the offset is not within -24h...+24h (in minutes)
       */
-    inline def zone(offset: Double): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+    inline def zone(offset: Double): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
     /**
       * Time zone for an offset string or an IANA time zone string. Note that time zones are cached
       * so you don't necessarily get a new object each time.
@@ -1178,8 +1186,8 @@ object mod {
       * @throws timezonecomplete.Argument.S if s cannot be parsed
       * @throws timezonecomplete.NotFound.Zone if the zone name doesn't exist in the time zone database
       */
-    inline def zone(s: String): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
-    inline def zone(s: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+    inline def zone(s: String): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
+    inline def zone(s: String, dst: Boolean): typings.timezonecomplete.distLibTimezoneMod.TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(s.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
   }
   
   @JSImport("timezonecomplete", "TimeZoneKind")
@@ -1187,13 +1195,13 @@ object mod {
   object TimeZoneKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.timezoneMod.TimeZoneKind & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind & Double] = js.native
     
-    /* 0 */ val Local: typings.timezonecomplete.timezoneMod.TimeZoneKind.Local & Double = js.native
+    /* 0 */ val Local: typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind.Local & Double = js.native
     
-    /* 1 */ val Offset: typings.timezonecomplete.timezoneMod.TimeZoneKind.Offset & Double = js.native
+    /* 1 */ val Offset: typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind.Offset & Double = js.native
     
-    /* 2 */ val Proper: typings.timezonecomplete.timezoneMod.TimeZoneKind.Proper & Double = js.native
+    /* 2 */ val Proper: typings.timezonecomplete.distLibTimezoneMod.TimeZoneKind.Proper & Double = js.native
   }
   
   @JSImport("timezonecomplete", "ToType")
@@ -1201,17 +1209,17 @@ object mod {
   object ToType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.tzDatabaseMod.ToType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibTzDatabaseMod.ToType & Double] = js.native
     
-    /* 1 */ val Max: typings.timezonecomplete.tzDatabaseMod.ToType.Max & Double = js.native
+    /* 1 */ val Max: typings.timezonecomplete.distLibTzDatabaseMod.ToType.Max & Double = js.native
     
-    /* 0 */ val Year: typings.timezonecomplete.tzDatabaseMod.ToType.Year & Double = js.native
+    /* 0 */ val Year: typings.timezonecomplete.distLibTzDatabaseMod.ToType.Year & Double = js.native
   }
   
   @JSImport("timezonecomplete", "Transition")
   @js.native
   open class Transition protected ()
-    extends typings.timezonecomplete.tzDatabaseMod.Transition {
+    extends typings.timezonecomplete.distLibTzDatabaseMod.Transition {
     /**
       * Constructor
       * @param at
@@ -1227,7 +1235,7 @@ object mod {
       /**
       * New offset (type of offset depends on the function)
       */
-    offset: typings.timezonecomplete.durationMod.Duration,
+    offset: typings.timezonecomplete.distLibDurationMod.Duration,
       /**
       * New timzone abbreviation letter
       */
@@ -1243,7 +1251,7 @@ object mod {
     * @throws timezonecomplete.InvalidTimeZoneData if `data` is empty or invalid
     */
   /* private */ open class TzDatabase ()
-    extends typings.timezonecomplete.tzDatabaseMod.TzDatabase
+    extends typings.timezonecomplete.distLibTzDatabaseMod.TzDatabase
   /* static members */
   object TzDatabase {
     
@@ -1274,7 +1282,7 @@ object mod {
       * Single instance of this database
       * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
       */
-    inline def instance(): typings.timezonecomplete.tzDatabaseMod.TzDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.timezonecomplete.tzDatabaseMod.TzDatabase]
+    inline def instance(): typings.timezonecomplete.distLibTzDatabaseMod.TzDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.timezonecomplete.distLibTzDatabaseMod.TzDatabase]
   }
   
   @JSImport("timezonecomplete", "WEEKDAY_LETTERS")
@@ -1290,27 +1298,27 @@ object mod {
   object WeekDay extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.timezonecomplete.basicsMod.WeekDay & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.timezonecomplete.distLibBasicsMod.WeekDay & Double] = js.native
     
-    /* 5 */ val Friday: typings.timezonecomplete.basicsMod.WeekDay.Friday & Double = js.native
+    /* 5 */ val Friday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Friday & Double = js.native
     
-    /* 1 */ val Monday: typings.timezonecomplete.basicsMod.WeekDay.Monday & Double = js.native
+    /* 1 */ val Monday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Monday & Double = js.native
     
-    /* 6 */ val Saturday: typings.timezonecomplete.basicsMod.WeekDay.Saturday & Double = js.native
+    /* 6 */ val Saturday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Saturday & Double = js.native
     
-    /* 0 */ val Sunday: typings.timezonecomplete.basicsMod.WeekDay.Sunday & Double = js.native
+    /* 0 */ val Sunday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Sunday & Double = js.native
     
-    /* 4 */ val Thursday: typings.timezonecomplete.basicsMod.WeekDay.Thursday & Double = js.native
+    /* 4 */ val Thursday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Thursday & Double = js.native
     
-    /* 2 */ val Tuesday: typings.timezonecomplete.basicsMod.WeekDay.Tuesday & Double = js.native
+    /* 2 */ val Tuesday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Tuesday & Double = js.native
     
-    /* 3 */ val Wednesday: typings.timezonecomplete.basicsMod.WeekDay.Wednesday & Double = js.native
+    /* 3 */ val Wednesday: typings.timezonecomplete.distLibBasicsMod.WeekDay.Wednesday & Double = js.native
   }
   
   @JSImport("timezonecomplete", "ZoneInfo")
   @js.native
   open class ZoneInfo protected ()
-    extends typings.timezonecomplete.tzDatabaseMod.ZoneInfo {
+    extends typings.timezonecomplete.distLibTzDatabaseMod.ZoneInfo {
     /**
       * Constructor
       * @param gmtoff
@@ -1327,7 +1335,7 @@ object mod {
       * contrary to what you might expect).  E.g. Europe/Amsterdam has +60 minutes in this field because
       * it is one hour ahead of UTC
       */
-    gmtoff: typings.timezonecomplete.durationMod.Duration,
+    gmtoff: typings.timezonecomplete.distLibDurationMod.Duration,
       /**
       * The RULES column tells us whether daylight saving time is being observed:
       * A hyphen, a kind of null value, means that we have not set our clocks ahead of standard time.
@@ -1339,7 +1347,7 @@ object mod {
       /**
       * If the rule column is an offset, this is the offset
       */
-    ruleOffset: typings.timezonecomplete.durationMod.Duration,
+    ruleOffset: typings.timezonecomplete.distLibDurationMod.Duration,
       /**
       * If the rule column is a rule name, this is the rule name
       */
@@ -1360,7 +1368,7 @@ object mod {
       * contrary to what you might expect).  E.g. Europe/Amsterdam has +60 minutes in this field because
       * it is one hour ahead of UTC
       */
-    gmtoff: typings.timezonecomplete.durationMod.Duration,
+    gmtoff: typings.timezonecomplete.distLibDurationMod.Duration,
       /**
       * The RULES column tells us whether daylight saving time is being observed:
       * A hyphen, a kind of null value, means that we have not set our clocks ahead of standard time.
@@ -1372,7 +1380,7 @@ object mod {
       /**
       * If the rule column is an offset, this is the offset
       */
-    ruleOffset: typings.timezonecomplete.durationMod.Duration,
+    ruleOffset: typings.timezonecomplete.distLibDurationMod.Duration,
       /**
       * If the rule column is a rule name, this is the rule name
       */
@@ -1395,13 +1403,13 @@ object mod {
     ) = this()
   }
   
-  inline def abs(d: typings.timezonecomplete.durationMod.Duration): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(d.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def abs(d: typings.timezonecomplete.distLibDurationMod.Duration): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(d.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
   inline def binaryInsertionIndex[T](arr: js.Array[T], compare: js.Function1[/* a */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryInsertionIndex")(arr.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def dayOfYear(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dayOfYear")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def days(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def days(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
   inline def daysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("daysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -1410,46 +1418,46 @@ object mod {
   inline def firstWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("firstWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    dateTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
     localZone: Null,
     formatString: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    dateTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
     localZone: Null,
     formatString: String,
     locale: PartialLocale
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    dateTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
     localZone: Unit,
     formatString: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
+    dateTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
     localZone: Unit,
     formatString: String,
     locale: PartialLocale
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    localZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    dateTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    localZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
     formatString: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def format(
-    dateTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    utcTime: typings.timezonecomplete.basicsMod.TimeStruct,
-    localZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    dateTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    utcTime: typings.timezonecomplete.distLibBasicsMod.TimeStruct,
+    localZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
     formatString: String,
     locale: PartialLocale
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateTime.asInstanceOf[js.Any], utcTime.asInstanceOf[js.Any], localZone.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def hours(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def hours(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
   inline def isDateTime(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/datetime.DateTime */ Boolean]
   
@@ -1467,38 +1475,38 @@ object mod {
   
   inline def lastWeekDayOfMonth(year: Double, month: Double, weekDay: WeekDay): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastWeekDayOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], weekDay.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def local(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+  inline def local(): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
   
   inline def max(
-    d1: typings.timezonecomplete.datetimeMod.DateTime,
-    d2: typings.timezonecomplete.datetimeMod.DateTime
-  ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    d1: typings.timezonecomplete.distLibDatetimeMod.DateTime,
+    d2: typings.timezonecomplete.distLibDatetimeMod.DateTime
+  ): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   inline def max(
-    d1: typings.timezonecomplete.durationMod.Duration,
-    d2: typings.timezonecomplete.durationMod.Duration
-  ): typings.timezonecomplete.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    d1: typings.timezonecomplete.distLibDurationMod.Duration,
+    d2: typings.timezonecomplete.distLibDurationMod.Duration
+  ): typings.timezonecomplete.distLibDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
-  inline def milliseconds(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def milliseconds(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
   inline def min(
-    d1: typings.timezonecomplete.datetimeMod.DateTime,
-    d2: typings.timezonecomplete.datetimeMod.DateTime
-  ): typings.timezonecomplete.datetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+    d1: typings.timezonecomplete.distLibDatetimeMod.DateTime,
+    d2: typings.timezonecomplete.distLibDatetimeMod.DateTime
+  ): typings.timezonecomplete.distLibDatetimeMod.DateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   inline def min(
-    d1: typings.timezonecomplete.durationMod.Duration,
-    d2: typings.timezonecomplete.durationMod.Duration
-  ): typings.timezonecomplete.durationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+    d1: typings.timezonecomplete.distLibDurationMod.Duration,
+    d2: typings.timezonecomplete.distLibDurationMod.Duration
+  ): typings.timezonecomplete.distLibDurationMod.Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
-  inline def minutes(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def minutes(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
-  inline def months(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def months(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
-  inline def now(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
-  inline def now(timeZone: typings.timezonecomplete.timezoneMod.TimeZone): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  inline def now(): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
+  inline def now(timeZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("now")(timeZone.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   
-  inline def nowLocal(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  inline def nowLocal(): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowLocal")().asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   
-  inline def nowUtc(): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  inline def nowUtc(): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nowUtc")().asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   
   inline def parse(dateTimeString: String, formatString: String): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
   inline def parse(dateTimeString: String, formatString: String, overrideZone: Null, allowTrailing: Boolean): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
@@ -1534,25 +1542,25 @@ object mod {
   inline def parse(
     dateTimeString: String,
     formatString: String,
-    overrideZone: typings.timezonecomplete.timezoneMod.TimeZone
+    overrideZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone
   ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
   inline def parse(
     dateTimeString: String,
     formatString: String,
-    overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    overrideZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
     allowTrailing: Boolean
   ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
   inline def parse(
     dateTimeString: String,
     formatString: String,
-    overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    overrideZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
     allowTrailing: Boolean,
     locale: PartialLocale
   ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
   inline def parse(
     dateTimeString: String,
     formatString: String,
-    overrideZone: typings.timezonecomplete.timezoneMod.TimeZone,
+    overrideZone: typings.timezonecomplete.distLibTimezoneMod.TimeZone,
     allowTrailing: Unit,
     locale: PartialLocale
   ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
@@ -1566,7 +1574,7 @@ object mod {
   
   inline def secondOfDay(hour: Double, minute: Double, second: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("secondOfDay")(hour.asInstanceOf[js.Any], minute.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def seconds(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def seconds(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
   inline def stringToTimeUnit(s: String): TimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToTimeUnit")(s.asInstanceOf[js.Any]).asInstanceOf[TimeUnit]
   
@@ -1586,13 +1594,13 @@ object mod {
   inline def timeUnitToString(unit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def timeUnitToString(unit: TimeUnit, amount: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(unit.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeGreaterThanOrEqualTo")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  inline def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeGreaterThanOrEqualTo")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   
-  inline def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): typings.timezonecomplete.datetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeLessThan")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.datetimeMod.DateTime]
+  inline def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): typings.timezonecomplete.distLibDatetimeMod.DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeLessThan")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDatetimeMod.DateTime]
   
   inline def unixToTimeNoLeapSecs(unixMillis: Double): TimeComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("unixToTimeNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[TimeComponents]
   
-  inline def utc(): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+  inline def utc(): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
   
   inline def weekDayNoLeapSecs(unixMillis: Double): WeekDay = ^.asInstanceOf[js.Dynamic].applyDynamic("weekDayNoLeapSecs")(unixMillis.asInstanceOf[js.Any]).asInstanceOf[WeekDay]
   
@@ -1604,9 +1612,9 @@ object mod {
   
   inline def weekOfMonth(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekOfMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def years(n: Double): typings.timezonecomplete.durationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.durationMod.Duration]
+  inline def years(n: Double): typings.timezonecomplete.distLibDurationMod.Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(n.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibDurationMod.Duration]
   
-  inline def zone(name: String): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
-  inline def zone(name: String, dst: Boolean): typings.timezonecomplete.timezoneMod.TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
-  inline def zone(offset: Double): typings.timezonecomplete.timezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.timezoneMod.TimeZone]
+  inline def zone(name: String): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
+  inline def zone(name: String, dst: Boolean): typings.timezonecomplete.distLibTimezoneMod.TimeZone = (^.asInstanceOf[js.Dynamic].applyDynamic("zone")(name.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
+  inline def zone(offset: Double): typings.timezonecomplete.distLibTimezoneMod.TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")(offset.asInstanceOf[js.Any]).asInstanceOf[typings.timezonecomplete.distLibTimezoneMod.TimeZone]
 }

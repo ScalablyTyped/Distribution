@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "SmoothStepBlock")
 @js.native
 open class SmoothStepBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.SmoothStepBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.SmoothStepBlock {
   /**
     * Creates a new SmoothStepBlock
     * @param name defines the block name

@@ -1,6 +1,6 @@
 package typings.firebase.anon
 
-import typings.firebase.firebaseMod.firebase.appCheck.AppCheckToken
+import typings.firebase.compatMod.firebase.appCheck.AppCheckToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

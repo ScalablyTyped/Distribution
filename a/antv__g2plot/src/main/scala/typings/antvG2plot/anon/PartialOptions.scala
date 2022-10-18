@@ -2,7 +2,7 @@ package typings.antvG2plot.anon
 
 import typings.antvG2plot.antvG2plotStrings.archimedean
 import typings.antvG2plot.antvG2plotStrings.rectangular
-import typings.antvG2plot.wordCloudTypesMod.Word
+import typings.antvG2plot.libPlotsWordCloudTypesMod.Word
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,11 +30,11 @@ trait PartialOptions extends StObject {
   ] = js.undefined
   
   var fontWeight: js.UndefOr[
-    typings.antvG2plot.transformWordCloudMod.FontWeight | (js.Function3[
+    typings.antvG2plot.libUtilsTransformWordCloudMod.FontWeight | (js.Function3[
       /* row */ Word, 
       /* index */ js.UndefOr[Double], 
       /* words */ js.UndefOr[js.Array[Word]], 
-      typings.antvG2plot.transformWordCloudMod.FontWeight
+      typings.antvG2plot.libUtilsTransformWordCloudMod.FontWeight
     ])
   ] = js.undefined
   
@@ -111,16 +111,16 @@ object PartialOptions {
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     inline def setFontWeight(
-      value: typings.antvG2plot.transformWordCloudMod.FontWeight | (js.Function3[
+      value: typings.antvG2plot.libUtilsTransformWordCloudMod.FontWeight | (js.Function3[
           /* row */ Word, 
           /* index */ js.UndefOr[Double], 
           /* words */ js.UndefOr[js.Array[Word]], 
-          typings.antvG2plot.transformWordCloudMod.FontWeight
+          typings.antvG2plot.libUtilsTransformWordCloudMod.FontWeight
         ])
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightFunction3(
-      value: (/* row */ Word, /* index */ js.UndefOr[Double], /* words */ js.UndefOr[js.Array[Word]]) => typings.antvG2plot.transformWordCloudMod.FontWeight
+      value: (/* row */ Word, /* index */ js.UndefOr[Double], /* words */ js.UndefOr[js.Array[Word]]) => typings.antvG2plot.libUtilsTransformWordCloudMod.FontWeight
     ): Self = StObject.set(x, "fontWeight", js.Any.fromFunction3(value))
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)

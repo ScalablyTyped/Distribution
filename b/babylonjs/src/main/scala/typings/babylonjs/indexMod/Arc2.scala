@@ -16,10 +16,10 @@ open class Arc2 protected ()
     */
   def this(
     /** Defines the start point of the arc */
-  startPoint: typings.babylonjs.mathVectorMod.Vector2,
+  startPoint: typings.babylonjs.mathsMathDotvectorMod.Vector2,
     /** Defines the mid point of the arc */
-  midPoint: typings.babylonjs.mathVectorMod.Vector2,
+  midPoint: typings.babylonjs.mathsMathDotvectorMod.Vector2,
     /** Defines the end point of the arc */
-  endPoint: typings.babylonjs.mathVectorMod.Vector2
+  endPoint: typings.babylonjs.mathsMathDotvectorMod.Vector2
   ) = this()
 }

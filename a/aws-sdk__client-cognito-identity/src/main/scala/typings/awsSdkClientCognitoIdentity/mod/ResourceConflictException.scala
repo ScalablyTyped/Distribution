@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "ResourceConflictException")
 @js.native
 open class ResourceConflictException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.ResourceConflictException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.ResourceConflictException {
   /**
     * @internal
     */

@@ -5,7 +5,7 @@ import typings.fundamentalReact.anon.FunctionComponentMenuItem
 import typings.fundamentalReact.anon.FunctionComponentMenuList
 import typings.fundamentalReact.anon.PartialMenuProps
 import typings.fundamentalReact.anon.WeakValidationMapMenuProp
-import typings.fundamentalReact.menuMod.MenuProps
+import typings.fundamentalReact.libMenuMenuMod.MenuProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

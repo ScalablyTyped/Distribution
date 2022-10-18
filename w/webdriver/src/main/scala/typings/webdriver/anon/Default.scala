@@ -1,7 +1,7 @@
 package typings.webdriver.anon
 
 import typings.std.Record
-import typings.wdioTypes.optionsMod.WebDriverLogTypes
+import typings.wdioTypes.buildOptionsMod.WebDriverLogTypes
 import typings.webdriver.webdriverStrings.`object`
 import typings.webdriver.webdriverStrings.boolean
 import typings.webdriver.webdriverStrings.function

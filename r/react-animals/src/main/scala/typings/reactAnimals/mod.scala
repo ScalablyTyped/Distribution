@@ -24,7 +24,7 @@ object mod extends Shortcut {
     
     var dance: Boolean
     
-    var name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71 */ Any
+    var name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71, starting with typings.reactAnimals.reactAnimalsStrings.alligator, typings.reactAnimals.reactAnimalsStrings.anteater, typings.reactAnimals.reactAnimalsStrings.armadillo */ Any
     
     var rounded: Boolean
     
@@ -37,7 +37,7 @@ object mod extends Shortcut {
     inline def apply(
       circle: Boolean,
       dance: Boolean,
-      name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71 */ Any,
+      name: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71, starting with typings.reactAnimals.reactAnimalsStrings.alligator, typings.reactAnimals.reactAnimalsStrings.anteater, typings.reactAnimals.reactAnimalsStrings.armadillo */ Any,
       rounded: Boolean,
       square: Boolean
     ): AnimalProps = {
@@ -55,7 +55,9 @@ object mod extends Shortcut {
       
       inline def setDance(value: Boolean): Self = StObject.set(x, "dance", value.asInstanceOf[js.Any])
       
-      inline def setName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71 */ Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 71, starting with typings.reactAnimals.reactAnimalsStrings.alligator, typings.reactAnimals.reactAnimalsStrings.anteater, typings.reactAnimals.reactAnimalsStrings.armadillo */ Any
+      ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
       

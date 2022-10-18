@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaCapture.Failed event. */
-@JSGlobal("Windows.Media.Capture.MediaCaptureFailedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.MediaCaptureFailedEventArgs")
 @js.native
-abstract class MediaCaptureFailedEventArgs ()
+open class MediaCaptureFailedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.MediaCaptureFailedEventArgs {
   

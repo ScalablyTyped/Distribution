@@ -114,7 +114,7 @@ object mod {
     extends StObject
        with ResponseBase {
     
-    def apply(): typings.restfulJs.anon.Headers[T] = js.native
+    def apply(): Data[T] = js.native
     
     def body(): js.Array[ResponseBody[T]] = js.native
   }
@@ -336,7 +336,7 @@ object mod {
     extends StObject
        with ResponseBase {
     
-    def apply(): Data[T] = js.native
+    def apply(): typings.restfulJs.anon.Headers[T] = js.native
     
     def body(): ResponseBody[T] = js.native
   }

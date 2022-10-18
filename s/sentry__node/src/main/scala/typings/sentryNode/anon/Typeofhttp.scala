@@ -10,8 +10,8 @@ import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerOptions
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
-import typings.node.nodeUrlMod.URL
+import typings.node.nodeColonnetMod.Socket
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -451,4 +451,23 @@ trait Typeofhttp extends StObject {
   def request(url: String, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
   def request(url: URL, options: RequestOptions): ClientRequest = js.native
   def request(url: URL, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  
+  /**
+    * Performs the low-level validations on the provided name that are done when `res.setHeader(name, value)` is called.
+    * Passing illegal value as name will result in a TypeError being thrown, identified by `code: 'ERR_INVALID_HTTP_TOKEN'`.
+    * @param name Header name
+    * @since v14.3.0
+    */
+  def validateHeaderName(name: String): Unit = js.native
+  
+  /**
+    * Performs the low-level validations on the provided value that are done when `res.setHeader(name, value)` is called.
+    * Passing illegal value as value will result in a TypeError being thrown.
+    * - Undefined value error is identified by `code: 'ERR_HTTP_INVALID_HEADER_VALUE'`.
+    * - Invalid value character error is identified by `code: 'ERR_INVALID_CHAR'`.
+    * @param name Header name
+    * @param value Header value
+    * @since v14.3.0
+    */
+  def validateHeaderValue(name: String, value: String): Unit = js.native
 }

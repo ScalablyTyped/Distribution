@@ -1,7 +1,6 @@
 package typings.react
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.InferType
 import typings.propTypes.mod.Requireable
@@ -10,7 +9,6 @@ import typings.propTypes.mod.Validator
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.std.Exclude
 import typings.std.NonNullable
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
@@ -18,44 +16,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
-  }
-  object `0` {
-    
-    inline def apply(
-      defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
-    ): `0` = {
-      val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1` extends StObject {
-    
-    var ref: js.UndefOr[Exclude[Any, String]] = js.undefined
-  }
-  object `1` {
-    
-    inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`1`]
-    }
-    
-    extension [Self <: `1`](x: Self) {
-      
-      inline def setRef(value: Exclude[Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    }
-  }
   
   trait Children extends StObject {
     
@@ -93,30 +53,6 @@ object anon {
     }
   }
   
-  trait DefaultProps extends StObject {
-    
-    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
-    
-    var propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-  }
-  object DefaultProps {
-    
-    inline def apply(
-      defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any,
-      propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-    ): DefaultProps = {
-      val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], propTypes = propTypes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DefaultProps]
-    }
-    
-    extension [Self <: DefaultProps](x: Self) {
-      
-      inline def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
-      
-      inline def setPropTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
-    }
-  }
-  
   @js.native
   trait Fn0 extends StObject {
     
@@ -127,9 +63,7 @@ object anon {
   trait Fn1 extends StObject {
     
     def apply[T](`type`: Validator[T]): Requireable[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: T}
-      */ typings.react.reactStrings.Fn1 & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof any ]: T} */ js.Any
       ] = js.native
   }
   
@@ -184,44 +118,6 @@ object anon {
   trait Instantiable
     extends StObject
        with Instantiable1[/* props */ Any, Component[Any, js.Object, Any]]
-  
-  trait PropTypes extends StObject {
-    
-    var propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-  }
-  object PropTypes {
-    
-    inline def apply(propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): PropTypes = {
-      val __obj = js.Dynamic.literal(propTypes = propTypes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PropTypes]
-    }
-    
-    extension [Self <: PropTypes](x: Self) {
-      
-      inline def setPropTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Ref extends StObject {
-    
-    var ref: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
-      ] = js.undefined
-  }
-  object Ref {
-    
-    inline def apply(): Ref = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Ref]
-    }
-    
-    extension [Self <: Ref](x: Self) {
-      
-      inline def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    }
-  }
   
   @js.native
   trait UNDEFINEDVOIDONLY extends StObject

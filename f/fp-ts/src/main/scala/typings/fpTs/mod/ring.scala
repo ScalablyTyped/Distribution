@@ -1,7 +1,6 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.ringMod.Ring
+import typings.fpTs.libRingMod.Ring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,20 +16,14 @@ object ring {
   inline def getTupleRing[T /* <: js.Array[Ring[Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rings because its type T is not an array type */ rings: T
   ): Ring[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ring.Ring<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleRing & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ring.Ring<infer A>? A : never} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTupleRing")(rings.asInstanceOf[js.Any]).asInstanceOf[Ring[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ring.Ring<infer A>? any : never}
-    */ typings.fpTs.fpTsStrings.getTupleRing & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ring.Ring<infer A>? A : never} */ js.Any
   ]]
   
   inline def negate[A](R: Ring[A]): js.Function1[/* a */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(R.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, A]]
   
   inline def tuple[A /* <: js.Array[Any] */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rings because its type {[ K in keyof A ]: Ring<A[K]>} is not an array type */ rings: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: fp-ts.fp-ts/lib/Ring.Ring<A[K]>}
-    */ typings.fpTs.fpTsStrings.tuple & TopLevel[A]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rings because its type {[ K in keyof A ]: Ring<A[K]>} is not an array type */ rings: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof A ]: fp-ts.fp-ts/lib/Ring.Ring<A[K]>} */ js.Any
   ): Ring[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(rings.asInstanceOf[js.Any]).asInstanceOf[Ring[A]]
 }

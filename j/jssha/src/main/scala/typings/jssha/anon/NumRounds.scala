@@ -1,17 +1,16 @@
 package typings.jssha.anon
 
-import typings.jssha.sha256Mod.FixedLengthOptionsNoEncodingType
+import typings.jssha.mod.EncodingType
+import typings.jssha.mod.FixedLengthOptionsEncodingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NumRounds
   extends StObject
-     with FixedLengthOptionsNoEncodingType
-     with typings.jssha.mod.FixedLengthOptionsNoEncodingType
-     with typings.jssha.sha512Mod.FixedLengthOptionsNoEncodingType
-     with typings.jssha.sha3Mod.FixedLengthOptionsNoEncodingType
-     with typings.jssha.sha1Mod.FixedLengthOptionsNoEncodingType {
+     with FixedLengthOptionsEncodingType {
+  
+  var encoding: js.UndefOr[EncodingType] = js.undefined
   
   var numRounds: js.UndefOr[Double] = js.undefined
 }
@@ -23,6 +22,10 @@ object NumRounds {
   }
   
   extension [Self <: NumRounds](x: Self) {
+    
+    inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     inline def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
     

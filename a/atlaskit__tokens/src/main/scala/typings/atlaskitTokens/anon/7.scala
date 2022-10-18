@@ -1,23 +1,27 @@
 package typings.atlaskitTokens.anon
 
+import typings.atlaskitTokens.distTypesTypesMod.PaintToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `7`[BaseToken] extends StObject {
   
-  var `[default]`: DefaultHoveredPressed[BaseToken]
+  var hover: PaintToken[BaseToken]
+  
+  var pressed: PaintToken[BaseToken]
 }
 object `7` {
   
-  inline def apply[BaseToken](`[default]`: DefaultHoveredPressed[BaseToken]): `7`[BaseToken] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
+  inline def apply[BaseToken](hover: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): `7`[BaseToken] = {
+    val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[`7`[BaseToken]]
   }
   
   extension [Self <: `7`[?], BaseToken](x: Self & `7`[BaseToken]) {
     
-    inline def `set[default]`(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def setHover(value: PaintToken[BaseToken]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    
+    inline def setPressed(value: PaintToken[BaseToken]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.accountMod.DiscoveryAccount
-import typings.trezorConnect.accountMod.DiscoveryAccountType
+import typings.trezorConnect.libTypescriptAccountMod.DiscoveryAccount
+import typings.trezorConnect.libTypescriptAccountMod.DiscoveryAccountType
 import typings.trezorConnect.trezorConnectStrings.end
 import typings.trezorConnect.trezorConnectStrings.progress
 import typings.trezorConnect.trezorConnectStrings.start
@@ -15,7 +15,7 @@ trait AccountTypes extends StObject {
   
   var accounts: js.UndefOr[js.Array[DiscoveryAccount]] = js.undefined
   
-  var coinInfo: typings.trezorConnect.coinInfoMod.CoinInfo
+  var coinInfo: typings.trezorConnect.libTypescriptNetworksCoinInfoMod.CoinInfo
   
   var defaultAccountType: js.UndefOr[DiscoveryAccountType] = js.undefined
   
@@ -25,7 +25,10 @@ trait AccountTypes extends StObject {
 }
 object AccountTypes {
   
-  inline def apply(coinInfo: typings.trezorConnect.coinInfoMod.CoinInfo, `type`: start | progress | end): AccountTypes = {
+  inline def apply(
+    coinInfo: typings.trezorConnect.libTypescriptNetworksCoinInfoMod.CoinInfo,
+    `type`: start | progress | end
+  ): AccountTypes = {
     val __obj = js.Dynamic.literal(coinInfo = coinInfo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountTypes]
@@ -45,7 +48,7 @@ object AccountTypes {
     
     inline def setAccountsVarargs(value: DiscoveryAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
     
-    inline def setCoinInfo(value: typings.trezorConnect.coinInfoMod.CoinInfo): Self = StObject.set(x, "coinInfo", value.asInstanceOf[js.Any])
+    inline def setCoinInfo(value: typings.trezorConnect.libTypescriptNetworksCoinInfoMod.CoinInfo): Self = StObject.set(x, "coinInfo", value.asInstanceOf[js.Any])
     
     inline def setDefaultAccountType(value: DiscoveryAccountType): Self = StObject.set(x, "defaultAccountType", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageclient.anon
 
-import typings.vscodeLanguageclient.featuresMod.FeatureState
+import typings.vscodeLanguageclient.libCommonFeaturesMod.FeatureState
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

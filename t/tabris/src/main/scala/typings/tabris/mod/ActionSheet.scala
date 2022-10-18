@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
 import typings.tabris.anon.OmitActionSheetset
-import typings.tabris.anon.`13`
+import typings.tabris.anon.`1`
 import typings.tabris.tabrisStrings.actions
 import typings.tabris.tabrisStrings.message
 import typings.tabris.tabrisStrings.set
@@ -32,7 +32,7 @@ open class ActionSheet () extends Popup {
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_ActionSheet: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `13` = js.native
+  val jsxAttributes_ActionSheet: (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `1` = js.native
   
   /**
     * A descriptive message for the available actions.

@@ -10,12 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Level extends StObject {
+    
+    var level: Double
+    
+    var text: String
+  }
+  object Level {
+    
+    inline def apply(level: Double, text: String): Level = {
+      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Level]
+    }
+    
+    extension [Self <: Level](x: Self) {
+      
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Inlined std.Partial<@jupyterlab/codeeditor.@jupyterlab/codeeditor.CodeEditor.IConfig> */
   trait PartialIConfig extends StObject {
     
     var autoClosingBrackets: js.UndefOr[Boolean] = js.undefined
     
     var codeFolding: js.UndefOr[Boolean] = js.undefined
+    
+    var cursorBlinkRate: js.UndefOr[Double] = js.undefined
     
     var fontFamily: js.UndefOr[String | Null] = js.undefined
     
@@ -37,6 +60,8 @@ object anon {
     
     var rulers: js.UndefOr[js.Array[Double]] = js.undefined
     
+    var showTrailingSpace: js.UndefOr[Boolean] = js.undefined
+    
     var tabSize: js.UndefOr[Double] = js.undefined
     
     var wordWrapColumn: js.UndefOr[Double] = js.undefined
@@ -57,6 +82,10 @@ object anon {
       inline def setCodeFolding(value: Boolean): Self = StObject.set(x, "codeFolding", value.asInstanceOf[js.Any])
       
       inline def setCodeFoldingUndefined: Self = StObject.set(x, "codeFolding", js.undefined)
+      
+      inline def setCursorBlinkRate(value: Double): Self = StObject.set(x, "cursorBlinkRate", value.asInstanceOf[js.Any])
+      
+      inline def setCursorBlinkRateUndefined: Self = StObject.set(x, "cursorBlinkRate", js.undefined)
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -104,7 +133,11 @@ object anon {
       
       inline def setRulersUndefined: Self = StObject.set(x, "rulers", js.undefined)
       
-      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value :_*))
+      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value*))
+      
+      inline def setShowTrailingSpace(value: Boolean): Self = StObject.set(x, "showTrailingSpace", value.asInstanceOf[js.Any])
+      
+      inline def setShowTrailingSpaceUndefined: Self = StObject.set(x, "showTrailingSpace", js.undefined)
       
       inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       

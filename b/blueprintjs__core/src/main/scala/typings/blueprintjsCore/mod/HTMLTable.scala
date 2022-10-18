@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.htmlTableMod.HTMLTableProps
+import typings.blueprintjsCore.libEsmComponentsHtmlTableHtmlTableMod.HTMLTableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "HTMLTable")
 @js.native
 open class HTMLTable protected ()
-  extends typings.blueprintjsCore.componentsMod.HTMLTable {
+  extends typings.blueprintjsCore.libEsmComponentsMod.HTMLTable {
   def this(props: HTMLTableProps) = this()
   def this(props: HTMLTableProps, context: Any) = this()
 }

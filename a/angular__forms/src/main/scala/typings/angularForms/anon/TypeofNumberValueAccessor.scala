@@ -16,7 +16,7 @@ trait TypeofNumberValueAccessor
   
   var ɵdir: ɵɵDirectiveDeclaration[
     NumberValueAccessor, 
-    String, 
+    /* input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 

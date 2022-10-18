@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.anon
 
 import typings.antDesignReactNative.antDesignReactNativeStrings.unmount
-import typings.antDesignReactNative.portalHostMod.Operation
+import typings.antDesignReactNative.libPortalPortalHostMod.Operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

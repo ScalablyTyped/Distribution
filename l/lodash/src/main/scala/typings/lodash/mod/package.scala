@@ -2,7 +2,6 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.lodash.GlobalFunction
 import typings.lodash.GlobalPartial
 import typings.std.ArrayLike
@@ -49,10 +48,6 @@ type CondPairNullary[R] = js.Tuple2[js.Function0[Boolean], js.Function0[R]]
 
 type CondPairUnary[T, R] = js.Tuple2[js.Function1[/* val */ T, Boolean], js.Function1[/* val */ T, R]]
 
-type ConformsPredicateObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]: T[P] extends (arg : infer A): any? any : any}
-  */ typings.lodash.lodashStrings.ConformsPredicateObject & TopLevel[T]
-
 type Dictionary[T] = StringDictionary[T]
 
 type DictionaryIteratee[T] = ObjectIteratee[Dictionary[T]]
@@ -60,25 +55,6 @@ type DictionaryIteratee[T] = ObjectIteratee[Dictionary[T]]
 type DictionaryIterator[T, TResult] = ObjectIterator[Dictionary[T], TResult]
 
 type DictionaryIteratorTypeGuard[T, S /* <: T */] = ObjectIteratorTypeGuard[Dictionary[T], S]
-
-type EmptyObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? never}
-  */ typings.lodash.lodashStrings.EmptyObject & TopLevel[Any]
-
-type EmptyObjectOf[T] = EmptyObject[T]
-
-/* Rewritten from type alias, can be one of: 
-  - typings.lodash.mod.PrimitiveChain[T]
-  - typings.lodash.mod.ObjectChain[T]
-  - typings.lodash.mod.CollectionChain[scala.Any]
-  - typings.lodash.mod.FunctionChain[T]
-  - typings.lodash.mod.StringNullableChain
-  - typings.lodash.mod.StringChain
-  - typings.lodash.mod.CollectionChain[scala.Any] & typings.lodash.mod.FunctionChain[scala.Any] & typings.lodash.mod.ObjectChain[scala.Any] & typings.lodash.mod.PrimitiveChain[scala.Any] & typings.lodash.mod.StringChain
-*/
-type ExpChain[T] = _ExpChain[T] | CollectionChain[Any] | (CollectionChain[Any] & FunctionChain[Any] & ObjectChain[Any] & PrimitiveChain[Any] & StringChain)
-
-type Flat[T] = T
 
 type Function0[R] = js.Function0[R]
 
@@ -91,16 +67,6 @@ type Function3[T1, T2, T3, R] = js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ 
 type Function4[T1, T2, T3, T4, R] = js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]
 
 type FunctionBase = GlobalFunction
-
-/* Rewritten from type alias, can be one of: 
-  - typings.lodash.mod.Primitive[T]
-  - typings.lodash.mod.Object[T]
-  - typings.lodash.mod.Collection[scala.Any]
-  - typings.lodash.mod.Function[T]
-  - typings.lodash.mod.String
-  - typings.lodash.mod.Collection[scala.Any] & typings.lodash.mod.Function[scala.Any] & typings.lodash.mod.Object[scala.Any] & typings.lodash.mod.Primitive[scala.Any] & typings.lodash.mod.String
-*/
-type ImpChain[T] = _ImpChain[T] | Collection[Any] | (Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String)
 
 type IsEqualCustomizer = js.Function6[
 /* value */ Any, 
@@ -227,10 +193,6 @@ type Omit[T, K /* <: /* keyof any */ java.lang.String */] = Pick[T, Exclude[/* k
 
 type PartialObject[T] = GlobalPartial[T]
 
-type PartialShallow[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P] extends object? object : T[P]}
-  */ typings.lodash.lodashStrings.PartialShallow & TopLevel[Any]
-
 type PropertyName = java.lang.String | Double | js.Symbol
 
 type PropertyPath = Many[PropertyName]
@@ -242,8 +204,6 @@ type StringIterator[TResult] = js.Function3[
 /* index */ Double, 
 /* string */ java.lang.String, 
 TResult]
-
-type Truthy[T] = T
 
 type ValueIteratee[T] = (js.Function1[/* value */ T, NotVoid]) | IterateeShorthand[T]
 

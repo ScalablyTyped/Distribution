@@ -32,9 +32,9 @@ object StartScreen {
   }
   
   /** Provides functionality for selecting the type of system-managed jump list that is used by an app, adding custom task entry points to an app's jump list, and adding custom groups to an app's jump list. A jump list consists of an optional system-provided list of items, as well as optional app-provided items. Not all device families support jump lists. */
-  @JSGlobal("Windows.UI.StartScreen.JumpList")
+  /* note: abstract class */ @JSGlobal("Windows.UI.StartScreen.JumpList")
   @js.native
-  abstract class JumpList ()
+  open class JumpList ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.JumpList {
     
@@ -75,9 +75,9 @@ object StartScreen {
   }
   
   /** Provides functionality for creating and defining jump list items for an app's jump list. */
-  @JSGlobal("Windows.UI.StartScreen.JumpListItem")
+  /* note: abstract class */ @JSGlobal("Windows.UI.StartScreen.JumpListItem")
   @js.native
-  abstract class JumpListItem ()
+  open class JumpListItem ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.JumpListItem {
     
@@ -255,9 +255,9 @@ object StartScreen {
   }
   
   /** Contains properties through which you can get or set a secondary tile's background color, foreground text, tile images, and app name display options. The properties in this class replace these SecondaryTile properties: */
-  @JSGlobal("Windows.UI.StartScreen.SecondaryTileVisualElements")
+  /* note: abstract class */ @JSGlobal("Windows.UI.StartScreen.SecondaryTileVisualElements")
   @js.native
-  abstract class SecondaryTileVisualElements ()
+  open class SecondaryTileVisualElements ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.SecondaryTileVisualElements {
     
@@ -353,9 +353,9 @@ object StartScreen {
   }
   
   /** Provides a method to delay the display of the Pin to Start flyout, as well as methods through which you can set the visual elements of the secondary tile to be presented in that flyout as well as alternate versions of the tile that can also be presented as options. */
-  @JSGlobal("Windows.UI.StartScreen.VisualElementsRequest")
+  /* note: abstract class */ @JSGlobal("Windows.UI.StartScreen.VisualElementsRequest")
   @js.native
-  abstract class VisualElementsRequest ()
+  open class VisualElementsRequest ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequest {
     
@@ -380,9 +380,9 @@ object StartScreen {
   }
   
   /** A deferral object used during the creation of the Pin to Start flyout. By using this object, the app can delay the display of the flyout while it gathers the information and assets that will be shown in that flyout. */
-  @JSGlobal("Windows.UI.StartScreen.VisualElementsRequestDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.UI.StartScreen.VisualElementsRequestDeferral")
   @js.native
-  abstract class VisualElementsRequestDeferral ()
+  open class VisualElementsRequestDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestDeferral {
     
@@ -392,9 +392,9 @@ object StartScreen {
   }
   
   /** Passed to the SecondaryTile.VisualElementsRequested event handler to provide the visual elements details. */
-  @JSGlobal("Windows.UI.StartScreen.VisualElementsRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.StartScreen.VisualElementsRequestedEventArgs")
   @js.native
-  abstract class VisualElementsRequestedEventArgs ()
+  open class VisualElementsRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.StartScreen.VisualElementsRequestedEventArgs {
     

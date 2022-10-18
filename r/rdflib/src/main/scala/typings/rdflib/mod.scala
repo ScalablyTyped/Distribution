@@ -5,26 +5,26 @@ import typings.rdflib.anon.ATTRIBUTE
 import typings.rdflib.anon.Flags
 import typings.rdflib.anon.Pattern
 import typings.rdflib.anon.RDF
-import typings.rdflib.blankNodeMod.default
-import typings.rdflib.fetcherMod.Handler
-import typings.rdflib.fetcherMod.Options
-import typings.rdflib.formulaMod.FormulaOpts
-import typings.rdflib.n3parserMod.SinkParser
-import typings.rdflib.parseMod.CallbackFunc
+import typings.rdflib.libBlankNodeMod.default
+import typings.rdflib.libFetcherMod.Handler
+import typings.rdflib.libFetcherMod.Options
+import typings.rdflib.libFormulaMod.FormulaOpts
+import typings.rdflib.libN3parserMod.SinkParser
+import typings.rdflib.libParseMod.CallbackFunc
+import typings.rdflib.libStoreMod.FeaturesType
+import typings.rdflib.libTfTypesMod.DefaultGraph
+import typings.rdflib.libTfTypesMod.RdfJsDataFactory
+import typings.rdflib.libTfTypesMod.Term
+import typings.rdflib.libTypesMod.ContentType
+import typings.rdflib.libTypesMod.FromValueReturns
+import typings.rdflib.libTypesMod.GraphType
+import typings.rdflib.libTypesMod.IRDFlibDataFactory
+import typings.rdflib.libTypesMod.ObjectType
+import typings.rdflib.libTypesMod.PredicateType
+import typings.rdflib.libTypesMod.SubjectType
+import typings.rdflib.libTypesMod.ValueType
 import typings.rdflib.rdflibBooleans.`false`
 import typings.rdflib.rdflibStrings._Colon
-import typings.rdflib.storeMod.FeaturesType
-import typings.rdflib.tfTypesMod.DefaultGraph
-import typings.rdflib.tfTypesMod.RdfJsDataFactory
-import typings.rdflib.tfTypesMod.Term
-import typings.rdflib.typesMod.ContentType
-import typings.rdflib.typesMod.FromValueReturns
-import typings.rdflib.typesMod.GraphType
-import typings.rdflib.typesMod.IRDFlibDataFactory
-import typings.rdflib.typesMod.ObjectType
-import typings.rdflib.typesMod.PredicateType
-import typings.rdflib.typesMod.SubjectType
-import typings.rdflib.typesMod.ValueType
 import typings.std.Document
 import typings.std.Number
 import typings.std.Record
@@ -76,8 +76,8 @@ object mod {
   
   @JSImport("rdflib", "Collection")
   @js.native
-  open class Collection[T /* <: typings.rdflib.nodeInternalMod.default */] ()
-    extends typings.rdflib.collectionMod.default[T] {
+  open class Collection[T /* <: typings.rdflib.libNodeInternalMod.default */] ()
+    extends typings.rdflib.libCollectionMod.default[T] {
     def this(initial: js.Array[ValueType]) = this()
   }
   /* static members */
@@ -98,11 +98,11 @@ object mod {
   @JSImport("rdflib", "ConnectedStore")
   @js.native
   open class ConnectedStore protected ()
-    extends typings.rdflib.storeMod.default {
+    extends typings.rdflib.libStoreMod.default {
     def this(features: Any) = this()
     
     @JSName("fetcher")
-    var fetcher_ConnectedStore: typings.rdflib.fetcherMod.default = js.native
+    var fetcher_ConnectedStore: typings.rdflib.libFetcherMod.default = js.native
   }
   
   /** Full RDFLib.js Data Factory */
@@ -113,14 +113,14 @@ object mod {
   @JSImport("rdflib", "Empty")
   @js.native
   open class Empty ()
-    extends typings.rdflib.emptyMod.default
+    extends typings.rdflib.libEmptyMod.default
   
   @JSImport("rdflib", "Fetcher")
   @js.native
   open class Fetcher_ protected ()
-    extends typings.rdflib.fetcherMod.default {
-    def this(store: typings.rdflib.storeMod.default) = this()
-    def this(store: typings.rdflib.storeMod.default, options: Options) = this()
+    extends typings.rdflib.libFetcherMod.default {
+    def this(store: typings.rdflib.libStoreMod.default) = this()
+    def this(store: typings.rdflib.libStoreMod.default, options: Options) = this()
   }
   /* static members */
   object Fetcher_ {
@@ -177,27 +177,27 @@ object mod {
     * @param opts.rdfFactory - The rdf factory that should be used by the store
     */
   open class Formula ()
-    extends typings.rdflib.formulaMod.default {
+    extends typings.rdflib.libFormulaMod.default {
     def this(statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ]) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any]
     ) = this()
     def this(statements: Unit, constraints: js.Array[Any]) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: js.Array[Any]
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: js.Array[Any]
@@ -206,7 +206,7 @@ object mod {
     def this(statements: Unit, constraints: Unit, initBindings: js.Array[Any]) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: js.Array[Any],
@@ -214,7 +214,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: Unit,
@@ -222,7 +222,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: js.Array[Any],
@@ -230,7 +230,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: Unit,
@@ -242,7 +242,7 @@ object mod {
     def this(statements: Unit, constraints: Unit, initBindings: Unit, optional: js.Array[Any]) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: js.Array[Any],
@@ -251,7 +251,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: js.Array[Any],
@@ -260,7 +260,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: Unit,
@@ -269,7 +269,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: js.Array[Any],
       initBindings: Unit,
@@ -278,7 +278,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: js.Array[Any],
@@ -287,7 +287,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: js.Array[Any],
@@ -296,7 +296,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: Unit,
@@ -305,7 +305,7 @@ object mod {
     ) = this()
     def this(
       statements: js.Array[
-            typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
+            typings.rdflib.libStatementMod.default[SubjectType, PredicateType, ObjectType, GraphType]
           ],
       constraints: Unit,
       initBindings: Unit,
@@ -376,7 +376,7 @@ object mod {
     * @param [opts.dataCallback] - Callback when a statement is added to the store, will not trigger when adding duplicates
     */
   open class IndexedFormula ()
-    extends typings.rdflib.storeMod.default {
+    extends typings.rdflib.libStoreMod.default {
     def this(features: FeaturesType) = this()
     def this(features: Unit, opts: FormulaOpts) = this()
     def this(features: FeaturesType, opts: FormulaOpts) = this()
@@ -397,7 +397,7 @@ object mod {
   @JSImport("rdflib", "Literal")
   @js.native
   open class Literal protected ()
-    extends typings.rdflib.literalMod.default {
+    extends typings.rdflib.libLiteralMod.default {
     /**
       * Initializes a literal
       * @param value - The literal's lexical value
@@ -421,19 +421,19 @@ object mod {
       * Builds a literal node from a boolean value
       * @param value - The value
       */
-    inline def fromBoolean(value: Boolean): typings.rdflib.literalMod.Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.literalMod.Literal]
+    inline def fromBoolean(value: Boolean): typings.rdflib.libLiteralMod.Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libLiteralMod.Literal]
     
     /**
       * Builds a literal node from a date value
       * @param value The value
       */
-    inline def fromDate(value: js.Date): typings.rdflib.literalMod.Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.literalMod.Literal]
+    inline def fromDate(value: js.Date): typings.rdflib.libLiteralMod.Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libLiteralMod.Literal]
     
     /**
       * Builds a literal node from a number value
       * @param value - The value
       */
-    inline def fromNumber(value: Double): typings.rdflib.literalMod.Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.literalMod.Literal]
+    inline def fromNumber(value: Double): typings.rdflib.libLiteralMod.Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libLiteralMod.Literal]
     
     /**
       * Builds a literal node from an input value
@@ -442,7 +442,7 @@ object mod {
     inline def fromValue[T /* <: FromValueReturns[Any] */](value: ValueType): T = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /** Serializes a literal to an N-Triples string */
-    inline def toNT(literal: typings.rdflib.literalMod.Literal): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNT")(literal.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toNT(literal: typings.rdflib.libLiteralMod.Literal): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toNT")(literal.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("rdflib", "LiveStore")
@@ -451,7 +451,7 @@ object mod {
     def this(features: Any) = this()
     
     @JSName("updater")
-    var updater_LiveStore: typings.rdflib.updateManagerMod.default = js.native
+    var updater_LiveStore: typings.rdflib.libUpdateManagerMod.default = js.native
   }
   
   inline def N3Parser(
@@ -468,7 +468,7 @@ object mod {
   @JSImport("rdflib", "NamedNode")
   @js.native
   open class NamedNode protected ()
-    extends typings.rdflib.namedNodeMod.default {
+    extends typings.rdflib.libNamedNodeMod.default {
     /**
       * Create a named (IRI) RDF Node
       * @constructor
@@ -490,17 +490,17 @@ object mod {
     inline def fromValue(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
-  inline def Namespace(nsuri: String): js.Function1[/* ln */ String, typings.rdflib.tfTypesMod.NamedNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("Namespace")(nsuri.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ln */ String, typings.rdflib.tfTypesMod.NamedNode]]
-  inline def Namespace(nsuri: String, factory: RdfJsDataFactory): js.Function1[/* ln */ String, typings.rdflib.tfTypesMod.NamedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("Namespace")(nsuri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ln */ String, typings.rdflib.tfTypesMod.NamedNode]]
+  inline def Namespace(nsuri: String): js.Function1[/* ln */ String, typings.rdflib.libTfTypesMod.NamedNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("Namespace")(nsuri.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ln */ String, typings.rdflib.libTfTypesMod.NamedNode]]
+  inline def Namespace(nsuri: String, factory: RdfJsDataFactory): js.Function1[/* ln */ String, typings.rdflib.libTfTypesMod.NamedNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("Namespace")(nsuri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ln */ String, typings.rdflib.libTfTypesMod.NamedNode]]
   
   @JSImport("rdflib", "NextId")
   @js.native
   val NextId: Double = js.native
   
-  @JSImport("rdflib", "Node")
+  /* note: abstract class */ @JSImport("rdflib", "Node")
   @js.native
-  abstract class Node protected ()
-    extends typings.rdflib.nodeMod.default {
+  open class Node protected ()
+    extends typings.rdflib.libNodeMod.default {
     /* protected */ def this(value: String) = this()
   }
   /* static members */
@@ -518,14 +518,14 @@ object mod {
   @JSImport("rdflib", "Query")
   @js.native
   open class Query protected ()
-    extends typings.rdflib.queryMod.Query {
+    extends typings.rdflib.libQueryMod.Query {
     def this(name: Any, id: Any) = this()
   }
   
   @JSImport("rdflib", "RDFParser")
   @js.native
   open class RDFParser protected ()
-    extends typings.rdflib.rdfxmlparserMod.default {
+    extends typings.rdflib.libRdfxmlparserMod.default {
     def this(store: Any) = this()
   }
   /* static members */
@@ -555,7 +555,7 @@ object mod {
   @JSImport("rdflib", "RDFaProcessor")
   @js.native
   open class RDFaProcessor protected ()
-    extends typings.rdflib.rdfaparserMod.default {
+    extends typings.rdflib.libRdfaparserMod.default {
     def this(kb: Any, options: Any) = this()
   }
   object RDFaProcessor {
@@ -610,14 +610,14 @@ object mod {
     val typeURI: String = js.native
   }
   
-  inline def SPARQLToQuery(SPARQL: Any, testMode: Any, kb: Any): `false` | typings.rdflib.queryMod.Query = (^.asInstanceOf[js.Dynamic].applyDynamic("SPARQLToQuery")(SPARQL.asInstanceOf[js.Any], testMode.asInstanceOf[js.Any], kb.asInstanceOf[js.Any])).asInstanceOf[`false` | typings.rdflib.queryMod.Query]
+  inline def SPARQLToQuery(SPARQL: Any, testMode: Any, kb: Any): `false` | typings.rdflib.libQueryMod.Query = (^.asInstanceOf[js.Dynamic].applyDynamic("SPARQLToQuery")(SPARQL.asInstanceOf[js.Any], testMode.asInstanceOf[js.Any], kb.asInstanceOf[js.Any])).asInstanceOf[`false` | typings.rdflib.libQueryMod.Query]
   
-  inline def Serializer(store: Any): typings.rdflib.serializerMod.Serializer = ^.asInstanceOf[js.Dynamic].applyDynamic("Serializer")(store.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.serializerMod.Serializer]
+  inline def Serializer(store: Any): typings.rdflib.libSerializerMod.Serializer = ^.asInstanceOf[js.Dynamic].applyDynamic("Serializer")(store.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libSerializerMod.Serializer]
   
   @JSImport("rdflib", "Statement")
   @js.native
   open class Statement[S /* <: SubjectType */, P /* <: PredicateType */, O /* <: ObjectType */, G /* <: GraphType */] protected ()
-    extends typings.rdflib.statementMod.default[S, P, O, G] {
+    extends typings.rdflib.libStatementMod.default[S, P, O, G] {
     /**
       * Construct a new statement
       *
@@ -652,7 +652,7 @@ object mod {
     * @param [opts.dataCallback] - Callback when a statement is added to the store, will not trigger when adding duplicates
     */
   open class Store ()
-    extends typings.rdflib.storeMod.default {
+    extends typings.rdflib.libStoreMod.default {
     def this(features: FeaturesType) = this()
     def this(features: Unit, opts: FormulaOpts) = this()
     def this(features: FeaturesType, opts: FormulaOpts) = this()
@@ -676,21 +676,21 @@ object mod {
     * @param  store - The quadstore to store data and metadata. Created if not passed.
     */
   open class UpdateManager ()
-    extends typings.rdflib.updateManagerMod.default {
-    def this(store: typings.rdflib.storeMod.default) = this()
+    extends typings.rdflib.libUpdateManagerMod.default {
+    def this(store: typings.rdflib.libStoreMod.default) = this()
   }
   
   @JSImport("rdflib", "UpdatesSocket")
   @js.native
   open class UpdatesSocket protected ()
-    extends typings.rdflib.updatesViaMod.UpdatesSocket {
+    extends typings.rdflib.libUpdatesViaMod.UpdatesSocket {
     def this(parent: Any, via: Any) = this()
   }
   
   @JSImport("rdflib", "UpdatesVia")
   @js.native
   open class UpdatesVia protected ()
-    extends typings.rdflib.updatesViaMod.UpdatesVia {
+    extends typings.rdflib.libUpdatesViaMod.UpdatesVia {
     def this(fetcher: Any) = this()
   }
   
@@ -716,7 +716,7 @@ object mod {
     
     inline def heavyCompareSPO(x: Any, y: Any, g: Any, uriMap: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("heavyCompareSPO")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], g.asInstanceOf[js.Any], uriMap.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def linkRelationProperty(relation: Any): typings.rdflib.namedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRelationProperty")(relation.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.namedNodeMod.default]
+    inline def linkRelationProperty(relation: Any): typings.rdflib.libNamedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRelationProperty")(relation.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libNamedNodeMod.default]
     
     object log {
       
@@ -737,7 +737,7 @@ object mod {
       inline def warn(x: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
-    inline def mediaTypeClass(mediaType: Any): typings.rdflib.namedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaTypeClass")(mediaType.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.namedNodeMod.default]
+    inline def mediaTypeClass(mediaType: Any): typings.rdflib.libNamedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaTypeClass")(mediaType.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libNamedNodeMod.default]
     
     inline def output(o: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(o.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -755,7 +755,7 @@ object mod {
       
       inline def docpart(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("docpart")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      inline def document(x: String): typings.rdflib.namedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(x.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.namedNodeMod.default]
+      inline def document(x: String): typings.rdflib.libNamedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(x.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libNamedNodeMod.default]
       
       inline def hostpart(u: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostpart")(u.asInstanceOf[js.Any]).asInstanceOf[String]
       
@@ -774,7 +774,7 @@ object mod {
     * @param name The variable's name
     */
   open class Variable ()
-    extends typings.rdflib.variableMod.default {
+    extends typings.rdflib.libVariableMod.default {
     def this(name: String) = this()
   }
   /* static members */
@@ -798,7 +798,7 @@ object mod {
     inline def convertToNQuads(n3String: Any, nquadCallback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToNQuads")(n3String.asInstanceOf[js.Any], nquadCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(graph, lit, st, namedNode, variable, blankNode, defaultGraph, literal, quad, triple) */ inline def fetcher(store: typings.rdflib.storeMod.default, options: Any): typings.rdflib.fetcherMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fetcher")(store.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rdflib.fetcherMod.default]
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(graph, lit, st, namedNode, variable, blankNode, defaultGraph, literal, quad, triple) */ inline def fetcher(store: typings.rdflib.libStoreMod.default, options: Any): typings.rdflib.libFetcherMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fetcher")(store.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rdflib.libFetcherMod.default]
   
   inline def fromNT(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNT")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -858,26 +858,26 @@ object mod {
     inline def warn(x: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  inline def parse(str: String, kb: typings.rdflib.formulaMod.default, base: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def parse(str: String, kb: typings.rdflib.formulaMod.default, base: String, contentType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(str: String, kb: typings.rdflib.libFormulaMod.default, base: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(str: String, kb: typings.rdflib.libFormulaMod.default, base: String, contentType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def parse(
     str: String,
-    kb: typings.rdflib.formulaMod.default,
+    kb: typings.rdflib.libFormulaMod.default,
     base: String,
     contentType: String,
     callback: CallbackFunc
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def parse(
     str: String,
-    kb: typings.rdflib.formulaMod.default,
+    kb: typings.rdflib.libFormulaMod.default,
     base: String,
     contentType: Unit,
     callback: CallbackFunc
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def parse(str: String, kb: typings.rdflib.formulaMod.default, base: String, contentType: ContentType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(str: String, kb: typings.rdflib.libFormulaMod.default, base: String, contentType: ContentType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], kb.asInstanceOf[js.Any], base.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def parse(
     str: String,
-    kb: typings.rdflib.formulaMod.default,
+    kb: typings.rdflib.libFormulaMod.default,
     base: String,
     contentType: ContentType,
     callback: CallbackFunc
@@ -887,9 +887,9 @@ object mod {
   
   inline def serialize(
     /** The graph or nodes that should be serialized */
-  target: typings.rdflib.formulaMod.default | typings.rdflib.tfTypesMod.NamedNode | typings.rdflib.tfTypesMod.BlankNode | Null,
+  target: typings.rdflib.libFormulaMod.default | typings.rdflib.libTfTypesMod.NamedNode | typings.rdflib.libTfTypesMod.BlankNode | Null,
     /** The store */
-  kb: typings.rdflib.formulaMod.default,
+  kb: typings.rdflib.libFormulaMod.default,
     base: js.UndefOr[Any],
     /**
     * The mime type.
@@ -917,7 +917,7 @@ object mod {
     
     inline def docpart(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("docpart")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def document(x: String): typings.rdflib.namedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(x.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.namedNodeMod.default]
+    inline def document(x: String): typings.rdflib.libNamedNodeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(x.asInstanceOf[js.Any]).asInstanceOf[typings.rdflib.libNamedNodeMod.default]
     
     inline def hostpart(u: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostpart")(u.asInstanceOf[js.Any]).asInstanceOf[String]
     

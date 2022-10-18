@@ -1,6 +1,6 @@
 package typings.raml1Parser.mod.ds
 
-import typings.ramlDefinitionSystem.ramlDefinitionSystemMod.IProperty
+import typings.ramlDefinitionSystem.mod.IProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.RAMLPropertyService")
 @js.native
 open class RAMLPropertyService protected ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.RAMLPropertyService {
+  extends typings.ramlDefinitionSystem.mod.RAMLPropertyService {
   def this(_property: IProperty) = this()
 }

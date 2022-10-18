@@ -1,13 +1,13 @@
 package typings.ssimJs
 
+import typings.ssimJs.distTypesMod.ImageMatrix
+import typings.ssimJs.distTypesMod.Matrix
 import typings.ssimJs.ssimJsBooleans.`false`
 import typings.ssimJs.ssimJsStrings.bezkrovny
 import typings.ssimJs.ssimJsStrings.fast
 import typings.ssimJs.ssimJsStrings.integer
 import typings.ssimJs.ssimJsStrings.original
 import typings.ssimJs.ssimJsStrings.weber
-import typings.ssimJs.typesMod.ImageMatrix
-import typings.ssimJs.typesMod.Matrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

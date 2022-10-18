@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__cli-clean
 
-Typings are for version 9.1.0
+Typings are for version 9.2.1
 
 
 

@@ -6,9 +6,9 @@ import typings.std.HTMLCollectionOf
 import typings.std.HTMLStyleElement
 import typings.std.NodeListOf
 import typings.styletronEngineMonolithic.anon.Block
+import typings.styletronStandard.libStyleTypesMod.KeyframesObject
 import typings.styletronStandard.mod.StandardEngine
 import typings.styletronStandard.mod.StyleObject
-import typings.styletronStandard.styleTypesMod.KeyframesObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ object mod {
     
     def renderFontFace(fontFace: FontFace): String = js.native
     /* CompleteClass */
-    override def renderFontFace(fontFace: typings.styletronStandard.styleTypesMod.FontFace): String = js.native
+    override def renderFontFace(fontFace: typings.styletronStandard.libStyleTypesMod.FontFace): String = js.native
     
     /* CompleteClass */
     override def renderKeyframes(keyframes: KeyframesObject): String = js.native
@@ -63,7 +63,7 @@ object mod {
     
     def renderFontFace(fontFace: FontFace): String = js.native
     /* CompleteClass */
-    override def renderFontFace(fontFace: typings.styletronStandard.styleTypesMod.FontFace): String = js.native
+    override def renderFontFace(fontFace: typings.styletronStandard.libStyleTypesMod.FontFace): String = js.native
     
     /* CompleteClass */
     override def renderKeyframes(keyframes: KeyframesObject): String = js.native

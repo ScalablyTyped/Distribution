@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactNativeShareStrings {
   
   @js.native
-  sealed trait ActivityItemSource extends StObject
-  inline def ActivityItemSource: ActivityItemSource = "ActivityItemSource".asInstanceOf[ActivityItemSource]
-  
-  @js.native
   sealed trait addToReadingList
     extends StObject
        with ActivityType

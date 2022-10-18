@@ -3,7 +3,6 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.vpnProvider.VpnSessionParameters
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,20 +86,14 @@ trait TypeofvpnProvider extends StObject {
     state: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
       /* keyof typeof VpnConnectionState */ String, 
-      Exclude[
-        /* keyof typeof VpnConnectionState */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof VpnConnectionState extends keyof typeof VpnConnectionState ? std.Exclude<keyof typeof VpnConnectionState, typeof VpnConnectionState[keyof typeof VpnConnectionState]> : never */ js.Any
     ]
   ): Unit = js.native
   def notifyConnectionStateChanged(
     state: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState */ js.Any, 
       /* keyof typeof VpnConnectionState */ String, 
-      Exclude[
-        /* keyof typeof VpnConnectionState */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof VpnConnectionState[keyof typeof VpnConnectionState] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof VpnConnectionState extends keyof typeof VpnConnectionState ? std.Exclude<keyof typeof VpnConnectionState, typeof VpnConnectionState[keyof typeof VpnConnectionState]> : never */ js.Any
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native
@@ -121,10 +114,7 @@ trait TypeofvpnProvider extends StObject {
       /* message */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage */ js.Any, 
         /* keyof typeof PlatformMessage */ String, 
-        Exclude[
-          /* keyof typeof PlatformMessage */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof PlatformMessage[keyof typeof PlatformMessage] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof PlatformMessage extends keyof typeof PlatformMessage ? std.Exclude<keyof typeof PlatformMessage, typeof PlatformMessage[keyof typeof PlatformMessage]> : never */ js.Any
       ], 
       /* error */ String, 
       Unit
@@ -140,10 +130,7 @@ trait TypeofvpnProvider extends StObject {
       /* event */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent */ js.Any, 
         /* keyof typeof UIEvent */ String, 
-        Exclude[
-          /* keyof typeof UIEvent */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof UIEvent[keyof typeof UIEvent] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof UIEvent extends keyof typeof UIEvent ? std.Exclude<keyof typeof UIEvent, typeof UIEvent[keyof typeof UIEvent]> : never */ js.Any
       ], 
       /* id */ js.UndefOr[String], 
       Unit

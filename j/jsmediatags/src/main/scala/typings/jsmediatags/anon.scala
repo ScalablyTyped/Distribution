@@ -2,7 +2,7 @@ package typings.jsmediatags
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.jsmediatags.mediaFileReaderMod.default
+import typings.jsmediatags.build2MediaFileReaderMod.default
 import typings.jsmediatags.typesMod.ByteRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -165,7 +165,7 @@ object anon {
   @js.native
   trait TypeofMediaTagReader
     extends StObject
-       with Instantiable1[/* mediaFileReader */ default, typings.jsmediatags.mediaTagReaderMod.default] {
+       with Instantiable1[/* mediaFileReader */ default, typings.jsmediatags.build2MediaTagReaderMod.default] {
     
     def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
     

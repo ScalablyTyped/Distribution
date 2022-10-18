@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SignalingState extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.sipJs.sessionSessionMod.SignalingState & String] = js.native
+  def apply(value: String): js.UndefOr[typings.sipJs.libCoreSessionSessionMod.SignalingState & String] = js.native
   
-  /* "Closed" */ val Closed: typings.sipJs.sessionSessionMod.SignalingState.Closed & String = js.native
+  /* "Closed" */ val Closed: typings.sipJs.libCoreSessionSessionMod.SignalingState.Closed & String = js.native
   
-  /* "HaveLocalOffer" */ val HaveLocalOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveLocalOffer & String = js.native
+  /* "HaveLocalOffer" */ val HaveLocalOffer: typings.sipJs.libCoreSessionSessionMod.SignalingState.HaveLocalOffer & String = js.native
   
-  /* "HaveRemoteOffer" */ val HaveRemoteOffer: typings.sipJs.sessionSessionMod.SignalingState.HaveRemoteOffer & String = js.native
+  /* "HaveRemoteOffer" */ val HaveRemoteOffer: typings.sipJs.libCoreSessionSessionMod.SignalingState.HaveRemoteOffer & String = js.native
   
-  /* "Initial" */ val Initial: typings.sipJs.sessionSessionMod.SignalingState.Initial & String = js.native
+  /* "Initial" */ val Initial: typings.sipJs.libCoreSessionSessionMod.SignalingState.Initial & String = js.native
   
-  /* "Stable" */ val Stable: typings.sipJs.sessionSessionMod.SignalingState.Stable & String = js.native
+  /* "Stable" */ val Stable: typings.sipJs.libCoreSessionSessionMod.SignalingState.Stable & String = js.native
 }

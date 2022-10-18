@@ -1,6 +1,6 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalCommon.inetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-browser", "BrowserUtils")
 @js.native
 open class BrowserUtils ()
-  extends typings.azureMsalBrowser.browserUtilsMod.BrowserUtils
+  extends typings.azureMsalBrowser.distUtilsBrowserUtilsMod.BrowserUtils
 /* static members */
 object BrowserUtils {
   
@@ -41,7 +41,7 @@ object BrowserUtils {
     * @param allowRedirectInIframe Config value to allow redirects when app is inside an iframe
     */
   inline def blockRedirectInIframe(
-    interactionType: typings.azureMsalBrowser.browserConstantsMod.InteractionType,
+    interactionType: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionType,
     allowRedirectInIframe: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blockRedirectInIframe")(interactionType.asInstanceOf[js.Any], allowRedirectInIframe.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

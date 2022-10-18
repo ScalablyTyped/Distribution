@@ -2,7 +2,7 @@ package typings.terraActionFooter
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.terraActionFooter.actionFooterMod.ActionFooterProps
+import typings.terraActionFooter.libActionFooterMod.ActionFooterProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

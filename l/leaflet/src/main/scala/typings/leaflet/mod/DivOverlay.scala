@@ -5,10 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("leaflet", "DivOverlay")
+/* note: abstract class */ @JSImport("leaflet", "DivOverlay")
 @js.native
-abstract class DivOverlay () extends Layer {
+open class DivOverlay () extends Layer {
+  def this(latlng: LatLngExpression) = this()
   def this(options: DivOverlayOptions) = this()
+  def this(latlng: LatLngExpression, options: TooltipOptions) = this()
   def this(options: Unit, source: Layer) = this()
   def this(options: DivOverlayOptions, source: Layer) = this()
   

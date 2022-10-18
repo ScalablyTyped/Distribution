@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabels> */
 trait PartialMUIDataTableTextLaBody extends StObject {
   
-  var body: js.UndefOr[PartialMUIDataTableTextLa] = js.undefined
+  var body: js.UndefOr[PartialMUIDataTableTextLaColumnHeaderTooltip] = js.undefined
   
   var filter: js.UndefOr[PartialMUIDataTableTextLaAll] = js.undefined
   
@@ -17,7 +17,7 @@ trait PartialMUIDataTableTextLaBody extends StObject {
   
   var toolbar: js.UndefOr[PartialMUIDataTableTextLaDownloadCsv] = js.undefined
   
-  var viewColumns: js.UndefOr[PartialMUIDataTableTextLaTitle] = js.undefined
+  var viewColumns: js.UndefOr[PartialMUIDataTableTextLa] = js.undefined
 }
 object PartialMUIDataTableTextLaBody {
   
@@ -28,7 +28,7 @@ object PartialMUIDataTableTextLaBody {
   
   extension [Self <: PartialMUIDataTableTextLaBody](x: Self) {
     
-    inline def setBody(value: PartialMUIDataTableTextLa): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PartialMUIDataTableTextLaColumnHeaderTooltip): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -48,7 +48,7 @@ object PartialMUIDataTableTextLaBody {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setViewColumns(value: PartialMUIDataTableTextLaTitle): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
+    inline def setViewColumns(value: PartialMUIDataTableTextLa): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
     
     inline def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
   }

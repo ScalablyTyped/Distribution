@@ -1,6 +1,6 @@
 package typings.redisSearch.anon
 
-import typings.redisSearch.commandsMod.VectorAlgorithms
+import typings.redisSearch.distCommandsMod.VectorAlgorithms
 import typings.redisSearch.redisSearchStrings.COSINE
 import typings.redisSearch.redisSearchStrings.IP
 import typings.redisSearch.redisSearchStrings.L2

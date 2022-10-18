@@ -2,7 +2,6 @@ package typings.jexcel
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.jexcel.anon.Colspan
 import typings.jexcel.anon.Id
 import typings.jexcel.jexcelInts.`0`
@@ -727,9 +726,7 @@ object mod extends Shortcut {
     /** Load this data into the javascript table: array */
     var data: js.UndefOr[
         js.Array[
-          (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jexcel.jexcel.CellValue}
-      */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue]
+          (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jexcel.jexcel.CellValue} */ js.Any) | js.Array[CellValue]
         ]
       ] = js.undefined
     
@@ -925,18 +922,14 @@ object mod extends Shortcut {
       
       inline def setData(
         value: js.Array[
-              (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue]
+              (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jexcel.jexcel.CellValue} */ js.Any) | js.Array[CellValue]
             ]
       ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setDataVarargs(
-        value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.InitializationOptions & TopLevel[Any]) | js.Array[CellValue])*
+        value: ((/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jexcel.jexcel.CellValue} */ js.Any) | js.Array[CellValue])*
       ): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDefaultColAlign(value: center | left | right): Self = StObject.set(x, "defaultColAlign", value.asInstanceOf[js.Any])
@@ -2363,9 +2356,7 @@ object mod extends Shortcut {
     
     var footers: js.UndefOr[
         js.Array[
-          (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ title in string | number ]: jexcel.jexcel.CellValue}
-      */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[Any]) | js.Array[CellValue]
+          (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jexcel.jexcel.CellValue} */ js.Any) | js.Array[CellValue]
         ]
       ] = js.undefined
   }
@@ -2380,18 +2371,14 @@ object mod extends Shortcut {
       
       inline def setFooters(
         value: js.Array[
-              (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[Any]) | js.Array[CellValue]
+              (/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jexcel.jexcel.CellValue} */ js.Any) | js.Array[CellValue]
             ]
       ): Self = StObject.set(x, "footers", value.asInstanceOf[js.Any])
       
       inline def setFootersUndefined: Self = StObject.set(x, "footers", js.undefined)
       
       inline def setFootersVarargs(
-        value: ((/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ title in string | number ]: jexcel.jexcel.CellValue}
-        */ typings.jexcel.jexcelStrings.UnDocumentOptions & TopLevel[Any]) | js.Array[CellValue])*
+        value: ((/* import warning: importer.ImportType#apply Failed type conversion: {[ title in string | number ]: jexcel.jexcel.CellValue} */ js.Any) | js.Array[CellValue])*
       ): Self = StObject.set(x, "footers", js.Array(value*))
     }
   }

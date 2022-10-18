@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to common locations that contain user content. This includes content from a user's local libraries (such as Documents, Pictures, Music, and Videos), HomeGroup, removable devices, and media server devices. */
-@JSGlobal("Windows.Storage.KnownFolders")
+/* note: abstract class */ @JSGlobal("Windows.Storage.KnownFolders")
 @js.native
-abstract class KnownFolders ()
+open class KnownFolders ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.KnownFolders
 object KnownFolders {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Direction extends StObject {
   
-  var direction: typings.rcTree.interfaceMod.Direction
+  var direction: typings.rcTree.esInterfaceMod.Direction
   
   var dropLevelOffset: Double
   
@@ -28,7 +28,7 @@ object Direction {
   
   extension [Self <: Direction](x: Self) {
     
-    inline def setDirection(value: typings.rcTree.interfaceMod.Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: typings.rcTree.esInterfaceMod.Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

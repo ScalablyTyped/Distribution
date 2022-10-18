@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentType
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "WebXRControllerComponent")
 @js.native
 open class WebXRControllerComponent protected ()
-  extends typings.babylonjs.legacyMod.WebXRControllerComponent {
+  extends typings.babylonjs.legacyLegacyMod.WebXRControllerComponent {
   /**
     * Creates a new component for a motion controller.
     * It is created by the motion controller itself

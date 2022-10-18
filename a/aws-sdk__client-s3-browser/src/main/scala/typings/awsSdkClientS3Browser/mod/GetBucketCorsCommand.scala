@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-browser", "GetBucketCorsCommand")
 @js.native
 open class GetBucketCorsCommand protected ()
-  extends typings.awsSdkClientS3Browser.getBucketCorsCommandMod.GetBucketCorsCommand {
+  extends typings.awsSdkClientS3Browser.commandsGetBucketCorsCommandMod.GetBucketCorsCommand {
   def this(input: GetBucketCorsInput) = this()
 }

@@ -39,10 +39,6 @@ object rjsfUtilsStrings {
   inline def ErrorListTemplate: ErrorListTemplate = "ErrorListTemplate".asInstanceOf[ErrorListTemplate]
   
   @js.native
-  sealed trait ErrorSchema extends StObject
-  inline def ErrorSchema: ErrorSchema = "ErrorSchema".asInstanceOf[ErrorSchema]
-  
-  @js.native
   sealed trait FieldErrorTemplate extends StObject
   inline def FieldErrorTemplate: FieldErrorTemplate = "FieldErrorTemplate".asInstanceOf[FieldErrorTemplate]
   
@@ -55,24 +51,8 @@ object rjsfUtilsStrings {
   inline def FieldTemplate: FieldTemplate = "FieldTemplate".asInstanceOf[FieldTemplate]
   
   @js.native
-  sealed trait FormValidation extends StObject
-  inline def FormValidation: FormValidation = "FormValidation".asInstanceOf[FormValidation]
-  
-  @js.native
-  sealed trait IdSchema extends StObject
-  inline def IdSchema: IdSchema = "IdSchema".asInstanceOf[IdSchema]
-  
-  @js.native
-  sealed trait MakeUIType extends StObject
-  inline def MakeUIType: MakeUIType = "MakeUIType".asInstanceOf[MakeUIType]
-  
-  @js.native
   sealed trait ObjectFieldTemplate extends StObject
   inline def ObjectFieldTemplate: ObjectFieldTemplate = "ObjectFieldTemplate".asInstanceOf[ObjectFieldTemplate]
-  
-  @js.native
-  sealed trait PathSchema extends StObject
-  inline def PathSchema: PathSchema = "PathSchema".asInstanceOf[PathSchema]
   
   @js.native
   sealed trait TitleFieldTemplate extends StObject
@@ -81,6 +61,10 @@ object rjsfUtilsStrings {
   @js.native
   sealed trait UnsupportedFieldTemplate extends StObject
   inline def UnsupportedFieldTemplate: UnsupportedFieldTemplate = "UnsupportedFieldTemplate".asInstanceOf[UnsupportedFieldTemplate]
+  
+  @js.native
+  sealed trait WrapIfAdditionalTemplate extends StObject
+  inline def WrapIfAdditionalTemplate: WrapIfAdditionalTemplate = "WrapIfAdditionalTemplate".asInstanceOf[WrapIfAdditionalTemplate]
   
   @js.native
   sealed trait additions extends StObject

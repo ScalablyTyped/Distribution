@@ -1,6 +1,6 @@
 package typings.serverless.anon
 
-import typings.serverless.validateMod.HttpMethod
+import typings.serverless.pluginsAwsPackageCompileEventsApiGatewayLibValidateMod.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

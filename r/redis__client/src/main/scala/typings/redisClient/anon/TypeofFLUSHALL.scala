@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.flushallMod.RedisFlushModes
+import typings.redisClient.distLibCommandsFlushallMod.RedisFlushModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.anon.CloseArray
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,16 +19,16 @@ object RibbonBuilder {
     /* name */ String, 
     /* options */ CloseArray, 
     /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-    typings.babylonjs.meshMod.Mesh
+    Mesh
   ] = js.native
-  inline def CreateRibbon(name: String, options: CloseArray): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def CreateRibbon(name: String, options: CloseArray, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def CreateRibbon(name: String, options: CloseArray): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateRibbon(name: String, options: CloseArray, scene: Nullable[typings.babylonjs.sceneMod.Scene]): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateRibbon")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
   inline def CreateRibbon_=(
     x: js.Function3[
       /* name */ String, 
       /* options */ CloseArray, 
       /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
-      typings.babylonjs.meshMod.Mesh
+      Mesh
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateRibbon")(x.asInstanceOf[js.Any])
 }

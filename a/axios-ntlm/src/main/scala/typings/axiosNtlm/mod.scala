@@ -132,9 +132,17 @@ object mod {
     @js.native
     val ERR_FR_TOO_MANY_REDIRECTS: /* "ERR_FR_TOO_MANY_REDIRECTS" */ String = js.native
     
+    @JSImport("axios-ntlm", "AxiosError.ERR_INVALID_URL")
+    @js.native
+    val ERR_INVALID_URL: /* "ERR_INVALID_URL" */ String = js.native
+    
     @JSImport("axios-ntlm", "AxiosError.ERR_NETWORK")
     @js.native
     val ERR_NETWORK: /* "ERR_NETWORK" */ String = js.native
+    
+    @JSImport("axios-ntlm", "AxiosError.ERR_NOT_SUPPORT")
+    @js.native
+    val ERR_NOT_SUPPORT: /* "ERR_NOT_SUPPORT" */ String = js.native
     
     @JSImport("axios-ntlm", "AxiosError.ETIMEDOUT")
     @js.native

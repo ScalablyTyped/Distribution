@@ -2,10 +2,10 @@ package typings.tsutils.utilUtilMod
 
 import typings.tsutils.anon.BindingElementnameIdentif
 import typings.tsutils.anon.VariableDeclarationnameId
-import typings.tsutils.convertAstMod.NodeWrap
 import typings.tsutils.tsutilsStrings.CarriagereturnLinefeed
 import typings.tsutils.tsutilsStrings.Linefeed
 import typings.tsutils.tsutilsStrings.stripInternal
+import typings.tsutils.utilConvertAstMod.NodeWrap
 import typings.tsutils.utilUtilMod.^
 import typings.typescript.mod.ArrowFunction
 import typings.typescript.mod.AssertionExpression
@@ -286,8 +286,6 @@ inline def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean, sourc
 inline def parseJsDocOfNode(node: Node, considerTrailingComments: Unit, sourceFile: SourceFile): js.Array[JSDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsDocOfNode")(node.asInstanceOf[js.Any], considerTrailingComments.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Array[JSDoc]]
 
 inline def unwrapParentheses(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapParentheses")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
-
-type BooleanCompilerOptions = Any
 
 type ForEachCommentCallback = js.Function2[/* fullText */ String, /* comment */ CommentRange, Unit]
 

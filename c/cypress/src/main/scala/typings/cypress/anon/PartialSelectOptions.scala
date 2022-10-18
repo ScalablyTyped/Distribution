@@ -1,31 +1,43 @@
 package typings.cypress.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.Cypress.SelectOptions> */
-trait PartialSelectOptions extends js.Object {
+trait PartialSelectOptions extends StObject {
+  
   var force: js.UndefOr[Boolean] = js.undefined
+  
   var interval: js.UndefOr[Double] = js.undefined
+  
   var log: js.UndefOr[Boolean] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object PartialSelectOptions {
-  @scala.inline
-  def apply(
-    force: js.UndefOr[Boolean] = js.undefined,
-    interval: js.UndefOr[Double] = js.undefined,
-    log: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): PartialSelectOptions = {
+  
+  inline def apply(): PartialSelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSelectOptions]
   }
+  
+  extension [Self <: PartialSelectOptions](x: Self) {
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

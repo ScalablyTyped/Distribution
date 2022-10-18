@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Gamepads/index", "DaydreamController")
 @js.native
 open class DaydreamController protected ()
-  extends typings.babylonjs.controllersIndexMod.DaydreamController {
+  extends typings.babylonjs.gamepadsControllersIndexMod.DaydreamController {
   /**
     * Creates a new DaydreamController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from

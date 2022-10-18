@@ -6,20 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Direction extends StObject {
   
-  var channelId: String
-  
   var direction: js.UndefOr[String] = js.undefined
 }
 object Direction {
   
-  inline def apply(channelId: String): Direction = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
+  inline def apply(): Direction = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Direction]
   }
   
   extension [Self <: Direction](x: Self) {
-    
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

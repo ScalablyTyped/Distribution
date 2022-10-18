@@ -14,18 +14,18 @@ import typings.tensorflowTfjsCore.anon.ExpandDims
 import typings.tensorflowTfjsCore.anon.Imag
 import typings.tensorflowTfjsCore.anon.Path
 import typings.tensorflowTfjsCore.anon.Real
-import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
-import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
-import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.Conv2DInfo
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.Conv3DInfo
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation
+import typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType
+import typings.tensorflowTfjsCore.distOpsScatterNdUtilMod.ScatterShapeInfo
+import typings.tensorflowTfjsCore.distOpsSegmentUtilMod.GatherOpShapeInfo
+import typings.tensorflowTfjsCore.distOpsSliceUtilMod.SliceInfo_
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
-import typings.tensorflowTfjsCore.fusedTypesMod.Activation
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
-import typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType
-import typings.tensorflowTfjsCore.scatterNdUtilMod.ScatterShapeInfo
-import typings.tensorflowTfjsCore.segmentUtilMod.GatherOpShapeInfo
-import typings.tensorflowTfjsCore.sliceUtilMod.SliceInfo_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,19 +69,19 @@ object backendUtil {
   object RowPartitionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType & Double] = js.native
     
-    /* 0 */ val FIRST_DIM_SIZE: typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType.FIRST_DIM_SIZE & Double = js.native
+    /* 0 */ val FIRST_DIM_SIZE: typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType.FIRST_DIM_SIZE & Double = js.native
     
-    /* 2 */ val ROW_LENGTHS: typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType.ROW_LENGTHS & Double = js.native
+    /* 2 */ val ROW_LENGTHS: typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType.ROW_LENGTHS & Double = js.native
     
-    /* 4 */ val ROW_LIMITS: typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType.ROW_LIMITS & Double = js.native
+    /* 4 */ val ROW_LIMITS: typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType.ROW_LIMITS & Double = js.native
     
-    /* 3 */ val ROW_SPLITS: typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType.ROW_SPLITS & Double = js.native
+    /* 3 */ val ROW_SPLITS: typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType.ROW_SPLITS & Double = js.native
     
-    /* 5 */ val ROW_STARTS: typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType.ROW_STARTS & Double = js.native
+    /* 5 */ val ROW_STARTS: typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType.ROW_STARTS & Double = js.native
     
-    /* 1 */ val VALUE_ROWIDS: typings.tensorflowTfjsCore.raggedToDenseUtilMod.RowPartitionType.VALUE_ROWIDS & Double = js.native
+    /* 1 */ val VALUE_ROWIDS: typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType.VALUE_ROWIDS & Double = js.native
   }
   
   @JSImport("@tensorflow/tfjs", "backend_util.SELU_SCALE")
@@ -386,6 +386,10 @@ object backendUtil {
   
   inline def prepareAndValidate(tensor: TensorInfo, indices: TensorInfo): js.Tuple4[js.Array[Double], Double, Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareAndValidate")(tensor.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Tuple4[js.Array[Double], Double, Double, js.Array[Double]]]
   
+  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: js.Array[Double], axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: Double, axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def prepareSplitSize(x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], numOrSizeSplits: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def prepareSplitSize(
     x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
@@ -394,10 +398,6 @@ object backendUtil {
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def prepareSplitSize(x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], numOrSizeSplits: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def prepareSplitSize(x: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], numOrSizeSplits: Double, axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: js.Array[Double], axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  inline def prepareSplitSize(x: TensorInfo, numOrSizeSplits: Double, axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareSplitSize")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   object segmentUtil {
     

@@ -1,17 +1,17 @@
 package typings.luminoWidgets
 
-import typings.luminoWidgets.boxlayoutMod.BoxLayout.Alignment
-import typings.luminoWidgets.boxlayoutMod.BoxLayout.Direction
-import typings.luminoWidgets.docklayoutMod.DockLayout.InsertMode
-import typings.luminoWidgets.dockpanelMod.DockPanel.Mode
-import typings.luminoWidgets.layoutMod.Layout.FitPolicy
-import typings.luminoWidgets.layoutMod.Layout.HorizontalAlignment
-import typings.luminoWidgets.layoutMod.Layout.VerticalAlignment
-import typings.luminoWidgets.menuMod.Menu.ItemType
-import typings.luminoWidgets.scrollbarMod.ScrollBar.Orientation
-import typings.luminoWidgets.tabbarMod.TabBar.InsertBehavior
-import typings.luminoWidgets.tabbarMod.TabBar.RemoveBehavior
-import typings.luminoWidgets.tabpanelMod.TabPanel.TabPlacement
+import typings.luminoWidgets.typesBoxlayoutMod.BoxLayout.Alignment
+import typings.luminoWidgets.typesBoxlayoutMod.BoxLayout.Direction
+import typings.luminoWidgets.typesDocklayoutMod.DockLayout.InsertMode
+import typings.luminoWidgets.typesDockpanelMod.DockPanel.Mode
+import typings.luminoWidgets.typesLayoutMod.Layout.FitPolicy
+import typings.luminoWidgets.typesLayoutMod.Layout.HorizontalAlignment
+import typings.luminoWidgets.typesLayoutMod.Layout.VerticalAlignment
+import typings.luminoWidgets.typesMenuMod.Menu.ItemType
+import typings.luminoWidgets.typesTabbarMod.TabBar.InsertBehavior
+import typings.luminoWidgets.typesTabbarMod.TabBar.Orientation
+import typings.luminoWidgets.typesTabbarMod.TabBar.RemoveBehavior
+import typings.luminoWidgets.typesTabpanelMod.TabPanel.TabPlacement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,7 +103,7 @@ object luminoWidgetsStrings {
   sealed trait center
     extends StObject
        with Alignment
-       with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
+       with typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Alignment
        with HorizontalAlignment
        with VerticalAlignment
   inline def center: center = "center".asInstanceOf[center]
@@ -186,7 +186,7 @@ object luminoWidgetsStrings {
   sealed trait end
     extends StObject
        with Alignment
-       with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
+       with typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Alignment
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -249,8 +249,8 @@ object luminoWidgetsStrings {
   sealed trait horizontal
     extends StObject
        with Orientation
-       with typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
-       with typings.luminoWidgets.tabbarMod.TabBar.Orientation
+       with typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Orientation
+       with typings.luminoWidgets.typesScrollbarMod.ScrollBar.Orientation
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
@@ -289,7 +289,7 @@ object luminoWidgetsStrings {
   sealed trait justify
     extends StObject
        with Alignment
-       with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
+       with typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Alignment
   inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
@@ -565,7 +565,7 @@ object luminoWidgetsStrings {
   sealed trait start
     extends StObject
        with Alignment
-       with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
+       with typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Alignment
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
@@ -687,8 +687,8 @@ object luminoWidgetsStrings {
   sealed trait vertical
     extends StObject
        with Orientation
-       with typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
-       with typings.luminoWidgets.tabbarMod.TabBar.Orientation
+       with typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Orientation
+       with typings.luminoWidgets.typesScrollbarMod.ScrollBar.Orientation
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native

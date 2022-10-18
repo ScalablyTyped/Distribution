@@ -1,11 +1,11 @@
 package typings.workboxExpiration
 
 import typings.std.Response
-import typings.workboxCore.workboxPluginMod.CacheDidUpdateCallback
-import typings.workboxCore.workboxPluginMod.CacheDidUpdateCallbackParam
-import typings.workboxCore.workboxPluginMod.CachedResponseWillBeUsedCallback
-import typings.workboxCore.workboxPluginMod.CachedResponseWillBeUsedCallbackParam
-import typings.workboxCore.workboxPluginMod.WorkboxPlugin
+import typings.workboxCore.typesWorkboxPluginMod.CacheDidUpdateCallback
+import typings.workboxCore.typesWorkboxPluginMod.CacheDidUpdateCallbackParam
+import typings.workboxCore.typesWorkboxPluginMod.CachedResponseWillBeUsedCallback
+import typings.workboxCore.typesWorkboxPluginMod.CachedResponseWillBeUsedCallbackParam
+import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

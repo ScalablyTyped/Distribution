@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "ModuleSet")
 @js.native
 open class ModuleSet ()
-  extends typings.webcola.powergraphMod.ModuleSet
+  extends typings.webcola.distSrcPowergraphMod.ModuleSet

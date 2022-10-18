@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsGooglePlusOutlinedMod.GooglePlusOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googlePlusOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/GooglePlusOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/GooglePlusOutlined", JSImport.Default)
   @js.native
   val default: GooglePlusOutlinedIconType = js.native
-  
-  @js.native
-  trait GooglePlusOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_GooglePlusOutlinedIconType: String = js.native
-  }
   
   type _To = GooglePlusOutlinedIconType
   

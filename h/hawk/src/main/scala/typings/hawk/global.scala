@@ -3,24 +3,24 @@ package typings.hawk
 import typings.hapiBoom.mod.Boom
 import typings.hapiBoom.mod.unauthorized.Attributes
 import typings.hapiBoom.mod.unauthorized.MissingAuth
-import typings.hawk.clientMod.AuthenticateOptions
-import typings.hawk.clientMod.Authentication
-import typings.hawk.clientMod.BewitOptions
-import typings.hawk.clientMod.Credentials
-import typings.hawk.clientMod.HeaderOptions
-import typings.hawk.clientMod.Header_
-import typings.hawk.clientMod.MessageOptions
-import typings.hawk.clientMod.Message_
-import typings.hawk.cryptoMod.Artifacts
-import typings.hawk.cryptoMod.TimestampMessage_
-import typings.hawk.serverMod.AuthenticateBewitOptions
-import typings.hawk.serverMod.AuthenticateMessageOptions
-import typings.hawk.serverMod.AuthenticatedBewit
-import typings.hawk.serverMod.AuthenticatedMessage
-import typings.hawk.serverMod.CredentialsFunc
-import typings.hawk.utilsMod.CustomRequest
-import typings.hawk.utilsMod.Host
-import typings.hawk.utilsMod.ParseRequestOptions
+import typings.hawk.libClientMod.AuthenticateOptions
+import typings.hawk.libClientMod.Authentication
+import typings.hawk.libClientMod.BewitOptions
+import typings.hawk.libClientMod.Credentials
+import typings.hawk.libClientMod.HeaderOptions
+import typings.hawk.libClientMod.Header_
+import typings.hawk.libClientMod.MessageOptions
+import typings.hawk.libClientMod.Message_
+import typings.hawk.libCryptoMod.Artifacts
+import typings.hawk.libCryptoMod.TimestampMessage_
+import typings.hawk.libServerMod.AuthenticateBewitOptions
+import typings.hawk.libServerMod.AuthenticateMessageOptions
+import typings.hawk.libServerMod.AuthenticatedBewit
+import typings.hawk.libServerMod.AuthenticatedMessage
+import typings.hawk.libServerMod.CredentialsFunc
+import typings.hawk.libUtilsMod.CustomRequest
+import typings.hawk.libUtilsMod.Host
+import typings.hawk.libUtilsMod.ParseRequestOptions
 import typings.node.cryptoMod.Hash
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
@@ -93,12 +93,12 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[typings.hawk.serverMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hawk.serverMod.Authentication]]
+      inline def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[typings.hawk.libServerMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hawk.libServerMod.Authentication]]
       inline def authenticate(
         req: IncomingMessage,
         credentialsFunc: CredentialsFunc,
-        options: typings.hawk.serverMod.AuthenticateOptions
-      ): js.Promise[typings.hawk.serverMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hawk.serverMod.Authentication]]
+        options: typings.hawk.libServerMod.AuthenticateOptions
+      ): js.Promise[typings.hawk.libServerMod.Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.hawk.libServerMod.Authentication]]
       
       inline def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[AuthenticatedBewit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticatedBewit]]
       inline def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateBewitOptions): js.Promise[AuthenticatedBewit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticatedBewit]]
@@ -114,18 +114,18 @@ object global {
       
       inline def authenticatePayload(
         payload: String,
-        credentials: typings.hawk.serverMod.Credentials,
+        credentials: typings.hawk.libServerMod.Credentials,
         artifacts: Artifacts,
         contentType: String
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayload")(payload.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def authenticatePayloadHash(calculatedHash: String, artifacts: Artifacts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayloadHash")(calculatedHash.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      inline def header(credentials: typings.hawk.serverMod.Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def header(credentials: typings.hawk.libServerMod.Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
       inline def header(
-        credentials: typings.hawk.serverMod.Credentials,
+        credentials: typings.hawk.libServerMod.Credentials,
         artifacts: Artifacts,
-        options: typings.hawk.serverMod.HeaderOptions
+        options: typings.hawk.libServerMod.HeaderOptions
       ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     

@@ -1,22 +1,22 @@
 package typings.imageQ.mod
 
-import typings.imageQ.arrayMod.ErrorDiffusionArrayKernel
-import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
+import typings.imageQ.distTypesSrcDistanceDistanceCalculatorMod.AbstractDistanceCalculator
+import typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object image {
   
-  @JSImport("image-q", "image.AbstractImageQuantizer")
+  /* note: abstract class */ @JSImport("image-q", "image.AbstractImageQuantizer")
   @js.native
-  abstract class AbstractImageQuantizer ()
-    extends typings.imageQ.imageMod.AbstractImageQuantizer
+  open class AbstractImageQuantizer ()
+    extends typings.imageQ.distTypesSrcImageMod.AbstractImageQuantizer
   
   @JSImport("image-q", "image.ErrorDiffusionArray")
   @js.native
   open class ErrorDiffusionArray protected ()
-    extends typings.imageQ.imageMod.ErrorDiffusionArray {
+    extends typings.imageQ.distTypesSrcImageMod.ErrorDiffusionArray {
     def this(colorDistanceCalculator: AbstractDistanceCalculator, kernel: ErrorDiffusionArrayKernel) = this()
     def this(
       colorDistanceCalculator: AbstractDistanceCalculator,
@@ -70,31 +70,31 @@ object image {
   object ErrorDiffusionArrayKernel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.imageQ.arrayMod.ErrorDiffusionArrayKernel & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel & Double] = js.native
     
-    /* 3 */ val Atkinson: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Atkinson & Double = js.native
+    /* 3 */ val Atkinson: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.Atkinson & Double = js.native
     
-    /* 5 */ val Burkes: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Burkes & Double = js.native
+    /* 5 */ val Burkes: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.Burkes & Double = js.native
     
-    /* 1 */ val FalseFloydSteinberg: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.FalseFloydSteinberg & Double = js.native
+    /* 1 */ val FalseFloydSteinberg: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.FalseFloydSteinberg & Double = js.native
     
-    /* 0 */ val FloydSteinberg: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.FloydSteinberg & Double = js.native
+    /* 0 */ val FloydSteinberg: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.FloydSteinberg & Double = js.native
     
-    /* 4 */ val Jarvis: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Jarvis & Double = js.native
+    /* 4 */ val Jarvis: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.Jarvis & Double = js.native
     
-    /* 6 */ val Sierra: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Sierra & Double = js.native
+    /* 6 */ val Sierra: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.Sierra & Double = js.native
     
-    /* 8 */ val SierraLite: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.SierraLite & Double = js.native
+    /* 8 */ val SierraLite: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.SierraLite & Double = js.native
     
-    /* 2 */ val Stucki: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.Stucki & Double = js.native
+    /* 2 */ val Stucki: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.Stucki & Double = js.native
     
-    /* 7 */ val TwoSierra: typings.imageQ.arrayMod.ErrorDiffusionArrayKernel.TwoSierra & Double = js.native
+    /* 7 */ val TwoSierra: typings.imageQ.distTypesSrcImageArrayMod.ErrorDiffusionArrayKernel.TwoSierra & Double = js.native
   }
   
   @JSImport("image-q", "image.ErrorDiffusionRiemersma")
   @js.native
   open class ErrorDiffusionRiemersma protected ()
-    extends typings.imageQ.imageMod.ErrorDiffusionRiemersma {
+    extends typings.imageQ.distTypesSrcImageMod.ErrorDiffusionRiemersma {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, errorQueueSize: Double) = this()
     def this(
@@ -124,7 +124,7 @@ object image {
   @JSImport("image-q", "image.NearestColor")
   @js.native
   open class NearestColor protected ()
-    extends typings.imageQ.imageMod.NearestColor {
+    extends typings.imageQ.distTypesSrcImageMod.NearestColor {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
   }
 }

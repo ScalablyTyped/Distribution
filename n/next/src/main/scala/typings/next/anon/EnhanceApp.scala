@@ -1,16 +1,16 @@
 package typings.next.anon
 
-import typings.next.libUtilsMod.AppType
-import typings.next.libUtilsMod.Enhancer
-import typings.next.libUtilsMod.NextComponentType
-import typings.next.libUtilsMod.NextPageContext
+import typings.next.distSharedLibUtilsMod.AppType
+import typings.next.distSharedLibUtilsMod.Enhancer
+import typings.next.distSharedLibUtilsMod.NextComponentType
+import typings.next.distSharedLibUtilsMod.NextPageContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EnhanceApp extends StObject {
   
-  var enhanceApp: js.UndefOr[Enhancer[AppType]] = js.undefined
+  var enhanceApp: js.UndefOr[Enhancer[AppType[js.Object]]] = js.undefined
   
   var enhanceComponent: js.UndefOr[Enhancer[NextComponentType[NextPageContext, js.Object, js.Object]]] = js.undefined
 }
@@ -23,7 +23,7 @@ object EnhanceApp {
   
   extension [Self <: EnhanceApp](x: Self) {
     
-    inline def setEnhanceApp(value: AppType => AppType): Self = StObject.set(x, "enhanceApp", js.Any.fromFunction1(value))
+    inline def setEnhanceApp(value: AppType[js.Object] => AppType[js.Object]): Self = StObject.set(x, "enhanceApp", js.Any.fromFunction1(value))
     
     inline def setEnhanceAppUndefined: Self = StObject.set(x, "enhanceApp", js.undefined)
     

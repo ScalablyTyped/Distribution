@@ -1,8 +1,8 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.workspaceSlashwillDeleteFiles
-import typings.vscodeLanguageserverProtocol.protocolFileOperationsMod.DeleteFilesParams
-import typings.vscodeLanguageserverProtocol.protocolFileOperationsMod.FileOperationRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotfileOperationsMod.DeleteFilesParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotfileOperationsMod.FileOperationRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object WillDeleteFilesRequest {
   
   @JSImport("vscode-languageclient", "WillDeleteFilesRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageclient", "WillDeleteFilesRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object WillDeleteFilesRequest {
   
   @JSImport("vscode-languageclient", "WillDeleteFilesRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DeleteFilesParams, 
     typings.vscodeLanguageserverTypes.mod.WorkspaceEdit | Null, 
     scala.Nothing, 

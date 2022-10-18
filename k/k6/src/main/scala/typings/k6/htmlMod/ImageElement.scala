@@ -4,6 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "ImageElement")
+/* note: abstract class */ @JSImport("k6/html", "ImageElement")
 @js.native
-abstract class ImageElement () extends Element
+open class ImageElement () extends Element

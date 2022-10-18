@@ -1,10 +1,10 @@
 package typings.electronBuilder
 
-import typings.appBuilderLib.forgeMakerMod.ForgeOptions
-import typings.appBuilderLib.packagerApiMod.PackagerOptions
-import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
-import typings.builderUtil.archMod.Arch
-import typings.electronBuilder.builderMod.CliOptions
+import typings.appBuilderLib.outForgeMakerMod.ForgeOptions
+import typings.appBuilderLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
+import typings.appBuilderLib.outPackagerApiMod.PackagerOptions
+import typings.builderUtil.outArchMod.Arch
+import typings.electronBuilder.outBuilderMod.CliOptions
 import typings.electronPublish.mod.PublishOptions
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -21,20 +21,20 @@ object mod {
   @js.native
   open class AppInfo protected ()
     extends typings.appBuilderLib.mod.AppInfo {
-    def this(info: typings.appBuilderLib.packagerMod.Packager) = this()
-    def this(info: typings.appBuilderLib.packagerMod.Packager, buildVersion: String) = this()
+    def this(info: typings.appBuilderLib.outPackagerMod.Packager) = this()
+    def this(info: typings.appBuilderLib.outPackagerMod.Packager, buildVersion: String) = this()
     def this(
-      info: typings.appBuilderLib.packagerMod.Packager,
+      info: typings.appBuilderLib.outPackagerMod.Packager,
       buildVersion: String,
       platformSpecificOptions: PlatformSpecificBuildOptions
     ) = this()
     def this(
-      info: typings.appBuilderLib.packagerMod.Packager,
+      info: typings.appBuilderLib.outPackagerMod.Packager,
       buildVersion: Null,
       platformSpecificOptions: PlatformSpecificBuildOptions
     ) = this()
     def this(
-      info: typings.appBuilderLib.packagerMod.Packager,
+      info: typings.appBuilderLib.outPackagerMod.Packager,
       buildVersion: Unit,
       platformSpecificOptions: PlatformSpecificBuildOptions
     ) = this()
@@ -45,24 +45,24 @@ object mod {
   object Arch extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.builderUtil.archMod.Arch & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.builderUtil.outArchMod.Arch & Double] = js.native
     
-    /* 3 */ val arm64: typings.builderUtil.archMod.Arch.arm64 & Double = js.native
+    /* 3 */ val arm64: typings.builderUtil.outArchMod.Arch.arm64 & Double = js.native
     
-    /* 2 */ val armv7l: typings.builderUtil.archMod.Arch.armv7l & Double = js.native
+    /* 2 */ val armv7l: typings.builderUtil.outArchMod.Arch.armv7l & Double = js.native
     
-    /* 0 */ val ia32: typings.builderUtil.archMod.Arch.ia32 & Double = js.native
+    /* 0 */ val ia32: typings.builderUtil.outArchMod.Arch.ia32 & Double = js.native
     
-    /* 4 */ val universal: typings.builderUtil.archMod.Arch.universal & Double = js.native
+    /* 4 */ val universal: typings.builderUtil.outArchMod.Arch.universal & Double = js.native
     
-    /* 1 */ val x64: typings.builderUtil.archMod.Arch.x64 & Double = js.native
+    /* 1 */ val x64: typings.builderUtil.outArchMod.Arch.x64 & Double = js.native
   }
   
   @JSImport("electron-builder", "CancellationToken")
   @js.native
   open class CancellationToken ()
     extends typings.builderUtilRuntime.mod.CancellationToken {
-    def this(parent: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken) = this()
+    def this(parent: typings.builderUtilRuntime.outCancellationTokenMod.CancellationToken) = this()
   }
   
   @JSImport("electron-builder", "DEFAULT_TARGET")
@@ -100,39 +100,39 @@ object mod {
     
     @JSImport("electron-builder", "Platform.LINUX")
     @js.native
-    def LINUX: typings.appBuilderLib.coreMod.Platform = js.native
-    inline def LINUX_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
+    def LINUX: typings.appBuilderLib.outCoreMod.Platform = js.native
+    inline def LINUX_=(x: typings.appBuilderLib.outCoreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
     
     @JSImport("electron-builder", "Platform.MAC")
     @js.native
-    def MAC: typings.appBuilderLib.coreMod.Platform = js.native
-    inline def MAC_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
+    def MAC: typings.appBuilderLib.outCoreMod.Platform = js.native
+    inline def MAC_=(x: typings.appBuilderLib.outCoreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
     
     @JSImport("electron-builder", "Platform.WINDOWS")
     @js.native
-    def WINDOWS: typings.appBuilderLib.coreMod.Platform = js.native
-    inline def WINDOWS_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
+    def WINDOWS: typings.appBuilderLib.outCoreMod.Platform = js.native
+    inline def WINDOWS_=(x: typings.appBuilderLib.outCoreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
     
-    inline def current(): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.appBuilderLib.coreMod.Platform]
+    inline def current(): typings.appBuilderLib.outCoreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.appBuilderLib.outCoreMod.Platform]
     
-    inline def fromString(name: String): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[typings.appBuilderLib.coreMod.Platform]
+    inline def fromString(name: String): typings.appBuilderLib.outCoreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[typings.appBuilderLib.outCoreMod.Platform]
   }
   
   @JSImport("electron-builder", "PublishManager")
   @js.native
   open class PublishManager protected ()
     extends typings.appBuilderLib.mod.PublishManager {
-    def this(packager: typings.appBuilderLib.packagerMod.Packager, publishOptions: PublishOptions) = this()
+    def this(packager: typings.appBuilderLib.outPackagerMod.Packager, publishOptions: PublishOptions) = this()
     def this(
-      packager: typings.appBuilderLib.packagerMod.Packager,
+      packager: typings.appBuilderLib.outPackagerMod.Packager,
       publishOptions: PublishOptions,
       cancellationToken: typings.builderUtilRuntime.mod.CancellationToken
     ) = this()
   }
   
-  @JSImport("electron-builder", "Target")
+  /* note: abstract class */ @JSImport("electron-builder", "Target")
   @js.native
-  abstract class Target protected ()
+  open class Target protected ()
     extends typings.appBuilderLib.mod.Target {
     /* protected */ def this(name: String) = this()
     /* protected */ def this(name: String, isAsyncSupported: Boolean) = this()

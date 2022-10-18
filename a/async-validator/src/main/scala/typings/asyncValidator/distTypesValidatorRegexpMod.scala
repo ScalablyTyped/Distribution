@@ -1,0 +1,19 @@
+package typings.asyncValidator
+
+import org.scalablytyped.runtime.Shortcut
+import typings.asyncValidator.distTypesInterfaceMod.ExecuteValidator
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distTypesValidatorRegexpMod extends Shortcut {
+  
+  @JSImport("async-validator/dist-types/validator/regexp", JSImport.Default)
+  @js.native
+  val default: ExecuteValidator = js.native
+  
+  type _To = ExecuteValidator
+  
+  /* This means you don't have to write `default`, but can instead just say `distTypesValidatorRegexpMod.foo` */
+  override def _to: ExecuteValidator = default
+}

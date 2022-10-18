@@ -1,6 +1,6 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.headerComponentMod.LayoutHeaderComponent
+import typings.vegaLite.buildSrcCompileHeaderComponentMod.LayoutHeaderComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

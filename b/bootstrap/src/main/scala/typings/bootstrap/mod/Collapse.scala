@@ -1,11 +1,11 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptionsParent
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
-import typings.bootstrap.collapseMod.Collapse.Options
-import typings.bootstrap.collapseMod.Collapse.jQueryInterface
-import typings.bootstrap.collapseMod.default
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistCollapseMod.Collapse.Options
+import typings.bootstrap.jsDistCollapseMod.Collapse.jQueryInterface
+import typings.bootstrap.jsDistCollapseMod.default
 import typings.bootstrap.mod.global.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,15 +41,15 @@ object Collapse {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.collapseMod.Collapse.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistCollapseMod.Collapse.Events & String] = js.native
     
-    /* "hidden.bs.collapse" */ val hidden: typings.bootstrap.collapseMod.Collapse.Events.hidden & String = js.native
+    /* "hidden.bs.collapse" */ val hidden: typings.bootstrap.jsDistCollapseMod.Collapse.Events.hidden & String = js.native
     
-    /* "hide.bs.collapse" */ val hide: typings.bootstrap.collapseMod.Collapse.Events.hide & String = js.native
+    /* "hide.bs.collapse" */ val hide: typings.bootstrap.jsDistCollapseMod.Collapse.Events.hide & String = js.native
     
-    /* "show.bs.collapse" */ val show: typings.bootstrap.collapseMod.Collapse.Events.show & String = js.native
+    /* "show.bs.collapse" */ val show: typings.bootstrap.jsDistCollapseMod.Collapse.Events.show & String = js.native
     
-    /* "shown.bs.collapse" */ val shown: typings.bootstrap.collapseMod.Collapse.Events.shown & String = js.native
+    /* "shown.bs.collapse" */ val shown: typings.bootstrap.jsDistCollapseMod.Collapse.Events.shown & String = js.native
   }
   
   /**
@@ -59,8 +59,8 @@ object Collapse {
   /* static member */
   @JSImport("bootstrap", "Collapse.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.collapseMod.Collapse] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.collapseMod.Collapse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which returns a collapse instance associated to a DOM element
@@ -70,12 +70,12 @@ object Collapse {
   /* static member */
   @JSImport("bootstrap", "Collapse.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.collapseMod.Collapse, PartialOptionsParent] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.collapseMod.Collapse, PartialOptionsParent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse, PartialOptionsParent] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse, PartialOptionsParent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Collapse.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.collapseMod.Collapse.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistCollapseMod.Collapse.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

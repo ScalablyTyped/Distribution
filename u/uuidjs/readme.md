@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuidjs
 
-Typings are for version 4.2.11
+Typings are for version 4.2.12
 
 ## Library description:
 RFC-compliant UUID Generator for JavaScript

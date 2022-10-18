@@ -1,6 +1,6 @@
 package typings.raml1Parser.anon
 
-import typings.raml1Parser.parserCoreMod.BasicNode
+import typings.raml1Parser.distParserWrappedAstParserCoreMod.BasicNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

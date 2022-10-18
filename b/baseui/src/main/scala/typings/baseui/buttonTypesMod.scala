@@ -14,7 +14,7 @@ import typings.baseui.baseuiStrings.secondary
 import typings.baseui.baseuiStrings.square
 import typings.baseui.baseuiStrings.submit
 import typings.baseui.baseuiStrings.tertiary
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent

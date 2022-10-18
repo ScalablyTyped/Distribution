@@ -1,6 +1,6 @@
 package typings.paypalCheckoutServerSdk.mod
 
-import typings.paypalCheckoutServerSdk.ordersLibMod.BaseOrderHeaders
+import typings.paypalCheckoutServerSdk.libOrdersLibMod.BaseOrderHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,13 @@ object orders {
   object AccountTier extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.AccountTier & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier & String] = js.native
     
-    /* "BUSINESS" */ val BUSINESS: typings.paypalCheckoutServerSdk.ordersLibMod.AccountTier.BUSINESS & String = js.native
+    /* "BUSINESS" */ val BUSINESS: typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier.BUSINESS & String = js.native
     
-    /* "PERSONAL" */ val PERSONAL: typings.paypalCheckoutServerSdk.ordersLibMod.AccountTier.PERSONAL & String = js.native
+    /* "PERSONAL" */ val PERSONAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier.PERSONAL & String = js.native
     
-    /* "PREMIER" */ val PREMIER: typings.paypalCheckoutServerSdk.ordersLibMod.AccountTier.PREMIER & String = js.native
+    /* "PREMIER" */ val PREMIER: typings.paypalCheckoutServerSdk.libOrdersLibMod.AccountTier.PREMIER & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.AuthenticationStatus")
@@ -26,23 +26,23 @@ object orders {
   object AuthenticationStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus & String] = js.native
     
-    /* "A" */ val A: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.A & String = js.native
+    /* "A" */ val A: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.A & String = js.native
     
-    /* "C" */ val C: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.C & String = js.native
+    /* "C" */ val C: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.C & String = js.native
     
-    /* "D" */ val D: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.D & String = js.native
+    /* "D" */ val D: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.D & String = js.native
     
-    /* "I" */ val I: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.I & String = js.native
+    /* "I" */ val I: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.I & String = js.native
     
-    /* "N" */ val N: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.N & String = js.native
+    /* "N" */ val N: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.N & String = js.native
     
-    /* "R" */ val R: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.R & String = js.native
+    /* "R" */ val R: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.R & String = js.native
     
-    /* "U" */ val U: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.U & String = js.native
+    /* "U" */ val U: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.U & String = js.native
     
-    /* "Y" */ val Y: typings.paypalCheckoutServerSdk.ordersLibMod.AuthenticationStatus.Y & String = js.native
+    /* "Y" */ val Y: typings.paypalCheckoutServerSdk.libOrdersLibMod.AuthenticationStatus.Y & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.BaseOrderRequest")
@@ -57,13 +57,13 @@ object orders {
   object Category extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Category & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Category & String] = js.native
     
-    /* "DIGITAL_GOODS" */ val DIGITAL_GOODS: typings.paypalCheckoutServerSdk.ordersLibMod.Category.DIGITAL_GOODS & String = js.native
+    /* "DIGITAL_GOODS" */ val DIGITAL_GOODS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Category.DIGITAL_GOODS & String = js.native
     
-    /* "DONATION" */ val DONATION: typings.paypalCheckoutServerSdk.ordersLibMod.Category.DONATION & String = js.native
+    /* "DONATION" */ val DONATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.Category.DONATION & String = js.native
     
-    /* "PHYSICAL_GOODS" */ val PHYSICAL_GOODS: typings.paypalCheckoutServerSdk.ordersLibMod.Category.PHYSICAL_GOODS & String = js.native
+    /* "PHYSICAL_GOODS" */ val PHYSICAL_GOODS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Category.PHYSICAL_GOODS & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.Contingency")
@@ -71,9 +71,9 @@ object orders {
   object Contingency extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Contingency & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Contingency & String] = js.native
     
-    /* "3D_SECURE" */ val `3D_SECURE`: typings.paypalCheckoutServerSdk.ordersLibMod.Contingency.`3D_SECURE` & String = js.native
+    /* "3D_SECURE" */ val `3D_SECURE`: typings.paypalCheckoutServerSdk.libOrdersLibMod.Contingency.`3D_SECURE` & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.Enrolled")
@@ -81,15 +81,15 @@ object orders {
   object Enrolled extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Enrolled & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Enrolled & String] = js.native
     
-    /* "B" */ val B: typings.paypalCheckoutServerSdk.ordersLibMod.Enrolled.B & String = js.native
+    /* "B" */ val B: typings.paypalCheckoutServerSdk.libOrdersLibMod.Enrolled.B & String = js.native
     
-    /* "N" */ val N: typings.paypalCheckoutServerSdk.ordersLibMod.Enrolled.N & String = js.native
+    /* "N" */ val N: typings.paypalCheckoutServerSdk.libOrdersLibMod.Enrolled.N & String = js.native
     
-    /* "U" */ val U: typings.paypalCheckoutServerSdk.ordersLibMod.Enrolled.U & String = js.native
+    /* "U" */ val U: typings.paypalCheckoutServerSdk.libOrdersLibMod.Enrolled.U & String = js.native
     
-    /* "Y" */ val Y: typings.paypalCheckoutServerSdk.ordersLibMod.Enrolled.Y & String = js.native
+    /* "Y" */ val Y: typings.paypalCheckoutServerSdk.libOrdersLibMod.Enrolled.Y & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.EnrollmentStatus")
@@ -97,15 +97,15 @@ object orders {
   object EnrollmentStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.EnrollmentStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus & String] = js.native
     
-    /* "B" */ val B: typings.paypalCheckoutServerSdk.ordersLibMod.EnrollmentStatus.B & String = js.native
+    /* "B" */ val B: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.B & String = js.native
     
-    /* "N" */ val N: typings.paypalCheckoutServerSdk.ordersLibMod.EnrollmentStatus.N & String = js.native
+    /* "N" */ val N: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.N & String = js.native
     
-    /* "U" */ val U: typings.paypalCheckoutServerSdk.ordersLibMod.EnrollmentStatus.U & String = js.native
+    /* "U" */ val U: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.U & String = js.native
     
-    /* "Y" */ val Y: typings.paypalCheckoutServerSdk.ordersLibMod.EnrollmentStatus.Y & String = js.native
+    /* "Y" */ val Y: typings.paypalCheckoutServerSdk.libOrdersLibMod.EnrollmentStatus.Y & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.IdentityDocumentType")
@@ -113,19 +113,19 @@ object orders {
   object IdentityDocumentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType & String] = js.native
     
-    /* "INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER" */ val INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType.INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER & String = js.native
+    /* "INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER" */ val INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER & String = js.native
     
-    /* "NATIONAL_IDENTIFICATION_NUMBER" */ val NATIONAL_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType.NATIONAL_IDENTIFICATION_NUMBER & String = js.native
+    /* "NATIONAL_IDENTIFICATION_NUMBER" */ val NATIONAL_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.NATIONAL_IDENTIFICATION_NUMBER & String = js.native
     
-    /* "PASSPORT_NUMBER" */ val PASSPORT_NUMBER: typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType.PASSPORT_NUMBER & String = js.native
+    /* "PASSPORT_NUMBER" */ val PASSPORT_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.PASSPORT_NUMBER & String = js.native
     
-    /* "SOCIAL_SECURITY_NUMBER" */ val SOCIAL_SECURITY_NUMBER: typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType.SOCIAL_SECURITY_NUMBER & String = js.native
+    /* "SOCIAL_SECURITY_NUMBER" */ val SOCIAL_SECURITY_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.SOCIAL_SECURITY_NUMBER & String = js.native
     
-    /* "SSN4" */ val SSN4: typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType.SSN4 & String = js.native
+    /* "SSN4" */ val SSN4: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.SSN4 & String = js.native
     
-    /* "TAX_IDENTIFICATION_NUMBER" */ val TAX_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.ordersLibMod.IdentityDocumentType.TAX_IDENTIFICATION_NUMBER & String = js.native
+    /* "TAX_IDENTIFICATION_NUMBER" */ val TAX_IDENTIFICATION_NUMBER: typings.paypalCheckoutServerSdk.libOrdersLibMod.IdentityDocumentType.TAX_IDENTIFICATION_NUMBER & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.Issuer")
@@ -133,11 +133,11 @@ object orders {
   object Issuer extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Issuer & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Issuer & String] = js.native
     
-    /* "CARD_ISSUER_INSTALLMENTS" */ val CARD_ISSUER_INSTALLMENTS: typings.paypalCheckoutServerSdk.ordersLibMod.Issuer.CARD_ISSUER_INSTALLMENTS & String = js.native
+    /* "CARD_ISSUER_INSTALLMENTS" */ val CARD_ISSUER_INSTALLMENTS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Issuer.CARD_ISSUER_INSTALLMENTS & String = js.native
     
-    /* "PAYPAL" */ val PAYPAL: typings.paypalCheckoutServerSdk.ordersLibMod.Issuer.PAYPAL & String = js.native
+    /* "PAYPAL" */ val PAYPAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.Issuer.PAYPAL & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.LandingPage")
@@ -145,13 +145,13 @@ object orders {
   object LandingPage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.LandingPage & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage & String] = js.native
     
-    /* "BILLING" */ val BILLING: typings.paypalCheckoutServerSdk.ordersLibMod.LandingPage.BILLING & String = js.native
+    /* "BILLING" */ val BILLING: typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage.BILLING & String = js.native
     
-    /* "LOGIN" */ val LOGIN: typings.paypalCheckoutServerSdk.ordersLibMod.LandingPage.LOGIN & String = js.native
+    /* "LOGIN" */ val LOGIN: typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage.LOGIN & String = js.native
     
-    /* "NO_PREFERENCE" */ val NO_PREFERENCE: typings.paypalCheckoutServerSdk.ordersLibMod.LandingPage.NO_PREFERENCE & String = js.native
+    /* "NO_PREFERENCE" */ val NO_PREFERENCE: typings.paypalCheckoutServerSdk.libOrdersLibMod.LandingPage.NO_PREFERENCE & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.LiabilityShift")
@@ -159,15 +159,15 @@ object orders {
   object LiabilityShift extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.LiabilityShift & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift & String] = js.native
     
-    /* "NO" */ val NO: typings.paypalCheckoutServerSdk.ordersLibMod.LiabilityShift.NO & String = js.native
+    /* "NO" */ val NO: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.NO & String = js.native
     
-    /* "POSSIBLE" */ val POSSIBLE: typings.paypalCheckoutServerSdk.ordersLibMod.LiabilityShift.POSSIBLE & String = js.native
+    /* "POSSIBLE" */ val POSSIBLE: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.POSSIBLE & String = js.native
     
-    /* "UNKNOWN" */ val UNKNOWN: typings.paypalCheckoutServerSdk.ordersLibMod.LiabilityShift.UNKNOWN & String = js.native
+    /* "UNKNOWN" */ val UNKNOWN: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.UNKNOWN & String = js.native
     
-    /* "YES" */ val YES: typings.paypalCheckoutServerSdk.ordersLibMod.LiabilityShift.YES & String = js.native
+    /* "YES" */ val YES: typings.paypalCheckoutServerSdk.libOrdersLibMod.LiabilityShift.YES & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.ModelEnumsCurrencyReceivingType")
@@ -176,16 +176,16 @@ object orders {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
-        typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsCurrencyReceivingType & String
+        typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType & String
       ] = js.native
     
-    /* "ACCEPT" */ val ACCEPT: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsCurrencyReceivingType.ACCEPT & String = js.native
+    /* "ACCEPT" */ val ACCEPT: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.ACCEPT & String = js.native
     
-    /* "ACCEPT_OPEN" */ val ACCEPT_OPEN: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsCurrencyReceivingType.ACCEPT_OPEN & String = js.native
+    /* "ACCEPT_OPEN" */ val ACCEPT_OPEN: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.ACCEPT_OPEN & String = js.native
     
-    /* "DENY" */ val DENY: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsCurrencyReceivingType.DENY & String = js.native
+    /* "DENY" */ val DENY: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.DENY & String = js.native
     
-    /* "HOLD" */ val HOLD: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsCurrencyReceivingType.HOLD & String = js.native
+    /* "HOLD" */ val HOLD: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsCurrencyReceivingType.HOLD & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.ModelEnumsDisbursementType")
@@ -193,11 +193,13 @@ object orders {
   object ModelEnumsDisbursementType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsDisbursementType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsDisbursementType & String
+      ] = js.native
     
-    /* "DELAYED" */ val DELAYED: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsDisbursementType.DELAYED & String = js.native
+    /* "DELAYED" */ val DELAYED: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsDisbursementType.DELAYED & String = js.native
     
-    /* "INSTANT" */ val INSTANT: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsDisbursementType.INSTANT & String = js.native
+    /* "INSTANT" */ val INSTANT: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsDisbursementType.INSTANT & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.ModelEnumsFacilitatorType")
@@ -205,13 +207,15 @@ object orders {
   object ModelEnumsFacilitatorType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsFacilitatorType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType & String
+      ] = js.native
     
-    /* "API_CALLER" */ val API_CALLER: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsFacilitatorType.API_CALLER & String = js.native
+    /* "API_CALLER" */ val API_CALLER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType.API_CALLER & String = js.native
     
-    /* "INTERNAL" */ val INTERNAL: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsFacilitatorType.INTERNAL & String = js.native
+    /* "INTERNAL" */ val INTERNAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType.INTERNAL & String = js.native
     
-    /* "PARTNER" */ val PARTNER: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsFacilitatorType.PARTNER & String = js.native
+    /* "PARTNER" */ val PARTNER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsFacilitatorType.PARTNER & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.ModelEnumsLiabilityType")
@@ -219,11 +223,11 @@ object orders {
   object ModelEnumsLiabilityType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsLiabilityType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsLiabilityType & String] = js.native
     
-    /* "FULL" */ val FULL: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsLiabilityType.FULL & String = js.native
+    /* "FULL" */ val FULL: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsLiabilityType.FULL & String = js.native
     
-    /* "PARTIAL" */ val PARTIAL: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsLiabilityType.PARTIAL & String = js.native
+    /* "PARTIAL" */ val PARTIAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsLiabilityType.PARTIAL & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.ModelEnumsParticipantType")
@@ -231,13 +235,15 @@ object orders {
   object ModelEnumsParticipantType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsParticipantType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType & String
+      ] = js.native
     
-    /* "FACILITATOR" */ val FACILITATOR: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsParticipantType.FACILITATOR & String = js.native
+    /* "FACILITATOR" */ val FACILITATOR: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType.FACILITATOR & String = js.native
     
-    /* "RECEIVER" */ val RECEIVER: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsParticipantType.RECEIVER & String = js.native
+    /* "RECEIVER" */ val RECEIVER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType.RECEIVER & String = js.native
     
-    /* "SENDER" */ val SENDER: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsParticipantType.SENDER & String = js.native
+    /* "SENDER" */ val SENDER: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsParticipantType.SENDER & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.ModelEnumsPricingType")
@@ -245,11 +251,11 @@ object orders {
   object ModelEnumsPricingType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsPricingType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsPricingType & String] = js.native
     
-    /* "BLENDED" */ val BLENDED: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsPricingType.BLENDED & String = js.native
+    /* "BLENDED" */ val BLENDED: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsPricingType.BLENDED & String = js.native
     
-    /* "IC_PLUS" */ val IC_PLUS: typings.paypalCheckoutServerSdk.ordersLibMod.ModelEnumsPricingType.IC_PLUS & String = js.native
+    /* "IC_PLUS" */ val IC_PLUS: typings.paypalCheckoutServerSdk.libOrdersLibMod.ModelEnumsPricingType.IC_PLUS & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.Operation")
@@ -257,19 +263,19 @@ object orders {
   object Operation extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Operation & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation & String] = js.native
     
-    /* "add" */ val ADD: typings.paypalCheckoutServerSdk.ordersLibMod.Operation.ADD & String = js.native
+    /* "add" */ val ADD: typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation.ADD & String = js.native
     
-    /* "copy" */ val COPY: typings.paypalCheckoutServerSdk.ordersLibMod.Operation.COPY & String = js.native
+    /* "copy" */ val COPY: typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation.COPY & String = js.native
     
-    /* "move" */ val MOVE: typings.paypalCheckoutServerSdk.ordersLibMod.Operation.MOVE & String = js.native
+    /* "move" */ val MOVE: typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation.MOVE & String = js.native
     
-    /* "remove" */ val REMOVE: typings.paypalCheckoutServerSdk.ordersLibMod.Operation.REMOVE & String = js.native
+    /* "remove" */ val REMOVE: typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation.REMOVE & String = js.native
     
-    /* "replace" */ val REPLACE: typings.paypalCheckoutServerSdk.ordersLibMod.Operation.REPLACE & String = js.native
+    /* "replace" */ val REPLACE: typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation.REPLACE & String = js.native
     
-    /* "test" */ val TEST: typings.paypalCheckoutServerSdk.ordersLibMod.Operation.TEST & String = js.native
+    /* "test" */ val TEST: typings.paypalCheckoutServerSdk.libOrdersLibMod.Operation.TEST & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.OrdersAuthorizeRequest")
@@ -317,79 +323,79 @@ object orders {
   object Orthography extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Orthography & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography & String] = js.native
     
-    /* "Arab" */ val Arab: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Arab & String = js.native
+    /* "Arab" */ val Arab: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Arab & String = js.native
     
-    /* "Armn" */ val Armn: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Armn & String = js.native
+    /* "Armn" */ val Armn: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Armn & String = js.native
     
-    /* "Beng" */ val Beng: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Beng & String = js.native
+    /* "Beng" */ val Beng: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Beng & String = js.native
     
-    /* "Cans" */ val Cans: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Cans & String = js.native
+    /* "Cans" */ val Cans: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Cans & String = js.native
     
-    /* "Cyrl" */ val Cyrl: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Cyrl & String = js.native
+    /* "Cyrl" */ val Cyrl: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Cyrl & String = js.native
     
-    /* "Deva" */ val Deva: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Deva & String = js.native
+    /* "Deva" */ val Deva: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Deva & String = js.native
     
-    /* "Ethi" */ val Ethi: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Ethi & String = js.native
+    /* "Ethi" */ val Ethi: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Ethi & String = js.native
     
-    /* "Geor" */ val Geor: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Geor & String = js.native
+    /* "Geor" */ val Geor: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Geor & String = js.native
     
-    /* "Grek" */ val Grek: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Grek & String = js.native
+    /* "Grek" */ val Grek: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Grek & String = js.native
     
-    /* "Gujr" */ val Gujr: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Gujr & String = js.native
+    /* "Gujr" */ val Gujr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Gujr & String = js.native
     
-    /* "Guru" */ val Guru: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Guru & String = js.native
+    /* "Guru" */ val Guru: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Guru & String = js.native
     
-    /* "Hani" */ val Hani: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Hani & String = js.native
+    /* "Hani" */ val Hani: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Hani & String = js.native
     
-    /* "Hebr" */ val Hebr: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Hebr & String = js.native
+    /* "Hebr" */ val Hebr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Hebr & String = js.native
     
-    /* "Java" */ val Java: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Java & String = js.native
+    /* "Java" */ val Java: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Java & String = js.native
     
-    /* "Jpan" */ val Jpan: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Jpan & String = js.native
+    /* "Jpan" */ val Jpan: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Jpan & String = js.native
     
-    /* "Kana" */ val Kana: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Kana & String = js.native
+    /* "Kana" */ val Kana: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Kana & String = js.native
     
-    /* "Khmr" */ val Khmr: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Khmr & String = js.native
+    /* "Khmr" */ val Khmr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Khmr & String = js.native
     
-    /* "Knda" */ val Knda: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Knda & String = js.native
+    /* "Knda" */ val Knda: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Knda & String = js.native
     
-    /* "Kore" */ val Kore: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Kore & String = js.native
+    /* "Kore" */ val Kore: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Kore & String = js.native
     
-    /* "Laoo" */ val Laoo: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Laoo & String = js.native
+    /* "Laoo" */ val Laoo: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Laoo & String = js.native
     
-    /* "Latn" */ val Latn: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Latn & String = js.native
+    /* "Latn" */ val Latn: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Latn & String = js.native
     
-    /* "Mlym" */ val Mlym: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Mlym & String = js.native
+    /* "Mlym" */ val Mlym: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Mlym & String = js.native
     
-    /* "Mong" */ val Mong: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Mong & String = js.native
+    /* "Mong" */ val Mong: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Mong & String = js.native
     
-    /* "Mymr" */ val Mymr: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Mymr & String = js.native
+    /* "Mymr" */ val Mymr: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Mymr & String = js.native
     
-    /* "Orya" */ val Orya: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Orya & String = js.native
+    /* "Orya" */ val Orya: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Orya & String = js.native
     
-    /* "Sinh" */ val Sinh: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Sinh & String = js.native
+    /* "Sinh" */ val Sinh: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Sinh & String = js.native
     
-    /* "Sund" */ val Sund: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Sund & String = js.native
+    /* "Sund" */ val Sund: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Sund & String = js.native
     
-    /* "Syrc" */ val Syrc: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Syrc & String = js.native
+    /* "Syrc" */ val Syrc: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Syrc & String = js.native
     
-    /* "Taml" */ val Taml: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Taml & String = js.native
+    /* "Taml" */ val Taml: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Taml & String = js.native
     
-    /* "Telu" */ val Telu: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Telu & String = js.native
+    /* "Telu" */ val Telu: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Telu & String = js.native
     
-    /* "Thaa" */ val Thaa: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Thaa & String = js.native
+    /* "Thaa" */ val Thaa: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Thaa & String = js.native
     
-    /* "Thai" */ val Thai: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Thai & String = js.native
+    /* "Thai" */ val Thai: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Thai & String = js.native
     
-    /* "Tibt" */ val Tibt: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Tibt & String = js.native
+    /* "Tibt" */ val Tibt: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Tibt & String = js.native
     
-    /* "Yiii" */ val Yiii: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Yiii & String = js.native
+    /* "Yiii" */ val Yiii: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Yiii & String = js.native
     
-    /* "Zyyy" */ val Zyyy: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Zyyy & String = js.native
+    /* "Zyyy" */ val Zyyy: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Zyyy & String = js.native
     
-    /* "Zzzz" */ val Zzzz: typings.paypalCheckoutServerSdk.ordersLibMod.Orthography.Zzzz & String = js.native
+    /* "Zzzz" */ val Zzzz: typings.paypalCheckoutServerSdk.libOrdersLibMod.Orthography.Zzzz & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.PayeePreferred")
@@ -397,11 +403,11 @@ object orders {
   object PayeePreferred extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.PayeePreferred & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.PayeePreferred & String] = js.native
     
-    /* "IMMEDIATE_PAYMENT_REQUIRED" */ val IMMEDIATE_PAYMENT_REQUIRED: typings.paypalCheckoutServerSdk.ordersLibMod.PayeePreferred.IMMEDIATE_PAYMENT_REQUIRED & String = js.native
+    /* "IMMEDIATE_PAYMENT_REQUIRED" */ val IMMEDIATE_PAYMENT_REQUIRED: typings.paypalCheckoutServerSdk.libOrdersLibMod.PayeePreferred.IMMEDIATE_PAYMENT_REQUIRED & String = js.native
     
-    /* "UNRESTRICTED" */ val UNRESTRICTED: typings.paypalCheckoutServerSdk.ordersLibMod.PayeePreferred.UNRESTRICTED & String = js.native
+    /* "UNRESTRICTED" */ val UNRESTRICTED: typings.paypalCheckoutServerSdk.libOrdersLibMod.PayeePreferred.UNRESTRICTED & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.PaymentInitiator")
@@ -409,11 +415,11 @@ object orders {
   object PaymentInitiator extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.PaymentInitiator & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentInitiator & String] = js.native
     
-    /* "CUSTOMER" */ val CUSTOMER: typings.paypalCheckoutServerSdk.ordersLibMod.PaymentInitiator.CUSTOMER & String = js.native
+    /* "CUSTOMER" */ val CUSTOMER: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentInitiator.CUSTOMER & String = js.native
     
-    /* "MERCHANT" */ val MERCHANT: typings.paypalCheckoutServerSdk.ordersLibMod.PaymentInitiator.MERCHANT & String = js.native
+    /* "MERCHANT" */ val MERCHANT: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentInitiator.MERCHANT & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.PaymentType")
@@ -421,13 +427,13 @@ object orders {
   object PaymentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.PaymentType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType & String] = js.native
     
-    /* "ONE_TIME" */ val ONE_TIME: typings.paypalCheckoutServerSdk.ordersLibMod.PaymentType.ONE_TIME & String = js.native
+    /* "ONE_TIME" */ val ONE_TIME: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType.ONE_TIME & String = js.native
     
-    /* "RECURRING" */ val RECURRING: typings.paypalCheckoutServerSdk.ordersLibMod.PaymentType.RECURRING & String = js.native
+    /* "RECURRING" */ val RECURRING: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType.RECURRING & String = js.native
     
-    /* "UNSCHEDULED" */ val UNSCHEDULED: typings.paypalCheckoutServerSdk.ordersLibMod.PaymentType.UNSCHEDULED & String = js.native
+    /* "UNSCHEDULED" */ val UNSCHEDULED: typings.paypalCheckoutServerSdk.libOrdersLibMod.PaymentType.UNSCHEDULED & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.PhoneType")
@@ -435,19 +441,19 @@ object orders {
   object PhoneType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType & String] = js.native
     
-    /* "FAX" */ val FAX: typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType.FAX & String = js.native
+    /* "FAX" */ val FAX: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.FAX & String = js.native
     
-    /* "HOME" */ val HOME: typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType.HOME & String = js.native
+    /* "HOME" */ val HOME: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.HOME & String = js.native
     
-    /* "MOBILE" */ val MOBILE: typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType.MOBILE & String = js.native
+    /* "MOBILE" */ val MOBILE: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.MOBILE & String = js.native
     
-    /* "OTHER" */ val OTHER: typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType.OTHER & String = js.native
+    /* "OTHER" */ val OTHER: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.OTHER & String = js.native
     
-    /* "PAGER" */ val PAGER: typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType.PAGER & String = js.native
+    /* "PAGER" */ val PAGER: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.PAGER & String = js.native
     
-    /* "WORK" */ val WORK: typings.paypalCheckoutServerSdk.ordersLibMod.PhoneType.WORK & String = js.native
+    /* "WORK" */ val WORK: typings.paypalCheckoutServerSdk.libOrdersLibMod.PhoneType.WORK & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.StandardEntryClassCode")
@@ -455,15 +461,15 @@ object orders {
   object StandardEntryClassCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.StandardEntryClassCode & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode & String] = js.native
     
-    /* "CCD" */ val CCD: typings.paypalCheckoutServerSdk.ordersLibMod.StandardEntryClassCode.CCD & String = js.native
+    /* "CCD" */ val CCD: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.CCD & String = js.native
     
-    /* "PPD" */ val PP: typings.paypalCheckoutServerSdk.ordersLibMod.StandardEntryClassCode.PP & String = js.native
+    /* "PPD" */ val PP: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.PP & String = js.native
     
-    /* "TEL" */ val TEL: typings.paypalCheckoutServerSdk.ordersLibMod.StandardEntryClassCode.TEL & String = js.native
+    /* "TEL" */ val TEL: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.TEL & String = js.native
     
-    /* "WEB" */ val WEB: typings.paypalCheckoutServerSdk.ordersLibMod.StandardEntryClassCode.WEB & String = js.native
+    /* "WEB" */ val WEB: typings.paypalCheckoutServerSdk.libOrdersLibMod.StandardEntryClassCode.WEB & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.Tier")
@@ -471,13 +477,13 @@ object orders {
   object Tier extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Tier & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Tier & String] = js.native
     
-    /* "BUSINESS" */ val BUSINESS: typings.paypalCheckoutServerSdk.ordersLibMod.Tier.BUSINESS & String = js.native
+    /* "BUSINESS" */ val BUSINESS: typings.paypalCheckoutServerSdk.libOrdersLibMod.Tier.BUSINESS & String = js.native
     
-    /* "PERSONAL" */ val PERSONAL: typings.paypalCheckoutServerSdk.ordersLibMod.Tier.PERSONAL & String = js.native
+    /* "PERSONAL" */ val PERSONAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.Tier.PERSONAL & String = js.native
     
-    /* "PREMIER" */ val PREMIER: typings.paypalCheckoutServerSdk.ordersLibMod.Tier.PREMIER & String = js.native
+    /* "PREMIER" */ val PREMIER: typings.paypalCheckoutServerSdk.libOrdersLibMod.Tier.PREMIER & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.Usage")
@@ -485,13 +491,13 @@ object orders {
   object Usage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.Usage & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.Usage & String] = js.native
     
-    /* "DERIVED" */ val DERIVED: typings.paypalCheckoutServerSdk.ordersLibMod.Usage.DERIVED & String = js.native
+    /* "DERIVED" */ val DERIVED: typings.paypalCheckoutServerSdk.libOrdersLibMod.Usage.DERIVED & String = js.native
     
-    /* "FIRST" */ val FIRST: typings.paypalCheckoutServerSdk.ordersLibMod.Usage.FIRST & String = js.native
+    /* "FIRST" */ val FIRST: typings.paypalCheckoutServerSdk.libOrdersLibMod.Usage.FIRST & String = js.native
     
-    /* "SUBSEQUENT" */ val SUBSEQUENT: typings.paypalCheckoutServerSdk.ordersLibMod.Usage.SUBSEQUENT & String = js.native
+    /* "SUBSEQUENT" */ val SUBSEQUENT: typings.paypalCheckoutServerSdk.libOrdersLibMod.Usage.SUBSEQUENT & String = js.native
   }
   
   @JSImport("@paypal/checkout-server-sdk", "orders.business_type")
@@ -499,54 +505,54 @@ object orders {
   object businessType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.ordersLibMod.businessType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType & String] = js.native
     
-    /* "ANY_OTHER_BUSINESS_ENTITY" */ val ANY_OTHER_BUSINESS_ENTITY: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.ANY_OTHER_BUSINESS_ENTITY & String = js.native
+    /* "ANY_OTHER_BUSINESS_ENTITY" */ val ANY_OTHER_BUSINESS_ENTITY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.ANY_OTHER_BUSINESS_ENTITY & String = js.native
     
-    /* "ASSOCIATION" */ val ASSOCIATION: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.ASSOCIATION & String = js.native
+    /* "ASSOCIATION" */ val ASSOCIATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.ASSOCIATION & String = js.native
     
-    /* "CORPORATION" */ val CORPORATION: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.CORPORATION & String = js.native
+    /* "CORPORATION" */ val CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.CORPORATION & String = js.native
     
-    /* "GENERAL_PARTNERSHIP" */ val GENERAL_PARTNERSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.GENERAL_PARTNERSHIP & String = js.native
+    /* "GENERAL_PARTNERSHIP" */ val GENERAL_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.GENERAL_PARTNERSHIP & String = js.native
     
-    /* "GOVERNMENT" */ val GOVERNMENT: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.GOVERNMENT & String = js.native
+    /* "GOVERNMENT" */ val GOVERNMENT: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.GOVERNMENT & String = js.native
     
-    /* "INDIVIDUAL" */ val INDIVIDUAL: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.INDIVIDUAL & String = js.native
+    /* "INDIVIDUAL" */ val INDIVIDUAL: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.INDIVIDUAL & String = js.native
     
-    /* "LIMITED_LIABILITY_PARTNERSHIP" */ val LIMITED_LIABILITY_PARTNERSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.LIMITED_LIABILITY_PARTNERSHIP & String = js.native
+    /* "LIMITED_LIABILITY_PARTNERSHIP" */ val LIMITED_LIABILITY_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_LIABILITY_PARTNERSHIP & String = js.native
     
-    /* "LIMITED_LIABILITY_PRIVATE_CORPORATION" */ val LIMITED_LIABILITY_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.LIMITED_LIABILITY_PRIVATE_CORPORATION & String = js.native
+    /* "LIMITED_LIABILITY_PRIVATE_CORPORATION" */ val LIMITED_LIABILITY_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_LIABILITY_PRIVATE_CORPORATION & String = js.native
     
-    /* "LIMITED_LIABILITY_PROPRIETORS" */ val LIMITED_LIABILITY_PROPRIETORS: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.LIMITED_LIABILITY_PROPRIETORS & String = js.native
+    /* "LIMITED_LIABILITY_PROPRIETORS" */ val LIMITED_LIABILITY_PROPRIETORS: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_LIABILITY_PROPRIETORS & String = js.native
     
-    /* "LIMITED_PARTNERSHIP" */ val LIMITED_PARTNERSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.LIMITED_PARTNERSHIP & String = js.native
+    /* "LIMITED_PARTNERSHIP" */ val LIMITED_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_PARTNERSHIP & String = js.native
     
-    /* "LIMITED_PARTNERSHIP_PRIVATE_CORPORATION" */ val LIMITED_PARTNERSHIP_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.LIMITED_PARTNERSHIP_PRIVATE_CORPORATION & String = js.native
+    /* "LIMITED_PARTNERSHIP_PRIVATE_CORPORATION" */ val LIMITED_PARTNERSHIP_PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.LIMITED_PARTNERSHIP_PRIVATE_CORPORATION & String = js.native
     
-    /* "NONPROFIT" */ val NONPROFIT: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.NONPROFIT & String = js.native
+    /* "NONPROFIT" */ val NONPROFIT: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.NONPROFIT & String = js.native
     
-    /* "ONLY_BUY_OR_SEND_MONEY" */ val ONLY_BUY_OR_SEND_MONEY: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.ONLY_BUY_OR_SEND_MONEY & String = js.native
+    /* "ONLY_BUY_OR_SEND_MONEY" */ val ONLY_BUY_OR_SEND_MONEY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.ONLY_BUY_OR_SEND_MONEY & String = js.native
     
-    /* "OTHER_CORPORATE_BODY" */ val OTHER_CORPORATE_BODY: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.OTHER_CORPORATE_BODY & String = js.native
+    /* "OTHER_CORPORATE_BODY" */ val OTHER_CORPORATE_BODY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.OTHER_CORPORATE_BODY & String = js.native
     
-    /* "PARTNERSHIP" */ val PARTNERSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PARTNERSHIP & String = js.native
+    /* "PARTNERSHIP" */ val PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PARTNERSHIP & String = js.native
     
-    /* "PRIVATE_CORPORATION" */ val PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PRIVATE_CORPORATION & String = js.native
+    /* "PRIVATE_CORPORATION" */ val PRIVATE_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PRIVATE_CORPORATION & String = js.native
     
-    /* "PRIVATE_PARTNERSHIP" */ val PRIVATE_PARTNERSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PRIVATE_PARTNERSHIP & String = js.native
+    /* "PRIVATE_PARTNERSHIP" */ val PRIVATE_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PRIVATE_PARTNERSHIP & String = js.native
     
-    /* "PROPRIETORSHIP" */ val PROPRIETORSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PROPRIETORSHIP & String = js.native
+    /* "PROPRIETORSHIP" */ val PROPRIETORSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PROPRIETORSHIP & String = js.native
     
-    /* "PROPRIETORSHIP_CRAFTSMAN" */ val PROPRIETORSHIP_CRAFTSMAN: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PROPRIETORSHIP_CRAFTSMAN & String = js.native
+    /* "PROPRIETORSHIP_CRAFTSMAN" */ val PROPRIETORSHIP_CRAFTSMAN: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PROPRIETORSHIP_CRAFTSMAN & String = js.native
     
-    /* "PROPRIETORY_COMPANY" */ val PROPRIETORY_COMPANY: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PROPRIETORY_COMPANY & String = js.native
+    /* "PROPRIETORY_COMPANY" */ val PROPRIETORY_COMPANY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PROPRIETORY_COMPANY & String = js.native
     
-    /* "PUBLIC_COMPANY" */ val PUBLIC_COMPANY: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PUBLIC_COMPANY & String = js.native
+    /* "PUBLIC_COMPANY" */ val PUBLIC_COMPANY: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PUBLIC_COMPANY & String = js.native
     
-    /* "PUBLIC_CORPORATION" */ val PUBLIC_CORPORATION: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PUBLIC_CORPORATION & String = js.native
+    /* "PUBLIC_CORPORATION" */ val PUBLIC_CORPORATION: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PUBLIC_CORPORATION & String = js.native
     
-    /* "PUBLIC_PARTNERSHIP" */ val PUBLIC_PARTNERSHIP: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.PUBLIC_PARTNERSHIP & String = js.native
+    /* "PUBLIC_PARTNERSHIP" */ val PUBLIC_PARTNERSHIP: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.PUBLIC_PARTNERSHIP & String = js.native
     
-    /* "REGISTERED_COOPERATIVE" */ val REGISTERED_COOPERATIVE: typings.paypalCheckoutServerSdk.ordersLibMod.businessType.REGISTERED_COOPERATIVE & String = js.native
+    /* "REGISTERED_COOPERATIVE" */ val REGISTERED_COOPERATIVE: typings.paypalCheckoutServerSdk.libOrdersLibMod.businessType.REGISTERED_COOPERATIVE & String = js.native
   }
 }

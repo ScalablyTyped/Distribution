@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CircleUpdater")
 @js.native
 open class CircleUpdater ()
-  extends typings.antvGLite.servicesMod.CircleUpdater
+  extends typings.antvGLite.distServicesMod.CircleUpdater

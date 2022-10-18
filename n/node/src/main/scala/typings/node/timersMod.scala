@@ -1,5 +1,6 @@
 package typings.node
 
+import typings.node.NodeJS.RefCounted
 import typings.node.eventsMod.Abortable
 import typings.node.timersMod.global.NodeJS.Immediate
 import typings.node.timersMod.global.NodeJS.Timeout
@@ -92,8 +93,9 @@ object timersMod {
     
     object NodeJS {
       
-      /* import warning: RemoveDifficultInheritance.summarizeChanges 
-      - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RefCounted * / any */ trait Immediate extends StObject {
+      trait Immediate
+        extends StObject
+           with RefCounted {
         
         var _onImmediate: js.Function
         
@@ -105,8 +107,8 @@ object timersMod {
       }
       object Immediate {
         
-        inline def apply(_onImmediate: js.Function, hasRef: () => Boolean): Immediate = {
-          val __obj = js.Dynamic.literal(_onImmediate = _onImmediate.asInstanceOf[js.Any], hasRef = js.Any.fromFunction0(hasRef))
+        inline def apply(_onImmediate: js.Function, hasRef: () => Boolean, ref: () => Immediate, unref: () => Immediate): Immediate = {
+          val __obj = js.Dynamic.literal(_onImmediate = _onImmediate.asInstanceOf[js.Any], hasRef = js.Any.fromFunction0(hasRef), ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
           __obj.asInstanceOf[Immediate]
         }
         
@@ -124,9 +126,10 @@ object timersMod {
            with Timer
       
       // compatibility with older typings
-      /* import warning: RemoveDifficultInheritance.summarizeChanges 
-      - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RefCounted * / any */ @js.native
-      trait Timer extends StObject {
+      @js.native
+      trait Timer
+        extends StObject
+           with RefCounted {
         
         def hasRef(): Boolean = js.native
         

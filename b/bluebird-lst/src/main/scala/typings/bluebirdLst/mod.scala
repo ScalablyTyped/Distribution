@@ -1,7 +1,6 @@
 package typings.bluebirdLst
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.bluebirdLst.anon.Cancellation
 import typings.std.ArrayLike
 import typings.std.Error
@@ -5094,7 +5093,7 @@ object mod {
     }
   }
   
-  type ResolvableProps[T] = js.Object & typings.bluebirdLst.bluebirdLstStrings.ResolvableProps & TopLevel[Any]
+  type ResolvableProps[T] = js.Object & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.PromiseLike<T[K]> | T[K]} */ js.Any)
   
   @js.native
   trait Resolver[R] extends StObject {

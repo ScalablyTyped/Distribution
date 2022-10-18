@@ -1,8 +1,8 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.listInternalMod.Key
-import typings.tsToolbelt.nonNullableMod.NonNullableDeep
-import typings.tsToolbelt.nonNullableMod.NonNullableFlat
+import typings.tsToolbelt.outListInternalMod.Key
+import typings.tsToolbelt.outListNonNullableMod.NonNullableDeep
+import typings.tsToolbelt.outListNonNullableMod.NonNullableFlat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

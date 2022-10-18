@@ -1,6 +1,6 @@
 package typings.ktxParse
 
-import typings.ktxParse.writeMod.WriteOptions
+import typings.ktxParse.distWriteMod.WriteOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -242,7 +242,7 @@ object mod {
   @JSImport("ktx-parse", "KTX2Container")
   @js.native
   open class KTX2Container ()
-    extends typings.ktxParse.containerMod.KTX2Container
+    extends typings.ktxParse.distContainerMod.KTX2Container
   
   @JSImport("ktx-parse", "VK_FORMAT_ASTC_10x10_SFLOAT_BLOCK_EXT")
   @js.native
@@ -996,8 +996,8 @@ object mod {
   @js.native
   val VK_FORMAT_X8_D24_UNORM_PACK32: /* 125 */ Double = js.native
   
-  inline def read(data: js.typedarray.Uint8Array): typings.ktxParse.containerMod.KTX2Container = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[typings.ktxParse.containerMod.KTX2Container]
+  inline def read(data: js.typedarray.Uint8Array): typings.ktxParse.distContainerMod.KTX2Container = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[typings.ktxParse.distContainerMod.KTX2Container]
   
-  inline def write(container: typings.ktxParse.containerMod.KTX2Container): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(container.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
-  inline def write(container: typings.ktxParse.containerMod.KTX2Container, options: WriteOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def write(container: typings.ktxParse.distContainerMod.KTX2Container): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(container.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def write(container: typings.ktxParse.distContainerMod.KTX2Container, options: WriteOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 }

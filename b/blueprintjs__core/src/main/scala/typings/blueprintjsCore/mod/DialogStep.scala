@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.dialogStepMod.DialogStepProps
+import typings.blueprintjsCore.libEsmComponentsDialogDialogStepMod.DialogStepProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "DialogStep")
 @js.native
 open class DialogStep protected ()
-  extends typings.blueprintjsCore.componentsMod.DialogStep {
+  extends typings.blueprintjsCore.libEsmComponentsMod.DialogStep {
   def this(props: DialogStepProps) = this()
   def this(props: DialogStepProps, context: Any) = this()
 }

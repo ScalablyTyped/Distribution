@@ -20,7 +20,7 @@ trait TypeofBy
     * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
-  def className(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  def className(name: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates elements using a CSS selector.
@@ -29,7 +29,7 @@ trait TypeofBy
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
-  def css(selector: String): typings.seleniumWebdriver.byMod.By = js.native
+  def css(selector: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates eleemnts by the ID attribute. This locator uses the CSS selector
@@ -38,7 +38,7 @@ trait TypeofBy
     * @param {string} id The ID to search for.
     * @return {!By} The new locator.
     */
-  def id(id: String): typings.seleniumWebdriver.byMod.By = js.native
+  def id(id: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates an elements by evaluating a
@@ -63,7 +63,7 @@ trait TypeofBy
     * @param {string} text The link text to search for.
     * @return {!By} The new locator.
     */
-  def linkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
+  def linkText(text: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates elements whose `name` attribute has the given value.
@@ -71,7 +71,7 @@ trait TypeofBy
     * @param {string} name The name attribute to search for.
     * @return {!By} The new locator.
     */
-  def name(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  def name(name: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates link elements whose
@@ -81,7 +81,7 @@ trait TypeofBy
     * @param {string} text The substring to check for in a link's visible text.
     * @return {!By} The new locator.
     */
-  def partialLinkText(text: String): typings.seleniumWebdriver.byMod.By = js.native
+  def partialLinkText(text: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates elements with a given tag name.
@@ -90,7 +90,7 @@ trait TypeofBy
     * @return {!By} The new locator.
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
-  def tagName(name: String): typings.seleniumWebdriver.byMod.By = js.native
+  def tagName(name: String): typings.seleniumWebdriver.libByMod.By = js.native
   
   /**
     * Locates elements matching a XPath selector. Care should be taken when
@@ -103,5 +103,5 @@ trait TypeofBy
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/xpath/
     */
-  def xpath(xpath: String): typings.seleniumWebdriver.byMod.By = js.native
+  def xpath(xpath: String): typings.seleniumWebdriver.libByMod.By = js.native
 }

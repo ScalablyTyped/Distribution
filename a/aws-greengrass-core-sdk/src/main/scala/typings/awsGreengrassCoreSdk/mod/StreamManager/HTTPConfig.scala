@@ -1,6 +1,6 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.HTTPConfigMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.HTTPConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ open class HTTPConfig protected ()
     priority: js.UndefOr[Double | Null],
     startSequenceNumber: js.UndefOr[Double | Null],
     disabled: js.UndefOr[Boolean | Null],
-    exportFormat: js.UndefOr[typings.awsGreengrassCoreSdk.dataMod.ExportFormat | Null]
+    exportFormat: js.UndefOr[typings.awsGreengrassCoreSdk.streamManagerDataMod.ExportFormat | Null]
   ) = this()
 }
 /* static members */
@@ -47,5 +47,5 @@ object HTTPConfig {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromMap(d: HTTPConfigMap): typings.awsGreengrassCoreSdk.dataMod.HTTPConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.HTTPConfig]
+  inline def fromMap(d: HTTPConfigMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.HTTPConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.HTTPConfig]
 }

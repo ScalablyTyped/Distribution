@@ -13,7 +13,7 @@ trait Heading extends StObject {
   var color: js.UndefOr[ColorType] = js.undefined
   
   // deprecated
-  var heading: js.UndefOr[`4`] = js.undefined
+  var heading: js.UndefOr[`7`] = js.undefined
 }
 object Heading {
   
@@ -32,7 +32,7 @@ object Heading {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setHeading(value: `4`): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: `7`): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
   }

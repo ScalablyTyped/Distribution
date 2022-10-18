@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Custom {
   
   /** Represents a custom sensor. */
-  @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensor")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensor")
   @js.native
-  abstract class CustomSensor ()
+  open class CustomSensor ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensor
   object CustomSensor {
@@ -39,9 +39,9 @@ object Custom {
   }
   
   /** Represents a property set of key/value pairs that contain the custom data sent from the sensor’s driver to the app. */
-  @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensorReading")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensorReading")
   @js.native
-  abstract class CustomSensorReading ()
+  open class CustomSensorReading ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensorReading {
     
@@ -55,9 +55,9 @@ object Custom {
   }
   
   /** Represents data for the reading–changed event of the custom sensor. */
-  @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensorReadingChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensorReadingChangedEventArgs")
   @js.native
-  abstract class CustomSensorReadingChangedEventArgs ()
+  open class CustomSensorReadingChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensorReadingChangedEventArgs {
     

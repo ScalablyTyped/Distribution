@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "ZoneRules")
+/* note: abstract class */ @JSImport("js-joda", "ZoneRules")
 @js.native
-abstract class ZoneRules () extends StObject {
+open class ZoneRules () extends StObject {
   
   def daylightSavings(instant: Instant): Duration = js.native
   

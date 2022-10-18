@@ -1,6 +1,5 @@
 package typings.pProgress
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Promise
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
@@ -113,25 +112,17 @@ object mod {
     inline def all[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises]
     ): PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]}
-      */ typings.pProgress.pProgressStrings.all & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]} */ js.Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]}
-      */ typings.pProgress.pProgressStrings.all & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]} */ js.Any
       ]]
     inline def all[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises],
       options: Options
     ): PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]}
-      */ typings.pProgress.pProgressStrings.all & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]} */ js.Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]}
-      */ typings.pProgress.pProgressStrings.all & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]} */ js.Any
       ]]
     inline def all[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]]): PProgress[js.Iterable[ReturnValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[js.Iterable[ReturnValue]]]
     inline def all[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]], options: Options): PProgress[js.Iterable[ReturnValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[js.Iterable[ReturnValue]]]
@@ -184,31 +175,31 @@ object mod {
     inline def allSettled[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises]
     ): PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>}
-      */ typings.pProgress.pProgressStrings.allSettled & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>} */ js.Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>}
-      */ typings.pProgress.pProgressStrings.allSettled & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>} */ js.Any
       ]]
     inline def allSettled[Promises /* <: js.Array[PromiseFactory[Any] | PromiseLike[Any]] */](
       promises: /* import warning: importer.ImportType#apply c repeated non-array type: Promises */ js.Array[Promises],
       options: Options
     ): PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>}
-      */ typings.pProgress.pProgressStrings.allSettled & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>} */ js.Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>}
-      */ typings.pProgress.pProgressStrings.allSettled & TopLevel[Any]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ Promise_ in keyof Promises ]: p-progress.p-progress.PromiseSettledResult<Promises[Promise_] extends std.PromiseLike<unknown>? p-progress.p-progress.Awaited<Promises[Promise_]> : Promises[Promise_] extends p-progress.p-progress.PromiseFactory<unknown>? p-progress.p-progress.Awaited<std.ReturnType<Promises[Promise_]>> : Promises[Promise_]>} */ js.Any
       ]]
     inline def allSettled[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]]): PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any]).asInstanceOf[PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]]]
     inline def allSettled[ReturnValue](promises: js.Iterable[PromiseFactory[ReturnValue] | PromiseLike[ReturnValue]], options: Options): PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allSettled")(promises.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PProgress[js.Iterable[PromiseSettledResult[ReturnValue]]]]
   }
   
-  type Awaited[ValueType] = ValueType
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    ValueType extends undefined ? ValueType : ValueType extends std.PromiseLike<infer ResolveValueType> ? ResolveValueType : ValueType
+    }}}
+    */
+  @js.native
+  trait Awaited[ValueType] extends StObject
   
   trait Options extends StObject {
     

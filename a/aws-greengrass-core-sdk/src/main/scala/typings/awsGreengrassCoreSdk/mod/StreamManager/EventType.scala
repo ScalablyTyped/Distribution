@@ -1,9 +1,9 @@
 package typings.awsGreengrassCoreSdk.mod.StreamManager
 
-import typings.awsGreengrassCoreSdk.dataMod.EventTypeMap
-import typings.awsGreengrassCoreSdk.dataMod.EventTypeOptions
-import typings.awsGreengrassCoreSdk.dataMod.EventTypeOptionsFlipped
-import typings.awsGreengrassCoreSdk.dataMod.EventTypeValue
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.EventTypeMap
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.EventTypeOptions
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.EventTypeOptionsFlipped
+import typings.awsGreengrassCoreSdk.streamManagerDataMod.EventTypeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +23,10 @@ object EventType {
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.EventType.S3Task")
   @js.native
-  def S3Task: typings.awsGreengrassCoreSdk.dataMod.EventType = js.native
-  inline def S3Task_=(x: typings.awsGreengrassCoreSdk.dataMod.EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S3Task")(x.asInstanceOf[js.Any])
+  def S3Task: typings.awsGreengrassCoreSdk.streamManagerDataMod.EventType = js.native
+  inline def S3Task_=(x: typings.awsGreengrassCoreSdk.streamManagerDataMod.EventType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S3Task")(x.asInstanceOf[js.Any])
   
-  inline def fromMap(d: EventTypeMap): typings.awsGreengrassCoreSdk.dataMod.EventType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.dataMod.EventType]
+  inline def fromMap(d: EventTypeMap): typings.awsGreengrassCoreSdk.streamManagerDataMod.EventType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMap")(d.asInstanceOf[js.Any]).asInstanceOf[typings.awsGreengrassCoreSdk.streamManagerDataMod.EventType]
   
   @JSImport("aws-greengrass-core-sdk", "StreamManager.EventType.options")
   @js.native

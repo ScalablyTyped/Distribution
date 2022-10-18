@@ -6,15 +6,15 @@ import typings.jupyterlabUiComponents.anon.Icon
 import typings.jupyterlabUiComponents.anon.Ignore
 import typings.jupyterlabUiComponents.anon.PartialIResolverPropsIPro
 import typings.jupyterlabUiComponents.anon.PartialIResolverPropsIRea
-import typings.jupyterlabUiComponents.blueprintMod.CommonProps
-import typings.jupyterlabUiComponents.blueprintMod.IButtonProps
-import typings.jupyterlabUiComponents.blueprintMod.IInputGroupProps
-import typings.jupyterlabUiComponents.htmlselectMod.IHTMLSelectProps
 import typings.jupyterlabUiComponents.jupyterlabUiComponentsBooleans.`false`
-import typings.jupyterlabUiComponents.labiconMod.LabIcon.IIcon
+import typings.jupyterlabUiComponents.libBlueprintMod.CommonProps
+import typings.jupyterlabUiComponents.libBlueprintMod.IButtonProps
+import typings.jupyterlabUiComponents.libBlueprintMod.IInputGroupProps
+import typings.jupyterlabUiComponents.libComponentsHtmlselectMod.IHTMLSelectProps
+import typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon.IIcon
 import typings.luminoCoreutils.mod.Token
-import typings.luminoWidgets.contextmenuMod.ContextMenu.IOptions
 import typings.luminoWidgets.mod.Menu
+import typings.luminoWidgets.typesContextmenuMod.ContextMenu.IOptions
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -45,17 +45,17 @@ object mod {
     @JSImport("@jupyterlab/ui-components", "CommandPaletteSvg.Renderer")
     @js.native
     open class Renderer ()
-      extends typings.jupyterlabUiComponents.iconMod.CommandPaletteSvg.Renderer
+      extends typings.jupyterlabUiComponents.libIconMod.CommandPaletteSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components", "CommandPaletteSvg.defaultRenderer")
     @js.native
-    val defaultRenderer: typings.jupyterlabUiComponents.commandpalettesvgMod.CommandPaletteSvg.Renderer = js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.libIconWidgetsCommandpalettesvgMod.CommandPaletteSvg.Renderer = js.native
   }
   
   @JSImport("@jupyterlab/ui-components", "ContextMenuSvg")
   @js.native
   open class ContextMenuSvg protected ()
-    extends typings.jupyterlabUiComponents.iconMod.ContextMenuSvg {
+    extends typings.jupyterlabUiComponents.libIconMod.ContextMenuSvg {
     /**
       * Construct a new context menu.
       *
@@ -76,8 +76,8 @@ object mod {
     * @param options - The options for initializing the panel.
     */
   open class DockPanelSvg ()
-    extends typings.jupyterlabUiComponents.iconMod.DockPanelSvg {
-    def this(options: typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg.IOptions) = this()
+    extends typings.jupyterlabUiComponents.libIconMod.DockPanelSvg {
+    def this(options: typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.DockPanelSvg.IOptions) = this()
   }
   object DockPanelSvg {
     
@@ -87,22 +87,22 @@ object mod {
     @JSImport("@jupyterlab/ui-components", "DockPanelSvg.Renderer")
     @js.native
     open class Renderer ()
-      extends typings.jupyterlabUiComponents.iconMod.DockPanelSvg.Renderer
+      extends typings.jupyterlabUiComponents.libIconMod.DockPanelSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components", "DockPanelSvg.defaultRenderer")
     @js.native
-    val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg.Renderer = js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.DockPanelSvg.Renderer = js.native
   }
   
   @JSImport("@jupyterlab/ui-components", "FormComponentRegistry")
   @js.native
   open class FormComponentRegistry ()
-    extends typings.jupyterlabUiComponents.formComponentRegistryMod.FormComponentRegistry
+    extends typings.jupyterlabUiComponents.libFormComponentRegistryMod.FormComponentRegistry
   
   @JSImport("@jupyterlab/ui-components", "HTMLSelect")
   @js.native
   open class HTMLSelect protected ()
-    extends typings.jupyterlabUiComponents.componentsMod.HTMLSelect {
+    extends typings.jupyterlabUiComponents.libComponentsMod.HTMLSelect {
     def this(props: IHTMLSelectProps) = this()
     /**
       * @deprecated
@@ -117,11 +117,13 @@ object mod {
   
   @JSImport("@jupyterlab/ui-components", "IFormComponentRegistry")
   @js.native
-  val IFormComponentRegistry: Token[typings.jupyterlabUiComponents.formComponentRegistryMod.IFormComponentRegistry] = js.native
+  val IFormComponentRegistry: Token[
+    typings.jupyterlabUiComponents.libFormComponentRegistryMod.IFormComponentRegistry
+  ] = js.native
   
   @JSImport("@jupyterlab/ui-components", "ILabIconManager")
   @js.native
-  val ILabIconManager: Token[typings.jupyterlabUiComponents.tokensMod.ILabIconManager] = js.native
+  val ILabIconManager: Token[typings.jupyterlabUiComponents.libTokensMod.ILabIconManager] = js.native
   
   object IRankedMenu {
     
@@ -138,7 +140,7 @@ object mod {
   @JSImport("@jupyterlab/ui-components", "LabIcon")
   @js.native
   open class LabIcon protected ()
-    extends typings.jupyterlabUiComponents.iconMod.LabIcon {
+    extends typings.jupyterlabUiComponents.libIconMod.LabIcon {
     /** *********
       * members *
       ***********/
@@ -183,7 +185,7 @@ object mod {
       *
       * @returns a LabIcon instance
       */
-    inline def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.labiconMod.LabIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hasIcon.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabUiComponents.labiconMod.LabIcon]
+    inline def resolve(hasIcon: Icon): typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hasIcon.asInstanceOf[js.Any]).asInstanceOf[typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon]
     
     /**
       * Resolve an icon name or a {name, svgstr} pair into a DOM element.
@@ -248,13 +250,13 @@ object mod {
   @JSImport("@jupyterlab/ui-components", "MenuSvg")
   @js.native
   open class MenuSvg protected ()
-    extends typings.jupyterlabUiComponents.iconMod.MenuSvg {
+    extends typings.jupyterlabUiComponents.libIconMod.MenuSvg {
     /**
       * construct a new menu. Overrides the default renderer
       *
       * @param options - The options for initializing the tab bar.
       */
-    def this(options: typings.luminoWidgets.menuMod.Menu.IOptions) = this()
+    def this(options: typings.luminoWidgets.typesMenuMod.Menu.IOptions) = this()
   }
   object MenuSvg {
     
@@ -268,11 +270,11 @@ object mod {
     @JSImport("@jupyterlab/ui-components", "MenuSvg.Renderer")
     @js.native
     open class Renderer ()
-      extends typings.jupyterlabUiComponents.iconMod.MenuSvg.Renderer
+      extends typings.jupyterlabUiComponents.libIconMod.MenuSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components", "MenuSvg.defaultRenderer")
     @js.native
-    val defaultRenderer: typings.jupyterlabUiComponents.menusvgMod.MenuSvg.Renderer = js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.libIconWidgetsMenusvgMod.MenuSvg.Renderer = js.native
     
     inline def overrideDefaultRenderer(menu: Menu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideDefaultRenderer")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
@@ -280,13 +282,13 @@ object mod {
   @JSImport("@jupyterlab/ui-components", "RankedMenu")
   @js.native
   open class RankedMenu protected ()
-    extends typings.jupyterlabUiComponents.componentsMod.RankedMenu {
+    extends typings.jupyterlabUiComponents.libComponentsMod.RankedMenu {
     /**
       * Construct a new menu.
       *
       * @param options - Options for the lumino menu.
       */
-    def this(options: typings.jupyterlabUiComponents.menuMod.IRankedMenu.IOptions) = this()
+    def this(options: typings.jupyterlabUiComponents.libComponentsMenuMod.IRankedMenu.IOptions) = this()
   }
   
   inline def Select(
@@ -296,7 +298,7 @@ object mod {
   @JSImport("@jupyterlab/ui-components", "Switch")
   @js.native
   open class Switch ()
-    extends typings.jupyterlabUiComponents.componentsMod.Switch
+    extends typings.jupyterlabUiComponents.libComponentsMod.Switch
   
   @JSImport("@jupyterlab/ui-components", "TabBarSvg")
   @js.native
@@ -306,8 +308,8 @@ object mod {
     * @param options - The options for initializing the tab bar.
     */
   open class TabBarSvg[T] ()
-    extends typings.jupyterlabUiComponents.iconMod.TabBarSvg[T] {
-    def this(options: typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.IOptions[T]) = this()
+    extends typings.jupyterlabUiComponents.libIconMod.TabBarSvg[T] {
+    def this(options: typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.IOptions[T]) = this()
   }
   object TabBarSvg {
     
@@ -317,11 +319,11 @@ object mod {
     @JSImport("@jupyterlab/ui-components", "TabBarSvg.Renderer")
     @js.native
     open class Renderer ()
-      extends typings.jupyterlabUiComponents.iconMod.TabBarSvg.Renderer
+      extends typings.jupyterlabUiComponents.libIconMod.TabBarSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components", "TabBarSvg.defaultRenderer")
     @js.native
-    val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.Renderer = js.native
+    val defaultRenderer: typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.Renderer = js.native
   }
   
   @JSImport("@jupyterlab/ui-components", "TabPanelSvg")
@@ -332,85 +334,85 @@ object mod {
     * @param options - The options for initializing the tab panel.
     */
   open class TabPanelSvg ()
-    extends typings.jupyterlabUiComponents.iconMod.TabPanelSvg {
-    def this(options: typings.luminoWidgets.tabpanelMod.TabPanel.IOptions) = this()
+    extends typings.jupyterlabUiComponents.libIconMod.TabPanelSvg {
+    def this(options: typings.luminoWidgets.typesTabpanelMod.TabPanel.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/ui-components", "addAboveIcon")
   @js.native
-  val addAboveIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val addAboveIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "addBelowIcon")
   @js.native
-  val addBelowIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val addBelowIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "addIcon")
   @js.native
-  val addIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val addIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "badIcon")
   @js.native
-  val badIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val badIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "blankIcon")
   @js.native
-  val blankIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val blankIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "bugDotIcon")
   @js.native
-  val bugDotIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val bugDotIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "bugIcon")
   @js.native
-  val bugIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val bugIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "buildIcon")
   @js.native
-  val buildIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val buildIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretDownEmptyIcon")
   @js.native
-  val caretDownEmptyIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretDownEmptyIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretDownEmptyThinIcon")
   @js.native
-  val caretDownEmptyThinIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretDownEmptyThinIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretDownIcon")
   @js.native
-  val caretDownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretDownIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretLeftIcon")
   @js.native
-  val caretLeftIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretLeftIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretRightIcon")
   @js.native
-  val caretRightIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretRightIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretUpEmptyThinIcon")
   @js.native
-  val caretUpEmptyThinIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretUpEmptyThinIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caretUpIcon")
   @js.native
-  val caretUpIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caretUpIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "caseSensitiveIcon")
   @js.native
-  val caseSensitiveIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val caseSensitiveIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "checkIcon")
   @js.native
-  val checkIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val checkIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "circleEmptyIcon")
   @js.native
-  val circleEmptyIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val circleEmptyIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "circleIcon")
   @js.native
-  val circleIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val circleIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   inline def classesDedupe_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classesDedupe")(classes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
@@ -418,288 +420,288 @@ object mod {
   
   @JSImport("@jupyterlab/ui-components", "clearIcon")
   @js.native
-  val clearIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val clearIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "closeIcon")
   @js.native
-  val closeIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val closeIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "codeIcon")
   @js.native
-  val codeIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val codeIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "consoleIcon")
   @js.native
-  val consoleIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val consoleIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "copyIcon")
   @js.native
-  val copyIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val copyIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "copyrightIcon")
   @js.native
-  val copyrightIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val copyrightIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "cutIcon")
   @js.native
-  val cutIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val cutIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "deleteIcon")
   @js.native
-  val deleteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val deleteIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "downloadIcon")
   @js.native
-  val downloadIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val downloadIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "duplicateIcon")
   @js.native
-  val duplicateIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val duplicateIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "editIcon")
   @js.native
-  val editIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val editIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "ellipsesIcon")
   @js.native
-  val ellipsesIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val ellipsesIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "extensionIcon")
   @js.native
-  val extensionIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val extensionIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "fastForwardIcon")
   @js.native
-  val fastForwardIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val fastForwardIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "fileIcon")
   @js.native
-  val fileIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val fileIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "fileUploadIcon")
   @js.native
-  val fileUploadIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val fileUploadIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "filterListIcon")
   @js.native
-  val filterListIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val filterListIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "folderFavoriteIcon")
   @js.native
-  val folderFavoriteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val folderFavoriteIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "folderIcon")
   @js.native
-  val folderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val folderIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   inline def getReactAttrs(elem: typings.std.Element): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getReactAttrs")(elem.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def getReactAttrs(elem: typings.std.Element, hasIgnore: Ignore): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getReactAttrs")(elem.asInstanceOf[js.Any], hasIgnore.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@jupyterlab/ui-components", "homeIcon")
   @js.native
-  val homeIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val homeIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "html5Icon")
   @js.native
-  val html5Icon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val html5Icon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "imageIcon")
   @js.native
-  val imageIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val imageIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "inspectorIcon")
   @js.native
-  val inspectorIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val inspectorIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "jsonIcon")
   @js.native
-  val jsonIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val jsonIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "juliaIcon")
   @js.native
-  val juliaIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val juliaIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "jupyterFaviconIcon")
   @js.native
-  val jupyterFaviconIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val jupyterFaviconIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "jupyterIcon")
   @js.native
-  val jupyterIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val jupyterIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "jupyterlabWordmarkIcon")
   @js.native
-  val jupyterlabWordmarkIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val jupyterlabWordmarkIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "kernelIcon")
   @js.native
-  val kernelIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val kernelIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "keyboardIcon")
   @js.native
-  val keyboardIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val keyboardIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "launchIcon")
   @js.native
-  val launchIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val launchIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "launcherIcon")
   @js.native
-  val launcherIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val launcherIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "lineFormIcon")
   @js.native
-  val lineFormIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val lineFormIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "linkIcon")
   @js.native
-  val linkIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val linkIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "listIcon")
   @js.native
-  val listIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val listIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "listingsInfoIcon")
   @js.native
-  val listingsInfoIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val listingsInfoIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "markdownIcon")
   @js.native
-  val markdownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val markdownIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "moveDownIcon")
   @js.native
-  val moveDownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val moveDownIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "moveUpIcon")
   @js.native
-  val moveUpIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val moveUpIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "newFolderIcon")
   @js.native
-  val newFolderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val newFolderIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "notTrustedIcon")
   @js.native
-  val notTrustedIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val notTrustedIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "notebookIcon")
   @js.native
-  val notebookIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val notebookIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "numberingIcon")
   @js.native
-  val numberingIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val numberingIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "offlineBoltIcon")
   @js.native
-  val offlineBoltIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val offlineBoltIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "paletteIcon")
   @js.native
-  val paletteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val paletteIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "pasteIcon")
   @js.native
-  val pasteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val pasteIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "pdfIcon")
   @js.native
-  val pdfIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val pdfIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "pythonIcon")
   @js.native
-  val pythonIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val pythonIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "rKernelIcon")
   @js.native
-  val rKernelIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val rKernelIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "reactIcon")
   @js.native
-  val reactIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val reactIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "redoIcon")
   @js.native
-  val redoIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val redoIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "refreshIcon")
   @js.native
-  val refreshIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val refreshIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "regexIcon")
   @js.native
-  val regexIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val regexIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "runIcon")
   @js.native
-  val runIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val runIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "runningIcon")
   @js.native
-  val runningIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val runningIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "saveIcon")
   @js.native
-  val saveIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val saveIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "searchIcon")
   @js.native
-  val searchIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val searchIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "settingsIcon")
   @js.native
-  val settingsIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val settingsIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "spreadsheetIcon")
   @js.native
-  val spreadsheetIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val spreadsheetIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "stopIcon")
   @js.native
-  val stopIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val stopIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "tabIcon")
   @js.native
-  val tabIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val tabIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "tableRowsIcon")
   @js.native
-  val tableRowsIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val tableRowsIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "tagIcon")
   @js.native
-  val tagIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val tagIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "terminalIcon")
   @js.native
-  val terminalIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val terminalIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "textEditorIcon")
   @js.native
-  val textEditorIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val textEditorIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "tocIcon")
   @js.native
-  val tocIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val tocIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "treeViewIcon")
   @js.native
-  val treeViewIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val treeViewIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "trustedIcon")
   @js.native
-  val trustedIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val trustedIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "undoIcon")
   @js.native
-  val undoIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val undoIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "vegaIcon")
   @js.native
-  val vegaIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val vegaIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components", "yamlIcon")
   @js.native
-  val yamlIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  val yamlIcon: typings.jupyterlabUiComponents.libIconLabiconMod.LabIcon = js.native
 }

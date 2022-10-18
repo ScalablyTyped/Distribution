@@ -1,7 +1,6 @@
 package typings.skatejs
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleDeclaration
 import typings.std.CustomEvent
@@ -1434,9 +1433,15 @@ object typesMod {
     def updating(props: Unit, state: S): Unit = js.native
   }
   
-  type ComponentProps[T, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: skatejs.skatejs/types.PropOptions<T[P]>}
-    */ typings.skatejs.skatejsStrings.ComponentProps & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: skatejs.skatejs/types.PropOptions<T[P]>}
+    }}}
+    */
+  @js.native
+  trait ComponentProps[T, E] extends StObject
   
   @js.native
   trait ComposedCustomEvent

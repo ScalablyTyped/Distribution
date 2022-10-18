@@ -1,6 +1,5 @@
 package typings.storageHelper
 
-import typings.std.NonNullable
 import typings.storageHelper.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,10 +23,10 @@ object global {
     @JSGlobal("StorageHelper.getItem")
     @js.native
     def getItem: FnCall = js.native
-    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String): String | NonNullable[U] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[String | NonNullable[U] | Null]
-    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T): String | NonNullable[U] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[String | NonNullable[U] | Null]
-    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T, fallback: U): String | NonNullable[U] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String | NonNullable[U] | Null]
-    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: Unit, fallback: U): String | NonNullable[U] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String | NonNullable[U] | Null]
+    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any]
+    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], parse.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any]
+    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: T, fallback: U): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any]
+    inline def getItem[T /* <: js.UndefOr[Boolean] */, U](key: String, parse: Unit, fallback: U): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? any : string | std.NonNullable<U> | null */ js.Any]
     inline def getItem_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getItem")(x.asInstanceOf[js.Any])
     
     @JSGlobal("StorageHelper.removeItem")

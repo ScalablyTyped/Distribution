@@ -1,8 +1,15 @@
 package typings.nivoSankey
 
 import typings.d3Sankey.anon.SankeyNode
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.nivoSankey.anon.Scheme
+import typings.nivoSankey.distTypesSankeyLinkTooltipMod.SankeyLinkTooltipProps
+import typings.nivoSankey.distTypesSankeyNodeTooltipMod.SankeyNodeTooltipProps
+import typings.nivoSankey.distTypesTypesMod.DefaultLink
+import typings.nivoSankey.distTypesTypesMod.DefaultNode
+import typings.nivoSankey.distTypesTypesMod.SankeyAlignType
+import typings.nivoSankey.distTypesTypesMod.SankeyLayerId
+import typings.nivoSankey.distTypesTypesMod.SankeySvgProps
 import typings.nivoSankey.nivoSankeyStrings.auto
 import typings.nivoSankey.nivoSankeyStrings.center
 import typings.nivoSankey.nivoSankeyStrings.height
@@ -10,13 +17,6 @@ import typings.nivoSankey.nivoSankeyStrings.horizontal
 import typings.nivoSankey.nivoSankeyStrings.inside
 import typings.nivoSankey.nivoSankeyStrings.multiply
 import typings.nivoSankey.nivoSankeyStrings.width
-import typings.nivoSankey.sankeyLinkTooltipMod.SankeyLinkTooltipProps
-import typings.nivoSankey.sankeyNodeTooltipMod.SankeyNodeTooltipProps
-import typings.nivoSankey.typesMod.DefaultLink
-import typings.nivoSankey.typesMod.DefaultNode
-import typings.nivoSankey.typesMod.SankeyAlignType
-import typings.nivoSankey.typesMod.SankeyLayerId
-import typings.nivoSankey.typesMod.SankeySvgProps
 import typings.react.mod.global.JSX.Element
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject

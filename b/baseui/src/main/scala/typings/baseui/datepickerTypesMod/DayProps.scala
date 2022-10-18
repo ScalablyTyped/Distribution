@@ -1,8 +1,8 @@
 package typings.baseui.datepickerTypesMod
 
 import typings.baseui.anon.DateEvent
-import typings.baseui.anon.`12`
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.anon.`10`
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +50,7 @@ trait DayProps[T] extends StObject {
   
   def onMouseOver(a: DateEvent[T]): Any
   
-  def onSelect(a: `12`[T]): Any
+  def onSelect(a: `10`[T]): Any
   
   var overrides: js.UndefOr[DatepickerOverrides] = js.undefined
   
@@ -77,7 +77,7 @@ object DayProps {
     onFocus: DateEvent[T] => Any,
     onMouseLeave: DateEvent[T] => Any,
     onMouseOver: DateEvent[T] => Any,
-    onSelect: `12`[T] => Any,
+    onSelect: `10`[T] => Any,
     peekNextMonth: Boolean,
     range: Boolean
   ): DayProps[T] = {
@@ -161,7 +161,7 @@ object DayProps {
     
     inline def setOnMouseOver(value: DateEvent[T] => Any): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
-    inline def setOnSelect(value: `12`[T] => Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: `10`[T] => Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     inline def setOverrides(value: DatepickerOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

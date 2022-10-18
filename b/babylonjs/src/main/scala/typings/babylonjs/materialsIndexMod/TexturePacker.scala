@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
-import typings.babylonjs.packerMod.ITexturePackerOptions
+import typings.babylonjs.materialsTexturesPackerPackerMod.ITexturePackerOptions
+import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "TexturePacker")
 @js.native
 open class TexturePacker protected ()
-  extends typings.babylonjs.texturesIndexMod.TexturePacker {
+  extends typings.babylonjs.materialsTexturesIndexMod.TexturePacker {
   /**
     * Initializes a texture package series from an array of meshes or a single mesh.
     * @param name The name of the package

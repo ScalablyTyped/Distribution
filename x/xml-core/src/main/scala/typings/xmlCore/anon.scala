@@ -1,7 +1,7 @@
 package typings.xmlCore
 
-import typings.xmlCore.typesMod.IConverter
-import typings.xmlCore.typesMod.IXmlSerializableConstructor
+import typings.xmlCore.distTypesTypesMod.IConverter
+import typings.xmlCore.distTypesTypesMod.IXmlSerializableConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

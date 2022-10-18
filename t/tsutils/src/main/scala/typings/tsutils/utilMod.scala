@@ -3,16 +3,16 @@ package typings.tsutils
 import typings.std.Map
 import typings.tsutils.anon.BindingElementnameIdentif
 import typings.tsutils.anon.VariableDeclarationnameId
-import typings.tsutils.controlFlowMod.ControlFlowEnd
-import typings.tsutils.controlFlowMod.SignatureEffect
-import typings.tsutils.convertAstMod.ConvertedAst
-import typings.tsutils.convertAstMod.NodeWrap
 import typings.tsutils.tsutilsStrings.CarriagereturnLinefeed
 import typings.tsutils.tsutilsStrings.Linefeed
 import typings.tsutils.tsutilsStrings.stripInternal
-import typings.tsutils.usageMod.DeclarationDomain
-import typings.tsutils.usageMod.UsageDomain
-import typings.tsutils.usageMod.VariableInfo
+import typings.tsutils.utilControlFlowMod.ControlFlowEnd
+import typings.tsutils.utilControlFlowMod.SignatureEffect
+import typings.tsutils.utilConvertAstMod.ConvertedAst
+import typings.tsutils.utilConvertAstMod.NodeWrap
+import typings.tsutils.utilUsageMod.DeclarationDomain
+import typings.tsutils.utilUsageMod.UsageDomain
+import typings.tsutils.utilUsageMod.VariableInfo
 import typings.tsutils.utilUtilMod.AccessKind
 import typings.tsutils.utilUtilMod.BooleanCompilerOptions
 import typings.tsutils.utilUtilMod.ForEachCommentCallback
@@ -121,17 +121,17 @@ object utilMod {
   object DeclarationDomain extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.tsutils.usageMod.DeclarationDomain & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.tsutils.utilUsageMod.DeclarationDomain & Double] = js.native
     
-    /* 7 */ val Any: typings.tsutils.usageMod.DeclarationDomain.Any & Double = js.native
+    /* 7 */ val Any: typings.tsutils.utilUsageMod.DeclarationDomain.Any & Double = js.native
     
-    /* 8 */ val Import: typings.tsutils.usageMod.DeclarationDomain.Import & Double = js.native
+    /* 8 */ val Import: typings.tsutils.utilUsageMod.DeclarationDomain.Import & Double = js.native
     
-    /* 1 */ val Namespace: typings.tsutils.usageMod.DeclarationDomain.Namespace & Double = js.native
+    /* 1 */ val Namespace: typings.tsutils.utilUsageMod.DeclarationDomain.Namespace & Double = js.native
     
-    /* 2 */ val Type: typings.tsutils.usageMod.DeclarationDomain.Type & Double = js.native
+    /* 2 */ val Type: typings.tsutils.utilUsageMod.DeclarationDomain.Type & Double = js.native
     
-    /* 4 */ val Value: typings.tsutils.usageMod.DeclarationDomain.Value & Double = js.native
+    /* 4 */ val Value: typings.tsutils.utilUsageMod.DeclarationDomain.Value & Double = js.native
   }
   
   @JSImport("tsutils/util", "ImportKind")
@@ -219,11 +219,11 @@ object utilMod {
   object SignatureEffect extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.tsutils.controlFlowMod.SignatureEffect & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.tsutils.utilControlFlowMod.SignatureEffect & Double] = js.native
     
-    /* 2 */ val Asserts: typings.tsutils.controlFlowMod.SignatureEffect.Asserts & Double = js.native
+    /* 2 */ val Asserts: typings.tsutils.utilControlFlowMod.SignatureEffect.Asserts & Double = js.native
     
-    /* 1 */ val Never: typings.tsutils.controlFlowMod.SignatureEffect.Never & Double = js.native
+    /* 1 */ val Never: typings.tsutils.utilControlFlowMod.SignatureEffect.Never & Double = js.native
   }
   
   @JSImport("tsutils/util", "UsageDomain")
@@ -231,19 +231,19 @@ object utilMod {
   object UsageDomain extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.tsutils.usageMod.UsageDomain & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.tsutils.utilUsageMod.UsageDomain & Double] = js.native
     
-    /* 7 */ val Any: typings.tsutils.usageMod.UsageDomain.Any & Double = js.native
+    /* 7 */ val Any: typings.tsutils.utilUsageMod.UsageDomain.Any & Double = js.native
     
-    /* 1 */ val Namespace: typings.tsutils.usageMod.UsageDomain.Namespace & Double = js.native
+    /* 1 */ val Namespace: typings.tsutils.utilUsageMod.UsageDomain.Namespace & Double = js.native
     
-    /* 2 */ val Type: typings.tsutils.usageMod.UsageDomain.Type & Double = js.native
+    /* 2 */ val Type: typings.tsutils.utilUsageMod.UsageDomain.Type & Double = js.native
     
-    /* 8 */ val TypeQuery: typings.tsutils.usageMod.UsageDomain.TypeQuery & Double = js.native
+    /* 8 */ val TypeQuery: typings.tsutils.utilUsageMod.UsageDomain.TypeQuery & Double = js.native
     
-    /* 4 */ val Value: typings.tsutils.usageMod.UsageDomain.Value & Double = js.native
+    /* 4 */ val Value: typings.tsutils.utilUsageMod.UsageDomain.Value & Double = js.native
     
-    /* 5 */ val ValueOrNamespace: typings.tsutils.usageMod.UsageDomain.ValueOrNamespace & Double = js.native
+    /* 5 */ val ValueOrNamespace: typings.tsutils.utilUsageMod.UsageDomain.ValueOrNamespace & Double = js.native
   }
   
   @JSImport("tsutils/util", "VariableDeclarationKind")

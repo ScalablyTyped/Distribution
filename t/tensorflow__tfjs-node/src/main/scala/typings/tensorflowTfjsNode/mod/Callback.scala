@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node", "Callback")
+/* note: abstract class */ @JSImport("@tensorflow/tfjs-node", "Callback")
 @js.native
-abstract class Callback ()
+open class Callback ()
   extends typings.tensorflowTfjs.mod.Callback

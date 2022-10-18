@@ -8,18 +8,18 @@ object anon {
   
   trait Message extends StObject {
     
-    var message: js.Any
+    var message: Any
   }
   object Message {
     
-    inline def apply(message: js.Any): Message = {
+    inline def apply(message: Any): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
     extension [Self <: Message](x: Self) {
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,9 +15,9 @@ object Printers {
   object Extensions {
     
     /** Represents a customized printing experience for a 3D printer. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflow")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflow")
     @js.native
-    abstract class Print3DWorkflow ()
+    open class Print3DWorkflow ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.Print3DWorkflow
     
@@ -47,9 +47,9 @@ object Printers {
     }
     
     /** Provides data about the print request to the app that initiated the request. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflowPrintRequestedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.Print3DWorkflowPrintRequestedEventArgs")
     @js.native
-    abstract class Print3DWorkflowPrintRequestedEventArgs ()
+    open class Print3DWorkflowPrintRequestedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowPrintRequestedEventArgs {
       
@@ -101,9 +101,9 @@ object Printers {
     }
     
     /** Provides the context for the printer extension object. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.PrintExtensionContext")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.PrintExtensionContext")
     @js.native
-    abstract class PrintExtensionContext ()
+    open class PrintExtensionContext ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintExtensionContext
     object PrintExtensionContext {
@@ -122,9 +122,9 @@ object Printers {
     }
     
     /** Contains properties that allow a client to access and/or manipulate print event data and print device name information. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.PrintNotificationEventDetails")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.PrintNotificationEventDetails")
     @js.native
-    abstract class PrintNotificationEventDetails ()
+    open class PrintNotificationEventDetails ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintNotificationEventDetails {
       
@@ -138,16 +138,16 @@ object Printers {
     }
     
     /** Allows a client to retrieve the print task extension context, and also to add an event handler to the print task. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfiguration")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfiguration")
     @js.native
-    abstract class PrintTaskConfiguration ()
+    open class PrintTaskConfiguration ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintTaskConfiguration
     
     /** Called when the print dialog for your app raises a SaveRequested event. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest")
     @js.native
-    abstract class PrintTaskConfigurationSaveRequest ()
+    open class PrintTaskConfigurationSaveRequest ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest {
       
@@ -175,9 +175,9 @@ object Printers {
     }
     
     /** Called by the device app to provide an update of the status of the deferral. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedDeferral")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedDeferral")
     @js.native
-    abstract class PrintTaskConfigurationSaveRequestedDeferral ()
+    open class PrintTaskConfigurationSaveRequestedDeferral ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedDeferral {
       
@@ -187,9 +187,9 @@ object Printers {
     }
     
     /** Called to notify the device app that the print task configuration must be saved. */
-    @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedEventArgs")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedEventArgs")
     @js.native
-    abstract class PrintTaskConfigurationSaveRequestedEventArgs ()
+    open class PrintTaskConfigurationSaveRequestedEventArgs ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedEventArgs {
       
@@ -200,9 +200,9 @@ object Printers {
   }
   
   /** Represents a 3D printer. */
-  @JSGlobal("Windows.Devices.Printers.Print3DDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.Print3DDevice")
   @js.native
-  abstract class Print3DDevice ()
+  open class Print3DDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Printers.Print3DDevice {
     
@@ -233,9 +233,9 @@ object Printers {
   }
   
   /** Provides APIs to access a 3D printer's capabilities and print tickets. */
-  @JSGlobal("Windows.Devices.Printers.PrintSchema")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Printers.PrintSchema")
   @js.native
-  abstract class PrintSchema ()
+  open class PrintSchema ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Printers.PrintSchema {
     

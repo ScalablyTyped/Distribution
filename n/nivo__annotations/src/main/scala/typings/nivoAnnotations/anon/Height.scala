@@ -1,8 +1,8 @@
 package typings.nivoAnnotations.anon
 
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationInstructions
+import typings.nivoAnnotations.distTypesTypesMod.RelativeOrAbsolutePosition
 import typings.nivoAnnotations.nivoAnnotationsStrings.rect
-import typings.nivoAnnotations.typesMod.AnnotationInstructions
-import typings.nivoAnnotations.typesMod.RelativeOrAbsolutePosition
 import typings.react.mod.global.JSX.Element
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ trait Height[Datum] extends StObject {
   
   var height: Double
   
-  var note: typings.nivoAnnotations.typesMod.Note[Datum]
+  var note: typings.nivoAnnotations.distTypesTypesMod.Note[Datum]
   
   var noteTextOffset: Double
   
@@ -46,7 +46,7 @@ object Height {
     computed: AnnotationInstructions,
     datum: Datum,
     height: Double,
-    note: typings.nivoAnnotations.typesMod.Note[Datum],
+    note: typings.nivoAnnotations.distTypesTypesMod.Note[Datum],
     noteTextOffset: Double,
     noteWidth: Double,
     noteX: RelativeOrAbsolutePosition,
@@ -71,9 +71,9 @@ object Height {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setNote(value: typings.nivoAnnotations.typesMod.Note[Datum]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: typings.nivoAnnotations.distTypesTypesMod.Note[Datum]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    inline def setNoteFunction1(value: /* props */ DatumX[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
+    inline def setNoteFunction1(value: /* props */ XY[Datum] => Element): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
     
     inline def setNoteFunction2(value: (/* ctx */ CanvasRenderingContext2D, /* props */ Theme[Datum]) => Unit): Self = StObject.set(x, "note", js.Any.fromFunction2(value))
     

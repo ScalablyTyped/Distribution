@@ -1,6 +1,6 @@
 package typings.carbonElements.mod
 
-import typings.carbonElements.anon.LgMax
+import typings.carbonElements.anon.Lg14
 import typings.carbonElements.carbonElementsDoubles.`1.334`
 import typings.carbonElements.carbonElementsInts.`0`
 import typings.carbonElements.carbonElementsInts.`300`
@@ -17,8 +17,8 @@ object expressiveParagraph01 {
   
   @JSImport("@carbon/elements", "expressiveParagraph01.breakpoints")
   @js.native
-  def breakpoints: LgMax = js.native
-  inline def breakpoints_=(x: LgMax): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
+  def breakpoints: Lg14 = js.native
+  inline def breakpoints_=(x: Lg14): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakpoints")(x.asInstanceOf[js.Any])
   
   @JSImport("@carbon/elements", "expressiveParagraph01.fontSize")
   @js.native

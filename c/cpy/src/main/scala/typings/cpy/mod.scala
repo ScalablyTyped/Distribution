@@ -2,7 +2,7 @@ package typings.cpy
 
 import typings.cpy.cpyStrings.progress
 import typings.fastGlob.anon.PartialFileSystemAdapter
-import typings.fastGlob.typesMod.Pattern
+import typings.fastGlob.outTypesMod.Pattern
 import typings.globby.mod.ExpandDirectoriesOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

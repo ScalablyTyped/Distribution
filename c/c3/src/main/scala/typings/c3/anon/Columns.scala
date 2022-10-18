@@ -13,7 +13,7 @@ trait Columns extends StObject {
   var columns: js.UndefOr[js.Array[Array[String | Primitive]]] = js.undefined
   
   /** Will be called when the flow ends. */
-  var done: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var done: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   
   /** If given, the duration of the transition will be specified value. If not given, `transition.duration` will be used as default. */
   var duration: js.UndefOr[Double] = js.undefined
@@ -48,7 +48,7 @@ object Columns {
     
     inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+    inline def setDone(value: () => scala.Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
     inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [detail=0]
   */
 open class IcosahedronGeometry ()
-  extends typings.three.threeMod.IcosahedronGeometry {
+  extends typings.three.srcThreeMod.IcosahedronGeometry {
   def this(radius: Double) = this()
   def this(radius: Double, detail: Double) = this()
   def this(radius: Unit, detail: Double) = this()
@@ -23,5 +23,5 @@ object IcosahedronGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.icosahedronGeometryMod.IcosahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.icosahedronGeometryMod.IcosahedronGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry]
 }

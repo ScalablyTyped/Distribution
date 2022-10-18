@@ -9,7 +9,7 @@ object fpClampIndexMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/clamp/index", JSImport.Default)
+    @JSImport("date-fns/fp/clamp/index", JSImport.Default)
     @js.native
     val ^ : CurriedFn2[Interval, js.Date | Double, js.Date] = js.native
     

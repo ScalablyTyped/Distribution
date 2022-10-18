@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Retry-After HTTP header on an HTTP response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpDateOrDeltaHeaderValue")
+/* note: abstract class */ @JSGlobal("Windows.Web.Http.Headers.HttpDateOrDeltaHeaderValue")
 @js.native
-abstract class HttpDateOrDeltaHeaderValue ()
+open class HttpDateOrDeltaHeaderValue ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpDateOrDeltaHeaderValue {
   

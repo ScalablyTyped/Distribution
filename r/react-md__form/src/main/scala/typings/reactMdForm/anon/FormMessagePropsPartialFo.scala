@@ -36,7 +36,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactMdForm.formThemeProviderMod.FormTheme
 import typings.reactMdForm.reactMdFormStrings.`additions removals`
 import typings.reactMdForm.reactMdFormStrings.`additions text`
 import typings.reactMdForm.reactMdFormStrings.`inline`
@@ -88,6 +87,7 @@ import typings.reactMdForm.reactMdFormStrings.tree
 import typings.reactMdForm.reactMdFormStrings.url
 import typings.reactMdForm.reactMdFormStrings.vertical
 import typings.reactMdForm.reactMdFormStrings.yes
+import typings.reactMdForm.typesFormThemeProviderMod.FormTheme
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement

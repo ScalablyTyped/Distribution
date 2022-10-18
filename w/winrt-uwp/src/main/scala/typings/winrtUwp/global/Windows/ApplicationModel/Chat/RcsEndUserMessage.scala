@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Rich Communication Services (RCS) end user message. */
-@JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessage")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Chat.RcsEndUserMessage")
 @js.native
-abstract class RcsEndUserMessage ()
+open class RcsEndUserMessage ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.RcsEndUserMessage {
   

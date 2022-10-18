@@ -1,43 +1,43 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.newest
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.oldest
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.stargazers
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.watchers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `533` extends StObject {
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[Double] = js.undefined
+  var `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[Double] = js.undefined
+  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
   
-  /** The sort order. `stargazers` will sort by star count. */
-  var sort: js.UndefOr[newest | oldest | stargazers | watchers] = js.undefined
+  var `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
 }
 object `533` {
   
-  inline def apply(): `533` = {
+  inline def apply(
+    `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any,
+    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
+    `410`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+  ): `533` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("301")(`301`.asInstanceOf[js.Any])
+    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
+    __obj.updateDynamic("410")(`410`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`533`]
   }
   
   extension [Self <: `533`](x: Self) {
     
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def set301(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
+    ): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def set404(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
-    
-    inline def setSort(value: newest | oldest | stargazers | watchers): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
-    
-    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def set410(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['gone'] */ js.Any
+    ): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
   }
 }

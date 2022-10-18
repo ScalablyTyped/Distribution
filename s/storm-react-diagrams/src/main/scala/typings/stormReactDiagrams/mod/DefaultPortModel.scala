@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "DefaultPortModel")
 @js.native
 open class DefaultPortModel protected ()
-  extends typings.stormReactDiagrams.defaultPortModelMod.DefaultPortModel {
+  extends typings.stormReactDiagrams.distSrcDefaultsModelsDefaultPortModelMod.DefaultPortModel {
   def this(isInput: Boolean, name: String) = this()
   def this(isInput: Boolean, name: String, label: String) = this()
   def this(isInput: Boolean, name: String, label: String, id: String) = this()

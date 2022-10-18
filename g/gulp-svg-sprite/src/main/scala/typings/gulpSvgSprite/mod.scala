@@ -1,6 +1,7 @@
 package typings.gulpSvgSprite
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.svgSprite.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,10 +13,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : SvgSprite = js.native
   
-  type SvgSprite = js.Function1[
-    /* options */ js.UndefOr[Config], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]
+  type SvgSprite = js.Function1[/* options */ js.UndefOr[Config], ReadWriteStream]
   
   type _To = SvgSprite
   

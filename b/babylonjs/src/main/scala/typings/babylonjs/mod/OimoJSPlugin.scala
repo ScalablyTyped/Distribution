@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "OimoJSPlugin")
 @js.native
 open class OimoJSPlugin ()
-  extends typings.babylonjs.legacyMod.OimoJSPlugin {
+  extends typings.babylonjs.legacyLegacyMod.OimoJSPlugin {
   def this(_useDeltaForWorldStep: Boolean) = this()
   def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
   def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()

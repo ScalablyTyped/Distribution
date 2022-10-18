@@ -206,10 +206,6 @@ object expoVectorIconsStrings {
   inline def Fontisto: Fontisto = "Fontisto".asInstanceOf[Fontisto]
   
   @js.native
-  sealed trait GlyphMap extends StObject
-  inline def GlyphMap: GlyphMap = "GlyphMap".asInstanceOf[GlyphMap]
-  
-  @js.native
   sealed trait HTML extends StObject
   inline def HTML: HTML = "HTML".asInstanceOf[HTML]
   
@@ -17268,6 +17264,7 @@ object expoVectorIconsStrings {
   
   @js.native
   sealed trait `fruit-cherries-off` extends StObject
+  inline def `fruit-cherries-off`: `fruit-cherries-off` = "fruit-cherries-off".asInstanceOf[`fruit-cherries-off`]
   
   @js.native
   sealed trait `fruit-citrus` extends StObject

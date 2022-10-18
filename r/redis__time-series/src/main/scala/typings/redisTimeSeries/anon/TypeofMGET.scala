@@ -1,9 +1,9 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisTimeSeries.commandsMod.Filter
-import typings.redisTimeSeries.mgetMod.MGetRawReply
-import typings.redisTimeSeries.mgetMod.MGetReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisTimeSeries.distCommandsMgetMod.MGetRawReply
+import typings.redisTimeSeries.distCommandsMgetMod.MGetReply
+import typings.redisTimeSeries.distCommandsMod.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -69,7 +69,13 @@ trait PropertyOpts[T /* <: Ractive[T] */] extends StObject {
   	 * A lifecycle event that is called when an instance is constructed but before any initialization option has been processed.
   	 * Accepts the instance's initialization options as argument.
   	 */
-  var onconstruct: js.UndefOr[js.ThisFunction1[/* this */ T, /* opts */ InitOpts[Ractive[Ractive[Any]]], Unit]] = js.undefined
+  var onconstruct: js.UndefOr[
+    js.ThisFunction1[
+      /* this */ T, 
+      /* opts */ InitOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]], 
+      Unit
+    ]
+  ] = js.undefined
   
   /**
   	 * A lifecycle event that is called whenever `ractive.detach()` is called.
@@ -206,7 +212,13 @@ object PropertyOpts {
     
     inline def setOnconfigUndefined: Self = StObject.set(x, "onconfig", js.undefined)
     
-    inline def setOnconstruct(value: js.ThisFunction1[/* this */ T, /* opts */ InitOpts[Ractive[Ractive[Any]]], Unit]): Self = StObject.set(x, "onconstruct", value.asInstanceOf[js.Any])
+    inline def setOnconstruct(
+      value: js.ThisFunction1[
+          /* this */ T, 
+          /* opts */ InitOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]], 
+          Unit
+        ]
+    ): Self = StObject.set(x, "onconstruct", value.asInstanceOf[js.Any])
     
     inline def setOnconstructUndefined: Self = StObject.set(x, "onconstruct", js.undefined)
     

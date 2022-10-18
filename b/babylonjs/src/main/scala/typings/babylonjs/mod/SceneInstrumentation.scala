@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SceneInstrumentation")
 @js.native
 open class SceneInstrumentation protected ()
-  extends typings.babylonjs.legacyMod.SceneInstrumentation {
+  extends typings.babylonjs.legacyLegacyMod.SceneInstrumentation {
   /**
     * Instantiates a new scene instrumentation.
     * This class can be used to get instrumentation data from a Babylon engine

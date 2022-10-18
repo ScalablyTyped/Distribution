@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseStatus
   extends StObject
-     with BaseResponse
-     with Status[Any] {
+     with BaseResponse {
   
   var name: String
   

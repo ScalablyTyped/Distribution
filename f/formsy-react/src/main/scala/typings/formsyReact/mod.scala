@@ -2,8 +2,12 @@ package typings.formsyReact
 
 import typings.formsyReact.anon.Disabled
 import typings.formsyReact.anon.PartialFormsyProps
-import typings.formsyReact.formsyMod.Formsy
-import typings.formsyReact.formsyMod.FormsyProps
+import typings.formsyReact.distFormsyMod.Formsy
+import typings.formsyReact.distFormsyMod.FormsyProps
+import typings.formsyReact.distInterfacesMod.ValidationFunction
+import typings.formsyReact.distValidationRulesMod.Validations
+import typings.formsyReact.distWithFormsyMod.PassDownProps
+import typings.formsyReact.distWithFormsyMod.WrapperProps
 import typings.formsyReact.formsyReactStrings.errorMessage
 import typings.formsyReact.formsyReactStrings.errorMessages
 import typings.formsyReact.formsyReactStrings.hasValue
@@ -19,10 +23,6 @@ import typings.formsyReact.formsyReactStrings.setValidations
 import typings.formsyReact.formsyReactStrings.setValue
 import typings.formsyReact.formsyReactStrings.showError
 import typings.formsyReact.formsyReactStrings.showRequired
-import typings.formsyReact.interfacesMod.ValidationFunction
-import typings.formsyReact.validationRulesMod.Validations
-import typings.formsyReact.withFormsyMod.PassDownProps
-import typings.formsyReact.withFormsyMod.WrapperProps
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.react.mod.ComponentType

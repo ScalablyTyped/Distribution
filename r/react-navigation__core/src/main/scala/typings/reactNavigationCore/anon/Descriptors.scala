@@ -1,15 +1,15 @@
 package typings.reactNavigationCore.anon
 
 import typings.react.mod.global.JSX.Element
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.Descriptor
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventConsumer
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventEmitter
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventMapCore
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.PrivateValueStore
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.RouteProp
 import typings.reactNavigationCore.reactNavigationCoreStrings.getParent
-import typings.reactNavigationCore.typesMod.Descriptor
-import typings.reactNavigationCore.typesMod.EventConsumer
-import typings.reactNavigationCore.typesMod.EventEmitter
-import typings.reactNavigationCore.typesMod.EventMapCore
-import typings.reactNavigationCore.typesMod.PrivateValueStore
-import typings.reactNavigationCore.typesMod.RouteProp
-import typings.reactNavigationRouters.typesMod.NavigationState
-import typings.reactNavigationRouters.typesMod.ParamListBase
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
 import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject

@@ -2,32 +2,50 @@ package typings.cypress.anon
 
 import typings.cypress.cypressStrings.linear
 import typings.cypress.cypressStrings.swing
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.Cypress.ScrollToOptions> */
-trait PartialScrollToOptions extends js.Object {
+trait PartialScrollToOptions extends StObject {
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easing: js.UndefOr[swing | linear] = js.undefined
+  
+  var ensureScrollable: js.UndefOr[Boolean] = js.undefined
+  
   var log: js.UndefOr[Boolean] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object PartialScrollToOptions {
-  @scala.inline
-  def apply(
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: swing | linear = null,
-    log: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): PartialScrollToOptions = {
+  
+  inline def apply(): PartialScrollToOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialScrollToOptions]
   }
+  
+  extension [Self <: PartialScrollToOptions](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(value: swing | linear): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setEnsureScrollable(value: Boolean): Self = StObject.set(x, "ensureScrollable", value.asInstanceOf[js.Any])
+    
+    inline def setEnsureScrollableUndefined: Self = StObject.set(x, "ensureScrollable", js.undefined)
+    
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

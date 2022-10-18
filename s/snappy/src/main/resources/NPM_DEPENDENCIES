@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "snappy" : "7.1.2"
+      "snappy" : "7.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "snappy" : "7.1.2"
+      "snappy" : "7.2.0"
     }
   ],
   "compile-devDependencies" : [

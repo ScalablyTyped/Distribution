@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "MemoryStorageProvider")
 @js.native
 open class MemoryStorageProvider ()
-  extends typings.matrixBotSdk.memoryStorageProviderMod.MemoryStorageProvider
+  extends typings.matrixBotSdk.libStorageMemoryStorageProviderMod.MemoryStorageProvider

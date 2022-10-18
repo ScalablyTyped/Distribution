@@ -43,11 +43,11 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.popoverMod.DeprecatedPlacement
-import typings.antdMobile.popoverMod.Placement
-import typings.antdMobile.popoverPopoverMod.PopoverRef
-import typings.antdMobile.renderToContainerMod.GetContainer
-import typings.antdMobile.withStopPropagationMod.PropagationEvent
+import typings.antdMobile.esComponentsPopoverMod.DeprecatedPlacement
+import typings.antdMobile.esComponentsPopoverMod.Placement
+import typings.antdMobile.esComponentsPopoverPopoverMod.PopoverRef
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
+import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactElement
@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<antd-mobile.antd-mobile/es/components/popover/popover.PopoverProps, 'content'> & {  actions :std.Array<antd-mobile.antd-mobile/es/components/popover/popover-menu.Action>,   onAction :(item : antd-mobile.antd-mobile/es/components/popover/popover-menu.Action): void | undefined} & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef> */
 trait OmitPopoverPropscontentac extends StObject {
   
-  var actions: js.Array[typings.antdMobile.popoverMenuMod.Action]
+  var actions: js.Array[typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action]
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
@@ -174,7 +174,9 @@ trait OmitPopoverPropscontentac extends StObject {
   
   var mode: js.UndefOr[light | dark] = js.undefined
   
-  var onAction: js.UndefOr[js.Function1[/* item */ typings.antdMobile.popoverMenuMod.Action, Unit]] = js.undefined
+  var onAction: js.UndefOr[
+    js.Function1[/* item */ typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action, Unit]
+  ] = js.undefined
   
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
   
@@ -194,16 +196,19 @@ trait OmitPopoverPropscontentac extends StObject {
 }
 object OmitPopoverPropscontentac {
   
-  inline def apply(actions: js.Array[typings.antdMobile.popoverMenuMod.Action], children: ReactElement): OmitPopoverPropscontentac = {
+  inline def apply(
+    actions: js.Array[typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action],
+    children: ReactElement
+  ): OmitPopoverPropscontentac = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitPopoverPropscontentac]
   }
   
   extension [Self <: OmitPopoverPropscontentac](x: Self) {
     
-    inline def setActions(value: js.Array[typings.antdMobile.popoverMenuMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: typings.antdMobile.popoverMenuMod.Action*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     
@@ -431,7 +436,7 @@ object OmitPopoverPropscontentac {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setOnAction(value: /* item */ typings.antdMobile.popoverMenuMod.Action => Unit): Self = StObject.set(x, "onAction", js.Any.fromFunction1(value))
+    inline def setOnAction(value: /* item */ typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action => Unit): Self = StObject.set(x, "onAction", js.Any.fromFunction1(value))
     
     inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)
     

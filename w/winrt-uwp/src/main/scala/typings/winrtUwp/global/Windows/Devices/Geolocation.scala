@@ -40,9 +40,9 @@ object Geolocation {
   }
   
   /** Unsupported API. */
-  @JSGlobal("Windows.Devices.Geolocation.CivicAddress")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.CivicAddress")
   @js.native
-  abstract class CivicAddress ()
+  open class CivicAddress ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.CivicAddress {
     
@@ -227,9 +227,9 @@ object Geolocation {
   }
   
   /** Contains the information for identifying a geographic location. */
-  @JSGlobal("Windows.Devices.Geolocation.Geocoordinate")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.Geocoordinate")
   @js.native
-  abstract class Geocoordinate ()
+  open class Geocoordinate ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.Geocoordinate {
     
@@ -283,9 +283,9 @@ object Geolocation {
   }
   
   /** Provides additional information about a Geocoordinate . This information is only applicable to position estimates obtained using satellite signals. */
-  @JSGlobal("Windows.Devices.Geolocation.GeocoordinateSatelliteData")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.GeocoordinateSatelliteData")
   @js.native
-  abstract class GeocoordinateSatelliteData ()
+  open class GeocoordinateSatelliteData ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.GeocoordinateSatelliteData {
     
@@ -390,9 +390,9 @@ object Geolocation {
     }
     
     /** Contains the information about the monitored Geofence objects. */
-    @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceMonitor")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceMonitor")
     @js.native
-    abstract class GeofenceMonitor ()
+    open class GeofenceMonitor ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceMonitor
     object GeofenceMonitor {
@@ -465,9 +465,9 @@ object Geolocation {
     }
     
     /** Contains the information about the state changes for a Geofence . */
-    @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport")
     @js.native
-    abstract class GeofenceStateChangeReport ()
+    open class GeofenceStateChangeReport ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport {
       
@@ -653,9 +653,9 @@ object Geolocation {
   }
   
   /** Represents a location that may contain latitude and longitude data or venue data. */
-  @JSGlobal("Windows.Devices.Geolocation.Geoposition")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.Geoposition")
   @js.native
-  abstract class Geoposition ()
+  open class Geoposition ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.Geoposition {
     
@@ -703,9 +703,9 @@ object Geolocation {
   }
   
   /** Provides data for the PositionChanged event. */
-  @JSGlobal("Windows.Devices.Geolocation.PositionChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.PositionChangedEventArgs")
   @js.native
-  abstract class PositionChangedEventArgs ()
+  open class PositionChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.PositionChangedEventArgs {
     
@@ -755,9 +755,9 @@ object Geolocation {
   }
   
   /** Provides information for the StatusChanged event. */
-  @JSGlobal("Windows.Devices.Geolocation.StatusChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.StatusChangedEventArgs")
   @js.native
-  abstract class StatusChangedEventArgs ()
+  open class StatusChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.StatusChangedEventArgs {
     
@@ -767,9 +767,9 @@ object Geolocation {
   }
   
   /** Represents the venue associated with a geographic location. */
-  @JSGlobal("Windows.Devices.Geolocation.VenueData")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Geolocation.VenueData")
   @js.native
-  abstract class VenueData ()
+  open class VenueData ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Geolocation.VenueData {
     

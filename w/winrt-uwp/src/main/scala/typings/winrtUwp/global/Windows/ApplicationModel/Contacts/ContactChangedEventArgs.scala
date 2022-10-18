@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ContactChanged event. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactChangedEventArgs")
 @js.native
-abstract class ContactChangedEventArgs ()
+open class ContactChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangedEventArgs {
   

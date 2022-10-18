@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "ReferenceType")
 @js.native
 /* private */ open class ReferenceType ()
-  extends typings.typedoc.modelsMod.ReferenceType
+  extends typings.typedoc.distLibModelsMod.ReferenceType
 /* static members */
 object ReferenceType {
   
@@ -17,15 +17,19 @@ object ReferenceType {
   val ^ : js.Any = js.native
   
   /** @internal this is used for type parameters, which don't actually point to something */
-  inline def createBrokenReference(name: String, project: typings.typedoc.projectMod.ProjectReflection): typings.typedoc.modelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createBrokenReference")(name.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.modelsTypesMod.ReferenceType]
+  inline def createBrokenReference(name: String, project: typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection): typings.typedoc.distLibModelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createBrokenReference")(name.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.distLibModelsTypesMod.ReferenceType]
   
-  inline def createResolvedReference(name: String, target: Double, project: typings.typedoc.projectMod.ProjectReflection): typings.typedoc.modelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolvedReference")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.modelsTypesMod.ReferenceType]
   inline def createResolvedReference(
     name: String,
-    target: typings.typedoc.abstractMod.Reflection,
-    project: typings.typedoc.projectMod.ProjectReflection
-  ): typings.typedoc.modelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolvedReference")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.modelsTypesMod.ReferenceType]
+    target: Double,
+    project: typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
+  ): typings.typedoc.distLibModelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolvedReference")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.distLibModelsTypesMod.ReferenceType]
+  inline def createResolvedReference(
+    name: String,
+    target: typings.typedoc.distLibModelsReflectionsAbstractMod.Reflection,
+    project: typings.typedoc.distLibModelsReflectionsProjectMod.ProjectReflection
+  ): typings.typedoc.distLibModelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolvedReference")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.distLibModelsTypesMod.ReferenceType]
   
-  inline def createSymbolReference(symbol: Symbol, context: typings.typedoc.converterMod.Context): typings.typedoc.modelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymbolReference")(symbol.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.modelsTypesMod.ReferenceType]
-  inline def createSymbolReference(symbol: Symbol, context: typings.typedoc.converterMod.Context, name: String): typings.typedoc.modelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymbolReference")(symbol.asInstanceOf[js.Any], context.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.modelsTypesMod.ReferenceType]
+  inline def createSymbolReference(symbol: Symbol, context: typings.typedoc.distLibConverterMod.Context): typings.typedoc.distLibModelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymbolReference")(symbol.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.distLibModelsTypesMod.ReferenceType]
+  inline def createSymbolReference(symbol: Symbol, context: typings.typedoc.distLibConverterMod.Context, name: String): typings.typedoc.distLibModelsTypesMod.ReferenceType = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymbolReference")(symbol.asInstanceOf[js.Any], context.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.distLibModelsTypesMod.ReferenceType]
 }

@@ -1,7 +1,7 @@
 package typings.babylonjs.materialsIndexMod
 
+import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.sceneMod.Scene
-import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "HDRCubeTexture")
 @js.native
 open class HDRCubeTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.HDRCubeTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.HDRCubeTexture {
   /**
     * Instantiates an HDRTexture from the following parameters.
     *
@@ -54,7 +54,7 @@ object HDRCubeTexture {
     * @param rootUrl Define the root url in case we need to load relative dependencies
     * @returns the newly created texture after parsing
     */
-  inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.hdrCubeTextureMod.HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.hdrCubeTextureMod.HDRCubeTexture]]
+  inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.materialsTexturesHdrCubeTextureMod.HDRCubeTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialsTexturesHdrCubeTextureMod.HDRCubeTexture]]
   
   @JSImport("babylonjs/Materials/index", "HDRCubeTexture._FacesMapping")
   @js.native

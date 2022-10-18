@@ -96,7 +96,9 @@ object mod {
     
     def stringify(): String = js.native
     
-    def sum(property: /* keyof T */ String): Double = js.native
+    def sum(
+      property: /* import warning: importer.ImportType#apply Failed type conversion: T extends object ? keyof T : never */ js.Any
+    ): Double = js.native
     
     def take(count: Double): Collection[T] = js.native
     

@@ -1,8 +1,8 @@
 package typings.flatpickr
 
-import typings.flatpickr.formattingMod.token
-import typings.flatpickr.localeMod.key
-import typings.flatpickr.optionsMod.HookKey
+import typings.flatpickr.distTypesLocaleMod.key
+import typings.flatpickr.distTypesOptionsMod.HookKey
+import typings.flatpickr.distUtilsFormattingMod.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientChromeuxreport
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientChromeuxreport.anon.Accesstoken
 import typings.maximMazurokGapiClientChromeuxreport.anon.Alt
@@ -245,9 +244,7 @@ object gapi {
           * "first_input_delay", "largest_contentful_paint", "cumulative_layout_shift"]
           */
         var metrics: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
-          */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric} */ js.Any
               ] = js.undefined
       }
       object Record {
@@ -264,9 +261,7 @@ object gapi {
           inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
           
           inline def setMetrics(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric}
-            */ typings.maximMazurokGapiClientChromeuxreport.maximMazurokGapiClientChromeuxreportStrings.Record & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.chromeuxreport.gapi.client.chromeuxreport.Metric} */ js.Any
           ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
           
           inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)

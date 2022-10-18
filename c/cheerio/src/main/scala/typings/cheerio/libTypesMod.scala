@@ -1,6 +1,6 @@
 package typings.cheerio
 
-import typings.cheerio.cheerioMod.Cheerio
+import typings.cheerio.libCheerioMod.Cheerio
 import typings.domhandler.libNodeMod.AnyNode
 import typings.std.Uppercase
 import org.scalablytyped.runtime.StObject

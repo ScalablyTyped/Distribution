@@ -19,7 +19,7 @@ object mod {
     */
   @JSImport("eslint-visitor-keys", "KEYS")
   @js.native
-  val KEYS: typings.eslintVisitorKeys.visitorKeysMod.VisitorKeys = js.native
+  val KEYS: typings.eslintVisitorKeys.distVisitorKeysMod.VisitorKeys = js.native
   
   inline def getKeys(node: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeys")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   

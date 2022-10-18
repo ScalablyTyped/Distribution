@@ -1,8 +1,8 @@
 package typings.semanticUiReact.mod
 
 import typings.react.mod.FC
-import typings.semanticUiReact.iconGroupMod.IconGroupProps
-import typings.semanticUiReact.iconMod.default
+import typings.semanticUiReact.distCommonjsElementsIconIconGroupMod.IconGroupProps
+import typings.semanticUiReact.distCommonjsElementsIconMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

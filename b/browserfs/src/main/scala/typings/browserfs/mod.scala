@@ -16,21 +16,21 @@ import typings.browserfs.anon.TypeofWorkerFS
 import typings.browserfs.anon.TypeofXmlHttpRequest
 import typings.browserfs.anon.TypeofZipFS
 import typings.browserfs.anon.Typeofbuffer
-import typings.browserfs.apiErrorMod.ErrorCode
-import typings.browserfs.browserfsMod.FileSystemConfiguration
 import typings.browserfs.browserfsStrings.bfs_utils
 import typings.browserfs.browserfsStrings.buffer
 import typings.browserfs.browserfsStrings.fs
 import typings.browserfs.browserfsStrings.path
 import typings.browserfs.browserfsStrings.process
-import typings.browserfs.fSMod.FSModule
-import typings.browserfs.fSMod.default
-import typings.browserfs.fileSystemMod.BFSCallback
-import typings.browserfs.fileSystemMod.BFSOneArgCallback
-import typings.browserfs.fileSystemMod.FileSystem
-import typings.browserfs.fileSystemMod.FileSystemConstructor
-import typings.browserfs.indexedDBMod.IndexedDBFileSystem
-import typings.browserfs.zipFSMod.ZipTOC
+import typings.browserfs.distNodeBackendIndexedDBMod.IndexedDBFileSystem
+import typings.browserfs.distNodeBackendZipFSMod.ZipTOC
+import typings.browserfs.distNodeCoreApiErrorMod.ErrorCode
+import typings.browserfs.distNodeCoreBrowserfsMod.FileSystemConfiguration
+import typings.browserfs.distNodeCoreFSMod.FSModule
+import typings.browserfs.distNodeCoreFSMod.default
+import typings.browserfs.distNodeCoreFileSystemMod.BFSCallback
+import typings.browserfs.distNodeCoreFileSystemMod.BFSOneArgCallback
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystem
+import typings.browserfs.distNodeCoreFileSystemMod.FileSystemConstructor
 import typings.dropboxjs.Dropbox.Client
 import typings.node.bufferMod.global.Buffer
 import typings.node.pathMod.PlatformPath
@@ -61,7 +61,7 @@ object mod {
   @JSImport("browserfs", "EmscriptenFS")
   @js.native
   open class EmscriptenFS ()
-    extends typings.browserfs.nodeMod.EmscriptenFS {
+    extends typings.browserfs.distNodeMod.EmscriptenFS {
     def this(_FS: Any) = this()
     def this(_FS: Any, _PATH: Any) = this()
     def this(_FS: Unit, _PATH: Any) = this()
@@ -84,7 +84,7 @@ object mod {
     @JSImport("browserfs", "Errors.ApiError")
     @js.native
     open class ApiError protected ()
-      extends typings.browserfs.nodeMod.Errors.ApiError {
+      extends typings.browserfs.distNodeMod.Errors.ApiError {
       /**
         * Represents a BrowserFS error. Passed back to applications after a failed
         * call to the BrowserFS API.
@@ -107,27 +107,27 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def EEXIST(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def EEXIST(path: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def EISDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def EISDIR(path: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def ENOENT(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def ENOENT(path: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def ENOTDIR(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def ENOTDIR(path: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def ENOTEMPTY(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def ENOTEMPTY(path: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def EPERM(path: String): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def EPERM(path: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def FileError(code: ErrorCode, p: String): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def FileError(code: ErrorCode, p: String): typings.browserfs.distNodeCoreApiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
       /**
         * Creates an ApiError object from a buffer.
         */
-      inline def fromBuffer(buffer: Buffer): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
-      inline def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def fromBuffer(buffer: Buffer): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
+      inline def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.distNodeCoreApiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
       
-      inline def fromJSON(json: Any): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+      inline def fromJSON(json: Any): typings.browserfs.distNodeCoreApiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.distNodeCoreApiErrorMod.ApiError]
     }
     
     @JSImport("browserfs", "Errors.ErrorCode")
@@ -135,37 +135,37 @@ object mod {
     object ErrorCode extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.browserfs.apiErrorMod.ErrorCode & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.browserfs.distNodeCoreApiErrorMod.ErrorCode & Double] = js.native
       
-      /* 13 */ val EACCES: typings.browserfs.apiErrorMod.ErrorCode.EACCES & Double = js.native
+      /* 13 */ val EACCES: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EACCES & Double = js.native
       
-      /* 9 */ val EBADF: typings.browserfs.apiErrorMod.ErrorCode.EBADF & Double = js.native
+      /* 9 */ val EBADF: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EBADF & Double = js.native
       
-      /* 16 */ val EBUSY: typings.browserfs.apiErrorMod.ErrorCode.EBUSY & Double = js.native
+      /* 16 */ val EBUSY: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EBUSY & Double = js.native
       
-      /* 17 */ val EEXIST: typings.browserfs.apiErrorMod.ErrorCode.EEXIST & Double = js.native
+      /* 17 */ val EEXIST: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EEXIST & Double = js.native
       
-      /* 27 */ val EFBIG: typings.browserfs.apiErrorMod.ErrorCode.EFBIG & Double = js.native
+      /* 27 */ val EFBIG: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EFBIG & Double = js.native
       
-      /* 22 */ val EINVAL: typings.browserfs.apiErrorMod.ErrorCode.EINVAL & Double = js.native
+      /* 22 */ val EINVAL: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EINVAL & Double = js.native
       
-      /* 5 */ val EIO: typings.browserfs.apiErrorMod.ErrorCode.EIO & Double = js.native
+      /* 5 */ val EIO: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EIO & Double = js.native
       
-      /* 21 */ val EISDIR: typings.browserfs.apiErrorMod.ErrorCode.EISDIR & Double = js.native
+      /* 21 */ val EISDIR: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EISDIR & Double = js.native
       
-      /* 2 */ val ENOENT: typings.browserfs.apiErrorMod.ErrorCode.ENOENT & Double = js.native
+      /* 2 */ val ENOENT: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.ENOENT & Double = js.native
       
-      /* 28 */ val ENOSPC: typings.browserfs.apiErrorMod.ErrorCode.ENOSPC & Double = js.native
+      /* 28 */ val ENOSPC: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.ENOSPC & Double = js.native
       
-      /* 20 */ val ENOTDIR: typings.browserfs.apiErrorMod.ErrorCode.ENOTDIR & Double = js.native
+      /* 20 */ val ENOTDIR: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.ENOTDIR & Double = js.native
       
-      /* 39 */ val ENOTEMPTY: typings.browserfs.apiErrorMod.ErrorCode.ENOTEMPTY & Double = js.native
+      /* 39 */ val ENOTEMPTY: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.ENOTEMPTY & Double = js.native
       
-      /* 95 */ val ENOTSUP: typings.browserfs.apiErrorMod.ErrorCode.ENOTSUP & Double = js.native
+      /* 95 */ val ENOTSUP: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.ENOTSUP & Double = js.native
       
-      /* 1 */ val EPERM: typings.browserfs.apiErrorMod.ErrorCode.EPERM & Double = js.native
+      /* 1 */ val EPERM: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EPERM & Double = js.native
       
-      /* 30 */ val EROFS: typings.browserfs.apiErrorMod.ErrorCode.EROFS & Double = js.native
+      /* 30 */ val EROFS: typings.browserfs.distNodeCoreApiErrorMod.ErrorCode.EROFS & Double = js.native
     }
   }
   
@@ -185,7 +185,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.AsyncMirror")
     @js.native
     open class AsyncMirror protected ()
-      extends typings.browserfs.asyncMirrorMod.default {
+      extends typings.browserfs.distNodeBackendAsyncMirrorMod.default {
       /**
         * **Deprecated; use AsyncMirror.Create() method instead.**
         *
@@ -196,12 +196,12 @@ object mod {
         * @param async The asynchronous file system to mirror.
         */
       def this(
-        sync: typings.browserfs.fileSystemMod.FileSystem,
-        async: typings.browserfs.fileSystemMod.FileSystem
+        sync: typings.browserfs.distNodeCoreFileSystemMod.FileSystem,
+        async: typings.browserfs.distNodeCoreFileSystemMod.FileSystem
       ) = this()
       def this(
-        sync: typings.browserfs.fileSystemMod.FileSystem,
-        async: typings.browserfs.fileSystemMod.FileSystem,
+        sync: typings.browserfs.distNodeCoreFileSystemMod.FileSystem,
+        async: typings.browserfs.distNodeCoreFileSystemMod.FileSystem,
         deprecateMsg: Boolean
       ) = this()
     }
@@ -214,7 +214,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.Dropbox")
     @js.native
     open class Dropbox protected ()
-      extends typings.browserfs.dropboxMod.default {
+      extends typings.browserfs.distNodeBackendDropboxMod.default {
       /**
         * **Deprecated. Please use Dropbox.Create() method instead.**
         *
@@ -234,7 +234,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.Emscripten")
     @js.native
     open class Emscripten protected ()
-      extends typings.browserfs.emscriptenMod.default {
+      extends typings.browserfs.distNodeBackendEmscriptenMod.default {
       /**
         * Creates a BrowserFS file system for the given Emscripten file system.
         * @param _FS The Emscripten file system (`FS`).
@@ -250,14 +250,14 @@ object mod {
     @JSImport("browserfs", "FileSystem.FolderAdapter")
     @js.native
     open class FolderAdapter protected ()
-      extends typings.browserfs.folderAdapterMod.default {
+      extends typings.browserfs.distNodeBackendFolderAdapterMod.default {
       /**
         * Wraps a file system, and uses the given folder as its root.
         *
         * @param folder The folder to use as the root directory.
         * @param wrapped The file system to wrap.
         */
-      def this(folder: String, wrapped: typings.browserfs.fileSystemMod.FileSystem) = this()
+      def this(folder: String, wrapped: typings.browserfs.distNodeCoreFileSystemMod.FileSystem) = this()
     }
     @JSImport("browserfs", "FileSystem.FolderAdapter")
     @js.native
@@ -280,7 +280,7 @@ object mod {
       * @param type window.PERSISTENT or window.TEMPORARY. Defaults to PERSISTENT.
       */
     open class HTML5FS ()
-      extends typings.browserfs.html5fsMod.default {
+      extends typings.browserfs.distNodeBackendHtml5fsMod.default {
       def this(size: Double) = this()
       def this(size: Double, `type`: Double) = this()
       def this(size: Unit, `type`: Double) = this()
@@ -298,7 +298,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.InMemory")
     @js.native
     open class InMemory ()
-      extends typings.browserfs.inMemoryMod.default
+      extends typings.browserfs.distNodeBackendInMemoryMod.default
     @JSImport("browserfs", "FileSystem.InMemory")
     @js.native
     def InMemory: TypeofInMemory = js.native
@@ -308,7 +308,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.IndexedDB")
     @js.native
     open class IndexedDB protected ()
-      extends typings.browserfs.indexedDBMod.default {
+      extends typings.browserfs.distNodeBackendIndexedDBMod.default {
       /**
         * **Deprecated. Use IndexedDB.Create() method instead.**
         *
@@ -333,7 +333,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.IsoFS")
     @js.native
     open class IsoFS protected ()
-      extends typings.browserfs.isoFSMod.default {
+      extends typings.browserfs.distNodeBackendIsoFSMod.default {
       /**
         * **Deprecated. Please use IsoFS.Create() method instead.**
         *
@@ -358,7 +358,7 @@ object mod {
       * Creates a new LocalStorage file system using the contents of `localStorage`.
       */
     open class LocalStorage ()
-      extends typings.browserfs.localStorageMod.default
+      extends typings.browserfs.distNodeBackendLocalStorageMod.default
     @JSImport("browserfs", "FileSystem.LocalStorage")
     @js.native
     def LocalStorage: TypeofLocalStorage = js.native
@@ -371,7 +371,7 @@ object mod {
       * Creates a new, empty MountableFileSystem.
       */
     open class MountableFileSystem ()
-      extends typings.browserfs.mountableFileSystemMod.default
+      extends typings.browserfs.distNodeBackendMountableFileSystemMod.default
     @JSImport("browserfs", "FileSystem.MountableFileSystem")
     @js.native
     def MountableFileSystem: TypeofMountableFileSystem = js.native
@@ -381,19 +381,19 @@ object mod {
     @JSImport("browserfs", "FileSystem.OverlayFS")
     @js.native
     open class OverlayFS protected ()
-      extends typings.browserfs.overlayFSMod.default {
+      extends typings.browserfs.distNodeBackendOverlayFSMod.default {
       /**
         * **Deprecated. Please use OverlayFS.Create() method instead.**
         * @param writable The file system to write modified files to.
         * @param readable The file system that initially populates this file system.
         */
       def this(
-        writable: typings.browserfs.fileSystemMod.FileSystem,
-        readable: typings.browserfs.fileSystemMod.FileSystem
+        writable: typings.browserfs.distNodeCoreFileSystemMod.FileSystem,
+        readable: typings.browserfs.distNodeCoreFileSystemMod.FileSystem
       ) = this()
       def this(
-        writable: typings.browserfs.fileSystemMod.FileSystem,
-        readable: typings.browserfs.fileSystemMod.FileSystem,
+        writable: typings.browserfs.distNodeCoreFileSystemMod.FileSystem,
+        readable: typings.browserfs.distNodeCoreFileSystemMod.FileSystem,
         deprecateMsg: Boolean
       ) = this()
     }
@@ -406,7 +406,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.WorkerFS")
     @js.native
     open class WorkerFS protected ()
-      extends typings.browserfs.workerFSMod.default {
+      extends typings.browserfs.distNodeBackendWorkerFSMod.default {
       /**
         * **Deprecated. Please use WorkerFS.Create() method instead.**
         *
@@ -425,7 +425,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.XmlHttpRequest")
     @js.native
     open class XmlHttpRequest protected ()
-      extends typings.browserfs.xmlHttpRequestMod.default {
+      extends typings.browserfs.distNodeBackendXmlHttpRequestMod.default {
       /**
         * **Deprecated. Please use XmlHttpRequest.Create() method instead to construct XmlHttpRequest objects.**
         *
@@ -460,7 +460,7 @@ object mod {
     @JSImport("browserfs", "FileSystem.ZipFS")
     @js.native
     open class ZipFS protected ()
-      extends typings.browserfs.zipFSMod.default {
+      extends typings.browserfs.distNodeBackendZipFSMod.default {
       def this(input: ZipTOC) = this()
       /**
         * **Deprecated. Please use ZipFS.Create() method to construct ZipFS objects.**

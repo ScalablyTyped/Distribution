@@ -1,7 +1,7 @@
 package typings.rcTree.anon
 
-import typings.rcTree.interfaceMod.BasicDataNode
-import typings.rcTree.interfaceMod.EventDataNode
+import typings.rcTree.esInterfaceMod.BasicDataNode
+import typings.rcTree.esInterfaceMod.EventDataNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait DragNode[TreeDataType /* <: BasicDataNode */] extends StObject {
   
   var dragNode: EventDataNode[TreeDataType]
   
-  var dragNodesKeys: js.Array[typings.rcTree.interfaceMod.Key]
+  var dragNodesKeys: js.Array[typings.rcTree.esInterfaceMod.Key]
   
   var dropPosition: Double
   
@@ -20,7 +20,7 @@ object DragNode {
   
   inline def apply[TreeDataType /* <: BasicDataNode */](
     dragNode: EventDataNode[TreeDataType],
-    dragNodesKeys: js.Array[typings.rcTree.interfaceMod.Key],
+    dragNodesKeys: js.Array[typings.rcTree.esInterfaceMod.Key],
     dropPosition: Double,
     dropToGap: Boolean
   ): DragNode[TreeDataType] = {
@@ -32,9 +32,9 @@ object DragNode {
     
     inline def setDragNode(value: EventDataNode[TreeDataType]): Self = StObject.set(x, "dragNode", value.asInstanceOf[js.Any])
     
-    inline def setDragNodesKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "dragNodesKeys", value.asInstanceOf[js.Any])
+    inline def setDragNodesKeys(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "dragNodesKeys", value.asInstanceOf[js.Any])
     
-    inline def setDragNodesKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "dragNodesKeys", js.Array(value*))
+    inline def setDragNodesKeysVarargs(value: typings.rcTree.esInterfaceMod.Key*): Self = StObject.set(x, "dragNodesKeys", js.Array(value*))
     
     inline def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     

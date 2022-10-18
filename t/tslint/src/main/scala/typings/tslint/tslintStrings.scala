@@ -1,9 +1,9 @@
 package typings.tslint
 
-import typings.tslint.formatterMod.ConsumerType
+import typings.tslint.libLanguageFormatterFormatterMod.ConsumerType
+import typings.tslint.libLanguageRuleRuleMod.RuleSeverity
+import typings.tslint.libLanguageRuleRuleMod.RuleType
 import typings.tslint.libUtilsMod.Encoding
-import typings.tslint.ruleMod.RuleSeverity
-import typings.tslint.ruleMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,6 @@ object tslintStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
-  
-  @js.native
-  sealed trait NoInfer extends StObject
-  inline def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]
   
   @js.native
   sealed trait `Shorthand method assignments have been disallowedDot` extends StObject

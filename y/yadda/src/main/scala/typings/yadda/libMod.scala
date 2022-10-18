@@ -2,10 +2,10 @@ package typings.yadda
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.yadda.contextMod.Properties
-import typings.yadda.featureParserMod.Options
-import typings.yadda.languageMod.Vocabulary
-import typings.yadda.pluginsMod.MochaPlugin
+import typings.yadda.libContextMod.Properties
+import typings.yadda.libLocalisationLanguageMod.Vocabulary
+import typings.yadda.libParsersFeatureParserMod.Options
+import typings.yadda.libPluginsMod.MochaPlugin
 import typings.yadda.yaddaStrings.__ON_DEFINE__
 import typings.yadda.yaddaStrings.__ON_EXECUTE__
 import typings.yadda.yaddaStrings.__ON_SCENARIO__
@@ -23,14 +23,14 @@ object libMod {
   @JSImport("yadda/lib", "Context")
   @js.native
   open class Context protected ()
-    extends typings.yadda.contextMod.^ {
+    extends typings.yadda.libContextMod.^ {
     def this(properties: Properties) = this()
   }
   
   @JSImport("yadda/lib", "Dictionary")
   @js.native
   open class Dictionary ()
-    extends typings.yadda.dictionaryMod.^ {
+    extends typings.yadda.libDictionaryMod.^ {
     def this(prefix: String) = this()
   }
   
@@ -42,7 +42,7 @@ object libMod {
     @JSImport("yadda/lib", "EventBus.EventBus")
     @js.native
     open class EventBus ()
-      extends typings.yadda.eventBusMod.EventBus
+      extends typings.yadda.libEventBusMod.EventBus
     
     @JSImport("yadda/lib", "EventBus.ON_DEFINE")
     @js.native
@@ -60,20 +60,20 @@ object libMod {
     @js.native
     val ON_STEP: __ON_STEP__ = js.native
     
-    inline def instance(): typings.yadda.eventBusMod.EventBus = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.yadda.eventBusMod.EventBus]
+    inline def instance(): typings.yadda.libEventBusMod.EventBus = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.yadda.libEventBusMod.EventBus]
   }
   
   @JSImport("yadda/lib", "FeatureFileSearch")
   @js.native
   open class FeatureFileSearch protected ()
-    extends typings.yadda.featureFileSearchMod.^ {
+    extends typings.yadda.libFeatureFileSearchMod.^ {
     def this(directories: String) = this()
   }
   
   @JSImport("yadda/lib", "FileSearch")
   @js.native
   open class FileSearch protected ()
-    extends typings.yadda.fileSearchMod.^ {
+    extends typings.yadda.libFileSearchMod.^ {
     def this(directories: String) = this()
     def this(directories: String, patterns: js.RegExp) = this()
   }
@@ -81,33 +81,36 @@ object libMod {
   @JSImport("yadda/lib", "Interpreter")
   @js.native
   open class Interpreter protected ()
-    extends typings.yadda.interpreterMod.^ {
-    def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
-    def this(libraries: typings.yadda.libraryMod.^) = this()
+    extends typings.yadda.libInterpreterMod.^ {
+    def this(libraries: js.Array[typings.yadda.libLibraryMod.^]) = this()
+    def this(libraries: typings.yadda.libLibraryMod.^) = this()
   }
   
   @JSImport("yadda/lib", "Library")
   @js.native
   open class Library ()
-    extends typings.yadda.libraryMod.^ {
-    def this(dictionary: typings.yadda.dictionaryMod.^) = this()
+    extends typings.yadda.libLibraryMod.^ {
+    def this(dictionary: typings.yadda.libDictionaryMod.^) = this()
   }
   
   @JSImport("yadda/lib", "Platform")
   @js.native
   open class Platform ()
-    extends typings.yadda.platformMod.^
+    extends typings.yadda.libPlatformMod.^
   
   @JSImport("yadda/lib", "Yadda")
   @js.native
   open class Yadda protected ()
-    extends typings.yadda.yaddaMod.^ {
-    def this(libraries: js.Array[typings.yadda.libraryMod.^]) = this()
-    def this(libraries: typings.yadda.libraryMod.^) = this()
-    def this(libraries: js.Array[typings.yadda.libraryMod.^], interpreter_context: Properties) = this()
-    def this(libraries: js.Array[typings.yadda.libraryMod.^], interpreter_context: typings.yadda.contextMod.^) = this()
-    def this(libraries: typings.yadda.libraryMod.^, interpreter_context: Properties) = this()
-    def this(libraries: typings.yadda.libraryMod.^, interpreter_context: typings.yadda.contextMod.^) = this()
+    extends typings.yadda.libYaddaMod.^ {
+    def this(libraries: js.Array[typings.yadda.libLibraryMod.^]) = this()
+    def this(libraries: typings.yadda.libLibraryMod.^) = this()
+    def this(libraries: js.Array[typings.yadda.libLibraryMod.^], interpreter_context: Properties) = this()
+    def this(
+      libraries: js.Array[typings.yadda.libLibraryMod.^],
+      interpreter_context: typings.yadda.libContextMod.^
+    ) = this()
+    def this(libraries: typings.yadda.libLibraryMod.^, interpreter_context: Properties) = this()
+    def this(libraries: typings.yadda.libLibraryMod.^, interpreter_context: typings.yadda.libContextMod.^) = this()
   }
   
   object converters {
@@ -129,78 +132,78 @@ object libMod {
     inline def table(value: String, next: js.Function2[/* err */ js.Error | Null, /* value */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("table")(value.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  inline def createInstance(): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[typings.yadda.yaddaMod.^]
-  inline def createInstance(libraries: js.Array[typings.yadda.languageMod.Library]): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any]).asInstanceOf[typings.yadda.yaddaMod.^]
-  inline def createInstance(libraries: js.Array[typings.yadda.languageMod.Library], context: Properties): typings.yadda.yaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.yaddaMod.^]
-  inline def createInstance(libraries: Unit, context: Properties): typings.yadda.yaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.yaddaMod.^]
-  inline def createInstance(libraries: typings.yadda.languageMod.Library): typings.yadda.yaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any]).asInstanceOf[typings.yadda.yaddaMod.^]
-  inline def createInstance(libraries: typings.yadda.languageMod.Library, context: Properties): typings.yadda.yaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.yaddaMod.^]
+  inline def createInstance(): typings.yadda.libYaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[typings.yadda.libYaddaMod.^]
+  inline def createInstance(libraries: js.Array[typings.yadda.libLocalisationLanguageMod.Library]): typings.yadda.libYaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any]).asInstanceOf[typings.yadda.libYaddaMod.^]
+  inline def createInstance(libraries: js.Array[typings.yadda.libLocalisationLanguageMod.Library], context: Properties): typings.yadda.libYaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.libYaddaMod.^]
+  inline def createInstance(libraries: Unit, context: Properties): typings.yadda.libYaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.libYaddaMod.^]
+  inline def createInstance(libraries: typings.yadda.libLocalisationLanguageMod.Library): typings.yadda.libYaddaMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any]).asInstanceOf[typings.yadda.libYaddaMod.^]
+  inline def createInstance(libraries: typings.yadda.libLocalisationLanguageMod.Library, context: Properties): typings.yadda.libYaddaMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(libraries.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yadda.libYaddaMod.^]
   
   object localisation extends Shortcut {
     
     @JSImport("yadda/lib", "localisation.default")
     @js.native
-    val default: typings.yadda.languageMod.^[typings.yadda.englishMod.Library] = js.native
+    val default: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationEnglishMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Chinese")
     @js.native
-    val Chinese: typings.yadda.languageMod.^[typings.yadda.chineseMod.Library] = js.native
+    val Chinese: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationChineseMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Dutch")
     @js.native
-    val Dutch: typings.yadda.languageMod.^[typings.yadda.dutchMod.Library] = js.native
+    val Dutch: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationDutchMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.English")
     @js.native
-    val English: typings.yadda.languageMod.^[typings.yadda.englishMod.Library] = js.native
+    val English: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationEnglishMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.French")
     @js.native
-    val French: typings.yadda.languageMod.^[typings.yadda.frenchMod.Library] = js.native
+    val French: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationFrenchMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.German")
     @js.native
-    val German: typings.yadda.languageMod.^[typings.yadda.germanMod.Library] = js.native
+    val German: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationGermanMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Language")
     @js.native
-    open class Language[TLibrary /* <: typings.yadda.languageMod.Library */] protected ()
-      extends typings.yadda.localisationMod.Language[TLibrary] {
+    open class Language[TLibrary /* <: typings.yadda.libLocalisationLanguageMod.Library */] protected ()
+      extends typings.yadda.libLocalisationMod.Language[TLibrary] {
       def this(name: String, vocabulary: Vocabulary) = this()
     }
     
     @JSImport("yadda/lib", "localisation.Norwegian")
     @js.native
-    val Norwegian: typings.yadda.languageMod.^[typings.yadda.norwegianMod.Library] = js.native
+    val Norwegian: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationNorwegianMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Pirate")
     @js.native
-    val Pirate: typings.yadda.languageMod.^[typings.yadda.pirateMod.Library] = js.native
+    val Pirate: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationPirateMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Polish")
     @js.native
-    val Polish: typings.yadda.languageMod.^[typings.yadda.polishMod.Library] = js.native
+    val Polish: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationPolishMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Portuguese")
     @js.native
-    val Portuguese: typings.yadda.languageMod.^[typings.yadda.portugueseMod.Library] = js.native
+    val Portuguese: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationPortugueseMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Russian")
     @js.native
-    val Russian: typings.yadda.languageMod.^[typings.yadda.russianMod.Library] = js.native
+    val Russian: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationRussianMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Spanish")
     @js.native
-    val Spanish: typings.yadda.languageMod.^[typings.yadda.spanishMod.Library] = js.native
+    val Spanish: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationSpanishMod.Library] = js.native
     
     @JSImport("yadda/lib", "localisation.Ukrainian")
     @js.native
-    val Ukrainian: typings.yadda.languageMod.^[typings.yadda.ukrainianMod.Library] = js.native
+    val Ukrainian: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationUkrainianMod.Library] = js.native
     
-    type _To = typings.yadda.languageMod.^[typings.yadda.englishMod.Library]
+    type _To = typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationEnglishMod.Library]
     
     /* This means you don't have to write `default`, but can instead just say `localisation.foo` */
-    override def _to: typings.yadda.languageMod.^[typings.yadda.englishMod.Library] = default
+    override def _to: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationEnglishMod.Library] = default
   }
   
   object parsers {
@@ -208,23 +211,23 @@ object libMod {
     @JSImport("yadda/lib", "parsers.FeatureFileParser")
     @js.native
     open class FeatureFileParser ()
-      extends typings.yadda.parsersMod.FeatureFileParser {
-      def this(language: typings.yadda.languageMod.^[typings.yadda.languageMod.Library]) = this()
+      extends typings.yadda.libParsersMod.FeatureFileParser {
+      def this(language: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationLanguageMod.Library]) = this()
       def this(options: Options) = this()
     }
     
     @JSImport("yadda/lib", "parsers.FeatureParser")
     @js.native
     open class FeatureParser ()
-      extends typings.yadda.parsersMod.FeatureParser {
-      def this(language: typings.yadda.languageMod.^[typings.yadda.languageMod.Library]) = this()
+      extends typings.yadda.libParsersMod.FeatureParser {
+      def this(language: typings.yadda.libLocalisationLanguageMod.^[typings.yadda.libLocalisationLanguageMod.Library]) = this()
       def this(options: Options) = this()
     }
     
     @JSImport("yadda/lib", "parsers.StepParser")
     @js.native
     open class StepParser ()
-      extends typings.yadda.parsersMod.StepParser
+      extends typings.yadda.libParsersMod.StepParser
   }
   
   object plugins {
@@ -233,7 +236,7 @@ object libMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def casper(yadda: typings.yadda.yaddaMod.^, casper: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def casper(yadda: typings.yadda.libYaddaMod.^, casper: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("casper")(yadda.asInstanceOf[js.Any], casper.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("yadda/lib", "plugins.jasmine")
     @js.native

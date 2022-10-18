@@ -6,7 +6,6 @@ import typings.encodingJapanese.mod.ConvertStringOptions
 import typings.encodingJapanese.mod.ConvertUnknownOptions
 import typings.encodingJapanese.mod.EncodingDetection
 import typings.encodingJapanese.mod.IntArrayType
-import typings.encodingJapanese.mod.RawType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,13 +34,13 @@ object global {
       to: typings.encodingJapanese.mod.Encoding,
       from: typings.encodingJapanese.mod.Encoding
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def convert(data: RawType, options: ConvertArrayBufferOptions): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
-    inline def convert(data: RawType, options: ConvertArrayOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    inline def convert(data: RawType, options: ConvertStringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def convert(data: RawType, options: ConvertUnknownOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    inline def convert(data: RawType, to: typings.encodingJapanese.mod.Encoding): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def convert(data: IntArrayType, options: ConvertArrayBufferOptions): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
+    inline def convert(data: IntArrayType, options: ConvertArrayOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def convert(data: IntArrayType, options: ConvertStringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def convert(data: IntArrayType, options: ConvertUnknownOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def convert(data: IntArrayType, to: typings.encodingJapanese.mod.Encoding): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     inline def convert(
-      data: RawType,
+      data: IntArrayType,
       to: typings.encodingJapanese.mod.Encoding,
       from: typings.encodingJapanese.mod.Encoding
     ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
@@ -49,9 +48,9 @@ object global {
     inline def detect(data: String): EncodingDetection = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any]).asInstanceOf[EncodingDetection]
     inline def detect(data: String, encodings: js.Array[typings.encodingJapanese.mod.Encoding]): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
     inline def detect(data: String, encodings: typings.encodingJapanese.mod.Encoding): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
-    inline def detect(data: RawType): EncodingDetection = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any]).asInstanceOf[EncodingDetection]
-    inline def detect(data: RawType, encodings: js.Array[typings.encodingJapanese.mod.Encoding]): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
-    inline def detect(data: RawType, encodings: typings.encodingJapanese.mod.Encoding): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
+    inline def detect(data: IntArrayType): EncodingDetection = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any]).asInstanceOf[EncodingDetection]
+    inline def detect(data: IntArrayType, encodings: js.Array[typings.encodingJapanese.mod.Encoding]): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
+    inline def detect(data: IntArrayType, encodings: typings.encodingJapanese.mod.Encoding): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
     
     @JSGlobal("Encoding.orders")
     @js.native

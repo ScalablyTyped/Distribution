@@ -1,7 +1,6 @@
 package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.algoliaClientCommon.mod.ClientTransporterOptions
 import typings.algoliaClientCommon.mod.CreateClient
 import typings.algoliaClientSearch.anon.DistinctSeqID
@@ -657,18 +656,10 @@ type CreateIndex = js.Function2[
     StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ Any, Any]]]
   ]
 ], 
-SearchIndex & typings.algoliaClientSearch.algoliaClientSearchStrings.CreateIndex & TopLevel[Any]]
-
-type HighlightResult[THit] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ KAttribute in keyof THit ]:? @algolia/client-search.@algolia/client-search.HighlightResult<THit[KAttribute]>}
-  */ typings.algoliaClientSearch.algoliaClientSearchStrings.HighlightResult & TopLevel[THit]) | HighlightMatch
+SearchIndex & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof {readonly [key: string] : (base : @algolia/client-search.@algolia/client-search.SearchIndex): (args : any): any} extends string? keyof {readonly [key: string] : (base : @algolia/client-search.@algolia/client-search.SearchIndex): (args : any): any} : never ]: std.ReturnType<{readonly [key: string] : (base : @algolia/client-search.@algolia/client-search.SearchIndex): (args : any): any}[key]>} */ js.Any)]
 
 type Hit[THit] = THit & DistinctSeqID[THit]
 
 type Indice = Index
 
 type RequireAtLeastOne[TType] = /* import warning: importer.ImportType#apply Failed type conversion: {[ TKey in keyof TType ]: -? std.Required<std.Pick<TType, TKey>> & std.Partial<std.Pick<TType, std.Exclude<keyof TType, TKey>>>}[keyof TType] */ js.Any
-
-type SnippetResult[THit] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ KAttribute in keyof THit ]: @algolia/client-search.@algolia/client-search.SnippetResult<THit[KAttribute]>}
-  */ typings.algoliaClientSearch.algoliaClientSearchStrings.SnippetResult & TopLevel[THit]) | SnippetMatch

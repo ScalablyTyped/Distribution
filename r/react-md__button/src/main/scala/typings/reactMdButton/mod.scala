@@ -2,10 +2,10 @@ package typings.reactMdButton
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdButton.buttonMod.ButtonProps
-import typings.reactMdButton.buttonThemeClassNamesMod.ButtonThemeProps
-import typings.reactMdButton.fabMod.FABProps
-import typings.reactMdButton.unstyledButtonMod.UnstyledButtonProps
+import typings.reactMdButton.typesButtonMod.ButtonProps
+import typings.reactMdButton.typesButtonThemeClassNamesMod.ButtonThemeProps
+import typings.reactMdButton.typesFabMod.FABProps
+import typings.reactMdButton.typesUnstyledButtonMod.UnstyledButtonProps
 import typings.std.HTMLButtonElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/launcher-extension" : "2.2.6"
+      "@jupyterlab/launcher-extension" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/launcher-extension" : "2.2.6"
+      "@jupyterlab/launcher-extension" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

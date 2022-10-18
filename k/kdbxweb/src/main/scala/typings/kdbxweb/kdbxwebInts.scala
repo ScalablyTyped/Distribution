@@ -1,6 +1,6 @@
 package typings.kdbxweb
 
-import typings.kdbxweb.cryptoEngineMod.Argon2Version
+import typings.kdbxweb.distTypesCryptoCryptoEngineMod.Argon2Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

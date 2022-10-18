@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bufferModifyMod {
   
-  @JSImport("bitwise/esm/buffer/modify", JSImport.Namespace)
+  @JSImport("bitwise/buffer/modify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

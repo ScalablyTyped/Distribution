@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.rangeMod.default
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerDirection
+import typings.ckeditorCkeditor5Engine.srcModelRangeMod.default
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +18,11 @@ trait Boundaries extends StObject {
   
   var singleCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var startPosition: typings.ckeditorCkeditor5Engine.positionMod.Position
+  var startPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.Position
 }
 object Boundaries {
   
-  inline def apply(startPosition: typings.ckeditorCkeditor5Engine.positionMod.Position): Boundaries = {
+  inline def apply(startPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.Position): Boundaries = {
     val __obj = js.Dynamic.literal(startPosition = startPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boundaries]
   }
@@ -49,6 +49,6 @@ object Boundaries {
     
     inline def setSingleCharactersUndefined: Self = StObject.set(x, "singleCharacters", js.undefined)
     
-    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.positionMod.Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.srcModelPositionMod.Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
   }
 }

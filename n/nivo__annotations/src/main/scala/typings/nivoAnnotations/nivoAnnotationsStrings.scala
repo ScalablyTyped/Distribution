@@ -1,15 +1,11 @@
 package typings.nivoAnnotations
 
-import typings.nivoAnnotations.typesMod.AnnotationType
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoAnnotationsStrings {
-  
-  @js.native
-  sealed trait PartialShallow extends StObject
-  inline def PartialShallow: PartialShallow = "PartialShallow".asInstanceOf[PartialShallow]
   
   @js.native
   sealed trait circle

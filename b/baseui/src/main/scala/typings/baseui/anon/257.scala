@@ -4,20 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `257` extends StObject {
+trait `257`[Theme] extends StObject {
   
-  @JSName("$size")
-  var $size: typings.baseui.progressBarTypesMod.Size
+  @JSName("$theme")
+  var $theme: Theme
 }
 object `257` {
   
-  inline def apply($size: typings.baseui.progressBarTypesMod.Size): `257` = {
-    val __obj = js.Dynamic.literal($size = $size.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`257`]
+  inline def apply[Theme]($theme: Theme): `257`[Theme] = {
+    val __obj = js.Dynamic.literal($theme = $theme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`257`[Theme]]
   }
   
-  extension [Self <: `257`](x: Self) {
+  extension [Self <: `257`[?], Theme](x: Self & `257`[Theme]) {
     
-    inline def set$size(value: typings.baseui.progressBarTypesMod.Size): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+    inline def set$theme(value: Theme): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
   }
 }

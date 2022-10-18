@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StringNullableChain
   extends StObject
-     with LoDashExplicitWrapper[js.UndefOr[java.lang.String]]
-     with _ExpChain[Any] {
+     with LoDashExplicitWrapper[js.UndefOr[java.lang.String]] {
   
   /**
     * @see _.castArray

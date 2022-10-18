@@ -1,15 +1,13 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Asynchronous
-import typings.cesium.anon.ClampAnimations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Model")
 @js.native
-open class Model protected () extends StObject {
-  def this(options: ClampAnimations) = this()
+open class Model () extends StObject {
   
   /**
     * The currently playing glTF animations.

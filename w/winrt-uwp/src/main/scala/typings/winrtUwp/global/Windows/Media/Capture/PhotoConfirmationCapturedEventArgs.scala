@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PhotoConfirmationCaptured event. */
-@JSGlobal("Windows.Media.Capture.PhotoConfirmationCapturedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Capture.PhotoConfirmationCapturedEventArgs")
 @js.native
-abstract class PhotoConfirmationCapturedEventArgs ()
+open class PhotoConfirmationCapturedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Capture.PhotoConfirmationCapturedEventArgs {
   

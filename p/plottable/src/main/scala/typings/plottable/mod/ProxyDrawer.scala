@@ -1,7 +1,7 @@
 package typings.plottable.mod
 
-import typings.plottable.canvasDrawerMod.CanvasDrawer
-import typings.plottable.svgDrawerMod.SVGDrawer
+import typings.plottable.buildSrcDrawersCanvasDrawerMod.CanvasDrawer
+import typings.plottable.buildSrcDrawersSvgDrawerMod.SVGDrawer
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("plottable", "ProxyDrawer")
 @js.native
 open class ProxyDrawer protected ()
-  extends typings.plottable.drawerMod.ProxyDrawer {
+  extends typings.plottable.buildSrcDrawersDrawerMod.ProxyDrawer {
   /**
     * A Drawer draws svg elements based on the input Dataset.
     *

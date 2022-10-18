@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsColumnWidthOutlinedMod.ColumnWidthOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnWidthOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/ColumnWidthOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/ColumnWidthOutlined", JSImport.Default)
   @js.native
   val default: ColumnWidthOutlinedIconType = js.native
-  
-  @js.native
-  trait ColumnWidthOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_ColumnWidthOutlinedIconType: String = js.native
-  }
   
   type _To = ColumnWidthOutlinedIconType
   

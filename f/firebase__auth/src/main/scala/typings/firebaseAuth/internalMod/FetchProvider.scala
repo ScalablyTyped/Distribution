@@ -6,27 +6,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "FetchProvider")
+@JSImport("@firebase/auth/internal", "FetchProvider")
 @js.native
 open class FetchProvider ()
-  extends typings.firebaseAuth.fetchProviderMod.FetchProvider
+  extends typings.firebaseAuth.distInternalMod.FetchProvider
 /* static members */
 object FetchProvider {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "FetchProvider")
+  @JSImport("@firebase/auth/internal", "FetchProvider")
   @js.native
   val ^ : js.Any = js.native
   
   inline def fetch(): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[FnCall]
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "FetchProvider.fetchImpl")
+  @JSImport("@firebase/auth/internal", "FetchProvider.fetchImpl")
   @js.native
   def fetchImpl: Any = js.native
   inline def fetchImpl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetchImpl")(x.asInstanceOf[js.Any])
   
   inline def headers(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("headers")().asInstanceOf[Any]
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "FetchProvider.headersImpl")
+  @JSImport("@firebase/auth/internal", "FetchProvider.headersImpl")
   @js.native
   def headersImpl: Any = js.native
   inline def headersImpl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("headersImpl")(x.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object FetchProvider {
   
   inline def response(): TypeofResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("response")().asInstanceOf[TypeofResponse]
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "FetchProvider.responseImpl")
+  @JSImport("@firebase/auth/internal", "FetchProvider.responseImpl")
   @js.native
   def responseImpl: Any = js.native
   inline def responseImpl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responseImpl")(x.asInstanceOf[js.Any])

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +32,7 @@ trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
     * in a map.
     */
   var keyValuePairs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
-    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue} */ js.Any
   ] = js.undefined
   
   /** Output only. The time the client state data was last updated. */
@@ -96,9 +93,7 @@ object GoogleAppsCloudidentityDevicesV1ClientState {
     inline def setHealthScoreUndefined: Self = StObject.set(x, "healthScore", js.undefined)
     
     inline def setKeyValuePairs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
-      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue} */ js.Any
     ): Self = StObject.set(x, "keyValuePairs", value.asInstanceOf[js.Any])
     
     inline def setKeyValuePairsUndefined: Self = StObject.set(x, "keyValuePairs", js.undefined)

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NumberFormatPart extends StObject {
   
+  var source: js.UndefOr[String] = js.undefined
+  
   var `type`: NumberFormatPartTypes
   
   var value: String
@@ -19,6 +21,10 @@ object NumberFormatPart {
   }
   
   extension [Self <: NumberFormatPart](x: Self) {
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     inline def setType(value: NumberFormatPartTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

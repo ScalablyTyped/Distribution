@@ -1,14 +1,14 @@
 package typings.antvGLite.anon
 
-import typings.antvGLite.displayObjectsMod.DisplayObject
+import typings.antvGLite.distCameraInterfacesMod.ICamera
+import typings.antvGLite.distDisplayObjectsMod.DisplayObject
+import typings.antvGLite.distServicesRenderingServiceMod.PickingResult
 import typings.antvGLite.distTypesMod.InteractivePointerEvent
-import typings.antvGLite.hookMod.UnsetAdditionalOptions
-import typings.antvGLite.interfacesMod.ICamera
-import typings.antvGLite.renderingServiceMod.PickingResult
-import typings.antvGLite.utilsMod.AsyncParallelHook
-import typings.antvGLite.utilsMod.AsyncSeriesWaterfallHook
-import typings.antvGLite.utilsMod.SyncHook
-import typings.antvGLite.utilsMod.SyncWaterfallHook
+import typings.antvGLite.distUtilsMod.AsyncParallelHook
+import typings.antvGLite.distUtilsMod.AsyncSeriesWaterfallHook
+import typings.antvGLite.distUtilsMod.SyncHook
+import typings.antvGLite.distUtilsMod.SyncWaterfallHook
+import typings.antvGLite.distUtilsTapableHookMod.UnsetAdditionalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

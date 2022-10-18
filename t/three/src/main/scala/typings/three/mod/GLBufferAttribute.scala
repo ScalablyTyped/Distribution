@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "GLBufferAttribute")
 @js.native
 open class GLBufferAttribute protected ()
-  extends typings.three.threeMod.GLBufferAttribute {
+  extends typings.three.srcThreeMod.GLBufferAttribute {
   def this(buffer: WebGLBuffer, `type`: Double, itemSize: Double, elementSize: `1` | `2` | `4`, count: Double) = this()
 }

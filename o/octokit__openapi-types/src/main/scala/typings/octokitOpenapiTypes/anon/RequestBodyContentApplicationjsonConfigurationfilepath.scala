@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonConfigurationfilepath extends StObject {
   
-  var parameters: `144`
+  var parameters: `76`
   
   var requestBody: ContentApplicationjsonConfigurationfilepath
   
-  var responses: `200Content322`
+  var responses: `200ContentApplicationjsonBodyName`
 }
 object RequestBodyContentApplicationjsonConfigurationfilepath {
   
   inline def apply(
-    parameters: `144`,
+    parameters: `76`,
     requestBody: ContentApplicationjsonConfigurationfilepath,
-    responses: `200Content322`
+    responses: `200ContentApplicationjsonBodyName`
   ): RequestBodyContentApplicationjsonConfigurationfilepath = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonConfigurationfilepath]
@@ -25,10 +25,10 @@ object RequestBodyContentApplicationjsonConfigurationfilepath {
   
   extension [Self <: RequestBodyContentApplicationjsonConfigurationfilepath](x: Self) {
     
-    inline def setParameters(value: `144`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonConfigurationfilepath): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content322`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonBodyName`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

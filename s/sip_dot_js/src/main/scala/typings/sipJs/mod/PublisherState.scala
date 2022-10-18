@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PublisherState extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.sipJs.publisherStateMod.PublisherState & String] = js.native
+  def apply(value: String): js.UndefOr[typings.sipJs.libApiPublisherStateMod.PublisherState & String] = js.native
   
-  /* "Initial" */ val Initial: typings.sipJs.publisherStateMod.PublisherState.Initial & String = js.native
+  /* "Initial" */ val Initial: typings.sipJs.libApiPublisherStateMod.PublisherState.Initial & String = js.native
   
-  /* "Published" */ val Published: typings.sipJs.publisherStateMod.PublisherState.Published & String = js.native
+  /* "Published" */ val Published: typings.sipJs.libApiPublisherStateMod.PublisherState.Published & String = js.native
   
-  /* "Terminated" */ val Terminated: typings.sipJs.publisherStateMod.PublisherState.Terminated & String = js.native
+  /* "Terminated" */ val Terminated: typings.sipJs.libApiPublisherStateMod.PublisherState.Terminated & String = js.native
   
-  /* "Unpublished" */ val Unpublished: typings.sipJs.publisherStateMod.PublisherState.Unpublished & String = js.native
+  /* "Unpublished" */ val Unpublished: typings.sipJs.libApiPublisherStateMod.PublisherState.Unpublished & String = js.native
 }

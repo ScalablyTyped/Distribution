@@ -9,20 +9,21 @@ trait Dictkey
   extends StObject
      with /* key */ StringDictionary[Any] {
   
-  @JSName("x5t#S256")
-  var x5tNumbersignS256: js.UndefOr[String] = js.undefined
+  var expires_in: Double
+  
+  var request_uri: String
 }
 object Dictkey {
   
-  inline def apply(): Dictkey = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(expires_in: Double, request_uri: String): Dictkey = {
+    val __obj = js.Dynamic.literal(expires_in = expires_in.asInstanceOf[js.Any], request_uri = request_uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
   extension [Self <: Dictkey](x: Self) {
     
-    inline def setX5tNumbersignS256(value: String): Self = StObject.set(x, "x5t#S256", value.asInstanceOf[js.Any])
+    inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
-    inline def setX5tNumbersignS256Undefined: Self = StObject.set(x, "x5t#S256", js.undefined)
+    inline def setRequest_uri(value: String): Self = StObject.set(x, "request_uri", value.asInstanceOf[js.Any])
   }
 }

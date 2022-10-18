@@ -2,16 +2,16 @@ package typings.reactMdTable
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdTable.captionMod.CaptionProps
-import typings.reactMdTable.tableBodyMod.TableBodyProps
-import typings.reactMdTable.tableCellContentMod.TableCellContentProps
-import typings.reactMdTable.tableCellMod.TableCellProps
-import typings.reactMdTable.tableCheckboxMod.TableCheckboxProps
-import typings.reactMdTable.tableContainerMod.TableContainerProps
-import typings.reactMdTable.tableFooterMod.TableFooterProps
-import typings.reactMdTable.tableHeaderMod.TableHeaderProps
-import typings.reactMdTable.tableMod.TableProps
-import typings.reactMdTable.tableRowMod.TableRowProps
+import typings.reactMdTable.typesCaptionMod.CaptionProps
+import typings.reactMdTable.typesTableBodyMod.TableBodyProps
+import typings.reactMdTable.typesTableCellContentMod.TableCellContentProps
+import typings.reactMdTable.typesTableCellMod.TableCellProps
+import typings.reactMdTable.typesTableCheckboxMod.TableCheckboxProps
+import typings.reactMdTable.typesTableContainerMod.TableContainerProps
+import typings.reactMdTable.typesTableFooterMod.TableFooterProps
+import typings.reactMdTable.typesTableHeaderMod.TableHeaderProps
+import typings.reactMdTable.typesTableMod.TableProps
+import typings.reactMdTable.typesTableRowMod.TableRowProps
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLTableCaptionElement

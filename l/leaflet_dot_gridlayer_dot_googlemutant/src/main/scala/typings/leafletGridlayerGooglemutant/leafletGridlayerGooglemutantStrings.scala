@@ -1,6 +1,6 @@
 package typings.leafletGridlayerGooglemutant
 
-import typings.leafletGridlayerGooglemutant.mod.gridLayer.GoogleMutantType
+import typings.leafletGridlayerGooglemutant.leafletMod.gridLayer.GoogleMutantType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

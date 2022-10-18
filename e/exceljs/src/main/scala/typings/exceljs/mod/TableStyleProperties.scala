@@ -35,7 +35,7 @@ trait TableStyleProperties extends StObject {
   	 * @default 'TableStyleMedium2'
   	 */
   var theme: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61, starting with typings.exceljs.exceljsStrings.TableStyleDark1, typings.exceljs.exceljsStrings.TableStyleDark10, typings.exceljs.exceljsStrings.TableStyleDark11 */ Any
   ] = js.undefined
 }
 object TableStyleProperties {
@@ -63,7 +63,9 @@ object TableStyleProperties {
     
     inline def setShowRowStripesUndefined: Self = StObject.set(x, "showRowStripes", js.undefined)
     
-    inline def setTheme(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61 */ Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 61, starting with typings.exceljs.exceljsStrings.TableStyleDark1, typings.exceljs.exceljsStrings.TableStyleDark10, typings.exceljs.exceljsStrings.TableStyleDark11 */ Any
+    ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

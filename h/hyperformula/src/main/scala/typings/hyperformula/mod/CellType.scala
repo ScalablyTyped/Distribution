@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CellType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.hyperformula.cellMod.CellType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.hyperformula.typingsCellMod.CellType & String] = js.native
   
-  /* "ARRAY" */ val ARRAY: typings.hyperformula.cellMod.CellType.ARRAY & String = js.native
+  /* "ARRAY" */ val ARRAY: typings.hyperformula.typingsCellMod.CellType.ARRAY & String = js.native
   
-  /* "ARRAYFORMULA" */ val ARRAYFORMULA: typings.hyperformula.cellMod.CellType.ARRAYFORMULA & String = js.native
+  /* "ARRAYFORMULA" */ val ARRAYFORMULA: typings.hyperformula.typingsCellMod.CellType.ARRAYFORMULA & String = js.native
   
-  /* "EMPTY" */ val EMPTY: typings.hyperformula.cellMod.CellType.EMPTY & String = js.native
+  /* "EMPTY" */ val EMPTY: typings.hyperformula.typingsCellMod.CellType.EMPTY & String = js.native
   
-  /* "FORMULA" */ val FORMULA: typings.hyperformula.cellMod.CellType.FORMULA & String = js.native
+  /* "FORMULA" */ val FORMULA: typings.hyperformula.typingsCellMod.CellType.FORMULA & String = js.native
   
-  /* "VALUE" */ val VALUE: typings.hyperformula.cellMod.CellType.VALUE & String = js.native
+  /* "VALUE" */ val VALUE: typings.hyperformula.typingsCellMod.CellType.VALUE & String = js.native
 }

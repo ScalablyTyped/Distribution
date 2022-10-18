@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Loading")
 @js.native
 open class Loading protected ()
-  extends typings.carbonComponents.componentsMod.Loading {
+  extends typings.carbonComponents.globalsJsComponentsMod.Loading {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialLoadingOptions) = this()
 }

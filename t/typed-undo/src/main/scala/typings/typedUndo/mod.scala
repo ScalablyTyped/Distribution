@@ -14,12 +14,12 @@ object mod {
     * @param limit The maximum amount of editables to remember
     */
   open class UndoManager ()
-    extends typings.typedUndo.undoManagerMod.UndoManager {
+    extends typings.typedUndo.distUndoManagerMod.UndoManager {
     def this(limit: Double) = this()
   }
   
-  @JSImport("typed-undo", "UndoableEdit")
+  /* note: abstract class */ @JSImport("typed-undo", "UndoableEdit")
   @js.native
-  abstract class UndoableEdit ()
-    extends typings.typedUndo.undoableEditMod.UndoableEdit
+  open class UndoableEdit ()
+    extends typings.typedUndo.distUndoableEditMod.UndoableEdit
 }

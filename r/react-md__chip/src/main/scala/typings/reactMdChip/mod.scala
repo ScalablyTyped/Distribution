@@ -2,7 +2,7 @@ package typings.reactMdChip
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdChip.chipMod.ChipProps
+import typings.reactMdChip.typesChipMod.ChipProps
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

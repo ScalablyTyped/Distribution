@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "SphereGeometry")
 @js.native
 open class SphereGeometry protected ()
-  extends typings.three.threeMod.SphereGeometry {
+  extends typings.three.srcThreeMod.SphereGeometry {
   /**
     * @param [radius=50] — sphere radius. Default is 50.
     * @param [widthSegments=8] — number of horizontal segments. Minimum value is 3, and the default is 8.
@@ -34,5 +34,5 @@ object SphereGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.sphereGeometryMod.SphereGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.sphereGeometryMod.SphereGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesSphereGeometryMod.SphereGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesSphereGeometryMod.SphereGeometry]
 }

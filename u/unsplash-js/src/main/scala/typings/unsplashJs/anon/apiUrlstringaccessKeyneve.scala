@@ -7,7 +7,7 @@ import typings.std.RequestCache
 import typings.std.RequestCredentials
 import typings.std.RequestMode
 import typings.std.RequestRedirect
-import typings.unsplashJs.requestMod.InitParams
+import typings.unsplashJs.distHelpersRequestMod.InitParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

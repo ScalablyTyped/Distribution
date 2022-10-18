@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "ComponentFactoryResolver")
+/* note: abstract class */ @JSImport("@angular/core", "ComponentFactoryResolver")
 @js.native
-abstract class ComponentFactoryResolver () extends StObject {
+open class ComponentFactoryResolver () extends StObject {
   
   /**
     * Retrieves the factory object that creates a component of the given type.

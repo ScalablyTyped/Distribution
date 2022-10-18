@@ -1,22 +1,22 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.titleMod.TitleParams
-import typings.vegaLite.transformMod.Transform
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcTitleMod.TitleParams
+import typings.vegaLite.buildSrcTransformMod.Transform
 import typings.vegaLite.vegaLiteStrings.container
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Height extends StObject {
   
-  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data] = js.undefined
+  var data: js.UndefOr[typings.vegaLite.buildSrcDataMod.Data] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
+  var height: js.UndefOr[Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait Height extends StObject {
   
   var transform: js.UndefOr[js.Array[Transform]] = js.undefined
   
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
+  var width: js.UndefOr[Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step] = js.undefined
 }
 object Height {
   
@@ -35,7 +35,7 @@ object Height {
   
   extension [Self <: Height](x: Self) {
     
-    inline def setData(value: typings.vegaLite.srcDataMod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typings.vegaLite.buildSrcDataMod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -43,7 +43,7 @@ object Height {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setHeight(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -63,7 +63,7 @@ object Height {
     
     inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
     
-    inline def setWidth(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | container | typings.vegaLite.buildSrcSpecBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

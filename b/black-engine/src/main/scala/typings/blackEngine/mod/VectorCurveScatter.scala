@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "VectorCurveScatter")
 @js.native
 open class VectorCurveScatter protected ()
-  extends typings.blackEngine.vectorCurveScatterMod.VectorCurveScatter {
+  extends typings.blackEngine.scattersVectorCurveScatterMod.VectorCurveScatter {
   def this(points: Double*) = this()
 }

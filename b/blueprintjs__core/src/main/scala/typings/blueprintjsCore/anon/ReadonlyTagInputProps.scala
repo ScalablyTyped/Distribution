@@ -1,12 +1,12 @@
 package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.blueprintjsCoreBooleans.`false`
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.propsMod.HTMLInputProps
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsCore.tagInputMod.TagInputAddMethod
-import typings.blueprintjsCore.tagMod.TagProps
-import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typings.blueprintjsCore.libEsmCommonPropsMod.HTMLInputProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typings.blueprintjsCore.libEsmComponentsTagInputTagInputMod.TagInputAddMethod
+import typings.blueprintjsCore.libEsmComponentsTagTagMod.TagProps
+import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent

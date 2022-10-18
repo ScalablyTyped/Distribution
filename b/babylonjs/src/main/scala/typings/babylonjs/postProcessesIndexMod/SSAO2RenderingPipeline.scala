@@ -1,6 +1,6 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
+import typings.babylonjs.camerasCameraMod.Camera
 import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "SSAO2RenderingPipeline")
 @js.native
 open class SSAO2RenderingPipeline protected ()
-  extends typings.babylonjs.renderPipelineIndexMod.SSAO2RenderingPipeline {
+  extends typings.babylonjs.postProcessesRenderPipelineIndexMod.SSAO2RenderingPipeline {
   /**
     * @constructor
     * @param name The rendering pipeline name
@@ -78,5 +78,5 @@ object SSAO2RenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline]
+  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.postProcessesRenderPipelinePipelinesSsao2RenderingPipelineMod.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.postProcessesRenderPipelinePipelinesSsao2RenderingPipelineMod.SSAO2RenderingPipeline]
 }

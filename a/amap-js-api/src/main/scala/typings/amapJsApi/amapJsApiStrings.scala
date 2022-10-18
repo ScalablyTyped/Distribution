@@ -107,10 +107,6 @@ object amapJsApiStrings {
   inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
   
   @js.native
-  sealed trait Omit extends StObject
-  inline def Omit: Omit = "Omit".asInstanceOf[Omit]
-  
-  @js.native
   sealed trait Point extends StObject
   inline def Point: Point = "Point".asInstanceOf[Point]
   

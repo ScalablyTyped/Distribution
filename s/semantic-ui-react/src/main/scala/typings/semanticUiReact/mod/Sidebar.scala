@@ -2,9 +2,9 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
+import typings.semanticUiReact.distCommonjsModulesSidebarSidebarMod.SidebarComponent
+import typings.semanticUiReact.distCommonjsModulesSidebarSidebarMod.SidebarProps
 import typings.semanticUiReact.mod.^
-import typings.semanticUiReact.sidebarSidebarMod.SidebarComponent
-import typings.semanticUiReact.sidebarSidebarMod.SidebarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

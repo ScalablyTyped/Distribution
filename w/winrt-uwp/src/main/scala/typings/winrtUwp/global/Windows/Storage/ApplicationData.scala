@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the application data store. Application data consists of files and settings that are either local, roaming, or temporary. */
-@JSGlobal("Windows.Storage.ApplicationData")
+/* note: abstract class */ @JSGlobal("Windows.Storage.ApplicationData")
 @js.native
-abstract class ApplicationData ()
+open class ApplicationData ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.ApplicationData
 object ApplicationData {

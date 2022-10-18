@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait Document extends StObject {
     * Some characters, including `` ` ``, must be escaped using a `\`. For example, `` `x&y` `` represents `x&y` and `` `bak\`tik` `` represents `` bak`tik ``.
     */
   var fields: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value} */ js.Any
   ] = js.undefined
   
   /** The resource name of the document, for example `projects/{project_id}/databases/{database_id}/documents/{document_path}`. */
@@ -50,9 +47,7 @@ object Document {
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setFields(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value} */ js.Any
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

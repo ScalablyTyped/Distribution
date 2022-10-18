@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@js-joda/core", "Clock")
+/* note: abstract class */ @JSImport("@js-joda/core", "Clock")
 @js.native
-abstract class Clock () extends StObject {
+open class Clock () extends StObject {
   
   def instant(): Instant = js.native
   

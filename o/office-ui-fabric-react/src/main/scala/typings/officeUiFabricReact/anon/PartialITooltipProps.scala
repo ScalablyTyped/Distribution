@@ -1,7 +1,13 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsCalloutCalloutDottypesMod.ICalloutProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDotbaseMod.TooltipBase
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.ITooltip
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.ITooltipProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.ITooltipStyleProps
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.ITooltipStyles
+import typings.officeUiFabricReact.libComponentsTooltipTooltipDottypesMod.TooltipDelay
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -52,12 +58,6 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.tree
 import typings.officeUiFabricReact.officeUiFabricReactStrings.url
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
-import typings.officeUiFabricReact.tooltipBaseMod.TooltipBase
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltip
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltipStyleProps
-import typings.officeUiFabricReact.tooltipTypesMod.ITooltipStyles
-import typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -97,10 +97,10 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.createRefMod.IRefObject
-import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libCreateRefMod.IRefObject
+import typings.uifabricUtilities.libIrenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -244,9 +244,9 @@ trait PartialITooltipProps extends StObject {
   
   var dir: js.UndefOr[String] = js.undefined
   
-  var directionalHint: js.UndefOr[typings.officeUiFabricReact.directionalHintMod.DirectionalHint] = js.undefined
+  var directionalHint: js.UndefOr[typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   
-  var directionalHintForRTL: js.UndefOr[typings.officeUiFabricReact.directionalHintMod.DirectionalHint] = js.undefined
+  var directionalHintForRTL: js.UndefOr[typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
@@ -763,9 +763,9 @@ object PartialITooltipProps {
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    inline def setDirectionalHint(value: typings.officeUiFabricReact.directionalHintMod.DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
+    inline def setDirectionalHint(value: typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint): Self = StObject.set(x, "directionalHint", value.asInstanceOf[js.Any])
     
-    inline def setDirectionalHintForRTL(value: typings.officeUiFabricReact.directionalHintMod.DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
+    inline def setDirectionalHintForRTL(value: typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint): Self = StObject.set(x, "directionalHintForRTL", value.asInstanceOf[js.Any])
     
     inline def setDirectionalHintForRTLUndefined: Self = StObject.set(x, "directionalHintForRTL", js.undefined)
     

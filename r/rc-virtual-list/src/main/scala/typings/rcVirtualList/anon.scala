@@ -1,9 +1,9 @@
 package typings.rcVirtualList
 
 import typings.node.timersMod.global.NodeJS.Timeout
-import typings.rcVirtualList.listMod.ListRef
-import typings.rcVirtualList.listMod.ScrollAlign
-import typings.rcVirtualList.listMod.ScrollConfig
+import typings.rcVirtualList.esListMod.ListRef
+import typings.rcVirtualList.esListMod.ScrollAlign
+import typings.rcVirtualList.esListMod.ScrollConfig
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject

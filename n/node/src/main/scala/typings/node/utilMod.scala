@@ -1,14 +1,14 @@
 package typings.node
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import typings.node.NodeJS.ArrayBufferView
+import typings.node.NodeJS.Dict
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Fatal
 import typings.node.anon.IndexKind
 import typings.node.anon.Kind
-import typings.node.anon.Name
 import typings.node.anon.Positionals
 import typings.node.anon.Stream
-import typings.node.anon.Tokens
 import typings.node.anon.Values
 import typings.node.nodeStrings.boolean
 import typings.node.nodeStrings.get
@@ -42,11 +42,11 @@ object utilMod {
       */
     def decode(): String = js.native
     def decode(input: js.typedarray.ArrayBuffer): String = js.native
-    def decode(input: js.typedarray.ArrayBufferView): String = js.native
-    def decode(input: js.typedarray.ArrayBufferView, options: Stream): String = js.native
     def decode(input: js.typedarray.ArrayBuffer, options: Stream): String = js.native
     def decode(input: Null, options: Stream): String = js.native
     def decode(input: Unit, options: Stream): String = js.native
+    def decode(input: ArrayBufferView): String = js.native
+    def decode(input: ArrayBufferView, options: Stream): String = js.native
     
     /**
       * The encoding supported by the `TextDecoder` instance.
@@ -99,68 +99,30 @@ object utilMod {
     val encoding: String = js.native
   }
   
-  inline def callbackify(fn: js.Function0[js.Promise[Unit]]): js.Function1[
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
-    Unit
-  ]]
-  inline def callbackify[T1](fn: js.Function1[/* arg1 */ T1, js.Promise[Unit]]): js.Function2[
-    /* arg1 */ T1, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
-    Unit
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* arg1 */ T1, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
-    Unit
-  ]]
+  inline def callbackify(fn: js.Function0[js.Promise[Unit]]): js.Function1[/* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit]]
+  inline def callbackify[T1](fn: js.Function1[/* arg1 */ T1, js.Promise[Unit]]): js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit]]
   inline def callbackify[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[Unit]]): js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ]]
   inline def callbackify[T1, T2, T3](fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[Unit]]): js.Function4[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ]]
   inline def callbackify[T1, T2, T3, T4](fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[Unit]]): js.Function5[
@@ -168,20 +130,14 @@ object utilMod {
     /* arg2 */ T2, 
     /* arg3 */ T3, 
     /* arg4 */ T4, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
     /* arg4 */ T4, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ]]
   inline def callbackify[T1, T2, T3, T4, T5](
@@ -199,10 +155,7 @@ object utilMod {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function6[
     /* arg1 */ T1, 
@@ -210,10 +163,7 @@ object utilMod {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ]]
   inline def callbackify[T1, T2, T3, T4, T5, T6](
@@ -233,10 +183,7 @@ object utilMod {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function7[
     /* arg1 */ T1, 
@@ -245,10 +192,7 @@ object utilMod {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* callback */ js.Function1[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      Unit
-    ], 
+    /* callback */ js.Function1[/* err */ ErrnoException, Unit], 
     Unit
   ]]
   
@@ -269,11 +213,7 @@ object utilMod {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function7[
     /* arg1 */ T1, 
@@ -282,11 +222,7 @@ object utilMod {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ]]
   
@@ -305,11 +241,7 @@ object utilMod {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function6[
     /* arg1 */ T1, 
@@ -317,11 +249,7 @@ object utilMod {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ]]
   
@@ -330,22 +258,14 @@ object utilMod {
     /* arg2 */ T2, 
     /* arg3 */ T3, 
     /* arg4 */ T4, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function5[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
     /* arg4 */ T4, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ]]
   
@@ -353,75 +273,43 @@ object utilMod {
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ]]
   
   inline def callbackify_T1T2TResult[T1, T2, TResult](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[TResult]]): js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* result */ TResult, Unit], 
     Unit
   ]]
   
   inline def callbackify_T1TResult[T1, TResult](fn: js.Function1[/* arg1 */ T1, js.Promise[TResult]]): js.Function2[
     /* arg1 */ T1, 
-    /* callback */ js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* arg1 */ T1, 
-    /* callback */ js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException, /* result */ TResult, Unit], 
     Unit
   ]]
   
   inline def callbackify_TResult[TResult](fn: js.Function0[js.Promise[TResult]]): js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException, /* result */ TResult, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* callback */ js.Function2[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ /* err */ Any, 
-      /* result */ TResult, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException, /* result */ TResult, Unit], 
     Unit
   ]]
   
@@ -449,6 +337,33 @@ object utilMod {
   
   inline def getSystemErrorName(err: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemErrorName")(err.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  object global {
+    
+    /**
+      * `TextDecoder` class is a global reference for `require('util').TextDecoder`
+      * https://nodejs.org/api/globals.html#textdecoder
+      * @since v11.0.0
+      */
+    @JSGlobal("TextDecoder")
+    @js.native
+    def TextDecoder: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   TextDecoder :infer TextDecoder} ? TextDecoder : new (encoding : string | undefined, options : {  fatal :boolean | undefined,   ignoreBOM :boolean | undefined} | undefined): node.util.TextDecoder */ js.Any = js.native
+    inline def TextDecoder_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   TextDecoder :infer TextDecoder} ? TextDecoder : new (encoding : string | undefined, options : {  fatal :boolean | undefined,   ignoreBOM :boolean | undefined} | undefined): node.util.TextDecoder */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("TextDecoder")(x.asInstanceOf[js.Any])
+    
+    /**
+      * `TextEncoder` class is a global reference for `require('util').TextEncoder`
+      * https://nodejs.org/api/globals.html#textencoder
+      * @since v11.0.0
+      */
+    @JSGlobal("TextEncoder")
+    @js.native
+    def TextEncoder: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   TextEncoder :infer TextEncoder} ? TextEncoder : new (): node.util.TextEncoder */ js.Any = js.native
+    inline def TextEncoder_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   TextEncoder :infer TextEncoder} ? TextEncoder : new (): node.util.TextEncoder */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("TextEncoder")(x.asInstanceOf[js.Any])
+  }
+  
   inline def inherits(constructor: Any, superConstructor: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(constructor.asInstanceOf[js.Any], superConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object inspect {
@@ -471,10 +386,8 @@ object utilMod {
     
     @JSImport("util", "inspect.colors")
     @js.native
-    def colors: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<[number, number]> */ Any = js.native
-    inline def colors_=(
-      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<[number, number]> */ Any
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
+    def colors: Dict[js.Tuple2[Double, Double]] = js.native
+    inline def colors_=(x: Dict[js.Tuple2[Double, Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colors")(x.asInstanceOf[js.Any])
     
     /**
       * That can be used to declare custom inspect functions.
@@ -672,6 +585,10 @@ object utilMod {
   
   inline def toUSVString(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUSVString")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def transferableAbortController(): AbortController = ^.asInstanceOf[js.Dynamic].applyDynamic("transferableAbortController")().asInstanceOf[AbortController]
+  
+  inline def transferableAbortSignal(signal: AbortSignal): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("transferableAbortSignal")(signal.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+  
   type CustomInspectFunction = js.Function2[/* depth */ Double, /* options */ InspectOptionsStylized, String]
   
   /* Rewritten from type alias, can be one of: 
@@ -736,12 +653,20 @@ object utilMod {
   
   type ExtractOptionValue[T /* <: ParseArgsConfig */, O /* <: ParseArgsOptionConfig */] = IfDefaultsTrue[
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
-    String | Boolean, 
+    /* import warning: importer.ImportType#apply Failed type conversion: O['type'] extends 'string' ? string : O['type'] extends 'boolean' ? boolean : string | boolean */ js.Any, 
     String | Boolean
   ]
   
   // we put the `extends false` condition first here because `undefined` compares like `any` when `strictNullChecks: false`
-  type IfDefaultsFalse[T, IfTrue, IfFalse] = IfFalse | IfTrue
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends false ? IfFalse : T extends true ? IfTrue : IfFalse
+    }}}
+    */
+  @js.native
+  trait IfDefaultsFalse[T, IfTrue, IfFalse] extends StObject
   
   /*
     IfDefaultsTrue and IfDefaultsFalse are helpers to handle default values for missing boolean properties.
@@ -752,7 +677,15 @@ object utilMod {
     This is technically incorrect but is a much nicer UX for the common case.
     The IfDefaultsTrue version is for things which default to true; the IfDefaultsFalse version is for things which default to false.
     */
-  type IfDefaultsTrue[T, IfTrue, IfFalse] = IfTrue | IfFalse
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends true ? IfTrue : T extends false ? IfFalse : IfTrue
+    }}}
+    */
+  @js.native
+  trait IfDefaultsTrue[T, IfTrue, IfFalse] extends StObject
   
   trait InspectOptions extends StObject {
     
@@ -888,22 +821,22 @@ object utilMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.node.anon.RawName
-    - typings.node.anon.Value
+    - typings.node.anon.Index
+    - typings.node.anon.InlineValue
   */
   trait OptionToken
     extends StObject
        with Token
   object OptionToken {
     
-    inline def RawName(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.RawName = {
+    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.RawName]
+      __obj.asInstanceOf[typings.node.anon.Index]
     }
     
-    inline def Value(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.Value = {
+    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.InlineValue = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Value]
+      __obj.asInstanceOf[typings.node.anon.InlineValue]
     }
   }
   
@@ -954,6 +887,11 @@ object utilMod {
   
   trait ParseArgsOptionConfig extends StObject {
     
+    /**
+      * @since v18.11.0
+      */
+    var default: js.UndefOr[String | Boolean | (js.Array[Boolean | String])] = js.undefined
+    
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var short: js.UndefOr[String] = js.undefined
@@ -969,6 +907,12 @@ object utilMod {
     }
     
     extension [Self <: ParseArgsOptionConfig](x: Self) {
+      
+      inline def setDefault(value: String | Boolean | (js.Array[Boolean | String])): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
+      inline def setDefaultVarargs(value: (Boolean | String)*): Self = StObject.set(x, "default", js.Array(value*))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
@@ -1023,7 +967,15 @@ object utilMod {
   
   // If ParseArgsConfig extends T, then the user passed config constructed elsewhere.
   // So we can't rely on the `"not definitely present" implies "definitely not present"` assumption mentioned above.
-  type ParsedResults[T /* <: ParseArgsConfig */] = PreciseParsedResults[T] | Tokens
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    node.util.ParseArgsConfig extends T ? {  values :{[longOption: string] : undefined | string | boolean | std.Array<string | boolean>},   positionals :std.Array<string>,   tokens :std.Array<node.util.Token> | undefined} : node.util.PreciseParsedResults<T>
+    }}}
+    */
+  @js.native
+  trait ParsedResults[T /* <: ParseArgsConfig */] extends StObject
   
   type ParsedTokens[T /* <: ParseArgsConfig */] = js.Array[ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind]
   
@@ -1031,9 +983,7 @@ object utilMod {
     /* import warning: importer.ImportType#apply Failed type conversion: T['strict'] */ js.Any, 
     Any, 
     StringDictionary[js.UndefOr[String | Boolean]]
-  ]) & (js.Object | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ LongOption in keyof T['options'] ]: node.util.IfDefaultsFalse<T['options'][LongOption]['multiple'], undefined | std.Array<node.util.ExtractOptionValue<T, T['options'][LongOption]>>, undefined | node.util.ExtractOptionValue<T, T['options'][LongOption]>>}
-    */ typings.node.nodeStrings.ParsedValues & TopLevel[Any]))
+  ]) & (/* import warning: importer.ImportType#apply Failed type conversion: T['options'] extends node.util.ParseArgsOptionsConfig ? {-readonly [ LongOption in keyof T['options'] ]: node.util.IfDefaultsFalse<T['options'][LongOption]['multiple'], undefined | std.Array<node.util.ExtractOptionValue<T, T['options'][LongOption]>>, undefined | node.util.ExtractOptionValue<T, T['options'][LongOption]>>} : {} */ js.Any)
   
   type PreciseParsedResults[T /* <: ParseArgsConfig */] = IfDefaultsFalse[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tokens'] */ js.Any, 
@@ -1041,12 +991,15 @@ object utilMod {
     Values[T]
   ]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.node.utilMod.OptionToken & typings.node.anon.Name[K]
-    - typings.node.anon.InlineValue[K]
-    - typings.node.anon.Index[K]
-  */
-  type PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] = (_PreciseTokenForOptions[K, O]) | (OptionToken & Name[K])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O['type'] extends 'string' ? {  kind :'option',   index :number,   name :K,   rawName :string,   value :string,   inlineValue :boolean} : O['type'] extends 'boolean' ? {  kind :'option',   index :number,   name :K,   rawName :string,   value :undefined,   inlineValue :undefined} : node.util.OptionToken & {  name :K}
+    }}}
+    */
+  @js.native
+  trait PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.node.nodeStrings.special
@@ -1095,43 +1048,34 @@ object utilMod {
   trait Token extends StObject
   object Token {
     
+    inline def Index(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.Index = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.node.anon.Index]
+    }
+    
     inline def IndexKind(index: Double): typings.node.anon.IndexKind = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "option-terminator")
       __obj.asInstanceOf[typings.node.anon.IndexKind]
+    }
+    
+    inline def InlineValue(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.InlineValue = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.node.anon.InlineValue]
     }
     
     inline def Kind(index: Double, value: String): typings.node.anon.Kind = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], kind = "positional", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.node.anon.Kind]
     }
-    
-    inline def RawName(index: Double, inlineValue: Boolean, name: String, rawName: String, value: String): typings.node.anon.RawName = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.RawName]
-    }
-    
-    inline def Value(index: Double, inlineValue: Unit, name: String, rawName: String, value: Unit): typings.node.anon.Value = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Value]
-    }
   }
   
-  type TokenForOptions[T /* <: ParseArgsConfig */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['options'] */ js.Any */] = OptionToken | (PreciseTokenForOptions[
-    K & String, 
-    /* import warning: importer.ImportType#apply Failed type conversion: T['options'][K] */ js.Any
-  ])
-  
-  trait _PreciseTokenForOptions[K /* <: String */, O /* <: ParseArgsOptionConfig */] extends StObject
-  object _PreciseTokenForOptions {
-    
-    inline def Index[K /* <: String */](index: Double, inlineValue: Boolean, name: K, rawName: String, value: String): typings.node.anon.Index[K] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.Index[K]]
-    }
-    
-    inline def InlineValue[K /* <: String */](index: Double, inlineValue: Unit, name: K, rawName: String, value: Unit): typings.node.anon.InlineValue[K] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], inlineValue = inlineValue.asInstanceOf[js.Any], kind = "option", name = name.asInstanceOf[js.Any], rawName = rawName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.node.anon.InlineValue[K]]
-    }
-  }
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends unknown ? T['options'] extends node.util.ParseArgsOptionsConfig ? node.util.PreciseTokenForOptions<K & string, T['options'][K]> : node.util.OptionToken : never
+    }}}
+    */
+  @js.native
+  trait TokenForOptions[T /* <: ParseArgsConfig */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['options'] */ js.Any */] extends StObject
 }

@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RenderRaw extends StObject {
   
-  var render: `1112`
+  var render: `1140`
   
-  var renderRaw: `1113`
+  var renderRaw: `1141`
 }
 object RenderRaw {
   
-  inline def apply(render: `1112`, renderRaw: `1113`): RenderRaw = {
+  inline def apply(render: `1140`, renderRaw: `1141`): RenderRaw = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderRaw = renderRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderRaw]
   }
   
   extension [Self <: RenderRaw](x: Self) {
     
-    inline def setRender(value: `1112`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: `1140`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    inline def setRenderRaw(value: `1113`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
+    inline def setRenderRaw(value: `1141`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
   }
 }

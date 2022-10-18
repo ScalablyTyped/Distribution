@@ -1,0 +1,26 @@
+package typings.elasticElasticsearch.libApiTypesWithBodyKeyMod
+
+import typings.elasticElasticsearch.elasticElasticsearchStrings.failed_
+import typings.elasticElasticsearch.elasticElasticsearchStrings.started_
+import typings.elasticElasticsearch.elasticElasticsearchStrings.stopping_
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.elasticElasticsearch.elasticElasticsearchStrings.starting
+  - typings.elasticElasticsearch.elasticElasticsearchStrings.started_
+  - typings.elasticElasticsearch.elasticElasticsearchStrings.stopping_
+  - typings.elasticElasticsearch.elasticElasticsearchStrings.failed_
+*/
+trait MlDeploymentAssignmentState extends StObject
+object MlDeploymentAssignmentState {
+  
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
+  
+  inline def started: started_ = "started".asInstanceOf[started_]
+  
+  inline def starting: typings.elasticElasticsearch.elasticElasticsearchStrings.starting = "starting".asInstanceOf[typings.elasticElasticsearch.elasticElasticsearchStrings.starting]
+  
+  inline def stopping: stopping_ = "stopping".asInstanceOf[stopping_]
+}

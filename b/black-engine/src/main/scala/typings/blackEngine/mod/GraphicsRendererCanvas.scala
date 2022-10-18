@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsRendererCanvas")
 @js.native
 open class GraphicsRendererCanvas ()
-  extends typings.blackEngine.graphicsRendererCanvasMod.GraphicsRendererCanvas
+  extends typings.blackEngine.driversCanvasGraphicsRendererCanvasMod.GraphicsRendererCanvas

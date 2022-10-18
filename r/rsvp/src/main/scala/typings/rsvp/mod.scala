@@ -3,7 +3,6 @@ package typings.rsvp
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import typings.rsvp.anon.Length
 import typings.rsvp.anon.TypeofEventTarget
 import typings.rsvp.anon.TypeofPromise
@@ -647,16 +646,12 @@ object mod {
     ): js.Function1[
         /* arg1 */ A, 
         typings.rsvp.mod.RSVP.Promise[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in K1 ]: T}
-      */ typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T} */ js.Any
         ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* arg1 */ A, 
         typings.rsvp.mod.RSVP.Promise[
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in K1 ]: T}
-      */ typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T} */ js.Any
         ]
       ]]
     inline def denodeify[T1, T2, A, K1 /* <: String */, K2 /* <: String */](
@@ -668,10 +663,14 @@ object mod {
       options: js.Tuple2[K1, K2]
     ): js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
+        typings.rsvp.mod.RSVP.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+        ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
+        typings.rsvp.mod.RSVP.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+        ]
       ]]
     inline def denodeify[T1, T2, T3, A, K1 /* <: String */, K2 /* <: String */, K3 /* <: String */](
       nodeFunc: js.Function2[
@@ -682,10 +681,14 @@ object mod {
       options: js.Tuple3[K1, K2, K3]
     ): js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
+        typings.rsvp.mod.RSVP.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+        ]
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
         /* arg1 */ A, 
-        typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.denodeify & TopLevel[Any]]
+        typings.rsvp.mod.RSVP.Promise[
+          /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+        ]
       ]]
     
     inline def denodeify_T1T2A[T1, T2, A](
@@ -842,43 +845,27 @@ object mod {
     
     // ----- hash and hashSettled ----- //
     inline def hash[T](
-      `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-      */ typings.rsvp.rsvpStrings.hash & TopLevel[T]
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any
     ): typings.rsvp.mod.RSVP.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
     inline def hash[T](
-      `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-      */ typings.rsvp.rsvpStrings.hash & TopLevel[T],
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any,
       label: String
     ): typings.rsvp.mod.RSVP.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(`object`.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
     
     inline def hashSettled[T](
-      `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-      */ typings.rsvp.rsvpStrings.hashSettled & TopLevel[T]
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any
     ): typings.rsvp.mod.RSVP.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-      */ typings.rsvp.rsvpStrings.hashSettled & TopLevel[T]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashSettled")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-      */ typings.rsvp.rsvpStrings.hashSettled & TopLevel[T]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
       ]]
     inline def hashSettled[T](
-      `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-      */ typings.rsvp.rsvpStrings.hashSettled & TopLevel[T],
+      `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any,
       label: String
     ): typings.rsvp.mod.RSVP.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-      */ typings.rsvp.rsvpStrings.hashSettled & TopLevel[T]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashSettled")(`object`.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-      */ typings.rsvp.rsvpStrings.hashSettled & TopLevel[T]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
       ]]
     
     inline def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U]): typings.rsvp.mod.RSVP.Promise[js.Array[U] & `8`] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(entries.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[js.Array[U] & `8`]]
@@ -1704,16 +1691,12 @@ object mod {
   ): js.Function1[
     /* arg1 */ A, 
     typings.rsvp.mod.RSVP.Promise[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in K1 ]: T}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* arg1 */ A, 
     typings.rsvp.mod.RSVP.Promise[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in K1 ]: T}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T} */ js.Any
     ]
   ]]
   inline def denodeify[T1, T2, A, K1 /* <: String */, K2 /* <: String */](
@@ -1725,10 +1708,14 @@ object mod {
     options: js.Tuple2[K1, K2]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
+    typings.rsvp.mod.RSVP.Promise[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+    ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
+    typings.rsvp.mod.RSVP.Promise[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+    ]
   ]]
   inline def denodeify[T1, T2, T3, A, K1 /* <: String */, K2 /* <: String */, K3 /* <: String */](
     nodeFunc: js.Function2[
@@ -1739,10 +1726,14 @@ object mod {
     options: js.Tuple3[K1, K2, K3]
   ): js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
+    typings.rsvp.mod.RSVP.Promise[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+    ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("denodeify")(nodeFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* arg1 */ A, 
-    typings.rsvp.mod.RSVP.Promise[typings.rsvp.rsvpStrings.apply & TopLevel[Any]]
+    typings.rsvp.mod.RSVP.Promise[
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ K in K1 ]: T1} */ js.Any
+    ]
   ]]
   
   inline def denodeify_T1T2A[T1, T2, A](
@@ -1875,43 +1866,27 @@ object mod {
   ): typings.rsvp.mod.RSVP.Promise[js.Array[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(entries.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[js.Array[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]]]
   
   inline def hash[T](
-    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T]
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any
   ): typings.rsvp.mod.RSVP.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
   inline def hash[T](
-    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T],
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any,
     label: String
   ): typings.rsvp.mod.RSVP.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(`object`.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[T]]
   
   inline def hashSettled[T](
-    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T]
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any
   ): typings.rsvp.mod.RSVP.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashSettled")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.rsvp.mod.RSVP.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
   ]]
   inline def hashSettled[T](
-    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T],
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>} */ js.Any,
     label: String
   ): typings.rsvp.mod.RSVP.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashSettled")(`object`.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
-    */ typings.rsvp.rsvpStrings.apply & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>} */ js.Any
   ]]
   
   inline def map[T, U](entries: js.Array[Arg[T]], mapFn: js.Function1[/* item */ T, U]): typings.rsvp.mod.RSVP.Promise[js.Array[U] & `8`] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(entries.asInstanceOf[js.Any], mapFn.asInstanceOf[js.Any])).asInstanceOf[typings.rsvp.mod.RSVP.Promise[js.Array[U] & `8`]]

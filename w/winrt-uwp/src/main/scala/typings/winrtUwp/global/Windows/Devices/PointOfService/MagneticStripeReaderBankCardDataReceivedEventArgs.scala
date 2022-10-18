@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides bank card data from the BankCardDataReceived event. */
-@JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderBankCardDataReceivedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderBankCardDataReceivedEventArgs")
 @js.native
-abstract class MagneticStripeReaderBankCardDataReceivedEventArgs ()
+open class MagneticStripeReaderBankCardDataReceivedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReaderBankCardDataReceivedEventArgs {
   

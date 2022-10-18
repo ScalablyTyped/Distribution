@@ -2,11 +2,11 @@ package typings.reactJsonTree
 
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
-import typings.reactBase16Styling.typesMod.StylingFunction
-import typings.reactBase16Styling.typesMod.Theme
+import typings.reactBase16Styling.libTypesTypesMod.StylingFunction
+import typings.reactBase16Styling.libTypesTypesMod.Theme
 import typings.reactJsonTree.anon.Data
 import typings.reactJsonTree.anon.GetItemString
-import typings.reactJsonTree.typesMod.CircularPropsPassedThroughJSONTree
+import typings.reactJsonTree.libTypesTypesMod.CircularPropsPassedThroughJSONTree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

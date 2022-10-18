@@ -3,13 +3,13 @@ package typings.googleapisCommon
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
-import typings.googleAuthLibrary.authclientMod.AuthClient
-import typings.googleAuthLibrary.baseexternalclientMod.BaseExternalAccountClient
-import typings.googleAuthLibrary.externalclientMod.ExternalAccountClientOptions
+import typings.googleAuthLibrary.buildSrcAuthAuthclientMod.AuthClient
+import typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient
+import typings.googleAuthLibrary.buildSrcAuthExternalclientMod.ExternalAccountClientOptions
+import typings.googleAuthLibrary.buildSrcAuthOauth2clientMod.RefreshOptions
 import typings.googleAuthLibrary.mod.ExternalAccountClient
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.oauth2clientMod.RefreshOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

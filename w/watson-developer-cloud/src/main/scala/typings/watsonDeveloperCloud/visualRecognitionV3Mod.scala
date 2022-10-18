@@ -8,9 +8,9 @@ object visualRecognitionV3Mod {
   
   @JSImport("watson-developer-cloud/visual-recognition/v3", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.^ {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   
   type VisualRecognitionV3 = typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.^

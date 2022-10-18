@@ -1,15 +1,15 @@
 package typings.bootstrap.mod
 
 import typings.bootstrap.anon.PartialOptionsBoundary
-import typings.bootstrap.baseComponentMod.ComponentOptions
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
 import typings.bootstrap.bootstrapStrings.tooltip
+import typings.bootstrap.jsDistBaseComponentMod.ComponentOptions
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistTooltipMod.Tooltip.Options
+import typings.bootstrap.jsDistTooltipMod.Tooltip.SetContentFunction
+import typings.bootstrap.jsDistTooltipMod.Tooltip.jQueryInterface
+import typings.bootstrap.jsDistTooltipMod.default
 import typings.bootstrap.mod.global.Element
-import typings.bootstrap.tooltipMod.Tooltip.Options
-import typings.bootstrap.tooltipMod.Tooltip.SetContentFunction
-import typings.bootstrap.tooltipMod.Tooltip.jQueryInterface
-import typings.bootstrap.tooltipMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,10 +76,10 @@ object Tooltip {
     def delay: String = js.native
     inline def delay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
     
-    @JSImport("bootstrap", "Tooltip.DefaultType.fallbackPlacement")
+    @JSImport("bootstrap", "Tooltip.DefaultType.fallbackPlacements")
     @js.native
-    def fallbackPlacement: String = js.native
-    inline def fallbackPlacement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacement")(x.asInstanceOf[js.Any])
+    def fallbackPlacements: String = js.native
+    inline def fallbackPlacements_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacements")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap", "Tooltip.DefaultType.html")
     @js.native
@@ -200,17 +200,17 @@ object Tooltip {
   object Events extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.bootstrap.tooltipMod.Tooltip.Events & String] = js.native
+    def apply(value: String): js.UndefOr[typings.bootstrap.jsDistTooltipMod.Tooltip.Events & String] = js.native
     
-    /* "hidden.bs.tooltip" */ val hidden: typings.bootstrap.tooltipMod.Tooltip.Events.hidden & String = js.native
+    /* "hidden.bs.tooltip" */ val hidden: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.hidden & String = js.native
     
-    /* "hide.bs.tooltip" */ val hide: typings.bootstrap.tooltipMod.Tooltip.Events.hide & String = js.native
+    /* "hide.bs.tooltip" */ val hide: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.hide & String = js.native
     
-    /* "inserted.bs.tooltip" */ val inserted: typings.bootstrap.tooltipMod.Tooltip.Events.inserted & String = js.native
+    /* "inserted.bs.tooltip" */ val inserted: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.inserted & String = js.native
     
-    /* "show.bs.tooltip" */ val show: typings.bootstrap.tooltipMod.Tooltip.Events.show & String = js.native
+    /* "show.bs.tooltip" */ val show: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.show & String = js.native
     
-    /* "shown.bs.tooltip" */ val shown: typings.bootstrap.tooltipMod.Tooltip.Events.shown & String = js.native
+    /* "shown.bs.tooltip" */ val shown: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.shown & String = js.native
   }
   
   /* static member */
@@ -222,14 +222,14 @@ object Tooltip {
   /* static member */
   @JSImport("bootstrap", "Tooltip.SetContentFunction")
   @js.native
-  def SetContentFunction: typings.bootstrap.tooltipMod.Tooltip.SetContentFunction = js.native
+  def SetContentFunction: typings.bootstrap.jsDistTooltipMod.Tooltip.SetContentFunction = js.native
   inline def SetContentFunction_=(x: SetContentFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetContentFunction")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Tooltip.getInstance")
   @js.native
-  def getInstance: GetInstanceFactory[typings.bootstrap.tooltipMod.Tooltip] = js.native
-  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.tooltipMod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+  def getInstance: GetInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip] = js.native
+  inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
   
   /**
     * Static method which allows you to get the tooltip instance associated with
@@ -238,12 +238,12 @@ object Tooltip {
   /* static member */
   @JSImport("bootstrap", "Tooltip.getOrCreateInstance")
   @js.native
-  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.tooltipMod.Tooltip, ComponentOptions] = js.native
-  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.tooltipMod.Tooltip, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+  def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip, ComponentOptions] = js.native
+  inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("bootstrap", "Tooltip.jQueryInterface")
   @js.native
-  def jQueryInterface: typings.bootstrap.tooltipMod.Tooltip.jQueryInterface = js.native
+  def jQueryInterface: typings.bootstrap.jsDistTooltipMod.Tooltip.jQueryInterface = js.native
   inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
 }

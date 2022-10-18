@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for the SampleRequested event. */
-@JSGlobal("Windows.Media.Core.MediaStreamSourceSampleRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.MediaStreamSourceSampleRequestedEventArgs")
 @js.native
-abstract class MediaStreamSourceSampleRequestedEventArgs ()
+open class MediaStreamSourceSampleRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaStreamSourceSampleRequestedEventArgs {
   

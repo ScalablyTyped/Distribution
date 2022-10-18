@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -16,14 +16,14 @@ object bakedVertexAnimationIndexMod {
     * @param scene defines the current scene
     */
   open class BakedVertexAnimationManager ()
-    extends typings.babylonjs.bakedVertexAnimationManagerMod.BakedVertexAnimationManager {
+    extends typings.babylonjs.bakedVertexAnimationBakedVertexAnimationManagerMod.BakedVertexAnimationManager {
     def this(scene: Nullable[Scene]) = this()
   }
   
   @JSImport("babylonjs/BakedVertexAnimation/index", "VertexAnimationBaker")
   @js.native
   open class VertexAnimationBaker protected ()
-    extends typings.babylonjs.vertexAnimationBakerMod.VertexAnimationBaker {
+    extends typings.babylonjs.bakedVertexAnimationVertexAnimationBakerMod.VertexAnimationBaker {
     /**
       * Create a new VertexAnimationBaker object which can help baking animations into a texture.
       * @param scene Defines the scene the VAT belongs to

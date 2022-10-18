@@ -1,7 +1,7 @@
 package typings.appiumAdb
 
-import typings.appiumAdb.adbMod.ADB
-import typings.appiumAdb.adbMod.CreateAdbOptions
+import typings.appiumAdb.libAdbMod.ADB
+import typings.appiumAdb.libAdbMod.CreateAdbOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,8 +28,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createADB(): js.Promise[typings.appiumAdb.adbMod.ADB] = ^.asInstanceOf[js.Dynamic].applyDynamic("createADB")().asInstanceOf[js.Promise[typings.appiumAdb.adbMod.ADB]]
-    inline def createADB(opts: CreateAdbOptions): js.Promise[typings.appiumAdb.adbMod.ADB] = ^.asInstanceOf[js.Dynamic].applyDynamic("createADB")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.appiumAdb.adbMod.ADB]]
+    inline def createADB(): js.Promise[typings.appiumAdb.libAdbMod.ADB] = ^.asInstanceOf[js.Dynamic].applyDynamic("createADB")().asInstanceOf[js.Promise[typings.appiumAdb.libAdbMod.ADB]]
+    inline def createADB(opts: CreateAdbOptions): js.Promise[typings.appiumAdb.libAdbMod.ADB] = ^.asInstanceOf[js.Dynamic].applyDynamic("createADB")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.appiumAdb.libAdbMod.ADB]]
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */

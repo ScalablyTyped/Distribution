@@ -69,7 +69,11 @@ open class Frame () extends StObject {
   /**
     * @deprecated Use {@link Frame.$$} with the `xpath` prefix.
     *
+    * Example: `await frame.$$('xpath/' + xpathExpression)`
+    *
     * This method evaluates the given XPath expression and returns the results.
+    * If `xpath` starts with `//` instead of `.//`, the dot will be appended
+    * automatically.
     * @param expression - the XPath expression to evaluate.
     */
   @JSName("$x")
@@ -497,7 +501,7 @@ open class Frame () extends StObject {
   def waitForSelector[Selector /* <: String */](selector: Selector, options: WaitForSelectorOptions): js.Promise[ElementHandle[NodeFor[Selector]] | Null] = js.native
   
   /**
-    * @deprecated Use `new Promise(r => setTimeout(r, milliseconds));`.
+    * @deprecated Replace with `new Promise(r => setTimeout(r, milliseconds));`.
     *
     * Causes your script to wait for the given number of milliseconds.
     *
@@ -520,6 +524,12 @@ open class Frame () extends StObject {
   
   /**
     * @deprecated Use {@link Frame.waitForSelector} with the `xpath` prefix.
+    *
+    * Example: `await frame.waitForSelector('xpath/' + xpathExpression)`
+    *
+    * The method evaluates the XPath expression relative to the Frame.
+    * If `xpath` starts with `//` instead of `.//`, the dot will be appended
+    * automatically.
     *
     * Wait for the `xpath` to appear in page. If at the moment of calling the
     * method the `xpath` already exists, the method will return immediately. If

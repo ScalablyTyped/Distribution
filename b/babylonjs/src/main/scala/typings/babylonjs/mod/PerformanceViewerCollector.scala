@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.performanceViewerCollectorMod.IPerformanceViewerStrategyParameter
+import typings.babylonjs.miscPerformanceViewerPerformanceViewerCollectorMod.IPerformanceViewerStrategyParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PerformanceViewerCollector")
 @js.native
 open class PerformanceViewerCollector protected ()
-  extends typings.babylonjs.legacyMod.PerformanceViewerCollector {
+  extends typings.babylonjs.legacyLegacyMod.PerformanceViewerCollector {
   /**
     * Handles the creation of a performance viewer collector.
     * @param _scene the scene to collect on.

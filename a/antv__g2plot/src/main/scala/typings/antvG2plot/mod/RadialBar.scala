@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialRadialBarOptions
-import typings.antvG2plot.radialBarTypesMod.RadialBarOptions
+import typings.antvG2plot.libPlotsRadialBarTypesMod.RadialBarOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "RadialBar")
 @js.native
 open class RadialBar protected ()
-  extends typings.antvG2plot.radialBarMod.RadialBar {
+  extends typings.antvG2plot.libPlotsRadialBarMod.RadialBar {
   def this(container: String, options: RadialBarOptions) = this()
   def this(container: HTMLElement, options: RadialBarOptions) = this()
 }

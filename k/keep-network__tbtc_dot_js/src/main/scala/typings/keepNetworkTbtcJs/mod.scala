@@ -1,15 +1,15 @@
 package typings.keepNetworkTbtcJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.keepNetworkTbtcJs.commonTypesMod.Contract
-import typings.keepNetworkTbtcJs.commonTypesMod.TBTCConfig
-import typings.keepNetworkTbtcJs.commonTypesMod.Web3
-import typings.keepNetworkTbtcJs.constantsMod.Constants
-import typings.keepNetworkTbtcJs.depositMod.DepositFactory
-import typings.keepNetworkTbtcJs.ethereumHelpersMod.EthereumHelpers.Artifact
-import typings.keepNetworkTbtcJs.ethereumHelpersMod.EthereumHelpers.ContractCall
-import typings.keepNetworkTbtcJs.ethereumHelpersMod.EthereumHelpers.ContractCallOptions
-import typings.keepNetworkTbtcJs.tbtcMod.TBTC
+import typings.keepNetworkTbtcJs.srcCommonTypesMod.Contract
+import typings.keepNetworkTbtcJs.srcCommonTypesMod.TBTCConfig
+import typings.keepNetworkTbtcJs.srcCommonTypesMod.Web3
+import typings.keepNetworkTbtcJs.srcConstantsMod.Constants
+import typings.keepNetworkTbtcJs.srcDepositMod.DepositFactory
+import typings.keepNetworkTbtcJs.srcEthereumHelpersMod.EthereumHelpers.Artifact
+import typings.keepNetworkTbtcJs.srcEthereumHelpersMod.EthereumHelpers.ContractCall
+import typings.keepNetworkTbtcJs.srcEthereumHelpersMod.EthereumHelpers.ContractCallOptions
+import typings.keepNetworkTbtcJs.srcTbtcMod.TBTC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object mod {
   @JSImport("@keep-network/tbtc.js", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.keepNetworkTbtcJs.tbtcMod.default {
+    extends typings.keepNetworkTbtcJs.srcTbtcMod.default {
     def this(depositFactory: DepositFactory, constants: Constants, config: TBTCConfig) = this()
   }
   /* static members */

@@ -1,6 +1,6 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.routersTypesMod.PartialRoute
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialRoute
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ trait PartialStateReadonlykeystHistory extends StObject {
   
   val routes: js.Array[
     PartialRoute[
-      typings.tuyaPanelKit.routersTypesMod.Route[
+      typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<tuya-panel-kit.anon.History>['routeNames'][number] */ js.Any, 
         js.UndefOr[js.Object]
       ]
@@ -35,7 +35,7 @@ object PartialStateReadonlykeystHistory {
   inline def apply(
     routes: js.Array[
       PartialRoute[
-        typings.tuyaPanelKit.routersTypesMod.Route[
+        typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
           /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<tuya-panel-kit.anon.History>['routeNames'][number] */ js.Any, 
           js.UndefOr[js.Object]
         ]
@@ -71,7 +71,7 @@ object PartialStateReadonlykeystHistory {
     inline def setRoutes(
       value: js.Array[
           PartialRoute[
-            typings.tuyaPanelKit.routersTypesMod.Route[
+            typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
               /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<tuya-panel-kit.anon.History>['routeNames'][number] */ js.Any, 
               js.UndefOr[js.Object]
             ]
@@ -81,7 +81,7 @@ object PartialStateReadonlykeystHistory {
     
     inline def setRoutesVarargs(
       value: (PartialRoute[
-          typings.tuyaPanelKit.routersTypesMod.Route[
+          typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: std.Readonly<tuya-panel-kit.anon.History>['routeNames'][number] */ js.Any, 
             js.UndefOr[js.Object]
           ]

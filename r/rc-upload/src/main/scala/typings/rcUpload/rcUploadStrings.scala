@@ -1,6 +1,6 @@
 package typings.rcUpload
 
-import typings.rcUpload.interfaceMod.UploadRequestMethod
+import typings.rcUpload.esInterfaceMod.UploadRequestMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

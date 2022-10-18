@@ -1,7 +1,10 @@
 package typings.jupyterlabShortcutsExtension
 
 import org.scalablytyped.runtime.Shortcut
-import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabApplication.libFrontendMod.JupyterFrontEnd.IShell
+import typings.jupyterlabApplication.libFrontendMod.JupyterFrontEndPlugin
+import typings.jupyterlabShortcutsExtension.jupyterlabShortcutsExtensionStrings.desktop
+import typings.jupyterlabShortcutsExtension.jupyterlabShortcutsExtensionStrings.mobile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,10 +42,10 @@ object mod extends Shortcut {
     */
   @JSImport("@jupyterlab/shortcuts-extension", JSImport.Default)
   @js.native
-  val default: JupyterFrontEndPlugin[Unit] = js.native
+  val default: JupyterFrontEndPlugin[Unit, IShell, desktop | mobile] = js.native
   
-  type _To = JupyterFrontEndPlugin[Unit]
+  type _To = JupyterFrontEndPlugin[Unit, IShell, desktop | mobile]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: JupyterFrontEndPlugin[Unit] = default
+  override def _to: JupyterFrontEndPlugin[Unit, IShell, desktop | mobile] = default
 }

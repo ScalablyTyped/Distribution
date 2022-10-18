@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ismobilejs"
-version := "1.1.1-676c9a"
+version := "1.1.1-d9ff44"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,10 +1,10 @@
 package typings.reactNativePaper.anon
 
 import typings.callstackReactThemeProvider.mod.DeepPartial
-import typings.reactNativePaper.typescriptTypesMod.Mode
-import typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.ThemeAnimation
-import typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.ThemeColors
-import typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.ThemeFonts
+import typings.reactNativePaper.libTypescriptTypesMod.Mode
+import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.ThemeAnimation
+import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.ThemeColors
+import typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.ThemeFonts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

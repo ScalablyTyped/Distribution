@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object algoliaClientCommonStrings {
   
   @js.native
-  sealed trait AddedMethods extends StObject
-  inline def AddedMethods: AddedMethods = "AddedMethods".asInstanceOf[AddedMethods]
-  
-  @js.native
-  sealed trait CreateClient extends StObject
-  inline def CreateClient: CreateClient = "CreateClient".asInstanceOf[CreateClient]
-  
-  @js.native
   sealed trait headers extends StObject
   inline def headers: headers = "headers".asInstanceOf[headers]
   

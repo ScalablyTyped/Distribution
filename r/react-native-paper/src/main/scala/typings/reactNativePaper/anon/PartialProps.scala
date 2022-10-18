@@ -16,7 +16,7 @@ trait PartialProps extends StObject {
   
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var theme: js.UndefOr[typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme] = js.undefined
+  var theme: js.UndefOr[typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme] = js.undefined
 }
 object PartialProps {
   
@@ -41,7 +41,7 @@ object PartialProps {
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

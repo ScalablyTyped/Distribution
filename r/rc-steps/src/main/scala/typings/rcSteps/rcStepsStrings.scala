@@ -1,6 +1,6 @@
 package typings.rcSteps
 
-import typings.rcSteps.interfaceMod.Status
+import typings.rcSteps.libInterfaceMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

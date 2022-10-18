@@ -9,7 +9,7 @@ trait RegSymbolSymbol extends StObject {
   
   var infix: FNotationPrecedence
   
-  var regSymbol: String
+  var regSymbol: /* \^ */ String
   
   var symbol: ^
 }
@@ -24,7 +24,7 @@ object RegSymbolSymbol {
     
     inline def setInfix(value: FNotationPrecedence): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    inline def setRegSymbol(value: String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: /* \^ */ String): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     inline def setSymbol(value: ^): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }

@@ -10,7 +10,7 @@ object mod {
   @JSImport("rmc-feedback", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.rmcFeedback.touchFeedbackMod.default
+    extends typings.rmcFeedback.libTouchFeedbackMod.default
   /* static members */
   object default {
     

@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new instance CustomParticleEmitter
   */
 open class CustomParticleEmitter ()
-  extends typings.babylonjs.emitterTypesIndexMod.CustomParticleEmitter
+  extends typings.babylonjs.particlesEmitterTypesIndexMod.CustomParticleEmitter

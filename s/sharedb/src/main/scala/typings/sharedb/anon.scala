@@ -1,13 +1,13 @@
 package typings.sharedb
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sharedb.clientMod.Doc
+import typings.sharedb.libClientMod.Doc
+import typings.sharedb.libSharedbMod.Query
 import typings.sharedb.mod.ErrorHandler
 import typings.sharedb.mod.ErrorHandlerContext
 import typings.sharedb.mod.ExtraDB
 import typings.sharedb.mod.MilestoneDB
 import typings.sharedb.mod.PubSub
-import typings.sharedb.sharedbMod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

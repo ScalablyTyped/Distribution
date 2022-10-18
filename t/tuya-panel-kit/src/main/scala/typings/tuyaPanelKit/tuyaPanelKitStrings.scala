@@ -1,13 +1,13 @@
 package typings.tuyaPanelKit
 
+import typings.tuyaPanelKit.`@reactNavigationRoutersTabRouterMod`.BackBehavior
+import typings.tuyaPanelKit.`@reactNavigationStackTypesMod`.GestureDirection
+import typings.tuyaPanelKit.`@reactNavigationStackTypesMod`.StackCardMode
+import typings.tuyaPanelKit.`@reactNavigationStackTypesMod`.StackHeaderMode
 import typings.tuyaPanelKit.mod.DpType
 import typings.tuyaPanelKit.mod.IconFontName
 import typings.tuyaPanelKit.mod.MobileService
 import typings.tuyaPanelKit.mod.NetworkType
-import typings.tuyaPanelKit.stackTypesMod.GestureDirection
-import typings.tuyaPanelKit.stackTypesMod.StackCardMode
-import typings.tuyaPanelKit.stackTypesMod.StackHeaderMode
-import typings.tuyaPanelKit.tabRouterMod.BackBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +61,6 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait `DIN Alternate` extends StObject
   inline def `DIN Alternate`: `DIN Alternate` = ("DIN Alternate").asInstanceOf[`DIN Alternate`]
-  
-  @js.native
-  sealed trait DevInfo extends StObject
-  inline def DevInfo: DevInfo = "DevInfo".asInstanceOf[DevInfo]
   
   @js.native
   sealed trait Dot
@@ -175,10 +171,6 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait ScalePullDown extends StObject
   inline def ScalePullDown: ScalePullDown = "ScalePullDown".asInstanceOf[ScalePullDown]
-  
-  @js.native
-  sealed trait ScreenListeners extends StObject
-  inline def ScreenListeners: ScreenListeners = "ScreenListeners".asInstanceOf[ScreenListeners]
   
   @js.native
   sealed trait TOGGLE_DRAWER extends StObject
@@ -473,8 +465,8 @@ object tuyaPanelKitStrings {
   inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait devInfo_ extends StObject
-  inline def devInfo_ : devInfo_ = "devInfo".asInstanceOf[devInfo_]
+  sealed trait devInfo extends StObject
+  inline def devInfo: devInfo = "devInfo".asInstanceOf[devInfo]
   
   @js.native
   sealed trait deviceDataChange extends StObject

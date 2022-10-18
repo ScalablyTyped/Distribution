@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-core-utils
 
-Typings are for version 0.5.2
+Typings are for version 0.16.1
 
 ## Library description:
 Package to share code between ipfs and ipfs-http-client
@@ -10,10 +10,10 @@ Package to share code between ipfs and ipfs-http-client
 | ------------------ | :-------------: |
 | Full name          | ipfs-core-utils |
 | Keywords           | - |
-| # releases         | 86 |
-| # dependents       | 9 |
-| # downloads        | 389020 |
-| # stars            | 0 |
+| # releases         | 247 |
+| # dependents       | 0.0 |
+| # downloads        | 301602.6666666667 |
+| # stars            | 7055.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-core-utils#readme)

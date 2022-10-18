@@ -1,5 +1,7 @@
 package typings.materializeCss.global.M
 
+import typings.materializeCss.M.ChipsOptions
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialChipsOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -10,7 +12,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Chips ()
   extends StObject
-     with typings.materializeCss.M.Chips
+     with typings.materializeCss.M.Chips {
+  
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: ChipsOptions = js.native
+}
 object Chips {
   
   @JSGlobal("M.Chips")
@@ -27,13 +48,8 @@ object Chips {
     * Init Chipses
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.Chips] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Chips]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialChipsOptions
-  ): js.Array[typings.materializeCss.M.Chips] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Chips]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.Chips] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Chips]]
+  inline def init(els: MElements, options: PartialChipsOptions): js.Array[typings.materializeCss.M.Chips] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Chips]]
   /**
     * Init Chips
     */

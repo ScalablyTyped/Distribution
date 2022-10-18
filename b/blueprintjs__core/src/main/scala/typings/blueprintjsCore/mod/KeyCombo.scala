@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.keyComboMod.KeyComboTagProps
+import typings.blueprintjsCore.libEsmComponentsHotkeysKeyComboMod.KeyComboTagProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "KeyCombo")
 @js.native
 open class KeyCombo protected ()
-  extends typings.blueprintjsCore.componentsMod.KeyCombo {
+  extends typings.blueprintjsCore.libEsmComponentsMod.KeyCombo {
   def this(props: KeyComboTagProps) = this()
   def this(props: KeyComboTagProps, context: Any) = this()
 }

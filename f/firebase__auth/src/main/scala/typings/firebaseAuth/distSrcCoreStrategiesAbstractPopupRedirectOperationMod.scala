@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcCoreStrategiesAbstractPopupRedirectOperationMod {
   
-  @JSImport("@firebase/auth/dist/src/core/strategies/abstract_popup_redirect_operation", "AbstractPopupRedirectOperation")
+  /* note: abstract class */ @JSImport("@firebase/auth/dist/src/core/strategies/abstract_popup_redirect_operation", "AbstractPopupRedirectOperation")
   @js.native
-  abstract class AbstractPopupRedirectOperation protected ()
+  open class AbstractPopupRedirectOperation protected ()
     extends StObject
        with AuthEventConsumer {
     def this(auth: AuthInternal, filter: js.Array[AuthEventType], resolver: PopupRedirectResolverInternal) = this()

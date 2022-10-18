@@ -1,7 +1,7 @@
 package typings.grommet.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grommet.baseMod.ButtonKindType
+import typings.grommet.themesBaseMod.ButtonKindType
 import typings.grommet.utilsMod.OpacityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

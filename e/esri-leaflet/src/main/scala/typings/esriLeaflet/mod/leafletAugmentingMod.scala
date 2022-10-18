@@ -810,9 +810,9 @@ object leafletAugmentingMod {
     /**
       * A generic class representing an image layer. This class can be extended to provide support for making export requests from ArcGIS REST services.
       */
-    @JSImport("leaflet", "esri.RasterLayer")
+    /* note: abstract class */ @JSImport("leaflet", "esri.RasterLayer")
     @js.native
-    abstract class RasterLayer protected () extends ImageOverlay_ {
+    open class RasterLayer protected () extends ImageOverlay_ {
       def this(imageUrl: String, bounds: LatLngBoundsExpression) = this()
       def this(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions) = this()
       
@@ -852,9 +852,9 @@ object leafletAugmentingMod {
       * A generic class representing a hosted resource on ArcGIS Online or ArcGIS Server. This class can be extended
       * to provide support for making requests and serves as a standard for authentication and proxying.
       */
-    @JSImport("leaflet", "esri.Service")
+    /* note: abstract class */ @JSImport("leaflet", "esri.Service")
     @js.native
-    abstract class Service () extends Evented {
+    open class Service () extends Evented {
       
       /**
         * Authenticates this service with a new token and runs any pending requests that required a token.

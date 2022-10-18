@@ -1,7 +1,7 @@
 package typings.metro.anon
 
 import typings.metro.metroStrings.bundle_transform_progressed_throttled
-import typings.metro.terminalReporterMod.TerminalReportableEvent
+import typings.metro.srcLibTerminalReporterMod.TerminalReportableEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

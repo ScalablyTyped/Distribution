@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the counts for various email message attributes such as flagged, important, unread, and so on. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailItemCounts")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailItemCounts")
 @js.native
-abstract class EmailItemCounts ()
+open class EmailItemCounts ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailItemCounts {
   

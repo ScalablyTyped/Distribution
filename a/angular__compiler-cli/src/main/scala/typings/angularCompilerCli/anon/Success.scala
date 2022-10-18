@@ -1,7 +1,7 @@
 package typings.angularCompilerCli.anon
 
 import typings.angularCompilerCli.angularCompilerCliBooleans.`false`
-import typings.angularCompilerCli.transformerMod.TransformResult
+import typings.angularCompilerCli.ngccSrcPackagesTransformerMod.TransformResult
 import typings.typescript.mod.Diagnostic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

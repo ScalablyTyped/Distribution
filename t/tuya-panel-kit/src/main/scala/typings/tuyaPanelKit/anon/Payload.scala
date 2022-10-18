@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Payload
   extends StObject
-     with typings.tuyaPanelKit.commonActionsMod.Action {
+     with typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`.Action {
   
   var payload: Merge | KeyMerge
   

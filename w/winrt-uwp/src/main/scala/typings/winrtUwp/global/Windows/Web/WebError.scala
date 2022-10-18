@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides error status resulting from a web service operation. */
-@JSGlobal("Windows.Web.WebError")
+/* note: abstract class */ @JSGlobal("Windows.Web.WebError")
 @js.native
-abstract class WebError ()
+open class WebError ()
   extends StObject
      with typings.winrtUwp.Windows.Web.WebError
 object WebError {

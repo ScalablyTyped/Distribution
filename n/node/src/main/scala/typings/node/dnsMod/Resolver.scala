@@ -1,5 +1,6 @@
 package typings.node.dnsMod
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.FnCallHostnameOptionsCallback
 import typings.node.anon.FnCallHostnameRrtypeCallback
 import typings.node.nodeStrings.A
@@ -35,17 +36,13 @@ open class Resolver () extends StObject {
   
   def resolve(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   def resolve(
     hostname: String,
     rrtype: String,
     callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* err */ ErrnoException | Null, 
       /* addresses */ (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord, 
       Unit
     ]
@@ -53,17 +50,13 @@ open class Resolver () extends StObject {
   
   def resolve4(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   def resolve4(
     hostname: String,
     options: ResolveOptions,
     callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* err */ ErrnoException | Null, 
       /* addresses */ js.Array[RecordWithTtl | String], 
       Unit
     ]
@@ -71,28 +64,20 @@ open class Resolver () extends StObject {
   def resolve4(
     hostname: String,
     options: ResolveWithTtlOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = js.native
   @JSName("resolve4")
   var resolve4_Original: FnCallHostnameOptionsCallback = js.native
   
   def resolve6(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   def resolve6(
     hostname: String,
     options: ResolveOptions,
     callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+      /* err */ ErrnoException | Null, 
       /* addresses */ js.Array[RecordWithTtl | String], 
       Unit
     ]
@@ -100,183 +85,107 @@ open class Resolver () extends StObject {
   def resolve6(
     hostname: String,
     options: ResolveWithTtlOptions,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[RecordWithTtl], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = js.native
   @JSName("resolve6")
   var resolve6_Original: FnCallHostnameOptionsCallback = js.native
   
   def resolveAny(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[AnyRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
   ): Unit = js.native
   @JSName("resolveAny")
   var resolveAny_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[AnyRecord], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit], 
     Unit
   ] = js.native
   
   def resolveCname(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolveCname")
   var resolveCname_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit], 
     Unit
   ] = js.native
   
   def resolveMx(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[MxRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
   ): Unit = js.native
   @JSName("resolveMx")
   var resolveMx_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[MxRecord], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit], 
     Unit
   ] = js.native
   
   def resolveNaptr(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[NaptrRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
   ): Unit = js.native
   @JSName("resolveNaptr")
   var resolveNaptr_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[NaptrRecord], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit], 
     Unit
   ] = js.native
   
   def resolveNs(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolveNs")
   var resolveNs_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit], 
     Unit
   ] = js.native
   
   def resolvePtr(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolvePtr")
   var resolvePtr_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit], 
     Unit
   ] = js.native
   
   def resolveSoa(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ SoaRecord, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* address */ SoaRecord, Unit]
   ): Unit = js.native
   @JSName("resolveSoa")
   var resolveSoa_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* address */ SoaRecord, 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* address */ SoaRecord, Unit], 
     Unit
   ] = js.native
   
   def resolveSrv(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[SrvRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
   ): Unit = js.native
   @JSName("resolveSrv")
   var resolveSrv_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[SrvRecord], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit], 
     Unit
   ] = js.native
   
   def resolveTxt(
     hostname: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[js.Array[String]], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
   ): Unit = js.native
   @JSName("resolveTxt")
   var resolveTxt_Original: js.Function2[
     /* hostname */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[js.Array[String]], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit], 
     Unit
   ] = js.native
   
@@ -284,71 +193,43 @@ open class Resolver () extends StObject {
   def resolve_A(
     hostname: String,
     rrtype: A,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_AAAA(
     hostname: String,
     rrtype: AAAA,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_ANY(
     hostname: String,
     rrtype: ANY,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[AnyRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_CNAME(
     hostname: String,
     rrtype: CNAME,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_MX(
     hostname: String,
     rrtype: MX,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[MxRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[MxRecord], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_NAPTR(
     hostname: String,
     rrtype: NAPTR,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[NaptrRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[NaptrRecord], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_NS(
     hostname: String,
     rrtype: NS,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolve")
   var resolve_Original: FnCallHostnameRrtypeCallback = js.native
@@ -356,59 +237,35 @@ open class Resolver () extends StObject {
   def resolve_PTR(
     hostname: String,
     rrtype: PTR,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_SOA(
     hostname: String,
     rrtype: SOA,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ SoaRecord, 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ SoaRecord, Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_SRV(
     hostname: String,
     rrtype: SRV,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[SrvRecord], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[SrvRecord], Unit]
   ): Unit = js.native
   @JSName("resolve")
   def resolve_TXT(
     hostname: String,
     rrtype: TXT,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* addresses */ js.Array[js.Array[String]], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
   ): Unit = js.native
   
   def reverse(
     ip: String,
-    callback: js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* hostnames */ js.Array[String], 
-      Unit
-    ]
+    callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]
   ): Unit = js.native
   @JSName("reverse")
   var reverse_Original: js.Function2[
     /* ip */ String, 
-    /* callback */ js.Function2[
-      /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-      /* hostnames */ js.Array[String], 
-      Unit
-    ], 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit], 
     Unit
   ] = js.native
   

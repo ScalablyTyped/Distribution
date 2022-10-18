@@ -10,6 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/grid-list", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialGridList.foundationMod.default {
+    def this(adapter: PartialMDCGridListAdapter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@material/grid-list", "default.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCGridListAdapter = js.native
+    
+    @JSImport("@material/grid-list", "default.strings")
+    @js.native
+    val strings: TILESELECTOR = js.native
+  }
+  
   @JSImport("@material/grid-list", "MDCGridList")
   @js.native
   open class MDCGridList protected ()

@@ -1,8 +1,8 @@
 package typings.formatjsIntlListformat
 
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractMod.LiteralPart
 import typings.formatjsEcma402Abstract.typesListMod.ListPatternFieldsData
 import typings.formatjsEcma402Abstract.typesListMod.ListPatternLocaleData
+import typings.formatjsEcma402Abstract.utilsMod.LiteralPart
 import typings.formatjsIntlListformat.anon.PickIntlListFormatOptions
 import typings.formatjsIntlListformat.formatjsIntlListformatStrings.`best fit`
 import typings.formatjsIntlListformat.formatjsIntlListformatStrings.conjunction

@@ -1,6 +1,5 @@
 package typings.gensync
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,13 +23,9 @@ object mod {
     * @returns A new gensync generator
     */
   inline def all[T /* <: js.Array[Any | Handler[Any]] */](args: T): Handler[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof T ]: gensync.gensync.Handled<T[P]>}
-    */ typings.gensync.gensyncStrings.all & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: gensync.gensync.Handled<T[P]>} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(args.asInstanceOf[js.Any]).asInstanceOf[Handler[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {-readonly [ P in keyof T ]: gensync.gensync.Handled<T[P]>}
-    */ typings.gensync.gensyncStrings.all & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: gensync.gensync.Handled<T[P]>} */ js.Any
   ]]
   /**
     * `Promise.all`-like combinator that works with an iterable of generator objects
@@ -120,7 +115,15 @@ object mod {
     * A callback function such that if the result is void, there is no result parameter.
     */
   // tslint:disable-next-line void-return
-  type Callback[R, E] = (js.Function2[/* err */ E, /* result */ R, Unit]) | (js.Function1[/* err */ E, Unit])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [R] extends [void] ? (err : E): void : (err : E, result : R): void
+    }}}
+    */
+  @js.native
+  trait Callback[R, E] extends StObject
   
   /* Inlined parent std.Omit<gensync.gensync.SyncOptions<A, R>, 'errback'> */
   trait ErrbackOptions[A /* <: js.Array[Any] */, R, E]
@@ -217,7 +220,15 @@ object mod {
     * Given a `gensync` generator, produces the "awaited" type of that generator
     * when "yield*"'d in another `gensync` generator.
     */
-  type Handled[T] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends gensync.gensync.Handler<infer U> ? U : never
+    }}}
+    */
+  @js.native
+  trait Handled[T] extends StObject
   
   /**
     * A generator produced by `gensync`, which can only "await" (with `yield*`) other

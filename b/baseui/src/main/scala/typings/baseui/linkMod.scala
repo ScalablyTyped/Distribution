@@ -3,7 +3,7 @@ package typings.baseui
 import typings.baseui.anon.AnimateUnderline
 import typings.baseui.baseuiStrings.a
 import typings.react.mod.ComponentProps
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

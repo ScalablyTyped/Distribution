@@ -1,8 +1,8 @@
 package typings.tensorflowTfjs.mod
 
+import typings.tensorflowTfjsCore.distBackendsNonMaxSuppressionImplMod.NonMaxSuppressionResult
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
-import typings.tensorflowTfjsCore.nonMaxSuppressionImplMod.NonMaxSuppressionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

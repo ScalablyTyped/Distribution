@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dynamodb-localhost"
-version := "0.0-dt-20211202Z-7a43d6"
+version := "0.0-dt-20221013Z-392c1e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

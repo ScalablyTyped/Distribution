@@ -1,8 +1,8 @@
 package typings.antvComponent.anon
 
-import typings.antvComponent.groupComponentMod.GroupComponent
-import typings.antvComponent.groupComponentMod.GroupComponentCtor
-import typings.antvComponent.typesMod.GroupComponentCfg
+import typings.antvComponent.libAbstractGroupComponentMod.GroupComponent
+import typings.antvComponent.libAbstractGroupComponentMod.GroupComponentCtor
+import typings.antvComponent.libTypesMod.GroupComponentCfg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

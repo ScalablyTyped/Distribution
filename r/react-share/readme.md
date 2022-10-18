@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-share
 
-Typings are for version 4.4.0
+Typings are for version 4.4.1
 
 ## Library description:
 Social media share buttons and share counts for React.

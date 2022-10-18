@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a Sampler instance
   */
 open class TextureSampler ()
-  extends typings.babylonjs.texturesIndexMod.TextureSampler
+  extends typings.babylonjs.materialsTexturesIndexMod.TextureSampler

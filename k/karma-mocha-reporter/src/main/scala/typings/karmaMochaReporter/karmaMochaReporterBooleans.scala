@@ -1,6 +1,6 @@
 package typings.karmaMochaReporter
 
-import typings.karmaMochaReporter.mod.ShowDiffOptions
+import typings.karmaMochaReporter.karmaMod.ShowDiffOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

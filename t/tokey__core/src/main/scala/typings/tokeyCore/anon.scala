@@ -1,6 +1,6 @@
 package typings.tokeyCore
 
-import typings.tokeyCore.typesMod.Token
+import typings.tokeyCore.distTypesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -18,7 +18,7 @@ import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconType
+import typings.reactNativeElements.distIconsIconMod.IconType
 import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all

@@ -1,6 +1,5 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "DirectionalLight")
 @js.native
 open class DirectionalLight protected () extends StObject {
-  def this(options: Direction) = this()
+  def this(options: typings.cesium.anon.Color) = this()
   
   /**
     * The color of the light.

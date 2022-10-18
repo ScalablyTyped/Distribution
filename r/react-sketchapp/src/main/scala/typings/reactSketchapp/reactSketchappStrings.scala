@@ -1,6 +1,6 @@
 package typings.reactSketchapp
 
-import typings.reactSketchapp.moduleTypesMod.MeasureMode
+import typings.reactSketchapp.libTypesMod.MeasureMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object reactSketchappStrings {
   sealed trait `at-most`
     extends StObject
        with MeasureMode
-       with typings.reactSketchapp.libTypesMod.MeasureMode
+       with typings.reactSketchapp.libModuleTypesMod.MeasureMode
   inline def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
   
   @js.native
@@ -74,7 +74,7 @@ object reactSketchappStrings {
   sealed trait exactly
     extends StObject
        with MeasureMode
-       with typings.reactSketchapp.libTypesMod.MeasureMode
+       with typings.reactSketchapp.libModuleTypesMod.MeasureMode
   inline def exactly: exactly = "exactly".asInstanceOf[exactly]
   
   @js.native
@@ -281,7 +281,7 @@ object reactSketchappStrings {
   sealed trait undefined
     extends StObject
        with MeasureMode
-       with typings.reactSketchapp.libTypesMod.MeasureMode
+       with typings.reactSketchapp.libModuleTypesMod.MeasureMode
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native

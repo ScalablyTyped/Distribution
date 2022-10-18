@@ -2,7 +2,7 @@ package typings.awsSdkRoute53IdNormalizerMiddleware
 
 import typings.awsSdkRoute53IdNormalizerMiddleware.anon.AliasTarget
 import typings.awsSdkRoute53IdNormalizerMiddleware.anon.Changes
-import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

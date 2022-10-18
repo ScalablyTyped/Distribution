@@ -4,12 +4,14 @@ import typings.materializecssMaterialize.materializecssMaterializeStrings.AM
 import typings.materializecssMaterialize.materializecssMaterializeStrings.PM
 import typings.materializecssMaterialize.materializecssMaterializeStrings.vibrate
 import typings.materializecssMaterialize.materializecssMaterializeStrings.webkitVibrate
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<TimepickerOptions> * / any */ trait Timepicker extends StObject {
+trait Timepicker
+  extends StObject
+     with Component[TimepickerOptions] {
   
   /**
     * If the time is AM or PM on twelve-hour clock
@@ -60,12 +62,15 @@ object Timepicker {
     amOrPm: AM | PM,
     close: () => Unit,
     currentView: Views,
+    destroy: () => Unit,
+    el: Element,
     isOpen: Boolean,
     open: () => Unit,
+    options: TimepickerOptions,
     showView: Views => Unit,
     time: String
   ): Timepicker = {
-    val __obj = js.Dynamic.literal(amOrPm = amOrPm.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), currentView = currentView.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), showView = js.Any.fromFunction1(showView), time = time.asInstanceOf[js.Any], vibrate = null)
+    val __obj = js.Dynamic.literal(amOrPm = amOrPm.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), currentView = currentView.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], showView = js.Any.fromFunction1(showView), time = time.asInstanceOf[js.Any], vibrate = null)
     __obj.asInstanceOf[Timepicker]
   }
   

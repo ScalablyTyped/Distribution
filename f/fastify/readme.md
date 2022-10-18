@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify
 
-Typings are for version 4.6.0
+Typings are for version 4.9.2
 
 ## Library description:
 Fast and low overhead web framework, for Node.js

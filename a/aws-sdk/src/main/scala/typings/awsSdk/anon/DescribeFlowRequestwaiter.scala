@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.mediaconnectMod.string
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsMediaconnectMod.string
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

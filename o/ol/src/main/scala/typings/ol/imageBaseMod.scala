@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object imageBaseMod {
   
-  @JSImport("ol/ImageBase", JSImport.Default)
+  /* note: abstract class */ @JSImport("ol/ImageBase", JSImport.Default)
   @js.native
-  abstract class default protected () extends ImageBase {
+  open class default protected () extends ImageBase {
     def this(extent: Extent, resolution: Double, pixelRatio: Double, state: ImageState) = this()
     def this(extent: Extent, resolution: Unit, pixelRatio: Double, state: ImageState) = this()
   }
   
   @js.native
   trait ImageBase
-    extends typings.ol.targetMod.default {
+    extends typings.ol.eventsTargetMod.default {
     
     /* protected */ def changed(): Unit = js.native
     

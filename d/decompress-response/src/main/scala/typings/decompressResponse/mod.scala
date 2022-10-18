@@ -1,7 +1,7 @@
 package typings.decompressResponse
 
 import typings.node.httpMod.IncomingHttpHeaders
-import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeColonhttpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

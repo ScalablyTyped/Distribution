@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +12,7 @@ trait ExecuteSqlRequest extends StObject {
     * information about SQL types.
     */
   var paramTypes: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type} */ js.Any
   ] = js.undefined
   
   /**
@@ -25,9 +22,7 @@ trait ExecuteSqlRequest extends StObject {
     * execute a SQL statement with unbound parameters.
     */
   var params: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -78,17 +73,13 @@ object ExecuteSqlRequest {
   extension [Self <: ExecuteSqlRequest](x: Self) {
     
     inline def setParamTypes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type} */ js.Any
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
     inline def setParams(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ExecuteSqlRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

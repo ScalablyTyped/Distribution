@@ -8,11 +8,11 @@ trait ParametersPathCommentidOwner extends StObject {
   
   var parameters: PathCommentidOwner
   
-  var responses: `200Content210`
+  var responses: `200ContentApplicationjsonLine`
 }
 object ParametersPathCommentidOwner {
   
-  inline def apply(parameters: PathCommentidOwner, responses: `200Content210`): ParametersPathCommentidOwner = {
+  inline def apply(parameters: PathCommentidOwner, responses: `200ContentApplicationjsonLine`): ParametersPathCommentidOwner = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathCommentidOwner]
   }
@@ -21,6 +21,6 @@ object ParametersPathCommentidOwner {
     
     inline def setParameters(value: PathCommentidOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content210`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonLine`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsMinusMod.MinusProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsMinusMod.MinusProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minusMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Minus", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Minus", JSImport.Default)
   @js.native
   val default: FC[MinusProps] = js.native
   

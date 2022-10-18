@@ -119,10 +119,6 @@ object minappEnvStrings {
   inline def JSON: JSON = "JSON".asInstanceOf[JSON]
   
   @js.native
-  sealed trait KVInfer extends StObject
-  inline def KVInfer: KVInfer = "KVInfer".asInstanceOf[KVInfer]
-  
-  @js.native
   sealed trait MAXICODE extends StObject
   inline def MAXICODE: MAXICODE = "MAXICODE".asInstanceOf[MAXICODE]
   
@@ -159,10 +155,6 @@ object minappEnvStrings {
   inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait Optional extends StObject
-  inline def Optional: Optional = "Optional".asInstanceOf[Optional]
-  
-  @js.native
   sealed trait PDF_417 extends StObject
   inline def PDF_417: PDF_417 = "PDF_417".asInstanceOf[PDF_417]
   
@@ -173,14 +165,6 @@ object minappEnvStrings {
   @js.native
   sealed trait PUT extends StObject
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
-  
-  @js.native
-  sealed trait Partial extends StObject
-  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
-  
-  @js.native
-  sealed trait Pick extends StObject
-  inline def Pick: Pick = "Pick".asInstanceOf[Pick]
   
   @js.native
   sealed trait Promise extends StObject
@@ -197,18 +181,6 @@ object minappEnvStrings {
   @js.native
   sealed trait RSS_EXPANDED extends StObject
   inline def RSS_EXPANDED: RSS_EXPANDED = "RSS_EXPANDED".asInstanceOf[RSS_EXPANDED]
-  
-  @js.native
-  sealed trait Readonly extends StObject
-  inline def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
-  
-  @js.native
-  sealed trait Record extends StObject
-  inline def Record: Record = "Record".asInstanceOf[Record]
-  
-  @js.native
-  sealed trait Required extends StObject
-  inline def Required: Required = "Required".asInstanceOf[Required]
   
   @js.native
   sealed trait Set extends StObject

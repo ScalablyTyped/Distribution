@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class RectangularTriggerRegion ()
   extends typings.yuka.mod.RectangularTriggerRegion {
-  def this(size: typings.yuka.vector3Mod.Vector3) = this()
+  def this(size: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

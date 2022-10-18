@@ -1,6 +1,6 @@
 package typings.pgPromise.mod
 
-import typings.pgPromise.pgSubsetMod.IClient
+import typings.pgPromise.typescriptPgSubsetMod.IClient
 import typings.spex.mod.ISpexBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

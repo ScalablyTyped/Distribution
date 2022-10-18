@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object twitStrings {
   
   @js.native
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
+  
+  @js.native
   sealed trait crop extends StObject
   inline def crop: crop = "crop".asInstanceOf[crop]
   
@@ -17,12 +21,24 @@ object twitStrings {
   inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
+  sealed trait location extends StObject
+  inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
   sealed trait low extends StObject
   inline def low: low = "low".asInstanceOf[low]
   
   @js.native
+  sealed trait media extends StObject
+  inline def media: media = "media".asInstanceOf[media]
+  
+  @js.native
   sealed trait medium extends StObject
   inline def medium: medium = "medium".asInstanceOf[medium]
+  
+  @js.native
+  sealed trait message_create extends StObject
+  inline def message_create: message_create = "message_create".asInstanceOf[message_create]
   
   @js.native
   sealed trait mixed
@@ -33,6 +49,10 @@ object twitStrings {
   @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait options extends StObject
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
   sealed trait popular
@@ -53,6 +73,10 @@ object twitStrings {
     extends StObject
        with ResultType
   inline def recent: recent = "recent".asInstanceOf[recent]
+  
+  @js.native
+  sealed trait shared_coordinate extends StObject
+  inline def shared_coordinate: shared_coordinate = "shared_coordinate".asInstanceOf[shared_coordinate]
   
   @js.native
   sealed trait site

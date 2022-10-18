@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_link
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.text_mention
   - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.spoiler
+  - typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.custom_emoji
 */
 trait MessageEntityType extends StObject
 object MessageEntityType {
@@ -32,6 +33,8 @@ object MessageEntityType {
   inline def cashtag: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.cashtag = "cashtag".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.cashtag]
   
   inline def code: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.code = "code".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.code]
+  
+  inline def custom_emoji: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.custom_emoji = "custom_emoji".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.custom_emoji]
   
   inline def email: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.email = "email".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.email]
   

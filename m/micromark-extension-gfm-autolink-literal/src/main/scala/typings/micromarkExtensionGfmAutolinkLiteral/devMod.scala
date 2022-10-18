@@ -1,7 +1,7 @@
 package typings.micromarkExtensionGfmAutolinkLiteral
 
-import typings.micromarkExtensionGfmAutolinkLiteral.htmlMod.HtmlExtension
-import typings.micromarkExtensionGfmAutolinkLiteral.syntaxMod.Extension
+import typings.micromarkExtensionGfmAutolinkLiteral.devLibHtmlMod.HtmlExtension
+import typings.micromarkExtensionGfmAutolinkLiteral.devLibSyntaxMod.Extension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

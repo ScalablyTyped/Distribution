@@ -1,14 +1,112 @@
 package typings.babylonjs
 
+import typings.babylonjs.babylonjsStrings.devicechange
+import typings.babylonjs.babylonjsStrings.sessiongranted
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * An XRSystem object is the entry point to the API, used to query for XR features available
+  * to the user agent and initiate communication with XR hardware via the creation of
+  * XRSessions.
+  *
+  * ref: https://immersive-web.github.io/webxr/#xrsystem-interface
+  */
 @js.native
-trait XRSystem extends StObject {
+trait XRSystem
+  extends StObject
+     with EventTarget {
   
-  def isSessionSupported(sessionMode: XRSessionMode): js.Promise[Boolean] = js.native
+  @JSName("addEventListener")
+  def addEventListener_devicechange(
+    `type`: devicechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_devicechange(
+    `type`: devicechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_devicechange(
+    `type`: devicechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_sessiongranted(
+    `type`: sessiongranted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_sessiongranted(
+    `type`: sessiongranted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_sessiongranted(
+    `type`: sessiongranted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   
-  def requestSession(sessionMode: XRSessionMode): js.Promise[XRSession] = js.native
-  def requestSession(sessionMode: XRSessionMode, sessionInit: Any): js.Promise[XRSession] = js.native
+  /**
+    * Queries if a given mode may be supported by the user agent and device capabilities.
+    * @param mode
+    */
+  def isSessionSupported(mode: XRSessionMode): js.Promise[Boolean] = js.native
+  
+  var ondevicechange: XRSystemDeviceChangeEventHandler | Null = js.native
+  
+  var onsessiongranted: XRSystemSessionGrantedEventHandler | Null = js.native
+  
+  @JSName("removeEventListener")
+  def removeEventListener_devicechange(
+    `type`: devicechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_devicechange(
+    `type`: devicechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_devicechange(
+    `type`: devicechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemDeviceChangeEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_sessiongranted(
+    `type`: sessiongranted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_sessiongranted(
+    `type`: sessiongranted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_sessiongranted(
+    `type`: sessiongranted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ XRSystemSessionGrantedEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  
+  /**
+    * Attempts to initialize an XRSession for the given mode if possible, entering immersive
+    * mode if necessary.
+    * @param mode
+    * @param options
+    */
+  def requestSession(mode: XRSessionMode): js.Promise[XRSession] = js.native
+  def requestSession(mode: XRSessionMode, options: XRSessionInit): js.Promise[XRSession] = js.native
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Camera")
 @js.native
 open class Camera ()
-  extends typings.antvGLite.cameraMod.Camera
+  extends typings.antvGLite.distCameraMod.Camera

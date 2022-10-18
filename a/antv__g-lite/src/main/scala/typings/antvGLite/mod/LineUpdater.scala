@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "LineUpdater")
 @js.native
 open class LineUpdater ()
-  extends typings.antvGLite.servicesMod.LineUpdater
+  extends typings.antvGLite.distServicesMod.LineUpdater

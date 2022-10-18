@@ -21,7 +21,7 @@ import typings.guacamoleClient.guacamoleClientInts.`0x0308`
 import typings.guacamoleClient.guacamoleClientInts.`0x030d`
 import typings.guacamoleClient.guacamoleClientInts.`0x030f`
 import typings.guacamoleClient.guacamoleClientInts.`0x031d`
-import typings.guacamoleClient.statusMod.Status.Code
+import typings.guacamoleClient.libStatusMod.Status.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "Status")
 @js.native
 open class Status protected ()
-  extends typings.guacamoleClient.statusMod.Status {
+  extends typings.guacamoleClient.libStatusMod.Status {
   /**
     * @param code The Guacamole status code, as defined by Guacamole.Status.Code.
     * @param [message] An optional human-readable message.
@@ -130,8 +130,8 @@ object Status {
     @js.native
     val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
     
-    inline def fromHTTPCode(status: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
+    inline def fromHTTPCode(status: Double): typings.guacamoleClient.libStatusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.libStatusMod.Status.Code]
     
-    inline def fromWebSocketCode(code: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
+    inline def fromWebSocketCode(code: Double): typings.guacamoleClient.libStatusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.libStatusMod.Status.Code]
   }
 }

@@ -4,8 +4,8 @@ import typings.reactNativeModal.anon.AnimationIn
 import typings.reactNativeModal.anon.AnimationInTiming
 import typings.reactNativeModal.anon.IsVisible
 import typings.reactNativeModal.anon.ReadonlyModalProps
-import typings.reactNativeModal.modalMod.ModalProps
-import typings.reactNativeModal.modalMod.State
+import typings.reactNativeModal.distModalMod.ModalProps
+import typings.reactNativeModal.distModalMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("react-native-modal", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.reactNativeModal.modalMod.ReactNativeModal {
+    extends typings.reactNativeModal.distModalMod.ReactNativeModal {
     def this(props: ModalProps) = this()
   }
   /* static members */
@@ -41,7 +41,7 @@ object mod {
   @JSImport("react-native-modal", "ReactNativeModal")
   @js.native
   open class ReactNativeModal protected ()
-    extends typings.reactNativeModal.modalMod.ReactNativeModal {
+    extends typings.reactNativeModal.distModalMod.ReactNativeModal {
     def this(props: ModalProps) = this()
   }
   /* static members */

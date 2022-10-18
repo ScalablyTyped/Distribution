@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a reading from the proximity sensor. */
-@JSGlobal("Windows.Devices.Sensors.ProximitySensorReading")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.ProximitySensorReading")
 @js.native
-abstract class ProximitySensorReading ()
+open class ProximitySensorReading ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReading {
   

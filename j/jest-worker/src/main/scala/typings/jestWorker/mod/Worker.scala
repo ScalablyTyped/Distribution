@@ -1,6 +1,6 @@
 package typings.jestWorker.mod
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,20 +48,20 @@ open class Worker protected ()
   var _ending: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _farm: Any = js.native
+  override val _farm: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _options: Any = js.native
+  override val _options: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _workerPool: Any = js.native
+  override val _workerPool: Any = js.native
   
   /* CompleteClass */
   override def end(): js.Promise[PoolExitResult] = js.native
   
   /* CompleteClass */
-  override def getStderr(): ReadableStream[Any] = js.native
+  override def getStderr(): ReadableStream = js.native
   
   /* CompleteClass */
-  override def getStdout(): ReadableStream[Any] = js.native
+  override def getStdout(): ReadableStream = js.native
 }

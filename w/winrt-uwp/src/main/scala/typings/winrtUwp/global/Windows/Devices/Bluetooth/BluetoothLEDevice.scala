@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Bluetooth LE device. */
-@JSGlobal("Windows.Devices.Bluetooth.BluetoothLEDevice")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEDevice")
 @js.native
-abstract class BluetoothLEDevice ()
+open class BluetoothLEDevice ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEDevice
 object BluetoothLEDevice {

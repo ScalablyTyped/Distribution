@@ -1,7 +1,7 @@
 package typings.mongodbMemoryServerCore
 
-import typings.mongodbMemoryServerCore.mongoInstanceMod.StorageEngine
-import typings.mongodbMemoryServerCore.mongoMemoryServerMod._UserRoles
+import typings.mongodbMemoryServerCore.libMongoMemoryServerMod._UserRoles
+import typings.mongodbMemoryServerCore.libUtilMongoInstanceMod.StorageEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

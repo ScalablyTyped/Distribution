@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof core.RegExp` */
 object es6RegexpMod {
   
-  @JSImport("core-js/library/es6/regexp", JSImport.Namespace)
+  @JSImport("core-js/es6/regexp", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

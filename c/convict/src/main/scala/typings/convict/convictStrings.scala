@@ -15,18 +15,6 @@ object convictStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait InternalSchema extends StObject
-  inline def InternalSchema: InternalSchema = "InternalSchema".asInstanceOf[InternalSchema]
-  
-  @js.native
-  sealed trait Overwrite extends StObject
-  inline def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
-  
-  @js.native
-  sealed trait Schema extends StObject
-  inline def Schema: Schema = "Schema".asInstanceOf[Schema]
-  
-  @js.native
   sealed trait duration
     extends StObject
        with _PredefinedFormat

@@ -453,7 +453,7 @@ trait Body
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJs.Word.Style, typings.officeJs.officeJsStrings.Other, typings.officeJs.officeJsStrings.Normal */ Any = js.native
   
   /**
     * Gets the collection of table objects in the body.
@@ -483,7 +483,7 @@ trait Body
   def track(): Body = js.native
   
   /**
-    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
+    * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and ‘NoteItem’ are supported in WordApiOnline 1.1 and later.
     *
     * @remarks
     * [Api set: WordApi 1.3]

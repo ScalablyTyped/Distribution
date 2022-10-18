@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.bittorrentProtocol.mod.Wire
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import typings.std.Blob
 import typings.std.File
 import typings.std.FileList
 import typings.std.HTMLElement
 import typings.std.HTMLMediaElement
-import typings.std.ReadableStream
 import typings.webtorrent.anon.Autoplay
 import typings.webtorrent.anon.End
 import typings.webtorrent.anon.Files
@@ -130,22 +130,27 @@ object mod extends Shortcut {
     def seed(input: String, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: String, opts: TorrentOptions): Torrent = js.native
     def seed(input: String, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
-    def seed(input: js.Array[Buffer | File | ReadableStream[Any] | String]): Torrent = js.native
+    def seed(input: js.Array[Buffer | File | ReadableStream | String]): Torrent = js.native
     def seed(
-      input: js.Array[Buffer | File | ReadableStream[Any] | String],
+      input: js.Array[Buffer | File | ReadableStream | String],
       cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
     def seed(
-      input: js.Array[Buffer | File | ReadableStream[Any] | String],
+      input: js.Array[Buffer | File | ReadableStream | String],
       opts: Unit,
       cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
-    def seed(input: js.Array[Buffer | File | ReadableStream[Any] | String], opts: TorrentOptions): Torrent = js.native
+    def seed(input: js.Array[Buffer | File | ReadableStream | String], opts: TorrentOptions): Torrent = js.native
     def seed(
-      input: js.Array[Buffer | File | ReadableStream[Any] | String],
+      input: js.Array[Buffer | File | ReadableStream | String],
       opts: TorrentOptions,
       cb: js.Function1[/* torrent */ Torrent, Any]
     ): Torrent = js.native
+    def seed(input: ReadableStream): Torrent = js.native
+    def seed(input: ReadableStream, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: ReadableStream, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
+    def seed(input: ReadableStream, opts: TorrentOptions): Torrent = js.native
+    def seed(input: ReadableStream, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: Buffer): Torrent = js.native
     def seed(input: Buffer, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: Buffer, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
@@ -161,11 +166,6 @@ object mod extends Shortcut {
     def seed(input: File, opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     def seed(input: File, opts: TorrentOptions): Torrent = js.native
     def seed(input: File, opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
-    def seed(input: ReadableStream[Any]): Torrent = js.native
-    def seed(input: ReadableStream[Any], cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
-    def seed(input: ReadableStream[Any], opts: Unit, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
-    def seed(input: ReadableStream[Any], opts: TorrentOptions): Torrent = js.native
-    def seed(input: ReadableStream[Any], opts: TorrentOptions, cb: js.Function1[/* torrent */ Torrent, Any]): Torrent = js.native
     
     val torrents: js.Array[Torrent] = js.native
     
@@ -399,8 +399,8 @@ object mod extends Shortcut {
       callback: js.Function2[/* err */ js.UndefOr[js.Error], /* element */ HTMLMediaElement, Unit]
     ): Unit = js.native
     
-    def createReadStream(): ReadableStream[Any] = js.native
-    def createReadStream(opts: End): ReadableStream[Any] = js.native
+    def createReadStream(): ReadableStream = js.native
+    def createReadStream(opts: End): ReadableStream = js.native
     
     def deselect(): Unit = js.native
     

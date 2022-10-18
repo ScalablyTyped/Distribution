@@ -112,7 +112,7 @@ object boxBoxMod extends Shortcut {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped react.react.HTMLAttributes<std.HTMLElement> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, keyof @material-ui/core.@material-ui/core/Box/Box.SystemProps>> : never
-  - Dropped @material-ui/core.@material-ui/core/Box/Box.BoxStyleFunction extends @material-ui/system.@material-ui/system.StyleFunction<infer Props> ? any : never */ trait BoxProps extends StObject {
+  - Dropped @material-ui/core.@material-ui/core/Box/Box.BoxStyleFunction extends @material-ui/system.@material-ui/system.StyleFunction<infer Props> ? Props : never */ trait BoxProps extends StObject {
     
     @JSName("clone")
     var clone_FBoxProps: js.UndefOr[Boolean] = js.undefined

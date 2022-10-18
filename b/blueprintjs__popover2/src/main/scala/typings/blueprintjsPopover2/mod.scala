@@ -6,12 +6,12 @@ import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`click-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.click
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hover
-import typings.blueprintjsPopover2.breadcrumbs2Mod.Breadcrumbs2Props
-import typings.blueprintjsPopover2.contextMenu2Mod.ContextMenu2Props
-import typings.blueprintjsPopover2.menuItem2Mod.MenuItem2Props
-import typings.blueprintjsPopover2.popover2Mod.Popover2Props
-import typings.blueprintjsPopover2.resizeSensor2Mod.ResizeSensor2Props
-import typings.blueprintjsPopover2.tooltip2Mod.Tooltip2Props
+import typings.blueprintjsPopover2.libEsmBreadcrumbs2Mod.Breadcrumbs2Props
+import typings.blueprintjsPopover2.libEsmContextMenu2Mod.ContextMenu2Props
+import typings.blueprintjsPopover2.libEsmMenuItem2Mod.MenuItem2Props
+import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2Props
+import typings.blueprintjsPopover2.libEsmResizeSensor2Mod.ResizeSensor2Props
+import typings.blueprintjsPopover2.libEsmTooltip2Mod.Tooltip2Props
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.FC
 import typings.react.mod.HTMLProps
@@ -26,7 +26,7 @@ object mod {
   @JSImport("@blueprintjs/popover2", "Breadcrumbs2")
   @js.native
   open class Breadcrumbs2 protected ()
-    extends typings.blueprintjsPopover2.breadcrumbs2Mod.Breadcrumbs2 {
+    extends typings.blueprintjsPopover2.libEsmBreadcrumbs2Mod.Breadcrumbs2 {
     def this(props: Breadcrumbs2Props) = this()
     def this(props: Breadcrumbs2Props, context: Any) = this()
   }
@@ -172,7 +172,7 @@ object mod {
   @JSImport("@blueprintjs/popover2", "MenuItem2")
   @js.native
   open class MenuItem2 protected ()
-    extends typings.blueprintjsPopover2.menuItem2Mod.MenuItem2 {
+    extends typings.blueprintjsPopover2.libEsmMenuItem2Mod.MenuItem2 {
     def this(props: MenuItem2Props & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
     def this(props: MenuItem2Props & AnchorHTMLAttributes[HTMLAnchorElement], context: Any) = this()
   }
@@ -197,7 +197,7 @@ object mod {
   @JSImport("@blueprintjs/popover2", "Popover2")
   @js.native
   open class Popover2[T] protected ()
-    extends typings.blueprintjsPopover2.popover2Mod.Popover2[T] {
+    extends typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2[T] {
     def this(props: Popover2Props[T]) = this()
     def this(props: Popover2Props[T], context: Any) = this()
   }
@@ -251,23 +251,23 @@ object mod {
   object PopupKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.blueprintjsPopover2.popupKindMod.PopupKind & String] = js.native
+    def apply(value: String): js.UndefOr[typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind & String] = js.native
     
-    /* "dialog" */ val DIALOG: typings.blueprintjsPopover2.popupKindMod.PopupKind.DIALOG & String = js.native
+    /* "dialog" */ val DIALOG: typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind.DIALOG & String = js.native
     
-    /* "grid" */ val GRID: typings.blueprintjsPopover2.popupKindMod.PopupKind.GRID & String = js.native
+    /* "grid" */ val GRID: typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind.GRID & String = js.native
     
-    /* "listbox" */ val LISTBOX: typings.blueprintjsPopover2.popupKindMod.PopupKind.LISTBOX & String = js.native
+    /* "listbox" */ val LISTBOX: typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind.LISTBOX & String = js.native
     
-    /* "menu" */ val MENU: typings.blueprintjsPopover2.popupKindMod.PopupKind.MENU & String = js.native
+    /* "menu" */ val MENU: typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind.MENU & String = js.native
     
-    /* "tree" */ val TREE: typings.blueprintjsPopover2.popupKindMod.PopupKind.TREE & String = js.native
+    /* "tree" */ val TREE: typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind.TREE & String = js.native
   }
   
   @JSImport("@blueprintjs/popover2", "ResizeSensor2")
   @js.native
   open class ResizeSensor2 protected ()
-    extends typings.blueprintjsPopover2.resizeSensor2Mod.ResizeSensor2 {
+    extends typings.blueprintjsPopover2.libEsmResizeSensor2Mod.ResizeSensor2 {
     def this(props: ResizeSensor2Props) = this()
     def this(props: ResizeSensor2Props, context: Any) = this()
   }
@@ -287,7 +287,7 @@ object mod {
   @JSImport("@blueprintjs/popover2", "Tooltip2")
   @js.native
   open class Tooltip2[T] protected ()
-    extends typings.blueprintjsPopover2.tooltip2Mod.Tooltip2[T] {
+    extends typings.blueprintjsPopover2.libEsmTooltip2Mod.Tooltip2[T] {
     def this(props: Tooltip2Props[T]) = this()
     /**
       * @deprecated

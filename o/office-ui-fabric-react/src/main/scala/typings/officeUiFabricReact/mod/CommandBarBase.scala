@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
+import typings.officeUiFabricReact.libComponentsCommandBarCommandBarDottypesMod.ICommandBarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

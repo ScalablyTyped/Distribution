@@ -1,7 +1,7 @@
 package typings.vueRouter.mod
 
-import typings.vueRouter.anon.Default
-import typings.vueRouter.anon.Props
+import typings.vueRouter.anon.Slots
+import typings.vueRouter.anon.`0`
 import typings.vueRouter.mod.^
 import typings.vueRuntimeCore.mod.AllowedComponentProps
 import typings.vueRuntimeCore.mod.ComponentCustomProps
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class RouterLink ()
   extends StObject
-     with Props {
+     with Slots {
   
   /* CompleteClass */
   @JSName("$props")
@@ -23,7 +23,7 @@ open class RouterLink ()
   
   /* CompleteClass */
   @JSName("$slots")
-  var $slots: Default = js.native
+  var $slots: `0` = js.native
 }
 object RouterLink {
   

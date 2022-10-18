@@ -1,6 +1,6 @@
 package typings.apollographqlGraphqlPlaygroundHtml
 
-import typings.apollographqlGraphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
+import typings.apollographqlGraphqlPlaygroundHtml.distRenderPlaygroundPageMod.RenderPageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

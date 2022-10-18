@@ -3,7 +3,7 @@ package typings.graphqlPlaygroundMiddlewareExpress
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.graphqlPlaygroundHtml.renderPlaygroundPageMod.MiddlewareOptions
+import typings.graphqlPlaygroundHtml.distRenderPlaygroundPageMod.MiddlewareOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

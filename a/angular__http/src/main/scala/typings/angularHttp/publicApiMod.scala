@@ -2,9 +2,9 @@ package typings.angularHttp
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.mod.Version
-import typings.angularHttp.interfacesMod.RequestArgs
-import typings.angularHttp.interfacesMod.RequestOptionsArgs
-import typings.angularHttp.interfacesMod.ResponseOptionsArgs
+import typings.angularHttp.srcInterfacesMod.RequestArgs
+import typings.angularHttp.srcInterfacesMod.RequestOptionsArgs
+import typings.angularHttp.srcInterfacesMod.ResponseOptionsArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +26,14 @@ object publicApiMod {
   open class BrowserXhr ()
     extends typings.angularHttp.srcMod.BrowserXhr
   
-  @JSImport("@angular/http/public_api", "Connection")
+  /* note: abstract class */ @JSImport("@angular/http/public_api", "Connection")
   @js.native
-  abstract class Connection ()
+  open class Connection ()
     extends typings.angularHttp.srcMod.Connection
   
-  @JSImport("@angular/http/public_api", "ConnectionBackend")
+  /* note: abstract class */ @JSImport("@angular/http/public_api", "ConnectionBackend")
   @js.native
-  abstract class ConnectionBackend ()
+  open class ConnectionBackend ()
     extends typings.angularHttp.srcMod.ConnectionBackend
   
   @JSImport("@angular/http/public_api", "CookieXSRFStrategy")
@@ -50,7 +50,7 @@ object publicApiMod {
   open class Headers ()
     extends typings.angularHttp.srcMod.Headers {
     def this(headers: StringDictionary[Any]) = this()
-    def this(headers: typings.angularHttp.headersMod.Headers) = this()
+    def this(headers: typings.angularHttp.srcHeadersMod.Headers) = this()
   }
   /* static members */
   object Headers {
@@ -62,7 +62,7 @@ object publicApiMod {
     /**
       * Returns a new Headers instance from the given DOMString of Response Headers
       */
-    inline def fromResponseHeaderString(headersString: String): typings.angularHttp.headersMod.Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[typings.angularHttp.headersMod.Headers]
+    inline def fromResponseHeaderString(headersString: String): typings.angularHttp.srcHeadersMod.Headers = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResponseHeaderString")(headersString.asInstanceOf[js.Any]).asInstanceOf[typings.angularHttp.srcHeadersMod.Headers]
   }
   
   @JSImport("@angular/http/public_api", "Http")
@@ -70,8 +70,8 @@ object publicApiMod {
   open class Http protected ()
     extends typings.angularHttp.srcMod.Http {
     def this(
-      _backend: typings.angularHttp.interfacesMod.ConnectionBackend,
-      _defaultOptions: typings.angularHttp.baseRequestOptionsMod.RequestOptions
+      _backend: typings.angularHttp.srcInterfacesMod.ConnectionBackend,
+      _defaultOptions: typings.angularHttp.srcBaseRequestOptionsMod.RequestOptions
     ) = this()
   }
   
@@ -95,8 +95,8 @@ object publicApiMod {
   open class Jsonp protected ()
     extends typings.angularHttp.srcMod.Jsonp {
     def this(
-      backend: typings.angularHttp.interfacesMod.ConnectionBackend,
-      defaultOptions: typings.angularHttp.baseRequestOptionsMod.RequestOptions
+      backend: typings.angularHttp.srcInterfacesMod.ConnectionBackend,
+      defaultOptions: typings.angularHttp.srcBaseRequestOptionsMod.RequestOptions
     ) = this()
   }
   
@@ -115,19 +115,19 @@ object publicApiMod {
   object ReadyState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ReadyState & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.srcEnumsMod.ReadyState & Double] = js.native
     
-    /* 5 */ val Cancelled: typings.angularHttp.enumsMod.ReadyState.Cancelled & Double = js.native
+    /* 5 */ val Cancelled: typings.angularHttp.srcEnumsMod.ReadyState.Cancelled & Double = js.native
     
-    /* 4 */ val Done: typings.angularHttp.enumsMod.ReadyState.Done & Double = js.native
+    /* 4 */ val Done: typings.angularHttp.srcEnumsMod.ReadyState.Done & Double = js.native
     
-    /* 2 */ val HeadersReceived: typings.angularHttp.enumsMod.ReadyState.HeadersReceived & Double = js.native
+    /* 2 */ val HeadersReceived: typings.angularHttp.srcEnumsMod.ReadyState.HeadersReceived & Double = js.native
     
-    /* 3 */ val Loading: typings.angularHttp.enumsMod.ReadyState.Loading & Double = js.native
+    /* 3 */ val Loading: typings.angularHttp.srcEnumsMod.ReadyState.Loading & Double = js.native
     
-    /* 1 */ val Open: typings.angularHttp.enumsMod.ReadyState.Open & Double = js.native
+    /* 1 */ val Open: typings.angularHttp.srcEnumsMod.ReadyState.Open & Double = js.native
     
-    /* 0 */ val Unsent: typings.angularHttp.enumsMod.ReadyState.Unsent & Double = js.native
+    /* 0 */ val Unsent: typings.angularHttp.srcEnumsMod.ReadyState.Unsent & Double = js.native
   }
   
   @JSImport("@angular/http/public_api", "Request")
@@ -142,21 +142,21 @@ object publicApiMod {
   object RequestMethod extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.RequestMethod & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.srcEnumsMod.RequestMethod & Double] = js.native
     
-    /* 3 */ val Delete: typings.angularHttp.enumsMod.RequestMethod.Delete & Double = js.native
+    /* 3 */ val Delete: typings.angularHttp.srcEnumsMod.RequestMethod.Delete & Double = js.native
     
-    /* 0 */ val Get: typings.angularHttp.enumsMod.RequestMethod.Get & Double = js.native
+    /* 0 */ val Get: typings.angularHttp.srcEnumsMod.RequestMethod.Get & Double = js.native
     
-    /* 5 */ val Head: typings.angularHttp.enumsMod.RequestMethod.Head & Double = js.native
+    /* 5 */ val Head: typings.angularHttp.srcEnumsMod.RequestMethod.Head & Double = js.native
     
-    /* 4 */ val Options: typings.angularHttp.enumsMod.RequestMethod.Options & Double = js.native
+    /* 4 */ val Options: typings.angularHttp.srcEnumsMod.RequestMethod.Options & Double = js.native
     
-    /* 6 */ val Patch: typings.angularHttp.enumsMod.RequestMethod.Patch & Double = js.native
+    /* 6 */ val Patch: typings.angularHttp.srcEnumsMod.RequestMethod.Patch & Double = js.native
     
-    /* 1 */ val Post: typings.angularHttp.enumsMod.RequestMethod.Post & Double = js.native
+    /* 1 */ val Post: typings.angularHttp.srcEnumsMod.RequestMethod.Post & Double = js.native
     
-    /* 2 */ val Put: typings.angularHttp.enumsMod.RequestMethod.Put & Double = js.native
+    /* 2 */ val Put: typings.angularHttp.srcEnumsMod.RequestMethod.Put & Double = js.native
   }
   
   @JSImport("@angular/http/public_api", "RequestOptions")
@@ -170,7 +170,7 @@ object publicApiMod {
   @js.native
   open class Response protected ()
     extends typings.angularHttp.srcMod.Response {
-    def this(responseOptions: typings.angularHttp.baseResponseOptionsMod.ResponseOptions) = this()
+    def this(responseOptions: typings.angularHttp.srcBaseResponseOptionsMod.ResponseOptions) = this()
   }
   
   @JSImport("@angular/http/public_api", "ResponseContentType")
@@ -178,15 +178,15 @@ object publicApiMod {
   object ResponseContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ResponseContentType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.srcEnumsMod.ResponseContentType & Double] = js.native
     
-    /* 2 */ val ArrayBuffer: typings.angularHttp.enumsMod.ResponseContentType.ArrayBuffer & Double = js.native
+    /* 2 */ val ArrayBuffer: typings.angularHttp.srcEnumsMod.ResponseContentType.ArrayBuffer & Double = js.native
     
-    /* 3 */ val Blob: typings.angularHttp.enumsMod.ResponseContentType.Blob & Double = js.native
+    /* 3 */ val Blob: typings.angularHttp.srcEnumsMod.ResponseContentType.Blob & Double = js.native
     
-    /* 1 */ val Json: typings.angularHttp.enumsMod.ResponseContentType.Json & Double = js.native
+    /* 1 */ val Json: typings.angularHttp.srcEnumsMod.ResponseContentType.Json & Double = js.native
     
-    /* 0 */ val Text: typings.angularHttp.enumsMod.ResponseContentType.Text & Double = js.native
+    /* 0 */ val Text: typings.angularHttp.srcEnumsMod.ResponseContentType.Text & Double = js.native
   }
   
   @JSImport("@angular/http/public_api", "ResponseOptions")
@@ -201,17 +201,17 @@ object publicApiMod {
   object ResponseType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.angularHttp.enumsMod.ResponseType & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.angularHttp.srcEnumsMod.ResponseType & Double] = js.native
     
-    /* 0 */ val Basic: typings.angularHttp.enumsMod.ResponseType.Basic & Double = js.native
+    /* 0 */ val Basic: typings.angularHttp.srcEnumsMod.ResponseType.Basic & Double = js.native
     
-    /* 1 */ val Cors: typings.angularHttp.enumsMod.ResponseType.Cors & Double = js.native
+    /* 1 */ val Cors: typings.angularHttp.srcEnumsMod.ResponseType.Cors & Double = js.native
     
-    /* 2 */ val Default: typings.angularHttp.enumsMod.ResponseType.Default & Double = js.native
+    /* 2 */ val Default: typings.angularHttp.srcEnumsMod.ResponseType.Default & Double = js.native
     
-    /* 3 */ val Error: typings.angularHttp.enumsMod.ResponseType.Error & Double = js.native
+    /* 3 */ val Error: typings.angularHttp.srcEnumsMod.ResponseType.Error & Double = js.native
     
-    /* 4 */ val Opaque: typings.angularHttp.enumsMod.ResponseType.Opaque & Double = js.native
+    /* 4 */ val Opaque: typings.angularHttp.srcEnumsMod.ResponseType.Opaque & Double = js.native
   }
   
   @JSImport("@angular/http/public_api", "URLSearchParams")
@@ -219,8 +219,8 @@ object publicApiMod {
   open class URLSearchParams ()
     extends typings.angularHttp.srcMod.URLSearchParams {
     def this(rawParams: String) = this()
-    def this(rawParams: String, queryEncoder: typings.angularHttp.urlSearchParamsMod.QueryEncoder) = this()
-    def this(rawParams: Unit, queryEncoder: typings.angularHttp.urlSearchParamsMod.QueryEncoder) = this()
+    def this(rawParams: String, queryEncoder: typings.angularHttp.srcUrlSearchParamsMod.QueryEncoder) = this()
+    def this(rawParams: Unit, queryEncoder: typings.angularHttp.srcUrlSearchParamsMod.QueryEncoder) = this()
   }
   
   @JSImport("@angular/http/public_api", "VERSION")
@@ -232,9 +232,9 @@ object publicApiMod {
   open class XHRBackend protected ()
     extends typings.angularHttp.srcMod.XHRBackend {
     def this(
-      _browserXHR: typings.angularHttp.browserXhrMod.BrowserXhr,
-      _baseResponseOptions: typings.angularHttp.baseResponseOptionsMod.ResponseOptions,
-      _xsrfStrategy: typings.angularHttp.interfacesMod.XSRFStrategy
+      _browserXHR: typings.angularHttp.srcBackendsBrowserXhrMod.BrowserXhr,
+      _baseResponseOptions: typings.angularHttp.srcBaseResponseOptionsMod.ResponseOptions,
+      _xsrfStrategy: typings.angularHttp.srcInterfacesMod.XSRFStrategy
     ) = this()
   }
   
@@ -243,18 +243,18 @@ object publicApiMod {
   open class XHRConnection protected ()
     extends typings.angularHttp.srcMod.XHRConnection {
     def this(
-      req: typings.angularHttp.staticRequestMod.Request,
-      browserXHR: typings.angularHttp.browserXhrMod.BrowserXhr
+      req: typings.angularHttp.srcStaticRequestMod.Request,
+      browserXHR: typings.angularHttp.srcBackendsBrowserXhrMod.BrowserXhr
     ) = this()
     def this(
-      req: typings.angularHttp.staticRequestMod.Request,
-      browserXHR: typings.angularHttp.browserXhrMod.BrowserXhr,
-      baseResponseOptions: typings.angularHttp.baseResponseOptionsMod.ResponseOptions
+      req: typings.angularHttp.srcStaticRequestMod.Request,
+      browserXHR: typings.angularHttp.srcBackendsBrowserXhrMod.BrowserXhr,
+      baseResponseOptions: typings.angularHttp.srcBaseResponseOptionsMod.ResponseOptions
     ) = this()
   }
   
-  @JSImport("@angular/http/public_api", "XSRFStrategy")
+  /* note: abstract class */ @JSImport("@angular/http/public_api", "XSRFStrategy")
   @js.native
-  abstract class XSRFStrategy ()
+  open class XSRFStrategy ()
     extends typings.angularHttp.srcMod.XSRFStrategy
 }

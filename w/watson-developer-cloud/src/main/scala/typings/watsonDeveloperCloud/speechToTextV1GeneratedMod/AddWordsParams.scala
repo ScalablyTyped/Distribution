@@ -38,6 +38,6 @@ object AddWordsParams {
     
     inline def setWords(value: js.Array[CustomWord]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    inline def setWordsVarargs(value: CustomWord*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: CustomWord*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

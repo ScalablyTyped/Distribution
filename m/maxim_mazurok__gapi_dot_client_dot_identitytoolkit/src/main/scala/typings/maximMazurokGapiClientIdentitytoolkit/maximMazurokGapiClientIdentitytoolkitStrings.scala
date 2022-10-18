@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientIdentitytoolkitStrings {
   
   @js.native
-  sealed trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends StObject
-  inline def IdentitytoolkitRelyingpartyCreateAuthUriRequest: IdentitytoolkitRelyingpartyCreateAuthUriRequest = "IdentitytoolkitRelyingpartyCreateAuthUriRequest".asInstanceOf[IdentitytoolkitRelyingpartyCreateAuthUriRequest]
-  
-  @js.native
   sealed trait identitytoolkit extends StObject
   inline def identitytoolkit: identitytoolkit = "identitytoolkit".asInstanceOf[identitytoolkit]
   

@@ -29,16 +29,16 @@ object ViewManagement {
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.AccessibilitySettings
   
-  @JSGlobal("Windows.UI.ViewManagement.ActivationViewSwitcher")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ActivationViewSwitcher")
   @js.native
-  abstract class ActivationViewSwitcher ()
+  open class ActivationViewSwitcher ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ActivationViewSwitcher
   
   /** Represents the active application view and associated states and behaviors. */
-  @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
   @js.native
-  abstract class ApplicationView ()
+  open class ApplicationView ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ApplicationView
   object ApplicationView {
@@ -111,9 +111,9 @@ object ViewManagement {
   }
   
   /** Contains the results of a window (app view) consolidation operation. */
-  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewConsolidatedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ApplicationViewConsolidatedEventArgs")
   @js.native
-  abstract class ApplicationViewConsolidatedEventArgs ()
+  open class ApplicationViewConsolidatedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ApplicationViewConsolidatedEventArgs {
     
@@ -153,9 +153,9 @@ object ViewManagement {
   }
   
   /** Represents the app view switching behaviors for an app. */
-  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewSwitcher")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ApplicationViewSwitcher")
   @js.native
-  abstract class ApplicationViewSwitcher ()
+  open class ApplicationViewSwitcher ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ApplicationViewSwitcher
   object ApplicationViewSwitcher {
@@ -260,9 +260,9 @@ object ViewManagement {
   }
   
   /** Represents the title bar of an app. */
-  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTitleBar")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTitleBar")
   @js.native
-  abstract class ApplicationViewTitleBar ()
+  open class ApplicationViewTitleBar ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ApplicationViewTitleBar {
     
@@ -315,9 +315,9 @@ object ViewManagement {
     var inactiveForegroundColor: Color = js.native
   }
   
-  @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
   @js.native
-  abstract class ApplicationViewTransferContext ()
+  open class ApplicationViewTransferContext ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ApplicationViewTransferContext {
     
@@ -380,9 +380,9 @@ object ViewManagement {
   }
   
   /** Enables an app to register to receive notifications when the input pane is about to be displayed or hidden, and to determine which portion of the application's window is being obscured by the input pane. */
-  @JSGlobal("Windows.UI.ViewManagement.InputPane")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.InputPane")
   @js.native
-  abstract class InputPane ()
+  open class InputPane ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.InputPane
   object InputPane {
@@ -400,9 +400,9 @@ object ViewManagement {
   }
   
   /** Provides data for the input pane Hiding and Showing events. */
-  @JSGlobal("Windows.UI.ViewManagement.InputPaneVisibilityEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.InputPaneVisibilityEventArgs")
   @js.native
-  abstract class InputPaneVisibilityEventArgs ()
+  open class InputPaneVisibilityEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.InputPaneVisibilityEventArgs {
     
@@ -416,9 +416,9 @@ object ViewManagement {
   }
   
   /** Defines a set of methods for managing the windows (app views) sent to secondary displays, such as projectors. */
-  @JSGlobal("Windows.UI.ViewManagement.ProjectionManager")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.ProjectionManager")
   @js.native
-  abstract class ProjectionManager ()
+  open class ProjectionManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.ProjectionManager
   object ProjectionManager {
@@ -590,9 +590,9 @@ object ViewManagement {
        with typings.winrtUwp.Windows.UI.ViewManagement.UISettings
   
   /** Represents UI states and behaviors associated with the device mode (Tablet or Desktop) and input device type. */
-  @JSGlobal("Windows.UI.ViewManagement.UIViewSettings")
+  /* note: abstract class */ @JSGlobal("Windows.UI.ViewManagement.UIViewSettings")
   @js.native
-  abstract class UIViewSettings ()
+  open class UIViewSettings ()
     extends StObject
        with typings.winrtUwp.Windows.UI.ViewManagement.UIViewSettings {
     

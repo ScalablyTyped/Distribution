@@ -1,7 +1,7 @@
 package typings.canvg.mod.elements
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.canvg.missingGlyphElementMod.MissingGlyphElement
+import typings.canvg.distDocumentMissingGlyphElementMod.MissingGlyphElement
 import typings.canvg.mod.elements.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

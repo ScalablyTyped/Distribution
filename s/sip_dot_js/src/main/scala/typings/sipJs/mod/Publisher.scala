@@ -1,6 +1,6 @@
 package typings.sipJs.mod
 
-import typings.sipJs.publisherOptionsMod.PublisherOptions
+import typings.sipJs.libApiPublisherOptionsMod.PublisherOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Publisher")
 @js.native
 open class Publisher protected ()
-  extends typings.sipJs.apiMod.Publisher {
+  extends typings.sipJs.libApiMod.Publisher {
   /**
     * Constructs a new instance of the `Publisher` class.
     *
@@ -18,13 +18,13 @@ open class Publisher protected ()
     * @param options - Options bucket. See {@link PublisherOptions} for details.
     */
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     eventType: String
   ) = this()
   def this(
-    userAgent: typings.sipJs.userAgentMod.UserAgent,
-    targetURI: typings.sipJs.coreMod.URI,
+    userAgent: typings.sipJs.libApiUserAgentMod.UserAgent,
+    targetURI: typings.sipJs.libCoreMod.URI,
     eventType: String,
     options: PublisherOptions
   ) = this()

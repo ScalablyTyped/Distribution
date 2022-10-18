@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.rest
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.restMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "rest.PublishedRestServiceOperation")
 @js.native
 open class PublishedRestServiceOperation protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.rest.PublishedRestServiceOperation {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.rest.PublishedRestServiceOperation {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -42,7 +42,7 @@ object PublishedRestServiceOperation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestServiceOperation]
   
   /**
     * Creates and returns a new PublishedRestServiceOperation instance in the SDK and on the server.
@@ -53,7 +53,7 @@ object PublishedRestServiceOperation {
     *  7.7.0 and higher
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestServiceResource): typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenRestMod.rest.PublishedRestServiceOperation]
   
   /* static member */
   @JSImport("mendixmodelsdk", "rest.PublishedRestServiceOperation.structureTypeName")

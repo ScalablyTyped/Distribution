@@ -1,7 +1,5 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
-import org.scalablytyped.runtime.TopLevel
-import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleLongrunning__Operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +17,7 @@ trait GoogleLongrunningOperation extends StObject {
     * metadata. Any method that returns a long-running operation should document the metadata type, if any.
     */
   var metadata: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ GoogleLongrunning__Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /**
@@ -36,9 +32,7 @@ trait GoogleLongrunningOperation extends StObject {
     * original method name. For example, if the original method name is `TakeSnapshot()`, the inferred response type is `TakeSnapshotResponse`.
     */
   var response: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ GoogleLongrunning__Operation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object GoogleLongrunningOperation {
@@ -59,9 +53,7 @@ object GoogleLongrunningOperation {
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setMetadata(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ GoogleLongrunning__Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -71,9 +63,7 @@ object GoogleLongrunningOperation {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setResponse(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ GoogleLongrunning__Operation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)

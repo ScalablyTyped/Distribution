@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "BufferGeometryLoader")
 @js.native
 open class BufferGeometryLoader ()
-  extends typings.three.threeMod.BufferGeometryLoader {
-  def this(manager: typings.three.loadingManagerMod.LoadingManager) = this()
+  extends typings.three.srcThreeMod.BufferGeometryLoader {
+  def this(manager: typings.three.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods that let an app ask to be added to the lock screen's apps list or query its current access to background activity and badge updates on the lock screen. */
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundExecutionManager")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Background.BackgroundExecutionManager")
 @js.native
-abstract class BackgroundExecutionManager ()
+open class BackgroundExecutionManager ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundExecutionManager
 object BackgroundExecutionManager {

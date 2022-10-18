@@ -1,7 +1,6 @@
 package typings.fragmentedStore
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.fragmentedStore.anon.Provider
 import typings.fragmentedStore.fragmentedStoreStrings.useStore
 import typings.react.mod.Dispatch
@@ -22,9 +21,7 @@ object mod {
   type StateHook[S] = js.Function0[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
   
   type StoreUtils[Store /* <: StringDictionary[Any] */] = (Omit[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Store as / * template literal string: use${Capitalize<string&K>} * / string ]: fragmented-store.fragmented-store.StateHook<Store[K]>}
-    */ typings.fragmentedStore.fragmentedStoreStrings.StoreUtils & TopLevel[Store], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Store as / * template literal string: use${Capitalize<string&K>} * / string ]: fragmented-store.fragmented-store.StateHook<Store[K]>} */ js.Any, 
     useStore
   ]) & Provider[Store]
 }

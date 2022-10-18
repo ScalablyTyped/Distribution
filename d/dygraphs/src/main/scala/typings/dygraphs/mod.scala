@@ -499,8 +499,14 @@ object mod {
       * instead of toDataCoords(null, y, axis).
       * {@link https://dygraphs.com/jsdoc/symbols/Dygraph.html#toDataCoords}
       */
-    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[Null | Double, Null | Double] = js.native
-    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[Null | Double, Null | Double] = js.native
+    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
+    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
     
     /**
       * Convert from canvas/div x coordinate to data coordinate.
@@ -508,7 +514,7 @@ object mod {
       * If x is null, this returns null.
       * {@link https://dygraphs.com/jsdoc/symbols/Dygraph.html#toDataXCoord}
       */
-    def toDataXCoord[T /* <: Double | Null */](x: T): Null | Double = js.native
+    def toDataXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
     /**
       * Convert from canvas/div y coord to value.
@@ -517,8 +523,8 @@ object mod {
       * if axis is null, this uses the first axis.
       * {@link https://dygraphs.com/jsdoc/symbols/Dygraph.html#toDataYCoord}
       */
-    def toDataYCoord[T /* <: Double | Null */](y: T): Null | Double = js.native
-    def toDataYCoord[T /* <: Double | Null */](y: T, axis: Double): Null | Double = js.native
+    def toDataYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
+    def toDataYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
     /**
       * Convert from data coordinates to canvas/div X/Y coordinates.
@@ -530,8 +536,14 @@ object mod {
       * instead of toDomCoords(null, y, axis).
       * {@link https://dygraphs.com/jsdoc/symbols/Dygraph.html#toDomCoords}
       */
-    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[Null | Double, Null | Double] = js.native
-    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[Null | Double, Null | Double] = js.native
+    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
+    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
     
     /**
       * Convert from data x coordinates to canvas/div X coordinate.
@@ -540,7 +552,7 @@ object mod {
       * Returns a single value or null if x is null.
       * {@link https://dygraphs.com/jsdoc/symbols/Dygraph.html#toDomXCoord}
       */
-    def toDomXCoord[T /* <: Double | Null */](x: T): Null | Double = js.native
+    def toDomXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
     /**
       * Convert from data x coordinates to canvas/div Y coordinate and optional
@@ -549,8 +561,8 @@ object mod {
       * Returns a single value or null if y is null.
       * {@link https://dygraphs.com/jsdoc/symbols/Dygraph.html#toDomYCoord}
       */
-    def toDomYCoord[T /* <: Double | Null */](y: T): Null | Double = js.native
-    def toDomYCoord[T /* <: Double | Null */](y: T, axis: Double): Null | Double = js.native
+    def toDomYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
+    def toDomYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
     /**
       * Converts an x value to a percentage from the left to the right of
@@ -567,7 +579,7 @@ object mod {
       * @param x The data x-coordinate.
       * @return A fraction in [0, 1] where 0 = the left edge.
       */
-    def toPercentXCoord[T /* <: Double | Null */](x: T): Double | Null = js.native
+    def toPercentXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
     
     /**
       * Converts a y for an axis to a percentage from the top to the
@@ -586,8 +598,8 @@ object mod {
       * @param [axis] The axis number on which the data coordinate lives.
       * @return A fraction in [0, 1] where 0 = the top edge.
       */
-    def toPercentYCoord[T /* <: Double | Null */](y: T): Double | Null = js.native
-    def toPercentYCoord[T /* <: Double | Null */](y: T, axis: Double): Double | Null = js.native
+    def toPercentYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
+    def toPercentYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
     
     /**
       * Changes various properties of the graph. These can include:

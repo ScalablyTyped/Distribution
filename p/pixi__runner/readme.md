@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__runner
 
-Typings are for version 6.5.4
+Typings are for version 6.5.6
 
 ## Library description:
 A simple alternative to events and signals with an emphasis on performance.

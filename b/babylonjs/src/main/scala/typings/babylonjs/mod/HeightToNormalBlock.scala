@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "HeightToNormalBlock")
 @js.native
 open class HeightToNormalBlock protected ()
-  extends typings.babylonjs.legacyMod.HeightToNormalBlock {
+  extends typings.babylonjs.legacyLegacyMod.HeightToNormalBlock {
   /**
     * Creates a new HeightToNormalBlock
     * @param name defines the block name

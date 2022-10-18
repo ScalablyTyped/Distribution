@@ -1,7 +1,7 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.physicsImpostorMod.IPhysicsEnabledObject
-import typings.babylonjs.physicsImpostorMod.PhysicsImpostorParameters
+import typings.babylonjs.physicsPhysicsImpostorMod.IPhysicsEnabledObject
+import typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostorParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "PhysicsImpostor")
 @js.native
 open class PhysicsImpostor protected ()
-  extends typings.babylonjs.legacyMod.PhysicsImpostor {
+  extends typings.babylonjs.legacyLegacyMod.PhysicsImpostor {
   /**
     * Initializes the physics imposter
     * @param object The physics-enabled object used as the physics imposter
@@ -123,8 +123,8 @@ object PhysicsImpostor {
     */
   @JSImport("babylonjs", "PhysicsImpostor.DEFAULT_OBJECT_SIZE")
   @js.native
-  def DEFAULT_OBJECT_SIZE: typings.babylonjs.mathVectorMod.Vector3 = js.native
-  inline def DEFAULT_OBJECT_SIZE_=(x: typings.babylonjs.mathVectorMod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
+  def DEFAULT_OBJECT_SIZE: typings.babylonjs.mathsMathDotvectorMod.Vector3 = js.native
+  inline def DEFAULT_OBJECT_SIZE_=(x: typings.babylonjs.mathsMathDotvectorMod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
   
   /**
     * Heightmap-Imposter type
@@ -139,8 +139,8 @@ object PhysicsImpostor {
     */
   @JSImport("babylonjs", "PhysicsImpostor.IDENTITY_QUATERNION")
   @js.native
-  def IDENTITY_QUATERNION: typings.babylonjs.mathVectorMod.Quaternion = js.native
-  inline def IDENTITY_QUATERNION_=(x: typings.babylonjs.mathVectorMod.Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
+  def IDENTITY_QUATERNION: typings.babylonjs.mathsMathDotvectorMod.Quaternion = js.native
+  inline def IDENTITY_QUATERNION_=(x: typings.babylonjs.mathsMathDotvectorMod.Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
   
   /**
     * Mesh-imposter type (Only available to objects with vertices data)

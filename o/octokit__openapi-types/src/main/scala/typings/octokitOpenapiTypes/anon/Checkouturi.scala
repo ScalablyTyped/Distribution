@@ -14,11 +14,11 @@ trait Checkouturi extends StObject {
     */
   var checkout_uri: js.UndefOr[String] = js.undefined
   
-  var commit_sha: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-commit-sha'] */ js.Any
+  var commit_sha: String
   
-  var ref: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-ref'] */ js.Any
+  var ref: String
   
-  var sarif: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-sarif-file'] */ js.Any
+  var sarif: String
   
   /**
     * Format: date-time
@@ -31,11 +31,7 @@ trait Checkouturi extends StObject {
 }
 object Checkouturi {
   
-  inline def apply(
-    commit_sha: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-commit-sha'] */ js.Any,
-    ref: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-ref'] */ js.Any,
-    sarif: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-sarif-file'] */ js.Any
-  ): Checkouturi = {
+  inline def apply(commit_sha: String, ref: String, sarif: String): Checkouturi = {
     val __obj = js.Dynamic.literal(commit_sha = commit_sha.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sarif = sarif.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checkouturi]
   }
@@ -46,17 +42,11 @@ object Checkouturi {
     
     inline def setCheckout_uriUndefined: Self = StObject.set(x, "checkout_uri", js.undefined)
     
-    inline def setCommit_sha(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-commit-sha'] */ js.Any
-    ): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
+    inline def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
     
-    inline def setRef(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-ref'] */ js.Any
-    ): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setSarif(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-sarif-file'] */ js.Any
-    ): Self = StObject.set(x, "sarif", value.asInstanceOf[js.Any])
+    inline def setSarif(value: String): Self = StObject.set(x, "sarif", value.asInstanceOf[js.Any])
     
     inline def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     

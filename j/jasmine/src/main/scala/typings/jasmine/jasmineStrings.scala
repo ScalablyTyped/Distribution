@@ -7,48 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jasmineStrings {
   
   @js.native
-  sealed trait Expected extends StObject
-  inline def Expected: Expected = "Expected".asInstanceOf[Expected]
-  
-  @js.native
-  sealed trait ExpectedRecursive extends StObject
-  inline def ExpectedRecursive: ExpectedRecursive = "ExpectedRecursive".asInstanceOf[ExpectedRecursive]
-  
-  @js.native
-  sealed trait MatchableArgs extends StObject
-  inline def MatchableArgs: MatchableArgs = "MatchableArgs".asInstanceOf[MatchableArgs]
-  
-  @js.native
-  sealed trait NonTypedSpyObj extends StObject
-  inline def NonTypedSpyObj: NonTypedSpyObj = "NonTypedSpyObj".asInstanceOf[NonTypedSpyObj]
-  
-  @js.native
-  sealed trait ObjectContaining extends StObject
-  inline def ObjectContaining: ObjectContaining = "ObjectContaining".asInstanceOf[ObjectContaining]
-  
-  @js.native
-  sealed trait SpyObj extends StObject
-  inline def SpyObj: SpyObj = "SpyObj".asInstanceOf[SpyObj]
-  
-  @js.native
-  sealed trait SpyObjMethodNames extends StObject
-  inline def SpyObjMethodNames: SpyObjMethodNames = "SpyObjMethodNames".asInstanceOf[SpyObjMethodNames]
-  
-  @js.native
-  sealed trait SpyObjPropertyNames extends StObject
-  inline def SpyObjPropertyNames: SpyObjPropertyNames = "SpyObjPropertyNames".asInstanceOf[SpyObjPropertyNames]
-  
-  @js.native
   sealed trait get extends StObject
   inline def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait `import` extends StObject
   inline def `import`: `import` = "import".asInstanceOf[`import`]
-  
-  @js.native
-  sealed trait objectContaining_ extends StObject
-  inline def objectContaining_ : objectContaining_ = "objectContaining".asInstanceOf[objectContaining_]
   
   @js.native
   sealed trait require extends StObject

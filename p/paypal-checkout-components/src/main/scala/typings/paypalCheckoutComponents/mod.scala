@@ -1,8 +1,8 @@
 package typings.paypalCheckoutComponents
 
-import typings.paypalCheckoutComponents.buttonMod.ButtonRenderer
-import typings.paypalCheckoutComponents.buttonMod.ButtonsRenderer
-import typings.paypalCheckoutComponents.buttonMod.FundingOption
+import typings.paypalCheckoutComponents.modulesButtonMod.ButtonRenderer
+import typings.paypalCheckoutComponents.modulesButtonMod.ButtonsRenderer
+import typings.paypalCheckoutComponents.modulesButtonMod.FundingOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,15 +18,17 @@ object mod {
   object ButtonColorOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.configurationMod.ButtonColorOption & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption & String
+      ] = js.native
     
-    /* "black" */ val Black: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Black & String = js.native
+    /* "black" */ val Black: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Black & String = js.native
     
-    /* "blue" */ val Blue: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Blue & String = js.native
+    /* "blue" */ val Blue: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Blue & String = js.native
     
-    /* "gold" */ val Gold: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Gold & String = js.native
+    /* "gold" */ val Gold: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Gold & String = js.native
     
-    /* "silver" */ val Silver: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Silver & String = js.native
+    /* "silver" */ val Silver: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Silver & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "ButtonLabelOption")
@@ -34,17 +36,19 @@ object mod {
   object ButtonLabelOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption & String
+      ] = js.native
     
-    /* "buynow" */ val BuyNow: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.BuyNow & String = js.native
+    /* "buynow" */ val BuyNow: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption.BuyNow & String = js.native
     
-    /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Checkout & String = js.native
+    /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption.Checkout & String = js.native
     
-    /* "credit" */ val Credit: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Credit & String = js.native
+    /* "credit" */ val Credit: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption.Credit & String = js.native
     
-    /* "pay" */ val Pay: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Pay & String = js.native
+    /* "pay" */ val Pay: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption.Pay & String = js.native
     
-    /* "paypal" */ val PayPal: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.PayPal & String = js.native
+    /* "paypal" */ val PayPal: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonLabelOption.PayPal & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "ButtonShapeOption")
@@ -52,11 +56,13 @@ object mod {
   object ButtonShapeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonShapeOption & String
+      ] = js.native
     
-    /* "pill" */ val Pill: typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption.Pill & String = js.native
+    /* "pill" */ val Pill: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonShapeOption.Pill & String = js.native
     
-    /* "rect" */ val Rect: typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption.Rect & String = js.native
+    /* "rect" */ val Rect: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonShapeOption.Rect & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "ButtonSizeOption")
@@ -64,15 +70,17 @@ object mod {
   object ButtonSizeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonSizeOption & String
+      ] = js.native
     
-    /* "large" */ val Large: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Large & String = js.native
+    /* "large" */ val Large: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonSizeOption.Large & String = js.native
     
-    /* "medium" */ val Medium: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Medium & String = js.native
+    /* "medium" */ val Medium: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonSizeOption.Medium & String = js.native
     
-    /* "responsive" */ val Responsive: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Responsive & String = js.native
+    /* "responsive" */ val Responsive: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonSizeOption.Responsive & String = js.native
     
-    /* "small" */ val Small: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Small & String = js.native
+    /* "small" */ val Small: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonSizeOption.Small & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "Buttons")
@@ -84,11 +92,11 @@ object mod {
   object Environment extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.configurationMod.Environment & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.modulesConfigurationMod.Environment & String] = js.native
     
-    /* "production" */ val Production: typings.paypalCheckoutComponents.configurationMod.Environment.Production & String = js.native
+    /* "production" */ val Production: typings.paypalCheckoutComponents.modulesConfigurationMod.Environment.Production & String = js.native
     
-    /* "sandbox" */ val Sandbox: typings.paypalCheckoutComponents.configurationMod.Environment.Sandbox & String = js.native
+    /* "sandbox" */ val Sandbox: typings.paypalCheckoutComponents.modulesConfigurationMod.Environment.Sandbox & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "FUNDING")
@@ -98,15 +106,15 @@ object mod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[FundingOption & Double] = js.native
     
-    /* 1 */ val CARD: typings.paypalCheckoutComponents.buttonMod.FundingOption.CARD & Double = js.native
+    /* 1 */ val CARD: typings.paypalCheckoutComponents.modulesButtonMod.FundingOption.CARD & Double = js.native
     
-    /* 0 */ val CREDIT: typings.paypalCheckoutComponents.buttonMod.FundingOption.CREDIT & Double = js.native
+    /* 0 */ val CREDIT: typings.paypalCheckoutComponents.modulesButtonMod.FundingOption.CREDIT & Double = js.native
     
-    /* 3 */ val ELV: typings.paypalCheckoutComponents.buttonMod.FundingOption.ELV & Double = js.native
+    /* 3 */ val ELV: typings.paypalCheckoutComponents.modulesButtonMod.FundingOption.ELV & Double = js.native
     
-    /* 4 */ val PAYPAL: typings.paypalCheckoutComponents.buttonMod.FundingOption.PAYPAL & Double = js.native
+    /* 4 */ val PAYPAL: typings.paypalCheckoutComponents.modulesButtonMod.FundingOption.PAYPAL & Double = js.native
     
-    /* 2 */ val VENMO: typings.paypalCheckoutComponents.buttonMod.FundingOption.VENMO & Double = js.native
+    /* 2 */ val VENMO: typings.paypalCheckoutComponents.modulesButtonMod.FundingOption.VENMO & Double = js.native
   }
   
   @JSImport("paypal-checkout-components", "FlowType")
@@ -114,11 +122,11 @@ object mod {
   object FlowType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.callbackDataMod.FlowType & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.modulesCallbackDataMod.FlowType & String] = js.native
     
-    /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.callbackDataMod.FlowType.Checkout & String = js.native
+    /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.modulesCallbackDataMod.FlowType.Checkout & String = js.native
     
-    /* "vault" */ val Vault: typings.paypalCheckoutComponents.callbackDataMod.FlowType.Vault & String = js.native
+    /* "vault" */ val Vault: typings.paypalCheckoutComponents.modulesCallbackDataMod.FlowType.Vault & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "Intent")
@@ -126,13 +134,13 @@ object mod {
   object Intent extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.callbackDataMod.Intent & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.modulesCallbackDataMod.Intent & String] = js.native
     
-    /* "authorize" */ val Authorize: typings.paypalCheckoutComponents.callbackDataMod.Intent.Authorize & String = js.native
+    /* "authorize" */ val Authorize: typings.paypalCheckoutComponents.modulesCallbackDataMod.Intent.Authorize & String = js.native
     
-    /* "capture" */ val Capture: typings.paypalCheckoutComponents.callbackDataMod.Intent.Capture & String = js.native
+    /* "capture" */ val Capture: typings.paypalCheckoutComponents.modulesCallbackDataMod.Intent.Capture & String = js.native
     
-    /* "order" */ val Order: typings.paypalCheckoutComponents.callbackDataMod.Intent.Order & String = js.native
+    /* "order" */ val Order: typings.paypalCheckoutComponents.modulesCallbackDataMod.Intent.Order & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "LineItemKind")
@@ -140,11 +148,11 @@ object mod {
   object LineItemKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.callbackDataMod.LineItemKind & String] = js.native
+    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.modulesCallbackDataMod.LineItemKind & String] = js.native
     
-    /* "credit" */ val Credit: typings.paypalCheckoutComponents.callbackDataMod.LineItemKind.Credit & String = js.native
+    /* "credit" */ val Credit: typings.paypalCheckoutComponents.modulesCallbackDataMod.LineItemKind.Credit & String = js.native
     
-    /* "debit" */ val Debit: typings.paypalCheckoutComponents.callbackDataMod.LineItemKind.Debit & String = js.native
+    /* "debit" */ val Debit: typings.paypalCheckoutComponents.modulesCallbackDataMod.LineItemKind.Debit & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "ShippingOptionType")
@@ -152,10 +160,12 @@ object mod {
   object ShippingOptionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.paypalCheckoutComponents.callbackDataMod.ShippingOptionType & String] = js.native
+    def apply(value: String): js.UndefOr[
+        typings.paypalCheckoutComponents.modulesCallbackDataMod.ShippingOptionType & String
+      ] = js.native
     
-    /* "PICKUP" */ val Pickup: typings.paypalCheckoutComponents.callbackDataMod.ShippingOptionType.Pickup & String = js.native
+    /* "PICKUP" */ val Pickup: typings.paypalCheckoutComponents.modulesCallbackDataMod.ShippingOptionType.Pickup & String = js.native
     
-    /* "SHIPPING" */ val Shipping: typings.paypalCheckoutComponents.callbackDataMod.ShippingOptionType.Shipping & String = js.native
+    /* "SHIPPING" */ val Shipping: typings.paypalCheckoutComponents.modulesCallbackDataMod.ShippingOptionType.Shipping & String = js.native
   }
 }

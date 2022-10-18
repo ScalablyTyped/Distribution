@@ -1,6 +1,6 @@
 package typings.rcComponentPortal
 
-import typings.rcComponentPortal.portalMod.PortalProps
+import typings.rcComponentPortal.esPortalMod.PortalProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

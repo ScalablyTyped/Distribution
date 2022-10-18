@@ -1,7 +1,7 @@
 package typings.tslint.anon
 
-import typings.tslint.ruleMod.IDisabledInterval
-import typings.tslint.ruleMod.RuleSeverity
+import typings.tslint.libLanguageRuleRuleMod.IDisabledInterval
+import typings.tslint.libLanguageRuleRuleMod.RuleSeverity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.sentryNode.anon
 
-import typings.sentryNode.onunhandledrejectionMod.UnhandledRejectionMode
+import typings.sentryNode.typesIntegrationsOnunhandledrejectionMod.UnhandledRejectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,9 +112,7 @@ trait Settings extends StObject {
   
   /** User-provided labels, represented as a dictionary where each label is a single key value pair. */
   var userLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object Settings {
@@ -242,9 +239,7 @@ object Settings {
     inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
     inline def setUserLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

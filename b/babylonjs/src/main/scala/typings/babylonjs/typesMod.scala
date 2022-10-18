@@ -1,8 +1,6 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
-import typings.std.ReadonlyArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,21 +9,40 @@ object typesMod {
   
   type DataArray = js.Array[Double] | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
   
-  type DeepImmutable[T] = DeepImmutableObject[T] | DeepImmutableArray[Any] | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends babylonjs.babylonjs/types.Primitive ? T : T extends std.Array<infer U> ? babylonjs.babylonjs/types.DeepImmutableArray<U> : babylonjs.babylonjs/types.DeepImmutableObject<T>
+    }}}
+    */
+  @js.native
+  trait DeepImmutable[T] extends StObject
   
   /** @internal */
-  @js.native
-  trait DeepImmutableArray[T]
-    extends StObject
-       with ReadonlyArray[DeepImmutable[T]]
+  type DeepImmutableArray[T] = js.Array[DeepImmutable[T]]
   
-  type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in keyof T ]: babylonjs.babylonjs/types.DeepImmutable<T[K]>}
-    */ typings.babylonjs.babylonjsStrings.DeepImmutableObject & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {readonly [ K in keyof T ]: babylonjs.babylonjs/types.DeepImmutable<T[K]>}
+    }}}
+    */
+  @js.native
+  trait DeepImmutableObject[T] extends StObject
   
   type FloatArray = js.Array[Double] | js.typedarray.Float32Array
   
-  type Immutable[T] = js.Array[Any] | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends babylonjs.babylonjs/types.Primitive ? T : T extends std.Array<infer U> ? std.ReadonlyArray<U> : babylonjs.babylonjs/types.DeepImmutable<T>
+    }}}
+    */
+  @js.native
+  trait Immutable[T] extends StObject
   
   type IndicesArray = js.Array[Double] | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array
   

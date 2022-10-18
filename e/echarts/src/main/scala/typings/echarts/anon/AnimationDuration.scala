@@ -156,7 +156,7 @@ trait AnimationDuration extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
+  var itemStyle: js.UndefOr[BorderWidth] = js.undefined
   
   /**
     * Label of mark point.
@@ -164,7 +164,7 @@ trait AnimationDuration extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.label
     */
-  var label: js.UndefOr[BorderWidth] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.undefined
   
   /**
     * Whether to ignore mouse events.
@@ -333,11 +333,11 @@ object AnimationDuration {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: BorderWidth): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

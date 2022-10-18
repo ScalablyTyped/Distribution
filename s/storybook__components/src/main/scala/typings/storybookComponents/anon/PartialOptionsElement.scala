@@ -1,7 +1,7 @@
 package typings.storybookComponents.anon
 
 import typings.std.HTMLElement
-import typings.storybookComponents.popperjsCoreLibTypesMod.Padding
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

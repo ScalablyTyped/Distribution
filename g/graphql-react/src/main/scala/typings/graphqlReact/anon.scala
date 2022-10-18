@@ -244,21 +244,4 @@ object anon {
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait Variables[V] extends StObject {
-    
-    var variables: V
-  }
-  object Variables {
-    
-    inline def apply[V](variables: V): Variables[V] = {
-      val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Variables[V]]
-    }
-    
-    extension [Self <: Variables[?], V](x: Self & Variables[V]) {
-      
-      inline def setVariables(value: V): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
-    }
-  }
 }

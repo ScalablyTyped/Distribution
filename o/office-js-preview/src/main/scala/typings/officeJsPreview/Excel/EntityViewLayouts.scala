@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents layout information for various views of the entity.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait EntityViewLayouts extends StObject {
   
@@ -18,8 +17,7 @@ trait EntityViewLayouts extends StObject {
     * If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var card: js.UndefOr[CardLayout] = js.undefined
   
@@ -27,8 +25,7 @@ trait EntityViewLayouts extends StObject {
     * Represents the layout used when there is limited space to represent the entity.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var compact: js.UndefOr[CompactLayout] = js.undefined
 }

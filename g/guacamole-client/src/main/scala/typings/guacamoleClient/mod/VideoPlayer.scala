@@ -1,6 +1,6 @@
 package typings.guacamoleClient.mod
 
-import typings.guacamoleClient.guacCommonMod.Mimetype
+import typings.guacamoleClient.libGuacCommonMod.Mimetype
 import typings.std.MimeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-client", "VideoPlayer")
 @js.native
 open class VideoPlayer ()
-  extends typings.guacamoleClient.videoPlayerMod.VideoPlayer
+  extends typings.guacamoleClient.libVideoPlayerMod.VideoPlayer
 /* static members */
 object VideoPlayer {
   
@@ -32,10 +32,10 @@ object VideoPlayer {
     * is absent.
     */
   inline def getInstance(
-    stream: typings.guacamoleClient.inputStreamMod.InputStream,
-    layer: typings.guacamoleClient.visibleLayerMod.VisibleLayer,
+    stream: typings.guacamoleClient.libInputStreamMod.InputStream,
+    layer: typings.guacamoleClient.libVisibleLayerMod.VisibleLayer,
     mimetype: MimeType
-  ): typings.guacamoleClient.videoPlayerMod.VideoPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.videoPlayerMod.VideoPlayer | Null]
+  ): typings.guacamoleClient.libVideoPlayerMod.VideoPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.libVideoPlayerMod.VideoPlayer | Null]
   
   /**
     * Returns a list of all mimetypes supported by any built-in

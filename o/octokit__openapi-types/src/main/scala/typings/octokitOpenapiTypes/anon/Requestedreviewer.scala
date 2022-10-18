@@ -20,7 +20,7 @@ trait Requestedreviewer extends StObject {
   
   var node_id: String
   
-  var performed_via_github_app: Externalurl | Null
+  var performed_via_github_app: Clientsecret | Null
   
   var requested_reviewer: js.UndefOr[Avatarurl] = js.undefined
   
@@ -65,7 +65,7 @@ object Requestedreviewer {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: Clientsecret): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     

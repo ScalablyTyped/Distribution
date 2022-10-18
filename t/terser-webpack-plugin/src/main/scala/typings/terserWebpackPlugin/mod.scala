@@ -197,15 +197,15 @@ object mod {
   object esbuildMinify {
     
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
       sourceMap: Unit,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
-      sourceMap: typings.terserWebpackPlugin.utilsMod.SourceMapInput,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
+      sourceMap: typings.terserWebpackPlugin.typesUtilsMod.SourceMapInput,
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     
     @JSImport("terser-webpack-plugin", "esbuildMinify")
     @js.native
@@ -253,15 +253,15 @@ object mod {
   object swcMinify {
     
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
       sourceMap: Unit,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
-      sourceMap: typings.terserWebpackPlugin.utilsMod.SourceMapInput,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
+      sourceMap: typings.terserWebpackPlugin.typesUtilsMod.SourceMapInput,
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     
     @JSImport("terser-webpack-plugin", "swcMinify")
     @js.native
@@ -276,27 +276,27 @@ object mod {
   object terserMinify {
     
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
       sourceMap: Unit,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
       sourceMap: Unit,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions,
-      extractComments: typings.terserWebpackPlugin.utilsMod.ExtractCommentsOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions,
+      extractComments: typings.terserWebpackPlugin.typesUtilsMod.ExtractCommentsOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
-      sourceMap: typings.terserWebpackPlugin.utilsMod.SourceMapInput,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
+      sourceMap: typings.terserWebpackPlugin.typesUtilsMod.SourceMapInput,
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
-      sourceMap: typings.terserWebpackPlugin.utilsMod.SourceMapInput,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions,
-      extractComments: typings.terserWebpackPlugin.utilsMod.ExtractCommentsOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
+      sourceMap: typings.terserWebpackPlugin.typesUtilsMod.SourceMapInput,
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions,
+      extractComments: typings.terserWebpackPlugin.typesUtilsMod.ExtractCommentsOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     
     @JSImport("terser-webpack-plugin", "terserMinify")
     @js.native
@@ -311,27 +311,27 @@ object mod {
   object uglifyJsMinify {
     
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
       sourceMap: Unit,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
       sourceMap: Unit,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions,
-      extractComments: typings.terserWebpackPlugin.utilsMod.ExtractCommentsOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions,
+      extractComments: typings.terserWebpackPlugin.typesUtilsMod.ExtractCommentsOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
-      sourceMap: typings.terserWebpackPlugin.utilsMod.SourceMapInput,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
+      sourceMap: typings.terserWebpackPlugin.typesUtilsMod.SourceMapInput,
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     inline def apply(
-      input: typings.terserWebpackPlugin.utilsMod.Input,
-      sourceMap: typings.terserWebpackPlugin.utilsMod.SourceMapInput,
-      minimizerOptions: typings.terserWebpackPlugin.utilsMod.PredefinedOptions & typings.terserWebpackPlugin.utilsMod.CustomOptions,
-      extractComments: typings.terserWebpackPlugin.utilsMod.ExtractCommentsOptions
-    ): js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.utilsMod.MinimizedResult]]
+      input: typings.terserWebpackPlugin.typesUtilsMod.Input,
+      sourceMap: typings.terserWebpackPlugin.typesUtilsMod.SourceMapInput,
+      minimizerOptions: typings.terserWebpackPlugin.typesUtilsMod.PredefinedOptions & typings.terserWebpackPlugin.typesUtilsMod.CustomOptions,
+      extractComments: typings.terserWebpackPlugin.typesUtilsMod.ExtractCommentsOptions
+    ): js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any], extractComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.terserWebpackPlugin.typesUtilsMod.MinimizedResult]]
     
     @JSImport("terser-webpack-plugin", "uglifyJsMinify")
     @js.native
@@ -410,23 +410,15 @@ object mod {
   
   type CustomOptions = StringDictionary[Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.terserWebpackPlugin.anon.TerserOptions[T]
-    - typings.terserWebpackPlugin.anon.Minify[T]
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends terser-webpack-plugin.terser-webpack-plugin.TerserOptions ? {  minify :terser-webpack-plugin.terser-webpack-plugin.MinimizerImplementation<T> | undefined,   terserOptions :terser-webpack-plugin.terser-webpack-plugin.MinimizerOptions<T> | undefined} : {  minify :terser-webpack-plugin.terser-webpack-plugin.MinimizerImplementation<T>,   terserOptions :terser-webpack-plugin.terser-webpack-plugin.MinimizerOptions<T> | undefined}
+    }}}
+    */
+  @js.native
   trait DefinedDefaultMinimizerAndOptions[T] extends StObject
-  object DefinedDefaultMinimizerAndOptions {
-    
-    inline def Minify[T](): typings.terserWebpackPlugin.anon.Minify[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.terserWebpackPlugin.anon.Minify[T]]
-    }
-    
-    inline def TerserOptions[T](minify: MinimizerImplementation[T]): typings.terserWebpackPlugin.anon.TerserOptions[T] = {
-      val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.terserWebpackPlugin.anon.TerserOptions[T]]
-    }
-  }
   
   type ExtractCommentsBanner = String | Boolean | (js.Function1[/* commentsFile */ String, String])
   
@@ -488,7 +480,15 @@ object mod {
   */
   type ExtractCommentsOptions = _ExtractCommentsOptions | Boolean | js.RegExp | ExtractCommentsFunction
   
-  type InferDefaultType[T] = CustomOptions
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends infer U ? U : terser-webpack-plugin.terser-webpack-plugin.CustomOptions
+    }}}
+    */
+  @js.native
+  trait InferDefaultType[T] extends StObject
   
   type Input = StringDictionary[String]
   
@@ -579,7 +579,7 @@ object mod {
     
     var extractedComments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var map: js.UndefOr[typings.jridgewellTraceMapping.typesMod.SourceMapInput] = js.undefined
+    var map: js.UndefOr[typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput] = js.undefined
     
     var warnings: js.UndefOr[js.Array[String | js.Error]] = js.undefined
   }
@@ -606,7 +606,7 @@ object mod {
       
       inline def setExtractedCommentsVarargs(value: String*): Self = StObject.set(x, "extractedComments", js.Array(value*))
       
-      inline def setMap(value: typings.jridgewellTraceMapping.typesMod.SourceMapInput): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
@@ -689,13 +689,13 @@ object mod {
   
   type Rules = js.Array[Rule] | Rule
   
-  type Schema = typings.schemaUtils.validateMod.Schema
+  type Schema = typings.schemaUtils.declarationsValidateMod.Schema
   
-  type SourceMapInput = typings.jridgewellTraceMapping.typesMod.SourceMapInput
+  type SourceMapInput = typings.jridgewellTraceMapping.distTypesTypesMod.SourceMapInput
   
-  type TerserECMA = typings.terserWebpackPlugin.utilsMod.TerserECMA
+  type TerserECMA = typings.terserWebpackPlugin.typesUtilsMod.TerserECMA
   
-  type TerserOptions = typings.terserWebpackPlugin.utilsMod.TerserOptions
+  type TerserOptions = typings.terserWebpackPlugin.typesUtilsMod.TerserOptions
   
   /** @typedef {import("schema-utils/declarations/validate").Schema} Schema */
   /** @typedef {import("webpack").Compiler} Compiler */

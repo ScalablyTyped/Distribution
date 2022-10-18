@@ -1,9 +1,9 @@
 package typings.openjscad
 
 import typings.openjscad.CSG.Polygon.Shared
-import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.materialMod.Material
 import typings.three.mod.Mesh
+import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcMaterialsMaterialMod.Material
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

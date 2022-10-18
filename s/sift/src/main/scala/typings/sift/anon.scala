@@ -1,7 +1,7 @@
 package typings.sift
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sift.coreMod.OperationCreator
+import typings.sift.libCoreMod.OperationCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

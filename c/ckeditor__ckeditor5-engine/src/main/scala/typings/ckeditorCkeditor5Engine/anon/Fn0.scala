@@ -10,5 +10,5 @@ trait Fn0 extends StObject {
   
   def apply(): (ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine/src/model/node.default['toJSON'] */ js.Any
-  ]) & Attributes = js.native
+  ]) & AttributesData = js.native
 }

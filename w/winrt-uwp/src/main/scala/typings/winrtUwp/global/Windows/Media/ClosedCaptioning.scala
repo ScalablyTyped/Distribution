@@ -81,9 +81,9 @@ object ClosedCaptioning {
   }
   
   /** Exposes properties for retrieving the closed caption formatting settings that the user can set through the system's closed captioning settings page. */
-  @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionProperties")
   @js.native
-  abstract class ClosedCaptionProperties ()
+  open class ClosedCaptionProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionProperties
   object ClosedCaptionProperties {

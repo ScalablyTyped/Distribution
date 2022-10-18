@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ScrollDirection")
 @js.native
 open class ScrollDirection protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ScrollDirection {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ScrollDirection {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object ScrollDirection {
@@ -20,12 +20,12 @@ object ScrollDirection {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ScrollDirection.Horizontal")
   @js.native
-  def Horizontal: typings.mendixmodelsdk.pagesMod.pages.ScrollDirection = js.native
-  inline def Horizontal_=(x: typings.mendixmodelsdk.pagesMod.pages.ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  def Horizontal: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollDirection = js.native
+  inline def Horizontal_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ScrollDirection.Vertical")
   @js.native
-  def Vertical: typings.mendixmodelsdk.pagesMod.pages.ScrollDirection = js.native
-  inline def Vertical_=(x: typings.mendixmodelsdk.pagesMod.pages.ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
+  def Vertical: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollDirection = js.native
+  inline def Vertical_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ScrollDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
 }

@@ -1,8 +1,8 @@
 package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.AutoHeight
-import typings.antdMobileRn.textareaItemIndexNativeMod.TextareaItemNativeProps
-import typings.antdMobileRn.textareaItemIndexNativeMod.default
+import typings.antdMobileRn.libTextareaItemIndexDotnativeMod.TextareaItemNativeProps
+import typings.antdMobileRn.libTextareaItemIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

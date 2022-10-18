@@ -1,7 +1,7 @@
 package typings.googleapisCommon
 
-import typings.googleapisCommon.schemaMod.HttpMethod
-import typings.googleapisCommon.schemaMod.SchemaType
+import typings.googleapisCommon.buildSrcSchemaMod.HttpMethod
+import typings.googleapisCommon.buildSrcSchemaMod.SchemaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

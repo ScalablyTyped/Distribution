@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestContextDebugInfo extends StObject {
   
   /**
-    * The statements to be executed in the host.
+    * The statements to be executed in the Office application.
     *
     * These statements may not match the code exactly as written, but will be a close approximation.
     */

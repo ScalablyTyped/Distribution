@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "KhronosTextureContainer2")
 @js.native
 open class KhronosTextureContainer2 protected ()
-  extends typings.babylonjs.legacyMod.KhronosTextureContainer2 {
+  extends typings.babylonjs.legacyLegacyMod.KhronosTextureContainer2 {
   /**
     * Constructor
     * @param engine The engine to use
     * @param numWorkers The number of workers for async operations. Specify `0` to disable web workers and run synchronously in the current context.
     */
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
-  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, numWorkers: Double) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, numWorkers: Double) = this()
 }
 /* static members */
 object KhronosTextureContainer2 {

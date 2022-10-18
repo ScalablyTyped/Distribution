@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "SheetSizeLimitExceededError")
 @js.native
 open class SheetSizeLimitExceededError ()
-  extends typings.hyperformula.errorsMod.SheetSizeLimitExceededError
+  extends typings.hyperformula.typingsErrorsMod.SheetSizeLimitExceededError

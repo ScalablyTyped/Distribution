@@ -3,10 +3,10 @@ package typings.storybookComponents.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.CSSStyleDeclaration
 import typings.std.Partial
-import typings.storybookComponents.popperjsCoreLibTypesMod.Modifier
-import typings.storybookComponents.popperjsCoreLibTypesMod.OptionsGeneric
-import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
-import typings.storybookComponents.popperjsCoreLibTypesMod.StateRects
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.Modifier
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.OptionsGeneric
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.PositioningStrategy
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.StateRects
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,9 @@ trait PartialState extends StObject {
   
   var orderedModifiers: js.UndefOr[js.Array[Modifier[Any, Any]]] = js.undefined
   
-  var placement: js.UndefOr[typings.storybookComponents.popperjsCoreLibEnumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[
+    typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement
+  ] = js.undefined
   
   var rects: js.UndefOr[StateRects] = js.undefined
   
@@ -67,7 +69,7 @@ object PartialState {
     
     inline def setOrderedModifiersVarargs(value: (Modifier[Any, Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value*))
     
-    inline def setPlacement(value: typings.storybookComponents.popperjsCoreLibEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibEnumsMod`.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

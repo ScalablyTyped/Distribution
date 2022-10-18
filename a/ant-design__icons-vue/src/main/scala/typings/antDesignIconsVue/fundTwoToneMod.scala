@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFundTwoToneMod.FundTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fundTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FundTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FundTwoTone", JSImport.Default)
   @js.native
   val default: FundTwoToneIconType = js.native
-  
-  @js.native
-  trait FundTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FundTwoToneIconType: String = js.native
-  }
   
   type _To = FundTwoToneIconType
   

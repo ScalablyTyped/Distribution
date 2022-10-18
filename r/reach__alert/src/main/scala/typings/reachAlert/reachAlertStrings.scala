@@ -11,6 +11,10 @@ object reachAlertStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
+  
+  @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-http-client
 
-Typings are for version 48.1.1
+Typings are for version 58.0.1
 
 ## Library description:
 A client library for the IPFS HTTP API
@@ -10,10 +10,10 @@ A client library for the IPFS HTTP API
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-client |
 | Keywords           | ipfs |
-| # releases         | 188 |
-| # dependents       | 213 |
-| # downloads        | 1286774 |
-| # stars            | 0 |
+| # releases         | 252 |
+| # dependents       | 0.0 |
+| # downloads        | 282293.0 |
+| # stars            | 7055.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client#readme)

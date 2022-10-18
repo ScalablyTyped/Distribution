@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class BoundingSphere ()
   extends typings.yuka.mod.BoundingSphere {
-  def this(center: typings.yuka.vector3Mod.Vector3) = this()
+  def this(center: typings.yuka.srcMathVector3Mod.Vector3) = this()
   def this(center: Unit, radius: Double) = this()
-  def this(center: typings.yuka.vector3Mod.Vector3, radius: Double) = this()
+  def this(center: typings.yuka.srcMathVector3Mod.Vector3, radius: Double) = this()
 }

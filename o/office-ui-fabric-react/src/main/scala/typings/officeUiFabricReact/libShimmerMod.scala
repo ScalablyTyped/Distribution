@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.shimmerCircleTypesMod.IShimmerCircleProps
-import typings.officeUiFabricReact.shimmerElementsGroupTypesMod.IShimmerElementsGroupProps
-import typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps
-import typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps
-import typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps
+import typings.officeUiFabricReact.libComponentsShimmerShimmerCircleShimmerCircleDottypesMod.IShimmerCircleProps
+import typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.IShimmerProps
+import typings.officeUiFabricReact.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDottypesMod.IShimmerElementsGroupProps
+import typings.officeUiFabricReact.libComponentsShimmerShimmerGapShimmerGapDottypesMod.IShimmerGapProps
+import typings.officeUiFabricReact.libComponentsShimmerShimmerLineShimmerLineDottypesMod.IShimmerLineProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object libShimmerMod {
   @JSImport("office-ui-fabric-react/lib/Shimmer", "ShimmerBase")
   @js.native
   open class ShimmerBase protected ()
-    extends typings.officeUiFabricReact.shimmerMod.ShimmerBase {
+    extends typings.officeUiFabricReact.libComponentsShimmerMod.ShimmerBase {
     def this(props: IShimmerProps) = this()
   }
   /* static members */
@@ -48,13 +48,15 @@ object libShimmerMod {
   object ShimmerElementType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType & Double
+      ] = js.native
     
-    /* 2 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.circle & Double = js.native
+    /* 2 */ val circle: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.circle & Double = js.native
     
-    /* 3 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.gap & Double = js.native
+    /* 3 */ val gap: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.gap & Double = js.native
     
-    /* 1 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.line & Double = js.native
+    /* 1 */ val line: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.line & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Shimmer", "ShimmerElementsDefaultHeights")
@@ -63,14 +65,14 @@ object libShimmerMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights & Double
+        typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights & Double
       ] = js.native
     
-    /* 24 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.circle & Double = js.native
+    /* 24 */ val circle: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights.circle & Double = js.native
     
-    /* 16 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.gap & Double = js.native
+    /* 16 */ val gap: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights.gap & Double = js.native
     
-    /* 16 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.line & Double = js.native
+    /* 16 */ val line: typings.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementsDefaultHeights.line & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Shimmer", "ShimmerElementsGroup")

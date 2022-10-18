@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRDefaultExperienceOptions")
 @js.native
 open class WebXRDefaultExperienceOptions ()
-  extends typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions
+  extends typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperienceOptions

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,7 @@ trait Option extends StObject {
     * enum, it should be stored as an int32 value using the google.protobuf.Int32Value type.
     */
   var value: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.Option & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
 }
 object Option {
@@ -37,9 +34,7 @@ object Option {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setValue(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServiceusage.maximMazurokGapiClientServiceusageStrings.Option & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

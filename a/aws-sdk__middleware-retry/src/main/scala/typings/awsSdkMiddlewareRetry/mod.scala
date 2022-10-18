@@ -1,21 +1,21 @@
 package typings.awsSdkMiddlewareRetry
 
-import typings.awsSdkMiddlewareRetry.adaptiveRetryStrategyMod.AdaptiveRetryStrategyOptions
-import typings.awsSdkMiddlewareRetry.configurationsMod.PreviouslyResolved
-import typings.awsSdkMiddlewareRetry.configurationsMod.RetryInputConfig
-import typings.awsSdkMiddlewareRetry.configurationsMod.RetryResolvedConfig
-import typings.awsSdkMiddlewareRetry.defaultRateLimiterMod.DefaultRateLimiterOptions
-import typings.awsSdkMiddlewareRetry.standardRetryStrategyMod.StandardRetryStrategyOptions
-import typings.awsSdkNodeConfigProvider.configLoaderMod.LoadedConfigSelectors
-import typings.awsSdkTypes.middlewareMod.AbsoluteLocation
-import typings.awsSdkTypes.middlewareMod.FinalizeHandler
-import typings.awsSdkTypes.middlewareMod.FinalizeRequestHandlerOptions
-import typings.awsSdkTypes.middlewareMod.HandlerExecutionContext
-import typings.awsSdkTypes.middlewareMod.Pluggable
-import typings.awsSdkTypes.middlewareMod.RelativeMiddlewareOptions
-import typings.awsSdkTypes.responseMod.MetadataBearer
-import typings.awsSdkTypes.shapesMod.SdkError
-import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkMiddlewareRetry.distTypesAdaptiveRetryStrategyMod.AdaptiveRetryStrategyOptions
+import typings.awsSdkMiddlewareRetry.distTypesConfigurationsMod.PreviouslyResolved
+import typings.awsSdkMiddlewareRetry.distTypesConfigurationsMod.RetryInputConfig
+import typings.awsSdkMiddlewareRetry.distTypesConfigurationsMod.RetryResolvedConfig
+import typings.awsSdkMiddlewareRetry.distTypesDefaultRateLimiterMod.DefaultRateLimiterOptions
+import typings.awsSdkMiddlewareRetry.distTypesStandardRetryStrategyMod.StandardRetryStrategyOptions
+import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LoadedConfigSelectors
+import typings.awsSdkTypes.distTypesMiddlewareMod.AbsoluteLocation
+import typings.awsSdkTypes.distTypesMiddlewareMod.FinalizeHandler
+import typings.awsSdkTypes.distTypesMiddlewareMod.FinalizeRequestHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.HandlerExecutionContext
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.awsSdkTypes.distTypesMiddlewareMod.RelativeMiddlewareOptions
+import typings.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typings.awsSdkTypes.distTypesShapesMod.SdkError
+import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ object mod {
   @JSImport("@aws-sdk/middleware-retry", "AdaptiveRetryStrategy")
   @js.native
   open class AdaptiveRetryStrategy protected ()
-    extends typings.awsSdkMiddlewareRetry.adaptiveRetryStrategyMod.AdaptiveRetryStrategy {
+    extends typings.awsSdkMiddlewareRetry.distTypesAdaptiveRetryStrategyMod.AdaptiveRetryStrategy {
     def this(maxAttemptsProvider: Provider[Double]) = this()
     def this(maxAttemptsProvider: Provider[Double], options: AdaptiveRetryStrategyOptions) = this()
   }
@@ -53,7 +53,7 @@ object mod {
   @JSImport("@aws-sdk/middleware-retry", "DefaultRateLimiter")
   @js.native
   open class DefaultRateLimiter ()
-    extends typings.awsSdkMiddlewareRetry.defaultRateLimiterMod.DefaultRateLimiter {
+    extends typings.awsSdkMiddlewareRetry.distTypesDefaultRateLimiterMod.DefaultRateLimiter {
     def this(options: DefaultRateLimiterOptions) = this()
   }
   
@@ -78,17 +78,17 @@ object mod {
   object RETRY_MODES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.awsSdkMiddlewareRetry.configMod.RETRY_MODES & String] = js.native
+    def apply(value: String): js.UndefOr[typings.awsSdkMiddlewareRetry.distTypesConfigMod.RETRY_MODES & String] = js.native
     
-    /* "adaptive" */ val ADAPTIVE: typings.awsSdkMiddlewareRetry.configMod.RETRY_MODES.ADAPTIVE & String = js.native
+    /* "adaptive" */ val ADAPTIVE: typings.awsSdkMiddlewareRetry.distTypesConfigMod.RETRY_MODES.ADAPTIVE & String = js.native
     
-    /* "standard" */ val STANDARD: typings.awsSdkMiddlewareRetry.configMod.RETRY_MODES.STANDARD & String = js.native
+    /* "standard" */ val STANDARD: typings.awsSdkMiddlewareRetry.distTypesConfigMod.RETRY_MODES.STANDARD & String = js.native
   }
   
   @JSImport("@aws-sdk/middleware-retry", "StandardRetryStrategy")
   @js.native
   open class StandardRetryStrategy protected ()
-    extends typings.awsSdkMiddlewareRetry.standardRetryStrategyMod.StandardRetryStrategy {
+    extends typings.awsSdkMiddlewareRetry.distTypesStandardRetryStrategyMod.StandardRetryStrategy {
     def this(maxAttemptsProvider: Provider[Double]) = this()
     def this(maxAttemptsProvider: Provider[Double], options: StandardRetryStrategyOptions) = this()
   }

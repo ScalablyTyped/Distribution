@@ -1,7 +1,7 @@
 package typings.expoPackageManager
 
-import typings.expoPackageManager.cocoaPodsPackageManagerMod.CocoaPodsErrorCode
-import typings.expoPackageManager.nodePackageManagersMod.NodePackageManager
+import typings.expoPackageManager.buildCocoaPodsPackageManagerMod.CocoaPodsErrorCode
+import typings.expoPackageManager.buildNodePackageManagersMod.NodePackageManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

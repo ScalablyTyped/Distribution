@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "UrlHandlingStrategy")
+/* note: abstract class */ @JSImport("@angular/router", "UrlHandlingStrategy")
 @js.native
-abstract class UrlHandlingStrategy () extends StObject {
+open class UrlHandlingStrategy () extends StObject {
   
   /**
     * Extracts the part of the URL that should be handled by the router.

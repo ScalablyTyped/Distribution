@@ -20,23 +20,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FileProperties {
   
   /** Provides access to the basic properties, like the size of the item or the date the item was last modified, of the item (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.BasicProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.BasicProperties")
   @js.native
-  abstract class BasicProperties ()
+  open class BasicProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.BasicProperties
   
   /** Provides access to the document-related properties of an item (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.DocumentProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.DocumentProperties")
   @js.native
-  abstract class DocumentProperties ()
+  open class DocumentProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.DocumentProperties
   
   /** Provides methods for setting and retrieving geographic metadata for a file. */
-  @JSGlobal("Windows.Storage.FileProperties.GeotagHelper")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.GeotagHelper")
   @js.native
-  abstract class GeotagHelper ()
+  open class GeotagHelper ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.GeotagHelper
   object GeotagHelper {
@@ -73,16 +73,16 @@ object FileProperties {
   }
   
   /** Provides access to the image-related properties of an item (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.ImageProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.ImageProperties")
   @js.native
-  abstract class ImageProperties ()
+  open class ImageProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.ImageProperties
   
   /** Provides access to the music-related properties of an item (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.MusicProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.MusicProperties")
   @js.native
-  abstract class MusicProperties ()
+  open class MusicProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.MusicProperties
   
@@ -135,16 +135,16 @@ object FileProperties {
   }
   
   /** Provides access to the content-related properties of an item (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.StorageItemContentProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.StorageItemContentProperties")
   @js.native
-  abstract class StorageItemContentProperties ()
+  open class StorageItemContentProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.StorageItemContentProperties
   
   /** Represents the thumbnail image associated with a system resource (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.StorageItemThumbnail")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.StorageItemThumbnail")
   @js.native
-  abstract class StorageItemThumbnail ()
+  open class StorageItemThumbnail ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.StorageItemThumbnail {
     
@@ -313,9 +313,9 @@ object FileProperties {
   }
   
   /** Provides access to the video-related properties of an item (like a file or folder). */
-  @JSGlobal("Windows.Storage.FileProperties.VideoProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Storage.FileProperties.VideoProperties")
   @js.native
-  abstract class VideoProperties ()
+  open class VideoProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.FileProperties.VideoProperties
 }

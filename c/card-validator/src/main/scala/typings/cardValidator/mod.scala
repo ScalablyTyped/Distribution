@@ -1,11 +1,11 @@
 package typings.cardValidator
 
-import typings.cardValidator.expirationDateMod.ExpirationDateVerification
-import typings.cardValidator.expirationMonthMod.ExpirationMonthVerification
-import typings.cardValidator.expirationYearMod.ExpirationYearVerification
-import typings.cardValidator.postalCodeMod.PostalCodeOptions
-import typings.cardValidator.typesMod.Verification
-import typings.creditCardType.typesMod.CreditCardType
+import typings.cardValidator.distExpirationDateMod.ExpirationDateVerification
+import typings.cardValidator.distExpirationMonthMod.ExpirationMonthVerification
+import typings.cardValidator.distExpirationYearMod.ExpirationYearVerification
+import typings.cardValidator.distPostalCodeMod.PostalCodeOptions
+import typings.cardValidator.distTypesMod.Verification
+import typings.creditCardType.distTypesMod.CreditCardType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

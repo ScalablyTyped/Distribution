@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "PutRepositoryTriggersCommand")
 @js.native
 open class PutRepositoryTriggersCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.putRepositoryTriggersCommandMod.PutRepositoryTriggersCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsPutRepositoryTriggersCommandMod.PutRepositoryTriggersCommand {
   def this(input: PutRepositoryTriggersInput) = this()
 }

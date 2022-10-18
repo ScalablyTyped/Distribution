@@ -3,7 +3,7 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.requestParametersMod.RequestParameters
+import typings.octokitTypes.distTypesRequestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -352,7 +352,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
   /**
     * Lists repositories the authenticated user has starred.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header:
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   def listReposStarredByAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /user/starred']['response'] */ js.Any
@@ -368,7 +368,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
   /**
     * Lists repositories the authenticated user has starred.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header:
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   @JSName("listReposStarredByAuthenticatedUser")
   var listReposStarredByAuthenticatedUser_Original: `107`
@@ -376,7 +376,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
   /**
     * Lists repositories a user has starred.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header:
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   def listReposStarredByUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/starred']['response'] */ js.Any
@@ -392,7 +392,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
   /**
     * Lists repositories a user has starred.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header:
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   @JSName("listReposStarredByUser")
   var listReposStarredByUser_Original: `108`
@@ -420,7 +420,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
   /**
     * Lists the people that have starred the repository.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header:
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   def listStargazersForRepo(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stargazers']['response'] */ js.Any
@@ -436,7 +436,7 @@ trait CheckRepoIsStarredByAuthenticatedUser extends StObject {
   /**
     * Lists the people that have starred the repository.
     *
-    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header:
+    * You can also find out _when_ stars were created by passing the following custom [media type](https://docs.github.com/rest/overview/media-types/) via the `Accept` header: `application/vnd.github.star+json`.
     */
   @JSName("listStargazersForRepo")
   var listStargazersForRepo_Original: `110`

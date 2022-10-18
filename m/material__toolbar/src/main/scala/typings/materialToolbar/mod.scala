@@ -12,6 +12,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/toolbar", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialToolbar.foundationMod.default {
+    def this(adapter: PartialMDCToolbarAdapter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@material/toolbar", "default.cssClasses")
+    @js.native
+    val cssClasses: FIXED = js.native
+    
+    @JSImport("@material/toolbar", "default.defaultAdapter")
+    @js.native
+    val defaultAdapter: MDCToolbarAdapter = js.native
+    
+    @JSImport("@material/toolbar", "default.numbers")
+    @js.native
+    val numbers: MAXTITLESIZE = js.native
+    
+    @JSImport("@material/toolbar", "default.strings")
+    @js.native
+    val strings: CHANGEEVENT = js.native
+  }
+  
   @JSImport("@material/toolbar", "MDCToolbar")
   @js.native
   open class MDCToolbar protected ()

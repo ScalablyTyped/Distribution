@@ -8,11 +8,11 @@ trait ParametersPathDeliveryidHookidOwnerRepo extends StObject {
   
   var parameters: PathDeliveryidHookidOwnerRepo
   
-  var responses: `200ContentApplicationjsonDeliveredat`
+  var responses: `200400422`
 }
 object ParametersPathDeliveryidHookidOwnerRepo {
   
-  inline def apply(parameters: PathDeliveryidHookidOwnerRepo, responses: `200ContentApplicationjsonDeliveredat`): ParametersPathDeliveryidHookidOwnerRepo = {
+  inline def apply(parameters: PathDeliveryidHookidOwnerRepo, responses: `200400422`): ParametersPathDeliveryidHookidOwnerRepo = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathDeliveryidHookidOwnerRepo]
   }
@@ -21,6 +21,6 @@ object ParametersPathDeliveryidHookidOwnerRepo {
     
     inline def setParameters(value: PathDeliveryidHookidOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjsonDeliveredat`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200400422`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

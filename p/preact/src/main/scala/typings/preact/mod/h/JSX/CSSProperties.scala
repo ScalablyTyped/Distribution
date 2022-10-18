@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CSSProperties
   extends StObject
-     with typings.preact.jsxMod.JSXInternal.AllCSSProperties
-     with typings.preact.jsxMod.JSXInternal.DOMCSSProperties {
+     with typings.preact.srcJsxMod.JSXInternal.AllCSSProperties
+     with typings.preact.srcJsxMod.JSXInternal.DOMCSSProperties {
   
   @JSName("cssText")
   var cssText_CSSProperties: js.UndefOr[String | Null] = js.undefined

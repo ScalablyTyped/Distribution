@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__filter-fxaa
 
-Typings are for version 6.5.4
+Typings are for version 6.5.6
 
 ## Library description:
 Filter for fast approximate anti-aliasing

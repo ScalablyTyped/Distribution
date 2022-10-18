@@ -13,7 +13,6 @@ import typings.mathjs.mod.FunctionNode
 import typings.mathjs.mod.IndexNode
 import typings.mathjs.mod.MathJsStatic
 import typings.mathjs.mod.MathNode
-import typings.mathjs.mod.MathNodeCommon
 import typings.mathjs.mod.Matrix
 import typings.mathjs.mod.ObjectNode
 import typings.mathjs.mod.OperatorNode
@@ -133,7 +132,7 @@ object global {
     @js.native
     open class Node ()
       extends StObject
-         with MathNodeCommon
+         with MathNode
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("math.ObjectNode")

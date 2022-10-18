@@ -3,7 +3,6 @@ package typings.refUnionDi
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
 import typings.node.bufferMod.global.Buffer
 import typings.refNapi.mod.AlignofRegistry
 import typings.refNapi.mod.Pointer
@@ -105,16 +104,30 @@ object mod {
   /**
     * Converts a {@link UnionTypeDefinitionBase} into a set of fields for use with {@link UnionType.fields}.
     */
-  type UnionFields[T /* <: UnionTypeDefinitionBase */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? std.Record<string, ref-union-di.ref-union-di.Field<any>> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-union-di.ref-union-di.Field<ref-napi.ref-napi.UnderlyingType<T[P]>>}
-    */ typings.refUnionDi.refUnionDiStrings.UnionFields & TopLevel[T]) | (Record[String, Field[Any]])
+    }}}
+    */
+  @js.native
+  trait UnionFields[T /* <: UnionTypeDefinitionBase */] extends StObject
   
   /**
     * Converts a {@link UnionTypeDefinitionBase} into a union of possible inputs, allowing only a single key/value of the union.
     */
-  type UnionInput[T /* <: UnionTypeDefinitionBase */] = (/* import warning: importer.ImportType#apply Failed type conversion: // catches T extends never/any (since `0` doesn't overlap with our constraint)
-  {[ P in keyof ref-union-di.ref-union-di.UnionObjectProperties<T> ]: std.Pick<ref-union-di.ref-union-di.UnionObjectProperties<T>, P> & std.Partial<std.Record<std.Exclude<keyof ref-union-di.ref-union-di.UnionObjectProperties<T>, P>, never>>}[keyof ref-union-di.ref-union-di.UnionObjectProperties<T>] */ js.Any) | (Record[String, Any])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? std.Record<string, any> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  {[ P in keyof ref-union-di.ref-union-di.UnionObjectProperties<T> ]: std.Pick<ref-union-di.ref-union-di.UnionObjectProperties<T>, P> & std.Partial<std.Record<std.Exclude<keyof ref-union-di.ref-union-di.UnionObjectProperties<T>, P>, never>>}[keyof ref-union-di.ref-union-di.UnionObjectProperties<T>]
+    }}}
+    */
+  @js.native
+  trait UnionInput[T /* <: UnionTypeDefinitionBase */] extends StObject
   
   /**
     * Represents the instance type of a union type.
@@ -147,10 +160,16 @@ object mod {
   /**
     * Converts a {@link UnionTypeDefinitionBase} into a an object type representing the runtime shape of a {@link UnionType}.
     */
-  type UnionObjectProperties[T /* <: UnionTypeDefinitionBase */] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? std.Record<string, any> : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.UnderlyingType<T[P]>}
-    */ typings.refUnionDi.refUnionDiStrings.UnionObjectProperties & TopLevel[T]) | (Record[String, Any])
+    }}}
+    */
+  @js.native
+  trait UnionObjectProperties[T /* <: UnionTypeDefinitionBase */] extends StObject
   
   /**
     * This is the `constructor` of the union type that gets returned.
@@ -216,8 +235,14 @@ object mod {
     * Converts a {@link UnionTypeObjectDefinitionBase} into a consistent subtype of {@link UnionTypeDefinitionBase}. If `any` is used, it is passed along
     * to be interpreted to use a fallback definition for a union.
     */
-  type UnionTypeObjectDefinitionToUnionTypeDefinition[T /* <: UnionTypeObjectDefinitionBase */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  // catches T extends never/any (since `0` doesn't overlap with our constraint)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [T] extends [never] | [0] ? any : // catches T extends never/any (since `0` doesn't overlap with our constraint)
   {[ P in keyof T ]: ref-napi.ref-napi.Type<ref-napi.ref-napi.UnderlyingType<T[P]>>}
-    */ typings.refUnionDi.refUnionDiStrings.UnionTypeObjectDefinitionToUnionTypeDefinition & TopLevel[T]
+    }}}
+    */
+  @js.native
+  trait UnionTypeObjectDefinitionToUnionTypeDefinition[T /* <: UnionTypeObjectDefinitionBase */] extends StObject
 }

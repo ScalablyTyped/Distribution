@@ -301,7 +301,7 @@ object viewMod {
     
     var center: Coordinate
     
-    var projection: typings.ol.projectionMod.default
+    var projection: typings.ol.projProjectionMod.default
     
     var resolution: Double
     
@@ -313,7 +313,7 @@ object viewMod {
     
     inline def apply(
       center: Coordinate,
-      projection: typings.ol.projectionMod.default,
+      projection: typings.ol.projProjectionMod.default,
       resolution: Double,
       rotation: Double,
       zoom: Double
@@ -328,7 +328,7 @@ object viewMod {
       
       inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
       
-      inline def setProjection(value: typings.ol.projectionMod.default): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: typings.ol.projProjectionMod.default): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
       inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
@@ -483,11 +483,11 @@ object viewMod {
       * In most cases you will want to use the map size, that is map.getSize().
       * Takes care of the map angle.
       */
-    def fit(geometryOrExtent: typings.ol.simpleGeometryMod.default): Unit = js.native
-    def fit(geometryOrExtent: typings.ol.simpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
+    def fit(geometryOrExtent: typings.ol.geomSimpleGeometryMod.default): Unit = js.native
+    def fit(geometryOrExtent: typings.ol.geomSimpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
     
-    def fitInternal(geometry: typings.ol.simpleGeometryMod.default): Unit = js.native
-    def fitInternal(geometry: typings.ol.simpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
+    def fitInternal(geometry: typings.ol.geomSimpleGeometryMod.default): Unit = js.native
+    def fitInternal(geometry: typings.ol.geomSimpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
     
     /**
       * Determine if the view is being animated.
@@ -563,7 +563,7 @@ object viewMod {
     /**
       * Get the view projection.
       */
-    def getProjection(): typings.ol.projectionMod.default = js.native
+    def getProjection(): typings.ol.projProjectionMod.default = js.native
     
     /**
       * Get the view resolution.

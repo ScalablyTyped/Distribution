@@ -6,19 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `3` extends StObject {
   
-  var selected: Double | js.Array[Double]
+  var date: js.UndefOr[Any | Null | js.Array[Any]] = js.undefined
 }
 object `3` {
   
-  inline def apply(selected: Double | js.Array[Double]): `3` = {
-    val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
+  inline def apply(): `3` = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`3`]
   }
   
   extension [Self <: `3`](x: Self) {
     
-    inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setDate(value: Any | js.Array[Any]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value*))
+    inline def setDateNull: Self = StObject.set(x, "date", null)
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDateVarargs(value: Any*): Self = StObject.set(x, "date", js.Array(value*))
   }
 }

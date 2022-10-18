@@ -1,7 +1,7 @@
 package typings.esfxDisposable
 
-import typings.esfxDisposable.asyncDisposableMod.AsyncDisposableScope
-import typings.esfxDisposable.disposableMod.DisposableScope
+import typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposableScope
+import typings.esfxDisposable.distTypesDisposableMod.DisposableScope
 import typings.std.AsyncGenerator
 import typings.std.AsyncIterable
 import typings.std.Generator
@@ -15,7 +15,7 @@ object mod {
   @JSImport("@esfx/disposable", "AsyncDisposable")
   @js.native
   open class AsyncDisposable protected ()
-    extends typings.esfxDisposable.asyncDisposableMod.AsyncDisposable {
+    extends typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable {
     /**
       * Creates an `AsyncDisposable` wrapper around a callback used to dispose resources.
       * @deprecated Use `AsyncDisposableStack` or `{ [AsyncDisposable.asyncDispose]() { ... } }` instead.
@@ -43,7 +43,7 @@ object mod {
       * NOTE: This is not spec-compliant and will not be standardized. It is preferred to use an `AsyncDisposableStack`
       * or to implement `AsyncDisposable.asyncDispose` yourself instead.
       */
-    inline def create(disposeAsync: js.Function0[Unit | PromiseLike[Unit]]): typings.esfxDisposable.asyncDisposableMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposeAsync.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.asyncDisposableMod.AsyncDisposable]
+    inline def create(disposeAsync: js.Function0[Unit | PromiseLike[Unit]]): typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(disposeAsync.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable]
     
     /**
       * Determines whether a value is `AsyncDisposable`.
@@ -84,22 +84,22 @@ object mod {
     inline def usingEach(
       iterable: js.Iterable[
           js.UndefOr[
-            typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null | (PromiseLike[
+            typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null | (PromiseLike[
               js.UndefOr[
-                typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
+                typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null
               ]
             ])
           ]
         ]
     ): AsyncGenerator[
         js.UndefOr[
-          typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
+          typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null
         ], 
         Unit, 
         Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[
         js.UndefOr[
-          typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
+          typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null
         ], 
         Unit, 
         Any
@@ -130,18 +130,18 @@ object mod {
     inline def usingEach(
       iterable: AsyncIterable[
           js.UndefOr[
-            typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
+            typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null
           ]
         ]
     ): AsyncGenerator[
         js.UndefOr[
-          typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
+          typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null
         ], 
         Unit, 
         Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[
         js.UndefOr[
-          typings.esfxDisposable.asyncDisposableMod.AsyncDisposable | typings.esfxDisposable.disposableMod.Disposable | Null
+          typings.esfxDisposable.distTypesAsyncDisposableMod.AsyncDisposable | typings.esfxDisposable.distTypesDisposableMod.Disposable | Null
         ], 
         Unit, 
         Any
@@ -151,7 +151,7 @@ object mod {
   @JSImport("@esfx/disposable", "AsyncDisposableStack")
   @js.native
   open class AsyncDisposableStack ()
-    extends typings.esfxDisposable.asyncDisposableStackMod.AsyncDisposableStack
+    extends typings.esfxDisposable.distTypesAsyncDisposableStackMod.AsyncDisposableStack
   /* static members */
   object AsyncDisposableStack {
     
@@ -168,7 +168,7 @@ object mod {
   @JSImport("@esfx/disposable", "Disposable")
   @js.native
   open class Disposable protected ()
-    extends typings.esfxDisposable.disposableMod.Disposable {
+    extends typings.esfxDisposable.distTypesDisposableMod.Disposable {
     /**
       * Creates a `Disposable` wrapper around a callback used to dispose of a resource.
       * @deprecated Use `DisposableStack` or `{ [Disposable.dispose]() { ... } }` instead.
@@ -187,7 +187,7 @@ object mod {
       * NOTE: This is not spec-compliant and will not be standardized. It is preferred to use a `DisposableStack`
       * or to implement `Disposable.dispose` yourself instead.
       */
-    inline def create(dispose: js.Function0[Unit]): typings.esfxDisposable.disposableMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.disposableMod.Disposable]
+    inline def create(dispose: js.Function0[Unit]): typings.esfxDisposable.distTypesDisposableMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.esfxDisposable.distTypesDisposableMod.Disposable]
     
     /**
       * A well-known symbol used to define an explicit resource disposal method on an object.
@@ -254,7 +254,15 @@ object mod {
       * }
       * ```
       */
-    inline def usingEach(iterable: js.Iterable[js.UndefOr[typings.esfxDisposable.disposableMod.Disposable | Null]]): Generator[js.UndefOr[typings.esfxDisposable.disposableMod.Disposable | Null], Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[Generator[js.UndefOr[typings.esfxDisposable.disposableMod.Disposable | Null], Unit, Any]]
+    inline def usingEach(iterable: js.Iterable[js.UndefOr[typings.esfxDisposable.distTypesDisposableMod.Disposable | Null]]): Generator[
+        js.UndefOr[typings.esfxDisposable.distTypesDisposableMod.Disposable | Null], 
+        Unit, 
+        Any
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("usingEach")(iterable.asInstanceOf[js.Any]).asInstanceOf[Generator[
+        js.UndefOr[typings.esfxDisposable.distTypesDisposableMod.Disposable | Null], 
+        Unit, 
+        Any
+      ]]
   }
   
   @JSImport("@esfx/disposable", "DisposableStack")
@@ -263,7 +271,7 @@ object mod {
     * Creates a new DisposableStack.
     */
   open class DisposableStack ()
-    extends typings.esfxDisposable.disposableStackMod.DisposableStack
+    extends typings.esfxDisposable.distTypesDisposableStackMod.DisposableStack
   /* static members */
   object DisposableStack {
     

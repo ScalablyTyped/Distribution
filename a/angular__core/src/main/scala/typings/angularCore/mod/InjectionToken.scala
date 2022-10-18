@@ -1,6 +1,6 @@
 package typings.angularCore.mod
 
-import typings.angularCore.anon.FactoryProvidedIn
+import typings.angularCore.anon.Factory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ open class InjectionToken[T] protected ()
     * @param options Options for the token's usage, as described above
     */
   def this(_desc: String) = this()
-  def this(_desc: String, options: FactoryProvidedIn[T]) = this()
+  def this(_desc: String, options: Factory[T]) = this()
   
   /* protected */ var _desc: String = js.native
   

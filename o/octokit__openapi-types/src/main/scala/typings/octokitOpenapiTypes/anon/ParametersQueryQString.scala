@@ -8,11 +8,11 @@ trait ParametersQueryQString extends StObject {
   
   var parameters: QueryQString
   
-  var responses: `200ContentApplicationjson595`
+  var responses: `200ContentApplicationjson605`
 }
 object ParametersQueryQString {
   
-  inline def apply(parameters: QueryQString, responses: `200ContentApplicationjson595`): ParametersQueryQString = {
+  inline def apply(parameters: QueryQString, responses: `200ContentApplicationjson605`): ParametersQueryQString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryQString]
   }
@@ -21,6 +21,6 @@ object ParametersQueryQString {
     
     inline def setParameters(value: QueryQString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjson595`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjson605`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

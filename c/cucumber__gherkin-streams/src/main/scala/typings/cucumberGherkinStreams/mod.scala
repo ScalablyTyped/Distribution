@@ -1,7 +1,7 @@
 package typings.cucumberGherkinStreams
 
-import typings.cucumberGherkin.igherkinoptionsMod.IGherkinOptions
-import typings.cucumberGherkinStreams.gherkinStreamsMod.IGherkinStreamOptions
+import typings.cucumberGherkin.distSrcIgherkinoptionsMod.IGherkinOptions
+import typings.cucumberGherkinStreams.distSrcGherkinStreamsMod.IGherkinStreamOptions
 import typings.cucumberMessages.mod.Envelope
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject

@@ -1,10 +1,10 @@
 package typings.matrixAppserviceBridge
 
-import typings.matrixAppserviceBridge.errorsMod.unstable.BridgeErrorReason
-import typings.matrixAppserviceBridge.intentMod._UserProfileKeys
-import typings.matrixAppserviceBridge.loggingMod.LogLevel
-import typings.matrixAppserviceBridge.membershipCacheMod._UserMembership
-import typings.matrixAppserviceBridge.provisioningRequestMod.Methods
+import typings.matrixAppserviceBridge.libComponentsIntentMod._UserProfileKeys
+import typings.matrixAppserviceBridge.libComponentsLoggingMod.LogLevel
+import typings.matrixAppserviceBridge.libComponentsMembershipCacheMod._UserMembership
+import typings.matrixAppserviceBridge.libErrorsMod.unstable.BridgeErrorReason
+import typings.matrixAppserviceBridge.libProvisioningRequestMod.Methods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

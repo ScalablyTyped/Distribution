@@ -9,19 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ButtonType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.buttonTypesMod.ButtonType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType & Double
+  ] = js.native
   
-  /* 6 */ val default: typings.officeUiFabricReact.buttonTypesMod.ButtonType.default & Double = js.native
+  /* 6 */ val default: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.default & Double = js.native
   
-  /* 4 */ val command: typings.officeUiFabricReact.buttonTypesMod.ButtonType.command & Double = js.native
+  /* 4 */ val command: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.command & Double = js.native
   
-  /* 3 */ val compound: typings.officeUiFabricReact.buttonTypesMod.ButtonType.compound & Double = js.native
+  /* 3 */ val compound: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.compound & Double = js.native
   
-  /* 2 */ val hero: typings.officeUiFabricReact.buttonTypesMod.ButtonType.hero & Double = js.native
+  /* 2 */ val hero: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.hero & Double = js.native
   
-  /* 5 */ val icon: typings.officeUiFabricReact.buttonTypesMod.ButtonType.icon & Double = js.native
+  /* 5 */ val icon: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.icon & Double = js.native
   
-  /* 0 */ val normal: typings.officeUiFabricReact.buttonTypesMod.ButtonType.normal & Double = js.native
+  /* 0 */ val normal: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.normal & Double = js.native
   
-  /* 1 */ val primary: typings.officeUiFabricReact.buttonTypesMod.ButtonType.primary & Double = js.native
+  /* 1 */ val primary: typings.officeUiFabricReact.libComponentsButtonButtonDottypesMod.ButtonType.primary & Double = js.native
 }

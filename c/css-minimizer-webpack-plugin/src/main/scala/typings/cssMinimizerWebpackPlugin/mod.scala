@@ -1,13 +1,12 @@
 package typings.cssMinimizerWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.cssMinimizerWebpackPlugin.anon.Code
 import typings.cssMinimizerWebpackPlugin.anon.Errorpluginstringundefine
 import typings.cssMinimizerWebpackPlugin.anon.From
 import typings.cssMinimizerWebpackPlugin.anon.Implementation
 import typings.jestWorker.mod.Worker
-import typings.postcss.rootMod.default
+import typings.postcss.libRootMod.default
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
@@ -90,53 +89,53 @@ object mod {
   inline def buildWarning_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildWarning")(x.asInstanceOf[js.Any])
   
   inline def cleanCssMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def cleanCssMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cleanCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
-  inline def cssnanoMinify(input: typings.cssMinimizerWebpackPlugin.utilsMod.Input): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+  inline def cssnanoMinify(input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def cssnanoMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def cssnanoMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def cssnanoMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssnanoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
   inline def cssoMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def cssoMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("cssoMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
   inline def esbuildMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("esbuildMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("esbuildMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def esbuildMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("esbuildMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("esbuildMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
   /**
     * @private
@@ -161,37 +160,37 @@ object mod {
   inline def isSourceMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSourceMap")(x.asInstanceOf[js.Any])
   
   inline def lightningCssMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightningCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightningCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def lightningCssMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightningCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("lightningCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
   inline def parcelCssMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def parcelCssMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("parcelCssMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
   inline def swcMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
     sourceMap: Unit,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("swcMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("swcMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   inline def swcMinify(
-    input: typings.cssMinimizerWebpackPlugin.utilsMod.Input,
-    sourceMap: typings.cssMinimizerWebpackPlugin.utilsMod.RawSourceMap,
-    minimizerOptions: typings.cssMinimizerWebpackPlugin.utilsMod.CustomOptions
-  ): js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("swcMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.utilsMod.MinimizedResult]]
+    input: typings.cssMinimizerWebpackPlugin.typesUtilsMod.Input,
+    sourceMap: typings.cssMinimizerWebpackPlugin.typesUtilsMod.RawSourceMap,
+    minimizerOptions: typings.cssMinimizerWebpackPlugin.typesUtilsMod.CustomOptions
+  ): js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("swcMinify")(input.asInstanceOf[js.Any], sourceMap.asInstanceOf[js.Any], minimizerOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.cssMinimizerWebpackPlugin.typesUtilsMod.MinimizedResult]]
   
   type Asset = typings.webpack.mod.Asset
   
@@ -350,23 +349,15 @@ object mod {
   
   type CustomOptions = StringDictionary[Any]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.cssMinimizerWebpackPlugin.anon.MinimizerOptions[T]
-    - typings.cssMinimizerWebpackPlugin.anon.Minify[T]
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.CssNanoOptionsExtended ? {  minify :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerImplementation<T> | undefined,   minimizerOptions :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerOptions<T> | undefined} : {  minify :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerImplementation<T>,   minimizerOptions :css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.MinimizerOptions<T> | undefined}
+    }}}
+    */
+  @js.native
   trait DefinedDefaultMinimizerAndOptions[T] extends StObject
-  object DefinedDefaultMinimizerAndOptions {
-    
-    inline def Minify[T](): typings.cssMinimizerWebpackPlugin.anon.Minify[T] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.cssMinimizerWebpackPlugin.anon.Minify[T]]
-    }
-    
-    inline def MinimizerOptions[T](minify: MinimizerImplementation[T]): typings.cssMinimizerWebpackPlugin.anon.MinimizerOptions[T] = {
-      val __obj = js.Dynamic.literal(minify = minify.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.cssMinimizerWebpackPlugin.anon.MinimizerOptions[T]]
-    }
-  }
   
   trait ErrorObject extends StObject {
     
@@ -403,7 +394,15 @@ object mod {
     }
   }
   
-  type InferDefaultType[T] = CustomOptions
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends infer U ? U : css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.CustomOptions
+    }}}
+    */
+  @js.native
+  trait InferDefaultType[T] extends StObject
   
   type Input = StringDictionary[String]
   
@@ -533,13 +532,25 @@ object mod {
     }
   }
   
-  type MinimizerImplementation[T] = BasicMinimizerImplementation[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof any ]: css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.BasicMinimizerImplementation<T[P]>}
-    */ typings.cssMinimizerWebpackPlugin.cssMinimizerWebpackPluginStrings.MinimizerImplementation & TopLevel[T])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? T extends infer T_1 ? {[ P in keyof T_1 ]: css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.BasicMinimizerImplementation<T[P]>} : never : css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.BasicMinimizerImplementation<T>
+    }}}
+    */
+  @js.native
+  trait MinimizerImplementation[T] extends StObject
   
-  type MinimizerOptions[T] = InferDefaultType[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof any ]:? css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.InferDefaultType<T[P]> | undefined}
-    */ typings.cssMinimizerWebpackPlugin.cssMinimizerWebpackPluginStrings.MinimizerOptions & TopLevel[T])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? T extends infer T_1 ? {[ P in keyof T_1 ]:? css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.InferDefaultType<T[P]> | undefined} : never : css-minimizer-webpack-plugin.css-minimizer-webpack-plugin.InferDefaultType<T>
+    }}}
+    */
+  @js.native
+  trait MinimizerOptions[T] extends StObject
   
   @js.native
   trait MinimizerWorker[T]
@@ -567,7 +578,7 @@ object mod {
   
   type Parallel = js.UndefOr[Boolean | Double]
   
-  type Parser = typings.postcss.mod.Parser[default | typings.postcss.documentMod.default]
+  type Parser = typings.postcss.mod.Parser[default | typings.postcss.libDocumentMod.default]
   
   type ProcessOptions = typings.postcss.mod.ProcessOptions
   
@@ -579,7 +590,7 @@ object mod {
   
   type Rules = js.Array[Rule] | Rule
   
-  type Schema = typings.schemaUtils.validateMod.Schema
+  type Schema = typings.schemaUtils.declarationsValidateMod.Schema
   
   type Stringifier = typings.postcss.mod.Stringifier
   

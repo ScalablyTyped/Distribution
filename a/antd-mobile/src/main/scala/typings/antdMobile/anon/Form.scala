@@ -1,7 +1,7 @@
 package typings.antdMobile.anon
 
-import typings.rcFieldForm.interfaceMod.FormInstance
-import typings.rcFieldForm.interfaceMod.NamePath
+import typings.rcFieldForm.esInterfaceMod.FormInstance
+import typings.rcFieldForm.esInterfaceMod.NamePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

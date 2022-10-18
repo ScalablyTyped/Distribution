@@ -2,10 +2,10 @@ package typings.reactUid
 
 import typings.react.mod.FC
 import typings.react.mod.PropsWithChildren
-import typings.reactUid.contextMod.UIDProps
-import typings.reactUid.controlMod.WithPrefix
-import typings.reactUid.hooksMod.SeedGenerator
-import typings.reactUid.uidcomponentMod.UID
+import typings.reactUid.distEs5ContextMod.UIDProps
+import typings.reactUid.distEs5ControlMod.WithPrefix
+import typings.reactUid.distEs5HooksMod.SeedGenerator
+import typings.reactUid.distEs5UidcomponentMod.UID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

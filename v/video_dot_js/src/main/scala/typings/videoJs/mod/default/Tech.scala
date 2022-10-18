@@ -1,7 +1,7 @@
 package typings.videoJs.mod.default
 
 import typings.std.CanPlayTypeResult
-import typings.videoJs.anon.TypeofTech
+import typings.videoJs.anon.CanPlaySource
 import typings.videoJs.mod.videojs.Component.ReadyCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -103,5 +103,5 @@ object Tech {
     *        The tech to add source handler functions to.
     *
     */
-  inline def withSourceHandlers(tech: TypeofTech): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withSourceHandlers")(tech.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def withSourceHandlers(tech: CanPlaySource): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withSourceHandlers")(tech.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

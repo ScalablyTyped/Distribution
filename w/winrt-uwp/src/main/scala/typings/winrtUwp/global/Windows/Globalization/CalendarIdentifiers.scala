@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the calendar identifiers for the supported calendars, as static properties. */
-@JSGlobal("Windows.Globalization.CalendarIdentifiers")
+/* note: abstract class */ @JSGlobal("Windows.Globalization.CalendarIdentifiers")
 @js.native
-abstract class CalendarIdentifiers ()
+open class CalendarIdentifiers ()
   extends StObject
      with typings.winrtUwp.Windows.Globalization.CalendarIdentifiers
 object CalendarIdentifiers {

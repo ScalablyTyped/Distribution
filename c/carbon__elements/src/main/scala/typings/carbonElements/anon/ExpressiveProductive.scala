@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExpressiveProductive extends StObject {
   
-  var expressive: String
+  var expressive: /* cubic-bezier(0.4, 0.14, 1, 1) */ String
   
-  var productive: String
+  var productive: /* cubic-bezier(0.2, 0, 1, 0.9) */ String
 }
 object ExpressiveProductive {
   
@@ -19,8 +19,8 @@ object ExpressiveProductive {
   
   extension [Self <: ExpressiveProductive](x: Self) {
     
-    inline def setExpressive(value: String): Self = StObject.set(x, "expressive", value.asInstanceOf[js.Any])
+    inline def setExpressive(value: /* cubic-bezier(0.4, 0.14, 1, 1) */ String): Self = StObject.set(x, "expressive", value.asInstanceOf[js.Any])
     
-    inline def setProductive(value: String): Self = StObject.set(x, "productive", value.asInstanceOf[js.Any])
+    inline def setProductive(value: /* cubic-bezier(0.2, 0, 1, 0.9) */ String): Self = StObject.set(x, "productive", value.asInstanceOf[js.Any])
   }
 }

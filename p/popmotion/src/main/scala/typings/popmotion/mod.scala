@@ -2,21 +2,21 @@ package typings.popmotion
 
 import typings.popmotion.anon.Stop
 import typings.popmotion.anon.X
-import typings.popmotion.easingTypesMod.Easing
-import typings.popmotion.easingTypesMod.EasingModifier
-import typings.popmotion.interpolateMod.InterpolateOptions
+import typings.popmotion.libAnimationsTypesMod.Animation
+import typings.popmotion.libAnimationsTypesMod.AnimationOptions
+import typings.popmotion.libAnimationsTypesMod.DecayOptions
+import typings.popmotion.libAnimationsTypesMod.InertiaOptions
+import typings.popmotion.libAnimationsTypesMod.KeyframeOptions
+import typings.popmotion.libAnimationsTypesMod.SpringOptions
+import typings.popmotion.libEasingStepsMod.Direction
+import typings.popmotion.libEasingTypesMod.Easing
+import typings.popmotion.libEasingTypesMod.EasingModifier
 import typings.popmotion.libTypesMod.Point
 import typings.popmotion.libTypesMod.Point2D
 import typings.popmotion.libTypesMod.Point3D
-import typings.popmotion.mixComplexMod.MixComplex_
-import typings.popmotion.stepsMod.Direction
-import typings.popmotion.typesMod.Animation
-import typings.popmotion.typesMod.AnimationOptions
-import typings.popmotion.typesMod.DecayOptions
-import typings.popmotion.typesMod.InertiaOptions
-import typings.popmotion.typesMod.KeyframeOptions
-import typings.popmotion.typesMod.SpringOptions
-import typings.styleValueTypes.typesMod.Color
+import typings.popmotion.libUtilsInterpolateMod.InterpolateOptions
+import typings.popmotion.libUtilsMixComplexMod.MixComplex_
+import typings.styleValueTypes.libTypesMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

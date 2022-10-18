@@ -53,7 +53,7 @@ object AddWordParams {
     
     inline def setSounds_likeUndefined: Self = StObject.set(x, "sounds_like", js.undefined)
     
-    inline def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
+    inline def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value*))
     
     inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     

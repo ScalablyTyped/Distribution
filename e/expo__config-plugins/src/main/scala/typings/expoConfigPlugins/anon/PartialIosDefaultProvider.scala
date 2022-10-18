@@ -1,11 +1,11 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.createBaseModMod.BaseModProviderMethods
+import typings.expoConfigPlugins.buildIosIosConfigDottypesMod.InfoPlist
+import typings.expoConfigPlugins.buildIosPathsMod.AppDelegateProjectFile
+import typings.expoConfigPlugins.buildPluginsCreateBaseModMod.BaseModProviderMethods
+import typings.expoConfigPlugins.buildPluginsWithModMod.BaseModOptions
 import typings.expoConfigPlugins.expoConfigPluginsStrings.saveToInternal
 import typings.expoConfigPlugins.expoConfigPluginsStrings.skipEmptyMod
-import typings.expoConfigPlugins.iosConfigTypesMod.InfoPlist
-import typings.expoConfigPlugins.iosPathsMod.AppDelegateProjectFile
-import typings.expoConfigPlugins.withModMod.BaseModOptions
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.Record

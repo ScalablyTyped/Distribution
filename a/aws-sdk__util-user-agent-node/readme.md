@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-user-agent-node
 
-Typings are for version 3.178.0
+Typings are for version 3.190.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-user-agent-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-user-agent-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-user-agent-node.svg)](https://www.npmjs.com/

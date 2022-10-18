@@ -11,9 +11,9 @@ A small configuration module for your Feathers application.
 | Full name          | @feathersjs/configuration |
 | Keywords           | feathers, feathers-plugin |
 | # releases         | 34 |
-| # dependents       | 44 |
-| # downloads        | 841072 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 86634.33333333333 |
+| # stars            | 14155.0 |
 
 ## Links
 - [Homepage](https://feathersjs.com)

@@ -1,7 +1,7 @@
 package typings.baseui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent

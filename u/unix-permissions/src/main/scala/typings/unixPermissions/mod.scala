@@ -234,7 +234,7 @@ object mod {
     
     inline def `0o`: typings.unixPermissions.unixPermissionsStrings.`0o` = "0o".asInstanceOf[typings.unixPermissions.unixPermissionsStrings.`0o`]
     
-    inline def Backslash: String = String.asInstanceOf[String]
+    inline def Backslash: /* \ */ String = "\\".asInstanceOf[/* \ */ String]
     
     inline def _empty: typings.unixPermissions.unixPermissionsStrings._empty = "".asInstanceOf[typings.unixPermissions.unixPermissionsStrings._empty]
   }
@@ -242,9 +242,9 @@ object mod {
     - typings.unixPermissions.unixPermissionsStrings._empty
     - typings.unixPermissions.unixPermissionsStrings.`0o`
     - typings.unixPermissions.unixPermissionsStrings.`0`
-    - java.lang.String
+    - / * \ * / java.lang.String
   */
-  type OctalPrefix = _OctalPrefix | String
+  type OctalPrefix = _OctalPrefix | (/* \ */ String)
   
   type OctalStart = /* template literal string: ${OctalOperator}${OctalPrefix} */ String
   

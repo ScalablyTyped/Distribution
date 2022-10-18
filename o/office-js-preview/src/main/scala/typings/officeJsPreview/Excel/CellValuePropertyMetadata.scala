@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata about a property in `EntityCellValue.properties`.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CellValuePropertyMetadata extends StObject {
   
@@ -17,8 +16,7 @@ trait CellValuePropertyMetadata extends StObject {
     * Represents attribution information to describe the source and license requirements for using this property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var attribution: js.UndefOr[js.Array[CellValueAttributionAttributes]] = js.undefined
   
@@ -26,8 +24,7 @@ trait CellValuePropertyMetadata extends StObject {
     * Represents which features this property is excluded from.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var excludeFrom: js.UndefOr[CellValuePropertyMetadataExclusions] = js.undefined
   
@@ -35,8 +32,7 @@ trait CellValuePropertyMetadata extends StObject {
     * Represents the sublabel for this property shown in card view.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var sublabel: js.UndefOr[String] = js.undefined
 }

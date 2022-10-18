@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.ContainerWidth")
 @js.native
 open class ContainerWidth protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.ContainerWidth {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.ContainerWidth {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object ContainerWidth {
@@ -20,12 +20,12 @@ object ContainerWidth {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ContainerWidth.FixedWidth")
   @js.native
-  def FixedWidth: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth = js.native
-  inline def FixedWidth_=(x: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedWidth")(x.asInstanceOf[js.Any])
+  def FixedWidth: typings.mendixmodelsdk.srcGenPagesMod.pages.ContainerWidth = js.native
+  inline def FixedWidth_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FixedWidth")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ContainerWidth.FullWidth")
   @js.native
-  def FullWidth: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth = js.native
-  inline def FullWidth_=(x: typings.mendixmodelsdk.pagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullWidth")(x.asInstanceOf[js.Any])
+  def FullWidth: typings.mendixmodelsdk.srcGenPagesMod.pages.ContainerWidth = js.native
+  inline def FullWidth_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.ContainerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullWidth")(x.asInstanceOf[js.Any])
 }

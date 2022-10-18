@@ -14,9 +14,9 @@ object CheckboxChoiceMap {
   
   inline def apply[T /* <: Answers */](
     CheckboxChoiceOptions: CheckboxChoiceOptions[T],
-    Choice: typings.inquirer.choiceMod.default[T],
+    Choice: typings.inquirer.libObjectsChoiceMod.default[T],
     ChoiceOptions: ChoiceOptions,
-    Separator: typings.inquirer.separatorMod.default,
+    Separator: typings.inquirer.libObjectsSeparatorMod.default,
     SeparatorOptions: SeparatorOptions
   ): CheckboxChoiceMap[T] = {
     val __obj = js.Dynamic.literal(CheckboxChoiceOptions = CheckboxChoiceOptions.asInstanceOf[js.Any], Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])

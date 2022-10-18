@@ -2,13 +2,18 @@ package typings.handsontable
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.handsontable.anon.TypeofAutocompleteEditor
-import typings.handsontable.autocompleteEditorMod.AutocompleteEditor
-import typings.handsontable.baseEditorMod.BaseEditor
-import typings.handsontable.checkboxEditorMod.CheckboxEditor
 import typings.handsontable.coreMod.default
-import typings.handsontable.dateEditorMod.DateEditor
-import typings.handsontable.dropdownEditorMod.DropdownEditor
-import typings.handsontable.handsontableEditorMod.HandsontableEditor
+import typings.handsontable.editorsAutocompleteEditorMod.AutocompleteEditor
+import typings.handsontable.editorsBaseEditorMod.BaseEditor
+import typings.handsontable.editorsCheckboxEditorMod.CheckboxEditor
+import typings.handsontable.editorsDateEditorMod.DateEditor
+import typings.handsontable.editorsDropdownEditorMod.DropdownEditor
+import typings.handsontable.editorsHandsontableEditorMod.HandsontableEditor
+import typings.handsontable.editorsNumericEditorMod.NumericEditor
+import typings.handsontable.editorsPasswordEditorMod.PasswordEditor
+import typings.handsontable.editorsSelectEditorMod.SelectEditor
+import typings.handsontable.editorsTextEditorMod.TextEditor
+import typings.handsontable.editorsTimeEditorMod.TimeEditor
 import typings.handsontable.handsontableStrings.autocomplete
 import typings.handsontable.handsontableStrings.base
 import typings.handsontable.handsontableStrings.checkbox
@@ -19,11 +24,6 @@ import typings.handsontable.handsontableStrings.password
 import typings.handsontable.handsontableStrings.select
 import typings.handsontable.handsontableStrings.text
 import typings.handsontable.handsontableStrings.time
-import typings.handsontable.numericEditorMod.NumericEditor
-import typings.handsontable.passwordEditorMod.PasswordEditor
-import typings.handsontable.selectEditorMod.SelectEditor
-import typings.handsontable.textEditorMod.TextEditor
-import typings.handsontable.timeEditorMod.TimeEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,38 +1,33 @@
 package typings.grammarkdown.mod
 
-import typings.esfxCancelable.distMod.Cancelable
-import typings.grammarkdown.optionsMod.CompilerOptions
-import typings.prex.mod.CancellationToken
-import typings.std.Iterable
+import typings.esfxCancelable.mod.Cancelable
+import typings.grammarkdown.anon.CompilerOptionsfilestring
+import typings.grammarkdown.distOptionsMod.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Grammar")
 @js.native
-class Grammar protected ()
-  extends typings.grammarkdown.grammarMod.Grammar {
+open class Grammar protected ()
+  extends typings.grammarkdown.distGrammarMod.Grammar {
   /**
     * @param rootNames The names of the root files used by the grammar.
     * @param options The {@link CompilerOptions} used by the grammar.
     * @param host The [Host](xref:hosts) the grammar uses to interact with the file system.
     */
-  def this(rootNames: Iterable[String]) = this()
-  def this(rootNames: Iterable[String], options: CompilerOptions) = this()
-  def this(rootNames: Iterable[String], options: Unit, host: typings.grammarkdown.hostMod.CoreAsyncHost) = this()
-  def this(rootNames: Iterable[String], options: Unit, host: typings.grammarkdown.hostMod.CoreSyncHost) = this()
-  def this(rootNames: Iterable[String], options: Unit, host: typings.grammarkdown.nodeMod.Host) = this()
+  def this(rootNames: js.Iterable[String]) = this()
+  def this(rootNames: js.Iterable[String], options: CompilerOptions) = this()
   def this(
-    rootNames: Iterable[String],
-    options: CompilerOptions,
-    host: typings.grammarkdown.hostMod.CoreAsyncHost
+    rootNames: js.Iterable[String],
+    options: Unit,
+    host: typings.grammarkdown.distHostMod.CoreAsyncHost
   ) = this()
   def this(
-    rootNames: Iterable[String],
+    rootNames: js.Iterable[String],
     options: CompilerOptions,
-    host: typings.grammarkdown.hostMod.CoreSyncHost
+    host: typings.grammarkdown.distHostMod.CoreAsyncHost
   ) = this()
-  def this(rootNames: Iterable[String], options: CompilerOptions, host: typings.grammarkdown.nodeMod.Host) = this()
 }
 /* static members */
 object Grammar {
@@ -48,96 +43,26 @@ object Grammar {
     * @param hostFallback An optional host to use as a fallback for file system operations.
     * @param cancelable A cancelable object that can be used to abort the operation.
     */
-  /**
-    * {@inheritDoc Grammar.(convert:1)}
-    * @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable`
-    */
-  inline def convert(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def convert(content: String, options: Unit, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: Unit, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convert(content: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def convert(content: String, options: Unit, hostFallback: Unit, cancelable: Cancelable): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.distHostMod.CoreAsyncHost): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def convert(
     content: String,
     options: Unit,
-    hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
+    hostFallback: typings.grammarkdown.distHostMod.CoreAsyncHost,
     cancelable: Cancelable
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def convert(content: String, options: CompilerOptionsfilestring): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def convert(content: String, options: CompilerOptionsfilestring, hostFallback: Unit, cancelable: Cancelable): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def convert(
     content: String,
-    options: Unit,
-    hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
-    cancelable: CancellationToken
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    options: CompilerOptionsfilestring,
+    hostFallback: typings.grammarkdown.distHostMod.CoreAsyncHost
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   inline def convert(
     content: String,
-    options: Unit,
-    hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
+    options: CompilerOptionsfilestring,
+    hostFallback: typings.grammarkdown.distHostMod.CoreAsyncHost,
     cancelable: Cancelable
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: Unit,
-    hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
-    cancelable: CancellationToken
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: Unit, hostFallback: typings.grammarkdown.nodeMod.Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: Unit,
-    hostFallback: typings.grammarkdown.nodeMod.Host,
-    cancelable: Cancelable
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: Unit,
-    hostFallback: typings.grammarkdown.nodeMod.Host,
-    cancelable: CancellationToken
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: CompilerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
-    cancelable: Cancelable
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.hostMod.CoreAsyncHost,
-    cancelable: CancellationToken
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.hostMod.CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
-    cancelable: Cancelable
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.hostMod.CoreSyncHost,
-    cancelable: CancellationToken
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(content: String, options: CompilerOptions, hostFallback: typings.grammarkdown.nodeMod.Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.nodeMod.Host,
-    cancelable: Cancelable
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def convert(
-    content: String,
-    options: CompilerOptions,
-    hostFallback: typings.grammarkdown.nodeMod.Host,
-    cancelable: CancellationToken
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

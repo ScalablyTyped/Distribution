@@ -10,13 +10,13 @@ trait InteractionPartial extends StObject {
   
   var element: typings.std.Element
   
-  var interaction: Partial[typings.interactjsTypes.interactionMod.Interaction[gesture]]
+  var interaction: Partial[typings.interactjsTypes.coreInteractionMod.Interaction[gesture]]
 }
 object InteractionPartial {
   
   inline def apply(
     element: typings.std.Element,
-    interaction: Partial[typings.interactjsTypes.interactionMod.Interaction[gesture]]
+    interaction: Partial[typings.interactjsTypes.coreInteractionMod.Interaction[gesture]]
   ): InteractionPartial = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionPartial]
@@ -26,6 +26,6 @@ object InteractionPartial {
     
     inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    inline def setInteraction(value: Partial[typings.interactjsTypes.interactionMod.Interaction[gesture]]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: Partial[typings.interactjsTypes.coreInteractionMod.Interaction[gesture]]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
   }
 }

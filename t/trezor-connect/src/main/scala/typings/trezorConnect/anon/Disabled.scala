@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.accountMod.SelectFeeLevel
+import typings.trezorConnect.libTypescriptAccountMod.SelectFeeLevel
 import typings.trezorConnect.trezorConnectBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

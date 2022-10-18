@@ -10,10 +10,10 @@ A storybook decorator that allows you to use routing-aware components in your st
 | ------------------ | :-------------: |
 | Full name          | storybook-react-router |
 | Keywords           | storybook, react, react-router |
-| # releases         | 7 |
-| # dependents       | 15 |
-| # downloads        | 4415782 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 436001.3333333333 |
+| # stars            | 255.0 |
 
 ## Links
 - [Homepage](https://github.com/gvaldambrini/storybook-router)

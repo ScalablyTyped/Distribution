@@ -1,8 +1,8 @@
 package typings.nivoSankey
 
-import typings.nivoSankey.typesMod.SankeyAlignType
-import typings.nivoSankey.typesMod.SankeyLayerId
-import typings.nivoSankey.typesMod.SankeySortType
+import typings.nivoSankey.distTypesTypesMod.SankeyAlignType
+import typings.nivoSankey.distTypesTypesMod.SankeyLayerId
+import typings.nivoSankey.distTypesTypesMod.SankeySortType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

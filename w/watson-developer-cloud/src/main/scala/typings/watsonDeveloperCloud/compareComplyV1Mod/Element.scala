@@ -35,13 +35,13 @@ object Element {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,6 @@ object Element {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

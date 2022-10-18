@@ -1,7 +1,7 @@
 package typings.jimpGif
 
-import typings.jimpCore.etcMod.Bitmap
-import typings.jimpCore.etcMod.DecoderFn
+import typings.jimpCore.typesEtcMod.Bitmap
+import typings.jimpCore.typesEtcMod.DecoderFn
 import typings.jimpGif.jimpGifStrings.imageSlashgif
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject

@@ -3,7 +3,7 @@ package typings.reactBootstrapTable2Filter
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.SyntheticEvent
-import typings.reactBootstrapTable2Filter.anon.Date
+import typings.reactBootstrapTable2Filter.anon.ComparatorNumber
 import typings.reactBootstrapTable2Filter.anon.Label
 import typings.reactBootstrapTable2Filter.anon.Number
 import typings.reactBootstrapTable2Filter.anon.PartialMultiSelectFilterP
@@ -178,7 +178,7 @@ object mod {
     var dateStyle: js.UndefOr[CSSProperties] = js.undefined
     
     @JSName("defaultValue")
-    var defaultValue_DateFilterProps: js.UndefOr[Date] = js.undefined
+    var defaultValue_DateFilterProps: js.UndefOr[typings.reactBootstrapTable2Filter.anon.Comparator] = js.undefined
     
     var withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined
   }
@@ -213,7 +213,7 @@ object mod {
       
       inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
       
-      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: typings.reactBootstrapTable2Filter.anon.Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -285,7 +285,7 @@ object mod {
   
   trait NumberFilterProps[T /* <: js.Object */]
     extends StObject
-       with TableColumnFilterProps[typings.reactBootstrapTable2Filter.anon.Comparator, T] {
+       with TableColumnFilterProps[Number, T] {
     
     var comparatorClassName: js.UndefOr[String] = js.undefined
     
@@ -294,7 +294,7 @@ object mod {
     var comparators: js.UndefOr[js.Array[Comparator]] = js.undefined
     
     @JSName("defaultValue")
-    var defaultValue_NumberFilterProps: js.UndefOr[Number] = js.undefined
+    var defaultValue_NumberFilterProps: js.UndefOr[ComparatorNumber] = js.undefined
     
     var numberClassName: js.UndefOr[String] = js.undefined
     
@@ -332,7 +332,7 @@ object mod {
       
       inline def setComparatorsVarargs(value: Comparator*): Self = StObject.set(x, "comparators", js.Array(value*))
       
-      inline def setDefaultValue(value: Number): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: ComparatorNumber): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       

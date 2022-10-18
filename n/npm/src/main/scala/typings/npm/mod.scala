@@ -3,6 +3,7 @@ package typings.npm
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.BooleanConstructor
 import typings.std.NumberConstructor
@@ -845,9 +846,7 @@ object mod extends Shortcut {
     
     var loglevel: js.UndefOr[String] = js.undefined
     
-    var logstream: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-      ] = js.undefined
+    var logstream: js.UndefOr[ReadWriteStream] = js.undefined
     
     var long: js.UndefOr[Boolean] = js.undefined
     
@@ -1110,9 +1109,7 @@ object mod extends Shortcut {
       
       inline def setLoglevelUndefined: Self = StObject.set(x, "loglevel", js.undefined)
       
-      inline def setLogstream(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-      ): Self = StObject.set(x, "logstream", value.asInstanceOf[js.Any])
+      inline def setLogstream(value: ReadWriteStream): Self = StObject.set(x, "logstream", value.asInstanceOf[js.Any])
       
       inline def setLogstreamUndefined: Self = StObject.set(x, "logstream", js.undefined)
       

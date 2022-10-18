@@ -2,10 +2,10 @@ package typings.reactFloater.anon
 
 import typings.popperjsCore.anon.AltAxis
 import typings.popperjsCore.anon.Placement
-import typings.popperjsCore.enumsMod.Boundary
-import typings.popperjsCore.enumsMod.RootBoundary
-import typings.popperjsCore.preventOverflowMod.TetherOffset
-import typings.popperjsCore.typesMod.Padding
+import typings.popperjsCore.libEnumsMod.Boundary
+import typings.popperjsCore.libEnumsMod.RootBoundary
+import typings.popperjsCore.libModifiersPreventOverflowMod.TetherOffset
+import typings.popperjsCore.libTypesMod.Padding
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

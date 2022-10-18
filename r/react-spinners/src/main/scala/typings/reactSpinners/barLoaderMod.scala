@@ -1,14 +1,14 @@
 package typings.reactSpinners
 
 import typings.react.mod.global.JSX.Element
-import typings.reactSpinners.propsMod.LoaderHeightWidthProps
+import typings.reactSpinners.helpersPropsMod.LoaderHeightWidthProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object barLoaderMod {
   
-  @JSImport("react-spinners/cjs/BarLoader", JSImport.Namespace)
+  @JSImport("react-spinners/BarLoader", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

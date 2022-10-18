@@ -1,8 +1,8 @@
 package typings.parcelFs
 
+import typings.parcelFs.libTypesMod.ReaddirOptions
 import typings.parcelFs.parcelFsBooleans.`false`
 import typings.parcelFs.parcelFsBooleans.`true`
-import typings.parcelFs.typesMod.ReaddirOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

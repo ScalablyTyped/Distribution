@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "y-codemirror" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "y-codemirror" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

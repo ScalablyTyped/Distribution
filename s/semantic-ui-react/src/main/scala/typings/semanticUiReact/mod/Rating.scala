@@ -3,9 +3,9 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.ratingIconMod.RatingIconProps
-import typings.semanticUiReact.ratingRatingMod.RatingComponent
-import typings.semanticUiReact.ratingRatingMod.RatingProps
+import typings.semanticUiReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
+import typings.semanticUiReact.distCommonjsModulesRatingRatingMod.RatingComponent
+import typings.semanticUiReact.distCommonjsModulesRatingRatingMod.RatingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

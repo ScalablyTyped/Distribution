@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Attr extends StObject {
   
-  var attr: N
-  
-  var device: Unit
+  var attr: Hasmanualcontroldependencies
   
   var input: Unit
   
@@ -18,16 +16,14 @@ trait Attr extends StObject {
 }
 object Attr {
   
-  inline def apply(attr: N, device: Unit, input: Unit, name: String, op: String): Attr = {
-    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
+  inline def apply(attr: Hasmanualcontroldependencies, input: Unit, name: String, op: String): Attr = {
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attr]
   }
   
   extension [Self <: Attr](x: Self) {
     
-    inline def setAttr(value: N): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
-    
-    inline def setDevice(value: Unit): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Hasmanualcontroldependencies): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     inline def setInput(value: Unit): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.seldereePluginHtmlparser2
 
 import typings.domhandler.mod.Element
-import typings.selderee.astMod.DecisionTreeNode
+import typings.selderee.libAstMod.DecisionTreeNode
 import typings.selderee.mod.Picker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

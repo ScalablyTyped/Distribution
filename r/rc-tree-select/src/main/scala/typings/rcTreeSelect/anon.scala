@@ -1,18 +1,26 @@
 package typings.rcTreeSelect
 
-import typings.rcSelect.baseSelectMod.BaseSelectRef
-import typings.rcSelect.baseSelectMod.CustomTagProps
-import typings.rcSelect.baseSelectMod.DisplayValueType
-import typings.rcSelect.baseSelectMod.Placement
-import typings.rcSelect.baseSelectMod.RenderDOMFunc
-import typings.rcSelect.baseSelectMod.RenderNode
-import typings.rcSelect.selectMod.ArrayElementType
-import typings.rcSelect.selectMod.LabelInValueType
-import typings.rcSelect.selectMod.SelectHandler
-import typings.rcTree.interfaceMod.DataEntity
-import typings.rcTree.interfaceMod.DataNode
-import typings.rcTree.interfaceMod.IconType
-import typings.rcTree.treeMod.ExpandAction
+import typings.rcSelect.libBaseSelectMod.BaseSelectRef
+import typings.rcSelect.libBaseSelectMod.CustomTagProps
+import typings.rcSelect.libBaseSelectMod.DisplayValueType
+import typings.rcSelect.libBaseSelectMod.Placement
+import typings.rcSelect.libBaseSelectMod.RenderDOMFunc
+import typings.rcSelect.libBaseSelectMod.RenderNode
+import typings.rcSelect.libSelectMod.ArrayElementType
+import typings.rcSelect.libSelectMod.LabelInValueType
+import typings.rcSelect.libSelectMod.SelectHandler
+import typings.rcTree.esInterfaceMod.DataEntity
+import typings.rcTree.esInterfaceMod.DataNode
+import typings.rcTree.esInterfaceMod.IconType
+import typings.rcTree.esTreeMod.ExpandAction
+import typings.rcTreeSelect.esTreeNodeMod.TreeNodeProps
+import typings.rcTreeSelect.esTreeSelectMod.ChangeEventExtra
+import typings.rcTreeSelect.esTreeSelectMod.DefaultOptionType
+import typings.rcTreeSelect.esTreeSelectMod.InternalFieldName
+import typings.rcTreeSelect.esTreeSelectMod.LegacyDataNode
+import typings.rcTreeSelect.esTreeSelectMod.RawValueType
+import typings.rcTreeSelect.esTreeSelectMod.SimpleModeConfig
+import typings.rcTreeSelect.esUtilsStrategyUtilMod.CheckedStrategy
 import typings.rcTreeSelect.rcTreeSelectStrings.`additions removals`
 import typings.rcTreeSelect.rcTreeSelectStrings.`additions text`
 import typings.rcTreeSelect.rcTreeSelectStrings.`inline`
@@ -58,15 +66,7 @@ import typings.rcTreeSelect.rcTreeSelectStrings.text
 import typings.rcTreeSelect.rcTreeSelectStrings.time
 import typings.rcTreeSelect.rcTreeSelectStrings.tree
 import typings.rcTreeSelect.rcTreeSelectStrings.vertical
-import typings.rcTreeSelect.strategyUtilMod.CheckedStrategy
-import typings.rcTreeSelect.treeNodeMod.TreeNodeProps
-import typings.rcTreeSelect.treeSelectMod.ChangeEventExtra
-import typings.rcTreeSelect.treeSelectMod.DefaultOptionType
-import typings.rcTreeSelect.treeSelectMod.InternalFieldName
-import typings.rcTreeSelect.treeSelectMod.LegacyDataNode
-import typings.rcTreeSelect.treeSelectMod.RawValueType
-import typings.rcTreeSelect.treeSelectMod.SimpleModeConfig
-import typings.rcTrigger.interfaceMod.AlignType
+import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
@@ -397,7 +397,7 @@ object anon {
     
     var dropdownStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var fieldNames: js.UndefOr[typings.rcTreeSelect.treeSelectMod.FieldNames] = js.undefined
+    var fieldNames: js.UndefOr[typings.rcTreeSelect.esTreeSelectMod.FieldNames] = js.undefined
     
     var filterTreeNode: js.UndefOr[
         Boolean | (js.Function2[/* inputValue */ String, /* treeNode */ DefaultOptionType, Boolean])
@@ -820,7 +820,7 @@ object anon {
       
       inline def setDropdownStyleUndefined: Self = StObject.set(x, "dropdownStyle", js.undefined)
       
-      inline def setFieldNames(value: typings.rcTreeSelect.treeSelectMod.FieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: typings.rcTreeSelect.esTreeSelectMod.FieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
       inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
       
@@ -923,7 +923,7 @@ object anon {
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnDeselect(
-        value: (LabelInValueType | typings.rcSelect.selectMod.RawValueType | ArrayElementType[Any], DefaultOptionType) => Unit
+        value: (LabelInValueType | typings.rcSelect.libSelectMod.RawValueType | ArrayElementType[Any], DefaultOptionType) => Unit
       ): Self = StObject.set(x, "onDeselect", js.Any.fromFunction2(value))
       
       inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
@@ -969,7 +969,7 @@ object anon {
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
       inline def setOnSelect(
-        value: (LabelInValueType | typings.rcSelect.selectMod.RawValueType | ArrayElementType[Any], DefaultOptionType) => Unit
+        value: (LabelInValueType | typings.rcSelect.libSelectMod.RawValueType | ArrayElementType[Any], DefaultOptionType) => Unit
       ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
@@ -1040,7 +1040,7 @@ object anon {
       
       inline def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
       
-      inline def setSwitcherIconFunction1(value: /* props */ typings.rcTree.treeNodeMod.TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
+      inline def setSwitcherIconFunction1(value: /* props */ typings.rcTree.esTreeNodeMod.TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
       
       inline def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
       
@@ -1102,7 +1102,7 @@ object anon {
       
       inline def setTreeIcon(value: IconType): Self = StObject.set(x, "treeIcon", value.asInstanceOf[js.Any])
       
-      inline def setTreeIconFunction1(value: /* props */ typings.rcTree.treeNodeMod.TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "treeIcon", js.Any.fromFunction1(value))
+      inline def setTreeIconFunction1(value: /* props */ typings.rcTree.esTreeNodeMod.TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "treeIcon", js.Any.fromFunction1(value))
       
       inline def setTreeIconUndefined: Self = StObject.set(x, "treeIcon", js.undefined)
       

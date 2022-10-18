@@ -1,7 +1,7 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.typesMod.VisualViewport
-import typings.popperjsCore.typesMod.Window
+import typings.popperjsCore.libTypesMod.VisualViewport
+import typings.popperjsCore.libTypesMod.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

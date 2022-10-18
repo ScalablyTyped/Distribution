@@ -1,8 +1,8 @@
 package typings.storybookStore.anon
 
-import typings.storybookStore.ts39TypesMod.CSFFile
-import typings.storybookStore.ts39TypesMod.ModuleExports
-import typings.storybookStore.ts39TypesMod.Path
+import typings.storybookStore.distTs3Dot9TypesMod.CSFFile
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleExports
+import typings.storybookStore.distTs3Dot9TypesMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.typedGithubApi
 
-import typings.typedGithubApi.githubRefMod.GitHubRef
-import typings.typedGithubApi.githubRefMod.OptionsOrRef
-import typings.typedGithubApi.ownerRefMod.OwnerRef
+import typings.typedGithubApi.distGithubRefMod.GitHubRef
+import typings.typedGithubApi.distGithubRefMod.OptionsOrRef
+import typings.typedGithubApi.distInterfacesOwnerRefMod.OwnerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

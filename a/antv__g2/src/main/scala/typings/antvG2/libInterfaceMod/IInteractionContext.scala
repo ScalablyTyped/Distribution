@@ -1,7 +1,7 @@
 package typings.antvG2.libInterfaceMod
 
-import typings.antvG2.viewMod.View
-import typings.antvGBase.interfacesMod.IShape
+import typings.antvG2.libChartViewMod.View
+import typings.antvGBase.libInterfacesMod.IShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

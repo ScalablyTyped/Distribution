@@ -16,6 +16,6 @@ trait Geocoder extends StObject {
   def geocode(request: GeocoderRequest): js.Promise[GeocoderResponse] = js.native
   def geocode(
     request: GeocoderRequest,
-    callback: js.Function2[/* a */ js.Array[GeocoderResult] | Null, /* b */ GeocoderStatus, Unit]
+    callback: js.Function2[/* a */ Null | js.Array[GeocoderResult], /* b */ GeocoderStatus, Unit]
   ): js.Promise[GeocoderResponse] = js.native
 }

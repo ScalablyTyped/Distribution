@@ -4,20 +4,20 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.File
 import typings.std.RequestInit
 import typings.tensorflowTfjsCore.anon.Data
-import typings.tensorflowTfjsCore.routerRegistryMod.IORouter
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
-import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
-import typings.tensorflowTfjsCore.typesMod.IOHandler
-import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
-import typings.tensorflowTfjsCore.typesMod.LoadOptions
-import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
-import typings.tensorflowTfjsCore.typesMod.ModelArtifactsInfo
-import typings.tensorflowTfjsCore.typesMod.ModelJSON
-import typings.tensorflowTfjsCore.typesMod.SaveResult
-import typings.tensorflowTfjsCore.typesMod.TrainingConfig
-import typings.tensorflowTfjsCore.typesMod.WeightGroup
-import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
-import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
+import typings.tensorflowTfjsCore.distIoRouterRegistryMod.IORouter
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandler
+import typings.tensorflowTfjsCore.distIoTypesMod.IOHandlerSync
+import typings.tensorflowTfjsCore.distIoTypesMod.LoadOptions
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelArtifacts
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelArtifactsInfo
+import typings.tensorflowTfjsCore.distIoTypesMod.ModelJSON
+import typings.tensorflowTfjsCore.distIoTypesMod.SaveResult
+import typings.tensorflowTfjsCore.distIoTypesMod.TrainingConfig
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightGroup
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightsManifestConfig
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightsManifestEntry
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensor
+import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -220,16 +220,25 @@ object io {
     modelJSON: ModelJSON,
     loadWeights: js.Function1[
       /* weightsManifest */ WeightsManifestConfig, 
-      js.Promise[
-        js.Tuple2[js.Array[WeightsManifestEntry], /* weightData */ js.typedarray.ArrayBuffer]
-      ]
+      js.Promise[js.Tuple2[js.Array[WeightsManifestEntry], js.typedarray.ArrayBuffer]]
     ]
   ): js.Promise[ModelArtifacts] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsForJSON")(modelJSON.asInstanceOf[js.Any], loadWeights.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifacts]]
+  
+  inline def getModelArtifactsForJSONSync(modelJSON: ModelJSON): ModelArtifacts = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsForJSONSync")(modelJSON.asInstanceOf[js.Any]).asInstanceOf[ModelArtifacts]
+  inline def getModelArtifactsForJSONSync(modelJSON: ModelJSON, weightSpecs: js.Array[WeightsManifestEntry]): ModelArtifacts = (^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsForJSONSync")(modelJSON.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any])).asInstanceOf[ModelArtifacts]
+  inline def getModelArtifactsForJSONSync(
+    modelJSON: ModelJSON,
+    weightSpecs: js.Array[WeightsManifestEntry],
+    weightData: js.typedarray.ArrayBuffer
+  ): ModelArtifacts = (^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsForJSONSync")(modelJSON.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[ModelArtifacts]
+  inline def getModelArtifactsForJSONSync(modelJSON: ModelJSON, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): ModelArtifacts = (^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsForJSONSync")(modelJSON.asInstanceOf[js.Any], weightSpecs.asInstanceOf[js.Any], weightData.asInstanceOf[js.Any])).asInstanceOf[ModelArtifacts]
   
   inline def getModelArtifactsInfoForJSON(modelArtifacts: ModelArtifacts): ModelArtifactsInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelArtifactsInfoForJSON")(modelArtifacts.asInstanceOf[js.Any]).asInstanceOf[ModelArtifactsInfo]
   
   inline def getSaveHandlers(url: String): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
   inline def getSaveHandlers(url: js.Array[String]): js.Array[IOHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSaveHandlers")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[IOHandler]]
+  
+  inline def getWeightSpecs(weightsManifest: WeightsManifestConfig): js.Array[WeightsManifestEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeightSpecs")(weightsManifest.asInstanceOf[js.Any]).asInstanceOf[js.Array[WeightsManifestEntry]]
   
   inline def http(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   inline def http(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
@@ -350,7 +359,7 @@ object io {
   inline def registerSaveRouter(loudRouter: IORouter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerSaveRouter")(loudRouter.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Remove a model specified by URL from a reigstered storage medium.
+    * Remove a model specified by URL from a registered storage medium.
     *
     * ```js
     * // First create and save a model.

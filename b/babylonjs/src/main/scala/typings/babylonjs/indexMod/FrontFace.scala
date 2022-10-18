@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FrontFace extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.babylonjs.webgpuConstantsMod.FrontFace & String] = js.native
+  def apply(value: String): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FrontFace & String] = js.native
   
-  /* "ccw" */ val CCW: typings.babylonjs.webgpuConstantsMod.FrontFace.CCW & String = js.native
+  /* "ccw" */ val CCW: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FrontFace.CCW & String = js.native
   
-  /* "cw" */ val CW: typings.babylonjs.webgpuConstantsMod.FrontFace.CW & String = js.native
+  /* "cw" */ val CW: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.FrontFace.CW & String = js.native
 }

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Scope extends StObject {
   
-  var scope: js.Array[String] | typings.atom.mod.ScopeDescriptor
+  var scope: js.Array[String] | typings.atom.srcScopeDescriptorMod.ScopeDescriptor
 }
 object Scope {
   
-  inline def apply(scope: js.Array[String] | typings.atom.mod.ScopeDescriptor): Scope = {
+  inline def apply(scope: js.Array[String] | typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Scope = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
   
   extension [Self <: Scope](x: Self) {
     
-    inline def setScope(value: js.Array[String] | typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[String] | typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
   }
 }

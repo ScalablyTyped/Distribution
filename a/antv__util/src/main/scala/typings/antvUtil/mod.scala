@@ -5,20 +5,20 @@ import typings.antvUtil.anon.Call
 import typings.antvUtil.anon.PartialPathLengthFactoryO
 import typings.antvUtil.anon.`0`
 import typings.antvUtil.antvUtilStrings.off
-import typings.antvUtil.getRangeMod.RangeType
-import typings.antvUtil.groupByMod.ObjectType
-import typings.antvUtil.parseRadiusMod.RadiusType
-import typings.antvUtil.pathTypesMod.AbsoluteArray
-import typings.antvUtil.pathTypesMod.CSegment_
-import typings.antvUtil.pathTypesMod.CurveArray
-import typings.antvUtil.pathTypesMod.MSegment_
-import typings.antvUtil.pathTypesMod.NormalArray
-import typings.antvUtil.pathTypesMod.PathArray
-import typings.antvUtil.pathTypesMod.PathBBox
-import typings.antvUtil.pathTypesMod.PathBBoxTotalLength
-import typings.antvUtil.pathTypesMod.PathSegment
-import typings.antvUtil.pathTypesMod.Point
-import typings.antvUtil.throttleMod.OptionsType
+import typings.antvUtil.libLodashGetRangeMod.RangeType
+import typings.antvUtil.libLodashGroupByMod.ObjectType
+import typings.antvUtil.libLodashParseRadiusMod.RadiusType
+import typings.antvUtil.libLodashThrottleMod.OptionsType
+import typings.antvUtil.libPathTypesMod.AbsoluteArray
+import typings.antvUtil.libPathTypesMod.CSegment_
+import typings.antvUtil.libPathTypesMod.CurveArray
+import typings.antvUtil.libPathTypesMod.MSegment_
+import typings.antvUtil.libPathTypesMod.NormalArray
+import typings.antvUtil.libPathTypesMod.PathArray
+import typings.antvUtil.libPathTypesMod.PathBBox
+import typings.antvUtil.libPathTypesMod.PathBBoxTotalLength
+import typings.antvUtil.libPathTypesMod.PathSegment
+import typings.antvUtil.libPathTypesMod.Point
 import typings.std.FrameRequestCallback
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -34,7 +34,7 @@ object mod {
   @JSImport("@antv/util", "Cache")
   @js.native
   open class Cache[T] ()
-    extends typings.antvUtil.lodashMod.Cache[T]
+    extends typings.antvUtil.libLodashMod.Cache[T]
   
   inline def angleTo(v1: js.Tuple2[Double, Double], v2: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleTo")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def angleTo(v1: js.Tuple2[Double, Double], v2: js.Tuple2[Double, Double], direct: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleTo")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], direct.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -293,7 +293,7 @@ object mod {
   
   inline def number2color(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("number2color")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def omit[T](obj: typings.antvUtil.typesMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.typesMod.ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.antvUtil.typesMod.ObjectType[T]]
+  inline def omit[T](obj: typings.antvUtil.libLodashTypesMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.libLodashTypesMod.ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(obj.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.antvUtil.libLodashTypesMod.ObjectType[T]]
   
   inline def parseRadius(radius: js.Array[Double]): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRadius")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
   inline def parseRadius(radius: Double): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRadius")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
@@ -311,7 +311,7 @@ object mod {
   
   inline def path2String_off(path: PathArray, round: off): String = (^.asInstanceOf[js.Dynamic].applyDynamic("path2String")(path.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def pick[T](`object`: typings.antvUtil.pickMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.pickMod.ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.antvUtil.pickMod.ObjectType[T]]
+  inline def pick[T](`object`: typings.antvUtil.libLodashPickMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.libLodashPickMod.ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.antvUtil.libLodashPickMod.ObjectType[T]]
   
   inline def pull[T](arr: js.Array[T], values: Any*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("pull")(scala.List(arr.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
   
@@ -323,7 +323,7 @@ object mod {
     init: T
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def reduce[T, G](
-    arr: typings.antvUtil.typesMod.ObjectType[T],
+    arr: typings.antvUtil.libLodashTypesMod.ObjectType[T],
     fn: js.Function3[/* result */ T, /* data */ G, /* idx */ String | Double, T],
     init: T
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[T]
@@ -346,14 +346,14 @@ object mod {
   
   inline def some[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ js.UndefOr[Double], Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: String): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.sortByMod.ObjectType[T]]]
-  inline def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: js.Array[String]): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.sortByMod.ObjectType[T]]]
-  inline def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: js.Function): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.sortByMod.ObjectType[T]]]
+  inline def sortBy[T](arr: js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]], key: String): js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]]]
+  inline def sortBy[T](arr: js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]], key: js.Array[String]): js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]]]
+  inline def sortBy[T](arr: js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]], key: js.Function): js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.libLodashSortByMod.ObjectType[T]]]
   
   inline def startsWith(arr: String, e: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(arr.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def startsWith[T](arr: js.Array[T], e: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(arr.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def substitute[T](str: String, o: typings.antvUtil.substituteMod.ObjectType[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(str.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def substitute[T](str: String, o: typings.antvUtil.libLodashSubstituteMod.ObjectType[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(str.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def throttle(func: js.Function, wait: Double, options: OptionsType): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   

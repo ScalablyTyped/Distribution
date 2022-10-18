@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "Injector")
+/* note: abstract class */ @JSImport("@angular/core", "Injector")
 @js.native
-abstract class Injector () extends StObject {
+open class Injector () extends StObject {
   
   /**
     * @deprecated from v4.0.0 use ProviderToken<T>

@@ -29,6 +29,8 @@ trait StylelintPostcssResult extends StObject {
   var ruleSeverities: StringDictionary[Severity]
   
   var stylelintError: js.UndefOr[Boolean] = js.undefined
+  
+  var stylelintWarning: js.UndefOr[Boolean] = js.undefined
 }
 object StylelintPostcssResult {
   
@@ -81,5 +83,9 @@ object StylelintPostcssResult {
     inline def setStylelintError(value: Boolean): Self = StObject.set(x, "stylelintError", value.asInstanceOf[js.Any])
     
     inline def setStylelintErrorUndefined: Self = StObject.set(x, "stylelintError", js.undefined)
+    
+    inline def setStylelintWarning(value: Boolean): Self = StObject.set(x, "stylelintWarning", value.asInstanceOf[js.Any])
+    
+    inline def setStylelintWarningUndefined: Self = StObject.set(x, "stylelintWarning", js.undefined)
   }
 }

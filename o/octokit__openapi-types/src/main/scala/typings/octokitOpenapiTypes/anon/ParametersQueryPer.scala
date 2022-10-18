@@ -8,11 +8,11 @@ trait ParametersQueryPer extends StObject {
   
   var parameters: QueryPer
   
-  var responses: `200Content342`
+  var responses: `200ContentApplicationjsonClonesCount`
 }
 object ParametersQueryPer {
   
-  inline def apply(parameters: QueryPer, responses: `200Content342`): ParametersQueryPer = {
+  inline def apply(parameters: QueryPer, responses: `200ContentApplicationjsonClonesCount`): ParametersQueryPer = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPer]
   }
@@ -21,6 +21,6 @@ object ParametersQueryPer {
     
     inline def setParameters(value: QueryPer): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content342`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonClonesCount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

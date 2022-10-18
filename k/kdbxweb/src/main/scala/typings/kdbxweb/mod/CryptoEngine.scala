@@ -1,8 +1,8 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.cryptoEngineMod.Argon2Fn
-import typings.kdbxweb.cryptoEngineMod.Argon2Type
-import typings.kdbxweb.cryptoEngineMod.Argon2Version
+import typings.kdbxweb.distTypesCryptoCryptoEngineMod.Argon2Fn
+import typings.kdbxweb.distTypesCryptoCryptoEngineMod.Argon2Type
+import typings.kdbxweb.distTypesCryptoCryptoEngineMod.Argon2Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ object CryptoEngine {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "CryptoEngine.AesCbc")
+  /* note: abstract class */ @JSImport("kdbxweb", "CryptoEngine.AesCbc")
   @js.native
-  abstract class AesCbc ()
-    extends typings.kdbxweb.cryptoEngineMod.AesCbc
+  open class AesCbc ()
+    extends typings.kdbxweb.distTypesCryptoCryptoEngineMod.AesCbc
   
   @JSImport("kdbxweb", "CryptoEngine.Argon2TypeArgon2d")
   @js.native
@@ -39,7 +39,7 @@ object CryptoEngine {
   
   inline def chacha20(data: js.typedarray.ArrayBuffer, key: js.typedarray.ArrayBuffer, iv: js.typedarray.ArrayBuffer): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("chacha20")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   
-  inline def createAesCbc(): typings.kdbxweb.cryptoEngineMod.AesCbc = ^.asInstanceOf[js.Dynamic].applyDynamic("createAesCbc")().asInstanceOf[typings.kdbxweb.cryptoEngineMod.AesCbc]
+  inline def createAesCbc(): typings.kdbxweb.distTypesCryptoCryptoEngineMod.AesCbc = ^.asInstanceOf[js.Dynamic].applyDynamic("createAesCbc")().asInstanceOf[typings.kdbxweb.distTypesCryptoCryptoEngineMod.AesCbc]
   
   inline def hmacSha256(key: js.typedarray.ArrayBuffer, data: js.typedarray.ArrayBuffer): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha256")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
   

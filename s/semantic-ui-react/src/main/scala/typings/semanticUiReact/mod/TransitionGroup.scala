@@ -2,9 +2,9 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
+import typings.semanticUiReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupComponent
+import typings.semanticUiReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps
 import typings.semanticUiReact.mod.^
-import typings.semanticUiReact.transitionGroupMod.TransitionGroupComponent
-import typings.semanticUiReact.transitionGroupMod.TransitionGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

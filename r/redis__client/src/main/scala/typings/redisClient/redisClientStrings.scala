@@ -1,11 +1,11 @@
 package typings.redisClient
 
-import typings.redisClient.bitopMod.BitOperations
-import typings.redisClient.genericTransformersMod.GeoUnits
-import typings.redisClient.genericTransformersMod.ListSide
-import typings.redisClient.genericTransformersMod.SortedSetSide
-import typings.redisClient.linsertMod.LInsertPosition
-import typings.redisClient.roleMod.RoleReplicaState
+import typings.redisClient.distLibCommandsBitopMod.BitOperations
+import typings.redisClient.distLibCommandsGenericTransformersMod.GeoUnits
+import typings.redisClient.distLibCommandsGenericTransformersMod.ListSide
+import typings.redisClient.distLibCommandsGenericTransformersMod.SortedSetSide
+import typings.redisClient.distLibCommandsLinsertMod.LInsertPosition
+import typings.redisClient.distLibCommandsRoleMod.RoleReplicaState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,10 +57,6 @@ object redisClientStrings {
   @js.native
   sealed trait BYTE extends StObject
   inline def BYTE: BYTE = "BYTE".asInstanceOf[BYTE]
-  
-  @js.native
-  sealed trait ConvertArgumentType extends StObject
-  inline def ConvertArgumentType: ConvertArgumentType = "ConvertArgumentType".asInstanceOf[ConvertArgumentType]
   
   @js.native
   sealed trait DESC extends StObject
@@ -135,10 +131,6 @@ object redisClientStrings {
   @js.native
   sealed trait MINID extends StObject
   inline def MINID: MINID = "MINID".asInstanceOf[MINID]
-  
-  @js.native
-  sealed trait MaximumOneOf extends StObject
-  inline def MaximumOneOf: MaximumOneOf = "MaximumOneOf".asInstanceOf[MaximumOneOf]
   
   @js.native
   sealed trait NO extends StObject
@@ -225,18 +217,6 @@ object redisClientStrings {
   @js.native
   sealed trait WRITE extends StObject
   inline def WRITE: WRITE = "WRITE".asInstanceOf[WRITE]
-  
-  @js.native
-  sealed trait WithFunctions extends StObject
-  inline def WithFunctions: WithFunctions = "WithFunctions".asInstanceOf[WithFunctions]
-  
-  @js.native
-  sealed trait WithModules extends StObject
-  inline def WithModules: WithModules = "WithModules".asInstanceOf[WithModules]
-  
-  @js.native
-  sealed trait WithScripts extends StObject
-  inline def WithScripts: WithScripts = "WithScripts".asInstanceOf[WithScripts]
   
   @js.native
   sealed trait XOR

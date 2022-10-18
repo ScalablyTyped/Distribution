@@ -26,7 +26,6 @@ import typings.chromeApps.chrome.fileSystemProvider.UnmountOptions
 import typings.chromeApps.chrome.fileSystemProvider.UnmountRequestedEventOptions
 import typings.chromeApps.chrome.fileSystemProvider.WatcherRequestedEventOptions
 import typings.chromeApps.chrome.fileSystemProvider.WriteFileRequestedEventOptions
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -140,10 +139,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -165,10 +161,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -189,10 +182,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -215,10 +205,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -239,10 +226,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -264,10 +248,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -288,10 +269,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -313,10 +291,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -339,10 +314,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -367,10 +339,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -392,10 +361,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -418,10 +384,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -442,10 +405,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -467,10 +427,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -492,10 +449,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -517,10 +471,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -542,10 +493,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -566,10 +514,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -594,10 +539,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 
@@ -617,10 +559,7 @@ trait TypeoffileSystemProvider extends StObject {
         /* error */ ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError */ js.Any, 
           /* keyof typeof ProviderError */ String, 
-          Exclude[
-            /* keyof typeof ProviderError */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof ProviderError[keyof typeof ProviderError] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ProviderError extends keyof typeof ProviderError ? std.Exclude<keyof typeof ProviderError, typeof ProviderError[keyof typeof ProviderError]> : never */ js.Any
         ], 
         Unit
       ], 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Connection HTTP header on an HTTP request. */
-@JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValueCollection")
+/* note: abstract class */ @JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValueCollection")
 @js.native
-abstract class HttpConnectionOptionHeaderValueCollection ()
+open class HttpConnectionOptionHeaderValueCollection ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValueCollection

@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StructureRoad
   extends StObject
      with Structure[STRUCTURE_ROAD]
-     with AnyStructure
-     with ConcreteStructure[Any] {
+     with AnyStructure {
   
   /**
     * The amount of game ticks when this road will lose some hit points.

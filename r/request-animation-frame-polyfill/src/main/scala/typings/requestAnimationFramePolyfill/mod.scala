@@ -1,7 +1,7 @@
 package typings.requestAnimationFramePolyfill
 
-import typings.requestAnimationFramePolyfill.requestAnimationFramePolyfillMod.TCancelAnimationFrame
-import typings.requestAnimationFramePolyfill.requestAnimationFramePolyfillMod.TRequestAnimationFrame
+import typings.requestAnimationFramePolyfill.distRequestAnimationFramePolyfillMod.TCancelAnimationFrame
+import typings.requestAnimationFramePolyfill.distRequestAnimationFramePolyfillMod.TRequestAnimationFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

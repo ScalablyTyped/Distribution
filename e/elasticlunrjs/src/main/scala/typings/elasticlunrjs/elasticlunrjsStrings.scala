@@ -15,26 +15,10 @@ object elasticlunrjsStrings {
   inline def AND: AND = "AND".asInstanceOf[AND]
   
   @js.native
-  sealed trait FieldSearchConfig extends StObject
-  inline def FieldSearchConfig: FieldSearchConfig = "FieldSearchConfig".asInstanceOf[FieldSearchConfig]
-  
-  @js.native
-  sealed trait Index extends StObject
-  inline def Index: Index = "Index".asInstanceOf[Index]
-  
-  @js.native
   sealed trait OR
     extends StObject
        with Bool
   inline def OR: OR = "OR".asInstanceOf[OR]
-  
-  @js.native
-  sealed trait SerialisedDocumentStore extends StObject
-  inline def SerialisedDocumentStore: SerialisedDocumentStore = "SerialisedDocumentStore".asInstanceOf[SerialisedDocumentStore]
-  
-  @js.native
-  sealed trait SerialisedIndexData extends StObject
-  inline def SerialisedIndexData: SerialisedIndexData = "SerialisedIndexData".asInstanceOf[SerialisedIndexData]
   
   @js.native
   sealed trait add

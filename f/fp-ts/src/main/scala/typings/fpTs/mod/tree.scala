@@ -1,28 +1,27 @@
 package typings.fpTs.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typings.fpTs.applicativeMod.Applicative1
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.chainMod.Chain1
-import typings.fpTs.comonadMod.Comonad1
-import typings.fpTs.eqMod.Eq
-import typings.fpTs.foldableMod.Foldable1
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.monadMod.Monad1
-import typings.fpTs.monadMod.Monad2
-import typings.fpTs.monadMod.Monad2C
-import typings.fpTs.monadMod.Monad3
-import typings.fpTs.monadMod.Monad3C
-import typings.fpTs.monadMod.Monad4
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.pointedMod.Pointed1
-import typings.fpTs.predicateMod.Predicate
-import typings.fpTs.showMod.Show
-import typings.fpTs.traversableMod.PipeableTraverse1
-import typings.fpTs.traversableMod.Sequence1
-import typings.fpTs.traversableMod.Traversable1
-import typings.fpTs.treeMod.Forest
-import typings.fpTs.treeMod.Tree_
+import typings.fpTs.libApplicativeMod.Applicative1
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libChainMod.Chain1
+import typings.fpTs.libComonadMod.Comonad1
+import typings.fpTs.libEqMod.Eq
+import typings.fpTs.libFoldableMod.Foldable1
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libMonadMod.Monad1
+import typings.fpTs.libMonadMod.Monad2
+import typings.fpTs.libMonadMod.Monad2C
+import typings.fpTs.libMonadMod.Monad3
+import typings.fpTs.libMonadMod.Monad3C
+import typings.fpTs.libMonadMod.Monad4
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libPointedMod.Pointed1
+import typings.fpTs.libPredicateMod.Predicate
+import typings.fpTs.libShowMod.Show
+import typings.fpTs.libTraversableMod.PipeableTraverse1
+import typings.fpTs.libTraversableMod.Sequence1
+import typings.fpTs.libTraversableMod.Traversable1
+import typings.fpTs.libTreeMod.Forest
+import typings.fpTs.libTreeMod.Tree_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,19 +35,19 @@ object tree {
   
   @JSImport("fp-ts", "tree.Applicative")
   @js.native
-  val Applicative: Applicative1[typings.fpTs.treeMod.URI] = js.native
+  val Applicative: Applicative1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Apply")
   @js.native
-  val Apply: Apply1[typings.fpTs.treeMod.URI] = js.native
+  val Apply: Apply1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Chain")
   @js.native
-  val Chain_ : Chain1[typings.fpTs.treeMod.URI] = js.native
+  val Chain_ : Chain1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Comonad")
   @js.native
-  val Comonad: Comonad1[typings.fpTs.treeMod.URI] = js.native
+  val Comonad: Comonad1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Do")
   @js.native
@@ -56,23 +55,23 @@ object tree {
   
   @JSImport("fp-ts", "tree.Foldable")
   @js.native
-  val Foldable: Foldable1[typings.fpTs.treeMod.URI] = js.native
+  val Foldable: Foldable1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Functor")
   @js.native
-  val Functor: Functor1[typings.fpTs.treeMod.URI] = js.native
+  val Functor: Functor1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Monad")
   @js.native
-  val Monad: Monad1[typings.fpTs.treeMod.URI] = js.native
+  val Monad: Monad1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Pointed")
   @js.native
-  val Pointed: Pointed1[typings.fpTs.treeMod.URI] = js.native
+  val Pointed: Pointed1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.Traversable")
   @js.native
-  val Traversable: Traversable1[typings.fpTs.treeMod.URI] = js.native
+  val Traversable: Traversable1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.URI")
   @js.native
@@ -85,16 +84,12 @@ object tree {
   inline def apS[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], fb: Tree_[B]): js.Function1[
     /* fa */ Tree_[A], 
     Tree_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("apS")(name.asInstanceOf[js.Any], fb.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* fa */ Tree_[A], 
     Tree_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.apS & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
@@ -103,32 +98,24 @@ object tree {
   inline def bind[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, Tree_[B]]): js.Function1[
     /* ma */ Tree_[A], 
     Tree_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* ma */ Tree_[A], 
     Tree_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B}
-    */ typings.fpTs.fpTsStrings.bind & TopLevel[A]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
     ]
   ]]
   
   inline def bindTo[N /* <: String */](name: N): js.Function1[
     /* fa */ Tree_[Any], 
     Tree_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindTo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* fa */ Tree_[Any], 
     Tree_[
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in N ]: any}
-    */ typings.fpTs.fpTsStrings.bindTo & TopLevel[Any]
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N ]: any} */ js.Any
     ]
   ]]
   
@@ -162,17 +149,24 @@ object tree {
   
   inline def getShow[A](S: Show[A]): Show[Tree_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(S.asInstanceOf[js.Any]).asInstanceOf[Show[Tree_[A]]]
   
+  inline def let[N /* <: String */, A, B](name: Exclude[N, /* keyof A */ String], f: js.Function1[/* a */ A, B]): js.Function1[
+    /* fa */ Tree_[A], 
+    Tree_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("let")(name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* fa */ Tree_[A], 
+    Tree_[
+      /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in N | keyof A ]: K extends keyof A? A[K] : B} */ js.Any
+    ]
+  ]]
+  
   inline def make[A](value: A): Tree_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(value.asInstanceOf[js.Any]).asInstanceOf[Tree_[A]]
   inline def make[A](value: A, forest: Forest[A]): Tree_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(value.asInstanceOf[js.Any], forest.asInstanceOf[js.Any])).asInstanceOf[Tree_[A]]
   
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Tree_[A], Tree_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Tree_[A], Tree_[B]]]
   
-  @JSImport("fp-ts", "tree.of")
-  @js.native
-  val of: js.Function1[
-    /* a */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
-  ] = js.native
+  inline def of[A](a: A): Tree_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(a.asInstanceOf[js.Any]).asInstanceOf[Tree_[A]]
   
   inline def reduce[A, B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): js.Function1[/* fa */ Tree_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fa */ Tree_[A], B]]
   
@@ -180,19 +174,19 @@ object tree {
   
   @JSImport("fp-ts", "tree.sequence")
   @js.native
-  val sequence: Sequence1[typings.fpTs.treeMod.URI] = js.native
+  val sequence: Sequence1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.traverse")
   @js.native
-  val traverse: PipeableTraverse1[typings.fpTs.treeMod.URI] = js.native
+  val traverse: PipeableTraverse1[typings.fpTs.libTreeMod.URI] = js.native
   
   @JSImport("fp-ts", "tree.tree")
   @js.native
-  val tree: Monad1[typings.fpTs.treeMod.URI] & Foldable1[typings.fpTs.treeMod.URI] & Traversable1[typings.fpTs.treeMod.URI] & Comonad1[typings.fpTs.treeMod.URI] = js.native
+  val tree: Monad1[typings.fpTs.libTreeMod.URI] & Foldable1[typings.fpTs.libTreeMod.URI] & Traversable1[typings.fpTs.libTreeMod.URI] & Comonad1[typings.fpTs.libTreeMod.URI] = js.native
   
   inline def unfoldForest[A, B](bs: js.Array[B], f: js.Function1[/* b */ B, js.Tuple2[A, js.Array[B]]]): Forest[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfoldForest")(bs.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Forest[A]]
   
-  inline def unfoldForestM[M](M: typings.fpTs.monadMod.Monad[M]): js.Function2[
+  inline def unfoldForestM[M](M: typings.fpTs.libMonadMod.Monad[M]): js.Function2[
     /* bs */ js.Array[Any], 
     /* f */ js.Function1[
       /* b */ Any, 
@@ -300,7 +294,7 @@ object tree {
   
   inline def unfoldTree[A, B](b: B, f: js.Function1[/* b */ B, js.Tuple2[A, js.Array[B]]]): Tree_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfoldTree")(b.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Tree_[A]]
   
-  inline def unfoldTreeM[M](M: typings.fpTs.monadMod.Monad[M]): js.Function2[
+  inline def unfoldTreeM[M](M: typings.fpTs.libMonadMod.Monad[M]): js.Function2[
     /* b */ Any, 
     /* f */ js.Function1[
       /* b */ Any, 

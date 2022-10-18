@@ -1,7 +1,7 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.keysMod.Keys
-import typings.tsToolbelt.objectIntersectKeysMod.IntersectMatch
+import typings.tsToolbelt.outAnyKeysMod.Keys
+import typings.tsToolbelt.outObjectIntersectKeysMod.IntersectMatch
 import typings.tsToolbelt.tsToolbeltStrings.`Lessthansign-contains`
 import typings.tsToolbelt.tsToolbeltStrings.`Lessthansign-extends`
 import typings.tsToolbelt.tsToolbeltStrings.`contains-Greaterthansign`

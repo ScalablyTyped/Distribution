@@ -1,7 +1,6 @@
 package typings.navigation
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.navigation.anon.Crumbs
 import typings.navigation.anon.Data
 import typings.navigation.navigationStrings.add
@@ -415,8 +414,14 @@ object mod {
       * context
       * @returns A FluentNavigator
       */
-    def fluent[B /* <: Boolean */](): FluentNavigator[NavigationInfo, String | Key] = js.native
-    def fluent[B /* <: Boolean */](withContext: B): FluentNavigator[NavigationInfo, String | Key] = js.native
+    def fluent[B /* <: Boolean */](): FluentNavigator[
+        NavigationInfo, 
+        /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? Key : string */ js.Any
+      ] = js.native
+    def fluent[B /* <: Boolean */](withContext: B): FluentNavigator[
+        NavigationInfo, 
+        /* import warning: importer.ImportType#apply Failed type conversion: B extends true ? Key : string */ js.Any
+      ] = js.native
     
     /**
       * Gets a Url to navigate back along the crumb trail
@@ -537,7 +542,7 @@ object mod {
         ],
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(
@@ -547,7 +552,7 @@ object mod {
       suspendNavigation: Unit,
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(
@@ -571,7 +576,7 @@ object mod {
         ],
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(
@@ -581,7 +586,7 @@ object mod {
       suspendNavigation: Unit,
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(url: String, historyAction: Unit, history: Boolean): Unit = js.native
@@ -606,7 +611,7 @@ object mod {
         ],
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(
@@ -616,7 +621,7 @@ object mod {
       suspendNavigation: Unit,
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(
@@ -640,7 +645,7 @@ object mod {
         ],
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     def navigateLink(
@@ -650,7 +655,7 @@ object mod {
       suspendNavigation: Unit,
       currentContext: StateContext[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ]
     ): Unit = js.native
     
@@ -753,15 +758,13 @@ object mod {
       */
     var stateContext: StateContext[
         Key & String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
       ] = js.native
     
     /**
       * Gets a list of States
       */
-    var states: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ Key in keyof NavigationInfo & string ]: navigation.navigation.State<Key, NavigationInfo[Key]>}
-      */ typings.navigation.navigationStrings.StateNavigator & TopLevel[NavigationInfo] = js.native
+    var states: /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof NavigationInfo & string ]: navigation.navigation.State<Key, NavigationInfo[Key]>} */ js.Any = js.native
   }
   
   @js.native

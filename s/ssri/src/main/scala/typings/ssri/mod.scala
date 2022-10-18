@@ -1,13 +1,14 @@
 package typings.ssri
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.ssri.anon.Algorithms
+import typings.ssri.anon.AlgorithmsOptions
 import typings.ssri.anon.Error
 import typings.ssri.anon.Options
-import typings.ssri.anon.OptionsPickAlgorithm
 import typings.ssri.anon.OptionsSingle
 import typings.ssri.anon.OptionsSingleStrict
 import typings.ssri.anon.PickAlgorithm
@@ -15,10 +16,10 @@ import typings.ssri.anon.Promise
 import typings.ssri.anon.Sep
 import typings.ssri.anon.Single
 import typings.ssri.anon.SingleStrict
-import typings.ssri.anon.Size
 import typings.ssri.anon.Strict
 import typings.ssri.anon.`0`
 import typings.ssri.anon.`1`
+import typings.ssri.anon.`2`
 import typings.ssri.ssriBooleans.`false`
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
@@ -104,33 +105,12 @@ object mod {
   inline def checkData(data: String, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: String, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: String, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    sri: String
-  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    sri: String,
-    opts: Error
-  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    sri: HashLike
-  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    sri: HashLike,
-    opts: Error
-  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    sri: IntegrityLike
-  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    sri: IntegrityLike,
-    opts: Error
-  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(data: TypedArray, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
@@ -139,14 +119,14 @@ object mod {
   inline def checkData(data: Buffer, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   
   inline def checkStream(stream: Readable, sri: String): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream(stream: Readable, sri: String, opts: OptionsPickAlgorithm): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
-  inline def checkStream(stream: Readable, sri: String, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: String, opts: Options): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: String, opts: Promise): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   inline def checkStream(stream: Readable, sri: HashLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream(stream: Readable, sri: HashLike, opts: OptionsPickAlgorithm): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
-  inline def checkStream(stream: Readable, sri: HashLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike, opts: Options): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: HashLike, opts: Promise): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   inline def checkStream(stream: Readable, sri: IntegrityLike): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
-  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: OptionsPickAlgorithm): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
-  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: Size): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: Options): js.Promise[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Hash]]
+  inline def checkStream(stream: Readable, sri: IntegrityLike, opts: Promise): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   
   inline def checkStream_PromiseLike(stream: Readable, sri: String): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
   inline def checkStream_PromiseLike(stream: Readable, sri: HashLike): PromiseLike[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Hash]]
@@ -159,20 +139,15 @@ object mod {
   inline def fromData(data: String, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   inline def fromData(data: js.typedarray.DataView): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def fromData(data: js.typedarray.DataView, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def fromData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
-  ): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  inline def fromData(
-    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
-    opts: Algorithms
-  ): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(data: TypedArray): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(data: TypedArray, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   inline def fromData(data: Buffer): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def fromData(data: Buffer, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   
   inline def fromHex(hexDigest: String, algorithm: String): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def fromHex(hexDigest: String, algorithm: String, opts: Options): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingle): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingle): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   inline def fromHex(hexDigest: String, algorithm: String, opts: OptionsSingleStrict): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
+  inline def fromHex(hexDigest: String, algorithm: String, opts: SingleStrict): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
   inline def fromHex_Hash(hexDigest: String, algorithm: String): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
@@ -180,7 +155,7 @@ object mod {
   
   inline def fromStream(stream: Readable): js.Promise[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IntegrityMap]]
   inline def fromStream(stream: Readable, opts: Algorithms): js.Promise[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntegrityMap]]
-  inline def fromStream(stream: Readable, opts: Promise): PromiseLike[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[IntegrityMap]]
+  inline def fromStream(stream: Readable, opts: AlgorithmsOptions): PromiseLike[IntegrityMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[IntegrityMap]]
   
   inline def fromStream_PromiseLike(stream: Readable): PromiseLike[IntegrityMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[IntegrityMap]]
   
@@ -189,16 +164,16 @@ object mod {
   
   inline def parse(sri: String): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def parse(sri: String, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
-  inline def parse(sri: String, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def parse(sri: String, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def parse(sri: String, opts: `1`): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def parse(sri: String, opts: `2`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
   inline def parse(sri: HashLike): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def parse(sri: HashLike, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
-  inline def parse(sri: HashLike, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def parse(sri: HashLike, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def parse(sri: HashLike, opts: `1`): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def parse(sri: HashLike, opts: `2`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
   inline def parse(sri: IntegrityLike): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def parse(sri: IntegrityLike, opts: Single): IntegrityMap | Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap | Hash]
-  inline def parse(sri: IntegrityLike, opts: SingleStrict): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def parse(sri: IntegrityLike, opts: `1`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
+  inline def parse(sri: IntegrityLike, opts: `1`): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def parse(sri: IntegrityLike, opts: `2`): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
   inline def parse_Hash(sri: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]
   inline def parse_Hash(sri: HashLike): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sri.asInstanceOf[js.Any]).asInstanceOf[Hash]

@@ -1,9 +1,9 @@
 package typings.barnard59ValidateShacl
 
-import typings.barnard59Core.streamObjectMod.Context
+import typings.barnard59Core.libStreamObjectMod.Context
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.Readable
-import typings.rdfValidateShacl.validationReportMod.Factory
+import typings.rdfValidateShacl.srcValidationReportMod.Factory
 import typings.rdfjsTypes.dataModelMod.Quad
 import typings.rdfjsTypes.datasetMod.DatasetCore
 import org.scalablytyped.runtime.StObject
@@ -25,14 +25,14 @@ object validateMod {
     
     var data: DatasetCore[Quad, Quad]
     
-    var report: typings.rdfValidateShacl.validationReportMod.^[Factory[Quad, Quad, DatasetCore[Quad, Quad]]]
+    var report: typings.rdfValidateShacl.srcValidationReportMod.^[Factory[Quad, Quad, DatasetCore[Quad, Quad]]]
   }
   object OnViolation {
     
     inline def apply(
       context: Context,
       data: DatasetCore[Quad, Quad],
-      report: typings.rdfValidateShacl.validationReportMod.^[Factory[Quad, Quad, DatasetCore[Quad, Quad]]]
+      report: typings.rdfValidateShacl.srcValidationReportMod.^[Factory[Quad, Quad, DatasetCore[Quad, Quad]]]
     ): OnViolation = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnViolation]
@@ -45,7 +45,7 @@ object validateMod {
       inline def setData(value: DatasetCore[Quad, Quad]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setReport(
-        value: typings.rdfValidateShacl.validationReportMod.^[Factory[Quad, Quad, DatasetCore[Quad, Quad]]]
+        value: typings.rdfValidateShacl.srcValidationReportMod.^[Factory[Quad, Quad, DatasetCore[Quad, Quad]]]
       ): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     }
   }

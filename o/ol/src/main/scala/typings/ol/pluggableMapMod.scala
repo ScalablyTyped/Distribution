@@ -4,10 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.eventsMod.EventsKey
 import typings.ol.extentMod.Extent
+import typings.ol.featureMod.FeatureLike
 import typings.ol.layerLayerMod.State
 import typings.ol.objectMod.ObjectEvent
-import typings.ol.olFeatureMod.FeatureLike
-import typings.ol.olMod.Transform
 import typings.ol.olStrings.changeColonlayerGroup
 import typings.ol.olStrings.changeColonsize
 import typings.ol.olStrings.changeColontarget
@@ -25,6 +24,7 @@ import typings.ol.olStrings.rendercomplete
 import typings.ol.olStrings.singleclick
 import typings.ol.pixelMod.Pixel
 import typings.ol.sizeMod.Size
+import typings.ol.transformMod.Transform
 import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -200,7 +200,7 @@ object pluggableMapMod {
     var keyboardEventTarget: js.UndefOr[HTMLElement | Document | String] = js.undefined
     
     var layers: js.UndefOr[
-        js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default] | typings.ol.groupMod.default
+        js.Array[typings.ol.layerBaseMod.default] | typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] | typings.ol.layerGroupMod.default
       ] = js.undefined
     
     var maxTilesLoading: js.UndefOr[Double] = js.undefined
@@ -247,12 +247,12 @@ object pluggableMapMod {
       inline def setKeyboardEventTargetUndefined: Self = StObject.set(x, "keyboardEventTarget", js.undefined)
       
       inline def setLayers(
-        value: js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default] | typings.ol.groupMod.default
+        value: js.Array[typings.ol.layerBaseMod.default] | typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] | typings.ol.layerGroupMod.default
       ): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value*))
+      inline def setLayersVarargs(value: typings.ol.layerBaseMod.default*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMaxTilesLoading(value: Double): Self = StObject.set(x, "maxTilesLoading", value.asInstanceOf[js.Any])
       
@@ -348,7 +348,7 @@ object pluggableMapMod {
       * elsewhere in the stack, use getLayers() and the methods available on
       * {@link module:ol/Collection~Collection}.
       */
-    def addLayer(layer: typings.ol.baseMod.default): Unit = js.native
+    def addLayer(layer: typings.ol.layerBaseMod.default): Unit = js.native
     
     /**
       * Add the given overlay to the map.
@@ -357,7 +357,7 @@ object pluggableMapMod {
     
     /* protected */ var controls: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
     
-    def createRenderer(): typings.ol.mapMod.default = js.native
+    def createRenderer(): typings.ol.rendererMapMod.default = js.native
     
     /**
       * Detect features that intersect a pixel on the viewport, and execute a
@@ -369,7 +369,7 @@ object pluggableMapMod {
       callback: js.Function3[
           /* p0 */ FeatureLike, 
           /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          /* p2 */ typings.ol.simpleGeometryMod.default, 
+          /* p2 */ typings.ol.geomSimpleGeometryMod.default, 
           T
         ]
     ): js.UndefOr[T] = js.native
@@ -378,7 +378,7 @@ object pluggableMapMod {
       callback: js.Function3[
           /* p0 */ FeatureLike, 
           /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          /* p2 */ typings.ol.simpleGeometryMod.default, 
+          /* p2 */ typings.ol.geomSimpleGeometryMod.default, 
           T
         ],
       opt_options: AtPixelOptions
@@ -460,12 +460,12 @@ object pluggableMapMod {
     /**
       * Get the layergroup associated with this map.
       */
-    def getLayerGroup(): typings.ol.groupMod.default = js.native
+    def getLayerGroup(): typings.ol.layerGroupMod.default = js.native
     
     /**
       * Get the collection of layers associated with this map.
       */
-    def getLayers(): typings.ol.collectionMod.default[typings.ol.baseMod.default] = js.native
+    def getLayers(): typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] = js.native
     
     def getLoading(): Boolean = js.native
     
@@ -516,7 +516,7 @@ object pluggableMapMod {
     /**
       * Get the map renderer.
       */
-    def getRenderer(): typings.ol.mapMod.default = js.native
+    def getRenderer(): typings.ol.rendererMapMod.default = js.native
     
     /**
       * Get the size of this map.
@@ -538,7 +538,7 @@ object pluggableMapMod {
     def getTargetElement(): HTMLElement = js.native
     
     def getTilePriority(
-      tile: typings.ol.olTileMod.default,
+      tile: typings.ol.tileMod.default,
       tileSourceKey: String,
       tileCenter: Coordinate,
       tileResolution: Double
@@ -683,7 +683,7 @@ object pluggableMapMod {
     /**
       * Removes the given layer from the map.
       */
-    def removeLayer(layer: typings.ol.baseMod.default): js.UndefOr[typings.ol.baseMod.default] = js.native
+    def removeLayer(layer: typings.ol.layerBaseMod.default): js.UndefOr[typings.ol.layerBaseMod.default] = js.native
     
     /**
       * Remove the given overlay from the map.
@@ -703,7 +703,7 @@ object pluggableMapMod {
     /**
       * Sets the layergroup of this map.
       */
-    def setLayerGroup(layerGroup: typings.ol.groupMod.default): Unit = js.native
+    def setLayerGroup(layerGroup: typings.ol.layerGroupMod.default): Unit = js.native
     
     /**
       * Set the size of this map.

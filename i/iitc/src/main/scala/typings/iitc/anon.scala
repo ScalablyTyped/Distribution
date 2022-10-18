@@ -1,7 +1,13 @@
 package typings.iitc
 
-import typings.iitc.hooksMod.global.EventPortalDetailLoaded
-import typings.iitc.hooksMod.global.PortalDetailEnt
+import typings.iitc.coreHooksMod.global.EventPortalDetailLoaded
+import typings.iitc.coreHooksMod.global.PortalDetailEnt
+import typings.iitc.coreIitctypesMod.IITC.PortalDataDetail
+import typings.iitc.coreIitctypesMod.LinkGUID
+import typings.iitc.coreIitctypesMod.PortalGUID
+import typings.iitc.coreInteltypesMod.Intel.MarkUpPlayer
+import typings.iitc.coreInteltypesMod.Intel.MarkUpPortal
+import typings.iitc.coreInteltypesMod.Intel.MarkUpText
 import typings.iitc.iitcBooleans.`false`
 import typings.iitc.iitcBooleans.`true`
 import typings.iitc.iitcStrings.ENLIGHTENED
@@ -10,12 +16,6 @@ import typings.iitc.iitcStrings.RESISTANCE
 import typings.iitc.iitcStrings.SYSTEM_BROADCAST
 import typings.iitc.iitcStrings.SYSTEM_NARROWCAST
 import typings.iitc.iitcStrings.portal_
-import typings.iitc.iitctypesMod.IITC.PortalDataDetail
-import typings.iitc.iitctypesMod.LinkGUID
-import typings.iitc.iitctypesMod.PortalGUID
-import typings.iitc.inteltypesMod.Intel.MarkUpPlayer
-import typings.iitc.inteltypesMod.Intel.MarkUpPortal
-import typings.iitc.inteltypesMod.Intel.MarkUpText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

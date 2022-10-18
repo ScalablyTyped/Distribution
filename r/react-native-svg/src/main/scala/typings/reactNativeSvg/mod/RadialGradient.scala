@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "RadialGradient")
 @js.native
 open class RadialGradient ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.RadialGradient
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.RadialGradient
 /* static members */
 object RadialGradient {
   

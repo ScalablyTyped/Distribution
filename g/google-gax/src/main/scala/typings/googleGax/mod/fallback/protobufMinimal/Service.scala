@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobufMinimal.Service")
 @js.native
 open class Service protected ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.Service {
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.Service {
   /**
     * Constructs a new service instance.
     * @param name Service name

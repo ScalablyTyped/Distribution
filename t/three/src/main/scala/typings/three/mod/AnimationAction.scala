@@ -1,6 +1,6 @@
 package typings.three.mod
 
-import typings.three.eventDispatcherMod.Event
+import typings.three.srcCoreEventDispatcherMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,26 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "AnimationAction")
 @js.native
 open class AnimationAction protected ()
-  extends typings.three.threeMod.AnimationAction {
+  extends typings.three.srcThreeMod.AnimationAction {
   def this(
-    mixer: typings.three.animationMixerMod.AnimationMixer,
-    clip: typings.three.animationClipMod.AnimationClip
+    mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
+    clip: typings.three.srcAnimationAnimationClipMod.AnimationClip
   ) = this()
   def this(
-    mixer: typings.three.animationMixerMod.AnimationMixer,
-    clip: typings.three.animationClipMod.AnimationClip,
-    localRoot: typings.three.object3DMod.Object3D[Event]
+    mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
+    clip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
+    localRoot: typings.three.srcCoreObject3DMod.Object3D[Event]
   ) = this()
   def this(
-    mixer: typings.three.animationMixerMod.AnimationMixer,
-    clip: typings.three.animationClipMod.AnimationClip,
+    mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
+    clip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     localRoot: Unit,
     blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
   def this(
-    mixer: typings.three.animationMixerMod.AnimationMixer,
-    clip: typings.three.animationClipMod.AnimationClip,
-    localRoot: typings.three.object3DMod.Object3D[Event],
+    mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
+    clip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
+    localRoot: typings.three.srcCoreObject3DMod.Object3D[Event],
     blendMode: typings.three.srcConstantsMod.AnimationBlendMode
   ) = this()
 }

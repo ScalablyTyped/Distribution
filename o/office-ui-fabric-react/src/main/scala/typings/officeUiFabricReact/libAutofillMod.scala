@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.EnableAutofillOnKeyPress
-import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
+import typings.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofillProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object libAutofillMod {
   @JSImport("office-ui-fabric-react/lib/Autofill", "Autofill")
   @js.native
   open class Autofill protected ()
-    extends typings.officeUiFabricReact.autofillMod.Autofill {
+    extends typings.officeUiFabricReact.libComponentsAutofillMod.Autofill {
     def this(props: IAutofillProps) = this()
   }
   /* static members */
@@ -30,7 +30,7 @@ object libAutofillMod {
   @JSImport("office-ui-fabric-react/lib/Autofill", "BaseAutoFill")
   @js.native
   open class BaseAutoFill protected ()
-    extends typings.officeUiFabricReact.autofillMod.BaseAutoFill {
+    extends typings.officeUiFabricReact.libComponentsAutofillMod.BaseAutoFill {
     def this(props: IAutofillProps) = this()
   }
 }

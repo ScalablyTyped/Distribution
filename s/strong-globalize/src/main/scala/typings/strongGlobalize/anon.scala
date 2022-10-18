@@ -2,8 +2,8 @@ package typings.strongGlobalize
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.strongGlobalize.configMod.AnyObject
-import typings.strongGlobalize.configMod.GlobalizeConfig
+import typings.strongGlobalize.libConfigMod.AnyObject
+import typings.strongGlobalize.libConfigMod.GlobalizeConfig
 import typings.strongGlobalize.strongGlobalizeBooleans.`false`
 import typings.strongGlobalize.strongGlobalizeStrings.all
 import typings.strongGlobalize.strongGlobalizeStrings.none

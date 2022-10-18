@@ -1,9 +1,9 @@
 package typings.nivoLegends
 
-import typings.nivoLegends.typesTypesMod.LegendAnchor
-import typings.nivoLegends.typesTypesMod.LegendDirection
-import typings.nivoLegends.typesTypesMod.LegendItemDirection
-import typings.nivoLegends.typesTypesMod.SymbolShape
+import typings.nivoLegends.distTypesTypesMod.LegendAnchor
+import typings.nivoLegends.distTypesTypesMod.LegendDirection
+import typings.nivoLegends.distTypesTypesMod.LegendItemDirection
+import typings.nivoLegends.distTypesTypesMod.SymbolShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

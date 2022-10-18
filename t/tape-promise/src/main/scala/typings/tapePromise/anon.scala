@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined tape-promise.tape-promise.AsyncTapeFunction & {None (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (cb : tape.tape.TestCase): void, None (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (name : string, cb : tape.tape.TestCase): void} */
+  /* Inlined tape-promise.tape-promise.AsyncTapeFunction & {None (name : string, opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (cb : tape.tape.TestCase): void, None (opts : tape.tape.TestOptions, cb : tape.tape.TestCase): void, None (name : string, cb : tape.tape.TestCase): void} */
   @js.native
-  trait AsyncTapeFunctionNoneopts extends StObject {
+  trait AsyncTapeFunctionNonename extends StObject {
     
     def apply(cb: TestCase | typings.tapePromise.mod.TestCase): Unit = js.native
     /**

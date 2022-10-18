@@ -17,7 +17,7 @@ open class ValueCondition protected ()
     * @param operator the conditional operator, default ValueCondition.IsEqual
     */
   def this(
-    actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+    actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
     target: Any,
     /** path to specify the property of the target the conditional operator uses  */
   propertyPath: String,
@@ -25,7 +25,7 @@ open class ValueCondition protected ()
   value: Any
   ) = this()
   def this(
-    actionManager: typings.babylonjs.actionManagerMod.ActionManager,
+    actionManager: typings.babylonjs.actionsActionManagerMod.ActionManager,
     target: Any,
     /** path to specify the property of the target the conditional operator uses  */
   propertyPath: String,

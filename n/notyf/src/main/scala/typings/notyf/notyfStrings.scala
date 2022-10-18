@@ -1,16 +1,12 @@
 package typings.notyf
 
-import typings.notyf.notyfOptionsMod.NotyfHorizontalPosition
-import typings.notyf.notyfOptionsMod.NotyfVerticalPosition
+import typings.notyf.notyfDotoptionsMod.NotyfHorizontalPosition
+import typings.notyf.notyfDotoptionsMod.NotyfVerticalPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notyfStrings {
-  
-  @js.native
-  sealed trait DeepPartial extends StObject
-  inline def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
   sealed trait a extends StObject

@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsCloudFilledMod.CloudFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/CloudFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/CloudFilled", JSImport.Default)
   @js.native
   val default: CloudFilledIconType = js.native
-  
-  @js.native
-  trait CloudFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_CloudFilledIconType: String = js.native
-  }
   
   type _To = CloudFilledIconType
   

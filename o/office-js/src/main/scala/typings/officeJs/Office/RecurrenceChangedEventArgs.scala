@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RecurrenceChangedEventArgs extends StObject {
   
-  /** 
-    * Gets the updated recurrence object. 
-    * 
+  /**
+    * Gets the updated recurrence object.
+    *
     * @remarks
-    * [Api set: Mailbox 1.7] 
-    */ 
+    * [Api set: Mailbox 1.7]
+    */
   var recurrence: Recurrence
   
-  /** 
+  /**
     * Gets the type of the event. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
-    * 
+    *
     * @remarks
-    * [Api set: Mailbox 1.7] 
-    */ 
+    * [Api set: Mailbox 1.7]
+    */
   var `type`: olkRecurrenceChanged
 }
 object RecurrenceChangedEventArgs {

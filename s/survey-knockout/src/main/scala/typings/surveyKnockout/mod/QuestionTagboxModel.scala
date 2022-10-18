@@ -14,11 +14,8 @@ open class QuestionTagboxModel protected () extends QuestionCheckboxModel {
     */
   var allowClear: Boolean = js.native
   
-  /*
-    * The clean files button caption.
-    */
-  def cleanButtonCaption: String = js.native
-  def cleanButtonCaption_=(`val`: String): Unit = js.native
+  def cleanCaption: String = js.native
+  def cleanCaption_=(`val`: String): Unit = js.native
   
   var dropdownListModel: DropdownMultiSelectListModel = js.native
   
@@ -31,12 +28,7 @@ open class QuestionTagboxModel protected () extends QuestionCheckboxModel {
     */
   var hideSelectedItems: Boolean = js.native
   
-  /*
-    * The name of a component used to render drop-down menu items.
-    */
-  var itemComponent: String = js.native
-  
-  def locCleanButtonCaption: LocalizableString = js.native
+  def locCleanCaption: LocalizableString = js.native
   
   def locPlaceholder: LocalizableString = js.native
   

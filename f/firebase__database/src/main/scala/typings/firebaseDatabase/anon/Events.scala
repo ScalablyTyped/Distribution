@@ -1,7 +1,7 @@
 package typings.firebaseDatabase.anon
 
-import typings.firebaseDatabase.eventMod.Event
-import typings.firebaseDatabase.eventRegistrationMod.QueryContext
+import typings.firebaseDatabase.distNodeEsmSrcCoreViewEventMod.Event
+import typings.firebaseDatabase.distNodeEsmSrcCoreViewEventRegistrationMod.QueryContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

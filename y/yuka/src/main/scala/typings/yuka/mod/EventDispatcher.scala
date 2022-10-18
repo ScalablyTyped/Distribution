@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new event dispatcher.
   */
 open class EventDispatcher ()
-  extends typings.yuka.yukaMod.EventDispatcher
+  extends typings.yuka.srcYukaMod.EventDispatcher

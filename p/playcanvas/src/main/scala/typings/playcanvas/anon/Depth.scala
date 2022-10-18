@@ -6,31 +6,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Depth extends StObject {
   
-  var color: js.Array[Double]
-  
   var depth: Double
   
-  var flags: Double
+  var forward: Double
   
-  var stencil: Double
+  var immediate: Double
+  
+  var instanced: Double
+  
+  var misc: Double
+  
+  var removedByInstancing: Double
+  
+  var shadow: Double
+  
+  var skinned: Double
+  
+  var total: Double
 }
 object Depth {
   
-  inline def apply(color: js.Array[Double], depth: Double, flags: Double, stencil: Double): Depth = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], stencil = stencil.asInstanceOf[js.Any])
+  inline def apply(
+    depth: Double,
+    forward: Double,
+    immediate: Double,
+    instanced: Double,
+    misc: Double,
+    removedByInstancing: Double,
+    shadow: Double,
+    skinned: Double,
+    total: Double
+  ): Depth = {
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], forward = forward.asInstanceOf[js.Any], immediate = immediate.asInstanceOf[js.Any], instanced = instanced.asInstanceOf[js.Any], misc = misc.asInstanceOf[js.Any], removedByInstancing = removedByInstancing.asInstanceOf[js.Any], shadow = shadow.asInstanceOf[js.Any], skinned = skinned.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Depth]
   }
   
   extension [Self <: Depth](x: Self) {
     
-    inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
-    
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setForward(value: Double): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    inline def setStencil(value: Double): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+    inline def setImmediate(value: Double): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+    
+    inline def setInstanced(value: Double): Self = StObject.set(x, "instanced", value.asInstanceOf[js.Any])
+    
+    inline def setMisc(value: Double): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedByInstancing(value: Double): Self = StObject.set(x, "removedByInstancing", value.asInstanceOf[js.Any])
+    
+    inline def setShadow(value: Double): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setSkinned(value: Double): Self = StObject.set(x, "skinned", value.asInstanceOf[js.Any])
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

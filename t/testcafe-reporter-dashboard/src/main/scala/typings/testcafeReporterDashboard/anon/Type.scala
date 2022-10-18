@@ -1,6 +1,6 @@
 package typings.testcafeReporterDashboard.anon
 
-import typings.testcafeReporterDashboard.testcafeMod.CommandType
+import typings.testcafeReporterDashboard.libTypesTestcafeMod.CommandType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

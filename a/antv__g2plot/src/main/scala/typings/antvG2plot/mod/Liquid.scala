@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialLiquidOptions
-import typings.antvG2plot.liquidTypesMod.LiquidOptions
+import typings.antvG2plot.libPlotsLiquidTypesMod.LiquidOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Liquid")
 @js.native
 open class Liquid protected ()
-  extends typings.antvG2plot.liquidMod.Liquid {
+  extends typings.antvG2plot.libPlotsLiquidMod.Liquid {
   def this(container: String, options: LiquidOptions) = this()
   def this(container: HTMLElement, options: LiquidOptions) = this()
 }

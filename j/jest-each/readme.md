@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-each
 
-Typings are for version 29.1.2
+Typings are for version 29.2.0
 
 ## Library description:
 Parameterised tests for Jest

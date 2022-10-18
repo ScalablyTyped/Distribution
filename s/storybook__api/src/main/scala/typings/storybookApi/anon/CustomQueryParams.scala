@@ -1,16 +1,16 @@
 package typings.storybookApi.anon
 
 import typings.std.Record
-import typings.storybookApi.layoutMod.Layout
-import typings.storybookApi.layoutMod.UI
-import typings.storybookApi.notificationsMod.Notification
-import typings.storybookApi.refsMod.ComposedRef
-import typings.storybookApi.settingsMod.Settings
-import typings.storybookApi.shortcutsMod.Shortcuts
-import typings.storybookApi.storiesMod.StoriesHash
-import typings.storybookApi.urlMod.QueryParams
-import typings.storybookApi.versionsMod.UnknownEntries
-import typings.storybookApi.versionsMod.Versions
+import typings.storybookApi.distTs3Dot9LibStoriesMod.StoriesHash
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.Layout
+import typings.storybookApi.distTs3Dot9ModulesLayoutMod.UI
+import typings.storybookApi.distTs3Dot9ModulesNotificationsMod.Notification
+import typings.storybookApi.distTs3Dot9ModulesRefsMod.ComposedRef
+import typings.storybookApi.distTs3Dot9ModulesSettingsMod.Settings
+import typings.storybookApi.distTs3Dot9ModulesShortcutsMod.Shortcuts
+import typings.storybookApi.distTs3Dot9ModulesUrlMod.QueryParams
+import typings.storybookApi.distTs3Dot9ModulesVersionsMod.UnknownEntries
+import typings.storybookApi.distTs3Dot9ModulesVersionsMod.Versions
 import typings.storybookTheming.mod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

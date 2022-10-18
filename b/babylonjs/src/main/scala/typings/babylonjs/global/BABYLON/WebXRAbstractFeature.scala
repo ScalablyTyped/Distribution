@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.WebXRAbstractFeature")
+/* note: abstract class */ @JSGlobal("BABYLON.WebXRAbstractFeature")
 @js.native
-abstract class WebXRAbstractFeature protected ()
+open class WebXRAbstractFeature protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRAbstractFeature {
   /**

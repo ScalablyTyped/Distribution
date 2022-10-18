@@ -1,11 +1,11 @@
 package typings.useGestureCore
 
-import typings.useGestureCore.configMod.CoordinatesKey
-import typings.useGestureCore.configMod.GestureKey
-import typings.useGestureCore.configMod._ModifierKey
-import typings.useGestureCore.handlersMod.NativeHandlersKeys
-import typings.useGestureCore.stateMod.IngKey
-import typings.useGestureCore.utilsMod.PointerType
+import typings.useGestureCore.distDeclarationsSrcTypesConfigMod.CoordinatesKey
+import typings.useGestureCore.distDeclarationsSrcTypesConfigMod.GestureKey
+import typings.useGestureCore.distDeclarationsSrcTypesConfigMod._ModifierKey
+import typings.useGestureCore.distDeclarationsSrcTypesHandlersMod.NativeHandlersKeys
+import typings.useGestureCore.distDeclarationsSrcTypesStateMod.IngKey
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.PointerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/index", "BaseError")
+/* note: abstract class */ @JSImport("babylonjs/index", "BaseError")
 @js.native
-abstract class BaseError ()
+open class BaseError ()
   extends typings.babylonjs.miscIndexMod.BaseError
 /* static members */
 object BaseError {

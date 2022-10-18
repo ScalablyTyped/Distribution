@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NamedExpressionNameIsAlreadyTakenError")
 @js.native
 open class NamedExpressionNameIsAlreadyTakenError protected ()
-  extends typings.hyperformula.errorsMod.NamedExpressionNameIsAlreadyTakenError {
+  extends typings.hyperformula.typingsErrorsMod.NamedExpressionNameIsAlreadyTakenError {
   def this(expressionName: String) = this()
 }

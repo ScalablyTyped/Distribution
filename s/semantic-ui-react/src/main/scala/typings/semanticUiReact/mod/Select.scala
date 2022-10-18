@@ -3,10 +3,10 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.dropdownDividerMod.DropdownDividerProps
-import typings.semanticUiReact.dropdownHeaderMod.DropdownHeaderProps
-import typings.semanticUiReact.dropdownItemMod.DropdownItemProps
-import typings.semanticUiReact.selectSelectMod.SelectComponent
+import typings.semanticUiReact.distCommonjsAddonsSelectSelectMod.SelectComponent
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnob
-import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnobValue
+import typings.storybookAddonKnobs.distComponentsTypesBooleanMod.BooleanTypeKnob
+import typings.storybookAddonKnobs.distComponentsTypesBooleanMod.BooleanTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

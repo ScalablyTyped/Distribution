@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CustomEvent")
 @js.native
 open class CustomEvent protected ()
-  extends typings.antvGLite.domMod.CustomEvent {
+  extends typings.antvGLite.distDomMod.CustomEvent {
   def this(eventName: String) = this()
   def this(eventName: String, `object`: js.Object) = this()
 }

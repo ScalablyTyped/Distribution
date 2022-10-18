@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsAlignRightMod.AlignRightProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsAlignRightMod.AlignRightProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignRightMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/system/AlignRight", JSImport.Default)
+  @JSImport("wix-ui-icons-common/AlignRight", JSImport.Default)
   @js.native
   val default: FC[AlignRightProps] = js.native
   

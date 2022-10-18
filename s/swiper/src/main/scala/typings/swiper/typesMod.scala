@@ -1,10 +1,10 @@
 package typings.swiper
 
 import typings.std.HTMLElement
-import typings.swiper.sharedMod.CSSSelector
-import typings.swiper.sharedMod.SwiperModule
-import typings.swiper.swiperClassMod.default
-import typings.swiper.swiperOptionsMod.SwiperOptions
+import typings.swiper.typesSharedMod.CSSSelector
+import typings.swiper.typesSharedMod.SwiperModule
+import typings.swiper.typesSwiperClassMod.default
+import typings.swiper.typesSwiperOptionsMod.SwiperOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

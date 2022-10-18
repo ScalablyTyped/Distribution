@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Controls device settings on the microphone. */
-@JSGlobal("Windows.Media.Devices.AudioDeviceController")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.AudioDeviceController")
 @js.native
-abstract class AudioDeviceController ()
+open class AudioDeviceController ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.AudioDeviceController {
   

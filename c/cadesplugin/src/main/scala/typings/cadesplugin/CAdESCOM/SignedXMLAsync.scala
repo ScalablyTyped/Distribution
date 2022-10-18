@@ -1,10 +1,6 @@
 package typings.cadesplugin.CAdESCOM
 
-import org.scalablytyped.runtime.TopLevel
-import typings.cadesplugin.CADESCommon.PromisifiedFunction
-import typings.cadesplugin.CADESCommon.Unpacked
 import typings.cadesplugin.CADESCommon.ValuesOf
-import typings.cadesplugin.CAPICOM.Signers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,34 +8,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.SignedXML> */
 trait SignedXMLAsync extends StObject {
   
-  val Content: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val Content: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val DigestMethod: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val DigestMethod: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val Sign: (// tslint:disable-line ban-types
-  js.Promise[
-    Unpacked[
-      js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-    ]
-  ]) | (PromisifiedFunction[
-    js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-  ])
+  val Sign: /* import warning: importer.ImportType#apply Failed type conversion: (signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string>> */ js.Any
   
-  val SignatureMethod: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+  val SignatureMethod: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
   
-  val SignatureType: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]
+  val SignatureType: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE> extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE>> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE>>> */ js.Any
   
-  val Signers: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[typings.cadesplugin.CAPICOM.Signers]]) | PromisifiedFunction[typings.cadesplugin.CAPICOM.Signers]
+  val Signers: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.Signers extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.Signers> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.Signers>> */ js.Any
   
-  val Verify: (// tslint:disable-line ban-types
-  js.Promise[
-    Unpacked[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]
-  ]) | (PromisifiedFunction[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]])
+  val Verify: /* import warning: importer.ImportType#apply Failed type conversion: (SignedMessage : string, XPath : string | undefined): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(SignedMessage : string, XPath : string | undefined): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(SignedMessage : string, XPath : string | undefined): void>> */ js.Any
   
   def propset_Content(content: String): js.Promise[Unit]
   
@@ -52,28 +40,20 @@ trait SignedXMLAsync extends StObject {
 object SignedXMLAsync {
   
   inline def apply(
-    Content: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    DigestMethod: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    Sign: (// tslint:disable-line ban-types
-  js.Promise[
-      Unpacked[
-        js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-      ]
-    ]) | (PromisifiedFunction[
-      js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-    ]),
-    SignatureMethod: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
-    SignatureType: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]],
-    Signers: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[Signers]]) | PromisifiedFunction[Signers],
-    Verify: (// tslint:disable-line ban-types
-  js.Promise[
-      Unpacked[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]
-    ]) | (PromisifiedFunction[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]),
+    Content: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    DigestMethod: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    Sign: /* import warning: importer.ImportType#apply Failed type conversion: (signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string>> */ js.Any,
+    SignatureMethod: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any,
+    SignatureType: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE> extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE>> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE>>> */ js.Any,
+    Signers: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.Signers extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.Signers> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.Signers>> */ js.Any,
+    Verify: /* import warning: importer.ImportType#apply Failed type conversion: (SignedMessage : string, XPath : string | undefined): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(SignedMessage : string, XPath : string | undefined): void> : // tslint:disable-line ban-types
+  std.Promise<cadesplugin.CADES_Common.Unpacked<(SignedMessage : string, XPath : string | undefined): void>> */ js.Any,
     propset_Content: String => js.Promise[Unit],
     propset_DigestMethod: String => js.Promise[Unit],
     propset_SignatureMethod: String => js.Promise[Unit],
@@ -86,26 +66,14 @@ object SignedXMLAsync {
   extension [Self <: SignedXMLAsync](x: Self) {
     
     inline def setContent(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    inline def setContentFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Content", js.Any.fromFunction1(value))
-    
     inline def setDigestMethod(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "DigestMethod", value.asInstanceOf[js.Any])
-    
-    inline def setDigestMethodFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "DigestMethod", js.Any.fromFunction1(value))
     
     inline def setPropset_Content(value: String => js.Promise[Unit]): Self = StObject.set(x, "propset_Content", js.Any.fromFunction1(value))
     
@@ -116,70 +84,28 @@ object SignedXMLAsync {
     inline def setPropset_SignatureType(value: ValuesOf[CADESCOM_XML_SIGNATURE_TYPE] => js.Promise[Unit]): Self = StObject.set(x, "propset_SignatureType", js.Any.fromFunction1(value))
     
     inline def setSign(
-      value: (// tslint:disable-line ban-types
-    js.Promise[
-          Unpacked[
-            js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-          ]
-        ]) | (PromisifiedFunction[
-          js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-        ])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(signer : cadesplugin.CAdESCOM.CPSigner | undefined, XPath : string | undefined): string>> */ js.Any
     ): Self = StObject.set(x, "Sign", value.asInstanceOf[js.Any])
     
-    inline def setSignFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Sign", js.Any.fromFunction1(value))
-    
-    inline def setSignFunction2(value: (/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String]) => String): Self = StObject.set(x, "Sign", js.Any.fromFunction2(value))
-    
     inline def setSignatureMethod(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<string>> */ js.Any
     ): Self = StObject.set(x, "SignatureMethod", value.asInstanceOf[js.Any])
     
-    inline def setSignatureMethodFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "SignatureMethod", js.Any.fromFunction1(value))
-    
     inline def setSignatureType(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE> extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE>> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CADES_Common.ValuesOf<cadesplugin.CAdESCOM.CADESCOM_XML_SIGNATURE_TYPE>>> */ js.Any
     ): Self = StObject.set(x, "SignatureType", value.asInstanceOf[js.Any])
     
-    inline def setSignatureTypeFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "SignatureType", js.Any.fromFunction1(value))
-    
     inline def setSigners(
-      value: (// tslint:disable-line ban-types
-    js.Promise[Unpacked[Signers]]) | PromisifiedFunction[Signers]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.Signers extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.Signers> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<cadesplugin.CAPICOM.Signers>> */ js.Any
     ): Self = StObject.set(x, "Signers", value.asInstanceOf[js.Any])
     
-    inline def setSignersFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Signers", js.Any.fromFunction1(value))
-    
     inline def setVerify(
-      value: (// tslint:disable-line ban-types
-    js.Promise[
-          Unpacked[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]
-        ]) | (PromisifiedFunction[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]])
+      value: /* import warning: importer.ImportType#apply Failed type conversion: (SignedMessage : string, XPath : string | undefined): void extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(SignedMessage : string, XPath : string | undefined): void> : // tslint:disable-line ban-types
+    std.Promise<cadesplugin.CADES_Common.Unpacked<(SignedMessage : string, XPath : string | undefined): void>> */ js.Any
     ): Self = StObject.set(x, "Verify", value.asInstanceOf[js.Any])
-    
-    inline def setVerifyFunction1(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
-    ): Self = StObject.set(x, "Verify", js.Any.fromFunction1(value))
-    
-    inline def setVerifyFunction2(value: (/* SignedMessage */ String, /* XPath */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Verify", js.Any.fromFunction2(value))
   }
 }

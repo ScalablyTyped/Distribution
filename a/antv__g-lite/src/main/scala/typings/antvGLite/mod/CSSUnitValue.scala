@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "CSSUnitValue")
 @js.native
 open class CSSUnitValue protected ()
-  extends typings.antvGLite.cssMod.CSSUnitValue {
+  extends typings.antvGLite.distCssMod.CSSUnitValue {
   def this(value: Double) = this()
   def this(value: Double, unitOrName: String) = this()
-  def this(value: Double, unitOrName: typings.antvGLite.typesMod.UnitType) = this()
+  def this(value: Double, unitOrName: typings.antvGLite.distCssCssomTypesMod.UnitType) = this()
 }

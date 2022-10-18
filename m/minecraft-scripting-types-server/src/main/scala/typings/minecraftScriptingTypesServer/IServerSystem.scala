@@ -1,5 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
+import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerBooleans.`false`
+import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerBooleans.`true`
 import typings.minecraftScriptingTypesShared.IBlock
 import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IQuery
@@ -97,7 +99,7 @@ trait IServerSystem[TSystem]
     * @return false The EntityObject doesn't have the component
     * @return null An unknown component was passed in or something else went wrong when checking if the EntityObject had the component
     */
-  def hasComponent(entity: IEntity, componentIdentifier: String): Boolean | Null = js.native
+  def hasComponent(entityObject: IEntity, componentIdentifier: String): `true` | `false` | Null = js.native
   /**
     * Looks for the specified component in the entity. If it exists, retrieves the data from the component and returns it.
     * @param entity The `IEntityObject` that was retrieved from a call to `createEntity()` or retrieved from an event

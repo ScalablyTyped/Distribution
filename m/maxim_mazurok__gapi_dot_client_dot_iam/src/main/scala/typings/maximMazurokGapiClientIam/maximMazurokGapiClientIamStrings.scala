@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientIamStrings {
   
   @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
-  sealed trait WorkloadIdentityPoolProvider extends StObject
-  inline def WorkloadIdentityPoolProvider: WorkloadIdentityPoolProvider = "WorkloadIdentityPoolProvider".asInstanceOf[WorkloadIdentityPoolProvider]
-  
-  @js.native
   sealed trait iam extends StObject
   inline def iam: iam = "iam".asInstanceOf[iam]
   

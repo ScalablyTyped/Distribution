@@ -2,8 +2,8 @@ package typings.cssLineBreak
 
 import typings.cssLineBreak.cssLineBreakBooleans.`false`
 import typings.cssLineBreak.cssLineBreakBooleans.`true`
-import typings.cssLineBreak.lineBreakMod.Break
-import typings.cssLineBreak.lineBreakMod.LineBreak
+import typings.cssLineBreak.distTypesLineBreakMod.Break
+import typings.cssLineBreak.distTypesLineBreakMod.LineBreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Props extends StObject {
   
-  var data: Disabled
+  var data: ActiveDescendant
   
   var props: AccessKey
 }
 object Props {
   
-  inline def apply(data: Disabled, props: AccessKey): Props = {
+  inline def apply(data: ActiveDescendant, props: AccessKey): Props = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
   
   extension [Self <: Props](x: Self) {
     
-    inline def setData(value: Disabled): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ActiveDescendant): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setProps(value: AccessKey): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

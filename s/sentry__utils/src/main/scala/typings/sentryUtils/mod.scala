@@ -1,30 +1,30 @@
 package typings.sentryUtils
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryTypes.attachmentMod.Attachment
-import typings.sentryTypes.clientreportMod.Outcome
-import typings.sentryTypes.datacategoryMod.DataCategory
-import typings.sentryTypes.dsnMod.DsnComponents
-import typings.sentryTypes.dsnMod.DsnLike
-import typings.sentryTypes.envelopeMod.AttachmentItem
-import typings.sentryTypes.envelopeMod.ClientReportEnvelope
-import typings.sentryTypes.envelopeMod.Envelope
-import typings.sentryTypes.envelopeMod.EnvelopeItemType
-import typings.sentryTypes.eventMod.Event
-import typings.sentryTypes.miscMod.ExtractedNodeRequestData
-import typings.sentryTypes.miscMod.Primitive
-import typings.sentryTypes.polymorphicsMod.PolymorphicRequest
-import typings.sentryTypes.severityMod.Severity
-import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.stackframeMod.StackFrame
-import typings.sentryTypes.stacktraceMod.StackLineParser
-import typings.sentryTypes.stacktraceMod.StackParser
-import typings.sentryTypes.textencoderMod.TextEncoderInternal
-import typings.sentryTypes.transactionMod.TraceparentData
-import typings.sentryTypes.transactionMod.Transaction
-import typings.sentryTypes.transactionMod.TransactionSource
-import typings.sentryTypes.transportMod.TransportMakeRequestResponse
-import typings.sentryTypes.wrappedfunctionMod.WrappedFunction
+import typings.sentryTypes.typesAttachmentMod.Attachment
+import typings.sentryTypes.typesClientreportMod.Outcome
+import typings.sentryTypes.typesDatacategoryMod.DataCategory
+import typings.sentryTypes.typesDsnMod.DsnComponents
+import typings.sentryTypes.typesDsnMod.DsnLike
+import typings.sentryTypes.typesEnvelopeMod.AttachmentItem
+import typings.sentryTypes.typesEnvelopeMod.ClientReportEnvelope
+import typings.sentryTypes.typesEnvelopeMod.Envelope
+import typings.sentryTypes.typesEnvelopeMod.EnvelopeItemType
+import typings.sentryTypes.typesEventMod.Event
+import typings.sentryTypes.typesMiscMod.ExtractedNodeRequestData
+import typings.sentryTypes.typesMiscMod.Primitive
+import typings.sentryTypes.typesPolymorphicsMod.PolymorphicRequest
+import typings.sentryTypes.typesSeverityMod.Severity
+import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesStackframeMod.StackFrame
+import typings.sentryTypes.typesStacktraceMod.StackLineParser
+import typings.sentryTypes.typesStacktraceMod.StackParser
+import typings.sentryTypes.typesTextencoderMod.TextEncoderInternal
+import typings.sentryTypes.typesTransactionMod.TraceparentData
+import typings.sentryTypes.typesTransactionMod.Transaction
+import typings.sentryTypes.typesTransactionMod.TransactionSource
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
+import typings.sentryTypes.typesWrappedfunctionMod.WrappedFunction
 import typings.sentryUtils.anon.CustomRoute
 import typings.sentryUtils.anon.Deps
 import typings.sentryUtils.anon.DictownProps
@@ -32,18 +32,6 @@ import typings.sentryUtils.anon.Host
 import typings.sentryUtils.anon.Message
 import typings.sentryUtils.anon.PartialDynamicSamplingCon
 import typings.sentryUtils.anon.PartialMechanism
-import typings.sentryUtils.globalMod.SentryGlobal
-import typings.sentryUtils.instrumentMod.InstrumentHandlerCallback
-import typings.sentryUtils.instrumentMod.InstrumentHandlerType
-import typings.sentryUtils.loggerMod.ConsoleLevel
-import typings.sentryUtils.loggerMod.Logger_
-import typings.sentryUtils.memoMod.MemoFunc
-import typings.sentryUtils.miscMod.SemVer
-import typings.sentryUtils.normalizeMod.ObjOrArray
-import typings.sentryUtils.promisebufferMod.PromiseBuffer
-import typings.sentryUtils.ratelimitMod.RateLimits
-import typings.sentryUtils.requestdataMod.AddRequestDataToEventOptions
-import typings.sentryUtils.requestdataMod.InjectedNodeDeps
 import typings.sentryUtils.sentryUtilsStrings.assert
 import typings.sentryUtils.sentryUtilsStrings.debug
 import typings.sentryUtils.sentryUtilsStrings.error
@@ -51,7 +39,19 @@ import typings.sentryUtils.sentryUtilsStrings.info
 import typings.sentryUtils.sentryUtilsStrings.log
 import typings.sentryUtils.sentryUtilsStrings.trace
 import typings.sentryUtils.sentryUtilsStrings.warn
-import typings.sentryUtils.stacktraceMod.GetModuleFn
+import typings.sentryUtils.typesGlobalMod.SentryGlobal
+import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerCallback
+import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerType
+import typings.sentryUtils.typesLoggerMod.ConsoleLevel
+import typings.sentryUtils.typesLoggerMod.Logger_
+import typings.sentryUtils.typesMemoMod.MemoFunc
+import typings.sentryUtils.typesMiscMod.SemVer
+import typings.sentryUtils.typesNormalizeMod.ObjOrArray
+import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
+import typings.sentryUtils.typesRatelimitMod.RateLimits
+import typings.sentryUtils.typesRequestdataMod.AddRequestDataToEventOptions
+import typings.sentryUtils.typesRequestdataMod.InjectedNodeDeps
+import typings.sentryUtils.typesStacktraceMod.GetModuleFn
 import typings.std.ObjectConstructor
 import typings.std.PromiseLike
 import typings.std.Record
@@ -92,7 +92,7 @@ object mod {
   @JSImport("@sentry/utils", "SentryError")
   @js.native
   open class SentryError protected ()
-    extends typings.sentryUtils.errorMod.SentryError {
+    extends typings.sentryUtils.typesErrorMod.SentryError {
     def this(message: String) = this()
     def this(message: String, logLevel: ConsoleLevel) = this()
   }
@@ -104,7 +104,7 @@ object mod {
   @JSImport("@sentry/utils", "SyncPromise")
   @js.native
   open class SyncPromise[T] protected ()
-    extends typings.sentryUtils.syncpromiseMod.SyncPromise[T] {
+    extends typings.sentryUtils.typesSyncpromiseMod.SyncPromise[T] {
     def this(executor: js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[T | PromiseLike[T] | Null], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 

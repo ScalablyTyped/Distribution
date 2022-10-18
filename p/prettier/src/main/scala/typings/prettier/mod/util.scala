@@ -109,11 +109,11 @@ object util {
   
   object Quote {
     
-    inline def Apostrophe: String = String.asInstanceOf[String]
+    inline def Apostrophe: /* ' */ String = "'".asInstanceOf[/* ' */ String]
     
     inline def Quotationmark: typings.prettier.prettierStrings.Quotationmark = "\"".asInstanceOf[typings.prettier.prettierStrings.Quotationmark]
   }
-  type Quote = String | Quotationmark
+  type Quote = (/* ' */ String) | Quotationmark
   
   trait SkipOptions extends StObject {
     

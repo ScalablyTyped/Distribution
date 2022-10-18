@@ -29,8 +29,6 @@ object Positionals {
     
     inline def setPositionals(value: ParsedPositionals[T]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
     
-    inline def setPositionalsVarargs(value: (Any | String)*): Self = StObject.set(x, "positionals", js.Array(value*))
-    
     inline def setTokens(value: ParsedTokens[T]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     inline def setTokensVarargs(value: (ParsedOptionToken[T] | ParsedPositionalToken[T] | IndexKind)*): Self = StObject.set(x, "tokens", js.Array(value*))

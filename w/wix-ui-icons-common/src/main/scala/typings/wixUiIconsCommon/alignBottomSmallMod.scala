@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsAlignBottomSmallMod.AlignBottomSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignBottomSmallMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/AlignBottomSmall", JSImport.Default)
+  @JSImport("wix-ui-icons-common/AlignBottomSmall", JSImport.Default)
   @js.native
   val default: FC[AlignBottomSmallProps] = js.native
-  
-  trait AlignBottomSmallProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object AlignBottomSmallProps {
-    
-    inline def apply(): AlignBottomSmallProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AlignBottomSmallProps]
-    }
-    
-    extension [Self <: AlignBottomSmallProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[AlignBottomSmallProps]
   

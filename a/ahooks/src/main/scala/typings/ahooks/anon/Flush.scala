@@ -1,6 +1,6 @@
 package typings.ahooks.anon
 
-import typings.ahooks.useDebounceFnMod.noop
+import typings.ahooks.libUseThrottleFnMod.noop
 import typings.lodash.mod.DebouncedFunc
 import typings.std.Parameters
 import typings.std.ReturnType

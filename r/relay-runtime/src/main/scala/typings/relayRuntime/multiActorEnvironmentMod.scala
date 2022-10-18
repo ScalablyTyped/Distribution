@@ -1,21 +1,21 @@
 package typings.relayRuntime
 
-import typings.relayRuntime.actorIdentifierMod.ActorIdentifier
-import typings.relayRuntime.multiActorEnvironmentMultiActorEnvironmentMod.MultiActorEnvironmentConfig
+import typings.relayRuntime.libMultiActorEnvironmentActorIdentifierMod.ActorIdentifier
+import typings.relayRuntime.libMultiActorEnvironmentMultiActorEnvironmentMod.MultiActorEnvironmentConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiActorEnvironmentMod {
   
-  @JSImport("relay-runtime/lib/multi-actor-environment", JSImport.Namespace)
+  @JSImport("relay-runtime/multi-actor-environment", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("relay-runtime/lib/multi-actor-environment", "MultiActorEnvironment")
+  @JSImport("relay-runtime/multi-actor-environment", "MultiActorEnvironment")
   @js.native
   open class MultiActorEnvironment protected ()
-    extends typings.relayRuntime.multiActorEnvironmentMultiActorEnvironmentMod.MultiActorEnvironment {
+    extends typings.relayRuntime.libMultiActorEnvironmentMod.MultiActorEnvironment {
     def this(config: MultiActorEnvironmentConfig) = this()
   }
   

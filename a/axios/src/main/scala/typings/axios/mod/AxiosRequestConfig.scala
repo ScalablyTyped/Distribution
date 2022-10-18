@@ -3,7 +3,6 @@ package typings.axios.mod
 import typings.axios.anon.FormData
 import typings.axios.anon.Headers
 import typings.axios.axiosBooleans.`false`
-import typings.std.AbortSignal
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +28,9 @@ trait AxiosRequestConfig[D] extends StObject {
   
   var env: js.UndefOr[FormData] = js.undefined
   
-  var headers: js.UndefOr[AxiosRequestHeaders] = js.undefined
+  var formSerializer: js.UndefOr[FormSerializerOptions] = js.undefined
+  
+  var headers: js.UndefOr[RawAxiosRequestHeaders] = js.undefined
   
   var httpAgent: js.UndefOr[Any] = js.undefined
   
@@ -41,17 +42,19 @@ trait AxiosRequestConfig[D] extends StObject {
   
   var maxContentLength: js.UndefOr[Double] = js.undefined
   
+  var maxRate: js.UndefOr[Double | (js.Tuple2[MaxUploadRate, MaxDownloadRate])] = js.undefined
+  
   var maxRedirects: js.UndefOr[Double] = js.undefined
   
   var method: js.UndefOr[Method | String] = js.undefined
   
-  var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ Any, Unit]] = js.undefined
+  var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ AxiosProgressEvent, Unit]] = js.undefined
   
-  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ Any, Unit]] = js.undefined
+  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ AxiosProgressEvent, Unit]] = js.undefined
   
   var params: js.UndefOr[Any] = js.undefined
   
-  var paramsSerializer: js.UndefOr[js.Function1[/* params */ Any, String]] = js.undefined
+  var paramsSerializer: js.UndefOr[ParamsSerializerOptions] = js.undefined
   
   var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.undefined
   
@@ -59,11 +62,11 @@ trait AxiosRequestConfig[D] extends StObject {
   
   var responseType: js.UndefOr[ResponseType] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal] = js.undefined
+  var signal: js.UndefOr[GenericAbortSignal] = js.undefined
   
   var socketPath: js.UndefOr[String | Null] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Milliseconds] = js.undefined
   
   var timeoutErrorMessage: js.UndefOr[String] = js.undefined
   
@@ -124,7 +127,11 @@ object AxiosRequestConfig {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setHeaders(value: AxiosRequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setFormSerializer(value: FormSerializerOptions): Self = StObject.set(x, "formSerializer", value.asInstanceOf[js.Any])
+    
+    inline def setFormSerializerUndefined: Self = StObject.set(x, "formSerializer", js.undefined)
+    
+    inline def setHeaders(value: RawAxiosRequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -148,6 +155,10 @@ object AxiosRequestConfig {
     
     inline def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
     
+    inline def setMaxRate(value: Double | (js.Tuple2[MaxUploadRate, MaxDownloadRate])): Self = StObject.set(x, "maxRate", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRateUndefined: Self = StObject.set(x, "maxRate", js.undefined)
+    
     inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
     
     inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
@@ -156,17 +167,17 @@ object AxiosRequestConfig {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setOnDownloadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
+    inline def setOnDownloadProgress(value: /* progressEvent */ AxiosProgressEvent => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
     
     inline def setOnDownloadProgressUndefined: Self = StObject.set(x, "onDownloadProgress", js.undefined)
     
-    inline def setOnUploadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* progressEvent */ AxiosProgressEvent => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
     
     inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsSerializer(value: /* params */ Any => String): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction1(value))
+    inline def setParamsSerializer(value: ParamsSerializerOptions): Self = StObject.set(x, "paramsSerializer", value.asInstanceOf[js.Any])
     
     inline def setParamsSerializerUndefined: Self = StObject.set(x, "paramsSerializer", js.undefined)
     
@@ -184,7 +195,7 @@ object AxiosRequestConfig {
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: GenericAbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
@@ -194,7 +205,7 @@ object AxiosRequestConfig {
     
     inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
-    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Milliseconds): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     inline def setTimeoutErrorMessage(value: String): Self = StObject.set(x, "timeoutErrorMessage", value.asInstanceOf[js.Any])
     
@@ -204,15 +215,11 @@ object AxiosRequestConfig {
     
     inline def setTransformRequest(value: AxiosRequestTransformer | js.Array[AxiosRequestTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
     
-    inline def setTransformRequestFunction2(value: (/* data */ Any, /* headers */ js.UndefOr[AxiosRequestHeaders]) => Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
-    
     inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
     inline def setTransformRequestVarargs(value: AxiosRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value*))
     
     inline def setTransformResponse(value: AxiosResponseTransformer | js.Array[AxiosResponseTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
-    
-    inline def setTransformResponseFunction2(value: (/* data */ Any, /* headers */ js.UndefOr[AxiosResponseHeaders]) => Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction2(value))
     
     inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
     

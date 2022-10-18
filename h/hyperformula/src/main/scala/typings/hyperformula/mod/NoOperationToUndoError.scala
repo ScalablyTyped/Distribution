@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NoOperationToUndoError")
 @js.native
 open class NoOperationToUndoError ()
-  extends typings.hyperformula.errorsMod.NoOperationToUndoError
+  extends typings.hyperformula.typingsErrorsMod.NoOperationToUndoError

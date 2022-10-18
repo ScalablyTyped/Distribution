@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,9 +95,7 @@ trait ContaineranalysisGoogleDevtoolsCloudbuildV1Build extends StObject {
   
   /** Substitutions data for `Build` resource. */
   var substitutions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.ContaineranalysisGoogleDevtoolsCloudbuildV1Build & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Tags for annotation of a `Build`. These are not docker tags. */
@@ -115,9 +112,7 @@ trait ContaineranalysisGoogleDevtoolsCloudbuildV1Build extends StObject {
     * time to fetch source. * SETUPBUILD: time to set up build. If the build does not specify source or images, these keys will not be included.
     */
   var timing: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.ContaineranalysisGoogleDevtoolsCloudbuildV1Build & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan} */ js.Any
   ] = js.undefined
   
   /** Output only. Non-fatal problems encountered during the execution of the build. */
@@ -235,9 +230,7 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1Build {
     inline def setStepsVarargs(value: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setSubstitutions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.ContaineranalysisGoogleDevtoolsCloudbuildV1Build & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
@@ -253,9 +246,7 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1Build {
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setTiming(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.ContaineranalysisGoogleDevtoolsCloudbuildV1Build & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.ContaineranalysisGoogleDevtoolsCloudbuildV1TimeSpan} */ js.Any
     ): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)

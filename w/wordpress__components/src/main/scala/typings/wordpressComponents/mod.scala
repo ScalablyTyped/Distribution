@@ -9,7 +9,6 @@ import typings.react.mod.SVGProps
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
-import typings.std.Omit
 import typings.std.SVGCircleElement
 import typings.std.SVGGElement
 import typings.std.SVGPathElement
@@ -22,9 +21,9 @@ import typings.wordpressComponents.anon.Fill
 import typings.wordpressComponents.anon.`1`
 import typings.wordpressComponents.baseControlMod.BaseControl.VisualLabelProps
 import typings.wordpressComponents.guideMod.GuideProps
+import typings.wordpressComponents.higherOrderWithFocusOutsideMod.HFOComponent
+import typings.wordpressComponents.higherOrderWithFocusReturnMod.WFROptions
 import typings.wordpressComponents.toolbarGroupMod.ToolbarGroupProps
-import typings.wordpressComponents.withFocusOutsideMod.HFOComponent
-import typings.wordpressComponents.withFocusReturnMod.WFROptions
 import typings.wordpressComponents.wordpressComponentsStrings.`object`
 import typings.wordpressComponents.wordpressComponentsStrings.`var`
 import typings.wordpressComponents.wordpressComponentsStrings.a
@@ -57,7 +56,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.colgroup
 import typings.wordpressComponents.wordpressComponentsStrings.data
 import typings.wordpressComponents.wordpressComponentsStrings.datalist
 import typings.wordpressComponents.wordpressComponentsStrings.dd
-import typings.wordpressComponents.wordpressComponentsStrings.debouncedSpeak
 import typings.wordpressComponents.wordpressComponentsStrings.defs
 import typings.wordpressComponents.wordpressComponentsStrings.del
 import typings.wordpressComponents.wordpressComponentsStrings.desc
@@ -142,9 +140,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.mpath
 import typings.wordpressComponents.wordpressComponentsStrings.nav
 import typings.wordpressComponents.wordpressComponentsStrings.noindex
 import typings.wordpressComponents.wordpressComponentsStrings.noscript
-import typings.wordpressComponents.wordpressComponentsStrings.noticeList
-import typings.wordpressComponents.wordpressComponentsStrings.noticeOperations
-import typings.wordpressComponents.wordpressComponentsStrings.noticeUI
 import typings.wordpressComponents.wordpressComponentsStrings.ol
 import typings.wordpressComponents.wordpressComponentsStrings.optgroup
 import typings.wordpressComponents.wordpressComponentsStrings.option
@@ -173,7 +168,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.slot
 import typings.wordpressComponents.wordpressComponentsStrings.small
 import typings.wordpressComponents.wordpressComponentsStrings.source
 import typings.wordpressComponents.wordpressComponentsStrings.span
-import typings.wordpressComponents.wordpressComponentsStrings.speak
 import typings.wordpressComponents.wordpressComponentsStrings.stop
 import typings.wordpressComponents.wordpressComponentsStrings.strong
 import typings.wordpressComponents.wordpressComponentsStrings.style
@@ -258,35 +252,35 @@ object mod {
   
   // tslint:disable-next-line no-unnecessary-generics
   inline def CardBody(
-    props: typings.wordpressComponents.bodyMod.CardBody.Props[
+    props: typings.wordpressComponents.cardBodyMod.CardBody.Props[
       a | abbr | address | animate | animateMotion | animateTransform | area | article | aside | audio | b | base | bdi | bdo | big | blockquote | body | br | button | canvas | caption | circle | cite | clipPath | code | col | colgroup | data | datalist | dd | defs | del | desc | details | dfn | dialog | div | dl | dt | ellipse | em | embed | feBlend | feColorMatrix | feComponentTransfer | feComposite | feConvolveMatrix | feDiffuseLighting | feDisplacementMap | feDistantLight | feDropShadow | feFlood | feFuncA | feFuncB | feFuncG | feFuncR | feGaussianBlur | feImage | feMerge | feMergeNode | feMorphology | feOffset | fePointLight | feSpecularLighting | feSpotLight | feTile | feTurbulence | fieldset | figcaption | figure | filter | footer | foreignObject | form | g | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | image | img | input | ins | kbd | keygen | label | legend | li | line | linearGradient | link | main | map | mark | marker | mask | menu | menuitem | meta | metadata | meter | mpath | nav | noindex | noscript | `object` | ol | optgroup | option | output | p | param | path | pattern | picture | polygon | polyline | pre | progress | q | radialGradient | rect | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | stop | strong | style | sub | summary | sup | svg | switch | symbol | table | tbody | td | template | text | textPath | textarea | tfoot | th | thead | time | title | tr | track | tspan | u | ul | use | `var` | video | view | wbr | webview
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardBody")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable:no-unnecessary-generics
   inline def CardDivider(
-    props: typings.wordpressComponents.dividerMod.CardDivider.Props[
+    props: typings.wordpressComponents.cardDividerMod.CardDivider.Props[
       a | abbr | address | animate | animateMotion | animateTransform | area | article | aside | audio | b | base | bdi | bdo | big | blockquote | body | br | button | canvas | caption | circle | cite | clipPath | code | col | colgroup | data | datalist | dd | defs | del | desc | details | dfn | dialog | div | dl | dt | ellipse | em | embed | feBlend | feColorMatrix | feComponentTransfer | feComposite | feConvolveMatrix | feDiffuseLighting | feDisplacementMap | feDistantLight | feDropShadow | feFlood | feFuncA | feFuncB | feFuncG | feFuncR | feGaussianBlur | feImage | feMerge | feMergeNode | feMorphology | feOffset | fePointLight | feSpecularLighting | feSpotLight | feTile | feTurbulence | fieldset | figcaption | figure | filter | footer | foreignObject | form | g | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | image | img | input | ins | kbd | keygen | label | legend | li | line | linearGradient | link | main | map | mark | marker | mask | menu | menuitem | meta | metadata | meter | mpath | nav | noindex | noscript | `object` | ol | optgroup | option | output | p | param | path | pattern | picture | polygon | polyline | pre | progress | q | radialGradient | rect | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | stop | strong | style | sub | summary | sup | svg | switch | symbol | table | tbody | td | template | text | textPath | textarea | tfoot | th | thead | time | title | tr | track | tspan | u | ul | use | `var` | video | view | wbr | webview
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardDivider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable-next-line no-unnecessary-generics
   inline def CardFooter(
-    props: typings.wordpressComponents.footerMod.CardFooter.Props[
+    props: typings.wordpressComponents.cardFooterMod.CardFooter.Props[
       a | abbr | address | animate | animateMotion | animateTransform | area | article | aside | audio | b | base | bdi | bdo | big | blockquote | body | br | button | canvas | caption | circle | cite | clipPath | code | col | colgroup | data | datalist | dd | defs | del | desc | details | dfn | dialog | div | dl | dt | ellipse | em | embed | feBlend | feColorMatrix | feComponentTransfer | feComposite | feConvolveMatrix | feDiffuseLighting | feDisplacementMap | feDistantLight | feDropShadow | feFlood | feFuncA | feFuncB | feFuncG | feFuncR | feGaussianBlur | feImage | feMerge | feMergeNode | feMorphology | feOffset | fePointLight | feSpecularLighting | feSpotLight | feTile | feTurbulence | fieldset | figcaption | figure | filter | footer | foreignObject | form | g | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | image | img | input | ins | kbd | keygen | label | legend | li | line | linearGradient | link | main | map | mark | marker | mask | menu | menuitem | meta | metadata | meter | mpath | nav | noindex | noscript | `object` | ol | optgroup | option | output | p | param | path | pattern | picture | polygon | polyline | pre | progress | q | radialGradient | rect | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | stop | strong | style | sub | summary | sup | svg | switch | symbol | table | tbody | td | template | text | textPath | textarea | tfoot | th | thead | time | title | tr | track | tspan | u | ul | use | `var` | video | view | wbr | webview
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardFooter")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable-next-line no-unnecessary-generics
   inline def CardHeader(
-    props: typings.wordpressComponents.headerMod.CardHeader.Props[
+    props: typings.wordpressComponents.cardHeaderMod.CardHeader.Props[
       a | abbr | address | animate | animateMotion | animateTransform | area | article | aside | audio | b | base | bdi | bdo | big | blockquote | body | br | button | canvas | caption | circle | cite | clipPath | code | col | colgroup | data | datalist | dd | defs | del | desc | details | dfn | dialog | div | dl | dt | ellipse | em | embed | feBlend | feColorMatrix | feComponentTransfer | feComposite | feConvolveMatrix | feDiffuseLighting | feDisplacementMap | feDistantLight | feDropShadow | feFlood | feFuncA | feFuncB | feFuncG | feFuncR | feGaussianBlur | feImage | feMerge | feMergeNode | feMorphology | feOffset | fePointLight | feSpecularLighting | feSpotLight | feTile | feTurbulence | fieldset | figcaption | figure | filter | footer | foreignObject | form | g | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | image | img | input | ins | kbd | keygen | label | legend | li | line | linearGradient | link | main | map | mark | marker | mask | menu | menuitem | meta | metadata | meter | mpath | nav | noindex | noscript | `object` | ol | optgroup | option | output | p | param | path | pattern | picture | polygon | polyline | pre | progress | q | radialGradient | rect | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | stop | strong | style | sub | summary | sup | svg | switch | symbol | table | tbody | td | template | text | textPath | textarea | tfoot | th | thead | time | title | tr | track | tspan | u | ul | use | `var` | video | view | wbr | webview
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardHeader")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   // tslint:disable-next-line no-unnecessary-generics
   inline def CardMedia(
-    props: typings.wordpressComponents.mediaMod.CardMedia.Props[
+    props: typings.wordpressComponents.cardMediaMod.CardMedia.Props[
       a | abbr | address | animate | animateMotion | animateTransform | area | article | aside | audio | b | base | bdi | bdo | big | blockquote | body | br | button | canvas | caption | circle | cite | clipPath | code | col | colgroup | data | datalist | dd | defs | del | desc | details | dfn | dialog | div | dl | dt | ellipse | em | embed | feBlend | feColorMatrix | feComponentTransfer | feComposite | feConvolveMatrix | feDiffuseLighting | feDisplacementMap | feDistantLight | feDropShadow | feFlood | feFuncA | feFuncB | feFuncG | feFuncR | feGaussianBlur | feImage | feMerge | feMergeNode | feMorphology | feOffset | fePointLight | feSpecularLighting | feSpotLight | feTile | feTurbulence | fieldset | figcaption | figure | filter | footer | foreignObject | form | g | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | image | img | input | ins | kbd | keygen | label | legend | li | line | linearGradient | link | main | map | mark | marker | mask | menu | menuitem | meta | metadata | meter | mpath | nav | noindex | noscript | `object` | ol | optgroup | option | output | p | param | path | pattern | picture | polygon | polyline | pre | progress | q | radialGradient | rect | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | stop | strong | style | sub | summary | sup | svg | switch | symbol | table | tbody | td | template | text | textPath | textarea | tfoot | th | thead | time | title | tr | track | tspan | u | ul | use | `var` | video | view | wbr | webview
     ]
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CardMedia")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -329,7 +323,7 @@ object mod {
   
   @JSImport("@wordpress/components", "DatePicker")
   @js.native
-  val DatePicker: ComponentType[typings.wordpressComponents.dateMod.DatePicker.Props] = js.native
+  val DatePicker: ComponentType[typings.wordpressComponents.dateTimeDateMod.DatePicker.Props] = js.native
   
   @JSImport("@wordpress/components", "DateTimePicker")
   @js.native
@@ -373,7 +367,7 @@ object mod {
   @js.native
   val ExternalLink: ComponentType[typings.wordpressComponents.externalLinkMod.ExternalLink.Props] = js.native
   
-  inline def Fill(props: typings.wordpressComponents.fillMod.Fill.Props): ReactPortal = ^.asInstanceOf[js.Dynamic].applyDynamic("Fill")(props.asInstanceOf[js.Any]).asInstanceOf[ReactPortal]
+  inline def Fill(props: typings.wordpressComponents.slotFillFillMod.Fill.Props): ReactPortal = ^.asInstanceOf[js.Dynamic].applyDynamic("Fill")(props.asInstanceOf[js.Any]).asInstanceOf[ReactPortal]
   
   @JSImport("@wordpress/components", "Flex")
   @js.native
@@ -381,11 +375,11 @@ object mod {
   
   @JSImport("@wordpress/components", "FlexBlock")
   @js.native
-  val FlexBlock: ComponentType[typings.wordpressComponents.blockMod.FlexBlock.Props] = js.native
+  val FlexBlock: ComponentType[typings.wordpressComponents.flexBlockMod.FlexBlock.Props] = js.native
   
   @JSImport("@wordpress/components", "FlexItem")
   @js.native
-  val FlexItem: ComponentType[typings.wordpressComponents.itemMod.FlexItem.Props] = js.native
+  val FlexItem: ComponentType[typings.wordpressComponents.flexItemMod.FlexItem.Props] = js.native
   
   @JSImport("@wordpress/components", "FocalPointPicker")
   @js.native
@@ -466,7 +460,7 @@ object mod {
   
   @JSImport("@wordpress/components", "NoticeList")
   @js.native
-  val NoticeList: ComponentType[typings.wordpressComponents.listMod.NoticeList.Props] = js.native
+  val NoticeList: ComponentType[typings.wordpressComponents.noticeListMod.NoticeList.Props] = js.native
   
   @JSImport("@wordpress/components", "Panel")
   @js.native
@@ -482,7 +476,7 @@ object mod {
   
   @JSImport("@wordpress/components", "PanelRow")
   @js.native
-  val PanelRow: ComponentType[typings.wordpressComponents.rowMod.PanelRow.Props] = js.native
+  val PanelRow: ComponentType[typings.wordpressComponents.panelRowMod.PanelRow.Props] = js.native
   
   @JSImport("@wordpress/components", "Path")
   @js.native
@@ -542,7 +536,7 @@ object mod {
   
   @JSImport("@wordpress/components", "Slot")
   @js.native
-  val Slot: ComponentType[typings.wordpressComponents.slotMod.Slot.Props] = js.native
+  val Slot: ComponentType[typings.wordpressComponents.slotFillSlotMod.Slot.Props] = js.native
   
   @JSImport("@wordpress/components", "SlotFillProvider")
   @js.native
@@ -608,34 +602,46 @@ object mod {
   
   inline def createSlotFill(name: String): Fill = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlotFill")(name.asInstanceOf[js.Any]).asInstanceOf[Fill]
   
-  inline def navigateRegions[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateRegions")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
+  inline def navigateRegions[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateRegions")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any]
   
-  inline def withConstrainedTabbing[T](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConstrainedTabbing")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
+  inline def withConstrainedTabbing[T](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withConstrainedTabbing")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any]
   
   inline def withFallbackStyles[FSP](
     mapNodeToProps: js.Function2[/* parentNode */ HTMLDivElement, /* ownProps */ StringDictionary[Any], FSP]
   ): js.Function1[
     /* wrappedComponent */ ComponentType[Any], 
-    ComponentType[Omit[Any, /* keyof FSP */ String]]
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof FSP>> : never */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFallbackStyles")(mapNodeToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* wrappedComponent */ ComponentType[Any], 
-    ComponentType[Omit[Any, /* keyof FSP */ String]]
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer V> ? react.react.ComponentType<std.Omit<V, keyof FSP>> : never */ js.Any
   ]]
   
   // prettier-ignore
-  inline def withFilters(hookName: String): js.Function1[/* wrapped */ Any, ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ Any, ComponentType[Any]]]
+  inline def withFilters(hookName: String): js.Function1[
+    /* wrapped */ Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: any extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* wrapped */ Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: any extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
+  ]]
   
   inline def withFilters_P[P](hookName: String): js.Function1[/* wrapped */ ComponentType[Any], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFilters")(hookName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[Any], ComponentType[P]]]
   
-  inline def withFocusOutside[T /* <: HFOComponent[Any, Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusOutside")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
+  inline def withFocusOutside[T /* <: HFOComponent[Any, Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/components.@wordpress/components/higher-order/with-focus-outside.HFOComponent<infer U, any> ? react.react.ComponentType<U> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusOutside")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/components.@wordpress/components/higher-order/with-focus-outside.HFOComponent<infer U, any> ? react.react.ComponentType<U> : never */ js.Any]
   
   // prettier-ignore
-  inline def withFocusReturn(options: WFROptions): js.Function1[/* wrapped */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[Any], ComponentType[Any]]]
+  inline def withFocusReturn(options: WFROptions): js.Function1[
+    /* wrapped */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* wrapped */ ComponentType[Any], 
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentType<any> extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any
+  ]]
   // prettier-ignore
-  inline def withFocusReturn[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
+  inline def withFocusReturn[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withFocusReturn")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<U> : never */ js.Any]
   
   // prettier-ignore
-  inline def withNotices[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNotices")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, noticeList | noticeOperations | noticeUI]]]
+  inline def withNotices[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'noticeList' | 'noticeOperations' | 'noticeUI'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withNotices")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'noticeList' | 'noticeOperations' | 'noticeUI'>> : never */ js.Any]
   
-  inline def withSpokenMessages[T /* <: ComponentType[Any] */](wrapped: T): ComponentType[Omit[Any, speak | debouncedSpeak]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSpokenMessages")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[Any, speak | debouncedSpeak]]]
+  inline def withSpokenMessages[T /* <: ComponentType[Any] */](wrapped: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'speak' | 'debouncedSpeak'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withSpokenMessages")(wrapped.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'speak' | 'debouncedSpeak'>> : never */ js.Any]
 }

@@ -2,7 +2,6 @@ package typings.firebaseUtil
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.firebaseUtil.anon.`0`
 import typings.firebaseUtil.firebaseUtilStrings.anonymous
 import typings.std.Error
@@ -71,16 +70,12 @@ object mod {
   
   @JSImport("@firebase/util", "ErrorFactory")
   @js.native
-  open class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util.ErrorData}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory & TopLevel[Any] */] protected () extends StObject {
+  open class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util.ErrorData} */ js.Any */] protected () extends StObject {
     def this(service: String, serviceName: String, errors: ErrorMap[ErrorCode]) = this()
     
     def create[K /* <: ErrorCode */](
       code: K,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[
-          Any | (/* import warning: importer.ImportType#apply Failed type conversion: ErrorParams[K] */ js.Any)
-        ]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: /* import warning: importer.ImportType#apply Failed type conversion: K extends keyof ErrorParams ? [ErrorParams[K]] : [] */ js.Any
     ): FirebaseError = js.native
     
     /* private */ val errors: Any = js.native
@@ -242,6 +237,14 @@ object mod {
   
   inline def extractQuerystring(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractQuerystring")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def getDefaultAppConfig(): js.UndefOr[Record[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAppConfig")().asInstanceOf[js.UndefOr[Record[String, String]]]
+  
+  inline def getDefaultEmulatorHost(productName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHost")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def getDefaultEmulatorHostnameAndPort(productName: String): js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHostnameAndPort")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]]]
+  
+  inline def getExperimentalSetting[T /* <: ExperimentalKey */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExperimentalSetting")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any]
+  
   inline def getGlobal(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[Any]
   
   inline def getModularInstance[ExpService](service: ExpService): ExpService = ^.asInstanceOf[js.Dynamic].applyDynamic("getModularInstance")(service.asInstanceOf[js.Any]).asInstanceOf[ExpService]
@@ -284,40 +287,24 @@ object mod {
   inline def jsonEval(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonEval")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def map[K /* <: String */, V, U](
-    obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any],
+    obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ js.Any,
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any], 
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ /* obj */ js.Any, 
       U
     ]
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any]
   inline def map[K /* <: String */, V, U](
-    obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any],
+    obj: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ js.Any,
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: V}
-    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any], 
+      /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ /* obj */ js.Any, 
       U
     ],
     contextObj: Any
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], contextObj.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[Any]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], contextObj.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: U} */ js.Any]
   
   inline def ordinal(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(i.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -487,15 +474,72 @@ object mod {
   
   type ErrorFn = js.Function1[/* error */ js.Error, Unit]
   
-  type ErrorMap[ErrorCode /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in ErrorCode ]: string}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorMap & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {readonly [ K in ErrorCode ]: string}
+    }}}
+    */
+  @js.native
+  trait ErrorMap[ErrorCode /* <: String */] extends StObject
   
   type Executor[T] = js.Function1[/* observer */ Observer[T], Unit]
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseUtil.firebaseUtilStrings.authTokenSyncURL
+    - typings.firebaseUtil.firebaseUtilStrings.authIdTokenMaxAge
+  */
+  trait ExperimentalKey extends StObject
+  object ExperimentalKey {
+    
+    inline def authIdTokenMaxAge: typings.firebaseUtil.firebaseUtilStrings.authIdTokenMaxAge = "authIdTokenMaxAge".asInstanceOf[typings.firebaseUtil.firebaseUtilStrings.authIdTokenMaxAge]
+    
+    inline def authTokenSyncURL: typings.firebaseUtil.firebaseUtilStrings.authTokenSyncURL = "authTokenSyncURL".asInstanceOf[typings.firebaseUtil.firebaseUtilStrings.authTokenSyncURL]
+  }
+  
+  trait FirebaseDefaults
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var _authIdTokenMaxAge: js.UndefOr[Double] = js.undefined
+    
+    var _authTokenSyncURL: js.UndefOr[String] = js.undefined
+    
+    var config: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var emulatorHosts: js.UndefOr[Record[String, String]] = js.undefined
+  }
+  object FirebaseDefaults {
+    
+    inline def apply(): FirebaseDefaults = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FirebaseDefaults]
+    }
+    
+    extension [Self <: FirebaseDefaults](x: Self) {
+      
+      inline def setConfig(value: Record[String, String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      
+      inline def setEmulatorHosts(value: Record[String, String]): Self = StObject.set(x, "emulatorHosts", value.asInstanceOf[js.Any])
+      
+      inline def setEmulatorHostsUndefined: Self = StObject.set(x, "emulatorHosts", js.undefined)
+      
+      inline def set_authIdTokenMaxAge(value: Double): Self = StObject.set(x, "_authIdTokenMaxAge", value.asInstanceOf[js.Any])
+      
+      inline def set_authIdTokenMaxAgeUndefined: Self = StObject.set(x, "_authIdTokenMaxAge", js.undefined)
+      
+      inline def set_authTokenSyncURL(value: String): Self = StObject.set(x, "_authTokenSyncURL", value.asInstanceOf[js.Any])
+      
+      inline def set_authTokenSyncURLUndefined: Self = StObject.set(x, "_authTokenSyncURL", js.undefined)
+    }
+  }
+  
   trait FirebaseIdToken
     extends StObject
-       with /* claim */ StringDictionary[Any] {
+       with /* key */ StringDictionary[Any] {
     
     var aud: String
     

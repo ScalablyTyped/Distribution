@@ -26,6 +26,11 @@ object anon {
     var hosted_domain: js.UndefOr[String] = js.undefined
     
     /**
+      * Arbitrary value. If present, allows keys generated after July 29th, 2022 to work with the old (deprecated) api.
+      */
+    var plugin_name: js.UndefOr[String] = js.undefined
+    
+    /**
       * The scopes to request, as a space-delimited string.
       */
     var scope: js.UndefOr[String] = js.undefined
@@ -56,6 +61,10 @@ object anon {
       inline def setHosted_domain(value: String): Self = StObject.set(x, "hosted_domain", value.asInstanceOf[js.Any])
       
       inline def setHosted_domainUndefined: Self = StObject.set(x, "hosted_domain", js.undefined)
+      
+      inline def setPlugin_name(value: String): Self = StObject.set(x, "plugin_name", value.asInstanceOf[js.Any])
+      
+      inline def setPlugin_nameUndefined: Self = StObject.set(x, "plugin_name", js.undefined)
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

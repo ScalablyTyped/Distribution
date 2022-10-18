@@ -16,7 +16,7 @@ trait Error extends StObject {
   /** Inner error, if applicable. */
   var innerError: Error
   
-  /** The error message passed through from the host Office application. */
+  /** The error message passed through from the Office application. */
   var message: String
   
   /** Error name: "OfficeExtension.Error".*/

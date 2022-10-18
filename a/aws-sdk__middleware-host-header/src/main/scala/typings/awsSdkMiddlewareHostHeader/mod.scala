@@ -1,10 +1,10 @@
 package typings.awsSdkMiddlewareHostHeader
 
-import typings.awsSdkTypes.middlewareMod.AbsoluteLocation
-import typings.awsSdkTypes.middlewareMod.BuildHandlerOptions
-import typings.awsSdkTypes.middlewareMod.BuildMiddleware
-import typings.awsSdkTypes.middlewareMod.Pluggable
-import typings.awsSdkTypes.transferMod.RequestHandler
+import typings.awsSdkTypes.distTypesMiddlewareMod.AbsoluteLocation
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildHandlerOptions
+import typings.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import typings.awsSdkTypes.distTypesTransferMod.RequestHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

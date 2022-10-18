@@ -1,16 +1,16 @@
 package typings.postcss
 
-import typings.postcss.atRuleMod.AtRuleRaws
-import typings.postcss.commentMod.CommentRaws
-import typings.postcss.declarationMod.DeclarationRaws
+import typings.postcss.libAtRuleMod.AtRuleRaws
+import typings.postcss.libCommentMod.CommentRaws
+import typings.postcss.libDeclarationMod.DeclarationRaws
+import typings.postcss.libNodeMod.ChildNode
+import typings.postcss.libNodeMod.ChildProps
+import typings.postcss.libNodeMod.Source
+import typings.postcss.libResultMod.default
+import typings.postcss.libRuleMod.RuleRaws
 import typings.postcss.mod.SourceMapOptions
 import typings.postcss.mod.TransformCallback
 import typings.postcss.mod._AcceptedPlugin
-import typings.postcss.nodeMod.ChildNode
-import typings.postcss.nodeMod.ChildProps
-import typings.postcss.nodeMod.Source
-import typings.postcss.resultMod.default
-import typings.postcss.ruleMod.RuleRaws
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -318,21 +318,21 @@ object anon {
     extends StObject
        with _AcceptedPlugin {
     
-    var postcss: TransformCallback | typings.postcss.processorMod.default
+    var postcss: TransformCallback | typings.postcss.libProcessorMod.default
   }
   object Postcss {
     
-    inline def apply(postcss: TransformCallback | typings.postcss.processorMod.default): Postcss = {
+    inline def apply(postcss: TransformCallback | typings.postcss.libProcessorMod.default): Postcss = {
       val __obj = js.Dynamic.literal(postcss = postcss.asInstanceOf[js.Any])
       __obj.asInstanceOf[Postcss]
     }
     
     extension [Self <: Postcss](x: Self) {
       
-      inline def setPostcss(value: TransformCallback | typings.postcss.processorMod.default): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
+      inline def setPostcss(value: TransformCallback | typings.postcss.libProcessorMod.default): Self = StObject.set(x, "postcss", value.asInstanceOf[js.Any])
       
       inline def setPostcssFunction2(
-        value: (/* root */ typings.postcss.rootMod.default, /* result */ default) => js.Promise[Unit] | Unit
+        value: (/* root */ typings.postcss.libRootMod.default, /* result */ default) => js.Promise[Unit] | Unit
       ): Self = StObject.set(x, "postcss", js.Any.fromFunction2(value))
     }
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("watson-developer-cloud/tone-analyzer/v3-generated", JSImport.Namespace)
 @js.native
-class ^ protected () extends ToneAnalyzerV3 {
+open class ^ protected () extends ToneAnalyzerV3 {
   /**
     * Construct a ToneAnalyzerV3 object.
     *

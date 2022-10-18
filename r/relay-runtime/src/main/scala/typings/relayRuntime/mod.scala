@@ -1,7 +1,6 @@
 package typings.relayRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.relayRuntime.anon.CLIENTMUTATIONID
 import typings.relayRuntime.anon.ConnectionPathInFragmentData
 import typings.relayRuntime.anon.FetchPolicy
@@ -11,42 +10,69 @@ import typings.relayRuntime.anon.PendingOperations
 import typings.relayRuntime.anon.Size
 import typings.relayRuntime.anon.Stop
 import typings.relayRuntime.anon.TypeofRelayResolverFragme
-import typings.relayRuntime.applyOptimisticMutationMod.OptimisticMutationConfig
-import typings.relayRuntime.commitMutationMod.MutationConfig
-import typings.relayRuntime.commitMutationMod.MutationParameters
-import typings.relayRuntime.createPayloadFor3DFieldMod.Local3DPayload
-import typings.relayRuntime.getPaginationVariablesMod.Direction
-import typings.relayRuntime.getRequestIdentifierMod.RequestIdentifier
-import typings.relayRuntime.jsresourcereferenceMod.JSResourceReference
-import typings.relayRuntime.normalizationNodeMod.NormalizationField
-import typings.relayRuntime.normalizationNodeMod.NormalizationHandle
-import typings.relayRuntime.normalizationNodeMod.NormalizationSelectableNode
-import typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation
-import typings.relayRuntime.readInlineDataMod.KeyType
-import typings.relayRuntime.readInlineDataMod.KeyTypeData
-import typings.relayRuntime.readerNodeMod.ReaderField
-import typings.relayRuntime.readerNodeMod.ReaderFragment
-import typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment
-import typings.relayRuntime.readerNodeMod.ReaderPaginationFragment
-import typings.relayRuntime.readerNodeMod.ReaderPaginationMetadata
-import typings.relayRuntime.readerNodeMod.ReaderRefetchableFragment
-import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
-import typings.relayRuntime.relayConcreteNodeMod.ProvidedVariablesType
-import typings.relayRuntime.relayConcreteNodeMod.RequestParameters
-import typings.relayRuntime.relayFeatureFlagsMod.FeatureFlags
-import typings.relayRuntime.relayModernEnvironmentMod.EnvironmentConfig
-import typings.relayRuntime.relayModernEnvironmentMod.default
-import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
-import typings.relayRuntime.relayModernRecordMod.RelayModernRecord
-import typings.relayRuntime.relayNetworkTypesMod.FetchFunction
-import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
-import typings.relayRuntime.relayNetworkTypesMod.SubscribeFunction
-import typings.relayRuntime.relayObservableMod.ObservableFromValue
-import typings.relayRuntime.relayObservableMod.RelayObservable
-import typings.relayRuntime.relayObservableMod.Source
-import typings.relayRuntime.relayProfilerMod.ProfileHandler
-import typings.relayRuntime.relayRecordSourceMod.RelayRecordSource
-import typings.relayRuntime.relayReplaySubjectMod.RelayReplaySubject
+import typings.relayRuntime.libMutationsApplyOptimisticMutationMod.OptimisticMutationConfig
+import typings.relayRuntime.libMutationsCommitMutationMod.MutationConfig
+import typings.relayRuntime.libMutationsCommitMutationMod.MutationParameters
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.FetchFunction
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.GraphQLResponse
+import typings.relayRuntime.libNetworkRelayNetworkTypesMod.SubscribeFunction
+import typings.relayRuntime.libNetworkRelayObservableMod.ObservableFromValue
+import typings.relayRuntime.libNetworkRelayObservableMod.RelayObservable
+import typings.relayRuntime.libNetworkRelayObservableMod.Source
+import typings.relayRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typings.relayRuntime.libStoreReadInlineDataMod.KeyType
+import typings.relayRuntime.libStoreReadInlineDataMod.KeyTypeData
+import typings.relayRuntime.libStoreRelayModernEnvironmentMod.EnvironmentConfig
+import typings.relayRuntime.libStoreRelayModernEnvironmentMod.default
+import typings.relayRuntime.libStoreRelayModernRecordMod.RelayModernRecord
+import typings.relayRuntime.libStoreRelayRecordSourceMod.RelayRecordSource
+import typings.relayRuntime.libStoreRelayStoreTypesMod.FragmentMap
+import typings.relayRuntime.libStoreRelayStoreTypesMod.FragmentSpecResolver
+import typings.relayRuntime.libStoreRelayStoreTypesMod.HandleFieldPayload
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Handler
+import typings.relayRuntime.libStoreRelayStoreTypesMod.MissingFieldHandler
+import typings.relayRuntime.libStoreRelayStoreTypesMod.MissingRequiredFields
+import typings.relayRuntime.libStoreRelayStoreTypesMod.MutableRecordSource
+import typings.relayRuntime.libStoreRelayStoreTypesMod.NormalizationSelector
+import typings.relayRuntime.libStoreRelayStoreTypesMod.OperationDescriptor
+import typings.relayRuntime.libStoreRelayStoreTypesMod.PluralReaderSelector
+import typings.relayRuntime.libStoreRelayStoreTypesMod.Props
+import typings.relayRuntime.libStoreRelayStoreTypesMod.ReadOnlyRecordProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.ReaderSelector
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordMap
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordSourceProxy
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RelayContext
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RelayResolverErrors
+import typings.relayRuntime.libStoreRelayStoreTypesMod.RequestDescriptor
+import typings.relayRuntime.libStoreRelayStoreTypesMod.SingularReaderSelector
+import typings.relayRuntime.libStoreRelayStoreTypesMod.StoreUpdater
+import typings.relayRuntime.libSubscriptionRequestSubscriptionMod.GraphQLSubscriptionConfig
+import typings.relayRuntime.libUtilCreatePayloadFor3DFieldMod.Local3DPayload
+import typings.relayRuntime.libUtilGetPaginationVariablesMod.Direction
+import typings.relayRuntime.libUtilGetRequestIdentifierMod.RequestIdentifier
+import typings.relayRuntime.libUtilJsresourcereferenceMod.JSResourceReference
+import typings.relayRuntime.libUtilNormalizationNodeMod.NormalizationField
+import typings.relayRuntime.libUtilNormalizationNodeMod.NormalizationHandle
+import typings.relayRuntime.libUtilNormalizationNodeMod.NormalizationSelectableNode
+import typings.relayRuntime.libUtilNormalizationNodeMod.NormalizationSplitOperation
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderField
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderPaginationFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderPaginationMetadata
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderRefetchableFragment
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.ProvidedVariablesType
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.RequestParameters
+import typings.relayRuntime.libUtilRelayFeatureFlagsMod.FeatureFlags
+import typings.relayRuntime.libUtilRelayProfilerMod.ProfileHandler
+import typings.relayRuntime.libUtilRelayReplaySubjectMod.RelayReplaySubject
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayRuntimeStrings.ActorChange
 import typings.relayRuntime.relayRuntimeStrings.AliasedFragmentSpread
 import typings.relayRuntime.relayRuntimeStrings.AliasedInlineFragmentSpread
@@ -83,33 +109,6 @@ import typings.relayRuntime.relayRuntimeStrings.Stream
 import typings.relayRuntime.relayRuntimeStrings.TypeDiscriminator
 import typings.relayRuntime.relayRuntimeStrings.UpdatableQuery
 import typings.relayRuntime.relayRuntimeStrings.Variable
-import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
-import typings.relayRuntime.relayRuntimeTypesMod.DataID
-import typings.relayRuntime.relayRuntimeTypesMod.Disposable
-import typings.relayRuntime.relayRuntimeTypesMod.OperationType
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
-import typings.relayRuntime.relayStoreTypesMod.FragmentMap
-import typings.relayRuntime.relayStoreTypesMod.FragmentSpecResolver
-import typings.relayRuntime.relayStoreTypesMod.HandleFieldPayload
-import typings.relayRuntime.relayStoreTypesMod.Handler
-import typings.relayRuntime.relayStoreTypesMod.MissingFieldHandler
-import typings.relayRuntime.relayStoreTypesMod.MissingRequiredFields
-import typings.relayRuntime.relayStoreTypesMod.MutableRecordSource
-import typings.relayRuntime.relayStoreTypesMod.NormalizationSelector
-import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
-import typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector
-import typings.relayRuntime.relayStoreTypesMod.Props
-import typings.relayRuntime.relayStoreTypesMod.ReadOnlyRecordProxy
-import typings.relayRuntime.relayStoreTypesMod.ReaderSelector
-import typings.relayRuntime.relayStoreTypesMod.RecordMap
-import typings.relayRuntime.relayStoreTypesMod.RecordProxy
-import typings.relayRuntime.relayStoreTypesMod.RecordSourceProxy
-import typings.relayRuntime.relayStoreTypesMod.RelayContext
-import typings.relayRuntime.relayStoreTypesMod.RelayResolverErrors
-import typings.relayRuntime.relayStoreTypesMod.RequestDescriptor
-import typings.relayRuntime.relayStoreTypesMod.SingularReaderSelector
-import typings.relayRuntime.relayStoreTypesMod.StoreUpdater
-import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -229,8 +228,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(fetchFn: FetchFunction): typings.relayRuntime.relayNetworkTypesMod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.Network]
-    inline def create(fetchFn: FetchFunction, subscribeFn: SubscribeFunction): typings.relayRuntime.relayNetworkTypesMod.Network = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any], subscribeFn.asInstanceOf[js.Any])).asInstanceOf[typings.relayRuntime.relayNetworkTypesMod.Network]
+    inline def create(fetchFn: FetchFunction): typings.relayRuntime.libNetworkRelayNetworkTypesMod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[typings.relayRuntime.libNetworkRelayNetworkTypesMod.Network]
+    inline def create(fetchFn: FetchFunction, subscribeFn: SubscribeFunction): typings.relayRuntime.libNetworkRelayNetworkTypesMod.Network = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fetchFn.asInstanceOf[js.Any], subscribeFn.asInstanceOf[js.Any])).asInstanceOf[typings.relayRuntime.libNetworkRelayNetworkTypesMod.Network]
   }
   
   @JSImport("relay-runtime", "Observable")
@@ -285,12 +284,12 @@ object mod {
   @JSImport("relay-runtime", "PreloadableQueryRegistry")
   @js.native
   open class PreloadableQueryRegistry ()
-    extends typings.relayRuntime.preloadableQueryRegistryMod.default
+    extends typings.relayRuntime.libUtilPreloadableQueryRegistryMod.default
   
   @JSImport("relay-runtime", "QueryResponseCache")
   @js.native
   open class QueryResponseCache protected ()
-    extends typings.relayRuntime.relayQueryResponseCacheMod.default {
+    extends typings.relayRuntime.libNetworkRelayQueryResponseCacheMod.default {
     def this(config: Size) = this()
   }
   
@@ -554,7 +553,7 @@ object mod {
       *   RelayProfiler.attachAggregateHandler('render', ...);
       *
       */
-    inline def attachAggregateHandler(name: String, handler: typings.relayRuntime.relayProfilerMod.Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def attachAggregateHandler(name: String, handler: typings.relayRuntime.libUtilRelayProfilerMod.Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Attaches a handler to profiles with the supplied name. You can also
@@ -565,7 +564,7 @@ object mod {
     /**
       * Detaches a handler attached via `attachAggregateHandler`.
       */
-    inline def detachAggregateHandler(name: String, handler: typings.relayRuntime.relayProfilerMod.Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def detachAggregateHandler(name: String, handler: typings.relayRuntime.libUtilRelayProfilerMod.Handler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachAggregateHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detaches a handler attached via `attachProfileHandler`.
@@ -627,7 +626,7 @@ object mod {
   @JSImport("relay-runtime", "Store")
   @js.native
   open class Store protected ()
-    extends typings.relayRuntime.relayModernStoreMod.default {
+    extends typings.relayRuntime.libStoreRelayModernStoreMod.default {
     def this(source: MutableRecordSource) = this()
     def this(source: MutableRecordSource, options: GcReleaseBufferSize) = this()
   }
@@ -648,14 +647,17 @@ object mod {
   @js.native
   val _Internal: Internal = js.native
   
-  inline def applyOptimisticMutation(environment: typings.relayRuntime.relayStoreTypesMod.Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def applyOptimisticMutation(
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
+    config: OptimisticMutationConfig
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   inline def areEqualSelectors(thisSelector: SingularReaderSelector, thatSelector: SingularReaderSelector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEqualSelectors")(thisSelector.asInstanceOf[js.Any], thatSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def commitLocalUpdate(environment: typings.relayRuntime.relayStoreTypesMod.Environment, updater: StoreUpdater): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitLocalUpdate")(environment.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commitLocalUpdate(environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, updater: StoreUpdater): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitLocalUpdate")(environment.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def commitMutation[TOperation /* <: MutationParameters */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
@@ -699,7 +701,7 @@ object mod {
   inline def deepFreeze[T /* <: js.Object */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepFreeze")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def fetchQueryDEPRECATED_variables[T /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
   ): js.Promise[
@@ -708,7 +710,7 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ]]
   inline def fetchQueryDEPRECATED_variables[T /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,
     cacheConfig: CacheConfig
@@ -719,7 +721,7 @@ object mod {
   ]]
   
   inline def fetchQuery_variables[T /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
   ): RelayObservable[
@@ -728,7 +730,7 @@ object mod {
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ]]
   inline def fetchQuery_variables[T /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,
     cacheConfig: FetchPolicy
@@ -792,7 +794,7 @@ object mod {
   ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPaginationVariables")(direction.asInstanceOf[js.Any], count.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any], baseVariables.asInstanceOf[js.Any], extraVariables.asInstanceOf[js.Any], paginationMetadata.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   inline def getPendingOperationsForFragment(
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     fragmentNode: ReaderFragment,
     fragmentOwner: RequestDescriptor
   ): PendingOperations | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPendingOperationsForFragment")(environment.asInstanceOf[js.Any], fragmentNode.asInstanceOf[js.Any], fragmentOwner.asInstanceOf[js.Any])).asInstanceOf[PendingOperations | Null]
@@ -838,17 +840,17 @@ object mod {
   inline def graphql(strings: Any): GraphQLTaggedNode = ^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(strings.asInstanceOf[js.Any]).asInstanceOf[GraphQLTaggedNode]
   
   inline def handlePotentialSnapshotErrors(
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     missingRequiredFields: Null,
     relayResolverErrors: RelayResolverErrors
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handlePotentialSnapshotErrors")(environment.asInstanceOf[js.Any], missingRequiredFields.asInstanceOf[js.Any], relayResolverErrors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def handlePotentialSnapshotErrors(
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     missingRequiredFields: Unit,
     relayResolverErrors: RelayResolverErrors
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handlePotentialSnapshotErrors")(environment.asInstanceOf[js.Any], missingRequiredFields.asInstanceOf[js.Any], relayResolverErrors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def handlePotentialSnapshotErrors(
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     missingRequiredFields: MissingRequiredFields,
     relayResolverErrors: RelayResolverErrors
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handlePotentialSnapshotErrors")(environment.asInstanceOf[js.Any], missingRequiredFields.asInstanceOf[js.Any], relayResolverErrors.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -875,33 +877,50 @@ object mod {
   inline def recycleNodesInto[T](prevData: T, nextData: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("recycleNodesInto")(prevData.asInstanceOf[js.Any], nextData.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def requestSubscription[TSubscription /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   inline def stableCopy[T /* <: Any */](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("stableCopy")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  type FragmentRef[Fragment] = _FragmentRefs[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Fragment extends relay-runtime.relay-runtime._RefType<infer U> ? relay-runtime.relay-runtime._FragmentRefs<U> : never
+    }}}
+    */
+  @js.native
+  trait FragmentRef[Fragment] extends StObject
   
-  type FragmentRefs[Refs /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ ref in Refs ]: true}
-    */ typings.relayRuntime.relayRuntimeStrings.FragmentRefs & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ ref in Refs ]: true}
+    }}}
+    */
+  @js.native
+  trait FragmentRefs[Refs /* <: String */] extends StObject
   
   trait Internal extends StObject {
     
     var ResolverFragments: TypeofRelayResolverFragme
     
-    def fetchQuery(environment: typings.relayRuntime.relayStoreTypesMod.Environment, operation: OperationDescriptor): RelayObservable[GraphQLResponse]
+    def fetchQuery(
+      environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
+      operation: OperationDescriptor
+    ): RelayObservable[GraphQLResponse]
     
     def fetchQueryDeduped(
-      environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+      environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
       request: RequestDescriptor,
       fetchFn: js.Function0[RelayObservable[GraphQLResponse]]
     ): RelayObservable[GraphQLResponse]
     @JSName("fetchQueryDeduped")
     var fetchQueryDeduped_Original: js.Function3[
-        /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
+        /* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, 
         /* request */ RequestDescriptor, 
         /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]], 
         RelayObservable[GraphQLResponse]
@@ -909,23 +928,29 @@ object mod {
     
     @JSName("fetchQuery")
     var fetchQuery_Original: js.Function2[
-        /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
+        /* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, 
         /* operation */ OperationDescriptor, 
         RelayObservable[GraphQLResponse]
       ]
     
-    def getObservableForActiveRequest(environment: typings.relayRuntime.relayStoreTypesMod.Environment, request: RequestDescriptor): RelayObservable[Unit] | Null
+    def getObservableForActiveRequest(
+      environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
+      request: RequestDescriptor
+    ): RelayObservable[Unit] | Null
     @JSName("getObservableForActiveRequest")
     var getObservableForActiveRequest_Original: js.Function2[
-        /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
+        /* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, 
         /* request */ RequestDescriptor, 
         RelayObservable[Unit] | Null
       ]
     
-    def getPromiseForActiveRequest(environment: typings.relayRuntime.relayStoreTypesMod.Environment, request: RequestDescriptor): js.Promise[Unit] | Null
+    def getPromiseForActiveRequest(
+      environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
+      request: RequestDescriptor
+    ): js.Promise[Unit] | Null
     @JSName("getPromiseForActiveRequest")
     var getPromiseForActiveRequest_Original: js.Function2[
-        /* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, 
+        /* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, 
         /* request */ RequestDescriptor, 
         js.Promise[Unit] | Null
       ]
@@ -943,10 +968,10 @@ object mod {
     
     inline def apply(
       ResolverFragments: TypeofRelayResolverFragme,
-      fetchQuery: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse],
-      fetchQueryDeduped: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor, /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]]) => RelayObservable[GraphQLResponse],
-      getObservableForActiveRequest: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => RelayObservable[Unit] | Null,
-      getPromiseForActiveRequest: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => js.Promise[Unit] | Null,
+      fetchQuery: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse],
+      fetchQueryDeduped: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* request */ RequestDescriptor, /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]]) => RelayObservable[GraphQLResponse],
+      getObservableForActiveRequest: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* request */ RequestDescriptor) => RelayObservable[Unit] | Null,
+      getPromiseForActiveRequest: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* request */ RequestDescriptor) => js.Promise[Unit] | Null,
       withProvidedVariables: (/* userSuppliedVariables */ Variables, /* providedVariables */ js.UndefOr[ProvidedVariablesType | Null]) => Variables
     ): Internal = {
       val __obj = js.Dynamic.literal(ResolverFragments = ResolverFragments.asInstanceOf[js.Any], fetchQuery = js.Any.fromFunction2(fetchQuery), fetchQueryDeduped = js.Any.fromFunction3(fetchQueryDeduped), getObservableForActiveRequest = js.Any.fromFunction2(getObservableForActiveRequest), getPromiseForActiveRequest = js.Any.fromFunction2(getPromiseForActiveRequest), withProvidedVariables = js.Any.fromFunction2(withProvidedVariables))
@@ -956,19 +981,19 @@ object mod {
     extension [Self <: Internal](x: Self) {
       
       inline def setFetchQuery(
-        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse]
+        value: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse]
       ): Self = StObject.set(x, "fetchQuery", js.Any.fromFunction2(value))
       
       inline def setFetchQueryDeduped(
-        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor, /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]]) => RelayObservable[GraphQLResponse]
+        value: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* request */ RequestDescriptor, /* fetchFn */ js.Function0[RelayObservable[GraphQLResponse]]) => RelayObservable[GraphQLResponse]
       ): Self = StObject.set(x, "fetchQueryDeduped", js.Any.fromFunction3(value))
       
       inline def setGetObservableForActiveRequest(
-        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => RelayObservable[Unit] | Null
+        value: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* request */ RequestDescriptor) => RelayObservable[Unit] | Null
       ): Self = StObject.set(x, "getObservableForActiveRequest", js.Any.fromFunction2(value))
       
       inline def setGetPromiseForActiveRequest(
-        value: (/* environment */ typings.relayRuntime.relayStoreTypesMod.Environment, /* request */ RequestDescriptor) => js.Promise[Unit] | Null
+        value: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* request */ RequestDescriptor) => js.Promise[Unit] | Null
       ): Self = StObject.set(x, "getPromiseForActiveRequest", js.Any.fromFunction2(value))
       
       inline def setResolverFragments(value: TypeofRelayResolverFragme): Self = StObject.set(x, "ResolverFragments", value.asInstanceOf[js.Any])

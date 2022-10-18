@@ -6,6 +6,7 @@ import typings.gulpStylint.anon.FailOnWarning
 import typings.gulpStylint.gulpStylintBooleans.`true`
 import typings.gulpStylint.gulpStylintStrings.fail
 import typings.gulpStylint.mod.GulpStylint.Options
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,15 +20,15 @@ object mod extends Shortcut {
   @js.native
   trait GulpStylint extends StObject {
     
-    def apply(): Any = js.native
-    def apply(options: Options): Any = js.native
+    def apply(): ReadWriteStream = js.native
+    def apply(options: Options): ReadWriteStream = js.native
     
-    def reporter(): Any = js.native
-    def reporter(options: GulpStylint): Any = js.native
+    def reporter(): ReadWriteStream = js.native
+    def reporter(options: GulpStylint): ReadWriteStream = js.native
     @JSName("reporter")
-    def reporter_fail(identifier: fail): Any = js.native
+    def reporter_fail(identifier: fail): ReadWriteStream = js.native
     @JSName("reporter")
-    def reporter_fail(identifier: fail, options: FailOnWarning): Any = js.native
+    def reporter_fail(identifier: fail, options: FailOnWarning): ReadWriteStream = js.native
   }
   object GulpStylint {
     

@@ -10,8 +10,7 @@ trait FolderObject
   extends StObject
      with BaseObject
      with AdapterScopedObject
-     with AnyObject
-     with _InferGetObjectViewItemType[Any, Any] {
+     with AnyObject {
   
   // Nothing is set in stone here, so start with allowing every property
   @JSName("common")

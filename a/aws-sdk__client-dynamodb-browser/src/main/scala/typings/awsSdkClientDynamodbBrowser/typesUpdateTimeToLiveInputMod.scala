@@ -1,8 +1,8 @@
 package typings.awsSdkClientDynamodbBrowser
 
-import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientDynamodbBrowser.typesInputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesTimeToLiveSpecificationMod.TimeToLiveSpecification
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

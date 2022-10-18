@@ -27,10 +27,6 @@ object topojsonSpecificationStrings {
   inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
   
   @js.native
-  sealed trait OrNull extends StObject
-  inline def OrNull: OrNull = "OrNull".asInstanceOf[OrNull]
-  
-  @js.native
   sealed trait Point extends StObject
   inline def Point: Point = "Point".asInstanceOf[Point]
   

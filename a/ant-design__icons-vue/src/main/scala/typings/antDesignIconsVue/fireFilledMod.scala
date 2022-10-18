@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFireFilledMod.FireFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fireFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FireFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FireFilled", JSImport.Default)
   @js.native
   val default: FireFilledIconType = js.native
-  
-  @js.native
-  trait FireFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FireFilledIconType: String = js.native
-  }
   
   type _To = FireFilledIconType
   

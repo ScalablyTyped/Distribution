@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.deferredcontentMod.DeferredContentProps
+import typings.primereact.deferredcontentDeferredcontentMod.DeferredContentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "DeferredContent")
 @js.native
 open class DeferredContent protected ()
-  extends typings.primereact.deferredcontentMod.DeferredContent {
+  extends typings.primereact.deferredcontentDeferredcontentMod.DeferredContent {
   def this(props: DeferredContentProps) = this()
   /**
     * @deprecated

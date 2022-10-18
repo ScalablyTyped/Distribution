@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.AutoPlay
 import typings.babylonjs.anon.PartialIEnvironmentHelper
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelper
+import typings.babylonjs.camerasVRVrExperienceHelperMod.VRExperienceHelperOptions
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.meshesMeshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelper
-import typings.babylonjs.vrExperienceHelperMod.VRExperienceHelperOptions
-import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperience
-import typings.babylonjs.webXRDefaultExperienceMod.WebXRDefaultExperienceOptions
+import typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperience
+import typings.babylonjs.xRWebXRDefaultExperienceMod.WebXRDefaultExperienceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object helpersIndexMod {
   @JSImport("babylonjs/Helpers/index", "EnvironmentHelper")
   @js.native
   open class EnvironmentHelper protected ()
-    extends typings.babylonjs.environmentHelperMod.EnvironmentHelper {
+    extends typings.babylonjs.helpersEnvironmentHelperMod.EnvironmentHelper {
     /**
       * constructor
       * @param options Defines the options we want to customize the helper
@@ -74,7 +74,7 @@ object helpersIndexMod {
   @JSImport("babylonjs/Helpers/index", "PhotoDome")
   @js.native
   open class PhotoDome protected ()
-    extends typings.babylonjs.photoDomeMod.PhotoDome {
+    extends typings.babylonjs.helpersPhotoDomeMod.PhotoDome {
     /**
       * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
       * @param name Element's name, child elements will append suffixes for their own names.
@@ -154,7 +154,7 @@ object helpersIndexMod {
   @JSImport("babylonjs/Helpers/index", "VideoDome")
   @js.native
   open class VideoDome protected ()
-    extends typings.babylonjs.videoDomeMod.VideoDome {
+    extends typings.babylonjs.helpersVideoDomeMod.VideoDome {
     /**
       * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
       * @param name Element's name, child elements will append suffixes for their own names.
@@ -281,8 +281,8 @@ object helpersIndexMod {
         * @param options defines the options you can use to configure the environment
         * @returns the new EnvironmentHelper
         */
-      def createDefaultEnvironment(): Nullable[typings.babylonjs.environmentHelperMod.EnvironmentHelper] = js.native
-      def createDefaultEnvironment(options: PartialIEnvironmentHelper): Nullable[typings.babylonjs.environmentHelperMod.EnvironmentHelper] = js.native
+      def createDefaultEnvironment(): Nullable[typings.babylonjs.helpersEnvironmentHelperMod.EnvironmentHelper] = js.native
+      def createDefaultEnvironment(options: PartialIEnvironmentHelper): Nullable[typings.babylonjs.helpersEnvironmentHelperMod.EnvironmentHelper] = js.native
       
       /**
         * Creates a default light for the scene.

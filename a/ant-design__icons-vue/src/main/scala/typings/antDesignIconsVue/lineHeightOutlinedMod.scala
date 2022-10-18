@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsLineHeightOutlinedMod.LineHeightOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineHeightOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/LineHeightOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/LineHeightOutlined", JSImport.Default)
   @js.native
   val default: LineHeightOutlinedIconType = js.native
-  
-  @js.native
-  trait LineHeightOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_LineHeightOutlinedIconType: String = js.native
-  }
   
   type _To = LineHeightOutlinedIconType
   

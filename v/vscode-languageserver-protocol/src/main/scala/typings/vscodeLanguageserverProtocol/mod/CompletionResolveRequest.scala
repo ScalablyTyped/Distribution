@@ -9,7 +9,7 @@ object CompletionResolveRequest {
   
   @JSImport("vscode-languageserver-protocol", "CompletionResolveRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "CompletionResolveRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object CompletionResolveRequest {
   
   @JSImport("vscode-languageserver-protocol", "CompletionResolveRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     typings.vscodeLanguageserverTypes.mod.CompletionItem, 
     typings.vscodeLanguageserverTypes.mod.CompletionItem, 
     scala.Nothing, 

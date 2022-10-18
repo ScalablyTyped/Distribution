@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides extended properties for a PointerPoint object. */
-@JSGlobal("Windows.UI.Input.PointerPointProperties")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.PointerPointProperties")
 @js.native
-abstract class PointerPointProperties ()
+open class PointerPointProperties ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.PointerPointProperties {
   

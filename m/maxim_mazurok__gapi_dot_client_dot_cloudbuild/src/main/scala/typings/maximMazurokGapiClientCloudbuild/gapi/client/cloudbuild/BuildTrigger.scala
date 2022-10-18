@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,9 +97,7 @@ trait BuildTrigger extends StObject {
   
   /** Substitutions for Build resource. The keys must match the following regular expression: `^_[A-Z0-9_]+$`. */
   var substitutions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Tags for annotation of a `BuildTrigger` */
@@ -213,9 +210,7 @@ object BuildTrigger {
     inline def setSourceToBuildUndefined: Self = StObject.set(x, "sourceToBuild", js.undefined)
     
     inline def setSubstitutions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)

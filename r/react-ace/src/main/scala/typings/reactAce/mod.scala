@@ -1,14 +1,14 @@
 package typings.reactAce
 
-import typings.reactAce.aceMod.IAceEditorProps
 import typings.reactAce.anon.PartialIAceEditorProps
 import typings.reactAce.anon.PartialIDiffEditorProps
 import typings.reactAce.anon.PartialISplitEditorProps
 import typings.reactAce.anon.ValidationMapIAceEditorPr
 import typings.reactAce.anon.ValidationMapIDiffEditorP
 import typings.reactAce.anon.ValidationMapISplitEditor
-import typings.reactAce.diffMod.IDiffEditorProps
-import typings.reactAce.splitMod.ISplitEditorProps
+import typings.reactAce.libAceMod.IAceEditorProps
+import typings.reactAce.libDiffMod.IDiffEditorProps
+import typings.reactAce.libSplitMod.ISplitEditorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object mod {
   @JSImport("react-ace", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.reactAce.aceMod.default {
+    extends typings.reactAce.libAceMod.default {
     def this(props: IAceEditorProps) = this()
   }
   /* static members */
@@ -42,7 +42,7 @@ object mod {
   @JSImport("react-ace", "diff")
   @js.native
   open class diff protected ()
-    extends typings.reactAce.diffMod.default {
+    extends typings.reactAce.libDiffMod.default {
     def this(props: IDiffEditorProps) = this()
   }
   /* static members */
@@ -66,7 +66,7 @@ object mod {
   @JSImport("react-ace", "split")
   @js.native
   open class split protected ()
-    extends typings.reactAce.splitMod.default {
+    extends typings.reactAce.libSplitMod.default {
     def this(props: ISplitEditorProps) = this()
   }
   /* static members */

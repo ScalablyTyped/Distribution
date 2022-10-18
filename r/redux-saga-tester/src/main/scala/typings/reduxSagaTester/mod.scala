@@ -4,7 +4,6 @@ import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
-import typings.redux.mod.Observable
 import typings.redux.mod.Reducer
 import typings.redux.mod.ReducersMapObject
 import typings.redux.mod.Store
@@ -72,12 +71,7 @@ object mod {
     /**
       * The reference of the redux store.
       */
-    def store(): Observable[StateType] = js.native
-    /**
-      * The reference of the redux store.
-      */
-    @JSName("store")
-    var store_Original: Store[StateType, AnyAction] = js.native
+    var store: Store[StateType, AnyAction] = js.native
     
     /**
       * Assigns the newState into the current state. (Only works with the default reducer.)

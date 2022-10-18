@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IsTeleport
   extends StObject
-     with Instantiable0[`0`] {
+     with Instantiable0[`2`] {
   
   var __isTeleport: `true` = js.native
 }

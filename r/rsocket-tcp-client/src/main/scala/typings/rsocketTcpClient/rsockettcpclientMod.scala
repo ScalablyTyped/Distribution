@@ -51,7 +51,7 @@ object rsockettcpclientMod {
       * Implementations must publish values per the comments on ConnectionStatus.
       */
     /* CompleteClass */
-    override def connectionStatus(): Flowable[ConnectionStatus] = js.native
+    override def connectionStatus(): Any = js.native
     
     def getConnectionState(): ConnectionStatus = js.native
     
@@ -67,8 +67,9 @@ object rsockettcpclientMod {
       *   not should throw if `receive` is called more than once.
       */
     /* CompleteClass */
-    override def receive(): Flowable[Frame] = js.native
+    override def receive(): Any = js.native
     
+    def send(frames: Flowable[Frame]): Unit = js.native
     /**
       * Send all the `input` frames on this connection.
       *
@@ -78,7 +79,9 @@ object rsockettcpclientMod {
       *   `receive()` Publisher.
       */
     /* CompleteClass */
-    override def send(input: Flowable[Frame]): Unit = js.native
+    override def send(
+      input: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Flowable<Frame> */ Any
+    ): Unit = js.native
     
     /**
       * Send a single frame on the connection.

@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "express-frappe"
-version := "2.1.3-ee51bc"
+version := "2.1.3-2654f5"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20211202Z-b1554a",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-92678d",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-3b2b8e",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-646db4",
-  "org.scalablytyped" %%% "express-routers" % "1.0.1-2165ca",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-53b851",
-  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-fb8f3f",
-  "org.scalablytyped" %%% "node" % "18.7-dt-20220926Z-d201ab",
-  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-4e85dc",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-170623",
-  "org.scalablytyped" %%% "std" % "4.8-9f8efb")
+  "org.scalablytyped" %%% "body-parser" % "1.19-dt-20211202Z-9c9cb5",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-897197",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20211202Z-2dd2b5",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-d74acb",
+  "org.scalablytyped" %%% "express-routers" % "1.0.1-cb9fb4",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-06d29e",
+  "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-696f82",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

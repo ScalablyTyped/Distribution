@@ -1,8 +1,8 @@
 package typings.awsSdkMiddlewareSerializer
 
-import typings.awsSdkTypes.middlewareMod.SerializeMiddleware
-import typings.awsSdkTypes.serdeMod.RequestSerializer
-import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkTypes.distTypesMiddlewareMod.SerializeMiddleware
+import typings.awsSdkTypes.distTypesSerdeMod.RequestSerializer
+import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

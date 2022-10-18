@@ -1,6 +1,6 @@
 package typings.rcTreeSelect
 
-import typings.rcTreeSelect.treeSelectMod.SelectSource
+import typings.rcTreeSelect.esInterfaceMod.SelectSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ object rcTreeSelectStrings {
   sealed trait clear
     extends StObject
        with SelectSource
-       with typings.rcTreeSelect.interfaceMod.SelectSource
+       with typings.rcTreeSelect.esTreeSelectMod.SelectSource
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
@@ -90,7 +90,7 @@ object rcTreeSelectStrings {
   sealed trait input
     extends StObject
        with SelectSource
-       with typings.rcTreeSelect.interfaceMod.SelectSource
+       with typings.rcTreeSelect.esTreeSelectMod.SelectSource
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
@@ -137,7 +137,7 @@ object rcTreeSelectStrings {
   sealed trait option
     extends StObject
        with SelectSource
-       with typings.rcTreeSelect.interfaceMod.SelectSource
+       with typings.rcTreeSelect.esTreeSelectMod.SelectSource
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
@@ -180,7 +180,7 @@ object rcTreeSelectStrings {
   sealed trait selection
     extends StObject
        with SelectSource
-       with typings.rcTreeSelect.interfaceMod.SelectSource
+       with typings.rcTreeSelect.esTreeSelectMod.SelectSource
   inline def selection: selection = "selection".asInstanceOf[selection]
   
   @js.native

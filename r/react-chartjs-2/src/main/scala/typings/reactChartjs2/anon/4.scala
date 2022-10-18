@@ -1,8 +1,8 @@
 package typings.reactChartjs2.anon
 
+import typings.reactChartjs2.distTypesMod.ChartJSOrUndefined
+import typings.reactChartjs2.distTypesMod.ForwardedRef
 import typings.reactChartjs2.reactChartjs2Strings.doughnut
-import typings.reactChartjs2.typesMod.ChartJSOrUndefined
-import typings.reactChartjs2.typesMod.ForwardedRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

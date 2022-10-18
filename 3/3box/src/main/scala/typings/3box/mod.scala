@@ -10,9 +10,9 @@ import typings.`3box`.anon.GraphqlServer
 import typings.`3box`.anon.Members
 import typings.`3box`.anon.Metadata
 import typings.`3box`.anon.NoAutoSub
+import typings.`3box`.anon.OnSyncDone
 import typings.`3box`.anon.ProfileServer
 import typings.`3box`.anon.SignJWT
-import typings.`3box`.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object mod {
   
   /* static member */
   inline def getProfile(address: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
-  inline def getProfile(address: String, opts: Blocklist): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def getProfile(address: String, opts: AddressServer): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /* static member */
   inline def getProfiles(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
@@ -45,7 +45,7 @@ object mod {
   
   /* static member */
   inline def getSpace(address: String, name: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
-  inline def getSpace(address: String, name: String, opts: Metadata): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  inline def getSpace(address: String, name: String, opts: Blocklist): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
   inline def getThread(space: String, name: String, firstModerator: String, members: Boolean): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
@@ -83,7 +83,7 @@ object mod {
   
   /* static member */
   inline def openBox(address: String, ethereumProvider: Any): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
-  inline def openBox(address: String, ethereumProvider: Any, opts: AddressServer): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
+  inline def openBox(address: String, ethereumProvider: Any, opts: ConsentCallback): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
   
   /* static member */
   inline def profileGraphQL(query: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
@@ -109,7 +109,7 @@ object mod {
     def onSyncDone(syncDoneFn: js.Function0[Unit]): Unit = js.native
     
     def openSpace(name: String): js.Promise[Space] = js.native
-    def openSpace(name: String, opts: ConsentCallback): js.Promise[Space] = js.native
+    def openSpace(name: String, opts: OnSyncDone): js.Promise[Space] = js.native
     
     var `private`: Storage = js.native
     
@@ -192,7 +192,7 @@ object mod {
   trait Storage extends StObject {
     
     def all(): js.Promise[js.UndefOr[js.Array[Any]]] = js.native
-    def all(opts: `0`): js.Promise[js.UndefOr[js.Array[Any]]] = js.native
+    def all(opts: Metadata): js.Promise[js.UndefOr[js.Array[Any]]] = js.native
     
     def get(key: String): js.Promise[Any] = js.native
     

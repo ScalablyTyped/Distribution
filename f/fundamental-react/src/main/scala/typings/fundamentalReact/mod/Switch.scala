@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialSwitchProps
 import typings.fundamentalReact.anon.WeakValidationMapSwitchPr
-import typings.fundamentalReact.switchMod.SwitchProps
+import typings.fundamentalReact.libSwitchSwitchMod.SwitchProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

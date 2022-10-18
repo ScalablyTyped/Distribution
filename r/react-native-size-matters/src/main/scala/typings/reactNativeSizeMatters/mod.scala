@@ -1,6 +1,5 @@
 package typings.reactNativeSizeMatters
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +16,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T /* <: NamedStyles[Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
-      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stylesObject.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>}
-      */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.create & TopLevel[T]]
+    inline def create[T /* <: NamedStyles[Any | T] */](stylesObject: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stylesObject.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: react-native.react-native.RegisteredStyle<T[P] & std.Record<std.Extract<keyof T[P], 'fontSize' | 'letterSpacing' | 'lineHeight' | 'textShadowRadius' | 'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius' | 'borderBottomWidth' | 'borderTopWidth' | 'borderRightWidth' | 'borderLeftWidth' | 'borderRadius' | 'shadowRadius' | 'borderWidth' | 'aspectRatio' | 'rotation' | 'scaleX' | 'scaleY' | 'translateX' | 'translateY'>, number>>} */ js.Any]
   }
   
   inline def moderateScale(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("moderateScale")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -44,9 +39,15 @@ object mod {
   
   inline def vs(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("vs")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  type NamedStyles[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle | react-native-size-matters.react-native-size-matters.StringifiedStyles}
-    */ typings.reactNativeSizeMatters.reactNativeSizeMattersStrings.NamedStyles & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle | react-native-size-matters.react-native-size-matters.StringifiedStyles}
+    }}}
+    */
+  @js.native
+  trait NamedStyles[T] extends StObject
   
   trait StringifiedStyles extends StObject {
     

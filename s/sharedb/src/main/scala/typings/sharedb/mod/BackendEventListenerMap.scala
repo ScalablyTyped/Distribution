@@ -1,7 +1,7 @@
 package typings.sharedb.mod
 
-import typings.sharedb.sharedbMod.ServerResponseError
-import typings.sharedb.sharedbMod.ServerResponseSuccess
+import typings.sharedb.libSharedbMod.ServerResponseError
+import typings.sharedb.libSharedbMod.ServerResponseSuccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,8 +11,8 @@ trait BackendEventListenerMap extends StObject {
   
   def error(err: Error): Unit = js.native
   
-  def send(agent: typings.sharedb.agentMod.^[Any], response: ServerResponseError): Unit = js.native
-  def send(agent: typings.sharedb.agentMod.^[Any], response: ServerResponseSuccess): Unit = js.native
+  def send(agent: typings.sharedb.libAgentMod.^[Any], response: ServerResponseError): Unit = js.native
+  def send(agent: typings.sharedb.libAgentMod.^[Any], response: ServerResponseSuccess): Unit = js.native
   
   def submitRequestEnd(error: Error, request: SubmitRequest): Unit = js.native
   

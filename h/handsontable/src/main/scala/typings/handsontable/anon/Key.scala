@@ -1,6 +1,6 @@
 package typings.handsontable.anon
 
-import typings.handsontable.filtersFiltersMod.ConditionName
+import typings.handsontable.pluginsFiltersFiltersMod.ConditionName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

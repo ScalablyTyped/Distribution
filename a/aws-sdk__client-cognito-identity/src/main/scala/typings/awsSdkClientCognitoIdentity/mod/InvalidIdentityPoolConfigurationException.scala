@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "InvalidIdentityPoolConfigurationException")
 @js.native
 open class InvalidIdentityPoolConfigurationException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.InvalidIdentityPoolConfigurationException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.InvalidIdentityPoolConfigurationException {
   /**
     * @internal
     */

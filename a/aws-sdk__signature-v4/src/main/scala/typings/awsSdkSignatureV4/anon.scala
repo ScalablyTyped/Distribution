@@ -1,7 +1,7 @@
 package typings.awsSdkSignatureV4
 
-import typings.awsSdkTypes.httpMod.HeaderBag
-import typings.awsSdkTypes.httpMod.QueryParameterBag
+import typings.awsSdkTypes.distTypesHttpMod.HeaderBag
+import typings.awsSdkTypes.distTypesHttpMod.QueryParameterBag
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

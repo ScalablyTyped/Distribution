@@ -1,8 +1,8 @@
 package typings.sphereEngineBrowser
 
+import typings.sphereEngineBrowser.consoleMod.ConsoleOptions
+import typings.sphereEngineBrowser.consoleMod.default
 import typings.sphereEngineBrowser.focusTargetMod.FocusTargetOptions
-import typings.sphereEngineBrowser.mod.ConsoleOptions
-import typings.sphereEngineBrowser.mod.default
 import typings.sphereEngineBrowser.tweenMod.Easing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -384,13 +384,13 @@ object sphereRuntimeMod {
   /**
     * Represents a set of Dispatch jobs with associated state which can be controlled as a unit.
     */
-  @JSImport("sphere-runtime", "Thread")
+  /* note: abstract class */ @JSImport("sphere-runtime", "Thread")
   @js.native
   /**
     * Construct a new `Thread`, optionally specifying options for its Dispatch jobs.
     * @param options Options for the thread's recurring Dispatch jobs.
     */
-  abstract class Thread ()
+  open class Thread ()
     extends typings.sphereEngineBrowser.threadMod.default {
     def this(options: JobOptions) = this()
   }

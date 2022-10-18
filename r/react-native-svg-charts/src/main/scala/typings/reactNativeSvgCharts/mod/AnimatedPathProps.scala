@@ -1,6 +1,6 @@
 package typings.reactNativeSvgCharts.mod
 
-import typings.reactNativeSvg.typesMod.CommonPathProps
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.CommonPathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "SteeringManager")
 @js.native
 open class SteeringManager protected ()
-  extends typings.yuka.yukaMod.SteeringManager {
+  extends typings.yuka.srcYukaMod.SteeringManager {
   /**
     * Constructs a new steering manager.
     *
     * @param vehicle - The vehicle that owns this steering manager.
     */
-  def this(vehicle: typings.yuka.vehicleMod.Vehicle) = this()
+  def this(vehicle: typings.yuka.srcSteeringVehicleMod.Vehicle) = this()
 }

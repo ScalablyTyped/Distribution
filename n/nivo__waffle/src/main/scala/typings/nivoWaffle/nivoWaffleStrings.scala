@@ -1,9 +1,9 @@
 package typings.nivoWaffle
 
+import typings.nivoWaffle.distTypesTypesMod.FillDirection
+import typings.nivoWaffle.distTypesTypesMod.HtmlLayer
+import typings.nivoWaffle.distTypesTypesMod.LayerId
 import typings.nivoWaffle.mod.WaffleFillDirection
-import typings.nivoWaffle.typesTypesMod.FillDirection
-import typings.nivoWaffle.typesTypesMod.HtmlLayer
-import typings.nivoWaffle.typesTypesMod.LayerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,17 +13,13 @@ trait StyleWithAnimatedValue extends StObject {
 }
 object StyleWithAnimatedValue {
   
-  inline def apply(): StyleWithAnimatedValue = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(style: WithAnimatedValue[StyleProp[ViewStyle]]): StyleWithAnimatedValue = {
+    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleWithAnimatedValue]
   }
   
   extension [Self <: StyleWithAnimatedValue](x: Self) {
     
     inline def setStyle(value: WithAnimatedValue[StyleProp[ViewStyle]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-    
-    inline def setStyleNull: Self = StObject.set(x, "style", null)
-    
-    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

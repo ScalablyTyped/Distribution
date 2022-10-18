@@ -1,6 +1,6 @@
 package typings.cleaveJs
 
-import typings.cleaveJs.creditCardMod.CreditCardType
+import typings.cleaveJs.optionsCreditCardMod.CreditCardType
 import typings.cleaveJs.optionsMod.NumeralThousandsGroupStyleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

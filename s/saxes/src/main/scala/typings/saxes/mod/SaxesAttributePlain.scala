@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SaxesAttributePlain
   extends StObject
-     with AttributeEventForOptions[Any]
      with SaxesAttribute {
   
   /**

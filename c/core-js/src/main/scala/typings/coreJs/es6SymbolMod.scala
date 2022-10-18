@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object es6SymbolMod extends Shortcut {
   
-  @JSImport("core-js/library/es6/symbol", JSImport.Namespace)
+  @JSImport("core-js/es6/symbol", JSImport.Namespace)
   @js.native
   val ^ : SymbolConstructor = js.native
   

@@ -1,7 +1,7 @@
 package typings.bitcoinjsLib
 
-import typings.bitcoinjsLib.cryptoMod.TaggedHashPrefix
-import typings.bitcoinjsLib.psbtMod.AllScriptType
+import typings.bitcoinjsLib.srcCryptoMod.TaggedHashPrefix
+import typings.bitcoinjsLib.srcPsbtMod.AllScriptType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

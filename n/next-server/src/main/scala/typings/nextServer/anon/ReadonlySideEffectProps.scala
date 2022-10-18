@@ -1,6 +1,6 @@
 package typings.nextServer.anon
 
-import typings.nextServer.sideEffectMod.State
+import typings.nextServer.distLibSideEffectMod.State
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

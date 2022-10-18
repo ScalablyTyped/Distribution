@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object MappingRuleMatchType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.awsSdkClientCognitoIdentity.models0Mod.MappingRuleMatchType & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType & String
+  ] = js.native
   
-  /* "Contains" */ val CONTAINS: typings.awsSdkClientCognitoIdentity.models0Mod.MappingRuleMatchType.CONTAINS & String = js.native
+  /* "Contains" */ val CONTAINS: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.CONTAINS & String = js.native
   
-  /* "Equals" */ val EQUALS: typings.awsSdkClientCognitoIdentity.models0Mod.MappingRuleMatchType.EQUALS & String = js.native
+  /* "Equals" */ val EQUALS: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.EQUALS & String = js.native
   
-  /* "NotEqual" */ val NOT_EQUAL: typings.awsSdkClientCognitoIdentity.models0Mod.MappingRuleMatchType.NOT_EQUAL & String = js.native
+  /* "NotEqual" */ val NOT_EQUAL: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.NOT_EQUAL & String = js.native
   
-  /* "StartsWith" */ val STARTS_WITH: typings.awsSdkClientCognitoIdentity.models0Mod.MappingRuleMatchType.STARTS_WITH & String = js.native
+  /* "StartsWith" */ val STARTS_WITH: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.MappingRuleMatchType.STARTS_WITH & String = js.native
 }

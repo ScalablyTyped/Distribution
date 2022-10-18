@@ -52,7 +52,7 @@ object libMod {
     }
   }
   
-  type Comment = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_estree-jsx.Comment */ Any
+  type Comment = typings.std.Comment
   
   type Expression = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_estree-jsx.Expression */ Any
   
@@ -86,7 +86,7 @@ object libMod {
   
   type MemberExpression = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_estree-jsx.MemberExpression */ Any
   
-  type Node = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_estree-jsx.Node */ Any
+  type Node = typings.std.Node
   
   type ObjectExpression = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_estree-jsx.ObjectExpression */ Any
   

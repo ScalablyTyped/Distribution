@@ -1,6 +1,5 @@
 package typings.lodash.fpMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.lodash.mod.Dictionary
 import typings.lodash.mod.NumericDictionary
 import org.scalablytyped.runtime.StObject
@@ -10,12 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashMapValues6x1 extends StObject {
   
-  def apply[T /* <: js.Object */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LodashMapValues6x1 & TopLevel[Any] = js.native
-  def apply[T /* <: js.Object */](obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LodashMapValues6x1 & TopLevel[Any] = js.native
+  def apply[T /* <: js.Object */](): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: any} */ js.Any = js.native
+  def apply[T /* <: js.Object */](obj: T): /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: any} */ js.Any = js.native
   def apply[T](obj: Dictionary[T]): Dictionary[Any] = js.native
   def apply[T](obj: NumericDictionary[T]): Dictionary[Any] = js.native
 }

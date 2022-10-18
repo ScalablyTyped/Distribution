@@ -5,7 +5,7 @@ import typings.ckeditorCkeditor5Indent.ckeditorCkeditor5IndentStrings.IndentEdit
 import typings.ckeditorCkeditor5Indent.ckeditorCkeditor5IndentStrings.IndentUI
 import typings.ckeditorCkeditor5Indent.ckeditorCkeditor5IndentStrings.backward
 import typings.ckeditorCkeditor5Indent.ckeditorCkeditor5IndentStrings.forward
-import typings.ckeditorCkeditor5Indent.indenteditingMod.default
+import typings.ckeditorCkeditor5Indent.srcIndenteditingMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +71,7 @@ object anon {
   @js.native
   trait TypeofIndentUI
     extends StObject
-       with Instantiable0[typings.ckeditorCkeditor5Indent.indentuiMod.default] {
+       with Instantiable0[typings.ckeditorCkeditor5Indent.srcIndentuiMod.default] {
     
     val pluginName: IndentUI = js.native
   }

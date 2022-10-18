@@ -1,7 +1,7 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkClientLambdaNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

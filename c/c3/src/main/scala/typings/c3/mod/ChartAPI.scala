@@ -3,7 +3,7 @@ package typings.c3.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.c3.anon.Axes
 import typings.c3.anon.Call
-import typings.c3.anon.CallHide
+import typings.c3.anon.Colors
 import typings.c3.anon.Columns
 import typings.c3.anon.Done
 import typings.c3.anon.Enable
@@ -11,7 +11,7 @@ import typings.c3.anon.Height
 import typings.c3.anon.Hide
 import typings.c3.anon.IsShown
 import typings.c3.anon.Labels
-import typings.c3.anon.Names
+import typings.c3.anon.Show
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,7 +54,7 @@ trait ChartAPI extends StObject {
   def data(): js.Array[DataSeries] = js.native
   def data(targetIds: ArrayOrString): js.Array[DataSeries] = js.native
   @JSName("data")
-  var data_Original: Names = js.native
+  var data_Original: Colors = js.native
   
   /**
     * This API fades out specified targets and reverts the others.
@@ -193,7 +193,7 @@ trait ChartAPI extends StObject {
   
   def tooltip(): Unit = js.native
   @JSName("tooltip")
-  var tooltip_Original: CallHide = js.native
+  var tooltip_Original: Show = js.native
   
   /**
     * Change the type of the chart.

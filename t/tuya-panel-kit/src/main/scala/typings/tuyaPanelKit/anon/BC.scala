@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.routersTypesMod.ParamListBase
-import typings.tuyaPanelKit.stackTypesMod.StackNavigationEventMap
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
+import typings.tuyaPanelKit.`@reactNavigationStackTypesMod`.StackNavigationEventMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

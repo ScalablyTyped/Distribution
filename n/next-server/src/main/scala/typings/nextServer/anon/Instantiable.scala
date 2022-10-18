@@ -1,7 +1,7 @@
 package typings.nextServer.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.nextServer.sideEffectMod.State
+import typings.nextServer.distLibSideEffectMod.State
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

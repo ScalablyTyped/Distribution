@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-crt", "CrtError")
 @js.native
 open class CrtError protected ()
-  extends typings.awsCrt.errorMod.CrtError {
+  extends typings.awsCrt.distNativeErrorMod.CrtError {
   /** @var error - The original error. Most often an error_code, but possibly some other context */
   def this(error: Any) = this()
 }

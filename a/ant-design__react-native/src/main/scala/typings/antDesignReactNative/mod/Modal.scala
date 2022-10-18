@@ -1,9 +1,9 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.modalMod.default
-import typings.antDesignReactNative.modalPropsTypeMod.Action
-import typings.antDesignReactNative.modalPropsTypeMod.CallbackOnBackHandler
-import typings.antDesignReactNative.modalPropsTypeMod.CallbackOrActions
+import typings.antDesignReactNative.libModalMod.default
+import typings.antDesignReactNative.libModalPropsTypeMod.Action
+import typings.antDesignReactNative.libModalPropsTypeMod.CallbackOnBackHandler
+import typings.antDesignReactNative.libModalPropsTypeMod.CallbackOrActions
 import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle

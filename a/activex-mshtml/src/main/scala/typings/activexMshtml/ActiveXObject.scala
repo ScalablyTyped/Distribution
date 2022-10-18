@@ -180,87 +180,87 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: HTMLAnchorElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLAnchorElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLAreaElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLAreaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLAudioElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLAudioElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBGsound,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLBGsound, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBRElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLBRElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBaseElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLBaseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBaseFontElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLBaseFontElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBlockElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLBlockElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLBody,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLBody, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLButtonElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLButtonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLCanvasElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLCanvasElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLCommentElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLCommentElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDDElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLDDElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDListElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLDListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDTElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLDTElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDivElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLDivElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLDivPosition,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLDivPosition, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -270,142 +270,142 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: HTMLEmbed,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLEmbed, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFieldSetElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLFieldSetElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFontElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLFontElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFormElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLFormElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFrameBase,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLFrameBase, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFrameElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLFrameElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLFrameSetSite,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLFrameSetSite, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLGenericElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLGenericElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHRElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLHRElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHeadElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLHeadElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHeaderElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLHeaderElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLHtmlElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLHtmlElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLIFrame,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLIFrame, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLImg,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLImg, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputButtonElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLInputButtonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLInputElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputFileElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLInputFileElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLInputTextElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLInputTextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLIsIndexElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLIsIndexElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLIElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLLIElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLabelElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLLabelElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLegendElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLLegendElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLLinkElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLLinkElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLListElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMapElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLMapElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMarqueeElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLMarqueeElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMediaElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLMediaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLMetaElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLMetaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -416,17 +416,17 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: HTMLNextIdElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLNextIdElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLNoShowElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLNoShowElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLOListElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLOListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -436,132 +436,132 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: HTMLOptionButtonElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLOptionButtonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLOptionElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLOptionElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLParaElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLParaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLParamElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLParamElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLPhraseElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLPhraseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLProgressElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLProgressElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLRichtextElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLRichtextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLScriptElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLScriptElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSelectElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLSelectElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSemanticElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLSemanticElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSourceElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLSourceElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSpanElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLSpanElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLSpanFlow,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLSpanFlow, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLStyleElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLStyleElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableCaption,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTableCaption, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableCell,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTableCell, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableCol,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTableCol, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableRow,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTableRow, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTableSection,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTableSection, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTable,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTable, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTextAreaElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTextAreaElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTextElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLTitleElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLTitleElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLUListElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLUListElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLUnknownElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLUnknownElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLVideoElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLVideoElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -588,12 +588,12 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: HTMLWndOptionElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLWndOptionElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: HTMLWndSelectElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 64, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ HTMLWndSelectElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -608,137 +608,137 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: OldHTMLFormElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 65, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ OldHTMLFormElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGAElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGAElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGCircleElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGCircleElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGClipPathElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGClipPathElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGDefsElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGDefsElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGEllipseElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGEllipseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGGElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGGElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGGradientElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGGradientElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGImageElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGImageElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGLineElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGLineElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGMarkerElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGMarkerElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGMaskElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGMaskElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPathElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGPathElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPatternElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGPatternElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPolygonElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGPolygonElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGPolylineElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGPolylineElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGRectElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGRectElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGSVGElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGSVGElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGScriptElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGScriptElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGStopElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGStopElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGSymbolElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGSymbolElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGTSpanElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGTSpanElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGTextElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGTextElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGTextPathElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGTextPathElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGUseElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGUseElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: SVGViewElement,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate, typings.activexMshtml.activexMshtmlStrings.onbeforeactivate */ Any,
     handler: js.ThisFunction1[/* this */ SVGViewElement, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
@@ -754,7 +754,7 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: htmlInputImage,
-    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66 */ Any,
+    event: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 66, starting with typings.activexMshtml.activexMshtmlStrings.onabort, typings.activexMshtml.activexMshtmlStrings.onactivate, typings.activexMshtml.activexMshtmlStrings.onafterupdate */ Any,
     handler: js.ThisFunction1[/* this */ htmlInputImage, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

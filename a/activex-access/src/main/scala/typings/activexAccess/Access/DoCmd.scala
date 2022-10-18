@@ -767,7 +767,7 @@ trait DoCmd extends StObject {
   def OutputTo(
     ObjectType: `5`,
     ObjectName: String,
-    OutputFormat: String,
+    OutputFormat: /* MS-DOS Text (*.txt) */ String,
     OutputFile: String,
     AutoStart: Boolean,
     TemplateFile: String,
@@ -776,7 +776,7 @@ trait DoCmd extends StObject {
   def OutputTo(
     ObjectType: `5`,
     ObjectName: String,
-    OutputFormat: String,
+    OutputFormat: /* MS-DOS Text (*.txt) */ String,
     OutputFile: String,
     AutoStart: Boolean,
     TemplateFile: String,

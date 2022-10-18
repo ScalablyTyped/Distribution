@@ -1,6 +1,6 @@
 package typings.reactNavigationRouters.anon
 
-import typings.reactNavigationRouters.commonActionsMod.Action
+import typings.reactNavigationRouters.libTypescriptSrcCommonActionsMod.Action
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.SET_PARAMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

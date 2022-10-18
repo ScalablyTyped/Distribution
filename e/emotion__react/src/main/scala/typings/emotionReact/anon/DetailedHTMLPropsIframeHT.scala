@@ -364,7 +364,7 @@ trait DetailedHTMLPropsIframeHT extends StObject {
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[Interpolation[typings.emotionReact.emotionReactMod.Theme]] = js.undefined
+  var css: js.UndefOr[Interpolation[typings.emotionReact.mod.Theme]] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -915,7 +915,7 @@ object DetailedHTMLPropsIframeHT {
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCss(value: Interpolation[typings.emotionReact.emotionReactMod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Interpolation[typings.emotionReact.mod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     

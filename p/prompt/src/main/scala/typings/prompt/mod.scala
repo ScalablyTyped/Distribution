@@ -111,7 +111,7 @@ object mod {
   
   type Properties = StringDictionary[RevalidatorSchema | String]
   
-  /* Inlined std.Partial<revalidator.Revalidator.ISchema<any>> & {  ask :prompt.prompt.AskFunction | undefined,   before :prompt.prompt.BeforeFunction | undefined,   name :string | undefined,   raw :[string, string] | undefined} */
+  /* Inlined std.Partial<revalidator.Revalidator.ISchema<any>> & {  ask :prompt.prompt.AskFunction | undefined,   before :prompt.prompt.BeforeFunction | undefined,   name :string | undefined,   raw :[string, string] | undefined,   hidden :boolean | undefined} */
   trait RevalidatorSchema extends StObject {
     
     var default: js.UndefOr[Any] = js.undefined
@@ -137,6 +137,8 @@ object mod {
     var exclusiveMinimum: js.UndefOr[Double] = js.undefined
     
     var format: js.UndefOr[Formats] = js.undefined
+    
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     var items: js.UndefOr[ISchema[Any] | JSONSchema[Any]] = js.undefined
     
@@ -226,6 +228,10 @@ object mod {
       inline def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
       inline def setItems(value: ISchema[Any] | JSONSchema[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

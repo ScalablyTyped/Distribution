@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Card extends StObject {
   
   /** The payment card used to fund the payment. Card can be a credit or debit card. */
-  var card: js.UndefOr[Partial[typings.paypalPaypalJs.commonsMod.Card]] = js.undefined
+  var card: js.UndefOr[Partial[typings.paypalPaypalJs.typesApisCommonsMod.Card]] = js.undefined
 }
 object Card {
   
@@ -19,7 +19,7 @@ object Card {
   
   extension [Self <: Card](x: Self) {
     
-    inline def setCard(value: Partial[typings.paypalPaypalJs.commonsMod.Card]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Partial[typings.paypalPaypalJs.typesApisCommonsMod.Card]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
   }

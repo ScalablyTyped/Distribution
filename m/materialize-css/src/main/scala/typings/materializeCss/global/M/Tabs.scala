@@ -1,5 +1,7 @@
 package typings.materializeCss.global.M
 
+import typings.materializeCss.M.TabsOptions
+import typings.materializeCss.MElements
 import typings.materializeCss.anon.PartialTabsOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -13,10 +15,28 @@ open class Tabs ()
      with typings.materializeCss.M.Tabs {
   
   /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
     * The index of tab that is currently shown
     */
   /* CompleteClass */
   var index: Double = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: TabsOptions = js.native
   
   /**
     * Show tab content that corresponds to the tab with the id
@@ -47,13 +67,8 @@ object Tabs {
     * Init Tabses
     */
   /* static member */
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any
-  ): js.Array[typings.materializeCss.M.Tabs] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Tabs]]
-  inline def init(
-    els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ Any,
-    options: PartialTabsOptions
-  ): js.Array[typings.materializeCss.M.Tabs] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Tabs]]
+  inline def init(els: MElements): js.Array[typings.materializeCss.M.Tabs] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Tabs]]
+  inline def init(els: MElements, options: PartialTabsOptions): js.Array[typings.materializeCss.M.Tabs] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Tabs]]
   /**
     * Init Tabs
     */

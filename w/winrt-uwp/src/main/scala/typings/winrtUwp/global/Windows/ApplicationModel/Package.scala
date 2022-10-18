@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a package. */
-@JSGlobal("Windows.ApplicationModel.Package")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Package")
 @js.native
-abstract class Package ()
+open class Package ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Package {
   

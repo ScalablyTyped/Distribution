@@ -1,7 +1,7 @@
 package typings.sidewayAddress
 
-import typings.sidewayAddress.ipMod.Cidr
-import typings.sidewayAddress.ipMod.Version
+import typings.sidewayAddress.distIpMod.Cidr
+import typings.sidewayAddress.distIpMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

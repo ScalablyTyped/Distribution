@@ -83,24 +83,30 @@ object anon {
     }
   }
   
-  trait CustomHeadersTop extends StObject {
+  trait CustomHeadersFilter extends StObject {
     
     var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
+    var filter: js.UndefOr[String] = js.undefined
+    
     var top: js.UndefOr[Double] = js.undefined
   }
-  object CustomHeadersTop {
+  object CustomHeadersFilter {
     
-    inline def apply(): CustomHeadersTop = {
+    inline def apply(): CustomHeadersFilter = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CustomHeadersTop]
+      __obj.asInstanceOf[CustomHeadersFilter]
     }
     
-    extension [Self <: CustomHeadersTop](x: Self) {
+    extension [Self <: CustomHeadersFilter](x: Self) {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
@@ -255,8 +261,6 @@ object anon {
     
     var customHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var filter: js.UndefOr[String] = js.undefined
-    
     var top: js.UndefOr[Double] = js.undefined
   }
   object Top {
@@ -271,10 +275,6 @@ object anon {
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
       inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
-      
-      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-      
-      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       

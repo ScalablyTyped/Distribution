@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.Shortcut
 import typings.baseui.anon.Ariadescribedby
 import typings.baseui.anon.CalendarPropsunknownadapt
 import typings.baseui.anon.Orientation
-import typings.baseui.anon.`4`
-import typings.baseui.anon.`6`
+import typings.baseui.anon.`1`
+import typings.baseui.anon.`3`
 import typings.baseui.anon.separateRangeInputsboolea
 import typings.baseui.baseuiStrings.button
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.div
 import typings.baseui.baseuiStrings.span
-import typings.baseui.calendarMod.default
+import typings.baseui.datepickerCalendarMod.default
 import typings.baseui.datepickerStatefulContainerMod.InputProps
 import typings.baseui.datepickerStatefulContainerMod.Props
 import typings.baseui.datepickerTypesMod.CalendarProps
@@ -20,11 +20,11 @@ import typings.baseui.datepickerTypesMod.ContainerState
 import typings.baseui.datepickerTypesMod.DatepickerProps
 import typings.baseui.datepickerTypesMod.SharedStyleProps
 import typings.baseui.datepickerTypesMod.StateReducer
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.baseui.timepickerTypesMod.TimePickerDefaultProps
 import typings.baseui.timepickerTypesMod.TimePickerProps
-import typings.baseui.utilsTypesMod.DateIOAdapter
 import typings.react.mod.ReactNode
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,7 +154,7 @@ object datepickerMod {
   @JSImport("baseui/datepicker", "StatefulCalendar")
   @js.native
   open class StatefulCalendar[T] ()
-    extends typings.baseui.statefulCalendarMod.default[T]
+    extends typings.baseui.datepickerStatefulCalendarMod.default[T]
   object StatefulCalendar {
     
     @JSImport("baseui/datepicker", "StatefulCalendar")
@@ -164,8 +164,8 @@ object datepickerMod {
     /* static member */
     @JSImport("baseui/datepicker", "StatefulCalendar.defaultProps")
     @js.native
-    def defaultProps: typings.baseui.statefulCalendarMod.DatepickerProps[Any] = js.native
-    inline def defaultProps_=(x: typings.baseui.statefulCalendarMod.DatepickerProps[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: typings.baseui.datepickerStatefulCalendarMod.DatepickerProps[Any] = js.native
+    inline def defaultProps_=(x: typings.baseui.datepickerStatefulCalendarMod.DatepickerProps[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("baseui/datepicker", "StatefulContainer")
@@ -201,13 +201,13 @@ object datepickerMod {
       
       @JSImport("baseui/datepicker", "StatefulContainer.defaultProps.onChange")
       @js.native
-      def onChange: js.UndefOr[js.Function1[/* a */ `6`, Any]] = js.native
-      inline def onChange_=(x: js.UndefOr[js.Function1[/* a */ `6`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
+      def onChange: js.UndefOr[js.Function1[/* a */ `3`, Any]] = js.native
+      inline def onChange_=(x: js.UndefOr[js.Function1[/* a */ `3`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChange")(x.asInstanceOf[js.Any])
       
       @JSImport("baseui/datepicker", "StatefulContainer.defaultProps.onRangeChange")
       @js.native
-      def onRangeChange: js.UndefOr[js.Function1[/* a */ `4`, Any]] = js.native
-      inline def onRangeChange_=(x: js.UndefOr[js.Function1[/* a */ `4`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRangeChange")(x.asInstanceOf[js.Any])
+      def onRangeChange: js.UndefOr[js.Function1[/* a */ `1`, Any]] = js.native
+      inline def onRangeChange_=(x: js.UndefOr[js.Function1[/* a */ `1`, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRangeChange")(x.asInstanceOf[js.Any])
       
       @JSImport("baseui/datepicker", "StatefulContainer.defaultProps.range")
       @js.native
@@ -224,7 +224,7 @@ object datepickerMod {
   @JSImport("baseui/datepicker", "StatefulDatePicker")
   @js.native
   open class StatefulDatePicker_[T] ()
-    extends typings.baseui.statefulDatepickerMod.default[T]
+    extends typings.baseui.datepickerStatefulDatepickerMod.default[T]
   object StatefulDatePicker_ {
     
     @JSImport("baseui/datepicker", "StatefulDatePicker")
@@ -234,14 +234,14 @@ object datepickerMod {
     /* static member */
     @JSImport("baseui/datepicker", "StatefulDatePicker.defaultProps")
     @js.native
-    def defaultProps: typings.baseui.statefulDatepickerMod.Props[Any] = js.native
-    inline def defaultProps_=(x: typings.baseui.statefulDatepickerMod.Props[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: typings.baseui.datepickerStatefulDatepickerMod.Props[Any] = js.native
+    inline def defaultProps_=(x: typings.baseui.datepickerStatefulDatepickerMod.Props[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("baseui/datepicker", "StatefulDatepicker")
   @js.native
   open class StatefulDatepicker[T] ()
-    extends typings.baseui.statefulDatepickerMod.default[T]
+    extends typings.baseui.datepickerStatefulDatepickerMod.default[T]
   object StatefulDatepicker {
     
     @JSImport("baseui/datepicker", "StatefulDatepicker")
@@ -251,8 +251,8 @@ object datepickerMod {
     /* static member */
     @JSImport("baseui/datepicker", "StatefulDatepicker.defaultProps")
     @js.native
-    def defaultProps: typings.baseui.statefulDatepickerMod.Props[Any] = js.native
-    inline def defaultProps_=(x: typings.baseui.statefulDatepickerMod.Props[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: typings.baseui.datepickerStatefulDatepickerMod.Props[Any] = js.native
+    inline def defaultProps_=(x: typings.baseui.datepickerStatefulDatepickerMod.Props[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("baseui/datepicker", "StyledCalendarContainer")

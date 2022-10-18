@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsFolderFindMod.FolderFindProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object folderFindMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/FolderFind", JSImport.Default)
+  @JSImport("wix-ui-icons-common/FolderFind", JSImport.Default)
   @js.native
   val default: FC[FolderFindProps] = js.native
-  
-  trait FolderFindProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object FolderFindProps {
-    
-    inline def apply(): FolderFindProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FolderFindProps]
-    }
-    
-    extension [Self <: FolderFindProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[FolderFindProps]
   

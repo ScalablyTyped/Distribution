@@ -1,20 +1,25 @@
 package typings.cypress.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.Cypress.Timeoutable> */
-trait PartialTimeoutable extends js.Object {
+trait PartialTimeoutable extends StObject {
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object PartialTimeoutable {
-  @scala.inline
-  def apply(timeout: js.UndefOr[Double] = js.undefined): PartialTimeoutable = {
+  
+  inline def apply(): PartialTimeoutable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTimeoutable]
   }
+  
+  extension [Self <: PartialTimeoutable](x: Self) {
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

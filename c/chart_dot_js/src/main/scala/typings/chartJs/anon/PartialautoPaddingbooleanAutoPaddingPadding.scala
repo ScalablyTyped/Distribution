@@ -1,9 +1,9 @@
 package typings.chartJs.anon
 
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsStrings.scatter
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableContext
+import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

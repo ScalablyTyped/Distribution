@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "MatrixBridge")
 @js.native
 open class MatrixBridge protected ()
-  extends typings.matrixBotSdk.matrixBridgeMod.MatrixBridge {
-  def this(appservice: typings.matrixBotSdk.appserviceMod.Appservice) = this()
+  extends typings.matrixBotSdk.libAppserviceMatrixBridgeMod.MatrixBridge {
+  def this(appservice: typings.matrixBotSdk.libAppserviceAppserviceMod.Appservice) = this()
 }

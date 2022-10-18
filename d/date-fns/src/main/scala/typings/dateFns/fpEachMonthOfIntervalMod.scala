@@ -9,7 +9,7 @@ object fpEachMonthOfIntervalMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/eachMonthOfInterval", JSImport.Default)
+    @JSImport("date-fns/fp/eachMonthOfInterval", JSImport.Default)
     @js.native
     val ^ : CurriedFn1[Interval, js.Array[js.Date]] = js.native
     

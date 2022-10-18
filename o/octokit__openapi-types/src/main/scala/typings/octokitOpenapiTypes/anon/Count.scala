@@ -6,49 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Count extends StObject {
   
-  /** Used for pagination: the number of results to return. */
-  var count: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['count'] */ js.Any
-  ] = js.undefined
+  var count: Double
   
-  /** attributes to exclude */
-  var excludedAttributes: js.UndefOr[String] = js.undefined
+  /** Format: date-time */
+  var timestamp: String
   
-  /** filter results */
-  var filter: js.UndefOr[String] = js.undefined
-  
-  /** Used for pagination: the index of the first result to return. */
-  var startIndex: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['start-index'] */ js.Any
-  ] = js.undefined
+  var uniques: Double
 }
 object Count {
   
-  inline def apply(): Count = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(count: Double, timestamp: String, uniques: Double): Count = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], uniques = uniques.asInstanceOf[js.Any])
     __obj.asInstanceOf[Count]
   }
   
   extension [Self <: Count](x: Self) {
     
-    inline def setCount(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['count'] */ js.Any
-    ): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    inline def setExcludedAttributes(value: String): Self = StObject.set(x, "excludedAttributes", value.asInstanceOf[js.Any])
-    
-    inline def setExcludedAttributesUndefined: Self = StObject.set(x, "excludedAttributes", js.undefined)
-    
-    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-    
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-    
-    inline def setStartIndex(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['start-index'] */ js.Any
-    ): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
-    
-    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setUniques(value: Double): Self = StObject.set(x, "uniques", value.asInstanceOf[js.Any])
   }
 }

@@ -1,22 +1,21 @@
 package typings.nickThompsonElementary
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nickThompsonElementary.childrenMod.Child
-import typings.nickThompsonElementary.childrenMod.ChildrenArray
-import typings.nickThompsonElementary.childrenMod.SizedChildrenArray
 import typings.nickThompsonElementary.nickThompsonElementaryInts.`0`
 import typings.nickThompsonElementary.nickThompsonElementaryInts.`1`
 import typings.nickThompsonElementary.nickThompsonElementaryInts.`2`
 import typings.nickThompsonElementary.nickThompsonElementaryInts.`3`
 import typings.nickThompsonElementary.nickThompsonElementaryInts.`6`
-import typings.nickThompsonElementary.propsMod.ConstProps
-import typings.nickThompsonElementary.propsMod.ConvolveProps
-import typings.nickThompsonElementary.propsMod.DelayProps
-import typings.nickThompsonElementary.propsMod.InProps
-import typings.nickThompsonElementary.propsMod.KeyProps
-import typings.nickThompsonElementary.propsMod.SampleProps
-import typings.nickThompsonElementary.propsMod.SeqProps
-import typings.nickThompsonElementary.propsMod.TableProps
+import typings.nickThompsonElementary.srcCoreChildrenMod.ChildrenArray
+import typings.nickThompsonElementary.srcCoreChildrenMod.SizedChildrenArray
+import typings.nickThompsonElementary.srcCorePropsMod.ConstProps
+import typings.nickThompsonElementary.srcCorePropsMod.ConvolveProps
+import typings.nickThompsonElementary.srcCorePropsMod.DelayProps
+import typings.nickThompsonElementary.srcCorePropsMod.InProps
+import typings.nickThompsonElementary.srcCorePropsMod.KeyProps
+import typings.nickThompsonElementary.srcCorePropsMod.SampleProps
+import typings.nickThompsonElementary.srcCorePropsMod.SeqProps
+import typings.nickThompsonElementary.srcCorePropsMod.TableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -151,147 +150,118 @@ object anon {
   }
   object keyininSizedChildrenArray {
     
+    inline def apply(
+      abs: SizedChildrenArray[`1`],
+      asinh: SizedChildrenArray[`1`],
+      biquad: SizedChildrenArray[`6`],
+      ceil: SizedChildrenArray[`1`],
+      convolve: SizedChildrenArray[`1`],
+      cos: SizedChildrenArray[`1`],
+      counter: SizedChildrenArray[`1`],
+      delay: SizedChildrenArray[`3`],
+      exp: SizedChildrenArray[`1`],
+      floor: SizedChildrenArray[`1`],
+      ge: SizedChildrenArray[`2`],
+      geq: SizedChildrenArray[`2`],
+      in: SizedChildrenArray[`0` | `1`],
+      latch: SizedChildrenArray[`2`],
+      le: SizedChildrenArray[`2`],
+      leq: SizedChildrenArray[`2`],
+      ln: SizedChildrenArray[`1`],
+      log: SizedChildrenArray[`1`],
+      log2: SizedChildrenArray[`1`],
+      max: SizedChildrenArray[`2`],
+      min: SizedChildrenArray[`2`],
+      mod: SizedChildrenArray[`2`],
+      phasor: SizedChildrenArray[`1`],
+      pole: SizedChildrenArray[`2`],
+      pow: SizedChildrenArray[`2`],
+      rand: SizedChildrenArray[`0`],
+      sample: SizedChildrenArray[`1`],
+      seq: SizedChildrenArray[`1` | `2`],
+      sin: SizedChildrenArray[`1`],
+      sqrt: SizedChildrenArray[`1`],
+      sr: SizedChildrenArray[`0`],
+      table: SizedChildrenArray[`1`],
+      tan: SizedChildrenArray[`1`],
+      tanh: SizedChildrenArray[`1`],
+      z: SizedChildrenArray[`0`]
+    ): keyininSizedChildrenArray = {
+      val __obj = js.Dynamic.literal(abs = abs.asInstanceOf[js.Any], asinh = asinh.asInstanceOf[js.Any], biquad = biquad.asInstanceOf[js.Any], ceil = ceil.asInstanceOf[js.Any], convolve = convolve.asInstanceOf[js.Any], cos = cos.asInstanceOf[js.Any], counter = counter.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], floor = floor.asInstanceOf[js.Any], ge = ge.asInstanceOf[js.Any], geq = geq.asInstanceOf[js.Any], in = in.asInstanceOf[js.Any], latch = latch.asInstanceOf[js.Any], le = le.asInstanceOf[js.Any], leq = leq.asInstanceOf[js.Any], ln = ln.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], log2 = log2.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], mod = mod.asInstanceOf[js.Any], phasor = phasor.asInstanceOf[js.Any], pole = pole.asInstanceOf[js.Any], pow = pow.asInstanceOf[js.Any], rand = rand.asInstanceOf[js.Any], sample = sample.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], sin = sin.asInstanceOf[js.Any], sqrt = sqrt.asInstanceOf[js.Any], sr = sr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tan = tan.asInstanceOf[js.Any], tanh = tanh.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+      __obj.asInstanceOf[keyininSizedChildrenArray]
+    }
+    
     extension [Self <: keyininSizedChildrenArray](x: Self) {
       
       inline def setAbs(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
       
-      inline def setAbsVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "abs", js.Array(value*))
-      
       inline def setAsinh(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "asinh", value.asInstanceOf[js.Any])
-      
-      inline def setAsinhVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "asinh", js.Array(value*))
       
       inline def setBiquad(value: SizedChildrenArray[`6`]): Self = StObject.set(x, "biquad", value.asInstanceOf[js.Any])
       
-      inline def setBiquadVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "biquad", js.Array(value*))
-      
       inline def setCeil(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "ceil", value.asInstanceOf[js.Any])
-      
-      inline def setCeilVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "ceil", js.Array(value*))
       
       inline def setConvolve(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "convolve", value.asInstanceOf[js.Any])
       
-      inline def setConvolveVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "convolve", js.Array(value*))
-      
       inline def setCos(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
-      
-      inline def setCosVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "cos", js.Array(value*))
       
       inline def setCounter(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      inline def setCounterVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "counter", js.Array(value*))
-      
       inline def setDelay(value: SizedChildrenArray[`3`]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
-      
-      inline def setDelayVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "delay", js.Array(value*))
       
       inline def setExp(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      inline def setExpVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "exp", js.Array(value*))
-      
       inline def setFloor(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
-      
-      inline def setFloorVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "floor", js.Array(value*))
       
       inline def setGe(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "ge", value.asInstanceOf[js.Any])
       
-      inline def setGeVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "ge", js.Array(value*))
-      
       inline def setGeq(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "geq", value.asInstanceOf[js.Any])
-      
-      inline def setGeqVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "geq", js.Array(value*))
       
       inline def setIn(value: SizedChildrenArray[`0` | `1`]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      inline def setInVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "in", js.Array(value*))
-      
       inline def setLatch(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "latch", value.asInstanceOf[js.Any])
-      
-      inline def setLatchVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "latch", js.Array(value*))
       
       inline def setLe(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "le", value.asInstanceOf[js.Any])
       
-      inline def setLeVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "le", js.Array(value*))
-      
       inline def setLeq(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "leq", value.asInstanceOf[js.Any])
       
-      inline def setLeqVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "leq", js.Array(value*))
-      
       inline def setLn(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "ln", value.asInstanceOf[js.Any])
-      
-      inline def setLnVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "ln", js.Array(value*))
       
       inline def setLog(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       inline def setLog2(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "log2", value.asInstanceOf[js.Any])
       
-      inline def setLog2Varargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "log2", js.Array(value*))
-      
-      inline def setLogVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "log", js.Array(value*))
-      
       inline def setMax(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "max", js.Array(value*))
       
       inline def setMin(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      inline def setMinVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "min", js.Array(value*))
-      
       inline def setMod(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
-      
-      inline def setModVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "mod", js.Array(value*))
       
       inline def setPhasor(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "phasor", value.asInstanceOf[js.Any])
       
-      inline def setPhasorVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "phasor", js.Array(value*))
-      
       inline def setPole(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "pole", value.asInstanceOf[js.Any])
-      
-      inline def setPoleVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "pole", js.Array(value*))
       
       inline def setPow(value: SizedChildrenArray[`2`]): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
       
-      inline def setPowVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "pow", js.Array(value*))
-      
       inline def setRand(value: SizedChildrenArray[`0`]): Self = StObject.set(x, "rand", value.asInstanceOf[js.Any])
-      
-      inline def setRandVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "rand", js.Array(value*))
       
       inline def setSample(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
-      inline def setSampleVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "sample", js.Array(value*))
-      
       inline def setSeq(value: SizedChildrenArray[`1` | `2`]): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
-      
-      inline def setSeqVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "seq", js.Array(value*))
       
       inline def setSin(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "sin", value.asInstanceOf[js.Any])
       
-      inline def setSinVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "sin", js.Array(value*))
-      
       inline def setSqrt(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "sqrt", value.asInstanceOf[js.Any])
-      
-      inline def setSqrtVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "sqrt", js.Array(value*))
       
       inline def setSr(value: SizedChildrenArray[`0`]): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
       
-      inline def setSrVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "sr", js.Array(value*))
-      
       inline def setTable(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
-      
-      inline def setTableVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "table", js.Array(value*))
       
       inline def setTan(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "tan", value.asInstanceOf[js.Any])
       
-      inline def setTanVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "tan", js.Array(value*))
-      
       inline def setTanh(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "tanh", value.asInstanceOf[js.Any])
       
-      inline def setTanhVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "tanh", js.Array(value*))
-      
       inline def setZ(value: SizedChildrenArray[`0`]): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
-      
-      inline def setZVarargs(value: (Child | scala.Nothing)*): Self = StObject.set(x, "z", js.Array(value*))
     }
   }
   

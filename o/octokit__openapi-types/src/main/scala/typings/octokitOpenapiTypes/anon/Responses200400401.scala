@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses200400401 extends StObject {
   
-  var parameters: PathOwnerStringQuery426
+  var parameters: Path292Query250
   
   var responses: `200400401`
 }
 object Responses200400401 {
   
-  inline def apply(parameters: PathOwnerStringQuery426, responses: `200400401`): Responses200400401 = {
+  inline def apply(parameters: Path292Query250, responses: `200400401`): Responses200400401 = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200400401]
   }
   
   extension [Self <: Responses200400401](x: Self) {
     
-    inline def setParameters(value: PathOwnerStringQuery426): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Path292Query250): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setResponses(value: `200400401`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

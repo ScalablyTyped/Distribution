@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates that the type is supported in desktop apps and in Windows Store apps. */
-@JSGlobal("Windows.Foundation.Metadata.DualApiPartitionAttribute")
+/* note: abstract class */ @JSGlobal("Windows.Foundation.Metadata.DualApiPartitionAttribute")
 @js.native
-abstract class DualApiPartitionAttribute ()
+open class DualApiPartitionAttribute ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Metadata.DualApiPartitionAttribute

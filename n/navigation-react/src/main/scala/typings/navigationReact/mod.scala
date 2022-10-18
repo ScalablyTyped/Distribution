@@ -211,7 +211,7 @@ object mod {
     /**
       * The NavigationData for the current State
       */
-    var data: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+    var data: /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
     
     /**
       * The last State displayed before the current State
@@ -223,7 +223,7 @@ object mod {
       */
     var state: State[
         Key & String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
       ]
     
     /**
@@ -235,11 +235,11 @@ object mod {
     
     inline def apply[NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */](
       asyncData: Any,
-      data: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any,
+      data: /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any,
       oldState: State[String, Any],
       state: State[
           Key & String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
         ],
       stateNavigator: StateNavigator[NavigationInfo, Key]
     ): NavigationEvent[NavigationInfo, Key] = {
@@ -252,7 +252,7 @@ object mod {
       inline def setAsyncData(value: Any): Self = StObject.set(x, "asyncData", value.asInstanceOf[js.Any])
       
       inline def setData(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
       ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setOldState(value: State[String, Any]): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
@@ -260,7 +260,7 @@ object mod {
       inline def setState(
         value: State[
               Key & String, 
-              /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+              /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
             ]
       ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -337,8 +337,8 @@ object mod {
       * The data to add from the current NavigationData
       */
     var currentDataKeys: js.UndefOr[
-        (String & (/* import warning: importer.ImportType#apply Failed type conversion: keyof NavigationInfo[Key] */ js.Any)) | (js.Array[
-          String & (/* import warning: importer.ImportType#apply Failed type conversion: keyof NavigationInfo[Key] */ js.Any)
+        (String & (/* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? keyof NavigationInfo[Key] : any */ js.Any)) | (js.Array[
+          String & (/* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? keyof NavigationInfo[Key] : any */ js.Any)
         ])
       ] = js.undefined
     
@@ -361,7 +361,7 @@ object mod {
       * The NavigationData to pass
       */
     var navigationData: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
       ] = js.undefined
   }
   object RefreshLinkProps {
@@ -382,15 +382,15 @@ object mod {
       inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
       inline def setCurrentDataKeys(
-        value: (String & (/* import warning: importer.ImportType#apply Failed type conversion: keyof NavigationInfo[Key] */ js.Any)) | (js.Array[
-              String & (/* import warning: importer.ImportType#apply Failed type conversion: keyof NavigationInfo[Key] */ js.Any)
+        value: (String & (/* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? keyof NavigationInfo[Key] : any */ js.Any)) | (js.Array[
+              String & (/* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? keyof NavigationInfo[Key] : any */ js.Any)
             ])
       ): Self = StObject.set(x, "currentDataKeys", value.asInstanceOf[js.Any])
       
       inline def setCurrentDataKeysUndefined: Self = StObject.set(x, "currentDataKeys", js.undefined)
       
       inline def setCurrentDataKeysVarargs(
-        value: (String & (/* import warning: importer.ImportType#apply Failed type conversion: keyof NavigationInfo[Key] */ js.Any))*
+        value: (String & (/* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? keyof NavigationInfo[Key] : any */ js.Any))*
       ): Self = StObject.set(x, "currentDataKeys", js.Array(value*))
       
       inline def setDisableActive(value: Boolean): Self = StObject.set(x, "disableActive", value.asInstanceOf[js.Any])
@@ -406,7 +406,7 @@ object mod {
       inline def setIncludeCurrentDataUndefined: Self = StObject.set(x, "includeCurrentData", js.undefined)
       
       inline def setNavigationData(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: Key extends keyof NavigationInfo ? NavigationInfo[Key] : any */ js.Any
       ): Self = StObject.set(x, "navigationData", value.asInstanceOf[js.Any])
       
       inline def setNavigationDataUndefined: Self = StObject.set(x, "navigationData", js.undefined)

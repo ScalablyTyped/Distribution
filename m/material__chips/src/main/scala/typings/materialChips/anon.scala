@@ -1,17 +1,17 @@
 package typings.materialChips
 
+import typings.materialChips.actionConstantsMod.MDCChipActionAttributes
+import typings.materialChips.actionConstantsMod.MDCChipActionEvents
+import typings.materialChips.actionConstantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.actionConstantsMod.MDCChipActionType
 import typings.materialChips.chipConstantsMod.MDCChipAnimation
 import typings.materialChips.chipConstantsMod.MDCChipAttributes
 import typings.materialChips.chipConstantsMod.MDCChipCssClasses
 import typings.materialChips.chipConstantsMod.MDCChipEvents
 import typings.materialChips.chipSetConstantsMod.MDCChipSetAttributes
 import typings.materialChips.chipSetConstantsMod.MDCChipSetEvents
-import typings.materialChips.constantsMod.MDCChipActionAttributes
-import typings.materialChips.constantsMod.MDCChipActionEvents
-import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
-import typings.materialChips.constantsMod.MDCChipActionType
 import typings.materialChips.deprecatedChipConstantsMod.EventSource
-import typings.materialChips.trailingactionConstantsMod.InteractionTrigger
+import typings.materialChips.deprecatedTrailingactionConstantsMod.InteractionTrigger
 import typings.std.DOMRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject

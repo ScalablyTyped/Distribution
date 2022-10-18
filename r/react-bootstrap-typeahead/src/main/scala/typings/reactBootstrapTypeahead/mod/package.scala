@@ -33,8 +33,6 @@ type ShouldSelect = js.Function2[/* shouldSelect */ Boolean, /* e */ KeyboardEve
 
 type StringPropertyNames[T /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends string? K : never}[keyof T] */ js.Any
 
-type TypeaheadLabelKey[T /* <: TypeaheadModel */] = StringPropertyNames[T] | (js.Function1[/* option */ T, String])
-
 type TypeaheadModel = String | js.Object
 
 type TypeaheadResult[T /* <: TypeaheadModel */] = T & CustomOption

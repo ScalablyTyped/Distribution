@@ -1,5 +1,6 @@
 package typings.touch
 
+import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,72 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply[T](filename: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def apply[T](
-    filename: String,
-    cb: js.Function1[
-      /* err */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ], 
-      T
-    ]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def apply[T](
-    filename: String,
-    options: Unit,
-    cb: js.Function1[
-      /* err */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ], 
-      T
-    ]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apply[T](filename: String, cb: js.Function1[/* err */ js.UndefOr[ErrnoException], T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apply[T](filename: String, options: Unit, cb: js.Function1[/* err */ js.UndefOr[ErrnoException], T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def apply[T](filename: String, options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def apply[T](
-    filename: String,
-    options: Options,
-    cb: js.Function1[
-      /* err */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ], 
-      T
-    ]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apply[T](filename: String, options: Options, cb: js.Function1[/* err */ js.UndefOr[ErrnoException], T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("touch", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def ftouch[T](fd: Double): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def ftouch[T](
-    fd: Double,
-    cb: js.Function1[
-      /* err */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ], 
-      T
-    ]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def ftouch[T](
-    fd: Double,
-    options: Unit,
-    cb: js.Function1[
-      /* err */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ], 
-      T
-    ]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def ftouch[T](fd: Double, cb: js.Function1[/* err */ js.UndefOr[ErrnoException], T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def ftouch[T](fd: Double, options: Unit, cb: js.Function1[/* err */ js.UndefOr[ErrnoException], T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def ftouch[T](fd: Double, options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def ftouch[T](
-    fd: Double,
-    options: Options,
-    cb: js.Function1[
-      /* err */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
-      ], 
-      T
-    ]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def ftouch[T](fd: Double, options: Options, cb: js.Function1[/* err */ js.UndefOr[ErrnoException], T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouch")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   inline def ftouchSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftouchSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def ftouchSync(fd: Double, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftouchSync")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]

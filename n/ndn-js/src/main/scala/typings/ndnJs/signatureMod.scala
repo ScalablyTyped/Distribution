@@ -78,9 +78,9 @@ object signatureMod {
   @js.native
   open class Sha256WithRsaSignature () extends SignatureBaseKlVp[Sha256WithRsaSignature]
   
-  @JSImport("ndn-js/signature", "Signature")
+  /* note: abstract class */ @JSImport("ndn-js/signature", "Signature")
   @js.native
-  abstract class Signature () extends StObject
+  open class Signature () extends StObject
   
   @JSImport("ndn-js/signature", "SignatureBase")
   @js.native

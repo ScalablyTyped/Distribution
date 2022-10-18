@@ -43,10 +43,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("phin", "promisified")
-  @js.native
-  def promisified: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ Any = js.native
-  inline def promisified_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof phin */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promisified")(x.asInstanceOf[js.Any])
+  inline def promisified(options: String): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  inline def promisified(options: IWithDataIOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  inline def promisified(options: IWithDataIStreamResponseO): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  inline def promisified(options: IWithDataIStringResponseO): js.Promise[IStringResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStringResponse]]
+  inline def promisified(options: IWithFormIOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  inline def promisified(options: IWithFormIStreamResponseO): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  inline def promisified(options: IWithFormIStringResponseO): js.Promise[IStringResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStringResponse]]
+  inline def promisified(options: IOptions): js.Promise[IResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResponse]]
+  inline def promisified(options: IStreamResponseOptions): js.Promise[IStreamResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStreamResponse]]
+  inline def promisified(options: IStringResponseOptions): js.Promise[IStringResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("promisified")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IStringResponse]]
   
   inline def unpromisified(options: String, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def unpromisified(options: IWithDataIOptions, callback: ICallback[IResponse] | IErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unpromisified")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

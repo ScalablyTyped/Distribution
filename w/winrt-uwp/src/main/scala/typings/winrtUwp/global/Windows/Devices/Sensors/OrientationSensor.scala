@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an orientation sensor. */
-@JSGlobal("Windows.Devices.Sensors.OrientationSensor")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.OrientationSensor")
 @js.native
-abstract class OrientationSensor ()
+open class OrientationSensor ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.OrientationSensor
 object OrientationSensor {

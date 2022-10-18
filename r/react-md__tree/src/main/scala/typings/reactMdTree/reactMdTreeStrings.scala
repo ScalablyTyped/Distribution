@@ -1,6 +1,6 @@
 package typings.reactMdTree
 
-import typings.reactMdTree.typesMod.TreeItemKeys
+import typings.reactMdTree.typesTypesMod.TreeItemKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

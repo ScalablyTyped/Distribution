@@ -1,6 +1,6 @@
 package typings.paypalPaypalJs.anon
 
-import typings.paypalPaypalJs.subscriptionsCommonsMod.ProductType
+import typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.ProductType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Category extends StObject {
   
   /** The product category. */
-  var category: typings.paypalPaypalJs.subscriptionsCommonsMod.Category
+  var category: typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.Category
   
   /** The product description. */
   var description: String
@@ -28,7 +28,7 @@ trait Category extends StObject {
 object Category {
   
   inline def apply(
-    category: typings.paypalPaypalJs.subscriptionsCommonsMod.Category,
+    category: typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.Category,
     description: String,
     home_url: String,
     image_url: String,
@@ -42,7 +42,7 @@ object Category {
   
   extension [Self <: Category](x: Self) {
     
-    inline def setCategory(value: typings.paypalPaypalJs.subscriptionsCommonsMod.Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: typings.paypalPaypalJs.typesApisSubscriptionsCommonsMod.Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

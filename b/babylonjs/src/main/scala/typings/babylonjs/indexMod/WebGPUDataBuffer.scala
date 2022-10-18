@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "WebGPUDataBuffer")
 @js.native
 open class WebGPUDataBuffer protected ()
-  extends typings.babylonjs.babylonjsIndexMod.WebGPUDataBuffer {
+  extends typings.babylonjs.meshesIndexMod.WebGPUDataBuffer {
   def this(resource: GPUBuffer) = this()
 }

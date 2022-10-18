@@ -78,10 +78,6 @@ object parseStrings {
   inline def String: String = "String".asInstanceOf[String]
   
   @js.native
-  sealed trait ToJSON extends StObject
-  inline def ToJSON: ToJSON = "ToJSON".asInstanceOf[ToJSON]
-  
-  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
   
@@ -92,10 +88,6 @@ object parseStrings {
   @js.native
   sealed trait createdAt extends StObject
   inline def createdAt: createdAt = "createdAt".asInstanceOf[createdAt]
-  
-  @js.native
-  sealed trait define extends StObject
-  inline def define: define = "define".asInstanceOf[define]
   
   @js.native
   sealed trait delete extends StObject
@@ -116,10 +108,6 @@ object parseStrings {
   @js.native
   sealed trait open extends StObject
   inline def open: open = "open".asInstanceOf[open]
-  
-  @js.native
-  sealed trait run extends StObject
-  inline def run: run = "run".asInstanceOf[run]
   
   @js.native
   sealed trait update extends StObject

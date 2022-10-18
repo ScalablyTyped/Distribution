@@ -1,15 +1,15 @@
 package typings.fpTs.mod
 
 import typings.fpTs.anon.`0`
-import typings.fpTs.applyMod.Apply
-import typings.fpTs.applyMod.Apply1
-import typings.fpTs.applyMod.Apply2
-import typings.fpTs.applyMod.Apply2C
-import typings.fpTs.applyMod.Apply3
-import typings.fpTs.applyMod.Apply3C
-import typings.fpTs.applyMod.Apply4
-import typings.fpTs.applyMod.EnforceNonEmptyRecord
-import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.libApplyMod.Apply
+import typings.fpTs.libApplyMod.Apply1
+import typings.fpTs.libApplyMod.Apply2
+import typings.fpTs.libApplyMod.Apply2C
+import typings.fpTs.libApplyMod.Apply3
+import typings.fpTs.libApplyMod.Apply3C
+import typings.fpTs.libApplyMod.Apply4
+import typings.fpTs.libApplyMod.EnforceNonEmptyRecord
+import typings.fpTs.libSemigroupMod.Semigroup
 import typings.std.Exclude
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -321,7 +321,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind3<G, R, E, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](F: Apply2C[F, E], G: Apply1[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Apply2C[F, E], G: Apply1[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, (a : A): B>> */ /* fab */ Any, 
@@ -334,7 +334,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE](F: Apply2C[F, FE], G: Apply2[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Apply2C[F, FE], G: Apply2[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, (a : A): B>> */ /* fab */ Any, 
@@ -347,7 +347,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE](F: Apply2C[F, FE], G: Apply3[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Apply2C[F, FE], G: Apply3[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, (a : A): B>> */ /* fab */ Any, 
@@ -360,7 +360,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, FE](F: Apply2C[F, FE], G: Apply4[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: Apply2C[F, FE], G: Apply4[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind4<G, S, R, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind4<G, S, R, GE, (a : A): B>> */ /* fab */ Any, 
@@ -399,7 +399,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](F: Apply3C[F, E], G: Apply1[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Apply3C[F, E], G: Apply1[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, Kind<G, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, Kind<G, (a : A): B>> */ /* fab */ Any, 
@@ -412,7 +412,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, Kind<G, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE](F: Apply3C[F, FE], G: Apply2[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Apply3C[F, FE], G: Apply2[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, Kind2<G, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, Kind2<G, GE, (a : A): B>> */ /* fab */ Any, 
@@ -425,7 +425,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, Kind2<G, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE](F: Apply3C[F, FE], G: Apply3[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Apply3C[F, FE], G: Apply3[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind3<G, GR, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind3<G, GR, GE, (a : A): B>> */ /* fab */ Any, 
@@ -438,7 +438,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind3<G, GR, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, FE](F: Apply3C[F, FE], G: Apply4[G]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: Apply3C[F, FE], G: Apply4[G]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind4<G, S, GR, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind4<G, S, GR, GE, (a : A): B>> */ /* fab */ Any, 
@@ -529,7 +529,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind3<G, R, E, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, GE](F: Apply2C[F, FE], G: Apply2C[G, GE]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, GE](F: Apply2C[F, FE], G: Apply2C[G, GE]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, (a : A): B>> */ /* fab */ Any, 
@@ -542,7 +542,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, GE](F: Apply2C[F, FE], G: Apply3C[G, GE]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, GE](F: Apply2C[F, FE], G: Apply3C[G, GE]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, (a : A): B>> */ /* fab */ Any, 
@@ -555,7 +555,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, FE, GE](F: Apply3C[F, FE], G: Apply2C[G, GE]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, GE](F: Apply3C[F, FE], G: Apply2C[G, GE]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, Kind2<G, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, Kind2<G, GE, (a : A): B>> */ /* fab */ Any, 
@@ -568,7 +568,7 @@ object apply {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, FE, Kind2<G, GE, B>> */ Any
     ]
   ]]
-  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, GE](F: Apply3C[F, FE], G: Apply3C[G, GE]): js.Function1[
+  inline def ap[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, FE, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, GE](F: Apply3C[F, FE], G: Apply3C[G, GE]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind3<G, GR, GE, A>> */ /* fa */ Any, 
     js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, FR, FE, Kind3<G, GR, GE, (a : A): B>> */ /* fab */ Any, 

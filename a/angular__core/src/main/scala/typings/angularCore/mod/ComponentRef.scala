@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "ComponentRef")
+/* note: abstract class */ @JSImport("@angular/core", "ComponentRef")
 @js.native
-abstract class ComponentRef[C] () extends StObject {
+open class ComponentRef[C] () extends StObject {
   
   /**
     * The change detector for this component instance.

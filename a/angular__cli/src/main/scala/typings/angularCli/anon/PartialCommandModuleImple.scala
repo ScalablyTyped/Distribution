@@ -1,13 +1,13 @@
 package typings.angularCli.anon
 
 import typings.angularCli.angularCliBooleans.`false`
-import typings.angularCli.commandModuleMod.CommandContext
-import typings.angularCli.commandModuleMod.CommandScope
-import typings.angularCli.commandModuleMod.FullDescribe
-import typings.angularCli.commandModuleMod.OtherOptions
-import typings.angularCli.configMod.AngularWorkspace
-import typings.angularCli.jsonSchemaMod.Option
-import typings.angularDevkitCore.apiMod.Analytics
+import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
+import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandScope
+import typings.angularCli.srcCommandBuilderCommandModuleMod.FullDescribe
+import typings.angularCli.srcCommandBuilderCommandModuleMod.OtherOptions
+import typings.angularCli.srcCommandBuilderUtilitiesJsonSchemaMod.Option
+import typings.angularCli.srcUtilitiesConfigMod.AngularWorkspace
+import typings.angularDevkitCore.srcAnalyticsApiMod.Analytics
 import typings.yargs.mod.ArgumentsCamelCase
 import typings.yargs.mod.Argv
 import org.scalablytyped.runtime.StObject

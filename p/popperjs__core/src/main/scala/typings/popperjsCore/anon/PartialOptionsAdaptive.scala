@@ -1,7 +1,7 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.computeStylesMod.RoundOffsets
-import typings.popperjsCore.typesMod.Offsets
+import typings.popperjsCore.libModifiersComputeStylesMod.RoundOffsets
+import typings.popperjsCore.libTypesMod.Offsets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

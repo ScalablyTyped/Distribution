@@ -1,6 +1,5 @@
 package typings.parameter.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.parameter.anon.Type
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -112,7 +111,3 @@ type ParameterRuleBoolean = ParameterRuleBase
   - typings.parameter.mod.ParameterRuleArray
 */
 type ParameterRuleItem = _ParameterRuleItem | ParameterRuleBoolean
-
-type ParameterRules[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: parameter.parameter.ParameterRule}
-  */ typings.parameter.parameterStrings.ParameterRules & TopLevel[Any]

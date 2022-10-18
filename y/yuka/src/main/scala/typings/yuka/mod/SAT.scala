@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "SAT")
 @js.native
 open class SAT ()
-  extends typings.yuka.yukaMod.SAT
+  extends typings.yuka.srcYukaMod.SAT

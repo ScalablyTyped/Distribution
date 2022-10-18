@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-greengrass-core-sdk/stream-manager", "NotEnoughMessagesException")
 @js.native
 open class NotEnoughMessagesException ()
-  extends typings.awsGreengrassCoreSdk.clientMod.NotEnoughMessagesException
+  extends typings.awsGreengrassCoreSdk.streamManagerClientMod.NotEnoughMessagesException

@@ -9,7 +9,7 @@ object fpAddMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/add", JSImport.Default)
+    @JSImport("date-fns/fp/add", JSImport.Default)
     @js.native
     val ^ : CurriedFn2[Duration, js.Date | Double, js.Date] = js.native
     

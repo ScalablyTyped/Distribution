@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ErrorAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.clientMod.ErrorAction & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.libCommonClientMod.ErrorAction & Double] = js.native
   
-  /* 1 */ val Continue: typings.vscodeLanguageclient.clientMod.ErrorAction.Continue & Double = js.native
+  /* 1 */ val Continue: typings.vscodeLanguageclient.libCommonClientMod.ErrorAction.Continue & Double = js.native
   
-  /* 2 */ val Shutdown: typings.vscodeLanguageclient.clientMod.ErrorAction.Shutdown & Double = js.native
+  /* 2 */ val Shutdown: typings.vscodeLanguageclient.libCommonClientMod.ErrorAction.Shutdown & Double = js.native
 }

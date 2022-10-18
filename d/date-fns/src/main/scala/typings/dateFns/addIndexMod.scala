@@ -8,10 +8,10 @@ object addIndexMod {
   
   object default {
     
-    inline def apply(date: js.Date, duration: Duration): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Date]
-    inline def apply(date: Double, duration: Duration): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, duration: typings.dateFns.mod.Duration): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double, duration: typings.dateFns.mod.Duration): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Date]
     
-    @JSImport("date-fns/esm/add/index", JSImport.Default)
+    @JSImport("date-fns/add/index", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }

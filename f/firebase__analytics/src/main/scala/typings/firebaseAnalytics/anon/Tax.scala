@@ -1,7 +1,7 @@
 package typings.firebaseAnalytics.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAnalytics.publicTypesMod.Item
+import typings.firebaseAnalytics.distEsmSrcPublicTypesMod.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +18,9 @@ trait Tax
   
   var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var shipping: js.UndefOr[typings.firebaseAnalytics.publicTypesMod.Currency] = js.undefined
+  var shipping: js.UndefOr[typings.firebaseAnalytics.distEsmSrcPublicTypesMod.Currency] = js.undefined
   
-  var tax: js.UndefOr[typings.firebaseAnalytics.publicTypesMod.Currency] = js.undefined
+  var tax: js.UndefOr[typings.firebaseAnalytics.distEsmSrcPublicTypesMod.Currency] = js.undefined
   
   var transaction_id: js.UndefOr[String] = js.undefined
   
@@ -53,11 +53,11 @@ object Tax {
     
     inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setShipping(value: typings.firebaseAnalytics.publicTypesMod.Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+    inline def setShipping(value: typings.firebaseAnalytics.distEsmSrcPublicTypesMod.Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
-    inline def setTax(value: typings.firebaseAnalytics.publicTypesMod.Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: typings.firebaseAnalytics.distEsmSrcPublicTypesMod.Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
     inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
     

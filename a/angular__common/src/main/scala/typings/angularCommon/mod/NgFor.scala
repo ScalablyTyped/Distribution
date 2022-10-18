@@ -112,12 +112,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("@angular/common", "NgFor")
 @js.native
-open class NgFor[T, U /* <: NgIterable[T] */] protected () extends NgForOf[T, U] {
+open class NgFor[T, U /* <: NgIterable[T] */] protected ()
+  extends StObject
+     with NgForOf[T, U] {
   def this(
     _viewContainer: ViewContainerRef,
     _template: TemplateRef[NgForOfContext[T, U]],
     _differs: IterableDiffers
   ) = this()
+  
+  /**
+    * A callback method that performs change-detection, invoked
+    * after the default change-detector runs.
+    * See `KeyValueDiffers` and `IterableDiffers` for implementing
+    * custom change checking for collections.
+    *
+    */
+  /* CompleteClass */
+  override def ngDoCheck(): Unit = js.native
 }
 object NgFor {
   

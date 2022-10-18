@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "DistortionEffect")
 @js.native
 open class DistortionEffect ()
-  extends typings.blackEngine.distortionEffectMod.DistortionEffect {
+  extends typings.blackEngine.audioEffectsDistortionEffectMod.DistortionEffect {
   def this(value: Double) = this()
 }

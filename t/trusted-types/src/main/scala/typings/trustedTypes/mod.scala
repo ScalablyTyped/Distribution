@@ -54,15 +54,15 @@ object mod {
   }
   
   /* was `typeof lib.TrustedTypePolicy` */
-  @JSImport("trusted-types", "TrustedTypePolicy")
+  /* note: abstract class */ @JSImport("trusted-types", "TrustedTypePolicy")
   @js.native
-  abstract class TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] ()
+  open class TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] ()
     extends typings.trustedTypes.mod.global.TrustedTypePolicy[Options]
   
   /* was `typeof lib.TrustedTypePolicyFactory` */
-  @JSImport("trusted-types", "TrustedTypePolicyFactory")
+  /* note: abstract class */ @JSImport("trusted-types", "TrustedTypePolicyFactory")
   @js.native
-  abstract class TrustedTypePolicyFactory ()
+  open class TrustedTypePolicyFactory ()
     extends typings.trustedTypes.mod.global.TrustedTypePolicyFactory
   
   @JSImport("trusted-types", "TrustedTypesEnforcer")
@@ -97,15 +97,15 @@ object mod {
       extends typings.trustedTypes.libMod.TrustedScriptURL
     
     /* was `typeof lib.TrustedTypePolicy` */
-    @JSGlobal("TrustedTypePolicy")
+    /* note: abstract class */ @JSGlobal("TrustedTypePolicy")
     @js.native
-    abstract class TrustedTypePolicy[Options /* <: typings.trustedTypes.libMod.TrustedTypePolicyOptions */] ()
+    open class TrustedTypePolicy[Options /* <: typings.trustedTypes.libMod.TrustedTypePolicyOptions */] ()
       extends typings.trustedTypes.libMod.TrustedTypePolicy[Options]
     
     /* was `typeof lib.TrustedTypePolicyFactory` */
-    @JSGlobal("TrustedTypePolicyFactory")
+    /* note: abstract class */ @JSGlobal("TrustedTypePolicyFactory")
     @js.native
-    abstract class TrustedTypePolicyFactory ()
+    open class TrustedTypePolicyFactory ()
       extends typings.trustedTypes.libMod.TrustedTypePolicyFactory
     
     type TrustedTypePolicyOptions = typings.trustedTypes.libMod.TrustedTypePolicyOptions

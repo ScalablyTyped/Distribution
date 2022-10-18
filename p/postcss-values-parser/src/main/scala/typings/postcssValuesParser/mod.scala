@@ -1,10 +1,10 @@
 package typings.postcssValuesParser
 
+import typings.postcss.libNodeMod.NodeErrorOptions
+import typings.postcss.libNodeMod.Source
+import typings.postcss.libWarningMod.WarningOptions
 import typings.postcss.mod.CssSyntaxError
 import typings.postcss.mod.Result
-import typings.postcss.nodeMod.NodeErrorOptions
-import typings.postcss.nodeMod.Source
-import typings.postcss.warningMod.WarningOptions
 import typings.postcssValuesParser.anon.Map
 import typings.postcssValuesParser.postcssValuesParserStrings.atrule
 import typings.postcssValuesParser.postcssValuesParserStrings.comment

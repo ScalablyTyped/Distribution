@@ -12,9 +12,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media source. Provides a common way to reference media from different sources and exposes a common model for accessing media data regardless of the underlying media format. */
-@JSGlobal("Windows.Media.Core.MediaSource")
+/* note: abstract class */ @JSGlobal("Windows.Media.Core.MediaSource")
 @js.native
-abstract class MediaSource ()
+open class MediaSource ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaSource
 object MediaSource {

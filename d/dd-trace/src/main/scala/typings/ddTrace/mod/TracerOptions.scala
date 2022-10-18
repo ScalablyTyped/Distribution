@@ -13,6 +13,7 @@ import typings.ddTrace.ddTraceStrings.debug
 import typings.ddTrace.ddTraceStrings.error
 import typings.ddTrace.ddTraceStrings.noop
 import typings.ddTrace.ddTraceStrings.sync
+import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import typings.std.Number
@@ -247,12 +248,7 @@ object TracerOptions {
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
     inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* address */ String, 
-          /* family */ Double, 
-          Unit
-        ]) => Unit
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
     ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
     
     inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)

@@ -1,5 +1,7 @@
 package typings.rxjsCompat.anon
 
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
+import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,74 +9,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisV2V3V4V5V6Project extends StObject {
   
-  def apply[T, R](
-    array: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any
-    ]
-  ): Any = js.native
-  def apply[T, R](
-    observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ Any) | (js.Function1[/* repeated */ T, R]))*
-  ): Any = js.native
-  def apply[T, R](project: js.Function1[/* v1 */ T, R]): Any = js.native
-  def apply[T, T2](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any
-  ): Any = js.native
+  def apply[T, R](array: js.Array[ObservableInput[T]]): Observable_[js.Array[T]] = js.native
+  def apply[T, R](observables: (ObservableInput[T] | (js.Function1[/* repeated */ T, R]))*): Observable_[R] = js.native
+  def apply[T, R](project: js.Function1[/* v1 */ T, R]): Observable_[R] = js.native
+  def apply[T, T2](v2: ObservableInput[T2]): Observable_[js.Tuple2[T, T2]] = js.native
   def apply[T, TOther, R](
-    array: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<TOther> */ Any
-    ],
+    array: js.Array[ObservableInput[TOther]],
     project: js.Function2[/* v1 */ T, /* repeated */ TOther, R]
-  ): Any = js.native
-  def apply[T, T2, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    project: js.Function2[/* v1 */ T, /* v2 */ T2, R]
-  ): Any = js.native
-  def apply[T, T2, T3](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any
-  ): Any = js.native
+  ): Observable_[R] = js.native
+  def apply[T, T2, R](v2: ObservableInput[T2], project: js.Function2[/* v1 */ T, /* v2 */ T2, R]): Observable_[R] = js.native
+  def apply[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3]): Observable_[js.Tuple3[T, T2, T3]] = js.native
   def apply[T, T2, T3, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
     project: js.Function3[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, R]
-  ): Any = js.native
-  def apply[T, T2, T3, T4](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any
-  ): Any = js.native
+  ): Observable_[R] = js.native
+  def apply[T, T2, T3, T4](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): Observable_[js.Tuple4[T, T2, T3, T4]] = js.native
   def apply[T, T2, T3, T4, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
     project: js.Function4[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, R]
-  ): Any = js.native
-  def apply[T, T2, T3, T4, T5](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
-    v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any
-  ): Any = js.native
+  ): Observable_[R] = js.native
+  def apply[T, T2, T3, T4, T5](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): Observable_[js.Tuple5[T, T2, T3, T4, T5]] = js.native
   def apply[T, T2, T3, T4, T5, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
-    v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
     project: js.Function5[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, R]
-  ): Any = js.native
+  ): Observable_[R] = js.native
   def apply[T, T2, T3, T4, T5, T6](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
-    v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
-    v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any
-  ): Any = js.native
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    v6: ObservableInput[T6]
+  ): Observable_[js.Tuple6[T, T2, T3, T4, T5, T6]] = js.native
   def apply[T, T2, T3, T4, T5, T6, R](
-    v2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T2> */ Any,
-    v3: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T3> */ Any,
-    v4: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T4> */ Any,
-    v5: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T5> */ Any,
-    v6: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T6> */ Any,
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    v6: ObservableInput[T6],
     project: js.Function6[/* v1 */ T, /* v2 */ T2, /* v3 */ T3, /* v4 */ T4, /* v5 */ T5, /* v6 */ T6, R]
-  ): Any = js.native
+  ): Observable_[R] = js.native
 }

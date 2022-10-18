@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Object} clientConfig - a map of configuration options to pass to the underlying STS client.
   */
 open class TokenFileWebIdentityCredentials ()
-  extends typings.awsSdk.coreMod.TokenFileWebIdentityCredentials {
-  def this(clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions) = this()
+  extends typings.awsSdk.libCoreMod.TokenFileWebIdentityCredentials {
+  def this(clientConfig: typings.awsSdk.libConfigBaseMod.ConfigurationOptions) = this()
 }

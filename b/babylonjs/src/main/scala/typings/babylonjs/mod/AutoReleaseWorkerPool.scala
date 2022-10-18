@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.workerPoolMod.AutoReleaseWorkerPoolOptions
+import typings.babylonjs.miscWorkerPoolMod.AutoReleaseWorkerPoolOptions
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AutoReleaseWorkerPool")
 @js.native
 open class AutoReleaseWorkerPool protected ()
-  extends typings.babylonjs.legacyMod.AutoReleaseWorkerPool {
+  extends typings.babylonjs.legacyLegacyMod.AutoReleaseWorkerPool {
   def this(maxWorkers: Double, createWorkerAsync: js.Function0[js.Promise[Worker]]) = this()
   def this(
     maxWorkers: Double,

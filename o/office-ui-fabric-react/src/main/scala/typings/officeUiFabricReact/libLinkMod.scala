@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.linkTypesMod.ILinkProps
+import typings.officeUiFabricReact.libComponentsLinkLinkDottypesMod.ILinkProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +15,7 @@ object libLinkMod {
   @JSImport("office-ui-fabric-react/lib/Link", "LinkBase")
   @js.native
   open class LinkBase protected ()
-    extends typings.officeUiFabricReact.linkMod.LinkBase {
+    extends typings.officeUiFabricReact.libComponentsLinkMod.LinkBase {
     def this(props: ILinkProps) = this()
   }
 }

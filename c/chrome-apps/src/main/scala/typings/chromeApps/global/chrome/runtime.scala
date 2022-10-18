@@ -44,7 +44,6 @@ import typings.chromeApps.chromeAppsStrings.update_
 import typings.chromeApps.chromeAppsStrings.update_available_
 import typings.chromeApps.chromeAppsStrings.win_
 import typings.filesystem.DirectoryEntry
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -369,10 +368,7 @@ object runtime {
       /* reason */ ToStringLiteral[
         APPUPDATE, 
         /* keyof chrome-apps.anon.APPUPDATE */ APP_UPDATE | OS_UPDATE | PERIODIC, 
-        Exclude[
-          /* keyof chrome-apps.anon.APPUPDATE */ APP_UPDATE | OS_UPDATE | PERIODIC, 
-          app_update_ | os_update_ | periodic_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  APP_UPDATE :'app_update',   OS_UPDATE :'os_update',   PERIODIC :'periodic'} extends keyof {  APP_UPDATE :'app_update',   OS_UPDATE :'os_update',   PERIODIC :'periodic'} ? std.Exclude<keyof {  APP_UPDATE :'app_update',   OS_UPDATE :'os_update',   PERIODIC :'periodic'}, 'app_update' | 'os_update' | 'periodic'> : never */ js.Any
       ], 
       Unit
     ]
@@ -429,10 +425,7 @@ object runtime {
       /* status */ ToStringLiteral[
         NOUPDATE, 
         /* keyof chrome-apps.anon.NOUPDATE */ THROTTLED | NO_UPDATE | UPDATE_AVAILABLE, 
-        Exclude[
-          /* keyof chrome-apps.anon.NOUPDATE */ THROTTLED | NO_UPDATE | UPDATE_AVAILABLE, 
-          throttled_ | no_update_ | update_available_
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof {  THROTTLED :'throttled',   NO_UPDATE :'no_update',   UPDATE_AVAILABLE :'update_available'} extends keyof {  THROTTLED :'throttled',   NO_UPDATE :'no_update',   UPDATE_AVAILABLE :'update_available'} ? std.Exclude<keyof {  THROTTLED :'throttled',   NO_UPDATE :'no_update',   UPDATE_AVAILABLE :'update_available'}, 'throttled' | 'no_update' | 'update_available'> : never */ js.Any
       ], 
       /* details */ js.UndefOr[UpdateCheckDetails], 
       Unit

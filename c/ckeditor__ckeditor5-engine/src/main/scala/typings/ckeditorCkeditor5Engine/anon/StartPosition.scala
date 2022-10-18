@@ -1,14 +1,14 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.viewPositionMod.default
-import typings.ckeditorCkeditor5Engine.viewTreewalkerMod.TreeWalkerDirection
+import typings.ckeditorCkeditor5Engine.srcViewPositionMod.default
+import typings.ckeditorCkeditor5Engine.srcViewTreewalkerMod.TreeWalkerDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StartPosition extends StObject {
   
-  var boundaries: js.UndefOr[typings.ckeditorCkeditor5Engine.viewRangeMod.Range] = js.undefined
+  var boundaries: js.UndefOr[typings.ckeditorCkeditor5Engine.srcViewRangeMod.Range] = js.undefined
   
   var direction: js.UndefOr[TreeWalkerDirection] = js.undefined
   
@@ -29,7 +29,7 @@ object StartPosition {
   
   extension [Self <: StartPosition](x: Self) {
     
-    inline def setBoundaries(value: typings.ckeditorCkeditor5Engine.viewRangeMod.Range): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+    inline def setBoundaries(value: typings.ckeditorCkeditor5Engine.srcViewRangeMod.Range): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     
     inline def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
     

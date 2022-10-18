@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "HeaderSubmenu")
 @js.native
 open class HeaderSubmenu protected ()
-  extends typings.carbonComponents.componentsMod.HeaderSubmenu {
+  extends typings.carbonComponents.globalsJsComponentsMod.HeaderSubmenu {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialHeaderSubmenuOptio) = this()
 }

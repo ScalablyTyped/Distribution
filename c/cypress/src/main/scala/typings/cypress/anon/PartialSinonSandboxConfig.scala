@@ -1,32 +1,48 @@
 package typings.cypress.anon
 
-import typings.cypress.sinonMod.SinonFakeServer
+import typings.cypress.typesSinonMod.SinonFakeServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<cypress.cypress/types/sinon.SinonSandboxConfig> */
-trait PartialSinonSandboxConfig extends js.Object {
-  var injectInto: js.UndefOr[js.Object] = js.undefined
+trait PartialSinonSandboxConfig extends StObject {
+  
+  var injectInto: js.UndefOr[js.Object | Null] = js.undefined
+  
   var properties: js.UndefOr[js.Array[String]] = js.undefined
+  
   var useFakeServer: js.UndefOr[Boolean | SinonFakeServer] = js.undefined
+  
   var useFakeTimers: js.UndefOr[Boolean | PartialSinonFakeTimersCon] = js.undefined
 }
-
 object PartialSinonSandboxConfig {
-  @scala.inline
-  def apply(
-    injectInto: js.Object = null,
-    properties: js.Array[String] = null,
-    useFakeServer: Boolean | SinonFakeServer = null,
-    useFakeTimers: Boolean | PartialSinonFakeTimersCon = null
-  ): PartialSinonSandboxConfig = {
+  
+  inline def apply(): PartialSinonSandboxConfig = {
     val __obj = js.Dynamic.literal()
-    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (useFakeServer != null) __obj.updateDynamic("useFakeServer")(useFakeServer.asInstanceOf[js.Any])
-    if (useFakeTimers != null) __obj.updateDynamic("useFakeTimers")(useFakeTimers.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSinonSandboxConfig]
   }
+  
+  extension [Self <: PartialSinonSandboxConfig](x: Self) {
+    
+    inline def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
+    
+    inline def setInjectIntoNull: Self = StObject.set(x, "injectInto", null)
+    
+    inline def setInjectIntoUndefined: Self = StObject.set(x, "injectInto", js.undefined)
+    
+    inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setUseFakeServer(value: Boolean | SinonFakeServer): Self = StObject.set(x, "useFakeServer", value.asInstanceOf[js.Any])
+    
+    inline def setUseFakeServerUndefined: Self = StObject.set(x, "useFakeServer", js.undefined)
+    
+    inline def setUseFakeTimers(value: Boolean | PartialSinonFakeTimersCon): Self = StObject.set(x, "useFakeTimers", value.asInstanceOf[js.Any])
+    
+    inline def setUseFakeTimersUndefined: Self = StObject.set(x, "useFakeTimers", js.undefined)
+  }
 }
-

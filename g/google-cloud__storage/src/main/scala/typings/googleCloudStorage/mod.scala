@@ -3,12 +3,11 @@ package typings.googleCloudStorage
 import org.scalablytyped.runtime.Instantiable3
 import typings.googleCloudStorage.anon.OWNERROLE
 import typings.googleCloudStorage.anon.PartialHashStreamValidato
-import typings.googleCloudStorage.crc32cMod.CRC32CValidator
-import typings.googleCloudStorage.crc32cMod.CRC32CValidatorGenerator
-import typings.googleCloudStorage.fileMod.FileOptions
-import typings.googleCloudStorage.hmacKeyMod.HmacKeyOptions
-import typings.googleCloudStorage.storageMod.BucketOptions
-import typings.googleCloudStorage.storageMod.StorageOptions
+import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidatorGenerator
+import typings.googleCloudStorage.buildSrcFileMod.FileOptions
+import typings.googleCloudStorage.buildSrcHmacKeyMod.HmacKeyOptions
+import typings.googleCloudStorage.buildSrcStorageMod.BucketOptions
+import typings.googleCloudStorage.buildSrcStorageMod.StorageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -295,84 +294,13 @@ object mod {
   @JSImport("@google-cloud/storage", "Bucket")
   @js.native
   open class Bucket protected ()
-    extends typings.googleCloudStorage.bucketMod.Bucket {
-    def this(storage: typings.googleCloudStorage.storageMod.Storage, name: String) = this()
-    def this(storage: typings.googleCloudStorage.storageMod.Storage, name: String, options: BucketOptions) = this()
-  }
-  
-  @JSImport("@google-cloud/storage", "CRC32C")
-  @js.native
-  /**
-    * Constructs a new `CRC32C` object.
-    *
-    * Reconstruction is recommended via the `CRC32C.from` static method.
-    *
-    * @param initialValue An initial CRC32C value - a signed 32-bit integer.
-    */
-  open class CRC32C ()
-    extends typings.googleCloudStorage.crc32cMod.CRC32C {
-    def this(initialValue: Double) = this()
-  }
-  object CRC32C {
-    
-    @JSImport("@google-cloud/storage", "CRC32C")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    @JSImport("@google-cloud/storage", "CRC32C.CRC32C_EXTENSIONS")
-    @js.native
-    val CRC32C_EXTENSIONS: js.Array[Any] = js.native
-    
-    /* static member */
-    @JSImport("@google-cloud/storage", "CRC32C.CRC32C_EXTENSION_TABLE")
-    @js.native
-    val CRC32C_EXTENSION_TABLE: js.typedarray.Int32Array = js.native
-    
-    inline def from(value: String): typings.googleCloudStorage.crc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.crc32cMod.CRC32C]
-    /**
-      * Generates a `CRC32C` from a variety of compatable types.
-      *
-      * @param value A number, 4-byte `ArrayBufferView`/`Buffer`/`TypedArray`, or 4-byte base64-encoded data (string)
-      */
-    /* static member */
-    inline def from(value: js.typedarray.ArrayBuffer): typings.googleCloudStorage.crc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.crc32cMod.CRC32C]
-    inline def from(value: js.typedarray.ArrayBufferView): typings.googleCloudStorage.crc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.crc32cMod.CRC32C]
-    inline def from(value: Double): typings.googleCloudStorage.crc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.crc32cMod.CRC32C]
-    inline def from(value: CRC32CValidator): typings.googleCloudStorage.crc32cMod.CRC32C = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudStorage.crc32cMod.CRC32C]
-    
-    /**
-      * Generates a `CRC32C` from a compatible buffer format.
-      *
-      * @param value 4-byte `ArrayBufferView`/`Buffer`/`TypedArray`
-      */
-    /* static member */
-    @JSImport("@google-cloud/storage", "CRC32C.fromBuffer")
-    @js.native
-    def fromBuffer: Any = js.native
-    inline def fromBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromBuffer")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Generates a `CRC32C` from a safe, unsigned 32-bit integer.
-      *
-      * @param value an unsigned 32-bit integer
-      */
-    /* static member */
-    @JSImport("@google-cloud/storage", "CRC32C.fromNumber")
-    @js.native
-    def fromNumber: Any = js.native
-    inline def fromNumber_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromNumber")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Generates a `CRC32C` from 4-byte base64-encoded data (string).
-      *
-      * @param value 4-byte base64-encoded data (string)
-      */
-    /* static member */
-    @JSImport("@google-cloud/storage", "CRC32C.fromString")
-    @js.native
-    def fromString: Any = js.native
-    inline def fromString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromString")(x.asInstanceOf[js.Any])
+    extends typings.googleCloudStorage.buildSrcBucketMod.Bucket {
+    def this(storage: typings.googleCloudStorage.buildSrcStorageMod.Storage, name: String) = this()
+    def this(
+      storage: typings.googleCloudStorage.buildSrcStorageMod.Storage,
+      name: String,
+      options: BucketOptions
+    ) = this()
   }
   
   @JSImport("@google-cloud/storage", "CRC32C_DEFAULT_VALIDATOR_GENERATOR")
@@ -423,8 +351,8 @@ object mod {
   @JSImport("@google-cloud/storage", "Channel")
   @js.native
   open class Channel protected ()
-    extends typings.googleCloudStorage.channelMod.Channel {
-    def this(storage: typings.googleCloudStorage.storageMod.Storage, id: String, resourceId: String) = this()
+    extends typings.googleCloudStorage.buildSrcChannelMod.Channel {
+    def this(storage: typings.googleCloudStorage.buildSrcStorageMod.Storage, id: String, resourceId: String) = this()
   }
   
   /**
@@ -436,7 +364,7 @@ object mod {
   @JSImport("@google-cloud/storage", "File")
   @js.native
   open class File protected ()
-    extends typings.googleCloudStorage.fileMod.File {
+    extends typings.googleCloudStorage.buildSrcFileMod.File {
     /**
       * Cloud Storage uses access control lists (ACLs) to manage object and
       * bucket access. ACLs are the mechanism you use to share objects with other
@@ -585,21 +513,21 @@ object mod {
       * const file = myBucket.file('my-file');
       * ```
       */
-    def this(bucket: typings.googleCloudStorage.bucketMod.Bucket, name: String) = this()
-    def this(bucket: typings.googleCloudStorage.bucketMod.Bucket, name: String, options: FileOptions) = this()
+    def this(bucket: typings.googleCloudStorage.buildSrcBucketMod.Bucket, name: String) = this()
+    def this(bucket: typings.googleCloudStorage.buildSrcBucketMod.Bucket, name: String, options: FileOptions) = this()
   }
   
   @JSImport("@google-cloud/storage", "HashStreamValidator")
   @js.native
   open class HashStreamValidator ()
-    extends typings.googleCloudStorage.hashStreamValidatorMod.HashStreamValidator {
+    extends typings.googleCloudStorage.buildSrcHashStreamValidatorMod.HashStreamValidator {
     def this(options: PartialHashStreamValidato) = this()
   }
   
   @JSImport("@google-cloud/storage", "HmacKey")
   @js.native
   open class HmacKey protected ()
-    extends typings.googleCloudStorage.hmacKeyMod.HmacKey {
+    extends typings.googleCloudStorage.buildSrcHmacKeyMod.HmacKey {
     /**
       * @typedef {object} HmacKeyOptions
       * @property {string} [projectId] The project ID of the project that owns
@@ -623,8 +551,12 @@ object mod {
       * const hmacKey = storage.hmacKey('access-id');
       * ```
       */
-    def this(storage: typings.googleCloudStorage.storageMod.Storage, accessId: String) = this()
-    def this(storage: typings.googleCloudStorage.storageMod.Storage, accessId: String, options: HmacKeyOptions) = this()
+    def this(storage: typings.googleCloudStorage.buildSrcStorageMod.Storage, accessId: String) = this()
+    def this(
+      storage: typings.googleCloudStorage.buildSrcStorageMod.Storage,
+      accessId: String,
+      options: HmacKeyOptions
+    ) = this()
   }
   
   /**
@@ -648,8 +580,8 @@ object mod {
   @JSImport("@google-cloud/storage", "Iam")
   @js.native
   open class Iam protected ()
-    extends typings.googleCloudStorage.iamMod.Iam {
-    def this(bucket: typings.googleCloudStorage.bucketMod.Bucket) = this()
+    extends typings.googleCloudStorage.buildSrcIamMod.Iam {
+    def this(bucket: typings.googleCloudStorage.buildSrcBucketMod.Bucket) = this()
   }
   
   @JSImport("@google-cloud/storage", "IdempotencyStrategy")
@@ -657,13 +589,13 @@ object mod {
   object IdempotencyStrategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleCloudStorage.storageMod.IdempotencyStrategy & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleCloudStorage.buildSrcStorageMod.IdempotencyStrategy & Double] = js.native
     
-    /* 0 */ val RetryAlways: typings.googleCloudStorage.storageMod.IdempotencyStrategy.RetryAlways & Double = js.native
+    /* 0 */ val RetryAlways: typings.googleCloudStorage.buildSrcStorageMod.IdempotencyStrategy.RetryAlways & Double = js.native
     
-    /* 1 */ val RetryConditional: typings.googleCloudStorage.storageMod.IdempotencyStrategy.RetryConditional & Double = js.native
+    /* 1 */ val RetryConditional: typings.googleCloudStorage.buildSrcStorageMod.IdempotencyStrategy.RetryConditional & Double = js.native
     
-    /* 2 */ val RetryNever: typings.googleCloudStorage.storageMod.IdempotencyStrategy.RetryNever & Double = js.native
+    /* 2 */ val RetryNever: typings.googleCloudStorage.buildSrcStorageMod.IdempotencyStrategy.RetryNever & Double = js.native
   }
   
   /**
@@ -700,8 +632,8 @@ object mod {
   @JSImport("@google-cloud/storage", "Notification")
   @js.native
   open class Notification protected ()
-    extends typings.googleCloudStorage.notificationMod.Notification {
-    def this(bucket: typings.googleCloudStorage.bucketMod.Bucket, id: String) = this()
+    extends typings.googleCloudStorage.buildSrcNotificationMod.Notification {
+    def this(bucket: typings.googleCloudStorage.buildSrcBucketMod.Bucket, id: String) = this()
   }
   
   @JSImport("@google-cloud/storage", "Storage")
@@ -856,7 +788,7 @@ object mod {
     * @param {StorageOptions} [options] Configuration options.
     */
   open class Storage ()
-    extends typings.googleCloudStorage.storageMod.Storage {
+    extends typings.googleCloudStorage.buildSrcStorageMod.Storage {
     def this(options: StorageOptions) = this()
   }
   /* static members */
@@ -876,17 +808,17 @@ object mod {
     @JSImport("@google-cloud/storage", "Storage.Bucket")
     @js.native
     def Bucket: Instantiable3[
-        /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+        /* storage */ typings.googleCloudStorage.buildSrcStorageMod.Storage, 
         /* name */ String, 
         /* options */ js.UndefOr[BucketOptions], 
-        typings.googleCloudStorage.bucketMod.Bucket
+        typings.googleCloudStorage.buildSrcBucketMod.Bucket
       ] = js.native
     inline def Bucket_=(
       x: Instantiable3[
-          /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+          /* storage */ typings.googleCloudStorage.buildSrcStorageMod.Storage, 
           /* name */ String, 
           /* options */ js.UndefOr[BucketOptions], 
-          typings.googleCloudStorage.bucketMod.Bucket
+          typings.googleCloudStorage.buildSrcBucketMod.Bucket
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Bucket")(x.asInstanceOf[js.Any])
     
@@ -900,17 +832,17 @@ object mod {
     @JSImport("@google-cloud/storage", "Storage.Channel")
     @js.native
     def Channel: Instantiable3[
-        /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+        /* storage */ typings.googleCloudStorage.buildSrcStorageMod.Storage, 
         /* id */ String, 
         /* resourceId */ String, 
-        typings.googleCloudStorage.channelMod.Channel
+        typings.googleCloudStorage.buildSrcChannelMod.Channel
       ] = js.native
     inline def Channel_=(
       x: Instantiable3[
-          /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+          /* storage */ typings.googleCloudStorage.buildSrcStorageMod.Storage, 
           /* id */ String, 
           /* resourceId */ String, 
-          typings.googleCloudStorage.channelMod.Channel
+          typings.googleCloudStorage.buildSrcChannelMod.Channel
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Channel")(x.asInstanceOf[js.Any])
     
@@ -924,17 +856,17 @@ object mod {
     @JSImport("@google-cloud/storage", "Storage.File")
     @js.native
     def File: Instantiable3[
-        /* bucket */ typings.googleCloudStorage.bucketMod.Bucket, 
+        /* bucket */ typings.googleCloudStorage.buildSrcBucketMod.Bucket, 
         /* name */ String, 
         /* options */ js.UndefOr[FileOptions], 
-        typings.googleCloudStorage.fileMod.File
+        typings.googleCloudStorage.buildSrcFileMod.File
       ] = js.native
     inline def File_=(
       x: Instantiable3[
-          /* bucket */ typings.googleCloudStorage.bucketMod.Bucket, 
+          /* bucket */ typings.googleCloudStorage.buildSrcBucketMod.Bucket, 
           /* name */ String, 
           /* options */ js.UndefOr[FileOptions], 
-          typings.googleCloudStorage.fileMod.File
+          typings.googleCloudStorage.buildSrcFileMod.File
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("File")(x.asInstanceOf[js.Any])
     
@@ -948,17 +880,17 @@ object mod {
     @JSImport("@google-cloud/storage", "Storage.HmacKey")
     @js.native
     def HmacKey: Instantiable3[
-        /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+        /* storage */ typings.googleCloudStorage.buildSrcStorageMod.Storage, 
         /* accessId */ String, 
         /* options */ js.UndefOr[HmacKeyOptions], 
-        typings.googleCloudStorage.hmacKeyMod.HmacKey
+        typings.googleCloudStorage.buildSrcHmacKeyMod.HmacKey
       ] = js.native
     inline def HmacKey_=(
       x: Instantiable3[
-          /* storage */ typings.googleCloudStorage.storageMod.Storage, 
+          /* storage */ typings.googleCloudStorage.buildSrcStorageMod.Storage, 
           /* accessId */ String, 
           /* options */ js.UndefOr[HmacKeyOptions], 
-          typings.googleCloudStorage.hmacKeyMod.HmacKey
+          typings.googleCloudStorage.buildSrcHmacKeyMod.HmacKey
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HmacKey")(x.asInstanceOf[js.Any])
     

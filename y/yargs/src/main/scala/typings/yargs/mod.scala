@@ -2,8 +2,6 @@ package typings.yargs
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.std.Capitalize
 import typings.std.Exclude
 import typings.std.Extract
 import typings.std.PromiseLike
@@ -12,7 +10,6 @@ import typings.yargs.anon.DictargName
 import typings.yargs.anon.PartialParserConfiguratio
 import typings.yargs.yargsBooleans.`false`
 import typings.yargs.yargsBooleans.`true`
-import typings.yargs.yargsStrings._empty
 import typings.yargs.yargsStrings.array
 import typings.yargs.yargsStrings.count
 import typings.yargs.yargsStrings.error
@@ -76,8 +73,12 @@ object mod extends Shortcut {
       *
       * Optionally, `description` can also be provided and will take precedence over displaying the value in the usage instructions.
       */
-    def default[K /* <: /* keyof T */ String */, V](key: K, value: V): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
-    def default[K /* <: /* keyof T */ String */, V](key: K, value: V, description: String): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def default[K /* <: /* keyof T */ String */, V](key: K, value: V): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ js.Any)
+      ] = js.native
+    def default[K /* <: /* keyof T */ String */, V](key: K, value: V, description: String): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V} */ js.Any)
+      ] = js.native
     
     def alias(aliases: StringDictionary[String | js.Array[String]]): Argv[T] = js.native
     def alias(shortName: String, longName: String): Argv[T] = js.native
@@ -91,8 +92,12 @@ object mod extends Shortcut {
       * Each key of this object should be the canonical version of the option, and each value should be a string or an array of strings.
       */
     // Aliases for previously declared options can inherit the types of those options.
-    def alias[K1 /* <: /* keyof T */ String */, K2 /* <: String */](shortName: K1 | K2, longName: K1 | K2): Argv[T & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
-    def alias[K1 /* <: /* keyof T */ String */, K2 /* <: String */](shortName: K1 | K2, longName: js.Array[K1 | K2]): Argv[T & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
+    def alias[K1 /* <: /* keyof T */ String */, K2 /* <: String */](shortName: K1 | K2, longName: K1 | K2): Argv[
+        T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K2 ]: T[K1]} */ js.Any)
+      ] = js.native
+    def alias[K1 /* <: /* keyof T */ String */, K2 /* <: String */](shortName: K1 | K2, longName: js.Array[K1 | K2]): Argv[
+        T & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K2 ]: T[K1]} */ js.Any)
+      ] = js.native
     
     /**
       * Get the arguments as a plain old object.
@@ -105,12 +110,8 @@ object mod extends Shortcut {
       * it will ignore the first parameter since it expects it to be the script name. In order to override
       * this behavior, use `.parse(process.argv.slice(1))` instead of .argv and the first parameter won't be ignored.
       */
-    var argv: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    var argv: (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
     
     /**
@@ -120,8 +121,12 @@ object mod extends Shortcut {
       *
       * When the option is used with a positional, use `--` to tell `yargs` to stop adding values to the array.
       */
-    def array[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
-    def array[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
+    def array[K /* <: /* keyof T */ String */](key: K): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToArray<T[key]>} */ js.Any)
+      ] = js.native
+    def array[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToArray<T[key]>} */ js.Any)
+      ] = js.native
     
     /**
       * Interpret `key` as a boolean. If a non-flag option follows `key` in `process.argv`, that string won't get set as the value of `key`.
@@ -130,8 +135,12 @@ object mod extends Shortcut {
       *
       * If `key` is an array, interpret all the elements as booleans.
       */
-    def boolean[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
-    def boolean[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def boolean[K /* <: /* keyof T */ String */](key: K): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: boolean | undefined} */ js.Any)
+      ] = js.native
+    def boolean[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: boolean | undefined} */ js.Any)
+      ] = js.native
     
     /**
       * Check that certain conditions are met in the provided arguments.
@@ -145,7 +154,9 @@ object mod extends Shortcut {
       global: Boolean
     ): Argv[T] = js.native
     
-    def choices[C /* <: StringDictionary[js.Array[Any]] */](choices: C): Argv[(Omit[T, /* keyof C */ String]) & typings.yargs.yargsStrings.Argv & TopLevel[C]] = js.native
+    def choices[C /* <: StringDictionary[js.Array[Any]] */](choices: C): Argv[
+        (Omit[T, /* keyof C */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof C ]: C[key][number] | undefined} */ js.Any)
+      ] = js.native
     /**
       * Limit valid values for key to a predefined set of choices, given as an array or as an individual value.
       * If this method is called multiple times, all enumerated values will be merged together.
@@ -155,9 +166,13 @@ object mod extends Shortcut {
       *
       * Choices can also be specified as choices in the object given to `option()`.
       */
-    def choices[K /* <: /* keyof T */ String */, C /* <: js.Array[Any] */](key: K, values: C): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[C]] = js.native
+    def choices[K /* <: /* keyof T */ String */, C /* <: js.Array[Any] */](key: K, values: C): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: C[number] | undefined} */ js.Any)
+      ] = js.native
     
-    def coerce[O /* <: StringDictionary[js.Function1[/* arg */ Any, Any]] */](opts: O): Argv[(Omit[T, /* keyof O */ String]) & typings.yargs.yargsStrings.Argv & TopLevel[O]] = js.native
+    def coerce[O /* <: StringDictionary[js.Function1[/* arg */ Any, Any]] */](opts: O): Argv[
+        (Omit[T, /* keyof O */ String]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof O ]: std.ReturnType<O[key]> | undefined} */ js.Any)
+      ] = js.native
     /**
       * Provide a synchronous function to coerce or transform the value(s) given on the command line for `key`.
       *
@@ -174,8 +189,12 @@ object mod extends Shortcut {
       *
       * If you are using dot-notion or arrays, .e.g., `user.email` and `user.password`, coercion will be applied to the final object that has been parsed
       */
-    def coerce[K /* <: /* keyof T */ String */, V](key: K, func: js.Function1[/* arg */ Any, V]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
-    def coerce[K /* <: /* keyof T */ String */, V](key: js.Array[K], func: js.Function1[/* arg */ Any, V]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def coerce[K /* <: /* keyof T */ String */, V](key: K, func: js.Function1[/* arg */ Any, V]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V | undefined} */ js.Any)
+      ] = js.native
+    def coerce[K /* <: /* keyof T */ String */, V](key: js.Array[K], func: js.Function1[/* arg */ Any, V]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: V | undefined} */ js.Any)
+      ] = js.native
     
     def command[O /* <: StringDictionary[Options] */](command: String, description: String): Argv[T] = js.native
     def command[O /* <: StringDictionary[Options] */](command: String, description: String, builder: O): Argv[T] = js.native
@@ -1399,8 +1418,12 @@ object mod extends Shortcut {
     /**
       * Interpret `key` as a boolean flag, but set its parsed value to the number of flag occurrences rather than `true` or `false`. Default value is thus `0`.
       */
-    def count[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
-    def count[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def count[K /* <: /* keyof T */ String */](key: K): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: number} */ js.Any)
+      ] = js.native
+    def count[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: number} */ js.Any)
+      ] = js.native
     
     def demand(key: String): Argv[T] = js.native
     def demand(key: String, required: Boolean): Argv[T] = js.native
@@ -1621,8 +1644,12 @@ object mod extends Shortcut {
     def nargs(nargs: StringDictionary[Double]): Argv[T] = js.native
     
     /** The key provided represents a path and should have `path.normalize()` applied. */
-    def normalize[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
-    def normalize[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
+    def normalize[K /* <: /* keyof T */ String */](key: K): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToString<T[key]>} */ js.Any)
+      ] = js.native
+    def normalize[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToString<T[key]>} */ js.Any)
+      ] = js.native
     
     /**
       * Tell the parser to always interpret key as a number.
@@ -1635,8 +1662,12 @@ object mod extends Shortcut {
       *
       * Note that decimals, hexadecimals, and scientific notation are all accepted.
       */
-    def number[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
-    def number[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
+    def number[K /* <: /* keyof T */ String */](key: K): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToNumber<T[key]>} */ js.Any)
+      ] = js.native
+    def number[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToNumber<T[key]>} */ js.Any)
+      ] = js.native
     
     /**
       * Method to execute when a command finishes successfully.
@@ -1649,14 +1680,18 @@ object mod extends Shortcut {
       * This method can be used to make yargs aware of options that could exist.
       * You can also pass an opt object which can hold further customization, like `.alias()`, `.demandOption()` etc. for that option.
       */
-    def option[K /* <: /* keyof T */ String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def option[K /* <: /* keyof T */ String */, O /* <: Options */](key: K, options: O): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.InferredOptionType<O>} */ js.Any)
+      ] = js.native
     
     def options[O /* <: StringDictionary[Options] */](options: O): Argv[(Omit[T, /* keyof O */ String]) & InferredOptionTypes[O]] = js.native
     /**
       * This method can be used to make yargs aware of options that could exist.
       * You can also pass an opt object which can hold further customization, like `.alias()`, `.demandOption()` etc. for that option.
       */
-    def options[K /* <: /* keyof T */ String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def options[K /* <: /* keyof T */ String */, O /* <: Options */](key: K, options: O): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.InferredOptionType<O>} */ js.Any)
+      ] = js.native
     
     /**
       * Parse `args` instead of `process.argv`. Returns the `argv` object. `args` may either be a pre-processed argv array, or a raw argument string.
@@ -1664,143 +1699,71 @@ object mod extends Shortcut {
       * Note: Providing a callback to parse() disables the `exitProcess` setting until after the callback is invoked.
       * @param [context]  Provides a useful mechanism for passing state information to commands
       */
-    def parse(): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: String): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: String, context: js.Object): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: String, context: js.Object): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: String, context: js.Object, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: String, context: js.Object, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: String, context: Unit, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: String, context: Unit, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: js.Array[String]): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: js.Array[String]): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: js.Array[String], context: js.Object): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: js.Array[String], context: js.Object): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
-    def parse(arg: js.Array[String], context: Unit, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]) | (js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+    def parse(arg: js.Array[String], context: Unit, parseCallback: ParseCallback[T]): (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any) | (js.Promise[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ]) = js.native
     
     def parseAsync(): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: String): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: String, context: js.Object): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: String, context: js.Object, parseCallback: ParseCallback[T]): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: String, context: Unit, parseCallback: ParseCallback[T]): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: js.Array[String]): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: js.Array[String], context: js.Object): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     def parseAsync(arg: js.Array[String], context: Unit, parseCallback: ParseCallback[T]): js.Promise[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any
       ] = js.native
     
-    def parseSync(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: String, context: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: String, context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: String, context: Unit, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: js.Array[String]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: js.Array[String], context: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
-    def parseSync(arg: js.Array[String], context: Unit, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]}
-      */ typings.yargs.yargsStrings.Argv & TopLevel[Arguments[T]] = js.native
+    def parseSync(): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: String): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: String, context: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: String, context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: String, context: Unit, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: js.Array[String]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: js.Array[String], context: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: js.Array[String], context: js.Object, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
+    def parseSync(arg: js.Array[String], context: Unit, parseCallback: ParseCallback[T]): /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof yargs.yargs.Arguments<T> as key | yargs.yargs.CamelCaseKey<key> ]: yargs.yargs.Arguments<T>[key]} */ js.Any = js.native
     
     /**
       * If the arguments have not been parsed, this property is `false`.
@@ -1825,7 +1788,9 @@ object mod extends Shortcut {
       * Allows you to configure a command's positional arguments with an API similar to `.option()`.
       * `.positional()` should be called in a command's builder function, and is not available on the top-level yargs instance. If so, it will throw an error.
       */
-    def positional[K /* <: /* keyof T */ String */, O /* <: PositionalOptions */](key: K, opt: O): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[Any]] = js.native
+    def positional[K /* <: /* keyof T */ String */, O /* <: PositionalOptions */](key: K, opt: O): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.InferredOptionType<O>} */ js.Any)
+      ] = js.native
     
     /** Should yargs provide suggestions regarding similar commands if no matching command is found? */
     def recommendCommands(): Argv[T] = js.native
@@ -1957,8 +1922,12 @@ object mod extends Shortcut {
       *
       * `.string('_')` will result in non-hyphenated arguments being interpreted as strings, regardless of whether they resemble numbers.
       */
-    def string[K /* <: /* keyof T */ String */](key: K): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
-    def string[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[(Omit[T, K]) & typings.yargs.yargsStrings.Argv & TopLevel[T]] = js.native
+    def string[K /* <: /* keyof T */ String */](key: K): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToString<T[key]>} */ js.Any)
+      ] = js.native
+    def string[K /* <: /* keyof T */ String */](key: js.Array[K]): Argv[
+        (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: yargs.yargs.ToString<T[key]>} */ js.Any)
+      ] = js.native
     
     // Intended to be used with '.wrap()'
     def terminalWidth(): Double = js.native
@@ -2136,10 +2105,26 @@ object mod extends Shortcut {
   type BuilderCallback[T, R] = js.Function1[/* args */ Argv[T], Argv[R] | PromiseLike[Argv[R]] | Unit]
   
   /** Convert literal string types like 'foo-bar' to 'fooBar' */
-  type CamelCase[S /* <: String */] = S | (/* template literal string: ${T}${PascalCase<U>} */ String)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    string extends S ? string : S extends / * template literal string: ${inferT}-${inferU} * / string ? / * template literal string: ${T}${PascalCase<U>} * / string : S
+    }}}
+    */
+  @js.native
+  trait CamelCase[S /* <: String */] extends StObject
   
   /** Convert literal string types like 'foo-bar' to 'fooBar', allowing all `PropertyKey` types */
-  type CamelCaseKey[K /* <: PropertyKey */] = K | (Exclude[CamelCase[K], _empty])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends string ? std.Exclude<yargs.yargs.CamelCase<K>, ''> : K
+    }}}
+    */
+  @js.native
+  trait CamelCaseKey[K /* <: PropertyKey */] extends StObject
   
   type Choices = js.Array[js.UndefOr[String | Double | `true`]]
   
@@ -2205,24 +2190,51 @@ object mod extends Shortcut {
   }
   
   /** Remove undefined as a possible value for keys K in T */
-  type Defined[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & typings.yargs.yargsStrings.Defined & TopLevel[T]
+  type Defined[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in K ]: std.Exclude<T[key], undefined>} */ js.Any)
   
   // prettier-ignore
-  type InferredOptionType[O /* <: Options | PositionalOptions */] = InferredOptionTypeInner[O] | (Exclude[InferredOptionTypeInner[O], Unit])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O extends {  required :string | true} | {  require :string | true} | {  demand :string | true} | {  demandOption :string | true} ? std.Exclude<yargs.yargs.InferredOptionTypeInner<O>, undefined> : yargs.yargs.InferredOptionTypeInner<O>
+    }}}
+    */
+  @js.native
+  trait InferredOptionType[O /* <: Options | PositionalOptions */] extends StObject
   
   // prettier-ignore
-  type InferredOptionTypeInner[O /* <: Options | PositionalOptions */] = js.UndefOr[RequiredOptionType[O] | Double]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O extends {  default :any, coerce (arg : any): infer T} ? T : O extends {  default :infer D} ? D : O extends {  type :'count'} ? number : O extends {  count :true} ? number : yargs.yargs.RequiredOptionType<O> | undefined
+    }}}
+    */
+  @js.native
+  trait InferredOptionTypeInner[O /* <: Options | PositionalOptions */] extends StObject
   
-  type InferredOptionTypes[O /* <: StringDictionary[Options] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof O ]: yargs.yargs.InferredOptionType<O[key]>}
-    */ typings.yargs.yargsStrings.InferredOptionTypes & TopLevel[O]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in keyof O ]: yargs.yargs.InferredOptionType<O[key]>}
+    }}}
+    */
+  @js.native
+  trait InferredOptionTypes[O /* <: StringDictionary[Options] */] extends StObject
   
   type MiddlewareFunction[T] = js.Function1[/* args */ Arguments[T], Unit | js.Promise[Unit]]
   
   /** Remove keys K in T */
-  type Omit[T, K] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in std.Exclude<keyof T, K> ]: T[key]}
-    */ typings.yargs.yargsStrings.Omit & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ key in std.Exclude<keyof T, K> ]: T[key]}
+    }}}
+    */
+  type Omit[T, K] = T
   
   trait Options extends StObject {
     
@@ -2539,7 +2551,15 @@ object mod extends Shortcut {
   // not implemented: yargs camelizes '_', but only if there's a '-' in the arg name
   // not implemented: yargs decamelizes (converts fooBar to foo-bar)
   /** Convert literal string types like 'foo-bar' to 'FooBar' */
-  type PascalCase[S /* <: String */] = Capitalize[S] | (/* template literal string: ${Capitalize<T>}${PascalCase<U>} */ String)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    string extends S ? string : S extends / * template literal string: ${inferT}-${inferU} * / string ? / * template literal string: ${Capitalize<T>}${PascalCase<U>} * / string : std.Capitalize<S>
+    }}}
+    */
+  @js.native
+  trait PascalCase[S /* <: String */] extends StObject
   
   trait PositionalOptions extends StObject {
     
@@ -2737,7 +2757,15 @@ object mod extends Shortcut {
   }
   
   // prettier-ignore
-  type RequiredOptionType[O /* <: Options | PositionalOptions */] = Any | String | Double | Boolean | (js.Array[Double | String])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    O extends {  type :'array',   string :true} ? std.Array<string> : O extends {  type :'array',   number :true} ? std.Array<number> : O extends {  type :'array',   normalize :true} ? std.Array<string> : O extends {  type :'string',   array :true} ? std.Array<string> : O extends {  type :'number',   array :true} ? std.Array<number> : O extends {  string :true,   array :true} ? std.Array<string> : O extends {  number :true,   array :true} ? std.Array<number> : O extends {  normalize :true,   array :true} ? std.Array<string> : O extends {  type :'array'} ? std.Array<string | number> : O extends {  type :'boolean'} ? boolean : O extends {  type :'number'} ? number : O extends {  type :'string'} ? string : O extends {  array :true} ? std.Array<string | number> : O extends {  boolean :true} ? boolean : O extends {  number :true} ? number : O extends {  string :true} ? string : O extends {  normalize :true} ? string : O extends {  choices :std.ReadonlyArray<infer C>} ? C : O extends {coerce (arg : any): infer T} ? T : unknown
+    }}}
+    */
+  @js.native
+  trait RequiredOptionType[O /* <: Options | PositionalOptions */] extends StObject
   
   type SyncCompletionFunction = js.Function2[/* current */ String, /* argv */ Any, js.Array[String]]
   
@@ -2745,10 +2773,10 @@ object mod extends Shortcut {
   type ToArray[T] = (js.Array[Exclude[T, Unit]]) | (Extract[T, Unit])
   
   /** Gives number[] if T is an array type, otherwise number. Preserves | undefined. */
-  type ToNumber[T] = Double | js.Array[Double] | (Extract[T, Unit])
+  type ToNumber[T] = (/* import warning: importer.ImportType#apply Failed type conversion: std.Exclude<T, undefined> extends std.Array<any> ? std.Array<number> : number */ js.Any) | (Extract[T, Unit])
   
   /** Gives string[] if T is an array type, otherwise string. Preserves | undefined. */
-  type ToString[T] = String | js.Array[String] | (Extract[T, Unit])
+  type ToString[T] = (/* import warning: importer.ImportType#apply Failed type conversion: std.Exclude<T, undefined> extends std.Array<any> ? std.Array<string> : string */ js.Any) | (Extract[T, Unit])
   
   type _To = Argv[js.Object]
   

@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.roomUpgradeHandlerMod.RoomUpgradeHandlerOpts
+import typings.matrixAppserviceBridge.libComponentsRoomUpgradeHandlerMod.RoomUpgradeHandlerOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "RoomUpgradeHandler")
 @js.native
 open class RoomUpgradeHandler protected ()
-  extends typings.matrixAppserviceBridge.roomUpgradeHandlerMod.RoomUpgradeHandler {
+  extends typings.matrixAppserviceBridge.libComponentsRoomUpgradeHandlerMod.RoomUpgradeHandler {
   /**
     * @param {RoomUpgradeHandler~Options} opts
     * @param {Bridge} bridge The parent bridge.

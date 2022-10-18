@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientFirebaseml
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientFirebaseml.anon.Accesstoken
 import typings.maximMazurokGapiClientFirebaseml.anon.Alt
@@ -89,9 +88,7 @@ object gapi {
           * metadata. Any method that returns a long-running operation should document the metadata type, if any.
           */
         var metadata: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
         
         /**
@@ -106,9 +103,7 @@ object gapi {
           * original method name. For example, if the original method name is `TakeSnapshot()`, the inferred response type is `TakeSnapshotResponse`.
           */
         var response: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
               ] = js.undefined
       }
       object Operation {
@@ -129,9 +124,7 @@ object gapi {
           inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
           inline def setMetadata(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -141,9 +134,7 @@ object gapi {
           inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
           inline def setResponse(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
           inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
@@ -187,9 +178,7 @@ object gapi {
         /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
         var details: js.UndefOr[
                 js.Array[
-                  /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[Any]
+                  /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                 ]
               ] = js.undefined
         
@@ -214,18 +203,14 @@ object gapi {
           
           inline def setDetails(
             value: js.Array[
-                      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[Any]
+                      /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
           inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
           
           inline def setDetailsVarargs(
-            value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[Any])*
+            value: (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any)*
           ): Self = StObject.set(x, "details", js.Array(value*))
           
           inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

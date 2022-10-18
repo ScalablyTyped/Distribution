@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of EmailConversation objects for batch processing. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailConversationBatch")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailConversationBatch")
 @js.native
-abstract class EmailConversationBatch ()
+open class EmailConversationBatch ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailConversationBatch {
   

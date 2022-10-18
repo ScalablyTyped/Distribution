@@ -75,7 +75,7 @@ object MinLengthValidator {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     MinLengthValidator, 
-    String, 
+    /* [minlength][formControlName],[minlength][formControl],[minlength][ngModel] */ String, 
     scala.Nothing, 
     Minlength, 
     js.Object, 
@@ -86,7 +86,7 @@ object MinLengthValidator {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       MinLengthValidator, 
-      String, 
+      /* [minlength][formControlName],[minlength][formControl],[minlength][ngModel] */ String, 
       scala.Nothing, 
       Minlength, 
       js.Object, 

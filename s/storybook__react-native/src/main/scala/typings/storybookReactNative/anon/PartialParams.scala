@@ -1,6 +1,6 @@
 package typings.storybookReactNative.anon
 
-import typings.storybookReactNative.previewMod.AsyncStorage
+import typings.storybookReactNative.distPreviewMod.AsyncStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

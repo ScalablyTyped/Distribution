@@ -1,6 +1,6 @@
 package typings.canvasRenderer
 
-import typings.canvasRenderer.canvasMod.Canvas
+import typings.canvasRenderer.typesCanvasMod.Canvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

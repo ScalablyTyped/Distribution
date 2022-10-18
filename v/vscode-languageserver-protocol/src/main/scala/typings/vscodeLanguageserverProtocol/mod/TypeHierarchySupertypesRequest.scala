@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolTypeHierarchyMod.TypeHierarchySupertypesParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDottypeHierarchyMod.TypeHierarchySupertypesParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.typeHierarchySlashsupertypes
 import typings.vscodeLanguageserverTypes.mod.TypeHierarchyItem
 import org.scalablytyped.runtime.StObject
@@ -11,7 +11,7 @@ object TypeHierarchySupertypesRequest {
   
   @JSImport("vscode-languageserver-protocol", "TypeHierarchySupertypesRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "TypeHierarchySupertypesRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object TypeHierarchySupertypesRequest {
   
   @JSImport("vscode-languageserver-protocol", "TypeHierarchySupertypesRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     TypeHierarchySupertypesParams, 
     js.Array[TypeHierarchyItem] | Null, 
     js.Array[TypeHierarchyItem], 

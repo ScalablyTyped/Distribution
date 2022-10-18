@@ -1,6 +1,6 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.typingMod.PageInfo
+import typings.antDesignProUtils.esTypingMod.PageInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

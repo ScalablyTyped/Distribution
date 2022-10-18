@@ -1,6 +1,6 @@
 package typings.puppeteerCore.anon
 
-import typings.puppeteerCore.eventEmitterMod.CommonEventEmitter
+import typings.puppeteerCore.libCjsPuppeteerCommonEventEmitterMod.CommonEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

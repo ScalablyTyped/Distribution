@@ -1,6 +1,6 @@
 package typings.sentryUtils.anon
 
-import typings.sentryUtils.requestdataMod.TransactionNamingScheme
+import typings.sentryUtils.typesRequestdataMod.TransactionNamingScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

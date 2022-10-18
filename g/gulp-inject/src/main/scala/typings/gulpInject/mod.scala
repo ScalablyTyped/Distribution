@@ -1,6 +1,7 @@
 package typings.gulpInject
 
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(sources: ReadableStream[Any]): Any = ^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def apply(sources: ReadableStream[Any], options: IOptions): Any = (^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(sources: ReadableStream): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(sources: ReadableStream, options: IOptions): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(sources.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-inject", JSImport.Namespace)
   @js.native

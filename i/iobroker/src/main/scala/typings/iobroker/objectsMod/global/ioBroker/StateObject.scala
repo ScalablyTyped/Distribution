@@ -6,13 +6,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait StateObject
+trait StateObject
   extends StObject
      with BaseObject
      with AdapterScopedObject
-     with AnyObject
-     with _InferGetObjectViewItemType[Any, Any] {
+     with AnyObject {
   
   @JSName("acl")
   var acl_StateObject: js.UndefOr[StateACL] = js.undefined

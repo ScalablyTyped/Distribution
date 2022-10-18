@@ -1,13 +1,13 @@
 package typings.vueDevtoolsApi.anon
 
-import typings.vueDevtoolsApi.apiApiMod.CustomInspectorNode
+import typings.vueDevtoolsApi.libEsmApiApiMod.CustomInspectorNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InspectorId extends StObject {
   
-  var app: typings.vueDevtoolsApi.appMod.App
+  var app: typings.vueDevtoolsApi.libEsmApiAppMod.App
   
   var filter: String
   
@@ -18,7 +18,7 @@ trait InspectorId extends StObject {
 object InspectorId {
   
   inline def apply(
-    app: typings.vueDevtoolsApi.appMod.App,
+    app: typings.vueDevtoolsApi.libEsmApiAppMod.App,
     filter: String,
     inspectorId: String,
     rootNodes: js.Array[CustomInspectorNode]
@@ -29,7 +29,7 @@ object InspectorId {
   
   extension [Self <: InspectorId](x: Self) {
     
-    inline def setApp(value: typings.vueDevtoolsApi.appMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: typings.vueDevtoolsApi.libEsmApiAppMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

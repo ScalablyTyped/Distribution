@@ -1,8 +1,8 @@
 package typings.fpTs.mod
 
-import typings.fpTs.eitherMod.Either_
-import typings.fpTs.optionMod.Option_
-import typings.fpTs.refinementMod.Refinement
+import typings.fpTs.libEitherMod.Either_
+import typings.fpTs.libOptionMod.Option_
+import typings.fpTs.libRefinementMod.Refinement
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

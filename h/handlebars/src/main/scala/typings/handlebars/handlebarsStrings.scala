@@ -31,10 +31,6 @@ object handlebarsStrings {
   inline def HashPair: HashPair = "HashPair".asInstanceOf[HashPair]
   
   @js.native
-  sealed trait KnownHelpers extends StObject
-  inline def KnownHelpers: KnownHelpers = "KnownHelpers".asInstanceOf[KnownHelpers]
-  
-  @js.native
   sealed trait MustacheStatement extends StObject
   inline def MustacheStatement: MustacheStatement = "MustacheStatement".asInstanceOf[MustacheStatement]
   

@@ -63,10 +63,6 @@ object reactRouterDomStrings {
   inline def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait generatePath extends StObject
-  inline def generatePath: generatePath = "generatePath".asInstanceOf[generatePath]
-  
-  @js.native
   sealed trait grammar extends StObject
   inline def grammar: grammar = "grammar".asInstanceOf[grammar]
   

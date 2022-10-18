@@ -1,9 +1,9 @@
 package typings.emojiMart
 
-import typings.emojiMart.dataMod.Data
-import typings.emojiMart.nimbleEmojiIndexMod.BaseEmoji
-import typings.emojiMart.nimbleEmojiIndexMod.default
-import typings.emojiMart.sharedPropsMod.EmojiSet
+import typings.emojiMart.distEsUtilsDataMod.Data
+import typings.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.BaseEmoji
+import typings.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.default
+import typings.emojiMart.distEsUtilsSharedPropsMod.EmojiSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

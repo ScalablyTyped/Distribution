@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "Logger")
 @js.native
 open class Logger ()
-  extends typings.yuka.yukaMod.Logger
+  extends typings.yuka.srcYukaMod.Logger
 /* static members */
 object Logger {
   

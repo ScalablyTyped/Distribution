@@ -1,6 +1,6 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.incomingRequestMod.IncomingRequestDelegate
+import typings.sipJs.libCoreMessagesIncomingRequestMod.IncomingRequestDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.ReInviteUserAgentServer")
 @js.native
 open class ReInviteUserAgentServer protected ()
-  extends typings.sipJs.coreMod.ReInviteUserAgentServer {
+  extends typings.sipJs.libCoreMod.ReInviteUserAgentServer {
   def this(
-    dialog: typings.sipJs.dialogsMod.SessionDialog,
-    message: typings.sipJs.messagesMod.IncomingRequestMessage
+    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
+    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
   ) = this()
   def this(
-    dialog: typings.sipJs.dialogsMod.SessionDialog,
-    message: typings.sipJs.messagesMod.IncomingRequestMessage,
+    dialog: typings.sipJs.libCoreDialogsMod.SessionDialog,
+    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

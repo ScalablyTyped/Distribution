@@ -8,6 +8,8 @@ import typings.xrm.Xrm.Controls.HeaderSection
 import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
 import typings.xrm.Xrm.Controls.Tab
+import typings.xrm.Xrm.Events.LoadEventHandler
+import typings.xrm.Xrm.Events.LoadEventHandlerAsync
 import typings.xrm.XrmEnum.FormType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,6 +21,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Ui extends StObject {
+  
+  /**
+    * Adds a function to be called on the form OnLoad event.
+    * The function will be added to the bottom of the event handler pipeline.
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/addonload ui.addOnLoad (Client API reference)}
+    */
+  def addOnLoad(handler: LoadEventHandler | LoadEventHandlerAsync): Unit = js.native
   
   /**
     * Clears the form notification described by uniqueId.
@@ -108,6 +117,12 @@ trait Ui extends StObject {
     */
   def refreshRibbon(): Unit = js.native
   def refreshRibbon(refreshAll: Boolean): Unit = js.native
+  
+  /**
+    * Removes a function from the form OnLoad event.
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui/removeonload ui.removeOnLoad (Client API reference)}
+    */
+  def removeOnLoad(handler: LoadEventHandler | LoadEventHandlerAsync): Unit = js.native
   
   /**
     * Sets the name of the table to be displayed on the form.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gamedig
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Query for the status of any game server in Node.JS

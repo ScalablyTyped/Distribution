@@ -1,11 +1,11 @@
 package typings.playable.anon
 
-import typings.playable.bottomBlockTypesMod.IBottomBlock
-import typings.playable.chromecastManagerTypesMod.IChromecastManager
-import typings.playable.eventEmitterTypesMod.IEventEmitter
-import typings.playable.textMapTypesMod.ITextMap
-import typings.playable.themeTypesMod.IThemeService
-import typings.playable.tooltipTypesMod.ITooltipService
+import typings.playable.distSrcModulesChromecastManagerTypesMod.IChromecastManager
+import typings.playable.distSrcModulesEventEmitterTypesMod.IEventEmitter
+import typings.playable.distSrcModulesTextMapTypesMod.ITextMap
+import typings.playable.distSrcModulesUiBottomBlockTypesMod.IBottomBlock
+import typings.playable.distSrcModulesUiCoreThemeTypesMod.IThemeService
+import typings.playable.distSrcModulesUiCoreTooltipTypesMod.ITooltipService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

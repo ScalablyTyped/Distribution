@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.elasticacheMod.IntegerOptional
-import typings.awsSdk.elasticacheMod.String
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsElasticacheMod.IntegerOptional
+import typings.awsSdk.clientsElasticacheMod.String
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

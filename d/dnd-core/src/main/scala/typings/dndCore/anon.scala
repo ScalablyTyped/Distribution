@@ -1,7 +1,7 @@
 package typings.dndCore
 
-import typings.dndCore.interfacesMod.Identifier
-import typings.dndCore.interfacesMod.XYCoord
+import typings.dndCore.distInterfacesMod.Identifier
+import typings.dndCore.distInterfacesMod.XYCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,10 +1,10 @@
 package typings.rxjs
 
-import typings.rxjs.ajaxAjaxMod.AjaxCreationMethod
-import typings.rxjs.errorsMod.AjaxErrorCtor
-import typings.rxjs.errorsMod.AjaxTimeoutErrorCtor
-import typings.rxjs.typesMod.AjaxRequest
-import typings.rxjs.typesMod.AjaxResponseType
+import typings.rxjs.distTypesInternalAjaxAjaxMod.AjaxCreationMethod
+import typings.rxjs.distTypesInternalAjaxErrorsMod.AjaxErrorCtor
+import typings.rxjs.distTypesInternalAjaxErrorsMod.AjaxTimeoutErrorCtor
+import typings.rxjs.distTypesInternalAjaxTypesMod.AjaxRequest
+import typings.rxjs.distTypesInternalAjaxTypesMod.AjaxResponseType
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
@@ -13,18 +13,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object ajaxMod {
   
-  @JSImport("rxjs/dist/types/ajax", "AjaxError")
+  @JSImport("rxjs/ajax", "AjaxError")
   @js.native
   val AjaxError: AjaxErrorCtor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/dist/types/ajax", "AjaxError")
+  @JSImport("rxjs/ajax", "AjaxError")
   @js.native
   open class AjaxErrorCls protected ()
     extends StObject
-       with typings.rxjs.errorsMod.AjaxError {
+       with typings.rxjs.distTypesInternalAjaxErrorsMod.AjaxError {
     /**
       * @deprecated Internal implementation detail. Do not construct error instances.
       * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
@@ -71,10 +72,10 @@ object ajaxMod {
     var xhr: XMLHttpRequest = js.native
   }
   
-  @JSImport("rxjs/dist/types/ajax", "AjaxResponse")
+  @JSImport("rxjs/ajax", "AjaxResponse")
   @js.native
   open class AjaxResponse[T] protected ()
-    extends typings.rxjs.ajaxResponseMod.AjaxResponse[T] {
+    extends typings.rxjs.distTypesAjaxMod.AjaxResponse[T] {
     /**
       * A normalized response from an AJAX request. To get the data from the response,
       * you will want to read the `response` property.
@@ -135,16 +136,16 @@ object ajaxMod {
     ) = this()
   }
   
-  @JSImport("rxjs/dist/types/ajax", "AjaxTimeoutError")
+  @JSImport("rxjs/ajax", "AjaxTimeoutError")
   @js.native
   val AjaxTimeoutError: AjaxTimeoutErrorCtor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/dist/types/ajax", "AjaxTimeoutError")
+  @JSImport("rxjs/ajax", "AjaxTimeoutError")
   @js.native
   open class AjaxTimeoutErrorCls protected ()
     extends StObject
-       with typings.rxjs.errorsMod.AjaxError {
+       with typings.rxjs.distTypesInternalAjaxErrorsMod.AjaxError {
     /**
       * @deprecated Internal implementation detail. Do not construct error instances.
       * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
@@ -191,7 +192,7 @@ object ajaxMod {
     var xhr: XMLHttpRequest = js.native
   }
   
-  @JSImport("rxjs/dist/types/ajax", "ajax")
+  @JSImport("rxjs/ajax", "ajax")
   @js.native
   val ajax: AjaxCreationMethod = js.native
 }

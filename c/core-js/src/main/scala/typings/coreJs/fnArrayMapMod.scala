@@ -18,7 +18,7 @@ object fnArrayMapMod {
     thisArg: Any
   ): Array[U] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[U]]
   
-  @JSImport("core-js/library/fn/array/map", JSImport.Namespace)
+  @JSImport("core-js/fn/array/map", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

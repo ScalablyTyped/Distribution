@@ -1,15 +1,15 @@
 package typings.firebaseAuth.internalMod
 
-import typings.firebaseAuth.publicTypesMod.UserCredential
+import typings.firebaseAuth.distSrcModelPublicTypesMod.UserCredential
 import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth/dist/cordova/internal", "OAuthProvider")
+@JSImport("@firebase/auth/internal", "OAuthProvider")
 @js.native
 open class OAuthProvider protected ()
-  extends typings.firebaseAuth.cordovaMod.OAuthProvider {
+  extends typings.firebaseAuth.distInternalMod.OAuthProvider {
   /**
     * Constructor for generic OAuth providers.
     *
@@ -20,7 +20,7 @@ open class OAuthProvider protected ()
 /* static members */
 object OAuthProvider {
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "OAuthProvider")
+  @JSImport("@firebase/auth/internal", "OAuthProvider")
   @js.native
   val ^ : js.Any = js.native
   
@@ -30,23 +30,23 @@ object OAuthProvider {
     *
     * @param userCredential - The user credential.
     */
-  inline def credentialFromError(error: FirebaseError): typings.firebaseAuth.oauthMod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.oauthMod.OAuthCredential | Null]
+  inline def credentialFromError(error: FirebaseError): typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromError")(error.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential | Null]
   
-  inline def credentialFromJSON(json: String): typings.firebaseAuth.oauthMod.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.oauthMod.OAuthCredential]
+  inline def credentialFromJSON(json: String): typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential]
   /**
     * Creates an {@link OAuthCredential} from a JSON string or a plain object.
     * @param json - A plain object or a JSON string
     */
-  inline def credentialFromJSON(json: js.Object): typings.firebaseAuth.oauthMod.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.oauthMod.OAuthCredential]
+  inline def credentialFromJSON(json: js.Object): typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential]
   
   /**
     * Used to extract the underlying {@link OAuthCredential} from a {@link UserCredential}.
     *
     * @param userCredential - The user credential.
     */
-  inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.oauthMod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.oauthMod.OAuthCredential | Null]
+  inline def credentialFromResult(userCredential: UserCredential): typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("credentialFromResult")(userCredential.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseAuth.distSrcCoreCredentialsOauthMod.OAuthCredential | Null]
   
-  @JSImport("@firebase/auth/dist/cordova/internal", "OAuthProvider.oauthCredentialFromTaggedObject")
+  @JSImport("@firebase/auth/internal", "OAuthProvider.oauthCredentialFromTaggedObject")
   @js.native
   def oauthCredentialFromTaggedObject: Any = js.native
   inline def oauthCredentialFromTaggedObject_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oauthCredentialFromTaggedObject")(x.asInstanceOf[js.Any])

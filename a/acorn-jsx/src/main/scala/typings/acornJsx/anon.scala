@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.acorn.anon.Arrow
 import typings.acorn.anon.Bexpr
-import typings.acorn.anon.Call
+import typings.acorn.anon.GetToken
 import typings.acorn.mod.Node
 import typings.acorn.mod.Options
 import typings.acorn.mod.Parser
@@ -78,7 +78,7 @@ object anon {
     
     val tokTypes: Arrow = js.native
     
-    def tokenizer(input: String, options: Options): Call = js.native
+    def tokenizer(input: String, options: Options): GetToken = js.native
     
     val version: String = js.native
   }
@@ -106,7 +106,7 @@ object anon {
     def parseExpressionAt(input: String, pos: Double, options: Options): Node
     
     /* static member */
-    def tokenizer(input: String, options: Options): Call
+    def tokenizer(input: String, options: Options): GetToken
   }
   object TypeofParser {
     
@@ -118,7 +118,7 @@ object anon {
         ] => typings.acorn.anon.TypeofParser & (Instantiable3[/* options */ Options, /* input */ String, /* startPos */ js.UndefOr[Double], Parser]),
       parse: (String, Options) => Node,
       parseExpressionAt: (String, Double, Options) => Node,
-      tokenizer: (String, Options) => Call
+      tokenizer: (String, Options) => GetToken
     ): TypeofParser = {
       val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), parse = js.Any.fromFunction2(parse), parseExpressionAt = js.Any.fromFunction3(parseExpressionAt), tokenizer = js.Any.fromFunction2(tokenizer))
       __obj.asInstanceOf[TypeofParser]
@@ -139,7 +139,7 @@ object anon {
       
       inline def setParseExpressionAt(value: (String, Double, Options) => Node): Self = StObject.set(x, "parseExpressionAt", js.Any.fromFunction3(value))
       
-      inline def setTokenizer(value: (String, Options) => Call): Self = StObject.set(x, "tokenizer", js.Any.fromFunction2(value))
+      inline def setTokenizer(value: (String, Options) => GetToken): Self = StObject.set(x, "tokenizer", js.Any.fromFunction2(value))
     }
   }
   

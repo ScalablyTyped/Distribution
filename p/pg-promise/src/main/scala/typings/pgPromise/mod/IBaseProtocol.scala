@@ -1,12 +1,12 @@
 package typings.pgPromise.mod
 
+import typings.node.NodeJS.ReadableStream
 import typings.pgPromise.anon.Cnd
 import typings.pgPromise.anon.Duration
 import typings.pgPromise.anon.Mode
 import typings.pgPromise.anon.Reusable
 import typings.pgPromise.anon.Tag
-import typings.pgPromise.pgSubsetMod.IResult
-import typings.std.ReadableStream
+import typings.pgPromise.typescriptPgSubsetMod.IResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,7 +120,7 @@ trait IBaseProtocol[Ext] extends StObject {
   def result[T](query: QueryParam, values: Unit, cb: Unit, thisArg: Any): js.Promise[T] = js.native
   
   // API: http://vitaly-t.github.io/pg-promise/Database.html#stream
-  def stream(qs: ReadableStream[Any], init: js.Function1[/* stream */ ReadableStream[Any], Unit]): js.Promise[Duration] = js.native
+  def stream(qs: ReadableStream, init: js.Function1[/* stream */ ReadableStream, Unit]): js.Promise[Duration] = js.native
   
   // Tasks;
   // API: http://vitaly-t.github.io/pg-promise/Database.html#task

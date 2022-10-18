@@ -1,7 +1,7 @@
 package typings.blueprintjsTable.mod
 
 import typings.blueprintjsTable.anon.PartialIDragSelectablePro
-import typings.blueprintjsTable.selectableMod.IDragSelectableProps
+import typings.blueprintjsTable.libEsmInteractionsSelectableMod.IDragSelectableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "DragSelectable")
 @js.native
 open class DragSelectable protected ()
-  extends typings.blueprintjsTable.selectableMod.DragSelectable {
+  extends typings.blueprintjsTable.libEsmInteractionsSelectableMod.DragSelectable {
   def this(props: IDragSelectableProps) = this()
   /**
     * @deprecated

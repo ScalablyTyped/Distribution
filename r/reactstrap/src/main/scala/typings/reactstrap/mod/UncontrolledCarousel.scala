@@ -1,6 +1,6 @@
 package typings.reactstrap.mod
 
-import typings.reactstrap.carouselMod.UncontrolledCarouselProps
+import typings.reactstrap.typesLibCarouselMod.UncontrolledCarouselProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("reactstrap", "UncontrolledCarousel")
 @js.native
 open class UncontrolledCarousel protected ()
-  extends typings.reactstrap.uncontrolledMod.UncontrolledCarousel {
+  extends typings.reactstrap.typesLibUncontrolledMod.UncontrolledCarousel {
   def this(props: UncontrolledCarouselProps) = this()
   /**
     * @deprecated

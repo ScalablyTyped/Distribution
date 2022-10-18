@@ -1,16 +1,16 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.anon.Filename
-import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
-import typings.babylonjs.webXRAbstractMotionControllerMod.IMotionControllerLayout
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.IMinimalMotionControllerObject
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.IMotionControllerLayout
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/index", "WebXRAbstractMotionController")
+/* note: abstract class */ @JSImport("babylonjs/index", "WebXRAbstractMotionController")
 @js.native
-abstract class WebXRAbstractMotionController protected ()
+open class WebXRAbstractMotionController protected ()
   extends typings.babylonjs.xRIndexMod.WebXRAbstractMotionController {
   /**
     * constructs a new abstract motion controller

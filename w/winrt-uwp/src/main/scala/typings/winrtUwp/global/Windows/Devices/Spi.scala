@@ -15,9 +15,9 @@ object Spi {
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The SPI API needs a SPI Provider implementation to talk to the SPI controller. */
   object Provider {
     
-    @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings")
+    /* note: abstract class */ @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings")
     @js.native
-    abstract class ProviderSpiConnectionSettings ()
+    open class ProviderSpiConnectionSettings ()
       extends StObject
          with typings.winrtUwp.Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings {
       
@@ -91,9 +91,9 @@ object Spi {
   }
   
   /** Represents the info about a SPI bus. */
-  @JSGlobal("Windows.Devices.Spi.SpiBusInfo")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Spi.SpiBusInfo")
   @js.native
-  abstract class SpiBusInfo ()
+  open class SpiBusInfo ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo {
     
@@ -148,9 +148,9 @@ object Spi {
   }
   
   /** Represents the SPI controller on the system. */
-  @JSGlobal("Windows.Devices.Spi.SpiController")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Spi.SpiController")
   @js.native
-  abstract class SpiController ()
+  open class SpiController ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Spi.SpiController {
     
@@ -185,9 +185,9 @@ object Spi {
   }
   
   /** Represents a device connected through the SPI bus. */
-  @JSGlobal("Windows.Devices.Spi.SpiDevice")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Spi.SpiDevice")
   @js.native
-  abstract class SpiDevice ()
+  open class SpiDevice ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Spi.SpiDevice {
     

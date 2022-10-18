@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "PolygonMeshBuilder")
 @js.native
 open class PolygonMeshBuilder protected ()
-  extends typings.babylonjs.babylonjsIndexMod.PolygonMeshBuilder {
-  def this(name: String, contours: js.Array[typings.babylonjs.mathVectorMod.Vector2]) = this()
+  extends typings.babylonjs.meshesIndexMod.PolygonMeshBuilder {
+  def this(name: String, contours: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector2]) = this()
   def this(name: String, contours: Any) = this()
   /**
     * Creates a PolygonMeshBuilder
@@ -17,36 +17,41 @@ open class PolygonMeshBuilder protected ()
     * @param scene scene to add to when creating the mesh
     * @param earcutInjection can be used to inject your own earcut reference
     */
-  def this(name: String, contours: typings.babylonjs.mathPathMod.Path2) = this()
+  def this(name: String, contours: typings.babylonjs.mathsMathDotpathMod.Path2) = this()
   def this(
     name: String,
-    contours: js.Array[typings.babylonjs.mathVectorMod.Vector2],
+    contours: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector2],
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(name: String, contours: Any, scene: typings.babylonjs.sceneMod.Scene) = this()
   def this(
     name: String,
-    contours: typings.babylonjs.mathPathMod.Path2,
+    contours: typings.babylonjs.mathsMathDotpathMod.Path2,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
   def this(
     name: String,
-    contours: js.Array[typings.babylonjs.mathVectorMod.Vector2],
+    contours: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector2],
     scene: Unit,
     earcutInjection: Any
   ) = this()
   def this(
     name: String,
-    contours: js.Array[typings.babylonjs.mathVectorMod.Vector2],
+    contours: js.Array[typings.babylonjs.mathsMathDotvectorMod.Vector2],
     scene: typings.babylonjs.sceneMod.Scene,
     earcutInjection: Any
   ) = this()
   def this(name: String, contours: Any, scene: Unit, earcutInjection: Any) = this()
   def this(name: String, contours: Any, scene: typings.babylonjs.sceneMod.Scene, earcutInjection: Any) = this()
-  def this(name: String, contours: typings.babylonjs.mathPathMod.Path2, scene: Unit, earcutInjection: Any) = this()
   def this(
     name: String,
-    contours: typings.babylonjs.mathPathMod.Path2,
+    contours: typings.babylonjs.mathsMathDotpathMod.Path2,
+    scene: Unit,
+    earcutInjection: Any
+  ) = this()
+  def this(
+    name: String,
+    contours: typings.babylonjs.mathsMathDotpathMod.Path2,
     scene: typings.babylonjs.sceneMod.Scene,
     earcutInjection: Any
   ) = this()

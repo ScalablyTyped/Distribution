@@ -1,6 +1,6 @@
 package typings.reduxStateSync
 
-import typings.broadcastChannel.broadcastChannelMod.BroadcastChannelOptions
+import typings.broadcastChannel.typesBroadcastChannelMod.BroadcastChannelOptions
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware

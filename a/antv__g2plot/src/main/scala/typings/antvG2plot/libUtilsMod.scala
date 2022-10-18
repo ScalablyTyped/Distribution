@@ -8,15 +8,15 @@ import typings.antvG2.mod.Geometry
 import typings.antvG2plot.anon.PlotType
 import typings.antvG2plot.anon.Statistic
 import typings.antvG2plot.antvG2plotStrings.auto
-import typings.antvG2plot.flowMod.FlowFunction
-import typings.antvG2plot.invariantMod.LEVEL
-import typings.antvG2plot.metaMod.Meta
-import typings.antvG2plot.relationDataMod.NodeLinkData
-import typings.antvG2plot.typesCommonMod.Data
-import typings.antvG2plot.typesCommonMod.Datum
-import typings.antvG2plot.typesCommonMod.Point
-import typings.antvG2plot.typesCommonMod.Position
-import typings.antvG2plot.typesCommonMod.Size
+import typings.antvG2plot.libTypesCommonMod.Data
+import typings.antvG2plot.libTypesCommonMod.Datum
+import typings.antvG2plot.libTypesCommonMod.Point
+import typings.antvG2plot.libTypesCommonMod.Position
+import typings.antvG2plot.libTypesCommonMod.Size
+import typings.antvG2plot.libTypesMetaMod.Meta
+import typings.antvG2plot.libTypesRelationDataMod.NodeLinkData
+import typings.antvG2plot.libUtilsFlowMod.FlowFunction
+import typings.antvG2plot.libUtilsInvariantMod.LEVEL
 import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.Record
@@ -35,13 +35,13 @@ object libUtilsMod {
   object LEVEL extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.antvG2plot.invariantMod.LEVEL & String] = js.native
+    def apply(value: String): js.UndefOr[typings.antvG2plot.libUtilsInvariantMod.LEVEL & String] = js.native
     
-    /* "error" */ val ERROR: typings.antvG2plot.invariantMod.LEVEL.ERROR & String = js.native
+    /* "error" */ val ERROR: typings.antvG2plot.libUtilsInvariantMod.LEVEL.ERROR & String = js.native
     
-    /* "log" */ val INFO: typings.antvG2plot.invariantMod.LEVEL.INFO & String = js.native
+    /* "log" */ val INFO: typings.antvG2plot.libUtilsInvariantMod.LEVEL.INFO & String = js.native
     
-    /* "warn" */ val WARN: typings.antvG2plot.invariantMod.LEVEL.WARN & String = js.native
+    /* "warn" */ val WARN: typings.antvG2plot.libUtilsInvariantMod.LEVEL.WARN & String = js.native
   }
   
   inline def adjustYMetaByZero(data: Data, field: String): Meta = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustYMetaByZero")(data.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Meta]

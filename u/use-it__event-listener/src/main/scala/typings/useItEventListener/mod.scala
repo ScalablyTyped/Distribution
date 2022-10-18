@@ -189,14 +189,14 @@ object mod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(eventName: String, handler: EventListenerOrEventListenerObject, element: Window): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def default(eventName: String, handler: EventListenerOrEventListenerObject, element: Window, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -205,7 +205,7 @@ object mod {
     element: Null,
     options: Options
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -214,7 +214,7 @@ object mod {
     element: Unit,
     options: Options
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -222,7 +222,7 @@ object mod {
     ],
     element: Document
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -231,7 +231,7 @@ object mod {
     element: Document,
     options: Options
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -239,7 +239,7 @@ object mod {
     ],
     element: HTMLElement
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -248,7 +248,7 @@ object mod {
     element: HTMLElement,
     options: Options
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -256,7 +256,7 @@ object mod {
     ],
     element: Window
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126 */ Any */](
+  inline def default[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 126, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__dark-theme"
-version := "2.0.2-77bc95"
+version := "2.0.2-6da323"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

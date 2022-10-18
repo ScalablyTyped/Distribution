@@ -1,7 +1,6 @@
 package typings.webpack.anon
 
-import typings.schemaUtils.validateMod.Schema
-import typings.schemaUtils.validateMod.ValidationErrorConfiguration
+import typings.webpack.mod.FileSystemCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply(schema: Schema, options: js.Array[js.Object]): Unit = js.native
-  def apply(schema: Schema, options: js.Array[js.Object], configuration: ValidationErrorConfiguration): Unit = js.native
-  def apply(schema: Schema, options: js.Object): Unit = js.native
-  def apply(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = js.native
+  def apply(arg0: String, arg1: js.Object, arg2: FileSystemCallback[js.Object]): Unit = js.native
+  def apply(arg0: String, arg1: FileSystemCallback[js.Object]): Unit = js.native
 }

@@ -6,7 +6,6 @@ import typings.oidcProvider.mod.CanBePromise
 import typings.oidcProvider.mod.DeviceCode
 import typings.oidcProvider.mod.KoaContextWithOIDC
 import typings.oidcProvider.mod.RefreshToken
-import typings.oidcProvider.mod.ResourceServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait DefaultResource extends StObject {
       /* ctx */ KoaContextWithOIDC, 
       /* resourceIndicator */ String, 
       /* client */ typings.oidcProvider.mod.Client, 
-      CanBePromise[ResourceServer]
+      CanBePromise[typings.oidcProvider.mod.ResourceServer]
     ]
   ] = js.undefined
   
@@ -54,7 +53,7 @@ object DefaultResource {
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     inline def setGetResourceServerInfo(
-      value: (/* ctx */ KoaContextWithOIDC, /* resourceIndicator */ String, /* client */ typings.oidcProvider.mod.Client) => CanBePromise[ResourceServer]
+      value: (/* ctx */ KoaContextWithOIDC, /* resourceIndicator */ String, /* client */ typings.oidcProvider.mod.Client) => CanBePromise[typings.oidcProvider.mod.ResourceServer]
     ): Self = StObject.set(x, "getResourceServerInfo", js.Any.fromFunction3(value))
     
     inline def setGetResourceServerInfoUndefined: Self = StObject.set(x, "getResourceServerInfo", js.undefined)

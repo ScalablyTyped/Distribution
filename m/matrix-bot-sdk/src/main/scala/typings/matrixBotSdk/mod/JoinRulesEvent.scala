@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "JoinRulesEvent")
 @js.native
 open class JoinRulesEvent protected ()
-  extends typings.matrixBotSdk.joinRulesEventMod.JoinRulesEvent {
+  extends typings.matrixBotSdk.libModelsEventsJoinRulesEventMod.JoinRulesEvent {
   def this(event: Any) = this()
 }

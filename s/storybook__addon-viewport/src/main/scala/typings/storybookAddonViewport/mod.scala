@@ -1,6 +1,6 @@
 package typings.storybookAddonViewport
 
-import typings.storybookAddonViewport.viewportMod.ViewportMap
+import typings.storybookAddonViewport.distTs3Dot9ModelsViewportMod.ViewportMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

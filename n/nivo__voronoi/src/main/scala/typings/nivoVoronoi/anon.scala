@@ -3,10 +3,10 @@ package typings.nivoVoronoi
 import typings.d3Delaunay.mod.Delaunay.Point
 import typings.nivoCore.mod.Box
 import typings.nivoCore.mod.Theme
-import typings.nivoVoronoi.computeMeshMod.XYAccessor
-import typings.nivoVoronoi.typesMod.VoronoiDatum
-import typings.nivoVoronoi.typesMod.VoronoiDomain
-import typings.nivoVoronoi.typesMod.VoronoiLayer
+import typings.nivoVoronoi.distTypesComputeMeshMod.XYAccessor
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiDatum
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiDomain
+import typings.nivoVoronoi.distTypesTypesMod.VoronoiLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

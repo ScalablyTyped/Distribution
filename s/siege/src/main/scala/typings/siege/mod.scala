@@ -1,5 +1,6 @@
 package typings.siege
 
+import typings.node.NodeJS.Dict
 import typings.siege.anon.C2mem
 import typings.siege.siegeStrings.color
 import typings.siege.siegeStrings.json
@@ -234,7 +235,7 @@ object mod {
     val withoutCookie: Siege = js.native
   }
   
-  type Stringifiable = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string | number | boolean | ReadonlyArray<string> | ReadonlyArray<number> | ReadonlyArray<boolean> | null> */ Any
+  type Stringifiable = Dict[String | Double | Boolean | (js.Array[Boolean | Double | String]) | Null]
   
   trait Task extends StObject {
     

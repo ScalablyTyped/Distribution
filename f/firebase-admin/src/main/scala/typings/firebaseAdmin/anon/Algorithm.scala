@@ -1,6 +1,6 @@
 package typings.firebaseAdmin.anon
 
-import typings.firebaseAdmin.userImportBuilderMod.HashAlgorithmType
+import typings.firebaseAdmin.libAuthUserImportBuilderMod.HashAlgorithmType
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

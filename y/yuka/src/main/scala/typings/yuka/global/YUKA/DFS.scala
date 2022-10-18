@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class DFS ()
   extends typings.yuka.mod.DFS {
-  def this(graph: typings.yuka.graphMod.Graph[typings.yuka.nodeMod.Node, typings.yuka.edgeMod.Edge]) = this()
+  def this(graph: typings.yuka.srcGraphCoreGraphMod.Graph[typings.yuka.srcGraphCoreNodeMod.Node, typings.yuka.srcGraphCoreEdgeMod.Edge]) = this()
   def this(graph: Null, source: Double) = this()
   def this(graph: Unit, source: Double) = this()
   def this(
-    graph: typings.yuka.graphMod.Graph[typings.yuka.nodeMod.Node, typings.yuka.edgeMod.Edge],
+    graph: typings.yuka.srcGraphCoreGraphMod.Graph[typings.yuka.srcGraphCoreNodeMod.Node, typings.yuka.srcGraphCoreEdgeMod.Edge],
     source: Double
   ) = this()
   def this(graph: Null, source: Double, target: Double) = this()
@@ -27,12 +27,12 @@ open class DFS ()
   def this(graph: Unit, source: Double, target: Double) = this()
   def this(graph: Unit, source: Unit, target: Double) = this()
   def this(
-    graph: typings.yuka.graphMod.Graph[typings.yuka.nodeMod.Node, typings.yuka.edgeMod.Edge],
+    graph: typings.yuka.srcGraphCoreGraphMod.Graph[typings.yuka.srcGraphCoreNodeMod.Node, typings.yuka.srcGraphCoreEdgeMod.Edge],
     source: Double,
     target: Double
   ) = this()
   def this(
-    graph: typings.yuka.graphMod.Graph[typings.yuka.nodeMod.Node, typings.yuka.edgeMod.Edge],
+    graph: typings.yuka.srcGraphCoreGraphMod.Graph[typings.yuka.srcGraphCoreNodeMod.Node, typings.yuka.srcGraphCoreEdgeMod.Edge],
     source: Unit,
     target: Double
   ) = this()

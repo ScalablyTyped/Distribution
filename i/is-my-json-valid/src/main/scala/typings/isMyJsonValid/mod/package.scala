@@ -1,6 +1,5 @@
 package typings.isMyJsonValid.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,10 +38,4 @@ type ArrayFromSchema[ItemSchema /* <: AnySchema */] = js.Array[TypeFromSchema[It
 
 type Filter[Schema /* <: AnySchema */, Output] = js.Function2[/* input */ Output, /* options */ js.UndefOr[Any], Output]
 
-type ObjectFromSchema[Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ Key in keyof Properties ]: Key extends Required? is-my-json-valid.is-my-json-valid.TypeFromSchema<Properties[Key]> : is-my-json-valid.is-my-json-valid.TypeFromSchema<Properties[Key]> | undefined}
-  */ typings.isMyJsonValid.isMyJsonValidStrings.ObjectFromSchema & TopLevel[Any]
-
 type StringKeys[T] = /* keyof T */ String
-
-type TypeFromSchema[Schema /* <: AnySchema */] = (ObjectFromSchema[Any, Any | scala.Nothing]) | Null | Any | String | Double | Boolean

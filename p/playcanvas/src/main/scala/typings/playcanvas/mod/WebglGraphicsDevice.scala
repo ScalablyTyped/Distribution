@@ -2,8 +2,8 @@ package typings.playcanvas.mod
 
 import typings.playcanvas.anon.Alpha
 import typings.playcanvas.anon.Base
-import typings.playcanvas.anon.Depth
 import typings.playcanvas.anon.Flags
+import typings.playcanvas.anon.Stencil
 import typings.std.EXTBlendMinmax
 import typings.std.HTMLCanvasElement
 import typings.std.Map
@@ -172,7 +172,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * });
     */
   def clear(): Unit = js.native
-  def clear(options: Flags): Unit = js.native
+  def clear(options: Stencil): Unit = js.native
   
   var clearColor: Color = js.native
   
@@ -242,7 +242,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var cullMode: Any = js.native
   
-  var defaultClearOptions: Depth = js.native
+  var defaultClearOptions: Flags = js.native
   
   var defaultFramebuffer: Any = js.native
   

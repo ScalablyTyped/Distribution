@@ -1,9 +1,9 @@
 package typings.devtools
 
-import typings.devtools.typesMod.AttachOptions
-import typings.devtools.typesMod.Client
+import typings.devtools.buildTypesMod.AttachOptions
+import typings.devtools.buildTypesMod.Client
 import typings.std.Map
-import typings.wdioTypes.optionsMod.WebDriver
+import typings.wdioTypes.buildOptionsMod.WebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +80,7 @@ object mod {
     
     object WebdriverIO {
       
-      type WDIODevtoolsOptions = typings.devtools.typesMod.WDIODevtoolsOptions
+      type WDIODevtoolsOptions = typings.devtools.buildTypesMod.WDIODevtoolsOptions
     }
   }
 }

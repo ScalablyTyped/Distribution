@@ -21,7 +21,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](name: K): Selection_[
+  inline def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */](name: K): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Unit, 
     Null, 
@@ -34,7 +34,7 @@ object mod {
   ]]
   inline def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
   
-  inline def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](name: K): js.ThisFunction0[
+  inline def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */](name: K): js.ThisFunction0[
     /* this */ BaseType, 
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[
@@ -303,7 +303,7 @@ object mod {
       *
       * @param type A string representing the tag name.
       */
-    def append[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K): Selection_[
+    def append[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */](`type`: K): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
@@ -633,19 +633,19 @@ object mod {
       *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
       *     before which the element should be inserted.
       */
-    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K): Selection_[
+    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */](`type`: K): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K, before: String): Selection_[
+    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */](`type`: K, before: String): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
+    def insert[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */](`type`: K, before: ValueFn[GElement, Datum, BaseType]): Selection_[
         /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
         Datum, 
         PElement, 
@@ -694,13 +694,13 @@ object mod {
       *
       * The "matching" logic is determined by the key function passed to `selection.data`.
       */
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](enter: K): Selection_[
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */, OldDatum](enter: K): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
         Datum, 
         PElement, 
         PDatum
       ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */, OldDatum](
       enter: K,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
@@ -714,7 +714,7 @@ object mod {
         PElement, 
         PDatum
       ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */, OldDatum](
       enter: K,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
@@ -730,7 +730,7 @@ object mod {
         PElement, 
         PDatum
       ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, OldDatum](
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.d3Selection.d3SelectionStrings.a, typings.d3Selection.d3SelectionStrings.abbr, typings.d3Selection.d3SelectionStrings.address */ Any */, OldDatum](
       enter: K,
       update: Unit,
       // tslint:disable-next-line:no-unnecessary-generics

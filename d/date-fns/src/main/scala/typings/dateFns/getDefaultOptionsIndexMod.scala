@@ -10,7 +10,7 @@ object getDefaultOptionsIndexMod {
     
     inline def apply(): js.Object = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Object]
     
-    @JSImport("date-fns/esm/getDefaultOptions/index", JSImport.Default)
+    @JSImport("date-fns/getDefaultOptions/index", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }

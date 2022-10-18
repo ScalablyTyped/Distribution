@@ -1,8 +1,8 @@
 package typings.algoliasearchHelper.anon
 
-import typings.algoliasearchHelper.algoliasearchMod.HighlightResult
-import typings.algoliasearchHelper.algoliasearchMod.RankingInfo
-import typings.algoliasearchHelper.algoliasearchMod.SnippetResult
+import typings.algoliasearchHelper.typesAlgoliasearchMod.HighlightResult
+import typings.algoliasearchHelper.typesAlgoliasearchMod.RankingInfo
+import typings.algoliasearchHelper.typesAlgoliasearchMod.SnippetResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

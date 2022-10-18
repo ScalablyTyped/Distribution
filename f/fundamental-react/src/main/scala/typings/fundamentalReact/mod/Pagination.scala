@@ -1,6 +1,6 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.paginationMod.default
+import typings.fundamentalReact.libPaginationPaginationMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

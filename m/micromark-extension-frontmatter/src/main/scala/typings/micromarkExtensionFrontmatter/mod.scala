@@ -13,10 +13,10 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def frontmatter(): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatter")().asInstanceOf[Extension]
-  inline def frontmatter(options: typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatter")(options.asInstanceOf[js.Any]).asInstanceOf[Extension]
+  inline def frontmatter(options: typings.micromarkExtensionFrontmatter.devMattersMod.Options): Extension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatter")(options.asInstanceOf[js.Any]).asInstanceOf[Extension]
   
   inline def frontmatterHtml(): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatterHtml")().asInstanceOf[HtmlExtension]
-  inline def frontmatterHtml(options: typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatterHtml")(options.asInstanceOf[js.Any]).asInstanceOf[HtmlExtension]
+  inline def frontmatterHtml(options: typings.micromarkExtensionFrontmatter.devMattersMod.Options): HtmlExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("frontmatterHtml")(options.asInstanceOf[js.Any]).asInstanceOf[HtmlExtension]
   
-  type Options = typings.micromarkExtensionFrontmatter.micromarkExtensionFrontmatterMod.Options
+  type Options = typings.micromarkExtensionFrontmatter.devMattersMod.Options
 }

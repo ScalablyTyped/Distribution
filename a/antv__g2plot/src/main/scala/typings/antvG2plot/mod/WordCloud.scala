@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialWordCloudOptions
-import typings.antvG2plot.wordCloudTypesMod.WordCloudOptions
+import typings.antvG2plot.libPlotsWordCloudTypesMod.WordCloudOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "WordCloud")
 @js.native
 open class WordCloud protected ()
-  extends typings.antvG2plot.wordCloudMod.WordCloud {
+  extends typings.antvG2plot.libPlotsWordCloudMod.WordCloud {
   def this(container: String, options: WordCloudOptions) = this()
   def this(container: HTMLElement, options: WordCloudOptions) = this()
 }

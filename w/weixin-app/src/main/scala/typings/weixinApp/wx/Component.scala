@@ -1,6 +1,5 @@
 package typings.weixinApp.wx
 
-import org.scalablytyped.runtime.TopLevel
 import typings.weixinApp.anon.Partialbubblesbooleancomp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +27,7 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   /**
     * 组件数据，包括内部数据和属性值
     */
-  var data: D & UnboxBehaviorsData[B] & typings.weixinApp.weixinAppStrings.Component & TopLevel[Any] = js.native
+  var data: D & UnboxBehaviorsData[B] & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof P & weixin-app.wx.UnboxBehaviorsProps<B> ]: weixin-app.wx.PropValueType<P & weixin-app.wx.UnboxBehaviorsProps<B>[key]>} */ js.Any) = js.native
   
   /**
     * 节点dataset
@@ -59,7 +58,7 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   /**
     * 组件数据，包括内部数据和属性值（与 data 一致）
     */
-  var properties: D & UnboxBehaviorsData[B] & typings.weixinApp.weixinAppStrings.Component & TopLevel[Any] = js.native
+  var properties: D & UnboxBehaviorsData[B] & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof P & weixin-app.wx.UnboxBehaviorsProps<B> ]: weixin-app.wx.PropValueType<P & weixin-app.wx.UnboxBehaviorsProps<B>[key]>} */ js.Any) = js.native
   
   /**
     * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
@@ -81,14 +80,10 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
     * @param [callback] callback 是一个回调函数，在这次setData对界面渲染完毕后调用
     */
   def setData(
-    data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.weixinApp.weixinAppStrings.Component & TopLevel[Any]
+    data: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>} */ js.Any
   ): Unit = js.native
   def setData(
-    data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.weixinApp.weixinAppStrings.Component & TopLevel[Any],
+    data: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>} */ js.Any,
     callback: js.Function0[Unit]
   ): Unit = js.native
   

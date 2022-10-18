@@ -1,12 +1,12 @@
 package typings.jupyterlabJsonExtension
 
 import org.scalablytyped.runtime.Shortcut
-import typings.jupyterlabApputils.printingMod.Printing.IPrintable
+import typings.jupyterlabApputils.libPrintingMod.Printing.IPrintable
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
-import typings.jupyterlabTranslation.tokensMod.ITranslator
+import typings.jupyterlabTranslation.libTokensMod.ITranslator
 import typings.luminoMessaging.mod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,24 +35,11 @@ object mod extends Shortcut {
     /* private */ var _mimeType: Any = js.native
     
     /**
-      * Dispose of the resources held by the object.
-      *
-      * #### Notes
-      * If the object's `dispose` method is called more than once, all
-      * calls made after the first will be a no-op.
-      *
-      * #### Undefined Behavior
-      * It is undefined behavior to use any functionality of the object
-      * after it has been disposed unless otherwise explicitly noted.
-      */
-    /* InferMemberOverrides */
-    override def dispose(): Unit = js.native
-    
-    /**
       * Process a message sent to the handler.
       *
       * @param msg - The message to be processed.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
     

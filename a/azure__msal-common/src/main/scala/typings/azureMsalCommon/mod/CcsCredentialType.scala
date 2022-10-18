@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object CcsCredentialType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.azureMsalCommon.ccsCredentialMod.CcsCredentialType & String] = js.native
+  def apply(value: String): js.UndefOr[typings.azureMsalCommon.distAccountCcsCredentialMod.CcsCredentialType & String] = js.native
   
-  /* "home_account_id" */ val HOME_ACCOUNT_ID: typings.azureMsalCommon.ccsCredentialMod.CcsCredentialType.HOME_ACCOUNT_ID & String = js.native
+  /* "home_account_id" */ val HOME_ACCOUNT_ID: typings.azureMsalCommon.distAccountCcsCredentialMod.CcsCredentialType.HOME_ACCOUNT_ID & String = js.native
   
-  /* "UPN" */ val UPN: typings.azureMsalCommon.ccsCredentialMod.CcsCredentialType.UPN & String = js.native
+  /* "UPN" */ val UPN: typings.azureMsalCommon.distAccountCcsCredentialMod.CcsCredentialType.UPN & String = js.native
 }

@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonIncludeallbranches extends StObject {
   
   var requestBody: ContentApplicationjsonIncludeallbranches
   
-  var responses: `588`
+  var responses: `599`
 }
 object RequestBodyContentApplicationjsonIncludeallbranches {
   
   inline def apply(
     parameters: PathTemplateowner,
     requestBody: ContentApplicationjsonIncludeallbranches,
-    responses: `588`
+    responses: `599`
   ): RequestBodyContentApplicationjsonIncludeallbranches = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonIncludeallbranches]
@@ -29,6 +29,6 @@ object RequestBodyContentApplicationjsonIncludeallbranches {
     
     inline def setRequestBody(value: ContentApplicationjsonIncludeallbranches): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `588`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `599`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

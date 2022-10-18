@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [count] - The amount of samples the smoother will use to average a vector.
   */
 open class Smoother ()
-  extends typings.yuka.yukaMod.Smoother {
+  extends typings.yuka.srcYukaMod.Smoother {
   def this(count: Double) = this()
 }

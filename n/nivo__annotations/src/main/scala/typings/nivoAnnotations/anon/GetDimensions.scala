@@ -1,8 +1,8 @@
 package typings.nivoAnnotations.anon
 
-import typings.nivoAnnotations.typesMod.AnnotationDimensionsGetter
-import typings.nivoAnnotations.typesMod.AnnotationMatcher
-import typings.nivoAnnotations.typesMod.AnnotationPositionGetter
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationDimensionsGetter
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationMatcher
+import typings.nivoAnnotations.distTypesTypesMod.AnnotationPositionGetter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

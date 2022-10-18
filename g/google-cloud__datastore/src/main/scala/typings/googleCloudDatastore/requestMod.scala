@@ -6,7 +6,7 @@ import typings.googleCloudDatastore.queryMod.Query
 import typings.googleCloudDatastore.queryMod.QueryCallback
 import typings.googleCloudDatastore.queryMod.QueryOptions
 import typings.googleCloudDatastore.queryMod.QueryResult
-import typings.std.ReadableStream
+import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,15 +17,15 @@ object requestMod {
     * Creates requests to the Datastore endpoint.
     * Designed to be inherited by {@link Datastore} & {@link DatastoreTransaction}
     */
-  @JSImport("@google-cloud/datastore/request", "DatastoreRequest")
+  /* note: abstract class */ @JSImport("@google-cloud/datastore/request", "DatastoreRequest")
   @js.native
-  abstract class DatastoreRequest () extends StObject {
+  open class DatastoreRequest () extends StObject {
     
     def allocateIds(incompleteKey: DatastoreKey, n: Double): js.Promise[AllocateIdsResult] = js.native
     def allocateIds(incompleteKey: DatastoreKey, n: Double, callback: AllocateIdsCallback): Unit = js.native
     
-    def createReadStream(keys: js.Array[DatastoreKey], options: QueryOptions): ReadableStream[Any] = js.native
-    def createReadStream(keys: DatastoreKey, options: QueryOptions): ReadableStream[Any] = js.native
+    def createReadStream(keys: js.Array[DatastoreKey], options: QueryOptions): ReadableStream = js.native
+    def createReadStream(keys: DatastoreKey, options: QueryOptions): ReadableStream = js.native
     
     def delete(keyOrKeys: js.Array[DatastoreKey]): js.Promise[CommitResult] | Unit = js.native
     def delete(keyOrKeys: js.Array[DatastoreKey], callback: CommitCallback): Unit = js.native
@@ -49,8 +49,8 @@ object requestMod {
     def runQuery(query: Query, options: QueryOptions): js.Promise[QueryResult] = js.native
     def runQuery(query: Query, options: QueryOptions, callback: QueryCallback): Unit = js.native
     
-    def runQueryStream(query: Query): ReadableStream[Any] = js.native
-    def runQueryStream(query: Query, options: QueryOptions): ReadableStream[Any] = js.native
+    def runQueryStream(query: Query): ReadableStream = js.native
+    def runQueryStream(query: Query, options: QueryOptions): ReadableStream = js.native
     
     def save(entities: OneOrMany[js.Object]): js.Promise[CommitResult] | Unit = js.native
     def save(entities: OneOrMany[js.Object], callback: CommitCallback): Unit = js.native

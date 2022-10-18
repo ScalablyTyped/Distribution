@@ -1,13 +1,13 @@
 package typings.rcTabs
 
-import typings.rcTabs.interfaceMod.AnimatedConfig
-import typings.rcTabs.interfaceMod.EditableConfig
-import typings.rcTabs.interfaceMod.OnTabScroll
-import typings.rcTabs.interfaceMod.RenderTabBar
-import typings.rcTabs.interfaceMod.Tab
-import typings.rcTabs.interfaceMod.TabBarExtraContent
-import typings.rcTabs.interfaceMod.TabPosition
-import typings.rcTabs.interfaceMod.TabsLocale
+import typings.rcTabs.esInterfaceMod.AnimatedConfig
+import typings.rcTabs.esInterfaceMod.EditableConfig
+import typings.rcTabs.esInterfaceMod.OnTabScroll
+import typings.rcTabs.esInterfaceMod.RenderTabBar
+import typings.rcTabs.esInterfaceMod.Tab
+import typings.rcTabs.esInterfaceMod.TabBarExtraContent
+import typings.rcTabs.esInterfaceMod.TabPosition
+import typings.rcTabs.esInterfaceMod.TabsLocale
 import typings.rcTabs.rcTabsStrings.bottom
 import typings.rcTabs.rcTabsStrings.left
 import typings.rcTabs.rcTabsStrings.right
@@ -90,27 +90,6 @@ object anon {
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Width extends StObject {
-    
-    var height: Double
-    
-    var width: Double
-  }
-  object Width {
-    
-    inline def apply(height: Double, width: Double): Width = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Width]
-    }
-    
-    extension [Self <: Width](x: Self) {
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

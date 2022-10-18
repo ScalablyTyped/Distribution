@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 Each range is associated with a value, which must inherit from
 this class.
 */
-@JSImport("@codemirror/state", "RangeValue")
+/* note: abstract class */ @JSImport("@codemirror/state", "RangeValue")
 @js.native
-abstract class RangeValue () extends StObject {
+open class RangeValue () extends StObject {
   
   /**
     The bias value at the end of the range. Defaults to 0.

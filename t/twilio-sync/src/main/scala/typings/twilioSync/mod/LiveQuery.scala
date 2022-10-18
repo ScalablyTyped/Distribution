@@ -12,13 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Use the {@link SyncClient.liveQuery} method to create a live query.
   */
-@JSImport("twilio-sync", "LiveQuery")
 @js.native
-open class LiveQuery protected () extends Closeable {
-  /**
-    * @internal
-    */
-  def this(liveQueryImpl: LiveQueryImpl) = this()
+trait LiveQuery extends Closeable {
   
   /**
     * @return A snapshot of items matching the current query expression.
@@ -35,44 +30,4 @@ open class LiveQuery protected () extends Closeable {
   def sid: String = js.native
   
   def `type`: String = js.native
-}
-object LiveQuery {
-  
-  /**
-    * Fired when an existing item has been removed.
-    *
-    * Parameters:
-    * 1. object `args` - info object provided with the event. It has the following properties:
-    *     * object `key` - the key of the removed item
-    * @example
-    * ```typescript
-    * liveQuery.on('itemRemoved', (args) => {
-    *   console.log(`Item ${args.key} was removed`);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "LiveQuery.itemRemoved")
-  @js.native
-  val itemRemoved: /* "itemRemoved" */ String = js.native
-  
-  /**
-    * Fired when an item has been added or updated.
-    *
-    * Parameters:
-    * 1. {@link InsightsItem} `item` - updated item
-    * @example
-    * ```typescript
-    * liveQuery.on('itemUpdated', (item) => {
-    *   console.log(`Item ${item.key} was updated`'`);
-    *   console.log('Item value:', item.value);
-    * });
-    * ```
-    * @event
-    */
-  /* static member */
-  @JSImport("twilio-sync", "LiveQuery.itemUpdated")
-  @js.native
-  val itemUpdated: /* "itemUpdated" */ String = js.native
 }

@@ -1,6 +1,6 @@
 package typings.reactSketchapp.anon
 
-import typings.reactSketchapp.moduleTypesMod.TextNode
+import typings.reactSketchapp.libModuleTypesMod.TextNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

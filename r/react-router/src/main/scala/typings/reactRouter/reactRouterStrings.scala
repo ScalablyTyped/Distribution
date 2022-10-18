@@ -1,15 +1,11 @@
 package typings.reactRouter
 
-import typings.reactRouter.contextMod.RelativeRoutingType
+import typings.reactRouter.distLibContextMod.RelativeRoutingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRouterStrings {
-  
-  @js.native
-  sealed trait generatePath extends StObject
-  inline def generatePath: generatePath = "generatePath".asInstanceOf[generatePath]
   
   @js.native
   sealed trait path

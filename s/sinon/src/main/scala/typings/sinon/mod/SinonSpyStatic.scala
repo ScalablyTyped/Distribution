@@ -25,6 +25,6 @@ trait SinonSpyStatic extends StObject {
     * The original method can be restored by calling object.method.restore().
     * The returned spy is the function object which replaced the original method. spy === object.method.
     */
-  def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonSpy[Any | js.Array[Any], Any] = js.native
+  def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K): /* import warning: importer.ImportType#apply Failed type conversion: T[K] extends (args : infer TArgs): infer TReturnValue ? sinon.sinon.SinonSpy<TArgs, TReturnValue> : sinon.sinon.SinonSpy<std.Array<any>, any> */ js.Any = js.native
   def apply[T, K /* <: /* keyof T */ String */](obj: T, method: K, types: js.Array[get | set]): js.PropertyDescriptor & (Get[T, K]) = js.native
 }

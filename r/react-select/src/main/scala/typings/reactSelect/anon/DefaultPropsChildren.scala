@@ -1,8 +1,8 @@
 package typings.reactSelect.anon
 
-import typings.emotionReact.emotionReactMod.jsx.JSX.Element
-import typings.reactSelect.menuMod.NoticeProps
-import typings.reactSelect.typesMod.GroupBase
+import typings.emotionReact.mod.jsx.JSX.Element
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.NoticeProps
+import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DefaultPropsChildren extends StObject {
   
-  def apply[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](props: NoticeProps[Option_11, IsMulti_11, Group_11]): Element = js.native
+  def apply[Option_12, IsMulti_12 /* <: Boolean */, Group_12 /* <: GroupBase[Option_12] */](props: NoticeProps[Option_12, IsMulti_12, Group_12]): Element = js.native
   
   var defaultProps: Children = js.native
 }

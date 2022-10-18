@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +8,12 @@ trait BatchTranslateDocumentRequest extends StObject {
   
   /** Optional. */
   var formatConversions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateDocumentRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Optional. Glossaries to be applied. It's keyed by target language code. */
   var glossaries: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.translate.gapi.client.translate.TranslateTextGlossaryConfig}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateDocumentRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.translate.gapi.client.translate.TranslateTextGlossaryConfig} */ js.Any
   ] = js.undefined
   
   /**
@@ -34,9 +29,7 @@ trait BatchTranslateDocumentRequest extends StObject {
     * (nmt) is used.
     */
   var models: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateDocumentRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Required. Output configuration. If 2 input configs match to the same file (that is, same input path), we don't generate output for duplicate inputs. */
@@ -61,17 +54,13 @@ object BatchTranslateDocumentRequest {
   extension [Self <: BatchTranslateDocumentRequest](x: Self) {
     
     inline def setFormatConversions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateDocumentRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "formatConversions", value.asInstanceOf[js.Any])
     
     inline def setFormatConversionsUndefined: Self = StObject.set(x, "formatConversions", js.undefined)
     
     inline def setGlossaries(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.translate.gapi.client.translate.TranslateTextGlossaryConfig}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateDocumentRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.translate.gapi.client.translate.TranslateTextGlossaryConfig} */ js.Any
     ): Self = StObject.set(x, "glossaries", value.asInstanceOf[js.Any])
     
     inline def setGlossariesUndefined: Self = StObject.set(x, "glossaries", js.undefined)
@@ -83,9 +72,7 @@ object BatchTranslateDocumentRequest {
     inline def setInputConfigsVarargs(value: BatchDocumentInputConfig*): Self = StObject.set(x, "inputConfigs", js.Array(value*))
     
     inline def setModels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.BatchTranslateDocumentRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)

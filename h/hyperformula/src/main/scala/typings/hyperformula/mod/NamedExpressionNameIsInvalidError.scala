@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "NamedExpressionNameIsInvalidError")
 @js.native
 open class NamedExpressionNameIsInvalidError protected ()
-  extends typings.hyperformula.errorsMod.NamedExpressionNameIsInvalidError {
+  extends typings.hyperformula.typingsErrorsMod.NamedExpressionNameIsInvalidError {
   def this(expressionName: String) = this()
 }

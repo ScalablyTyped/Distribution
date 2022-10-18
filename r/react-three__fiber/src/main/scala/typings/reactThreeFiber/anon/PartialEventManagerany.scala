@@ -1,12 +1,12 @@
 package typings.reactThreeFiber.anon
 
-import typings.reactThreeFiber.eventsMod.ComputeFunction
-import typings.reactThreeFiber.eventsMod.DomEvent
-import typings.reactThreeFiber.eventsMod.FilterFunction
-import typings.reactThreeFiber.storeMod.RootState
-import typings.three.eventDispatcherMod.Event
-import typings.three.object3DMod.Object3D
-import typings.three.raycasterMod.Intersection
+import typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.ComputeFunction
+import typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.DomEvent
+import typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.FilterFunction
+import typings.reactThreeFiber.distDeclarationsSrcCoreStoreMod.RootState
+import typings.three.srcCoreEventDispatcherMod.Event
+import typings.three.srcCoreObject3DMod.Object3D
+import typings.three.srcCoreRaycasterMod.Intersection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait PartialEventManagerany extends StObject {
   
   var filter: js.UndefOr[FilterFunction] = js.undefined
   
-  var handlers: js.UndefOr[typings.reactThreeFiber.eventsMod.Events] = js.undefined
+  var handlers: js.UndefOr[typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.Events] = js.undefined
   
   var priority: js.UndefOr[Double] = js.undefined
 }
@@ -65,7 +65,7 @@ object PartialEventManagerany {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setHandlers(value: typings.reactThreeFiber.eventsMod.Events): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    inline def setHandlers(value: typings.reactThreeFiber.distDeclarationsSrcCoreEventsMod.Events): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
     inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     

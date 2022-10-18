@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.billingMod.billing.BillingData
+import typings.mangopay2NodejsSdk.typingsModelsBillingMod.billing.BillingData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -10,8 +10,7 @@ sealed trait FieldErrorCellValueSubType extends StObject
   * Represents types of #FIELD! errors.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 @JSGlobal("Excel.FieldErrorCellValueSubType")
 @js.native
@@ -21,8 +20,7 @@ object FieldErrorCellValueSubType extends StObject {
     * An error caused by an error from a data provider. Displays as error type #FIELD! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait dataProviderError
@@ -33,8 +31,7 @@ object FieldErrorCellValueSubType extends StObject {
     * An unknown type of error. Displays as error type #FIELD! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait unknown
@@ -45,8 +42,7 @@ object FieldErrorCellValueSubType extends StObject {
     * An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   @js.native
   sealed trait webImageMissingFilePart

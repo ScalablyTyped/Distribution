@@ -1,7 +1,7 @@
 package typings.upath2
 
-import typings.upath2.typeMod.IPathPlatform
-import typings.upath2.typeMod.IPathPlatformOrigin
+import typings.upath2.libTypeMod.IPathPlatform
+import typings.upath2.libTypeMod.IPathPlatformOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

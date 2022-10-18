@@ -1,6 +1,6 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType
+import typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType
 import typings.redisTimeSeries.redisTimeSeriesStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

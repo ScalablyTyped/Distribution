@@ -1,9 +1,9 @@
 package typings.ajvKeywords
 
 import typings.ajvKeywords.ajvKeywordsBooleans.`true`
-import typings.ajvKeywords.dynamicDefaultsMod.DynamicDefaultFunc
-import typings.ajvKeywords.instanceofMod.Constructor
-import typings.ajvKeywords.transformMod.TransformConfig
+import typings.ajvKeywords.distDefinitionsDynamicDefaultsMod.DynamicDefaultFunc
+import typings.ajvKeywords.distDefinitionsInstanceofMod.Constructor
+import typings.ajvKeywords.distDefinitionsTransformMod.TransformConfig
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -110,17 +110,17 @@ object anon {
     def toEnumCase(s: String): String
     def toEnumCase(s: String, cfg: TransformConfig): String
     @JSName("toEnumCase")
-    var toEnumCase_Original: typings.ajvKeywords.transformMod.Transform
+    var toEnumCase_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     def toLowerCase(s: String): String
     def toLowerCase(s: String, cfg: TransformConfig): String
     @JSName("toLowerCase")
-    var toLowerCase_Original: typings.ajvKeywords.transformMod.Transform
+    var toLowerCase_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     def toUpperCase(s: String): String
     def toUpperCase(s: String, cfg: TransformConfig): String
     @JSName("toUpperCase")
-    var toUpperCase_Original: typings.ajvKeywords.transformMod.Transform
+    var toUpperCase_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     def trim(s: String): String
     def trim(s: String, cfg: TransformConfig): String
@@ -128,25 +128,25 @@ object anon {
     def trimEnd(s: String): String
     def trimEnd(s: String, cfg: TransformConfig): String
     @JSName("trimEnd")
-    var trimEnd_Original: typings.ajvKeywords.transformMod.Transform
+    var trimEnd_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     def trimLeft(s: String): String
     def trimLeft(s: String, cfg: TransformConfig): String
     @JSName("trimLeft")
-    var trimLeft_Original: typings.ajvKeywords.transformMod.Transform
+    var trimLeft_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     def trimRight(s: String): String
     def trimRight(s: String, cfg: TransformConfig): String
     @JSName("trimRight")
-    var trimRight_Original: typings.ajvKeywords.transformMod.Transform
+    var trimRight_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     def trimStart(s: String): String
     def trimStart(s: String, cfg: TransformConfig): String
     @JSName("trimStart")
-    var trimStart_Original: typings.ajvKeywords.transformMod.Transform
+    var trimStart_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
     
     @JSName("trim")
-    var trim_Original: typings.ajvKeywords.transformMod.Transform
+    var trim_Original: typings.ajvKeywords.distDefinitionsTransformMod.Transform
   }
   object keyinTransformNameTransfo {
     

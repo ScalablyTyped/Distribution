@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Slice extends StObject {
   
   /**
-    * Gets the raw data of the file slice in `Office.FileType.Text` or `Office.FileType.Compressed` format as specified 
+    * Gets the raw data of the file slice in `Office.FileType.Text` or `Office.FileType.Compressed` format as specified
     * by the `fileType` parameter of the call to the `Document.getFileAsync` method.
     *
     * @remarks
-    * 
+    *
     * Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if required.
     */
   var data: Any

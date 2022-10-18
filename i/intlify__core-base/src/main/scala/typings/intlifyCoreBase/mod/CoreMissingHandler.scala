@@ -15,8 +15,19 @@ trait CoreMissingHandler[Message] extends StObject {
       js.Object, 
       PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
   {} */ String], 
-      (PickupLocales[js.Object, /* keyof / * Inlined std.NonNullable<{}> * /
-  {} */ String]) | Locale
+      /* import warning: importer.ImportType#apply Failed type conversion: [@intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+  {}, keyof / * Inlined std.NonNullable<{}> * /
+  {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+  {}, keyof / * Inlined std.NonNullable<{}> * /
+  {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+  {}, keyof / * Inlined std.NonNullable<{}> * /
+  {}>] extends [never] ? @intlify/core-base.@intlify/core-base.Locale : @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+  {}, keyof / * Inlined std.NonNullable<{}> * /
+  {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+  {}, keyof / * Inlined std.NonNullable<{}> * /
+  {}> | @intlify/core-base.@intlify/core-base.PickupLocales</ * Inlined std.NonNullable<{}> * /
+  {}, keyof / * Inlined std.NonNullable<{}> * /
+  {}> */ js.Any
     ],
     locale: Locale,
     key: Path,

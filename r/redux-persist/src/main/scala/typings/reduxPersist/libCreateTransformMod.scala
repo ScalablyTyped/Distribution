@@ -1,9 +1,9 @@
 package typings.reduxPersist
 
-import typings.reduxPersist.createTransformMod.TransformConfig
-import typings.reduxPersist.typesMod.Transform
-import typings.reduxPersist.typesMod.TransformInbound
-import typings.reduxPersist.typesMod.TransformOutbound
+import typings.reduxPersist.esCreateTransformMod.TransformConfig
+import typings.reduxPersist.esTypesMod.Transform
+import typings.reduxPersist.esTypesMod.TransformInbound
+import typings.reduxPersist.esTypesMod.TransformOutbound
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

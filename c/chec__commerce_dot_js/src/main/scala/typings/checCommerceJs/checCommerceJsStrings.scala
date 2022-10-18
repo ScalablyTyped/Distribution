@@ -1,11 +1,11 @@
 package typings.checCommerceJs
 
-import typings.checCommerceJs.cartMod.RequestMethod
-import typings.checCommerceJs.checkoutCaptureResponseMod.FulfillmentStatus
-import typings.checCommerceJs.checkoutCaptureResponseMod.PaymentStatus
-import typings.checCommerceJs.checkoutMod.IdentifierType
-import typings.checCommerceJs.discountMod.DiscountType
-import typings.checCommerceJs.merchantMod.MerchantStatus
+import typings.checCommerceJs.featuresCartMod.RequestMethod
+import typings.checCommerceJs.featuresCheckoutMod.IdentifierType
+import typings.checCommerceJs.typesCheckoutCaptureResponseMod.FulfillmentStatus
+import typings.checCommerceJs.typesCheckoutCaptureResponseMod.PaymentStatus
+import typings.checCommerceJs.typesDiscountMod.DiscountType
+import typings.checCommerceJs.typesMerchantMod.MerchantStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

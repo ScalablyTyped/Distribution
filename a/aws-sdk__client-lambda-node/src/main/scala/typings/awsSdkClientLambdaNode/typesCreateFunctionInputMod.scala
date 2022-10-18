@@ -13,13 +13,13 @@ import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.nodejs6Dot10
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.nodejs8Dot10
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.python2Dot7
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.python3Dot6
-import typings.awsSdkClientLambdaNode.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkClientLambdaNode.typesDeadLetterConfigMod.DeadLetterConfig
 import typings.awsSdkClientLambdaNode.typesEnvironmentMod.Environment
 import typings.awsSdkClientLambdaNode.typesFunctionCodeMod.FunctionCode
+import typings.awsSdkClientLambdaNode.typesInputTypesUnionMod._InputTypesUnion
 import typings.awsSdkClientLambdaNode.typesTracingConfigMod.TracingConfig
 import typings.awsSdkClientLambdaNode.typesVpcConfigMod.VpcConfig
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

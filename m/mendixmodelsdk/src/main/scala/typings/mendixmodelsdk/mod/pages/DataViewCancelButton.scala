@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.DataViewCancelButton")
 @js.native
 open class DataViewCancelButton protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewCancelButton {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.DataViewCancelButton {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -41,7 +41,7 @@ object DataViewCancelButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.DataViewCancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DataViewCancelButton]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewCancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewCancelButton]
   
   /**
     * Creates and returns a new DataViewCancelButton instance in the SDK and on the server.
@@ -52,7 +52,7 @@ object DataViewCancelButton {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  inline def createIn(container: typings.mendixmodelsdk.pagesMod.pages.ControlBar): typings.mendixmodelsdk.pagesMod.pages.DataViewCancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.DataViewCancelButton]
+  inline def createIn(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ControlBar): typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewCancelButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewCancelButton]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.DataViewCancelButton.structureTypeName")

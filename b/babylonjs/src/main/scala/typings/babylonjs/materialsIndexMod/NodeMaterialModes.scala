@@ -9,13 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NodeMaterialModes extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.babylonjs.materialsNodeEnumsNodeMaterialModesMod.NodeMaterialModes & Double
+  ] = js.native
   
-  /* 0 */ val Material: typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes.Material & Double = js.native
+  /* 0 */ val Material: typings.babylonjs.materialsNodeEnumsNodeMaterialModesMod.NodeMaterialModes.Material & Double = js.native
   
-  /* 2 */ val Particle: typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes.Particle & Double = js.native
+  /* 2 */ val Particle: typings.babylonjs.materialsNodeEnumsNodeMaterialModesMod.NodeMaterialModes.Particle & Double = js.native
   
-  /* 1 */ val PostProcess: typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes.PostProcess & Double = js.native
+  /* 1 */ val PostProcess: typings.babylonjs.materialsNodeEnumsNodeMaterialModesMod.NodeMaterialModes.PostProcess & Double = js.native
   
-  /* 3 */ val ProceduralTexture: typings.babylonjs.nodeMaterialModesMod.NodeMaterialModes.ProceduralTexture & Double = js.native
+  /* 3 */ val ProceduralTexture: typings.babylonjs.materialsNodeEnumsNodeMaterialModesMod.NodeMaterialModes.ProceduralTexture & Double = js.native
 }

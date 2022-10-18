@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.SPUserNotice")
 @js.native
 open class SPUserNotice ()
-  extends typings.xadesjs.typesXmlMod.SPUserNotice {
+  extends typings.xadesjs.buildTypesXmlMod.SPUserNotice {
   def this(properties: js.Object) = this()
 }

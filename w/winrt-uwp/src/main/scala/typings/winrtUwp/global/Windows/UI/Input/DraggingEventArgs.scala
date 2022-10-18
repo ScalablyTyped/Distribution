@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the Dragging event. */
-@JSGlobal("Windows.UI.Input.DraggingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.DraggingEventArgs")
 @js.native
-abstract class DraggingEventArgs ()
+open class DraggingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.DraggingEventArgs {
   

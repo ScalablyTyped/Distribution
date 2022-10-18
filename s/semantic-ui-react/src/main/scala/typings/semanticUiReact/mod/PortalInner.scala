@@ -1,6 +1,6 @@
 package typings.semanticUiReact.mod
 
-import typings.semanticUiReact.portalInnerMod.default
+import typings.semanticUiReact.distCommonjsAddonsPortalPortalInnerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

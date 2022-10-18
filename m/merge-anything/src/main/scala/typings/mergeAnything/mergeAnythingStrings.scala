@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mergeAnythingStrings {
   
   @js.native
-  sealed trait ExpandDeep extends StObject
-  inline def ExpandDeep: ExpandDeep = "ExpandDeep".asInstanceOf[ExpandDeep]
-  
-  @js.native
   sealed trait deep extends StObject
   inline def deep: deep = "deep".asInstanceOf[deep]
 }

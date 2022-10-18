@@ -2,8 +2,8 @@ package typings.reactMdMaterialIcons
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdIcon.fontIconMod.FontIconProps
-import typings.reactMdIcon.svgiconMod.SVGIconProps
+import typings.reactMdIcon.typesFontIconMod.FontIconProps
+import typings.reactMdIcon.typesSvgiconMod.SVGIconProps
 import typings.std.HTMLElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject

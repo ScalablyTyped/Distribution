@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof core.Math` */
 object es6MathMod {
   
-  @JSImport("core-js/library/es6/math", JSImport.Namespace)
+  @JSImport("core-js/es6/math", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

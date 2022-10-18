@@ -1,22 +1,22 @@
 package typings.braintreeWeb
 
-import typings.braintreeWeb.americanExpressMod.AmericanExpress
 import typings.braintreeWeb.anon.Authorization
-import typings.braintreeWeb.applePayMod.ApplePay
-import typings.braintreeWeb.applePayMod.ApplePayPaymentRequest
-import typings.braintreeWeb.clientMod.Client
-import typings.braintreeWeb.coreMod.callback
-import typings.braintreeWeb.dataCollectorMod.DataCollector
-import typings.braintreeWeb.googlePaymentMod.GooglePayment
-import typings.braintreeWeb.hostedFieldsMod.HostedFields
-import typings.braintreeWeb.localPaymentMod.LocalPayment
-import typings.braintreeWeb.paypalCheckoutMod.PayPalCheckout
-import typings.braintreeWeb.paypalMod.PayPal
-import typings.braintreeWeb.threeDSecureMod.ThreeDSecure
-import typings.braintreeWeb.unionpayMod.UnionPay
-import typings.braintreeWeb.usBankAccountMod.USBankAccount
-import typings.braintreeWeb.vaultManagerMod.VaultManager
-import typings.braintreeWeb.venmoMod.Venmo
+import typings.braintreeWeb.modulesAmericanExpressMod.AmericanExpress
+import typings.braintreeWeb.modulesApplePayMod.ApplePay
+import typings.braintreeWeb.modulesApplePayMod.ApplePayPaymentRequest
+import typings.braintreeWeb.modulesClientMod.Client
+import typings.braintreeWeb.modulesCoreMod.callback
+import typings.braintreeWeb.modulesDataCollectorMod.DataCollector
+import typings.braintreeWeb.modulesGooglePaymentMod.GooglePayment
+import typings.braintreeWeb.modulesHostedFieldsMod.HostedFields
+import typings.braintreeWeb.modulesLocalPaymentMod.LocalPayment
+import typings.braintreeWeb.modulesPaypalCheckoutMod.PayPalCheckout
+import typings.braintreeWeb.modulesPaypalMod.PayPal
+import typings.braintreeWeb.modulesThreeDSecureMod.ThreeDSecure
+import typings.braintreeWeb.modulesUnionpayMod.UnionPay
+import typings.braintreeWeb.modulesUsBankAccountMod.USBankAccount
+import typings.braintreeWeb.modulesVaultManagerMod.VaultManager
+import typings.braintreeWeb.modulesVenmoMod.Venmo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object mod {
   @JSImport("braintree-web", "ApplePaySession")
   @js.native
   open class ApplePaySession protected ()
-    extends typings.braintreeWeb.applePayMod.ApplePaySession {
+    extends typings.braintreeWeb.modulesApplePayMod.ApplePaySession {
     def this(version: Double, request: ApplePayPaymentRequest) = this()
   }
   /* static members */
@@ -104,23 +104,23 @@ object mod {
   object ApplePayStatusCodes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.braintreeWeb.applePayMod.ApplePayStatusCodes & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes & Double] = js.native
     
-    /* 0 */ val STATUS_FAILURE: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_FAILURE & Double = js.native
+    /* 0 */ val STATUS_FAILURE: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_FAILURE & Double = js.native
     
-    /* 1 */ val STATUS_INVALID_BILLING_POSTAL_ADDRESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_BILLING_POSTAL_ADDRESS & Double = js.native
+    /* 1 */ val STATUS_INVALID_BILLING_POSTAL_ADDRESS: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_INVALID_BILLING_POSTAL_ADDRESS & Double = js.native
     
-    /* 3 */ val STATUS_INVALID_SHIPPING_CONTACT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_CONTACT & Double = js.native
+    /* 3 */ val STATUS_INVALID_SHIPPING_CONTACT: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_CONTACT & Double = js.native
     
-    /* 2 */ val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_POSTAL_ADDRESS & Double = js.native
+    /* 2 */ val STATUS_INVALID_SHIPPING_POSTAL_ADDRESS: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_INVALID_SHIPPING_POSTAL_ADDRESS & Double = js.native
     
-    /* 5 */ val STATUS_PIN_INCORRECT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_INCORRECT & Double = js.native
+    /* 5 */ val STATUS_PIN_INCORRECT: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_PIN_INCORRECT & Double = js.native
     
-    /* 6 */ val STATUS_PIN_LOCKOUT: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_LOCKOUT & Double = js.native
+    /* 6 */ val STATUS_PIN_LOCKOUT: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_PIN_LOCKOUT & Double = js.native
     
-    /* 4 */ val STATUS_PIN_REQUIRED: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_PIN_REQUIRED & Double = js.native
+    /* 4 */ val STATUS_PIN_REQUIRED: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_PIN_REQUIRED & Double = js.native
     
-    /* 0 */ val STATUS_SUCCESS: typings.braintreeWeb.applePayMod.ApplePayStatusCodes.STATUS_SUCCESS & Double = js.native
+    /* 0 */ val STATUS_SUCCESS: typings.braintreeWeb.modulesApplePayMod.ApplePayStatusCodes.STATUS_SUCCESS & Double = js.native
   }
   
   @JSImport("braintree-web", "VERSION")

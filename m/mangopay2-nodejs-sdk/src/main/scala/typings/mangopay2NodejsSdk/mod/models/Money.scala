@@ -1,6 +1,6 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

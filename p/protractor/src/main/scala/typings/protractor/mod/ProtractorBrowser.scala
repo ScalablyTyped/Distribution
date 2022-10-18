@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("protractor", "ProtractorBrowser")
 @js.native
 open class ProtractorBrowser protected ()
-  extends typings.protractor.browserMod.ProtractorBrowser {
+  extends typings.protractor.builtBrowserMod.ProtractorBrowser {
   def this(webdriverInstance: typings.seleniumWebdriver.mod.WebDriver) = this()
   def this(webdriverInstance: typings.seleniumWebdriver.mod.WebDriver, opt_baseUrl: String) = this()
   def this(
@@ -163,6 +163,6 @@ object ProtractorBrowser {
     */
   @JSImport("protractor", "ProtractorBrowser.By")
   @js.native
-  def By: typings.protractor.locatorsMod.ProtractorBy = js.native
-  inline def By_=(x: typings.protractor.locatorsMod.ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
+  def By: typings.protractor.builtLocatorsMod.ProtractorBy = js.native
+  inline def By_=(x: typings.protractor.builtLocatorsMod.ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
 }

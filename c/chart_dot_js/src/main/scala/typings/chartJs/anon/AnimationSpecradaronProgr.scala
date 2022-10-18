@@ -1,12 +1,12 @@
 package typings.chartJs.anon
 
-import typings.chartJs.animationMod.AnimationEvent
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.chartJsStrings.radar
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.EasingFunction
 import typings.chartJs.mod.Scriptable
 import typings.chartJs.mod.ScriptableContext
+import typings.chartJs.typesAnimationMod.AnimationEvent
+import typings.chartJs.typesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

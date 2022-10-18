@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("raml-1-parser", "ds.RAMLPropertyDocumentationService")
 @js.native
 open class RAMLPropertyDocumentationService ()
-  extends typings.ramlDefinitionSystem.ramlDefinitionSystemMod.RAMLPropertyDocumentationService
+  extends typings.ramlDefinitionSystem.mod.RAMLPropertyDocumentationService

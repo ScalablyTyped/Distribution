@@ -1,6 +1,6 @@
 package typings.reactCartographer
 
-import typings.reactCartographer.mapMod.default
+import typings.reactCartographer.libComponentsMapMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

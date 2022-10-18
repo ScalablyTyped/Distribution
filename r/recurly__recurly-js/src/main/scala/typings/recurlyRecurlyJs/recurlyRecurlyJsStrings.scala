@@ -1,15 +1,15 @@
 package typings.recurlyRecurlyJs
 
-import typings.recurlyRecurlyJs.`3dSecureMod`.ThreeDSecureEvent
-import typings.recurlyRecurlyJs.adyenMod.AdyenEvent
-import typings.recurlyRecurlyJs.applePayMod.ApplePayEvent
-import typings.recurlyRecurlyJs.bankRedirectMod.BankRedirectEvent
-import typings.recurlyRecurlyJs.bankRedirectMod.PaymentMethodType
-import typings.recurlyRecurlyJs.elementsMod.ElementEvent
-import typings.recurlyRecurlyJs.googlePayMod.GooglePayEvent
-import typings.recurlyRecurlyJs.paypalMod.PayPalEvent
-import typings.recurlyRecurlyJs.pricingMod.PricingEvent
-import typings.recurlyRecurlyJs.recurlyMod.RecurlyEvent
+import typings.recurlyRecurlyJs.lib3dSecureMod.ThreeDSecureEvent
+import typings.recurlyRecurlyJs.libAdyenMod.AdyenEvent
+import typings.recurlyRecurlyJs.libApplePayMod.ApplePayEvent
+import typings.recurlyRecurlyJs.libBankRedirectMod.BankRedirectEvent
+import typings.recurlyRecurlyJs.libBankRedirectMod.PaymentMethodType
+import typings.recurlyRecurlyJs.libElementsMod.ElementEvent
+import typings.recurlyRecurlyJs.libGooglePayMod.GooglePayEvent
+import typings.recurlyRecurlyJs.libPaypalMod.PayPalEvent
+import typings.recurlyRecurlyJs.libPricingMod.PricingEvent
+import typings.recurlyRecurlyJs.libRecurlyMod.RecurlyEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

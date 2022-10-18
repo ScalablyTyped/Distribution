@@ -1,6 +1,6 @@
 package typings.pg
 
-import typings.pg.typeOverridesMod.TypeFormat
+import typings.pg.libTypeOverridesMod.TypeFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

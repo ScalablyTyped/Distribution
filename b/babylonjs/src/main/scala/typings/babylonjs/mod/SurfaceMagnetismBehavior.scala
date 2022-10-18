@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SurfaceMagnetismBehavior")
 @js.native
 open class SurfaceMagnetismBehavior ()
-  extends typings.babylonjs.legacyMod.SurfaceMagnetismBehavior
+  extends typings.babylonjs.legacyLegacyMod.SurfaceMagnetismBehavior

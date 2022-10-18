@@ -13,9 +13,9 @@ trait Expiresat extends StObject {
   /** @example true */
   var has_multiple_single_files: js.UndefOr[Boolean] = js.undefined
   
-  var permissions: js.UndefOr[Administration] = js.undefined
+  var permissions: js.UndefOr[Actions] = js.undefined
   
-  var repositories: js.UndefOr[js.Array[Allowupdatebranch]] = js.undefined
+  var repositories: js.UndefOr[js.Array[Allowmergecommit]] = js.undefined
   
   /** @enum {string} */
   var repository_selection: js.UndefOr[all | selected] = js.undefined
@@ -48,15 +48,15 @@ object Expiresat {
     
     inline def setHas_multiple_single_filesUndefined: Self = StObject.set(x, "has_multiple_single_files", js.undefined)
     
-    inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Actions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setRepositories(value: js.Array[Allowupdatebranch]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: js.Array[Allowmergecommit]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    inline def setRepositoriesVarargs(value: Allowupdatebranch*): Self = StObject.set(x, "repositories", js.Array(value*))
+    inline def setRepositoriesVarargs(value: Allowmergecommit*): Self = StObject.set(x, "repositories", js.Array(value*))
     
     inline def setRepository_selection(value: all | selected): Self = StObject.set(x, "repository_selection", value.asInstanceOf[js.Any])
     

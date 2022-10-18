@@ -1,6 +1,6 @@
 package typings.storybookComponents.anon
 
-import typings.storybookComponents.popperjsCoreLibTypesMod.PositioningStrategy
+import typings.storybookComponents.`distTs3Dot9Modules@popperjsCoreLibTypesMod`.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

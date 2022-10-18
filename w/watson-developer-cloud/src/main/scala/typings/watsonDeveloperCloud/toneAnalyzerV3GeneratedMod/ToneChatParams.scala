@@ -49,6 +49,6 @@ object ToneChatParams {
     
     inline def setUtterances(value: js.Array[Utterance]): Self = StObject.set(x, "utterances", value.asInstanceOf[js.Any])
     
-    inline def setUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "utterances", js.Array(value :_*))
+    inline def setUtterancesVarargs(value: Utterance*): Self = StObject.set(x, "utterances", js.Array(value*))
   }
 }

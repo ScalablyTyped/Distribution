@@ -1,6 +1,6 @@
 package typings.googleGax.mod
 
-import typings.googleGax.clientInterfaceMod.ClientOptions
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "OperationsClient")
 @js.native
 open class OperationsClient protected ()
-  extends typings.googleGax.operationsClientMod.OperationsClient {
-  def this(gaxGrpc: typings.googleGax.fallbackMod.GrpcClient, operationsProtos: Any, options: ClientOptions) = this()
-  def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, operationsProtos: Any, options: ClientOptions) = this()
+  extends typings.googleGax.buildSrcOperationsClientMod.OperationsClient {
+  def this(
+    gaxGrpc: typings.googleGax.buildSrcFallbackMod.GrpcClient,
+    operationsProtos: Any,
+    options: ClientOptions
+  ) = this()
+  def this(
+    gaxGrpc: typings.googleGax.buildSrcGrpcMod.GrpcClient,
+    operationsProtos: Any,
+    options: ClientOptions
+  ) = this()
 }

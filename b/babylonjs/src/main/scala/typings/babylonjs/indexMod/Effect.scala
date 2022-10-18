@@ -1,7 +1,7 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.effectMod.IEffectCreationOptions
-import typings.babylonjs.iEffectFallbacksMod.IEffectFallbacks
+import typings.babylonjs.materialsEffectMod.IEffectCreationOptions
+import typings.babylonjs.materialsIEffectFallbacksMod.IEffectFallbacks
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,20 +30,22 @@ open class Effect protected ()
   def this(
     baseName: Any,
     attributesNamesOrOptions: js.Array[String] | IEffectCreationOptions,
-    uniformsNamesOrEngine: js.Array[String] | typings.babylonjs.thinEngineMod.ThinEngine,
+    uniformsNamesOrEngine: js.Array[String] | typings.babylonjs.enginesThinEngineMod.ThinEngine,
     samplers: js.UndefOr[Nullable[js.Array[String]]],
-    engine: js.UndefOr[typings.babylonjs.thinEngineMod.ThinEngine],
+    engine: js.UndefOr[typings.babylonjs.enginesThinEngineMod.ThinEngine],
     defines: js.UndefOr[Nullable[String]],
     fallbacks: js.UndefOr[Nullable[IEffectFallbacks]],
-    onCompiled: js.UndefOr[Nullable[js.Function1[/* effect */ typings.babylonjs.effectMod.Effect, Unit]]],
+    onCompiled: js.UndefOr[
+        Nullable[js.Function1[/* effect */ typings.babylonjs.materialsEffectMod.Effect, Unit]]
+      ],
     onError: js.UndefOr[
         Nullable[
-          js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
+          js.Function2[/* effect */ typings.babylonjs.materialsEffectMod.Effect, /* errors */ String, Unit]
         ]
       ],
     indexParameters: js.UndefOr[Any],
     key: js.UndefOr[String],
-    shaderLanguage: js.UndefOr[typings.babylonjs.shaderLanguageMod.ShaderLanguage]
+    shaderLanguage: js.UndefOr[typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage]
   ) = this()
 }
 /* static members */
@@ -83,26 +85,26 @@ object Effect {
     name: String,
     pixelShader: String,
     vertexShader: String,
-    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+    shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def RegisterShader(
     name: String,
     pixelShader: String,
     vertexShader: Unit,
-    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+    shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def RegisterShader(name: String, pixelShader: Unit, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def RegisterShader(
     name: String,
     pixelShader: Unit,
     vertexShader: String,
-    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+    shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def RegisterShader(
     name: String,
     pixelShader: Unit,
     vertexShader: Unit,
-    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+    shaderLanguage: typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**

@@ -1,6 +1,6 @@
 package typings.nivoWaffle
 
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.nivoCore.anon.Dictkey
 import typings.nivoCore.anon.Id
 import typings.nivoCore.mod.Box

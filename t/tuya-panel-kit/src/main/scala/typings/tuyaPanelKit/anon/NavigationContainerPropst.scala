@@ -2,13 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.tuyaPanelKit.nativeTypesMod.DocumentTitleOptions
-import typings.tuyaPanelKit.nativeTypesMod.LinkingOptions
-import typings.tuyaPanelKit.routersTypesMod.InitialState
-import typings.tuyaPanelKit.routersTypesMod.NavigationAction
-import typings.tuyaPanelKit.routersTypesMod.NavigationState
-import typings.tuyaPanelKit.routersTypesMod.ParamListBase
-import typings.tuyaPanelKit.typesMod.NavigationContainerRef
+import typings.tuyaPanelKit.`@reactNavigationCoreTypesMod`.NavigationContainerRef
+import typings.tuyaPanelKit.`@reactNavigationNativeTypesMod`.DocumentTitleOptions
+import typings.tuyaPanelKit.`@reactNavigationNativeTypesMod`.LinkingOptions
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.InitialState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationAction
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.NavigationState
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +59,7 @@ trait NavigationContainerPropst extends StObject {
   var ref: js.UndefOr[Ref[NavigationContainerRef]] = js.undefined
   
   // tslint:disable-next-line no-redundant-undefined
-  var theme: js.UndefOr[typings.tuyaPanelKit.nativeTypesMod.Theme] = js.undefined
+  var theme: js.UndefOr[typings.tuyaPanelKit.`@reactNavigationNativeTypesMod`.Theme] = js.undefined
 }
 object NavigationContainerPropst {
   
@@ -120,7 +120,7 @@ object NavigationContainerPropst {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setTheme(value: typings.tuyaPanelKit.nativeTypesMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.tuyaPanelKit.`@reactNavigationNativeTypesMod`.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Priority extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.mendixmodelsdk.configurationMod.Priority & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.mendixmodelsdk.srcSdkConfigurationMod.Priority & Double] = js.native
   
-  /* 2 */ val High: typings.mendixmodelsdk.configurationMod.Priority.High & Double = js.native
+  /* 2 */ val High: typings.mendixmodelsdk.srcSdkConfigurationMod.Priority.High & Double = js.native
   
-  /* 0 */ val Low: typings.mendixmodelsdk.configurationMod.Priority.Low & Double = js.native
+  /* 0 */ val Low: typings.mendixmodelsdk.srcSdkConfigurationMod.Priority.Low & Double = js.native
   
-  /* 1 */ val Medium: typings.mendixmodelsdk.configurationMod.Priority.Medium & Double = js.native
+  /* 1 */ val Medium: typings.mendixmodelsdk.srcSdkConfigurationMod.Priority.Medium & Double = js.native
 }

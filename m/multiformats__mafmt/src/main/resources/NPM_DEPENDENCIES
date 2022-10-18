@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@multiformats/mafmt" : "11.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@multiformats/mafmt" : "11.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

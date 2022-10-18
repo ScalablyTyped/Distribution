@@ -1,7 +1,10 @@
 package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.added
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.development
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.removed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.runtime
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +29,12 @@ trait Changetype extends StObject {
   /** @example pkg:/npm/%40actions/core@1.1.0 */
   var package_url: String | Null
   
+  /**
+    * @description Where the dependency is utilized. `development` means that the dependency is only utilized in the development environment. `runtime` means that the dependency is utilized at runtime and in the development environment.
+    * @enum {string}
+    */
+  var scope: unknown_ | runtime | development
+  
   /** @example https://github.com/github/actions */
   var source_repository_url: String | Null
   
@@ -41,10 +50,11 @@ object Changetype {
     ecosystem: String,
     manifest: String,
     name: String,
+    scope: unknown_ | runtime | development,
     version: String,
     vulnerabilities: js.Array[Advisoryghsaid]
   ): Changetype = {
-    val __obj = js.Dynamic.literal(change_type = change_type.asInstanceOf[js.Any], ecosystem = ecosystem.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], vulnerabilities = vulnerabilities.asInstanceOf[js.Any], license = null, package_url = null, source_repository_url = null)
+    val __obj = js.Dynamic.literal(change_type = change_type.asInstanceOf[js.Any], ecosystem = ecosystem.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], vulnerabilities = vulnerabilities.asInstanceOf[js.Any], license = null, package_url = null, source_repository_url = null)
     __obj.asInstanceOf[Changetype]
   }
   
@@ -65,6 +75,8 @@ object Changetype {
     inline def setPackage_url(value: String): Self = StObject.set(x, "package_url", value.asInstanceOf[js.Any])
     
     inline def setPackage_urlNull: Self = StObject.set(x, "package_url", null)
+    
+    inline def setScope(value: unknown_ | runtime | development): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setSource_repository_url(value: String): Self = StObject.set(x, "source_repository_url", value.asInstanceOf[js.Any])
     

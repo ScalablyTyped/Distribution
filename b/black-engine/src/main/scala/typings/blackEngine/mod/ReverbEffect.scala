@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "ReverbEffect")
 @js.native
 open class ReverbEffect protected ()
-  extends typings.blackEngine.reverbEffectMod.ReverbEffect {
+  extends typings.blackEngine.audioEffectsReverbEffectMod.ReverbEffect {
   def this(IRBuffer: AudioBuffer) = this()
 }

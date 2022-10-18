@@ -1,7 +1,5 @@
 package typings.pixiLoaders.mod
 
-import typings.pixiCore.mod.Resource
-import typings.pixiCore.mod.Texture
 import typings.pixiLoaders.anon.CrossOrigin
 import typings.pixiLoaders.mod.LoaderResource.LOAD_TYPE
 import typings.pixiLoaders.mod.LoaderResource.OnCompleteSignal
@@ -16,10 +14,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.LoaderResource * / any */ @JSImport("@pixi/loaders", "LoaderResource")
+@JSImport("@pixi/loaders", "LoaderResource")
 @js.native
-open class LoaderResource protected () extends StObject {
+open class LoaderResource protected ()
+  extends StObject
+     with typings.pixiLoaders.GlobalMixins.LoaderResource
+     with typings.pixiLoaders.GlobalMixins.ILoaderResource {
   /**
     * @param {string} name - The name of the resource to load.
     * @param {string|string[]} url - The url for this resource, for audio/video loads you can pass
@@ -390,12 +390,6 @@ open class LoaderResource protected () extends StObject {
     * @member {number}
     */
   var progressChunk: Double = js.native
-  
-  /**
-    * Texture reference for loading images and other textures.
-    * @type {PIXI.Texture}
-    */
-  var texture: js.UndefOr[Texture[Resource]] = js.native
   
   /**
     * A timeout in milliseconds for the load. If the load takes longer than this time

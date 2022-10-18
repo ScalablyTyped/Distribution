@@ -1,11 +1,11 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeature
-import typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureState
-import typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureStateQuery
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesFeatureManagementInterfacesMod.ContributedFeature
+import typings.vsoNodeApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureState
+import typings.vsoNodeApi.interfacesFeatureManagementInterfacesMod.ContributedFeatureStateQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,19 +1,11 @@
 package typings.reactSpringShared
 
-import typings.reactSpringShared.colorsMod.ColorName
+import typings.reactSpringShared.distDeclarationsSrcColorsMod.ColorName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSpringSharedStrings {
-  
-  @js.native
-  sealed trait FluidProps extends StObject
-  inline def FluidProps: FluidProps = "FluidProps".asInstanceOf[FluidProps]
-  
-  @js.native
-  sealed trait StaticProps extends StObject
-  inline def StaticProps: StaticProps = "StaticProps".asInstanceOf[StaticProps]
   
   @js.native
   sealed trait aliceblue

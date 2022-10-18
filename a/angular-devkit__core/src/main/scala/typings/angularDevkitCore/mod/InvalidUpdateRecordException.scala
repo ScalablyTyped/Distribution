@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular-devkit/core", "InvalidUpdateRecordException")
 @js.native
 open class InvalidUpdateRecordException ()
-  extends typings.angularDevkitCore.exceptionMod.InvalidUpdateRecordException
+  extends typings.angularDevkitCore.srcExceptionMod.InvalidUpdateRecordException

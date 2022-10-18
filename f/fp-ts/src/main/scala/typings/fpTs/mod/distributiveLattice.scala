@@ -1,7 +1,7 @@
 package typings.fpTs.mod
 
-import typings.fpTs.distributiveLatticeMod.DistributiveLattice
-import typings.fpTs.ordMod.Ord_
+import typings.fpTs.libDistributiveLatticeMod.DistributiveLattice
+import typings.fpTs.libOrdMod.Ord_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

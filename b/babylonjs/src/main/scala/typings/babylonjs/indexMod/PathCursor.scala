@@ -12,5 +12,5 @@ open class PathCursor protected ()
     * Initializes the path cursor
     * @param _path The path to track
     */
-  def this(_path: typings.babylonjs.mathPathMod.Path2) = this()
+  def this(_path: typings.babylonjs.mathsMathDotpathMod.Path2) = this()
 }

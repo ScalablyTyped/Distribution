@@ -37,32 +37,62 @@ open class QuestionSelectBase protected () extends Question {
   def changeItemVisisbility(): js.Function2[/* item */ ItemValue, /* val */ Boolean, Boolean] = js.native
   
   /*
-    * The list of items. Every item has value and text. If text is empty, the value is rendered. The item text supports markdown.
+    * Gets or sets choice items. This property accepts an array of objects with the following structure:
+    * 
+    * ```js
+    * {
+    *   "value": any, // A value to be saved in the survey results
+    *   "text": String, // A display text. This property supports Markdown. When `text` is undefined, `value` is used.
+    *   "imageLink": String // A link to the image or video that represents this choice value. Applies only to Image Picker questions.
+    *   "customProperty": any // Any property that you find useful
+    * }
+    * ```
+    * 
+    * Refer to the following help topic for information on how to add custom properties so that they are serialized into JSON: [Add Custom Properties to Property Grid](https://surveyjs.io/survey-creator/documentation/property-grid#add-custom-properties-to-the-property-grid).
+    * 
+    * If you need to specify only the `value` property, you can set the `choices` property to an array of primitive values, for example, `[ "item1", "item2", "item3" ]`. These values are both saved in survey results and used as display text.
     */
   def choices: Any = js.native
   
   /*
-    * Use this property to fill the choices from a RESTful service.
+    * Configures access to a RESTful service that returns choice items. Refer to the [ChoicesRestful](https://surveyjs.io/form-library/documentation/choicesrestful) class description for more information.
+    * 
+    * [View "Dropdown + RESTful" demo](https://surveyjs.io/form-library/examples/questiontype-dropdownrestfull/ (linkStyle))
     */
   def choicesByUrl: ChoicesRestful = js.native
   def choicesByUrl_=(`val`: ChoicesRestful): Unit = js.native
   
   /*
-    * An expression that returns true or false. It runs against each choices item and if for this item it returns true, then the item is enabled otherwise the item becomes disabled. Please use {item} to get the current item value in the expression.
+    * A Boolean expression that is evaluated against each choice item. If the expression evaluates to `false`, the choice item becomes read-only.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Use the `{item}` placeholder to reference the current choice item in the expression.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   def choicesEnableIf: String = js.native
   def choicesEnableIf_=(`val`: String): Unit = js.native
   
   /*
-    * Set this property to get choices from the specified question instead of defining them in the current question. This avoids duplication of choices declaration in your survey definition.
-    * By setting this property, the "choices", "choicesVisibleIf", "choicesEnableIf" and "choicesOrder" properties become invisible, because these question characteristics depend on actions in another (specified) question.
-    * Use the `choicesFromQuestionMode` property to filter choices obtained from the specified question.
+    * Inherits choice items from a specified question. Accepts a question name.
+    * 
+    * If you specify this property, the `choices`, `choicesVisibleIf`, `choicesEnableIf`, and `choicesOrder` properties do not apply because their values are inherited.
+    * 
+    * In addition, you can specify the `choicesFromQuestionMode` property if you do not want to inherit all choice items.
     */
   def choicesFromQuestion: String = js.native
   
   /*
-    * This property becomes visible when the `choicesFromQuestion` property is selected. The default value is "all" (all visible choices from another question are displayed as they are).
-    * You can set this property to "selected" or "unselected" to display only selected or unselected choices from the specified question.
+    * Specifies which choice items to inherit from another question. Applies only when the `choicesFromQuestion` property is specified.
+    * 
+    * Possible values:
+    * 
+    * - `"all"` (default) - Inherits all choice items.
+    * - `"selected"` - Inherits only selected choice items.
+    * - `"unselected"` - Inherits only unselected choice items.
+    * 
+    * Use the `visibleChoices` property to access inherited choice items.
     */
   def choicesFromQuestionMode: String = js.native
   def choicesFromQuestionMode_=(`val`: String): Unit = js.native
@@ -72,13 +102,26 @@ open class QuestionSelectBase protected () extends Question {
   var choicesFromUrl: Any = js.native
   
   /*
-    * Use this property to render items in a specific order: "asc", "desc", "random". Default value is "none".
+    * Specifies the sort order of choice items.
+    * 
+    * Possible values:
+    * 
+    * - `"none"` (default) - Preserves the original order of choice items.
+    * - `"asc"`- Sorts choice items in ascending order.
+    * - `"desc"`- Sorts choice items in ascending order.
+    * - `"random"` - Displays choice items in random order.
     */
   def choicesOrder: String = js.native
   def choicesOrder_=(`val`: String): Unit = js.native
   
   /*
-    * An expression that returns true or false. It runs against each choices item and if for this item it returns true, then the item is visible otherwise the item becomes invisible. Please use {item} to get the current item value in the expression.
+    * A Boolean expression that is evaluated against each choice item. If the expression evaluates to `false`, the choice item becomes hidden.
+    * 
+    * A survey parses and runs all expressions on startup. If any values used in the expression change, the survey re-evaluates it.
+    * 
+    * Use the `{item}` placeholder to reference the current choice item in the expression.
+    * 
+    * Refer to the following help topic for more information: [Conditional Visibility](https://surveyjs.io/form-library/documentation/design-survey-conditional-logic#conditional-visibility).
     */
   def choicesVisibleIf: String = js.native
   def choicesVisibleIf_=(`val`: String): Unit = js.native
@@ -113,7 +156,7 @@ open class QuestionSelectBase protected () extends Question {
   var enableOnLoadingChoices: Boolean = js.native
   
   /*
-    * The list of enabled items as they will be rendered. The disabled items are not included
+    * An array of choice items with which users can interact. Includes the "Select All", "Other", and "None" choice items if they are not disabled. Items are sorted according to the `choicesOrder` value.
     */
   def enabledChoices: Any = js.native
   
@@ -138,6 +181,8 @@ open class QuestionSelectBase protected () extends Question {
   def getControlLabelClass(item: ItemValue): String = js.native
   
   /* protected */ def getCurrentColCount(): Double = js.native
+  
+  /* protected */ def getDefaultItemComponent(): String = js.native
   
   /* protected */ def getDisplayArrayValue(keysAsText: Boolean, value: Any): String = js.native
   /* protected */ def getDisplayArrayValue(keysAsText: Boolean, value: Any, onGetValueCallback: js.Function1[/* index */ Double, Any]): String = js.native
@@ -174,9 +219,6 @@ open class QuestionSelectBase protected () extends Question {
   
   def hasHeadItems: Boolean = js.native
   
-  /*
-    * Set this property to true, to show the "None" item on the bottom. If end-user checks this item, all other items would be unchecked.
-    */
   def hasNone: Boolean = js.native
   def hasNone_=(`val`: Boolean): Unit = js.native
   
@@ -194,7 +236,9 @@ open class QuestionSelectBase protected () extends Question {
   def headItems: Any = js.native
   
   /*
-    * Set this property to true to hide the question if there is no visible choices.
+    * Specifies whether to hide the question if no choice items are visible.
+    * 
+    * This property is useful if you show or hide choice items at runtime based on a [condition](https://surveyjs.io/form-library/documentation/questionselectbase#choicesVisibleIf).
     */
   def hideIfChoicesEmpty: Boolean = js.native
   def hideIfChoicesEmpty_=(`val`: Boolean): Unit = js.native
@@ -211,13 +255,12 @@ open class QuestionSelectBase protected () extends Question {
   
   /* protected */ def isHeadChoice(item: ItemValue, question: QuestionSelectBase): Boolean = js.native
   
-  /*
-    * For internal use in SurveyJS Creator V2.
-    */
   def isItemInList(item: ItemValue): Boolean = js.native
   
   /*
-    * Returns true if item is selected
+    * Returns `true` if a passed choice item is selected.
+    * 
+    * To obtain a choice item to check, use the `noneItem` or `otherItem` property or the `choices` array.
     */
   def isItemSelected(item: ItemValue): Boolean = js.native
   
@@ -226,7 +269,7 @@ open class QuestionSelectBase protected () extends Question {
   def isOtherItem(item: ItemValue): Boolean = js.native
   
   /*
-    * Returns true if a user select the 'other' item.
+    * Returns `true` if the "Other" choice item is selected.
     */
   def isOtherSelected: Boolean = js.native
   
@@ -241,6 +284,12 @@ open class QuestionSelectBase protected () extends Question {
   var isUpdatingChoicesDependedQuestions: Boolean = js.native
   
   /* protected */ def isValueDisabled(`val`: Any): Boolean = js.native
+  
+  /*
+    * The name of a component used to render items.
+    */
+  def itemComponent: String = js.native
+  def itemComponent_=(`val`: String): Unit = js.native
   
   def itemSvgIcon: String = js.native
   
@@ -262,14 +311,14 @@ open class QuestionSelectBase protected () extends Question {
   var newItemValue: ItemValue = js.native
   
   /*
-    * Returns the none item. By using this property, you may change programmatically it's value and text.
+    * Returns the "None" choice item. Use this property to change the item's `value` or `text`.
     */
   def noneItem: ItemValue = js.native
   
   var noneItemValue: ItemValue = js.native
   
   /*
-    * Use this property to set the different text for none item.
+    * Gets or sets a caption for the "None" choice item.
     */
   def noneText: String = js.native
   def noneText_=(`val`: String): Unit = js.native
@@ -285,13 +334,13 @@ open class QuestionSelectBase protected () extends Question {
   /* protected */ def onVisibleChoicesChanged(): Unit = js.native
   
   /*
-    * The text that shows when the other item is choosed by the other input is empty.
+    * Get or sets an error message displayed when users select the "Other" choice item but leave the comment area empty.
     */
   def otherErrorText: String = js.native
   def otherErrorText_=(`val`: String): Unit = js.native
   
   /*
-    * Returns the other item. By using this property, you may change programmatically it's value and text.
+    * Returns the "Other" choice item. Use this property to change the item's `value` or `text`.
     */
   def otherItem: ItemValue = js.native
   
@@ -301,13 +350,13 @@ open class QuestionSelectBase protected () extends Question {
   def otherPlaceHolder_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to set the place holder text for other or comment field  .
+    * A placeholder for the comment area. Applies when the `hasOther` or `hasComment` property is `true`.
     */
   def otherPlaceholder: String = js.native
   def otherPlaceholder_=(`val`: String): Unit = js.native
   
   /*
-    * Use this property to set the different text for other item.
+    * Gets or sets a caption for the "Other" choice item.
     */
   def otherText: String = js.native
   def otherText_=(`val`: String): Unit = js.native
@@ -353,10 +402,13 @@ open class QuestionSelectBase protected () extends Question {
   /* protected */ def setQuestionValue(newValue: Any, updateIsAnswered: Unit, updateComment: Boolean): Unit = js.native
   
   /*
-    * Please use survey.storeOthersAsComment to change the behavior on the survey level. This property is depricated and invisible in Survey Creator.
-    * By default the entered text in the others input in the checkbox/radiogroup/dropdown are stored as "question name " + "-Comment". The value itself is "question name": "others". Set this property to false, to store the entered text directly in the "question name" key.
-    * Possible values are: "default", true, false
+    * Specifies whether to display the "None" choice item.
+    * 
+    * When users select the "None" item in multi-select questions, all other items become unselected.
     */
+  def showNoneItem: Boolean = js.native
+  def showNoneItem_=(`val`: Boolean): Unit = js.native
+  
   def storeOthersAsComment: Any = js.native
   def storeOthersAsComment_=(`val`: Any): Unit = js.native
   
@@ -370,7 +422,7 @@ open class QuestionSelectBase protected () extends Question {
   def validatedValue_MQuestionSelectBase: Any = js.native
   
   /*
-    * The list of items as they will be rendered. If needed items are sorted and the other item is added.
+    * An array of visible choice items. Includes the "Select All", "Other", and "None" choice items if they are visible. Items are sorted according to the `choicesOrder` value.
     */
   def visibleChoices: Any = js.native
   

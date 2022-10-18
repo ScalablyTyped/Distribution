@@ -1,7 +1,7 @@
 package typings.postmark.mod
 
-import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
-import typings.postmark.supportingTypesMod.Hash
+import typings.postmark.distClientModelsClientSupportingTypesMod.Hash
+import typings.postmark.distClientModelsMessageSupportingTypesMod.LinkTrackingOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("postmark", "Message")
 @js.native
 open class Message protected ()
-  extends typings.postmark.modelsMod.Message {
+  extends typings.postmark.distClientModelsMod.Message {
   def this(
     From: String,
     Subject: String,
@@ -22,8 +22,8 @@ open class Message protected ()
     Tag: js.UndefOr[String],
     TrackOpens: js.UndefOr[Boolean],
     TrackLinks: js.UndefOr[LinkTrackingOptions],
-    Headers: js.UndefOr[js.Array[typings.postmark.messageSupportingTypesMod.Header]],
-    Attachments: js.UndefOr[js.Array[typings.postmark.messageSupportingTypesMod.Attachment]],
+    Headers: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Header]],
+    Attachments: js.UndefOr[js.Array[typings.postmark.distClientModelsMessageSupportingTypesMod.Attachment]],
     Metadata: js.UndefOr[Hash[String]]
   ) = this()
 }

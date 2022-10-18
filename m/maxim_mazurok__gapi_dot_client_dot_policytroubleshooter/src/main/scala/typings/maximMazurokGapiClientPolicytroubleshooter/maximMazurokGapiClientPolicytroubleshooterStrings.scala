@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientPolicytroubleshooterStrings {
   
   @js.native
-  sealed trait GoogleCloudPolicytroubleshooterV1BindingExplanation extends StObject
-  inline def GoogleCloudPolicytroubleshooterV1BindingExplanation: GoogleCloudPolicytroubleshooterV1BindingExplanation = "GoogleCloudPolicytroubleshooterV1BindingExplanation".asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanation]
-  
-  @js.native
-  sealed trait GoogleRpcStatus extends StObject
-  inline def GoogleRpcStatus: GoogleRpcStatus = "GoogleRpcStatus".asInstanceOf[GoogleRpcStatus]
-  
-  @js.native
   sealed trait policytroubleshooter extends StObject
   inline def policytroubleshooter: policytroubleshooter = "policytroubleshooter".asInstanceOf[policytroubleshooter]
   

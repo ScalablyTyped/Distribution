@@ -1,6 +1,6 @@
 package typings.ipfsUnixfsImporter
 
-import typings.ipfsUnixfsImporter.typesMod.ChunkerType
+import typings.ipfsUnixfsImporter.distSrcTypesMod.ChunkerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

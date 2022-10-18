@@ -1,6 +1,6 @@
 package typings.webdriver.anon
 
-import typings.wdioTypes.capabilitiesMod.DesiredCapabilities
+import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

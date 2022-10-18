@@ -90,8 +90,8 @@ object mod {
   inline def longLong(V: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def longLong(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def `object`[V](V: V): (V & js.Object) | V = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any]).asInstanceOf[(V & js.Object) | V]
-  inline def `object`[V](V: V, opts: Options): (V & js.Object) | V = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[(V & js.Object) | V]
+  inline def `object`[V](V: V): /* import warning: importer.ImportType#apply Failed type conversion: V extends object ? V : V & object */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: V extends object ? V : V & object */ js.Any]
+  inline def `object`[V](V: V, opts: Options): /* import warning: importer.ImportType#apply Failed type conversion: V extends object ? V : V & object */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: V extends object ? V : V & object */ js.Any]
   
   inline def octet(V: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def octet(V: Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-simplex-noise"
-version := "4.0.0-670955"
+version := "4.0.0-2ccadb"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

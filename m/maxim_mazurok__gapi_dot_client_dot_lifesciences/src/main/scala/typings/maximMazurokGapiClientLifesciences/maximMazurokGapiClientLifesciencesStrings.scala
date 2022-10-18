@@ -7,42 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientLifesciencesStrings {
   
   @js.native
-  sealed trait Action extends StObject
-  inline def Action: Action = "Action".asInstanceOf[Action]
-  
-  @js.native
-  sealed trait ContainerStartedEvent extends StObject
-  inline def ContainerStartedEvent: ContainerStartedEvent = "ContainerStartedEvent".asInstanceOf[ContainerStartedEvent]
-  
-  @js.native
-  sealed trait Location extends StObject
-  inline def Location: Location = "Location".asInstanceOf[Location]
-  
-  @js.native
-  sealed trait Metadata extends StObject
-  inline def Metadata: Metadata = "Metadata".asInstanceOf[Metadata]
-  
-  @js.native
-  sealed trait Operation extends StObject
-  inline def Operation: Operation = "Operation".asInstanceOf[Operation]
-  
-  @js.native
-  sealed trait Pipeline extends StObject
-  inline def Pipeline: Pipeline = "Pipeline".asInstanceOf[Pipeline]
-  
-  @js.native
-  sealed trait RunPipelineRequest extends StObject
-  inline def RunPipelineRequest: RunPipelineRequest = "RunPipelineRequest".asInstanceOf[RunPipelineRequest]
-  
-  @js.native
-  sealed trait Status extends StObject
-  inline def Status: Status = "Status".asInstanceOf[Status]
-  
-  @js.native
-  sealed trait VirtualMachine extends StObject
-  inline def VirtualMachine: VirtualMachine = "VirtualMachine".asInstanceOf[VirtualMachine]
-  
-  @js.native
   sealed trait lifesciences extends StObject
   inline def lifesciences: lifesciences = "lifesciences".asInstanceOf[lifesciences]
   

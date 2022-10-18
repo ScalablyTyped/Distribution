@@ -1,6 +1,7 @@
 package typings.validator.mod.validator
 
 import typings.validator.validatorStrings.`pl-Pl_`
+import typings.validator.validatorStrings.ar_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.`tr-TR`
   - typings.validator.validatorStrings.`uk-UA`
   - typings.validator.validatorStrings.`ku-IQ`
-  - typings.validator.validatorStrings.ar
+  - typings.validator.validatorStrings.ar_
   - typings.validator.validatorStrings.he
   - typings.validator.validatorStrings.`fa-IR`
   - typings.validator.validatorStrings.`en-AU`
@@ -64,7 +65,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlphanumericLocale extends StObject
 object AlphanumericLocale {
   
-  inline def ar: typings.validator.validatorStrings.ar = "ar".asInstanceOf[typings.validator.validatorStrings.ar]
+  inline def ar: ar_ = "ar".asInstanceOf[ar_]
   
   inline def `ar-AE`: typings.validator.validatorStrings.`ar-AE` = "ar-AE".asInstanceOf[typings.validator.validatorStrings.`ar-AE`]
   

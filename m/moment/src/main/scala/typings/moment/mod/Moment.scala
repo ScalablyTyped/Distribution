@@ -101,9 +101,9 @@ trait Moment
   def isBefore(inp: MomentInput, granularity: StartOf): Boolean = js.native
   
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: String | `[]`): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: Unit, inclusivity: (/* () */ String) | `[]`): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
-  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: String | `[]`): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: (/* () */ String) | `[]`): Boolean = js.native
   
   def isDST(): Boolean = js.native
   

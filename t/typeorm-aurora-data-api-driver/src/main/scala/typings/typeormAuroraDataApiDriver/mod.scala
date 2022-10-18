@@ -74,14 +74,14 @@ object mod {
   @JSImport("typeorm-aurora-data-api-driver", "MysqlQueryTransformer")
   @js.native
   open class MysqlQueryTransformer ()
-    extends typings.typeormAuroraDataApiDriver.queryTransformerMod.MysqlQueryTransformer {
+    extends typings.typeormAuroraDataApiDriver.distTypesQueryTransformerMod.MysqlQueryTransformer {
     def this(transformOptions: Any) = this()
   }
   
   @JSImport("typeorm-aurora-data-api-driver", "PostgresQueryTransformer")
   @js.native
   open class PostgresQueryTransformer ()
-    extends typings.typeormAuroraDataApiDriver.queryTransformerMod.PostgresQueryTransformer {
+    extends typings.typeormAuroraDataApiDriver.distTypesQueryTransformerMod.PostgresQueryTransformer {
     def this(transformOptions: Any) = this()
   }
   

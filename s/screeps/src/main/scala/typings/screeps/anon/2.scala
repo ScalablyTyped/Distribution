@@ -1,22 +1,23 @@
 package typings.screeps.anon
 
+import typings.screeps.screepsStrings.ZH2O
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `2` extends StObject {
   
-  var dismantle: typings.screeps.screepsInts.`3`
+  var OH: ZH2O
 }
 object `2` {
   
   inline def apply(): `2` = {
-    val __obj = js.Dynamic.literal(dismantle = 3)
+    val __obj = js.Dynamic.literal(OH = "ZH2O")
     __obj.asInstanceOf[`2`]
   }
   
   extension [Self <: `2`](x: Self) {
     
-    inline def setDismantle(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "dismantle", value.asInstanceOf[js.Any])
+    inline def setOH(value: ZH2O): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
   }
 }

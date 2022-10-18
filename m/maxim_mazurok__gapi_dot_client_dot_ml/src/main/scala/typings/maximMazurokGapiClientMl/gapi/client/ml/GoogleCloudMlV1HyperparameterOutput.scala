@@ -1,7 +1,5 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
-import org.scalablytyped.runtime.TopLevel
-import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__HyperparameterOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +20,7 @@ trait GoogleCloudMlV1HyperparameterOutput extends StObject {
   
   /** The hyperparameters given to this trial. */
   var hyperparameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** True if the trial is stopped early. */
@@ -46,9 +42,7 @@ trait GoogleCloudMlV1HyperparameterOutput extends StObject {
     * interactive shell.
     */
   var webAccessUris: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
 }
 object GoogleCloudMlV1HyperparameterOutput {
@@ -79,9 +73,7 @@ object GoogleCloudMlV1HyperparameterOutput {
     inline def setFinalMetricUndefined: Self = StObject.set(x, "finalMetric", js.undefined)
     
     inline def setHyperparameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     
     inline def setHyperparametersUndefined: Self = StObject.set(x, "hyperparameters", js.undefined)
@@ -103,9 +95,7 @@ object GoogleCloudMlV1HyperparameterOutput {
     inline def setTrialIdUndefined: Self = StObject.set(x, "trialId", js.undefined)
     
     inline def setWebAccessUris(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ GoogleCloudMlV1__HyperparameterOutput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "webAccessUris", value.asInstanceOf[js.Any])
     
     inline def setWebAccessUrisUndefined: Self = StObject.set(x, "webAccessUris", js.undefined)

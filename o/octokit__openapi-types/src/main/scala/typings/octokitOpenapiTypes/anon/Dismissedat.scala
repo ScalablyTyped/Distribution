@@ -20,7 +20,7 @@ trait Dismissedat extends StObject {
   
   var dismissed_comment: js.UndefOr[String | Null] = js.undefined
   
-  var dismissed_reason: Null | (`false positive`) | String | (`used in tests`)
+  var dismissed_reason: Null | (`false positive`) | (/* won't fix */ String) | (`used in tests`)
   
   var fixed_at: js.UndefOr[String | Null] = js.undefined
   
@@ -80,7 +80,7 @@ object Dismissedat {
     
     inline def setDismissed_commentUndefined: Self = StObject.set(x, "dismissed_comment", js.undefined)
     
-    inline def setDismissed_reason(value: (`false positive`) | String | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
+    inline def setDismissed_reason(value: (`false positive`) | (/* won't fix */ String) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
     inline def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     

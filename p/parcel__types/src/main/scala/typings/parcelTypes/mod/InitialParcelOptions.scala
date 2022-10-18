@@ -1,11 +1,11 @@
 package typings.parcelTypes.mod
 
-import typings.parcelFs.typesMod.FileSystem
-import typings.parcelPackageManager.typesMod.PackageManager
+import typings.parcelPackageManager.libTypesMod.PackageManager
 import typings.parcelTypes.anon.DistDir
 import typings.parcelTypes.parcelTypesBooleans.`false`
 import typings.parcelWorkers.mod.default
 import typings.std.Cache
+import typings.std.FileSystem
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

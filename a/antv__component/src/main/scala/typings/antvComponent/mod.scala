@@ -1,15 +1,15 @@
 package typings.antvComponent
 
-import typings.antvComponent.componentMod.default
-import typings.antvComponent.typesMod.AxisBaseCfg
-import typings.antvComponent.typesMod.ComponentCfg
-import typings.antvComponent.typesMod.CrosshairBaseCfg
-import typings.antvComponent.typesMod.GroupComponentCfg
-import typings.antvComponent.typesMod.HtmlCrossHairCfg
-import typings.antvComponent.typesMod.LegendBaseCfg
-import typings.antvComponent.typesMod.LooseObject
-import typings.antvComponent.typesMod.TooltipCfg
-import typings.antvGBase.interfacesMod.IGroup
+import typings.antvComponent.libAbstractComponentMod.default
+import typings.antvComponent.libTypesMod.AxisBaseCfg
+import typings.antvComponent.libTypesMod.ComponentCfg
+import typings.antvComponent.libTypesMod.CrosshairBaseCfg
+import typings.antvComponent.libTypesMod.GroupComponentCfg
+import typings.antvComponent.libTypesMod.HtmlCrossHairCfg
+import typings.antvComponent.libTypesMod.LegendBaseCfg
+import typings.antvComponent.libTypesMod.LooseObject
+import typings.antvComponent.libTypesMod.TooltipCfg
+import typings.antvGBase.libInterfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,166 +25,162 @@ object mod {
     @JSImport("@antv/component", "Annotation.Arc")
     @js.native
     open class Arc ()
-      extends typings.antvComponent.annotationMod.Arc
+      extends typings.antvComponent.libAnnotationMod.Arc
     
     @JSImport("@antv/component", "Annotation.DataMarker")
     @js.native
     open class DataMarker ()
-      extends typings.antvComponent.annotationMod.DataMarker
+      extends typings.antvComponent.libAnnotationMod.DataMarker
     
     @JSImport("@antv/component", "Annotation.DataRegion")
     @js.native
     open class DataRegion ()
-      extends typings.antvComponent.annotationMod.DataRegion
+      extends typings.antvComponent.libAnnotationMod.DataRegion
     
     @JSImport("@antv/component", "Annotation.Html")
     @js.native
     open class Html ()
-      extends typings.antvComponent.annotationMod.Html
+      extends typings.antvComponent.libAnnotationMod.Html
     
     @JSImport("@antv/component", "Annotation.Image")
     @js.native
     open class Image ()
-      extends typings.antvComponent.annotationMod.Image
+      extends typings.antvComponent.libAnnotationMod.Image
     
     @JSImport("@antv/component", "Annotation.Line")
     @js.native
     open class Line ()
-      extends typings.antvComponent.annotationMod.Line
+      extends typings.antvComponent.libAnnotationMod.Line
     
     @JSImport("@antv/component", "Annotation.Region")
     @js.native
     open class Region ()
-      extends typings.antvComponent.annotationMod.Region
+      extends typings.antvComponent.libAnnotationMod.Region
     
     @JSImport("@antv/component", "Annotation.RegionFilter")
     @js.native
     open class RegionFilter ()
-      extends typings.antvComponent.annotationMod.RegionFilter
+      extends typings.antvComponent.libAnnotationMod.RegionFilter
     
     @JSImport("@antv/component", "Annotation.Shape")
     @js.native
     open class Shape ()
-      extends typings.antvComponent.annotationMod.Shape
+      extends typings.antvComponent.libAnnotationMod.Shape
     
     @JSImport("@antv/component", "Annotation.Text")
     @js.native
     open class Text ()
-      extends typings.antvComponent.annotationMod.Text
+      extends typings.antvComponent.libAnnotationMod.Text
   }
   
   object Axis {
     
-    @JSImport("@antv/component", "Axis.Base")
+    /* note: abstract class */ @JSImport("@antv/component", "Axis.Base")
     @js.native
-    abstract class Base[T /* <: AxisBaseCfg */] ()
-      extends typings.antvComponent.axisMod.Base[T]
+    open class Base[T /* <: AxisBaseCfg */] ()
+      extends typings.antvComponent.libAxisMod.Base[T]
     
     @JSImport("@antv/component", "Axis.Circle")
     @js.native
     open class Circle ()
-      extends typings.antvComponent.axisMod.Circle
+      extends typings.antvComponent.libAxisMod.Circle
     
     @JSImport("@antv/component", "Axis.Line")
     @js.native
     open class Line ()
-      extends typings.antvComponent.axisMod.Line
+      extends typings.antvComponent.libAxisMod.Line
   }
   
-  @JSImport("@antv/component", "Component")
+  /* note: abstract class */ @JSImport("@antv/component", "Component")
   @js.native
-  abstract class Component[T /* <: ComponentCfg */] protected () extends default[T] {
+  open class Component[T /* <: ComponentCfg */] protected () extends default[T] {
     def this(cfg: T) = this()
   }
   
   object Crosshair {
     
-    @JSImport("@antv/component", "Crosshair.Base")
+    /* note: abstract class */ @JSImport("@antv/component", "Crosshair.Base")
     @js.native
-    abstract class Base[T /* <: CrosshairBaseCfg */] ()
-      extends typings.antvComponent.crosshairMod.Base[T]
+    open class Base[T /* <: CrosshairBaseCfg */] ()
+      extends typings.antvComponent.libCrosshairMod.Base[T]
     
     @JSImport("@antv/component", "Crosshair.Circle")
     @js.native
     open class Circle ()
-      extends typings.antvComponent.crosshairMod.Circle
+      extends typings.antvComponent.libCrosshairMod.Circle
     
     @JSImport("@antv/component", "Crosshair.Html")
     @js.native
     open class Html[T /* <: HtmlCrossHairCfg */] ()
-      extends typings.antvComponent.crosshairMod.Html[T]
+      extends typings.antvComponent.libCrosshairMod.Html[T]
     
     @JSImport("@antv/component", "Crosshair.Line")
     @js.native
     open class Line ()
-      extends typings.antvComponent.crosshairMod.Line
+      extends typings.antvComponent.libCrosshairMod.Line
   }
   
   object Grid {
     
-    @JSImport("@antv/component", "Grid.Base")
+    /* note: abstract class */ @JSImport("@antv/component", "Grid.Base")
     @js.native
-    abstract class Base[T /* <: GroupComponentCfg */] ()
-      extends typings.antvComponent.gridMod.Base[T]
+    open class Base[T /* <: GroupComponentCfg */] ()
+      extends typings.antvComponent.libGridMod.Base[T]
     
     @JSImport("@antv/component", "Grid.Circle")
     @js.native
     open class Circle ()
-      extends typings.antvComponent.gridMod.Circle
+      extends typings.antvComponent.libGridMod.Circle
     
     @JSImport("@antv/component", "Grid.Line")
     @js.native
     open class Line ()
-      extends typings.antvComponent.gridMod.Line
+      extends typings.antvComponent.libGridMod.Line
   }
   
-  @JSImport("@antv/component", "GroupComponent")
+  /* note: abstract class */ @JSImport("@antv/component", "GroupComponent")
   @js.native
-  abstract class GroupComponent[T /* <: GroupComponentCfg */] ()
-    extends typings.antvComponent.groupComponentMod.default[T]
+  open class GroupComponent[T /* <: GroupComponentCfg */] ()
+    extends typings.antvComponent.libAbstractGroupComponentMod.default[T]
   
-  @JSImport("@antv/component", "HtmlComponent")
+  /* note: abstract class */ @JSImport("@antv/component", "HtmlComponent")
   @js.native
-  abstract class HtmlComponent[T /* <: ComponentCfg */] ()
-    extends typings.antvComponent.htmlComponentMod.default[T]
+  open class HtmlComponent[T /* <: ComponentCfg */] ()
+    extends typings.antvComponent.libAbstractHtmlComponentMod.default[T]
   
   object Legend {
     
-    @JSImport("@antv/component", "Legend.Base")
+    /* note: abstract class */ @JSImport("@antv/component", "Legend.Base")
     @js.native
-    abstract class Base[T /* <: LegendBaseCfg */] ()
-      extends typings.antvComponent.legendMod.Base[T]
+    open class Base[T /* <: LegendBaseCfg */] ()
+      extends typings.antvComponent.libLegendMod.Base[T]
     
     @JSImport("@antv/component", "Legend.Category")
     @js.native
     open class Category ()
-      extends typings.antvComponent.legendMod.Category
+      extends typings.antvComponent.libLegendMod.Category
     
     @JSImport("@antv/component", "Legend.Continuous")
     @js.native
     open class Continuous ()
-      extends typings.antvComponent.legendMod.Continuous
+      extends typings.antvComponent.libLegendMod.Continuous
   }
   
   @JSImport("@antv/component", "Scrollbar")
   @js.native
   open class Scrollbar ()
-    extends typings.antvComponent.scrollbarMod.Scrollbar
+    extends typings.antvComponent.libScrollbarMod.Scrollbar
   
   @JSImport("@antv/component", "Slider")
   @js.native
   open class Slider ()
-    extends typings.antvComponent.sliderMod.Slider
+    extends typings.antvComponent.libSliderMod.Slider
   
   object TOOLTIP_CSS_CONST {
     
     @JSImport("@antv/component", "TOOLTIP_CSS_CONST.CONTAINER_CLASS")
     @js.native
     val CONTAINER_CLASS: /* "g2-tooltip" */ String = js.native
-    
-    @JSImport("@antv/component", "TOOLTIP_CSS_CONST.CONTAINER_CLASS_CUSTOM")
-    @js.native
-    val CONTAINER_CLASS_CUSTOM: /* "g2-tooltip-custom" */ String = js.native
     
     @JSImport("@antv/component", "TOOLTIP_CSS_CONST.CROSSHAIR_X")
     @js.native
@@ -224,7 +220,7 @@ object mod {
     @JSImport("@antv/component", "Tooltip.Html")
     @js.native
     open class Html[T /* <: TooltipCfg */] ()
-      extends typings.antvComponent.tooltipMod.Html[T]
+      extends typings.antvComponent.libTooltipMod.Html[T]
   }
   
   inline def propagationDelegate(group: IGroup, eventName: String, eventObject: LooseObject): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("propagationDelegate")(group.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventObject.asInstanceOf[js.Any])).asInstanceOf[Unit]

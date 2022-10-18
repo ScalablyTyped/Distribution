@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait FormattedNumberCellValue extends StObject {
   
@@ -22,8 +21,7 @@ trait FormattedNumberCellValue extends StObject {
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[double | Double] = js.undefined
   
@@ -31,8 +29,7 @@ trait FormattedNumberCellValue extends StObject {
     * Represents the value that would be returned by `Range.values` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: scala.Double
   
@@ -43,8 +40,7 @@ trait FormattedNumberCellValue extends StObject {
     * To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var numberFormat: String
   
@@ -52,8 +48,7 @@ trait FormattedNumberCellValue extends StObject {
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: formattedNumber | FormattedNumber
 }

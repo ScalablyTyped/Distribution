@@ -8,65 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0` extends StObject {
-    
-    var ref: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
-  }
-  object `0` {
-    
-    inline def apply(ref: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): `0` = {
-      val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`]
-    }
-    
-    extension [Self <: `0`](x: Self) {
-      
-      inline def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1` extends StObject {
-    
-    /** @deprecated */
-    @JSName("$ref")
-    var $ref: js.UndefOr[Any] = js.undefined
-  }
-  object `1` {
-    
-    inline def apply(): `1` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`1`]
-    }
-    
-    extension [Self <: `1`](x: Self) {
-      
-      inline def set$ref(value: Any): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
-      
-      inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
-    }
-  }
-  
-  trait `2` extends StObject {
-    
-    var ref: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-      ] = js.undefined
-  }
-  object `2` {
-    
-    inline def apply(): `2` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`2`]
-    }
-    
-    extension [Self <: `2`](x: Self) {
-      
-      inline def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-      
-      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
-    }
-  }
-  
   trait As[C /* <: ElementType[Any] */] extends StObject {
     
     @JSName("$as")

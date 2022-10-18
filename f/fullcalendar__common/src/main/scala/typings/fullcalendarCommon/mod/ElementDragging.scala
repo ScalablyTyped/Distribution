@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fullcalendar/common", "ElementDragging")
+/* note: abstract class */ @JSImport("@fullcalendar/common", "ElementDragging")
 @js.native
-abstract class ElementDragging protected () extends StObject {
+open class ElementDragging protected () extends StObject {
   def this(el: HTMLElement) = this()
   def this(el: HTMLElement, selector: String) = this()
   

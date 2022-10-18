@@ -1,6 +1,7 @@
 package typings.gulpGzip
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import typings.node.zlibMod.ZlibOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,10 +13,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : Gzip = js.native
   
-  type Gzip = js.Function1[
-    /* options */ js.UndefOr[Options], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]
+  type Gzip = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
   trait Options extends StObject {
     

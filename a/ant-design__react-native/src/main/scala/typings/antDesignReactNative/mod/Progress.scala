@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import typings.antDesignReactNative.anon.AppearTransition
-import typings.antDesignReactNative.progressMod.ProgressProps
-import typings.antDesignReactNative.progressMod.default
+import typings.antDesignReactNative.libProgressMod.ProgressProps
+import typings.antDesignReactNative.libProgressMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,10 +1,5 @@
 package typings.domHelpers
 
-import typings.domHelpers.addEventListenerMod.EventHandler
-import typings.domHelpers.addEventListenerMod.TaggedEventHandler
-import typings.domHelpers.animateMod.AnimateProperties
-import typings.domHelpers.animateMod.Cancel
-import typings.domHelpers.animateMod.Options
 import typings.domHelpers.anon.Fn0
 import typings.domHelpers.anon.Fn1
 import typings.domHelpers.anon.FnCallNodeEventNameBubblesCancelable
@@ -14,6 +9,13 @@ import typings.domHelpers.anon.FnCallNodeProperty
 import typings.domHelpers.anon.FnCallSelectorHandler
 import typings.domHelpers.anon.Height
 import typings.domHelpers.anon.PartialRecordPropertystri
+import typings.domHelpers.cjsAddEventListenerMod.EventHandler
+import typings.domHelpers.cjsAddEventListenerMod.TaggedEventHandler
+import typings.domHelpers.cjsAnimateMod.AnimateProperties
+import typings.domHelpers.cjsAnimateMod.Cancel
+import typings.domHelpers.cjsAnimateMod.Options
+import typings.domHelpers.cjsTransitionEndMod.Listener
+import typings.domHelpers.cjsTypesMod.HyphenProperty
 import typings.domHelpers.domHelpersStrings.abort
 import typings.domHelpers.domHelpersStrings.animationcancel
 import typings.domHelpers.domHelpersStrings.animationend
@@ -114,8 +116,6 @@ import typings.domHelpers.domHelpersStrings.webkitanimationiteration
 import typings.domHelpers.domHelpersStrings.webkitanimationstart
 import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
-import typings.domHelpers.transitionEndMod.Listener
-import typings.domHelpers.typesMod.HyphenProperty
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleDeclaration
 import typings.std.Document

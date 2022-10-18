@@ -3,10 +3,10 @@ package typings.useGestureCore.anon
 import typings.std.EventTarget
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.Vector2
 import typings.useGestureCore.useGestureCoreBooleans.`false`
 import typings.useGestureCore.useGestureCoreStrings.x
 import typings.useGestureCore.useGestureCoreStrings.y
-import typings.useGestureCore.utilsMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

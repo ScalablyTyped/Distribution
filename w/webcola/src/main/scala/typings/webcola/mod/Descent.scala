@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "Descent")
 @js.native
 open class Descent protected ()
-  extends typings.webcola.descentMod.Descent {
+  extends typings.webcola.distSrcDescentMod.Descent {
   def this(x: js.Array[js.Array[Double]], D: js.Array[js.Array[Double]]) = this()
   def this(x: js.Array[js.Array[Double]], D: js.Array[js.Array[Double]], G: js.Array[js.Array[Double]]) = this()
 }

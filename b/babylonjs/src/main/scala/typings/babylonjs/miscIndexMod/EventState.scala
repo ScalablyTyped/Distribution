@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "EventState")
 @js.native
 open class EventState protected ()
-  extends typings.babylonjs.observableMod.EventState {
+  extends typings.babylonjs.miscObservableMod.EventState {
   /**
     * Create a new EventState
     * @param mask defines the mask associated with this state

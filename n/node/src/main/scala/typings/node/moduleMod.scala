@@ -2,19 +2,59 @@ package typings.node
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.node.nodeUrlMod.URL
+import typings.node.NodeJS.Require
+import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleMod extends Shortcut {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule * / any */ @JSImport("module", JSImport.Namespace)
+  @JSImport("module", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends StObject {
+  open class ^ protected ()
+    extends StObject
+       with typings.node.NodeJS.Module {
     def this(id: String) = this()
     def this(id: String, parent: Module) = this()
+    
+    /* CompleteClass */
+    var children: js.Array[typings.node.NodeJS.Module] = js.native
+    
+    /* CompleteClass */
+    var exports: Any = js.native
+    
+    /* CompleteClass */
+    var filename: String = js.native
+    
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /**
+      * `true` if the module is running during the Node.js preload
+      */
+    /* CompleteClass */
+    var isPreloading: Boolean = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * @since v11.14.0
+      *
+      * The directory name of the module. This is usually the same as the path.dirname() of the module.id.
+      */
+    /* CompleteClass */
+    var path: String = js.native
+    
+    /* CompleteClass */
+    var paths: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def require(id: String): Any = js.native
+    /* CompleteClass */
+    @JSName("require")
+    var require_Original: Require = js.native
   }
   @JSImport("module", JSImport.Namespace)
   @js.native
@@ -24,7 +64,56 @@ object moduleMod extends Shortcut {
   @JSImport("module", "Module")
   @js.native
   def Module: Instantiable2[/* id */ String, /* parent */ js.UndefOr[Module], Module] = js.native
-  type Module = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
+  type Module = NodeModule
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("module", "Module")
+  @js.native
+  open class ModuleCls protected ()
+    extends StObject
+       with typings.node.NodeJS.Module {
+    def this(id: String) = this()
+    def this(id: String, parent: Module) = this()
+    
+    /* CompleteClass */
+    var children: js.Array[typings.node.NodeJS.Module] = js.native
+    
+    /* CompleteClass */
+    var exports: Any = js.native
+    
+    /* CompleteClass */
+    var filename: String = js.native
+    
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /**
+      * `true` if the module is running during the Node.js preload
+      */
+    /* CompleteClass */
+    var isPreloading: Boolean = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * @since v11.14.0
+      *
+      * The directory name of the module. This is usually the same as the path.dirname() of the module.id.
+      */
+    /* CompleteClass */
+    var path: String = js.native
+    
+    /* CompleteClass */
+    var paths: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def require(id: String): Any = js.native
+    /* CompleteClass */
+    @JSName("require")
+    var require_Original: Require = js.native
+  }
+  
   inline def Module_=(x: Instantiable2[/* id */ String, /* parent */ js.UndefOr[Module], Module]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Module")(x.asInstanceOf[js.Any])
   
   /**
@@ -55,8 +144,8 @@ object moduleMod extends Shortcut {
   inline def builtinModules_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("builtinModules")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def createRequire(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def createRequire(path: URL): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createRequire(path: String): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  inline def createRequire(path: URL): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequire")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
   
   /**
     * `path` is the resolved path for the file for which a corresponding source map

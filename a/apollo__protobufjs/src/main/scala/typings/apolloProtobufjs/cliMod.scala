@@ -1,7 +1,7 @@
 package typings.apolloProtobufjs
 
-import typings.apolloProtobufjs.pbjsMod.pbjsCallback
-import typings.apolloProtobufjs.pbtsMod.pbtsCallback
+import typings.apolloProtobufjs.cliPbjsMod.pbjsCallback
+import typings.apolloProtobufjs.cliPbtsMod.pbtsCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

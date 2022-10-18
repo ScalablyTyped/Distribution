@@ -1,7 +1,7 @@
 package typings.refractor
 
 import typings.hast.mod.Properties
-import typings.refractor.coreMod.Refractor_
+import typings.refractor.libCoreMod.Refractor_
 import typings.refractor.refractorStrings.element
 import typings.refractor.refractorStrings.root
 import typings.unist.mod.Data
@@ -18,12 +18,14 @@ object mod {
   @js.native
   val refractor: Refractor_ = js.native
   
-  type Grammar = typings.refractor.coreMod.Grammar
+  type Grammar = typings.refractor.libCoreMod.Grammar
   
   /* Inlined refractor.refractor/lib/core.RefractorElement */
   trait RefractorElement extends StObject {
     
-    var children: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]
+    var children: js.Array[
+        typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+      ]
     
     var content: js.UndefOr[typings.hast.mod.Root] = js.undefined
     
@@ -40,7 +42,9 @@ object mod {
   object RefractorElement {
     
     inline def apply(
-      children: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text],
+      children: js.Array[
+          typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+        ],
       tagName: String
     ): RefractorElement = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
@@ -50,9 +54,13 @@ object mod {
     
     extension [Self <: RefractorElement](x: Self) {
       
-      inline def setChildren(value: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(
+        value: js.Array[
+              typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+            ]
+      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: (typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text)*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: (typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text)*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setContent(value: typings.hast.mod.Root): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -79,7 +87,9 @@ object mod {
   /* Inlined refractor.refractor/lib/core.RefractorRoot */
   trait RefractorRoot extends StObject {
     
-    var children: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]
+    var children: js.Array[
+        typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+      ]
     
     var data: js.UndefOr[NodeData[Node[Data]]] = js.undefined
     
@@ -89,7 +99,11 @@ object mod {
   }
   object RefractorRoot {
     
-    inline def apply(children: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]): RefractorRoot = {
+    inline def apply(
+      children: js.Array[
+          typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+        ]
+    ): RefractorRoot = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[RefractorRoot]
@@ -97,9 +111,13 @@ object mod {
     
     extension [Self <: RefractorRoot](x: Self) {
       
-      inline def setChildren(value: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(
+        value: js.Array[
+              typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+            ]
+      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: (typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text)*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: (typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text)*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setData(value: NodeData[Node[Data]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -116,7 +134,9 @@ object mod {
   /* Inlined refractor.refractor/lib/core.RefractorRoot */
   trait Root extends StObject {
     
-    var children: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]
+    var children: js.Array[
+        typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+      ]
     
     var data: js.UndefOr[NodeData[Node[Data]]] = js.undefined
     
@@ -126,7 +146,11 @@ object mod {
   }
   object Root {
     
-    inline def apply(children: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]): Root = {
+    inline def apply(
+      children: js.Array[
+          typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+        ]
+    ): Root = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[Root]
@@ -134,9 +158,13 @@ object mod {
     
     extension [Self <: Root](x: Self) {
       
-      inline def setChildren(value: js.Array[typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(
+        value: js.Array[
+              typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text
+            ]
+      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: (typings.refractor.coreMod.RefractorElement | typings.refractor.coreMod.Text)*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setChildrenVarargs(value: (typings.refractor.libCoreMod.RefractorElement | typings.refractor.libCoreMod.Text)*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setData(value: NodeData[Node[Data]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -150,7 +178,7 @@ object mod {
     }
   }
   
-  type Syntax = typings.refractor.coreMod.Syntax
+  type Syntax = typings.refractor.libCoreMod.Syntax
   
-  type Text = typings.refractor.coreMod.Text
+  type Text = typings.refractor.libCoreMod.Text
 }

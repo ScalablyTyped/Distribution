@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "FreeCameraGamepadInput")
 @js.native
 open class FreeCameraGamepadInput ()
-  extends typings.babylonjs.legacyMod.FreeCameraGamepadInput
+  extends typings.babylonjs.legacyLegacyMod.FreeCameraGamepadInput

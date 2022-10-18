@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("XRPlane")
+/* note: abstract class */ @JSGlobal("XRPlane")
 @js.native
-abstract class XRPlane ()
+open class XRPlane ()
   extends StObject
      with typings.webxr.XRPlane {
   

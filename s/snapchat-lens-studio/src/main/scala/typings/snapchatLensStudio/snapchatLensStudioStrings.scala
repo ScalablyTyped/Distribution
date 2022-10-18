@@ -175,10 +175,6 @@ object snapchatLensStudioStrings {
   inline def DelayedCallbackEvent: DelayedCallbackEvent = "DelayedCallbackEvent".asInstanceOf[DelayedCallbackEvent]
   
   @js.native
-  sealed trait Expressions extends StObject
-  inline def Expressions: Expressions = "Expressions".asInstanceOf[Expressions]
-  
-  @js.native
   sealed trait FaceFoundEvent extends StObject
   inline def FaceFoundEvent: FaceFoundEvent = "FaceFoundEvent".asInstanceOf[FaceFoundEvent]
   

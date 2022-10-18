@@ -1,6 +1,6 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.routersTypesMod.PartialRoute
+import typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.PartialRoute
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +18,9 @@ trait PartialPickReadonlykeystrHistory extends StObject {
   var routeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   val routes: js.Array[
-    PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
+    PartialRoute[
+      typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]]
+    ]
   ]
   
   val stale: js.UndefOr[`true`] = js.undefined
@@ -31,7 +33,9 @@ object PartialPickReadonlykeystrHistory {
   
   inline def apply(
     routes: js.Array[
-      PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
+      PartialRoute[
+        typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]]
+      ]
     ]
   ): PartialPickReadonlykeystrHistory = {
     val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
@@ -62,11 +66,17 @@ object PartialPickReadonlykeystrHistory {
     
     inline def setRoutes(
       value: js.Array[
-          PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
+          PartialRoute[
+            typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]]
+          ]
         ]
     ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: (PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]])*): Self = StObject.set(x, "routes", js.Array(value*))
+    inline def setRoutesVarargs(
+      value: (PartialRoute[
+          typings.tuyaPanelKit.`@reactNavigationRoutersTypesMod`.Route[String, js.UndefOr[js.Object]]
+        ])*
+    ): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

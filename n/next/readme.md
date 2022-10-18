@@ -1,7 +1,7 @@
 
 # Scala.js typings for next
 
-Typings are for version 10.0.2
+Typings are for version 12.3.1
 
 ## Library description:
 The React Framework
@@ -10,10 +10,10 @@ The React Framework
 | ------------------ | :-------------: |
 | Full name          | next |
 | Keywords           | - |
-| # releases         | 675 |
-| # dependents       | 633 |
-| # downloads        | 24522937 |
-| # stars            | 31 |
+| # releases         | 691 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3076299E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://nextjs.org)

@@ -1,7 +1,7 @@
 package typings.node.childProcessMod
 
-import typings.node.nodeStreamMod.Readable
-import typings.node.nodeStreamMod.Writable
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonstreamMod.Writable
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.error

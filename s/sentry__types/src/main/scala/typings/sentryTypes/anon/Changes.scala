@@ -1,7 +1,7 @@
 package typings.sentryTypes.anon
 
-import typings.sentryTypes.transactionMod.TransactionNameChange
-import typings.sentryTypes.transactionMod.TransactionSource
+import typings.sentryTypes.typesTransactionMod.TransactionNameChange
+import typings.sentryTypes.typesTransactionMod.TransactionSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

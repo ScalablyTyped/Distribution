@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait Trigger extends StObject {
   
   /** Output only. The reason(s) why a trigger is in FAILED state. */
   var conditions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.eventarc.gapi.client.eventarc.StateCondition}
-    */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Trigger & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.eventarc.gapi.client.eventarc.StateCondition} */ js.Any
   ] = js.undefined
   
   /** Output only. The creation time. */
@@ -37,9 +34,7 @@ trait Trigger extends StObject {
   
   /** Optional. User labels attached to the triggers that can be used to group resources. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Trigger & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** Required. The resource name of the trigger. Must be unique within the location of the project and must be in `projects/{project}/locations/{location}/triggers/{trigger}` format. */
@@ -80,9 +75,7 @@ object Trigger {
     inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     inline def setConditions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.eventarc.gapi.client.eventarc.StateCondition}
-      */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Trigger & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.eventarc.gapi.client.eventarc.StateCondition} */ js.Any
     ): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
@@ -106,9 +99,7 @@ object Trigger {
     inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value*))
     
     inline def setLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientEventarc.maximMazurokGapiClientEventarcStrings.Trigger & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

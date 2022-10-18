@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ open class VRDistortionCorrectionPostProcess protected ()
     */
   def this(
     name: String,
-    camera: typings.babylonjs.BABYLON.Camera,
+    camera: Nullable[typings.babylonjs.BABYLON.Camera],
     isRightEye: Boolean,
     vrMetrics: typings.babylonjs.BABYLON.VRCameraMetrics
   ) = this()

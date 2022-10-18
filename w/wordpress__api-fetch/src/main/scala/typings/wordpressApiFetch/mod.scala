@@ -13,16 +13,19 @@ object mod {
       * @param {import('./types').APIFetchOptions} options
       * @return {Promise<T>} A promise representing the request processed via the registered middlewares.
       */
-    inline def apply[T](options: typings.wordpressApiFetch.typesMod.APIFetchOptions): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    inline def apply[T](options: typings.wordpressApiFetch.buildTypesTypesMod.APIFetchOptions): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
     
     @JSImport("@wordpress/api-fetch", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
   }
   
-  type APIFetchMiddleware = typings.wordpressApiFetch.typesMod.APIFetchMiddleware
+  type APIFetchMiddleware = typings.wordpressApiFetch.buildTypesTypesMod.APIFetchMiddleware
   
-  type APIFetchOptions = typings.wordpressApiFetch.typesMod.APIFetchOptions
+  type APIFetchOptions = typings.wordpressApiFetch.buildTypesTypesMod.APIFetchOptions
   
-  type FetchHandler = js.Function1[/* options */ typings.wordpressApiFetch.typesMod.APIFetchOptions, js.Promise[Any]]
+  type FetchHandler = js.Function1[
+    /* options */ typings.wordpressApiFetch.buildTypesTypesMod.APIFetchOptions, 
+    js.Promise[Any]
+  ]
 }

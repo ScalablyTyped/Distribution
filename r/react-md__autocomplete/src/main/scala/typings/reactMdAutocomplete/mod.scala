@@ -4,11 +4,11 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
-import typings.reactMdAutocomplete.highlightedResultMod.HighlightedResultProps
-import typings.reactMdAutocomplete.typesMod.AutoCompleteData
-import typings.reactMdAutocomplete.typesMod.AutoCompleteProps
-import typings.reactMdAutocomplete.useAutoCompleteMod.AutoCompleteOptions
-import typings.reactMdAutocomplete.useAutoCompleteMod.AutoCompleteReturnValue
+import typings.reactMdAutocomplete.typesHighlightedResultMod.HighlightedResultProps
+import typings.reactMdAutocomplete.typesTypesMod.AutoCompleteData
+import typings.reactMdAutocomplete.typesTypesMod.AutoCompleteProps
+import typings.reactMdAutocomplete.typesUseAutoCompleteMod.AutoCompleteOptions
+import typings.reactMdAutocomplete.typesUseAutoCompleteMod.AutoCompleteReturnValue
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

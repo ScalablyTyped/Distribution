@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Key extends StObject {
   
-  var app: typings.vueDevtoolsApi.appMod.App
+  var app: typings.vueDevtoolsApi.libEsmApiAppMod.App
   
   var key: String
   
@@ -21,7 +21,7 @@ trait Key extends StObject {
 object Key {
   
   inline def apply(
-    app: typings.vueDevtoolsApi.appMod.App,
+    app: typings.vueDevtoolsApi.libEsmApiAppMod.App,
     key: String,
     newValue: Any,
     oldValue: Any,
@@ -34,7 +34,7 @@ object Key {
   
   extension [Self <: Key](x: Self) {
     
-    inline def setApp(value: typings.vueDevtoolsApi.appMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: typings.vueDevtoolsApi.libEsmApiAppMod.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

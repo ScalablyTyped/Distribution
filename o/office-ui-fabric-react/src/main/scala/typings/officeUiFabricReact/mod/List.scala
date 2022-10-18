@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.OnRenderCell
-import typings.officeUiFabricReact.listListMod.IListState
-import typings.officeUiFabricReact.listTypesMod.IListProps
+import typings.officeUiFabricReact.libComponentsListListDottypesMod.IListProps
+import typings.officeUiFabricReact.libComponentsListListMod.IListState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

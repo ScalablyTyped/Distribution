@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-http-client" : "48.1.1"
+      "ipfs-http-client" : "58.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-http-client" : "48.1.1"
+      "ipfs-http-client" : "58.0.1"
     }
   ],
   "compile-devDependencies" : [

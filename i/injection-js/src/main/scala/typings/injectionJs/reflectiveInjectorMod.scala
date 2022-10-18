@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object reflectiveInjectorMod {
   
-  @JSImport("injection-js/reflective_injector", "ReflectiveInjector")
+  /* note: abstract class */ @JSImport("injection-js/reflective_injector", "ReflectiveInjector")
   @js.native
-  abstract class ReflectiveInjector () extends Injector {
+  open class ReflectiveInjector () extends Injector {
     
     /**
       * Creates a child injector from previously resolved providers.

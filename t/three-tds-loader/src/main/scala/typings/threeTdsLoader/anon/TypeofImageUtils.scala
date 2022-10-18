@@ -3,7 +3,7 @@ package typings.threeTdsLoader.anon
 import typings.std.HTMLCanvasElement
 import typings.three.anon.Data
 import typings.three.srcConstantsMod.Mapping
-import typings.three.textureMod.Texture
+import typings.three.srcTexturesTextureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

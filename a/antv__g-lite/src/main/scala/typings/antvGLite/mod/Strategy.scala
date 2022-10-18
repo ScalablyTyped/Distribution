@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Strategy extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.antvGLite.cullableMod.Strategy & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.antvGLite.distComponentsCullableMod.Strategy & Double] = js.native
   
-  /* 0 */ val Standard: typings.antvGLite.cullableMod.Strategy.Standard & Double = js.native
+  /* 0 */ val Standard: typings.antvGLite.distComponentsCullableMod.Strategy.Standard & Double = js.native
 }

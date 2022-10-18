@@ -11,7 +11,6 @@ import typings.reactNativeReanimated.mod.Animated.BinaryOperator
 import typings.reactNativeReanimated.mod.Animated.CodeProps
 import typings.reactNativeReanimated.mod.Animated.DecayConfig
 import typings.reactNativeReanimated.mod.Animated.DecayState
-import typings.reactNativeReanimated.mod.Animated.EventMappingArray
 import typings.reactNativeReanimated.mod.Animated.InterpolationConfig
 import typings.reactNativeReanimated.mod.Animated.MultiOperator
 import typings.reactNativeReanimated.mod.Animated.Nullable
@@ -252,9 +251,11 @@ object default {
   @js.native
   val eq_ : BinaryOperator[`0` | `1`] = js.native
   
-  inline def event[T](argMapping: EventMappingArray[T] | js.Array[typings.reactNativeReanimated.mod.Animated.Mapping]): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   inline def event[T](
-    argMapping: EventMappingArray[T] | js.Array[typings.reactNativeReanimated.mod.Animated.Mapping],
+    argMapping: /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? std.ReadonlyArray<react-native-reanimated.react-native-reanimated.Animated.Mapping> : std.Readonly<react-native-reanimated.react-native-reanimated.Animated.EventMappingArray<T>> */ js.Any
+  ): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
+  inline def event[T](
+    argMapping: /* import warning: importer.ImportType#apply Failed type conversion: T extends never ? std.ReadonlyArray<react-native-reanimated.react-native-reanimated.Animated.Mapping> : std.Readonly<react-native-reanimated.react-native-reanimated.Animated.EventMappingArray<T>> */ js.Any,
     config: js.Object
   ): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   

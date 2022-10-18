@@ -43,8 +43,8 @@ open class Ractive[T /* <: Ractive[T] */] ()
   	 * @param child the instance to attach to this instance
   	 * @param opts
   	 */
-  def attachChild(child: Ractive[Ractive[Any]]): js.Promise[Unit] = js.native
-  def attachChild(child: Ractive[Ractive[Any]], opts: AttachOpts): js.Promise[Unit] = js.native
+  def attachChild(child: Ractive[/* ractive.ractive.Ractive<any> */ Any]): js.Promise[Unit] = js.native
+  def attachChild(child: Ractive[/* ractive.ractive.Ractive<any> */ Any], opts: AttachOpts): js.Promise[Unit] = js.native
   
   /** A list of children attached to this instance. */
   var children: Children = js.native
@@ -57,7 +57,7 @@ open class Ractive[T /* <: Ractive[T] */] ()
   def compute(keypath: String, computation: Computation[T]): js.Promise[Unit] = js.native
   
   /** If this instance is in a yielded template, the instance that is immediately above it. */
-  var container: js.UndefOr[Ractive[Ractive[Any]]] = js.native
+  var container: js.UndefOr[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
   
   /**
   	 * Detach this instance from the DOM.
@@ -68,7 +68,7 @@ open class Ractive[T /* <: Ractive[T] */] ()
   	 * Detach a child instance that was previously attached with attachChild from this instance.
   	 * @param child the instance to detach
   	 */
-  def detachChild(child: Ractive[Ractive[Any]]): js.Promise[Unit] = js.native
+  def detachChild(child: Ractive[/* ractive.ractive.Ractive<any> */ Any]): js.Promise[Unit] = js.native
   
   val event: js.UndefOr[ContextHelper | Event | Any] = js.native
   
@@ -92,41 +92,41 @@ open class Ractive[T /* <: Ractive[T] */] ()
   	 * Find all of the components belonging to this instance.
   	 * @param opts
   	 */
-  def findAllComponents(): js.Array[Ractive[Ractive[Any]]] = js.native
-  def findAllComponents(opts: FindOpts): js.Array[Ractive[Ractive[Any]]] = js.native
+  def findAllComponents(): js.Array[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
+  def findAllComponents(opts: FindOpts): js.Array[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
   /**
   	 * Find all of the components with the given name belonging to this instance.
   	 * @param name
   	 * @param opts
   	 */
-  def findAllComponents[U /* <: Ractive[Ractive[Any]] */](name: String): js.Array[U] = js.native
-  def findAllComponents[U /* <: Ractive[Ractive[Any]] */](name: String, opts: FindOpts): js.Array[U] = js.native
+  def findAllComponents[U /* <: Ractive[/* ractive.ractive.Ractive<any> */ Any] */](name: String): js.Array[U] = js.native
+  def findAllComponents[U /* <: Ractive[/* ractive.ractive.Ractive<any> */ Any] */](name: String, opts: FindOpts): js.Array[U] = js.native
   
   /**
   	 * Find the first component belonging to this instance.
   	 * @param opts
   	 */
-  def findComponent(): Ractive[Ractive[Any]] = js.native
-  def findComponent(opts: FindOpts): Ractive[Ractive[Any]] = js.native
+  def findComponent(): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
+  def findComponent(opts: FindOpts): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
   /**
   	 * Find the first component with the given name belonging to this instance.
   	 * @param name
   	 * @param opts
   	 */
-  def findComponent[U /* <: Ractive[Ractive[Any]] */](name: String): U = js.native
-  def findComponent[U /* <: Ractive[Ractive[Any]] */](name: String, opts: FindOpts): U = js.native
+  def findComponent[U /* <: Ractive[/* ractive.ractive.Ractive<any> */ Any] */](name: String): U = js.native
+  def findComponent[U /* <: Ractive[/* ractive.ractive.Ractive<any> */ Any] */](name: String, opts: FindOpts): U = js.native
   
   /**
   	 * Find the immediate ancestor instance with the given name.
   	 * @param name
   	 */
-  def findContainer(name: String): Ractive[Ractive[Any]] = js.native
+  def findContainer(name: String): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
   
   /**
   	 * Find the owning ancestor instance with the given name. For yielded instances, this will be the instance that yielded the template containing the component.
   	 * @param name
   	 */
-  def findParent(name: String): Ractive[Ractive[Any]] = js.native
+  def findParent(name: String): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
   
   def fire(name: String, ctx: js.Object, args: Any*): Boolean = js.native
   def fire(name: String, ctx: Unit, args: Any*): Boolean = js.native
@@ -238,10 +238,10 @@ open class Ractive[T /* <: Ractive[T] */] ()
   	 * @param event
   	 * @param handler
   	 */
-  def off(): Ractive[Ractive[Any]] = js.native
-  def off(event: String): Ractive[Ractive[Any]] = js.native
-  def off(event: String, handler: ListenerCallback[T]): Ractive[Ractive[Any]] = js.native
-  def off(event: Unit, handler: ListenerCallback[T]): Ractive[Ractive[Any]] = js.native
+  def off(): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
+  def off(event: String): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
+  def off(event: String, handler: ListenerCallback[T]): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
+  def off(event: Unit, handler: ListenerCallback[T]): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
   
   /**
   	 * Listen for an optionally namespaced instance event.
@@ -269,7 +269,7 @@ open class Ractive[T /* <: Ractive[T] */] ()
   def once(map: StringDictionary[ListenerCallback[T]]): ObserverHandle = js.native
   
   /** If this instance is a component, the instance that controls it. */
-  var parent: js.UndefOr[Ractive[Ractive[Any]]] = js.native
+  var parent: js.UndefOr[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
   
   /**
   	 * Pop a value off the array at the given keypath.
@@ -327,7 +327,7 @@ open class Ractive[T /* <: Ractive[T] */] ()
   def reverse(keypath: String): ArraySplicePromise = js.native
   
   /** If this instance is a component, the instance at the root of the template. */
-  var root: Ractive[Ractive[Any]] = js.native
+  var root: Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
   
   /**
   	 * Set a set of values from the given map. All of the values will be set before any DOM changes are propagated, but the values will still be set in object order in the data, which can cause multiple invalidations on observers, bindings, and template nodes.j
@@ -463,7 +463,7 @@ open class Ractive[T /* <: Ractive[T] */] ()
   def updateModel(keypath: String, cascade: Boolean): js.Promise[Unit] = js.native
   
   /** Install one or more plugins on the instance.  */
-  def use(plugins: Plugin*): Ractive[Ractive[Any]] = js.native
+  def use(plugins: Plugin*): Ractive[/* ractive.ractive.Ractive<any> */ Any] = js.native
 }
 /* static members */
 object Ractive {
@@ -491,8 +491,8 @@ object Ractive {
   /** The parent constructor used to create this constructor. */
   @JSImport("ractive", "Ractive.Parent")
   @js.native
-  def Parent: Static[Ractive[Ractive[Any]]] = js.native
-  inline def Parent_=(x: Static[Ractive[Ractive[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parent")(x.asInstanceOf[js.Any])
+  def Parent: Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
+  inline def Parent_=(x: Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parent")(x.asInstanceOf[js.Any])
   
   /** The Ractive constructor used to create this constructor. */
   @JSImport("ractive", "Ractive.Ractive")
@@ -530,14 +530,14 @@ object Ractive {
   
   @JSImport("ractive", "Ractive.decorators")
   @js.native
-  def decorators: Registry[Decorator[Ractive[Ractive[Any]]]] = js.native
-  inline def decorators_=(x: Registry[Decorator[Ractive[Ractive[Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+  def decorators: Registry[Decorator[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
+  inline def decorators_=(x: Registry[Decorator[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
   
   /** The registries that are inherited by all instance. */
   @JSImport("ractive", "Ractive.defaults")
   @js.native
-  def defaults: Registries[Ractive[Ractive[Any]]] = js.native
-  inline def defaults_=(x: Registries[Ractive[Ractive[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  def defaults: Registries[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = js.native
+  inline def defaults_=(x: Registries[Ractive[/* ractive.ractive.Ractive<any> */ Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
   @JSImport("ractive", "Ractive.easings")
   @js.native
@@ -549,15 +549,19 @@ object Ractive {
   
   @JSImport("ractive", "Ractive.events")
   @js.native
-  def events: Registry[EventPlugin[Ractive[Ractive[Any]]]] = js.native
-  inline def events_=(x: Registry[EventPlugin[Ractive[Ractive[Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+  def events: Registry[EventPlugin[Ractive[/* ractive.ractive.Ractive<any> */ Any]]] = js.native
+  inline def events_=(x: Registry[EventPlugin[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   
   /** Create a new component with this constructor as a starting point. */
-  inline def extend(): Static[Ractive[Ractive[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Static[Ractive[Ractive[Any]]]]
+  inline def extend(): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]
   inline def extend[T /* <: ExtendOpts[Any] & ValueMap */, U /* <: ReadonlyArrayExtendOptsan */](
     opts: T,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param more because its type U is not an array type */ more: U
-  ): Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(opts.asInstanceOf[js.Any], more.asInstanceOf[js.Any])).asInstanceOf[Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])]]
+  ): Static[
+    (Ractive[/* ractive.ractive.Ractive<any> */ Any]) & (Merge[T, U, ExtendOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]]])
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(opts.asInstanceOf[js.Any], more.asInstanceOf[js.Any])).asInstanceOf[Static[
+    (Ractive[/* ractive.ractive.Ractive<any> */ Any]) & (Merge[T, U, ExtendOpts[Ractive[/* ractive.ractive.Ractive<any> */ Any]]])
+  ]]
   
   /** Create a new component with this constructor as a starting point using the given constructor. */
   inline def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[U] & U] = ^.asInstanceOf[js.Dynamic].applyDynamic("extendWith")(c.asInstanceOf[js.Any]).asInstanceOf[Static[Ractive[U] & U]]
@@ -654,5 +658,5 @@ object Ractive {
   /** Unescape the given key e.g. 'foo\.bar' becomes 'foo.bar'.k */
   inline def unescapeKey(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def use(args: Plugin*): Static[Ractive[Ractive[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Static[Ractive[Ractive[Any]]]]
+  inline def use(args: Plugin*): Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]]]
 }

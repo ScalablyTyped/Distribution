@@ -1,7 +1,7 @@
 package typings.workerRpc
 
-import typings.workerRpc.rpcProviderMod.RpcProvider.Dispatcher
-import typings.workerRpc.rpcProviderMod.default
+import typings.workerRpc.libRpcProviderMod.RpcProvider.Dispatcher
+import typings.workerRpc.libRpcProviderMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,13 +21,13 @@ object mod {
     object MessageType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.workerRpc.rpcProviderMod.RpcProvider.MessageType & Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.workerRpc.libRpcProviderMod.RpcProvider.MessageType & Double] = js.native
       
-      /* 2 */ val internal: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.internal & Double = js.native
+      /* 2 */ val internal: typings.workerRpc.libRpcProviderMod.RpcProvider.MessageType.internal & Double = js.native
       
-      /* 1 */ val rpc: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.rpc & Double = js.native
+      /* 1 */ val rpc: typings.workerRpc.libRpcProviderMod.RpcProvider.MessageType.rpc & Double = js.native
       
-      /* 0 */ val signal: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.signal & Double = js.native
+      /* 0 */ val signal: typings.workerRpc.libRpcProviderMod.RpcProvider.MessageType.signal & Double = js.native
     }
   }
 }

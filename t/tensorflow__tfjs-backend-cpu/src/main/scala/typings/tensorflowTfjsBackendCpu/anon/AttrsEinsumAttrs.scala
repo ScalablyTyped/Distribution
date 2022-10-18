@@ -1,9 +1,9 @@
 package typings.tensorflowTfjsBackendCpu.anon
 
-import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
-import typings.tensorflowTfjsCore.kernelNamesMod.EinsumAttrs
-import typings.tensorflowTfjsCore.kernelNamesMod.EinsumInputs
-import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsBackendCpu.distBackendCpuMod.MathBackendCPU
+import typings.tensorflowTfjsCore.distKernelNamesMod.EinsumAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.EinsumInputs
+import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

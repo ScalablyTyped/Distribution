@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
+import typings.blueprintjsCore.libEsmComponentsFormsInputGroupMod.InputGroupProps2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "InputGroup")
 @js.native
 open class InputGroup protected ()
-  extends typings.blueprintjsCore.componentsMod.InputGroup {
+  extends typings.blueprintjsCore.libEsmComponentsMod.InputGroup {
   def this(props: InputGroupProps2) = this()
   def this(props: InputGroupProps2, context: Any) = this()
 }

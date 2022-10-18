@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband account and related information about the network provider for the account. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
 @js.native
-abstract class MobileBroadbandAccount ()
+open class MobileBroadbandAccount ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandAccount {
   

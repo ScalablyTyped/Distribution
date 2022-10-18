@@ -1,8 +1,8 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.utilMod.Dict
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcUtilMod.Dict
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +19,13 @@ trait Datasets extends StObject {
   /**
     * Vega-Lite configuration object. This property can only be defined at the top-level of a specification.
     */
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
+  var config: js.UndefOr[typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
   
   /**
     * A global data store for named datasets. This is a mapping from names to inline datasets.
     * This can be an array of objects or primitive values or a string. Arrays of primitive values are ingested as objects with a `data` property.
     */
-  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.undefined
+  var datasets: js.UndefOr[typings.vegaLite.buildSrcSpecToplevelMod.Datasets] = js.undefined
   
   /**
     * Optional metadata that will be passed to Vega.
@@ -46,11 +46,11 @@ object Datasets {
     
     inline def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
     
-    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setDatasets(value: typings.vegaLite.toplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
+    inline def setDatasets(value: typings.vegaLite.buildSrcSpecToplevelMod.Datasets): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
     inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     

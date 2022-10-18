@@ -8,9 +8,9 @@ object naturalLanguageClassifierV1Mod {
   
   @JSImport("watson-developer-cloud/natural-language-classifier/v1", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod.^ {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   
   type NaturalLanguageClassifierV1 = typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod.^

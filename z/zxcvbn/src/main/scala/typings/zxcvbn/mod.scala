@@ -111,7 +111,7 @@ object mod {
     
     inline def `Repeats like QuotationmarkaaaQuotationmark are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess` = ("Repeats like \"aaa\" are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`]
     
-    inline def `Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`: String = String.asInstanceOf[String]
+    inline def `Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`: /* Repeats like "abcabcabc" are only slightly harder to guess than "abc" */ String = ("Repeats like \"abcabcabc\" are only slightly harder to guess than \"abc\"").asInstanceOf[/* Repeats like "abcabcabc" are only slightly harder to guess than "abc" */ String]
     
     inline def `Sequences like abc or 6543 are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess` = ("Sequences like abc or 6543 are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`]
     
@@ -136,7 +136,7 @@ object mod {
     - typings.zxcvbn.zxcvbnStrings.`Short keyboard patterns are easy to guess`
     - typings.zxcvbn.zxcvbnStrings.`Use a longer keyboard pattern with more turns`
     - typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`
-    - java.lang.String
+    - / * Repeats like "abcabcabc" are only slightly harder to guess than "abc" * / java.lang.String
     - typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`
     - typings.zxcvbn.zxcvbnStrings.`Recent years are easy to guess`
     - typings.zxcvbn.zxcvbnStrings.`Dates are often easy to guess`
@@ -149,7 +149,7 @@ object mod {
     - typings.zxcvbn.zxcvbnStrings.`Common names and surnames are easy to guess`
     - typings.zxcvbn.zxcvbnStrings._empty
   */
-  type ZXCVBNFeedbackWarning = _ZXCVBNFeedbackWarning | String
+  type ZXCVBNFeedbackWarning = _ZXCVBNFeedbackWarning | (/* Repeats like "abcabcabc" are only slightly harder to guess than "abc" */ String)
   
   trait ZXCVBNResult extends StObject {
     

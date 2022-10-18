@@ -1,42 +1,42 @@
 package typings.zustand
 
-import typings.zustand.combineMod.Combine_
-import typings.zustand.devtoolsMod.Devtools_
-import typings.zustand.devtoolsMod.WithDevtools
-import typings.zustand.persistMod.Persist_
-import typings.zustand.persistMod.WithPersist
-import typings.zustand.reduxMod.Redux_
-import typings.zustand.reduxMod.WithRedux
-import typings.zustand.subscribeWithSelectorMod.SubscribeWithSelector_
-import typings.zustand.subscribeWithSelectorMod.WithSelectorSubscribe
+import typings.zustand.middlewareCombineMod.Combine_
+import typings.zustand.middlewareDevtoolsMod.Devtools_
+import typings.zustand.middlewareDevtoolsMod.WithDevtools
+import typings.zustand.middlewarePersistMod.Persist_
+import typings.zustand.middlewarePersistMod.WithPersist
+import typings.zustand.middlewareReduxMod.Redux_
+import typings.zustand.middlewareReduxMod.WithRedux
+import typings.zustand.middlewareSubscribeWithSelectorMod.SubscribeWithSelector_
+import typings.zustand.middlewareSubscribeWithSelectorMod.WithSelectorSubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object middlewareMod {
   
-  @JSImport("zustand/esm/middleware", "combine")
+  @JSImport("zustand/middleware", "combine")
   @js.native
   val combine: Combine_ = js.native
   
-  @JSImport("zustand/esm/middleware", "devtools")
+  @JSImport("zustand/middleware", "devtools")
   @js.native
   val devtools: Devtools_ = js.native
   
-  @JSImport("zustand/esm/middleware", "persist")
+  @JSImport("zustand/middleware", "persist")
   @js.native
   val persist: Persist_ = js.native
   
-  @JSImport("zustand/esm/middleware", "redux")
+  @JSImport("zustand/middleware", "redux")
   @js.native
   val redux: Redux_ = js.native
   
-  @JSImport("zustand/esm/middleware", "subscribeWithSelector")
+  @JSImport("zustand/middleware", "subscribeWithSelector")
   @js.native
   val subscribeWithSelector: SubscribeWithSelector_ = js.native
   
   /* augmented module */
-  object zustandEsmVanillaAugmentingMod {
+  object zustandVanillaAugmentingMod {
     
     trait StoreMutators[S, A] extends StObject {
       

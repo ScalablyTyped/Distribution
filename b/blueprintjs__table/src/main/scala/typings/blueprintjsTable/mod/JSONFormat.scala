@@ -1,6 +1,6 @@
 package typings.blueprintjsTable.mod
 
-import typings.blueprintjsTable.jsonFormatMod.IJSONFormatProps
+import typings.blueprintjsTable.libEsmCellFormatsJsonFormatMod.IJSONFormatProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/table", "JSONFormat")
 @js.native
 open class JSONFormat protected ()
-  extends typings.blueprintjsTable.jsonFormatMod.JSONFormat {
+  extends typings.blueprintjsTable.libEsmCellFormatsJsonFormatMod.JSONFormat {
   def this(props: IJSONFormatProps) = this()
   /**
     * @deprecated

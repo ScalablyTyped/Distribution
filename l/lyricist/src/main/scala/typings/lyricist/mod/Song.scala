@@ -1,7 +1,7 @@
 package typings.lyricist.mod
 
 import typings.lyricist.anon.Acceptedannotations
-import typings.lyricist.anon.Excludedpermissions
+import typings.lyricist.anon.Iqbyaction
 import typings.lyricist.anon.Songs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ trait Song extends StObject {
   
   var apple_music_player_url: String
   
-  var current_user_metadata: Excludedpermissions
+  var current_user_metadata: Iqbyaction
   
   var custom_performances: js.Array[Any]
   
@@ -92,7 +92,7 @@ object Song {
     annotation_count: Double,
     api_path: String,
     apple_music_player_url: String,
-    current_user_metadata: Excludedpermissions,
+    current_user_metadata: Iqbyaction,
     custom_performances: js.Array[Any],
     description: Description,
     description_annotation: DescriptionAnnotation,
@@ -143,7 +143,7 @@ object Song {
     
     inline def setApple_music_player_url(value: String): Self = StObject.set(x, "apple_music_player_url", value.asInstanceOf[js.Any])
     
-    inline def setCurrent_user_metadata(value: Excludedpermissions): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
+    inline def setCurrent_user_metadata(value: Iqbyaction): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
     inline def setCustom_performances(value: js.Array[Any]): Self = StObject.set(x, "custom_performances", value.asInstanceOf[js.Any])
     

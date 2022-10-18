@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("webcola", "IndexedVariable")
 @js.native
 open class IndexedVariable protected ()
-  extends typings.webcola.rectangleMod.IndexedVariable {
+  extends typings.webcola.distSrcRectangleMod.IndexedVariable {
   def this(index: Double, w: Double) = this()
 }

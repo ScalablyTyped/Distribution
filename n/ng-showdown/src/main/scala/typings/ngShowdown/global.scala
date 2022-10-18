@@ -11,7 +11,7 @@ object global {
   object ngShowdown {
     
     /* augmented module */
-    object mod {
+    object angularMod {
       
       // tslint:disable:interface-name
       type IFilterService = js.Function1[stripHtml, StripHtmlFilter]

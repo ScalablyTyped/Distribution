@@ -1,9 +1,9 @@
 package typings.postcssJs
 
+import typings.postcss.libNoWorkResultMod.default
 import typings.postcss.mod.AcceptedPlugin
 import typings.postcss.mod.LazyResult
 import typings.postcss.mod.Root_
-import typings.postcss.noWorkResultMod.default
 import typings.postcssJs.anon.OmitProcessOptionsparserp
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -30,6 +30,7 @@ object mod {
   // when the parser is the postcss-js parser.
   // This lets the postcss-js parser be used
   // as long as the object passed to `process` is a CSS-in-JS object
+  /* augmented module */
   object postcssLibProcessorAugmentingMod {
     
     trait Processor extends StObject {

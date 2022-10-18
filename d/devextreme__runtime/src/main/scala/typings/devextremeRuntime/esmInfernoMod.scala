@@ -2,7 +2,7 @@ package typings.devextremeRuntime
 
 import typings.devextremeRuntime.anon.DefaultValue
 import typings.devextremeRuntime.esmInfernoPortalMod.PortalProps
-import typings.devextremeRuntime.infernoRenderTemplateMod.IProps
+import typings.devextremeRuntime.esmInfernoRenderTemplateMod.IProps
 import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object esmInfernoMod {
   @JSImport("@devextreme/runtime/esm/inferno", "BaseInfernoComponent")
   @js.native
   open class BaseInfernoComponent[P, S] ()
-    extends typings.devextremeRuntime.infernoBaseComponentMod.BaseInfernoComponent[P, S] {
+    extends typings.devextremeRuntime.esmInfernoBaseComponentMod.BaseInfernoComponent[P, S] {
     def this(props: P) = this()
     def this(props: P, context: Any) = this()
     def this(props: Unit, context: Any) = this()
@@ -27,7 +27,7 @@ object esmInfernoMod {
   @JSImport("@devextreme/runtime/esm/inferno", "InfernoComponent")
   @js.native
   open class InfernoComponent[P, S] ()
-    extends typings.devextremeRuntime.infernoBaseComponentMod.InfernoComponent[P, S] {
+    extends typings.devextremeRuntime.esmInfernoBaseComponentMod.InfernoComponent[P, S] {
     def this(props: P) = this()
     def this(props: P, context: Any) = this()
     def this(props: Unit, context: Any) = this()
@@ -36,7 +36,7 @@ object esmInfernoMod {
   @JSImport("@devextreme/runtime/esm/inferno", "InfernoEffect")
   @js.native
   open class InfernoEffect protected ()
-    extends typings.devextremeRuntime.infernoEffectMod.InfernoEffect {
+    extends typings.devextremeRuntime.esmInfernoEffectMod.InfernoEffect {
     def this(effect: js.Function0[js.Function0[Unit] | Unit], dependency: js.Array[Any]) = this()
   }
   
@@ -64,7 +64,7 @@ object esmInfernoMod {
   @JSImport("@devextreme/runtime/esm/inferno", "InfernoWrapperComponent")
   @js.native
   open class InfernoWrapperComponent[P, S] ()
-    extends typings.devextremeRuntime.infernoBaseComponentMod.InfernoWrapperComponent[P, S] {
+    extends typings.devextremeRuntime.esmInfernoBaseComponentMod.InfernoWrapperComponent[P, S] {
     def this(props: P) = this()
     def this(props: P, context: Any) = this()
     def this(props: Unit, context: Any) = this()
@@ -74,7 +74,7 @@ object esmInfernoMod {
   
   inline def createContext[T](defaultValue: T): DefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[DefaultValue]
   
-  inline def createReRenderEffect(): typings.devextremeRuntime.infernoEffectMod.InfernoEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("createReRenderEffect")().asInstanceOf[typings.devextremeRuntime.infernoEffectMod.InfernoEffect]
+  inline def createReRenderEffect(): typings.devextremeRuntime.esmInfernoEffectMod.InfernoEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("createReRenderEffect")().asInstanceOf[typings.devextremeRuntime.esmInfernoEffectMod.InfernoEffect]
   
   inline def hasTemplate(name: String, properties: Record[String, Any], _component: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasTemplate")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], _component.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

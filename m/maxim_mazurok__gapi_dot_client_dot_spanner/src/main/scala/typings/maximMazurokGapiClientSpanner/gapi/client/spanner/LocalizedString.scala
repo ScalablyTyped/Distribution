@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait LocalizedString extends StObject {
   
   /** A map of arguments used when creating the localized message. Keys represent parameter names which may be used by the localized version when substituting dynamic values. */
   var args: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.LocalizedString & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The canonical English version of this message. If no token is provided or the front-end has no message associated with the token, this text will be displayed as-is. */
@@ -30,9 +27,7 @@ object LocalizedString {
   extension [Self <: LocalizedString](x: Self) {
     
     inline def setArgs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.LocalizedString & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

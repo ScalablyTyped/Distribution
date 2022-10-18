@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BulkModifyDocsWrapper extends StObject {
   
-  var docs: js.Array[js.Any]
+  var docs: js.Array[Any]
 }
 object BulkModifyDocsWrapper {
   
-  inline def apply(docs: js.Array[js.Any]): BulkModifyDocsWrapper = {
+  inline def apply(docs: js.Array[Any]): BulkModifyDocsWrapper = {
     val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkModifyDocsWrapper]
   }
   
   extension [Self <: BulkModifyDocsWrapper](x: Self) {
     
-    inline def setDocs(value: js.Array[js.Any]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
+    inline def setDocs(value: js.Array[Any]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
-    inline def setDocsVarargs(value: js.Any*): Self = StObject.set(x, "docs", js.Array(value :_*))
+    inline def setDocsVarargs(value: Any*): Self = StObject.set(x, "docs", js.Array(value*))
   }
 }

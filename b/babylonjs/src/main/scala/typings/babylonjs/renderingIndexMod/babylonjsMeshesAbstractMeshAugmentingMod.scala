@@ -22,7 +22,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     /**
       * Gets the edgesRenderer associated with the mesh
       */
-    var edgesRenderer: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer]
+    var edgesRenderer: Nullable[typings.babylonjs.renderingEdgesRendererMod.EdgesRenderer]
     
     /**
       * Gets or sets a boolean indicating if the outline must be rendered as well
@@ -57,7 +57,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     
     extension [Self <: AbstractMesh](x: Self) {
       
-      inline def setEdgesRenderer(value: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer]): Self = StObject.set(x, "edgesRenderer", value.asInstanceOf[js.Any])
+      inline def setEdgesRenderer(value: Nullable[typings.babylonjs.renderingEdgesRendererMod.EdgesRenderer]): Self = StObject.set(x, "edgesRenderer", value.asInstanceOf[js.Any])
       
       inline def setEdgesRendererNull: Self = StObject.set(x, "edgesRenderer", null)
       

@@ -8,14 +8,14 @@ import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.side
 import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
-import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
-import typings.antDesignProLayout.defaultSettingsMod.PureSettings
-import typings.antDesignProLayout.footerToolbarMod.FooterToolbarProps
-import typings.antDesignProLayout.getBreadcrumbPropsMod.BreadcrumbListReturn
-import typings.antDesignProLayout.routeContextMod.RouteContextType
-import typings.antDesignProLayout.typingsMod.MenuDataItem
-import typings.antDesignProLayout.waterMarkMod.WaterMarkProps
-import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.antDesignProLayout.esComponentsFooterToolbarMod.FooterToolbarProps
+import typings.antDesignProLayout.esComponentsWaterMarkMod.WaterMarkProps
+import typings.antDesignProLayout.esContextRouteContextMod.RouteContextType
+import typings.antDesignProLayout.esDefaultSettingsMod.ContentWidth
+import typings.antDesignProLayout.esDefaultSettingsMod.PureSettings
+import typings.antDesignProLayout.esTypingsMod.MenuDataItem
+import typings.antDesignProLayout.esUtilsGetBreadcrumbPropsMod.BreadcrumbListReturn
+import typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Dispatch
 import typings.react.mod.ReactNode
@@ -59,7 +59,7 @@ trait FooterToolbarPropsRouteCo extends StObject {
   
   var hasHeader: js.UndefOr[Boolean] = js.undefined
   
-  var hasPageContainer: js.UndefOr[Boolean] = js.undefined
+  var hasPageContainer: js.UndefOr[Double] = js.undefined
   
   var hasSiderMenu: js.UndefOr[Boolean] = js.undefined
   
@@ -97,7 +97,7 @@ trait FooterToolbarPropsRouteCo extends StObject {
   
   var setHasFooterToolbar: js.UndefOr[Dispatch[SetStateAction[Boolean]]] = js.undefined
   
-  var setHasPageContainer: js.UndefOr[Dispatch[SetStateAction[Boolean]]] = js.undefined
+  var setHasPageContainer: js.UndefOr[Dispatch[SetStateAction[Double]]] = js.undefined
   
   var siderMenuType: js.UndefOr[sub | group] = js.undefined
   
@@ -180,7 +180,7 @@ object FooterToolbarPropsRouteCo {
     
     inline def setHasHeaderUndefined: Self = StObject.set(x, "hasHeader", js.undefined)
     
-    inline def setHasPageContainer(value: Boolean): Self = StObject.set(x, "hasPageContainer", value.asInstanceOf[js.Any])
+    inline def setHasPageContainer(value: Double): Self = StObject.set(x, "hasPageContainer", value.asInstanceOf[js.Any])
     
     inline def setHasPageContainerUndefined: Self = StObject.set(x, "hasPageContainer", js.undefined)
     
@@ -252,7 +252,7 @@ object FooterToolbarPropsRouteCo {
     
     inline def setSetHasFooterToolbarUndefined: Self = StObject.set(x, "setHasFooterToolbar", js.undefined)
     
-    inline def setSetHasPageContainer(value: SetStateAction[Boolean] => Unit): Self = StObject.set(x, "setHasPageContainer", js.Any.fromFunction1(value))
+    inline def setSetHasPageContainer(value: SetStateAction[Double] => Unit): Self = StObject.set(x, "setHasPageContainer", js.Any.fromFunction1(value))
     
     inline def setSetHasPageContainerUndefined: Self = StObject.set(x, "setHasPageContainer", js.undefined)
     

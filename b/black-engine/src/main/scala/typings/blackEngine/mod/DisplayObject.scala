@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "DisplayObject")
 @js.native
 open class DisplayObject ()
-  extends typings.blackEngine.displayObjectMod.DisplayObject
+  extends typings.blackEngine.displayDisplayObjectMod.DisplayObject

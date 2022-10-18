@@ -10,6 +10,7 @@ import typings.materialUiCore.badgeBadgeMod.BadgeClassKey
 import typings.materialUiCore.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionClassKey
 import typings.materialUiCore.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseClassKey
+import typings.materialUiCore.buttonBaseTouchRippleMod.TouchRippleClassKey
 import typings.materialUiCore.buttonButtonMod.ButtonClassKey
 import typings.materialUiCore.buttonGroupButtonGroupMod.ButtonGroupClassKey
 import typings.materialUiCore.cardActionAreaCardActionAreaMod.CardActionAreaClassKey
@@ -20,10 +21,7 @@ import typings.materialUiCore.checkboxCheckboxMod.CheckboxClassKey
 import typings.materialUiCore.chipChipMod.ChipClassKey
 import typings.materialUiCore.circularProgressCircularProgressMod.CircularProgressClassKey
 import typings.materialUiCore.collapseCollapseMod.CollapseClassKey
-import typings.materialUiCore.colorManipulatorMod.ColorFormat
 import typings.materialUiCore.containerContainerMod.ContainerClassKey
-import typings.materialUiCore.createThemeMod.Direction
-import typings.materialUiCore.createTypographyMod.Variant
 import typings.materialUiCore.dialogActionsDialogActionsMod.DialogActionsClassKey
 import typings.materialUiCore.dialogContentDialogContentMod.DialogContentClassKey
 import typings.materialUiCore.dialogDialogMod.DialogClassKey
@@ -36,6 +34,7 @@ import typings.materialUiCore.fabFabMod.FabClassKey
 import typings.materialUiCore.filledInputFilledInputMod.FilledInputClassKey
 import typings.materialUiCore.formControlFormControlMod.FormControlClassKey
 import typings.materialUiCore.formControlLabelFormControlLabelMod.FormControlLabelClassKey
+import typings.materialUiCore.formControlUseFormControlMod.ContextFromPropsKey
 import typings.materialUiCore.formGroupFormGroupMod.FormGroupClassKey
 import typings.materialUiCore.formHelperTextFormHelperTextMod.FormHelperTextClassKey
 import typings.materialUiCore.formLabelFormLabelMod.FormLabelClassKey
@@ -56,6 +55,7 @@ import typings.materialUiCore.inputAdornmentInputAdornmentMod.InputAdornmentClas
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseClassKey
 import typings.materialUiCore.inputInputMod.InputClassKey
 import typings.materialUiCore.inputLabelInputLabelMod.InputLabelClassKey
+import typings.materialUiCore.internalSwitchBaseMod.SwitchBaseClassKey
 import typings.materialUiCore.linearProgressLinearProgressMod.LinearProgressClassKey
 import typings.materialUiCore.linkLinkMod.LinkClassKey
 import typings.materialUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarClassKey
@@ -72,7 +72,7 @@ import typings.materialUiCore.mod.PropTypes.Alignment
 import typings.materialUiCore.mod.PropTypes.Color
 import typings.materialUiCore.mod.PropTypes.Margin
 import typings.materialUiCore.nativeSelectNativeSelectMod.NativeSelectClassKey
-import typings.materialUiCore.notchedOutlineMod.NotchedOutlineClassKey
+import typings.materialUiCore.outlinedInputNotchedOutlineMod.NotchedOutlineClassKey
 import typings.materialUiCore.outlinedInputOutlinedInputMod.OutlinedInputClassKey
 import typings.materialUiCore.paperPaperMod.PaperClassKey
 import typings.materialUiCore.popoverPopoverMod.PopoverClassKey
@@ -92,8 +92,10 @@ import typings.materialUiCore.stepLabelStepLabelMod.StepLabelClasskey
 import typings.materialUiCore.stepStepMod.StepClasskey
 import typings.materialUiCore.stepperStepperMod.Orientation
 import typings.materialUiCore.stepperStepperMod.StepperClasskey
+import typings.materialUiCore.stylesColorManipulatorMod.ColorFormat
+import typings.materialUiCore.stylesCreateThemeMod.Direction
+import typings.materialUiCore.stylesCreateTypographyMod.Variant
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconClassKey
-import typings.materialUiCore.switchBaseMod.SwitchBaseClassKey
 import typings.materialUiCore.switchSwitchMod.SwitchClassKey
 import typings.materialUiCore.tabScrollButtonTabScrollButtonMod.TabScrollButtonClassKey
 import typings.materialUiCore.tabTabMod.TabClassKey
@@ -108,11 +110,9 @@ import typings.materialUiCore.tableTableMod.TableClassKey
 import typings.materialUiCore.tabsTabsMod.TabsClassKey
 import typings.materialUiCore.toolbarToolbarMod.ToolbarClassKey
 import typings.materialUiCore.tooltipTooltipMod.TooltipClassKey
-import typings.materialUiCore.touchRippleMod.TouchRippleClassKey
-import typings.materialUiCore.transitionMod.TransitionHandlerKeys
-import typings.materialUiCore.transitionMod.TransitionKeys
+import typings.materialUiCore.transitionsTransitionMod.TransitionHandlerKeys
+import typings.materialUiCore.transitionsTransitionMod.TransitionKeys
 import typings.materialUiCore.typographyTypographyMod.TypographyClassKey
-import typings.materialUiCore.useFormControlMod.ContextFromPropsKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,10 +130,6 @@ object materialUiCoreStrings {
   @js.native
   sealed trait `@global` extends StObject
   inline def `@global`: `@global` = "@global".asInstanceOf[`@global`]
-  
-  @js.native
-  sealed trait BreakpointValues extends StObject
-  inline def BreakpointValues: BreakpointValues = "BreakpointValues".asInstanceOf[BreakpointValues]
   
   @js.native
   sealed trait Numbersign000 extends StObject
@@ -1170,10 +1166,6 @@ object materialUiCoreStrings {
   @js.native
   sealed trait Numbersignffff8d extends StObject
   inline def Numbersignffff8d: Numbersignffff8d = "#ffff8d".asInstanceOf[Numbersignffff8d]
-  
-  @js.native
-  sealed trait Simplify extends StObject
-  inline def Simplify: Simplify = "Simplify".asInstanceOf[Simplify]
   
   @js.native
   sealed trait a extends StObject
@@ -4886,10 +4878,6 @@ object materialUiCoreStrings {
   @js.native
   sealed trait thead extends StObject
   inline def thead: thead = "thead".asInstanceOf[thead]
-  
-  @js.native
-  sealed trait theme extends StObject
-  inline def theme: theme = "theme".asInstanceOf[theme]
   
   @js.native
   sealed trait thumb

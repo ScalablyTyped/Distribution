@@ -6,9 +6,9 @@ import typings.fundamentalReact.anon.WeakValidationMapSideNavL
 import typings.fundamentalReact.anon.WeakValidationMapSideNavLAbout
 import typings.fundamentalReact.fundamentalReactStrings.SideNavDotList
 import typings.fundamentalReact.fundamentalReactStrings.SideNavDotListItem
-import typings.fundamentalReact.sideNavMod.SideNavListItemProps
-import typings.fundamentalReact.sideNavMod.SideNavListProps
-import typings.fundamentalReact.sideNavMod.default
+import typings.fundamentalReact.libSideNavigationSideNavMod.SideNavListItemProps
+import typings.fundamentalReact.libSideNavigationSideNavMod.SideNavListProps
+import typings.fundamentalReact.libSideNavigationSideNavMod.default
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.react.mod.Context

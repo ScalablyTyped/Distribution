@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.pgMinify.mod.IMinifyOptions
 import typings.pgPromise.anon.Typeoferrors
 import typings.pgPromise.anon.Typeofpg
-import typings.pgPromise.pgSubsetMod.IClient
-import typings.pgPromise.pgSubsetMod.IConnectionParameters
+import typings.pgPromise.typescriptPgSubsetMod.IClient
+import typings.pgPromise.typescriptPgSubsetMod.IConnectionParameters
 import typings.spex.mod.ISpex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

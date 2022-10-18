@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents the value of a cell containing an image downloaded from the internet.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait WebImageCellValue extends StObject {
   
@@ -23,8 +22,7 @@ trait WebImageCellValue extends StObject {
     * This image must be hosted on a server that supports HTTPS.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var address: String
   
@@ -32,8 +30,7 @@ trait WebImageCellValue extends StObject {
     * Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var altText: js.UndefOr[String] = js.undefined
   
@@ -41,8 +38,7 @@ trait WebImageCellValue extends StObject {
     * Represents attribution information to describe the source and license requirements for using this image.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var attribution: js.UndefOr[js.Array[CellValueAttributionAttributes]] = js.undefined
   
@@ -50,8 +46,7 @@ trait WebImageCellValue extends StObject {
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[error | Error] = js.undefined
   
@@ -61,8 +56,7 @@ trait WebImageCellValue extends StObject {
     * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[NumbersignVALUEExclamationmark | String] = js.undefined
   
@@ -71,8 +65,7 @@ trait WebImageCellValue extends StObject {
     * This information can be used for branding in image cards.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var provider: js.UndefOr[CellValueProviderAttributes] = js.undefined
   
@@ -80,8 +73,7 @@ trait WebImageCellValue extends StObject {
     * Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var relatedImagesAddress: js.UndefOr[String] = js.undefined
   
@@ -89,8 +81,7 @@ trait WebImageCellValue extends StObject {
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: webImage | WebImage
 }

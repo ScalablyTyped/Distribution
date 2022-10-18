@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a reference to the value which contains `referencedValues`.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait RootReferenceCellValue
   extends StObject
@@ -26,8 +25,7 @@ trait RootReferenceCellValue
     * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicType: js.UndefOr[RangeValueType | Boolean | Double | Error | Empty | String] = js.undefined
   
@@ -35,8 +33,7 @@ trait RootReferenceCellValue
     * Represents the value that would be returned by `Range.values` for a cell with this value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var basicValue: js.UndefOr[scala.Boolean | scala.Double | java.lang.String] = js.undefined
   
@@ -44,8 +41,7 @@ trait RootReferenceCellValue
     * Represents the type of this cell value.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var `type`: root | Root
 }

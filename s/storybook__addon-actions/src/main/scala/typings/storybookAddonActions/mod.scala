@@ -1,10 +1,10 @@
 package typings.storybookAddonActions
 
-import typings.storybookAddonActions.actionOptionsMod.ActionOptions
-import typings.storybookAddonActions.actionsFunctionMod.ActionsFunction
 import typings.storybookAddonActions.anon.Action
-import typings.storybookAddonActions.decoratorFunctionMod.DecoratorFunction
-import typings.storybookAddonActions.handlerFunctionMod.HandlerFunction
+import typings.storybookAddonActions.distTs3Dot9ModelsActionOptionsMod.ActionOptions
+import typings.storybookAddonActions.distTs3Dot9ModelsActionsFunctionMod.ActionsFunction
+import typings.storybookAddonActions.distTs3Dot9ModelsDecoratorFunctionMod.DecoratorFunction
+import typings.storybookAddonActions.distTs3Dot9ModelsHandlerFunctionMod.HandlerFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

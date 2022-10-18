@@ -1,13 +1,13 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.EventArg
-import typings.reactNavigationCore.typesMod.EventListenerCallback
-import typings.reactNavigationCore.typesMod.Keyof
-import typings.reactNavigationCore.typesMod.NavigationProp
-import typings.reactNavigationRouters.typesMod.NavigationAction
-import typings.reactNavigationRouters.typesMod.NavigationState
-import typings.reactNavigationRouters.typesMod.ParamListBase
-import typings.reactNavigationRouters.typesMod.PartialState
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventArg
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventListenerCallback
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.Keyof
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationProp
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationAction
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialState
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -69,7 +69,9 @@ trait NavigationHelpersParamLis extends StObject {
     * @param [options.target] Key of the target route which should receive the event.
     * If not specified, all routes receive the event.
     */
-  def emit[EventName /* <: Keyof[js.Object] */](options: TypeEventName[EventName] & (js.Object | `3`) & (`11`[EventName] | `10`[EventName])): EventArg[
+  def emit[EventName /* <: Keyof[js.Object] */](
+    options: TargetType[EventName] & (/* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] extends true ? {  canPreventDefault :true} : {} */ js.Any)
+  ): EventArg[
     EventName, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
@@ -136,12 +138,7 @@ trait NavigationHelpersParamLis extends StObject {
   
   var navigate: js.UndefOr[
     js.Function1[
-      /* args */ (js.Tuple2[
-        /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ /* screen */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase] */ /* params */ js.Any
-      ]) | (js.Array[
-        /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ /* screen */ String
-      ]), 
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase extends unknown ? undefined extends @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase] ? [screen: keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase] | [screen: keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase, params: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase]] : [screen: keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase, params: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase]] : never */ /* args */ js.Any, 
       Unit
     ]
   ] = js.native
@@ -151,18 +148,14 @@ trait NavigationHelpersParamLis extends StObject {
     * @param name Name of the route to navigate to.
     * @param [params] Params object for the route.
     */
-  def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RouteName extends unknown ? undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] : never is not an array type */ args: (js.Tuple2[
-      /* screen */ RouteName, 
-      /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ /* params */ js.Any
-    ]) | (js.Array[/* screen */ RouteName])
-  ): Unit = js.native
   /**
     * Navigate to a route in current navigation tree.
     *
     * @param route Object with `key` or `name` for the route to navigate to, and a `params` object.
     */
-  def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](options: KeyString[RouteName] | KeyMergeName[RouteName]): Unit = js.native
+  def navigate[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type RouteName extends unknown ? undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] : never is not an array type */ args: /* import warning: importer.ImportType#apply Failed type conversion: RouteName extends unknown ? undefined extends @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] ? [screen: RouteName] | [screen: RouteName, params: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName]] : [screen: RouteName, params: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName]] : never */ /* import warning: importer.ImportType#apply Failed type conversion: RouteName extends unknown ? {  key :string,   params :@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] | undefined,   merge :boolean | undefined} | {  name :RouteName,   key :string | undefined,   params :@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName],   merge :boolean | undefined} : never */ js.Any
+  ): Unit = js.native
   
   var removeListener: js.UndefOr[
     js.Function2[
@@ -185,11 +178,7 @@ trait NavigationHelpersParamLis extends StObject {
   
   var setParams: js.UndefOr[
     js.Function1[
-      /* params */ js.UndefOr[
-        Partial[
-          /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[string] */ js.Any
-        ]
-      ], 
+      /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[string] extends undefined ? undefined : std.Partial<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[string]> */ /* params */ js.Any, 
       Unit
     ]
   ] = js.native

@@ -1,9 +1,9 @@
 package typings.chartjsPluginTrendline
 
 import org.scalablytyped.runtime.Shortcut
-import typings.chartJs.basicMod.AnyObject
 import typings.chartJs.mod.ChartType
 import typings.chartJs.mod.Plugin
+import typings.chartJs.typesBasicMod.AnyObject
 import typings.chartjsPluginTrendline.chartjsPluginTrendlineStrings.dotted
 import typings.chartjsPluginTrendline.chartjsPluginTrendlineStrings.solid
 import org.scalablytyped.runtime.StObject

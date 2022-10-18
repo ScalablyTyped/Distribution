@@ -1,6 +1,6 @@
 package typings.expressValidator.anon
 
-import typings.expressValidator.baseMod.ValidationError
+import typings.expressValidator.srcBaseMod.ValidationError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait Msg
   extends StObject
      with ValidationError {
   
-  var location: typings.expressValidator.baseMod.Location
+  var location: typings.expressValidator.srcBaseMod.Location
   
   var msg: Any
   
@@ -21,14 +21,14 @@ trait Msg
 }
 object Msg {
   
-  inline def apply(location: typings.expressValidator.baseMod.Location, msg: Any, param: String, value: Any): Msg = {
+  inline def apply(location: typings.expressValidator.srcBaseMod.Location, msg: Any, param: String, value: Any): Msg = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Msg]
   }
   
   extension [Self <: Msg](x: Self) {
     
-    inline def setLocation(value: typings.expressValidator.baseMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: typings.expressValidator.srcBaseMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setMsg(value: Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     

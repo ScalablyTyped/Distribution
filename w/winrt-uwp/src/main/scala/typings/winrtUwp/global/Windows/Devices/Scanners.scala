@@ -23,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Scanners {
   
   /** Represents the properties of images to scan. */
-  @JSGlobal("Windows.Devices.Scanners.ImageScanner")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Scanners.ImageScanner")
   @js.native
-  abstract class ImageScanner ()
+  open class ImageScanner ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Scanners.ImageScanner {
     
@@ -106,9 +106,9 @@ object Scanners {
   }
   
   /** Represents the auto-configured scan source of the scanner. */
-  @JSGlobal("Windows.Devices.Scanners.ImageScannerAutoConfiguration")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Scanners.ImageScannerAutoConfiguration")
   @js.native
-  abstract class ImageScannerAutoConfiguration ()
+  open class ImageScannerAutoConfiguration ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Scanners.ImageScannerAutoConfiguration {
     
@@ -162,9 +162,9 @@ object Scanners {
   }
   
   /** Represents the Feeder scan source of the scanner. */
-  @JSGlobal("Windows.Devices.Scanners.ImageScannerFeederConfiguration")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Scanners.ImageScannerFeederConfiguration")
   @js.native
-  abstract class ImageScannerFeederConfiguration ()
+  open class ImageScannerFeederConfiguration ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Scanners.ImageScannerFeederConfiguration {
     
@@ -335,9 +335,9 @@ object Scanners {
   }
   
   /** Represents the Flatbed scan source of the scanner. */
-  @JSGlobal("Windows.Devices.Scanners.ImageScannerFlatbedConfiguration")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Scanners.ImageScannerFlatbedConfiguration")
   @js.native
-  abstract class ImageScannerFlatbedConfiguration ()
+  open class ImageScannerFlatbedConfiguration ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Scanners.ImageScannerFlatbedConfiguration {
     
@@ -482,9 +482,9 @@ object Scanners {
   }
   
   /** Represents the result of a preview scan job. */
-  @JSGlobal("Windows.Devices.Scanners.ImageScannerPreviewResult")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Scanners.ImageScannerPreviewResult")
   @js.native
-  abstract class ImageScannerPreviewResult ()
+  open class ImageScannerPreviewResult ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Scanners.ImageScannerPreviewResult {
     
@@ -498,9 +498,9 @@ object Scanners {
   }
   
   /** Represents the result of a scan job. */
-  @JSGlobal("Windows.Devices.Scanners.ImageScannerScanResult")
+  /* note: abstract class */ @JSGlobal("Windows.Devices.Scanners.ImageScannerScanResult")
   @js.native
-  abstract class ImageScannerScanResult ()
+  open class ImageScannerScanResult ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Scanners.ImageScannerScanResult {
     

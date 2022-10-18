@@ -26,7 +26,8 @@ import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextLayoutEventData
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.iconMod.IconType
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
+import typings.reactNativeElements.distIconsIconMod.IconType
 import typings.reactNativeElements.reactNativeElementsStrings.Component
 import typings.reactNativeElements.reactNativeElementsStrings.`no-hide-descendants`
 import typings.reactNativeElements.reactNativeElementsStrings.all
@@ -50,7 +51,6 @@ import typings.reactNativeElements.reactNativeElementsStrings.scale
 import typings.reactNativeElements.reactNativeElementsStrings.simple
 import typings.reactNativeElements.reactNativeElementsStrings.tail
 import typings.reactNativeElements.reactNativeElementsStrings.yes
-import typings.reactNativeElements.themeMod.RecursivePartial
 import typings.reactNativeVectorIcons.iconMod.IconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.maplibreGl.anon
 
+import typings.maplibreGl.distStyleSpecMod.PropertyValueSpecification
 import typings.maplibreGl.maplibreGlStrings.linear
 import typings.maplibreGl.maplibreGlStrings.nearest
-import typings.maplibreGl.styleSpecMod.PropertyValueSpecification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

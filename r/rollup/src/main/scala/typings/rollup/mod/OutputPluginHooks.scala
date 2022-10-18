@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rollup.rollupStrings.renderDynamicImport
   - typings.rollup.rollupStrings.renderError
   - typings.rollup.rollupStrings.renderStart
-  - typings.rollup.rollupStrings.resolveAssetUrl
   - typings.rollup.rollupStrings.resolveFileUrl
   - typings.rollup.rollupStrings.resolveImportMeta
   - typings.rollup.rollupStrings.writeBundle
@@ -33,8 +32,6 @@ object OutputPluginHooks {
   inline def renderError: typings.rollup.rollupStrings.renderError = "renderError".asInstanceOf[typings.rollup.rollupStrings.renderError]
   
   inline def renderStart: typings.rollup.rollupStrings.renderStart = "renderStart".asInstanceOf[typings.rollup.rollupStrings.renderStart]
-  
-  inline def resolveAssetUrl: typings.rollup.rollupStrings.resolveAssetUrl = "resolveAssetUrl".asInstanceOf[typings.rollup.rollupStrings.resolveAssetUrl]
   
   inline def resolveFileUrl: typings.rollup.rollupStrings.resolveFileUrl = "resolveFileUrl".asInstanceOf[typings.rollup.rollupStrings.resolveFileUrl]
   

@@ -1,7 +1,7 @@
 package typings.steamUser.anon
 
-import typings.steamUser.chatroomMod.ChatRoomGroupState
-import typings.steamUser.chatroomMod.UserChatRoomGroupState
+import typings.steamUser.componentsChatroomMod.ChatRoomGroupState
+import typings.steamUser.componentsChatroomMod.UserChatRoomGroupState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

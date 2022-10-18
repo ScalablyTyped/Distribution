@@ -1,5 +1,6 @@
 package typings.gamedig
 
+import typings.gamedig.anon.ListenUdpPort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,29 @@ object mod {
   
   @JSImport("gamedig", JSImport.Namespace)
   @js.native
+  open class ^ ()
+    extends StObject
+       with Gamedig {
+    def this(runnerOpts: ListenUdpPort) = this()
+  }
+  @JSImport("gamedig", JSImport.Namespace)
+  @js.native
   val ^ : js.Any = js.native
   
+  /* static member */
+  inline def getInstance(): Gamedig = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Gamedig]
+  
+  /* static member */
   inline def query(options: QueryOptions): js.Promise[QueryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[QueryResult]]
-  inline def query(options: QueryOptions, callback: js.Function2[/* error */ Any, /* state */ QueryResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /* static member */
+  inline def query(options: QueryOptions, callback: js.Function2[/* error */ js.Error, /* state */ QueryResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @js.native
+  trait Gamedig extends StObject {
+    
+    def query(options: QueryOptions): js.Promise[QueryResult] = js.native
+    def query(options: QueryOptions, callback: js.Function2[/* error */ js.Error, /* state */ QueryResult, Unit]): Unit = js.native
+  }
   
   trait Player extends StObject {
     
@@ -214,6 +234,7 @@ object mod {
     - typings.gamedig.gamedigStrings.arma3
     - typings.gamedig.gamedigStrings.armagetron
     - typings.gamedig.gamedigStrings.baldursgate
+    - typings.gamedig.gamedigStrings.barotrauma
     - typings.gamedig.gamedigStrings.bat1944
     - typings.gamedig.gamedigStrings.bf1942
     - typings.gamedig.gamedigStrings.bfv
@@ -267,6 +288,7 @@ object mod {
     - typings.gamedig.gamedigStrings.devastation
     - typings.gamedig.gamedigStrings.dinodday
     - typings.gamedig.gamedigStrings.dirttrackracing2
+    - typings.gamedig.gamedigStrings.discord
     - typings.gamedig.gamedigStrings.dnl
     - typings.gamedig.gamedigStrings.dod
     - typings.gamedig.gamedigStrings.dods
@@ -297,6 +319,7 @@ object mod {
     - typings.gamedig.gamedigStrings.mutantfactions
     - typings.gamedig.gamedigStrings.ges
     - typings.gamedig.gamedigStrings.gore
+    - typings.gamedig.gamedigStrings.groundbreach
     - typings.gamedig.gamedigStrings.gunmanchronicles
     - typings.gamedig.gamedigStrings.hldm
     - typings.gamedig.gamedigStrings.hldms
@@ -365,10 +388,12 @@ object mod {
     - typings.gamedig.gamedigStrings.openttd
     - typings.gamedig.gamedigStrings.painkiller
     - typings.gamedig.gamedigStrings.pixark
+    - typings.gamedig.gamedigStrings.ps
     - typings.gamedig.gamedigStrings.postal2
     - typings.gamedig.gamedigStrings.prey
     - typings.gamedig.gamedigStrings.primalcarnage
     - typings.gamedig.gamedigStrings.prbf2
+    - typings.gamedig.gamedigStrings.przomboid
     - typings.gamedig.gamedigStrings.quake1
     - typings.gamedig.gamedigStrings.quake2
     - typings.gamedig.gamedigStrings.quake3
@@ -392,6 +417,7 @@ object mod {
     - typings.gamedig.gamedigStrings.rune
     - typings.gamedig.gamedigStrings.rust
     - typings.gamedig.gamedigStrings.samp
+    - typings.gamedig.gamedigStrings.savage2
     - typings.gamedig.gamedigStrings.spaceengineers
     - typings.gamedig.gamedigStrings.ss
     - typings.gamedig.gamedigStrings.ss2
@@ -451,6 +477,7 @@ object mod {
     - typings.gamedig.gamedigStrings.ut3
     - typings.gamedig.gamedigStrings.urbanterror
     - typings.gamedig.gamedigStrings.v8supercar
+    - typings.gamedig.gamedigStrings.valheim
     - typings.gamedig.gamedigStrings.vcmp
     - typings.gamedig.gamedigStrings.ventrilo
     - typings.gamedig.gamedigStrings.vietcong
@@ -511,6 +538,8 @@ object mod {
     inline def avp2010: typings.gamedig.gamedigStrings.avp2010 = "avp2010".asInstanceOf[typings.gamedig.gamedigStrings.avp2010]
     
     inline def baldursgate: typings.gamedig.gamedigStrings.baldursgate = "baldursgate".asInstanceOf[typings.gamedig.gamedigStrings.baldursgate]
+    
+    inline def barotrauma: typings.gamedig.gamedigStrings.barotrauma = "barotrauma".asInstanceOf[typings.gamedig.gamedigStrings.barotrauma]
     
     inline def bat1944: typings.gamedig.gamedigStrings.bat1944 = "bat1944".asInstanceOf[typings.gamedig.gamedigStrings.bat1944]
     
@@ -616,6 +645,8 @@ object mod {
     
     inline def dirttrackracing2: typings.gamedig.gamedigStrings.dirttrackracing2 = "dirttrackracing2".asInstanceOf[typings.gamedig.gamedigStrings.dirttrackracing2]
     
+    inline def discord: typings.gamedig.gamedigStrings.discord = "discord".asInstanceOf[typings.gamedig.gamedigStrings.discord]
+    
     inline def dmomam: typings.gamedig.gamedigStrings.dmomam = "dmomam".asInstanceOf[typings.gamedig.gamedigStrings.dmomam]
     
     inline def dnl: typings.gamedig.gamedigStrings.dnl = "dnl".asInstanceOf[typings.gamedig.gamedigStrings.dnl]
@@ -673,6 +704,8 @@ object mod {
     inline def graw: typings.gamedig.gamedigStrings.graw = "graw".asInstanceOf[typings.gamedig.gamedigStrings.graw]
     
     inline def graw2: typings.gamedig.gamedigStrings.graw2 = "graw2".asInstanceOf[typings.gamedig.gamedigStrings.graw2]
+    
+    inline def groundbreach: typings.gamedig.gamedigStrings.groundbreach = "groundbreach".asInstanceOf[typings.gamedig.gamedigStrings.groundbreach]
     
     inline def gunmanchronicles: typings.gamedig.gamedigStrings.gunmanchronicles = "gunmanchronicles".asInstanceOf[typings.gamedig.gamedigStrings.gunmanchronicles]
     
@@ -822,6 +855,10 @@ object mod {
     
     inline def primalcarnage: typings.gamedig.gamedigStrings.primalcarnage = "primalcarnage".asInstanceOf[typings.gamedig.gamedigStrings.primalcarnage]
     
+    inline def przomboid: typings.gamedig.gamedigStrings.przomboid = "przomboid".asInstanceOf[typings.gamedig.gamedigStrings.przomboid]
+    
+    inline def ps: typings.gamedig.gamedigStrings.ps = "ps".asInstanceOf[typings.gamedig.gamedigStrings.ps]
+    
     inline def quake1: typings.gamedig.gamedigStrings.quake1 = "quake1".asInstanceOf[typings.gamedig.gamedigStrings.quake1]
     
     inline def quake2: typings.gamedig.gamedigStrings.quake2 = "quake2".asInstanceOf[typings.gamedig.gamedigStrings.quake2]
@@ -867,6 +904,8 @@ object mod {
     inline def rust: typings.gamedig.gamedigStrings.rust = "rust".asInstanceOf[typings.gamedig.gamedigStrings.rust]
     
     inline def samp: typings.gamedig.gamedigStrings.samp = "samp".asInstanceOf[typings.gamedig.gamedigStrings.samp]
+    
+    inline def savage2: typings.gamedig.gamedigStrings.savage2 = "savage2".asInstanceOf[typings.gamedig.gamedigStrings.savage2]
     
     inline def shatteredhorizon: typings.gamedig.gamedigStrings.shatteredhorizon = "shatteredhorizon".asInstanceOf[typings.gamedig.gamedigStrings.shatteredhorizon]
     
@@ -985,6 +1024,8 @@ object mod {
     inline def ut3: typings.gamedig.gamedigStrings.ut3 = "ut3".asInstanceOf[typings.gamedig.gamedigStrings.ut3]
     
     inline def v8supercar: typings.gamedig.gamedigStrings.v8supercar = "v8supercar".asInstanceOf[typings.gamedig.gamedigStrings.v8supercar]
+    
+    inline def valheim: typings.gamedig.gamedigStrings.valheim = "valheim".asInstanceOf[typings.gamedig.gamedigStrings.valheim]
     
     inline def vcmp: typings.gamedig.gamedigStrings.vcmp = "vcmp".asInstanceOf[typings.gamedig.gamedigStrings.vcmp]
     

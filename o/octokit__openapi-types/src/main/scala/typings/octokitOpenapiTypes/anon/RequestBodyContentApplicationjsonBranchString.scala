@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonBranchString extends StObject {
   
-  var parameters: `144`
+  var parameters: `76`
   
   var requestBody: ContentApplicationjsonBranchString
   
@@ -14,14 +14,14 @@ trait RequestBodyContentApplicationjsonBranchString extends StObject {
 }
 object RequestBodyContentApplicationjsonBranchString {
   
-  inline def apply(parameters: `144`, requestBody: ContentApplicationjsonBranchString, responses: `200409422`): RequestBodyContentApplicationjsonBranchString = {
+  inline def apply(parameters: `76`, requestBody: ContentApplicationjsonBranchString, responses: `200409422`): RequestBodyContentApplicationjsonBranchString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonBranchString]
   }
   
   extension [Self <: RequestBodyContentApplicationjsonBranchString](x: Self) {
     
-    inline def setParameters(value: `144`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `76`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonBranchString): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

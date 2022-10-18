@@ -1,7 +1,7 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.gridMod.GridProps
-import typings.antDesignReactNative.gridMod.default
+import typings.antDesignReactNative.libGridMod.GridProps
+import typings.antDesignReactNative.libGridMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.reactResolver
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.react.mod.Factory
 import typings.react.mod.FunctionComponent
@@ -34,25 +33,27 @@ object mod {
   inline def context[K /* <: String */](prop: K): js.Function1[/* component */ ComponentType[Any], FunctionComponent[Any & (Record[K, Any])]] = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], FunctionComponent[Any & (Record[K, Any])]]]
   
   inline def resolve[OwnProps, ResolvableProps, MoreProps](
-    resolversMap: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>}
-    */ typings.reactResolver.reactResolverStrings.resolve & TopLevel[ResolvableProps]
+    resolversMap: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>} */ js.Any
   ): js.Function1[
     /* component */ ComponentType[
-      OwnProps & typings.reactResolver.reactResolverStrings.resolve & TopLevel[ResolvableProps]
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ResolvableProps ]:? ResolvableProps[K]} */ js.Any)
     ], 
     FunctionComponent[OwnProps & MoreProps]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(resolversMap.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* component */ ComponentType[
-      OwnProps & typings.reactResolver.reactResolverStrings.resolve & TopLevel[ResolvableProps]
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof ResolvableProps ]:? ResolvableProps[K]} */ js.Any)
     ], 
     FunctionComponent[OwnProps & MoreProps]
   ]]
   inline def resolve[OwnProps, K /* <: String */, V, MoreProps](prop: K, resolveFn: ResolveFn[OwnProps & MoreProps, V]): js.Function1[
-    /* component */ ComponentType[OwnProps & typings.reactResolver.reactResolverStrings.resolve & TopLevel[Any]], 
+    /* component */ ComponentType[
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ C in K ]: V} */ js.Any)
+    ], 
     FunctionComponent[OwnProps & MoreProps]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(prop.asInstanceOf[js.Any], resolveFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[OwnProps & typings.reactResolver.reactResolverStrings.resolve & TopLevel[Any]], 
+    /* component */ ComponentType[
+      OwnProps & (/* import warning: importer.ImportType#apply Failed type conversion: {[ C in K ]: V} */ js.Any)
+    ], 
     FunctionComponent[OwnProps & MoreProps]
   ]]
   

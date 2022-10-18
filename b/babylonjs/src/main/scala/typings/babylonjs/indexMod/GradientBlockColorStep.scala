@@ -13,5 +13,5 @@ open class GradientBlockColorStep protected ()
     * @param step defines a value indicating which step this color is associated with (between 0 and 1)
     * @param color defines the color associated with this step
     */
-  def this(step: Double, color: typings.babylonjs.mathColorMod.Color3) = this()
+  def this(step: Double, color: typings.babylonjs.mathsMathDotcolorMod.Color3) = this()
 }

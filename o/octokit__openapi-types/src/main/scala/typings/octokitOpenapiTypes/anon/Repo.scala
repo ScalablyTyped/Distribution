@@ -6,48 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Repo extends StObject {
   
-  /** The organization name. The name is not case sensitive. */
-  @JSName("org")
-  var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
+  var label: String
   
-  /** The account owner of the repository. The name is not case sensitive. */
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+  var ref: String
   
-  /** The name of the repository. The name is not case sensitive. */
-  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  var repo: Branchesurl | Null
   
-  /** The slug of the team name. */
-  var team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
+  var sha: String
+  
+  var user: Gistsurl
 }
 object Repo {
   
-  inline def apply(
-    org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any,
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
-    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any,
-    team_slug: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
-  ): Repo = {
-    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
-    __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
+  inline def apply(label: String, ref: String, sha: String, user: Gistsurl): Repo = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], repo = null)
     __obj.asInstanceOf[Repo]
   }
   
   extension [Self <: Repo](x: Self) {
     
-    inline def setOrg_(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
-    ): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRepo(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: Branchesurl): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    inline def setTeam_slug(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['team-slug'] */ js.Any
-    ): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setRepoNull: Self = StObject.set(x, "repo", null)
+    
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    
+    inline def setUser(value: Gistsurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@cucumber/messages", "Group")
 @js.native
 open class Group ()
-  extends typings.cucumberMessages.messagesMod.Group
+  extends typings.cucumberMessages.distCjsSrcMessagesMod.Group

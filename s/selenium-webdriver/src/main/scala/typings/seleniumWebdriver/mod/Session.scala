@@ -15,12 +15,12 @@ open class Session protected () extends StObject {
     *     capabilities.
     * @constructor
     */
-  def this(id: String, capabilities: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+  def this(id: String, capabilities: typings.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
   
   /**
     * @return {!Capabilities} This session's capabilities.
     */
-  def getCapabilities(): typings.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def getCapabilities(): typings.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
   
   /**
     * Retrieves the value of a specific capability.

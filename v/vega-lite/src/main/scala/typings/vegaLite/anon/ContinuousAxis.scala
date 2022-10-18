@@ -1,7 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.channeldefMod.PositionFieldDef
-import typings.vegaLite.channeldefMod.SecondaryFieldDef
+import typings.vegaLite.buildSrcChanneldefMod.PositionFieldDef
+import typings.vegaLite.buildSrcChanneldefMod.SecondaryFieldDef
 import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
 import org.scalablytyped.runtime.StObject

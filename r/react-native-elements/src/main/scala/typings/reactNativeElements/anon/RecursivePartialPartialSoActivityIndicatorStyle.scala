@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import typings.reactNativeElements.distConfigThemeMod.RecursivePartial
+import typings.reactNativeElements.distSocialSocialIconMod.SocialMediaType
 import typings.reactNativeElements.reactNativeElementsStrings.Component
-import typings.reactNativeElements.socialIconMod.SocialMediaType
-import typings.reactNativeElements.themeMod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

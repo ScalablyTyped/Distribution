@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.blockchainMod.BlockchainError
-import typings.trezorConnect.blockchainMod.BlockchainEvent
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainError
+import typings.trezorConnect.libTypescriptBackendBlockchainMod.BlockchainEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

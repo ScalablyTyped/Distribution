@@ -2,22 +2,56 @@ package typings.reactFoundation
 
 import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
-import typings.reactFoundation.accordionMod.AccordianContentProps
-import typings.reactFoundation.accordionMod.AccordianItemProps
-import typings.reactFoundation.accordionMod.AccordianProps
-import typings.reactFoundation.accordionMod.AccordionTitleProps
 import typings.reactFoundation.anon.AlignX
 import typings.reactFoundation.anon.Breakpoint
-import typings.reactFoundation.badgeMod.BadgeProps
-import typings.reactFoundation.breadcrumbsMod.BreadcrumbItemProps
-import typings.reactFoundation.breadcrumbsMod.BreadcrumbsProps
-import typings.reactFoundation.buttonGroupMod.ButtonGroupProps
-import typings.reactFoundation.buttonMod.ButtonProps
-import typings.reactFoundation.buttonMod.LinkProps
-import typings.reactFoundation.calloutMod.CalloutProps
-import typings.reactFoundation.closeButtonMod.CloseButtonProps
-import typings.reactFoundation.elementMod.BlockProps
-import typings.reactFoundation.elementMod.InlineProps
+import typings.reactFoundation.componentsAccordionMod.AccordianContentProps
+import typings.reactFoundation.componentsAccordionMod.AccordianItemProps
+import typings.reactFoundation.componentsAccordionMod.AccordianProps
+import typings.reactFoundation.componentsAccordionMod.AccordionTitleProps
+import typings.reactFoundation.componentsBadgeMod.BadgeProps
+import typings.reactFoundation.componentsBreadcrumbsMod.BreadcrumbItemProps
+import typings.reactFoundation.componentsBreadcrumbsMod.BreadcrumbsProps
+import typings.reactFoundation.componentsButtonGroupMod.ButtonGroupProps
+import typings.reactFoundation.componentsButtonMod.ButtonProps
+import typings.reactFoundation.componentsButtonMod.LinkProps
+import typings.reactFoundation.componentsCalloutMod.CalloutProps
+import typings.reactFoundation.componentsCloseButtonMod.CloseButtonProps
+import typings.reactFoundation.componentsElementMod.BlockProps
+import typings.reactFoundation.componentsElementMod.InlineProps
+import typings.reactFoundation.componentsFlexVideoMod.FlexVideoProps
+import typings.reactFoundation.componentsGridMod.ColumnProps
+import typings.reactFoundation.componentsGridMod.RowProps
+import typings.reactFoundation.componentsIconMod.IconProps
+import typings.reactFoundation.componentsLabelMod.LabelProps
+import typings.reactFoundation.componentsMediaObjectMod.MediaObjectProps
+import typings.reactFoundation.componentsMediaObjectMod.MediaObjectSectionProps
+import typings.reactFoundation.componentsMenuMod.MenuItemProps
+import typings.reactFoundation.componentsMenuMod.MenuProps
+import typings.reactFoundation.componentsPaginationMod.PaginationItemProps
+import typings.reactFoundation.componentsPaginationMod.PaginationProps
+import typings.reactFoundation.componentsProgressBarMod.NativeProgressProps
+import typings.reactFoundation.componentsProgressBarMod.ProgressMeterProps
+import typings.reactFoundation.componentsProgressBarMod.ProgressMeterTextProps
+import typings.reactFoundation.componentsProgressBarMod.ProgressMeterWithTextProps
+import typings.reactFoundation.componentsResponsiveMod.MenuIconProps
+import typings.reactFoundation.componentsResponsiveMod.TitleBarProps
+import typings.reactFoundation.componentsResponsiveMod.TitleBarTitleProps
+import typings.reactFoundation.componentsSliderMod.SliderFillProps
+import typings.reactFoundation.componentsSliderMod.SliderHandleProps
+import typings.reactFoundation.componentsSwitchMod.SwitchActiveProps
+import typings.reactFoundation.componentsSwitchMod.SwitchInactiveProps
+import typings.reactFoundation.componentsSwitchMod.SwitchInputProps
+import typings.reactFoundation.componentsSwitchMod.SwitchPaddleProps
+import typings.reactFoundation.componentsSwitchMod.SwitchProps
+import typings.reactFoundation.componentsTabsMod.TabItemProps
+import typings.reactFoundation.componentsTabsMod.TabPanelProps
+import typings.reactFoundation.componentsTabsMod.TabsContentProps
+import typings.reactFoundation.componentsTabsMod.TabsProps
+import typings.reactFoundation.componentsThumbnailMod.ThumbnailProps
+import typings.reactFoundation.componentsTopBarMod.TopBarProps
+import typings.reactFoundation.componentsXyGridMod.CellProps
+import typings.reactFoundation.componentsXyGridMod.GridContainerProps
+import typings.reactFoundation.componentsXyGridMod.GridProps
 import typings.reactFoundation.enumsMod.BadgeColors
 import typings.reactFoundation.enumsMod.ButtonColors
 import typings.reactFoundation.enumsMod.ButtonSizes
@@ -26,40 +60,6 @@ import typings.reactFoundation.enumsMod.MenuAlignments
 import typings.reactFoundation.enumsMod.ProgressColors
 import typings.reactFoundation.enumsMod.SwitchInputTypes
 import typings.reactFoundation.enumsMod.VerticalAlignments
-import typings.reactFoundation.flexVideoMod.FlexVideoProps
-import typings.reactFoundation.gridMod.ColumnProps
-import typings.reactFoundation.gridMod.RowProps
-import typings.reactFoundation.iconMod.IconProps
-import typings.reactFoundation.labelMod.LabelProps
-import typings.reactFoundation.mediaObjectMod.MediaObjectProps
-import typings.reactFoundation.mediaObjectMod.MediaObjectSectionProps
-import typings.reactFoundation.menuMod.MenuItemProps
-import typings.reactFoundation.menuMod.MenuProps
-import typings.reactFoundation.paginationMod.PaginationItemProps
-import typings.reactFoundation.paginationMod.PaginationProps
-import typings.reactFoundation.progressBarMod.NativeProgressProps
-import typings.reactFoundation.progressBarMod.ProgressMeterProps
-import typings.reactFoundation.progressBarMod.ProgressMeterTextProps
-import typings.reactFoundation.progressBarMod.ProgressMeterWithTextProps
-import typings.reactFoundation.responsiveMod.MenuIconProps
-import typings.reactFoundation.responsiveMod.TitleBarProps
-import typings.reactFoundation.responsiveMod.TitleBarTitleProps
-import typings.reactFoundation.sliderMod.SliderFillProps
-import typings.reactFoundation.sliderMod.SliderHandleProps
-import typings.reactFoundation.switchMod.SwitchActiveProps
-import typings.reactFoundation.switchMod.SwitchInactiveProps
-import typings.reactFoundation.switchMod.SwitchInputProps
-import typings.reactFoundation.switchMod.SwitchPaddleProps
-import typings.reactFoundation.switchMod.SwitchProps
-import typings.reactFoundation.tabsMod.TabItemProps
-import typings.reactFoundation.tabsMod.TabPanelProps
-import typings.reactFoundation.tabsMod.TabsContentProps
-import typings.reactFoundation.tabsMod.TabsProps
-import typings.reactFoundation.thumbnailMod.ThumbnailProps
-import typings.reactFoundation.topBarMod.TopBarProps
-import typings.reactFoundation.xyGridMod.CellProps
-import typings.reactFoundation.xyGridMod.GridContainerProps
-import typings.reactFoundation.xyGridMod.GridProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -411,7 +411,7 @@ object mod {
   
   @JSImport("react-foundation", "Progress")
   @js.native
-  val Progress: FunctionComponent[typings.reactFoundation.progressBarMod.PaginationProps] = js.native
+  val Progress: FunctionComponent[typings.reactFoundation.componentsProgressBarMod.PaginationProps] = js.native
   
   @JSImport("react-foundation", "ProgressMeter")
   @js.native
@@ -428,7 +428,7 @@ object mod {
   @JSImport("react-foundation", "ResponsiveNavigation")
   @js.native
   open class ResponsiveNavigation ()
-    extends typings.reactFoundation.responsiveMod.ResponsiveNavigation
+    extends typings.reactFoundation.componentsResponsiveMod.ResponsiveNavigation
   /* static members */
   object ResponsiveNavigation {
     
@@ -449,7 +449,7 @@ object mod {
   
   @JSImport("react-foundation", "Reveal")
   @js.native
-  val Reveal: FunctionComponent[typings.reactFoundation.revealMod.PaginationProps] = js.native
+  val Reveal: FunctionComponent[typings.reactFoundation.componentsRevealMod.PaginationProps] = js.native
   
   @JSImport("react-foundation", "Row")
   @js.native
@@ -480,7 +480,7 @@ object mod {
   @JSImport("react-foundation", "Slider")
   @js.native
   open class Slider ()
-    extends typings.reactFoundation.sliderMod.Slider
+    extends typings.reactFoundation.componentsSliderMod.Slider
   
   @JSImport("react-foundation", "SliderFill")
   @js.native
@@ -583,5 +583,5 @@ object mod {
   @JSImport("react-foundation", "TwoHandleSlider")
   @js.native
   open class TwoHandleSlider ()
-    extends typings.reactFoundation.sliderMod.TwoHandleSlider
+    extends typings.reactFoundation.componentsSliderMod.TwoHandleSlider
 }

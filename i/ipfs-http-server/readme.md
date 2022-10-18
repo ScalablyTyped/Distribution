@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-http-server
 
-Typings are for version 0.1.2
+Typings are for version 0.13.2
 
 ## Library description:
 JavaScript implementation of the IPFS specification
@@ -10,10 +10,10 @@ JavaScript implementation of the IPFS specification
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-server |
 | Keywords           | IPFS |
-| # releases         | 59 |
-| # dependents       | 2 |
-| # downloads        | 23276 |
-| # stars            | 0 |
+| # releases         | 256 |
+| # dependents       | 0.0 |
+| # downloads        | 21384.666666666668 |
+| # stars            | 7055.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-server#readme)

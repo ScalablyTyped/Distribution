@@ -62,12 +62,14 @@ object anon {
     
     var columnIndex: Double
     
-    var property: String
+    var rowData: Any
+    
+    var rowIndex: Double
   }
   object Column {
     
-    inline def apply(column: typings.reactabularTable.mod.Column, columnIndex: Double, property: String): Column = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    inline def apply(column: typings.reactabularTable.mod.Column, columnIndex: Double, rowData: Any, rowIndex: Double): Column = {
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
@@ -77,7 +79,9 @@ object anon {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      
+      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2994,6 +2998,31 @@ object anon {
     }
   }
   
+  trait Property extends StObject {
+    
+    var column: typings.reactabularTable.mod.Column
+    
+    var columnIndex: Double
+    
+    var property: String
+  }
+  object Property {
+    
+    inline def apply(column: typings.reactabularTable.mod.Column, columnIndex: Double, property: String): Property = {
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Property]
+    }
+    
+    extension [Self <: Property](x: Self) {
+      
+      inline def setColumn(value: typings.reactabularTable.mod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Row extends StObject {
     
     var cell: js.UndefOr[String | (js.Function1[/* props */ Any, Element | ReactInstance])] = js.undefined
@@ -3064,45 +3093,16 @@ object anon {
   
   trait RowIndex extends StObject {
     
-    var column: typings.reactabularTable.mod.Column
-    
-    var columnIndex: Double
-    
-    var rowData: Any
-    
     var rowIndex: Double
   }
   object RowIndex {
     
-    inline def apply(column: typings.reactabularTable.mod.Column, columnIndex: Double, rowData: Any, rowIndex: Double): RowIndex = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
+    inline def apply(rowIndex: Double): RowIndex = {
+      val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowIndex]
     }
     
     extension [Self <: RowIndex](x: Self) {
-      
-      inline def setColumn(value: typings.reactabularTable.mod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-      
-      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
-      
-      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
-      
-      inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait RowIndexNumber extends StObject {
-    
-    var rowIndex: Double
-  }
-  object RowIndexNumber {
-    
-    inline def apply(rowIndex: Double): RowIndexNumber = {
-      val __obj = js.Dynamic.literal(rowIndex = rowIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowIndexNumber]
-    }
-    
-    extension [Self <: RowIndexNumber](x: Self) {
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,7 @@ trait DataLabelsOptions extends StObject {
     * - `defer`: The animation delay time in milliseconds.
     */
   var animation: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with scala.Boolean, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesArearangeDataDataLabelsAnimationOptions */ Any
   ] = js.undefined
   
   /**
@@ -299,7 +299,9 @@ object DataLabelsOptions {
     
     inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
     
-    inline def setAnimation(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with scala.Boolean, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesArearangeDataDataLabelsAnimationOptions */ Any
+    ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     

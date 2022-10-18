@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.panelMod.PanelProps
+import typings.primereact.panelPanelMod.PanelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Panel")
 @js.native
 open class Panel protected ()
-  extends typings.primereact.panelMod.Panel {
+  extends typings.primereact.panelPanelMod.Panel {
   def this(props: PanelProps) = this()
   /**
     * @deprecated

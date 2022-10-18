@@ -1,7 +1,7 @@
 package typings.materialDrawer
 
 import typings.materialDrawer.anon.PartialMDCDrawerAdapter
-import typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation
+import typings.materialDrawer.dismissibleFoundationMod.MDCDismissibleDrawerFoundation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

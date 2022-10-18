@@ -1,13 +1,13 @@
 package typings.fpTs.mod
 
-import typings.fpTs.comonadMod.Comonad2
-import typings.fpTs.endomorphismMod.Endomorphism
-import typings.fpTs.functorMod.Functor1
-import typings.fpTs.functorMod.Functor2
-import typings.fpTs.functorMod.Functor2C
-import typings.fpTs.functorMod.Functor3
-import typings.fpTs.functorMod.Functor3C
-import typings.fpTs.storeMod.Store_
+import typings.fpTs.libComonadMod.Comonad2
+import typings.fpTs.libEndomorphismMod.Endomorphism
+import typings.fpTs.libFunctorMod.Functor1
+import typings.fpTs.libFunctorMod.Functor2
+import typings.fpTs.libFunctorMod.Functor2C
+import typings.fpTs.libFunctorMod.Functor3
+import typings.fpTs.libFunctorMod.Functor3C
+import typings.fpTs.libStoreMod.Store_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +20,11 @@ object store {
   
   @JSImport("fp-ts", "store.Comonad")
   @js.native
-  val Comonad: Comonad2[typings.fpTs.storeMod.URI] = js.native
+  val Comonad: Comonad2[typings.fpTs.libStoreMod.URI] = js.native
   
   @JSImport("fp-ts", "store.Functor")
   @js.native
-  val Functor: Functor2[typings.fpTs.storeMod.URI] = js.native
+  val Functor: Functor2[typings.fpTs.libStoreMod.URI] = js.native
   
   @JSImport("fp-ts", "store.URI")
   @js.native
@@ -32,7 +32,7 @@ object store {
   
   inline def duplicate[E, A](wa: Store_[E, A]): Store_[E, Store_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("duplicate")(wa.asInstanceOf[js.Any]).asInstanceOf[Store_[E, Store_[E, A]]]
   
-  inline def experiment[F](F: typings.fpTs.functorMod.Functor[F]): js.Function1[
+  inline def experiment[F](F: typings.fpTs.libFunctorMod.Functor[F]): js.Function1[
     /* f */ js.Function1[
       /* s */ Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, S> */ Any
@@ -163,7 +163,7 @@ object store {
   
   @JSImport("fp-ts", "store.store")
   @js.native
-  val store: Comonad2[typings.fpTs.storeMod.URI] = js.native
+  val store: Comonad2[typings.fpTs.libStoreMod.URI] = js.native
   
   /* augmented module */
   object HKTAugmentingMod {

@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.webIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
+import typings.awsSdk.libCredentialsWebIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {string} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
   */
 open class WebIdentityCredentials ()
-  extends typings.awsSdk.coreMod.WebIdentityCredentials {
+  extends typings.awsSdk.libCoreMod.WebIdentityCredentials {
   /**
     * Creates a new credentials object with optional configuraion.
     * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
@@ -21,6 +21,6 @@ open class WebIdentityCredentials ()
   def this(options: WebIdentityCredentialsOptions) = this()
   def this(
     options: WebIdentityCredentialsOptions,
-    clientConfig: typings.awsSdk.configBaseMod.ConfigurationOptions
+    clientConfig: typings.awsSdk.libConfigBaseMod.ConfigurationOptions
   ) = this()
 }

@@ -1,7 +1,7 @@
 package typings.routeNode
 
-import typings.routeNode.routeNodeMod.QueryParamsMode
-import typings.routeNode.routeNodeMod.TrailingSlashMode
+import typings.routeNode.distRouteNodeMod.QueryParamsMode
+import typings.routeNode.distRouteNodeMod.TrailingSlashMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

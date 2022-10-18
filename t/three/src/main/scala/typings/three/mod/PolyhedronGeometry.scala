@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [detail=0]
   */
 open class PolyhedronGeometry ()
-  extends typings.three.threeMod.PolyhedronGeometry {
+  extends typings.three.srcThreeMod.PolyhedronGeometry {
   def this(vertices: js.Array[Double]) = this()
   def this(vertices: js.Array[Double], indices: js.Array[Double]) = this()
   def this(vertices: Unit, indices: js.Array[Double]) = this()
@@ -37,5 +37,5 @@ object PolyhedronGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.polyhedronGeometryMod.PolyhedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.polyhedronGeometryMod.PolyhedronGeometry]
+  inline def fromJSON(data: Any): typings.three.srcGeometriesPolyhedronGeometryMod.PolyhedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesPolyhedronGeometryMod.PolyhedronGeometry]
 }

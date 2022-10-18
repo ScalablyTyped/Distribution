@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormatRelativeTimeOptions extends StObject {
   
   var format: js.UndefOr[
-    String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['time'] */ js.Any)
+    /* import warning: importer.ImportType#apply Failed type conversion: 'time' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['time'] : string */ js.Any
   ] = js.undefined
   
   var numeric: js.UndefOr[RelativeTimeFormatNumeric] = js.undefined
@@ -27,7 +27,7 @@ object FormatRelativeTimeOptions {
   extension [Self <: FormatRelativeTimeOptions](x: Self) {
     
     inline def setFormat(
-      value: String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['time'] */ js.Any)
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'time' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['time'] : string */ js.Any
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)

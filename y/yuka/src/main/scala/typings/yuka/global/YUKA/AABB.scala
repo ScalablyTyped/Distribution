@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 open class AABB ()
   extends typings.yuka.mod.AABB {
-  def this(min: typings.yuka.vector3Mod.Vector3) = this()
-  def this(min: Unit, max: typings.yuka.vector3Mod.Vector3) = this()
-  def this(min: typings.yuka.vector3Mod.Vector3, max: typings.yuka.vector3Mod.Vector3) = this()
+  def this(min: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(min: Unit, max: typings.yuka.srcMathVector3Mod.Vector3) = this()
+  def this(min: typings.yuka.srcMathVector3Mod.Vector3, max: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

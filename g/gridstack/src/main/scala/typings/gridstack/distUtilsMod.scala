@@ -12,6 +12,7 @@ import typings.gridstack.gridstackInts.`-1`
 import typings.gridstack.gridstackInts.`1`
 import typings.std.CSSStyleSheet
 import typings.std.DragEvent
+import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Node
@@ -44,6 +45,12 @@ object distUtilsMod {
     inline def appendTo(el: HTMLElement, parent: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def appendTo(el: HTMLElement, parent: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** returns the area */
+    inline def area(a: GridStackPosition): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /** returns the area a and b overlap */
+    inline def areaIntercept(a: GridStackPosition, b: GridStackPosition): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("areaIntercept")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
     /** single level clone, returning a new object with same top fields. This will share sub objects and arrays */
     inline def clone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
     
@@ -57,7 +64,7 @@ object distUtilsMod {
     inline def cloneNode(el: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(el.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
     
     /** return the closest parent (or itself) matching the given class */
-    inline def closestByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def closestUpByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestUpByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /** copies over b size & position (GridStackPosition), and possibly min/max as well */
     inline def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
@@ -95,6 +102,10 @@ object distUtilsMod {
     /** removes field from the first object if same as the second objects (like diffing) and internal '_' for saving */
     inline def removeInternalAndSame(a: Any, b: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalAndSame")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    /** removes internal fields '_' and default values for saving */
+    inline def removeInternalForSave(n: GridStackNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalForSave")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeInternalForSave(n: GridStackNode, removeEl: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalForSave")(n.asInstanceOf[js.Any], removeEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def removePositioningStyles(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePositioningStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** removed the given stylesheet id */
@@ -105,6 +116,10 @@ object distUtilsMod {
     
     /** true if a and b has same size & position */
     inline def samePos(a: GridStackPosition, b: GridStackPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("samePos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /** copies the MouseEvent properties and sends it as another event to the given target */
+    inline def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simulateMouseEvent")(e.asInstanceOf[js.Any], simulatedType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def simulateMouseEvent(e: MouseEvent, simulatedType: String, target: EventTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simulateMouseEvent")(e.asInstanceOf[js.Any], simulatedType.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sorts array of nodes

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the torch LED settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.TorchControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.TorchControl")
 @js.native
-abstract class TorchControl ()
+open class TorchControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.TorchControl {
   

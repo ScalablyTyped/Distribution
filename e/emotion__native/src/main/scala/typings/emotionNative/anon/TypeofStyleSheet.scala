@@ -23,8 +23,8 @@ trait TypeofStyleSheet extends StObject {
   def create[T /* <: NamedStyles[Any | T] */](styles: T): T = js.native
   def create[T /* <: NamedStyles[Any | T] */](styles: NamedStyles[T]): T = js.native
   
-  def flatten[T](): T = js.native
-  def flatten[T](style: StyleProp[T]): T = js.native
+  def flatten[T](): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = js.native
+  def flatten[T](style: StyleProp[T]): /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<infer U> ? U : T */ js.Any = js.native
   
   val hairlineWidth: Double = js.native
   

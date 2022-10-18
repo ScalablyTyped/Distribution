@@ -261,11 +261,14 @@ object mod {
     var original: String = js.native
     
     /**
-      * Replaces the characters from `start` to `end` with `content`. The same restrictions as `s.remove()` apply.
+      * Replaces the characters from `start` to `end` with `content`, along with the appended/prepended content in 
+      * that range. The same restrictions as `s.remove()` apply.
       *
       * The fourth argument is optional. It can have a storeName property — if true, the original name will be stored
       * for later inclusion in a sourcemap's names array — and a contentOnly property which determines whether only
       * the content is overwritten, or anything that was appended/prepended to the range as well.
+      * 
+      * It may be preferred to use `s.update(...)` instead if you wish to avoid overwriting the appended/prepended content.
       */
     def overwrite(start: Double, end: Double, content: String): MagicString = js.native
     def overwrite(start: Double, end: Double, content: String, options: Boolean): MagicString = js.native
@@ -300,6 +303,14 @@ object mod {
     def replace(regex: js.RegExp, replacement: String): MagicString = js.native
     def replace(regex: js.RegExp, replacement: js.Function2[/* substring */ String, /* repeated */ Any, String]): MagicString = js.native
     
+    def replaceAll(regex: String, replacement: String): MagicString = js.native
+    def replaceAll(regex: String, replacement: js.Function2[/* substring */ String, /* repeated */ Any, String]): MagicString = js.native
+    /**
+      * Same as `s.replace`, but replace all matched strings instead of just one.
+      */
+    def replaceAll(regex: js.RegExp, replacement: String): MagicString = js.native
+    def replaceAll(regex: js.RegExp, replacement: js.Function2[/* substring */ String, /* repeated */ Any, String]): MagicString = js.native
+    
     /**
       * Returns the content of the generated string that corresponds to the slice between `start` and `end` of the original string.
       * Throws error if the indices are for characters that were already removed.
@@ -333,6 +344,17 @@ object mod {
       */
     def trimStart(): MagicString = js.native
     def trimStart(charType: String): MagicString = js.native
+    
+    /**
+      * Replaces the characters from `start` to `end` with `content`. The same restrictions as `s.remove()` apply.
+      *
+      * The fourth argument is optional. It can have a storeName property — if true, the original name will be stored
+      * for later inclusion in a sourcemap's names array — and an overwrite property which determines whether only
+      * the content is overwritten, or anything that was appended/prepended to the range as well.
+      */
+    def update(start: Double, end: Double, content: String): MagicString = js.native
+    def update(start: Double, end: Double, content: String, options: Boolean): MagicString = js.native
+    def update(start: Double, end: Double, content: String, options: UpdateOptions): MagicString = js.native
   }
   
   trait MagicStringOptions extends StObject {
@@ -442,4 +464,29 @@ object mod {
   }
   
   type SourceMapSegment = js.Array[Double] | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple5[Double, Double, Double, Double, Double])
+  
+  trait UpdateOptions extends StObject {
+    
+    var overwrite: js.UndefOr[Boolean] = js.undefined
+    
+    var storeName: js.UndefOr[Boolean] = js.undefined
+  }
+  object UpdateOptions {
+    
+    inline def apply(): UpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UpdateOptions]
+    }
+    
+    extension [Self <: UpdateOptions](x: Self) {
+      
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      
+      inline def setStoreName(value: Boolean): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+      
+      inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+    }
+  }
 }

@@ -46,13 +46,13 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.formMod.FormLayout
-import typings.rcFieldForm.formMod.RenderProps
-import typings.rcFieldForm.interfaceMod.FieldData
-import typings.rcFieldForm.interfaceMod.FormInstance
-import typings.rcFieldForm.interfaceMod.Store
-import typings.rcFieldForm.interfaceMod.ValidateErrorEntity
-import typings.rcFieldForm.interfaceMod.ValidateMessages
+import typings.antdMobile.esComponentsFormMod.FormLayout
+import typings.rcFieldForm.esFormMod.RenderProps
+import typings.rcFieldForm.esInterfaceMod.FieldData
+import typings.rcFieldForm.esInterfaceMod.FormInstance
+import typings.rcFieldForm.esInterfaceMod.Store
+import typings.rcFieldForm.esInterfaceMod.ValidateErrorEntity
+import typings.rcFieldForm.esInterfaceMod.ValidateMessages
 import typings.react.mod.Booleanish
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
@@ -333,11 +333,11 @@ trait classNamestringundefineds extends StObject {
   
   var preserve: js.UndefOr[Boolean] = js.undefined
   
-  var ref: js.UndefOr[Ref[typings.antdMobile.formFormMod.FormInstance]] = js.undefined
+  var ref: js.UndefOr[Ref[typings.antdMobile.esComponentsFormFormMod.FormInstance]] = js.undefined
   
   var requiredMarkStyle: js.UndefOr[asterisk | `text-required` | `text-optional` | none] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationPlayState] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorAnimationName] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -616,9 +616,9 @@ object classNamestringundefineds {
     
     inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
     
-    inline def setRef(value: Ref[typings.antdMobile.formFormMod.FormInstance]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Ref[typings.antdMobile.esComponentsFormFormMod.FormInstance]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ typings.antdMobile.formFormMod.FormInstance | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ typings.antdMobile.esComponentsFormFormMod.FormInstance | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     
@@ -628,7 +628,7 @@ object classNamestringundefineds {
     
     inline def setRequiredMarkStyleUndefined: Self = StObject.set(x, "requiredMarkStyle", js.undefined)
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAnimationPlayState): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorAnimationName): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

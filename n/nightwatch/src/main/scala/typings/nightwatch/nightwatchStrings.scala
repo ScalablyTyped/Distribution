@@ -17,10 +17,6 @@ object nightwatchStrings {
   inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
-  sealed trait ExtendDescribeThis extends StObject
-  inline def ExtendDescribeThis: ExtendDescribeThis = "ExtendDescribeThis".asInstanceOf[ExtendDescribeThis]
-  
-  @js.native
   sealed trait FINE extends StObject
   inline def FINE: FINE = "FINE".asInstanceOf[FINE]
   

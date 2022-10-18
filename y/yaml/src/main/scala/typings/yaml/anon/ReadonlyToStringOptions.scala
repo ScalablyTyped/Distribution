@@ -18,9 +18,9 @@ trait ReadonlyToStringOptions extends StObject {
   
   val commentString: js.UndefOr[js.Function1[/* comment */ String, String]] = js.undefined
   
-  val defaultKeyType: js.UndefOr[typings.yaml.scalarMod.Scalar.Type | Null] = js.undefined
+  val defaultKeyType: js.UndefOr[typings.yaml.distNodesScalarMod.Scalar.Type | Null] = js.undefined
   
-  val defaultStringType: js.UndefOr[typings.yaml.scalarMod.Scalar.Type] = js.undefined
+  val defaultStringType: js.UndefOr[typings.yaml.distNodesScalarMod.Scalar.Type] = js.undefined
   
   val directives: js.UndefOr[Boolean | Null] = js.undefined
   
@@ -69,13 +69,13 @@ object ReadonlyToStringOptions {
     
     inline def setCommentStringUndefined: Self = StObject.set(x, "commentString", js.undefined)
     
-    inline def setDefaultKeyType(value: typings.yaml.scalarMod.Scalar.Type): Self = StObject.set(x, "defaultKeyType", value.asInstanceOf[js.Any])
+    inline def setDefaultKeyType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "defaultKeyType", value.asInstanceOf[js.Any])
     
     inline def setDefaultKeyTypeNull: Self = StObject.set(x, "defaultKeyType", null)
     
     inline def setDefaultKeyTypeUndefined: Self = StObject.set(x, "defaultKeyType", js.undefined)
     
-    inline def setDefaultStringType(value: typings.yaml.scalarMod.Scalar.Type): Self = StObject.set(x, "defaultStringType", value.asInstanceOf[js.Any])
+    inline def setDefaultStringType(value: typings.yaml.distNodesScalarMod.Scalar.Type): Self = StObject.set(x, "defaultStringType", value.asInstanceOf[js.Any])
     
     inline def setDefaultStringTypeUndefined: Self = StObject.set(x, "defaultStringType", js.undefined)
     

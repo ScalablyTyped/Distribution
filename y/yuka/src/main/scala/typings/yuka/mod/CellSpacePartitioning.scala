@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("yuka", "CellSpacePartitioning")
 @js.native
 open class CellSpacePartitioning protected ()
-  extends typings.yuka.yukaMod.CellSpacePartitioning {
+  extends typings.yuka.srcYukaMod.CellSpacePartitioning {
   /**
     * Constructs a new spatial index with the given values.
     *

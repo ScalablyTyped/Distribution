@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-s3-node", "DeleteObjectCommand")
 @js.native
 open class DeleteObjectCommand protected ()
-  extends typings.awsSdkClientS3Node.deleteObjectCommandMod.DeleteObjectCommand {
+  extends typings.awsSdkClientS3Node.commandsDeleteObjectCommandMod.DeleteObjectCommand {
   def this(input: DeleteObjectInput) = this()
 }

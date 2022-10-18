@@ -4,14 +4,35 @@ import typings.express.mod.Application_
 import typings.node.eventsMod.EventEmitter
 import typings.redis.mod.RedisClusterType
 import typings.redis.mod.RedisDefaultModules
-import typings.redisClient.clientMod.RedisClientOptions
-import typings.redisClient.clientMod.RedisClientType
-import typings.redisClient.clusterMod.RedisClusterOptions
-import typings.redisClient.libCommandsMod.RedisFunctions
-import typings.redisClient.libCommandsMod.RedisModules
-import typings.redisClient.libCommandsMod.RedisScripts
-import typings.redisClient.luaScriptMod.RedisScriptConfig
-import typings.redisClient.luaScriptMod.SHA1
+import typings.redisClient.distLibClientMod.RedisClientOptions
+import typings.redisClient.distLibClientMod.RedisClientType
+import typings.redisClient.distLibClusterMod.RedisClusterOptions
+import typings.redisClient.distLibCommandsMod.RedisFunctions
+import typings.redisClient.distLibCommandsMod.RedisModules
+import typings.redisClient.distLibCommandsMod.RedisScripts
+import typings.redisClient.distLibLuaScriptMod.RedisScriptConfig
+import typings.redisClient.distLibLuaScriptMod.SHA1
+import typings.redisTimeSeries.anon.TypeofADD
+import typings.redisTimeSeries.anon.TypeofALTER
+import typings.redisTimeSeries.anon.TypeofCREATE
+import typings.redisTimeSeries.anon.TypeofCREATERULE
+import typings.redisTimeSeries.anon.TypeofDECRBY
+import typings.redisTimeSeries.anon.TypeofDEL
+import typings.redisTimeSeries.anon.TypeofDELETERULE
+import typings.redisTimeSeries.anon.TypeofGET
+import typings.redisTimeSeries.anon.TypeofINCRBY
+import typings.redisTimeSeries.anon.TypeofINFO
+import typings.redisTimeSeries.anon.TypeofINFODEBUG
+import typings.redisTimeSeries.anon.TypeofMADD
+import typings.redisTimeSeries.anon.TypeofMGET
+import typings.redisTimeSeries.anon.TypeofMGETWITHLABELS
+import typings.redisTimeSeries.anon.TypeofMRANGE
+import typings.redisTimeSeries.anon.TypeofMRANGEWITHLABELS
+import typings.redisTimeSeries.anon.TypeofMREVRANGE
+import typings.redisTimeSeries.anon.TypeofMREVRANGEWITHLABEL
+import typings.redisTimeSeries.anon.TypeofQUERYINDEX
+import typings.redisTimeSeries.anon.TypeofRANGE
+import typings.redisTimeSeries.anon.TypeofREVRANGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -273,6 +294,245 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    object default {
+      
+      @JSImport("kue", "redisClientFactory.default")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.ADD")
+      @js.native
+      def ADD_ : TypeofADD = js.native
+      
+      inline def ADD__=(x: TypeofADD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.ALTER")
+      @js.native
+      def ALTER_ : TypeofALTER = js.native
+      
+      inline def ALTER__=(x: TypeofALTER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALTER")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.CREATERULE")
+      @js.native
+      def CREATERULE_ : TypeofCREATERULE = js.native
+      
+      inline def CREATERULE__=(x: TypeofCREATERULE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATERULE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.CREATE")
+      @js.native
+      def CREATE_ : TypeofCREATE = js.native
+      
+      inline def CREATE__=(x: TypeofCREATE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CREATE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.DECRBY")
+      @js.native
+      def DECRBY_ : TypeofDECRBY = js.native
+      
+      inline def DECRBY__=(x: TypeofDECRBY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DECRBY")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.DELETERULE")
+      @js.native
+      def DELETERULE_ : TypeofDELETERULE = js.native
+      
+      inline def DELETERULE__=(x: TypeofDELETERULE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETERULE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.DEL")
+      @js.native
+      def DEL_ : TypeofDEL = js.native
+      
+      inline def DEL__=(x: TypeofDEL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEL")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.GET")
+      @js.native
+      def GET_ : TypeofGET = js.native
+      
+      inline def GET__=(x: TypeofGET): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GET")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.INCRBY")
+      @js.native
+      def INCRBY_ : TypeofINCRBY = js.native
+      
+      inline def INCRBY__=(x: TypeofINCRBY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INCRBY")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.INFO")
+      @js.native
+      def INFO_ : TypeofINFO = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.INFO_DEBUG")
+      @js.native
+      def INFO_DEBUG: TypeofINFODEBUG = js.native
+      inline def INFO_DEBUG_=(x: TypeofINFODEBUG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO_DEBUG")(x.asInstanceOf[js.Any])
+      
+      inline def INFO__=(x: TypeofINFO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.MADD")
+      @js.native
+      def MADD_ : TypeofMADD = js.native
+      
+      inline def MADD__=(x: TypeofMADD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MADD")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.MGET")
+      @js.native
+      def MGET_ : TypeofMGET = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.MGET_WITHLABELS")
+      @js.native
+      def MGET_WITHLABELS: TypeofMGETWITHLABELS = js.native
+      inline def MGET_WITHLABELS_=(x: TypeofMGETWITHLABELS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MGET_WITHLABELS")(x.asInstanceOf[js.Any])
+      
+      inline def MGET__=(x: TypeofMGET): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MGET")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.MRANGE")
+      @js.native
+      def MRANGE_ : TypeofMRANGE = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.MRANGE_WITHLABELS")
+      @js.native
+      def MRANGE_WITHLABELS: TypeofMRANGEWITHLABELS = js.native
+      inline def MRANGE_WITHLABELS_=(x: TypeofMRANGEWITHLABELS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MRANGE_WITHLABELS")(x.asInstanceOf[js.Any])
+      
+      inline def MRANGE__=(x: TypeofMRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MRANGE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.MREVRANGE")
+      @js.native
+      def MREVRANGE_ : TypeofMREVRANGE = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.MREVRANGE_WITHLABELS")
+      @js.native
+      def MREVRANGE_WITHLABELS: TypeofMREVRANGEWITHLABEL = js.native
+      inline def MREVRANGE_WITHLABELS_=(x: TypeofMREVRANGEWITHLABEL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MREVRANGE_WITHLABELS")(x.asInstanceOf[js.Any])
+      
+      inline def MREVRANGE__=(x: TypeofMREVRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MREVRANGE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.QUERYINDEX")
+      @js.native
+      def QUERYINDEX_ : TypeofQUERYINDEX = js.native
+      
+      inline def QUERYINDEX__=(x: TypeofQUERYINDEX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUERYINDEX")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.RANGE")
+      @js.native
+      def RANGE_ : TypeofRANGE = js.native
+      
+      inline def RANGE__=(x: TypeofRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RANGE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.REVRANGE")
+      @js.native
+      def REVRANGE_ : TypeofREVRANGE = js.native
+      
+      inline def REVRANGE__=(x: TypeofREVRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVRANGE")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.add")
+      @js.native
+      def add: TypeofADD = js.native
+      inline def add_=(x: TypeofADD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.alter")
+      @js.native
+      def alter: TypeofALTER = js.native
+      inline def alter_=(x: TypeofALTER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alter")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.create")
+      @js.native
+      def create: TypeofCREATE = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.createRule")
+      @js.native
+      def createRule: TypeofCREATERULE = js.native
+      inline def createRule_=(x: TypeofCREATERULE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRule")(x.asInstanceOf[js.Any])
+      
+      inline def create_=(x: TypeofCREATE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.decrBy")
+      @js.native
+      def decrBy: TypeofDECRBY = js.native
+      inline def decrBy_=(x: TypeofDECRBY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decrBy")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.del")
+      @js.native
+      def del: TypeofDEL = js.native
+      inline def del_=(x: TypeofDEL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("del")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.deleteRule")
+      @js.native
+      def deleteRule: TypeofDELETERULE = js.native
+      inline def deleteRule_=(x: TypeofDELETERULE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deleteRule")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.get")
+      @js.native
+      def get: TypeofGET = js.native
+      inline def get_=(x: TypeofGET): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.incrBy")
+      @js.native
+      def incrBy: TypeofINCRBY = js.native
+      inline def incrBy_=(x: TypeofINCRBY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incrBy")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.info")
+      @js.native
+      def info: TypeofINFO = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.infoDebug")
+      @js.native
+      def infoDebug: TypeofINFODEBUG = js.native
+      inline def infoDebug_=(x: TypeofINFODEBUG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("infoDebug")(x.asInstanceOf[js.Any])
+      
+      inline def info_=(x: TypeofINFO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.mAdd")
+      @js.native
+      def mAdd: TypeofMADD = js.native
+      inline def mAdd_=(x: TypeofMADD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mAdd")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.mGet")
+      @js.native
+      def mGet: TypeofMGET = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.mGetWithLabels")
+      @js.native
+      def mGetWithLabels: TypeofMGETWITHLABELS = js.native
+      inline def mGetWithLabels_=(x: TypeofMGETWITHLABELS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mGetWithLabels")(x.asInstanceOf[js.Any])
+      
+      inline def mGet_=(x: TypeofMGET): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mGet")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.mRange")
+      @js.native
+      def mRange: TypeofMRANGE = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.mRangeWithLabels")
+      @js.native
+      def mRangeWithLabels: TypeofMRANGEWITHLABELS = js.native
+      inline def mRangeWithLabels_=(x: TypeofMRANGEWITHLABELS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mRangeWithLabels")(x.asInstanceOf[js.Any])
+      
+      inline def mRange_=(x: TypeofMRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mRange")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.mRevRange")
+      @js.native
+      def mRevRange: TypeofMREVRANGE = js.native
+      
+      @JSImport("kue", "redisClientFactory.default.mRevRangeWithLabels")
+      @js.native
+      def mRevRangeWithLabels: TypeofMREVRANGEWITHLABEL = js.native
+      inline def mRevRangeWithLabels_=(x: TypeofMREVRANGEWITHLABEL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mRevRangeWithLabels")(x.asInstanceOf[js.Any])
+      
+      inline def mRevRange_=(x: TypeofMREVRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mRevRange")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.queryIndex")
+      @js.native
+      def queryIndex: TypeofQUERYINDEX = js.native
+      inline def queryIndex_=(x: TypeofQUERYINDEX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryIndex")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.range")
+      @js.native
+      def range: TypeofRANGE = js.native
+      inline def range_=(x: TypeofRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("range")(x.asInstanceOf[js.Any])
+      
+      @JSImport("kue", "redisClientFactory.default.revRange")
+      @js.native
+      def revRange: TypeofREVRANGE = js.native
+      inline def revRange_=(x: TypeofREVRANGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("revRange")(x.asInstanceOf[js.Any])
+    }
+    
     @JSImport("kue", "redisClientFactory.AbortError")
     @js.native
     open class AbortError ()
@@ -283,33 +543,33 @@ object mod {
     object AggregateGroupByReducers extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisSearch.aggregateMod.AggregateGroupByReducers & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers & String] = js.native
       
-      /* "AVG" */ val AVG: typings.redisSearch.aggregateMod.AggregateGroupByReducers.AVG & String = js.native
+      /* "AVG" */ val AVG: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.AVG & String = js.native
       
-      /* "COUNT" */ val COUNT: typings.redisSearch.aggregateMod.AggregateGroupByReducers.COUNT & String = js.native
+      /* "COUNT" */ val COUNT: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.COUNT & String = js.native
       
-      /* "COUNT_DISTINCT" */ val COUNT_DISTINCT: typings.redisSearch.aggregateMod.AggregateGroupByReducers.COUNT_DISTINCT & String = js.native
+      /* "COUNT_DISTINCT" */ val COUNT_DISTINCT: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.COUNT_DISTINCT & String = js.native
       
-      /* "COUNT_DISTINCTISH" */ val COUNT_DISTINCTISH: typings.redisSearch.aggregateMod.AggregateGroupByReducers.COUNT_DISTINCTISH & String = js.native
+      /* "COUNT_DISTINCTISH" */ val COUNT_DISTINCTISH: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.COUNT_DISTINCTISH & String = js.native
       
-      /* "FIRST_VALUE" */ val FIRST_VALUE: typings.redisSearch.aggregateMod.AggregateGroupByReducers.FIRST_VALUE & String = js.native
+      /* "FIRST_VALUE" */ val FIRST_VALUE: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.FIRST_VALUE & String = js.native
       
-      /* "MAX" */ val MAX: typings.redisSearch.aggregateMod.AggregateGroupByReducers.MAX & String = js.native
+      /* "MAX" */ val MAX: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.MAX & String = js.native
       
-      /* "MIN" */ val MIN: typings.redisSearch.aggregateMod.AggregateGroupByReducers.MIN & String = js.native
+      /* "MIN" */ val MIN: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.MIN & String = js.native
       
-      /* "QUANTILE" */ val QUANTILE: typings.redisSearch.aggregateMod.AggregateGroupByReducers.QUANTILE & String = js.native
+      /* "QUANTILE" */ val QUANTILE: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.QUANTILE & String = js.native
       
-      /* "RANDOM_SAMPLE" */ val RANDOM_SAMPLE: typings.redisSearch.aggregateMod.AggregateGroupByReducers.RANDOM_SAMPLE & String = js.native
+      /* "RANDOM_SAMPLE" */ val RANDOM_SAMPLE: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.RANDOM_SAMPLE & String = js.native
       
-      /* "STDDEV" */ val STDDEV: typings.redisSearch.aggregateMod.AggregateGroupByReducers.STDDEV & String = js.native
+      /* "STDDEV" */ val STDDEV: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.STDDEV & String = js.native
       
-      /* "SUM" */ val SUM: typings.redisSearch.aggregateMod.AggregateGroupByReducers.SUM & String = js.native
+      /* "SUM" */ val SUM: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.SUM & String = js.native
       
-      /* "TOLIST" */ val TOLIST: typings.redisSearch.aggregateMod.AggregateGroupByReducers.TOLIST & String = js.native
+      /* "TOLIST" */ val TOLIST: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.TOLIST & String = js.native
       
-      /* "TOLIST" */ val TO_LIST: typings.redisSearch.aggregateMod.AggregateGroupByReducers.TO_LIST & String = js.native
+      /* "TOLIST" */ val TO_LIST: typings.redisSearch.distCommandsAggregateMod.AggregateGroupByReducers.TO_LIST & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.AggregateSteps")
@@ -317,17 +577,17 @@ object mod {
     object AggregateSteps extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisSearch.aggregateMod.AggregateSteps & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsAggregateMod.AggregateSteps & String] = js.native
       
-      /* "APPLY" */ val APPLY: typings.redisSearch.aggregateMod.AggregateSteps.APPLY & String = js.native
+      /* "APPLY" */ val APPLY: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.APPLY & String = js.native
       
-      /* "FILTER" */ val FILTER: typings.redisSearch.aggregateMod.AggregateSteps.FILTER & String = js.native
+      /* "FILTER" */ val FILTER: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.FILTER & String = js.native
       
-      /* "GROUPBY" */ val GROUPBY: typings.redisSearch.aggregateMod.AggregateSteps.GROUPBY & String = js.native
+      /* "GROUPBY" */ val GROUPBY: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.GROUPBY & String = js.native
       
-      /* "LIMIT" */ val LIMIT: typings.redisSearch.aggregateMod.AggregateSteps.LIMIT & String = js.native
+      /* "LIMIT" */ val LIMIT: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.LIMIT & String = js.native
       
-      /* "SORTBY" */ val SORTBY: typings.redisSearch.aggregateMod.AggregateSteps.SORTBY & String = js.native
+      /* "SORTBY" */ val SORTBY: typings.redisSearch.distCommandsAggregateMod.AggregateSteps.SORTBY & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.ClientClosedError")
@@ -357,13 +617,13 @@ object mod {
     object GeoReplyWith extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisClient.genericTransformersMod.GeoReplyWith & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith & String] = js.native
       
-      /* "WITHCOORD" */ val COORDINATES: typings.redisClient.genericTransformersMod.GeoReplyWith.COORDINATES & String = js.native
+      /* "WITHCOORD" */ val COORDINATES: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.COORDINATES & String = js.native
       
-      /* "WITHDIST" */ val DISTANCE: typings.redisClient.genericTransformersMod.GeoReplyWith.DISTANCE & String = js.native
+      /* "WITHDIST" */ val DISTANCE: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.DISTANCE & String = js.native
       
-      /* "WITHHASH" */ val HASH: typings.redisClient.genericTransformersMod.GeoReplyWith.HASH & String = js.native
+      /* "WITHHASH" */ val HASH: typings.redisClient.distLibCommandsGenericTransformersMod.GeoReplyWith.HASH & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.ReconnectStrategyError")
@@ -383,17 +643,17 @@ object mod {
     object SchemaFieldTypes extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisSearch.commandsMod.SchemaFieldTypes & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsMod.SchemaFieldTypes & String] = js.native
       
-      /* "GEO" */ val GEO: typings.redisSearch.commandsMod.SchemaFieldTypes.GEO & String = js.native
+      /* "GEO" */ val GEO: typings.redisSearch.distCommandsMod.SchemaFieldTypes.GEO & String = js.native
       
-      /* "NUMERIC" */ val NUMERIC: typings.redisSearch.commandsMod.SchemaFieldTypes.NUMERIC & String = js.native
+      /* "NUMERIC" */ val NUMERIC: typings.redisSearch.distCommandsMod.SchemaFieldTypes.NUMERIC & String = js.native
       
-      /* "TAG" */ val TAG: typings.redisSearch.commandsMod.SchemaFieldTypes.TAG & String = js.native
+      /* "TAG" */ val TAG: typings.redisSearch.distCommandsMod.SchemaFieldTypes.TAG & String = js.native
       
-      /* "TEXT" */ val TEXT: typings.redisSearch.commandsMod.SchemaFieldTypes.TEXT & String = js.native
+      /* "TEXT" */ val TEXT: typings.redisSearch.distCommandsMod.SchemaFieldTypes.TEXT & String = js.native
       
-      /* "VECTOR" */ val VECTOR: typings.redisSearch.commandsMod.SchemaFieldTypes.VECTOR & String = js.native
+      /* "VECTOR" */ val VECTOR: typings.redisSearch.distCommandsMod.SchemaFieldTypes.VECTOR & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.SchemaTextFieldPhonetics")
@@ -401,15 +661,15 @@ object mod {
     object SchemaTextFieldPhonetics extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisSearch.commandsMod.SchemaTextFieldPhonetics & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics & String] = js.native
       
-      /* "dm:en" */ val DM_EN: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.DM_EN & String = js.native
+      /* "dm:en" */ val DM_EN: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.DM_EN & String = js.native
       
-      /* "dm:es" */ val DM_ES: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.DM_ES & String = js.native
+      /* "dm:es" */ val DM_ES: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.DM_ES & String = js.native
       
-      /* "dm:fr" */ val DM_FR: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.DM_FR & String = js.native
+      /* "dm:fr" */ val DM_FR: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.DM_FR & String = js.native
       
-      /* "dm:pt" */ val FM_PT: typings.redisSearch.commandsMod.SchemaTextFieldPhonetics.FM_PT & String = js.native
+      /* "dm:pt" */ val FM_PT: typings.redisSearch.distCommandsMod.SchemaTextFieldPhonetics.FM_PT & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.SocketClosedUnexpectedlyError")
@@ -422,31 +682,31 @@ object mod {
     object TimeSeriesAggregationType extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType & String] = js.native
       
-      /* "avg" */ val AVERAGE: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.AVERAGE & String = js.native
+      /* "avg" */ val AVERAGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.AVERAGE & String = js.native
       
-      /* "count" */ val COUNT: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.COUNT & String = js.native
+      /* "count" */ val COUNT: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.COUNT & String = js.native
       
-      /* "first" */ val FIRST: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.FIRST & String = js.native
+      /* "first" */ val FIRST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.FIRST & String = js.native
       
-      /* "last" */ val LAST: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.LAST & String = js.native
+      /* "last" */ val LAST: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.LAST & String = js.native
       
-      /* "max" */ val MAXIMUM: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.MAXIMUM & String = js.native
+      /* "max" */ val MAXIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MAXIMUM & String = js.native
       
-      /* "min" */ val MINIMUM: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.MINIMUM & String = js.native
+      /* "min" */ val MINIMUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.MINIMUM & String = js.native
       
-      /* "range" */ val RANGE: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.RANGE & String = js.native
+      /* "range" */ val RANGE: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.RANGE & String = js.native
       
-      /* "std.p" */ val STD_P: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.STD_P & String = js.native
+      /* "std.p" */ val STD_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_P & String = js.native
       
-      /* "std.s" */ val STD_S: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.STD_S & String = js.native
+      /* "std.s" */ val STD_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.STD_S & String = js.native
       
-      /* "sum" */ val SUM: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.SUM & String = js.native
+      /* "sum" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.SUM & String = js.native
       
-      /* "var.p" */ val VAR_P: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.VAR_P & String = js.native
+      /* "var.p" */ val VAR_P: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_P & String = js.native
       
-      /* "var.s" */ val VAR_S: typings.redisTimeSeries.commandsMod.TimeSeriesAggregationType.VAR_S & String = js.native
+      /* "var.s" */ val VAR_S: typings.redisTimeSeries.distCommandsMod.TimeSeriesAggregationType.VAR_S & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.TimeSeriesDuplicatePolicies")
@@ -454,19 +714,19 @@ object mod {
     object TimeSeriesDuplicatePolicies extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies & String] = js.native
       
-      /* "BLOCK" */ val BLOCK: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.BLOCK & String = js.native
+      /* "BLOCK" */ val BLOCK: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.BLOCK & String = js.native
       
-      /* "FIRST" */ val FIRST: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.FIRST & String = js.native
+      /* "FIRST" */ val FIRST: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.FIRST & String = js.native
       
-      /* "LAST" */ val LAST: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.LAST & String = js.native
+      /* "LAST" */ val LAST: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.LAST & String = js.native
       
-      /* "MAX" */ val MAX: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.MAX & String = js.native
+      /* "MAX" */ val MAX: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.MAX & String = js.native
       
-      /* "MIN" */ val MIN: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.MIN & String = js.native
+      /* "MIN" */ val MIN: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.MIN & String = js.native
       
-      /* "SUM" */ val SUM: typings.redisTimeSeries.commandsMod.TimeSeriesDuplicatePolicies.SUM & String = js.native
+      /* "SUM" */ val SUM: typings.redisTimeSeries.distCommandsMod.TimeSeriesDuplicatePolicies.SUM & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.TimeSeriesEncoding")
@@ -474,11 +734,11 @@ object mod {
     object TimeSeriesEncoding extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisTimeSeries.commandsMod.TimeSeriesEncoding & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding & String] = js.native
       
-      /* "COMPRESSED" */ val COMPRESSED: typings.redisTimeSeries.commandsMod.TimeSeriesEncoding.COMPRESSED & String = js.native
+      /* "COMPRESSED" */ val COMPRESSED: typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding.COMPRESSED & String = js.native
       
-      /* "UNCOMPRESSED" */ val UNCOMPRESSED: typings.redisTimeSeries.commandsMod.TimeSeriesEncoding.UNCOMPRESSED & String = js.native
+      /* "UNCOMPRESSED" */ val UNCOMPRESSED: typings.redisTimeSeries.distCommandsMod.TimeSeriesEncoding.UNCOMPRESSED & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.VectorAlgorithms")
@@ -486,11 +746,11 @@ object mod {
     object VectorAlgorithms extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.redisSearch.commandsMod.VectorAlgorithms & String] = js.native
+      def apply(value: String): js.UndefOr[typings.redisSearch.distCommandsMod.VectorAlgorithms & String] = js.native
       
-      /* "FLAT" */ val FLAT: typings.redisSearch.commandsMod.VectorAlgorithms.FLAT & String = js.native
+      /* "FLAT" */ val FLAT: typings.redisSearch.distCommandsMod.VectorAlgorithms.FLAT & String = js.native
       
-      /* "HNSW" */ val HNSW: typings.redisSearch.commandsMod.VectorAlgorithms.HNSW & String = js.native
+      /* "HNSW" */ val HNSW: typings.redisSearch.distCommandsMod.VectorAlgorithms.HNSW & String = js.native
     }
     
     @JSImport("kue", "redisClientFactory.WatchError")
@@ -504,7 +764,13 @@ object mod {
     
     inline def createClient[M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](): RedisClientType[RedisDefaultModules & M, F, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[RedisClientType[RedisDefaultModules & M, F, S]]
     inline def createClient[M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](options: RedisClientOptions[M, F, S]): RedisClientType[RedisDefaultModules & M, F, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[RedisClientType[RedisDefaultModules & M, F, S]]
+    @JSImport("kue", "redisClientFactory.createClient")
+    @js.native
+    val createClient_FredisClientFactory: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RedisClient.create */ Any = js.native
     
+    @JSImport("kue", "redisClientFactory.createCluster")
+    @js.native
+    val createCluster: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RedisCluster.create */ Any = js.native
     inline def createCluster[M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](options: RedisClusterOptions[M, F, S]): RedisClusterType[RedisDefaultModules & M, F, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCluster")(options.asInstanceOf[js.Any]).asInstanceOf[RedisClusterType[RedisDefaultModules & M, F, S]]
     
     inline def defineScript[S /* <: RedisScriptConfig */](script: S): S & SHA1 = ^.asInstanceOf[js.Dynamic].applyDynamic("defineScript")(script.asInstanceOf[js.Any]).asInstanceOf[S & SHA1]

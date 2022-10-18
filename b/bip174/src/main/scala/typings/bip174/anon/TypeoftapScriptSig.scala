@@ -1,7 +1,7 @@
 package typings.bip174.anon
 
-import typings.bip174.interfacesMod.KeyValue
-import typings.bip174.interfacesMod.TapScriptSig
+import typings.bip174.srcLibInterfacesMod.KeyValue
+import typings.bip174.srcLibInterfacesMod.TapScriptSig
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

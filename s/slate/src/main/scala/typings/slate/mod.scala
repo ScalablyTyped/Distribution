@@ -1,23 +1,23 @@
 package typings.slate
 
-import typings.slate.editorMod.EditorInterface
-import typings.slate.elementMod.ElementInterface
-import typings.slate.generalMod.GeneralTransforms
-import typings.slate.locationMod.LocationInterface
-import typings.slate.locationMod.SpanInterface
-import typings.slate.nodeMod.NodeInterface
-import typings.slate.operationMod.OperationInterface
-import typings.slate.pathMod.PathInterface
-import typings.slate.pathRefMod.PathRefInterface
-import typings.slate.pointMod.PointInterface
-import typings.slate.pointRefMod.PointRefInterface
-import typings.slate.rangeMod.RangeInterface
-import typings.slate.rangeRefMod.RangeRefInterface
-import typings.slate.scrubberMod.ScrubberInterface
-import typings.slate.selectionMod.SelectionTransforms
-import typings.slate.textMod.TextInterface
-import typings.slate.transformsNodeMod.NodeTransforms
-import typings.slate.transformsTextMod.TextTransforms
+import typings.slate.distInterfacesEditorMod.EditorInterface
+import typings.slate.distInterfacesElementMod.ElementInterface
+import typings.slate.distInterfacesLocationMod.LocationInterface
+import typings.slate.distInterfacesLocationMod.SpanInterface
+import typings.slate.distInterfacesNodeMod.NodeInterface
+import typings.slate.distInterfacesOperationMod.OperationInterface
+import typings.slate.distInterfacesPathMod.PathInterface
+import typings.slate.distInterfacesPathRefMod.PathRefInterface
+import typings.slate.distInterfacesPointMod.PointInterface
+import typings.slate.distInterfacesPointRefMod.PointRefInterface
+import typings.slate.distInterfacesRangeMod.RangeInterface
+import typings.slate.distInterfacesRangeRefMod.RangeRefInterface
+import typings.slate.distInterfacesScrubberMod.ScrubberInterface
+import typings.slate.distInterfacesTextMod.TextInterface
+import typings.slate.distTransformsGeneralMod.GeneralTransforms
+import typings.slate.distTransformsNodeMod.NodeTransforms
+import typings.slate.distTransformsSelectionMod.SelectionTransforms
+import typings.slate.distTransformsTextMod.TextTransforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,5 +88,5 @@ object mod {
   @js.native
   val Transforms: GeneralTransforms & NodeTransforms & SelectionTransforms & TextTransforms = js.native
   
-  inline def createEditor(): typings.slate.editorMod.Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")().asInstanceOf[typings.slate.editorMod.Editor]
+  inline def createEditor(): typings.slate.distInterfacesEditorMod.Editor = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditor")().asInstanceOf[typings.slate.distInterfacesEditorMod.Editor]
 }

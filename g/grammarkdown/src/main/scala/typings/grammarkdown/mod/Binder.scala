@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grammarkdown", "Binder")
 @js.native
-class Binder ()
-  extends typings.grammarkdown.binderMod.Binder
+open class Binder ()
+  extends typings.grammarkdown.distBinderMod.Binder

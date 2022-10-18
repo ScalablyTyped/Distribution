@@ -27,7 +27,7 @@ object BuildSerializer {
     
     inline def setBuildSerializerUndefined: Self = StObject.set(x, "buildSerializer", js.undefined)
     
-    inline def setBuildValidator(value: (/* externalSchemas */ Any, /* options */ typings.ajv.coreMod.Options) => Ajv): Self = StObject.set(x, "buildValidator", js.Any.fromFunction2(value))
+    inline def setBuildValidator(value: (/* externalSchemas */ Any, /* options */ typings.ajv.distCoreMod.Options) => Ajv): Self = StObject.set(x, "buildValidator", js.Any.fromFunction2(value))
     
     inline def setBuildValidatorUndefined: Self = StObject.set(x, "buildValidator", js.undefined)
   }

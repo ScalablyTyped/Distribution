@@ -1,6 +1,6 @@
 package typings.reactMdTransition
 
-import typings.reactMdTransition.typesMod.TransitionStage
+import typings.reactMdTransition.typesTypesMod.TransitionStage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

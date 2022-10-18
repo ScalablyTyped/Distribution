@@ -12,8 +12,8 @@ trait File
 }
 object File {
   
-  inline def apply(file_id: String): File = {
-    val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any])
+  inline def apply(file_id: String, file_unique_id: String): File = {
+    val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any], file_unique_id = file_unique_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   

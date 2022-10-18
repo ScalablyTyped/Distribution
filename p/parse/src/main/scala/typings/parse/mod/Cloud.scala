@@ -1,7 +1,6 @@
 package typings.parse.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
 import typings.parse.anon.Instantiable
 import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Cloud.AfterDeleteRequest
@@ -19,9 +18,6 @@ import typings.parse.mod.global.Parse.Cloud.Params
 import typings.parse.mod.global.Parse.Cloud.RunOptions
 import typings.parse.mod.global.Parse.Cloud.TriggerRequest
 import typings.parse.mod.global.Parse.Cloud.Validator
-import typings.parse.parseStrings.define
-import typings.parse.parseStrings.run
-import typings.std.Parameters
 import typings.std.PromiseLike
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -443,9 +439,7 @@ object Cloud {
   inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], Any], validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def define_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ define & TopLevel[Parameters[T]], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
     Any
   ] */](
     name: String,
@@ -457,9 +451,7 @@ object Cloud {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def define_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ define & TopLevel[Parameters[T]], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
     Any
   ] */](
     name: String,
@@ -472,9 +464,7 @@ object Cloud {
     validator: js.Function1[/* request */ FunctionRequest[Params], Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def define_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ define & TopLevel[Parameters[T]], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
     Any
   ] */](
     name: String,
@@ -536,18 +526,14 @@ object Cloud {
   inline def run[T /* <: js.Function0[Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
   
   inline def run_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run & TopLevel[Parameters[T]], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
     Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
   ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
   inline def run_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run & TopLevel[Parameters[T]], 
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
     Any
   ] */](
     name: String,

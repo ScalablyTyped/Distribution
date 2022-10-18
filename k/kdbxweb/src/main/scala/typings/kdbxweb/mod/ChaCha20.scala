@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "ChaCha20")
 @js.native
 open class ChaCha20 protected ()
-  extends typings.kdbxweb.chacha20Mod.ChaCha20 {
+  extends typings.kdbxweb.distTypesCryptoChacha20Mod.ChaCha20 {
   def this(key: js.typedarray.Uint8Array, nonce: js.typedarray.Uint8Array) = this()
 }

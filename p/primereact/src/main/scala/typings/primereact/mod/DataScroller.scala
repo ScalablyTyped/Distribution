@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.datascrollerMod.DataScrollerProps
+import typings.primereact.datascrollerDatascrollerMod.DataScrollerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "DataScroller")
 @js.native
 open class DataScroller protected ()
-  extends typings.primereact.datascrollerMod.DataScroller {
+  extends typings.primereact.datascrollerDatascrollerMod.DataScroller {
   def this(props: DataScrollerProps) = this()
   /**
     * @deprecated

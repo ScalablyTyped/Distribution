@@ -1,7 +1,7 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.icryptoMod.ICrypto
-import typings.azureMsalCommon.protocolUtilsMod.RequestStateObject
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
+import typings.azureMsalCommon.distUtilsProtocolUtilsMod.RequestStateObject
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "ProtocolUtils")
 @js.native
 open class ProtocolUtils ()
-  extends typings.azureMsalCommon.protocolUtilsMod.ProtocolUtils
+  extends typings.azureMsalCommon.distUtilsProtocolUtilsMod.ProtocolUtils
 /* static members */
 object ProtocolUtils {
   

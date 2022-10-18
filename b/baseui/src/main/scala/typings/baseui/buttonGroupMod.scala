@@ -13,7 +13,7 @@ import typings.baseui.buttonGroupButtonGroupMod.default
 import typings.baseui.buttonGroupTypesMod.StatefulButtonGroupProps
 import typings.baseui.buttonGroupTypesMod.StatefulContainerProps
 import typings.react.mod.global.JSX.Element
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,7 +117,7 @@ object buttonGroupMod {
   @JSImport("baseui/button-group", "StatefulContainer")
   @js.native
   open class StatefulContainer protected ()
-    extends typings.baseui.statefulContainerMod.default {
+    extends typings.baseui.buttonGroupStatefulContainerMod.default {
     def this(props: StatefulContainerProps) = this()
   }
   /* static members */

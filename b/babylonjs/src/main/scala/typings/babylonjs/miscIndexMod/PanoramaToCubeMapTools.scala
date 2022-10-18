@@ -1,6 +1,6 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.panoramaToCubemapMod.CubeMapInfo
+import typings.babylonjs.miscHighDynamicRangePanoramaToCubemapMod.CubeMapInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "PanoramaToCubeMapTools")
 @js.native
 open class PanoramaToCubeMapTools ()
-  extends typings.babylonjs.highDynamicRangeIndexMod.PanoramaToCubeMapTools
+  extends typings.babylonjs.miscHighDynamicRangeIndexMod.PanoramaToCubeMapTools
 /* static members */
 object PanoramaToCubeMapTools {
   

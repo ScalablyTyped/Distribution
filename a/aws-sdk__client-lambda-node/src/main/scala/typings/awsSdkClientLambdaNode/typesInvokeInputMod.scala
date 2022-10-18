@@ -5,8 +5,8 @@ import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.Event
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.None
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestResponse
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.Tail
-import typings.awsSdkClientLambdaNode.inputTypesUnionMod._InputTypesUnion
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkClientLambdaNode.typesInputTypesUnionMod._InputTypesUnion
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

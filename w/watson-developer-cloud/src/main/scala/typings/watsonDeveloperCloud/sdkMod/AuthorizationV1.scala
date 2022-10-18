@@ -1,13 +1,13 @@
 package typings.watsonDeveloperCloud.sdkMod
 
-import typings.watsonDeveloperCloud.v1Mod.^
+import typings.watsonDeveloperCloud.authorizationV1Mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("watson-developer-cloud/sdk", "AuthorizationV1")
 @js.native
-class AuthorizationV1 protected () extends ^ {
+open class AuthorizationV1 protected () extends ^ {
   /**
     * Authorization Service
     *
@@ -20,7 +20,7 @@ class AuthorizationV1 protected () extends ^ {
     * @param {String} [options.url] url of the service for which auth tokens are being generated
     * @constructor
     */
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
 }
 object AuthorizationV1 {
   

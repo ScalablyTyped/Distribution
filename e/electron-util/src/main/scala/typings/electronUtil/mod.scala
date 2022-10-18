@@ -114,7 +114,7 @@ import typings.electronUtil.electronUtilStrings.zoom
 import typings.electronUtil.electronUtilStrings.zoomIn
 import typings.electronUtil.electronUtilStrings.zoomOut
 import typings.newGithubIssueUrl.mod.Options
-import typings.typeFest.requireAtLeastOneMod.RequireAtLeastOne
+import typings.typeFest.sourceRequireAtLeastOneMod.RequireAtLeastOne
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
-import typings.ibmCloudSdkCore.helperMod.FileObject
-import typings.node.Buffer
+import typings.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.ContentType
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Model
@@ -144,7 +144,7 @@ object CreateJobParams {
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setKeywords_threshold(value: Double): Self = StObject.set(x, "keywords_threshold", value.asInstanceOf[js.Any])
     

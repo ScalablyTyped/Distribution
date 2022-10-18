@@ -186,9 +186,9 @@ object DB {
     /* private */ def this(docId: Double, database: typings.minappEnv.DB.Database) = this()
   }
   
-  @JSGlobal("DB.GeoPoint")
+  /* note: abstract class */ @JSGlobal("DB.GeoPoint")
   @js.native
-  abstract class GeoPoint protected ()
+  open class GeoPoint protected ()
     extends StObject
        with typings.minappEnv.DB.GeoPoint {
     def this(longitude: Double, latitude: Double) = this()
@@ -249,9 +249,9 @@ object DB {
     extends StObject
        with typings.minappEnv.DB.Query
   
-  @JSGlobal("DB.ServerDate")
+  /* note: abstract class */ @JSGlobal("DB.ServerDate")
   @js.native
-  abstract class ServerDate ()
+  open class ServerDate ()
     extends StObject
        with typings.minappEnv.DB.ServerDate {
     def this(options: IServerDateOptions) = this()

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShaderStage extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.babylonjs.webgpuConstantsMod.ShaderStage & Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ShaderStage & Double] = js.native
   
-  /* 4 */ val Compute: typings.babylonjs.webgpuConstantsMod.ShaderStage.Compute & Double = js.native
+  /* 4 */ val Compute: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ShaderStage.Compute & Double = js.native
   
-  /* 2 */ val Fragment: typings.babylonjs.webgpuConstantsMod.ShaderStage.Fragment & Double = js.native
+  /* 2 */ val Fragment: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ShaderStage.Fragment & Double = js.native
   
-  /* 1 */ val Vertex: typings.babylonjs.webgpuConstantsMod.ShaderStage.Vertex & Double = js.native
+  /* 1 */ val Vertex: typings.babylonjs.enginesWebGPUWebgpuConstantsMod.ShaderStage.Vertex & Double = js.native
 }

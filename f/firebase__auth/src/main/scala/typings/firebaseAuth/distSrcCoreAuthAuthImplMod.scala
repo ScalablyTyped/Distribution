@@ -9,9 +9,11 @@ import typings.firebaseAuth.distSrcModelPublicTypesMod.AuthErrorMap
 import typings.firebaseAuth.distSrcModelPublicTypesMod.PopupRedirectResolver
 import typings.firebaseAuth.distSrcModelPublicTypesMod.User
 import typings.firebaseAuth.distSrcModelUserMod.UserInternal
+import typings.firebaseAuth.firebaseAuthStrings.heartbeat
 import typings.firebaseAuth.firebaseAuthStrings.https
 import typings.firebaseAuth.firebaseAuthStrings.identitytoolkitDotgoogleapisDotcom
 import typings.firebaseAuth.firebaseAuthStrings.securetokenDotgoogleapisDotcom
+import typings.firebaseComponent.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +30,7 @@ object distSrcCoreAuthAuthImplMod {
   open class AuthImpl protected ()
     extends StObject
        with AuthInternal {
-    def this(
-      app: FirebaseApp,
-      heartbeatServiceProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<'heartbeat'> */ Any,
-      config: ConfigInternal
-    ) = this()
+    def this(app: FirebaseApp, heartbeatServiceProvider: Provider[heartbeat], config: ConfigInternal) = this()
     
     /** Returns the current user cast as the internal type */
     def _currentUser: UserInternal = js.native

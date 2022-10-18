@@ -1,7 +1,6 @@
 package typings.forms
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.forms.anon.Empty
 import typings.forms.anon.ValidatePastFirstError
 import typings.forms.anon.WidgetParametersrowsnumbe
@@ -493,9 +492,15 @@ object mod {
     }
   }
   
-  type FormData[Fields /* <: FormFields */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Key in keyof Fields ]: Fields[Key] extends forms.forms.Field<unknown>? std.ReturnType<Fields[Key]['parse']> : never}
-    */ typings.forms.formsStrings.FormData & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ Key in keyof Fields ]: Fields[Key] extends forms.forms.Field<unknown>? std.ReturnType<Fields[Key]['parse']> : never}
+    }}}
+    */
+  @js.native
+  trait FormData[Fields /* <: FormFields */] extends StObject
   
   trait FormFields
     extends StObject
@@ -508,7 +513,13 @@ object mod {
     }
   }
   
-  type FormHandleCallback[Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */] = js.Function1[/* form */ FormBound[Fields, Data | FormData[Fields]], Unit]
+  type FormHandleCallback[Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */] = js.Function1[
+    /* form */ FormBound[
+      Fields, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Data extends node.http.IncomingMessage ? forms.forms.FormData<Fields> : Data */ js.Any
+    ], 
+    Unit
+  ]
   
   type RenderFunction = js.Function2[/* name */ String, /* field */ Field[Any], String]
   

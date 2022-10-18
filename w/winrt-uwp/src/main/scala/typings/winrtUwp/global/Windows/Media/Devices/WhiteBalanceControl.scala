@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the white balance settings on a capture device. */
-@JSGlobal("Windows.Media.Devices.WhiteBalanceControl")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.WhiteBalanceControl")
 @js.native
-abstract class WhiteBalanceControl ()
+open class WhiteBalanceControl ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.WhiteBalanceControl {
   

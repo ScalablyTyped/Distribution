@@ -2,10 +2,10 @@ package typings.cosmiconfig
 
 import typings.cosmiconfig.anon.ClearCaches
 import typings.cosmiconfig.anon.ClearLoadCache
-import typings.cosmiconfig.typesMod.Config
-import typings.cosmiconfig.typesMod.CosmiconfigResult
-import typings.cosmiconfig.typesMod.Loaders
-import typings.cosmiconfig.typesMod.LoadersSync
+import typings.cosmiconfig.distTypesMod.Config
+import typings.cosmiconfig.distTypesMod.CosmiconfigResult
+import typings.cosmiconfig.distTypesMod.Loaders
+import typings.cosmiconfig.distTypesMod.LoadersSync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

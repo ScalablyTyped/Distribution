@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Actions extends StObject {
   
   /**
-    * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.
+    * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the Office application.
     *
     * @remarks
     *
     * **Requirement sets**:
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
-    * 
-    * @param shortcuts An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`. 
+    *
+    * @param shortcuts An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
     * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
     */
   def areShortcutsInUse(shortcuts: js.Array[String]): js.Promise[js.Array[InUse]]
@@ -42,11 +42,11 @@ trait Actions extends StObject {
     * @remarks
     *
     * **Requirement sets**:
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-    * 
+    *
     * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
-    * 
+    *
     * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
     */
   def getShortcuts(): js.Promise[StringDictionary[String | Null]]

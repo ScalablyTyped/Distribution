@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SaxesTag
-  extends StObject
-     with TagForOptions[Any] {
+trait SaxesTag extends StObject {
   
   /**
     * A map of attribute name to attributes. If namespaces are tracked, the

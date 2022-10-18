@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ThinTexture")
 @js.native
 open class ThinTexture protected ()
-  extends typings.babylonjs.legacyMod.ThinTexture {
+  extends typings.babylonjs.legacyLegacyMod.ThinTexture {
   /**
     * Instantiates a new ThinTexture.
     * Base class of all the textures in babylon.
     * This can be used as an internal texture wrapper in ThinEngine to benefit from the cache
     * @param internalTexture Define the internalTexture to wrap
     */
-  def this(internalTexture: Nullable[typings.babylonjs.internalTextureMod.InternalTexture]) = this()
+  def this(internalTexture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture]) = this()
 }

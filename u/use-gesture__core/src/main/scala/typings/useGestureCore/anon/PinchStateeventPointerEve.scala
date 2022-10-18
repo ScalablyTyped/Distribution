@@ -6,11 +6,11 @@ import typings.std.PointerEvent
 import typings.std.TouchEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.Vector2
+import typings.useGestureCore.distDeclarationsSrcTypesUtilsMod.WebKitGestureEvent
 import typings.useGestureCore.useGestureCoreBooleans.`false`
 import typings.useGestureCore.useGestureCoreStrings.angle
 import typings.useGestureCore.useGestureCoreStrings.scale
-import typings.useGestureCore.utilsMod.Vector2
-import typings.useGestureCore.utilsMod.WebKitGestureEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

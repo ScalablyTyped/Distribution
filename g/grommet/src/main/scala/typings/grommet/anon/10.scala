@@ -1,16 +1,16 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.ColorType
-import typings.grommet.utilsMod.OpacityType
+import typings.grommet.themesBaseMod.ExtendProps
+import typings.grommet.themesBaseMod.ExtendType
+import typings.grommet.themesBaseMod.ExtendValue
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `10` extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.undefined
-  
-  var opacity: js.UndefOr[OpacityType] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
 }
 object `10` {
   
@@ -21,12 +21,10 @@ object `10` {
   
   extension [Self <: `10`](x: Self) {
     
-    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    inline def setOpacity(value: OpacityType): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
-    
-    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
   }
 }

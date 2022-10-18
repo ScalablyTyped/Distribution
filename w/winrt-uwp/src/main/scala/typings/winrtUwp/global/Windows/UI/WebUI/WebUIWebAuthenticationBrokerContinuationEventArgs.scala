@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information to an app that was launched after being suspended for a web authentication broker operation. */
-@JSGlobal("Windows.UI.WebUI.WebUIWebAuthenticationBrokerContinuationEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.WebUI.WebUIWebAuthenticationBrokerContinuationEventArgs")
 @js.native
-abstract class WebUIWebAuthenticationBrokerContinuationEventArgs ()
+open class WebUIWebAuthenticationBrokerContinuationEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.WebUI.WebUIWebAuthenticationBrokerContinuationEventArgs {
   

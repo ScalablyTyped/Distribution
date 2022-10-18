@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.collisionCoordinatorMod.ICollisionCoordinator
+import typings.babylonjs.collisionsCollisionCoordinatorMod.ICollisionCoordinator
 import typings.babylonjs.sceneMod.SceneOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Scene")
 @js.native
 open class Scene protected ()
-  extends typings.babylonjs.legacyMod.Scene {
+  extends typings.babylonjs.legacyLegacyMod.Scene {
   /**
     * Creates a new Scene
     * @param engine defines the engine to use to render this scene
     * @param options defines the scene options
     */
-  def this(engine: typings.babylonjs.engineMod.Engine) = this()
-  def this(engine: typings.babylonjs.engineMod.Engine, options: SceneOptions) = this()
+  def this(engine: typings.babylonjs.enginesEngineMod.Engine) = this()
+  def this(engine: typings.babylonjs.enginesEngineMod.Engine, options: SceneOptions) = this()
 }
 /* static members */
 object Scene {
@@ -36,7 +36,7 @@ object Scene {
     * @param scene The scene to create the material for
     * @returns The default material
     */
-  inline def DefaultMaterialFactory(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialMod.Material = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultMaterialFactory")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialMod.Material]
+  inline def DefaultMaterialFactory(scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.materialsMaterialMod.Material = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultMaterialFactory")(scene.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsMaterialMod.Material]
   
   /** The fog density is following an exponential function */
   @JSImport("babylonjs", "Scene.FOGMODE_EXP")

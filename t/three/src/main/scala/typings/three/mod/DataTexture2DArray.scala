@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "DataTexture2DArray")
 @js.native
 open class DataTexture2DArray ()
-  extends typings.three.threeMod.DataTexture2DArray {
+  extends typings.three.srcThreeMod.DataTexture2DArray {
   def this(data: BufferSource) = this()
   def this(data: Unit, width: Double) = this()
   def this(data: BufferSource, width: Double) = this()

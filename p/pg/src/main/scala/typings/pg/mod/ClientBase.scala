@@ -8,7 +8,7 @@ import typings.pg.pgStrings.end
 import typings.pg.pgStrings.error
 import typings.pg.pgStrings.notice
 import typings.pg.pgStrings.notification
-import typings.pgProtocol.messagesMod.NoticeMessage
+import typings.pgProtocol.distMessagesMod.NoticeMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

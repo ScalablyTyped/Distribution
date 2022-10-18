@@ -1,10 +1,10 @@
 package typings.azureMsalBrowser.mod
 
-import typings.azureMsalCommon.accountInfoMod.AccountInfo
-import typings.azureMsalCommon.authTokenMod.AuthToken
-import typings.azureMsalCommon.authorityMod.Authority
-import typings.azureMsalCommon.authorityTypeMod.AuthorityType
-import typings.azureMsalCommon.icryptoMod.ICrypto
+import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
+import typings.azureMsalCommon.distAccountAuthTokenMod.AuthToken
+import typings.azureMsalCommon.distAuthorityAuthorityMod.Authority
+import typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType
+import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,14 +42,14 @@ object AccountEntity {
     * @param idToken
     * @param policy
     */
-  inline def createAccount(clientInfo: String, homeAccountId: String, idToken: AuthToken): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  inline def createAccount(clientInfo: String, homeAccountId: String, idToken: AuthToken): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
     idToken: AuthToken,
     authority: Unit,
     cloudGraphHostName: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -57,7 +57,7 @@ object AccountEntity {
     authority: Unit,
     cloudGraphHostName: String,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -66,7 +66,7 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -76,7 +76,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -86,7 +86,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -95,7 +95,7 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -105,7 +105,7 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -115,7 +115,7 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -123,7 +123,7 @@ object AccountEntity {
     authority: Unit,
     cloudGraphHostName: Unit,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -132,7 +132,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -142,7 +142,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -152,7 +152,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -161,7 +161,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -171,7 +171,7 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -181,15 +181,15 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
-  inline def createAccount(clientInfo: String, homeAccountId: String, idToken: AuthToken, authority: Authority): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
+  inline def createAccount(clientInfo: String, homeAccountId: String, idToken: AuthToken, authority: Authority): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
     idToken: AuthToken,
     authority: Authority,
     cloudGraphHostName: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -197,7 +197,7 @@ object AccountEntity {
     authority: Authority,
     cloudGraphHostName: String,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -206,7 +206,7 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -216,7 +216,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -226,7 +226,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -235,7 +235,7 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -245,7 +245,7 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -255,7 +255,7 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -263,7 +263,7 @@ object AccountEntity {
     authority: Authority,
     cloudGraphHostName: Unit,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -272,7 +272,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -282,7 +282,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -292,7 +292,7 @@ object AccountEntity {
     msGraphHost: String,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -301,7 +301,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -311,7 +311,7 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: String,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createAccount(
     clientInfo: String,
     homeAccountId: String,
@@ -321,22 +321,22 @@ object AccountEntity {
     msGraphHost: Unit,
     environment: Unit,
     nativeAccountId: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")(clientInfo.asInstanceOf[js.Any], homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any], nativeAccountId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   
   /**
     * Builds non-AAD/ADFS account.
     * @param authority
     * @param idToken
     */
-  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
-  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken, authority: Unit, cloudGraphHostName: String): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
+  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken, authority: Unit, cloudGraphHostName: String): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
     authority: Unit,
     cloudGraphHostName: String,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -344,7 +344,7 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -352,14 +352,14 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
     authority: Unit,
     cloudGraphHostName: Unit,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -367,7 +367,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -375,16 +375,16 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
-  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken, authority: Authority): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
-  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken, authority: Authority, cloudGraphHostName: String): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
+  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken, authority: Authority): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
+  inline def createGenericAccount(homeAccountId: String, idToken: AuthToken, authority: Authority, cloudGraphHostName: String): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
     authority: Authority,
     cloudGraphHostName: String,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -392,7 +392,7 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -400,14 +400,14 @@ object AccountEntity {
     cloudGraphHostName: String,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
     authority: Authority,
     cloudGraphHostName: Unit,
     msGraphHost: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -415,7 +415,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: String,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   inline def createGenericAccount(
     homeAccountId: String,
     idToken: AuthToken,
@@ -423,7 +423,7 @@ object AccountEntity {
     cloudGraphHostName: Unit,
     msGraphHost: Unit,
     environment: String
-  ): typings.azureMsalCommon.accountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.accountEntityMod.AccountEntity]
+  ): typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenericAccount")(homeAccountId.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cloudGraphHostName.asInstanceOf[js.Any], msGraphHost.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distCacheEntitiesAccountEntityMod.AccountEntity]
   
   /**
     * Generates account key from interface
@@ -439,13 +439,13 @@ object AccountEntity {
   inline def generateHomeAccountId(
     serverClientInfo: String,
     authType: AuthorityType,
-    logger: typings.azureMsalCommon.loggerMod.Logger,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
     cryptoObj: ICrypto
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHomeAccountId")(serverClientInfo.asInstanceOf[js.Any], authType.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], cryptoObj.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def generateHomeAccountId(
     serverClientInfo: String,
     authType: AuthorityType,
-    logger: typings.azureMsalCommon.loggerMod.Logger,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
     cryptoObj: ICrypto,
     idToken: AuthToken
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHomeAccountId")(serverClientInfo.asInstanceOf[js.Any], authType.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], cryptoObj.asInstanceOf[js.Any], idToken.asInstanceOf[js.Any])).asInstanceOf[String]

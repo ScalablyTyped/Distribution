@@ -1,8 +1,8 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.anon.Fn
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
+import typings.floatingUiCore.anon.Options
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,19 +12,19 @@ trait PartialShiftOptionsDetect extends StObject {
   
   var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiDom.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiDom.srcTypesMod.Boundary] = js.undefined
   
   var crossAxis: js.UndefOr[Boolean] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
-  var limiter: js.UndefOr[Fn] = js.undefined
+  var limiter: js.UndefOr[Options] = js.undefined
   
   var mainAxis: js.UndefOr[Boolean] = js.undefined
   
   var padding: js.UndefOr[Padding] = js.undefined
   
-  var rootBoundary: js.UndefOr[typings.floatingUiCore.typesMod.RootBoundary] = js.undefined
+  var rootBoundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.RootBoundary] = js.undefined
 }
 object PartialShiftOptionsDetect {
   
@@ -39,7 +39,7 @@ object PartialShiftOptionsDetect {
     
     inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiDom.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiDom.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
@@ -53,7 +53,7 @@ object PartialShiftOptionsDetect {
     
     inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
     
-    inline def setLimiter(value: Fn): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+    inline def setLimiter(value: Options): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
     
     inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
     
@@ -65,7 +65,7 @@ object PartialShiftOptionsDetect {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setRootBoundary(value: typings.floatingUiCore.typesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+    inline def setRootBoundary(value: typings.floatingUiCore.srcTypesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
     
     inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
   }

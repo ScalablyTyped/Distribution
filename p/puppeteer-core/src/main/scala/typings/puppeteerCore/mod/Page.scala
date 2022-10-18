@@ -16,7 +16,6 @@ import typings.puppeteerCore.anon.MetricsTitle
 import typings.puppeteerCore.anon.OmitFrameAddStyleTagOptio
 import typings.puppeteerCore.anon.RunBeforeUnload
 import typings.puppeteerCore.anon.Timeout
-import typings.puppeteerCore.anon.UserAgentViewport
 import typings.puppeteerCore.anon.WaitForOptionsrefererstriTimeout
 import typings.puppeteerCore.puppeteerCoreStrings.achromatopsia
 import typings.puppeteerCore.puppeteerCoreStrings.blurredVision
@@ -365,20 +364,25 @@ open class Page () extends EventEmitter {
   def deleteCookie(cookies: DeleteCookiesRequest*): js.Promise[Unit] = js.native
   
   /**
-    * Emulates given device metrics and user agent.
+    * Emulates a given device's metrics and user agent.
+    *
+    * To aid emulation, Puppeteer provides a list of known devices that can be
+    * via {@link KnownDevices}.
     *
     * @remarks
     * This method is a shortcut for calling two methods:
-    * {@link Page.setUserAgent} and {@link Page.setViewport} To aid emulation,
-    * Puppeteer provides a list of device descriptors that can be obtained via
-    * {@link devices}. `page.emulate` will resize the page. A lot of websites
-    * don't expect phones to change size, so you should emulate before navigating
-    * to the page.
+    * {@link Page.setUserAgent} and {@link Page.setViewport}.
+    *
+    * @remarks
+    * This method will resize the page. A lot of websites don't expect phones to
+    * change size, so you should emulate before navigating to the page.
+    *
     * @example
     *
     * ```ts
-    * const puppeteer = require('puppeteer');
-    * const iPhone = puppeteer.devices['iPhone 6'];
+    * import {KnownDevices} from 'puppeteer';
+    * const iPhone = KnownDevices['iPhone 6'];
+    *
     * (async () => {
     *   const browser = await puppeteer.launch();
     *   const page = await browser.newPage();
@@ -388,11 +392,8 @@ open class Page () extends EventEmitter {
     *   await browser.close();
     * })();
     * ```
-    *
-    * @remarks List of all available devices is available in the source code:
-    * {@link https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts | src/common/DeviceDescriptors.ts}.
     */
-  def emulate(options: UserAgentViewport): js.Promise[Unit] = js.native
+  def emulate(device: Device): js.Promise[Unit] = js.native
   
   /**
     * Enables CPU throttling to emulate slow CPUs.
@@ -516,12 +517,18 @@ open class Page () extends EventEmitter {
   def emulateMediaType(`type`: String): js.Promise[Unit] = js.native
   
   /**
-    * @param networkConditions - Passing `null` disables network condition emulation.
+    * This does not affect WebSockets and WebRTC PeerConnections (see
+    * https://crbug.com/563644). To set the page offline, you can use
+    * {@link Page.setOfflineMode}.
+    *
+    * A list of predefined network conditions can be used by importing
+    * {@link PredefinedNetworkConditions}.
+    *
     * @example
     *
     * ```ts
-    * const puppeteer = require('puppeteer');
-    * const slow3G = puppeteer.networkConditions['Slow 3G'];
+    * import {PredefinedNetworkConditions} from 'puppeteer';
+    * const slow3G = PredefinedNetworkConditions['Slow 3G'];
     *
     * (async () => {
     *   const browser = await puppeteer.launch();
@@ -533,10 +540,8 @@ open class Page () extends EventEmitter {
     * })();
     * ```
     *
-    * @remarks
-    * NOTE: This does not affect WebSockets and WebRTC PeerConnections (see
-    * https://crbug.com/563644). To set the page offline, you can use
-    * [page.setOfflineMode(enabled)](#pagesetofflinemodeenabled).
+    * @param networkConditions - Passing `null` disables network condition
+    * emulation.
     */
   def emulateNetworkConditions(): js.Promise[Unit] = js.native
   def emulateNetworkConditions(networkConditions: NetworkConditions_): js.Promise[Unit] = js.native
@@ -1434,7 +1439,6 @@ open class Page () extends EventEmitter {
   
   /**
     * @param enabled - Whether or not to enable JavaScript on the page.
-    * @returns
     * @remarks
     * NOTE: changing this value won't affect scripts that have already been run.
     * It will take full effect on the next navigation.
@@ -1442,11 +1446,11 @@ open class Page () extends EventEmitter {
   def setJavaScriptEnabled(enabled: Boolean): js.Promise[Unit] = js.native
   
   /**
+    * Sets the network connection to offline.
+    *
+    * It does not change the parameters used in {@link Page.emulateNetworkConditions}
+    *
     * @param enabled - When `true`, enables offline mode for the page.
-    * @remarks
-    * NOTE: while this method sets the network connection to offline, it does
-    * not change the parameters used in [page.emulateNetworkConditions(networkConditions)]
-    * (#pageemulatenetworkconditionsnetworkconditions)
     */
   def setOfflineMode(enabled: Boolean): js.Promise[Unit] = js.native
   
@@ -1800,21 +1804,17 @@ open class Page () extends EventEmitter {
   /**
     * @param urlOrPredicate - A URL or predicate to wait for
     * @param options - Optional waiting parameters
-    * @returns Promise which resolves to the matched response
+    * @returns Promise which resolves to the matched request
     * @example
     *
     * ```ts
-    * const firstResponse = await page.waitForResponse(
+    * const firstRequest = await page.waitForRequest(
     *   'https://example.com/resource'
     * );
-    * const finalResponse = await page.waitForResponse(
-    *   response =>
-    *     response.url() === 'https://example.com' && response.status() === 200
+    * const finalRequest = await page.waitForRequest(
+    *   request => request.url() === 'https://example.com'
     * );
-    * const finalResponse = await page.waitForResponse(async response => {
-    *   return (await response.text()).includes('<html>');
-    * });
-    * return finalResponse.ok();
+    * return finalRequest.response()?.ok();
     * ```
     *
     * @remarks
@@ -1921,7 +1921,7 @@ open class Page () extends EventEmitter {
   def waitForSelector[Selector /* <: String */](selector: Selector, options: WaitForSelectorOptions): js.Promise[ElementHandle[NodeFor[Selector]] | Null] = js.native
   
   /**
-    * @deprecated Use `new Promise(r => setTimeout(r, milliseconds));`.
+    * @deprecated Replace with `new Promise(r => setTimeout(r, milliseconds));`.
     *
     * Causes your script to wait for the given number of milliseconds.
     *

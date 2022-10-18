@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cssTree.mod.StyleSheet
   - typings.cssTree.mod.TypeSelector
   - typings.cssTree.mod.UnicodeRange
-  - typings.cssTree.mod.Url
+  - typings.cssTree.mod.Url_
   - typings.cssTree.mod.Value
   - typings.cssTree.mod.WhiteSpace
 */
@@ -271,10 +271,10 @@ object CssNode {
     __obj.asInstanceOf[typings.cssTree.mod.UnicodeRange]
   }
   
-  inline def Url(value: StringNode | Raw): typings.cssTree.mod.Url = {
+  inline def Url_(value: StringNode | Raw): typings.cssTree.mod.Url_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Url")
-    __obj.asInstanceOf[typings.cssTree.mod.Url]
+    __obj.asInstanceOf[typings.cssTree.mod.Url_]
   }
   
   inline def Value(children: typings.cssTree.mod.List[CssNode]): typings.cssTree.mod.Value = {

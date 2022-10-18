@@ -24,10 +24,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object wordpressCoreDataStrings {
   
   @js.native
-  sealed trait Decontextualize extends StObject
-  inline def Decontextualize: Decontextualize = "Decontextualize".asInstanceOf[Decontextualize]
-  
-  @js.native
   sealed trait _embedded
     extends StObject
        with Block

@@ -1,7 +1,7 @@
 package typings.lernaPackageGraph
 
 import typings.lernaPackage.mod.Package
-import typings.lernaPackageGraph.cyclicPackageGraphNodeMod.CyclicPackageGraphNode
+import typings.lernaPackageGraph.libCyclicPackageGraphNodeMod.CyclicPackageGraphNode
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -53,13 +53,13 @@ object mod {
       */
     def extendList(packageList: js.Array[Package], nodeProp: NodeProperties): js.Array[Package] = js.native
     
-    def get(name: String): typings.lernaPackageGraph.packageGraphNodeMod.PackageGraphNode = js.native
+    def get(name: String): typings.lernaPackageGraph.libPackageGraphNodeMod.PackageGraphNode = js.native
     
     /**
       * Remove all candidate nodes.
       * @param candidates
       */
-    def prune(candidates: typings.lernaPackageGraph.packageGraphNodeMod.PackageGraphNode*): Unit = js.native
+    def prune(candidates: typings.lernaPackageGraph.libPackageGraphNodeMod.PackageGraphNode*): Unit = js.native
     
     def rawPackageList: js.Array[Package] = js.native
     
@@ -68,13 +68,13 @@ object mod {
       * to itself in the other node's internal collections.
       * @param candidateNode instance to remove
       */
-    def remove(candidateNode: typings.lernaPackageGraph.packageGraphNodeMod.PackageGraphNode): Unit = js.native
+    def remove(candidateNode: typings.lernaPackageGraph.libPackageGraphNodeMod.PackageGraphNode): Unit = js.native
   }
   
   @JSImport("@lerna/package-graph", "PackageGraphNode")
   @js.native
   open class PackageGraphNode protected ()
-    extends typings.lernaPackageGraph.packageGraphNodeMod.PackageGraphNode {
+    extends typings.lernaPackageGraph.libPackageGraphNodeMod.PackageGraphNode {
     def this(pkg: Package) = this()
   }
   

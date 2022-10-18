@@ -1,7 +1,7 @@
 package typings.antd.anon
 
-import typings.antd.transferMod.KeyWise
-import typings.antd.transferMod.TransferItem
+import typings.antd.libTransferMod.KeyWise
+import typings.antd.libTransferMod.TransferItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

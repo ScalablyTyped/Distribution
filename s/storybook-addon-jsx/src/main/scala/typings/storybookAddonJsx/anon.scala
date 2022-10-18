@@ -8,8 +8,8 @@ import typings.storybookAddonJsx.storybookAddonJsxStrings.centered
 import typings.storybookAddonJsx.storybookAddonJsxStrings.fullscreen
 import typings.storybookAddonJsx.storybookAddonJsxStrings.none
 import typings.storybookAddonJsx.storybookAddonJsxStrings.padded
-import typings.storybookAddons.typesMod.OptionsParameter
-import typings.storybookAddons.typesMod.StoryApi
+import typings.storybookAddons.distTs3Dot9TypesMod.OptionsParameter
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ object anon {
   /* Inlined @storybook/addons.@storybook/addons.Parameters & {  jsx :storybook-addon-jsx.storybook-addon-jsx.AddonParameters} */
   trait ParametersjsxAddonParamet
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var docsOnly: js.UndefOr[Boolean] = js.undefined
     

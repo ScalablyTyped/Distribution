@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new time object.
   */
 open class Time ()
-  extends typings.yuka.yukaMod.Time
+  extends typings.yuka.srcYukaMod.Time

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helpersAnimationMod {
   
-  @JSImport("react-spinners/esm/helpers/animation", JSImport.Namespace)
+  @JSImport("react-spinners/helpers/animation", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

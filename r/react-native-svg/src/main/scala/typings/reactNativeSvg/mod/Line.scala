@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("react-native-svg", "Line")
 @js.native
 open class Line ()
-  extends typings.reactNativeSvg.reactNativeSVGMod.Line
+  extends typings.reactNativeSvg.libTypescriptReactNativeSVGMod.Line
 /* static members */
 object Line {
   

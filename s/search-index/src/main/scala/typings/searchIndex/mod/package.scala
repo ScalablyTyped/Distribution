@@ -1,6 +1,5 @@
 package typings.searchIndex.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.searchIndex.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,10 +12,6 @@ inline def apply(options: SearchIndexOptions): js.Promise[SearchIndex] = ^.asIns
 type AlterToken = js.Function1[/* token */ Token, js.Promise[Token]]
 
 type Field = String | js.Array[String]
-
-type ReplaceValues = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ key in string ]: std.Array<string>}
-  */ typings.searchIndex.searchIndexStrings.ReplaceValues & TopLevel[Any]
 
 type SplitTokenizerArgs = js.Tuple3[/* tokens */ js.Array[String], /* field */ String, /* ops */ PutOptions]
 

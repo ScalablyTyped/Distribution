@@ -1,14 +1,14 @@
 package typings.sentryTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryTypes.contextMod.Contexts
-import typings.sentryTypes.extraMod.Extras
-import typings.sentryTypes.miscMod.Primitive
-import typings.sentryTypes.scopeMod._CaptureContext
-import typings.sentryTypes.sessionMod.RequestSession
-import typings.sentryTypes.severityMod.Severity
-import typings.sentryTypes.severityMod.SeverityLevel
-import typings.sentryTypes.userMod.User
+import typings.sentryTypes.typesContextMod.Contexts
+import typings.sentryTypes.typesExtraMod.Extras
+import typings.sentryTypes.typesMiscMod.Primitive
+import typings.sentryTypes.typesScopeMod._CaptureContext
+import typings.sentryTypes.typesSessionMod.RequestSession
+import typings.sentryTypes.typesSeverityMod.Severity
+import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesUserMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -9,7 +9,7 @@ import typings.meteor.anon.Major
 import typings.meteor.meteorBooleans.`false`
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.nodeNetMod.Socket
+import typings.node.nodeColonnetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,32 +18,32 @@ object webappMod {
   
   object WebApp {
     
-    @JSImport("meteor/globals/webapp", "WebApp")
+    @JSImport("meteor/webapp", "WebApp")
     @js.native
     val ^ : js.Any = js.native
     
     inline def addRuntimeConfigHook(callback: RuntimeConfigHookCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRuntimeConfigHook")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/globals/webapp", "WebApp.connectApp")
+    @JSImport("meteor/webapp", "WebApp.connectApp")
     @js.native
     def connectApp: Server = js.native
     inline def connectApp_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectApp")(x.asInstanceOf[js.Any])
     
-    @JSImport("meteor/globals/webapp", "WebApp.connectHandlers")
+    @JSImport("meteor/webapp", "WebApp.connectHandlers")
     @js.native
     def connectHandlers: Server = js.native
     inline def connectHandlers_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectHandlers")(x.asInstanceOf[js.Any])
     
     inline def decodeRuntimeConfig(rtimeConfigString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRuntimeConfig")(rtimeConfigString.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    @JSImport("meteor/globals/webapp", "WebApp.defaultArch")
+    @JSImport("meteor/webapp", "WebApp.defaultArch")
     @js.native
     def defaultArch: String = js.native
     inline def defaultArch_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultArch")(x.asInstanceOf[js.Any])
     
     inline def encodeRuntimeConfig(rtimeConfig: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeRuntimeConfig")(rtimeConfig.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("meteor/globals/webapp", "WebApp.httpServer")
+    @JSImport("meteor/webapp", "WebApp.httpServer")
     @js.native
     def httpServer: typings.node.httpMod.Server[
         Instantiable1[/* socket */ Socket, IncomingMessage], 
@@ -64,7 +64,7 @@ object webappMod {
     
     inline def onListening(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListening")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/globals/webapp", "WebApp.rawConnectHandlers")
+    @JSImport("meteor/webapp", "WebApp.rawConnectHandlers")
     @js.native
     def rawConnectHandlers: Server = js.native
     inline def rawConnectHandlers_=(x: Server): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rawConnectHandlers")(x.asInstanceOf[js.Any])
@@ -76,13 +76,13 @@ object webappMod {
   
   object WebAppInternals {
     
-    @JSImport("meteor/globals/webapp", "WebAppInternals")
+    @JSImport("meteor/webapp", "WebAppInternals")
     @js.native
     val ^ : js.Any = js.native
     
     inline def addStaticJs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addStaticJs")().asInstanceOf[Unit]
     
-    @JSImport("meteor/globals/webapp", "WebAppInternals.additionalStaticJs")
+    @JSImport("meteor/webapp", "WebAppInternals.additionalStaticJs")
     @js.native
     def additionalStaticJs: Any = js.native
     inline def additionalStaticJs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("additionalStaticJs")(x.asInstanceOf[js.Any])
@@ -109,7 +109,7 @@ object webappMod {
     
     inline def setInlineScriptsAllowed(inlineScriptsAllowed: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInlineScriptsAllowed")(inlineScriptsAllowed.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/globals/webapp", "WebAppInternals.staticFiles")
+    @JSImport("meteor/webapp", "WebAppInternals.staticFiles")
     @js.native
     def staticFiles: StaticFiles = js.native
     

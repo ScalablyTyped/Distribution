@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object jestEnvironmentStrings {
   
   @js.native
-  sealed trait legacy extends StObject
-  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait modern extends StObject
-  inline def modern: modern = "modern".asInstanceOf[modern]
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
 }

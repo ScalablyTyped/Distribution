@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A matcher to match a day falling before and after two dates, where the dates are not included. */
+/** A matcher to match a day falling before and/or after two dates, where the dates are not included. */
 trait DateInterval
   extends StObject
      with _Matcher {

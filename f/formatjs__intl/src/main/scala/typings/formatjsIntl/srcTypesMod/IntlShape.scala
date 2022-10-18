@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IntlShape[T]
   extends StObject
      with ResolvedIntlConfig[T]
-     with IntlFormatters[Any, Any] {
+     with IntlFormatters[T] {
   
   var formatters: Formatters = js.native
 }

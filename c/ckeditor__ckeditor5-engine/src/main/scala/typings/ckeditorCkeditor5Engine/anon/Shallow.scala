@@ -1,8 +1,8 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Engine.rangeMod.default
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerDirection
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerOptions
+import typings.ckeditorCkeditor5Engine.srcModelRangeMod.default
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerDirection
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +21,11 @@ trait Shallow
   
   var singleCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var startPosition: typings.ckeditorCkeditor5Engine.positionMod.default
+  var startPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default
 }
 object Shallow {
   
-  inline def apply(startPosition: typings.ckeditorCkeditor5Engine.positionMod.default): Shallow = {
+  inline def apply(startPosition: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default): Shallow = {
     val __obj = js.Dynamic.literal(startPosition = startPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shallow]
   }
@@ -52,6 +52,6 @@ object Shallow {
     
     inline def setSingleCharactersUndefined: Self = StObject.set(x, "singleCharacters", js.undefined)
     
-    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.positionMod.default): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
   }
 }

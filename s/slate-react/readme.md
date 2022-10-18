@@ -1,7 +1,7 @@
 
 # Scala.js typings for slate-react
 
-Typings are for version 0.83.0
+Typings are for version 0.83.2
 
 ## Library description:
 Tools for building completely customizable richtext editors with React.

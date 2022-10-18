@@ -1,6 +1,6 @@
 package typings.antvDataSet
 
-import typings.antvDataSet.transformTagCloudMod._FontWeight
+import typings.antvDataSet.libTransformTagCloudMod._FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

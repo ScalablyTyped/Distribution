@@ -1,7 +1,7 @@
 package typings.storybookPreviewWeb
 
-import typings.storybookPreviewWeb.storyRenderMod.RenderPhase
-import typings.storybookPreviewWeb.webViewMod.Layout
+import typings.storybookPreviewWeb.distTs3Dot9StoryRenderMod.RenderPhase
+import typings.storybookPreviewWeb.distTs3Dot9WebViewMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

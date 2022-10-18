@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "ImageAssetLoader")
 @js.native
 open class ImageAssetLoader protected ()
-  extends typings.blackEngine.imageAssetLoaderMod.ImageAssetLoader {
+  extends typings.blackEngine.assetsLoadersImageAssetLoaderMod.ImageAssetLoader {
   def this(url: String) = this()
 }

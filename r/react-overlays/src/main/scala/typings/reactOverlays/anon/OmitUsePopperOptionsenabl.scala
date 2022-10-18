@@ -1,7 +1,7 @@
 package typings.reactOverlays.anon
 
 import typings.popperjsCore.anon.PartialState
-import typings.popperjsCore.typesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

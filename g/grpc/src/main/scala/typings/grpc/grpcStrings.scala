@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object grpcStrings {
   
   @js.native
-  sealed trait ServiceDefinition extends StObject
-  inline def ServiceDefinition: ServiceDefinition = "ServiceDefinition".asInstanceOf[ServiceDefinition]
-  
-  @js.native
   sealed trait detect extends StObject
   inline def detect: detect = "detect".asInstanceOf[detect]
   

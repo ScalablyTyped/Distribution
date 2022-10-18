@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "BitmapTextField")
 @js.native
 open class BitmapTextField protected ()
-  extends typings.blackEngine.bitmapTextFieldMod.BitmapTextField {
+  extends typings.blackEngine.displayTextBitmapTextFieldMod.BitmapTextField {
   def this(font: String) = this()
-  def this(font: typings.blackEngine.bitmapFontAssetMod.BitmapFontData) = this()
+  def this(font: typings.blackEngine.assetsBitmapFontAssetMod.BitmapFontData) = this()
   def this(font: String, text: String) = this()
-  def this(font: typings.blackEngine.bitmapFontAssetMod.BitmapFontData, text: String) = this()
+  def this(font: typings.blackEngine.assetsBitmapFontAssetMod.BitmapFontData, text: String) = this()
 }

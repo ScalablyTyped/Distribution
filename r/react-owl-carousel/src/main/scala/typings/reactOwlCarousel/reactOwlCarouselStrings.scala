@@ -1,7 +1,7 @@
 package typings.reactOwlCarousel
 
-import typings.reactOwlCarousel.optionsMod.OnEvent
-import typings.reactOwlCarousel.optionsMod.TriggerEvent
+import typings.reactOwlCarousel.umdOptionsMod.OnEvent
+import typings.reactOwlCarousel.umdOptionsMod.TriggerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

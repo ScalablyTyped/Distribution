@@ -1,10 +1,10 @@
 package typings.uirouterCore.mod
 
 import typings.uirouterCore.anon.UiViewContextAnchor
-import typings.uirouterCore.commonCommonMod.TypedMap
-import typings.uirouterCore.viewInterfaceMod.ActiveUIView
-import typings.uirouterCore.viewInterfaceMod.ViewConfig
-import typings.uirouterCore.viewInterfaceMod.ViewContext
+import typings.uirouterCore.libCommonCommonMod.TypedMap
+import typings.uirouterCore.libViewInterfaceMod.ActiveUIView
+import typings.uirouterCore.libViewInterfaceMod.ViewConfig
+import typings.uirouterCore.libViewInterfaceMod.ViewContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@uirouter/core", "ViewService")
 @js.native
 open class ViewService protected ()
-  extends typings.uirouterCore.viewMod.ViewService {
+  extends typings.uirouterCore.libViewMod.ViewService {
   /** @internal */
-  def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()
+  def this(/** @internal */ router: typings.uirouterCore.libRouterMod.UIRouter) = this()
 }
 /* static members */
 object ViewService {

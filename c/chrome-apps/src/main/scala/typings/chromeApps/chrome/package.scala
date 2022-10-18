@@ -15,7 +15,7 @@ type IDict[T, K, F] = F
 type ToStringLiteral[C /* <: js.Object */, K, V] = IDict[
 C, 
 V, 
-/* import warning: importer.ImportType#apply Failed type conversion: C[V] */ js.Any]
+/* import warning: importer.ImportType#apply Failed type conversion: V extends keyof C ? C[V] : never */ js.Any]
 
 /** @deprecated Should never be used, used to guide migrations. */
 type deprecated = scala.Nothing

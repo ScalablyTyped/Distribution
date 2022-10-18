@@ -1,6 +1,5 @@
 package typings.superstruct
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Generator
 import typings.std.InstanceType
 import typings.std.Map
@@ -13,19 +12,18 @@ import typings.superstruct.anon.Coercer
 import typings.superstruct.anon.Exclusive
 import typings.superstruct.anon.Instantiable
 import typings.superstruct.anon.Strict
-import typings.superstruct.errorMod.Failure
-import typings.superstruct.structMod.Context
-import typings.superstruct.structMod.Infer
-import typings.superstruct.structMod.Refiner
-import typings.superstruct.structMod.Struct
-import typings.superstruct.structMod.Validator
-import typings.superstruct.utilsMod.AnyStruct
-import typings.superstruct.utilsMod.Assign
-import typings.superstruct.utilsMod.InferTuple
-import typings.superstruct.utilsMod.ObjectSchema
-import typings.superstruct.utilsMod.ObjectType
-import typings.superstruct.utilsMod.PartialObjectSchema
-import typings.superstruct.utilsMod.UnionToIntersection
+import typings.superstruct.libErrorMod.Failure
+import typings.superstruct.libStructMod.Context
+import typings.superstruct.libStructMod.Infer
+import typings.superstruct.libStructMod.Refiner
+import typings.superstruct.libStructMod.Struct
+import typings.superstruct.libStructMod.Validator
+import typings.superstruct.libUtilsMod.AnyStruct
+import typings.superstruct.libUtilsMod.Assign
+import typings.superstruct.libUtilsMod.ObjectSchema
+import typings.superstruct.libUtilsMod.ObjectType
+import typings.superstruct.libUtilsMod.PartialObjectSchema
+import typings.superstruct.libUtilsMod.UnionToIntersection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +37,7 @@ object mod {
   @JSImport("superstruct", "StructError")
   @js.native
   open class StructError protected ()
-    extends typings.superstruct.errorMod.StructError {
+    extends typings.superstruct.libErrorMod.StructError {
     def this(failure: Failure, failures: js.Function0[Generator[Failure, Any, Any]]) = this()
   }
   
@@ -82,7 +80,11 @@ object mod {
   
   inline def boolean(): Struct[Boolean, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[Struct[Boolean, Null]]
   
-  inline def coerce[T, S, C](struct: Struct[T, S], condition: Struct[C, Any], coercer: typings.superstruct.structMod.Coercer[C]): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(struct.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], coercer.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
+  inline def coerce[T, S, C](
+    struct: Struct[T, S],
+    condition: Struct[C, Any],
+    coercer: typings.superstruct.libStructMod.Coercer[C]
+  ): Struct[T, S] = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(struct.asInstanceOf[js.Any], condition.asInstanceOf[js.Any], coercer.asInstanceOf[js.Any])).asInstanceOf[Struct[T, S]]
   
   inline def create[T, S](value: Any, struct: Struct[T, S]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[T]
   
@@ -101,14 +103,10 @@ object mod {
   
   inline def enums[U /* <: Double */, T /* <: js.Array[U] */](values: T): Struct[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: K}
-    */ typings.superstruct.superstructStrings.enums & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T[number] ]: K} */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("enums")(values.asInstanceOf[js.Any]).asInstanceOf[Struct[
     /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any, 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in T[number] ]: K}
-    */ typings.superstruct.superstructStrings.enums & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in T[number] ]: K} */ js.Any
   ]]
   
   inline def func(): Struct[js.Function, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")().asInstanceOf[Struct[js.Function, Null]]
@@ -192,22 +190,12 @@ object mod {
   
   inline def tuple[A /* <: AnyStruct */, B /* <: js.Array[AnyStruct] */](Structs: /* import warning: importer.ImportType#apply c repeated non-array type: B */ js.Array[B]): Struct[
     /* import warning: importer.ImportType#apply c repeated non-array type: B['length'] extends B['length'] ? number extends B['length'] ? B : superstruct.superstruct/lib/utils._InferTuple<B, B['length'], [], []['length']> : never */ js.Array[
-      (InferTuple[
-        B, 
-        /* import warning: importer.ImportType#apply Failed type conversion: B['length'] */ js.Any, 
-        js.Array[Any], 
-        /* import warning: importer.ImportType#apply Failed type conversion: []['length'] */ js.Any
-      ]) | B
+      /* import warning: importer.ImportType#apply Failed type conversion: B['length'] extends B['length'] ? number extends B['length'] ? B : superstruct.superstruct/lib/utils._InferTuple<B, B['length'], [], []['length']> : never */ js.Any
     ], 
     Null
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(Structs.asInstanceOf[js.Any]).asInstanceOf[Struct[
     /* import warning: importer.ImportType#apply c repeated non-array type: B['length'] extends B['length'] ? number extends B['length'] ? B : superstruct.superstruct/lib/utils._InferTuple<B, B['length'], [], []['length']> : never */ js.Array[
-      (InferTuple[
-        B, 
-        /* import warning: importer.ImportType#apply Failed type conversion: B['length'] */ js.Any, 
-        js.Array[Any], 
-        /* import warning: importer.ImportType#apply Failed type conversion: []['length'] */ js.Any
-      ]) | B
+      /* import warning: importer.ImportType#apply Failed type conversion: B['length'] extends B['length'] ? number extends B['length'] ? B : superstruct.superstruct/lib/utils._InferTuple<B, B['length'], [], []['length']> : never */ js.Any
     ], 
     Null
   ]]
@@ -224,6 +212,6 @@ object mod {
   
   inline def unknown(): Struct[Any, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("unknown")().asInstanceOf[Struct[Any, Null]]
   
-  inline def validate[T, S](value: Any, struct: Struct[T, S]): js.Tuple2[typings.superstruct.errorMod.StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[typings.superstruct.errorMod.StructError | Unit, T | Unit]]
-  inline def validate[T, S](value: Any, struct: Struct[T, S], options: Coerce): js.Tuple2[typings.superstruct.errorMod.StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[typings.superstruct.errorMod.StructError | Unit, T | Unit]]
+  inline def validate[T, S](value: Any, struct: Struct[T, S]): js.Tuple2[typings.superstruct.libErrorMod.StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[typings.superstruct.libErrorMod.StructError | Unit, T | Unit]]
+  inline def validate[T, S](value: Any, struct: Struct[T, S], options: Coerce): js.Tuple2[typings.superstruct.libErrorMod.StructError | Unit, T | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], struct.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[typings.superstruct.libErrorMod.StructError | Unit, T | Unit]]
 }

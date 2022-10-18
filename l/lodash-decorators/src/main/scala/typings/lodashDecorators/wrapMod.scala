@@ -1,7 +1,7 @@
 package typings.lodashDecorators
 
-import typings.lodashDecorators.commonMod.LodashMethodDecorator
-import typings.lodashDecorators.commonMod.ResolvableFunction
+import typings.lodashDecorators.factoryCommonMod.LodashMethodDecorator
+import typings.lodashDecorators.factoryCommonMod.ResolvableFunction
 import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject

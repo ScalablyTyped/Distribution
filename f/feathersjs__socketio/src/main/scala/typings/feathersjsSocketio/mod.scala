@@ -1,9 +1,9 @@
 package typings.feathersjsSocketio
 
 import org.scalablytyped.runtime.Shortcut
+import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.mod.Server
 import typings.socketIo.mod.ServerOptions
-import typings.socketIo.typedEventsMod.DefaultEventsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

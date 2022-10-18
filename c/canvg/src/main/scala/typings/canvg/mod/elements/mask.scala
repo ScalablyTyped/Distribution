@@ -1,7 +1,7 @@
 package typings.canvg.mod.elements
 
 import typings.canvg.anon.TypeofMaskElement
-import typings.canvg.maskElementMod.MaskElement
+import typings.canvg.distDocumentMaskElementMod.MaskElement
 import typings.canvg.mod.elements.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,8 +1,8 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
-import typings.ibmCloudSdkCore.helperMod.FileObject
-import typings.node.Buffer
+import typings.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,7 +59,7 @@ object ClassifyParams {
     
     inline def setClassifier_idsUndefined: Self = StObject.set(x, "classifier_ids", js.undefined)
     
-    inline def setClassifier_idsVarargs(value: String*): Self = StObject.set(x, "classifier_ids", js.Array(value :_*))
+    inline def setClassifier_idsVarargs(value: String*): Self = StObject.set(x, "classifier_ids", js.Array(value*))
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object ClassifyParams {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value*))
     
     inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     

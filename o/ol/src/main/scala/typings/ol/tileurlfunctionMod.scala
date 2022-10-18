@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.olTileMod.UrlFunction
+import typings.ol.tileMod.UrlFunction
 import typings.ol.tilecoordMod.TileCoord
 import typings.ol.tilegridTileGridMod.default
 import org.scalablytyped.runtime.StObject
@@ -21,5 +21,5 @@ object tileurlfunctionMod {
   
   inline def expandUrl(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typings.ol.projectionMod.default): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("nullTileUrlFunction")(tileCoord.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typings.ol.projProjectionMod.default): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("nullTileUrlFunction")(tileCoord.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

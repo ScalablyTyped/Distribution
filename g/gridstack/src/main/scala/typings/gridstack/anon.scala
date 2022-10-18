@@ -2,15 +2,15 @@ package typings.gridstack
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.gridstack.distEs5TypesMod.GridStackElement
+import typings.gridstack.distEs5TypesMod.GridStackNode
+import typings.gridstack.distEs5TypesMod.GridStackPosition
+import typings.gridstack.distEs5TypesMod.GridStackWidget
+import typings.gridstack.distEs5TypesMod.numberOrString
+import typings.gridstack.distEs5UtilsMod.HeightData
+import typings.gridstack.distEs5UtilsMod.Utils
 import typings.gridstack.gridstackInts.`-1`
 import typings.gridstack.gridstackInts.`1`
-import typings.gridstack.typesMod.GridStackElement
-import typings.gridstack.typesMod.GridStackNode
-import typings.gridstack.typesMod.GridStackPosition
-import typings.gridstack.typesMod.GridStackWidget
-import typings.gridstack.typesMod.numberOrString
-import typings.gridstack.utilsMod.HeightData
-import typings.gridstack.utilsMod.Utils
 import typings.std.CSSStyleSheet
 import typings.std.DragEvent
 import typings.std.EventTarget
@@ -61,6 +61,12 @@ object anon {
     def appendTo(el: HTMLElement, parent: HTMLElement): Unit = js.native
     def appendTo(el: HTMLElement, parent: Node): Unit = js.native
     
+    /** returns the area */
+    def area(a: GridStackPosition): Double = js.native
+    
+    /** returns the area a and b overlap */
+    def areaIntercept(a: GridStackPosition, b: GridStackPosition): Double = js.native
+    
     /** single level clone, returning a new object with same top fields. This will share sub objects and arrays */
     def clone[T](obj: T): T = js.native
     
@@ -74,7 +80,7 @@ object anon {
     def cloneNode(el: HTMLElement): HTMLElement = js.native
     
     /** return the closest parent (or itself) matching the given class */
-    def closestByClass(el: HTMLElement, name: String): HTMLElement = js.native
+    def closestUpByClass(el: HTMLElement, name: String): HTMLElement = js.native
     
     /** copies over b size & position (GridStackPosition), and possibly min/max as well */
     def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = js.native
@@ -112,6 +118,10 @@ object anon {
     /** removes field from the first object if same as the second objects (like diffing) and internal '_' for saving */
     def removeInternalAndSame(a: Any, b: Any): Unit = js.native
     
+    /** removes internal fields '_' and default values for saving */
+    def removeInternalForSave(n: GridStackNode): Unit = js.native
+    def removeInternalForSave(n: GridStackNode, removeEl: Boolean): Unit = js.native
+    
     def removePositioningStyles(el: HTMLElement): Unit = js.native
     
     /** removed the given stylesheet id */
@@ -122,6 +132,10 @@ object anon {
     
     /** true if a and b has same size & position */
     def samePos(a: GridStackPosition, b: GridStackPosition): Boolean = js.native
+    
+    /** copies the MouseEvent properties and sends it as another event to the given target */
+    def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = js.native
+    def simulateMouseEvent(e: MouseEvent, simulatedType: String, target: EventTarget): Unit = js.native
     
     /**
       * Sorts array of nodes
@@ -157,6 +171,15 @@ object anon {
     def appendTo(el: HTMLElement, parent: HTMLElement): Unit = js.native
     def appendTo(el: HTMLElement, parent: Node): Unit = js.native
     
+    /** returns the area */
+    def area(a: typings.gridstack.distTypesMod.GridStackPosition): Double = js.native
+    
+    /** returns the area a and b overlap */
+    def areaIntercept(
+      a: typings.gridstack.distTypesMod.GridStackPosition,
+      b: typings.gridstack.distTypesMod.GridStackPosition
+    ): Double = js.native
+    
     /** single level clone, returning a new object with same top fields. This will share sub objects and arrays */
     def clone[T](obj: T): T = js.native
     
@@ -170,7 +193,7 @@ object anon {
     def cloneNode(el: HTMLElement): HTMLElement = js.native
     
     /** return the closest parent (or itself) matching the given class */
-    def closestByClass(el: HTMLElement, name: String): HTMLElement = js.native
+    def closestUpByClass(el: HTMLElement, name: String): HTMLElement = js.native
     
     /** copies over b size & position (GridStackPosition), and possibly min/max as well */
     def copyPos(
@@ -221,6 +244,10 @@ object anon {
     /** removes field from the first object if same as the second objects (like diffing) and internal '_' for saving */
     def removeInternalAndSame(a: Any, b: Any): Unit = js.native
     
+    /** removes internal fields '_' and default values for saving */
+    def removeInternalForSave(n: typings.gridstack.distTypesMod.GridStackNode): Unit = js.native
+    def removeInternalForSave(n: typings.gridstack.distTypesMod.GridStackNode, removeEl: Boolean): Unit = js.native
+    
     def removePositioningStyles(el: HTMLElement): Unit = js.native
     
     /** removed the given stylesheet id */
@@ -234,6 +261,10 @@ object anon {
       a: typings.gridstack.distTypesMod.GridStackPosition,
       b: typings.gridstack.distTypesMod.GridStackPosition
     ): Boolean = js.native
+    
+    /** copies the MouseEvent properties and sends it as another event to the given target */
+    def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = js.native
+    def simulateMouseEvent(e: MouseEvent, simulatedType: String, target: EventTarget): Unit = js.native
     
     /**
       * Sorts array of nodes

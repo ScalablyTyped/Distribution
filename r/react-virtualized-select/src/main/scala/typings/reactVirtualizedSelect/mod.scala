@@ -5,7 +5,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
-import typings.reactVirtualized.esListMod.ListProps
 import typings.reactVirtualizedSelect.anon.Async
 import typings.reactVirtualizedSelect.anon.Option
 import typings.std.Record
@@ -71,7 +70,7 @@ object mod {
     
     var labelKey: /* keyof T */ String
     
-    var listProps: ListProps
+    var listProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any
     
     var option: T
     
@@ -91,7 +90,7 @@ object mod {
       focusedOptionIndex: Double,
       key: String,
       labelKey: /* keyof T */ String,
-      listProps: ListProps,
+      listProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any,
       option: T,
       options: js.Array[T],
       selectValue: T => Unit,
@@ -114,7 +113,9 @@ object mod {
       
       inline def setLabelKey(value: /* keyof T */ String): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
       
-      inline def setListProps(value: ListProps): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      inline def setListProps(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListProps */ Any
+      ): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
       inline def setOption(value: T): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       

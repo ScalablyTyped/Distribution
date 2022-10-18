@@ -1,61 +1,18 @@
 package typings.wordpressCoreData.schemaMod.Schema
 
-import typings.std.Record
-import typings.wordpressCoreData.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // prettier-ignore
-/* Rewritten from type alias, can be one of: 
-  - typings.wordpressCoreData.schemaMod.Schema.BaseCategory
-  - typings.wordpressCoreData.anon.PickBaseCategoryCategoryCount
-  - typings.wordpressCoreData.anon.PickBaseCategoryCategory
-*/
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately. 
+  * TS definition: {{{
+  T extends 'embed' ? / * Inlined std.Pick<@wordpress/core-data.@wordpress/core-data/schema.Schema.BaseCategory, @wordpress/core-data.@wordpress/core-data/schema.Schema.EmbedKeys.Category> * /
+{  taxonomy :@wordpress/core-data.@wordpress/core-data/schema.Schema.TaxonomyKind,   _embedded :std.Record<string, std.Array<any>> | undefined | undefined,   _links :std.Record<string, std.Array<{  href :string, [k: string] : any}>>,   slug :string,   name :string,   id :number,   link :string} : T extends 'view' ? / * Inlined std.Pick<@wordpress/core-data.@wordpress/core-data/schema.Schema.BaseCategory, @wordpress/core-data.@wordpress/core-data/schema.Schema.ViewKeys.Category> * /
+{  description :string,   meta :std.Array<any>,   taxonomy :@wordpress/core-data.@wordpress/core-data/schema.Schema.TaxonomyKind,   _embedded :std.Record<string, std.Array<any>> | undefined | undefined,   _links :std.Record<string, std.Array<{  href :string, [k: string] : any}>>,   parent :number,   slug :string,   count :number,   name :string,   id :number,   link :string} : @wordpress/core-data.@wordpress/core-data/schema.Schema.BaseCategory
+  }}}
+  */
+@js.native
 trait Category[T /* <: Context */] extends StObject
-object Category {
-  
-  inline def BaseCategory(
-    _links: Record[String, js.Array[Dictk]],
-    count: Double,
-    description: String,
-    id: Double,
-    link: String,
-    meta: js.Array[Any],
-    name: String,
-    parent: Double,
-    slug: String,
-    taxonomy: TaxonomyKind
-  ): typings.wordpressCoreData.schemaMod.Schema.BaseCategory = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], taxonomy = taxonomy.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.wordpressCoreData.schemaMod.Schema.BaseCategory]
-  }
-  
-  inline def PickBaseCategoryCategory(
-    _links: Record[String, js.Array[Dictk]],
-    id: Double,
-    link: String,
-    name: String,
-    slug: String,
-    taxonomy: TaxonomyKind
-  ): typings.wordpressCoreData.anon.PickBaseCategoryCategory = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], taxonomy = taxonomy.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.wordpressCoreData.anon.PickBaseCategoryCategory]
-  }
-  
-  inline def PickBaseCategoryCategoryCount(
-    _links: Record[String, js.Array[Dictk]],
-    count: Double,
-    description: String,
-    id: Double,
-    link: String,
-    meta: js.Array[Any],
-    name: String,
-    parent: Double,
-    slug: String,
-    taxonomy: TaxonomyKind
-  ): typings.wordpressCoreData.anon.PickBaseCategoryCategoryCount = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], taxonomy = taxonomy.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.wordpressCoreData.anon.PickBaseCategoryCategoryCount]
-  }
-}

@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialMessageStripProps
 import typings.fundamentalReact.anon.WeakValidationMapMessageS
-import typings.fundamentalReact.messageStripMod.MessageStripProps
+import typings.fundamentalReact.libMessageStripMessageStripMod.MessageStripProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-spring/core" : "9.5.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-spring/core" : "9.5.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

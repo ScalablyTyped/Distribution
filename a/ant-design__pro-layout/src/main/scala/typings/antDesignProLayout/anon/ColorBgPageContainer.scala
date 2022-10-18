@@ -18,13 +18,25 @@ trait ColorBgPageContainer extends StObject {
   
   /**
     * pageContainer 自带的 margin block
+    * @deprecated 请使用 paddingBlockPageContainerContent
     */
   var marginBlockPageContainerContent: Double
   
   /**
     * pageContainer 自带的 margin inline
+    * @deprecated 请使用 paddingInlinePageContainerContent
     */
   var marginInlinePageContainerContent: Double
+  
+  /**
+    * pageContainer 自带的 padding block
+    */
+  var paddingBlockPageContainerContent: Double
+  
+  /**
+    * pageContainer 自带的 padding inline
+    */
+  var paddingInlinePageContainerContent: Double
 }
 object ColorBgPageContainer {
   
@@ -32,9 +44,11 @@ object ColorBgPageContainer {
     colorBgPageContainer: String,
     colorBgPageContainerFixed: String,
     marginBlockPageContainerContent: Double,
-    marginInlinePageContainerContent: Double
+    marginInlinePageContainerContent: Double,
+    paddingBlockPageContainerContent: Double,
+    paddingInlinePageContainerContent: Double
   ): ColorBgPageContainer = {
-    val __obj = js.Dynamic.literal(colorBgPageContainer = colorBgPageContainer.asInstanceOf[js.Any], colorBgPageContainerFixed = colorBgPageContainerFixed.asInstanceOf[js.Any], marginBlockPageContainerContent = marginBlockPageContainerContent.asInstanceOf[js.Any], marginInlinePageContainerContent = marginInlinePageContainerContent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(colorBgPageContainer = colorBgPageContainer.asInstanceOf[js.Any], colorBgPageContainerFixed = colorBgPageContainerFixed.asInstanceOf[js.Any], marginBlockPageContainerContent = marginBlockPageContainerContent.asInstanceOf[js.Any], marginInlinePageContainerContent = marginInlinePageContainerContent.asInstanceOf[js.Any], paddingBlockPageContainerContent = paddingBlockPageContainerContent.asInstanceOf[js.Any], paddingInlinePageContainerContent = paddingInlinePageContainerContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorBgPageContainer]
   }
   
@@ -47,5 +61,9 @@ object ColorBgPageContainer {
     inline def setMarginBlockPageContainerContent(value: Double): Self = StObject.set(x, "marginBlockPageContainerContent", value.asInstanceOf[js.Any])
     
     inline def setMarginInlinePageContainerContent(value: Double): Self = StObject.set(x, "marginInlinePageContainerContent", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingBlockPageContainerContent(value: Double): Self = StObject.set(x, "paddingBlockPageContainerContent", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingInlinePageContainerContent(value: Double): Self = StObject.set(x, "paddingInlinePageContainerContent", value.asInstanceOf[js.Any])
   }
 }

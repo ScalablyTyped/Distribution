@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.protobufMinimal.MapField")
 @js.native
 open class MapField protected ()
-  extends typings.googleGax.fallbackMod.protobufMinimal.MapField {
+  extends typings.googleGax.buildSrcFallbackMod.protobufMinimal.MapField {
   /**
     * Constructs a new map field instance.
     * @param name Unique name within its namespace

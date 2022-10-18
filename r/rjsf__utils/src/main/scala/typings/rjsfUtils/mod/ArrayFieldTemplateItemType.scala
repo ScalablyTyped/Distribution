@@ -49,6 +49,9 @@ trait ArrayFieldTemplateItemType[T, F] extends StObject {
   
   /** The `registry` object */
   var registry: Registry[T, F]
+  
+  /** The uiSchema object for this field */
+  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
 }
 object ArrayFieldTemplateItemType {
   
@@ -101,5 +104,9 @@ object ArrayFieldTemplateItemType {
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     inline def setRegistry(value: Registry[T, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    
+    inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
   }
 }

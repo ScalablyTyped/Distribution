@@ -1,9 +1,9 @@
 package typings.googleCloudTasks.mod
 
-import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.buildSrcAuthGoogleauthMod.JSONClient
 import typings.googleCloudTasks.anon.CreateNamedRequestqueuePa
 import typings.googleCloudTasks.anon.UpdateNamedRequestqueueEn
-import typings.googleGax.gaxMod.CallOptions
+import typings.googleGax.buildSrcGaxMod.CallOptions
 import typings.googleGax.mod.GoogleAuth
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject

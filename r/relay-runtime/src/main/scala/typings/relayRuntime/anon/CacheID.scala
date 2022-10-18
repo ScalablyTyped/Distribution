@@ -1,8 +1,8 @@
 package typings.relayRuntime.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayRuntime.relayConcreteNodeMod.ProvidedVariablesType
-import typings.relayRuntime.relayConcreteNodeMod.RequestParameters
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.ProvidedVariablesType
+import typings.relayRuntime.libUtilRelayConcreteNodeMod.RequestParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,8 @@
 package typings.antvG2plot.anon
 
 import typings.antvG2plot.antvG2plotStrings.dot
-import typings.antvG2plot.typesPatternMod.DotPatternCfg
-import typings.antvG2plot.utilsPatternMod.PatternOption
+import typings.antvG2plot.libTypesPatternMod.DotPatternCfg
+import typings.antvG2plot.libUtilsPatternMod.PatternOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

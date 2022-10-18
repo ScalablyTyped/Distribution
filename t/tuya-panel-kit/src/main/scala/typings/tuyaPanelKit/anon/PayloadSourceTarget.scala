@@ -1,6 +1,6 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.commonActionsMod.ResetState
+import typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`.ResetState
 import typings.tuyaPanelKit.tuyaPanelKitStrings.RESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PayloadSourceTarget
   extends StObject
-     with typings.tuyaPanelKit.commonActionsMod.Action {
+     with typings.tuyaPanelKit.`@reactNavigationRoutersCommonActionsMod`.Action {
   
   var payload: js.UndefOr[ResetState] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "ElbowBlock")
 @js.native
 open class ElbowBlock protected ()
-  extends typings.babylonjs.legacyMod.ElbowBlock {
+  extends typings.babylonjs.legacyLegacyMod.ElbowBlock {
   /**
     * Creates a new ElbowBlock
     * @param name defines the block name

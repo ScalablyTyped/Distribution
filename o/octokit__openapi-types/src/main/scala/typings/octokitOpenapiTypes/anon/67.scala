@@ -1,28 +1,31 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.read
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `67` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['empty-object'] */ js.Any
+  /**
+    * @description The permission to grant to the team for this project. Default: the team's `permission` attribute will be used to determine what permission to grant the team on this project. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
+    * @enum {string}
+    */
+  var permission: js.UndefOr[read | write | admin] = js.undefined
 }
 object `67` {
   
-  inline def apply(
-    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['empty-object'] */ js.Any
-  ): `67` = {
+  inline def apply(): `67` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`67`]
   }
   
   extension [Self <: `67`](x: Self) {
     
-    inline def setApplicationSlashjson(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['empty-object'] */ js.Any
-    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPermission(value: read | write | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
   }
 }

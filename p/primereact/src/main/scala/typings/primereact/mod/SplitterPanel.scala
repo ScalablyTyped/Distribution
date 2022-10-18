@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.splitterMod.SplitterPanelProps
+import typings.primereact.splitterSplitterMod.SplitterPanelProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "SplitterPanel")
 @js.native
 open class SplitterPanel protected ()
-  extends typings.primereact.splitterMod.SplitterPanel {
+  extends typings.primereact.splitterSplitterMod.SplitterPanel {
   def this(props: SplitterPanelProps) = this()
   /**
     * @deprecated

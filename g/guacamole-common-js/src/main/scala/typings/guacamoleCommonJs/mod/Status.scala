@@ -21,7 +21,7 @@ import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x0308`
 import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x030d`
 import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x030f`
 import typings.guacamoleCommonJs.guacamoleCommonJsInts.`0x031d`
-import typings.guacamoleCommonJs.statusMod.Status.Code
+import typings.guacamoleCommonJs.libStatusMod.Status.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("guacamole-common-js", "Status")
 @js.native
 open class Status protected ()
-  extends typings.guacamoleCommonJs.statusMod.Status {
+  extends typings.guacamoleCommonJs.libStatusMod.Status {
   /**
     * @param code The Guacamole status code, as defined by Guacamole.Status.Code.
     * @param [message] An optional human-readable message.
@@ -130,8 +130,8 @@ object Status {
     @js.native
     val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
     
-    inline def fromHTTPCode(status: Double): typings.guacamoleCommonJs.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.statusMod.Status.Code]
+    inline def fromHTTPCode(status: Double): typings.guacamoleCommonJs.libStatusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.libStatusMod.Status.Code]
     
-    inline def fromWebSocketCode(code: Double): typings.guacamoleCommonJs.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.statusMod.Status.Code]
+    inline def fromWebSocketCode(code: Double): typings.guacamoleCommonJs.libStatusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleCommonJs.libStatusMod.Status.Code]
   }
 }

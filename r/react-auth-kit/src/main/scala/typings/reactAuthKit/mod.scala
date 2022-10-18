@@ -2,15 +2,15 @@ package typings.reactAuthKit
 
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
-import typings.reactAuthKit.privateRouteMod.RequireAuthProps
-import typings.reactAuthKit.typesMod.AuthProviderProps
-import typings.reactAuthKit.typesMod.AuthStateUserObject
-import typings.reactAuthKit.typesMod.createRefreshParamInterface
-import typings.reactAuthKit.typesMod.signInFunctionParams
-import typings.reactAuthKit.withAuthHeaderMod.withAuthHeaderProps
-import typings.reactAuthKit.withAuthUserMod.withAuthProps
-import typings.reactAuthKit.withSignInMod.withSignInProps
-import typings.reactAuthKit.withSignOutMod.withSignOutProps
+import typings.reactAuthKit.distHigherOrderComponentsWithAuthHeaderMod.withAuthHeaderProps
+import typings.reactAuthKit.distHigherOrderComponentsWithAuthUserMod.withAuthProps
+import typings.reactAuthKit.distHigherOrderComponentsWithSignInMod.withSignInProps
+import typings.reactAuthKit.distHigherOrderComponentsWithSignOutMod.withSignOutProps
+import typings.reactAuthKit.distPrivateRouteMod.RequireAuthProps
+import typings.reactAuthKit.distTypesMod.AuthProviderProps
+import typings.reactAuthKit.distTypesMod.AuthStateUserObject
+import typings.reactAuthKit.distTypesMod.createRefreshParamInterface
+import typings.reactAuthKit.distTypesMod.signInFunctionParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +91,7 @@ object mod {
     * @description Inject Authentication status inside the Component's Prop
     * @param Component
     */
-  inline def withIsAuthenticated[P /* <: typings.reactAuthKit.withIsAuthenticatedMod.withAuthHeaderProps */](Component: ComponentType[P]): FunctionComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withIsAuthenticated")(Component.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[P]]
+  inline def withIsAuthenticated[P /* <: typings.reactAuthKit.distHigherOrderComponentsWithIsAuthenticatedMod.withAuthHeaderProps */](Component: ComponentType[P]): FunctionComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withIsAuthenticated")(Component.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[P]]
   
   /**
     * @public

@@ -8,28 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dmxStrings {
   
   @js.native
-  sealed trait ^ extends StObject
-  inline def ^ : ^ = "^".asInstanceOf[^]
-  
-  @js.native
   sealed trait A extends StObject
   inline def A: A = "A".asInstanceOf[A]
   
   @js.native
   sealed trait B extends StObject
   inline def B: B = "B".asInstanceOf[B]
-  
-  @js.native
-  sealed trait DMX extends StObject
-  inline def DMX: DMX = "DMX".asInstanceOf[DMX]
-  
-  @js.native
-  sealed trait Device extends StObject
-  inline def Device: Device = "Device".asInstanceOf[Device]
-  
-  @js.native
-  sealed trait Options extends StObject
-  inline def Options: Options = "Options".asInstanceOf[Options]
   
   @js.native
   sealed trait artnet extends StObject

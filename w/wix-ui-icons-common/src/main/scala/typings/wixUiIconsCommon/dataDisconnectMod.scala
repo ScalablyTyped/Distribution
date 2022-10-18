@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsDataDisconnectMod.DataDisconnectProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataDisconnectMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/DataDisconnect", JSImport.Default)
+  @JSImport("wix-ui-icons-common/DataDisconnect", JSImport.Default)
   @js.native
   val default: FC[DataDisconnectProps] = js.native
-  
-  trait DataDisconnectProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object DataDisconnectProps {
-    
-    inline def apply(): DataDisconnectProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DataDisconnectProps]
-    }
-    
-    extension [Self <: DataDisconnectProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[DataDisconnectProps]
   

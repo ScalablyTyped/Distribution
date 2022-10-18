@@ -3,7 +3,7 @@ package typings.testcafeReporterDashboard.anon
 import typings.ioTs.mod.BooleanC
 import typings.ioTs.mod.BrandC
 import typings.ioTs.mod.StringC
-import typings.testcafeReporterDashboard.commonMod.MaxLengthString
+import typings.testcafeReporterDashboard.libTypesCommonMod.MaxLengthString
 import typings.testcafeReporterDashboard.testcafeReporterDashboardInts.`10`
 import typings.testcafeReporterDashboard.testcafeReporterDashboardInts.`300`
 import org.scalablytyped.runtime.StObject

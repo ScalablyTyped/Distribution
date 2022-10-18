@@ -1,6 +1,6 @@
 package typings.reactOverlays.anon
 
-import typings.popperjsCore.typesMod.Rect
+import typings.popperjsCore.libTypesMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,8 +1,9 @@
 package typings.dockerode.mod
 
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,15 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Container protected () extends StObject {
   def this(modem: Any, id: String) = this()
   
-  def attach(options: js.Object): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ] = js.native
-  def attach(
-    options: js.Object,
-    callback: Callback[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-    ]
-  ): Unit = js.native
+  def attach(options: js.Object): js.Promise[ReadWriteStream] = js.native
+  def attach(options: js.Object, callback: Callback[ReadWriteStream]): Unit = js.native
   
   def changes(): js.Promise[Any] = js.native
   def changes(callback: Callback[Any]): Unit = js.native
@@ -43,13 +37,13 @@ open class Container protected () extends StObject {
   def exec(options: ExecCreateOptions): js.Promise[Exec] = js.native
   def exec(options: ExecCreateOptions, callback: Callback[Exec]): Unit = js.native
   
-  def `export`(): js.Promise[ReadableStream[Any]] = js.native
-  def `export`(callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def `export`(options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def `export`(options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def `export`(): js.Promise[ReadableStream] = js.native
+  def `export`(callback: Callback[ReadableStream]): Unit = js.native
+  def `export`(options: js.Object): js.Promise[ReadableStream] = js.native
+  def `export`(options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
-  def getArchive(options: js.Object): js.Promise[ReadableStream[Any]] = js.native
-  def getArchive(options: js.Object, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def getArchive(options: js.Object): js.Promise[ReadableStream] = js.native
+  def getArchive(options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
   
   var id: String = js.native
   
@@ -66,10 +60,10 @@ open class Container protected () extends StObject {
   def kill(options: js.Object): js.Promise[Any] = js.native
   def kill(options: js.Object, callback: Callback[Any]): Unit = js.native
   
-  def logs(): js.Promise[ReadableStream[Any]] = js.native
-  def logs(callback: Callback[ReadableStream[Any]]): Unit = js.native
-  def logs(options: ContainerLogsOptions): js.Promise[ReadableStream[Any]] = js.native
-  def logs(options: ContainerLogsOptions, callback: Callback[ReadableStream[Any]]): Unit = js.native
+  def logs(): js.Promise[ReadableStream] = js.native
+  def logs(callback: Callback[ReadableStream]): Unit = js.native
+  def logs(options: ContainerLogsOptions): js.Promise[ReadableStream] = js.native
+  def logs(options: ContainerLogsOptions, callback: Callback[ReadableStream]): Unit = js.native
   
   var modem: Any = js.native
   
@@ -78,19 +72,13 @@ open class Container protected () extends StObject {
   def pause(options: js.Object): js.Promise[Any] = js.native
   def pause(options: js.Object, callback: Callback[Any]): Unit = js.native
   
-  def putArchive(file: String, options: js.Object): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ] = js.native
+  def putArchive(file: String, options: js.Object): js.Promise[ReadWriteStream] = js.native
   /** @param file Filename (will read synchronously), Buffer or stream */
-  def putArchive(file: String, options: js.Object, callback: Callback[WritableStream[Any]]): Unit = js.native
-  def putArchive(file: Buffer, options: js.Object): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ] = js.native
-  def putArchive(file: Buffer, options: js.Object, callback: Callback[WritableStream[Any]]): Unit = js.native
-  def putArchive(file: ReadableStream[Any], options: js.Object): js.Promise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ] = js.native
-  def putArchive(file: ReadableStream[Any], options: js.Object, callback: Callback[WritableStream[Any]]): Unit = js.native
+  def putArchive(file: String, options: js.Object, callback: Callback[WritableStream]): Unit = js.native
+  def putArchive(file: ReadableStream, options: js.Object): js.Promise[ReadWriteStream] = js.native
+  def putArchive(file: ReadableStream, options: js.Object, callback: Callback[WritableStream]): Unit = js.native
+  def putArchive(file: Buffer, options: js.Object): js.Promise[ReadWriteStream] = js.native
+  def putArchive(file: Buffer, options: js.Object, callback: Callback[WritableStream]): Unit = js.native
   
   def remove(): js.Promise[Any] = js.native
   def remove(callback: Callback[Any]): Unit = js.native

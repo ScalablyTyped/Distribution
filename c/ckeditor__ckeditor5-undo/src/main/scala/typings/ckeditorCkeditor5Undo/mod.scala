@@ -3,7 +3,7 @@ package typings.ckeditorCkeditor5Undo
 import typings.ckeditorCkeditor5Undo.anon.TypeofUndoEditing
 import typings.ckeditorCkeditor5Undo.anon.TypeofUndoUI
 import typings.ckeditorCkeditor5Undo.ckeditorCkeditor5UndoStrings.UndoUI
-import typings.ckeditorCkeditor5Undo.undoMod.default
+import typings.ckeditorCkeditor5Undo.srcUndoMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +28,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-undo", "UndoEditing")
   @js.native
   open class UndoEditing ()
-    extends typings.ckeditorCkeditor5Undo.undoeditingMod.default
+    extends typings.ckeditorCkeditor5Undo.srcUndoeditingMod.default
   /* static members */
   object UndoEditing {
     
@@ -40,7 +40,7 @@ object mod {
   @JSImport("@ckeditor/ckeditor5-undo", "UndoUi")
   @js.native
   open class UndoUi ()
-    extends typings.ckeditorCkeditor5Undo.undouiMod.default
+    extends typings.ckeditorCkeditor5Undo.srcUndouiMod.default
   /* static members */
   object UndoUi {
     

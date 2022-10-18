@@ -1,22 +1,22 @@
 package typings.storybookReact
 
+import typings.node.NodeModule
 import typings.std.Exclude
 import typings.std.Pick
-import typings.storybookAddons.typesMod.DecoratorFunction
-import typings.storybookAddons.typesMod.Loadable
-import typings.storybookAddons.typesMod.Parameters
-import typings.storybookAddons.typesMod.StoryApi
+import typings.storybookAddons.distTs3Dot9TypesMod.DecoratorFunction
+import typings.storybookAddons.distTs3Dot9TypesMod.Loadable
+import typings.storybookAddons.distTs3Dot9TypesMod.Parameters
+import typings.storybookAddons.distTs3Dot9TypesMod.StoryApi
 import typings.storybookReact.anon.Call
-import typings.storybookReact.previewTypesMod.IStorybookSection
+import typings.storybookReact.distTs3Dot9ClientPreviewTypes60Mod.Meta
+import typings.storybookReact.distTs3Dot9ClientPreviewTypes60Mod.ReactFramework
+import typings.storybookReact.distTs3Dot9ClientPreviewTypesMod.IStorybookSection
 import typings.storybookReact.storybookReactStrings.__esModule
 import typings.storybookReact.storybookReactStrings.__namedExportsOrder
 import typings.storybookReact.storybookReactStrings.default
-import typings.storybookReact.types60Mod.Meta
-import typings.storybookReact.types60Mod.ReactFramework
-import typings.storybookStore.typesMod.CSFExports
-import typings.storybookStore.typesMod.ComposedStory
-import typings.storybookStore.typesMod.StoriesWithPartialProps
-import typings.webpackEnv.NodeModule
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.CSFExports
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.ComposedStory
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.StoriesWithPartialProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

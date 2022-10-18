@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the capabilities of receipt station of a point-of-service printer. */
-@JSGlobal("Windows.Devices.PointOfService.ReceiptPrinterCapabilities")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.ReceiptPrinterCapabilities")
 @js.native
-abstract class ReceiptPrinterCapabilities ()
+open class ReceiptPrinterCapabilities ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.ReceiptPrinterCapabilities {
   

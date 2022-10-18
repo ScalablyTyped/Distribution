@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "Options")
 @js.native
 open class Options protected ()
-  extends typings.typedoc.libUtilsMod.Options {
-  def this(logger: typings.typedoc.loggersMod.Logger) = this()
+  extends typings.typedoc.distLibUtilsMod.Options {
+  def this(logger: typings.typedoc.distLibUtilsLoggersMod.Logger) = this()
 }

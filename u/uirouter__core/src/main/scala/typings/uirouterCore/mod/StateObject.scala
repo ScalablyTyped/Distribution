@@ -1,7 +1,7 @@
 package typings.uirouterCore.mod
 
-import typings.uirouterCore.stateInterfaceMod.StateDeclaration
-import typings.uirouterCore.stateInterfaceMod._StateDeclaration
+import typings.uirouterCore.libStateInterfaceMod.StateDeclaration
+import typings.uirouterCore.libStateInterfaceMod._StateDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** @deprecated use State.create() */
 open class StateObject ()
-  extends typings.uirouterCore.stateMod.StateObject {
+  extends typings.uirouterCore.libStateMod.StateObject {
   def this(config: StateDeclaration) = this()
 }
 /* static members */
@@ -28,7 +28,7 @@ object StateObject {
     * @param stateDecl the user-supplied State Declaration
     * @returns {StateObject} an internal State object
     */
-  inline def create(stateDecl: _StateDeclaration): typings.uirouterCore.stateObjectMod.StateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.stateObjectMod.StateObject]
+  inline def create(stateDecl: _StateDeclaration): typings.uirouterCore.libStateStateObjectMod.StateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(stateDecl.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.libStateStateObjectMod.StateObject]
   
   /** Predicate which returns true if the object is an internal [[StateObject]] object */
   inline def isState(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/stateObject.StateObject */ Boolean]

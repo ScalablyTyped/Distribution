@@ -3,10 +3,11 @@ package typings.reduxOrm
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.reduxOrm.anon.GetId
 import typings.reduxOrm.anon.TypeofQuerySet
-import typings.reduxOrm.databaseMod.QueryClause
+import typings.reduxOrm.dbDatabaseMod.QueryClause
+import typings.reduxOrm.dbTableMod.IdAttribute
+import typings.reduxOrm.dbTableMod.ModelTableOpts
+import typings.reduxOrm.dbTableMod.TableOpts
 import typings.reduxOrm.fieldsMod.AttributeWithDefault
 import typings.reduxOrm.fieldsMod.FieldSpecMap
 import typings.reduxOrm.fieldsMod.ForeignKey
@@ -20,9 +21,6 @@ import typings.reduxOrm.querySetMod.QuerySet.QueryBuilder
 import typings.reduxOrm.querySetMod.QuerySet.SortIteratee
 import typings.reduxOrm.querySetMod.QuerySet.SortOrder
 import typings.reduxOrm.sessionMod.OrmSession
-import typings.reduxOrm.tableMod.IdAttribute
-import typings.reduxOrm.tableMod.ModelTableOpts
-import typings.reduxOrm.tableMod.TableOpts
 import typings.std.Exclude
 import typings.std.Extract
 import typings.std.InstanceType
@@ -314,11 +312,33 @@ object modelMod {
   
   type IdKey[M /* <: AnyModel */] = IdAttribute[ModelClass[M]]
   
-  type IdKeyOpt[M /* <: AnyModel */] = IdKey[M]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    redux-orm.redux-orm/Model.IdType<M> extends number ? redux-orm.redux-orm/Model.IdKey<M> : never
+    }}}
+    */
+  @js.native
+  trait IdKeyOpt[M /* <: AnyModel */] extends StObject
   
-  type IdOrModelLike[M /* <: Model[Instantiable0[AnyModel], Any] */] = IdType[M] | GetId[M]
+  /* Rewritten from type alias, can be one of: 
+    - typings.reduxOrm.modelMod.IdType[M]
+    - typings.reduxOrm.anon.GetId[M]
+  */
+  trait IdOrModelLike[M /* <: Model[Instantiable0[AnyModel], Any] */] extends StObject
   
-  type IdType[M /* <: Model[Instantiable0[AnyModel], Any] */] = Double | (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[any] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    redux-orm.redux-orm/Model.IdKey<M> extends infer U ? U extends keyof redux-orm.redux-orm/Model.ModelFields<M> ? redux-orm.redux-orm/Model.ModelFields<M>[U] extends string | number ? redux-orm.redux-orm/Model.ModelFields<M>[U] : never : number : number
+    }}}
+    */
+  @js.native
+  trait IdType[M /* <: Model[Instantiable0[AnyModel], Any] */]
+    extends StObject
+       with IdOrModelLike[M]
   
   @js.native
   trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] extends StObject {
@@ -346,7 +366,7 @@ object modelMod {
       * Gets the id value of the current instance by looking up the id attribute.
       * @return The id value of the current instance.
       */
-    def getId[Id /* <: /* import warning: importer.ImportType#apply Failed type conversion: Fields[redux-orm.redux-orm/db/Table.IdAttribute<MClass>] */ js.Any */](): Id | Double = js.native
+    def getId[Id /* <: /* import warning: importer.ImportType#apply Failed type conversion: Fields[redux-orm.redux-orm/db/Table.IdAttribute<MClass>] */ js.Any */](): /* import warning: importer.ImportType#apply Failed type conversion: Id extends undefined ? number : Id */ js.Any = js.native
     
     /**
       * Returns a reference to the plain JS object in the store.
@@ -380,9 +400,15 @@ object modelMod {
     def update(userMergeObj: UpdateProps[InstanceType[MClass]]): Unit = js.native
   }
   
-  type ModelBlueprint[M /* <: AnyModel */, Fields /* <: Required[ModelFields[M]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Fields ]: Fields[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdOrModelLike<Fields[K]> : Fields[K] extends redux-orm.redux-orm/QuerySet.MutableQuerySet<infer RM, {}>? std.ReadonlyArray<redux-orm.redux-orm/Model.IdOrModelLike<any>> : Fields[K]}
-    */ typings.reduxOrm.reduxOrmStrings.ModelBlueprint & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof Fields ]: Fields[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdOrModelLike<Fields[K]> : Fields[K] extends redux-orm.redux-orm/QuerySet.MutableQuerySet<infer RM, {}>? std.ReadonlyArray<redux-orm.redux-orm/Model.IdOrModelLike<RM>> : Fields[K]}
+    }}}
+    */
+  @js.native
+  trait ModelBlueprint[M /* <: AnyModel */, Fields /* <: Required[ModelFields[M]] */] extends StObject
   
   type ModelClass[M /* <: AnyModel */] = ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: M['getClass'] */ js.Any
@@ -401,7 +427,15 @@ object modelMod {
     }
   }
   
-  type ModelFields[M /* <: Model[Instantiable0[AnyModel], Any] */] = Any
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    std.ConstructorParameters<redux-orm.redux-orm/Model.ModelClass<M>> extends [infer U] ? U extends redux-orm.redux-orm/Model.ModelFieldMap ? U : never : never
+    }}}
+    */
+  @js.native
+  trait ModelFields[M /* <: Model[Instantiable0[AnyModel], Any] */] extends StObject
   
   @js.native
   trait ModelType[M /* <: AnyModel */]
@@ -458,22 +492,41 @@ object modelMod {
   
   type Primitive = Double | String | Boolean
   
-  type Ref[M /* <: AnyModel */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>> ]: redux-orm.redux-orm/Model.ModelFields<M>[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdType<redux-orm.redux-orm/Model.ModelFields<M>[K]> : redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>>[K]}
-    */ typings.reduxOrm.reduxOrmStrings.Ref & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>> ]: redux-orm.redux-orm/Model.ModelFields<M>[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdType<redux-orm.redux-orm/Model.ModelFields<M>[K]> : redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>>[K]}
+    }}}
+    */
+  @js.native
+  trait Ref[M /* <: AnyModel */] extends StObject
   
   type RefFields[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] = Omit[ModelFields[M], Extract[K, FieldSpecKeys[M, ManyToMany]]]
   
-  type RefPropOrSimple[M /* <: AnyModel */, K /* <: String */] = Serializable | (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.Ref<M>[K] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    K extends keyof redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>> ? redux-orm.redux-orm/Model.Ref<M>[K] : redux-orm.redux-orm/Model.Serializable
+    }}}
+    */
+  @js.native
+  trait RefPropOrSimple[M /* <: AnyModel */, K /* <: String */] extends StObject
   
   type Serializable = js.UndefOr[Primitive | js.Array[Primitive] | (StringDictionary[Any | js.Array[Any]])]
   
-  type SessionBoundModel[M /* <: Model[Instantiable0[AnyModel], Any] */, InstanceProps /* <: js.Object */] = M & typings.reduxOrm.reduxOrmStrings.SessionBoundModel & TopLevel[Any] & InstanceProps
+  type SessionBoundModel[M /* <: Model[Instantiable0[AnyModel], Any] */, InstanceProps /* <: js.Object */] = M & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof redux-orm.redux-orm/Model.ModelFields<M> ]: redux-orm.redux-orm/Model.SessionBoundModelField<M, K>} */ js.Any) & InstanceProps
   
-  type SessionBoundModelField[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[K] */ js.Any) | (SessionBoundModel[
-    /* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[K] */ js.Any, 
-    js.Object
-  ])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    redux-orm.redux-orm/Model.ModelFields<M>[K] extends redux-orm.redux-orm/Model.AnyModel ? redux-orm.redux-orm/Model.SessionBoundModel<redux-orm.redux-orm/Model.ModelFields<M>[K], {}> : redux-orm.redux-orm/Model.ModelFields<M>[K]
+    }}}
+    */
+  @js.native
+  trait SessionBoundModelField[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] extends StObject
   
   type UpdateProps[M /* <: AnyModel */] = BlueprintProps[
     M, 

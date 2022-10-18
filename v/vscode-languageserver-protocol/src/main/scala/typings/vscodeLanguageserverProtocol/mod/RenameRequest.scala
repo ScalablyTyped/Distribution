@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.RenameParams
-import typings.vscodeLanguageserverProtocol.protocolMod.RenameRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.RenameParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.RenameRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashrename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object RenameRequest {
   
   @JSImport("vscode-languageserver-protocol", "RenameRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "RenameRequest.method")
   @js.native
@@ -19,7 +19,7 @@ object RenameRequest {
   
   @JSImport("vscode-languageserver-protocol", "RenameRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     RenameParams, 
     typings.vscodeLanguageserverTypes.mod.WorkspaceEdit | Null, 
     scala.Nothing, 

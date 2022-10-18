@@ -1,7 +1,7 @@
 package typings.relayRuntime.anon
 
-import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
-import typings.relayRuntime.relayRuntimeTypesMod.FetchQueryFetchPolicy
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.FetchQueryFetchPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

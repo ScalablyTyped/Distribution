@@ -1,6 +1,6 @@
 package typings.storybookApi.anon
 
-import typings.storybookApi.refsMod.ComposedRef
+import typings.storybookApi.distTs3Dot9ModulesRefsMod.ComposedRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

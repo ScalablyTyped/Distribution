@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.toasterMod.IToasterProps
-import typings.blueprintjsCore.toasterMod.ToasterInstance
+import typings.blueprintjsCore.libEsmComponentsToastToasterMod.IToasterProps
+import typings.blueprintjsCore.libEsmComponentsToastToasterMod.ToasterInstance
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "OverlayToaster")
 @js.native
 open class OverlayToaster ()
-  extends typings.blueprintjsCore.toasterMod.Toaster
+  extends typings.blueprintjsCore.libEsmComponentsToastToasterMod.Toaster
 object OverlayToaster {
   
   @JSImport("@blueprintjs/core", "OverlayToaster")

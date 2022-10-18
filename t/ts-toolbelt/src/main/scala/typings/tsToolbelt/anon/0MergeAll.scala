@@ -1,15 +1,15 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.objectInternalMod.Depth
-import typings.tsToolbelt.objectMergeAllMod.__MergeAll
-import typings.tsToolbelt.objectMergeMod.Merge
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outObjectInternalMod.Depth
+import typings.tsToolbelt.outObjectMergeAllMod.__MergeAll
+import typings.tsToolbelt.outObjectMergeMod.Merge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0MergeAll`[O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] extends StObject {
+trait `0MergeAll`[O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] extends StObject {
   
   var `0`: __MergeAll[
     Merge[
@@ -30,7 +30,7 @@ trait `0MergeAll`[O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List
 }
 object `0MergeAll` {
   
-  inline def apply[O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](
+  inline def apply[O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](
     `0`: __MergeAll[
       Merge[
         O, 
@@ -53,7 +53,7 @@ object `0MergeAll` {
     __obj.asInstanceOf[`0MergeAll`[O, Os, I, depth, ignore, fill]]
   }
   
-  extension [Self <: `0MergeAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0MergeAll`[O, Os, I, depth, ignore, fill])) {
+  extension [Self <: `0MergeAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0MergeAll`[O, Os, I, depth, ignore, fill])) {
     
     inline def set0(
       value: __MergeAll[

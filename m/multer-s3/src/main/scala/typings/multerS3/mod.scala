@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.Shortcut
 import typings.expressServeStaticCore.Express.Request
 import typings.multer.mod.StorageEngine
 import typings.multer.mod.global.Express.Multer.File
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +60,7 @@ object mod extends Shortcut {
           /* callback */ js.Function3[
             /* error */ Any, 
             /* mime */ js.UndefOr[String], 
-            /* stream */ js.UndefOr[ReadableStream[Any]], 
+            /* stream */ js.UndefOr[ReadableStream], 
             Unit
           ], 
           Unit
@@ -175,7 +175,7 @@ object mod extends Shortcut {
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function3[
               /* error */ Any, 
               /* mime */ js.UndefOr[String], 
-              /* stream */ js.UndefOr[ReadableStream[Any]], 
+              /* stream */ js.UndefOr[ReadableStream], 
               Unit
             ]) => Unit
       ): Self = StObject.set(x, "contentType", js.Any.fromFunction3(value))
@@ -227,7 +227,7 @@ object mod extends Shortcut {
       callback: js.Function3[
           /* error */ Any, 
           /* mime */ js.UndefOr[String], 
-          /* stream */ js.UndefOr[ReadableStream[Any]], 
+          /* stream */ js.UndefOr[ReadableStream], 
           Unit
         ]
     ): Unit = js.native

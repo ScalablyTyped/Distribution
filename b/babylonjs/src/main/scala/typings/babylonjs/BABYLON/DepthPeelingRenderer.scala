@@ -37,6 +37,8 @@ trait DepthPeelingRenderer extends StObject {
   
   /* private */ var _engine: Any = js.native
   
+  /* private */ var _excludedMeshes: Any = js.native
+  
   /* private */ var _excludedSubMeshes: Any = js.native
   
   /* private */ var _finalCompose: Any = js.native
@@ -70,6 +72,12 @@ trait DepthPeelingRenderer extends StObject {
   /* private */ var _useRenderPasses: Any = js.native
   
   /**
+    * Add a mesh in the exclusion list to prevent it to be handled by the depth peeling renderer
+    * @param mesh The mesh to exclude from the depth peeling renderer
+    */
+  def addExcludedMesh(mesh: AbstractMesh): Unit = js.native
+  
+  /**
     * Binds depth peeling textures on an effect
     * @param effect The effect to bind textures on
     */
@@ -85,6 +93,12 @@ trait DepthPeelingRenderer extends StObject {
     */
   def passCount: Double = js.native
   def passCount_=(count: Double): Unit = js.native
+  
+  /**
+    * Remove a mesh from the exclusion list of the depth peeling renderer
+    * @param mesh The mesh to remove
+    */
+  def removeExcludedMesh(mesh: AbstractMesh): Unit = js.native
   
   /**
     * Renders transparent submeshes with depth peeling

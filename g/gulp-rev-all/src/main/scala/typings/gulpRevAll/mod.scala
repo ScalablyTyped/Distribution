@@ -1,6 +1,7 @@
 package typings.gulpRevAll
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +15,12 @@ object mod extends Shortcut {
   @js.native
   trait GulpRevAll extends StObject {
     
-    def manifestFile(): Any = js.native
+    def manifestFile(): ReadWriteStream = js.native
     
-    def revision(): Any = js.native
-    def revision(options: Options): Any = js.native
+    def revision(): ReadWriteStream = js.native
+    def revision(options: Options): ReadWriteStream = js.native
     
-    def versionFile(): Any = js.native
+    def versionFile(): ReadWriteStream = js.native
   }
   
   trait Options extends StObject {

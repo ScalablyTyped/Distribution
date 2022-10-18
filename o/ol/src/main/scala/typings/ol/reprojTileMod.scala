@@ -12,9 +12,9 @@ object reprojTileMod {
   @js.native
   open class default protected () extends ReprojTile {
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -23,9 +23,9 @@ object reprojTileMod {
       getTileFunction: FunctionType
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -35,9 +35,9 @@ object reprojTileMod {
       opt_errorThreshold: Double
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -48,9 +48,9 @@ object reprojTileMod {
       opt_renderEdges: Boolean
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -61,9 +61,9 @@ object reprojTileMod {
       opt_renderEdges: Boolean
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -75,9 +75,9 @@ object reprojTileMod {
       opt_contextOptions: Any
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -89,9 +89,9 @@ object reprojTileMod {
       opt_contextOptions: Any
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -103,9 +103,9 @@ object reprojTileMod {
       opt_contextOptions: Any
     ) = this()
     def this(
-      sourceProj: typings.ol.projectionMod.default,
+      sourceProj: typings.ol.projProjectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projProjectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -123,12 +123,12 @@ object reprojTileMod {
     /* p1 */ Double, 
     /* p2 */ Double, 
     /* p3 */ Double, 
-    typings.ol.olTileMod.default
+    typings.ol.tileMod.default
   ]
   
   @js.native
   trait ReprojTile
-    extends typings.ol.olTileMod.default {
+    extends typings.ol.tileMod.default {
     
     /**
       * Get the HTML Canvas element for this tile.

@@ -1,6 +1,6 @@
 package typings.antd.anon
 
-import typings.antd.anchorAnchorMod.AntAnchor
+import typings.antd.libAnchorAnchorMod.AntAnchor
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.muicss.reactMod
 
-import typings.muicss.radioMod.default
+import typings.muicss.libReactRadioMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

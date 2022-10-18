@@ -21,29 +21,29 @@ object mod {
   
   type Blockstore = typings.interfaceBlockstore.mod.Blockstore
   
-  type BufferImporter = typings.ipfsUnixfsImporter.typesMod.BufferImporter
+  type BufferImporter = typings.ipfsUnixfsImporter.distSrcTypesMod.BufferImporter
   
-  type ChunkValidator = typings.ipfsUnixfsImporter.typesMod.ChunkValidator
+  type ChunkValidator = typings.ipfsUnixfsImporter.distSrcTypesMod.ChunkValidator
   
-  type Chunker = typings.ipfsUnixfsImporter.typesMod.Chunker
+  type Chunker = typings.ipfsUnixfsImporter.distSrcTypesMod.Chunker
   
-  type DAGBuilder = typings.ipfsUnixfsImporter.typesMod.DAGBuilder
+  type DAGBuilder = typings.ipfsUnixfsImporter.distSrcTypesMod.DAGBuilder
   
-  type Directory = typings.ipfsUnixfsImporter.typesMod.Directory
+  type Directory = typings.ipfsUnixfsImporter.distSrcTypesMod.Directory
   
-  type File = typings.ipfsUnixfsImporter.typesMod.File
+  type File = typings.ipfsUnixfsImporter.distSrcTypesMod.File
   
-  type ImportCandidate = typings.ipfsUnixfsImporter.typesMod.ImportCandidate
+  type ImportCandidate = typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate
   
-  type ImportResult = typings.ipfsUnixfsImporter.typesMod.ImportResult
+  type ImportResult = typings.ipfsUnixfsImporter.distSrcTypesMod.ImportResult
   
-  type ImporterOptions = typings.ipfsUnixfsImporter.typesMod.ImporterOptions
+  type ImporterOptions = typings.ipfsUnixfsImporter.distSrcTypesMod.ImporterOptions
   
-  type ProgressHandler = typings.ipfsUnixfsImporter.typesMod.ProgressHandler
+  type ProgressHandler = typings.ipfsUnixfsImporter.distSrcTypesMod.ProgressHandler
   
-  type Reducer = typings.ipfsUnixfsImporter.typesMod.Reducer
+  type Reducer = typings.ipfsUnixfsImporter.distSrcTypesMod.Reducer
   
-  type TreeBuilder = typings.ipfsUnixfsImporter.typesMod.TreeBuilder
+  type TreeBuilder = typings.ipfsUnixfsImporter.distSrcTypesMod.TreeBuilder
   
-  type UserImporterOptions = typings.ipfsUnixfsImporter.typesMod.UserImporterOptions
+  type UserImporterOptions = typings.ipfsUnixfsImporter.distSrcTypesMod.UserImporterOptions
 }

@@ -22,8 +22,8 @@ trait Instrument extends StObject {
     *
     * @return A new Instrument instance with the same options.
     */
-  def copy(): typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument = js.native
-  def copy(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentOptionsObject): typings.highcharts.sonificationMod.highchartsAugmentingMod.Instrument = js.native
+  def copy(): typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument = js.native
+  def copy(options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.InstrumentOptionsObject): typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Instrument = js.native
   
   /**
     * Mute an instrument that is playing. If the instrument is not
@@ -37,7 +37,9 @@ trait Instrument extends StObject {
     * @param options
     *        Options for the playback of the instrument.
     */
-  def play(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject): Unit = js.native
+  def play(
+    options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.InstrumentPlayOptionsObject
+  ): Unit = js.native
   
   /**
     * Stop the instrument playing.

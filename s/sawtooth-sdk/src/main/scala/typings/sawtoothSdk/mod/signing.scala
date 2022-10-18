@@ -1,7 +1,7 @@
 package typings.sawtoothSdk.mod
 
-import typings.sawtoothSdk.coreMod.Context
-import typings.sawtoothSdk.coreMod.PrivateKey
+import typings.sawtoothSdk.signingCoreMod.Context
+import typings.sawtoothSdk.signingCoreMod.PrivateKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

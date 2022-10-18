@@ -1,6 +1,6 @@
 package typings.reactIntl.anon
 
-import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
+import typings.formatjsIcuMessageformatParser.typesMod.MessageFormatElement
 import typings.formatjsIntl.srcErrorMod.InvalidConfigError
 import typings.formatjsIntl.srcErrorMod.MessageFormatError
 import typings.formatjsIntl.srcErrorMod.MissingDataError
@@ -46,7 +46,7 @@ trait ReadonlyIntlConfig extends StObject {
   val onWarn: js.UndefOr[OnWarnFn] = js.undefined
   
   val textComponent: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
   ] = js.undefined
   
   val timeZone: js.UndefOr[String] = js.undefined
@@ -103,7 +103,9 @@ object ReadonlyIntlConfig {
     
     inline def setOnWarnUndefined: Self = StObject.set(x, "onWarn", js.undefined)
     
-    inline def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
+    inline def setTextComponent(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+    ): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
     
     inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
     

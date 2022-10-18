@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "SourceReference")
 @js.native
 open class SourceReference protected ()
-  extends typings.typedoc.modelsMod.SourceReference {
+  extends typings.typedoc.distLibModelsMod.SourceReference {
   def this(fileName: String, line: Double, character: Double) = this()
 }

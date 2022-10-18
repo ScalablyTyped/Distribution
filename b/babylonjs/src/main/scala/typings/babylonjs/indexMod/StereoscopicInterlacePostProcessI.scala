@@ -20,36 +20,36 @@ open class StereoscopicInterlacePostProcessI protected ()
     */
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Double
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine
+    engine: typings.babylonjs.enginesEngineMod.Engine
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Double,
@@ -58,16 +58,16 @@ open class StereoscopicInterlacePostProcessI protected ()
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Double,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Unit,
@@ -76,11 +76,11 @@ open class StereoscopicInterlacePostProcessI protected ()
   ) = this()
   def this(
     name: String,
-    rigCameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    rigCameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     isStereoscopicHoriz: Boolean,
     isStereoscopicInterlaced: Boolean,
     samplingMode: Unit,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     reusable: Boolean
   ) = this()
 }

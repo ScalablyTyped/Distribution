@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Icon")
 @js.native
 open class Icon protected ()
-  extends typings.blueprintjsCore.componentsMod.Icon {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Icon {
   def this(props: IconPropsOmitHTMLAttribut) = this()
   def this(props: IconPropsOmitHTMLAttribut, context: Any) = this()
 }

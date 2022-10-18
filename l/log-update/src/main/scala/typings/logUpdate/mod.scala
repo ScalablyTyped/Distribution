@@ -1,6 +1,6 @@
 package typings.logUpdate
 
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,8 +35,8 @@ object mod {
   @js.native
   val default: (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = js.native
   
-  inline def createLogUpdate(stream: WritableStream[Any]): (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogUpdate")(stream.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods]
-  inline def createLogUpdate(stream: WritableStream[Any], options: Options): (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogUpdate")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods]
+  inline def createLogUpdate(stream: WritableStream): (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogUpdate")(stream.asInstanceOf[js.Any]).asInstanceOf[(js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods]
+  inline def createLogUpdate(stream: WritableStream, options: Options): (js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogUpdate")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(js.Function1[/* repeated */ String, Unit]) & LogUpdateMethods]
   
   /**
   Log to `stderr` by overwriting the previous output in the terminal.

@@ -1,9 +1,6 @@
 package typings.joi.mod
 
-import typings.joi.anon.ArtifactsMap
 import typings.joi.anon.Override
-import typings.joi.anon.ValueTSchema
-import typings.joi.anon.Warning
 import typings.joi.joiStrings.map
 import typings.joi.joiStrings.number
 import typings.joi.joiStrings.set
@@ -16,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AnySchema[TSchema]
   extends StObject
-     with SchemaInternals {
+     with SchemaInternals
+     with Schema[TSchema] {
   
   /**
     * Sets a default value if the original value is `undefined` where:
@@ -370,10 +368,10 @@ trait AnySchema[TSchema]
     * Validates a value using the schema and options.
     */
   def validateAsync[TOpts /* <: AsyncValidationOptions */](value: Any): js.Promise[
-    TSchema | (ValueTSchema[TSchema] & (js.Object | ArtifactsMap) & (js.Object | Warning))
+    /* import warning: importer.ImportType#apply Failed type conversion: TOpts extends {  artifacts :true} | {  warnings :true} ? {  value :TSchema} & TOpts extends {  artifacts :true} ? {  artifacts :std.Map<any, std.Array<std.Array<string>>>} : {} & TOpts extends {  warnings :true} ? {  warning :std.Array<joi.joi.ValidationError>} : {} : TSchema */ js.Any
   ] = js.native
   def validateAsync[TOpts /* <: AsyncValidationOptions */](value: Any, options: TOpts): js.Promise[
-    TSchema | (ValueTSchema[TSchema] & (js.Object | ArtifactsMap) & (js.Object | Warning))
+    /* import warning: importer.ImportType#apply Failed type conversion: TOpts extends {  artifacts :true} | {  warnings :true} ? {  value :TSchema} & TOpts extends {  artifacts :true} ? {  artifacts :std.Map<any, std.Array<std.Array<string>>>} : {} & TOpts extends {  warnings :true} ? {  warning :std.Array<joi.joi.ValidationError>} : {} : TSchema */ js.Any
   ] = js.native
   
   /**

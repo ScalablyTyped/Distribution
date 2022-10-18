@@ -19,7 +19,7 @@ object mod {
   @JSImport("react-syntax-highlighter", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.reactSyntaxHighlighter.esmDefaultHighlightMod.default
+    extends typings.reactSyntaxHighlighter.distEsmDefaultHighlightMod.default
   /* static members */
   object default {
     
@@ -36,7 +36,7 @@ object mod {
   @JSImport("react-syntax-highlighter", "Light")
   @js.native
   open class Light ()
-    extends typings.reactSyntaxHighlighter.esmLightMod.default
+    extends typings.reactSyntaxHighlighter.distEsmLightMod.default
   /* static members */
   object Light {
     
@@ -50,7 +50,7 @@ object mod {
   @JSImport("react-syntax-highlighter", "LightAsync")
   @js.native
   open class LightAsync ()
-    extends typings.reactSyntaxHighlighter.esmLightAsyncMod.default
+    extends typings.reactSyntaxHighlighter.distEsmLightAsyncMod.default
   /* static members */
   object LightAsync {
     
@@ -64,7 +64,7 @@ object mod {
   @JSImport("react-syntax-highlighter", "Prism")
   @js.native
   open class Prism ()
-    extends typings.reactSyntaxHighlighter.esmPrismMod.default
+    extends typings.reactSyntaxHighlighter.distEsmPrismMod.default
   /* static members */
   object Prism {
     
@@ -81,12 +81,12 @@ object mod {
   @JSImport("react-syntax-highlighter", "PrismAsync")
   @js.native
   open class PrismAsync ()
-    extends typings.reactSyntaxHighlighter.esmPrismAsyncMod.default
+    extends typings.reactSyntaxHighlighter.distEsmPrismAsyncMod.default
   
   @JSImport("react-syntax-highlighter", "PrismAsyncLight")
   @js.native
   open class PrismAsyncLight ()
-    extends typings.reactSyntaxHighlighter.esmPrismAsyncLightMod.default
+    extends typings.reactSyntaxHighlighter.distEsmPrismAsyncLightMod.default
   /* static members */
   object PrismAsyncLight {
     
@@ -100,7 +100,7 @@ object mod {
   @JSImport("react-syntax-highlighter", "PrismLight")
   @js.native
   open class PrismLight ()
-    extends typings.reactSyntaxHighlighter.esmPrismLightMod.default
+    extends typings.reactSyntaxHighlighter.distEsmPrismLightMod.default
   /* static members */
   object PrismLight {
     
@@ -118,11 +118,11 @@ object mod {
        with /* spread */ StringDictionary[Any] {
     
     var CodeTag: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
       ] = js.undefined
     
     var PreTag: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
       ] = js.undefined
     
     var children: String | js.Array[String]
@@ -168,7 +168,9 @@ object mod {
       
       inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setCodeTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "CodeTag", value.asInstanceOf[js.Any])
+      inline def setCodeTag(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+      ): Self = StObject.set(x, "CodeTag", value.asInstanceOf[js.Any])
       
       inline def setCodeTagProps(value: HTMLProps[HTMLElement]): Self = StObject.set(x, "codeTagProps", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,9 @@ object mod {
       
       inline def setLinePropsUndefined: Self = StObject.set(x, "lineProps", js.undefined)
       
-      inline def setPreTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ Any): Self = StObject.set(x, "PreTag", value.asInstanceOf[js.Any])
+      inline def setPreTag(
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.a, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.abbr, typings.reactSyntaxHighlighter.reactSyntaxHighlighterStrings.address */ Any
+      ): Self = StObject.set(x, "PreTag", value.asInstanceOf[js.Any])
       
       inline def setPreTagUndefined: Self = StObject.set(x, "PreTag", js.undefined)
       

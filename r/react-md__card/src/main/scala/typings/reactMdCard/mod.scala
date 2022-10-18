@@ -2,12 +2,12 @@ package typings.reactMdCard
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdCard.cardActionsMod.CardActionsProps
-import typings.reactMdCard.cardContentMod.CardContentProps
-import typings.reactMdCard.cardHeaderMod.CardHeaderProps
-import typings.reactMdCard.cardMod.CardProps
-import typings.reactMdCard.cardSubtitleMod.CardSubtitleProps
-import typings.reactMdCard.cardTitleMod.CardTitleProps
+import typings.reactMdCard.typesCardActionsMod.CardActionsProps
+import typings.reactMdCard.typesCardContentMod.CardContentProps
+import typings.reactMdCard.typesCardHeaderMod.CardHeaderProps
+import typings.reactMdCard.typesCardMod.CardProps
+import typings.reactMdCard.typesCardSubtitleMod.CardSubtitleProps
+import typings.reactMdCard.typesCardTitleMod.CardTitleProps
 import typings.std.HTMLDivElement
 import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject

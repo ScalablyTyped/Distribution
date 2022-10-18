@@ -1,28 +1,39 @@
 package typings.materialUiTypes
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.LibraryManagedAttributes
-import typings.std.Exclude
 import typings.std.Extract
-import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.materialUiTypes.materialUiTypesStrings.ConsistentWith & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
+    }}}
+    */
+  @js.native
+  trait ConsistentWith[DecorationTargetProps, InjectedProps] extends StObject
   
   type GenerateStringUnion[T] = Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in keyof T ]: true extends T[Key]? Key : never}[keyof T] */ js.Any, 
     String
   ]
   
-  type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends any ? std.Pick<T, std.Exclude<keyof T, K>> : never
+    }}}
+    */
+  @js.native
+  trait Omit[T, K /* <: /* keyof any */ String */] extends StObject
   
   type OverridableStringUnion[T, U] = GenerateStringUnion[Overwrite[T, U]]
   

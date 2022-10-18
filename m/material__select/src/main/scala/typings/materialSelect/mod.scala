@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/select", JSImport.Default)
+  @js.native
+  open class default ()
+    extends typings.materialSelect.iconMod.default {
+    def this(adapter: PartialMDCSelectIconAdapt) = this()
+  }
+  
   @JSImport("@material/select", "MDCSelect")
   @js.native
   open class MDCSelect protected ()

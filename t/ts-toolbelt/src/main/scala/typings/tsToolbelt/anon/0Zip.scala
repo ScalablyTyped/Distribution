@@ -1,14 +1,14 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.appendMod.Append
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.zipMod.__Zip
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outListAppendMod.Append
+import typings.tsToolbelt.outListZipMod.__Zip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0Zip`[L /* <: typings.tsToolbelt.listMod.List[Any] */, L1 /* <: typings.tsToolbelt.listMod.List[Any] */, LN /* <: typings.tsToolbelt.listMod.List[Any] */, I /* <: Iteration */] extends StObject {
+trait `0Zip`[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] extends StObject {
   
   var `0`: __Zip[
     L, 
@@ -27,7 +27,7 @@ trait `0Zip`[L /* <: typings.tsToolbelt.listMod.List[Any] */, L1 /* <: typings.t
 }
 object `0Zip` {
   
-  inline def apply[L /* <: typings.tsToolbelt.listMod.List[Any] */, L1 /* <: typings.tsToolbelt.listMod.List[Any] */, LN /* <: typings.tsToolbelt.listMod.List[Any] */, I /* <: Iteration */](
+  inline def apply[L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](
     `0`: __Zip[
       L, 
       L1, 
@@ -48,7 +48,7 @@ object `0Zip` {
     __obj.asInstanceOf[`0Zip`[L, L1, LN, I]]
   }
   
-  extension [Self <: `0Zip`[?, ?, ?, ?], L /* <: typings.tsToolbelt.listMod.List[Any] */, L1 /* <: typings.tsToolbelt.listMod.List[Any] */, LN /* <: typings.tsToolbelt.listMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Zip`[L, L1, LN, I])) {
+  extension [Self <: `0Zip`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Zip`[L, L1, LN, I])) {
     
     inline def set0(
       value: __Zip[

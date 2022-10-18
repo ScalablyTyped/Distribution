@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a mobile broadband PIN operation. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinOperationResult")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinOperationResult")
 @js.native
-abstract class MobileBroadbandPinOperationResult ()
+open class MobileBroadbandPinOperationResult ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandPinOperationResult {
   

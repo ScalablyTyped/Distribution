@@ -1,36 +1,25 @@
 package typings.recharts.anon
 
+import typings.recharts.mod.AllowEscapeViewBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait X extends StObject {
+trait X
+  extends StObject
+     with AllowEscapeViewBox {
   
-  var x: js.UndefOr[Double | String] = js.undefined
-  
-  var y: js.UndefOr[Double | String] = js.undefined
-  
-  var z: js.UndefOr[Double | String] = js.undefined
+  var x: Boolean
 }
 object X {
   
-  inline def apply(): X = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(x: Boolean): X = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[X]
   }
   
   extension [Self <: X](x: Self) {
     
-    inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-    
-    inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    
-    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
-    
-    inline def setZ(value: Double | String): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
-    
-    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
   }
 }

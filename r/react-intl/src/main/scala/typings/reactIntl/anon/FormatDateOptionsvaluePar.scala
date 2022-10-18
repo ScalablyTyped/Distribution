@@ -39,13 +39,13 @@ trait FormatDateOptionsvaluePar extends StObject {
   var era: js.UndefOr[long | short | narrow] = js.undefined
   
   var format: js.UndefOr[
-    String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['date'] */ js.Any)
+    /* import warning: importer.ImportType#apply Failed type conversion: 'date' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['date'] : string */ js.Any
   ] = js.undefined
   
-  var formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])
+  var formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])
   
   var fractionalSecondDigits: js.UndefOr[
-    typings.reactIntl.reactIntlNumbers.`1` | typings.reactIntl.reactIntlNumbers.`2` | typings.reactIntl.reactIntlNumbers.`3`
+    typings.reactIntl.reactIntlInts.`1` | typings.reactIntl.reactIntlInts.`2` | typings.reactIntl.reactIntlInts.`3`
   ] = js.undefined
   
   var hour: js.UndefOr[numeric | `2-digit`] = js.undefined
@@ -78,7 +78,7 @@ object FormatDateOptionsvaluePar {
   
   inline def apply(
     children: js.Array[DateTimeFormatPart] => ReactElement | Null,
-    formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic]),
+    formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)]),
     value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCall>[0] */ js.Any) | String
   ): FormatDateOptionsvaluePar = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), formatMatcher = formatMatcher.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
@@ -110,15 +110,15 @@ object FormatDateOptionsvaluePar {
     inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
     
     inline def setFormat(
-      value: String | (/* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['date'] */ js.Any)
+      value: /* import warning: importer.ImportType#apply Failed type conversion: 'date' extends keyof @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats ? @formatjs/intl.@formatjs/intl/src/types.<global>.FormatjsIntl.Formats['date'] : string */ js.Any
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatMatcher(value: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+    inline def setFormatMatcher(value: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setFractionalSecondDigits(
-      value: typings.reactIntl.reactIntlNumbers.`1` | typings.reactIntl.reactIntlNumbers.`2` | typings.reactIntl.reactIntlNumbers.`3`
+      value: typings.reactIntl.reactIntlInts.`1` | typings.reactIntl.reactIntlInts.`2` | typings.reactIntl.reactIntlInts.`3`
     ): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
     
     inline def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)

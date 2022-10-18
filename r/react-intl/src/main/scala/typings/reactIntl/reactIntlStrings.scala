@@ -11,10 +11,6 @@ object reactIntlStrings {
   inline def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
   
   @js.native
-  sealed trait WrappedComponentProps extends StObject
-  inline def WrappedComponentProps: WrappedComponentProps = "WrappedComponentProps".asInstanceOf[WrappedComponentProps]
-  
-  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -41,10 +37,6 @@ object reactIntlStrings {
   @js.native
   sealed trait audio extends StObject
   inline def audio: audio = "audio".asInstanceOf[audio]
-  
-  @js.native
-  sealed trait auto extends StObject
-  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait b extends StObject
@@ -331,10 +323,6 @@ object reactIntlStrings {
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait lessPrecision extends StObject
-  inline def lessPrecision: lessPrecision = "lessPrecision".asInstanceOf[lessPrecision]
-  
-  @js.native
   sealed trait li extends StObject
   inline def li: li = "li".asInstanceOf[li]
   
@@ -389,10 +377,6 @@ object reactIntlStrings {
   @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
-  
-  @js.native
-  sealed trait morePrecision extends StObject
-  inline def morePrecision: morePrecision = "morePrecision".asInstanceOf[morePrecision]
   
   @js.native
   sealed trait narrow extends StObject
@@ -529,10 +513,6 @@ object reactIntlStrings {
   @js.native
   sealed trait standard extends StObject
   inline def standard: standard = "standard".asInstanceOf[standard]
-  
-  @js.native
-  sealed trait stripIfInteger extends StObject
-  inline def stripIfInteger: stripIfInteger = "stripIfInteger".asInstanceOf[stripIfInteger]
   
   @js.native
   sealed trait strong extends StObject

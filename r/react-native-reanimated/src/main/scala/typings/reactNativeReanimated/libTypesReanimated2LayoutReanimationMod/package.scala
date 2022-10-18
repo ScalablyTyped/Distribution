@@ -1,0 +1,22 @@
+package typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationMod
+
+import typings.reactNativeReanimated.anon.TypeofBaseAnimationBuildeInstantiable
+import typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationMod.^
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+
+inline def combineTransition(exiting: TypeofBaseAnimationBuildeInstantiable, entering: TypeofBaseAnimationBuildeInstantiable): typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("combineTransition")(exiting.asInstanceOf[js.Any], entering.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition]
+inline def combineTransition(
+  exiting: TypeofBaseAnimationBuildeInstantiable,
+  entering: typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderMod.BaseAnimationBuilder
+): typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("combineTransition")(exiting.asInstanceOf[js.Any], entering.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition]
+inline def combineTransition(
+  exiting: typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderMod.BaseAnimationBuilder,
+  entering: TypeofBaseAnimationBuildeInstantiable
+): typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("combineTransition")(exiting.asInstanceOf[js.Any], entering.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition]
+inline def combineTransition(
+  exiting: typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderMod.BaseAnimationBuilder,
+  entering: typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationAnimationBuilderMod.BaseAnimationBuilder
+): typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("combineTransition")(exiting.asInstanceOf[js.Any], entering.asInstanceOf[js.Any])).asInstanceOf[typings.reactNativeReanimated.libTypesReanimated2LayoutReanimationDefaultTransitionsEntryExitTransitionMod.EntryExitTransition]

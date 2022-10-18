@@ -5,16 +5,14 @@ import typings.picomatch.anon.IsMatch
 import typings.picomatch.anon.MaxLength
 import typings.picomatch.anon.STAR
 import typings.picomatch.anon._empty
-import typings.picomatch.parseMod.ParseState
+import typings.picomatch.libParseMod.ParseState
+import typings.picomatch.libPicomatchMod.Glob
+import typings.picomatch.libPicomatchMod.PicomatchOptions
+import typings.picomatch.libPicomatchMod.ToRegexOptions
+import typings.picomatch.libScanMod.Options
+import typings.picomatch.libScanMod.State
 import typings.picomatch.picomatchBooleans.`false`
 import typings.picomatch.picomatchBooleans.`true`
-import typings.picomatch.picomatchMod.Glob
-import typings.picomatch.picomatchMod.Matcher
-import typings.picomatch.picomatchMod.MatcherWithState
-import typings.picomatch.picomatchMod.PicomatchOptions
-import typings.picomatch.picomatchMod.ToRegexOptions
-import typings.picomatch.scanMod.Options
-import typings.picomatch.scanMod.State
 import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -42,10 +40,10 @@ object mod {
     * @return Returns a matcher function.
     * @api public
     */
-  inline def apply[T /* <: `true` | `false` */](glob: Glob): Matcher | MatcherWithState = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[Matcher | MatcherWithState]
-  inline def apply[T /* <: `true` | `false` */](glob: Glob, options: Unit, returnState: T): Matcher | MatcherWithState = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], returnState.asInstanceOf[js.Any])).asInstanceOf[Matcher | MatcherWithState]
-  inline def apply[T /* <: `true` | `false` */](glob: Glob, options: PicomatchOptions): Matcher | MatcherWithState = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Matcher | MatcherWithState]
-  inline def apply[T /* <: `true` | `false` */](glob: Glob, options: PicomatchOptions, returnState: T): Matcher | MatcherWithState = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], returnState.asInstanceOf[js.Any])).asInstanceOf[Matcher | MatcherWithState]
+  inline def apply[T /* <: `true` | `false` */](glob: Glob): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any]
+  inline def apply[T /* <: `true` | `false` */](glob: Glob, options: Unit, returnState: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], returnState.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any]
+  inline def apply[T /* <: `true` | `false` */](glob: Glob, options: PicomatchOptions): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any]
+  inline def apply[T /* <: `true` | `false` */](glob: Glob, options: PicomatchOptions, returnState: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], returnState.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? picomatch.picomatch/lib/picomatch.MatcherWithState : picomatch.picomatch/lib/picomatch.Matcher */ js.Any]
   
   @JSImport("picomatch", JSImport.Namespace)
   @js.native
@@ -339,7 +337,7 @@ object mod {
     
     inline def extGlobChars(chars: STAR): Record[String, Close] = ^.asInstanceOf[js.Dynamic].applyDynamic("extGlobChars")(chars.asInstanceOf[js.Any]).asInstanceOf[Record[String, Close]]
     
-    inline def globChars[T /* <: Boolean */](win32: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof POSIX_CHARS */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("globChars")(win32.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: typeof POSIX_CHARS */ js.Any]
+    inline def globChars[T /* <: Boolean */](win32: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends true ? typeof WINDOWS_CHARS : typeof POSIX_CHARS */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("globChars")(win32.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends true ? typeof WINDOWS_CHARS : typeof POSIX_CHARS */ js.Any]
   }
   
   inline def isMatch(str: String, patterns: Glob): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(str.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Boolean]

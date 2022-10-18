@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param w w coordinate
   */
 open class Quaternion ()
-  extends typings.three.threeMod.Quaternion {
+  extends typings.three.srcThreeMod.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()
@@ -50,9 +50,9 @@ object Quaternion {
     * @deprecated Use qm.slerpQuaternions( qa, qb, t ) instead..
     */
   inline def slerp(
-    qa: typings.three.quaternionMod.Quaternion,
-    qb: typings.three.quaternionMod.Quaternion,
-    qm: typings.three.quaternionMod.Quaternion,
+    qa: typings.three.srcMathQuaternionMod.Quaternion,
+    qb: typings.three.srcMathQuaternionMod.Quaternion,
+    qm: typings.three.srcMathQuaternionMod.Quaternion,
     t: Double
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -64,5 +64,5 @@ object Quaternion {
     src1: js.Array[Double],
     stcOffset1: Double,
     t: Double
-  ): typings.three.quaternionMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerpFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.three.quaternionMod.Quaternion]
+  ): typings.three.srcMathQuaternionMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerpFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.three.srcMathQuaternionMod.Quaternion]
 }

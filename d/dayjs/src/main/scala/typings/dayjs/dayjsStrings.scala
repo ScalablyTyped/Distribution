@@ -1,7 +1,6 @@
 package typings.dayjs
 
-import typings.dayjs.durationMod.DurationUnitType
-import typings.dayjs.isoWeekMod.ISOUnitType
+import typings.dayjs.esmPluginIsoWeekMod.ISOUnitType
 import typings.dayjs.mod.ManipulateType
 import typings.dayjs.mod.OpUnitType
 import typings.dayjs.mod.QUnitType
@@ -9,6 +8,7 @@ import typings.dayjs.mod.UnitType
 import typings.dayjs.mod.UnitTypeLong
 import typings.dayjs.mod.UnitTypeLongPlural
 import typings.dayjs.mod.UnitTypeShort
+import typings.dayjs.pluginDurationMod.DurationUnitType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object dayjsStrings {
   sealed trait D
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -38,7 +38,7 @@ object dayjsStrings {
   sealed trait M
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -68,7 +68,7 @@ object dayjsStrings {
   sealed trait d_
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -117,7 +117,7 @@ object dayjsStrings {
   sealed trait day
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -136,7 +136,7 @@ object dayjsStrings {
   sealed trait days
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -155,7 +155,7 @@ object dayjsStrings {
   sealed trait h
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -174,7 +174,7 @@ object dayjsStrings {
   sealed trait hour
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -193,7 +193,7 @@ object dayjsStrings {
   sealed trait hours
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -223,7 +223,7 @@ object dayjsStrings {
   sealed trait m_
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -242,7 +242,7 @@ object dayjsStrings {
   sealed trait millisecond
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -261,7 +261,7 @@ object dayjsStrings {
   sealed trait milliseconds
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -280,7 +280,7 @@ object dayjsStrings {
   sealed trait minute
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -299,7 +299,7 @@ object dayjsStrings {
   sealed trait minutes
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -318,7 +318,7 @@ object dayjsStrings {
   sealed trait month
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -337,7 +337,7 @@ object dayjsStrings {
   sealed trait months
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -356,7 +356,7 @@ object dayjsStrings {
   sealed trait ms
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -389,7 +389,7 @@ object dayjsStrings {
   sealed trait s
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -408,7 +408,7 @@ object dayjsStrings {
   sealed trait second
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -427,7 +427,7 @@ object dayjsStrings {
   sealed trait seconds
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -450,7 +450,7 @@ object dayjsStrings {
   sealed trait w
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -463,7 +463,7 @@ object dayjsStrings {
   sealed trait week
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -476,7 +476,7 @@ object dayjsStrings {
   sealed trait weeks
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -489,7 +489,7 @@ object dayjsStrings {
   sealed trait y
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -508,7 +508,7 @@ object dayjsStrings {
   sealed trait year
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType
@@ -527,7 +527,7 @@ object dayjsStrings {
   sealed trait years
     extends StObject
        with DurationUnitType
-       with typings.dayjs.pluginDurationMod.DurationUnitType
+       with typings.dayjs.esmPluginDurationMod.DurationUnitType
        with ISOUnitType
        with typings.dayjs.pluginIsoWeekMod.ISOUnitType
        with ManipulateType

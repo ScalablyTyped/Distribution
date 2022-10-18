@@ -1,12 +1,35 @@
 package typings.tabris.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.tabris.mod.Widget
+import typings.tabris.mod.ListenersKeysOf
+import typings.tabris.tabrisStrings.Asterisk
+import typings.tabris.tabrisStrings.default
+import typings.tabris.tabrisStrings.strict
+import typings.tabris.tabrisStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `16`[U /* <: Widget[Any] */]
-  extends StObject
-     with Instantiable1[/* args (repeated) */ Any, U]
+trait `16`[Target] extends StObject {
+  
+  var mode: js.UndefOr[default | strict] = js.undefined
+  
+  var trigger: js.UndefOr[ListenersKeysOf[Target] | update | Asterisk | js.Symbol] = js.undefined
+}
+object `16` {
+  
+  inline def apply[Target](): `16`[Target] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`16`[Target]]
+  }
+  
+  extension [Self <: `16`[?], Target](x: Self & `16`[Target]) {
+    
+    inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setTrigger(value: ListenersKeysOf[Target] | update | Asterisk | js.Symbol): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+  }
+}

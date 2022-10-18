@@ -5,39 +5,32 @@ import typings.feathersjsAuthenticationOauth1.mod.FeathersAuthenticationOAuth1Op
 import typings.feathersjsFeathers.mod.Application
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var profile: js.Any = js.native
+    var profile: Any
     
-    var refreshToken: String = js.native
+    var refreshToken: String
   }
   object AccessToken {
     
-    @scala.inline
-    def apply(accessToken: String, profile: js.Any, refreshToken: String): AccessToken = {
+    inline def apply(accessToken: String, profile: Any, refreshToken: String): AccessToken = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessToken]
     }
     
-    @scala.inline
-    implicit class AccessTokenMutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
+    extension [Self <: AccessToken](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,7 +42,7 @@ object anon {
     
     var OAuth1Verifier: Instantiable2[
         /* app */ Application[js.Object], 
-        /* options */ js.Any, 
+        /* options */ Any, 
         typings.feathersjsAuthenticationOauth1.mod.OAuth1Verifier
       ] = js.native
   }

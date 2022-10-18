@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsBorderlessTableOutlinedMod.BorderlessTableOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object borderlessTableOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/BorderlessTableOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/BorderlessTableOutlined", JSImport.Default)
   @js.native
   val default: BorderlessTableOutlinedIconType = js.native
-  
-  @js.native
-  trait BorderlessTableOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_BorderlessTableOutlinedIconType: String = js.native
-  }
   
   type _To = BorderlessTableOutlinedIconType
   

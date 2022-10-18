@@ -16,12 +16,11 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.ListenOptions
-import typings.node.nodeNetMod.Socket
-import typings.oidcProvider.anon.Amr
+import typings.node.nodeColonnetMod.Socket
 import typings.oidcProvider.anon.Aud
 import typings.oidcProvider.anon.AuthTime
-import typings.oidcProvider.anon.Claims
 import typings.oidcProvider.anon.ClientId
+import typings.oidcProvider.anon.CodeChallenge
 import typings.oidcProvider.anon.Ctx
 import typings.oidcProvider.anon.DeviceInfo
 import typings.oidcProvider.anon.ExpiresIn
@@ -111,7 +110,7 @@ open class Provider protected () extends EventEmitter {
   
   val Account: typings.oidcProvider.anon.FindAccount = js.native
   
-  val AuthorizationCode: TypeofAuthorizationCode & (Instantiable1[/* properties */ Claims, typings.oidcProvider.mod.AuthorizationCode]) = js.native
+  val AuthorizationCode: TypeofAuthorizationCode & (Instantiable1[/* properties */ CodeChallenge, typings.oidcProvider.mod.AuthorizationCode]) = js.native
   
   val BackchannelAuthenticationRequest: TypeofBackchannelAuthenti & (Instantiable1[
     /* properties */ js.UndefOr[ClientId], 
@@ -123,7 +122,7 @@ open class Provider protected () extends EventEmitter {
   val Client: TypeofClient & Instantiable0[typings.oidcProvider.mod.Client] = js.native
   
   val ClientCredentials: Instantiable1[
-    /* properties */ typings.oidcProvider.anon.Client, 
+    /* properties */ typings.oidcProvider.anon.ResourceServer, 
     typings.oidcProvider.mod.ClientCredentials
   ] = js.native
   
@@ -149,7 +148,10 @@ open class Provider protected () extends EventEmitter {
   
   val PushedAuthorizationRequest: Instantiable1[/* properties */ Request, typings.oidcProvider.mod.PushedAuthorizationRequest] = js.native
   
-  val RefreshToken: TypeofRefreshToken & (Instantiable1[/* properties */ AuthTime, typings.oidcProvider.mod.RefreshToken]) = js.native
+  val RefreshToken: TypeofRefreshToken & (Instantiable1[
+    /* properties */ typings.oidcProvider.anon.Client, 
+    typings.oidcProvider.mod.RefreshToken
+  ]) = js.native
   
   val RegistrationAccessToken: Instantiable0[typings.oidcProvider.mod.RegistrationAccessToken] = js.native
   
@@ -450,13 +452,13 @@ open class Provider protected () extends EventEmitter {
   val app: ^[DefaultState, DefaultContext] = js.native
   
   def backchannelResult(request: String, result: String): js.Promise[Unit] = js.native
-  def backchannelResult(request: String, result: String, opts: Amr): js.Promise[Unit] = js.native
+  def backchannelResult(request: String, result: String, opts: AuthTime): js.Promise[Unit] = js.native
   def backchannelResult(request: String, result: typings.oidcProvider.mod.Grant): js.Promise[Unit] = js.native
-  def backchannelResult(request: String, result: typings.oidcProvider.mod.Grant, opts: Amr): js.Promise[Unit] = js.native
+  def backchannelResult(request: String, result: typings.oidcProvider.mod.Grant, opts: AuthTime): js.Promise[Unit] = js.native
   def backchannelResult(request: String, result: OIDCProviderError): js.Promise[Unit] = js.native
-  def backchannelResult(request: String, result: OIDCProviderError, opts: Amr): js.Promise[Unit] = js.native
+  def backchannelResult(request: String, result: OIDCProviderError, opts: AuthTime): js.Promise[Unit] = js.native
   def backchannelResult(request: typings.oidcProvider.mod.BackchannelAuthenticationRequest, result: String): js.Promise[Unit] = js.native
-  def backchannelResult(request: typings.oidcProvider.mod.BackchannelAuthenticationRequest, result: String, opts: Amr): js.Promise[Unit] = js.native
+  def backchannelResult(request: typings.oidcProvider.mod.BackchannelAuthenticationRequest, result: String, opts: AuthTime): js.Promise[Unit] = js.native
   def backchannelResult(
     request: typings.oidcProvider.mod.BackchannelAuthenticationRequest,
     result: typings.oidcProvider.mod.Grant
@@ -464,13 +466,13 @@ open class Provider protected () extends EventEmitter {
   def backchannelResult(
     request: typings.oidcProvider.mod.BackchannelAuthenticationRequest,
     result: typings.oidcProvider.mod.Grant,
-    opts: Amr
+    opts: AuthTime
   ): js.Promise[Unit] = js.native
   def backchannelResult(request: typings.oidcProvider.mod.BackchannelAuthenticationRequest, result: OIDCProviderError): js.Promise[Unit] = js.native
   def backchannelResult(
     request: typings.oidcProvider.mod.BackchannelAuthenticationRequest,
     result: OIDCProviderError,
-    opts: Amr
+    opts: AuthTime
   ): js.Promise[Unit] = js.native
   
   def callback(): js.Function2[

@@ -14,37 +14,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object SignInMethod {
   
   /** Email link sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.EMAIL_LINK")
+  @JSImport("@firebase/auth/internal", "SignInMethod.EMAIL_LINK")
   @js.native
   val EMAIL_LINK: emailLink = js.native
   
   /** Email/password sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.EMAIL_PASSWORD")
+  @JSImport("@firebase/auth/internal", "SignInMethod.EMAIL_PASSWORD")
   @js.native
   val EMAIL_PASSWORD: password = js.native
   
   /** Facebook sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.FACEBOOK")
+  @JSImport("@firebase/auth/internal", "SignInMethod.FACEBOOK")
   @js.native
   val FACEBOOK: facebookDotcom = js.native
   
   /** GitHub sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.GITHUB")
+  @JSImport("@firebase/auth/internal", "SignInMethod.GITHUB")
   @js.native
   val GITHUB: githubDotcom = js.native
   
   /** Google sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.GOOGLE")
+  @JSImport("@firebase/auth/internal", "SignInMethod.GOOGLE")
   @js.native
   val GOOGLE: googleDotcom = js.native
   
   /** Phone sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.PHONE")
+  @JSImport("@firebase/auth/internal", "SignInMethod.PHONE")
   @js.native
   val PHONE: phone = js.native
   
   /** Twitter sign in method */
-  @JSImport("@firebase/auth/dist/cordova/internal", "SignInMethod.TWITTER")
+  @JSImport("@firebase/auth/internal", "SignInMethod.TWITTER")
   @js.native
   val TWITTER: twitterDotcom = js.native
 }

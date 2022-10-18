@@ -19,10 +19,10 @@ object Pager {
   @JSImport("react-bootstrap", "Pager.Item")
   @js.native
   open class Item ()
-    extends typings.reactBootstrap.pagerItemMod.^
+    extends typings.reactBootstrap.libPagerItemMod.^
   /* static member */
   @JSImport("react-bootstrap", "Pager.Item")
   @js.native
-  def Item: Instantiable0[typings.reactBootstrap.pagerItemMod.^] = js.native
-  inline def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  def Item: Instantiable0[typings.reactBootstrap.libPagerItemMod.^] = js.native
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.libPagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

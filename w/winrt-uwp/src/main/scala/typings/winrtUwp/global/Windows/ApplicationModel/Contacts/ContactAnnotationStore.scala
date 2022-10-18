@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a data store that contains contact annotations. */
-@JSGlobal("Windows.ApplicationModel.Contacts.ContactAnnotationStore")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Contacts.ContactAnnotationStore")
 @js.native
-abstract class ContactAnnotationStore ()
+open class ContactAnnotationStore ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStore

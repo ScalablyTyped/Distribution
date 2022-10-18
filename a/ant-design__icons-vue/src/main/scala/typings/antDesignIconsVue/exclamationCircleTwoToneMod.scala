@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsExclamationCircleTwoToneMod.ExclamationCircleTwoToneIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exclamationCircleTwoToneMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/ExclamationCircleTwoTone", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/ExclamationCircleTwoTone", JSImport.Default)
   @js.native
   val default: ExclamationCircleTwoToneIconType = js.native
-  
-  @js.native
-  trait ExclamationCircleTwoToneIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_ExclamationCircleTwoToneIconType: String = js.native
-  }
   
   type _To = ExclamationCircleTwoToneIconType
   

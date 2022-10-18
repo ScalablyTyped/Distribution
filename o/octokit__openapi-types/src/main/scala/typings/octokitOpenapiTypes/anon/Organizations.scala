@@ -6,35 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Organizations extends StObject {
   
-  var organizations: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-simple'] */ js.Any
-  ]
+  var organizations: js.Array[Description]
   
   var total_count: Double
 }
 object Organizations {
   
-  inline def apply(
-    organizations: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-simple'] */ js.Any
-    ],
-    total_count: Double
-  ): Organizations = {
+  inline def apply(organizations: js.Array[Description], total_count: Double): Organizations = {
     val __obj = js.Dynamic.literal(organizations = organizations.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Organizations]
   }
   
   extension [Self <: Organizations](x: Self) {
     
-    inline def setOrganizations(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-simple'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: js.Array[Description]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    inline def setOrganizationsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-simple'] */ js.Any)*
-    ): Self = StObject.set(x, "organizations", js.Array(value*))
+    inline def setOrganizationsVarargs(value: Description*): Self = StObject.set(x, "organizations", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }

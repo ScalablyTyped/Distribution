@@ -1,7 +1,8 @@
 package typings.babylonjs.postProcessesIndexMod
 
-import typings.babylonjs.cameraMod.Camera
-import typings.babylonjs.vrCameraMetricsMod.VRCameraMetrics
+import typings.babylonjs.camerasCameraMod.Camera
+import typings.babylonjs.camerasVRVrCameraMetricsMod.VRCameraMetrics
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/PostProcesses/index", "VRDistortionCorrectionPostProcess")
 @js.native
 open class VRDistortionCorrectionPostProcess protected ()
-  extends typings.babylonjs.vrDistortionCorrectionPostProcessMod.VRDistortionCorrectionPostProcess {
+  extends typings.babylonjs.postProcessesVrDistortionCorrectionPostProcessMod.VRDistortionCorrectionPostProcess {
   /**
     * Initializes the VRDistortionCorrectionPostProcess
     * @param name The name of the effect.
@@ -17,5 +18,5 @@ open class VRDistortionCorrectionPostProcess protected ()
     * @param isRightEye If this is for the right eye distortion
     * @param vrMetrics All the required metrics for the VR camera
     */
-  def this(name: String, camera: Camera, isRightEye: Boolean, vrMetrics: VRCameraMetrics) = this()
+  def this(name: String, camera: Nullable[Camera], isRightEye: Boolean, vrMetrics: VRCameraMetrics) = this()
 }

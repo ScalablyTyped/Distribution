@@ -1,6 +1,6 @@
 package typings.typedoc.mod
 
-import typings.typedoc.modelsTypesMod.SomeType
+import typings.typedoc.distLibModelsTypesMod.SomeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "TupleType")
 @js.native
 open class TupleType protected ()
-  extends typings.typedoc.modelsMod.TupleType {
+  extends typings.typedoc.distLibModelsMod.TupleType {
   /**
     * @param elements The ordered type elements of the tuple type.
     */

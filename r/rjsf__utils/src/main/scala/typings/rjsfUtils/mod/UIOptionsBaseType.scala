@@ -37,6 +37,8 @@ trait UIOptionsBaseType[T, F] extends StObject {
   
   var UnsupportedFieldTemplate: js.UndefOr[ComponentType[UnsupportedFieldProps[T, F]]] = js.undefined
   
+  var WrapIfAdditionalTemplate: js.UndefOr[ComponentType[WrapIfAdditionalTemplateProps[T, F]]] = js.undefined
+  
   /** Flag, if set to `false`, will mark array fields as NOT being able to be added to (defaults to true) */
   var addable: js.UndefOr[Boolean] = js.undefined
   
@@ -268,5 +270,9 @@ object UIOptionsBaseType {
     inline def setWidget(value: (Widget[T, F]) | String): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
     
     inline def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
+    
+    inline def setWrapIfAdditionalTemplate(value: ComponentType[WrapIfAdditionalTemplateProps[T, F]]): Self = StObject.set(x, "WrapIfAdditionalTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setWrapIfAdditionalTemplateUndefined: Self = StObject.set(x, "WrapIfAdditionalTemplate", js.undefined)
   }
 }

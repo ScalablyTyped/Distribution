@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.formData.mod.Options
 import typings.formData.mod.^
 import typings.node.bufferMod.global.Buffer
-import typings.thenRequest.requestFnMod.RequestFn
+import typings.thenRequest.libRequestFnMod.RequestFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ object mod extends Shortcut {
   @JSImport("then-request", "ResponsePromise")
   @js.native
   open class ResponsePromise ()
-    extends typings.thenRequest.responsePromiseMod.ResponsePromise
+    extends typings.thenRequest.libResponsePromiseMod.ResponsePromise
   
   type Response = typings.httpResponseObject.mod.^[Buffer | String]
   

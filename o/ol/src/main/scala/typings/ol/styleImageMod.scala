@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object styleImageMod {
   
-  @JSImport("ol/style/Image", JSImport.Default)
+  /* note: abstract class */ @JSImport("ol/style/Image", JSImport.Default)
   @js.native
-  abstract class default protected ()
+  open class default protected ()
     extends StObject
        with ImageStyle {
     def this(options: Options) = this()
@@ -81,7 +81,7 @@ object styleImageMod {
       */
     def getSize(): Size = js.native
     
-    def listenImageChange(listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]): Unit = js.native
+    def listenImageChange(listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit]): Unit = js.native
     
     /**
       * Load not yet loaded URI.
@@ -109,7 +109,7 @@ object styleImageMod {
     def setScale(scale: Double): Unit = js.native
     def setScale(scale: Size): Unit = js.native
     
-    def unlistenImageChange(listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]): Unit = js.native
+    def unlistenImageChange(listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit]): Unit = js.native
   }
   
   trait Options extends StObject {

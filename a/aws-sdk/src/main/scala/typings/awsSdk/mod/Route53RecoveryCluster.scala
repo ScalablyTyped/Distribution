@@ -1,6 +1,6 @@
 package typings.awsSdk.mod
 
-import typings.awsSdk.route53recoveryclusterMod.ClientConfiguration
+import typings.awsSdk.clientsRoute53recoveryclusterMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class Route53RecoveryCluster ()
-  extends typings.awsSdk.allMod.Route53RecoveryCluster {
+  extends typings.awsSdk.clientsAllMod.Route53RecoveryCluster {
   def this(options: ClientConfiguration) = this()
 }

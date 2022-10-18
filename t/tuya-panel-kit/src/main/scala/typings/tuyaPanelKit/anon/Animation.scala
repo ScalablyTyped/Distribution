@@ -1,6 +1,6 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.stackTypesMod.TransitionSpec
+import typings.tuyaPanelKit.`@reactNavigationStackTypesMod`.TransitionSpec
 import typings.tuyaPanelKit.tuyaPanelKitStrings.spring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.computeEffectMod.IComputeEffectCreationOptions
+import typings.babylonjs.computeComputeEffectMod.IComputeEffectCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +16,15 @@ open class ComputeEffect protected ()
     * @param engine The engine the effect is created for
     * @param key Effect Key identifying uniquely compiled shader variants
     */
-  def this(baseName: Any, options: IComputeEffectCreationOptions, engine: typings.babylonjs.engineMod.Engine) = this()
   def this(
     baseName: Any,
     options: IComputeEffectCreationOptions,
-    engine: typings.babylonjs.engineMod.Engine,
+    engine: typings.babylonjs.enginesEngineMod.Engine
+  ) = this()
+  def this(
+    baseName: Any,
+    options: IComputeEffectCreationOptions,
+    engine: typings.babylonjs.enginesEngineMod.Engine,
     key: String
   ) = this()
 }

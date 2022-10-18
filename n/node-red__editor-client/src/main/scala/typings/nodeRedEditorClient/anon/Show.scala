@@ -10,5 +10,5 @@ trait Show extends StObject {
   def hide(): Unit = js.native
   def hide(cancelled: Boolean): Unit = js.native
   
-  def show(opts: Dispose): Unit = js.native
+  def show(opts: Align): Unit = js.native
 }

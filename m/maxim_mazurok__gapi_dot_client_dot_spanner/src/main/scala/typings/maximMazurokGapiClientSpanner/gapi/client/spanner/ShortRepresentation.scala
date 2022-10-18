@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait ShortRepresentation extends StObject {
     * rooted at this node. The referenced `SCALAR` subquery may not necessarily be a direct child of this node.
     */
   var subqueries: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
   ] = js.undefined
 }
 object ShortRepresentation {
@@ -34,9 +31,7 @@ object ShortRepresentation {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setSubqueries(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any
     ): Self = StObject.set(x, "subqueries", value.asInstanceOf[js.Any])
     
     inline def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)

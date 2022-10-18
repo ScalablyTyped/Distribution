@@ -1,6 +1,6 @@
 package typings.entities
 
-import typings.entities.encodeHtmlMod.EncodeTrieNode
+import typings.entities.libEsmGeneratedEncodeHtmlMod.EncodeTrieNode
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,7 +39,7 @@ object anon {
   
   trait O extends StObject {
     
-    var n: Double | (Map[Double, typings.entities.generatedEncodeHtmlMod.EncodeTrieNode])
+    var n: Double | (Map[Double, typings.entities.libGeneratedEncodeHtmlMod.EncodeTrieNode])
     
     var o: js.UndefOr[String] = js.undefined
     
@@ -47,14 +47,14 @@ object anon {
   }
   object O {
     
-    inline def apply(n: Double | (Map[Double, typings.entities.generatedEncodeHtmlMod.EncodeTrieNode])): O = {
+    inline def apply(n: Double | (Map[Double, typings.entities.libGeneratedEncodeHtmlMod.EncodeTrieNode])): O = {
       val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any])
       __obj.asInstanceOf[O]
     }
     
     extension [Self <: O](x: Self) {
       
-      inline def setN(value: Double | (Map[Double, typings.entities.generatedEncodeHtmlMod.EncodeTrieNode])): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: Double | (Map[Double, typings.entities.libGeneratedEncodeHtmlMod.EncodeTrieNode])): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
       inline def setO(value: String): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       

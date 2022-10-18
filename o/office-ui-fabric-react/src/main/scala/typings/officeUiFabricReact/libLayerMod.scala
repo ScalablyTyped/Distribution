@@ -1,10 +1,10 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.layerHostTypesMod.ILayerHost
-import typings.officeUiFabricReact.layerHostTypesMod.ILayerHostProps
-import typings.officeUiFabricReact.layerTypesMod.ILayerProps
-import typings.officeUiFabricReact.layerTypesMod.ILayerStyleProps
-import typings.officeUiFabricReact.layerTypesMod.ILayerStyles
+import typings.officeUiFabricReact.libComponentsLayerLayerDottypesMod.ILayerProps
+import typings.officeUiFabricReact.libComponentsLayerLayerDottypesMod.ILayerStyleProps
+import typings.officeUiFabricReact.libComponentsLayerLayerDottypesMod.ILayerStyles
+import typings.officeUiFabricReact.libComponentsLayerLayerHostDottypesMod.ILayerHost
+import typings.officeUiFabricReact.libComponentsLayerLayerHostDottypesMod.ILayerHostProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object libLayerMod {
   @JSImport("office-ui-fabric-react/lib/Layer", "LayerBase")
   @js.native
   open class LayerBase protected ()
-    extends typings.officeUiFabricReact.layerMod.LayerBase {
+    extends typings.officeUiFabricReact.libComponentsLayerMod.LayerBase {
     def this(props: ILayerProps) = this()
   }
   /* static members */
@@ -42,7 +42,7 @@ object libLayerMod {
   @JSImport("office-ui-fabric-react/lib/Layer", "LayerHost")
   @js.native
   open class LayerHost protected ()
-    extends typings.officeUiFabricReact.layerMod.LayerHost {
+    extends typings.officeUiFabricReact.libComponentsLayerMod.LayerHost {
     def this(props: ILayerHostProps) = this()
   }
   

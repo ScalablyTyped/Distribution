@@ -1,13 +1,13 @@
 package typings.officeUiFabricReact.anon
 
-import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipStyleProps
-import typings.officeUiFabricReact.keytipTypesMod.IKeytipStyles
+import typings.fluentuiTheme.libTypesIthemeMod.ITheme
+import typings.officeUiFabricReact.libComponentsCalloutCalloutDottypesMod.ICalloutProps
+import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipStyleProps
+import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipStyles
 import typings.std.HTMLElement
-import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
-import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typings.uifabricUtilities.pointMod.Point
+import typings.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typings.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typings.uifabricUtilities.libPointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

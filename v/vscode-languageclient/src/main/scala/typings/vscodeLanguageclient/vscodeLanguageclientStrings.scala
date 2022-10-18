@@ -1,6 +1,6 @@
 package typings.vscodeLanguageclient
 
-import typings.vscodeLanguageclient.featuresMod.FeatureStateKind
+import typings.vscodeLanguageclient.libCommonFeaturesMod.FeatureStateKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,18 +1,18 @@
 package typings.reactDnd
 
-import typings.dndCore.interfacesMod.DragDropManager
+import typings.dndCore.distInterfacesMod.DragDropManager
 import typings.react.mod.Context
 import typings.react.mod.FC
-import typings.reactDnd.dndContextMod.DndContextType
-import typings.reactDnd.dndProviderMod.DndProviderProps
-import typings.reactDnd.dragPreviewImageMod.DragPreviewImageProps
-import typings.reactDnd.monitorsMod.DragLayerMonitor
-import typings.reactDnd.typesConnectorsMod.ConnectDragPreview
-import typings.reactDnd.typesConnectorsMod.ConnectDragSource
-import typings.reactDnd.typesConnectorsMod.ConnectDropTarget
-import typings.reactDnd.typesMod.DragSourceHookSpec
-import typings.reactDnd.typesMod.DropTargetHookSpec
-import typings.reactDnd.typesMod.FactoryOrInstance
+import typings.reactDnd.distCoreDndContextMod.DndContextType
+import typings.reactDnd.distCoreDndProviderMod.DndProviderProps
+import typings.reactDnd.distCoreDragPreviewImageMod.DragPreviewImageProps
+import typings.reactDnd.distHooksTypesMod.DragSourceHookSpec
+import typings.reactDnd.distHooksTypesMod.DropTargetHookSpec
+import typings.reactDnd.distHooksTypesMod.FactoryOrInstance
+import typings.reactDnd.distTypesConnectorsMod.ConnectDragPreview
+import typings.reactDnd.distTypesConnectorsMod.ConnectDragSource
+import typings.reactDnd.distTypesConnectorsMod.ConnectDropTarget
+import typings.reactDnd.distTypesMonitorsMod.DragLayerMonitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

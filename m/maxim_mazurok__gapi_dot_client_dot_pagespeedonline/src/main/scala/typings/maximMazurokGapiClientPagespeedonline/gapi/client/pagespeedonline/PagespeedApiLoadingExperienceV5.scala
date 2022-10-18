@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,7 @@ trait PagespeedApiLoadingExperienceV5 extends StObject {
   
   /** The map of . */
   var metrics: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5} */ js.Any
   ] = js.undefined
   
   /** True if the result is an origin fallback from a page, false otherwise. */
@@ -44,9 +41,7 @@ object PagespeedApiLoadingExperienceV5 {
     inline def setInitial_urlUndefined: Self = StObject.set(x, "initial_url", js.undefined)
     
     inline def setMetrics(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5} */ js.Any
     ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)

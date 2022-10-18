@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.animatableInterfaceMod.IAnimatable
+import typings.babylonjs.animationsAnimatableDotinterfaceMod.IAnimatable
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -76,20 +76,20 @@ object SerializationHelper {
   /**
     * @internal
     */
-  inline def _ColorCurvesParser(sourceProperty: Any): typings.babylonjs.colorCurvesMod.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("_ColorCurvesParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.colorCurvesMod.ColorCurves]
+  inline def _ColorCurvesParser(sourceProperty: Any): typings.babylonjs.materialsColorCurvesMod.ColorCurves = ^.asInstanceOf[js.Dynamic].applyDynamic("_ColorCurvesParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsColorCurvesMod.ColorCurves]
   
   /**
     * @internal
     */
-  inline def _FresnelParametersParser(sourceProperty: Any): typings.babylonjs.fresnelParametersMod.FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("_FresnelParametersParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.fresnelParametersMod.FresnelParameters]
+  inline def _FresnelParametersParser(sourceProperty: Any): typings.babylonjs.materialsFresnelParametersMod.FresnelParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("_FresnelParametersParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsFresnelParametersMod.FresnelParameters]
   
   /**
     * @internal
     */
-  inline def _ImageProcessingConfigurationParser(sourceProperty: Any): typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("_ImageProcessingConfigurationParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.imageProcessingConfigurationMod.ImageProcessingConfiguration]
+  inline def _ImageProcessingConfigurationParser(sourceProperty: Any): typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("_ImageProcessingConfigurationParser")(sourceProperty.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration]
   
   /**
     * @internal
     */
-  inline def _TextureParser(sourceProperty: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.baseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_TextureParser")(sourceProperty.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.baseTextureMod.BaseTexture]]
+  inline def _TextureParser(sourceProperty: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): Nullable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("_TextureParser")(sourceProperty.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture]]
 }

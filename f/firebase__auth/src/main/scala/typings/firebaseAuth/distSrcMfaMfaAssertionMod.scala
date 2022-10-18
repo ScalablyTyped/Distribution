@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcMfaMfaAssertionMod {
   
-  @JSImport("@firebase/auth/dist/src/mfa/mfa_assertion", "MultiFactorAssertionImpl")
+  /* note: abstract class */ @JSImport("@firebase/auth/dist/src/mfa/mfa_assertion", "MultiFactorAssertionImpl")
   @js.native
-  abstract class MultiFactorAssertionImpl protected ()
+  open class MultiFactorAssertionImpl protected ()
     extends StObject
        with MultiFactorAssertion {
     /* protected */ def this(factorId: FactorId) = this()

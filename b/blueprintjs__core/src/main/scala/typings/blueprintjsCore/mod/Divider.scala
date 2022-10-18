@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.dividerMod.IDividerProps
+import typings.blueprintjsCore.libEsmComponentsDividerDividerMod.IDividerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Divider")
 @js.native
 open class Divider protected ()
-  extends typings.blueprintjsCore.componentsMod.Divider {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Divider {
   def this(props: IDividerProps) = this()
   def this(props: IDividerProps, context: Any) = this()
 }

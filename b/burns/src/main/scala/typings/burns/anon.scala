@@ -2,7 +2,7 @@ package typings.burns
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.burns.burnsBooleans.`false`
-import typings.burns.configMod.Config
+import typings.burns.typesRepositoriesConfigMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

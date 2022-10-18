@@ -109,7 +109,10 @@ object mod {
     def getSitemap(): SiteMapRotator
     
     @JSName("on")
-    def on_error[T /* <: EventTypes */](events: T, cb: js.Function0[Unit] | (js.Function1[/* error */ ErrorMessage, Unit])): Unit
+    def on_error[T /* <: EventTypes */](
+      events: T,
+      cb: /* import warning: importer.ImportType#apply Failed type conversion: T extends 'error' ? (error : sitemap-generator.sitemap-generator.ErrorMessage): void : (): void */ js.Any
+    ): Unit
     
     def queueURL(url: String): Unit
     
@@ -122,7 +125,7 @@ object mod {
     inline def apply(
       getCrawler: () => typings.simplecrawler.mod.^,
       getSitemap: () => SiteMapRotator,
-      on: (Any, js.Function0[Unit] | (js.Function1[/* error */ ErrorMessage, Unit])) => Unit,
+      on: (Any, /* import warning: importer.ImportType#apply Failed type conversion: T extends 'error' ? (error : sitemap-generator.sitemap-generator.ErrorMessage): void : (): void */ js.Any) => Unit,
       queueURL: String => Unit,
       start: () => Unit,
       stop: () => Unit
@@ -137,7 +140,9 @@ object mod {
       
       inline def setGetSitemap(value: () => SiteMapRotator): Self = StObject.set(x, "getSitemap", js.Any.fromFunction0(value))
       
-      inline def setOn(value: (Any, js.Function0[Unit] | (js.Function1[/* error */ ErrorMessage, Unit])) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(
+        value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: T extends 'error' ? (error : sitemap-generator.sitemap-generator.ErrorMessage): void : (): void */ js.Any) => Unit
+      ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setQueueURL(value: String => Unit): Self = StObject.set(x, "queueURL", js.Any.fromFunction1(value))
       

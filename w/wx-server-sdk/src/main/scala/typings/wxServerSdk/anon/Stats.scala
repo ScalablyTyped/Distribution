@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Stats extends StObject {
   
-  var stats: `0`
+  var stats: Updated
 }
 object Stats {
   
-  inline def apply(stats: `0`): Stats = {
+  inline def apply(stats: Updated): Stats = {
     val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
   
   extension [Self <: Stats](x: Self) {
     
-    inline def setStats(value: `0`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Updated): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

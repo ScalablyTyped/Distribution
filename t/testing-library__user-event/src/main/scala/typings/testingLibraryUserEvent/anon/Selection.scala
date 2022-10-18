@@ -1,7 +1,7 @@
 package typings.testingLibraryUserEvent.anon
 
+import typings.testingLibraryUserEvent.distTypesDocumentUIMod.UISelectionRange
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.input
-import typings.testingLibraryUserEvent.uIMod.UISelectionRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

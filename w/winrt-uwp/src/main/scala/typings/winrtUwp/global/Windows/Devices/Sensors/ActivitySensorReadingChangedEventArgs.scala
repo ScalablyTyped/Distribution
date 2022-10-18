@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data for the reading–changed event of the sensor. */
-@JSGlobal("Windows.Devices.Sensors.ActivitySensorReadingChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.ActivitySensorReadingChangedEventArgs")
 @js.native
-abstract class ActivitySensorReadingChangedEventArgs ()
+open class ActivitySensorReadingChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.ActivitySensorReadingChangedEventArgs {
   

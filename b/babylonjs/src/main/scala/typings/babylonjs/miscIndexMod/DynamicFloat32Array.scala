@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Misc/index", "DynamicFloat32Array")
 @js.native
 open class DynamicFloat32Array protected ()
-  extends typings.babylonjs.performanceViewerIndexMod.DynamicFloat32Array {
+  extends typings.babylonjs.miscPerformanceViewerIndexMod.DynamicFloat32Array {
   /**
     * Creates a new DynamicFloat32Array with the desired item capacity.
     * @param itemCapacity The initial item capacity you would like to set for the array.

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.uifabricUtilities.anon.Delay
-import typings.uifabricUtilities.delayedRenderMod.IDelayedRenderProps
+import typings.uifabricUtilities.libDelayedRenderMod.IDelayedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "DelayedRender")
 @js.native
 open class DelayedRender protected ()
-  extends typings.officeUiFabricReact.utilitiesMod.DelayedRender {
+  extends typings.officeUiFabricReact.libUtilitiesMod.DelayedRender {
   def this(props: IDelayedRenderProps) = this()
 }
 /* static members */

@@ -1,6 +1,6 @@
 package typings.slateReact.anon
 
-import typings.slate.pointMod.Point
+import typings.slate.distInterfacesPointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

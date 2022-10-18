@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "WebXRControllerPhysics")
 @js.native
 open class WebXRControllerPhysics protected ()
-  extends typings.babylonjs.featuresIndexMod.WebXRControllerPhysics {
+  extends typings.babylonjs.xRFeaturesIndexMod.WebXRControllerPhysics {
   /**
     * Construct a new Controller Physics Feature
     * @param _xrSessionManager the corresponding xr session manager
     * @param _options options to create this feature with
     */
   def this(
-    _xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    _options: typings.babylonjs.webXRControllerPhysicsMod.IWebXRControllerPhysicsOptions
+    _xrSessionManager: typings.babylonjs.xRWebXRSessionManagerMod.WebXRSessionManager,
+    _options: typings.babylonjs.xRFeaturesWebXRControllerPhysicsMod.IWebXRControllerPhysicsOptions
   ) = this()
 }
 /* static members */

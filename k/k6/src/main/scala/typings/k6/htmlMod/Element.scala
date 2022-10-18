@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("k6/html", "Element")
+/* note: abstract class */ @JSImport("k6/html", "Element")
 @js.native
-abstract class Element () extends StObject {
+open class Element () extends StObject {
   
   /** Dictionary of element attributes. */
   def attributes(): StringDictionary[Attribute] = js.native

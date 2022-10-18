@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PluginCreator[PluginOptions] extends StObject {
   
-  def apply(): Plugin | typings.postcss.processorMod.default = js.native
-  def apply(opts: PluginOptions): Plugin | typings.postcss.processorMod.default = js.native
+  def apply(): Plugin | typings.postcss.libProcessorMod.default = js.native
+  def apply(opts: PluginOptions): Plugin | typings.postcss.libProcessorMod.default = js.native
   
   var postcss: `true` = js.native
 }

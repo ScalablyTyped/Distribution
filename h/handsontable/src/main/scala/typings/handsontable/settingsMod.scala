@@ -2,10 +2,7 @@ package typings.handsontable
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.handsontable.autoColumnSizeAutoColumnSizeMod.Settings
 import typings.handsontable.cellTypesMod.CellType
-import typings.handsontable.collapsibleColumnsCollapsibleColumnsMod.DetailedSettings
-import typings.handsontable.commentsCommentsMod.CommentObject
 import typings.handsontable.commonMod.CellValue
 import typings.handsontable.commonMod.ColumnDataGetterSetterFunction
 import typings.handsontable.commonMod.LabelOptions
@@ -13,7 +10,6 @@ import typings.handsontable.commonMod.NumericFormatOptions
 import typings.handsontable.commonMod.RowObject
 import typings.handsontable.commonMod.SelectOptionsObject
 import typings.handsontable.commonMod.SimpleCellCoords
-import typings.handsontable.contextMenuContextMenuMod.PredefinedMenuItemKey
 import typings.handsontable.coreMod.default
 import typings.handsontable.editorsMod.BaseEditor
 import typings.handsontable.editorsMod.EditorType
@@ -37,6 +33,10 @@ import typings.handsontable.handsontableStrings.single
 import typings.handsontable.handsontableStrings.strict
 import typings.handsontable.handsontableStrings.vertical
 import typings.handsontable.pluginHooksMod.Events
+import typings.handsontable.pluginsAutoColumnSizeAutoColumnSizeMod.Settings
+import typings.handsontable.pluginsCollapsibleColumnsCollapsibleColumnsMod.DetailedSettings
+import typings.handsontable.pluginsCommentsCommentsMod.CommentObject
+import typings.handsontable.pluginsContextMenuContextMenuMod.PredefinedMenuItemKey
 import typings.handsontable.renderersBaseMod.BaseRenderer
 import typings.handsontable.renderersMod.RendererType
 import typings.handsontable.validatorsBaseMod.BaseValidator_
@@ -213,7 +213,7 @@ object settingsMod {
     
     var autoColumnSize: js.UndefOr[Settings] = js.undefined
     
-    var autoRowSize: js.UndefOr[typings.handsontable.autoRowSizeAutoRowSizeMod.Settings] = js.undefined
+    var autoRowSize: js.UndefOr[typings.handsontable.pluginsAutoRowSizeAutoRowSizeMod.Settings] = js.undefined
     
     var autoWrapCol: js.UndefOr[Boolean] = js.undefined
     
@@ -243,23 +243,23 @@ object settingsMod {
         Double | String | (js.Array[js.UndefOr[Double | String | Unit]]) | (js.Function1[/* index */ Double, js.UndefOr[String | Double]])
       ] = js.undefined
     
-    var collapsibleColumns: js.UndefOr[typings.handsontable.collapsibleColumnsCollapsibleColumnsMod.Settings] = js.undefined
+    var collapsibleColumns: js.UndefOr[typings.handsontable.pluginsCollapsibleColumnsCollapsibleColumnsMod.Settings] = js.undefined
     
     var columnHeaderHeight: js.UndefOr[Double | js.Array[js.UndefOr[Double]]] = js.undefined
     
-    var columnSorting: js.UndefOr[typings.handsontable.columnSortingColumnSortingMod.Settings] = js.undefined
+    var columnSorting: js.UndefOr[typings.handsontable.pluginsColumnSortingColumnSortingMod.Settings] = js.undefined
     
-    var columnSummary: js.UndefOr[typings.handsontable.columnSummaryColumnSummaryMod.Settings] = js.undefined
+    var columnSummary: js.UndefOr[typings.handsontable.pluginsColumnSummaryColumnSummaryMod.Settings] = js.undefined
     
     var columns: js.UndefOr[js.Array[ColumnSettings] | (js.Function1[/* index */ Double, ColumnSettings])] = js.undefined
     
     var commentedCellClassName: js.UndefOr[String] = js.undefined
     
-    var comments: js.UndefOr[typings.handsontable.commentsCommentsMod.Settings] = js.undefined
+    var comments: js.UndefOr[typings.handsontable.pluginsCommentsCommentsMod.Settings] = js.undefined
     
-    var contextMenu: js.UndefOr[typings.handsontable.contextMenuContextMenuMod.Settings] = js.undefined
+    var contextMenu: js.UndefOr[typings.handsontable.pluginsContextMenuContextMenuMod.Settings] = js.undefined
     
-    var copyPaste: js.UndefOr[typings.handsontable.copyPasteCopyPasteMod.Settings] = js.undefined
+    var copyPaste: js.UndefOr[typings.handsontable.pluginsCopyPasteCopyPasteMod.Settings] = js.undefined
     
     var copyable: js.UndefOr[Boolean] = js.undefined
     
@@ -271,7 +271,7 @@ object settingsMod {
     
     var currentRowClassName: js.UndefOr[String] = js.undefined
     
-    var customBorders: js.UndefOr[typings.handsontable.customBordersCustomBordersMod.Settings] = js.undefined
+    var customBorders: js.UndefOr[typings.handsontable.pluginsCustomBordersCustomBordersMod.Settings] = js.undefined
     
     var data: js.UndefOr[js.Array[js.Array[CellValue] | RowObject]] = js.undefined
     
@@ -289,7 +289,7 @@ object settingsMod {
     
     var dragToScroll: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownMenu: js.UndefOr[typings.handsontable.dropdownMenuDropdownMenuMod.Settings] = js.undefined
+    var dropdownMenu: js.UndefOr[typings.handsontable.pluginsDropdownMenuDropdownMenuMod.Settings] = js.undefined
     
     var editor: js.UndefOr[
         EditorType | (Instantiable1[/* instance */ default, BaseEditor]) | Boolean | String
@@ -298,13 +298,13 @@ object settingsMod {
     var enterBeginsEditing: js.UndefOr[Boolean] = js.undefined
     
     var enterMoves: js.UndefOr[
-        typings.handsontable.coordsMod.default | SimpleCellCoords | (js.Function1[
+        typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords | (js.Function1[
           /* event */ KeyboardEvent, 
-          typings.handsontable.coordsMod.default | SimpleCellCoords
+          typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords
         ])
       ] = js.undefined
     
-    var fillHandle: js.UndefOr[typings.handsontable.autofillAutofillMod.Settings] = js.undefined
+    var fillHandle: js.UndefOr[typings.handsontable.pluginsAutofillAutofillMod.Settings] = js.undefined
     
     var filter: js.UndefOr[Boolean] = js.undefined
     
@@ -320,15 +320,15 @@ object settingsMod {
     
     var fixedRowsTop: js.UndefOr[Double] = js.undefined
     
-    var formulas: js.UndefOr[typings.handsontable.formulasFormulasMod.Settings] = js.undefined
+    var formulas: js.UndefOr[typings.handsontable.pluginsFormulasFormulasMod.Settings] = js.undefined
     
     var fragmentSelection: js.UndefOr[Boolean | cell] = js.undefined
     
     var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
     
-    var hiddenColumns: js.UndefOr[typings.handsontable.hiddenColumnsHiddenColumnsMod.Settings] = js.undefined
+    var hiddenColumns: js.UndefOr[typings.handsontable.pluginsHiddenColumnsHiddenColumnsMod.Settings] = js.undefined
     
-    var hiddenRows: js.UndefOr[typings.handsontable.hiddenRowsHiddenRowsMod.Settings] = js.undefined
+    var hiddenRows: js.UndefOr[typings.handsontable.pluginsHiddenRowsHiddenRowsMod.Settings] = js.undefined
     
     var invalidCellClassName: js.UndefOr[String] = js.undefined
     
@@ -358,7 +358,7 @@ object settingsMod {
     
     var maxRows: js.UndefOr[Double] = js.undefined
     
-    var mergeCells: js.UndefOr[typings.handsontable.mergeCellsMergeCellsMod.Settings] = js.undefined
+    var mergeCells: js.UndefOr[typings.handsontable.pluginsMergeCellsMergeCellsMod.Settings] = js.undefined
     
     var minCols: js.UndefOr[Double] = js.undefined
     
@@ -368,9 +368,9 @@ object settingsMod {
     
     var minSpareRows: js.UndefOr[Double] = js.undefined
     
-    var multiColumnSorting: js.UndefOr[typings.handsontable.columnSortingColumnSortingMod.Settings] = js.undefined
+    var multiColumnSorting: js.UndefOr[typings.handsontable.pluginsColumnSortingColumnSortingMod.Settings] = js.undefined
     
-    var nestedHeaders: js.UndefOr[typings.handsontable.nestedHeadersNestedHeadersMod.Settings] = js.undefined
+    var nestedHeaders: js.UndefOr[typings.handsontable.pluginsNestedHeadersNestedHeadersMod.Settings] = js.undefined
     
     var nestedRows: js.UndefOr[Boolean] = js.undefined
     
@@ -408,7 +408,7 @@ object settingsMod {
         Double | String | (js.Array[js.UndefOr[Double | String | Unit]]) | (js.Function1[/* index */ Double, js.UndefOr[String | Double]])
       ] = js.undefined
     
-    var search: js.UndefOr[typings.handsontable.searchSearchMod.Settings] = js.undefined
+    var search: js.UndefOr[typings.handsontable.pluginsSearchSearchMod.Settings] = js.undefined
     
     var selectOptions: js.UndefOr[
         js.Array[String] | SelectOptionsObject | (js.Function3[
@@ -445,9 +445,9 @@ object settingsMod {
     var strict: js.UndefOr[Boolean] = js.undefined
     
     var tabMoves: js.UndefOr[
-        typings.handsontable.coordsMod.default | SimpleCellCoords | (js.Function1[
+        typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords | (js.Function1[
           /* event */ KeyboardEvent, 
-          typings.handsontable.coordsMod.default | SimpleCellCoords
+          typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords
         ])
       ] = js.undefined
     
@@ -524,7 +524,7 @@ object settingsMod {
       
       inline def setAutoColumnSizeUndefined: Self = StObject.set(x, "autoColumnSize", js.undefined)
       
-      inline def setAutoRowSize(value: typings.handsontable.autoRowSizeAutoRowSizeMod.Settings): Self = StObject.set(x, "autoRowSize", value.asInstanceOf[js.Any])
+      inline def setAutoRowSize(value: typings.handsontable.pluginsAutoRowSizeAutoRowSizeMod.Settings): Self = StObject.set(x, "autoRowSize", value.asInstanceOf[js.Any])
       
       inline def setAutoRowSizeUndefined: Self = StObject.set(x, "autoRowSize", js.undefined)
       
@@ -586,7 +586,7 @@ object settingsMod {
       
       inline def setColWidthsVarargs(value: (js.UndefOr[Double | String | Unit])*): Self = StObject.set(x, "colWidths", js.Array(value*))
       
-      inline def setCollapsibleColumns(value: typings.handsontable.collapsibleColumnsCollapsibleColumnsMod.Settings): Self = StObject.set(x, "collapsibleColumns", value.asInstanceOf[js.Any])
+      inline def setCollapsibleColumns(value: typings.handsontable.pluginsCollapsibleColumnsCollapsibleColumnsMod.Settings): Self = StObject.set(x, "collapsibleColumns", value.asInstanceOf[js.Any])
       
       inline def setCollapsibleColumnsUndefined: Self = StObject.set(x, "collapsibleColumns", js.undefined)
       
@@ -598,17 +598,17 @@ object settingsMod {
       
       inline def setColumnHeaderHeightVarargs(value: js.UndefOr[Double]*): Self = StObject.set(x, "columnHeaderHeight", js.Array(value*))
       
-      inline def setColumnSorting(value: typings.handsontable.columnSortingColumnSortingMod.Settings): Self = StObject.set(x, "columnSorting", value.asInstanceOf[js.Any])
+      inline def setColumnSorting(value: typings.handsontable.pluginsColumnSortingColumnSortingMod.Settings): Self = StObject.set(x, "columnSorting", value.asInstanceOf[js.Any])
       
       inline def setColumnSortingUndefined: Self = StObject.set(x, "columnSorting", js.undefined)
       
-      inline def setColumnSummary(value: typings.handsontable.columnSummaryColumnSummaryMod.Settings): Self = StObject.set(x, "columnSummary", value.asInstanceOf[js.Any])
+      inline def setColumnSummary(value: typings.handsontable.pluginsColumnSummaryColumnSummaryMod.Settings): Self = StObject.set(x, "columnSummary", value.asInstanceOf[js.Any])
       
-      inline def setColumnSummaryFunction0(value: () => js.Array[typings.handsontable.columnSummaryColumnSummaryMod.DetailedSettings]): Self = StObject.set(x, "columnSummary", js.Any.fromFunction0(value))
+      inline def setColumnSummaryFunction0(value: () => js.Array[typings.handsontable.pluginsColumnSummaryColumnSummaryMod.DetailedSettings]): Self = StObject.set(x, "columnSummary", js.Any.fromFunction0(value))
       
       inline def setColumnSummaryUndefined: Self = StObject.set(x, "columnSummary", js.undefined)
       
-      inline def setColumnSummaryVarargs(value: typings.handsontable.columnSummaryColumnSummaryMod.DetailedSettings*): Self = StObject.set(x, "columnSummary", js.Array(value*))
+      inline def setColumnSummaryVarargs(value: typings.handsontable.pluginsColumnSummaryColumnSummaryMod.DetailedSettings*): Self = StObject.set(x, "columnSummary", js.Array(value*))
       
       inline def setColumns(value: js.Array[ColumnSettings] | (js.Function1[/* index */ Double, ColumnSettings])): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -622,17 +622,17 @@ object settingsMod {
       
       inline def setCommentedCellClassNameUndefined: Self = StObject.set(x, "commentedCellClassName", js.undefined)
       
-      inline def setComments(value: typings.handsontable.commentsCommentsMod.Settings): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: typings.handsontable.pluginsCommentsCommentsMod.Settings): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
-      inline def setContextMenu(value: typings.handsontable.contextMenuContextMenuMod.Settings): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+      inline def setContextMenu(value: typings.handsontable.pluginsContextMenuContextMenuMod.Settings): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
       inline def setContextMenuVarargs(value: PredefinedMenuItemKey*): Self = StObject.set(x, "contextMenu", js.Array(value*))
       
-      inline def setCopyPaste(value: typings.handsontable.copyPasteCopyPasteMod.Settings): Self = StObject.set(x, "copyPaste", value.asInstanceOf[js.Any])
+      inline def setCopyPaste(value: typings.handsontable.pluginsCopyPasteCopyPasteMod.Settings): Self = StObject.set(x, "copyPaste", value.asInstanceOf[js.Any])
       
       inline def setCopyPasteUndefined: Self = StObject.set(x, "copyPaste", js.undefined)
       
@@ -656,11 +656,11 @@ object settingsMod {
       
       inline def setCurrentRowClassNameUndefined: Self = StObject.set(x, "currentRowClassName", js.undefined)
       
-      inline def setCustomBorders(value: typings.handsontable.customBordersCustomBordersMod.Settings): Self = StObject.set(x, "customBorders", value.asInstanceOf[js.Any])
+      inline def setCustomBorders(value: typings.handsontable.pluginsCustomBordersCustomBordersMod.Settings): Self = StObject.set(x, "customBorders", value.asInstanceOf[js.Any])
       
       inline def setCustomBordersUndefined: Self = StObject.set(x, "customBorders", js.undefined)
       
-      inline def setCustomBordersVarargs(value: typings.handsontable.customBordersCustomBordersMod.DetailedSettings*): Self = StObject.set(x, "customBorders", js.Array(value*))
+      inline def setCustomBordersVarargs(value: typings.handsontable.pluginsCustomBordersCustomBordersMod.DetailedSettings*): Self = StObject.set(x, "customBorders", js.Array(value*))
       
       inline def setData(value: js.Array[js.Array[CellValue] | RowObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -700,7 +700,7 @@ object settingsMod {
       
       inline def setDragToScrollUndefined: Self = StObject.set(x, "dragToScroll", js.undefined)
       
-      inline def setDropdownMenu(value: typings.handsontable.dropdownMenuDropdownMenuMod.Settings): Self = StObject.set(x, "dropdownMenu", value.asInstanceOf[js.Any])
+      inline def setDropdownMenu(value: typings.handsontable.pluginsDropdownMenuDropdownMenuMod.Settings): Self = StObject.set(x, "dropdownMenu", value.asInstanceOf[js.Any])
       
       inline def setDropdownMenuUndefined: Self = StObject.set(x, "dropdownMenu", js.undefined)
       
@@ -715,17 +715,19 @@ object settingsMod {
       inline def setEnterBeginsEditingUndefined: Self = StObject.set(x, "enterBeginsEditing", js.undefined)
       
       inline def setEnterMoves(
-        value: typings.handsontable.coordsMod.default | SimpleCellCoords | (js.Function1[
+        value: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords | (js.Function1[
               /* event */ KeyboardEvent, 
-              typings.handsontable.coordsMod.default | SimpleCellCoords
+              typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords
             ])
       ): Self = StObject.set(x, "enterMoves", value.asInstanceOf[js.Any])
       
-      inline def setEnterMovesFunction1(value: /* event */ KeyboardEvent => typings.handsontable.coordsMod.default | SimpleCellCoords): Self = StObject.set(x, "enterMoves", js.Any.fromFunction1(value))
+      inline def setEnterMovesFunction1(
+        value: /* event */ KeyboardEvent => typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords
+      ): Self = StObject.set(x, "enterMoves", js.Any.fromFunction1(value))
       
       inline def setEnterMovesUndefined: Self = StObject.set(x, "enterMoves", js.undefined)
       
-      inline def setFillHandle(value: typings.handsontable.autofillAutofillMod.Settings): Self = StObject.set(x, "fillHandle", value.asInstanceOf[js.Any])
+      inline def setFillHandle(value: typings.handsontable.pluginsAutofillAutofillMod.Settings): Self = StObject.set(x, "fillHandle", value.asInstanceOf[js.Any])
       
       inline def setFillHandleUndefined: Self = StObject.set(x, "fillHandle", js.undefined)
       
@@ -757,7 +759,7 @@ object settingsMod {
       
       inline def setFixedRowsTopUndefined: Self = StObject.set(x, "fixedRowsTop", js.undefined)
       
-      inline def setFormulas(value: typings.handsontable.formulasFormulasMod.Settings): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+      inline def setFormulas(value: typings.handsontable.pluginsFormulasFormulasMod.Settings): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
       
       inline def setFormulasUndefined: Self = StObject.set(x, "formulas", js.undefined)
       
@@ -771,11 +773,11 @@ object settingsMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHiddenColumns(value: typings.handsontable.hiddenColumnsHiddenColumnsMod.Settings): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
+      inline def setHiddenColumns(value: typings.handsontable.pluginsHiddenColumnsHiddenColumnsMod.Settings): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
       
       inline def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
       
-      inline def setHiddenRows(value: typings.handsontable.hiddenRowsHiddenRowsMod.Settings): Self = StObject.set(x, "hiddenRows", value.asInstanceOf[js.Any])
+      inline def setHiddenRows(value: typings.handsontable.pluginsHiddenRowsHiddenRowsMod.Settings): Self = StObject.set(x, "hiddenRows", value.asInstanceOf[js.Any])
       
       inline def setHiddenRowsUndefined: Self = StObject.set(x, "hiddenRows", js.undefined)
       
@@ -843,11 +845,11 @@ object settingsMod {
       
       inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
       
-      inline def setMergeCells(value: typings.handsontable.mergeCellsMergeCellsMod.Settings): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
+      inline def setMergeCells(value: typings.handsontable.pluginsMergeCellsMergeCellsMod.Settings): Self = StObject.set(x, "mergeCells", value.asInstanceOf[js.Any])
       
       inline def setMergeCellsUndefined: Self = StObject.set(x, "mergeCells", js.undefined)
       
-      inline def setMergeCellsVarargs(value: typings.handsontable.mergeCellsMergeCellsMod.DetailedSettings*): Self = StObject.set(x, "mergeCells", js.Array(value*))
+      inline def setMergeCellsVarargs(value: typings.handsontable.pluginsMergeCellsMergeCellsMod.DetailedSettings*): Self = StObject.set(x, "mergeCells", js.Array(value*))
       
       inline def setMinCols(value: Double): Self = StObject.set(x, "minCols", value.asInstanceOf[js.Any])
       
@@ -865,15 +867,19 @@ object settingsMod {
       
       inline def setMinSpareRowsUndefined: Self = StObject.set(x, "minSpareRows", js.undefined)
       
-      inline def setMultiColumnSorting(value: typings.handsontable.columnSortingColumnSortingMod.Settings): Self = StObject.set(x, "multiColumnSorting", value.asInstanceOf[js.Any])
+      inline def setMultiColumnSorting(value: typings.handsontable.pluginsColumnSortingColumnSortingMod.Settings): Self = StObject.set(x, "multiColumnSorting", value.asInstanceOf[js.Any])
       
       inline def setMultiColumnSortingUndefined: Self = StObject.set(x, "multiColumnSorting", js.undefined)
       
-      inline def setNestedHeaders(value: typings.handsontable.nestedHeadersNestedHeadersMod.Settings): Self = StObject.set(x, "nestedHeaders", value.asInstanceOf[js.Any])
+      inline def setNestedHeaders(value: typings.handsontable.pluginsNestedHeadersNestedHeadersMod.Settings): Self = StObject.set(x, "nestedHeaders", value.asInstanceOf[js.Any])
       
       inline def setNestedHeadersUndefined: Self = StObject.set(x, "nestedHeaders", js.undefined)
       
-      inline def setNestedHeadersVarargs(value: (js.Array[String | typings.handsontable.nestedHeadersNestedHeadersMod.DetailedSettings])*): Self = StObject.set(x, "nestedHeaders", js.Array(value*))
+      inline def setNestedHeadersVarargs(
+        value: (js.Array[
+              String | typings.handsontable.pluginsNestedHeadersNestedHeadersMod.DetailedSettings
+            ])*
+      ): Self = StObject.set(x, "nestedHeaders", js.Array(value*))
       
       inline def setNestedRows(value: Boolean): Self = StObject.set(x, "nestedRows", value.asInstanceOf[js.Any])
       
@@ -961,7 +967,7 @@ object settingsMod {
       
       inline def setRowHeightsVarargs(value: (js.UndefOr[Double | String | Unit])*): Self = StObject.set(x, "rowHeights", js.Array(value*))
       
-      inline def setSearch(value: typings.handsontable.searchSearchMod.Settings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: typings.handsontable.pluginsSearchSearchMod.Settings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
@@ -1028,13 +1034,15 @@ object settingsMod {
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
       inline def setTabMoves(
-        value: typings.handsontable.coordsMod.default | SimpleCellCoords | (js.Function1[
+        value: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords | (js.Function1[
               /* event */ KeyboardEvent, 
-              typings.handsontable.coordsMod.default | SimpleCellCoords
+              typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords
             ])
       ): Self = StObject.set(x, "tabMoves", value.asInstanceOf[js.Any])
       
-      inline def setTabMovesFunction1(value: /* event */ KeyboardEvent => typings.handsontable.coordsMod.default | SimpleCellCoords): Self = StObject.set(x, "tabMoves", js.Any.fromFunction1(value))
+      inline def setTabMovesFunction1(
+        value: /* event */ KeyboardEvent => typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default | SimpleCellCoords
+      ): Self = StObject.set(x, "tabMoves", js.Any.fromFunction1(value))
       
       inline def setTabMovesUndefined: Self = StObject.set(x, "tabMoves", js.undefined)
       

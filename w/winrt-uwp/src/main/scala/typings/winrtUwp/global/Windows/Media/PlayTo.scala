@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PlayTo {
   
   /** Provides information about the CurrentTimeChangeRequested event. */
-  @JSGlobal("Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs")
   @js.native
-  abstract class CurrentTimeChangeRequestedEventArgs ()
+  open class CurrentTimeChangeRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs {
     
@@ -26,9 +26,9 @@ object PlayTo {
   }
   
   /** Provides information about the MuteChangeRequested event. */
-  @JSGlobal("Windows.Media.PlayTo.MuteChangeRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.MuteChangeRequestedEventArgs")
   @js.native
-  abstract class MuteChangeRequestedEventArgs ()
+  open class MuteChangeRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.MuteChangeRequestedEventArgs {
     
@@ -38,9 +38,9 @@ object PlayTo {
   }
   
   /** Provides information about a Play To connection. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToConnection")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToConnection")
   @js.native
-  abstract class PlayToConnection ()
+  open class PlayToConnection ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToConnection
   
@@ -64,9 +64,9 @@ object PlayTo {
   }
   
   /** Provides information about the Error event. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToConnectionErrorEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToConnectionErrorEventArgs")
   @js.native
-  abstract class PlayToConnectionErrorEventArgs ()
+  open class PlayToConnectionErrorEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionErrorEventArgs {
     
@@ -95,9 +95,9 @@ object PlayTo {
   }
   
   /** Provides information about the StateChanged event. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToConnectionStateChangedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToConnectionStateChangedEventArgs")
   @js.native
-  abstract class PlayToConnectionStateChangedEventArgs ()
+  open class PlayToConnectionStateChangedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionStateChangedEventArgs {
     
@@ -111,9 +111,9 @@ object PlayTo {
   }
   
   /** Provides information about the Transferred event. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs")
   @js.native
-  abstract class PlayToConnectionTransferredEventArgs ()
+  open class PlayToConnectionTransferredEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs {
     
@@ -127,9 +127,9 @@ object PlayTo {
   }
   
   /** Provides access to Play To capabilities. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToManager")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToManager")
   @js.native
-  abstract class PlayToManager ()
+  open class PlayToManager ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToManager
   object PlayToManager {
@@ -159,9 +159,9 @@ object PlayTo {
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToReceiver
   
   /** Represents a media element to connect to a Play To target. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToSource")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToSource")
   @js.native
-  abstract class PlayToSource ()
+  open class PlayToSource ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToSource {
     
@@ -183,9 +183,9 @@ object PlayTo {
   }
   
   /** Represents a deferred operation when you're supplying a source media element for Play To. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToSourceDeferral")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToSourceDeferral")
   @js.native
-  abstract class PlayToSourceDeferral ()
+  open class PlayToSourceDeferral ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToSourceDeferral {
     
@@ -195,9 +195,9 @@ object PlayTo {
   }
   
   /** Represents a request to connect a media element with a Play To target. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToSourceRequest")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToSourceRequest")
   @js.native
-  abstract class PlayToSourceRequest ()
+  open class PlayToSourceRequest ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToSourceRequest {
     
@@ -228,9 +228,9 @@ object PlayTo {
   }
   
   /** Provides information about the SourceRequested event. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToSourceRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToSourceRequestedEventArgs")
   @js.native
-  abstract class PlayToSourceRequestedEventArgs ()
+  open class PlayToSourceRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToSourceRequestedEventArgs {
     
@@ -240,9 +240,9 @@ object PlayTo {
   }
   
   /** Provides information about the SourceSelected event. */
-  @JSGlobal("Windows.Media.PlayTo.PlayToSourceSelectedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlayToSourceSelectedEventArgs")
   @js.native
-  abstract class PlayToSourceSelectedEventArgs ()
+  open class PlayToSourceSelectedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlayToSourceSelectedEventArgs {
     
@@ -268,9 +268,9 @@ object PlayTo {
   }
   
   /** Provides information about the PlaybackRateChangeRequested event. */
-  @JSGlobal("Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs")
   @js.native
-  abstract class PlaybackRateChangeRequestedEventArgs ()
+  open class PlaybackRateChangeRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs {
     
@@ -280,9 +280,9 @@ object PlayTo {
   }
   
   /** Provides information about the SourceChangeRequested event. */
-  @JSGlobal("Windows.Media.PlayTo.SourceChangeRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.SourceChangeRequestedEventArgs")
   @js.native
-  abstract class SourceChangeRequestedEventArgs ()
+  open class SourceChangeRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.SourceChangeRequestedEventArgs {
     
@@ -328,9 +328,9 @@ object PlayTo {
   }
   
   /** Provides information about the VolumeChangeRequested event. */
-  @JSGlobal("Windows.Media.PlayTo.VolumeChangeRequestedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Media.PlayTo.VolumeChangeRequestedEventArgs")
   @js.native
-  abstract class VolumeChangeRequestedEventArgs ()
+  open class VolumeChangeRequestedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Media.PlayTo.VolumeChangeRequestedEventArgs {
     

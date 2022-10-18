@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("plottable", "Key")
 @js.native
 open class Key ()
-  extends typings.plottable.keyInteractionMod.Key
+  extends typings.plottable.buildSrcInteractionsKeyInteractionMod.Key

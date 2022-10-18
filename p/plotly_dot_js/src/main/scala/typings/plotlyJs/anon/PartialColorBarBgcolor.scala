@@ -3,6 +3,7 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.DTickValue
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.mod.Font
+import typings.plotlyJs.mod.TickFormatStop
 import typings.plotlyJs.mod.TypedArray
 import typings.plotlyJs.plotlyJsStrings.B
 import typings.plotlyJs.plotlyJsStrings.E
@@ -27,6 +28,7 @@ import typings.plotlyJs.plotlyJsStrings.pixels
 import typings.plotlyJs.plotlyJsStrings.power
 import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +80,7 @@ trait PartialColorBarBgcolor extends StObject {
   
   var tickformat: js.UndefOr[String] = js.undefined
   
-  var tickformatstops: js.UndefOr[js.Array[PartialTickFormatStop]] = js.undefined
+  var tickformatstops: js.UndefOr[js.Array[Partial[TickFormatStop]]] = js.undefined
   
   var ticklen: js.UndefOr[Double] = js.undefined
   
@@ -225,11 +227,11 @@ object PartialColorBarBgcolor {
     
     inline def setTickformatUndefined: Self = StObject.set(x, "tickformat", js.undefined)
     
-    inline def setTickformatstops(value: js.Array[PartialTickFormatStop]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
+    inline def setTickformatstops(value: js.Array[Partial[TickFormatStop]]): Self = StObject.set(x, "tickformatstops", value.asInstanceOf[js.Any])
     
     inline def setTickformatstopsUndefined: Self = StObject.set(x, "tickformatstops", js.undefined)
     
-    inline def setTickformatstopsVarargs(value: PartialTickFormatStop*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
+    inline def setTickformatstopsVarargs(value: Partial[TickFormatStop]*): Self = StObject.set(x, "tickformatstops", js.Array(value*))
     
     inline def setTicklen(value: Double): Self = StObject.set(x, "ticklen", value.asInstanceOf[js.Any])
     

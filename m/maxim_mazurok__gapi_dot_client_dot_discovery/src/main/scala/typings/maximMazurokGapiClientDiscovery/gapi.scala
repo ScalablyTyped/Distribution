@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDiscovery
 
-import org.scalablytyped.runtime.TopLevel
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDiscovery.anon.Accept
 import typings.maximMazurokGapiClientDiscovery.anon.Alt
@@ -117,9 +116,7 @@ object gapi {
         
         /** If this is a schema for an object, list the schema for each property of this object. */
         var properties: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.JsonSchema & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
               ] = js.undefined
         
         /**
@@ -210,9 +207,7 @@ object gapi {
           inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
           
           inline def setProperties(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.JsonSchema & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
           ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
           
           inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -288,9 +283,7 @@ object gapi {
         
         /** API-level methods for this API. */
         var methods: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod} */ js.Any
               ] = js.undefined
         
         /** The name of this API. */
@@ -310,9 +303,7 @@ object gapi {
         
         /** Common parameters that apply across all apis. */
         var parameters: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
               ] = js.undefined
         
         /** The protocol described by this document. */
@@ -320,9 +311,7 @@ object gapi {
         
         /** The resources in this API. */
         var resources: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource} */ js.Any
               ] = js.undefined
         
         /** The version of this API. */
@@ -333,9 +322,7 @@ object gapi {
         
         /** The schemas for this API. */
         var schemas: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
               ] = js.undefined
         
         /** The base path for all REST requests. */
@@ -423,9 +410,7 @@ object gapi {
           inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
           
           inline def setMethods(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod} */ js.Any
           ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
           
           inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
@@ -447,9 +432,7 @@ object gapi {
           inline def setPackagePathUndefined: Self = StObject.set(x, "packagePath", js.undefined)
           
           inline def setParameters(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
           ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
           
           inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -459,9 +442,7 @@ object gapi {
           inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
           
           inline def setResources(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource} */ js.Any
           ): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
           
           inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
@@ -475,9 +456,7 @@ object gapi {
           inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
           
           inline def setSchemas(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestDescription & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
           ): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
           
           inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
@@ -525,9 +504,7 @@ object gapi {
         
         /** Details for all parameters in this method. */
         var parameters: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestMethod & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
               ] = js.undefined
         
         /** The URI path of this REST method. Should be used in conjunction with the basePath property at the api-level. */
@@ -590,9 +567,7 @@ object gapi {
           inline def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value*))
           
           inline def setParameters(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestMethod & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.JsonSchema} */ js.Any
           ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
           
           inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -637,16 +612,12 @@ object gapi {
         
         /** Methods on this resource. */
         var methods: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestResource & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod} */ js.Any
               ] = js.undefined
         
         /** Sub-resources on this resource. */
         var resources: js.UndefOr[
-                /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-        {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource}
-          */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestResource & TopLevel[Any]
+                /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource} */ js.Any
               ] = js.undefined
       }
       object RestResource {
@@ -659,17 +630,13 @@ object gapi {
         extension [Self <: RestResource](x: Self) {
           
           inline def setMethods(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestResource & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestMethod} */ js.Any
           ): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
           
           inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
           
           inline def setResources(
-            value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-          {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource}
-            */ typings.maximMazurokGapiClientDiscovery.maximMazurokGapiClientDiscoveryStrings.RestResource & TopLevel[Any]
+            value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.discovery.gapi.client.discovery.RestResource} */ js.Any
           ): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
           
           inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)

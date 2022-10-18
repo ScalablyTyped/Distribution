@@ -1,12 +1,12 @@
 package typings.nivoRecompose
 
-import typings.nivoRecompose.composeMod.ComponentEnhancer
-import typings.nivoRecompose.typesMod.DefaultingInferableComponentEnhancer
-import typings.nivoRecompose.typesMod.InferableComponentEnhancer
-import typings.nivoRecompose.typesMod.InferableComponentEnhancerWithProps
-import typings.nivoRecompose.typesMod.Mapper
-import typings.nivoRecompose.typesMod.PredicateDiff
-import typings.nivoRecompose.withStateMod.StateProps
+import typings.nivoRecompose.distTypesComposeMod.ComponentEnhancer
+import typings.nivoRecompose.distTypesTypesMod.DefaultingInferableComponentEnhancer
+import typings.nivoRecompose.distTypesTypesMod.InferableComponentEnhancer
+import typings.nivoRecompose.distTypesTypesMod.InferableComponentEnhancerWithProps
+import typings.nivoRecompose.distTypesTypesMod.Mapper
+import typings.nivoRecompose.distTypesTypesMod.PredicateDiff
+import typings.nivoRecompose.distTypesWithStateMod.StateProps
 import typings.propTypes.mod.ValidationMap
 import typings.react.mod.ComponentType
 import typings.std.Record

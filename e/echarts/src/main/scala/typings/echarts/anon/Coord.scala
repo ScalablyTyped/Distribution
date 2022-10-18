@@ -55,12 +55,12 @@ trait Coord extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Emphasis] = js.undefined
+  var itemStyle: js.UndefOr[BorderWidth] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.data.label
     */
-  var label: js.UndefOr[FontFamily] = js.undefined
+  var label: js.UndefOr[Emphasis] = js.undefined
   
   /**
     * Mark point name.
@@ -249,11 +249,11 @@ object Coord {
     
     inline def setCoordVarargs(value: Any*): Self = StObject.set(x, "coord", js.Array(value*))
     
-    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    inline def setLabel(value: FontFamily): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Emphasis): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     

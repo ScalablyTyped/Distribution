@@ -2,15 +2,15 @@ package typings.googleProtobuf.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.googleProtobuf.anon.Instantiable
-import typings.googleProtobuf.anon.TypeofMessage
+import typings.googleProtobuf.anon.TypeofMessageInstantiable
 import typings.googleProtobuf.mod.Message.MessageArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-protobuf", "Message")
+/* note: abstract class */ @JSImport("google-protobuf", "Message")
 @js.native
-abstract class Message () extends StObject {
+open class Message () extends StObject {
   
   def cloneMessage(): this.type = js.native
   
@@ -102,7 +102,7 @@ object Message {
   inline def getFieldWithDefault[T](msg: Message, fieldNumber: Double, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldWithDefault")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean): Map[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMapField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], noLazyCreate.asInstanceOf[js.Any])).asInstanceOf[Map[Any, Any]]
-  inline def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean, valueCtor: TypeofMessage): Map[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMapField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], noLazyCreate.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any])).asInstanceOf[Map[Any, Any]]
+  inline def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean, valueCtor: TypeofMessageInstantiable): Map[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMapField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any], noLazyCreate.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any])).asInstanceOf[Map[Any, Any]]
   
   inline def getOptionalFloatingPointField(msg: Message, fieldNumber: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionalFloatingPointField")(msg.asInstanceOf[js.Any], fieldNumber.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
@@ -178,7 +178,7 @@ object Message {
     oneofFields: js.Array[js.Array[Double]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any], suggestedPivot.asInstanceOf[js.Any], repeatedFields.asInstanceOf[js.Any], oneofFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def registerMessageType(id: Double, constructor: TypeofMessage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMessageType")(id.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerMessageType(id: Double, constructor: TypeofMessageInstantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMessageType")(id.asInstanceOf[js.Any], constructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def serializeBinaryToWriter(message: Message, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

@@ -2,8 +2,8 @@ package typings.cssSelectorParser
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cssSelectorParser.cssSelectorParserBooleans.`true`
-import typings.cssSelectorParser.parserContextMod.PseudoSelectorType
-import typings.cssSelectorParser.selectorMod.Selector
+import typings.cssSelectorParser.libParserContextMod.PseudoSelectorType
+import typings.cssSelectorParser.libSelectorMod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

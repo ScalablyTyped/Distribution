@@ -5,39 +5,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/common.html#get--db
+/** Database information response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/database/common.html#get--db} */
 trait DatabaseGetResponse extends StObject {
   
-  // Set to true if the database compaction routine is operating on this database.
+  /** Set to true if the database compaction routine is operating on this database. */
   var compact_running: Boolean
   
-  // The number of bytes of live data inside the database file.
+  /** The number of bytes of live data inside the database file. */
   var data_size: Double
   
-  // The name of the database.
+  /** The name of the database. */
   var db_name: String
   
-  // The version of the physical format used for the data when it is stored on disk.
+  /** The version of the physical format used for the data when it is stored on disk. */
   var disk_format_version: Double
   
-  // The length of the database file on disk. Views indexes are not included in the calculation.
+  /** The length of the database file on disk. Views indexes are not included in the calculation. */
   var disk_size: Double
   
-  // A count of the documents in the specified database.
+  /** A count of the documents in the specified database. */
   var doc_count: Double
   
-  // Number of deleted documents
+  /** Number of deleted documents */
   var doc_del_count: Double
   
-  // Timestamp of when the database was opened, expressed in microseconds since the epoch.
+  /** Timestamp of when the database was opened, expressed in microseconds since the epoch. */
   var instance_start_time: String
   
-  // The number of purge operations on the database.
+  /** The number of purge operations on the database. */
   var purge_seq: Double
   
   var sizes: Active
   
-  // The current number of updates to the database.
+  /** The current number of updates to the database. */
   var update_seq: Double
 }
 object DatabaseGetResponse {

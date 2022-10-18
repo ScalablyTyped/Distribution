@@ -2,7 +2,7 @@ package typings.reactFocusOn
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactFocusOn.typesMod.ReactFocusOnProps
+import typings.reactFocusOn.distEs5TypesMod.ReactFocusOnProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

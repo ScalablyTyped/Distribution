@@ -1,8 +1,8 @@
 package typings.redisClient.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisClient.xautoclaimJUSTIDMod.XAutoClaimJustIdRawReply
-import typings.redisClient.xautoclaimJUSTIDMod.XAutoClaimJustIdReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsXautoclaimJUSTIDMod.XAutoClaimJustIdRawReply
+import typings.redisClient.distLibCommandsXautoclaimJUSTIDMod.XAutoClaimJustIdReply
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

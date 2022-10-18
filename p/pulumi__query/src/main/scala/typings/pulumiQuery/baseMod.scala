@@ -17,9 +17,9 @@ object baseMod {
     def this(key: TKey, core: AsyncIterable[TSource]) = this()
   }
   
-  @JSImport("@pulumi/query/base", "IterableBase")
+  /* note: abstract class */ @JSImport("@pulumi/query/base", "IterableBase")
   @js.native
-  abstract class IterableBase[T] protected ()
+  open class IterableBase[T] protected ()
     extends StObject
        with AsyncIterable[T] {
     def this(source: AsyncQuerySource[T]) = this()

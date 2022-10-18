@@ -1,14 +1,14 @@
 package typings.postmark.mod.Models
 
-import typings.postmark.clientOptionsMod.ClientOptions.Configuration
+import typings.postmark.distClientModelsClientClientOptionsMod.ClientOptions.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark", "Models.HttpClient")
+/* note: abstract class */ @JSImport("postmark", "Models.HttpClient")
 @js.native
-/* protected */ abstract class HttpClient ()
-  extends typings.postmark.modelsMod.HttpClient {
+/* protected */ open class HttpClient ()
+  extends typings.postmark.distClientModelsMod.HttpClient {
   /* protected */ def this(configOptions: Configuration) = this()
 }
 /* static members */

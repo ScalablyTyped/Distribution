@@ -1,6 +1,6 @@
 package typings.puppeteer.anon
 
-import typings.puppeteer.inputMod.MouseButton
+import typings.puppeteer.mod.MouseButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -11,14 +11,14 @@ trait TableData extends StObject {
   
   /**
     * Gets or sets the headers of the table.
-    * 
+    *
     * @remarks
     *
-    * To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify headers 
+    * To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify headers
     * for a two-column table you would set the header property to [['header1', 'header2']].
     *
-    * If you specify null for the headers property (or leaving the property empty when you construct a TableData object), the following results 
-    * occur when your code executes:
+    * If you specify null for the headers property (or leaving the property empty when you construct a TableData object), the following results
+    * occur when your code executes.
     *
     * - If you insert a new table, the default column headers for the table are created.
     *
@@ -27,16 +27,16 @@ trait TableData extends StObject {
   var headers: js.Array[Any]
   
   /**
-    * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. 
+    * Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table.
     * Returns an empty array if there are no rows.
-    * 
+    *
     * @remarks
     *
-    * To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify two rows of 
+    * To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify two rows of
     * string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
     *
-    * If you specify null for the rows property (or leave the property empty when you construct a TableData object), the following results occur 
-    * when your code executes:
+    * If you specify null for the rows property (or leave the property empty when you construct a TableData object), the following results occur
+    * when your code executes.
     *
     * - If you insert a new table, a blank row will be inserted.
     *

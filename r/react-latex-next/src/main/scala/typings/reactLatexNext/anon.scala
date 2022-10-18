@@ -1,7 +1,7 @@
 package typings.reactLatexNext
 
-import typings.reactLatexNext.renderLatexMod.Macros
-import typings.reactLatexNext.typesMod.Delimiter
+import typings.reactLatexNext.distRenderLatexMod.Macros
+import typings.reactLatexNext.distTypesMod.Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

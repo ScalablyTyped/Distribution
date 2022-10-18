@@ -20,7 +20,7 @@ import typings.baseui.tableSemanticStyledComponentsMod.StyledTableHeadCellProps
 import typings.baseui.tableSemanticStyledComponentsMod.StyledTableProps
 import typings.baseui.tableSemanticTableMod.default
 import typings.react.mod.ForwardRefExoticComponent
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,7 +143,7 @@ object tableSemanticMod {
   @JSImport("baseui/table-semantic", "TableBuilder")
   @js.native
   open class TableBuilder[T] ()
-    extends typings.baseui.tableBuilderMod.default[T]
+    extends typings.baseui.tableSemanticTableBuilderMod.default[T]
   /* static members */
   object TableBuilder {
     
@@ -160,5 +160,5 @@ object tableSemanticMod {
   @JSImport("baseui/table-semantic", "TableBuilderColumn")
   @js.native
   open class TableBuilderColumn[T] ()
-    extends typings.baseui.tableBuilderColumnMod.default[T]
+    extends typings.baseui.tableSemanticTableBuilderColumnMod.default[T]
 }

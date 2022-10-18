@@ -1,7 +1,7 @@
 package typings.guacamoleCommonJs
 
-import typings.guacamoleCommonJs.layerMod.Layer.LineCap
-import typings.guacamoleCommonJs.layerMod.Layer.LineJoin
+import typings.guacamoleCommonJs.libLayerMod.Layer.LineCap
+import typings.guacamoleCommonJs.libLayerMod.Layer.LineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

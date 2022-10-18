@@ -2,7 +2,7 @@ package typings.node.http2Mod
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.node.nodeStreamMod.Readable
+import typings.node.nodeColonstreamMod.Readable
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.data
 import typings.node.nodeStrings.drain

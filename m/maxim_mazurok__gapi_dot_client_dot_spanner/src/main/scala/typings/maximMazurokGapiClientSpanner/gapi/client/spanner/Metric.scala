@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,16 +29,12 @@ trait Metric extends StObject {
   
   /** The (sparse) mapping from time index to an IndexedHotKey message, representing those time intervals for which there are hot keys. */
   var indexedHotKeys: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedHotKey}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Metric & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedHotKey} */ js.Any
   ] = js.undefined
   
   /** The (sparse) mapping from time interval index to an IndexedKeyRangeInfos message, representing those time intervals for which there are informational messages concerning key ranges. */
   var indexedKeyRangeInfos: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedKeyRangeInfos}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Metric & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedKeyRangeInfos} */ js.Any
   ] = js.undefined
   
   /** Information about the metric. */
@@ -88,17 +83,13 @@ object Metric {
     inline def setHotValueUndefined: Self = StObject.set(x, "hotValue", js.undefined)
     
     inline def setIndexedHotKeys(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedHotKey}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Metric & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedHotKey} */ js.Any
     ): Self = StObject.set(x, "indexedHotKeys", value.asInstanceOf[js.Any])
     
     inline def setIndexedHotKeysUndefined: Self = StObject.set(x, "indexedHotKeys", js.undefined)
     
     inline def setIndexedKeyRangeInfos(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedKeyRangeInfos}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Metric & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.IndexedKeyRangeInfos} */ js.Any
     ): Self = StObject.set(x, "indexedKeyRangeInfos", value.asInstanceOf[js.Any])
     
     inline def setIndexedKeyRangeInfosUndefined: Self = StObject.set(x, "indexedKeyRangeInfos", js.undefined)

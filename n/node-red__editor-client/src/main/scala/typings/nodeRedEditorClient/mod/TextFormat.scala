@@ -1,6 +1,6 @@
 package typings.nodeRedEditorClient.mod
 
-import typings.nodeRedEditorClient.anon.Dir
+import typings.nodeRedEditorClient.anon.`0`
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.email
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.filepath
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.url
@@ -31,5 +31,5 @@ trait TextFormat extends StObject {
     * @param isRtl - indicates if the GUI is mirrored
     * @param locale - the browser locale
     */
-  def getHtml(text: String, `type`: String, args: Dir, isRtl: Boolean, locale: String): String = js.native
+  def getHtml(text: String, `type`: String, args: `0`, isRtl: Boolean, locale: String): String = js.native
 }

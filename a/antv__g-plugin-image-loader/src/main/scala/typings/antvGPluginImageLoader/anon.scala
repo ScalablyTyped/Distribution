@@ -1,7 +1,7 @@
 package typings.antvGPluginImageLoader
 
-import typings.antvGLite.cssgradientvalueMod.GradientType
-import typings.antvGPluginImageLoader.imagePoolMod.GradientParams
+import typings.antvGLite.distCssCssomCssgradientvalueMod.GradientType
+import typings.antvGPluginImageLoader.distImagePoolMod.GradientParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

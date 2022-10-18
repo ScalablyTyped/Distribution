@@ -1,12 +1,13 @@
 package typings.grommet.anon
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Checked extends StObject {
   
-  var checked: js.UndefOr[Any] = js.undefined
+  var checked: js.UndefOr[ReactNode | typings.grommetIcons.iconsMod.Icon] = js.undefined
   
   var indeterminate: js.UndefOr[Any] = js.undefined
 }
@@ -19,7 +20,7 @@ object Checked {
   
   extension [Self <: Checked](x: Self) {
     
-    inline def setChecked(value: Any): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: ReactNode | typings.grommetIcons.iconsMod.Icon): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     

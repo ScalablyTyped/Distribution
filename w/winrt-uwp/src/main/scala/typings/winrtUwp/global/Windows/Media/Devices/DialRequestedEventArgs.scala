@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the DialRequested event. */
-@JSGlobal("Windows.Media.Devices.DialRequestedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.DialRequestedEventArgs")
 @js.native
-abstract class DialRequestedEventArgs ()
+open class DialRequestedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.DialRequestedEventArgs {
   

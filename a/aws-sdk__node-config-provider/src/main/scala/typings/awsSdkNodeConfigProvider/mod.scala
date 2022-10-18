@@ -1,8 +1,8 @@
 package typings.awsSdkNodeConfigProvider
 
-import typings.awsSdkNodeConfigProvider.configLoaderMod.LoadedConfigSelectors
-import typings.awsSdkNodeConfigProvider.configLoaderMod.LocalConfigOptions
-import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LoadedConfigSelectors
+import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LocalConfigOptions
+import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

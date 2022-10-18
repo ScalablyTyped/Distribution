@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.slidemenuMod.SlideMenuProps
+import typings.primereact.slidemenuSlidemenuMod.SlideMenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "SlideMenu")
 @js.native
 open class SlideMenu protected ()
-  extends typings.primereact.slidemenuMod.SlideMenu {
+  extends typings.primereact.slidemenuSlidemenuMod.SlideMenu {
   def this(props: SlideMenuProps) = this()
   /**
     * @deprecated

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a user authentication status changing event. */
-@JSGlobal("Windows.System.UserAuthenticationStatusChangingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.System.UserAuthenticationStatusChangingEventArgs")
 @js.native
-abstract class UserAuthenticationStatusChangingEventArgs ()
+open class UserAuthenticationStatusChangingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.System.UserAuthenticationStatusChangingEventArgs {
   

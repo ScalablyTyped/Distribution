@@ -1,7 +1,7 @@
 package typings.angularCli.anon
 
-import typings.angularDevkitSchematics.interfaceMod.Rule
-import typings.angularDevkitSchematics.interfaceMod.RuleFactory
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.Rule
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.RuleFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

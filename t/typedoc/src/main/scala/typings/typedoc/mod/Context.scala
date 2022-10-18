@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "Context")
 @js.native
 open class Context protected ()
-  extends typings.typedoc.converterMod.Context {
+  extends typings.typedoc.distLibConverterMod.Context {
   /**
     * Create a new Context instance.
     *
@@ -16,14 +16,14 @@ open class Context protected ()
     * @internal
     */
   def this(
-    converter: typings.typedoc.converterConverterMod.Converter,
+    converter: typings.typedoc.distLibConverterConverterMod.Converter,
     programs: js.Array[Program],
-    project: typings.typedoc.modelsMod.ProjectReflection
+    project: typings.typedoc.distLibModelsMod.ProjectReflection
   ) = this()
   def this(
-    converter: typings.typedoc.converterConverterMod.Converter,
+    converter: typings.typedoc.distLibConverterConverterMod.Converter,
     programs: js.Array[Program],
-    project: typings.typedoc.modelsMod.ProjectReflection,
-    scope: typings.typedoc.modelsMod.Reflection
+    project: typings.typedoc.distLibModelsMod.ProjectReflection,
+    scope: typings.typedoc.distLibModelsMod.Reflection
   ) = this()
 }

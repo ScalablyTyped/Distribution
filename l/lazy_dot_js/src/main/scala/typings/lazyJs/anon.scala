@@ -1,6 +1,5 @@
 package typings.lazyJs
 
-import typings.lazyJs.LazyJS.Flatten
 import typings.lazyJs.LazyJS.PushFront
 import typings.lazyJs.LazyJS.Tuple
 import org.scalablytyped.runtime.StObject
@@ -9,30 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait `0`[T, Shallow /* <: Boolean */] extends StObject {
-    
-    var `0`: Flatten[Any, Shallow]
-    
-    var `1`: T
-  }
-  object `0` {
-    
-    inline def apply[T, Shallow /* <: Boolean */](`0`: Flatten[Any, Shallow], `1`: T): `0`[T, Shallow] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
-      __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`0`[T, Shallow]]
-    }
-    
-    extension [Self <: `0`[?, ?], T, Shallow /* <: Boolean */](x: Self & (`0`[T, Shallow])) {
-      
-      inline def set0(value: Flatten[Any, Shallow]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
-      
-      inline def set1(value: T): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait `1`[ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */] extends StObject {
+  trait `0`[ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */] extends StObject {
     
     var `0`: js.Array[ElementT]
     
@@ -42,23 +18,23 @@ object anon {
     
     var `3`: Tuple[ElementT, LengthT, PushFront[OutputT, ElementT]]
   }
-  object `1` {
+  object `0` {
     
     inline def apply[ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */](
       `0`: js.Array[ElementT],
       `1`: Any,
       `2`: OutputT,
       `3`: Tuple[ElementT, LengthT, PushFront[OutputT, ElementT]]
-    ): `1`[ElementT, OutputT, LengthT] = {
+    ): `0`[ElementT, OutputT, LengthT] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
       __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
       __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[`1`[ElementT, OutputT, LengthT]]
+      __obj.asInstanceOf[`0`[ElementT, OutputT, LengthT]]
     }
     
-    extension [Self <: `1`[?, ?, ?], ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */](x: Self & (`1`[ElementT, OutputT, LengthT])) {
+    extension [Self <: `0`[?, ?, ?], ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */](x: Self & (`0`[ElementT, OutputT, LengthT])) {
       
       inline def set0(value: js.Array[ElementT]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

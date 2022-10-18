@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "LinesMesh")
 @js.native
 open class LinesMesh protected ()
-  extends typings.babylonjs.babylonjsIndexMod.LinesMesh {
+  extends typings.babylonjs.meshesIndexMod.LinesMesh {
   /**
     * Creates a new LinesMesh
     * @param name defines the name
@@ -26,7 +26,7 @@ open class LinesMesh protected ()
     name: String,
     scene: js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]],
     parent: js.UndefOr[Nullable[typings.babylonjs.nodeMod.Node]],
-    source: js.UndefOr[Nullable[typings.babylonjs.linesMeshMod.LinesMesh]],
+    source: js.UndefOr[Nullable[typings.babylonjs.meshesLinesMeshMod.LinesMesh]],
     doNotCloneChildren: js.UndefOr[Boolean],
     /**
     * If vertex color should be applied to the mesh
@@ -36,7 +36,7 @@ open class LinesMesh protected ()
     * If vertex alpha should be applied to the mesh
     */
   useVertexAlpha: js.UndefOr[Boolean],
-    material: js.UndefOr[typings.babylonjs.materialMod.Material]
+    material: js.UndefOr[typings.babylonjs.materialsMaterialMod.Material]
   ) = this()
 }
 /* static members */
@@ -52,5 +52,5 @@ object LinesMesh {
     * @param scene the scene to create the ground mesh in
     * @returns the created ground mesh
     */
-  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.linesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.linesMeshMod.LinesMesh]
+  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.meshesLinesMeshMod.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshesLinesMeshMod.LinesMesh]
 }

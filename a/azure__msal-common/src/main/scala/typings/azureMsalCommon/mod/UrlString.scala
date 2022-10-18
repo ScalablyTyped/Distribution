@@ -1,7 +1,7 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.iuriMod.IUri
-import typings.azureMsalCommon.serverAuthorizationCodeResponseMod.ServerAuthorizationCodeResponse
+import typings.azureMsalCommon.distResponseServerAuthorizationCodeResponseMod.ServerAuthorizationCodeResponse
+import typings.azureMsalCommon.distUrlIuriMod.IUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "UrlString")
 @js.native
 open class UrlString protected ()
-  extends typings.azureMsalCommon.urlStringMod.UrlString {
+  extends typings.azureMsalCommon.distUrlUrlStringMod.UrlString {
   def this(url: String) = this()
 }
 /* static members */
@@ -32,7 +32,7 @@ object UrlString {
     */
   inline def canonicalizeUri(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canonicalizeUri")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def constructAuthorityUriFromObject(urlObject: IUri): typings.azureMsalCommon.urlStringMod.UrlString = ^.asInstanceOf[js.Dynamic].applyDynamic("constructAuthorityUriFromObject")(urlObject.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.urlStringMod.UrlString]
+  inline def constructAuthorityUriFromObject(urlObject: IUri): typings.azureMsalCommon.distUrlUrlStringMod.UrlString = ^.asInstanceOf[js.Dynamic].applyDynamic("constructAuthorityUriFromObject")(urlObject.asInstanceOf[js.Any]).asInstanceOf[typings.azureMsalCommon.distUrlUrlStringMod.UrlString]
   
   inline def getAbsoluteUrl(relativeUrl: String, baseUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAbsoluteUrl")(relativeUrl.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[String]
   

@@ -8,14 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class PopupBaseViewModel protected () extends Base {
   def this(model: Any) = this()
-  def this(model: Any, targetElement: Any) = this()
   
   var _model: Any = js.native
-  
-  @JSName("apply")
-  def apply(): Unit = js.native
-  
-  def applyButtonText: String = js.native
   
   def cancel(): Unit = js.native
   
@@ -29,11 +23,25 @@ open class PopupBaseViewModel protected () extends Base {
   
   def contentComponentName: String = js.native
   
+  /* protected */ def createFooterActionBar(): Unit = js.native
+  
+  def footerToolbar: Any = js.native
+  
+  /* protected */ var footerToolbarValue: Any = js.native
+  
+  /* protected */ def getPopupHeaderTemplate(): String = js.native
+  
+  /* protected */ def getShowFooter(): Boolean = js.native
+  
+  /* protected */ def getShowHeader(): Boolean = js.native
+  
+  /* protected */ def getStyleClass(): CssClassBuilder = js.native
+  
   var height: String = js.native
   
-  def initializePopupContainer(): Unit = js.native
+  /* protected */ def hidePopup(): Unit = js.native
   
-  var isAutoScroll: Boolean = js.native
+  def initializePopupContainer(): Unit = js.native
   
   def isFocusedContent: Boolean = js.native
   
@@ -52,21 +60,17 @@ open class PopupBaseViewModel protected () extends Base {
   
   def onKeyDown(event: Any): Unit = js.native
   
-  var pointerTarget: IPosition = js.native
+  def popupHeaderTemplate: String = js.native
   
-  var popupDirection: String = js.native
-  
-  var prevActiveElement: Any = js.native
-  
-  var scrollEventCallBack: Any = js.native
+  /* protected */ var prevActiveElement: Any = js.native
   
   def showFooter: Boolean = js.native
   
-  def showPointer: Boolean = js.native
+  def showHeader: Boolean = js.native
   
   def styleClass: String = js.native
   
-  var targetElement: Any = js.native
+  def switchFocus(): Unit = js.native
   
   def title: String = js.native
   

@@ -1,7 +1,7 @@
 package typings.antvGLite.mod
 
-import typings.antvGLite.domInterfacesMod.DisplayObjectConfig
-import typings.antvGLite.lineMod.LineStyleProps
+import typings.antvGLite.distDisplayObjectsLineMod.LineStyleProps
+import typings.antvGLite.distDomInterfacesMod.DisplayObjectConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Line")
 @js.native
 open class Line ()
-  extends typings.antvGLite.displayObjectsMod.Line {
+  extends typings.antvGLite.distDisplayObjectsMod.Line {
   def this(hasStyleRest: DisplayObjectConfig[LineStyleProps]) = this()
 }

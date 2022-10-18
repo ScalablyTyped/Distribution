@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomFields extends StObject {
   
   var customFields: js.UndefOr[Boolean] = js.undefined
+  
+  var totalCount: js.UndefOr[Boolean] = js.undefined
 }
 object CustomFields {
   
@@ -20,5 +22,9 @@ object CustomFields {
     inline def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    
+    inline def setTotalCount(value: Boolean): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

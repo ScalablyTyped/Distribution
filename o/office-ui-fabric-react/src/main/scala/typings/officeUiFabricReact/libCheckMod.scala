@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.checkTypesMod.ICheckProps
+import typings.officeUiFabricReact.libComponentsCheckCheckDottypesMod.ICheckProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

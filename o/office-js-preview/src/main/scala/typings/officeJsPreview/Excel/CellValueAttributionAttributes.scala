@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
   *
   * @remarks
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.16]
   */
 trait CellValueAttributionAttributes extends StObject {
   
@@ -17,8 +16,7 @@ trait CellValueAttributionAttributes extends StObject {
     * Represents a URL to a license or source that describes how this property can be used.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var licenseAddress: js.UndefOr[String] = js.undefined
   
@@ -26,8 +24,7 @@ trait CellValueAttributionAttributes extends StObject {
     * Represents a name for the license that governs this property.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var licenseText: js.UndefOr[String] = js.undefined
   
@@ -35,8 +32,7 @@ trait CellValueAttributionAttributes extends StObject {
     * Represents a URL to the source of the `CellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var sourceAddress: js.UndefOr[String] = js.undefined
   
@@ -44,8 +40,7 @@ trait CellValueAttributionAttributes extends StObject {
     * Represents a name for the source of the `CellValue`.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.16]
     */
   var sourceText: js.UndefOr[String] = js.undefined
 }

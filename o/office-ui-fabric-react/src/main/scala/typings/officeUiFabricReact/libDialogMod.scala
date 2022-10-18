@@ -1,9 +1,9 @@
 package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
-import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
-import typings.officeUiFabricReact.dialogTypesMod.IDialogProps
+import typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.IDialogContentProps
+import typings.officeUiFabricReact.libComponentsDialogDialogDottypesMod.IDialogProps
+import typings.officeUiFabricReact.libComponentsDialogDialogFooterDottypesMod.IDialogFooterProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object libDialogMod extends Shortcut {
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogBase")
   @js.native
   open class DialogBase protected ()
-    extends typings.officeUiFabricReact.dialogMod.DialogBase {
+    extends typings.officeUiFabricReact.libComponentsDialogMod.DialogBase {
     def this(props: IDialogProps) = this()
   }
   /* static members */
@@ -45,7 +45,7 @@ object libDialogMod extends Shortcut {
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogContentBase")
   @js.native
   open class DialogContentBase protected ()
-    extends typings.officeUiFabricReact.dialogMod.DialogContentBase {
+    extends typings.officeUiFabricReact.libComponentsDialogMod.DialogContentBase {
     def this(props: IDialogContentProps) = this()
   }
   /* static members */
@@ -68,7 +68,7 @@ object libDialogMod extends Shortcut {
   @JSImport("office-ui-fabric-react/lib/Dialog", "DialogFooterBase")
   @js.native
   open class DialogFooterBase protected ()
-    extends typings.officeUiFabricReact.dialogMod.DialogFooterBase {
+    extends typings.officeUiFabricReact.libComponentsDialogMod.DialogFooterBase {
     def this(props: IDialogFooterProps) = this()
   }
   
@@ -77,13 +77,15 @@ object libDialogMod extends Shortcut {
   object DialogType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.dialogContentTypesMod.DialogType & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType & Double
+      ] = js.native
     
-    /* 2 */ val close: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.close & Double = js.native
+    /* 2 */ val close: typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType.close & Double = js.native
     
-    /* 1 */ val largeHeader: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.largeHeader & Double = js.native
+    /* 1 */ val largeHeader: typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType.largeHeader & Double = js.native
     
-    /* 0 */ val normal: typings.officeUiFabricReact.dialogContentTypesMod.DialogType.normal & Double = js.native
+    /* 0 */ val normal: typings.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType.normal & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Dialog", "ResponsiveMode")
@@ -91,21 +93,23 @@ object libDialogMod extends Shortcut {
   object ResponsiveMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode & Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode & Double
+      ] = js.native
     
-    /* 2 */ val large: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.large & Double = js.native
+    /* 2 */ val large: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.large & Double = js.native
     
-    /* 1 */ val medium: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.medium & Double = js.native
+    /* 1 */ val medium: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.medium & Double = js.native
     
-    /* 0 */ val small: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.small & Double = js.native
+    /* 0 */ val small: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.small & Double = js.native
     
-    /* 999 */ val unknown: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
+    /* 999 */ val unknown: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.unknown & Double = js.native
     
-    /* 3 */ val xLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
+    /* 3 */ val xLarge: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xLarge & Double = js.native
     
-    /* 4 */ val xxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
+    /* 4 */ val xxLarge: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xxLarge & Double = js.native
     
-    /* 5 */ val xxxLarge: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
+    /* 5 */ val xxxLarge: typings.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode.xxxLarge & Double = js.native
   }
   
   type _To = FunctionComponent[IDialogProps]

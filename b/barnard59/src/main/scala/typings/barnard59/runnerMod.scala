@@ -4,7 +4,7 @@ import typings.barnard59.barnard59Strings.debug
 import typings.barnard59.barnard59Strings.error
 import typings.barnard59.barnard59Strings.info
 import typings.barnard59Core.libPipelineMod.default
-import typings.barnard59Core.streamObjectMod.VariableMap
+import typings.barnard59Core.libStreamObjectMod.VariableMap
 import typings.clownface.mod.GraphPointer
 import typings.node.streamMod.Writable
 import typings.rdfjsTypes.dataModelMod.Quad

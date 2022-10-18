@@ -1,8 +1,8 @@
 package typings.sqlQueryIdentifier
 
-import typings.sqlQueryIdentifier.definesMod.Dialect
-import typings.sqlQueryIdentifier.definesMod.ExecutionType
-import typings.sqlQueryIdentifier.definesMod.StatementType
+import typings.sqlQueryIdentifier.libDefinesMod.Dialect
+import typings.sqlQueryIdentifier.libDefinesMod.ExecutionType
+import typings.sqlQueryIdentifier.libDefinesMod.StatementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,9 +59,7 @@ trait GooglePrivacyDlpV2TableDataProfile extends StObject {
   
   /** The labels applied to the resource at the time the profile was generated. */
   var resourceLabels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2TableDataProfile & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** How broadly a resource has been shared. */
@@ -168,9 +165,7 @@ object GooglePrivacyDlpV2TableDataProfile {
     inline def setProjectDataProfileUndefined: Self = StObject.set(x, "projectDataProfile", js.undefined)
     
     inline def setResourceLabels(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2TableDataProfile & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "resourceLabels", value.asInstanceOf[js.Any])
     
     inline def setResourceLabelsUndefined: Self = StObject.set(x, "resourceLabels", js.undefined)

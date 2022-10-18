@@ -9,8 +9,8 @@ import typings.antvG2.libInterfaceMod.LabelCallback
 import typings.antvG2.libInterfaceMod.LooseObject
 import typings.antvG2.libInterfaceMod.MappingDatum
 import typings.antvG2plot.antvG2plotBooleans.`false`
-import typings.antvGBase.interfacesMod.IGroup
-import typings.antvGBase.interfacesMod.IShape
+import typings.antvGBase.libInterfacesMod.IGroup
+import typings.antvGBase.libInterfacesMod.IShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined { readonly fields :std.Array<string> | undefined,  readonly callback :@antv/g2.@antv/g2.Types.LabelCallback | undefined,  readonly formatter :@antv/g2.@antv/g2.Types.GeometryLabelCfg['content'] | undefined} & @antv/g2.@antv/g2.Types.GeometryLabelCfg */
 trait readonlyfieldsArraystring
   extends StObject
-     with typings.antvG2plot.typesLabelMod.Label {
+     with typings.antvG2plot.libTypesLabelMod.Label {
   
   /**
     * @title 动画配置。

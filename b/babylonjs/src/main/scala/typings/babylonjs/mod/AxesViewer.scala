@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AxesViewer")
 @js.native
 open class AxesViewer protected ()
-  extends typings.babylonjs.legacyMod.AxesViewer {
+  extends typings.babylonjs.legacyLegacyMod.AxesViewer {
   /**
     * Creates a new AxesViewer
     * @param scene defines the hosting scene
@@ -23,9 +23,9 @@ open class AxesViewer protected ()
     scene: js.UndefOr[typings.babylonjs.sceneMod.Scene],
     scaleLines: js.UndefOr[Double],
     renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
-    yAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
-    zAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
+    xAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
+    yAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
+    zAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
     lineThickness: js.UndefOr[Double]
   ) = this()
 }

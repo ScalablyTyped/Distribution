@@ -1,19 +1,19 @@
 
 # Scala.js typings for remark-mdx
 
-Typings are for version 2.0.0-next.8
+Typings are for version 2.1.3
 
 ## Library description:
-Support import, export, and JSX in markdown
+remark plugin to support MDX syntax
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | remark-mdx |
-| Keywords           | mdx, markdown, react, jsx, remark, mdxast |
-| # releases         | 104 |
-| # dependents       | 28 |
-| # downloads        | 44386079 |
-| # stars            | 0 |
+| Keywords           | unified, remark, remark-plugin, plugin, mdast, markdown, jsx, javascript, xml, mdx |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6815638666666668E7 |
+| # stars            | 13963.0 |
 
 ## Links
 - [Homepage](https://mdxjs.com)

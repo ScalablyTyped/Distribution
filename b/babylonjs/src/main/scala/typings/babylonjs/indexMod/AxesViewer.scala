@@ -23,9 +23,9 @@ open class AxesViewer protected ()
     scene: js.UndefOr[typings.babylonjs.sceneMod.Scene],
     scaleLines: js.UndefOr[Double],
     renderingGroupId: js.UndefOr[Nullable[Double]],
-    xAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
-    yAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
-    zAxis: js.UndefOr[typings.babylonjs.transformNodeMod.TransformNode],
+    xAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
+    yAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
+    zAxis: js.UndefOr[typings.babylonjs.meshesTransformNodeMod.TransformNode],
     lineThickness: js.UndefOr[Double]
   ) = this()
 }

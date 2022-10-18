@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.BABYLON.Color4
+import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,8 +31,6 @@ trait SizeX extends StObject {
   var sizeZ: js.UndefOr[Double] = js.undefined
   
   var `type`: js.UndefOr[Double] = js.undefined
-  
-  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object SizeX {
   
@@ -94,9 +92,5 @@ object SizeX {
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

@@ -1,11 +1,10 @@
 package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.Version
 import typings.angularForms.mod.^
-import typings.std.Exclude
+import typings.rxjs.mod.Observable_
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +32,7 @@ inline def VERSION: Version = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION"
 
 type AsyncValidatorFn = js.Function1[
 /* control */ AbstractControl[Any, Any], 
-(js.Promise[ValidationErrors | Null]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<ValidationErrors | null> */ Any)]
+(js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null])]
 
 /**
   * Base class for all built-in ControlValueAccessor classes (except DefaultValueAccessor, which is
@@ -70,50 +69,31 @@ type ValidatorConfig = ValidatorFn | AsyncValidatorFn | (js.Array[AsyncValidator
 
 type ValidatorFn = js.Function1[/* control */ AbstractControl[Any, Any], ValidationErrors | Null]
 
-type ɵCoerceStrArrToNumArr[S] = js.Array[Any]
-
-type ɵElement[T, N /* <: Null */] = (FormControl[Any | (Exclude[Any, ValidatorConfig]) | N | T]) | (AbstractControl[Any, Any]) | FormArray[Any] | FormRecord[Any] | FormGroup[Any]
-
 type ɵFormArrayRawValue[T /* <: AbstractControl[Any, Any] */] = ɵTypedOrUntyped[T, js.Array[ɵRawValue[T]], js.Array[Any]]
 
 type ɵFormArrayValue[T /* <: AbstractControl[Any, Any] */] = ɵTypedOrUntyped[T, js.Array[ɵValue[T]], js.Array[Any]]
 
-type ɵFormGroupRawValue[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? @angular/forms.@angular/forms.AbstractControl<any, any>}
-  */ typings.angularForms.angularFormsStrings.ɵFormGroupRawValue & TopLevel[Any] */] = ɵTypedOrUntyped[
+type ɵFormGroupRawValue[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? @angular/forms.@angular/forms.AbstractControl<any, any>} */ js.Any */] = ɵTypedOrUntyped[
 T, 
-/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: @angular/forms.@angular/forms.ɵRawValue<T[K]>}
-  */ typings.angularForms.angularFormsStrings.ɵFormGroupRawValue & TopLevel[T], 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: @angular/forms.@angular/forms.ɵRawValue<T[K]>} */ js.Any, 
 StringDictionary[Any]]
 
-type ɵFormGroupValue[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]:? @angular/forms.@angular/forms.AbstractControl<any, any>}
-  */ typings.angularForms.angularFormsStrings.ɵFormGroupValue & TopLevel[Any] */] = ɵTypedOrUntyped[
+type ɵFormGroupValue[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? @angular/forms.@angular/forms.AbstractControl<any, any>} */ js.Any */] = ɵTypedOrUntyped[
 T, 
 Partial[
-  /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: @angular/forms.@angular/forms.ɵValue<T[K]>}
-  */ typings.angularForms.angularFormsStrings.ɵFormGroupValue & TopLevel[T]
+  /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: @angular/forms.@angular/forms.ɵValue<T[K]>} */ js.Any
 ], 
 StringDictionary[Any]]
 
-type ɵGetProperty[T, K] = ɵNavigate[T, ɵWriteable[K]]
-
-type ɵIsAny[T, Y, N] = N | Y
-
-type ɵNavigate[T, K /* <: js.Array[String | Double] */] = /* import warning: importer.ImportType#apply Failed type conversion: T[any] */ js.Any
-
 type ɵOptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] */ js.Any
-
-type ɵRawValue[T /* <: js.UndefOr[AbstractControl[Any, Any]] */] = Any
-
-type ɵTokenize[S /* <: String */, D /* <: String */] = js.Array[Any | S | String]
 
 type ɵTypedOrUntyped[T, Typed, Untyped] = ɵIsAny[T, Untyped, Typed]
 
-type ɵValue[T /* <: js.UndefOr[AbstractControl[Any, Any]] */] = /* import warning: importer.ImportType#apply Failed type conversion: T['value'] */ js.Any
-
-type ɵWriteable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{-readonly [ P in keyof T ]: T[P]}
-  */ typings.angularForms.angularFormsStrings.ɵWriteable & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {-readonly [ P in keyof T ]: T[P]}
+  }}}
+  */
+type ɵWriteable[T] = T

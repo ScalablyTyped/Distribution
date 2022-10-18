@@ -25,7 +25,7 @@ trait Arcs extends StObject {
   
   var label: js.UndefOr[LabelOptions] = js.undefined
   
-  var labelLine: js.UndefOr[Show] = js.undefined
+  var labelLine: js.UndefOr[`1`] = js.undefined
   
   /**
     * Set max value of the gauge.
@@ -72,7 +72,7 @@ object Arcs {
     
     inline def setLabel(value: LabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelLine(value: Show): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
+    inline def setLabelLine(value: `1`): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
     
     inline def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
     

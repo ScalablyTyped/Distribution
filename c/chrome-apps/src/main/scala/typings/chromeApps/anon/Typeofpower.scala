@@ -1,7 +1,6 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,10 +27,7 @@ trait Typeofpower extends StObject {
     level: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
       /* keyof typeof Level */ String, 
-      Exclude[
-        /* keyof typeof Level */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof Level extends keyof typeof Level ? std.Exclude<keyof typeof Level, typeof Level[keyof typeof Level]> : never */ js.Any
     ]
   ): Unit
 }
@@ -43,10 +39,7 @@ object Typeofpower {
     requestKeepAwake: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
       /* keyof typeof Level */ String, 
-      Exclude[
-        /* keyof typeof Level */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof Level extends keyof typeof Level ? std.Exclude<keyof typeof Level, typeof Level[keyof typeof Level]> : never */ js.Any
     ] => Unit
   ): Typeofpower = {
     val __obj = js.Dynamic.literal(Level = Level.asInstanceOf[js.Any], releaseKeepAwake = js.Any.fromFunction0(releaseKeepAwake), requestKeepAwake = js.Any.fromFunction1(requestKeepAwake))
@@ -63,10 +56,7 @@ object Typeofpower {
       value: ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof Level */ js.Any, 
           /* keyof typeof Level */ String, 
-          Exclude[
-            /* keyof typeof Level */ String, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof Level extends keyof typeof Level ? std.Exclude<keyof typeof Level, typeof Level[keyof typeof Level]> : never */ js.Any
         ] => Unit
     ): Self = StObject.set(x, "requestKeepAwake", js.Any.fromFunction1(value))
   }

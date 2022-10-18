@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.meteor.Meteor.LiveQueryHandle
 import typings.meteor.anon.ArrayFilters
 import typings.meteor.anon.CaseSensitive
@@ -22,7 +21,6 @@ import typings.std.Number
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Record
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,9 +84,15 @@ object Mongo {
     }
   }
   
-  type ArraysOrEach[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P]}}
-    */ typings.meteor.meteorStrings.ArraysOrEach & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P]}}
+    }}}
+    */
+  @js.native
+  trait ArraysOrEach[T] extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -764,11 +768,25 @@ object Mongo {
   
   type Dictionary[T] = StringDictionary[T]
   
-  type DispatchTransform[Transform, T, U] = U | T | ReturnType[Transform]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Transform extends (args : any): any ? std.ReturnType<Transform> : Transform extends null ? T : U
+    }}}
+    */
+  @js.native
+  trait DispatchTransform[Transform, T, U] extends StObject
   
-  type ElementsOf[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]>}
-    */ typings.meteor.meteorStrings.ElementsOf & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]>}
+    }}}
+    */
+  @js.native
+  trait ElementsOf[T] extends StObject
   
   trait FieldExpression[T] extends StObject {
     
@@ -791,7 +809,9 @@ object Mongo {
     var $comment: js.UndefOr[String] = js.undefined
     
     @JSName("$elemMatch")
-    var $elemMatch: js.UndefOr[FieldExpression[T] | Query[T]] = js.undefined
+    var $elemMatch: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: T extends {} ? meteor.Mongo.Query<T> : meteor.Mongo.FieldExpression<T> | undefined */ js.Any
+      ] = js.undefined
     
     @JSName("$eq")
     var $eq: js.UndefOr[T] = js.undefined
@@ -897,7 +917,9 @@ object Mongo {
       
       inline def set$commentUndefined: Self = StObject.set(x, "$comment", js.undefined)
       
-      inline def set$elemMatch(value: FieldExpression[T] | Query[T]): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
+      inline def set$elemMatch(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: T extends {} ? meteor.Mongo.Query<T> : meteor.Mongo.FieldExpression<T> | undefined */ js.Any
+      ): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
       
       inline def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
       
@@ -1005,7 +1027,15 @@ object Mongo {
   
   type FieldSpecifier = StringDictionary[Number]
   
-  type Flatten[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? T[0] : T
+    }}}
+    */
+  @js.native
+  trait Flatten[T] extends StObject
   
   type Modifier[T] = T | CurrentDate[T]
   
@@ -1155,11 +1185,25 @@ object Mongo {
     }
   }
   
-  type OnlyArrays[T] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? T : never
+    }}}
+    */
+  @js.native
+  trait OnlyArrays[T] extends StObject
   
-  type OnlyElementsOfArrays[T] = Partial[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<any> ? std.Partial<T[0]> : never
+    }}}
+    */
+  @js.native
+  trait OnlyElementsOfArrays[T] extends StObject
   
   type OptionalId[TSchema] = (UnionOmit[TSchema, _id]) & Id
   
@@ -1229,11 +1273,17 @@ object Mongo {
   
   type PartialMapTo[T, M] = Partial[Record[/* keyof T */ String, M]]
   
-  type PushModifier[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P] | undefined,   $position :number | undefined,   $slice :number | undefined,   $sort :1 | -1 | meteor.Mongo.Dictionary<number> | undefined}}
-    */ typings.meteor.meteorStrings.PushModifier & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof T ]:? meteor.Mongo.OnlyElementsOfArrays<T[P]> | {  $each :T[P] | undefined,   $position :number | undefined,   $slice :number | undefined,   $sort :1 | -1 | meteor.Mongo.Dictionary<number> | undefined}}
+    }}}
+    */
+  @js.native
+  trait PushModifier[T] extends StObject
   
-  type Query[T] = typings.meteor.meteorStrings.Query & TopLevel[Any] & Nor[T] & Dictionary[Any]
+  type Query[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]:? meteor.Mongo.Flatten<T[P]> | std.RegExp | meteor.Mongo.FieldExpression<meteor.Mongo.Flatten<T[P]>>} */ js.Any) & Nor[T] & Dictionary[Any]
   
   trait QueryWithModifiers[T] extends StObject {
     

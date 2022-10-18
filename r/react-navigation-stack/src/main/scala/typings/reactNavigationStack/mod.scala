@@ -4,7 +4,7 @@ import typings.react.mod.Context
 import typings.react.mod.NamedExoticComponent
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
-import typings.reactNativeGestureHandler.panGestureHandlerMod.PanGestureHandler
+import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandler
 import typings.reactNavigation.mod.CreateNavigatorConfig
 import typings.reactNavigation.mod.NavigationNavigator
 import typings.reactNavigation.mod.NavigationParams
@@ -17,17 +17,17 @@ import typings.reactNavigationStack.anon.ClosingRouteKeys
 import typings.reactNavigationStack.anon.Descriptors
 import typings.reactNavigationStack.anon.ReadonlyProps
 import typings.reactNavigationStack.anon.ReadonlyState
-import typings.reactNavigationStack.headerBackButtonMod.Props
-import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolatedStyle
-import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolationProps
-import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolatedStyle
-import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolationProps
-import typings.reactNavigationStack.vendorTypesMod.StackHeaderProps
-import typings.reactNavigationStack.vendorTypesMod.StackNavigationConfig
-import typings.reactNavigationStack.vendorTypesMod.StackNavigationOptions
-import typings.reactNavigationStack.vendorTypesMod.StackNavigationProp
-import typings.reactNavigationStack.vendorTypesMod.TransitionPreset
-import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardInterpolatedStyle
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardInterpolationProps
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderInterpolatedStyle
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderInterpolationProps
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderProps
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationConfig
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationOptions
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationProp
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.TransitionPreset
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.TransitionSpec
+import typings.reactNavigationStack.libTypescriptSrcVendorViewsHeaderHeaderBackButtonMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,7 +79,9 @@ object mod {
     hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
   ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackButton")(hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def HeaderBackground(hasStyleRest: typings.reactNavigationStack.headerBackgroundMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(hasStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeaderBackground(
+    hasStyleRest: typings.reactNavigationStack.libTypescriptSrcVendorViewsHeaderHeaderBackgroundMod.Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(hasStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-navigation-stack", "HeaderHeightContext")
   @js.native
@@ -104,12 +106,14 @@ object mod {
     inline def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(hasCurrentNextLayouts.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   }
   
-  inline def HeaderTitle(hasTintColorStyleRest: typings.reactNavigationStack.headerTitleMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def HeaderTitle(
+    hasTintColorStyleRest: typings.reactNavigationStack.libTypescriptSrcVendorViewsHeaderHeaderTitleMod.Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-navigation-stack", "StackView")
   @js.native
   open class StackView ()
-    extends typings.reactNavigationStack.vendorMod.StackView
+    extends typings.reactNavigationStack.libTypescriptSrcVendorMod.StackView
   /* static members */
   object StackView {
     

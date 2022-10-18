@@ -1,6 +1,5 @@
 package typings.routeParser
 
-import org.scalablytyped.runtime.TopLevel
 import typings.routeParser.routeParserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,9 +32,7 @@ object mod {
       * route.match('/foo/bar/') // -> {one: 'foo', two: 'bar'}
       */
     /* CompleteClass */
-    override def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof TParams ]: string}
-      */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false` = js.native
+    override def `match`(pathname: String): (/* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof TParams ]: string} */ js.Any) | `false` = js.native
     
     /**
       * Reverse a route specification to a path, returning false if it can't be
@@ -60,9 +57,7 @@ object mod {
       * var route = new Route('/:one/:two')
       * route.match('/foo/bar/') // -> {one: 'foo', two: 'bar'}
       */
-    def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof TParams ]: string}
-      */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false`
+    def `match`(pathname: String): (/* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof TParams ]: string} */ js.Any) | `false`
     
     /**
       * Reverse a route specification to a path, returning false if it can't be
@@ -76,9 +71,7 @@ object mod {
   object Route {
     
     inline def apply[TParams /* <: js.Object */](
-      `match`: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ k in keyof TParams ]: string}
-      */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false`,
+      `match`: String => (/* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof TParams ]: string} */ js.Any) | `false`,
       reverse: TParams => String | `false`
     ): Route[TParams] = {
       val __obj = js.Dynamic.literal(reverse = js.Any.fromFunction1(reverse))
@@ -89,9 +82,7 @@ object mod {
     extension [Self <: Route[?], TParams /* <: js.Object */](x: Self & Route[TParams]) {
       
       inline def setMatch(
-        value: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ k in keyof TParams ]: string}
-        */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false`
+        value: String => (/* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof TParams ]: string} */ js.Any) | `false`
       ): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
       inline def setReverse(value: TParams => String | `false`): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))

@@ -1,9 +1,9 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.prevMod.Prev
-import typings.tsToolbelt.rangeMod.RangeBack
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outIterationPrevMod.Prev
+import typings.tsToolbelt.outNumberRangeMod.RangeBack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RangeForth[To /* <: Iteration */, From /* <: Iteration */] extends StObject {
   
   @JSName("->")
-  var `-Greaterthansign`: typings.tsToolbelt.rangeMod.RangeForth[To, Prev[From], js.Array[Any]]
+  var `-Greaterthansign`: typings.tsToolbelt.outNumberRangeMod.RangeForth[To, Prev[From], js.Array[Any]]
   
   @JSName("<-")
   var `Lessthansign-`: RangeBack[From, Next[To], js.Array[Any]]
@@ -19,7 +19,7 @@ trait RangeForth[To /* <: Iteration */, From /* <: Iteration */] extends StObjec
 object RangeForth {
   
   inline def apply[To /* <: Iteration */, From /* <: Iteration */](
-    `-Greaterthansign`: typings.tsToolbelt.rangeMod.RangeForth[To, Prev[From], js.Array[Any]],
+    `-Greaterthansign`: typings.tsToolbelt.outNumberRangeMod.RangeForth[To, Prev[From], js.Array[Any]],
     `Lessthansign-`: RangeBack[From, Next[To], js.Array[Any]]
   ): RangeForth[To, From] = {
     val __obj = js.Dynamic.literal()
@@ -30,7 +30,7 @@ object RangeForth {
   
   extension [Self <: RangeForth[?, ?], To /* <: Iteration */, From /* <: Iteration */](x: Self & (RangeForth[To, From])) {
     
-    inline def `set-Greaterthansign`(value: typings.tsToolbelt.rangeMod.RangeForth[To, Prev[From], js.Array[Any]]): Self = StObject.set(x, "->", value.asInstanceOf[js.Any])
+    inline def `set-Greaterthansign`(value: typings.tsToolbelt.outNumberRangeMod.RangeForth[To, Prev[From], js.Array[Any]]): Self = StObject.set(x, "->", value.asInstanceOf[js.Any])
     
     inline def `setLessthansign-`(value: RangeBack[From, Next[To], js.Array[Any]]): Self = StObject.set(x, "<-", value.asInstanceOf[js.Any])
   }

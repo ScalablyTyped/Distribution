@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object archiverStrings {
   
   @js.native
-  sealed trait Partial extends StObject
-  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
-  
-  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
   

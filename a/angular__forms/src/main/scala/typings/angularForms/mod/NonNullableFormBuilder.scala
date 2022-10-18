@@ -1,16 +1,15 @@
 package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/forms", "NonNullableFormBuilder")
+/* note: abstract class */ @JSImport("@angular/forms", "NonNullableFormBuilder")
 @js.native
-abstract class NonNullableFormBuilder () extends StObject {
+open class NonNullableFormBuilder () extends StObject {
   
   /**
     * Similar to `FormBuilder#array`, except any implicitly constructed `FormControl`
@@ -99,14 +98,10 @@ abstract class NonNullableFormBuilder () extends StObject {
     * that already-constructed controls will not be altered.
     */
   def group[T /* <: js.Object */](controls: T): FormGroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], never>}
-    */ typings.angularForms.angularFormsStrings.NonNullableFormBuilder & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], never>} */ js.Any
   ] = js.native
   def group[T /* <: js.Object */](controls: T, options: AbstractControlOptions): FormGroup[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], never>}
-    */ typings.angularForms.angularFormsStrings.NonNullableFormBuilder & TopLevel[T]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: @angular/forms.@angular/forms.ɵElement<T[K], never>} */ js.Any
   ] = js.native
   
   /**

@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ssh2", "BaseAgent")
+/* note: abstract class */ @JSImport("ssh2", "BaseAgent")
 @js.native
-abstract class BaseAgent[TPublicKey /* <: String | Buffer | ParsedKey */] () extends StObject {
+open class BaseAgent[TPublicKey /* <: String | Buffer | ParsedKey */] () extends StObject {
   
   /**
     * Retrieves user identities, where `keys` is a possible array of public

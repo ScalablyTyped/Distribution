@@ -1,7 +1,7 @@
 package typings.stringifyEntities
 
-import typings.stringifyEntities.coreMod.CoreOptions
-import typings.stringifyEntities.formatSmartMod.FormatSmartOptions
+import typings.stringifyEntities.libCoreMod.CoreOptions
+import typings.stringifyEntities.libUtilFormatSmartMod.FormatSmartOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

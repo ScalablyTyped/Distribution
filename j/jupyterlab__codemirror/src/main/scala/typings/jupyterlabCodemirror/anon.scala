@@ -1,12 +1,11 @@
 package typings.jupyterlabCodemirror
 
-import typings.codemirror.mod.Position
-import typings.codemirror.mod.StyleActiveLine
+import typings.codemirrorState.mod.Extension
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.bounded
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.off
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.on
 import typings.jupyterlabCodemirror.jupyterlabCodemirrorStrings.wordWrapColumn
-import typings.jupyterlabCodemirror.modeMod.Mode.IMode
+import typings.jupyterlabCodemirror.libModeMod.Mode.IMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,22 +70,29 @@ object anon {
   
   trait From extends StObject {
     
-    var from: Position
+    var from: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any
     
-    var to: Position
+    var to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any
   }
   object From {
     
-    inline def apply(from: Position, to: Position): From = {
+    inline def apply(
+      from: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any,
+      to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any
+    ): From = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
     extension [Self <: From](x: Self) {
       
-      inline def setFrom(value: Position): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any
+      ): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setTo(value: Position): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any
+      ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,11 +105,15 @@ object anon {
     
     var coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.undefined
     
+    var cursorBlinkRate: js.UndefOr[Double] = js.undefined
+    
     var dragDrop: js.UndefOr[Boolean] = js.undefined
     
     var electricChars: js.UndefOr[Boolean] = js.undefined
     
-    var extraKeys: js.UndefOr[js.Any] = js.undefined
+    var extraKeys: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.KeyMap */ Any) | Null
+      ] = js.undefined
     
     var fixedGutter: js.UndefOr[Boolean] = js.undefined
     
@@ -147,9 +157,13 @@ object anon {
     
     var showCursorWhenSelecting: js.UndefOr[Boolean] = js.undefined
     
+    var showTrailingSpace: js.UndefOr[Boolean] = js.undefined
+    
     var smartIndent: js.UndefOr[Boolean] = js.undefined
     
-    var styleActiveLine: js.UndefOr[Boolean | StyleActiveLine] = js.undefined
+    var styleActiveLine: js.UndefOr[
+        Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ Any)
+      ] = js.undefined
     
     var styleSelectedText: js.UndefOr[Boolean] = js.undefined
     
@@ -180,6 +194,10 @@ object anon {
       
       inline def setCoverGutterNextToScrollbarUndefined: Self = StObject.set(x, "coverGutterNextToScrollbar", js.undefined)
       
+      inline def setCursorBlinkRate(value: Double): Self = StObject.set(x, "cursorBlinkRate", value.asInstanceOf[js.Any])
+      
+      inline def setCursorBlinkRateUndefined: Self = StObject.set(x, "cursorBlinkRate", js.undefined)
+      
       inline def setDragDrop(value: Boolean): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
       
       inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
@@ -188,7 +206,11 @@ object anon {
       
       inline def setElectricCharsUndefined: Self = StObject.set(x, "electricChars", js.undefined)
       
-      inline def setExtraKeys(value: js.Any): Self = StObject.set(x, "extraKeys", value.asInstanceOf[js.Any])
+      inline def setExtraKeys(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.KeyMap */ Any
+      ): Self = StObject.set(x, "extraKeys", value.asInstanceOf[js.Any])
+      
+      inline def setExtraKeysNull: Self = StObject.set(x, "extraKeys", null)
       
       inline def setExtraKeysUndefined: Self = StObject.set(x, "extraKeys", js.undefined)
       
@@ -216,7 +238,7 @@ object anon {
       
       inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
       
-      inline def setGuttersVarargs(value: String*): Self = StObject.set(x, "gutters", js.Array(value :_*))
+      inline def setGuttersVarargs(value: String*): Self = StObject.set(x, "gutters", js.Array(value*))
       
       inline def setHandlePaste(value: Boolean): Self = StObject.set(x, "handlePaste", value.asInstanceOf[js.Any])
       
@@ -270,7 +292,7 @@ object anon {
       
       inline def setRulersUndefined: Self = StObject.set(x, "rulers", js.undefined)
       
-      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value :_*))
+      inline def setRulersVarargs(value: Double*): Self = StObject.set(x, "rulers", js.Array(value*))
       
       inline def setScrollPastEnd(value: Boolean): Self = StObject.set(x, "scrollPastEnd", value.asInstanceOf[js.Any])
       
@@ -288,11 +310,17 @@ object anon {
       
       inline def setShowCursorWhenSelectingUndefined: Self = StObject.set(x, "showCursorWhenSelecting", js.undefined)
       
+      inline def setShowTrailingSpace(value: Boolean): Self = StObject.set(x, "showTrailingSpace", value.asInstanceOf[js.Any])
+      
+      inline def setShowTrailingSpaceUndefined: Self = StObject.set(x, "showTrailingSpace", js.undefined)
+      
       inline def setSmartIndent(value: Boolean): Self = StObject.set(x, "smartIndent", value.asInstanceOf[js.Any])
       
       inline def setSmartIndentUndefined: Self = StObject.set(x, "smartIndent", js.undefined)
       
-      inline def setStyleActiveLine(value: Boolean | StyleActiveLine): Self = StObject.set(x, "styleActiveLine", value.asInstanceOf[js.Any])
+      inline def setStyleActiveLine(
+        value: Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.StyleActiveLine */ Any)
+      ): Self = StObject.set(x, "styleActiveLine", value.asInstanceOf[js.Any])
       
       inline def setStyleActiveLineUndefined: Self = StObject.set(x, "styleActiveLine", js.undefined)
       
@@ -311,6 +339,76 @@ object anon {
       inline def setWordWrapColumn(value: Double): Self = StObject.set(x, "wordWrapColumn", value.asInstanceOf[js.Any])
       
       inline def setWordWrapColumnUndefined: Self = StObject.set(x, "wordWrapColumn", js.undefined)
+    }
+  }
+  
+  trait TypeofCodeMirror extends StObject {
+    
+    val EditorView: Any
+    
+    /**
+    This is an extension value that just pulls together a number of
+    extensions that you might want in a basic editor. It is meant as a
+    convenient helper to quickly set up CodeMirror without installing
+    and importing a lot of separate packages.
+    Specifically, it includes...
+      - [the default command bindings](https://codemirror.net/6/docs/ref/#commands.defaultKeymap)
+      - [line numbers](https://codemirror.net/6/docs/ref/#view.lineNumbers)
+      - [special character highlighting](https://codemirror.net/6/docs/ref/#view.highlightSpecialChars)
+      - [the undo history](https://codemirror.net/6/docs/ref/#commands.history)
+      - [a fold gutter](https://codemirror.net/6/docs/ref/#language.foldGutter)
+      - [custom selection drawing](https://codemirror.net/6/docs/ref/#view.drawSelection)
+      - [drop cursor](https://codemirror.net/6/docs/ref/#view.dropCursor)
+      - [multiple selections](https://codemirror.net/6/docs/ref/#state.EditorState^allowMultipleSelections)
+      - [reindentation on input](https://codemirror.net/6/docs/ref/#language.indentOnInput)
+      - [the default highlight style](https://codemirror.net/6/docs/ref/#language.defaultHighlightStyle) (as fallback)
+      - [bracket matching](https://codemirror.net/6/docs/ref/#language.bracketMatching)
+      - [bracket closing](https://codemirror.net/6/docs/ref/#autocomplete.closeBrackets)
+      - [autocompletion](https://codemirror.net/6/docs/ref/#autocomplete.autocompletion)
+      - [rectangular selection](https://codemirror.net/6/docs/ref/#view.rectangularSelection) and [crosshair cursor](https://codemirror.net/6/docs/ref/#view.crosshairCursor)
+      - [active line highlighting](https://codemirror.net/6/docs/ref/#view.highlightActiveLine)
+      - [active line gutter highlighting](https://codemirror.net/6/docs/ref/#view.highlightActiveLineGutter)
+      - [selection match highlighting](https://codemirror.net/6/docs/ref/#search.highlightSelectionMatches)
+      - [search](https://codemirror.net/6/docs/ref/#search.searchKeymap)
+      - [linting](https://codemirror.net/6/docs/ref/#lint.lintKeymap)
+    (You'll probably want to add some language package to your setup
+    too.)
+    This extension does not allow customization. The idea is that,
+    once you decide you want to configure your editor more precisely,
+    you take this package's source (which is just a bunch of imports
+    and an array literal), copy it into your own code, and adjust it
+    as desired.
+    */
+    val basicSetup: Extension
+    
+    /**
+    A minimal set of extensions to create a functional editor. Only
+    includes [the default keymap](https://codemirror.net/6/docs/ref/#commands.defaultKeymap), [undo
+    history](https://codemirror.net/6/docs/ref/#commands.history), [special character
+    highlighting](https://codemirror.net/6/docs/ref/#view.highlightSpecialChars), [custom selection
+    drawing](https://codemirror.net/6/docs/ref/#view.drawSelection), and [default highlight
+    style](https://codemirror.net/6/docs/ref/#language.defaultHighlightStyle).
+    */
+    val minimalSetup: Extension
+  }
+  object TypeofCodeMirror {
+    
+    inline def apply(EditorView: Any, basicSetup: Extension, minimalSetup: Extension): TypeofCodeMirror = {
+      val __obj = js.Dynamic.literal(EditorView = EditorView.asInstanceOf[js.Any], basicSetup = basicSetup.asInstanceOf[js.Any], minimalSetup = minimalSetup.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TypeofCodeMirror]
+    }
+    
+    extension [Self <: TypeofCodeMirror](x: Self) {
+      
+      inline def setBasicSetup(value: Extension): Self = StObject.set(x, "basicSetup", value.asInstanceOf[js.Any])
+      
+      inline def setBasicSetupVarargs(value: Any*): Self = StObject.set(x, "basicSetup", js.Array(value*))
+      
+      inline def setEditorView(value: Any): Self = StObject.set(x, "EditorView", value.asInstanceOf[js.Any])
+      
+      inline def setMinimalSetup(value: Extension): Self = StObject.set(x, "minimalSetup", value.asInstanceOf[js.Any])
+      
+      inline def setMinimalSetupVarargs(value: Any*): Self = StObject.set(x, "minimalSetup", js.Array(value*))
     }
   }
 }

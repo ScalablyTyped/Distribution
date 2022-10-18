@@ -2,9 +2,9 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
+import typings.semanticUiReact.distCommonjsElementsStepStepMod.StepComponent
+import typings.semanticUiReact.distCommonjsElementsStepStepMod.StepProps
 import typings.semanticUiReact.mod.^
-import typings.semanticUiReact.stepStepMod.StepComponent
-import typings.semanticUiReact.stepStepMod.StepProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

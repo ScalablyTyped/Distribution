@@ -72,6 +72,7 @@ import typings.devtoolsProtocol.mod.Protocol.Log.LogEntrySource
 import typings.devtoolsProtocol.mod.Protocol.Log.ViolationSettingName
 import typings.devtoolsProtocol.mod.Protocol.Media.PlayerMessageLevel
 import typings.devtoolsProtocol.mod.Protocol.Memory.PressureLevel
+import typings.devtoolsProtocol.mod.Protocol.Network.AlternateProtocolUsage
 import typings.devtoolsProtocol.mod.Protocol.Network.AuthChallengeResponseResponse
 import typings.devtoolsProtocol.mod.Protocol.Network.AuthChallengeSource
 import typings.devtoolsProtocol.mod.Protocol.Network.BlockedReason
@@ -1797,18 +1798,6 @@ object devtoolsProtocolStrings {
   inline def NameValuePairExceedsMaxSize: NameValuePairExceedsMaxSize = "NameValuePairExceedsMaxSize".asInstanceOf[NameValuePairExceedsMaxSize]
   
   @js.native
-  sealed trait NavigateEventRestoreScroll
-    extends StObject
-       with DeprecationIssueType
-  inline def NavigateEventRestoreScroll: NavigateEventRestoreScroll = "NavigateEventRestoreScroll".asInstanceOf[NavigateEventRestoreScroll]
-  
-  @js.native
-  sealed trait NavigateEventTransitionWhile
-    extends StObject
-       with DeprecationIssueType
-  inline def NavigateEventTransitionWhile: NavigateEventTransitionWhile = "NavigateEventTransitionWhile".asInstanceOf[NavigateEventTransitionWhile]
-  
-  @js.native
   sealed trait Navigation
     extends StObject
        with NavigationType
@@ -2069,6 +2058,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with BackForwardCacheNotRestoredReason
   inline def PaymentManager: PaymentManager = "PaymentManager".asInstanceOf[PaymentManager]
+  
+  @js.native
+  sealed trait PaymentRequestCSPViolation
+    extends StObject
+       with DeprecationIssueType
+  inline def PaymentRequestCSPViolation: PaymentRequestCSPViolation = "PaymentRequestCSPViolation".asInstanceOf[PaymentRequestCSPViolation]
   
   @js.native
   sealed trait Pending
@@ -2915,6 +2910,12 @@ object devtoolsProtocolStrings {
   inline def Timeout: Timeout = "Timeout".asInstanceOf[Timeout]
   
   @js.native
+  sealed trait TimeoutBackgrounded
+    extends StObject
+       with PrerenderFinalStatus
+  inline def TimeoutBackgrounded: TimeoutBackgrounded = "TimeoutBackgrounded".asInstanceOf[TimeoutBackgrounded]
+  
+  @js.native
   sealed trait TimeoutPuttingInCache
     extends StObject
        with BackForwardCacheNotRestoredReason
@@ -3440,6 +3441,18 @@ object devtoolsProtocolStrings {
   inline def allow_ : allow_ = "allow".asInstanceOf[allow_]
   
   @js.native
+  sealed trait alternativeJobWonRace
+    extends StObject
+       with AlternateProtocolUsage
+  inline def alternativeJobWonRace: alternativeJobWonRace = "alternativeJobWonRace".asInstanceOf[alternativeJobWonRace]
+  
+  @js.native
+  sealed trait alternativeJobWonWithoutRace
+    extends StObject
+       with AlternateProtocolUsage
+  inline def alternativeJobWonWithoutRace: alternativeJobWonWithoutRace = "alternativeJobWonWithoutRace".asInstanceOf[alternativeJobWonWithoutRace]
+  
+  @js.native
   sealed trait `ambient-light-sensor`
     extends StObject
        with PermissionsPolicyFeature
@@ -3805,6 +3818,12 @@ object devtoolsProtocolStrings {
   inline def breakpointResolved: breakpointResolved = "breakpointResolved".asInstanceOf[breakpointResolved]
   
   @js.native
+  sealed trait broken
+    extends StObject
+       with AlternateProtocolUsage
+  inline def broken: broken = "broken".asInstanceOf[broken]
+  
+  @js.native
   sealed trait `browsing-topics`
     extends StObject
        with PermissionsPolicyFeature
@@ -3934,6 +3953,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with PermissionsPolicyFeature
   inline def `ch-prefers-color-scheme`: `ch-prefers-color-scheme` = "ch-prefers-color-scheme".asInstanceOf[`ch-prefers-color-scheme`]
+  
+  @js.native
+  sealed trait `ch-prefers-reduced-motion`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `ch-prefers-reduced-motion`: `ch-prefers-reduced-motion` = "ch-prefers-reduced-motion".asInstanceOf[`ch-prefers-reduced-motion`]
   
   @js.native
   sealed trait `ch-rtt`
@@ -4496,6 +4521,18 @@ object devtoolsProtocolStrings {
   inline def distributedNodesUpdated: distributedNodesUpdated = "distributedNodesUpdated".asInstanceOf[distributedNodesUpdated]
   
   @js.native
+  sealed trait dnsAlpnH3JobWonRace
+    extends StObject
+       with AlternateProtocolUsage
+  inline def dnsAlpnH3JobWonRace: dnsAlpnH3JobWonRace = "dnsAlpnH3JobWonRace".asInstanceOf[dnsAlpnH3JobWonRace]
+  
+  @js.native
+  sealed trait dnsAlpnH3JobWonWithoutRace
+    extends StObject
+       with AlternateProtocolUsage
+  inline def dnsAlpnH3JobWonWithoutRace: dnsAlpnH3JobWonWithoutRace = "dnsAlpnH3JobWonWithoutRace".asInstanceOf[dnsAlpnH3JobWonWithoutRace]
+  
+  @js.native
   sealed trait `document-domain`
     extends StObject
        with PermissionsPolicyFeature
@@ -4708,12 +4745,6 @@ object devtoolsProtocolStrings {
     extends StObject
        with ServiceWorkerResponseSource
   inline def `fallback-code`: `fallback-code` = "fallback-code".asInstanceOf[`fallback-code`]
-  
-  @js.native
-  sealed trait `federated-credentials`
-    extends StObject
-       with PermissionsPolicyFeature
-  inline def `federated-credentials`: `federated-credentials` = "federated-credentials".asInstanceOf[`federated-credentials`]
   
   @js.native
   sealed trait figcaption
@@ -5004,6 +5035,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with ColorFormat
   inline def hwb: hwb = "hwb".asInstanceOf[hwb]
+  
+  @js.native
+  sealed trait `identity-credentials-get`
+    extends StObject
+       with PermissionsPolicyFeature
+  inline def `identity-credentials-get`: `identity-credentials-get` = "identity-credentials-get".asInstanceOf[`identity-credentials-get`]
   
   @js.native
   sealed trait `idle-detection`
@@ -5524,6 +5561,12 @@ object devtoolsProtocolStrings {
   inline def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
   
   @js.native
+  sealed trait mainJobWonRace
+    extends StObject
+       with AlternateProtocolUsage
+  inline def mainJobWonRace: mainJobWonRace = "mainJobWonRace".asInstanceOf[mainJobWonRace]
+  
+  @js.native
   sealed trait manual_subframe
     extends StObject
        with TransitionType
@@ -5537,6 +5580,12 @@ object devtoolsProtocolStrings {
        with RemoteObjectSubtype
        with WebDriverValueType
   inline def map: map = "map".asInstanceOf[map]
+  
+  @js.native
+  sealed trait mappingMissing
+    extends StObject
+       with AlternateProtocolUsage
+  inline def mappingMissing: mappingMissing = "mappingMissing".asInstanceOf[mappingMissing]
   
   @js.native
   sealed trait marker
@@ -7081,6 +7130,12 @@ object devtoolsProtocolStrings {
     extends StObject
        with ReferrerPolicy
   inline def unsafeUrl: unsafeUrl = "unsafeUrl".asInstanceOf[unsafeUrl]
+  
+  @js.native
+  sealed trait unspecifiedReason
+    extends StObject
+       with AlternateProtocolUsage
+  inline def unspecifiedReason: unspecifiedReason = "unspecifiedReason".asInstanceOf[unspecifiedReason]
   
   @js.native
   sealed trait update

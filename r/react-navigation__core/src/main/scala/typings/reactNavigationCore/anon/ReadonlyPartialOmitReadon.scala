@@ -19,7 +19,7 @@ trait ReadonlyPartialOmitReadon extends StObject {
   
   val routes: js.Array[
     (Omit[
-      typings.reactNavigationRouters.typesMod.Route[String, js.UndefOr[js.Object]], 
+      typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[String, js.UndefOr[js.Object]], 
       typings.reactNavigationCore.reactNavigationCoreStrings.key
     ]) & Any
   ]
@@ -30,7 +30,10 @@ object ReadonlyPartialOmitReadon {
   
   inline def apply(
     routes: js.Array[
-      (Omit[typings.reactNavigationRouters.typesMod.Route[String, js.UndefOr[js.Object]], key]) & Any
+      (Omit[
+        typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[String, js.UndefOr[js.Object]], 
+        key
+      ]) & Any
     ]
   ): ReadonlyPartialOmitReadon = {
     val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
@@ -61,12 +64,18 @@ object ReadonlyPartialOmitReadon {
     
     inline def setRoutes(
       value: js.Array[
-          (Omit[typings.reactNavigationRouters.typesMod.Route[String, js.UndefOr[js.Object]], key]) & Any
+          (Omit[
+            typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[String, js.UndefOr[js.Object]], 
+            key
+          ]) & Any
         ]
     ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     inline def setRoutesVarargs(
-      value: ((Omit[typings.reactNavigationRouters.typesMod.Route[String, js.UndefOr[js.Object]], key]) & Any)*
+      value: ((Omit[
+          typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route[String, js.UndefOr[js.Object]], 
+          key
+        ]) & Any)*
     ): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

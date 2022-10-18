@@ -1,7 +1,7 @@
 
 # Scala.js typings for builder_dot_io__partytown
 
-Typings are for version 0.7.0
+Typings are for version 0.7.1
 
 ## Library description:
 Relocate resource intensive third-party scripts off of the main thread and into a web worker.

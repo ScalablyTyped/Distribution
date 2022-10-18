@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +21,7 @@ trait Function extends StObject {
   
   /** Labels associated with this Cloud Function. */
   var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.Function & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.native
   
   /** A user-defined name of the function. Function names must be unique globally and match pattern `projects/ *‍/locations/ *‍/functions/ *` */

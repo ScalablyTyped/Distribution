@@ -11,20 +11,20 @@ import typings.angularCompilerCli.anon.FileName
 import typings.angularCompilerCli.anon.Host
 import typings.angularCompilerCli.anon.Options
 import typings.angularCompilerCli.anon.PickCompilerHostgetCanoni
-import typings.angularCompilerCli.loggerMod.LogLevel
-import typings.angularCompilerCli.logicalMod.LogicalProjectPath
-import typings.angularCompilerCli.ngccOptionsMod.AsyncNgccOptions
-import typings.angularCompilerCli.ngccOptionsMod.SyncNgccOptions
-import typings.angularCompilerCli.optionsMod.NgCompilerOptions
-import typings.angularCompilerCli.performCompileMod.ConfigurationHost
-import typings.angularCompilerCli.performCompileMod.ParsedConfiguration
-import typings.angularCompilerCli.performCompileMod.PerformCompilationResult
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcTypesMod.BrandedPath
-import typings.angularCompilerCli.srcTypesMod.FileSystem
-import typings.angularCompilerCli.srcTypesMod.PathSegment
-import typings.angularCompilerCli.srcTypesMod.PathString
-import typings.angularCompilerCli.transformersApiMod.CompilerOptions
+import typings.angularCompilerCli.ngccSrcNgccOptionsMod.AsyncNgccOptions
+import typings.angularCompilerCli.ngccSrcNgccOptionsMod.SyncNgccOptions
+import typings.angularCompilerCli.srcNgtscCoreApiSrcOptionsMod.NgCompilerOptions
+import typings.angularCompilerCli.srcNgtscFileSystemSrcLogicalMod.LogicalProjectPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.BrandedPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.FileSystem
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathSegment
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathString
+import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel
+import typings.angularCompilerCli.srcPerformCompileMod.ConfigurationHost
+import typings.angularCompilerCli.srcPerformCompileMod.ParsedConfiguration
+import typings.angularCompilerCli.srcPerformCompileMod.PerformCompilationResult
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
 import typings.ngtoolsWebpack.ngtoolsWebpackStrings.angular
 import typings.std.Record
 import typings.typescript.mod.Diagnostic
@@ -367,7 +367,7 @@ object anon {
     var NgtscProgram: Instantiable3[
         /* rootNames */ js.Array[String], 
         /* options */ NgCompilerOptions, 
-        /* delegateHost */ typings.angularCompilerCli.transformersApiMod.CompilerHost, 
+        /* delegateHost */ typings.angularCompilerCli.srcTransformersApiMod.CompilerHost, 
         typings.angularCompilerCli.mod.NgtscProgram
       ] = js.native
     
@@ -391,11 +391,11 @@ object anon {
     
     def constructorParametersDownlevelTransform(program: Program): TransformerFactory[SourceFile] = js.native
     
-    def createCompilerHost(hasOptionsTsHost: Options): typings.angularCompilerCli.transformersApiMod.CompilerHost = js.native
+    def createCompilerHost(hasOptionsTsHost: Options): typings.angularCompilerCli.srcTransformersApiMod.CompilerHost = js.native
     
-    def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.transformersApiMod.Program = js.native
+    def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = js.native
     
-    def defaultGatherDiagnostics(program: typings.angularCompilerCli.transformersApiMod.Program): js.Array[Diagnostic] = js.native
+    def defaultGatherDiagnostics(program: typings.angularCompilerCli.srcTransformersApiMod.Program): js.Array[Diagnostic] = js.native
     
     def dirname(file: String): String = js.native
     @JSName("dirname")
@@ -469,7 +469,7 @@ object anon {
     
     val ngccMainFilePath: String = js.native
     
-    def process(options: AsyncNgccOptions): Unit | js.Promise[Unit] = js.native
-    def process(options: SyncNgccOptions): Unit | js.Promise[Unit] = js.native
+    def process(options: AsyncNgccOptions): /* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any = js.native
+    def process(options: SyncNgccOptions): /* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.SyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any = js.native
   }
 }

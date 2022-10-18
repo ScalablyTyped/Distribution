@@ -1,8 +1,8 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.appstreamMod.String
-import typings.awsSdk.appstreamMod.StringList
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsAppstreamMod.String
+import typings.awsSdk.clientsAppstreamMod.StringList
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

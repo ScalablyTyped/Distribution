@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.syncFileSystem.FileStatusChangedDetail
 import typings.chromeApps.chrome.syncFileSystem.FileStatusInfo
 import typings.filesystem.FileEntry
-import typings.std.Exclude
 import typings.std.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,10 +54,7 @@ trait TypeofsyncFileSystem extends StObject {
       /* policy */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
         /* keyof typeof ConflictResolutionPolicy */ String, 
-        Exclude[
-          /* keyof typeof ConflictResolutionPolicy */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ConflictResolutionPolicy extends keyof typeof ConflictResolutionPolicy ? std.Exclude<keyof typeof ConflictResolutionPolicy, typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy]> : never */ js.Any
       ], 
       Unit
     ]
@@ -76,10 +72,7 @@ trait TypeofsyncFileSystem extends StObject {
       /* status */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof FileStatus */ js.Any, 
         /* keyof typeof FileStatus */ String, 
-        Exclude[
-          /* keyof typeof FileStatus */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof FileStatus[keyof typeof FileStatus] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof FileStatus extends keyof typeof FileStatus ? std.Exclude<keyof typeof FileStatus, typeof FileStatus[keyof typeof FileStatus]> : never */ js.Any
       ], 
       Unit
     ]
@@ -102,10 +95,7 @@ trait TypeofsyncFileSystem extends StObject {
       /* status */ ToStringLiteral[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus */ js.Any, 
         /* keyof typeof ServiceStatus */ String, 
-        Exclude[
-          /* keyof typeof ServiceStatus */ String, 
-          /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus[keyof typeof ServiceStatus] */ js.Any
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ServiceStatus extends keyof typeof ServiceStatus ? std.Exclude<keyof typeof ServiceStatus, typeof ServiceStatus[keyof typeof ServiceStatus]> : never */ js.Any
       ], 
       Unit
     ]
@@ -158,20 +148,14 @@ trait TypeofsyncFileSystem extends StObject {
     policy: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
       /* keyof typeof ConflictResolutionPolicy */ String, 
-      Exclude[
-        /* keyof typeof ConflictResolutionPolicy */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ConflictResolutionPolicy extends keyof typeof ConflictResolutionPolicy ? std.Exclude<keyof typeof ConflictResolutionPolicy, typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy]> : never */ js.Any
     ]
   ): Unit = js.native
   def setConflictResolutionPolicy(
     policy: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy */ js.Any, 
       /* keyof typeof ConflictResolutionPolicy */ String, 
-      Exclude[
-        /* keyof typeof ConflictResolutionPolicy */ String, 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy] */ js.Any
-      ]
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof typeof ConflictResolutionPolicy extends keyof typeof ConflictResolutionPolicy ? std.Exclude<keyof typeof ConflictResolutionPolicy, typeof ConflictResolutionPolicy[keyof typeof ConflictResolutionPolicy]> : never */ js.Any
     ],
     callback: js.Function0[Unit]
   ): Unit = js.native

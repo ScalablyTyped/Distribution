@@ -1,6 +1,5 @@
 package typings.dva
 
-import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.History
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
@@ -10,27 +9,25 @@ import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import typings.reactRouter.anon.Data
 import typings.reactRouter.anon.Revalidate
-import typings.reactRouter.componentsMod.AwaitProps
-import typings.reactRouter.componentsMod.IndexRouteProps
-import typings.reactRouter.componentsMod.LayoutRouteProps
-import typings.reactRouter.componentsMod.MemoryRouterProps
-import typings.reactRouter.componentsMod.NavigateProps
-import typings.reactRouter.componentsMod.OutletProps
-import typings.reactRouter.componentsMod.PathRouteProps
-import typings.reactRouter.componentsMod.RouterProps
-import typings.reactRouter.componentsMod.RouterProviderProps
-import typings.reactRouter.componentsMod.RoutesProps
-import typings.reactRouter.contextMod.DataRouterContextObject
-import typings.reactRouter.contextMod.LocationContextObject
-import typings.reactRouter.contextMod.NavigationContextObject
-import typings.reactRouter.contextMod.RouteContextObject
-import typings.reactRouter.contextMod.RouteMatch
-import typings.reactRouter.contextMod.RouteObject
-import typings.reactRouter.hooksMod.NavigateFunction
+import typings.reactRouter.distLibComponentsMod.AwaitProps
+import typings.reactRouter.distLibComponentsMod.MemoryRouterProps
+import typings.reactRouter.distLibComponentsMod.NavigateProps
+import typings.reactRouter.distLibComponentsMod.OutletProps
+import typings.reactRouter.distLibComponentsMod.RouteProps
+import typings.reactRouter.distLibComponentsMod.RouterProps
+import typings.reactRouter.distLibComponentsMod.RouterProviderProps
+import typings.reactRouter.distLibComponentsMod.RoutesProps
+import typings.reactRouter.distLibContextMod.DataRouterContextObject
+import typings.reactRouter.distLibContextMod.LocationContextObject
+import typings.reactRouter.distLibContextMod.NavigationContextObject
+import typings.reactRouter.distLibContextMod.RouteContextObject
+import typings.reactRouter.distLibContextMod.RouteMatch
+import typings.reactRouter.distLibContextMod.RouteObject
+import typings.reactRouter.distLibHooksMod.NavigateFunction
 import typings.reactRouterDom.anon.Basename
 import typings.reactRouterDom.anon.PreventScrollReset
 import typings.reactRouterDom.anon.Relative
-import typings.reactRouterDom.domMod.URLSearchParamsInit
+import typings.reactRouterDom.distDomMod.URLSearchParamsInit
 import typings.reactRouterDom.mod.BrowserRouterProps
 import typings.reactRouterDom.mod.FetcherWithComponents
 import typings.reactRouterDom.mod.FormProps
@@ -49,28 +46,26 @@ import typings.redux.mod.Middleware
 import typings.redux.mod.Reducer
 import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.anon.PartialPath
-import typings.remixRunRouter.historyMod.Action
-import typings.remixRunRouter.historyMod.Location
-import typings.remixRunRouter.historyMod.Path
-import typings.remixRunRouter.historyMod.To
-import typings.remixRunRouter.routerMod.Fetcher
-import typings.remixRunRouter.routerMod.Navigation
-import typings.remixRunRouter.routerMod.Router
-import typings.remixRunRouter.routerMod.RouterState
-import typings.remixRunRouter.routerMod.StaticHandlerContext
-import typings.remixRunRouter.utilsMod.AgnosticRouteMatch
-import typings.remixRunRouter.utilsMod.AgnosticRouteObject
-import typings.remixRunRouter.utilsMod.DeferredData
-import typings.remixRunRouter.utilsMod.JsonFunction
-import typings.remixRunRouter.utilsMod.ParamParseKey
-import typings.remixRunRouter.utilsMod.Params
-import typings.remixRunRouter.utilsMod.PathMatch
-import typings.remixRunRouter.utilsMod.PathPattern
-import typings.remixRunRouter.utilsMod.RedirectFunction
+import typings.remixRunRouter.distHistoryMod.Action
+import typings.remixRunRouter.distHistoryMod.Location
+import typings.remixRunRouter.distHistoryMod.Path
+import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.Fetcher
+import typings.remixRunRouter.distRouterMod.Navigation
+import typings.remixRunRouter.distRouterMod.Router
+import typings.remixRunRouter.distRouterMod.RouterState
+import typings.remixRunRouter.distRouterMod.StaticHandlerContext
+import typings.remixRunRouter.distUtilsMod.AgnosticRouteMatch
+import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
+import typings.remixRunRouter.distUtilsMod.DeferredData
+import typings.remixRunRouter.distUtilsMod.JsonFunction
+import typings.remixRunRouter.distUtilsMod.ParamParseKey
+import typings.remixRunRouter.distUtilsMod.PathMatch
+import typings.remixRunRouter.distUtilsMod.PathPattern
+import typings.remixRunRouter.distUtilsMod.RedirectFunction
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLFormElement
 import typings.std.MouseEvent
-import typings.std.Partial
 import typings.std.Record
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
@@ -117,18 +112,16 @@ object routerMod {
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Action & String] = js.native
     
-    /* "POP" */ val Pop: typings.remixRunRouter.historyMod.Action.Pop & String = js.native
+    /* "POP" */ val Pop: typings.remixRunRouter.distHistoryMod.Action.Pop & String = js.native
     
-    /* "PUSH" */ val Push: typings.remixRunRouter.historyMod.Action.Push & String = js.native
+    /* "PUSH" */ val Push: typings.remixRunRouter.distHistoryMod.Action.Push & String = js.native
     
-    /* "REPLACE" */ val Replace: typings.remixRunRouter.historyMod.Action.Replace & String = js.native
+    /* "REPLACE" */ val Replace: typings.remixRunRouter.distHistoryMod.Action.Replace & String = js.native
   }
   
   inline def Outlet(props: OutletProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Outlet")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  inline def Route(_props: IndexRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Route(_props: LayoutRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  inline def Route(_props: PathRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Route(_props: RouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
@@ -201,9 +194,7 @@ object routerMod {
   inline def generatePath[Path /* <: String */](path: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def generatePath[Path /* <: String */](
     path: Path,
-    params: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string}
-    */ typings.dva.dvaStrings.generatePath & TopLevel[Any]
+    params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def isRouteErrorResponse(e: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
@@ -419,7 +410,7 @@ object routerMod {
   
   inline def useOutletContext[Context](): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("useOutletContext")().asInstanceOf[Context]
   
-  inline def useParams[ParamsOrKey /* <: String | (Record[String, js.UndefOr[String]]) */](): Partial[ParamsOrKey] | Params[ParamsOrKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[Partial[ParamsOrKey] | Params[ParamsOrKey]]
+  inline def useParams[ParamsOrKey /* <: String | (Record[String, js.UndefOr[String]]) */](): /* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: [ParamsOrKey] extends [string] ? @remix-run/router.@remix-run/router/dist/utils.Params<ParamsOrKey> : std.Partial<ParamsOrKey> */ js.Any]
   
   inline def useResolvedPath(to: To): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any]).asInstanceOf[Path]
   inline def useResolvedPath(to: To, hasRelative: typings.reactRouter.anon.Relative): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("useResolvedPath")(to.asInstanceOf[js.Any], hasRelative.asInstanceOf[js.Any])).asInstanceOf[Path]

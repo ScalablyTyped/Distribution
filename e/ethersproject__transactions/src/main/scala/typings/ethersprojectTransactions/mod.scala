@@ -1,6 +1,6 @@
 package typings.ethersprojectTransactions
 
-import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
 import typings.ethersprojectBignumber.mod.BigNumber
 import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectBytes.mod.SignatureLike

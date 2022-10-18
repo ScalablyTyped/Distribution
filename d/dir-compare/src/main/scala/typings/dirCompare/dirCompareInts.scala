@@ -1,6 +1,6 @@
 package typings.dirCompare
 
-import typings.dirCompare.stringCompareResultMod.StringCompareResult
+import typings.dirCompare.buildSrcNameCompareStringCompareResultMod.StringCompareResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

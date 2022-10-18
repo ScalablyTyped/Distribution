@@ -10,13 +10,13 @@ trait ContentInset extends StObject {
   
   var contentOffset: X
   
-  var contentSize: Height
+  var contentSize: Width
   
-  var layoutMeasurement: Height
+  var layoutMeasurement: Width
 }
 object ContentInset {
   
-  inline def apply(contentInset: Left, contentOffset: X, contentSize: Height, layoutMeasurement: Height): ContentInset = {
+  inline def apply(contentInset: Left, contentOffset: X, contentSize: Width, layoutMeasurement: Width): ContentInset = {
     val __obj = js.Dynamic.literal(contentInset = contentInset.asInstanceOf[js.Any], contentOffset = contentOffset.asInstanceOf[js.Any], contentSize = contentSize.asInstanceOf[js.Any], layoutMeasurement = layoutMeasurement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentInset]
   }
@@ -27,8 +27,8 @@ object ContentInset {
     
     inline def setContentOffset(value: X): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
-    inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+    inline def setContentSize(value: Width): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
-    inline def setLayoutMeasurement(value: Height): Self = StObject.set(x, "layoutMeasurement", value.asInstanceOf[js.Any])
+    inline def setLayoutMeasurement(value: Width): Self = StObject.set(x, "layoutMeasurement", value.asInstanceOf[js.Any])
   }
 }

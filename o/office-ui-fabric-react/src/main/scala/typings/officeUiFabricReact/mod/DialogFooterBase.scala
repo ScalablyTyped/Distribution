@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.mod
 
-import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
+import typings.officeUiFabricReact.libComponentsDialogDialogFooterDottypesMod.IDialogFooterProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

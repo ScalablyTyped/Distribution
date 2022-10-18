@@ -1,6 +1,6 @@
 package typings.babylonjs.indexMod
 
-import typings.babylonjs.shadowLightMod.IShadowLight
+import typings.babylonjs.lightsShadowLightMod.IShadowLight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,12 +118,12 @@ object ShadowGenerator {
     * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
     * @returns The parsed shadow generator
     */
-  inline def Parse(parsedShadowGenerator: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+  inline def Parse(parsedShadowGenerator: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
   inline def Parse(
     parsedShadowGenerator: Any,
     scene: typings.babylonjs.sceneMod.Scene,
     constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
-  ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+  ): typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lightsShadowsShadowGeneratorMod.ShadowGenerator]
   
   /**
     * Reserved for PCF and PCSS

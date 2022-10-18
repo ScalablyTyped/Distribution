@@ -1,13 +1,12 @@
 package typings.baseui
 
 import typings.baseui.anon.ClassName
-import typings.baseui.anon.RefAny
-import typings.baseui.anon.`2`
+import typings.baseui.anon.Ref
 import typings.baseui.baseuiInts.`0`
 import typings.baseui.baseuiStrings.$style
 import typings.baseui.baseuiStrings.className
 import typings.baseui.baseuiStrings.end_
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.ComponentProps
 import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
@@ -19,7 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object blockTypesMod {
   
-  type AddStyletronRef[P /* <: RefAny */] = P | (P & `2`)
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    P extends {  ref :infer R} ? P & {  $ref :R | undefined} : P
+    }}}
+    */
+  @js.native
+  trait AddStyletronRef[P /* <: Ref */] extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.baseui.baseuiStrings.center

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class CHVertex ()
   extends typings.yuka.mod.CHVertex {
-  def this(point: typings.yuka.vector3Mod.Vector3) = this()
+  def this(point: typings.yuka.srcMathVector3Mod.Vector3) = this()
 }

@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.dialogMod.DialogProps
+import typings.blueprintjsCore.libEsmComponentsDialogDialogMod.DialogProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Dialog")
 @js.native
 open class Dialog protected ()
-  extends typings.blueprintjsCore.componentsMod.Dialog {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Dialog {
   def this(props: DialogProps) = this()
 }
 /* static members */

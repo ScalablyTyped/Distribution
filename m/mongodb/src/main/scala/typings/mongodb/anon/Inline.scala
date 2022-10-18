@@ -1,12 +1,13 @@
 package typings.mongodb.anon
 
+import typings.mongodb.mongodbInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Inline extends StObject {
   
-  var `inline`: typings.mongodb.mongodbInts.`1`
+  var `inline`: `1`
 }
 object Inline {
   
@@ -18,6 +19,6 @@ object Inline {
   
   extension [Self <: Inline](x: Self) {
     
-    inline def setInline(value: typings.mongodb.mongodbInts.`1`): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: `1`): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
   }
 }

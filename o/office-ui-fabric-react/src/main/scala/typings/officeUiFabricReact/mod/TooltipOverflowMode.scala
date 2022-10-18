@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TooltipOverflowMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.TooltipOverflowMode & Double
+  ] = js.native
   
-  /* 0 */ val Parent: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Parent & Double = js.native
+  /* 0 */ val Parent: typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.TooltipOverflowMode.Parent & Double = js.native
   
-  /* 1 */ val Self: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Self & Double = js.native
+  /* 1 */ val Self: typings.officeUiFabricReact.libComponentsTooltipTooltipHostDottypesMod.TooltipOverflowMode.Self & Double = js.native
 }

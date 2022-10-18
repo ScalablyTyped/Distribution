@@ -1,10 +1,10 @@
 package typings.dxf
 
-import typings.dxf.blocksMod.Block
-import typings.dxf.dxfMod.ColorNumber
-import typings.dxf.entitiesMod.Entity
-import typings.dxf.headerMod.Header
-import typings.dxf.tablesMod.DXFTable
+import typings.dxf.commonMod.ColorNumber
+import typings.dxf.handlersBlocksMod.Block
+import typings.dxf.handlersEntitiesMod.Entity
+import typings.dxf.handlersHeaderMod.Header
+import typings.dxf.handlersTablesMod.DXFTable
 import typings.dxf.utilsMod.UtilVertex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -2,10 +2,10 @@ package typings.konva.anon
 
 import typings.konva.konvaInts.`-1`
 import typings.konva.konvaInts.`1`
-import typings.konva.typesMod.IRect
-import typings.konva.typesMod.RGB
-import typings.konva.typesMod.RGBA
-import typings.konva.typesMod.Vector2d
+import typings.konva.libTypesMod.IRect
+import typings.konva.libTypesMod.RGB
+import typings.konva.libTypesMod.RGBA
+import typings.konva.libTypesMod.Vector2d
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject

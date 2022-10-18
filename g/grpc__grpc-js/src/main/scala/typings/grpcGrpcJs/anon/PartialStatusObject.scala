@@ -1,7 +1,7 @@
 package typings.grpcGrpcJs.anon
 
-import typings.grpcGrpcJs.constantsMod.Status
-import typings.grpcGrpcJs.metadataMod.Metadata
+import typings.grpcGrpcJs.buildSrcConstantsMod.Status
+import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

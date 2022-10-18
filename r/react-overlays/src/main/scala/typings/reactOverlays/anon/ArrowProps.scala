@@ -1,6 +1,6 @@
 package typings.reactOverlays.anon
 
-import typings.reactOverlays.usePopperMod.State
+import typings.reactOverlays.cjsUsePopperMod.State
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait ArrowProps extends StObject {
   
   def forceUpdate(): Unit
   
-  var placement: typings.reactOverlays.usePopperMod.Placement
+  var placement: typings.reactOverlays.cjsUsePopperMod.Placement
   
   var props: (Record[String, Any]) & Style
   
@@ -27,7 +27,7 @@ object ArrowProps {
   inline def apply(
     arrowProps: (Record[String, Any]) & Ref,
     forceUpdate: () => Unit,
-    placement: typings.reactOverlays.usePopperMod.Placement,
+    placement: typings.reactOverlays.cjsUsePopperMod.Placement,
     props: (Record[String, Any]) & Style,
     show: Boolean,
     update: () => Unit
@@ -42,7 +42,7 @@ object ArrowProps {
     
     inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
     
-    inline def setPlacement(value: typings.reactOverlays.usePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.reactOverlays.cjsUsePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setProps(value: (Record[String, Any]) & Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

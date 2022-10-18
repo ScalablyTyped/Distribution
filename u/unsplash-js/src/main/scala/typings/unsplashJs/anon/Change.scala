@@ -1,6 +1,6 @@
 package typings.unsplashJs.anon
 
-import typings.unsplashJs.photosTypesMod.StatValue
+import typings.unsplashJs.distMethodsPhotosTypesMod.StatValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

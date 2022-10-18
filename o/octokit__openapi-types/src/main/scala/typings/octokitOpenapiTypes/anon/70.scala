@@ -6,30 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `70` extends StObject {
   
-  var `200`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['actions_runner_labels_readonly'] */ js.Any
-  
-  var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
+  /** Response */
+  var `200`: Content47
 }
 object `70` {
   
-  inline def apply(
-    `200`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['actions_runner_labels_readonly'] */ js.Any,
-    `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-  ): `70` = {
+  inline def apply(`200`: Content47): `70` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
-    __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`70`]
   }
   
   extension [Self <: `70`](x: Self) {
     
-    inline def set200(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['actions_runner_labels_readonly'] */ js.Any
-    ): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
-    
-    inline def set404(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
-    ): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set200(value: Content47): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,6 @@
 package typings.prompts
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.prompts.promptsBooleans.`false`
@@ -58,9 +57,15 @@ object mod {
     inline def toggle(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  type Answers[T /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ id in T ]: any}
-    */ typings.prompts.promptsStrings.Answers & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ id in T ]: any}
+    }}}
+    */
+  @js.native
+  trait Answers[T /* <: String */] extends StObject
   
   // Based upon: https://github.com/terkelg/prompts/blob/d7d2c37a0009e3235b2e88a7d5cdbb114ac271b2/lib/elements/select.js#L29
   trait Choice extends StObject {

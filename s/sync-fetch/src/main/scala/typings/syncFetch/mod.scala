@@ -1,8 +1,8 @@
 package typings.syncFetch
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
-import typings.std.ReadableStream
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +44,7 @@ object mod extends Shortcut {
     override def blob(): js.Promise[Blob] = js.native
     
     /* CompleteClass */
-    var body: ReadableStream[Any] = js.native
+    var body: ReadableStream = js.native
     
     /* CompleteClass */
     var bodyUsed: Boolean = js.native
@@ -115,7 +115,7 @@ object mod extends Shortcut {
     override def blob(): js.Promise[Blob] = js.native
     
     /* CompleteClass */
-    var body: ReadableStream[Any] = js.native
+    var body: ReadableStream = js.native
     
     /* CompleteClass */
     var bodyUsed: Boolean = js.native
@@ -177,7 +177,7 @@ object mod extends Shortcut {
     
     def blob(): js.Promise[Blob]
     
-    var body: ReadableStream[Any]
+    var body: ReadableStream
     
     var bodyUsed: Boolean
     
@@ -196,7 +196,7 @@ object mod extends Shortcut {
     inline def apply(
       arrayBuffer: () => js.typedarray.ArrayBuffer,
       blob: () => js.Promise[Blob],
-      body: ReadableStream[Any],
+      body: ReadableStream,
       bodyUsed: Boolean,
       buffer: () => Buffer,
       json: () => Any,
@@ -214,7 +214,7 @@ object mod extends Shortcut {
       
       inline def setBlob(value: () => js.Promise[Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
-      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
       
@@ -268,7 +268,7 @@ object mod extends Shortcut {
     inline def apply(
       arrayBuffer: () => js.typedarray.ArrayBuffer,
       blob: () => js.Promise[Blob],
-      body: ReadableStream[Any],
+      body: ReadableStream,
       bodyUsed: Boolean,
       buffer: () => Buffer,
       compress: Boolean,
@@ -412,7 +412,7 @@ object mod extends Shortcut {
     inline def apply(
       arrayBuffer: () => js.typedarray.ArrayBuffer,
       blob: () => js.Promise[Blob],
-      body: ReadableStream[Any],
+      body: ReadableStream,
       bodyUsed: Boolean,
       buffer: () => Buffer,
       headers: Headers,
@@ -475,7 +475,7 @@ object mod extends Shortcut {
     inline def SyncRequest(
       arrayBuffer: () => js.typedarray.ArrayBuffer,
       blob: () => js.Promise[Blob],
-      body: ReadableStream[Any],
+      body: ReadableStream,
       bodyUsed: Boolean,
       buffer: () => Buffer,
       compress: Boolean,

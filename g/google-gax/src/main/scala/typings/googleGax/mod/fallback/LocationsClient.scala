@@ -1,6 +1,6 @@
 package typings.googleGax.mod.fallback
 
-import typings.googleGax.clientInterfaceMod.ClientOptions
+import typings.googleGax.buildSrcClientInterfaceMod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("google-gax", "fallback.LocationsClient")
 @js.native
 open class LocationsClient protected ()
-  extends typings.googleGax.locationServiceMod.LocationsClient {
-  def this(gaxGrpc: typings.googleGax.fallbackMod.GrpcClient, opts: ClientOptions) = this()
+  extends typings.googleGax.buildSrcLocationServiceMod.LocationsClient {
+  def this(gaxGrpc: typings.googleGax.buildSrcFallbackMod.GrpcClient, opts: ClientOptions) = this()
   /**
     * Construct an instance of LocationsClient.
     *
@@ -44,5 +44,5 @@ open class LocationsClient protected ()
     *     the fallback mode is enabled automatically; set `options.fallback` to `false`
     *     if you need to override this behavior.
     */
-  def this(gaxGrpc: typings.googleGax.grpcMod.GrpcClient, opts: ClientOptions) = this()
+  def this(gaxGrpc: typings.googleGax.buildSrcGrpcMod.GrpcClient, opts: ClientOptions) = this()
 }

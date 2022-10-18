@@ -1,15 +1,15 @@
 package typings.vsoNodeApi
 
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
-import typings.vsoNodeApi.coreInterfacesMod.TeamContext
-import typings.vsoNodeApi.dashboardInterfacesMod.Dashboard
-import typings.vsoNodeApi.dashboardInterfacesMod.DashboardGroup
-import typings.vsoNodeApi.dashboardInterfacesMod.Widget
-import typings.vsoNodeApi.dashboardInterfacesMod.WidgetMetadataResponse
-import typings.vsoNodeApi.dashboardInterfacesMod.WidgetScope
-import typings.vsoNodeApi.dashboardInterfacesMod.WidgetTypesResponse
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
-import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestHandler
+import typings.vsoNodeApi.interfacesCommonVsoBaseInterfacesMod.IRequestOptions
+import typings.vsoNodeApi.interfacesCoreInterfacesMod.TeamContext
+import typings.vsoNodeApi.interfacesDashboardInterfacesMod.Dashboard
+import typings.vsoNodeApi.interfacesDashboardInterfacesMod.DashboardGroup
+import typings.vsoNodeApi.interfacesDashboardInterfacesMod.Widget
+import typings.vsoNodeApi.interfacesDashboardInterfacesMod.WidgetMetadataResponse
+import typings.vsoNodeApi.interfacesDashboardInterfacesMod.WidgetScope
+import typings.vsoNodeApi.interfacesDashboardInterfacesMod.WidgetTypesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

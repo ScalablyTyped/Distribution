@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "RenderTarget")
 @js.native
 open class RenderTarget protected ()
-  extends typings.blackEngine.renderTargetMod.RenderTarget {
+  extends typings.blackEngine.driversRenderTargetMod.RenderTarget {
   def this(width: Double, height: Double) = this()
 }

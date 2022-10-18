@@ -211,7 +211,7 @@ object mod {
     
     var db: Any = js.native
     
-    var dbManager: typings.ethereumjsBlockchain.dbManagerMod.default = js.native
+    var dbManager: typings.ethereumjsBlockchain.distDbManagerMod.default = js.native
     
     var ethash: Any = js.native
     

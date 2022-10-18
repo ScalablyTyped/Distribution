@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "RefractionTexture")
 @js.native
 open class RefractionTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.RefractionTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.RefractionTexture {
   /**
     * Creates a refraction texture used by refraction channel of the standard material.
     * It is like a mirror but to see through a material.

@@ -1,7 +1,7 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.kdbxBinariesMod.KdbxBinaryOrRef
-import typings.kdbxweb.xmlUtilsMod.global.Node
+import typings.kdbxweb.distTypesFormatKdbxBinariesMod.KdbxBinaryOrRef
+import typings.kdbxweb.distTypesUtilsXmlUtilsMod.global.Node
 import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -33,14 +33,14 @@ object XmlUtils {
   
   inline def getProtectedBinary(node: Node): js.UndefOr[KdbxBinaryOrRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectedBinary")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KdbxBinaryOrRef]]
   
-  inline def getProtectedText(node: Node): js.UndefOr[typings.kdbxweb.protectedValueMod.ProtectedValue | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectedText")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.kdbxweb.protectedValueMod.ProtectedValue | String]]
+  inline def getProtectedText(node: Node): js.UndefOr[typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtectedText")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue | String]]
   
   inline def getTags(node: Node): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTags")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def getText(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")().asInstanceOf[js.UndefOr[String]]
   inline def getText(node: Node): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  inline def getUuid(node: Node): js.UndefOr[typings.kdbxweb.kdbxUuidMod.KdbxUuid] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUuid")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.kdbxweb.kdbxUuidMod.KdbxUuid]]
+  inline def getUuid(node: Node): js.UndefOr[typings.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUuid")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid]]
   
   inline def parse(xml: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[Document]
   
@@ -70,9 +70,12 @@ object XmlUtils {
   inline def setProtectedBinary(node: Node, binary: KdbxBinaryOrRef): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProtectedBinary")(node.asInstanceOf[js.Any], binary.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setProtectedText(node: Node, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProtectedText")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setProtectedText(node: Node, text: typings.kdbxweb.protectedValueMod.ProtectedValue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProtectedText")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setProtectedText(node: Node, text: typings.kdbxweb.distTypesCryptoProtectedValueMod.ProtectedValue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProtectedText")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setProtectedValues(node: Node, protectSaltGenerator: typings.kdbxweb.protectSaltGeneratorMod.ProtectSaltGenerator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProtectedValues")(node.asInstanceOf[js.Any], protectSaltGenerator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setProtectedValues(
+    node: Node,
+    protectSaltGenerator: typings.kdbxweb.distTypesCryptoProtectSaltGeneratorMod.ProtectSaltGenerator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProtectedValues")(node.asInstanceOf[js.Any], protectSaltGenerator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setTags(node: Node, tags: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTags")(node.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -83,7 +86,7 @@ object XmlUtils {
   inline def setUuid(node: Node, uuid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUuid")(node.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setUuid(node: Node, uuid: js.typedarray.ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUuid")(node.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def setUuid(node: Node, uuid: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUuid")(node.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def setUuid(node: Node, uuid: typings.kdbxweb.kdbxUuidMod.KdbxUuid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUuid")(node.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setUuid(node: Node, uuid: typings.kdbxweb.distTypesFormatKdbxUuidMod.KdbxUuid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUuid")(node.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def strToBoolean(): js.UndefOr[Boolean | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("strToBoolean")().asInstanceOf[js.UndefOr[Boolean | Null]]
   inline def strToBoolean(str: String): js.UndefOr[Boolean | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("strToBoolean")(str.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean | Null]]
@@ -92,5 +95,8 @@ object XmlUtils {
   
   inline def unprotectValues(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unprotectValues")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def updateProtectedValuesSalt(node: Node, protectSaltGenerator: typings.kdbxweb.protectSaltGeneratorMod.ProtectSaltGenerator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProtectedValuesSalt")(node.asInstanceOf[js.Any], protectSaltGenerator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateProtectedValuesSalt(
+    node: Node,
+    protectSaltGenerator: typings.kdbxweb.distTypesCryptoProtectSaltGeneratorMod.ProtectSaltGenerator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProtectedValuesSalt")(node.asInstanceOf[js.Any], protectSaltGenerator.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

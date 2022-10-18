@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/htmlviewer" : "2.2.6"
+      "@jupyterlab/htmlviewer" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/htmlviewer" : "2.2.6"
+      "@jupyterlab/htmlviewer" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

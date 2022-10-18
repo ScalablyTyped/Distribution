@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientChat.gapi.client.chat
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,7 @@ trait CommonEventObject extends StObject {
     * [dialog](https://developers.google.com/chat/how-tos/dialogs).
     */
   var formInputs: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.chat.gapi.client.chat.Inputs}
-    */ typings.maximMazurokGapiClientChat.maximMazurokGapiClientChatStrings.CommonEventObject & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.chat.gapi.client.chat.Inputs} */ js.Any
   ] = js.undefined
   
   /** The hostApp enum which indicates the app the add-on is invoked from. Always `CHAT` for Chat apps. */
@@ -27,9 +24,7 @@ trait CommonEventObject extends StObject {
   
   /** Custom [parameters](/chat/api/reference/rest/v1/cards#ActionParameter) passed to the invoked function. Both keys and values must be strings. */
   var parameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientChat.maximMazurokGapiClientChatStrings.CommonEventObject & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /** The platform enum which indicates the platform where the event originates (`WEB`, `IOS`, or `ANDROID`). Not supported by Chat apps. */
@@ -51,9 +46,7 @@ object CommonEventObject {
   extension [Self <: CommonEventObject](x: Self) {
     
     inline def setFormInputs(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.chat.gapi.client.chat.Inputs}
-      */ typings.maximMazurokGapiClientChat.maximMazurokGapiClientChatStrings.CommonEventObject & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.chat.gapi.client.chat.Inputs} */ js.Any
     ): Self = StObject.set(x, "formInputs", value.asInstanceOf[js.Any])
     
     inline def setFormInputsUndefined: Self = StObject.set(x, "formInputs", js.undefined)
@@ -67,9 +60,7 @@ object CommonEventObject {
     inline def setInvokedFunctionUndefined: Self = StObject.set(x, "invokedFunction", js.undefined)
     
     inline def setParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientChat.maximMazurokGapiClientChatStrings.CommonEventObject & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

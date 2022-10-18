@@ -1,6 +1,6 @@
 package typings.mendixmodelsdk.mod.pages
 
-import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import typings.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle")
 @js.native
 open class DataViewReadOnlyStyle protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.pages.DataViewReadOnlyStyle {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.pages.DataViewReadOnlyStyle {
   def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
 object DataViewReadOnlyStyle {
@@ -20,12 +20,12 @@ object DataViewReadOnlyStyle {
   /* static member */
   @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle.Control")
   @js.native
-  def Control: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle = js.native
-  inline def Control_=(x: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
+  def Control: typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewReadOnlyStyle = js.native
+  inline def Control_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Control")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.DataViewReadOnlyStyle.Text")
   @js.native
-  def Text: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle = js.native
-  inline def Text_=(x: typings.mendixmodelsdk.pagesMod.pages.DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  def Text: typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewReadOnlyStyle = js.native
+  inline def Text_=(x: typings.mendixmodelsdk.srcGenPagesMod.pages.DataViewReadOnlyStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

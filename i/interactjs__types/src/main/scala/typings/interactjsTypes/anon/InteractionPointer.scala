@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InteractionPointer extends StObject {
   
-  var interaction: typings.interactjsTypes.interactionMod.Interaction[drag]
+  var interaction: typings.interactjsTypes.coreInteractionMod.Interaction[drag]
   
-  var pointer: typings.interactjsTypes.typesMod.PointerType
+  var pointer: typings.interactjsTypes.coreTypesMod.PointerType
 }
 object InteractionPointer {
   
   inline def apply(
-    interaction: typings.interactjsTypes.interactionMod.Interaction[drag],
-    pointer: typings.interactjsTypes.typesMod.PointerType
+    interaction: typings.interactjsTypes.coreInteractionMod.Interaction[drag],
+    pointer: typings.interactjsTypes.coreTypesMod.PointerType
   ): InteractionPointer = {
     val __obj = js.Dynamic.literal(interaction = interaction.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionPointer]
@@ -23,8 +23,8 @@ object InteractionPointer {
   
   extension [Self <: InteractionPointer](x: Self) {
     
-    inline def setInteraction(value: typings.interactjsTypes.interactionMod.Interaction[drag]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[drag]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
-    inline def setPointer(value: typings.interactjsTypes.typesMod.PointerType): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+    inline def setPointer(value: typings.interactjsTypes.coreTypesMod.PointerType): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
   }
 }

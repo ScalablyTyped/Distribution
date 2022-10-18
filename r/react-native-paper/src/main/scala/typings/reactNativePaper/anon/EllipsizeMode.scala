@@ -1,6 +1,6 @@
 package typings.reactNativePaper.anon
 
-import typings.reactNativePaper.typescriptTypesMod.EllipsizeProp
+import typings.reactNativePaper.libTypescriptTypesMod.EllipsizeProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

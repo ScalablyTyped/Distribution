@@ -26,22 +26,21 @@ import typings.reactIntl.anon.DateTimeFormatOptionsCust
 import typings.reactIntl.anon.DisplayNamesOptionsvalues
 import typings.reactIntl.anon.FormatDateOptionsvaluePar
 import typings.reactIntl.anon.IntlListFormatOptionsvalu
-import typings.reactIntl.anon.NumberFormatOptionsCustom
+import typings.reactIntl.anon.OmitNumberFormatOptionslo
 import typings.reactIntl.anon.PartialStateCache
 import typings.reactIntl.anon.PickResolvedIntlConfigonE
 import typings.reactIntl.anon.ReadonlyIntlConfig
 import typings.reactIntl.anon.Value
 import typings.reactIntl.anon.WrappedComponentComponentType
-import typings.reactIntl.dateTimeRangeMod.Props
-import typings.reactIntl.injectIntlMod.Opts
-import typings.reactIntl.injectIntlMod.WithIntlProps
-import typings.reactIntl.injectIntlMod.WrappedComponentProps
-import typings.reactIntl.providerMod.State
-import typings.reactIntl.providerMod.default
-import typings.reactIntl.reactIntlBooleans.`false`
+import typings.reactIntl.libSrcComponentsDateTimeRangeMod.Props
+import typings.reactIntl.libSrcComponentsInjectIntlMod.Opts
+import typings.reactIntl.libSrcComponentsInjectIntlMod.WithIntlProps
+import typings.reactIntl.libSrcComponentsInjectIntlMod.WrappedComponentProps
+import typings.reactIntl.libSrcComponentsProviderMod.State
+import typings.reactIntl.libSrcComponentsProviderMod.default
+import typings.reactIntl.libSrcTypesMod.IntlConfig
+import typings.reactIntl.libSrcTypesMod.IntlShape
 import typings.reactIntl.reactIntlBooleans.`true`
-import typings.reactIntl.typesMod.IntlConfig
-import typings.reactIntl.typesMod.IntlShape
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -75,12 +74,12 @@ object libMod {
   
   @JSImport("react-intl/lib", "FormattedListParts")
   @js.native
-  val FormattedListParts: FC[FormatListOptions & Value] = js.native
+  val FormattedListParts: FC[FormatListOptions & Children] = js.native
   
   @JSImport("react-intl/lib", "FormattedMessage")
   @js.native
   val FormattedMessage: NamedExoticComponent[
-    typings.reactIntl.messageMod.Props[
+    typings.reactIntl.libSrcComponentsMessageMod.Props[
       Record[
         String, 
         js.UndefOr[
@@ -92,19 +91,19 @@ object libMod {
   
   @JSImport("react-intl/lib", "FormattedNumber")
   @js.native
-  val FormattedNumber: FC[NumberFormatOptionsCustom] = js.native
+  val FormattedNumber: FC[OmitNumberFormatOptionslo] = js.native
   
   @JSImport("react-intl/lib", "FormattedNumberParts")
   @js.native
-  val FormattedNumberParts: FC[FormatNumberOptions & Children] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
   
   @JSImport("react-intl/lib", "FormattedPlural")
   @js.native
-  val FormattedPlural: FC[typings.reactIntl.pluralMod.Props] = js.native
+  val FormattedPlural: FC[typings.reactIntl.libSrcComponentsPluralMod.Props] = js.native
   
   @JSImport("react-intl/lib", "FormattedRelativeTime")
   @js.native
-  val FormattedRelativeTime: FC[typings.reactIntl.relativeMod.Props] = js.native
+  val FormattedRelativeTime: FC[typings.reactIntl.libSrcComponentsRelativeMod.Props] = js.native
   
   @JSImport("react-intl/lib", "FormattedTime")
   @js.native
@@ -227,11 +226,7 @@ object libMod {
   
   inline def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("defineMessages")(msgs.asInstanceOf[js.Any]).asInstanceOf[U]
   
-  inline def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] & (WrappedComponentComponentType[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponentComponentType[P, IntlPropName])]
-  
-  inline def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName])]
-  
-  inline def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] & (WrappedComponentComponentType[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponentComponentType[P, IntlPropName])]
+  inline def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName])]
   
   inline def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponentComponentType[P, IntlPropName])]
   

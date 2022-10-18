@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait Table extends StObject
 /**
-  * Specifies enumerated values for the `cells` property in the cellFormat parameter of 
+  * Specifies enumerated values for the `cells` property in the cellFormat parameter of
   * {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table | table formatting methods}.
   */
 @JSGlobal("Office.Table")

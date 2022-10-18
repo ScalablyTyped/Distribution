@@ -3,7 +3,7 @@ package typings.seleniumWebdriver.mod
 import typings.seleniumWebdriver.anon.Async
 import typings.seleniumWebdriver.anon.AsyncBoolean
 import typings.seleniumWebdriver.anon.Bridge
-import typings.seleniumWebdriver.commandMod.Executor
+import typings.seleniumWebdriver.libCommandMod.Executor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("selenium-webdriver", "Actions")
 @js.native
 open class Actions protected ()
-  extends typings.seleniumWebdriver.inputMod.Actions {
+  extends typings.seleniumWebdriver.libInputMod.Actions {
   // region Constructors
   def this(executor: Executor) = this()
   def this(executor: Executor, options: Async) = this()

@@ -5,7 +5,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Rich extends StObject {
+trait Rich
+  extends StObject
+     with /**
+  * Some properties like "normal" or "emphasis" are not documented.
+  * Please, write description for them
+  */
+/* unknownProperty */ StringDictionary[Any] {
+  
+  /**
+    * Horizontal alignment of text, automatic by default.
+    *
+    * Options are:
+    *
+    * + `'left'`
+    * + `'center'`
+    * + `'right'`
+    *
+    * If `align` is not set in `rich`, `align` in parent level
+    * will be used. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.align
+    */
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * Background color of the text fregment.
@@ -14,7 +39,7 @@ trait Rich extends StObject {
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
@@ -22,17 +47,17 @@ trait Rich extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
-    * Border color of the text fragment.
+    * Border color of the text fregment.
     *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -40,15 +65,15 @@ trait Rich extends StObject {
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
-    * Border width of the text fragment.
+    * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
@@ -57,8 +82,8 @@ trait Rich extends StObject {
     *
     *
     * @default
-    * "auto"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.color
+    * ""#fff""
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.color
     */
   var color: js.UndefOr[String] = js.undefined
   
@@ -70,7 +95,7 @@ trait Rich extends StObject {
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -79,8 +104,8 @@ trait Rich extends StObject {
     *
     *
     * @default
-    * 15
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontSize
+    * 12
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -96,7 +121,7 @@ trait Rich extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -114,17 +139,53 @@ trait Rich extends StObject {
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontWeight
     */
   var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * Formatter is used to format detail, which supports string template and callback function.
+    * Data label formatter, which supports string template and
+    * callback function.
+    * In either form, `\n` is supported to represent a new line.
+    *
+    * **String template**
+    *
+    * Model variation includes:
+    *
+    * + `{a}`: series name.
+    * + `{b}`: the name of a data item.
+    * + `{c}`: the value of a data item.
+    * + `{d}`: the percent.
+    * + `{@xxx}: the value of a dimension named`'xxx'`, for example,`{@product}`refers
+    * the value of`'product'\` dimension。
+    * + `{@[n]}: the value of a dimension at the index of`n`, for
+    * example,`{@\[3\]}\` refers the value at dimensions\[3\].
+    *
+    * **example:**
+    *
+    * ```
+    * formatter: '{b}: {d}'
+    *
+    * ```
+    *
+    * **Callback function**
+    *
+    * Callback function is in form of:
+    *
+    * ```
+    * (params: Object|Array) => string
+    *
+    * ```
+    *
+    * where `params` is the single dataset needed by formatter,
+    * which is formed as:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.formatter
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.formatter
     */
-  var formatter: js.UndefOr[String | js.Function] = js.undefined
+  var formatter: js.UndefOr[js.Function | String] = js.undefined
   
   /**
     * Height of the text block.
@@ -138,7 +199,7 @@ trait Rich extends StObject {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.height
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -148,26 +209,12 @@ trait Rich extends StObject {
     * If `lineHeight` is not set in `rich`, `lineHeight` in parent
     * level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * The offset position relative to the center of gauge chart.
-    * The first item of array is the horizontal offset; the second
-    * item of array is the vertical offset.
-    * It could be absolute value and also the percentage relative
-    * to the radius of gauge chart.
-    *
-    *
-    * @default
-    * [0, '40%']
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.offsetCenter
-    */
-  var offsetCenter: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
@@ -181,38 +228,56 @@ trait Rich extends StObject {
     * of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.padding
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
+  
+  /**
+    * The position of label.
+    *
+    * **Options:**
+    *
+    * + `'outside'`
+    *
+    * Outside of sectors of pie chart, which relates to corresponding
+    * sector through
+    * [visual guide line](https://echarts.apache.org/en/option.html#series-pie.labelLine)
+    * .
+    *
+    * + `'inside'`
+    *
+    * Inside the sectors of pie chart.
+    *
+    * + `'inner'` is the same with `'inside'`.
+    *
+    * + `'center'`
+    *
+    * In the center of pie chart. See
+    * [pie-doughnut example](https://echarts.apache.org/examples/en/editor.html?c=pie-doughnut)
+    *
+    *
+    * @default
+    * "outside"
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.position
+    */
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-gauge.gauge.detail)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * The text color. Defaults to use
-    * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
-    * where the numerical value belongs to.
-    *
-    *
-    * @todo check that the option is valid and should be here
-    * @default
-    * "auto"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
-    */
-  // color?: string;
-  /**
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
@@ -221,7 +286,7 @@ trait Rich extends StObject {
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -231,7 +296,7 @@ trait Rich extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -239,7 +304,7 @@ trait Rich extends StObject {
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -247,17 +312,12 @@ trait Rich extends StObject {
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * Whether to show the details.
-    *
-    *
-    * @default
-    * "true"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.show
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
@@ -267,7 +327,7 @@ trait Rich extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -275,7 +335,7 @@ trait Rich extends StObject {
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -283,7 +343,7 @@ trait Rich extends StObject {
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -293,7 +353,7 @@ trait Rich extends StObject {
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -301,7 +361,7 @@ trait Rich extends StObject {
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -309,9 +369,28 @@ trait Rich extends StObject {
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Vertical alignment of text, automatic by default.
+    *
+    * Options are:
+    *
+    * + `'top'`
+    * + `'middle'`
+    * + `'bottom'`
+    *
+    * If `verticalAlign` is not set in `rich`, `verticalAlign`
+    * in parent level will be used. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.verticalAlign
+    */
+  var verticalAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the text block.
@@ -333,7 +412,7 @@ trait Rich extends StObject {
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-gauge.detail.width
+    * @see https://echarts.apache.org/en/option.html#series-pie.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -345,6 +424,10 @@ object Rich {
   }
   
   extension [Self <: Rich](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
@@ -382,7 +465,7 @@ object Rich {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFormatter(value: String | js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
@@ -394,33 +477,19 @@ object Rich {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setOffsetCenter(value: js.Array[Any]): Self = StObject.set(x, "offsetCenter", value.asInstanceOf[js.Any])
-    
-    inline def setOffsetCenterUndefined: Self = StObject.set(x, "offsetCenter", js.undefined)
-    
-    inline def setOffsetCenterVarargs(value: Any*): Self = StObject.set(x, "offsetCenter", js.Array(value*))
-    
     inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
     inline def setRich(
       value: /**
-      * The text color. Defaults to use
-      * [the color of section](https://echarts.apache.org/en/option.html#series-gauge.axisLine.lineStyle.color)
-      * where the numerical value belongs to.
-      *
-      *
-      * @todo check that the option is valid and should be here
-      * @default
-      * "auto"
-      * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.color
-      */
-    // color?: string;
-    /**
-      * @see https://echarts.apache.org/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
+      * @see https://echarts.apache.org/en/option.html#series-pie.label.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
@@ -470,6 +539,10 @@ object Rich {
     inline def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
     
     inline def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
+    
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -1,15 +1,15 @@
 package typings.awsSdkMiddlewareSdkSts
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsSdkMiddlewareSigning.configurationsMod.AwsAuthInputConfig
-import typings.awsSdkMiddlewareSigning.configurationsMod.AwsAuthResolvedConfig
-import typings.awsSdkTypes.clientMod.Client
-import typings.awsSdkTypes.credentialsMod.Credentials
-import typings.awsSdkTypes.cryptoMod.HashConstructor
-import typings.awsSdkTypes.utilMod.Provider
-import typings.awsSdkTypes.utilMod.RegionInfo
-import typings.awsSdkTypes.utilMod.RegionInfoProvider
-import typings.awsSdkTypes.utilMod.RegionInfoProviderOptions
+import typings.awsSdkMiddlewareSigning.distTypesConfigurationsMod.AwsAuthInputConfig
+import typings.awsSdkMiddlewareSigning.distTypesConfigurationsMod.AwsAuthResolvedConfig
+import typings.awsSdkTypes.distTypesClientMod.Client
+import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesUtilMod.Provider
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfo
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProvider
+import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProviderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,10 +28,7 @@ object mod {
     
     var region: String | Provider[String]
     
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]]
-    def regionInfoProvider(region: String, options: RegionInfoProviderOptions): js.Promise[js.UndefOr[RegionInfo]]
-    @JSName("regionInfoProvider")
-    var regionInfoProvider_Original: RegionInfoProvider
+    var regionInfoProvider: js.UndefOr[RegionInfoProvider] = js.undefined
     
     var serviceId: String
     
@@ -52,13 +49,12 @@ object mod {
     inline def apply(
       credentialDefaultProvider: Any => Provider[Credentials],
       region: String | Provider[String],
-      regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]],
       serviceId: String,
       sha256: HashConstructor,
       useDualstackEndpoint: () => js.Promise[Boolean],
       useFipsEndpoint: () => js.Promise[Boolean]
     ): PreviouslyResolved = {
-      val __obj = js.Dynamic.literal(credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), region = region.asInstanceOf[js.Any], regionInfoProvider = js.Any.fromFunction2(regionInfoProvider), serviceId = serviceId.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], useDualstackEndpoint = js.Any.fromFunction0(useDualstackEndpoint), useFipsEndpoint = js.Any.fromFunction0(useFipsEndpoint))
+      val __obj = js.Dynamic.literal(credentialDefaultProvider = js.Any.fromFunction1(credentialDefaultProvider), region = region.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], sha256 = sha256.asInstanceOf[js.Any], useDualstackEndpoint = js.Any.fromFunction0(useDualstackEndpoint), useFipsEndpoint = js.Any.fromFunction0(useFipsEndpoint))
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
@@ -73,6 +69,8 @@ object mod {
       inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
+      
+      inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
       
       inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       

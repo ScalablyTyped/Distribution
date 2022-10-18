@@ -47,12 +47,12 @@ object Events {
   /**
     * @param confirmation A `CConfirmation` object.
     */
-  type confirmationAccepted = js.Function1[/* confirmation */ typings.steamcommunity.cconfirmationMod.^, Unit]
+  type confirmationAccepted = js.Function1[/* confirmation */ typings.steamcommunity.classesCconfirmationMod.^, Unit]
   
   /**
     * @param confirmation A `CConfirmation` object.
     */
-  type newConfirmation = js.Function1[/* confirmation */ typings.steamcommunity.cconfirmationMod.^, Unit]
+  type newConfirmation = js.Function1[/* confirmation */ typings.steamcommunity.classesCconfirmationMod.^, Unit]
   
   /**
     * @param err An `Error` object.

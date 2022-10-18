@@ -2,8 +2,8 @@ package typings.reactOverlays
 
 import typings.popperjsCore.anon.PartialModifieranyany
 import typings.popperjsCore.anon.PartialState
-import typings.popperjsCore.typesMod.Obj
-import typings.popperjsCore.typesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.Obj
+import typings.popperjsCore.libTypesMod.PositioningStrategy
 import typings.reactOverlays.anon.PartialCSSStyleDeclaratio
 import typings.reactOverlays.anon.PartialModifieranyanyEffect
 import typings.reactOverlays.anon.Popper
@@ -86,9 +86,9 @@ object esmUsePopperMod {
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
   ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   
-  type Instance = typings.popperjsCore.typesMod.Instance
+  type Instance = typings.popperjsCore.libTypesMod.Instance
   
-  type Modifier[Name, Options /* <: js.UndefOr[Obj] */] = typings.popperjsCore.typesMod.Modifier[Name, OptionsWithUndefined[Options]]
+  type Modifier[Name, Options /* <: js.UndefOr[Obj] */] = typings.popperjsCore.libTypesMod.Modifier[Name, OptionsWithUndefined[Options]]
   
   type ModifierMap = Record[String, PartialModifieranyanyEffect]
   
@@ -200,13 +200,21 @@ object esmUsePopperMod {
   
   type OffsetValue = js.Tuple2[js.UndefOr[Double | Null], js.UndefOr[Double | Null]]
   
-  type Options = typings.popperjsCore.typesMod.Options
+  type Options = typings.popperjsCore.libTypesMod.Options
   
-  type OptionsWithUndefined[T /* <: js.UndefOr[Obj] */] = Obj | T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends @popperjs/core.@popperjs/core/lib/types.Obj ? T : @popperjs/core.@popperjs/core/lib/types.Obj
+    }}}
+    */
+  @js.native
+  trait OptionsWithUndefined[T /* <: js.UndefOr[Obj] */] extends StObject
   
-  type Placement = typings.popperjsCore.enumsMod.Placement
+  type Placement = typings.popperjsCore.libEnumsMod.Placement
   
-  type State = typings.popperjsCore.typesMod.State
+  type State = typings.popperjsCore.libTypesMod.State
   
   /* Inlined std.Omit<react-overlays.react-overlays/esm/usePopper.Options, 'modifiers' | 'placement' | 'strategy'> & {  enabled :boolean | undefined,   placement :react-overlays.react-overlays/esm/usePopper.Options['placement'] | undefined,   strategy :react-overlays.react-overlays/esm/usePopper.Options['strategy'] | undefined,   modifiers :react-overlays.react-overlays/esm/usePopper.Options['modifiers'] | undefined} */
   trait UsePopperOptions extends StObject {
@@ -217,7 +225,7 @@ object esmUsePopperMod {
     
     var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
     
-    var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
+    var placement: js.UndefOr[typings.popperjsCore.libEnumsMod.Placement] = js.undefined
     
     var strategy: js.UndefOr[PositioningStrategy] = js.undefined
   }
@@ -244,7 +252,7 @@ object esmUsePopperMod {
       
       inline def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
       
-      inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: typings.popperjsCore.libEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
@@ -299,5 +307,5 @@ object esmUsePopperMod {
     }
   }
   
-  type VirtualElement = typings.popperjsCore.typesMod.VirtualElement
+  type VirtualElement = typings.popperjsCore.libTypesMod.VirtualElement
 }

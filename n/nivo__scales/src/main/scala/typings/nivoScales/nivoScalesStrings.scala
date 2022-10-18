@@ -1,21 +1,16 @@
 package typings.nivoScales
 
-import typings.nivoScales.timeHelpersMod.TIME_PRECISION
-import typings.nivoScales.typesMod.AnyScale
-import typings.nivoScales.typesMod.OtherScaleAxis
-import typings.nivoScales.typesMod.Scale
-import typings.nivoScales.typesMod.ScaleAxis
-import typings.nivoScales.typesMod.ScaleSpec
-import typings.nivoScales.typesMod.ScaleType
+import typings.nivoScales.distTypesTimeHelpersMod.TIME_PRECISION
+import typings.nivoScales.distTypesTypesMod.AnyScale
+import typings.nivoScales.distTypesTypesMod.Scale
+import typings.nivoScales.distTypesTypesMod.ScaleAxis
+import typings.nivoScales.distTypesTypesMod.ScaleSpec
+import typings.nivoScales.distTypesTypesMod.ScaleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoScalesStrings {
-  
-  @js.native
-  sealed trait StackedXY extends StObject
-  inline def StackedXY: StackedXY = "StackedXY".asInstanceOf[StackedXY]
   
   @js.native
   sealed trait auto extends StObject
@@ -184,14 +179,12 @@ object nivoScalesStrings {
   @js.native
   sealed trait x
     extends StObject
-       with OtherScaleAxis[Any]
        with ScaleAxis
   inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y
     extends StObject
-       with OtherScaleAxis[Any]
        with ScaleAxis
   inline def y: y = "y".asInstanceOf[y]
   

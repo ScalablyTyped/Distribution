@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput extends StObje
   
   /** Required. Input only. The diagnostic info output for the turn. Required to calculate the testing coverage. */
   var diagnosticInfo: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Output only. If this is part of a result conversation turn, the list of differences between the original run and the replay for this output, if any. */
@@ -22,9 +19,7 @@ trait GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput extends StObje
   
   /** The session parameters available to the bot at this point. */
   var sessionParameters: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Response error from the agent in the test result. If set, other output is empty. */
@@ -50,9 +45,7 @@ object GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput {
     inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
     inline def setDiagnosticInfo(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
@@ -64,9 +57,7 @@ object GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput {
     inline def setDifferencesVarargs(value: GoogleCloudDialogflowCxV3TestRunDifference*): Self = StObject.set(x, "differences", js.Array(value*))
     
     inline def setSessionParameters(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3ConversationTurnVirtualAgentOutput & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "sessionParameters", value.asInstanceOf[js.Any])
     
     inline def setSessionParametersUndefined: Self = StObject.set(x, "sessionParameters", js.undefined)

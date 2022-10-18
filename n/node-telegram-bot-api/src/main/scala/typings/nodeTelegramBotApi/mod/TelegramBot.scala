@@ -25,11 +25,14 @@ import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.error
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.inline_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.message
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.my_chat_member
+import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.png_sticker
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.poll_answer
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.polling_error
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.pre_checkout_query
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.shipping_query
+import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.tgs_sticker
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.webhook_error
+import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.webm_sticker
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -62,6 +65,106 @@ trait TelegramBot extends EventEmitter {
   def addListener_precheckoutquery(event: pre_checkout_query, listener: js.Function1[/* query */ PreCheckoutQuery, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
+  
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: String,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: String,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: Unit,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: String,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: AddStickerToSetOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: String,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: AddStickerToSetOptions,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Buffer,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Buffer,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: Unit,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Buffer,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: AddStickerToSetOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Buffer,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: AddStickerToSetOptions,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Stream,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Stream,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: Unit,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Stream,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: AddStickerToSetOptions
+  ): js.Promise[Boolean] = js.native
+  def addStickerToSet(
+    userId: String,
+    name: String,
+    sticker: Stream,
+    emojis: String,
+    stickerType: png_sticker | tgs_sticker | webm_sticker,
+    options: AddStickerToSetOptions,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
   
   /**
     * @deprecated since version 0.30.0
@@ -150,6 +253,88 @@ trait TelegramBot extends EventEmitter {
   def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Double, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
   def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Unit, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
   
+  def createNewStickerSet(userId: String, name: String, title: String, pngSticker: String, emojis: String): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: String,
+    emojis: String,
+    options: Unit,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: String,
+    emojis: String,
+    options: CreateStickerSetOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: String,
+    emojis: String,
+    options: CreateStickerSetOptions,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(userId: String, name: String, title: String, pngSticker: Buffer, emojis: String): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: Buffer,
+    emojis: String,
+    options: Unit,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: Buffer,
+    emojis: String,
+    options: CreateStickerSetOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: Buffer,
+    emojis: String,
+    options: CreateStickerSetOptions,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(userId: String, name: String, title: String, pngSticker: Stream, emojis: String): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: Stream,
+    emojis: String,
+    options: Unit,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: Stream,
+    emojis: String,
+    options: CreateStickerSetOptions
+  ): js.Promise[Boolean] = js.native
+  def createNewStickerSet(
+    userId: String,
+    name: String,
+    title: String,
+    pngSticker: Stream,
+    emojis: String,
+    options: CreateStickerSetOptions,
+    fileOptions: FileOptions
+  ): js.Promise[Boolean] = js.native
+  
   def declineChatJoinRequest(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
   def declineChatJoinRequest(chatId: ChatId, userId: String, form: js.Object): js.Promise[Boolean] = js.native
   
@@ -159,6 +344,9 @@ trait TelegramBot extends EventEmitter {
   
   def deleteMessage(chatId: ChatId, messageId: String): js.Promise[Boolean] = js.native
   def deleteMessage(chatId: ChatId, messageId: String, options: Any): js.Promise[Boolean] = js.native
+  
+  def deleteStickerFromSet(sticker: String): js.Promise[Boolean] = js.native
+  def deleteStickerFromSet(sticker: String, options: js.Object): js.Promise[Boolean] = js.native
   
   def deleteWebHook(): js.Promise[Boolean] = js.native
   
@@ -268,6 +456,9 @@ trait TelegramBot extends EventEmitter {
   
   def getChatMenuButton(form: `0`): js.Promise[MenuButton] = js.native
   
+  def getCustomEmojiStickers(customEmojiIds: js.Array[String]): js.Promise[js.Array[Sticker]] = js.native
+  def getCustomEmojiStickers(customEmojiIds: js.Array[String], options: js.Object): js.Promise[js.Array[Sticker]] = js.native
+  
   def getFile(fileId: String): js.Promise[File] = js.native
   
   def getFileLink(fileId: String): js.Promise[String] = js.native
@@ -285,6 +476,9 @@ trait TelegramBot extends EventEmitter {
   def getMyCommands(scope: BotCommandScope, language_code: String): js.Promise[js.Array[BotCommand]] = js.native
   
   def getMyDefaultAdministratorRights(form: `1`): js.Promise[ChatAdministratorRights] = js.native
+  
+  def getStickerSet(name: String): js.Promise[StickerSet] = js.native
+  def getStickerSet(name: String, options: js.Object): js.Promise[StickerSet] = js.native
   
   def getUpdates(): js.Promise[js.Array[Update]] = js.native
   def getUpdates(options: GetUpdatesOptions): js.Promise[js.Array[Update]] = js.native
@@ -679,6 +873,21 @@ trait TelegramBot extends EventEmitter {
   
   def setMyDefaultAdministratorRights(form: Forchannels): js.Promise[Boolean] = js.native
   
+  def setStickerPositionInSet(sticker: String, position: Double): js.Promise[Boolean] = js.native
+  
+  def setStickerSetThumb(userId: String, name: String, pngThumb: String): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: String, options: js.Object): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: String, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: String, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer, options: js.Object): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream, options: js.Object): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  
   def setWebHook(url: String): js.Promise[Any] = js.native
   def setWebHook(url: String, options: Unit, fileOptions: FileOptions): js.Promise[Any] = js.native
   def setWebHook(url: String, options: SetWebHookOptions): js.Promise[Any] = js.native
@@ -707,4 +916,17 @@ trait TelegramBot extends EventEmitter {
   
   def unpinChatMessage(chatId: ChatId): js.Promise[Boolean] = js.native
   def unpinChatMessage(chatId: ChatId, messageId: Double): js.Promise[Boolean] = js.native
+  
+  def uploadStickerFile(userId: String, pngSticker: String): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: String, options: js.Object): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: String, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: String, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Buffer): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Buffer, options: js.Object): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Stream): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Stream, options: js.Object): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: String, pngSticker: Stream, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
 }

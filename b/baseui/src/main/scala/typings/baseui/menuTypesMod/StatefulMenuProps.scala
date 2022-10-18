@@ -1,7 +1,7 @@
 package typings.baseui.menuTypesMod
 
 import typings.baseui.anon.PartialStatefulContainerS
-import typings.baseui.anon.`17`
+import typings.baseui.anon.`14`
 import typings.baseui.baseuiStrings.character
 import typings.baseui.baseuiStrings.click
 import typings.baseui.baseuiStrings.enter_
@@ -20,14 +20,14 @@ trait StatefulMenuProps
   extends StObject
      with MenuProps {
   
-  var addMenuToNesting: js.UndefOr[js.Function1[/* ref */ `17`, Unit]] = js.undefined
+  var addMenuToNesting: js.UndefOr[js.Function1[/* ref */ `14`, Unit]] = js.undefined
   
   /** Child as function pattern. */
   var children: js.UndefOr[js.Function1[/* a */ RenderProps, ReactNode]] = js.undefined
   
-  var getChildMenu: js.UndefOr[js.Function1[/* ref */ `17`, js.UndefOr[`17` | Null]]] = js.undefined
+  var getChildMenu: js.UndefOr[js.Function1[/* ref */ `14`, js.UndefOr[`14` | Null]]] = js.undefined
   
-  var getParentMenu: js.UndefOr[js.Function1[/* ref */ `17`, js.UndefOr[`17` | Null]]] = js.undefined
+  var getParentMenu: js.UndefOr[js.Function1[/* ref */ `14`, js.UndefOr[`14` | Null]]] = js.undefined
   
   /** Function to get props for each rendered item. This will have some defaults needed for keyboard
     * bindings to work properly. Every rendered item should call this.
@@ -37,7 +37,7 @@ trait StatefulMenuProps
   /** Initial state of the stateful menu. */
   var initialState: js.UndefOr[InitialState] = js.undefined
   
-  var isNestedMenuVisible: js.UndefOr[js.Function1[/* ref */ `17`, Boolean]] = js.undefined
+  var isNestedMenuVisible: js.UndefOr[js.Function1[/* ref */ `14`, Boolean]] = js.undefined
   
   /** List of menu items. */
   var items: Items
@@ -49,7 +49,7 @@ trait StatefulMenuProps
   /** Callback executed on menu item clicks. */
   var onItemSelect: js.UndefOr[OnItemSelectFn] = js.undefined
   
-  var removeMenuFromNesting: js.UndefOr[js.Function1[/* ref */ `17`, Unit]] = js.undefined
+  var removeMenuFromNesting: js.UndefOr[js.Function1[/* ref */ `14`, Unit]] = js.undefined
   
   /** Ref for the menu container element. Used to capture key events for navigation */
   var rootRef: js.UndefOr[RootRef] = js.undefined
@@ -69,7 +69,7 @@ object StatefulMenuProps {
   
   extension [Self <: StatefulMenuProps](x: Self) {
     
-    inline def setAddMenuToNesting(value: /* ref */ `17` => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction1(value))
+    inline def setAddMenuToNesting(value: /* ref */ `14` => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction1(value))
     
     inline def setAddMenuToNestingUndefined: Self = StObject.set(x, "addMenuToNesting", js.undefined)
     
@@ -77,11 +77,11 @@ object StatefulMenuProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setGetChildMenu(value: /* ref */ `17` => js.UndefOr[`17` | Null]): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
+    inline def setGetChildMenu(value: /* ref */ `14` => js.UndefOr[`14` | Null]): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
     
     inline def setGetChildMenuUndefined: Self = StObject.set(x, "getChildMenu", js.undefined)
     
-    inline def setGetParentMenu(value: /* ref */ `17` => js.UndefOr[`17` | Null]): Self = StObject.set(x, "getParentMenu", js.Any.fromFunction1(value))
+    inline def setGetParentMenu(value: /* ref */ `14` => js.UndefOr[`14` | Null]): Self = StObject.set(x, "getParentMenu", js.Any.fromFunction1(value))
     
     inline def setGetParentMenuUndefined: Self = StObject.set(x, "getParentMenu", js.undefined)
     
@@ -93,7 +93,7 @@ object StatefulMenuProps {
     
     inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    inline def setIsNestedMenuVisible(value: /* ref */ `17` => Boolean): Self = StObject.set(x, "isNestedMenuVisible", js.Any.fromFunction1(value))
+    inline def setIsNestedMenuVisible(value: /* ref */ `14` => Boolean): Self = StObject.set(x, "isNestedMenuVisible", js.Any.fromFunction1(value))
     
     inline def setIsNestedMenuVisibleUndefined: Self = StObject.set(x, "isNestedMenuVisible", js.undefined)
     
@@ -113,7 +113,7 @@ object StatefulMenuProps {
     
     inline def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
     
-    inline def setRemoveMenuFromNesting(value: /* ref */ `17` => Unit): Self = StObject.set(x, "removeMenuFromNesting", js.Any.fromFunction1(value))
+    inline def setRemoveMenuFromNesting(value: /* ref */ `14` => Unit): Self = StObject.set(x, "removeMenuFromNesting", js.Any.fromFunction1(value))
     
     inline def setRemoveMenuFromNestingUndefined: Self = StObject.set(x, "removeMenuFromNesting", js.undefined)
     

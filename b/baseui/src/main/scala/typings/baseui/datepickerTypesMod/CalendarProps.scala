@@ -2,11 +2,11 @@ package typings.baseui.datepickerTypesMod
 
 import typings.baseui.anon.DateT
 import typings.baseui.anon.DateTEventEvent
-import typings.baseui.anon.`5`
+import typings.baseui.anon.`2`
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
 import typings.baseui.datepickerStatefulContainerMod.InputProps
-import typings.baseui.utilsTypesMod.DateIOAdapter
+import typings.baseui.datepickerUtilsTypesMod.DateIOAdapter
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -57,7 +57,7 @@ trait CalendarProps[T]
   var monthsShown: js.UndefOr[Double] = js.undefined
   
   /** Event handler that is called when a new date is selected. */
-  var onChange: js.UndefOr[js.Function1[/* a */ `5`[T], Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* a */ `2`[T], Any]] = js.undefined
   
   /** Day's `click` event handler. */
   var onDayClick: js.UndefOr[js.Function1[/* a */ DateTEventEvent[T], Any]] = js.undefined
@@ -197,7 +197,7 @@ object CalendarProps {
     
     inline def setMonthsShownUndefined: Self = StObject.set(x, "monthsShown", js.undefined)
     
-    inline def setOnChange(value: /* a */ `5`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* a */ `2`[T] => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

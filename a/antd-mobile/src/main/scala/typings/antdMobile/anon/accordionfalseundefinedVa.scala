@@ -41,7 +41,7 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
-import typings.antdMobile.collapseCollapseMod.CollapseProps
+import typings.antdMobile.esComponentsCollapseCollapseMod.CollapseProps
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode

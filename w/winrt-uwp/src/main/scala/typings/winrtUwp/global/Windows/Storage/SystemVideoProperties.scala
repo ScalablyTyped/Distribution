@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for video file properties. */
-@JSGlobal("Windows.Storage.SystemVideoProperties")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SystemVideoProperties")
 @js.native
-abstract class SystemVideoProperties ()
+open class SystemVideoProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SystemVideoProperties {
   

@@ -1,9 +1,9 @@
 package typings.xummSdk.anon
 
 import typings.std.Record
-import typings.xummSdk.xummApiMod.XrplTransactionType
-import typings.xummSdk.xummApiMod.XummJsonTransaction
-import typings.xummSdk.xummApiMod.XummTransactionType
+import typings.xummSdk.distSrcTypesXummApiMod.XrplTransactionType
+import typings.xummSdk.distSrcTypesXummApiMod.XummJsonTransaction
+import typings.xummSdk.distSrcTypesXummApiMod.XummTransactionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

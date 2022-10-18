@@ -1,6 +1,6 @@
 package typings.awsSdkLogger
 
-import typings.awsSdkTypes.loggerMod.LoggerOptions
+import typings.awsSdkTypes.distTypesLoggerMod.LoggerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object mod {
   @js.native
   open class Logger protected ()
     extends StObject
-       with typings.awsSdkTypes.loggerMod.Logger {
+       with typings.awsSdkTypes.distTypesLoggerMod.Logger {
     def this(options: LoggerOptions) = this()
     
     /* CompleteClass */

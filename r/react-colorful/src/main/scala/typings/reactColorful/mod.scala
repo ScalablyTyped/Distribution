@@ -8,7 +8,7 @@ import typings.reactColorful.anon.PartialColorPickerBaseProAriaactivedescendant
 import typings.reactColorful.anon.PartialColorPickerBaseProAriaatomic
 import typings.reactColorful.anon.PartialColorPickerBaseProAriaautocomplete
 import typings.reactColorful.anon.PartialColorPickerBaseProAriabusy
-import typings.reactColorful.hexColorInputMod.HexColorInputProps
+import typings.reactColorful.distComponentsHexColorInputMod.HexColorInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

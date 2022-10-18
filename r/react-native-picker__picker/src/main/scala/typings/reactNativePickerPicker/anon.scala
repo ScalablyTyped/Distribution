@@ -1,6 +1,6 @@
 package typings.reactNativePickerPicker
 
-import typings.reactNativePickerPicker.pickerMod.ItemValue
+import typings.reactNativePickerPicker.typingsPickerMod.ItemValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

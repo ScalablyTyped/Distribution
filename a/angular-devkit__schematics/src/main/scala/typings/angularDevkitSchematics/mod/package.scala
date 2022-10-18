@@ -1,27 +1,31 @@
 package typings.angularDevkitSchematics.mod
 
-import typings.angularDevkitSchematics.actionMod.Action
 import typings.angularDevkitSchematics.anon.PartialExecutionOptions
-import typings.angularDevkitSchematics.interfaceMod.FileOperator
-import typings.angularDevkitSchematics.interfaceMod.Rule
-import typings.angularDevkitSchematics.interfaceMod.SchematicContext
-import typings.angularDevkitSchematics.interfaceMod.Source
 import typings.angularDevkitSchematics.mod.^
-import typings.angularDevkitSchematics.templateMod.PathTemplateData
-import typings.angularDevkitSchematics.templateMod.PathTemplateOptions
-import typings.angularDevkitSchematics.treeInterfaceMod.FilePredicate
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.FileOperator
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.Rule
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.SchematicContext
+import typings.angularDevkitSchematics.srcEngineInterfaceMod.Source
+import typings.angularDevkitSchematics.srcRulesRandomMod.RandomOptions
+import typings.angularDevkitSchematics.srcRulesTemplateMod.PathTemplateData
+import typings.angularDevkitSchematics.srcRulesTemplateMod.PathTemplateOptions
+import typings.angularDevkitSchematics.srcTreeActionMod.Action
+import typings.angularDevkitSchematics.srcTreeInterfaceMod.FilePredicate
+import typings.rxjs.mod.Observable_
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+inline def default(options: RandomOptions): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Source]
+
 inline def FileVisitorCancelToken: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("FileVisitorCancelToken").asInstanceOf[js.Symbol]
 
 inline def TEMPLATE_FILENAME_RE: js.RegExp = ^.asInstanceOf[js.Dynamic].selectDynamic("TEMPLATE_FILENAME_RE").asInstanceOf[js.RegExp]
 
 inline def Tree: TreeConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Tree").asInstanceOf[TreeConstructor]
-type Tree = typings.angularDevkitSchematics.treeInterfaceMod.Tree
+type Tree = typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree
 
 inline def TreeSymbol: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeSymbol").asInstanceOf[js.Symbol]
 
@@ -39,20 +43,20 @@ inline def applyToSubtree(path: String, rules: js.Array[Rule]): Rule = (^.asInst
 inline def asSource(rule: Rule): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("asSource")(rule.asInstanceOf[js.Any]).asInstanceOf[Source]
 
 inline def branchAndMerge(rule: Rule): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("branchAndMerge")(rule.asInstanceOf[js.Any]).asInstanceOf[Rule]
-inline def branchAndMerge(rule: Rule, strategy: typings.angularDevkitSchematics.treeInterfaceMod.MergeStrategy): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("branchAndMerge")(rule.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Rule]
+inline def branchAndMerge(rule: Rule, strategy: typings.angularDevkitSchematics.srcTreeInterfaceMod.MergeStrategy): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("branchAndMerge")(rule.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Rule]
 
 inline def callRule(
   rule: Rule,
-  input: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<Tree> */ Any,
+  input: typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree,
   context: SchematicContext
-): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("callRule")(rule.asInstanceOf[js.Any], input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+): Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("callRule")(rule.asInstanceOf[js.Any], input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree]]
 inline def callRule(
   rule: Rule,
-  input: typings.angularDevkitSchematics.treeInterfaceMod.Tree,
+  input: Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree],
   context: SchematicContext
-): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("callRule")(rule.asInstanceOf[js.Any], input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+): Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("callRule")(rule.asInstanceOf[js.Any], input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree]]
 
-inline def callSource(source: Source, context: SchematicContext): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("callSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def callSource(source: Source, context: SchematicContext): Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("callSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Observable_[typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree]]
 
 inline def chain(rules: js.Iterable[Rule]): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(rules.asInstanceOf[js.Any]).asInstanceOf[Rule]
 inline def chain(rules: AsyncIterable[Rule]): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(rules.asInstanceOf[js.Any]).asInstanceOf[Rule]
@@ -78,7 +82,7 @@ inline def forEach(operator: FileOperator): Rule = ^.asInstanceOf[js.Dynamic].ap
 inline def isContentAction(action: Action): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContentAction")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def mergeWith(source: Source): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeWith")(source.asInstanceOf[js.Any]).asInstanceOf[Rule]
-inline def mergeWith(source: Source, strategy: typings.angularDevkitSchematics.treeInterfaceMod.MergeStrategy): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeWith")(source.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Rule]
+inline def mergeWith(source: Source, strategy: typings.angularDevkitSchematics.srcTreeInterfaceMod.MergeStrategy): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeWith")(source.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Rule]
 
 inline def move(from: String): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(from.asInstanceOf[js.Any]).asInstanceOf[Rule]
 inline def move(from: String, to: String): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Rule]
@@ -95,7 +99,7 @@ inline def renameTemplateFiles(): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic
 inline def schematic[OptionT /* <: js.Object */](schematicName: String, options: OptionT): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("schematic")(schematicName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rule]
 inline def schematic[OptionT /* <: js.Object */](schematicName: String, options: OptionT, executionOptions: PartialExecutionOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("schematic")(schematicName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], executionOptions.asInstanceOf[js.Any])).asInstanceOf[Rule]
 
-inline def source(tree: typings.angularDevkitSchematics.treeInterfaceMod.Tree): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(tree.asInstanceOf[js.Any]).asInstanceOf[Source]
+inline def source(tree: typings.angularDevkitSchematics.srcTreeInterfaceMod.Tree): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("source")(tree.asInstanceOf[js.Any]).asInstanceOf[Source]
 
 inline def template[T /* <: js.Object */](options: T): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
 

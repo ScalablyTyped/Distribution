@@ -1,9 +1,9 @@
 package typings.makerjs.global.MakerJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.danmarshallJscadTypings.mod.CAG
-import typings.danmarshallJscadTypings.mod.CSG
-import typings.danmarshallJscadTypings.stlSerializerMod.StlSerializer
+import typings.danmarshallJscadTypings.typesMod.CAG
+import typings.danmarshallJscadTypings.typesMod.CSG
+import typings.danmarshallJscadTypings.typesStlSerializerMod.StlSerializer
 import typings.makerjs.MakerJs.IChain
 import typings.makerjs.MakerJs.IModel
 import typings.makerjs.MakerJs.IPath

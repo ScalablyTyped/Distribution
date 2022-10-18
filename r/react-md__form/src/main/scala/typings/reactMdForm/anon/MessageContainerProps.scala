@@ -1,6 +1,6 @@
 package typings.reactMdForm.anon
 
-import typings.reactMdForm.formMessageContainerMod.MessageProps
+import typings.reactMdForm.typesFormMessageContainerMod.MessageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait MessageContainerProps extends StObject {
     * Note: This will not be used if the `messageProps` are not provided since
     * only the `children` will be returned without the container.
     */
-  var messageContainerProps: js.UndefOr[typings.reactMdForm.formMessageContainerMod.MessageContainerProps] = js.undefined
+  var messageContainerProps: js.UndefOr[typings.reactMdForm.typesFormMessageContainerMod.MessageContainerProps] = js.undefined
   
   /**
     * If the extension doesn't actually want to render the `FormMessage`
@@ -32,7 +32,7 @@ object MessageContainerProps {
   
   extension [Self <: MessageContainerProps](x: Self) {
     
-    inline def setMessageContainerProps(value: typings.reactMdForm.formMessageContainerMod.MessageContainerProps): Self = StObject.set(x, "messageContainerProps", value.asInstanceOf[js.Any])
+    inline def setMessageContainerProps(value: typings.reactMdForm.typesFormMessageContainerMod.MessageContainerProps): Self = StObject.set(x, "messageContainerProps", value.asInstanceOf[js.Any])
     
     inline def setMessageContainerPropsUndefined: Self = StObject.set(x, "messageContainerProps", js.undefined)
     

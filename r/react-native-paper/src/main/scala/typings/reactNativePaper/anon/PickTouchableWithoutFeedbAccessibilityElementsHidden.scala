@@ -1,6 +1,5 @@
 package typings.reactNativePaper.anon
 
-import typings.callstackReactThemeProvider.mod.DeepPartial
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
@@ -12,11 +11,14 @@ import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TargetedEvent
+import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.TouchableWithoutFeedback
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativePaper.reactNativePaperStrings.`no-hide-descendants`
+import typings.reactNativePaper.reactNativePaperStrings.ascending
 import typings.reactNativePaper.reactNativePaperStrings.assertive
 import typings.reactNativePaper.reactNativePaperStrings.auto
+import typings.reactNativePaper.reactNativePaperStrings.descending
 import typings.reactNativePaper.reactNativePaperStrings.no
 import typings.reactNativePaper.reactNativePaperStrings.none
 import typings.reactNativePaper.reactNativePaperStrings.polite
@@ -25,7 +27,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<react-native.react-native.TouchableWithoutFeedbackProps & react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback> & {  borderless :boolean | undefined,   background :std.Object | undefined,   centered :boolean | undefined,   disabled :boolean | undefined,   onPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   onLongPress :(e : react-native.react-native.GestureResponderEvent): void | undefined,   rippleColor :string | undefined,   underlayColor :string | undefined,   children :react.react.ReactNode,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, keyof react-native.react-native.TouchableWithoutFeedbackProps | 'background' | 'borderless' | 'rippleColor' | 'underlayColor' | 'centered' | keyof react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback>> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
+/* Inlined std.Pick<react-native.react-native.TouchableWithoutFeedbackProps & react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback> & {  children :react.react.ReactNode,   numeric :boolean | undefined,   sortDirection :'ascending' | 'descending' | undefined,   numberOfLines :number | undefined,   onPress :(): void | undefined,   style :react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined,   textStyle :react-native.react-native.StyleProp<react-native.react-native.TextStyle> | undefined,   theme :react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme}, 'numberOfLines' | keyof react-native.react-native.TouchableWithoutFeedbackProps | keyof react.react.RefAttributes<react-native.react-native.TouchableWithoutFeedback> | 'numeric' | 'textStyle' | 'sortDirection'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
 trait PickTouchableWithoutFeedbAccessibilityElementsHidden extends StObject {
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
@@ -54,12 +56,6 @@ trait PickTouchableWithoutFeedbAccessibilityElementsHidden extends StObject {
   
   var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[js.Object] = js.undefined
-  
-  var borderless: js.UndefOr[Boolean] = js.undefined
-  
-  var centered: js.UndefOr[Boolean] = js.undefined
-  
   var children: js.UndefOr[ReactNode] = js.undefined
   
   var delayLongPress: js.UndefOr[Double] = js.undefined
@@ -75,6 +71,10 @@ trait PickTouchableWithoutFeedbAccessibilityElementsHidden extends StObject {
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
   var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
+  
+  var numberOfLines: js.UndefOr[Double] = js.undefined
+  
+  var numeric: js.UndefOr[Boolean] = js.undefined
   
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
@@ -102,19 +102,17 @@ trait PickTouchableWithoutFeedbAccessibilityElementsHidden extends StObject {
   
   var ref: js.UndefOr[typings.react.mod.Ref[TouchableWithoutFeedback]] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.undefined
+  var sortDirection: js.UndefOr[ascending | descending] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[
-    DeepPartial[typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme]
-  ] = js.undefined
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  
+  var theme: js.UndefOr[DeepPartialThemeDark] = js.undefined
   
   var touchSoundDisabled: js.UndefOr[Boolean] = js.undefined
-  
-  var underlayColor: js.UndefOr[String] = js.undefined
 }
 object PickTouchableWithoutFeedbAccessibilityElementsHidden {
   
@@ -181,18 +179,6 @@ object PickTouchableWithoutFeedbAccessibilityElementsHidden {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setBackground(value: js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
-    
-    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
-    
-    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
-    
-    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
-    
-    inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
-    
-    inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
-    
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -226,6 +212,14 @@ object PickTouchableWithoutFeedbAccessibilityElementsHidden {
     inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
+    
+    inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
     inline def setOnAccessibilityAction(value: /* event */ AccessibilityActionEvent => Unit): Self = StObject.set(x, "onAccessibilityAction", js.Any.fromFunction1(value))
     
@@ -283,9 +277,9 @@ object PickTouchableWithoutFeedbAccessibilityElementsHidden {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: ascending | descending): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -297,16 +291,18 @@ object PickTouchableWithoutFeedbAccessibilityElementsHidden {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: DeepPartial[typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    
+    inline def setTheme(value: DeepPartialThemeDark): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     
     inline def setTouchSoundDisabledUndefined: Self = StObject.set(x, "touchSoundDisabled", js.undefined)
-    
-    inline def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
-    
-    inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
   }
 }

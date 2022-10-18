@@ -1,6 +1,6 @@
 package typings.reactNativeElements.anon
 
-import typings.reactNativeElements.searchBarIosMod.SearchBarIosProps
+import typings.reactNativeElements.distSearchbarSearchBarIosMod.SearchBarIosProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait PartialThemePropsSearchBaTheme extends StObject {
   
   var replaceTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullTheme, Unit]] = js.undefined
   
-  var theme: js.UndefOr[typings.reactNativeElements.themeMod.Theme[SearchBarIosProps]] = js.undefined
+  var theme: js.UndefOr[typings.reactNativeElements.distConfigThemeMod.Theme[SearchBarIosProps]] = js.undefined
   
   var updateTheme: js.UndefOr[js.Function1[/* updates */ RecursivePartialFullTheme, Unit]] = js.undefined
 }
@@ -27,7 +27,7 @@ object PartialThemePropsSearchBaTheme {
     
     inline def setReplaceThemeUndefined: Self = StObject.set(x, "replaceTheme", js.undefined)
     
-    inline def setTheme(value: typings.reactNativeElements.themeMod.Theme[SearchBarIosProps]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativeElements.distConfigThemeMod.Theme[SearchBarIosProps]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

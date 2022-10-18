@@ -1,6 +1,6 @@
 package typings.semanticUiReact.mod
 
-import typings.semanticUiReact.paginationMod.default
+import typings.semanticUiReact.distCommonjsAddonsPaginationMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,5 +14,5 @@ object Pagination {
   @JSImport("semantic-ui-react", "Pagination.Item")
   @js.native
   open class Item ()
-    extends typings.semanticUiReact.paginationMod.default.Item
+    extends typings.semanticUiReact.distCommonjsAddonsPaginationMod.default.Item
 }

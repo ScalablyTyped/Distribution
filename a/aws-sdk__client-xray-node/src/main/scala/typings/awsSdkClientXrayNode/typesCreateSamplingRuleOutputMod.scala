@@ -1,8 +1,8 @@
 package typings.awsSdkClientXrayNode
 
-import typings.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkClientXrayNode.typesOutputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientXrayNode.typesSamplingRuleRecordMod.UnmarshalledSamplingRuleRecord
-import typings.awsSdkTypes.responseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -26,20 +26,19 @@ import typings.reactIntl.anon.DateTimeFormatOptionsCust
 import typings.reactIntl.anon.DisplayNamesOptionsvalues
 import typings.reactIntl.anon.FormatDateOptionsvaluePar
 import typings.reactIntl.anon.IntlListFormatOptionsvalu
-import typings.reactIntl.anon.NumberFormatOptionsCustom
+import typings.reactIntl.anon.OmitNumberFormatOptionslo
 import typings.reactIntl.anon.PartialState
 import typings.reactIntl.anon.PickResolvedIntlConfigonE
 import typings.reactIntl.anon.ReadonlyIntlConfig
 import typings.reactIntl.anon.Value
 import typings.reactIntl.anon.WrappedComponent
-import typings.reactIntl.componentsDateTimeRangeMod.Props
-import typings.reactIntl.componentsInjectIntlMod.Opts
-import typings.reactIntl.componentsInjectIntlMod.WithIntlProps
-import typings.reactIntl.componentsInjectIntlMod.WrappedComponentProps
-import typings.reactIntl.componentsProviderMod.State
-import typings.reactIntl.componentsProviderMod.default
-import typings.reactIntl.reactIntlBooleans.`false`
 import typings.reactIntl.reactIntlBooleans.`true`
+import typings.reactIntl.srcComponentsDateTimeRangeMod.Props
+import typings.reactIntl.srcComponentsInjectIntlMod.Opts
+import typings.reactIntl.srcComponentsInjectIntlMod.WithIntlProps
+import typings.reactIntl.srcComponentsInjectIntlMod.WrappedComponentProps
+import typings.reactIntl.srcComponentsProviderMod.State
+import typings.reactIntl.srcComponentsProviderMod.default
 import typings.reactIntl.srcTypesMod.IntlConfig
 import typings.reactIntl.srcTypesMod.IntlShape
 import typings.std.Record
@@ -75,12 +74,12 @@ object mod {
   
   @JSImport("react-intl", "FormattedListParts")
   @js.native
-  val FormattedListParts: FC[FormatListOptions & Value] = js.native
+  val FormattedListParts: FC[FormatListOptions & Children] = js.native
   
   @JSImport("react-intl", "FormattedMessage")
   @js.native
   val FormattedMessage: NamedExoticComponent[
-    typings.reactIntl.componentsMessageMod.Props[
+    typings.reactIntl.srcComponentsMessageMod.Props[
       Record[
         String, 
         js.UndefOr[
@@ -92,19 +91,19 @@ object mod {
   
   @JSImport("react-intl", "FormattedNumber")
   @js.native
-  val FormattedNumber: FC[NumberFormatOptionsCustom] = js.native
+  val FormattedNumber: FC[OmitNumberFormatOptionslo] = js.native
   
   @JSImport("react-intl", "FormattedNumberParts")
   @js.native
-  val FormattedNumberParts: FC[FormatNumberOptions & Children] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
   
   @JSImport("react-intl", "FormattedPlural")
   @js.native
-  val FormattedPlural: FC[typings.reactIntl.componentsPluralMod.Props] = js.native
+  val FormattedPlural: FC[typings.reactIntl.srcComponentsPluralMod.Props] = js.native
   
   @JSImport("react-intl", "FormattedRelativeTime")
   @js.native
-  val FormattedRelativeTime: FC[typings.reactIntl.componentsRelativeMod.Props] = js.native
+  val FormattedRelativeTime: FC[typings.reactIntl.srcComponentsRelativeMod.Props] = js.native
   
   @JSImport("react-intl", "FormattedTime")
   @js.native
@@ -227,11 +226,7 @@ object mod {
   
   inline def defineMessages[K /* <: /* keyof any */ String */, T, U /* <: Record[K, T] */](msgs: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("defineMessages")(msgs.asInstanceOf[js.Any]).asInstanceOf[U]
   
-  inline def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P]): FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName])]
-  
-  inline def injectIntl_IntlPropName_StringP_WrappedComponentPropsIntlPropNameT_ComponentTypeP[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
-  
-  inline def injectIntl_false[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `false`]): FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FC[WithIntlProps[P]] & (WrappedComponent[P, IntlPropName])]
+  inline def injectIntl[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = ^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
   
   inline def injectIntl_true[IntlPropName /* <: String */, P /* <: WrappedComponentProps[IntlPropName] */, T /* <: ComponentType[P] */](WrappedComponent: ComponentType[P], options: Opts[IntlPropName, `true`]): (ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName]) = (^.asInstanceOf[js.Dynamic].applyDynamic("injectIntl")(WrappedComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(ForwardRefExoticComponent[PropsWithoutRef[WithIntlProps[PropsWithChildren[P]]] & RefAttributes[T]]) & (WrappedComponent[P, IntlPropName])]
   

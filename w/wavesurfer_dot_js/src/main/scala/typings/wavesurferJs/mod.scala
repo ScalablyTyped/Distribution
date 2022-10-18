@@ -1,9 +1,9 @@
 package typings.wavesurferJs
 
-import typings.wavesurferJs.paramsMod.WaveSurferParams
+import typings.wavesurferJs.srcWavesurferMod.WaveSurfer
+import typings.wavesurferJs.srcWavesurferMod.default
+import typings.wavesurferJs.typesParamsMod.WaveSurferParams
 import typings.wavesurferJs.typesUtilMod.WaveSurferUtil
-import typings.wavesurferJs.wavesurferMod.WaveSurfer
-import typings.wavesurferJs.wavesurferMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

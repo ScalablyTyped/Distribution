@@ -1,7 +1,7 @@
 package typings.placemarkioCheckGeojson
 
-import typings.placemarkioCheckGeojson.enforcePositionArrayMod.PositionKind
-import typings.placemarkioCheckGeojson.forbidConfusingPropertiesMod.PropertiesFrom
+import typings.placemarkioCheckGeojson.distEnforcePositionArrayMod.PositionKind
+import typings.placemarkioCheckGeojson.distForbidConfusingPropertiesMod.PropertiesFrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

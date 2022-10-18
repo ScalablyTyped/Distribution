@@ -5,9 +5,9 @@ import typings.wordpressAdmin.anon.Attachment
 import typings.wordpressAdmin.anon.Frame
 import typings.wordpressAdmin.anon.FrameOptionsframepost
 import typings.wordpressAdmin.anon.Region
-import typings.wordpressAdmin.mediaViewsMod.FrameOptions
-import typings.wordpressAdmin.mediaViewsMod.MediaFrameSelect
-import typings.wordpressAdmin.wpBackboneMod.WpBackbone
+import typings.wordpressAdmin.componentsMediaViewsMod.FrameOptions
+import typings.wordpressAdmin.componentsMediaViewsMod.MediaFrameSelect
+import typings.wordpressAdmin.componentsWpBackboneMod.WpBackbone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object mod {
     def apply(attributes: FrameOptionsframepost): Any = js.native
     def apply(attributes: FrameOptions): MediaFrameSelect = js.native
     
-    var View: typings.wordpressAdmin.mediaViewsMod.View = js.native
+    var View: typings.wordpressAdmin.componentsMediaViewsMod.View = js.native
     
     var controller: Region = js.native
     

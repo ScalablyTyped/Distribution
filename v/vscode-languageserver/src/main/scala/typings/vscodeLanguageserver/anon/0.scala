@@ -1,9 +1,9 @@
 package typings.vscodeLanguageserver.anon
 
-import typings.vscodeJsonrpc.disposableMod.Disposable
-import typings.vscodeLanguageserver.serverMod.ServerRequestHandler
-import typings.vscodeLanguageserverProtocol.protocolMonikerMod.Moniker
-import typings.vscodeLanguageserverProtocol.protocolMonikerMod.MonikerParams
+import typings.vscodeJsonrpc.libCommonDisposableMod.Disposable
+import typings.vscodeLanguageserver.libCommonServerMod.ServerRequestHandler
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotmonikerMod.Moniker
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotmonikerMod.MonikerParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

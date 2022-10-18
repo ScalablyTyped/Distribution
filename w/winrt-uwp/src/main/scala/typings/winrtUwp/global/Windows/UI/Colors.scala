@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Implements a set of predefined colors. See Color for usage information. */
-@JSGlobal("Windows.UI.Colors")
+/* note: abstract class */ @JSGlobal("Windows.UI.Colors")
 @js.native
-abstract class Colors ()
+open class Colors ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Colors
 object Colors {

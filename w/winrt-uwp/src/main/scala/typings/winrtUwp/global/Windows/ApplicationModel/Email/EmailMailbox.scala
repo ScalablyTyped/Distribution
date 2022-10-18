@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email mailbox located on a remote email server. */
-@JSGlobal("Windows.ApplicationModel.Email.EmailMailbox")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.Email.EmailMailbox")
 @js.native
-abstract class EmailMailbox ()
+open class EmailMailbox ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailbox

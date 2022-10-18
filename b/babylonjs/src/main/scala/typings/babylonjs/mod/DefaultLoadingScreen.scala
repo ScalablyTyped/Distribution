@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "DefaultLoadingScreen")
 @js.native
 open class DefaultLoadingScreen protected ()
-  extends typings.babylonjs.legacyMod.DefaultLoadingScreen {
+  extends typings.babylonjs.legacyLegacyMod.DefaultLoadingScreen {
   /**
     * Creates a new default loading screen
     * @param _renderingCanvas defines the canvas used to render the scene

@@ -4,14 +4,14 @@ import typings.react.mod.FunctionComponent
 import typings.std.HTMLElement
 import typings.wixUiTestUtils.anon.Instantiable
 import typings.wixUiTestUtils.anon.TypeofSimulate
-import typings.wixUiTestUtils.helpersMod.ControlledComponentProps
+import typings.wixUiTestUtils.distSrcReactHelpersHelpersMod.ControlledComponentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactHelpersMod {
   
-  @JSImport("wix-ui-test-utils/dist/src/react-helpers", JSImport.Namespace)
+  @JSImport("wix-ui-test-utils/react-helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

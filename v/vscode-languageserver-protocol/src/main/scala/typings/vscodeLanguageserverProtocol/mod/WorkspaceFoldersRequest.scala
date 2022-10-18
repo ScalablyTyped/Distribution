@@ -9,7 +9,7 @@ object WorkspaceFoldersRequest {
   
   @JSImport("vscode-languageserver-protocol", "WorkspaceFoldersRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "WorkspaceFoldersRequest.method")
   @js.native
@@ -17,7 +17,7 @@ object WorkspaceFoldersRequest {
   
   @JSImport("vscode-languageserver-protocol", "WorkspaceFoldersRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType0[
     js.Array[typings.vscodeLanguageserverTypes.mod.WorkspaceFolder] | Null, 
     scala.Nothing, 
     Unit, 

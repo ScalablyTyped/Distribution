@@ -1,6 +1,6 @@
 package typings.webdriverio.anon
 
-import typings.wdioTypes.optionsMod.SupportedProtocols
+import typings.wdioTypes.buildOptionsMod.SupportedProtocols
 import typings.webdriverio.webdriverioStrings.`object`
 import typings.webdriverio.webdriverioStrings.boolean
 import typings.webdriverio.webdriverioStrings.function

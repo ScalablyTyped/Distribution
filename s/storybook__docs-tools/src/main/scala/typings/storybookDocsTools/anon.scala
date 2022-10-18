@@ -1,10 +1,10 @@
 package typings.storybookDocsTools
 
-import typings.storybookDocsTools.propDefMod.PropDef
-import typings.storybookDocsTools.typesMod.FlowArgType
-import typings.storybookDocsTools.typesMod.FlowType
-import typings.storybookDocsTools.typescriptTypesMod.TSArgType
-import typings.storybookDocsTools.typescriptTypesMod.TSType
+import typings.storybookDocsTools.distTs3Dot9ArgTypesConvertFlowTypesMod.FlowArgType
+import typings.storybookDocsTools.distTs3Dot9ArgTypesConvertFlowTypesMod.FlowType
+import typings.storybookDocsTools.distTs3Dot9ArgTypesConvertTypescriptTypesMod.TSArgType
+import typings.storybookDocsTools.distTs3Dot9ArgTypesConvertTypescriptTypesMod.TSType
+import typings.storybookDocsTools.distTs3Dot9ArgTypesDocgenPropDefMod.PropDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

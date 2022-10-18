@@ -1,6 +1,5 @@
 package typings.maplibreGl.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.maplibreGl.maplibreGlStrings.anchor
 import typings.maplibreGl.maplibreGlStrings.color
 import typings.maplibreGl.maplibreGlStrings.intensity
@@ -16,9 +15,7 @@ open class Transitionable[Props] protected () extends StObject {
   
   var _properties: Properties[Props] = js.native
   
-  var _values: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Props ]: maplibre-gl.maplibre-gl.TransitionablePropertyValue<any, unknown>}
-    */ typings.maplibreGl.maplibreGlStrings.Transitionable & TopLevel[Any] = js.native
+  var _values: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Props ]: maplibre-gl.maplibre-gl.TransitionablePropertyValue<any, unknown>} */ js.Any = js.native
   
   @JSName("getTransition")
   def getTransition_anchor(name: anchor): TransitionSpecification | scala.Unit = js.native

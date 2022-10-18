@@ -7,7 +7,7 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koa.mod.Next
-import typings.koaJoiRouter.anon.ContinueOnError
+import typings.koaJoiRouter.anon.Body
 import typings.koaJoiRouter.anon.FnCall
 import typings.koaJoiRouter.anon.TypeofJoi
 import typings.koaRouter.mod.IMiddleware
@@ -29,7 +29,7 @@ object mod extends Shortcut {
     
     var pre: js.UndefOr[Handler] = js.undefined
     
-    var validate: js.UndefOr[ContinueOnError] = js.undefined
+    var validate: js.UndefOr[Body] = js.undefined
   }
   object Config {
     
@@ -50,7 +50,7 @@ object mod extends Shortcut {
       
       inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      inline def setValidate(value: ContinueOnError): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Body): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
@@ -75,15 +75,15 @@ object mod extends Shortcut {
        with ReadonlyArray[Handler]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.koaJoiRouter.anon.Body
+    - typings.koaJoiRouter.anon.BodySchemaLike
     - typings.koaJoiRouter.anon.Headers
   */
   trait OutputValidation extends StObject
   object OutputValidation {
     
-    inline def Body(): typings.koaJoiRouter.anon.Body = {
+    inline def BodySchemaLike(): typings.koaJoiRouter.anon.BodySchemaLike = {
       val __obj = js.Dynamic.literal(body = null)
-      __obj.asInstanceOf[typings.koaJoiRouter.anon.Body]
+      __obj.asInstanceOf[typings.koaJoiRouter.anon.BodySchemaLike]
     }
     
     inline def Headers(): typings.koaJoiRouter.anon.Headers = {

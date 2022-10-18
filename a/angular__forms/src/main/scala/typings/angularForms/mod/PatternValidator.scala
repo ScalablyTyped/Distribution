@@ -75,7 +75,7 @@ object PatternValidator {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     PatternValidator, 
-    String, 
+    /* [pattern][formControlName],[pattern][formControl],[pattern][ngModel] */ String, 
     scala.Nothing, 
     Pattern, 
     js.Object, 
@@ -86,7 +86,7 @@ object PatternValidator {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       PatternValidator, 
-      String, 
+      /* [pattern][formControlName],[pattern][formControl],[pattern][ngModel] */ String, 
       scala.Nothing, 
       Pattern, 
       js.Object, 

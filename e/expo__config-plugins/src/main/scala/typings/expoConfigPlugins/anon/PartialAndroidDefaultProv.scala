@@ -1,14 +1,14 @@
 package typings.expoConfigPlugins.anon
 
-import typings.expoConfigPlugins.createBaseModMod.BaseModProviderMethods
+import typings.expoConfigPlugins.buildAndroidManifestMod.AndroidManifest
+import typings.expoConfigPlugins.buildAndroidPathsMod.ApplicationProjectFile
+import typings.expoConfigPlugins.buildAndroidPathsMod.GradleProjectFile
+import typings.expoConfigPlugins.buildAndroidPropertiesMod.PropertiesItem
+import typings.expoConfigPlugins.buildAndroidResourcesMod.ResourceXML
+import typings.expoConfigPlugins.buildPluginsCreateBaseModMod.BaseModProviderMethods
+import typings.expoConfigPlugins.buildPluginsWithModMod.BaseModOptions
 import typings.expoConfigPlugins.expoConfigPluginsStrings.saveToInternal
 import typings.expoConfigPlugins.expoConfigPluginsStrings.skipEmptyMod
-import typings.expoConfigPlugins.manifestMod.AndroidManifest
-import typings.expoConfigPlugins.pathsMod.ApplicationProjectFile
-import typings.expoConfigPlugins.pathsMod.GradleProjectFile
-import typings.expoConfigPlugins.propertiesMod.PropertiesItem
-import typings.expoConfigPlugins.resourcesMod.ResourceXML
-import typings.expoConfigPlugins.withModMod.BaseModOptions
 import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject

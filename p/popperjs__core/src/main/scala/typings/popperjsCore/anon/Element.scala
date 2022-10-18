@@ -1,8 +1,8 @@
 package typings.popperjsCore.anon
 
-import typings.popperjsCore.typesMod.ClientRectObject
-import typings.popperjsCore.typesMod.PositioningStrategy
-import typings.popperjsCore.typesMod.Rect
+import typings.popperjsCore.libTypesMod.ClientRectObject
+import typings.popperjsCore.libTypesMod.PositioningStrategy
+import typings.popperjsCore.libTypesMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait Element extends StObject {
   
   var element: Rect | ClientRectObject
   
-  var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
+  var placement: js.UndefOr[typings.popperjsCore.libEnumsMod.Placement] = js.undefined
   
   var reference: Rect | ClientRectObject
   
@@ -32,7 +32,7 @@ object Element {
     
     inline def setElement(value: Rect | ClientRectObject): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: typings.popperjsCore.libEnumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     

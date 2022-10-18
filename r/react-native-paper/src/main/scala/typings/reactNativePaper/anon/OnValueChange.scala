@@ -1,32 +1,33 @@
 package typings.reactNativePaper.anon
 
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OnValueChange extends StObject {
   
-  var children: ReactNode
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  def onValueChange(value: String): Unit
+  var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   
   var value: String
 }
 object OnValueChange {
   
-  inline def apply(onValueChange: String => Unit, value: String): OnValueChange = {
-    val __obj = js.Dynamic.literal(onValueChange = js.Any.fromFunction1(onValueChange), value = value.asInstanceOf[js.Any])
+  inline def apply(value: String): OnValueChange = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnValueChange]
   }
   
   extension [Self <: OnValueChange](x: Self) {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    inline def setOnValueChange(value: String => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    inline def setOnValueChange(value: /* value */ String => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+    
+    inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

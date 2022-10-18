@@ -1,7 +1,7 @@
 package typings.reactIntl.anon
 
 import typings.react.mod.ComponentType
-import typings.reactIntl.injectIntlMod.WrappedComponentProps
+import typings.reactIntl.libSrcComponentsInjectIntlMod.WrappedComponentProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption
+import typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.ISelectableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,14 +17,14 @@ object libSelectableOptionMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType & Double
+        typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType & Double
       ] = js.native
     
-    /* 1 */ val Divider: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
+    /* 1 */ val Divider: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Divider & Double = js.native
     
-    /* 2 */ val Header: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Header & Double = js.native
+    /* 2 */ val Header: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Header & Double = js.native
     
-    /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
+    /* 0 */ val Normal: typings.officeUiFabricReact.libUtilitiesSelectableOptionSelectableOptionDottypesMod.SelectableOptionMenuItemType.Normal & Double = js.native
   }
   
   inline def getAllSelectedOptions(options: js.Array[ISelectableOption], selectedIndices: js.Array[Double]): js.Array[ISelectableOption] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllSelectedOptions")(options.asInstanceOf[js.Any], selectedIndices.asInstanceOf[js.Any])).asInstanceOf[js.Array[ISelectableOption]]

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsPrintMod.PrintProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsPrintMod.PrintProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Print", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Print", JSImport.Default)
   @js.native
   val default: FC[PrintProps] = js.native
   

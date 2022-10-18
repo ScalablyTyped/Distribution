@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows music file properties. */
-@JSGlobal("Windows.Storage.SystemMusicProperties")
+/* note: abstract class */ @JSGlobal("Windows.Storage.SystemMusicProperties")
 @js.native
-abstract class SystemMusicProperties ()
+open class SystemMusicProperties ()
   extends StObject
      with typings.winrtUwp.Windows.Storage.SystemMusicProperties {
   

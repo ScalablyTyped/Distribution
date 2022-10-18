@@ -1,7 +1,5 @@
 package typings.babylonjs
 
-import typings.babylonjs.babylonjsStrings.Horizontal
-import typings.babylonjs.babylonjsStrings.Vertical
 import typings.std.DOMPointReadOnly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +9,7 @@ trait XRPlane extends StObject {
   
   var lastChangedTime: Double
   
-  var orientation: Horizontal | Vertical
+  var orientation: XRPlaneOrientation
   
   var parentSceneObject: js.UndefOr[XRSceneObject] = js.undefined
   
@@ -23,7 +21,7 @@ object XRPlane {
   
   inline def apply(
     lastChangedTime: Double,
-    orientation: Horizontal | Vertical,
+    orientation: XRPlaneOrientation,
     planeSpace: XRSpace,
     polygon: js.Array[DOMPointReadOnly]
   ): XRPlane = {
@@ -35,7 +33,7 @@ object XRPlane {
     
     inline def setLastChangedTime(value: Double): Self = StObject.set(x, "lastChangedTime", value.asInstanceOf[js.Any])
     
-    inline def setOrientation(value: Horizontal | Vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: XRPlaneOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setParentSceneObject(value: XRSceneObject): Self = StObject.set(x, "parentSceneObject", value.asInstanceOf[js.Any])
     

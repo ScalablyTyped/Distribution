@@ -1,6 +1,6 @@
 package typings.tarn
 
-import typings.tarn.promiseInspectionMod.PromiseInspectionArgs
+import typings.tarn.distPromiseInspectionMod.PromiseInspectionArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

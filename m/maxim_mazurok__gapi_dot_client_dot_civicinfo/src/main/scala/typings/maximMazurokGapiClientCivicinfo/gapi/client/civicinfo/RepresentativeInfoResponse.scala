@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +8,7 @@ trait RepresentativeInfoResponse extends StObject {
   
   /** A map of political geographic divisions that contain the requested address, keyed by the unique Open Civic Data identifier for this division. */
   var divisions: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
-    */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoResponse & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision} */ js.Any
   ] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "civicinfo#representativeInfoResponse". */
@@ -36,9 +33,7 @@ object RepresentativeInfoResponse {
   extension [Self <: RepresentativeInfoResponse](x: Self) {
     
     inline def setDivisions(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
-      */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoResponse & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision} */ js.Any
     ): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
     
     inline def setDivisionsUndefined: Self = StObject.set(x, "divisions", js.undefined)

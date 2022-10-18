@@ -1,6 +1,6 @@
 package typings.httpBasic
 
-import typings.httpBasic.headersMod.Headers
+import typings.httpBasic.libHeadersMod.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

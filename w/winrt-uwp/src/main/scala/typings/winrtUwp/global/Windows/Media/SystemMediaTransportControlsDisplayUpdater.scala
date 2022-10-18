@@ -8,9 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to update the music information that is displayed on the SystemMediaTransportControls . */
-@JSGlobal("Windows.Media.SystemMediaTransportControlsDisplayUpdater")
+/* note: abstract class */ @JSGlobal("Windows.Media.SystemMediaTransportControlsDisplayUpdater")
 @js.native
-abstract class SystemMediaTransportControlsDisplayUpdater ()
+open class SystemMediaTransportControlsDisplayUpdater ()
   extends StObject
      with typings.winrtUwp.Windows.Media.SystemMediaTransportControlsDisplayUpdater {
   

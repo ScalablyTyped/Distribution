@@ -1,13 +1,13 @@
 package typings.grommet.anon
 
-import typings.grommet.utilsMod.GapType
+import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `7` extends StObject {
   
-  var gap: js.UndefOr[GapType] = js.undefined
+  var color: js.UndefOr[ColorType] = js.undefined
 }
 object `7` {
   
@@ -18,8 +18,8 @@ object `7` {
   
   extension [Self <: `7`](x: Self) {
     
-    inline def setGap(value: GapType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

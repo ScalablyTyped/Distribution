@@ -11,9 +11,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object messagingMod {
   
-  @JSImport("firebase/analytics/dist/messaging", JSImport.Namespace)
+  @JSImport("firebase/messaging", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

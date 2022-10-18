@@ -1,11 +1,6 @@
 package typings.babylonjs.BABYLON
 
 import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.babylonjs.BABYLON.PointerInput.MouseWheelX
-import typings.babylonjs.BABYLON.PointerInput.MouseWheelY
-import typings.babylonjs.BABYLON.PointerInput.MouseWheelZ
-import typings.babylonjs.BABYLON.PointerInput.Move
 import typings.babylonjs.XRInputSource
 import typings.babylonjs.anon.IsBinary
 import typings.babylonjs.anon.Layers
@@ -14,7 +9,6 @@ import typings.babylonjs.babylonjsStrings.XRProjectionLayer
 import typings.babylonjs.babylonjsStrings.XRWebGLLayer
 import typings.babylonjs.babylonjsStrings.cpu
 import typings.std.Element
-import typings.std.Exclude
 import typings.std.HTMLElement
 import typings.std.IteratorResult
 import typings.std.WebGLQuery
@@ -62,27 +56,10 @@ type CoroutineStep[T] = IteratorResult[Unit, T]
 
 type DataArray = js.Array[Double] | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
 
-type DeepImmutable[T] = DeepImmutableObject[T] | DeepImmutableArray[Any] | T
-
-type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{readonly [ K in keyof T ]: babylonjs.BABYLON.DeepImmutable<T[K]>}
-  */ typings.babylonjs.babylonjsStrings.DeepImmutableObject & TopLevel[T]
-
-/* Rewritten from type alias, can be one of: 
-  - typings.babylonjs.BABYLON.DualSenseInput
-  - typings.babylonjs.BABYLON.SwitchInput
-  - typings.babylonjs.BABYLON.XboxInput
-  - typings.babylonjs.BABYLON.DualShockInput
-  - typings.std.Exclude[
-typings.babylonjs.BABYLON.PointerInput, 
-typings.babylonjs.BABYLON.PointerInput.Move | typings.babylonjs.BABYLON.PointerInput.MouseWheelX | typings.babylonjs.BABYLON.PointerInput.MouseWheelY | typings.babylonjs.BABYLON.PointerInput.MouseWheelZ]
-  - scala.Double
-*/
-type DeviceInput[T /* <: DeviceType */] = _DeviceInput[T] | (Exclude[PointerInput, Move | MouseWheelX | MouseWheelY | MouseWheelZ]) | Double
+/** @internal */
+type DeepImmutableArray[T] = js.Array[DeepImmutable[T]]
 
 type DeviceSourceType = Distribute[DeviceType]
-
-type Distribute[T] = DeviceSource[T]
 
 type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, Unit]
 
@@ -99,8 +76,6 @@ type ISceneLoaderPluginExtensions = /**
   * Defines the list of supported extensions
   */
 org.scalablytyped.runtime.StringDictionary[IsBinary]
-
-type Immutable[T] = js.Array[Any] | T
 
 type IndicesArray = js.Array[Double] | js.typedarray.Int32Array | js.typedarray.Uint32Array | js.typedarray.Uint16Array
 
@@ -205,10 +180,6 @@ type WebXRFeatureConstructor = js.Function2[
 js.Function0[IWebXRFeature]]
 
 type WebXRLayerType = XRWebGLLayer | WebXRCompositionLayerType
-
-type XRHandMeshRigMapping = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ webXRJointName in babylonjs.BABYLON.XRHandJoint ]: string}
-  */ typings.babylonjs.babylonjsStrings.XRHandMeshRigMapping & TopLevel[Any]
 
 type double = Double
 

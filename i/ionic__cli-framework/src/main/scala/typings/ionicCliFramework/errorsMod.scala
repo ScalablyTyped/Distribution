@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorsMod {
   
-  @JSImport("@ionic/cli-framework/errors", "BaseError")
+  /* note: abstract class */ @JSImport("@ionic/cli-framework/errors", "BaseError")
   @js.native
-  abstract class BaseError protected ()
+  open class BaseError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Event data for depth frame source added events. */
-@JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameSourceAddedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameSourceAddedEventArgs")
 @js.native
-abstract class PerceptionDepthFrameSourceAddedEventArgs ()
+open class PerceptionDepthFrameSourceAddedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Perception.PerceptionDepthFrameSourceAddedEventArgs {
   

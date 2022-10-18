@@ -1,8 +1,8 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.projectionMod.Projection
-import typings.vegaTypings.signalMod.SignalRef
+import typings.vegaLite.buildSrcExprMod.ExprRef
+import typings.vegaLite.buildSrcProjectionMod.Projection
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

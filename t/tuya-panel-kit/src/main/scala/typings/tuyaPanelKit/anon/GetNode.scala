@@ -1,7 +1,7 @@
 package typings.tuyaPanelKit.anon
 
-import typings.tuyaPanelKit.useScrollToTopMod.ScrollableView
-import typings.tuyaPanelKit.useScrollToTopMod.ScrollableWrapper
+import typings.tuyaPanelKit.`@reactNavigationNativeUseScrollToTopMod`.ScrollableView
+import typings.tuyaPanelKit.`@reactNavigationNativeUseScrollToTopMod`.ScrollableWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

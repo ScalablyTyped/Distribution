@@ -39,10 +39,6 @@ object baiduAppStrings {
   inline def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
   @js.native
-  sealed trait Component extends StObject
-  inline def Component: Component = "Component".asInstanceOf[Component]
-  
-  @js.native
   sealed trait DELETE extends StObject
   inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
@@ -85,10 +81,6 @@ object baiduAppStrings {
   @js.native
   sealed trait PUT extends StObject
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
-  
-  @js.native
-  sealed trait RecordPropsDefinition extends StObject
-  inline def RecordPropsDefinition: RecordPropsDefinition = "RecordPropsDefinition".asInstanceOf[RecordPropsDefinition]
   
   @js.native
   sealed trait album

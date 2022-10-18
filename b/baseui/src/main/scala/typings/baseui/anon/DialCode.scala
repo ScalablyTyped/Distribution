@@ -12,7 +12,7 @@ trait DialCode extends StObject {
   
   val id: AF
   
-  val label: String
+  val label: /* Afghanistan (‫افغانستان‬‎) */ String
 }
 object DialCode {
   
@@ -27,6 +27,6 @@ object DialCode {
     
     inline def setId(value: AF): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: /* Afghanistan (‫افغانستان‬‎) */ String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

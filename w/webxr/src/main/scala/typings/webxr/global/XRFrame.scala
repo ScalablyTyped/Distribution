@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ref: https://immersive-web.github.io/webxr/#xrframe-interface
   */
-@JSGlobal("XRFrame")
+/* note: abstract class */ @JSGlobal("XRFrame")
 @js.native
-abstract class XRFrame ()
+open class XRFrame ()
   extends StObject
      with typings.webxr.XRFrame {
   

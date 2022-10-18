@@ -4,7 +4,7 @@ import typings.baseui.anon.ActiveKey
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
-import typings.baseui.overridesMod.Override
+import typings.baseui.helpersOverridesMod.Override
 import typings.react.mod.Key
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "NormalBlendBlock")
 @js.native
 open class NormalBlendBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.NormalBlendBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.NormalBlendBlock {
   /**
     * Creates a new NormalBlendBlock
     * @param name defines the block name

@@ -230,9 +230,9 @@ object global {
     ): js.Array[typings.jsqrcode.DataBlock] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataBlocks")(rawCodewords.asInstanceOf[js.Any], version.asInstanceOf[js.Any], ecLevel.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.jsqrcode.DataBlock]]
   }
   
-  @JSGlobal("DataMask")
+  /* note: abstract class */ @JSGlobal("DataMask")
   @js.native
-  abstract class DataMask ()
+  open class DataMask ()
     extends StObject
        with typings.jsqrcode.DataMask {
     

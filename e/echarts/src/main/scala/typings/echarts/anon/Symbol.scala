@@ -43,10 +43,10 @@ trait Symbol extends StObject {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-boxplot.boxplot.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.markLine.data.0)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.coord
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.coord
     */
   var coord: js.UndefOr[js.Array[Any]] = js.undefined
   
@@ -55,7 +55,7 @@ trait Symbol extends StObject {
     * `label` of starting point and ending point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.label
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.label
     */
   var label: js.UndefOr[Position] = js.undefined
   
@@ -64,7 +64,7 @@ trait Symbol extends StObject {
     * with `lineStyle` of starting point and ending point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.lineStyle
     */
   var lineStyle: js.UndefOr[ShadowOffsetX] = js.undefined
   
@@ -72,12 +72,12 @@ trait Symbol extends StObject {
     * Name of the marker, which will display as a label.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.markLine.data.1.name
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markLine.data.0.name
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Symbol of ending point.
+    * Symbol of starting point.
     *
     * Icon types provided by ECharts includes `'circle'`,
     * `'rect'`, `'roundRect'`, `'triangle'`, `'diamond'`,
@@ -96,7 +96,7 @@ trait Symbol extends StObject {
     *
     * A `dataURI` example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-boxplot.boxplot.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.markLine.data.0)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -112,10 +112,10 @@ trait Symbol extends StObject {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-boxplot.boxplot.markLine.data.1)
+    * [see doc](https://echarts.apache.org/en/option.html#series-candlestick.candlestick.markLine.data.0)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.symbol
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.symbol
     */
   var symbol: js.UndefOr[String] = js.undefined
   
@@ -124,12 +124,12 @@ trait Symbol extends StObject {
     * `path://`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.symbolKeepAspect
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Offset of ending point symbol relative to original
+    * Offset of starting point symbol relative to original
     * position.
     * By default, symbol will be put in the center position
     * of data.
@@ -148,30 +148,30 @@ trait Symbol extends StObject {
     *
     * @default
     * [0, 0]
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.symbolOffset
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
-    * Rotate degree of ending point symbol.
+    * Rotate degree of starting point symbol.
     * Note that when `symbol` is set to be `'arrow'` in
     * `markLine`, `symbolRotate` value will be ignored,
     * and compulsively use tangent angle.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.symbolRotate
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.symbolRotate
     */
   var symbolRotate: js.UndefOr[Double] = js.undefined
   
   /**
-    * ending point symbol size.
+    * starting point symbol size.
     * It can be set to single numbers like `10`, or use
     * an array to represent width and height.
     * For example, `[20, 10]` means symbol width is `20`,
     * and height is`10`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
@@ -186,7 +186,7 @@ trait Symbol extends StObject {
     * + `'average'` average value.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.type
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.type
     */
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -194,7 +194,7 @@ trait Symbol extends StObject {
     * Label value, which can be ignored.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.value
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.value
     */
   var value: js.UndefOr[Double] = js.undefined
   
@@ -209,7 +209,7 @@ trait Symbol extends StObject {
     * for candlestick charts.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.valueDim
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.valueDim
     */
   var valueDim: js.UndefOr[String] = js.undefined
   
@@ -224,7 +224,7 @@ trait Symbol extends StObject {
     * Dimension of the first numeric axis is used by default.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.valueIndex
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.valueIndex
     */
   var valueIndex: js.UndefOr[Double] = js.undefined
   
@@ -232,31 +232,51 @@ trait Symbol extends StObject {
     * X position according to container, in pixel.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.x
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.x
     */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
-    * Position according to X-Axis value.
-    * For a line parallel to Y-Axis
+    * Markline at x at given value, which only works for single data item. Example:
+    * data: [{
+    *     name: 'A vertical line with X valued 100',
+    *     xAxis: 100
+    * }]
+    * or if xAxis is in 'time' type, it can be set as:
+    * [{
+    *     name: 'A vertical line with X valued "2020-01-01"',
+    *     xAxis: '2020-01-01'
+    * }]
     *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.xAxis
     */
-  var xAxis: js.UndefOr[Double] = js.undefined
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Y position according to container, in pixel.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-boxplot.markLine.data.1.y
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.y
     */
   var y: js.UndefOr[Double] = js.undefined
   
   /**
-    * Position according to Y-Axis value
-    * For a line parallel to X-Axis
+    * Markline at y at given value, which only works for single data item. Example:
+    * data: [{
+    *     name: 'A horizontal line with X valued 100',
+    *     yAxis: 100
+    * }]
+    * or if yAxis is in 'time' type, it can be set as:
+    * [{
+    *     name: 'A horizontal line with Y valued "2020-01-01"',
+    *     yAxis: '2020-01-01'
+    * }]
     *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0.yAxis
     */
-  var yAxis: js.UndefOr[Double] = js.undefined
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object Symbol {
   
@@ -327,7 +347,7 @@ object Symbol {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
@@ -335,7 +355,7 @@ object Symbol {
     
     inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     

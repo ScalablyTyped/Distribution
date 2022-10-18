@@ -1,6 +1,6 @@
 package typings.antvG2plot.anon
 
-import typings.antvG2plot.metaMod.Meta
+import typings.antvG2plot.libTypesMetaMod.Meta
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

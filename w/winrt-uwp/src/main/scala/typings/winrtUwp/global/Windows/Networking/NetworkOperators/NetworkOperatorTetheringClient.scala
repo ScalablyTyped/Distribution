@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains details about a tethering client. */
-@JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringClient")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringClient")
 @js.native
-abstract class NetworkOperatorTetheringClient ()
+open class NetworkOperatorTetheringClient ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.NetworkOperatorTetheringClient {
   

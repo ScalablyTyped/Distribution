@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/cells" : "2.2.7"
+      "@jupyterlab/cells" : "3.4.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/cells" : "2.2.7"
+      "@jupyterlab/cells" : "3.4.8"
     }
   ],
   "compile-devDependencies" : [

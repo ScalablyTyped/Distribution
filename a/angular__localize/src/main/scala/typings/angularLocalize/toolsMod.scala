@@ -1,17 +1,17 @@
 package typings.angularLocalize
 
-import typings.angularCompilerCli.loggerMod.Logger
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcTypesMod.PathManipulation
-import typings.angularCompilerCli.srcTypesMod.ReadonlyFileSystem
-import typings.angularLocalize.babelCoreMod.PluginObj
-import typings.angularLocalize.diagnosticsMod.DiagnosticHandlingStrategy
-import typings.angularLocalize.extractionMod.ExtractionOptions
-import typings.angularLocalize.formatOptionsMod.FormatOptions
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathManipulation
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
+import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.Logger
 import typings.angularLocalize.mod.ɵParsedMessage
 import typings.angularLocalize.mod.ɵParsedTranslation
 import typings.angularLocalize.mod.ɵSourceLocation
-import typings.angularLocalize.sourceFileUtilsMod.TranslatePluginOptions
+import typings.angularLocalize.toolsSrcBabelCoreMod.PluginObj
+import typings.angularLocalize.toolsSrcDiagnosticsMod.DiagnosticHandlingStrategy
+import typings.angularLocalize.toolsSrcExtractExtractionMod.ExtractionOptions
+import typings.angularLocalize.toolsSrcExtractTranslationFilesFormatOptionsMod.FormatOptions
+import typings.angularLocalize.toolsSrcSourceFileUtilsMod.TranslatePluginOptions
 import typings.std.Record
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
@@ -27,55 +27,55 @@ object toolsMod {
   @JSImport("@angular/localize/tools", "ArbTranslationParser")
   @js.native
   open class ArbTranslationParser ()
-    extends typings.angularLocalize.arbTranslationParserMod.ArbTranslationParser
+    extends typings.angularLocalize.toolsSrcTranslateTranslationFilesTranslationParsersArbTranslationParserMod.ArbTranslationParser
   
   @JSImport("@angular/localize/tools", "ArbTranslationSerializer")
   @js.native
   open class ArbTranslationSerializer protected ()
-    extends typings.angularLocalize.arbTranslationSerializerMod.ArbTranslationSerializer {
+    extends typings.angularLocalize.toolsSrcExtractTranslationFilesArbTranslationSerializerMod.ArbTranslationSerializer {
     def this(sourceLocale: String, basePath: AbsoluteFsPath, fs: PathManipulation) = this()
   }
   
   @JSImport("@angular/localize/tools", "Diagnostics")
   @js.native
   open class Diagnostics ()
-    extends typings.angularLocalize.diagnosticsMod.Diagnostics
+    extends typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics
   
   @JSImport("@angular/localize/tools", "LegacyMessageIdMigrationSerializer")
   @js.native
   open class LegacyMessageIdMigrationSerializer protected ()
-    extends typings.angularLocalize.legacyMessageIdMigrationSerializerMod.LegacyMessageIdMigrationSerializer {
-    def this(_diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics) = this()
+    extends typings.angularLocalize.toolsSrcExtractTranslationFilesLegacyMessageIdMigrationSerializerMod.LegacyMessageIdMigrationSerializer {
+    def this(_diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics) = this()
   }
   
   @JSImport("@angular/localize/tools", "MessageExtractor")
   @js.native
   open class MessageExtractor protected ()
-    extends typings.angularLocalize.extractionMod.MessageExtractor {
+    extends typings.angularLocalize.toolsSrcExtractExtractionMod.MessageExtractor {
     def this(fs: ReadonlyFileSystem, logger: Logger, hasBasePathUseSourceMapsLocalizeName: ExtractionOptions) = this()
   }
   
   @JSImport("@angular/localize/tools", "SimpleJsonTranslationParser")
   @js.native
   open class SimpleJsonTranslationParser ()
-    extends typings.angularLocalize.simpleJsonTranslationParserMod.SimpleJsonTranslationParser
+    extends typings.angularLocalize.toolsSrcTranslateTranslationFilesTranslationParsersSimpleJsonTranslationParserMod.SimpleJsonTranslationParser
   
   @JSImport("@angular/localize/tools", "SimpleJsonTranslationSerializer")
   @js.native
   open class SimpleJsonTranslationSerializer protected ()
-    extends typings.angularLocalize.jsonTranslationSerializerMod.SimpleJsonTranslationSerializer {
+    extends typings.angularLocalize.toolsSrcExtractTranslationFilesJsonTranslationSerializerMod.SimpleJsonTranslationSerializer {
     def this(sourceLocale: String) = this()
   }
   
   @JSImport("@angular/localize/tools", "Xliff1TranslationParser")
   @js.native
   open class Xliff1TranslationParser ()
-    extends typings.angularLocalize.xliff1TranslationParserMod.Xliff1TranslationParser
+    extends typings.angularLocalize.toolsSrcTranslateTranslationFilesTranslationParsersXliff1TranslationParserMod.Xliff1TranslationParser
   
   @JSImport("@angular/localize/tools", "Xliff1TranslationSerializer")
   @js.native
   open class Xliff1TranslationSerializer protected ()
-    extends typings.angularLocalize.xliff1TranslationSerializerMod.Xliff1TranslationSerializer {
+    extends typings.angularLocalize.toolsSrcExtractTranslationFilesXliff1TranslationSerializerMod.Xliff1TranslationSerializer {
     def this(sourceLocale: String, basePath: AbsoluteFsPath, useLegacyIds: Boolean) = this()
     def this(
       sourceLocale: String,
@@ -102,12 +102,12 @@ object toolsMod {
   @JSImport("@angular/localize/tools", "Xliff2TranslationParser")
   @js.native
   open class Xliff2TranslationParser ()
-    extends typings.angularLocalize.xliff2TranslationParserMod.Xliff2TranslationParser
+    extends typings.angularLocalize.toolsSrcTranslateTranslationFilesTranslationParsersXliff2TranslationParserMod.Xliff2TranslationParser
   
   @JSImport("@angular/localize/tools", "Xliff2TranslationSerializer")
   @js.native
   open class Xliff2TranslationSerializer protected ()
-    extends typings.angularLocalize.xliff2TranslationSerializerMod.Xliff2TranslationSerializer {
+    extends typings.angularLocalize.toolsSrcExtractTranslationFilesXliff2TranslationSerializerMod.Xliff2TranslationSerializer {
     def this(sourceLocale: String, basePath: AbsoluteFsPath, useLegacyIds: Boolean) = this()
     def this(
       sourceLocale: String,
@@ -134,7 +134,7 @@ object toolsMod {
   @JSImport("@angular/localize/tools", "XmbTranslationSerializer")
   @js.native
   open class XmbTranslationSerializer protected ()
-    extends typings.angularLocalize.xmbTranslationSerializerMod.XmbTranslationSerializer {
+    extends typings.angularLocalize.toolsSrcExtractTranslationFilesXmbTranslationSerializerMod.XmbTranslationSerializer {
     def this(basePath: AbsoluteFsPath, useLegacyIds: Boolean) = this()
     def this(basePath: AbsoluteFsPath, useLegacyIds: Boolean, fs: PathManipulation) = this()
   }
@@ -142,7 +142,7 @@ object toolsMod {
   @JSImport("@angular/localize/tools", "XtbTranslationParser")
   @js.native
   open class XtbTranslationParser ()
-    extends typings.angularLocalize.xtbTranslationParserMod.XtbTranslationParser
+    extends typings.angularLocalize.toolsSrcTranslateTranslationFilesTranslationParsersXtbTranslationParserMod.XtbTranslationParser
   
   inline def buildLocalizeReplacement(
     messageParts: TemplateStringsArray,
@@ -156,51 +156,51 @@ object toolsMod {
     messages: js.Array[ɵParsedMessage],
     duplicateMessageHandling: DiagnosticHandlingStrategy,
     basePath: AbsoluteFsPath
-  ): typings.angularLocalize.diagnosticsMod.Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDuplicateMessages")(fs.asInstanceOf[js.Any], messages.asInstanceOf[js.Any], duplicateMessageHandling.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[typings.angularLocalize.diagnosticsMod.Diagnostics]
+  ): typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDuplicateMessages")(fs.asInstanceOf[js.Any], messages.asInstanceOf[js.Any], duplicateMessageHandling.asInstanceOf[js.Any], basePath.asInstanceOf[js.Any])).asInstanceOf[typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics]
   
   inline def isGlobalIdentifier(
     identifier: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.Identifier> */ Any
   ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGlobalIdentifier")(identifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def makeEs2015TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation]
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs2015TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     hasMissingTranslationLocalizeName: Unit,
     fs: PathManipulation
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs2015TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     hasMissingTranslationLocalizeName: TranslatePluginOptions
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs2015TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     hasMissingTranslationLocalizeName: TranslatePluginOptions,
     fs: PathManipulation
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   
   inline def makeEs5TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation]
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs5TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     hasMissingTranslationLocalizeName: Unit,
     fs: PathManipulation
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs5TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     hasMissingTranslationLocalizeName: TranslatePluginOptions
   ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], hasMissingTranslationLocalizeName.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   inline def makeEs5TranslatePlugin(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     hasMissingTranslationLocalizeName: TranslatePluginOptions,
     fs: PathManipulation
@@ -210,7 +210,7 @@ object toolsMod {
   inline def makeLocalePlugin(locale: String, hasLocalizeName: TranslatePluginOptions): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any], hasLocalizeName.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
   
   inline def translate(
-    diagnostics: typings.angularLocalize.diagnosticsMod.Diagnostics,
+    diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     messageParts: TemplateStringsArray,
     substitutions: js.Array[Any],

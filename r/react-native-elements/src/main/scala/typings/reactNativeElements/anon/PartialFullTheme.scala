@@ -1,7 +1,7 @@
 package typings.reactNativeElements.anon
 
-import typings.reactNativeElements.inputMod.InputProps
-import typings.reactNativeElements.searchBarMod.SearchBarProps
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

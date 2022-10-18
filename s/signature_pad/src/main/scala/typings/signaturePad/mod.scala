@@ -1,8 +1,8 @@
 package typings.signaturePad
 
 import typings.signaturePad.anon.Height
-import typings.signaturePad.pointMod.BasicPoint
-import typings.signaturePad.signatureEventTargetMod.SignatureEventTarget
+import typings.signaturePad.distTypesPointMod.BasicPoint
+import typings.signaturePad.distTypesSignatureEventTargetMod.SignatureEventTarget
 import typings.std.HTMLCanvasElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent

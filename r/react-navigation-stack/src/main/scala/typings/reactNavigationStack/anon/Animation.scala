@@ -1,7 +1,7 @@
 package typings.reactNavigationStack.anon
 
+import typings.reactNavigationStack.libTypescriptSrcVendorTypesMod.TransitionSpec
 import typings.reactNavigationStack.reactNavigationStackStrings.spring
-import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

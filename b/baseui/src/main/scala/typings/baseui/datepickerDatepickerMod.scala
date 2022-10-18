@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.anon.Ariadescribedby
-import typings.baseui.anon.`5`
+import typings.baseui.anon.`2`
 import typings.baseui.datepickerTypesMod.DatepickerProps
 import typings.baseui.datepickerTypesMod.InputRole
 import typings.baseui.localeTypesMod.Locale
@@ -49,7 +49,7 @@ object datepickerDatepickerMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDatepicker(prevProps: DatepickerProps[T]): Unit = js.native
     
-    var dateHelpers: typings.baseui.dateHelpersMod.default[T] = js.native
+    var dateHelpers: typings.baseui.datepickerUtilsDateHelpersMod.default[T] = js.native
     
     def focusCalendar(): Unit = js.native
     
@@ -83,7 +83,7 @@ object datepickerDatepickerMod {
     
     def normalizeDashes(inputValue: String): String = js.native
     
-    def onCalendarSelect(a: `5`[T]): Unit = js.native
+    def onCalendarSelect(a: `2`[T]): Unit = js.native
     
     def open(): Unit = js.native
     def open(inputRole: InputRole): Unit = js.native

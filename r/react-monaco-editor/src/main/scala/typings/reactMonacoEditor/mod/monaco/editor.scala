@@ -157,14 +157,17 @@ import typings.monacoEditor.mod.editor.EditorOption.wrappingIndent
 import typings.monacoEditor.mod.editor.EditorOption.wrappingInfo
 import typings.monacoEditor.mod.editor.EditorOption.wrappingStrategy
 import typings.monacoEditor.mod.editor.EditorWrappingInfo
+import typings.monacoEditor.mod.editor.IActionDescriptor
 import typings.monacoEditor.mod.editor.ICodeEditor
 import typings.monacoEditor.mod.editor.IColorizerElementOptions
 import typings.monacoEditor.mod.editor.IColorizerOptions
+import typings.monacoEditor.mod.editor.ICommandDescriptor
 import typings.monacoEditor.mod.editor.IDiffEditor
 import typings.monacoEditor.mod.editor.IDiffNavigator
 import typings.monacoEditor.mod.editor.IDiffNavigatorOptions
 import typings.monacoEditor.mod.editor.IEditorOption
 import typings.monacoEditor.mod.editor.IEditorOverrideServices
+import typings.monacoEditor.mod.editor.IKeybindingRule
 import typings.monacoEditor.mod.editor.IMarker
 import typings.monacoEditor.mod.editor.IMarkerData
 import typings.monacoEditor.mod.editor.IStandaloneCodeEditor
@@ -1706,6 +1709,14 @@ object editor {
     
     /* 1 */ val Same: typings.monacoEditor.mod.editor.WrappingIndent.Same & Double = js.native
   }
+  
+  inline def addCommand(descriptor: ICommandDescriptor): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(descriptor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+  
+  inline def addEditorAction(descriptor: IActionDescriptor): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addEditorAction")(descriptor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+  
+  inline def addKeybindingRule(rule: IKeybindingRule): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addKeybindingRule")(rule.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
+  
+  inline def addKeybindingRules(rules: js.Array[IKeybindingRule]): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("addKeybindingRules")(rules.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
   
   inline def colorize(text: String, languageId: String, options: IColorizerOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(text.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   

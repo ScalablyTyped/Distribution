@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [fuzzyTerm=null] - The fuzzy term this hedge is working on.
   */
 open class FuzzyVERY ()
-  extends typings.yuka.yukaMod.FuzzyVERY {
-  def this(fuzzyTerm: typings.yuka.fuzzyTermMod.FuzzyTerm) = this()
+  extends typings.yuka.srcYukaMod.FuzzyVERY {
+  def this(fuzzyTerm: typings.yuka.srcFuzzyFuzzyTermMod.FuzzyTerm) = this()
 }

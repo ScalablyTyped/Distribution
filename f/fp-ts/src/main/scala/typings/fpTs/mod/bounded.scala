@@ -1,6 +1,6 @@
 package typings.fpTs.mod
 
-import typings.fpTs.boundedMod.Bounded
+import typings.fpTs.libBoundedMod.Bounded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object bounded {
   @js.native
   val boundedNumber: Bounded[Double] = js.native
   
-  inline def clamp[T](B: Bounded[T]): js.Function1[/* a */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(B.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ T, T]]
+  inline def clamp[A](B: Bounded[A]): js.Function1[/* a */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(B.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, A]]
   
-  inline def reverse[T](B: Bounded[T]): Bounded[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(B.asInstanceOf[js.Any]).asInstanceOf[Bounded[T]]
+  inline def reverse[A](B: Bounded[A]): Bounded[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(B.asInstanceOf[js.Any]).asInstanceOf[Bounded[A]]
 }

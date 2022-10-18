@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js", "Core.Exception")
+/* note: abstract class */ @JSImport("sip.js", "Core.Exception")
 @js.native
-/* protected */ abstract class Exception ()
-  extends typings.sipJs.coreMod.Exception {
+/* protected */ open class Exception ()
+  extends typings.sipJs.libCoreMod.Exception {
   /* protected */ def this(message: String) = this()
 }

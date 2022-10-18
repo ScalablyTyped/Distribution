@@ -5,23 +5,23 @@ import typings.std.Parameters
 import typings.std.Partial
 import typings.std.Record
 import typings.storybookAddons.anon.Current
-import typings.storybookAddons.hooksMod.EventMap
-import typings.storybookAddons.typesMod.StorySortParameter
-import typings.storybookAddons.typesMod.StorySortParameterV7
+import typings.storybookAddons.distTs3Dot9HooksMod.EventMap
+import typings.storybookAddons.distTs3Dot9TypesMod.StorySortParameter
+import typings.storybookAddons.distTs3Dot9TypesMod.StorySortParameterV7
 import typings.storybookStore.anon.Call
-import typings.storybookStore.autoTitleMod.NormalizedStoriesSpecifier
-import typings.storybookStore.filterArgTypesMod.PropDescriptor
-import typings.storybookStore.testingUtilsMod.ComposeStory_
-import typings.storybookStore.ts39TypesMod.CSFFile
-import typings.storybookStore.ts39TypesMod.ModuleExports
-import typings.storybookStore.ts39TypesMod.NormalizedComponentAnnotations
-import typings.storybookStore.ts39TypesMod.NormalizedProjectAnnotations
-import typings.storybookStore.ts39TypesMod.NormalizedStoryAnnotations
-import typings.storybookStore.ts39TypesMod.Path
-import typings.storybookStore.ts39TypesMod.Story
-import typings.storybookStore.ts39TypesMod.StoryIndexEntry
-import typings.storybookStore.ts39TypesMod.WebProjectAnnotations
-import typings.storybookStore.typesMod.CSFExports
+import typings.storybookStore.distTs3Dot9AutoTitleMod.NormalizedStoriesSpecifier
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsMod.ComposeStory_
+import typings.storybookStore.distTs3Dot9CsfTestingUtilsTypesMod.CSFExports
+import typings.storybookStore.distTs3Dot9FilterArgTypesMod.PropDescriptor
+import typings.storybookStore.distTs3Dot9TypesMod.CSFFile
+import typings.storybookStore.distTs3Dot9TypesMod.ModuleExports
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedComponentAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedProjectAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.NormalizedStoryAnnotations
+import typings.storybookStore.distTs3Dot9TypesMod.Path
+import typings.storybookStore.distTs3Dot9TypesMod.Story
+import typings.storybookStore.distTs3Dot9TypesMod.StoryIndexEntry
+import typings.storybookStore.distTs3Dot9TypesMod.WebProjectAnnotations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ object mod {
   @JSImport("@storybook/client-api", "ClientApi")
   @js.native
   open class ClientApi[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] ()
-    extends typings.storybookClientApi.clientApiMod.ClientApi[TFramework] {
+    extends typings.storybookClientApi.distTs3Dot9ClientApiMod.ClientApi[TFramework] {
     def this(hasStoryStore: typings.storybookClientApi.anon.StoryStore[TFramework]) = this()
   }
   
@@ -98,7 +98,7 @@ object mod {
   
   inline def combineArgs(value: Any, update: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("combineArgs")(value.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def combineParameters(parameterSets: js.UndefOr[typings.storybookAddons.typesMod.Parameters]*): typings.storybookAddons.typesMod.Parameters = ^.asInstanceOf[js.Dynamic].applyDynamic("combineParameters")(parameterSets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.storybookAddons.typesMod.Parameters]
+  inline def combineParameters(parameterSets: js.UndefOr[typings.storybookAddons.distTs3Dot9TypesMod.Parameters]*): typings.storybookAddons.distTs3Dot9TypesMod.Parameters = ^.asInstanceOf[js.Dynamic].applyDynamic("combineParameters")(parameterSets.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.storybookAddons.distTs3Dot9TypesMod.Parameters]
   
   inline def composeConfigs[TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](moduleExportList: js.Array[ModuleExports]): WebProjectAnnotations[TFramework] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeConfigs")(moduleExportList.asInstanceOf[js.Any]).asInstanceOf[WebProjectAnnotations[TFramework]]
   

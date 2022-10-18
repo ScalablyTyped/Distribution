@@ -3,12 +3,12 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.dropdownDividerMod.DropdownDividerProps
-import typings.semanticUiReact.dropdownDropdownMod.DropdownComponent
-import typings.semanticUiReact.dropdownDropdownMod.DropdownProps
-import typings.semanticUiReact.dropdownHeaderMod.DropdownHeaderProps
-import typings.semanticUiReact.dropdownItemMod.DropdownItemProps
-import typings.semanticUiReact.dropdownSearchInputMod.DropdownSearchInputProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownMod.DropdownComponent
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownMod.DropdownProps
+import typings.semanticUiReact.distCommonjsModulesDropdownDropdownSearchInputMod.DropdownSearchInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

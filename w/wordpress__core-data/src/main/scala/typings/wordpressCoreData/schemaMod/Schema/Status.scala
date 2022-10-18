@@ -1,49 +1,18 @@
 package typings.wordpressCoreData.schemaMod.Schema
 
-import typings.std.Record
-import typings.wordpressCoreData.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // prettier-ignore
-/* Rewritten from type alias, can be one of: 
-  - typings.wordpressCoreData.schemaMod.Schema.BaseStatus
-  - typings.wordpressCoreData.anon.PickBaseStatusStatusEmbedded
-  - typings.wordpressCoreData.anon.PickBaseStatusStatus
-*/
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately. 
+  * TS definition: {{{
+  T extends 'embed' ? / * Inlined std.Pick<@wordpress/core-data.@wordpress/core-data/schema.Schema.BaseStatus, @wordpress/core-data.@wordpress/core-data/schema.Schema.EmbedKeys.Status> * /
+{  _embedded :std.Record<string, std.Array<any>> | undefined | undefined,   _links :std.Record<string, std.Array<{  href :string, [k: string] : any}>>,   name :string,   slug :string} : T extends 'view' ? / * Inlined std.Pick<@wordpress/core-data.@wordpress/core-data/schema.Schema.BaseStatus, @wordpress/core-data.@wordpress/core-data/schema.Schema.ViewKeys.Status> * /
+{  queryable :boolean,   _embedded :std.Record<string, std.Array<any>> | undefined | undefined,   _links :std.Record<string, std.Array<{  href :string, [k: string] : any}>>,   slug :string,   name :string,   public :boolean} : @wordpress/core-data.@wordpress/core-data/schema.Schema.BaseStatus
+  }}}
+  */
+@js.native
 trait Status[T /* <: Context */] extends StObject
-object Status {
-  
-  inline def BaseStatus(
-    _links: Record[String, js.Array[Dictk]],
-    name: String,
-    `private`: Boolean,
-    `protected`: Boolean,
-    public: Boolean,
-    queryable: Boolean,
-    show_in_list: Boolean,
-    slug: String
-  ): typings.wordpressCoreData.schemaMod.Schema.BaseStatus = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], show_in_list = show_in_list.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.wordpressCoreData.schemaMod.Schema.BaseStatus]
-  }
-  
-  inline def PickBaseStatusStatus(_links: Record[String, js.Array[Dictk]], name: String, slug: String): typings.wordpressCoreData.anon.PickBaseStatusStatus = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.wordpressCoreData.anon.PickBaseStatusStatus]
-  }
-  
-  inline def PickBaseStatusStatusEmbedded(
-    _links: Record[String, js.Array[Dictk]],
-    name: String,
-    public: Boolean,
-    queryable: Boolean,
-    slug: String
-  ): typings.wordpressCoreData.anon.PickBaseStatusStatusEmbedded = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], queryable = queryable.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.wordpressCoreData.anon.PickBaseStatusStatusEmbedded]
-  }
-}

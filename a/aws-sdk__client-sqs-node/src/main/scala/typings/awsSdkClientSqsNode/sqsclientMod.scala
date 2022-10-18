@@ -1,10 +1,10 @@
 package typings.awsSdkClientSqsNode
 
-import typings.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
-import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkClientSqsNode.sqsconfigurationMod.SQSConfiguration
 import typings.awsSdkClientSqsNode.sqsconfigurationMod.SQSResolvedConfiguration
-import typings.awsSdkTypes.commandMod.Command
+import typings.awsSdkClientSqsNode.typesInputTypesUnionMod.InputTypesUnion
+import typings.awsSdkClientSqsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typings.awsSdkTypes.distTypesCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

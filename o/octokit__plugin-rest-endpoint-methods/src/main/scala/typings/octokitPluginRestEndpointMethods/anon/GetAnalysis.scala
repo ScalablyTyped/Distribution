@@ -6,74 +6,84 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetAnalysis extends StObject {
   
-  var deleteAnalysis: `949`
+  var deleteAnalysis: `963`
   
-  var getAlert: `950`
+  var getAlert: `964`
   
-  var getAnalysis: `951`
+  var getAnalysis: `965`
   
-  var getSarif: `952`
+  var getCodeqlDatabase: `966`
   
-  var listAlertInstances: `953`
+  var getSarif: `967`
   
-  var listAlertsForEnterprise: `954`
+  var listAlertInstances: `968`
   
-  var listAlertsForOrg: `955`
+  var listAlertsForEnterprise: `969`
   
-  var listAlertsForRepo: `956`
+  var listAlertsForOrg: `970`
   
-  var listAlertsInstances: `953`
+  var listAlertsForRepo: `971`
   
-  var listRecentAnalyses: `957`
+  var listAlertsInstances: `968`
   
-  var updateAlert: `958`
+  var listCodeqlDatabases: `972`
   
-  var uploadSarif: `959`
+  var listRecentAnalyses: `973`
+  
+  var updateAlert: `974`
+  
+  var uploadSarif: `975`
 }
 object GetAnalysis {
   
   inline def apply(
-    deleteAnalysis: `949`,
-    getAlert: `950`,
-    getAnalysis: `951`,
-    getSarif: `952`,
-    listAlertInstances: `953`,
-    listAlertsForEnterprise: `954`,
-    listAlertsForOrg: `955`,
-    listAlertsForRepo: `956`,
-    listAlertsInstances: `953`,
-    listRecentAnalyses: `957`,
-    updateAlert: `958`,
-    uploadSarif: `959`
+    deleteAnalysis: `963`,
+    getAlert: `964`,
+    getAnalysis: `965`,
+    getCodeqlDatabase: `966`,
+    getSarif: `967`,
+    listAlertInstances: `968`,
+    listAlertsForEnterprise: `969`,
+    listAlertsForOrg: `970`,
+    listAlertsForRepo: `971`,
+    listAlertsInstances: `968`,
+    listCodeqlDatabases: `972`,
+    listRecentAnalyses: `973`,
+    updateAlert: `974`,
+    uploadSarif: `975`
   ): GetAnalysis = {
-    val __obj = js.Dynamic.literal(deleteAnalysis = deleteAnalysis.asInstanceOf[js.Any], getAlert = getAlert.asInstanceOf[js.Any], getAnalysis = getAnalysis.asInstanceOf[js.Any], getSarif = getSarif.asInstanceOf[js.Any], listAlertInstances = listAlertInstances.asInstanceOf[js.Any], listAlertsForEnterprise = listAlertsForEnterprise.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listAlertsInstances = listAlertsInstances.asInstanceOf[js.Any], listRecentAnalyses = listRecentAnalyses.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any], uploadSarif = uploadSarif.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deleteAnalysis = deleteAnalysis.asInstanceOf[js.Any], getAlert = getAlert.asInstanceOf[js.Any], getAnalysis = getAnalysis.asInstanceOf[js.Any], getCodeqlDatabase = getCodeqlDatabase.asInstanceOf[js.Any], getSarif = getSarif.asInstanceOf[js.Any], listAlertInstances = listAlertInstances.asInstanceOf[js.Any], listAlertsForEnterprise = listAlertsForEnterprise.asInstanceOf[js.Any], listAlertsForOrg = listAlertsForOrg.asInstanceOf[js.Any], listAlertsForRepo = listAlertsForRepo.asInstanceOf[js.Any], listAlertsInstances = listAlertsInstances.asInstanceOf[js.Any], listCodeqlDatabases = listCodeqlDatabases.asInstanceOf[js.Any], listRecentAnalyses = listRecentAnalyses.asInstanceOf[js.Any], updateAlert = updateAlert.asInstanceOf[js.Any], uploadSarif = uploadSarif.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAnalysis]
   }
   
   extension [Self <: GetAnalysis](x: Self) {
     
-    inline def setDeleteAnalysis(value: `949`): Self = StObject.set(x, "deleteAnalysis", value.asInstanceOf[js.Any])
+    inline def setDeleteAnalysis(value: `963`): Self = StObject.set(x, "deleteAnalysis", value.asInstanceOf[js.Any])
     
-    inline def setGetAlert(value: `950`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
+    inline def setGetAlert(value: `964`): Self = StObject.set(x, "getAlert", value.asInstanceOf[js.Any])
     
-    inline def setGetAnalysis(value: `951`): Self = StObject.set(x, "getAnalysis", value.asInstanceOf[js.Any])
+    inline def setGetAnalysis(value: `965`): Self = StObject.set(x, "getAnalysis", value.asInstanceOf[js.Any])
     
-    inline def setGetSarif(value: `952`): Self = StObject.set(x, "getSarif", value.asInstanceOf[js.Any])
+    inline def setGetCodeqlDatabase(value: `966`): Self = StObject.set(x, "getCodeqlDatabase", value.asInstanceOf[js.Any])
     
-    inline def setListAlertInstances(value: `953`): Self = StObject.set(x, "listAlertInstances", value.asInstanceOf[js.Any])
+    inline def setGetSarif(value: `967`): Self = StObject.set(x, "getSarif", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForEnterprise(value: `954`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
+    inline def setListAlertInstances(value: `968`): Self = StObject.set(x, "listAlertInstances", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForOrg(value: `955`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
+    inline def setListAlertsForEnterprise(value: `969`): Self = StObject.set(x, "listAlertsForEnterprise", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsForRepo(value: `956`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
+    inline def setListAlertsForOrg(value: `970`): Self = StObject.set(x, "listAlertsForOrg", value.asInstanceOf[js.Any])
     
-    inline def setListAlertsInstances(value: `953`): Self = StObject.set(x, "listAlertsInstances", value.asInstanceOf[js.Any])
+    inline def setListAlertsForRepo(value: `971`): Self = StObject.set(x, "listAlertsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListRecentAnalyses(value: `957`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
+    inline def setListAlertsInstances(value: `968`): Self = StObject.set(x, "listAlertsInstances", value.asInstanceOf[js.Any])
     
-    inline def setUpdateAlert(value: `958`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    inline def setListCodeqlDatabases(value: `972`): Self = StObject.set(x, "listCodeqlDatabases", value.asInstanceOf[js.Any])
     
-    inline def setUploadSarif(value: `959`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
+    inline def setListRecentAnalyses(value: `973`): Self = StObject.set(x, "listRecentAnalyses", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateAlert(value: `974`): Self = StObject.set(x, "updateAlert", value.asInstanceOf[js.Any])
+    
+    inline def setUploadSarif(value: `975`): Self = StObject.set(x, "uploadSarif", value.asInstanceOf[js.Any])
   }
 }

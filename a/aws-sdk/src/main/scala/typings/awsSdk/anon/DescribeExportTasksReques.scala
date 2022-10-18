@@ -1,10 +1,10 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.ec2Mod.ExportTaskId
-import typings.awsSdk.ec2Mod.ExportTaskIdStringList
-import typings.awsSdk.ec2Mod.Filter
-import typings.awsSdk.ec2Mod.FilterList
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsEc2Mod.ExportTaskId
+import typings.awsSdk.clientsEc2Mod.ExportTaskIdStringList
+import typings.awsSdk.clientsEc2Mod.Filter
+import typings.awsSdk.clientsEc2Mod.FilterList
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

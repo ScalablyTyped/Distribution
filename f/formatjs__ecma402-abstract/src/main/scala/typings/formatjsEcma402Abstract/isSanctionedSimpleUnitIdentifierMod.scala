@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isSanctionedSimpleUnitIdentifierMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", JSImport.Namespace)
+  @JSImport("@formatjs/ecma402-abstract/IsSanctionedSimpleUnitIdentifier", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def IsSanctionedSimpleUnitIdentifier(unitIdentifier: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSanctionedSimpleUnitIdentifier")(unitIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", "SANCTIONED_UNITS")
+  @JSImport("@formatjs/ecma402-abstract/IsSanctionedSimpleUnitIdentifier", "SANCTIONED_UNITS")
   @js.native
   val SANCTIONED_UNITS: js.Array[String] = js.native
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", "SIMPLE_UNITS")
+  @JSImport("@formatjs/ecma402-abstract/IsSanctionedSimpleUnitIdentifier", "SIMPLE_UNITS")
   @js.native
   val SIMPLE_UNITS: js.Array[String] = js.native
   

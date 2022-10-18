@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.chipMod.ChipProps
+import typings.primereact.chipChipMod.ChipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "Chip")
 @js.native
 open class Chip protected ()
-  extends typings.primereact.chipMod.Chip {
+  extends typings.primereact.chipChipMod.Chip {
   def this(props: ChipProps) = this()
   /**
     * @deprecated

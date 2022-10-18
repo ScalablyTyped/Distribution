@@ -132,10 +132,14 @@ object mod {
   
   object prv {
     
-    /* Rewritten from type alias, can be one of: 
-      - typings.typescriptCompare.typescriptCompareBooleans.`false`
-      - typings.typescriptCompare.typescriptCompareBooleans.`true`
-    */
+    /** NOTE: Conditional type definitions are impossible to translate to Scala.
+      * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+      * You'll have to cast your way around this structure, unfortunately. 
+      * TS definition: {{{
+      [A] extends [B] ? true : false
+      }}}
+      */
+    @js.native
     trait Extends[A, B] extends StObject
   }
 }

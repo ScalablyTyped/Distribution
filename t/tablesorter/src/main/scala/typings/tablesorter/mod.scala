@@ -1,19 +1,20 @@
 package typings.tablesorter
 
-import typings.tablesorter.commonEventHandlerMod.CommonEventHandler
-import typings.tablesorter.configEventHandlerMod.ConfigEventHandler
-import typings.tablesorter.configEventMapMod.ConfigEventMap
-import typings.tablesorter.eventMapMod.EventMap
-import typings.tablesorter.filterEventHandlerMod.FilterEventHandler
-import typings.tablesorter.pagerConfigurationMod.PagerConfiguration
-import typings.tablesorter.pagerEventHandlerMod.PagerEventHandler
-import typings.tablesorter.pagerEventMapMod.PagerEventMap
-import typings.tablesorter.parameterlessTriggerNameMapMod.ParameterlessTriggerNameMap
-import typings.tablesorter.relativeSortDefinitionMod.RelativeSortDefinition
-import typings.tablesorter.sortDefinitionMod.SortDefinition
-import typings.tablesorter.tablesorterConfigurationMod.TablesorterConfiguration
-import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
-import typings.tablesorter.tablesorterEventHandlerMod.TablesorterEventHandler
+import typings.tablesorter.filteringFilterEventHandlerMod.FilterEventHandler
+import typings.tablesorter.pagingPagerConfigurationMod.PagerConfiguration
+import typings.tablesorter.pagingPagerEventHandlerMod.PagerEventHandler
+import typings.tablesorter.pagingPagerEventMapMod.PagerEventMap
+import typings.tablesorter.sortingRelativeSortDefinitionMod.RelativeSortDefinition
+import typings.tablesorter.sortingSortDefinitionMod.SortDefinition
+import typings.tablesorter.systemCommonEventHandlerMod.CommonEventHandler
+import typings.tablesorter.systemConfigEventHandlerMod.ConfigEventHandler
+import typings.tablesorter.systemConfigEventMapMod.ConfigEventMap
+import typings.tablesorter.systemEventMapMod.EventMap
+import typings.tablesorter.systemParameterlessTriggerNameMapMod.ParameterlessTriggerNameMap
+import typings.tablesorter.systemTablesorterConfigurationMod.TablesorterConfiguration
+import typings.tablesorter.systemTablesorterConfigurationStoreMod.TablesorterConfigurationStore
+import typings.tablesorter.systemTablesorterEventHandlerMod.TablesorterEventHandler
+import typings.tablesorter.systemTriggerCallbackHandlerMod.TriggerCallbackHandler
 import typings.tablesorter.tablesorterMod.Tablesorter
 import typings.tablesorter.tablesorterStrings.addRows
 import typings.tablesorter.tablesorterStrings.applyWidgetId
@@ -36,7 +37,6 @@ import typings.tablesorter.tablesorterStrings.updateCache
 import typings.tablesorter.tablesorterStrings.updateCell
 import typings.tablesorter.tablesorterStrings.updateHeaders
 import typings.tablesorter.tablesorterStrings.updateRows
-import typings.tablesorter.triggerCallbackHandlerMod.TriggerCallbackHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +46,7 @@ object mod {
   @JSImport("tablesorter", "Theme")
   @js.native
   open class Theme ()
-    extends typings.tablesorter.themeMod.Theme
+    extends typings.tablesorter.designThemeMod.Theme
   
   object global {
     
@@ -80,9 +80,9 @@ object mod {
     @js.native
     trait JQuery[TElement] extends StObject {
       
+      def bind(name: PagerEventMap, callback: PagerEventHandler[TElement]): this.type = js.native
       def bind(name: ConfigEventMap, callback: ConfigEventHandler[TElement]): this.type = js.native
       def bind(name: EventMap, callback: TablesorterEventHandler[TElement]): this.type = js.native
-      def bind(name: PagerEventMap, callback: PagerEventHandler[TElement]): this.type = js.native
       @JSName("bind")
       def bind_filterStart(name: filterStart, callback: FilterEventHandler[TElement]): this.type = js.native
       @JSName("bind")

@@ -7,17 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatInTimeZoneIndexMod {
   
-  object default {
-    
-    inline def apply(date: String, timeZone: String, formatStr: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def apply(date: String, timeZone: String, formatStr: String, options: OptionsWithTZ): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def apply(date: js.Date, timeZone: String, formatStr: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def apply(date: js.Date, timeZone: String, formatStr: String, options: OptionsWithTZ): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def apply(date: Double, timeZone: String, formatStr: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def apply(date: Double, timeZone: String, formatStr: String, options: OptionsWithTZ): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    @JSImport("date-fns-tz/esm/formatInTimeZone/index", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-  }
+  inline def apply(date: String, timeZone: String, formatStr: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: String, timeZone: String, formatStr: String, options: OptionsWithTZ): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: js.Date, timeZone: String, formatStr: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: js.Date, timeZone: String, formatStr: String, options: OptionsWithTZ): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, timeZone: String, formatStr: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(date: Double, timeZone: String, formatStr: String, options: OptionsWithTZ): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any], formatStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("date-fns-tz/formatInTimeZone/index", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

@@ -1,9 +1,9 @@
 package typings.vegaTypings.anon
 
-import typings.vegaTypings.runtimeRuntimeMod.ID
-import typings.vegaTypings.runtimeRuntimeMod.Stream
-import typings.vegaTypings.runtimeRuntimeMod.expr
-import typings.vegaTypings.streamMod.EventType
+import typings.vegaTypings.typesRuntimeRuntimeMod.ID
+import typings.vegaTypings.typesRuntimeRuntimeMod.Stream
+import typings.vegaTypings.typesRuntimeRuntimeMod.expr
+import typings.vegaTypings.typesSpecStreamMod.EventType
 import typings.vegaTypings.vegaTypingsBooleans.`true`
 import typings.vegaTypings.vegaTypingsStrings.view
 import org.scalablytyped.runtime.StObject

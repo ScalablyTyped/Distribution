@@ -1,9 +1,9 @@
 package typings.rcCascader
 
-import typings.rcCascader.cascaderMod.BaseOptionType
-import typings.rcCascader.cascaderMod.DefaultOptionType
-import typings.rcCascader.cascaderMod.SingleValueType
-import typings.rcSelect.baseSelectMod.BaseSelectRef
+import typings.rcCascader.esCascaderMod.BaseOptionType
+import typings.rcCascader.esCascaderMod.DefaultOptionType
+import typings.rcCascader.esCascaderMod.SingleValueType
+import typings.rcSelect.libBaseSelectMod.BaseSelectRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

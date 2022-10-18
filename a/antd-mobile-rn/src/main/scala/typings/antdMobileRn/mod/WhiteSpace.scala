@@ -1,6 +1,6 @@
 package typings.antdMobileRn.mod
 
-import typings.antdMobileRn.whiteSpaceIndexNativeMod.default
+import typings.antdMobileRn.libWhiteSpaceIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

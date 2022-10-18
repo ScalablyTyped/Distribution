@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "DenseSparseChooseBasedOnThreshold")
 @js.native
 open class DenseSparseChooseBasedOnThreshold protected ()
-  extends typings.hyperformula.chooseAddressMappingPolicyMod.DenseSparseChooseBasedOnThreshold {
+  extends typings.hyperformula.typingsDependencyGraphAddressMappingChooseAddressMappingPolicyMod.DenseSparseChooseBasedOnThreshold {
   def this(threshold: Double) = this()
 }

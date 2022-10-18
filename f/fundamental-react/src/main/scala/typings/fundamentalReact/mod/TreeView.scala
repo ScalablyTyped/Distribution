@@ -14,11 +14,11 @@ import typings.fundamentalReact.fundamentalReactStrings.TreeViewDotHead
 import typings.fundamentalReact.fundamentalReactStrings.TreeViewDotItem
 import typings.fundamentalReact.fundamentalReactStrings.TreeViewDotRow
 import typings.fundamentalReact.fundamentalReactStrings.TreeViewDotTree
-import typings.fundamentalReact.treeViewMod.TreeColProps
-import typings.fundamentalReact.treeViewMod.TreeHeadProps
-import typings.fundamentalReact.treeViewMod.TreeItemProps
-import typings.fundamentalReact.treeViewMod.TreeRowProps
-import typings.fundamentalReact.treeViewMod.default
+import typings.fundamentalReact.libTreeViewTreeViewMod.TreeColProps
+import typings.fundamentalReact.libTreeViewTreeViewMod.TreeHeadProps
+import typings.fundamentalReact.libTreeViewTreeViewMod.TreeItemProps
+import typings.fundamentalReact.libTreeViewTreeViewMod.TreeRowProps
+import typings.fundamentalReact.libTreeViewTreeViewMod.default
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
 import typings.react.mod.Context

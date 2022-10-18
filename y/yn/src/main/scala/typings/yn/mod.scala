@@ -12,7 +12,6 @@ object mod {
   
   inline def default(input: Any): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   inline def default(input: Any, options: Options): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-  inline def default(input: Any, options: OptionsWithDefault): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Options extends StObject {
     

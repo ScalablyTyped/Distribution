@@ -1,24 +1,22 @@
 package typings.nivoBar.anon
 
-import typings.nivoBar.typesMod.ComputedDatum
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Data[RawDatum] extends StObject {
+trait Data extends StObject {
   
-  var data: Partial[ComputedDatum[RawDatum]] & Hidden
+  var data: Value
 }
 object Data {
   
-  inline def apply[RawDatum](data: Partial[ComputedDatum[RawDatum]] & Hidden): Data[RawDatum] = {
+  inline def apply(data: Value): Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Data[RawDatum]]
+    __obj.asInstanceOf[Data]
   }
   
-  extension [Self <: Data[?], RawDatum](x: Self & Data[RawDatum]) {
+  extension [Self <: Data](x: Self) {
     
-    inline def setData(value: Partial[ComputedDatum[RawDatum]] & Hidden): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Value): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

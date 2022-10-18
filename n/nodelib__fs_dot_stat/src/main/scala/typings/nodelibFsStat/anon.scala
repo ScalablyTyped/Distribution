@@ -1,9 +1,9 @@
 package typings.nodelibFsStat
 
 import typings.node.fsMod.Stats
-import typings.nodelibFsStat.fsMod.StatAsynchronousMethod
-import typings.nodelibFsStat.fsMod.StatSynchronousMethod
-import typings.nodelibFsStat.typesMod.ErrnoException
+import typings.nodelibFsStat.outAdaptersFsMod.StatAsynchronousMethod
+import typings.nodelibFsStat.outAdaptersFsMod.StatSynchronousMethod
+import typings.nodelibFsStat.outTypesMod.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

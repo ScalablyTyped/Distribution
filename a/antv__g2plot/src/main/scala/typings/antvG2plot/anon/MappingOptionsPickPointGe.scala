@@ -1,12 +1,12 @@
 package typings.antvG2plot.anon
 
-import typings.antvG2plot.attrMod.ColorAttr
-import typings.antvG2plot.attrMod.ShapeAttr
-import typings.antvG2plot.attrMod.ShapeStyle
-import typings.antvG2plot.attrMod.SizeAttr
-import typings.antvG2plot.attrMod.StyleAttr
-import typings.antvG2plot.attrMod.TooltipAttr
-import typings.antvG2plot.typesCommonMod.Datum
+import typings.antvG2plot.libTypesAttrMod.ColorAttr
+import typings.antvG2plot.libTypesAttrMod.ShapeAttr
+import typings.antvG2plot.libTypesAttrMod.ShapeStyle
+import typings.antvG2plot.libTypesAttrMod.SizeAttr
+import typings.antvG2plot.libTypesAttrMod.StyleAttr
+import typings.antvG2plot.libTypesAttrMod.TooltipAttr
+import typings.antvG2plot.libTypesCommonMod.Datum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ trait MappingOptionsPickPointGe extends StObject {
   /** 大小映射, 提供回调的方式 */
   val size: js.UndefOr[SizeAttr] = js.undefined
   
-  var state: js.UndefOr[typings.antvG2plot.stateMod.State] = js.undefined
+  var state: js.UndefOr[typings.antvG2plot.libTypesStateMod.State] = js.undefined
   
   /** 样式映射 */
   val style: js.UndefOr[StyleAttr] = js.undefined
@@ -62,7 +62,7 @@ object MappingOptionsPickPointGe {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
@@ -72,7 +72,7 @@ object MappingOptionsPickPointGe {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTooltip(value: /* datum */ Datum => NameString): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
+    inline def setTooltip(value: /* datum */ Datum => NameValue): Self = StObject.set(x, "tooltip", js.Any.fromFunction1(value))
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }

@@ -13,13 +13,29 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]]]
+  inline def default[T](input: T): IfAny[
+    T, 
+    ErrorWithStackError, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Error ? ensure-error.ensure-error.ErrorWithStack<T> : ensure-error.ensure-error.NonError */ js.Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[
+    T, 
+    ErrorWithStackError, 
+    /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Error ? ensure-error.ensure-error.ErrorWithStack<T> : ensure-error.ensure-error.NonError */ js.Any
+  ]]
   
   type ErrorWithStack[T] = T & Stack
   
   // IfAny<T, ThenType, ElseType> resolves to ThenType if T is `any` and resolves to ElseType otherwise
   // https://stackoverflow.com/a/49928360/4135063
-  type IfAny[T, ThenType, ElseType] = ElseType | ThenType
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    0 extends 1 & T ? ThenType : ElseType
+    }}}
+    */
+  @js.native
+  trait IfAny[T, ThenType, ElseType] extends StObject
   
   trait NonError
     extends StObject

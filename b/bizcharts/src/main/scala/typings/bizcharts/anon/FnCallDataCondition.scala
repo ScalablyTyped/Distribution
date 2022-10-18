@@ -1,6 +1,6 @@
 package typings.bizcharts.anon
 
-import typings.antvUtil.groupByMod.ObjectType
+import typings.antvUtil.libLodashGroupByMod.ObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

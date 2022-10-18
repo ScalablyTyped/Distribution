@@ -1,7 +1,7 @@
 package typings.floatingUiDom.anon
 
-import typings.floatingUiCore.typesMod.ElementContext
-import typings.floatingUiCore.typesMod.Padding
+import typings.floatingUiCore.srcTypesMod.ElementContext
+import typings.floatingUiCore.srcTypesMod.Padding
 import typings.floatingUiDom.floatingUiDomStrings.escaped
 import typings.floatingUiDom.floatingUiDomStrings.referenceHidden
 import org.scalablytyped.runtime.StObject
@@ -13,13 +13,13 @@ trait PartialHideOptionsDetectO extends StObject {
   
   var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[typings.floatingUiDom.typesMod.Boundary] = js.undefined
+  var boundary: js.UndefOr[typings.floatingUiDom.srcTypesMod.Boundary] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
   var padding: js.UndefOr[Padding] = js.undefined
   
-  var rootBoundary: js.UndefOr[typings.floatingUiCore.typesMod.RootBoundary] = js.undefined
+  var rootBoundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.RootBoundary] = js.undefined
   
   var strategy: js.UndefOr[referenceHidden | escaped] = js.undefined
 }
@@ -36,7 +36,7 @@ object PartialHideOptionsDetectO {
     
     inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    inline def setBoundary(value: typings.floatingUiDom.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: typings.floatingUiDom.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
@@ -50,7 +50,7 @@ object PartialHideOptionsDetectO {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setRootBoundary(value: typings.floatingUiCore.typesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+    inline def setRootBoundary(value: typings.floatingUiCore.srcTypesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
     
     inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
     

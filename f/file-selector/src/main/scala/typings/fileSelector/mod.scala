@@ -1,6 +1,6 @@
 package typings.fileSelector
 
-import typings.fileSelector.fileMod.FileWithPath
+import typings.fileSelector.distFileMod.FileWithPath
 import typings.std.DataTransferItem
 import typings.std.Event
 import org.scalablytyped.runtime.StObject

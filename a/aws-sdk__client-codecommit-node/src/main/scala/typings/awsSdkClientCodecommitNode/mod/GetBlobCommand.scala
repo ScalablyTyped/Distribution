@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-codecommit-node", "GetBlobCommand")
 @js.native
 open class GetBlobCommand protected ()
-  extends typings.awsSdkClientCodecommitNode.getBlobCommandMod.GetBlobCommand {
+  extends typings.awsSdkClientCodecommitNode.commandsGetBlobCommandMod.GetBlobCommand {
   def this(input: GetBlobInput) = this()
 }

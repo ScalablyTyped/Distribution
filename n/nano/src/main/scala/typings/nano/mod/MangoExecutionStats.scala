@@ -4,23 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/database/find.html#execution-statistics
+/** Mango execution stats.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/database/find.html#execution-statistics} */
 trait MangoExecutionStats extends StObject {
   
-  // Total execution time in milliseconds as measured by the database.
+  /** Total execution time in milliseconds as measured by the database. */
   var execution_time_ms: Double
   
-  // Number of results returned from the query.
+  /** Number of results returned from the query. */
   var results_returned: Double
   
-  // Number of documents fetched from the database / index, equivalent to using include_docs = true in a view.
+  /** Number of documents fetched from the database / index.
+    *
+    * Equivalent to using include_docs = true in a view. */
   var total_docs_examined: Double
   
-  // Number of index keys examined. Currently always 0.
+  /** Number of index keys examined. Currently always 0. */
   var total_keys_examined: Double
   
-  // Number of documents fetched from the database using an out - of - band document fetch.
-  // This is only non - zero when read quorum > 1 is specified in the query parameters.
+  /** Number of documents fetched from the database using an out-of-band document fetch.
+    *
+    * This is only non-zero when read quorum > 1 is specified in the query parameters. */
   var total_quorum_docs_examined: Double
 }
 object MangoExecutionStats {

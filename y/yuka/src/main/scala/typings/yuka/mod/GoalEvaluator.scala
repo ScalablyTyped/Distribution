@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param characterBias - Can be used to adjust the preferences of agents.
   */
-open class GoalEvaluator[T /* <: typings.yuka.gameEntityMod.GameEntity */] ()
-  extends typings.yuka.yukaMod.GoalEvaluator[T] {
+open class GoalEvaluator[T /* <: typings.yuka.srcCoreGameEntityMod.GameEntity */] ()
+  extends typings.yuka.srcYukaMod.GoalEvaluator[T] {
   def this(characterBias: Double) = this()
 }

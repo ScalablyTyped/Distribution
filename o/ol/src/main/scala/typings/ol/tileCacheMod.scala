@@ -13,7 +13,7 @@ object tileCacheMod {
   
   @js.native
   trait TileCache
-    extends typings.ol.lrucacheMod.default[Any] {
+    extends typings.ol.structsLrucacheMod.default[Any] {
     
     def expireCache(usedTiles: StringDictionary[Boolean]): Unit = js.native
     

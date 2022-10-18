@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientSecretmanagerStrings {
   
   @js.native
-  sealed trait Location extends StObject
-  inline def Location: Location = "Location".asInstanceOf[Location]
-  
-  @js.native
-  sealed trait Secret extends StObject
-  inline def Secret: Secret = "Secret".asInstanceOf[Secret]
-  
-  @js.native
   sealed trait secretmanager extends StObject
   inline def secretmanager: secretmanager = "secretmanager".asInstanceOf[secretmanager]
   

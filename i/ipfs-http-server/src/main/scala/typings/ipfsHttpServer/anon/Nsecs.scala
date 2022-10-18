@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Nsecs extends StObject {
   
-  var nsecs: js.Any
+  var nsecs: Double
   
-  var secs: js.Any
+  var secs: Double
 }
 object Nsecs {
   
-  inline def apply(nsecs: js.Any, secs: js.Any): Nsecs = {
+  inline def apply(nsecs: Double, secs: Double): Nsecs = {
     val __obj = js.Dynamic.literal(nsecs = nsecs.asInstanceOf[js.Any], secs = secs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nsecs]
   }
   
   extension [Self <: Nsecs](x: Self) {
     
-    inline def setNsecs(value: js.Any): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+    inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
     
-    inline def setSecs(value: js.Any): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
+    inline def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
   }
 }

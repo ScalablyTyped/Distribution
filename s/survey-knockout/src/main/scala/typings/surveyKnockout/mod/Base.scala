@@ -81,6 +81,9 @@ open class Base () extends StObject {
   
   def getDataFilteredValues(): Any = js.native
   
+  def getElementsInDesign(): js.Array[IElement] = js.native
+  def getElementsInDesign(includeHidden: Boolean): js.Array[IElement] = js.native
+  
   /* protected */ def getIsLoadingFromJson(): Boolean = js.native
   
   /* protected */ def getItemValueType(): String = js.native
@@ -236,17 +239,17 @@ open class Base () extends StObject {
   /* protected */ def propertyValueChanged(name: String, oldValue: Any, newValue: Any, arrayChanges: ArrayChanges): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: Any, newValue: Any, arrayChanges: ArrayChanges, target: Base): Unit = js.native
   
-  /*
-    * Register a function that will be called on a property value changed from the names list.
-    */
   def registerFunctionOnPropertiesValueChanged(names: Any, func: Any): Unit = js.native
   def registerFunctionOnPropertiesValueChanged(names: Any, func: Any, key: String): Unit = js.native
   
-  /*
-    * Register a function that will be called on a property value changed.
-    */
   def registerFunctionOnPropertyValueChanged(name: String, func: Any): Unit = js.native
   def registerFunctionOnPropertyValueChanged(name: String, func: Any, key: String): Unit = js.native
+  
+  /*
+    * Register a function that will be called on a property value changed from the propertyNames list.
+    */
+  def registerPropertyChangedHandlers(propertyNames: Any, handler: Any): Unit = js.native
+  def registerPropertyChangedHandlers(propertyNames: Any, handler: Any, key: String): Unit = js.native
   
   /* protected */ def runConditionCore(values: Any, properties: Any): Unit = js.native
   
@@ -282,17 +285,17 @@ open class Base () extends StObject {
   
   /* protected */ def trimValue(value: Any): Any = js.native
   
-  /*
-    * Unregister notification on property value changed for all properties in the names list.
-    */
   def unRegisterFunctionOnPropertiesValueChanged(names: Any): Unit = js.native
   def unRegisterFunctionOnPropertiesValueChanged(names: Any, key: String): Unit = js.native
   
-  /*
-    * Unregister notification on property value changed
-    */
   def unRegisterFunctionOnPropertyValueChanged(name: String): Unit = js.native
   def unRegisterFunctionOnPropertyValueChanged(name: String, key: String): Unit = js.native
+  
+  /*
+    * Unregister notification on property value changed for all properties in the propetyNames list.
+    */
+  def unregisterPropertyChangedHandlers(propertyNames: Any): Unit = js.native
+  def unregisterPropertyChangedHandlers(propertyNames: Any, key: String): Unit = js.native
   
   /* protected */ def updateBindingValue(valueName: String, value: Any): Unit = js.native
   

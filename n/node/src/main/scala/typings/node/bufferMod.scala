@@ -2,6 +2,7 @@ package typings.node
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.anon.Data
 import typings.node.anon.ToPrimitive
 import typings.node.anon.ValueOf
@@ -16,6 +17,7 @@ import typings.node.fsMod._WriteFileOptions
 import typings.node.nodeInts.`-1`
 import typings.node.nodeInts.`0`
 import typings.node.nodeInts.`1`
+import typings.node.streamWebMod.ReadableStream
 import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
@@ -39,8 +41,8 @@ object bufferMod {
       *
       * String sources are also copied into the `Blob`.
       */
-    def this(sources: js.Array[BinaryLike | typings.node.bufferMod.Blob]) = this()
-    def this(sources: js.Array[BinaryLike | typings.node.bufferMod.Blob], options: BlobOptions) = this()
+    def this(sources: js.Array[BinaryLike | Blob]) = this()
+    def this(sources: js.Array[BinaryLike | Blob], options: BlobOptions) = this()
     
     /**
       * Returns a promise that fulfills with an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) containing a copy of
@@ -63,20 +65,20 @@ object bufferMod {
       * @param end The ending index.
       * @param type The content-type for the new `Blob`
       */
-    def slice(): typings.node.bufferMod.Blob = js.native
-    def slice(start: Double): typings.node.bufferMod.Blob = js.native
-    def slice(start: Double, end: Double): typings.node.bufferMod.Blob = js.native
-    def slice(start: Double, end: Double, `type`: String): typings.node.bufferMod.Blob = js.native
-    def slice(start: Double, end: Unit, `type`: String): typings.node.bufferMod.Blob = js.native
-    def slice(start: Unit, end: Double): typings.node.bufferMod.Blob = js.native
-    def slice(start: Unit, end: Double, `type`: String): typings.node.bufferMod.Blob = js.native
-    def slice(start: Unit, end: Unit, `type`: String): typings.node.bufferMod.Blob = js.native
+    def slice(): Blob = js.native
+    def slice(start: Double): Blob = js.native
+    def slice(start: Double, end: Double): Blob = js.native
+    def slice(start: Double, end: Double, `type`: String): Blob = js.native
+    def slice(start: Double, end: Unit, `type`: String): Blob = js.native
+    def slice(start: Unit, end: Double): Blob = js.native
+    def slice(start: Unit, end: Double, `type`: String): Blob = js.native
+    def slice(start: Unit, end: Unit, `type`: String): Blob = js.native
     
     /**
-      * Returns a new `ReadableStream` that allows the content of the `Blob` to be read.
+      * Returns a new (WHATWG) `ReadableStream` that allows the content of the `Blob` to be read.
       * @since v16.7.0
       */
-    def stream(): Any = js.native
+    def stream(): ReadableStream[Any] = js.native
     
     /**
       * Returns a promise that fulfills with the contents of the `Blob` decoded as a
@@ -185,6 +187,18 @@ object bufferMod {
   }
   
   object global {
+    
+    /**
+      * `Blob` class is a global reference for `require('node:buffer').Blob`
+      * https://nodejs.org/api/buffer.html#class-blob
+      * @since v18.0.0
+      */
+    @JSGlobal("Blob")
+    @js.native
+    def Blob: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   Blob :infer T} ? T : new (sources : std.Array<node.crypto.BinaryLike | node.buffer.Blob>, options : node.buffer.BlobOptions | undefined): node.buffer.Blob */ js.Any = js.native
+    inline def Blob_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   Blob :infer T} ? T : new (sources : std.Array<node.crypto.BinaryLike | node.buffer.Blob>, options : node.buffer.BlobOptions | undefined): node.buffer.Blob */ js.Any
+    ): Unit = js.Dynamic.global.updateDynamic("Blob")(x.asInstanceOf[js.Any])
     
     @js.native
     trait Buffer
@@ -2209,9 +2223,9 @@ object bufferMod {
       def byteLength(string: String): Double = js.native
       def byteLength(string: String, encoding: BufferEncoding): Double = js.native
       def byteLength(string: js.typedarray.ArrayBuffer): Double = js.native
-      def byteLength(string: js.typedarray.ArrayBufferView): Double = js.native
-      def byteLength(string: js.typedarray.ArrayBufferView, encoding: BufferEncoding): Double = js.native
       def byteLength(string: js.typedarray.ArrayBuffer, encoding: BufferEncoding): Double = js.native
+      def byteLength(string: ArrayBufferView): Double = js.native
+      def byteLength(string: ArrayBufferView, encoding: BufferEncoding): Double = js.native
       def byteLength(string: SharedArrayBuffer): Double = js.native
       def byteLength(string: SharedArrayBuffer, encoding: BufferEncoding): Double = js.native
       
@@ -2431,7 +2445,7 @@ object bufferMod {
   @js.native
   val kStringMaxLength: Double = js.native
   
-  inline def resolveObjectURL(id: String): js.UndefOr[typings.node.bufferMod.Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveObjectURL")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.node.bufferMod.Blob]]
+  inline def resolveObjectURL(id: String): js.UndefOr[Blob] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveObjectURL")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Blob]]
   
   inline def transcode(source: js.typedarray.Uint8Array, fromEnc: TranscodeEncoding, toEnc: TranscodeEncoding): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("transcode")(source.asInstanceOf[js.Any], fromEnc.asInstanceOf[js.Any], toEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
@@ -2491,4 +2505,16 @@ object bufferMod {
     
     inline def utf8: typings.node.nodeStrings.utf8 = "utf8".asInstanceOf[typings.node.nodeStrings.utf8]
   }
+  
+  // This conditional type will be the existing global Blob in a browser, or
+  // the copy below in a Node environment.
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    / * globalThis * / any extends {  onmessage :any,   Blob :infer T} ? T : node.buffer.Blob
+    }}}
+    */
+  @js.native
+  trait _Blob extends StObject
 }

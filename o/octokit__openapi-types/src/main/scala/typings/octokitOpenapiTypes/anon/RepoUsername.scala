@@ -7,37 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RepoUsername extends StObject {
   
   /** The account owner of the repository. The name is not case sensitive. */
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
+  var owner: String
   
   /** The name of the repository. The name is not case sensitive. */
-  var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
+  var repo: String
   
   /** The handle for the GitHub user account. */
-  var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
+  var username: String
 }
 object RepoUsername {
   
-  inline def apply(
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
-    repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any,
-    username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
-  ): RepoUsername = {
+  inline def apply(owner: String, repo: String, username: String): RepoUsername = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepoUsername]
   }
   
   extension [Self <: RepoUsername](x: Self) {
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setRepo(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
-    ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    inline def setUsername(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
-    ): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.wixUiIconsCommon.componentsShippingMod.ShippingProps
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsShippingMod.ShippingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shippingMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/classic-editor/Shipping", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Shipping", JSImport.Default)
   @js.native
   val default: FC[ShippingProps] = js.native
   

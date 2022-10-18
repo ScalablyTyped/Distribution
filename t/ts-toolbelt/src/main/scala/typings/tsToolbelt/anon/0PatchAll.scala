@@ -1,15 +1,15 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.iterationMod.Iteration
-import typings.tsToolbelt.nextMod.Next
-import typings.tsToolbelt.objectInternalMod.Depth
-import typings.tsToolbelt.objectPatchAllMod.__PatchAll
-import typings.tsToolbelt.objectPatchMod.Patch
+import typings.tsToolbelt.outIterationIterationMod.Iteration
+import typings.tsToolbelt.outIterationNextMod.Next
+import typings.tsToolbelt.outObjectInternalMod.Depth
+import typings.tsToolbelt.outObjectPatchAllMod.__PatchAll
+import typings.tsToolbelt.outObjectPatchMod.Patch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `0PatchAll`[O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] extends StObject {
+trait `0PatchAll`[O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */] extends StObject {
   
   var `0`: __PatchAll[
     Patch[
@@ -30,7 +30,7 @@ trait `0PatchAll`[O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List
 }
 object `0PatchAll` {
   
-  inline def apply[O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](
+  inline def apply[O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](
     `0`: __PatchAll[
       Patch[
         O, 
@@ -53,7 +53,7 @@ object `0PatchAll` {
     __obj.asInstanceOf[`0PatchAll`[O, Os, I, depth, ignore, fill]]
   }
   
-  extension [Self <: `0PatchAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.listMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0PatchAll`[O, Os, I, depth, ignore, fill])) {
+  extension [Self <: `0PatchAll`[?, ?, ?, ?, ?, ?], O /* <: js.Object */, Os /* <: typings.tsToolbelt.outListListMod.List[js.Object] */, I /* <: Iteration */, depth /* <: Depth */, ignore /* <: js.Object */, fill /* <: Any */](x: Self & (`0PatchAll`[O, Os, I, depth, ignore, fill])) {
     
     inline def set0(
       value: __PatchAll[

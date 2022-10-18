@@ -1,6 +1,6 @@
 package typings.nextServer.anon
 
-import typings.nextServer.libUtilsMod.BaseContext
+import typings.nextServer.distLibUtilsMod.BaseContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

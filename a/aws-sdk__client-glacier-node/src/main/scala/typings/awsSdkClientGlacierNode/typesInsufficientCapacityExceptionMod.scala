@@ -1,6 +1,6 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.awsSdkClientGlacierNode.initiateJobExceptionsUnionMod.InitiateJobExceptionsUnion
+import typings.awsSdkClientGlacierNode.typesInitiateJobExceptionsUnionMod.InitiateJobExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

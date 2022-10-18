@@ -1,8 +1,8 @@
 package typings.bugsnagJs
 
-import typings.bugsnagJs.clientMod.Client
-import typings.bugsnagJs.clientMod.IPlugin
-import typings.bugsnagJs.commonMod.IConfig
+import typings.bugsnagJs.typesClientMod.Client
+import typings.bugsnagJs.typesClientMod.IPlugin
+import typings.bugsnagJs.typesCommonMod.IConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +24,11 @@ object mod {
     @JSImport("bugsnag-js", "Bugsnag.default")
     @js.native
     open class default ()
-      extends typings.bugsnagJs.clientMod.default
+      extends typings.bugsnagJs.typesClientMod.default
     
     @JSImport("bugsnag-js", "Bugsnag.Client")
     @js.native
     open class Client ()
-      extends typings.bugsnagJs.clientMod.Client
+      extends typings.bugsnagJs.typesClientMod.Client
   }
 }

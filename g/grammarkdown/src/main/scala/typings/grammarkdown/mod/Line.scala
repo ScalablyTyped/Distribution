@@ -1,46 +1,46 @@
 package typings.grammarkdown.mod
 
-import typings.grammarkdown.tokensMod.SyntaxKind.AtToken
-import typings.grammarkdown.tokensMod.SyntaxKind.DefaultKeyword
-import typings.grammarkdown.tokensMod.SyntaxKind.LineKeyword
+import typings.grammarkdown.distTokensMod.SyntaxKind.AtToken
+import typings.grammarkdown.distTokensMod.SyntaxKind.DefaultKeyword
+import typings.grammarkdown.distTokensMod.SyntaxKind.LineKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Line")
 @js.native
-class Line protected ()
-  extends typings.grammarkdown.nodesMod.Line {
+open class Line protected ()
+  extends typings.grammarkdown.distNodesMod.Line {
   def this(
-    atToken: typings.grammarkdown.nodesMod.Token[AtToken],
-    lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword]
+    atToken: typings.grammarkdown.distNodesMod.Token[AtToken],
+    lineKeyword: typings.grammarkdown.distNodesMod.Token[LineKeyword]
   ) = this()
   def this(
-    atToken: typings.grammarkdown.nodesMod.Token[AtToken],
-    lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword],
-    number: typings.grammarkdown.nodesMod.NumberLiteral
+    atToken: typings.grammarkdown.distNodesMod.Token[AtToken],
+    lineKeyword: typings.grammarkdown.distNodesMod.Token[LineKeyword],
+    number: typings.grammarkdown.distNodesMod.NumberLiteral
   ) = this()
   def this(
-    atToken: typings.grammarkdown.nodesMod.Token[AtToken],
-    lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword],
-    number: typings.grammarkdown.nodesMod.Token[DefaultKeyword]
+    atToken: typings.grammarkdown.distNodesMod.Token[AtToken],
+    lineKeyword: typings.grammarkdown.distNodesMod.Token[LineKeyword],
+    number: typings.grammarkdown.distNodesMod.Token[DefaultKeyword]
   ) = this()
   def this(
-    atToken: typings.grammarkdown.nodesMod.Token[AtToken],
-    lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword],
+    atToken: typings.grammarkdown.distNodesMod.Token[AtToken],
+    lineKeyword: typings.grammarkdown.distNodesMod.Token[LineKeyword],
     number: Unit,
-    path: typings.grammarkdown.nodesMod.StringLiteral
+    path: typings.grammarkdown.distNodesMod.StringLiteral
   ) = this()
   def this(
-    atToken: typings.grammarkdown.nodesMod.Token[AtToken],
-    lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword],
-    number: typings.grammarkdown.nodesMod.NumberLiteral,
-    path: typings.grammarkdown.nodesMod.StringLiteral
+    atToken: typings.grammarkdown.distNodesMod.Token[AtToken],
+    lineKeyword: typings.grammarkdown.distNodesMod.Token[LineKeyword],
+    number: typings.grammarkdown.distNodesMod.NumberLiteral,
+    path: typings.grammarkdown.distNodesMod.StringLiteral
   ) = this()
   def this(
-    atToken: typings.grammarkdown.nodesMod.Token[AtToken],
-    lineKeyword: typings.grammarkdown.nodesMod.Token[LineKeyword],
-    number: typings.grammarkdown.nodesMod.Token[DefaultKeyword],
-    path: typings.grammarkdown.nodesMod.StringLiteral
+    atToken: typings.grammarkdown.distNodesMod.Token[AtToken],
+    lineKeyword: typings.grammarkdown.distNodesMod.Token[LineKeyword],
+    number: typings.grammarkdown.distNodesMod.Token[DefaultKeyword],
+    path: typings.grammarkdown.distNodesMod.StringLiteral
   ) = this()
 }

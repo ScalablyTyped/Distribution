@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the status of the package. */
-@JSGlobal("Windows.ApplicationModel.PackageStatus")
+/* note: abstract class */ @JSGlobal("Windows.ApplicationModel.PackageStatus")
 @js.native
-abstract class PackageStatus ()
+open class PackageStatus ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.PackageStatus {
   

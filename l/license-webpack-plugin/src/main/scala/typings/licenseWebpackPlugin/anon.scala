@@ -1,10 +1,10 @@
 package typings.licenseWebpackPlugin
 
-import typings.licenseWebpackPlugin.packageJsonMod.PackageJson
-import typings.licenseWebpackPlugin.webpackChunkMod.WebpackChunk
-import typings.licenseWebpackPlugin.webpackCompilationMod.WebpackCompilation
-import typings.licenseWebpackPlugin.webpackCompilationMod.WebpackStatsOptions
-import typings.licenseWebpackPlugin.webpackStatsMod.WebpackStats
+import typings.licenseWebpackPlugin.distPackageJsonMod.PackageJson
+import typings.licenseWebpackPlugin.distWebpackChunkMod.WebpackChunk
+import typings.licenseWebpackPlugin.distWebpackCompilationMod.WebpackCompilation
+import typings.licenseWebpackPlugin.distWebpackCompilationMod.WebpackStatsOptions
+import typings.licenseWebpackPlugin.distWebpackStatsMod.WebpackStats
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -11,9 +11,10 @@ import typings.browserify.browserifyStrings.file
 import typings.browserify.browserifyStrings.reset
 import typings.browserify.browserifyStrings.transform
 import typings.insertModuleGlobals.mod.VarsOption
+import typings.node.NodeJS.ReadWriteStream
+import typings.node.NodeJS.ReadableStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,8 +77,8 @@ object mod extends Shortcut {
       * Bundle the files and their dependencies into a single javascript file.
       * Return a readable stream with the javascript file contents or optionally specify a cb(err, buf) to get the buffered results.
       */
-    def bundle(): ReadableStream[Any] = js.native
-    def bundle(cb: js.Function2[/* err */ Any, /* src */ Buffer, Any]): ReadableStream[Any] = js.native
+    def bundle(): ReadableStream = js.native
+    def bundle(cb: js.Function2[/* err */ Any, /* src */ Buffer, Any]): ReadableStream = js.native
     
     /**
       * Prevent the module name or file at file from showing up in the output bundle.
@@ -109,7 +110,7 @@ object mod extends Shortcut {
       * When .bundle() is called, this event fires with the bundle output stream.
       */
     @JSName("on")
-    def on_bundle(event: bundle, listener: js.Function1[/* bundle */ ReadableStream[Any], Any]): this.type = js.native
+    def on_bundle(event: bundle, listener: js.Function1[/* bundle */ ReadableStream, Any]): this.type = js.native
     /**
       * When a file is resolved for the bundle, the bundle emits a 'file' event with the full file path, the id string passed to require(), and the parent object used by browser-resolve.
       * You could use the file event to implement a file watcher to regenerate bundles when files change.
@@ -131,14 +132,7 @@ object mod extends Shortcut {
       * When a transform is applied to a file, the 'transform' event fires on the bundle stream with the transform stream tr and the file that the transform is being applied to.
       */
     @JSName("on")
-    def on_transform(
-      event: transform,
-      listener: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ /* tr */ Any, 
-          /* file */ String, 
-          Any
-        ]
-    ): this.type = js.native
+    def on_transform(event: transform, listener: js.Function2[/* tr */ ReadWriteStream, /* file */ String, Any]): this.type = js.native
     
     /**
       * Set to any until substack/labeled-stream-splicer is defined
@@ -178,21 +172,8 @@ object mod extends Shortcut {
       */
     def transform[T /* <: CustomOptions */](tr: String): BrowserifyObject = js.native
     def transform[T /* <: CustomOptions */](tr: String, opts: T): BrowserifyObject = js.native
-    def transform[T /* <: CustomOptions */](
-      tr: js.Function2[
-          /* file */ String, 
-          /* opts */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-        ]
-    ): BrowserifyObject = js.native
-    def transform[T /* <: CustomOptions */](
-      tr: js.Function2[
-          /* file */ String, 
-          /* opts */ T, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-        ],
-      opts: T
-    ): BrowserifyObject = js.native
+    def transform[T /* <: CustomOptions */](tr: js.Function2[/* file */ String, /* opts */ T, ReadWriteStream]): BrowserifyObject = js.native
+    def transform[T /* <: CustomOptions */](tr: js.Function2[/* file */ String, /* opts */ T, ReadWriteStream], opts: T): BrowserifyObject = js.native
   }
   
   /**
@@ -292,7 +273,7 @@ object mod extends Shortcut {
   
   // Browserify accepts a filename, an input stream for file inputs, or a FileOptions configuration
   // for each file in a bundle.
-  type InputFile = String | ReadableStream[Any] | FileOptions
+  type InputFile = String | ReadableStream | FileOptions
   
   /**
     * Options pertaining to a Browserify instance.

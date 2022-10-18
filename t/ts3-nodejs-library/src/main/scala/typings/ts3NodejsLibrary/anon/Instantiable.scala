@@ -1,10 +1,10 @@
 package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.ts3NodejsLibrary.commandMod.Command
-import typings.ts3NodejsLibrary.commandMod.Command.Parsers
-import typings.ts3NodejsLibrary.responseTypesMod.Version
-import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
+import typings.ts3NodejsLibrary.libTransportCommandMod.Command
+import typings.ts3NodejsLibrary.libTransportCommandMod.Command.Parsers
+import typings.ts3NodejsLibrary.libTransportTeamSpeakQueryMod.TeamSpeakQuery.Response
+import typings.ts3NodejsLibrary.libTypesResponseTypesMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

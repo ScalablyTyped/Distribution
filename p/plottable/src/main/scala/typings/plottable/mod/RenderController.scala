@@ -1,10 +1,10 @@
 package typings.plottable.mod
 
+import typings.plottable.buildSrcCoreRenderControllerMod.Policy
+import typings.plottable.buildSrcCoreRenderPolicyMod.IRenderPolicy
 import typings.plottable.plottableStrings.animationFrame
 import typings.plottable.plottableStrings.immediate
 import typings.plottable.plottableStrings.timeout
-import typings.plottable.renderControllerMod.Policy
-import typings.plottable.renderPolicyMod.IRenderPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,11 +39,11 @@ object RenderController {
   
   inline def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
-  inline def registerToComputeLayout(component: typings.plottable.componentMod.Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToComputeLayout")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerToComputeLayout(component: typings.plottable.buildSrcComponentsComponentMod.Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToComputeLayout")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def registerToComputeLayoutAndRender(component: typings.plottable.componentMod.Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToComputeLayoutAndRender")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerToComputeLayoutAndRender(component: typings.plottable.buildSrcComponentsComponentMod.Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToComputeLayoutAndRender")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def registerToRender(component: typings.plottable.componentMod.Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToRender")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerToRender(component: typings.plottable.buildSrcComponentsComponentMod.Component): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerToRender")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def renderPolicy(): IRenderPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPolicy")().asInstanceOf[IRenderPolicy]
   inline def renderPolicy(renderPolicy: Policy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPolicy")(renderPolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]

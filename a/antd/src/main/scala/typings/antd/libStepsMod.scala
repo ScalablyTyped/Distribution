@@ -9,8 +9,8 @@ import typings.antd.antdStrings.process
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.wait
-import typings.rcSteps.anon.Index
-import typings.rcSteps.stepsMod.ProgressDotRender
+import typings.rcSteps.anon.Description
+import typings.rcSteps.libStepsMod.ProgressDotRender
 import typings.react.mod.CSSProperties
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
@@ -180,7 +180,7 @@ object libStepsMod extends Shortcut {
       
       inline def setProgressDot(value: Boolean | ProgressDotRender): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
       
-      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
+      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Description) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       

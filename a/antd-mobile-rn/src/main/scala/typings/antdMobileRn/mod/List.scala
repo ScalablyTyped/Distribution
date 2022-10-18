@@ -2,7 +2,7 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Styles
 import typings.antdMobileRn.anon.TypeofItem
-import typings.antdMobileRn.listIndexNativeMod.default
+import typings.antdMobileRn.libListIndexDotnativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

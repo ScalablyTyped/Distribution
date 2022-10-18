@@ -1,9 +1,18 @@
 package typings.egjsAxes
 
-import typings.cfcsCore.reactiveAdapterMod.ReactiveAdapter
-import typings.egjsAxes.axesMod.AxesOption
-import typings.egjsAxes.axisManagerMod.Axis
-import typings.egjsAxes.axisManagerMod.AxisOption
+import typings.cfcsCore.declarationReactiveReactiveAdapterMod.ReactiveAdapter
+import typings.egjsAxes.declarationAxesMod.AxesOption
+import typings.egjsAxes.declarationAxisManagerMod.Axis
+import typings.egjsAxes.declarationAxisManagerMod.AxisOption
+import typings.egjsAxes.declarationInputTypeMoveKeyInputMod.MoveKeyInputOption
+import typings.egjsAxes.declarationInputTypePanInputMod.PanInputOption
+import typings.egjsAxes.declarationInputTypePinchInputMod.PinchInputOption
+import typings.egjsAxes.declarationInputTypeWheelInputMod.WheelInputOption
+import typings.egjsAxes.declarationReactiveMod.AxesData
+import typings.egjsAxes.declarationTypesMod.AxesEvents
+import typings.egjsAxes.declarationTypesMod.AxesReactiveState
+import typings.egjsAxes.declarationTypesMod.ElementType
+import typings.egjsAxes.declarationTypesMod.ObjectInterface
 import typings.egjsAxes.egjsAxesStrings.animationEnd
 import typings.egjsAxes.egjsAxesStrings.animationStart
 import typings.egjsAxes.egjsAxesStrings.change
@@ -20,15 +29,6 @@ import typings.egjsAxes.egjsAxesStrings.setOptions
 import typings.egjsAxes.egjsAxesStrings.setTo
 import typings.egjsAxes.egjsAxesStrings.stopAnimation
 import typings.egjsAxes.egjsAxesStrings.updateAnimation
-import typings.egjsAxes.moveKeyInputMod.MoveKeyInputOption
-import typings.egjsAxes.panInputMod.PanInputOption
-import typings.egjsAxes.pinchInputMod.PinchInputOption
-import typings.egjsAxes.reactiveMod.AxesData
-import typings.egjsAxes.typesMod.AxesEvents
-import typings.egjsAxes.typesMod.AxesReactiveState
-import typings.egjsAxes.typesMod.ElementType
-import typings.egjsAxes.typesMod.ObjectInterface
-import typings.egjsAxes.wheelInputMod.WheelInputOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +38,7 @@ object mod {
   @JSImport("@egjs/axes", JSImport.Default)
   @js.native
   open class default ()
-    extends typings.egjsAxes.axesMod.default {
+    extends typings.egjsAxes.declarationAxesMod.default {
     def this(axis: ObjectInterface[AxisOption]) = this()
     def this(axis: Unit, options: AxesOption) = this()
     def this(axis: ObjectInterface[AxisOption], options: AxesOption) = this()
@@ -166,7 +166,7 @@ object mod {
   @JSImport("@egjs/axes", "MoveKeyInput")
   @js.native
   open class MoveKeyInput protected ()
-    extends typings.egjsAxes.moveKeyInputMod.MoveKeyInput {
+    extends typings.egjsAxes.declarationInputTypeMoveKeyInputMod.MoveKeyInput {
     def this(el: ElementType) = this()
     def this(el: ElementType, options: MoveKeyInputOption) = this()
   }
@@ -174,7 +174,7 @@ object mod {
   @JSImport("@egjs/axes", "PanInput")
   @js.native
   open class PanInput protected ()
-    extends typings.egjsAxes.panInputMod.PanInput {
+    extends typings.egjsAxes.declarationInputTypePanInputMod.PanInput {
     def this(el: ElementType) = this()
     def this(el: ElementType, options: PanInputOption) = this()
   }
@@ -182,7 +182,7 @@ object mod {
   @JSImport("@egjs/axes", "PinchInput")
   @js.native
   open class PinchInput protected ()
-    extends typings.egjsAxes.pinchInputMod.PinchInput {
+    extends typings.egjsAxes.declarationInputTypePinchInputMod.PinchInput {
     def this(el: ElementType) = this()
     def this(el: ElementType, options: PinchInputOption) = this()
   }
@@ -190,7 +190,7 @@ object mod {
   @JSImport("@egjs/axes", "REACTIVE_AXES")
   @js.native
   val REACTIVE_AXES: ReactiveAdapter[
-    typings.egjsAxes.axesMod.default, 
+    typings.egjsAxes.declarationAxesMod.default, 
     AxesReactiveState, 
     /* keyof @egjs/axes.@egjs/axes/declaration/types.AxesMethods */ String, 
     AxesData, 
@@ -200,7 +200,7 @@ object mod {
   @JSImport("@egjs/axes", "RotatePanInput")
   @js.native
   open class RotatePanInput protected ()
-    extends typings.egjsAxes.rotatePanInputMod.RotatePanInput {
+    extends typings.egjsAxes.declarationInputTypeRotatePanInputMod.RotatePanInput {
     def this(el: ElementType) = this()
     def this(el: ElementType, options: PanInputOption) = this()
   }
@@ -208,7 +208,7 @@ object mod {
   @JSImport("@egjs/axes", "WheelInput")
   @js.native
   open class WheelInput protected ()
-    extends typings.egjsAxes.wheelInputMod.WheelInput {
+    extends typings.egjsAxes.declarationInputTypeWheelInputMod.WheelInput {
     def this(el: ElementType) = this()
     def this(el: ElementType, options: WheelInputOption) = this()
   }

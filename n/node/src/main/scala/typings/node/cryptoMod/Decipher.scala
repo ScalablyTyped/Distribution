@@ -1,5 +1,6 @@
 package typings.node.cryptoMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
@@ -160,6 +161,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param inputEncoding The `encoding` of the `data` string.
     * @param outputEncoding The `encoding` of the return value.
     */
-  def update(data: js.typedarray.ArrayBufferView): Buffer = js.native
-  def update(data: js.typedarray.ArrayBufferView, inputEncoding: Unit, outputEncoding: Encoding): String = js.native
+  def update(data: ArrayBufferView): Buffer = js.native
+  def update(data: ArrayBufferView, inputEncoding: Unit, outputEncoding: Encoding): String = js.native
 }

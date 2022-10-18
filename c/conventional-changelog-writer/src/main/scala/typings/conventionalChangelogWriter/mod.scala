@@ -1,6 +1,5 @@
 package typings.conventionalChangelogWriter
 
-import org.scalablytyped.runtime.TopLevel
 import typings.conventionalChangelogWriter.anon.Raw
 import typings.conventionalChangelogWriter.conventionalChangelogWriterBooleans.`false`
 import typings.conventionalChangelogWriter.conventionalChangelogWriterStrings.raw
@@ -242,9 +241,14 @@ object mod {
     }
   }
   
-  type Omit[T, K /* <: String | Double | js.Symbol */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in std.Exclude<keyof T, K> ]: T[P]}
-    */ typings.conventionalChangelogWriter.conventionalChangelogWriterStrings.Omit & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ P in std.Exclude<keyof T, K> ]: T[P]}
+    }}}
+    */
+  type Omit[T, K /* <: String | Double | js.Symbol */] = T
   
   trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] extends StObject {
     

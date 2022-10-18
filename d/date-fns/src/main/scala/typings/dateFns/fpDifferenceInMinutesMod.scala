@@ -9,7 +9,7 @@ object fpDifferenceInMinutesMod {
   
   object default extends Shortcut {
     
-    @JSImport("date-fns/esm/fp/differenceInMinutes", JSImport.Default)
+    @JSImport("date-fns/fp/differenceInMinutes", JSImport.Default)
     @js.native
     val ^ : CurriedFn2[js.Date | Double, js.Date | Double, Double] = js.native
     

@@ -1,14 +1,14 @@
 package typings.rcTable.anon
 
-import typings.rcTable.interfaceMod.ColumnGroupType
-import typings.rcTable.interfaceMod.ColumnType
-import typings.rcTable.interfaceMod.ColumnsType
-import typings.rcTable.interfaceMod.FixedType
-import typings.rcTable.interfaceMod.GetRowKey
-import typings.rcTable.interfaceMod.Key
-import typings.rcTable.interfaceMod.RenderExpandIcon
-import typings.rcTable.interfaceMod.RenderExpandIconProps
-import typings.rcTable.interfaceMod.TriggerEventHandler
+import typings.rcTable.libInterfaceMod.ColumnGroupType
+import typings.rcTable.libInterfaceMod.ColumnType
+import typings.rcTable.libInterfaceMod.ColumnsType
+import typings.rcTable.libInterfaceMod.FixedType
+import typings.rcTable.libInterfaceMod.GetRowKey
+import typings.rcTable.libInterfaceMod.Key
+import typings.rcTable.libInterfaceMod.RenderExpandIcon
+import typings.rcTable.libInterfaceMod.RenderExpandIconProps
+import typings.rcTable.libInterfaceMod.TriggerEventHandler
 import typings.rcTable.rcTableStrings.ltr
 import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.MouseEvent

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [w=0] - The w component.
   */
 open class Quaternion ()
-  extends typings.yuka.yukaMod.Quaternion {
+  extends typings.yuka.srcYukaMod.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
   def this(x: Unit, y: Double) = this()

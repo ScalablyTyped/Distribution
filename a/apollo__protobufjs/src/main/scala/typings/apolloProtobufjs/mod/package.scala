@@ -1,7 +1,6 @@
 package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.apolloProtobufjs.mod.^
 import typings.apolloProtobufjs.mod.rpc.ServiceMethod
 import org.scalablytyped.runtime.StObject
@@ -100,9 +99,14 @@ type PoolSlicer = js.ThisFunction2[
 js.typedarray.Uint8Array]
 
 /** Properties type. */
-type Properties[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P]}
-  */ typings.apolloProtobufjs.apolloProtobufjsStrings.Properties & TopLevel[T]
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in keyof T ]:? T[P]}
+  }}}
+  */
+type Properties[T] = T
 
 /**
   * RPC implementation passed to {@link Service#create} performing a service request on network level, i.e. by utilizing http requests or websockets.

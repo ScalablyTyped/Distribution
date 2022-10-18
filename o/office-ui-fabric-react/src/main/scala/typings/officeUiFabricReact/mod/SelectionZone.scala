@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.anon.IsSelectedOnFocus
-import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
-import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
+import typings.officeUiFabricReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneProps
+import typings.officeUiFabricReact.libUtilitiesSelectionSelectionZoneMod.ISelectionZoneState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.react.mod.ComponentLifecycle because Already inherited
 - js.Object because Already inherited
 - typings.react.mod.Component because Already inherited
-- typings.officeUiFabricReact.selectionZoneMod.SelectionZone because Already inherited
-- typings.officeUiFabricReact.selectionMod.SelectionZone because Already inherited
+- typings.officeUiFabricReact.libUtilitiesSelectionSelectionZoneMod.SelectionZone because Already inherited
+- typings.officeUiFabricReact.libUtilitiesSelectionMod.SelectionZone because Already inherited
 - typings.officeUiFabricReact.libMarqueeSelectionMod.SelectionZone because Inheritance from two classes. Inlined 
 - typings.officeUiFabricReact.libSelectionMod.SelectionZone because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native

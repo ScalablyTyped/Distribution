@@ -15,6 +15,6 @@ open class Request[D, E] protected ()
     * @param {string} operation - The operation to perform on the service.
     * @param {object} params - Parameters to send to the operation.
     */
-  def this(service: typings.awsSdk.serviceMod.Service, operation: String) = this()
-  def this(service: typings.awsSdk.serviceMod.Service, operation: String, params: Any) = this()
+  def this(service: typings.awsSdk.libServiceMod.Service, operation: String) = this()
+  def this(service: typings.awsSdk.libServiceMod.Service, operation: String, params: Any) = this()
 }

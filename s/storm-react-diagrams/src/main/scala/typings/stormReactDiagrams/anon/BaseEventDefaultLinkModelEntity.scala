@@ -1,7 +1,7 @@
 package typings.stormReactDiagrams.anon
 
-import typings.stormReactDiagrams.baseEntityMod.BaseEntity
-import typings.stormReactDiagrams.baseEntityMod.BaseListener
+import typings.stormReactDiagrams.distSrcBaseEntityMod.BaseEntity
+import typings.stormReactDiagrams.distSrcBaseEntityMod.BaseListener
 import typings.stormReactDiagrams.stormReactDiagramsInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.jupyterlabCodeeditor
 
-import typings.jupyterlabCodeeditor.editorMod.CodeEditor.EdgeLocation
+import typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.EdgeLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +24,10 @@ object jupyterlabCodeeditorStrings {
   @js.native
   sealed trait codeFolding extends StObject
   inline def codeFolding: codeFolding = "codeFolding".asInstanceOf[codeFolding]
+  
+  @js.native
+  sealed trait cursorBlinkRate extends StObject
+  inline def cursorBlinkRate: cursorBlinkRate = "cursorBlinkRate".asInstanceOf[cursorBlinkRate]
   
   @js.native
   sealed trait fontFamily extends StObject
@@ -72,6 +76,10 @@ object jupyterlabCodeeditorStrings {
   @js.native
   sealed trait rulers extends StObject
   inline def rulers: rulers = "rulers".asInstanceOf[rulers]
+  
+  @js.native
+  sealed trait showTrailingSpace extends StObject
+  inline def showTrailingSpace: showTrailingSpace = "showTrailingSpace".asInstanceOf[showTrailingSpace]
   
   @js.native
   sealed trait tabSize extends StObject

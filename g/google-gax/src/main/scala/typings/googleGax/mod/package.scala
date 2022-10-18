@@ -1,17 +1,17 @@
 package typings.googleGax.mod
 
-import typings.googleGax.apitypesMod.GRPCCall
-import typings.googleGax.apitypesMod.GaxCall
-import typings.googleGax.bundleExecutorMod.BundleOptions
-import typings.googleGax.descriptorMod.Descriptor
-import typings.googleGax.gaxMod.BackoffSettings
-import typings.googleGax.gaxMod.BundlingConfig
-import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.gaxMod.ClientConfig
+import typings.googleGax.buildSrcApitypesMod.GRPCCall
+import typings.googleGax.buildSrcApitypesMod.GaxCall
+import typings.googleGax.buildSrcBundlingCallsBundleExecutorMod.BundleOptions
+import typings.googleGax.buildSrcDescriptorMod.Descriptor
+import typings.googleGax.buildSrcGaxMod.BackoffSettings
+import typings.googleGax.buildSrcGaxMod.BundlingConfig
+import typings.googleGax.buildSrcGaxMod.CallOptions
+import typings.googleGax.buildSrcGaxMod.ClientConfig
+import typings.googleGax.buildSrcLongRunningCallsLongRunningDescriptorMod.LongRunningDescriptor
+import typings.googleGax.buildSrcLongRunningCallsLongrunningMod.LROOperation
 import typings.googleGax.googleGaxStrings.proto
 import typings.googleGax.googleGaxStrings.rest
-import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
-import typings.googleGax.longrunningMod.LROOperation
 import typings.googleGax.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,59 +32,59 @@ inline def constructSettings(
   otherArgs: js.Object
 ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("constructSettings")(serviceName.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any], configOverrides.asInstanceOf[js.Any], retryNames.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def createApiCall(func: js.Promise[GRPCCall], settings: typings.googleGax.gaxMod.CallSettings): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
+inline def createApiCall(func: js.Promise[GRPCCall], settings: typings.googleGax.buildSrcGaxMod.CallSettings): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: js.Promise[GRPCCall],
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Unit,
   _fallback: proto | rest
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: js.Promise[GRPCCall],
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Unit,
   _fallback: Boolean
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: js.Promise[GRPCCall],
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Descriptor
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: js.Promise[GRPCCall],
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Descriptor,
   _fallback: proto | rest
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: js.Promise[GRPCCall],
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Descriptor,
   _fallback: Boolean
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
-inline def createApiCall(func: GRPCCall, settings: typings.googleGax.gaxMod.CallSettings): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
+inline def createApiCall(func: GRPCCall, settings: typings.googleGax.buildSrcGaxMod.CallSettings): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: GRPCCall,
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Unit,
   _fallback: proto | rest
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: GRPCCall,
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Unit,
   _fallback: Boolean
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
-inline def createApiCall(func: GRPCCall, settings: typings.googleGax.gaxMod.CallSettings, descriptor: Descriptor): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
+inline def createApiCall(func: GRPCCall, settings: typings.googleGax.buildSrcGaxMod.CallSettings, descriptor: Descriptor): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: GRPCCall,
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Descriptor,
   _fallback: proto | rest
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 inline def createApiCall(
   func: GRPCCall,
-  settings: typings.googleGax.gaxMod.CallSettings,
+  settings: typings.googleGax.buildSrcGaxMod.CallSettings,
   descriptor: Descriptor,
   _fallback: Boolean
 ): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any], _fallback.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
@@ -231,15 +231,15 @@ inline def createMaxRetriesBackoffSettings(
   maxRetries: Double
 ): BackoffSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("createMaxRetriesBackoffSettings")(initialRetryDelayMillis.asInstanceOf[js.Any], retryDelayMultiplier.asInstanceOf[js.Any], maxRetryDelayMillis.asInstanceOf[js.Any], initialRpcTimeoutMillis.asInstanceOf[js.Any], rpcTimeoutMultiplier.asInstanceOf[js.Any], maxRpcTimeoutMillis.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[BackoffSettings]
 
-inline def createRetryOptions(retryCodes: js.Array[Double], backoffSettings: BackoffSettings): typings.googleGax.gaxMod.RetryOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("createRetryOptions")(retryCodes.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.gaxMod.RetryOptions]
+inline def createRetryOptions(retryCodes: js.Array[Double], backoffSettings: BackoffSettings): typings.googleGax.buildSrcGaxMod.RetryOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("createRetryOptions")(retryCodes.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.buildSrcGaxMod.RetryOptions]
 
-inline def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.longrunningMod.Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.longrunningMod.Operation_]
+inline def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_]
 inline def operation(
   op: LROOperation,
   longrunningDescriptor: LongRunningDescriptor,
   backoffSettings: BackoffSettings,
   callOptions: CallOptions
-): typings.googleGax.longrunningMod.Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.longrunningMod.Operation_]
+): typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.buildSrcLongRunningCallsLongrunningMod.Operation_]
 
 inline def version: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[Any]
 

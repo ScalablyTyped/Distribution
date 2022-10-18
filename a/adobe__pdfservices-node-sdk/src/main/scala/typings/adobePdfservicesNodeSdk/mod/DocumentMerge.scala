@@ -22,10 +22,10 @@ object DocumentMerge {
     
     @JSImport("@adobe/pdfservices-node-sdk", "DocumentMerge.options.DocumentMergeOptions")
     @js.native
-    val DocumentMergeOptions: typings.adobePdfservicesNodeSdk.documentMergeOptionsMod.DocumentMergeOptions = js.native
+    val DocumentMergeOptions: typings.adobePdfservicesNodeSdk.operationOptionDocumentmergeDocumentMergeOptionsMod.DocumentMergeOptions = js.native
     
     @JSImport("@adobe/pdfservices-node-sdk", "DocumentMerge.options.OutputFormat")
     @js.native
-    val OutputFormat: typings.adobePdfservicesNodeSdk.documentMergeOptionsMod.OutputFormat = js.native
+    val OutputFormat: typings.adobePdfservicesNodeSdk.operationOptionDocumentmergeDocumentMergeOptionsMod.OutputFormat = js.native
   }
 }

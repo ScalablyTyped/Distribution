@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [jitter] - The maximum amount of displacement along the sphere each frame.
   */
 open class WanderBehavior ()
-  extends typings.yuka.yukaMod.WanderBehavior {
+  extends typings.yuka.srcYukaMod.WanderBehavior {
   def this(radius: Double) = this()
   def this(radius: Double, distance: Double) = this()
   def this(radius: Unit, distance: Double) = this()

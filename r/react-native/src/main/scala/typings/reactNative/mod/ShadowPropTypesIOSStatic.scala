@@ -1,6 +1,6 @@
 package typings.reactNative.mod
 
-import typings.reactNative.anon.Height
+import typings.reactNative.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait ShadowPropTypesIOSStatic extends StObject {
     * Sets the drop shadow offset
     * @platform ios
     */
-  var shadowOffset: Height
+  var shadowOffset: Width
   
   /**
     * Sets the drop shadow opacity (multiplied by the color's alpha component)
@@ -33,7 +33,7 @@ trait ShadowPropTypesIOSStatic extends StObject {
 }
 object ShadowPropTypesIOSStatic {
   
-  inline def apply(shadowColor: ColorValue, shadowOffset: Height, shadowOpacity: Double, shadowRadius: Double): ShadowPropTypesIOSStatic = {
+  inline def apply(shadowColor: ColorValue, shadowOffset: Width, shadowOpacity: Double, shadowRadius: Double): ShadowPropTypesIOSStatic = {
     val __obj = js.Dynamic.literal(shadowColor = shadowColor.asInstanceOf[js.Any], shadowOffset = shadowOffset.asInstanceOf[js.Any], shadowOpacity = shadowOpacity.asInstanceOf[js.Any], shadowRadius = shadowRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowPropTypesIOSStatic]
   }
@@ -42,7 +42,7 @@ object ShadowPropTypesIOSStatic {
     
     inline def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    inline def setShadowOffset(value: Height): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Width): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     inline def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
     

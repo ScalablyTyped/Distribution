@@ -6,9 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.WebVRController")
+/* note: abstract class */ @JSGlobal("BABYLON.WebVRController")
 @js.native
-abstract class WebVRController protected ()
+open class WebVRController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebVRController {
   /**

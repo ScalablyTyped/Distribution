@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object StickyPositionType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.stickyTypesMod.StickyPositionType & Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType & Double
+  ] = js.native
   
-  /* 0 */ val Both: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Both & Double = js.native
+  /* 0 */ val Both: typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType.Both & Double = js.native
   
-  /* 2 */ val Footer: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Footer & Double = js.native
+  /* 2 */ val Footer: typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType.Footer & Double = js.native
   
-  /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header & Double = js.native
+  /* 1 */ val Header: typings.officeUiFabricReact.libComponentsStickyStickyDottypesMod.StickyPositionType.Header & Double = js.native
 }

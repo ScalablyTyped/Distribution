@@ -17,16 +17,16 @@ trait Forkof extends StObject {
   
   var description: js.UndefOr[String | Null] = js.undefined
   
-  var files: js.UndefOr[StringDictionary[Rawurl | Null]] = js.undefined
+  var files: js.UndefOr[StringDictionary[Content | Null]] = js.undefined
   
   /**
     * Gist
     * @description Gist
     */
-  var fork_of: js.UndefOr[Commitsurl | Null] = js.undefined
+  var fork_of: js.UndefOr[Forksurl | Null] = js.undefined
   
   /** @deprecated */
-  var forks: js.UndefOr[js.Array[Updatedat] | Null] = js.undefined
+  var forks: js.UndefOr[js.Array[IdUpdatedat] | Null] = js.undefined
   
   var forks_url: js.UndefOr[String] = js.undefined
   
@@ -35,7 +35,11 @@ trait Forkof extends StObject {
   var git_push_url: js.UndefOr[String] = js.undefined
   
   /** @deprecated */
-  var history: js.UndefOr[js.Array[Committedat] | Null] = js.undefined
+  var history: js.UndefOr[
+    (js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-history'] */ js.Any
+    ]) | Null
+  ] = js.undefined
   
   var html_url: js.UndefOr[String] = js.undefined
   
@@ -43,7 +47,9 @@ trait Forkof extends StObject {
   
   var node_id: js.UndefOr[String] = js.undefined
   
-  var owner: js.UndefOr[Avatarurl] = js.undefined
+  var owner: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+  ] = js.undefined
   
   var public: js.UndefOr[Boolean] = js.undefined
   
@@ -86,23 +92,23 @@ object Forkof {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFiles(value: StringDictionary[Rawurl | Null]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[Content | Null]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFork_of(value: Commitsurl): Self = StObject.set(x, "fork_of", value.asInstanceOf[js.Any])
+    inline def setFork_of(value: Forksurl): Self = StObject.set(x, "fork_of", value.asInstanceOf[js.Any])
     
     inline def setFork_ofNull: Self = StObject.set(x, "fork_of", null)
     
     inline def setFork_ofUndefined: Self = StObject.set(x, "fork_of", js.undefined)
     
-    inline def setForks(value: js.Array[Updatedat]): Self = StObject.set(x, "forks", value.asInstanceOf[js.Any])
+    inline def setForks(value: js.Array[IdUpdatedat]): Self = StObject.set(x, "forks", value.asInstanceOf[js.Any])
     
     inline def setForksNull: Self = StObject.set(x, "forks", null)
     
     inline def setForksUndefined: Self = StObject.set(x, "forks", js.undefined)
     
-    inline def setForksVarargs(value: Updatedat*): Self = StObject.set(x, "forks", js.Array(value*))
+    inline def setForksVarargs(value: IdUpdatedat*): Self = StObject.set(x, "forks", js.Array(value*))
     
     inline def setForks_url(value: String): Self = StObject.set(x, "forks_url", value.asInstanceOf[js.Any])
     
@@ -116,13 +122,19 @@ object Forkof {
     
     inline def setGit_push_urlUndefined: Self = StObject.set(x, "git_push_url", js.undefined)
     
-    inline def setHistory(value: js.Array[Committedat]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-history'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryNull: Self = StObject.set(x, "history", null)
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: Committedat*): Self = StObject.set(x, "history", js.Array(value*))
+    inline def setHistoryVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['gist-history'] */ js.Any)*
+    ): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
@@ -136,7 +148,9 @@ object Forkof {
     
     inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
     
-    inline def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

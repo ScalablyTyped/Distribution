@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.CurveTimeline")
+/* note: abstract class */ @JSGlobal("spine.CurveTimeline")
 @js.native
-abstract class CurveTimeline protected ()
+open class CurveTimeline protected ()
   extends StObject
      with typings.phaser.spine.CurveTimeline {
   def this(frameCount: Double) = this()

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "SerializeEvent")
 @js.native
 open class SerializeEvent protected ()
-  extends typings.typedoc.serializationMod.SerializeEvent {
-  def this(name: String, project: typings.typedoc.modelsMod.ProjectReflection) = this()
+  extends typings.typedoc.distLibSerializationMod.SerializeEvent {
+  def this(name: String, project: typings.typedoc.distLibModelsMod.ProjectReflection) = this()
   def this(
     name: String,
-    project: typings.typedoc.modelsMod.ProjectReflection,
-    output: typings.typedoc.schemaMod.ProjectReflection
+    project: typings.typedoc.distLibModelsMod.ProjectReflection,
+    output: typings.typedoc.distLibSerializationSchemaMod.ProjectReflection
   ) = this()
 }

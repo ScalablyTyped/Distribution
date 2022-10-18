@@ -3,9 +3,9 @@ package typings.semanticUiReact.mod
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
-import typings.semanticUiReact.breadcrumbBreadcrumbMod.BreadcrumbComponent
-import typings.semanticUiReact.breadcrumbBreadcrumbMod.BreadcrumbProps
-import typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps
+import typings.semanticUiReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbComponent
+import typings.semanticUiReact.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.semanticUiReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.BreadcrumbSectionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,13 +1,12 @@
 package typings.rrc
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.Location
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
-import typings.reactRouter.componentsMod.RouteProps
+import typings.reactRouter.distLibComponentsMod.RouteProps
+import typings.rrc.anon.Inject
 import typings.rrc.anon.Pathname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -90,15 +89,11 @@ object mod {
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
   ]]
   
-  inline def wrapSwitch[WrapperProps, Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.rrc.rrcStrings.wrapSwitch & TopLevel[Any] */](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
+  inline def wrapSwitch[WrapperProps, Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
   
   type ComponentConstructor[Props] = ComponentType[Props]
   
-  type GetKeyFunction[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.rrc.rrcStrings.GetKeyFunction & TopLevel[Any] */] = js.Function3[
+  type GetKeyFunction[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] = js.Function3[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatchObject<Params> */ /* match */ Any, 
     /* route */ RouteConfiguration, 
     /* location */ Location, 
@@ -134,26 +129,7 @@ object mod {
   
   type PropIdCallback = js.Function0[String]
   
-  trait RouteConfiguration
-    extends StObject
-       with RouteProps {
-    
-    var inject: js.UndefOr[StringDictionary[Any]] = js.undefined
-  }
-  object RouteConfiguration {
-    
-    inline def apply(): RouteConfiguration = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RouteConfiguration]
-    }
-    
-    extension [Self <: RouteConfiguration](x: Self) {
-      
-      inline def setInject(value: StringDictionary[Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
-      
-      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
-    }
-  }
+  type RouteConfiguration = RouteProps & Inject
   
   trait ScrollIntoViewProps extends StObject {
     
@@ -305,9 +281,7 @@ object mod {
     }
   }
   
-  trait WrapSwitchProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof Params ]:? string}
-    */ typings.rrc.rrcStrings.WrapSwitchProps & TopLevel[Any] */]
+  trait WrapSwitchProps[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */]
     extends StObject
        with SwitchProps {
     
@@ -315,9 +289,7 @@ object mod {
   }
   object WrapSwitchProps {
     
-    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.rrc.rrcStrings.WrapSwitchProps & TopLevel[Any] */](
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](
       location: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname,
       routes: js.Array[RouteConfiguration]
     ): WrapSwitchProps[Params] = {
@@ -325,9 +297,7 @@ object mod {
       __obj.asInstanceOf[WrapSwitchProps[Params]]
     }
     
-    extension [Self <: WrapSwitchProps[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Params ]:? string}
-      */ typings.rrc.rrcStrings.WrapSwitchProps & TopLevel[Any] */](x: Self & WrapSwitchProps[Params]) {
+    extension [Self <: WrapSwitchProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & WrapSwitchProps[Params]) {
       
       inline def setGetKey(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatchObject<Params> */ /* match */ Any, /* route */ RouteConfiguration, /* location */ Location) => String

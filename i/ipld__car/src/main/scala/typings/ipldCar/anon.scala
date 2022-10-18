@@ -1,6 +1,6 @@
 package typings.ipldCar
 
-import typings.ipldCar.commonMod.TestBlock
+import typings.ipldCar.typesTestCommonMod.TestBlock
 import typings.multiformats.mod.CID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -63,7 +63,7 @@ object anon {
     
     var blockOffset: Double
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]
     
     var length: Double
     
@@ -71,7 +71,13 @@ object anon {
   }
   object BlockLength {
     
-    inline def apply(blockLength: Double, blockOffset: Double, cid: CID, length: Double, offset: Double): BlockLength = {
+    inline def apply(
+      blockLength: Double,
+      blockOffset: Double,
+      cid: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version],
+      length: Double,
+      offset: Double
+    ): BlockLength = {
       val __obj = js.Dynamic.literal(blockLength = blockLength.asInstanceOf[js.Any], blockOffset = blockOffset.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockLength]
     }
@@ -82,7 +88,7 @@ object anon {
       
       inline def setBlockOffset(value: Double): Self = StObject.set(x, "blockOffset", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -96,7 +102,7 @@ object anon {
     
     var blockOffset: Double
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]
     
     var length: Double
     
@@ -104,7 +110,13 @@ object anon {
   }
   object BlockOffset {
     
-    inline def apply(blockLength: Double, blockOffset: Double, cid: CID, length: Double, offset: Double): BlockOffset = {
+    inline def apply(
+      blockLength: Double,
+      blockOffset: Double,
+      cid: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version],
+      length: Double,
+      offset: Double
+    ): BlockOffset = {
       val __obj = js.Dynamic.literal(blockLength = blockLength.asInstanceOf[js.Any], blockOffset = blockOffset.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockOffset]
     }
@@ -115,7 +127,7 @@ object anon {
       
       inline def setBlockOffset(value: Double): Self = StObject.set(x, "blockOffset", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -133,7 +145,7 @@ object anon {
     
     var roots: js.UndefOr[
         js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CID */ Any
+          typings.multiformats.cidMod.CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]
         ]
       ] = js.undefined
   }
@@ -160,14 +172,14 @@ object anon {
       
       inline def setRoots(
         value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CID */ Any
+              typings.multiformats.cidMod.CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]
             ]
       ): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       
       inline def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
       
       inline def setRootsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_cid.CID */ Any)*
+        value: (typings.multiformats.cidMod.CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version])*
       ): Self = StObject.set(x, "roots", js.Array(value*))
     }
   }
@@ -291,20 +303,20 @@ object anon {
   
   trait Roots extends StObject {
     
-    var roots: js.Array[typings.ipldCar.bufferWriterMod.CID]
+    var roots: js.Array[typings.ipldCar.typesLibBufferWriterMod.CID]
   }
   object Roots {
     
-    inline def apply(roots: js.Array[typings.ipldCar.bufferWriterMod.CID]): Roots = {
+    inline def apply(roots: js.Array[typings.ipldCar.typesLibBufferWriterMod.CID]): Roots = {
       val __obj = js.Dynamic.literal(roots = roots.asInstanceOf[js.Any])
       __obj.asInstanceOf[Roots]
     }
     
     extension [Self <: Roots](x: Self) {
       
-      inline def setRoots(value: js.Array[typings.ipldCar.bufferWriterMod.CID]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+      inline def setRoots(value: js.Array[typings.ipldCar.typesLibBufferWriterMod.CID]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       
-      inline def setRootsVarargs(value: typings.ipldCar.bufferWriterMod.CID*): Self = StObject.set(x, "roots", js.Array(value*))
+      inline def setRootsVarargs(value: typings.ipldCar.typesLibBufferWriterMod.CID*): Self = StObject.set(x, "roots", js.Array(value*))
     }
   }
   
@@ -313,13 +325,17 @@ object anon {
     
     var bytes: js.typedarray.Uint8Array
     
-    var cid: CID
+    var cid: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]
     
     var `object`: Any
   }
   object TestBlockobjectany {
     
-    inline def apply(bytes: js.typedarray.Uint8Array, cid: CID, `object`: Any): TestBlockobjectany = {
+    inline def apply(
+      bytes: js.typedarray.Uint8Array,
+      cid: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version],
+      `object`: Any
+    ): TestBlockobjectany = {
       val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any], cid = cid.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestBlockobjectany]
@@ -329,7 +345,7 @@ object anon {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
-      inline def setCid(value: CID): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: CID[Any, Double, Double, typings.multiformats.distTypesSrcLinkInterfaceMod.Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }

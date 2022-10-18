@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.TrainingJobName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.TrainingJobName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeTrainingJobReques extends StObject {
   /**
     * The name of the training job.
     */
-  var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName
+  var TrainingJobName: typings.awsSdk.clientsSagemakerMod.TrainingJobName
 }
 object DescribeTrainingJobReques {
   

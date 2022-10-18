@@ -10,5 +10,5 @@ object Earcut {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def triangulate(data: js.Array[Double], holeIndices: js.Array[Double], dim: Double): js.Array[typings.three.threeMod.Triangle] = (^.asInstanceOf[js.Dynamic].applyDynamic("triangulate")(data.asInstanceOf[js.Any], holeIndices.asInstanceOf[js.Any], dim.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.three.threeMod.Triangle]]
+  inline def triangulate(data: js.Array[Double], holeIndices: js.Array[Double], dim: Double): js.Array[typings.three.srcThreeMod.Triangle] = (^.asInstanceOf[js.Dynamic].applyDynamic("triangulate")(data.asInstanceOf[js.Any], holeIndices.asInstanceOf[js.Any], dim.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.three.srcThreeMod.Triangle]]
 }

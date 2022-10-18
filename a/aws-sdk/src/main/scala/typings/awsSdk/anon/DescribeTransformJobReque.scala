@@ -1,7 +1,7 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.sagemakerMod.TransformJobName
-import typings.awsSdk.serviceMod.WaiterConfiguration
+import typings.awsSdk.clientsSagemakerMod.TransformJobName
+import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait DescribeTransformJobReque extends StObject {
   /**
     * The name of the transform job that you want to view details of.
     */
-  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName
+  var TransformJobName: typings.awsSdk.clientsSagemakerMod.TransformJobName
 }
 object DescribeTransformJobReque {
   

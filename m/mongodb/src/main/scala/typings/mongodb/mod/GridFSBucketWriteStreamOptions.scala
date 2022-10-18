@@ -1,6 +1,7 @@
 package typings.mongodb.mod
 
 import typings.bson.mod.Document
+import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait GridFSBucketWriteStreamOptions
   var contentType: js.UndefOr[String] = js.undefined
   
   /** Custom file id for the GridFS file. */
-  var id: js.UndefOr[typings.bson.mod.ObjectId] = js.undefined
+  var id: js.UndefOr[ObjectId] = js.undefined
   
   /** Object to store in the file document's `metadata` field */
   var metadata: js.UndefOr[Document] = js.undefined
@@ -47,7 +48,7 @@ object GridFSBucketWriteStreamOptions {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setId(value: typings.bson.mod.ObjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ObjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     

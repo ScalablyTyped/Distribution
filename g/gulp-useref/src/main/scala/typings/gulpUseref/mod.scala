@@ -1,6 +1,7 @@
 package typings.gulpUseref
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +14,7 @@ object mod extends Shortcut {
   
   trait Options extends StObject {
     
-    var additionalStreams: js.UndefOr[
-        js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-        ]
-      ] = js.undefined
+    var additionalStreams: js.UndefOr[js.Array[ReadWriteStream]] = js.undefined
     
     var base: js.UndefOr[String] = js.undefined
     
@@ -38,17 +35,11 @@ object mod extends Shortcut {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAdditionalStreams(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-            ]
-      ): Self = StObject.set(x, "additionalStreams", value.asInstanceOf[js.Any])
+      inline def setAdditionalStreams(value: js.Array[ReadWriteStream]): Self = StObject.set(x, "additionalStreams", value.asInstanceOf[js.Any])
       
       inline def setAdditionalStreamsUndefined: Self = StObject.set(x, "additionalStreams", js.undefined)
       
-      inline def setAdditionalStreamsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any)*
-      ): Self = StObject.set(x, "additionalStreams", js.Array(value*))
+      inline def setAdditionalStreamsVarargs(value: ReadWriteStream*): Self = StObject.set(x, "additionalStreams", js.Array(value*))
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -74,11 +65,7 @@ object mod extends Shortcut {
     }
   }
   
-  type Useref = js.Function2[
-    /* options */ js.UndefOr[Options], 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ /* repeated */ Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
-  ]
+  type Useref = js.Function2[/* options */ js.UndefOr[Options], /* repeated */ ReadWriteStream, ReadWriteStream]
   
   type _To = Useref
   

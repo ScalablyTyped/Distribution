@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__icu-skeleton-parser
 
-Typings are for version 1.3.13
+Typings are for version 1.3.14
 
 
 

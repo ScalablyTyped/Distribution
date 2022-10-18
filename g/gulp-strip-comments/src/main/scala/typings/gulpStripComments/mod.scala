@@ -2,6 +2,7 @@ package typings.gulpStripComments
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpStripComments.mod.stripComments.Strip
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,16 +23,16 @@ object mod extends Shortcut {
     @js.native
     trait Strip extends StObject {
       
-      def apply(): Any = js.native
-      def apply(options: StripOptions): Any = js.native
+      def apply(): ReadWriteStream = js.native
+      def apply(options: StripOptions): ReadWriteStream = js.native
       
       def getEOL(): String = js.native
       
-      def html(): Any = js.native
-      def html(options: StripOptions): Any = js.native
+      def html(): ReadWriteStream = js.native
+      def html(options: StripOptions): ReadWriteStream = js.native
       
-      def text(): Any = js.native
-      def text(options: StripOptions): Any = js.native
+      def text(): ReadWriteStream = js.native
+      def text(options: StripOptions): ReadWriteStream = js.native
     }
     
     trait StripOptions extends StObject {

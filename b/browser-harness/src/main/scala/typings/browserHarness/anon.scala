@@ -8,26 +8,31 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[Any]] = js.undefined
+    var args: js.UndefOr[Any] = js.undefined
     
-    var func: js.Function
+    var location: js.UndefOr[String] = js.undefined
+    
+    var `type`: String
   }
   object Args {
     
-    inline def apply(func: js.Function): Args = {
-      val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any])
+    inline def apply(`type`: String): Args = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
-      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setFunc(value: js.Function): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,33 +65,28 @@ object anon {
     }
   }
   
-  trait Location extends StObject {
+  trait Func extends StObject {
     
-    var args: js.UndefOr[Any] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var location: js.UndefOr[String] = js.undefined
-    
-    var `type`: String
+    var func: js.Function
   }
-  object Location {
+  object Func {
     
-    inline def apply(`type`: String): Location = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Location]
+    inline def apply(func: js.Function): Func = {
+      val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Func]
     }
     
-    extension [Self <: Location](x: Self) {
+    extension [Self <: Func](x: Self) {
       
-      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
-      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setFunc(value: js.Function): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     }
   }
 }

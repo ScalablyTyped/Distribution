@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "DynamicTexture")
 @js.native
 open class DynamicTexture protected ()
-  extends typings.babylonjs.texturesIndexMod.DynamicTexture {
+  extends typings.babylonjs.materialsTexturesIndexMod.DynamicTexture {
   /**
     * Creates a DynamicTexture
     * @param name defines the name of the texture

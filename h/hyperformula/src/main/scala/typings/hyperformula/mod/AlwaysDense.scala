@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "AlwaysDense")
 @js.native
 open class AlwaysDense ()
-  extends typings.hyperformula.chooseAddressMappingPolicyMod.AlwaysDense
+  extends typings.hyperformula.typingsDependencyGraphAddressMappingChooseAddressMappingPolicyMod.AlwaysDense

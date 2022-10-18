@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.treeselectMod.TreeSelectProps
+import typings.primereact.treeselectTreeselectMod.TreeSelectProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "TreeSelect")
 @js.native
 open class TreeSelect protected ()
-  extends typings.primereact.treeselectMod.TreeSelect {
+  extends typings.primereact.treeselectTreeselectMod.TreeSelect {
   def this(props: TreeSelectProps) = this()
   /**
     * @deprecated

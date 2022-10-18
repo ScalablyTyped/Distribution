@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.focusTrapZoneTypesMod.IFocusTrapZoneProps
+import typings.officeUiFabricReact.libComponentsFocusTrapZoneFocusTrapZoneDottypesMod.IFocusTrapZoneProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object libFocusTrapZoneMod {
   @JSImport("office-ui-fabric-react/lib/FocusTrapZone", "FocusTrapZone")
   @js.native
   open class FocusTrapZone protected ()
-    extends typings.officeUiFabricReact.focusTrapZoneMod.FocusTrapZone {
+    extends typings.officeUiFabricReact.libComponentsFocusTrapZoneMod.FocusTrapZone {
     def this(props: IFocusTrapZoneProps) = this()
   }
   /* static members */

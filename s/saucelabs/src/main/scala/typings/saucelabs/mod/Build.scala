@@ -1,7 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.saucelabs.anon.Completed
+import typings.saucelabs.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait Build
   
   var id: js.UndefOr[String] = js.undefined
   
-  var jobs: js.UndefOr[Completed] = js.undefined
+  var jobs: js.UndefOr[Dictkey] = js.undefined
   
   var modification_time: js.UndefOr[Double] = js.undefined
   
@@ -65,7 +65,7 @@ object Build {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setJobs(value: Completed): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: Dictkey): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     

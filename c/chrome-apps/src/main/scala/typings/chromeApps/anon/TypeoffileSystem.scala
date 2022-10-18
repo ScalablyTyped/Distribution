@@ -47,28 +47,46 @@ trait TypeoffileSystem extends StObject {
   
   /** Ask the user to choose a file or directory. */
   def chooseEntry(
-    callback: FileEntryCallback[ChooseFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
+    callback: FileEntryCallback[
+      ChooseFileEntryOptions, 
+      /* import warning: importer.ImportType#apply Failed type conversion: chrome-apps.chrome.fileSystem.ChooseFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseFileEntryOptions ? filesystem.FileEntry : chrome-apps.chrome.fileSystem.ChooseFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions ? std.Array<filesystem.FileEntry> : chrome-apps.chrome.fileSystem.ChooseFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions ? filesystem.DirectoryEntry : filesystem.FileEntry */ js.Any
+    ]
   ): Unit = js.native
   def chooseEntry(
     options: ChooseDirectoryEntryOptions,
-    callback: FileEntryCallback[ChooseDirectoryEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
+    callback: FileEntryCallback[
+      ChooseDirectoryEntryOptions, 
+      /* import warning: importer.ImportType#apply Failed type conversion: chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions extends chrome-apps.chrome.fileSystem.ChooseFileEntryOptions ? filesystem.FileEntry : chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions extends chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions ? std.Array<filesystem.FileEntry> : chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions extends chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions ? filesystem.DirectoryEntry : filesystem.FileEntry */ js.Any
+    ]
   ): Unit = js.native
   /** Ask the user to choose a file or directory. */
   def chooseEntry(
     options: ChooseEntryOptionsBase,
-    callback: FileEntryCallback[ChooseEntryOptionsBase, FileEntry | DirectoryEntry | js.Array[FileEntry]]
+    callback: FileEntryCallback[
+      ChooseEntryOptionsBase, 
+      /* import warning: importer.ImportType#apply Failed type conversion: chrome-apps.chrome.fileSystem.ChooseEntryOptionsBase extends chrome-apps.chrome.fileSystem.ChooseFileEntryOptions ? filesystem.FileEntry : chrome-apps.chrome.fileSystem.ChooseEntryOptionsBase extends chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions ? std.Array<filesystem.FileEntry> : chrome-apps.chrome.fileSystem.ChooseEntryOptionsBase extends chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions ? filesystem.DirectoryEntry : filesystem.FileEntry */ js.Any
+    ]
   ): Unit = js.native
   def chooseEntry(
     options: ChooseFileEntryOptions,
-    callback: FileEntryCallback[ChooseFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
+    callback: FileEntryCallback[
+      ChooseFileEntryOptions, 
+      /* import warning: importer.ImportType#apply Failed type conversion: chrome-apps.chrome.fileSystem.ChooseFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseFileEntryOptions ? filesystem.FileEntry : chrome-apps.chrome.fileSystem.ChooseFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions ? std.Array<filesystem.FileEntry> : chrome-apps.chrome.fileSystem.ChooseFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions ? filesystem.DirectoryEntry : filesystem.FileEntry */ js.Any
+    ]
   ): Unit = js.native
   def chooseEntry(
     options: ChooseMultipleFilesEntryOptions,
-    callback: FileEntryCallback[ChooseMultipleFilesEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
+    callback: FileEntryCallback[
+      ChooseMultipleFilesEntryOptions, 
+      /* import warning: importer.ImportType#apply Failed type conversion: chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions extends chrome-apps.chrome.fileSystem.ChooseFileEntryOptions ? filesystem.FileEntry : chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions extends chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions ? std.Array<filesystem.FileEntry> : chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions extends chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions ? filesystem.DirectoryEntry : filesystem.FileEntry */ js.Any
+    ]
   ): Unit = js.native
   def chooseEntry(
     options: ChooseSaveFileEntryOptions,
-    callback: FileEntryCallback[ChooseSaveFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
+    callback: FileEntryCallback[
+      ChooseSaveFileEntryOptions, 
+      /* import warning: importer.ImportType#apply Failed type conversion: chrome-apps.chrome.fileSystem.ChooseSaveFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseFileEntryOptions ? filesystem.FileEntry : chrome-apps.chrome.fileSystem.ChooseSaveFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseMultipleFilesEntryOptions ? std.Array<filesystem.FileEntry> : chrome-apps.chrome.fileSystem.ChooseSaveFileEntryOptions extends chrome-apps.chrome.fileSystem.ChooseDirectoryEntryOptions ? filesystem.DirectoryEntry : filesystem.FileEntry */ js.Any
+    ]
   ): Unit = js.native
   
   def getDisplayPath(entry: DirectoryEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = js.native

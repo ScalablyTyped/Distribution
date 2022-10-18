@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkClientCognitoIdentity.listIdentitiesCommandMod.ListIdentitiesCommandInput
+import typings.awsSdkClientCognitoIdentity.distTypesCommandsListIdentitiesCommandMod.ListIdentitiesCommandInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "ListIdentitiesCommand")
 @js.native
 open class ListIdentitiesCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.commandsMod.ListIdentitiesCommand {
+  extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.ListIdentitiesCommand {
   def this(input: ListIdentitiesCommandInput) = this()
 }

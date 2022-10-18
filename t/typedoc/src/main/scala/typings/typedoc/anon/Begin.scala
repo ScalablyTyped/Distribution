@@ -1,6 +1,6 @@
 package typings.typedoc.anon
 
-import typings.typedoc.serializationEventsMod.SerializeEventData
+import typings.typedoc.distLibSerializationEventsMod.SerializeEventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.kdbxweb.mod
 
-import typings.kdbxweb.kdbxCustomDataMod.KdbxCustomDataMap
-import typings.kdbxweb.xmlUtilsMod.global.Node
+import typings.kdbxweb.distTypesFormatKdbxCustomDataMod.KdbxCustomDataMap
+import typings.kdbxweb.distTypesUtilsXmlUtilsMod.global.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("kdbxweb", "KdbxCustomData")
 @js.native
 open class KdbxCustomData ()
-  extends typings.kdbxweb.kdbxCustomDataMod.KdbxCustomData
+  extends typings.kdbxweb.distTypesFormatKdbxCustomDataMod.KdbxCustomData
 /* static members */
 object KdbxCustomData {
   
@@ -24,6 +24,10 @@ object KdbxCustomData {
   def readItem: Any = js.native
   inline def readItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("readItem")(x.asInstanceOf[js.Any])
   
-  inline def write(parentNode: Node, ctx: typings.kdbxweb.kdbxContextMod.KdbxContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(parentNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def write(parentNode: Node, ctx: typings.kdbxweb.kdbxContextMod.KdbxContext, customData: KdbxCustomDataMap): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(parentNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], customData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(parentNode: Node, ctx: typings.kdbxweb.distTypesFormatKdbxContextMod.KdbxContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(parentNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def write(
+    parentNode: Node,
+    ctx: typings.kdbxweb.distTypesFormatKdbxContextMod.KdbxContext,
+    customData: KdbxCustomDataMap
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(parentNode.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], customData.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -1,9 +1,10 @@
 package typings.nivoGenerators
 
 import typings.nivoGenerators.anon.CategoryCount
-import typings.nivoGenerators.anon.ColorData
+import typings.nivoGenerators.anon.Color
 import typings.nivoGenerators.anon.Country
 import typings.nivoGenerators.anon.Data
+import typings.nivoGenerators.anon.DataGroups
 import typings.nivoGenerators.anon.DataId
 import typings.nivoGenerators.anon.DataKeys
 import typings.nivoGenerators.anon.Day
@@ -19,9 +20,8 @@ import typings.nivoGenerators.anon.MaxIterations
 import typings.nivoGenerators.anon.Nodes
 import typings.nivoGenerators.anon.RandMax
 import typings.nivoGenerators.anon.SerieIds
-import typings.nivoGenerators.anon.XNumber
 import typings.nivoGenerators.anon.Y
-import typings.nivoGenerators.bulletMod.Options
+import typings.nivoGenerators.distTypesBulletMod.Options
 import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -140,7 +140,7 @@ object mod {
   inline def generateOrderedDayCounts(from: js.Date, to: js.Date): js.Array[Day] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateOrderedDayCounts")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[Day]]
   
   inline def generateParallelCoordinatesData(): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")().asInstanceOf[js.Array[js.Object]]
-  inline def generateParallelCoordinatesData(hasSizeKeys: typings.nivoGenerators.parallelCoordinatesMod.Options): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")(hasSizeKeys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  inline def generateParallelCoordinatesData(hasSizeKeys: typings.nivoGenerators.distTypesParallelCoordinatesMod.Options): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")(hasSizeKeys.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
   inline def generateProgrammingLanguageStats(): js.Array[Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")().asInstanceOf[js.Array[Label]]
   inline def generateProgrammingLanguageStats(shouldShuffle: Boolean): js.Array[Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any]).asInstanceOf[js.Array[Label]]
@@ -153,12 +153,12 @@ object mod {
   inline def generateSerie(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSerie")().asInstanceOf[js.Array[Double]]
   inline def generateSerie(xSize: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSerie")(xSize.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def generateSeries(ids: js.Array[String], xKeys: js.Array[String]): js.Array[ColorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeries")(ids.asInstanceOf[js.Any], xKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[ColorData]]
+  inline def generateSeries(ids: js.Array[String], xKeys: js.Array[String]): js.Array[Data] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeries")(ids.asInstanceOf[js.Any], xKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Data]]
   
-  inline def generateStackData(): js.Array[js.Array[XNumber]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")().asInstanceOf[js.Array[js.Array[XNumber]]]
-  inline def generateStackData(size: Double): js.Array[js.Array[XNumber]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")(size.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[XNumber]]]
+  inline def generateStackData(): js.Array[js.Array[Y]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")().asInstanceOf[js.Array[js.Array[Y]]]
+  inline def generateStackData(size: Double): js.Array[js.Array[Y]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")(size.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Y]]]
   
-  inline def generateSwarmPlotData(groups: js.Array[String], hasMinMaxCategoryCount: CategoryCount): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], hasMinMaxCategoryCount.asInstanceOf[js.Any])).asInstanceOf[Data]
+  inline def generateSwarmPlotData(groups: js.Array[String], hasMinMaxCategoryCount: CategoryCount): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], hasMinMaxCategoryCount.asInstanceOf[js.Any])).asInstanceOf[Groups]
   
   inline def generateWinesTastes(): DataKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWinesTastes")().asInstanceOf[DataKeys]
   inline def generateWinesTastes(hasRandMinRandMax: RandMax): DataKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWinesTastes")(hasRandMinRandMax.asInstanceOf[js.Any]).asInstanceOf[DataKeys]
@@ -171,9 +171,9 @@ object mod {
   
   inline def randomizeSwarmPlotData(
     previousData: ReturnType[
-      js.Function2[/* groups */ js.Array[String], /* hasMinMaxCategoryCount */ CategoryCount, Data]
+      js.Function2[/* groups */ js.Array[String], /* hasMinMaxCategoryCount */ CategoryCount, Groups]
     ]
-  ): Groups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[Groups]
+  ): DataGroups = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeSwarmPlotData")(previousData.asInstanceOf[js.Any]).asInstanceOf[DataGroups]
   
   object sets {
     
@@ -196,13 +196,13 @@ object mod {
     
     var color: String
     
-    var data: js.Array[Y]
+    var data: js.Array[Color]
     
     var id: String
   }
   object DrinkDatum {
     
-    inline def apply(color: String, data: js.Array[Y], id: String): DrinkDatum = {
+    inline def apply(color: String, data: js.Array[Color], id: String): DrinkDatum = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrinkDatum]
     }
@@ -211,9 +211,9 @@ object mod {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Array[Y]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Color]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Y*): Self = StObject.set(x, "data", js.Array(value*))
+      inline def setDataVarargs(value: Color*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

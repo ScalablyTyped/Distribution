@@ -27,14 +27,6 @@ object mithrilStrings {
   inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait lift extends StObject
-  inline def lift: lift = "lift".asInstanceOf[lift]
-  
-  @js.native
-  sealed trait merge extends StObject
-  inline def merge: merge = "merge".asInstanceOf[merge]
-  
-  @js.native
   sealed trait onbeforeremove extends StObject
   inline def onbeforeremove: onbeforeremove = "onbeforeremove".asInstanceOf[onbeforeremove]
   

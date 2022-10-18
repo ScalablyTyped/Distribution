@@ -1,7 +1,7 @@
 package typings.reactBootstrap.libMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reactBootstrap.pagerMod.^
+import typings.reactBootstrap.libPagerMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +19,10 @@ object Pager {
   @JSImport("react-bootstrap/lib", "Pager.Item")
   @js.native
   open class Item ()
-    extends typings.reactBootstrap.pagerItemMod.^
+    extends typings.reactBootstrap.libPagerItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib", "Pager.Item")
   @js.native
-  def Item: Instantiable0[typings.reactBootstrap.pagerItemMod.^] = js.native
-  inline def Item_=(x: Instantiable0[typings.reactBootstrap.pagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  def Item: Instantiable0[typings.reactBootstrap.libPagerItemMod.^] = js.native
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.libPagerItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

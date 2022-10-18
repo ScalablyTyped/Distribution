@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PathRepoInfo extends StObject {
   
-  var path: typings.firebaseDatabase.utilPathMod.Path
+  var path: typings.firebaseDatabase.distSrcCoreUtilPathMod.Path
   
-  var repoInfo: typings.firebaseDatabase.coreRepoInfoMod.RepoInfo
+  var repoInfo: typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo
 }
 object PathRepoInfo {
   
   inline def apply(
-    path: typings.firebaseDatabase.utilPathMod.Path,
-    repoInfo: typings.firebaseDatabase.coreRepoInfoMod.RepoInfo
+    path: typings.firebaseDatabase.distSrcCoreUtilPathMod.Path,
+    repoInfo: typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo
   ): PathRepoInfo = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], repoInfo = repoInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathRepoInfo]
@@ -22,8 +22,8 @@ object PathRepoInfo {
   
   extension [Self <: PathRepoInfo](x: Self) {
     
-    inline def setPath(value: typings.firebaseDatabase.utilPathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: typings.firebaseDatabase.distSrcCoreUtilPathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setRepoInfo(value: typings.firebaseDatabase.coreRepoInfoMod.RepoInfo): Self = StObject.set(x, "repoInfo", value.asInstanceOf[js.Any])
+    inline def setRepoInfo(value: typings.firebaseDatabase.distSrcCoreRepoInfoMod.RepoInfo): Self = StObject.set(x, "repoInfo", value.asInstanceOf[js.Any])
   }
 }

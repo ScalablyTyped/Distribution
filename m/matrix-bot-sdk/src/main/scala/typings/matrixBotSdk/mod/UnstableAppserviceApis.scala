@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-bot-sdk", "UnstableAppserviceApis")
 @js.native
 open class UnstableAppserviceApis protected ()
-  extends typings.matrixBotSdk.unstableAppserviceApisMod.UnstableAppserviceApis {
-  def this(client: typings.matrixBotSdk.matrixClientMod.MatrixClient) = this()
+  extends typings.matrixBotSdk.libAppserviceUnstableAppserviceApisMod.UnstableAppserviceApis {
+  def this(client: typings.matrixBotSdk.libMatrixClientMod.MatrixClient) = this()
 }

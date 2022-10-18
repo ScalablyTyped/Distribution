@@ -11,45 +11,45 @@ import typings.reactNavigationCore.anon.Options
 import typings.reactNavigationCore.anon.PartialStateNavigationSta
 import typings.reactNavigationCore.anon.PreventedRoutes
 import typings.reactNavigationCore.anon.State
-import typings.reactNavigationCore.getActionFromStateMod.NavigateAction
-import typings.reactNavigationCore.getStateFromPathMod.ResultState
-import typings.reactNavigationCore.preventRemoveProviderMod.Props
+import typings.reactNavigationCore.libTypescriptSrcGetActionFromStateMod.NavigateAction
+import typings.reactNavigationCore.libTypescriptSrcGetStateFromPathMod.ResultState
+import typings.reactNavigationCore.libTypescriptSrcPreventRemoveProviderMod.Props
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.DefaultNavigatorOptions
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.EventMapBase
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.Keyof
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationContainerProps
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationContainerRef
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationContainerRefWithCurrent
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationHelpers
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.NavigationProp
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.RouteProp
+import typings.reactNavigationCore.libTypescriptSrcTypesMod.TypedNavigator
+import typings.reactNavigationCore.libTypescriptSrcUseFocusEffectMod.EffectCallback
+import typings.reactNavigationCore.libTypescriptSrcUseNavigationStateMod.Selector
 import typings.reactNavigationCore.reactNavigationCoreStrings.key
-import typings.reactNavigationCore.typesMod.DefaultNavigatorOptions
-import typings.reactNavigationCore.typesMod.EventMapBase
-import typings.reactNavigationCore.typesMod.Keyof
-import typings.reactNavigationCore.typesMod.NavigationContainerProps
-import typings.reactNavigationCore.typesMod.NavigationContainerRef
-import typings.reactNavigationCore.typesMod.NavigationContainerRefWithCurrent
-import typings.reactNavigationCore.typesMod.NavigationHelpers
-import typings.reactNavigationCore.typesMod.NavigationProp
-import typings.reactNavigationCore.typesMod.RouteProp
-import typings.reactNavigationCore.typesMod.TypedNavigator
-import typings.reactNavigationCore.useFocusEffectMod.EffectCallback
-import typings.reactNavigationCore.useNavigationStateMod.Selector
 import typings.reactNavigationRouters.anon.Merge
 import typings.reactNavigationRouters.anon.Path
 import typings.reactNavigationRouters.anon.Readonlykeystringindexnum
-import typings.reactNavigationRouters.commonActionsMod.Action
-import typings.reactNavigationRouters.commonActionsMod.ResetState
-import typings.reactNavigationRouters.drawerRouterMod.DrawerActionType
-import typings.reactNavigationRouters.drawerRouterMod.DrawerNavigationState
-import typings.reactNavigationRouters.drawerRouterMod.DrawerRouterOptions
-import typings.reactNavigationRouters.stackRouterMod.StackActionType
-import typings.reactNavigationRouters.stackRouterMod.StackNavigationState
-import typings.reactNavigationRouters.stackRouterMod.StackRouterOptions
-import typings.reactNavigationRouters.tabRouterMod.TabActionType
-import typings.reactNavigationRouters.tabRouterMod.TabNavigationState
-import typings.reactNavigationRouters.tabRouterMod.TabRouterOptions
-import typings.reactNavigationRouters.typesMod.CommonNavigationAction
-import typings.reactNavigationRouters.typesMod.DefaultRouterOptions
-import typings.reactNavigationRouters.typesMod.InitialState
-import typings.reactNavigationRouters.typesMod.NavigationState
-import typings.reactNavigationRouters.typesMod.ParamListBase
-import typings.reactNavigationRouters.typesMod.PartialState
-import typings.reactNavigationRouters.typesMod.Route
-import typings.reactNavigationRouters.typesMod.Router
-import typings.reactNavigationRouters.typesMod.RouterFactory
+import typings.reactNavigationRouters.libTypescriptSrcCommonActionsMod.Action
+import typings.reactNavigationRouters.libTypescriptSrcCommonActionsMod.ResetState
+import typings.reactNavigationRouters.libTypescriptSrcDrawerRouterMod.DrawerActionType
+import typings.reactNavigationRouters.libTypescriptSrcDrawerRouterMod.DrawerNavigationState
+import typings.reactNavigationRouters.libTypescriptSrcDrawerRouterMod.DrawerRouterOptions
+import typings.reactNavigationRouters.libTypescriptSrcStackRouterMod.StackActionType
+import typings.reactNavigationRouters.libTypescriptSrcStackRouterMod.StackNavigationState
+import typings.reactNavigationRouters.libTypescriptSrcStackRouterMod.StackRouterOptions
+import typings.reactNavigationRouters.libTypescriptSrcTabRouterMod.TabActionType
+import typings.reactNavigationRouters.libTypescriptSrcTabRouterMod.TabNavigationState
+import typings.reactNavigationRouters.libTypescriptSrcTabRouterMod.TabRouterOptions
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.CommonNavigationAction
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.DefaultRouterOptions
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.InitialState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.NavigationState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.ParamListBase
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.PartialState
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Route
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.Router
+import typings.reactNavigationRouters.libTypescriptSrcTypesMod.RouterFactory
 import typings.std.Omit
 import typings.std.Partial
 import typings.std.Record
@@ -185,7 +185,7 @@ object mod {
   @JSImport("@react-navigation/core", "PrivateValueStore")
   @js.native
   open class PrivateValueStore[T /* <: js.Tuple3[Any, Any, Any] */] ()
-    extends typings.reactNavigationCore.typesMod.PrivateValueStore[T]
+    extends typings.reactNavigationCore.libTypescriptSrcTypesMod.PrivateValueStore[T]
   
   object StackActions {
     
@@ -234,19 +234,22 @@ object mod {
   inline def getActionFromState(state: PartialStateNavigationSta): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionFromState")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
   inline def getActionFromState(
     state: PartialStateNavigationSta,
-    options: typings.reactNavigationCore.getActionFromStateMod.Options
+    options: typings.reactNavigationCore.libTypescriptSrcGetActionFromStateMod.Options
   ): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActionFromState")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
   
   inline def getFocusedRouteNameFromRoute(route: Partial[Route[String, js.UndefOr[js.Object]]]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedRouteNameFromRoute")(route.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  inline def getPathFromState[ParamList /* <: js.Object */](state: typings.reactNavigationCore.getPathFromStateMod.State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPathFromState[ParamList /* <: js.Object */](state: typings.reactNavigationCore.libTypescriptSrcGetPathFromStateMod.State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def getPathFromState[ParamList /* <: js.Object */](
-    state: typings.reactNavigationCore.getPathFromStateMod.State,
-    options: typings.reactNavigationCore.getPathFromStateMod.Options[ParamList]
+    state: typings.reactNavigationCore.libTypescriptSrcGetPathFromStateMod.State,
+    options: typings.reactNavigationCore.libTypescriptSrcGetPathFromStateMod.Options[ParamList]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getStateFromPath[ParamList /* <: js.Object */](path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
-  inline def getStateFromPath[ParamList /* <: js.Object */](path: String, options: typings.reactNavigationCore.getStateFromPathMod.Options[ParamList]): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
+  inline def getStateFromPath[ParamList /* <: js.Object */](
+    path: String,
+    options: typings.reactNavigationCore.libTypescriptSrcGetStateFromPathMod.Options[ParamList]
+  ): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
   
   inline def useFocusEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

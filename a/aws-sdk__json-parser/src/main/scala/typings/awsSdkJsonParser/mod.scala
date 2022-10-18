@@ -1,6 +1,6 @@
 package typings.awsSdkJsonParser
 
-import typings.awsSdkTypes.utilMod.Decoder
+import typings.awsSdkTypes.distTypesUtilMod.Decoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

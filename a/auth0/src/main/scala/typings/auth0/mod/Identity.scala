@@ -1,6 +1,6 @@
 package typings.auth0.mod
 
-import typings.auth0.anon.Email
+import typings.auth0.anon.Emailverified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait Identity extends StObject {
   
   var isSocial: Boolean
   
-  var profileData: js.UndefOr[Email] = js.undefined
+  var profileData: js.UndefOr[Emailverified] = js.undefined
   
   var provider: String
   
@@ -36,7 +36,7 @@ object Identity {
     
     inline def setIsSocial(value: Boolean): Self = StObject.set(x, "isSocial", value.asInstanceOf[js.Any])
     
-    inline def setProfileData(value: Email): Self = StObject.set(x, "profileData", value.asInstanceOf[js.Any])
+    inline def setProfileData(value: Emailverified): Self = StObject.set(x, "profileData", value.asInstanceOf[js.Any])
     
     inline def setProfileDataUndefined: Self = StObject.set(x, "profileData", js.undefined)
     

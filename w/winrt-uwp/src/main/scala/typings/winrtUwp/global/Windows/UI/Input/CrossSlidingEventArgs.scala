@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the CrossSliding event. */
-@JSGlobal("Windows.UI.Input.CrossSlidingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.UI.Input.CrossSlidingEventArgs")
 @js.native
-abstract class CrossSlidingEventArgs ()
+open class CrossSlidingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.CrossSlidingEventArgs {
   

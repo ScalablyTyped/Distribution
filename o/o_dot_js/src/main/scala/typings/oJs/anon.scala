@@ -1,8 +1,8 @@
 package typings.oJs
 
-import typings.oJs.odataConfigMod.OdataBatchConfig
-import typings.oJs.odataQueryMod.OdataQuery
-import typings.oJs.ohandlerMod.OHandler
+import typings.oJs.distTypesOdataConfigMod.OdataBatchConfig
+import typings.oJs.distTypesOdataQueryMod.OdataQuery
+import typings.oJs.distTypesOhandlerMod.OHandler
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit

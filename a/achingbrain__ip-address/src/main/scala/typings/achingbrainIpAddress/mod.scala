@@ -2,7 +2,6 @@ package typings.achingbrainIpAddress
 
 import typings.achingbrainIpAddress.anon.Address
 import typings.achingbrainIpAddress.anon.Error
-import typings.achingbrainIpAddress.anon.Typeofhelpers
 import typings.jsbn.mod.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ object mod {
   @JSImport("@achingbrain/ip-address", "Address4")
   @js.native
   open class Address4 protected ()
-    extends typings.achingbrainIpAddress.ipv4Mod.Address4 {
+    extends typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4 {
     def this(address: String) = this()
   }
   /* static members */
@@ -33,7 +32,7 @@ object mod {
       * var address = Address4.fromArpa(42.2.0.192.in-addr.arpa.)
       * address.correctForm(); // '192.0.2.42'
       */
-    inline def fromArpa(arpaFormAddress: String): typings.achingbrainIpAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv4Mod.Address4]
+    inline def fromArpa(arpaFormAddress: String): typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4]
     
     /**
       * Converts a BigInteger to a v4 address object
@@ -42,7 +41,7 @@ object mod {
       * @param {BigInteger} bigInteger - a BigInteger to convert
       * @returns {Address4}
       */
-    inline def fromBigInteger(bigInteger: BigInteger): typings.achingbrainIpAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv4Mod.Address4]
+    inline def fromBigInteger(bigInteger: BigInteger): typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4]
     
     /**
       * Converts a hex string to an IPv4 address object
@@ -51,7 +50,7 @@ object mod {
       * @param {string} hex - a hex string to convert
       * @returns {Address4}
       */
-    inline def fromHex(hex: String): typings.achingbrainIpAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv4Mod.Address4]
+    inline def fromHex(hex: String): typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4]
     
     /**
       * Converts an integer into a IPv4 address object
@@ -60,7 +59,7 @@ object mod {
       * @param {integer} integer - a number to convert
       * @returns {Address4}
       */
-    inline def fromInteger(integer: Double): typings.achingbrainIpAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(integer.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv4Mod.Address4]
+    inline def fromInteger(integer: Double): typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(integer.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv4Mod.Address4]
     
     inline def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
@@ -68,7 +67,7 @@ object mod {
   @JSImport("@achingbrain/ip-address", "Address6")
   @js.native
   open class Address6 protected ()
-    extends typings.achingbrainIpAddress.ipv6Mod.Address6 {
+    extends typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6 {
     def this(address: String) = this()
     def this(address: String, optionalGroups: Double) = this()
   }
@@ -90,7 +89,7 @@ object mod {
       * address.correctForm(); // '::ffff:c0a8:1'
       * address.to4in6(); // '::ffff:192.168.0.1'
       */
-    inline def fromAddress4(address: String): typings.achingbrainIpAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress4")(address.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv6Mod.Address6]
+    inline def fromAddress4(address: String): typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress4")(address.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6]
     
     /**
       * Return an address from ip6.arpa form
@@ -102,7 +101,7 @@ object mod {
       * var address = Address6.fromArpa(e.f.f.f.3.c.2.6.f.f.f.e.6.6.8.e.1.0.6.7.9.4.e.c.0.0.0.0.1.0.0.2.ip6.arpa.)
       * address.correctForm(); // '2001:0:ce49:7601:e866:efff:62c3:fffe'
       */
-    inline def fromArpa(arpaFormAddress: String): typings.achingbrainIpAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv6Mod.Address6]
+    inline def fromArpa(arpaFormAddress: String): typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6]
     
     /**
       * Convert a BigInteger to a v6 address object
@@ -115,7 +114,7 @@ object mod {
       * var address = Address6.fromBigInteger(bigInteger);
       * address.correctForm(); // '::e8:d4a5:1000'
       */
-    inline def fromBigInteger(bigInteger: BigInteger): typings.achingbrainIpAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv6Mod.Address6]
+    inline def fromBigInteger(bigInteger: BigInteger): typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6]
     
     /**
       * Convert a byte array to an Address6 object
@@ -123,7 +122,7 @@ object mod {
       * @static
       * @returns {Address6}
       */
-    inline def fromByteArray(bytes: js.Array[Any]): typings.achingbrainIpAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv6Mod.Address6]
+    inline def fromByteArray(bytes: js.Array[Any]): typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6]
     
     /**
       * Convert a URL (with optional port number) to an address object
@@ -143,7 +142,7 @@ object mod {
       * @static
       * @returns {Address6}
       */
-    inline def fromUnsignedByteArray(bytes: js.Array[Any]): typings.achingbrainIpAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.ipv6Mod.Address6]
+    inline def fromUnsignedByteArray(bytes: js.Array[Any]): typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.achingbrainIpAddress.distCjsLibIpv6Mod.Address6]
     
     inline def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
@@ -151,7 +150,7 @@ object mod {
   @JSImport("@achingbrain/ip-address", "AddressError")
   @js.native
   open class AddressError protected ()
-    extends typings.achingbrainIpAddress.addressErrorMod.AddressError {
+    extends typings.achingbrainIpAddress.distCjsLibAddressErrorMod.AddressError {
     def this(message: String) = this()
     def this(message: String, parseMessage: String) = this()
   }
@@ -164,7 +163,7 @@ object mod {
     
     @JSImport("@achingbrain/ip-address", "v6.helpers")
     @js.native
-    def helpers: Typeofhelpers = js.native
-    inline def helpers_=(x: Typeofhelpers): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helpers")(x.asInstanceOf[js.Any])
+    def helpers: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof helpers */ Any = js.native
+    inline def helpers_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof helpers */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("helpers")(x.asInstanceOf[js.Any])
   }
 }

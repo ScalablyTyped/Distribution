@@ -1,10 +1,10 @@
 package typings.mendixmodelsdk.mod
 
-import typings.mendixmodelsdk.commonMod.common.IErrorCallback
-import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
-import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
-import typings.mendixmodelsdk.modelMod.IModel
-import typings.mendixmodelsdk.modelSdkClientImplMod.ModelSdkClientImpl
+import typings.mendixmodelsdk.srcCommonMod.common.IErrorCallback
+import typings.mendixmodelsdk.srcModelMod.IModel
+import typings.mendixmodelsdk.srcModelSdkClientImplMod.ModelSdkClientImpl
+import typings.mendixmodelsdk.srcSdkConfigurationMod.configuration.ISdkConfig
+import typings.mendixmodelsdk.srcSdkInternalImodelserverclientMod.IModelServerClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "Model")
 @js.native
 open class Model protected ()
-  extends typings.mendixmodelsdk.modelMod.Model {
+  extends typings.mendixmodelsdk.srcModelMod.Model {
   def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
 }
 /* static members */
@@ -22,5 +22,5 @@ object Model {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createSdkClient(connectionConfig: ISdkConfig): ModelSdkClientImpl[IModel, typings.mendixmodelsdk.modelMod.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSdkClient")(connectionConfig.asInstanceOf[js.Any]).asInstanceOf[ModelSdkClientImpl[IModel, typings.mendixmodelsdk.modelMod.Model]]
+  inline def createSdkClient(connectionConfig: ISdkConfig): ModelSdkClientImpl[IModel, typings.mendixmodelsdk.srcModelMod.Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSdkClient")(connectionConfig.asInstanceOf[js.Any]).asInstanceOf[ModelSdkClientImpl[IModel, typings.mendixmodelsdk.srcModelMod.Model]]
 }

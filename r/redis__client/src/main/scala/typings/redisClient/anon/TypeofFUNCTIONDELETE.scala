@@ -1,6 +1,6 @@
 package typings.redisClient.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
 import typings.redisClient.redisClientStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

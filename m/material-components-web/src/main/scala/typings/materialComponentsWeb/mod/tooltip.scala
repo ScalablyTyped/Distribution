@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tooltip {
   
+  @JSImport("material-components-web", "tooltip.default")
+  @js.native
+  open class default ()
+    extends typings.materialTooltip.mod.default {
+    def this(adapter: PartialMDCTooltipAdapter) = this()
+  }
+  
   /**
     * Enum for possible anchor boundary types. This determines the gap between the
     * bottom of the anchor and the tooltip element.

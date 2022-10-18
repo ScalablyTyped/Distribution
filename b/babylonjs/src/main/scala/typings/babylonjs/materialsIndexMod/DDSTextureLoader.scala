@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "_DDSTextureLoader")
 @js.native
 open class DDSTextureLoader ()
-  extends typings.babylonjs.texturesIndexMod.DDSTextureLoader
+  extends typings.babylonjs.materialsTexturesIndexMod.DDSTextureLoader

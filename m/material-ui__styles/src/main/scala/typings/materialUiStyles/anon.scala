@@ -4,9 +4,7 @@ import typings.materialUiStyles.getThemePropsGetThemePropsMod.ThemeWithProps
 import typings.materialUiStyles.withStylesWithStylesMod.ClassKeyInferable
 import typings.materialUiStyles.withStylesWithStylesMod.ClassKeyOfStyles
 import typings.materialUiStyles.withStylesWithStylesMod.ClassNameMap
-import typings.materialUiStyles.withStylesWithStylesMod.ThemeOfStyles
 import typings.react.mod.Ref
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,53 +87,6 @@ object anon {
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-    }
-  }
-  
-  trait Props[Name /* <: /* keyof any */ String */] extends StObject {
-    
-    var props: Record[
-        Name, 
-        /* import warning: importer.ImportType#apply Failed type conversion: infer Props */ js.Any
-      ]
-  }
-  object Props {
-    
-    inline def apply[Name /* <: /* keyof any */ String */](
-      props: Record[
-          Name, 
-          /* import warning: importer.ImportType#apply Failed type conversion: infer Props */ js.Any
-        ]
-    ): Props[Name] = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Props[Name]]
-    }
-    
-    extension [Self <: Props[?], Name /* <: /* keyof any */ String */](x: Self & Props[Name]) {
-      
-      inline def setProps(
-        value: Record[
-              Name, 
-              /* import warning: importer.ImportType#apply Failed type conversion: infer Props */ js.Any
-            ]
-      ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Theme[StylesType /* <: ClassKeyInferable[Any, Any] */] extends StObject {
-    
-    var theme: ThemeOfStyles[StylesType]
-  }
-  object Theme {
-    
-    inline def apply[StylesType /* <: ClassKeyInferable[Any, Any] */](theme: ThemeOfStyles[StylesType]): Theme[StylesType] = {
-      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Theme[StylesType]]
-    }
-    
-    extension [Self <: Theme[?], StylesType /* <: ClassKeyInferable[Any, Any] */](x: Self & Theme[StylesType]) {
-      
-      inline def setTheme(value: ThemeOfStyles[StylesType]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   

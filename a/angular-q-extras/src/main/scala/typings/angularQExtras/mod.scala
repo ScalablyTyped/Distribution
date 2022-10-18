@@ -1,7 +1,6 @@
 package typings.angularQExtras
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.TopLevel
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,13 +25,9 @@ object mod extends Shortcut {
     trait IQService extends StObject {
       
       def allSettled[T](
-        promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>}
-        */ typings.angularQExtras.angularQExtrasStrings.IQService & TopLevel[Any]
+        promises: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] | angular.angular.IPromise<T[K]>} */ js.Any
       ): IPromise[
-            /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>}
-        */ typings.angularQExtras.angularQExtrasStrings.IQService & TopLevel[T]
+            /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>} */ js.Any
           ] = js.native
       // tslint:enable:max-line-length
       def allSettled[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[PromiseValue[TAll]]] = js.native

@@ -11,23 +11,24 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* from `exports` in `package.json` */
 object appCheckMod {
   
-  @JSImport("firebase/analytics/dist/app-check", JSImport.Namespace)
+  @JSImport("firebase/app-check", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("firebase/analytics/dist/app-check", "CustomProvider")
+  @JSImport("firebase/app-check", "CustomProvider")
   @js.native
   open class CustomProvider protected ()
-    extends typings.firebaseAppCheck.mod.CustomProvider {
+    extends typings.firebase.appCheckDistAppCheckMod.CustomProvider {
     def this(_customProviderOptions: CustomProviderOptions) = this()
   }
   
-  @JSImport("firebase/analytics/dist/app-check", "ReCaptchaEnterpriseProvider")
+  @JSImport("firebase/app-check", "ReCaptchaEnterpriseProvider")
   @js.native
   open class ReCaptchaEnterpriseProvider protected ()
-    extends typings.firebaseAppCheck.mod.ReCaptchaEnterpriseProvider {
+    extends typings.firebase.appCheckDistAppCheckMod.ReCaptchaEnterpriseProvider {
     /**
       * Create a ReCaptchaEnterpriseProvider instance.
       * @param siteKey - reCAPTCHA Enterprise score-based site key.
@@ -35,10 +36,10 @@ object appCheckMod {
     def this(_siteKey: String) = this()
   }
   
-  @JSImport("firebase/analytics/dist/app-check", "ReCaptchaV3Provider")
+  @JSImport("firebase/app-check", "ReCaptchaV3Provider")
   @js.native
   open class ReCaptchaV3Provider protected ()
-    extends typings.firebaseAppCheck.mod.ReCaptchaV3Provider {
+    extends typings.firebase.appCheckDistAppCheckMod.ReCaptchaV3Provider {
     /**
       * Create a ReCaptchaV3Provider instance.
       * @param siteKey - ReCAPTCHA V3 siteKey.

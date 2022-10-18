@@ -331,10 +331,6 @@ object stdStrings {
   inline def OVR_multiview2: OVR_multiview2 = "OVR_multiview2".asInstanceOf[OVR_multiview2]
   
   @js.native
-  sealed trait ObjectConstructor extends StObject
-  inline def ObjectConstructor: ObjectConstructor = "ObjectConstructor".asInstanceOf[ObjectConstructor]
-  
-  @js.native
   sealed trait OfflineAudioCompletionEvent extends StObject
   inline def OfflineAudioCompletionEvent: OfflineAudioCompletionEvent = "OfflineAudioCompletionEvent".asInstanceOf[OfflineAudioCompletionEvent]
   
@@ -343,20 +339,12 @@ object stdStrings {
   inline def PageTransitionEvent: PageTransitionEvent = "PageTransitionEvent".asInstanceOf[PageTransitionEvent]
   
   @js.native
-  sealed trait Partial extends StObject
-  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
-  
-  @js.native
   sealed trait PaymentMethodChangeEvent extends StObject
   inline def PaymentMethodChangeEvent: PaymentMethodChangeEvent = "PaymentMethodChangeEvent".asInstanceOf[PaymentMethodChangeEvent]
   
   @js.native
   sealed trait PaymentRequestUpdateEvent extends StObject
   inline def PaymentRequestUpdateEvent: PaymentRequestUpdateEvent = "PaymentRequestUpdateEvent".asInstanceOf[PaymentRequestUpdateEvent]
-  
-  @js.native
-  sealed trait Pick extends StObject
-  inline def Pick: Pick = "Pick".asInstanceOf[Pick]
   
   @js.native
   sealed trait PointerEvent extends StObject
@@ -369,10 +357,6 @@ object stdStrings {
   @js.native
   sealed trait ProgressEvent extends StObject
   inline def ProgressEvent: ProgressEvent = "ProgressEvent".asInstanceOf[ProgressEvent]
-  
-  @js.native
-  sealed trait PromiseConstructor extends StObject
-  inline def PromiseConstructor: PromiseConstructor = "PromiseConstructor".asInstanceOf[PromiseConstructor]
   
   @js.native
   sealed trait PromiseRejectionEvent extends StObject
@@ -401,14 +385,6 @@ object stdStrings {
   @js.native
   sealed trait RTCTrackEvent extends StObject
   inline def RTCTrackEvent: RTCTrackEvent = "RTCTrackEvent".asInstanceOf[RTCTrackEvent]
-  
-  @js.native
-  sealed trait Readonly extends StObject
-  inline def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
-  
-  @js.native
-  sealed trait Required extends StObject
-  inline def Required: Required = "Required".asInstanceOf[Required]
   
   @js.native
   sealed trait SecurityPolicyViolationEvent extends StObject
@@ -4006,10 +3982,10 @@ object stdStrings {
   inline def rb: rb = "rb".asInstanceOf[rb]
   
   @js.native
-  sealed trait readonly_
+  sealed trait readonly
     extends StObject
        with IDBTransactionMode
-  inline def readonly_ : readonly_ = "readonly".asInstanceOf[readonly_]
+  inline def readonly: readonly = "readonly".asInstanceOf[readonly]
   
   @js.native
   sealed trait readwrite
@@ -4157,13 +4133,13 @@ object stdStrings {
   inline def require: require = "require".asInstanceOf[require]
   
   @js.native
-  sealed trait required_
+  sealed trait required
     extends StObject
        with CredentialMediationRequirement
        with MediaKeysRequirement
        with ResidentKeyRequirement
        with UserVerificationRequirement
-  inline def required_ : required_ = "required".asInstanceOf[required_]
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait reset extends StObject

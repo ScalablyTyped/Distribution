@@ -1,8 +1,8 @@
 package typings.reactWidgets.anon
 
 import typings.react.mod.ReactNode
-import typings.reactWidgets.messagesMod.LabelMessage
-import typings.reactWidgets.messagesMod.RenderableMessage
+import typings.reactWidgets.cjsMessagesMod.LabelMessage
+import typings.reactWidgets.cjsMessagesMod.RenderableMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

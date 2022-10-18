@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluentui__set-version"
-version := "8.2.2-e435f4"
+version := "8.2.2-f88bb5"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -75,6 +75,6 @@ object ToneParams {
     
     inline def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
-    inline def setTonesVarargs(value: (String | Tones)*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: (String | Tones)*): Self = StObject.set(x, "tones", js.Array(value*))
   }
 }

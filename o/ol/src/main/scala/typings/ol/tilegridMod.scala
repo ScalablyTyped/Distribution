@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.cornerMod.Corner
+import typings.ol.extentCornerMod.Corner
 import typings.ol.extentMod.Extent
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
@@ -47,9 +47,9 @@ object tilegridMod {
   
   inline def extentFromProjection(projection: ProjectionLike): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("extentFromProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Extent]
   
-  inline def getForProjection(projection: typings.ol.projectionMod.default): default = ^.asInstanceOf[js.Dynamic].applyDynamic("getForProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def getForProjection(projection: typings.ol.projProjectionMod.default): default = ^.asInstanceOf[js.Dynamic].applyDynamic("getForProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  inline def wrapX(tileGrid: default, tileCoord: TileCoord, projection: typings.ol.projectionMod.default): TileCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(tileGrid.asInstanceOf[js.Any], tileCoord.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[TileCoord]
+  inline def wrapX(tileGrid: default, tileCoord: TileCoord, projection: typings.ol.projProjectionMod.default): TileCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(tileGrid.asInstanceOf[js.Any], tileCoord.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[TileCoord]
   
   trait XYZOptions extends StObject {
     

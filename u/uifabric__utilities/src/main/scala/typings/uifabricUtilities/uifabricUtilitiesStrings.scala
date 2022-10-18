@@ -1,19 +1,11 @@
 package typings.uifabricUtilities
 
-import typings.uifabricUtilities.mathMod.FitMode
+import typings.uifabricUtilities.libMathMod.FitMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uifabricUtilitiesStrings {
-  
-  @js.native
-  sealed trait IClassNames extends StObject
-  inline def IClassNames: IClassNames = "IClassNames".asInstanceOf[IClassNames]
-  
-  @js.native
-  sealed trait ISettingsMap extends StObject
-  inline def ISettingsMap: ISettingsMap = "ISettingsMap".asInstanceOf[ISettingsMap]
   
   @js.native
   sealed trait a extends StObject
@@ -202,10 +194,6 @@ object uifabricUtilitiesStrings {
   @js.native
   sealed trait embed extends StObject
   inline def embed: embed = "embed".asInstanceOf[embed]
-  
-  @js.native
-  sealed trait extendComponent extends StObject
-  inline def extendComponent: extendComponent = "extendComponent".asInstanceOf[extendComponent]
   
   @js.native
   sealed trait feBlend extends StObject

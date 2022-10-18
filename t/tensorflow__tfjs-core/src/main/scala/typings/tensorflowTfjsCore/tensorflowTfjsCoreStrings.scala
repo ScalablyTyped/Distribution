@@ -1,16 +1,209 @@
 package typings.tensorflowTfjsCore
 
-import typings.tensorflowTfjsCore.convUtilMod.PadType
+import typings.tensorflowTfjsCore.distIoTypesMod.WeightGroup
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.PadType
+import typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.DataValues
 import typings.tensorflowTfjsCore.distTypesMod.NumericDataType
-import typings.tensorflowTfjsCore.fusedTypesMod.Activation
-import typings.tensorflowTfjsCore.typesMod.WeightGroup
+import typings.tensorflowTfjsCore.distTypesMod.WebGLChannels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorflowTfjsCoreStrings {
+  
+  @js.native
+  sealed trait A
+    extends StObject
+       with WebGLChannels
+  inline def A: A = "A".asInstanceOf[A]
+  
+  @js.native
+  sealed trait AB
+    extends StObject
+       with WebGLChannels
+  inline def AB: AB = "AB".asInstanceOf[AB]
+  
+  @js.native
+  sealed trait ABG
+    extends StObject
+       with WebGLChannels
+  inline def ABG: ABG = "ABG".asInstanceOf[ABG]
+  
+  @js.native
+  sealed trait ABGR
+    extends StObject
+       with WebGLChannels
+  inline def ABGR: ABGR = "ABGR".asInstanceOf[ABGR]
+  
+  @js.native
+  sealed trait ABR
+    extends StObject
+       with WebGLChannels
+  inline def ABR: ABR = "ABR".asInstanceOf[ABR]
+  
+  @js.native
+  sealed trait ABRG
+    extends StObject
+       with WebGLChannels
+  inline def ABRG: ABRG = "ABRG".asInstanceOf[ABRG]
+  
+  @js.native
+  sealed trait AG
+    extends StObject
+       with WebGLChannels
+  inline def AG: AG = "AG".asInstanceOf[AG]
+  
+  @js.native
+  sealed trait AGB
+    extends StObject
+       with WebGLChannels
+  inline def AGB: AGB = "AGB".asInstanceOf[AGB]
+  
+  @js.native
+  sealed trait AGBR
+    extends StObject
+       with WebGLChannels
+  inline def AGBR: AGBR = "AGBR".asInstanceOf[AGBR]
+  
+  @js.native
+  sealed trait AGR
+    extends StObject
+       with WebGLChannels
+  inline def AGR: AGR = "AGR".asInstanceOf[AGR]
+  
+  @js.native
+  sealed trait AGRB
+    extends StObject
+       with WebGLChannels
+  inline def AGRB: AGRB = "AGRB".asInstanceOf[AGRB]
+  
+  @js.native
+  sealed trait AR
+    extends StObject
+       with WebGLChannels
+  inline def AR: AR = "AR".asInstanceOf[AR]
+  
+  @js.native
+  sealed trait ARB
+    extends StObject
+       with WebGLChannels
+  inline def ARB: ARB = "ARB".asInstanceOf[ARB]
+  
+  @js.native
+  sealed trait ARBG
+    extends StObject
+       with WebGLChannels
+  inline def ARBG: ARBG = "ARBG".asInstanceOf[ARBG]
+  
+  @js.native
+  sealed trait ARG
+    extends StObject
+       with WebGLChannels
+  inline def ARG: ARG = "ARG".asInstanceOf[ARG]
+  
+  @js.native
+  sealed trait ARGB
+    extends StObject
+       with WebGLChannels
+  inline def ARGB: ARGB = "ARGB".asInstanceOf[ARGB]
+  
+  @js.native
+  sealed trait B
+    extends StObject
+       with WebGLChannels
+  inline def B: B = "B".asInstanceOf[B]
+  
+  @js.native
+  sealed trait BA
+    extends StObject
+       with WebGLChannels
+  inline def BA: BA = "BA".asInstanceOf[BA]
+  
+  @js.native
+  sealed trait BAG
+    extends StObject
+       with WebGLChannels
+  inline def BAG: BAG = "BAG".asInstanceOf[BAG]
+  
+  @js.native
+  sealed trait BAGR
+    extends StObject
+       with WebGLChannels
+  inline def BAGR: BAGR = "BAGR".asInstanceOf[BAGR]
+  
+  @js.native
+  sealed trait BAR
+    extends StObject
+       with WebGLChannels
+  inline def BAR: BAR = "BAR".asInstanceOf[BAR]
+  
+  @js.native
+  sealed trait BARG
+    extends StObject
+       with WebGLChannels
+  inline def BARG: BARG = "BARG".asInstanceOf[BARG]
+  
+  @js.native
+  sealed trait BG
+    extends StObject
+       with WebGLChannels
+  inline def BG: BG = "BG".asInstanceOf[BG]
+  
+  @js.native
+  sealed trait BGA
+    extends StObject
+       with WebGLChannels
+  inline def BGA: BGA = "BGA".asInstanceOf[BGA]
+  
+  @js.native
+  sealed trait BGAR
+    extends StObject
+       with WebGLChannels
+  inline def BGAR: BGAR = "BGAR".asInstanceOf[BGAR]
+  
+  @js.native
+  sealed trait BGR
+    extends StObject
+       with WebGLChannels
+  inline def BGR: BGR = "BGR".asInstanceOf[BGR]
+  
+  @js.native
+  sealed trait BGRA
+    extends StObject
+       with WebGLChannels
+  inline def BGRA: BGRA = "BGRA".asInstanceOf[BGRA]
+  
+  @js.native
+  sealed trait BR
+    extends StObject
+       with WebGLChannels
+  inline def BR: BR = "BR".asInstanceOf[BR]
+  
+  @js.native
+  sealed trait BRA
+    extends StObject
+       with WebGLChannels
+  inline def BRA: BRA = "BRA".asInstanceOf[BRA]
+  
+  @js.native
+  sealed trait BRAG
+    extends StObject
+       with WebGLChannels
+  inline def BRAG: BRAG = "BRAG".asInstanceOf[BRAG]
+  
+  @js.native
+  sealed trait BRG
+    extends StObject
+       with WebGLChannels
+  inline def BRG: BRG = "BRG".asInstanceOf[BRG]
+  
+  @js.native
+  sealed trait BRGA
+    extends StObject
+       with WebGLChannels
+  inline def BRGA: BRGA = "BRGA".asInstanceOf[BRGA]
   
   @js.native
   sealed trait BYTES_PER_ELEMENT
@@ -23,6 +216,102 @@ object tensorflowTfjsCoreStrings {
     extends StObject
        with PadType
   inline def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
+  
+  @js.native
+  sealed trait G
+    extends StObject
+       with WebGLChannels
+  inline def G: G = "G".asInstanceOf[G]
+  
+  @js.native
+  sealed trait GA
+    extends StObject
+       with WebGLChannels
+  inline def GA: GA = "GA".asInstanceOf[GA]
+  
+  @js.native
+  sealed trait GAB
+    extends StObject
+       with WebGLChannels
+  inline def GAB: GAB = "GAB".asInstanceOf[GAB]
+  
+  @js.native
+  sealed trait GABR
+    extends StObject
+       with WebGLChannels
+  inline def GABR: GABR = "GABR".asInstanceOf[GABR]
+  
+  @js.native
+  sealed trait GAR
+    extends StObject
+       with WebGLChannels
+  inline def GAR: GAR = "GAR".asInstanceOf[GAR]
+  
+  @js.native
+  sealed trait GARB
+    extends StObject
+       with WebGLChannels
+  inline def GARB: GARB = "GARB".asInstanceOf[GARB]
+  
+  @js.native
+  sealed trait GB
+    extends StObject
+       with WebGLChannels
+  inline def GB: GB = "GB".asInstanceOf[GB]
+  
+  @js.native
+  sealed trait GBA
+    extends StObject
+       with WebGLChannels
+  inline def GBA: GBA = "GBA".asInstanceOf[GBA]
+  
+  @js.native
+  sealed trait GBAR
+    extends StObject
+       with WebGLChannels
+  inline def GBAR: GBAR = "GBAR".asInstanceOf[GBAR]
+  
+  @js.native
+  sealed trait GBR
+    extends StObject
+       with WebGLChannels
+  inline def GBR: GBR = "GBR".asInstanceOf[GBR]
+  
+  @js.native
+  sealed trait GBRA
+    extends StObject
+       with WebGLChannels
+  inline def GBRA: GBRA = "GBRA".asInstanceOf[GBRA]
+  
+  @js.native
+  sealed trait GR
+    extends StObject
+       with WebGLChannels
+  inline def GR: GR = "GR".asInstanceOf[GR]
+  
+  @js.native
+  sealed trait GRA
+    extends StObject
+       with WebGLChannels
+  inline def GRA: GRA = "GRA".asInstanceOf[GRA]
+  
+  @js.native
+  sealed trait GRAB
+    extends StObject
+       with WebGLChannels
+  inline def GRAB: GRAB = "GRAB".asInstanceOf[GRAB]
+  
+  @js.native
+  sealed trait GRB
+    extends StObject
+       with WebGLChannels
+  inline def GRB: GRB = "GRB".asInstanceOf[GRB]
+  
+  @js.native
+  sealed trait GRBA
+    extends StObject
+       with WebGLChannels
+  inline def GRBA: GRBA = "GRBA".asInstanceOf[GRBA]
   
   @js.native
   sealed trait GraphDef extends StObject
@@ -61,6 +350,102 @@ object tensorflowTfjsCoreStrings {
   @js.native
   sealed trait NWC extends StObject
   inline def NWC: NWC = "NWC".asInstanceOf[NWC]
+  
+  @js.native
+  sealed trait R
+    extends StObject
+       with WebGLChannels
+  inline def R: R = "R".asInstanceOf[R]
+  
+  @js.native
+  sealed trait RA
+    extends StObject
+       with WebGLChannels
+  inline def RA: RA = "RA".asInstanceOf[RA]
+  
+  @js.native
+  sealed trait RAB
+    extends StObject
+       with WebGLChannels
+  inline def RAB: RAB = "RAB".asInstanceOf[RAB]
+  
+  @js.native
+  sealed trait RABG
+    extends StObject
+       with WebGLChannels
+  inline def RABG: RABG = "RABG".asInstanceOf[RABG]
+  
+  @js.native
+  sealed trait RAG
+    extends StObject
+       with WebGLChannels
+  inline def RAG: RAG = "RAG".asInstanceOf[RAG]
+  
+  @js.native
+  sealed trait RAGB
+    extends StObject
+       with WebGLChannels
+  inline def RAGB: RAGB = "RAGB".asInstanceOf[RAGB]
+  
+  @js.native
+  sealed trait RB
+    extends StObject
+       with WebGLChannels
+  inline def RB: RB = "RB".asInstanceOf[RB]
+  
+  @js.native
+  sealed trait RBA
+    extends StObject
+       with WebGLChannels
+  inline def RBA: RBA = "RBA".asInstanceOf[RBA]
+  
+  @js.native
+  sealed trait RBAG
+    extends StObject
+       with WebGLChannels
+  inline def RBAG: RBAG = "RBAG".asInstanceOf[RBAG]
+  
+  @js.native
+  sealed trait RBG
+    extends StObject
+       with WebGLChannels
+  inline def RBG: RBG = "RBG".asInstanceOf[RBG]
+  
+  @js.native
+  sealed trait RBGA
+    extends StObject
+       with WebGLChannels
+  inline def RBGA: RBGA = "RBGA".asInstanceOf[RBGA]
+  
+  @js.native
+  sealed trait RG
+    extends StObject
+       with WebGLChannels
+  inline def RG: RG = "RG".asInstanceOf[RG]
+  
+  @js.native
+  sealed trait RGA
+    extends StObject
+       with WebGLChannels
+  inline def RGA: RGA = "RGA".asInstanceOf[RGA]
+  
+  @js.native
+  sealed trait RGAB
+    extends StObject
+       with WebGLChannels
+  inline def RGAB: RGAB = "RGAB".asInstanceOf[RGAB]
+  
+  @js.native
+  sealed trait RGB
+    extends StObject
+       with WebGLChannels
+  inline def RGB: RGB = "RGB".asInstanceOf[RGB]
+  
+  @js.native
+  sealed trait RGBA
+    extends StObject
+       with WebGLChannels
+  inline def RGBA: RGBA = "RGBA".asInstanceOf[RGBA]
   
   @js.native
   sealed trait SAME

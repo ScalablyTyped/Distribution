@@ -7,9 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("puppeteer", "ProtocolError")
 @js.native
 open class ProtocolError () extends CustomError {
-  def this(message: String) = this()
   
-  var code: js.UndefOr[Double] = js.native
+  /**
+    * @public
+    */
+  def code: js.UndefOr[Double] = js.native
+  /**
+    * @internal
+    */
+  def code_=(code: js.UndefOr[Double]): Unit = js.native
   
-  var originalMessage: String = js.native
+  /**
+    * @public
+    */
+  def originalMessage: String = js.native
+  /**
+    * @internal
+    */
+  def originalMessage_=(originalMessage: String): Unit = js.native
+  
+  /* private */ var `private`: Any = js.native
 }

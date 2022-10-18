@@ -1,27 +1,31 @@
 package typings.materialTopAppBar
 
+import typings.materialBase.foundationMod.MDCFoundation
+import typings.materialTopAppBar.adapterMod.MDCTopAppBarAdapter
 import typings.materialTopAppBar.anon.PartialMDCTopAppBarAdapte
-import typings.materialTopAppBar.standardFoundationMod.MDCTopAppBarFoundation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foundationMod {
   
-  @JSImport("@material/top-app-bar/fixed/foundation", JSImport.Default)
+  @JSImport("@material/top-app-bar/foundation", JSImport.Default)
   @js.native
-  open class default () extends MDCFixedTopAppBarFoundation {
+  open class default () extends MDCTopAppBarBaseFoundation {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
   }
   
-  @JSImport("@material/top-app-bar/fixed/foundation", "MDCFixedTopAppBarFoundation")
+  @JSImport("@material/top-app-bar/foundation", "MDCTopAppBarBaseFoundation")
   @js.native
-  open class MDCFixedTopAppBarFoundation () extends MDCTopAppBarFoundation {
+  open class MDCTopAppBarBaseFoundation () extends MDCFoundation[MDCTopAppBarAdapter] {
     def this(adapter: PartialMDCTopAppBarAdapte) = this()
     
-    /**
-      * State variable for the previous scroll iteration top app bar state
-      */
-    /* private */ var wasScrolled: Any = js.native
+    def handleNavigationClick(): Unit = js.native
+    
+    /** Other variants of TopAppBar foundation overrides this method */
+    def handleTargetScroll(): Unit = js.native
+    
+    /** Other variants of TopAppBar foundation overrides this method */
+    def handleWindowResize(): Unit = js.native
   }
 }

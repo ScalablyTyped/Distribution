@@ -1,11 +1,11 @@
 package typings.sqlFormatter
 
-import typings.sqlFormatter.formatOptionsMod.CommaPosition
-import typings.sqlFormatter.formatOptionsMod.IndentStyle
-import typings.sqlFormatter.formatOptionsMod.KeywordCase
-import typings.sqlFormatter.formatOptionsMod.LogicalOperatorNewline
-import typings.sqlFormatter.srcSqlFormatterMod.SqlLanguage
-import typings.sqlFormatter.tokenizerOptionsMod.PlainQuoteType
+import typings.sqlFormatter.libSrcFormatOptionsMod.CommaPosition
+import typings.sqlFormatter.libSrcFormatOptionsMod.IndentStyle
+import typings.sqlFormatter.libSrcFormatOptionsMod.KeywordCase
+import typings.sqlFormatter.libSrcFormatOptionsMod.LogicalOperatorNewline
+import typings.sqlFormatter.libSrcLexerTokenizerOptionsMod.PlainQuoteType
+import typings.sqlFormatter.libSrcSqlFormatterMod.SqlLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

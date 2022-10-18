@@ -4,20 +4,20 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.expoConfigTypes.anon.Action
 import typings.expoConfigTypes.anon.AndroidCollapsedTitle
 import typings.expoConfigTypes.anon.BackgroundColor
-import typings.expoConfigTypes.anon.BackgroundImage
 import typings.expoConfigTypes.anon.BarStyle
 import typings.expoConfigTypes.anon.Branch
 import typings.expoConfigTypes.anon.CheckAutomatically
 import typings.expoConfigTypes.anon.Dictk
 import typings.expoConfigTypes.anon.Firebase
-import typings.expoConfigTypes.anon.GoogleMaps
-import typings.expoConfigTypes.anon.Hdpi
+import typings.expoConfigTypes.anon.GoogleMapsApiKey
 import typings.expoConfigTypes.anon.Image
+import typings.expoConfigTypes.anon.PluginHistory
 import typings.expoConfigTypes.anon.Policy
 import typings.expoConfigTypes.anon.PostExport
 import typings.expoConfigTypes.anon.ResizeMode
 import typings.expoConfigTypes.anon.SilentLaunch
 import typings.expoConfigTypes.anon.TurboModules
+import typings.expoConfigTypes.anon.Visible
 import typings.expoConfigTypes.expoConfigTypesStrings.`black-translucent`
 import typings.expoConfigTypes.expoConfigTypesStrings.`landscape-primary`
 import typings.expoConfigTypes.expoConfigTypesStrings.`landscape-secondary`
@@ -70,7 +70,7 @@ object mod {
     /**
       * Settings for an Adaptive Launcher Icon on Android. [Learn more](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive)
       */
-    var adaptiveIcon: js.UndefOr[BackgroundImage] = js.undefined
+    var adaptiveIcon: js.UndefOr[BackgroundColor] = js.undefined
     
     /**
       * Allows your user's app data to be automatically backed up to their Google Drive. If this is set to false, no backup or restore of the application will ever be performed (this is useful if your app deals with sensitive information). Defaults to the Android default, which is `true`.
@@ -90,7 +90,7 @@ object mod {
     /**
       * Note: This property key is not included in the production manifest and will evaluate to `undefined`. It is used internally only in the build process, because it contains API keys that some may want to keep private.
       */
-    var config: js.UndefOr[GoogleMaps] = js.undefined
+    var config: js.UndefOr[Branch] = js.undefined
     
     /**
       * [Firebase Configuration File](https://support.google.com/firebase/answer/7015592) Location of the `GoogleService-Info.plist` file for configuring Firebase. Including this key automatically enables FCM in your standalone app.
@@ -195,7 +195,7 @@ object mod {
     /**
       * Configuration for loading and splash screen for managed and standalone Android apps.
       */
-    var splash: js.UndefOr[Hdpi] = js.undefined
+    var splash: js.UndefOr[Dictk] = js.undefined
     
     /**
       * @deprecated A Boolean value that indicates whether the app should use the new notifications API.
@@ -221,7 +221,7 @@ object mod {
     
     extension [Self <: Android](x: Self) {
       
-      inline def setAdaptiveIcon(value: BackgroundImage): Self = StObject.set(x, "adaptiveIcon", value.asInstanceOf[js.Any])
+      inline def setAdaptiveIcon(value: BackgroundColor): Self = StObject.set(x, "adaptiveIcon", value.asInstanceOf[js.Any])
       
       inline def setAdaptiveIconUndefined: Self = StObject.set(x, "adaptiveIcon", js.undefined)
       
@@ -239,7 +239,7 @@ object mod {
       
       inline def setBlockedPermissionsVarargs(value: String*): Self = StObject.set(x, "blockedPermissions", js.Array(value*))
       
-      inline def setConfig(value: GoogleMaps): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Branch): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
@@ -287,7 +287,7 @@ object mod {
       
       inline def setSoftwareKeyboardLayoutModeUndefined: Self = StObject.set(x, "softwareKeyboardLayoutMode", js.undefined)
       
-      inline def setSplash(value: Hdpi): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
+      inline def setSplash(value: Dictk): Self = StObject.set(x, "splash", value.asInstanceOf[js.Any])
       
       inline def setSplashUndefined: Self = StObject.set(x, "splash", js.undefined)
       
@@ -390,19 +390,19 @@ object mod {
     /**
       * Internal properties for developer tools
       */
-    var _internal: js.UndefOr[Dictk] = js.undefined
+    var _internal: js.UndefOr[PluginHistory] = js.undefined
     
     var android: js.UndefOr[Android] = js.undefined
     
     /**
       * Configuration for the bottom navigation bar on Android. Can be used to configure the `expo-navigation-bar` module in EAS Build.
       */
-    var androidNavigationBar: js.UndefOr[BarStyle] = js.undefined
+    var androidNavigationBar: js.UndefOr[Visible] = js.undefined
     
     /**
       * Configuration for the status bar on Android. For more details please navigate to [Configuring StatusBar](https://docs.expo.dev/guides/configuring-statusbar/).
       */
-    var androidStatusBar: js.UndefOr[BackgroundColor] = js.undefined
+    var androidStatusBar: js.UndefOr[BarStyle] = js.undefined
     
     /**
       * @deprecated By default, Expo looks for the application registered with the AppRegistry as `main`. If you would like to change this, you can specify the name in this property.
@@ -620,11 +620,11 @@ object mod {
       
       inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
-      inline def setAndroidNavigationBar(value: BarStyle): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
+      inline def setAndroidNavigationBar(value: Visible): Self = StObject.set(x, "androidNavigationBar", value.asInstanceOf[js.Any])
       
       inline def setAndroidNavigationBarUndefined: Self = StObject.set(x, "androidNavigationBar", js.undefined)
       
-      inline def setAndroidStatusBar(value: BackgroundColor): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
+      inline def setAndroidStatusBar(value: BarStyle): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
       
       inline def setAndroidStatusBarUndefined: Self = StObject.set(x, "androidStatusBar", js.undefined)
       
@@ -800,7 +800,7 @@ object mod {
       
       inline def setWebUndefined: Self = StObject.set(x, "web", js.undefined)
       
-      inline def set_internal(value: Dictk): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
+      inline def set_internal(value: PluginHistory): Self = StObject.set(x, "_internal", value.asInstanceOf[js.Any])
       
       inline def set_internalUndefined: Self = StObject.set(x, "_internal", js.undefined)
     }
@@ -846,7 +846,7 @@ object mod {
     /**
       * Note: This property key is not included in the production manifest and will evaluate to `undefined`. It is used internally only in the build process, because it contains API keys that some may want to keep private.
       */
-    var config: js.UndefOr[Branch] = js.undefined
+    var config: js.UndefOr[GoogleMapsApiKey] = js.undefined
     
     /**
       * Dictionary of arbitrary configuration to add to your standalone app's native *.entitlements (plist). Applied prior to all other Expo-specific configuration. No other validation is performed, so use this at your own risk of rejection from the App Store.
@@ -973,7 +973,7 @@ object mod {
       
       inline def setBundleIdentifierUndefined: Self = StObject.set(x, "bundleIdentifier", js.undefined)
       
-      inline def setConfig(value: Branch): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: GoogleMapsApiKey): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       

@@ -1,7 +1,7 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.paramsMod.Manifest
-import typings.trezorConnect.paramsMod.Proxy
+import typings.trezorConnect.libTypescriptParamsMod.Manifest
+import typings.trezorConnect.libTypescriptParamsMod.Proxy
 import typings.trezorConnect.trezorConnectStrings.`react-native`
 import typings.trezorConnect.trezorConnectStrings.electron
 import typings.trezorConnect.trezorConnectStrings.node

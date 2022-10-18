@@ -2,17 +2,17 @@ package typings.victoryCore.anon
 
 import typings.react.mod.DOMAttributes
 import typings.react.mod.ReactElement
-import typings.victoryCore.callbacksMod.CallbackArgs
-import typings.victoryCore.callbacksMod.NumberOrCallback
-import typings.victoryCore.callbacksMod.StringOrCallback
-import typings.victoryCore.callbacksMod.StringOrNumberOrCallback
-import typings.victoryCore.propTypesMod.ValueOrAccessor
-import typings.victoryCore.victoryLabelMod.LabelOrientationType
-import typings.victoryCore.victoryLabelMod.OriginType
-import typings.victoryCore.victoryLabelMod.TextAnchorType
-import typings.victoryCore.victoryThemeTypesMod.PaddingProps
-import typings.victoryCore.victoryThemeTypesMod.VerticalAnchorType
-import typings.victoryCore.victoryThemeTypesMod.VictoryLabelStyleObject
+import typings.victoryCore.libTypesCallbacksMod.CallbackArgs
+import typings.victoryCore.libTypesCallbacksMod.NumberOrCallback
+import typings.victoryCore.libTypesCallbacksMod.StringOrCallback
+import typings.victoryCore.libTypesCallbacksMod.StringOrNumberOrCallback
+import typings.victoryCore.libTypesPropTypesMod.ValueOrAccessor
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.LabelOrientationType
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.OriginType
+import typings.victoryCore.libVictoryLabelVictoryLabelMod.TextAnchorType
+import typings.victoryCore.libVictoryThemeTypesMod.PaddingProps
+import typings.victoryCore.libVictoryThemeTypesMod.VerticalAnchorType
+import typings.victoryCore.libVictoryThemeTypesMod.VictoryLabelStyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

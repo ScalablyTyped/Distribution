@@ -1,7 +1,7 @@
 package typings.antvG2plot.mod
 
 import typings.antvG2plot.anon.PartialHistogramOptions
-import typings.antvG2plot.histogramTypesMod.HistogramOptions
+import typings.antvG2plot.libPlotsHistogramTypesMod.HistogramOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g2plot", "Histogram")
 @js.native
 open class Histogram protected ()
-  extends typings.antvG2plot.histogramMod.Histogram {
+  extends typings.antvG2plot.libPlotsHistogramMod.Histogram {
   def this(container: String, options: HistogramOptions) = this()
   def this(container: HTMLElement, options: HistogramOptions) = this()
 }

@@ -1,8 +1,8 @@
 package typings.uirouterCore
 
-import typings.uirouterCore.resolveInterfaceMod.PolicyWhen
-import typings.uirouterCore.resolveInterfaceMod._PolicyAsync
-import typings.uirouterCore.urlInterfaceMod.UrlRuleType
+import typings.uirouterCore.libResolveInterfaceMod.PolicyWhen
+import typings.uirouterCore.libResolveInterfaceMod._PolicyAsync
+import typings.uirouterCore.libUrlInterfaceMod.UrlRuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

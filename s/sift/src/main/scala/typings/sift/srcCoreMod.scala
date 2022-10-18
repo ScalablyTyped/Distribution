@@ -1,7 +1,6 @@
 package typings.sift
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.sift.anon.PartialOptionsCompare
 import typings.sift.siftStrings.g
 import typings.sift.siftStrings.i
@@ -28,9 +27,9 @@ object srcCoreMod {
     /* private */ var _test: Any = js.native
   }
   
-  @JSImport("sift/src/core", "NamedBaseOperation")
+  /* note: abstract class */ @JSImport("sift/src/core", "NamedBaseOperation")
   @js.native
-  abstract class NamedBaseOperation[TParams, TItem] protected ()
+  open class NamedBaseOperation[TParams, TItem] protected ()
     extends StObject
        with BaseOperation[TParams, TItem]
        with NamedOperation {
@@ -40,9 +39,9 @@ object srcCoreMod {
     var name: String = js.native
   }
   
-  @JSImport("sift/src/core", "NamedGroupOperation")
+  /* note: abstract class */ @JSImport("sift/src/core", "NamedGroupOperation")
   @js.native
-  abstract class NamedGroupOperation protected ()
+  open class NamedGroupOperation protected ()
     extends StObject
        with GroupOperation
        with NamedOperation {
@@ -413,13 +412,35 @@ object srcCoreMod {
   
   type Query[TItemSchema] = TItemSchema | js.RegExp | NestedQuery[TItemSchema]
   
-  type ShapeQuery[TItemSchema] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in keyof TItemSchema ]:? TItemSchema[k] | sift.sift/src/core.ValueQuery<TItemSchema[k]>}
-    */ typings.sift.siftStrings.ShapeQuery & TopLevel[Any]) | js.Object
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TItemSchema extends sift.sift/src/core.NotObject ? {} : {[ k in keyof TItemSchema ]:? TItemSchema[k] | sift.sift/src/core.ValueQuery<TItemSchema[k]>}
+    }}}
+    */
+  @js.native
+  trait ShapeQuery[TItemSchema] extends StObject
   
   type Tester = js.Function3[/* item */ Any, /* key */ js.UndefOr[Key], /* owner */ js.UndefOr[Any], Boolean]
   
-  type Unpacked[T] = T
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends std.Array<infer U> ? U : T
+    }}}
+    */
+  @js.native
+  trait Unpacked[T] extends StObject
   
-  type ValueQuery[TValue] = BasicValueQuery[TValue] | ArrayValueQuery[Unpacked[TValue]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    TValue extends std.Array<any> ? sift.sift/src/core.ArrayValueQuery<sift.sift/src/core.Unpacked<TValue>> : sift.sift/src/core.BasicValueQuery<TValue>
+    }}}
+    */
+  @js.native
+  trait ValueQuery[TValue] extends StObject
 }

@@ -1,25 +1,25 @@
 package typings.antvG2plot.anon
 
+import typings.antvG2.libChartLayoutPaddingCalMod.PaddingCalCtor
+import typings.antvG2.libChartViewMod.View
 import typings.antvG2.libInterfaceMod.SyncViewPaddingFn
-import typings.antvG2.paddingCalMod.PaddingCalCtor
-import typings.antvG2.viewMod.View
-import typings.antvG2plot.animationMod.Animation
-import typings.antvG2plot.annotationMod.Annotation
 import typings.antvG2plot.antvG2plotBooleans.`false`
 import typings.antvG2plot.antvG2plotStrings.auto
 import typings.antvG2plot.antvG2plotStrings.canvas
 import typings.antvG2plot.antvG2plotStrings.svg
-import typings.antvG2plot.attrMod.ColorAttr
-import typings.antvG2plot.attrMod.PatternAttr
-import typings.antvG2plot.axisMod.Axis
-import typings.antvG2plot.baseMod.MappingOptions
-import typings.antvG2plot.interactionMod.Interaction
-import typings.antvG2plot.metaMod.Meta
-import typings.antvG2plot.scrollbarMod.Scrollbar
-import typings.antvG2plot.sliderMod.Slider
-import typings.antvG2plot.tooltipMod.Tooltip
-import typings.antvG2plot.typesCommonMod.Datum
-import typings.antvG2plot.utilsPatternMod.PatternOption
+import typings.antvG2plot.libAdaptorGeometriesBaseMod.MappingOptions
+import typings.antvG2plot.libTypesAnimationMod.Animation
+import typings.antvG2plot.libTypesAnnotationMod.Annotation
+import typings.antvG2plot.libTypesAttrMod.ColorAttr
+import typings.antvG2plot.libTypesAttrMod.PatternAttr
+import typings.antvG2plot.libTypesAxisMod.Axis
+import typings.antvG2plot.libTypesCommonMod.Datum
+import typings.antvG2plot.libTypesInteractionMod.Interaction
+import typings.antvG2plot.libTypesMetaMod.Meta
+import typings.antvG2plot.libTypesScrollbarMod.Scrollbar
+import typings.antvG2plot.libTypesSliderMod.Slider
+import typings.antvG2plot.libTypesTooltipMod.Tooltip
+import typings.antvG2plot.libUtilsPatternMod.PatternOption
 import typings.std.CanvasPattern
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -55,9 +55,9 @@ trait RequiredLineGeometryOptio extends StObject {
   
   var interactions: js.Array[Interaction]
   
-  var label: typings.antvG2plot.typesLabelMod.Label
+  var label: typings.antvG2plot.libTypesLabelMod.Label
   
-  var legend: typings.antvG2plot.typesLegendMod.Legend
+  var legend: typings.antvG2plot.libTypesLegendMod.Legend
   
   var limitInPlot: Boolean
   
@@ -93,7 +93,7 @@ trait RequiredLineGeometryOptio extends StObject {
   
   var smooth: Boolean
   
-  var state: typings.antvG2plot.stateMod.State
+  var state: typings.antvG2plot.libTypesStateMod.State
   
   var stepType: String
   
@@ -139,8 +139,8 @@ object RequiredLineGeometryOptio {
     defaultInteractions: js.Array[String],
     height: Double,
     interactions: js.Array[Interaction],
-    label: typings.antvG2plot.typesLabelMod.Label,
-    legend: typings.antvG2plot.typesLegendMod.Legend,
+    label: typings.antvG2plot.libTypesLabelMod.Label,
+    legend: typings.antvG2plot.libTypesLegendMod.Legend,
     limitInPlot: Boolean,
     line: MappingOptions,
     localRefresh: Boolean,
@@ -158,7 +158,7 @@ object RequiredLineGeometryOptio {
     sizeField: String,
     slider: Slider,
     smooth: Boolean,
-    state: typings.antvG2plot.stateMod.State,
+    state: typings.antvG2plot.libTypesStateMod.State,
     stepType: String,
     styleField: String,
     supportCSSTransform: Boolean,
@@ -221,9 +221,9 @@ object RequiredLineGeometryOptio {
     
     inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value*))
     
-    inline def setLabel(value: typings.antvG2plot.typesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: typings.antvG2plot.libTypesLabelMod.Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLegend(value: typings.antvG2plot.typesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: typings.antvG2plot.libTypesLegendMod.Legend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLimitInPlot(value: Boolean): Self = StObject.set(x, "limitInPlot", value.asInstanceOf[js.Any])
     
@@ -265,7 +265,7 @@ object RequiredLineGeometryOptio {
     
     inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
-    inline def setState(value: typings.antvG2plot.stateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStepType(value: String): Self = StObject.set(x, "stepType", value.asInstanceOf[js.Any])
     

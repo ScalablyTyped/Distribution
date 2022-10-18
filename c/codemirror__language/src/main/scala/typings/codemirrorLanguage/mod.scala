@@ -1,13 +1,10 @@
 package typings.codemirrorLanguage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.codemirrorLanguage.anon.Alias
 import typings.codemirrorLanguage.anon.Align
-import typings.codemirrorLanguage.anon.All
 import typings.codemirrorLanguage.anon.Except
 import typings.codemirrorLanguage.anon.Fallback
 import typings.codemirrorLanguage.anon.From
-import typings.codemirrorLanguage.anon.LanguageData
 import typings.codemirrorLanguage.anon.OverrideIndentation
 import typings.codemirrorLanguage.anon.To
 import typings.codemirrorLanguage.codemirrorLanguageInts.`-1`
@@ -27,16 +24,16 @@ import typings.codemirrorView.mod.DecorationSet
 import typings.codemirrorView.mod.EditorView
 import typings.codemirrorView.mod.KeyBinding
 import typings.codemirrorView.mod.ViewUpdate
+import typings.lezerCommon.distTreeMod.SyntaxNode
 import typings.lezerCommon.mod.NodeProp
 import typings.lezerCommon.mod.NodeType
 import typings.lezerCommon.mod.Parser
 import typings.lezerCommon.mod.Tree
 import typings.lezerCommon.mod.TreeFragment
-import typings.lezerCommon.treeMod.SyntaxNode
 import typings.lezerHighlight.mod.Highlighter
 import typings.lezerHighlight.mod.Tag
+import typings.lezerLr.distParseMod.ParserConfig
 import typings.lezerLr.mod.LRParser
-import typings.lezerLr.parseMod.ParserConfig
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.RegExpMatchArray
@@ -50,54 +47,6 @@ object mod {
   @JSImport("@codemirror/language", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  /**
-  A highlight style associates CSS styles with higlighting
-  [tags](https://lezer.codemirror.net/docs/ref#highlight.Tag).
-  */
-  @JSImport("@codemirror/language", "HighlightStyle")
-  @js.native
-  /* private */ open class HighlightStyle ()
-    extends StObject
-       with Highlighter {
-    
-    /**
-      A style module holding the CSS rules for this highlight style.
-      When using
-      [`highlightTree`](https://lezer.codemirror.net/docs/ref#highlight.highlightTree)
-      outside of the editor, you may want to manually mount this
-      module to show the highlighting.
-      */
-    val module: StyleModule | Null = js.native
-    
-    /* CompleteClass */
-    override def style(tags: js.Array[Tag]): String | Null = js.native
-  }
-  object HighlightStyle {
-    
-    @JSImport("@codemirror/language", "HighlightStyle")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Create a highlighter style that associates the given styles to
-      the given tags. The specs must be objects that hold a style tag
-      or array of tags in their `tag` property, and either a single
-      `class` property providing a static CSS class (for highlighter
-      that rely on external styling), or a
-      [`style-mod`](https://github.com/marijnh/style-mod#documentation)-style
-      set of CSS properties (which define the styling for those tags).
-      
-      The CSS rules created for a highlighter will be emitted in the
-      order of the spec's properties. That means that for elements that
-      have multiple tags associated with them, styles defined further
-      down in the list will have a higher CSS precedence than styles
-      defined earlier.
-      */
-    /* static member */
-    inline def define(specs: js.Array[TagStyle]): HighlightStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(specs.asInstanceOf[js.Any]).asInstanceOf[HighlightStyle]
-    inline def define(specs: js.Array[TagStyle], options: All): HighlightStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(specs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HighlightStyle]
-  }
   
   /**
   Indentation contexts are used when calling [indentation
@@ -176,118 +125,6 @@ object mod {
       The indent unit (number of columns per indentation level).
       */
     var unit: Double = js.native
-  }
-  
-  /**
-  A subclass of [`Language`](https://codemirror.net/6/docs/ref/#language.Language) for use with Lezer
-  [LR parsers](https://lezer.codemirror.net/docs/ref#lr.LRParser)
-  parsers.
-  */
-  @JSImport("@codemirror/language", "LRLanguage")
-  @js.native
-  /* private */ open class LRLanguage () extends Language_ {
-    
-    /**
-      Create a new instance of this language with a reconfigured
-      version of its parser.
-      */
-    def configure(options: ParserConfig): LRLanguage = js.native
-    
-    @JSName("parser")
-    val parser_LRLanguage: LRParser = js.native
-  }
-  object LRLanguage {
-    
-    @JSImport("@codemirror/language", "LRLanguage")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Define a language from a parser.
-      */
-    /* static member */
-    inline def define(spec: LanguageData): LRLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(spec.asInstanceOf[js.Any]).asInstanceOf[LRLanguage]
-  }
-  
-  /**
-  Language descriptions are used to store metadata about languages
-  and to dynamically load them. Their main role is finding the
-  appropriate language for a filename or dynamically loading nested
-  parsers.
-  */
-  @JSImport("@codemirror/language", "LanguageDescription")
-  @js.native
-  /* private */ open class LanguageDescription () extends StObject {
-    
-    /**
-      Alternative names for the mode (lowercased, includes `this.name`).
-      */
-    val alias: js.Array[String] = js.native
-    
-    /**
-      File extensions associated with this language.
-      */
-    val extensions: js.Array[String] = js.native
-    
-    /**
-      Optional filename pattern that should be associated with this
-      language.
-      */
-    val filename: js.UndefOr[js.RegExp] = js.native
-    
-    /**
-      Start loading the the language. Will return a promise that
-      resolves to a [`LanguageSupport`](https://codemirror.net/6/docs/ref/#language.LanguageSupport)
-      object when the language successfully loads.
-      */
-    def load(): js.Promise[LanguageSupport] = js.native
-    
-    /* private */ var loadFunc: Any = js.native
-    
-    /* private */ var loading: Any = js.native
-    
-    /**
-      The name of this language.
-      */
-    val name: String = js.native
-    
-    /**
-      If the language has been loaded, this will hold its value.
-      */
-    var support: js.UndefOr[LanguageSupport] = js.native
-  }
-  object LanguageDescription {
-    
-    @JSImport("@codemirror/language", "LanguageDescription")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Look for a language in the given array of descriptions that
-      matches the filename. Will first match
-      [`filename`](https://codemirror.net/6/docs/ref/#language.LanguageDescription.filename) patterns,
-      and then [extensions](https://codemirror.net/6/docs/ref/#language.LanguageDescription.extensions),
-      and return the first language that matches.
-      */
-    /* static member */
-    inline def matchFilename(descs: js.Array[LanguageDescription], filename: String): LanguageDescription | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFilename")(descs.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[LanguageDescription | Null]
-    
-    /**
-      Look for a language whose name or alias matches the the given
-      name (case-insensitively). If `fuzzy` is true, and no direct
-      matchs is found, this'll also search for a language whose name
-      or alias occurs in the string (for names shorter than three
-      characters, only when surrounded by non-word characters).
-      */
-    /* static member */
-    inline def matchLanguageName(descs: js.Array[LanguageDescription], name: String): LanguageDescription | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLanguageName")(descs.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[LanguageDescription | Null]
-    inline def matchLanguageName(descs: js.Array[LanguageDescription], name: String, fuzzy: Boolean): LanguageDescription | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLanguageName")(descs.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fuzzy.asInstanceOf[js.Any])).asInstanceOf[LanguageDescription | Null]
-    
-    /**
-      Create a language description.
-      */
-    /* static member */
-    inline def of(spec: Alias): LanguageDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(spec.asInstanceOf[js.Any]).asInstanceOf[LanguageDescription]
   }
   
   /**
@@ -414,100 +251,6 @@ object mod {
       parser](https://lezer.codemirror.net/docs/ref#common.Parser).
       */
     var parser: Parser = js.native
-  }
-  
-  /**
-  A parse context provided to parsers working on the editor content.
-  */
-  @JSImport("@codemirror/language", "ParseContext")
-  @js.native
-  /* private */ open class ParseContext () extends StObject {
-    
-    /**
-      Tree fragments that can be reused by incremental re-parses.
-      */
-    var fragments: js.Array[TreeFragment] = js.native
-    
-    /* private */ var parse: Any = js.native
-    
-    /* private */ var parser: Any = js.native
-    
-    /**
-      Notify the parse scheduler that the given region was skipped
-      because it wasn't in view, and the parse should be restarted
-      when it comes into view.
-      */
-    def skipUntilInView(from: Double, to: Double): Unit = js.native
-    
-    /* private */ var startParse: Any = js.native
-    
-    /**
-      The current editor state.
-      */
-    val state: EditorState = js.native
-    
-    /**
-      The current editor viewport (or some overapproximation
-      thereof). Intended to be used for opportunistically avoiding
-      work (in which case
-      [`skipUntilInView`](https://codemirror.net/6/docs/ref/#language.ParseContext.skipUntilInView)
-      should be called to make sure the parser is restarted when the
-      skipped region becomes visible).
-      */
-    var viewport: To = js.native
-    
-    /* private */ var withContext: Any = js.native
-    
-    /* private */ var withoutTempSkipped: Any = js.native
-  }
-  object ParseContext {
-    
-    @JSImport("@codemirror/language", "ParseContext")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Get the context for the current parse, or `null` if no editor
-      parse is in progress.
-      */
-    /* static member */
-    inline def get(): ParseContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[ParseContext | Null]
-    
-    /**
-      Returns a parser intended to be used as placeholder when
-      asynchronously loading a nested parser. It'll skip its input and
-      mark it as not-really-parsed, so that the next update will parse
-      it again.
-      
-      When `until` is given, a reparse will be scheduled when that
-      promise resolves.
-      */
-    /* static member */
-    inline def getSkippingParser(): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("getSkippingParser")().asInstanceOf[Parser]
-    inline def getSkippingParser(until: js.Promise[Any]): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("getSkippingParser")(until.asInstanceOf[js.Any]).asInstanceOf[Parser]
-  }
-  
-  /**
-  A [language](https://codemirror.net/6/docs/ref/#language.Language) class based on a CodeMirror
-  5-style [streaming parser](https://codemirror.net/6/docs/ref/#language.StreamParser).
-  */
-  @JSImport("@codemirror/language", "StreamLanguage")
-  @js.native
-  /* private */ open class StreamLanguage[State] () extends Language_ {
-    
-    /* private */ var getIndent: Any = js.native
-  }
-  object StreamLanguage {
-    
-    @JSImport("@codemirror/language", "StreamLanguage")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      Define a stream language.
-      */
-    /* static member */
-    inline def define[State](spec: StreamParser[State]): StreamLanguage[State] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(spec.asInstanceOf[js.Any]).asInstanceOf[StreamLanguage[State]]
   }
   
   /**
@@ -1261,6 +1004,143 @@ object mod {
   ]
   
   /**
+  A highlight style associates CSS styles with higlighting
+  [tags](https://lezer.codemirror.net/docs/ref#highlight.Tag).
+  */
+  trait HighlightStyle
+    extends StObject
+       with Highlighter {
+    
+    /**
+      A style module holding the CSS rules for this highlight style.
+      When using
+      [`highlightTree`](https://lezer.codemirror.net/docs/ref#highlight.highlightTree)
+      outside of the editor, you may want to manually mount this
+      module to show the highlighting.
+      */
+    val module: StyleModule | Null
+  }
+  object HighlightStyle {
+    
+    inline def apply(style: js.Array[Tag] => String | Null): HighlightStyle = {
+      val __obj = js.Dynamic.literal(style = js.Any.fromFunction1(style), module = null)
+      __obj.asInstanceOf[HighlightStyle]
+    }
+    
+    extension [Self <: HighlightStyle](x: Self) {
+      
+      inline def setModule(value: StyleModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setModuleNull: Self = StObject.set(x, "module", null)
+    }
+  }
+  
+  /**
+  A subclass of [`Language`](https://codemirror.net/6/docs/ref/#language.Language) for use with Lezer
+  [LR parsers](https://lezer.codemirror.net/docs/ref#lr.LRParser)
+  parsers.
+  */
+  @js.native
+  trait LRLanguage extends Language_ {
+    
+    /**
+      Create a new instance of this language with a reconfigured
+      version of its parser.
+      */
+    def configure(options: ParserConfig): LRLanguage = js.native
+    
+    @JSName("parser")
+    val parser_LRLanguage: LRParser = js.native
+  }
+  
+  /**
+  Language descriptions are used to store metadata about languages
+  and to dynamically load them. Their main role is finding the
+  appropriate language for a filename or dynamically loading nested
+  parsers.
+  */
+  trait LanguageDescription extends StObject {
+    
+    /**
+      Alternative names for the mode (lowercased, includes `this.name`).
+      */
+    val alias: js.Array[String]
+    
+    /**
+      File extensions associated with this language.
+      */
+    val extensions: js.Array[String]
+    
+    /**
+      Optional filename pattern that should be associated with this
+      language.
+      */
+    val filename: js.UndefOr[js.RegExp] = js.undefined
+    
+    /**
+      Start loading the the language. Will return a promise that
+      resolves to a [`LanguageSupport`](https://codemirror.net/6/docs/ref/#language.LanguageSupport)
+      object when the language successfully loads.
+      */
+    def load(): js.Promise[LanguageSupport]
+    
+    /* private */ var loadFunc: Any
+    
+    /* private */ var loading: Any
+    
+    /**
+      The name of this language.
+      */
+    val name: String
+    
+    /**
+      If the language has been loaded, this will hold its value.
+      */
+    var support: js.UndefOr[LanguageSupport] = js.undefined
+  }
+  object LanguageDescription {
+    
+    inline def apply(
+      alias: js.Array[String],
+      extensions: js.Array[String],
+      load: () => js.Promise[LanguageSupport],
+      loadFunc: Any,
+      loading: Any,
+      name: String
+    ): LanguageDescription = {
+      val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loadFunc = loadFunc.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LanguageDescription]
+    }
+    
+    extension [Self <: LanguageDescription](x: Self) {
+      
+      inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
+      
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
+      
+      inline def setFilename(value: js.RegExp): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setLoad(value: () => js.Promise[LanguageSupport]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      
+      inline def setLoadFunc(value: Any): Self = StObject.set(x, "loadFunc", value.asInstanceOf[js.Any])
+      
+      inline def setLoading(value: Any): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setSupport(value: LanguageSupport): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+      
+      inline def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
+    }
+  }
+  
+  /**
   The result returned from `matchBrackets`.
   */
   trait MatchResult extends StObject {
@@ -1298,6 +1178,99 @@ object mod {
       
       inline def setStart(value: To): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /**
+  A parse context provided to parsers working on the editor content.
+  */
+  trait ParseContext extends StObject {
+    
+    /**
+      Tree fragments that can be reused by incremental re-parses.
+      */
+    var fragments: js.Array[TreeFragment]
+    
+    /* private */ var parse: Any
+    
+    /* private */ var parser: Any
+    
+    /**
+      Notify the parse scheduler that the given region was skipped
+      because it wasn't in view, and the parse should be restarted
+      when it comes into view.
+      */
+    def skipUntilInView(from: Double, to: Double): Unit
+    
+    /* private */ var startParse: Any
+    
+    /**
+      The current editor state.
+      */
+    val state: EditorState
+    
+    /**
+      The current editor viewport (or some overapproximation
+      thereof). Intended to be used for opportunistically avoiding
+      work (in which case
+      [`skipUntilInView`](https://codemirror.net/6/docs/ref/#language.ParseContext.skipUntilInView)
+      should be called to make sure the parser is restarted when the
+      skipped region becomes visible).
+      */
+    var viewport: To
+    
+    /* private */ var withContext: Any
+    
+    /* private */ var withoutTempSkipped: Any
+  }
+  object ParseContext {
+    
+    inline def apply(
+      fragments: js.Array[TreeFragment],
+      parse: Any,
+      parser: Any,
+      skipUntilInView: (Double, Double) => Unit,
+      startParse: Any,
+      state: EditorState,
+      viewport: To,
+      withContext: Any,
+      withoutTempSkipped: Any
+    ): ParseContext = {
+      val __obj = js.Dynamic.literal(fragments = fragments.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], skipUntilInView = js.Any.fromFunction2(skipUntilInView), startParse = startParse.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any], withContext = withContext.asInstanceOf[js.Any], withoutTempSkipped = withoutTempSkipped.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParseContext]
+    }
+    
+    extension [Self <: ParseContext](x: Self) {
+      
+      inline def setFragments(value: js.Array[TreeFragment]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+      
+      inline def setFragmentsVarargs(value: TreeFragment*): Self = StObject.set(x, "fragments", js.Array(value*))
+      
+      inline def setParse(value: Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      
+      inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      
+      inline def setSkipUntilInView(value: (Double, Double) => Unit): Self = StObject.set(x, "skipUntilInView", js.Any.fromFunction2(value))
+      
+      inline def setStartParse(value: Any): Self = StObject.set(x, "startParse", value.asInstanceOf[js.Any])
+      
+      inline def setState(value: EditorState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setViewport(value: To): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      
+      inline def setWithContext(value: Any): Self = StObject.set(x, "withContext", value.asInstanceOf[js.Any])
+      
+      inline def setWithoutTempSkipped(value: Any): Self = StObject.set(x, "withoutTempSkipped", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /**
+  A [language](https://codemirror.net/6/docs/ref/#language.Language) class based on a CodeMirror
+  5-style [streaming parser](https://codemirror.net/6/docs/ref/#language.StreamParser).
+  */
+  @js.native
+  trait StreamLanguage[State] extends Language_ {
+    
+    /* private */ var getIndent: Any = js.native
   }
   
   /**

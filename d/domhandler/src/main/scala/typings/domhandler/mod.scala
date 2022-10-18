@@ -59,9 +59,9 @@ object mod {
     def this(data: String) = this()
   }
   
-  @JSImport("domhandler", "DataNode")
+  /* note: abstract class */ @JSImport("domhandler", "DataNode")
   @js.native
-  abstract class DataNode protected ()
+  open class DataNode protected ()
     extends typings.domhandler.libNodeMod.DataNode {
     /**
       * @param data The content of the data node
@@ -177,14 +177,14 @@ object mod {
     def this(name: String, attribs: StringDictionary[String], children: Unit, `type`: Tag) = this()
   }
   
-  @JSImport("domhandler", "Node")
+  /* note: abstract class */ @JSImport("domhandler", "Node")
   @js.native
-  abstract class Node ()
+  open class Node ()
     extends typings.domhandler.libNodeMod.Node
   
-  @JSImport("domhandler", "NodeWithChildren")
+  /* note: abstract class */ @JSImport("domhandler", "NodeWithChildren")
   @js.native
-  abstract class NodeWithChildren protected ()
+  open class NodeWithChildren protected ()
     extends typings.domhandler.libNodeMod.NodeWithChildren {
     /**
       * @param children Children of the node. Only certain node types can have children.

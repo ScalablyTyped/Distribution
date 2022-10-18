@@ -45,9 +45,9 @@ object Imaging {
   }
   
   /** Represents the pixel data buffer of a bitmap. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapBuffer")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapBuffer")
   @js.native
-  abstract class BitmapBuffer ()
+  open class BitmapBuffer ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapBuffer {
     
@@ -94,9 +94,9 @@ object Imaging {
   }
   
   /** Provides access to information about a decoder or encoder. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapCodecInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapCodecInformation")
   @js.native
-  abstract class BitmapCodecInformation ()
+  open class BitmapCodecInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapCodecInformation {
     
@@ -118,9 +118,9 @@ object Imaging {
   }
   
   /** Provides read access to bitmap container data as well as data from the first frame. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")
   @js.native
-  abstract class BitmapDecoder ()
+  open class BitmapDecoder ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapDecoder
   object BitmapDecoder {
@@ -203,9 +203,9 @@ object Imaging {
   }
   
   /** Contains methods to create, edit and save images. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder")
   @js.native
-  abstract class BitmapEncoder ()
+  open class BitmapEncoder ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapEncoder
   object BitmapEncoder {
@@ -322,9 +322,9 @@ object Imaging {
   }
   
   /** Provides read access to data within a single frame. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapFrame")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapFrame")
   @js.native
-  abstract class BitmapFrame ()
+  open class BitmapFrame ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapFrame
   
@@ -371,9 +371,9 @@ object Imaging {
   }
   
   /** Provides read and write access to image properties and metadata. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapProperties")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapProperties")
   @js.native
-  abstract class BitmapProperties ()
+  open class BitmapProperties ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapProperties {
     
@@ -395,9 +395,9 @@ object Imaging {
   }
   
   /** Provides read access to image properties and metadata. A particular instance of BitmapPropertiesView may represent the entire contents of the frame metadata, or any nested metadata block within the frame. */
-  @JSGlobal("Windows.Graphics.Imaging.BitmapPropertiesView")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.BitmapPropertiesView")
   @js.native
-  abstract class BitmapPropertiesView ()
+  open class BitmapPropertiesView ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.BitmapPropertiesView {
     
@@ -517,9 +517,9 @@ object Imaging {
   }
   
   /** An implementation of IRandomAccessStreamWithContent type used in the Imaging namespace. */
-  @JSGlobal("Windows.Graphics.Imaging.ImageStream")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.ImageStream")
   @js.native
-  abstract class ImageStream ()
+  open class ImageStream ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.ImageStream {
     
@@ -621,9 +621,9 @@ object Imaging {
   }
   
   /** Provides access to the pixel data from a bitmap frame. */
-  @JSGlobal("Windows.Graphics.Imaging.PixelDataProvider")
+  /* note: abstract class */ @JSGlobal("Windows.Graphics.Imaging.PixelDataProvider")
   @js.native
-  abstract class PixelDataProvider ()
+  open class PixelDataProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Graphics.Imaging.PixelDataProvider {
     

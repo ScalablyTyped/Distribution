@@ -1,9 +1,9 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.utilMod.Dict
-import typings.vegaTypings.encodeMod.Text
-import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.titleMod.TitleAnchor
+import typings.vegaLite.buildSrcUtilMod.Dict
+import typings.vegaTypings.typesSpecEncodeMod.Text
+import typings.vegaTypings.typesSpecSignalMod.SignalRef
+import typings.vegaTypings.typesSpecTitleMod.TitleAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +57,7 @@ trait FormatType extends StObject {
   
   var labelLineHeight: js.UndefOr[Any] = js.undefined
   
-  var labelOrient: typings.vegaTypings.encodeMod.Orient
+  var labelOrient: typings.vegaTypings.typesSpecEncodeMod.Orient
   
   var labelPadding: js.UndefOr[Any] = js.undefined
   
@@ -87,15 +87,15 @@ trait FormatType extends StObject {
   
   var titleLineHeight: js.UndefOr[Any] = js.undefined
   
-  var titleOrient: typings.vegaTypings.encodeMod.Orient
+  var titleOrient: typings.vegaTypings.typesSpecEncodeMod.Orient
   
   var titlePadding: js.UndefOr[Any] = js.undefined
 }
 object FormatType {
   
   inline def apply(
-    labelOrient: typings.vegaTypings.encodeMod.Orient,
-    titleOrient: typings.vegaTypings.encodeMod.Orient
+    labelOrient: typings.vegaTypings.typesSpecEncodeMod.Orient,
+    titleOrient: typings.vegaTypings.typesSpecEncodeMod.Orient
   ): FormatType = {
     val __obj = js.Dynamic.literal(labelOrient = labelOrient.asInstanceOf[js.Any], titleOrient = titleOrient.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatType]
@@ -161,7 +161,7 @@ object FormatType {
     
     inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
     
-    inline def setLabelOrient(value: typings.vegaTypings.encodeMod.Orient): Self = StObject.set(x, "labelOrient", value.asInstanceOf[js.Any])
+    inline def setLabelOrient(value: typings.vegaTypings.typesSpecEncodeMod.Orient): Self = StObject.set(x, "labelOrient", value.asInstanceOf[js.Any])
     
     inline def setLabelPadding(value: Any): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
     
@@ -219,7 +219,7 @@ object FormatType {
     
     inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
     
-    inline def setTitleOrient(value: typings.vegaTypings.encodeMod.Orient): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
+    inline def setTitleOrient(value: typings.vegaTypings.typesSpecEncodeMod.Orient): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
     
     inline def setTitlePadding(value: Any): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
     

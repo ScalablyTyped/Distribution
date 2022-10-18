@@ -1,7 +1,7 @@
 package typings.raml1Parser.anon
 
-import typings.raml1Parser.lowLevelASTMod.ILowLevelASTNode
-import typings.raml1Parser.lowLevelASTProxyMod.ValueTransformer
+import typings.raml1Parser.distParserAstDotcoreLowLevelASTProxyMod.ValueTransformer
+import typings.raml1Parser.distParserLowLevelASTMod.ILowLevelASTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

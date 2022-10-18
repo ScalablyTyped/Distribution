@@ -1,11 +1,6 @@
 package typings.typedQuerySelector
 
-import typings.std.NodeListOf
 import typings.std.Uppercase
-import typings.typedQuerySelector.parserMod.TagNameToElement
-import typings.typedQuerySelector.strictMod.global.Element
-import typings.typedQuerySelector.typedQuerySelectorBooleans.`false`
-import typings.typedQuerySelector.typedQuerySelectorStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,18 +59,34 @@ object strictMod {
   */
   type IdentifierFirstChar = _IdentifierFirstChar | Uppercase[LowerCaseLetter]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.typedQuerySelector.typedQuerySelectorBooleans.`true`
-    - typings.typedQuerySelector.typedQuerySelectorBooleans.`false`
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends / * template literal string: ${inferH}${inferRest} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H * / any extends typed-query-selector.typed-query-selector/strict.IdentifierChar ? typed-query-selector.typed-query-selector/strict.IsValidRestChars</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : false : true
+    }}}
+    */
+  @js.native
   trait IsValidRestChars[S /* <: String */] extends StObject
   
-  type IsValidTagName[S] = `false`
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends / * template literal string: ${inferH}${inferRest} * / string ? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H * / any extends typed-query-selector.typed-query-selector/strict.IdentifierFirstChar ? typed-query-selector.typed-query-selector/strict.IsValidRestChars</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Rest * / any> : false : false
+    }}}
+    */
+  @js.native
+  trait IsValidTagName[S] extends StObject
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.typedQuerySelector.typedQuerySelectorBooleans.`true`
-    - typings.typedQuerySelector.typedQuerySelectorBooleans.`false`
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    S extends [infer H, ...infer Rest] ? H extends '' | '*' ? typed-query-selector.typed-query-selector/strict.IsValidTags<Rest> : typed-query-selector.typed-query-selector/strict.IsValidTagName<H> extends true ? typed-query-selector.typed-query-selector/strict.IsValidTags<Rest> : false : true
+    }}}
+    */
+  @js.native
   trait IsValidTags[S] extends StObject
   
   // Specification is here: https://drafts.csswg.org/css-syntax-3/#ident-token-diagram
@@ -168,10 +179,15 @@ object strictMod {
   }
   
   // no characters left, so it's OK
-  type Parse[S /* <: String */] = TagNameToElement[
-    _empty | (/* import warning: importer.ImportType#apply Failed type conversion: any[number] */ js.Any), 
-    Element
-  ]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    typed-query-selector.typed-query-selector/parser.ParseSelectorToTagNames<S> extends infer Tags ? Tags extends [] ? typed-query-selector.typed-query-selector/parser.TagNameToElement<'', typed-query-selector.typed-query-selector/strict.<global>.Element> : Tags extends std.Array<string> ? typed-query-selector.typed-query-selector/strict.IsValidTags<Tags> extends true ? typed-query-selector.typed-query-selector/parser.TagNameToElement<Tags[number], typed-query-selector.typed-query-selector/strict.<global>.Element> : never : never : never
+    }}}
+    */
+  @js.native
+  trait Parse[S /* <: String */] extends StObject
   
   trait _IdentifierChar extends StObject
   
@@ -183,39 +199,50 @@ object strictMod {
     
     trait Element extends StObject {
       
-      def closest[S /* <: String */, E /* <: Parse[S] */](selector: S): E | Null
+      def closest[S /* <: String */, E /* <: Parse[S] */](selector: S): /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any
     }
     object Element {
       
-      inline def apply(closest: Any => Any | Null): Element = {
+      inline def apply(
+        closest: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any
+      ): Element = {
         val __obj = js.Dynamic.literal(closest = js.Any.fromFunction1(closest))
         __obj.asInstanceOf[Element]
       }
       
       extension [Self <: Element](x: Self) {
         
-        inline def setClosest(value: Any => Any | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
+        inline def setClosest(
+          value: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any
+        ): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
       }
     }
     
     trait ParentNode extends StObject {
       
-      def querySelector[S /* <: String */, E /* <: Parse[S] */](selector: S): E | Null
+      def querySelector[S /* <: String */, E /* <: Parse[S] */](selector: S): /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any
       
-      def querySelectorAll[S /* <: String */, E /* <: Parse[S] */](selector: S): NodeListOf[E]
+      def querySelectorAll[S /* <: String */, E /* <: Parse[S] */](selector: S): /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : std.NodeListOf<E> */ js.Any
     }
     object ParentNode {
       
-      inline def apply(querySelector: Any => Any | Null, querySelectorAll: Any => NodeListOf[Any]): ParentNode = {
+      inline def apply(
+        querySelector: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any,
+        querySelectorAll: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : std.NodeListOf<E> */ js.Any
+      ): ParentNode = {
         val __obj = js.Dynamic.literal(querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll))
         __obj.asInstanceOf[ParentNode]
       }
       
       extension [Self <: ParentNode](x: Self) {
         
-        inline def setQuerySelector(value: Any => Any | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
+        inline def setQuerySelector(
+          value: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : E | null */ js.Any
+        ): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
         
-        inline def setQuerySelectorAll(value: Any => NodeListOf[Any]): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
+        inline def setQuerySelectorAll(
+          value: Any => /* import warning: importer.ImportType#apply Failed type conversion: [E] extends [never] ? never : std.NodeListOf<E> */ js.Any
+        ): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
       }
     }
   }

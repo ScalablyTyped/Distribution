@@ -1,6 +1,6 @@
 package typings.rxjs.anon
 
-import typings.rxjs.testSchedulerMod.subscriptionLogsToBeFn
+import typings.rxjs.distTypesInternalTestingTestSchedulerMod.subscriptionLogsToBeFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.octokitTypes
 
-import typings.octokitTypes.endpointsMod.KnownJsonResponseTypes
-import typings.octokitTypes.requestMethodMod.RequestMethod
+import typings.octokitTypes.distTypesGeneratedEndpointsMod.KnownJsonResponseTypes
+import typings.octokitTypes.distTypesRequestMethodMod.RequestMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,6 +55,10 @@ object octokitTypesStrings {
   inline def `DELETE SlashnotificationsSlashthreadsSlashLeftcurlybracketthread_idRightcurlybracketSlashsubscription`: `DELETE SlashnotificationsSlashthreadsSlashLeftcurlybracketthread_idRightcurlybracketSlashsubscription` = ("DELETE /notifications/threads/{thread_id}/subscription").asInstanceOf[`DELETE SlashnotificationsSlashthreadsSlashLeftcurlybracketthread_idRightcurlybracketSlashsubscription`]
   
   @js.native
+  sealed trait `DELETE SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket` extends StObject
+  inline def `DELETE SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket`: `DELETE SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket` = ("DELETE /organizations/{org}/codespaces/secrets/{secret_name}").asInstanceOf[`DELETE SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket`]
+  
+  @js.native
   sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracket` extends StObject
   inline def `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracket`: `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracket` = ("DELETE /orgs/{org}/actions/runner-groups/{runner_group_id}").asInstanceOf[`DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracket`]
   
@@ -77,10 +81,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocksSlashLeftcurlybracketusernameRightcurlybracket` extends StObject
   inline def `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocksSlashLeftcurlybracketusernameRightcurlybracket`: `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocksSlashLeftcurlybracketusernameRightcurlybracket` = ("DELETE /orgs/{org}/blocks/{username}").asInstanceOf[`DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocksSlashLeftcurlybracketusernameRightcurlybracket`]
-  
-  @js.native
-  sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket` extends StObject
-  inline def `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket`: `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket` = ("DELETE /orgs/{org}/credential-authorizations/{credential_id}").asInstanceOf[`DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket`]
   
   @js.native
   sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcustom_rolesSlashLeftcurlybracketrole_idRightcurlybracket` extends StObject
@@ -133,10 +133,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket` extends StObject
   inline def `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket`: `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket` = ("DELETE /orgs/{org}/teams/{team_slug}").asInstanceOf[`DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket`]
-  
-  @js.native
-  sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` extends StObject
-  inline def `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`: `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` = ("DELETE /orgs/{org}/teams/{team_slug}/external-groups").asInstanceOf[`DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`]
   
   @js.native
   sealed trait `DELETE SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashmembershipsSlashLeftcurlybracketusernameRightcurlybracket` extends StObject
@@ -307,10 +303,6 @@ object octokitTypesStrings {
   inline def `DELETE SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts`: `DELETE SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts` = ("DELETE /repos/{owner}/{repo}/vulnerability-alerts").asInstanceOf[`DELETE SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts`]
   
   @js.native
-  sealed trait `DELETE SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `DELETE SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `DELETE SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("DELETE /scim/v2/organizations/{org}/Users/{scim_user_id}").asInstanceOf[`DELETE SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
-  
-  @js.native
   sealed trait `DELETE SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket` extends StObject
   inline def `DELETE SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket`: `DELETE SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket` = ("DELETE /teams/{team_id}").asInstanceOf[`DELETE SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket`]
   
@@ -465,32 +457,12 @@ object octokitTypesStrings {
   inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunnersSlashdownloads`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunnersSlashdownloads` = ("GET /enterprises/{enterprise}/actions/runners/downloads").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunnersSlashdownloads`]
   
   @js.native
-  sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log` extends StObject
-  inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log` = ("GET /enterprises/{enterprise}/audit-log").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`]
-  
-  @js.native
   sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts` extends StObject
   inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts` = ("GET /enterprises/{enterprise}/code-scanning/alerts").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`]
   
   @js.native
-  sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses` extends StObject
-  inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses` = ("GET /enterprises/{enterprise}/consumed-licenses").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses`]
-  
-  @js.native
-  sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status` extends StObject
-  inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status` = ("GET /enterprises/{enterprise}/license-sync-status").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status`]
-  
-  @js.native
   sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts` extends StObject
   inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts` = ("GET /enterprises/{enterprise}/secret-scanning/alerts").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`]
-  
-  @js.native
-  sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions` extends StObject
-  inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions` = ("GET /enterprises/{enterprise}/settings/billing/actions").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions`]
-  
-  @js.native
-  sealed trait `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages` extends StObject
-  inline def `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages`: `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages` = ("GET /enterprises/{enterprise}/settings/billing/packages").asInstanceOf[`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages`]
   
   @js.native
   sealed trait `GET Slashevents` extends StObject
@@ -617,6 +589,18 @@ object octokitTypesStrings {
   inline def `GET Slashorganizations`: `GET Slashorganizations` = ("GET /organizations").asInstanceOf[`GET Slashorganizations`]
   
   @js.native
+  sealed trait `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets` extends StObject
+  inline def `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets`: `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets` = ("GET /organizations/{org}/codespaces/secrets").asInstanceOf[`GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets`]
+  
+  @js.native
+  sealed trait `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket` extends StObject
+  inline def `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket`: `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket` = ("GET /organizations/{org}/codespaces/secrets/{secret_name}").asInstanceOf[`GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket`]
+  
+  @js.native
+  sealed trait `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key` extends StObject
+  inline def `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key`: `GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key` = ("GET /organizations/{org}/codespaces/secrets/public-key").asInstanceOf[`GET SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key`]
+  
+  @js.native
   sealed trait `GET SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles` extends StObject
   inline def `GET SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles`: `GET SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles` = ("GET /organizations/{organization_id}/custom_roles").asInstanceOf[`GET SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles`]
   
@@ -631,10 +615,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository` = ("GET /orgs/{org}/actions/cache/usage-by-repository").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`]
-  
-  @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` = ("GET /orgs/{org}/actions/oidc/customization/sub").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`]
   
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissions` extends StObject
@@ -693,10 +673,6 @@ object octokitTypesStrings {
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashpublic-key`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashpublic-key` = ("GET /orgs/{org}/actions/secrets/public-key").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashpublic-key`]
   
   @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log` = ("GET /orgs/{org}/audit-log").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`]
-  
-  @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks` = ("GET /orgs/{org}/blocks").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks`]
   
@@ -713,10 +689,6 @@ object octokitTypesStrings {
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces` = ("GET /orgs/{org}/codespaces").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces`]
   
   @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations` = ("GET /orgs/{org}/credential-authorizations").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`]
-  
-  @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets` = ("GET /orgs/{org}/dependabot/secrets").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets`]
   
@@ -731,14 +703,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents` = ("GET /orgs/{org}/events").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents`]
-  
-  @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket` = ("GET /orgs/{org}/external-group/{group_id}").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups` = ("GET /orgs/{org}/external-groups").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`]
   
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashfailed_invitations` extends StObject
@@ -873,10 +837,6 @@ object octokitTypesStrings {
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashshared-storage`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashshared-storage` = ("GET /orgs/{org}/settings/billing/shared-storage").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashshared-storage`]
   
   @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups` = ("GET /orgs/{org}/team-sync/groups").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`]
-  
-  @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams` = ("GET /orgs/{org}/teams").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams`]
   
@@ -887,10 +847,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions` = ("GET /orgs/{org}/teams/{team_slug}/discussions").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions`]
-  
-  @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` = ("GET /orgs/{org}/teams/{team_slug}/external-groups").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`]
   
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashinvitations` extends StObject
@@ -919,10 +875,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket` extends StObject
   inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket` = ("GET /orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket`]
-  
-  @js.native
-  sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings` extends StObject
-  inline def `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings`: `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings` = ("GET /orgs/{org}/teams/{team_slug}/team-sync/group-mappings").asInstanceOf[`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings`]
   
   @js.native
   sealed trait `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteams` extends StObject
@@ -987,10 +939,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashlogs` extends StObject
   inline def `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashlogs`: `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashlogs` = ("GET /repos/{owner}/{repo}/actions/jobs/{job_id}/logs").asInstanceOf[`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashlogs`]
-  
-  @js.native
-  sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` extends StObject
-  inline def `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`: `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` = ("GET /repos/{owner}/{repo}/actions/oidc/customization/sub").asInstanceOf[`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`]
   
   @js.native
   sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashpermissions` extends StObject
@@ -1227,6 +1175,14 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors` extends StObject
   inline def `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors`: `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors` = ("GET /repos/{owner}/{repo}/contributors").asInstanceOf[`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors`]
+  
+  @js.native
+  sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts` extends StObject
+  inline def `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts`: `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts` = ("GET /repos/{owner}/{repo}/dependabot/alerts").asInstanceOf[`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts`]
+  
+  @js.native
+  sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket` extends StObject
+  inline def `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket`: `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket` = ("GET /repos/{owner}/{repo}/dependabot/alerts/{alert_number}").asInstanceOf[`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket`]
   
   @js.native
   sealed trait `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashsecrets` extends StObject
@@ -1589,30 +1545,6 @@ object octokitTypesStrings {
   inline def `GET Slashrepositories`: `GET Slashrepositories` = ("GET /repositories").asInstanceOf[`GET Slashrepositories`]
   
   @js.native
-  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups` extends StObject
-  inline def `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups`: `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups` = ("GET /scim/v2/enterprises/{enterprise}/Groups").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups`]
-  
-  @js.native
-  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket` extends StObject
-  inline def `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket`: `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket` = ("GET /scim/v2/enterprises/{enterprise}/Groups/{scim_group_id}").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers` extends StObject
-  inline def `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers`: `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers` = ("GET /scim/v2/enterprises/{enterprise}/Users").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers`]
-  
-  @js.native
-  sealed trait `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("GET /scim/v2/enterprises/{enterprise}/Users/{scim_user_id}").asInstanceOf[`GET SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers` extends StObject
-  inline def `GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers`: `GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers` = ("GET /scim/v2/organizations/{org}/Users").asInstanceOf[`GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers`]
-  
-  @js.native
-  sealed trait `GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("GET /scim/v2/organizations/{org}/Users/{scim_user_id}").asInstanceOf[`GET SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
-  
-  @js.native
   sealed trait `GET SlashsearchSlashcode` extends StObject
   inline def `GET SlashsearchSlashcode`: `GET SlashsearchSlashcode` = ("GET /search/code").asInstanceOf[`GET SlashsearchSlashcode`]
   
@@ -1683,10 +1615,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket` extends StObject
   inline def `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket`: `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket` = ("GET /teams/{team_id}/repos/{owner}/{repo}").asInstanceOf[`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket`]
-  
-  @js.native
-  sealed trait `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings` extends StObject
-  inline def `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings`: `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings` = ("GET /teams/{team_id}/team-sync/group-mappings").asInstanceOf[`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings`]
   
   @js.native
   sealed trait `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteams` extends StObject
@@ -2033,14 +1961,6 @@ object octokitTypesStrings {
   inline def `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket`: `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket` = ("PATCH /orgs/{org}/teams/{team_slug}").asInstanceOf[`PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracket`]
   
   @js.native
-  sealed trait `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` extends StObject
-  inline def `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`: `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` = ("PATCH /orgs/{org}/teams/{team_slug}/external-groups").asInstanceOf[`PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`]
-  
-  @js.native
-  sealed trait `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings` extends StObject
-  inline def `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings`: `PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings` = ("PATCH /orgs/{org}/teams/{team_slug}/team-sync/group-mappings").asInstanceOf[`PATCH SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings`]
-  
-  @js.native
   sealed trait `PATCH SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracket` extends StObject
   inline def `PATCH SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracket`: `PATCH SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracket` = ("PATCH /projects/{project_id}").asInstanceOf[`PATCH SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracket`]
   
@@ -2067,6 +1987,10 @@ object octokitTypesStrings {
   @js.native
   sealed trait `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracket` extends StObject
   inline def `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracket`: `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracket` = ("PATCH /repos/{owner}/{repo}/comments/{comment_id}").asInstanceOf[`PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracket`]
+  
+  @js.native
+  sealed trait `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket` extends StObject
+  inline def `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket`: `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket` = ("PATCH /repos/{owner}/{repo}/dependabot/alerts/{alert_number}").asInstanceOf[`PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket`]
   
   @js.native
   sealed trait `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashgitSlashrefsSlashLeftcurlybracketrefRightcurlybracket` extends StObject
@@ -2129,24 +2053,12 @@ object octokitTypesStrings {
   inline def `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashassetsSlashLeftcurlybracketasset_idRightcurlybracket`: `PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashassetsSlashLeftcurlybracketasset_idRightcurlybracket` = ("PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}").asInstanceOf[`PATCH SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashassetsSlashLeftcurlybracketasset_idRightcurlybracket`]
   
   @js.native
-  sealed trait `PATCH SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `PATCH SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `PATCH SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("PATCH /scim/v2/enterprises/{enterprise}/Users/{scim_user_id}").asInstanceOf[`PATCH SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `PATCH SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `PATCH SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `PATCH SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("PATCH /scim/v2/organizations/{org}/Users/{scim_user_id}").asInstanceOf[`PATCH SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
-  
-  @js.native
   sealed trait `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket` extends StObject
   inline def `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket`: `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket` = ("PATCH /teams/{team_id}").asInstanceOf[`PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracket`]
   
   @js.native
   sealed trait `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracket` extends StObject
   inline def `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracket`: `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracket` = ("PATCH /teams/{team_id}/discussions/{discussion_number}").asInstanceOf[`PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracket`]
-  
-  @js.native
-  sealed trait `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings` extends StObject
-  inline def `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings`: `PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings` = ("PATCH /teams/{team_id}/team-sync/group-mappings").asInstanceOf[`PATCH SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings`]
   
   @js.native
   sealed trait `PATCH Slashuser` extends StObject
@@ -2495,18 +2407,6 @@ object octokitTypesStrings {
   inline def `POST SlashreposSlashLeftcurlybrackettemplate_ownerRightcurlybracketSlashLeftcurlybrackettemplate_repoRightcurlybracketSlashgenerate`: `POST SlashreposSlashLeftcurlybrackettemplate_ownerRightcurlybracketSlashLeftcurlybrackettemplate_repoRightcurlybracketSlashgenerate` = ("POST /repos/{template_owner}/{template_repo}/generate").asInstanceOf[`POST SlashreposSlashLeftcurlybrackettemplate_ownerRightcurlybracketSlashLeftcurlybrackettemplate_repoRightcurlybracketSlashgenerate`]
   
   @js.native
-  sealed trait `POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups` extends StObject
-  inline def `POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups`: `POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups` = ("POST /scim/v2/enterprises/{enterprise}/Groups").asInstanceOf[`POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups`]
-  
-  @js.native
-  sealed trait `POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers` extends StObject
-  inline def `POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers`: `POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers` = ("POST /scim/v2/enterprises/{enterprise}/Users").asInstanceOf[`POST SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers`]
-  
-  @js.native
-  sealed trait `POST SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers` extends StObject
-  inline def `POST SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers`: `POST SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers` = ("POST /scim/v2/organizations/{org}/Users").asInstanceOf[`POST SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers`]
-  
-  @js.native
   sealed trait `POST SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions` extends StObject
   inline def `POST SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions`: `POST SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions` = ("POST /teams/{team_id}/discussions").asInstanceOf[`POST SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions`]
   
@@ -2585,8 +2485,8 @@ object octokitTypesStrings {
   inline def `PUT SlashnotificationsSlashthreadsSlashLeftcurlybracketthread_idRightcurlybracketSlashsubscription`: `PUT SlashnotificationsSlashthreadsSlashLeftcurlybracketthread_idRightcurlybracketSlashsubscription` = ("PUT /notifications/threads/{thread_id}/subscription").asInstanceOf[`PUT SlashnotificationsSlashthreadsSlashLeftcurlybracketthread_idRightcurlybracketSlashsubscription`]
   
   @js.native
-  sealed trait `PUT SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` extends StObject
-  inline def `PUT SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`: `PUT SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` = ("PUT /orgs/{org}/actions/oidc/customization/sub").asInstanceOf[`PUT SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`]
+  sealed trait `PUT SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket` extends StObject
+  inline def `PUT SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket`: `PUT SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket` = ("PUT /organizations/{org}/codespaces/secrets/{secret_name}").asInstanceOf[`PUT SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket`]
   
   @js.native
   sealed trait `PUT SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissions` extends StObject
@@ -2659,10 +2559,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `PUT SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaboratorsSlashLeftcurlybracketusernameRightcurlybracket` extends StObject
   inline def `PUT SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaboratorsSlashLeftcurlybracketusernameRightcurlybracket`: `PUT SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaboratorsSlashLeftcurlybracketusernameRightcurlybracket` = ("PUT /projects/{project_id}/collaborators/{username}").asInstanceOf[`PUT SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaboratorsSlashLeftcurlybracketusernameRightcurlybracket`]
-  
-  @js.native
-  sealed trait `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` extends StObject
-  inline def `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`: `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub` = ("PUT /repos/{owner}/{repo}/actions/oidc/customization/sub").asInstanceOf[`PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub`]
   
   @js.native
   sealed trait `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashpermissions` extends StObject
@@ -2759,18 +2655,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts` extends StObject
   inline def `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts`: `PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts` = ("PUT /repos/{owner}/{repo}/vulnerability-alerts").asInstanceOf[`PUT SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashvulnerability-alerts`]
-  
-  @js.native
-  sealed trait `PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket` extends StObject
-  inline def `PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket`: `PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket` = ("PUT /scim/v2/enterprises/{enterprise}/Groups/{scim_group_id}").asInstanceOf[`PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("PUT /scim/v2/enterprises/{enterprise}/Users/{scim_user_id}").asInstanceOf[`PUT SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `PUT SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` extends StObject
-  inline def `PUT SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`: `PUT SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket` = ("PUT /scim/v2/organizations/{org}/Users/{scim_user_id}").asInstanceOf[`PUT SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket`]
   
   @js.native
   sealed trait `PUT SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashmembersSlashLeftcurlybracketusernameRightcurlybracket` extends StObject
@@ -2889,10 +2773,6 @@ object octokitTypesStrings {
   inline def SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashcacheSlashusage: SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashcacheSlashusage = "/enterprises/{enterprise}/actions/cache/usage".asInstanceOf[SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashcacheSlashusage]
   
   @js.native
-  sealed trait SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashissuer extends StObject
-  inline def SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashissuer: SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashissuer = "/enterprises/{enterprise}/actions/oidc/customization/issuer".asInstanceOf[SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashissuer]
-  
-  @js.native
   sealed trait SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissions extends StObject
   inline def SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissions: SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissions = "/enterprises/{enterprise}/actions/permissions".asInstanceOf[SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissions]
   
@@ -2933,40 +2813,16 @@ object octokitTypesStrings {
   inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunnersSlashremove-token`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunnersSlashremove-token` = "/enterprises/{enterprise}/actions/runners/remove-token".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunnersSlashremove-token`]
   
   @js.native
-  sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log` extends StObject
-  inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log` = "/enterprises/{enterprise}/audit-log".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`]
-  
-  @js.native
   sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts` extends StObject
   inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts` = "/enterprises/{enterprise}/code-scanning/alerts".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`]
-  
-  @js.native
-  sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses` extends StObject
-  inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses` = "/enterprises/{enterprise}/consumed-licenses".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashconsumed-licenses`]
-  
-  @js.native
-  sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status` extends StObject
-  inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status` = "/enterprises/{enterprise}/license-sync-status".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashlicense-sync-status`]
   
   @js.native
   sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts` extends StObject
   inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts` = "/enterprises/{enterprise}/secret-scanning/alerts".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`]
   
   @js.native
-  sealed trait SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions extends StObject
-  inline def SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions: SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions = "/enterprises/{enterprise}/settings/billing/actions".asInstanceOf[SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashactions]
-  
-  @js.native
   sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security` extends StObject
   inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security` = "/enterprises/{enterprise}/settings/billing/advanced-security".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`]
-  
-  @js.native
-  sealed trait SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages extends StObject
-  inline def SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages: SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages = "/enterprises/{enterprise}/settings/billing/packages".asInstanceOf[SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashpackages]
-  
-  @js.native
-  sealed trait `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashshared-storage` extends StObject
-  inline def `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashshared-storage`: `SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashshared-storage` = "/enterprises/{enterprise}/settings/billing/shared-storage".asInstanceOf[`SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashshared-storage`]
   
   @js.native
   sealed trait Slashevents extends StObject
@@ -3105,6 +2961,18 @@ object octokitTypesStrings {
   inline def Slashorganizations: Slashorganizations = "/organizations".asInstanceOf[Slashorganizations]
   
   @js.native
+  sealed trait SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets extends StObject
+  inline def SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets: SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets = "/organizations/{org}/codespaces/secrets".asInstanceOf[SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecrets]
+  
+  @js.native
+  sealed trait SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket extends StObject
+  inline def SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket: SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket = "/organizations/{org}/codespaces/secrets/{secret_name}".asInstanceOf[SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracket]
+  
+  @js.native
+  sealed trait `SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key` extends StObject
+  inline def `SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key`: `SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key` = "/organizations/{org}/codespaces/secrets/public-key".asInstanceOf[`SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashcodespacesSlashsecretsSlashpublic-key`]
+  
+  @js.native
   sealed trait SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles extends StObject
   inline def SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles: SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles = "/organizations/{organization_id}/custom_roles".asInstanceOf[SlashorganizationsSlashLeftcurlybracketorganization_idRightcurlybracketSlashcustom_roles]
   
@@ -3123,10 +2991,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository` extends StObject
   inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository` = "/orgs/{org}/actions/cache/usage-by-repository".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`]
-  
-  @js.native
-  sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub extends StObject
-  inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub = "/orgs/{org}/actions/oidc/customization/sub".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub]
   
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissions extends StObject
@@ -3205,10 +3069,6 @@ object octokitTypesStrings {
   inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashpublic-key`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashpublic-key` = "/orgs/{org}/actions/secrets/public-key".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashpublic-key`]
   
   @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log` = "/orgs/{org}/audit-log".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`]
-  
-  @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks extends StObject
   inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks = "/orgs/{org}/blocks".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks]
   
@@ -3223,14 +3083,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces extends StObject
   inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces = "/orgs/{org}/codespaces".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces]
-  
-  @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations` = "/orgs/{org}/credential-authorizations".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`]
-  
-  @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket` = "/orgs/{org}/credential-authorizations/{credential_id}".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizationsSlashLeftcurlybracketcredential_idRightcurlybracket`]
   
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcustom_roles extends StObject
@@ -3259,14 +3111,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents extends StObject
   inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents = "/orgs/{org}/events".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents]
-  
-  @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket` = "/orgs/{org}/external-group/{group_id}".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groupSlashLeftcurlybracketgroup_idRightcurlybracket`]
-  
-  @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups` = "/orgs/{org}/external-groups".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`]
   
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashfailed_invitations extends StObject
@@ -3433,10 +3277,6 @@ object octokitTypesStrings {
   inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashshared-storage`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashshared-storage` = "/orgs/{org}/settings/billing/shared-storage".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashshared-storage`]
   
   @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups` = "/orgs/{org}/team-sync/groups".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`]
-  
-  @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams extends StObject
   inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams = "/orgs/{org}/teams".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams]
   
@@ -3447,10 +3287,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions extends StObject
   inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions = "/orgs/{org}/teams/{team_slug}/discussions".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions]
-  
-  @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups` = "/orgs/{org}/teams/{team_slug}/external-groups".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashexternal-groups`]
   
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashinvitations extends StObject
@@ -3479,10 +3315,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket extends StObject
   inline def SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket: SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket = "/orgs/{org}/teams/{team_slug}/repos/{owner}/{repo}".asInstanceOf[SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket]
-  
-  @js.native
-  sealed trait `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings` extends StObject
-  inline def `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings`: `SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings` = "/orgs/{org}/teams/{team_slug}/team-sync/group-mappings".asInstanceOf[`SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteam-syncSlashgroup-mappings`]
   
   @js.native
   sealed trait SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteams extends StObject
@@ -3567,10 +3399,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashrerun extends StObject
   inline def SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashrerun: SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashrerun = "/repos/{owner}/{repo}/actions/jobs/{job_id}/rerun".asInstanceOf[SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashjobsSlashLeftcurlybracketjob_idRightcurlybracketSlashrerun]
-  
-  @js.native
-  sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub extends StObject
-  inline def SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub: SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub = "/repos/{owner}/{repo}/actions/oidc/customization/sub".asInstanceOf[SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashoidcSlashcustomizationSlashsub]
   
   @js.native
   sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashpermissions extends StObject
@@ -3883,6 +3711,14 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors extends StObject
   inline def SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors: SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors = "/repos/{owner}/{repo}/contributors".asInstanceOf[SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors]
+  
+  @js.native
+  sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts extends StObject
+  inline def SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts: SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts = "/repos/{owner}/{repo}/dependabot/alerts".asInstanceOf[SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalerts]
+  
+  @js.native
+  sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket extends StObject
+  inline def SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket: SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket = "/repos/{owner}/{repo}/dependabot/alerts/{alert_number}".asInstanceOf[SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracket]
   
   @js.native
   sealed trait SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashsecrets extends StObject
@@ -4377,30 +4213,6 @@ object octokitTypesStrings {
   inline def Slashrepositories: Slashrepositories = "/repositories".asInstanceOf[Slashrepositories]
   
   @js.native
-  sealed trait SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups extends StObject
-  inline def SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups: SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups = "/scim/v2/enterprises/{enterprise}/Groups".asInstanceOf[SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroups]
-  
-  @js.native
-  sealed trait SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket extends StObject
-  inline def SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket: SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket = "/scim/v2/enterprises/{enterprise}/Groups/{scim_group_id}".asInstanceOf[SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashGroupsSlashLeftcurlybracketscim_group_idRightcurlybracket]
-  
-  @js.native
-  sealed trait SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers extends StObject
-  inline def SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers: SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers = "/scim/v2/enterprises/{enterprise}/Users".asInstanceOf[SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsers]
-  
-  @js.native
-  sealed trait SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket extends StObject
-  inline def SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket: SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket = "/scim/v2/enterprises/{enterprise}/Users/{scim_user_id}".asInstanceOf[SlashscimSlashv2SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket]
-  
-  @js.native
-  sealed trait SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers extends StObject
-  inline def SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers: SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers = "/scim/v2/organizations/{org}/Users".asInstanceOf[SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsers]
-  
-  @js.native
-  sealed trait SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket extends StObject
-  inline def SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket: SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket = "/scim/v2/organizations/{org}/Users/{scim_user_id}".asInstanceOf[SlashscimSlashv2SlashorganizationsSlashLeftcurlybracketorgRightcurlybracketSlashUsersSlashLeftcurlybracketscim_user_idRightcurlybracket]
-  
-  @js.native
   sealed trait SlashsearchSlashcode extends StObject
   inline def SlashsearchSlashcode: SlashsearchSlashcode = "/search/code".asInstanceOf[SlashsearchSlashcode]
   
@@ -4479,10 +4291,6 @@ object octokitTypesStrings {
   @js.native
   sealed trait SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket extends StObject
   inline def SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket: SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket = "/teams/{team_id}/repos/{owner}/{repo}".asInstanceOf[SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracket]
-  
-  @js.native
-  sealed trait `SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings` extends StObject
-  inline def `SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings`: `SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings` = "/teams/{team_id}/team-sync/group-mappings".asInstanceOf[`SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteam-syncSlashgroup-mappings`]
   
   @js.native
   sealed trait SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteams extends StObject

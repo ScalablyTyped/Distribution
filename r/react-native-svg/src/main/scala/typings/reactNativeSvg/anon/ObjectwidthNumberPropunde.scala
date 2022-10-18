@@ -1,6 +1,6 @@
 package typings.reactNativeSvg.anon
 
-import typings.reactNativeSvg.typesMod.NumberProp
+import typings.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

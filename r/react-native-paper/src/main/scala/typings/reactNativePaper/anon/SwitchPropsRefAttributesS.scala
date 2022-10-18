@@ -446,7 +446,7 @@ trait SwitchPropsRefAttributesS extends StObject {
   /**
     * @optional
     */
-  var theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+  var theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   
   /**
     * Color of the foreground switch grip.
@@ -522,7 +522,7 @@ object SwitchPropsRefAttributesS {
   
   inline def apply(
     onValueChange: (js.UndefOr[(js.Function1[/* value */ Boolean, js.Promise[Unit] | Unit]) | Null]) & js.UndefOr[js.Function],
-    theme: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme
+    theme: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme
   ): SwitchPropsRefAttributesS = {
     val __obj = js.Dynamic.literal(onValueChange = onValueChange.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchPropsRefAttributesS]
@@ -824,7 +824,7 @@ object SwitchPropsRefAttributesS {
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    inline def setTheme(value: typings.reactNativePaper.typescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThumbColor(value: ColorValue): Self = StObject.set(x, "thumbColor", value.asInstanceOf[js.Any])
     

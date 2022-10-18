@@ -26,6 +26,11 @@ trait Cameras extends StObject {
   
   var lightClusters: Double
   
+  /**
+    * The entity that was hit.
+    *
+    * @type {Entity}
+    */
   var lightClustersTime: Double
   
   var materials: Double

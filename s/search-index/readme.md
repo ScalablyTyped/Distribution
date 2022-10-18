@@ -1,7 +1,7 @@
 
 # Scala.js typings for search-index
 
-Typings are for version 3.0
+Typings are for version 3.2
 
 ## Library description:
 A network resilient, persistent full-text search library for the browser and Node.js

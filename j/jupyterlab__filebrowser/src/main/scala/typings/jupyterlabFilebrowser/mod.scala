@@ -1,10 +1,10 @@
 package typings.jupyterlabFilebrowser
 
-import typings.jupyterlabApputils.dialogMod.Dialog.IResult
-import typings.jupyterlabFilebrowser.crumbsMod.BreadCrumbs.IOptions
-import typings.jupyterlabFilebrowser.opendialogMod.FileDialog.IDirectoryOptions
-import typings.jupyterlabFilebrowser.opendialogMod.FileDialog.IFileOptions
-import typings.jupyterlabServices.contentsMod.Contents.IModel
+import typings.jupyterlabApputils.libDialogMod.Dialog.IResult
+import typings.jupyterlabFilebrowser.libCrumbsMod.BreadCrumbs.IOptions
+import typings.jupyterlabFilebrowser.libOpendialogMod.FileDialog.IDirectoryOptions
+import typings.jupyterlabFilebrowser.libOpendialogMod.FileDialog.IFileOptions
+import typings.jupyterlabServices.libContentsMod.Contents.IModel
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +14,8 @@ object mod {
   
   @JSImport("@jupyterlab/filebrowser", "BreadCrumbs")
   @js.native
-  class BreadCrumbs protected ()
-    extends typings.jupyterlabFilebrowser.crumbsMod.BreadCrumbs {
+  open class BreadCrumbs protected ()
+    extends typings.jupyterlabFilebrowser.libCrumbsMod.BreadCrumbs {
     /**
       * Construct a new file browser crumb widget.
       *
@@ -30,14 +30,14 @@ object mod {
   
   @JSImport("@jupyterlab/filebrowser", "DirListing")
   @js.native
-  class DirListing protected ()
-    extends typings.jupyterlabFilebrowser.listingMod.DirListing {
+  open class DirListing protected ()
+    extends typings.jupyterlabFilebrowser.libListingMod.DirListing {
     /**
       * Construct a new file browser directory listing widget.
       *
       * @param model - The file browser view model.
       */
-    def this(options: typings.jupyterlabFilebrowser.listingMod.DirListing.IOptions) = this()
+    def this(options: typings.jupyterlabFilebrowser.libListingMod.DirListing.IOptions) = this()
   }
   object DirListing {
     
@@ -46,37 +46,37 @@ object mod {
       */
     @JSImport("@jupyterlab/filebrowser", "DirListing.Renderer")
     @js.native
-    class Renderer ()
-      extends typings.jupyterlabFilebrowser.listingMod.DirListing.Renderer
+    open class Renderer ()
+      extends typings.jupyterlabFilebrowser.libListingMod.DirListing.Renderer
     
     /**
       * The default `IRenderer` instance.
       */
     @JSImport("@jupyterlab/filebrowser", "DirListing.defaultRenderer")
     @js.native
-    val defaultRenderer: typings.jupyterlabFilebrowser.listingMod.DirListing.Renderer = js.native
+    val defaultRenderer: typings.jupyterlabFilebrowser.libListingMod.DirListing.Renderer = js.native
   }
   
   @JSImport("@jupyterlab/filebrowser", "FileBrowser")
   @js.native
-  class FileBrowser protected ()
-    extends typings.jupyterlabFilebrowser.browserMod.FileBrowser {
+  open class FileBrowser protected ()
+    extends typings.jupyterlabFilebrowser.libBrowserMod.FileBrowser {
     /**
       * Construct a new file browser.
       *
-      * @param model - The file browser view model.
+      * @param options - The file browser options.
       */
-    def this(options: typings.jupyterlabFilebrowser.browserMod.FileBrowser.IOptions) = this()
+    def this(options: typings.jupyterlabFilebrowser.libBrowserMod.FileBrowser.IOptions) = this()
   }
   
   @JSImport("@jupyterlab/filebrowser", "FileBrowserModel")
   @js.native
-  class FileBrowserModel protected ()
-    extends typings.jupyterlabFilebrowser.modelMod.FileBrowserModel {
+  open class FileBrowserModel protected ()
+    extends typings.jupyterlabFilebrowser.libModelMod.FileBrowserModel {
     /**
       * Construct a new file browser model.
       */
-    def this(options: typings.jupyterlabFilebrowser.modelMod.FileBrowserModel.IOptions) = this()
+    def this(options: typings.jupyterlabFilebrowser.libModelMod.FileBrowserModel.IOptions) = this()
   }
   
   object FileDialog {
@@ -112,12 +112,12 @@ object mod {
   
   @JSImport("@jupyterlab/filebrowser", "FileUploadStatus")
   @js.native
-  class FileUploadStatus protected ()
-    extends typings.jupyterlabFilebrowser.uploadstatusMod.FileUploadStatus {
+  open class FileUploadStatus protected ()
+    extends typings.jupyterlabFilebrowser.libUploadstatusMod.FileUploadStatus {
     /**
       * Construct a new FileUpload status item.
       */
-    def this(opts: typings.jupyterlabFilebrowser.uploadstatusMod.FileUploadStatus.IOptions) = this()
+    def this(opts: typings.jupyterlabFilebrowser.libUploadstatusMod.FileUploadStatus.IOptions) = this()
   }
   object FileUploadStatus {
     
@@ -129,34 +129,45 @@ object mod {
     /**
       * Construct a new model.
       */
-    class Model ()
-      extends typings.jupyterlabFilebrowser.uploadstatusMod.FileUploadStatus.Model {
+    open class Model ()
+      extends typings.jupyterlabFilebrowser.libUploadstatusMod.FileUploadStatus.Model {
       def this(browserModel: FileBrowserModel) = this()
     }
   }
   
   @JSImport("@jupyterlab/filebrowser", "FilterFileBrowserModel")
   @js.native
-  class FilterFileBrowserModel protected ()
-    extends typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel {
-    def this(options: typings.jupyterlabFilebrowser.modelMod.FilterFileBrowserModel.IOptions) = this()
+  open class FilterFileBrowserModel protected ()
+    extends typings.jupyterlabFilebrowser.libModelMod.FilterFileBrowserModel {
+    def this(options: typings.jupyterlabFilebrowser.libModelMod.FilterFileBrowserModel.IOptions) = this()
   }
+  
+  @JSImport("@jupyterlab/filebrowser", "IFileBrowserCommands")
+  @js.native
+  val IFileBrowserCommands: Token[Unit] = js.native
   
   @JSImport("@jupyterlab/filebrowser", "IFileBrowserFactory")
   @js.native
-  val IFileBrowserFactory: Token[typings.jupyterlabFilebrowser.tokensMod.IFileBrowserFactory] = js.native
+  val IFileBrowserFactory: Token[typings.jupyterlabFilebrowser.libTokensMod.IFileBrowserFactory] = js.native
   
   @JSImport("@jupyterlab/filebrowser", "LARGE_FILE_SIZE")
   @js.native
   val LARGE_FILE_SIZE: Double = js.native
   
+  @JSImport("@jupyterlab/filebrowser", "TogglableHiddenFileBrowserModel")
+  @js.native
+  open class TogglableHiddenFileBrowserModel protected ()
+    extends typings.jupyterlabFilebrowser.libModelMod.TogglableHiddenFileBrowserModel {
+    def this(options: typings.jupyterlabFilebrowser.libModelMod.TogglableHiddenFileBrowserModel.IOptions) = this()
+  }
+  
   @JSImport("@jupyterlab/filebrowser", "Uploader")
   @js.native
-  class Uploader protected ()
-    extends typings.jupyterlabFilebrowser.uploadMod.Uploader {
+  open class Uploader protected ()
+    extends typings.jupyterlabFilebrowser.libUploadMod.Uploader {
     /**
       * Construct a new file browser buttons widget.
       */
-    def this(options: typings.jupyterlabFilebrowser.uploadMod.Uploader.IOptions) = this()
+    def this(options: typings.jupyterlabFilebrowser.libUploadMod.Uploader.IOptions) = this()
   }
 }

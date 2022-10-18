@@ -2,7 +2,7 @@ package typings.reactNativeUuid
 
 import typings.reactNativeUuid.anon.Clockseq
 import typings.reactNativeUuid.anon.Random
-import typings.reactNativeUuid.v35Mod.GenerateUUID
+import typings.reactNativeUuid.distV35Mod.GenerateUUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

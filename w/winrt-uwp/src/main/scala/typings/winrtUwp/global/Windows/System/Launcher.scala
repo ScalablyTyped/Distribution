@@ -13,9 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Starts the default app associated with the specified file or URI. */
-@JSGlobal("Windows.System.Launcher")
+/* note: abstract class */ @JSGlobal("Windows.System.Launcher")
 @js.native
-abstract class Launcher ()
+open class Launcher ()
   extends StObject
      with typings.winrtUwp.Windows.System.Launcher
 object Launcher {

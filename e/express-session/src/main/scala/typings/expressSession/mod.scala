@@ -139,9 +139,9 @@ object mod {
     def touch(): this.type = js.native
   }
   
-  @JSImport("express-session", "Store")
+  /* note: abstract class */ @JSImport("express-session", "Store")
   @js.native
-  abstract class Store () extends EventEmitter {
+  open class Store () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     /** Returns all sessions in the store */

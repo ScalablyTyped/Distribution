@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common", "XhrFactory")
+/* note: abstract class */ @JSImport("@angular/common", "XhrFactory")
 @js.native
-abstract class XhrFactory () extends StObject {
+open class XhrFactory () extends StObject {
   
   def build(): XMLHttpRequest = js.native
 }

@@ -1,6 +1,6 @@
 package typings.jsdevtoolsReaddirEnhanced
 
-import typings.jsdevtoolsReaddirEnhanced.typesPublicMod.EventName
+import typings.jsdevtoolsReaddirEnhanced.libTypesPublicMod.EventName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

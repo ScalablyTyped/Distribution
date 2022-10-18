@@ -11,6 +11,8 @@ trait Name extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  var icon: js.UndefOr[String] = js.undefined
+  
   var modifier: js.UndefOr[String] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
@@ -18,8 +20,6 @@ trait Name extends StObject {
   var onClick: js.UndefOr[
     js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
   ] = js.undefined
-  
-  var position: js.UndefOr[String] = js.undefined
   
   var ripple: js.UndefOr[Boolean] = js.undefined
 }
@@ -36,6 +36,10 @@ object Name {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
     inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
@@ -47,10 +51,6 @@ object Name {
     inline def setOnClick(value: /* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
-    
-    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     inline def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
     

@@ -1,15 +1,6 @@
 package typings.esbuildWasm.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.esbuildWasm.browserMod.Charset
-import typings.esbuildWasm.browserMod.Drop
-import typings.esbuildWasm.browserMod.Format
-import typings.esbuildWasm.browserMod.Loader
-import typings.esbuildWasm.browserMod.LogLevel
-import typings.esbuildWasm.browserMod.Platform
-import typings.esbuildWasm.browserMod.Plugin
-import typings.esbuildWasm.browserMod.StdinOptions
-import typings.esbuildWasm.browserMod.WatchMode
 import typings.esbuildWasm.esbuildWasmBooleans.`false`
 import typings.esbuildWasm.esbuildWasmStrings.`inline`
 import typings.esbuildWasm.esbuildWasmStrings.automatic
@@ -20,6 +11,15 @@ import typings.esbuildWasm.esbuildWasmStrings.linked
 import typings.esbuildWasm.esbuildWasmStrings.none
 import typings.esbuildWasm.esbuildWasmStrings.preserve
 import typings.esbuildWasm.esbuildWasmStrings.transform
+import typings.esbuildWasm.libBrowserMod.Charset
+import typings.esbuildWasm.libBrowserMod.Drop
+import typings.esbuildWasm.libBrowserMod.Format
+import typings.esbuildWasm.libBrowserMod.Loader
+import typings.esbuildWasm.libBrowserMod.LogLevel
+import typings.esbuildWasm.libBrowserMod.Platform
+import typings.esbuildWasm.libBrowserMod.Plugin
+import typings.esbuildWasm.libBrowserMod.StdinOptions
+import typings.esbuildWasm.libBrowserMod.WatchMode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -1,7 +1,7 @@
 package typings.antvG2plot.anon
 
 import typings.antvG2plot.antvG2plotStrings.`tiny-line`
-import typings.antvG2plot.mixUtilsMod.IPlotTypes
+import typings.antvG2plot.libPlotsMixUtilsMod.IPlotTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,7 +1,7 @@
 package typings.expoConfigPlugins.anon
 
+import typings.expoConfigPlugins.buildAndroidPropertiesMod.PropertiesItem
 import typings.expoConfigPlugins.expoConfigPluginsStrings.property
-import typings.expoConfigPlugins.propertiesMod.PropertiesItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

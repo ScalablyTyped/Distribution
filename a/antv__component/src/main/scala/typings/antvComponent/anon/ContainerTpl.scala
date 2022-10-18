@@ -26,7 +26,7 @@ trait ContainerTpl extends StObject {
   var customContent: Any
   
   var defaultStyles: StringDictionary[
-    BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight | Transition
+    BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight
   ]
   
   var domStyles: Any
@@ -90,7 +90,7 @@ object ContainerTpl {
     crosshairsRegion: Any,
     customContent: Any,
     defaultStyles: StringDictionary[
-      BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight | Transition
+      BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight
     ],
     domStyles: Any,
     events: Any,
@@ -142,7 +142,7 @@ object ContainerTpl {
     
     inline def setDefaultStyles(
       value: StringDictionary[
-          BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight | Transition
+          BorderRadius | BoxShadow | Float | ListStyleType | Margin | MarginBottom | MarginLeft | MarginRight
         ]
     ): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     

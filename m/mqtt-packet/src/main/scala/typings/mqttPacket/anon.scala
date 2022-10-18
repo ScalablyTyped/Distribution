@@ -388,7 +388,9 @@ object anon {
     
     var reasonString: js.UndefOr[String] = js.undefined
     
-    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
+    var serverReference: js.UndefOr[String] = js.undefined
+    
+    var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
     
     var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
   }
@@ -405,39 +407,6 @@ object anon {
       
       inline def setReasonStringUndefined: Self = StObject.set(x, "reasonString", js.undefined)
       
-      inline def setSubscriptionIdentifier(value: Double): Self = StObject.set(x, "subscriptionIdentifier", value.asInstanceOf[js.Any])
-      
-      inline def setSubscriptionIdentifierUndefined: Self = StObject.set(x, "subscriptionIdentifier", js.undefined)
-      
-      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
-      
-      inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
-    }
-  }
-  
-  trait ServerReference extends StObject {
-    
-    var reasonString: js.UndefOr[String] = js.undefined
-    
-    var serverReference: js.UndefOr[String] = js.undefined
-    
-    var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
-    
-    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
-  }
-  object ServerReference {
-    
-    inline def apply(): ServerReference = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ServerReference]
-    }
-    
-    extension [Self <: ServerReference](x: Self) {
-      
-      inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
-      
-      inline def setReasonStringUndefined: Self = StObject.set(x, "reasonString", js.undefined)
-      
       inline def setServerReference(value: String): Self = StObject.set(x, "serverReference", value.asInstanceOf[js.Any])
       
       inline def setServerReferenceUndefined: Self = StObject.set(x, "serverReference", js.undefined)
@@ -445,6 +414,37 @@ object anon {
       inline def setSessionExpiryInterval(value: Double): Self = StObject.set(x, "sessionExpiryInterval", value.asInstanceOf[js.Any])
       
       inline def setSessionExpiryIntervalUndefined: Self = StObject.set(x, "sessionExpiryInterval", js.undefined)
+      
+      inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+      
+      inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
+    }
+  }
+  
+  trait SubscriptionIdentifier extends StObject {
+    
+    var reasonString: js.UndefOr[String] = js.undefined
+    
+    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
+    
+    var userProperties: js.UndefOr[typings.mqttPacket.mod.UserProperties] = js.undefined
+  }
+  object SubscriptionIdentifier {
+    
+    inline def apply(): SubscriptionIdentifier = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SubscriptionIdentifier]
+    }
+    
+    extension [Self <: SubscriptionIdentifier](x: Self) {
+      
+      inline def setReasonString(value: String): Self = StObject.set(x, "reasonString", value.asInstanceOf[js.Any])
+      
+      inline def setReasonStringUndefined: Self = StObject.set(x, "reasonString", js.undefined)
+      
+      inline def setSubscriptionIdentifier(value: Double): Self = StObject.set(x, "subscriptionIdentifier", value.asInstanceOf[js.Any])
+      
+      inline def setSubscriptionIdentifierUndefined: Self = StObject.set(x, "subscriptionIdentifier", js.undefined)
       
       inline def setUserProperties(value: typings.mqttPacket.mod.UserProperties): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
       

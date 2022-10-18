@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "EvaluationSuspendedError")
 @js.native
 open class EvaluationSuspendedError ()
-  extends typings.hyperformula.errorsMod.EvaluationSuspendedError
+  extends typings.hyperformula.typingsErrorsMod.EvaluationSuspendedError

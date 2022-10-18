@@ -1,13 +1,13 @@
 package typings.fpTs.mod
 
-import typings.fpTs.booleanAlgebraMod.BooleanAlgebra
-import typings.fpTs.functionMod.Endomorphism
-import typings.fpTs.functionMod.Lazy
-import typings.fpTs.functionMod.Predicate
-import typings.fpTs.monoidMod.Monoid
-import typings.fpTs.ringMod.Ring
-import typings.fpTs.semigroupMod.Semigroup
-import typings.fpTs.semiringMod.Semiring
+import typings.fpTs.libBooleanAlgebraMod.BooleanAlgebra
+import typings.fpTs.libFunctionMod.Endomorphism
+import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.Predicate
+import typings.fpTs.libMonoidMod.Monoid
+import typings.fpTs.libRingMod.Ring
+import typings.fpTs.libSemigroupMod.Semigroup
+import typings.fpTs.libSemiringMod.Semiring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,6 +48,7 @@ object function {
   
   inline def decrement(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decrement")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def flip[A, B, C](f: js.Function1[/* a */ A, js.Function1[/* b */ B, C]]): js.Function1[/* b */ B, js.Function1[/* a */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ B, js.Function1[/* a */ A, C]]]
   inline def flip[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function2[/* b */ B, /* a */ A, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* b */ B, /* a */ A, C]]
   
   inline def flow[A /* <: js.Array[Any] */, B](ab: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]

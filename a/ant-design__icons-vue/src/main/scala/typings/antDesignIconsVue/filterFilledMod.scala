@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFilterFilledMod.FilterFilledIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterFilledMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FilterFilled", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FilterFilled", JSImport.Default)
   @js.native
   val default: FilterFilledIconType = js.native
-  
-  @js.native
-  trait FilterFilledIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FilterFilledIconType: String = js.native
-  }
   
   type _To = FilterFilledIconType
   

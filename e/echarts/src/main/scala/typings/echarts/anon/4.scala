@@ -12,7 +12,7 @@ trait `4` extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-candlestick.markLine.data.0
     */
-  var `0`: js.UndefOr[SymbolKeepAspect] = js.undefined
+  var `0`: js.UndefOr[Symbol] = js.undefined
   
   /**
     * Data of the ending point.
@@ -31,7 +31,7 @@ object `4` {
   
   extension [Self <: `4`](x: Self) {
     
-    inline def set0(value: SymbolKeepAspect): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: Symbol): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
     inline def set0Undefined: Self = StObject.set(x, "0", js.undefined)
     

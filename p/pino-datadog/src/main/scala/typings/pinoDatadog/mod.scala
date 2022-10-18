@@ -1,6 +1,6 @@
 package typings.pinoDatadog
 
-import typings.std.WritableStream
+import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createWriteStream(options: Options): js.Promise[WritableStream[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WritableStream[Any]]]
+  inline def createWriteStream(options: Options): js.Promise[WritableStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WritableStream]]
   
-  inline def createWriteStreamSync(options: Options): WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStreamSync")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream[Any]]
+  inline def createWriteStreamSync(options: Options): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStreamSync")(options.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
   
   trait Options extends StObject {
     

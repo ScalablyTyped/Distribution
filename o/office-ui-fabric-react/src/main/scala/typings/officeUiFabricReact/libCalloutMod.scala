@@ -1,8 +1,8 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.anon.BeakWidth
-import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
-import typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps
+import typings.officeUiFabricReact.libComponentsCalloutCalloutDottypesMod.ICalloutProps
+import typings.officeUiFabricReact.libComponentsCalloutFocusTrapCalloutDottypesMod.IFocusTrapCalloutProps
 import typings.officeUiFabricReact.officeUiFabricReactInts.`0`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`10`
 import typings.officeUiFabricReact.officeUiFabricReactInts.`11`
@@ -27,7 +27,7 @@ object libCalloutMod {
   @JSImport("office-ui-fabric-react/lib/Callout", "Callout")
   @js.native
   open class Callout protected ()
-    extends typings.officeUiFabricReact.calloutMod.Callout {
+    extends typings.officeUiFabricReact.libComponentsCalloutMod.Callout {
     def this(props: ICalloutProps) = this()
     /**
       * @deprecated
@@ -43,7 +43,7 @@ object libCalloutMod {
   @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContentBase")
   @js.native
   open class CalloutContentBase protected ()
-    extends typings.officeUiFabricReact.calloutMod.CalloutContentBase {
+    extends typings.officeUiFabricReact.libComponentsCalloutMod.CalloutContentBase {
     def this(props: ICalloutProps) = this()
   }
   /* static members */

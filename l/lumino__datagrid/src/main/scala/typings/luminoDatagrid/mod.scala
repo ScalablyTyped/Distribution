@@ -1,22 +1,22 @@
 package typings.luminoDatagrid
 
-import typings.luminoDatagrid.basicmousehandlerMod.PressData.SelectData
-import typings.luminoDatagrid.basicmousehandlerMod.ResizeHandle
-import typings.luminoDatagrid.cellrendererMod.CellRenderer.CellConfig
-import typings.luminoDatagrid.cellrendererMod.CellRenderer.ConfigOption
-import typings.luminoDatagrid.datagridMod.DataGrid.CopyConfig
-import typings.luminoDatagrid.datagridMod.DataGrid.CopyFormatArgs
-import typings.luminoDatagrid.datagridMod.DataGrid.DefaultSizes_
-import typings.luminoDatagrid.datagridMod.DataGrid.HitTestResult
-import typings.luminoDatagrid.datagridMod.DataGrid.MinimumSizes_
-import typings.luminoDatagrid.datagridMod.DataGrid.Style
-import typings.luminoDatagrid.datamodelMod.DataModel.CellRegion
-import typings.luminoDatagrid.datamodelMod.DataModel.Metadata
 import typings.luminoDatagrid.luminoDatagridStrings.column
 import typings.luminoDatagrid.luminoDatagridStrings.row
-import typings.luminoDatagrid.renderermapMod.RendererMap.Values
-import typings.luminoDatagrid.selectionmodelMod.SelectionModel.IOptions
-import typings.luminoDatagrid.textrendererMod.TextRenderer.FormatFunc
+import typings.luminoDatagrid.typesBasicmousehandlerMod.PressData.SelectData
+import typings.luminoDatagrid.typesBasicmousehandlerMod.ResizeHandle
+import typings.luminoDatagrid.typesCellrendererMod.CellRenderer.CellConfig
+import typings.luminoDatagrid.typesCellrendererMod.CellRenderer.ConfigOption
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.CopyConfig
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.CopyFormatArgs
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.DefaultSizes_
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.HitTestResult
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.MinimumSizes_
+import typings.luminoDatagrid.typesDatagridMod.DataGrid.Style
+import typings.luminoDatagrid.typesDatamodelMod.DataModel.CellRegion
+import typings.luminoDatagrid.typesDatamodelMod.DataModel.Metadata
+import typings.luminoDatagrid.typesRenderermapMod.RendererMap.Values
+import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.IOptions
+import typings.luminoDatagrid.typesTextrendererMod.TextRenderer.FormatFunc
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,17 +31,17 @@ object mod {
   @JSImport("@lumino/datagrid", "BasicKeyHandler")
   @js.native
   open class BasicKeyHandler ()
-    extends typings.luminoDatagrid.basickeyhandlerMod.BasicKeyHandler
+    extends typings.luminoDatagrid.typesBasickeyhandlerMod.BasicKeyHandler
   
   @JSImport("@lumino/datagrid", "BasicMouseHandler")
   @js.native
   open class BasicMouseHandler ()
-    extends typings.luminoDatagrid.basicmousehandlerMod.BasicMouseHandler
+    extends typings.luminoDatagrid.typesBasicmousehandlerMod.BasicMouseHandler
   
   @JSImport("@lumino/datagrid", "BasicSelectionModel")
   @js.native
   open class BasicSelectionModel protected ()
-    extends typings.luminoDatagrid.basicselectionmodelMod.BasicSelectionModel {
+    extends typings.luminoDatagrid.typesBasicselectionmodelMod.BasicSelectionModel {
     /**
       * Construct a new selection model.
       *
@@ -56,20 +56,20 @@ object mod {
     * Construct a new cell editor.
     */
   open class BooleanCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.BooleanCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.BooleanCellEditor
   
-  @JSImport("@lumino/datagrid", "CellEditor")
+  /* note: abstract class */ @JSImport("@lumino/datagrid", "CellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  abstract class CellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.CellEditor
+  open class CellEditor ()
+    extends typings.luminoDatagrid.typesCelleditorMod.CellEditor
   
   @JSImport("@lumino/datagrid", "CellEditorController")
   @js.native
   open class CellEditorController ()
-    extends typings.luminoDatagrid.celleditorcontrollerMod.CellEditorController
+    extends typings.luminoDatagrid.typesCelleditorcontrollerMod.CellEditorController
   
   object CellGroup {
     
@@ -83,8 +83,8 @@ object mod {
       * @param group2
       */
     inline def areCellGroupsIntersecting(
-      group1: typings.luminoDatagrid.cellgroupMod.CellGroup,
-      group2: typings.luminoDatagrid.cellgroupMod.CellGroup
+      group1: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
+      group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areCellGroupsIntersecting")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
@@ -95,13 +95,13 @@ object mod {
       * @param axis
       */
     inline def areCellGroupsIntersectingAtAxis(
-      group1: typings.luminoDatagrid.cellgroupMod.CellGroup,
-      group2: typings.luminoDatagrid.cellgroupMod.CellGroup,
+      group1: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
+      group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
       axis: row | column
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areCellGroupsIntersectingAtAxis")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def areCellsMerged(
-      dataModel: typings.luminoDatagrid.datamodelMod.DataModel,
+      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
       rgn: CellRegion,
       cell1: js.Array[Double],
       cell2: js.Array[Double]
@@ -118,12 +118,12 @@ object mod {
       * @param index
       */
     inline def calculateMergeOffsets(
-      dataModel: typings.luminoDatagrid.datamodelMod.DataModel,
+      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
       regions: js.Array[CellRegion],
       axis: row | column,
-      sectionList: typings.luminoDatagrid.sectionlistMod.SectionList,
+      sectionList: typings.luminoDatagrid.typesSectionlistMod.SectionList,
       index: Double
-    ): js.Tuple3[Double, Double, typings.luminoDatagrid.cellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMergeOffsets")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], sectionList.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Double, typings.luminoDatagrid.cellgroupMod.CellGroup]]
+    ): js.Tuple3[Double, Double, typings.luminoDatagrid.typesCellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMergeOffsets")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], sectionList.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Double, typings.luminoDatagrid.typesCellgroupMod.CellGroup]]
     
     /**
       * Retrieves a list of cell groups intersecting at
@@ -133,7 +133,7 @@ object mod {
       * @param column the target column to look for intersections at.
       * @returns all cell groups intersecting with the column.
       */
-    inline def getCellGroupsAtColumn(dataModel: typings.luminoDatagrid.datamodelMod.DataModel, rgn: CellRegion, column: Double): js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellGroupsAtColumn")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup]]
+    inline def getCellGroupsAtColumn(dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel, rgn: CellRegion, column: Double): js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellGroupsAtColumn")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup]]
     
     /**
       * Returns all cell groups which belong to
@@ -141,7 +141,7 @@ object mod {
       * @param dataModel
       * @param rgn
       */
-    inline def getCellGroupsAtRegion(dataModel: typings.luminoDatagrid.datamodelMod.DataModel, rgn: CellRegion): js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellGroupsAtRegion")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup]]
+    inline def getCellGroupsAtRegion(dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel, rgn: CellRegion): js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellGroupsAtRegion")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup]]
     
     /**
       * Retrieves a list of cell groups intersecting at
@@ -151,7 +151,7 @@ object mod {
       * @param row the target row to look for intersections at.
       * @returns all cell groups intersecting with the row.
       */
-    inline def getCellGroupsAtRow(dataModel: typings.luminoDatagrid.datamodelMod.DataModel, rgn: CellRegion, row: Double): js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellGroupsAtRow")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup]]
+    inline def getCellGroupsAtRow(dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel, rgn: CellRegion, row: Double): js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellGroupsAtRow")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup]]
     
     /**
       * Returns a cell-group for the given row/index coordinates.
@@ -161,11 +161,11 @@ object mod {
       * @param column
       */
     inline def getGroup(
-      dataModel: typings.luminoDatagrid.datamodelMod.DataModel,
+      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
       rgn: CellRegion,
       row: Double,
       column: Double
-    ): typings.luminoDatagrid.cellgroupMod.CellGroup | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[typings.luminoDatagrid.cellgroupMod.CellGroup | Null]
+    ): typings.luminoDatagrid.typesCellgroupMod.CellGroup | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[typings.luminoDatagrid.typesCellgroupMod.CellGroup | Null]
     
     /**
       * Retrieves the index of the cell-group to which
@@ -176,7 +176,7 @@ object mod {
       * @param column
       */
     inline def getGroupIndex(
-      dataModel: typings.luminoDatagrid.datamodelMod.DataModel,
+      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
       rgn: CellRegion,
       row: Double,
       column: Double
@@ -189,16 +189,16 @@ object mod {
       * @returns boolean.
       */
     inline def isCellGroupAbove(
-      group1: typings.luminoDatagrid.cellgroupMod.CellGroup,
-      group2: typings.luminoDatagrid.cellgroupMod.CellGroup
+      group1: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
+      group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellGroupAbove")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Checks if cell group 1 is below cell group 2.
       */
     inline def isCellGroupBelow(
-      group1: typings.luminoDatagrid.cellgroupMod.CellGroup,
-      group2: typings.luminoDatagrid.cellgroupMod.CellGroup
+      group1: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
+      group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellGroupBelow")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
@@ -210,17 +210,17 @@ object mod {
       * @returns a new cell group after merging has happened.
       */
     inline def joinCellGroupWithMergedCellGroups(
-      dataModel: typings.luminoDatagrid.datamodelMod.DataModel,
-      group: typings.luminoDatagrid.cellgroupMod.CellGroup,
+      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
+      group: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
       region: CellRegion
-    ): typings.luminoDatagrid.cellgroupMod.CellGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroupWithMergedCellGroups")(dataModel.asInstanceOf[js.Any], group.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[typings.luminoDatagrid.cellgroupMod.CellGroup]
+    ): typings.luminoDatagrid.typesCellgroupMod.CellGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroupWithMergedCellGroups")(dataModel.asInstanceOf[js.Any], group.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[typings.luminoDatagrid.typesCellgroupMod.CellGroup]
     
     /**
       * Calculates and returns a merged cell-group from
       * two cell-group objects.
       * @param groups
       */
-    inline def joinCellGroups(groups: js.Array[typings.luminoDatagrid.cellgroupMod.CellGroup]): typings.luminoDatagrid.cellgroupMod.CellGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[typings.luminoDatagrid.cellgroupMod.CellGroup]
+    inline def joinCellGroups(groups: js.Array[typings.luminoDatagrid.typesCellgroupMod.CellGroup]): typings.luminoDatagrid.typesCellgroupMod.CellGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[typings.luminoDatagrid.typesCellgroupMod.CellGroup]
     
     /**
       * Merges a target cell group with any cell groups
@@ -232,17 +232,17 @@ object mod {
       * @returns a new merged cell group.
       */
     inline def joinCellGroupsIntersectingAtAxis(
-      dataModel: typings.luminoDatagrid.datamodelMod.DataModel,
+      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
       regions: js.Array[CellRegion],
       axis: row | column,
-      group: typings.luminoDatagrid.cellgroupMod.CellGroup
-    ): typings.luminoDatagrid.cellgroupMod.CellGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroupsIntersectingAtAxis")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[typings.luminoDatagrid.cellgroupMod.CellGroup]
+      group: typings.luminoDatagrid.typesCellgroupMod.CellGroup
+    ): typings.luminoDatagrid.typesCellgroupMod.CellGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroupsIntersectingAtAxis")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[typings.luminoDatagrid.typesCellgroupMod.CellGroup]
   }
   
-  @JSImport("@lumino/datagrid", "CellRenderer")
+  /* note: abstract class */ @JSImport("@lumino/datagrid", "CellRenderer")
   @js.native
-  abstract class CellRenderer ()
-    extends typings.luminoDatagrid.cellrendererMod.CellRenderer
+  open class CellRenderer ()
+    extends typings.luminoDatagrid.typesCellrendererMod.CellRenderer
   object CellRenderer {
     
     @JSImport("@lumino/datagrid", "CellRenderer")
@@ -269,8 +269,8 @@ object mod {
     * @param options - The options for initializing the data grid.
     */
   open class DataGrid ()
-    extends typings.luminoDatagrid.datagridMod.DataGrid {
-    def this(options: typings.luminoDatagrid.datagridMod.DataGrid.IOptions) = this()
+    extends typings.luminoDatagrid.typesDatagridMod.DataGrid {
+    def this(options: typings.luminoDatagrid.typesDatagridMod.DataGrid.IOptions) = this()
   }
   object DataGrid {
     
@@ -319,10 +319,10 @@ object mod {
     val minimumSizes: MinimumSizes_ = js.native
   }
   
-  @JSImport("@lumino/datagrid", "DataModel")
+  /* note: abstract class */ @JSImport("@lumino/datagrid", "DataModel")
   @js.native
-  abstract class DataModel ()
-    extends typings.luminoDatagrid.datamodelMod.DataModel
+  open class DataModel ()
+    extends typings.luminoDatagrid.typesDatamodelMod.DataModel
   object DataModel {
     
     /**
@@ -339,7 +339,7 @@ object mod {
     * Construct a new cell editor.
     */
   open class DateCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.DateCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.DateCellEditor
   
   @JSImport("@lumino/datagrid", "DynamicOptionCellEditor")
   @js.native
@@ -347,12 +347,12 @@ object mod {
     * Construct a new cell editor.
     */
   open class DynamicOptionCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.DynamicOptionCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.DynamicOptionCellEditor
   
   @JSImport("@lumino/datagrid", "GraphicsContext")
   @js.native
   open class GraphicsContext protected ()
-    extends typings.luminoDatagrid.graphicscontextMod.GraphicsContext {
+    extends typings.luminoDatagrid.typesGraphicscontextMod.GraphicsContext {
     /**
       * Create a new graphics context object.
       *
@@ -369,17 +369,17 @@ object mod {
     * @param options - The options for initializing the renderer.
     */
   open class HyperlinkRenderer ()
-    extends typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer {
-    def this(options: typings.luminoDatagrid.hyperlinkrendererMod.HyperlinkRenderer.IOptions) = this()
+    extends typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer {
+    def this(options: typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.IOptions) = this()
   }
   
-  @JSImport("@lumino/datagrid", "InputCellEditor")
+  /* note: abstract class */ @JSImport("@lumino/datagrid", "InputCellEditor")
   @js.native
   /**
     * Construct a new cell editor.
     */
-  abstract class InputCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.InputCellEditor
+  open class InputCellEditor ()
+    extends typings.luminoDatagrid.typesCelleditorMod.InputCellEditor
   
   @JSImport("@lumino/datagrid", "IntegerCellEditor")
   @js.native
@@ -387,29 +387,29 @@ object mod {
     * Construct a new cell editor.
     */
   open class IntegerCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.IntegerCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.IntegerCellEditor
   
   @JSImport("@lumino/datagrid", "IntegerInputValidator")
   @js.native
   open class IntegerInputValidator ()
-    extends typings.luminoDatagrid.celleditorMod.IntegerInputValidator
+    extends typings.luminoDatagrid.typesCelleditorMod.IntegerInputValidator
   
   @JSImport("@lumino/datagrid", "JSONModel")
   @js.native
   open class JSONModel protected ()
-    extends typings.luminoDatagrid.jsonmodelMod.JSONModel {
+    extends typings.luminoDatagrid.typesJsonmodelMod.JSONModel {
     /**
       * Create a data model with static JSON data.
       *
       * @param options - The options for initializing the data model.
       */
-    def this(options: typings.luminoDatagrid.jsonmodelMod.JSONModel.IOptions) = this()
+    def this(options: typings.luminoDatagrid.typesJsonmodelMod.JSONModel.IOptions) = this()
   }
   
-  @JSImport("@lumino/datagrid", "MutableDataModel")
+  /* note: abstract class */ @JSImport("@lumino/datagrid", "MutableDataModel")
   @js.native
-  abstract class MutableDataModel ()
-    extends typings.luminoDatagrid.datamodelMod.MutableDataModel
+  open class MutableDataModel ()
+    extends typings.luminoDatagrid.typesDatamodelMod.MutableDataModel
   
   @JSImport("@lumino/datagrid", "NumberCellEditor")
   @js.native
@@ -417,12 +417,12 @@ object mod {
     * Construct a new cell editor.
     */
   open class NumberCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.NumberCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.NumberCellEditor
   
   @JSImport("@lumino/datagrid", "NumberInputValidator")
   @js.native
   open class NumberInputValidator ()
-    extends typings.luminoDatagrid.celleditorMod.NumberInputValidator
+    extends typings.luminoDatagrid.typesCelleditorMod.NumberInputValidator
   
   @JSImport("@lumino/datagrid", "OptionCellEditor")
   @js.native
@@ -430,12 +430,12 @@ object mod {
     * Construct a new cell editor.
     */
   open class OptionCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.OptionCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.OptionCellEditor
   
   @JSImport("@lumino/datagrid", "PassInputValidator")
   @js.native
   open class PassInputValidator ()
-    extends typings.luminoDatagrid.celleditorMod.PassInputValidator
+    extends typings.luminoDatagrid.typesCelleditorMod.PassInputValidator
   
   /**
     * A namespace for module-private functionality.
@@ -453,7 +453,7 @@ object mod {
       *
       * @param data - The select data of interest.
       */
-    inline def autoselect(grid: typings.luminoDatagrid.datagridMod.DataGrid, data: SelectData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoselect")(grid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def autoselect(grid: typings.luminoDatagrid.typesDatagridMod.DataGrid, data: SelectData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoselect")(grid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Compute the scroll timeout for the given delta distance.
@@ -467,7 +467,7 @@ object mod {
     /**
       * Creates a CellConfig object from a hit region.
       */
-    inline def createCellConfigObject(grid: typings.luminoDatagrid.datagridMod.DataGrid, hit: HitTestResult): js.UndefOr[CellConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellConfigObject")(grid.asInstanceOf[js.Any], hit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CellConfig]]
+    inline def createCellConfigObject(grid: typings.luminoDatagrid.typesDatagridMod.DataGrid, hit: HitTestResult): js.UndefOr[CellConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellConfigObject")(grid.asInstanceOf[js.Any], hit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CellConfig]]
     
     /**
       * A mapping of resize handle to cursor.
@@ -525,28 +525,28 @@ object mod {
     * @param fallback - The renderer of last resort.
     */
   open class RendererMap ()
-    extends typings.luminoDatagrid.renderermapMod.RendererMap {
+    extends typings.luminoDatagrid.typesRenderermapMod.RendererMap {
     def this(values: Values) = this()
-    def this(values: Unit, fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
-    def this(values: Values, fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
+    def this(values: Unit, fallback: typings.luminoDatagrid.typesCellrendererMod.CellRenderer) = this()
+    def this(values: Values, fallback: typings.luminoDatagrid.typesCellrendererMod.CellRenderer) = this()
   }
   
   @JSImport("@lumino/datagrid", "SectionList")
   @js.native
   open class SectionList protected ()
-    extends typings.luminoDatagrid.sectionlistMod.SectionList {
+    extends typings.luminoDatagrid.typesSectionlistMod.SectionList {
     /**
       * Construct a new section list.
       *
       * @param options - The options for initializing the list.
       */
-    def this(options: typings.luminoDatagrid.sectionlistMod.SectionList.IOptions) = this()
+    def this(options: typings.luminoDatagrid.typesSectionlistMod.SectionList.IOptions) = this()
   }
   
-  @JSImport("@lumino/datagrid", "SelectionModel")
+  /* note: abstract class */ @JSImport("@lumino/datagrid", "SelectionModel")
   @js.native
-  abstract class SelectionModel protected ()
-    extends typings.luminoDatagrid.selectionmodelMod.SelectionModel {
+  open class SelectionModel protected ()
+    extends typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel {
     /**
       * Construct a new selection model.
       *
@@ -561,12 +561,12 @@ object mod {
     * Construct a new cell editor.
     */
   open class TextCellEditor ()
-    extends typings.luminoDatagrid.celleditorMod.TextCellEditor
+    extends typings.luminoDatagrid.typesCelleditorMod.TextCellEditor
   
   @JSImport("@lumino/datagrid", "TextInputValidator")
   @js.native
   open class TextInputValidator ()
-    extends typings.luminoDatagrid.celleditorMod.TextInputValidator
+    extends typings.luminoDatagrid.typesCelleditorMod.TextInputValidator
   
   @JSImport("@lumino/datagrid", "TextRenderer")
   @js.native
@@ -576,8 +576,8 @@ object mod {
     * @param options - The options for initializing the renderer.
     */
   open class TextRenderer ()
-    extends typings.luminoDatagrid.textrendererMod.TextRenderer {
-    def this(options: typings.luminoDatagrid.textrendererMod.TextRenderer.IOptions) = this()
+    extends typings.luminoDatagrid.typesTextrendererMod.TextRenderer {
+    def this(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.IOptions) = this()
   }
   object TextRenderer {
     
@@ -607,7 +607,7 @@ object mod {
     /**
       * The namespace for the `formatDate` function statics.
       */
-    inline def formatDate(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatDate(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create a scientific notation format function.
@@ -629,7 +629,7 @@ object mod {
     /**
       * The namespace for the `formatExponential` function statics.
       */
-    inline def formatExponential(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatExponential")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatExponential(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatExponential")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create a fixed decimal format function.
@@ -651,7 +651,7 @@ object mod {
     /**
       * The namespace for the `formatFixed` function statics.
       */
-    inline def formatFixed(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatFixed(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create a generic text format function.
@@ -671,7 +671,7 @@ object mod {
     /**
       * The namespace for the `formatGeneric` function statics.
       */
-    inline def formatGeneric(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatGeneric")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatGeneric(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatGeneric")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create an ISO datetime format function.
@@ -695,7 +695,7 @@ object mod {
     /**
       * The namespace for the `formatISODateTime` function statics.
       */
-    inline def formatISODateTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISODateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatISODateTime(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatISODateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create an international datetime format function.
@@ -717,7 +717,7 @@ object mod {
     /**
       * The namespace for the `formatIntlDateTime` function statics.
       */
-    inline def formatIntlDateTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatIntlDateTime(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create an international number format function.
@@ -739,7 +739,7 @@ object mod {
     /**
       * The namespace for the `formatIntlNumber` function statics.
       */
-    inline def formatIntlNumber(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlNumber")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatIntlNumber(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIntlNumber")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create a significant figure format function.
@@ -761,7 +761,7 @@ object mod {
     /**
       * The namespace for the `formatPrecision` function statics.
       */
-    inline def formatPrecision(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPrecision")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatPrecision(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPrecision")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create a time format function.
@@ -785,7 +785,7 @@ object mod {
     /**
       * The namespace for the `formatTime` function statics.
       */
-    inline def formatTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatTime(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Create a UTC datetime format function.
@@ -809,7 +809,7 @@ object mod {
     /**
       * The namespace for the `formatUTCDateTime` function statics.
       */
-    inline def formatUTCDateTime(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUTCDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    inline def formatUTCDateTime(options: typings.luminoDatagrid.typesTextrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUTCDateTime")(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
     /**
       * Measure the height of a font.
@@ -828,7 +828,7 @@ object mod {
   }
   
   inline def resolveOption[T](
-    option: typings.luminoDatagrid.celleditorcontrollerMod.ConfigOption[T],
-    config: typings.luminoDatagrid.celleditorMod.CellEditor.CellConfig
+    option: typings.luminoDatagrid.typesCelleditorcontrollerMod.ConfigOption[T],
+    config: typings.luminoDatagrid.typesCelleditorMod.CellEditor.CellConfig
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
 }

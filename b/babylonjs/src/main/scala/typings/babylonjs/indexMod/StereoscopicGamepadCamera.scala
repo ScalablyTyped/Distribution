@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "StereoscopicGamepadCamera")
 @js.native
 open class StereoscopicGamepadCamera protected ()
-  extends typings.babylonjs.babylonjsMod.StereoscopicGamepadCamera {
+  extends typings.babylonjs.camerasIndexMod.StereoscopicGamepadCamera {
   /**
     * Creates a new StereoscopicGamepadCamera
     * @param name defines camera name
@@ -18,13 +18,13 @@ open class StereoscopicGamepadCamera protected ()
     */
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     interaxialDistance: Double,
     isStereoscopicSideBySide: Boolean
   ) = this()
   def this(
     name: String,
-    position: typings.babylonjs.mathVectorMod.Vector3,
+    position: typings.babylonjs.mathsMathDotvectorMod.Vector3,
     interaxialDistance: Double,
     isStereoscopicSideBySide: Boolean,
     scene: typings.babylonjs.sceneMod.Scene

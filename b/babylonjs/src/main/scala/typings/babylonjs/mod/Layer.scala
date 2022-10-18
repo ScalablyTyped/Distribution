@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "Layer")
 @js.native
 open class Layer protected ()
-  extends typings.babylonjs.legacyMod.Layer {
+  extends typings.babylonjs.legacyLegacyMod.Layer {
   /**
     * Instantiates a new layer.
     * This represents a full screen 2d layer.
@@ -45,7 +45,7 @@ open class Layer protected ()
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     isBackground: Boolean,
-    color: typings.babylonjs.mathColorMod.Color4
+    color: typings.babylonjs.mathsMathDotcolorMod.Color4
   ) = this()
   def this(
     /**
@@ -55,6 +55,6 @@ open class Layer protected ()
     imgUrl: Nullable[String],
     scene: Nullable[typings.babylonjs.sceneMod.Scene],
     isBackground: Unit,
-    color: typings.babylonjs.mathColorMod.Color4
+    color: typings.babylonjs.mathsMathDotcolorMod.Color4
   ) = this()
 }

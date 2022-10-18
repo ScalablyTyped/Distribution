@@ -3,9 +3,6 @@ package typings.mdastUtilFindAndReplace
 import typings.mdastUtilFindAndReplace.mdastUtilFindAndReplaceBooleans.`false`
 import typings.mdastUtilFindAndReplace.mdastUtilFindAndReplaceStrings.children
 import typings.std.Record
-import typings.unistUtilIs.mod.Props
-import typings.unistUtilIs.mod.TestFunctionAnything
-import typings.unistUtilIs.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,15 +54,7 @@ object libMod {
       
       inline def setIgnore(value: Test): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      inline def setIgnoreFunction3(
-        value: (/* node */ typings.unistUtilIs.mod.Node, /* index */ js.UndefOr[Double | Null], /* parent */ js.UndefOr[typings.unistUtilIs.mod.Parent | Null]) => Boolean | Unit
-      ): Self = StObject.set(x, "ignore", js.Any.fromFunction3(value))
-      
-      inline def setIgnoreNull: Self = StObject.set(x, "ignore", null)
-      
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
-      
-      inline def setIgnoreVarargs(value: (Type | Props | TestFunctionAnything)*): Self = StObject.set(x, "ignore", js.Array(value*))
     }
   }
   

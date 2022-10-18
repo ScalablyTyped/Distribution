@@ -1,7 +1,7 @@
 package typings.rcCollapse
 
-import typings.rcCollapse.interfaceMod.CollapsibleType
-import typings.rcMotion.cssmotionMod.CSSMotionProps
+import typings.rcCollapse.esInterfaceMod.CollapsibleType
+import typings.rcMotion.esCssmotionMod.CSSMotionProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler

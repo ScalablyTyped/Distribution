@@ -1,121 +1,153 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.comments
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.open
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Creator extends StObject {
   
-  /** Can be the name of a user. Pass in `none` for issues with no assigned user, and `*` for issues assigned to any user. */
-  var assignee: js.UndefOr[String] = js.undefined
+  /**
+    * Format: date-time
+    * @example 2013-02-12T13:22:01Z
+    */
+  var closed_at: String | Null
   
-  /** The user that created the issue. */
-  var creator: js.UndefOr[String] = js.undefined
+  /** @example 8 */
+  var closed_issues: Double
   
-  /** The direction to sort the results by. */
-  var direction: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any
-  ] = js.undefined
+  /**
+    * Format: date-time
+    * @example 2011-04-10T20:09:31Z
+    */
+  var created_at: String
   
-  /** A list of comma separated label names. Example: `bug,ui,@high` */
-  var labels: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['labels'] */ js.Any
-  ] = js.undefined
+  var creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   
-  /** A user that's mentioned in the issue. */
-  var mentioned: js.UndefOr[String] = js.undefined
+  /** @example Tracking milestone for version 1.0 */
+  var description: String | Null
   
-  /** If an `integer` is passed, it should refer to a milestone by its `number` field. If the string `*` is passed, issues with any milestone are accepted. If the string `none` is passed, issues without milestones are returned. */
-  var milestone: js.UndefOr[String] = js.undefined
+  /**
+    * Format: date-time
+    * @example 2012-10-09T23:39:01Z
+    */
+  var due_on: String | Null
   
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-  ] = js.undefined
+  /**
+    * Format: uri
+    * @example https://github.com/octocat/Hello-World/milestones/v1.0
+    */
+  var html_url: String
   
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-  ] = js.undefined
+  /** @example 1002604 */
+  var id: Double
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
-  var since: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
-  ] = js.undefined
+  /**
+    * Format: uri
+    * @example https://api.github.com/repos/octocat/Hello-World/milestones/1/labels
+    */
+  var labels_url: String
   
-  /** What to sort results by. */
-  var sort: js.UndefOr[created_ | updated | comments] = js.undefined
+  /** @example MDk6TWlsZXN0b25lMTAwMjYwNA== */
+  var node_id: String
   
-  /** Indicates the state of the issues to return. */
-  var state: js.UndefOr[open | closed | all] = js.undefined
+  /**
+    * @description The number of the milestone.
+    * @example 42
+    */
+  var number: Double
+  
+  /** @example 4 */
+  var open_issues: Double
+  
+  /**
+    * @description The state of the milestone.
+    * @default open
+    * @example open
+    * @enum {string}
+    */
+  var state: open | closed
+  
+  /**
+    * @description The title of the milestone.
+    * @example v1.0
+    */
+  var title: String
+  
+  /**
+    * Format: date-time
+    * @example 2014-03-03T18:58:10Z
+    */
+  var updated_at: String
+  
+  /**
+    * Format: uri
+    * @example https://api.github.com/repos/octocat/Hello-World/milestones/1
+    */
+  var url: String
 }
 object Creator {
   
-  inline def apply(): Creator = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    closed_issues: Double,
+    created_at: String,
+    creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    html_url: String,
+    id: Double,
+    labels_url: String,
+    node_id: String,
+    number: Double,
+    open_issues: Double,
+    state: open | closed,
+    title: String,
+    updated_at: String,
+    url: String
+  ): Creator = {
+    val __obj = js.Dynamic.literal(closed_issues = closed_issues.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], closed_at = null, description = null, due_on = null)
     __obj.asInstanceOf[Creator]
   }
   
   extension [Self <: Creator](x: Self) {
     
-    inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+    inline def setClosed_at(value: String): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
     
-    inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+    inline def setClosed_atNull: Self = StObject.set(x, "closed_at", null)
     
-    inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setClosed_issues(value: Double): Self = StObject.set(x, "closed_issues", value.asInstanceOf[js.Any])
     
-    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setDirection(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any
-    ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setCreator(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    ): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setLabels(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['labels'] */ js.Any
-    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setDue_on(value: String): Self = StObject.set(x, "due_on", value.asInstanceOf[js.Any])
     
-    inline def setMentioned(value: String): Self = StObject.set(x, "mentioned", value.asInstanceOf[js.Any])
+    inline def setDue_onNull: Self = StObject.set(x, "due_on", null)
     
-    inline def setMentionedUndefined: Self = StObject.set(x, "mentioned", js.undefined)
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    inline def setMilestone(value: String): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
+    inline def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
     
-    inline def setPage(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
-    ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setPer_page(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
-    ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setOpen_issues(value: Double): Self = StObject.set(x, "open_issues", value.asInstanceOf[js.Any])
     
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setSince(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
-    ): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    inline def setSort(value: created_ | updated | comments): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
-    
-    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
-    
-    inline def setState(value: open | closed | all): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-    
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -29,13 +29,13 @@ object SemanticRolesResultSubject {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: SemanticRolesEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: SemanticRolesEntity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setKeywords(value: js.Array[SemanticRolesKeyword]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

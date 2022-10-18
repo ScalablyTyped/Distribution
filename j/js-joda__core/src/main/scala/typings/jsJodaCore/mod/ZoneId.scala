@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@js-joda/core", "ZoneId")
+/* note: abstract class */ @JSImport("@js-joda/core", "ZoneId")
 @js.native
-abstract class ZoneId () extends StObject {
+open class ZoneId () extends StObject {
   
   def id(): String = js.native
   

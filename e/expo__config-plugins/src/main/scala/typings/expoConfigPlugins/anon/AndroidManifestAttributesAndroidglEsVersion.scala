@@ -1,8 +1,8 @@
 package typings.expoConfigPlugins.anon
 
+import typings.expoConfigPlugins.buildAndroidManifestMod.StringBoolean
 import typings.expoConfigPlugins.expoConfigPluginsStrings.androidDotintentDotactionDotVIEW
 import typings.expoConfigPlugins.expoConfigPluginsStrings.remove
-import typings.expoConfigPlugins.manifestMod.StringBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

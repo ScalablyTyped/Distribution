@@ -13,7 +13,7 @@ object mod {
   @JSImport("@ionic/discover", "CommServer")
   @js.native
   open class CommServer protected ()
-    extends typings.ionicDiscover.commMod.CommServer {
+    extends typings.ionicDiscover.distCommMod.CommServer {
     def this(
       namespace: String,
       /**
@@ -30,12 +30,12 @@ object mod {
   @JSImport("@ionic/discover", "Publisher")
   @js.native
   open class Publisher protected ()
-    extends typings.ionicDiscover.publisherMod.Publisher {
+    extends typings.ionicDiscover.distPublisherMod.Publisher {
     def this(namespace: String, name: String, port: Double) = this()
     def this(namespace: String, name: String, port: Double, commPort: Double) = this()
   }
   
   inline def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def newSilentPublisher(namespace: String, name: String, port: Double): typings.ionicDiscover.publisherMod.Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("newSilentPublisher")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[typings.ionicDiscover.publisherMod.Publisher]
+  inline def newSilentPublisher(namespace: String, name: String, port: Double): typings.ionicDiscover.distPublisherMod.Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("newSilentPublisher")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[typings.ionicDiscover.distPublisherMod.Publisher]
 }

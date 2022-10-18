@@ -1,12 +1,12 @@
 package typings.dexie.mod
 
-import typings.dexie.anon.Stack
+import typings.dexie.anon.StackString
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Middleware[TStack /* <: Stack */] extends StObject {
+trait Middleware[TStack /* <: StackString */] extends StObject {
   
   def create(down: TStack): Partial[TStack]
   
@@ -18,7 +18,7 @@ trait Middleware[TStack /* <: Stack */] extends StObject {
 }
 object Middleware {
   
-  inline def apply[TStack /* <: Stack */](
+  inline def apply[TStack /* <: StackString */](
     create: TStack => Partial[TStack],
     stack: /* import warning: importer.ImportType#apply Failed type conversion: TStack['stack'] */ js.Any
   ): Middleware[TStack] = {
@@ -26,7 +26,7 @@ object Middleware {
     __obj.asInstanceOf[Middleware[TStack]]
   }
   
-  extension [Self <: Middleware[?], TStack /* <: Stack */](x: Self & Middleware[TStack]) {
+  extension [Self <: Middleware[?], TStack /* <: StackString */](x: Self & Middleware[TStack]) {
     
     inline def setCreate(value: TStack => Partial[TStack]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

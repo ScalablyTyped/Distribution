@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "PosterizeBlock")
 @js.native
 open class PosterizeBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.PosterizeBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.PosterizeBlock {
   /**
     * Creates a new PosterizeBlock
     * @param name defines the block name

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "RollingAverage")
 @js.native
 open class RollingAverage protected ()
-  extends typings.babylonjs.legacyMod.RollingAverage {
+  extends typings.babylonjs.legacyLegacyMod.RollingAverage {
   /**
     * constructor
     * @param length The number of samples required to saturate the sliding window

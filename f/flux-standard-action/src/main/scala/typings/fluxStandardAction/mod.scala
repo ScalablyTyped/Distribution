@@ -49,10 +49,17 @@ object mod {
     }
   }
   
-  type ErrorFluxStandardActionAuto[Type /* <: String */, CustomError /* <: js.Error */, Meta] = (ErrorFluxStandardActionWithPayloadAndMeta[Type, CustomError, Meta]) | (ErrorFluxStandardActionWithPayload[Type, CustomError, Meta])
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Meta extends undefined ? flux-standard-action.flux-standard-action.ErrorFluxStandardActionWithPayload<Type, CustomError, Meta> : flux-standard-action.flux-standard-action.ErrorFluxStandardActionWithPayloadAndMeta<Type, CustomError, Meta>
+    }}}
+    */
+  @js.native
+  trait ErrorFluxStandardActionAuto[Type /* <: String */, CustomError /* <: js.Error */, Meta] extends StObject
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardAction because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardActionWithMeta because var conflicts: error, meta, payload, `type`. Inlined  */ trait ErrorFluxStandardActionWithMeta[Type /* <: String */, CustomError /* <: js.Error */, Meta]
     extends StObject
@@ -67,7 +74,6 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardAction because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardActionWithPayload because var conflicts: error, meta, payload, `type`. Inlined  */ trait ErrorFluxStandardActionWithPayload[Type /* <: String */, CustomError /* <: js.Error */, Meta]
     extends StObject
@@ -93,9 +99,7 @@ object mod {
   
   type FSAWithPayloadAndMeta[Type /* <: String */, Payload, Meta] = FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta]
   
-  trait FluxStandardAction[Type /* <: String */, Payload, Meta]
-    extends StObject
-       with FluxStandardActionAuto[Type, Payload, Meta] {
+  trait FluxStandardAction[Type /* <: String */, Payload, Meta] extends StObject {
     
     /**
       * The optional `error` property MAY be set to true if the action represents an error.
@@ -152,42 +156,17 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.fluxStandardAction.mod.FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta]
-    - typings.fluxStandardAction.mod.FluxStandardActionWithPayload[Type, Payload, Meta]
-    - typings.fluxStandardAction.mod.FluxStandardActionWithMeta[Type, Payload, Meta]
-    - typings.fluxStandardAction.mod.FluxStandardAction[Type, Payload, Meta]
-  */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Payload extends undefined ? Meta extends undefined ? flux-standard-action.flux-standard-action.FluxStandardAction<Type, Payload, Meta> : flux-standard-action.flux-standard-action.FluxStandardActionWithMeta<Type, Payload, Meta> : Meta extends undefined ? flux-standard-action.flux-standard-action.FluxStandardActionWithPayload<Type, Payload, Meta> : flux-standard-action.flux-standard-action.FluxStandardActionWithPayloadAndMeta<Type, Payload, Meta>
+    }}}
+    */
+  @js.native
   trait FluxStandardActionAuto[Type /* <: String */, Payload, Meta] extends StObject
-  object FluxStandardActionAuto {
-    
-    inline def FluxStandardAction[Type /* <: String */, Payload, Meta](`type`: Type): typings.fluxStandardAction.mod.FluxStandardAction[Type, Payload, Meta] = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardAction[Type, Payload, Meta]]
-    }
-    
-    inline def FluxStandardActionWithMeta[Type /* <: String */, Payload, Meta](meta: Meta, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithMeta[Type, Payload, Meta] = {
-      val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardActionWithMeta[Type, Payload, Meta]]
-    }
-    
-    inline def FluxStandardActionWithPayload[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithPayload[Type, Payload, Meta] = {
-      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardActionWithPayload[Type, Payload, Meta]]
-    }
-    
-    inline def FluxStandardActionWithPayloadAndMeta[Type /* <: String */, Payload, Meta](payload: Payload, `type`: Type): typings.fluxStandardAction.mod.FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta] = {
-      val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.fluxStandardAction.mod.FluxStandardActionWithPayloadAndMeta[Type, Payload, Meta]]
-    }
-  }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited */ trait FluxStandardActionWithMeta[Type /* <: String */, Payload, Meta]
+  trait FluxStandardActionWithMeta[Type /* <: String */, Payload, Meta]
     extends StObject
        with FluxStandardAction[Type, Payload, Meta] {
     
@@ -212,8 +191,7 @@ object mod {
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited */ trait FluxStandardActionWithPayload[Type /* <: String */, Payload, Meta]
+  trait FluxStandardActionWithPayload[Type /* <: String */, Payload, Meta]
     extends StObject
        with FluxStandardAction[Type, Payload, Meta] {
     
@@ -242,9 +220,7 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardAction because Already inherited
-  - typings.fluxStandardAction.mod.FluxStandardActionAuto because Already inherited
   - typings.fluxStandardAction.mod.FluxStandardActionWithMeta because var conflicts: error, meta, payload, `type`. Inlined  */ trait FluxStandardActionWithPayloadAndMeta[Type /* <: String */, Payload, Meta]
     extends StObject
        with FluxStandardActionWithPayload[Type, Payload, Meta]

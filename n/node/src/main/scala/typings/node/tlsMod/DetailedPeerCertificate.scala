@@ -1,5 +1,6 @@
 package typings.node.tlsMod
 
+import typings.node.NodeJS.Dict
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +19,7 @@ object DetailedPeerCertificate {
     ext_key_usage: js.Array[String],
     fingerprint: String,
     fingerprint256: String,
-    infoAccess: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<Array<string>> */ Any,
+    infoAccess: Dict[js.Array[String]],
     issuer: Certificate,
     issuerCertificate: DetailedPeerCertificate,
     modulus: String,

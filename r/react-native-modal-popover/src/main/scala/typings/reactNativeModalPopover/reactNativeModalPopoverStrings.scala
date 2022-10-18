@@ -1,7 +1,7 @@
 package typings.reactNativeModalPopover
 
-import typings.reactNativeModalPopover.popoverGeometryMod.Placement
-import typings.reactNativeModalPopover.popoverMod.Orientation
+import typings.reactNativeModalPopover.libPopoverGeometryMod.Placement
+import typings.reactNativeModalPopover.libPopoverMod.Orientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

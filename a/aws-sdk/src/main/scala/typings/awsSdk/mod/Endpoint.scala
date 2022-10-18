@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aws-sdk", "Endpoint")
 @js.native
 open class Endpoint protected ()
-  extends typings.awsSdk.coreMod.Endpoint {
+  extends typings.awsSdk.libCoreMod.Endpoint {
   /**
     * Constructs a new endpoint given an endpoint URL.
     */

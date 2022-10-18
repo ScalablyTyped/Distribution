@@ -1,11 +1,11 @@
 package typings.peculiarAsn1Schema
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.peculiarAsn1Schema.enumsMod.AsnPropTypes
-import typings.peculiarAsn1Schema.enumsMod.AsnTypeTypes
-import typings.peculiarAsn1Schema.schemaMod.AsnSchemaType
-import typings.peculiarAsn1Schema.schemaMod.IAsnSchemaItem
-import typings.peculiarAsn1Schema.typesMod.IEmptyConstructor
+import typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnPropTypes
+import typings.peculiarAsn1Schema.buildTypesEnumsMod.AsnTypeTypes
+import typings.peculiarAsn1Schema.buildTypesSchemaMod.AsnSchemaType
+import typings.peculiarAsn1Schema.buildTypesSchemaMod.IAsnSchemaItem
+import typings.peculiarAsn1Schema.buildTypesTypesMod.IEmptyConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

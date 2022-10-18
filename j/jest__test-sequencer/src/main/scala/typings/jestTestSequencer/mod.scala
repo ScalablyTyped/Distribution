@@ -32,7 +32,7 @@ object mod {
        with TestSequencer {
     
     /* private */ /* CompleteClass */
-    var _cache: Any = js.native
+    override val _cache: Any = js.native
     
     /* CompleteClass */
     override def _getCache(test: Test): Cache2 = js.native
@@ -45,6 +45,9 @@ object mod {
     
     /* CompleteClass */
     override def cacheResults(tests: js.Array[Test], results: AggregatedResult): Unit = js.native
+    
+    /* private */ /* CompleteClass */
+    var hasFailed: Any = js.native
     
     /**
       * Select tests for shard requested via --shard=shardIndex/shardCount
@@ -86,9 +89,12 @@ object mod {
       */
     /* CompleteClass */
     override def sort(tests: js.Array[Test]): js.Array[Test] | js.Promise[js.Array[Test]] = js.native
+    
+    /* private */ /* CompleteClass */
+    var time: Any = js.native
   }
   
-  type Cache2 = StringDictionary[js.Tuple2[`0` | `1`, Double]]
+  type Cache2 = StringDictionary[js.UndefOr[js.Tuple2[`0` | `1`, Double]]]
   
   trait ShardOptions extends StObject {
     
@@ -126,7 +132,7 @@ object mod {
     */
   trait TestSequencer extends StObject {
     
-    /* private */ var _cache: Any
+    /* private */ val _cache: Any
     
     def _getCache(test: Test): Cache2
     
@@ -135,6 +141,8 @@ object mod {
     def allFailedTests(tests: js.Array[Test]): js.Array[Test] | js.Promise[js.Array[Test]]
     
     def cacheResults(tests: js.Array[Test], results: AggregatedResult): Unit
+    
+    /* private */ var hasFailed: Any
     
     /**
       * Select tests for shard requested via --shard=shardIndex/shardCount
@@ -174,6 +182,8 @@ object mod {
       * ```
       */
     def sort(tests: js.Array[Test]): js.Array[Test] | js.Promise[js.Array[Test]]
+    
+    /* private */ var time: Any
   }
   object TestSequencer {
     
@@ -183,10 +193,12 @@ object mod {
       _getCachePath: TestContext => String,
       allFailedTests: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]],
       cacheResults: (js.Array[Test], AggregatedResult) => Unit,
+      hasFailed: Any,
       shard: (js.Array[Test], ShardOptions) => js.Array[Test] | js.Promise[js.Array[Test]],
-      sort: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]]
+      sort: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]],
+      time: Any
     ): TestSequencer = {
-      val __obj = js.Dynamic.literal(_cache = _cache.asInstanceOf[js.Any], _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), allFailedTests = js.Any.fromFunction1(allFailedTests), cacheResults = js.Any.fromFunction2(cacheResults), shard = js.Any.fromFunction2(shard), sort = js.Any.fromFunction1(sort))
+      val __obj = js.Dynamic.literal(_cache = _cache.asInstanceOf[js.Any], _getCache = js.Any.fromFunction1(_getCache), _getCachePath = js.Any.fromFunction1(_getCachePath), allFailedTests = js.Any.fromFunction1(allFailedTests), cacheResults = js.Any.fromFunction2(cacheResults), hasFailed = hasFailed.asInstanceOf[js.Any], shard = js.Any.fromFunction2(shard), sort = js.Any.fromFunction1(sort), time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestSequencer]
     }
     
@@ -196,9 +208,13 @@ object mod {
       
       inline def setCacheResults(value: (js.Array[Test], AggregatedResult) => Unit): Self = StObject.set(x, "cacheResults", js.Any.fromFunction2(value))
       
+      inline def setHasFailed(value: Any): Self = StObject.set(x, "hasFailed", value.asInstanceOf[js.Any])
+      
       inline def setShard(value: (js.Array[Test], ShardOptions) => js.Array[Test] | js.Promise[js.Array[Test]]): Self = StObject.set(x, "shard", js.Any.fromFunction2(value))
       
       inline def setSort(value: js.Array[Test] => js.Array[Test] | js.Promise[js.Array[Test]]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      
+      inline def setTime(value: Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def set_cache(value: Any): Self = StObject.set(x, "_cache", value.asInstanceOf[js.Any])
       

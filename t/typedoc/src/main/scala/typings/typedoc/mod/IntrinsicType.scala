@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("typedoc", "IntrinsicType")
 @js.native
 open class IntrinsicType protected ()
-  extends typings.typedoc.modelsMod.IntrinsicType {
+  extends typings.typedoc.distLibModelsMod.IntrinsicType {
   def this(name: String) = this()
 }

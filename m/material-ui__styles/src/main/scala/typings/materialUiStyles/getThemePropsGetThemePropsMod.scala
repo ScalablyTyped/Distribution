@@ -1,6 +1,5 @@
 package typings.materialUiStyles
 
-import org.scalablytyped.runtime.TopLevel
 import typings.materialUiStyles.anon.NameProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,9 +16,7 @@ object getThemePropsGetThemePropsMod {
   trait ThemeWithProps[Components] extends StObject {
     
     var props: js.UndefOr[
-        /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Components ]: std.Partial<Components[K]>}
-      */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps & TopLevel[Components]
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Components ]: std.Partial<Components[K]>} */ js.Any
       ] = js.undefined
   }
   object ThemeWithProps {
@@ -32,14 +29,20 @@ object getThemePropsGetThemePropsMod {
     extension [Self <: ThemeWithProps[?], Components](x: Self & ThemeWithProps[Components]) {
       
       inline def setProps(
-        value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-      {[ K in keyof Components ]: std.Partial<Components[K]>}
-        */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps & TopLevel[Components]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Components ]: std.Partial<Components[K]>} */ js.Any
       ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }
   }
   
-  type ThemedProps[Theme, Name /* <: /* keyof any */ String */] = js.Object
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    Theme extends {  props :std.Record<Name, infer Props>} ? Props : {}
+    }}}
+    */
+  @js.native
+  trait ThemedProps[Theme, Name /* <: /* keyof any */ String */] extends StObject
 }

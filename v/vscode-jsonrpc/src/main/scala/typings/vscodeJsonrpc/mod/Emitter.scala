@@ -1,6 +1,6 @@
 package typings.vscodeJsonrpc.mod
 
-import typings.vscodeJsonrpc.eventsMod.EmitterOptions
+import typings.vscodeJsonrpc.libCommonEventsMod.EmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vscode-jsonrpc", "Emitter")
 @js.native
 open class Emitter[T] ()
-  extends typings.vscodeJsonrpc.eventsMod.Emitter[T] {
+  extends typings.vscodeJsonrpc.libCommonEventsMod.Emitter[T] {
   def this(_options: EmitterOptions) = this()
 }
 /* static members */

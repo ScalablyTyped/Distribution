@@ -1,19 +1,22 @@
 package typings.firebaseDatabase
 
 import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseAppCheckInteropTypes.mod.AppCheckInternalComponentName
+import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
+import typings.firebaseComponent.mod.Provider
 import typings.firebaseDatabase.anon.MockUserToken
-import typings.firebaseDatabase.apiOnDisconnectMod.OnDisconnect
-import typings.firebaseDatabase.apiReferenceMod.DatabaseReference
-import typings.firebaseDatabase.apiReferenceMod.ListenOptions
-import typings.firebaseDatabase.apiReferenceMod.Query
-import typings.firebaseDatabase.apiReferenceMod.ThenableReference
-import typings.firebaseDatabase.apiReferenceMod.Unsubscribe
-import typings.firebaseDatabase.apiTransactionMod.TransactionOptions
-import typings.firebaseDatabase.coreRepoMod.Repo
-import typings.firebaseDatabase.indexesIndexMod.Index
-import typings.firebaseDatabase.snapNodeMod.Node
-import typings.firebaseDatabase.utilPathMod.Path
-import typings.firebaseDatabase.viewEventMod.EventType
+import typings.firebaseDatabase.distSrcApiOnDisconnectMod.OnDisconnect
+import typings.firebaseDatabase.distSrcApiReferenceMod.DatabaseReference
+import typings.firebaseDatabase.distSrcApiReferenceMod.ListenOptions
+import typings.firebaseDatabase.distSrcApiReferenceMod.Query
+import typings.firebaseDatabase.distSrcApiReferenceMod.ThenableReference
+import typings.firebaseDatabase.distSrcApiReferenceMod.Unsubscribe
+import typings.firebaseDatabase.distSrcApiTransactionMod.TransactionOptions
+import typings.firebaseDatabase.distSrcCoreRepoMod.Repo
+import typings.firebaseDatabase.distSrcCoreSnapIndexesIndexMod.Index
+import typings.firebaseDatabase.distSrcCoreSnapNodeMod.Node
+import typings.firebaseDatabase.distSrcCoreUtilPathMod.Path
+import typings.firebaseDatabase.distSrcCoreViewEventMod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +30,7 @@ object distSrcMod {
   @JSImport("@firebase/database/dist/src", "DataSnapshot")
   @js.native
   open class DataSnapshot protected ()
-    extends typings.firebaseDatabase.srcApiMod.DataSnapshot {
+    extends typings.firebaseDatabase.distSrcApiMod.DataSnapshot {
     /**
       * @param _node - A SnapshotNode to wrap.
       * @param ref - The location this snapshot came from.
@@ -43,7 +46,7 @@ object distSrcMod {
   @JSImport("@firebase/database/dist/src", "Database")
   @js.native
   open class Database protected ()
-    extends typings.firebaseDatabase.srcApiMod.Database {
+    extends typings.firebaseDatabase.distSrcApiMod.Database {
     /** @hideconstructor */
     def this(
       _repoInternal: Repo,
@@ -55,27 +58,27 @@ object distSrcMod {
   @JSImport("@firebase/database/dist/src", "OnDisconnect")
   @js.native
   open class OnDisconnect_ protected ()
-    extends typings.firebaseDatabase.srcApiMod.OnDisconnect_ {
+    extends typings.firebaseDatabase.distSrcApiMod.OnDisconnect_ {
     /** @hideconstructor */
     def this(_repo: Repo, _path: Path) = this()
   }
   
-  @JSImport("@firebase/database/dist/src", "QueryConstraint")
+  /* note: abstract class */ @JSImport("@firebase/database/dist/src", "QueryConstraint")
   @js.native
-  abstract class QueryConstraint ()
-    extends typings.firebaseDatabase.srcApiMod.QueryConstraint
+  open class QueryConstraint ()
+    extends typings.firebaseDatabase.distSrcApiMod.QueryConstraint
   
   @JSImport("@firebase/database/dist/src", "_QueryImpl")
   @js.native
   open class QueryImpl protected ()
-    extends typings.firebaseDatabase.srcApiMod.QueryImpl {
+    extends typings.firebaseDatabase.distSrcApiMod.QueryImpl {
     /**
       * @hideconstructor
       */
     def this(
       _repo: Repo,
       _path: Path,
-      _queryParams: typings.firebaseDatabase.viewQueryParamsMod.QueryParams,
+      _queryParams: typings.firebaseDatabase.distSrcCoreViewQueryParamsMod.QueryParams,
       _orderByCalled: Boolean
     ) = this()
   }
@@ -83,12 +86,12 @@ object distSrcMod {
   @JSImport("@firebase/database/dist/src", "_QueryParams")
   @js.native
   open class QueryParams ()
-    extends typings.firebaseDatabase.srcApiMod.QueryParams
+    extends typings.firebaseDatabase.distSrcApiMod.QueryParams
   
   @JSImport("@firebase/database/dist/src", "_ReferenceImpl")
   @js.native
   open class ReferenceImpl protected ()
-    extends typings.firebaseDatabase.srcApiMod.ReferenceImpl {
+    extends typings.firebaseDatabase.distSrcApiMod.ReferenceImpl {
     /** @hideconstructor */
     def this(repo: Repo, path: Path) = this()
   }
@@ -100,21 +103,21 @@ object distSrcMod {
   @JSImport("@firebase/database/dist/src", "TransactionResult")
   @js.native
   open class TransactionResult protected ()
-    extends typings.firebaseDatabase.srcApiMod.TransactionResult {
+    extends typings.firebaseDatabase.distSrcApiMod.TransactionResult {
     /** @hideconstructor */
     def this(
       /** Whether the transaction was successfully committed. */
     committed: Boolean,
       /** The resulting data snapshot. */
-    snapshot: typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot
+    snapshot: typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot
     ) = this()
   }
   
   inline def child(parent: DatabaseReference, path: String): DatabaseReference = (^.asInstanceOf[js.Dynamic].applyDynamic("child")(parent.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[DatabaseReference]
   
-  inline def connectDatabaseEmulator(db: typings.firebaseDatabase.apiDatabaseMod.Database, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectDatabaseEmulator")(db.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connectDatabaseEmulator(db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectDatabaseEmulator")(db.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def connectDatabaseEmulator(
-    db: typings.firebaseDatabase.apiDatabaseMod.Database,
+    db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database,
     host: String,
     port: Double,
     options: MockUserToken
@@ -124,60 +127,60 @@ object distSrcMod {
   inline def enableLogging(enabled: Boolean, persistent: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(enabled.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def enableLogging(logger: js.Function1[/* message */ String, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def endAt(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: String, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: Boolean): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: Boolean, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: Double, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endAt(value: Null, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def endAt(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: String, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: Boolean): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: Boolean, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: Double, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endAt(value: Null, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def endBefore(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: String, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: Boolean): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: Boolean, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: Double, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def endBefore(value: Null, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def endBefore(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: String, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: Boolean): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: Boolean, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: Double, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def endBefore(value: Null, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def equalTo(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: String, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: Boolean): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: Boolean, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: Double, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def equalTo(value: Null, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def equalTo(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: String, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: Boolean): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: Boolean, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: Double, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def equalTo(value: Null, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("equalTo")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
   inline def forceLongPolling(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLongPolling")().asInstanceOf[Unit]
   
   inline def forceWebSockets(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceWebSockets")().asInstanceOf[Unit]
   
-  inline def get(query: Query): js.Promise[typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot]]
+  inline def get(query: Query): js.Promise[typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot]]
   
-  inline def getDatabase(): typings.firebaseDatabase.apiDatabaseMod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")().asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def getDatabase(app: Unit, url: String): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")(app.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def getDatabase(app: FirebaseApp): typings.firebaseDatabase.apiDatabaseMod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def getDatabase(app: FirebaseApp, url: String): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")(app.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
+  inline def getDatabase(): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")().asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def getDatabase(app: Unit, url: String): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")(app.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def getDatabase(app: FirebaseApp): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def getDatabase(app: FirebaseApp, url: String): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("getDatabase")(app.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
   
-  inline def goOffline(db: typings.firebaseDatabase.apiDatabaseMod.Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goOffline")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def goOffline(db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goOffline")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def goOnline(db: typings.firebaseDatabase.apiDatabaseMod.Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goOnline")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def goOnline(db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goOnline")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def increment(delta: Double): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(delta.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  inline def limitToFirst(limit: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToFirst")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def limitToFirst(limit: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToFirst")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def limitToLast(limit: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def limitToLast(limit: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
   inline def off(query: Query): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(query.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def off(
     query: Query,
     eventType: Unit,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ js.UndefOr[String | Null], 
       Any
     ]
@@ -187,7 +190,7 @@ object distSrcMod {
     query: Query,
     eventType: EventType,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ js.UndefOr[String | Null], 
       Any
     ]
@@ -196,7 +199,7 @@ object distSrcMod {
   inline def onChildAdded(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ js.UndefOr[String | Null], 
       Any
     ]
@@ -204,7 +207,7 @@ object distSrcMod {
   inline def onChildAdded(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ js.UndefOr[String | Null], 
       Any
     ],
@@ -213,7 +216,7 @@ object distSrcMod {
   inline def onChildAdded(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -223,7 +226,7 @@ object distSrcMod {
   inline def onChildAdded(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -233,7 +236,7 @@ object distSrcMod {
   inline def onChildChanged(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ]
@@ -241,7 +244,7 @@ object distSrcMod {
   inline def onChildChanged(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -250,7 +253,7 @@ object distSrcMod {
   inline def onChildChanged(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -260,7 +263,7 @@ object distSrcMod {
   inline def onChildChanged(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -270,7 +273,7 @@ object distSrcMod {
   inline def onChildMoved(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ]
@@ -278,7 +281,7 @@ object distSrcMod {
   inline def onChildMoved(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -287,7 +290,7 @@ object distSrcMod {
   inline def onChildMoved(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -297,7 +300,7 @@ object distSrcMod {
   inline def onChildMoved(
     query: Query,
     callback: js.Function2[
-      /* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, 
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
       /* previousChildName */ String | Null, 
       Any
     ],
@@ -306,22 +309,34 @@ object distSrcMod {
   
   inline def onChildRemoved(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any]
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ]
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onChildRemoved")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onChildRemoved(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any],
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ],
     cancelCallback: js.Function1[/* error */ js.Error, Any]
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onChildRemoved")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], cancelCallback.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onChildRemoved(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any],
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ],
     cancelCallback: js.Function1[/* error */ js.Error, Any],
     options: ListenOptions
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onChildRemoved")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], cancelCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onChildRemoved(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any],
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ],
     options: ListenOptions
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onChildRemoved")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   
@@ -329,101 +344,113 @@ object distSrcMod {
   
   inline def onValue(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any]
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ]
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onValue")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onValue(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any],
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ],
     cancelCallback: js.Function1[/* error */ js.Error, Any]
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onValue")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], cancelCallback.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onValue(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any],
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ],
     cancelCallback: js.Function1[/* error */ js.Error, Any],
     options: ListenOptions
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onValue")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], cancelCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   inline def onValue(
     query: Query,
-    callback: js.Function1[/* snapshot */ typings.firebaseDatabase.apiReferenceImplMod.DataSnapshot, Any],
+    callback: js.Function1[
+      /* snapshot */ typings.firebaseDatabase.distSrcApiReferenceImplMod.DataSnapshot, 
+      Any
+    ],
     options: ListenOptions
   ): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onValue")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
   
-  inline def orderByChild(path: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByChild")(path.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def orderByChild(path: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByChild")(path.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def orderByKey(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByKey")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def orderByKey(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByKey")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def orderByPriority(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByPriority")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def orderByPriority(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByPriority")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def orderByValue(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByValue")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def orderByValue(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderByValue")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
   inline def push(parent: DatabaseReference): ThenableReference = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(parent.asInstanceOf[js.Any]).asInstanceOf[ThenableReference]
   inline def push(parent: DatabaseReference, value: Any): ThenableReference = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(parent.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ThenableReference]
   
-  inline def query(query: Query, queryConstraints: typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint*): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
+  inline def query(
+    query: Query,
+    queryConstraints: typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint*
+  ): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
   
-  inline def ref(db: typings.firebaseDatabase.apiDatabaseMod.Database): DatabaseReference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(db.asInstanceOf[js.Any]).asInstanceOf[DatabaseReference]
-  inline def ref(db: typings.firebaseDatabase.apiDatabaseMod.Database, path: String): DatabaseReference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(db.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[DatabaseReference]
+  inline def ref(db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database): DatabaseReference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(db.asInstanceOf[js.Any]).asInstanceOf[DatabaseReference]
+  inline def ref(db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database, path: String): DatabaseReference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(db.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[DatabaseReference]
   
-  inline def refFromURL(db: typings.firebaseDatabase.apiDatabaseMod.Database, url: String): DatabaseReference = (^.asInstanceOf[js.Dynamic].applyDynamic("refFromURL")(db.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[DatabaseReference]
+  inline def refFromURL(db: typings.firebaseDatabase.distSrcApiDatabaseMod.Database, url: String): DatabaseReference = (^.asInstanceOf[js.Dynamic].applyDynamic("refFromURL")(db.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[DatabaseReference]
   
   inline def remove(ref: DatabaseReference): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
+  inline def repoManagerDatabaseFromApp(app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
   inline def repoManagerDatabaseFromApp(
     app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def repoManagerDatabaseFromApp(
-    app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
-    appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def repoManagerDatabaseFromApp(
-    app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
-    appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
-    url: String
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def repoManagerDatabaseFromApp(
-    app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
-    appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
-    url: String,
-    nodeAdmin: Boolean
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def repoManagerDatabaseFromApp(
-    app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
-    appCheckProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<AppCheckInternalComponentName> */ Any,
-    url: Unit,
-    nodeAdmin: Boolean
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
-  inline def repoManagerDatabaseFromApp(
-    app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+    authProvider: Provider[FirebaseAuthInternalName],
     appCheckProvider: Unit,
     url: String
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
   inline def repoManagerDatabaseFromApp(
     app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+    authProvider: Provider[FirebaseAuthInternalName],
     appCheckProvider: Unit,
     url: String,
     nodeAdmin: Boolean
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
   inline def repoManagerDatabaseFromApp(
     app: FirebaseApp,
-    authProvider: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<FirebaseAuthInternalName> */ Any,
+    authProvider: Provider[FirebaseAuthInternalName],
     appCheckProvider: Unit,
     url: Unit,
     nodeAdmin: Boolean
-  ): typings.firebaseDatabase.apiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiDatabaseMod.Database]
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def repoManagerDatabaseFromApp(
+    app: FirebaseApp,
+    authProvider: Provider[FirebaseAuthInternalName],
+    appCheckProvider: Provider[AppCheckInternalComponentName]
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def repoManagerDatabaseFromApp(
+    app: FirebaseApp,
+    authProvider: Provider[FirebaseAuthInternalName],
+    appCheckProvider: Provider[AppCheckInternalComponentName],
+    url: String
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def repoManagerDatabaseFromApp(
+    app: FirebaseApp,
+    authProvider: Provider[FirebaseAuthInternalName],
+    appCheckProvider: Provider[AppCheckInternalComponentName],
+    url: String,
+    nodeAdmin: Boolean
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
+  inline def repoManagerDatabaseFromApp(
+    app: FirebaseApp,
+    authProvider: Provider[FirebaseAuthInternalName],
+    appCheckProvider: Provider[AppCheckInternalComponentName],
+    url: Unit,
+    nodeAdmin: Boolean
+  ): typings.firebaseDatabase.distSrcApiDatabaseMod.Database = (^.asInstanceOf[js.Dynamic].applyDynamic("_repoManagerDatabaseFromApp")(app.asInstanceOf[js.Any], authProvider.asInstanceOf[js.Any], appCheckProvider.asInstanceOf[js.Any], url.asInstanceOf[js.Any], nodeAdmin.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiDatabaseMod.Database]
   
-  inline def runTransaction(ref: DatabaseReference, transactionUpdate: js.Function1[/* currentData */ Any, Any]): js.Promise[typings.firebaseDatabase.apiTransactionMod.TransactionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTransaction")(ref.asInstanceOf[js.Any], transactionUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.firebaseDatabase.apiTransactionMod.TransactionResult]]
+  inline def runTransaction(ref: DatabaseReference, transactionUpdate: js.Function1[/* currentData */ Any, Any]): js.Promise[typings.firebaseDatabase.distSrcApiTransactionMod.TransactionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTransaction")(ref.asInstanceOf[js.Any], transactionUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.firebaseDatabase.distSrcApiTransactionMod.TransactionResult]]
   inline def runTransaction(
     ref: DatabaseReference,
     transactionUpdate: js.Function1[/* currentData */ Any, Any],
     options: TransactionOptions
-  ): js.Promise[typings.firebaseDatabase.apiTransactionMod.TransactionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTransaction")(ref.asInstanceOf[js.Any], transactionUpdate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.firebaseDatabase.apiTransactionMod.TransactionResult]]
+  ): js.Promise[typings.firebaseDatabase.distSrcApiTransactionMod.TransactionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTransaction")(ref.asInstanceOf[js.Any], transactionUpdate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.firebaseDatabase.distSrcApiTransactionMod.TransactionResult]]
   
   inline def serverTimestamp(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[js.Object]
   
@@ -439,24 +466,24 @@ object distSrcMod {
   inline def setWithPriority(ref: DatabaseReference, value: Any, priority: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setWithPriority")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def setWithPriority(ref: DatabaseReference, value: Any, priority: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setWithPriority")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def startAfter(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: String, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: Boolean): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: Boolean, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: Double, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAfter(value: Null, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def startAfter(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: String, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: Boolean): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: Boolean, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: Double, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAfter(value: Null, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
-  inline def startAt(): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")().asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: String, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: Boolean): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: Boolean, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: Double): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: Double, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: Null, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
-  inline def startAt(value: Unit, key: String): typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.apiReferenceImplMod.QueryConstraint]
+  inline def startAt(): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")().asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: String, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: Boolean): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: Boolean, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: Double): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: Double, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: Null, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
+  inline def startAt(value: Unit, key: String): typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseDatabase.distSrcApiReferenceImplMod.QueryConstraint]
   
   inline def update(ref: DatabaseReference, values: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
@@ -464,22 +491,23 @@ object distSrcMod {
   
   inline def validateWritablePath(fnName: String, path: Path): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_validateWritablePath")(fnName.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {
       
-      var database: typings.firebaseDatabase.databaseMod.Database
+      var database: typings.firebaseDatabase.distSrcApiDatabaseMod.Database
     }
     object NameServiceMapping {
       
-      inline def apply(database: typings.firebaseDatabase.databaseMod.Database): NameServiceMapping = {
+      inline def apply(database: typings.firebaseDatabase.distSrcApiDatabaseMod.Database): NameServiceMapping = {
         val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setDatabase(value: typings.firebaseDatabase.databaseMod.Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+        inline def setDatabase(value: typings.firebaseDatabase.distSrcApiDatabaseMod.Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       }
     }
   }

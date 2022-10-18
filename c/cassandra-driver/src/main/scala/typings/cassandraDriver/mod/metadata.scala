@@ -11,12 +11,12 @@ object metadata {
   object IndexKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.cassandraDriver.metadataMod.metadata.IndexKind & Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.cassandraDriver.libMetadataMod.metadata.IndexKind & Double] = js.native
     
-    /* 1 */ val composites: typings.cassandraDriver.metadataMod.metadata.IndexKind.composites & Double = js.native
+    /* 1 */ val composites: typings.cassandraDriver.libMetadataMod.metadata.IndexKind.composites & Double = js.native
     
-    /* 0 */ val custom: typings.cassandraDriver.metadataMod.metadata.IndexKind.custom & Double = js.native
+    /* 0 */ val custom: typings.cassandraDriver.libMetadataMod.metadata.IndexKind.custom & Double = js.native
     
-    /* 0 */ val keys: typings.cassandraDriver.metadataMod.metadata.IndexKind.keys & Double = js.native
+    /* 0 */ val keys: typings.cassandraDriver.libMetadataMod.metadata.IndexKind.keys & Double = js.native
   }
 }

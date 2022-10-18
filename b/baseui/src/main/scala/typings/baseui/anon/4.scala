@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `4` extends StObject {
   
-  val date: js.UndefOr[Any | Null | (js.Array[js.UndefOr[Any | Null]])] = js.undefined
+  var date: js.UndefOr[js.Date | Null | js.Array[js.Date]] = js.undefined
 }
 object `4` {
   
@@ -17,12 +17,12 @@ object `4` {
   
   extension [Self <: `4`](x: Self) {
     
-    inline def setDate(value: Any | (js.Array[js.UndefOr[Any | Null]])): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateNull: Self = StObject.set(x, "date", null)
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setDateVarargs(value: (js.UndefOr[Any | Null])*): Self = StObject.set(x, "date", js.Array(value*))
+    inline def setDateVarargs(value: js.Date*): Self = StObject.set(x, "date", js.Array(value*))
   }
 }

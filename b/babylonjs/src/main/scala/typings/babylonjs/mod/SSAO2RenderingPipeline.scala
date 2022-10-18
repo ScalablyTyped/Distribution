@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "SSAO2RenderingPipeline")
 @js.native
 open class SSAO2RenderingPipeline protected ()
-  extends typings.babylonjs.legacyMod.SSAO2RenderingPipeline {
+  extends typings.babylonjs.legacyLegacyMod.SSAO2RenderingPipeline {
   /**
     * @constructor
     * @param name The rendering pipeline name
@@ -22,13 +22,13 @@ open class SSAO2RenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Any,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera]
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera]
   ) = this()
   def this(
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Any,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     forceGeometryBuffer: Boolean
   ) = this()
   def this(
@@ -42,7 +42,7 @@ open class SSAO2RenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Any,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     forceGeometryBuffer: Boolean,
     textureType: Double
   ) = this()
@@ -50,7 +50,7 @@ open class SSAO2RenderingPipeline protected ()
     name: String,
     scene: typings.babylonjs.sceneMod.Scene,
     ratio: Any,
-    cameras: js.Array[typings.babylonjs.cameraMod.Camera],
+    cameras: js.Array[typings.babylonjs.camerasCameraMod.Camera],
     forceGeometryBuffer: Unit,
     textureType: Double
   ) = this()
@@ -93,5 +93,5 @@ object SSAO2RenderingPipeline {
     * @param rootUrl The URL of the serialized pipeline.
     * @returns An instantiated pipeline from the serialized object.
     */
-  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.ssao2RenderingPipelineMod.SSAO2RenderingPipeline]
+  inline def Parse(source: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.postProcessesRenderPipelinePipelinesSsao2RenderingPipelineMod.SSAO2RenderingPipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.postProcessesRenderPipelinePipelinesSsao2RenderingPipelineMod.SSAO2RenderingPipeline]
 }

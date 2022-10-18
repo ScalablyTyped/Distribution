@@ -1,9 +1,9 @@
 package typings.expressValidator.anon
 
-import typings.expressValidator.baseMod.ValidationError
-import typings.expressValidator.contextMod.ReadonlyContext
-import typings.expressValidator.validationResultMod.ErrorFormatter
-import typings.expressValidator.validationResultMod.Result
+import typings.expressValidator.srcBaseMod.ValidationError
+import typings.expressValidator.srcContextMod.ReadonlyContext
+import typings.expressValidator.srcValidationResultMod.ErrorFormatter
+import typings.expressValidator.srcValidationResultMod.Result
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

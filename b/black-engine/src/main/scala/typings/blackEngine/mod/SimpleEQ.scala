@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "SimpleEQ")
 @js.native
 open class SimpleEQ protected ()
-  extends typings.blackEngine.simpleEQMod.SimpleEQ {
+  extends typings.blackEngine.audioEffectsSimpleEQMod.SimpleEQ {
   def this(frequencies: Double*) = this()
 }

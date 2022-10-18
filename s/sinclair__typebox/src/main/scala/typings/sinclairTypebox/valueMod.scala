@@ -1,9 +1,9 @@
 package typings.sinclairTypebox
 
-import typings.sinclairTypebox.deltaMod.Edit
 import typings.sinclairTypebox.errorsErrorsMod.ValueError
 import typings.sinclairTypebox.mod.Static
 import typings.sinclairTypebox.mod.TSchema
+import typings.sinclairTypebox.valueDeltaMod.Edit
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -182,14 +182,14 @@ object valueMod {
   @JSImport("@sinclair/typebox/value", "ValuePointerRootDeleteError")
   @js.native
   open class ValuePointerRootDeleteError protected ()
-    extends typings.sinclairTypebox.pointerMod.ValuePointerRootDeleteError {
+    extends typings.sinclairTypebox.valuePointerMod.ValuePointerRootDeleteError {
     def this(value: Any, path: String) = this()
   }
   
   @JSImport("@sinclair/typebox/value", "ValuePointerRootSetError")
   @js.native
   open class ValuePointerRootSetError protected ()
-    extends typings.sinclairTypebox.pointerMod.ValuePointerRootSetError {
+    extends typings.sinclairTypebox.valuePointerMod.ValuePointerRootSetError {
     def this(value: Any, path: String, update: Any) = this()
   }
 }

@@ -8,7 +8,7 @@ object SemanticTokensRefreshRequest {
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRefreshRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRefreshRequest.method")
   @js.native
@@ -16,5 +16,5 @@ object SemanticTokensRefreshRequest {
   
   @JSImport("vscode-languageserver-protocol", "SemanticTokensRefreshRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType0[Unit, Unit, Unit, Unit] = js.native
 }

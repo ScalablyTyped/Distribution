@@ -8,11 +8,11 @@ trait ParametersQueryOutdated extends StObject {
   
   var parameters: QueryOutdated
   
-  var responses: `200Headers`
+  var responses: `200ContentHeaders`
 }
 object ParametersQueryOutdated {
   
-  inline def apply(parameters: QueryOutdated, responses: `200Headers`): ParametersQueryOutdated = {
+  inline def apply(parameters: QueryOutdated, responses: `200ContentHeaders`): ParametersQueryOutdated = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryOutdated]
   }
@@ -21,6 +21,6 @@ object ParametersQueryOutdated {
     
     inline def setParameters(value: QueryOutdated): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Headers`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentHeaders`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.multiformats.anon
 
-import typings.multiformats.hasherMod.Await
+import typings.multiformats.distTypesSrcHashesHasherMod.Await
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

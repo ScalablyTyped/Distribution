@@ -1,8 +1,8 @@
 package typings.iarnaToml
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Transform
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ object mod {
     /**
       * Given a readable stream, parse it as it feeds us data. Return a promise of the resulting object.
       */
-    def stream(readable: ReadableStream[Any]): js.Promise[JsonMap] = js.native
+    def stream(readable: ReadableStream): js.Promise[JsonMap] = js.native
   }
   
   @js.native

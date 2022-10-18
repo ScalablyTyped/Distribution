@@ -2,7 +2,7 @@ package typings.fundamentalReact.mod
 
 import typings.fundamentalReact.anon.PartialLocalizationEditor
 import typings.fundamentalReact.anon.WeakValidationMapLocaliza
-import typings.fundamentalReact.localizationEditorMod.LocalizationEditorProps
+import typings.fundamentalReact.libLocalizationEditorLocalizationEditorMod.LocalizationEditorProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject

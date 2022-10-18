@@ -1,24 +1,36 @@
 package typings.reactRelay
 
-import org.scalablytyped.runtime.TopLevel
 import typings.reactRelay.reactRelayStrings.`network-only`
 import typings.reactRelay.reactRelayStrings.`store-or-network`
+import typings.relayRuntime.libNetworkRelayObservableMod.Observer
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
 import typings.relayRuntime.mod.Environment
-import typings.relayRuntime.mod._FragmentRefs
-import typings.relayRuntime.relayObservableMod.Observer
-import typings.relayRuntime.relayRuntimeTypesMod.Disposable
-import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRelayTypesMod {
   
-  type FragmentOrRegularProp[T] = T | js.Array[_FragmentRefs[Any]] | _FragmentRefs[Any]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends relay-runtime.relay-runtime._RefType<infer U> ? relay-runtime.relay-runtime._FragmentRefs<U> : T extends std.ReadonlyArray<relay-runtime.relay-runtime._RefType<infer U>> ? std.ReadonlyArray<relay-runtime.relay-runtime._FragmentRefs<U>> : T
+    }}}
+    */
+  @js.native
+  trait FragmentOrRegularProp[T] extends StObject
   
-  type MappedFragmentProps[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: react-relay.react-relay/ReactRelayTypes.FragmentOrRegularProp<T[K]>}
-    */ typings.reactRelay.reactRelayStrings.MappedFragmentProps & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in keyof T ]: react-relay.react-relay/ReactRelayTypes.FragmentOrRegularProp<T[K]>}
+    }}}
+    */
+  @js.native
+  trait MappedFragmentProps[T] extends StObject
   
   type ObserverOrCallback = Observer[Unit] | (js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit])
   

@@ -2,13 +2,13 @@ package typings.roads
 
 import typings.node.bufferMod.global.Buffer
 import typings.roads.anon.CacheMaxAge
-import typings.roads.cookieMiddlewareMod.CookieContext
-import typings.roads.modifiedSinceMod.ModifiedSinceContext
-import typings.roads.responseMod.OutgoingHeaders
-import typings.roads.roadMod.Context
-import typings.roads.roadMod.Middleware
-import typings.roads.roadMod.default
-import typings.roads.storeValsMod.StoreValsContext
+import typings.roads.typesCoreResponseMod.OutgoingHeaders
+import typings.roads.typesCoreRoadMod.Context
+import typings.roads.typesCoreRoadMod.Middleware
+import typings.roads.typesCoreRoadMod.default
+import typings.roads.typesMiddlewareCookieMiddlewareMod.CookieContext
+import typings.roads.typesMiddlewareModifiedSinceMod.ModifiedSinceContext
+import typings.roads.typesMiddlewareStoreValsMod.StoreValsContext
 import typings.std.Document
 import typings.std.HTMLElement
 import typings.std.Window
@@ -35,7 +35,7 @@ object mod {
       * @param {Road} [road] - The road that will receive the BasicRouter middleware
       */
     open class BasicRouter ()
-      extends typings.roads.basicRouterMod.BasicRouter {
+      extends typings.roads.typesMiddlewareBasicRouterMod.BasicRouter {
       def this(road: default) = this()
     }
   }
@@ -86,7 +86,7 @@ object mod {
   @JSImport("roads", "Request")
   @js.native
   open class Request protected ()
-    extends typings.roads.requestMod.default {
+    extends typings.roads.typesClientRequestMod.default {
     /**
       * @todo: port should just be part of the host
       *
@@ -109,7 +109,7 @@ object mod {
   @JSImport("roads", "Response")
   @js.native
   open class Response protected ()
-    extends typings.roads.responseMod.default {
+    extends typings.roads.typesCoreResponseMod.default {
     /**
       * Creates a new Response object.
       *
@@ -139,7 +139,7 @@ object mod {
   @JSImport("roads", "RoadsPJAX")
   @js.native
   open class RoadsPJAX protected ()
-    extends typings.roads.pjaxMod.default {
+    extends typings.roads.typesClientPjaxMod.default {
     /**
       * Creates a new RoadsPjax instance. PJAX looks in the containerElement at each
       * anchor tag with the  `data-roads-pjax="link"` attribute and changes it from a

@@ -1,7 +1,6 @@
 package typings.bmapgl.BMapGL
 
 import typings.bmapgl.anon.Target
-import typings.bmapgl.anon.Type
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,11 +35,11 @@ trait InfoWindow
   
   def onclickclose(event: Target): Unit = js.native
   
-  def onclose(event: Type): Unit = js.native
+  def onclose(event: typings.bmapgl.anon.Point): Unit = js.native
   
   def onmaximize(event: Target): Unit = js.native
   
-  def onopen(event: Type): Unit = js.native
+  def onopen(event: typings.bmapgl.anon.Point): Unit = js.native
   
   def onrestore(event: Target): Unit = js.native
   

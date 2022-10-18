@@ -5,6 +5,7 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativePaper.reactNativePaperStrings.android
 import typings.reactNativePaper.reactNativePaperStrings.checked
+import typings.reactNativePaper.reactNativePaperStrings.indeterminate
 import typings.reactNativePaper.reactNativePaperStrings.ios
 import typings.reactNativePaper.reactNativePaperStrings.leading
 import typings.reactNativePaper.reactNativePaperStrings.trailing
@@ -13,10 +14,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<react-native-paper.react-native-paper/lib/typescript/components/RadioButton/RadioButtonItem.Props, 'label' | 'style' | 'color' | 'onPress' | 'testID' | 'accessibilityLabel' | 'position' | 'value' | 'mode' | 'labelStyle' | 'disabled' | 'status' | 'uncheckedColor'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
+/* Inlined std.Pick<react-native-paper.react-native-paper/lib/typescript/components/Checkbox/CheckboxItem.Props, 'label' | 'style' | 'color' | 'onPress' | 'testID' | 'position' | 'mode' | 'labelStyle' | 'disabled' | 'status' | 'uncheckedColor'> & {  theme :@callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<react-native-paper.react-native-paper/lib/typescript/types.<global>.ReactNativePaper.Theme> | undefined} */
 trait PickPropslabelstylecoloroColor extends StObject {
-  
-  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
@@ -32,7 +31,7 @@ trait PickPropslabelstylecoloroColor extends StObject {
   
   var position: js.UndefOr[leading | trailing] = js.undefined
   
-  var status: js.UndefOr[checked | unchecked] = js.undefined
+  var status: checked | unchecked | indeterminate
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -41,21 +40,15 @@ trait PickPropslabelstylecoloroColor extends StObject {
   var theme: js.UndefOr[DeepPartialThemeDark] = js.undefined
   
   var uncheckedColor: js.UndefOr[String] = js.undefined
-  
-  var value: String
 }
 object PickPropslabelstylecoloroColor {
   
-  inline def apply(label: String, value: String): PickPropslabelstylecoloroColor = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(label: String, status: checked | unchecked | indeterminate): PickPropslabelstylecoloroColor = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickPropslabelstylecoloroColor]
   }
   
   extension [Self <: PickPropslabelstylecoloroColor](x: Self) {
-    
-    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
@@ -85,9 +78,7 @@ object PickPropslabelstylecoloroColor {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    inline def setStatus(value: checked | unchecked): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-    
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatus(value: checked | unchecked | indeterminate): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -106,7 +97,5 @@ object PickPropslabelstylecoloroColor {
     inline def setUncheckedColor(value: String): Self = StObject.set(x, "uncheckedColor", value.asInstanceOf[js.Any])
     
     inline def setUncheckedColorUndefined: Self = StObject.set(x, "uncheckedColor", js.undefined)
-    
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

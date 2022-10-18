@@ -10,29 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Expand[TRowType] extends StObject {
   
-  var expand: js.Array[String]
+  var expand: js.UndefOr[js.Array[String]] = js.undefined
   
-  var expandable: js.Array[String]
+  var expandable: js.UndefOr[js.Array[String]] = js.undefined
   
-  def onExpand(expandedKeys: js.Array[String]): Unit
+  var onExpand: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[String], Unit]] = js.undefined
   
-  def onSelect(select: js.Array[String | Double], datum: TRowType): Unit
+  var onSelect: js.UndefOr[js.Function2[/* select */ js.Array[String | Double], /* datum */ TRowType, Unit]] = js.undefined
   
-  var property: String
+  var property: js.UndefOr[String] = js.undefined
   
-  var select: StringDictionary[all | some | none]
+  var select: js.UndefOr[StringDictionary[all | some | none]] = js.undefined
 }
 object Expand {
   
-  inline def apply[TRowType](
-    expand: js.Array[String],
-    expandable: js.Array[String],
-    onExpand: js.Array[String] => Unit,
-    onSelect: (js.Array[String | Double], TRowType) => Unit,
-    property: String,
-    select: StringDictionary[all | some | none]
-  ): Expand[TRowType] = {
-    val __obj = js.Dynamic.literal(expand = expand.asInstanceOf[js.Any], expandable = expandable.asInstanceOf[js.Any], onExpand = js.Any.fromFunction1(onExpand), onSelect = js.Any.fromFunction2(onSelect), property = property.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
+  inline def apply[TRowType](): Expand[TRowType] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expand[TRowType]]
   }
   
@@ -40,18 +33,30 @@ object Expand {
     
     inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    
     inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value*))
     
     inline def setExpandable(value: js.Array[String]): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
+    inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+    
     inline def setExpandableVarargs(value: String*): Self = StObject.set(x, "expandable", js.Array(value*))
     
-    inline def setOnExpand(value: js.Array[String] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    inline def setOnExpand(value: /* expandedKeys */ js.Array[String] => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
-    inline def setOnSelect(value: (js.Array[String | Double], TRowType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+    
+    inline def setOnSelect(value: (/* select */ js.Array[String | Double], /* datum */ TRowType) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    
     inline def setSelect(value: StringDictionary[all | some | none]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

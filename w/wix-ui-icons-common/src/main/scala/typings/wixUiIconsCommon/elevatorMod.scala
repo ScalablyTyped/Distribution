@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsElevatorMod.ElevatorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elevatorMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Elevator", JSImport.Default)
+  @JSImport("wix-ui-icons-common/Elevator", JSImport.Default)
   @js.native
   val default: FC[ElevatorProps] = js.native
-  
-  trait ElevatorProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object ElevatorProps {
-    
-    inline def apply(): ElevatorProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ElevatorProps]
-    }
-    
-    extension [Self <: ElevatorProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[ElevatorProps]
   

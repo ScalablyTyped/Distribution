@@ -1,8 +1,8 @@
 package typings.octokitPluginRestEndpointMethods
 
 import typings.octokitCore.mod.Octokit
-import typings.octokitPluginRestEndpointMethods.methodTypesMod.RestEndpointMethods
-import typings.octokitPluginRestEndpointMethods.typesMod.Api
+import typings.octokitPluginRestEndpointMethods.distTypesGeneratedMethodTypesMod.RestEndpointMethods
+import typings.octokitPluginRestEndpointMethods.distTypesTypesMod.Api
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

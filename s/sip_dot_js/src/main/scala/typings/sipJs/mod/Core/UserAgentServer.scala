@@ -1,7 +1,7 @@
 package typings.sipJs.mod.Core
 
-import typings.sipJs.incomingRequestMod.IncomingRequestDelegate
-import typings.sipJs.userAgentServerMod.ServerTransactionConstructor
+import typings.sipJs.libCoreMessagesIncomingRequestMod.IncomingRequestDelegate
+import typings.sipJs.libCoreUserAgentsUserAgentServerMod.ServerTransactionConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("sip.js", "Core.UserAgentServer")
 @js.native
 open class UserAgentServer protected ()
-  extends typings.sipJs.coreMod.UserAgentServer {
+  extends typings.sipJs.libCoreMod.UserAgentServer {
   def this(
     transactionConstructor: ServerTransactionConstructor,
-    core: typings.sipJs.userAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.messagesMod.IncomingRequestMessage
+    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage
   ) = this()
   def this(
     transactionConstructor: ServerTransactionConstructor,
-    core: typings.sipJs.userAgentCoreMod.UserAgentCore,
-    message: typings.sipJs.messagesMod.IncomingRequestMessage,
+    core: typings.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    message: typings.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     delegate: IncomingRequestDelegate
   ) = this()
 }

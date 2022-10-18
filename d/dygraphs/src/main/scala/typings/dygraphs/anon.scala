@@ -406,26 +406,38 @@ object anon {
     def setVisibility(num: js.Object, value: Boolean): Unit = js.native
     def setVisibility(num: Double, value: Boolean): Unit = js.native
     
-    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[Null | Double, Null | Double] = js.native
-    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[Null | Double, Null | Double] = js.native
+    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
+    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
     
-    def toDataXCoord[T /* <: Double | Null */](x: T): Null | Double = js.native
+    def toDataXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toDataYCoord[T /* <: Double | Null */](y: T): Null | Double = js.native
-    def toDataYCoord[T /* <: Double | Null */](y: T, axis: Double): Null | Double = js.native
+    def toDataYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
+    def toDataYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[Null | Double, Null | Double] = js.native
-    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[Null | Double, Null | Double] = js.native
+    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
+    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
     
-    def toDomXCoord[T /* <: Double | Null */](x: T): Null | Double = js.native
+    def toDomXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toDomYCoord[T /* <: Double | Null */](y: T): Null | Double = js.native
-    def toDomYCoord[T /* <: Double | Null */](y: T, axis: Double): Null | Double = js.native
+    def toDomYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
+    def toDomYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toPercentXCoord[T /* <: Double | Null */](x: T): Double | Null = js.native
+    def toPercentXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
     
-    def toPercentYCoord[T /* <: Double | Null */](y: T): Double | Null = js.native
-    def toPercentYCoord[T /* <: Double | Null */](y: T, axis: Double): Double | Null = js.native
+    def toPercentYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
+    def toPercentYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
     
     def updateOptions(inputAttrs: Options): Unit = js.native
     def updateOptions(inputAttrs: Options, blockRedraw: Boolean): Unit = js.native
@@ -518,26 +530,38 @@ object anon {
     def setVisibility(num: js.Object, value: Boolean): Unit = js.native
     def setVisibility(num: Double, value: Boolean): Unit = js.native
     
-    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[Null | Double, Null | Double] = js.native
-    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[Null | Double, Null | Double] = js.native
+    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
+    def toDataCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
     
-    def toDataXCoord[T /* <: Double | Null */](x: T): Null | Double = js.native
+    def toDataXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toDataYCoord[T /* <: Double | Null */](y: T): Null | Double = js.native
-    def toDataYCoord[T /* <: Double | Null */](y: T, axis: Double): Null | Double = js.native
+    def toDataYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
+    def toDataYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[Null | Double, Null | Double] = js.native
-    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[Null | Double, Null | Double] = js.native
+    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
+    def toDomCoords[X /* <: Double | Null */, Y /* <: Double | Null */](x: X, y: Y, axis: Double): js.Tuple2[
+        /* import warning: importer.ImportType#apply Failed type conversion: X extends number ? number : null */ js.Any, 
+        /* import warning: importer.ImportType#apply Failed type conversion: Y extends number ? number : null */ js.Any
+      ] = js.native
     
-    def toDomXCoord[T /* <: Double | Null */](x: T): Null | Double = js.native
+    def toDomXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toDomYCoord[T /* <: Double | Null */](y: T): Null | Double = js.native
-    def toDomYCoord[T /* <: Double | Null */](y: T, axis: Double): Null | Double = js.native
+    def toDomYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
+    def toDomYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends number ? number : null */ js.Any = js.native
     
-    def toPercentXCoord[T /* <: Double | Null */](x: T): Double | Null = js.native
+    def toPercentXCoord[T /* <: Double | Null */](x: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
     
-    def toPercentYCoord[T /* <: Double | Null */](y: T): Double | Null = js.native
-    def toPercentYCoord[T /* <: Double | Null */](y: T, axis: Double): Double | Null = js.native
+    def toPercentYCoord[T /* <: Double | Null */](y: T): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
+    def toPercentYCoord[T /* <: Double | Null */](y: T, axis: Double): /* import warning: importer.ImportType#apply Failed type conversion: T extends null ? null : number */ js.Any = js.native
     
     def updateOptions(inputAttrs: this.type): Unit = js.native
     def updateOptions(inputAttrs: this.type, blockRedraw: Boolean): Unit = js.native

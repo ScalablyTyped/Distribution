@@ -40,5 +40,7 @@ object LineUtil {
   
   inline def pointToSegmentDistance(p: typings.leaflet.mod.Point_, p1: typings.leaflet.mod.Point_, p2: typings.leaflet.mod.Point_): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToSegmentDistance")(p.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  inline def polylineCenter(latlngs: js.Array[LatLngExpression], crs: typings.leaflet.mod.CRS): typings.leaflet.mod.LatLng_ = (^.asInstanceOf[js.Dynamic].applyDynamic("polylineCenter")(latlngs.asInstanceOf[js.Any], crs.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.LatLng_]
+  
   inline def simplify(points: js.Array[typings.leaflet.mod.Point_], tolerance: Double): js.Array[typings.leaflet.mod.Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(points.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.leaflet.mod.Point_]]
 }

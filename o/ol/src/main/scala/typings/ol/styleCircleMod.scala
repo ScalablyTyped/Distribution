@@ -15,7 +15,7 @@ object styleCircleMod {
   
   @js.native
   trait CircleStyle
-    extends typings.ol.regularShapeMod.default {
+    extends typings.ol.styleRegularShapeMod.default {
     
     /**
       * Set the circle radius.
@@ -27,7 +27,7 @@ object styleCircleMod {
     
     var displacement: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
+    var fill: js.UndefOr[typings.ol.styleFillMod.default] = js.undefined
     
     var radius: Double
     
@@ -37,7 +37,7 @@ object styleCircleMod {
     
     var scale: js.UndefOr[Double | Size] = js.undefined
     
-    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
+    var stroke: js.UndefOr[typings.ol.styleStrokeMod.default] = js.undefined
   }
   object Options {
     
@@ -54,7 +54,7 @@ object styleCircleMod {
       
       inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value*))
       
-      inline def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: typings.ol.styleFillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
@@ -72,7 +72,7 @@ object styleCircleMod {
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      inline def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: typings.ol.styleStrokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
       inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     }

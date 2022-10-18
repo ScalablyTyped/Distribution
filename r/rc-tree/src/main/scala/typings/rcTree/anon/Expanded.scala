@@ -1,7 +1,7 @@
 package typings.rcTree.anon
 
-import typings.rcTree.interfaceMod.BasicDataNode
-import typings.rcTree.interfaceMod.EventDataNode
+import typings.rcTree.esInterfaceMod.BasicDataNode
+import typings.rcTree.esInterfaceMod.EventDataNode
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

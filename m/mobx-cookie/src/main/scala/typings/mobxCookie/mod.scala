@@ -9,7 +9,7 @@ object mod {
   @JSImport("mobx-cookie", JSImport.Default)
   @js.native
   open class default protected ()
-    extends typings.mobxCookie.mobxCookieMod.default {
+    extends typings.mobxCookie.distTypesMobxCookieMod.default {
     def this(name: String) = this()
   }
 }

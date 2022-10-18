@@ -1,7 +1,7 @@
 package typings.tern.anon
 
-import typings.tern.ternMod.PropertiesQuery
-import typings.tern.ternMod.PropertiesQueryResult
+import typings.tern.libTernMod.PropertiesQuery
+import typings.tern.libTernMod.PropertiesQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "Rectangle")
 @js.native
 open class Rectangle protected ()
-  extends typings.antvGLite.shapesMod.Rectangle {
+  extends typings.antvGLite.distShapesMod.Rectangle {
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }

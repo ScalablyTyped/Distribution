@@ -1,7 +1,7 @@
 package typings.babylonjs.miscIndexMod
 
-import typings.babylonjs.baseTextureMod.BaseTexture
-import typings.babylonjs.mathSizeMod.ISize
+import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
+import typings.babylonjs.mathsMathDotsizeMod.ISize
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

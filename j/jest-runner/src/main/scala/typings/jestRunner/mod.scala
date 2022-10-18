@@ -22,9 +22,9 @@ object mod {
   @js.native
   open class default () extends TestRunner
   
-  @JSImport("jest-runner", "CallbackTestRunner")
+  /* note: abstract class */ @JSImport("jest-runner", "CallbackTestRunner")
   @js.native
-  abstract class CallbackTestRunner ()
+  open class CallbackTestRunner ()
     extends StObject
        with BaseTestRunner
        with CallbackTestRunnerInterface
@@ -53,9 +53,9 @@ object mod {
     override val supportsEventEmitters: js.UndefOr[Boolean] & Boolean = js.native
   }
   
-  @JSImport("jest-runner", "EmittingTestRunner")
+  /* note: abstract class */ @JSImport("jest-runner", "EmittingTestRunner")
   @js.native
-  abstract class EmittingTestRunner ()
+  open class EmittingTestRunner ()
     extends StObject
        with BaseTestRunner
        with EmittingTestRunnerInterface

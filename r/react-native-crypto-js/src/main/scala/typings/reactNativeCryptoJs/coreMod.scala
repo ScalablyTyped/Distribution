@@ -438,9 +438,9 @@ object coreMod {
       * This key derivation function is meant to conform with EVP_BytesToKey.
       * www.openssl.org/docs/crypto/EVP_BytesToKey.html
       */
-    @JSImport("react-native-crypto-js/core", "algo.EvpKDF")
+    /* note: abstract class */ @JSImport("react-native-crypto-js/core", "algo.EvpKDF")
     @js.native
-    abstract class EvpKDF ()
+    open class EvpKDF ()
       extends typings.reactNativeCryptoJs.mod.algo.EvpKDF
     object EvpKDF {
       
@@ -467,9 +467,9 @@ object coreMod {
     /**
       * HMAC algorithm.
       */
-    @JSImport("react-native-crypto-js/core", "algo.HMAC")
+    /* note: abstract class */ @JSImport("react-native-crypto-js/core", "algo.HMAC")
     @js.native
-    abstract class HMAC ()
+    open class HMAC ()
       extends typings.reactNativeCryptoJs.mod.algo.HMAC
     object HMAC {
       
@@ -502,9 +502,9 @@ object coreMod {
     /**
       * Password-Based Key Derivation Function 2 algorithm.
       */
-    @JSImport("react-native-crypto-js/core", "algo.PBKDF2")
+    /* note: abstract class */ @JSImport("react-native-crypto-js/core", "algo.PBKDF2")
     @js.native
-    abstract class PBKDF2 ()
+    open class PBKDF2 ()
       extends typings.reactNativeCryptoJs.mod.algo.PBKDF2
     object PBKDF2 {
       

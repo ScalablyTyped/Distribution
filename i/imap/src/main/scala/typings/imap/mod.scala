@@ -8,9 +8,9 @@ import typings.imap.imapStrings.body
 import typings.imap.imapStrings.end
 import typings.imap.imapStrings.error
 import typings.imap.imapStrings.message
+import typings.node.NodeJS.ReadableStream
 import typings.node.eventsMod.EventEmitter
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -547,7 +547,7 @@ object mod {
     @JSName("on")
     def on_body(
       event: body,
-      listener: js.Function2[/* stream */ ReadableStream[Any], /* info */ ImapMessageBodyInfo, Unit]
+      listener: js.Function2[/* stream */ ReadableStream, /* info */ ImapMessageBodyInfo, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native

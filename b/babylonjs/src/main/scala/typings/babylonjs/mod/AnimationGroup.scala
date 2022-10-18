@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "AnimationGroup")
 @js.native
 open class AnimationGroup protected ()
-  extends typings.babylonjs.legacyMod.AnimationGroup {
+  extends typings.babylonjs.legacyLegacyMod.AnimationGroup {
   /**
     * Instantiates a new Animation Group.
     * This helps managing several animations at once.
@@ -40,98 +40,101 @@ object AnimationGroup {
     * @param clonedName defines the name of the resulting cloned AnimationGroup if cloneOriginal is true
     * @returns a new AnimationGroup if cloneOriginal is true or the original AnimationGroup if cloneOriginal is false
     */
-  inline def MakeAnimationAdditive(sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup): typings.babylonjs.animationGroupMod.AnimationGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
-  inline def MakeAnimationAdditive(sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup, referenceFrame: Double): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  inline def MakeAnimationAdditive(sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
+    referenceFrame: Double
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
+  inline def MakeAnimationAdditive(
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: String,
     cloneOriginal: Boolean
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: String,
     cloneOriginal: Boolean,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: String,
     cloneOriginal: Unit,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: Unit,
     cloneOriginal: Boolean
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: Unit,
     cloneOriginal: Boolean,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Double,
     range: Unit,
     cloneOriginal: Unit,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: String,
     cloneOriginal: Boolean
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: String,
     cloneOriginal: Boolean,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: String,
     cloneOriginal: Unit,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: Unit,
     cloneOriginal: Boolean
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: Unit,
     cloneOriginal: Boolean,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   inline def MakeAnimationAdditive(
-    sourceAnimationGroup: typings.babylonjs.animationGroupMod.AnimationGroup,
+    sourceAnimationGroup: typings.babylonjs.animationsAnimationGroupMod.AnimationGroup,
     referenceFrame: Unit,
     range: Unit,
     cloneOriginal: Unit,
     clonedName: String
-  ): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  ): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeAnimationAdditive")(sourceAnimationGroup.asInstanceOf[js.Any], referenceFrame.asInstanceOf[js.Any], range.asInstanceOf[js.Any], cloneOriginal.asInstanceOf[js.Any], clonedName.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
   
   /**
     * Returns a new AnimationGroup object parsed from the source provided.
@@ -139,5 +142,5 @@ object AnimationGroup {
     * @param scene defines the scene that will receive the animationGroup
     * @returns a new AnimationGroup
     */
-  inline def Parse(parsedAnimationGroup: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.animationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimationGroup.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationGroupMod.AnimationGroup]
+  inline def Parse(parsedAnimationGroup: Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.animationsAnimationGroupMod.AnimationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedAnimationGroup.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.animationsAnimationGroupMod.AnimationGroup]
 }

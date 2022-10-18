@@ -2,38 +2,16 @@ package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
-import typings.react.mod.SVGAttributes
-import typings.std.SVGElement
+import typings.wixUiIconsCommon.distSrcGeneralDistComponentsFoodOutOfStockMod.FoodOutOfStockProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foodOutOfStockMod extends Shortcut {
   
-  @JSImport("wix-ui-icons-common/dist/src/general/dist/components/FoodOutOfStock", JSImport.Default)
+  @JSImport("wix-ui-icons-common/FoodOutOfStock", JSImport.Default)
   @js.native
   val default: FC[FoodOutOfStockProps] = js.native
-  
-  trait FoodOutOfStockProps
-    extends StObject
-       with SVGAttributes[SVGElement] {
-    
-    var size: js.UndefOr[String | Double] = js.undefined
-  }
-  object FoodOutOfStockProps {
-    
-    inline def apply(): FoodOutOfStockProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FoodOutOfStockProps]
-    }
-    
-    extension [Self <: FoodOutOfStockProps](x: Self) {
-      
-      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-    }
-  }
   
   type _To = FC[FoodOutOfStockProps]
   

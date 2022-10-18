@@ -139,10 +139,6 @@ object screepsStrings {
   inline def OH: OH = "OH".asInstanceOf[OH]
   
   @js.native
-  sealed trait Store extends StObject
-  inline def Store: Store = "Store".asInstanceOf[Store]
-  
-  @js.native
   sealed trait U
     extends StObject
        with ResourceConstantSansEnergy

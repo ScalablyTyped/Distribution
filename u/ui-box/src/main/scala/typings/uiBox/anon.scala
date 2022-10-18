@@ -139,7 +139,7 @@ import typings.csstype.mod.Property.WordBreak
 import typings.csstype.mod.Property.WordWrap
 import typings.csstype.mod.Property.ZIndex
 import typings.react.mod.ElementType
-import typings.uiBox.typesEnhancersMod.BoxPropValue
+import typings.uiBox.distSrcTypesEnhancersMod.BoxPropValue
 import typings.uiBox.uiBoxBooleans.`false`
 import typings.uiBox.uiBoxInts.`0`
 import org.scalablytyped.runtime.StObject

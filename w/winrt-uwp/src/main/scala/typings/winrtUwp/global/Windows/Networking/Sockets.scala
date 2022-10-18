@@ -64,9 +64,9 @@ object Sockets {
   }
   
   /** Provides socket control data on a DatagramSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.DatagramSocketControl")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.DatagramSocketControl")
   @js.native
-  abstract class DatagramSocketControl ()
+  open class DatagramSocketControl ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.DatagramSocketControl {
     
@@ -92,9 +92,9 @@ object Sockets {
   }
   
   /** Provides socket information on a DatagramSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.DatagramSocketInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.DatagramSocketInformation")
   @js.native
-  abstract class DatagramSocketInformation ()
+  open class DatagramSocketInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.DatagramSocketInformation {
     
@@ -116,9 +116,9 @@ object Sockets {
   }
   
   /** Provides data for a MessageReceived event on a DatagramSocket . */
-  @JSGlobal("Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs")
   @js.native
-  abstract class DatagramSocketMessageReceivedEventArgs ()
+  open class DatagramSocketMessageReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs {
     
@@ -158,9 +158,9 @@ object Sockets {
        with typings.winrtUwp.Windows.Networking.Sockets.MessageWebSocket
   
   /** Provides socket control data on a MessageWebSocket . */
-  @JSGlobal("Windows.Networking.Sockets.MessageWebSocketControl")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.MessageWebSocketControl")
   @js.native
-  abstract class MessageWebSocketControl ()
+  open class MessageWebSocketControl ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.MessageWebSocketControl {
     
@@ -190,9 +190,9 @@ object Sockets {
   }
   
   /** Provides socket information on a MessageWebSocket . */
-  @JSGlobal("Windows.Networking.Sockets.MessageWebSocketInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.MessageWebSocketInformation")
   @js.native
-  abstract class MessageWebSocketInformation ()
+  open class MessageWebSocketInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.MessageWebSocketInformation {
     
@@ -210,9 +210,9 @@ object Sockets {
   }
   
   /** Provides data for a message received event on a MessageWebSocket . */
-  @JSGlobal("Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs")
   @js.native
-  abstract class MessageWebSocketMessageReceivedEventArgs ()
+  open class MessageWebSocketMessageReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.MessageWebSocketMessageReceivedEventArgs {
     
@@ -268,9 +268,9 @@ object Sockets {
   }
   
   /** Provides information on the transferred socket from the Socket Broker. */
-  @JSGlobal("Windows.Networking.Sockets.SocketActivityInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.SocketActivityInformation")
   @js.native
-  abstract class SocketActivityInformation ()
+  open class SocketActivityInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.SocketActivityInformation {
     
@@ -334,9 +334,9 @@ object Sockets {
   }
   
   /** A object instantiated by the background broker infrastructure and used by an app to retrieve details when a SocketActivityTrigger occurs. */
-  @JSGlobal("Windows.Networking.Sockets.SocketActivityTriggerDetails")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.SocketActivityTriggerDetails")
   @js.native
-  abstract class SocketActivityTriggerDetails ()
+  open class SocketActivityTriggerDetails ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.SocketActivityTriggerDetails {
     
@@ -369,9 +369,9 @@ object Sockets {
   }
   
   /** Provides socket error status for operations on a DatagramSocket , StreamSocket , or StreamSocketListener . */
-  @JSGlobal("Windows.Networking.Sockets.SocketError")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.SocketError")
   @js.native
-  abstract class SocketError ()
+  open class SocketError ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.SocketError
   object SocketError {
@@ -537,9 +537,9 @@ object Sockets {
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocket
   
   /** Provides socket control data on a StreamSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamSocketControl")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamSocketControl")
   @js.native
-  abstract class StreamSocketControl ()
+  open class StreamSocketControl ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketControl {
     
@@ -577,9 +577,9 @@ object Sockets {
   }
   
   /** Provides socket information on a StreamSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamSocketInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamSocketInformation")
   @js.native
-  abstract class StreamSocketInformation ()
+  open class StreamSocketInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketInformation {
     
@@ -649,9 +649,9 @@ object Sockets {
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListener
   
   /** Provides data for a ConnectionReceived event on a StreamSocketListener object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerConnectionReceivedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerConnectionReceivedEventArgs")
   @js.native
-  abstract class StreamSocketListenerConnectionReceivedEventArgs ()
+  open class StreamSocketListenerConnectionReceivedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListenerConnectionReceivedEventArgs {
     
@@ -661,9 +661,9 @@ object Sockets {
   }
   
   /** Provides socket control data on a StreamSocketListener object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerControl")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerControl")
   @js.native
-  abstract class StreamSocketListenerControl ()
+  open class StreamSocketListenerControl ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListenerControl {
     
@@ -689,9 +689,9 @@ object Sockets {
   }
   
   /** Provides socket information on a StreamSocketListener object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamSocketListenerInformation")
   @js.native
-  abstract class StreamSocketListenerInformation ()
+  open class StreamSocketListenerInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListenerInformation {
     
@@ -709,9 +709,9 @@ object Sockets {
        with typings.winrtUwp.Windows.Networking.Sockets.StreamWebSocket
   
   /** Provides socket control data on a StreamWebSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamWebSocketControl")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamWebSocketControl")
   @js.native
-  abstract class StreamWebSocketControl ()
+  open class StreamWebSocketControl ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamWebSocketControl {
     
@@ -737,9 +737,9 @@ object Sockets {
   }
   
   /** Provides socket information on a StreamWebSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.StreamWebSocketInformation")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.StreamWebSocketInformation")
   @js.native
-  abstract class StreamWebSocketInformation ()
+  open class StreamWebSocketInformation ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.StreamWebSocketInformation {
     
@@ -757,9 +757,9 @@ object Sockets {
   }
   
   /** Provides data for a closed event on a MessageWebSocket , StreamWebSocket , or IWebSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.WebSocketClosedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.WebSocketClosedEventArgs")
   @js.native
-  abstract class WebSocketClosedEventArgs ()
+  open class WebSocketClosedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.WebSocketClosedEventArgs {
     
@@ -773,9 +773,9 @@ object Sockets {
   }
   
   /** Provides socket error status on a MessageWebSocket or StreamWebSocket object. */
-  @JSGlobal("Windows.Networking.Sockets.WebSocketError")
+  /* note: abstract class */ @JSGlobal("Windows.Networking.Sockets.WebSocketError")
   @js.native
-  abstract class WebSocketError ()
+  open class WebSocketError ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.Sockets.WebSocketError
   object WebSocketError {

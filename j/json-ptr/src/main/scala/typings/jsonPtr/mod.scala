@@ -1,16 +1,16 @@
 package typings.jsonPtr
 
-import typings.jsonPtr.pointerMod.Visitor
-import typings.jsonPtr.typesMod.Decoder
-import typings.jsonPtr.typesMod.JsonStringPointer
-import typings.jsonPtr.typesMod.JsonStringPointerListItem
-import typings.jsonPtr.typesMod.PathSegment
-import typings.jsonPtr.typesMod.PathSegments
-import typings.jsonPtr.typesMod.Pointer
-import typings.jsonPtr.typesMod.RelativeJsonPointer
-import typings.jsonPtr.typesMod.UriFragmentIdentifierPointer
-import typings.jsonPtr.typesMod.UriFragmentIdentifierPointerListItem
-import typings.jsonPtr.utilMod.Dereference
+import typings.jsonPtr.distTypesPointerMod.Visitor
+import typings.jsonPtr.distTypesTypesMod.Decoder
+import typings.jsonPtr.distTypesTypesMod.JsonStringPointer
+import typings.jsonPtr.distTypesTypesMod.JsonStringPointerListItem
+import typings.jsonPtr.distTypesTypesMod.PathSegment
+import typings.jsonPtr.distTypesTypesMod.PathSegments
+import typings.jsonPtr.distTypesTypesMod.Pointer
+import typings.jsonPtr.distTypesTypesMod.RelativeJsonPointer
+import typings.jsonPtr.distTypesTypesMod.UriFragmentIdentifierPointer
+import typings.jsonPtr.distTypesTypesMod.UriFragmentIdentifierPointerListItem
+import typings.jsonPtr.distTypesUtilMod.Dereference
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -26,7 +26,7 @@ object mod {
   @JSImport("json-ptr", "JsonPointer")
   @js.native
   open class JsonPointer protected ()
-    extends typings.jsonPtr.pointerMod.JsonPointer {
+    extends typings.jsonPtr.distTypesPointerMod.JsonPointer {
     def this(ptr: PathSegments) = this()
     /**
       * Creates a new instance.
@@ -41,7 +41,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(pointer: PathSegments): typings.jsonPtr.pointerMod.JsonPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pointer.asInstanceOf[js.Any]).asInstanceOf[typings.jsonPtr.pointerMod.JsonPointer]
+    inline def create(pointer: PathSegments): typings.jsonPtr.distTypesPointerMod.JsonPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pointer.asInstanceOf[js.Any]).asInstanceOf[typings.jsonPtr.distTypesPointerMod.JsonPointer]
     /**
       * Factory function that creates a JsonPointer instance.
       *
@@ -54,7 +54,7 @@ object mod {
       * ```
       * @param pointer the pointer or path.
       */
-    inline def create(pointer: Pointer): typings.jsonPtr.pointerMod.JsonPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pointer.asInstanceOf[js.Any]).asInstanceOf[typings.jsonPtr.pointerMod.JsonPointer]
+    inline def create(pointer: Pointer): typings.jsonPtr.distTypesPointerMod.JsonPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pointer.asInstanceOf[js.Any]).asInstanceOf[typings.jsonPtr.distTypesPointerMod.JsonPointer]
     
     /**
       * Decodes the specified pointer into path segments.
@@ -70,7 +70,7 @@ object mod {
     inline def flatten(target: Any): Record[Pointer, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(target.asInstanceOf[js.Any]).asInstanceOf[Record[Pointer, Any]]
     inline def flatten(target: Any, fragmentId: Boolean): Record[Pointer, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(target.asInstanceOf[js.Any], fragmentId.asInstanceOf[js.Any])).asInstanceOf[Record[Pointer, Any]]
     
-    inline def get(target: Any, pointer: typings.jsonPtr.pointerMod.JsonPointer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def get(target: Any, pointer: typings.jsonPtr.distTypesPointerMod.JsonPointer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def get(target: Any, pointer: PathSegments): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
       * Gets the `target` object's value at the `pointer`'s location.
@@ -93,7 +93,7 @@ object mod {
       */
     inline def get(target: Any, pointer: Pointer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def has(target: Any, pointer: typings.jsonPtr.pointerMod.JsonPointer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def has(target: Any, pointer: typings.jsonPtr.distTypesPointerMod.JsonPointer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def has(target: Any, pointer: PathSegments): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Determines if the specified `target`'s object graph has a value at the `pointer`'s location.
@@ -136,8 +136,8 @@ object mod {
     inline def map(target: Any): Map[Pointer, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any]).asInstanceOf[Map[Pointer, Any]]
     inline def map(target: Any, fragmentId: Boolean): Map[Pointer, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(target.asInstanceOf[js.Any], fragmentId.asInstanceOf[js.Any])).asInstanceOf[Map[Pointer, Any]]
     
-    inline def set(target: Any, pointer: typings.jsonPtr.pointerMod.JsonPointer, `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
-    inline def set(target: Any, pointer: typings.jsonPtr.pointerMod.JsonPointer, `val`: Any, force: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def set(target: Any, pointer: typings.jsonPtr.distTypesPointerMod.JsonPointer, `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def set(target: Any, pointer: typings.jsonPtr.distTypesPointerMod.JsonPointer, `val`: Any, force: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def set(target: Any, pointer: PathSegments, `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def set(target: Any, pointer: PathSegments, `val`: Any, force: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
@@ -179,7 +179,7 @@ object mod {
     inline def set(target: Any, pointer: Pointer, `val`: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def set(target: Any, pointer: Pointer, `val`: Any, force: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def unset(target: Any, pointer: typings.jsonPtr.pointerMod.JsonPointer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unset")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def unset(target: Any, pointer: typings.jsonPtr.distTypesPointerMod.JsonPointer): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unset")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def unset(target: Any, pointer: PathSegments): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unset")(target.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Any]
     /**
       * Removes the `target` object's value at the `pointer`'s location.
@@ -226,12 +226,12 @@ object mod {
   @JSImport("json-ptr", "JsonReference")
   @js.native
   open class JsonReference protected ()
-    extends typings.jsonPtr.pointerMod.JsonReference {
+    extends typings.jsonPtr.distTypesPointerMod.JsonReference {
     /**
       * Creates a new instance.
       * @param pointer a JSON Pointer for the reference.
       */
-    def this(pointer: typings.jsonPtr.pointerMod.JsonPointer) = this()
+    def this(pointer: typings.jsonPtr.distTypesPointerMod.JsonPointer) = this()
     def this(pointer: PathSegments) = this()
     def this(pointer: Pointer) = this()
   }

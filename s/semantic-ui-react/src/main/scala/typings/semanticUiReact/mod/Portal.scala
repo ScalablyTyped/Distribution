@@ -1,6 +1,6 @@
 package typings.semanticUiReact.mod
 
-import typings.semanticUiReact.portalMod.default
+import typings.semanticUiReact.distCommonjsAddonsPortalMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,5 +14,5 @@ object Portal {
   @JSImport("semantic-ui-react", "Portal.Inner")
   @js.native
   open class Inner ()
-    extends typings.semanticUiReact.portalMod.default.Inner
+    extends typings.semanticUiReact.distCommonjsAddonsPortalMod.default.Inner
 }

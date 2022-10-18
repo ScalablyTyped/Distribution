@@ -1,22 +1,23 @@
 package typings.lodashDecorators
 
 import typings.lodashDecorators.applicatorsMod.Applicator
-import typings.lodashDecorators.commonMod.BiTypedDecorator
-import typings.lodashDecorators.commonMod.BiTypedDecorator1
-import typings.lodashDecorators.commonMod.BiTypedDecorator2
-import typings.lodashDecorators.commonMod.BiTypedDecoratorN
-import typings.lodashDecorators.commonMod.BiTypedMethodDecorator
-import typings.lodashDecorators.commonMod.BiTypedMethodDecorator1
-import typings.lodashDecorators.commonMod.InstanceChainData
-import typings.lodashDecorators.commonMod.LodashDecorator
-import typings.lodashDecorators.commonMod.LodashMethodDecorator
-import typings.lodashDecorators.commonMod.ResolvableFunction
-import typings.lodashDecorators.decoratorConfigMod.DecoratorConfigOptions
+import typings.lodashDecorators.factoryCommonMod.BiTypedDecorator
+import typings.lodashDecorators.factoryCommonMod.BiTypedDecorator1
+import typings.lodashDecorators.factoryCommonMod.BiTypedDecorator2
+import typings.lodashDecorators.factoryCommonMod.BiTypedDecoratorN
+import typings.lodashDecorators.factoryCommonMod.BiTypedMethodDecorator
+import typings.lodashDecorators.factoryCommonMod.BiTypedMethodDecorator1
+import typings.lodashDecorators.factoryCommonMod.InstanceChainData
+import typings.lodashDecorators.factoryCommonMod.LodashDecorator
+import typings.lodashDecorators.factoryCommonMod.LodashMethodDecorator
+import typings.lodashDecorators.factoryCommonMod.ResolvableFunction
+import typings.lodashDecorators.factoryDecoratorConfigMod.DecoratorConfigOptions
 import typings.lodashDecorators.sharedMod.DebounceOptions
 import typings.lodashDecorators.sharedMod.MemoizeConfig
 import typings.lodashDecorators.sharedMod.ThrottleOptions
 import typings.lodashDecorators.utilsMod.CompositeKeyWeakMap
 import typings.std.ClassDecorator
+import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,6 +28,8 @@ object mod {
   @JSImport("lodash-decorators", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(args: Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MethodDecorator & PropertyDecorator]
   
   inline def AfterAll_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
@@ -85,7 +88,7 @@ object mod {
   
   @JSImport("lodash-decorators", "DecoratorFactory")
   @js.native
-  val DecoratorFactory: typings.lodashDecorators.decoratorFactoryMod.InternalDecoratorFactory = js.native
+  val DecoratorFactory: typings.lodashDecorators.factoryDecoratorFactoryMod.InternalDecoratorFactory = js.native
   
   @JSImport("lodash-decorators", "Defer")
   @js.native

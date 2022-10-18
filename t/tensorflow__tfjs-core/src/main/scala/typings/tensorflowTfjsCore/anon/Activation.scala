@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsCore.anon
 
-import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Activation[T /* <: Tensor3D | Tensor4D */] extends StObject {
   
-  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.undefined
+  var activation: js.UndefOr[typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation] = js.undefined
   
   var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.undefined
   
@@ -55,7 +55,7 @@ object Activation {
   
   extension [Self <: Activation[?], T /* <: Tensor3D | Tensor4D */](x: Self & Activation[T]) {
     
-    inline def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
+    inline def setActivation(value: typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     
     inline def setActivationUndefined: Self = StObject.set(x, "activation", js.undefined)
     

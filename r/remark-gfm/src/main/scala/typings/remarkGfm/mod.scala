@@ -17,7 +17,7 @@ object mod {
   
   trait Options
     extends StObject
-       with typings.micromarkExtensionGfmStrikethrough.libSyntaxMod.Options
+       with typings.micromarkExtensionGfmStrikethrough.devLibSyntaxMod.Options
        with typings.mdastUtilGfmTable.libMod.Options
   object Options {
     

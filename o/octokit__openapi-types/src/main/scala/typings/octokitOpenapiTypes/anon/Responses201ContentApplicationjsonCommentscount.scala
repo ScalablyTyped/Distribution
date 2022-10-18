@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Responses201ContentApplicationjsonCommentscount extends StObject {
   
-  var parameters: PathTeamslugString
+  var parameters: PathTeamid
   
   var requestBody: ContentApplicationjsonPrivate
   
@@ -15,7 +15,7 @@ trait Responses201ContentApplicationjsonCommentscount extends StObject {
 object Responses201ContentApplicationjsonCommentscount {
   
   inline def apply(
-    parameters: PathTeamslugString,
+    parameters: PathTeamid,
     requestBody: ContentApplicationjsonPrivate,
     responses: `201ContentApplicationjsonCommentscount`
   ): Responses201ContentApplicationjsonCommentscount = {
@@ -25,7 +25,7 @@ object Responses201ContentApplicationjsonCommentscount {
   
   extension [Self <: Responses201ContentApplicationjsonCommentscount](x: Self) {
     
-    inline def setParameters(value: PathTeamslugString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PathTeamid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonPrivate): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

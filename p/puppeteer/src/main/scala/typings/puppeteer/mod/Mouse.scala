@@ -1,7 +1,7 @@
 package typings.puppeteer.mod
 
 import typings.devtoolsProtocol.mod.Protocol.Input.DragData
-import typings.puppeteer.anon.MouseOptionsdelaynumberunClickCount
+import typings.puppeteer.anon.MouseOptionsdelaynumberun
 import typings.puppeteer.anon.Steps
 import typings.puppeteer.anon.`0`
 import org.scalablytyped.runtime.StObject
@@ -19,7 +19,7 @@ open class Mouse () extends StObject {
     * @param options - Optional `MouseOptions`.
     */
   def click(x: Double, y: Double): js.Promise[Unit] = js.native
-  def click(x: Double, y: Double, options: MouseOptionsdelaynumberunClickCount): js.Promise[Unit] = js.native
+  def click(x: Double, y: Double, options: MouseOptionsdelaynumberun): js.Promise[Unit] = js.native
   
   /**
     * Dispatches a `mousedown` event.
@@ -37,7 +37,7 @@ open class Mouse () extends StObject {
   
   /**
     * Performs a drag, dragenter, dragover, and drop in sequence.
-    * @param target - point to drag from
+    * @param start - point to drag from
     * @param target - point to drop on
     * @param options - An object of options. Accepts delay which,
     * if specified, is the time to wait between `dragover` and `drop` in milliseconds.

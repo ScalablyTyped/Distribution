@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "ExternalServiceException")
 @js.native
 open class ExternalServiceException protected ()
-  extends typings.awsSdkClientCognitoIdentity.modelsMod.ExternalServiceException {
+  extends typings.awsSdkClientCognitoIdentity.distTypesModelsMod.ExternalServiceException {
   /**
     * @internal
     */

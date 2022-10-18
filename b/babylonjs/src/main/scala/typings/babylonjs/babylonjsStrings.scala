@@ -1,9 +1,9 @@
 package typings.babylonjs
 
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentStateType
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerComponentType
-import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
-import typings.babylonjs.webXRDOMOverlayMod.WebXRDomOverlayType
+import typings.babylonjs.xRFeaturesWebXRDOMOverlayMod.WebXRDomOverlayType
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentStateType
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentType
+import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerHandedness
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,28 +106,16 @@ object babylonjsStrings {
   inline def ATTRIBUTES: ATTRIBUTES = "ATTRIBUTES".asInstanceOf[ATTRIBUTES]
   
   @js.native
-  sealed trait DeepImmutableObject extends StObject
-  inline def DeepImmutableObject: DeepImmutableObject = "DeepImmutableObject".asInstanceOf[DeepImmutableObject]
-  
-  @js.native
-  sealed trait Horizontal extends StObject
-  inline def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
-  
-  @js.native
   sealed trait INDICES extends StObject
   inline def INDICES: INDICES = "INDICES".asInstanceOf[INDICES]
   
   @js.native
+  sealed trait OCULUS_multiview extends StObject
+  inline def OCULUS_multiview: OCULUS_multiview = "OCULUS_multiview".asInstanceOf[OCULUS_multiview]
+  
+  @js.native
   sealed trait TRIANGLES extends StObject
   inline def TRIANGLES: TRIANGLES = "TRIANGLES".asInstanceOf[TRIANGLES]
-  
-  @js.native
-  sealed trait Vertical extends StObject
-  inline def Vertical: Vertical = "Vertical".asInstanceOf[Vertical]
-  
-  @js.native
-  sealed trait XRHandMeshRigMapping extends StObject
-  inline def XRHandMeshRigMapping: XRHandMeshRigMapping = "XRHandMeshRigMapping".asInstanceOf[XRHandMeshRigMapping]
   
   @js.native
   sealed trait XRProjectionLayer extends StObject
@@ -477,7 +465,9 @@ object babylonjsStrings {
   inline def `bgra8unorm-storage`: `bgra8unorm-storage` = "bgra8unorm-storage".asInstanceOf[`bgra8unorm-storage`]
   
   @js.native
-  sealed trait `bounded-floor` extends StObject
+  sealed trait `bounded-floor`
+    extends StObject
+       with XRReferenceSpaceType
   inline def `bounded-floor`: `bounded-floor` = "bounded-floor".asInstanceOf[`bounded-floor`]
   
   @js.native
@@ -630,9 +620,7 @@ object babylonjsStrings {
   inline def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
-  sealed trait devicechange
-    extends StObject
-       with XREventType
+  sealed trait devicechange extends StObject
   inline def devicechange: devicechange = "devicechange".asInstanceOf[devicechange]
   
   @js.native
@@ -689,6 +677,7 @@ object babylonjsStrings {
        with GPUComputePassTimestampLocation
        with GPURenderPassTimestampLocation
        with XREventType
+       with XRSessionEventType
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -814,6 +803,13 @@ object babylonjsStrings {
   inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
+  sealed trait frameratechange
+    extends StObject
+       with XREventType
+       with XRSessionEventType
+  inline def frameratechange: frameratechange = "frameratechange".asInstanceOf[frameratechange]
+  
+  @js.native
   sealed trait front
     extends StObject
        with GPUCullMode
@@ -866,6 +862,12 @@ object babylonjsStrings {
   inline def `high-performance`: `high-performance` = "high-performance".asInstanceOf[`high-performance`]
   
   @js.native
+  sealed trait horizontal
+    extends StObject
+       with XRPlaneOrientation
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
   sealed trait `immersive-ar`
     extends StObject
        with XRSessionMode
@@ -888,6 +890,36 @@ object babylonjsStrings {
     extends StObject
        with GPUStencilOperation
   inline def `increment-wrap`: `increment-wrap` = "increment-wrap".asInstanceOf[`increment-wrap`]
+  
+  @js.native
+  sealed trait `index-finger-metacarpal`
+    extends StObject
+       with XRHandJoint
+  inline def `index-finger-metacarpal`: `index-finger-metacarpal` = "index-finger-metacarpal".asInstanceOf[`index-finger-metacarpal`]
+  
+  @js.native
+  sealed trait `index-finger-phalanx-distal`
+    extends StObject
+       with XRHandJoint
+  inline def `index-finger-phalanx-distal`: `index-finger-phalanx-distal` = "index-finger-phalanx-distal".asInstanceOf[`index-finger-phalanx-distal`]
+  
+  @js.native
+  sealed trait `index-finger-phalanx-intermediate`
+    extends StObject
+       with XRHandJoint
+  inline def `index-finger-phalanx-intermediate`: `index-finger-phalanx-intermediate` = "index-finger-phalanx-intermediate".asInstanceOf[`index-finger-phalanx-intermediate`]
+  
+  @js.native
+  sealed trait `index-finger-phalanx-proximal`
+    extends StObject
+       with XRHandJoint
+  inline def `index-finger-phalanx-proximal`: `index-finger-phalanx-proximal` = "index-finger-phalanx-proximal".asInstanceOf[`index-finger-phalanx-proximal`]
+  
+  @js.native
+  sealed trait `index-finger-tip`
+    extends StObject
+       with XRHandJoint
+  inline def `index-finger-tip`: `index-finger-tip` = "index-finger-tip".asInstanceOf[`index-finger-tip`]
   
   @js.native
   sealed trait `indirect-first-instance`
@@ -1015,6 +1047,42 @@ object babylonjsStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
+  sealed trait mesh
+    extends StObject
+       with XRHitTestTrackableType
+  inline def mesh: mesh = "mesh".asInstanceOf[mesh]
+  
+  @js.native
+  sealed trait `middle-finger-metacarpal`
+    extends StObject
+       with XRHandJoint
+  inline def `middle-finger-metacarpal`: `middle-finger-metacarpal` = "middle-finger-metacarpal".asInstanceOf[`middle-finger-metacarpal`]
+  
+  @js.native
+  sealed trait `middle-finger-phalanx-distal`
+    extends StObject
+       with XRHandJoint
+  inline def `middle-finger-phalanx-distal`: `middle-finger-phalanx-distal` = "middle-finger-phalanx-distal".asInstanceOf[`middle-finger-phalanx-distal`]
+  
+  @js.native
+  sealed trait `middle-finger-phalanx-intermediate`
+    extends StObject
+       with XRHandJoint
+  inline def `middle-finger-phalanx-intermediate`: `middle-finger-phalanx-intermediate` = "middle-finger-phalanx-intermediate".asInstanceOf[`middle-finger-phalanx-intermediate`]
+  
+  @js.native
+  sealed trait `middle-finger-phalanx-proximal`
+    extends StObject
+       with XRHandJoint
+  inline def `middle-finger-phalanx-proximal`: `middle-finger-phalanx-proximal` = "middle-finger-phalanx-proximal".asInstanceOf[`middle-finger-phalanx-proximal`]
+  
+  @js.native
+  sealed trait `middle-finger-tip`
+    extends StObject
+       with XRHandJoint
+  inline def `middle-finger-tip`: `middle-finger-tip` = "middle-finger-tip".asInstanceOf[`middle-finger-tip`]
+  
+  @js.native
   sealed trait min
     extends StObject
        with GPUBlendOperation
@@ -1122,10 +1190,52 @@ object babylonjsStrings {
   inline def `out-of-memory`: `out-of-memory` = "out-of-memory".asInstanceOf[`out-of-memory`]
   
   @js.native
+  sealed trait `pinky-finger-metacarpal`
+    extends StObject
+       with XRHandJoint
+  inline def `pinky-finger-metacarpal`: `pinky-finger-metacarpal` = "pinky-finger-metacarpal".asInstanceOf[`pinky-finger-metacarpal`]
+  
+  @js.native
+  sealed trait `pinky-finger-phalanx-distal`
+    extends StObject
+       with XRHandJoint
+  inline def `pinky-finger-phalanx-distal`: `pinky-finger-phalanx-distal` = "pinky-finger-phalanx-distal".asInstanceOf[`pinky-finger-phalanx-distal`]
+  
+  @js.native
+  sealed trait `pinky-finger-phalanx-intermediate`
+    extends StObject
+       with XRHandJoint
+  inline def `pinky-finger-phalanx-intermediate`: `pinky-finger-phalanx-intermediate` = "pinky-finger-phalanx-intermediate".asInstanceOf[`pinky-finger-phalanx-intermediate`]
+  
+  @js.native
+  sealed trait `pinky-finger-phalanx-proximal`
+    extends StObject
+       with XRHandJoint
+  inline def `pinky-finger-phalanx-proximal`: `pinky-finger-phalanx-proximal` = "pinky-finger-phalanx-proximal".asInstanceOf[`pinky-finger-phalanx-proximal`]
+  
+  @js.native
+  sealed trait `pinky-finger-tip`
+    extends StObject
+       with XRHandJoint
+  inline def `pinky-finger-tip`: `pinky-finger-tip` = "pinky-finger-tip".asInstanceOf[`pinky-finger-tip`]
+  
+  @js.native
+  sealed trait plane
+    extends StObject
+       with XRHitTestTrackableType
+  inline def plane: plane = "plane".asInstanceOf[plane]
+  
+  @js.native
   sealed trait platform
     extends StObject
        with XRSceneObjectType
   inline def platform: platform = "platform".asInstanceOf[platform]
+  
+  @js.native
+  sealed trait point
+    extends StObject
+       with XRHitTestTrackableType
+  inline def point: point = "point".asInstanceOf[point]
   
   @js.native
   sealed trait `point-list`
@@ -1225,6 +1335,10 @@ object babylonjsStrings {
   inline def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   
   @js.native
+  sealed trait redraw extends StObject
+  inline def redraw: redraw = "redraw".asInstanceOf[redraw]
+  
+  @js.native
   sealed trait repeat
     extends StObject
        with GPUAddressMode
@@ -1237,9 +1351,7 @@ object babylonjsStrings {
   inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait reset
-    extends StObject
-       with XREventType
+  sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
@@ -1408,6 +1520,36 @@ object babylonjsStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
+  sealed trait `ring-finger-metacarpal`
+    extends StObject
+       with XRHandJoint
+  inline def `ring-finger-metacarpal`: `ring-finger-metacarpal` = "ring-finger-metacarpal".asInstanceOf[`ring-finger-metacarpal`]
+  
+  @js.native
+  sealed trait `ring-finger-phalanx-distal`
+    extends StObject
+       with XRHandJoint
+  inline def `ring-finger-phalanx-distal`: `ring-finger-phalanx-distal` = "ring-finger-phalanx-distal".asInstanceOf[`ring-finger-phalanx-distal`]
+  
+  @js.native
+  sealed trait `ring-finger-phalanx-intermediate`
+    extends StObject
+       with XRHandJoint
+  inline def `ring-finger-phalanx-intermediate`: `ring-finger-phalanx-intermediate` = "ring-finger-phalanx-intermediate".asInstanceOf[`ring-finger-phalanx-intermediate`]
+  
+  @js.native
+  sealed trait `ring-finger-phalanx-proximal`
+    extends StObject
+       with XRHandJoint
+  inline def `ring-finger-phalanx-proximal`: `ring-finger-phalanx-proximal` = "ring-finger-phalanx-proximal".asInstanceOf[`ring-finger-phalanx-proximal`]
+  
+  @js.native
+  sealed trait `ring-finger-tip`
+    extends StObject
+       with XRHandJoint
+  inline def `ring-finger-tip`: `ring-finger-tip` = "ring-finger-tip".asInstanceOf[`ring-finger-tip`]
+  
+  @js.native
   sealed trait screen
     extends StObject
        with WebXRDomOverlayType
@@ -1420,19 +1562,26 @@ object babylonjsStrings {
   sealed trait select
     extends StObject
        with XREventType
+       with XRInputSourceEventType
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait selectend
     extends StObject
        with XREventType
+       with XRInputSourceEventType
   inline def selectend: selectend = "selectend".asInstanceOf[selectend]
   
   @js.native
   sealed trait selectstart
     extends StObject
        with XREventType
+       with XRInputSourceEventType
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  
+  @js.native
+  sealed trait sessiongranted extends StObject
+  inline def sessiongranted: sessiongranted = "sessiongranted".asInstanceOf[sessiongranted]
   
   @js.native
   sealed trait `shader-f16`
@@ -1528,18 +1677,21 @@ object babylonjsStrings {
        with MotionControllerComponentType
        with typings.babylonjs.BABYLON.MotionControllerComponentType
        with XREventType
+       with XRInputSourceEventType
   inline def squeeze: squeeze = "squeeze".asInstanceOf[squeeze]
   
   @js.native
   sealed trait squeezeend
     extends StObject
        with XREventType
+       with XRInputSourceEventType
   inline def squeezeend: squeezeend = "squeezeend".asInstanceOf[squeezeend]
   
   @js.native
   sealed trait squeezestart
     extends StObject
        with XREventType
+       with XRInputSourceEventType
   inline def squeezestart: squeezestart = "squeezestart".asInstanceOf[squeezestart]
   
   @js.native
@@ -1651,6 +1803,30 @@ object babylonjsStrings {
     extends StObject
        with GPUFeatureName
   inline def `texture-compression-etc2`: `texture-compression-etc2` = "texture-compression-etc2".asInstanceOf[`texture-compression-etc2`]
+  
+  @js.native
+  sealed trait `thumb-metacarpal`
+    extends StObject
+       with XRHandJoint
+  inline def `thumb-metacarpal`: `thumb-metacarpal` = "thumb-metacarpal".asInstanceOf[`thumb-metacarpal`]
+  
+  @js.native
+  sealed trait `thumb-phalanx-distal`
+    extends StObject
+       with XRHandJoint
+  inline def `thumb-phalanx-distal`: `thumb-phalanx-distal` = "thumb-phalanx-distal".asInstanceOf[`thumb-phalanx-distal`]
+  
+  @js.native
+  sealed trait `thumb-phalanx-proximal`
+    extends StObject
+       with XRHandJoint
+  inline def `thumb-phalanx-proximal`: `thumb-phalanx-proximal` = "thumb-phalanx-proximal".asInstanceOf[`thumb-phalanx-proximal`]
+  
+  @js.native
+  sealed trait `thumb-tip`
+    extends StObject
+       with XRHandJoint
+  inline def `thumb-tip`: `thumb-tip` = "thumb-tip".asInstanceOf[`thumb-tip`]
   
   @js.native
   sealed trait thumbstick
@@ -1858,6 +2034,12 @@ object babylonjsStrings {
   inline def vertex: vertex = "vertex".asInstanceOf[vertex]
   
   @js.native
+  sealed trait vertical
+    extends StObject
+       with XRPlaneOrientation
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
   sealed trait viewer
     extends StObject
        with XRReferenceSpaceType
@@ -1871,6 +2053,7 @@ object babylonjsStrings {
   sealed trait visibilitychange
     extends StObject
        with XREventType
+       with XRSessionEventType
   inline def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
   
   @js.native
@@ -1918,6 +2101,12 @@ object babylonjsStrings {
     extends StObject
        with XRSceneObjectType
   inline def world: world = "world".asInstanceOf[world]
+  
+  @js.native
+  sealed trait wrist
+    extends StObject
+       with XRHandJoint
+  inline def wrist: wrist = "wrist".asInstanceOf[wrist]
   
   @js.native
   sealed trait `write-only` extends StObject

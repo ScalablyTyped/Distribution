@@ -26,7 +26,6 @@ import typings.chromeApps.chromeAppsStrings.setter
 import typings.chromeApps.chromeAppsStrings.succeeded_
 import typings.chromeApps.chromeAppsStrings.unhandled_
 import typings.chromeApps.chromeAppsStrings.unmanaged
-import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,10 +109,7 @@ object networking {
       result: ToStringLiteral[
           FAILED, 
           /* keyof chrome-apps.anon.FAILED */ UNHANDLED | SUCCEEDED | REJECTED | typings.chromeApps.chromeAppsStrings.FAILED, 
-          Exclude[
-            /* keyof chrome-apps.anon.FAILED */ UNHANDLED | SUCCEEDED | REJECTED | typings.chromeApps.chromeAppsStrings.FAILED, 
-            unhandled_ | succeeded_ | rejected_ | failed_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  UNHANDLED :'unhandled',   SUCCEEDED :'succeeded',   REJECTED :'rejected',   FAILED :'failed'} extends keyof {  UNHANDLED :'unhandled',   SUCCEEDED :'succeeded',   REJECTED :'rejected',   FAILED :'failed'} ? std.Exclude<keyof {  UNHANDLED :'unhandled',   SUCCEEDED :'succeeded',   REJECTED :'rejected',   FAILED :'failed'}, 'unhandled' | 'succeeded' | 'rejected' | 'failed'> : never */ js.Any
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("finishAuthentication")(GUID.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def finishAuthentication(
@@ -121,10 +117,7 @@ object networking {
       result: ToStringLiteral[
           FAILED, 
           /* keyof chrome-apps.anon.FAILED */ UNHANDLED | SUCCEEDED | REJECTED | typings.chromeApps.chromeAppsStrings.FAILED, 
-          Exclude[
-            /* keyof chrome-apps.anon.FAILED */ UNHANDLED | SUCCEEDED | REJECTED | typings.chromeApps.chromeAppsStrings.FAILED, 
-            unhandled_ | succeeded_ | rejected_ | failed_
-          ]
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  UNHANDLED :'unhandled',   SUCCEEDED :'succeeded',   REJECTED :'rejected',   FAILED :'failed'} extends keyof {  UNHANDLED :'unhandled',   SUCCEEDED :'succeeded',   REJECTED :'rejected',   FAILED :'failed'} ? std.Exclude<keyof {  UNHANDLED :'unhandled',   SUCCEEDED :'succeeded',   REJECTED :'rejected',   FAILED :'failed'}, 'unhandled' | 'succeeded' | 'rejected' | 'failed'> : never */ js.Any
         ],
       callback: js.Function0[Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("finishAuthentication")(GUID.asInstanceOf[js.Any], result.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

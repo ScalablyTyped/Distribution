@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Accordion")
 @js.native
 open class Accordion protected ()
-  extends typings.carbonComponents.componentsMod.Accordion {
+  extends typings.carbonComponents.globalsJsComponentsMod.Accordion {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialAccordionOptions) = this()
 }

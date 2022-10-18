@@ -1,7 +1,6 @@
 package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.weixinApp.anon.Cursor
 import typings.weixinApp.anon.Instantiable
@@ -25,8 +24,6 @@ type AccelerometerChangeCallback = js.Function1[/* res */ AccelerometerData, Uni
 type AccelerometerOptions = BaseOptions[Any, Any]
 
 type ArrayPropsDefinition[T] = js.Array[/* keyof T */ String]
-
-type ArrayType[T /* <: js.Array[Any] */] = Any
 
 type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]
 
@@ -66,24 +63,7 @@ type Prop[T] = js.Function0[T] | Instantiable[T]
 
 type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
 
-/**
-  * There are two valid ways to define the type of data / properties:
-  *
-  * 1. { name: valueType }
-  * 2. { name: { type: valueType, value?: value } }
-  *
-  * and this conditional type will extract that out so the call-site will typecheck.
-  *
-  * Note this is different from PropOptions as it is the definitions you passed to Component function
-  * whereas this type is for call-site.
-  */
-type PropValueType[Def] = Any
-
 type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-
-type RecordPropsDefinition[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ K in keyof T ]: weixin-app.wx.PropValidator<T[K]>}
-  */ typings.weixinApp.weixinAppStrings.RecordPropsDefinition & TopLevel[T]
 
 type RemoveSavedFileOptions = GetSavedFileInfoOptions
 
@@ -184,18 +164,10 @@ type TouchMoveEvent = TouchEvent[touchmove]
 
 type TouchStartEvent = TouchEvent[touchstart]
 
-type UnboxBehaviorData[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_DATA'] */ js.Any)
-
-type UnboxBehaviorMethods[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_METHODS'] */ js.Any)
-
-type UnboxBehaviorProps[T] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_PROPS'] */ js.Any)
-
 type UnboxBehaviorsData[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorData[UnionToIntersection[ArrayType[Behaviors]]]
 
 type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorMethods[UnionToIntersection[ArrayType[Behaviors]]]
 
 type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */] = UnboxBehaviorProps[UnionToIntersection[ArrayType[Behaviors]]]
-
-type UnionToIntersection[U] = Any
 
 type WriteFileOptions = AppendFileOptions

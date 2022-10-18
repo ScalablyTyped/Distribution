@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +23,7 @@ trait GoogleCloudFunctionsV2alphaOperationMetadata extends StObject {
   
   /** The original request that started the operation. */
   var requestResource: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.GoogleCloudFunctionsV2alphaOperationMetadata & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
   ] = js.undefined
   
   /** Mechanism for reporting in-progress stages */
@@ -67,9 +64,7 @@ object GoogleCloudFunctionsV2alphaOperationMetadata {
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     inline def setRequestResource(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudfunctions.maximMazurokGapiClientCloudfunctionsStrings.GoogleCloudFunctionsV2alphaOperationMetadata & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any
     ): Self = StObject.set(x, "requestResource", value.asInstanceOf[js.Any])
     
     inline def setRequestResourceUndefined: Self = StObject.set(x, "requestResource", js.undefined)

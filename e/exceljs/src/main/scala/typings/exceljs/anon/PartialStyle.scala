@@ -10,7 +10,7 @@ trait PartialStyle extends StObject {
   
   var alignment: js.UndefOr[PartialAlignment] = js.undefined
   
-  var border: js.UndefOr[PartialBordersBottom] = js.undefined
+  var border: js.UndefOr[PartialBorders] = js.undefined
   
   var fill: js.UndefOr[Fill] = js.undefined
   
@@ -33,7 +33,7 @@ object PartialStyle {
     
     inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    inline def setBorder(value: PartialBordersBottom): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: PartialBorders): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     

@@ -1,6 +1,6 @@
 package typings.trezorConnect.anon
 
-import typings.trezorConnect.protobufMod.TxOutputType
+import typings.trezorConnect.libTypescriptTrezorProtobufMod.TxOutputType
 import typings.trezorConnect.trezorConnectStrings.PAYTOOPRETURN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

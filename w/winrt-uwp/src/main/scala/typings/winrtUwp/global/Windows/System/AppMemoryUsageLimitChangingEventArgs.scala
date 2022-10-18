@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the AppMemoryUsageLimitChanging event. */
-@JSGlobal("Windows.System.AppMemoryUsageLimitChangingEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.System.AppMemoryUsageLimitChangingEventArgs")
 @js.native
-abstract class AppMemoryUsageLimitChangingEventArgs ()
+open class AppMemoryUsageLimitChangingEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.System.AppMemoryUsageLimitChangingEventArgs {
   

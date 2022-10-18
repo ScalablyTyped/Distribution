@@ -1,6 +1,6 @@
 package typings.redisTimeSeries.anon
 
-import typings.redisTimeSeries.createMod.CreateOptions
+import typings.redisTimeSeries.distCommandsCreateMod.CreateOptions
 import typings.redisTimeSeries.redisTimeSeriesStrings.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

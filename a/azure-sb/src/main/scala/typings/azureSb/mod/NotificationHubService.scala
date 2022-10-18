@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("azure-sb", "NotificationHubService")
 @js.native
 open class NotificationHubService protected ()
-  extends typings.azureSb.notificationhubserviceMod.^ {
+  extends typings.azureSb.libNotificationhubserviceMod.^ {
   def this(
     hubName: String,
     endpointOrConnectionString: String,

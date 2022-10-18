@@ -1,6 +1,6 @@
 package typings.azureMsalCommon.mod
 
-import typings.azureMsalCommon.decodedAuthTokenMod.DecodedAuthToken
+import typings.azureMsalCommon.distAccountDecodedAuthTokenMod.DecodedAuthToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@azure/msal-common", "StringUtils")
 @js.native
 open class StringUtils ()
-  extends typings.azureMsalCommon.stringUtilsMod.StringUtils
+  extends typings.azureMsalCommon.distUtilsStringUtilsMod.StringUtils
 /* static members */
 object StringUtils {
   

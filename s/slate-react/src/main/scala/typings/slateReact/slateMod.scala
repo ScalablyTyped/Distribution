@@ -1,16 +1,37 @@
 package typings.slateReact
 
-import typings.react.mod.global.JSX.Element
-import typings.slateReact.anon.Children
+import typings.slateReact.anon.BaseRangeplaceholderstrin
+import typings.slateReact.anon.BaseTextplaceholderstring
+import typings.slateReact.distPluginReactEditorMod.ReactEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* augmented module */
 object slateMod {
   
-  @JSImport("slate-react/dist/components/slate", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def Slate(props: Children): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slate")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  trait CustomTypes extends StObject {
+    
+    var Editor: ReactEditor
+    
+    var Range: BaseRangeplaceholderstrin
+    
+    var Text: BaseTextplaceholderstring
+  }
+  object CustomTypes {
+    
+    inline def apply(Editor: ReactEditor, Range: BaseRangeplaceholderstrin, Text: BaseTextplaceholderstring): CustomTypes = {
+      val __obj = js.Dynamic.literal(Editor = Editor.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomTypes]
+    }
+    
+    extension [Self <: CustomTypes](x: Self) {
+      
+      inline def setEditor(value: ReactEditor): Self = StObject.set(x, "Editor", value.asInstanceOf[js.Any])
+      
+      inline def setRange(value: BaseRangeplaceholderstrin): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: BaseTextplaceholderstring): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    }
+  }
 }

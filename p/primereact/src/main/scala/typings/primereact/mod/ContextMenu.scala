@@ -1,6 +1,6 @@
 package typings.primereact.mod
 
-import typings.primereact.contextmenuMod.ContextMenuProps
+import typings.primereact.contextmenuContextmenuMod.ContextMenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("primereact", "ContextMenu")
 @js.native
 open class ContextMenu protected ()
-  extends typings.primereact.contextmenuMod.ContextMenu {
+  extends typings.primereact.contextmenuContextmenuMod.ContextMenu {
   def this(props: ContextMenuProps) = this()
   /**
     * @deprecated

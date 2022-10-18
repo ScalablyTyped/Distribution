@@ -1,9 +1,8 @@
 package typings.openapiTypes.mod.OpenAPIV31
 
-import org.scalablytyped.runtime.TopLevel
-import typings.openapiTypes.anon.Callbacks
 import typings.openapiTypes.anon.Info
 import typings.openapiTypes.anon.Parameters
+import typings.openapiTypes.anon.RequestBody
 import typings.openapiTypes.openapiTypesStrings.components
 import typings.openapiTypes.openapiTypesStrings.paths
 import typings.openapiTypes.openapiTypesStrings.webhooks
@@ -48,13 +47,13 @@ type OAuth2SecurityScheme = typings.openapiTypes.mod.OpenAPIV3.OAuth2SecuritySch
 
 type OpenIdSecurityScheme = typings.openapiTypes.mod.OpenAPIV3.OpenIdSecurityScheme
 
-type OperationObject[T /* <: js.Object */] = (Modify[typings.openapiTypes.mod.OpenAPIV3.OperationObject[T], Callbacks]) & T
+type OperationObject[T /* <: js.Object */] = (Modify[typings.openapiTypes.mod.OpenAPIV3.OperationObject[T], RequestBody]) & T
 
 type ParameterBaseObject = typings.openapiTypes.mod.OpenAPIV3.ParameterBaseObject
 
 type ParameterObject = typings.openapiTypes.mod.OpenAPIV3.ParameterObject
 
-type PathItemObject[T /* <: js.Object */] = (Modify[typings.openapiTypes.mod.OpenAPIV3.PathItemObject[T], Parameters]) & typings.openapiTypes.openapiTypesStrings.PathItemObject & TopLevel[Any]
+type PathItemObject[T /* <: js.Object */] = (Modify[typings.openapiTypes.mod.OpenAPIV3.PathItemObject[T], Parameters]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ method in openapi-types.openapi-types.OpenAPIV3_1.HttpMethods ]:? openapi-types.openapi-types.OpenAPIV3_1.OperationObject<T>} */ js.Any)
 
 type PathsObject[T /* <: js.Object */, P /* <: js.Object */] = Record[String, js.UndefOr[PathItemObject[T] & P]]
 

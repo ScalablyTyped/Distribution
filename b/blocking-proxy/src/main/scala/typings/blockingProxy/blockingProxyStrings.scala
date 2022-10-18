@@ -1,7 +1,7 @@
 package typings.blockingProxy
 
-import typings.blockingProxy.webdriverCommandsMod.HttpMethod
-import typings.blockingProxy.webdriverCommandsMod.paramKey
+import typings.blockingProxy.builtLibWebdriverCommandsMod.HttpMethod
+import typings.blockingProxy.builtLibWebdriverCommandsMod.paramKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

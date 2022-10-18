@@ -11,30 +11,23 @@ sealed trait XPosition extends StObject
 @js.native
 object XPosition extends StObject {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[XPosition & Double] = js.native
-  
   @js.native
   sealed trait CENTER
     extends StObject
        with XPosition
-  /* 2 */ val CENTER: typings.materialTooltip.constantsMod.XPosition.CENTER & Double = js.native
   
   @js.native
   sealed trait DETECTED
     extends StObject
        with XPosition
-  /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.XPosition.DETECTED & Double = js.native
   
   @js.native
   sealed trait END
     extends StObject
        with XPosition
-  /* 3 */ val END: typings.materialTooltip.constantsMod.XPosition.END & Double = js.native
   
   @js.native
   sealed trait START
     extends StObject
        with XPosition
-  /* 1 */ val START: typings.materialTooltip.constantsMod.XPosition.START & Double = js.native
 }

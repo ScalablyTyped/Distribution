@@ -4,9 +4,9 @@ import typings.luminoApplication.mod.Application.IOptions
 import typings.luminoApplication.mod.Application.IStartOptions
 import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.mod.Token
-import typings.luminoWidgets.menuMod.Menu.IRenderer
 import typings.luminoWidgets.mod.ContextMenu
 import typings.luminoWidgets.mod.Widget
+import typings.luminoWidgets.typesMenuMod.Menu.IRenderer
 import typings.std.Event
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent

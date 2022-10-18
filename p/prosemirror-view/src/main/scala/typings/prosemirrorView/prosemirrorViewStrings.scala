@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object prosemirrorViewStrings {
   
   @js.native
-  sealed trait EditorProps extends StObject
-  inline def EditorProps: EditorProps = "EditorProps".asInstanceOf[EditorProps]
-  
-  @js.native
-  sealed trait EditorView extends StObject
-  inline def EditorView: EditorView = "EditorView".asInstanceOf[EditorView]
-  
-  @js.native
   sealed trait attributes extends StObject
   inline def attributes: attributes = "attributes".asInstanceOf[attributes]
   

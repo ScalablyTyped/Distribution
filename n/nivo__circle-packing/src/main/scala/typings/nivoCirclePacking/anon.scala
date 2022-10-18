@@ -1,13 +1,13 @@
 package typings.nivoCirclePacking
 
+import typings.nivoCirclePacking.distTypesTypesMod.ComputedDatum
+import typings.nivoCirclePacking.distTypesTypesMod.ComputedLabel
 import typings.nivoCirclePacking.nivoCirclePackingStrings.color
 import typings.nivoCirclePacking.nivoCirclePackingStrings.depth
 import typings.nivoCirclePacking.nivoCirclePackingStrings.fill
 import typings.nivoCirclePacking.nivoCirclePackingStrings.id
-import typings.nivoCirclePacking.typesMod.ComputedDatum
-import typings.nivoCirclePacking.typesMod.ComputedLabel
-import typings.nivoColors.inheritedColorMod.InheritedColorConfig
-import typings.nivoColors.ordinalColorScaleMod.OrdinalColorScaleConfig
+import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.ValueFormat
 import typings.react.mod.MouseEvent
@@ -188,10 +188,6 @@ object anon {
       inline def setValue(value: PropertyAccessor[RawDatum, Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueFormat(value: ValueFormat[Double, Unit]): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-      
-      inline def setValueFormatFunction1(value: Double => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-      
-      inline def setValueFormatFunction2(value: (Double, Unit) => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction2(value))
       
       inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
       

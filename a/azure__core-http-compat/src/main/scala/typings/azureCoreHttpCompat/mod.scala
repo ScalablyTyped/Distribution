@@ -1,13 +1,13 @@
 package typings.azureCoreHttpCompat
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.azureAbortController.abortSignalMod.AbortSignalLike
+import typings.azureAbortController.typesSrcAbortSignalMod.AbortSignalLike
 import typings.azureCoreClient.mod.CommonClientOptions
 import typings.azureCoreClient.mod.ServiceClient
 import typings.azureCoreClient.mod.ServiceClientOptions
 import typings.azureCoreHttpCompat.anon.PreserveCase
-import typings.azureCoreRestPipeline.coreRestPipelineMod.HttpMethods
-import typings.azureCoreRestPipeline.coreRestPipelineMod.ProxySettings
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.HttpMethods
+import typings.azureCoreRestPipeline.typesLatestCoreRestPipelineMod.ProxySettings
 import typings.std.Blob
 import typings.std.ReadableStream
 import typings.std.Set
@@ -45,7 +45,7 @@ object mod {
     
     var parsedHeaders: js.UndefOr[StringDictionary[Any]] = js.undefined
     
-    var readableStreamBody: js.UndefOr[ReadableStream[Any]] = js.undefined
+    var readableStreamBody: js.UndefOr[typings.node.NodeJS.ReadableStream] = js.undefined
     
     /**
       * A description of a HTTP request to be made to a remote server.
@@ -87,7 +87,7 @@ object mod {
       
       inline def setParsedHeadersUndefined: Self = StObject.set(x, "parsedHeaders", js.undefined)
       
-      inline def setReadableStreamBody(value: ReadableStream[Any]): Self = StObject.set(x, "readableStreamBody", value.asInstanceOf[js.Any])
+      inline def setReadableStreamBody(value: typings.node.NodeJS.ReadableStream): Self = StObject.set(x, "readableStreamBody", value.asInstanceOf[js.Any])
       
       inline def setReadableStreamBodyUndefined: Self = StObject.set(x, "readableStreamBody", js.undefined)
       

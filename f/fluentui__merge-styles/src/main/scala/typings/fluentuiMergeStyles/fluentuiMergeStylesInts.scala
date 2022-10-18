@@ -1,7 +1,7 @@
 package typings.fluentuiMergeStyles
 
-import typings.fluentuiMergeStyles.irawstylebaseMod.IFontWeight
-import typings.fluentuiMergeStyles.stylesheetMod.InjectionMode
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.IFontWeight
+import typings.fluentuiMergeStyles.libStylesheetMod.InjectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

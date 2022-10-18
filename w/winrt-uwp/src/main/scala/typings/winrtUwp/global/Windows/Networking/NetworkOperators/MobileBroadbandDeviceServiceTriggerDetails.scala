@@ -6,9 +6,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a network device service notification. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceTriggerDetails")
+/* note: abstract class */ @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceTriggerDetails")
 @js.native
-abstract class MobileBroadbandDeviceServiceTriggerDetails ()
+open class MobileBroadbandDeviceServiceTriggerDetails ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceTriggerDetails {
   

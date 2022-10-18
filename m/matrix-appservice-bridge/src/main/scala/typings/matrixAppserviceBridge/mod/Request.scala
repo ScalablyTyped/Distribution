@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.mod
 
-import typings.matrixAppserviceBridge.requestMod.RequestOpts
+import typings.matrixAppserviceBridge.libComponentsRequestMod.RequestOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matrix-appservice-bridge", "Request")
 @js.native
 open class Request[T] protected ()
-  extends typings.matrixAppserviceBridge.requestMod.Request[T] {
+  extends typings.matrixAppserviceBridge.libComponentsRequestMod.Request[T] {
   /**
     * Construct a new Request.
     * @param opts Options for this request.

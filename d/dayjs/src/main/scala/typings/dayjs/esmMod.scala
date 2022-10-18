@@ -2,16 +2,17 @@ package typings.dayjs
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.dayjs.anon.D
+import typings.dayjs.anon.FnCall
 import typings.dayjs.anon.PartialILocale
 import typings.dayjs.dayjsStrings.`[]`
 import typings.dayjs.dayjsStrings.d_
 import typings.dayjs.dayjsStrings.long
 import typings.dayjs.dayjsStrings.m_
 import typings.dayjs.dayjsStrings.short
-import typings.dayjs.durationMod.CreateDurationType
-import typings.dayjs.durationMod.Duration
-import typings.dayjs.isoWeekMod.ISOUnitType
-import typings.dayjs.toObjectMod.DayjsObject
+import typings.dayjs.esmPluginDurationMod.CreateDurationType
+import typings.dayjs.esmPluginDurationMod.Duration
+import typings.dayjs.esmPluginIsoWeekMod.ISOUnitType
+import typings.dayjs.esmPluginToObjectMod.DayjsObject
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,8 +52,8 @@ object esmMod {
        with _ConfigType {
     def this(config: ConfigType) = this()
     
-    def add(argument: js.Object): typings.dayjs.objectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def add(duration: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def add(argument: js.Object): typings.dayjs.esmPluginObjectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def add(duration: Duration): typings.dayjs.esmPluginDurationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     /**
       * Returns a cloned Day.js object with a specified amount of time added.
       * ```
@@ -64,7 +65,7 @@ object esmMod {
       */
     def add(value: Double): Dayjs = js.native
     def add(value: Double, unit: ManipulateType): Dayjs = js.native
-    def add(value: Double, unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def add(value: Double, unit: QUnitType): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def calendar(): String = js.native
     def calendar(referenceTime: Unit, formats: js.Object): String = js.native
@@ -91,7 +92,7 @@ object esmMod {
     def date(value: Double): Dayjs = js.native
     
     def dates(): Double = js.native
-    def dates(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def dates(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the day of the week.
@@ -115,10 +116,10 @@ object esmMod {
     def day(value: Double): Dayjs = js.native
     
     def dayOfYear(): Double = js.native
-    def dayOfYear(value: Double): typings.dayjs.dayOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def dayOfYear(value: Double): typings.dayjs.esmPluginDayOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def days(): Double = js.native
-    def days(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def days(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the number of days in the current month.
@@ -172,10 +173,10 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/manipulate/end-of
       */
     def endOf(unit: OpUnitType): Dayjs = js.native
-    def endOf(unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def endOf(unit: ISOUnitType): typings.dayjs.isoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def endOf(unit: QUnitType): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def endOf(unit: ISOUnitType): typings.dayjs.esmPluginIsoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
     @JSName("endOf")
-    def endOf_Dayjs(unit: OpUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def endOf_Dayjs(unit: OpUnitType): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the formatted date according to the string of tokens passed in.
@@ -234,7 +235,7 @@ object esmMod {
     def hour(value: Double): Dayjs = js.native
     
     def hours(): Double = js.native
-    def hours(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def hours(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * This indicates whether the Day.js object is after the other supplied date-time.
@@ -273,10 +274,10 @@ object esmMod {
     def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
     
     def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String | `[]`): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Null, d: (/* () */ String) | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: (/* () */ String) | `[]`): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String | `[]`): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: (/* () */ String) | `[]`): Boolean = js.native
     
     def isLeapYear(): Boolean = js.native
     
@@ -320,16 +321,16 @@ object esmMod {
     def isYesterday(): Boolean = js.native
     
     def isoWeek(): Double = js.native
-    def isoWeek(value: Double): typings.dayjs.isoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def isoWeek(value: Double): typings.dayjs.esmPluginIsoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def isoWeekYear(): Double = js.native
     
     def isoWeekday(): Double = js.native
-    def isoWeekday(value: Double): typings.dayjs.isoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def isoWeekday(value: Double): typings.dayjs.esmPluginIsoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def isoWeeksInYear(): Double = js.native
     
-    def local(): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def local(): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def locale(): String = js.native
     def locale(preset: String): Dayjs = js.native
@@ -337,7 +338,7 @@ object esmMod {
     def locale(preset: ILocale): Dayjs = js.native
     def locale(preset: ILocale, `object`: PartialILocale): Dayjs = js.native
     
-    def localeData(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.InstanceLocaleDataReturn = js.native
+    def localeData(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.InstanceLocaleDataReturn = js.native
     
     /**
       * Get the milliseconds.
@@ -359,7 +360,7 @@ object esmMod {
     def millisecond(value: Double): Dayjs = js.native
     
     def milliseconds(): Double = js.native
-    def milliseconds(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def milliseconds(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the minutes.
@@ -381,7 +382,7 @@ object esmMod {
     def minute(value: Double): Dayjs = js.native
     
     def minutes(): Double = js.native
-    def minutes(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def minutes(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the month.
@@ -407,13 +408,13 @@ object esmMod {
     def month(value: Double): Dayjs = js.native
     
     def months(): Double = js.native
-    def months(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def months(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def offsetName(): js.UndefOr[String] = js.native
     def offsetName(`type`: short | long): js.UndefOr[String] = js.native
     
     def quarter(): Double = js.native
-    def quarter(quarter: Double): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def quarter(quarter: Double): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the seconds.
@@ -434,9 +435,9 @@ object esmMod {
     def second(value: Double): Dayjs = js.native
     
     def seconds(): Double = js.native
-    def seconds(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def seconds(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
-    def set(argument: js.Object): typings.dayjs.objectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def set(argument: js.Object): typings.dayjs.esmPluginObjectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
     /**
       * Generic setter, accepting unit as first argument, and value as second, returns a new instance with the applied changes.
       *
@@ -464,13 +465,13 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/manipulate/start-of
       */
     def startOf(unit: OpUnitType): Dayjs = js.native
-    def startOf(unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def startOf(unit: ISOUnitType): typings.dayjs.isoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def startOf(unit: QUnitType): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def startOf(unit: ISOUnitType): typings.dayjs.esmPluginIsoWeekMod.dayjsEsmAugmentingMod.Dayjs = js.native
     @JSName("startOf")
-    def startOf_Dayjs(unit: OpUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def startOf_Dayjs(unit: OpUnitType): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
-    def subtract(argument: js.Object): typings.dayjs.objectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def subtract(duration: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def subtract(argument: js.Object): typings.dayjs.esmPluginObjectSupportMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def subtract(duration: Duration): typings.dayjs.esmPluginDurationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     /**
       * Returns a cloned Day.js object with a specified amount of time subtracted.
       * ```
@@ -482,7 +483,7 @@ object esmMod {
       */
     def subtract(value: Double): Dayjs = js.native
     def subtract(value: Double, unit: ManipulateType): Dayjs = js.native
-    def subtract(value: Double, unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def subtract(value: Double, unit: QUnitType): typings.dayjs.esmPluginQuarterOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def to(compared: ConfigType): String = js.native
     def to(compared: ConfigType, withoutSuffix: Boolean): String = js.native
@@ -520,10 +521,10 @@ object esmMod {
     
     def toObject(): DayjsObject = js.native
     
-    def tz(): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def tz(timezone: String): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def tz(timezone: String, keepLocalTime: Boolean): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def tz(timezone: Unit, keepLocalTime: Boolean): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def tz(): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def tz(timezone: String): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def tz(timezone: String, keepLocalTime: Boolean): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def tz(timezone: Unit, keepLocalTime: Boolean): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * This returns the Unix timestamp (the number of **seconds** since the Unix Epoch) of the Day.js object.
@@ -536,8 +537,8 @@ object esmMod {
       */
     def unix(): Double = js.native
     
-    def utc(): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def utc(keepLocalTime: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utc(): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utc(keepLocalTime: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the UTC offset in minutes.
@@ -547,21 +548,21 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/manipulate/utc-offset
       */
     def utcOffset(): Double = js.native
-    def utcOffset(offset: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def utcOffset(offset: String, keepLocalTime: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def utcOffset(offset: Double): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def utcOffset(offset: Double, keepLocalTime: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utcOffset(offset: String): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utcOffset(offset: String, keepLocalTime: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utcOffset(offset: Double): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def utcOffset(offset: Double, keepLocalTime: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def week(): Double = js.native
-    def week(value: Double): typings.dayjs.weekOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def week(value: Double): typings.dayjs.esmPluginWeekOfYearMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def weekYear(): Double = js.native
     
     def weekday(): Double = js.native
-    def weekday(value: Double): typings.dayjs.weekdayMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def weekday(value: Double): typings.dayjs.esmPluginWeekdayMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def weeks(): Double = js.native
-    def weeks(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def weeks(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * Get the year.
@@ -581,7 +582,7 @@ object esmMod {
     def year(value: Double): Dayjs = js.native
     
     def years(): Double = js.native
-    def years(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def years(value: Double): typings.dayjs.esmPluginPluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
   }
   
   @JSImport("dayjs/esm", "duration")
@@ -610,7 +611,7 @@ object esmMod {
   inline def locale(preset: ILocale, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def locale(preset: ILocale, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def localeData(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn]
+  inline def localeData(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn]
   
   inline def max(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Dayjs]
   inline def max(dayjs: js.Array[Dayjs]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
@@ -618,31 +619,31 @@ object esmMod {
   inline def min(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Dayjs]
   inline def min(dayjs: js.Array[Dayjs]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
-  inline def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames]
+  inline def months(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames]
   
-  inline def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames]
+  inline def monthsShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames]
   
   inline def unix(t: Double): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
   inline def updateLocale(localeName: String, customConfig: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(localeName.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
-  inline def utc(): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: Unit, format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: Unit, format: String, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: Unit, format: Unit, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: ConfigType): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: ConfigType, format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: ConfigType, format: String, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
-  inline def utc(config: ConfigType, format: Unit, strict: Boolean): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: Unit, format: String): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: Unit, format: String, strict: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: Unit, format: Unit, strict: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: ConfigType): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: ConfigType, format: String): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: ConfigType, format: String, strict: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
+  inline def utc(config: ConfigType, format: Unit, strict: Boolean): typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.esmPluginUtcMod.dayjsEsmAugmentingMod.Dayjs]
   
-  inline def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
-  inline def weekdays(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  inline def weekdays(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  inline def weekdays(localOrder: Boolean): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
-  inline def weekdaysMin(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
-  inline def weekdaysMin(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  inline def weekdaysMin(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  inline def weekdaysMin(localOrder: Boolean): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
-  inline def weekdaysShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
-  inline def weekdaysShort(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  inline def weekdaysShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  inline def weekdaysShort(localOrder: Boolean): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -734,9 +735,9 @@ object esmMod {
   @js.native
   trait DayjsTimezone extends StObject {
     
-    def apply(date: ConfigType): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def apply(date: ConfigType, format: String, timezone: String): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def apply(date: ConfigType, timezone: String): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def apply(date: ConfigType): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def apply(date: ConfigType, format: String, timezone: String): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def apply(date: ConfigType, timezone: String): typings.dayjs.esmPluginTimezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def guess(): String = js.native
     
@@ -791,17 +792,17 @@ object esmMod {
     def meridiem(hour: Unit, minute: Double, isLower: Boolean): String = js.native
     def meridiem(hour: Unit, minute: Unit, isLower: Boolean): String = js.native
     
-    def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    def months(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
-    def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    def monthsShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
     def ordinal(n: Double): String = js.native
     
-    def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdays(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     
-    def weekdaysMin(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdaysMin(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     
-    def weekdaysShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdaysShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
   }
   
   @js.native
@@ -820,22 +821,22 @@ object esmMod {
     def meridiem(hour: Unit, minute: Double, isLower: Boolean): String = js.native
     def meridiem(hour: Unit, minute: Unit, isLower: Boolean): String = js.native
     
-    def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
-    def months(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    def months(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    def months(instance: typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
-    def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
-    def monthsShort(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    def monthsShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+    def monthsShort(instance: typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
     def ordinal(n: Double): String = js.native
     
-    def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
-    def weekdays(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdays(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdays(instance: typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     
-    def weekdaysMin(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
-    def weekdaysMin(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdaysMin(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdaysMin(instance: typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
     
-    def weekdaysShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
-    def weekdaysShort(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdaysShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+    def weekdaysShort(instance: typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
   }
   
   /* Inlined std.Exclude<dayjs.dayjs/esm.OpUnitType, 'date' | 'dates'> */
@@ -1014,7 +1015,7 @@ object esmMod {
   type PluginFunc[T] = js.Function3[
     /* option */ T, 
     /* c */ Instantiable1[/* config */ js.UndefOr[ConfigType], Dayjs], 
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof dayjs */ /* d */ Any, 
+    /* d */ FnCall, 
     Unit
   ]
   

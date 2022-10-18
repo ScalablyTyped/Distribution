@@ -16,6 +16,9 @@ trait TitleFieldProps[T, F] extends StObject {
   /** A boolean value stating if the field is required */
   var required: js.UndefOr[Boolean] = js.undefined
   
+  /** The schema object for the field being titled */
+  var schema: RJSFSchema
+  
   /** The title for the field being rendered */
   var title: String
   
@@ -24,8 +27,8 @@ trait TitleFieldProps[T, F] extends StObject {
 }
 object TitleFieldProps {
   
-  inline def apply[T, F](id: String, registry: Registry[T, F], title: String): TitleFieldProps[T, F] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+  inline def apply[T, F](id: String, registry: Registry[T, F], schema: RJSFSchema, title: String): TitleFieldProps[T, F] = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TitleFieldProps[T, F]]
   }
   
@@ -38,6 +41,8 @@ object TitleFieldProps {
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setSchema(value: RJSFSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

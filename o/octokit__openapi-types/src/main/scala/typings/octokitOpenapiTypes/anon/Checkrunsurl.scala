@@ -19,7 +19,7 @@ trait Checkrunsurl extends StObject {
   /** @example d6fde92930d4715a2b49857d24b940956b26d2d3 */
   var after: String | Null
   
-  var app: Externalurl | Null
+  var app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
   
   /** @example 146e867f55c26428e5f9fade55a9bbf5e95a7912 */
   var before: String | Null
@@ -38,7 +38,7 @@ trait Checkrunsurl extends StObject {
   /** @example master */
   var head_branch: String | Null
   
-  var head_commit: Timestamp
+  var head_commit: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-commit'] */ js.Any
   
   /**
     * @description The SHA of the head commit that is being checked.
@@ -54,9 +54,11 @@ trait Checkrunsurl extends StObject {
   /** @example MDEwOkNoZWNrU3VpdGU1 */
   var node_id: String
   
-  var pull_requests: js.Array[HeadId] | Null
+  var pull_requests: (js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-minimal'] */ js.Any
+  ]) | Null
   
-  var repository: Branchesurl
+  var repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
   
   var rerequestable: js.UndefOr[Boolean] = js.undefined
   
@@ -77,15 +79,16 @@ trait Checkrunsurl extends StObject {
 object Checkrunsurl {
   
   inline def apply(
+    app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any,
     check_runs_url: String,
-    head_commit: Timestamp,
+    head_commit: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-commit'] */ js.Any,
     head_sha: String,
     id: Double,
     latest_check_runs_count: Double,
     node_id: String,
-    repository: Branchesurl
+    repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
   ): Checkrunsurl = {
-    val __obj = js.Dynamic.literal(check_runs_url = check_runs_url.asInstanceOf[js.Any], head_commit = head_commit.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latest_check_runs_count = latest_check_runs_count.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], after = null, app = null, before = null, conclusion = null, created_at = null, head_branch = null, pull_requests = null, status = null, updated_at = null, url = null)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], check_runs_url = check_runs_url.asInstanceOf[js.Any], head_commit = head_commit.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latest_check_runs_count = latest_check_runs_count.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], after = null, before = null, conclusion = null, created_at = null, head_branch = null, pull_requests = null, status = null, updated_at = null, url = null)
     __obj.asInstanceOf[Checkrunsurl]
   }
   
@@ -95,9 +98,9 @@ object Checkrunsurl {
     
     inline def setAfterNull: Self = StObject.set(x, "after", null)
     
-    inline def setApp(value: Externalurl): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
-    
-    inline def setAppNull: Self = StObject.set(x, "app", null)
+    inline def setApp(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
+    ): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
@@ -117,7 +120,9 @@ object Checkrunsurl {
     
     inline def setHead_branchNull: Self = StObject.set(x, "head_branch", null)
     
-    inline def setHead_commit(value: Timestamp): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
+    inline def setHead_commit(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-commit'] */ js.Any
+    ): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
     
     inline def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
@@ -127,13 +132,21 @@ object Checkrunsurl {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPull_requests(value: js.Array[HeadId]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    inline def setPull_requests(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-minimal'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
     inline def setPull_requestsNull: Self = StObject.set(x, "pull_requests", null)
     
-    inline def setPull_requestsVarargs(value: HeadId*): Self = StObject.set(x, "pull_requests", js.Array(value*))
+    inline def setPull_requestsVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-minimal'] */ js.Any)*
+    ): Self = StObject.set(x, "pull_requests", js.Array(value*))
     
-    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
+    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     inline def setRerequestable(value: Boolean): Self = StObject.set(x, "rerequestable", value.asInstanceOf[js.Any])
     

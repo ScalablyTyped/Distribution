@@ -33,6 +33,7 @@ import typings.std.HTMLVideoElement
 import typings.std.MouseEvent
 import typings.std.Touch
 import typings.std.TouchEvent
+import typings.std.UIEvent
 import typings.std.WheelEvent
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -117,8 +118,16 @@ object cropperMod {
     /* static member */
     @JSImport("react-easy-crop/Cropper", "default.getMousePoint")
     @js.native
-    def getMousePoint: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X] = js.native
-    inline def getMousePoint_=(x: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMousePoint")(x.asInstanceOf[js.Any])
+    def getMousePoint: js.Function1[
+        /* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]) | GestureEvent, 
+        X
+      ] = js.native
+    inline def getMousePoint_=(
+      x: js.Function1[
+          /* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]) | GestureEvent, 
+          X
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMousePoint")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("react-easy-crop/Cropper", "default.getTouchPoint")
@@ -161,6 +170,10 @@ object cropperMod {
     
     def emitCropData(): Unit = js.native
     
+    var gestureRotationStart: Double = js.native
+    
+    var gestureZoomStart: Double = js.native
+    
     def getAspect(): Double = js.native
     
     def getCropData(): CroppedAreaPercentages | Null = js.native
@@ -170,6 +183,8 @@ object cropperMod {
     def getPointOnMedia(hasXY: Point): X = js.native
     
     var imageRef: RefObject[HTMLImageElement] = js.native
+    
+    var isTouching: Boolean = js.native
     
     var lastPinchDistance: Double = js.native
     
@@ -182,6 +197,12 @@ object cropperMod {
     def onDragStart(hasXY: Point): Unit = js.native
     
     def onDragStopped(): Unit = js.native
+    
+    def onGestureEnd(e: GestureEvent): Unit = js.native
+    
+    def onGestureMove(e: GestureEvent): Unit = js.native
+    
+    def onGestureStart(e: GestureEvent): Unit = js.native
     
     def onMediaLoad(): Unit = js.native
     
@@ -448,6 +469,20 @@ object cropperMod {
       
       inline def setZoomWithScrollUndefined: Self = StObject.set(x, "zoomWithScroll", js.undefined)
     }
+  }
+  
+  @js.native
+  trait GestureEvent
+    extends StObject
+       with UIEvent {
+    
+    var clientX: Double = js.native
+    
+    var clientY: Double = js.native
+    
+    var rotation: Double = js.native
+    
+    var scale: Double = js.native
   }
   
   trait State extends StObject {

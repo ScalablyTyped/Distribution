@@ -118,6 +118,7 @@ object mod {
     def watchState(key: String, handler: js.Function1[/* newValue */ Any, Unit]): Any = js.native
   }
   
+  /* augmented module */
   object nuxtTypesAugmentingMod {
     
     trait Context extends StObject {
@@ -139,6 +140,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object nuxtVueAppAugmentingMod {
     
     trait Context extends StObject {
@@ -160,6 +162,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object vueTypesOptionsAugmentingMod {
     
     trait ComponentOptions[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] extends StObject {
@@ -182,6 +185,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object vueTypesVueAugmentingMod {
     
     trait Vue extends StObject {
@@ -203,6 +207,7 @@ object mod {
     }
   }
   
+  /* augmented module */
   object vuexTypesIndexAugmentingMod {
     
     trait Store[S] extends StObject {

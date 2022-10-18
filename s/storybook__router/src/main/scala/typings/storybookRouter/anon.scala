@@ -2,10 +2,10 @@ package typings.storybookRouter
 
 import typings.react.mod.HTMLAttributeAnchorTarget
 import typings.std.DOMStringList
-import typings.storybookRouter.reactRouterNodeModulesHistoryIndexMod.Hash
-import typings.storybookRouter.reactRouterNodeModulesHistoryIndexMod.Key
-import typings.storybookRouter.reactRouterNodeModulesHistoryIndexMod.Pathname
-import typings.storybookRouter.reactRouterNodeModulesHistoryIndexMod.Search
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Hash
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Key
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Pathname
+import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

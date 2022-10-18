@@ -1,6 +1,6 @@
 package typings.slateBase64Serializer
 
-import typings.slate.nodeMod.Node
+import typings.slate.distInterfacesNodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

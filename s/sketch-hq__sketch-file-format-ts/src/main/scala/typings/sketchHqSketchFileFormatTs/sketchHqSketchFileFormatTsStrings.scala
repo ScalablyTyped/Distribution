@@ -1,6 +1,6 @@
 package typings.sketchHqSketchFileFormatTs
 
-import typings.sketchHqSketchFileFormatTs.typesMod.SketchVariant
+import typings.sketchHqSketchFileFormatTs.distCjsTypesMod.SketchVariant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

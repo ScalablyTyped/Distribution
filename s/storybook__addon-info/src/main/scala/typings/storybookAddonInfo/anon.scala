@@ -6,7 +6,7 @@ import typings.storybookAddonInfo.storybookAddonInfoStrings.centered
 import typings.storybookAddonInfo.storybookAddonInfoStrings.fullscreen
 import typings.storybookAddonInfo.storybookAddonInfoStrings.none
 import typings.storybookAddonInfo.storybookAddonInfoStrings.padded
-import typings.storybookAddons.typesMod.OptionsParameter
+import typings.storybookAddons.distTs3Dot9TypesMod.OptionsParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object anon {
   
   trait DefaultValue extends StObject {
     
-    var defaultValue: js.Any
+    var defaultValue: Any
     
     var description: String
     
@@ -29,7 +29,7 @@ object anon {
   object DefaultValue {
     
     inline def apply(
-      defaultValue: js.Any,
+      defaultValue: Any,
       description: String,
       propType: js.Object | String,
       property: String,
@@ -41,7 +41,7 @@ object anon {
     
     extension [Self <: DefaultValue](x: Self) {
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -56,7 +56,7 @@ object anon {
   /* Inlined @storybook/addons.@storybook/addons.Parameters & {  info :@storybook/addon-info.@storybook/addon-info.Options} */
   trait ParametersinfoOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var docsOnly: js.UndefOr[Boolean] = js.undefined
     

@@ -1,16 +1,16 @@
 package typings.webdriverio
 
-import typings.webdriverio.interceptionTypesMod.ErrorCode
-import typings.webdriverio.interceptionTypesMod.MixedContentType
-import typings.webdriverio.interceptionTypesMod.ReferrerPolicy
-import typings.webdriverio.interceptionTypesMod.ResourcePriority
-import typings.webdriverio.interceptionTypesMod.ThrottlePreset
-import typings.webdriverio.typesMod.ActionTypes
-import typings.webdriverio.typesMod.ElementCommandNames
-import typings.webdriverio.typesMod.ElementQueryCommands
-import typings.webdriverio.typesMod.ElementsQueryCommands
-import typings.webdriverio.typesMod.MultiElementCommandNames
-import typings.webdriverio.typesMod.SingleElementCommandNames
+import typings.webdriverio.buildTypesMod.ActionTypes
+import typings.webdriverio.buildTypesMod.ElementCommandNames
+import typings.webdriverio.buildTypesMod.ElementQueryCommands
+import typings.webdriverio.buildTypesMod.ElementsQueryCommands
+import typings.webdriverio.buildTypesMod.MultiElementCommandNames
+import typings.webdriverio.buildTypesMod.SingleElementCommandNames
+import typings.webdriverio.buildUtilsInterceptionTypesMod.ErrorCode
+import typings.webdriverio.buildUtilsInterceptionTypesMod.MixedContentType
+import typings.webdriverio.buildUtilsInterceptionTypesMod.ReferrerPolicy
+import typings.webdriverio.buildUtilsInterceptionTypesMod.ResourcePriority
+import typings.webdriverio.buildUtilsInterceptionTypesMod.ThrottlePreset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

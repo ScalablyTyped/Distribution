@@ -2,14 +2,19 @@ package typings.reapop
 
 import typings.react.mod.CSSProperties
 import typings.react.mod.global.JSX.Element
-import typings.reapop.actionsMod.DismissNotificationAction
-import typings.reapop.actionsMod.DismissNotificationsAction
-import typings.reapop.actionsMod.NotificationActions
-import typings.reapop.actionsMod.UpsertNotificationAction
 import typings.reapop.anon.PartialNotification
 import typings.reapop.anon.PartialNotificationConfig
-import typings.reapop.notificationsSystemMod.Props
-import typings.reapop.reapopNotificationsContextMod.NotificationsContext
+import typings.reapop.distComponentsNotificationsSystemMod.Props
+import typings.reapop.distContextsReapopNotificationsContextMod.NotificationsContext
+import typings.reapop.distReducersNotificationsActionsMod.DismissNotificationAction
+import typings.reapop.distReducersNotificationsActionsMod.DismissNotificationsAction
+import typings.reapop.distReducersNotificationsActionsMod.NotificationActions
+import typings.reapop.distReducersNotificationsActionsMod.UpsertNotificationAction
+import typings.reapop.distReducersNotificationsReducerMod.InitReduxAction
+import typings.reapop.distReducersNotificationsTypesMod.Notification
+import typings.reapop.distReducersNotificationsTypesMod.Position
+import typings.reapop.distReducersNotificationsTypesMod.Status
+import typings.reapop.distThemesTypesMod.Theme
 import typings.reapop.reapopStrings.`bottom-center`
 import typings.reapop.reapopStrings.`bottom-left`
 import typings.reapop.reapopStrings.`bottom-right`
@@ -22,11 +27,6 @@ import typings.reapop.reapopStrings.loading
 import typings.reapop.reapopStrings.none
 import typings.reapop.reapopStrings.success
 import typings.reapop.reapopStrings.warning
-import typings.reapop.reducerMod.InitReduxAction
-import typings.reapop.themesTypesMod.Theme
-import typings.reapop.typesMod.Notification
-import typings.reapop.typesMod.Position
-import typings.reapop.typesMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,11 +39,11 @@ object mod {
   
   inline def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def FadeTransition(props: typings.reapop.fadeTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def FadeTransition(props: typings.reapop.distComponentsFadeTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def GrowTransition(props: typings.reapop.growTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("GrowTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def GrowTransition(props: typings.reapop.distComponentsGrowTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("GrowTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def NotificationsProvider(props: typings.reapop.notificationsProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationsProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NotificationsProvider(props: typings.reapop.distComponentsNotificationsProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationsProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object POSITIONS {
     
@@ -119,7 +119,7 @@ object mod {
     inline def warning_=(x: warning): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  inline def SlideTransition(props: typings.reapop.slideTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SlideTransition(props: typings.reapop.distComponentsSlideTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("reapop", "atalhoTheme")
   @js.native

@@ -1,6 +1,6 @@
 package typings.googleGax
 
-import typings.googleGax.fallbackServiceStubMod.FetchParametersMethod
+import typings.googleGax.buildSrcFallbackServiceStubMod.FetchParametersMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,20 +46,12 @@ object googleGaxStrings {
   inline def bytes: bytes = "bytes".asInstanceOf[bytes]
   
   @js.native
-  sealed trait custom extends StObject
-  inline def custom: custom = "custom".asInstanceOf[custom]
-  
-  @js.native
   sealed trait delete_ extends StObject
   inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
   sealed trait double extends StObject
   inline def double: double = "double".asInstanceOf[double]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait fixed32 extends StObject
@@ -112,10 +104,6 @@ object googleGaxStrings {
   @js.native
   sealed trait required extends StObject
   inline def required: required = "required".asInstanceOf[required]
-  
-  @js.native
-  sealed trait response extends StObject
-  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
   sealed trait rest extends StObject

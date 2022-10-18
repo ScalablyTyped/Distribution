@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ErrorInfo
 import typings.react.mod.ReactInstance
 import typings.std.Pick
-import typings.wixUiTestUtils.helpersMod.ControlledChangeEvent
-import typings.wixUiTestUtils.helpersMod.ControlledComponentProps
-import typings.wixUiTestUtils.helpersMod.ControlledComponentState
+import typings.wixUiTestUtils.distSrcReactHelpersHelpersMod.ControlledChangeEvent
+import typings.wixUiTestUtils.distSrcReactHelpersHelpersMod.ControlledComponentProps
+import typings.wixUiTestUtils.distSrcReactHelpersHelpersMod.ControlledComponentState
 import typings.wixUiTestUtils.wixUiTestUtilsStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,6 +72,11 @@ trait ComponentDidCatch[T /* <: ControlledComponentProps */] extends StObject {
   def render(): typings.react.mod.global.JSX.Element = js.native
   
   def setState[K /* <: value */](): Unit = js.native
+  def setState[K /* <: value */](state: ControlledComponentState | (Pick[ControlledComponentState, K])): Unit = js.native
+  def setState[K /* <: value */](
+    state: ControlledComponentState | (Pick[ControlledComponentState, K]),
+    callback: js.Function0[Unit]
+  ): Unit = js.native
   def setState[K /* <: value */](
     state: js.Function2[
       /* prevState */ ReadonlyControlledCompone, 
@@ -88,10 +93,6 @@ trait ComponentDidCatch[T /* <: ControlledComponentProps */] extends StObject {
     callback: js.Function0[Unit]
   ): Unit = js.native
   def setState[K /* <: value */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: value */](state: Pick[ControlledComponentState, K]): Unit = js.native
-  def setState[K /* <: value */](state: Pick[ControlledComponentState, K], callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: value */](state: ControlledComponentState): Unit = js.native
-  def setState[K /* <: value */](state: ControlledComponentState, callback: js.Function0[Unit]): Unit = js.native
   
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[

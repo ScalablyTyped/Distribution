@@ -3,7 +3,7 @@ package typings.remarkable
 import typings.remarkable.libMod.BlockParsingRule
 import typings.remarkable.libMod.CoreParsingRule
 import typings.remarkable.libMod.InlineParsingRule
-import typings.remarkable.rulerMod.^
+import typings.remarkable.libRulerMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

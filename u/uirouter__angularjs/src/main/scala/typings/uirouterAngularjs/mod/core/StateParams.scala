@@ -1,6 +1,6 @@
 package typings.uirouterAngularjs.mod.core
 
-import typings.uirouterCore.commonCommonMod.Obj
+import typings.uirouterCore.libCommonCommonMod.Obj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

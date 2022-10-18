@@ -9,7 +9,6 @@ import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.std.AsyncIterable
-import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,8 +138,6 @@ object mod {
   trait Walker
     extends Readable
        with AsyncIterable[Item] {
-    
-    def apply(): AsyncIterableIterator[Item] = js.native
     
     def on(event: Event, listener: js.Function): this.type = js.native
     @JSName("on")

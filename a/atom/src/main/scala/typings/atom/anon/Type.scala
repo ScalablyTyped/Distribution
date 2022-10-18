@@ -1,7 +1,7 @@
 package typings.atom.anon
 
 import typings.atom.atomStrings.separator
-import typings.atom.mod.ContextMenuOptions
+import typings.atom.srcContextMenuManagerMod.ContextMenuOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

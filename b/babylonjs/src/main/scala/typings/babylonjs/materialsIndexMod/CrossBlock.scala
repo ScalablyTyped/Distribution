@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "CrossBlock")
 @js.native
 open class CrossBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.CrossBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.CrossBlock {
   /**
     * Creates a new CrossBlock
     * @param name defines the block name

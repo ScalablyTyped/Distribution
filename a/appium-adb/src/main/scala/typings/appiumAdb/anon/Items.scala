@@ -1,6 +1,6 @@
 package typings.appiumAdb.anon
 
-import typings.appiumAdb.settingsClientCommandsMod.SmsItem
+import typings.appiumAdb.libToolsSettingsClientCommandsMod.SmsItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,7 +4,7 @@ import typings.overlayscrollbars.anon.AutoHide
 import typings.overlayscrollbars.anon.DynHeight
 import typings.overlayscrollbars.anon.Initialize
 import typings.overlayscrollbars.anon.OnContentSizeChanged
-import typings.overlayscrollbars.anon.`0`
+import typings.overlayscrollbars.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ trait Options extends StObject {
   
   var normalizeRTL: js.UndefOr[Boolean] = js.undefined
   
-  var overflowBehavior: js.UndefOr[`0`] = js.undefined
+  var overflowBehavior: js.UndefOr[`1`] = js.undefined
   
   var paddingAbsolute: js.UndefOr[Boolean] = js.undefined
   
@@ -80,7 +80,7 @@ object Options {
     
     inline def setNormalizeRTLUndefined: Self = StObject.set(x, "normalizeRTL", js.undefined)
     
-    inline def setOverflowBehavior(value: `0`): Self = StObject.set(x, "overflowBehavior", value.asInstanceOf[js.Any])
+    inline def setOverflowBehavior(value: `1`): Self = StObject.set(x, "overflowBehavior", value.asInstanceOf[js.Any])
     
     inline def setOverflowBehaviorUndefined: Self = StObject.set(x, "overflowBehavior", js.undefined)
     

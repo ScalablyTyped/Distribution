@@ -1,6 +1,5 @@
 package typings.wordpressBlocks.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentType
 import typings.std.Partial
 import typings.std.Record
@@ -22,9 +21,7 @@ trait Block[T /* <: Record[String, Any] */] extends StObject {
   /**
     * Attributes for the block.
     */
-  val attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.Block & TopLevel[Any]
+  val attributes: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
   
   /**
     * The block category (determines placement in the inserter).
@@ -182,9 +179,7 @@ trait Block[T /* <: Record[String, Any] */] extends StObject {
 object Block {
   
   inline def apply[T /* <: Record[String, Any] */](
-    attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.Block & TopLevel[Any],
+    attributes: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any,
     category: String,
     icon: BlockIconNormalized,
     name: String,
@@ -202,9 +197,7 @@ object Block {
     inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-      */ typings.wordpressBlocks.wordpressBlocksStrings.Block & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? U : T[k]>} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])

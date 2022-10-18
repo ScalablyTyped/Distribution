@@ -5,32 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextBorderColor
-  extends StObject
-     with /**
-  * Some properties like "normal" or "emphasis" are not documented.
-  * Please, write description for them
-  */
-/* unknownProperty */ StringDictionary[Any] {
-  
-  /**
-    * Horizontal alignment of text, automatic by default.
-    *
-    * Options are:
-    *
-    * + `'left'`
-    * + `'center'`
-    * + `'right'`
-    *
-    * If `align` is not set in `rich`, `align` in parent level
-    * will be used. For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.align
-    */
-  var align: js.UndefOr[String] = js.undefined
+trait TextBorderColor extends StObject {
   
   /**
     * Background color of the text fregment.
@@ -39,25 +14,31 @@ trait TextBorderColor
     *
     * Or image can be used, for example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     * `width` or `height` can be specified when using background
     * image, or auto adapted by default.
     *
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
+    *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.backgroundColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.backgroundColor
     */
   var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * Border color of the text fregment.
     *
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
+    *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.borderColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderColor
     */
   var borderColor: js.UndefOr[String] = js.undefined
   
@@ -65,7 +46,7 @@ trait TextBorderColor
     * Border radius of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.borderRadius
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderRadius
     */
   var borderRadius: js.UndefOr[Double] = js.undefined
   
@@ -73,19 +54,37 @@ trait TextBorderColor
     * Border width of the text fregment.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.borderWidth
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.borderWidth
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * text color.
     *
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
+    *
     *
     * @default
-    * ""#fff""
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.color
+    * '#000'
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.color
     */
   var color: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Distance to the host graphic element.
+    * Works when position is string value (like `'top'`、`'insideRight'`).
+    *
+    * See:
+    * [label position](https://echarts.apache.org/examples/en/editor.html?c=doc-example/label-position)
+    * .
+    *
+    *
+    * @default
+    * 5
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.distance
+    */
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * font family
@@ -95,7 +94,7 @@ trait TextBorderColor
     *
     * @default
     * "sans-serif"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontFamily
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontFamily
     */
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -104,8 +103,8 @@ trait TextBorderColor
     *
     *
     * @default
-    * 12
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontSize
+    * 11
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontSize
     */
   var fontSize: js.UndefOr[Double] = js.undefined
   
@@ -121,7 +120,7 @@ trait TextBorderColor
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontStyle
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontStyle
     */
   var fontStyle: js.UndefOr[String] = js.undefined
   
@@ -139,53 +138,9 @@ trait TextBorderColor
     *
     * @default
     * "normal"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.fontWeight
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.fontWeight
     */
   var fontWeight: js.UndefOr[String | Double] = js.undefined
-  
-  /**
-    * Data label formatter, which supports string template and
-    * callback function.
-    * In either form, `\n` is supported to represent a new line.
-    *
-    * **String template**
-    *
-    * Model variation includes:
-    *
-    * + `{a}`: series name.
-    * + `{b}`: the name of a data item.
-    * + `{c}`: the value of a data item.
-    * + `{d}`: the percent.
-    * + `{@xxx}: the value of a dimension named`'xxx'`, for example,`{@product}`refers
-    * the value of`'product'\` dimension。
-    * + `{@[n]}: the value of a dimension at the index of`n`, for
-    * example,`{@\[3\]}\` refers the value at dimensions\[3\].
-    *
-    * **example:**
-    *
-    * ```
-    * formatter: '{b}: {d}'
-    *
-    * ```
-    *
-    * **Callback function**
-    *
-    * Callback function is in form of:
-    *
-    * ```
-    * (params: Object|Array) => string
-    *
-    * ```
-    *
-    * where `params` is the single dataset needed by formatter,
-    * which is formed as:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.formatter
-    */
-  var formatter: js.UndefOr[js.Function | String] = js.undefined
   
   /**
     * Height of the text block.
@@ -193,100 +148,132 @@ trait TextBorderColor
     * You may want to use it in some cases like using background
     * image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and height
-    * of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and
+    * height of the content, without `padding`.
     *
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.height
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.height
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Line height of the text fregment.
     *
-    * If `lineHeight` is not set in `rich`, `lineHeight` in parent
-    * level will be used. For example:
+    * If `lineHeight` is not set in `rich`, `lineHeight` in
+    * parent level will be used. For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.lineHeight
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.lineHeight
     */
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
+    * Whether to move text slightly.
+    * For example: `[30, 40]` means move `30` horizontally
+    * and move `40` vertically.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.offset
+    */
+  var offset: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  /**
     * Padding of the text fregment, for example:
     *
-    * + `padding: [3, 4, 5, 6]`: represents padding of `[top, right,
-    * bottom, left]`.
+    * + `padding: [3, 4, 5, 6]`: represents padding of `[top,
+    * right, bottom, left]`.
     * + `padding: 4`: represents `padding: [4, 4, 4, 4]`.
     * + `padding: [3, 4]`: represents `padding: [3, 4, 3, 4]`.
     *
-    * Notice, `width` and `height` specifies the width and height
-    * of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and
+    * height of the content, without `padding`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.padding
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.padding
     */
   var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
-    * The position of label.
+    * Label position.
     *
-    * **Options:**
+    * **Followings are the options:**
     *
-    * + `'outside'`
+    * + \[x, y\]
     *
-    * Outside of sectors of pie chart, which relates to corresponding
-    * sector through
-    * [visual guide line](https://echarts.apache.org/en/option.html#series-pie.labelLine)
+    * Use relative percentage, or absolute pixel values to
+    * represent position of label relative to top-left corner
+    * of bounding box. For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
+    *
+    * + 'top'
+    *
+    * + 'left'
+    * + 'right'
+    * + 'bottom'
+    * + 'inside'
+    * + 'insideLeft'
+    * + 'insideRight'
+    * + 'insideTop'
+    * + 'insideBottom'
+    * + 'insideTopLeft'
+    * + 'insideBottomLeft'
+    * + 'insideTopRight'
+    * + 'insideBottomRight'
+    *
+    * See:
+    * [label position](https://echarts.apache.org/examples/en/view.html?c=doc-example/label-position)
     * .
-    *
-    * + `'inside'`
-    *
-    * Inside the sectors of pie chart.
-    *
-    * + `'inner'` is the same with `'inside'`.
-    *
-    * + `'center'`
-    *
-    * In the center of pie chart. See
-    * [pie-doughnut example](https://echarts.apache.org/examples/en/editor.html?c=pie-doughnut)
     *
     *
     * @default
-    * "outside"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.position
+    * "left"
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.position
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
+    * [see doc](https://echarts.apache.org/en/option.html#series-themeRiver.themeRiver.emphasis.label)
     *
     * For more details, see
     * [Rich Text](https://echarts.apache.org/en/option.htmltutorial.html#Rich%20Text)
     * please.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.rich
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich
     */
   var rich: js.UndefOr[
     /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.rich.%3Cuser%20defined%20style%20name%3E
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   StringDictionary[Align]
   ] = js.undefined
   
   /**
+    * Rotate label, from -90 degree to 90, positive value represents
+    * rotate anti-clockwise.
+    *
+    * See:
+    * [label rotation](https://echarts.apache.org/examples/en/editor.html?c=bar-label-rotation)
+    * .
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rotate
+    */
+  var rotate: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Show blur of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowBlur
     */
   var shadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -296,7 +283,7 @@ trait TextBorderColor
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowColor
     */
   var shadowColor: js.UndefOr[String] = js.undefined
   
@@ -304,7 +291,7 @@ trait TextBorderColor
     * Shadow X offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowOffsetX
     */
   var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -312,22 +299,28 @@ trait TextBorderColor
     * Shadow Y offset of the text block.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.shadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.shadowOffsetY
     */
   var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.show
+    * Whether to show label.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.show
     */
   var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Storke color of the text.
     *
+    * If set as `'auto'`, the color will assigned as visual
+    * color, such as series color.
+    *
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.textBorderColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textBorderColor
     */
   var textBorderColor: js.UndefOr[String] = js.undefined
   
@@ -335,7 +328,7 @@ trait TextBorderColor
     * Storke line width of the text.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.textBorderWidth
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textBorderWidth
     */
   var textBorderWidth: js.UndefOr[Double] = js.undefined
   
@@ -343,7 +336,7 @@ trait TextBorderColor
     * Shadow blue of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowBlur
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowBlur
     */
   var textShadowBlur: js.UndefOr[Double] = js.undefined
   
@@ -353,7 +346,7 @@ trait TextBorderColor
     *
     * @default
     * "transparent"
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowColor
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowColor
     */
   var textShadowColor: js.UndefOr[String] = js.undefined
   
@@ -361,7 +354,7 @@ trait TextBorderColor
     * Shadow X offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowOffsetX
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetX
     */
   var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
@@ -369,50 +362,32 @@ trait TextBorderColor
     * Shadow Y offset of the text itself.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.textShadowOffsetY
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.textShadowOffsetY
     */
   var textShadowOffsetY: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * Vertical alignment of text, automatic by default.
-    *
-    * Options are:
-    *
-    * + `'top'`
-    * + `'middle'`
-    * + `'bottom'`
-    *
-    * If `verticalAlign` is not set in `rich`, `verticalAlign`
-    * in parent level will be used. For example:
-    *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.label)
-    *
-    *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.verticalAlign
-    */
-  var verticalAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the text block.
     * It is the width of the text by default.
     * In most cases, there is no need to specify it.
-    * You may want to use it in some cases like make simple table
-    * or using background image (see `backgroundColor`).
+    * You may want to use it in some cases like make simple
+    * table or using background image (see `backgroundColor`).
     *
-    * Notice, `width` and `height` specifies the width and height
-    * of the content, without `padding`.
+    * Notice, `width` and `height` specifies the width and
+    * height of the content, without `padding`.
     *
     * `width` can also be percent string, like `'100%'`, which
-    * represents the percent of `contentWidth` (that is, the width
-    * without `padding`) of its container box.
-    * It is based on `contentWidth` because that each text fregment
-    * is layout based on the `content box`, where it makes no sense
-    * that calculating width based on `outerWith` in prectice.
+    * represents the percent of `contentWidth` (that is, the
+    * width without `padding`) of its container box.
+    * It is based on `contentWidth` because that each text
+    * fregment is layout based on the `content box`, where
+    * it makes no sense that calculating width based on `outerWith`
+    * in prectice.
     *
     * Notice, `width` and `height` only work when `rich` specified.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.label.width
+    * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.width
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
@@ -424,10 +399,6 @@ object TextBorderColor {
   }
   
   extension [Self <: TextBorderColor](x: Self) {
-    
-    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
-    
-    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     inline def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
@@ -449,6 +420,10 @@ object TextBorderColor {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
@@ -465,10 +440,6 @@ object TextBorderColor {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
-    
-    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-    
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -477,24 +448,36 @@ object TextBorderColor {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
+    inline def setOffset(value: js.Array[Any]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOffsetVarargs(value: Any*): Self = StObject.set(x, "offset", js.Array(value*))
+    
     inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Array[Any] | String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
+    inline def setPositionVarargs(value: Any*): Self = StObject.set(x, "position", js.Array(value*))
+    
     inline def setRich(
       value: /**
-      * @see https://echarts.apache.org/en/option.html#series-pie.label.rich.%3Cuser%20defined%20style%20name%3E
+      * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis.label.rich.%3Cuser%20defined%20style%20name%3E
       */
     StringDictionary[Align]
     ): Self = StObject.set(x, "rich", value.asInstanceOf[js.Any])
     
     inline def setRichUndefined: Self = StObject.set(x, "rich", js.undefined)
+    
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
@@ -539,10 +522,6 @@ object TextBorderColor {
     inline def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
     
     inline def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
-    
-    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
-    
-    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.javaactions
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
-import typings.mendixmodelsdk.structuresMod.aliases.Container
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenJavaactionsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "javaactions.FloatType")
 @js.native
 open class FloatType protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.javaactions.FloatType {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.javaactions.FloatType {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object FloatType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object FloatType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  inline def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType): typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType]
+  inline def createInBasicParameterTypeUnderType(container: typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.BasicParameterType): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object FloatType {
     *  6.6.0 to 6.6.0
     */
   /* static member */
-  inline def createInJavaActionParameterUnderJavaType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType]
+  inline def createInJavaActionParameterUnderJavaType(container: typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaActionParameter): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType]
   
   /**
     * Creates and returns a new FloatType instance in the SDK and on the server.
@@ -73,7 +73,7 @@ object FloatType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  inline def createInJavaActionUnderJavaReturnType(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType]
+  inline def createInJavaActionUnderJavaReturnType(container: typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenJavaactionsMod.javaactions.FloatType]
   
   /* static member */
   @JSImport("mendixmodelsdk", "javaactions.FloatType.structureTypeName")

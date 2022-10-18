@@ -9,7 +9,7 @@ object TelemetryEventNotification {
   
   @JSImport("vscode-languageserver", "TelemetryEventNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver", "TelemetryEventNotification.method")
   @js.native
@@ -17,5 +17,5 @@ object TelemetryEventNotification {
   
   @JSImport("vscode-languageserver", "TelemetryEventNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[Any, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[Any, Unit] = js.native
 }

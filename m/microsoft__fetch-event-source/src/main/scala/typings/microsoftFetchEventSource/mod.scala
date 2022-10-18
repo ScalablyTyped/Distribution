@@ -1,6 +1,6 @@
 package typings.microsoftFetchEventSource
 
-import typings.microsoftFetchEventSource.fetchMod.FetchEventSourceInit
+import typings.microsoftFetchEventSource.libCjsFetchMod.FetchEventSourceInit
 import typings.std.RequestInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

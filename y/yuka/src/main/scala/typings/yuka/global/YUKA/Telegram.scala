@@ -18,8 +18,8 @@ open class Telegram protected ()
     * @param data - An object for custom data.
     */
   def this(
-    sender: typings.yuka.gameEntityMod.GameEntity,
-    receiver: typings.yuka.gameEntityMod.GameEntity,
+    sender: typings.yuka.srcCoreGameEntityMod.GameEntity,
+    receiver: typings.yuka.srcCoreGameEntityMod.GameEntity,
     message: String,
     delay: Double,
     data: js.Object

@@ -1,13 +1,13 @@
 package typings.dwt
 
-import typings.dwt.addonBarcodeReaderMod.BarcodeReader
-import typings.dwt.addonCameraMod.Camera
-import typings.dwt.addonOCRMod.OCR
-import typings.dwt.addonOCRProMod.OCRPro
-import typings.dwt.addonPDFMod.PDF
-import typings.dwt.addonWebcamMod.Webcam
-import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTBorderStyle
-import typings.dwt.webTwainViewerMod.WebTwainViewer
+import typings.dwt.addonDotBarcodeReaderMod.BarcodeReader
+import typings.dwt.addonDotCameraMod.Camera
+import typings.dwt.addonDotOCRMod.OCR
+import typings.dwt.addonDotOCRProMod.OCRPro
+import typings.dwt.addonDotPDFMod.PDF
+import typings.dwt.addonDotWebcamMod.Webcam
+import typings.dwt.dynamsoftDotEnumMod.DynamsoftEnums.EnumDWTBorderStyle
+import typings.dwt.webTwainDotViewerMod.WebTwainViewer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +16,17 @@ object webTwainMod {
   
   trait Addon extends StObject {
     
-    var BarcodeReader: typings.dwt.addonBarcodeReaderMod.BarcodeReader
+    var BarcodeReader: typings.dwt.addonDotBarcodeReaderMod.BarcodeReader
     
-    var Camera: typings.dwt.addonCameraMod.Camera
+    var Camera: typings.dwt.addonDotCameraMod.Camera
     
-    var OCR: typings.dwt.addonOCRMod.OCR
+    var OCR: typings.dwt.addonDotOCRMod.OCR
     
-    var OCRPro: typings.dwt.addonOCRProMod.OCRPro
+    var OCRPro: typings.dwt.addonDotOCRProMod.OCRPro
     
-    var PDF: typings.dwt.addonPDFMod.PDF
+    var PDF: typings.dwt.addonDotPDFMod.PDF
     
-    var Webcam: typings.dwt.addonWebcamMod.Webcam
+    var Webcam: typings.dwt.addonDotWebcamMod.Webcam
   }
   object Addon {
     

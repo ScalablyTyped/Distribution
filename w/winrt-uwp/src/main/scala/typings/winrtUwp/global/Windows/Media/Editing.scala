@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Editing {
   
   /** Represents a single audio track for accompanying a video clip. */
-  @JSGlobal("Windows.Media.Editing.BackgroundAudioTrack")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Editing.BackgroundAudioTrack")
   @js.native
-  abstract class BackgroundAudioTrack ()
+  open class BackgroundAudioTrack ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack {
     
@@ -91,9 +91,9 @@ object Editing {
   }
   
   /** Represents an audio track embedded in the media clip. */
-  @JSGlobal("Windows.Media.Editing.EmbeddedAudioTrack")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Editing.EmbeddedAudioTrack")
   @js.native
-  abstract class EmbeddedAudioTrack ()
+  open class EmbeddedAudioTrack ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack {
     
@@ -106,9 +106,9 @@ object Editing {
   }
   
   /** Represents a single media object. */
-  @JSGlobal("Windows.Media.Editing.MediaClip")
+  /* note: abstract class */ @JSGlobal("Windows.Media.Editing.MediaClip")
   @js.native
-  abstract class MediaClip ()
+  open class MediaClip ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Editing.MediaClip {
     

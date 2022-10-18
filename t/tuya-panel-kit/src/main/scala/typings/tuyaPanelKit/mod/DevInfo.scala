@@ -1,6 +1,5 @@
 package typings.tuyaPanelKit.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
 import typings.tuyaPanelKit.anon.Bic
 import org.scalablytyped.runtime.StObject
@@ -143,9 +142,7 @@ trait DevInfo[S] extends StObject {
   
   var runtimeEnv: String
   
-  var schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[Any]
+  var schema: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema} */ js.Any
   
   var schemaExt: String
   
@@ -247,9 +244,7 @@ object DevInfo {
     rnFind: Boolean,
     roomId: Double,
     runtimeEnv: String,
-    schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[Any],
+    schema: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema} */ js.Any,
     schemaExt: String,
     sharedTime: Double,
     sigmeshId: String,
@@ -409,9 +404,7 @@ object DevInfo {
     inline def setRuntimeEnv(value: String): Self = StObject.set(x, "runtimeEnv", value.asInstanceOf[js.Any])
     
     inline def setSchema(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-      */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema} */ js.Any
     ): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaExt(value: String): Self = StObject.set(x, "schemaExt", value.asInstanceOf[js.Any])

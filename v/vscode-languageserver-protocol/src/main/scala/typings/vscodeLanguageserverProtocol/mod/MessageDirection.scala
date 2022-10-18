@@ -9,11 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object MessageDirection extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection & String] = js.native
+  def apply(value: String): js.UndefOr[
+    typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection & String
+  ] = js.native
   
-  /* "both" */ val both: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection.both & String = js.native
+  /* "both" */ val both: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection.both & String = js.native
   
-  /* "clientToServer" */ val clientToServer: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection.clientToServer & String = js.native
+  /* "clientToServer" */ val clientToServer: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection.clientToServer & String = js.native
   
-  /* "serverToClient" */ val serverToClient: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection.serverToClient & String = js.native
+  /* "serverToClient" */ val serverToClient: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection.serverToClient & String = js.native
 }

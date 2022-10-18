@@ -1,6 +1,6 @@
 package typings.antvG2.anon
 
-import typings.antvG2.labelInterfaceMod.TextAlign
+import typings.antvG2.libGeometryLabelInterfaceMod.TextAlign
 import typings.antvG2.libInterfaceMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

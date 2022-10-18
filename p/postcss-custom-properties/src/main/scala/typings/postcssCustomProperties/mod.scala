@@ -2,10 +2,10 @@ package typings.postcssCustomProperties
 
 import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.PluginCreator
-import typings.postcssCustomProperties.optionsMod.ExportOptions
-import typings.postcssCustomProperties.optionsMod.ImportCustomProperties
-import typings.postcssCustomProperties.optionsMod.ImportFromSource
-import typings.postcssCustomProperties.optionsMod.ImportOptions
+import typings.postcssCustomProperties.distLibOptionsMod.ExportOptions
+import typings.postcssCustomProperties.distLibOptionsMod.ImportCustomProperties
+import typings.postcssCustomProperties.distLibOptionsMod.ImportFromSource
+import typings.postcssCustomProperties.distLibOptionsMod.ImportOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

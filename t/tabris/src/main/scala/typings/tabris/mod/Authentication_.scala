@@ -2,7 +2,7 @@ package typings.tabris.mod
 
 import typings.tabris.anon.AllowCredentials
 import typings.tabris.anon.Message
-import typings.tabris.anon.`18`
+import typings.tabris.anon.`2`
 import typings.tabris.tabrisStrings.face
 import typings.tabris.tabrisStrings.fingerprint
 import org.scalablytyped.runtime.StObject
@@ -40,7 +40,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param options A set of options to apply when authenticating.
     */
   def canAuthenticate(): Boolean = js.native
-  def canAuthenticate(options: `18`): Boolean = js.native
+  def canAuthenticate(options: `2`): Boolean = js.native
   
   /**
     * Closes a potentially open authentication ui.

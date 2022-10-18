@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +11,12 @@ trait Table extends StObject {
     * unavailable), then there will be an entry for the cluster with UNKNOWN `replication_status`. Views: `REPLICATION_VIEW`, `ENCRYPTION_VIEW`, `FULL`
     */
   var clusterStates: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState} */ js.Any
   ] = js.undefined
   
   /** The column families configured for this table, mapped by column family ID. Views: `SCHEMA_VIEW`, `FULL` */
   var columnFamilies: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily} */ js.Any
   ] = js.undefined
   
   /**
@@ -46,17 +41,13 @@ object Table {
   extension [Self <: Table](x: Self) {
     
     inline def setClusterStates(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState} */ js.Any
     ): Self = StObject.set(x, "clusterStates", value.asInstanceOf[js.Any])
     
     inline def setClusterStatesUndefined: Self = StObject.set(x, "clusterStates", js.undefined)
     
     inline def setColumnFamilies(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily} */ js.Any
     ): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
     
     inline def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)

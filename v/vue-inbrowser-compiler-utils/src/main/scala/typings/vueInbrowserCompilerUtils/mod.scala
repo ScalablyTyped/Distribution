@@ -1,9 +1,9 @@
 package typings.vueInbrowserCompilerUtils
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vueInbrowserCompilerUtils.adaptCreateElementMod.CreateElementFunction
-import typings.vueInbrowserCompilerUtils.parseComponentMod.VsgSFCDescriptor
-import typings.vueInbrowserCompilerUtils.typesMod.ComponentDoc
+import typings.vueInbrowserCompilerUtils.libTypesAdaptCreateElementMod.CreateElementFunction
+import typings.vueInbrowserCompilerUtils.libTypesParseComponentMod.VsgSFCDescriptor
+import typings.vueInbrowserCompilerUtils.libTypesTypesMod.ComponentDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

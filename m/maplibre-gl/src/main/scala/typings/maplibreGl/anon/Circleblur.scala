@@ -9,7 +9,7 @@ import typings.maplibreGl.maplibreGlStrings.id
 import typings.maplibreGl.maplibreGlStrings.ln2
 import typings.maplibreGl.maplibreGlStrings.map
 import typings.maplibreGl.maplibreGlStrings.pi
-import typings.maplibreGl.maplibreGlStrings.properties_
+import typings.maplibreGl.maplibreGlStrings.properties
 import typings.maplibreGl.maplibreGlStrings.viewport
 import typings.maplibreGl.maplibreGlStrings.zoom
 import typings.maplibreGl.mod.ColorSpecification
@@ -57,7 +57,7 @@ object Circleblur {
     inline def `setCircle-blurUndefined`: Self = StObject.set(x, "circle-blur", js.undefined)
     
     inline def `setCircle-blurVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-blur", js.Array(value*))
     
     inline def `setCircle-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "circle-color", value.asInstanceOf[js.Any])
@@ -65,7 +65,7 @@ object Circleblur {
     inline def `setCircle-colorUndefined`: Self = StObject.set(x, "circle-color", js.undefined)
     
     inline def `setCircle-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-color", js.Array(value*))
     
     inline def `setCircle-opacity`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "circle-opacity", value.asInstanceOf[js.Any])
@@ -73,7 +73,7 @@ object Circleblur {
     inline def `setCircle-opacityUndefined`: Self = StObject.set(x, "circle-opacity", js.undefined)
     
     inline def `setCircle-opacityVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-opacity", js.Array(value*))
     
     inline def `setCircle-pitch-alignment`(value: PropertyValueSpecification[map | viewport]): Self = StObject.set(x, "circle-pitch-alignment", value.asInstanceOf[js.Any])
@@ -89,7 +89,7 @@ object Circleblur {
     inline def `setCircle-radiusUndefined`: Self = StObject.set(x, "circle-radius", js.undefined)
     
     inline def `setCircle-radiusVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-radius", js.Array(value*))
     
     inline def `setCircle-stroke-color`(value: DataDrivenPropertyValueSpecification[ColorSpecification]): Self = StObject.set(x, "circle-stroke-color", value.asInstanceOf[js.Any])
@@ -97,7 +97,7 @@ object Circleblur {
     inline def `setCircle-stroke-colorUndefined`: Self = StObject.set(x, "circle-stroke-color", js.undefined)
     
     inline def `setCircle-stroke-colorVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-stroke-color", js.Array(value*))
     
     inline def `setCircle-stroke-opacity`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "circle-stroke-opacity", value.asInstanceOf[js.Any])
@@ -105,7 +105,7 @@ object Circleblur {
     inline def `setCircle-stroke-opacityUndefined`: Self = StObject.set(x, "circle-stroke-opacity", js.undefined)
     
     inline def `setCircle-stroke-opacityVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-stroke-opacity", js.Array(value*))
     
     inline def `setCircle-stroke-width`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "circle-stroke-width", value.asInstanceOf[js.Any])
@@ -113,7 +113,7 @@ object Circleblur {
     inline def `setCircle-stroke-widthUndefined`: Self = StObject.set(x, "circle-stroke-width", js.undefined)
     
     inline def `setCircle-stroke-widthVarargs`(
-      value: (accumulated | `geometry-type` | id | `line-progress` | properties_ | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
+      value: (accumulated | `geometry-type` | id | `line-progress` | properties | ExpressionSpecification | ln2 | pi | zoom | `heatmap-density`)*
     ): Self = StObject.set(x, "circle-stroke-width", js.Array(value*))
     
     inline def `setCircle-translate`(value: PropertyValueSpecification[js.Tuple2[Double, Double]]): Self = StObject.set(x, "circle-translate", value.asInstanceOf[js.Any])

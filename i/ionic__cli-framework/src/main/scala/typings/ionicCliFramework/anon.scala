@@ -101,7 +101,7 @@ object anon {
   
   trait Colors extends StObject {
     
-    var colors: js.UndefOr[typings.ionicCliFramework.colorsMod.Colors] = js.undefined
+    var colors: js.UndefOr[typings.ionicCliFramework.libColorsMod.Colors] = js.undefined
   }
   object Colors {
     
@@ -112,7 +112,7 @@ object anon {
     
     extension [Self <: Colors](x: Self) {
       
-      inline def setColors(value: typings.ionicCliFramework.colorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: typings.ionicCliFramework.libColorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     }

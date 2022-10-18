@@ -1,6 +1,6 @@
 package typings.c3.mod
 
-import typings.c3.anon.Min
+import typings.c3.anon.`6`
 import typings.c3.c3Strings.drag
 import typings.c3.c3Strings.scroll
 import typings.std.Event
@@ -59,7 +59,7 @@ trait ZoomOptions extends StObject {
     */
   var `type`: js.UndefOr[scroll | drag] = js.undefined
   
-  var x: js.UndefOr[Min] = js.undefined
+  var x: js.UndefOr[`6`] = js.undefined
 }
 object ZoomOptions {
   
@@ -110,7 +110,7 @@ object ZoomOptions {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setX(value: Min): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: `6`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }

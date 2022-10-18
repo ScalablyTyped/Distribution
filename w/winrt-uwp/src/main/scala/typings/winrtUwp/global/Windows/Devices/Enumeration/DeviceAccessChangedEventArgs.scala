@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the AccessChanged event. */
-@JSGlobal("Windows.Devices.Enumeration.DeviceAccessChangedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Enumeration.DeviceAccessChangedEventArgs")
 @js.native
-abstract class DeviceAccessChangedEventArgs ()
+open class DeviceAccessChangedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Enumeration.DeviceAccessChangedEventArgs {
   

@@ -1,7 +1,7 @@
 package typings.jpm.anon
 
 import typings.jpm.FFAddonSDK.SDKURL
-import typings.jpm.requestMod.Response
+import typings.jpm.sdkRequestMod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

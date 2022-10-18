@@ -1,6 +1,6 @@
 package typings.chainsafeLibp2pNoise
 
-import typings.chainsafeLibp2pNoise.cryptoMod.ICryptoInterface
+import typings.chainsafeLibp2pNoise.distSrcCryptoMod.ICryptoInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object mod {
     * @param {bytes} earlyData
     */
   open class Noise ()
-    extends typings.chainsafeLibp2pNoise.noiseMod.Noise {
+    extends typings.chainsafeLibp2pNoise.distSrcNoiseMod.Noise {
     def this(staticNoiseKey: js.typedarray.Uint8Array) = this()
     def this(staticNoiseKey: js.typedarray.Uint8Array, earlyData: js.typedarray.Uint8Array) = this()
     def this(staticNoiseKey: Unit, earlyData: js.typedarray.Uint8Array) = this()

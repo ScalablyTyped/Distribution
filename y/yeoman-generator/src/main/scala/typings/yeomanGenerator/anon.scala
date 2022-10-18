@@ -11,7 +11,7 @@ import typings.memFsEditor.mod.ReadStringOptions
 import typings.memFsEditor.mod.WithGlobOptions
 import typings.memFsEditor.mod.WriteJsonReplacer
 import typings.memFsEditor.mod.WriteJsonSpace
-import typings.yeomanGenerator.storageMod.^
+import typings.yeomanGenerator.libUtilStorageMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

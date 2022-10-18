@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an inclinometer sensor. */
-@JSGlobal("Windows.Devices.Sensors.Inclinometer")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Inclinometer")
 @js.native
-abstract class Inclinometer ()
+open class Inclinometer ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.Inclinometer
 object Inclinometer {

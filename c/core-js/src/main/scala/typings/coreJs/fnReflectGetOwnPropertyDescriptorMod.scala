@@ -10,7 +10,7 @@ object fnReflectGetOwnPropertyDescriptorMod {
   /* was `typeof core.Reflect.getOwnPropertyDescriptor` */
   inline def apply(target: Any, propertyKey: PropertyKey): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   
-  @JSImport("core-js/library/fn/reflect/get-own-property-descriptor", JSImport.Namespace)
+  @JSImport("core-js/fn/reflect/get-own-property-descriptor", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
 }

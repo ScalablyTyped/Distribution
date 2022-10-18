@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "Camera")
 @js.native
 open class Camera ()
-  extends typings.blackEngine.cameraMod.Camera
+  extends typings.blackEngine.displayCameraMod.Camera

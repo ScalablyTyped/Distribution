@@ -1,11 +1,13 @@
 package typings.materializecssMaterialize.M
 
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<CollapsibleOptions> * / any */ trait Collapsible extends StObject {
+trait Collapsible
+  extends StObject
+     with Component[CollapsibleOptions] {
   
   /**
     * Close collapsible section
@@ -21,8 +23,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Collapsible {
   
-  inline def apply(close: Double => Unit, open: Double => Unit): Collapsible = {
-    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), open = js.Any.fromFunction1(open))
+  inline def apply(
+    close: Double => Unit,
+    destroy: () => Unit,
+    el: Element,
+    open: Double => Unit,
+    options: CollapsibleOptions
+  ): Collapsible = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collapsible]
   }
   

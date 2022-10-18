@@ -1,6 +1,6 @@
 package typings.popmotion
 
-import typings.popmotion.stepsMod.Direction
+import typings.popmotion.libEasingStepsMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

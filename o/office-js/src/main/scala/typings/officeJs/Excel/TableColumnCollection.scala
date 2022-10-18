@@ -52,6 +52,26 @@ trait TableColumnCollection
   def add(index: Unit, values: Double, name: String): TableColumn = js.native
   def add(index: Unit, values: Unit, name: String): TableColumn = js.native
   
+  /**
+    * Adds a new column to the table.
+    Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.16]
+    *
+    * @param index Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
+    * @param values Optional. A 2D array of cell values of the table column.
+    * @param name Optional. Specifies the name of the new column. If `null`, the default name will be used.
+    */
+  def addAsJson(): TableColumn = js.native
+  def addAsJson(index: Double): TableColumn = js.native
+  def addAsJson(index: Double, values: js.Array[js.Array[CellValue]]): TableColumn = js.native
+  def addAsJson(index: Double, values: js.Array[js.Array[CellValue]], name: String): TableColumn = js.native
+  def addAsJson(index: Double, values: Unit, name: String): TableColumn = js.native
+  def addAsJson(index: Unit, values: js.Array[js.Array[CellValue]]): TableColumn = js.native
+  def addAsJson(index: Unit, values: js.Array[js.Array[CellValue]], name: String): TableColumn = js.native
+  def addAsJson(index: Unit, values: Unit, name: String): TableColumn = js.native
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_TableColumnCollection: RequestContext = js.native

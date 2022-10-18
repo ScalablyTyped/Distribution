@@ -47,7 +47,7 @@ trait Pattern extends StObject {
     * Sets the shape of the pattern fill.
     * By default, no pattern is used for filling the area.
     */
-  var shape: js.UndefOr[_empty | Slash | String | x | `-_` | Verticalline | Plussign | Dot] = js.undefined
+  var shape: js.UndefOr[_empty | Slash | (/* \ */ String) | x | `-_` | Verticalline | Plussign | Dot] = js.undefined
   
   /**
     * Sets the size of unit squares of the pattern fill in pixels,
@@ -89,7 +89,7 @@ object Pattern {
     inline def setFillmodeUndefined: Self = StObject.set(x, "fillmode", js.undefined)
     
     inline def setShape(
-      value: _empty | Slash | String | typings.plotlyJs.plotlyJsStrings.x | `-_` | Verticalline | Plussign | Dot
+      value: _empty | Slash | (/* \ */ String) | typings.plotlyJs.plotlyJsStrings.x | `-_` | Verticalline | Plussign | Dot
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)

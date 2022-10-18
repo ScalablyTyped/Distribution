@@ -1,6 +1,5 @@
 package typings.bootstrap.global
 
-import typings.bootstrap.alertMod.Alert.jQueryInterface
 import typings.bootstrap.anon.PartialOptions
 import typings.bootstrap.anon.PartialOptionsAllowList
 import typings.bootstrap.anon.PartialOptionsAnimation
@@ -10,15 +9,16 @@ import typings.bootstrap.anon.PartialOptionsBoundary
 import typings.bootstrap.anon.PartialOptionsKeyboard
 import typings.bootstrap.anon.PartialOptionsMethod
 import typings.bootstrap.anon.PartialOptionsParent
-import typings.bootstrap.baseComponentMod.ComponentOptions
-import typings.bootstrap.baseComponentMod.GetInstanceFactory
-import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
 import typings.bootstrap.bootstrapStrings.alert
 import typings.bootstrap.bootstrapStrings.popover
 import typings.bootstrap.bootstrapStrings.tooltip
-import typings.bootstrap.carouselMod.Carousel.Options
+import typings.bootstrap.jsDistAlertMod.Alert.jQueryInterface
+import typings.bootstrap.jsDistBaseComponentMod.ComponentOptions
+import typings.bootstrap.jsDistBaseComponentMod.GetInstanceFactory
+import typings.bootstrap.jsDistBaseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.jsDistCarouselMod.Carousel.Options
+import typings.bootstrap.jsDistTooltipMod.Tooltip.SetContentFunction
 import typings.bootstrap.mod.global.Element
-import typings.bootstrap.tooltipMod.Tooltip.SetContentFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,11 +40,11 @@ object bootstrap {
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.alertMod.Alert.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistAlertMod.Alert.Events & String] = js.native
       
-      /* "close.bs.alert" */ val close: typings.bootstrap.alertMod.Alert.Events.close & String = js.native
+      /* "close.bs.alert" */ val close: typings.bootstrap.jsDistAlertMod.Alert.Events.close & String = js.native
       
-      /* "closed.bs.alert" */ val closed: typings.bootstrap.alertMod.Alert.Events.closed & String = js.native
+      /* "closed.bs.alert" */ val closed: typings.bootstrap.jsDistAlertMod.Alert.Events.closed & String = js.native
     }
     
     /* static member */
@@ -60,8 +60,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Alert.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.alertMod.Alert] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.alertMod.Alert]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which returns an alert instance associated to a DOM element
@@ -71,13 +71,13 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Alert.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.alertMod.Alert, ComponentOptions] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.alertMod.Alert, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistAlertMod.Alert, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Alert.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.alertMod.Alert.jQueryInterface = js.native
+    def jQueryInterface: typings.bootstrap.jsDistAlertMod.Alert.jQueryInterface = js.native
     inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
@@ -94,20 +94,20 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Button.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.buttonMod.Button] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.buttonMod.Button]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistButtonMod.Button] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistButtonMod.Button]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Button.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.buttonMod.Button, ComponentOptions] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.buttonMod.Button, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistButtonMod.Button, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistButtonMod.Button, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Button.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.buttonMod.Button.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.buttonMod.Button.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistButtonMod.Button.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistButtonMod.Button.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Carousel")
@@ -141,19 +141,19 @@ object bootstrap {
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.carouselMod.Carousel.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistCarouselMod.Carousel.Events & String] = js.native
       
-      /* "slid.bs.carousel" */ val slid: typings.bootstrap.carouselMod.Carousel.Events.slid & String = js.native
+      /* "slid.bs.carousel" */ val slid: typings.bootstrap.jsDistCarouselMod.Carousel.Events.slid & String = js.native
       
-      /* "slide.bs.carousel" */ val slide: typings.bootstrap.carouselMod.Carousel.Events.slide & String = js.native
+      /* "slide.bs.carousel" */ val slide: typings.bootstrap.jsDistCarouselMod.Carousel.Events.slide & String = js.native
     }
     
     /* static member */
     /* was `typeof Carousel.getOrCreateInstance` */
     @JSGlobal("bootstrap.Carousel.carouselInstance")
     @js.native
-    def carouselInstance: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions] = js.native
-    inline def carouselInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carouselInstance")(x.asInstanceOf[js.Any])
+    def carouselInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions] = js.native
+    inline def carouselInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carouselInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the carousel instance associated
@@ -162,20 +162,20 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Carousel.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.carouselMod.Carousel] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.carouselMod.Carousel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Carousel.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.carouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCarouselMod.Carousel, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Carousel.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.carouselMod.Carousel.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.carouselMod.Carousel.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistCarouselMod.Carousel.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistCarouselMod.Carousel.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Collapse")
@@ -201,23 +201,23 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Collapse.Default")
     @js.native
-    def Default: typings.bootstrap.collapseMod.Collapse.Options = js.native
-    inline def Default_=(x: typings.bootstrap.collapseMod.Collapse.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    def Default: typings.bootstrap.jsDistCollapseMod.Collapse.Options = js.native
+    inline def Default_=(x: typings.bootstrap.jsDistCollapseMod.Collapse.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSGlobal("bootstrap.Collapse.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.collapseMod.Collapse.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistCollapseMod.Collapse.Events & String] = js.native
       
-      /* "hidden.bs.collapse" */ val hidden: typings.bootstrap.collapseMod.Collapse.Events.hidden & String = js.native
+      /* "hidden.bs.collapse" */ val hidden: typings.bootstrap.jsDistCollapseMod.Collapse.Events.hidden & String = js.native
       
-      /* "hide.bs.collapse" */ val hide: typings.bootstrap.collapseMod.Collapse.Events.hide & String = js.native
+      /* "hide.bs.collapse" */ val hide: typings.bootstrap.jsDistCollapseMod.Collapse.Events.hide & String = js.native
       
-      /* "show.bs.collapse" */ val show: typings.bootstrap.collapseMod.Collapse.Events.show & String = js.native
+      /* "show.bs.collapse" */ val show: typings.bootstrap.jsDistCollapseMod.Collapse.Events.show & String = js.native
       
-      /* "shown.bs.collapse" */ val shown: typings.bootstrap.collapseMod.Collapse.Events.shown & String = js.native
+      /* "shown.bs.collapse" */ val shown: typings.bootstrap.jsDistCollapseMod.Collapse.Events.shown & String = js.native
     }
     
     /**
@@ -227,8 +227,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Collapse.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.collapseMod.Collapse] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.collapseMod.Collapse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which returns a collapse instance associated to a DOM element
@@ -238,14 +238,14 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Collapse.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.collapseMod.Collapse, PartialOptionsParent] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.collapseMod.Collapse, PartialOptionsParent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse, PartialOptionsParent] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistCollapseMod.Collapse, PartialOptionsParent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Collapse.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.collapseMod.Collapse.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.collapseMod.Collapse.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistCollapseMod.Collapse.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistCollapseMod.Collapse.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Dropdown")
@@ -271,7 +271,7 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Dropdown.Default")
     @js.native
-    def Default: typings.bootstrap.dropdownMod.Dropdown.Options = js.native
+    def Default: typings.bootstrap.jsDistDropdownMod.Dropdown.Options = js.native
     
     /* static member */
     /* Inlined std.Record<keyof bootstrap.bootstrap/js/dist/dropdown.Dropdown.Options, string> */
@@ -312,22 +312,22 @@ object bootstrap {
       inline def reference_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reference")(x.asInstanceOf[js.Any])
     }
     
-    inline def Default_=(x: typings.bootstrap.dropdownMod.Dropdown.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    inline def Default_=(x: typings.bootstrap.jsDistDropdownMod.Dropdown.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSGlobal("bootstrap.Dropdown.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.dropdownMod.Dropdown.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistDropdownMod.Dropdown.Events & String] = js.native
       
-      /* "hidden.bs.dropdown" */ val hidden: typings.bootstrap.dropdownMod.Dropdown.Events.hidden & String = js.native
+      /* "hidden.bs.dropdown" */ val hidden: typings.bootstrap.jsDistDropdownMod.Dropdown.Events.hidden & String = js.native
       
-      /* "hide.bs.dropdown" */ val hide: typings.bootstrap.dropdownMod.Dropdown.Events.hide & String = js.native
+      /* "hide.bs.dropdown" */ val hide: typings.bootstrap.jsDistDropdownMod.Dropdown.Events.hide & String = js.native
       
-      /* "show.bs.dropdown" */ val show: typings.bootstrap.dropdownMod.Dropdown.Events.show & String = js.native
+      /* "show.bs.dropdown" */ val show: typings.bootstrap.jsDistDropdownMod.Dropdown.Events.show & String = js.native
       
-      /* "shown.bs.dropdown" */ val shown: typings.bootstrap.dropdownMod.Dropdown.Events.shown & String = js.native
+      /* "shown.bs.dropdown" */ val shown: typings.bootstrap.jsDistDropdownMod.Dropdown.Events.shown & String = js.native
     }
     
     /**
@@ -337,8 +337,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Dropdown.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.dropdownMod.Dropdown] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.dropdownMod.Dropdown]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistDropdownMod.Dropdown] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistDropdownMod.Dropdown]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which returns a dropdown instance associated to a DOM element or
@@ -348,14 +348,16 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Dropdown.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.dropdownMod.Dropdown, PartialOptionsAutoClose] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.dropdownMod.Dropdown, PartialOptionsAutoClose]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistDropdownMod.Dropdown, PartialOptionsAutoClose] = js.native
+    inline def getOrCreateInstance_=(
+      x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistDropdownMod.Dropdown, PartialOptionsAutoClose]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Dropdown.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.dropdownMod.Dropdown.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.dropdownMod.Dropdown.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistDropdownMod.Dropdown.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistDropdownMod.Dropdown.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Modal")
@@ -381,25 +383,25 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Modal.Default")
     @js.native
-    def Default: typings.bootstrap.modalMod.Modal.Options = js.native
-    inline def Default_=(x: typings.bootstrap.modalMod.Modal.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    def Default: typings.bootstrap.jsDistModalMod.Modal.Options = js.native
+    inline def Default_=(x: typings.bootstrap.jsDistModalMod.Modal.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSGlobal("bootstrap.Modal.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.modalMod.Modal.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistModalMod.Modal.Events & String] = js.native
       
-      /* "hidden.bs.modal" */ val hidden: typings.bootstrap.modalMod.Modal.Events.hidden & String = js.native
+      /* "hidden.bs.modal" */ val hidden: typings.bootstrap.jsDistModalMod.Modal.Events.hidden & String = js.native
       
-      /* "hide.bs.modal" */ val hide: typings.bootstrap.modalMod.Modal.Events.hide & String = js.native
+      /* "hide.bs.modal" */ val hide: typings.bootstrap.jsDistModalMod.Modal.Events.hide & String = js.native
       
-      /* "hidePrevented.bs.modal" */ val hidePrevented: typings.bootstrap.modalMod.Modal.Events.hidePrevented & String = js.native
+      /* "hidePrevented.bs.modal" */ val hidePrevented: typings.bootstrap.jsDistModalMod.Modal.Events.hidePrevented & String = js.native
       
-      /* "show.bs.modal" */ val show: typings.bootstrap.modalMod.Modal.Events.show & String = js.native
+      /* "show.bs.modal" */ val show: typings.bootstrap.jsDistModalMod.Modal.Events.show & String = js.native
       
-      /* "shown.bs.modal" */ val shown: typings.bootstrap.modalMod.Modal.Events.shown & String = js.native
+      /* "shown.bs.modal" */ val shown: typings.bootstrap.jsDistModalMod.Modal.Events.shown & String = js.native
     }
     
     /**
@@ -409,8 +411,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Modal.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.modalMod.Modal] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.modalMod.Modal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistModalMod.Modal] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistModalMod.Modal]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the modal instance associated with
@@ -419,14 +421,14 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Modal.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.modalMod.Modal, PartialOptionsBackdrop] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.modalMod.Modal, PartialOptionsBackdrop]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistModalMod.Modal, PartialOptionsBackdrop] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistModalMod.Modal, PartialOptionsBackdrop]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Modal.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.modalMod.Modal.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.modalMod.Modal.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistModalMod.Modal.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistModalMod.Modal.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Offcanvas")
@@ -449,15 +451,15 @@ object bootstrap {
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.offcanvasMod.Offcanvas.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistOffcanvasMod.Offcanvas.Events & String] = js.native
       
-      /* "hidden.bs.offcanvas" */ val hidden: typings.bootstrap.offcanvasMod.Offcanvas.Events.hidden & String = js.native
+      /* "hidden.bs.offcanvas" */ val hidden: typings.bootstrap.jsDistOffcanvasMod.Offcanvas.Events.hidden & String = js.native
       
-      /* "hide.bs.offcanvas" */ val hide: typings.bootstrap.offcanvasMod.Offcanvas.Events.hide & String = js.native
+      /* "hide.bs.offcanvas" */ val hide: typings.bootstrap.jsDistOffcanvasMod.Offcanvas.Events.hide & String = js.native
       
-      /* "show.bs.offcanvas" */ val show: typings.bootstrap.offcanvasMod.Offcanvas.Events.show & String = js.native
+      /* "show.bs.offcanvas" */ val show: typings.bootstrap.jsDistOffcanvasMod.Offcanvas.Events.show & String = js.native
       
-      /* "shown.bs.offcanvas" */ val shown: typings.bootstrap.offcanvasMod.Offcanvas.Events.shown & String = js.native
+      /* "shown.bs.offcanvas" */ val shown: typings.bootstrap.jsDistOffcanvasMod.Offcanvas.Events.shown & String = js.native
     }
     
     /**
@@ -466,8 +468,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Offcanvas.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.offcanvasMod.Offcanvas] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.offcanvasMod.Offcanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistOffcanvasMod.Offcanvas] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistOffcanvasMod.Offcanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the offcanvas instance associated with
@@ -476,14 +478,16 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Offcanvas.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.offcanvasMod.Offcanvas, PartialOptionsKeyboard] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.offcanvasMod.Offcanvas, PartialOptionsKeyboard]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistOffcanvasMod.Offcanvas, PartialOptionsKeyboard] = js.native
+    inline def getOrCreateInstance_=(
+      x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistOffcanvasMod.Offcanvas, PartialOptionsKeyboard]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Offcanvas.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.offcanvasMod.Offcanvas.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.offcanvasMod.Offcanvas.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistOffcanvasMod.Offcanvas.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistOffcanvasMod.Offcanvas.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Popover")
@@ -509,7 +513,7 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Popover.Default")
     @js.native
-    def Default: typings.bootstrap.popoverMod.Popover.Options = js.native
+    def Default: typings.bootstrap.jsDistPopoverMod.Popover.Options = js.native
     
     /* static member */
     /* Inlined std.Record<keyof bootstrap.bootstrap/js/dist/popover.Popover.Options, string> */
@@ -554,10 +558,10 @@ object bootstrap {
       def delay: String = js.native
       inline def delay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("bootstrap.Popover.DefaultType.fallbackPlacement")
+      @JSGlobal("bootstrap.Popover.DefaultType.fallbackPlacements")
       @js.native
-      def fallbackPlacement: String = js.native
-      inline def fallbackPlacement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacement")(x.asInstanceOf[js.Any])
+      def fallbackPlacements: String = js.native
+      inline def fallbackPlacements_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacements")(x.asInstanceOf[js.Any])
       
       @JSGlobal("bootstrap.Popover.DefaultType.html")
       @js.native
@@ -611,7 +615,7 @@ object bootstrap {
       inline def trigger_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trigger")(x.asInstanceOf[js.Any])
     }
     
-    inline def Default_=(x: typings.bootstrap.popoverMod.Popover.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    inline def Default_=(x: typings.bootstrap.jsDistPopoverMod.Popover.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* Inlined std.Record<'CLICK' | 'FOCUSIN' | 'FOCUSOUT' | 'HIDDEN' | 'HIDE' | 'INSERTED' | 'MOUSEENTER' | 'MOUSELEAVE' | 'SHOW' | 'SHOWN', string> */
@@ -678,17 +682,17 @@ object bootstrap {
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.popoverMod.Popover.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistPopoverMod.Popover.Events & String] = js.native
       
-      /* "hidden.bs.popover" */ val hidden: typings.bootstrap.popoverMod.Popover.Events.hidden & String = js.native
+      /* "hidden.bs.popover" */ val hidden: typings.bootstrap.jsDistPopoverMod.Popover.Events.hidden & String = js.native
       
-      /* "hide.bs.popover" */ val hide: typings.bootstrap.popoverMod.Popover.Events.hide & String = js.native
+      /* "hide.bs.popover" */ val hide: typings.bootstrap.jsDistPopoverMod.Popover.Events.hide & String = js.native
       
-      /* "inserted.bs.popover" */ val inserted: typings.bootstrap.popoverMod.Popover.Events.inserted & String = js.native
+      /* "inserted.bs.popover" */ val inserted: typings.bootstrap.jsDistPopoverMod.Popover.Events.inserted & String = js.native
       
-      /* "show.bs.popover" */ val show: typings.bootstrap.popoverMod.Popover.Events.show & String = js.native
+      /* "show.bs.popover" */ val show: typings.bootstrap.jsDistPopoverMod.Popover.Events.show & String = js.native
       
-      /* "shown.bs.popover" */ val shown: typings.bootstrap.popoverMod.Popover.Events.shown & String = js.native
+      /* "shown.bs.popover" */ val shown: typings.bootstrap.jsDistPopoverMod.Popover.Events.shown & String = js.native
     }
     
     /* static member */
@@ -700,8 +704,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Popover.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.popoverMod.Popover] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.popoverMod.Popover]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the popover instance associated with
@@ -710,14 +714,14 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Popover.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.popoverMod.Popover, PartialOptionsAllowList] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.popoverMod.Popover, PartialOptionsAllowList]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover, PartialOptionsAllowList] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistPopoverMod.Popover, PartialOptionsAllowList]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Popover.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.popoverMod.Popover.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.popoverMod.Popover.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistPopoverMod.Popover.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistPopoverMod.Popover.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.ScrollSpy")
@@ -743,17 +747,17 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.ScrollSpy.Default")
     @js.native
-    def Default: typings.bootstrap.scrollspyMod.ScrollSpy.Options = js.native
-    inline def Default_=(x: typings.bootstrap.scrollspyMod.ScrollSpy.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    def Default: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Options = js.native
+    inline def Default_=(x: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSGlobal("bootstrap.ScrollSpy.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.scrollspyMod.ScrollSpy.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Events & String] = js.native
       
-      /* "activate.bs.scrollspy" */ val activate: typings.bootstrap.scrollspyMod.ScrollSpy.Events.activate & String = js.native
+      /* "activate.bs.scrollspy" */ val activate: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.Events.activate & String = js.native
     }
     
     /**
@@ -763,8 +767,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.ScrollSpy.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the scrollspy instance associated with
@@ -773,14 +777,16 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.ScrollSpy.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy, PartialOptionsMethod] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.scrollspyMod.ScrollSpy, PartialOptionsMethod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy, PartialOptionsMethod] = js.native
+    inline def getOrCreateInstance_=(
+      x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistScrollspyMod.ScrollSpy, PartialOptionsMethod]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.ScrollSpy.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.scrollspyMod.ScrollSpy.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.scrollspyMod.ScrollSpy.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistScrollspyMod.ScrollSpy.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Tab")
@@ -798,15 +804,15 @@ object bootstrap {
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.tabMod.Tab.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistTabMod.Tab.Events & String] = js.native
       
-      /* "hidden.bs.tab" */ val hidden: typings.bootstrap.tabMod.Tab.Events.hidden & String = js.native
+      /* "hidden.bs.tab" */ val hidden: typings.bootstrap.jsDistTabMod.Tab.Events.hidden & String = js.native
       
-      /* "hide.bs.tab" */ val hide: typings.bootstrap.tabMod.Tab.Events.hide & String = js.native
+      /* "hide.bs.tab" */ val hide: typings.bootstrap.jsDistTabMod.Tab.Events.hide & String = js.native
       
-      /* "show.bs.tab" */ val show: typings.bootstrap.tabMod.Tab.Events.show & String = js.native
+      /* "show.bs.tab" */ val show: typings.bootstrap.jsDistTabMod.Tab.Events.show & String = js.native
       
-      /* "shown.bs.tab" */ val shown: typings.bootstrap.tabMod.Tab.Events.shown & String = js.native
+      /* "shown.bs.tab" */ val shown: typings.bootstrap.jsDistTabMod.Tab.Events.shown & String = js.native
     }
     
     /**
@@ -816,8 +822,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Tab.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.tabMod.Tab] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.tabMod.Tab]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistTabMod.Tab] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistTabMod.Tab]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the tab instance associated with a
@@ -826,14 +832,14 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Tab.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.tabMod.Tab, ComponentOptions] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.tabMod.Tab, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistTabMod.Tab, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistTabMod.Tab, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Tab.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.tabMod.Tab.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.tabMod.Tab.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistTabMod.Tab.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistTabMod.Tab.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Toast")
@@ -859,23 +865,23 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Toast.Default")
     @js.native
-    def Default: typings.bootstrap.toastMod.Toast.Options = js.native
-    inline def Default_=(x: typings.bootstrap.toastMod.Toast.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    def Default: typings.bootstrap.jsDistToastMod.Toast.Options = js.native
+    inline def Default_=(x: typings.bootstrap.jsDistToastMod.Toast.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSGlobal("bootstrap.Toast.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.toastMod.Toast.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistToastMod.Toast.Events & String] = js.native
       
-      /* "hidden.bs.toast" */ val hidden: typings.bootstrap.toastMod.Toast.Events.hidden & String = js.native
+      /* "hidden.bs.toast" */ val hidden: typings.bootstrap.jsDistToastMod.Toast.Events.hidden & String = js.native
       
-      /* "hide.bs.toast" */ val hide: typings.bootstrap.toastMod.Toast.Events.hide & String = js.native
+      /* "hide.bs.toast" */ val hide: typings.bootstrap.jsDistToastMod.Toast.Events.hide & String = js.native
       
-      /* "show.bs.toast" */ val show: typings.bootstrap.toastMod.Toast.Events.show & String = js.native
+      /* "show.bs.toast" */ val show: typings.bootstrap.jsDistToastMod.Toast.Events.show & String = js.native
       
-      /* "shown.bs.toast" */ val shown: typings.bootstrap.toastMod.Toast.Events.shown & String = js.native
+      /* "shown.bs.toast" */ val shown: typings.bootstrap.jsDistToastMod.Toast.Events.shown & String = js.native
     }
     
     /**
@@ -885,8 +891,8 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Toast.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.toastMod.Toast] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.toastMod.Toast]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistToastMod.Toast] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistToastMod.Toast]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the scrollspy instance associated with a
@@ -895,14 +901,14 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Toast.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.toastMod.Toast, PartialOptionsAnimation] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.toastMod.Toast, PartialOptionsAnimation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistToastMod.Toast, PartialOptionsAnimation] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistToastMod.Toast, PartialOptionsAnimation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Toast.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.toastMod.Toast.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.toastMod.Toast.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistToastMod.Toast.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistToastMod.Toast.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("bootstrap.Tooltip")
@@ -928,7 +934,7 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Tooltip.Default")
     @js.native
-    def Default: typings.bootstrap.tooltipMod.Tooltip.Options = js.native
+    def Default: typings.bootstrap.jsDistTooltipMod.Tooltip.Options = js.native
     
     /* static member */
     /* Inlined std.Record<keyof bootstrap.bootstrap/js/dist/tooltip.Tooltip.Options, string> */
@@ -968,10 +974,10 @@ object bootstrap {
       def delay: String = js.native
       inline def delay_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delay")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("bootstrap.Tooltip.DefaultType.fallbackPlacement")
+      @JSGlobal("bootstrap.Tooltip.DefaultType.fallbackPlacements")
       @js.native
-      def fallbackPlacement: String = js.native
-      inline def fallbackPlacement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacement")(x.asInstanceOf[js.Any])
+      def fallbackPlacements: String = js.native
+      inline def fallbackPlacements_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fallbackPlacements")(x.asInstanceOf[js.Any])
       
       @JSGlobal("bootstrap.Tooltip.DefaultType.html")
       @js.native
@@ -1025,7 +1031,7 @@ object bootstrap {
       inline def trigger_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trigger")(x.asInstanceOf[js.Any])
     }
     
-    inline def Default_=(x: typings.bootstrap.tooltipMod.Tooltip.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    inline def Default_=(x: typings.bootstrap.jsDistTooltipMod.Tooltip.Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* Inlined std.Record<'CLICK' | 'FOCUSIN' | 'FOCUSOUT' | 'HIDDEN' | 'HIDE' | 'INSERTED' | 'MOUSEENTER' | 'MOUSELEAVE' | 'SHOW' | 'SHOWN', string> */
@@ -1092,17 +1098,17 @@ object bootstrap {
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.tooltipMod.Tooltip.Events & String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.jsDistTooltipMod.Tooltip.Events & String] = js.native
       
-      /* "hidden.bs.tooltip" */ val hidden: typings.bootstrap.tooltipMod.Tooltip.Events.hidden & String = js.native
+      /* "hidden.bs.tooltip" */ val hidden: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.hidden & String = js.native
       
-      /* "hide.bs.tooltip" */ val hide: typings.bootstrap.tooltipMod.Tooltip.Events.hide & String = js.native
+      /* "hide.bs.tooltip" */ val hide: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.hide & String = js.native
       
-      /* "inserted.bs.tooltip" */ val inserted: typings.bootstrap.tooltipMod.Tooltip.Events.inserted & String = js.native
+      /* "inserted.bs.tooltip" */ val inserted: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.inserted & String = js.native
       
-      /* "show.bs.tooltip" */ val show: typings.bootstrap.tooltipMod.Tooltip.Events.show & String = js.native
+      /* "show.bs.tooltip" */ val show: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.show & String = js.native
       
-      /* "shown.bs.tooltip" */ val shown: typings.bootstrap.tooltipMod.Tooltip.Events.shown & String = js.native
+      /* "shown.bs.tooltip" */ val shown: typings.bootstrap.jsDistTooltipMod.Tooltip.Events.shown & String = js.native
     }
     
     /* static member */
@@ -1114,14 +1120,14 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Tooltip.SetContentFunction")
     @js.native
-    def SetContentFunction: typings.bootstrap.tooltipMod.Tooltip.SetContentFunction = js.native
+    def SetContentFunction: typings.bootstrap.jsDistTooltipMod.Tooltip.SetContentFunction = js.native
     inline def SetContentFunction_=(x: SetContentFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SetContentFunction")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Tooltip.getInstance")
     @js.native
-    def getInstance: GetInstanceFactory[typings.bootstrap.tooltipMod.Tooltip] = js.native
-    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.tooltipMod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: GetInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     /**
       * Static method which allows you to get the tooltip instance associated with
@@ -1130,13 +1136,13 @@ object bootstrap {
     /* static member */
     @JSGlobal("bootstrap.Tooltip.getOrCreateInstance")
     @js.native
-    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.tooltipMod.Tooltip, ComponentOptions] = js.native
-    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.tooltipMod.Tooltip, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    def getOrCreateInstance: GetOrCreateInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip, ComponentOptions] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[typings.bootstrap.jsDistTooltipMod.Tooltip, ComponentOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("bootstrap.Tooltip.jQueryInterface")
     @js.native
-    def jQueryInterface: typings.bootstrap.tooltipMod.Tooltip.jQueryInterface = js.native
-    inline def jQueryInterface_=(x: typings.bootstrap.tooltipMod.Tooltip.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
+    def jQueryInterface: typings.bootstrap.jsDistTooltipMod.Tooltip.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: typings.bootstrap.jsDistTooltipMod.Tooltip.jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
 }

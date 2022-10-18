@@ -1,8 +1,8 @@
 package typings.konva.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.konva.imageMod.Image
-import typings.konva.imageMod.ImageConfig
+import typings.konva.libShapesImageMod.Image
+import typings.konva.libShapesImageMod.ImageConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

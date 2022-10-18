@@ -1,7 +1,7 @@
 
 # Scala.js typings for octokit__auth-token
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 GitHub API token authentication for browsers and Node.js

@@ -1,7 +1,7 @@
 package typings.globalize
 
-import typings.globalize.globalizeMod.DateFormatPartTypes
-import typings.globalize.globalizeMod.NumberFormatPartTypes
+import typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+import typings.globalize.distGlobalizeNumberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,37 +28,35 @@ object globalizeStrings {
   sealed trait compact
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
   sealed trait day
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait dayperiod
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def dayperiod: dayperiod = "dayperiod".asInstanceOf[dayperiod]
   
   @js.native
   sealed trait decimal
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
   sealed trait era
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def era: era = "era".asInstanceOf[era]
   
   @js.native
@@ -69,8 +67,7 @@ object globalizeStrings {
   sealed trait fraction
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
@@ -81,41 +78,37 @@ object globalizeStrings {
   sealed trait group
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait hour
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait infinity
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def infinity: infinity = "infinity".asInstanceOf[infinity]
   
   @js.native
   sealed trait integer
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait literal
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
@@ -130,22 +123,21 @@ object globalizeStrings {
   sealed trait minusSign
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
   
   @js.native
   sealed trait minute
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait month
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
@@ -156,8 +148,7 @@ object globalizeStrings {
   sealed trait nan
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def nan: nan = "nan".asInstanceOf[nan]
   
   @js.native
@@ -176,16 +167,14 @@ object globalizeStrings {
   sealed trait percentSign
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
   
   @js.native
   sealed trait plusSign
     extends StObject
        with NumberFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
-       with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
+       with typings.globalize.distGlobalizeMod.NumberFormatPartTypes
   inline def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
   
   @js.native
@@ -196,7 +185,7 @@ object globalizeStrings {
   sealed trait second
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def second: second = "second".asInstanceOf[second]
   
   @js.native
@@ -215,20 +204,20 @@ object globalizeStrings {
   sealed trait weekday
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
   sealed trait year
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait zone
     extends StObject
        with DateFormatPartTypes
-       with typings.globalize.dateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
+       with typings.globalize.distGlobalizeMod.DateFormatPartTypes
   inline def zone: zone = "zone".asInstanceOf[zone]
 }

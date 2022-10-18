@@ -1,14 +1,14 @@
 package typings.cathoQuantum
 
 import typings.cathoQuantum.anon.`8`
-import typings.cathoQuantum.contentMod.Content
-import typings.cathoQuantum.descriptionMod.Description
-import typings.cathoQuantum.footerMod.Footer
-import typings.cathoQuantum.headerMod.Header
-import typings.cathoQuantum.headerTextMod.HeaderText
-import typings.cathoQuantum.mediaMod.Media
-import typings.cathoQuantum.thumbnailMod.Thumbnail
-import typings.cathoQuantum.titleMod.Title
+import typings.cathoQuantum.cardContentMod.Content
+import typings.cathoQuantum.cardDescriptionMod.Description
+import typings.cathoQuantum.cardFooterMod.Footer
+import typings.cathoQuantum.cardHeaderMod.Header
+import typings.cathoQuantum.cardHeaderTextMod.HeaderText
+import typings.cathoQuantum.cardMediaMod.Media
+import typings.cathoQuantum.cardThumbnailMod.Thumbnail
+import typings.cathoQuantum.cardTitleMod.Title
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -32,43 +32,43 @@ object cardMod {
     
     @JSImport("@catho/quantum/Card", "default.Content")
     @js.native
-    def Content: typings.cathoQuantum.contentMod.Content = js.native
+    def Content: typings.cathoQuantum.cardContentMod.Content = js.native
     inline def Content_=(x: Content): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Card", "default.Description")
     @js.native
-    def Description: typings.cathoQuantum.descriptionMod.Description = js.native
+    def Description: typings.cathoQuantum.cardDescriptionMod.Description = js.native
     inline def Description_=(x: Description): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Description")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Card", "default.Footer")
     @js.native
-    def Footer: typings.cathoQuantum.footerMod.Footer = js.native
+    def Footer: typings.cathoQuantum.cardFooterMod.Footer = js.native
     inline def Footer_=(x: Footer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Card", "default.Header")
     @js.native
-    def Header: typings.cathoQuantum.headerMod.Header = js.native
+    def Header: typings.cathoQuantum.cardHeaderMod.Header = js.native
     
     @JSImport("@catho/quantum/Card", "default.HeaderText")
     @js.native
-    def HeaderText: typings.cathoQuantum.headerTextMod.HeaderText = js.native
+    def HeaderText: typings.cathoQuantum.cardHeaderTextMod.HeaderText = js.native
     inline def HeaderText_=(x: HeaderText): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeaderText")(x.asInstanceOf[js.Any])
     
     inline def Header_=(x: Header): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Card", "default.Media")
     @js.native
-    def Media: typings.cathoQuantum.mediaMod.Media = js.native
+    def Media: typings.cathoQuantum.cardMediaMod.Media = js.native
     inline def Media_=(x: Media): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Media")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Card", "default.Thumbnail")
     @js.native
-    def Thumbnail: typings.cathoQuantum.thumbnailMod.Thumbnail = js.native
+    def Thumbnail: typings.cathoQuantum.cardThumbnailMod.Thumbnail = js.native
     inline def Thumbnail_=(x: Thumbnail): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Thumbnail")(x.asInstanceOf[js.Any])
     
     @JSImport("@catho/quantum/Card", "default.Title")
     @js.native
-    def Title: typings.cathoQuantum.titleMod.Title = js.native
+    def Title: typings.cathoQuantum.cardTitleMod.Title = js.native
     inline def Title_=(x: Title): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   }
   

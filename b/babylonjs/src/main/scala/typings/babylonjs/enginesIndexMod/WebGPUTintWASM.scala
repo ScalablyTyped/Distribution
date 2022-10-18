@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Engines/index", "WebGPUTintWASM")
 @js.native
 open class WebGPUTintWASM ()
-  extends typings.babylonjs.webgpuTintWASMMod.WebGPUTintWASM
+  extends typings.babylonjs.enginesWebGPUWebgpuTintWASMMod.WebGPUTintWASM
 /* static members */
 object WebGPUTintWASM {
   

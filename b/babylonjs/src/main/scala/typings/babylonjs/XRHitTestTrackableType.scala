@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait XRHitTestTrackableType extends StObject
-@JSGlobal("XRHitTestTrackableType")
-@js.native
-object XRHitTestTrackableType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.babylonjs.babylonjsStrings.point
+  - typings.babylonjs.babylonjsStrings.plane
+  - typings.babylonjs.babylonjsStrings.mesh
+*/
+trait XRHitTestTrackableType extends StObject
+object XRHitTestTrackableType {
   
-  @js.native
-  sealed trait mesh
-    extends StObject
-       with XRHitTestTrackableType
+  inline def mesh: typings.babylonjs.babylonjsStrings.mesh = "mesh".asInstanceOf[typings.babylonjs.babylonjsStrings.mesh]
   
-  @js.native
-  sealed trait plane
-    extends StObject
-       with XRHitTestTrackableType
+  inline def plane: typings.babylonjs.babylonjsStrings.plane = "plane".asInstanceOf[typings.babylonjs.babylonjsStrings.plane]
   
-  @js.native
-  sealed trait point
-    extends StObject
-       with XRHitTestTrackableType
+  inline def point: typings.babylonjs.babylonjsStrings.point = "point".asInstanceOf[typings.babylonjs.babylonjsStrings.point]
 }

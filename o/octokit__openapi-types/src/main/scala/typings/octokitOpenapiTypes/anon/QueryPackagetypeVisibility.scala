@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryPackagetypeVisibility extends StObject {
   
-  var path: OrgString
+  var path: `300`
   
   var query: PackagetypeVisibility
 }
 object QueryPackagetypeVisibility {
   
-  inline def apply(path: OrgString, query: PackagetypeVisibility): QueryPackagetypeVisibility = {
+  inline def apply(path: `300`, query: PackagetypeVisibility): QueryPackagetypeVisibility = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPackagetypeVisibility]
   }
   
   extension [Self <: QueryPackagetypeVisibility](x: Self) {
     
-    inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: `300`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: PackagetypeVisibility): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

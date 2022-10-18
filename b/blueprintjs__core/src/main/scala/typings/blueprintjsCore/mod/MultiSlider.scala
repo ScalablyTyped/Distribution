@@ -1,9 +1,9 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.anon.LabelPrecision
-import typings.blueprintjsCore.handlePropsMod.IHandleProps
-import typings.blueprintjsCore.multiSliderMod.ISliderBaseProps
-import typings.blueprintjsCore.multiSliderMod.MultiSliderProps
+import typings.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.IHandleProps
+import typings.blueprintjsCore.libEsmComponentsSliderMultiSliderMod.ISliderBaseProps
+import typings.blueprintjsCore.libEsmComponentsSliderMultiSliderMod.MultiSliderProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "MultiSlider")
 @js.native
 open class MultiSlider protected ()
-  extends typings.blueprintjsCore.componentsMod.MultiSlider {
+  extends typings.blueprintjsCore.libEsmComponentsMod.MultiSlider {
   def this(props: MultiSliderProps) = this()
   def this(props: MultiSliderProps, context: Any) = this()
 }

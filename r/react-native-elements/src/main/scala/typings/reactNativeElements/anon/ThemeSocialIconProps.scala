@@ -5,9 +5,9 @@ import typings.react.mod.Component
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
-import typings.reactNativeElements.inputMod.InputProps
-import typings.reactNativeElements.searchBarMod.SearchBarProps
-import typings.reactNativeElements.socialIconMod.SocialMediaType
+import typings.reactNativeElements.distInputInputMod.InputProps
+import typings.reactNativeElements.distSearchbarSearchBarMod.SearchBarProps
+import typings.reactNativeElements.distSocialSocialIconMod.SocialMediaType
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

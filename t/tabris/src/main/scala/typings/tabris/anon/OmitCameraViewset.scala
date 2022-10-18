@@ -2,6 +2,7 @@ package typings.tabris.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tabris.mod.AnimationOptions
+import typings.tabris.mod.Bounds
 import typings.tabris.mod.BoxDimensions
 import typings.tabris.mod.Camera
 import typings.tabris.mod.ChangeListeners
@@ -223,7 +224,7 @@ trait OmitCameraViewset extends StObject {
   @JSName("_wasSet")
   var _wasSet_Original: js.Function1[/* propertyName */ String, Boolean]
   
-  var absoluteBounds: typings.tabris.mod.Bounds
+  var absoluteBounds: Bounds
   
   def animate(properties: Opacity, options: AnimationOptions): js.Promise[Unit]
   @JSName("animate")
@@ -239,7 +240,7 @@ trait OmitCameraViewset extends StObject {
   
   var bottom: ConstraintValue
   
-  var bounds: typings.tabris.mod.Bounds
+  var bounds: Bounds
   
   var camera: Camera
   
@@ -304,7 +305,7 @@ trait OmitCameraViewset extends StObject {
   @JSName("isDisposed")
   var isDisposed_Original: js.Function0[Boolean]
   
-  var jsxAttributes: (JSXAttributes[CameraView, Omit[CameraView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & Children
+  var jsxAttributes: (JSXAttributes[CameraView, Omit[CameraView, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `3`
   
   var layoutData: LayoutDataValue
   
@@ -518,12 +519,12 @@ object OmitCameraViewset {
     _trigger: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean,
     _triggerChangeEvent: (/* propertyName */ String, /* newEncodedValue */ Any) => Unit,
     _wasSet: /* propertyName */ String => Boolean,
-    absoluteBounds: typings.tabris.mod.Bounds,
+    absoluteBounds: Bounds,
     animate: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit],
     appendTo: /* parent */ Composite[Widget[Any]] => CameraView,
     baseline: SiblingReferenceValue | auto | `true`,
     bottom: ConstraintValue,
-    bounds: typings.tabris.mod.Bounds,
+    bounds: Bounds,
     camera: Camera,
     centerX: typings.tabris.mod.Offset | auto | `true`,
     centerY: typings.tabris.mod.Offset | auto | `true`,
@@ -544,7 +545,7 @@ object OmitCameraViewset {
     insertAfter: /* widget */ Widget[Any] => CameraView,
     insertBefore: /* widget */ Widget[Any] => CameraView,
     isDisposed: () => Boolean,
-    jsxAttributes: (JSXAttributes[CameraView, Omit[CameraView, set | jsxAttributes]]) & Children,
+    jsxAttributes: (JSXAttributes[CameraView, Omit[CameraView, set | jsxAttributes]]) & `3`,
     layoutData: LayoutDataValue,
     left: ConstraintValue,
     off: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => CameraView,
@@ -626,7 +627,7 @@ object OmitCameraViewset {
     
     inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    inline def setAbsoluteBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
+    inline def setAbsoluteBounds(value: Bounds): Self = StObject.set(x, "absoluteBounds", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: (/* properties */ Opacity, /* options */ AnimationOptions) => js.Promise[Unit]): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
     
@@ -640,7 +641,7 @@ object OmitCameraViewset {
     
     inline def setBottom(value: ConstraintValue): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBounds(value: typings.tabris.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
@@ -708,7 +709,7 @@ object OmitCameraViewset {
     
     inline def setIsDisposed(value: () => Boolean): Self = StObject.set(x, "isDisposed", js.Any.fromFunction0(value))
     
-    inline def setJsxAttributes(value: (JSXAttributes[CameraView, Omit[CameraView, set | jsxAttributes]]) & Children): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: (JSXAttributes[CameraView, Omit[CameraView, set | jsxAttributes]]) & `3`): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
     inline def setLayoutData(value: LayoutDataValue): Self = StObject.set(x, "layoutData", value.asInstanceOf[js.Any])
     

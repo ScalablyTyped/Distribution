@@ -1,6 +1,6 @@
 package typings.seleniumWebdriver.mod
 
-import typings.seleniumWebdriver.webdriverMod.ShadowRootPromise
+import typings.seleniumWebdriver.libWebdriverMod.ShadowRootPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

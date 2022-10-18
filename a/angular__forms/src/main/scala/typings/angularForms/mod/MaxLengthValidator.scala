@@ -75,7 +75,7 @@ object MaxLengthValidator {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     MaxLengthValidator, 
-    String, 
+    /* [maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel] */ String, 
     scala.Nothing, 
     Maxlength, 
     js.Object, 
@@ -86,7 +86,7 @@ object MaxLengthValidator {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       MaxLengthValidator, 
-      String, 
+      /* [maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel] */ String, 
       scala.Nothing, 
       Maxlength, 
       js.Object, 

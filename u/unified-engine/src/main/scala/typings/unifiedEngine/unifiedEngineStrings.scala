@@ -1,6 +1,6 @@
 package typings.unifiedEngine
 
-import typings.unifiedEngine.ignoreMod.ResolveFrom
+import typings.unifiedEngine.libIgnoreMod.ResolveFrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

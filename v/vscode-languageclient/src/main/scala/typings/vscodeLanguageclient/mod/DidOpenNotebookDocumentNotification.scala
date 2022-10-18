@@ -2,7 +2,7 @@ package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.notebookDocumentSlashdidOpen
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.notebookDocumentSlashsync
-import typings.vscodeLanguageserverProtocol.protocolNotebookMod.DidOpenNotebookDocumentParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolDotnotebookMod.DidOpenNotebookDocumentParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ object DidOpenNotebookDocumentNotification {
   
   @JSImport("vscode-languageclient", "DidOpenNotebookDocumentNotification.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageclient", "DidOpenNotebookDocumentNotification.method")
   @js.native
@@ -24,5 +24,5 @@ object DidOpenNotebookDocumentNotification {
   
   @JSImport("vscode-languageclient", "DidOpenNotebookDocumentNotification.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType[DidOpenNotebookDocumentParams, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[DidOpenNotebookDocumentParams, Unit] = js.native
 }

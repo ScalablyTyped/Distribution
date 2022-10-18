@@ -101,7 +101,7 @@ object RangeValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     RangeValueAccessor, 
-    String, 
+    /* input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel] */ String, 
     scala.Nothing, 
     js.Object, 
     js.Object, 
@@ -112,7 +112,7 @@ object RangeValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       RangeValueAccessor, 
-      String, 
+      /* input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel] */ String, 
       scala.Nothing, 
       js.Object, 
       js.Object, 

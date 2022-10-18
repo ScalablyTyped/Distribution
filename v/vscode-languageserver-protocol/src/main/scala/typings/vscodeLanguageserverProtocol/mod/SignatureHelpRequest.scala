@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpParams
-import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpRegistrationOptions
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.SignatureHelpParams
+import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.SignatureHelpRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashsignatureHelp
 import typings.vscodeLanguageserverTypes.mod.SignatureHelp
 import org.scalablytyped.runtime.StObject
@@ -12,7 +12,7 @@ object SignatureHelpRequest {
   
   @JSImport("vscode-languageserver-protocol", "SignatureHelpRequest.messageDirection")
   @js.native
-  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
   
   @JSImport("vscode-languageserver-protocol", "SignatureHelpRequest.method")
   @js.native
@@ -20,7 +20,7 @@ object SignatureHelpRequest {
   
   @JSImport("vscode-languageserver-protocol", "SignatureHelpRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     SignatureHelpParams, 
     SignatureHelp | Null, 
     scala.Nothing, 

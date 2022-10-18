@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object AdvancedPseudos {
   
-  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Colon-moz-anyLeftparenthesisRightparenthesis`: /* :-moz-any() */ String = ":-moz-any()".asInstanceOf[/* :-moz-any() */ String]
   
   inline def `Colon-moz-dir`: typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir` = ":-moz-dir".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.`Colon-moz-dir`]
   
-  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: String = String.asInstanceOf[String]
+  inline def `Colon-webkit-anyLeftparenthesisRightparenthesis`: /* :-webkit-any() */ String = ":-webkit-any()".asInstanceOf[/* :-webkit-any() */ String]
   
   inline def ColonColoncue: typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue = "::cue".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.ColonColoncue]
   
@@ -28,7 +28,7 @@ object AdvancedPseudos {
   
   inline def Colonlang: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlang = ":lang".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonlang]
   
-  inline def ColonmatchesLeftparenthesisRightparenthesis: String = String.asInstanceOf[String]
+  inline def ColonmatchesLeftparenthesisRightparenthesis: /* :matches() */ String = ":matches()".asInstanceOf[/* :matches() */ String]
   
   inline def Colonnot: typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot = ":not".asInstanceOf[typings.rtsaoCsstype.rtsaoCsstypeStrings.Colonnot]
   

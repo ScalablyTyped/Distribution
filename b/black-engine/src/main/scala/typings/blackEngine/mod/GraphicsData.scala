@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsData")
 @js.native
 open class GraphicsData ()
-  extends typings.blackEngine.graphicsDataMod.GraphicsData
+  extends typings.blackEngine.displayGraphicsDataMod.GraphicsData

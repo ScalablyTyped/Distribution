@@ -1,15 +1,25 @@
 package typings.crocks
 
+import typings.crocks.assignAssignMod.Assign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assignMod {
   
-  @JSImport("crocks/helpers/assign", JSImport.Namespace)
+  @JSImport("crocks/Assign", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(a: js.Object): js.Function1[/* b */ js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* b */ js.Object, js.Object]]
-  inline def default(a: js.Object, b: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  open class default ()
+    extends typings.crocks.assignAssignMod.default
+  object default {
+    
+    inline def apply(`val`: js.Object): Assign = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Assign]
+    
+    @JSImport("crocks/Assign", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    inline def empty(): Assign = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Assign]
+  }
 }

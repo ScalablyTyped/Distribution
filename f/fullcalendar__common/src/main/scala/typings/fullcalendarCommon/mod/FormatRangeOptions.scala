@@ -14,7 +14,7 @@ trait FormatRangeOptions
 }
 object FormatRangeOptions {
   
-  inline def apply(formatMatcher: (js.UndefOr[basic | (`best fit`)]) & (js.UndefOr[(`best fit`) | basic])): FormatRangeOptions = {
+  inline def apply(formatMatcher: (js.UndefOr[(`best fit`) | basic]) & (js.UndefOr[basic | (`best fit`)])): FormatRangeOptions = {
     val __obj = js.Dynamic.literal(formatMatcher = formatMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatRangeOptions]
   }

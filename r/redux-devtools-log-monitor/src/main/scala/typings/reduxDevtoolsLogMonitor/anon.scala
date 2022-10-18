@@ -11,13 +11,13 @@ import typings.react.mod.GetDerivedStateFromError
 import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
-import typings.reduxDevtoolsDockMonitor.actionsMod.DockMonitorAction
-import typings.reduxDevtoolsDockMonitor.reducersMod.DockMonitorState
+import typings.reduxDevtoolsDockMonitor.libActionsMod.DockMonitorAction
+import typings.reduxDevtoolsDockMonitor.libReducersMod.DockMonitorState
 import typings.reduxDevtoolsInstrument.mod.LiftedAction
-import typings.reduxDevtoolsLogMonitor.actionsMod.LogMonitorAction
-import typings.reduxDevtoolsLogMonitor.logMonitorMod.DefaultProps
-import typings.reduxDevtoolsLogMonitor.logMonitorMod.ExternalProps
-import typings.reduxDevtoolsLogMonitor.reducersMod.LogMonitorState
+import typings.reduxDevtoolsLogMonitor.libActionsMod.LogMonitorAction
+import typings.reduxDevtoolsLogMonitor.libLogMonitorMod.DefaultProps
+import typings.reduxDevtoolsLogMonitor.libLogMonitorMod.ExternalProps
+import typings.reduxDevtoolsLogMonitor.libReducersMod.LogMonitorState
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.apathy
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.ashes
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.atelierDune
@@ -31,6 +31,7 @@ import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.bright
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.chalk
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.codeschool
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.colors
+import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.default
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.eighties
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.embers
 import typings.reduxDevtoolsLogMonitor.reduxDevtoolsLogMonitorStrings.flat
@@ -344,7 +345,7 @@ object anon {
     var select: js.UndefOr[js.Function1[/* state */ Any, Any]] = js.undefined
     
     var theme: js.UndefOr[
-        pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
+        pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | default | Base16Theme
       ] = js.undefined
   }
   object PartialExternalPropsunkno {
@@ -387,7 +388,7 @@ object anon {
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
       inline def setTheme(
-        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme
+        value: pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | default | Base16Theme
       ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
@@ -423,6 +424,8 @@ object anon {
   }
   
   trait Typeofthemes extends StObject {
+    
+    val default: Base16Theme
     
     val apathy: Base16Theme
     
@@ -514,6 +517,7 @@ object anon {
       chalk: Base16Theme,
       codeschool: Base16Theme,
       colors: Base16Theme,
+      default: Base16Theme,
       eighties: Base16Theme,
       embers: Base16Theme,
       flat: Base16Theme,
@@ -539,7 +543,7 @@ object anon {
       tube: Base16Theme,
       twilight: Base16Theme
     ): Typeofthemes = {
-      val __obj = js.Dynamic.literal(apathy = apathy.asInstanceOf[js.Any], ashes = ashes.asInstanceOf[js.Any], atelierDune = atelierDune.asInstanceOf[js.Any], atelierForest = atelierForest.asInstanceOf[js.Any], atelierHeath = atelierHeath.asInstanceOf[js.Any], atelierLakeside = atelierLakeside.asInstanceOf[js.Any], atelierSeaside = atelierSeaside.asInstanceOf[js.Any], bespin = bespin.asInstanceOf[js.Any], brewer = brewer.asInstanceOf[js.Any], bright = bright.asInstanceOf[js.Any], chalk = chalk.asInstanceOf[js.Any], codeschool = codeschool.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], eighties = eighties.asInstanceOf[js.Any], embers = embers.asInstanceOf[js.Any], flat = flat.asInstanceOf[js.Any], google = google.asInstanceOf[js.Any], grayscale = grayscale.asInstanceOf[js.Any], greenscreen = greenscreen.asInstanceOf[js.Any], harmonic = harmonic.asInstanceOf[js.Any], hopscotch = hopscotch.asInstanceOf[js.Any], isotope = isotope.asInstanceOf[js.Any], marrakesh = marrakesh.asInstanceOf[js.Any], mocha = mocha.asInstanceOf[js.Any], monokai = monokai.asInstanceOf[js.Any], nicinabox = nicinabox.asInstanceOf[js.Any], ocean = ocean.asInstanceOf[js.Any], paraiso = paraiso.asInstanceOf[js.Any], pop = pop.asInstanceOf[js.Any], railscasts = railscasts.asInstanceOf[js.Any], shapeshifter = shapeshifter.asInstanceOf[js.Any], solarized = solarized.asInstanceOf[js.Any], summerfruit = summerfruit.asInstanceOf[js.Any], threezerotwofour = threezerotwofour.asInstanceOf[js.Any], tomorrow = tomorrow.asInstanceOf[js.Any], tube = tube.asInstanceOf[js.Any], twilight = twilight.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(apathy = apathy.asInstanceOf[js.Any], ashes = ashes.asInstanceOf[js.Any], atelierDune = atelierDune.asInstanceOf[js.Any], atelierForest = atelierForest.asInstanceOf[js.Any], atelierHeath = atelierHeath.asInstanceOf[js.Any], atelierLakeside = atelierLakeside.asInstanceOf[js.Any], atelierSeaside = atelierSeaside.asInstanceOf[js.Any], bespin = bespin.asInstanceOf[js.Any], brewer = brewer.asInstanceOf[js.Any], bright = bright.asInstanceOf[js.Any], chalk = chalk.asInstanceOf[js.Any], codeschool = codeschool.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], eighties = eighties.asInstanceOf[js.Any], embers = embers.asInstanceOf[js.Any], flat = flat.asInstanceOf[js.Any], google = google.asInstanceOf[js.Any], grayscale = grayscale.asInstanceOf[js.Any], greenscreen = greenscreen.asInstanceOf[js.Any], harmonic = harmonic.asInstanceOf[js.Any], hopscotch = hopscotch.asInstanceOf[js.Any], isotope = isotope.asInstanceOf[js.Any], marrakesh = marrakesh.asInstanceOf[js.Any], mocha = mocha.asInstanceOf[js.Any], monokai = monokai.asInstanceOf[js.Any], nicinabox = nicinabox.asInstanceOf[js.Any], ocean = ocean.asInstanceOf[js.Any], paraiso = paraiso.asInstanceOf[js.Any], pop = pop.asInstanceOf[js.Any], railscasts = railscasts.asInstanceOf[js.Any], shapeshifter = shapeshifter.asInstanceOf[js.Any], solarized = solarized.asInstanceOf[js.Any], summerfruit = summerfruit.asInstanceOf[js.Any], threezerotwofour = threezerotwofour.asInstanceOf[js.Any], tomorrow = tomorrow.asInstanceOf[js.Any], tube = tube.asInstanceOf[js.Any], twilight = twilight.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofthemes]
     }
     
@@ -570,6 +574,8 @@ object anon {
       inline def setCodeschool(value: Base16Theme): Self = StObject.set(x, "codeschool", value.asInstanceOf[js.Any])
       
       inline def setColors(value: Base16Theme): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      
+      inline def setDefault(value: Base16Theme): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setEighties(value: Base16Theme): Self = StObject.set(x, "eighties", value.asInstanceOf[js.Any])
       
@@ -625,35 +631,35 @@ object anon {
   trait WeakValidationMapExternal extends StObject {
     
     var dispatch: js.UndefOr[
-        typings.react.mod.Validator[
-          js.UndefOr[
-            (typings.redux.mod.Dispatch[
-              (LiftedAction[Any, typings.redux.mod.Action[Any], LogMonitorState]) | LogMonitorAction
-            ]) | Null
-          ]
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> | null | undefined> : undefined extends redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> | null | undefined> : react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>>> */ js.Any
       ] = js.undefined
     
-    var expandActionRoot: js.UndefOr[typings.react.mod.Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var expandActionRoot: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ] = js.undefined
     
-    var expandStateRoot: js.UndefOr[typings.react.mod.Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var expandStateRoot: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ] = js.undefined
     
-    var hideMainButtons: js.UndefOr[typings.react.mod.Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var hideMainButtons: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+      ] = js.undefined
     
-    var markStateDiff: js.UndefOr[typings.react.mod.Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var markStateDiff: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ] = js.undefined
     
-    var preserveScrollTop: js.UndefOr[typings.react.mod.Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+    var preserveScrollTop: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ] = js.undefined
     
     var select: js.UndefOr[
-        typings.react.mod.Validator[js.UndefOr[(js.Function1[/* state */ Any, Any]) | Null]]
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends (state : unknown): unknown ? react.react.Validator<(state : unknown): unknown | null | undefined> : undefined extends (state : unknown): unknown ? react.react.Validator<(state : unknown): unknown | null | undefined> : react.react.Validator<(state : unknown): unknown> */ js.Any
       ] = js.undefined
     
     var theme: js.UndefOr[
-        typings.react.mod.Validator[
-          js.UndefOr[
-            pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme | Null
-          ]
-        ]
+        /* import warning: importer.ImportType#apply Failed type conversion: null extends keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme ? react.react.Validator<keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme | null | undefined> : undefined extends keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme ? react.react.Validator<keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme | null | undefined> : react.react.Validator<keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme> */ js.Any
       ] = js.undefined
   }
   object WeakValidationMapExternal {
@@ -666,47 +672,49 @@ object anon {
     extension [Self <: WeakValidationMapExternal](x: Self) {
       
       inline def setDispatch(
-        value: typings.react.mod.Validator[
-              js.UndefOr[
-                (typings.redux.mod.Dispatch[
-                  (LiftedAction[Any, typings.redux.mod.Action[Any], LogMonitorState]) | LogMonitorAction
-                ]) | Null
-              ]
-            ]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> | null | undefined> : undefined extends redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> | null | undefined> : react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>>> */ js.Any
       ): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
       inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      inline def setExpandActionRoot(value: typings.react.mod.Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "expandActionRoot", value.asInstanceOf[js.Any])
+      inline def setExpandActionRoot(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ): Self = StObject.set(x, "expandActionRoot", value.asInstanceOf[js.Any])
       
       inline def setExpandActionRootUndefined: Self = StObject.set(x, "expandActionRoot", js.undefined)
       
-      inline def setExpandStateRoot(value: typings.react.mod.Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "expandStateRoot", value.asInstanceOf[js.Any])
+      inline def setExpandStateRoot(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ): Self = StObject.set(x, "expandStateRoot", value.asInstanceOf[js.Any])
       
       inline def setExpandStateRootUndefined: Self = StObject.set(x, "expandStateRoot", js.undefined)
       
-      inline def setHideMainButtons(value: typings.react.mod.Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "hideMainButtons", value.asInstanceOf[js.Any])
+      inline def setHideMainButtons(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+      ): Self = StObject.set(x, "hideMainButtons", value.asInstanceOf[js.Any])
       
       inline def setHideMainButtonsUndefined: Self = StObject.set(x, "hideMainButtons", js.undefined)
       
-      inline def setMarkStateDiff(value: typings.react.mod.Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "markStateDiff", value.asInstanceOf[js.Any])
+      inline def setMarkStateDiff(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ): Self = StObject.set(x, "markStateDiff", value.asInstanceOf[js.Any])
       
       inline def setMarkStateDiffUndefined: Self = StObject.set(x, "markStateDiff", js.undefined)
       
-      inline def setPreserveScrollTop(value: typings.react.mod.Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "preserveScrollTop", value.asInstanceOf[js.Any])
+      inline def setPreserveScrollTop(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean ? react.react.Validator<boolean | null | undefined> : undefined extends boolean ? react.react.Validator<boolean | null | undefined> : react.react.Validator<boolean> */ js.Any
+      ): Self = StObject.set(x, "preserveScrollTop", value.asInstanceOf[js.Any])
       
       inline def setPreserveScrollTopUndefined: Self = StObject.set(x, "preserveScrollTop", js.undefined)
       
-      inline def setSelect(value: typings.react.mod.Validator[js.UndefOr[(js.Function1[/* state */ Any, Any]) | Null]]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends (state : unknown): unknown ? react.react.Validator<(state : unknown): unknown | null | undefined> : undefined extends (state : unknown): unknown ? react.react.Validator<(state : unknown): unknown | null | undefined> : react.react.Validator<(state : unknown): unknown> */ js.Any
+      ): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
       inline def setTheme(
-        value: typings.react.mod.Validator[
-              js.UndefOr[
-                pop | atelierForest | bespin | embers | tube | bright | mocha | greenscreen | grayscale | shapeshifter | harmonic | chalk | paraiso | google | isotope | atelierLakeside | twilight | eighties | nicinabox | monokai | atelierHeath | apathy | solarized | summerfruit | colors | atelierSeaside | brewer | codeschool | railscasts | threezerotwofour | atelierDune | tomorrow | ocean | marrakesh | hopscotch | flat | ashes | Base16Theme | Null
-              ]
-            ]
+        value: /* import warning: importer.ImportType#apply Failed type conversion: null extends keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme ? react.react.Validator<keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme | null | undefined> : undefined extends keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme ? react.react.Validator<keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme | null | undefined> : react.react.Validator<keyof { readonly pop :base16.base16.Base16Theme,  readonly atelierForest :base16.base16.Base16Theme,  readonly bespin :base16.base16.Base16Theme,  readonly embers :base16.base16.Base16Theme,  readonly tube :base16.base16.Base16Theme,  readonly bright :base16.base16.Base16Theme,  readonly mocha :base16.base16.Base16Theme,  readonly greenscreen :base16.base16.Base16Theme,  readonly grayscale :base16.base16.Base16Theme,  readonly shapeshifter :base16.base16.Base16Theme,  readonly harmonic :base16.base16.Base16Theme,  readonly chalk :base16.base16.Base16Theme,  readonly paraiso :base16.base16.Base16Theme,  readonly google :base16.base16.Base16Theme,  readonly isotope :base16.base16.Base16Theme,  readonly atelierLakeside :base16.base16.Base16Theme,  readonly twilight :base16.base16.Base16Theme,  readonly eighties :base16.base16.Base16Theme,  readonly nicinabox :base16.base16.Base16Theme,  readonly monokai :base16.base16.Base16Theme,  readonly atelierHeath :base16.base16.Base16Theme,  readonly apathy :base16.base16.Base16Theme,  readonly solarized :base16.base16.Base16Theme,  readonly summerfruit :base16.base16.Base16Theme,  readonly colors :base16.base16.Base16Theme,  readonly atelierSeaside :base16.base16.Base16Theme,  readonly brewer :base16.base16.Base16Theme,  readonly codeschool :base16.base16.Base16Theme,  readonly railscasts :base16.base16.Base16Theme,  readonly threezerotwofour :base16.base16.Base16Theme,  readonly atelierDune :base16.base16.Base16Theme,  readonly tomorrow :base16.base16.Base16Theme,  readonly ocean :base16.base16.Base16Theme,  readonly marrakesh :base16.base16.Base16Theme,  readonly hopscotch :base16.base16.Base16Theme,  readonly flat :base16.base16.Base16Theme,  readonly ashes :base16.base16.Base16Theme,  readonly default :base16.base16.Base16Theme} | base16.base16.Base16Theme> */ js.Any
       ): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)

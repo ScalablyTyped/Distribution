@@ -1,7 +1,7 @@
 package typings.apolloServerCaching
 
 import typings.apolloServerCaching.anon.MaxSize
-import typings.apolloServerCaching.keyValueCacheMod.KeyValueCache
+import typings.apolloServerCaching.distKeyValueCacheMod.KeyValueCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   @JSImport("apollo-server-caching", "InMemoryLRUCache")
   @js.native
   open class InMemoryLRUCache[V] ()
-    extends typings.apolloServerCaching.inMemoryLRUCacheMod.InMemoryLRUCache[V] {
+    extends typings.apolloServerCaching.distInMemoryLRUCacheMod.InMemoryLRUCache[V] {
     def this(hasMaxSizeSizeCalculatorOnDispose: MaxSize[V]) = this()
   }
   /* static members */
@@ -31,7 +31,7 @@ object mod {
   @JSImport("apollo-server-caching", "PrefixingKeyValueCache")
   @js.native
   open class PrefixingKeyValueCache[V] protected ()
-    extends typings.apolloServerCaching.prefixingKeyValueCacheMod.PrefixingKeyValueCache[V] {
+    extends typings.apolloServerCaching.distPrefixingKeyValueCacheMod.PrefixingKeyValueCache[V] {
     def this(wrapped: KeyValueCache[V], prefix: String) = this()
   }
   

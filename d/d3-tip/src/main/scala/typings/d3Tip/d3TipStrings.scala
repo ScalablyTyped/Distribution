@@ -1,6 +1,6 @@
 package typings.d3Tip
 
-import typings.d3Tip.mod.TooltipDirection
+import typings.d3Tip.d3Mod.TooltipDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

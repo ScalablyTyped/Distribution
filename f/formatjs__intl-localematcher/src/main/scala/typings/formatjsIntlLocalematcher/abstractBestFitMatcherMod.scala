@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object abstractBestFitMatcherMod {
   
-  @JSImport("@formatjs/intl-localematcher/lib/abstract/BestFitMatcher", JSImport.Namespace)
+  @JSImport("@formatjs/intl-localematcher/abstract/BestFitMatcher", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

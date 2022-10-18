@@ -2,7 +2,7 @@ package typings.postcss.mod
 
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import typings.postcss.anon.ToString
-import typings.postcss.nodeMod.AnyNode
+import typings.postcss.libNodeMod.AnyNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +24,7 @@ trait ProcessOptions extends StObject {
     * Function to generate AST by string.
     */
   var parser: js.UndefOr[
-    Syntax | (Parser[typings.postcss.rootMod.default | typings.postcss.documentMod.default])
+    Syntax | (Parser[typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default])
   ] = js.undefined
   
   /**
@@ -60,10 +60,12 @@ object ProcessOptions {
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setParser(value: Syntax | (Parser[typings.postcss.rootMod.default | typings.postcss.documentMod.default])): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    inline def setParser(
+      value: Syntax | (Parser[typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default])
+    ): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     inline def setParserFunction2(
-      value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => typings.postcss.rootMod.default | typings.postcss.documentMod.default
+      value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default
     ): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
     
     inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)

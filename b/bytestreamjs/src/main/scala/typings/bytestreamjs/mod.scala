@@ -1,10 +1,10 @@
 package typings.bytestreamjs
 
-import typings.bytestreamjs.bitStreamMod.BitStreamParameters
-import typings.bytestreamjs.byteStreamMod.ByteStreamParameters
-import typings.bytestreamjs.helpersMod.ByteMap
-import typings.bytestreamjs.seqBitStreamMod.SeqBitStreamParameters
-import typings.bytestreamjs.seqStreamMod.SeqStreamParameters
+import typings.bytestreamjs.buildTypesBitStreamMod.BitStreamParameters
+import typings.bytestreamjs.buildTypesByteStreamMod.ByteStreamParameters
+import typings.bytestreamjs.buildTypesHelpersMod.ByteMap
+import typings.bytestreamjs.buildTypesSeqBitStreamMod.SeqBitStreamParameters
+import typings.bytestreamjs.buildTypesSeqStreamMod.SeqStreamParameters
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object mod {
     * @param parameters
     */
   open class BitStream ()
-    extends typings.bytestreamjs.bitStreamMod.BitStream {
+    extends typings.bytestreamjs.buildTypesBitStreamMod.BitStream {
     def this(parameters: BitStreamParameters) = this()
   }
   
@@ -34,14 +34,14 @@ object mod {
     * @param parameters
     */
   open class ByteStream ()
-    extends typings.bytestreamjs.byteStreamMod.ByteStream {
+    extends typings.bytestreamjs.buildTypesByteStreamMod.ByteStream {
     def this(parameters: ByteStreamParameters) = this()
   }
   
   @JSImport("bytestreamjs", "SeqBitStream")
   @js.native
   open class SeqBitStream ()
-    extends typings.bytestreamjs.seqBitStreamMod.SeqBitStream {
+    extends typings.bytestreamjs.buildTypesSeqBitStreamMod.SeqBitStream {
     def this(parameters: SeqBitStreamParameters) = this()
   }
   
@@ -52,7 +52,7 @@ object mod {
     * @param parameters
     */
   open class SeqStream ()
-    extends typings.bytestreamjs.seqStreamMod.SeqStream {
+    extends typings.bytestreamjs.buildTypesSeqStreamMod.SeqStream {
     def this(parameters: SeqStreamParameters) = this()
   }
   /* static members */
@@ -68,29 +68,33 @@ object mod {
     inline def APPEND_BLOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APPEND_BLOCK")(x.asInstanceOf[js.Any])
   }
   
-  inline def parseByteMap(stream: typings.bytestreamjs.byteStreamMod.ByteStream, map: js.Array[ByteMap], elements: Double): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseByteMap")(stream.asInstanceOf[js.Any], map.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
   inline def parseByteMap(
-    stream: typings.bytestreamjs.byteStreamMod.ByteStream,
+    stream: typings.bytestreamjs.buildTypesByteStreamMod.ByteStream,
+    map: js.Array[ByteMap],
+    elements: Double
+  ): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseByteMap")(stream.asInstanceOf[js.Any], map.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
+  inline def parseByteMap(
+    stream: typings.bytestreamjs.buildTypesByteStreamMod.ByteStream,
     map: js.Array[ByteMap],
     elements: Double,
     start: Double
   ): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseByteMap")(stream.asInstanceOf[js.Any], map.asInstanceOf[js.Any], elements.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
   inline def parseByteMap(
-    stream: typings.bytestreamjs.byteStreamMod.ByteStream,
+    stream: typings.bytestreamjs.buildTypesByteStreamMod.ByteStream,
     map: js.Array[ByteMap],
     elements: Double,
     start: Double,
     length: Double
   ): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseByteMap")(stream.asInstanceOf[js.Any], map.asInstanceOf[js.Any], elements.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
   inline def parseByteMap(
-    stream: typings.bytestreamjs.byteStreamMod.ByteStream,
+    stream: typings.bytestreamjs.buildTypesByteStreamMod.ByteStream,
     map: js.Array[ByteMap],
     elements: Double,
     start: Null,
     length: Double
   ): js.Array[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseByteMap")(stream.asInstanceOf[js.Any], map.asInstanceOf[js.Any], elements.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Any]]]
   inline def parseByteMap(
-    stream: typings.bytestreamjs.byteStreamMod.ByteStream,
+    stream: typings.bytestreamjs.buildTypesByteStreamMod.ByteStream,
     map: js.Array[ByteMap],
     elements: Double,
     start: Unit,

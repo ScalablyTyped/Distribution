@@ -1,7 +1,7 @@
 package typings.reactAce
 
-import typings.reactAce.editorOptionsMod.EditorEvent
-import typings.reactAce.editorOptionsMod.EditorOption
+import typings.reactAce.libEditorOptionsMod.EditorEvent
+import typings.reactAce.libEditorOptionsMod.EditorOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

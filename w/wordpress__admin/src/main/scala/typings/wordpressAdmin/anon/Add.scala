@@ -11,19 +11,19 @@ trait Add extends StObject {
     * If the workflow does not support multi-select, clear out the selection
     * before adding a new attachment to it.
     */
-  def add(models: js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment], options: Any): js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment] = js.native
+  def add(models: js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment], options: Any): js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment] = js.native
   
   /**
     * Refresh the `single` model whenever the selection changes.
     * Binds `single` instead of using the context argument to ensure
     * it receives no parameters.
     */
-  def initialize(models: js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment], options: Any): Unit = js.native
+  def initialize(models: js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment], options: Any): Unit = js.native
   
   /**
     * Fired when toggling (clicking on) an attachment in the modal.
     */
-  def single(): js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment] = js.native
-  def single(model: Boolean): js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment] = js.native
-  def single(model: typings.wordpressAdmin.mediaModelsMod.Attachment): js.Array[typings.wordpressAdmin.mediaModelsMod.Attachment] = js.native
+  def single(): js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment] = js.native
+  def single(model: Boolean): js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment] = js.native
+  def single(model: typings.wordpressAdmin.componentsMediaModelsMod.Attachment): js.Array[typings.wordpressAdmin.componentsMediaModelsMod.Attachment] = js.native
 }

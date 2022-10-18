@@ -30,15 +30,30 @@ object anon {
     
     extension [Self <: Empty[?, ?], Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */](x: Self & (Empty[Fields, Data])) {
       
-      inline def setEmpty(value: /* form */ FormBound[Fields, Data | FormData[Fields]] => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
+      inline def setEmpty(
+        value: /* form */ FormBound[
+              Fields, 
+              /* import warning: importer.ImportType#apply Failed type conversion: Data extends node.http.IncomingMessage ? forms.forms.FormData<Fields> : Data */ js.Any
+            ] => Unit
+      ): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
       
       inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      inline def setError(value: /* form */ FormBound[Fields, Data | FormData[Fields]] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(
+        value: /* form */ FormBound[
+              Fields, 
+              /* import warning: importer.ImportType#apply Failed type conversion: Data extends node.http.IncomingMessage ? forms.forms.FormData<Fields> : Data */ js.Any
+            ] => Unit
+      ): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setSuccess(value: /* form */ FormBound[Fields, Data | FormData[Fields]] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(
+        value: /* form */ FormBound[
+              Fields, 
+              /* import warning: importer.ImportType#apply Failed type conversion: Data extends node.http.IncomingMessage ? forms.forms.FormData<Fields> : Data */ js.Any
+            ] => Unit
+      ): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }

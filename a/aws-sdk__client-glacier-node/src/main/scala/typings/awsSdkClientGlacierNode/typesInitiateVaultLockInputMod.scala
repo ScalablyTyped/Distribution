@@ -1,8 +1,8 @@
 package typings.awsSdkClientGlacierNode
 
-import typings.awsSdkClientGlacierNode.inputTypesUnionMod._InputTypesUnion
+import typings.awsSdkClientGlacierNode.typesInputTypesUnionMod._InputTypesUnion
 import typings.awsSdkClientGlacierNode.typesVaultLockPolicyMod.VaultLockPolicy
-import typings.awsSdkTypes.abortMod.AbortSignal
+import typings.awsSdkTypes.distTypesAbortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

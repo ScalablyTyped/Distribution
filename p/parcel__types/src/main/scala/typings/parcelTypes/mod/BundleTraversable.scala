@@ -5,21 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.parcelTypes.anon.Type
-  - typings.parcelTypes.anon.Value
+  - typings.parcelTypes.anon.TypeValue
+  - typings.parcelTypes.anon.ValueDependency
 */
 trait BundleTraversable extends StObject
 object BundleTraversable {
   
-  inline def Type(value: Asset): typings.parcelTypes.anon.Type = {
+  inline def TypeValue(value: Asset): typings.parcelTypes.anon.TypeValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("asset")
-    __obj.asInstanceOf[typings.parcelTypes.anon.Type]
+    __obj.asInstanceOf[typings.parcelTypes.anon.TypeValue]
   }
   
-  inline def Value(value: Dependency): typings.parcelTypes.anon.Value = {
+  inline def ValueDependency(value: Dependency): typings.parcelTypes.anon.ValueDependency = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dependency")
-    __obj.asInstanceOf[typings.parcelTypes.anon.Value]
+    __obj.asInstanceOf[typings.parcelTypes.anon.ValueDependency]
   }
 }

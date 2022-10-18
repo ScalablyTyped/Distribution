@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the barcode data from the DataReceived event. */
-@JSGlobal("Windows.Devices.PointOfService.BarcodeScannerDataReceivedEventArgs")
+/* note: abstract class */ @JSGlobal("Windows.Devices.PointOfService.BarcodeScannerDataReceivedEventArgs")
 @js.native
-abstract class BarcodeScannerDataReceivedEventArgs ()
+open class BarcodeScannerDataReceivedEventArgs ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.PointOfService.BarcodeScannerDataReceivedEventArgs {
   

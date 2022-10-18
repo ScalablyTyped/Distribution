@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("xadesjs", "xml.OCSPRef")
 @js.native
 open class OCSPRef ()
-  extends typings.xadesjs.typesXmlMod.OCSPRef {
+  extends typings.xadesjs.buildTypesXmlMod.OCSPRef {
   def this(properties: js.Object) = this()
 }

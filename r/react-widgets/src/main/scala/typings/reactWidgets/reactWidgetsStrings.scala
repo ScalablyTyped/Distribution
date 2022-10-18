@@ -1,12 +1,12 @@
 package typings.reactWidgets
 
+import typings.reactWidgets.cjsFilterMod.FilterPreset
+import typings.reactWidgets.cjsLocalizationMod.DateTimePartType
+import typings.reactWidgets.cjsLocalizationMod.RequiredDateMethods
 import typings.reactWidgets.esmCalendarMod.Direction
 import typings.reactWidgets.esmCalendarMod.SlideDirection
 import typings.reactWidgets.esmCalendarMod.View
 import typings.reactWidgets.esmCalendarViewMod.DateUnit
-import typings.reactWidgets.filterMod.FilterPreset
-import typings.reactWidgets.localizationMod.DateTimePartType
-import typings.reactWidgets.localizationMod.RequiredDateMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,28 +17,28 @@ object reactWidgetsStrings {
   sealed trait DOWN
     extends StObject
        with Direction
-       with typings.reactWidgets.calendarMod.Direction
+       with typings.reactWidgets.cjsCalendarMod.Direction
   inline def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
   
   @js.native
   sealed trait LEFT
     extends StObject
        with Direction
-       with typings.reactWidgets.calendarMod.Direction
+       with typings.reactWidgets.cjsCalendarMod.Direction
   inline def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
   sealed trait RIGHT
     extends StObject
        with Direction
-       with typings.reactWidgets.calendarMod.Direction
+       with typings.reactWidgets.cjsCalendarMod.Direction
   inline def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
   sealed trait UP
     extends StObject
        with Direction
-       with typings.reactWidgets.calendarMod.Direction
+       with typings.reactWidgets.cjsCalendarMod.Direction
   inline def UP: UP = "UP".asInstanceOf[UP]
   
   @js.native
@@ -77,18 +77,18 @@ object reactWidgetsStrings {
   sealed trait bottom
     extends StObject
        with SlideDirection
-       with typings.reactWidgets.calendarMod.SlideDirection
+       with typings.reactWidgets.cjsCalendarMod.SlideDirection
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait century
     extends StObject
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
        with RequiredDateMethods
        with typings.reactWidgets.esmLocalizationMod.RequiredDateMethods
        with View
-       with typings.reactWidgets.calendarMod.View
+       with typings.reactWidgets.cjsCalendarMod.View
   inline def century: century = "century".asInstanceOf[century]
   
   @js.native
@@ -126,7 +126,7 @@ object reactWidgetsStrings {
        with DateTimePartType
        with typings.reactWidgets.esmLocalizationMod.DateTimePartType
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
@@ -147,11 +147,11 @@ object reactWidgetsStrings {
   sealed trait decade
     extends StObject
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
        with RequiredDateMethods
        with typings.reactWidgets.esmLocalizationMod.RequiredDateMethods
        with View
-       with typings.reactWidgets.calendarMod.View
+       with typings.reactWidgets.cjsCalendarMod.View
   inline def decade: decade = "decade".asInstanceOf[decade]
   
   @js.native
@@ -234,7 +234,7 @@ object reactWidgetsStrings {
   sealed trait hours
     extends StObject
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
   inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
@@ -261,7 +261,7 @@ object reactWidgetsStrings {
   sealed trait left_
     extends StObject
        with SlideDirection
-       with typings.reactWidgets.calendarMod.SlideDirection
+       with typings.reactWidgets.cjsCalendarMod.SlideDirection
   inline def left_ : left_ = "left".asInstanceOf[left_]
   
   @js.native
@@ -317,7 +317,7 @@ object reactWidgetsStrings {
   sealed trait minutes
     extends StObject
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
   inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
@@ -330,11 +330,11 @@ object reactWidgetsStrings {
        with DateTimePartType
        with typings.reactWidgets.esmLocalizationMod.DateTimePartType
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
        with RequiredDateMethods
        with typings.reactWidgets.esmLocalizationMod.RequiredDateMethods
        with View
-       with typings.reactWidgets.calendarMod.View
+       with typings.reactWidgets.cjsCalendarMod.View
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
@@ -413,7 +413,7 @@ object reactWidgetsStrings {
   sealed trait right_
     extends StObject
        with SlideDirection
-       with typings.reactWidgets.calendarMod.SlideDirection
+       with typings.reactWidgets.cjsCalendarMod.SlideDirection
   inline def right_ : right_ = "right".asInstanceOf[right_]
   
   @js.native
@@ -426,7 +426,7 @@ object reactWidgetsStrings {
        with DateTimePartType
        with typings.reactWidgets.esmLocalizationMod.DateTimePartType
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
   inline def second: second = "second".asInstanceOf[second]
   
   @js.native
@@ -483,7 +483,7 @@ object reactWidgetsStrings {
   sealed trait top
     extends StObject
        with SlideDirection
-       with typings.reactWidgets.calendarMod.SlideDirection
+       with typings.reactWidgets.cjsCalendarMod.SlideDirection
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
@@ -506,7 +506,7 @@ object reactWidgetsStrings {
   sealed trait week
     extends StObject
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
   inline def week: week = "week".asInstanceOf[week]
   
   @js.native
@@ -524,11 +524,11 @@ object reactWidgetsStrings {
        with DateTimePartType
        with typings.reactWidgets.esmLocalizationMod.DateTimePartType
        with DateUnit
-       with typings.reactWidgets.calendarViewMod.DateUnit
+       with typings.reactWidgets.cjsCalendarViewMod.DateUnit
        with RequiredDateMethods
        with typings.reactWidgets.esmLocalizationMod.RequiredDateMethods
        with View
-       with typings.reactWidgets.calendarMod.View
+       with typings.reactWidgets.cjsCalendarMod.View
   inline def year: year = "year".asInstanceOf[year]
   
   @js.native

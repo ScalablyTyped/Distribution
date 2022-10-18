@@ -14,9 +14,9 @@ object global {
   
   object AMap {
     
-    @JSGlobal("AMap.Geometry3D")
+    /* note: abstract class */ @JSGlobal("AMap.Geometry3D")
     @js.native
-    abstract class Geometry3D ()
+    open class Geometry3D ()
       extends StObject
          with typings.amapJsApiMap3d.AMap.Geometry3D {
       

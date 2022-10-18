@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "TextField")
 @js.native
 open class TextField protected ()
-  extends typings.blackEngine.textFieldMod.TextField {
+  extends typings.blackEngine.displayTextTextFieldMod.TextField {
   def this(
     text: js.UndefOr[String],
     family: js.UndefOr[String],
     color: js.UndefOr[Double],
     size: js.UndefOr[Double],
-    style: js.UndefOr[typings.blackEngine.fontStyleMod.FontStyle],
-    weight: js.UndefOr[typings.blackEngine.fontWeightMod.FontWeight],
+    style: js.UndefOr[typings.blackEngine.displayTextStylesFontStyleMod.FontStyle],
+    weight: js.UndefOr[typings.blackEngine.displayTextStylesFontWeightMod.FontWeight],
     strokeThickness: js.UndefOr[Double],
     strokeColor: js.UndefOr[Double]
   ) = this()

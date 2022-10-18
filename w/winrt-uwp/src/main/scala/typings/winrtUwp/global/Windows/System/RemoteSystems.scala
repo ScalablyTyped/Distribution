@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RemoteSystems {
   
   /** This class manages the attributes of a discovered remote system (device) and provides the capabilities to discover remote systems as part of Project Rome. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystem")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystem")
   @js.native
-  abstract class RemoteSystem ()
+  open class RemoteSystem ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystem {
     
@@ -116,9 +116,9 @@ object RemoteSystems {
   }
   
   /** Gets information about a RemoteSystemAdded event, namely the RemoteSystem that was added. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemAddedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemAddedEventArgs")
   @js.native
-  abstract class RemoteSystemAddedEventArgs ()
+  open class RemoteSystemAddedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemAddedEventArgs {
     
@@ -128,9 +128,9 @@ object RemoteSystems {
   }
   
   /** Represents an application on a remote system. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemApp")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemApp")
   @js.native
-  abstract class RemoteSystemApp ()
+  open class RemoteSystemApp ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemApp {
     
@@ -230,9 +230,9 @@ object RemoteSystems {
   }
   
   /** This is the argument class for the **RemoteSystemWatcher.EnumerationCompleted** event. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs")
   @js.native
-  abstract class RemoteSystemEnumerationCompletedEventArgs ()
+  open class RemoteSystemEnumerationCompletedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs
   
@@ -251,9 +251,9 @@ object RemoteSystems {
   }
   
   /** Contains read-only strings that identify various device types. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemKinds")
   @js.native
-  abstract class RemoteSystemKinds ()
+  open class RemoteSystemKinds ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemKinds
   object RemoteSystemKinds {
@@ -339,9 +339,9 @@ object RemoteSystems {
   }
   
   /** Gets information about a RemoteSystemRemoved event, namely the RemoteSystem that was removed. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemRemovedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemRemovedEventArgs")
   @js.native
-  abstract class RemoteSystemRemovedEventArgs ()
+  open class RemoteSystemRemovedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemRemovedEventArgs {
     
@@ -395,9 +395,9 @@ object RemoteSystems {
   }
   
   /** Gets information about a RemoteSystemUpdated event, namely the RemoteSystem that was updated. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemUpdatedEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemUpdatedEventArgs")
   @js.native
-  abstract class RemoteSystemUpdatedEventArgs ()
+  open class RemoteSystemUpdatedEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemUpdatedEventArgs {
     
@@ -407,9 +407,9 @@ object RemoteSystems {
   }
   
   /** Watches for activity related to the discovery of remote systems and raises the appropriate events. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemWatcher")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemWatcher")
   @js.native
-  abstract class RemoteSystemWatcher ()
+  open class RemoteSystemWatcher ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcher {
     
@@ -503,9 +503,9 @@ object RemoteSystems {
   }
   
   /** Gets information about an **ErrorOccurred** event, namely the **RemoteSystemWatcherError** value describing the error. */
-  @JSGlobal("Windows.System.RemoteSystems.RemoteSystemWatcherErrorOccurredEventArgs")
+  /* note: abstract class */ @JSGlobal("Windows.System.RemoteSystems.RemoteSystemWatcherErrorOccurredEventArgs")
   @js.native
-  abstract class RemoteSystemWatcherErrorOccurredEventArgs ()
+  open class RemoteSystemWatcherErrorOccurredEventArgs ()
     extends StObject
        with typings.winrtUwp.Windows.System.RemoteSystems.RemoteSystemWatcherErrorOccurredEventArgs {
     

@@ -1,13 +1,13 @@
 package typings.node
 
+import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.node.anon.AutoCommit
 import typings.node.eventsMod.Abortable
 import typings.node.readlineMod.AsyncCompleter
 import typings.node.readlineMod.Completer
 import typings.node.readlineMod.Direction
 import typings.node.readlineMod.ReadLineOptions
-import typings.std.ReadableStream
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ object readlinePromisesMod {
       *
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/readline.html#readline_class_interface
       */
-    /* protected */ def this(input: ReadableStream[Any]) = this()
+    /* protected */ def this(input: ReadableStream) = this()
     /**
       * NOTE: According to the documentation:
       *
@@ -39,22 +39,17 @@ object readlinePromisesMod {
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/readline.html#readline_class_interface
       */
     /* protected */ def this(options: ReadLineOptions) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: WritableStream[Any]) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: Unit, completer: AsyncCompleter) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: Unit, completer: Completer) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: WritableStream[Any], completer: AsyncCompleter) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: WritableStream[Any], completer: Completer) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: Unit, completer: Unit, terminal: Boolean) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: Unit, completer: AsyncCompleter, terminal: Boolean) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: Unit, completer: Completer, terminal: Boolean) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: WritableStream[Any], completer: Unit, terminal: Boolean) = this()
-    /* protected */ def this(
-      input: ReadableStream[Any],
-      output: WritableStream[Any],
-      completer: AsyncCompleter,
-      terminal: Boolean
-    ) = this()
-    /* protected */ def this(input: ReadableStream[Any], output: WritableStream[Any], completer: Completer, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: AsyncCompleter) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: Completer) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Completer) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
     
     /**
       * The rl.question() method displays the query by writing it to the output, waits for user input to be provided on input,
@@ -99,8 +94,8 @@ object readlinePromisesMod {
     /**
       * @param stream A TTY stream.
       */
-    def this(stream: WritableStream[Any]) = this()
-    def this(stream: WritableStream[Any], options: AutoCommit) = this()
+    def this(stream: WritableStream) = this()
+    def this(stream: WritableStream, options: AutoCommit) = this()
     
     /**
       * The `rl.clearLine()` method adds to the internal list of pending action an action that clears current line of the associated `stream` in a specified direction identified by `dir`.
@@ -187,22 +182,17 @@ object readlinePromisesMod {
     * }
     * ```
     */
-  inline def createInterface(input: ReadableStream[Any]): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any]).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: Unit, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: Unit, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: Unit, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: Unit, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: Unit, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: WritableStream[Any]): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: WritableStream[Any], completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: WritableStream[Any], completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(
-    input: ReadableStream[Any],
-    output: WritableStream[Any],
-    completer: AsyncCompleter,
-    terminal: Boolean
-  ): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: WritableStream[Any], completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  inline def createInterface(input: ReadableStream[Any], output: WritableStream[Any], completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any]).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
   inline def createInterface(options: ReadLineOptions): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[Interface]
 }

@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk.mod.workflows
 
-import typings.mendixmodelsdk.abstractModelMod.IAbstractModel
-import typings.mendixmodelsdk.baseModelMod.IModel
-import typings.mendixmodelsdk.internalMod.AbstractElement
-import typings.mendixmodelsdk.internalMod.AbstractModel
-import typings.mendixmodelsdk.internalMod.ModelUnit
-import typings.mendixmodelsdk.structuresMod.aliases.Container
-import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenWorkflowsMod.StructureVersionInfo
+import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typings.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typings.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("mendixmodelsdk", "workflows.PageReference")
 @js.native
 open class PageReference protected ()
-  extends typings.mendixmodelsdk.allModelClassesMod.workflows.PageReference {
+  extends typings.mendixmodelsdk.srcGenAllModelClassesMod.workflows.PageReference {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -40,7 +40,7 @@ object PageReference {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.PageReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.PageReference]
+  inline def create(model: IModel): typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.PageReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.PageReference]
   
   /**
     * Creates and returns a new PageReference instance in the SDK and on the server.
@@ -51,7 +51,7 @@ object PageReference {
     *  9.11.0 and higher
     */
   /* static member */
-  inline def createInUserTaskUnderTaskPage(container: typings.mendixmodelsdk.workflowsMod.workflows.UserTask): typings.mendixmodelsdk.workflowsMod.workflows.PageReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderTaskPage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.PageReference]
+  inline def createInUserTaskUnderTaskPage(container: typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.UserTask): typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.PageReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInUserTaskUnderTaskPage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.PageReference]
   
   /**
     * Creates and returns a new PageReference instance in the SDK and on the server.
@@ -62,7 +62,7 @@ object PageReference {
     *  9.11.0 and higher
     */
   /* static member */
-  inline def createInWorkflowUnderAdminPage(container: typings.mendixmodelsdk.workflowsMod.workflows.Workflow): typings.mendixmodelsdk.workflowsMod.workflows.PageReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderAdminPage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.PageReference]
+  inline def createInWorkflowUnderAdminPage(container: typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.Workflow): typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.PageReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderAdminPage")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.PageReference]
   
   /* static member */
   @JSImport("mendixmodelsdk", "workflows.PageReference.structureTypeName")

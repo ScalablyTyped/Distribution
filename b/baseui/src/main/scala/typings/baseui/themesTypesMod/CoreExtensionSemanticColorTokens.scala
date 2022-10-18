@@ -22,11 +22,11 @@ trait CoreExtensionSemanticColorTokens extends StObject {
   
   var backgroundNegative: String
   
-  var backgroundOverlayArt: js.UndefOr[String | Null] = js.undefined
+  var backgroundOverlayArt: js.UndefOr[String] = js.undefined
   
-  var backgroundOverlayDark: js.UndefOr[String | Null] = js.undefined
+  var backgroundOverlayDark: js.UndefOr[String] = js.undefined
   
-  var backgroundOverlayLight: js.UndefOr[String | Null] = js.undefined
+  var backgroundOverlayLight: js.UndefOr[String] = js.undefined
   
   var backgroundPositive: String
   
@@ -139,19 +139,13 @@ object CoreExtensionSemanticColorTokens {
     
     inline def setBackgroundOverlayArt(value: String): Self = StObject.set(x, "backgroundOverlayArt", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundOverlayArtNull: Self = StObject.set(x, "backgroundOverlayArt", null)
-    
     inline def setBackgroundOverlayArtUndefined: Self = StObject.set(x, "backgroundOverlayArt", js.undefined)
     
     inline def setBackgroundOverlayDark(value: String): Self = StObject.set(x, "backgroundOverlayDark", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundOverlayDarkNull: Self = StObject.set(x, "backgroundOverlayDark", null)
-    
     inline def setBackgroundOverlayDarkUndefined: Self = StObject.set(x, "backgroundOverlayDark", js.undefined)
     
     inline def setBackgroundOverlayLight(value: String): Self = StObject.set(x, "backgroundOverlayLight", value.asInstanceOf[js.Any])
-    
-    inline def setBackgroundOverlayLightNull: Self = StObject.set(x, "backgroundOverlayLight", null)
     
     inline def setBackgroundOverlayLightUndefined: Self = StObject.set(x, "backgroundOverlayLight", js.undefined)
     

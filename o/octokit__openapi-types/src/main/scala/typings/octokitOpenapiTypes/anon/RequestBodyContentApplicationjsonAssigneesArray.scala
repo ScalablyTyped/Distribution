@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonAssigneesArray extends StObject {
   
   var requestBody: ContentApplicationjsonAssigneesArray
   
-  var responses: `200267`
+  var responses: `200144`
 }
 object RequestBodyContentApplicationjsonAssigneesArray {
   
   inline def apply(
     parameters: PathIssuenumber,
     requestBody: ContentApplicationjsonAssigneesArray,
-    responses: `200267`
+    responses: `200144`
   ): RequestBodyContentApplicationjsonAssigneesArray = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAssigneesArray]
@@ -29,6 +29,6 @@ object RequestBodyContentApplicationjsonAssigneesArray {
     
     inline def setRequestBody(value: ContentApplicationjsonAssigneesArray): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200267`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200144`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

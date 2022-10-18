@@ -1,7 +1,8 @@
 package typings.node.childProcessMod
 
+import typings.node.NodeJS.ArrayBufferView
 import typings.node.bufferMod.global.BufferEncoding
-import typings.node.nodeStreamMod.Stream
+import typings.node.nodeColonstreamMod.Stream
 import typings.node.nodeStrings.buffer_
 import typings.node.nodeStrings.ipc
 import typings.node.processMod.global.NodeJS.Signals
@@ -15,7 +16,7 @@ trait CommonExecOptions
   
   var encoding: js.UndefOr[BufferEncoding | buffer_ | Null] = js.undefined
   
-  var input: js.UndefOr[String | js.typedarray.ArrayBufferView] = js.undefined
+  var input: js.UndefOr[String | ArrayBufferView] = js.undefined
   
   var killSignal: js.UndefOr[Signals | Double] = js.undefined
   
@@ -38,7 +39,7 @@ object CommonExecOptions {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setInput(value: String | js.typedarray.ArrayBufferView): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String | ArrayBufferView): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     

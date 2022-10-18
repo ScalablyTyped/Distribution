@@ -38,8 +38,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactOwlCarousel.optionsMod.HandlerCallback
-import typings.reactOwlCarousel.optionsMod.Options
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`additions removals`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`additions text`
 import typings.reactOwlCarousel.reactOwlCarouselStrings.`inline`
@@ -92,6 +90,8 @@ import typings.reactOwlCarousel.reactOwlCarouselStrings.url
 import typings.reactOwlCarousel.reactOwlCarouselStrings.user
 import typings.reactOwlCarousel.reactOwlCarouselStrings.vertical
 import typings.reactOwlCarousel.reactOwlCarouselStrings.yes
+import typings.reactOwlCarousel.umdOptionsMod.HandlerCallback
+import typings.reactOwlCarousel.umdOptionsMod.Options
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement

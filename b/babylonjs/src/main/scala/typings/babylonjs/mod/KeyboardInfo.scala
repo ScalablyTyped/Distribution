@@ -1,6 +1,6 @@
 package typings.babylonjs.mod
 
-import typings.babylonjs.deviceInputEventsMod.IKeyboardEvent
+import typings.babylonjs.eventsDeviceInputEventsMod.IKeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs", "KeyboardInfo")
 @js.native
 open class KeyboardInfo protected ()
-  extends typings.babylonjs.legacyMod.KeyboardInfo {
+  extends typings.babylonjs.legacyLegacyMod.KeyboardInfo {
   /**
     * Instantiates a new keyboard info.
     * This class is used to store keyboard related info for the onKeyboardObservable event.

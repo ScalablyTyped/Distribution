@@ -1,7 +1,7 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ButtonType
-import typings.grommet.boxMod.BoxProps
+import typings.grommet.componentsBoxMod.BoxProps
+import typings.grommet.themesBaseMod.ButtonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ trait Button extends StObject {
   
   var button: js.UndefOr[ButtonType | String] = js.undefined
   
-  var container: js.UndefOr[BoxProps | `16`] = js.undefined
+  var container: js.UndefOr[BoxProps | `10`] = js.undefined
   
   var controls: js.UndefOr[AlignDirection] = js.undefined
   
@@ -29,7 +29,7 @@ object Button {
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setContainer(value: BoxProps | `16`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: BoxProps | `10`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     

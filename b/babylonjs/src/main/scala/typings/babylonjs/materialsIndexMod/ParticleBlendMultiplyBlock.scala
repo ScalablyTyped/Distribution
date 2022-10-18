@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Materials/index", "ParticleBlendMultiplyBlock")
 @js.native
 open class ParticleBlendMultiplyBlock protected ()
-  extends typings.babylonjs.nodeIndexMod.ParticleBlendMultiplyBlock {
+  extends typings.babylonjs.materialsNodeIndexMod.ParticleBlendMultiplyBlock {
   /**
     * Create a new ParticleBlendMultiplyBlock
     * @param name defines the block name

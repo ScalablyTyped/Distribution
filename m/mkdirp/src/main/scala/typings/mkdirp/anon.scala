@@ -1,5 +1,6 @@
 package typings.mkdirp
 
+import typings.node.NodeJS.ErrnoException
 import typings.node.anon.MakeDirectoryOptionsrecur
 import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.StatOptionsbigintfalseund
@@ -34,50 +35,30 @@ object anon {
     def apply(
       path: PathLike,
       options: Null,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* path */ js.UndefOr[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def apply(path: PathLike, options: Null, callback: NoParamCallback): Unit = js.native
     def apply(
       path: PathLike,
       options: Unit,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* path */ js.UndefOr[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def apply(path: PathLike, options: Unit, callback: NoParamCallback): Unit = js.native
     def apply(path: PathLike, options: MakeDirectoryOptionsrecurMode, callback: NoParamCallback): Unit = js.native
     def apply(
       path: PathLike,
       options: MakeDirectoryOptionsrecur,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* path */ js.UndefOr[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: MakeDirectoryOptions,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* path */ js.UndefOr[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Mode,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* path */ js.UndefOr[String], 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* path */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def apply(path: PathLike, options: Mode, callback: NoParamCallback): Unit = js.native
   }
@@ -85,49 +66,26 @@ object anon {
   @js.native
   trait Typeofstat extends StObject {
     
-    def apply(
-      path: PathLike,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* stats */ Stats, 
-          Unit
-        ]
-    ): Unit = js.native
+    def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = js.native
     def apply(
       path: PathLike,
       options: Unit,
-      callback: js.Function2[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          BigIntStats | (/* stats */ Stats), 
-          Unit
-        ]
+      callback: js.Function2[ErrnoException | Null, BigIntStats | (/* stats */ Stats), Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: StatOptionsbigintfalseund,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* stats */ Stats, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: StatOptionsbiginttrue,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* stats */ BigIntStats, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ BigIntStats, Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: StatOptions,
-      callback: js.Function2[
-          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
-          /* stats */ Stats | BigIntStats, 
-          Unit
-        ]
+      callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats | BigIntStats, Unit]
     ): Unit = js.native
   }
 }

@@ -1,15 +1,15 @@
 package typings.nivoTooltip
 
 import typings.nivoTooltip.anon.Actions
-import typings.nivoTooltip.basicTooltipMod.BasicTooltipProps
-import typings.nivoTooltip.chipMod.ChipProps
-import typings.nivoTooltip.contextMod.TooltipActionsContextData
-import typings.nivoTooltip.contextMod.TooltipStateContextData
-import typings.nivoTooltip.contextMod.TooltipStateContextDataHidden
-import typings.nivoTooltip.crosshairMod.CrosshairProps
-import typings.nivoTooltip.tableTooltipMod.TableTooltipProps
-import typings.nivoTooltip.tooltipProviderMod.TooltipProviderProps
-import typings.nivoTooltip.tooltipWrapperMod.TooltipWrapperProps
+import typings.nivoTooltip.distTypesBasicTooltipMod.BasicTooltipProps
+import typings.nivoTooltip.distTypesChipMod.ChipProps
+import typings.nivoTooltip.distTypesContextMod.TooltipActionsContextData
+import typings.nivoTooltip.distTypesContextMod.TooltipStateContextData
+import typings.nivoTooltip.distTypesContextMod.TooltipStateContextDataHidden
+import typings.nivoTooltip.distTypesCrosshairMod.CrosshairProps
+import typings.nivoTooltip.distTypesTableTooltipMod.TableTooltipProps
+import typings.nivoTooltip.distTypesTooltipProviderMod.TooltipProviderProps
+import typings.nivoTooltip.distTypesTooltipWrapperMod.TooltipWrapperProps
 import typings.react.mod.Context
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.MutableRefObject

@@ -1,11 +1,11 @@
 package typings.interactjsTypes.anon
 
-import typings.interactjsTypes.interactjsAutoScrollPluginMod.AutoScrollOptions
+import typings.interactjsTypes.autoScrollPluginMod.AutoScrollOptions
+import typings.interactjsTypes.coreTypesMod.ActionName
 import typings.interactjsTypes.interactjsTypesStrings.drag
 import typings.interactjsTypes.interactjsTypesStrings.drop
 import typings.interactjsTypes.interactjsTypesStrings.gesture
 import typings.interactjsTypes.interactjsTypesStrings.resize
-import typings.interactjsTypes.typesMod.ActionName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait Check extends StObject {
   
   var i: Double = js.native
   
-  var interaction: typings.interactjsTypes.interactionMod.Interaction[
+  var interaction: typings.interactjsTypes.coreInteractionMod.Interaction[
     /* keyof @interactjs/types.@interactjs/core/types.ActionMap */ drag | drop | gesture | resize
   ] = js.native
   
@@ -40,7 +40,7 @@ trait Check extends StObject {
   
   var speed: Double = js.native
   
-  def start(interaction: typings.interactjsTypes.interactionMod.Interaction[ActionName]): Unit = js.native
+  def start(interaction: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]): Unit = js.native
   
   def stop(): Unit = js.native
   

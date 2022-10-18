@@ -10,14 +10,31 @@ trait Cascade extends StObject {
   
   var cols: Double
   
-  def onChange(): Unit
+  def format(values: js.Array[String]): String
   
-  var value: js.Array[scala.Nothing]
+  var pickerPrefixCls: String
+  
+  var popupPrefixCls: String
+  
+  var prefixCls: String
+  
+  var title: String
+  
+  var triggerType: String
 }
 object Cascade {
   
-  inline def apply(cascade: Boolean, cols: Double, onChange: () => Unit, value: js.Array[scala.Nothing]): Cascade = {
-    val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), value = value.asInstanceOf[js.Any])
+  inline def apply(
+    cascade: Boolean,
+    cols: Double,
+    format: js.Array[String] => String,
+    pickerPrefixCls: String,
+    popupPrefixCls: String,
+    prefixCls: String,
+    title: String,
+    triggerType: String
+  ): Cascade = {
+    val __obj = js.Dynamic.literal(cascade = cascade.asInstanceOf[js.Any], cols = cols.asInstanceOf[js.Any], format = js.Any.fromFunction1(format), pickerPrefixCls = pickerPrefixCls.asInstanceOf[js.Any], popupPrefixCls = popupPrefixCls.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cascade]
   }
   
@@ -27,10 +44,16 @@ object Cascade {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+    inline def setFormat(value: js.Array[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    inline def setValue(value: js.Array[scala.Nothing]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: scala.Nothing*): Self = StObject.set(x, "value", js.Array(value*))
+    inline def setPopupPrefixCls(value: String): Self = StObject.set(x, "popupPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,6 @@
 package typings.jupyterlabServices.anon
 
-import typings.jupyterlabServices.workspaceMod.Workspace.IWorkspace
+import typings.jupyterlabServices.libWorkspaceMod.Workspace.IWorkspace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

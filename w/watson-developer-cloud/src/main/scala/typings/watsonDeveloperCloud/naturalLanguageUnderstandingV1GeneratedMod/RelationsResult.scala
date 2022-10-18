@@ -32,7 +32,7 @@ object RelationsResult {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: RelationArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: RelationArgument*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

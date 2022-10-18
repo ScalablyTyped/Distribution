@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@reach/visually-hidden" : "0.17.0"
+      "@reach/visually-hidden" : "0.18.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@reach/visually-hidden" : "0.17.0"
+      "@reach/visually-hidden" : "0.18.0"
     }
   ],
   "compile-devDependencies" : [

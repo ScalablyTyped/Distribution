@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BABYLON.BaseError")
+/* note: abstract class */ @JSGlobal("BABYLON.BaseError")
 @js.native
-abstract class BaseError ()
+open class BaseError ()
   extends StObject
      with Error {
   

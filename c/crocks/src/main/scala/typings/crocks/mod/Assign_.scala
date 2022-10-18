@@ -10,7 +10,7 @@ object Assign_ {
   @JSImport("crocks", "Assign.default")
   @js.native
   open class default ()
-    extends typings.crocks.crocksMod.default
+    extends typings.crocks.assignMod.default
   object default {
     
     inline def apply(`val`: js.Object): Assign = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Assign]

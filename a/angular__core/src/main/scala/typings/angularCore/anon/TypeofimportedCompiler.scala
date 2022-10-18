@@ -97,7 +97,6 @@ import typings.angularCompiler.mod.TmplAstTemplate
 import typings.angularCompiler.mod.TmplAstText
 import typings.angularCompiler.mod.TmplAstTextAttribute
 import typings.angularCompiler.mod.TmplAstVariable
-import typings.angularCompiler.mod.Token
 import typings.angularCompiler.mod.TokenType
 import typings.angularCompiler.mod.Type
 import typings.angularCompiler.mod.UnaryOperator
@@ -259,7 +258,7 @@ trait TypeofimportedCompiler extends StObject {
   
   var DomElementSchemaRegistry: Instantiable0[typings.angularCompiler.mod.DomElementSchemaRegistry] = js.native
   
-  val EOF: Token = js.native
+  val EOF: typings.angularCompiler.mod.Token = js.native
   
   var Element: Instantiable5[
     /* name */ String, 
@@ -829,7 +828,7 @@ trait TypeofimportedCompiler extends StObject {
     /* input */ String, 
     /* location */ String, 
     /* absoluteOffset */ Double, 
-    /* tokens */ js.Array[Token], 
+    /* tokens */ js.Array[typings.angularCompiler.mod.Token], 
     /* parseFlags */ ParseFlags, 
     /* errors */ js.Array[ParserError], 
     /* offset */ Double, 

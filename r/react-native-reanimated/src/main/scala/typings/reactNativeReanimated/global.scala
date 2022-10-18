@@ -3,7 +3,7 @@ package typings.reactNativeReanimated
 import typings.reactNativeReanimated.anon.Back
 import typings.reactNativeReanimated.anon.CLAMP
 import typings.reactNativeReanimated.anon.Current
-import typings.reactNativeReanimated.anon.PageX
+import typings.reactNativeReanimated.anon.Height
 import typings.reactNativeReanimated.anon.ValueAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +35,7 @@ object global {
     
     inline def cancelAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimation")().asInstanceOf[Unit]
     
-    inline def measure(): PageX = ^.asInstanceOf[js.Dynamic].applyDynamic("measure")().asInstanceOf[PageX]
+    inline def measure(): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("measure")().asInstanceOf[Height]
     
     inline def runOnJS(fn: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("runOnJS")(fn.asInstanceOf[js.Any]).asInstanceOf[Any]
     

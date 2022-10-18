@@ -1,26 +1,16 @@
 package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignIconsVue.antdIconMod.AntdIconProps
-import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.antDesignIconsVue.libIconsFileExcelOutlinedMod.FileExcelOutlinedIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileExcelOutlinedMod extends Shortcut {
   
-  @JSImport("@ant-design/icons-vue/lib/icons/FileExcelOutlined", JSImport.Default)
+  @JSImport("@ant-design/icons-vue/FileExcelOutlined", JSImport.Default)
   @js.native
   val default: FileExcelOutlinedIconType = js.native
-  
-  @js.native
-  trait FileExcelOutlinedIconType
-    extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
-    
-    @JSName("displayName")
-    var displayName_FileExcelOutlinedIconType: String = js.native
-  }
   
   type _To = FileExcelOutlinedIconType
   

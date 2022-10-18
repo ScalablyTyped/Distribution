@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "DataTable")
 @js.native
 open class DataTable protected ()
-  extends typings.carbonComponents.componentsMod.DataTable {
+  extends typings.carbonComponents.globalsJsComponentsMod.DataTable {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialDataTableOptions) = this()
 }

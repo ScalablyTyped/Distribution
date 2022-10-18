@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // TODO: Conditional types in TS 1.8 will really clean this up.
 inline def apply(): Processor[scala.Nothing, Selectors] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor[scala.Nothing, Selectors]]
-inline def apply(processor: AsyncProcessor[Unit] | SyncProcessor[Unit]): Processor[scala.Nothing, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(processor.asInstanceOf[js.Any]).asInstanceOf[Processor[scala.Nothing, scala.Nothing]]
+inline def apply(processor: AsyncProcessor[Unit] | SyncProcessor[Unit]): Processor[scala.Nothing, Selectors] = ^.asInstanceOf[js.Dynamic].apply(processor.asInstanceOf[js.Any]).asInstanceOf[Processor[scala.Nothing, Selectors]]
 
 inline def ATTRIBUTE__ : typings.postcssSelectorParser.postcssSelectorParserStrings.attribute = ^.asInstanceOf[js.Dynamic].selectDynamic("ATTRIBUTE").asInstanceOf[typings.postcssSelectorParser.postcssSelectorParserStrings.attribute]
 
@@ -109,12 +109,9 @@ inline def universal(opts: NamespaceOptions[String]): Any = ^.asInstanceOf[js.Dy
 
 type AsyncProcessor[Transform] = ProcessorFn[PromiseLike[Transform]]
 
-// A type that's T but not U.
-type Diff[T, U] = T
-
 type ProcessorFn[ReturnType] = js.Function1[/* root */ Root_, ReturnType]
 
-type QuoteMark = Quotationmark | String | Null
+type QuoteMark = Quotationmark | (/* ' */ String) | Null
 
 /** Accepts a string  */
 type Selectors = String | PostCSSRuleNode

@@ -21,9 +21,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("falcor", "DataSource")
+  /* note: abstract class */ @JSImport("falcor", "DataSource")
   @js.native
-  abstract class DataSource () extends StObject {
+  open class DataSource () extends StObject {
     
     /**
       * Invokes a function in the DataSource's JSONGraph object.

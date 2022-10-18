@@ -9,14 +9,14 @@ object mod {
   @JSImport("@teppeis/multimaps", "ArrayMultimap")
   @js.native
   open class ArrayMultimap[K, V] ()
-    extends typings.teppeisMultimaps.arraymultimapMod.ArrayMultimap[K, V] {
+    extends typings.teppeisMultimaps.distSrcArraymultimapMod.ArrayMultimap[K, V] {
     def this(iterable: js.Iterable[js.Tuple2[K, V]]) = this()
   }
   
   @JSImport("@teppeis/multimaps", "SetMultimap")
   @js.native
   open class SetMultimap[K, V] ()
-    extends typings.teppeisMultimaps.setmultimapMod.SetMultimap[K, V] {
+    extends typings.teppeisMultimaps.distSrcSetmultimapMod.SetMultimap[K, V] {
     def this(iterable: js.Iterable[js.Tuple2[K, V]]) = this()
   }
 }

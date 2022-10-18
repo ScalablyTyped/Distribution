@@ -1,8 +1,8 @@
 package typings.hyperformula.mod
 
-import typings.hyperformula.absoluteCellRangeMod.AbsoluteCellRange
-import typings.hyperformula.dependencyGraphMod.DependencyGraph
-import typings.hyperformula.interpreterValueMod.InternalScalarValue
+import typings.hyperformula.typingsAbsoluteCellRangeMod.AbsoluteCellRange
+import typings.hyperformula.typingsDependencyGraphMod.DependencyGraph
+import typings.hyperformula.typingsInterpreterInterpreterValueMod.InternalScalarValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("hyperformula", "SimpleRangeValue")
 @js.native
 open class SimpleRangeValue ()
-  extends typings.hyperformula.simpleRangeValueMod.SimpleRangeValue {
+  extends typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue {
   def this(_data: js.Array[js.Array[InternalScalarValue]]) = this()
   def this(_data: js.Array[js.Array[InternalScalarValue]], range: AbsoluteCellRange) = this()
   def this(_data: Unit, range: AbsoluteCellRange) = this()
@@ -62,13 +62,13 @@ object SimpleRangeValue {
     data: js.Array[js.Array[InternalScalarValue]],
     range: AbsoluteCellRange,
     dependencyGraph: DependencyGraph
-  ): typings.hyperformula.simpleRangeValueMod.SimpleRangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(data.asInstanceOf[js.Any], range.asInstanceOf[js.Any], dependencyGraph.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.simpleRangeValueMod.SimpleRangeValue]
+  ): typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(data.asInstanceOf[js.Any], range.asInstanceOf[js.Any], dependencyGraph.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue]
   
-  inline def fromScalar(scalar: InternalScalarValue): typings.hyperformula.simpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScalar")(scalar.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.simpleRangeValueMod.SimpleRangeValue]
+  inline def fromScalar(scalar: InternalScalarValue): typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScalar")(scalar.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue]
   
-  inline def onlyNumbers(data: js.Array[js.Array[Double]]): typings.hyperformula.simpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyNumbers")(data.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.simpleRangeValueMod.SimpleRangeValue]
+  inline def onlyNumbers(data: js.Array[js.Array[Double]]): typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyNumbers")(data.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue]
   
-  inline def onlyRange(range: AbsoluteCellRange, dependencyGraph: DependencyGraph): typings.hyperformula.simpleRangeValueMod.SimpleRangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("onlyRange")(range.asInstanceOf[js.Any], dependencyGraph.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.simpleRangeValueMod.SimpleRangeValue]
+  inline def onlyRange(range: AbsoluteCellRange, dependencyGraph: DependencyGraph): typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("onlyRange")(range.asInstanceOf[js.Any], dependencyGraph.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue]
   
-  inline def onlyValues(data: js.Array[js.Array[InternalScalarValue]]): typings.hyperformula.simpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyValues")(data.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.simpleRangeValueMod.SimpleRangeValue]
+  inline def onlyValues(data: js.Array[js.Array[InternalScalarValue]]): typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyValues")(data.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue]
 }

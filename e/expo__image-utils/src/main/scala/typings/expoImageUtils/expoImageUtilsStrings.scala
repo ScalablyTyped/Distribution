@@ -1,8 +1,8 @@
 package typings.expoImageUtils
 
-import typings.expoImageUtils.imageTypesMod.ImageFormat
-import typings.expoImageUtils.imageTypesMod.ResizeMode
-import typings.expoImageUtils.sharpTypesMod.Position
+import typings.expoImageUtils.buildImageDottypesMod.ImageFormat
+import typings.expoImageUtils.buildImageDottypesMod.ResizeMode
+import typings.expoImageUtils.buildSharpDottypesMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -38,7 +38,7 @@ trait Arbn
   var dataHolderBrandId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The industries the Data Holder Brand belongs to. Please note that the CDR Register entity model is constrained to one industry per brand which is planned to be relaxed in the future.
+    * The industries the Data Holder Brand belongs to
     */
   var industries: js.Array[banking | energy | telco]
   

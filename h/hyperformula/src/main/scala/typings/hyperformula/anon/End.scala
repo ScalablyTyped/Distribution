@@ -1,6 +1,6 @@
 package typings.hyperformula.anon
 
-import typings.hyperformula.cellMod.SimpleCellAddress_
+import typings.hyperformula.typingsCellMod.SimpleCellAddress_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

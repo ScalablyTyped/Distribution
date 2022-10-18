@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@antv/g-lite", "DefaultSceneGraphSelector")
 @js.native
 open class DefaultSceneGraphSelector ()
-  extends typings.antvGLite.servicesMod.DefaultSceneGraphSelector
+  extends typings.antvGLite.distServicesMod.DefaultSceneGraphSelector

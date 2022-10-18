@@ -11,7 +11,7 @@ import typings.baseui.popoverTypesMod.State
 import typings.baseui.popoverTypesMod.StateReducer
 import typings.baseui.popoverTypesMod.StatefulContentRenderProp
 import typings.baseui.popoverTypesMod.TriggerType
-import typings.baseui.statefulTooltipContainerMod.default
+import typings.baseui.tooltipStatefulTooltipContainerMod.default
 import typings.baseui.tooltipTypesMod.StatefulTooltipProps
 import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
@@ -22,7 +22,7 @@ import typings.std.Element
 import typings.std.Event
 import typings.std.FocusOptions
 import typings.std.HTMLElement
-import typings.styletronReact.typesMod.StyletronComponent
+import typings.styletronReact.libTypesMod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

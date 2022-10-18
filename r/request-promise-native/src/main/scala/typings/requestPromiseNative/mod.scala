@@ -68,7 +68,8 @@ object mod extends Shortcut {
   
   @js.native
   trait RequestPromise[T]
-    extends Request
+    extends StObject
+       with Request
        with Promise[T] {
     
     def promise(): js.Promise[T] = js.native

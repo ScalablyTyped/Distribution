@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("office-ui-fabric-react", "Rectangle")
 @js.native
 open class Rectangle ()
-  extends typings.officeUiFabricReact.utilitiesMod.Rectangle {
+  extends typings.officeUiFabricReact.libUtilitiesMod.Rectangle {
   def this(left: Double) = this()
   def this(left: Double, right: Double) = this()
   def this(left: Unit, right: Double) = this()

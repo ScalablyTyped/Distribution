@@ -114,7 +114,7 @@ object SelectControlValueAccessor {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     SelectControlValueAccessor, 
-    String, 
+    /* select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel] */ String, 
     scala.Nothing, 
     CompareWith, 
     js.Object, 
@@ -125,7 +125,7 @@ object SelectControlValueAccessor {
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       SelectControlValueAccessor, 
-      String, 
+      /* select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel] */ String, 
       scala.Nothing, 
       CompareWith, 
       js.Object, 

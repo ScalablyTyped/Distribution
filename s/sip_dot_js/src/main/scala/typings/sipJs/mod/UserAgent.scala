@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options - Options bucket. See {@link UserAgentOptions} for details.
   */
 open class UserAgent ()
-  extends typings.sipJs.apiMod.UserAgent {
+  extends typings.sipJs.libApiMod.UserAgent {
   def this(options: PartialUserAgentOptions) = this()
 }
 /* static members */
@@ -37,7 +37,7 @@ object UserAgent {
     * const uri = UserAgent.makeURI("sip:edgar@example.com");
     * ```
     */
-  inline def makeURI(uri: String): js.UndefOr[typings.sipJs.coreMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.coreMod.URI]]
+  inline def makeURI(uri: String): js.UndefOr[typings.sipJs.libCoreMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.libCoreMod.URI]]
   
   /**
     * Strip properties with undefined values from options.

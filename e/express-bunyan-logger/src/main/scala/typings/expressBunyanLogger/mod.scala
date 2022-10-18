@@ -7,8 +7,8 @@ import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
+import typings.node.NodeJS.WritableStream
 import typings.std.Record
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,7 +120,7 @@ object mod {
     
     var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
@@ -211,7 +211,7 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

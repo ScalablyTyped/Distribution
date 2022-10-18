@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
+/** Global changes response.
+  * @see Docs: {@link http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates} */
 trait DatabaseUpdatesResponse extends StObject {
   
-  // The last sequence ID reported.
+  /** The last sequence ID reported. */
   var last_seq: String
   
-  // An array of database events. For longpoll and continuous modes, the entire response is the contents of the
-  // results array.
+  /** An array of database events.
+    *
+    * For longpoll and continuous modes, the entire response is the contents of the results array. */
   var results: js.Array[DatabaseUpdatesResultItem]
 }
 object DatabaseUpdatesResponse {
@@ -27,6 +29,6 @@ object DatabaseUpdatesResponse {
     
     inline def setResults(value: js.Array[DatabaseUpdatesResultItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: DatabaseUpdatesResultItem*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: DatabaseUpdatesResultItem*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

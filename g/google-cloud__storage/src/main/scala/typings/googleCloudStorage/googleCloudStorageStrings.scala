@@ -1,6 +1,6 @@
 package typings.googleCloudStorage
 
-import typings.googleCloudStorage.resumableUploadMod.PredefinedAcl
+import typings.googleCloudStorage.buildSrcResumableUploadMod.PredefinedAcl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,21 +39,21 @@ object googleCloudStorageStrings {
   sealed trait authenticatedRead
     extends StObject
        with PredefinedAcl
-       with typings.googleCloudStorage.fileMod.PredefinedAcl
+       with typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
   inline def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
   
   @js.native
   sealed trait bucketOwnerFullControl
     extends StObject
        with PredefinedAcl
-       with typings.googleCloudStorage.fileMod.PredefinedAcl
+       with typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
   inline def bucketOwnerFullControl: bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[bucketOwnerFullControl]
   
   @js.native
   sealed trait bucketOwnerRead
     extends StObject
        with PredefinedAcl
-       with typings.googleCloudStorage.fileMod.PredefinedAcl
+       with typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
   inline def bucketOwnerRead: bucketOwnerRead = "bucketOwnerRead".asInstanceOf[bucketOwnerRead]
   
   @js.native
@@ -84,21 +84,21 @@ object googleCloudStorageStrings {
   sealed trait `private`
     extends StObject
        with PredefinedAcl
-       with typings.googleCloudStorage.fileMod.PredefinedAcl
+       with typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
   inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait projectPrivate
     extends StObject
        with PredefinedAcl
-       with typings.googleCloudStorage.fileMod.PredefinedAcl
+       with typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
   inline def projectPrivate: projectPrivate = "projectPrivate".asInstanceOf[projectPrivate]
   
   @js.native
   sealed trait publicRead
     extends StObject
        with PredefinedAcl
-       with typings.googleCloudStorage.fileMod.PredefinedAcl
+       with typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
   inline def publicRead: publicRead = "publicRead".asInstanceOf[publicRead]
   
   @js.native

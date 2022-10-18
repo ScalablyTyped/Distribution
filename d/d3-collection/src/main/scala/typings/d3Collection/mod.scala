@@ -17,7 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def entries(obj: js.Object): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  inline def entries(obj: js.Object): js.Array[KeyValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[KeyValue]]
   inline def entries[T](obj: StringDictionary[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
   inline def entries[T](obj: ArrayLike[T]): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
   
@@ -202,7 +202,7 @@ object mod {
       *
       * @param array An array to create a nested data structure from.
       */
-    def entries(array: js.Array[Datum]): js.Array[KeyValue[RollupType]]
+    def entries(array: js.Array[Datum]): js.Array[Value[RollupType]]
     
     /**
       * Registers a new key function and returns this nest operator.
@@ -320,7 +320,7 @@ object mod {
   object Nest_ {
     
     inline def apply[Datum, RollupType](
-      entries: js.Array[Datum] => js.Array[KeyValue[RollupType]],
+      entries: js.Array[Datum] => js.Array[Value[RollupType]],
       key: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType],
       map: js.Array[Datum] => Map_[Any],
       `object`: js.Array[Datum] => StringDictionary[Any],
@@ -335,7 +335,7 @@ object mod {
     
     extension [Self <: Nest_[?, ?], Datum, RollupType](x: Self & (Nest_[Datum, RollupType])) {
       
-      inline def setEntries(value: js.Array[Datum] => js.Array[KeyValue[RollupType]]): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
+      inline def setEntries(value: js.Array[Datum] => js.Array[Value[RollupType]]): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
       
       inline def setKey(value: js.Function1[/* datum */ Datum, String] => Nest_[Datum, RollupType]): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       

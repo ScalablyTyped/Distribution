@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsNode.mod
 
-import typings.tensorflowTfjsLayers.containerMod.ContainerArgs
+import typings.tensorflowTfjsLayers.distEngineContainerMod.ContainerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

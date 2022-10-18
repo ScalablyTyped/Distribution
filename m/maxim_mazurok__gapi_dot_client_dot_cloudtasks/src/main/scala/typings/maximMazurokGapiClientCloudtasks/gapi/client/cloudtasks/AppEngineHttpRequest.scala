@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
-import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +28,7 @@ trait AppEngineHttpRequest extends StObject {
     * Task. For more information, see the CreateTask documentation.
     */
   var headers: js.UndefOr[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
   ] = js.undefined
   
   /**
@@ -66,9 +63,7 @@ object AppEngineHttpRequest {
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     inline def setHeaders(
-      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudtasks.maximMazurokGapiClientCloudtasksStrings.AppEngineHttpRequest & TopLevel[Any]
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

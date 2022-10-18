@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods used to select devices for capturing and rendering audio, and for capturing video. */
-@JSGlobal("Windows.Media.Devices.MediaDevice")
+/* note: abstract class */ @JSGlobal("Windows.Media.Devices.MediaDevice")
 @js.native
-abstract class MediaDevice ()
+open class MediaDevice ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.MediaDevice
 object MediaDevice {

@@ -1,22 +1,25 @@
 package typings.reachVisuallyHidden
 
-import org.scalablytyped.runtime.Shortcut
+import typings.reachPolymorphic.mod.ForwardRefComponent
+import typings.reachVisuallyHidden.reachVisuallyHiddenStrings.span
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   /**
-    * VisuallyHidden
+    * Welcome to @reach/visually-hidden!
     *
     * Provides text for screen readers that is visually hidden.
     * It is the logical opposite of the `aria-hidden` attribute.
+    *
+    * @see https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    * @see https://a11yproject.com/posts/how-to-hide-content/
+    * @see Docs     https://reach.tech/visually-hidden
+    * @see Source   https://github.com/reach/reach-ui/tree/main/packages/visually-hidden
     */
-  @JSImport("@reach/visually-hidden", JSImport.Default)
-  @js.native
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'span', VisuallyHiddenProps> */ Any = js.native
-  
   /**
     * VisuallyHidden
     *
@@ -25,10 +28,30 @@ object mod extends Shortcut {
     */
   @JSImport("@reach/visually-hidden", "VisuallyHidden")
   @js.native
-  val VisuallyHidden: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'span', VisuallyHiddenProps> */ Any = js.native
+  val VisuallyHidden: ForwardRefComponent[span, VisuallyHiddenProps] = js.native
   
-  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'span', VisuallyHiddenProps> */ Any
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'span', VisuallyHiddenProps> */ Any = default
+  /**
+    * @see Docs https://reach.tech/visually-hidden#visuallyhidden-props
+    */
+  trait VisuallyHiddenProps extends StObject {
+    
+    /**
+      * @see Docs https://reach.tech/visually-hidden#visuallyhidden-children
+      */
+    var children: ReactNode
+  }
+  object VisuallyHiddenProps {
+    
+    inline def apply(): VisuallyHiddenProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[VisuallyHiddenProps]
+    }
+    
+    extension [Self <: VisuallyHiddenProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    }
+  }
 }

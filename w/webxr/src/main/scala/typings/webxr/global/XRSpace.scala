@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ref: https://immersive-web.github.io/webxr/#xrspace-interface
   */
 // tslint:disable-next-line no-empty-interface
-@JSGlobal("XRSpace")
+/* note: abstract class */ @JSGlobal("XRSpace")
 @js.native
-abstract class XRSpace ()
+open class XRSpace ()
   extends StObject
      with EventTarget

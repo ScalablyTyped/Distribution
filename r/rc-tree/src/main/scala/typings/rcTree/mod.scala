@@ -2,11 +2,11 @@ package typings.rcTree
 
 import typings.rcTree.anon.DropLevelOffset
 import typings.rcTree.anon.PartialTreeStateDataNode
-import typings.rcTree.interfaceMod.BasicDataNode
-import typings.rcTree.interfaceMod.DataNode
-import typings.rcTree.treeMod.TreeProps
-import typings.rcTree.treeMod.TreeState
-import typings.rcTree.treeNodeMod.TreeNodeProps
+import typings.rcTree.esInterfaceMod.BasicDataNode
+import typings.rcTree.esInterfaceMod.DataNode
+import typings.rcTree.esTreeMod.TreeProps
+import typings.rcTree.esTreeMod.TreeState
+import typings.rcTree.esTreeNodeMod.TreeNodeProps
 import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -18,7 +18,7 @@ object mod {
   @JSImport("rc-tree", JSImport.Default)
   @js.native
   open class default[TreeDataType /* <: DataNode | BasicDataNode */] ()
-    extends typings.rcTree.treeMod.default[TreeDataType]
+    extends typings.rcTree.esTreeMod.default[TreeDataType]
   object default {
     
     @JSImport("rc-tree", JSImport.Default)

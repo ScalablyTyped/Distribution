@@ -20,17 +20,17 @@ object babylonjsBonesBoneAugmentingMod {
       * @returns true if operation was successful
       */
     def copyAnimationRange(
-      source: typings.babylonjs.animatableMod.babylonjsBonesBoneAugmentingMod.Bone,
+      source: typings.babylonjs.animationsAnimatableMod.babylonjsBonesBoneAugmentingMod.Bone,
       rangeName: String,
       frameOffset: Double,
       rescaleAsRequired: Boolean,
-      skelDimensionsRatio: Nullable[typings.babylonjs.mathVectorMod.Vector3]
+      skelDimensionsRatio: Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]
     ): Boolean
   }
   object Bone {
     
     inline def apply(
-      copyAnimationRange: (typings.babylonjs.animatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathVectorMod.Vector3]) => Boolean
+      copyAnimationRange: (typings.babylonjs.animationsAnimatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]) => Boolean
     ): typings.babylonjs.indexMod.babylonjsBonesBoneAugmentingMod.Bone = {
       val __obj = js.Dynamic.literal(copyAnimationRange = js.Any.fromFunction5(copyAnimationRange))
       __obj.asInstanceOf[typings.babylonjs.indexMod.babylonjsBonesBoneAugmentingMod.Bone]
@@ -39,7 +39,7 @@ object babylonjsBonesBoneAugmentingMod {
     extension [Self <: typings.babylonjs.indexMod.babylonjsBonesBoneAugmentingMod.Bone](x: Self) {
       
       inline def setCopyAnimationRange(
-        value: (typings.babylonjs.animatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathVectorMod.Vector3]) => Boolean
+        value: (typings.babylonjs.animationsAnimatableMod.babylonjsBonesBoneAugmentingMod.Bone, String, Double, Boolean, Nullable[typings.babylonjs.mathsMathDotvectorMod.Vector3]) => Boolean
       ): Self = StObject.set(x, "copyAnimationRange", js.Any.fromFunction5(value))
     }
   }

@@ -1,5 +1,6 @@
 package typings.axios.mod
 
+import typings.axios.anon.OmitAxiosDefaultsanyheade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AxiosInstance extends Axios {
   
-  def apply(config: AxiosRequestConfig[Any]): js.Promise[AxiosResponse[Any, Any]] = js.native
-  def apply(url: String): js.Promise[AxiosResponse[Any, Any]] = js.native
-  def apply(url: String, config: AxiosRequestConfig[Any]): js.Promise[AxiosResponse[Any, Any]] = js.native
+  def apply[T, R, D](config: AxiosRequestConfig[D]): js.Promise[R] = js.native
+  def apply[T, R, D](url: String): js.Promise[R] = js.native
+  def apply[T, R, D](url: String, config: AxiosRequestConfig[D]): js.Promise[R] = js.native
+  
+  @JSName("defaults")
+  var defaults_AxiosInstance: OmitAxiosDefaultsanyheade = js.native
 }

@@ -3,7 +3,7 @@ package typings.blueprintjsCore.mod
 import typings.blueprintjsCore.anon.TypeofNavbarDivider
 import typings.blueprintjsCore.anon.TypeofNavbarGroup
 import typings.blueprintjsCore.anon.TypeofNavbarHeading
-import typings.blueprintjsCore.navbarMod.NavbarProps
+import typings.blueprintjsCore.libEsmComponentsNavbarNavbarMod.NavbarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Navbar")
 @js.native
 open class Navbar protected ()
-  extends typings.blueprintjsCore.componentsMod.Navbar {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Navbar {
   def this(props: NavbarProps) = this()
   def this(props: NavbarProps, context: Any) = this()
 }

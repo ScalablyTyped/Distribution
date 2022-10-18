@@ -5,8 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
-import typings.backbonePaginator.mod.PageableCollection
-import typings.backbonePaginator.mod.PageableInitialOptions
+import typings.backbonePaginator.backboneMod.PageableCollection
+import typings.backbonePaginator.backboneMod.PageableInitialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

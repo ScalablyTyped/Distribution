@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkClientCognitoIdentity.getOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandInput
+import typings.awsSdkClientCognitoIdentity.distTypesCommandsGetOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommandInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "GetOpenIdTokenForDeveloperIdentityCommand")
 @js.native
 open class GetOpenIdTokenForDeveloperIdentityCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.commandsMod.GetOpenIdTokenForDeveloperIdentityCommand {
+  extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.GetOpenIdTokenForDeveloperIdentityCommand {
   def this(input: GetOpenIdTokenForDeveloperIdentityCommandInput) = this()
 }

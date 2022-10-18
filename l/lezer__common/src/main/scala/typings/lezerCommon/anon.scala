@@ -1,10 +1,10 @@
 package typings.lezerCommon
 
-import typings.lezerCommon.treeMod.IterMode
-import typings.lezerCommon.treeMod.NodeProp
-import typings.lezerCommon.treeMod.NodePropSource
-import typings.lezerCommon.treeMod.SyntaxNodeRef
-import typings.lezerCommon.treeMod.TreeBuffer
+import typings.lezerCommon.distTreeMod.IterMode
+import typings.lezerCommon.distTreeMod.NodeProp
+import typings.lezerCommon.distTreeMod.NodePropSource
+import typings.lezerCommon.distTreeMod.SyntaxNodeRef
+import typings.lezerCommon.distTreeMod.TreeBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

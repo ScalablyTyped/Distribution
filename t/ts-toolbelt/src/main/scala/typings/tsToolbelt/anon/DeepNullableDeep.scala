@@ -1,7 +1,7 @@
 package typings.tsToolbelt.anon
 
-import typings.tsToolbelt.objectNullableMod.NullableDeep
-import typings.tsToolbelt.objectNullableMod.NullableFlat
+import typings.tsToolbelt.outObjectNullableMod.NullableDeep
+import typings.tsToolbelt.outObjectNullableMod.NullableFlat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

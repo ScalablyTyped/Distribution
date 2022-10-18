@@ -9,11 +9,11 @@ Enable batched transactions and contract account interactions using a unique det
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | contract-proxy-kit |
-| Keywords           | gnosis, safe, proxy, sdk, ethereum, smart, contract, batch, transaction, wallet |
-| # releases         | 15 |
-| # dependents       | 0 |
-| # downloads        | 3519 |
-| # stars            | 0 |
+| Keywords           | gnosis, safe, proxy, cpk, sdk, ethereum, smart, contract, batch, transaction, wallet |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 3048.3333333333335 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/gnosis/contract-proxy-kit#readme)

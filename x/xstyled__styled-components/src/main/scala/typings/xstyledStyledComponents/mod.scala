@@ -1,6 +1,5 @@
 package typings.xstyledStyledComponents
 
-import org.scalablytyped.runtime.TopLevel
 import typings.csstype.mod.Property.AlignContent
 import typings.csstype.mod.Property.AlignItems
 import typings.csstype.mod.Property.AlignSelf
@@ -86,6 +85,7 @@ import typings.xstyledStyledComponents.anon.Target
 import typings.xstyledSystem.anon.CssProperty
 import typings.xstyledSystem.anon.TypeofReact
 import typings.xstyledSystem.mod.AliasKey
+import typings.xstyledSystem.mod.BreakPointsRules
 import typings.xstyledSystem.mod.RPXTransformers_
 import typings.xstyledSystem.mod.ResponsiveValue
 import typings.xstyledSystem.mod.StyleFunc
@@ -245,6 +245,7 @@ object mod {
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FlattenSimpleInterpolation */ Any) | String
     ]
   ): TemplateStringsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoints")(styles.asInstanceOf[js.Any]).asInstanceOf[TemplateStringsArray]
+  inline def breakpoints(values: BreakPointsRules): js.Function1[/* props */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoints")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, Any]]
   
   @JSImport("@xstyled/styled-components", "col")
   @js.native
@@ -1946,7 +1947,13 @@ object mod {
   /* Augments a type to be Type | BreakpointObject<Type>,
     * in other words, allow a property to be `1` or `{ xs: 1, sm: 2 }`
     */
-  type WithBreakpointArgs[Props] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Key in keyof Props ]:? Props[Key] | @xstyled/styled-components.@xstyled/styled-components.BreakpointObject<Props[Key]>}
-    */ typings.xstyledStyledComponents.xstyledStyledComponentsStrings.WithBreakpointArgs & TopLevel[Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ Key in keyof Props ]:? Props[Key] | @xstyled/styled-components.@xstyled/styled-components.BreakpointObject<Props[Key]>}
+    }}}
+    */
+  @js.native
+  trait WithBreakpointArgs[Props] extends StObject
 }

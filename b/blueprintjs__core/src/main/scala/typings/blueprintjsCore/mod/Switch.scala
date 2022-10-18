@@ -1,6 +1,6 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.controlsMod.SwitchProps
+import typings.blueprintjsCore.libEsmComponentsFormsControlsMod.SwitchProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@blueprintjs/core", "Switch")
 @js.native
 open class Switch protected ()
-  extends typings.blueprintjsCore.componentsMod.Switch {
+  extends typings.blueprintjsCore.libEsmComponentsMod.Switch {
   def this(props: SwitchProps) = this()
   def this(props: SwitchProps, context: Any) = this()
 }

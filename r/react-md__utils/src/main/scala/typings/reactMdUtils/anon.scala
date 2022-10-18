@@ -4,11 +4,11 @@ import typings.react.mod.Dispatch
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.SetStateAction
-import typings.reactMdUtils.sizingConstantsMod.QuerySize
-import typings.reactMdUtils.typesMod.KeyboardFocusElementLookup
-import typings.reactMdUtils.typesMod.KeyboardMovementConfig
+import typings.reactMdUtils.typesKeyboardMovementTypesMod.KeyboardFocusElementLookup
+import typings.reactMdUtils.typesKeyboardMovementTypesMod.KeyboardMovementConfig
+import typings.reactMdUtils.typesSizingConstantsMod.QuerySize
+import typings.reactMdUtils.typesSizingUseWidthMediaQueryMod.WidthMediaQuerys
 import typings.reactMdUtils.typesTypesMod.NonNullRef
-import typings.reactMdUtils.useWidthMediaQueryMod.WidthMediaQuerys
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

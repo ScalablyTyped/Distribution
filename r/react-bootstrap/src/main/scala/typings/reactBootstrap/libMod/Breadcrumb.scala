@@ -1,7 +1,7 @@
 package typings.reactBootstrap.libMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.reactBootstrap.breadcrumbMod.^
+import typings.reactBootstrap.libBreadcrumbMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,10 +19,10 @@ object Breadcrumb {
   @JSImport("react-bootstrap/lib", "Breadcrumb.Item")
   @js.native
   open class Item ()
-    extends typings.reactBootstrap.breadcrumbItemMod.^
+    extends typings.reactBootstrap.libBreadcrumbItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib", "Breadcrumb.Item")
   @js.native
-  def Item: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^] = js.native
-  inline def Item_=(x: Instantiable0[typings.reactBootstrap.breadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  def Item: Instantiable0[typings.reactBootstrap.libBreadcrumbItemMod.^] = js.native
+  inline def Item_=(x: Instantiable0[typings.reactBootstrap.libBreadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

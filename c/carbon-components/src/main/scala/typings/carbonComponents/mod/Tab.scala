@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("carbon-components", "Tab")
 @js.native
 open class Tab protected ()
-  extends typings.carbonComponents.componentsMod.Tab {
+  extends typings.carbonComponents.globalsJsComponentsMod.Tab {
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, options: PartialTabOptions) = this()
 }

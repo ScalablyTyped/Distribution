@@ -1,11 +1,11 @@
 package typings.ckeditorCkeditor5Engine
 
-import typings.ckeditorCkeditor5Engine.domconverterMod.BlockFillerMode
-import typings.ckeditorCkeditor5Engine.positionMod.PositionRelation
-import typings.ckeditorCkeditor5Engine.positionMod.PositionStickiness
-import typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerValueType
-import typings.ckeditorCkeditor5Engine.viewDocumentMod.ChangeType
-import typings.ckeditorCkeditor5Engine.viewTreewalkerMod.TreeWalkerDirection
+import typings.ckeditorCkeditor5Engine.srcModelPositionMod.PositionRelation
+import typings.ckeditorCkeditor5Engine.srcModelPositionMod.PositionStickiness
+import typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerValueType
+import typings.ckeditorCkeditor5Engine.srcViewDocumentMod.ChangeType
+import typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.BlockFillerMode
+import typings.ckeditorCkeditor5Engine.srcViewTreewalkerMod.TreeWalkerDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,7 +112,7 @@ object ckeditorCkeditor5EngineStrings {
   sealed trait after
     extends StObject
        with PositionRelation
-       with typings.ckeditorCkeditor5Engine.viewPositionMod.PositionRelation
+       with typings.ckeditorCkeditor5Engine.srcViewPositionMod.PositionRelation
   inline def after: after = "after".asInstanceOf[after]
   
   @js.native
@@ -165,14 +165,14 @@ object ckeditorCkeditor5EngineStrings {
   sealed trait backward
     extends StObject
        with TreeWalkerDirection
-       with typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerDirection
+       with typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerDirection
   inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
   sealed trait before
     extends StObject
        with PositionRelation
-       with typings.ckeditorCkeditor5Engine.viewPositionMod.PositionRelation
+       with typings.ckeditorCkeditor5Engine.srcViewPositionMod.PositionRelation
   inline def before: before = "before".asInstanceOf[before]
   
   @js.native
@@ -321,7 +321,7 @@ object ckeditorCkeditor5EngineStrings {
   sealed trait different
     extends StObject
        with PositionRelation
-       with typings.ckeditorCkeditor5Engine.viewPositionMod.PositionRelation
+       with typings.ckeditorCkeditor5Engine.srcViewPositionMod.PositionRelation
   inline def different: different = "different".asInstanceOf[different]
   
   @js.native
@@ -387,14 +387,14 @@ object ckeditorCkeditor5EngineStrings {
   @js.native
   sealed trait elementEnd
     extends StObject
-       with typings.ckeditorCkeditor5Engine.viewTreewalkerMod.TreeWalkerValueType
+       with typings.ckeditorCkeditor5Engine.srcViewTreewalkerMod.TreeWalkerValueType
        with TreeWalkerValueType
   inline def elementEnd: elementEnd = "elementEnd".asInstanceOf[elementEnd]
   
   @js.native
   sealed trait elementStart
     extends StObject
-       with typings.ckeditorCkeditor5Engine.viewTreewalkerMod.TreeWalkerValueType
+       with typings.ckeditorCkeditor5Engine.srcViewTreewalkerMod.TreeWalkerValueType
        with TreeWalkerValueType
   inline def elementStart: elementStart = "elementStart".asInstanceOf[elementStart]
   
@@ -446,7 +446,7 @@ object ckeditorCkeditor5EngineStrings {
   sealed trait forward
     extends StObject
        with TreeWalkerDirection
-       with typings.ckeditorCkeditor5Engine.treewalkerMod.TreeWalkerDirection
+       with typings.ckeditorCkeditor5Engine.srcModelTreewalkerMod.TreeWalkerDirection
   inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
@@ -817,7 +817,7 @@ object ckeditorCkeditor5EngineStrings {
   sealed trait same
     extends StObject
        with PositionRelation
-       with typings.ckeditorCkeditor5Engine.viewPositionMod.PositionRelation
+       with typings.ckeditorCkeditor5Engine.srcViewPositionMod.PositionRelation
   inline def same: same = "same".asInstanceOf[same]
   
   @js.native
@@ -888,7 +888,7 @@ object ckeditorCkeditor5EngineStrings {
   sealed trait text
     extends StObject
        with ChangeType
-       with typings.ckeditorCkeditor5Engine.viewTreewalkerMod.TreeWalkerValueType
+       with typings.ckeditorCkeditor5Engine.srcViewTreewalkerMod.TreeWalkerValueType
        with TreeWalkerValueType
   inline def text: text = "text".asInstanceOf[text]
   

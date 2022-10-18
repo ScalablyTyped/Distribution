@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an interface for a pedometer to measure the number of steps taken. */
-@JSGlobal("Windows.Devices.Sensors.Pedometer")
+/* note: abstract class */ @JSGlobal("Windows.Devices.Sensors.Pedometer")
 @js.native
-abstract class Pedometer ()
+open class Pedometer ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Sensors.Pedometer
 object Pedometer {

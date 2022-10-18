@@ -1,7 +1,7 @@
 package typings.three.anon
 
-import typings.three.lightingContextNodeMod.LightingModelNode
-import typings.three.nodeMod.default
+import typings.three.examplesJsmNodesCoreNodeMod.default
+import typings.three.examplesJsmNodesLightingLightingContextNodeMod.LightingModelNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

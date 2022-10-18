@@ -9,5 +9,5 @@ trait NavigateFn extends StObject {
   
   def apply(to: String): js.Promise[Unit] = js.native
   def apply(to: String, options: NavigateOptions[js.Object]): js.Promise[Unit] = js.native
-  def apply(to: Double): js.Promise[Unit] = js.native
+  def apply(to: Double, options: Unit): js.Promise[Unit] = js.native
 }

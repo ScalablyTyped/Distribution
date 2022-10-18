@@ -1,8 +1,8 @@
 package typings.antDesignReactNative.mod
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antDesignReactNative.checkboxItemMod.default
-import typings.antDesignReactNative.checkboxMod.CompoundedComponent
+import typings.antDesignReactNative.libCheckboxCheckboxItemMod.default
+import typings.antDesignReactNative.libCheckboxMod.CompoundedComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

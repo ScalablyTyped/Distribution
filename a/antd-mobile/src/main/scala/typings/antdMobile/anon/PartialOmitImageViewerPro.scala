@@ -1,7 +1,7 @@
 package typings.antdMobile.anon
 
-import typings.antdMobile.renderToContainerMod.GetContainer
-import typings.antdMobile.slidesMod.SlidesRef
+import typings.antdMobile.esComponentsImageViewerSlidesMod.SlidesRef
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref

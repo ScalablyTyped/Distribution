@@ -1,9 +1,9 @@
 package typings.redisClient.anon
 
-import typings.redisClient.libCommandsMod.RedisCommandArguments
-import typings.redisClient.scanMod.ScanCommandOptions
-import typings.redisClient.scanMod.ScanRawReply
-import typings.redisClient.scanMod.ScanReply
+import typings.redisClient.distLibCommandsMod.RedisCommandArguments
+import typings.redisClient.distLibCommandsScanMod.ScanCommandOptions
+import typings.redisClient.distLibCommandsScanMod.ScanRawReply
+import typings.redisClient.distLibCommandsScanMod.ScanReply
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

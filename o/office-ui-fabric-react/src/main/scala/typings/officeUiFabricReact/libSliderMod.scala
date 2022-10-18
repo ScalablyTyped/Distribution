@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.sliderTypesMod.ISliderProps
+import typings.officeUiFabricReact.libComponentsSliderSliderDottypesMod.ISliderProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object libSliderMod {
   @JSImport("office-ui-fabric-react/lib/Slider", "SliderBase")
   @js.native
   open class SliderBase protected ()
-    extends typings.officeUiFabricReact.sliderMod.SliderBase {
+    extends typings.officeUiFabricReact.libComponentsSliderMod.SliderBase {
     def this(props: ISliderProps) = this()
   }
   /* static members */

@@ -2,11 +2,11 @@ package typings.reactMdExpansionPanel
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdExpansionPanel.expansionListMod.ExpansionListProps
-import typings.reactMdExpansionPanel.expansionPanelHeaderMod.ExpansionPanelHeaderProps
-import typings.reactMdExpansionPanel.expansionPanelMod.ExpansionPanelProps
-import typings.reactMdExpansionPanel.usePanelsMod.ReturnValue
-import typings.reactMdExpansionPanel.usePanelsMod.UsePanelsOptions
+import typings.reactMdExpansionPanel.typesExpansionListMod.ExpansionListProps
+import typings.reactMdExpansionPanel.typesExpansionPanelHeaderMod.ExpansionPanelHeaderProps
+import typings.reactMdExpansionPanel.typesExpansionPanelMod.ExpansionPanelProps
+import typings.reactMdExpansionPanel.typesUsePanelsMod.ReturnValue
+import typings.reactMdExpansionPanel.typesUsePanelsMod.UsePanelsOptions
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject

@@ -1,7 +1,5 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.mod.MapboxSymbol
-import typings.plotlyJs.mod.ShapeLine
 import typings.plotlyJs.plotlyJsBooleans.`true`
 import typings.plotlyJs.plotlyJsStrings.circle
 import typings.plotlyJs.plotlyJsStrings.fill
@@ -11,7 +9,6 @@ import typings.plotlyJs.plotlyJsStrings.line
 import typings.plotlyJs.plotlyJsStrings.raster
 import typings.plotlyJs.plotlyJsStrings.symbol
 import typings.plotlyJs.plotlyJsStrings.vecotr
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +26,7 @@ trait PartialMapboxLayersBelow extends StObject {
   
   var fill: js.UndefOr[Outlinecolor] = js.undefined
   
-  var line: js.UndefOr[Partial[ShapeLine]] = js.undefined
+  var line: js.UndefOr[PartialShapeLine] = js.undefined
   
   var maxzoom: js.UndefOr[Double] = js.undefined
   
@@ -47,7 +44,7 @@ trait PartialMapboxLayersBelow extends StObject {
   
   var sourcetype: js.UndefOr[geojson | vecotr | raster | image] = js.undefined
   
-  var symbol: js.UndefOr[Partial[MapboxSymbol]] = js.undefined
+  var symbol: js.UndefOr[PartialMapboxSymbol] = js.undefined
   
   var templateitemname: js.UndefOr[String] = js.undefined
   
@@ -86,7 +83,7 @@ object PartialMapboxLayersBelow {
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setLine(value: Partial[ShapeLine]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: PartialShapeLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
@@ -122,7 +119,7 @@ object PartialMapboxLayersBelow {
     
     inline def setSourcetypeUndefined: Self = StObject.set(x, "sourcetype", js.undefined)
     
-    inline def setSymbol(value: Partial[MapboxSymbol]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: PartialMapboxSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     

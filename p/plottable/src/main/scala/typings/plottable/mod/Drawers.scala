@@ -2,13 +2,13 @@ package typings.plottable.mod
 
 import typings.d3Shape.mod.Area_
 import typings.d3Shape.mod.Line_
-import typings.plottable.canvasBufferMod.CanvasBuffer
-import typings.plottable.canvasDrawerMod.CanvasDrawStep
-import typings.plottable.canvasDrawerMod.IFillStyle
-import typings.plottable.canvasDrawerMod.IStrokeStyle
-import typings.plottable.interfacesMod.AttributeToAppliedProjector
-import typings.plottable.interfacesMod.IAccessor
-import typings.plottable.symbolFactoriesMod.SymbolFactory
+import typings.plottable.buildSrcCoreInterfacesMod.AttributeToAppliedProjector
+import typings.plottable.buildSrcCoreInterfacesMod.IAccessor
+import typings.plottable.buildSrcCoreSymbolFactoriesMod.SymbolFactory
+import typings.plottable.buildSrcDrawersCanvasBufferMod.CanvasBuffer
+import typings.plottable.buildSrcDrawersCanvasDrawerMod.CanvasDrawStep
+import typings.plottable.buildSrcDrawersCanvasDrawerMod.IFillStyle
+import typings.plottable.buildSrcDrawersCanvasDrawerMod.IStrokeStyle
 import typings.std.CanvasRenderingContext2D
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -24,22 +24,22 @@ object Drawers {
   @JSImport("plottable", "Drawers.ArcOutlineSVGDrawer")
   @js.native
   open class ArcOutlineSVGDrawer ()
-    extends typings.plottable.drawersMod.ArcOutlineSVGDrawer
+    extends typings.plottable.buildSrcDrawersMod.ArcOutlineSVGDrawer
   
   @JSImport("plottable", "Drawers.ArcSVGDrawer")
   @js.native
   open class ArcSVGDrawer ()
-    extends typings.plottable.drawersMod.ArcSVGDrawer
+    extends typings.plottable.buildSrcDrawersMod.ArcSVGDrawer
   
   @JSImport("plottable", "Drawers.AreaSVGDrawer")
   @js.native
   open class AreaSVGDrawer ()
-    extends typings.plottable.drawersMod.AreaSVGDrawer
+    extends typings.plottable.buildSrcDrawersMod.AreaSVGDrawer
   
   @JSImport("plottable", "Drawers.CanvasDrawer")
   @js.native
   open class CanvasDrawer protected ()
-    extends typings.plottable.drawersMod.CanvasDrawer {
+    extends typings.plottable.buildSrcDrawersMod.CanvasDrawer {
     /**
       * @param _context The context for a canvas that this drawer will draw to.
       * @param _drawStep The draw step logic that actually draws.
@@ -54,12 +54,12 @@ object Drawers {
   @JSImport("plottable", "Drawers.LineSVGDrawer")
   @js.native
   open class LineSVGDrawer ()
-    extends typings.plottable.drawersMod.LineSVGDrawer
+    extends typings.plottable.buildSrcDrawersMod.LineSVGDrawer
   
   @JSImport("plottable", "Drawers.ProxyDrawer")
   @js.native
   open class ProxyDrawer protected ()
-    extends typings.plottable.drawersMod.ProxyDrawer {
+    extends typings.plottable.buildSrcDrawersMod.ProxyDrawer {
     /**
       * A Drawer draws svg elements based on the input Dataset.
       *
@@ -68,8 +68,11 @@ object Drawers {
       * @param _canvasDrawStep The DrawStep to be fed into a new CanvasDrawer whenever useCanvas is called
       */
     def this(
-      _svgDrawerFactory: js.Function0[typings.plottable.svgDrawerMod.SVGDrawer],
-      _canvasDrawerFactory: js.Function1[/* ctx */ CanvasRenderingContext2D, typings.plottable.canvasDrawerMod.CanvasDrawer]
+      _svgDrawerFactory: js.Function0[typings.plottable.buildSrcDrawersSvgDrawerMod.SVGDrawer],
+      _canvasDrawerFactory: js.Function1[
+            /* ctx */ CanvasRenderingContext2D, 
+            typings.plottable.buildSrcDrawersCanvasDrawerMod.CanvasDrawer
+          ]
     ) = this()
   }
   
@@ -80,21 +83,21 @@ object Drawers {
   @JSImport("plottable", "Drawers.RectangleCanvasDrawer")
   @js.native
   open class RectangleCanvasDrawer protected ()
-    extends typings.plottable.drawersMod.RectangleCanvasDrawer {
+    extends typings.plottable.buildSrcDrawersMod.RectangleCanvasDrawer {
     def this(ctx: CanvasRenderingContext2D) = this()
   }
   
   @JSImport("plottable", "Drawers.RectangleSVGDrawer")
   @js.native
   open class RectangleSVGDrawer ()
-    extends typings.plottable.drawersMod.RectangleSVGDrawer {
+    extends typings.plottable.buildSrcDrawersMod.RectangleSVGDrawer {
     def this(_rootClassName: String) = this()
   }
   
   @JSImport("plottable", "Drawers.SVGDrawer")
   @js.native
   open class SVGDrawer protected ()
-    extends typings.plottable.drawersMod.SVGDrawer {
+    extends typings.plottable.buildSrcDrawersMod.SVGDrawer {
     /**
       * @param svgElementName an HTML/SVG tag name to be created, one per datum.
       * @param className CSS classes to be applied to the drawn primitives.
@@ -106,12 +109,12 @@ object Drawers {
   @JSImport("plottable", "Drawers.SegmentSVGDrawer")
   @js.native
   open class SegmentSVGDrawer ()
-    extends typings.plottable.drawersMod.SegmentSVGDrawer
+    extends typings.plottable.buildSrcDrawersMod.SegmentSVGDrawer
   
   @JSImport("plottable", "Drawers.SymbolSVGDrawer")
   @js.native
   open class SymbolSVGDrawer ()
-    extends typings.plottable.drawersMod.SymbolSVGDrawer
+    extends typings.plottable.buildSrcDrawersMod.SymbolSVGDrawer
   
   inline def getStrokeDashArray(style: Record[String, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
@@ -122,12 +125,12 @@ object Drawers {
   inline def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[Any]]): CanvasDrawStep = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLineCanvasDrawStep")(d3LineFactory.asInstanceOf[js.Any]).asInstanceOf[CanvasDrawStep]
   
   inline def makeSymbolCanvasDrawStep(
-    dataset: typings.plottable.datasetMod.Dataset,
+    dataset: typings.plottable.buildSrcCoreDatasetMod.Dataset,
     symbolProjector: js.Function0[IAccessor[SymbolFactory]],
     sizeProjector: js.Function0[IAccessor[Double]]
   ): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSymbolCanvasDrawStep")(dataset.asInstanceOf[js.Any], symbolProjector.asInstanceOf[js.Any], sizeProjector.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
   inline def makeSymbolCanvasDrawStep(
-    dataset: typings.plottable.datasetMod.Dataset,
+    dataset: typings.plottable.buildSrcCoreDatasetMod.Dataset,
     symbolProjector: js.Function0[IAccessor[SymbolFactory]],
     sizeProjector: js.Function0[IAccessor[Double]],
     stepBuffer: CanvasBuffer

@@ -1,6 +1,6 @@
 package typings.matrixAppserviceBridge.anon
 
-import typings.matrixAppserviceBridge.bridgeInfoStateMod.MSC2346Content
+import typings.matrixAppserviceBridge.libComponentsBridgeInfoStateMod.MSC2346Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

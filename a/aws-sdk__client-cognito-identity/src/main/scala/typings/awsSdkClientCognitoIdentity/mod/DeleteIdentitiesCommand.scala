@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
-import typings.awsSdkClientCognitoIdentity.deleteIdentitiesCommandMod.DeleteIdentitiesCommandInput
+import typings.awsSdkClientCognitoIdentity.distTypesCommandsDeleteIdentitiesCommandMod.DeleteIdentitiesCommandInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@aws-sdk/client-cognito-identity", "DeleteIdentitiesCommand")
 @js.native
 open class DeleteIdentitiesCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.commandsMod.DeleteIdentitiesCommand {
+  extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.DeleteIdentitiesCommand {
   def this(input: DeleteIdentitiesCommandInput) = this()
 }

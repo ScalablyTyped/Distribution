@@ -1,7 +1,5 @@
 package typings.playcanvas.mod
 
-import typings.playcanvas.anon.Contents
-import typings.playcanvas.anon.CrossOrigin
 import typings.playcanvas.playcanvasStrings.animation
 import typings.playcanvas.playcanvasStrings.audio
 import typings.playcanvas.playcanvasStrings.binary
@@ -14,6 +12,7 @@ import typings.playcanvas.playcanvasStrings.json
 import typings.playcanvas.playcanvasStrings.material
 import typings.playcanvas.playcanvasStrings.model
 import typings.playcanvas.playcanvasStrings.render
+import typings.playcanvas.playcanvasStrings.script
 import typings.playcanvas.playcanvasStrings.shader
 import typings.playcanvas.playcanvasStrings.sprite
 import typings.playcanvas.playcanvasStrings.template
@@ -45,53 +44,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @augments EventHandler
   */
-@JSImport("playcanvas", "Asset")
 @js.native
-open class Asset_ protected () extends EventHandler {
-  /**
-    * Create a new Asset record. Generally, Assets are created in the loading process and you
-    * won't need to create them by hand.
-    *
-    * @param {string} name - A non-unique but human-readable name which can be later used to
-    * retrieve the asset.
-    * @param {string} type - Type of asset. One of ["animation", "audio", "binary", "container",
-    * "cubemap", "css", "font", "json", "html", "material", "model", "script", "shader", "sprite",
-    * "template", text", "texture"]
-    * @param {object} [file] - Details about the file the asset is made from. At the least must
-    * contain the 'url' field. For assets that don't contain file data use null.
-    * @param {string} [file.url] - The URL of the resource file that contains the asset data.
-    * @param {string} [file.filename] - The filename of the resource file or null if no filename
-    * was set (e.g from using {@link AssetRegistry#loadFromUrl}).
-    * @param {number} [file.size] - The size of the resource file or null if no size was set
-    * (e.g. from using {@link AssetRegistry#loadFromUrl}).
-    * @param {string} [file.hash] - The MD5 hash of the resource file data and the Asset data
-    * field or null if hash was set (e.g from using {@link AssetRegistry#loadFromUrl}).
-    * @param {ArrayBuffer} [file.contents] - Optional file contents. This is faster than wrapping
-    * the data in a (base64 encoded) blob. Currently only used by container assets.
-    * @param {object|string} [data] - JSON object or string with additional data about the asset.
-    * (e.g. for texture and model assets) or contains the asset data itself (e.g. in the case of
-    * materials).
-    * @param {object} [options] - The asset handler options. For container options see
-    * {@link ContainerHandler}.
-    * @param {boolean} [options.crossOrigin] - For use with texture resources. For
-    * browser-supported image formats only, enable cross origin.
-    * @example
-    * var asset = new pc.Asset("a texture", "texture", {
-    *     url: "http://example.com/my/assets/here/texture.png"
-    * });
-    */
-  def this(name: String, `type`: String) = this()
-  def this(name: String, `type`: String, file: Contents) = this()
-  def this(name: String, `type`: String, file: Unit, data: String) = this()
-  def this(name: String, `type`: String, file: Unit, data: js.Object) = this()
-  def this(name: String, `type`: String, file: Contents, data: String) = this()
-  def this(name: String, `type`: String, file: Contents, data: js.Object) = this()
-  def this(name: String, `type`: String, file: Unit, data: String, options: CrossOrigin) = this()
-  def this(name: String, `type`: String, file: Unit, data: js.Object, options: CrossOrigin) = this()
-  def this(name: String, `type`: String, file: Unit, data: Unit, options: CrossOrigin) = this()
-  def this(name: String, `type`: String, file: Contents, data: String, options: CrossOrigin) = this()
-  def this(name: String, `type`: String, file: Contents, data: js.Object, options: CrossOrigin) = this()
-  def this(name: String, `type`: String, file: Contents, data: Unit, options: CrossOrigin) = this()
+trait Asset_ extends EventHandler {
   
   var _data: Any = js.native
   
@@ -326,7 +280,7 @@ open class Asset_ protected () extends EventHandler {
     *
     * @type {("animation"|"audio"|"binary"|"container"|"cubemap"|"css"|"font"|"json"|"html"|"material"|"model"|"render"|"script"|"shader"|"sprite"|"template"|"text"|"texture")}
     */
-  var `type`: animation | audio | binary | container | cubemap | css | font | json | html | material | model | render | typings.playcanvas.playcanvasStrings.script | shader | sprite | template | text | texture = js.native
+  var `type`: animation | audio | binary | container | cubemap | css | font | json | html | material | model | render | script | shader | sprite | template | text | texture = js.native
   
   /**
     * Destroys the associated resource and marks asset as unloaded.
@@ -337,27 +291,4 @@ open class Asset_ protected () extends EventHandler {
     * // asset.resource is null
     */
   def unload(): Unit = js.native
-}
-object Asset_ {
-  
-  @JSImport("playcanvas", "Asset")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * Helper function to resolve asset file data and return the contents as an ArrayBuffer. If the
-    * asset file contents are present, that is returned. Otherwise the file data is be downloaded
-    * via http.
-    *
-    * @param {string} loadUrl - The URL as passed into the handler
-    * @param {ResourceLoaderCallback} callback - The callback function to receive results.
-    * @param {Asset} [asset] - The asset
-    * @param {number} maxRetries - Number of retries if http download is required
-    * @ignore
-    */
-  /* static member */
-  inline def fetchArrayBuffer(loadUrl: String, callback: ResourceLoaderCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")(loadUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fetchArrayBuffer(loadUrl: String, callback: ResourceLoaderCallback, asset: Unit, maxRetries: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")(loadUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], asset.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fetchArrayBuffer(loadUrl: String, callback: ResourceLoaderCallback, asset: Asset_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")(loadUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], asset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def fetchArrayBuffer(loadUrl: String, callback: ResourceLoaderCallback, asset: Asset_, maxRetries: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchArrayBuffer")(loadUrl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], asset.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

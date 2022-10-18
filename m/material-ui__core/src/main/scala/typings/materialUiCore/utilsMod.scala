@@ -2,12 +2,12 @@ package typings.materialUiCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.materialUiCore.anon.IsFocusVisible
-import typings.materialUiCore.createChainedFunctionMod.ChainedFunction
-import typings.materialUiCore.debounceMod.Cancelable
 import typings.materialUiCore.materialUiCoreStrings.svg
 import typings.materialUiCore.overridableComponentMod.OverridableComponent
 import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
-import typings.materialUiCore.useControlledMod.UseControlledProps
+import typings.materialUiCore.utilsCreateChainedFunctionMod.ChainedFunction
+import typings.materialUiCore.utilsDebounceMod.Cancelable
+import typings.materialUiCore.utilsUseControlledMod.UseControlledProps
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.RefObject

@@ -1,11 +1,8 @@
 package typings.nuclearJsReactAddonsChefsplate
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
-import typings.std.Exclude
-import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,13 +114,19 @@ object mod {
   // Function that returns getters, which are turned into injected props.
   type MapStateToProps[TInjectedPropNames /* <: String | Double | js.Symbol */] = js.Function1[
     /* props */ js.UndefOr[Any], 
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ propName in TInjectedPropNames ]: any}
-    */ typings.nuclearJsReactAddonsChefsplate.nuclearJsReactAddonsChefsplateStrings.MapStateToProps & TopLevel[Any]
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ propName in TInjectedPropNames ]: any} */ js.Any
   ]
   
   /**
     * The built-in Omit doesn't error out if omitted key doesn't exist on the main type.
     */
-  type StrictOmit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends any ? std.Pick<T, std.Exclude<keyof T, K>> : never
+    }}}
+    */
+  @js.native
+  trait StrictOmit[T, K /* <: /* keyof T */ String */] extends StObject
 }

@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReplyFormAttachment extends StObject {
   
   /**
-    * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be 
+    * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be
     * displayed in the attachment list.
     */
   var inLine: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+    * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
     */
   var itemId: js.UndefOr[String] = js.undefined
   

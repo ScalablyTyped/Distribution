@@ -125,7 +125,7 @@ open class MouseTracker protected () extends StObject {
   @JSName("scrollHandler")
   var scrollHandler_Original: EventHandler[MouseTrackerEvent[Event]] = js.native
   
-  def setTracking(track: Boolean): Any = js.native
+  def setTracking(track: Boolean): MouseTracker = js.native
   
   def stopHandler(event: MouseTrackerEvent[Event]): Unit = js.native
   @JSName("stopHandler")

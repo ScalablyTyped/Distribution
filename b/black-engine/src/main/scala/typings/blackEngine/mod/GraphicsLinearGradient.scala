@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("black-engine", "GraphicsLinearGradient")
 @js.native
 open class GraphicsLinearGradient protected ()
-  extends typings.blackEngine.graphicsLinearGradientMod.GraphicsLinearGradient {
+  extends typings.blackEngine.displayGraphicsLinearGradientMod.GraphicsLinearGradient {
   def this(x0: Double, y0: Double, x1: Double, y1: Double) = this()
 }

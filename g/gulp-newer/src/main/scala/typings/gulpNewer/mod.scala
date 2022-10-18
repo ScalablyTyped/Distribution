@@ -1,6 +1,7 @@
 package typings.gulpNewer
 
 import org.scalablytyped.runtime.Shortcut
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +20,12 @@ object mod extends Shortcut {
       * is more recent than the corresponding destination file's modification time.
       * @param dest Path to destination directory or file.
       */
-    def apply(dest: String): Any = js.native
+    def apply(dest: String): ReadWriteStream = js.native
     /**
       * Create a transform stream that passes through files whose modification time
       * is more recent than the corresponding destination file's modification time.
       */
-    def apply(options: IOptions): Any = js.native
+    def apply(options: IOptions): ReadWriteStream = js.native
   }
   
   trait IOptions extends StObject {

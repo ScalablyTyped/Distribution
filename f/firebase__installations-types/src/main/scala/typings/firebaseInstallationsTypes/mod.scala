@@ -40,6 +40,7 @@ object mod {
   
   type FirebaseInstallationsName = installations
   
+  /* augmented module */
   object firebaseComponentAugmentingMod {
     
     trait NameServiceMapping extends StObject {

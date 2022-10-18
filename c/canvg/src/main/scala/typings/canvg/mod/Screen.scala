@@ -1,7 +1,7 @@
 package typings.canvg.mod
 
+import typings.canvg.distScreenMod.IScreenOptions
 import typings.canvg.distTypesMod.RenderingContext2D
-import typings.canvg.screenMod.IScreenOptions
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("canvg", "Screen")
 @js.native
 open class Screen protected ()
-  extends typings.canvg.screenMod.Screen {
+  extends typings.canvg.distScreenMod.Screen {
   def this(ctx: RenderingContext2D) = this()
   def this(ctx: RenderingContext2D, hasFetchWindow: IScreenOptions) = this()
 }
