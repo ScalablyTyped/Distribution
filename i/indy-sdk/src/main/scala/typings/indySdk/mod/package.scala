@@ -3,7 +3,7 @@ package typings.indySdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.buffer.mod.Buffer
 import typings.indySdk.anon.Issuancetype
-import typings.indySdk.indySdkNumbers.`0`
+import typings.indySdk.indySdkInts.`0`
 import typings.indySdk.indySdkStrings.CL_ACCUM
 import typings.indySdk.indySdkStrings.debug
 import typings.indySdk.indySdkStrings.info

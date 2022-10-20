@@ -22,7 +22,7 @@ trait StartOutboundVoiceContactRequest extends StObject {
   var CampaignId: js.UndefOr[typings.awsSdk.clientsConnectMod.CampaignId] = js.undefined
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. The token is valid for 7 days after creation. If a contact is already started, the contact ID is returned. 
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs. The token is valid for 7 days after creation. If a contact is already started, the contact ID is returned. 
     */
   var ClientToken: js.UndefOr[typings.awsSdk.clientsConnectMod.ClientToken] = js.undefined
   

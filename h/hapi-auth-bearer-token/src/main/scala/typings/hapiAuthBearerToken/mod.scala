@@ -2,11 +2,17 @@ package typings.hapiAuthBearerToken
 
 import org.scalablytyped.runtime.Shortcut
 import typings.hapiAuthBearerToken.hapiAuthBearerTokenStrings.`bearer-access-token`
+import typings.hapiHapi.mod.AppCredentials
+import typings.hapiHapi.mod.AuthArtifacts
 import typings.hapiHapi.mod.AuthCredentials
 import typings.hapiHapi.mod.AuthenticationData
+import typings.hapiHapi.mod.MergeType
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.mod.UserCredentials
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,14 +39,14 @@ object mod extends Shortcut {
     
     var unauthorized: js.UndefOr[js.Function2[/* message */ String | Null, /* scheme */ String, Any]] = js.undefined
     
-    def validate(request: Request, token: String, h: ResponseToolkit): js.Promise[ValidateReturn] | ValidateReturn
+    def validate(request: Request[ReqRefDefaults], token: String, h: ResponseToolkit[ReqRefDefaults]): js.Promise[ValidateReturn] | ValidateReturn
     @JSName("validate")
     var validate_Original: Validate
   }
   object SchemaOptions {
     
     inline def apply(
-      validate: (/* request */ Request, /* token */ String, /* h */ ResponseToolkit) => js.Promise[ValidateReturn] | ValidateReturn
+      validate: (/* request */ Request[ReqRefDefaults], /* token */ String, /* h */ ResponseToolkit[ReqRefDefaults]) => js.Promise[ValidateReturn] | ValidateReturn
     ): SchemaOptions = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
       __obj.asInstanceOf[SchemaOptions]
@@ -77,27 +83,30 @@ object mod extends Shortcut {
       inline def setUnauthorizedUndefined: Self = StObject.set(x, "unauthorized", js.undefined)
       
       inline def setValidate(
-        value: (/* request */ Request, /* token */ String, /* h */ ResponseToolkit) => js.Promise[ValidateReturn] | ValidateReturn
+        value: (/* request */ Request[ReqRefDefaults], /* token */ String, /* h */ ResponseToolkit[ReqRefDefaults]) => js.Promise[ValidateReturn] | ValidateReturn
       ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     }
   }
   
   type Validate = js.Function3[
-    /* request */ Request, 
+    /* request */ Request[ReqRefDefaults], 
     /* token */ String, 
-    /* h */ ResponseToolkit, 
+    /* h */ ResponseToolkit[ReqRefDefaults], 
     js.Promise[ValidateReturn] | ValidateReturn
   ]
   
   trait ValidateReturn
     extends StObject
-       with AuthenticationData {
+       with AuthenticationData[UserCredentials, AppCredentials, Record[String, Any], AuthArtifacts] {
     
     var isValid: Boolean
   }
   object ValidateReturn {
     
-    inline def apply(credentials: AuthCredentials, isValid: Boolean): ValidateReturn = {
+    inline def apply(
+      credentials: MergeType[Record[String, Any], AuthCredentials[UserCredentials, AppCredentials]],
+      isValid: Boolean
+    ): ValidateReturn = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateReturn]
     }

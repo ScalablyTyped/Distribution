@@ -1758,6 +1758,12 @@ object twilioStrings {
   inline def initiated: initiated = "initiated".asInstanceOf[initiated]
   
   @js.native
+  sealed trait `input-matching-failed`
+    extends StObject
+       with PromptErrorType
+  inline def `input-matching-failed`: `input-matching-failed` = "input-matching-failed".asInstanceOf[`input-matching-failed`]
+  
+  @js.native
   sealed trait `internal-error`
     extends StObject
        with PromptErrorType

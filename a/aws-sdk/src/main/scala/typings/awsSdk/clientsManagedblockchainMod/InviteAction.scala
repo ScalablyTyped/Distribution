@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InviteAction extends StObject {
   
   /**
-    * The AWS account ID to invite.
+    * The Amazon Web Services account ID to invite.
     */
   var Principal: PrincipalString
 }

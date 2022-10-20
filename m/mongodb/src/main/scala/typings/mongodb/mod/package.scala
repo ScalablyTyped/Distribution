@@ -158,7 +158,7 @@ type EventsDescription = Record[String, GenericListener]
 
 type ExplainVerbosityLike = ExplainVerbosity | Boolean
 
-type Filter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<mongodb.mongodb.WithId<TSchema>>, '.'> ]:? mongodb.mongodb.Condition<mongodb.mongodb.PropertyType<mongodb.mongodb.WithId<TSchema>, Property>>} */ js.Any) & RootFilterOperators[WithId[TSchema]])
+type Filter[TSchema] = Partial[TSchema] | ((/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<mongodb.mongodb.WithId<TSchema>, []>, '.'> ]:? mongodb.mongodb.Condition<mongodb.mongodb.PropertyType<mongodb.mongodb.WithId<TSchema>, Property>>} */ js.Any) & RootFilterOperators[WithId[TSchema]])
 
 type FinalizeFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* reducedValue */ TValue, TValue]
 
@@ -171,6 +171,7 @@ type Hint = String | Document
   - typings.mongodb.mongodbStrings.`2dsphere`
   - typings.mongodb.mongodbStrings.text
   - typings.mongodb.mongodbStrings.geoHaystack
+  - typings.mongodb.mongodbStrings.hashed
   - scala.Double
 */
 type IndexDirection = _IndexDirection | scala.Double
@@ -186,14 +187,14 @@ type KeysOfOtherType[TSchema, Type] = /* import warning: importer.ImportType#app
 
 type MapFunction[TSchema] = js.ThisFunction0[/* this */ TSchema, Unit]
 
-type MatchKeysAndValues[TSchema] = /* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema>, '.'> ]:? mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any
+type MatchKeysAndValues[TSchema] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema, []>, '.'> ]:? mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any) & Document
 
 type MongoClientEvents = (Pick[
 TopologyEvents, 
 connectionPoolCreated | connectionPoolReady | connectionPoolCleared | connectionPoolClosed | connectionCreated | connectionReady | connectionClosed | connectionCheckOutStarted | connectionCheckOutFailed | connectionCheckedOut | connectionCheckedIn | commandStarted | commandSucceeded | commandFailed | serverOpening | serverClosed | serverDescriptionChanged | topologyOpening | topologyClosed | topologyDescriptionChanged | error | timeout | close | serverHeartbeatStarted | serverHeartbeatSucceeded | serverHeartbeatFailed]) & Open
 
 type NestedPathsOfType[TSchema, Type] = KeysOfAType[
-/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema>, '.'> ]: mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: {[ Property in mongodb.mongodb.Join<mongodb.mongodb.NestedPaths<TSchema, []>, '.'> ]: mongodb.mongodb.PropertyType<TSchema, Property>} */ js.Any, 
 Type]
 
 /* Inlined {[ key in keyof bson.bson.ObjectIdLike ]:? never} & bson.bson.Document */

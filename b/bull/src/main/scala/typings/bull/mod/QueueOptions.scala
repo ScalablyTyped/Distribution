@@ -37,7 +37,7 @@ trait QueueOptions extends StObject {
     * Options passed into the `ioredis` constructor's `options` parameter.
     * `connectionName` is overwritten with `Queue.clientName()`. other properties are copied
     */
-  var redis: js.UndefOr[RedisOptions] = js.undefined
+  var redis: js.UndefOr[RedisOptions | String] = js.undefined
   
   var settings: js.UndefOr[AdvancedSettings] = js.undefined
 }
@@ -68,7 +68,7 @@ object QueueOptions {
     
     inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    inline def setRedis(value: RedisOptions): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+    inline def setRedis(value: RedisOptions | String): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
     
     inline def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
     

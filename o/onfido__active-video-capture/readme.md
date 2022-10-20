@@ -1,7 +1,7 @@
 
 # Scala.js typings for onfido__active-video-capture
 
-Typings are for version 0.15.0
+Typings are for version 0.16.1
 
 
 

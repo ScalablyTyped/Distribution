@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListSuppressedDestinationsRequest extends StObject {
   
   /**
-    * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list before a specific date. The date that you specify should be in Unix time format.
+    * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list before a specific date.
     */
   var EndDate: js.UndefOr[js.Date] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListSuppressedDestinationsRequest extends StObject {
   var Reasons: js.UndefOr[SuppressionListReasons] = js.undefined
   
   /**
-    * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list after a specific date. The date that you specify should be in Unix time format.
+    * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list after a specific date.
     */
   var StartDate: js.UndefOr[js.Date] = js.undefined
 }

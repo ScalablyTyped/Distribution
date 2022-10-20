@@ -25,7 +25,7 @@ trait ChangeStreamReplaceDocument[TSchema /* <: Document */]
     */
   var fullDocumentBeforeChange: js.UndefOr[TSchema] = js.undefined
   
-  /** Namespace the replace event occured on */
+  /** Namespace the replace event occurred on */
   var ns: ChangeStreamNameSpace
   
   /** Describes the type of operation represented in this change notification */

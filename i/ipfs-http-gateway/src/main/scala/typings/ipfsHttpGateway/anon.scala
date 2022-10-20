@@ -1,5 +1,6 @@
 package typings.ipfsHttpGateway
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -13,7 +14,7 @@ object anon {
     
     var ext: OnPostHandler
     
-    def handler(request: Request, h: ResponseToolkit): js.Promise[ResponseObject]
+    def handler(request: Request[ReqRefDefaults], h: ResponseToolkit[ReqRefDefaults]): js.Promise[ResponseObject]
     
     var response: Ranges
     
@@ -23,7 +24,7 @@ object anon {
     
     inline def apply(
       ext: OnPostHandler,
-      handler: (Request, ResponseToolkit) => js.Promise[ResponseObject],
+      handler: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[ResponseObject],
       response: Ranges,
       validate: Params
     ): Ext = {
@@ -35,7 +36,7 @@ object anon {
       
       inline def setExt(value: OnPostHandler): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      inline def setHandler(value: (Request, ResponseToolkit) => js.Promise[ResponseObject]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      inline def setHandler(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[ResponseObject]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
       inline def setResponse(value: Ranges): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
@@ -45,18 +46,18 @@ object anon {
   
   trait Method extends StObject {
     
-    def method(request: Request, h: ResponseToolkit): js.Symbol
+    def method(request: Request[ReqRefDefaults], h: ResponseToolkit[ReqRefDefaults]): js.Symbol
   }
   object Method {
     
-    inline def apply(method: (Request, ResponseToolkit) => js.Symbol): Method = {
+    inline def apply(method: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Symbol): Method = {
       val __obj = js.Dynamic.literal(method = js.Any.fromFunction2(method))
       __obj.asInstanceOf[Method]
     }
     
     extension [Self <: Method](x: Self) {
       
-      inline def setMethod(value: (Request, ResponseToolkit) => js.Symbol): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
+      inline def setMethod(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Symbol): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
     }
   }
   

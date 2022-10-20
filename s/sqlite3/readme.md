@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqlite3
 
-Typings are for version 5.1.1
+Typings are for version 5.1.2
 
 ## Library description:
 Asynchronous, non-blocking SQLite3 bindings

@@ -312,6 +312,7 @@
 | 0.0 | [apollo-server-caching](./a/apollo-server-caching) | -
 | 0.0 | [apollo-server-env](./a/apollo-server-env) | This package is used internally by Apollo Server a
 | 0.0 | [apollo__protobufjs](./a/apollo__protobufjs) | Protocol Buffers for JavaScript (& TypeScript).
+| 0.0 | [apollo__utils_dot_logger](./a/apollo__utils_dot_logger) | Generic logger interface
 | 0.0 | [apostrophe](./a/apostrophe) | The Apostrophe Content Management System.
 | 0.0 | [app-builder-bin](./a/app-builder-bin) | app-builder precompiled binaries
 | 0.0 | [app-builder-lib](./a/app-builder-lib) | electron-builder lib
@@ -480,6 +481,7 @@
 | 0.0 | [ava](./a/ava) | Node.js test runner that lets you develop with con
 | 0.0 | [avocat](./a/avocat) | A simple library to convert objection errors to bo
 | 0.0 | [avvio](./a/avvio) | Asynchronous bootstrapping of Node applications
+| 0.0 | [await-promises](./a/await-promises) | Test asynchronous functions with ease
 | 0.0 | [await-timeout](./a/await-timeout) | A Promise-based API for setTimeout / clearTimeout
 | 0.0 | [awesome-notifications](./a/awesome-notifications) | Lightweight library for beautifull and smooth noti
 | 0.0 | [awesomplete](./a/awesomplete) | http://leaverou.github.io/awesomplete/
@@ -496,7 +498,6 @@
 | 0.0 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.0 | [aws-kcl](./a/aws-kcl) | Kinesis Client Libray (KCL) in Node.js.
 | 0.0 | [aws-lambda](./a/aws-lambda) | Deploy AWS Lambda functions from command line usin
-| 0.0 | [aws-lambda-fastify](./a/aws-lambda-fastify) | aws-lambda-fastify@2.2.0 has been deprecated. Plea
 | 0.0 | [aws-lambda-http-server](./a/aws-lambda-http-server) | run http server as aws lambda function
 | 0.0 | [aws-lambda-mock-context](./a/aws-lambda-mock-context) | AWS Lambda mock context object
 | 0.0 | [aws-param-store](./a/aws-param-store) | Library for loading parameters from AWS Parameter 
@@ -539,6 +540,7 @@
 | 0.0 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-process) | AWS credential provider that sources credential_pr
 | 0.0 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-sso) | AWS credential provider that exchanges a resolved 
 | 0.0 | [aws-sdk__credential-provi](./a/aws-sdk__credential-provider-web-identity) | AWS credential provider that calls STS assumeRole 
+| 0.0 | [aws-sdk__credential-provi](./a/aws-sdk__credential-providers) | A collection of credential providers, without requ
 | 0.0 | [aws-sdk__ec2-error-unmars](./a/aws-sdk__ec2-error-unmarshaller) | -
 | 0.0 | [aws-sdk__eventstream-mars](./a/aws-sdk__eventstream-marshaller) | -
 | 0.0 | [aws-sdk__fetch-http-handl](./a/aws-sdk__fetch-http-handler) | Provides a way to make requests
@@ -1453,7 +1455,6 @@
 | 0.0 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect
 | 0.0 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 0.0 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect
-| 0.0 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by
 | 0.0 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con
 | 0.0 | [connect-redis](./c/connect-redis) | Redis session store for Connect
 | 0.0 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i
@@ -1744,7 +1745,6 @@
 | 0.0 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
-| 0.0 | [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
 | 0.0 | [cytoscape-context-menus](./c/cytoscape-context-menus) | A Cytoscape.js extension to provide context menu a
@@ -2262,6 +2262,7 @@
 | 0.0 | [electron-util](./e/electron-util) | Useful utilities for Electron apps and modules
 | 0.0 | [electron-window-state](./e/electron-window-state) | Simple module that helps to save and restore size 
 | 0.0 | [electron-winstaller](./e/electron-winstaller) | Module to generate Windows installers for Electron
+| 0.0 | [electron__osx-sign](./e/electron__osx-sign) | Codesign Electron macOS apps
 | 0.0 | [electron__universal](./e/electron__universal) | Utility for creating Universal macOS applications 
 | 0.0 | [elegant-spinner](./e/elegant-spinner) | Elegant spinner for interactive CLI apps
 | 0.0 | [element-closest](./e/element-closest) | Return the closest element matching a selector up 
@@ -2361,6 +2362,7 @@
 | 0.0 | [epub](./e/epub) | Parse ePub electronic book files with Node.JS
 | 0.0 | [eq_dot_js](./e/eq_dot_js) | Element queries, fast and light
 | 0.0 | [eris-sharder](./e/eris-sharder) | A sharder for the discord eris library
+| 0.0 | [err](./e/err) | A tiny library to create custom errors in JavaScri
 | 0.0 | [err-code](./e/err-code) | Create an error with a code
 | 0.0 | [error-cause](./e/error-cause) | An ES-spec-compliant shim/polyfill/replacement for
 | 0.0 | [error-stack-parser](./e/error-stack-parser) | Extract meaning from JS Errors
@@ -2556,6 +2558,7 @@
 | 0.0 | [express-boom](./e/express-boom) | Boom response objects in Express
 | 0.0 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.0 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute
+| 0.0 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute.
 | 0.0 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 0.0 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express
 | 0.0 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
@@ -2808,6 +2811,7 @@
 | 0.0 | [find-down](./f/find-down) | Find a file by walking down parent directories.
 | 0.0 | [find-duplicated-property-](./f/find-duplicated-property-keys) | A package for detecting all duplicated property ke
 | 0.0 | [find-exec](./f/find-exec) | Finds first available shell command from a list.
+| 0.0 | [find-imports](./f/find-imports) | Find all imported modules in JavaScript files.
 | 0.0 | [find-in-files](./f/find-in-files) | A simple tool to search text patterns across multi
 | 0.0 | [find-java-home](./f/find-java-home) | Find JAVA_HOME on any system
 | 0.0 | [find-my-way](./f/find-my-way) | Crazy fast http radix based router
@@ -3033,6 +3037,7 @@
 | 0.0 | [fresh-tabula-js](./f/fresh-tabula-js) | Extract CSV data from PDF tables using tabula-java
 | 0.0 | [freshy](./f/freshy) | A node module (unre)loader.
 | 0.0 | [friendly-errors-webpack-p](./f/friendly-errors-webpack-plugin) | Recognizes certain classes of webpack errors and c
+| 0.0 | [friendly-words](./f/friendly-words) | The Glitch word list, packaged into an NPM module 
 | 0.0 | [frisby](./f/frisby) | Frisby.js v2.0: REST API Endpoint Testing built on
 | 0.0 | [from](./f/from) | Easy way to make a Readable Stream
 | 0.0 | [from2](./f/from2) | Convenience wrapper for ReadableStream, with an AP
@@ -3335,6 +3340,7 @@
 | 0.0 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.0 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser
 | 0.0 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React
+| 0.0 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams
 | 0.0 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio
 | 0.0 | [grommet](./g/grommet) | focus on the essential experience
 | 0.0 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps.
@@ -3651,6 +3657,7 @@
 | 0.0 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler.
 | 0.0 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
 | 0.0 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir
+| 0.0 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
 | 0.0 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io
 | 0.0 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st
 | 0.0 | [hookrouter](./h/hookrouter) | A hook based router for React
@@ -3861,6 +3868,7 @@
 | 0.0 | [indefinite-observable](./i/indefinite-observable) |  
 | 0.0 | [indent-string](./i/indent-string) | Indent each line in a string
 | 0.0 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria
+| 0.0 | [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy
 | 0.0 | [inert](./i/inert) | Static file and directory handlers plugin for hapi
 | 0.0 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f
 | 0.0 | [inferno-clone-vnode](./i/inferno-clone-vnode) | provides helper function to clone Inferno's vNodes
@@ -4201,6 +4209,7 @@
 | 0.0 | [itemsjs](./i/itemsjs) | Created to perform fast search on small json datas
 | 0.0 | [iterall](./i/iterall) | Minimal zero-dependency utilities for using JavaSc
 | 0.0 | [iterate-iterator](./i/iterate-iterator) | Iterate any JS iterator. Works robustly in all env
+| 0.0 | [iterate-object](./i/iterate-object) | A convenient way to iterate objects.
 | 0.0 | [iterate-value](./i/iterate-value) | Iterate any iterable JS value. Works robustly in a
 | 0.0 | [iterm2-version](./i/iterm2-version) | Get the iTerm2 version
 | 0.0 | [itty-router-extras](./i/itty-router-extras) | An assortment of delicious extras for the calorie-
@@ -4492,6 +4501,7 @@
 | 0.0 | [jskana](./j/jskana) | Japanese kana and romaji conversion.
 | 0.0 | [jslib-html5-camera-photo](./j/jslib-html5-camera-photo) | js lib HTML5 Camera Photo
 | 0.0 | [jsmediatags](./j/jsmediatags) | Media Tags Reader (ID3, MP4)
+| 0.0 | [jsmidgen](./j/jsmidgen) | a pure-JavaScript MIDI file generator
 | 0.0 | [jsmockito](./j/jsmockito) | Javascript mocking framework inspired by the aweso
 | 0.0 | [jsnox](./j/jsnox) | Write concise React components without JSX
 | 0.0 | [json-api-serializer](./j/json-api-serializer) | Framework agnostic JSON API serializer.
@@ -4526,6 +4536,7 @@
 | 0.0 | [json-server](./j/json-server) | Get a full fake REST API with zero coding in less 
 | 0.0 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets.
 | 0.0 | [json-stable-stringify](./j/json-stable-stringify) | deterministic JSON.stringify() with custom sorting
+| 0.0 | [json-stable-stringify-wit](./j/json-stable-stringify-without-jsonify) | deterministic JSON.stringify() with custom sorting
 | 0.0 | [json-stream-stringify](./j/json-stream-stringify) | JSON.Stringify as a readable stream
 | 0.0 | [json-string-splitter](./j/json-string-splitter) | Split concatenated JSON strings
 | 0.0 | [json-stringify-nice](./j/json-stringify-nice) | Stringify an object sorting scalars before objects
@@ -6468,6 +6479,7 @@
 | 0.0 | [ng-grid](./n/ng-grid) | __Contributors:__
 | 0.0 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne
 | 0.0 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi
+| 0.0 | [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P
 | 0.0 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS
 | 0.0 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS
 | 0.0 | [ng-table](./n/ng-table) | Table + AngularJS ================= 
@@ -6491,6 +6503,7 @@
 | 0.0 | [ngsijs](./n/ngsijs) | JavaScript library for the FIWARE Context Broker s
 | 0.0 | [ngstorage](./n/ngstorage) | ngStorage =========
 | 0.0 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp
+| 0.0 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | -
 | 0.0 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises
 | 0.0 | [nib](./n/nib) | Stylus mixins and utilities
 | 0.0 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js
@@ -6734,6 +6747,7 @@
 | 0.0 | [npm-user](./n/npm-user) | Get user info of an npm user
 | 0.0 | [npm-user-packages](./n/npm-user-packages) | Get packages by a npm user
 | 0.0 | [npm-which](./n/npm-which) | Locate a program or locally installed node module'
+| 0.0 | [npmcli__arborist](./n/npmcli__arborist) | Manage node_modules trees
 | 0.0 | [npmcli__ci-detect](./n/npmcli__ci-detect) | Detect what kind of CI environment the program is 
 | 0.0 | [npmcli__package-json](./n/npmcli__package-json) | Programmatic API to update package.json
 | 0.0 | [npmlog](./n/npmlog) | logger for npm
@@ -7875,6 +7889,7 @@
 | 0.0 | [rc-upload](./r/rc-upload) | upload ui component for react
 | 0.0 | [rc-util](./r/rc-util) | Common Utils For React Component
 | 0.0 | [rc-virtual-list](./r/rc-virtual-list) | React Virtual List Component
+| 0.0 | [rcedit](./r/rcedit) | Node module to edit resources of exe
 | 0.0 | [rcloader](./r/rcloader) | For build system plugins that need to fetch relati
 | 0.0 | [rclone_dot_js](./r/rclone_dot_js) | JavaScript API for rclone
 | 0.0 | [rdf-data-model](./r/rdf-data-model) | A basic implementation of the RDFJS Data Model
@@ -8715,6 +8730,7 @@
 | 0.0 | [react-user-tour](./r/react-user-tour) | give your user a guided tour around your applicati
 | 0.0 | [react-vega](./r/react-vega) | Convert Vega spec into React class conveniently
 | 0.0 | [react-vertical-timeline-c](./r/react-vertical-timeline-component) | Vertical timeline for React.js
+| 0.0 | [react-video-recorder](./r/react-video-recorder) | -
 | 0.0 | [react-virtual](./r/react-virtual) | Hooks for virtualizing scrollable elements in Reac
 | 0.0 | [react-virtual-keyboard](./r/react-virtual-keyboard) | Use jQuery Virtual Keyboard in react.js
 | 0.0 | [react-virtualized](./r/react-virtualized) | React components for efficiently rendering large, 
@@ -10299,11 +10315,13 @@
 | 0.0 | [tingle_dot_js](./t/tingle_dot_js) | A simple modal plugin written in pure JavaScript
 | 0.0 | [tiny-async-pool](./t/tiny-async-pool) | Run multiple promise-returning & async functions w
 | 0.0 | [tiny-emitter](./t/tiny-emitter) | A tiny (less than 1k) event emitter library
+| 0.0 | [tiny-human-time](./t/tiny-human-time) | A tiny module for human readable timespans.
 | 0.0 | [tiny-invariant](./t/tiny-invariant) | A tiny invariant function
 | 0.0 | [tiny-json-http](./t/tiny-json-http) | Minimalist HTTP client for GET, POST, PUT, PATCH a
 | 0.0 | [tiny-lru](./t/tiny-lru) | Tiny LRU cache for Client or Server
 | 0.0 | [tiny-secp256k1](./t/tiny-secp256k1) | A tiny secp256k1 JS
 | 0.0 | [tiny-slider-react](./t/tiny-slider-react) | wrapper tiny-slider plugin for react
+| 0.0 | [tiny-templater](./t/tiny-templater) | super-minimal templating
 | 0.0 | [tiny-typed-emitter](./t/tiny-typed-emitter) | Fully type-checked EventEmitter
 | 0.0 | [tiny-warning](./t/tiny-warning) | A tiny warning function
 | 0.0 | [tinycolor2](./t/tinycolor2) | Fast Color Parsing and Manipulation
@@ -10699,6 +10717,7 @@
 | 0.0 | [use-debounce](./u/use-debounce) | Debounce hook for react
 | 0.0 | [use-deep-compare-effect](./u/use-deep-compare-effect) | It's react's useEffect hook, except using deep com
 | 0.0 | [use-double-click](./u/use-double-click) | A simple React hook for differentiating single and
+| 0.0 | [use-editable](./u/use-editable) | A small React hook to turn elements into fully ren
 | 0.0 | [use-gesture__core](./u/use-gesture__core) | Core engine for receiving gestures
 | 0.0 | [use-gesture__react](./u/use-gesture__react) | React target for @use-gesture
 | 0.0 | [use-global-hook](./u/use-global-hook) | Easy state management for react using hooks in les
@@ -11384,7 +11403,6 @@
 | 0.0 | [yauzl-promise](./y/yauzl-promise) | yauzl unzipping with Promises
 | 0.0 | [yawn-yaml](./y/yawn-yaml) | YAML parser that preserves comments and styling
 | 0.0 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
-| 0.0 | [yazl](./y/yazl) | yet another zip library for node
 | 0.0 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.0 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 0.0 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman

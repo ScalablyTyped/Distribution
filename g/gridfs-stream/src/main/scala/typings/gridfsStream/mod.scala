@@ -1,13 +1,12 @@
 package typings.gridfsStream
 
+import typings.bson.mod.Document
 import typings.gridfsStream.mod.GridFSStream.Options
 import typings.gridfsStream.mod.GridFSStream.ReadStream
 import typings.gridfsStream.mod.GridFSStream.WriteStream
 import typings.mongodb.mod.Collection
-import typings.mongodb.mod.DefaultSchema
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // Merged declaration, g is both a callable function and a namespace
-  inline def apply(db: js.Any, mongo: js.Any): Grid = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], mongo.asInstanceOf[js.Any])).asInstanceOf[Grid]
+  inline def apply(db: Any, mongo: Any): Grid = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], mongo.asInstanceOf[js.Any])).asInstanceOf[Grid]
   
   @JSImport("gridfs-stream", JSImport.Namespace)
   @js.native
@@ -23,10 +22,10 @@ object mod {
   
   @JSImport("gridfs-stream", "Grid")
   @js.native
-  class Grid () extends StObject {
+  open class Grid () extends StObject {
     
-    def collection(): Collection[DefaultSchema] = js.native
-    def collection(name: String): Collection[DefaultSchema] = js.native
+    def collection(): Collection[Document] = js.native
+    def collection(name: String): Collection[Document] = js.native
     
     def createReadStream(): ReadStream = js.native
     def createReadStream(options: String): ReadStream = js.native
@@ -38,13 +37,13 @@ object mod {
     
     var curCol: String = js.native
     
-    def exist(options: Options, callback: js.Function2[/* err */ Error, /* found */ Boolean, Unit]): Unit = js.native
+    def exist(options: Options, callback: js.Function2[/* err */ js.Error, /* found */ Boolean, Unit]): Unit = js.native
     
-    var files: Collection[DefaultSchema] = js.native
+    var files: Collection[Document] = js.native
     
-    def findOne(options: Options, callback: js.Function2[/* err */ Error, /* record */ js.Any, Unit]): Unit = js.native
+    def findOne(options: Options, callback: js.Function2[/* err */ js.Error, /* record */ Any, Unit]): Unit = js.native
     
-    def remove(options: Options, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def remove(options: Options, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   }
   
   object GridFSStream {
@@ -60,7 +59,7 @@ object mod {
       
       var filename: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[js.Any] = js.undefined
+      var metadata: js.UndefOr[Any] = js.undefined
       
       var mode: js.UndefOr[String] = js.undefined
       
@@ -89,7 +88,7 @@ object mod {
         
         inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
         
-        inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
         inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         

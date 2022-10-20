@@ -1,0 +1,38 @@
+package typings.bullBoard
+
+import typings.bullBoard.anon.CleanJob
+import typings.bullBoard.distUiComponentsConstantsMod.Status
+import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distUiComponentsJobCardJobActionsJobActionsMod {
+  
+  @JSImport("bull-board/dist/ui/components/JobCard/JobActions/JobActions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def JobActions(hasActionsStatus: JobActionsProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("JobActions")(hasActionsStatus.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
+  trait JobActionsProps extends StObject {
+    
+    var actions: CleanJob
+    
+    var status: Status
+  }
+  object JobActionsProps {
+    
+    inline def apply(actions: CleanJob, status: Status): JobActionsProps = {
+      val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      __obj.asInstanceOf[JobActionsProps]
+    }
+    
+    extension [Self <: JobActionsProps](x: Self) {
+      
+      inline def setActions(value: CleanJob): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    }
+  }
+}

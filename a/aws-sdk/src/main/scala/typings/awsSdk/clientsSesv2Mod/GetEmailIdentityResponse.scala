@@ -42,6 +42,11 @@ trait GetEmailIdentityResponse extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
+    * The verification status of the identity. The status can be one of the following:    PENDING – The verification process was initiated, but Amazon SES hasn't yet been able to verify the identity.    SUCCESS – The verification process completed successfully.    FAILED – The verification process failed.    TEMPORARY_FAILURE – A temporary issue is preventing Amazon SES from determining the verification status of the identity.    NOT_STARTED – The verification process hasn't been initiated for the identity.  
+    */
+  var VerificationStatus: js.UndefOr[typings.awsSdk.clientsSesv2Mod.VerificationStatus] = js.undefined
+  
+  /**
     * Specifies whether or not the identity is verified. You can only send email from verified email addresses or domains. For more information about verifying identities, see the Amazon Pinpoint User Guide.
     */
   var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
@@ -84,6 +89,10 @@ object GetEmailIdentityResponse {
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "VerificationStatus", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationStatusUndefined: Self = StObject.set(x, "VerificationStatus", js.undefined)
     
     inline def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
     

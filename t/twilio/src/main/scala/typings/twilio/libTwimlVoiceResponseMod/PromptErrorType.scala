@@ -11,9 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilio.twilioStrings.`invalid-date`
   - typings.twilio.twilioStrings.`invalid-security-code`
   - typings.twilio.twilioStrings.`internal-error`
+  - typings.twilio.twilioStrings.`input-matching-failed`
 */
 trait PromptErrorType extends StObject
 object PromptErrorType {
+  
+  inline def `input-matching-failed`: typings.twilio.twilioStrings.`input-matching-failed` = "input-matching-failed".asInstanceOf[typings.twilio.twilioStrings.`input-matching-failed`]
   
   inline def `internal-error`: typings.twilio.twilioStrings.`internal-error` = "internal-error".asInstanceOf[typings.twilio.twilioStrings.`internal-error`]
   

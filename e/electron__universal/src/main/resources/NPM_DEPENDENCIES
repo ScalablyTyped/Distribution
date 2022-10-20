@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@electron/universal" : "1.3.1"
+      "@electron/universal" : "1.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@electron/universal" : "1.3.1"
+      "@electron/universal" : "1.3.3"
     }
   ],
   "compile-devDependencies" : [

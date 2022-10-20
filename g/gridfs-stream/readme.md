@@ -10,10 +10,10 @@ Writable/Readable Nodejs compatible GridFS streams
 | ------------------ | :-------------: |
 | Full name          | gridfs-stream |
 | Keywords           | mongodb, mongoose, gridfs |
-| # releases         | 0 |
-| # dependents       | 124 |
-| # downloads        | 1238024 |
-| # stars            | 22 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 73017.0 |
+| # stars            | 602.0 |
 
 ## Links
 - [Homepage](https://github.com/aheckmann/gridfs-stream)

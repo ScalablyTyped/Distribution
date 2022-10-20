@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartImportRequest extends StObject {
   
   /**
-    *  The destination event data store. Use this parameter for a new import. 
+    *  The ARN of the destination event data store. Use this parameter for a new import. 
     */
   var Destinations: js.UndefOr[ImportDestinations] = js.undefined
   
   /**
-    *  Use with StartEventTime to bound a StartImport request, and limit imported trail events to only those events logged within a specified time period. 
+    *  Use with StartEventTime to bound a StartImport request, and limit imported trail events to only those events logged within a specified time period. When you specify a time range, CloudTrail checks the prefix and log file names to verify the names contain a date between the specified StartEventTime and EndEventTime before attempting to import events. 
     */
   var EndEventTime: js.UndefOr[js.Date] = js.undefined
   
@@ -27,7 +27,7 @@ trait StartImportRequest extends StObject {
   var ImportSource: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ImportSource] = js.undefined
   
   /**
-    *  Use with EndEventTime to bound a StartImport request, and limit imported trail events to only those events logged within a specified time period. 
+    *  Use with EndEventTime to bound a StartImport request, and limit imported trail events to only those events logged within a specified time period. When you specify a time range, CloudTrail checks the prefix and log file names to verify the names contain a date between the specified StartEventTime and EndEventTime before attempting to import events. 
     */
   var StartEventTime: js.UndefOr[js.Date] = js.undefined
 }

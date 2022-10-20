@@ -1,6 +1,7 @@
 package typings.i18next
 
 import typings.i18next.mod.ModuleType
+import typings.i18next.mod.PluralSuffix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,14 @@ object i18nextStrings {
     extends StObject
        with ModuleType
   inline def `3rdParty`: `3rdParty` = "3rdParty".asInstanceOf[`3rdParty`]
+  
+  @js.native
+  sealed trait Colon extends StObject
+  inline def Colon: Colon = ":".asInstanceOf[Colon]
+  
+  @js.native
+  sealed trait Dot extends StObject
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait added extends StObject
@@ -46,6 +55,12 @@ object i18nextStrings {
   @js.native
   sealed trait fallback extends StObject
   inline def fallback: fallback = "fallback".asInstanceOf[fallback]
+  
+  @js.native
+  sealed trait few
+    extends StObject
+       with PluralSuffix
+  inline def few: few = "few".asInstanceOf[few]
   
   @js.native
   sealed trait formatter
@@ -92,8 +107,26 @@ object i18nextStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
+  sealed trait many
+    extends StObject
+       with PluralSuffix
+  inline def many: many = "many".asInstanceOf[many]
+  
+  @js.native
   sealed trait missingKey extends StObject
   inline def missingKey: missingKey = "missingKey".asInstanceOf[missingKey]
+  
+  @js.native
+  sealed trait one
+    extends StObject
+       with PluralSuffix
+  inline def one: one = "one".asInstanceOf[one]
+  
+  @js.native
+  sealed trait other
+    extends StObject
+       with PluralSuffix
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait postProcessor
@@ -110,6 +143,16 @@ object i18nextStrings {
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
+  sealed trait translation extends StObject
+  inline def translation: translation = "translation".asInstanceOf[translation]
+  
+  @js.native
+  sealed trait two
+    extends StObject
+       with PluralSuffix
+  inline def two: two = "two".asInstanceOf[two]
+  
+  @js.native
   sealed trait v1 extends StObject
   inline def v1: v1 = "v1".asInstanceOf[v1]
   
@@ -124,4 +167,10 @@ object i18nextStrings {
   @js.native
   sealed trait v4 extends StObject
   inline def v4: v4 = "v4".asInstanceOf[v4]
+  
+  @js.native
+  sealed trait zero
+    extends StObject
+       with PluralSuffix
+  inline def zero: zero = "zero".asInstanceOf[zero]
 }

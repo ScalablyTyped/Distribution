@@ -290,6 +290,12 @@ object BlueprintIcons20 extends StObject {
   /* "asterisk" */ val Asterisk: typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20.Asterisk & String = js.native
   
   @js.native
+  sealed trait At
+    extends StObject
+       with BlueprintIcons20
+  /* "at" */ val At: typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20.At & String = js.native
+  
+  @js.native
   sealed trait AutomaticUpdates
     extends StObject
        with BlueprintIcons20

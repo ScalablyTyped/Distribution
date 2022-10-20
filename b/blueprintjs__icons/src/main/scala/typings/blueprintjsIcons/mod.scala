@@ -286,6 +286,11 @@ object mod {
     def asterisk: String = js.native
     inline def asterisk_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asterisk")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconCodepoints.at")
+    @js.native
+    def at: String = js.native
+    inline def at_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("at")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconCodepoints.automatic-updates")
     @js.native
     def automaticUpdates: String = js.native
@@ -3419,6 +3424,12 @@ object mod {
     
     inline def ASTERISK__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ASTERISK")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons", "IconNames.AT")
+    @js.native
+    def AT_ : BlueprintIcons16Id = js.native
+    
+    inline def AT__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AT")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons", "IconNames.AUTOMATIC_UPDATES")
     @js.native
     def AUTOMATIC_UPDATES: BlueprintIcons16Id = js.native
@@ -3655,6 +3666,11 @@ object mod {
     @js.native
     def Asterisk: BlueprintIcons16Id = js.native
     inline def Asterisk_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Asterisk")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons", "IconNames.At")
+    @js.native
+    def At: BlueprintIcons16Id = js.native
+    inline def At_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("At")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons", "IconNames.AutomaticUpdates")
     @js.native
@@ -9253,6 +9269,10 @@ object mod {
     @js.native
     val Asterisk: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons", "IconSvgPaths16.At")
+    @js.native
+    val At: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons", "IconSvgPaths16.AutomaticUpdates")
     @js.native
     val AutomaticUpdates: js.Array[String] = js.native
@@ -11495,6 +11515,10 @@ object mod {
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.Asterisk")
     @js.native
     val Asterisk: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons", "IconSvgPaths20.At")
+    @js.native
+    val At: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons", "IconSvgPaths20.AutomaticUpdates")
     @js.native

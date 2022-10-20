@@ -12,7 +12,7 @@ trait ImportsListItem extends StObject {
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The destination event data store. 
+    *  The ARN of the destination event data store. 
     */
   var Destinations: js.UndefOr[ImportDestinations] = js.undefined
   

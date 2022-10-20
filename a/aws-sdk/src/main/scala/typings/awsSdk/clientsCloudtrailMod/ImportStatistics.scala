@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportStatistics extends StObject {
   
   /**
-    *  The number of trail events imported. 
+    *  The number of trail events imported into the event data store. 
     */
   var EventsCompleted: js.UndefOr[Long] = js.undefined
   
@@ -17,7 +17,7 @@ trait ImportStatistics extends StObject {
   var FailedEntries: js.UndefOr[Long] = js.undefined
   
   /**
-    * The number of files that completed import.
+    * The number of log files that completed import.
     */
   var FilesCompleted: js.UndefOr[Long] = js.undefined
   

@@ -14,7 +14,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonRouteProperties extends StObject {
+trait CommonRouteProperties[Refs /* <: ReqRef */] extends StObject {
   
   /**
     * Application-specific route configuration state. Should not be used by plugins which should use options.plugins[name] instead.
@@ -27,7 +27,9 @@ trait CommonRouteProperties extends StObject {
     * An object passed back to the provided handler (via this) when called. Ignored if the method is an arrow function.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsbind)
     */
-  var bind: js.UndefOr[js.Object | Null] = js.undefined
+  var bind: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Bind'] */ js.Any
+  ] = js.undefined
   
   /**
     * @default { privacy: 'default', statuses: [200], otherwise: 'no-cache' }.
@@ -98,11 +100,11 @@ trait CommonRouteProperties extends StObject {
     * @default none.
     * The route handler function performs the main business logic of the route and sets the response. handler can be assigned:
     * * a lifecycle method.
-    * * an object with a single property using the name of a handler type registred with the server.handler() method. The matching property value is passed as options to the registered handler
+    * * an object with a single property using the name of a handler type registered with the server.handler() method. The matching property value is passed as options to the registered handler
     * generator. Note: handlers using a fat arrow style function cannot be bound to any bind property. Instead, the bound context is available under h.context.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionshandler)
     */
-  var handler: js.UndefOr[Method | js.Object] = js.undefined
+  var handler: js.UndefOr[(Method[Refs, ReturnValue[Refs]]) | js.Object] = js.undefined
   
   /**
     * @default none.
@@ -172,7 +174,7 @@ trait CommonRouteProperties extends StObject {
   /**
     * @default none.
     * The pre option allows defining methods for performing actions before the handler is called. These methods allow breaking the handler logic into smaller, reusable components that can be shared
-    * ascross routes, as well as provide a cleaner error handling of prerequisite operations (e.g. load required reference data from a database). pre is assigned an ordered array of methods which
+    * across routes, as well as provide a cleaner error handling of prerequisite operations (e.g. load required reference data from a database). pre is assigned an ordered array of methods which
     * are called serially in order. If the pre array contains another array of methods as one of its elements, those methods are called in parallel. Note that during parallel execution, if any of
     * the methods error, return a takeover response, or abort signal, the other parallel methods will continue to execute but will be ignored once completed. pre can be assigned a mixed array of:
     * * an array containing the elements listed below, which are executed in parallel.
@@ -187,7 +189,7 @@ trait CommonRouteProperties extends StObject {
     * lifecycle methods.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspre)
     */
-  var pre: js.UndefOr[RouteOptionsPreArray] = js.undefined
+  var pre: js.UndefOr[RouteOptionsPreArray[Refs]] = js.undefined
   
   /**
     * Processing rules for the outgoing response.
@@ -234,20 +236,20 @@ trait CommonRouteProperties extends StObject {
 }
 object CommonRouteProperties {
   
-  inline def apply(): CommonRouteProperties = {
+  inline def apply[Refs /* <: ReqRef */](): CommonRouteProperties[Refs] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[CommonRouteProperties]
+    __obj.asInstanceOf[CommonRouteProperties[Refs]]
   }
   
-  extension [Self <: CommonRouteProperties](x: Self) {
+  extension [Self <: CommonRouteProperties[?], Refs /* <: ReqRef */](x: Self & CommonRouteProperties[Refs]) {
     
     inline def setApp(value: RouteOptionsApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    inline def setBind(value: js.Object): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
-    
-    inline def setBindNull: Self = StObject.set(x, "bind", null)
+    inline def setBind(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Bind'] */ js.Any
+    ): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
     inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
@@ -275,11 +277,7 @@ object CommonRouteProperties {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setHandler(value: Method | js.Object): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
-    
-    inline def setHandlerFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
-    ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+    inline def setHandler(value: (Method[Refs, ReturnValue[Refs]]) | js.Object): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -317,11 +315,11 @@ object CommonRouteProperties {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPre(value: RouteOptionsPreArray): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: RouteOptionsPreArray[Refs]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    inline def setPreVarargs(value: RouteOptionsPreAllOptions*): Self = StObject.set(x, "pre", js.Array(value*))
+    inline def setPreVarargs(value: RouteOptionsPreAllOptions[Refs]*): Self = StObject.set(x, "pre", js.Array(value*))
     
     inline def setResponse(value: RouteOptionsResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

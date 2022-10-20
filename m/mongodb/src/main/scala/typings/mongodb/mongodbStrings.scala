@@ -101,6 +101,12 @@ object mongodbStrings {
   inline def Mongos: Mongos = "Mongos".asInstanceOf[Mongos]
   
   @js.native
+  sealed trait NoWritesPerformed
+    extends StObject
+       with MongoErrorLabel
+  inline def NoWritesPerformed: NoWritesPerformed = "NoWritesPerformed".asInstanceOf[NoWritesPerformed]
+  
+  @js.native
   sealed trait PLAIN
     extends StObject
        with AuthMechanism
@@ -500,6 +506,12 @@ object mongodbStrings {
     extends StObject
        with _IndexDirection
   inline def geoHaystack: geoHaystack = "geoHaystack".asInstanceOf[geoHaystack]
+  
+  @js.native
+  sealed trait hashed
+    extends StObject
+       with _IndexDirection
+  inline def hashed: hashed = "hashed".asInstanceOf[hashed]
   
   @js.native
   sealed trait hints extends StObject

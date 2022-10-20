@@ -27,7 +27,7 @@ trait NamespaceSummary extends StObject {
   var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * The name of the namespace. When you create a namespace, Cloud Map automatically creates a Route 53 hosted zone that has the same name as the namespace.
+    * The name of the namespace. When you create a namespace, Cloud Map automatically creates a Route 53 hosted zone that has the same name as the namespace.
     */
   var Name: js.UndefOr[NamespaceName] = js.undefined
   

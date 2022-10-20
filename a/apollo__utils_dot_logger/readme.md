@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.0
 
+## Library description:
+Generic logger interface
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @apollo/utils.logger |
+| Keywords           | apollo, graphql, typescript, node |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4019598.6666666665 |
+| # stars            | 14.0 |
+
+## Links
+- [Homepage](https://github.com/apollographql/apollo-utils#readme)
+- [Bugs](https://github.com/apollographql/apollo-utils/issues)
+- [Repository](https://github.com/apollographql/apollo-utils)
+- [Npm](https://www.npmjs.com/package/%40apollo%2Futils.logger)
+    
 
 
 ## Note

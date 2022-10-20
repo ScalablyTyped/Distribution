@@ -1,0 +1,23 @@
+package typings.hapiHapi.mod
+
+import typings.hapiHapi.anon.Options
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait RulesOptions[Refs /* <: ReqRef */] extends StObject {
+  
+  var validate: Options[Refs]
+}
+object RulesOptions {
+  
+  inline def apply[Refs /* <: ReqRef */](validate: Options[Refs]): RulesOptions[Refs] = {
+    val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RulesOptions[Refs]]
+  }
+  
+  extension [Self <: RulesOptions[?], Refs /* <: ReqRef */](x: Self & RulesOptions[Refs]) {
+    
+    inline def setValidate(value: Options[Refs]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+  }
+}

@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModelBiasJobInput extends StObject {
   
-  var EndpointInput: typings.awsSdk.clientsSagemakerMod.EndpointInput
+  /**
+    * Input object for the batch transform job.
+    */
+  var BatchTransformInput: js.UndefOr[typings.awsSdk.clientsSagemakerMod.BatchTransformInput] = js.undefined
+  
+  var EndpointInput: js.UndefOr[typings.awsSdk.clientsSagemakerMod.EndpointInput] = js.undefined
   
   /**
     * Location of ground truth labels to use in model bias job.
@@ -15,14 +20,20 @@ trait ModelBiasJobInput extends StObject {
 }
 object ModelBiasJobInput {
   
-  inline def apply(EndpointInput: EndpointInput, GroundTruthS3Input: MonitoringGroundTruthS3Input): ModelBiasJobInput = {
-    val __obj = js.Dynamic.literal(EndpointInput = EndpointInput.asInstanceOf[js.Any], GroundTruthS3Input = GroundTruthS3Input.asInstanceOf[js.Any])
+  inline def apply(GroundTruthS3Input: MonitoringGroundTruthS3Input): ModelBiasJobInput = {
+    val __obj = js.Dynamic.literal(GroundTruthS3Input = GroundTruthS3Input.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelBiasJobInput]
   }
   
   extension [Self <: ModelBiasJobInput](x: Self) {
     
+    inline def setBatchTransformInput(value: BatchTransformInput): Self = StObject.set(x, "BatchTransformInput", value.asInstanceOf[js.Any])
+    
+    inline def setBatchTransformInputUndefined: Self = StObject.set(x, "BatchTransformInput", js.undefined)
+    
     inline def setEndpointInput(value: EndpointInput): Self = StObject.set(x, "EndpointInput", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointInputUndefined: Self = StObject.set(x, "EndpointInput", js.undefined)
     
     inline def setGroundTruthS3Input(value: MonitoringGroundTruthS3Input): Self = StObject.set(x, "GroundTruthS3Input", value.asInstanceOf[js.Any])
   }

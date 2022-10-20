@@ -120,14 +120,14 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     
     var size: js.UndefOr[standard | large] = js.undefined
   }
   object Icon {
     
     inline def apply(
-      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     ): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
@@ -140,7 +140,7 @@ object anon {
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setIcon(
-        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setSize(value: standard | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
@@ -444,6 +444,8 @@ object anon {
     
     var ASTERISK: BlueprintIcons16Id
     
+    var AT: BlueprintIcons16Id
+    
     var AUTOMATIC_UPDATES: BlueprintIcons16Id
     
     var Add: BlueprintIcons16Id
@@ -537,6 +539,8 @@ object anon {
     var ArrowsVertical: BlueprintIcons16Id
     
     var Asterisk: BlueprintIcons16Id
+    
+    var At: BlueprintIcons16Id
     
     var AutomaticUpdates: BlueprintIcons16Id
     
@@ -2687,6 +2691,8 @@ object anon {
       inline def setARROW_UP(value: BlueprintIcons16Id): Self = StObject.set(x, "ARROW_UP", value.asInstanceOf[js.Any])
       
       inline def setASTERISK(value: BlueprintIcons16Id): Self = StObject.set(x, "ASTERISK", value.asInstanceOf[js.Any])
+      
+      inline def setAT(value: BlueprintIcons16Id): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
       
       inline def setAUTOMATIC_UPDATES(value: BlueprintIcons16Id): Self = StObject.set(x, "AUTOMATIC_UPDATES", value.asInstanceOf[js.Any])
       

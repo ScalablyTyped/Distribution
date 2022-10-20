@@ -1,7 +1,7 @@
 
 # Scala.js typings for bull-board
 
-Typings are for version 0.6
+Typings are for version 2.1.3
 
 ## Library description:
 Bull queue UI for inspecting jobs
@@ -24,7 +24,7 @@ Bull queue UI for inspecting jobs
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

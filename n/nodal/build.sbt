@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "nodal"
-version := "0.12.8-dt-20220818Z-ff2eb2"
+version := "0.12.8-dt-20220818Z-8371dc"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "fxn" % "0.0.4-dt-20220818Z-8520c5",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "fxn" % "0.0.4-dt-20220818Z-4a315c",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

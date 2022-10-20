@@ -1,7 +1,7 @@
 
 # Scala.js typings for sentry__node
 
-Typings are for version 7.13.0
+Typings are for version 7.15.0
 
 ## Library description:
 Official Sentry SDK for Node.js

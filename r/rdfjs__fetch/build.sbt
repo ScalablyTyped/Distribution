@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rdfjs__fetch"
-version := "3.0-dt-20211202Z-999dfa"
+version := "3.0-dt-20211202Z-89f753"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "rdfjs__fetch-lite" % "3.0-dt-20211202Z-bf2aa5",
-  "org.scalablytyped" %%% "rdfjs__sink-map" % "1.0-dt-20211202Z-e4a569",
-  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-82a29b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "rdfjs__fetch-lite" % "3.0-dt-20211202Z-705726",
+  "org.scalablytyped" %%% "rdfjs__sink-map" % "1.0-dt-20211202Z-43460d",
+  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-496fa3",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

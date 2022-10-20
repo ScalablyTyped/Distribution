@@ -30,9 +30,18 @@ open class SetTaskOutcomeAction protected () extends MicroflowAction {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.19.0: deleted
+    */
   def outcome: IUserTaskOutcome | Null = js.native
   
   def outcomeQualifiedName: String | Null = js.native
+  
+  /**
+    * In version 9.19.0: introduced
+    */
+  def outcomeValue: String = js.native
+  def outcomeValue_=(newValue: String): Unit = js.native
   
   def outcome_=(newValue: IUserTaskOutcome | Null): Unit = js.native
   

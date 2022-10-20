@@ -27,7 +27,7 @@ trait CreateSlackChannelConfigurationRequest extends StObject {
   var notifyOnAddCorrespondenceToCase: js.UndefOr[booleanValue] = js.undefined
   
   /**
-    * The case severity for a support case that you want to receive notifications.  &lt;p&gt;If you specify &lt;code&gt;high&lt;/code&gt; or &lt;code&gt;all&lt;/code&gt;, you must specify &lt;code&gt;true&lt;/code&gt; for at least one of the following parameters:&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;notifyOnAddCorrespondenceToCase&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;notifyOnCreateOrReopenCase&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;notifyOnResolveCase&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;If you specify &lt;code&gt;none&lt;/code&gt;, the following parameters must be null or &lt;code&gt;false&lt;/code&gt;:&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;notifyOnAddCorrespondenceToCase&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;notifyOnCreateOrReopenCase&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt; &lt;code&gt;notifyOnResolveCase&lt;/code&gt; &lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;note&gt; &lt;p&gt;If you don't specify these parameters in your request, they default to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt; &lt;/note&gt; 
+    * The case severity for a support case that you want to receive notifications. If you specify high or all, you must specify true for at least one of the following parameters:    notifyOnAddCorrespondenceToCase     notifyOnCreateOrReopenCase     notifyOnResolveCase    If you specify none, the following parameters must be null or false:    notifyOnAddCorrespondenceToCase     notifyOnCreateOrReopenCase     notifyOnResolveCase     If you don't specify these parameters in your request, they default to false. 
     */
   var notifyOnCaseSeverity: NotificationSeverityLevel
   
@@ -42,7 +42,7 @@ trait CreateSlackChannelConfigurationRequest extends StObject {
   var notifyOnResolveCase: js.UndefOr[booleanValue] = js.undefined
   
   /**
-    * The team ID in Slack. This ID uniquely identifies a Slack workspace.
+    * The team ID in Slack. This ID uniquely identifies a Slack workspace, such as T012ABCDEFG.
     */
   var teamId: typings.awsSdk.clientsSupportappMod.teamId
 }

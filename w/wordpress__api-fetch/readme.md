@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__api-fetch
 
-Typings are for version 6.16.0
+Typings are for version 6.17.0
 
 ## Library description:
 Utility to make WordPress REST API requests.

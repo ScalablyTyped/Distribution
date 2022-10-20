@@ -17,7 +17,7 @@ trait CreatePrivateDnsNamespaceRequest extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * The name that you want to assign to this namespace. When you create a private DNS namespace, Cloud Map automatically creates an Amazon Route 53 private hosted zone that has the same name as the namespace.
+    * The name that you want to assign to this namespace. When you create a private DNS namespace, Cloud Map automatically creates an Amazon Route 53 private hosted zone that has the same name as the namespace.
     */
   var Name: NamespaceNamePrivate
   

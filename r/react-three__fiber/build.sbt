@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-three__fiber"
-version := "8.7.4-b0bc5b"
+version := "8.7.4-b340b6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "immer" % "9.0.15-3c3908",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221016Z-c1c8c7",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
   "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-a2371c",
   "org.scalablytyped" %%% "react-use-measure" % "2.1.1-e9e9f0",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",

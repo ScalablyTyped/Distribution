@@ -15,6 +15,20 @@ trait ManagedBlockchain extends Service {
   var config_ManagedBlockchain: ConfigBase & ClientConfiguration = js.native
   
   /**
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Creates a new accessor for use with Managed Blockchain Ethereum nodes. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    */
+  def createAccessor(): Request[CreateAccessorOutput, AWSError] = js.native
+  def createAccessor(callback: js.Function2[/* err */ AWSError, /* data */ CreateAccessorOutput, Unit]): Request[CreateAccessorOutput, AWSError] = js.native
+  /**
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Creates a new accessor for use with Managed Blockchain Ethereum nodes. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    */
+  def createAccessor(params: CreateAccessorInput): Request[CreateAccessorOutput, AWSError] = js.native
+  def createAccessor(
+    params: CreateAccessorInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAccessorOutput, Unit]
+  ): Request[CreateAccessorOutput, AWSError] = js.native
+  
+  /**
     * Creates a member within a Managed Blockchain network. Applies only to Hyperledger Fabric.
     */
   def createMember(): Request[CreateMemberOutput, AWSError] = js.native
@@ -71,12 +85,26 @@ trait ManagedBlockchain extends Service {
   ): Request[CreateProposalOutput, AWSError] = js.native
   
   /**
-    * Deletes a member. Deleting a member removes the member and all associated resources from the network. DeleteMember can only be called for a specified MemberId if the principal performing the action is associated with the AWS account that owns the member. In all other cases, the DeleteMember action is carried out as the result of an approved proposal to remove a member. If MemberId is the last member in a network specified by the last AWS account, the network is deleted also. Applies only to Hyperledger Fabric.
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Deletes an accessor that your Amazon Web Services account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the BILLING_TOKEN. After an accessor is deleted, the status of the accessor changes from AVAILABLE to PENDING_DELETION. An accessor in the PENDING_DELETION state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that are initiated while the accessor was in the AVAILABLE state remain open until they expire (up to 2 hours).
+    */
+  def deleteAccessor(): Request[DeleteAccessorOutput, AWSError] = js.native
+  def deleteAccessor(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessorOutput, Unit]): Request[DeleteAccessorOutput, AWSError] = js.native
+  /**
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Deletes an accessor that your Amazon Web Services account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the BILLING_TOKEN. After an accessor is deleted, the status of the accessor changes from AVAILABLE to PENDING_DELETION. An accessor in the PENDING_DELETION state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that are initiated while the accessor was in the AVAILABLE state remain open until they expire (up to 2 hours).
+    */
+  def deleteAccessor(params: DeleteAccessorInput): Request[DeleteAccessorOutput, AWSError] = js.native
+  def deleteAccessor(
+    params: DeleteAccessorInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessorOutput, Unit]
+  ): Request[DeleteAccessorOutput, AWSError] = js.native
+  
+  /**
+    * Deletes a member. Deleting a member removes the member and all associated resources from the network. DeleteMember can only be called for a specified MemberId if the principal performing the action is associated with the Amazon Web Services account that owns the member. In all other cases, the DeleteMember action is carried out as the result of an approved proposal to remove a member. If MemberId is the last member in a network specified by the last Amazon Web Services account, the network is deleted also. Applies only to Hyperledger Fabric.
     */
   def deleteMember(): Request[DeleteMemberOutput, AWSError] = js.native
   def deleteMember(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMemberOutput, Unit]): Request[DeleteMemberOutput, AWSError] = js.native
   /**
-    * Deletes a member. Deleting a member removes the member and all associated resources from the network. DeleteMember can only be called for a specified MemberId if the principal performing the action is associated with the AWS account that owns the member. In all other cases, the DeleteMember action is carried out as the result of an approved proposal to remove a member. If MemberId is the last member in a network specified by the last AWS account, the network is deleted also. Applies only to Hyperledger Fabric.
+    * Deletes a member. Deleting a member removes the member and all associated resources from the network. DeleteMember can only be called for a specified MemberId if the principal performing the action is associated with the Amazon Web Services account that owns the member. In all other cases, the DeleteMember action is carried out as the result of an approved proposal to remove a member. If MemberId is the last member in a network specified by the last Amazon Web Services account, the network is deleted also. Applies only to Hyperledger Fabric.
     */
   def deleteMember(params: DeleteMemberInput): Request[DeleteMemberOutput, AWSError] = js.native
   def deleteMember(
@@ -85,18 +113,32 @@ trait ManagedBlockchain extends Service {
   ): Request[DeleteMemberOutput, AWSError] = js.native
   
   /**
-    * Deletes a node that your AWS account owns. All data on the node is lost and cannot be recovered. Applies to Hyperledger Fabric and Ethereum.
+    * Deletes a node that your Amazon Web Services account owns. All data on the node is lost and cannot be recovered. Applies to Hyperledger Fabric and Ethereum.
     */
   def deleteNode(): Request[DeleteNodeOutput, AWSError] = js.native
   def deleteNode(callback: js.Function2[/* err */ AWSError, /* data */ DeleteNodeOutput, Unit]): Request[DeleteNodeOutput, AWSError] = js.native
   /**
-    * Deletes a node that your AWS account owns. All data on the node is lost and cannot be recovered. Applies to Hyperledger Fabric and Ethereum.
+    * Deletes a node that your Amazon Web Services account owns. All data on the node is lost and cannot be recovered. Applies to Hyperledger Fabric and Ethereum.
     */
   def deleteNode(params: DeleteNodeInput): Request[DeleteNodeOutput, AWSError] = js.native
   def deleteNode(
     params: DeleteNodeInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNodeOutput, Unit]
   ): Request[DeleteNodeOutput, AWSError] = js.native
+  
+  /**
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns detailed information about an accessor. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    */
+  def getAccessor(): Request[GetAccessorOutput, AWSError] = js.native
+  def getAccessor(callback: js.Function2[/* err */ AWSError, /* data */ GetAccessorOutput, Unit]): Request[GetAccessorOutput, AWSError] = js.native
+  /**
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns detailed information about an accessor. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    */
+  def getAccessor(params: GetAccessorInput): Request[GetAccessorOutput, AWSError] = js.native
+  def getAccessor(
+    params: GetAccessorInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAccessorOutput, Unit]
+  ): Request[GetAccessorOutput, AWSError] = js.native
   
   /**
     * Returns detailed information about a member. Applies only to Hyperledger Fabric.
@@ -152,12 +194,26 @@ trait ManagedBlockchain extends Service {
   ): Request[GetProposalOutput, AWSError] = js.native
   
   /**
-    * Returns a list of all invitations for the current AWS account. Applies only to Hyperledger Fabric.
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns a list of the accessors and their properties. Accessor objects are containers that have the information required for token based access to your Ethereum nodes.
+    */
+  def listAccessors(): Request[ListAccessorsOutput, AWSError] = js.native
+  def listAccessors(callback: js.Function2[/* err */ AWSError, /* data */ ListAccessorsOutput, Unit]): Request[ListAccessorsOutput, AWSError] = js.native
+  /**
+    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns a list of the accessors and their properties. Accessor objects are containers that have the information required for token based access to your Ethereum nodes.
+    */
+  def listAccessors(params: ListAccessorsInput): Request[ListAccessorsOutput, AWSError] = js.native
+  def listAccessors(
+    params: ListAccessorsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAccessorsOutput, Unit]
+  ): Request[ListAccessorsOutput, AWSError] = js.native
+  
+  /**
+    * Returns a list of all invitations for the current Amazon Web Services account. Applies only to Hyperledger Fabric.
     */
   def listInvitations(): Request[ListInvitationsOutput, AWSError] = js.native
   def listInvitations(callback: js.Function2[/* err */ AWSError, /* data */ ListInvitationsOutput, Unit]): Request[ListInvitationsOutput, AWSError] = js.native
   /**
-    * Returns a list of all invitations for the current AWS account. Applies only to Hyperledger Fabric.
+    * Returns a list of all invitations for the current Amazon Web Services account. Applies only to Hyperledger Fabric.
     */
   def listInvitations(params: ListInvitationsInput): Request[ListInvitationsOutput, AWSError] = js.native
   def listInvitations(
@@ -180,12 +236,12 @@ trait ManagedBlockchain extends Service {
   ): Request[ListMembersOutput, AWSError] = js.native
   
   /**
-    * Returns information about the networks in which the current AWS account participates. Applies to Hyperledger Fabric and Ethereum.
+    * Returns information about the networks in which the current Amazon Web Services account participates. Applies to Hyperledger Fabric and Ethereum.
     */
   def listNetworks(): Request[ListNetworksOutput, AWSError] = js.native
   def listNetworks(callback: js.Function2[/* err */ AWSError, /* data */ ListNetworksOutput, Unit]): Request[ListNetworksOutput, AWSError] = js.native
   /**
-    * Returns information about the networks in which the current AWS account participates. Applies to Hyperledger Fabric and Ethereum.
+    * Returns information about the networks in which the current Amazon Web Services account participates. Applies to Hyperledger Fabric and Ethereum.
     */
   def listNetworks(params: ListNetworksInput): Request[ListNetworksOutput, AWSError] = js.native
   def listNetworks(
@@ -250,12 +306,12 @@ trait ManagedBlockchain extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Rejects an invitation to join a network. This action can be called by a principal in an AWS account that has received an invitation to create a member and join a network. Applies only to Hyperledger Fabric.
+    * Rejects an invitation to join a network. This action can be called by a principal in an Amazon Web Services account that has received an invitation to create a member and join a network. Applies only to Hyperledger Fabric.
     */
   def rejectInvitation(): Request[RejectInvitationOutput, AWSError] = js.native
   def rejectInvitation(callback: js.Function2[/* err */ AWSError, /* data */ RejectInvitationOutput, Unit]): Request[RejectInvitationOutput, AWSError] = js.native
   /**
-    * Rejects an invitation to join a network. This action can be called by a principal in an AWS account that has received an invitation to create a member and join a network. Applies only to Hyperledger Fabric.
+    * Rejects an invitation to join a network. This action can be called by a principal in an Amazon Web Services account that has received an invitation to create a member and join a network. Applies only to Hyperledger Fabric.
     */
   def rejectInvitation(params: RejectInvitationInput): Request[RejectInvitationOutput, AWSError] = js.native
   def rejectInvitation(
@@ -320,12 +376,12 @@ trait ManagedBlockchain extends Service {
   ): Request[UpdateNodeOutput, AWSError] = js.native
   
   /**
-    * Casts a vote for a specified ProposalId on behalf of a member. The member to vote as, specified by VoterMemberId, must be in the same AWS account as the principal that calls the action. Applies only to Hyperledger Fabric.
+    * Casts a vote for a specified ProposalId on behalf of a member. The member to vote as, specified by VoterMemberId, must be in the same Amazon Web Services account as the principal that calls the action. Applies only to Hyperledger Fabric.
     */
   def voteOnProposal(): Request[VoteOnProposalOutput, AWSError] = js.native
   def voteOnProposal(callback: js.Function2[/* err */ AWSError, /* data */ VoteOnProposalOutput, Unit]): Request[VoteOnProposalOutput, AWSError] = js.native
   /**
-    * Casts a vote for a specified ProposalId on behalf of a member. The member to vote as, specified by VoterMemberId, must be in the same AWS account as the principal that calls the action. Applies only to Hyperledger Fabric.
+    * Casts a vote for a specified ProposalId on behalf of a member. The member to vote as, specified by VoterMemberId, must be in the same Amazon Web Services account as the principal that calls the action. Applies only to Hyperledger Fabric.
     */
   def voteOnProposal(params: VoteOnProposalInput): Request[VoteOnProposalOutput, AWSError] = js.native
   def voteOnProposal(

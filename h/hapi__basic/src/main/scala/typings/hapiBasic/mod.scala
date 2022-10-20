@@ -2,6 +2,7 @@ package typings.hapiBasic
 
 import org.scalablytyped.runtime.Shortcut
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
@@ -15,10 +16,10 @@ object mod extends Shortcut {
   val ^ : Plugin[js.Object] = js.native
   
   type Validate = js.Function4[
-    /* request */ Request, 
+    /* request */ Request[ReqRefDefaults], 
     /* username */ String, 
     /* password */ String, 
-    /* h */ ResponseToolkit, 
+    /* h */ ResponseToolkit[ReqRefDefaults], 
     js.Promise[ValidateResponse | ValidateCustomResponse]
   ]
   

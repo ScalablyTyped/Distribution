@@ -1,6 +1,7 @@
 package typings.roarr
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.roarr.distSrcTypesMod.JsonObject
 import typings.roarr.distSrcTypesMod.JsonValue
 import typings.roarr.distSrcTypesMod.Logger
 import typings.roarr.distSrcTypesMod.MessageEventHandler
@@ -15,5 +16,5 @@ object distSrcFactoriesCreateMockLoggerMod {
   val ^ : js.Any = js.native
   
   inline def createMockLogger(onMessage: MessageEventHandler): Logger[StringDictionary[JsonValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockLogger")(onMessage.asInstanceOf[js.Any]).asInstanceOf[Logger[StringDictionary[JsonValue]]]
-  inline def createMockLogger(onMessage: MessageEventHandler, parentContext: StringDictionary[JsonValue]): Logger[StringDictionary[JsonValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMockLogger")(onMessage.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[Logger[StringDictionary[JsonValue]]]
+  inline def createMockLogger(onMessage: MessageEventHandler, parentContext: JsonObject): Logger[StringDictionary[JsonValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMockLogger")(onMessage.asInstanceOf[js.Any], parentContext.asInstanceOf[js.Any])).asInstanceOf[Logger[StringDictionary[JsonValue]]]
 }

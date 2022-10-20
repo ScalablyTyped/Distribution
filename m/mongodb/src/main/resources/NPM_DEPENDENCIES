@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mongodb" : "4.10.0"
+      "mongodb" : "4.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mongodb" : "4.10.0"
+      "mongodb" : "4.11.0"
     }
   ],
   "compile-devDependencies" : [

@@ -5,8 +5,8 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.NgZone
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.ngxInfiniteScroll.libNgxInfiniteScrollDotdirectiveMod.InfiniteScrollDirective
 import typings.ngxInfiniteScroll.ngxInfiniteScrollBooleans.`false`
-import typings.ngxInfiniteScroll.ngxInfiniteScrollDirectiveMod.InfiniteScrollDirective
 import typings.ngxInfiniteScroll.ngxInfiniteScrollStrings.`[infiniteScroll]Comma [infinite-scroll]Comma [data-infinite-scroll]`
 import typings.ngxInfiniteScroll.ngxInfiniteScrollStrings.alwaysCallback
 import typings.ngxInfiniteScroll.ngxInfiniteScrollStrings.fromRoot

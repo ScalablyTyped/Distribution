@@ -19,9 +19,6 @@ open class QuestionBooleanModel protected () extends Question {
   def booleanValue: Any = js.native
   def booleanValue_=(`val`: Any): Unit = js.native
   
-  /*
-    * Obsolete, please use booleanValue property
-    */
   def checkedValue: Any = js.native
   def checkedValue_=(`val`: Any): Unit = js.native
   

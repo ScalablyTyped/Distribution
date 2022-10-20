@@ -57,6 +57,11 @@ trait PortalSummary extends StObject {
   var trustStoreArn: js.UndefOr[ARN] = js.undefined
   
   /**
+    * The ARN of the user access logging settings that is associated with the web portal.
+    */
+  var userAccessLoggingSettingsArn: js.UndefOr[ARN] = js.undefined
+  
+  /**
     * The ARN of the user settings that is associated with the web portal.
     */
   var userSettingsArn: js.UndefOr[ARN] = js.undefined
@@ -109,6 +114,10 @@ object PortalSummary {
     inline def setTrustStoreArn(value: ARN): Self = StObject.set(x, "trustStoreArn", value.asInstanceOf[js.Any])
     
     inline def setTrustStoreArnUndefined: Self = StObject.set(x, "trustStoreArn", js.undefined)
+    
+    inline def setUserAccessLoggingSettingsArn(value: ARN): Self = StObject.set(x, "userAccessLoggingSettingsArn", value.asInstanceOf[js.Any])
+    
+    inline def setUserAccessLoggingSettingsArnUndefined: Self = StObject.set(x, "userAccessLoggingSettingsArn", js.undefined)
     
     inline def setUserSettingsArn(value: ARN): Self = StObject.set(x, "userSettingsArn", value.asInstanceOf[js.Any])
     

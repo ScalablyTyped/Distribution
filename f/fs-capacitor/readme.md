@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-capacitor
 
-Typings are for version 2.0
+Typings are for version 8.0.0
 
 ## Library description:
 Filesystem-buffered, passthrough stream that buffers indefinitely rather than propagate backpressure from downstream consumers.
@@ -24,7 +24,7 @@ Filesystem-buffered, passthrough stream that buffers indefinitely rather than pr
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

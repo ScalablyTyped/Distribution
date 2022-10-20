@@ -27,12 +27,12 @@ trait Service extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * A complex type that contains information about the Route 53 DNS records that you want Cloud Map to create when you register an instance.
+    * A complex type that contains information about the Route 53 DNS records that you want Cloud Map to create when you register an instance.  The record types of a service can only be changed by deleting the service and recreating it with a new Dnsconfig. 
     */
   var DnsConfig: js.UndefOr[typings.awsSdk.clientsServicediscoveryMod.DnsConfig] = js.undefined
   
   /**
-    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
+    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
     */
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.clientsServicediscoveryMod.HealthCheckConfig] = js.undefined
   

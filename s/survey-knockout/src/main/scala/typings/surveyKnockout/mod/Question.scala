@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.surveyKnockout.mod.IQuestion because var conflicts: containsErrors, hasTitle, isCollapsed, isExpanded, isPage, isPanel, isReadOnly, isVisible, maxWidth, minWidth, name, parent, renderWidth, rightIndent, shortcutText, skeletonComponentName, survey, width. Inlined isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 open class Question protected ()
-  extends SurveyElement
+  extends SurveyElement[Question]
      with IValidatorOwner
      with ISurveyErrorOwner
      with IConditionRunner {
@@ -109,7 +109,7 @@ open class Question protected ()
   def clearValue_Unit(): Unit = js.native
   
   /*
-    * A comment to the selected question value. Enable the `hasComment` property to allow users to leave comments.
+    * A comment to the selected question value. Enable the `showCommentArea` property to allow users to leave comments.
     */
   def comment: String = js.native
   
@@ -123,13 +123,13 @@ open class Question protected ()
   def commentPlaceHolder_=(`val`: String): Unit = js.native
   
   /*
-    * A placeholder for the comment area. Applies when the `hasComment` property is `true`.
+    * A placeholder for the comment area. Applies when the `showCommentArea` property is `true`.
     */
   def commentPlaceholder: String = js.native
   def commentPlaceholder_=(`val`: String): Unit = js.native
   
   /*
-    * Specifies a caption displayed above the comment area. Applies when the `hasComment` property is `true`.
+    * Specifies a caption displayed above the comment area. Applies when the `showCommentArea` property is `true`.
     */
   def commentText: String = js.native
   def commentText_=(`val`: String): Unit = js.native
@@ -582,8 +582,6 @@ open class Question protected ()
   
   /* protected */ def onParentChanged(): Unit = js.native
   
-  /* protected */ def onParentQuestionChanged(): Unit = js.native
-  
   /*
     * An event that is raised when the question's ready state has changed (expressions are evaluated, choices are loaded from a web resource specified by the `choicesByUrl` property, etc.).
     * 
@@ -613,15 +611,6 @@ open class Question protected ()
     */
   def page: IPage = js.native
   def page_=(`val`: IPage): Unit = js.native
-  
-  /*
-    * A Dynamic Panel, Dynamic Matrix, or Dropdown Matrix that includes the current question.
-    * 
-    * This property is `null` for standalone questions.
-    */
-  def parentQuestion: Question = js.native
-  
-  var parentQuestionValue: Question = js.native
   
   /*
     * Returns a survey element (panel or page) that contains the question and allows you to move this question to a different survey element.
@@ -710,8 +699,6 @@ open class Question protected ()
   
   /* protected */ def setNewValueInData(newValue: Any): Unit = js.native
   
-  def setParentQuestion(`val`: Question): Unit = js.native
-  
   /* protected */ def setQuestionComment(newValue: String): Unit = js.native
   
   /* protected */ def setQuestionValue(newValue: Any): Unit = js.native
@@ -758,7 +745,7 @@ open class Question protected ()
   def showErrorsBelowQuestion: Boolean = js.native
   
   /*
-    * Specifies whether to display the "Other" choice item. Incompatible with the `hasComment` property.
+    * Specifies whether to display the "Other" choice item. Incompatible with the `showCommentArea` property.
     */
   def showOtherItem: Boolean = js.native
   def showOtherItem_=(`val`: Boolean): Unit = js.native

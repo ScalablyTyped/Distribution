@@ -10,11 +10,11 @@ trait HashId extends StObject {
   
   var theme: Any
   
-  var token: BgLayout
+  var token: Blue
 }
 object HashId {
   
-  inline def apply(hashId: String, theme: Any, token: BgLayout): HashId = {
+  inline def apply(hashId: String, theme: Any, token: Blue): HashId = {
     val __obj = js.Dynamic.literal(hashId = hashId.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashId]
   }
@@ -25,6 +25,6 @@ object HashId {
     
     inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    inline def setToken(value: BgLayout): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Blue): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.ngPackagr.anon
 
-import typings.angularCompilerCli.logicalMod.LogicalProjectPath
-import typings.angularCompilerCli.srcTypesMod.PathSegment
+import typings.angularCompilerCli.srcNgtscFileSystemSrcLogicalMod.LogicalProjectPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

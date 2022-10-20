@@ -61,6 +61,8 @@ object mod {
     
     /* private */ var _mockState: Any = js.native
     
+    /* private */ var _spyOnProperty: Any = js.native
+    
     /* private */ var _spyState: Any = js.native
     
     /* private */ var _typeOf: Any = js.native
@@ -85,8 +87,8 @@ object mod {
     def getMetadata[T](component: T, _refs: Map[T, Double]): (MockMetadata[T, MockMetadataType]) | Null = js.native
     
     def isMockFunction(fn: Any): /* is jest-mock.jest-mock.Mock<jest-mock.jest-mock.UnknownFunction> */ Boolean = js.native
-    def isMockFunction[T /* <: FunctionLike */](fn: SpyInstance[T]): /* is jest-mock.jest-mock.SpyInstance<T> */ Boolean = js.native
-    def isMockFunction[P /* <: js.Array[Any] */, R /* <: Any */](fn: js.Function1[/* args */ P, R]): /* is jest-mock.jest-mock.Mock<(args : P): R> */ Boolean = js.native
+    def isMockFunction[T /* <: FunctionLike */](fn: MockInstance[T]): /* is jest-mock.jest-mock.MockInstance<T> */ Boolean = js.native
+    def isMockFunction[P /* <: js.Array[Any] */, R](fn: js.Function1[/* args */ P, R]): /* is jest-mock.jest-mock.Mock<(args : P): R> */ Boolean = js.native
     
     def mocked[T /* <: js.Object */](source: T): Mocked_[T] = js.native
     def mocked[T /* <: js.Object */](source: T, options: Shallow): Mocked_[T] = js.native
@@ -96,11 +98,8 @@ object mod {
     
     def restoreAllMocks(): Unit = js.native
     
-    def spyOn[T /* <: js.Object */, K /* <: ConstructorLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K): /* import warning: importer.ImportType#apply Failed type conversion: V extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpyInstance<(args : std.ConstructorParameters<V>): std.InstanceType<V>> : never */ js.Any = js.native
-    @JSName("spyOn")
-    def spyOn_get[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K, accessType: get): SpyInstance[js.Function0[V]] = js.native
-    @JSName("spyOn")
-    def spyOn_set[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K, accessType: set): SpyInstance[js.Function1[/* arg */ V, Unit]] = js.native
+    def spyOn[T /* <: js.Object */, K /* <: ConstructorLikeKeys[T] | MethodLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K): /* import warning: importer.ImportType#apply Failed type conversion: V extends jest-mock.jest-mock.ClassLike | jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.Spied<V> : never */ js.Any = js.native
+    def spyOn[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */, A /* <: get | set */](`object`: T, methodKey: K, accessType: A): /* import warning: importer.ImportType#apply Failed type conversion: A extends 'get' ? jest-mock.jest-mock.SpiedGetter<V> : A extends 'set' ? jest-mock.jest-mock.SpiedSetter<V> : never */ js.Any = js.native
   }
   
   inline def fn[T /* <: FunctionLike */](): Mock[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fn")().asInstanceOf[Mock[T]]
@@ -110,17 +109,11 @@ object mod {
   inline def mocked[T_1 /* <: js.Object */](source: T_1, options: `0`): MockedShallow[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("mocked")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MockedShallow[T_1]]
   inline def mocked[T /* <: js.Object */](source: T, options: Shallow): Mocked_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mocked")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mocked_[T]]
   
-  inline def spyOn[T_1 /* <: js.Object */, K_5 /* <: Exclude[
-    /* keyof T_1 */ String, 
-    /* keyof {[ K_3 in keyof T_1 as std.Required<T_1>[K_3] extends jest-mock.jest-mock.ClassLike? K_3 : never ]: T_1[K_3]} */ String
-  ] */, V_1 /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T_1>[K_5] */ js.Any */](`object`: T_1, methodKey: K_5, accessType: set): SpyInstance[js.Function1[/* arg */ V_1, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[SpyInstance[js.Function1[/* arg */ V_1, Unit]]]
-  inline def spyOn[T_2 /* <: js.Object */, K_7 /* <: /* keyof {[ K_6 in keyof T_2 as std.Required<T_2>[K_6] extends jest-mock.jest-mock.ClassLike? K_6 : never ]: T_2[K_6]} */ String */, V_2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T_2>[K_7] */ js.Any */](`object`: T_2, methodKey: K_7): /* import warning: importer.ImportType#apply Failed type conversion: V_2 extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpyInstance<(args : std.ConstructorParameters<V_2>): std.InstanceType<V_2>> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: V_2 extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpyInstance<(args : std.ConstructorParameters<V_2>): std.InstanceType<V_2>> : never */ js.Any]
+  inline def spyOn[T_1 /* <: js.Object */, K_5 /* <: /* keyof {[ K_3 in keyof T_1 as std.Required<T_1>[K_3] extends jest-mock.jest-mock.ClassLike? K_3 : never ]: T_1[K_3]} */ String */, V_1 /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T_1>[K_5] */ js.Any */](`object`: T_1, methodKey: K_5): /* import warning: importer.ImportType#apply Failed type conversion: V_1 extends jest-mock.jest-mock.ClassLike | jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.Spied<V_1> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: V_1 extends jest-mock.jest-mock.ClassLike | jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.Spied<V_1> : never */ js.Any]
   inline def spyOn[T /* <: js.Object */, K_2 /* <: Exclude[
     /* keyof T */ String, 
     /* keyof {[ K in keyof T as std.Required<T>[K] extends jest-mock.jest-mock.ClassLike? K : never ]: T[K]} */ String
-  ] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K_2] */ js.Any */](`object`: T, methodKey: K_2, accessType: get): SpyInstance[js.Function0[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[SpyInstance[js.Function0[V]]]
-  
-  inline def spyOn_T_3K_9V_3[T_3 /* <: js.Object */, K_9 /* <: /* keyof {[ K_8 in keyof T_3 as std.Required<T_3>[K_8] extends jest-mock.jest-mock.FunctionLike? K_8 : never ]: T_3[K_8]} */ String */, V_3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T_3>[K_9] */ js.Any */](`object`: T_3, methodKey: K_9): /* import warning: importer.ImportType#apply Failed type conversion: V_3 extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.SpyInstance<(args : std.Parameters<V_3>): std.ReturnType<V_3>> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: V_3 extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.SpyInstance<(args : std.Parameters<V_3>): std.ReturnType<V_3>> : never */ js.Any]
+  ] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K_2] */ js.Any */, A /* <: set | get */](`object`: T, methodKey: K_2, accessType: A): /* import warning: importer.ImportType#apply Failed type conversion: A extends 'get' ? jest-mock.jest-mock.SpiedGetter<V> : A extends 'set' ? jest-mock.jest-mock.SpiedSetter<V> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: A extends 'get' ? jest-mock.jest-mock.SpiedGetter<V> : A extends 'set' ? jest-mock.jest-mock.SpiedSetter<V> : never */ js.Any]
   
   @js.native
   trait ClassLike
@@ -520,7 +513,30 @@ object mod {
   @js.native
   trait ResolveType[T /* <: FunctionLike */] extends StObject
   
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    T extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.MockInstance<(args : std.ConstructorParameters<T>): std.InstanceType<T>> : T extends jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.MockInstance<(args : std.Parameters<T>): std.ReturnType<T>> : never
+    }}}
+    */
+  @js.native
+  trait Spied[T /* <: ClassLike | FunctionLike */] extends StObject
+  
+  type SpiedClass[T /* <: ClassLike */] = MockInstance[js.Function1[/* args */ ConstructorParameters[T], InstanceType[T]]]
+  
+  type SpiedFunction[T /* <: FunctionLike */] = MockInstance[js.Function1[/* args */ Parameters[T], ReturnType[T]]]
+  
+  type SpiedGetter[T] = MockInstance[js.Function0[T]]
+  
+  type SpiedSetter[T] = MockInstance[js.Function1[/* arg */ T, Unit]]
+  
   type SpyInstance[T /* <: FunctionLike */] = MockInstance[T]
+  
+  @js.native
+  trait UnknownClass
+    extends StObject
+       with Instantiable1[/* args */ Any, Any]
   
   @js.native
   trait UnknownFunction extends StObject {

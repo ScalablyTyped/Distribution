@@ -9,10 +9,10 @@ MongoDB store for express-brute.
 | ------------------ | :-------------: |
 | Full name          | express-brute-mongo |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 28522 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10120.333333333334 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/express-brute-mongo#readme)

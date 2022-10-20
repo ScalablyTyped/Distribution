@@ -8,4 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SymbolNodeCtor
   extends StObject
-     with Instantiable1[/* name */ String, SymbolNode]
+     with Instantiable1[/* name */ String, SymbolNode] {
+  
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  def onUndefinedSymbol(name: String): Any = js.native
+}

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-calendar-picker"
-version := "7.0-dt-20211202Z-698c03"
+version := "7.0-dt-20211202Z-1b41c6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "moment" % "2.29.4-a513be",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221016Z-c1c8c7",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

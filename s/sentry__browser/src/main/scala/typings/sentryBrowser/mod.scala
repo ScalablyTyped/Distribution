@@ -377,7 +377,7 @@ object mod {
   
   @JSImport("@sentry/browser", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.15.0" */ String = js.native
+  val SDK_VERSION: /* "7.16.0" */ String = js.native
   
   @JSImport("@sentry/browser", "Scope")
   @js.native

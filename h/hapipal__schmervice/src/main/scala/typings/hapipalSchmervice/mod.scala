@@ -84,6 +84,8 @@ object mod {
   
   type RegisteredServices = StringDictionary[Service]
   
+  type SchmerviceDecorator = js.Function1[/* all */ js.UndefOr[Boolean | String], RegisteredServices]
+  
   type ServiceCachingOptions = StringDictionary[ServerOptionsCache | (Exclude[ServerMethodOptions, bind])]
   
   type ServiceOptions = Any
@@ -136,27 +138,74 @@ object mod {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      def services(): RegisteredServices = js.native
-      def services(all: Boolean): RegisteredServices = js.native
+      def services(): RegisteredServices
+      def services(all: String): RegisteredServices
+      def services(all: Boolean): RegisteredServices
+      @JSName("services")
+      var services_Original: SchmerviceDecorator
+    }
+    object Request {
+      
+      inline def apply(services: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): Request = {
+        val __obj = js.Dynamic.literal(services = js.Any.fromFunction1(services))
+        __obj.asInstanceOf[Request]
+      }
+      
+      extension [Self <: Request](x: Self) {
+        
+        inline def setServices(value: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): Self = StObject.set(x, "services", js.Any.fromFunction1(value))
+      }
     }
     
-    @js.native
     trait ResponseToolkit extends StObject {
       
-      def services(): RegisteredServices = js.native
-      def services(all: Boolean): RegisteredServices = js.native
+      def services(): RegisteredServices
+      def services(all: String): RegisteredServices
+      def services(all: Boolean): RegisteredServices
+      @JSName("services")
+      var services_Original: SchmerviceDecorator
+    }
+    object ResponseToolkit {
+      
+      inline def apply(services: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): ResponseToolkit = {
+        val __obj = js.Dynamic.literal(services = js.Any.fromFunction1(services))
+        __obj.asInstanceOf[ResponseToolkit]
+      }
+      
+      extension [Self <: ResponseToolkit](x: Self) {
+        
+        inline def setServices(value: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): Self = StObject.set(x, "services", js.Any.fromFunction1(value))
+      }
     }
     
-    @js.native
     trait Server extends StObject {
       
-      def registerService(config: RegisterServiceConfiguration): Unit = js.native
+      def registerService(config: RegisterServiceConfiguration): Unit
       
-      def services(): RegisteredServices = js.native
-      def services(all: Boolean): RegisteredServices = js.native
+      def services(): RegisteredServices
+      def services(all: String): RegisteredServices
+      def services(all: Boolean): RegisteredServices
+      @JSName("services")
+      var services_Original: SchmerviceDecorator
+    }
+    object Server {
+      
+      inline def apply(
+        registerService: RegisterServiceConfiguration => Unit,
+        services: /* all */ js.UndefOr[Boolean | String] => RegisteredServices
+      ): Server = {
+        val __obj = js.Dynamic.literal(registerService = js.Any.fromFunction1(registerService), services = js.Any.fromFunction1(services))
+        __obj.asInstanceOf[Server]
+      }
+      
+      extension [Self <: Server](x: Self) {
+        
+        inline def setRegisterService(value: RegisterServiceConfiguration => Unit): Self = StObject.set(x, "registerService", js.Any.fromFunction1(value))
+        
+        inline def setServices(value: /* all */ js.UndefOr[Boolean | String] => RegisteredServices): Self = StObject.set(x, "services", js.Any.fromFunction1(value))
+      }
     }
   }
 }

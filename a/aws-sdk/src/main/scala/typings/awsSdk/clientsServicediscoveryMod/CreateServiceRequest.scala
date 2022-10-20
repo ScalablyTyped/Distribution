@@ -17,12 +17,12 @@ trait CreateServiceRequest extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * A complex type that contains information about the Amazon Route 53 records that you want Cloud Map to create when you register an instance. 
+    * A complex type that contains information about the Amazon Route 53 records that you want Cloud Map to create when you register an instance. 
     */
   var DnsConfig: js.UndefOr[typings.awsSdk.clientsServicediscoveryMod.DnsConfig] = js.undefined
   
   /**
-    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional Route 53 health check. If you specify settings for a health check, Cloud Map associates the health check with all the Route 53 DNS records that you specify in DnsConfig.  If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both.  For information about the charges for health checks, see Cloud Map Pricing.
+    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional Route 53 health check. If you specify settings for a health check, Cloud Map associates the health check with all the Route 53 DNS records that you specify in DnsConfig.  If you specify a health check configuration, you can specify either HealthCheckCustomConfig or HealthCheckConfig but not both.  For information about the charges for health checks, see Cloud Map Pricing.
     */
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.clientsServicediscoveryMod.HealthCheckConfig] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateServiceRequest extends StObject {
   var HealthCheckCustomConfig: js.UndefOr[typings.awsSdk.clientsServicediscoveryMod.HealthCheckCustomConfig] = js.undefined
   
   /**
-    * The name that you want to assign to the service. If you want Cloud Map to create an SRV record when you register an instance and you're using a system that requires a specific SRV format, such as HAProxy, specify the following for Name:   Start the name with an underscore (_), such as _exampleservice.   End the name with ._protocol, such as ._tcp.   When you register an instance, Cloud Map creates an SRV record and assigns a name to the record by concatenating the service name and the namespace name (for example,  _exampleservice._tcp.example.com).  For services that are accessible by DNS queries, you can't create multiple services with names that differ only by case (such as EXAMPLE and example). Otherwise, these services have the same DNS name and can't be distinguished. However, if you use a namespace that's only accessible by API calls, then you can create services that with names that differ only by case. 
+    * The name that you want to assign to the service.  Do not include sensitive information in the name if the namespace is discoverable by public DNS queries.  If you want Cloud Map to create an SRV record when you register an instance and you're using a system that requires a specific SRV format, such as HAProxy, specify the following for Name:   Start the name with an underscore (_), such as _exampleservice.   End the name with ._protocol, such as ._tcp.   When you register an instance, Cloud Map creates an SRV record and assigns a name to the record by concatenating the service name and the namespace name (for example,  _exampleservice._tcp.example.com).  For services that are accessible by DNS queries, you can't create multiple services with names that differ only by case (such as EXAMPLE and example). Otherwise, these services have the same DNS name and can't be distinguished. However, if you use a namespace that's only accessible by API calls, then you can create services that with names that differ only by case. 
     */
   var Name: ServiceName
   

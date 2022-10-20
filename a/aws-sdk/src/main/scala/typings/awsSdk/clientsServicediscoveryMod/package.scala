@@ -3,7 +3,6 @@ package typings.awsSdk.clientsServicediscoveryMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.HTTP
 import typings.awsSdk.awsSdkStrings.NAMESPACE_ID
-import typings.awsSdk.awsSdkStrings.TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +37,7 @@ type FailureThreshold = Double
   - typings.awsSdk.awsSdkStrings.EQ
   - typings.awsSdk.awsSdkStrings.IN
   - typings.awsSdk.awsSdkStrings.BETWEEN
+  - typings.awsSdk.awsSdkStrings.BEGINS_WITH
   - java.lang.String
 */
 type FilterCondition = _FilterCondition | String
@@ -85,7 +85,13 @@ type MaxResults = Double
 
 type Message = String
 
-type NamespaceFilterName = TYPE | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TYPE
+  - typings.awsSdk.awsSdkStrings.NAME
+  - typings.awsSdk.awsSdkStrings.HTTP_NAME
+  - java.lang.String
+*/
+type NamespaceFilterName = _NamespaceFilterName | String
 
 type NamespaceFilters = js.Array[NamespaceFilter]
 

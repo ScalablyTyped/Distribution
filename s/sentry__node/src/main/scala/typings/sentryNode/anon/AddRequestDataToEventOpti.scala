@@ -1,7 +1,6 @@
 package typings.sentryNode.anon
 
 import typings.sentryUtils.anon.Cookie
-import typings.sentryUtils.anon.Ip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait AddRequestDataToEventOpti extends StObject {
   var flushTimeout: js.UndefOr[Double] = js.undefined
   
   /** Flags controlling whether each type of data should be added to the event */
-  var include: js.UndefOr[Ip] = js.undefined
+  var include: js.UndefOr[typings.sentryUtils.anon.Ip] = js.undefined
 }
 object AddRequestDataToEventOpti {
   
@@ -34,7 +33,7 @@ object AddRequestDataToEventOpti {
     
     inline def setFlushTimeoutUndefined: Self = StObject.set(x, "flushTimeout", js.undefined)
     
-    inline def setInclude(value: Ip): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: typings.sentryUtils.anon.Ip): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
   }

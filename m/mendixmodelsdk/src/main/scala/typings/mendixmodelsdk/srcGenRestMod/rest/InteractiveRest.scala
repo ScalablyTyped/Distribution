@@ -43,6 +43,12 @@ open class InteractiveRest protected () extends Document {
   def containerAsFolderBase_MInteractiveRest: FolderBase = js.native
   
   /**
+    * In version 9.19.0: introduced
+    */
+  def httpBody: String = js.native
+  def httpBody_=(newValue: String): Unit = js.native
+  
+  /**
     * In version 9.18.0: introduced
     */
   def httpConfiguration: HttpConfiguration = js.native

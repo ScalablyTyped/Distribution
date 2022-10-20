@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@blueprintjs/popover2" : "1.7.3"
+      "@blueprintjs/popover2" : "1.7.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@blueprintjs/popover2" : "1.7.3"
+      "@blueprintjs/popover2" : "1.7.4"
     }
   ],
   "compile-devDependencies" : [

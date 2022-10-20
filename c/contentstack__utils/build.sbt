@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "contentstack__utils"
-version := "1.1.2-f8abe1"
+version := "1.1.3-8921fc"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

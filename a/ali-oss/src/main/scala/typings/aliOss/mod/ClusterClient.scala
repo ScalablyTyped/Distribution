@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ClusterClient protected () extends StObject {
   def this(options: ClusterOptions) = this()
   
+  def asyncSignatureUrl(name: String): js.Promise[String] = js.native
+  def asyncSignatureUrl(name: String, options: SignatureUrlOptions): js.Promise[String] = js.native
+  
   def copy(name: String, sourceName: String): js.Promise[CopyAndPutMetaResult] = js.native
   def copy(name: String, sourceName: String, options: CopyObjectOptions): js.Promise[CopyAndPutMetaResult] = js.native
   

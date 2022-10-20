@@ -24,6 +24,8 @@ object paginationMod {
     
     var followOnlyFirstPage: js.UndefOr[Boolean] = js.undefined
     
+    var hideLastPagination: js.UndefOr[Boolean] = js.undefined
+    
     var infoFormatter: js.UndefOr[
         js.Function2[/* activePage */ js.UndefOr[Double], /* lastPage */ js.UndefOr[Double], Unit]
       ] = js.undefined
@@ -66,6 +68,10 @@ object paginationMod {
       inline def setFollowOnlyFirstPage(value: Boolean): Self = StObject.set(x, "followOnlyFirstPage", value.asInstanceOf[js.Any])
       
       inline def setFollowOnlyFirstPageUndefined: Self = StObject.set(x, "followOnlyFirstPage", js.undefined)
+      
+      inline def setHideLastPagination(value: Boolean): Self = StObject.set(x, "hideLastPagination", value.asInstanceOf[js.Any])
+      
+      inline def setHideLastPaginationUndefined: Self = StObject.set(x, "hideLastPagination", js.undefined)
       
       inline def setInfoFormatter(value: (/* activePage */ js.UndefOr[Double], /* lastPage */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "infoFormatter", js.Any.fromFunction2(value))
       

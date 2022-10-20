@@ -246,7 +246,7 @@ open class Base () extends StObject {
   def registerFunctionOnPropertyValueChanged(name: String, func: Any, key: String): Unit = js.native
   
   /*
-    * Register a function that will be called on a property value changed from the propertyNames list.
+    * Registers a function to call when a property value changes.
     */
   def registerPropertyChangedHandlers(propertyNames: Any, handler: Any): Unit = js.native
   def registerPropertyChangedHandlers(propertyNames: Any, handler: Any, key: String): Unit = js.native
@@ -292,7 +292,7 @@ open class Base () extends StObject {
   def unRegisterFunctionOnPropertyValueChanged(name: String, key: String): Unit = js.native
   
   /*
-    * Unregister notification on property value changed for all properties in the propetyNames list.
+    * Unregisters value change event handlers for the specified properties.
     */
   def unregisterPropertyChangedHandlers(propertyNames: Any): Unit = js.native
   def unregisterPropertyChangedHandlers(propertyNames: Any, key: String): Unit = js.native

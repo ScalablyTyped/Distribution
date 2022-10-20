@@ -15,7 +15,18 @@ trait IUserTaskOutcome
      with IOutcome
      with IByNameReferrable {
   
+  /**
+    * In version 9.19.0: deleted
+    */
   val caption: String = js.native
   
+  /**
+    * In version 9.19.0: deleted
+    */
   val name: String = js.native
+  
+  /**
+    * In version 9.19.0: introduced
+    */
+  val value: String = js.native
 }

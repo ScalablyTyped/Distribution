@@ -51,6 +51,8 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
   /**
     * Iterates over all the documents for this cursor using the iterator, callback pattern.
     *
+    * If the iterator returns `false`, iteration will stop.
+    *
     * @param iterator - The iteration callback.
     * @param callback - The end callback.
     */

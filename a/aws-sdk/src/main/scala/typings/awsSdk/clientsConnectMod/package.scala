@@ -68,6 +68,8 @@ type AutoAccept = scala.Boolean
 
 type AvailableNumbersList = js.Array[AvailableNumberSummary]
 
+type AwsRegion = java.lang.String
+
 type Boolean = scala.Boolean
 
 type BotName = java.lang.String
@@ -222,6 +224,8 @@ type Delay = Double
 
 type Description = java.lang.String
 
+type Description250 = java.lang.String
+
 type DirectoryAlias = java.lang.String
 
 type DirectoryId = java.lang.String
@@ -237,6 +241,8 @@ type DirectoryType = _DirectoryType | java.lang.String
 type DirectoryUserId = java.lang.String
 
 type DisplayName = java.lang.String
+
+type DistributionList = js.Array[Distribution]
 
 type Email = java.lang.String
 
@@ -336,6 +342,8 @@ type HoursOfOperationSummaryList = js.Array[HoursOfOperationSummary]
 
 type InboundCallsEnabled = scala.Boolean
 
+type InstanceArn = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INBOUND_CALLS
   - typings.awsSdk.awsSdkStrings.OUTBOUND_CALLS
@@ -353,6 +361,8 @@ type InstanceAttributeType = _InstanceAttributeType | java.lang.String
 type InstanceAttributeValue = java.lang.String
 
 type InstanceId = java.lang.String
+
+type InstanceIdOrArn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATION_IN_PROGRESS
@@ -436,6 +446,8 @@ type MinutesLimit60 = Double
 
 type Name = java.lang.String
 
+type Name128 = java.lang.String
+
 type NextToken = java.lang.String
 
 type NextToken2500 = java.lang.String
@@ -455,6 +467,8 @@ type ParticipantId = java.lang.String
 type ParticipantToken = java.lang.String
 
 type Password = java.lang.String
+
+type Percentage = Double
 
 type PermissionsList = js.Array[SecurityProfilePermission]
 
@@ -979,6 +993,25 @@ type ThresholdValue = Double
 type TimeZone = java.lang.String
 
 type Timestamp_ = js.Date
+
+type TrafficDistributionGroupArn = java.lang.String
+
+type TrafficDistributionGroupId = java.lang.String
+
+type TrafficDistributionGroupIdOrArn = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATION_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.CREATION_FAILED
+  - typings.awsSdk.awsSdkStrings.PENDING_DELETION
+  - typings.awsSdk.awsSdkStrings.DELETION_FAILED
+  - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
+  - java.lang.String
+*/
+type TrafficDistributionGroupStatus = _TrafficDistributionGroupStatus | java.lang.String
+
+type TrafficDistributionGroupSummaryList = js.Array[TrafficDistributionGroupSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GENERAL

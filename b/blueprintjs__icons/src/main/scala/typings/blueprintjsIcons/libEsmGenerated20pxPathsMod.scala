@@ -190,6 +190,10 @@ object libEsmGenerated20pxPathsMod {
   @js.native
   val Asterisk: js.Array[String] = js.native
   
+  @JSImport("@blueprintjs/icons/lib/esm/generated/20px/paths", "At")
+  @js.native
+  val At: js.Array[String] = js.native
+  
   @JSImport("@blueprintjs/icons/lib/esm/generated/20px/paths", "AutomaticUpdates")
   @js.native
   val AutomaticUpdates: js.Array[String] = js.native

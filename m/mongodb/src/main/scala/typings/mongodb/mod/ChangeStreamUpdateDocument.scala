@@ -31,7 +31,7 @@ trait ChangeStreamUpdateDocument[TSchema /* <: Document */]
     */
   var fullDocumentBeforeChange: js.UndefOr[TSchema] = js.undefined
   
-  /** Namespace the update event occured on */
+  /** Namespace the update event occurred on */
   var ns: ChangeStreamNameSpace
   
   /** Describes the type of operation represented in this change notification */

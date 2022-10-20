@@ -1,5 +1,6 @@
 package typings.bull.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.bull.anon.Count
 import typings.bull.anon.CronRepeatOptionsjobIdJob
 import typings.bull.anon.Data
@@ -237,9 +238,9 @@ trait Queue[T] extends EventEmitter {
   def getWaitingCount(): js.Promise[Double] = js.native
   
   /**
-    * Returns Redis clients array which belongs to current Queue
+    * Returns array of workers that are currently working on this queue.
     */
-  def getWorkers(): js.Promise[js.Array[Redis]] = js.native
+  def getWorkers(): js.Promise[js.Array[StringDictionary[String]]] = js.native
   
   /**
     * Returns a promise that resolves with a boolean if queue is paused
@@ -347,7 +348,7 @@ trait Queue[T] extends EventEmitter {
     *
     * @param list String with all redis clients
     */
-  def parseClientList(list: String): js.Array[Redis] = js.native
+  def parseClientList(list: String): js.Array[js.Array[StringDictionary[String]]] = js.native
   
   /**
     * Returns a promise that resolves when the queue is paused.

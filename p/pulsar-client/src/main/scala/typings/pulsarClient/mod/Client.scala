@@ -17,3 +17,14 @@ open class Client protected () extends StObject {
   
   def subscribe(config: ConsumerConfig): js.Promise[Consumer] = js.native
 }
+/* static members */
+object Client {
+  
+  @JSImport("pulsar-client", "Client")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def setLogHandler(
+    logHandler: js.Function4[/* level */ LogLevel, /* file */ String, /* line */ Double, /* message */ String, Unit]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogHandler")(logHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+}

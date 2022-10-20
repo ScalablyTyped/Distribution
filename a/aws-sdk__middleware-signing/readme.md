@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-signing
 
-Typings are for version 3.190.0
+Typings are for version 3.192.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-signing/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-signing) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-signing.svg)](https://www.npmjs.com/packag

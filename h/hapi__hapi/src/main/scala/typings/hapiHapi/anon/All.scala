@@ -8,12 +8,12 @@ trait All extends StObject {
   
   var all: js.UndefOr[Boolean] = js.undefined
   
-  var tags: String | js.Array[String]
+  var tags: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object All {
   
-  inline def apply(tags: String | js.Array[String]): All = {
-    val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
+  inline def apply(): All = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[All]
   }
   
@@ -24,6 +24,8 @@ object All {
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     inline def setTags(value: String | js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
   }

@@ -27,11 +27,14 @@ open class CallMicroflowToRead protected () extends ReadMode {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
-  def microflow: IMicroflow = js.native
+  /**
+    * In version 9.19.0: added optional
+    */
+  def microflow: IMicroflow | Null = js.native
   
-  def microflowQualifiedName: String = js.native
+  def microflowQualifiedName: String | Null = js.native
   
-  def microflow_=(newValue: IMicroflow): Unit = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
 }
 object CallMicroflowToRead {
   

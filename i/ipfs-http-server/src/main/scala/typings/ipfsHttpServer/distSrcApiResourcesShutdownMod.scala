@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -15,6 +16,6 @@ object distSrcApiResourcesShutdownMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def handler(_request: Request, h: ResponseToolkit): ResponseObject = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[ResponseObject]
+    inline def handler(_request: Request[ReqRefDefaults], h: ResponseToolkit[ReqRefDefaults]): ResponseObject = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[ResponseObject]
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bull" : "4.10.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bull" : "4.10.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

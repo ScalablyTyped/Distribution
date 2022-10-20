@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SendQuota extends StObject {
   
   /**
-    * The maximum number of emails that you can send in the current Amazon Web Services Region over a 24-hour period. This value is also called your sending quota.
+    * The maximum number of emails that you can send in the current Amazon Web Services Region over a 24-hour period. A value of -1 signifies an unlimited quota. (This value is also referred to as your sending quota.)
     */
   var Max24HourSend: js.UndefOr[typings.awsSdk.clientsSesv2Mod.Max24HourSend] = js.undefined
   

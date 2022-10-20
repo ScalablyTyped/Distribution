@@ -12,4 +12,6 @@ object libUtilsToJsonMod {
   val ^ : js.Any = js.native
   
   inline def default(`type`: String, jsonld: Any): Html = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`type`.asInstanceOf[js.Any], jsonld.asInstanceOf[js.Any])).asInstanceOf[Html]
+  
+  inline def stringify(data: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

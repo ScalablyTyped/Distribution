@@ -24,6 +24,8 @@ trait Answered extends StObject {
   
   var descriptionUnderInput: String
   
+  var disabled: String
+  
   var expanded: String
   
   var flowRoot: String
@@ -64,6 +66,8 @@ trait Answered extends StObject {
   
   var titleCollapsed: String
   
+  var titleDisabled: String
+  
   var titleExpandable: String
   
   var titleExpanded: String
@@ -90,6 +94,7 @@ object Answered {
     contentLeft: String,
     description: String,
     descriptionUnderInput: String,
+    disabled: String,
     expanded: String,
     flowRoot: String,
     footer: String,
@@ -110,6 +115,7 @@ object Answered {
     title: String,
     titleBar: String,
     titleCollapsed: String,
+    titleDisabled: String,
     titleExpandable: String,
     titleExpanded: String,
     titleLeftRoot: String,
@@ -118,7 +124,7 @@ object Answered {
     titleRequired: String,
     withFrame: String
   ): Answered = {
-    val __obj = js.Dynamic.literal(answered = answered.asInstanceOf[js.Any], asCell = asCell.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], composite = composite.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerBottom = headerBottom.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], headerTop = headerTop.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], invisible = invisible.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleBar = titleBar.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleOnAnswer = titleOnAnswer.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any], withFrame = withFrame.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(answered = answered.asInstanceOf[js.Any], asCell = asCell.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], composite = composite.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerBottom = headerBottom.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], headerTop = headerTop.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], invisible = invisible.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleBar = titleBar.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleDisabled = titleDisabled.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleOnAnswer = titleOnAnswer.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any], withFrame = withFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[Answered]
   }
   
@@ -141,6 +147,8 @@ object Answered {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUnderInput(value: String): Self = StObject.set(x, "descriptionUnderInput", value.asInstanceOf[js.Any])
+    
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
@@ -181,6 +189,8 @@ object Answered {
     inline def setTitleBar(value: String): Self = StObject.set(x, "titleBar", value.asInstanceOf[js.Any])
     
     inline def setTitleCollapsed(value: String): Self = StObject.set(x, "titleCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def setTitleDisabled(value: String): Self = StObject.set(x, "titleDisabled", value.asInstanceOf[js.Any])
     
     inline def setTitleExpandable(value: String): Self = StObject.set(x, "titleExpandable", value.asInstanceOf[js.Any])
     

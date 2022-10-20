@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mongodb-connection-string-url" : "2.5.3"
+      "mongodb-connection-string-url" : "2.5.4"
     }
   ],
   "test-dependencies" : [
     {
-      "mongodb-connection-string-url" : "2.5.3"
+      "mongodb-connection-string-url" : "2.5.4"
     }
   ],
   "compile-devDependencies" : [

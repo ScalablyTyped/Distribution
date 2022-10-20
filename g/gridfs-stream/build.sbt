@@ -1,14 +1,15 @@
 organization := "org.scalablytyped"
 name := "gridfs-stream"
-version := "0.5.0-dt-20201002Z-b5db92"
-scalaVersion := "3.0.1"
+version := "0.5.0-dt-20220818Z-dfa033"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20201020Z-a1f444",
-  "org.scalablytyped" %%% "mongodb" % "3.5-dt-20201120Z-84a65f",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "bson" % "4.7.0-7824ee",
+  "org.scalablytyped" %%% "buffer" % "6.0.3-6a53bb",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-3b479e",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

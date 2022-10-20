@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "bull-board" : "2.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "bull-board" : "2.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

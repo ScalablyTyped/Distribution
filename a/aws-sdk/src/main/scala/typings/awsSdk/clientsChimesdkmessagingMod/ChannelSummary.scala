@@ -12,7 +12,7 @@ trait ChannelSummary extends StObject {
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The time at which the last message in a channel was sent.
+    * The time at which the last persistent message in a channel was sent.
     */
   var LastMessageTimestamp: js.UndefOr[js.Date] = js.undefined
   

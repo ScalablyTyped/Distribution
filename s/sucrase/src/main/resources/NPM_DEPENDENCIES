@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sucrase" : "3.27.0"
+      "sucrase" : "3.28.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sucrase" : "3.27.0"
+      "sucrase" : "3.28.0"
     }
   ],
   "compile-devDependencies" : [

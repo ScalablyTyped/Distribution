@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class QuestionImageModel protected () extends QuestionNonValue {
   def this(name: String) = this()
   
+  /*
+    * The image alt text.
+    */
+  def altText: String = js.native
+  def altText_=(`val`: String): Unit = js.native
+  
   /* protected */ def calculateRenderedMode(): Unit = js.native
   
   /*
@@ -43,9 +49,9 @@ open class QuestionImageModel protected () extends QuestionNonValue {
   def imageWidth: String = js.native
   def imageWidth_=(`val`: String): Unit = js.native
   
-  def locImageLink: LocalizableString = js.native
+  def locAltText: LocalizableString = js.native
   
-  def locText: LocalizableString = js.native
+  def locImageLink: LocalizableString = js.native
   
   def renderedHeight: String = js.native
   
@@ -55,10 +61,4 @@ open class QuestionImageModel protected () extends QuestionNonValue {
   def renderedMode: String = js.native
   
   def renderedWidth: String = js.native
-  
-  /*
-    * The image alt text.
-    */
-  def text: String = js.native
-  def text_=(`val`: String): Unit = js.native
 }

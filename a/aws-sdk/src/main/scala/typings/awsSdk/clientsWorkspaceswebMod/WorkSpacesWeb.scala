@@ -54,6 +54,22 @@ trait WorkSpacesWeb extends Service {
   ): Request[AssociateTrustStoreResponse, AWSError] = js.native
   
   /**
+    * Associates a user access logging settings resource with a web portal.
+    */
+  def associateUserAccessLoggingSettings(): Request[AssociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def associateUserAccessLoggingSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[AssociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Associates a user access logging settings resource with a web portal.
+    */
+  def associateUserAccessLoggingSettings(params: AssociateUserAccessLoggingSettingsRequest): Request[AssociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def associateUserAccessLoggingSettings(
+    params: AssociateUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[AssociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  
+  /**
     * Associates a user settings resource with a web portal.
     */
   def associateUserSettings(): Request[AssociateUserSettingsResponse, AWSError] = js.native
@@ -141,6 +157,22 @@ trait WorkSpacesWeb extends Service {
   ): Request[CreateTrustStoreResponse, AWSError] = js.native
   
   /**
+    * Creates a user access logging settings resource that can be associated with a web portal.
+    */
+  def createUserAccessLoggingSettings(): Request[CreateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def createUserAccessLoggingSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[CreateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Creates a user access logging settings resource that can be associated with a web portal.
+    */
+  def createUserAccessLoggingSettings(params: CreateUserAccessLoggingSettingsRequest): Request[CreateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def createUserAccessLoggingSettings(
+    params: CreateUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[CreateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  
+  /**
     * Creates a user settings resource that can be associated with a web portal. Once associated with a web portal, user settings control how users can transfer data between a streaming session and the their local devices. 
     */
   def createUserSettings(): Request[CreateUserSettingsResponse, AWSError] = js.native
@@ -225,6 +257,22 @@ trait WorkSpacesWeb extends Service {
   ): Request[DeleteTrustStoreResponse, AWSError] = js.native
   
   /**
+    * Deletes user access logging settings.
+    */
+  def deleteUserAccessLoggingSettings(): Request[DeleteUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def deleteUserAccessLoggingSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserAccessLoggingSettingsResponse, Unit]
+  ): Request[DeleteUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Deletes user access logging settings.
+    */
+  def deleteUserAccessLoggingSettings(params: DeleteUserAccessLoggingSettingsRequest): Request[DeleteUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def deleteUserAccessLoggingSettings(
+    params: DeleteUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserAccessLoggingSettingsResponse, Unit]
+  ): Request[DeleteUserAccessLoggingSettingsResponse, AWSError] = js.native
+  
+  /**
     * Deletes user settings.
     */
   def deleteUserSettings(): Request[DeleteUserSettingsResponse, AWSError] = js.native
@@ -279,6 +327,22 @@ trait WorkSpacesWeb extends Service {
     params: DisassociateTrustStoreRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateTrustStoreResponse, Unit]
   ): Request[DisassociateTrustStoreResponse, AWSError] = js.native
+  
+  /**
+    * Disassociates user access logging settings from a web portal.
+    */
+  def disassociateUserAccessLoggingSettings(): Request[DisassociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def disassociateUserAccessLoggingSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[DisassociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Disassociates user access logging settings from a web portal.
+    */
+  def disassociateUserAccessLoggingSettings(params: DisassociateUserAccessLoggingSettingsRequest): Request[DisassociateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def disassociateUserAccessLoggingSettings(
+    params: DisassociateUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[DisassociateUserAccessLoggingSettingsResponse, AWSError] = js.native
   
   /**
     * Disassociates user settings from a web portal.
@@ -395,6 +459,20 @@ trait WorkSpacesWeb extends Service {
   ): Request[GetTrustStoreCertificateResponse, AWSError] = js.native
   
   /**
+    * Gets user access logging settings.
+    */
+  def getUserAccessLoggingSettings(): Request[GetUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def getUserAccessLoggingSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetUserAccessLoggingSettingsResponse, Unit]): Request[GetUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Gets user access logging settings.
+    */
+  def getUserAccessLoggingSettings(params: GetUserAccessLoggingSettingsRequest): Request[GetUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def getUserAccessLoggingSettings(
+    params: GetUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUserAccessLoggingSettingsResponse, Unit]
+  ): Request[GetUserAccessLoggingSettingsResponse, AWSError] = js.native
+  
+  /**
     * Gets user settings.
     */
   def getUserSettings(): Request[GetUserSettingsResponse, AWSError] = js.native
@@ -507,6 +585,20 @@ trait WorkSpacesWeb extends Service {
   ): Request[ListTrustStoresResponse, AWSError] = js.native
   
   /**
+    * Retrieves a list of user access logging settings.
+    */
+  def listUserAccessLoggingSettings(): Request[ListUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def listUserAccessLoggingSettings(callback: js.Function2[/* err */ AWSError, /* data */ ListUserAccessLoggingSettingsResponse, Unit]): Request[ListUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Retrieves a list of user access logging settings.
+    */
+  def listUserAccessLoggingSettings(params: ListUserAccessLoggingSettingsRequest): Request[ListUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def listUserAccessLoggingSettings(
+    params: ListUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListUserAccessLoggingSettingsResponse, Unit]
+  ): Request[ListUserAccessLoggingSettingsResponse, AWSError] = js.native
+  
+  /**
     * Retrieves a list of user settings.
     */
   def listUserSettings(): Request[ListUserSettingsResponse, AWSError] = js.native
@@ -617,6 +709,22 @@ trait WorkSpacesWeb extends Service {
     params: UpdateTrustStoreRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTrustStoreResponse, Unit]
   ): Request[UpdateTrustStoreResponse, AWSError] = js.native
+  
+  /**
+    * Updates the user access logging settings.
+    */
+  def updateUserAccessLoggingSettings(): Request[UpdateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def updateUserAccessLoggingSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[UpdateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  /**
+    * Updates the user access logging settings.
+    */
+  def updateUserAccessLoggingSettings(params: UpdateUserAccessLoggingSettingsRequest): Request[UpdateUserAccessLoggingSettingsResponse, AWSError] = js.native
+  def updateUserAccessLoggingSettings(
+    params: UpdateUserAccessLoggingSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserAccessLoggingSettingsResponse, Unit]
+  ): Request[UpdateUserAccessLoggingSettingsResponse, AWSError] = js.native
   
   /**
     * Updates the user settings.

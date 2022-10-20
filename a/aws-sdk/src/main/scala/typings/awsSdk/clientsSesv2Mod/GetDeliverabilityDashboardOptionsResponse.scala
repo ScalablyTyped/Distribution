@@ -27,7 +27,7 @@ trait GetDeliverabilityDashboardOptionsResponse extends StObject {
   var PendingExpirationSubscribedDomains: js.UndefOr[DomainDeliverabilityTrackingOptions] = js.undefined
   
   /**
-    * The date, in Unix time format, when your current subscription to the Deliverability dashboard is scheduled to expire, if your subscription is scheduled to expire at the end of the current calendar month. This value is null if you have an active subscription that isn’t due to expire at the end of the month.
+    * The date when your current subscription to the Deliverability dashboard is scheduled to expire, if your subscription is scheduled to expire at the end of the current calendar month. This value is null if you have an active subscription that isn’t due to expire at the end of the month.
     */
   var SubscriptionExpiryDate: js.UndefOr[js.Date] = js.undefined
 }

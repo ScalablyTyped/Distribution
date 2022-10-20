@@ -12,7 +12,7 @@ trait StartImportResponse extends StObject {
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The destination event data store. 
+    *  The ARN of the destination event data store. 
     */
   var Destinations: js.UndefOr[ImportDestinations] = js.undefined
   
@@ -27,7 +27,7 @@ trait StartImportResponse extends StObject {
   var ImportId: js.UndefOr[UUID] = js.undefined
   
   /**
-    *  The source S3 bucket. 
+    *  The source S3 bucket for the import. 
     */
   var ImportSource: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ImportSource] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__dependency-extraction-webpack-plugin
 
-Typings are for version 4.2.0
+Typings are for version 4.3.0
 
 ## Library description:
 Extract WordPress script dependencies from webpack bundles.

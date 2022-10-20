@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-screens"
-version := "3.18.2-1738ef"
+version := "3.18.2-2c34ad"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,11 +9,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20220819Z-a0e65e",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221016Z-c1c8c7",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.7.1-36cd52",
-  "org.scalablytyped" %%% "react-native-reanimated" % "2.11.0-1b07dc",
-  "org.scalablytyped" %%% "react-native-safe-area-context" % "4.3.4-76de3d",
-  "org.scalablytyped" %%% "react-navigation" % "4.4.4-989ebf",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.7.1-aba632",
+  "org.scalablytyped" %%% "react-native-reanimated" % "2.11.0-703e40",
+  "org.scalablytyped" %%% "react-native-safe-area-context" % "4.3.4-d58464",
+  "org.scalablytyped" %%% "react-navigation" % "4.4.4-fbaff2",
   "org.scalablytyped" %%% "react-navigation__core" % "6.4.0-15a941",
   "org.scalablytyped" %%% "react-navigation__routers" % "6.1.3-7a926d",
   "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-dc4815",

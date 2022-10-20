@@ -5,9 +5,12 @@ import typings.hapiCookie.anon.Clear
 import typings.hapiCookie.anon.RedirectTo
 import typings.hapiCookie.anon.ServerStateCookieOptionsn
 import typings.hapiCookie.hapiCookieStrings.cookie
+import typings.hapiHapi.mod.AppCredentials
 import typings.hapiHapi.mod.AuthCredentials
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
+import typings.hapiHapi.mod.UserCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,7 +91,7 @@ object mod extends Shortcut {
       
       inline def setRedirectTo(value: String | RedirectToFunction): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
-      inline def setRedirectToFunction1(value: /* request */ js.UndefOr[Request] => String): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      inline def setRedirectToFunction1(value: /* request */ js.UndefOr[Request[ReqRefDefaults]] => String): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
       inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
@@ -97,24 +100,24 @@ object mod extends Shortcut {
       inline def setRequestDecoratorNameUndefined: Self = StObject.set(x, "requestDecoratorName", js.undefined)
       
       inline def setValidateFunc(
-        value: (/* request */ js.UndefOr[Request], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse]
+        value: (/* request */ js.UndefOr[Request[ReqRefDefaults]], /* session */ js.UndefOr[js.Object]) => js.Promise[ValidateResponse]
       ): Self = StObject.set(x, "validateFunc", js.Any.fromFunction2(value))
       
       inline def setValidateFuncUndefined: Self = StObject.set(x, "validateFunc", js.undefined)
     }
   }
   
-  type RedirectToFunction = js.Function1[/* request */ js.UndefOr[Request], String]
+  type RedirectToFunction = js.Function1[/* request */ js.UndefOr[Request[ReqRefDefaults]], String]
   
   type ValidateFunction = js.Function2[
-    /* request */ js.UndefOr[Request], 
+    /* request */ js.UndefOr[Request[ReqRefDefaults]], 
     /* session */ js.UndefOr[js.Object], 
     js.Promise[ValidateResponse]
   ]
   
   trait ValidateResponse extends StObject {
     
-    var credentials: js.UndefOr[AuthCredentials] = js.undefined
+    var credentials: js.UndefOr[AuthCredentials[UserCredentials, AppCredentials]] = js.undefined
     
     var valid: Boolean
   }
@@ -127,7 +130,7 @@ object mod extends Shortcut {
     
     extension [Self <: ValidateResponse](x: Self) {
       
-      inline def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AuthCredentials[UserCredentials, AppCredentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       

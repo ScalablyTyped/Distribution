@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testing-library__vue"
-version := "6.6.1-d2e5a2"
+version := "6.6.1-af00f6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel__parser" % "7.19.4-d9b25c",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-1978dd",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "pretty-format" % "29.2.0-869c0c",
+  "org.scalablytyped" %%% "pretty-format" % "29.2.1-4e241c",
   "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-5da30d",
+  "org.scalablytyped" %%% "testing-library__dom" % "8.19.0-b2e0cb",
   "org.scalablytyped" %%% "vue" % "3.2.41-e68121",
   "org.scalablytyped" %%% "vue__compiler-core" % "3.2.41-88c8af",
   "org.scalablytyped" %%% "vue__reactivity" % "3.2.41-669f2b",

@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntityRef because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsMemberRef, containerAsParameter */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityRef")
+- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntityRef because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsParameter */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityRef")
 @js.native
 open class EntityRef protected () extends Element[IModel] {
   def this(
@@ -49,8 +49,6 @@ open class EntityRef protected () extends Element[IModel] {
   def containerAsEntityWidget: EntityWidget = js.native
   
   def containerAsMemberRef: MemberRef = js.native
-  @JSName("containerAsMemberRef")
-  val containerAsMemberRef_FEntityRef: IMemberRef = js.native
   
   def containerAsNewButton: NewButton = js.native
   

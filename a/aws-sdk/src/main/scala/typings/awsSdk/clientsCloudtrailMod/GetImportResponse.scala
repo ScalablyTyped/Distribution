@@ -12,7 +12,7 @@ trait GetImportResponse extends StObject {
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The destination event data store. 
+    *  The ARN of the destination event data store. 
     */
   var Destinations: js.UndefOr[ImportDestinations] = js.undefined
   
@@ -32,7 +32,7 @@ trait GetImportResponse extends StObject {
   var ImportSource: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ImportSource] = js.undefined
   
   /**
-    *  Provides statistics for the import. 
+    *  Provides statistics for the import. CloudTrail does not update import statistics in real-time. Returned values for parameters such as EventsCompleted may be lower than the actual value, because CloudTrail updates statistics incrementally over the course of the import. 
     */
   var ImportStatistics: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ImportStatistics] = js.undefined
   

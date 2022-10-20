@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.surveyKnockout.mod.IPanel because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, parent, shortcutText, skeletonComponentName. Inlined getChildrenLayoutType, getQuestionTitleLocation, getQuestionStartIndex, elementWidthChanged, indexOf, elements, ensureRowsVisibility */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 open class PanelModelBase ()
-  extends SurveyElement
+  extends SurveyElement[Question]
      with IConditionRunner
      with ISurveyErrorOwner {
   def this(name: String) = this()
@@ -174,6 +174,8 @@ open class PanelModelBase ()
   
   def getFirstQuestionToFocus(): Question = js.native
   def getFirstQuestionToFocus(withError: Boolean): Question = js.native
+  def getFirstQuestionToFocus(withError: Boolean, ignoreCollapseState: Boolean): Question = js.native
+  def getFirstQuestionToFocus(withError: Unit, ignoreCollapseState: Boolean): Question = js.native
   
   def getIsPageVisible(exceptionQuestion: IQuestion): Boolean = js.native
   

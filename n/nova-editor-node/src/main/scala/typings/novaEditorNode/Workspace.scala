@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Workspace extends StObject {
   
-  val activeTextEditor: TextEditor = js.native
+  val activeTextEditor: js.UndefOr[TextEditor | Null] = js.native
   
   val config: Configuration = js.native
   

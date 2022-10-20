@@ -17,7 +17,7 @@ trait CreatePublicDnsNamespaceRequest extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * The name that you want to assign to this namespace.
+    * The name that you want to assign to this namespace.  Do not include sensitive information in the name. The name is publicly available using DNS queries. 
     */
   var Name: NamespaceNamePublic
   

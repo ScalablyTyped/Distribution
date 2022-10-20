@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-backend-wasm
 
-Typings are for version 3.20.0
+Typings are for version 4.0.0
 
 ## Library description:
 This package adds a WebAssembly backend to TensorFlow.js. It currently supports the following models from our [models](https://github.com/tensorflow/tfjs-models) repo: - BlazeFace - BodyPix - CocoSSD - Face landmarks detection - HandPose - KNN classifier

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rdf-dataset-ext"
-version := "1.0-dt-20220216Z-423e99"
+version := "1.0-dt-20220216Z-2b5c4f"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-82a29b",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20220717Z-c22c87",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "rdfjs__types" % "1.1.0-496fa3",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20220717Z-a8aed8",
   "org.scalablytyped" %%% "safe-buffer" % "5.2.1-823b4d",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

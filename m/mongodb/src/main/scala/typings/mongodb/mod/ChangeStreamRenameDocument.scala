@@ -12,7 +12,7 @@ trait ChangeStreamRenameDocument
      with ChangeStreamDocumentCollectionUUID
      with ChangeStreamDocument[Any] {
   
-  /** The "from" namespace that the rename occured on */
+  /** The "from" namespace that the rename occurred on */
   var ns: ChangeStreamNameSpace
   
   /** Describes the type of operation represented in this change notification */

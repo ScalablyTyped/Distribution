@@ -42,7 +42,7 @@ trait UpdateSlackChannelConfigurationResult extends StObject {
   var notifyOnResolveCase: js.UndefOr[booleanValue] = js.undefined
   
   /**
-    * The team ID in Slack. This ID uniquely identifies a Slack workspace.
+    * The team ID in Slack. This ID uniquely identifies a Slack workspace, such as T012ABCDEFG.
     */
   var teamId: js.UndefOr[typings.awsSdk.clientsSupportappMod.teamId] = js.undefined
 }

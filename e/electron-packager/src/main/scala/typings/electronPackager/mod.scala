@@ -1,10 +1,12 @@
 package typings.electronPackager
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.asar.mod.CreateOptions
+import typings.electronAsar.mod.CreateOptions
 import typings.electronNotarize.libTypesMod.LegacyNotarizeCredentials
 import typings.electronNotarize.libTypesMod.NotaryToolCredentials
 import typings.electronNotarize.libTypesMod.TransporterOptions
+import typings.electronOsxSign.distEsmTypesMod.PerFileSignOptions
+import typings.electronOsxSign.distEsmTypesMod.SigningDistributionType
 import typings.electronPackager.anon.Tool
 import typings.electronPackager.anon.`0`
 import typings.electronPackager.electronPackagerBooleans.`false`
@@ -162,6 +164,7 @@ object mod {
     - typings.electronPackager.electronPackagerStrings.armv7l
     - typings.electronPackager.electronPackagerStrings.arm64
     - typings.electronPackager.electronPackagerStrings.mips64el
+    - typings.electronPackager.electronPackagerStrings.universal
   */
   trait OfficialArch extends StObject
   object OfficialArch {
@@ -173,6 +176,8 @@ object mod {
     inline def ia32: typings.electronPackager.electronPackagerStrings.ia32 = "ia32".asInstanceOf[typings.electronPackager.electronPackagerStrings.ia32]
     
     inline def mips64el: typings.electronPackager.electronPackagerStrings.mips64el = "mips64el".asInstanceOf[typings.electronPackager.electronPackagerStrings.mips64el]
+    
+    inline def universal: typings.electronPackager.electronPackagerStrings.universal = "universal".asInstanceOf[typings.electronPackager.electronPackagerStrings.universal]
     
     inline def x64: typings.electronPackager.electronPackagerStrings.x64 = "x64".asInstanceOf[typings.electronPackager.electronPackagerStrings.x64]
   }
@@ -494,11 +499,10 @@ object mod {
     /**
       * If present, signs macOS target apps when the host platform is macOS and XCode is installed.
       * When the value is `true`, pass default configuration to the signing module. See
-      * [electron-osx-sign](https://npm.im/electron-osx-sign#opts---options) for sub-option descriptions and
+      * [@electron/osx-sign](https://npm.im/@electron/osx-sign#opts---options) for sub-option descriptions and
       * their defaults. Options include, but are not limited to:
       * - `identity` (*string*): The identity used when signing the package via `codesign`.
-      * - `entitlements` (*string*): The path to the 'parent' entitlements.
-      * - `entitlements-inherit` (*string*): The path to the 'child' entitlements.
+      * - `binaries` (*array<string>*): Path to additional binaries that will be signed along with built-ins of Electron/
       *
       * @category macOS
       */
@@ -815,45 +819,29 @@ object mod {
     */
   type OsxNotarizeOptions = (Tool & NotarizeLegacyOptions) | (`0` & NotaryToolCredentials)
   
-  /** See the documentation for [`electron-osx-sign`](https://npm.im/electron-osx-sign#opts) for details. */
-  /* Inlined std.Omit<electron-osx-sign.electron-osx-sign.SignOptions, 'app' | 'binaries' | 'platform' | 'version'> */
+  /** See the documentation for [`@electron/osx-sign`](https://npm.im/@electron/osx-sign#opts) for details. */
+  /* Inlined std.Omit<@electron/osx-sign.@electron/osx-sign/dist/esm/types.SignOptions, 'app' | 'binaries' | 'platform' | 'version'> */
   trait OsxSignOptions extends StObject {
-    
-    var entitlements: js.UndefOr[String] = js.undefined
-    
-    var `entitlements-inherit`: js.UndefOr[String] = js.undefined
-    
-    var `entitlements-loginhelper`: js.UndefOr[String] = js.undefined
-    
-    var entitlementsForFile: js.UndefOr[
-        js.Function2[/* file */ String, /* codeSignArgs */ js.Array[String], String | Null]
-      ] = js.undefined
-    
-    var `gatekeeper-assess`: js.UndefOr[Boolean] = js.undefined
-    
-    var hardenedRuntime: js.UndefOr[Boolean] = js.undefined
     
     var identity: js.UndefOr[String] = js.undefined
     
-    var `identity-validation`: js.UndefOr[Boolean] = js.undefined
+    var identityValidation: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String | (js.Function1[/* file */ String, Boolean])] = js.undefined
+    var ignore: js.UndefOr[String | js.Array[String] | (js.Function1[/* file */ String, Boolean])] = js.undefined
     
     var keychain: js.UndefOr[String] = js.undefined
     
-    var `pre-auto-entitlements`: js.UndefOr[Boolean] = js.undefined
+    var optionsForFile: js.UndefOr[js.Function1[/* filePath */ String, PerFileSignOptions]] = js.undefined
     
-    var `pre-embed-provisioning-profile`: js.UndefOr[Boolean] = js.undefined
+    var preAutoEntitlements: js.UndefOr[Boolean] = js.undefined
     
-    var `provisioning-profile`: js.UndefOr[String] = js.undefined
+    var preEmbedProvisioningProfile: js.UndefOr[Boolean] = js.undefined
     
-    var requirements: js.UndefOr[String] = js.undefined
+    var provisioningProfile: js.UndefOr[String] = js.undefined
     
-    var `signature-flags`: js.UndefOr[String | (js.Function1[/* file */ String, js.Array[String]])] = js.undefined
+    var strictVerify: js.UndefOr[Boolean] = js.undefined
     
-    var `signature-size`: js.UndefOr[Double] = js.undefined
-    
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[SigningDistributionType] = js.undefined
   }
   object OsxSignOptions {
     
@@ -864,75 +852,47 @@ object mod {
     
     extension [Self <: OsxSignOptions](x: Self) {
       
-      inline def setEntitlements(value: String): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
-      
-      inline def `setEntitlements-inherit`(value: String): Self = StObject.set(x, "entitlements-inherit", value.asInstanceOf[js.Any])
-      
-      inline def `setEntitlements-inheritUndefined`: Self = StObject.set(x, "entitlements-inherit", js.undefined)
-      
-      inline def `setEntitlements-loginhelper`(value: String): Self = StObject.set(x, "entitlements-loginhelper", value.asInstanceOf[js.Any])
-      
-      inline def `setEntitlements-loginhelperUndefined`: Self = StObject.set(x, "entitlements-loginhelper", js.undefined)
-      
-      inline def setEntitlementsForFile(value: (/* file */ String, /* codeSignArgs */ js.Array[String]) => String | Null): Self = StObject.set(x, "entitlementsForFile", js.Any.fromFunction2(value))
-      
-      inline def setEntitlementsForFileUndefined: Self = StObject.set(x, "entitlementsForFile", js.undefined)
-      
-      inline def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
-      
-      inline def `setGatekeeper-assess`(value: Boolean): Self = StObject.set(x, "gatekeeper-assess", value.asInstanceOf[js.Any])
-      
-      inline def `setGatekeeper-assessUndefined`: Self = StObject.set(x, "gatekeeper-assess", js.undefined)
-      
-      inline def setHardenedRuntime(value: Boolean): Self = StObject.set(x, "hardenedRuntime", value.asInstanceOf[js.Any])
-      
-      inline def setHardenedRuntimeUndefined: Self = StObject.set(x, "hardenedRuntime", js.undefined)
-      
       inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
-      
-      inline def `setIdentity-validation`(value: Boolean): Self = StObject.set(x, "identity-validation", value.asInstanceOf[js.Any])
-      
-      inline def `setIdentity-validationUndefined`: Self = StObject.set(x, "identity-validation", js.undefined)
       
       inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      inline def setIgnore(value: String | (js.Function1[/* file */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIdentityValidation(value: Boolean): Self = StObject.set(x, "identityValidation", value.asInstanceOf[js.Any])
+      
+      inline def setIdentityValidationUndefined: Self = StObject.set(x, "identityValidation", js.undefined)
+      
+      inline def setIgnore(value: String | js.Array[String] | (js.Function1[/* file */ String, Boolean])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreFunction1(value: /* file */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
+      
       inline def setKeychain(value: String): Self = StObject.set(x, "keychain", value.asInstanceOf[js.Any])
       
       inline def setKeychainUndefined: Self = StObject.set(x, "keychain", js.undefined)
       
-      inline def `setPre-auto-entitlements`(value: Boolean): Self = StObject.set(x, "pre-auto-entitlements", value.asInstanceOf[js.Any])
+      inline def setOptionsForFile(value: /* filePath */ String => PerFileSignOptions): Self = StObject.set(x, "optionsForFile", js.Any.fromFunction1(value))
       
-      inline def `setPre-auto-entitlementsUndefined`: Self = StObject.set(x, "pre-auto-entitlements", js.undefined)
+      inline def setOptionsForFileUndefined: Self = StObject.set(x, "optionsForFile", js.undefined)
       
-      inline def `setPre-embed-provisioning-profile`(value: Boolean): Self = StObject.set(x, "pre-embed-provisioning-profile", value.asInstanceOf[js.Any])
+      inline def setPreAutoEntitlements(value: Boolean): Self = StObject.set(x, "preAutoEntitlements", value.asInstanceOf[js.Any])
       
-      inline def `setPre-embed-provisioning-profileUndefined`: Self = StObject.set(x, "pre-embed-provisioning-profile", js.undefined)
+      inline def setPreAutoEntitlementsUndefined: Self = StObject.set(x, "preAutoEntitlements", js.undefined)
       
-      inline def `setProvisioning-profile`(value: String): Self = StObject.set(x, "provisioning-profile", value.asInstanceOf[js.Any])
+      inline def setPreEmbedProvisioningProfile(value: Boolean): Self = StObject.set(x, "preEmbedProvisioningProfile", value.asInstanceOf[js.Any])
       
-      inline def `setProvisioning-profileUndefined`: Self = StObject.set(x, "provisioning-profile", js.undefined)
+      inline def setPreEmbedProvisioningProfileUndefined: Self = StObject.set(x, "preEmbedProvisioningProfile", js.undefined)
       
-      inline def setRequirements(value: String): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+      inline def setProvisioningProfile(value: String): Self = StObject.set(x, "provisioningProfile", value.asInstanceOf[js.Any])
       
-      inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+      inline def setProvisioningProfileUndefined: Self = StObject.set(x, "provisioningProfile", js.undefined)
       
-      inline def `setSignature-flags`(value: String | (js.Function1[/* file */ String, js.Array[String]])): Self = StObject.set(x, "signature-flags", value.asInstanceOf[js.Any])
+      inline def setStrictVerify(value: Boolean): Self = StObject.set(x, "strictVerify", value.asInstanceOf[js.Any])
       
-      inline def `setSignature-flagsFunction1`(value: /* file */ String => js.Array[String]): Self = StObject.set(x, "signature-flags", js.Any.fromFunction1(value))
+      inline def setStrictVerifyUndefined: Self = StObject.set(x, "strictVerify", js.undefined)
       
-      inline def `setSignature-flagsUndefined`: Self = StObject.set(x, "signature-flags", js.undefined)
-      
-      inline def `setSignature-size`(value: Double): Self = StObject.set(x, "signature-size", value.asInstanceOf[js.Any])
-      
-      inline def `setSignature-sizeUndefined`: Self = StObject.set(x, "signature-size", js.undefined)
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: SigningDistributionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }

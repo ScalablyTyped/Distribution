@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "fastify__fast-json-stringify-compiler"
-version := "4.1.0-4e8468"
+version := "4.1.0-8dd870"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-6f26a9",
-  "org.scalablytyped" %%% "fast-json-stringify" % "5.3.0-aebbc1",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "re2" % "1.17.7-e9900d",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-cccf4d",
+  "org.scalablytyped" %%% "fast-json-stringify" % "5.4.0-e07a11",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "re2" % "1.17.7-fadabd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-d613cd")
 publishArtifact in packageDoc := false

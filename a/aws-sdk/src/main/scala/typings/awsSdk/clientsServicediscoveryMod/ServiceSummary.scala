@@ -22,7 +22,7 @@ trait ServiceSummary extends StObject {
   var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
-    * Information about the Route 53 DNS records that you want Cloud Map to create when you register an instance.
+    * Information about the Route 53 DNS records that you want Cloud Map to create when you register an instance.
     */
   var DnsConfig: js.UndefOr[typings.awsSdk.clientsServicediscoveryMod.DnsConfig] = js.undefined
   

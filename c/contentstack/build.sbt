@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "contentstack"
-version := "3.15.3-9494fc"
+version := "3.15.4-32896b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "contentstack__utils" % "1.1.2-f8abe1",
+  "org.scalablytyped" %%% "contentstack__utils" % "1.1.3-8921fc",
   "org.scalablytyped" %%% "css-select" % "5.1.0-661c34",
   "org.scalablytyped" %%% "css-what" % "6.1.0-08e82a",
   "org.scalablytyped" %%% "node-html-parser" % "6.1.1-c87a1b",

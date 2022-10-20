@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePhoneNumberResponse extends StObject {
   
   /**
-    * Information about a phone number that's been claimed to your Amazon Connect instance.
+    * Information about a phone number that's been claimed to your Amazon Connect instance or traffic distribution group.
     */
   var ClaimedPhoneNumberSummary: js.UndefOr[typings.awsSdk.clientsConnectMod.ClaimedPhoneNumberSummary] = js.undefined
 }

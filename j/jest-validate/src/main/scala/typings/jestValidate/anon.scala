@@ -1,30 +1,28 @@
 package typings.jestValidate
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.jestValidate.mod.DeprecatedOptions
-import typings.yargs.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Dicts
-    extends StObject
-       with /* s */ StringDictionary[Options] {
+  trait DeprecationEntries extends StObject {
     
-    var deprecationEntries: DeprecatedOptions
+    var deprecationEntries: js.UndefOr[DeprecatedOptions] = js.undefined
   }
-  object Dicts {
+  object DeprecationEntries {
     
-    inline def apply(deprecationEntries: DeprecatedOptions): Dicts = {
-      val __obj = js.Dynamic.literal(deprecationEntries = deprecationEntries.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Dicts]
+    inline def apply(): DeprecationEntries = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DeprecationEntries]
     }
     
-    extension [Self <: Dicts](x: Self) {
+    extension [Self <: DeprecationEntries](x: Self) {
       
       inline def setDeprecationEntries(value: DeprecatedOptions): Self = StObject.set(x, "deprecationEntries", value.asInstanceOf[js.Any])
+      
+      inline def setDeprecationEntriesUndefined: Self = StObject.set(x, "deprecationEntries", js.undefined)
     }
   }
   

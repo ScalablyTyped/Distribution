@@ -48,7 +48,7 @@ trait Typeofethers extends StObject {
   
   val utils: Typeofutils = js.native
   
-  val version: /* "ethers/5.7.1" */ String = js.native
+  val version: /* "ethers/5.7.2" */ String = js.native
   
   val wordlists: Any = js.native
 }

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "styled-components"
-version := "5.3.6-d543be"
+version := "5.3.6-de9df2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221016Z-c1c8c7",
-  "org.scalablytyped" %%% "react-primitives" % "0.6-dt-20211202Z-796a9a",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
+  "org.scalablytyped" %%% "react-primitives" % "0.6-dt-20211202Z-524cd1",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "stylis" % "4.0-dt-20211202Z-1a494d")

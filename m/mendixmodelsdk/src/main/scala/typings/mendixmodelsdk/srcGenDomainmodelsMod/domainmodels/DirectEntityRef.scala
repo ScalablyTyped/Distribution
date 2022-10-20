@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntityRef because Already inherited
-- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IDirectEntityRef because var conflicts: containerAsMemberRef, containerAsParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.DirectEntityRef")
+- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IDirectEntityRef because var conflicts: containerAsParameter, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.DirectEntityRef")
 @js.native
 open class DirectEntityRef protected () extends EntityRef {
   def this(

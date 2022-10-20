@@ -16,8 +16,6 @@ trait IEntityRef
   extends StObject
      with IElement {
   
-  val containerAsMemberRef: IMemberRef = js.native
-  
   val containerAsParameter: IParameter = js.native
   
   @JSName("model")

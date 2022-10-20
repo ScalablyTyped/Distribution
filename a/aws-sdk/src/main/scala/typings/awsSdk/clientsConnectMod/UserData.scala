@@ -42,7 +42,7 @@ trait UserData extends StObject {
   var Status: js.UndefOr[AgentStatusReference] = js.undefined
   
   /**
-    * Information about the user for the data that is returned. It contains resourceId and ARN of the user. 
+    * Information about the user for the data that is returned. It contains the resourceId and ARN of the user. 
     */
   var User: js.UndefOr[UserReference] = js.undefined
 }

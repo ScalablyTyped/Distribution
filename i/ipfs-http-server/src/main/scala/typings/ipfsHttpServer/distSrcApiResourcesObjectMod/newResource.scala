@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer.distSrcApiResourcesObjectMod
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -17,7 +18,7 @@ object newResource {
     * @param {import('../../types').Request} request
     * @param {import('@hapi/hapi').ResponseToolkit} h
     */
-  inline def handler(request: Request, h: ResponseToolkit): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
+  inline def handler(request: Request[ReqRefDefaults], h: ResponseToolkit[ReqRefDefaults]): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
   
   object options {
     

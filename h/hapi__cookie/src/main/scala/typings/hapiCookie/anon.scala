@@ -6,6 +6,7 @@ import typings.hapiCookie.hapiCookieStrings.form
 import typings.hapiCookie.hapiCookieStrings.iron
 import typings.hapiCookie.hapiCookieStrings.none
 import typings.hapiHapi.anon.Integrity
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.SameSitePolicy
 import typings.hapiIron.mod.SealOptions
@@ -55,7 +56,7 @@ object anon {
       * cookie is automatically added to the response with the provided value. The value can be
       * a function with signature async function(request) where:
       */
-    var autoValue: js.UndefOr[js.Function1[/* request */ Request, Unit]] = js.undefined
+    var autoValue: js.UndefOr[js.Function1[/* request */ Request[ReqRefDefaults], Unit]] = js.undefined
     
     /** if true, automatically instruct the client to remove invalid cookies. Defaults to false. */
     var clearInvalid: js.UndefOr[Boolean] = js.undefined
@@ -127,7 +128,7 @@ object anon {
     
     extension [Self <: ServerStateCookieOptionsn](x: Self) {
       
-      inline def setAutoValue(value: /* request */ Request => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
+      inline def setAutoValue(value: /* request */ Request[ReqRefDefaults] => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
       
       inline def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
       

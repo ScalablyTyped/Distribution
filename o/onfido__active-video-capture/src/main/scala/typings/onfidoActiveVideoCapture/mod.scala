@@ -47,6 +47,8 @@ object mod {
     
     /* "capture_error_too_fast" */ val CAPTURE_ERROR_TOO_FAST_SHOWN: typings.onfidoActiveVideoCapture.distTypesMod.TrackingEvent.CAPTURE_ERROR_TOO_FAST_SHOWN & String = js.native
     
+    /* "capture_performance" */ val CAPTURE_PERFORMANCE: typings.onfidoActiveVideoCapture.distTypesMod.TrackingEvent.CAPTURE_PERFORMANCE & String = js.native
+    
     /* "capture" */ val CAPTURE_SCREEN_SHOWN: typings.onfidoActiveVideoCapture.distTypesMod.TrackingEvent.CAPTURE_SCREEN_SHOWN & String = js.native
     
     /* "capture_status" */ val CAPTURE_STATUS_UPDATED: typings.onfidoActiveVideoCapture.distTypesMod.TrackingEvent.CAPTURE_STATUS_UPDATED & String = js.native

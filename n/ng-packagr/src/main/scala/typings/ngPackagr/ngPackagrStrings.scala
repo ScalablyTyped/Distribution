@@ -1,8 +1,8 @@
 package typings.ngPackagr
 
-import typings.ngPackagr.fileWatcherMod.AllFileWatchEvents
-import typings.ngPackagr.fileWatcherMod.FileWatchEvent
-import typings.ngPackagr.nodeMod.NodeState
+import typings.ngPackagr.libFileSystemFileWatcherMod.AllFileWatchEvents
+import typings.ngPackagr.libFileSystemFileWatcherMod.FileWatchEvent
+import typings.ngPackagr.libGraphNodeMod.NodeState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

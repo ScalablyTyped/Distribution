@@ -26,6 +26,8 @@ open class MongoError protected ()
     */
   var code: js.UndefOr[scala.Double | String] = js.native
   
+  var connectionGeneration: js.UndefOr[scala.Double] = js.native
+  
   /** Legacy name for server error responses */
   def errmsg: String = js.native
   

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "libra-core"
-version := "1.0.7-6b401e"
+version := "1.0.7-2f1355"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "google-protobuf" % "3.15-dt-20220428Z-253f14",
-  "org.scalablytyped" %%% "grpc" % "1.24.11-e98b38",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "grpc" % "1.24.11-f131d4",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

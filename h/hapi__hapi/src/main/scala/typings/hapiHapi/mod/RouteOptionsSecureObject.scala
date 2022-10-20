@@ -40,7 +40,7 @@ trait RouteOptionsSecureObject extends StObject {
   
   /**
     * boolean that controls the 'X-XSS-PROTECTION' header for Internet Explorer. Defaults to true which sets the header to equal '1; mode=block'.
-    * Note: this setting can create a security vulnerability in versions of Internet Exploere below 8, as well as unpatched versions of IE8. See here and here for more information. If you actively
+    * Note: this setting can create a security vulnerability in versions of Internet Explorer below 8, as well as unpatched versions of IE8. See here and here for more information. If you actively
     * support old versions of IE, it may be wise to explicitly set this flag to false.
     */
   var xss: js.UndefOr[Boolean] = js.undefined

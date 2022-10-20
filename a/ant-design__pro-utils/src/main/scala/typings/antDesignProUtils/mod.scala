@@ -17,9 +17,6 @@ import typings.antDesignProUtils.anon.Params
 import typings.antDesignProUtils.anon.ProFormInstanceTypeanyfor
 import typings.antDesignProUtils.anon.SetDataSource
 import typings.antDesignProUtils.antDesignProUtilsBooleans.`false`
-import typings.antDesignProUtils.antDesignProUtilsInts.`-1`
-import typings.antDesignProUtils.antDesignProUtilsInts.`0`
-import typings.antDesignProUtils.antDesignProUtilsInts.`1`
 import typings.antDesignProUtils.antDesignProUtilsStrings.delete
 import typings.antDesignProUtils.antDesignProUtilsStrings.top
 import typings.antDesignProUtils.antDesignProUtilsStrings.update
@@ -89,7 +86,7 @@ object mod {
   
   inline def arrayMoveImmutable[T](array: js.Array[T], fromIndex: Double, toIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveImmutable")(array.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def compareVersions(v1: String, v2: String): `0` | `1` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareVersions")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`0` | `1` | `-1`]
+  inline def compareVersions(v1: String, v2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareVersions")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def conversionMomentValue[T /* <: js.Object */](value: T, dateFormatter: DateFormatter, valueTypeMap: Record[String, DateFormat | Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conversionMomentValue")(value.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any], valueTypeMap.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def conversionMomentValue[T /* <: js.Object */](

@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hapiCatbox.mod.Id
 import typings.hapiHapi.mod.CachePolicyOptions
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.ResponseToolkit
 import typings.hapiYar.anon.ClearInvalid
 import org.scalablytyped.runtime.StObject
@@ -48,7 +49,7 @@ object mod extends Shortcut {
       * an application extension handler takes over, yar doesn't get a chance to commit the state before the
       * response goes out. The method requires the hapi h toolkit argument available in the extension handler.
       */
-    def commit(h: ResponseToolkit): js.Promise[Unit] = js.native
+    def commit(h: ResponseToolkit[ReqRefDefaults]): js.Promise[Unit] = js.native
     
     /**
       * stores volatile data - data that should be deleted once read.

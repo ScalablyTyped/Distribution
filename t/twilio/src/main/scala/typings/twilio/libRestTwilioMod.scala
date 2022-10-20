@@ -119,6 +119,9 @@ object libRestTwilioMod {
     var numbers: typings.twilio.libRestNumbersMod.^ = js.native
     
     /* CompleteClass */
+    var oauth: typings.twilio.libRestOauthMod.^ = js.native
+    
+    /* CompleteClass */
     var outgoingCallerIds: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Api.prototype.account.outgoingCallerIds */ Any = js.native
     
     /* CompleteClass */
@@ -349,6 +352,8 @@ object libRestTwilioMod {
     
     var numbers: typings.twilio.libRestNumbersMod.^
     
+    var oauth: typings.twilio.libRestOauthMod.^
+    
     var outgoingCallerIds: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Api.prototype.account.outgoingCallerIds */ Any
     
     var preview: typings.twilio.libRestPreviewMod.^
@@ -449,6 +454,7 @@ object libRestTwilioMod {
       notifications: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Api.prototype.account.notifications */ Any,
       notify_ : typings.twilio.libRestNotifyMod.^,
       numbers: typings.twilio.libRestNumbersMod.^,
+      oauth: typings.twilio.libRestOauthMod.^,
       outgoingCallerIds: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Api.prototype.account.outgoingCallerIds */ Any,
       preview: typings.twilio.libRestPreviewMod.^,
       pricing: typings.twilio.libRestPricingMod.^,
@@ -477,7 +483,7 @@ object libRestTwilioMod {
       voice: typings.twilio.libRestVoiceMod.^,
       wireless: typings.twilio.libRestWirelessMod.^
     ): Twilio = {
-      val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any], addresses = addresses.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], applications = applications.asInstanceOf[js.Any], authorizedConnectApps = authorizedConnectApps.asInstanceOf[js.Any], autopilot = autopilot.asInstanceOf[js.Any], availablePhoneNumbers = availablePhoneNumbers.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], bulkexports = bulkexports.asInstanceOf[js.Any], calls = calls.asInstanceOf[js.Any], chat = chat.asInstanceOf[js.Any], conferences = conferences.asInstanceOf[js.Any], connectApps = connectApps.asInstanceOf[js.Any], conversations = conversations.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], flexApi = flexApi.asInstanceOf[js.Any], frontlineApi = frontlineApi.asInstanceOf[js.Any], incomingPhoneNumbers = incomingPhoneNumbers.asInstanceOf[js.Any], insights = insights.asInstanceOf[js.Any], ipMessaging = ipMessaging.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lookups = lookups.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], messaging = messaging.asInstanceOf[js.Any], microvisor = microvisor.asInstanceOf[js.Any], monitor = monitor.asInstanceOf[js.Any], newKeys = newKeys.asInstanceOf[js.Any], newSigningKeys = newSigningKeys.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], outgoingCallerIds = outgoingCallerIds.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], pricing = pricing.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], queues = queues.asInstanceOf[js.Any], recordings = recordings.asInstanceOf[js.Any], request = js.Any.fromFunction1(request), routes = routes.asInstanceOf[js.Any], serverless = serverless.asInstanceOf[js.Any], shortCodes = shortCodes.asInstanceOf[js.Any], signingKeys = signingKeys.asInstanceOf[js.Any], sip = sip.asInstanceOf[js.Any], studio = studio.asInstanceOf[js.Any], supersim = supersim.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], taskrouter = taskrouter.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any], transcriptions = transcriptions.asInstanceOf[js.Any], trunking = trunking.asInstanceOf[js.Any], trusthub = trusthub.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], validateSslCert = js.Any.fromFunction0(validateSslCert), validationRequests = validationRequests.asInstanceOf[js.Any], verify = verify.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], voice = voice.asInstanceOf[js.Any], wireless = wireless.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any], addresses = addresses.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], applications = applications.asInstanceOf[js.Any], authorizedConnectApps = authorizedConnectApps.asInstanceOf[js.Any], autopilot = autopilot.asInstanceOf[js.Any], availablePhoneNumbers = availablePhoneNumbers.asInstanceOf[js.Any], balance = balance.asInstanceOf[js.Any], bulkexports = bulkexports.asInstanceOf[js.Any], calls = calls.asInstanceOf[js.Any], chat = chat.asInstanceOf[js.Any], conferences = conferences.asInstanceOf[js.Any], connectApps = connectApps.asInstanceOf[js.Any], conversations = conversations.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], flexApi = flexApi.asInstanceOf[js.Any], frontlineApi = frontlineApi.asInstanceOf[js.Any], incomingPhoneNumbers = incomingPhoneNumbers.asInstanceOf[js.Any], insights = insights.asInstanceOf[js.Any], ipMessaging = ipMessaging.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lookups = lookups.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], messaging = messaging.asInstanceOf[js.Any], microvisor = microvisor.asInstanceOf[js.Any], monitor = monitor.asInstanceOf[js.Any], newKeys = newKeys.asInstanceOf[js.Any], newSigningKeys = newSigningKeys.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], oauth = oauth.asInstanceOf[js.Any], outgoingCallerIds = outgoingCallerIds.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], pricing = pricing.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], queues = queues.asInstanceOf[js.Any], recordings = recordings.asInstanceOf[js.Any], request = js.Any.fromFunction1(request), routes = routes.asInstanceOf[js.Any], serverless = serverless.asInstanceOf[js.Any], shortCodes = shortCodes.asInstanceOf[js.Any], signingKeys = signingKeys.asInstanceOf[js.Any], sip = sip.asInstanceOf[js.Any], studio = studio.asInstanceOf[js.Any], supersim = supersim.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], taskrouter = taskrouter.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any], transcriptions = transcriptions.asInstanceOf[js.Any], trunking = trunking.asInstanceOf[js.Any], trusthub = trusthub.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], validateSslCert = js.Any.fromFunction0(validateSslCert), validationRequests = validationRequests.asInstanceOf[js.Any], verify = verify.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], voice = voice.asInstanceOf[js.Any], wireless = wireless.asInstanceOf[js.Any])
       __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Twilio]
     }
@@ -579,6 +585,8 @@ object libRestTwilioMod {
       inline def setNotify_(value: typings.twilio.libRestNotifyMod.^): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       
       inline def setNumbers(value: typings.twilio.libRestNumbersMod.^): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      
+      inline def setOauth(value: typings.twilio.libRestOauthMod.^): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
       
       inline def setOutgoingCallerIds(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Api.prototype.account.outgoingCallerIds */ Any

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "zipkin-instrumentation-express"
-version := "0.22.0-cf69d5"
+version := "0.22.0-07241c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-d74acb",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-06d29e",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20220913Z-318396",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-9fa163",
   "org.scalablytyped" %%% "mime" % "3.0-dt-20220804Z-9884c6",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "qs" % "6.9-dt-20220913Z-76627f",
-  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-696f82",
+  "org.scalablytyped" %%% "serve-static" % "1.15-dt-20220729Z-3bb8ca",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "zipkin" % "0.22.0-3370c5")
 publishArtifact in packageDoc := false

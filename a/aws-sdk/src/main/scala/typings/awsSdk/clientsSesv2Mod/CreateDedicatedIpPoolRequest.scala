@@ -12,6 +12,11 @@ trait CreateDedicatedIpPoolRequest extends StObject {
   var PoolName: typings.awsSdk.clientsSesv2Mod.PoolName
   
   /**
+    * The type of scaling mode.
+    */
+  var ScalingMode: js.UndefOr[typings.awsSdk.clientsSesv2Mod.ScalingMode] = js.undefined
+  
+  /**
     * An object that defines the tags (keys and values) that you want to associate with the pool.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -26,6 +31,10 @@ object CreateDedicatedIpPoolRequest {
   extension [Self <: CreateDedicatedIpPoolRequest](x: Self) {
     
     inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    
+    inline def setScalingMode(value: ScalingMode): Self = StObject.set(x, "ScalingMode", value.asInstanceOf[js.Any])
+    
+    inline def setScalingModeUndefined: Self = StObject.set(x, "ScalingMode", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

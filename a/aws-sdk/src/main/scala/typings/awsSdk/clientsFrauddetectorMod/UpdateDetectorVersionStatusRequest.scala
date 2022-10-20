@@ -17,7 +17,7 @@ trait UpdateDetectorVersionStatusRequest extends StObject {
   var detectorVersionId: wholeNumberVersionString
   
   /**
-    * The new status.
+    * The new status. The only supported values are ACTIVE and INACTIVE 
     */
   var status: DetectorVersionStatus
 }

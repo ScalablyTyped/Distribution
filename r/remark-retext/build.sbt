@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "remark-retext"
-version := "5.0.1-aa184e"
+version := "5.0.1-f74bfb"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "mdast" % "3.0-dt-20211202Z-e12bb0",
-  "org.scalablytyped" %%% "mdast-util-to-nlcst" % "5.2.1-e42487",
+  "org.scalablytyped" %%% "mdast-util-to-nlcst" % "5.2.1-2a0754",
   "org.scalablytyped" %%% "nlcst" % "1.0-dt-20220624Z-5107f7",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "unified" % "10.1.2-46fd6a",
+  "org.scalablytyped" %%% "unified" % "10.1.2-288603",
   "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-e61dba",
-  "org.scalablytyped" %%% "vfile" % "5.3.5-599a40",
-  "org.scalablytyped" %%% "vfile-location" % "4.0.1-adad29",
+  "org.scalablytyped" %%% "vfile" % "5.3.5-a5e96f",
+  "org.scalablytyped" %%% "vfile-location" % "4.0.1-0294b8",
   "org.scalablytyped" %%% "vfile-message" % "3.1.2-6108f4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

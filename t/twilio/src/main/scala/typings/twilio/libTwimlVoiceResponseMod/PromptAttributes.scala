@@ -13,6 +13,8 @@ trait PromptAttributes extends StObject {
   var errorType: js.UndefOr[js.Array[PromptErrorType]] = js.undefined
   
   var for_ : js.UndefOr[PromptFor] = js.undefined
+  
+  var requireMatchingInputs: js.UndefOr[Boolean] = js.undefined
 }
 object PromptAttributes {
   
@@ -44,5 +46,9 @@ object PromptAttributes {
     inline def setFor_(value: PromptFor): Self = StObject.set(x, "for_", value.asInstanceOf[js.Any])
     
     inline def setFor_Undefined: Self = StObject.set(x, "for_", js.undefined)
+    
+    inline def setRequireMatchingInputs(value: Boolean): Self = StObject.set(x, "requireMatchingInputs", value.asInstanceOf[js.Any])
+    
+    inline def setRequireMatchingInputsUndefined: Self = StObject.set(x, "requireMatchingInputs", js.undefined)
   }
 }

@@ -1,7 +1,6 @@
 package typings.reactLive
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.buble.mod.TransformOptions
 import typings.prismReactRenderer.mod.Language
 import typings.prismReactRenderer.mod.PrismTheme
 import typings.react.anon.Html
@@ -47,7 +46,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactLive.anon.AsyncAwait
 import typings.reactLive.reactLiveStrings.`additions removals`
 import typings.reactLive.reactLiveStrings.`additions text`
 import typings.reactLive.reactLiveStrings.`inline`
@@ -221,7 +219,7 @@ object mod {
   // React Element Props
   type DivProps = HTMLProps[HTMLDivElement]
   
-  /* Inlined react-live.react-live.Omit<react-live.react-live.PreProps, 'onChange'> & {  code :string | undefined,   disabled :boolean | undefined,   language :prism-react-renderer.prism-react-renderer.Language | undefined,   onChange :(code : string): void | undefined,   theme :prism-react-renderer.prism-react-renderer.PrismTheme | undefined} */
+  /* Inlined react-live.react-live.Omit<react-live.react-live.PreProps, 'onChange'> & {  code :string | undefined,   disabled :boolean | undefined,   language :prism-react-renderer.prism-react-renderer.Language | undefined,   onChange :(code : string): void | undefined,   theme :prism-react-renderer.prism-react-renderer.PrismTheme | undefined,   prism :unknown | undefined} */
   trait EditorProps extends StObject {
     
     var default: js.UndefOr[Boolean] = js.undefined
@@ -693,6 +691,8 @@ object mod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var preload: js.UndefOr[String] = js.undefined
+    
+    var prism: js.UndefOr[Any] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
@@ -1743,6 +1743,10 @@ object mod {
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
+      inline def setPrism(value: Any): Self = StObject.set(x, "prism", value.asInstanceOf[js.Any])
+      
+      inline def setPrismUndefined: Self = StObject.set(x, "prism", js.undefined)
+      
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
@@ -2419,6 +2423,8 @@ object mod {
     var prefix: js.UndefOr[String] = js.undefined
     
     var preload: js.UndefOr[String] = js.undefined
+    
+    var prism: js.UndefOr[Any] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
@@ -3469,6 +3475,10 @@ object mod {
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
+      inline def setPrism(value: Any): Self = StObject.set(x, "prism", value.asInstanceOf[js.Any])
+      
+      inline def setPrismUndefined: Self = StObject.set(x, "prism", js.undefined)
+      
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
@@ -3673,7 +3683,7 @@ object mod {
     }
   }
   
-  /* Inlined react-live.react-live.Omit<react-live.react-live.DivProps, 'scope'> & {  scope :{[key: string] : any} | undefined,   code :string | undefined,   noInline :boolean | undefined,   transformCode :(code : string): string | undefined,   transpileOptions :react-live.react-live.TranspileOptions | undefined,   language :prism-react-renderer.prism-react-renderer.Language | undefined,   disabled :boolean | undefined,   theme :prism-react-renderer.prism-react-renderer.PrismTheme | undefined} */
+  /* Inlined react-live.react-live.Omit<react-live.react-live.DivProps, 'scope'> & {  scope :{[key: string] : any} | undefined,   code :string | undefined,   noInline :boolean | undefined,   transformCode :(code : string): string | std.Promise<string> | undefined,   language :prism-react-renderer.prism-react-renderer.Language | undefined,   disabled :boolean | undefined,   theme :prism-react-renderer.prism-react-renderer.PrismTheme | undefined} */
   trait LiveProviderProps extends StObject {
     
     var default: js.UndefOr[Boolean] = js.undefined
@@ -4226,11 +4236,9 @@ object mod {
     
     var title: js.UndefOr[String] = js.undefined
     
-    var transformCode: js.UndefOr[js.Function1[/* code */ String, String]] = js.undefined
+    var transformCode: js.UndefOr[js.Function1[/* code */ String, String | js.Promise[String]]] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
-    
-    var transpileOptions: js.UndefOr[TranspileOptions] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -5365,17 +5373,13 @@ object mod {
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setTransformCode(value: /* code */ String => String): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
+      inline def setTransformCode(value: /* code */ String => String | js.Promise[String]): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
       
       inline def setTransformCodeUndefined: Self = StObject.set(x, "transformCode", js.undefined)
       
       inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
-      
-      inline def setTranspileOptions(value: TranspileOptions): Self = StObject.set(x, "transpileOptions", value.asInstanceOf[js.Any])
-      
-      inline def setTranspileOptionsUndefined: Self = StObject.set(x, "transpileOptions", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -5421,24 +5425,4 @@ object mod {
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   type PreProps = HTMLProps[HTMLPreElement]
-  
-  trait TranspileOptions
-    extends StObject
-       with TransformOptions {
-    
-    @JSName("transforms")
-    var transforms_TranspileOptions: AsyncAwait
-  }
-  object TranspileOptions {
-    
-    inline def apply(transforms: AsyncAwait): TranspileOptions = {
-      val __obj = js.Dynamic.literal(transforms = transforms.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TranspileOptions]
-    }
-    
-    extension [Self <: TranspileOptions](x: Self) {
-      
-      inline def setTransforms(value: AsyncAwait): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
-    }
-  }
 }

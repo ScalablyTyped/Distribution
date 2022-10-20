@@ -87,6 +87,12 @@ object distTypesMod {
     /* "capture_error_too_fast" */ val CAPTURE_ERROR_TOO_FAST_SHOWN: typings.onfidoActiveVideoCapture.distTypesMod.TrackingEvent.CAPTURE_ERROR_TOO_FAST_SHOWN & String = js.native
     
     @js.native
+    sealed trait CAPTURE_PERFORMANCE
+      extends StObject
+         with TrackingEvent
+    /* "capture_performance" */ val CAPTURE_PERFORMANCE: typings.onfidoActiveVideoCapture.distTypesMod.TrackingEvent.CAPTURE_PERFORMANCE & String = js.native
+    
+    @js.native
     sealed trait CAPTURE_SCREEN_SHOWN
       extends StObject
          with TrackingEvent

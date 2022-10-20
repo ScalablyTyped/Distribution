@@ -1,7 +1,6 @@
 package typings.antDesignProUtils
 
-import typings.antDesignProUtils.anon.BgLayout
-import typings.antDesignProUtils.anon.ColorBgBody
+import typings.antDesignProUtils.anon.Blue
 import typings.antDesignProUtils.anon.HashId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,25 +12,15 @@ object esUseStyleTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def darkAlgorithm(): BgLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("darkAlgorithm")().asInstanceOf[BgLayout]
+  inline def darkAlgorithm(): Blue = ^.asInstanceOf[js.Dynamic].applyDynamic("darkAlgorithm")().asInstanceOf[Blue]
   
-  inline def defaultAlgorithm(): BgLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultAlgorithm")().asInstanceOf[BgLayout]
+  inline def defaultAlgorithm(): Blue = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultAlgorithm")().asInstanceOf[Blue]
   
   object defaultTheme {
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme")
     @js.native
     val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.Layout")
-    @js.native
-    def Layout: ColorBgBody = js.native
-    inline def Layout_=(x: ColorBgBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.bgLayout")
-    @js.native
-    def bgLayout: String = js.native
-    inline def bgLayout_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgLayout")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.blue")
     @js.native
@@ -131,18 +120,12 @@ object esUseStyleTokenMod {
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.boxShadowPopoverArrow")
     @js.native
     def boxShadowPopoverArrow: String = js.native
-    
-    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.boxShadowPopoverArrowBottom")
-    @js.native
-    def boxShadowPopoverArrowBottom: String = js.native
-    inline def boxShadowPopoverArrowBottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boxShadowPopoverArrowBottom")(x.asInstanceOf[js.Any])
-    
     inline def boxShadowPopoverArrow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boxShadowPopoverArrow")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.boxShadowSegmentedSelectedItem")
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.boxShadowSecondary")
     @js.native
-    def boxShadowSegmentedSelectedItem: String = js.native
-    inline def boxShadowSegmentedSelectedItem_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boxShadowSegmentedSelectedItem")(x.asInstanceOf[js.Any])
+    def boxShadowSecondary: String = js.native
+    inline def boxShadowSecondary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("boxShadowSecondary")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.boxShadowTabsOverflowBottom")
     @js.native
@@ -187,6 +170,11 @@ object esUseStyleTokenMod {
     def colorBgElevated: String = js.native
     inline def colorBgElevated_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorBgElevated")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.colorBgLayout")
+    @js.native
+    def colorBgLayout: String = js.native
+    inline def colorBgLayout_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorBgLayout")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.colorBgMask")
     @js.native
     def colorBgMask: String = js.native
@@ -196,6 +184,16 @@ object esUseStyleTokenMod {
     @js.native
     def colorBgSpotlight: String = js.native
     inline def colorBgSpotlight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorBgSpotlight")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.colorBgTextActive")
+    @js.native
+    def colorBgTextActive: String = js.native
+    inline def colorBgTextActive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorBgTextActive")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.colorBgTextHover")
+    @js.native
+    def colorBgTextHover: String = js.native
+    inline def colorBgTextHover_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorBgTextHover")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.colorBorder")
     @js.native
@@ -705,6 +703,22 @@ object esUseStyleTokenMod {
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.controlRadius")
     @js.native
     def controlRadius: Double = js.native
+    
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.controlRadiusLG")
+    @js.native
+    def controlRadiusLG: Double = js.native
+    inline def controlRadiusLG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controlRadiusLG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.controlRadiusSM")
+    @js.native
+    def controlRadiusSM: Double = js.native
+    inline def controlRadiusSM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controlRadiusSM")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.controlRadiusXS")
+    @js.native
+    def controlRadiusXS: Double = js.native
+    inline def controlRadiusXS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controlRadiusXS")(x.asInstanceOf[js.Any])
+    
     inline def controlRadius_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controlRadius")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.controlTmpOutline")
@@ -1311,6 +1325,11 @@ object esUseStyleTokenMod {
     def marginSM: Double = js.native
     inline def marginSM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginSM")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.marginTmp")
+    @js.native
+    def marginTmp: Double = js.native
+    inline def marginTmp_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginTmp")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.marginXL")
     @js.native
     def marginXL: Double = js.native
@@ -1485,6 +1504,11 @@ object esUseStyleTokenMod {
     def paddingSM: Double = js.native
     inline def paddingSM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paddingSM")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.paddingTmp")
+    @js.native
+    def paddingTmp: Double = js.native
+    inline def paddingTmp_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paddingTmp")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.paddingXL")
     @js.native
     def paddingXL: Double = js.native
@@ -1644,15 +1668,20 @@ object esUseStyleTokenMod {
     def radiusLG: Double = js.native
     inline def radiusLG_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiusLG")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.radiusOuter")
+    @js.native
+    def radiusOuter: Double = js.native
+    inline def radiusOuter_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiusOuter")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.radiusSM")
     @js.native
     def radiusSM: Double = js.native
     inline def radiusSM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiusSM")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.radiusXL")
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.radiusXS")
     @js.native
-    def radiusXL: Double = js.native
-    inline def radiusXL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiusXL")(x.asInstanceOf[js.Any])
+    def radiusXS: Double = js.native
+    inline def radiusXS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("radiusXS")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.red")
     @js.native
@@ -1924,6 +1953,11 @@ object esUseStyleTokenMod {
     
     inline def volcano_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volcano")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.wireframe")
+    @js.native
+    def wireframe: Boolean = js.native
+    inline def wireframe_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wireframe")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "defaultTheme.yellow")
     @js.native
     def yellow: String = js.native
@@ -2019,21 +2053,17 @@ object esUseStyleTokenMod {
     
     @JSImport("@ant-design/pro-utils/es/useStyle/token", "token.token")
     @js.native
-    def token: BgLayout = js.native
-    inline def token_=(x: BgLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("token")(x.asInstanceOf[js.Any])
+    def token: Blue = js.native
+    inline def token_=(x: Blue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("token")(x.asInstanceOf[js.Any])
   }
   
   inline def useToken(): HashId = ^.asInstanceOf[js.Dynamic].applyDynamic("useToken")().asInstanceOf[HashId]
   
   trait AliasToken extends StObject {
     
-    var Layout: ColorBgBody
-    
     var _hashId: String
     
     var _tokenKey: String
-    
-    var bgLayout: String
     
     var blue: String
     
@@ -2071,9 +2101,7 @@ object esUseStyleTokenMod {
     
     var boxShadowPopoverArrow: String
     
-    var boxShadowPopoverArrowBottom: String
-    
-    var boxShadowSegmentedSelectedItem: String
+    var boxShadowSecondary: String
     
     var boxShadowTabsOverflowBottom: String
     
@@ -2091,9 +2119,15 @@ object esUseStyleTokenMod {
     
     var colorBgElevated: String
     
+    var colorBgLayout: String
+    
     var colorBgMask: String
     
     var colorBgSpotlight: String
+    
+    var colorBgTextActive: String
+    
+    var colorBgTextHover: String
     
     var colorBorder: String
     
@@ -2286,6 +2320,12 @@ object esUseStyleTokenMod {
     var controlPaddingHorizontalSM: Double
     
     var controlRadius: Double
+    
+    var controlRadiusLG: Double
+    
+    var controlRadiusSM: Double
+    
+    var controlRadiusXS: Double
     
     var controlTmpOutline: String
     
@@ -2499,6 +2539,8 @@ object esUseStyleTokenMod {
     
     var marginSM: Double
     
+    var marginTmp: Double
+    
     var marginXL: Double
     
     var marginXS: Double
@@ -2563,6 +2605,8 @@ object esUseStyleTokenMod {
     
     var paddingSM: Double
     
+    var paddingTmp: Double
+    
     var paddingXL: Double
     
     var paddingXS: Double
@@ -2617,9 +2661,11 @@ object esUseStyleTokenMod {
     
     var radiusLG: Double
     
+    var radiusOuter: Double
+    
     var radiusSM: Double
     
-    var radiusXL: Double
+    var radiusXS: Double
     
     var red: String
     
@@ -2715,6 +2761,8 @@ object esUseStyleTokenMod {
     
     var `volcano-9`: String
     
+    var wireframe: Boolean
+    
     var yellow: String
     
     var `yellow-1`: String
@@ -2744,10 +2792,8 @@ object esUseStyleTokenMod {
   object AliasToken {
     
     inline def apply(
-      Layout: ColorBgBody,
       _hashId: String,
       _tokenKey: String,
-      bgLayout: String,
       blue: String,
       `blue-1`: String,
       `blue-10`: String,
@@ -2766,8 +2812,7 @@ object esUseStyleTokenMod {
       boxShadowDrawerRight: String,
       boxShadowDrawerUp: String,
       boxShadowPopoverArrow: String,
-      boxShadowPopoverArrowBottom: String,
-      boxShadowSegmentedSelectedItem: String,
+      boxShadowSecondary: String,
       boxShadowTabsOverflowBottom: String,
       boxShadowTabsOverflowLeft: String,
       boxShadowTabsOverflowRight: String,
@@ -2776,8 +2821,11 @@ object esUseStyleTokenMod {
       colorBgContainer: String,
       colorBgContainerDisabled: String,
       colorBgElevated: String,
+      colorBgLayout: String,
       colorBgMask: String,
       colorBgSpotlight: String,
+      colorBgTextActive: String,
+      colorBgTextHover: String,
       colorBorder: String,
       colorBorderBg: String,
       colorBorderSecondary: String,
@@ -2874,6 +2922,9 @@ object esUseStyleTokenMod {
       controlPaddingHorizontal: Double,
       controlPaddingHorizontalSM: Double,
       controlRadius: Double,
+      controlRadiusLG: Double,
+      controlRadiusSM: Double,
+      controlRadiusXS: Double,
       controlTmpOutline: String,
       cyan: String,
       `cyan-1`: String,
@@ -2980,6 +3031,7 @@ object esUseStyleTokenMod {
       margin: Double,
       marginLG: Double,
       marginSM: Double,
+      marginTmp: Double,
       marginXL: Double,
       marginXS: Double,
       marginXXL: Double,
@@ -2993,13 +3045,9 @@ object esUseStyleTokenMod {
       motionEaseInQuint: String,
       motionEaseOut: String,
       motionEaseOutBack: String,
-      motionEaseOutCirc: String,
-      motionEaseOutQuint: String,
-      motionUnit: Double,
-      opacityImage: Double,
-      opacityLoading: Double
+      motionEaseOutCirc: String
     ): AliasToken = {
-      val __obj = js.Dynamic.literal(Layout = Layout.asInstanceOf[js.Any], _hashId = _hashId.asInstanceOf[js.Any], _tokenKey = _tokenKey.asInstanceOf[js.Any], bgLayout = bgLayout.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], boxShadowCard = boxShadowCard.asInstanceOf[js.Any], boxShadowDrawerDown = boxShadowDrawerDown.asInstanceOf[js.Any], boxShadowDrawerLeft = boxShadowDrawerLeft.asInstanceOf[js.Any], boxShadowDrawerRight = boxShadowDrawerRight.asInstanceOf[js.Any], boxShadowDrawerUp = boxShadowDrawerUp.asInstanceOf[js.Any], boxShadowPopoverArrow = boxShadowPopoverArrow.asInstanceOf[js.Any], boxShadowPopoverArrowBottom = boxShadowPopoverArrowBottom.asInstanceOf[js.Any], boxShadowSegmentedSelectedItem = boxShadowSegmentedSelectedItem.asInstanceOf[js.Any], boxShadowTabsOverflowBottom = boxShadowTabsOverflowBottom.asInstanceOf[js.Any], boxShadowTabsOverflowLeft = boxShadowTabsOverflowLeft.asInstanceOf[js.Any], boxShadowTabsOverflowRight = boxShadowTabsOverflowRight.asInstanceOf[js.Any], boxShadowTabsOverflowTop = boxShadowTabsOverflowTop.asInstanceOf[js.Any], colorBgBase = colorBgBase.asInstanceOf[js.Any], colorBgContainer = colorBgContainer.asInstanceOf[js.Any], colorBgContainerDisabled = colorBgContainerDisabled.asInstanceOf[js.Any], colorBgElevated = colorBgElevated.asInstanceOf[js.Any], colorBgMask = colorBgMask.asInstanceOf[js.Any], colorBgSpotlight = colorBgSpotlight.asInstanceOf[js.Any], colorBorder = colorBorder.asInstanceOf[js.Any], colorBorderBg = colorBorderBg.asInstanceOf[js.Any], colorBorderSecondary = colorBorderSecondary.asInstanceOf[js.Any], colorError = colorError.asInstanceOf[js.Any], colorErrorActive = colorErrorActive.asInstanceOf[js.Any], colorErrorBg = colorErrorBg.asInstanceOf[js.Any], colorErrorBgHover = colorErrorBgHover.asInstanceOf[js.Any], colorErrorBorder = colorErrorBorder.asInstanceOf[js.Any], colorErrorBorderHover = colorErrorBorderHover.asInstanceOf[js.Any], colorErrorHover = colorErrorHover.asInstanceOf[js.Any], colorErrorOutline = colorErrorOutline.asInstanceOf[js.Any], colorErrorText = colorErrorText.asInstanceOf[js.Any], colorErrorTextActive = colorErrorTextActive.asInstanceOf[js.Any], colorErrorTextHover = colorErrorTextHover.asInstanceOf[js.Any], colorFill = colorFill.asInstanceOf[js.Any], colorFillAlter = colorFillAlter.asInstanceOf[js.Any], colorFillContent = colorFillContent.asInstanceOf[js.Any], colorFillContentHover = colorFillContentHover.asInstanceOf[js.Any], colorFillQuaternary = colorFillQuaternary.asInstanceOf[js.Any], colorFillSecondary = colorFillSecondary.asInstanceOf[js.Any], colorFillTertiary = colorFillTertiary.asInstanceOf[js.Any], colorHighlight = colorHighlight.asInstanceOf[js.Any], colorIcon = colorIcon.asInstanceOf[js.Any], colorIconHover = colorIconHover.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorInfoActive = colorInfoActive.asInstanceOf[js.Any], colorInfoBg = colorInfoBg.asInstanceOf[js.Any], colorInfoBgHover = colorInfoBgHover.asInstanceOf[js.Any], colorInfoBorder = colorInfoBorder.asInstanceOf[js.Any], colorInfoBorderHover = colorInfoBorderHover.asInstanceOf[js.Any], colorInfoHover = colorInfoHover.asInstanceOf[js.Any], colorInfoText = colorInfoText.asInstanceOf[js.Any], colorInfoTextActive = colorInfoTextActive.asInstanceOf[js.Any], colorInfoTextHover = colorInfoTextHover.asInstanceOf[js.Any], colorLink = colorLink.asInstanceOf[js.Any], colorLinkActive = colorLinkActive.asInstanceOf[js.Any], colorLinkHover = colorLinkHover.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorPrimaryActive = colorPrimaryActive.asInstanceOf[js.Any], colorPrimaryBg = colorPrimaryBg.asInstanceOf[js.Any], colorPrimaryBgHover = colorPrimaryBgHover.asInstanceOf[js.Any], colorPrimaryBorder = colorPrimaryBorder.asInstanceOf[js.Any], colorPrimaryBorderHover = colorPrimaryBorderHover.asInstanceOf[js.Any], colorPrimaryHover = colorPrimaryHover.asInstanceOf[js.Any], colorPrimaryText = colorPrimaryText.asInstanceOf[js.Any], colorPrimaryTextActive = colorPrimaryTextActive.asInstanceOf[js.Any], colorPrimaryTextHover = colorPrimaryTextHover.asInstanceOf[js.Any], colorSplit = colorSplit.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorSuccessActive = colorSuccessActive.asInstanceOf[js.Any], colorSuccessBg = colorSuccessBg.asInstanceOf[js.Any], colorSuccessBgHover = colorSuccessBgHover.asInstanceOf[js.Any], colorSuccessBorder = colorSuccessBorder.asInstanceOf[js.Any], colorSuccessBorderHover = colorSuccessBorderHover.asInstanceOf[js.Any], colorSuccessHover = colorSuccessHover.asInstanceOf[js.Any], colorSuccessText = colorSuccessText.asInstanceOf[js.Any], colorSuccessTextActive = colorSuccessTextActive.asInstanceOf[js.Any], colorSuccessTextHover = colorSuccessTextHover.asInstanceOf[js.Any], colorText = colorText.asInstanceOf[js.Any], colorTextBase = colorTextBase.asInstanceOf[js.Any], colorTextDescription = colorTextDescription.asInstanceOf[js.Any], colorTextDisabled = colorTextDisabled.asInstanceOf[js.Any], colorTextHeading = colorTextHeading.asInstanceOf[js.Any], colorTextLabel = colorTextLabel.asInstanceOf[js.Any], colorTextLightSolid = colorTextLightSolid.asInstanceOf[js.Any], colorTextPlaceholder = colorTextPlaceholder.asInstanceOf[js.Any], colorTextQuaternary = colorTextQuaternary.asInstanceOf[js.Any], colorTextSecondary = colorTextSecondary.asInstanceOf[js.Any], colorTextTertiary = colorTextTertiary.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], colorWarningActive = colorWarningActive.asInstanceOf[js.Any], colorWarningBg = colorWarningBg.asInstanceOf[js.Any], colorWarningBgHover = colorWarningBgHover.asInstanceOf[js.Any], colorWarningBorder = colorWarningBorder.asInstanceOf[js.Any], colorWarningBorderHover = colorWarningBorderHover.asInstanceOf[js.Any], colorWarningHover = colorWarningHover.asInstanceOf[js.Any], colorWarningOutline = colorWarningOutline.asInstanceOf[js.Any], colorWarningText = colorWarningText.asInstanceOf[js.Any], colorWarningTextActive = colorWarningTextActive.asInstanceOf[js.Any], colorWarningTextHover = colorWarningTextHover.asInstanceOf[js.Any], controlHeight = controlHeight.asInstanceOf[js.Any], controlHeightLG = controlHeightLG.asInstanceOf[js.Any], controlHeightSM = controlHeightSM.asInstanceOf[js.Any], controlHeightXS = controlHeightXS.asInstanceOf[js.Any], controlInteractiveSize = controlInteractiveSize.asInstanceOf[js.Any], controlItemBgActive = controlItemBgActive.asInstanceOf[js.Any], controlItemBgActiveDisabled = controlItemBgActiveDisabled.asInstanceOf[js.Any], controlItemBgActiveHover = controlItemBgActiveHover.asInstanceOf[js.Any], controlItemBgHover = controlItemBgHover.asInstanceOf[js.Any], controlLineType = controlLineType.asInstanceOf[js.Any], controlLineWidth = controlLineWidth.asInstanceOf[js.Any], controlOutline = controlOutline.asInstanceOf[js.Any], controlOutlineWidth = controlOutlineWidth.asInstanceOf[js.Any], controlPaddingHorizontal = controlPaddingHorizontal.asInstanceOf[js.Any], controlPaddingHorizontalSM = controlPaddingHorizontalSM.asInstanceOf[js.Any], controlRadius = controlRadius.asInstanceOf[js.Any], controlTmpOutline = controlTmpOutline.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontSizeBase = fontSizeBase.asInstanceOf[js.Any], fontSizeHeading1 = fontSizeHeading1.asInstanceOf[js.Any], fontSizeHeading2 = fontSizeHeading2.asInstanceOf[js.Any], fontSizeHeading3 = fontSizeHeading3.asInstanceOf[js.Any], fontSizeHeading4 = fontSizeHeading4.asInstanceOf[js.Any], fontSizeHeading5 = fontSizeHeading5.asInstanceOf[js.Any], fontSizeIcon = fontSizeIcon.asInstanceOf[js.Any], fontSizeLG = fontSizeLG.asInstanceOf[js.Any], fontSizeSM = fontSizeSM.asInstanceOf[js.Any], fontSizeXL = fontSizeXL.asInstanceOf[js.Any], fontSizes = fontSizes.asInstanceOf[js.Any], fontWeightStrong = fontWeightStrong.asInstanceOf[js.Any], geekblue = geekblue.asInstanceOf[js.Any], gold = gold.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], gridBaseStep = gridBaseStep.asInstanceOf[js.Any], gridSpaceBase = gridSpaceBase.asInstanceOf[js.Any], gridSpaceLG = gridSpaceLG.asInstanceOf[js.Any], gridSpaceSM = gridSpaceSM.asInstanceOf[js.Any], gridSpaceXL = gridSpaceXL.asInstanceOf[js.Any], gridSpaceXXL = gridSpaceXXL.asInstanceOf[js.Any], gridUnit = gridUnit.asInstanceOf[js.Any], lime = lime.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineHeightHeading1 = lineHeightHeading1.asInstanceOf[js.Any], lineHeightHeading2 = lineHeightHeading2.asInstanceOf[js.Any], lineHeightHeading3 = lineHeightHeading3.asInstanceOf[js.Any], lineHeightHeading4 = lineHeightHeading4.asInstanceOf[js.Any], lineHeightHeading5 = lineHeightHeading5.asInstanceOf[js.Any], lineHeightLG = lineHeightLG.asInstanceOf[js.Any], lineHeightSM = lineHeightSM.asInstanceOf[js.Any], lineHeights = lineHeights.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], lineWidthBold = lineWidthBold.asInstanceOf[js.Any], linkDecoration = linkDecoration.asInstanceOf[js.Any], linkFocusDecoration = linkFocusDecoration.asInstanceOf[js.Any], linkHoverDecoration = linkHoverDecoration.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginLG = marginLG.asInstanceOf[js.Any], marginSM = marginSM.asInstanceOf[js.Any], marginXL = marginXL.asInstanceOf[js.Any], marginXS = marginXS.asInstanceOf[js.Any], marginXXL = marginXXL.asInstanceOf[js.Any], marginXXS = marginXXS.asInstanceOf[js.Any], motionBase = motionBase.asInstanceOf[js.Any], motionDurationFast = motionDurationFast.asInstanceOf[js.Any], motionDurationMid = motionDurationMid.asInstanceOf[js.Any], motionDurationSlow = motionDurationSlow.asInstanceOf[js.Any], motionEaseInOut = motionEaseInOut.asInstanceOf[js.Any], motionEaseInOutCirc = motionEaseInOutCirc.asInstanceOf[js.Any], motionEaseInQuint = motionEaseInQuint.asInstanceOf[js.Any], motionEaseOut = motionEaseOut.asInstanceOf[js.Any], motionEaseOutBack = motionEaseOutBack.asInstanceOf[js.Any], motionEaseOutCirc = motionEaseOutCirc.asInstanceOf[js.Any], motionEaseOutQuint = motionEaseOutQuint.asInstanceOf[js.Any], motionUnit = motionUnit.asInstanceOf[js.Any], opacityImage = opacityImage.asInstanceOf[js.Any], opacityLoading = opacityLoading.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_hashId = _hashId.asInstanceOf[js.Any], _tokenKey = _tokenKey.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], boxShadowCard = boxShadowCard.asInstanceOf[js.Any], boxShadowDrawerDown = boxShadowDrawerDown.asInstanceOf[js.Any], boxShadowDrawerLeft = boxShadowDrawerLeft.asInstanceOf[js.Any], boxShadowDrawerRight = boxShadowDrawerRight.asInstanceOf[js.Any], boxShadowDrawerUp = boxShadowDrawerUp.asInstanceOf[js.Any], boxShadowPopoverArrow = boxShadowPopoverArrow.asInstanceOf[js.Any], boxShadowSecondary = boxShadowSecondary.asInstanceOf[js.Any], boxShadowTabsOverflowBottom = boxShadowTabsOverflowBottom.asInstanceOf[js.Any], boxShadowTabsOverflowLeft = boxShadowTabsOverflowLeft.asInstanceOf[js.Any], boxShadowTabsOverflowRight = boxShadowTabsOverflowRight.asInstanceOf[js.Any], boxShadowTabsOverflowTop = boxShadowTabsOverflowTop.asInstanceOf[js.Any], colorBgBase = colorBgBase.asInstanceOf[js.Any], colorBgContainer = colorBgContainer.asInstanceOf[js.Any], colorBgContainerDisabled = colorBgContainerDisabled.asInstanceOf[js.Any], colorBgElevated = colorBgElevated.asInstanceOf[js.Any], colorBgLayout = colorBgLayout.asInstanceOf[js.Any], colorBgMask = colorBgMask.asInstanceOf[js.Any], colorBgSpotlight = colorBgSpotlight.asInstanceOf[js.Any], colorBgTextActive = colorBgTextActive.asInstanceOf[js.Any], colorBgTextHover = colorBgTextHover.asInstanceOf[js.Any], colorBorder = colorBorder.asInstanceOf[js.Any], colorBorderBg = colorBorderBg.asInstanceOf[js.Any], colorBorderSecondary = colorBorderSecondary.asInstanceOf[js.Any], colorError = colorError.asInstanceOf[js.Any], colorErrorActive = colorErrorActive.asInstanceOf[js.Any], colorErrorBg = colorErrorBg.asInstanceOf[js.Any], colorErrorBgHover = colorErrorBgHover.asInstanceOf[js.Any], colorErrorBorder = colorErrorBorder.asInstanceOf[js.Any], colorErrorBorderHover = colorErrorBorderHover.asInstanceOf[js.Any], colorErrorHover = colorErrorHover.asInstanceOf[js.Any], colorErrorOutline = colorErrorOutline.asInstanceOf[js.Any], colorErrorText = colorErrorText.asInstanceOf[js.Any], colorErrorTextActive = colorErrorTextActive.asInstanceOf[js.Any], colorErrorTextHover = colorErrorTextHover.asInstanceOf[js.Any], colorFill = colorFill.asInstanceOf[js.Any], colorFillAlter = colorFillAlter.asInstanceOf[js.Any], colorFillContent = colorFillContent.asInstanceOf[js.Any], colorFillContentHover = colorFillContentHover.asInstanceOf[js.Any], colorFillQuaternary = colorFillQuaternary.asInstanceOf[js.Any], colorFillSecondary = colorFillSecondary.asInstanceOf[js.Any], colorFillTertiary = colorFillTertiary.asInstanceOf[js.Any], colorHighlight = colorHighlight.asInstanceOf[js.Any], colorIcon = colorIcon.asInstanceOf[js.Any], colorIconHover = colorIconHover.asInstanceOf[js.Any], colorInfo = colorInfo.asInstanceOf[js.Any], colorInfoActive = colorInfoActive.asInstanceOf[js.Any], colorInfoBg = colorInfoBg.asInstanceOf[js.Any], colorInfoBgHover = colorInfoBgHover.asInstanceOf[js.Any], colorInfoBorder = colorInfoBorder.asInstanceOf[js.Any], colorInfoBorderHover = colorInfoBorderHover.asInstanceOf[js.Any], colorInfoHover = colorInfoHover.asInstanceOf[js.Any], colorInfoText = colorInfoText.asInstanceOf[js.Any], colorInfoTextActive = colorInfoTextActive.asInstanceOf[js.Any], colorInfoTextHover = colorInfoTextHover.asInstanceOf[js.Any], colorLink = colorLink.asInstanceOf[js.Any], colorLinkActive = colorLinkActive.asInstanceOf[js.Any], colorLinkHover = colorLinkHover.asInstanceOf[js.Any], colorPrimary = colorPrimary.asInstanceOf[js.Any], colorPrimaryActive = colorPrimaryActive.asInstanceOf[js.Any], colorPrimaryBg = colorPrimaryBg.asInstanceOf[js.Any], colorPrimaryBgHover = colorPrimaryBgHover.asInstanceOf[js.Any], colorPrimaryBorder = colorPrimaryBorder.asInstanceOf[js.Any], colorPrimaryBorderHover = colorPrimaryBorderHover.asInstanceOf[js.Any], colorPrimaryHover = colorPrimaryHover.asInstanceOf[js.Any], colorPrimaryText = colorPrimaryText.asInstanceOf[js.Any], colorPrimaryTextActive = colorPrimaryTextActive.asInstanceOf[js.Any], colorPrimaryTextHover = colorPrimaryTextHover.asInstanceOf[js.Any], colorSplit = colorSplit.asInstanceOf[js.Any], colorSuccess = colorSuccess.asInstanceOf[js.Any], colorSuccessActive = colorSuccessActive.asInstanceOf[js.Any], colorSuccessBg = colorSuccessBg.asInstanceOf[js.Any], colorSuccessBgHover = colorSuccessBgHover.asInstanceOf[js.Any], colorSuccessBorder = colorSuccessBorder.asInstanceOf[js.Any], colorSuccessBorderHover = colorSuccessBorderHover.asInstanceOf[js.Any], colorSuccessHover = colorSuccessHover.asInstanceOf[js.Any], colorSuccessText = colorSuccessText.asInstanceOf[js.Any], colorSuccessTextActive = colorSuccessTextActive.asInstanceOf[js.Any], colorSuccessTextHover = colorSuccessTextHover.asInstanceOf[js.Any], colorText = colorText.asInstanceOf[js.Any], colorTextBase = colorTextBase.asInstanceOf[js.Any], colorTextDescription = colorTextDescription.asInstanceOf[js.Any], colorTextDisabled = colorTextDisabled.asInstanceOf[js.Any], colorTextHeading = colorTextHeading.asInstanceOf[js.Any], colorTextLabel = colorTextLabel.asInstanceOf[js.Any], colorTextLightSolid = colorTextLightSolid.asInstanceOf[js.Any], colorTextPlaceholder = colorTextPlaceholder.asInstanceOf[js.Any], colorTextQuaternary = colorTextQuaternary.asInstanceOf[js.Any], colorTextSecondary = colorTextSecondary.asInstanceOf[js.Any], colorTextTertiary = colorTextTertiary.asInstanceOf[js.Any], colorWarning = colorWarning.asInstanceOf[js.Any], colorWarningActive = colorWarningActive.asInstanceOf[js.Any], colorWarningBg = colorWarningBg.asInstanceOf[js.Any], colorWarningBgHover = colorWarningBgHover.asInstanceOf[js.Any], colorWarningBorder = colorWarningBorder.asInstanceOf[js.Any], colorWarningBorderHover = colorWarningBorderHover.asInstanceOf[js.Any], colorWarningHover = colorWarningHover.asInstanceOf[js.Any], colorWarningOutline = colorWarningOutline.asInstanceOf[js.Any], colorWarningText = colorWarningText.asInstanceOf[js.Any], colorWarningTextActive = colorWarningTextActive.asInstanceOf[js.Any], colorWarningTextHover = colorWarningTextHover.asInstanceOf[js.Any], controlHeight = controlHeight.asInstanceOf[js.Any], controlHeightLG = controlHeightLG.asInstanceOf[js.Any], controlHeightSM = controlHeightSM.asInstanceOf[js.Any], controlHeightXS = controlHeightXS.asInstanceOf[js.Any], controlInteractiveSize = controlInteractiveSize.asInstanceOf[js.Any], controlItemBgActive = controlItemBgActive.asInstanceOf[js.Any], controlItemBgActiveDisabled = controlItemBgActiveDisabled.asInstanceOf[js.Any], controlItemBgActiveHover = controlItemBgActiveHover.asInstanceOf[js.Any], controlItemBgHover = controlItemBgHover.asInstanceOf[js.Any], controlLineType = controlLineType.asInstanceOf[js.Any], controlLineWidth = controlLineWidth.asInstanceOf[js.Any], controlOutline = controlOutline.asInstanceOf[js.Any], controlOutlineWidth = controlOutlineWidth.asInstanceOf[js.Any], controlPaddingHorizontal = controlPaddingHorizontal.asInstanceOf[js.Any], controlPaddingHorizontalSM = controlPaddingHorizontalSM.asInstanceOf[js.Any], controlRadius = controlRadius.asInstanceOf[js.Any], controlRadiusLG = controlRadiusLG.asInstanceOf[js.Any], controlRadiusSM = controlRadiusSM.asInstanceOf[js.Any], controlRadiusXS = controlRadiusXS.asInstanceOf[js.Any], controlTmpOutline = controlTmpOutline.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontSizeBase = fontSizeBase.asInstanceOf[js.Any], fontSizeHeading1 = fontSizeHeading1.asInstanceOf[js.Any], fontSizeHeading2 = fontSizeHeading2.asInstanceOf[js.Any], fontSizeHeading3 = fontSizeHeading3.asInstanceOf[js.Any], fontSizeHeading4 = fontSizeHeading4.asInstanceOf[js.Any], fontSizeHeading5 = fontSizeHeading5.asInstanceOf[js.Any], fontSizeIcon = fontSizeIcon.asInstanceOf[js.Any], fontSizeLG = fontSizeLG.asInstanceOf[js.Any], fontSizeSM = fontSizeSM.asInstanceOf[js.Any], fontSizeXL = fontSizeXL.asInstanceOf[js.Any], fontSizes = fontSizes.asInstanceOf[js.Any], fontWeightStrong = fontWeightStrong.asInstanceOf[js.Any], geekblue = geekblue.asInstanceOf[js.Any], gold = gold.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], gridBaseStep = gridBaseStep.asInstanceOf[js.Any], gridSpaceBase = gridSpaceBase.asInstanceOf[js.Any], gridSpaceLG = gridSpaceLG.asInstanceOf[js.Any], gridSpaceSM = gridSpaceSM.asInstanceOf[js.Any], gridSpaceXL = gridSpaceXL.asInstanceOf[js.Any], gridSpaceXXL = gridSpaceXXL.asInstanceOf[js.Any], gridUnit = gridUnit.asInstanceOf[js.Any], lime = lime.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineHeightHeading1 = lineHeightHeading1.asInstanceOf[js.Any], lineHeightHeading2 = lineHeightHeading2.asInstanceOf[js.Any], lineHeightHeading3 = lineHeightHeading3.asInstanceOf[js.Any], lineHeightHeading4 = lineHeightHeading4.asInstanceOf[js.Any], lineHeightHeading5 = lineHeightHeading5.asInstanceOf[js.Any], lineHeightLG = lineHeightLG.asInstanceOf[js.Any], lineHeightSM = lineHeightSM.asInstanceOf[js.Any], lineHeights = lineHeights.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any], lineWidthBold = lineWidthBold.asInstanceOf[js.Any], linkDecoration = linkDecoration.asInstanceOf[js.Any], linkFocusDecoration = linkFocusDecoration.asInstanceOf[js.Any], linkHoverDecoration = linkHoverDecoration.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginLG = marginLG.asInstanceOf[js.Any], marginSM = marginSM.asInstanceOf[js.Any], marginTmp = marginTmp.asInstanceOf[js.Any], marginXL = marginXL.asInstanceOf[js.Any], marginXS = marginXS.asInstanceOf[js.Any], marginXXL = marginXXL.asInstanceOf[js.Any], marginXXS = marginXXS.asInstanceOf[js.Any], motionBase = motionBase.asInstanceOf[js.Any], motionDurationFast = motionDurationFast.asInstanceOf[js.Any], motionDurationMid = motionDurationMid.asInstanceOf[js.Any], motionDurationSlow = motionDurationSlow.asInstanceOf[js.Any], motionEaseInOut = motionEaseInOut.asInstanceOf[js.Any], motionEaseInOutCirc = motionEaseInOutCirc.asInstanceOf[js.Any], motionEaseInQuint = motionEaseInQuint.asInstanceOf[js.Any], motionEaseOut = motionEaseOut.asInstanceOf[js.Any], motionEaseOutBack = motionEaseOutBack.asInstanceOf[js.Any], motionEaseOutCirc = motionEaseOutCirc.asInstanceOf[js.Any])
       __obj.updateDynamic("blue-1")(`blue-1`.asInstanceOf[js.Any])
       __obj.updateDynamic("blue-10")(`blue-10`.asInstanceOf[js.Any])
       __obj.updateDynamic("blue-2")(`blue-2`.asInstanceOf[js.Any])
@@ -3075,8 +3123,6 @@ object esUseStyleTokenMod {
     
     extension [Self <: AliasToken](x: Self) {
       
-      inline def setBgLayout(value: String): Self = StObject.set(x, "bgLayout", value.asInstanceOf[js.Any])
-      
       inline def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
       inline def `setBlue-1`(value: String): Self = StObject.set(x, "blue-1", value.asInstanceOf[js.Any])
@@ -3113,9 +3159,7 @@ object esUseStyleTokenMod {
       
       inline def setBoxShadowPopoverArrow(value: String): Self = StObject.set(x, "boxShadowPopoverArrow", value.asInstanceOf[js.Any])
       
-      inline def setBoxShadowPopoverArrowBottom(value: String): Self = StObject.set(x, "boxShadowPopoverArrowBottom", value.asInstanceOf[js.Any])
-      
-      inline def setBoxShadowSegmentedSelectedItem(value: String): Self = StObject.set(x, "boxShadowSegmentedSelectedItem", value.asInstanceOf[js.Any])
+      inline def setBoxShadowSecondary(value: String): Self = StObject.set(x, "boxShadowSecondary", value.asInstanceOf[js.Any])
       
       inline def setBoxShadowTabsOverflowBottom(value: String): Self = StObject.set(x, "boxShadowTabsOverflowBottom", value.asInstanceOf[js.Any])
       
@@ -3133,9 +3177,15 @@ object esUseStyleTokenMod {
       
       inline def setColorBgElevated(value: String): Self = StObject.set(x, "colorBgElevated", value.asInstanceOf[js.Any])
       
+      inline def setColorBgLayout(value: String): Self = StObject.set(x, "colorBgLayout", value.asInstanceOf[js.Any])
+      
       inline def setColorBgMask(value: String): Self = StObject.set(x, "colorBgMask", value.asInstanceOf[js.Any])
       
       inline def setColorBgSpotlight(value: String): Self = StObject.set(x, "colorBgSpotlight", value.asInstanceOf[js.Any])
+      
+      inline def setColorBgTextActive(value: String): Self = StObject.set(x, "colorBgTextActive", value.asInstanceOf[js.Any])
+      
+      inline def setColorBgTextHover(value: String): Self = StObject.set(x, "colorBgTextHover", value.asInstanceOf[js.Any])
       
       inline def setColorBorder(value: String): Self = StObject.set(x, "colorBorder", value.asInstanceOf[js.Any])
       
@@ -3329,6 +3379,12 @@ object esUseStyleTokenMod {
       
       inline def setControlRadius(value: Double): Self = StObject.set(x, "controlRadius", value.asInstanceOf[js.Any])
       
+      inline def setControlRadiusLG(value: Double): Self = StObject.set(x, "controlRadiusLG", value.asInstanceOf[js.Any])
+      
+      inline def setControlRadiusSM(value: Double): Self = StObject.set(x, "controlRadiusSM", value.asInstanceOf[js.Any])
+      
+      inline def setControlRadiusXS(value: Double): Self = StObject.set(x, "controlRadiusXS", value.asInstanceOf[js.Any])
+      
       inline def setControlTmpOutline(value: String): Self = StObject.set(x, "controlTmpOutline", value.asInstanceOf[js.Any])
       
       inline def setCyan(value: String): Self = StObject.set(x, "cyan", value.asInstanceOf[js.Any])
@@ -3463,8 +3519,6 @@ object esUseStyleTokenMod {
       
       inline def setGridUnit(value: Double): Self = StObject.set(x, "gridUnit", value.asInstanceOf[js.Any])
       
-      inline def setLayout(value: ColorBgBody): Self = StObject.set(x, "Layout", value.asInstanceOf[js.Any])
-      
       inline def setLime(value: String): Self = StObject.set(x, "lime", value.asInstanceOf[js.Any])
       
       inline def `setLime-1`(value: String): Self = StObject.set(x, "lime-1", value.asInstanceOf[js.Any])
@@ -3547,6 +3601,8 @@ object esUseStyleTokenMod {
       
       inline def setMarginSM(value: Double): Self = StObject.set(x, "marginSM", value.asInstanceOf[js.Any])
       
+      inline def setMarginTmp(value: Double): Self = StObject.set(x, "marginTmp", value.asInstanceOf[js.Any])
+      
       inline def setMarginXL(value: Double): Self = StObject.set(x, "marginXL", value.asInstanceOf[js.Any])
       
       inline def setMarginXS(value: Double): Self = StObject.set(x, "marginXS", value.asInstanceOf[js.Any])
@@ -3611,6 +3667,8 @@ object esUseStyleTokenMod {
       
       inline def setPaddingSM(value: Double): Self = StObject.set(x, "paddingSM", value.asInstanceOf[js.Any])
       
+      inline def setPaddingTmp(value: Double): Self = StObject.set(x, "paddingTmp", value.asInstanceOf[js.Any])
+      
       inline def setPaddingXL(value: Double): Self = StObject.set(x, "paddingXL", value.asInstanceOf[js.Any])
       
       inline def setPaddingXS(value: Double): Self = StObject.set(x, "paddingXS", value.asInstanceOf[js.Any])
@@ -3665,9 +3723,11 @@ object esUseStyleTokenMod {
       
       inline def setRadiusLG(value: Double): Self = StObject.set(x, "radiusLG", value.asInstanceOf[js.Any])
       
+      inline def setRadiusOuter(value: Double): Self = StObject.set(x, "radiusOuter", value.asInstanceOf[js.Any])
+      
       inline def setRadiusSM(value: Double): Self = StObject.set(x, "radiusSM", value.asInstanceOf[js.Any])
       
-      inline def setRadiusXL(value: Double): Self = StObject.set(x, "radiusXL", value.asInstanceOf[js.Any])
+      inline def setRadiusXS(value: Double): Self = StObject.set(x, "radiusXS", value.asInstanceOf[js.Any])
       
       inline def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
@@ -3762,6 +3822,8 @@ object esUseStyleTokenMod {
       inline def `setVolcano-8`(value: String): Self = StObject.set(x, "volcano-8", value.asInstanceOf[js.Any])
       
       inline def `setVolcano-9`(value: String): Self = StObject.set(x, "volcano-9", value.asInstanceOf[js.Any])
+      
+      inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
       
       inline def setYellow(value: String): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
       

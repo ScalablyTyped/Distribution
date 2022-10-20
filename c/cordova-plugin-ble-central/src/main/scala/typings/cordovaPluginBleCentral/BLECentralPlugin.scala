@@ -1,10 +1,23 @@
 package typings.cordovaPluginBleCentral
 
 import typings.cordovaPluginBleCentral.anon.EmitOnRegistered
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.`1m`
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.aggressive
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.all
 import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.balanced
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.coded
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.few
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.first
 import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.high
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.lost
 import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.low
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.lowLatency
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.lowPower
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.max
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.one
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.opportunistic
 import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.registered
+import typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.sticky
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -340,15 +353,6 @@ object BLECentralPlugin {
       characteristic_uuid: String,
       success: js.Function1[/* rawData */ js.typedarray.ArrayBuffer | registered, Any],
       failure: js.Function1[/* error */ String | BLEError, Any],
-      options: EmitOnRegistered
-    ): Unit = js.native
-    @JSName("startNotification")
-    def startNotification_registered(
-      device_id: String,
-      service_uuid: String,
-      characteristic_uuid: String,
-      success: js.Function1[/* rawData */ js.typedarray.ArrayBuffer | registered, Any],
-      failure: Unit,
       options: EmitOnRegistered
     ): Unit = js.native
     
@@ -754,7 +758,28 @@ object BLECentralPlugin {
   
   trait StartScanOptions extends StObject {
     
+    /* Android only */
+    var callbackType: js.UndefOr[all | first | lost] = js.undefined
+    
+    /* Android only */
+    var legacy: js.UndefOr[Boolean] = js.undefined
+    
+    /* Android only */
+    var matchMode: js.UndefOr[aggressive | sticky] = js.undefined
+    
+    /* Android only */
+    var numOfMatches: js.UndefOr[one | few | max] = js.undefined
+    
+    /* Android only */
+    var phy: js.UndefOr[`1m` | coded | all] = js.undefined
+    
+    /* Android only */
+    var reportDelay: js.UndefOr[Double] = js.undefined
+    
     var reportDuplicates: js.UndefOr[Boolean] = js.undefined
+    
+    /* Android only */
+    var scanMode: js.UndefOr[lowPower | balanced | lowLatency | opportunistic] = js.undefined
   }
   object StartScanOptions {
     
@@ -765,9 +790,37 @@ object BLECentralPlugin {
     
     extension [Self <: StartScanOptions](x: Self) {
       
+      inline def setCallbackType(value: all | first | lost): Self = StObject.set(x, "callbackType", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackTypeUndefined: Self = StObject.set(x, "callbackType", js.undefined)
+      
+      inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+      
+      inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
+      
+      inline def setMatchMode(value: aggressive | sticky): Self = StObject.set(x, "matchMode", value.asInstanceOf[js.Any])
+      
+      inline def setMatchModeUndefined: Self = StObject.set(x, "matchMode", js.undefined)
+      
+      inline def setNumOfMatches(value: one | few | max): Self = StObject.set(x, "numOfMatches", value.asInstanceOf[js.Any])
+      
+      inline def setNumOfMatchesUndefined: Self = StObject.set(x, "numOfMatches", js.undefined)
+      
+      inline def setPhy(value: `1m` | coded | all): Self = StObject.set(x, "phy", value.asInstanceOf[js.Any])
+      
+      inline def setPhyUndefined: Self = StObject.set(x, "phy", js.undefined)
+      
+      inline def setReportDelay(value: Double): Self = StObject.set(x, "reportDelay", value.asInstanceOf[js.Any])
+      
+      inline def setReportDelayUndefined: Self = StObject.set(x, "reportDelay", js.undefined)
+      
       inline def setReportDuplicates(value: Boolean): Self = StObject.set(x, "reportDuplicates", value.asInstanceOf[js.Any])
       
       inline def setReportDuplicatesUndefined: Self = StObject.set(x, "reportDuplicates", js.undefined)
+      
+      inline def setScanMode(value: lowPower | balanced | lowLatency | opportunistic): Self = StObject.set(x, "scanMode", value.asInstanceOf[js.Any])
+      
+      inline def setScanModeUndefined: Self = StObject.set(x, "scanMode", js.undefined)
     }
   }
 }

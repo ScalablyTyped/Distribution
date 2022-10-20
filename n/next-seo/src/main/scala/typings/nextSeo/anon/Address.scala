@@ -8,7 +8,7 @@ trait Address extends StObject {
   
   var `@type`: String
   
-  var address: js.UndefOr[AddressCountry] = js.undefined
+  var address: js.UndefOr[AddressCountry | js.Array[AddressCountry]] = js.undefined
   
   var name: String
   
@@ -26,9 +26,11 @@ object Address {
     
     inline def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     
-    inline def setAddress(value: AddressCountry): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: AddressCountry | js.Array[AddressCountry]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setAddressVarargs(value: AddressCountry*): Self = StObject.set(x, "address", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

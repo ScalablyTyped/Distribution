@@ -6,8 +6,6 @@ import typings.hapiHapi.anon.Req
 import typings.hapiHapi.mod.Util.Dictionary
 import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL
 import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
-import typings.node.bufferMod.global.Buffer
-import typings.node.streamMod.Readable
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium * / any */ @js.native
-trait Request extends StObject {
+trait Request[Refs /* <: ReqRef */] extends StObject {
   
   /**
     * Returns `true` when the request is active and processing should continue and `false` when the
@@ -29,7 +27,7 @@ trait Request extends StObject {
     * Application-specific state. Provides a safe place to store application data without potential conflicts with the framework. Should not be used by plugins which should use plugins[name].
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestapp)
     */
-  var app: RequestApplicationState = js.native
+  var app: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['RequestApp'] */ js.Any = js.native
   
   /**
     * Authentication information:
@@ -43,7 +41,12 @@ trait Request extends StObject {
     * * strategy - the name of the strategy used.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestauth)
     */
-  val auth: RequestAuth = js.native
+  val auth: RequestAuth[
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthUser'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthApp'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthCredentialsExtra'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthArtifactsExtra'] */ js.Any
+  ] = js.native
   
   /**
     * Access: read only and the public podium interface.
@@ -74,7 +77,7 @@ trait Request extends StObject {
     * The raw request headers (references request.raw.req.headers).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestheaders)
     */
-  val headers: Dictionary[String] = js.native
+  val headers: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Headers'] */ js.Any = js.native
   
   /**
     * Request information:
@@ -138,12 +141,12 @@ trait Request extends StObject {
   /**
     * An object where each key is a path parameter name with matching value as described in [Path parameters](https://github.com/hapijs/hapi/blob/master/API.md#path-parameters).
     */
-  val params: Dictionary[Any] = js.native
+  val params: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Params'] */ js.Any = js.native
   
   /**
     * An array containing all the path params values in the order they appeared in the path.
     */
-  val paramsArray: js.Array[String] = js.native
+  val paramsArray: (/* import warning: importer.ImportType#apply Failed type conversion: keyof @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Params'] */ js.Any) | js.Array[String] = js.native
   
   /**
     * The request URI's pathname component.
@@ -154,7 +157,7 @@ trait Request extends StObject {
     * The request payload based on the route payload.output and payload.parse settings.
     * TODO check this typing and add references / links.
     */
-  val payload: Readable | Buffer | String | js.Object = js.native
+  val payload: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Payload'] */ js.Any = js.native
   
   /**
     * Plugin-specific state. Provides a place to store and pass request-level plugin data. The plugins is an object where each key is a plugin name and the value is the state.
@@ -165,7 +168,7 @@ trait Request extends StObject {
     * An object where each key is the name assigned by a route pre-handler methods function. The values are the raw values provided to the continuation function as argument. For the wrapped response
     * object, use responses.
     */
-  val pre: Dictionary[Any] = js.native
+  val pre: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Pres'] */ js.Any = js.native
   
   /**
     * Same as pre but represented as the response object created by the pre method.
@@ -175,7 +178,7 @@ trait Request extends StObject {
   /**
     * By default the object outputted from node's URL parse() method.
     */
-  val query: RequestQuery = js.native
+  val query: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Query'] */ js.Any = js.native
   
   /**
     * An object containing the Node HTTP server objects. Direct interaction with these raw objects is not recommended.

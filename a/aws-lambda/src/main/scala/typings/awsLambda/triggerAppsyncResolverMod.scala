@@ -2,8 +2,8 @@ package typings.awsLambda
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.anon.AccountId
+import typings.awsLambda.anon.DomainName
 import typings.awsLambda.anon.FieldName
-import typings.awsLambda.anon.HeadersAppSyncResolverEventHeaders
 import typings.awsLambda.anon.Result
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
@@ -256,7 +256,7 @@ object triggerAppsyncResolverMod {
     
     var prev: Result | Null
     
-    var request: HeadersAppSyncResolverEventHeaders
+    var request: DomainName
     
     var source: TSource
     
@@ -267,7 +267,7 @@ object triggerAppsyncResolverMod {
     inline def apply[TArguments, TSource](
       arguments: TArguments,
       info: FieldName,
-      request: HeadersAppSyncResolverEventHeaders,
+      request: DomainName,
       source: TSource,
       stash: StringDictionary[Any]
     ): AppSyncResolverEvent[TArguments, TSource] = {
@@ -291,7 +291,7 @@ object triggerAppsyncResolverMod {
       
       inline def setPrevNull: Self = StObject.set(x, "prev", null)
       
-      inline def setRequest(value: HeadersAppSyncResolverEventHeaders): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: DomainName): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setSource(value: TSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

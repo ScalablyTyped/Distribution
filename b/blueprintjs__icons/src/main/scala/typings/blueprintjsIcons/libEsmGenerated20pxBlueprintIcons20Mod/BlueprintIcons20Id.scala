@@ -10,6 +10,7 @@ import typings.blueprintjsIcons.blueprintjsIconsStrings.applications_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.archive_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.array_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.asterisk_
+import typings.blueprintjsIcons.blueprintjsIconsStrings.at_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.backlink_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.badge_
 import typings.blueprintjsIcons.blueprintjsIconsStrings.barcode_
@@ -291,6 +292,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`arrows-horizontal`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`arrows-vertical`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.asterisk_
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.at_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.`automatic-updates`
   - typings.blueprintjsIcons.blueprintjsIconsStrings.backlink_
   - typings.blueprintjsIcons.blueprintjsIconsStrings.badge_
@@ -900,6 +902,8 @@ object BlueprintIcons20Id {
   inline def `arrows-vertical`: typings.blueprintjsIcons.blueprintjsIconsStrings.`arrows-vertical` = "arrows-vertical".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`arrows-vertical`]
   
   inline def asterisk: asterisk_ = "asterisk".asInstanceOf[asterisk_]
+  
+  inline def at: at_ = "at".asInstanceOf[at_]
   
   inline def `automatic-updates`: typings.blueprintjsIcons.blueprintjsIconsStrings.`automatic-updates` = "automatic-updates".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.`automatic-updates`]
   

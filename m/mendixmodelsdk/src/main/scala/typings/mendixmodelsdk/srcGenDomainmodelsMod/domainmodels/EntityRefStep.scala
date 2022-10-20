@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntityRefStep because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsIndirectEntityRef */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityRefStep")
+- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntityRefStep because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.EntityRefStep")
 @js.native
 open class EntityRefStep protected () extends Element[IModel] {
   def this(
@@ -40,8 +40,6 @@ open class EntityRefStep protected () extends Element[IModel] {
   def association_=(newValue: IAssociationBase): Unit = js.native
   
   def containerAsIndirectEntityRef: IndirectEntityRef = js.native
-  @JSName("containerAsIndirectEntityRef")
-  val containerAsIndirectEntityRef_FEntityRefStep: IIndirectEntityRef = js.native
   
   def destinationEntity: IEntity = js.native
   

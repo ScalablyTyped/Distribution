@@ -3,6 +3,7 @@ package typings.hapiInert
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiInert.anon.RelativeTo
@@ -108,7 +109,7 @@ object mod extends Shortcut {
       
       inline def setPath(value: String | js.Array[String] | (RequestHandler[String | js.Array[String] | js.Error])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathFunction1(value: /* request */ Request => String | js.Array[String] | js.Error): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPathFunction1(value: /* request */ Request[ReqRefDefaults] => String | js.Array[String] | js.Error): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
       
       inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
@@ -142,7 +143,7 @@ object mod extends Shortcut {
       
       inline def setPath(value: String | RequestHandler[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathFunction1(value: /* request */ Request => String): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
+      inline def setPathFunction1(value: /* request */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "path", js.Any.fromFunction1(value))
     }
   }
   
@@ -264,7 +265,7 @@ object mod extends Shortcut {
     }
   }
   
-  type RequestHandler[T] = js.Function1[/* request */ Request, T]
+  type RequestHandler[T] = js.Function1[/* request */ Request[ReqRefDefaults], T]
   
   type _To = Plugin[OptionalRegistrationOptions]
   
@@ -318,7 +319,7 @@ object mod extends Shortcut {
         
         inline def setFile(value: String | RequestHandler[String] | FileHandlerRouteObject): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        inline def setFileFunction1(value: /* request */ Request => String): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
+        inline def setFileFunction1(value: /* request */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
         
         inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
         

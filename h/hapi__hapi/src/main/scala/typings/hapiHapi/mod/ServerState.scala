@@ -29,13 +29,13 @@ trait ServerState extends StObject {
     * * value - the cookie value.
     * * options - cookie configuration to override the server settings.
     * @return Return value: a header string.
-    * Note that this utility uses the server configuration but does not change the server state. It is provided for manual cookie formating (e.g. when headers are set manually).
+    * Note that this utility uses the server configuration but does not change the server state. It is provided for manual cookie formatting (e.g. when headers are set manually).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-async-serverstatesformatcookies)
     */
   def format(cookies: ServerStateFormat): js.Promise[String] = js.native
   
   /**
-    * An array containing the names of all configued cookies.
+    * An array containing the names of all configured cookies.
     */
   val names: js.Array[String] = js.native
   

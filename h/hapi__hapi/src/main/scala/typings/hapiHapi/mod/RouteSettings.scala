@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RouteSettings
   extends StObject
-     with CommonRouteProperties {
+     with CommonRouteProperties[ReqRefDefaults] {
   
   var auth: js.UndefOr[AuthSettings] = js.undefined
 }

@@ -305,6 +305,10 @@ object nextSeoStrings {
   inline def OnlineEventAttendanceMode: OnlineEventAttendanceMode = "OnlineEventAttendanceMode".asInstanceOf[OnlineEventAttendanceMode]
   
   @js.native
+  sealed trait Organisation extends StObject
+  inline def Organisation: Organisation = "Organisation".asInstanceOf[Organisation]
+  
+  @js.native
   sealed trait Organization
     extends StObject
        with OrganizationCategory

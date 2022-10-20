@@ -12,6 +12,11 @@ trait CreateTransformJobRequest extends StObject {
   var BatchStrategy: js.UndefOr[typings.awsSdk.clientsSagemakerMod.BatchStrategy] = js.undefined
   
   /**
+    * Configuration to control how SageMaker captures inference data.
+    */
+  var DataCaptureConfig: js.UndefOr[BatchDataCaptureConfig] = js.undefined
+  
+  /**
     * The data structure used to specify the data to be used for inference in a batch transform job and to associate the data that is relevant to the prediction results in the output. The input filter provided allows you to exclude input data that is not needed for inference in a batch transform job. The output filter provided allows you to include input data relevant to interpreting the predictions in the output from the job. For more information, see Associate Prediction Results with their Corresponding Input Records.
     */
   var DataProcessing: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DataProcessing] = js.undefined
@@ -86,6 +91,10 @@ object CreateTransformJobRequest {
     inline def setBatchStrategy(value: BatchStrategy): Self = StObject.set(x, "BatchStrategy", value.asInstanceOf[js.Any])
     
     inline def setBatchStrategyUndefined: Self = StObject.set(x, "BatchStrategy", js.undefined)
+    
+    inline def setDataCaptureConfig(value: BatchDataCaptureConfig): Self = StObject.set(x, "DataCaptureConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDataCaptureConfigUndefined: Self = StObject.set(x, "DataCaptureConfig", js.undefined)
     
     inline def setDataProcessing(value: DataProcessing): Self = StObject.set(x, "DataProcessing", value.asInstanceOf[js.Any])
     

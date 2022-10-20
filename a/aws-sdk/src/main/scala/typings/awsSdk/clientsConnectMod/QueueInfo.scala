@@ -12,7 +12,7 @@ trait QueueInfo extends StObject {
   var EnqueueTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier of the agent who accepted the contact.
+    * The unique identifier for the queue.
     */
   var Id: js.UndefOr[QueueId] = js.undefined
 }

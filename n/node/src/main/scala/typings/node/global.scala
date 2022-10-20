@@ -12,41 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("AbortController")
   @js.native
-  open class AbortController ()
-    extends StObject
-       with typings.node.AbortController {
-    
-    /**
-      * Invoking this method will set this object's AbortSignal's aborted flag and signal to any observers that the associated activity is to be aborted.
-      */
-    /* CompleteClass */
-    override def abort(): Unit = js.native
-    
-    /**
-      * Returns the AbortSignal object associated with this object.
-      */
-    /* CompleteClass */
-    override val signal: typings.node.AbortSignal = js.native
-  }
+  def AbortController: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortController :infer T} ? T : {new (): node.AbortController} */ js.Any = js.native
+  inline def AbortController_=(
+    x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortController :infer T} ? T : {new (): node.AbortController} */ js.Any
+  ): Unit = js.Dynamic.global.updateDynamic("AbortController")(x.asInstanceOf[js.Any])
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("AbortSignal")
   @js.native
-  open class AbortSignal ()
-    extends StObject
-       with typings.node.AbortSignal
-  object AbortSignal {
-    
-    @JSGlobal("AbortSignal")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    // TODO: Add abort() static
-    inline def timeout(milliseconds: Double): typings.node.AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.node.AbortSignal]
-  }
+  def AbortSignal: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortSignal :infer T} ? T : {new (): node.AbortSignal, timeout (milliseconds : number): node.AbortSignal} */ js.Any = js.native
+  inline def AbortSignal_=(
+    x: /* import warning: importer.ImportType#apply Failed type conversion: / * globalThis * / any extends {  onmessage :any,   AbortSignal :infer T} ? T : {new (): node.AbortSignal, timeout (milliseconds : number): node.AbortSignal} */ js.Any
+  ): Unit = js.Dynamic.global.updateDynamic("AbortSignal")(x.asInstanceOf[js.Any])
   
   object console extends Shortcut {
     

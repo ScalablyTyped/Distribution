@@ -7,12 +7,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerRoute extends StObject {
+trait ServerRoute[Refs /* <: ReqRef */] extends StObject {
   
   /**
     * (required when handler is not set) the route handler function called to generate the response after successful authentication and validation.
     */
-  var handler: js.UndefOr[Method | HandlerDecorations] = js.undefined
+  var handler: js.UndefOr[(Method[Refs, ReturnValue[Refs]]) | HandlerDecorations] = js.undefined
   
   /**
     * (required) the HTTP method. Typically one of 'GET', 'POST', 'PUT', 'PATCH', 'DELETE', or 'OPTIONS'. Any HTTP method is allowed, except for 'HEAD'. Use '*' to match against any HTTP method
@@ -25,7 +25,7 @@ trait ServerRoute extends StObject {
     * additional route options. The options value can be an object or a function that returns an object using the signature function(server) where server is the server the route is being added to
     * and this is bound to the current realm's bind option.
     */
-  var options: js.UndefOr[RouteOptions | (js.Function1[/* server */ Server_, RouteOptions])] = js.undefined
+  var options: js.UndefOr[RouteOptions[Refs] | (js.Function1[/* server */ Server_, RouteOptions[Refs]])] = js.undefined
   
   /**
     * (required) the absolute path used to match incoming requests (must begin with '/'). Incoming requests are compared to the configured paths based on the server's router configuration. The path
@@ -37,7 +37,9 @@ trait ServerRoute extends StObject {
   /**
     * route custom rules object. The object is passed to each rules processor registered with server.rules(). Cannot be used if route.options.rules is defined.
     */
-  var rules: js.UndefOr[js.Object] = js.undefined
+  var rules: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: Refs['Rules'] */ js.Any
+  ] = js.undefined
   
   /**
     * (optional) a domain string or an array of domain strings for limiting the route to only requests with a matching host header field. Matching is done against the hostname part of the header
@@ -47,18 +49,14 @@ trait ServerRoute extends StObject {
 }
 object ServerRoute {
   
-  inline def apply(method: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String, path: String): ServerRoute = {
+  inline def apply[Refs /* <: ReqRef */](method: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String, path: String): ServerRoute[Refs] = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ServerRoute]
+    __obj.asInstanceOf[ServerRoute[Refs]]
   }
   
-  extension [Self <: ServerRoute](x: Self) {
+  extension [Self <: ServerRoute[?], Refs /* <: ReqRef */](x: Self & ServerRoute[Refs]) {
     
-    inline def setHandler(value: Method | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
-    
-    inline def setHandlerFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
-    ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+    inline def setHandler(value: (Method[Refs, ReturnValue[Refs]]) | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -66,15 +64,17 @@ object ServerRoute {
     
     inline def setMethodVarargs(value: (HTTP_METHODS_PARTIAL | String)*): Self = StObject.set(x, "method", js.Array(value*))
     
-    inline def setOptions(value: RouteOptions | (js.Function1[/* server */ Server_, RouteOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RouteOptions[Refs] | (js.Function1[/* server */ Server_, RouteOptions[Refs]])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsFunction1(value: /* server */ Server_ => RouteOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    inline def setOptionsFunction1(value: /* server */ Server_ => RouteOptions[Refs]): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setRules(value: js.Object): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: Refs['Rules'] */ js.Any
+    ): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     

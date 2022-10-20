@@ -73,14 +73,14 @@ trait SESV2 extends Service {
   ): Request[CreateContactListResponse, AWSError] = js.native
   
   /**
-    * Creates a new custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Creates a new custom verification email template. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def createCustomVerificationEmailTemplate(): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def createCustomVerificationEmailTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomVerificationEmailTemplateResponse, Unit]
   ): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   /**
-    * Creates a new custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Creates a new custom verification email template. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def createCustomVerificationEmailTemplate(params: CreateCustomVerificationEmailTemplateRequest): Request[CreateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def createCustomVerificationEmailTemplate(
@@ -233,14 +233,14 @@ trait SESV2 extends Service {
   ): Request[DeleteContactListResponse, AWSError] = js.native
   
   /**
-    * Deletes an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Deletes an existing custom verification email template. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def deleteCustomVerificationEmailTemplate(): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def deleteCustomVerificationEmailTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomVerificationEmailTemplateResponse, Unit]
   ): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
   /**
-    * Deletes an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Deletes an existing custom verification email template. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def deleteCustomVerificationEmailTemplate(params: DeleteCustomVerificationEmailTemplateRequest): Request[DeleteCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def deleteCustomVerificationEmailTemplate(
@@ -405,14 +405,14 @@ trait SESV2 extends Service {
   ): Request[GetContactListResponse, AWSError] = js.native
   
   /**
-    * Returns the custom email verification template for the template name you specify. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Returns the custom email verification template for the template name you specify. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def getCustomVerificationEmailTemplate(): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def getCustomVerificationEmailTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ GetCustomVerificationEmailTemplateResponse, Unit]
   ): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
   /**
-    * Returns the custom email verification template for the template name you specify. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Returns the custom email verification template for the template name you specify. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def getCustomVerificationEmailTemplate(params: GetCustomVerificationEmailTemplateRequest): Request[GetCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def getCustomVerificationEmailTemplate(
@@ -433,6 +433,20 @@ trait SESV2 extends Service {
     params: GetDedicatedIpRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDedicatedIpResponse, Unit]
   ): Request[GetDedicatedIpResponse, AWSError] = js.native
+  
+  /**
+    * Retrieve information about the dedicated pool.
+    */
+  def getDedicatedIpPool(): Request[GetDedicatedIpPoolResponse, AWSError] = js.native
+  def getDedicatedIpPool(callback: js.Function2[/* err */ AWSError, /* data */ GetDedicatedIpPoolResponse, Unit]): Request[GetDedicatedIpPoolResponse, AWSError] = js.native
+  /**
+    * Retrieve information about the dedicated pool.
+    */
+  def getDedicatedIpPool(params: GetDedicatedIpPoolRequest): Request[GetDedicatedIpPoolResponse, AWSError] = js.native
+  def getDedicatedIpPool(
+    params: GetDedicatedIpPoolRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDedicatedIpPoolResponse, Unit]
+  ): Request[GetDedicatedIpPoolResponse, AWSError] = js.native
   
   /**
     * List the dedicated IP addresses that are associated with your Amazon Web Services account.
@@ -621,14 +635,14 @@ trait SESV2 extends Service {
   ): Request[ListContactsResponse, AWSError] = js.native
   
   /**
-    * Lists the existing custom verification email templates for your account in the current Amazon Web Services Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Lists the existing custom verification email templates for your account in the current Amazon Web Services Region. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def listCustomVerificationEmailTemplates(): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   def listCustomVerificationEmailTemplates(
     callback: js.Function2[/* err */ AWSError, /* data */ ListCustomVerificationEmailTemplatesResponse, Unit]
   ): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   /**
-    * Lists the existing custom verification email templates for your account in the current Amazon Web Services Region. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Lists the existing custom verification email templates for your account in the current Amazon Web Services Region. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def listCustomVerificationEmailTemplates(params: ListCustomVerificationEmailTemplatesRequest): Request[ListCustomVerificationEmailTemplatesResponse, AWSError] = js.native
   def listCustomVerificationEmailTemplates(
@@ -1053,12 +1067,12 @@ trait SESV2 extends Service {
   ): Request[SendBulkEmailResponse, AWSError] = js.native
   
   /**
-    * Adds an email address to the list of identities for your Amazon SES account in the current Amazon Web Services Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Adds an email address to the list of identities for your Amazon SES account in the current Amazon Web Services Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def sendCustomVerificationEmail(): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   def sendCustomVerificationEmail(callback: js.Function2[/* err */ AWSError, /* data */ SendCustomVerificationEmailResponse, Unit]): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   /**
-    * Adds an email address to the list of identities for your Amazon SES account in the current Amazon Web Services Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Adds an email address to the list of identities for your Amazon SES account in the current Amazon Web Services Region and attempts to verify it. As a result of executing this operation, a customized verification email is sent to the specified address. To use this operation, you must first create a custom verification email template. For more information about creating and using custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def sendCustomVerificationEmail(params: SendCustomVerificationEmailRequest): Request[SendCustomVerificationEmailResponse, AWSError] = js.native
   def sendCustomVerificationEmail(
@@ -1167,14 +1181,14 @@ trait SESV2 extends Service {
   ): Request[UpdateContactListResponse, AWSError] = js.native
   
   /**
-    * Updates an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Updates an existing custom verification email template. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def updateCustomVerificationEmailTemplate(): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def updateCustomVerificationEmailTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCustomVerificationEmailTemplateResponse, Unit]
   ): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   /**
-    * Updates an existing custom verification email template. For more information about custom verification email templates, see Using Custom Verification Email Templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
+    * Updates an existing custom verification email template. For more information about custom verification email templates, see Using custom verification email templates in the Amazon SES Developer Guide. You can execute this operation no more than once per second.
     */
   def updateCustomVerificationEmailTemplate(params: UpdateCustomVerificationEmailTemplateRequest): Request[UpdateCustomVerificationEmailTemplateResponse, AWSError] = js.native
   def updateCustomVerificationEmailTemplate(

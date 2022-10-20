@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__token-list"
-version := "2.19.0-765b56"
+version := "2.20.0-fdf963"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

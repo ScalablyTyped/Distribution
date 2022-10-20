@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "secret-blob"
-version := "1.1-dt-20220829Z-1cd7ec"
+version := "1.1-dt-20220829Z-f118ee"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "sodium-native" % "2.3-dt-20211202Z-194750",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "sodium-native" % "2.3-dt-20211202Z-a1717b",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

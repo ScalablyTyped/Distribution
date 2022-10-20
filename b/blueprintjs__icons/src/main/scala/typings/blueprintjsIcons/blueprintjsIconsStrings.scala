@@ -408,6 +408,13 @@ object blueprintjsIconsStrings {
   inline def Asterisk: Asterisk = "Asterisk".asInstanceOf[Asterisk]
   
   @js.native
+  sealed trait At
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def At: At = "At".asInstanceOf[At]
+  
+  @js.native
   sealed trait AutomaticUpdates
     extends StObject
        with BlueprintIcons16Key
@@ -4488,6 +4495,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def asterisk_ : asterisk_ = "asterisk".asInstanceOf[asterisk_]
+  
+  @js.native
+  sealed trait at_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def at_ : at_ = "at".asInstanceOf[at_]
   
   @js.native
   sealed trait `automatic-updates`

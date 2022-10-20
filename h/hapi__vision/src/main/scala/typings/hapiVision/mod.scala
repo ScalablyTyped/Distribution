@@ -3,6 +3,7 @@ package typings.hapiVision
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiVision.anon.Context
@@ -284,7 +285,7 @@ object mod extends Shortcut {
       * When rendering views, the global context will be merged with any context object specified on the handler or using reply.view().
       * When multiple context objects are used, values from the global context always have lowest precedence.
       */
-    var context: js.UndefOr[js.Object | (js.Function1[/* request */ Request, js.Object])] = js.undefined
+    var context: js.UndefOr[js.Object | (js.Function1[/* request */ Request[ReqRefDefaults], js.Object])] = js.undefined
     
     /** the text encoding used by the templates when reading the files and outputting the result. Defaults to 'utf8'. */
     var encoding: js.UndefOr[String] = js.undefined
@@ -345,9 +346,9 @@ object mod extends Shortcut {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setContext(value: js.Object | (js.Function1[/* request */ Request, js.Object])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Object | (js.Function1[/* request */ Request[ReqRefDefaults], js.Object])): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setContextFunction1(value: /* request */ Request => js.Object): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+      inline def setContextFunction1(value: /* request */ Request[ReqRefDefaults] => js.Object): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       

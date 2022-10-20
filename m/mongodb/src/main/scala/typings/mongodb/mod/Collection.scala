@@ -507,7 +507,7 @@ open class Collection[TSchema /* <: Document */] () extends StObject {
     *
     * @throws MongoNotConnectedError
     * @remarks
-    * **NOTE:** MongoClient must be connected prior to calling this method due to a known limitation in this legacy implemenation.
+    * **NOTE:** MongoClient must be connected prior to calling this method due to a known limitation in this legacy implementation.
     * However, `collection.bulkWrite()` provides an equivalent API that does not require prior connecting.
     */
   def initializeOrderedBulkOp(): OrderedBulkOperation = js.native
@@ -518,7 +518,7 @@ open class Collection[TSchema /* <: Document */] () extends StObject {
     *
     * @throws MongoNotConnectedError
     * @remarks
-    * **NOTE:** MongoClient must be connected prior to calling this method due to a known limitation in this legacy implemenation.
+    * **NOTE:** MongoClient must be connected prior to calling this method due to a known limitation in this legacy implementation.
     * However, `collection.bulkWrite()` provides an equivalent API that does not require prior connecting.
     */
   def initializeUnorderedBulkOp(): UnorderedBulkOperation = js.native
@@ -830,7 +830,7 @@ open class Collection[TSchema /* <: Document */] () extends StObject {
     * Create a new Change Stream, watching for new changes (insertions, updates, replacements, deletions, and invalidations) in this collection.
     *
     * @remarks
-    * watch() accepts two generic arguments for distinct usecases:
+    * watch() accepts two generic arguments for distinct use cases:
     * - The first is to override the schema that may be defined for this specific collection
     * - The second is to override the shape of the change stream document entirely, if it is not provided the type will default to ChangeStreamDocument of the first argument
     * @example

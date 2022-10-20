@@ -12,7 +12,7 @@ trait DeleteSlackChannelConfigurationRequest extends StObject {
   var channelId: typings.awsSdk.clientsSupportappMod.channelId
   
   /**
-    * The team ID in Slack. This ID uniquely identifies a Slack workspace.
+    * The team ID in Slack. This ID uniquely identifies a Slack workspace, such as T012ABCDEFG.
     */
   var teamId: typings.awsSdk.clientsSupportappMod.teamId
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethers
 
-Typings are for version 5.7.1
+Typings are for version 5.7.2
 
 ## Library description:
 Umbrella package for most common Ethers libraries.

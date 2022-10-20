@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Destination extends StObject {
   
   /**
-    *  The location of the service. For service-linked channels, this is the name of the Amazon Web Services service. 
+    * For service-linked channels, the value is the name of the Amazon Web Services service.
     */
   var Location: typings.awsSdk.clientsCloudtrailMod.Location
   
   /**
-    *  The type of service. For service-linked channels, the value is AWS_SERVICE. 
+    * The type of destination for events arriving from a channel. For service-linked channels, the value is AWS_SERVICE.
     */
   var Type: DestinationType
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DnsProperties extends StObject {
   
   /**
-    * The ID for the Route 53 hosted zone that Cloud Map creates when you create a namespace.
+    * The ID for the Route 53 hosted zone that Cloud Map creates when you create a namespace.
     */
   var HostedZoneId: js.UndefOr[ResourceId] = js.undefined
   

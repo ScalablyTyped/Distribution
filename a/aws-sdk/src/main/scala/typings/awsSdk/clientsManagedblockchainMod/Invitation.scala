@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Invitation extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the invitation. For more information about ARNs and their format, see Amazon Resource Names (ARNs) in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the invitation. For more information about ARNs and their format, see Amazon Resource Names (ARNs) in the Amazon Web Services General Reference.
     */
   var Arn: js.UndefOr[ArnString] = js.undefined
   
@@ -29,7 +29,7 @@ trait Invitation extends StObject {
   var NetworkSummary: js.UndefOr[typings.awsSdk.clientsManagedblockchainMod.NetworkSummary] = js.undefined
   
   /**
-    * The status of the invitation:    PENDING - The invitee has not created a member to join the network, and the invitation has not yet expired.    ACCEPTING - The invitee has begun creating a member, and creation has not yet completed.    ACCEPTED - The invitee created a member and joined the network using the InvitationID.    REJECTED - The invitee rejected the invitation.    EXPIRED - The invitee neither created a member nor rejected the invitation before the ExpirationDate.  
+    * The status of the invitation:    PENDING - The invitee hasn't created a member to join the network, and the invitation hasn't yet expired.    ACCEPTING - The invitee has begun creating a member, and creation hasn't yet completed.    ACCEPTED - The invitee created a member and joined the network using the InvitationID.    REJECTED - The invitee rejected the invitation.    EXPIRED - The invitee neither created a member nor rejected the invitation before the ExpirationDate.  
     */
   var Status: js.UndefOr[InvitationStatus] = js.undefined
 }

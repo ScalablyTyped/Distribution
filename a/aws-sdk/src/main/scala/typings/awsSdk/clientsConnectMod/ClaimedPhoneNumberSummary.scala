@@ -32,7 +32,7 @@ trait ClaimedPhoneNumberSummary extends StObject {
   var PhoneNumberId: js.UndefOr[typings.awsSdk.clientsConnectMod.PhoneNumberId] = js.undefined
   
   /**
-    * The status of the phone number.
+    * The status of the phone number.    CLAIMED means the previous ClaimedPhoneNumber or UpdatePhoneNumber operation succeeded.    IN_PROGRESS means a ClaimedPhoneNumber or UpdatePhoneNumber operation is still in progress and has not yet completed. You can call DescribePhoneNumber at a later time to verify if the previous operation has completed.    FAILED indicates that the previous ClaimedPhoneNumber or UpdatePhoneNumber operation has failed. It will include a message indicating the failure reason. A common reason for a failure may be that the TargetArn value you are claiming or updating a phone number to has reached its limit of total claimed numbers. If you received a FAILED status from a ClaimPhoneNumber API call, you have one day to retry claiming the phone number before the number is released back to the inventory for other customers to claim.    You will not be billed for the phone number during the 1-day period if number claiming fails.  
     */
   var PhoneNumberStatus: js.UndefOr[typings.awsSdk.clientsConnectMod.PhoneNumberStatus] = js.undefined
   
@@ -47,7 +47,7 @@ trait ClaimedPhoneNumberSummary extends StObject {
   var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to.
+    * The Amazon Resource Name (ARN) for Amazon Connect instances or traffic distribution groups that phone numbers are claimed to.
     */
   var TargetArn: js.UndefOr[ARN] = js.undefined
 }

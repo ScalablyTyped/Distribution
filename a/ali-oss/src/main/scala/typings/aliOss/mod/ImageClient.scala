@@ -15,6 +15,12 @@ open class ImageClient protected () extends StObject {
   def this(options: ImageClientOptions) = this()
   
   /**
+    * Basically the same as signatureUrl, if refreshSTSToken is configured asyncSignatureUrl will refresh stsToken
+    */
+  def asyncSignatureUrl(name: String): js.Promise[String] = js.native
+  def asyncSignatureUrl(name: String, options: SignatureUrlOptions): js.Promise[String] = js.native
+  
+  /**
     * todo
     */
   def deleteStyle(styleName: String): js.Promise[NormalSuccessResponse] = js.native

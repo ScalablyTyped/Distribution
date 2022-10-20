@@ -1,8 +1,8 @@
 package typings.ngPackagr
 
 import typings.injectionJs.providerMod.Provider
-import typings.ngPackagr.buildCommandMod.CliArguments
-import typings.ngPackagr.commandMod.Command
+import typings.ngPackagr.libCommandsBuildDotcommandMod.CliArguments
+import typings.ngPackagr.libCommandsCommandMod.Command
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ object mod {
   @JSImport("ng-packagr", "NgPackagr")
   @js.native
   open class NgPackagr_ protected ()
-    extends typings.ngPackagr.packagrMod.NgPackagr_ {
+    extends typings.ngPackagr.libPackagrMod.NgPackagr_ {
     def this(providers: js.Array[Provider]) = this()
   }
   
@@ -27,7 +27,7 @@ object mod {
   inline def execute[A, R](command: Command[A, R]): js.Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[R]]
   inline def execute[A, R](command: Command[A, R], args: A): js.Promise[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[R]]
   
-  inline def ngPackagr(): typings.ngPackagr.packagrMod.NgPackagr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ngPackagr")().asInstanceOf[typings.ngPackagr.packagrMod.NgPackagr_]
+  inline def ngPackagr(): typings.ngPackagr.libPackagrMod.NgPackagr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ngPackagr")().asInstanceOf[typings.ngPackagr.libPackagrMod.NgPackagr_]
   
   @JSImport("ng-packagr", "version")
   @js.native

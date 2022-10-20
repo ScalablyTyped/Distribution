@@ -1,7 +1,7 @@
 
 # Scala.js typings for roarr
 
-Typings are for version 7.12.3
+Typings are for version 7.14.0
 
 ## Library description:
 JSON logger for Node.js and browser.

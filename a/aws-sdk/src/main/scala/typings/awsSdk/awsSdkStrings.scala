@@ -433,6 +433,7 @@ import typings.awsSdk.clientsCloudsearchMod._IndexFieldType
 import typings.awsSdk.clientsCloudsearchMod._PartitionInstanceType
 import typings.awsSdk.clientsCloudsearchMod._SuggesterFuzzyMatching
 import typings.awsSdk.clientsCloudsearchdomainMod._QueryParser
+import typings.awsSdk.clientsCloudtrailMod._DeliveryStatus
 import typings.awsSdk.clientsCloudtrailMod._DestinationType
 import typings.awsSdk.clientsCloudtrailMod._EventDataStoreStatus
 import typings.awsSdk.clientsCloudtrailMod._ImportFailureStatus
@@ -717,6 +718,7 @@ import typings.awsSdk.clientsConnectMod._ReferenceType
 import typings.awsSdk.clientsConnectMod._StringComparisonType
 import typings.awsSdk.clientsConnectMod._TaskTemplateFieldType
 import typings.awsSdk.clientsConnectMod._TaskTemplateStatus
+import typings.awsSdk.clientsConnectMod._TrafficDistributionGroupStatus
 import typings.awsSdk.clientsConnectMod._UseCaseType
 import typings.awsSdk.clientsConnectMod._VocabularyLanguageCode
 import typings.awsSdk.clientsConnectMod._VocabularyState
@@ -2205,6 +2207,7 @@ import typings.awsSdk.clientsMacie2Mod._UsageStatisticsSortKey
 import typings.awsSdk.clientsMacie2Mod._UsageType
 import typings.awsSdk.clientsMacie2Mod._UserIdentityType
 import typings.awsSdk.clientsMacieMod._S3OneTimeClassificationType
+import typings.awsSdk.clientsManagedblockchainMod._AccessorStatus
 import typings.awsSdk.clientsManagedblockchainMod._InvitationStatus
 import typings.awsSdk.clientsManagedblockchainMod._NodeStatus
 import typings.awsSdk.clientsManagedblockchainMod._ProposalStatus
@@ -3060,7 +3063,6 @@ import typings.awsSdk.clientsPinpointMod._AttributeType
 import typings.awsSdk.clientsPinpointMod._ButtonAction
 import typings.awsSdk.clientsPinpointMod._CampaignStatus
 import typings.awsSdk.clientsPinpointMod._ChannelType
-import typings.awsSdk.clientsPinpointMod._DeliveryStatus
 import typings.awsSdk.clientsPinpointMod._DimensionType
 import typings.awsSdk.clientsPinpointMod._Duration
 import typings.awsSdk.clientsPinpointMod._EndpointTypesElement
@@ -3631,6 +3633,7 @@ import typings.awsSdk.clientsServicecatalogappregistryMod._SyncAction
 import typings.awsSdk.clientsServicediscoveryMod._CustomHealthStatus
 import typings.awsSdk.clientsServicediscoveryMod._FilterCondition
 import typings.awsSdk.clientsServicediscoveryMod._HealthStatusFilter
+import typings.awsSdk.clientsServicediscoveryMod._NamespaceFilterName
 import typings.awsSdk.clientsServicediscoveryMod._NamespaceType
 import typings.awsSdk.clientsServicediscoveryMod._OperationFilterName
 import typings.awsSdk.clientsServicediscoveryMod._OperationTargetType
@@ -3646,7 +3649,6 @@ import typings.awsSdk.clientsSesMod._CustomMailFromStatus
 import typings.awsSdk.clientsSesMod._DsnAction
 import typings.awsSdk.clientsSesMod._ReceiptFilterPolicy
 import typings.awsSdk.clientsSesMod._SNSActionEncoding
-import typings.awsSdk.clientsSesMod._VerificationStatus
 import typings.awsSdk.clientsSesv2Mod._BulkEmailStatus
 import typings.awsSdk.clientsSesv2Mod._ContactLanguage
 import typings.awsSdk.clientsSesv2Mod._ContactListImportAction
@@ -3654,9 +3656,11 @@ import typings.awsSdk.clientsSesv2Mod._DkimSigningAttributesOrigin
 import typings.awsSdk.clientsSesv2Mod._DkimSigningKeyLength
 import typings.awsSdk.clientsSesv2Mod._ImportDestinationType
 import typings.awsSdk.clientsSesv2Mod._MailType
+import typings.awsSdk.clientsSesv2Mod._ScalingMode
 import typings.awsSdk.clientsSesv2Mod._SubscriptionStatus
 import typings.awsSdk.clientsSesv2Mod._SuppressionListImportAction
 import typings.awsSdk.clientsSesv2Mod._SuppressionListReason
+import typings.awsSdk.clientsSesv2Mod._VerificationStatus
 import typings.awsSdk.clientsShieldMod._ApplicationLayerAutomaticResponseStatus
 import typings.awsSdk.clientsShieldMod._AttackLayer
 import typings.awsSdk.clientsShieldMod._AttackPropertyIdentifier
@@ -5599,7 +5603,6 @@ object awsSdkStrings {
   sealed trait `2020-10-01`
     extends StObject
        with typings.awsSdk.clientsEmrcontainersMod._apiVersion
-  inline def `2020-10-01`: `2020-10-01` = "2020-10-01".asInstanceOf[`2020-10-01`]
   
   @js.native
   sealed trait `2020-10-19`
@@ -6038,6 +6041,7 @@ object awsSdkStrings {
        with _BusinessReportFailureCode
        with _DashboardErrorType
        with _DataSourceErrorInfoType
+       with _DeliveryStatus
        with _ErrorCategory
        with _ErrorCode
        with typings.awsSdk.clientsInspector2Mod._ErrorCode
@@ -6057,6 +6061,12 @@ object awsSdkStrings {
     extends StObject
        with _Code
   inline def ACCESS_DENIED_EXCEPTION: ACCESS_DENIED_EXCEPTION = "ACCESS_DENIED_EXCEPTION".asInstanceOf[ACCESS_DENIED_EXCEPTION]
+  
+  @js.native
+  sealed trait ACCESS_DENIED_SIGNING_FILE
+    extends StObject
+       with _DeliveryStatus
+  inline def ACCESS_DENIED_SIGNING_FILE: ACCESS_DENIED_SIGNING_FILE = "ACCESS_DENIED_SIGNING_FILE".asInstanceOf[ACCESS_DENIED_SIGNING_FILE]
   
   @js.native
   sealed trait ACCESS_ENDPOINTS
@@ -6452,6 +6462,7 @@ object awsSdkStrings {
        with _TestGridSessionStatus
        with _ThesaurusStatus
        with _ThreatIntelSetStatus
+       with _TrafficDistributionGroupStatus
        with _TransactionStatus
        with _TransactionStatusFilter
        with _UserStatusType
@@ -9422,6 +9433,7 @@ object awsSdkStrings {
   @js.native
   sealed trait AVAILABLE
     extends StObject
+       with _AccessorStatus
        with _AliasLifecycle
        with _ApiCacheStatus
        with _AttachmentState
@@ -9697,6 +9709,17 @@ object awsSdkStrings {
   inline def AWSColonColonApiGatewayV2ColonColonStage: AWSColonColonApiGatewayV2ColonColonStage = "AWS::ApiGatewayV2::Stage".asInstanceOf[AWSColonColonApiGatewayV2ColonColonStage]
   
   @js.native
+  sealed trait AWSColonColonAppConfigColonColonApplication
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait AWSColonColonAppSyncColonColonGraphQLApi
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonAppSyncColonColonGraphQLApi: AWSColonColonAppSyncColonColonGraphQLApi = "AWS::AppSync::GraphQLApi".asInstanceOf[AWSColonColonAppSyncColonColonGraphQLApi]
+  
+  @js.native
   sealed trait AWSColonColonAthenaColonColonDataCatalog
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
@@ -9857,6 +9880,41 @@ object awsSdkStrings {
   inline def AWSColonColonDMSColonColonReplicationSubnetGroup: AWSColonColonDMSColonColonReplicationSubnetGroup = "AWS::DMS::ReplicationSubnetGroup".asInstanceOf[AWSColonColonDMSColonColonReplicationSubnetGroup]
   
   @js.native
+  sealed trait AWSColonColonDataSyncColonColonLocationEFS
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonDataSyncColonColonLocationEFS: AWSColonColonDataSyncColonColonLocationEFS = "AWS::DataSync::LocationEFS".asInstanceOf[AWSColonColonDataSyncColonColonLocationEFS]
+  
+  @js.native
+  sealed trait AWSColonColonDataSyncColonColonLocationFSxLustre
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonDataSyncColonColonLocationFSxLustre: AWSColonColonDataSyncColonColonLocationFSxLustre = "AWS::DataSync::LocationFSxLustre".asInstanceOf[AWSColonColonDataSyncColonColonLocationFSxLustre]
+  
+  @js.native
+  sealed trait AWSColonColonDataSyncColonColonLocationNFS
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait AWSColonColonDataSyncColonColonLocationS3
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonDataSyncColonColonLocationS3: AWSColonColonDataSyncColonColonLocationS3 = "AWS::DataSync::LocationS3".asInstanceOf[AWSColonColonDataSyncColonColonLocationS3]
+  
+  @js.native
+  sealed trait AWSColonColonDataSyncColonColonLocationSMB
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonDataSyncColonColonLocationSMB: AWSColonColonDataSyncColonColonLocationSMB = "AWS::DataSync::LocationSMB".asInstanceOf[AWSColonColonDataSyncColonColonLocationSMB]
+  
+  @js.native
+  sealed trait AWSColonColonDataSyncColonColonTask
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonDataSyncColonColonTask: AWSColonColonDataSyncColonColonTask = "AWS::DataSync::Task".asInstanceOf[AWSColonColonDataSyncColonColonTask]
+  
+  @js.native
   sealed trait AWSColonColonDetectiveColonColonGraph
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
@@ -9924,6 +9982,12 @@ object awsSdkStrings {
   sealed trait AWSColonColonEC2ColonColonNetworkAcl
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait AWSColonColonEC2ColonColonNetworkInsightsAccessScopeAnalysis
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonEC2ColonColonNetworkInsightsAccessScopeAnalysis: AWSColonColonEC2ColonColonNetworkInsightsAccessScopeAnalysis = "AWS::EC2::NetworkInsightsAccessScopeAnalysis".asInstanceOf[AWSColonColonEC2ColonColonNetworkInsightsAccessScopeAnalysis]
   
   @js.native
   sealed trait AWSColonColonEC2ColonColonNetworkInterface
@@ -10058,6 +10122,12 @@ object awsSdkStrings {
   inline def AWSColonColonEKSColonColonCluster: AWSColonColonEKSColonColonCluster = "AWS::EKS::Cluster".asInstanceOf[AWSColonColonEKSColonColonCluster]
   
   @js.native
+  sealed trait AWSColonColonEKSColonColonFargateProfile
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonEKSColonColonFargateProfile: AWSColonColonEKSColonColonFargateProfile = "AWS::EKS::FargateProfile".asInstanceOf[AWSColonColonEKSColonColonFargateProfile]
+  
+  @js.native
   sealed trait AWSColonColonEMRColonColonSecurityConfiguration
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
@@ -10121,10 +10191,26 @@ object awsSdkStrings {
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait AWSColonColonGlueColonColonJob
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
   sealed trait AWSColonColonGuardDutyColonColonDetector
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   inline def AWSColonColonGuardDutyColonColonDetector: AWSColonColonGuardDutyColonColonDetector = "AWS::GuardDuty::Detector".asInstanceOf[AWSColonColonGuardDutyColonColonDetector]
+  
+  @js.native
+  sealed trait AWSColonColonGuardDutyColonColonIPSet
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  
+  @js.native
+  sealed trait AWSColonColonGuardDutyColonColonThreatIntelSet
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonGuardDutyColonColonThreatIntelSet: AWSColonColonGuardDutyColonColonThreatIntelSet = "AWS::GuardDuty::ThreatIntelSet".asInstanceOf[AWSColonColonGuardDutyColonColonThreatIntelSet]
   
   @js.native
   sealed trait AWSColonColonIAMColonColonAssumeRolePolicyDocument
@@ -10307,6 +10393,12 @@ object awsSdkStrings {
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
+  sealed trait AWSColonColonRoute53ColonColonHostedZone
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonRoute53ColonColonHostedZone: AWSColonColonRoute53ColonColonHostedZone = "AWS::Route53::HostedZone".asInstanceOf[AWSColonColonRoute53ColonColonHostedZone]
+  
+  @js.native
   sealed trait AWSColonColonRoute53ResolverColonColonResolverEndpoint
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
@@ -10353,6 +10445,18 @@ object awsSdkStrings {
     extends StObject
        with _ValidatePolicyResourceType
   inline def AWSColonColonS3ObjectLambdaColonColonAccessPoint: AWSColonColonS3ObjectLambdaColonColonAccessPoint = "AWS::S3ObjectLambda::AccessPoint".asInstanceOf[AWSColonColonS3ObjectLambdaColonColonAccessPoint]
+  
+  @js.native
+  sealed trait AWSColonColonSESColonColonConfigurationSet
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonSESColonColonConfigurationSet: AWSColonColonSESColonColonConfigurationSet = "AWS::SES::ConfigurationSet".asInstanceOf[AWSColonColonSESColonColonConfigurationSet]
+  
+  @js.native
+  sealed trait AWSColonColonSESColonColonContactList
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonSESColonColonContactList: AWSColonColonSESColonColonContactList = "AWS::SES::ContactList".asInstanceOf[AWSColonColonSESColonColonContactList]
   
   @js.native
   sealed trait AWSColonColonSNSColonColonTopic
@@ -10407,6 +10511,12 @@ object awsSdkStrings {
   inline def AWSColonColonSageMakerColonColonModel: AWSColonColonSageMakerColonColonModel = "AWS::SageMaker::Model".asInstanceOf[AWSColonColonSageMakerColonColonModel]
   
   @js.native
+  sealed trait AWSColonColonSageMakerColonColonNotebookInstanceLifecycleConfig
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonSageMakerColonColonNotebookInstanceLifecycleConfig: AWSColonColonSageMakerColonColonNotebookInstanceLifecycleConfig = "AWS::SageMaker::NotebookInstanceLifecycleConfig".asInstanceOf[AWSColonColonSageMakerColonColonNotebookInstanceLifecycleConfig]
+  
+  @js.native
   sealed trait AWSColonColonSageMakerColonColonProcessingJob
     extends StObject
        with _CandidateStepType
@@ -10423,6 +10533,11 @@ object awsSdkStrings {
     extends StObject
        with _CandidateStepType
   inline def AWSColonColonSageMakerColonColonTransformJob: AWSColonColonSageMakerColonColonTransformJob = "AWS::SageMaker::TransformJob".asInstanceOf[AWSColonColonSageMakerColonColonTransformJob]
+  
+  @js.native
+  sealed trait AWSColonColonSageMakerColonColonWorkteam
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
   sealed trait AWSColonColonSecretsManagerColonColonSecret
@@ -10448,6 +10563,17 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsConfigserviceMod._ResourceType
   inline def AWSColonColonServiceCatalogColonColonPortfolio: AWSColonColonServiceCatalogColonColonPortfolio = "AWS::ServiceCatalog::Portfolio".asInstanceOf[AWSColonColonServiceCatalogColonColonPortfolio]
+  
+  @js.native
+  sealed trait AWSColonColonServiceDiscoveryColonColonPublicDnsNamespace
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
+  inline def AWSColonColonServiceDiscoveryColonColonPublicDnsNamespace: AWSColonColonServiceDiscoveryColonColonPublicDnsNamespace = "AWS::ServiceDiscovery::PublicDnsNamespace".asInstanceOf[AWSColonColonServiceDiscoveryColonColonPublicDnsNamespace]
+  
+  @js.native
+  sealed trait AWSColonColonServiceDiscoveryColonColonService
+    extends StObject
+       with typings.awsSdk.clientsConfigserviceMod._ResourceType
   
   @js.native
   sealed trait AWSColonColonShieldColonColonProtection
@@ -12694,7 +12820,6 @@ object awsSdkStrings {
     extends StObject
        with _AttributeType
        with _RelativeFileVersionEnum
-  inline def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   
   @js.native
   sealed trait BEFORE_PROGRAM
@@ -12707,6 +12832,7 @@ object awsSdkStrings {
        with _ComparisonOperator
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._ComparisonOperator
        with typings.awsSdk.clientsLakeformationMod._ComparisonOperator
+       with _FilterCondition
        with _InventoryFilterCondition
        with typings.awsSdk.clientsRoute53domainsMod._Operator
   inline def BEGINS_WITH: BEGINS_WITH = "BEGINS_WITH".asInstanceOf[BEGINS_WITH]
@@ -12900,6 +13026,9 @@ object awsSdkStrings {
   sealed trait BILLING_ENTITY
     extends StObject
        with _Dimension
+  
+  @js.native
+  sealed trait BILLING_TOKEN extends StObject
   
   @js.native
   sealed trait BINARY
@@ -14108,7 +14237,6 @@ object awsSdkStrings {
   sealed trait BreachedUnattainable
     extends StObject
        with _RecommendationComplianceStatus
-  inline def BreachedUnattainable: BreachedUnattainable = "BreachedUnattainable".asInstanceOf[BreachedUnattainable]
   
   @js.native
   sealed trait Brian_
@@ -14450,6 +14578,7 @@ object awsSdkStrings {
        with _ContactStatus
        with _CrawlState
        with _DataViewStatus
+       with _DeliveryStatus
        with typings.awsSdk.clientsProtonMod._DeploymentStatus
        with _ErrorCategory
        with _ExperimentStatus
@@ -17686,6 +17815,7 @@ object awsSdkStrings {
        with typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient._ReplicaStatus
        with typings.awsSdk.clientsQuicksightMod._ResourceStatus
        with _RuleGroupsNamespaceStatusCode
+       with _TrafficDistributionGroupStatus
        with _VocabularyState
        with _WorkspaceStatus
        with _WorkspaceStatusCode
@@ -17698,6 +17828,7 @@ object awsSdkStrings {
        with _InstanceAccessControlAttributeConfigurationStatus
        with _InstanceStatus
        with typings.awsSdk.clientsQuicksightMod._ResourceStatus
+       with _TrafficDistributionGroupStatus
        with _VocabularyState
   inline def CREATION_IN_PROGRESS: CREATION_IN_PROGRESS = "CREATION_IN_PROGRESS".asInstanceOf[CREATION_IN_PROGRESS]
   
@@ -20660,6 +20791,7 @@ object awsSdkStrings {
   @js.native
   sealed trait DELETED
     extends StObject
+       with _AccessorStatus
        with _AccountRoleStatus
        with _AppStatus
        with _AssistantStatus
@@ -21158,6 +21290,7 @@ object awsSdkStrings {
   sealed trait DELETION_FAILED
     extends StObject
        with _MigrationWorkflowStatusEnum
+       with _TrafficDistributionGroupStatus
        with _WorkspaceStatus
   inline def DELETION_FAILED: DELETION_FAILED = "DELETION_FAILED".asInstanceOf[DELETION_FAILED]
   
@@ -23218,7 +23351,7 @@ object awsSdkStrings {
   @js.native
   sealed trait DUPLICATE
     extends StObject
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
   inline def DUPLICATE: DUPLICATE = "DUPLICATE".asInstanceOf[DUPLICATE]
   
   @js.native
@@ -27542,6 +27675,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsFinspacedataMod._DatasetStatus
        with _DedicatedTenancyModificationStateEnum
        with _DeletionTaskStatusType
+       with _DeliveryStatus
        with _DeploymentRolloutState
        with typings.awsSdk.clientsGamesparksMod._DeploymentState
        with typings.awsSdk.clientsApigatewayv2Mod._DeploymentStatus
@@ -27761,6 +27895,7 @@ object awsSdkStrings {
        with _UploadStatus
        with typings.awsSdk.clientsDevicefarmMod._UploadStatus
        with _ValidationStatus
+       with _VerificationStatus
        with _VideoJobStatus
        with typings.awsSdk.clientsTranscribeserviceMod._VocabularyState
        with _VolumeLifecycle
@@ -27840,6 +27975,12 @@ object awsSdkStrings {
     extends StObject
        with _IpAddressStatus
   inline def FAILED_RESOURCE_GONE: FAILED_RESOURCE_GONE = "FAILED_RESOURCE_GONE".asInstanceOf[FAILED_RESOURCE_GONE]
+  
+  @js.native
+  sealed trait FAILED_SIGNING_FILE
+    extends StObject
+       with _DeliveryStatus
+  inline def FAILED_SIGNING_FILE: FAILED_SIGNING_FILE = "FAILED_SIGNING_FILE".asInstanceOf[FAILED_SIGNING_FILE]
   
   @js.native
   sealed trait FAILED_TO_ASSOCIATE
@@ -29687,7 +29828,7 @@ object awsSdkStrings {
        with _UpdateStatus
        with _UserImportJobStatusType
        with _UserProfileStatus
-       with _VerificationStatus
+       with typings.awsSdk.clientsSesMod._VerificationStatus
        with _WorkforceStatus
        with _WorldExportJobStatus
        with _WorldGenerationJobStatus
@@ -29717,7 +29858,6 @@ object awsSdkStrings {
     extends StObject
        with _ConditionOutcome
        with typings.awsSdk.clientsCloudformationMod._Replacement
-  inline def False_ : False_ = "False".asInstanceOf[False_]
   
   @js.native
   sealed trait Fargate_
@@ -30452,7 +30592,6 @@ object awsSdkStrings {
   sealed trait GLOBAL_ACCELERATOR
     extends StObject
        with _ProtectedResourceType
-  inline def GLOBAL_ACCELERATOR: GLOBAL_ACCELERATOR = "GLOBAL_ACCELERATOR".asInstanceOf[GLOBAL_ACCELERATOR]
   
   @js.native
   sealed trait GLUE
@@ -31797,7 +31936,6 @@ object awsSdkStrings {
   sealed trait HELPFUL_RESOURCE
     extends StObject
        with _AdditionalResourceType
-  inline def HELPFUL_RESOURCE: HELPFUL_RESOURCE = "HELPFUL_RESOURCE".asInstanceOf[HELPFUL_RESOURCE]
   
   @js.native
   sealed trait HER
@@ -32410,6 +32548,12 @@ object awsSdkStrings {
     extends StObject
        with _LoadBalancerProtocol
   inline def HTTP_HTTPS: HTTP_HTTPS = "HTTP_HTTPS".asInstanceOf[HTTP_HTTPS]
+  
+  @js.native
+  sealed trait HTTP_NAME
+    extends StObject
+       with _NamespaceFilterName
+  inline def HTTP_NAME: HTTP_NAME = "HTTP_NAME".asInstanceOf[HTTP_NAME]
   
   @js.native
   sealed trait HTTP_PROXY
@@ -35877,7 +36021,6 @@ object awsSdkStrings {
   sealed trait InstanceFailure
     extends StObject
        with _TriggerEventType
-  inline def InstanceFailure: InstanceFailure = "InstanceFailure".asInstanceOf[InstanceFailure]
   
   @js.native
   sealed trait InstanceFleetUnits
@@ -38353,7 +38496,6 @@ object awsSdkStrings {
        with _GeoMatchConstraintValue
        with typings.awsSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _PhoneNumberCountryCode
-  inline def LI: LI = "LI".asInstanceOf[LI]
   
   @js.native
   sealed trait LICENSE_PLATE
@@ -39911,6 +40053,7 @@ object awsSdkStrings {
     extends StObject
        with _CEType
        with _ResourceManagedStatus
+       with _ScalingMode
        with _policyType
   
   @js.native
@@ -42385,7 +42528,6 @@ object awsSdkStrings {
   sealed trait MissedCount
     extends StObject
        with _AggregatedUtterancesSortAttribute
-  inline def MissedCount: MissedCount = "MissedCount".asInstanceOf[MissedCount]
   
   @js.native
   sealed trait Missed_
@@ -42661,6 +42803,7 @@ object awsSdkStrings {
        with _ListDevicesSortBy
        with _ListEdgeDeploymentPlansSortBy
        with _ListEdgePackagingJobsSortBy
+       with _NamespaceFilterName
        with _PatchFilterKey
        with _PiiEntityType
        with typings.awsSdk.clientsTranscribeserviceMod._PiiEntityType
@@ -42841,7 +42984,6 @@ object awsSdkStrings {
   sealed trait NEP
     extends StObject
        with _LanguageCode
-  inline def NEP: NEP = "NEP".asInstanceOf[NEP]
   
   @js.native
   sealed trait NETWORK
@@ -43922,6 +44064,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsServicecatalogMod._ShareStatus
        with typings.awsSdk.clientsMigrationhubMod._Status
        with typings.awsSdk.clientsCustomerprofilesMod._Status
+       with _VerificationStatus
        with _WorkloadImprovementStatus
   inline def NOT_STARTED: NOT_STARTED = "NOT_STARTED".asInstanceOf[NOT_STARTED]
   
@@ -44864,7 +45007,7 @@ object awsSdkStrings {
        with _DetailedAlgorithmStatus
        with _DetailedModelPackageStatus
        with typings.awsSdk.clientsLightsailMod._OperationStatus
-       with _VerificationStatus
+       with typings.awsSdk.clientsSesMod._VerificationStatus
   inline def NotStarted: NotStarted = "NotStarted".asInstanceOf[NotStarted]
   
   @js.native
@@ -45721,7 +45864,7 @@ object awsSdkStrings {
   @js.native
   sealed trait OPT_OUT
     extends StObject
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
        with _KeywordAction
        with _SubscriptionStatus
   inline def OPT_OUT: OPT_OUT = "OPT_OUT".asInstanceOf[OPT_OUT]
@@ -45883,7 +46026,6 @@ object awsSdkStrings {
   sealed trait OSX
     extends StObject
        with typings.awsSdk.clientsMobileMod._Platform
-  inline def OSX: OSX = "OSX".asInstanceOf[OSX]
   
   @js.native
   sealed trait OS_NAME
@@ -47138,6 +47280,7 @@ object awsSdkStrings {
        with _DataViewStatus
        with typings.awsSdk.clientsFinspacedataMod._DatasetStatus
        with _DedicatedTenancyModificationStateEnum
+       with _DeliveryStatus
        with typings.awsSdk.clientsGamesparksMod._DeploymentState
        with typings.awsSdk.clientsApigatewayv2Mod._DeploymentStatus
        with _DesiredStatus
@@ -47253,6 +47396,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsMwaaMod._UpdateStatus
        with _UserStatusType
        with _ValidationStatus
+       with _VerificationStatus
        with typings.awsSdk.clientsTranscribeserviceMod._VocabularyState
        with _VolumeLifecycle
        with _VpcLinkStatus
@@ -47395,10 +47539,12 @@ object awsSdkStrings {
   @js.native
   sealed trait PENDING_DELETION
     extends StObject
+       with _AccessorStatus
        with _AccountRoleStatus
        with _BackupState
        with _EventDataStoreStatus
        with typings.awsSdk.clientsRoute53recoverycontrolconfigMod._Status
+       with _TrafficDistributionGroupStatus
   inline def PENDING_DELETION: PENDING_DELETION = "PENDING_DELETION".asInstanceOf[PENDING_DELETION]
   
   @js.native
@@ -47650,7 +47796,7 @@ object awsSdkStrings {
   @js.native
   sealed trait PERMANENT_FAILURE
     extends StObject
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
   inline def PERMANENT_FAILURE: PERMANENT_FAILURE = "PERMANENT_FAILURE".asInstanceOf[PERMANENT_FAILURE]
   
   @js.native
@@ -47984,7 +48130,6 @@ object awsSdkStrings {
        with _DeviceAttribute
        with _DeviceFilterAttribute
        with _Dimension
-  inline def PLATFORM: PLATFORM = "PLATFORM".asInstanceOf[PLATFORM]
   
   @js.native
   sealed trait PLI
@@ -49722,7 +49867,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsCodedeployMod._TargetStatus
        with _UserImportJobStatusType
        with _UserProfileStatus
-       with _VerificationStatus
+       with typings.awsSdk.clientsSesMod._VerificationStatus
        with _WorldExportJobStatus
        with _WorldGenerationJobStatus
   inline def Pending_ : Pending_ = "Pending".asInstanceOf[Pending_]
@@ -51012,7 +51157,6 @@ object awsSdkStrings {
   sealed trait REAL_TIME_CONTACT_ANALYSIS_SEGMENTS
     extends StObject
        with _InstanceStorageResourceType
-  inline def REAL_TIME_CONTACT_ANALYSIS_SEGMENTS: REAL_TIME_CONTACT_ANALYSIS_SEGMENTS = "REAL_TIME_CONTACT_ANALYSIS_SEGMENTS".asInstanceOf[REAL_TIME_CONTACT_ANALYSIS_SEGMENTS]
   
   @js.native
   sealed trait REBOOT
@@ -52108,6 +52252,7 @@ object awsSdkStrings {
   @js.native
   sealed trait RESOURCE_NOT_FOUND
     extends StObject
+       with _DeliveryStatus
        with _ErrorCategory
        with typings.awsSdk.clientsMigrationhubrefactorspacesMod._ErrorCode
        with typings.awsSdk.clientsInspector2Mod._ErrorCode
@@ -56664,7 +56809,6 @@ object awsSdkStrings {
   sealed trait SINGLE_MASTER
     extends StObject
        with typings.awsSdk.clientsKinesisvideoMod._ChannelType
-  inline def SINGLE_MASTER: SINGLE_MASTER = "SINGLE_MASTER".asInstanceOf[SINGLE_MASTER]
   
   @js.native
   sealed trait SINGLE_METRIC
@@ -57975,6 +58119,7 @@ object awsSdkStrings {
        with _S3GlacierJobTier
        with _S3StorageClass
        with typings.awsSdk.clientsS3controlMod._S3StorageClass
+       with _ScalingMode
        with _ShippingOption
        with _SnowballType
        with _StateMachineType
@@ -58700,7 +58845,6 @@ object awsSdkStrings {
   sealed trait STREAM_CREATE_IN_PROGRESS
     extends StObject
        with _StreamingSessionStreamStatusCode
-  inline def STREAM_CREATE_IN_PROGRESS: STREAM_CREATE_IN_PROGRESS = "STREAM_CREATE_IN_PROGRESS".asInstanceOf[STREAM_CREATE_IN_PROGRESS]
   
   @js.native
   sealed trait STREAM_DELETED
@@ -59278,6 +59422,7 @@ object awsSdkStrings {
        with _DataViewStatus
        with typings.awsSdk.clientsFinspacedataMod._DatasetStatus
        with _DatasetStatusMessageCode
+       with _DeliveryStatus
        with typings.awsSdk.clientsSagemakeredgeMod._DeploymentStatus
        with _DkimStatus
        with typings.awsSdk.clientsSesv2Mod._DkimStatus
@@ -59309,13 +59454,14 @@ object awsSdkStrings {
        with _ShareStatusType
        with _TaskExecutionStatus
        with typings.awsSdk.clientsMwaaMod._UpdateStatus
+       with _VerificationStatus
        with _VerifySoftwareTokenResponseType
   inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
   @js.native
   sealed trait SUCCESSFUL
     extends StObject
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
        with _DetectMitigationActionExecutionStatus
        with _DetectMitigationActionsTaskStatus
        with typings.awsSdk.clientsRoute53domainsMod._OperationStatus
@@ -61045,7 +61191,7 @@ object awsSdkStrings {
        with _ResourceImportStatusType
        with _ResourceResolutionStatusType
        with _UsageRecordResultStatus
-       with _VerificationStatus
+       with typings.awsSdk.clientsSesMod._VerificationStatus
   inline def Success_ : Success_ = "Success".asInstanceOf[Success_]
   
   @js.native
@@ -61470,11 +61616,12 @@ object awsSdkStrings {
   @js.native
   sealed trait TEMPORARY_FAILURE
     extends StObject
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
        with _DkimStatus
        with typings.awsSdk.clientsSesv2Mod._DkimStatus
        with _MailFromDomainStatus
        with typings.awsSdk.clientsSesv2Mod._MailFromDomainStatus
+       with _VerificationStatus
   inline def TEMPORARY_FAILURE: TEMPORARY_FAILURE = "TEMPORARY_FAILURE".asInstanceOf[TEMPORARY_FAILURE]
   
   @js.native
@@ -62061,7 +62208,7 @@ object awsSdkStrings {
   sealed trait THROTTLED
     extends StObject
        with _AgentHealthCode
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
        with typings.awsSdk.clientsCodedeployMod._ErrorCode
        with _ExecutionErrorType
        with _GatewayResponseType
@@ -63055,6 +63202,7 @@ object awsSdkStrings {
   @js.native
   sealed trait TYPE
     extends StObject
+       with _NamespaceFilterName
        with _OperationFilterName
   inline def TYPE: TYPE = "TYPE".asInstanceOf[TYPE]
   
@@ -63290,7 +63438,7 @@ object awsSdkStrings {
     extends StObject
        with _BounceType
        with _CustomMailFromStatus
-       with _VerificationStatus
+       with typings.awsSdk.clientsSesMod._VerificationStatus
   inline def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   
   @js.native
@@ -64184,7 +64332,6 @@ object awsSdkStrings {
   sealed trait UNIQUE
     extends StObject
        with _StandardIdentifier
-  inline def UNIQUE: UNIQUE = "UNIQUE".asInstanceOf[UNIQUE]
   
   @js.native
   sealed trait UNIT
@@ -64224,6 +64371,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsWorkspacesMod._ConnectionState
        with _CsvHeaderOption
        with _DataSourceErrorInfoType
+       with _DeliveryStatus
        with _Ec2Platform
        with _EffectivePermission
        with _EmotionName
@@ -64276,7 +64424,7 @@ object awsSdkStrings {
   @js.native
   sealed trait UNKNOWN_FAILURE
     extends StObject
-       with _DeliveryStatus
+       with typings.awsSdk.clientsPinpointMod._DeliveryStatus
        with _DeviceStatusDetailCode
   inline def UNKNOWN_FAILURE: UNKNOWN_FAILURE = "UNKNOWN_FAILURE".asInstanceOf[UNKNOWN_FAILURE]
   
@@ -64705,6 +64853,7 @@ object awsSdkStrings {
        with _StreamingImageState
        with _StudioComponentState
        with _StudioState
+       with _TrafficDistributionGroupStatus
   inline def UPDATE_IN_PROGRESS: UPDATE_IN_PROGRESS = "UPDATE_IN_PROGRESS".asInstanceOf[UPDATE_IN_PROGRESS]
   
   @js.native
@@ -65497,7 +65646,6 @@ object awsSdkStrings {
   sealed trait UTF16
     extends StObject
        with _MsSmoothManifestEncoding
-  inline def UTF16: UTF16 = "UTF16".asInstanceOf[UTF16]
   
   @js.native
   sealed trait UTF8
@@ -66061,7 +66209,6 @@ object awsSdkStrings {
   sealed trait UtilizationMetricsVolumeWriteBytesPerSecondMaximum
     extends StObject
        with _ExportableVolumeField
-  inline def UtilizationMetricsVolumeWriteBytesPerSecondMaximum: UtilizationMetricsVolumeWriteBytesPerSecondMaximum = "UtilizationMetricsVolumeWriteBytesPerSecondMaximum".asInstanceOf[UtilizationMetricsVolumeWriteBytesPerSecondMaximum]
   
   @js.native
   sealed trait UtilizationMetricsVolumeWriteOpsPerSecondMaximum
@@ -69233,6 +69380,7 @@ object awsSdkStrings {
   sealed trait `ap-southeast-3`
     extends StObject
        with _AWSRegion
+       with _BucketLocationConstraint
        with _CloudWatchRegion
        with _ResourceRecordSetRegion
        with _VPCRegion
@@ -78101,6 +78249,11 @@ object awsSdkStrings {
   inline def managed_ : managed_ = "managed".asInstanceOf[managed_]
   
   @js.native
+  sealed trait management
+    extends StObject
+       with typings.awsSdk.clientsSupportappMod._AccountType
+  
+  @js.native
   sealed trait marketplace_
     extends StObject
        with _ProductCodeValues
@@ -78178,6 +78331,12 @@ object awsSdkStrings {
        with typings.awsSdk.clientsEcsMod._PlacementConstraintType
        with typings.awsSdk.clientsEventbridgeMod._PlacementConstraintType
   inline def memberOf: memberOf = "memberOf".asInstanceOf[memberOf]
+  
+  @js.native
+  sealed trait member_
+    extends StObject
+       with typings.awsSdk.clientsSupportappMod._AccountType
+  inline def member_ : member_ = "member".asInstanceOf[member_]
   
   @js.native
   sealed trait memcached_

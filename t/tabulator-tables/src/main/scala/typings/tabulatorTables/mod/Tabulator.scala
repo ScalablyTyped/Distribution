@@ -400,14 +400,14 @@ trait Tabulator extends StObject {
   /** You can change to show the next page using the previousPage function. */
   def nextPage(): js.Promise[Unit] = js.native
   
-  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
-  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
+  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
+  def off[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
     event: K,
     callback: /* import warning: importer.ImportType#apply Failed type conversion: tabulator-tables.tabulator-tables.EventCallBackMethods[K] */ js.Any
   ): Unit = js.native
   
-  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
-  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
+  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](event: K): Unit = js.native
+  def on[K /* <: /* keyof tabulator-tables.tabulator-tables.EventCallBackMethods */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 105, starting with typings.tabulatorTables.tabulatorTablesStrings.validationFailed, typings.tabulatorTables.tabulatorTablesStrings.scrollHorizontal, typings.tabulatorTables.tabulatorTablesStrings.scrollVertical */ Any */](
     event: K,
     callback: /* import warning: importer.ImportType#apply Failed type conversion: tabulator-tables.tabulator-tables.EventCallBackMethods[K] */ js.Any
   ): Unit = js.native

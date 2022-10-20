@@ -723,6 +723,14 @@ object tabulatorTablesStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
+  sealed trait menuClosed extends StObject
+  inline def menuClosed: menuClosed = "menuClosed".asInstanceOf[menuClosed]
+  
+  @js.native
+  sealed trait menuOpened extends StObject
+  inline def menuOpened: menuOpened = "menuOpened".asInstanceOf[menuOpened]
+  
+  @js.native
   sealed trait middle
     extends StObject
        with ScrollToColumnPosition
@@ -838,6 +846,14 @@ object tabulatorTablesStrings {
     extends StObject
        with _Formatter
   inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  
+  @js.native
+  sealed trait popupClosed extends StObject
+  inline def popupClosed: popupClosed = "popupClosed".asInstanceOf[popupClosed]
+  
+  @js.native
+  sealed trait popupOpen extends StObject
+  inline def popupOpen: popupOpen = "popupOpen".asInstanceOf[popupOpen]
   
   @js.native
   sealed trait portrait extends StObject

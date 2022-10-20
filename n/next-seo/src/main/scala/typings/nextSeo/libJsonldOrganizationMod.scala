@@ -19,7 +19,9 @@ object libJsonldOrganizationMod {
        with JsonLdProps {
     
     var address: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any) | (js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+        ])
       ] = js.undefined
     
     var contactPoints: js.UndefOr[
@@ -55,10 +57,16 @@ object libJsonldOrganizationMod {
     extension [Self <: OrganizationJsonLdProps](x: Self) {
       
       inline def setAddress(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any) | (js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+            ])
       ): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
       inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      
+      inline def setAddressVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any)*
+      ): Self = StObject.set(x, "address", js.Array(value*))
       
       inline def setContactPoints(
         value: js.Array[

@@ -11,7 +11,7 @@ trait ChangeStreamDropDocument
      with ChangeStreamDocumentCollectionUUID
      with ChangeStreamDocument[Any] {
   
-  /** Namespace the drop event occured on */
+  /** Namespace the drop event occurred on */
   var ns: ChangeStreamNameSpace
   
   /** Describes the type of operation represented in this change notification */

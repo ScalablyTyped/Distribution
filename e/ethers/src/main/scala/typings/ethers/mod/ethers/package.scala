@@ -16,4 +16,4 @@ inline def getDefaultProvider(network: Networkish, options: Any): BaseProvider =
 
 inline def logger: Logger = ^.asInstanceOf[js.Dynamic].selectDynamic("logger").asInstanceOf[Logger]
 
-inline def version: /* "ethers/5.7.1" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "ethers/5.7.1" */ String]
+inline def version: /* "ethers/5.7.2" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "ethers/5.7.2" */ String]

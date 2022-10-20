@@ -14,8 +14,8 @@ open class QuestionTagboxModel protected () extends QuestionCheckboxModel {
     */
   var allowClear: Boolean = js.native
   
-  def cleanCaption: String = js.native
-  def cleanCaption_=(`val`: String): Unit = js.native
+  def clearCaption: String = js.native
+  def clearCaption_=(`val`: String): Unit = js.native
   
   var dropdownListModel: DropdownMultiSelectListModel = js.native
   
@@ -28,7 +28,7 @@ open class QuestionTagboxModel protected () extends QuestionCheckboxModel {
     */
   var hideSelectedItems: Boolean = js.native
   
-  def locCleanCaption: LocalizableString = js.native
+  def locClearCaption: LocalizableString = js.native
   
   def locPlaceholder: LocalizableString = js.native
   

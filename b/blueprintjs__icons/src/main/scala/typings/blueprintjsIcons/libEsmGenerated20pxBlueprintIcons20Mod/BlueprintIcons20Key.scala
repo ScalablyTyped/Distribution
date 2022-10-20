@@ -51,6 +51,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blueprintjsIcons.blueprintjsIconsStrings.ArrowsHorizontal
   - typings.blueprintjsIcons.blueprintjsIconsStrings.ArrowsVertical
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Asterisk
+  - typings.blueprintjsIcons.blueprintjsIconsStrings.At
   - typings.blueprintjsIcons.blueprintjsIconsStrings.AutomaticUpdates
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Backlink
   - typings.blueprintjsIcons.blueprintjsIconsStrings.Badge
@@ -660,6 +661,8 @@ object BlueprintIcons20Key {
   inline def ArrowsVertical: typings.blueprintjsIcons.blueprintjsIconsStrings.ArrowsVertical = "ArrowsVertical".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.ArrowsVertical]
   
   inline def Asterisk: typings.blueprintjsIcons.blueprintjsIconsStrings.Asterisk = "Asterisk".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.Asterisk]
+  
+  inline def At: typings.blueprintjsIcons.blueprintjsIconsStrings.At = "At".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.At]
   
   inline def AutomaticUpdates: typings.blueprintjsIcons.blueprintjsIconsStrings.AutomaticUpdates = "AutomaticUpdates".asInstanceOf[typings.blueprintjsIcons.blueprintjsIconsStrings.AutomaticUpdates]
   

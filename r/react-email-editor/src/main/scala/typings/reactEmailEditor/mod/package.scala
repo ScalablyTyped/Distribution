@@ -1,6 +1,7 @@
 package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.reactEmailEditor.anon.Value
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,6 +28,8 @@ type FileUploadDoneCallback = js.Function1[/* data */ FileUploadDoneData, Unit]
 type SaveDesignCallback = js.Function1[/* data */ Design, Unit]
 
 type StringList = StringDictionary[String]
+
+type ToolPropertiesConfig = StringDictionary[Value]
 
 type ToolsConfig = StringDictionary[ToolConfig]
 

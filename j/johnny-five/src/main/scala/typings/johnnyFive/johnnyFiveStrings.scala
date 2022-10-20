@@ -75,6 +75,18 @@ object johnnyFiveStrings {
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait exit extends StObject
+  inline def exit: exit = "exit".asInstanceOf[exit]
+  
+  @js.native
+  sealed trait fail extends StObject
+  inline def fail: fail = "fail".asInstanceOf[fail]
+  
+  @js.native
   sealed trait high extends StObject
   inline def high: high = "high".asInstanceOf[high]
   
@@ -83,12 +95,20 @@ object johnnyFiveStrings {
   inline def hold: hold = "hold".asInstanceOf[hold]
   
   @js.native
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
+  
+  @js.native
   sealed trait line extends StObject
   inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait low extends StObject
   inline def low: low = "low".asInstanceOf[low]
+  
+  @js.native
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
   sealed trait motionend extends StObject
@@ -121,4 +141,8 @@ object johnnyFiveStrings {
   @js.native
   sealed trait up extends StObject
   inline def up: up = "up".asInstanceOf[up]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }

@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var authSource: js.UndefOr[String] = js.undefined
   
   /**
-    * Optionally enable client side auto encryption
+    * Optionally enable in-use auto encryption
     *
     * @remarks
     *  Automatic encryption is an enterprise only feature that only applies to operations on a collection. Automatic encryption is not supported for operations on a database or view, and operations that are not bypassed will result in error

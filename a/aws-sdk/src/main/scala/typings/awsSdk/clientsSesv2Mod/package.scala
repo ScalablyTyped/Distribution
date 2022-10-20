@@ -353,6 +353,13 @@ type ReviewStatus = _ReviewStatus | String
 
 type S3Url = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STANDARD
+  - typings.awsSdk.awsSdkStrings.MANAGED
+  - java.lang.String
+*/
+type ScalingMode = _ScalingMode | String
+
 type Selector = String
 
 type SendingPoolName = String
@@ -418,6 +425,16 @@ type UnsubscribeAll = Boolean
 type UseCaseDescription = String
 
 type UseDefaultIfPreferenceUnavailable = Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.SUCCESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.TEMPORARY_FAILURE
+  - typings.awsSdk.awsSdkStrings.NOT_STARTED
+  - java.lang.String
+*/
+type VerificationStatus = _VerificationStatus | String
 
 type Volume = Double
 

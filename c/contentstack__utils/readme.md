@@ -1,7 +1,7 @@
 
 # Scala.js typings for contentstack__utils
 
-Typings are for version 1.1.2
+Typings are for version 1.1.3
 
 ## Library description:
 Contentstack utilities for Javascript

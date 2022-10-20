@@ -1,7 +1,7 @@
 package typings.ngPackagr.anon
 
-import typings.ngPackagr.fileCacheMod.FileCache
-import typings.ngPackagr.ngccCacheMod.NgccProcessingCache
+import typings.ngPackagr.libFileSystemFileCacheMod.FileCache
+import typings.ngPackagr.libNgPackageNgccCacheMod.NgccProcessingCache
 import typings.typescript.mod.ModuleResolutionCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GlobCache extends StObject {
   
-  var globCache: typings.ngPackagr.nodesMod.GlobCache
+  var globCache: typings.ngPackagr.libNgPackageNodesMod.GlobCache
   
   var moduleResolutionCache: ModuleResolutionCache
   
@@ -20,7 +20,7 @@ trait GlobCache extends StObject {
 object GlobCache {
   
   inline def apply(
-    globCache: typings.ngPackagr.nodesMod.GlobCache,
+    globCache: typings.ngPackagr.libNgPackageNodesMod.GlobCache,
     moduleResolutionCache: ModuleResolutionCache,
     ngccProcessingCache: NgccProcessingCache,
     sourcesFileCache: FileCache
@@ -31,7 +31,7 @@ object GlobCache {
   
   extension [Self <: GlobCache](x: Self) {
     
-    inline def setGlobCache(value: typings.ngPackagr.nodesMod.GlobCache): Self = StObject.set(x, "globCache", value.asInstanceOf[js.Any])
+    inline def setGlobCache(value: typings.ngPackagr.libNgPackageNodesMod.GlobCache): Self = StObject.set(x, "globCache", value.asInstanceOf[js.Any])
     
     inline def setModuleResolutionCache(value: ModuleResolutionCache): Self = StObject.set(x, "moduleResolutionCache", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,6 @@ import typings.sentryUtils.sentryUtilsStrings.info
 import typings.sentryUtils.sentryUtilsStrings.log
 import typings.sentryUtils.sentryUtilsStrings.trace
 import typings.sentryUtils.sentryUtilsStrings.warn
-import typings.sentryUtils.typesGlobalMod.SentryGlobal
 import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerCallback
 import typings.sentryUtils.typesInstrumentMod.InstrumentHandlerType
 import typings.sentryUtils.typesLoggerMod.ConsoleLevel
@@ -52,9 +51,11 @@ import typings.sentryUtils.typesRatelimitMod.RateLimits
 import typings.sentryUtils.typesRequestdataMod.AddRequestDataToEventOptions
 import typings.sentryUtils.typesRequestdataMod.InjectedNodeDeps
 import typings.sentryUtils.typesStacktraceMod.GetModuleFn
+import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.ObjectConstructor
 import typings.std.PromiseLike
 import typings.std.Record
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,6 +77,10 @@ object mod {
   @JSImport("@sentry/utils", "DEFAULT_RETRY_AFTER")
   @js.native
   val DEFAULT_RETRY_AFTER: Double = js.native
+  
+  @JSImport("@sentry/utils", "GLOBAL_OBJ")
+  @js.native
+  val GLOBAL_OBJ: InternalGlobal = js.native
   
   @JSImport("@sentry/utils", "MAX_BAGGAGE_STRING_LENGTH")
   @js.native
@@ -115,6 +120,10 @@ object mod {
   @JSImport("@sentry/utils", "TRACEPARENT_REGEXP")
   @js.native
   val TRACEPARENT_REGEXP: js.RegExp = js.native
+  
+  @JSImport("@sentry/utils", "WINDOW")
+  @js.native
+  val WINDOW: InternalGlobal & Window = js.native
   
   inline def addContextToFrame(lines: js.Array[String], frame: StackFrame): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addContextToFrame(lines: js.Array[String], frame: StackFrame, linesOfContext: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], linesOfContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -242,14 +251,14 @@ object mod {
   
   inline def getFunctionName(fn: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getGlobalObject[T](): T & SentryGlobal = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalObject")().asInstanceOf[T & SentryGlobal]
+  inline def getGlobalObject[T](): T & InternalGlobal = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalObject")().asInstanceOf[T & InternalGlobal]
   
   inline def getGlobalSingleton[T](
-    name: /* import warning: importer.ImportType#apply Failed type conversion: 'Sentry' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | '__SENTRY__'['__SENTRY__'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: 'navigator' | 'console' | 'Sentry' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | '__SENTRY__'['__SENTRY__'] */ js.Any,
     creator: js.Function0[T]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalSingleton")(name.asInstanceOf[js.Any], creator.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def getGlobalSingleton[T](
-    name: /* import warning: importer.ImportType#apply Failed type conversion: 'Sentry' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | '__SENTRY__'['__SENTRY__'] */ js.Any,
+    name: /* import warning: importer.ImportType#apply Failed type conversion: 'navigator' | 'console' | 'Sentry' | 'SENTRY_ENVIRONMENT' | 'SENTRY_DSN' | 'SENTRY_RELEASE' | '__SENTRY__'['__SENTRY__'] */ js.Any,
     creator: js.Function0[T],
     obj: Any
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalSingleton")(name.asInstanceOf[js.Any], creator.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[T]

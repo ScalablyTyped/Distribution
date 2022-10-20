@@ -38,6 +38,8 @@ trait Collapsed extends StObject {
   
   var titleCollapsed: String
   
+  var titleDisabled: String
+  
   var titleExpandable: String
   
   var titleExpanded: String
@@ -67,13 +69,14 @@ object Collapsed {
     title: String,
     titleBar: String,
     titleCollapsed: String,
+    titleDisabled: String,
     titleExpandable: String,
     titleExpanded: String,
     titleOnError: String,
     titleOnExpand: String,
     withFrame: String
   ): Collapsed = {
-    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconExpanded = iconExpanded.asInstanceOf[js.Any], invisible = invisible.asInstanceOf[js.Any], navigationButton = navigationButton.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleBar = titleBar.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any], titleOnExpand = titleOnExpand.asInstanceOf[js.Any], withFrame = withFrame.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconExpanded = iconExpanded.asInstanceOf[js.Any], invisible = invisible.asInstanceOf[js.Any], navigationButton = navigationButton.asInstanceOf[js.Any], nested = nested.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleBar = titleBar.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleDisabled = titleDisabled.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any], titleOnExpand = titleOnExpand.asInstanceOf[js.Any], withFrame = withFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collapsed]
   }
   
@@ -110,6 +113,8 @@ object Collapsed {
     inline def setTitleBar(value: String): Self = StObject.set(x, "titleBar", value.asInstanceOf[js.Any])
     
     inline def setTitleCollapsed(value: String): Self = StObject.set(x, "titleCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def setTitleDisabled(value: String): Self = StObject.set(x, "titleDisabled", value.asInstanceOf[js.Any])
     
     inline def setTitleExpandable(value: String): Self = StObject.set(x, "titleExpandable", value.asInstanceOf[js.Any])
     

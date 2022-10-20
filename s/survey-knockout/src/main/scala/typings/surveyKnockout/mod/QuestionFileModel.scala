@@ -10,58 +10,42 @@ open class QuestionFileModel protected () extends Question {
   def this(name: String) = this()
   
   /*
-    * Accepted file types. Passed to the 'accept' attribute of the file input tag. See https://www.w3schools.com/tags/att_input_accept.asp for more details.
+    * An [accept](https://www.w3schools.com/tags/att_input_accept.asp) attribute value for the underlying `<input>` element.
     */
   def acceptedTypes: String = js.native
   def acceptedTypes_=(`val`: String): Unit = js.native
   
   /*
-    * Set it to false if you want to disable images preview.
+    * Specifies whether to show a preview of image files.
     */
   def allowImagesPreview: Boolean = js.native
   def allowImagesPreview_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set it to true, to allow select multiple files.
+    * Specifies whether users can upload multiple files.
+    * 
+    * Default value: `false`
     */
   def allowMultiple: Boolean = js.native
   def allowMultiple_=(`val`: Boolean): Unit = js.native
   
   def canPreviewImage(fileItem: Any): Boolean = js.native
   
-  /*
-    * The choose files button caption for modern theme.
-    */
   def chooseButtonCaption: String = js.native
   def chooseButtonCaption_=(`val`: String): Unit = js.native
   
-  /*
-    * The choose file input title.
-    */
   def chooseFileTitle: String = js.native
   def chooseFileTitle_=(`val`: String): Unit = js.native
   
-  /*
-    * The clean files button caption.
-    */
-  def cleanButtonCaption: String = js.native
-  def cleanButtonCaption_=(`val`: String): Unit = js.native
-  
-  /*
-    * Clear value programmatically.
-    */
   def clear(): Unit = js.native
   def clear(doneCallback: Any): Unit = js.native
   
-  /*
-    * The remove all files confirmation message.
-    */
+  def clearButtonCaption: String = js.native
+  def clearButtonCaption_=(`val`: String): Unit = js.native
+  
   def confirmRemoveAllMessage: String = js.native
   def confirmRemoveAllMessage_=(`val`: String): Unit = js.native
   
-  /*
-    * The remove file confirmation message template.
-    */
   def confirmRemoveMessage: String = js.native
   def confirmRemoveMessage_=(`val`: String): Unit = js.native
   
@@ -82,15 +66,14 @@ open class QuestionFileModel protected () extends Question {
   def dragAreaPlaceholder: String = js.native
   def dragAreaPlaceholder_=(`val`: String): Unit = js.native
   
-  var fileIndexAction: Action = js.native
+  var dragCounter: Double = js.native
+  
+  /* protected */ var fileIndexAction: Action = js.native
   
   def fileRootCss: String = js.native
   
   def getChooseFileCss(): String = js.native
   
-  /*
-    * The remove file confirmation message.
-    */
   def getConfirmRemoveMessage(fileName: String): String = js.native
   
   def getFileDecoratorCss(): String = js.native
@@ -114,9 +97,6 @@ open class QuestionFileModel protected () extends Question {
   
   var indexToShow: Double = js.native
   
-  /*
-    * The input title value.
-    */
   def inputTitle: String = js.native
   
   var isDragging: Boolean = js.native
@@ -126,15 +106,12 @@ open class QuestionFileModel protected () extends Question {
   var isUploading: Boolean = js.native
   
   /*
-    * Load multiple files programmatically.
+    * Loads multiple files into the question.
     */
   def loadFiles(files: Any): Unit = js.native
   
   /* protected */ def loadPreview(newValue: Any): Unit = js.native
   
-  /*
-    * The loading file input title.
-    */
   def loadingFileTitle: String = js.native
   def loadingFileTitle_=(`val`: String): Unit = js.native
   
@@ -142,7 +119,7 @@ open class QuestionFileModel protected () extends Question {
   
   def locChooseFileTitle: LocalizableString = js.native
   
-  def locCleanButtonCaption: LocalizableString = js.native
+  def locClearButtonCaption: LocalizableString = js.native
   
   def locConfirmRemoveAllMessage: LocalizableString = js.native
   
@@ -157,7 +134,9 @@ open class QuestionFileModel protected () extends Question {
   def locRemoveFileCaption: LocalizableString = js.native
   
   /*
-    * Use this property to setup the maximum allowed file size.
+    * Maximum allowed file size, measured in bytes.
+    * 
+    * Default value: 0 (unlimited)
     */
   def maxSize: Double = js.native
   def maxSize_=(`val`: Double): Unit = js.native
@@ -169,18 +148,19 @@ open class QuestionFileModel protected () extends Question {
   def multipleRendered: String = js.native
   
   /*
-    * Use this property to setup confirmation to remove file.
+    * Specifies whether users should confirm file deletion.
+    * 
+    * Default value: `false`
     */
   def needConfirmRemoveFile: Boolean = js.native
   def needConfirmRemoveFile_=(`val`: Boolean): Unit = js.native
   
-  var nextFileAction: Action = js.native
+  /* protected */ var nextFileAction: Action = js.native
   
-  /*
-    * The no file chosen caption for modern theme.
-    */
   def noFileChosenCaption: String = js.native
   def noFileChosenCaption_=(`val`: String): Unit = js.native
+  
+  def onDragEnter(event: Any): Unit = js.native
   
   def onDragLeave(event: Any): Unit = js.native
   
@@ -189,31 +169,35 @@ open class QuestionFileModel protected () extends Question {
   def onDrop(event: Any): Unit = js.native
   
   /*
-    * The event is fired after question state has been changed.
-    * sender the question object that fires the event
-    * options.state new question state value.
+    * An event that is raised after the upload state has changed.
+    * 
+    * Parameters:
+    * 
+    * - `sender` - A question instance that raised the event.
+    * - `options.state` - Current upload state: `"empty"`, `"loading"`, `"loaded"`, or `"error"`.
     */
   var onStateChanged: EventBase[QuestionFileModel] = js.native
   
-  var prevFileAction: Action = js.native
+  /* protected */ var prevFileAction: Action = js.native
   
   var previewValue: Any = js.native
   
   /*
-    * Remove file item programmatically.
+    * Removes a file with a specified name.
     */
   def removeFile(name: String): Unit = js.native
   
   /* protected */ def removeFileByContent(content: Any): Unit = js.native
   
-  /*
-    * The remove file button caption.
-    */
   def removeFileCaption: String = js.native
   def removeFileCaption_=(`val`: String): Unit = js.native
   
+  var rootElement: Any = js.native
+  
   /*
-    * Set it to true, to show the preview for the image files.
+    * Disable this property only to implement a custom preview.
+    * 
+    * [View "Custom Preview" Demo](https://surveyjs.io/form-library/examples/file-custom-preview/ (linkStyle))
     */
   def showPreview: Boolean = js.native
   def showPreview_=(`val`: Boolean): Unit = js.native
@@ -225,14 +209,17 @@ open class QuestionFileModel protected () extends Question {
   /* protected */ def stateChanged(state: String): Unit = js.native
   
   /*
-    * Set it to false if you do not want to serialize file content as text in the survey.data.
-    * In this case, you have to write the code onUploadFiles event to store the file content.
+    * Specifies whether to store file content as text in `SurveyModel`'s [`data`](https://surveyjs.io/form-library/documentation/surveymodel#data) property.
+    * 
+    * If you disable this property, implement `SurveyModel`'s [`onUploadFiles`](https://surveyjs.io/form-library/documentation/surveymodel#onUploadFiles) event handler to specify how to store file content.
     */
   def storeDataAsText: Boolean = js.native
   def storeDataAsText_=(`val`: Boolean): Unit = js.native
   
   /*
-    * Set it to true if you want to wait until files will be uploaded to your server.
+    * Enable this property if you want to wait until files are uploaded to complete the survey.
+    * 
+    * Default value: `false`
     */
   def waitForUpload: Boolean = js.native
   def waitForUpload_=(`val`: Boolean): Unit = js.native

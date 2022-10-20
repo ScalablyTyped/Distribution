@@ -22,7 +22,7 @@ trait DomainDeliverabilityCampaign extends StObject {
   var Esps: js.UndefOr[typings.awsSdk.clientsSesv2Mod.Esps] = js.undefined
   
   /**
-    * The first time, in Unix time format, when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
+    * The first time when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
     */
   var FirstSeenDateTime: js.UndefOr[js.Date] = js.undefined
   
@@ -42,7 +42,7 @@ trait DomainDeliverabilityCampaign extends StObject {
   var InboxCount: js.UndefOr[Volume] = js.undefined
   
   /**
-    * The last time, in Unix time format, when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
+    * The last time when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
     */
   var LastSeenDateTime: js.UndefOr[js.Date] = js.undefined
   

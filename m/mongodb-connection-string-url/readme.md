@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongodb-connection-string-url
 
-Typings are for version 2.5.3
+Typings are for version 2.5.4
 
 ## Library description:
 MongoDB connection strings, based on the WhatWG URL API

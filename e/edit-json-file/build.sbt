@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "edit-json-file"
-version := "1.7-dt-20220112Z-da4ae3"
+version := "1.7-dt-20220112Z-cd3f8e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "set-value" % "4.0-dt-20211202Z-f55dcb",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

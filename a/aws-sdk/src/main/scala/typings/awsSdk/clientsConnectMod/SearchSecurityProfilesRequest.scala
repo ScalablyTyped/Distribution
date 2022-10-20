@@ -22,7 +22,7 @@ trait SearchSecurityProfilesRequest extends StObject {
   var NextToken: js.UndefOr[NextToken2500] = js.undefined
   
   /**
-    * The search criteria to be used to return security profiles.
+    * The search criteria to be used to return security profiles.   The currently supported value for FieldName: name  
     */
   var SearchCriteria: js.UndefOr[SecurityProfileSearchCriteria] = js.undefined
   

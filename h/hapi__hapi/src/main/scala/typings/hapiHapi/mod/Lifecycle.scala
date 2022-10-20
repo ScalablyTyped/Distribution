@@ -25,24 +25,27 @@ object Lifecycle {
     - typings.hapiHapi.hapiHapiStrings.error
     - typings.hapiHapi.hapiHapiStrings.log
     - typings.hapiHapi.hapiHapiStrings.ignore
-    - typings.hapiHapi.mod.Lifecycle.Method
+    - typings.hapiHapi.mod.Lifecycle.Method[
+  typings.hapiHapi.mod.ReqRefDefaults, 
+  typings.hapiHapi.mod.Lifecycle.ReturnValue[typings.hapiHapi.mod.ReqRefDefaults]]
   */
-  type FailAction = _FailAction | Method
+  type FailAction = _FailAction | (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]])
   
   /**
     * Lifecycle methods are the interface between the framework and the application. Many of the request lifecycle steps:
-    * extensions, authentication, handlers, pre-handler methods, and failAction function values are lifecyle methods
+    * extensions, authentication, handlers, pre-handler methods, and failAction function values are lifecycle methods
     * provided by the developer and executed by the framework.
     * Each lifecycle method is a function with the signature await function(request, h, [err]) where:
     * * request - the request object.
     * * h - the response toolkit the handler must call to set a response and return control back to the framework.
-    * * err - an error object availble only when the method is used as a failAction value.
+    * * err - an error object available only when the method is used as a failAction value.
     */
-  type Method = js.Function3[
-    /* request */ Request, 
-    /* h */ ResponseToolkit, 
+  type Method[Refs /* <: ReqRef */, R /* <: ReturnValue[Any] */] = js.ThisFunction3[
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['Bind'] */ /* this */ js.Any, 
+    /* request */ Request[Refs], 
+    /* h */ ResponseToolkit[Refs], 
     /* err */ js.UndefOr[js.Error], 
-    ReturnValue
+    R
   ]
   
   /**
@@ -59,26 +62,14 @@ object Lifecycle {
     * - a promise object that resolve to any of the above values
     * For more info please [See docs](https://github.com/hapijs/hapi/blob/master/API.md#lifecycle-methods)
     */
-  type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
+  type ReturnValue[Refs /* <: ReqRef */] = ReturnValueTypes[Refs] | js.Promise[ReturnValueTypes[Refs]]
   
-  /* Rewritten from type alias, can be one of: 
-    - scala.Null
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typings.node.bufferMod.global.Buffer
-    - js.Error
-    - typings.hapiBoom.mod.Boom[scala.Any]
-    - typings.node.streamMod.Stream
-    - js.Object
-    - js.Array[js.Object]
-    - js.Symbol
-    - typings.hapiHapi.mod.Auth
-    - typings.hapiHapi.mod.ResponseObject
-  */
-  type ReturnValueTypes = _ReturnValueTypes | Boom[Any] | js.Array[js.Object] | Null | String | Double | Boolean | Buffer | js.Error | Stream | js.Object | js.Symbol
+  type ReturnValueTypes[Refs /* <: ReqRef */] = Null | String | Double | Boolean | Buffer | js.Error | Boom[Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | (Auth[
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthUser'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthApp'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthCredentialsExtra'] */ js.Any, 
+    /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthArtifactsExtra'] */ js.Any
+  ]) | ResponseObject
   
   trait _FailAction extends StObject
-  
-  trait _ReturnValueTypes extends StObject
 }

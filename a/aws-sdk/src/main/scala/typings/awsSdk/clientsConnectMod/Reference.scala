@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Reference extends StObject {
   
   /**
-    * The type of the reference.
+    * The type of the reference. DATE must be of type Epoch timestamp. 
     */
   var Type: ReferenceType
   

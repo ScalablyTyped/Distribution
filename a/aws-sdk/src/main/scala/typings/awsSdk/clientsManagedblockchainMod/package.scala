@@ -1,10 +1,27 @@
 package typings.awsSdk.clientsManagedblockchainMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.BILLING_TOKEN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+
+type AccessorBillingTokenString = java.lang.String
+
+type AccessorListMaxResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.PENDING_DELETION
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - java.lang.String
+*/
+type AccessorStatus = _AccessorStatus | java.lang.String
+
+type AccessorSummaryList = js.Array[AccessorSummary]
+
+type AccessorType = BILLING_TOKEN | java.lang.String
 
 type ArnString = java.lang.String
 

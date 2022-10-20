@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListChannelsResponse extends StObject {
   
   /**
-    *  The list of CloudTrail channels. 
+    *  The list of channels in the account. 
     */
   var Channels: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.Channels] = js.undefined
   
   /**
-    *  A token used to get the next page of results. 
+    * The token to use to get the next page of results after a previous API call.
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }

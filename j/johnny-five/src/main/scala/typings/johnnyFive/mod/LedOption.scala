@@ -12,13 +12,13 @@ trait LedOption extends StObject {
   
   var isAnode: js.UndefOr[Boolean] = js.undefined
   
-  var pin: Double
+  var pin: Double | String
   
   var `type`: js.UndefOr[String] = js.undefined
 }
 object LedOption {
   
-  inline def apply(pin: Double): LedOption = {
+  inline def apply(pin: Double | String): LedOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[LedOption]
   }
@@ -37,7 +37,7 @@ object LedOption {
     
     inline def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
     
-    inline def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

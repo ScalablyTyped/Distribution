@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libp2p__peer-record"
-version := "4.0.3-b4dc3e"
+version := "4.0.3-2452f2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-122bf3",
   "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-89b530",
   "org.scalablytyped" %%% "multiformats" % "10.0.0-e339c8",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-c9fad1",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-bb0c13",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "protons-runtime" % "3.1.0-6a8691",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-45b6fe")

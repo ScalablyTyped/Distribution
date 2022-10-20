@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Close extends StObject {
   
-  var close: js.UndefOr[js.Function1[/* response */ ResponseObject, Unit]] = js.undefined
+  var close: js.UndefOr[js.Function1[/* response */ ResponseObject, js.UndefOr[Unit]]] = js.undefined
   
   var marshal: js.UndefOr[js.Function1[/* response */ ResponseObject, js.Promise[ResponseValue]]] = js.undefined
   
@@ -25,7 +25,7 @@ object Close {
   
   extension [Self <: Close](x: Self) {
     
-    inline def setClose(value: /* response */ ResponseObject => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* response */ ResponseObject => js.UndefOr[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     

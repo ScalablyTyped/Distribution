@@ -2,6 +2,7 @@ package typings.roarr
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.asyncHooksMod.AsyncLocalStorage
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,6 +132,26 @@ object distSrcTypesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
+    
+    def debugOnce[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | T
+        ],
+      c: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | SprintfArgument
+        ],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
+    @JSName("debugOnce")
+    var debugOnce_Original: LogMethod[Z] = js.native
+    
     @JSName("debug")
     var debug_Original: LogMethod[Z] = js.native
     
@@ -150,6 +171,26 @@ object distSrcTypesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
+    
+    def errorOnce[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | T
+        ],
+      c: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | SprintfArgument
+        ],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
+    @JSName("errorOnce")
+    var errorOnce_Original: LogMethod[Z] = js.native
+    
     @JSName("error")
     var error_Original: LogMethod[Z] = js.native
     
@@ -169,6 +210,26 @@ object distSrcTypesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
+    
+    def fatalOnce[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | T
+        ],
+      c: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | SprintfArgument
+        ],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
+    @JSName("fatalOnce")
+    var fatalOnce_Original: LogMethod[Z] = js.native
+    
     @JSName("fatal")
     var fatal_Original: LogMethod[Z] = js.native
     
@@ -190,6 +251,26 @@ object distSrcTypesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
+    
+    def infoOnce[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | T
+        ],
+      c: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | SprintfArgument
+        ],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
+    @JSName("infoOnce")
+    var infoOnce_Original: LogMethod[Z] = js.native
+    
     @JSName("info")
     var info_Original: LogMethod[Z] = js.native
     
@@ -209,6 +290,26 @@ object distSrcTypesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
+    
+    def traceOnce[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | T
+        ],
+      c: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | SprintfArgument
+        ],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
+    @JSName("traceOnce")
+    var traceOnce_Original: LogMethod[Z] = js.native
+    
     @JSName("trace")
     var trace_Original: LogMethod[Z] = js.native
     
@@ -228,6 +329,26 @@ object distSrcTypesMod {
       i: js.UndefOr[SprintfArgument],
       j: js.UndefOr[SprintfArgument]
     ): Unit = js.native
+    
+    def warnOnce[T /* <: String */](
+      context: T | Z,
+      message: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | T
+        ],
+      c: js.UndefOr[
+          (/* import warning: importer.ImportType#apply Failed type conversion: T extends / * template literal string: ${string}%${string} * / string ? roarr.roarr/dist/src/types.SprintfArgument : never */ js.Any) | SprintfArgument
+        ],
+      d: js.UndefOr[SprintfArgument],
+      e: js.UndefOr[SprintfArgument],
+      f: js.UndefOr[SprintfArgument],
+      g: js.UndefOr[SprintfArgument],
+      h: js.UndefOr[SprintfArgument],
+      i: js.UndefOr[SprintfArgument],
+      j: js.UndefOr[SprintfArgument]
+    ): Unit = js.native
+    @JSName("warnOnce")
+    var warnOnce_Original: LogMethod[Z] = js.native
+    
     @JSName("warn")
     var warn_Original: LogMethod[Z] = js.native
   }
@@ -312,6 +433,8 @@ object distSrcTypesMod {
     
     var asyncLocalStorage: js.UndefOr[AsyncLocalStorage[AsyncLocalContext]] = js.undefined
     
+    var onceLog: Set[String]
+    
     var sequence: Double
     
     var serializeMessage: js.UndefOr[MessageSerializer] = js.undefined
@@ -324,8 +447,13 @@ object distSrcTypesMod {
   }
   object RoarrGlobalState {
     
-    inline def apply(sequence: Double, versions: js.Array[String], write: /* message */ String => Unit): RoarrGlobalState = {
-      val __obj = js.Dynamic.literal(sequence = sequence.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
+    inline def apply(
+      onceLog: Set[String],
+      sequence: Double,
+      versions: js.Array[String],
+      write: /* message */ String => Unit
+    ): RoarrGlobalState = {
+      val __obj = js.Dynamic.literal(onceLog = onceLog.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[RoarrGlobalState]
     }
     
@@ -334,6 +462,8 @@ object distSrcTypesMod {
       inline def setAsyncLocalStorage(value: AsyncLocalStorage[AsyncLocalContext]): Self = StObject.set(x, "asyncLocalStorage", value.asInstanceOf[js.Any])
       
       inline def setAsyncLocalStorageUndefined: Self = StObject.set(x, "asyncLocalStorage", js.undefined)
+      
+      inline def setOnceLog(value: Set[String]): Self = StObject.set(x, "onceLog", value.asInstanceOf[js.Any])
       
       inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       

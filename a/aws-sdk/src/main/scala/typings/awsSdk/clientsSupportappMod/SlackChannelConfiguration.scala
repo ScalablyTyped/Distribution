@@ -12,7 +12,7 @@ trait SlackChannelConfiguration extends StObject {
   var channelId: typings.awsSdk.clientsSupportappMod.channelId
   
   /**
-    * The name of the Slack channel that you configured with the Amazon Web Services Support App.
+    * The name of the Slack channel that you configured with the Amazon Web Services Support App for your Amazon Web Services account.
     */
   var channelName: js.UndefOr[typings.awsSdk.clientsSupportappMod.channelName] = js.undefined
   
@@ -42,7 +42,7 @@ trait SlackChannelConfiguration extends StObject {
   var notifyOnResolveCase: js.UndefOr[booleanValue] = js.undefined
   
   /**
-    * The team ID in Slack. This ID uniquely identifies a Slack workspace.
+    * The team ID in Slack. This ID uniquely identifies a Slack workspace, such as T012ABCDEFG.
     */
   var teamId: typings.awsSdk.clientsSupportappMod.teamId
 }

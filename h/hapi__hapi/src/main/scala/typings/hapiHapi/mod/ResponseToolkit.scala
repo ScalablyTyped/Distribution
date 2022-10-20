@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseToolkit extends StObject {
+trait ResponseToolkit[Refs /* <: ReqRef */] extends StObject {
   
   /**
     * A response symbol. When returned by a lifecycle method, the request lifecycle skips to the finalizing step
@@ -22,7 +22,7 @@ trait ResponseToolkit extends StObject {
     * * artifacts - (optional) authentication artifacts object specific to the authentication scheme.
     * @return Return value: an internal authentication object.
     */
-  def authenticated(data: AuthenticationData): Auth = js.native
+  def authenticated[AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra](data: AuthenticationData[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra]): Auth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra] = js.native
   
   /**
     * A response symbol. When returned by a lifecycle method, the request lifecycle skips to the finalizing step after
@@ -46,7 +46,7 @@ trait ResponseToolkit extends StObject {
     * the response is going to qualify for an HTTP 304 (Not Modified). If the entity values match the request
     * conditions, h.entity() returns a response object for the lifecycle method to return as its value which will
     * set a 304 response. Otherwise, it sets the provided entity headers and returns undefined.
-    * The method argumetns are:
+    * The method arguments are:
     * @param options - a required configuration object with:
     * * etag - the ETag string. Required if modified is not present. Defaults to no header.
     * * modified - the Last-Modified header value. Required if etag is not present. Defaults to no header.
@@ -79,7 +79,7 @@ trait ResponseToolkit extends StObject {
     * The [request] object. This is a duplication of the request lifecycle method argument used by
     * [toolkit decorations](https://github.com/hapijs/hapi/blob/master/API.md#server.decorate()) to access the current request.
     */
-  val request: Request = js.native
+  val request: Request[Refs] = js.native
   
   /**
     * Wraps the provided value and returns a response object which allows customizing the response
@@ -117,8 +117,8 @@ trait ResponseToolkit extends StObject {
     * There is no difference between throwing the error or passing it with the h.unauthenticated() method is no credentials are passed, but it might still be helpful for code clarity.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-hunauthenticatederror-data)
     */
-  def unauthenticated(error: js.Error): Auth = js.native
-  def unauthenticated(error: js.Error, data: AuthenticationData): Auth = js.native
+  def unauthenticated[AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra](error: js.Error): Auth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra] = js.native
+  def unauthenticated[AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra](error: js.Error, data: AuthenticationData[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra]): Auth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra] = js.native
   
   /**
     * Clears a response cookie using the same arguments as

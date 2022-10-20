@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeQueryResponse extends StObject {
   
   /**
+    * The URI for the S3 bucket where CloudTrail delivered query results, if applicable.
+    */
+  var DeliveryS3Uri: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.DeliveryS3Uri] = js.undefined
+  
+  /**
+    * The delivery status.
+    */
+  var DeliveryStatus: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.DeliveryStatus] = js.undefined
+  
+  /**
     * The error message returned if a query failed.
     */
   var ErrorMessage: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ErrorMessage] = js.undefined
@@ -39,6 +49,14 @@ object DescribeQueryResponse {
   }
   
   extension [Self <: DescribeQueryResponse](x: Self) {
+    
+    inline def setDeliveryS3Uri(value: DeliveryS3Uri): Self = StObject.set(x, "DeliveryS3Uri", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryS3UriUndefined: Self = StObject.set(x, "DeliveryS3Uri", js.undefined)
+    
+    inline def setDeliveryStatus(value: DeliveryStatus): Self = StObject.set(x, "DeliveryStatus", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryStatusUndefined: Self = StObject.set(x, "DeliveryStatus", js.undefined)
     
     inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

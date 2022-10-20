@@ -11,6 +11,7 @@ import typings.nextSeo.libJsonldDatasetMod.DatasetJsonLdProps
 import typings.nextSeo.libJsonldEventMod.EventJsonLdProps
 import typings.nextSeo.libJsonldFaqPageMod.FAQPageJsonLdProps
 import typings.nextSeo.libJsonldHowToMod.HowToJsonLdProps
+import typings.nextSeo.libJsonldImageMod.ImageJsonLdProps
 import typings.nextSeo.libJsonldJobPostingMod.JobPostingJsonLdProps
 import typings.nextSeo.libJsonldLocalBusinessMod.LocalBusinessJsonLdProps
 import typings.nextSeo.libJsonldLogoMod.LogoJsonLdProps
@@ -67,6 +68,8 @@ object mod {
   inline def FAQPageJsonLd(hasTypeKeyOverrideMainEntityRest: FAQPageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FAQPageJsonLd")(hasTypeKeyOverrideMainEntityRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def HowToJsonLd(hasTypeKeyOverrideImageEstimatedCostSupplyToolStepRest: HowToJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HowToJsonLd")(hasTypeKeyOverrideImageEstimatedCostSupplyToolStepRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def ImageJsonLd(hasKeyOverrideImagesRest: ImageJsonLdProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ImageJsonLd")(hasKeyOverrideImagesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def JobPostingJsonLd(
     hasTypeKeyOverrideBaseSalaryHiringOrganizationApplicantLocationRequirementsExperienceRequirementsJobLocationRest: JobPostingJsonLdProps

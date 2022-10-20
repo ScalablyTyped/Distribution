@@ -17,7 +17,7 @@ trait DisassociateLexBotRequest extends StObject {
   var InstanceId: typings.awsSdk.clientsConnectMod.InstanceId
   
   /**
-    * The Region in which the Amazon Lex bot has been created.
+    * The Amazon Web Services Region in which the Amazon Lex bot has been created.
     */
   var LexRegion: typings.awsSdk.clientsConnectMod.LexRegion
 }

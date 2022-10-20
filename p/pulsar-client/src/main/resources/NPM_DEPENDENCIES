@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pulsar-client" : "1.6.2"
+      "pulsar-client" : "1.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pulsar-client" : "1.6.2"
+      "pulsar-client" : "1.7.0"
     }
   ],
   "compile-devDependencies" : [

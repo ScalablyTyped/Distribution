@@ -350,7 +350,7 @@ open class QuestionSelectBase protected () extends Question {
   def otherPlaceHolder_=(`val`: String): Unit = js.native
   
   /*
-    * A placeholder for the comment area. Applies when the `hasOther` or `hasComment` property is `true`.
+    * A placeholder for the comment area. Applies when the `showOtherItem` or `showCommentArea` property is `true`.
     */
   def otherPlaceholder: String = js.native
   def otherPlaceholder_=(`val`: String): Unit = js.native

@@ -41,7 +41,7 @@ trait AutoEncryptionOptions extends StObject {
     *
     * **NOTE**: Supplying options.schemaMap provides more security than relying on JSON Schemas obtained from the server.
     * It protects against a malicious server advertising a false JSON Schema, which could trick the client into sending decrypted data that should be encrypted.
-    * Schemas supplied in the schemaMap only apply to configuring automatic encryption for client side encryption.
+    * Schemas supplied in the schemaMap only apply to configuring automatic encryption for Client-Side Field Level Encryption.
     * Other validation rules in the JSON schema will not be enforced by the driver and will result in an error.
     */
   var schemaMap: js.UndefOr[Document] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "animejs"
-version := "3.1-dt-20220712Z-18bc61"
+version := "3.1-dt-20221018Z-3f766a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

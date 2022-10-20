@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Channel extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) of the channel. 
+    * The Amazon Resource Name (ARN) of a channel.
     */
   var ChannelArn: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ChannelArn] = js.undefined
   

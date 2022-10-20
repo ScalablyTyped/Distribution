@@ -342,6 +342,11 @@ object defaultV2Css {
   def rootMobile: String = js.native
   inline def rootMobile_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootMobile")(x.asInstanceOf[js.Any])
   
+  @JSImport("survey-knockout", "defaultV2Css.rootReadOnly")
+  @js.native
+  def rootReadOnly: String = js.native
+  inline def rootReadOnly_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootReadOnly")(x.asInstanceOf[js.Any])
+  
   inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   
   @JSImport("survey-knockout", "defaultV2Css.row")

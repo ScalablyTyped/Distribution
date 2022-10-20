@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sqlite3" : "5.1.1"
+      "sqlite3" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "sqlite3" : "5.1.1"
+      "sqlite3" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

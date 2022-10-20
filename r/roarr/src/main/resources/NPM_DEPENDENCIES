@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "roarr" : "7.12.3"
+      "roarr" : "7.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "roarr" : "7.12.3"
+      "roarr" : "7.14.0"
     }
   ],
   "compile-devDependencies" : [

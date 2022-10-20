@@ -1,6 +1,7 @@
 package typings.reactI18next
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18next.mod.DefaultNamespace
 import typings.i18next.mod.Resource
 import typings.i18next.mod.TFunction
 import typings.i18next.mod.i18n
@@ -105,11 +106,11 @@ object anon {
     
     var ready: Boolean
     
-    var t: TFunction
+    var t: TFunction[DefaultNamespace, Unit]
   }
   object Ready {
     
-    inline def apply(i18n: i18n, ready: Boolean, t: TFunction): Ready = {
+    inline def apply(i18n: i18n, ready: Boolean, t: TFunction[DefaultNamespace, Unit]): Ready = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ready]
     }
@@ -120,7 +121,7 @@ object anon {
       
       inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      inline def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: TFunction[DefaultNamespace, Unit]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   

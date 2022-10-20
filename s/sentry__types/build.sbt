@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sentry__types"
-version := "7.15.0-a15e8d"
+version := "7.16.0-dc4f29"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

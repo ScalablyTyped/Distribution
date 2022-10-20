@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "5.3.0-5d30c9"
+version := "5.3.0-89e88e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "blueprintjs__core" % "4.11.3-66739c",
-  "org.scalablytyped" %%% "blueprintjs__icons" % "4.7.0-efcce9",
+  "org.scalablytyped" %%% "blueprintjs__core" % "4.11.4-587a1c",
+  "org.scalablytyped" %%% "blueprintjs__icons" % "4.8.0-19a790",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
   "org.scalablytyped" %%% "dnd-core" % "16.0.1-86696a",
   "org.scalablytyped" %%% "immutability-helper" % "3.1.1-82f9fa",

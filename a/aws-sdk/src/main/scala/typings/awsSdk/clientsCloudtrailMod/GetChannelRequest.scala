@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetChannelRequest extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) of the CloudTrail service-linked channel. 
+    * The ARN or UUID of a channel.
     */
   var Channel: ChannelArn
 }

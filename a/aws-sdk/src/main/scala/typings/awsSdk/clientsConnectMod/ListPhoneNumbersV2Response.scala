@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPhoneNumbersV2Response extends StObject {
   
   /**
-    * Information about phone numbers that have been claimed to your Amazon Connect instances.
+    * Information about phone numbers that have been claimed to your Amazon Connect instances or traffic distribution groups.
     */
   var ListPhoneNumbersSummaryList: js.UndefOr[typings.awsSdk.clientsConnectMod.ListPhoneNumbersSummaryList] = js.undefined
   

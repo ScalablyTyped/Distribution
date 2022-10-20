@@ -53,6 +53,10 @@ object meteorStrings {
   inline def Mongos: Mongos = "Mongos".asInstanceOf[Mongos]
   
   @js.native
+  sealed trait NoWritesPerformed extends StObject
+  inline def NoWritesPerformed: NoWritesPerformed = "NoWritesPerformed".asInstanceOf[NoWritesPerformed]
+  
+  @js.native
   sealed trait PLAIN extends StObject
   inline def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
   

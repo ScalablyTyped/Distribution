@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.IOutcome because Already inherited
-- typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.IUserTaskOutcome because var conflicts: containerAsConditionOutcomeActivity, containerAsParallelSplitActivity, containerAsUserTask, flow, id, isLoaded, model, structureTypeName, unit. Inlined name, caption */ @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.UserTaskOutcome")
+- typings.mendixmodelsdk.srcGenWorkflowsMod.workflows.IUserTaskOutcome because var conflicts: containerAsConditionOutcomeActivity, containerAsParallelSplitActivity, containerAsUserTask, flow, id, isLoaded, model, structureTypeName, unit. Inlined name, caption, value */ @JSImport("mendixmodelsdk/src/gen/workflows", "workflows.UserTaskOutcome")
 @js.native
 open class UserTaskOutcome protected ()
   extends Outcome
@@ -36,16 +36,28 @@ open class UserTaskOutcome protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.19.0: deleted
+    */
   def caption: String = js.native
   def caption_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.19.0: deleted
+    */
   @JSName("caption")
   val caption_FUserTaskOutcome: String = js.native
   
   @JSName("containerAsUserTask")
   def containerAsUserTask_MUserTaskOutcome: UserTask = js.native
   
+  /**
+    * In version 9.19.0: deleted
+    */
   def name: String = js.native
   def name_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.19.0: deleted
+    */
   @JSName("name")
   val name_FUserTaskOutcome: String = js.native
   
@@ -59,6 +71,17 @@ open class UserTaskOutcome protected ()
   override val qualifiedName: String | Null = js.native
   @JSName("qualifiedName")
   def qualifiedName_MUserTaskOutcome: String | Null = js.native
+  
+  /**
+    * In version 9.19.0: introduced
+    */
+  def value: String = js.native
+  def value_=(newValue: String): Unit = js.native
+  /**
+    * In version 9.19.0: introduced
+    */
+  @JSName("value")
+  val value_FUserTaskOutcome: String = js.native
 }
 object UserTaskOutcome {
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tooltip"
-version := "4.4.0-999ac9"
+version := "4.4.2-9fbed0"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

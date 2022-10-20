@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProposalActions extends StObject {
   
   /**
-    *  The actions to perform for an APPROVED proposal to invite an AWS account to create a member and join the network. 
+    *  The actions to perform for an APPROVED proposal to invite an Amazon Web Services account to create a member and join the network. 
     */
   var Invitations: js.UndefOr[InviteActionList] = js.undefined
   

@@ -1,6 +1,6 @@
 package typings.ngPackagr.anon
 
-import typings.ngPackagr.buildGraphMod.ComplexPredicate
+import typings.ngPackagr.libGraphBuildGraphMod.ComplexPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

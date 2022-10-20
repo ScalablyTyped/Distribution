@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-video-player"
-version := "0.10-dt-20220120Z-9ab78c"
+version := "0.10-dt-20220120Z-68c203"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
-  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221016Z-c1c8c7",
-  "org.scalablytyped" %%% "react-native-video" % "5.0-dt-20220705Z-551f69",
+  "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
+  "org.scalablytyped" %%% "react-native-video" % "5.0-dt-20220705Z-de8aff",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

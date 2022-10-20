@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongodb-connection-string-url"
-version := "2.5.3-86408e"
+version := "2.5.4-925695"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

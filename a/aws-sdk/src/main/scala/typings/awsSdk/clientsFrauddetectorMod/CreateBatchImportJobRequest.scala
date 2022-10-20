@@ -12,7 +12,7 @@ trait CreateBatchImportJobRequest extends StObject {
   var eventTypeName: identifier
   
   /**
-    * The ARN of the IAM role created for Amazon S3 bucket that holds your data file. The IAM role must have read and write permissions to both input and output S3 buckets.
+    * The ARN of the IAM role created for Amazon S3 bucket that holds your data file. The IAM role must have read permissions to your input S3 bucket and write permissions to your output S3 bucket. For more information about bucket permissions, see User policy examples in the Amazon S3 User Guide.
     */
   var iamRoleArn: typings.awsSdk.clientsFrauddetectorMod.iamRoleArn
   

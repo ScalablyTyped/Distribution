@@ -253,6 +253,12 @@ object libEsmIconNamesMod {
     
     inline def ASTERISK__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ASTERISK")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.AT")
+    @js.native
+    def AT_ : BlueprintIcons16Id = js.native
+    
+    inline def AT__=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AT")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.AUTOMATIC_UPDATES")
     @js.native
     def AUTOMATIC_UPDATES: BlueprintIcons16Id = js.native
@@ -489,6 +495,11 @@ object libEsmIconNamesMod {
     @js.native
     def Asterisk: BlueprintIcons16Id = js.native
     inline def Asterisk_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Asterisk")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.At")
+    @js.native
+    def At: BlueprintIcons16Id = js.native
+    inline def At_=(x: BlueprintIcons16Id): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("At")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconNames", "IconNames.AutomaticUpdates")
     @js.native

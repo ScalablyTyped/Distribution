@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer.anon
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
@@ -10,11 +11,14 @@ trait `0` extends StObject {
   
   var assign: String
   
-  def method(request: Request, _h: ResponseToolkit): js.Promise[DataAny]
+  def method(request: Request[ReqRefDefaults], _h: ResponseToolkit[ReqRefDefaults]): js.Promise[DataAny]
 }
 object `0` {
   
-  inline def apply(assign: String, method: (Request, ResponseToolkit) => js.Promise[DataAny]): `0` = {
+  inline def apply(
+    assign: String,
+    method: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[DataAny]
+  ): `0` = {
     val __obj = js.Dynamic.literal(assign = assign.asInstanceOf[js.Any], method = js.Any.fromFunction2(method))
     __obj.asInstanceOf[`0`]
   }
@@ -23,6 +27,6 @@ object `0` {
     
     inline def setAssign(value: String): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
     
-    inline def setMethod(value: (Request, ResponseToolkit) => js.Promise[DataAny]): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
+    inline def setMethod(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[DataAny]): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
   }
 }

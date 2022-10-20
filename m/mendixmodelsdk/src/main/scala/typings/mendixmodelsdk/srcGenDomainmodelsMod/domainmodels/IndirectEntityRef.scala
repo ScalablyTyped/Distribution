@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntityRef because Already inherited
-- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IIndirectEntityRef because var conflicts: containerAsMemberRef, containerAsParameter, id, isLoaded, model, structureTypeName, unit. Inlined steps */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.IndirectEntityRef")
+- typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IIndirectEntityRef because var conflicts: containerAsParameter, id, isLoaded, model, structureTypeName, unit. Inlined steps */ @JSImport("mendixmodelsdk/src/gen/domainmodels", "domainmodels.IndirectEntityRef")
 @js.native
 open class IndirectEntityRef protected () extends EntityRef {
   def this(
@@ -41,9 +41,6 @@ open class IndirectEntityRef protected () extends EntityRef {
     unit: ModelUnit[IAbstractModel],
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
-  
-  @JSName("containerAsMemberRef")
-  def containerAsMemberRef_MIndirectEntityRef: MemberRef = js.native
   
   @JSName("containerAsParameter")
   def containerAsParameter_MIndirectEntityRef: Parameter = js.native

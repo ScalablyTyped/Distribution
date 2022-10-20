@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately. 
   * TS definition: {{{
-  Type extends string | number | boolean | std.Date | std.RegExp | node.buffer.<global>.Buffer | std.Uint8Array | (args : ...any): any | {  _bsontype :string} ? [] : Type extends std.ReadonlyArray<infer ArrayType> ? [] | [number, ...mongodb.mongodb.NestedPaths<ArrayType>] : Type extends std.Map<string, any> ? [string] : Type extends object ? {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends ArrayType? [Key] : ArrayType extends Type? [Key] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key]>] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key]>] | [Key]}[std.Extract<keyof Type, string>] : []
+  Depth['length'] extends 8 ? [] : Type extends string | number | boolean | std.Date | std.RegExp | node.buffer.<global>.Buffer | std.Uint8Array | (args : ...any): any | {  _bsontype :string} ? [] : Type extends std.ReadonlyArray<infer ArrayType> ? [] | [number, ...mongodb.mongodb.NestedPaths<ArrayType, [...Depth, 1]>] : Type extends std.Map<string, any> ? [string] : Type extends object ? {[ Key in std.Extract<keyof Type, string> ]: Type[Key] extends Type? [Key] : Type extends Type[Key]? [Key] : Type[Key] extends std.ReadonlyArray<infer ArrayType>? Type extends ArrayType? [Key] : ArrayType extends Type? [Key] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] : [Key, ...mongodb.mongodb.NestedPaths<Type[Key], [...Depth, 1]>] | [Key]}[std.Extract<keyof Type, string>] : []
   }}}
   */
 @js.native
-trait NestedPaths[Type] extends StObject
+trait NestedPaths[Type, Depth /* <: js.Array[scala.Double] */] extends StObject

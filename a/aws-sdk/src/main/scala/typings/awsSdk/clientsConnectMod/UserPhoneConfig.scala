@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserPhoneConfig extends StObject {
   
   /**
-    * The After Call Work (ACW) timeout setting, in seconds.
+    * The After Call Work (ACW) timeout setting, in seconds.  When returned by a SearchUsers call, AfterContactWorkTimeLimit is returned in milliseconds.  
     */
   var AfterContactWorkTimeLimit: js.UndefOr[typings.awsSdk.clientsConnectMod.AfterContactWorkTimeLimit] = js.undefined
   

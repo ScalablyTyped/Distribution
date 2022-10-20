@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeliverabilityTestReport extends StObject {
   
   /**
-    * The date and time when the predictive inbox placement test was created, in Unix time format.
+    * The date and time when the predictive inbox placement test was created.
     */
   var CreateDate: js.UndefOr[js.Date] = js.undefined
   

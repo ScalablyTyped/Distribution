@@ -1,10 +1,11 @@
 package typings.sentryNode
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryNode.anon.Ip
 import typings.sentryNode.anon.ServerName
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesMiscMod.ExtractedNodeRequestData
-import typings.sentryUtils.anon.Ip
+import typings.sentryTypes.typesPolymorphicsMod.PolymorphicRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ object typesRequestDataDeprecatedMod {
   inline def parseRequest(event: Event, req: ExpressRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
   inline def parseRequest(event: Event, req: ExpressRequest, options: ParseRequestOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
   
-  type ExpressRequest = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CrossPlatformRequest */ Any
+  type ExpressRequest = PolymorphicRequest
   
   type ParseRequestOptions = js.UndefOr[Ip] & ServerName
 }

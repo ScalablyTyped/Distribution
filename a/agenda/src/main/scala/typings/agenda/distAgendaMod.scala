@@ -216,6 +216,10 @@ object distAgendaMod {
     @JSName("disable")
     var disable_Original: js.ThisFunction1[/* this */ this.type, /* query */ js.UndefOr[Filter[Any]], js.Promise[Double]] = js.native
     
+    def drain(): js.Promise[Unit] = js.native
+    @JSName("drain")
+    var drain_Original: js.ThisFunction0[/* this */ this.type, js.Promise[Unit]] = js.native
+    
     def enable(): js.Promise[Double] = js.native
     def enable(query: Filter[Any]): js.Promise[Double] = js.native
     @JSName("enable")

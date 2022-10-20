@@ -15,8 +15,6 @@ trait IEntityRefStep
   extends StObject
      with IElement {
   
-  val containerAsIndirectEntityRef: IIndirectEntityRef = js.native
-  
   @JSName("model")
   val model_IEntityRefStep: IModel = js.native
 }

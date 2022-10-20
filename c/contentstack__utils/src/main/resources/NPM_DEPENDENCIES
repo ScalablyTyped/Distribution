@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@contentstack/utils" : "1.1.2"
+      "@contentstack/utils" : "1.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@contentstack/utils" : "1.1.2"
+      "@contentstack/utils" : "1.1.3"
     }
   ],
   "compile-devDependencies" : [

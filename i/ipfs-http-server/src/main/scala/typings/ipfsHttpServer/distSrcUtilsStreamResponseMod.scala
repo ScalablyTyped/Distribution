@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -15,6 +16,15 @@ object distSrcUtilsStreamResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def streamResponse(request: Request, h: ResponseToolkit, getSource: js.Function0[AsyncIterable[Any]]): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamResponse")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any], getSource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
-  inline def streamResponse(request: Request, h: ResponseToolkit, getSource: js.Function0[AsyncIterable[Any]], options: OnEnd): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamResponse")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any], getSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
+  inline def streamResponse(
+    request: Request[ReqRefDefaults],
+    h: ResponseToolkit[ReqRefDefaults],
+    getSource: js.Function0[AsyncIterable[Any]]
+  ): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamResponse")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any], getSource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
+  inline def streamResponse(
+    request: Request[ReqRefDefaults],
+    h: ResponseToolkit[ReqRefDefaults],
+    getSource: js.Function0[AsyncIterable[Any]],
+    options: OnEnd
+  ): js.Promise[ResponseObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamResponse")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any], getSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResponseObject]]
 }

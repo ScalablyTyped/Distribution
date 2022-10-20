@@ -10,6 +10,8 @@ trait JsonLdPropsscriptKeystrin
   extends StObject
      with /* key */ StringDictionary[Any] {
   
+  var dataArray: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var scriptId: js.UndefOr[String] = js.undefined
   
   var scriptKey: String
@@ -24,6 +26,12 @@ object JsonLdPropsscriptKeystrin {
   }
   
   extension [Self <: JsonLdPropsscriptKeystrin](x: Self) {
+    
+    inline def setDataArray(value: js.Array[Any]): Self = StObject.set(x, "dataArray", value.asInstanceOf[js.Any])
+    
+    inline def setDataArrayUndefined: Self = StObject.set(x, "dataArray", js.undefined)
+    
+    inline def setDataArrayVarargs(value: Any*): Self = StObject.set(x, "dataArray", js.Array(value*))
     
     inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     

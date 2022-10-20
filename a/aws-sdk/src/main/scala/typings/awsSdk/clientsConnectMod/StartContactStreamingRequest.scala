@@ -12,7 +12,7 @@ trait StartContactStreamingRequest extends StObject {
   var ChatStreamingConfiguration: typings.awsSdk.clientsConnectMod.ChatStreamingConfiguration
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var ClientToken: typings.awsSdk.clientsConnectMod.ClientToken
   

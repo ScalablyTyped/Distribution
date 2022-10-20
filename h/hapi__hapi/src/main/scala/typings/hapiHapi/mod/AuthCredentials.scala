@@ -1,18 +1,15 @@
 package typings.hapiHapi.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthCredentials
-  extends StObject
-     with /* key */ StringDictionary[Any] {
+trait AuthCredentials[AuthUser /* <: js.Object */, AuthApp /* <: js.Object */] extends StObject {
   
   /**
     * If set, will only work with routes that set `access.entity` to `app`.
     */
-  var app: js.UndefOr[AppCredentials] = js.undefined
+  var app: js.UndefOr[MergeType[AppCredentials, AuthApp]] = js.undefined
   
   /**
     * The application scopes to be granted.
@@ -23,18 +20,18 @@ trait AuthCredentials
   /**
     * If set, will only work with routes that set `access.entity` to `user`.
     */
-  var user: js.UndefOr[UserCredentials] = js.undefined
+  var user: js.UndefOr[MergeType[UserCredentials, AuthUser]] = js.undefined
 }
 object AuthCredentials {
   
-  inline def apply(): AuthCredentials = {
+  inline def apply[AuthUser /* <: js.Object */, AuthApp /* <: js.Object */](): AuthCredentials[AuthUser, AuthApp] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[AuthCredentials]
+    __obj.asInstanceOf[AuthCredentials[AuthUser, AuthApp]]
   }
   
-  extension [Self <: AuthCredentials](x: Self) {
+  extension [Self <: AuthCredentials[?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */](x: Self & (AuthCredentials[AuthUser, AuthApp])) {
     
-    inline def setApp(value: AppCredentials): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: MergeType[AppCredentials, AuthApp]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
@@ -44,7 +41,7 @@ object AuthCredentials {
     
     inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     
-    inline def setUser(value: UserCredentials): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: MergeType[UserCredentials, AuthUser]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }

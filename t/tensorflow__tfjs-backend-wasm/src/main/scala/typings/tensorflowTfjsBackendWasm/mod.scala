@@ -36,5 +36,5 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-backend-wasm", "version_wasm")
   @js.native
-  val versionWasm: /* "3.20.0" */ String = js.native
+  val versionWasm: /* "4.0.0" */ String = js.native
 }

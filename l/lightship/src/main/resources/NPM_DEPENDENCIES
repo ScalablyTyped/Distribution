@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lightship" : "7.0.2"
+      "lightship" : "7.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "lightship" : "7.0.2"
+      "lightship" : "7.1.0"
     }
   ],
   "compile-devDependencies" : [

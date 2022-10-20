@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "fhir-kit-client"
-version := "1.1-dt-20211202Z-4bbb15"
+version := "1.1-dt-20211202Z-97e56d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20220624Z-ad2647",
-  "org.scalablytyped" %%% "form-data" % "4.0.0-dc33cf",
+  "org.scalablytyped" %%% "form-data" % "4.0.0-5ba630",
   "org.scalablytyped" %%% "json-patch" % "0.0-unknown-dt-20220913Z-6eae72",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-978800",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-6c1e97",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-0fe4d5")
 publishArtifact in packageDoc := false

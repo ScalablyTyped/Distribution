@@ -31,6 +31,8 @@ object libRestSupersimV1Mod {
     
     val networks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NetworkListInstance */ Any = js.native
     
+    val settingsUpdates: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SettingsUpdateListInstance */ Any = js.native
+    
     val sims: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimListInstance */ Any = js.native
     
     val smsCommands: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SmsCommandListInstance */ Any = js.native

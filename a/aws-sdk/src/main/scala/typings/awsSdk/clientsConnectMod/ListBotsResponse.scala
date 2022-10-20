@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListBotsResponse extends StObject {
   
   /**
-    * The names and Regions of the Amazon Lex or Amazon Lex V2 bots associated with the specified instance.
+    * The names and Amazon Web Services Regions of the Amazon Lex or Amazon Lex V2 bots associated with the specified instance.
     */
   var LexBots: js.UndefOr[LexBotConfigList] = js.undefined
   

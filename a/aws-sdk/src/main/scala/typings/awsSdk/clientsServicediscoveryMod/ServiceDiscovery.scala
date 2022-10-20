@@ -15,12 +15,12 @@ trait ServiceDiscovery
   var config: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates an HTTP namespace. Service instances registered using an HTTP namespace can be discovered using a DiscoverInstances request but can't be discovered using DNS. For the current quota on the number of namespaces that you can create using the same account, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates an HTTP namespace. Service instances registered using an HTTP namespace can be discovered using a DiscoverInstances request but can't be discovered using DNS. For the current quota on the number of namespaces that you can create using the same Amazon Web Services account, see Cloud Map quotas in the Cloud Map Developer Guide.
     */
   def createHttpNamespace(): Request[CreateHttpNamespaceResponse, AWSError] = js.native
   def createHttpNamespace(callback: js.Function2[/* err */ AWSError, /* data */ CreateHttpNamespaceResponse, Unit]): Request[CreateHttpNamespaceResponse, AWSError] = js.native
   /**
-    * Creates an HTTP namespace. Service instances registered using an HTTP namespace can be discovered using a DiscoverInstances request but can't be discovered using DNS. For the current quota on the number of namespaces that you can create using the same account, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates an HTTP namespace. Service instances registered using an HTTP namespace can be discovered using a DiscoverInstances request but can't be discovered using DNS. For the current quota on the number of namespaces that you can create using the same Amazon Web Services account, see Cloud Map quotas in the Cloud Map Developer Guide.
     */
   def createHttpNamespace(params: CreateHttpNamespaceRequest): Request[CreateHttpNamespaceResponse, AWSError] = js.native
   def createHttpNamespace(
@@ -29,12 +29,12 @@ trait ServiceDiscovery
   ): Request[CreateHttpNamespaceResponse, AWSError] = js.native
   
   /**
-    * Creates a private namespace based on DNS, which is visible only inside a specified Amazon VPC. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. Service instances that are registered using a private DNS namespace can be discovered using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same account, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates a private namespace based on DNS, which is visible only inside a specified Amazon VPC. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. Service instances that are registered using a private DNS namespace can be discovered using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same Amazon Web Services account, see Cloud Map quotas in the Cloud Map Developer Guide.
     */
   def createPrivateDnsNamespace(): Request[CreatePrivateDnsNamespaceResponse, AWSError] = js.native
   def createPrivateDnsNamespace(callback: js.Function2[/* err */ AWSError, /* data */ CreatePrivateDnsNamespaceResponse, Unit]): Request[CreatePrivateDnsNamespaceResponse, AWSError] = js.native
   /**
-    * Creates a private namespace based on DNS, which is visible only inside a specified Amazon VPC. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. Service instances that are registered using a private DNS namespace can be discovered using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same account, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates a private namespace based on DNS, which is visible only inside a specified Amazon VPC. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. Service instances that are registered using a private DNS namespace can be discovered using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same Amazon Web Services account, see Cloud Map quotas in the Cloud Map Developer Guide.
     */
   def createPrivateDnsNamespace(params: CreatePrivateDnsNamespaceRequest): Request[CreatePrivateDnsNamespaceResponse, AWSError] = js.native
   def createPrivateDnsNamespace(
@@ -43,12 +43,12 @@ trait ServiceDiscovery
   ): Request[CreatePrivateDnsNamespaceResponse, AWSError] = js.native
   
   /**
-    * Creates a public namespace based on DNS, which is visible on the internet. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. You can discover instances that were registered with a public DNS namespace by using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same account, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates a public namespace based on DNS, which is visible on the internet. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. You can discover instances that were registered with a public DNS namespace by using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same Amazon Web Services account, see Cloud Map quotas in the Cloud Map Developer Guide.  The CreatePublicDnsNamespace API operation is not supported in the Amazon Web Services GovCloud (US) Regions. 
     */
   def createPublicDnsNamespace(): Request[CreatePublicDnsNamespaceResponse, AWSError] = js.native
   def createPublicDnsNamespace(callback: js.Function2[/* err */ AWSError, /* data */ CreatePublicDnsNamespaceResponse, Unit]): Request[CreatePublicDnsNamespaceResponse, AWSError] = js.native
   /**
-    * Creates a public namespace based on DNS, which is visible on the internet. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. You can discover instances that were registered with a public DNS namespace by using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same account, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates a public namespace based on DNS, which is visible on the internet. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service is backend.example.com. You can discover instances that were registered with a public DNS namespace by using either a DiscoverInstances request or using DNS. For the current quota on the number of namespaces that you can create using the same Amazon Web Services account, see Cloud Map quotas in the Cloud Map Developer Guide.  The CreatePublicDnsNamespace API operation is not supported in the Amazon Web Services GovCloud (US) Regions. 
     */
   def createPublicDnsNamespace(params: CreatePublicDnsNamespaceRequest): Request[CreatePublicDnsNamespaceResponse, AWSError] = js.native
   def createPublicDnsNamespace(
@@ -57,12 +57,12 @@ trait ServiceDiscovery
   ): Request[CreatePublicDnsNamespaceResponse, AWSError] = js.native
   
   /**
-    * Creates a service. This action defines the configuration for the following entities:   For public and private DNS namespaces, one of the following combinations of DNS records in Amazon Route 53:    A     AAAA     A and AAAA     SRV     CNAME      Optionally, a health check   After you create the service, you can submit a RegisterInstance request, and Cloud Map uses the values in the configuration to create the specified entities. For the current quota on the number of instances that you can register using the same namespace and using the same service, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates a service. This action defines the configuration for the following entities:   For public and private DNS namespaces, one of the following combinations of DNS records in Amazon Route 53:    A     AAAA     A and AAAA     SRV     CNAME      Optionally, a health check   After you create the service, you can submit a RegisterInstance request, and Cloud Map uses the values in the configuration to create the specified entities. For the current quota on the number of instances that you can register using the same namespace and using the same service, see Cloud Map quotas in the Cloud Map Developer Guide.
     */
   def createService(): Request[CreateServiceResponse, AWSError] = js.native
   def createService(callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceResponse, Unit]): Request[CreateServiceResponse, AWSError] = js.native
   /**
-    * Creates a service. This action defines the configuration for the following entities:   For public and private DNS namespaces, one of the following combinations of DNS records in Amazon Route 53:    A     AAAA     A and AAAA     SRV     CNAME      Optionally, a health check   After you create the service, you can submit a RegisterInstance request, and Cloud Map uses the values in the configuration to create the specified entities. For the current quota on the number of instances that you can register using the same namespace and using the same service, see Cloud Map quotas in the Cloud Map Developer Guide.
+    * Creates a service. This action defines the configuration for the following entities:   For public and private DNS namespaces, one of the following combinations of DNS records in Amazon Route 53:    A     AAAA     A and AAAA     SRV     CNAME      Optionally, a health check   After you create the service, you can submit a RegisterInstance request, and Cloud Map uses the values in the configuration to create the specified entities. For the current quota on the number of instances that you can register using the same namespace and using the same service, see Cloud Map quotas in the Cloud Map Developer Guide.
     */
   def createService(params: CreateServiceRequest): Request[CreateServiceResponse, AWSError] = js.native
   def createService(
@@ -99,12 +99,12 @@ trait ServiceDiscovery
   ): Request[DeleteServiceResponse, AWSError] = js.native
   
   /**
-    * Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud Map created for the specified instance.
+    * Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud Map created for the specified instance.
     */
   def deregisterInstance(): Request[DeregisterInstanceResponse, AWSError] = js.native
   def deregisterInstance(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterInstanceResponse, Unit]): Request[DeregisterInstanceResponse, AWSError] = js.native
   /**
-    * Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud Map created for the specified instance.
+    * Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud Map created for the specified instance.
     */
   def deregisterInstance(params: DeregisterInstanceRequest): Request[DeregisterInstanceResponse, AWSError] = js.native
   def deregisterInstance(
@@ -211,12 +211,12 @@ trait ServiceDiscovery
   ): Request[ListInstancesResponse, AWSError] = js.native
   
   /**
-    * Lists summary information about the namespaces that were created by the current account.
+    * Lists summary information about the namespaces that were created by the current Amazon Web Services account.
     */
   def listNamespaces(): Request[ListNamespacesResponse, AWSError] = js.native
   def listNamespaces(callback: js.Function2[/* err */ AWSError, /* data */ ListNamespacesResponse, Unit]): Request[ListNamespacesResponse, AWSError] = js.native
   /**
-    * Lists summary information about the namespaces that were created by the current account.
+    * Lists summary information about the namespaces that were created by the current Amazon Web Services account.
     */
   def listNamespaces(params: ListNamespacesRequest): Request[ListNamespacesResponse, AWSError] = js.native
   def listNamespaces(
@@ -323,12 +323,12 @@ trait ServiceDiscovery
   ): Request[UpdateHttpNamespaceResponse, AWSError] = js.native
   
   /**
-    * Submits a request to change the health status of a custom health check to healthy or unhealthy. You can use UpdateInstanceCustomHealthStatus to change the status only for custom health checks, which you define using HealthCheckCustomConfig when you create a service. You can't use it to change the status for Route 53 health checks, which you define using HealthCheckConfig. For more information, see HealthCheckCustomConfig.
+    * Submits a request to change the health status of a custom health check to healthy or unhealthy. You can use UpdateInstanceCustomHealthStatus to change the status only for custom health checks, which you define using HealthCheckCustomConfig when you create a service. You can't use it to change the status for Route 53 health checks, which you define using HealthCheckConfig. For more information, see HealthCheckCustomConfig.
     */
   def updateInstanceCustomHealthStatus(): Request[js.Object, AWSError] = js.native
   def updateInstanceCustomHealthStatus(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Submits a request to change the health status of a custom health check to healthy or unhealthy. You can use UpdateInstanceCustomHealthStatus to change the status only for custom health checks, which you define using HealthCheckCustomConfig when you create a service. You can't use it to change the status for Route 53 health checks, which you define using HealthCheckConfig. For more information, see HealthCheckCustomConfig.
+    * Submits a request to change the health status of a custom health check to healthy or unhealthy. You can use UpdateInstanceCustomHealthStatus to change the status only for custom health checks, which you define using HealthCheckCustomConfig when you create a service. You can't use it to change the status for Route 53 health checks, which you define using HealthCheckConfig. For more information, see HealthCheckCustomConfig.
     */
   def updateInstanceCustomHealthStatus(params: UpdateInstanceCustomHealthStatusRequest): Request[js.Object, AWSError] = js.native
   def updateInstanceCustomHealthStatus(

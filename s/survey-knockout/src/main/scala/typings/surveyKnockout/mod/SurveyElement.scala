@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyElement")
 @js.native
-open class SurveyElement protected ()
+open class SurveyElement[E] protected ()
   extends SurveyElementCore
      with ISurveyElement {
   def this(name: String) = this()
@@ -67,6 +67,10 @@ open class SurveyElement protected ()
   /* protected */ def getDefaultTitleActions(): js.Array[IAction] = js.native
   
   /* protected */ def getIsErrorsModeTooltip(): Boolean = js.native
+  
+  /* protected */ def getIsTooltipErrorInsideSupported(): Boolean = js.native
+  
+  /* protected */ def getIsTooltipErrorSupportedByParent(): Boolean = js.native
   
   /* InferMemberOverrides */
   override def getLocale(): String = js.native
@@ -194,6 +198,8 @@ open class SurveyElement protected ()
   
   /* protected */ def onNameChanged(oldValue: String): Unit = js.native
   
+  /* protected */ def onParentQuestionChanged(): Unit = js.native
+  
   /* protected */ def onReadOnlyChanged(): Unit = js.native
   
   /* protected */ def onSetData(): Unit = js.native
@@ -206,6 +212,15 @@ open class SurveyElement protected ()
   
   def paddingRight: String = js.native
   def paddingRight_=(`val`: String): Unit = js.native
+  
+  /*
+    * A Dynamic Panel, Dynamic Matrix, or Dropdown Matrix that includes the current question.
+    * 
+    * This property is `null` for standalone questions.
+    */
+  def parentQuestion: Any = js.native
+  
+  var parentQuestionValue: Any = js.native
   
   @JSName("parent")
   def parent_MSurveyElement: IPanel = js.native
@@ -239,13 +254,15 @@ open class SurveyElement protected ()
   
   def rootStyle: Any = js.native
   
-  def selectedElementInDesign: SurveyElement = js.native
+  def selectedElementInDesign: Any = js.native
   
-  var selectedElementInDesignValue: SurveyElement = js.native
+  var selectedElementInDesignValue: Any = js.native
   
-  def selectedElementInDesign_=(`val`: SurveyElement): Unit = js.native
+  def selectedElementInDesign_=(`val`: Any): Unit = js.native
   
   /* protected */ def setPage(parent: IPanel, newPage: IPage): Unit = js.native
+  
+  def setParentQuestion(`val`: Any): Unit = js.native
   
   /* protected */ def setSurveyCore(value: ISurvey): Unit = js.native
   

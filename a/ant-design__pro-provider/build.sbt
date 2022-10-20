@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__pro-provider"
-version := "2.0.6-4a8ad6"
+version := "2.0.7-2e64dd"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

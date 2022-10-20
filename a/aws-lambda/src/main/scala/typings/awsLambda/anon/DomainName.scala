@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DomainName extends StObject {
   
+  /** The API's custom domain if used for the request. */
   var domainName: String | Null
   
   var headers: AppSyncResolverEventHeaders

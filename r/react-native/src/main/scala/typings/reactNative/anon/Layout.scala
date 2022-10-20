@@ -1,6 +1,7 @@
 package typings.reactNative.anon
 
 import typings.reactNative.mod.LayoutRectangle
+import typings.reactNative.mod.NodeHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Layout extends StObject {
   
   var layout: LayoutRectangle
+  
+  var target: js.UndefOr[NodeHandle | Null] = js.undefined
 }
 object Layout {
   
@@ -19,5 +22,11 @@ object Layout {
   extension [Self <: Layout](x: Self) {
     
     inline def setLayout(value: LayoutRectangle): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setTarget(value: NodeHandle): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

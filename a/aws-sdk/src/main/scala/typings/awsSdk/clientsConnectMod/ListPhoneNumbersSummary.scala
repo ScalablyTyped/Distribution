@@ -32,7 +32,7 @@ trait ListPhoneNumbersSummary extends StObject {
   var PhoneNumberType: js.UndefOr[typings.awsSdk.clientsConnectMod.PhoneNumberType] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to.
+    * The Amazon Resource Name (ARN) for Amazon Connect instances or traffic distribution groups that phone numbers are claimed to.
     */
   var TargetArn: js.UndefOr[ARN] = js.undefined
 }

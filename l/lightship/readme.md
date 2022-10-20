@@ -1,7 +1,7 @@
 
 # Scala.js typings for lightship
 
-Typings are for version 7.0.2
+Typings are for version 7.1.0
 
 ## Library description:
 Abstracts readiness, liveness and startup checks and graceful shutdown of Node.js services running in Kubernetes.

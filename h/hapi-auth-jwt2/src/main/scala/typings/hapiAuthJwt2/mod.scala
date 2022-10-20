@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hapiAuthJwt2.anon.Credentials
 import typings.hapiAuthJwt2.hapiAuthJwt2Strings.jwt
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -101,7 +102,7 @@ object mod extends Shortcut {
       * sources not foreseen by the module, for example... YAR
       * @default false
       */
-    var customExtractionFunc: js.UndefOr[js.Function1[/* request */ Request, String]] = js.undefined
+    var customExtractionFunc: js.UndefOr[js.Function1[/* request */ Request[ReqRefDefaults], String]] = js.undefined
     
     /**
       *
@@ -111,7 +112,12 @@ object mod extends Shortcut {
       * It provides an extension point to allow the host the ability to customise the error messages returned.
       */
     var errorFunc: js.UndefOr[
-        js.Function3[/* ctx */ ErrorContext, /* request */ Request, /* h */ ResponseToolkit, ErrorContext]
+        js.Function3[
+          /* ctx */ ErrorContext, 
+          /* request */ Request[ReqRefDefaults], 
+          /* h */ ResponseToolkit[ReqRefDefaults], 
+          ErrorContext
+        ]
       ] = js.undefined
     
     /**
@@ -146,7 +152,7 @@ object mod extends Shortcut {
       */
     var responseFunc: js.UndefOr[
         js.Function2[
-          /* request */ Request, 
+          /* request */ Request[ReqRefDefaults], 
           /* reply */ js.Function2[/* err */ Any, /* response */ ResponseObject, Unit], 
           Unit
         ]
@@ -171,7 +177,7 @@ object mod extends Shortcut {
       * @param decoded the *decoded* and *verified* JWT received from the client in *request.headers.authorization*
       * @param request the original *request* received from the client
       */
-    def validate(decoded: js.Object, request: Request, tk: ResponseToolkit): ValidationResult | js.Promise[ValidationResult]
+    def validate(decoded: js.Object, request: Request[ReqRefDefaults], tk: ResponseToolkit[ReqRefDefaults]): ValidationResult | js.Promise[ValidationResult]
     
     /**
       * Settings to define how tokens are verified by the jsonwebtoken library
@@ -180,7 +186,9 @@ object mod extends Shortcut {
   }
   object Options {
     
-    inline def apply(validate: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult]): Options = {
+    inline def apply(
+      validate: (js.Object, Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => ValidationResult | js.Promise[ValidationResult]
+    ): Options = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction3(validate))
       __obj.asInstanceOf[Options]
     }
@@ -199,11 +207,13 @@ object mod extends Shortcut {
       
       inline def setCookieKeyUndefined: Self = StObject.set(x, "cookieKey", js.undefined)
       
-      inline def setCustomExtractionFunc(value: /* request */ Request => String): Self = StObject.set(x, "customExtractionFunc", js.Any.fromFunction1(value))
+      inline def setCustomExtractionFunc(value: /* request */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "customExtractionFunc", js.Any.fromFunction1(value))
       
       inline def setCustomExtractionFuncUndefined: Self = StObject.set(x, "customExtractionFunc", js.undefined)
       
-      inline def setErrorFunc(value: (/* ctx */ ErrorContext, /* request */ Request, /* h */ ResponseToolkit) => ErrorContext): Self = StObject.set(x, "errorFunc", js.Any.fromFunction3(value))
+      inline def setErrorFunc(
+        value: (/* ctx */ ErrorContext, /* request */ Request[ReqRefDefaults], /* h */ ResponseToolkit[ReqRefDefaults]) => ErrorContext
+      ): Self = StObject.set(x, "errorFunc", js.Any.fromFunction3(value))
       
       inline def setErrorFuncUndefined: Self = StObject.set(x, "errorFunc", js.undefined)
       
@@ -226,7 +236,7 @@ object mod extends Shortcut {
       inline def setPayloadKeyUndefined: Self = StObject.set(x, "payloadKey", js.undefined)
       
       inline def setResponseFunc(
-        value: (/* request */ Request, /* reply */ js.Function2[/* err */ Any, /* response */ ResponseObject, Unit]) => Unit
+        value: (/* request */ Request[ReqRefDefaults], /* reply */ js.Function2[/* err */ Any, /* response */ ResponseObject, Unit]) => Unit
       ): Self = StObject.set(x, "responseFunc", js.Any.fromFunction2(value))
       
       inline def setResponseFuncUndefined: Self = StObject.set(x, "responseFunc", js.undefined)
@@ -239,7 +249,9 @@ object mod extends Shortcut {
       
       inline def setUrlKeyUndefined: Self = StObject.set(x, "urlKey", js.undefined)
       
-      inline def setValidate(value: (js.Object, Request, ResponseToolkit) => ValidationResult | js.Promise[ValidationResult]): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+      inline def setValidate(
+        value: (js.Object, Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => ValidationResult | js.Promise[ValidationResult]
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
       
       inline def setVerifyOptions(value: VerifyOptions): Self = StObject.set(x, "verifyOptions", value.asInstanceOf[js.Any])
       
@@ -252,7 +264,9 @@ object mod extends Shortcut {
     /**
       * function which is run once the Token has been decoded (instead of a validate) with signature async function(decoded, request) where:
       */
-    var verify: js.UndefOr[js.Function2[/* decoded */ Any, /* request */ Request, js.Promise[Credentials]]] = js.undefined
+    var verify: js.UndefOr[
+        js.Function2[/* decoded */ Any, /* request */ Request[ReqRefDefaults], js.Promise[Credentials]]
+      ] = js.undefined
   }
   object RegisterOptions {
     
@@ -263,7 +277,7 @@ object mod extends Shortcut {
     
     extension [Self <: RegisterOptions](x: Self) {
       
-      inline def setVerify(value: (/* decoded */ Any, /* request */ Request) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+      inline def setVerify(value: (/* decoded */ Any, /* request */ Request[ReqRefDefaults]) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
       
       inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     }

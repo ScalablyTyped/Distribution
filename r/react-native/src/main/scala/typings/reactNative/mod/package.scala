@@ -7,6 +7,7 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
+import typings.react.mod.ElementRef
 import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
@@ -302,7 +303,7 @@ type NativeMethodsMixinType = NativeMethods
   */
 type NativeModulesStatic = StringDictionary[Any]
 
-type NativeSyntheticEvent[T] = BaseSyntheticEvent[T, NodeHandle, NodeHandle]
+type NativeSyntheticEvent[T] = BaseSyntheticEvent[T, ElementRef[HostComponent[Any]], ElementRef[HostComponent[Any]]]
 
 type NavigatorIOSProperties = NavigatorIOSProps
 

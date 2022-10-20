@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mdx-js__react"
-version := "2.1.3-309e1d"
+version := "2.1.3-61c505"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "mdx" % "2.0-dt-20220624Z-c56a1c",
+  "org.scalablytyped" %%% "mdx" % "2.0-dt-20221018Z-c56a1c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",

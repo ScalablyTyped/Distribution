@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@wordpress/api-fetch" : "6.16.0"
+      "@wordpress/api-fetch" : "6.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@wordpress/api-fetch" : "6.16.0"
+      "@wordpress/api-fetch" : "6.17.0"
     }
   ],
   "compile-devDependencies" : [

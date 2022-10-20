@@ -6,6 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.management
+  - typings.awsSdk.awsSdkStrings.member_
+  - java.lang.String
+*/
+type AccountType = _AccountType | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.none__
   - typings.awsSdk.awsSdkStrings.all__
   - typings.awsSdk.awsSdkStrings.high__
@@ -37,3 +44,5 @@ type roleArn = String
 type slackChannelConfigurationList = js.Array[SlackChannelConfiguration]
 
 type teamId = String
+
+type teamName = String

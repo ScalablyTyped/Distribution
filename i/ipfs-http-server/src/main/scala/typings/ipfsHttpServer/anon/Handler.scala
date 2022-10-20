@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer.anon
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Handler extends StObject {
   
-  def handler(request: Request, h: ResponseToolkit): js.Promise[ResponseObject]
+  def handler(request: Request[ReqRefDefaults], h: ResponseToolkit[ReqRefDefaults]): js.Promise[ResponseObject]
   
   var method: String
   
@@ -20,7 +21,7 @@ trait Handler extends StObject {
 object Handler {
   
   inline def apply(
-    handler: (Request, ResponseToolkit) => js.Promise[ResponseObject],
+    handler: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[ResponseObject],
     method: String,
     options: Validate,
     path: String
@@ -31,7 +32,7 @@ object Handler {
   
   extension [Self <: Handler](x: Self) {
     
-    inline def setHandler(value: (Request, ResponseToolkit) => js.Promise[ResponseObject]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => js.Promise[ResponseObject]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

@@ -10,9 +10,12 @@ import typings.hapiBell.hapiBellStrings.bell
 import typings.hapiBell.hapiBellStrings.custom
 import typings.hapiBell.hapiBellStrings.oauth
 import typings.hapiBell.hapiBellStrings.oauth2
+import typings.hapiHapi.mod.AppCredentials
 import typings.hapiHapi.mod.AuthCredentials
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
+import typings.hapiHapi.mod.UserCredentials
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -410,7 +413,7 @@ object mod {
       * Set the base redirect_uri manually if it cannot be inferred properly from server settings.
       * Useful to override port, protocol, and host if proxied or forwarded.
       */
-    var location: js.UndefOr[String | (js.Function1[/* req */ Request, String])] = js.undefined
+    var location: js.UndefOr[String | (js.Function1[/* req */ Request[ReqRefDefaults], String])] = js.undefined
     
     /**
       * an object of key-value pairs that specify additional
@@ -432,14 +435,16 @@ object mod {
       * * Twitter supports `force_login`, `screen_name`.
       * * Linkedin supports `fields`.
       */
-    var providerParams: js.UndefOr[StringLikeMap | (js.Function1[/* request */ Request, StringLikeMap])] = js.undefined
+    var providerParams: js.UndefOr[
+        StringLikeMap | (js.Function1[/* request */ Request[ReqRefDefaults], StringLikeMap])
+      ] = js.undefined
     
     /**
       * allows passing additional OAuth state from initial request.
       * This must be a function returning a string,
       * which will be appended to the bell internal state parameter for OAuth code flow.
       */
-    var runtimeStateCallback: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
+    var runtimeStateCallback: js.UndefOr[js.Function1[/* req */ Request[ReqRefDefaults], String]] = js.undefined
     
     /**
       * Each built-in vendor comes with the required scope for basic profile information.
@@ -448,7 +453,9 @@ object mod {
       * or a function which takes the client's request and returns an object.
       * Consult the provider for their specific supported scopes.
       */
-    var scope: js.UndefOr[js.Array[String] | (js.Function1[/* request */ Request, js.Array[String]])] = js.undefined
+    var scope: js.UndefOr[
+        js.Array[String] | (js.Function1[/* request */ Request[ReqRefDefaults], js.Array[String]])
+      ] = js.undefined
     
     /**
       * skips obtaining a user profile from the provider.
@@ -501,9 +508,9 @@ object mod {
       
       inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
       
-      inline def setLocation(value: String | (js.Function1[/* req */ Request, String])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String | (js.Function1[/* req */ Request[ReqRefDefaults], String])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setLocationFunction1(value: /* req */ Request => String): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
+      inline def setLocationFunction1(value: /* req */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
@@ -511,19 +518,19 @@ object mod {
       
       inline def setProfileParamsUndefined: Self = StObject.set(x, "profileParams", js.undefined)
       
-      inline def setProviderParams(value: StringLikeMap | (js.Function1[/* request */ Request, StringLikeMap])): Self = StObject.set(x, "providerParams", value.asInstanceOf[js.Any])
+      inline def setProviderParams(value: StringLikeMap | (js.Function1[/* request */ Request[ReqRefDefaults], StringLikeMap])): Self = StObject.set(x, "providerParams", value.asInstanceOf[js.Any])
       
-      inline def setProviderParamsFunction1(value: /* request */ Request => StringLikeMap): Self = StObject.set(x, "providerParams", js.Any.fromFunction1(value))
+      inline def setProviderParamsFunction1(value: /* request */ Request[ReqRefDefaults] => StringLikeMap): Self = StObject.set(x, "providerParams", js.Any.fromFunction1(value))
       
       inline def setProviderParamsUndefined: Self = StObject.set(x, "providerParams", js.undefined)
       
-      inline def setRuntimeStateCallback(value: /* req */ Request => String): Self = StObject.set(x, "runtimeStateCallback", js.Any.fromFunction1(value))
+      inline def setRuntimeStateCallback(value: /* req */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "runtimeStateCallback", js.Any.fromFunction1(value))
       
       inline def setRuntimeStateCallbackUndefined: Self = StObject.set(x, "runtimeStateCallback", js.undefined)
       
-      inline def setScope(value: js.Array[String] | (js.Function1[/* request */ Request, js.Array[String]])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Array[String] | (js.Function1[/* request */ Request[ReqRefDefaults], js.Array[String]])): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setScopeFunction1(value: /* request */ Request => js.Array[String]): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
+      inline def setScopeFunction1(value: /* request */ Request[ReqRefDefaults] => js.Array[String]): Self = StObject.set(x, "scope", js.Any.fromFunction1(value))
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
@@ -679,7 +686,10 @@ object mod {
     inline def yahoo: typings.hapiBell.hapiBellStrings.yahoo = "yahoo".asInstanceOf[typings.hapiBell.hapiBellStrings.yahoo]
   }
   
-  type RequestPassThrough = js.Function1[/* request */ Request, PromiseLike[AuthCredentials] | AuthCredentials]
+  type RequestPassThrough = js.Function1[
+    /* request */ Request[ReqRefDefaults], 
+    (PromiseLike[AuthCredentials[UserCredentials, AppCredentials]]) | (AuthCredentials[UserCredentials, AppCredentials])
+  ]
   
   trait RequiredProviderOptions extends StObject {
     

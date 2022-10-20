@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-phone-number-input"
-version := "3.2.11-a15992"
+version := "3.2.12-dbda6b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

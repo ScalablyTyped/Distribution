@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-phone-number-input
 
-Typings are for version 3.2.11
+Typings are for version 3.2.12
 
 ## Library description:
 Telephone number input React component

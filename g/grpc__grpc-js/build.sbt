@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "grpc__grpc-js"
-version := "1.7.2-b4af17"
+version := "1.7.2-7aa1a8"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-4e862a",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-a3c7dd",
   "org.scalablytyped" %%% "long" % "5.2.0-dc3994",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-41b6ae",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

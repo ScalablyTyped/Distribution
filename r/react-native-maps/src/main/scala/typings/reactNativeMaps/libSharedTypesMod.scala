@@ -1,7 +1,8 @@
 package typings.reactNativeMaps
 
+import typings.react.mod.ElementRef
+import typings.reactNative.mod.HostComponent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.NodeHandle
 import typings.reactNativeMaps.anon.ActionCoordinate
 import typings.reactNativeMaps.anon.CoordinateId
 import typings.reactNativeMaps.anon.CoordinatePosition
@@ -100,7 +101,7 @@ object libSharedTypesMod {
     
     var cancelable: Boolean
     
-    var currentTarget: NodeHandle
+    var currentTarget: ElementRef[HostComponent[Any]]
     
     var defaultPrevented: Boolean
     
@@ -120,7 +121,7 @@ object libSharedTypesMod {
     
     var stopPropagation: js.Function0[Unit]
     
-    var target: NodeHandle
+    var target: ElementRef[HostComponent[Any]]
     
     var timeStamp: Double
     
@@ -131,7 +132,7 @@ object libSharedTypesMod {
     inline def apply(
       bubbles: Boolean,
       cancelable: Boolean,
-      currentTarget: NodeHandle,
+      currentTarget: ElementRef[HostComponent[Any]],
       defaultPrevented: Boolean,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
@@ -141,7 +142,7 @@ object libSharedTypesMod {
       persist: () => Unit,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: NodeHandle,
+      target: ElementRef[HostComponent[Any]],
       timeStamp: Double,
       `type`: String
     ): MarkerDeselectEvent = {
@@ -156,7 +157,7 @@ object libSharedTypesMod {
       
       inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      inline def setCurrentTarget(value: NodeHandle): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: ElementRef[HostComponent[Any]]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,7 @@ object libSharedTypesMod {
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      inline def setTarget(value: NodeHandle): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ElementRef[HostComponent[Any]]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,7 @@ object libSharedTypesMod {
     
     var cancelable: Boolean
     
-    var currentTarget: NodeHandle
+    var currentTarget: ElementRef[HostComponent[Any]]
     
     var defaultPrevented: Boolean
     
@@ -217,7 +218,7 @@ object libSharedTypesMod {
     
     var stopPropagation: js.Function0[Unit]
     
-    var target: NodeHandle
+    var target: ElementRef[HostComponent[Any]]
     
     var timeStamp: Double
     
@@ -228,7 +229,7 @@ object libSharedTypesMod {
     inline def apply(
       bubbles: Boolean,
       cancelable: Boolean,
-      currentTarget: NodeHandle,
+      currentTarget: ElementRef[HostComponent[Any]],
       defaultPrevented: Boolean,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
@@ -238,7 +239,7 @@ object libSharedTypesMod {
       persist: () => Unit,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: NodeHandle,
+      target: ElementRef[HostComponent[Any]],
       timeStamp: Double,
       `type`: String
     ): MarkerSelectEvent = {
@@ -253,7 +254,7 @@ object libSharedTypesMod {
       
       inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      inline def setCurrentTarget(value: NodeHandle): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: ElementRef[HostComponent[Any]]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
@@ -273,7 +274,7 @@ object libSharedTypesMod {
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      inline def setTarget(value: NodeHandle): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: ElementRef[HostComponent[Any]]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       

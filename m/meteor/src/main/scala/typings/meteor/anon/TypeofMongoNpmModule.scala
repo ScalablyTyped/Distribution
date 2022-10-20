@@ -325,7 +325,7 @@ trait TypeofMongoNpmModule extends StObject {
   
   var MongoError: Instantiable1[/* message */ String, typings.mongodb.mod.MongoError]
   
-  /* Inlined std.Readonly<{ readonly RetryableWriteError :'RetryableWriteError',  readonly TransientTransactionError :'TransientTransactionError',  readonly UnknownTransactionCommitResult :'UnknownTransactionCommitResult',  readonly ResumableChangeStreamError :'ResumableChangeStreamError',  readonly HandshakeError :'HandshakeError',  readonly ResetPool :'ResetPool'}> */
+  /* Inlined std.Readonly<{ readonly RetryableWriteError :'RetryableWriteError',  readonly TransientTransactionError :'TransientTransactionError',  readonly UnknownTransactionCommitResult :'UnknownTransactionCommitResult',  readonly ResumableChangeStreamError :'ResumableChangeStreamError',  readonly HandshakeError :'HandshakeError',  readonly ResetPool :'ResetPool',  readonly NoWritesPerformed :'NoWritesPerformed'}> */
   val MongoErrorLabel: TypeofMongoErrorLabel
   
   var MongoExpiredSessionError: Instantiable0[typings.mongodb.mod.MongoExpiredSessionError]

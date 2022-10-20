@@ -127,12 +127,12 @@ trait CloudTrail extends Service {
   ): Request[DescribeTrailsResponse, AWSError] = js.native
   
   /**
-    *  Returns the specified CloudTrail service-linked channel. Amazon Web Services services create service-linked channels to view CloudTrail events. 
+    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI.. 
     */
   def getChannel(): Request[GetChannelResponse, AWSError] = js.native
   def getChannel(callback: js.Function2[/* err */ AWSError, /* data */ GetChannelResponse, Unit]): Request[GetChannelResponse, AWSError] = js.native
   /**
-    *  Returns the specified CloudTrail service-linked channel. Amazon Web Services services create service-linked channels to view CloudTrail events. 
+    *  Returns information about a specific channel. Amazon Web Services services create service-linked channels to get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI.. 
     */
   def getChannel(params: GetChannelRequest): Request[GetChannelResponse, AWSError] = js.native
   def getChannel(
@@ -169,12 +169,12 @@ trait CloudTrail extends Service {
   ): Request[GetEventSelectorsResponse, AWSError] = js.native
   
   /**
-    *  Returns information for the specified import. 
+    *  Returns information about a specific import. 
     */
   def getImport(): Request[GetImportResponse, AWSError] = js.native
   def getImport(callback: js.Function2[/* err */ AWSError, /* data */ GetImportResponse, Unit]): Request[GetImportResponse, AWSError] = js.native
   /**
-    *  Returns information for the specified import. 
+    *  Returns information about a specific import. 
     */
   def getImport(params: GetImportRequest): Request[GetImportResponse, AWSError] = js.native
   def getImport(
@@ -239,12 +239,12 @@ trait CloudTrail extends Service {
   ): Request[GetTrailStatusResponse, AWSError] = js.native
   
   /**
-    *  Returns all CloudTrail channels. 
+    *  Lists the channels in the current account, and their source names. Amazon Web Services services create service-linked channels get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
     */
   def listChannels(): Request[ListChannelsResponse, AWSError] = js.native
   def listChannels(callback: js.Function2[/* err */ AWSError, /* data */ ListChannelsResponse, Unit]): Request[ListChannelsResponse, AWSError] = js.native
   /**
-    *  Returns all CloudTrail channels. 
+    *  Lists the channels in the current account, and their source names. Amazon Web Services services create service-linked channels get information about CloudTrail events on your behalf. For more information about service-linked channels, see Viewing service-linked channels for CloudTrail by using the CLI. 
     */
   def listChannels(params: ListChannelsRequest): Request[ListChannelsResponse, AWSError] = js.native
   def listChannels(
@@ -421,12 +421,12 @@ trait CloudTrail extends Service {
   ): Request[RestoreEventDataStoreResponse, AWSError] = js.native
   
   /**
-    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required. 
+    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store. By default, CloudTrail only imports events contained in the S3 bucket's CloudTrail prefix and the prefixes inside the CloudTrail prefix, and does not check prefixes for other Amazon Web Services services. If you want to import CloudTrail events contained in another prefix, you must include the prefix in the S3LocationUri. For more considerations about importing trail events, see Considerations.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required. 
     */
   def startImport(): Request[StartImportResponse, AWSError] = js.native
   def startImport(callback: js.Function2[/* err */ AWSError, /* data */ StartImportResponse, Unit]): Request[StartImportResponse, AWSError] = js.native
   /**
-    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required. 
+    *  Starts an import of logged trail events from a source S3 bucket to a destination event data store. By default, CloudTrail only imports events contained in the S3 bucket's CloudTrail prefix and the prefixes inside the CloudTrail prefix, and does not check prefixes for other Amazon Web Services services. If you want to import CloudTrail events contained in another prefix, you must include the prefix in the S3LocationUri. For more considerations about importing trail events, see Considerations.   When you start a new import, the Destinations and ImportSource parameters are required. Before starting a new import, disable any access control lists (ACLs) attached to the source S3 bucket. For more information about disabling ACLs, see Controlling ownership of objects and disabling ACLs for your bucket.   When you retry an import, the ImportID parameter is required. 
     */
   def startImport(params: StartImportRequest): Request[StartImportResponse, AWSError] = js.native
   def startImport(
@@ -449,12 +449,12 @@ trait CloudTrail extends Service {
   ): Request[StartLoggingResponse, AWSError] = js.native
   
   /**
-    * Starts a CloudTrail Lake query. The required QueryStatement parameter provides your SQL query, enclosed in single quotation marks.
+    * Starts a CloudTrail Lake query. The required QueryStatement parameter provides your SQL query, enclosed in single quotation marks. Use the optional DeliveryS3Uri parameter to deliver the query results to an S3 bucket.
     */
   def startQuery(): Request[StartQueryResponse, AWSError] = js.native
   def startQuery(callback: js.Function2[/* err */ AWSError, /* data */ StartQueryResponse, Unit]): Request[StartQueryResponse, AWSError] = js.native
   /**
-    * Starts a CloudTrail Lake query. The required QueryStatement parameter provides your SQL query, enclosed in single quotation marks.
+    * Starts a CloudTrail Lake query. The required QueryStatement parameter provides your SQL query, enclosed in single quotation marks. Use the optional DeliveryS3Uri parameter to deliver the query results to an S3 bucket.
     */
   def startQuery(params: StartQueryRequest): Request[StartQueryResponse, AWSError] = js.native
   def startQuery(

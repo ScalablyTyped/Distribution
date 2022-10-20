@@ -198,6 +198,10 @@ object libEsmIconSvgPathsMod {
     @js.native
     val Asterisk: js.Array[String] = js.native
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.At")
+    @js.native
+    val At: js.Array[String] = js.native
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths16.AutomaticUpdates")
     @js.native
     val AutomaticUpdates: js.Array[String] = js.native
@@ -2440,6 +2444,10 @@ object libEsmIconSvgPathsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.Asterisk")
     @js.native
     val Asterisk: js.Array[String] = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.At")
+    @js.native
+    val At: js.Array[String] = js.native
     
     @JSImport("@blueprintjs/icons/lib/esm/iconSvgPaths", "IconSvgPaths20.AutomaticUpdates")
     @js.native

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gherkin"
-version := "9.0.0-2b02f3"
+version := "9.0.0-950492"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cucumber-messages" % "8.0.0-9b7692",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "cucumber-messages" % "8.0.0-343c9c",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "protobufjs" % "7.1.2-41b6ae",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

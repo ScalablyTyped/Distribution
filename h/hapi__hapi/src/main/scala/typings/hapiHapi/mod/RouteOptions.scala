@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteOptions
+trait RouteOptions[Refs /* <: ReqRef */]
   extends StObject
-     with CommonRouteProperties {
+     with CommonRouteProperties[Refs] {
   
   /**
     * Route authentication configuration. Value can be:
@@ -20,12 +20,12 @@ trait RouteOptions
 }
 object RouteOptions {
   
-  inline def apply(): RouteOptions = {
+  inline def apply[Refs /* <: ReqRef */](): RouteOptions[Refs] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[RouteOptions]
+    __obj.asInstanceOf[RouteOptions[Refs]]
   }
   
-  extension [Self <: RouteOptions](x: Self) {
+  extension [Self <: RouteOptions[?], Refs /* <: ReqRef */](x: Self & RouteOptions[Refs]) {
     
     inline def setAuth(value: `false` | String | RouteOptionsAccess): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

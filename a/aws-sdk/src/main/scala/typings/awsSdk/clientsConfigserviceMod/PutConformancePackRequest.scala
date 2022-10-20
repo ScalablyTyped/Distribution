@@ -27,12 +27,12 @@ trait PutConformancePackRequest extends StObject {
   var DeliveryS3KeyPrefix: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.DeliveryS3KeyPrefix] = js.undefined
   
   /**
-    * A string containing the full conformance pack template body. The structure containing the template body has a minimum length of 1 byte and a maximum length of 51,200 bytes.  You can only use a YAML template with two resource types: Config rule (AWS::Config::ConfigRule) and remediation action (AWS::Config::RemediationConfiguration). 
+    * A string containing the full conformance pack template body. The structure containing the template body has a minimum length of 1 byte and a maximum length of 51,200 bytes.  You can use a YAML template with two resource types: Config rule (AWS::Config::ConfigRule) and remediation action (AWS::Config::RemediationConfiguration). 
     */
   var TemplateBody: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.TemplateBody] = js.undefined
   
   /**
-    * The location of the file containing the template body (s3://bucketname/prefix). The uri must point to a conformance pack template (max size: 300 KB) that is located in an Amazon S3 bucket in the same region as the conformance pack.   You must have access to read Amazon S3 bucket. 
+    * The location of the file containing the template body (s3://bucketname/prefix). The uri must point to a conformance pack template (max size: 300 KB) that is located in an Amazon S3 bucket in the same Region as the conformance pack.   You must have access to read Amazon S3 bucket. 
     */
   var TemplateS3Uri: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.TemplateS3Uri] = js.undefined
   

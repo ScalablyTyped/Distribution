@@ -195,6 +195,10 @@ object reactMosaicComponentStrings {
   inline def ASTERISK: ASTERISK = "ASTERISK".asInstanceOf[ASTERISK]
   
   @js.native
+  sealed trait AT extends StObject
+  inline def AT: AT = "AT".asInstanceOf[AT]
+  
+  @js.native
   sealed trait AUTOMATIC_UPDATES extends StObject
   inline def AUTOMATIC_UPDATES: AUTOMATIC_UPDATES = "AUTOMATIC_UPDATES".asInstanceOf[AUTOMATIC_UPDATES]
   
@@ -381,6 +385,10 @@ object reactMosaicComponentStrings {
   @js.native
   sealed trait Asterisk_ extends StObject
   inline def Asterisk_ : Asterisk_ = "Asterisk".asInstanceOf[Asterisk_]
+  
+  @js.native
+  sealed trait At_ extends StObject
+  inline def At_ : At_ = "At".asInstanceOf[At_]
   
   @js.native
   sealed trait AutomaticUpdates extends StObject

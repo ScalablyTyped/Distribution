@@ -1,7 +1,7 @@
 
 # Scala.js typings for contentstack
 
-Typings are for version 3.15.3
+Typings are for version 3.15.4
 
 ## Library description:
 Contentstack Javascript SDK

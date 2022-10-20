@@ -29,6 +29,18 @@ open class OpenUserTaskAction protected () extends MicroflowAction {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
   
+  /**
+    * In version 9.19.0: introduced
+    */
+  def assignOnOpen: Boolean = js.native
+  def assignOnOpen_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.19.0: introduced
+    */
+  def openWhenAssigned: Boolean = js.native
+  def openWhenAssigned_=(newValue: Boolean): Unit = js.native
+  
   def userTaskVariable: String = js.native
   def userTaskVariable_=(newValue: String): Unit = js.native
 }

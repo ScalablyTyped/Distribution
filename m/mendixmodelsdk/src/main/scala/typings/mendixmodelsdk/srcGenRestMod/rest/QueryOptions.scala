@@ -31,6 +31,18 @@ open class QueryOptions protected () extends Element[IModel] {
   
   def countable: Boolean = js.native
   def countable_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.19.0: introduced
+    */
+  def skipSupported: Boolean = js.native
+  def skipSupported_=(newValue: Boolean): Unit = js.native
+  
+  /**
+    * In version 9.19.0: introduced
+    */
+  def topSupported: Boolean = js.native
+  def topSupported_=(newValue: Boolean): Unit = js.native
 }
 object QueryOptions {
   

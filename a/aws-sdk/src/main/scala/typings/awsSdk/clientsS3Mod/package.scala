@@ -86,6 +86,7 @@ type BucketKeyEnabled = Boolean
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
   - typings.awsSdk.awsSdkStrings.`ca-central-1`
   - typings.awsSdk.awsSdkStrings.`cn-north-1`
   - typings.awsSdk.awsSdkStrings.`cn-northwest-1`

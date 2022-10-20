@@ -32,7 +32,7 @@ trait ListPhoneNumbersV2Request extends StObject {
   var PhoneNumberTypes: js.UndefOr[typings.awsSdk.clientsConnectMod.PhoneNumberTypes] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to. If TargetArn input is not provided, this API lists numbers claimed to all the Amazon Connect instances belonging to your account.
+    * The Amazon Resource Name (ARN) for Amazon Connect instances or traffic distribution groups that phone numbers are claimed to. If TargetArn input is not provided, this API lists numbers claimed to all the Amazon Connect instances belonging to your account in the same Amazon Web Services Region as the request.
     */
   var TargetArn: js.UndefOr[ARN] = js.undefined
 }

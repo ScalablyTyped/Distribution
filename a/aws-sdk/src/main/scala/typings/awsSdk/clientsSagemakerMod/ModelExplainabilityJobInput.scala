@@ -6,17 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModelExplainabilityJobInput extends StObject {
   
-  var EndpointInput: typings.awsSdk.clientsSagemakerMod.EndpointInput
+  /**
+    * Input object for the batch transform job.
+    */
+  var BatchTransformInput: js.UndefOr[typings.awsSdk.clientsSagemakerMod.BatchTransformInput] = js.undefined
+  
+  var EndpointInput: js.UndefOr[typings.awsSdk.clientsSagemakerMod.EndpointInput] = js.undefined
 }
 object ModelExplainabilityJobInput {
   
-  inline def apply(EndpointInput: EndpointInput): ModelExplainabilityJobInput = {
-    val __obj = js.Dynamic.literal(EndpointInput = EndpointInput.asInstanceOf[js.Any])
+  inline def apply(): ModelExplainabilityJobInput = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelExplainabilityJobInput]
   }
   
   extension [Self <: ModelExplainabilityJobInput](x: Self) {
     
+    inline def setBatchTransformInput(value: BatchTransformInput): Self = StObject.set(x, "BatchTransformInput", value.asInstanceOf[js.Any])
+    
+    inline def setBatchTransformInputUndefined: Self = StObject.set(x, "BatchTransformInput", js.undefined)
+    
     inline def setEndpointInput(value: EndpointInput): Self = StObject.set(x, "EndpointInput", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointInputUndefined: Self = StObject.set(x, "EndpointInput", js.undefined)
   }
 }

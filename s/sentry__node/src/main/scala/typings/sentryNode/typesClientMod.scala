@@ -2,7 +2,7 @@ package typings.sentryNode
 
 import typings.sentryCore.mod.BaseClient
 import typings.sentryCore.mod.Scope
-import typings.sentryHub.mod.SessionFlusher
+import typings.sentryCore.mod.SessionFlusher
 import typings.sentryNode.typesTypesMod.NodeClientOptions
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint

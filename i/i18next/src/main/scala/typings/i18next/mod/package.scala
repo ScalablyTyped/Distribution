@@ -1,12 +1,12 @@
 package typings.i18next.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.i18next.anon.InterpolationOptionskeyst
 import typings.i18next.anon.PickInitOptionsfallbackLn
+import typings.i18next.i18nextStrings.Dot
+import typings.i18next.i18nextStrings.translation
 import typings.i18next.mod.^
 import typings.std.Exclude
-import typings.std.Pick
-import typings.std.TemplateStringsArray
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,40 +17,40 @@ inline def default: i18n = ^.asInstanceOf[js.Dynamic].selectDynamic("default").a
 inline def changeLanguage: js.Function2[
 /* lng */ js.UndefOr[String], 
 /* callback */ js.UndefOr[Callback], 
-js.Promise[TFunction]] = ^.asInstanceOf[js.Dynamic].selectDynamic("changeLanguage").asInstanceOf[js.Function2[
+js.Promise[TFunction[DefaultNamespace, Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("changeLanguage").asInstanceOf[js.Function2[
 /* lng */ js.UndefOr[String], 
 /* callback */ js.UndefOr[Callback], 
-js.Promise[TFunction]]]
+js.Promise[TFunction[DefaultNamespace, Unit]]]]
 
 inline def createInstance: js.Function2[/* options */ js.UndefOr[InitOptions], /* callback */ js.UndefOr[Callback], i18n] = ^.asInstanceOf[js.Dynamic].selectDynamic("createInstance").asInstanceOf[js.Function2[/* options */ js.UndefOr[InitOptions], /* callback */ js.UndefOr[Callback], i18n]]
 
 inline def exists: ExistsFunction[String, StringMap] = ^.asInstanceOf[js.Dynamic].selectDynamic("exists").asInstanceOf[ExistsFunction[String, StringMap]]
 
-inline def getFixedT(): TFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")().asInstanceOf[TFunction]
-inline def getFixedT(lng: String): TFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction]
-inline def getFixedT(lng: String, ns: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: String, ns: String, keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: String, ns: js.Array[String]): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: String, ns: js.Array[String], keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: String, ns: Unit, keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: js.Array[String]): TFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction]
-inline def getFixedT(lng: js.Array[String], ns: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: js.Array[String], ns: String, keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: js.Array[String], ns: js.Array[String]): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: js.Array[String], ns: js.Array[String], keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: js.Array[String], ns: Unit, keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: Null, ns: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: Null, ns: String, keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: Null, ns: js.Array[String]): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: Null, ns: js.Array[String], keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
-inline def getFixedT(lng: Null, ns: Null, keyPrefix: String): TFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction]
+inline def getFixedT(): TFunction[DefaultNamespace, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")().asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: String): TFunction[DefaultNamespace, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: String, ns: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: String, ns: String, keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: String, ns: js.Array[String]): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: String, ns: js.Array[String], keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: String, ns: Unit, keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: js.Array[String]): TFunction[DefaultNamespace, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any]).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: js.Array[String], ns: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: js.Array[String], ns: String, keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: js.Array[String], ns: js.Array[String]): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: js.Array[String], ns: js.Array[String], keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: js.Array[String], ns: Unit, keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: Null, ns: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: Null, ns: String, keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: Null, ns: js.Array[String]): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: Null, ns: js.Array[String], keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
+inline def getFixedT(lng: Null, ns: Null, keyPrefix: String): TFunction[DefaultNamespace, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFixedT")(lng.asInstanceOf[js.Any], ns.asInstanceOf[js.Any], keyPrefix.asInstanceOf[js.Any])).asInstanceOf[TFunction[DefaultNamespace, Unit]]
 
 inline def hasLoadedNamespace: js.Function2[/* ns */ String, /* options */ js.UndefOr[PickInitOptionsfallbackLn], Boolean] = ^.asInstanceOf[js.Dynamic].selectDynamic("hasLoadedNamespace").asInstanceOf[js.Function2[/* ns */ String, /* options */ js.UndefOr[PickInitOptionsfallbackLn], Boolean]]
 
-inline def init(): js.Promise[TFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[TFunction]]
-inline def init(callback: Callback): js.Promise[TFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFunction]]
-inline def init(options: InitOptions): js.Promise[TFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFunction]]
-inline def init(options: InitOptions, callback: Callback): js.Promise[TFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFunction]]
+inline def init(): js.Promise[TFunction[DefaultNamespace, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
+inline def init(callback: Callback): js.Promise[TFunction[DefaultNamespace, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
+inline def init(options: InitOptions): js.Promise[TFunction[DefaultNamespace, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
+inline def init(options: InitOptions, callback: Callback): js.Promise[TFunction[DefaultNamespace, Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFunction[DefaultNamespace, Unit]]]
 
 inline def loadLanguages: js.Function2[
 /* lngs */ String | js.Array[String], 
@@ -95,13 +95,18 @@ inline def reloadResources(lngs: Unit, ns: Unit, callback: js.Function0[Unit]): 
 
 inline def setDefaultNamespace: js.Function1[/* ns */ String, Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("setDefaultNamespace").asInstanceOf[js.Function1[/* ns */ String, Unit]]
 
-inline def t: TFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("t").asInstanceOf[TFunction]
+inline def t: TFunction[js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], Unit] = ^.asInstanceOf[js.Dynamic].selectDynamic("t").asInstanceOf[TFunction[js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], Unit]]
 
 inline def use: js.Function1[/* module */ Module | NewableModule[Module] | Newable[Module], this.type] = ^.asInstanceOf[js.Dynamic].selectDynamic("use").asInstanceOf[js.Function1[/* module */ Module | NewableModule[Module] | Newable[Module], this.type]]
 
-type Callback = js.Function2[/* error */ Any, /* t */ TFunction, Unit]
+type Callback = js.Function2[/* error */ Any, /* t */ TFunction[DefaultNamespace, Unit], Unit]
 
 type CallbackError = js.UndefOr[js.Error | Null]
+
+type DefaultNamespace = translation
+
+type DefaultTFuncReturn = js.UndefOr[
+String | js.Object | TFunctionDetailedResult[String] | (js.Array[String | js.Object]) | Null]
 
 type ExistsFunction[TKeys /* <: String */, TInterpolationMap /* <: js.Object */] = js.Function2[
 /* key */ TKeys | js.Array[TKeys], 
@@ -116,14 +121,31 @@ type FormatFunction = js.Function4[
 /* value */ Any, 
 /* format */ js.UndefOr[String], 
 /* lng */ js.UndefOr[String], 
-/* options */ js.UndefOr[InterpolationOptionskeyst], 
+/* options */ js.UndefOr[InterpolationOptions & StringMap], 
 String]
+
+type KeyPrefix[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] = js.UndefOr[
+/* import warning: importer.ImportType#apply Failed type conversion: N extends keyof i18next.i18next.Resources ? i18next.i18next.Normalize<i18next.i18next.Resources[N]> : string */ js.Any]
+
+// Normalize multiple namespaces
+type KeyWithNSSeparator[N, K, S /* <: String */] = /* template literal string: ${N&string}${S}${K&string} */ String
+
+type KeysWithSeparator[K1, K2, S /* <: String */] = /* template literal string: ${K1&string}${S}${K2&string} */ String
+
+type KeysWithSeparator2[K1, K2] = KeysWithSeparator[K1, Exclude[K2, js.Array[/* keyof any */ String]], Dot]
 
 type MergeBy[T, K] = (Omit[T, /* keyof K */ String]) & K
 
 type MultiReadCallback = js.Function2[/* err */ CallbackError, /* data */ js.UndefOr[Resource | Null], Unit]
 
-type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
+type Namespace[T] = T | js.Array[T]
+
+type Normalize[T] = (WithOrWithoutPlural[/* keyof T */ String]) | (Normalize2[T, /* keyof T */ String])
+
+type NormalizeByTypeOptions[TranslationValue, Options /* <: CustomTypeParameters */, R] = TypeOptionsFallback[
+R, 
+/* import warning: importer.ImportType#apply Failed type conversion: Options['returnNull'] */ js.Any, 
+Null]
 
 type ReadCallback = js.Function2[/* err */ CallbackError, /* data */ js.UndefOr[ResourceKey | Boolean | Null], Unit]
 
@@ -133,11 +155,8 @@ type ResourceKey = String | StringDictionary[Any]
 
 type ResourceLanguage = StringDictionary[ResourceKey]
 
+type Resources = /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TypeOptions['resources'] */ js.Any
+
 type StringMap = StringDictionary[Any]
-
-type TFunctionKeys = String | TemplateStringsArray
-
-type TFunctionResult = js.UndefOr[
-String | js.Object | TFunctionDetailedResult[String] | (js.Array[String | js.Object]) | Null]
 
 type TOptions[TInterpolationMap /* <: js.Object */] = TOptionsBase & TInterpolationMap

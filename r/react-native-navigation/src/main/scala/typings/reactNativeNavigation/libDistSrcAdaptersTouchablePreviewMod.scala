@@ -5,6 +5,7 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.NativeTouchEvent
+import typings.reactNative.mod.NodeHandle
 import typings.reactNative.mod.TouchableHighlight
 import typings.reactNative.mod.TouchableNativeFeedback
 import typings.reactNative.mod.TouchableOpacity
@@ -87,7 +88,7 @@ object libDistSrcAdaptersTouchablePreviewMod {
       locationY: Double,
       pageX: Double,
       pageY: Double,
-      target: String,
+      target: NodeHandle,
       timestamp: Double,
       touches: js.Array[NativeTouchEvent]
     ): NativeTouchEventWithForce = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListImportsRequest extends StObject {
   
   /**
-    *  The destination event data store. 
+    *  The ARN of the destination event data store. 
     */
   var Destination: js.UndefOr[EventDataStoreArn] = js.undefined
   

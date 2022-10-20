@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "hapi-pino"
-version := "11.0.0-8d6b22"
+version := "11.0.0-8c05a9"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "hapi__boom" % "10.0.0-7be43c",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20211202Z-830847",
-  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20220525Z-c64a90",
-  "org.scalablytyped" %%% "hapi__iron" % "7.0.0-f3f4a7",
+  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20221019Z-ba9f16",
+  "org.scalablytyped" %%% "hapi__iron" % "7.0.0-6cdf44",
   "org.scalablytyped" %%% "hapi__mimos" % "7.0.0-b3ec1d",
-  "org.scalablytyped" %%% "hapi__shot" % "6.0.0-eb15ed",
-  "org.scalablytyped" %%% "joi" % "17.6.3-651f50",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "pino" % "8.6.1-db7929",
+  "org.scalablytyped" %%% "hapi__shot" % "6.0.0-294bc2",
+  "org.scalablytyped" %%% "joi" % "17.6.3-e7f424",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "pino" % "8.6.1-59068b",
   "org.scalablytyped" %%% "pino-pretty" % "4.7-dt-20220624Z-4bafa0",
-  "org.scalablytyped" %%% "pino-std-serializers" % "6.0.0-fdfc4d",
-  "org.scalablytyped" %%% "sonic-boom" % "3.2.0-fb4c83",
+  "org.scalablytyped" %%% "pino-std-serializers" % "6.0.0-076e51",
+  "org.scalablytyped" %%% "sonic-boom" % "3.2.0-05c7d9",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

@@ -15,7 +15,7 @@ trait ServerExtEventsRequestObject extends StObject {
     * * * this - the object provided via options.bind or the current active context set with server.bind().
     * * request extension points: a lifecycle method.
     */
-  var method: Method | js.Array[Method]
+  var method: (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]) | (js.Array[Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]])
   
   /**
     * (optional) an object with the following:
@@ -38,7 +38,10 @@ trait ServerExtEventsRequestObject extends StObject {
 }
 object ServerExtEventsRequestObject {
   
-  inline def apply(method: Method | js.Array[Method], `type`: ServerRequestExtType): ServerExtEventsRequestObject = {
+  inline def apply(
+    method: (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]) | (js.Array[Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]]),
+    `type`: ServerRequestExtType
+  ): ServerExtEventsRequestObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExtEventsRequestObject]
@@ -46,13 +49,11 @@ object ServerExtEventsRequestObject {
   
   extension [Self <: ServerExtEventsRequestObject](x: Self) {
     
-    inline def setMethod(value: Method | js.Array[Method]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(
+      value: (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]) | (js.Array[Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]])
+    ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setMethodFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
-    ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
-    
-    inline def setMethodVarargs(value: Method*): Self = StObject.set(x, "method", js.Array(value*))
+    inline def setMethodVarargs(value: (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]])*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

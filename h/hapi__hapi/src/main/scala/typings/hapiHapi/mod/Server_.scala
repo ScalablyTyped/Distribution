@@ -7,7 +7,6 @@ import typings.hapiHapi.anon.ApplyExtend
 import typings.hapiHapi.anon.EventLoopDelay
 import typings.hapiHapi.anon.Extend
 import typings.hapiHapi.anon.Timeout
-import typings.hapiHapi.anon.Validate
 import typings.hapiHapi.anon.`0`
 import typings.hapiHapi.hapiHapiStrings.handler
 import typings.hapiHapi.hapiHapiStrings.request
@@ -15,6 +14,7 @@ import typings.hapiHapi.hapiHapiStrings.socket
 import typings.hapiHapi.hapiHapiStrings.tcp
 import typings.hapiHapi.hapiHapiStrings.toolkit
 import typings.hapiHapi.mod.Lifecycle.Method
+import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Util.HTTP_METHODS
 import typings.joi.mod.Root
 import typings.node.httpMod.IncomingMessage
@@ -136,7 +136,7 @@ open class Server_ () extends StObject {
   def decorate_request(
     `type`: request,
     property: DecorateName,
-    method: js.Function1[/* request */ Request, DecorationMethod[Request]],
+    method: js.Function1[/* request */ Request[ReqRefDefaults], DecorationMethod[Request[ReqRefDefaults]]],
     options: ApplyExtend
   ): Unit = js.native
   @JSName("decorate")
@@ -145,14 +145,19 @@ open class Server_ () extends StObject {
     property: DecorateName,
     method: js.Function1[
       /* existing */ js.Function1[/* repeated */ Any, Any], 
-      js.Function1[/* request */ Request, DecorationMethod[Request]]
+      js.Function1[/* request */ Request[ReqRefDefaults], DecorationMethod[Request[ReqRefDefaults]]]
     ],
     options: Extend
   ): Unit = js.native
   @JSName("decorate")
-  def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request]): Unit = js.native
+  def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request[ReqRefDefaults]]): Unit = js.native
   @JSName("decorate")
-  def decorate_request(`type`: request, property: DecorateName, method: DecorationMethod[Request], options: Apply): Unit = js.native
+  def decorate_request(
+    `type`: request,
+    property: DecorateName,
+    method: DecorationMethod[Request[ReqRefDefaults]],
+    options: Apply
+  ): Unit = js.native
   @JSName("decorate")
   def decorate_server(
     `type`: typings.hapiHapi.hapiHapiStrings.server,
@@ -179,14 +184,19 @@ open class Server_ () extends StObject {
     property: DecorateName,
     method: js.Function1[
       /* existing */ js.Function1[/* repeated */ Any, Any], 
-      DecorationMethod[ResponseToolkit]
+      DecorationMethod[ResponseToolkit[ReqRefDefaults]]
     ],
     options: `0`
   ): Unit = js.native
   @JSName("decorate")
-  def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit]): Unit = js.native
+  def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit[ReqRefDefaults]]): Unit = js.native
   @JSName("decorate")
-  def decorate_toolkit(`type`: toolkit, property: DecorateName, method: DecorationMethod[ResponseToolkit], options: Apply): Unit = js.native
+  def decorate_toolkit(
+    `type`: toolkit,
+    property: DecorateName,
+    method: DecorationMethod[ResponseToolkit[ReqRefDefaults]],
+    options: Apply
+  ): Unit = js.native
   
   /**
     * Provides access to the decorations already applied to various framework interfaces. The object must not be
@@ -307,8 +317,12 @@ open class Server_ () extends StObject {
     */
   def ext(event: ServerExtType, method: ServerExtPointFunction): Unit = js.native
   def ext(event: ServerExtType, method: ServerExtPointFunction, options: ServerExtOptions): Unit = js.native
-  def ext(event: ServerRequestExtType, method: Method): Unit = js.native
-  def ext(event: ServerRequestExtType, method: Method, options: ServerExtOptions): Unit = js.native
+  def ext(event: ServerRequestExtType, method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): Unit = js.native
+  def ext(
+    event: ServerRequestExtType,
+    method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]],
+    options: ServerExtOptions
+  ): Unit = js.native
   
   /**
     * An object containing information about the server where:
@@ -377,8 +391,9 @@ open class Server_ () extends StObject {
     * * request - the request object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverinjectoptions)
     */
-  def inject(options: String): js.Promise[ServerInjectResponse] = js.native
-  def inject(options: ServerInjectOptions): js.Promise[ServerInjectResponse] = js.native
+  // tslint:disable-next-line no-unnecessary-generics
+  def inject[Result](options: String): js.Promise[ServerInjectResponse[Result]] = js.native
+  def inject[Result](options: ServerInjectOptions): js.Promise[ServerInjectResponse[Result]] = js.native
   
   /**
     * Access: read only and listener public interface.
@@ -557,8 +572,10 @@ open class Server_ () extends StObject {
   def register[T](plugin: ServerRegisterPluginObject[T]): js.Promise[Unit] = js.native
   def register[T](plugin: ServerRegisterPluginObject[T], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   /* tslint:disable-next-line:no-unnecessary-generics */
-  def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]): js.Promise[Unit] = js.native
-  def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z], options: ServerRegisterOptions): js.Promise[Unit] = js.native
+  @JSName("register")
+  def register_TUVWXYZ[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]): js.Promise[Unit] = js.native
+  @JSName("register")
+  def register_TUVWXYZ[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   
   /**
     * An object of the currently registered plugins where each key is a registered plugin name and the value is
@@ -570,7 +587,7 @@ open class Server_ () extends StObject {
     */
   val registrations: PluginsListRegistered = js.native
   
-  def route(route: js.Array[ServerRoute]): Unit = js.native
+  def route[Refs /* <: ReqRef */](route: js.Array[ServerRoute[Refs]]): Unit = js.native
   /**
     * Adds a route where:
     * @param route - a route configuration object or an array of configuration objects where each object contains:
@@ -589,7 +606,8 @@ open class Server_ () extends StObject {
     * Note that the options object is deeply cloned (with the exception of bind which is shallowly copied) and cannot contain any values that are unsafe to perform deep copy on.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverrouteroute)
     */
-  def route(route: ServerRoute): Unit = js.native
+  // tslint:disable-next-line:no-unnecessary-generics
+  def route[Refs /* <: ReqRef */](route: ServerRoute[Refs]): Unit = js.native
   
   /**
     * Defines a route rules processor for converting route rules object into route configuration where:
@@ -610,11 +628,8 @@ open class Server_ () extends StObject {
     * @return void
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverrulesprocessor-options)
     */
-  def rules(processor: js.Function2[/* rules */ js.Object, /* info */ typings.hapiHapi.anon.Method, js.Object]): Unit = js.native
-  def rules(
-    processor: js.Function2[/* rules */ js.Object, /* info */ typings.hapiHapi.anon.Method, js.Object],
-    options: Validate
-  ): Unit = js.native
+  def rules[Refs /* <: ReqRef */](processor: RulesProcessor[Refs]): Unit = js.native
+  def rules[Refs /* <: ReqRef */](processor: RulesProcessor[Refs], options: RulesOptions[Refs]): Unit = js.native
   
   /**
     * The server configuration object after defaults applied.
@@ -622,7 +637,6 @@ open class Server_ () extends StObject {
     */
   val settings: ServerOptions = js.native
   
-  // TODO needs implementation
   /**
     * Starts the server by listening for incoming requests on the configured port (unless the connection was configured with autoListen set to false).
     * @return Return value: none.

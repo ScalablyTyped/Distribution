@@ -11,18 +11,18 @@ import typings.angularCompilerCli.anon.FileName
 import typings.angularCompilerCli.anon.Host
 import typings.angularCompilerCli.anon.Options
 import typings.angularCompilerCli.anon.PickCompilerHostgetCanoni
-import typings.angularCompilerCli.loggerMod.LogLevel
-import typings.angularCompilerCli.optionsMod.NgCompilerOptions
-import typings.angularCompilerCli.performCompileMod.ConfigurationHost
-import typings.angularCompilerCli.performCompileMod.ParsedConfiguration
-import typings.angularCompilerCli.performCompileMod.PerformCompilationResult
-import typings.angularCompilerCli.srcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcTypesMod.BrandedPath
-import typings.angularCompilerCli.srcTypesMod.FileSystem
-import typings.angularCompilerCli.srcTypesMod.PathSegment
-import typings.angularCompilerCli.srcTypesMod.PathString
-import typings.angularCompilerCli.transformersApiMod.CompilerHost
-import typings.angularCompilerCli.transformersApiMod.CompilerOptions
+import typings.angularCompilerCli.srcNgtscCoreApiSrcOptionsMod.NgCompilerOptions
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.BrandedPath
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.FileSystem
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathSegment
+import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathString
+import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.LogLevel
+import typings.angularCompilerCli.srcPerformCompileMod.ConfigurationHost
+import typings.angularCompilerCli.srcPerformCompileMod.ParsedConfiguration
+import typings.angularCompilerCli.srcPerformCompileMod.PerformCompilationResult
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerHost
+import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
 import typings.ngPackagr.ngPackagrStrings.angular
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.FormatDiagnosticsHost
@@ -85,9 +85,9 @@ trait TypeofimportedCompilerC extends StObject {
   
   def createCompilerHost(hasOptionsTsHost: Options): CompilerHost = js.native
   
-  def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.transformersApiMod.Program = js.native
+  def createProgram(hasRootNamesOptionsHostOldProgram: Host): typings.angularCompilerCli.srcTransformersApiMod.Program = js.native
   
-  def defaultGatherDiagnostics(program: typings.angularCompilerCli.transformersApiMod.Program): js.Array[Diagnostic] = js.native
+  def defaultGatherDiagnostics(program: typings.angularCompilerCli.srcTransformersApiMod.Program): js.Array[Diagnostic] = js.native
   
   def dirname(file: String): String = js.native
   @JSName("dirname")

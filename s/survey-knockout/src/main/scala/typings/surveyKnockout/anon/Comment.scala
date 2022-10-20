@@ -16,6 +16,8 @@ trait Comment extends StObject {
   
   var descriptionUnderInput: String
   
+  var disabled: String
+  
   var flowRoot: String
   
   var formGroup: String
@@ -56,6 +58,7 @@ object Comment {
     contentLeft: String,
     description: String,
     descriptionUnderInput: String,
+    disabled: String,
     flowRoot: String,
     formGroup: String,
     hasError: String,
@@ -73,7 +76,7 @@ object Comment {
     titleLeftRoot: String,
     titleRequired: String
   ): Comment = {
-    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
   
@@ -88,6 +91,8 @@ object Comment {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUnderInput(value: String): Self = StObject.set(x, "descriptionUnderInput", value.asInstanceOf[js.Any])
+    
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setFlowRoot(value: String): Self = StObject.set(x, "flowRoot", value.asInstanceOf[js.Any])
     

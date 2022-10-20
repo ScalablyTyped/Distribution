@@ -3,7 +3,6 @@ package typings.hapiHapi.mod
 import typings.hapiHapi.hapiHapiInts.`200`
 import typings.hapiHapi.hapiHapiInts.`204`
 import typings.hapiHapi.mod.Lifecycle.FailAction
-import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Util.Dictionary
 import typings.joi.mod.ValidationOptions
 import typings.node.bufferMod.global.Buffer
@@ -109,10 +108,6 @@ object RouteOptionsResponse {
     inline def setEmptyStatusCodeUndefined: Self = StObject.set(x, "emptyStatusCode", js.undefined)
     
     inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
-    
-    inline def setFailActionFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
-    ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     

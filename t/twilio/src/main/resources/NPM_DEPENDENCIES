@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "twilio" : "3.82.2"
+      "twilio" : "3.83.0"
     }
   ],
   "test-dependencies" : [
     {
-      "twilio" : "3.82.2"
+      "twilio" : "3.83.0"
     }
   ],
   "compile-devDependencies" : [

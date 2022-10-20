@@ -64,16 +64,16 @@ object anon {
     
     var dragging: WheelEvent
     
-    var k: Double
-    
     var x: Double
     
     var y: Double
+    
+    var zoom: Double
   }
   object Dragging {
     
-    inline def apply(dragging: WheelEvent, k: Double, x: Double, y: Double): Dragging = {
-      val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    inline def apply(dragging: WheelEvent, x: Double, y: Double, zoom: Double): Dragging = {
+      val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dragging]
     }
     
@@ -81,11 +81,11 @@ object anon {
       
       inline def setDragging(value: WheelEvent): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
-      
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
 }

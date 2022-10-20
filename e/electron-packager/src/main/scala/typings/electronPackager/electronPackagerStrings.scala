@@ -87,6 +87,12 @@ object electronPackagerStrings {
   inline def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
   
   @js.native
+  sealed trait universal
+    extends StObject
+       with OfficialArch
+  inline def universal: universal = "universal".asInstanceOf[universal]
+  
+  @js.native
   sealed trait win32
     extends StObject
        with OfficialPlatform

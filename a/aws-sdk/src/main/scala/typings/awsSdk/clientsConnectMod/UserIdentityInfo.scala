@@ -27,7 +27,7 @@ trait UserIdentityInfo extends StObject {
   var Mobile: js.UndefOr[PhoneNumber] = js.undefined
   
   /**
-    * The user's secondary email address. If you provide a secondary email, the user receives email notifications -- other than password reset notifications -- to this email address instead of to their primary email address.
+    * The user's secondary email address. If you provide a secondary email, the user receives email notifications - other than password reset notifications - to this email address instead of to their primary email address. Pattern: (?=^.{0,265}$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63} 
     */
   var SecondaryEmail: js.UndefOr[Email] = js.undefined
 }

@@ -4,6 +4,7 @@ import typings.sentryNode.anon.Breadcrumbs
 import typings.sentryNode.anon.Key
 import typings.sentryNode.anon.Mode
 import typings.sentryNode.anon.OnFatalError
+import typings.sentryNode.anon.PartialRequestDataOptions
 import typings.sentryNode.typesIntegrationsContextMod.ContextOptions
 import typings.sentryNode.typesIntegrationsContextlinesMod.ContextLinesOptions
 import org.scalablytyped.runtime.StObject
@@ -191,6 +192,31 @@ object typesIntegrationsMod {
       * @inheritDoc
       */
     @JSImport("@sentry/node/types/integrations", "OnUnhandledRejection.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@sentry/node/types/integrations", "RequestData")
+  @js.native
+  /**
+    * @inheritDoc
+    */
+  open class RequestData ()
+    extends typings.sentryNode.typesIntegrationsRequestdataMod.RequestData {
+    def this(options: PartialRequestDataOptions) = this()
+  }
+  /* static members */
+  object RequestData {
+    
+    @JSImport("@sentry/node/types/integrations", "RequestData")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/node/types/integrations", "RequestData.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])

@@ -100,12 +100,12 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Associates a flow with a phone number claimed to your Amazon Connect instance.
+    * Associates a flow with a phone number claimed to your Amazon Connect instance.  If the number is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the PhoneNumberId URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def associatePhoneNumberContactFlow(): Request[js.Object, AWSError] = js.native
   def associatePhoneNumberContactFlow(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Associates a flow with a phone number claimed to your Amazon Connect instance.
+    * Associates a flow with a phone number claimed to your Amazon Connect instance.  If the number is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the PhoneNumberId URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def associatePhoneNumberContactFlow(params: AssociatePhoneNumberContactFlowRequest): Request[js.Object, AWSError] = js.native
   def associatePhoneNumberContactFlow(
@@ -156,12 +156,12 @@ trait Connect extends Service {
   ): Request[AssociateSecurityKeyResponse, AWSError] = js.native
   
   /**
-    * Claims an available phone number to your Amazon Connect instance.
+    * Claims an available phone number to your Amazon Connect instance or traffic distribution group. You can call this API only in the same Amazon Web Services Region where the Amazon Connect instance or traffic distribution group was created.  You can call the DescribePhoneNumber API to verify the status of a previous ClaimPhoneNumber operation. 
     */
   def claimPhoneNumber(): Request[ClaimPhoneNumberResponse, AWSError] = js.native
   def claimPhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ ClaimPhoneNumberResponse, scala.Unit]): Request[ClaimPhoneNumberResponse, AWSError] = js.native
   /**
-    * Claims an available phone number to your Amazon Connect instance.
+    * Claims an available phone number to your Amazon Connect instance or traffic distribution group. You can call this API only in the same Amazon Web Services Region where the Amazon Connect instance or traffic distribution group was created.  You can call the DescribePhoneNumber API to verify the status of a previous ClaimPhoneNumber operation. 
     */
   def claimPhoneNumber(params: ClaimPhoneNumberRequest): Request[ClaimPhoneNumberResponse, AWSError] = js.native
   def claimPhoneNumber(
@@ -259,12 +259,12 @@ trait Connect extends Service {
   ): Request[CreateIntegrationAssociationResponse, AWSError] = js.native
   
   /**
-    * This API is in preview release for Amazon Connect and is subject to change. Creates a new queue for the specified Amazon Connect instance.
+    * This API is in preview release for Amazon Connect and is subject to change. Creates a new queue for the specified Amazon Connect instance.  If the number being used in the input is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the OutboundCallerIdNumberId value of the OutboundCallerConfig request body parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def createQueue(): Request[CreateQueueResponse, AWSError] = js.native
   def createQueue(callback: js.Function2[/* err */ AWSError, /* data */ CreateQueueResponse, scala.Unit]): Request[CreateQueueResponse, AWSError] = js.native
   /**
-    * This API is in preview release for Amazon Connect and is subject to change. Creates a new queue for the specified Amazon Connect instance.
+    * This API is in preview release for Amazon Connect and is subject to change. Creates a new queue for the specified Amazon Connect instance.  If the number being used in the input is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the OutboundCallerIdNumberId value of the OutboundCallerConfig request body parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def createQueue(params: CreateQueueRequest): Request[CreateQueueResponse, AWSError] = js.native
   def createQueue(
@@ -327,6 +327,22 @@ trait Connect extends Service {
     params: CreateTaskTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTaskTemplateResponse, scala.Unit]
   ): Request[CreateTaskTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Creates a traffic distribution group given an Amazon Connect instance that has been replicated.  For more information about creating traffic distribution groups, see Set up traffic distribution groups in the Amazon Connect Administrator Guide. 
+    */
+  def createTrafficDistributionGroup(): Request[CreateTrafficDistributionGroupResponse, AWSError] = js.native
+  def createTrafficDistributionGroup(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficDistributionGroupResponse, scala.Unit]
+  ): Request[CreateTrafficDistributionGroupResponse, AWSError] = js.native
+  /**
+    * Creates a traffic distribution group given an Amazon Connect instance that has been replicated.  For more information about creating traffic distribution groups, see Set up traffic distribution groups in the Amazon Connect Administrator Guide. 
+    */
+  def createTrafficDistributionGroup(params: CreateTrafficDistributionGroupRequest): Request[CreateTrafficDistributionGroupResponse, AWSError] = js.native
+  def createTrafficDistributionGroup(
+    params: CreateTrafficDistributionGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTrafficDistributionGroupResponse, scala.Unit]
+  ): Request[CreateTrafficDistributionGroupResponse, AWSError] = js.native
   
   /**
     * Creates a use case for an integration association.
@@ -497,6 +513,22 @@ trait Connect extends Service {
     params: DeleteTaskTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTaskTemplateResponse, scala.Unit]
   ): Request[DeleteTaskTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a traffic distribution group. This API can be called only in the Region where the traffic distribution group is created. For more information about deleting traffic distribution groups, see Delete traffic distribution groups in the Amazon Connect Administrator Guide.
+    */
+  def deleteTrafficDistributionGroup(): Request[DeleteTrafficDistributionGroupResponse, AWSError] = js.native
+  def deleteTrafficDistributionGroup(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficDistributionGroupResponse, scala.Unit]
+  ): Request[DeleteTrafficDistributionGroupResponse, AWSError] = js.native
+  /**
+    * Deletes a traffic distribution group. This API can be called only in the Region where the traffic distribution group is created. For more information about deleting traffic distribution groups, see Delete traffic distribution groups in the Amazon Connect Administrator Guide.
+    */
+  def deleteTrafficDistributionGroup(params: DeleteTrafficDistributionGroupRequest): Request[DeleteTrafficDistributionGroupResponse, AWSError] = js.native
+  def deleteTrafficDistributionGroup(
+    params: DeleteTrafficDistributionGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrafficDistributionGroupResponse, scala.Unit]
+  ): Request[DeleteTrafficDistributionGroupResponse, AWSError] = js.native
   
   /**
     * Deletes a use case from an integration association.
@@ -675,12 +707,12 @@ trait Connect extends Service {
   ): Request[DescribeInstanceStorageConfigResponse, AWSError] = js.native
   
   /**
-    * Gets details and status of a phone number that’s claimed to your Amazon Connect instance
+    * Gets details and status of a phone number that’s claimed to your Amazon Connect instance or traffic distribution group.  If the number is claimed to a traffic distribution group, and you are calling in the Amazon Web Services Region where the traffic distribution group was created, you can use either a phone number ARN or UUID value for the PhoneNumberId URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def describePhoneNumber(): Request[DescribePhoneNumberResponse, AWSError] = js.native
   def describePhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ DescribePhoneNumberResponse, scala.Unit]): Request[DescribePhoneNumberResponse, AWSError] = js.native
   /**
-    * Gets details and status of a phone number that’s claimed to your Amazon Connect instance
+    * Gets details and status of a phone number that’s claimed to your Amazon Connect instance or traffic distribution group.  If the number is claimed to a traffic distribution group, and you are calling in the Amazon Web Services Region where the traffic distribution group was created, you can use either a phone number ARN or UUID value for the PhoneNumberId URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def describePhoneNumber(params: DescribePhoneNumberRequest): Request[DescribePhoneNumberResponse, AWSError] = js.native
   def describePhoneNumber(
@@ -743,6 +775,22 @@ trait Connect extends Service {
     params: DescribeSecurityProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSecurityProfileResponse, scala.Unit]
   ): Request[DescribeSecurityProfileResponse, AWSError] = js.native
+  
+  /**
+    * Gets details and status of a traffic distribution group.
+    */
+  def describeTrafficDistributionGroup(): Request[DescribeTrafficDistributionGroupResponse, AWSError] = js.native
+  def describeTrafficDistributionGroup(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficDistributionGroupResponse, scala.Unit]
+  ): Request[DescribeTrafficDistributionGroupResponse, AWSError] = js.native
+  /**
+    * Gets details and status of a traffic distribution group.
+    */
+  def describeTrafficDistributionGroup(params: DescribeTrafficDistributionGroupRequest): Request[DescribeTrafficDistributionGroupResponse, AWSError] = js.native
+  def describeTrafficDistributionGroup(
+    params: DescribeTrafficDistributionGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrafficDistributionGroupResponse, scala.Unit]
+  ): Request[DescribeTrafficDistributionGroupResponse, AWSError] = js.native
   
   /**
     * Describes the specified user account. You can find the instance ID in the console (it’s the final part of the ARN). The console does not display the user IDs. Instead, list the users and note the IDs provided in the output.
@@ -875,12 +923,12 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Removes the flow association from a phone number claimed to your Amazon Connect instance, if a flow association exists.
+    * Removes the flow association from a phone number claimed to your Amazon Connect instance.  If the number is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the PhoneNumberId URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def disassociatePhoneNumberContactFlow(): Request[js.Object, AWSError] = js.native
   def disassociatePhoneNumberContactFlow(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes the flow association from a phone number claimed to your Amazon Connect instance, if a flow association exists.
+    * Removes the flow association from a phone number claimed to your Amazon Connect instance.  If the number is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the PhoneNumberId URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def disassociatePhoneNumberContactFlow(params: DisassociatePhoneNumberContactFlowRequest): Request[js.Object, AWSError] = js.native
   def disassociatePhoneNumberContactFlow(
@@ -1013,6 +1061,20 @@ trait Connect extends Service {
     params: GetTaskTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTaskTemplateResponse, scala.Unit]
   ): Request[GetTaskTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the current traffic distribution for a given traffic distribution group.
+    */
+  def getTrafficDistribution(): Request[GetTrafficDistributionResponse, AWSError] = js.native
+  def getTrafficDistribution(callback: js.Function2[/* err */ AWSError, /* data */ GetTrafficDistributionResponse, scala.Unit]): Request[GetTrafficDistributionResponse, AWSError] = js.native
+  /**
+    * Retrieves the current traffic distribution for a given traffic distribution group.
+    */
+  def getTrafficDistribution(params: GetTrafficDistributionRequest): Request[GetTrafficDistributionResponse, AWSError] = js.native
+  def getTrafficDistribution(
+    params: GetTrafficDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTrafficDistributionResponse, scala.Unit]
+  ): Request[GetTrafficDistributionResponse, AWSError] = js.native
   
   /**
     * This API is in preview release for Amazon Connect and is subject to change. Lists agent statuses.
@@ -1215,12 +1277,12 @@ trait Connect extends Service {
   ): Request[ListLexBotsResponse, AWSError] = js.native
   
   /**
-    * Provides information about the phone numbers for the specified Amazon Connect instance.  For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.
+    * Provides information about the phone numbers for the specified Amazon Connect instance.  For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.  The phone number Arn value that is returned from each of the items in the PhoneNumberSummaryList cannot be used to tag phone number resources. It will fail with a ResourceNotFoundException. Instead, use the ListPhoneNumbersV2 API. It returns the new phone number ARN that can be used to tag phone number resources. 
     */
   def listPhoneNumbers(): Request[ListPhoneNumbersResponse, AWSError] = js.native
   def listPhoneNumbers(callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersResponse, scala.Unit]): Request[ListPhoneNumbersResponse, AWSError] = js.native
   /**
-    * Provides information about the phone numbers for the specified Amazon Connect instance.  For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.
+    * Provides information about the phone numbers for the specified Amazon Connect instance.  For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.  The phone number Arn value that is returned from each of the items in the PhoneNumberSummaryList cannot be used to tag phone number resources. It will fail with a ResourceNotFoundException. Instead, use the ListPhoneNumbersV2 API. It returns the new phone number ARN that can be used to tag phone number resources. 
     */
   def listPhoneNumbers(params: ListPhoneNumbersRequest): Request[ListPhoneNumbersResponse, AWSError] = js.native
   def listPhoneNumbers(
@@ -1229,12 +1291,12 @@ trait Connect extends Service {
   ): Request[ListPhoneNumbersResponse, AWSError] = js.native
   
   /**
-    * Lists phone numbers claimed to your Amazon Connect instance.  For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.
+    * Lists phone numbers claimed to your Amazon Connect instance or traffic distribution group. If the provided TargetArn is a traffic distribution group, you can call this API in both Amazon Web Services Regions associated with traffic distribution group. For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.
     */
   def listPhoneNumbersV2(): Request[ListPhoneNumbersV2Response, AWSError] = js.native
   def listPhoneNumbersV2(callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersV2Response, scala.Unit]): Request[ListPhoneNumbersV2Response, AWSError] = js.native
   /**
-    * Lists phone numbers claimed to your Amazon Connect instance.  For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.
+    * Lists phone numbers claimed to your Amazon Connect instance or traffic distribution group. If the provided TargetArn is a traffic distribution group, you can call this API in both Amazon Web Services Regions associated with traffic distribution group. For more information about phone numbers, see Set Up Phone Numbers for Your Contact Center in the Amazon Connect Administrator Guide.
     */
   def listPhoneNumbersV2(params: ListPhoneNumbersV2Request): Request[ListPhoneNumbersV2Response, AWSError] = js.native
   def listPhoneNumbersV2(
@@ -1401,6 +1463,22 @@ trait Connect extends Service {
   ): Request[ListTaskTemplatesResponse, AWSError] = js.native
   
   /**
+    * Lists traffic distribution groups.
+    */
+  def listTrafficDistributionGroups(): Request[ListTrafficDistributionGroupsResponse, AWSError] = js.native
+  def listTrafficDistributionGroups(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTrafficDistributionGroupsResponse, scala.Unit]
+  ): Request[ListTrafficDistributionGroupsResponse, AWSError] = js.native
+  /**
+    * Lists traffic distribution groups.
+    */
+  def listTrafficDistributionGroups(params: ListTrafficDistributionGroupsRequest): Request[ListTrafficDistributionGroupsResponse, AWSError] = js.native
+  def listTrafficDistributionGroups(
+    params: ListTrafficDistributionGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTrafficDistributionGroupsResponse, scala.Unit]
+  ): Request[ListTrafficDistributionGroupsResponse, AWSError] = js.native
+  
+  /**
     * Lists the use cases for the integration association. 
     */
   def listUseCases(): Request[ListUseCasesResponse, AWSError] = js.native
@@ -1457,18 +1535,32 @@ trait Connect extends Service {
   ): Request[PutUserStatusResponse, AWSError] = js.native
   
   /**
-    * Releases a phone number previously claimed to an Amazon Connect instance.
+    * Releases a phone number previously claimed to an Amazon Connect instance or traffic distribution group. You can call this API only in the Amazon Web Services Region where the number was claimed.  To release phone numbers from a traffic distribution group, use the ReleasePhoneNumber API, not the Amazon Connect console. After releasing a phone number, the phone number enters into a cooldown period of 30 days. It cannot be searched for or claimed again until the period has ended. If you accidentally release a phone number, contact Amazon Web Services Support. 
     */
   def releasePhoneNumber(): Request[js.Object, AWSError] = js.native
   def releasePhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Releases a phone number previously claimed to an Amazon Connect instance.
+    * Releases a phone number previously claimed to an Amazon Connect instance or traffic distribution group. You can call this API only in the Amazon Web Services Region where the number was claimed.  To release phone numbers from a traffic distribution group, use the ReleasePhoneNumber API, not the Amazon Connect console. After releasing a phone number, the phone number enters into a cooldown period of 30 days. It cannot be searched for or claimed again until the period has ended. If you accidentally release a phone number, contact Amazon Web Services Support. 
     */
   def releasePhoneNumber(params: ReleasePhoneNumberRequest): Request[js.Object, AWSError] = js.native
   def releasePhoneNumber(
     params: ReleasePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Replicates an Amazon Connect instance in the specified Amazon Web Services Region. For more information about replicating an Amazon Connect instance, see Create a replica of your existing Amazon Connect instance in the Amazon Connect Administrator Guide.
+    */
+  def replicateInstance(): Request[ReplicateInstanceResponse, AWSError] = js.native
+  def replicateInstance(callback: js.Function2[/* err */ AWSError, /* data */ ReplicateInstanceResponse, scala.Unit]): Request[ReplicateInstanceResponse, AWSError] = js.native
+  /**
+    * Replicates an Amazon Connect instance in the specified Amazon Web Services Region. For more information about replicating an Amazon Connect instance, see Create a replica of your existing Amazon Connect instance in the Amazon Connect Administrator Guide.
+    */
+  def replicateInstance(params: ReplicateInstanceRequest): Request[ReplicateInstanceResponse, AWSError] = js.native
+  def replicateInstance(
+    params: ReplicateInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplicateInstanceResponse, scala.Unit]
+  ): Request[ReplicateInstanceResponse, AWSError] = js.native
   
   /**
     * When a contact is being recorded, and the recording has been suspended using SuspendContactRecording, this API resumes recording the call. Only voice recordings are supported at this time.
@@ -1485,14 +1577,14 @@ trait Connect extends Service {
   ): Request[ResumeContactRecordingResponse, AWSError] = js.native
   
   /**
-    * Searches for available phone numbers that you can claim to your Amazon Connect instance.
+    * Searches for available phone numbers that you can claim to your Amazon Connect instance or traffic distribution group. If the provided TargetArn is a traffic distribution group, you can call this API in both Amazon Web Services Regions associated with the traffic distribution group.
     */
   def searchAvailablePhoneNumbers(): Request[SearchAvailablePhoneNumbersResponse, AWSError] = js.native
   def searchAvailablePhoneNumbers(
     callback: js.Function2[/* err */ AWSError, /* data */ SearchAvailablePhoneNumbersResponse, scala.Unit]
   ): Request[SearchAvailablePhoneNumbersResponse, AWSError] = js.native
   /**
-    * Searches for available phone numbers that you can claim to your Amazon Connect instance.
+    * Searches for available phone numbers that you can claim to your Amazon Connect instance or traffic distribution group. If the provided TargetArn is a traffic distribution group, you can call this API in both Amazon Web Services Regions associated with the traffic distribution group.
     */
   def searchAvailablePhoneNumbers(params: SearchAvailablePhoneNumbersRequest): Request[SearchAvailablePhoneNumbersResponse, AWSError] = js.native
   def searchAvailablePhoneNumbers(
@@ -1543,12 +1635,12 @@ trait Connect extends Service {
   ): Request[SearchSecurityProfilesResponse, AWSError] = js.native
   
   /**
-    * Searches users in an Amazon Connect instance, with optional filtering.
+    * Searches users in an Amazon Connect instance, with optional filtering.   AfterContactWorkTimeLimit is returned in milliseconds.  
     */
   def searchUsers(): Request[SearchUsersResponse, AWSError] = js.native
   def searchUsers(callback: js.Function2[/* err */ AWSError, /* data */ SearchUsersResponse, scala.Unit]): Request[SearchUsersResponse, AWSError] = js.native
   /**
-    * Searches users in an Amazon Connect instance, with optional filtering.
+    * Searches users in an Amazon Connect instance, with optional filtering.   AfterContactWorkTimeLimit is returned in milliseconds.  
     */
   def searchUsers(params: SearchUsersRequest): Request[SearchUsersResponse, AWSError] = js.native
   def searchUsers(
@@ -1913,12 +2005,12 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates your claimed phone number from its current Amazon Connect instance to another Amazon Connect instance in the same Region.
+    * Updates your claimed phone number from its current Amazon Connect instance or traffic distribution group to another Amazon Connect instance or traffic distribution group in the same Amazon Web Services Region.  You can call DescribePhoneNumber API to verify the status of a previous UpdatePhoneNumber operation. 
     */
   def updatePhoneNumber(): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   def updatePhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePhoneNumberResponse, scala.Unit]): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   /**
-    * Updates your claimed phone number from its current Amazon Connect instance to another Amazon Connect instance in the same Region.
+    * Updates your claimed phone number from its current Amazon Connect instance or traffic distribution group to another Amazon Connect instance or traffic distribution group in the same Amazon Web Services Region.  You can call DescribePhoneNumber API to verify the status of a previous UpdatePhoneNumber operation. 
     */
   def updatePhoneNumber(params: UpdatePhoneNumberRequest): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   def updatePhoneNumber(
@@ -1969,12 +2061,12 @@ trait Connect extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * This API is in preview release for Amazon Connect and is subject to change. Updates the outbound caller ID name, number, and outbound whisper flow for a specified queue.
+    * This API is in preview release for Amazon Connect and is subject to change. Updates the outbound caller ID name, number, and outbound whisper flow for a specified queue.  If the number being used in the input is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the OutboundCallerIdNumberId value of the OutboundCallerConfig request body parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def updateQueueOutboundCallerConfig(): Request[js.Object, AWSError] = js.native
   def updateQueueOutboundCallerConfig(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * This API is in preview release for Amazon Connect and is subject to change. Updates the outbound caller ID name, number, and outbound whisper flow for a specified queue.
+    * This API is in preview release for Amazon Connect and is subject to change. Updates the outbound caller ID name, number, and outbound whisper flow for a specified queue.  If the number being used in the input is claimed to a traffic distribution group, and you are calling this API using an instance in the Amazon Web Services Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the OutboundCallerIdNumberId value of the OutboundCallerConfig request body parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate Amazon Web Services Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a ResourceNotFoundException. 
     */
   def updateQueueOutboundCallerConfig(params: UpdateQueueOutboundCallerConfigRequest): Request[js.Object, AWSError] = js.native
   def updateQueueOutboundCallerConfig(
@@ -2107,6 +2199,22 @@ trait Connect extends Service {
     params: UpdateTaskTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTaskTemplateResponse, scala.Unit]
   ): Request[UpdateTaskTemplateResponse, AWSError] = js.native
+  
+  /**
+    * Updates the traffic distribution for a given traffic distribution group. For more information about updating a traffic distribution group see Update telephony traffic distribution across Amazon Web Services Regions  in the Amazon Connect Administrator Guide. 
+    */
+  def updateTrafficDistribution(): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
+  def updateTrafficDistribution(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTrafficDistributionResponse, scala.Unit]
+  ): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
+  /**
+    * Updates the traffic distribution for a given traffic distribution group. For more information about updating a traffic distribution group see Update telephony traffic distribution across Amazon Web Services Regions  in the Amazon Connect Administrator Guide. 
+    */
+  def updateTrafficDistribution(params: UpdateTrafficDistributionRequest): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
+  def updateTrafficDistribution(
+    params: UpdateTrafficDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTrafficDistributionResponse, scala.Unit]
+  ): Request[UpdateTrafficDistributionResponse, AWSError] = js.native
   
   /**
     * Assigns the specified hierarchy group to the specified user.

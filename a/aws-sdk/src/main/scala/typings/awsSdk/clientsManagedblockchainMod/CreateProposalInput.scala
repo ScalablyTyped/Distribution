@@ -12,7 +12,7 @@ trait CreateProposalInput extends StObject {
   var Actions: ProposalActions
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the operation. An idempotent operation completes no more than one time. This identifier is required only if you make a service request directly using an HTTP client. It is generated automatically if you use an AWS SDK or the AWS CLI.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the operation. An idempotent operation completes no more than one time. This identifier is required only if you make a service request directly using an HTTP client. It is generated automatically if you use an Amazon Web Services SDK or the CLI.
     */
   var ClientRequestToken: ClientRequestTokenString
   
@@ -22,7 +22,7 @@ trait CreateProposalInput extends StObject {
   var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
-    * The unique identifier of the member that is creating the proposal. This identifier is especially useful for identifying the member making the proposal when multiple members exist in a single AWS account.
+    * The unique identifier of the member that is creating the proposal. This identifier is especially useful for identifying the member making the proposal when multiple members exist in a single Amazon Web Services account.
     */
   var MemberId: ResourceIdString
   

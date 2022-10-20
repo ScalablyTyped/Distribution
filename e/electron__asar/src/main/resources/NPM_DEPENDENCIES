@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@electron/asar" : "3.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@electron/asar" : "3.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

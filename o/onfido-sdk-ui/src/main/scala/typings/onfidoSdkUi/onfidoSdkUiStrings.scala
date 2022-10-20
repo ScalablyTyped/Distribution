@@ -134,6 +134,10 @@ object onfidoSdkUiStrings {
   inline def expired_token: expired_token = "expired_token".asInstanceOf[expired_token]
   
   @js.native
+  sealed trait expired_trial extends StObject
+  inline def expired_trial: expired_trial = "expired_trial".asInstanceOf[expired_trial]
+  
+  @js.native
   sealed trait fr
     extends StObject
        with SupportedLanguages

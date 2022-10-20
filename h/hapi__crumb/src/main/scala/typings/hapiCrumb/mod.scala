@@ -3,6 +3,7 @@ package typings.hapiCrumb
 import org.scalablytyped.runtime.Shortcut
 import typings.hapiCrumb.anon.Key
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
 import typings.hapiHapi.mod.ServerStateCookieOptions
@@ -138,13 +139,19 @@ object mod extends Shortcut {
       
       inline def setSkip(value: Boolean | SkipFunction): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      inline def setSkipFunction2(value: (/* request */ js.UndefOr[Request], /* h */ js.UndefOr[ResponseToolkit]) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+      inline def setSkipFunction2(
+        value: (/* request */ js.UndefOr[Request[ReqRefDefaults]], /* h */ js.UndefOr[ResponseToolkit[ReqRefDefaults]]) => Boolean
+      ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   
-  type SkipFunction = js.Function2[/* request */ js.UndefOr[Request], /* h */ js.UndefOr[ResponseToolkit], Boolean]
+  type SkipFunction = js.Function2[
+    /* request */ js.UndefOr[Request[ReqRefDefaults]], 
+    /* h */ js.UndefOr[ResponseToolkit[ReqRefDefaults]], 
+    Boolean
+  ]
   
   type _To = Plugin[RegisterOptions]
   

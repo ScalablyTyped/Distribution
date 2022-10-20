@@ -22,7 +22,7 @@ trait UpdateCustomVerificationEmailTemplateRequest extends StObject {
   var SuccessRedirectionURL: typings.awsSdk.clientsSesv2Mod.SuccessRedirectionURL
   
   /**
-    * The content of the custom verification email. The total size of the email must be less than 10 MB. The message body may contain HTML, with some limitations. For more information, see Custom Verification Email Frequently Asked Questions in the Amazon SES Developer Guide.
+    * The content of the custom verification email. The total size of the email must be less than 10 MB. The message body may contain HTML, with some limitations. For more information, see Custom verification email frequently asked questions in the Amazon SES Developer Guide.
     */
   var TemplateContent: typings.awsSdk.clientsSesv2Mod.TemplateContent
   

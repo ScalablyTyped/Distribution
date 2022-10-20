@@ -98,5 +98,30 @@ object mod {
       * Wraps an object type with Jest mock type definitions.
       */
     type MockedObject[T /* <: js.Object */] = typings.jestMock.mod.MockedObject[T]
+    
+    /**
+      * Constructs the type of a spied class or function.
+      */
+    type Spied[T /* <: ClassLike | FunctionLike */] = typings.jestMock.mod.Spied[T]
+    
+    /**
+      * Constructs the type of a spied class.
+      */
+    type SpiedClass[T /* <: ClassLike */] = typings.jestMock.mod.SpiedClass[T]
+    
+    /**
+      * Constructs the type of a spied function.
+      */
+    type SpiedFunction[T /* <: FunctionLike */] = typings.jestMock.mod.SpiedFunction[T]
+    
+    /**
+      * Constructs the type of a spied getter.
+      */
+    type SpiedGetter[T] = typings.jestMock.mod.SpiedGetter[T]
+    
+    /**
+      * Constructs the type of a spied setter.
+      */
+    type SpiedSetter[T] = typings.jestMock.mod.SpiedSetter[T]
   }
 }

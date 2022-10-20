@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "webdriver-manager"
-version := "12.1.8-ddcc91"
+version := "12.1.8-92b637"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20220624Z-ad2647",
-  "org.scalablytyped" %%% "form-data" % "4.0.0-dc33cf",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-978800",
+  "org.scalablytyped" %%% "form-data" % "4.0.0-5ba630",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20220101Z-6c1e97",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-0fe4d5")
 publishArtifact in packageDoc := false

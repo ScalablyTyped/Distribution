@@ -1,5 +1,7 @@
 package typings.sentryNode
 
+import typings.sentryNode.sentryNodeBooleans.`true`
+import typings.sentryTypes.typesContextMod.DeviceContext
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
 import typings.sentryTypes.typesHubMod.Hub
@@ -9,6 +11,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesIntegrationsContextMod {
+  
+  @JSImport("@sentry/node/types/integrations/context", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@sentry/node/types/integrations/context", "Context")
   @js.native
@@ -72,6 +78,10 @@ object typesIntegrationsContextMod {
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
+  
+  inline def getDeviceContext(deviceOpt: DeviceContextOptions): DeviceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceContext")(deviceOpt.asInstanceOf[js.Any]).asInstanceOf[DeviceContext]
+  
+  inline def getDeviceContext_true(deviceOpt: `true`): DeviceContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceContext")(deviceOpt.asInstanceOf[js.Any]).asInstanceOf[DeviceContext]
   
   @JSImport("@sentry/node/types/integrations/context", "readDirAsync")
   @js.native

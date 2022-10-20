@@ -292,10 +292,16 @@ object mod {
     /** 轻量模式 */
     var light: js.UndefOr[Boolean] = js.undefined
     
-    /** 模式类型 */
+    /**
+      * 组件的渲染模式类型
+      * @option read 渲染只读模式
+      * @option edit 渲染编辑模式
+      * */
     var mode: ProFieldFCMode
     
-    /** 简约模式 */
+    /**
+      * 简约模式
+      */
     var plain: js.UndefOr[Boolean] = js.undefined
     
     /** 唯一的key，用于网络请求 */
@@ -461,10 +467,23 @@ object mod {
   
   trait ProRenderFieldPropsType extends StObject {
     
+    /**
+      * 自定义只读模式的渲染器
+      * @params props 关于dom的配置
+      * @params dom 默认的 dom
+      * @return 返回一个用于读的 dom
+      */
     var render: js.UndefOr[
         js.Function3[/* text */ Any, /* props */ OmitProFieldFCRenderProps, /* dom */ Element, Element]
       ] = js.undefined
     
+    /**
+      * 一个自定义的编辑渲染器。
+      * @params text 默认的值类型
+      * @params props 关于dom的配置
+      * @params dom 默认的 dom
+      * @return 返回一个用于编辑的dom
+      */
     var renderFormItem: js.UndefOr[
         js.Function3[/* text */ Any, /* props */ ProFieldFCRenderProps, /* dom */ Element, Element]
       ] = js.undefined

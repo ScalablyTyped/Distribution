@@ -24,6 +24,11 @@ trait OpenGraph extends StObject {
   
   var profile: js.UndefOr[OpenGraphProfile] = js.undefined
   
+  var siteName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @deprecated use siteName instead. site_name will be removed in the next major version
+    */
   var site_name: js.UndefOr[String] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
@@ -84,6 +89,10 @@ object OpenGraph {
     inline def setProfile(value: OpenGraphProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    
+    inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+    
+    inline def setSiteNameUndefined: Self = StObject.set(x, "siteName", js.undefined)
     
     inline def setSite_name(value: String): Self = StObject.set(x, "site_name", value.asInstanceOf[js.Any])
     

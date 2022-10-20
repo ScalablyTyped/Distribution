@@ -12,7 +12,7 @@ trait BlacklistEntry extends StObject {
   var Description: js.UndefOr[BlacklistingDescription] = js.undefined
   
   /**
-    * The time when the blacklisting event occurred, shown in Unix time format.
+    * The time when the blacklisting event occurred.
     */
   var ListingTime: js.UndefOr[js.Date] = js.undefined
   

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Consumer () extends StObject {
   
-  def acknowledge(message: Message): Unit = js.native
+  def acknowledge(message: Message): js.Promise[Null] = js.native
   
-  def acknowledgeCumulative(message: Message): Unit = js.native
+  def acknowledgeCumulative(message: Message): js.Promise[Null] = js.native
   
-  def acknowledgeCumulativeId(messageId: MessageId): Unit = js.native
+  def acknowledgeCumulativeId(messageId: MessageId): js.Promise[Null] = js.native
   
-  def acknowledgeId(messageId: MessageId): Unit = js.native
+  def acknowledgeId(messageId: MessageId): js.Promise[Null] = js.native
   
   def close(): js.Promise[Null] = js.native
   

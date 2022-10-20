@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("johnny-five", "Led")
 @js.native
 open class Led protected () extends StObject {
-  def this(option: Double) = this()
+  def this(option: Double | String) = this()
   def this(option: LedOption) = this()
   
   def blink(): Unit = js.native

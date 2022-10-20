@@ -78,18 +78,20 @@ object mod {
   
   trait OpenGraphImage extends StObject {
     
-    var height: String
+    // Height and Width can be optional, see doc on
+    // https://github.com/jshemas/openGraphScraper/blob/master/lib/media.js
+    var height: js.UndefOr[String] = js.undefined
     
     var `type`: String
     
     var url: String
     
-    var width: String
+    var width: js.UndefOr[String] = js.undefined
   }
   object OpenGraphImage {
     
-    inline def apply(height: String, `type`: String, url: String, width: String): OpenGraphImage = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(`type`: String, url: String): OpenGraphImage = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenGraphImage]
     }
@@ -98,11 +100,15 @@ object mod {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

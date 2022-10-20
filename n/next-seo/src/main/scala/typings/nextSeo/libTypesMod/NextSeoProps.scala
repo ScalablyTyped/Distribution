@@ -13,6 +13,8 @@ trait NextSeoProps extends StObject {
   
   var canonical: js.UndefOr[String] = js.undefined
   
+  var children: js.UndefOr[scala.Nothing] = js.undefined
+  
   var defaultTitle: js.UndefOr[String] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined

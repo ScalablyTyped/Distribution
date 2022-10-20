@@ -1,7 +1,6 @@
 package typings.i18next.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.i18next.anon.InterpolationOptionskeyst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -154,7 +153,7 @@ object InterpolationOptions {
     inline def setEscapeValueUndefined: Self = StObject.set(x, "escapeValue", js.undefined)
     
     inline def setFormat(
-      value: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptionskeyst]) => String
+      value: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptions & StringMap]) => String
     ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
     
     inline def setFormatSeparator(value: String): Self = StObject.set(x, "formatSeparator", value.asInstanceOf[js.Any])

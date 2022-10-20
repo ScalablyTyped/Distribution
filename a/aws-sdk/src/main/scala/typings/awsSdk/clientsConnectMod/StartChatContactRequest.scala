@@ -17,7 +17,7 @@ trait StartChatContactRequest extends StObject {
   var ChatDurationInMinutes: js.UndefOr[typings.awsSdk.clientsConnectMod.ChatDurationInMinutes] = js.undefined
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var ClientToken: js.UndefOr[typings.awsSdk.clientsConnectMod.ClientToken] = js.undefined
   

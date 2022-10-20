@@ -1,6 +1,6 @@
 package typings.ngPackagr.anon
 
-import typings.ngPackagr.nodeMod.Node
+import typings.ngPackagr.libGraphNodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

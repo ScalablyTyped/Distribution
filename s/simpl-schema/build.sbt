@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "simpl-schema"
-version := "1.12-dt-20220913Z-34c2f6"
+version := "1.12-dt-20220913Z-1b66d6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "bson" % "4.7.0-7824ee",
   "org.scalablytyped" %%% "buffer" % "6.0.3-6a53bb",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-897197",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20220818Z-a053c4",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
   "org.scalablytyped" %%% "jquery" % "3.5-dt-20220624Z-8d8789",
-  "org.scalablytyped" %%% "meteor" % "2.7-dt-20220624Z-84961e",
-  "org.scalablytyped" %%% "mongodb" % "4.10.0-dcc71c",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "meteor" % "2.7-dt-20220624Z-25eded",
+  "org.scalablytyped" %%% "mongodb" % "4.11.0-3b479e",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",

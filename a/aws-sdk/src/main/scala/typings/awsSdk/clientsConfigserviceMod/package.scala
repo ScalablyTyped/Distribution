@@ -664,6 +664,26 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTransitGatewayAttachment
   - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTransitGatewayRouteTable
   - typings.awsSdk.awsSdkStrings.AWSColonColonDMSColonColonCertificate
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppConfigColonColonApplication
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppSyncColonColonGraphQLApi
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationSMB
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationFSxLustre
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationS3
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationEFS
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonTask
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationNFS
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonNetworkInsightsAccessScopeAnalysis
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEKSColonColonFargateProfile
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGlueColonColonJob
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGuardDutyColonColonThreatIntelSet
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGuardDutyColonColonIPSet
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSageMakerColonColonWorkteam
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSageMakerColonColonNotebookInstanceLifecycleConfig
+  - typings.awsSdk.awsSdkStrings.AWSColonColonServiceDiscoveryColonColonService
+  - typings.awsSdk.awsSdkStrings.AWSColonColonServiceDiscoveryColonColonPublicDnsNamespace
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonContactList
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonConfigurationSet
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ColonColonHostedZone
   - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String

@@ -45,7 +45,7 @@ trait NativeTouchEvent extends StObject {
   /**
     * The node id of the element receiving the touch event
     */
-  var target: String
+  var target: NodeHandle
   
   /**
     * A time identifier for the touch, useful for velocity calculation
@@ -66,7 +66,7 @@ object NativeTouchEvent {
     locationY: Double,
     pageX: Double,
     pageY: Double,
-    target: String,
+    target: NodeHandle,
     timestamp: Double,
     touches: js.Array[NativeTouchEvent]
   ): NativeTouchEvent = {
@@ -94,7 +94,7 @@ object NativeTouchEvent {
     
     inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: NodeHandle): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-circus
 
-Typings are for version 29.2.0
+Typings are for version 29.2.1
 
 ## Library description:
 [type-definitions]: https://github.com/facebook/jest/blob/main/packages/jest-types/src/Circus.ts

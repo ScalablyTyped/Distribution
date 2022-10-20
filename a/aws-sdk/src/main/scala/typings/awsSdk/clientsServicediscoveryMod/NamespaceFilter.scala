@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamespaceFilter extends StObject {
   
   /**
-    * The operator that you want to use to determine whether ListNamespaces returns a namespace. Valid values for condition include:  EQ  When you specify EQ for the condition, you can choose to list only public namespaces or private namespaces, but not both. EQ is the default condition and can be omitted.  IN  When you specify IN for the condition, you can choose to list public namespaces, private namespaces, or both.   BETWEEN   Not applicable  
+    * Specify the operator that you want to use to determine whether a namespace matches the specified value. Valid values for Condition are one of the following.    EQ: When you specify EQ for Condition, you can specify only one value. EQ is supported for TYPE, NAME, and HTTP_NAME. EQ is the default condition and can be omitted.    BEGINS_WITH: When you specify BEGINS_WITH for Condition, you can specify only one value. BEGINS_WITH is supported for TYPE, NAME, and HTTP_NAME.  
     */
   var Condition: js.UndefOr[FilterCondition] = js.undefined
   
   /**
-    * Specify TYPE.
+    * Specify the namespaces that you want to get using one of the following.    TYPE: Gets the namespaces of the specified type.    NAME: Gets the namespaces with the specified name.    HTTP_NAME: Gets the namespaces with the specified HTTP name.  
     */
   var Name: NamespaceFilterName
   
   /**
-    * If you specify EQ for Condition, specify either DNS_PUBLIC or DNS_PRIVATE. If you specify IN for Condition, you can specify DNS_PUBLIC, DNS_PRIVATE, or both.
+    * Specify the values that are applicable to the value that you specify for Name.    TYPE: Specify HTTP, DNS_PUBLIC, or DNS_PRIVATE.    NAME: Specify the name of the namespace, which is found in Namespace.Name.    HTTP_NAME: Specify the HTTP name of the namespace, which is found in Namespace.Properties.HttpProperties.HttpName.  
     */
   var Values: FilterValues
 }

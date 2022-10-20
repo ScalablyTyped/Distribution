@@ -18,8 +18,8 @@ import typings.sentryNode.anon.Breadcrumbs
 import typings.sentryNode.anon.Include
 import typings.sentryNode.anon.Key
 import typings.sentryNode.anon.Mode
-import typings.sentryNode.anon.OmitAddRequestDataToEvent
 import typings.sentryNode.anon.OnFatalError
+import typings.sentryNode.anon.PartialRequestDataOptions
 import typings.sentryNode.anon.ShouldHandleError
 import typings.sentryNode.anon.TypeofConsole
 import typings.sentryNode.anon.TypeofContext
@@ -31,6 +31,7 @@ import typings.sentryNode.anon.TypeofLinkedErrors
 import typings.sentryNode.anon.TypeofModules
 import typings.sentryNode.anon.TypeofOnUncaughtException
 import typings.sentryNode.anon.TypeofOnUnhandledRejectio
+import typings.sentryNode.anon.TypeofRequestData
 import typings.sentryNode.typesHandlersMod.MiddlewareError
 import typings.sentryNode.typesHandlersMod.RequestHandlerOptions
 import typings.sentryNode.typesIntegrationsContextMod.ContextOptions
@@ -45,6 +46,7 @@ import typings.sentryNode.typesIntegrationsMod.OnUncaughtException
 import typings.sentryNode.typesIntegrationsMod.OnUnhandledRejection
 import typings.sentryNode.typesRequestDataDeprecatedMod.ExpressRequest
 import typings.sentryNode.typesRequestDataDeprecatedMod.ParseRequestOptions
+import typings.sentryNode.typesRequestdataMod.AddRequestDataToEventOptions
 import typings.sentryNode.typesTransportsHttpMod.NodeTransportOptions
 import typings.sentryNode.typesTypesMod.NodeClientOptions
 import typings.sentryNode.typesTypesMod.NodeOptions
@@ -58,6 +60,7 @@ import typings.sentryTypes.typesExtraMod.Extras
 import typings.sentryTypes.typesMiscMod.ExtractedNodeRequestData
 import typings.sentryTypes.typesMiscMod.Primitive
 import typings.sentryTypes.typesOptionsMod.ClientOptions
+import typings.sentryTypes.typesPolymorphicsMod.PolymorphicRequest
 import typings.sentryTypes.typesScopeMod.CaptureContext
 import typings.sentryTypes.typesSeverityMod.Severity
 import typings.sentryTypes.typesSeverityMod.SeverityLevel
@@ -80,6 +83,10 @@ object mod {
   @JSImport("@sentry/node", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@sentry/node", "DEFAULT_USER_INCLUDES")
+  @js.native
+  val DEFAULT_USER_INCLUDES: js.Array[String] = js.native
   
   object Handlers {
     
@@ -311,6 +318,21 @@ object mod {
     @js.native
     def OnUnhandledRejection: TypeofOnUnhandledRejectio = js.native
     inline def OnUnhandledRejection_=(x: TypeofOnUnhandledRejectio): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnUnhandledRejection")(x.asInstanceOf[js.Any])
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@sentry/node", "Integrations.RequestData")
+    @js.native
+    /**
+      * @inheritDoc
+      */
+    open class RequestData ()
+      extends typings.sentryNode.typesIntegrationsMod.RequestData {
+      def this(options: PartialRequestDataOptions) = this()
+    }
+    @JSImport("@sentry/node", "Integrations.RequestData")
+    @js.native
+    def RequestData: TypeofRequestData = js.native
+    inline def RequestData_=(x: TypeofRequestData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RequestData")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@sentry/node", "NodeClient")
@@ -326,7 +348,7 @@ object mod {
   
   @JSImport("@sentry/node", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.15.0" */ String = js.native
+  val SDK_VERSION: /* "7.16.0" */ String = js.native
   
   @JSImport("@sentry/node", "Scope")
   @js.native
@@ -366,15 +388,8 @@ object mod {
   
   inline def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def addRequestDataToEvent(
-    event: Event,
-    req: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CrossPlatformRequest */ Any
-  ): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
-  inline def addRequestDataToEvent(
-    event: Event,
-    req: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CrossPlatformRequest */ Any,
-    options: OmitAddRequestDataToEvent
-  ): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def addRequestDataToEvent(event: Event, req: PolymorphicRequest): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def addRequestDataToEvent(event: Event, req: PolymorphicRequest, options: AddRequestDataToEventOptions): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("addRequestDataToEvent")(event.asInstanceOf[js.Any], req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Event]
   
   inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
   inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]
@@ -411,13 +426,8 @@ object mod {
   @js.native
   val defaultStackParser: StackParser = js.native
   
-  inline def extractRequestData(
-    req: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CrossPlatformRequest */ Any
-  ): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
-  inline def extractRequestData(
-    req: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CrossPlatformRequest */ Any,
-    options: Include
-  ): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
+  inline def extractRequestData(req: PolymorphicRequest): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
+  inline def extractRequestData(req: PolymorphicRequest, options: Include): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractRequestData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
   
   inline def flush(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Promise[Boolean]]
   inline def flush(timeout: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]

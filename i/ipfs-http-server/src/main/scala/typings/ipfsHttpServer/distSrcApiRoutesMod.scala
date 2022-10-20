@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.ServerRoute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,5 +10,5 @@ object distSrcApiRoutesMod {
   
   @JSImport("ipfs-http-server/dist/src/api/routes", "routes")
   @js.native
-  val routes: js.Array[ServerRoute] = js.native
+  val routes: js.Array[ServerRoute[ReqRefDefaults]] = js.native
 }

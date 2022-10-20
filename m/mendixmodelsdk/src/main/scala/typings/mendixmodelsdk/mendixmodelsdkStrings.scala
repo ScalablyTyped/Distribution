@@ -934,6 +934,10 @@ object mendixmodelsdkStrings {
   inline def Microflows$BreakEvent: Microflows$BreakEvent = "Microflows$BreakEvent".asInstanceOf[Microflows$BreakEvent]
   
   @js.native
+  sealed trait Microflows$CallExternalAction extends StObject
+  inline def Microflows$CallExternalAction: Microflows$CallExternalAction = "Microflows$CallExternalAction".asInstanceOf[Microflows$CallExternalAction]
+  
+  @js.native
   sealed trait Microflows$CastAction extends StObject
   inline def Microflows$CastAction: Microflows$CastAction = "Microflows$CastAction".asInstanceOf[Microflows$CastAction]
   
@@ -2272,6 +2276,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Rest$PublishedODataContract extends StObject
   inline def Rest$PublishedODataContract: Rest$PublishedODataContract = "Rest$PublishedODataContract".asInstanceOf[Rest$PublishedODataContract]
+  
+  @js.native
+  sealed trait Rest$PublishedODataMicroflow extends StObject
+  inline def Rest$PublishedODataMicroflow: Rest$PublishedODataMicroflow = "Rest$PublishedODataMicroflow".asInstanceOf[Rest$PublishedODataMicroflow]
   
   @js.native
   sealed trait Rest$PublishedRestResource extends StObject

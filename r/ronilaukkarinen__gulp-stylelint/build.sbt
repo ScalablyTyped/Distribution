@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ronilaukkarinen__gulp-stylelint"
-version := "14.0-dt-20220223Z-ce0591"
+version := "14.0-dt-20220223Z-50180a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "cosmiconfig" % "7.0.1-1277e4",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "postcss" % "8.4.18-485038",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-c68fae",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",

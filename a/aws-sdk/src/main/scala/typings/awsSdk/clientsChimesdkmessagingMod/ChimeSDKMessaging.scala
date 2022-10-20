@@ -599,12 +599,12 @@ trait ChimeSDKMessaging extends Service {
   ): Request[RedactChannelMessageResponse, AWSError] = js.native
   
   /**
-    * Allows an AppInstanceUser to search the channels that they belong to. The AppInstanceUser can search by membership or external ID. An AppInstanceAdmin can search across all channels within the AppInstance.
+    * Allows ChimeBearer to search channels by channel members. AppInstanceUsers can search across the channels that they belong to. AppInstanceAdmins can search across all channels.
     */
   def searchChannels(): Request[SearchChannelsResponse, AWSError] = js.native
   def searchChannels(callback: js.Function2[/* err */ AWSError, /* data */ SearchChannelsResponse, Unit]): Request[SearchChannelsResponse, AWSError] = js.native
   /**
-    * Allows an AppInstanceUser to search the channels that they belong to. The AppInstanceUser can search by membership or external ID. An AppInstanceAdmin can search across all channels within the AppInstance.
+    * Allows ChimeBearer to search channels by channel members. AppInstanceUsers can search across the channels that they belong to. AppInstanceAdmins can search across all channels.
     */
   def searchChannels(params: SearchChannelsRequest): Request[SearchChannelsResponse, AWSError] = js.native
   def searchChannels(

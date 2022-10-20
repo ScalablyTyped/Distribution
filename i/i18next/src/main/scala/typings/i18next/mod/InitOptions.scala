@@ -15,8 +15,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent i18next.i18next.MergeBy<i18next.i18next.DefaultPluginOptions, i18next.i18next.PluginOptions> */
-trait InitOptions extends StObject {
+trait InitOptions
+  extends StObject
+     with PluginOptions {
   
   /**
     * Prefixes the namespace to the returned key when using `cimode`
@@ -29,10 +30,6 @@ trait InitOptions extends StObject {
     * @default false
     */
   var appendNamespaceToMissingKey: js.UndefOr[Boolean] = js.undefined
-  
-  var backend: js.UndefOr[js.Object] = js.undefined
-  
-  var cache: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Language will be lowercased EN --> en while leaving full locales like en-US
@@ -64,8 +61,6 @@ trait InitOptions extends StObject {
     */
   var defaultNS: js.UndefOr[String | `false` | js.Array[String]] = js.undefined
   
-  var detection: js.UndefOr[js.Object] = js.undefined
-  
   /**
     * Language to use if translations in user language are not available.
     * @default 'dev'
@@ -77,8 +72,6 @@ trait InitOptions extends StObject {
     * @default false
     */
   var fallbackNS: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
-  
-  var i18nFormat: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Automatically lookup for a flat key if a nested key is not found an vice-versa
@@ -349,14 +342,6 @@ object InitOptions {
     
     inline def setAppendNamespaceToMissingKeyUndefined: Self = StObject.set(x, "appendNamespaceToMissingKey", js.undefined)
     
-    inline def setBackend(value: js.Object): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
-    
-    inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
-    
-    inline def setCache(value: js.Object): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
-    
-    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-    
     inline def setCleanCode(value: Boolean): Self = StObject.set(x, "cleanCode", value.asInstanceOf[js.Any])
     
     inline def setCleanCodeUndefined: Self = StObject.set(x, "cleanCode", js.undefined)
@@ -379,10 +364,6 @@ object InitOptions {
     
     inline def setDefaultNSVarargs(value: String*): Self = StObject.set(x, "defaultNS", js.Array(value*))
     
-    inline def setDetection(value: js.Object): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
-    
-    inline def setDetectionUndefined: Self = StObject.set(x, "detection", js.undefined)
-    
     inline def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
     
     inline def setFallbackLngFunction1(value: /* code */ String => String | js.Array[String] | FallbackLngObjList): Self = StObject.set(x, "fallbackLng", js.Any.fromFunction1(value))
@@ -396,10 +377,6 @@ object InitOptions {
     inline def setFallbackNSUndefined: Self = StObject.set(x, "fallbackNS", js.undefined)
     
     inline def setFallbackNSVarargs(value: String*): Self = StObject.set(x, "fallbackNS", js.Array(value*))
-    
-    inline def setI18nFormat(value: js.Object): Self = StObject.set(x, "i18nFormat", value.asInstanceOf[js.Any])
-    
-    inline def setI18nFormatUndefined: Self = StObject.set(x, "i18nFormat", js.undefined)
     
     inline def setIgnoreJSONStructure(value: Boolean): Self = StObject.set(x, "ignoreJSONStructure", value.asInstanceOf[js.Any])
     

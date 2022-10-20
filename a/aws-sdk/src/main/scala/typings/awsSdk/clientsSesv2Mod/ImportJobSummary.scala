@@ -11,11 +11,21 @@ trait ImportJobSummary extends StObject {
     */
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
+  /**
+    * The number of records that failed processing because of invalid input or other reasons.
+    */
+  var FailedRecordsCount: js.UndefOr[typings.awsSdk.clientsSesv2Mod.FailedRecordsCount] = js.undefined
+  
   var ImportDestination: js.UndefOr[typings.awsSdk.clientsSesv2Mod.ImportDestination] = js.undefined
   
   var JobId: js.UndefOr[typings.awsSdk.clientsSesv2Mod.JobId] = js.undefined
   
   var JobStatus: js.UndefOr[typings.awsSdk.clientsSesv2Mod.JobStatus] = js.undefined
+  
+  /**
+    * The current number of records processed.
+    */
+  var ProcessedRecordsCount: js.UndefOr[typings.awsSdk.clientsSesv2Mod.ProcessedRecordsCount] = js.undefined
 }
 object ImportJobSummary {
   
@@ -30,6 +40,10 @@ object ImportJobSummary {
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
+    inline def setFailedRecordsCount(value: FailedRecordsCount): Self = StObject.set(x, "FailedRecordsCount", value.asInstanceOf[js.Any])
+    
+    inline def setFailedRecordsCountUndefined: Self = StObject.set(x, "FailedRecordsCount", js.undefined)
+    
     inline def setImportDestination(value: ImportDestination): Self = StObject.set(x, "ImportDestination", value.asInstanceOf[js.Any])
     
     inline def setImportDestinationUndefined: Self = StObject.set(x, "ImportDestination", js.undefined)
@@ -41,5 +55,9 @@ object ImportJobSummary {
     inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    
+    inline def setProcessedRecordsCount(value: ProcessedRecordsCount): Self = StObject.set(x, "ProcessedRecordsCount", value.asInstanceOf[js.Any])
+    
+    inline def setProcessedRecordsCountUndefined: Self = StObject.set(x, "ProcessedRecordsCount", js.undefined)
   }
 }

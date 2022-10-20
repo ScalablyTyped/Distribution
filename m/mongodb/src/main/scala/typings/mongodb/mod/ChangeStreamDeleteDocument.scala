@@ -23,7 +23,7 @@ trait ChangeStreamDeleteDocument[TSchema /* <: Document */]
     */
   var fullDocumentBeforeChange: js.UndefOr[TSchema] = js.undefined
   
-  /** Namespace the delete event occured on */
+  /** Namespace the delete event occurred on */
   var ns: ChangeStreamNameSpace
   
   /** Describes the type of operation represented in this change notification */

@@ -17,7 +17,7 @@ trait DomainDeliverabilityTrackingOption extends StObject {
   var InboxPlacementTrackingOption: js.UndefOr[typings.awsSdk.clientsSesv2Mod.InboxPlacementTrackingOption] = js.undefined
   
   /**
-    * The date, in Unix time format, when you enabled the Deliverability dashboard for the domain.
+    * The date when you enabled the Deliverability dashboard for the domain.
     */
   var SubscriptionStartDate: js.UndefOr[js.Date] = js.undefined
 }

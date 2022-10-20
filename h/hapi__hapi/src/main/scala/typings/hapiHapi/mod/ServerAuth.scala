@@ -2,6 +2,7 @@ package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Default
 import typings.hapiHapi.mod.Util.Dictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ trait ServerAuth extends StObject {
     * @return void.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverauthschemename-scheme)
     */
-  def scheme(name: String, scheme: ServerAuthScheme): Unit = js.native
+  def scheme[Refs /* <: ReqRef */, Options /* <: js.Object */](name: String, scheme: ServerAuthScheme[Options, Refs]): Unit = js.native
   
   /**
     * Contains the default authentication configuration is a default strategy was set via
@@ -75,7 +76,9 @@ trait ServerAuth extends StObject {
     * include verifying scope, entity, or other route properties.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverauthteststrategy-request)
     */
-  def test(strategy: String, request: Request): js.Promise[AuthenticationData] = js.native
+  def test(strategy: String, request: Request[ReqRefDefaults]): js.Promise[
+    AuthenticationData[UserCredentials, AppCredentials, Record[String, Any], AuthArtifacts]
+  ] = js.native
   
   /**
     * Verify a request's authentication credentials against an authentication strategy.
@@ -87,5 +90,6 @@ trait ServerAuth extends StObject {
     * are still valid (e.g. have not been revoked or expired). It does not include verifying scope,
     * entity, or other route properties.
     */
-  def verify(request: Request): js.Promise[Unit] = js.native
+  // tslint:disable-next-line no-unnecessary-generics
+  def verify[Refs /* <: ReqRef */](request: Request[Refs]): js.Promise[Unit] = js.native
 }

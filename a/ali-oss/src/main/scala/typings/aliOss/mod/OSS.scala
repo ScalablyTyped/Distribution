@@ -32,6 +32,12 @@ trait OSS extends StObject {
   def append(name: String, file: Any): js.Promise[AppendObjectResult] = js.native
   def append(name: String, file: Any, options: AppendObjectOptions): js.Promise[AppendObjectResult] = js.native
   
+  /**
+    * Basically the same as signatureUrl, if refreshSTSToken is configured asyncSignatureUrl will refresh stsToken
+    */
+  def asyncSignatureUrl(name: String): js.Promise[String] = js.native
+  def asyncSignatureUrl(name: String, options: SignatureUrlOptions): js.Promise[String] = js.native
+  
   def calculatePostSignature(/**
     * policy config object or JSON string
     */

@@ -65,6 +65,8 @@ type IdentityProviderType = _IdentityProviderType | String
 
 type IdleDisconnectTimeoutInMinutes = Double
 
+type KinesisStreamArn = String
+
 type MaxResults = Double
 
 type NetworkSettingsList = js.Array[NetworkSettingsSummary]
@@ -110,6 +112,8 @@ type TagValue = String
 type Timestamp = js.Date
 
 type TrustStoreSummaryList = js.Array[TrustStoreSummary]
+
+type UserAccessLoggingSettingsList = js.Array[UserAccessLoggingSettingsSummary]
 
 type UserSettingsList = js.Array[UserSettingsSummary]
 

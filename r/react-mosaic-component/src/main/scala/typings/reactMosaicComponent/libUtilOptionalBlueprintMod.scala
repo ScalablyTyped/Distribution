@@ -19,7 +19,7 @@ object libUtilOptionalBlueprintMod {
     
     inline def getIconClass(
       blueprintNamespace: String,
-      iconName: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1120, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+      iconName: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1122, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getIconClass")(blueprintNamespace.asInstanceOf[js.Any], iconName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     type BlueprintClass = /* import warning: importer.ImportType#apply Failed type conversion: string extends string ? 'TREE_NODE_LABEL' : never */ js.Any

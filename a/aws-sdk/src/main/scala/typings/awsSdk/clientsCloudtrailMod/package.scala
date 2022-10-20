@@ -28,6 +28,22 @@ type DataResources = js.Array[DataResource]
 
 type Date = js.Date
 
+type DeliveryS3Uri = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.FAILED_SIGNING_FILE
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.RESOURCE_NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.ACCESS_DENIED
+  - typings.awsSdk.awsSdkStrings.ACCESS_DENIED_SIGNING_FILE
+  - typings.awsSdk.awsSdkStrings.CANCELLED
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type DeliveryStatus = _DeliveryStatus | java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EVENT_DATA_STORE
   - typings.awsSdk.awsSdkStrings.AWS_SERVICE

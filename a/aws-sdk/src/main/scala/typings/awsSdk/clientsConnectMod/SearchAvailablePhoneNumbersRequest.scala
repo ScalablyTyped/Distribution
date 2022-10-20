@@ -32,7 +32,7 @@ trait SearchAvailablePhoneNumbersRequest extends StObject {
   var PhoneNumberType: typings.awsSdk.clientsConnectMod.PhoneNumberType
   
   /**
-    * The Amazon Resource Name (ARN) for Amazon Connect instances that phone numbers are claimed to.
+    * The Amazon Resource Name (ARN) for Amazon Connect instances or traffic distribution groups that phone numbers are claimed to.
     */
   var TargetArn: ARN
 }

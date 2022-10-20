@@ -1,6 +1,7 @@
 package typings.reactI18next
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.i18next.mod.DefaultNamespace
 import typings.i18next.mod.ReactOptions
 import typings.i18next.mod.Resource
 import typings.i18next.mod.TFunction
@@ -289,7 +290,7 @@ object mod {
   type Subtract[T /* <: K */, K] = Omit[T, /* keyof K */ String]
   
   /* Inlined parent react.react.HTMLProps<E> */
-  /* Inlined parent std.Partial<i18next.i18next.WithT> */
+  /* Inlined parent std.Partial<i18next.i18next.WithT<i18next.i18next.DefaultNamespace>> */
   trait TransProps[E /* <: Element */] extends StObject {
     
     var default: js.UndefOr[Boolean] = js.undefined
@@ -1016,7 +1017,7 @@ object mod {
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var t: js.UndefOr[TFunction] = js.undefined
+    var t: js.UndefOr[TFunction[DefaultNamespace, Unit]] = js.undefined
     
     // used in React.createElement if not null
     var tOptions: js.UndefOr[js.Object] = js.undefined
@@ -2178,7 +2179,7 @@ object mod {
       
       inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
       
-      inline def setT(value: TFunction): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: TFunction[DefaultNamespace, Unit]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
       inline def setTOptions(value: js.Object): Self = StObject.set(x, "tOptions", value.asInstanceOf[js.Any])
       
@@ -2248,7 +2249,7 @@ object mod {
   
   trait TranslationProps extends StObject {
     
-    def children(t: TFunction, options: Lng, ready: Boolean): ReactNode
+    def children(t: TFunction[DefaultNamespace, Unit], options: Lng, ready: Boolean): ReactNode
     
     var i18n: js.UndefOr[typings.i18next.mod.i18n] = js.undefined
     
@@ -2260,14 +2261,14 @@ object mod {
   }
   object TranslationProps {
     
-    inline def apply(children: (TFunction, Lng, Boolean) => ReactNode): TranslationProps = {
+    inline def apply(children: (TFunction[DefaultNamespace, Unit], Lng, Boolean) => ReactNode): TranslationProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction3(children))
       __obj.asInstanceOf[TranslationProps]
     }
     
     extension [Self <: TranslationProps](x: Self) {
       
-      inline def setChildren(value: (TFunction, Lng, Boolean) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
+      inline def setChildren(value: (TFunction[DefaultNamespace, Unit], Lng, Boolean) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -2332,7 +2333,7 @@ object mod {
     }
   }
   
-  type UseTranslationResponse = (js.Tuple3[TFunction, i18n, Boolean]) & Ready
+  type UseTranslationResponse = (js.Tuple3[TFunction[DefaultNamespace, Unit], i18n, Boolean]) & Ready
   
   trait WithTranslationProps extends StObject {
     
@@ -2361,7 +2362,7 @@ object mod {
   
   trait WithTranslation_
     extends StObject
-       with WithT {
+       with WithT[DefaultNamespace] {
     
     var i18n: typings.i18next.mod.i18n
     
@@ -2369,7 +2370,7 @@ object mod {
   }
   object WithTranslation_ {
     
-    inline def apply(i18n: i18n, t: TFunction, tReady: Boolean): WithTranslation_ = {
+    inline def apply(i18n: i18n, t: TFunction[DefaultNamespace, Unit], tReady: Boolean): WithTranslation_ = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], tReady = tReady.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithTranslation_]
     }

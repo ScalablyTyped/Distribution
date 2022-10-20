@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onfido__active-video-capture"
-version := "0.15.0-c262fd"
+version := "0.16.1-cb4c91"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

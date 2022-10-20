@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-json-stringify
 
-Typings are for version 5.3.0
+Typings are for version 5.4.0
 
 ## Library description:
 Stringify your JSON at max speed

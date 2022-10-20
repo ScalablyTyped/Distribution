@@ -17,7 +17,7 @@ trait ChangeStreamInsertDocument[TSchema /* <: Document */]
   /** This key will contain the document being inserted */
   var fullDocument: TSchema
   
-  /** Namespace the insert event occured on */
+  /** Namespace the insert event occurred on */
   var ns: ChangeStreamNameSpace
   
   /** Describes the type of operation represented in this change notification */

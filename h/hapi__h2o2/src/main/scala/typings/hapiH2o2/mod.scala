@@ -9,6 +9,7 @@ import typings.hapiH2o2.hapiH2o2Strings.https
 import typings.hapiH2o2.hapiH2o2Strings.upstream
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseObject
 import typings.hapiHapi.mod.ResponseToolkit
@@ -43,7 +44,7 @@ object mod extends Shortcut {
       * @param request - is the incoming request object.
       */
     var mapUri: js.UndefOr[
-        js.ThisFunction1[/* this */ this.type, /* request */ Request, js.Promise[ProxyTarget]]
+        js.ThisFunction1[/* this */ this.type, /* request */ Request[ReqRefDefaults], js.Promise[ProxyTarget]]
       ] = js.undefined
     
     /** maxSockets - sets the maximum number of sockets available per outgoing proxy host connection. false means use the wreck module default value (Infinity). Does not affect non-proxy outgoing client connections. Defaults to Infinity. */
@@ -60,14 +61,14 @@ object mod extends Shortcut {
       */
     var onResponse: js.UndefOr[
         js.ThisFunction6[
-          /* this */ RouteOptions, 
+          /* this */ RouteOptions[ReqRefDefaults], 
           /* err */ Null | Boom[Any], 
           /* res */ IncomingMessage, 
-          /* req */ Request, 
-          /* h */ ResponseToolkit, 
+          /* req */ Request[ReqRefDefaults], 
+          /* h */ ResponseToolkit[ReqRefDefaults], 
           /* settings */ this.type, 
           /* ttl */ Double, 
-          ReturnValue
+          ReturnValue[ReqRefDefaults]
         ]
       ] = js.undefined
     
@@ -123,7 +124,9 @@ object mod extends Shortcut {
       
       inline def setLocalStatePassThroughUndefined: Self = StObject.set(x, "localStatePassThrough", js.undefined)
       
-      inline def setMapUri(value: js.ThisFunction1[ProxyHandlerOptions, /* request */ Request, js.Promise[ProxyTarget]]): Self = StObject.set(x, "mapUri", value.asInstanceOf[js.Any])
+      inline def setMapUri(
+        value: js.ThisFunction1[ProxyHandlerOptions, /* request */ Request[ReqRefDefaults], js.Promise[ProxyTarget]]
+      ): Self = StObject.set(x, "mapUri", value.asInstanceOf[js.Any])
       
       inline def setMapUriUndefined: Self = StObject.set(x, "mapUri", js.undefined)
       
@@ -133,14 +136,14 @@ object mod extends Shortcut {
       
       inline def setOnResponse(
         value: js.ThisFunction6[
-              /* this */ RouteOptions, 
+              /* this */ RouteOptions[ReqRefDefaults], 
               /* err */ Null | Boom[Any], 
               /* res */ IncomingMessage, 
-              /* req */ Request, 
-              /* h */ ResponseToolkit, 
+              /* req */ Request[ReqRefDefaults], 
+              /* h */ ResponseToolkit[ReqRefDefaults], 
               ProxyHandlerOptions, 
               /* ttl */ Double, 
-              ReturnValue
+              ReturnValue[ReqRefDefaults]
             ]
       ): Self = StObject.set(x, "onResponse", value.asInstanceOf[js.Any])
       

@@ -163,18 +163,12 @@ object libJsonldJobPostingMod {
     
     var title: String
     
-    var validThrough: String
+    var validThrough: js.UndefOr[String] = js.undefined
   }
   object JobPostingJsonLdProps {
     
-    inline def apply(
-      datePosted: String,
-      description: String,
-      hiringOrganization: HiringOrganization,
-      title: String,
-      validThrough: String
-    ): JobPostingJsonLdProps = {
-      val __obj = js.Dynamic.literal(datePosted = datePosted.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hiringOrganization = hiringOrganization.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], validThrough = validThrough.asInstanceOf[js.Any])
+    inline def apply(datePosted: String, description: String, hiringOrganization: HiringOrganization, title: String): JobPostingJsonLdProps = {
+      val __obj = js.Dynamic.literal(datePosted = datePosted.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hiringOrganization = hiringOrganization.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobPostingJsonLdProps]
     }
     
@@ -219,6 +213,8 @@ object libJsonldJobPostingMod {
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setValidThrough(value: String): Self = StObject.set(x, "validThrough", value.asInstanceOf[js.Any])
+      
+      inline def setValidThroughUndefined: Self = StObject.set(x, "validThrough", js.undefined)
     }
   }
   

@@ -21,6 +21,11 @@ trait DescribeTransformJobResponse extends StObject {
     */
   var CreationTime: js.Date
   
+  /**
+    * Configuration to control how SageMaker captures inference data.
+    */
+  var DataCaptureConfig: js.UndefOr[BatchDataCaptureConfig] = js.undefined
+  
   var DataProcessing: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DataProcessing] = js.undefined
   
   /**
@@ -126,6 +131,10 @@ object DescribeTransformJobResponse {
     inline def setBatchStrategyUndefined: Self = StObject.set(x, "BatchStrategy", js.undefined)
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    
+    inline def setDataCaptureConfig(value: BatchDataCaptureConfig): Self = StObject.set(x, "DataCaptureConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDataCaptureConfigUndefined: Self = StObject.set(x, "DataCaptureConfig", js.undefined)
     
     inline def setDataProcessing(value: DataProcessing): Self = StObject.set(x, "DataProcessing", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,7 @@ open class MongoClient protected () extends TypedEventEmitter[MongoClientEvents]
     * changes to system collections, as well as the local, admin, and config databases.
     *
     * @remarks
-    * watch() accepts two generic arguments for distinct usecases:
+    * watch() accepts two generic arguments for distinct use cases:
     * - The first is to provide the schema that may be defined for all the data within the current cluster
     * - The second is to override the shape of the change stream document entirely, if it is not provided the type will default to ChangeStreamDocument of the first argument
     *

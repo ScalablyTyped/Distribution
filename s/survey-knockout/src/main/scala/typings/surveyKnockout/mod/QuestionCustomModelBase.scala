@@ -51,7 +51,7 @@ open class QuestionCustomModelBase protected ()
   /* InferMemberOverrides */
   override def getDataFilteredValues(): Any = js.native
   
-  /* protected */ def getElement(): SurveyElement = js.native
+  /* protected */ def getElement(): SurveyElement[Any] = js.native
   
   /* InferMemberOverrides */
   override def getLocale(): String = js.native
@@ -80,7 +80,7 @@ open class QuestionCustomModelBase protected ()
   
   def indexOf(el: IElement): Double = js.native
   
-  /* protected */ def initElement(el: SurveyElement): Unit = js.native
+  /* protected */ def initElement(el: Any): Unit = js.native
   
   /* InferMemberOverrides */
   override def locStrsChanged(): Unit & Any = js.native

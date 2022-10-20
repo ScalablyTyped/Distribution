@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__editor"
-version := "11.0-dt-20220407Z-286060"
+version := "11.0-dt-20220407Z-ff22d4"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,12 +15,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20211202Z-14cbf1",
-  "org.scalablytyped" %%% "wordpress__block-editor" % "7.0-dt-20220413Z-64a402",
-  "org.scalablytyped" %%% "wordpress__blocks" % "11.0-dt-20220815Z-848721",
-  "org.scalablytyped" %%% "wordpress__components" % "19.10-dt-20220829Z-28c3e0",
+  "org.scalablytyped" %%% "wordpress__block-editor" % "7.0-dt-20220413Z-6dcb13",
+  "org.scalablytyped" %%% "wordpress__blocks" % "11.0-dt-20220815Z-30dd58",
+  "org.scalablytyped" %%% "wordpress__components" % "19.10-dt-20220829Z-57b1f7",
   "org.scalablytyped" %%% "wordpress__core-data" % "2.4-dt-20211202Z-070964",
-  "org.scalablytyped" %%% "wordpress__element" % "4.17.0-0efe33",
-  "org.scalablytyped" %%% "wordpress__media-utils" % "3.0-dt-20220421Z-a3d102",
+  "org.scalablytyped" %%% "wordpress__element" % "4.18.0-5df682",
+  "org.scalablytyped" %%% "wordpress__media-utils" % "3.0-dt-20220421Z-64ea3a",
   "org.scalablytyped" %%% "wordpress__notices" % "3.5-dt-20220601Z-e92242",
   "org.scalablytyped" %%% "wordpress__rich-text" % "3.4-dt-20211202Z-d87734")
 publishArtifact in packageDoc := false

@@ -58,8 +58,8 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   def choicesStep: Double = js.native
   def choicesStep_=(`val`: Double): Unit = js.native
   
-  def cleanCaption: String = js.native
-  def cleanCaption_=(`val`: String): Unit = js.native
+  def clearCaption: String = js.native
+  def clearCaption_=(`val`: String): Unit = js.native
   
   var dropdownListModel: DropdownListModel = js.native
   
@@ -71,7 +71,7 @@ open class QuestionDropdownModel protected () extends QuestionSelectBase {
   
   var inputHasValue: Boolean = js.native
   
-  def locCleanCaption: LocalizableString = js.native
+  def locClearCaption: LocalizableString = js.native
   
   def locPlaceholder: LocalizableString = js.native
   

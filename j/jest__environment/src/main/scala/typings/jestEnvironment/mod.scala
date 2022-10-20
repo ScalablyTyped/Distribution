@@ -14,12 +14,13 @@ import typings.jestMock.anon.Shallow
 import typings.jestMock.anon.`0`
 import typings.jestMock.mod.ConstructorLikeKeys
 import typings.jestMock.mod.FunctionLike
+import typings.jestMock.mod.MethodLikeKeys
 import typings.jestMock.mod.Mock
+import typings.jestMock.mod.MockInstance
 import typings.jestMock.mod.MockedShallow
 import typings.jestMock.mod.Mocked_
 import typings.jestMock.mod.ModuleMocker
 import typings.jestMock.mod.PropertyLikeKeys
-import typings.jestMock.mod.SpyInstance
 import typings.jestTypes.mod.EventHandler
 import typings.jestTypes.mod.FakeTimersConfig
 import typings.jestTypes.mod.GlobalConfig
@@ -224,11 +225,11 @@ object mod {
     /**
       * Determines if the given function is a mocked function.
       */
-    def isMockFunction[T /* <: FunctionLike */](fn: SpyInstance[T]): /* is jest-mock.jest-mock.SpyInstance<T> */ Boolean = js.native
+    def isMockFunction[T /* <: FunctionLike */](fn: MockInstance[T]): /* is jest-mock.jest-mock.MockInstance<T> */ Boolean = js.native
     /**
       * Determines if the given function is a mocked function.
       */
-    def isMockFunction[P /* <: js.Array[Any] */, R /* <: Any */](fn: js.Function1[/* args */ P, R]): /* is jest-mock.jest-mock.Mock<(args : P): R> */ Boolean = js.native
+    def isMockFunction[P /* <: js.Array[Any] */, R](fn: js.Function1[/* args */ P, R]): /* is jest-mock.jest-mock.Mock<(args : P): R> */ Boolean = js.native
     /**
       * Determines if the given function is a mocked function.
       */
@@ -418,7 +419,19 @@ object mod {
       * By default, `jest.spyOn()` also calls the spied method. This is different
       * behavior from most other test libraries.
       */
-    def spyOn[T /* <: js.Object */, K /* <: ConstructorLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K): /* import warning: importer.ImportType#apply Failed type conversion: V extends jest-mock.jest-mock.ClassLike ? jest-mock.jest-mock.SpyInstance<(args : std.ConstructorParameters<V>): std.InstanceType<V>> : never */ js.Any = js.native
+    def spyOn[T /* <: js.Object */, K /* <: ConstructorLikeKeys[T] | MethodLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K): /* import warning: importer.ImportType#apply Failed type conversion: V extends jest-mock.jest-mock.ClassLike | jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.Spied<V> : never */ js.Any = js.native
+    /**
+      * Creates a mock function similar to `jest.fn()` but also tracks calls to
+      * `object[methodName]`.
+      *
+      * Optional third argument of `accessType` can be either 'get' or 'set', which
+      * proves to be useful when you want to spy on a getter or a setter, respectively.
+      *
+      * @remarks
+      * By default, `jest.spyOn()` also calls the spied method. This is different
+      * behavior from most other test libraries.
+      */
+    def spyOn[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */, A /* <: get | set */](`object`: T, methodKey: K, accessType: A): /* import warning: importer.ImportType#apply Failed type conversion: A extends 'get' ? jest-mock.jest-mock.SpiedGetter<V> : A extends 'set' ? jest-mock.jest-mock.SpiedSetter<V> : never */ js.Any = js.native
     /**
       * Creates a mock function similar to `jest.fn()` but also tracks calls to
       * `object[methodName]`.
@@ -432,32 +445,6 @@ object mod {
       */
     @JSName("spyOn")
     var spyOn_Original: FnCallObjectMethodKeyAccessType = js.native
-    /**
-      * Creates a mock function similar to `jest.fn()` but also tracks calls to
-      * `object[methodName]`.
-      *
-      * Optional third argument of `accessType` can be either 'get' or 'set', which
-      * proves to be useful when you want to spy on a getter or a setter, respectively.
-      *
-      * @remarks
-      * By default, `jest.spyOn()` also calls the spied method. This is different
-      * behavior from most other test libraries.
-      */
-    @JSName("spyOn")
-    def spyOn_get[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K, accessType: get): SpyInstance[js.Function0[V]] = js.native
-    /**
-      * Creates a mock function similar to `jest.fn()` but also tracks calls to
-      * `object[methodName]`.
-      *
-      * Optional third argument of `accessType` can be either 'get' or 'set', which
-      * proves to be useful when you want to spy on a getter or a setter, respectively.
-      *
-      * @remarks
-      * By default, `jest.spyOn()` also calls the spied method. This is different
-      * behavior from most other test libraries.
-      */
-    @JSName("spyOn")
-    def spyOn_set[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T>[K] */ js.Any */](`object`: T, methodKey: K, accessType: set): SpyInstance[js.Function1[/* arg */ V, Unit]] = js.native
     
     /**
       * Indicates that the module system should never return a mocked version of

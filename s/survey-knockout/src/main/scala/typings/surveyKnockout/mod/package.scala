@@ -201,12 +201,12 @@ inline def registerTemplateEngine_=(x: js.Function2[/* ko */ Any, /* platform */
 
 inline def sanitizeEditableContent(element: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeEditableContent")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def showDialog(dialogOptions: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")(dialogOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def showDialog(dialogOptions: Any): PopupBaseViewModel = ^.asInstanceOf[js.Dynamic].applyDynamic("showDialog")(dialogOptions.asInstanceOf[js.Any]).asInstanceOf[PopupBaseViewModel]
 
-inline def showModal(componentName: String, data: Any, onApply: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any, cssClass: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any, cssClass: String, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def showModal(componentName: String, data: Any, onApply: Any): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any, cssClass: String): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any, cssClass: String, title: String): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -215,7 +215,7 @@ inline def showModal(
   cssClass: String,
   title: String,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -224,8 +224,8 @@ inline def showModal(
   cssClass: String,
   title: Unit,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any, cssClass: Unit, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Any, cssClass: Unit, title: String): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -234,7 +234,7 @@ inline def showModal(
   cssClass: Unit,
   title: String,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -243,9 +243,9 @@ inline def showModal(
   cssClass: Unit,
   title: Unit,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Unit, cssClass: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Unit, cssClass: String, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Unit, cssClass: String): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Unit, cssClass: String, title: String): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -254,7 +254,7 @@ inline def showModal(
   cssClass: String,
   title: String,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -263,8 +263,8 @@ inline def showModal(
   cssClass: String,
   title: Unit,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Unit, cssClass: Unit, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
+inline def showModal(componentName: String, data: Any, onApply: Any, onCancel: Unit, cssClass: Unit, title: String): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -273,7 +273,7 @@ inline def showModal(
   cssClass: Unit,
   title: String,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 inline def showModal(
   componentName: String,
   data: Any,
@@ -282,7 +282,7 @@ inline def showModal(
   cssClass: Unit,
   title: Unit,
   displayMode: popup | overlay
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): PopupBaseViewModel = (^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(componentName.asInstanceOf[js.Any], data.asInstanceOf[js.Any], onApply.asInstanceOf[js.Any], onCancel.asInstanceOf[js.Any], cssClass.asInstanceOf[js.Any], title.asInstanceOf[js.Any], displayMode.asInstanceOf[js.Any])).asInstanceOf[PopupBaseViewModel]
 
 inline def surveyBuiltInVarible: String = ^.asInstanceOf[js.Dynamic].selectDynamic("surveyBuiltInVarible").asInstanceOf[String]
 inline def surveyBuiltInVarible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("surveyBuiltInVarible")(x.asInstanceOf[js.Any])

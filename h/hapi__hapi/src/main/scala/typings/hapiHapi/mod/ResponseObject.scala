@@ -14,7 +14,6 @@ import typings.hapiHapi.hapiHapiStrings.utf16le
 import typings.hapiHapi.hapiHapiStrings.utf8
 import typings.hapiHapi.mod.Json.StringifyReplacer
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
-import typings.hapiHapi.mod.Lifecycle._ReturnValueTypes
 import typings.hapiHapi.mod.Util.Dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium * / any */ @js.native
-trait ResponseObject
-  extends StObject
-     with _ReturnValueTypes {
+trait ResponseObject extends StObject {
   
   /**
     * @default {}.
@@ -43,7 +40,7 @@ trait ResponseObject
   
   /**
     * Controls the 'Content-Type' HTTP header 'charset' property of the response.
-    *  * When invoked without any parameter, will prevent hapijs from applying its default charset normalization to 'utf-8'
+    *  * When invoked without any parameter, will prevent hapi from applying its default charset normalization to 'utf-8'
     *  * When 'charset' parameter is provided, will set the 'Content-Type' HTTP header 'charset' property where:
     * @param charset - the charset property value.
     * @return Return value: the current response object.
@@ -198,7 +195,7 @@ trait ResponseObject
     * The raw value returned by the lifecycle method.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsesource)
     */
-  val source: ReturnValue = js.native
+  val source: ReturnValue[ReqRefDefaults] = js.native
   
   /**
     * Sets the JSON.stringify() space argument where:

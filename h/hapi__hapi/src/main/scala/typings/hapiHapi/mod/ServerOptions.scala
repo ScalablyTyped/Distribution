@@ -157,7 +157,7 @@ trait ServerOptions extends StObject {
     * @default none.
     * A route options object used as the default configuration for every route.
     */
-  var routes: js.UndefOr[RouteOptions] = js.undefined
+  var routes: js.UndefOr[RouteOptions[ReqRefDefaults]] = js.undefined
   
   /**
     * Default value:
@@ -270,7 +270,7 @@ object ServerOptions {
     
     inline def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
-    inline def setRoutes(value: RouteOptions): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: RouteOptions[ReqRefDefaults]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     

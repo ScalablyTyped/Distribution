@@ -1,7 +1,7 @@
 
 # Scala.js typings for bull
 
-Typings are for version 3.15
+Typings are for version 4.10.1
 
 ## Library description:
 Job manager
@@ -24,7 +24,7 @@ Job manager
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-snapshot
 
-Typings are for version 29.2.0
+Typings are for version 29.2.1
 
 
 

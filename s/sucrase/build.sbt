@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sucrase"
-version := "3.27.0-665d47"
+version := "3.28.0-5a559d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

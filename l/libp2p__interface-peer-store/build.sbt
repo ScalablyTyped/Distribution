@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "libp2p__interface-peer-store"
-version := "1.2.2-a965be"
+version := "1.2.2-f945f2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-7e747b",
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-122bf3",
-  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-c3d12b",
+  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-02997f",
   "org.scalablytyped" %%% "libp2p__interface-record" % "2.0.1-89b530",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-cbc19e",
   "org.scalablytyped" %%% "multiformats" % "10.0.0-e339c8",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-c9fad1",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-bb0c13",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-45b6fe")
 publishArtifact in packageDoc := false

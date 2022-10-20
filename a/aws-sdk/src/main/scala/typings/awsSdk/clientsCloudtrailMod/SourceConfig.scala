@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceConfig extends StObject {
   
   /**
-    *  The advanced event selectors configured for the service-linked channel. 
+    *  The advanced event selectors that are configured for the channel.
     */
   var AdvancedEventSelectors: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.AdvancedEventSelectors] = js.undefined
   
   /**
-    *  Specifies whether the service-linked channel applies to one region or all regions. 
+    *  Specifies whether the channel applies to a single region or to all regions.
     */
   var ApplyToAllRegions: js.UndefOr[Boolean] = js.undefined
 }

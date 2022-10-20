@@ -9,16 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mongodbStrings.ResetPool
   - typings.mongodb.mongodbStrings.ResumableChangeStreamError
   - typings.mongodb.mongodbStrings.RetryableWriteError
+  - typings.mongodb.mongodbStrings.NoWritesPerformed
   - typings.mongodb.mongodbStrings.UnknownTransactionCommitResult
   - typings.mongodb.mongodbStrings.HandshakeError
 */
 trait MongoErrorLabel extends StObject
-/* Inlined std.Readonly<{ readonly RetryableWriteError :'RetryableWriteError',  readonly TransientTransactionError :'TransientTransactionError',  readonly UnknownTransactionCommitResult :'UnknownTransactionCommitResult',  readonly ResumableChangeStreamError :'ResumableChangeStreamError',  readonly HandshakeError :'HandshakeError',  readonly ResetPool :'ResetPool'}> */
+/* Inlined std.Readonly<{ readonly RetryableWriteError :'RetryableWriteError',  readonly TransientTransactionError :'TransientTransactionError',  readonly UnknownTransactionCommitResult :'UnknownTransactionCommitResult',  readonly ResumableChangeStreamError :'ResumableChangeStreamError',  readonly HandshakeError :'HandshakeError',  readonly ResetPool :'ResetPool',  readonly NoWritesPerformed :'NoWritesPerformed'}> */
 object MongoErrorLabel {
   
   @JSImport("mongodb", "MongoErrorLabel.HandshakeError")
   @js.native
   val HandshakeError: typings.mongodb.mongodbStrings.HandshakeError = js.native
+  
+  @JSImport("mongodb", "MongoErrorLabel.NoWritesPerformed")
+  @js.native
+  val NoWritesPerformed: typings.mongodb.mongodbStrings.NoWritesPerformed = js.native
   
   @JSImport("mongodb", "MongoErrorLabel.ResetPool")
   @js.native

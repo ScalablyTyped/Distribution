@@ -1,12 +1,12 @@
 package typings.ngPackagr.anon
 
 import typings.angularCompilerCli.mod.NgtscProgram
-import typings.angularCompilerCli.transformersApiMod.Program
-import typings.ngPackagr.fileCacheMod.FileCache
+import typings.angularCompilerCli.srcTransformersApiMod.Program
+import typings.ngPackagr.libFileSystemFileCacheMod.FileCache
+import typings.ngPackagr.libNgPackageNgccCacheMod.NgccProcessingCache
+import typings.ngPackagr.libNgPackageNodesMod.OutputFileCache
+import typings.ngPackagr.libStylesStylesheetProcessorMod.StylesheetProcessor
 import typings.ngPackagr.ngPackagrStrings.analysis
-import typings.ngPackagr.ngccCacheMod.NgccProcessingCache
-import typings.ngPackagr.nodesMod.OutputFileCache
-import typings.ngPackagr.stylesheetProcessorMod.StylesheetProcessor
 import typings.rollup.mod.RollupCache
 import typings.std.Record
 import typings.typescript.mod.EmitAndSemanticDiagnosticsBuilderProgram

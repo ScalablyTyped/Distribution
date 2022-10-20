@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutKMSEncryptionKeyRequest extends StObject {
   
   /**
-    * The KMS encryption key ARN.
+    * The KMS encryption key ARN. The KMS key must be single-Region key. Amazon Fraud Detector does not support multi-Region KMS key.
     */
   var kmsEncryptionKeyArn: KmsEncryptionKeyArn
 }

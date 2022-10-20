@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "commitlint__config-validator"
-version := "17.1.0-241151"
+version := "17.1.0-e41d5c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-6f26a9",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-cccf4d",
   "org.scalablytyped" %%% "commitlint__types" % "17.0.0-20edff",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221015Z-0a42ca",
-  "org.scalablytyped" %%% "re2" % "1.17.7-e9900d",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "re2" % "1.17.7-fadabd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-d613cd")
 publishArtifact in packageDoc := false

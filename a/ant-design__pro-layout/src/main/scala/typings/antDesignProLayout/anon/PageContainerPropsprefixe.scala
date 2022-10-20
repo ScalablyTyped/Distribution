@@ -26,7 +26,7 @@ trait PageContainerPropsprefixe extends StObject {
   /**
     * 与 antd 完全相同
     *
-    * @name 固钉的配置
+    * @name affixProps 固钉的配置
     */
   var affixProps: js.UndefOr[OmitAffixPropschildren] = js.undefined
   
@@ -34,10 +34,13 @@ trait PageContainerPropsprefixe extends StObject {
   
   var backIcon: js.UndefOr[ReactNode] = js.undefined
   
-  /** @name 配置面包屑 */
+  /** @name BreadcrumbProps 配置面包屑 */
   var breadcrumb: js.UndefOr[BreadcrumbProps] = js.undefined
   
-  /** 自定义 breadcrumb,返回false不展示 */
+  /**
+    * 自定义 breadcrumb,
+    * @name breadcrumbRender 返回false不展示
+    */
   var breadcrumbRender: js.UndefOr[
     (js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]) | `false`
   ] = js.undefined
@@ -54,11 +57,11 @@ trait PageContainerPropsprefixe extends StObject {
   
   /**
     * @deprecated 请使用 fixedHeader
-    * @name 固定 PageHeader 到页面顶部
+    * @name fixHeader 固定 PageHeader 到页面顶部
     */
   var fixHeader: js.UndefOr[Boolean] = js.undefined
   
-  /** @name 固定 PageHeader 到页面顶部 */
+  /** @name fixedHeader 固定 PageHeader 到页面顶部 */
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
   
   var footer: js.UndefOr[js.Array[ReactNode]] = js.undefined
@@ -75,7 +78,7 @@ trait PageContainerPropsprefixe extends StObject {
   /**
     * 只加载内容区域
     *
-    * @name 是否加载
+    * @name loading 是否加载
     */
   var loading: js.UndefOr[Boolean | SpinProps | ReactNode] = js.undefined
   
@@ -86,7 +89,7 @@ trait PageContainerPropsprefixe extends StObject {
   /** @name tab 修改时触发 */
   var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
   
-  /** @name 自定义 pageHeader */
+  /** @name pageHeaderRender 自定义 pageHeader */
   var pageHeaderRender: js.UndefOr[WithFalse[js.Function1[/* props */ PageContainerProps, ReactNode]]] = js.undefined
   
   var prefixCls: js.UndefOr[String] = js.undefined
@@ -97,14 +100,14 @@ trait PageContainerPropsprefixe extends StObject {
   
   var subTitle: js.UndefOr[ReactNode] = js.undefined
   
-  /** @name 当前选中 tab 的 key */
+  /** @name tabActiveKey 当前选中 tab 的 key */
   var tabActiveKey: js.UndefOr[String] = js.undefined
   
   /** @name tab 上额外的区域 */
   var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.undefined
   
   /** @name tabs 的列表 */
-  var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.undefined
+  var tabList: js.UndefOr[js.Array[TabPanePropskeyKeyundefin]] = js.undefined
   
   /** @name tabs 的其他配置 */
   var tabProps: js.UndefOr[TabsProps] = js.undefined
@@ -114,11 +117,11 @@ trait PageContainerPropsprefixe extends StObject {
   var title: js.UndefOr[ReactNode | `false`] = js.undefined
   
   /**
-    * 自定义的 token
+    * @name token 自定义的 token
     */
   var token: js.UndefOr[pageContainerToken] = js.undefined
   
-  /** @name 水印的配置 */
+  /** @name WaterMarkProps 水印的配置 */
   var waterMarkProps: js.UndefOr[WaterMarkProps] = js.undefined
 }
 object PageContainerPropsprefixe {
@@ -234,11 +237,11 @@ object PageContainerPropsprefixe {
     
     inline def setTabBarExtraContentUndefined: Self = StObject.set(x, "tabBarExtraContent", js.undefined)
     
-    inline def setTabList(value: js.Array[TabPanePropskeyReactTextu]): Self = StObject.set(x, "tabList", value.asInstanceOf[js.Any])
+    inline def setTabList(value: js.Array[TabPanePropskeyKeyundefin]): Self = StObject.set(x, "tabList", value.asInstanceOf[js.Any])
     
     inline def setTabListUndefined: Self = StObject.set(x, "tabList", js.undefined)
     
-    inline def setTabListVarargs(value: TabPanePropskeyReactTextu*): Self = StObject.set(x, "tabList", js.Array(value*))
+    inline def setTabListVarargs(value: TabPanePropskeyKeyundefin*): Self = StObject.set(x, "tabList", js.Array(value*))
     
     inline def setTabProps(value: TabsProps): Self = StObject.set(x, "tabProps", value.asInstanceOf[js.Any])
     

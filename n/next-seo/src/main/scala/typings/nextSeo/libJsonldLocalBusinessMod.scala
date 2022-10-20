@@ -24,7 +24,9 @@ object libJsonldLocalBusinessMod {
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any
       ] = js.undefined
     
-    var address: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+    var address: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any) | (js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+      ])
     
     var areaServed: js.UndefOr[
         js.Array[
@@ -82,7 +84,9 @@ object libJsonldLocalBusinessMod {
   object LocalBusinessJsonLdProps {
     
     inline def apply(
-      address: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any,
+      address: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any) | (js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+        ]),
       description: String,
       id: String,
       name: String,
@@ -102,8 +106,14 @@ object libJsonldLocalBusinessMod {
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
       inline def setAddress(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any) | (js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any
+            ])
       ): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      
+      inline def setAddressVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Address */ Any)*
+      ): Self = StObject.set(x, "address", js.Array(value*))
       
       inline def setAreaServed(
         value: js.Array[

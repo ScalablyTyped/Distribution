@@ -8,4 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionNodeCtor
   extends StObject
-     with Instantiable2[(/* fn */ MathNode) | (/* fn */ String), /* args */ js.Array[MathNode], FunctionNode]
+     with Instantiable2[(/* fn */ MathNode) | (/* fn */ String), /* args */ js.Array[MathNode], FunctionNode] {
+  
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  def onUndefinedFunction(name: String): Any = js.native
+}

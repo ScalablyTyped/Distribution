@@ -1,5 +1,6 @@
 package typings.hapiJwt.mod.hapiJwt
 
+import typings.hapiHapi.mod.ReqRefDefaults
 import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
 import typings.hapiJwt.hapiJwtBooleans.`false`
@@ -34,8 +35,8 @@ trait Options extends StObject {
     */
   var validate: (js.Function3[
     /* artifacts */ Artifacts, 
-    /* request */ Request, 
-    /* h */ ResponseToolkit, 
+    /* request */ Request[ReqRefDefaults], 
+    /* h */ ResponseToolkit[ReqRefDefaults], 
     js.Promise[ValidationResult] | scala.Nothing
   ]) | `false`
   
@@ -50,8 +51,8 @@ object Options {
     keys: String | (js.Array[Key | NoAlgorithm | String]) | Buffer | Key | (js.Function1[/* param */ Any, String]),
     validate: (js.Function3[
       /* artifacts */ Artifacts, 
-      /* request */ Request, 
-      /* h */ ResponseToolkit, 
+      /* request */ Request[ReqRefDefaults], 
+      /* h */ ResponseToolkit[ReqRefDefaults], 
       js.Promise[ValidationResult] | scala.Nothing
     ]) | `false`,
     verify: VerifyKeyOptions | `false`
@@ -81,14 +82,14 @@ object Options {
     inline def setValidate(
       value: (js.Function3[
           /* artifacts */ Artifacts, 
-          /* request */ Request, 
-          /* h */ ResponseToolkit, 
+          /* request */ Request[ReqRefDefaults], 
+          /* h */ ResponseToolkit[ReqRefDefaults], 
           js.Promise[ValidationResult] | scala.Nothing
         ]) | `false`
     ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     inline def setValidateFunction3(
-      value: (/* artifacts */ Artifacts, /* request */ Request, /* h */ ResponseToolkit) => js.Promise[ValidationResult] | scala.Nothing
+      value: (/* artifacts */ Artifacts, /* request */ Request[ReqRefDefaults], /* h */ ResponseToolkit[ReqRefDefaults]) => js.Promise[ValidationResult] | scala.Nothing
     ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     
     inline def setVerify(value: VerifyKeyOptions | `false`): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
