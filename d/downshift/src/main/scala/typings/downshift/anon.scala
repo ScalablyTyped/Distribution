@@ -23,12 +23,15 @@ import typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSetInputValue
 import typings.downshift.mod.UseComboboxStateChangeTypes.FunctionToggleMenu
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputBlur
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputChange
+import typings.downshift.mod.UseComboboxStateChangeTypes.InputFocus
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowDown
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowUp
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEnd
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEnter
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEscape
 import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownHome
+import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownPageDown
+import typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownPageUp
 import typings.downshift.mod.UseComboboxStateChangeTypes.ItemClick
 import typings.downshift.mod.UseComboboxStateChangeTypes.ItemMouseMove
 import typings.downshift.mod.UseComboboxStateChangeTypes.MenuMouseLeave
@@ -44,18 +47,17 @@ import typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKe
 import typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownDelete
 import typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownNavigationNext
 import typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownNavigationPrevious
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuBlur
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowDown
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowUp
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownCharacter
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnd
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnter
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEscape
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome
-import typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonBlur
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEnd
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEnter
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEscape
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownHome
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownPageDown
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownPageUp
+import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownSpaceButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -173,6 +175,8 @@ object anon {
     
     var InputChange: typings.downshift.mod.UseComboboxStateChangeTypes.InputChange
     
+    var InputFocus: typings.downshift.mod.UseComboboxStateChangeTypes.InputFocus
+    
     var InputKeyDownArrowDown: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowDown
     
     var InputKeyDownArrowUp: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowUp
@@ -184,6 +188,10 @@ object anon {
     var InputKeyDownEscape: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEscape
     
     var InputKeyDownHome: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownHome
+    
+    var InputKeyDownPageDown: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownPageDown
+    
+    var InputKeyDownPageUp: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownPageUp
     
     var ItemClick: typings.downshift.mod.UseComboboxStateChangeTypes.ItemClick
     
@@ -206,18 +214,21 @@ object anon {
       FunctionToggleMenu: FunctionToggleMenu,
       InputBlur: InputBlur,
       InputChange: InputChange,
+      InputFocus: InputFocus,
       InputKeyDownArrowDown: InputKeyDownArrowDown,
       InputKeyDownArrowUp: InputKeyDownArrowUp,
       InputKeyDownEnd: InputKeyDownEnd,
       InputKeyDownEnter: InputKeyDownEnter,
       InputKeyDownEscape: InputKeyDownEscape,
       InputKeyDownHome: InputKeyDownHome,
+      InputKeyDownPageDown: InputKeyDownPageDown,
+      InputKeyDownPageUp: InputKeyDownPageUp,
       ItemClick: ItemClick,
       ItemMouseMove: ItemMouseMove,
       MenuMouseLeave: MenuMouseLeave,
       ToggleButtonClick: ToggleButtonClick
     ): ControlledPropUpdatedSelectedItem = {
-      val __obj = js.Dynamic.literal(ControlledPropUpdatedSelectedItem = ControlledPropUpdatedSelectedItem.asInstanceOf[js.Any], FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], InputBlur = InputBlur.asInstanceOf[js.Any], InputChange = InputChange.asInstanceOf[js.Any], InputKeyDownArrowDown = InputKeyDownArrowDown.asInstanceOf[js.Any], InputKeyDownArrowUp = InputKeyDownArrowUp.asInstanceOf[js.Any], InputKeyDownEnd = InputKeyDownEnd.asInstanceOf[js.Any], InputKeyDownEnter = InputKeyDownEnter.asInstanceOf[js.Any], InputKeyDownEscape = InputKeyDownEscape.asInstanceOf[js.Any], InputKeyDownHome = InputKeyDownHome.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonClick = ToggleButtonClick.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ControlledPropUpdatedSelectedItem = ControlledPropUpdatedSelectedItem.asInstanceOf[js.Any], FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], InputBlur = InputBlur.asInstanceOf[js.Any], InputChange = InputChange.asInstanceOf[js.Any], InputFocus = InputFocus.asInstanceOf[js.Any], InputKeyDownArrowDown = InputKeyDownArrowDown.asInstanceOf[js.Any], InputKeyDownArrowUp = InputKeyDownArrowUp.asInstanceOf[js.Any], InputKeyDownEnd = InputKeyDownEnd.asInstanceOf[js.Any], InputKeyDownEnter = InputKeyDownEnter.asInstanceOf[js.Any], InputKeyDownEscape = InputKeyDownEscape.asInstanceOf[js.Any], InputKeyDownHome = InputKeyDownHome.asInstanceOf[js.Any], InputKeyDownPageDown = InputKeyDownPageDown.asInstanceOf[js.Any], InputKeyDownPageUp = InputKeyDownPageUp.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonClick = ToggleButtonClick.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlledPropUpdatedSelectedItem]
     }
     
@@ -243,6 +254,8 @@ object anon {
       
       inline def setInputChange(value: InputChange): Self = StObject.set(x, "InputChange", value.asInstanceOf[js.Any])
       
+      inline def setInputFocus(value: InputFocus): Self = StObject.set(x, "InputFocus", value.asInstanceOf[js.Any])
+      
       inline def setInputKeyDownArrowDown(value: InputKeyDownArrowDown): Self = StObject.set(x, "InputKeyDownArrowDown", value.asInstanceOf[js.Any])
       
       inline def setInputKeyDownArrowUp(value: InputKeyDownArrowUp): Self = StObject.set(x, "InputKeyDownArrowUp", value.asInstanceOf[js.Any])
@@ -254,6 +267,10 @@ object anon {
       inline def setInputKeyDownEscape(value: InputKeyDownEscape): Self = StObject.set(x, "InputKeyDownEscape", value.asInstanceOf[js.Any])
       
       inline def setInputKeyDownHome(value: InputKeyDownHome): Self = StObject.set(x, "InputKeyDownHome", value.asInstanceOf[js.Any])
+      
+      inline def setInputKeyDownPageDown(value: InputKeyDownPageDown): Self = StObject.set(x, "InputKeyDownPageDown", value.asInstanceOf[js.Any])
+      
+      inline def setInputKeyDownPageUp(value: InputKeyDownPageUp): Self = StObject.set(x, "InputKeyDownPageUp", value.asInstanceOf[js.Any])
       
       inline def setItemClick(value: ItemClick): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
       
@@ -364,25 +381,9 @@ object anon {
     
     var ItemMouseMove: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove
     
-    var MenuBlur: typings.downshift.mod.UseSelectStateChangeTypes.MenuBlur
-    
-    var MenuKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowDown
-    
-    var MenuKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowUp
-    
-    var MenuKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownCharacter
-    
-    var MenuKeyDownEnd: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnd
-    
-    var MenuKeyDownEnter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnter
-    
-    var MenuKeyDownEscape: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEscape
-    
-    var MenuKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome
-    
-    var MenuKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton
-    
     var MenuMouseLeave: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave
+    
+    var ToggleButtonBlur: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonBlur
     
     var ToggleButtonClick: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick
     
@@ -391,6 +392,20 @@ object anon {
     var ToggleButtonKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
     
     var ToggleButtonKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter
+    
+    var ToggleButtonKeyDownEnd: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEnd
+    
+    var ToggleButtonKeyDownEnter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEnter
+    
+    var ToggleButtonKeyDownEscape: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEscape
+    
+    var ToggleButtonKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownHome
+    
+    var ToggleButtonKeyDownPageDown: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownPageDown
+    
+    var ToggleButtonKeyDownPageUp: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownPageUp
+    
+    var ToggleButtonKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownSpaceButton
   }
   object FunctionCloseMenu {
     
@@ -404,22 +419,21 @@ object anon {
       FunctionToggleMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionToggleMenu,
       ItemClick: typings.downshift.mod.UseSelectStateChangeTypes.ItemClick,
       ItemMouseMove: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove,
-      MenuBlur: MenuBlur,
-      MenuKeyDownArrowDown: MenuKeyDownArrowDown,
-      MenuKeyDownArrowUp: MenuKeyDownArrowUp,
-      MenuKeyDownCharacter: MenuKeyDownCharacter,
-      MenuKeyDownEnd: MenuKeyDownEnd,
-      MenuKeyDownEnter: MenuKeyDownEnter,
-      MenuKeyDownEscape: MenuKeyDownEscape,
-      MenuKeyDownHome: MenuKeyDownHome,
-      MenuKeyDownSpaceButton: MenuKeyDownSpaceButton,
       MenuMouseLeave: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave,
+      ToggleButtonBlur: ToggleButtonBlur,
       ToggleButtonClick: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick,
       ToggleButtonKeyDownArrowDown: ToggleButtonKeyDownArrowDown,
       ToggleButtonKeyDownArrowUp: ToggleButtonKeyDownArrowUp,
-      ToggleButtonKeyDownCharacter: ToggleButtonKeyDownCharacter
+      ToggleButtonKeyDownCharacter: ToggleButtonKeyDownCharacter,
+      ToggleButtonKeyDownEnd: ToggleButtonKeyDownEnd,
+      ToggleButtonKeyDownEnter: ToggleButtonKeyDownEnter,
+      ToggleButtonKeyDownEscape: ToggleButtonKeyDownEscape,
+      ToggleButtonKeyDownHome: ToggleButtonKeyDownHome,
+      ToggleButtonKeyDownPageDown: ToggleButtonKeyDownPageDown,
+      ToggleButtonKeyDownPageUp: ToggleButtonKeyDownPageUp,
+      ToggleButtonKeyDownSpaceButton: ToggleButtonKeyDownSpaceButton
     ): FunctionCloseMenu = {
-      val __obj = js.Dynamic.literal(FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuBlur = MenuBlur.asInstanceOf[js.Any], MenuKeyDownArrowDown = MenuKeyDownArrowDown.asInstanceOf[js.Any], MenuKeyDownArrowUp = MenuKeyDownArrowUp.asInstanceOf[js.Any], MenuKeyDownCharacter = MenuKeyDownCharacter.asInstanceOf[js.Any], MenuKeyDownEnd = MenuKeyDownEnd.asInstanceOf[js.Any], MenuKeyDownEnter = MenuKeyDownEnter.asInstanceOf[js.Any], MenuKeyDownEscape = MenuKeyDownEscape.asInstanceOf[js.Any], MenuKeyDownHome = MenuKeyDownHome.asInstanceOf[js.Any], MenuKeyDownSpaceButton = MenuKeyDownSpaceButton.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonClick = ToggleButtonClick.asInstanceOf[js.Any], ToggleButtonKeyDownArrowDown = ToggleButtonKeyDownArrowDown.asInstanceOf[js.Any], ToggleButtonKeyDownArrowUp = ToggleButtonKeyDownArrowUp.asInstanceOf[js.Any], ToggleButtonKeyDownCharacter = ToggleButtonKeyDownCharacter.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(FunctionCloseMenu = FunctionCloseMenu.asInstanceOf[js.Any], FunctionOpenMenu = FunctionOpenMenu.asInstanceOf[js.Any], FunctionReset = FunctionReset.asInstanceOf[js.Any], FunctionSelectItem = FunctionSelectItem.asInstanceOf[js.Any], FunctionSetHighlightedIndex = FunctionSetHighlightedIndex.asInstanceOf[js.Any], FunctionSetInputValue = FunctionSetInputValue.asInstanceOf[js.Any], FunctionToggleMenu = FunctionToggleMenu.asInstanceOf[js.Any], ItemClick = ItemClick.asInstanceOf[js.Any], ItemMouseMove = ItemMouseMove.asInstanceOf[js.Any], MenuMouseLeave = MenuMouseLeave.asInstanceOf[js.Any], ToggleButtonBlur = ToggleButtonBlur.asInstanceOf[js.Any], ToggleButtonClick = ToggleButtonClick.asInstanceOf[js.Any], ToggleButtonKeyDownArrowDown = ToggleButtonKeyDownArrowDown.asInstanceOf[js.Any], ToggleButtonKeyDownArrowUp = ToggleButtonKeyDownArrowUp.asInstanceOf[js.Any], ToggleButtonKeyDownCharacter = ToggleButtonKeyDownCharacter.asInstanceOf[js.Any], ToggleButtonKeyDownEnd = ToggleButtonKeyDownEnd.asInstanceOf[js.Any], ToggleButtonKeyDownEnter = ToggleButtonKeyDownEnter.asInstanceOf[js.Any], ToggleButtonKeyDownEscape = ToggleButtonKeyDownEscape.asInstanceOf[js.Any], ToggleButtonKeyDownHome = ToggleButtonKeyDownHome.asInstanceOf[js.Any], ToggleButtonKeyDownPageDown = ToggleButtonKeyDownPageDown.asInstanceOf[js.Any], ToggleButtonKeyDownPageUp = ToggleButtonKeyDownPageUp.asInstanceOf[js.Any], ToggleButtonKeyDownSpaceButton = ToggleButtonKeyDownSpaceButton.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionCloseMenu]
     }
     
@@ -443,25 +457,9 @@ object anon {
       
       inline def setItemMouseMove(value: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove): Self = StObject.set(x, "ItemMouseMove", value.asInstanceOf[js.Any])
       
-      inline def setMenuBlur(value: MenuBlur): Self = StObject.set(x, "MenuBlur", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownArrowDown(value: MenuKeyDownArrowDown): Self = StObject.set(x, "MenuKeyDownArrowDown", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownArrowUp(value: MenuKeyDownArrowUp): Self = StObject.set(x, "MenuKeyDownArrowUp", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownCharacter(value: MenuKeyDownCharacter): Self = StObject.set(x, "MenuKeyDownCharacter", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownEnd(value: MenuKeyDownEnd): Self = StObject.set(x, "MenuKeyDownEnd", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownEnter(value: MenuKeyDownEnter): Self = StObject.set(x, "MenuKeyDownEnter", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownEscape(value: MenuKeyDownEscape): Self = StObject.set(x, "MenuKeyDownEscape", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownHome(value: MenuKeyDownHome): Self = StObject.set(x, "MenuKeyDownHome", value.asInstanceOf[js.Any])
-      
-      inline def setMenuKeyDownSpaceButton(value: MenuKeyDownSpaceButton): Self = StObject.set(x, "MenuKeyDownSpaceButton", value.asInstanceOf[js.Any])
-      
       inline def setMenuMouseLeave(value: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave): Self = StObject.set(x, "MenuMouseLeave", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonBlur(value: ToggleButtonBlur): Self = StObject.set(x, "ToggleButtonBlur", value.asInstanceOf[js.Any])
       
       inline def setToggleButtonClick(value: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick): Self = StObject.set(x, "ToggleButtonClick", value.asInstanceOf[js.Any])
       
@@ -470,6 +468,20 @@ object anon {
       inline def setToggleButtonKeyDownArrowUp(value: ToggleButtonKeyDownArrowUp): Self = StObject.set(x, "ToggleButtonKeyDownArrowUp", value.asInstanceOf[js.Any])
       
       inline def setToggleButtonKeyDownCharacter(value: ToggleButtonKeyDownCharacter): Self = StObject.set(x, "ToggleButtonKeyDownCharacter", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownEnd(value: ToggleButtonKeyDownEnd): Self = StObject.set(x, "ToggleButtonKeyDownEnd", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownEnter(value: ToggleButtonKeyDownEnter): Self = StObject.set(x, "ToggleButtonKeyDownEnter", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownEscape(value: ToggleButtonKeyDownEscape): Self = StObject.set(x, "ToggleButtonKeyDownEscape", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownHome(value: ToggleButtonKeyDownHome): Self = StObject.set(x, "ToggleButtonKeyDownHome", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownPageDown(value: ToggleButtonKeyDownPageDown): Self = StObject.set(x, "ToggleButtonKeyDownPageDown", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownPageUp(value: ToggleButtonKeyDownPageUp): Self = StObject.set(x, "ToggleButtonKeyDownPageUp", value.asInstanceOf[js.Any])
+      
+      inline def setToggleButtonKeyDownSpaceButton(value: ToggleButtonKeyDownSpaceButton): Self = StObject.set(x, "ToggleButtonKeyDownSpaceButton", value.asInstanceOf[js.Any])
     }
   }
 }

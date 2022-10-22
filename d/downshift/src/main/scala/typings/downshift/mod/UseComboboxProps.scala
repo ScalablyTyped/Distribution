@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UseComboboxProps[Item] extends StObject {
   
-  var circularNavigation: js.UndefOr[Boolean] = js.undefined
-  
   var defaultHighlightedIndex: js.UndefOr[Double] = js.undefined
   
   var defaultInputValue: js.UndefOr[String] = js.undefined
@@ -84,10 +82,6 @@ object UseComboboxProps {
   }
   
   extension [Self <: UseComboboxProps[?], Item](x: Self & UseComboboxProps[Item]) {
-    
-    inline def setCircularNavigation(value: Boolean): Self = StObject.set(x, "circularNavigation", value.asInstanceOf[js.Any])
-    
-    inline def setCircularNavigationUndefined: Self = StObject.set(x, "circularNavigation", js.undefined)
     
     inline def setDefaultHighlightedIndex(value: Double): Self = StObject.set(x, "defaultHighlightedIndex", value.asInstanceOf[js.Any])
     

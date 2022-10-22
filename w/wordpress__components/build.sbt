@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "wordpress__components"
-version := "19.10-dt-20220829Z-57b1f7"
+version := "19.10-dt-20220829Z-c6c154"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "downshift" % "6.1.12-4cfdb0",
+  "org.scalablytyped" %%% "downshift" % "7.0.0-5a823f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "re-resizable" % "6.9.9-1a47ff",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",

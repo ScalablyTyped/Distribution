@@ -74,6 +74,12 @@ object UseComboboxStateChangeTypes extends StObject {
   /* "__input_change__" */ val InputChange: typings.downshift.mod.UseComboboxStateChangeTypes.InputChange & String = js.native
   
   @js.native
+  sealed trait InputFocus
+    extends StObject
+       with UseComboboxStateChangeTypes
+  /* "__input_focus__" */ val InputFocus: typings.downshift.mod.UseComboboxStateChangeTypes.InputFocus & String = js.native
+  
+  @js.native
   sealed trait InputKeyDownArrowDown
     extends StObject
        with UseComboboxStateChangeTypes
@@ -108,6 +114,18 @@ object UseComboboxStateChangeTypes extends StObject {
     extends StObject
        with UseComboboxStateChangeTypes
   /* "__input_keydown_home__" */ val InputKeyDownHome: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownHome & String = js.native
+  
+  @js.native
+  sealed trait InputKeyDownPageDown
+    extends StObject
+       with UseComboboxStateChangeTypes
+  /* "__input_keydown_page_down__" */ val InputKeyDownPageDown: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownPageDown & String = js.native
+  
+  @js.native
+  sealed trait InputKeyDownPageUp
+    extends StObject
+       with UseComboboxStateChangeTypes
+  /* "__input_keydown_page_up__" */ val InputKeyDownPageUp: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownPageUp & String = js.native
   
   @js.native
   sealed trait ItemClick

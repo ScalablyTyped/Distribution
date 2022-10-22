@@ -33,10 +33,14 @@ trait Actions[Item] extends StObject {
   def selectHighlightedItem(otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def selectHighlightedItem(otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
+  def selectItem(): Unit = js.native
   def selectItem(item: Item): Unit = js.native
   def selectItem(item: Item, otherStateToSet: Unit, cb: Callback): Unit = js.native
   def selectItem(item: Item, otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
   def selectItem(item: Item, otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
+  def selectItem(item: Null, otherStateToSet: Unit, cb: Callback): Unit = js.native
+  def selectItem(item: Null, otherStateToSet: Partial[StateChangeOptions[Item]]): Unit = js.native
+  def selectItem(item: Null, otherStateToSet: Partial[StateChangeOptions[Item]], cb: Callback): Unit = js.native
   
   def selectItemAtIndex(index: Double): Unit = js.native
   def selectItemAtIndex(index: Double, otherStateToSet: Unit, cb: Callback): Unit = js.native

@@ -4,46 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait UseSelectActions[Item] extends StObject {
   
-  def closeMenu(): Unit
+  def closeMenu(): Unit = js.native
   
-  def openMenu(): Unit
+  def openMenu(): Unit = js.native
   
-  def reset(): Unit
+  def reset(): Unit = js.native
   
-  def selectItem(item: Item): Unit
+  def selectItem(): Unit = js.native
+  def selectItem(item: Item): Unit = js.native
   
-  def setHighlightedIndex(index: Double): Unit
+  def setHighlightedIndex(index: Double): Unit = js.native
   
-  def toggleMenu(): Unit
-}
-object UseSelectActions {
-  
-  inline def apply[Item](
-    closeMenu: () => Unit,
-    openMenu: () => Unit,
-    reset: () => Unit,
-    selectItem: Item => Unit,
-    setHighlightedIndex: Double => Unit,
-    toggleMenu: () => Unit
-  ): UseSelectActions[Item] = {
-    val __obj = js.Dynamic.literal(closeMenu = js.Any.fromFunction0(closeMenu), openMenu = js.Any.fromFunction0(openMenu), reset = js.Any.fromFunction0(reset), selectItem = js.Any.fromFunction1(selectItem), setHighlightedIndex = js.Any.fromFunction1(setHighlightedIndex), toggleMenu = js.Any.fromFunction0(toggleMenu))
-    __obj.asInstanceOf[UseSelectActions[Item]]
-  }
-  
-  extension [Self <: UseSelectActions[?], Item](x: Self & UseSelectActions[Item]) {
-    
-    inline def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
-    
-    inline def setOpenMenu(value: () => Unit): Self = StObject.set(x, "openMenu", js.Any.fromFunction0(value))
-    
-    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
-    
-    inline def setSelectItem(value: Item => Unit): Self = StObject.set(x, "selectItem", js.Any.fromFunction1(value))
-    
-    inline def setSetHighlightedIndex(value: Double => Unit): Self = StObject.set(x, "setHighlightedIndex", js.Any.fromFunction1(value))
-    
-    inline def setToggleMenu(value: () => Unit): Self = StObject.set(x, "toggleMenu", js.Any.fromFunction0(value))
-  }
+  def toggleMenu(): Unit = js.native
 }

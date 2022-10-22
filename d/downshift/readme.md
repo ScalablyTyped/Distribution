@@ -1,7 +1,7 @@
 
 # Scala.js typings for downshift
 
-Typings are for version 6.1.12
+Typings are for version 7.0.0
 
 ## Library description:
 🏎 A set of primitives to build simple, flexible, WAI-ARIA compliant React autocomplete, combobox or select dropdown components.

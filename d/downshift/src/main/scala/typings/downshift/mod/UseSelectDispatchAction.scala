@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UseSelectDispatchAction[Item] extends StObject {
   
+  var altKey: js.UndefOr[Boolean] = js.undefined
+  
   var getItemNodeFromIndex: js.UndefOr[js.Function1[/* index */ Double, HTMLElement]] = js.undefined
   
   var highlightedIndex: js.UndefOr[Double] = js.undefined
@@ -19,8 +21,6 @@ trait UseSelectDispatchAction[Item] extends StObject {
   
   var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var shiftKey: js.UndefOr[Boolean] = js.undefined
-  
   var `type`: UseSelectStateChangeTypes
 }
 object UseSelectDispatchAction {
@@ -32,6 +32,10 @@ object UseSelectDispatchAction {
   }
   
   extension [Self <: UseSelectDispatchAction[?], Item](x: Self & UseSelectDispatchAction[Item]) {
+    
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    
+    inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
     
     inline def setGetItemNodeFromIndex(value: /* index */ Double => HTMLElement): Self = StObject.set(x, "getItemNodeFromIndex", js.Any.fromFunction1(value))
     
@@ -58,10 +62,6 @@ object UseSelectDispatchAction {
     inline def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
     
     inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
-    
-    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
-    
-    inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
     
     inline def setType(value: UseSelectStateChangeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

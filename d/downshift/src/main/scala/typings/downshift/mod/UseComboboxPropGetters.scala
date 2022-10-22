@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UseComboboxPropGetters[Item] extends StObject {
   
-  def getComboboxProps(): Any = js.native
-  def getComboboxProps(options: Unit, otherOptions: GetPropsCommonOptions): Any = js.native
-  def getComboboxProps(options: UseComboboxGetComboboxPropsOptions): Any = js.native
-  def getComboboxProps(options: UseComboboxGetComboboxPropsOptions, otherOptions: GetPropsCommonOptions): Any = js.native
-  
   def getInputProps(): Any = js.native
   def getInputProps(options: Unit, otherOptions: GetPropsCommonOptions): Any = js.native
   def getInputProps(options: UseComboboxGetInputPropsOptions): Any = js.native

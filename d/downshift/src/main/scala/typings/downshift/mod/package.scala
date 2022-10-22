@@ -4,7 +4,6 @@ import typings.downshift.mod.^
 import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
-import typings.std.HTMLDivElement
 import typings.std.HTMLLabelElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -29,8 +28,6 @@ type Downshift[Item] = Component[DownshiftProps[Item], js.Object, Any]
 type GetLabelPropsOptions = HTMLProps[HTMLLabelElement]
 
 type StateChangeFunction[Item] = js.Function1[/* state */ DownshiftState[Item], Partial[StateChangeOptions[Item]]]
-
-type UseComboboxGetComboboxPropsOptions = HTMLProps[HTMLDivElement]
 
 type UseComboboxGetLabelPropsOptions = GetLabelPropsOptions
 

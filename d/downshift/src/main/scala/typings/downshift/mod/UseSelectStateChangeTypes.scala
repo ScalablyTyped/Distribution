@@ -68,64 +68,16 @@ object UseSelectStateChangeTypes extends StObject {
   /* "__item_mouse_move__" */ val ItemMouseMove: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove & String = js.native
   
   @js.native
-  sealed trait MenuBlur
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_blur__" */ val MenuBlur: typings.downshift.mod.UseSelectStateChangeTypes.MenuBlur & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownArrowDown
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_arrow_down__" */ val MenuKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowDown & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownArrowUp
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_arrow_up__" */ val MenuKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowUp & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownCharacter
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_character__" */ val MenuKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownCharacter & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownEnd
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_end__" */ val MenuKeyDownEnd: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnd & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownEnter
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_enter__" */ val MenuKeyDownEnter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnter & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownEscape
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_escape__" */ val MenuKeyDownEscape: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEscape & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownHome
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_home__" */ val MenuKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome & String = js.native
-  
-  @js.native
-  sealed trait MenuKeyDownSpaceButton
-    extends StObject
-       with UseSelectStateChangeTypes
-  /* "__menu_keydown_space_button__" */ val MenuKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton & String = js.native
-  
-  @js.native
   sealed trait MenuMouseLeave
     extends StObject
        with UseSelectStateChangeTypes
   /* "__menu_mouse_leave__" */ val MenuMouseLeave: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonBlur
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_blur__" */ val ToggleButtonBlur: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonBlur & String = js.native
   
   @js.native
   sealed trait ToggleButtonClick
@@ -150,4 +102,46 @@ object UseSelectStateChangeTypes extends StObject {
     extends StObject
        with UseSelectStateChangeTypes
   /* "__togglebutton_keydown_character__" */ val ToggleButtonKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownEnd
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_end__" */ val ToggleButtonKeyDownEnd: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEnd & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownEnter
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_enter__" */ val ToggleButtonKeyDownEnter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEnter & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownEscape
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_escape__" */ val ToggleButtonKeyDownEscape: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownEscape & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownHome
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_home__" */ val ToggleButtonKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownHome & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownPageDown
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_page_down__" */ val ToggleButtonKeyDownPageDown: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownPageDown & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownPageUp
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_page_up__" */ val ToggleButtonKeyDownPageUp: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownPageUp & String = js.native
+  
+  @js.native
+  sealed trait ToggleButtonKeyDownSpaceButton
+    extends StObject
+       with UseSelectStateChangeTypes
+  /* "__togglebutton_keydown_space_button__" */ val ToggleButtonKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownSpaceButton & String = js.native
 }
