@@ -2,10 +2,10 @@ package typings.antDesignProLayout
 
 import typings.antDesignProLayout.anon.ActionRef
 import typings.antDesignProLayout.anon.PartialRouterTypes
+import typings.antDesignProLayout.anon.Token
 import typings.antDesignProLayout.antDesignProLayoutStrings.collapsed
 import typings.antDesignProLayout.esComponentsHeaderMod.HeaderViewProps
 import typings.antDesignProLayout.esComponentsSiderMenuSiderMenuMod.SiderMenuProps
-import typings.antDesignProLayout.esContextProLayoutContextMod.ProLayoutProviderProps
 import typings.antDesignProLayout.esTypingsMod.MenuDataItem
 import typings.react.mod.FC
 import typings.std.Omit
@@ -44,10 +44,7 @@ object esProLayoutMod {
     }
   }
   
-  type GlobalTypes = Omit[
-    PartialRouterTypes & SiderMenuProps & HeaderViewProps & ProLayoutProviderProps, 
-    collapsed
-  ]
+  type GlobalTypes = Omit[PartialRouterTypes & SiderMenuProps & HeaderViewProps & Token, collapsed]
   
   trait LayoutBreadcrumbProps extends StObject {
     

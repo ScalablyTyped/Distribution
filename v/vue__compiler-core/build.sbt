@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vue__compiler-core"
-version := "3.2.41-88c8af"
+version := "3.2.41-1e8d6e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__parser" % "7.19.4-d9b25c",
+  "org.scalablytyped" %%% "babel__parser" % "7.19.6-e8951f",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-1978dd",
   "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")

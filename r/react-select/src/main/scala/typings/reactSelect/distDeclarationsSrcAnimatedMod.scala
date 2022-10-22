@@ -1,6 +1,8 @@
 package typings.reactSelect
 
+import org.scalablytyped.runtime.Shortcut
 import typings.emotionReact.mod.jsx.JSX.Element
+import typings.memoizeOne.mod.MemoizedFn
 import typings.reactSelect.anon.PartialClearIndicatorOpti
 import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ValueContainerProps
 import typings.reactSelect.distDeclarationsSrcComponentsInputMod.InputProps
@@ -12,14 +14,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distDeclarationsSrcAnimatedMod {
+object distDeclarationsSrcAnimatedMod extends Shortcut {
   
-  @JSImport("react-select/dist/declarations/src/animated", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/animated", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(): PartialClearIndicatorOpti = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PartialClearIndicatorOpti]
-  inline def default(externalComponents: PartialClearIndicatorOpti): PartialClearIndicatorOpti = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[PartialClearIndicatorOpti]
+  val default: MemoizedFn[
+    js.Function1[
+      /* externalComponents */ js.UndefOr[PartialClearIndicatorOpti], 
+      PartialClearIndicatorOpti
+    ]
+  ] = js.native
   
   @JSImport("react-select/dist/declarations/src/animated", "Input")
   @js.native
@@ -46,4 +50,19 @@ object distDeclarationsSrcAnimatedMod {
   val ValueContainer: js.UndefOr[
     js.Function1[/* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], Element]
   ] = js.native
+  
+  type _To = MemoizedFn[
+    js.Function1[
+      /* externalComponents */ js.UndefOr[PartialClearIndicatorOpti], 
+      PartialClearIndicatorOpti
+    ]
+  ]
+  
+  /* This means you don't have to write `default`, but can instead just say `distDeclarationsSrcAnimatedMod.foo` */
+  override def _to: MemoizedFn[
+    js.Function1[
+      /* externalComponents */ js.UndefOr[PartialClearIndicatorOpti], 
+      PartialClearIndicatorOpti
+    ]
+  ] = default
 }

@@ -141,13 +141,15 @@ trait Raster
     */
   var onLoad: js.Function | Null = js.native
   
+  def putImageData(data: ImageData, point: Point): Unit = js.native
+  
   /** 
     * The resolution of the raster at its current size, in PPI (pixels per
     * inch).
     */
   val resolution: Size = js.native
   
-  def setImageData(data: ImageData, point: Point): Unit = js.native
+  def setImageData(data: ImageData): Unit = js.native
   
   /** 
     * Sets the color of the specified pixel to the specified color.

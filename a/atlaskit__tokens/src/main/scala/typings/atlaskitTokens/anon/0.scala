@@ -6,18 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `0` extends StObject {
   
-  var `[default]`: Default
+  var attributes: Deleted
+  
+  var value: js.Array[Offset]
 }
 object `0` {
   
-  inline def apply(`[default]`: Default): `0` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
+  inline def apply(attributes: Deleted, value: js.Array[Offset]): `0` = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
   extension [Self <: `0`](x: Self) {
     
-    inline def `set[default]`(value: Default): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Deleted): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: js.Array[Offset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueVarargs(value: Offset*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

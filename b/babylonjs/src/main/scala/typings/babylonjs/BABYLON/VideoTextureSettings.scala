@@ -17,6 +17,11 @@ trait VideoTextureSettings extends StObject {
   var autoUpdateTexture: Boolean
   
   /**
+    * Defines the associated texture format.
+    */
+  var format: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Applies `loop` to video, if specified
     */
   var loop: js.UndefOr[Boolean] = js.undefined
@@ -45,6 +50,10 @@ object VideoTextureSettings {
     inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
     inline def setAutoUpdateTexture(value: Boolean): Self = StObject.set(x, "autoUpdateTexture", value.asInstanceOf[js.Any])
+    
+    inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

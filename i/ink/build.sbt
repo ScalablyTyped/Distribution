@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ink"
-version := "3.2.0-b6a518"
+version := "3.2.0-2ad733"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "react-reconciler" % "0.28-dt-20220624Z-a2371c",

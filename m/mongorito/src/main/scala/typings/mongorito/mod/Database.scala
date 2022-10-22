@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongorito", "Database")
 @js.native
-class Database () extends StObject {
+open class Database () extends StObject {
   def this(urls: String) = this()
   def this(urls: js.Array[String]) = this()
   def this(urls: String, options: MongoClientOptions) = this()

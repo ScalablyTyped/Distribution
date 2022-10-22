@@ -5,6 +5,7 @@ import typings.react.mod.Ref
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.GestureEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -49,6 +50,8 @@ trait ReadonlyNativeViewGesture extends StObject {
   val simultaneousHandlers: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
   
   val testID: js.UndefOr[String] = js.undefined
+  
+  val userSelect: js.UndefOr[UserSelect] = js.undefined
   
   val waitFor: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
 }
@@ -134,6 +137,10 @@ object ReadonlyNativeViewGesture {
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+    
+    inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     inline def setWaitFor(value: Ref[Any] | js.Array[Ref[Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     

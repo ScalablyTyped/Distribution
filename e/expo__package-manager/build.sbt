@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "expo__package-manager"
-version := "0.0.56-a21542"
+version := "0.0.56-ab1570"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "cli-spinners" % "2.7.0-2c1c27",
-  "org.scalablytyped" %%% "expo__spawn-async" % "1.7.0-88a253",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "ora" % "6.1.2-eefe49",
+  "org.scalablytyped" %%% "expo__spawn-async" % "1.7.0-293352",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "ora" % "6.1.2-cc9310",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

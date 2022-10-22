@@ -15,357 +15,357 @@ object distTypesPalettesPaletteMod extends Shortcut {
   type BaseToken = /* import warning: importer.ImportType#apply Failed type conversion: keyof @atlaskit/tokens.@atlaskit/tokens/dist/types/types.PaletteColorTokenSchema<@atlaskit/tokens.@atlaskit/tokens/dist/types/palettes/palette.PaletteValues>['color']['palette'] */ js.Any
   
   /* Rewritten from type alias, can be one of: 
-    - typings.atlaskitTokens.atlaskitTokensStrings.B100
-    - typings.atlaskitTokens.atlaskitTokensStrings.B200
-    - typings.atlaskitTokens.atlaskitTokensStrings.B300
-    - typings.atlaskitTokens.atlaskitTokensStrings.B400
-    - typings.atlaskitTokens.atlaskitTokensStrings.B500
-    - typings.atlaskitTokens.atlaskitTokensStrings.B600
-    - typings.atlaskitTokens.atlaskitTokensStrings.B700
-    - typings.atlaskitTokens.atlaskitTokensStrings.B800
-    - typings.atlaskitTokens.atlaskitTokensStrings.B900
-    - typings.atlaskitTokens.atlaskitTokensStrings.B1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.R100
-    - typings.atlaskitTokens.atlaskitTokensStrings.R200
-    - typings.atlaskitTokens.atlaskitTokensStrings.R300
-    - typings.atlaskitTokens.atlaskitTokensStrings.R400
-    - typings.atlaskitTokens.atlaskitTokensStrings.R500
-    - typings.atlaskitTokens.atlaskitTokensStrings.R600
-    - typings.atlaskitTokens.atlaskitTokensStrings.R700
-    - typings.atlaskitTokens.atlaskitTokensStrings.R800
-    - typings.atlaskitTokens.atlaskitTokensStrings.R900
-    - typings.atlaskitTokens.atlaskitTokensStrings.R1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y100
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y200
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y300
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y400
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y500
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y600
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y700
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y800
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y900
-    - typings.atlaskitTokens.atlaskitTokensStrings.Y1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.G100
-    - typings.atlaskitTokens.atlaskitTokensStrings.G200
-    - typings.atlaskitTokens.atlaskitTokensStrings.G300
-    - typings.atlaskitTokens.atlaskitTokensStrings.G400
-    - typings.atlaskitTokens.atlaskitTokensStrings.G500
-    - typings.atlaskitTokens.atlaskitTokensStrings.G600
-    - typings.atlaskitTokens.atlaskitTokensStrings.G700
-    - typings.atlaskitTokens.atlaskitTokensStrings.G800
-    - typings.atlaskitTokens.atlaskitTokensStrings.G900
-    - typings.atlaskitTokens.atlaskitTokensStrings.G1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.P100
-    - typings.atlaskitTokens.atlaskitTokensStrings.P200
-    - typings.atlaskitTokens.atlaskitTokensStrings.P300
-    - typings.atlaskitTokens.atlaskitTokensStrings.P400
-    - typings.atlaskitTokens.atlaskitTokensStrings.P500
-    - typings.atlaskitTokens.atlaskitTokensStrings.P600
-    - typings.atlaskitTokens.atlaskitTokensStrings.P700
-    - typings.atlaskitTokens.atlaskitTokensStrings.P800
-    - typings.atlaskitTokens.atlaskitTokensStrings.P900
-    - typings.atlaskitTokens.atlaskitTokensStrings.P1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.T100
-    - typings.atlaskitTokens.atlaskitTokensStrings.T200
-    - typings.atlaskitTokens.atlaskitTokensStrings.T300
-    - typings.atlaskitTokens.atlaskitTokensStrings.T400
-    - typings.atlaskitTokens.atlaskitTokensStrings.T500
-    - typings.atlaskitTokens.atlaskitTokensStrings.T600
-    - typings.atlaskitTokens.atlaskitTokensStrings.T700
-    - typings.atlaskitTokens.atlaskitTokensStrings.T800
-    - typings.atlaskitTokens.atlaskitTokensStrings.T900
-    - typings.atlaskitTokens.atlaskitTokensStrings.T1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.O100
-    - typings.atlaskitTokens.atlaskitTokensStrings.O200
-    - typings.atlaskitTokens.atlaskitTokensStrings.O300
-    - typings.atlaskitTokens.atlaskitTokensStrings.O400
-    - typings.atlaskitTokens.atlaskitTokensStrings.O500
-    - typings.atlaskitTokens.atlaskitTokensStrings.O600
-    - typings.atlaskitTokens.atlaskitTokensStrings.O700
-    - typings.atlaskitTokens.atlaskitTokensStrings.O800
-    - typings.atlaskitTokens.atlaskitTokensStrings.O900
-    - typings.atlaskitTokens.atlaskitTokensStrings.O1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.M100
-    - typings.atlaskitTokens.atlaskitTokensStrings.M200
-    - typings.atlaskitTokens.atlaskitTokensStrings.M300
-    - typings.atlaskitTokens.atlaskitTokensStrings.M400
-    - typings.atlaskitTokens.atlaskitTokensStrings.M500
-    - typings.atlaskitTokens.atlaskitTokensStrings.M600
-    - typings.atlaskitTokens.atlaskitTokensStrings.M700
-    - typings.atlaskitTokens.atlaskitTokensStrings.M800
-    - typings.atlaskitTokens.atlaskitTokensStrings.M900
-    - typings.atlaskitTokens.atlaskitTokensStrings.M1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.`DN-100`
-    - typings.atlaskitTokens.atlaskitTokensStrings.`DN-100A`
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN0
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN100
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN100A
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN200
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN200A
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN300
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN300A
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN400
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN400A
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN500
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN500A
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN600
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN700
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN800
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN900
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.DN1100
-    - typings.atlaskitTokens.atlaskitTokensStrings.N0
-    - typings.atlaskitTokens.atlaskitTokensStrings.N100
-    - typings.atlaskitTokens.atlaskitTokensStrings.N100A
-    - typings.atlaskitTokens.atlaskitTokensStrings.N200
-    - typings.atlaskitTokens.atlaskitTokensStrings.N200A
-    - typings.atlaskitTokens.atlaskitTokensStrings.N300
-    - typings.atlaskitTokens.atlaskitTokensStrings.N300A
-    - typings.atlaskitTokens.atlaskitTokensStrings.N400
-    - typings.atlaskitTokens.atlaskitTokensStrings.N400A
-    - typings.atlaskitTokens.atlaskitTokensStrings.N500
-    - typings.atlaskitTokens.atlaskitTokensStrings.N500A
-    - typings.atlaskitTokens.atlaskitTokensStrings.N600
-    - typings.atlaskitTokens.atlaskitTokensStrings.N700
-    - typings.atlaskitTokens.atlaskitTokensStrings.N800
-    - typings.atlaskitTokens.atlaskitTokensStrings.N900
-    - typings.atlaskitTokens.atlaskitTokensStrings.N1000
-    - typings.atlaskitTokens.atlaskitTokensStrings.N1100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Blue1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Red1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Yellow1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Green1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Purple1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Teal1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Orange1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Magenta1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.`DarkNeutral-100`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`DarkNeutral-100A`
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral0
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral100
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral100A
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral200
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral200A
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral300
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral300A
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral400
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral400A
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral500
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral500A
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral600
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral700
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral800
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral900
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral1100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral0
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral100
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral100A
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral200
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral200A
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral300
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral300A
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral400
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral400A
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral500
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral500A
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral600
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral700
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral800
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral900
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral1000
+    - typings.atlaskitTokens.atlaskitTokensStrings.Neutral1100
   */
   trait PaletteValues extends StObject
   object PaletteValues {
     
-    inline def B100: typings.atlaskitTokens.atlaskitTokensStrings.B100 = "B100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B100]
+    inline def Blue100: typings.atlaskitTokens.atlaskitTokensStrings.Blue100 = "Blue100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue100]
     
-    inline def B1000: typings.atlaskitTokens.atlaskitTokensStrings.B1000 = "B1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B1000]
+    inline def Blue1000: typings.atlaskitTokens.atlaskitTokensStrings.Blue1000 = "Blue1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue1000]
     
-    inline def B200: typings.atlaskitTokens.atlaskitTokensStrings.B200 = "B200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B200]
+    inline def Blue200: typings.atlaskitTokens.atlaskitTokensStrings.Blue200 = "Blue200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue200]
     
-    inline def B300: typings.atlaskitTokens.atlaskitTokensStrings.B300 = "B300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B300]
+    inline def Blue300: typings.atlaskitTokens.atlaskitTokensStrings.Blue300 = "Blue300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue300]
     
-    inline def B400: typings.atlaskitTokens.atlaskitTokensStrings.B400 = "B400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B400]
+    inline def Blue400: typings.atlaskitTokens.atlaskitTokensStrings.Blue400 = "Blue400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue400]
     
-    inline def B500: typings.atlaskitTokens.atlaskitTokensStrings.B500 = "B500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B500]
+    inline def Blue500: typings.atlaskitTokens.atlaskitTokensStrings.Blue500 = "Blue500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue500]
     
-    inline def B600: typings.atlaskitTokens.atlaskitTokensStrings.B600 = "B600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B600]
+    inline def Blue600: typings.atlaskitTokens.atlaskitTokensStrings.Blue600 = "Blue600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue600]
     
-    inline def B700: typings.atlaskitTokens.atlaskitTokensStrings.B700 = "B700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B700]
+    inline def Blue700: typings.atlaskitTokens.atlaskitTokensStrings.Blue700 = "Blue700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue700]
     
-    inline def B800: typings.atlaskitTokens.atlaskitTokensStrings.B800 = "B800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B800]
+    inline def Blue800: typings.atlaskitTokens.atlaskitTokensStrings.Blue800 = "Blue800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue800]
     
-    inline def B900: typings.atlaskitTokens.atlaskitTokensStrings.B900 = "B900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.B900]
+    inline def Blue900: typings.atlaskitTokens.atlaskitTokensStrings.Blue900 = "Blue900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Blue900]
     
-    inline def `DN-100`: typings.atlaskitTokens.atlaskitTokensStrings.`DN-100` = "DN-100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`DN-100`]
+    inline def `DarkNeutral-100`: typings.atlaskitTokens.atlaskitTokensStrings.`DarkNeutral-100` = "DarkNeutral-100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`DarkNeutral-100`]
     
-    inline def `DN-100A`: typings.atlaskitTokens.atlaskitTokensStrings.`DN-100A` = "DN-100A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`DN-100A`]
+    inline def `DarkNeutral-100A`: typings.atlaskitTokens.atlaskitTokensStrings.`DarkNeutral-100A` = "DarkNeutral-100A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`DarkNeutral-100A`]
     
-    inline def DN0: typings.atlaskitTokens.atlaskitTokensStrings.DN0 = "DN0".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN0]
+    inline def DarkNeutral0: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral0 = "DarkNeutral0".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral0]
     
-    inline def DN100: typings.atlaskitTokens.atlaskitTokensStrings.DN100 = "DN100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN100]
+    inline def DarkNeutral100: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral100 = "DarkNeutral100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral100]
     
-    inline def DN1000: typings.atlaskitTokens.atlaskitTokensStrings.DN1000 = "DN1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN1000]
+    inline def DarkNeutral1000: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral1000 = "DarkNeutral1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral1000]
     
-    inline def DN100A: typings.atlaskitTokens.atlaskitTokensStrings.DN100A = "DN100A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN100A]
+    inline def DarkNeutral100A: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral100A = "DarkNeutral100A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral100A]
     
-    inline def DN1100: typings.atlaskitTokens.atlaskitTokensStrings.DN1100 = "DN1100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN1100]
+    inline def DarkNeutral1100: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral1100 = "DarkNeutral1100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral1100]
     
-    inline def DN200: typings.atlaskitTokens.atlaskitTokensStrings.DN200 = "DN200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN200]
+    inline def DarkNeutral200: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral200 = "DarkNeutral200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral200]
     
-    inline def DN200A: typings.atlaskitTokens.atlaskitTokensStrings.DN200A = "DN200A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN200A]
+    inline def DarkNeutral200A: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral200A = "DarkNeutral200A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral200A]
     
-    inline def DN300: typings.atlaskitTokens.atlaskitTokensStrings.DN300 = "DN300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN300]
+    inline def DarkNeutral300: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral300 = "DarkNeutral300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral300]
     
-    inline def DN300A: typings.atlaskitTokens.atlaskitTokensStrings.DN300A = "DN300A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN300A]
+    inline def DarkNeutral300A: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral300A = "DarkNeutral300A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral300A]
     
-    inline def DN400: typings.atlaskitTokens.atlaskitTokensStrings.DN400 = "DN400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN400]
+    inline def DarkNeutral400: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral400 = "DarkNeutral400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral400]
     
-    inline def DN400A: typings.atlaskitTokens.atlaskitTokensStrings.DN400A = "DN400A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN400A]
+    inline def DarkNeutral400A: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral400A = "DarkNeutral400A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral400A]
     
-    inline def DN500: typings.atlaskitTokens.atlaskitTokensStrings.DN500 = "DN500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN500]
+    inline def DarkNeutral500: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral500 = "DarkNeutral500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral500]
     
-    inline def DN500A: typings.atlaskitTokens.atlaskitTokensStrings.DN500A = "DN500A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN500A]
+    inline def DarkNeutral500A: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral500A = "DarkNeutral500A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral500A]
     
-    inline def DN600: typings.atlaskitTokens.atlaskitTokensStrings.DN600 = "DN600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN600]
+    inline def DarkNeutral600: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral600 = "DarkNeutral600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral600]
     
-    inline def DN700: typings.atlaskitTokens.atlaskitTokensStrings.DN700 = "DN700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN700]
+    inline def DarkNeutral700: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral700 = "DarkNeutral700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral700]
     
-    inline def DN800: typings.atlaskitTokens.atlaskitTokensStrings.DN800 = "DN800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN800]
+    inline def DarkNeutral800: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral800 = "DarkNeutral800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral800]
     
-    inline def DN900: typings.atlaskitTokens.atlaskitTokensStrings.DN900 = "DN900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DN900]
+    inline def DarkNeutral900: typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral900 = "DarkNeutral900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.DarkNeutral900]
     
-    inline def G100: typings.atlaskitTokens.atlaskitTokensStrings.G100 = "G100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G100]
+    inline def Green100: typings.atlaskitTokens.atlaskitTokensStrings.Green100 = "Green100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green100]
     
-    inline def G1000: typings.atlaskitTokens.atlaskitTokensStrings.G1000 = "G1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G1000]
+    inline def Green1000: typings.atlaskitTokens.atlaskitTokensStrings.Green1000 = "Green1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green1000]
     
-    inline def G200: typings.atlaskitTokens.atlaskitTokensStrings.G200 = "G200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G200]
+    inline def Green200: typings.atlaskitTokens.atlaskitTokensStrings.Green200 = "Green200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green200]
     
-    inline def G300: typings.atlaskitTokens.atlaskitTokensStrings.G300 = "G300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G300]
+    inline def Green300: typings.atlaskitTokens.atlaskitTokensStrings.Green300 = "Green300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green300]
     
-    inline def G400: typings.atlaskitTokens.atlaskitTokensStrings.G400 = "G400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G400]
+    inline def Green400: typings.atlaskitTokens.atlaskitTokensStrings.Green400 = "Green400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green400]
     
-    inline def G500: typings.atlaskitTokens.atlaskitTokensStrings.G500 = "G500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G500]
+    inline def Green500: typings.atlaskitTokens.atlaskitTokensStrings.Green500 = "Green500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green500]
     
-    inline def G600: typings.atlaskitTokens.atlaskitTokensStrings.G600 = "G600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G600]
+    inline def Green600: typings.atlaskitTokens.atlaskitTokensStrings.Green600 = "Green600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green600]
     
-    inline def G700: typings.atlaskitTokens.atlaskitTokensStrings.G700 = "G700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G700]
+    inline def Green700: typings.atlaskitTokens.atlaskitTokensStrings.Green700 = "Green700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green700]
     
-    inline def G800: typings.atlaskitTokens.atlaskitTokensStrings.G800 = "G800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G800]
+    inline def Green800: typings.atlaskitTokens.atlaskitTokensStrings.Green800 = "Green800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green800]
     
-    inline def G900: typings.atlaskitTokens.atlaskitTokensStrings.G900 = "G900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.G900]
+    inline def Green900: typings.atlaskitTokens.atlaskitTokensStrings.Green900 = "Green900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Green900]
     
-    inline def M100: typings.atlaskitTokens.atlaskitTokensStrings.M100 = "M100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M100]
+    inline def Magenta100: typings.atlaskitTokens.atlaskitTokensStrings.Magenta100 = "Magenta100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta100]
     
-    inline def M1000: typings.atlaskitTokens.atlaskitTokensStrings.M1000 = "M1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M1000]
+    inline def Magenta1000: typings.atlaskitTokens.atlaskitTokensStrings.Magenta1000 = "Magenta1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta1000]
     
-    inline def M200: typings.atlaskitTokens.atlaskitTokensStrings.M200 = "M200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M200]
+    inline def Magenta200: typings.atlaskitTokens.atlaskitTokensStrings.Magenta200 = "Magenta200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta200]
     
-    inline def M300: typings.atlaskitTokens.atlaskitTokensStrings.M300 = "M300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M300]
+    inline def Magenta300: typings.atlaskitTokens.atlaskitTokensStrings.Magenta300 = "Magenta300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta300]
     
-    inline def M400: typings.atlaskitTokens.atlaskitTokensStrings.M400 = "M400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M400]
+    inline def Magenta400: typings.atlaskitTokens.atlaskitTokensStrings.Magenta400 = "Magenta400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta400]
     
-    inline def M500: typings.atlaskitTokens.atlaskitTokensStrings.M500 = "M500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M500]
+    inline def Magenta500: typings.atlaskitTokens.atlaskitTokensStrings.Magenta500 = "Magenta500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta500]
     
-    inline def M600: typings.atlaskitTokens.atlaskitTokensStrings.M600 = "M600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M600]
+    inline def Magenta600: typings.atlaskitTokens.atlaskitTokensStrings.Magenta600 = "Magenta600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta600]
     
-    inline def M700: typings.atlaskitTokens.atlaskitTokensStrings.M700 = "M700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M700]
+    inline def Magenta700: typings.atlaskitTokens.atlaskitTokensStrings.Magenta700 = "Magenta700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta700]
     
-    inline def M800: typings.atlaskitTokens.atlaskitTokensStrings.M800 = "M800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M800]
+    inline def Magenta800: typings.atlaskitTokens.atlaskitTokensStrings.Magenta800 = "Magenta800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta800]
     
-    inline def M900: typings.atlaskitTokens.atlaskitTokensStrings.M900 = "M900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.M900]
+    inline def Magenta900: typings.atlaskitTokens.atlaskitTokensStrings.Magenta900 = "Magenta900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Magenta900]
     
-    inline def N0: typings.atlaskitTokens.atlaskitTokensStrings.N0 = "N0".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N0]
+    inline def Neutral0: typings.atlaskitTokens.atlaskitTokensStrings.Neutral0 = "Neutral0".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral0]
     
-    inline def N100: typings.atlaskitTokens.atlaskitTokensStrings.N100 = "N100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N100]
+    inline def Neutral100: typings.atlaskitTokens.atlaskitTokensStrings.Neutral100 = "Neutral100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral100]
     
-    inline def N1000: typings.atlaskitTokens.atlaskitTokensStrings.N1000 = "N1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N1000]
+    inline def Neutral1000: typings.atlaskitTokens.atlaskitTokensStrings.Neutral1000 = "Neutral1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral1000]
     
-    inline def N100A: typings.atlaskitTokens.atlaskitTokensStrings.N100A = "N100A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N100A]
+    inline def Neutral100A: typings.atlaskitTokens.atlaskitTokensStrings.Neutral100A = "Neutral100A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral100A]
     
-    inline def N1100: typings.atlaskitTokens.atlaskitTokensStrings.N1100 = "N1100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N1100]
+    inline def Neutral1100: typings.atlaskitTokens.atlaskitTokensStrings.Neutral1100 = "Neutral1100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral1100]
     
-    inline def N200: typings.atlaskitTokens.atlaskitTokensStrings.N200 = "N200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N200]
+    inline def Neutral200: typings.atlaskitTokens.atlaskitTokensStrings.Neutral200 = "Neutral200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral200]
     
-    inline def N200A: typings.atlaskitTokens.atlaskitTokensStrings.N200A = "N200A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N200A]
+    inline def Neutral200A: typings.atlaskitTokens.atlaskitTokensStrings.Neutral200A = "Neutral200A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral200A]
     
-    inline def N300: typings.atlaskitTokens.atlaskitTokensStrings.N300 = "N300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N300]
+    inline def Neutral300: typings.atlaskitTokens.atlaskitTokensStrings.Neutral300 = "Neutral300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral300]
     
-    inline def N300A: typings.atlaskitTokens.atlaskitTokensStrings.N300A = "N300A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N300A]
+    inline def Neutral300A: typings.atlaskitTokens.atlaskitTokensStrings.Neutral300A = "Neutral300A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral300A]
     
-    inline def N400: typings.atlaskitTokens.atlaskitTokensStrings.N400 = "N400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N400]
+    inline def Neutral400: typings.atlaskitTokens.atlaskitTokensStrings.Neutral400 = "Neutral400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral400]
     
-    inline def N400A: typings.atlaskitTokens.atlaskitTokensStrings.N400A = "N400A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N400A]
+    inline def Neutral400A: typings.atlaskitTokens.atlaskitTokensStrings.Neutral400A = "Neutral400A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral400A]
     
-    inline def N500: typings.atlaskitTokens.atlaskitTokensStrings.N500 = "N500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N500]
+    inline def Neutral500: typings.atlaskitTokens.atlaskitTokensStrings.Neutral500 = "Neutral500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral500]
     
-    inline def N500A: typings.atlaskitTokens.atlaskitTokensStrings.N500A = "N500A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N500A]
+    inline def Neutral500A: typings.atlaskitTokens.atlaskitTokensStrings.Neutral500A = "Neutral500A".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral500A]
     
-    inline def N600: typings.atlaskitTokens.atlaskitTokensStrings.N600 = "N600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N600]
+    inline def Neutral600: typings.atlaskitTokens.atlaskitTokensStrings.Neutral600 = "Neutral600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral600]
     
-    inline def N700: typings.atlaskitTokens.atlaskitTokensStrings.N700 = "N700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N700]
+    inline def Neutral700: typings.atlaskitTokens.atlaskitTokensStrings.Neutral700 = "Neutral700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral700]
     
-    inline def N800: typings.atlaskitTokens.atlaskitTokensStrings.N800 = "N800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N800]
+    inline def Neutral800: typings.atlaskitTokens.atlaskitTokensStrings.Neutral800 = "Neutral800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral800]
     
-    inline def N900: typings.atlaskitTokens.atlaskitTokensStrings.N900 = "N900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.N900]
+    inline def Neutral900: typings.atlaskitTokens.atlaskitTokensStrings.Neutral900 = "Neutral900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Neutral900]
     
-    inline def O100: typings.atlaskitTokens.atlaskitTokensStrings.O100 = "O100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O100]
+    inline def Orange100: typings.atlaskitTokens.atlaskitTokensStrings.Orange100 = "Orange100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange100]
     
-    inline def O1000: typings.atlaskitTokens.atlaskitTokensStrings.O1000 = "O1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O1000]
+    inline def Orange1000: typings.atlaskitTokens.atlaskitTokensStrings.Orange1000 = "Orange1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange1000]
     
-    inline def O200: typings.atlaskitTokens.atlaskitTokensStrings.O200 = "O200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O200]
+    inline def Orange200: typings.atlaskitTokens.atlaskitTokensStrings.Orange200 = "Orange200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange200]
     
-    inline def O300: typings.atlaskitTokens.atlaskitTokensStrings.O300 = "O300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O300]
+    inline def Orange300: typings.atlaskitTokens.atlaskitTokensStrings.Orange300 = "Orange300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange300]
     
-    inline def O400: typings.atlaskitTokens.atlaskitTokensStrings.O400 = "O400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O400]
+    inline def Orange400: typings.atlaskitTokens.atlaskitTokensStrings.Orange400 = "Orange400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange400]
     
-    inline def O500: typings.atlaskitTokens.atlaskitTokensStrings.O500 = "O500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O500]
+    inline def Orange500: typings.atlaskitTokens.atlaskitTokensStrings.Orange500 = "Orange500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange500]
     
-    inline def O600: typings.atlaskitTokens.atlaskitTokensStrings.O600 = "O600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O600]
+    inline def Orange600: typings.atlaskitTokens.atlaskitTokensStrings.Orange600 = "Orange600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange600]
     
-    inline def O700: typings.atlaskitTokens.atlaskitTokensStrings.O700 = "O700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O700]
+    inline def Orange700: typings.atlaskitTokens.atlaskitTokensStrings.Orange700 = "Orange700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange700]
     
-    inline def O800: typings.atlaskitTokens.atlaskitTokensStrings.O800 = "O800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O800]
+    inline def Orange800: typings.atlaskitTokens.atlaskitTokensStrings.Orange800 = "Orange800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange800]
     
-    inline def O900: typings.atlaskitTokens.atlaskitTokensStrings.O900 = "O900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.O900]
+    inline def Orange900: typings.atlaskitTokens.atlaskitTokensStrings.Orange900 = "Orange900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Orange900]
     
-    inline def P100: typings.atlaskitTokens.atlaskitTokensStrings.P100 = "P100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P100]
+    inline def Purple100: typings.atlaskitTokens.atlaskitTokensStrings.Purple100 = "Purple100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple100]
     
-    inline def P1000: typings.atlaskitTokens.atlaskitTokensStrings.P1000 = "P1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P1000]
+    inline def Purple1000: typings.atlaskitTokens.atlaskitTokensStrings.Purple1000 = "Purple1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple1000]
     
-    inline def P200: typings.atlaskitTokens.atlaskitTokensStrings.P200 = "P200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P200]
+    inline def Purple200: typings.atlaskitTokens.atlaskitTokensStrings.Purple200 = "Purple200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple200]
     
-    inline def P300: typings.atlaskitTokens.atlaskitTokensStrings.P300 = "P300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P300]
+    inline def Purple300: typings.atlaskitTokens.atlaskitTokensStrings.Purple300 = "Purple300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple300]
     
-    inline def P400: typings.atlaskitTokens.atlaskitTokensStrings.P400 = "P400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P400]
+    inline def Purple400: typings.atlaskitTokens.atlaskitTokensStrings.Purple400 = "Purple400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple400]
     
-    inline def P500: typings.atlaskitTokens.atlaskitTokensStrings.P500 = "P500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P500]
+    inline def Purple500: typings.atlaskitTokens.atlaskitTokensStrings.Purple500 = "Purple500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple500]
     
-    inline def P600: typings.atlaskitTokens.atlaskitTokensStrings.P600 = "P600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P600]
+    inline def Purple600: typings.atlaskitTokens.atlaskitTokensStrings.Purple600 = "Purple600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple600]
     
-    inline def P700: typings.atlaskitTokens.atlaskitTokensStrings.P700 = "P700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P700]
+    inline def Purple700: typings.atlaskitTokens.atlaskitTokensStrings.Purple700 = "Purple700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple700]
     
-    inline def P800: typings.atlaskitTokens.atlaskitTokensStrings.P800 = "P800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P800]
+    inline def Purple800: typings.atlaskitTokens.atlaskitTokensStrings.Purple800 = "Purple800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple800]
     
-    inline def P900: typings.atlaskitTokens.atlaskitTokensStrings.P900 = "P900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.P900]
+    inline def Purple900: typings.atlaskitTokens.atlaskitTokensStrings.Purple900 = "Purple900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Purple900]
     
-    inline def R100: typings.atlaskitTokens.atlaskitTokensStrings.R100 = "R100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R100]
+    inline def Red100: typings.atlaskitTokens.atlaskitTokensStrings.Red100 = "Red100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red100]
     
-    inline def R1000: typings.atlaskitTokens.atlaskitTokensStrings.R1000 = "R1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R1000]
+    inline def Red1000: typings.atlaskitTokens.atlaskitTokensStrings.Red1000 = "Red1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red1000]
     
-    inline def R200: typings.atlaskitTokens.atlaskitTokensStrings.R200 = "R200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R200]
+    inline def Red200: typings.atlaskitTokens.atlaskitTokensStrings.Red200 = "Red200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red200]
     
-    inline def R300: typings.atlaskitTokens.atlaskitTokensStrings.R300 = "R300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R300]
+    inline def Red300: typings.atlaskitTokens.atlaskitTokensStrings.Red300 = "Red300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red300]
     
-    inline def R400: typings.atlaskitTokens.atlaskitTokensStrings.R400 = "R400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R400]
+    inline def Red400: typings.atlaskitTokens.atlaskitTokensStrings.Red400 = "Red400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red400]
     
-    inline def R500: typings.atlaskitTokens.atlaskitTokensStrings.R500 = "R500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R500]
+    inline def Red500: typings.atlaskitTokens.atlaskitTokensStrings.Red500 = "Red500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red500]
     
-    inline def R600: typings.atlaskitTokens.atlaskitTokensStrings.R600 = "R600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R600]
+    inline def Red600: typings.atlaskitTokens.atlaskitTokensStrings.Red600 = "Red600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red600]
     
-    inline def R700: typings.atlaskitTokens.atlaskitTokensStrings.R700 = "R700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R700]
+    inline def Red700: typings.atlaskitTokens.atlaskitTokensStrings.Red700 = "Red700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red700]
     
-    inline def R800: typings.atlaskitTokens.atlaskitTokensStrings.R800 = "R800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R800]
+    inline def Red800: typings.atlaskitTokens.atlaskitTokensStrings.Red800 = "Red800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red800]
     
-    inline def R900: typings.atlaskitTokens.atlaskitTokensStrings.R900 = "R900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.R900]
+    inline def Red900: typings.atlaskitTokens.atlaskitTokensStrings.Red900 = "Red900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Red900]
     
-    inline def T100: typings.atlaskitTokens.atlaskitTokensStrings.T100 = "T100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T100]
+    inline def Teal100: typings.atlaskitTokens.atlaskitTokensStrings.Teal100 = "Teal100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal100]
     
-    inline def T1000: typings.atlaskitTokens.atlaskitTokensStrings.T1000 = "T1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T1000]
+    inline def Teal1000: typings.atlaskitTokens.atlaskitTokensStrings.Teal1000 = "Teal1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal1000]
     
-    inline def T200: typings.atlaskitTokens.atlaskitTokensStrings.T200 = "T200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T200]
+    inline def Teal200: typings.atlaskitTokens.atlaskitTokensStrings.Teal200 = "Teal200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal200]
     
-    inline def T300: typings.atlaskitTokens.atlaskitTokensStrings.T300 = "T300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T300]
+    inline def Teal300: typings.atlaskitTokens.atlaskitTokensStrings.Teal300 = "Teal300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal300]
     
-    inline def T400: typings.atlaskitTokens.atlaskitTokensStrings.T400 = "T400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T400]
+    inline def Teal400: typings.atlaskitTokens.atlaskitTokensStrings.Teal400 = "Teal400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal400]
     
-    inline def T500: typings.atlaskitTokens.atlaskitTokensStrings.T500 = "T500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T500]
+    inline def Teal500: typings.atlaskitTokens.atlaskitTokensStrings.Teal500 = "Teal500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal500]
     
-    inline def T600: typings.atlaskitTokens.atlaskitTokensStrings.T600 = "T600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T600]
+    inline def Teal600: typings.atlaskitTokens.atlaskitTokensStrings.Teal600 = "Teal600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal600]
     
-    inline def T700: typings.atlaskitTokens.atlaskitTokensStrings.T700 = "T700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T700]
+    inline def Teal700: typings.atlaskitTokens.atlaskitTokensStrings.Teal700 = "Teal700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal700]
     
-    inline def T800: typings.atlaskitTokens.atlaskitTokensStrings.T800 = "T800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T800]
+    inline def Teal800: typings.atlaskitTokens.atlaskitTokensStrings.Teal800 = "Teal800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal800]
     
-    inline def T900: typings.atlaskitTokens.atlaskitTokensStrings.T900 = "T900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.T900]
+    inline def Teal900: typings.atlaskitTokens.atlaskitTokensStrings.Teal900 = "Teal900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Teal900]
     
-    inline def Y100: typings.atlaskitTokens.atlaskitTokensStrings.Y100 = "Y100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y100]
+    inline def Yellow100: typings.atlaskitTokens.atlaskitTokensStrings.Yellow100 = "Yellow100".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow100]
     
-    inline def Y1000: typings.atlaskitTokens.atlaskitTokensStrings.Y1000 = "Y1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y1000]
+    inline def Yellow1000: typings.atlaskitTokens.atlaskitTokensStrings.Yellow1000 = "Yellow1000".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow1000]
     
-    inline def Y200: typings.atlaskitTokens.atlaskitTokensStrings.Y200 = "Y200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y200]
+    inline def Yellow200: typings.atlaskitTokens.atlaskitTokensStrings.Yellow200 = "Yellow200".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow200]
     
-    inline def Y300: typings.atlaskitTokens.atlaskitTokensStrings.Y300 = "Y300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y300]
+    inline def Yellow300: typings.atlaskitTokens.atlaskitTokensStrings.Yellow300 = "Yellow300".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow300]
     
-    inline def Y400: typings.atlaskitTokens.atlaskitTokensStrings.Y400 = "Y400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y400]
+    inline def Yellow400: typings.atlaskitTokens.atlaskitTokensStrings.Yellow400 = "Yellow400".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow400]
     
-    inline def Y500: typings.atlaskitTokens.atlaskitTokensStrings.Y500 = "Y500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y500]
+    inline def Yellow500: typings.atlaskitTokens.atlaskitTokensStrings.Yellow500 = "Yellow500".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow500]
     
-    inline def Y600: typings.atlaskitTokens.atlaskitTokensStrings.Y600 = "Y600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y600]
+    inline def Yellow600: typings.atlaskitTokens.atlaskitTokensStrings.Yellow600 = "Yellow600".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow600]
     
-    inline def Y700: typings.atlaskitTokens.atlaskitTokensStrings.Y700 = "Y700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y700]
+    inline def Yellow700: typings.atlaskitTokens.atlaskitTokensStrings.Yellow700 = "Yellow700".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow700]
     
-    inline def Y800: typings.atlaskitTokens.atlaskitTokensStrings.Y800 = "Y800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y800]
+    inline def Yellow800: typings.atlaskitTokens.atlaskitTokensStrings.Yellow800 = "Yellow800".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow800]
     
-    inline def Y900: typings.atlaskitTokens.atlaskitTokensStrings.Y900 = "Y900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Y900]
+    inline def Yellow900: typings.atlaskitTokens.atlaskitTokensStrings.Yellow900 = "Yellow900".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.Yellow900]
   }
   
   type _To = PaletteColorTokenSchema[PaletteValues]

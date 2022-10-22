@@ -167,6 +167,11 @@ object renderingRenderingGroupMod {
     def prepare(): Unit = js.native
     
     /**
+      * Resets the different lists of sprites to prepare a new frame.
+      */
+    def prepareSprites(): Unit = js.native
+    
+    /**
       * Render all the sub meshes contained in the group.
       * @param customRenderFunction Used to override the default render behaviour of the group.
       * @param renderSprites

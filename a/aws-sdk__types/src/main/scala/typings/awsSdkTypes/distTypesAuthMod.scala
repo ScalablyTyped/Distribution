@@ -29,7 +29,8 @@ object distTypesAuthMod {
     var signingRegion: String
     
     /**
-      * TODO usage?
+      * @example ["*"]
+      * @exammple ["us-west-2", "us-east-1"]
       */
     var signingRegionSet: js.UndefOr[js.Array[String]] = js.undefined
     

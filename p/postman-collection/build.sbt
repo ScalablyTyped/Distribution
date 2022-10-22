@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "postman-collection"
-version := "3.5-dt-20220329Z-1cbd58"
+version := "3.5-dt-20220329Z-31ad9b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

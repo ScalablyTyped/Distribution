@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongorito", "MinKey")
 @js.native
-class MinKey ()
+open class MinKey ()
   extends typings.mongodb.mod.MinKey

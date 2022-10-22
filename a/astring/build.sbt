@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "astring"
-version := "1.8.3-fe9241"
+version := "1.8.3-52790a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-9389e9",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

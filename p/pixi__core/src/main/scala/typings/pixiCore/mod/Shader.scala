@@ -1,5 +1,6 @@
 package typings.pixiCore.mod
 
+import typings.pixiRunner.mod.Runner
 import typings.pixiUtils.mod.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,6 +19,8 @@ open class Shader protected () extends StObject {
   def checkUniformExists(name: String, group: UniformGroup[Dict[Any]]): Boolean = js.native
   
   def destroy(): Unit = js.native
+  
+  var disposeRunner: Runner = js.native
   
   /** Program that the shader uses. */
   var program: Program = js.native

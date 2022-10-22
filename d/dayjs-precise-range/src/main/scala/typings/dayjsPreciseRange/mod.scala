@@ -185,6 +185,7 @@ object mod {
     returnValueObject: `true`
   ): PreciseRangeValueObject = (^.asInstanceOf[js.Dynamic].applyDynamic("preciseDiff")(d1.asInstanceOf[js.Any], d2.asInstanceOf[js.Any], returnValueObject.asInstanceOf[js.Any])).asInstanceOf[PreciseRangeValueObject]
   
+  inline def unix(t: js.BigInt): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
   inline def unix(t: Double): typings.dayjs.mod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.mod.Dayjs]
   
   inline def updateLocale(localeName: String, customConfig: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(localeName.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]

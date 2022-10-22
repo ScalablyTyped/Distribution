@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PickingInfo extends StObject {
   
-  /** @internal */
-  var _pickingUnavailable: Boolean = js.native
-  
   /**
     * The aim-space transform of the input used for picking, if it is an XR input source.
     */

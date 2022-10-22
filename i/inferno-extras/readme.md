@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-extras
 
-Typings are for version 8.0.3
+Typings are for version 8.0.4
 
 ## Library description:
 Collection of utilities for InfernoJS

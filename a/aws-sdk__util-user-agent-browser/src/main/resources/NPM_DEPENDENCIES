@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/util-user-agent-browser" : "3.190.0"
+      "@aws-sdk/util-user-agent-browser" : "3.193.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/util-user-agent-browser" : "3.190.0"
+      "@aws-sdk/util-user-agent-browser" : "3.193.0"
     }
   ],
   "compile-devDependencies" : [

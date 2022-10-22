@@ -5,6 +5,7 @@ import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleResponse
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientResolvedConfig
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceInputTypes
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceOutputTypes
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -38,6 +39,15 @@ object distTypesCommandsAssumeRoleCommandMod {
     ): Handler[AssumeRoleCommandInput, AssumeRoleCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object AssumeRoleCommand {
+    
+    @JSImport("@aws-sdk/client-sts/dist-types/commands/AssumeRoleCommand", "AssumeRoleCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type AssumeRoleCommandInput = AssumeRoleRequest

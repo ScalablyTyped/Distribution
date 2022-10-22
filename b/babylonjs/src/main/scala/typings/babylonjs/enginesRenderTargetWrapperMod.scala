@@ -48,7 +48,8 @@ object enginesRenderTargetWrapperMod {
     /** @internal */
     def _rebuild(): Unit = js.native
     
-    /* private */ var _samples: Any = js.native
+    /** @internal */
+    var _samples: Double = js.native
     
     /**
       * Shares the depth buffer of this render target with another render target.

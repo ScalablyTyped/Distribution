@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "safe-stable-stringify" : "2.4.0"
+      "safe-stable-stringify" : "2.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "safe-stable-stringify" : "2.4.0"
+      "safe-stable-stringify" : "2.4.1"
     }
   ],
   "compile-devDependencies" : [

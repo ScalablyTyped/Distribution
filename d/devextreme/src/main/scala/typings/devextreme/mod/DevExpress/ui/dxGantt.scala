@@ -8,6 +8,7 @@ import typings.devextreme.mod.DevExpress.common.charts.FilterType
 import typings.devextreme.mod.DevExpress.common.charts.SelectedFilterOperation
 import typings.devextreme.mod.DevExpress.common.grids.ColumnCustomizeTextArg
 import typings.devextreme.mod.DevExpress.common.grids.ColumnHeaderFilter
+import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.core.utils.DxPromise
@@ -23,6 +24,7 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Number
 import typings.std.PointerEvent
+import typings.std.PromiseLike
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -263,6 +265,15 @@ object dxGantt {
         ]
       ] = js.undefined
     
+    var defaultSetCellValue: js.UndefOr[
+        js.Function3[
+          /* newData */ DeepPartial[Any], 
+          /* value */ Any, 
+          /* currentRowData */ Any, 
+          Unit | PromiseLike[Unit]
+        ]
+      ] = js.undefined
+    
     var encodeHtml: js.UndefOr[Boolean] = js.undefined
     
     var falseText: js.UndefOr[String] = js.undefined
@@ -395,6 +406,12 @@ object dxGantt {
       ): Self = StObject.set(x, "defaultCalculateFilterExpression", js.Any.fromFunction3(value))
       
       inline def setDefaultCalculateFilterExpressionUndefined: Self = StObject.set(x, "defaultCalculateFilterExpression", js.undefined)
+      
+      inline def setDefaultSetCellValue(
+        value: (/* newData */ DeepPartial[Any], /* value */ Any, /* currentRowData */ Any) => Unit | PromiseLike[Unit]
+      ): Self = StObject.set(x, "defaultSetCellValue", js.Any.fromFunction3(value))
+      
+      inline def setDefaultSetCellValueUndefined: Self = StObject.set(x, "defaultSetCellValue", js.undefined)
       
       inline def setEncodeHtml(value: Boolean): Self = StObject.set(x, "encodeHtml", value.asInstanceOf[js.Any])
       

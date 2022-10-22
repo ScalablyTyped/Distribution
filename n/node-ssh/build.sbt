@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "node-ssh"
-version := "7.0-dt-20211202Z-bf6251"
+version := "7.0-dt-20211202Z-225d8c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-481eb1",
-  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20220818Z-da4d4b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-0b4949",
+  "org.scalablytyped" %%% "ssh2-streams" % "v0.1.9-dt-20220818Z-f46bad",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

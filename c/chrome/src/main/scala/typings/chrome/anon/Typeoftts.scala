@@ -11,6 +11,8 @@ trait Typeoftts extends StObject {
   
   def getVoices(): Unit = js.native
   def getVoices(callback: js.Function1[/* voices */ js.Array[TtsVoice], Unit]): Unit = js.native
+  @JSName("getVoices")
+  def getVoices_Promise(): js.Promise[js.Array[TtsVoice]] = js.native
   
   def isSpeaking(): Unit = js.native
   def isSpeaking(callback: js.Function1[/* speaking */ Boolean, Unit]): Unit = js.native

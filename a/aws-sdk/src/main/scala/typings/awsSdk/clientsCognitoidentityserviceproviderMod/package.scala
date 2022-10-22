@@ -173,6 +173,13 @@ type DateType = js.Date
 */
 type DefaultEmailOptionType = _DefaultEmailOptionType | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - java.lang.String
+*/
+type DeletionProtectionType = _DeletionProtectionType | String
+
 type DeliveryMediumListType = js.Array[DeliveryMediumType]
 
 /* Rewritten from type alias, can be one of: 

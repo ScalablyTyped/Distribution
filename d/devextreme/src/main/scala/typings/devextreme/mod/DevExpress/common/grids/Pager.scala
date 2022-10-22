@@ -25,6 +25,11 @@ trait Pager extends StObject {
   var infoText: js.UndefOr[String] = js.undefined
   
   /**
+    * 
+    */
+  var label: js.UndefOr[String] = js.undefined
+  
+  /**
     * Specifies whether to show the page information.
     */
   var showInfo: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +71,10 @@ object Pager {
     inline def setInfoText(value: String): Self = StObject.set(x, "infoText", value.asInstanceOf[js.Any])
     
     inline def setInfoTextUndefined: Self = StObject.set(x, "infoText", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setShowInfo(value: Boolean): Self = StObject.set(x, "showInfo", value.asInstanceOf[js.Any])
     

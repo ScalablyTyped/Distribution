@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "babel-jest"
-version := "29.2.1-09e4b4"
+version := "29.2.1-bdde33"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-7b08cb",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-317949",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-27b6b7",
-  "org.scalablytyped" %%% "babel__parser" % "7.19.4-d9b25c",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1ba1f6",
+  "org.scalablytyped" %%% "babel__parser" % "7.19.6-e8951f",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-f33532",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-0e2ba7",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-1978dd",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20211223Z-1eb72d",
   "org.scalablytyped" %%% "istanbul-lib-report" % "3.0-dt-20211202Z-9f6295",
   "org.scalablytyped" %%% "istanbul-reports" % "3.0-dt-20211202Z-a20c7f",
   "org.scalablytyped" %%% "jest__schemas" % "29.0.0-505a1a",
-  "org.scalablytyped" %%% "jest__transform" % "29.2.1-6aad24",
-  "org.scalablytyped" %%% "jest__types" % "29.2.1-c1f734",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "jest__transform" % "29.2.1-a1b6fa",
+  "org.scalablytyped" %%% "jest__types" % "29.2.1-a1511a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "sinclair__typebox" % "0.24.42-6b8c7a",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

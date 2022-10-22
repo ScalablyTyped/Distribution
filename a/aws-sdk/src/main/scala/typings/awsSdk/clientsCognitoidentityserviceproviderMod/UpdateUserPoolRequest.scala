@@ -22,6 +22,11 @@ trait UpdateUserPoolRequest extends StObject {
   var AutoVerifiedAttributes: js.UndefOr[VerifiedAttributesListType] = js.undefined
   
   /**
+    * When active, DeletionProtection prevents accidental deletion of your user pool. Before you can delete a user pool that you have protected against deletion, you must deactivate this feature. When you try to delete a protected user pool in a DeleteUserPool API request, Amazon Cognito returns an InvalidParameterException error. To delete a protected user pool, send a new DeleteUserPool request after you deactivate deletion protection in an UpdateUserPool API request.
+    */
+  var DeletionProtection: js.UndefOr[DeletionProtectionType] = js.undefined
+  
+  /**
     * The device-remembering configuration for a user pool. A null value indicates that you have deactivated device remembering in your user pool.  When you provide a value for any DeviceConfiguration field, you activate the Amazon Cognito device-remembering feature. 
     */
   var DeviceConfiguration: js.UndefOr[DeviceConfigurationType] = js.undefined
@@ -118,6 +123,10 @@ object UpdateUserPoolRequest {
     inline def setAutoVerifiedAttributesUndefined: Self = StObject.set(x, "AutoVerifiedAttributes", js.undefined)
     
     inline def setAutoVerifiedAttributesVarargs(value: VerifiedAttributeType*): Self = StObject.set(x, "AutoVerifiedAttributes", js.Array(value*))
+    
+    inline def setDeletionProtection(value: DeletionProtectionType): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
+    
+    inline def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
     
     inline def setDeviceConfiguration(value: DeviceConfigurationType): Self = StObject.set(x, "DeviceConfiguration", value.asInstanceOf[js.Any])
     

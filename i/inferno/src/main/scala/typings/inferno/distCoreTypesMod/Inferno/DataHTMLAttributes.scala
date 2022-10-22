@@ -8,7 +8,7 @@ trait DataHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+  var value: js.UndefOr[String | js.Array[String] | Double | Null] = js.undefined
 }
 object DataHTMLAttributes {
   
@@ -20,6 +20,8 @@ object DataHTMLAttributes {
   extension [Self <: DataHTMLAttributes[?], T](x: Self & DataHTMLAttributes[T]) {
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

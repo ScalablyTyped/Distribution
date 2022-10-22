@@ -14,7 +14,7 @@ object distCoreComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("inferno/dist/core/component", "Component")
+  /* note: abstract class */ @JSImport("inferno/dist/core/component", "Component")
   @js.native
   open class Component[P, S] ()
     extends StObject
@@ -71,8 +71,8 @@ object distCoreComponentMod {
     
     @JSImport("inferno/dist/core/component", "Component.defaultProps")
     @js.native
-    def defaultProps: js.UndefOr[js.Object] = js.native
-    inline def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: js.UndefOr[js.Object | Null] = js.native
+    inline def defaultProps_=(x: js.UndefOr[js.Object | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("inferno/dist/core/component", "Component.getDerivedStateFromProps")
     @js.native

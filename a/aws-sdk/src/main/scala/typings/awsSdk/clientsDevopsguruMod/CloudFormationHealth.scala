@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloudFormationHealth extends StObject {
   
   /**
+    *  Number of resources that DevOps Guru is monitoring in your account that are specified by an Amazon Web Services CloudFormation stack. 
+    */
+  var AnalyzedResourceCount: js.UndefOr[typings.awsSdk.clientsDevopsguruMod.AnalyzedResourceCount] = js.undefined
+  
+  /**
     *  Information about the health of the Amazon Web Services resources in your account that are specified by an Amazon Web Services CloudFormation stack, including the number of open proactive, open reactive insights, and the Mean Time to Recover (MTTR) of closed insights. 
     */
   var Insight: js.UndefOr[InsightHealth] = js.undefined
@@ -24,6 +29,10 @@ object CloudFormationHealth {
   }
   
   extension [Self <: CloudFormationHealth](x: Self) {
+    
+    inline def setAnalyzedResourceCount(value: AnalyzedResourceCount): Self = StObject.set(x, "AnalyzedResourceCount", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzedResourceCountUndefined: Self = StObject.set(x, "AnalyzedResourceCount", js.undefined)
     
     inline def setInsight(value: InsightHealth): Self = StObject.set(x, "Insight", value.asInstanceOf[js.Any])
     

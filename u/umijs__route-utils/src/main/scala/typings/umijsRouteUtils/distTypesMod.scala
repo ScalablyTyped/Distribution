@@ -122,8 +122,7 @@ object distTypesMod {
     extends StObject
        with MenuDataItem {
     
-    @JSName("children")
-    var children_Route: js.UndefOr[js.Array[Route]] = js.undefined
+    var routes: js.UndefOr[js.Array[Route]] = js.undefined
   }
   object Route {
     
@@ -134,11 +133,11 @@ object distTypesMod {
     
     extension [Self <: Route](x: Self) {
       
-      inline def setChildren(value: js.Array[Route]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value*))
+      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
 }

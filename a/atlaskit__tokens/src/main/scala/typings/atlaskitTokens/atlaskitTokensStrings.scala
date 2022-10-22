@@ -1,9 +1,10 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.distTypesArtifactsRenameMappingMod._Token
-import typings.atlaskitTokens.distTypesArtifactsTypesInternalMod.InternalTokenIds
-import typings.atlaskitTokens.distTypesArtifactsTypesMod.ActiveTokens
-import typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+import typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianSpacingMod._Token
+import typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesInternalMod.InternalTokenIds
+import typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesMod.ActiveTokens
+import typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+import typings.atlaskitTokens.distTypesPalettesSpacingScaleMod.ScaleValues
 import typings.atlaskitTokens.distTypesTypesMod.Groups
 import typings.atlaskitTokens.distTypesTypesMod.PaletteCategory
 import typings.atlaskitTokens.distTypesTypesMod.Themes
@@ -819,6 +820,10 @@ object atlaskitTokensStrings {
   inline def `--ds-card`: `--ds-card` = "--ds-card".asInstanceOf[`--ds-card`]
   
   @js.native
+  sealed trait `--ds-container-gutter` extends StObject
+  inline def `--ds-container-gutter`: `--ds-container-gutter` = "--ds-container-gutter".asInstanceOf[`--ds-container-gutter`]
+  
+  @js.native
   sealed trait `--ds-icon` extends StObject
   inline def `--ds-icon`: `--ds-icon` = "--ds-icon".asInstanceOf[`--ds-icon`]
   
@@ -965,6 +970,54 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait `--ds-overlay-pressed` extends StObject
   inline def `--ds-overlay-pressed`: `--ds-overlay-pressed` = "--ds-overlay-pressed".asInstanceOf[`--ds-overlay-pressed`]
+  
+  @js.native
+  sealed trait `--ds-scale-0` extends StObject
+  inline def `--ds-scale-0`: `--ds-scale-0` = "--ds-scale-0".asInstanceOf[`--ds-scale-0`]
+  
+  @js.native
+  sealed trait `--ds-scale-025` extends StObject
+  inline def `--ds-scale-025`: `--ds-scale-025` = "--ds-scale-025".asInstanceOf[`--ds-scale-025`]
+  
+  @js.native
+  sealed trait `--ds-scale-050` extends StObject
+  inline def `--ds-scale-050`: `--ds-scale-050` = "--ds-scale-050".asInstanceOf[`--ds-scale-050`]
+  
+  @js.native
+  sealed trait `--ds-scale-075` extends StObject
+  inline def `--ds-scale-075`: `--ds-scale-075` = "--ds-scale-075".asInstanceOf[`--ds-scale-075`]
+  
+  @js.native
+  sealed trait `--ds-scale-100` extends StObject
+  inline def `--ds-scale-100`: `--ds-scale-100` = "--ds-scale-100".asInstanceOf[`--ds-scale-100`]
+  
+  @js.native
+  sealed trait `--ds-scale-150` extends StObject
+  inline def `--ds-scale-150`: `--ds-scale-150` = "--ds-scale-150".asInstanceOf[`--ds-scale-150`]
+  
+  @js.native
+  sealed trait `--ds-scale-200` extends StObject
+  inline def `--ds-scale-200`: `--ds-scale-200` = "--ds-scale-200".asInstanceOf[`--ds-scale-200`]
+  
+  @js.native
+  sealed trait `--ds-scale-250` extends StObject
+  inline def `--ds-scale-250`: `--ds-scale-250` = "--ds-scale-250".asInstanceOf[`--ds-scale-250`]
+  
+  @js.native
+  sealed trait `--ds-scale-300` extends StObject
+  inline def `--ds-scale-300`: `--ds-scale-300` = "--ds-scale-300".asInstanceOf[`--ds-scale-300`]
+  
+  @js.native
+  sealed trait `--ds-scale-400` extends StObject
+  inline def `--ds-scale-400`: `--ds-scale-400` = "--ds-scale-400".asInstanceOf[`--ds-scale-400`]
+  
+  @js.native
+  sealed trait `--ds-scale-500` extends StObject
+  inline def `--ds-scale-500`: `--ds-scale-500` = "--ds-scale-500".asInstanceOf[`--ds-scale-500`]
+  
+  @js.native
+  sealed trait `--ds-scale-600` extends StObject
+  inline def `--ds-scale-600`: `--ds-scale-600` = "--ds-scale-600".asInstanceOf[`--ds-scale-600`]
   
   @js.native
   sealed trait `--ds-shadow-overflow` extends StObject
@@ -1179,6 +1232,10 @@ object atlaskitTokensStrings {
   inline def `--ds-text-warning-inverse`: `--ds-text-warning-inverse` = "--ds-text-warning-inverse".asInstanceOf[`--ds-text-warning-inverse`]
   
   @js.native
+  sealed trait `0` extends StObject
+  inline def `0`: `0` = "0".asInstanceOf[`0`]
+  
+  @js.native
   sealed trait `0Dot2` extends StObject
   inline def `0Dot2`: `0Dot2` = "0.2".asInstanceOf[`0Dot2`]
   
@@ -1199,335 +1256,365 @@ object atlaskitTokensStrings {
   inline def `0px 8px 8px Numbersign091E4214Comma 0px 0px 1px Numbersign091E421F`: `0px 8px 8px Numbersign091E4214Comma 0px 0px 1px Numbersign091E421F` = ("0px 8px 8px #091E4214, 0px 0px 1px #091E421F").asInstanceOf[`0px 8px 8px Numbersign091E4214Comma 0px 0px 1px Numbersign091E421F`]
   
   @js.native
+  sealed trait `12px` extends StObject
+  inline def `12px`: `12px` = "12px".asInstanceOf[`12px`]
+  
+  @js.native
+  sealed trait `16px` extends StObject
+  inline def `16px`: `16px` = "16px".asInstanceOf[`16px`]
+  
+  @js.native
+  sealed trait `20px` extends StObject
+  inline def `20px`: `20px` = "20px".asInstanceOf[`20px`]
+  
+  @js.native
+  sealed trait `24px` extends StObject
+  inline def `24px`: `24px` = "24px".asInstanceOf[`24px`]
+  
+  @js.native
+  sealed trait `2px` extends StObject
+  inline def `2px`: `2px` = "2px".asInstanceOf[`2px`]
+  
+  @js.native
+  sealed trait `32px` extends StObject
+  inline def `32px`: `32px` = "32px".asInstanceOf[`32px`]
+  
+  @js.native
+  sealed trait `40px` extends StObject
+  inline def `40px`: `40px` = "40px".asInstanceOf[`40px`]
+  
+  @js.native
+  sealed trait `48px` extends StObject
+  inline def `48px`: `48px` = "48px".asInstanceOf[`48px`]
+  
+  @js.native
+  sealed trait `4px` extends StObject
+  inline def `4px`: `4px` = "4px".asInstanceOf[`4px`]
+  
+  @js.native
+  sealed trait `6px` extends StObject
+  inline def `6px`: `6px` = "6px".asInstanceOf[`6px`]
+  
+  @js.native
+  sealed trait `8px` extends StObject
+  inline def `8px`: `8px` = "8px".asInstanceOf[`8px`]
+  
+  @js.native
   sealed trait B100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B100: B100 = "B100".asInstanceOf[B100]
-  
-  @js.native
-  sealed trait B1000
-    extends StObject
-       with PaletteValues
-  inline def B1000: B1000 = "B1000".asInstanceOf[B1000]
   
   @js.native
   sealed trait B200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B200: B200 = "B200".asInstanceOf[B200]
   
   @js.native
   sealed trait B300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B300: B300 = "B300".asInstanceOf[B300]
   
   @js.native
   sealed trait B400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B400: B400 = "B400".asInstanceOf[B400]
   
   @js.native
   sealed trait B50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def B50: B50 = "B50".asInstanceOf[B50]
   
   @js.native
   sealed trait B500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def B500: B500 = "B500".asInstanceOf[B500]
-  
-  @js.native
-  sealed trait B600
-    extends StObject
-       with PaletteValues
-  inline def B600: B600 = "B600".asInstanceOf[B600]
-  
-  @js.native
-  sealed trait B700
-    extends StObject
-       with PaletteValues
-  inline def B700: B700 = "B700".asInstanceOf[B700]
   
   @js.native
   sealed trait B75
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def B75: B75 = "B75".asInstanceOf[B75]
   
   @js.native
-  sealed trait B800
+  sealed trait Blue100
     extends StObject
-       with PaletteValues
-  inline def B800: B800 = "B800".asInstanceOf[B800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue100: Blue100 = "Blue100".asInstanceOf[Blue100]
   
   @js.native
-  sealed trait B900
+  sealed trait Blue1000
     extends StObject
-       with PaletteValues
-  inline def B900: B900 = "B900".asInstanceOf[B900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue1000: Blue1000 = "Blue1000".asInstanceOf[Blue1000]
   
   @js.native
-  sealed trait `DN-100`
+  sealed trait Blue200
     extends StObject
-       with PaletteValues
-  inline def `DN-100`: `DN-100` = "DN-100".asInstanceOf[`DN-100`]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue200: Blue200 = "Blue200".asInstanceOf[Blue200]
   
   @js.native
-  sealed trait `DN-100A`
+  sealed trait Blue300
     extends StObject
-       with PaletteValues
-  inline def `DN-100A`: `DN-100A` = "DN-100A".asInstanceOf[`DN-100A`]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue300: Blue300 = "Blue300".asInstanceOf[Blue300]
+  
+  @js.native
+  sealed trait Blue400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue400: Blue400 = "Blue400".asInstanceOf[Blue400]
+  
+  @js.native
+  sealed trait Blue500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue500: Blue500 = "Blue500".asInstanceOf[Blue500]
+  
+  @js.native
+  sealed trait Blue600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue600: Blue600 = "Blue600".asInstanceOf[Blue600]
+  
+  @js.native
+  sealed trait Blue700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue700: Blue700 = "Blue700".asInstanceOf[Blue700]
+  
+  @js.native
+  sealed trait Blue800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue800: Blue800 = "Blue800".asInstanceOf[Blue800]
+  
+  @js.native
+  sealed trait Blue900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Blue900: Blue900 = "Blue900".asInstanceOf[Blue900]
   
   @js.native
   sealed trait DN0
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN0: DN0 = "DN0".asInstanceOf[DN0]
   
   @js.native
   sealed trait DN10
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN10: DN10 = "DN10".asInstanceOf[DN10]
   
   @js.native
   sealed trait DN100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN100: DN100 = "DN100".asInstanceOf[DN100]
-  
-  @js.native
-  sealed trait DN1000
-    extends StObject
-       with PaletteValues
-  inline def DN1000: DN1000 = "DN1000".asInstanceOf[DN1000]
   
   @js.native
   sealed trait DN100A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN100A: DN100A = "DN100A".asInstanceOf[DN100A]
   
   @js.native
   sealed trait DN10A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
-  inline def DN10A: DN10A = "DN10A".asInstanceOf[DN10A]
-  
-  @js.native
-  sealed trait DN1100
-    extends StObject
        with PaletteValues
-  inline def DN1100: DN1100 = "DN1100".asInstanceOf[DN1100]
+  inline def DN10A: DN10A = "DN10A".asInstanceOf[DN10A]
   
   @js.native
   sealed trait DN20
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN20: DN20 = "DN20".asInstanceOf[DN20]
   
   @js.native
   sealed trait DN200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN200: DN200 = "DN200".asInstanceOf[DN200]
   
   @js.native
   sealed trait DN200A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN200A: DN200A = "DN200A".asInstanceOf[DN200A]
   
   @js.native
   sealed trait DN20A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN20A: DN20A = "DN20A".asInstanceOf[DN20A]
   
   @js.native
   sealed trait DN30
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN30: DN30 = "DN30".asInstanceOf[DN30]
   
   @js.native
   sealed trait DN300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN300: DN300 = "DN300".asInstanceOf[DN300]
   
   @js.native
   sealed trait DN300A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN300A: DN300A = "DN300A".asInstanceOf[DN300A]
   
   @js.native
   sealed trait DN30A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN30A: DN30A = "DN30A".asInstanceOf[DN30A]
   
   @js.native
   sealed trait DN40
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN40: DN40 = "DN40".asInstanceOf[DN40]
   
   @js.native
   sealed trait DN400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN400: DN400 = "DN400".asInstanceOf[DN400]
   
   @js.native
   sealed trait DN400A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN400A: DN400A = "DN400A".asInstanceOf[DN400A]
   
   @js.native
   sealed trait DN40A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN40A: DN40A = "DN40A".asInstanceOf[DN40A]
   
   @js.native
   sealed trait DN50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN50: DN50 = "DN50".asInstanceOf[DN50]
   
   @js.native
   sealed trait DN500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN500: DN500 = "DN500".asInstanceOf[DN500]
   
   @js.native
   sealed trait DN500A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN500A: DN500A = "DN500A".asInstanceOf[DN500A]
   
   @js.native
   sealed trait DN50A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN50A: DN50A = "DN50A".asInstanceOf[DN50A]
   
   @js.native
   sealed trait DN60
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN60: DN60 = "DN60".asInstanceOf[DN60]
   
   @js.native
   sealed trait DN600
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN600: DN600 = "DN600".asInstanceOf[DN600]
   
   @js.native
   sealed trait DN600A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN600A: DN600A = "DN600A".asInstanceOf[DN600A]
   
   @js.native
   sealed trait DN60A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN60A: DN60A = "DN60A".asInstanceOf[DN60A]
   
   @js.native
   sealed trait DN70
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN70: DN70 = "DN70".asInstanceOf[DN70]
   
   @js.native
   sealed trait DN700
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN700: DN700 = "DN700".asInstanceOf[DN700]
   
   @js.native
   sealed trait DN700A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN700A: DN700A = "DN700A".asInstanceOf[DN700A]
   
   @js.native
   sealed trait DN70A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN70A: DN70A = "DN70A".asInstanceOf[DN70A]
   
   @js.native
   sealed trait DN80
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN80: DN80 = "DN80".asInstanceOf[DN80]
   
   @js.native
   sealed trait DN800
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN800: DN800 = "DN800".asInstanceOf[DN800]
   
   @js.native
   sealed trait DN800A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN800A: DN800A = "DN800A".asInstanceOf[DN800A]
   
   @js.native
   sealed trait DN80A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN80A: DN80A = "DN80A".asInstanceOf[DN80A]
   
   @js.native
   sealed trait DN90
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN90: DN90 = "DN90".asInstanceOf[DN90]
   
   @js.native
   sealed trait DN900
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def DN900: DN900 = "DN900".asInstanceOf[DN900]
   
   @js.native
   sealed trait DN90A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def DN90A: DN90A = "DN90A".asInstanceOf[DN90A]
   
   @js.native
@@ -1535,392 +1622,606 @@ object atlaskitTokensStrings {
   inline def DROP_SHADOW: DROP_SHADOW = "DROP_SHADOW".asInstanceOf[DROP_SHADOW]
   
   @js.native
+  sealed trait `DarkNeutral-100`
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def `DarkNeutral-100`: `DarkNeutral-100` = "DarkNeutral-100".asInstanceOf[`DarkNeutral-100`]
+  
+  @js.native
+  sealed trait `DarkNeutral-100A`
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def `DarkNeutral-100A`: `DarkNeutral-100A` = "DarkNeutral-100A".asInstanceOf[`DarkNeutral-100A`]
+  
+  @js.native
+  sealed trait DarkNeutral0
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral0: DarkNeutral0 = "DarkNeutral0".asInstanceOf[DarkNeutral0]
+  
+  @js.native
+  sealed trait DarkNeutral100
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral100: DarkNeutral100 = "DarkNeutral100".asInstanceOf[DarkNeutral100]
+  
+  @js.native
+  sealed trait DarkNeutral1000
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral1000: DarkNeutral1000 = "DarkNeutral1000".asInstanceOf[DarkNeutral1000]
+  
+  @js.native
+  sealed trait DarkNeutral100A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral100A: DarkNeutral100A = "DarkNeutral100A".asInstanceOf[DarkNeutral100A]
+  
+  @js.native
+  sealed trait DarkNeutral1100
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral1100: DarkNeutral1100 = "DarkNeutral1100".asInstanceOf[DarkNeutral1100]
+  
+  @js.native
+  sealed trait DarkNeutral200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral200: DarkNeutral200 = "DarkNeutral200".asInstanceOf[DarkNeutral200]
+  
+  @js.native
+  sealed trait DarkNeutral200A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral200A: DarkNeutral200A = "DarkNeutral200A".asInstanceOf[DarkNeutral200A]
+  
+  @js.native
+  sealed trait DarkNeutral300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral300: DarkNeutral300 = "DarkNeutral300".asInstanceOf[DarkNeutral300]
+  
+  @js.native
+  sealed trait DarkNeutral300A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral300A: DarkNeutral300A = "DarkNeutral300A".asInstanceOf[DarkNeutral300A]
+  
+  @js.native
+  sealed trait DarkNeutral400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral400: DarkNeutral400 = "DarkNeutral400".asInstanceOf[DarkNeutral400]
+  
+  @js.native
+  sealed trait DarkNeutral400A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral400A: DarkNeutral400A = "DarkNeutral400A".asInstanceOf[DarkNeutral400A]
+  
+  @js.native
+  sealed trait DarkNeutral500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral500: DarkNeutral500 = "DarkNeutral500".asInstanceOf[DarkNeutral500]
+  
+  @js.native
+  sealed trait DarkNeutral500A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral500A: DarkNeutral500A = "DarkNeutral500A".asInstanceOf[DarkNeutral500A]
+  
+  @js.native
+  sealed trait DarkNeutral600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral600: DarkNeutral600 = "DarkNeutral600".asInstanceOf[DarkNeutral600]
+  
+  @js.native
+  sealed trait DarkNeutral700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral700: DarkNeutral700 = "DarkNeutral700".asInstanceOf[DarkNeutral700]
+  
+  @js.native
+  sealed trait DarkNeutral800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral800: DarkNeutral800 = "DarkNeutral800".asInstanceOf[DarkNeutral800]
+  
+  @js.native
+  sealed trait DarkNeutral900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def DarkNeutral900: DarkNeutral900 = "DarkNeutral900".asInstanceOf[DarkNeutral900]
+  
+  @js.native
   sealed trait G100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G100: G100 = "G100".asInstanceOf[G100]
-  
-  @js.native
-  sealed trait G1000
-    extends StObject
-       with PaletteValues
-  inline def G1000: G1000 = "G1000".asInstanceOf[G1000]
   
   @js.native
   sealed trait G200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G200: G200 = "G200".asInstanceOf[G200]
   
   @js.native
   sealed trait G300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G300: G300 = "G300".asInstanceOf[G300]
   
   @js.native
   sealed trait G400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G400: G400 = "G400".asInstanceOf[G400]
   
   @js.native
   sealed trait G50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def G50: G50 = "G50".asInstanceOf[G50]
   
   @js.native
   sealed trait G500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def G500: G500 = "G500".asInstanceOf[G500]
-  
-  @js.native
-  sealed trait G600
-    extends StObject
-       with PaletteValues
-  inline def G600: G600 = "G600".asInstanceOf[G600]
-  
-  @js.native
-  sealed trait G700
-    extends StObject
-       with PaletteValues
-  inline def G700: G700 = "G700".asInstanceOf[G700]
   
   @js.native
   sealed trait G75
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def G75: G75 = "G75".asInstanceOf[G75]
   
   @js.native
-  sealed trait G800
+  sealed trait Green100
     extends StObject
-       with PaletteValues
-  inline def G800: G800 = "G800".asInstanceOf[G800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green100: Green100 = "Green100".asInstanceOf[Green100]
   
   @js.native
-  sealed trait G900
+  sealed trait Green1000
     extends StObject
-       with PaletteValues
-  inline def G900: G900 = "G900".asInstanceOf[G900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green1000: Green1000 = "Green1000".asInstanceOf[Green1000]
+  
+  @js.native
+  sealed trait Green200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green200: Green200 = "Green200".asInstanceOf[Green200]
+  
+  @js.native
+  sealed trait Green300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green300: Green300 = "Green300".asInstanceOf[Green300]
+  
+  @js.native
+  sealed trait Green400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green400: Green400 = "Green400".asInstanceOf[Green400]
+  
+  @js.native
+  sealed trait Green500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green500: Green500 = "Green500".asInstanceOf[Green500]
+  
+  @js.native
+  sealed trait Green600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green600: Green600 = "Green600".asInstanceOf[Green600]
+  
+  @js.native
+  sealed trait Green700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green700: Green700 = "Green700".asInstanceOf[Green700]
+  
+  @js.native
+  sealed trait Green800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green800: Green800 = "Green800".asInstanceOf[Green800]
+  
+  @js.native
+  sealed trait Green900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Green900: Green900 = "Green900".asInstanceOf[Green900]
   
   @js.native
   sealed trait INNER_SHADOW extends StObject
   inline def INNER_SHADOW: INNER_SHADOW = "INNER_SHADOW".asInstanceOf[INNER_SHADOW]
   
   @js.native
-  sealed trait M100
+  sealed trait Magenta100
     extends StObject
-       with PaletteValues
-  inline def M100: M100 = "M100".asInstanceOf[M100]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta100: Magenta100 = "Magenta100".asInstanceOf[Magenta100]
   
   @js.native
-  sealed trait M1000
+  sealed trait Magenta1000
     extends StObject
-       with PaletteValues
-  inline def M1000: M1000 = "M1000".asInstanceOf[M1000]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta1000: Magenta1000 = "Magenta1000".asInstanceOf[Magenta1000]
   
   @js.native
-  sealed trait M200
+  sealed trait Magenta200
     extends StObject
-       with PaletteValues
-  inline def M200: M200 = "M200".asInstanceOf[M200]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta200: Magenta200 = "Magenta200".asInstanceOf[Magenta200]
   
   @js.native
-  sealed trait M300
+  sealed trait Magenta300
     extends StObject
-       with PaletteValues
-  inline def M300: M300 = "M300".asInstanceOf[M300]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta300: Magenta300 = "Magenta300".asInstanceOf[Magenta300]
   
   @js.native
-  sealed trait M400
+  sealed trait Magenta400
     extends StObject
-       with PaletteValues
-  inline def M400: M400 = "M400".asInstanceOf[M400]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta400: Magenta400 = "Magenta400".asInstanceOf[Magenta400]
   
   @js.native
-  sealed trait M500
+  sealed trait Magenta500
     extends StObject
-       with PaletteValues
-  inline def M500: M500 = "M500".asInstanceOf[M500]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta500: Magenta500 = "Magenta500".asInstanceOf[Magenta500]
   
   @js.native
-  sealed trait M600
+  sealed trait Magenta600
     extends StObject
-       with PaletteValues
-  inline def M600: M600 = "M600".asInstanceOf[M600]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta600: Magenta600 = "Magenta600".asInstanceOf[Magenta600]
   
   @js.native
-  sealed trait M700
+  sealed trait Magenta700
     extends StObject
-       with PaletteValues
-  inline def M700: M700 = "M700".asInstanceOf[M700]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta700: Magenta700 = "Magenta700".asInstanceOf[Magenta700]
   
   @js.native
-  sealed trait M800
+  sealed trait Magenta800
     extends StObject
-       with PaletteValues
-  inline def M800: M800 = "M800".asInstanceOf[M800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta800: Magenta800 = "Magenta800".asInstanceOf[Magenta800]
   
   @js.native
-  sealed trait M900
+  sealed trait Magenta900
     extends StObject
-       with PaletteValues
-  inline def M900: M900 = "M900".asInstanceOf[M900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Magenta900: Magenta900 = "Magenta900".asInstanceOf[Magenta900]
   
   @js.native
   sealed trait N0
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N0: N0 = "N0".asInstanceOf[N0]
   
   @js.native
   sealed trait N10
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N10: N10 = "N10".asInstanceOf[N10]
   
   @js.native
   sealed trait N100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N100: N100 = "N100".asInstanceOf[N100]
-  
-  @js.native
-  sealed trait N1000
-    extends StObject
-       with PaletteValues
-  inline def N1000: N1000 = "N1000".asInstanceOf[N1000]
   
   @js.native
   sealed trait N100A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N100A: N100A = "N100A".asInstanceOf[N100A]
   
   @js.native
   sealed trait N10A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
-  inline def N10A: N10A = "N10A".asInstanceOf[N10A]
-  
-  @js.native
-  sealed trait N1100
-    extends StObject
        with PaletteValues
-  inline def N1100: N1100 = "N1100".asInstanceOf[N1100]
+  inline def N10A: N10A = "N10A".asInstanceOf[N10A]
   
   @js.native
   sealed trait N20
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N20: N20 = "N20".asInstanceOf[N20]
   
   @js.native
   sealed trait N200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N200: N200 = "N200".asInstanceOf[N200]
   
   @js.native
   sealed trait N200A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N200A: N200A = "N200A".asInstanceOf[N200A]
   
   @js.native
   sealed trait N20A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N20A: N20A = "N20A".asInstanceOf[N20A]
   
   @js.native
   sealed trait N30
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N30: N30 = "N30".asInstanceOf[N30]
   
   @js.native
   sealed trait N300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N300: N300 = "N300".asInstanceOf[N300]
   
   @js.native
   sealed trait N300A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N300A: N300A = "N300A".asInstanceOf[N300A]
   
   @js.native
   sealed trait N30A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N30A: N30A = "N30A".asInstanceOf[N30A]
   
   @js.native
   sealed trait N40
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N40: N40 = "N40".asInstanceOf[N40]
   
   @js.native
   sealed trait N400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N400: N400 = "N400".asInstanceOf[N400]
   
   @js.native
   sealed trait N400A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N400A: N400A = "N400A".asInstanceOf[N400A]
   
   @js.native
   sealed trait N40A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N40A: N40A = "N40A".asInstanceOf[N40A]
   
   @js.native
   sealed trait N50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N50: N50 = "N50".asInstanceOf[N50]
   
   @js.native
   sealed trait N500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N500: N500 = "N500".asInstanceOf[N500]
   
   @js.native
   sealed trait N500A
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N500A: N500A = "N500A".asInstanceOf[N500A]
   
   @js.native
   sealed trait N50A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N50A: N50A = "N50A".asInstanceOf[N50A]
   
   @js.native
   sealed trait N60
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N60: N60 = "N60".asInstanceOf[N60]
   
   @js.native
   sealed trait N600
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N600: N600 = "N600".asInstanceOf[N600]
   
   @js.native
   sealed trait N600A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N600A: N600A = "N600A".asInstanceOf[N600A]
   
   @js.native
   sealed trait N60A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N60A: N60A = "N60A".asInstanceOf[N60A]
   
   @js.native
   sealed trait N70
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N70: N70 = "N70".asInstanceOf[N70]
   
   @js.native
   sealed trait N700
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N700: N700 = "N700".asInstanceOf[N700]
   
   @js.native
   sealed trait N700A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N700A: N700A = "N700A".asInstanceOf[N700A]
   
   @js.native
   sealed trait N70A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N70A: N70A = "N70A".asInstanceOf[N70A]
   
   @js.native
   sealed trait N80
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N80: N80 = "N80".asInstanceOf[N80]
   
   @js.native
   sealed trait N800
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N800: N800 = "N800".asInstanceOf[N800]
   
   @js.native
   sealed trait N800A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N800A: N800A = "N800A".asInstanceOf[N800A]
   
   @js.native
   sealed trait N80A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N80A: N80A = "N80A".asInstanceOf[N80A]
   
   @js.native
   sealed trait N90
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N90: N90 = "N90".asInstanceOf[N90]
   
   @js.native
   sealed trait N900
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def N900: N900 = "N900".asInstanceOf[N900]
   
   @js.native
   sealed trait N90A
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def N90A: N90A = "N90A".asInstanceOf[N90A]
   
   @js.native
   sealed trait NORMAL extends StObject
   inline def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
+  
+  @js.native
+  sealed trait Neutral0
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral0: Neutral0 = "Neutral0".asInstanceOf[Neutral0]
+  
+  @js.native
+  sealed trait Neutral100
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral100: Neutral100 = "Neutral100".asInstanceOf[Neutral100]
+  
+  @js.native
+  sealed trait Neutral1000
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral1000: Neutral1000 = "Neutral1000".asInstanceOf[Neutral1000]
+  
+  @js.native
+  sealed trait Neutral100A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral100A: Neutral100A = "Neutral100A".asInstanceOf[Neutral100A]
+  
+  @js.native
+  sealed trait Neutral1100
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral1100: Neutral1100 = "Neutral1100".asInstanceOf[Neutral1100]
+  
+  @js.native
+  sealed trait Neutral200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral200: Neutral200 = "Neutral200".asInstanceOf[Neutral200]
+  
+  @js.native
+  sealed trait Neutral200A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral200A: Neutral200A = "Neutral200A".asInstanceOf[Neutral200A]
+  
+  @js.native
+  sealed trait Neutral300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral300: Neutral300 = "Neutral300".asInstanceOf[Neutral300]
+  
+  @js.native
+  sealed trait Neutral300A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral300A: Neutral300A = "Neutral300A".asInstanceOf[Neutral300A]
+  
+  @js.native
+  sealed trait Neutral400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral400: Neutral400 = "Neutral400".asInstanceOf[Neutral400]
+  
+  @js.native
+  sealed trait Neutral400A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral400A: Neutral400A = "Neutral400A".asInstanceOf[Neutral400A]
+  
+  @js.native
+  sealed trait Neutral500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral500: Neutral500 = "Neutral500".asInstanceOf[Neutral500]
+  
+  @js.native
+  sealed trait Neutral500A
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral500A: Neutral500A = "Neutral500A".asInstanceOf[Neutral500A]
+  
+  @js.native
+  sealed trait Neutral600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral600: Neutral600 = "Neutral600".asInstanceOf[Neutral600]
+  
+  @js.native
+  sealed trait Neutral700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral700: Neutral700 = "Neutral700".asInstanceOf[Neutral700]
+  
+  @js.native
+  sealed trait Neutral800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral800: Neutral800 = "Neutral800".asInstanceOf[Neutral800]
+  
+  @js.native
+  sealed trait Neutral900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Neutral900: Neutral900 = "Neutral900".asInstanceOf[Neutral900]
   
   @js.native
   sealed trait Numbersign00000000 extends StObject
@@ -2267,376 +2568,548 @@ object atlaskitTokensStrings {
   inline def NumbersignFFFFFF29: NumbersignFFFFFF29 = "#FFFFFF29".asInstanceOf[NumbersignFFFFFF29]
   
   @js.native
-  sealed trait O100
+  sealed trait Orange100
     extends StObject
-       with PaletteValues
-  inline def O100: O100 = "O100".asInstanceOf[O100]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange100: Orange100 = "Orange100".asInstanceOf[Orange100]
   
   @js.native
-  sealed trait O1000
+  sealed trait Orange1000
     extends StObject
-       with PaletteValues
-  inline def O1000: O1000 = "O1000".asInstanceOf[O1000]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange1000: Orange1000 = "Orange1000".asInstanceOf[Orange1000]
   
   @js.native
-  sealed trait O200
+  sealed trait Orange200
     extends StObject
-       with PaletteValues
-  inline def O200: O200 = "O200".asInstanceOf[O200]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange200: Orange200 = "Orange200".asInstanceOf[Orange200]
   
   @js.native
-  sealed trait O300
+  sealed trait Orange300
     extends StObject
-       with PaletteValues
-  inline def O300: O300 = "O300".asInstanceOf[O300]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange300: Orange300 = "Orange300".asInstanceOf[Orange300]
   
   @js.native
-  sealed trait O400
+  sealed trait Orange400
     extends StObject
-       with PaletteValues
-  inline def O400: O400 = "O400".asInstanceOf[O400]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange400: Orange400 = "Orange400".asInstanceOf[Orange400]
   
   @js.native
-  sealed trait O500
+  sealed trait Orange500
     extends StObject
-       with PaletteValues
-  inline def O500: O500 = "O500".asInstanceOf[O500]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange500: Orange500 = "Orange500".asInstanceOf[Orange500]
   
   @js.native
-  sealed trait O600
+  sealed trait Orange600
     extends StObject
-       with PaletteValues
-  inline def O600: O600 = "O600".asInstanceOf[O600]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange600: Orange600 = "Orange600".asInstanceOf[Orange600]
   
   @js.native
-  sealed trait O700
+  sealed trait Orange700
     extends StObject
-       with PaletteValues
-  inline def O700: O700 = "O700".asInstanceOf[O700]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange700: Orange700 = "Orange700".asInstanceOf[Orange700]
   
   @js.native
-  sealed trait O800
+  sealed trait Orange800
     extends StObject
-       with PaletteValues
-  inline def O800: O800 = "O800".asInstanceOf[O800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange800: Orange800 = "Orange800".asInstanceOf[Orange800]
   
   @js.native
-  sealed trait O900
+  sealed trait Orange900
     extends StObject
-       with PaletteValues
-  inline def O900: O900 = "O900".asInstanceOf[O900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Orange900: Orange900 = "Orange900".asInstanceOf[Orange900]
   
   @js.native
   sealed trait P100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P100: P100 = "P100".asInstanceOf[P100]
-  
-  @js.native
-  sealed trait P1000
-    extends StObject
-       with PaletteValues
-  inline def P1000: P1000 = "P1000".asInstanceOf[P1000]
   
   @js.native
   sealed trait P200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P200: P200 = "P200".asInstanceOf[P200]
   
   @js.native
   sealed trait P300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P300: P300 = "P300".asInstanceOf[P300]
   
   @js.native
   sealed trait P400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P400: P400 = "P400".asInstanceOf[P400]
   
   @js.native
   sealed trait P50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def P50: P50 = "P50".asInstanceOf[P50]
   
   @js.native
   sealed trait P500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def P500: P500 = "P500".asInstanceOf[P500]
-  
-  @js.native
-  sealed trait P600
-    extends StObject
-       with PaletteValues
-  inline def P600: P600 = "P600".asInstanceOf[P600]
-  
-  @js.native
-  sealed trait P700
-    extends StObject
-       with PaletteValues
-  inline def P700: P700 = "P700".asInstanceOf[P700]
   
   @js.native
   sealed trait P75
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def P75: P75 = "P75".asInstanceOf[P75]
   
   @js.native
-  sealed trait P800
+  sealed trait Purple100
     extends StObject
-       with PaletteValues
-  inline def P800: P800 = "P800".asInstanceOf[P800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple100: Purple100 = "Purple100".asInstanceOf[Purple100]
   
   @js.native
-  sealed trait P900
+  sealed trait Purple1000
     extends StObject
-       with PaletteValues
-  inline def P900: P900 = "P900".asInstanceOf[P900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple1000: Purple1000 = "Purple1000".asInstanceOf[Purple1000]
+  
+  @js.native
+  sealed trait Purple200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple200: Purple200 = "Purple200".asInstanceOf[Purple200]
+  
+  @js.native
+  sealed trait Purple300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple300: Purple300 = "Purple300".asInstanceOf[Purple300]
+  
+  @js.native
+  sealed trait Purple400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple400: Purple400 = "Purple400".asInstanceOf[Purple400]
+  
+  @js.native
+  sealed trait Purple500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple500: Purple500 = "Purple500".asInstanceOf[Purple500]
+  
+  @js.native
+  sealed trait Purple600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple600: Purple600 = "Purple600".asInstanceOf[Purple600]
+  
+  @js.native
+  sealed trait Purple700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple700: Purple700 = "Purple700".asInstanceOf[Purple700]
+  
+  @js.native
+  sealed trait Purple800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple800: Purple800 = "Purple800".asInstanceOf[Purple800]
+  
+  @js.native
+  sealed trait Purple900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Purple900: Purple900 = "Purple900".asInstanceOf[Purple900]
   
   @js.native
   sealed trait R100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R100: R100 = "R100".asInstanceOf[R100]
-  
-  @js.native
-  sealed trait R1000
-    extends StObject
-       with PaletteValues
-  inline def R1000: R1000 = "R1000".asInstanceOf[R1000]
   
   @js.native
   sealed trait R200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R200: R200 = "R200".asInstanceOf[R200]
   
   @js.native
   sealed trait R300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R300: R300 = "R300".asInstanceOf[R300]
   
   @js.native
   sealed trait R400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R400: R400 = "R400".asInstanceOf[R400]
   
   @js.native
   sealed trait R50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def R50: R50 = "R50".asInstanceOf[R50]
   
   @js.native
   sealed trait R500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def R500: R500 = "R500".asInstanceOf[R500]
-  
-  @js.native
-  sealed trait R600
-    extends StObject
-       with PaletteValues
-  inline def R600: R600 = "R600".asInstanceOf[R600]
-  
-  @js.native
-  sealed trait R700
-    extends StObject
-       with PaletteValues
-  inline def R700: R700 = "R700".asInstanceOf[R700]
   
   @js.native
   sealed trait R75
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def R75: R75 = "R75".asInstanceOf[R75]
   
   @js.native
-  sealed trait R800
+  sealed trait Red100
     extends StObject
-       with PaletteValues
-  inline def R800: R800 = "R800".asInstanceOf[R800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red100: Red100 = "Red100".asInstanceOf[Red100]
   
   @js.native
-  sealed trait R900
+  sealed trait Red1000
     extends StObject
-       with PaletteValues
-  inline def R900: R900 = "R900".asInstanceOf[R900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red1000: Red1000 = "Red1000".asInstanceOf[Red1000]
+  
+  @js.native
+  sealed trait Red200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red200: Red200 = "Red200".asInstanceOf[Red200]
+  
+  @js.native
+  sealed trait Red300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red300: Red300 = "Red300".asInstanceOf[Red300]
+  
+  @js.native
+  sealed trait Red400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red400: Red400 = "Red400".asInstanceOf[Red400]
+  
+  @js.native
+  sealed trait Red500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red500: Red500 = "Red500".asInstanceOf[Red500]
+  
+  @js.native
+  sealed trait Red600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red600: Red600 = "Red600".asInstanceOf[Red600]
+  
+  @js.native
+  sealed trait Red700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red700: Red700 = "Red700".asInstanceOf[Red700]
+  
+  @js.native
+  sealed trait Red800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red800: Red800 = "Red800".asInstanceOf[Red800]
+  
+  @js.native
+  sealed trait Red900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Red900: Red900 = "Red900".asInstanceOf[Red900]
   
   @js.native
   sealed trait SOLID extends StObject
   inline def SOLID: SOLID = "SOLID".asInstanceOf[SOLID]
   
   @js.native
+  sealed trait Space0
+    extends StObject
+       with ScaleValues
+  inline def Space0: Space0 = "Space0".asInstanceOf[Space0]
+  
+  @js.native
+  sealed trait Space025
+    extends StObject
+       with ScaleValues
+  inline def Space025: Space025 = "Space025".asInstanceOf[Space025]
+  
+  @js.native
+  sealed trait Space050
+    extends StObject
+       with ScaleValues
+  inline def Space050: Space050 = "Space050".asInstanceOf[Space050]
+  
+  @js.native
+  sealed trait Space075
+    extends StObject
+       with ScaleValues
+  inline def Space075: Space075 = "Space075".asInstanceOf[Space075]
+  
+  @js.native
+  sealed trait Space100
+    extends StObject
+       with ScaleValues
+  inline def Space100: Space100 = "Space100".asInstanceOf[Space100]
+  
+  @js.native
+  sealed trait Space150
+    extends StObject
+       with ScaleValues
+  inline def Space150: Space150 = "Space150".asInstanceOf[Space150]
+  
+  @js.native
+  sealed trait Space200
+    extends StObject
+       with ScaleValues
+  inline def Space200: Space200 = "Space200".asInstanceOf[Space200]
+  
+  @js.native
+  sealed trait Space250
+    extends StObject
+       with ScaleValues
+  inline def Space250: Space250 = "Space250".asInstanceOf[Space250]
+  
+  @js.native
+  sealed trait Space300
+    extends StObject
+       with ScaleValues
+  inline def Space300: Space300 = "Space300".asInstanceOf[Space300]
+  
+  @js.native
+  sealed trait Space400
+    extends StObject
+       with ScaleValues
+  inline def Space400: Space400 = "Space400".asInstanceOf[Space400]
+  
+  @js.native
+  sealed trait Space500
+    extends StObject
+       with ScaleValues
+  inline def Space500: Space500 = "Space500".asInstanceOf[Space500]
+  
+  @js.native
+  sealed trait Space600
+    extends StObject
+       with ScaleValues
+  inline def Space600: Space600 = "Space600".asInstanceOf[Space600]
+  
+  @js.native
   sealed trait T100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T100: T100 = "T100".asInstanceOf[T100]
-  
-  @js.native
-  sealed trait T1000
-    extends StObject
-       with PaletteValues
-  inline def T1000: T1000 = "T1000".asInstanceOf[T1000]
   
   @js.native
   sealed trait T200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T200: T200 = "T200".asInstanceOf[T200]
   
   @js.native
   sealed trait T300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T300: T300 = "T300".asInstanceOf[T300]
   
   @js.native
   sealed trait T400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T400: T400 = "T400".asInstanceOf[T400]
   
   @js.native
   sealed trait T50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def T50: T50 = "T50".asInstanceOf[T50]
   
   @js.native
   sealed trait T500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def T500: T500 = "T500".asInstanceOf[T500]
-  
-  @js.native
-  sealed trait T600
-    extends StObject
-       with PaletteValues
-  inline def T600: T600 = "T600".asInstanceOf[T600]
-  
-  @js.native
-  sealed trait T700
-    extends StObject
-       with PaletteValues
-  inline def T700: T700 = "T700".asInstanceOf[T700]
   
   @js.native
   sealed trait T75
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def T75: T75 = "T75".asInstanceOf[T75]
   
   @js.native
-  sealed trait T800
+  sealed trait Teal100
     extends StObject
-       with PaletteValues
-  inline def T800: T800 = "T800".asInstanceOf[T800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal100: Teal100 = "Teal100".asInstanceOf[Teal100]
   
   @js.native
-  sealed trait T900
+  sealed trait Teal1000
     extends StObject
-       with PaletteValues
-  inline def T900: T900 = "T900".asInstanceOf[T900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal1000: Teal1000 = "Teal1000".asInstanceOf[Teal1000]
+  
+  @js.native
+  sealed trait Teal200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal200: Teal200 = "Teal200".asInstanceOf[Teal200]
+  
+  @js.native
+  sealed trait Teal300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal300: Teal300 = "Teal300".asInstanceOf[Teal300]
+  
+  @js.native
+  sealed trait Teal400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal400: Teal400 = "Teal400".asInstanceOf[Teal400]
+  
+  @js.native
+  sealed trait Teal500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal500: Teal500 = "Teal500".asInstanceOf[Teal500]
+  
+  @js.native
+  sealed trait Teal600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal600: Teal600 = "Teal600".asInstanceOf[Teal600]
+  
+  @js.native
+  sealed trait Teal700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal700: Teal700 = "Teal700".asInstanceOf[Teal700]
+  
+  @js.native
+  sealed trait Teal800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal800: Teal800 = "Teal800".asInstanceOf[Teal800]
+  
+  @js.native
+  sealed trait Teal900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Teal900: Teal900 = "Teal900".asInstanceOf[Teal900]
   
   @js.native
   sealed trait Y100
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y100: Y100 = "Y100".asInstanceOf[Y100]
-  
-  @js.native
-  sealed trait Y1000
-    extends StObject
-       with PaletteValues
-  inline def Y1000: Y1000 = "Y1000".asInstanceOf[Y1000]
   
   @js.native
   sealed trait Y200
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y200: Y200 = "Y200".asInstanceOf[Y200]
   
   @js.native
   sealed trait Y300
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y300: Y300 = "Y300".asInstanceOf[Y300]
   
   @js.native
   sealed trait Y400
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y400: Y400 = "Y400".asInstanceOf[Y400]
   
   @js.native
   sealed trait Y50
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y50: Y50 = "Y50".asInstanceOf[Y50]
   
   @js.native
   sealed trait Y500
     extends StObject
        with PaletteValues
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
   inline def Y500: Y500 = "Y500".asInstanceOf[Y500]
-  
-  @js.native
-  sealed trait Y600
-    extends StObject
-       with PaletteValues
-  inline def Y600: Y600 = "Y600".asInstanceOf[Y600]
-  
-  @js.native
-  sealed trait Y700
-    extends StObject
-       with PaletteValues
-  inline def Y700: Y700 = "Y700".asInstanceOf[Y700]
   
   @js.native
   sealed trait Y75
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def Y75: Y75 = "Y75".asInstanceOf[Y75]
   
   @js.native
-  sealed trait Y800
+  sealed trait Yellow100
     extends StObject
-       with PaletteValues
-  inline def Y800: Y800 = "Y800".asInstanceOf[Y800]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow100: Yellow100 = "Yellow100".asInstanceOf[Yellow100]
   
   @js.native
-  sealed trait Y900
+  sealed trait Yellow1000
     extends StObject
-       with PaletteValues
-  inline def Y900: Y900 = "Y900".asInstanceOf[Y900]
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow1000: Yellow1000 = "Yellow1000".asInstanceOf[Yellow1000]
+  
+  @js.native
+  sealed trait Yellow200
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow200: Yellow200 = "Yellow200".asInstanceOf[Yellow200]
+  
+  @js.native
+  sealed trait Yellow300
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow300: Yellow300 = "Yellow300".asInstanceOf[Yellow300]
+  
+  @js.native
+  sealed trait Yellow400
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow400: Yellow400 = "Yellow400".asInstanceOf[Yellow400]
+  
+  @js.native
+  sealed trait Yellow500
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow500: Yellow500 = "Yellow500".asInstanceOf[Yellow500]
+  
+  @js.native
+  sealed trait Yellow600
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow600: Yellow600 = "Yellow600".asInstanceOf[Yellow600]
+  
+  @js.native
+  sealed trait Yellow700
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow700: Yellow700 = "Yellow700".asInstanceOf[Yellow700]
+  
+  @js.native
+  sealed trait Yellow800
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow800: Yellow800 = "Yellow800".asInstanceOf[Yellow800]
+  
+  @js.native
+  sealed trait Yellow900
+    extends StObject
+       with typings.atlaskitTokens.distTypesPalettesPaletteMod.PaletteValues
+  inline def Yellow900: Yellow900 = "Yellow900".asInstanceOf[Yellow900]
   
   @js.native
   sealed trait active extends StObject
@@ -2667,6 +3140,12 @@ object atlaskitTokensStrings {
   inline def `atlassian-light`: `atlassian-light` = "atlassian-light".asInstanceOf[`atlassian-light`]
   
   @js.native
+  sealed trait `atlassian-spacing`
+    extends StObject
+       with ThemesLongName
+  inline def `atlassian-spacing`: `atlassian-spacing` = "atlassian-spacing".asInstanceOf[`atlassian-spacing`]
+  
+  @js.native
   sealed trait attributes extends StObject
   inline def attributes: attributes = "attributes".asInstanceOf[attributes]
   
@@ -2680,2225 +3159,4357 @@ object atlaskitTokensStrings {
   sealed trait colorDotaccentDotboldBlue
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotboldBlue: colorDotaccentDotboldBlue = "color.accent.boldBlue".asInstanceOf[colorDotaccentDotboldBlue]
   
   @js.native
   sealed trait colorDotaccentDotboldGreen
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotboldGreen: colorDotaccentDotboldGreen = "color.accent.boldGreen".asInstanceOf[colorDotaccentDotboldGreen]
   
   @js.native
   sealed trait colorDotaccentDotboldOrange
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotboldOrange: colorDotaccentDotboldOrange = "color.accent.boldOrange".asInstanceOf[colorDotaccentDotboldOrange]
   
   @js.native
   sealed trait colorDotaccentDotboldPurple
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotboldPurple: colorDotaccentDotboldPurple = "color.accent.boldPurple".asInstanceOf[colorDotaccentDotboldPurple]
   
   @js.native
   sealed trait colorDotaccentDotboldRed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotboldRed: colorDotaccentDotboldRed = "color.accent.boldRed".asInstanceOf[colorDotaccentDotboldRed]
   
   @js.native
   sealed trait colorDotaccentDotboldTeal
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotboldTeal: colorDotaccentDotboldTeal = "color.accent.boldTeal".asInstanceOf[colorDotaccentDotboldTeal]
   
   @js.native
   sealed trait colorDotaccentDotsubtleBlue
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtleBlue: colorDotaccentDotsubtleBlue = "color.accent.subtleBlue".asInstanceOf[colorDotaccentDotsubtleBlue]
   
   @js.native
   sealed trait colorDotaccentDotsubtleGreen
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtleGreen: colorDotaccentDotsubtleGreen = "color.accent.subtleGreen".asInstanceOf[colorDotaccentDotsubtleGreen]
   
   @js.native
   sealed trait colorDotaccentDotsubtleMagenta
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtleMagenta: colorDotaccentDotsubtleMagenta = "color.accent.subtleMagenta".asInstanceOf[colorDotaccentDotsubtleMagenta]
   
   @js.native
   sealed trait colorDotaccentDotsubtleOrange
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtleOrange: colorDotaccentDotsubtleOrange = "color.accent.subtleOrange".asInstanceOf[colorDotaccentDotsubtleOrange]
   
   @js.native
   sealed trait colorDotaccentDotsubtlePurple
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtlePurple: colorDotaccentDotsubtlePurple = "color.accent.subtlePurple".asInstanceOf[colorDotaccentDotsubtlePurple]
   
   @js.native
   sealed trait colorDotaccentDotsubtleRed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtleRed: colorDotaccentDotsubtleRed = "color.accent.subtleRed".asInstanceOf[colorDotaccentDotsubtleRed]
   
   @js.native
   sealed trait colorDotaccentDotsubtleTeal
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotaccentDotsubtleTeal: colorDotaccentDotsubtleTeal = "color.accent.subtleTeal".asInstanceOf[colorDotaccentDotsubtleTeal]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotblue
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotblue: colorDotbackgroundDotaccentDotblue = "color.background.accent.blue".asInstanceOf[colorDotbackgroundDotaccentDotblue]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotblueDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotblueDotbold: colorDotbackgroundDotaccentDotblueDotbold = "color.background.accent.blue.bold".asInstanceOf[colorDotbackgroundDotaccentDotblueDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotblueDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotblueDotbolder: colorDotbackgroundDotaccentDotblueDotbolder = "color.background.accent.blue.bolder".asInstanceOf[colorDotbackgroundDotaccentDotblueDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotblueDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotblueDotsubtle: colorDotbackgroundDotaccentDotblueDotsubtle = "color.background.accent.blue.subtle".asInstanceOf[colorDotbackgroundDotaccentDotblueDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotblueDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotblueDotsubtler: colorDotbackgroundDotaccentDotblueDotsubtler = "color.background.accent.blue.subtler".asInstanceOf[colorDotbackgroundDotaccentDotblueDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotblueDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotblueDotsubtlest: colorDotbackgroundDotaccentDotblueDotsubtlest = "color.background.accent.blue.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotblueDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgrayDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgrayDotbolder: colorDotbackgroundDotaccentDotgrayDotbolder = "color.background.accent.gray.bolder".asInstanceOf[colorDotbackgroundDotaccentDotgrayDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgrayDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgrayDotsubtle: colorDotbackgroundDotaccentDotgrayDotsubtle = "color.background.accent.gray.subtle".asInstanceOf[colorDotbackgroundDotaccentDotgrayDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgrayDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgrayDotsubtler: colorDotbackgroundDotaccentDotgrayDotsubtler = "color.background.accent.gray.subtler".asInstanceOf[colorDotbackgroundDotaccentDotgrayDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgrayDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgrayDotsubtlest: colorDotbackgroundDotaccentDotgrayDotsubtlest = "color.background.accent.gray.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotgrayDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgreen
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgreen: colorDotbackgroundDotaccentDotgreen = "color.background.accent.green".asInstanceOf[colorDotbackgroundDotaccentDotgreen]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgreenDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgreenDotbold: colorDotbackgroundDotaccentDotgreenDotbold = "color.background.accent.green.bold".asInstanceOf[colorDotbackgroundDotaccentDotgreenDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgreenDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgreenDotbolder: colorDotbackgroundDotaccentDotgreenDotbolder = "color.background.accent.green.bolder".asInstanceOf[colorDotbackgroundDotaccentDotgreenDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgreenDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgreenDotsubtle: colorDotbackgroundDotaccentDotgreenDotsubtle = "color.background.accent.green.subtle".asInstanceOf[colorDotbackgroundDotaccentDotgreenDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgreenDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgreenDotsubtler: colorDotbackgroundDotaccentDotgreenDotsubtler = "color.background.accent.green.subtler".asInstanceOf[colorDotbackgroundDotaccentDotgreenDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotgreenDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotgreenDotsubtlest: colorDotbackgroundDotaccentDotgreenDotsubtlest = "color.background.accent.green.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotgreenDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotmagenta
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotmagenta: colorDotbackgroundDotaccentDotmagenta = "color.background.accent.magenta".asInstanceOf[colorDotbackgroundDotaccentDotmagenta]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotmagentaDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotmagentaDotbold: colorDotbackgroundDotaccentDotmagentaDotbold = "color.background.accent.magenta.bold".asInstanceOf[colorDotbackgroundDotaccentDotmagentaDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotmagentaDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotmagentaDotbolder: colorDotbackgroundDotaccentDotmagentaDotbolder = "color.background.accent.magenta.bolder".asInstanceOf[colorDotbackgroundDotaccentDotmagentaDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotmagentaDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotmagentaDotsubtle: colorDotbackgroundDotaccentDotmagentaDotsubtle = "color.background.accent.magenta.subtle".asInstanceOf[colorDotbackgroundDotaccentDotmagentaDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotmagentaDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotmagentaDotsubtler: colorDotbackgroundDotaccentDotmagentaDotsubtler = "color.background.accent.magenta.subtler".asInstanceOf[colorDotbackgroundDotaccentDotmagentaDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotmagentaDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotmagentaDotsubtlest: colorDotbackgroundDotaccentDotmagentaDotsubtlest = "color.background.accent.magenta.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotmagentaDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotorange
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotorange: colorDotbackgroundDotaccentDotorange = "color.background.accent.orange".asInstanceOf[colorDotbackgroundDotaccentDotorange]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotorangeDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotorangeDotbold: colorDotbackgroundDotaccentDotorangeDotbold = "color.background.accent.orange.bold".asInstanceOf[colorDotbackgroundDotaccentDotorangeDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotorangeDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotorangeDotbolder: colorDotbackgroundDotaccentDotorangeDotbolder = "color.background.accent.orange.bolder".asInstanceOf[colorDotbackgroundDotaccentDotorangeDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotorangeDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotorangeDotsubtle: colorDotbackgroundDotaccentDotorangeDotsubtle = "color.background.accent.orange.subtle".asInstanceOf[colorDotbackgroundDotaccentDotorangeDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotorangeDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotorangeDotsubtler: colorDotbackgroundDotaccentDotorangeDotsubtler = "color.background.accent.orange.subtler".asInstanceOf[colorDotbackgroundDotaccentDotorangeDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotorangeDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotorangeDotsubtlest: colorDotbackgroundDotaccentDotorangeDotsubtlest = "color.background.accent.orange.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotorangeDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotpurple
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotpurple: colorDotbackgroundDotaccentDotpurple = "color.background.accent.purple".asInstanceOf[colorDotbackgroundDotaccentDotpurple]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotpurpleDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotpurpleDotbold: colorDotbackgroundDotaccentDotpurpleDotbold = "color.background.accent.purple.bold".asInstanceOf[colorDotbackgroundDotaccentDotpurpleDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotpurpleDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotpurpleDotbolder: colorDotbackgroundDotaccentDotpurpleDotbolder = "color.background.accent.purple.bolder".asInstanceOf[colorDotbackgroundDotaccentDotpurpleDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotpurpleDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotpurpleDotsubtle: colorDotbackgroundDotaccentDotpurpleDotsubtle = "color.background.accent.purple.subtle".asInstanceOf[colorDotbackgroundDotaccentDotpurpleDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotpurpleDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotpurpleDotsubtler: colorDotbackgroundDotaccentDotpurpleDotsubtler = "color.background.accent.purple.subtler".asInstanceOf[colorDotbackgroundDotaccentDotpurpleDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotpurpleDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotpurpleDotsubtlest: colorDotbackgroundDotaccentDotpurpleDotsubtlest = "color.background.accent.purple.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotpurpleDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotred
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotred: colorDotbackgroundDotaccentDotred = "color.background.accent.red".asInstanceOf[colorDotbackgroundDotaccentDotred]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotredDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotredDotbold: colorDotbackgroundDotaccentDotredDotbold = "color.background.accent.red.bold".asInstanceOf[colorDotbackgroundDotaccentDotredDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotredDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotredDotbolder: colorDotbackgroundDotaccentDotredDotbolder = "color.background.accent.red.bolder".asInstanceOf[colorDotbackgroundDotaccentDotredDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotredDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotredDotsubtle: colorDotbackgroundDotaccentDotredDotsubtle = "color.background.accent.red.subtle".asInstanceOf[colorDotbackgroundDotaccentDotredDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotredDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotredDotsubtler: colorDotbackgroundDotaccentDotredDotsubtler = "color.background.accent.red.subtler".asInstanceOf[colorDotbackgroundDotaccentDotredDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotredDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotredDotsubtlest: colorDotbackgroundDotaccentDotredDotsubtlest = "color.background.accent.red.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotredDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotteal
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotteal: colorDotbackgroundDotaccentDotteal = "color.background.accent.teal".asInstanceOf[colorDotbackgroundDotaccentDotteal]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDottealDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDottealDotbold: colorDotbackgroundDotaccentDottealDotbold = "color.background.accent.teal.bold".asInstanceOf[colorDotbackgroundDotaccentDottealDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDottealDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDottealDotbolder: colorDotbackgroundDotaccentDottealDotbolder = "color.background.accent.teal.bolder".asInstanceOf[colorDotbackgroundDotaccentDottealDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDottealDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDottealDotsubtle: colorDotbackgroundDotaccentDottealDotsubtle = "color.background.accent.teal.subtle".asInstanceOf[colorDotbackgroundDotaccentDottealDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDottealDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDottealDotsubtler: colorDotbackgroundDotaccentDottealDotsubtler = "color.background.accent.teal.subtler".asInstanceOf[colorDotbackgroundDotaccentDottealDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDottealDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDottealDotsubtlest: colorDotbackgroundDotaccentDottealDotsubtlest = "color.background.accent.teal.subtlest".asInstanceOf[colorDotbackgroundDotaccentDottealDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotyellow
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotyellow: colorDotbackgroundDotaccentDotyellow = "color.background.accent.yellow".asInstanceOf[colorDotbackgroundDotaccentDotyellow]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotyellowDotbold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotyellowDotbold: colorDotbackgroundDotaccentDotyellowDotbold = "color.background.accent.yellow.bold".asInstanceOf[colorDotbackgroundDotaccentDotyellowDotbold]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotyellowDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotyellowDotbolder: colorDotbackgroundDotaccentDotyellowDotbolder = "color.background.accent.yellow.bolder".asInstanceOf[colorDotbackgroundDotaccentDotyellowDotbolder]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotyellowDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotyellowDotsubtle: colorDotbackgroundDotaccentDotyellowDotsubtle = "color.background.accent.yellow.subtle".asInstanceOf[colorDotbackgroundDotaccentDotyellowDotsubtle]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotyellowDotsubtler
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotyellowDotsubtler: colorDotbackgroundDotaccentDotyellowDotsubtler = "color.background.accent.yellow.subtler".asInstanceOf[colorDotbackgroundDotaccentDotyellowDotsubtler]
   
   @js.native
   sealed trait colorDotbackgroundDotaccentDotyellowDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotaccentDotyellowDotsubtlest: colorDotbackgroundDotaccentDotyellowDotsubtlest = "color.background.accent.yellow.subtlest".asInstanceOf[colorDotbackgroundDotaccentDotyellowDotsubtlest]
   
   @js.native
   sealed trait colorDotbackgroundDotblanket
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotblanket: colorDotbackgroundDotblanket = "color.background.blanket".asInstanceOf[colorDotbackgroundDotblanket]
   
   @js.native
   sealed trait colorDotbackgroundDotboldBrandDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldBrandDothover: colorDotbackgroundDotboldBrandDothover = "color.background.boldBrand.hover".asInstanceOf[colorDotbackgroundDotboldBrandDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotboldBrandDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldBrandDotpressed: colorDotbackgroundDotboldBrandDotpressed = "color.background.boldBrand.pressed".asInstanceOf[colorDotbackgroundDotboldBrandDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotboldBrandDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldBrandDotresting: colorDotbackgroundDotboldBrandDotresting = "color.background.boldBrand.resting".asInstanceOf[colorDotbackgroundDotboldBrandDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotboldDangerDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldDangerDothover: colorDotbackgroundDotboldDangerDothover = "color.background.boldDanger.hover".asInstanceOf[colorDotbackgroundDotboldDangerDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotboldDangerDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldDangerDotpressed: colorDotbackgroundDotboldDangerDotpressed = "color.background.boldDanger.pressed".asInstanceOf[colorDotbackgroundDotboldDangerDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotboldDangerDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldDangerDotresting: colorDotbackgroundDotboldDangerDotresting = "color.background.boldDanger.resting".asInstanceOf[colorDotbackgroundDotboldDangerDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotboldDiscoveryDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldDiscoveryDothover: colorDotbackgroundDotboldDiscoveryDothover = "color.background.boldDiscovery.hover".asInstanceOf[colorDotbackgroundDotboldDiscoveryDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotboldDiscoveryDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldDiscoveryDotpressed: colorDotbackgroundDotboldDiscoveryDotpressed = "color.background.boldDiscovery.pressed".asInstanceOf[colorDotbackgroundDotboldDiscoveryDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotboldDiscoveryDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldDiscoveryDotresting: colorDotbackgroundDotboldDiscoveryDotresting = "color.background.boldDiscovery.resting".asInstanceOf[colorDotbackgroundDotboldDiscoveryDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotboldNeutralDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldNeutralDothover: colorDotbackgroundDotboldNeutralDothover = "color.background.boldNeutral.hover".asInstanceOf[colorDotbackgroundDotboldNeutralDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotboldNeutralDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldNeutralDotpressed: colorDotbackgroundDotboldNeutralDotpressed = "color.background.boldNeutral.pressed".asInstanceOf[colorDotbackgroundDotboldNeutralDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotboldNeutralDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldNeutralDotresting: colorDotbackgroundDotboldNeutralDotresting = "color.background.boldNeutral.resting".asInstanceOf[colorDotbackgroundDotboldNeutralDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotboldSuccessDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldSuccessDothover: colorDotbackgroundDotboldSuccessDothover = "color.background.boldSuccess.hover".asInstanceOf[colorDotbackgroundDotboldSuccessDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotboldSuccessDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldSuccessDotpressed: colorDotbackgroundDotboldSuccessDotpressed = "color.background.boldSuccess.pressed".asInstanceOf[colorDotbackgroundDotboldSuccessDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotboldSuccessDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldSuccessDotresting: colorDotbackgroundDotboldSuccessDotresting = "color.background.boldSuccess.resting".asInstanceOf[colorDotbackgroundDotboldSuccessDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotboldWarningDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldWarningDothover: colorDotbackgroundDotboldWarningDothover = "color.background.boldWarning.hover".asInstanceOf[colorDotbackgroundDotboldWarningDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotboldWarningDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldWarningDotpressed: colorDotbackgroundDotboldWarningDotpressed = "color.background.boldWarning.pressed".asInstanceOf[colorDotbackgroundDotboldWarningDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotboldWarningDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotboldWarningDotresting: colorDotbackgroundDotboldWarningDotresting = "color.background.boldWarning.resting".asInstanceOf[colorDotbackgroundDotboldWarningDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotbrand
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotbrand: colorDotbackgroundDotbrand = "color.background.brand".asInstanceOf[colorDotbackgroundDotbrand]
   
   @js.native
   sealed trait colorDotbackgroundDotbrandDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotbrandDotbold: colorDotbackgroundDotbrandDotbold = "color.background.brand.bold".asInstanceOf[colorDotbackgroundDotbrandDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotbrandDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotbrandDotboldDot[default]`: `colorDotbackgroundDotbrandDotboldDot[default]` = "color.background.brand.bold.[default]".asInstanceOf[`colorDotbackgroundDotbrandDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotbrandDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotbrandDotboldDothovered: colorDotbackgroundDotbrandDotboldDothovered = "color.background.brand.bold.hovered".asInstanceOf[colorDotbackgroundDotbrandDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotbrandDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotbrandDotboldDotpressed: colorDotbackgroundDotbrandDotboldDotpressed = "color.background.brand.bold.pressed".asInstanceOf[colorDotbackgroundDotbrandDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotbrandDothovered
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotbrandDothovered: colorDotbackgroundDotbrandDothovered = "color.background.brand.hovered".asInstanceOf[colorDotbackgroundDotbrandDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotbrandDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotbrandDotpressed: colorDotbackgroundDotbrandDotpressed = "color.background.brand.pressed".asInstanceOf[colorDotbackgroundDotbrandDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotcard
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotcard: colorDotbackgroundDotcard = "color.background.card".asInstanceOf[colorDotbackgroundDotcard]
   
   @js.native
   sealed trait colorDotbackgroundDotdanger
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdanger: colorDotbackgroundDotdanger = "color.background.danger".asInstanceOf[colorDotbackgroundDotdanger]
   
   @js.native
   sealed trait `colorDotbackgroundDotdangerDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdangerDot[default]Dot[default]`: `colorDotbackgroundDotdangerDot[default]Dot[default]` = "color.background.danger.[default].[default]".asInstanceOf[`colorDotbackgroundDotdangerDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotdangerDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdangerDot[default]Dothovered`: `colorDotbackgroundDotdangerDot[default]Dothovered` = "color.background.danger.[default].hovered".asInstanceOf[`colorDotbackgroundDotdangerDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotdangerDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdangerDot[default]Dotpressed`: `colorDotbackgroundDotdangerDot[default]Dotpressed` = "color.background.danger.[default].pressed".asInstanceOf[`colorDotbackgroundDotdangerDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotdangerDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdangerDotbold: colorDotbackgroundDotdangerDotbold = "color.background.danger.bold".asInstanceOf[colorDotbackgroundDotdangerDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotdangerDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdangerDotboldDot[default]`: `colorDotbackgroundDotdangerDotboldDot[default]` = "color.background.danger.bold.[default]".asInstanceOf[`colorDotbackgroundDotdangerDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotdangerDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdangerDotboldDothovered: colorDotbackgroundDotdangerDotboldDothovered = "color.background.danger.bold.hovered".asInstanceOf[colorDotbackgroundDotdangerDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotdangerDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdangerDotboldDotpressed: colorDotbackgroundDotdangerDotboldDotpressed = "color.background.danger.bold.pressed".asInstanceOf[colorDotbackgroundDotdangerDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotdangerDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdangerDothovered: colorDotbackgroundDotdangerDothovered = "color.background.danger.hovered".asInstanceOf[colorDotbackgroundDotdangerDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotdangerDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdangerDotpressed: colorDotbackgroundDotdangerDotpressed = "color.background.danger.pressed".asInstanceOf[colorDotbackgroundDotdangerDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotdefault
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdefault: colorDotbackgroundDotdefault = "color.background.default".asInstanceOf[colorDotbackgroundDotdefault]
   
   @js.native
   sealed trait colorDotbackgroundDotdisabled
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdisabled: colorDotbackgroundDotdisabled = "color.background.disabled".asInstanceOf[colorDotbackgroundDotdisabled]
   
   @js.native
   sealed trait colorDotbackgroundDotdiscovery
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdiscovery: colorDotbackgroundDotdiscovery = "color.background.discovery".asInstanceOf[colorDotbackgroundDotdiscovery]
   
   @js.native
   sealed trait `colorDotbackgroundDotdiscoveryDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdiscoveryDot[default]Dot[default]`: `colorDotbackgroundDotdiscoveryDot[default]Dot[default]` = "color.background.discovery.[default].[default]".asInstanceOf[`colorDotbackgroundDotdiscoveryDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotdiscoveryDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdiscoveryDot[default]Dothovered`: `colorDotbackgroundDotdiscoveryDot[default]Dothovered` = "color.background.discovery.[default].hovered".asInstanceOf[`colorDotbackgroundDotdiscoveryDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotdiscoveryDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdiscoveryDot[default]Dotpressed`: `colorDotbackgroundDotdiscoveryDot[default]Dotpressed` = "color.background.discovery.[default].pressed".asInstanceOf[`colorDotbackgroundDotdiscoveryDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotdiscoveryDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdiscoveryDotbold: colorDotbackgroundDotdiscoveryDotbold = "color.background.discovery.bold".asInstanceOf[colorDotbackgroundDotdiscoveryDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotdiscoveryDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotdiscoveryDotboldDot[default]`: `colorDotbackgroundDotdiscoveryDotboldDot[default]` = "color.background.discovery.bold.[default]".asInstanceOf[`colorDotbackgroundDotdiscoveryDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotdiscoveryDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdiscoveryDotboldDothovered: colorDotbackgroundDotdiscoveryDotboldDothovered = "color.background.discovery.bold.hovered".asInstanceOf[colorDotbackgroundDotdiscoveryDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotdiscoveryDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdiscoveryDotboldDotpressed: colorDotbackgroundDotdiscoveryDotboldDotpressed = "color.background.discovery.bold.pressed".asInstanceOf[colorDotbackgroundDotdiscoveryDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotdiscoveryDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdiscoveryDothovered: colorDotbackgroundDotdiscoveryDothovered = "color.background.discovery.hovered".asInstanceOf[colorDotbackgroundDotdiscoveryDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotdiscoveryDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotdiscoveryDotpressed: colorDotbackgroundDotdiscoveryDotpressed = "color.background.discovery.pressed".asInstanceOf[colorDotbackgroundDotdiscoveryDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotinformation
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinformation: colorDotbackgroundDotinformation = "color.background.information".asInstanceOf[colorDotbackgroundDotinformation]
   
   @js.native
   sealed trait `colorDotbackgroundDotinformationDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotinformationDot[default]Dot[default]`: `colorDotbackgroundDotinformationDot[default]Dot[default]` = "color.background.information.[default].[default]".asInstanceOf[`colorDotbackgroundDotinformationDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotinformationDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotinformationDot[default]Dothovered`: `colorDotbackgroundDotinformationDot[default]Dothovered` = "color.background.information.[default].hovered".asInstanceOf[`colorDotbackgroundDotinformationDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotinformationDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotinformationDot[default]Dotpressed`: `colorDotbackgroundDotinformationDot[default]Dotpressed` = "color.background.information.[default].pressed".asInstanceOf[`colorDotbackgroundDotinformationDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotinformationDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinformationDotbold: colorDotbackgroundDotinformationDotbold = "color.background.information.bold".asInstanceOf[colorDotbackgroundDotinformationDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotinformationDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotinformationDotboldDot[default]`: `colorDotbackgroundDotinformationDotboldDot[default]` = "color.background.information.bold.[default]".asInstanceOf[`colorDotbackgroundDotinformationDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotinformationDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinformationDotboldDothovered: colorDotbackgroundDotinformationDotboldDothovered = "color.background.information.bold.hovered".asInstanceOf[colorDotbackgroundDotinformationDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotinformationDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinformationDotboldDotpressed: colorDotbackgroundDotinformationDotboldDotpressed = "color.background.information.bold.pressed".asInstanceOf[colorDotbackgroundDotinformationDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotinformationDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinformationDothovered: colorDotbackgroundDotinformationDothovered = "color.background.information.hovered".asInstanceOf[colorDotbackgroundDotinformationDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotinformationDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinformationDotpressed: colorDotbackgroundDotinformationDotpressed = "color.background.information.pressed".asInstanceOf[colorDotbackgroundDotinformationDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotinput
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinput: colorDotbackgroundDotinput = "color.background.input".asInstanceOf[colorDotbackgroundDotinput]
   
   @js.native
   sealed trait `colorDotbackgroundDotinputDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotinputDot[default]`: `colorDotbackgroundDotinputDot[default]` = "color.background.input.[default]".asInstanceOf[`colorDotbackgroundDotinputDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotinputDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinputDothovered: colorDotbackgroundDotinputDothovered = "color.background.input.hovered".asInstanceOf[colorDotbackgroundDotinputDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotinputDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinputDotpressed: colorDotbackgroundDotinputDotpressed = "color.background.input.pressed".asInstanceOf[colorDotbackgroundDotinputDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotinverse
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinverse: colorDotbackgroundDotinverse = "color.background.inverse".asInstanceOf[colorDotbackgroundDotinverse]
   
   @js.native
   sealed trait colorDotbackgroundDotinverseDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinverseDotsubtle: colorDotbackgroundDotinverseDotsubtle = "color.background.inverse.subtle".asInstanceOf[colorDotbackgroundDotinverseDotsubtle]
   
   @js.native
   sealed trait `colorDotbackgroundDotinverseDotsubtleDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotinverseDotsubtleDot[default]`: `colorDotbackgroundDotinverseDotsubtleDot[default]` = "color.background.inverse.subtle.[default]".asInstanceOf[`colorDotbackgroundDotinverseDotsubtleDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotinverseDotsubtleDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinverseDotsubtleDothovered: colorDotbackgroundDotinverseDotsubtleDothovered = "color.background.inverse.subtle.hovered".asInstanceOf[colorDotbackgroundDotinverseDotsubtleDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotinverseDotsubtleDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotinverseDotsubtleDotpressed: colorDotbackgroundDotinverseDotsubtleDotpressed = "color.background.inverse.subtle.pressed".asInstanceOf[colorDotbackgroundDotinverseDotsubtleDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotneutral
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutral: colorDotbackgroundDotneutral = "color.background.neutral".asInstanceOf[colorDotbackgroundDotneutral]
   
   @js.native
   sealed trait `colorDotbackgroundDotneutralDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotneutralDot[default]Dot[default]`: `colorDotbackgroundDotneutralDot[default]Dot[default]` = "color.background.neutral.[default].[default]".asInstanceOf[`colorDotbackgroundDotneutralDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotneutralDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotneutralDot[default]Dothovered`: `colorDotbackgroundDotneutralDot[default]Dothovered` = "color.background.neutral.[default].hovered".asInstanceOf[`colorDotbackgroundDotneutralDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotneutralDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotneutralDot[default]Dotpressed`: `colorDotbackgroundDotneutralDot[default]Dotpressed` = "color.background.neutral.[default].pressed".asInstanceOf[`colorDotbackgroundDotneutralDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotbold: colorDotbackgroundDotneutralDotbold = "color.background.neutral.bold".asInstanceOf[colorDotbackgroundDotneutralDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotneutralDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotneutralDotboldDot[default]`: `colorDotbackgroundDotneutralDotboldDot[default]` = "color.background.neutral.bold.[default]".asInstanceOf[`colorDotbackgroundDotneutralDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotboldDothovered: colorDotbackgroundDotneutralDotboldDothovered = "color.background.neutral.bold.hovered".asInstanceOf[colorDotbackgroundDotneutralDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotboldDotpressed: colorDotbackgroundDotneutralDotboldDotpressed = "color.background.neutral.bold.pressed".asInstanceOf[colorDotbackgroundDotneutralDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDothovered: colorDotbackgroundDotneutralDothovered = "color.background.neutral.hovered".asInstanceOf[colorDotbackgroundDotneutralDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotpressed: colorDotbackgroundDotneutralDotpressed = "color.background.neutral.pressed".asInstanceOf[colorDotbackgroundDotneutralDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotsubtle: colorDotbackgroundDotneutralDotsubtle = "color.background.neutral.subtle".asInstanceOf[colorDotbackgroundDotneutralDotsubtle]
   
   @js.native
   sealed trait `colorDotbackgroundDotneutralDotsubtleDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotneutralDotsubtleDot[default]`: `colorDotbackgroundDotneutralDotsubtleDot[default]` = "color.background.neutral.subtle.[default]".asInstanceOf[`colorDotbackgroundDotneutralDotsubtleDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotsubtleDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotsubtleDothovered: colorDotbackgroundDotneutralDotsubtleDothovered = "color.background.neutral.subtle.hovered".asInstanceOf[colorDotbackgroundDotneutralDotsubtleDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotneutralDotsubtleDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotneutralDotsubtleDotpressed: colorDotbackgroundDotneutralDotsubtleDotpressed = "color.background.neutral.subtle.pressed".asInstanceOf[colorDotbackgroundDotneutralDotsubtleDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotoverlay
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotoverlay: colorDotbackgroundDotoverlay = "color.background.overlay".asInstanceOf[colorDotbackgroundDotoverlay]
   
   @js.native
   sealed trait colorDotbackgroundDotselected
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselected: colorDotbackgroundDotselected = "color.background.selected".asInstanceOf[colorDotbackgroundDotselected]
   
   @js.native
   sealed trait `colorDotbackgroundDotselectedDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotselectedDot[default]Dot[default]`: `colorDotbackgroundDotselectedDot[default]Dot[default]` = "color.background.selected.[default].[default]".asInstanceOf[`colorDotbackgroundDotselectedDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotselectedDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotselectedDot[default]Dothovered`: `colorDotbackgroundDotselectedDot[default]Dothovered` = "color.background.selected.[default].hovered".asInstanceOf[`colorDotbackgroundDotselectedDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotselectedDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotselectedDot[default]Dotpressed`: `colorDotbackgroundDotselectedDot[default]Dotpressed` = "color.background.selected.[default].pressed".asInstanceOf[`colorDotbackgroundDotselectedDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDotbold: colorDotbackgroundDotselectedDotbold = "color.background.selected.bold".asInstanceOf[colorDotbackgroundDotselectedDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotselectedDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotselectedDotboldDot[default]`: `colorDotbackgroundDotselectedDotboldDot[default]` = "color.background.selected.bold.[default]".asInstanceOf[`colorDotbackgroundDotselectedDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDotboldDothovered: colorDotbackgroundDotselectedDotboldDothovered = "color.background.selected.bold.hovered".asInstanceOf[colorDotbackgroundDotselectedDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDotboldDotpressed: colorDotbackgroundDotselectedDotboldDotpressed = "color.background.selected.bold.pressed".asInstanceOf[colorDotbackgroundDotselectedDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDothover: colorDotbackgroundDotselectedDothover = "color.background.selected.hover".asInstanceOf[colorDotbackgroundDotselectedDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDothovered: colorDotbackgroundDotselectedDothovered = "color.background.selected.hovered".asInstanceOf[colorDotbackgroundDotselectedDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDotpressed: colorDotbackgroundDotselectedDotpressed = "color.background.selected.pressed".asInstanceOf[colorDotbackgroundDotselectedDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotselectedDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotselectedDotresting: colorDotbackgroundDotselectedDotresting = "color.background.selected.resting".asInstanceOf[colorDotbackgroundDotselectedDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleBorderedNeutralDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleBorderedNeutralDotpressed: colorDotbackgroundDotsubtleBorderedNeutralDotpressed = "color.background.subtleBorderedNeutral.pressed".asInstanceOf[colorDotbackgroundDotsubtleBorderedNeutralDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleBorderedNeutralDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleBorderedNeutralDotresting: colorDotbackgroundDotsubtleBorderedNeutralDotresting = "color.background.subtleBorderedNeutral.resting".asInstanceOf[colorDotbackgroundDotsubtleBorderedNeutralDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleBrandDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleBrandDothover: colorDotbackgroundDotsubtleBrandDothover = "color.background.subtleBrand.hover".asInstanceOf[colorDotbackgroundDotsubtleBrandDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleBrandDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleBrandDotpressed: colorDotbackgroundDotsubtleBrandDotpressed = "color.background.subtleBrand.pressed".asInstanceOf[colorDotbackgroundDotsubtleBrandDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleBrandDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleBrandDotresting: colorDotbackgroundDotsubtleBrandDotresting = "color.background.subtleBrand.resting".asInstanceOf[colorDotbackgroundDotsubtleBrandDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleDangerDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleDangerDothover: colorDotbackgroundDotsubtleDangerDothover = "color.background.subtleDanger.hover".asInstanceOf[colorDotbackgroundDotsubtleDangerDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleDangerDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleDangerDotpressed: colorDotbackgroundDotsubtleDangerDotpressed = "color.background.subtleDanger.pressed".asInstanceOf[colorDotbackgroundDotsubtleDangerDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleDangerDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleDangerDotresting: colorDotbackgroundDotsubtleDangerDotresting = "color.background.subtleDanger.resting".asInstanceOf[colorDotbackgroundDotsubtleDangerDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleDiscoveryDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleDiscoveryDothover: colorDotbackgroundDotsubtleDiscoveryDothover = "color.background.subtleDiscovery.hover".asInstanceOf[colorDotbackgroundDotsubtleDiscoveryDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleDiscoveryDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleDiscoveryDotpressed: colorDotbackgroundDotsubtleDiscoveryDotpressed = "color.background.subtleDiscovery.pressed".asInstanceOf[colorDotbackgroundDotsubtleDiscoveryDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleDiscoveryDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleDiscoveryDotresting: colorDotbackgroundDotsubtleDiscoveryDotresting = "color.background.subtleDiscovery.resting".asInstanceOf[colorDotbackgroundDotsubtleDiscoveryDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleNeutralDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleNeutralDothover: colorDotbackgroundDotsubtleNeutralDothover = "color.background.subtleNeutral.hover".asInstanceOf[colorDotbackgroundDotsubtleNeutralDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleNeutralDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleNeutralDotpressed: colorDotbackgroundDotsubtleNeutralDotpressed = "color.background.subtleNeutral.pressed".asInstanceOf[colorDotbackgroundDotsubtleNeutralDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleNeutralDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleNeutralDotresting: colorDotbackgroundDotsubtleNeutralDotresting = "color.background.subtleNeutral.resting".asInstanceOf[colorDotbackgroundDotsubtleNeutralDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleSuccessDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleSuccessDothover: colorDotbackgroundDotsubtleSuccessDothover = "color.background.subtleSuccess.hover".asInstanceOf[colorDotbackgroundDotsubtleSuccessDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleSuccessDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleSuccessDotpressed: colorDotbackgroundDotsubtleSuccessDotpressed = "color.background.subtleSuccess.pressed".asInstanceOf[colorDotbackgroundDotsubtleSuccessDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleSuccessDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleSuccessDotresting: colorDotbackgroundDotsubtleSuccessDotresting = "color.background.subtleSuccess.resting".asInstanceOf[colorDotbackgroundDotsubtleSuccessDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleWarningDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleWarningDothover: colorDotbackgroundDotsubtleWarningDothover = "color.background.subtleWarning.hover".asInstanceOf[colorDotbackgroundDotsubtleWarningDothover]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleWarningDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleWarningDotpressed: colorDotbackgroundDotsubtleWarningDotpressed = "color.background.subtleWarning.pressed".asInstanceOf[colorDotbackgroundDotsubtleWarningDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsubtleWarningDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsubtleWarningDotresting: colorDotbackgroundDotsubtleWarningDotresting = "color.background.subtleWarning.resting".asInstanceOf[colorDotbackgroundDotsubtleWarningDotresting]
   
   @js.native
   sealed trait colorDotbackgroundDotsuccess
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsuccess: colorDotbackgroundDotsuccess = "color.background.success".asInstanceOf[colorDotbackgroundDotsuccess]
   
   @js.native
   sealed trait `colorDotbackgroundDotsuccessDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotsuccessDot[default]Dot[default]`: `colorDotbackgroundDotsuccessDot[default]Dot[default]` = "color.background.success.[default].[default]".asInstanceOf[`colorDotbackgroundDotsuccessDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotsuccessDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotsuccessDot[default]Dothovered`: `colorDotbackgroundDotsuccessDot[default]Dothovered` = "color.background.success.[default].hovered".asInstanceOf[`colorDotbackgroundDotsuccessDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotsuccessDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotsuccessDot[default]Dotpressed`: `colorDotbackgroundDotsuccessDot[default]Dotpressed` = "color.background.success.[default].pressed".asInstanceOf[`colorDotbackgroundDotsuccessDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotsuccessDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsuccessDotbold: colorDotbackgroundDotsuccessDotbold = "color.background.success.bold".asInstanceOf[colorDotbackgroundDotsuccessDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotsuccessDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotsuccessDotboldDot[default]`: `colorDotbackgroundDotsuccessDotboldDot[default]` = "color.background.success.bold.[default]".asInstanceOf[`colorDotbackgroundDotsuccessDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotsuccessDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsuccessDotboldDothovered: colorDotbackgroundDotsuccessDotboldDothovered = "color.background.success.bold.hovered".asInstanceOf[colorDotbackgroundDotsuccessDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotsuccessDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsuccessDotboldDotpressed: colorDotbackgroundDotsuccessDotboldDotpressed = "color.background.success.bold.pressed".asInstanceOf[colorDotbackgroundDotsuccessDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsuccessDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsuccessDothovered: colorDotbackgroundDotsuccessDothovered = "color.background.success.hovered".asInstanceOf[colorDotbackgroundDotsuccessDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotsuccessDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsuccessDotpressed: colorDotbackgroundDotsuccessDotpressed = "color.background.success.pressed".asInstanceOf[colorDotbackgroundDotsuccessDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotsunken
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotsunken: colorDotbackgroundDotsunken = "color.background.sunken".asInstanceOf[colorDotbackgroundDotsunken]
   
   @js.native
   sealed trait colorDotbackgroundDottransparentNeutralDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDottransparentNeutralDothover: colorDotbackgroundDottransparentNeutralDothover = "color.background.transparentNeutral.hover".asInstanceOf[colorDotbackgroundDottransparentNeutralDothover]
   
   @js.native
   sealed trait colorDotbackgroundDottransparentNeutralDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDottransparentNeutralDotpressed: colorDotbackgroundDottransparentNeutralDotpressed = "color.background.transparentNeutral.pressed".asInstanceOf[colorDotbackgroundDottransparentNeutralDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotwarning
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotwarning: colorDotbackgroundDotwarning = "color.background.warning".asInstanceOf[colorDotbackgroundDotwarning]
   
   @js.native
   sealed trait `colorDotbackgroundDotwarningDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotwarningDot[default]Dot[default]`: `colorDotbackgroundDotwarningDot[default]Dot[default]` = "color.background.warning.[default].[default]".asInstanceOf[`colorDotbackgroundDotwarningDot[default]Dot[default]`]
   
   @js.native
   sealed trait `colorDotbackgroundDotwarningDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotwarningDot[default]Dothovered`: `colorDotbackgroundDotwarningDot[default]Dothovered` = "color.background.warning.[default].hovered".asInstanceOf[`colorDotbackgroundDotwarningDot[default]Dothovered`]
   
   @js.native
   sealed trait `colorDotbackgroundDotwarningDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotwarningDot[default]Dotpressed`: `colorDotbackgroundDotwarningDot[default]Dotpressed` = "color.background.warning.[default].pressed".asInstanceOf[`colorDotbackgroundDotwarningDot[default]Dotpressed`]
   
   @js.native
   sealed trait colorDotbackgroundDotwarningDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotwarningDotbold: colorDotbackgroundDotwarningDotbold = "color.background.warning.bold".asInstanceOf[colorDotbackgroundDotwarningDotbold]
   
   @js.native
   sealed trait `colorDotbackgroundDotwarningDotboldDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotbackgroundDotwarningDotboldDot[default]`: `colorDotbackgroundDotwarningDotboldDot[default]` = "color.background.warning.bold.[default]".asInstanceOf[`colorDotbackgroundDotwarningDotboldDot[default]`]
   
   @js.native
   sealed trait colorDotbackgroundDotwarningDotboldDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotwarningDotboldDothovered: colorDotbackgroundDotwarningDotboldDothovered = "color.background.warning.bold.hovered".asInstanceOf[colorDotbackgroundDotwarningDotboldDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotwarningDotboldDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotwarningDotboldDotpressed: colorDotbackgroundDotwarningDotboldDotpressed = "color.background.warning.bold.pressed".asInstanceOf[colorDotbackgroundDotwarningDotboldDotpressed]
   
   @js.native
   sealed trait colorDotbackgroundDotwarningDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotwarningDothovered: colorDotbackgroundDotwarningDothovered = "color.background.warning.hovered".asInstanceOf[colorDotbackgroundDotwarningDothovered]
   
   @js.native
   sealed trait colorDotbackgroundDotwarningDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotbackgroundDotwarningDotpressed: colorDotbackgroundDotwarningDotpressed = "color.background.warning.pressed".asInstanceOf[colorDotbackgroundDotwarningDotpressed]
   
   @js.native
   sealed trait colorDotblanket
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotblanket: colorDotblanket = "color.blanket".asInstanceOf[colorDotblanket]
   
   @js.native
   sealed trait `colorDotblanketDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotblanketDot[default]`: `colorDotblanketDot[default]` = "color.blanket.[default]".asInstanceOf[`colorDotblanketDot[default]`]
   
   @js.native
   sealed trait colorDotblanketDotdanger
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotblanketDotdanger: colorDotblanketDotdanger = "color.blanket.danger".asInstanceOf[colorDotblanketDotdanger]
   
   @js.native
   sealed trait colorDotblanketDotselected
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotblanketDotselected: colorDotblanketDotselected = "color.blanket.selected".asInstanceOf[colorDotblanketDotselected]
   
   @js.native
   sealed trait colorDotborder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborder: colorDotborder = "color.border".asInstanceOf[colorDotborder]
   
   @js.native
   sealed trait `colorDotborderDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotborderDot[default]`: `colorDotborderDot[default]` = "color.border.[default]".asInstanceOf[`colorDotborderDot[default]`]
   
   @js.native
   sealed trait colorDotborderDotaccentDotblue
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotblue: colorDotborderDotaccentDotblue = "color.border.accent.blue".asInstanceOf[colorDotborderDotaccentDotblue]
   
   @js.native
   sealed trait colorDotborderDotaccentDotgray
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotgray: colorDotborderDotaccentDotgray = "color.border.accent.gray".asInstanceOf[colorDotborderDotaccentDotgray]
   
   @js.native
   sealed trait colorDotborderDotaccentDotgreen
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotgreen: colorDotborderDotaccentDotgreen = "color.border.accent.green".asInstanceOf[colorDotborderDotaccentDotgreen]
   
   @js.native
   sealed trait colorDotborderDotaccentDotmagenta
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotmagenta: colorDotborderDotaccentDotmagenta = "color.border.accent.magenta".asInstanceOf[colorDotborderDotaccentDotmagenta]
   
   @js.native
   sealed trait colorDotborderDotaccentDotorange
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotorange: colorDotborderDotaccentDotorange = "color.border.accent.orange".asInstanceOf[colorDotborderDotaccentDotorange]
   
   @js.native
   sealed trait colorDotborderDotaccentDotpurple
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotpurple: colorDotborderDotaccentDotpurple = "color.border.accent.purple".asInstanceOf[colorDotborderDotaccentDotpurple]
   
   @js.native
   sealed trait colorDotborderDotaccentDotred
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotred: colorDotborderDotaccentDotred = "color.border.accent.red".asInstanceOf[colorDotborderDotaccentDotred]
   
   @js.native
   sealed trait colorDotborderDotaccentDotteal
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotteal: colorDotborderDotaccentDotteal = "color.border.accent.teal".asInstanceOf[colorDotborderDotaccentDotteal]
   
   @js.native
   sealed trait colorDotborderDotaccentDotyellow
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotaccentDotyellow: colorDotborderDotaccentDotyellow = "color.border.accent.yellow".asInstanceOf[colorDotborderDotaccentDotyellow]
   
   @js.native
   sealed trait colorDotborderDotbold
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotbold: colorDotborderDotbold = "color.border.bold".asInstanceOf[colorDotborderDotbold]
   
   @js.native
   sealed trait colorDotborderDotbrand
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotbrand: colorDotborderDotbrand = "color.border.brand".asInstanceOf[colorDotborderDotbrand]
   
   @js.native
   sealed trait colorDotborderDotdanger
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotdanger: colorDotborderDotdanger = "color.border.danger".asInstanceOf[colorDotborderDotdanger]
   
   @js.native
   sealed trait colorDotborderDotdisabled
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotdisabled: colorDotborderDotdisabled = "color.border.disabled".asInstanceOf[colorDotborderDotdisabled]
   
   @js.native
   sealed trait colorDotborderDotdiscovery
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotdiscovery: colorDotborderDotdiscovery = "color.border.discovery".asInstanceOf[colorDotborderDotdiscovery]
   
   @js.native
   sealed trait colorDotborderDotfocus
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotfocus: colorDotborderDotfocus = "color.border.focus".asInstanceOf[colorDotborderDotfocus]
   
   @js.native
   sealed trait colorDotborderDotfocused
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotfocused: colorDotborderDotfocused = "color.border.focused".asInstanceOf[colorDotborderDotfocused]
   
   @js.native
   sealed trait colorDotborderDotinformation
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotinformation: colorDotborderDotinformation = "color.border.information".asInstanceOf[colorDotborderDotinformation]
   
   @js.native
   sealed trait colorDotborderDotinput
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotinput: colorDotborderDotinput = "color.border.input".asInstanceOf[colorDotborderDotinput]
   
   @js.native
   sealed trait colorDotborderDotinverse
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotinverse: colorDotborderDotinverse = "color.border.inverse".asInstanceOf[colorDotborderDotinverse]
   
   @js.native
   sealed trait colorDotborderDotneutral
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotneutral: colorDotborderDotneutral = "color.border.neutral".asInstanceOf[colorDotborderDotneutral]
   
   @js.native
   sealed trait colorDotborderDotselected
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotselected: colorDotborderDotselected = "color.border.selected".asInstanceOf[colorDotborderDotselected]
   
   @js.native
   sealed trait colorDotborderDotsuccess
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotsuccess: colorDotborderDotsuccess = "color.border.success".asInstanceOf[colorDotborderDotsuccess]
   
   @js.native
   sealed trait colorDotborderDotwarning
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotborderDotwarning: colorDotborderDotwarning = "color.border.warning".asInstanceOf[colorDotborderDotwarning]
   
   @js.native
   sealed trait colorDoticon
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticon: colorDoticon = "color.icon".asInstanceOf[colorDoticon]
   
   @js.native
   sealed trait colorDoticonBorderDotbrand
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonBorderDotbrand: colorDoticonBorderDotbrand = "color.iconBorder.brand".asInstanceOf[colorDoticonBorderDotbrand]
   
   @js.native
   sealed trait colorDoticonBorderDotdanger
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonBorderDotdanger: colorDoticonBorderDotdanger = "color.iconBorder.danger".asInstanceOf[colorDoticonBorderDotdanger]
   
   @js.native
   sealed trait colorDoticonBorderDotdiscovery
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonBorderDotdiscovery: colorDoticonBorderDotdiscovery = "color.iconBorder.discovery".asInstanceOf[colorDoticonBorderDotdiscovery]
   
   @js.native
   sealed trait colorDoticonBorderDotsuccess
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonBorderDotsuccess: colorDoticonBorderDotsuccess = "color.iconBorder.success".asInstanceOf[colorDoticonBorderDotsuccess]
   
   @js.native
   sealed trait colorDoticonBorderDotwarning
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonBorderDotwarning: colorDoticonBorderDotwarning = "color.iconBorder.warning".asInstanceOf[colorDoticonBorderDotwarning]
   
   @js.native
   sealed trait `colorDoticonDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDoticonDot[default]`: `colorDoticonDot[default]` = "color.icon.[default]".asInstanceOf[`colorDoticonDot[default]`]
   
   @js.native
   sealed trait colorDoticonDotaccentDotblue
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotblue: colorDoticonDotaccentDotblue = "color.icon.accent.blue".asInstanceOf[colorDoticonDotaccentDotblue]
   
   @js.native
   sealed trait colorDoticonDotaccentDotgray
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotgray: colorDoticonDotaccentDotgray = "color.icon.accent.gray".asInstanceOf[colorDoticonDotaccentDotgray]
   
   @js.native
   sealed trait colorDoticonDotaccentDotgreen
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotgreen: colorDoticonDotaccentDotgreen = "color.icon.accent.green".asInstanceOf[colorDoticonDotaccentDotgreen]
   
   @js.native
   sealed trait colorDoticonDotaccentDotmagenta
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotmagenta: colorDoticonDotaccentDotmagenta = "color.icon.accent.magenta".asInstanceOf[colorDoticonDotaccentDotmagenta]
   
   @js.native
   sealed trait colorDoticonDotaccentDotorange
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotorange: colorDoticonDotaccentDotorange = "color.icon.accent.orange".asInstanceOf[colorDoticonDotaccentDotorange]
   
   @js.native
   sealed trait colorDoticonDotaccentDotpurple
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotpurple: colorDoticonDotaccentDotpurple = "color.icon.accent.purple".asInstanceOf[colorDoticonDotaccentDotpurple]
   
   @js.native
   sealed trait colorDoticonDotaccentDotred
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotred: colorDoticonDotaccentDotred = "color.icon.accent.red".asInstanceOf[colorDoticonDotaccentDotred]
   
   @js.native
   sealed trait colorDoticonDotaccentDotteal
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotteal: colorDoticonDotaccentDotteal = "color.icon.accent.teal".asInstanceOf[colorDoticonDotaccentDotteal]
   
   @js.native
   sealed trait colorDoticonDotaccentDotyellow
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotaccentDotyellow: colorDoticonDotaccentDotyellow = "color.icon.accent.yellow".asInstanceOf[colorDoticonDotaccentDotyellow]
   
   @js.native
   sealed trait colorDoticonDotbrand
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotbrand: colorDoticonDotbrand = "color.icon.brand".asInstanceOf[colorDoticonDotbrand]
   
   @js.native
   sealed trait colorDoticonDotdanger
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotdanger: colorDoticonDotdanger = "color.icon.danger".asInstanceOf[colorDoticonDotdanger]
   
   @js.native
   sealed trait colorDoticonDotdisabled
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotdisabled: colorDoticonDotdisabled = "color.icon.disabled".asInstanceOf[colorDoticonDotdisabled]
   
   @js.native
   sealed trait colorDoticonDotdiscovery
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotdiscovery: colorDoticonDotdiscovery = "color.icon.discovery".asInstanceOf[colorDoticonDotdiscovery]
   
   @js.native
   sealed trait colorDoticonDotinformation
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotinformation: colorDoticonDotinformation = "color.icon.information".asInstanceOf[colorDoticonDotinformation]
   
   @js.native
   sealed trait colorDoticonDotinverse
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotinverse: colorDoticonDotinverse = "color.icon.inverse".asInstanceOf[colorDoticonDotinverse]
   
   @js.native
   sealed trait colorDoticonDotselected
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotselected: colorDoticonDotselected = "color.icon.selected".asInstanceOf[colorDoticonDotselected]
   
   @js.native
   sealed trait colorDoticonDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotsubtle: colorDoticonDotsubtle = "color.icon.subtle".asInstanceOf[colorDoticonDotsubtle]
   
   @js.native
   sealed trait colorDoticonDotsuccess
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotsuccess: colorDoticonDotsuccess = "color.icon.success".asInstanceOf[colorDoticonDotsuccess]
   
   @js.native
   sealed trait colorDoticonDotwarning
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotwarning: colorDoticonDotwarning = "color.icon.warning".asInstanceOf[colorDoticonDotwarning]
   
   @js.native
   sealed trait `colorDoticonDotwarningDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDoticonDotwarningDot[default]`: `colorDoticonDotwarningDot[default]` = "color.icon.warning.[default]".asInstanceOf[`colorDoticonDotwarningDot[default]`]
   
   @js.native
   sealed trait colorDoticonDotwarningDotinverse
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDoticonDotwarningDotinverse: colorDoticonDotwarningDotinverse = "color.icon.warning.inverse".asInstanceOf[colorDoticonDotwarningDotinverse]
   
   @js.native
   sealed trait colorDotinteractionDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotinteractionDothovered: colorDotinteractionDothovered = "color.interaction.hovered".asInstanceOf[colorDotinteractionDothovered]
   
   @js.native
   sealed trait colorDotinteractionDotinverseDothovered
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotinteractionDotinverseDothovered: colorDotinteractionDotinverseDothovered = "color.interaction.inverse.hovered".asInstanceOf[colorDotinteractionDotinverseDothovered]
   
   @js.native
   sealed trait colorDotinteractionDotinverseDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotinteractionDotinverseDotpressed: colorDotinteractionDotinverseDotpressed = "color.interaction.inverse.pressed".asInstanceOf[colorDotinteractionDotinverseDotpressed]
   
   @js.native
   sealed trait colorDotinteractionDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotinteractionDotpressed: colorDotinteractionDotpressed = "color.interaction.pressed".asInstanceOf[colorDotinteractionDotpressed]
   
   @js.native
   sealed trait colorDotlink
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotlink: colorDotlink = "color.link".asInstanceOf[colorDotlink]
   
   @js.native
   sealed trait `colorDotlinkDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotlinkDot[default]`: `colorDotlinkDot[default]` = "color.link.[default]".asInstanceOf[`colorDotlinkDot[default]`]
   
   @js.native
   sealed trait colorDotlinkDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotlinkDotpressed: colorDotlinkDotpressed = "color.link.pressed".asInstanceOf[colorDotlinkDotpressed]
   
   @js.native
   sealed trait colorDotoverlayDothover
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotoverlayDothover: colorDotoverlayDothover = "color.overlay.hover".asInstanceOf[colorDotoverlayDothover]
   
   @js.native
   sealed trait colorDotoverlayDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotoverlayDotpressed: colorDotoverlayDotpressed = "color.overlay.pressed".asInstanceOf[colorDotoverlayDotpressed]
   
   @js.native
   sealed trait colorDotskeleton
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotskeleton: colorDotskeleton = "color.skeleton".asInstanceOf[colorDotskeleton]
   
   @js.native
   sealed trait `colorDotskeletonDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDotskeletonDot[default]`: `colorDotskeletonDot[default]` = "color.skeleton.[default]".asInstanceOf[`colorDotskeletonDot[default]`]
   
   @js.native
   sealed trait colorDotskeletonDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDotskeletonDotsubtle: colorDotskeletonDotsubtle = "color.skeleton.subtle".asInstanceOf[colorDotskeletonDotsubtle]
   
   @js.native
   sealed trait colorDottext
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottext: colorDottext = "color.text".asInstanceOf[colorDottext]
   
   @js.native
   sealed trait `colorDottextDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDot[default]`: `colorDottextDot[default]` = "color.text.[default]".asInstanceOf[`colorDottextDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotblue
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotblue: colorDottextDotaccentDotblue = "color.text.accent.blue".asInstanceOf[colorDottextDotaccentDotblue]
   
   @js.native
   sealed trait `colorDottextDotaccentDotblueDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotblueDot[default]`: `colorDottextDotaccentDotblueDot[default]` = "color.text.accent.blue.[default]".asInstanceOf[`colorDottextDotaccentDotblueDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotblueDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotblueDotbolder: colorDottextDotaccentDotblueDotbolder = "color.text.accent.blue.bolder".asInstanceOf[colorDottextDotaccentDotblueDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotgray
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotgray: colorDottextDotaccentDotgray = "color.text.accent.gray".asInstanceOf[colorDottextDotaccentDotgray]
   
   @js.native
   sealed trait `colorDottextDotaccentDotgrayDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotgrayDot[default]`: `colorDottextDotaccentDotgrayDot[default]` = "color.text.accent.gray.[default]".asInstanceOf[`colorDottextDotaccentDotgrayDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotgrayDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotgrayDotbolder: colorDottextDotaccentDotgrayDotbolder = "color.text.accent.gray.bolder".asInstanceOf[colorDottextDotaccentDotgrayDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotgreen
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotgreen: colorDottextDotaccentDotgreen = "color.text.accent.green".asInstanceOf[colorDottextDotaccentDotgreen]
   
   @js.native
   sealed trait `colorDottextDotaccentDotgreenDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotgreenDot[default]`: `colorDottextDotaccentDotgreenDot[default]` = "color.text.accent.green.[default]".asInstanceOf[`colorDottextDotaccentDotgreenDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotgreenDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotgreenDotbolder: colorDottextDotaccentDotgreenDotbolder = "color.text.accent.green.bolder".asInstanceOf[colorDottextDotaccentDotgreenDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotmagenta
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotmagenta: colorDottextDotaccentDotmagenta = "color.text.accent.magenta".asInstanceOf[colorDottextDotaccentDotmagenta]
   
   @js.native
   sealed trait `colorDottextDotaccentDotmagentaDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotmagentaDot[default]`: `colorDottextDotaccentDotmagentaDot[default]` = "color.text.accent.magenta.[default]".asInstanceOf[`colorDottextDotaccentDotmagentaDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotmagentaDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotmagentaDotbolder: colorDottextDotaccentDotmagentaDotbolder = "color.text.accent.magenta.bolder".asInstanceOf[colorDottextDotaccentDotmagentaDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotorange
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotorange: colorDottextDotaccentDotorange = "color.text.accent.orange".asInstanceOf[colorDottextDotaccentDotorange]
   
   @js.native
   sealed trait `colorDottextDotaccentDotorangeDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotorangeDot[default]`: `colorDottextDotaccentDotorangeDot[default]` = "color.text.accent.orange.[default]".asInstanceOf[`colorDottextDotaccentDotorangeDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotorangeDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotorangeDotbolder: colorDottextDotaccentDotorangeDotbolder = "color.text.accent.orange.bolder".asInstanceOf[colorDottextDotaccentDotorangeDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotpurple
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotpurple: colorDottextDotaccentDotpurple = "color.text.accent.purple".asInstanceOf[colorDottextDotaccentDotpurple]
   
   @js.native
   sealed trait `colorDottextDotaccentDotpurpleDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotpurpleDot[default]`: `colorDottextDotaccentDotpurpleDot[default]` = "color.text.accent.purple.[default]".asInstanceOf[`colorDottextDotaccentDotpurpleDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotpurpleDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotpurpleDotbolder: colorDottextDotaccentDotpurpleDotbolder = "color.text.accent.purple.bolder".asInstanceOf[colorDottextDotaccentDotpurpleDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotred
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotred: colorDottextDotaccentDotred = "color.text.accent.red".asInstanceOf[colorDottextDotaccentDotred]
   
   @js.native
   sealed trait `colorDottextDotaccentDotredDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotredDot[default]`: `colorDottextDotaccentDotredDot[default]` = "color.text.accent.red.[default]".asInstanceOf[`colorDottextDotaccentDotredDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotredDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotredDotbolder: colorDottextDotaccentDotredDotbolder = "color.text.accent.red.bolder".asInstanceOf[colorDottextDotaccentDotredDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotteal
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotteal: colorDottextDotaccentDotteal = "color.text.accent.teal".asInstanceOf[colorDottextDotaccentDotteal]
   
   @js.native
   sealed trait `colorDottextDotaccentDottealDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDottealDot[default]`: `colorDottextDotaccentDottealDot[default]` = "color.text.accent.teal.[default]".asInstanceOf[`colorDottextDotaccentDottealDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDottealDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDottealDotbolder: colorDottextDotaccentDottealDotbolder = "color.text.accent.teal.bolder".asInstanceOf[colorDottextDotaccentDottealDotbolder]
   
   @js.native
   sealed trait colorDottextDotaccentDotyellow
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotyellow: colorDottextDotaccentDotyellow = "color.text.accent.yellow".asInstanceOf[colorDottextDotaccentDotyellow]
   
   @js.native
   sealed trait `colorDottextDotaccentDotyellowDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotaccentDotyellowDot[default]`: `colorDottextDotaccentDotyellowDot[default]` = "color.text.accent.yellow.[default]".asInstanceOf[`colorDottextDotaccentDotyellowDot[default]`]
   
   @js.native
   sealed trait colorDottextDotaccentDotyellowDotbolder
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotaccentDotyellowDotbolder: colorDottextDotaccentDotyellowDotbolder = "color.text.accent.yellow.bolder".asInstanceOf[colorDottextDotaccentDotyellowDotbolder]
   
   @js.native
   sealed trait colorDottextDotbrand
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotbrand: colorDottextDotbrand = "color.text.brand".asInstanceOf[colorDottextDotbrand]
   
   @js.native
   sealed trait colorDottextDotdanger
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotdanger: colorDottextDotdanger = "color.text.danger".asInstanceOf[colorDottextDotdanger]
   
   @js.native
   sealed trait colorDottextDotdisabled
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotdisabled: colorDottextDotdisabled = "color.text.disabled".asInstanceOf[colorDottextDotdisabled]
   
   @js.native
   sealed trait colorDottextDotdiscovery
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotdiscovery: colorDottextDotdiscovery = "color.text.discovery".asInstanceOf[colorDottextDotdiscovery]
   
   @js.native
   sealed trait colorDottextDothighEmphasis
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDothighEmphasis: colorDottextDothighEmphasis = "color.text.highEmphasis".asInstanceOf[colorDottextDothighEmphasis]
   
   @js.native
   sealed trait colorDottextDotinformation
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotinformation: colorDottextDotinformation = "color.text.information".asInstanceOf[colorDottextDotinformation]
   
   @js.native
   sealed trait colorDottextDotinverse
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotinverse: colorDottextDotinverse = "color.text.inverse".asInstanceOf[colorDottextDotinverse]
   
   @js.native
   sealed trait colorDottextDotlinkDotpressed
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotlinkDotpressed: colorDottextDotlinkDotpressed = "color.text.link.pressed".asInstanceOf[colorDottextDotlinkDotpressed]
   
   @js.native
   sealed trait colorDottextDotlinkDotresting
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotlinkDotresting: colorDottextDotlinkDotresting = "color.text.link.resting".asInstanceOf[colorDottextDotlinkDotresting]
   
   @js.native
   sealed trait colorDottextDotlowEmphasis
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotlowEmphasis: colorDottextDotlowEmphasis = "color.text.lowEmphasis".asInstanceOf[colorDottextDotlowEmphasis]
   
   @js.native
   sealed trait colorDottextDotmediumEmphasis
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotmediumEmphasis: colorDottextDotmediumEmphasis = "color.text.mediumEmphasis".asInstanceOf[colorDottextDotmediumEmphasis]
   
   @js.native
   sealed trait colorDottextDotonBold
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotonBold: colorDottextDotonBold = "color.text.onBold".asInstanceOf[colorDottextDotonBold]
   
   @js.native
   sealed trait colorDottextDotonBoldWarning
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotonBoldWarning: colorDottextDotonBoldWarning = "color.text.onBoldWarning".asInstanceOf[colorDottextDotonBoldWarning]
   
   @js.native
   sealed trait colorDottextDotselected
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotselected: colorDottextDotselected = "color.text.selected".asInstanceOf[colorDottextDotselected]
   
   @js.native
   sealed trait colorDottextDotsubtle
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotsubtle: colorDottextDotsubtle = "color.text.subtle".asInstanceOf[colorDottextDotsubtle]
   
   @js.native
   sealed trait colorDottextDotsubtlest
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotsubtlest: colorDottextDotsubtlest = "color.text.subtlest".asInstanceOf[colorDottextDotsubtlest]
   
   @js.native
   sealed trait colorDottextDotsuccess
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotsuccess: colorDottextDotsuccess = "color.text.success".asInstanceOf[colorDottextDotsuccess]
   
   @js.native
   sealed trait colorDottextDotwarning
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotwarning: colorDottextDotwarning = "color.text.warning".asInstanceOf[colorDottextDotwarning]
   
   @js.native
   sealed trait `colorDottextDotwarningDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `colorDottextDotwarningDot[default]`: `colorDottextDotwarningDot[default]` = "color.text.warning.[default]".asInstanceOf[`colorDottextDotwarningDot[default]`]
   
   @js.native
   sealed trait colorDottextDotwarningDotinverse
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def colorDottextDotwarningDotinverse: colorDottextDotwarningDotinverse = "color.text.warning.inverse".asInstanceOf[colorDottextDotwarningDotinverse]
   
   @js.native
@@ -4925,130 +7536,264 @@ object atlaskitTokensStrings {
   sealed trait elevationDotshadowDotoverflow
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotshadowDotoverflow: elevationDotshadowDotoverflow = "elevation.shadow.overflow".asInstanceOf[elevationDotshadowDotoverflow]
   
   @js.native
   sealed trait elevationDotshadowDotoverlay
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotshadowDotoverlay: elevationDotshadowDotoverlay = "elevation.shadow.overlay".asInstanceOf[elevationDotshadowDotoverlay]
   
   @js.native
   sealed trait elevationDotshadowDotraised
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotshadowDotraised: elevationDotshadowDotraised = "elevation.shadow.raised".asInstanceOf[elevationDotshadowDotraised]
   
   @js.native
   sealed trait elevationDotsurface
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurface: elevationDotsurface = "elevation.surface".asInstanceOf[elevationDotsurface]
   
   @js.native
   sealed trait `elevationDotsurfaceDot[default]Dot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `elevationDotsurfaceDot[default]Dot[default]`: `elevationDotsurfaceDot[default]Dot[default]` = "elevation.surface.[default].[default]".asInstanceOf[`elevationDotsurfaceDot[default]Dot[default]`]
   
   @js.native
   sealed trait `elevationDotsurfaceDot[default]Dothovered`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `elevationDotsurfaceDot[default]Dothovered`: `elevationDotsurfaceDot[default]Dothovered` = "elevation.surface.[default].hovered".asInstanceOf[`elevationDotsurfaceDot[default]Dothovered`]
   
   @js.native
   sealed trait `elevationDotsurfaceDot[default]Dotpressed`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `elevationDotsurfaceDot[default]Dotpressed`: `elevationDotsurfaceDot[default]Dotpressed` = "elevation.surface.[default].pressed".asInstanceOf[`elevationDotsurfaceDot[default]Dotpressed`]
   
   @js.native
   sealed trait elevationDotsurfaceDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDothovered: elevationDotsurfaceDothovered = "elevation.surface.hovered".asInstanceOf[elevationDotsurfaceDothovered]
   
   @js.native
   sealed trait elevationDotsurfaceDotoverlay
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotoverlay: elevationDotsurfaceDotoverlay = "elevation.surface.overlay".asInstanceOf[elevationDotsurfaceDotoverlay]
   
   @js.native
   sealed trait `elevationDotsurfaceDotoverlayDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `elevationDotsurfaceDotoverlayDot[default]`: `elevationDotsurfaceDotoverlayDot[default]` = "elevation.surface.overlay.[default]".asInstanceOf[`elevationDotsurfaceDotoverlayDot[default]`]
   
   @js.native
   sealed trait elevationDotsurfaceDotoverlayDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotoverlayDothovered: elevationDotsurfaceDotoverlayDothovered = "elevation.surface.overlay.hovered".asInstanceOf[elevationDotsurfaceDotoverlayDothovered]
   
   @js.native
   sealed trait elevationDotsurfaceDotoverlayDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotoverlayDotpressed: elevationDotsurfaceDotoverlayDotpressed = "elevation.surface.overlay.pressed".asInstanceOf[elevationDotsurfaceDotoverlayDotpressed]
   
   @js.native
   sealed trait elevationDotsurfaceDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotpressed: elevationDotsurfaceDotpressed = "elevation.surface.pressed".asInstanceOf[elevationDotsurfaceDotpressed]
   
   @js.native
   sealed trait elevationDotsurfaceDotraised
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotraised: elevationDotsurfaceDotraised = "elevation.surface.raised".asInstanceOf[elevationDotsurfaceDotraised]
   
   @js.native
   sealed trait `elevationDotsurfaceDotraisedDot[default]`
     extends StObject
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
   inline def `elevationDotsurfaceDotraisedDot[default]`: `elevationDotsurfaceDotraisedDot[default]` = "elevation.surface.raised.[default]".asInstanceOf[`elevationDotsurfaceDotraisedDot[default]`]
   
   @js.native
   sealed trait elevationDotsurfaceDotraisedDothovered
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotraisedDothovered: elevationDotsurfaceDotraisedDothovered = "elevation.surface.raised.hovered".asInstanceOf[elevationDotsurfaceDotraisedDothovered]
   
   @js.native
   sealed trait elevationDotsurfaceDotraisedDotpressed
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotraisedDotpressed: elevationDotsurfaceDotraisedDotpressed = "elevation.surface.raised.pressed".asInstanceOf[elevationDotsurfaceDotraisedDotpressed]
   
   @js.native
   sealed trait elevationDotsurfaceDotsunken
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def elevationDotsurfaceDotsunken: elevationDotsurfaceDotsunken = "elevation.surface.sunken".asInstanceOf[elevationDotsurfaceDotsunken]
+  
+  @js.native
+  sealed trait experimental extends StObject
+  inline def experimental: experimental = "experimental".asInstanceOf[experimental]
   
   @js.native
   sealed trait green
@@ -5096,16 +7841,36 @@ object atlaskitTokensStrings {
   sealed trait opacityDotdisabled
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def opacityDotdisabled: opacityDotdisabled = "opacity.disabled".asInstanceOf[opacityDotdisabled]
   
   @js.native
   sealed trait opacityDotloading
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def opacityDotloading: opacityDotloading = "opacity.loading".asInstanceOf[opacityDotloading]
   
   @js.native
@@ -5145,6 +7910,12 @@ object atlaskitTokensStrings {
   inline def red: red = "red".asInstanceOf[red]
   
   @js.native
+  sealed trait scale
+    extends StObject
+       with Groups
+  inline def scale: scale = "scale".asInstanceOf[scale]
+  
+  @js.native
   sealed trait shadow
     extends StObject
        with Groups
@@ -5154,13 +7925,158 @@ object atlaskitTokensStrings {
   sealed trait shadowDotcard
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def shadowDotcard: shadowDotcard = "shadow.card".asInstanceOf[shadowDotcard]
   
   @js.native
   sealed trait shadowDotoverlay
     extends StObject
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def shadowDotoverlay: shadowDotoverlay = "shadow.overlay".asInstanceOf[shadowDotoverlay]
+  
+  @js.native
+  sealed trait spacing
+    extends StObject
+       with Groups
+       with Themes
+  inline def spacing: spacing = "spacing".asInstanceOf[spacing]
+  
+  @js.native
+  sealed trait spacingDotcontainerDotgutter
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotcontainerDotgutter: spacingDotcontainerDotgutter = "spacing.container.gutter".asInstanceOf[spacingDotcontainerDotgutter]
+  
+  @js.native
+  sealed trait spacingDotscaleDot0
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot0: spacingDotscaleDot0 = "spacing.scale.0".asInstanceOf[spacingDotscaleDot0]
+  
+  @js.native
+  sealed trait spacingDotscaleDot025
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot025: spacingDotscaleDot025 = "spacing.scale.025".asInstanceOf[spacingDotscaleDot025]
+  
+  @js.native
+  sealed trait spacingDotscaleDot050
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot050: spacingDotscaleDot050 = "spacing.scale.050".asInstanceOf[spacingDotscaleDot050]
+  
+  @js.native
+  sealed trait spacingDotscaleDot075
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot075: spacingDotscaleDot075 = "spacing.scale.075".asInstanceOf[spacingDotscaleDot075]
+  
+  @js.native
+  sealed trait spacingDotscaleDot100
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot100: spacingDotscaleDot100 = "spacing.scale.100".asInstanceOf[spacingDotscaleDot100]
+  
+  @js.native
+  sealed trait spacingDotscaleDot150
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot150: spacingDotscaleDot150 = "spacing.scale.150".asInstanceOf[spacingDotscaleDot150]
+  
+  @js.native
+  sealed trait spacingDotscaleDot200
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot200: spacingDotscaleDot200 = "spacing.scale.200".asInstanceOf[spacingDotscaleDot200]
+  
+  @js.native
+  sealed trait spacingDotscaleDot250
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot250: spacingDotscaleDot250 = "spacing.scale.250".asInstanceOf[spacingDotscaleDot250]
+  
+  @js.native
+  sealed trait spacingDotscaleDot300
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot300: spacingDotscaleDot300 = "spacing.scale.300".asInstanceOf[spacingDotscaleDot300]
+  
+  @js.native
+  sealed trait spacingDotscaleDot400
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot400: spacingDotscaleDot400 = "spacing.scale.400".asInstanceOf[spacingDotscaleDot400]
+  
+  @js.native
+  sealed trait spacingDotscaleDot500
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot500: spacingDotscaleDot500 = "spacing.scale.500".asInstanceOf[spacingDotscaleDot500]
+  
+  @js.native
+  sealed trait spacingDotscaleDot600
+    extends StObject
+       with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
+  inline def spacingDotscaleDot600: spacingDotscaleDot600 = "spacing.scale.600".asInstanceOf[spacingDotscaleDot600]
   
   @js.native
   sealed trait teal
@@ -5171,23 +8087,43 @@ object atlaskitTokensStrings {
   @js.native
   sealed trait transparent
     extends StObject
-       with typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.PaletteValues
+       with PaletteValues
   inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
   sealed trait utilityDotUNSAFE_utilDotMISSING_TOKEN
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def utilityDotUNSAFE_utilDotMISSING_TOKEN: utilityDotUNSAFE_utilDotMISSING_TOKEN = "utility.UNSAFE_util.MISSING_TOKEN".asInstanceOf[utilityDotUNSAFE_utilDotMISSING_TOKEN]
   
   @js.native
   sealed trait utilityDotUNSAFE_utilDottransparent
     extends StObject
        with ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyLightTypesMod.ActiveTokens
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesMod.ActiveTokens
        with InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod.InternalTokenIds
+       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLegacyDarkTypesInternalMod.InternalTokenIds
        with _Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyLightMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLegacyDarkMod._Token
+       with typings.atlaskitTokens.distTypesArtifactsRenameMappingAtlassianLightMod._Token
   inline def utilityDotUNSAFE_utilDottransparent: utilityDotUNSAFE_utilDottransparent = "utility.UNSAFE_util.transparent".asInstanceOf[utilityDotUNSAFE_utilDottransparent]
   
   @js.native

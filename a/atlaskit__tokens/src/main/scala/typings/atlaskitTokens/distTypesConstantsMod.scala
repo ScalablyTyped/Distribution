@@ -4,6 +4,7 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`legacy-dark`
 import typings.atlaskitTokens.atlaskitTokensStrings.`legacy-light`
 import typings.atlaskitTokens.atlaskitTokensStrings.dark
 import typings.atlaskitTokens.atlaskitTokensStrings.light
+import typings.atlaskitTokens.atlaskitTokensStrings.spacing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,11 +21,11 @@ object distTypesConstantsMod {
   
   @JSImport("@atlaskit/tokens/dist/types/constants", "DEFAULT_THEME")
   @js.native
-  val DEFAULT_THEME: /* "light" */ String = js.native
+  val DEFAULT_THEME: /* "light spacing" */ String = js.native
   
   @JSImport("@atlaskit/tokens/dist/types/constants", "THEMES")
   @js.native
-  val THEMES: js.Tuple4[light, dark, `legacy-light`, `legacy-dark`] = js.native
+  val THEMES: js.Tuple5[light, dark, `legacy-light`, `legacy-dark`, spacing] = js.native
   
   @JSImport("@atlaskit/tokens/dist/types/constants", "THEME_DATA_ATTRIBUTE")
   @js.native
@@ -59,6 +60,12 @@ object distTypesConstantsMod {
     def atlassianLight: String = js.native
     
     inline def atlassianLight_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("atlassian-light")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@atlaskit/tokens/dist/types/constants", "THEME_NAME_MAP.atlassian-spacing")
+    @js.native
+    def atlassianSpacing: String = js.native
+    
+    inline def atlassianSpacing_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("atlassian-spacing")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@atlaskit/tokens/dist/types/constants", "TOKEN_NOT_FOUND_CSS_VAR")

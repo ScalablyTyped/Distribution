@@ -2252,6 +2252,12 @@ object antDesignReactNativeStrings {
   inline def `user-switch`: `user-switch` = "user-switch".asInstanceOf[`user-switch`]
   
   @js.native
+  sealed trait userSelect
+    extends StObject
+       with SwipeableExcludes
+  inline def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
+  
+  @js.native
   sealed trait `usergroup-add` extends StObject
   inline def `usergroup-add`: `usergroup-add` = "usergroup-add".asInstanceOf[`usergroup-add`]
   

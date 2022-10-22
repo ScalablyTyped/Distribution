@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "inferno" : "8.0.3"
+      "inferno" : "8.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "inferno" : "8.0.3"
+      "inferno" : "8.0.4"
     }
   ],
   "compile-devDependencies" : [

@@ -35,7 +35,7 @@ object mod {
   open class AnimationQueues ()
     extends typings.inferno.distDomUtilsCommonMod.AnimationQueues
   
-  @JSImport("inferno", "Component")
+  /* note: abstract class */ @JSImport("inferno", "Component")
   @js.native
   open class Component[P, S] ()
     extends typings.inferno.distCoreComponentMod.Component[P, S] {
@@ -52,8 +52,8 @@ object mod {
     
     @JSImport("inferno", "Component.defaultProps")
     @js.native
-    def defaultProps: js.UndefOr[js.Object] = js.native
-    inline def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: js.UndefOr[js.Object | Null] = js.native
+    inline def defaultProps_=(x: js.UndefOr[js.Object | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("inferno", "Component.getDerivedStateFromProps")
     @js.native

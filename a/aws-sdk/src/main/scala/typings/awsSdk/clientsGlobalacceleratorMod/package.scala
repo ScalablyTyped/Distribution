@@ -92,6 +92,8 @@ type EndpointDescriptions = js.Array[EndpointDescription]
 
 type EndpointGroups = js.Array[EndpointGroup]
 
+type EndpointIdentifiers = js.Array[EndpointIdentifier]
+
 type EndpointIds = js.Array[GenericString]
 
 type EndpointWeight = Double

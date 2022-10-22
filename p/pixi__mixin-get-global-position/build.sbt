@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pixi__mixin-get-global-position"
-version := "6.5.6-fa77d2"
+version := "6.5.7-e0be5d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "pixi__math" % "6.5.6-059f48",
+  "org.scalablytyped" %%% "pixi__math" % "6.5.7-d503e0",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

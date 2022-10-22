@@ -1,5 +1,15 @@
 package typings.naverWhale.whale
 
+import typings.naverWhale.naverWhaleStrings.cancelled
+import typings.naverWhale.naverWhaleStrings.end
+import typings.naverWhale.naverWhaleStrings.error
+import typings.naverWhale.naverWhaleStrings.interrupted
+import typings.naverWhale.naverWhaleStrings.marker
+import typings.naverWhale.naverWhaleStrings.pause
+import typings.naverWhale.naverWhaleStrings.resume
+import typings.naverWhale.naverWhaleStrings.sentence
+import typings.naverWhale.naverWhaleStrings.start
+import typings.naverWhale.naverWhaleStrings.word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,14 +142,21 @@ object tts {
     var errorMessage: js.UndefOr[String] = js.undefined
     
     /**
+      * The length of the next part of the utterance.
+      * For example, in a word event, this is the length of the word which will be spoken next.
+      * It will be set to -1 if not set by the speech engine.
+      */
+    var length: js.UndefOr[Double] = js.undefined
+    
+    /**
       * The type can be 'start' as soon as speech has started, 'word' when a word boundary is reached, 'sentence' when a sentence boundary is reached, 'marker' when an SSML mark element is reached, 'end' when the end of the utterance is reached, 'interrupted' when the utterance is stopped or interrupted before reaching the end, 'cancelled' when it's removed from the queue before ever being synthesized, or 'error' when any other error occurs. When pausing speech, a 'pause' event is fired if a particular utterance is paused in the middle, and 'resume' if an utterance resumes speech. Note that pause and resume events may not fire if speech is paused in-between utterances.
       * One of: "start", "end", "word", "sentence", "marker", "interrupted", "cancelled", "error", "pause", or "resume"
       */
-    var `type`: String
+    var `type`: start | end | word | sentence | marker | interrupted | cancelled | error | pause | resume
   }
   object TtsEvent {
     
-    inline def apply(`type`: String): TtsEvent = {
+    inline def apply(`type`: start | end | word | sentence | marker | interrupted | cancelled | error | pause | resume): TtsEvent = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TtsEvent]
@@ -155,7 +172,11 @@ object tts {
       
       inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      
+      inline def setType(value: start | end | word | sentence | marker | interrupted | cancelled | error | pause | resume): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

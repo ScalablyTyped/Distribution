@@ -23,6 +23,6 @@ object DefaultState {
     
     inline def setUnset(value: js.Array[String]): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
     
-    inline def setUnsetVarargs(value: String*): Self = StObject.set(x, "unset", js.Array(value :_*))
+    inline def setUnsetVarargs(value: String*): Self = StObject.set(x, "unset", js.Array(value*))
   }
 }

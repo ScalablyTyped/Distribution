@@ -13,4 +13,6 @@ object libUseHistoryTravelMod {
   
   inline def default[T](): Back[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Back[T]]
   inline def default[T](initialValue: T): Back[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Back[T]]
+  inline def default[T](initialValue: T, maxLength: Double): Back[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialValue.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Back[T]]
+  inline def default[T](initialValue: Unit, maxLength: Double): Back[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialValue.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Back[T]]
 }

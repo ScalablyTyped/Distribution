@@ -22,7 +22,7 @@ trait AppMonitorConfiguration extends StObject {
   var ExcludedPages: js.UndefOr[Pages] = js.undefined
   
   /**
-    * A list of pages in the CloudWatch RUM console that are to be displayed with a "favorite" icon.
+    * A list of pages in your application that are to be displayed with a "favorite" icon in the CloudWatch RUM console.
     */
   var FavoritePages: js.UndefOr[typings.awsSdk.clientsRumMod.FavoritePages] = js.undefined
   
@@ -42,7 +42,7 @@ trait AppMonitorConfiguration extends StObject {
   var IncludedPages: js.UndefOr[Pages] = js.undefined
   
   /**
-    * Specifies the percentage of user sessions to use for RUM data collection. Choosing a higher percentage gives you more data but also incurs more costs. The number you specify is the percentage of user sessions that will be used. If you omit this parameter, the default of 10 is used.
+    * Specifies the portion of user sessions to use for RUM data collection. Choosing a higher portion gives you more data but also incurs more costs. The range for this value is 0 to 1 inclusive. Setting this to 1 means that 100% of user sessions are sampled, and setting it to 0.1 means that 10% of user sessions are sampled. If you omit this parameter, the default of 0.1 is used, and 10% of sessions will be sampled.
     */
   var SessionSampleRate: js.UndefOr[typings.awsSdk.clientsRumMod.SessionSampleRate] = js.undefined
   

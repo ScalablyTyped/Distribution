@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdminListUserAuthEventsRequest extends StObject {
   
   /**
-    * The maximum number of authentication events to return.
+    * The maximum number of authentication events to return. Returns 60 events if you set MaxResults to 0, or if you don't include a MaxResults parameter.
     */
   var MaxResults: js.UndefOr[QueryLimitType] = js.undefined
   

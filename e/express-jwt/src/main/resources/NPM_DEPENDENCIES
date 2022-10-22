@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "express-jwt" : "7.7.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "express-jwt" : "7.7.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

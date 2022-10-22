@@ -10,6 +10,7 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -88,6 +89,7 @@ object libSwipeActionMod {
     - typings.antDesignReactNative.antDesignReactNativeStrings.activeOffsetY
     - typings.antDesignReactNative.antDesignReactNativeStrings.children
     - typings.antDesignReactNative.antDesignReactNativeStrings.minVelocityX
+    - typings.antDesignReactNative.antDesignReactNativeStrings.userSelect
     - typings.antDesignReactNative.antDesignReactNativeStrings.minVelocity
     - typings.antDesignReactNative.antDesignReactNativeStrings.onEnded
     - typings.antDesignReactNative.antDesignReactNativeStrings.enabled
@@ -167,6 +169,8 @@ object libSwipeActionMod {
     inline def simultaneousHandlers: typings.antDesignReactNative.antDesignReactNativeStrings.simultaneousHandlers = "simultaneousHandlers".asInstanceOf[typings.antDesignReactNative.antDesignReactNativeStrings.simultaneousHandlers]
     
     inline def testID: typings.antDesignReactNative.antDesignReactNativeStrings.testID = "testID".asInstanceOf[typings.antDesignReactNative.antDesignReactNativeStrings.testID]
+    
+    inline def userSelect: typings.antDesignReactNative.antDesignReactNativeStrings.userSelect = "userSelect".asInstanceOf[typings.antDesignReactNative.antDesignReactNativeStrings.userSelect]
     
     inline def waitFor: typings.antDesignReactNative.antDesignReactNativeStrings.waitFor = "waitFor".asInstanceOf[typings.antDesignReactNative.antDesignReactNativeStrings.waitFor]
   }
@@ -297,6 +301,8 @@ object libSwipeActionMod {
     var testID: js.UndefOr[String] = js.undefined
     
     var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
+    
+    var userSelect: js.UndefOr[UserSelect] = js.undefined
     
     var waitFor: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
   }
@@ -514,6 +520,10 @@ object libSwipeActionMod {
       inline def setUseNativeAnimations(value: Boolean): Self = StObject.set(x, "useNativeAnimations", value.asInstanceOf[js.Any])
       
       inline def setUseNativeAnimationsUndefined: Self = StObject.set(x, "useNativeAnimations", js.undefined)
+      
+      inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+      
+      inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
       
       inline def setWaitFor(value: Ref[Any] | js.Array[Ref[Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
       

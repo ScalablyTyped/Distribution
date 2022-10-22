@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object meteorDburlesCollectionHelpersStrings {
   
   @js.native
-  sealed trait RemoveHelperBrands extends StObject
-  inline def RemoveHelperBrands: RemoveHelperBrands = "RemoveHelperBrands".asInstanceOf[RemoveHelperBrands]
-  
-  @js.native
   sealed trait _meteor_dburles_collection_helpers_allowPartial extends StObject
   inline def _meteor_dburles_collection_helpers_allowPartial: _meteor_dburles_collection_helpers_allowPartial = "_meteor_dburles_collection_helpers_allowPartial".asInstanceOf[_meteor_dburles_collection_helpers_allowPartial]
   

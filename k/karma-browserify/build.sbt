@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "karma-browserify"
-version := "7.0-dt-20211202Z-cf241e"
+version := "7.0-dt-20211202Z-107db8"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "browserify" % "12.0-dt-20211202Z-0c8e3f",
-  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20211202Z-da3d70",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "browserify" % "12.0-dt-20211202Z-76962b",
+  "org.scalablytyped" %%% "insert-module-globals" % "7.0-dt-20211202Z-5a7838",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "watchify" % "3.11-dt-20211202Z-dbd03e")
+  "org.scalablytyped" %%% "watchify" % "3.11-dt-20211202Z-bbdfed")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

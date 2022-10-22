@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-content-length
 
-Typings are for version 3.190.0
+Typings are for version 3.193.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-content-length/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-content-length) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-content-length.svg)](https:/

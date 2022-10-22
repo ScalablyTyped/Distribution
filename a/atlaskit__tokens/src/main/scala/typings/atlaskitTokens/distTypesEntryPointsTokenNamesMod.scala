@@ -201,6 +201,7 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-container-gutter`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -238,6 +239,18 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-025`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-075`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-150`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-250`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-600`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
@@ -1454,6 +1467,58 @@ object distTypesEntryPointsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.shadow.overlay")
     @js.native
     val shadowOverlay: `--ds-overlay` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.container.gutter")
+    @js.native
+    val spacingContainerGutter: `--ds-container-gutter` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.0")
+    @js.native
+    val spacingScale0: `--ds-scale-0` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.025")
+    @js.native
+    val spacingScale025: `--ds-scale-025` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.050")
+    @js.native
+    val spacingScale050: `--ds-scale-050` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.075")
+    @js.native
+    val spacingScale075: `--ds-scale-075` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.100")
+    @js.native
+    val spacingScale100: `--ds-scale-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.150")
+    @js.native
+    val spacingScale150: `--ds-scale-150` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.200")
+    @js.native
+    val spacingScale200: `--ds-scale-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.250")
+    @js.native
+    val spacingScale250: `--ds-scale-250` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.300")
+    @js.native
+    val spacingScale300: `--ds-scale-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.400")
+    @js.native
+    val spacingScale400: `--ds-scale-400` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.500")
+    @js.native
+    val spacingScale500: `--ds-scale-500` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.spacing.scale.600")
+    @js.native
+    val spacingScale600: `--ds-scale-600` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/entry-points/token-names", "default.utility.UNSAFE_util.MISSING_TOKEN")
     @js.native

@@ -8,7 +8,7 @@ trait MenuHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object MenuHTMLAttributes {
   
@@ -20,6 +20,8 @@ object MenuHTMLAttributes {
   extension [Self <: MenuHTMLAttributes[?], T](x: Self & MenuHTMLAttributes[T]) {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

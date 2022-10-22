@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "phantomcss"
-version := "0.11.1-dt-20220818Z-1386ea"
+version := "0.11.1-dt-20220818Z-1feb58"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "casperjs" % "1.1-dt-20211202Z-29f60c",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "phantomjs" % "1.9-dt-20211223Z-ff765b",
-  "org.scalablytyped" %%% "resemblejs" % "v4.1.0-dt-20220818Z-6dd760",
+  "org.scalablytyped" %%% "resemblejs" % "v4.1.0-dt-20220818Z-579aa3",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

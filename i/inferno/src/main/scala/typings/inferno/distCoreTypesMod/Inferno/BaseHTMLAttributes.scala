@@ -8,9 +8,9 @@ trait BaseHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var href: js.UndefOr[String] = js.undefined
+  var href: js.UndefOr[String | Null] = js.undefined
   
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String | Null] = js.undefined
 }
 object BaseHTMLAttributes {
   
@@ -23,9 +23,13 @@ object BaseHTMLAttributes {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
+    inline def setHrefNull: Self = StObject.set(x, "href", null)
+    
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

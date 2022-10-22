@@ -15,15 +15,15 @@ open class PointerInfo protected ()
     * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
     * @param type Defines the type of event (PointerEventTypes)
     * @param event Defines the related dom event
-    * @param pickInfo Defines the picking info associated to the info (if any)\
+    * @param pickInfo Defines the picking info associated to the info (if any)
+    * @param inputManager Defines the InputManager to use if there is no pickInfo
     */
+  def this(`type`: Double, event: IMouseEvent, pickInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo]) = this()
   def this(
     `type`: Double,
     event: IMouseEvent,
-    /**
-    * Defines the picking info associated to the info (if any)\
-    */
-  pickInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo]
+    pickInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo],
+    inputManager: Nullable[typings.babylonjs.BABYLON.InputManager]
   ) = this()
   
   /**
@@ -31,12 +31,6 @@ open class PointerInfo protected ()
     */
   /* CompleteClass */
   var event: IMouseEvent = js.native
-  
-  /**
-    * Defines the picking info associated to the info (if any)\
-    */
-  /* CompleteClass */
-  var pickInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo] = js.native
   
   /**
     * Defines the type of event (PointerEventTypes)

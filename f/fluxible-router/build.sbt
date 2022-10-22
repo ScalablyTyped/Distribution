@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "fluxible-router"
-version := "1.5-dt-20211202Z-fbc0a1"
+version := "1.5-dt-20211202Z-a90060"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20211223Z-91f96d",
-  "org.scalablytyped" %%% "fluxible" % "1.4-dt-20211202Z-b72f7e",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20211223Z-7e3059",
+  "org.scalablytyped" %%% "fluxible" % "1.4-dt-20211202Z-7b526a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",

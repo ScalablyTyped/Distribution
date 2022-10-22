@@ -500,4 +500,11 @@ object anon {
       inline def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
     }
   }
+  
+  /* Inlined {[symbols.needsMetadataGsym] : false | undefined} & pino.pino.pino.DestinationStream */
+  @js.native
+  trait needsMetadataGsymfalseund extends StObject {
+    
+    def write(msg: String): Unit = js.native
+  }
 }

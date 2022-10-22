@@ -1,5 +1,6 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import typings.inferno.distCoreTypesMod.Ref
 import typings.inferno.distCoreTypesMod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ trait ClassAttributes[T]
   extends StObject
      with Attributes {
   
-  var ref: js.UndefOr[Ref[T] | RefObject[T]] = js.undefined
+  var ref: js.UndefOr[Ref[T] | RefObject[T] | Null] = js.undefined
 }
 object ClassAttributes {
   
@@ -23,6 +24,8 @@ object ClassAttributes {
     inline def setRef(value: Ref[T] | RefObject[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     inline def setRefFunction1(value: /* instance */ T | Null => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }

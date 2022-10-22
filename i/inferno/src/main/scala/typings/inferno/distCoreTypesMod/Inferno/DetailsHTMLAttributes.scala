@@ -10,9 +10,9 @@ trait DetailsHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var onToggle: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  var onToggle: js.UndefOr[InfernoEventHandler[T] | Null] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.undefined
+  var open: js.UndefOr[Boolean | Null] = js.undefined
 }
 object DetailsHTMLAttributes {
   
@@ -32,6 +32,8 @@ object DetailsHTMLAttributes {
     inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setOpenNull: Self = StObject.set(x, "open", null)
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }

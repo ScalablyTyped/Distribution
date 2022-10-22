@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoggerExtras[Options] extends EventEmitter {
   
   @JSName("addListener")
-  def addListener_levelchange(event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener): this.type = js.native
+  def addListener_levelchange[Opts](event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener[Opts]): this.type = js.native
   
   /**
     * Returns an object containing all the current bindings, cloned from the ones passed in via logger.child().
@@ -73,19 +73,19 @@ trait LoggerExtras[Options] extends EventEmitter {
     * @param listener: The listener is passed four arguments: `levelLabel`, `levelValue`, `previousLevelLabel`, `previousLevelValue`.
     */
   @JSName("on")
-  def on_levelchange(event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener): this.type = js.native
+  def on_levelchange[Opts](event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener[Opts]): this.type = js.native
   
   @JSName("once")
-  def once_levelchange(event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener): this.type = js.native
+  def once_levelchange[Opts](event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener[Opts]): this.type = js.native
   
   @JSName("prependListener")
-  def prependListener_levelchange(event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener): this.type = js.native
+  def prependListener_levelchange[Opts](event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener[Opts]): this.type = js.native
   
   @JSName("prependOnceListener")
-  def prependOnceListener_levelchange(event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener): this.type = js.native
+  def prependOnceListener_levelchange[Opts](event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener[Opts]): this.type = js.native
   
   @JSName("removeListener")
-  def removeListener_levelchange(event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener): this.type = js.native
+  def removeListener_levelchange[Opts](event: `level-change`, listener: typings.pino.mod.pino.LevelChangeEventListener[Opts]): this.type = js.native
   
   /**
     * Adds to the bindings of this logger instance.

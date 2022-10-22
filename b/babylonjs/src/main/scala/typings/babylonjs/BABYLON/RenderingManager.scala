@@ -113,6 +113,12 @@ trait RenderingManager extends StObject {
   def reset(): Unit = js.native
   
   /**
+    * Resets the sprites information of the group to prepare a new frame
+    * @internal
+    */
+  def resetSprites(): Unit = js.native
+  
+  /**
     * Specifies whether or not the stencil and depth buffer are cleared between two rendering groups.
     *
     * @param renderingGroupId The rendering group id corresponding to its index

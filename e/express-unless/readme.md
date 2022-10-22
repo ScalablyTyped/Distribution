@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-unless
 
-Typings are for version 0.5
+Typings are for version 2.1.2
 
 ## Library description:
 Conditionally add a middleware to express with some common patterns.
@@ -24,7 +24,7 @@ Conditionally add a middleware to express with some common patterns.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -9,20 +9,20 @@ object anon {
   
   trait Args extends StObject {
     
-    var args: js.Any
+    var args: Any
     
     var method: String
   }
   object Args {
     
-    inline def apply(args: js.Any, method: String): Args = {
+    inline def apply(args: Any, method: String): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
     
     extension [Self <: Args](x: Self) {
       
-      inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }

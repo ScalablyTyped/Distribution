@@ -57,7 +57,7 @@ trait App extends StObject {
   var resiliencyScore: js.UndefOr[Double] = js.undefined
   
   /**
-    * The status of the action.
+    * The status of the application.
     */
   var status: js.UndefOr[AppStatusType] = js.undefined
   

@@ -8,9 +8,9 @@ trait ProgressHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var max: js.UndefOr[Double | String] = js.undefined
+  var max: js.UndefOr[Double | String | Null] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+  var value: js.UndefOr[String | js.Array[String] | Double | Null] = js.undefined
 }
 object ProgressHTMLAttributes {
   
@@ -23,9 +23,13 @@ object ProgressHTMLAttributes {
     
     inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
+    inline def setMaxNull: Self = StObject.set(x, "max", null)
+    
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

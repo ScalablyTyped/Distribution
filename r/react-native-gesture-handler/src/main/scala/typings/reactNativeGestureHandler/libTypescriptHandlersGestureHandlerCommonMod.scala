@@ -9,6 +9,7 @@ import typings.react.mod.Ref
 import typings.reactNativeGestureHandler.anon.ACTIVE
 import typings.reactNativeGestureHandler.libTypescriptTouchEventTypeMod.TouchEventType
 import typings.reactNativeGestureHandler.libTypescriptTypeUtilsMod.ValueOf
+import typings.reactNativeGestureHandler.libTypescriptWebInterfacesMod._ConfigArgs
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.cancelsTouchesInView
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.hitSlop
@@ -22,6 +23,7 @@ import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onGest
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onHandlerStateChange
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -36,12 +38,13 @@ object libTypescriptHandlersGestureHandlerCommonMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/gestureHandlerCommon", "baseGestureHandlerProps")
   @js.native
-  val baseGestureHandlerProps: js.Tuple14[
+  val baseGestureHandlerProps: js.Tuple15[
     id, 
     enabled, 
     shouldCancelWhenOutside, 
     hitSlop, 
     cancelsTouchesInView, 
+    userSelect, 
     waitFor, 
     simultaneousHandlers, 
     onBegan, 
@@ -179,6 +182,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
     var hitSlop: js.UndefOr[HitSlop] = js.undefined
     
     var shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined
+    
+    var userSelect: js.UndefOr[UserSelect] = js.undefined
   }
   object CommonGestureConfig {
     
@@ -200,6 +205,10 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       inline def setShouldCancelWhenOutside(value: Boolean): Self = StObject.set(x, "shouldCancelWhenOutside", value.asInstanceOf[js.Any])
       
       inline def setShouldCancelWhenOutsideUndefined: Self = StObject.set(x, "shouldCancelWhenOutside", js.undefined)
+      
+      inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+      
+      inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     }
   }
   
@@ -374,6 +383,23 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.text
+  */
+  trait UserSelect
+    extends StObject
+       with _ConfigArgs
+  object UserSelect {
+    
+    inline def auto: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto = "auto".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.auto]
+    
+    inline def none: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none = "none".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.none]
+    
+    inline def text: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.text = "text".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.text]
   }
   
   trait _HitSlop extends StObject

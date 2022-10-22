@@ -1,31 +1,22 @@
 package typings.mongorito.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Class[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
+type Class[T] = Instantiable1[/* args (repeated) */ Any, T]
 
-type ModelClass = typings.mongorito.mod.Class[typings.mongorito.mod.Model]
+type ModelClass = Class[Model]
 
 type Plugin = js.Function1[
-/* modelClass */ typings.mongorito.mod.ModelClass, 
+/* modelClass */ ModelClass, 
 js.Function1[
-  /* store */ typings.mongorito.mod.PluginStore, 
-  js.Function1[
-    /* next */ typings.mongorito.mod.PluginNext, 
-    js.Function1[/* action */ typings.mongorito.mod.Action, scala.Unit]
-  ]
+  /* store */ PluginStore, 
+  js.Function1[/* next */ PluginNext, js.Function1[/* action */ Action, Unit]]
 ]]
 
-type PluginNext = js.Function1[/* action */ typings.mongorito.mod.Action, scala.Unit]
+type PluginNext = js.Function1[/* action */ Action, Unit]
 
-type Reducer[S] = js.Function2[
-/* state */ S, 
-/* action */ typings.mongorito.mod.Action, 
-/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object]
-
-type ReducerModifier = js.Function1[
-/* reducerState */ typings.mongorito.mod.ReducerState, 
-typings.mongorito.mod.ReducerState]
+type ReducerModifier = js.Function1[/* reducerState */ ReducerState, ReducerState]

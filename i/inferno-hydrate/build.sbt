@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inferno-hydrate"
-version := "8.0.3-063553"
+version := "8.0.4-e2ed2a"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

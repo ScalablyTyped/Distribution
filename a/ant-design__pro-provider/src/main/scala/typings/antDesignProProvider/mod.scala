@@ -1,6 +1,12 @@
 package typings.antDesignProProvider
 
+import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
+import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSObject
+import typings.antDesignProProvider.anon.HashId
 import typings.antDesignProProvider.anon.OmitProFieldFCRenderProps
+import typings.antDesignProProvider.esTypingLayoutTokenMod.ProTokenType
+import typings.antDesignProProvider.esUseStyleMod.ProAliasToken
+import typings.antDesignProProvider.esUseStyleMod.UseStyleResult
 import typings.react.mod.Consumer
 import typings.react.mod.Context
 import typings.react.mod.FC
@@ -239,6 +245,8 @@ object mod {
   @js.native
   val koKRIntl: IntlType = js.native
   
+  inline def lighten(baseColor: String, brightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(baseColor.asInstanceOf[js.Any], brightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("@ant-design/pro-provider", "mnMNIntl")
   @js.native
   val mnMNIntl: IntlType = js.native
@@ -246,6 +254,8 @@ object mod {
   @JSImport("@ant-design/pro-provider", "msMYIntl")
   @js.native
   val msMYIntl: IntlType = js.native
+  
+  inline def operationUnit(token: ProAliasToken): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("operationUnit")(token.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
   
   @JSImport("@ant-design/pro-provider", "plPLIntl")
   @js.native
@@ -255,9 +265,13 @@ object mod {
   @js.native
   val ptBRIntl: IntlType = js.native
   
+  inline def resetComponent(token: ProAliasToken): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("resetComponent")(token.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  
   @JSImport("@ant-design/pro-provider", "ruRUIntl")
   @js.native
   val ruRUIntl: IntlType = js.native
+  
+  inline def setAlpha(baseColor: String, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setAlpha")(baseColor.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@ant-design/pro-provider", "srRSIntl")
   @js.native
@@ -268,6 +282,13 @@ object mod {
   val trTRIntl: IntlType = js.native
   
   inline def useIntl(): IntlType = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntl")().asInstanceOf[IntlType]
+  
+  inline def useStyle(componentName: String, styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation]): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
+  
+  /**
+    * 如果 antd 里面没有，就用我 mock 的，这样 antd@4 和 antd@5 可以兼容
+    */
+  inline def useToken(): HashId = ^.asInstanceOf[js.Dynamic].applyDynamic("useToken")().asInstanceOf[HashId]
   
   @JSImport("@ant-design/pro-provider", "viVNIntl")
   @js.native
@@ -360,6 +381,8 @@ object mod {
     
     var isDeps: Boolean
     
+    var token: js.UndefOr[ProTokenType] = js.undefined
+    
     var valueTypeMap: Record[String, ProRenderFieldPropsType]
   }
   object ConfigContextPropsType {
@@ -374,6 +397,10 @@ object mod {
       inline def setIntl(value: IntlType): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
       
       inline def setIsDeps(value: Boolean): Self = StObject.set(x, "isDeps", value.asInstanceOf[js.Any])
+      
+      inline def setToken(value: ProTokenType): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
       inline def setValueTypeMap(value: Record[String, ProRenderFieldPropsType]): Self = StObject.set(x, "valueTypeMap", value.asInstanceOf[js.Any])
     }

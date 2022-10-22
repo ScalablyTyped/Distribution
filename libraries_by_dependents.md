@@ -26,7 +26,6 @@
 | 0.0 | [ace-builds](./a/ace-builds) | Ace (Ajax.org Cloud9 Editor)
 | 0.0 | [ace-diff](./a/ace-diff) | A diff/merging wrapper for Ace Editor built on goo
 | 0.0 | [ackee-tracker](./a/ackee-tracker) | Transfer data to Ackee
-| 0.0 | [acl](./a/acl) | An Access Control List module, based on Redis with
 | 0.0 | [acme-client](./a/acme-client) | Simple and unopinionated ACME client
 | 0.0 | [acorn](./a/acorn) | ECMAScript parser
 | 0.0 | [acorn-hammerhead](./a/acorn-hammerhead) | acorn.js parser adapted to TestCafe Hammerhead
@@ -180,7 +179,6 @@
 | 0.0 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess
 | 0.0 | [angular-material](./a/angular-material) | **
 | 0.0 | [angular-media-queries](./a/angular-media-queries) | Angular service to test if a given @media statment
-| 0.0 | [angular-meteor](./a/angular-meteor) | Combining the simplicity and power of AngularJS an
 | 0.0 | [angular-mocks](./a/angular-mocks) | AngularJS mocks for testing
 | 0.0 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.0 | [angular-notifications](./a/angular-notifications) | Sweet notifications for your angular app
@@ -312,7 +310,9 @@
 | 0.0 | [apollo-server-caching](./a/apollo-server-caching) | -
 | 0.0 | [apollo-server-env](./a/apollo-server-env) | This package is used internally by Apollo Server a
 | 0.0 | [apollo__protobufjs](./a/apollo__protobufjs) | Protocol Buffers for JavaScript (& TypeScript).
+| 0.0 | [apollo__utils_dot_keyvalu](./a/apollo__utils_dot_keyvaluecache) | Minimal key-value cache interface
 | 0.0 | [apollo__utils_dot_logger](./a/apollo__utils_dot_logger) | Generic logger interface
+| 0.0 | [apollographql__graphql-pl](./a/apollographql__graphql-playground-html) | GraphQL IDE for better development workflows (Grap
 | 0.0 | [apostrophe](./a/apostrophe) | The Apostrophe Content Management System.
 | 0.0 | [app-builder-bin](./a/app-builder-bin) | app-builder precompiled binaries
 | 0.0 | [app-builder-lib](./a/app-builder-lib) | electron-builder lib
@@ -1746,6 +1746,7 @@
 | 0.0 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot.
 | 0.0 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate
 | 0.0 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis
+| 0.0 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm
 | 0.0 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u
 | 0.0 | [cytoscape-context-menus](./c/cytoscape-context-menus) | A Cytoscape.js extension to provide context menu a
 | 0.0 | [cytoscape-cxtmenu](./c/cytoscape-cxtmenu) | A circular, swipeable context menu extension for C
@@ -1753,6 +1754,7 @@
 | 0.0 | [cytoscape-edgehandles](./c/cytoscape-edgehandles) | Edge creation UI extension for Cytoscape
 | 0.0 | [cytoscape-euler](./c/cytoscape-euler) | A fast, high-quality force-directed (physics simul
 | 0.0 | [cytoscape-fcose](./c/cytoscape-fcose) | The fCoSE layout for Cytoscape.js by Bilkent with 
+| 0.0 | [cytoscape-klay](./c/cytoscape-klay) | The Klay layout algorithm for Cytoscape.js
 | 0.0 | [cytoscape-navigator](./c/cytoscape-navigator) | Bird&
 | 0.0 | [cytoscape-popper](./c/cytoscape-popper) | A Cytoscape.js extension for Popper.js
 | 0.0 | [d](./d/d) | Property descriptor factory
@@ -1978,6 +1980,7 @@
 | 0.0 | [devexpress__error-stack-p](./d/devexpress__error-stack-parser) | Extract meaning from JS Errors
 | 0.0 | [devexpress__utils](./d/devexpress__utils) | DevExpress utils
 | 0.0 | [devextreme](./d/devextreme) | HTML5 JavaScript Component Suite for Responsive We
+| 0.0 | [devextreme-quill](./d/devextreme-quill) | Core of the DevExtreme HtmlEditor
 | 0.0 | [devextreme__runtime](./d/devextreme__runtime) | DevExtreme virtual DOM common components
 | 0.0 | [device-uuid](./d/device-uuid) | Fast browser device uuid generation library.
 | 0.0 | [devtools](./d/devtools) | A Chrome DevTools protocol binding that maps WebDr
@@ -3417,6 +3420,7 @@
 | 0.0 | [gulp-jspm](./g/gulp-jspm) | gulp plugin to build assets loaded with jspm/Syste
 | 0.0 | [gulp-less](./g/gulp-less) | Less for Gulp
 | 0.0 | [gulp-lesshint](./g/gulp-lesshint) | Lint your .less files from Gulp with lesshint.
+| 0.0 | [gulp-live-server](./g/gulp-live-server) | easy light weight server with livereload
 | 0.0 | [gulp-load-plugins](./g/gulp-load-plugins) | Automatically load any gulp plugins in your packag
 | 0.0 | [gulp-minify](./g/gulp-minify) | Js minify plugin for gulp
 | 0.0 | [gulp-minify-css](./g/gulp-minify-css) | Minify css with clean-css.
@@ -4894,6 +4898,7 @@
 | 0.0 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware
 | 0.0 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.0 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa
+| 0.0 | [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo
 | 0.0 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa
 | 0.0 | [koa-mount](./k/koa-mount) | Mounting middleware for koa
 | 0.0 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko
@@ -4996,6 +5001,7 @@
 | 0.0 | [ldclient-js-common](./l/ldclient-js-common) | LaunchDarkly SDK for JavaScript - common code
 | 0.0 | [leac](./l/leac) | Lexer / tokenizer
 | 0.0 | [leaflet](./l/leaflet) | JavaScript library for mobile-friendly interactive
+| 0.0 | [leaflet-boundary-canvas](./l/leaflet-boundary-canvas) | A fullscreen control for Leaflet
 | 0.0 | [leaflet-curve](./l/leaflet-curve) | A Leaflet plugin for drawing Bézier curves and oth
 | 0.0 | [leaflet-deepzoom](./l/leaflet-deepzoom) | Displaying DeepZoom tiles with Leaflet
 | 0.0 | [leaflet-draw](./l/leaflet-draw) | Vector drawing plugin for Leaflet
@@ -5184,6 +5190,7 @@
 | 0.0 | [list_dot_js](./l/list_dot_js) | The perfect library for lists. Supports search, so
 | 0.0 | [listr](./l/listr) | Terminal task list
 | 0.0 | [listr2](./l/listr2) | Terminal task list reborn
+| 0.0 | [lite-uuid-v4](./l/lite-uuid-v4) | This is the slice of popular package called uuid. 
 | 0.0 | [little-loader](./l/little-loader) | A lightweight, IE8+ JavaScript loader.
 | 0.0 | [live-server](./l/live-server) | simple development http server with live reload ca
 | 0.0 | [livereload](./l/livereload) | LiveReload server
@@ -6146,6 +6153,7 @@
 | 0.0 | [microsoft__typescript-etw](./m/microsoft__typescript-etw) | ETW logging native Node.js module for the TypeScri
 | 0.0 | [microtime](./m/microtime) | Get the current time in microseconds
 | 0.0 | [midi](./m/midi) | MIDI hardware IO
+| 0.0 | [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node
 | 0.0 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js.
 | 0.0 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.0 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t
@@ -6269,8 +6277,11 @@
 | 0.0 | [mongodb-connection-string](./m/mongodb-connection-string-url) | MongoDB connection strings, based on the WhatWG UR
 | 0.0 | [mongodb-memory-server](./m/mongodb-memory-server) | MongoDB Server for testing (auto-download latest v
 | 0.0 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without 
+| 0.0 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB.
 | 0.0 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs.
 | 0.0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
+| 0.0 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM.
+| 0.0 | [mongration](./m/mongration) | Node.js mongodb migration framework
 | 0.0 | [monk](./m/monk) | The wise MongoDB API
 | 0.0 | [monocle-ts](./m/monocle-ts) | A porting of scala monocle library to TypeScript
 | 0.0 | [month-days](./m/month-days) | Get the number of days in a month
@@ -6610,6 +6621,7 @@
 | 0.0 | [node-media-server](./n/node-media-server) | A Node.js implementation of RTMP Server
 | 0.0 | [node-memwatch](./n/node-memwatch) | Keep an eye on your memory usage, and discover and
 | 0.0 | [node-microphone](./n/node-microphone) | Allows Microphone access in node with arecord (Lin
+| 0.0 | [node-mongodb-fixtures](./n/node-mongodb-fixtures) | A package and CLI for MongoDB fixtures
 | 0.0 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
 | 0.0 | [node-netstat](./n/node-netstat) | programmatic netstat utility
 | 0.0 | [node-object-hash](./n/node-object-hash) | Node.js object hash library with properties/arrays
@@ -10070,7 +10082,6 @@
 | 0.0 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify
 | 0.0 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects
 | 0.0 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
-| 0.0 | [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor
 | 0.0 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg
 | 0.0 | [swagger-ui](./s/swagger-ui) | -
 | 0.0 | [swagger-ui-dist](./s/swagger-ui-dist) | -
@@ -10224,7 +10235,6 @@
 | 0.0 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin.
 | 0.0 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets
 | 0.0 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y
-| 0.0 | [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut
 | 0.0 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc
 | 0.0 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements
 | 0.0 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
@@ -10545,6 +10555,7 @@
 | 0.0 | [typesettable](./t/typesettable) | A typesetting library for SVG and Canvas
 | 0.0 | [typestub-ipfs](./t/typestub-ipfs) | The type definition for IPFS package
 | 0.0 | [typestyle](./t/typestyle) | TypeSafe CSS
+| 0.0 | [typo-js](./t/typo-js) | A Hunspell-style spellchecker.
 | 0.0 | [typography](./t/typography) | Opinionated toolkit for building websites with bea
 | 0.0 | [typography-breakpoint-con](./t/typography-breakpoint-constants) | Provide helpful constants for setting responsive b
 | 0.0 | [typopo](./t/typopo) | Fix frequent microtypography errors in multiple la
@@ -10594,7 +10605,6 @@
 | 0.0 | [umijs__ssr-darkreader](./u/umijs__ssr-darkreader) | Dark mode for every website
 | 0.0 | [umijs__use-params](./u/umijs__use-params) | -
 | 0.0 | [umtrack-wx](./u/umtrack-wx) | 微信小程序友盟统计SDK
-| 0.0 | [umzug](./u/umzug) | Framework-agnostic migration tool for Node
 | 0.0 | [unbzip2-stream](./u/unbzip2-stream) | streaming unbzip2 implementation in pure javascrip
 | 0.0 | [unc-path-regex](./u/unc-path-regex) | Regular expression for testing if a file path is a
 | 0.0 | [uncontrollable](./u/uncontrollable) | Wrap a controlled react component, to allow specif
@@ -11379,7 +11389,6 @@
 | 0.0 | [xxhash-wasm](./x/xxhash-wasm) | A WebAssembly implementation of xxHash
 | 0.0 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript
 | 0.0 | [y-codemirror](./y/y-codemirror) | CodeMirror binding for Yjs
-| 0.0 | [y-leveldb](./y/y-leveldb) | LevelDb database adapter for Yjs
 | 0.0 | [y-protocols](./y/y-protocols) | Yjs encoding protocols
 | 0.0 | [y-websocket](./y/y-websocket) | Websockets provider for Yjs
 | 0.0 | [ya-disk](./y/ya-disk) | Yandex Disk API Library

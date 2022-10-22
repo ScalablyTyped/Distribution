@@ -976,6 +976,8 @@ type EndpointName = java.lang.String
 
 type EndpointNameContains = java.lang.String
 
+type EndpointPerformances = js.Array[EndpointPerformance]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Name_
   - typings.awsSdk.awsSdkStrings.CreationTime
@@ -998,6 +1000,8 @@ type EndpointSortKey = _EndpointSortKey | java.lang.String
 type EndpointStatus = _EndpointStatus | java.lang.String
 
 type EndpointSummaryList = js.Array[EndpointSummary]
+
+type Endpoints = js.Array[EndpointInfo]
 
 type EntityDescription = java.lang.String
 

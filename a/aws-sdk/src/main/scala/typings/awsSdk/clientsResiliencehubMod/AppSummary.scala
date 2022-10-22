@@ -40,6 +40,11 @@ trait AppSummary extends StObject {
     * The current resiliency score for the application.
     */
   var resiliencyScore: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The status of the application.
+    */
+  var status: js.UndefOr[AppStatusType] = js.undefined
 }
 object AppSummary {
   
@@ -71,5 +76,9 @@ object AppSummary {
     inline def setResiliencyScore(value: Double): Self = StObject.set(x, "resiliencyScore", value.asInstanceOf[js.Any])
     
     inline def setResiliencyScoreUndefined: Self = StObject.set(x, "resiliencyScore", js.undefined)
+    
+    inline def setStatus(value: AppStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

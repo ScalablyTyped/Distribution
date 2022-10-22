@@ -1,13 +1,20 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.NumberDictionary
 import typings.babylonjs.XRInputSource
 import typings.babylonjs.anon.IsBinary
 import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.Object
+import typings.babylonjs.anon.TypeofQuaternionInstantiable
+import typings.babylonjs.anon.TypeofVector2Instantiable
+import typings.babylonjs.anon.TypeofVector3Instantiable
+import typings.babylonjs.anon.TypeofVector4Instantiable
 import typings.babylonjs.babylonjsStrings.XRProjectionLayer
 import typings.babylonjs.babylonjsStrings.XRWebGLLayer
 import typings.babylonjs.babylonjsStrings.cpu
+import typings.std.ConstructorParameters
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.IteratorResult
@@ -85,6 +92,8 @@ type KeepAssets = AbstractScene
 
 type MaterialPluginCreated = js.Object
 
+type MatrixConstructor[T /* <: Matrix */] = Instantiable0[T]
+
 type MeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* hardwareInstancedRendering */ Boolean, Boolean]
 
 type MotionControllerConstructor = js.Function2[/* xrInput */ XRInputSource, /* scene */ Scene, WebXRAbstractMotionController]
@@ -133,6 +142,8 @@ type PreActiveMeshStageAction = js.Function1[/* mesh */ AbstractMesh, Unit]
   */
 type Primitive = js.UndefOr[Null | Boolean | String | Double | js.Function | Element]
 
+type QuaternionConstructor[T /* <: Quaternion */] = Instantiable1[/* args */ ConstructorParameters[TypeofQuaternionInstantiable], T]
+
 type RenderTargetStageAction = js.Function3[
 /* renderTarget */ RenderTargetTexture, 
 /* faceIndex */ js.UndefOr[Double], 
@@ -169,6 +180,12 @@ type SimpleStageAction = js.Function0[Unit]
 type TextureSize = Double | Layers
 
 type TrianglePickingPredicate = js.Function4[/* p0 */ Vector3, /* p1 */ Vector3, /* p2 */ Vector3, /* ray */ Ray, Boolean]
+
+type Vector2Constructor[T /* <: Vector2 */] = Instantiable1[/* args */ ConstructorParameters[TypeofVector2Instantiable], T]
+
+type Vector3Constructor[T /* <: Vector3 */] = Instantiable1[/* args */ ConstructorParameters[TypeofVector3Instantiable], T]
+
+type Vector4Constructor[T /* <: Vector4 */] = Instantiable1[/* args */ ConstructorParameters[TypeofVector4Instantiable], T]
 
 type WebGPUExternalTexture = ExternalTexture
 

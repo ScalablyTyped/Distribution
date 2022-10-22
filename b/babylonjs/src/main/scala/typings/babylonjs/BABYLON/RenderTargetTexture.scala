@@ -306,6 +306,7 @@ trait RenderTargetTexture
     * Override the mesh isReady function with your own one.
     */
   def customIsReadyFunction(mesh: AbstractMesh, refreshRate: Double): Boolean = js.native
+  def customIsReadyFunction(mesh: AbstractMesh, refreshRate: Double, preWarm: Boolean): Boolean = js.native
   
   /**
     * Override the render function of the texture with your own one.

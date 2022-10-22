@@ -623,6 +623,7 @@ object esmMod {
   
   inline def monthsShort(): typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[typings.dayjs.esmPluginLocaleDataMod.dayjsEsmAugmentingMod.MonthNames]
   
+  inline def unix(t: js.BigInt): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   inline def unix(t: Double): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
   inline def updateLocale(localeName: String, customConfig: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(localeName.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
@@ -660,6 +661,7 @@ object esmMod {
   js.UndefOr[scala.Double], 
   js.UndefOr[scala.Double], 
   js.UndefOr[scala.Double]]
+    - js.BigInt
     - typings.dayjs.anon.D
   */
   type ConfigType = js.UndefOr[
@@ -671,7 +673,7 @@ object esmMod {
       js.UndefOr[Double], 
       js.UndefOr[Double], 
       js.UndefOr[Double]
-    ]) | String | Double | js.Date | Null
+    ]) | String | Double | js.Date | Null | js.BigInt
   ]
   
   trait ConfigTypeMap extends StObject {
@@ -688,6 +690,8 @@ object esmMod {
         js.UndefOr[Double]
       ]
     
+    var bigIntSupport: js.BigInt
+    
     var objectSupport: D
   }
   object ConfigTypeMap {
@@ -702,9 +706,10 @@ object esmMod {
           js.UndefOr[Double], 
           js.UndefOr[Double]
         ],
+      bigIntSupport: js.BigInt,
       objectSupport: D
     ): ConfigTypeMap = {
-      val __obj = js.Dynamic.literal(arraySupport = arraySupport.asInstanceOf[js.Any], objectSupport = objectSupport.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arraySupport = arraySupport.asInstanceOf[js.Any], bigIntSupport = bigIntSupport.asInstanceOf[js.Any], objectSupport = objectSupport.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigTypeMap]
     }
     
@@ -721,6 +726,8 @@ object esmMod {
               js.UndefOr[Double]
             ]
       ): Self = StObject.set(x, "arraySupport", value.asInstanceOf[js.Any])
+      
+      inline def setBigIntSupport(value: js.BigInt): Self = StObject.set(x, "bigIntSupport", value.asInstanceOf[js.Any])
       
       inline def setDefault(value: String | Double | js.Date | Dayjs): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

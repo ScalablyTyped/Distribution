@@ -21,5 +21,5 @@ trait ComponentClass[P]
       IComponent[P, ComponentState]
     ] {
   
-  var defaultProps: js.UndefOr[Partial[P]] = js.native
+  var defaultProps: js.UndefOr[Partial[P] | Null] = js.native
 }

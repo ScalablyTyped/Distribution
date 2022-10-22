@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Name extends StObject {
   
-  var attributes: Deleted
+  var attributes: Group
   
   var filePath: String
   
@@ -23,7 +23,7 @@ trait Name extends StObject {
 object Name {
   
   inline def apply(
-    attributes: Deleted,
+    attributes: Group,
     filePath: String,
     isSource: Boolean,
     name: String,
@@ -37,7 +37,7 @@ object Name {
   
   extension [Self <: Name](x: Self) {
     
-    inline def setAttributes(value: Deleted): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Group): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

@@ -635,6 +635,15 @@ object dxDataGrid {
         ]
       ] = js.undefined
     
+    var defaultSetCellValue: js.UndefOr[
+        js.Function3[
+          /* newData */ DeepPartial[Any], 
+          /* value */ Any, 
+          /* currentRowData */ Any, 
+          Unit | PromiseLike[Unit]
+        ]
+      ] = js.undefined
+    
     /**
       * Configures the default UI component used for editing and filtering in the filter row.
       */
@@ -903,6 +912,12 @@ object dxDataGrid {
       ): Self = StObject.set(x, "defaultCalculateFilterExpression", js.Any.fromFunction3(value))
       
       inline def setDefaultCalculateFilterExpressionUndefined: Self = StObject.set(x, "defaultCalculateFilterExpression", js.undefined)
+      
+      inline def setDefaultSetCellValue(
+        value: (/* newData */ DeepPartial[Any], /* value */ Any, /* currentRowData */ Any) => Unit | PromiseLike[Unit]
+      ): Self = StObject.set(x, "defaultSetCellValue", js.Any.fromFunction3(value))
+      
+      inline def setDefaultSetCellValueUndefined: Self = StObject.set(x, "defaultSetCellValue", js.undefined)
       
       inline def setEditorOptions(value: Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
       

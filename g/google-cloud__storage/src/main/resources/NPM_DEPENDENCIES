@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/storage" : "6.5.2"
+      "@google-cloud/storage" : "6.5.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/storage" : "6.5.2"
+      "@google-cloud/storage" : "6.5.4"
     }
   ],
   "compile-devDependencies" : [

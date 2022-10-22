@@ -14,9 +14,9 @@ trait BorderIconBorder[BaseToken] extends StObject {
   
   var iconBorder: DangerDiscovery[BaseToken]
   
-  var interaction: Inverse10[BaseToken]
+  var interaction: Inverse11[BaseToken]
   
-  var overlay: `9`[BaseToken]
+  var overlay: `10`[BaseToken]
   
   var text: MediumEmphasis[BaseToken]
 }
@@ -27,8 +27,8 @@ object BorderIconBorder {
     background: BoldDiscovery[BaseToken],
     border: FocusNeutral[BaseToken],
     iconBorder: DangerDiscovery[BaseToken],
-    interaction: Inverse10[BaseToken],
-    overlay: `9`[BaseToken],
+    interaction: Inverse11[BaseToken],
+    overlay: `10`[BaseToken],
     text: MediumEmphasis[BaseToken]
   ): BorderIconBorder[BaseToken] = {
     val __obj = js.Dynamic.literal(accent = accent.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], iconBorder = iconBorder.asInstanceOf[js.Any], interaction = interaction.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
@@ -45,9 +45,9 @@ object BorderIconBorder {
     
     inline def setIconBorder(value: DangerDiscovery[BaseToken]): Self = StObject.set(x, "iconBorder", value.asInstanceOf[js.Any])
     
-    inline def setInteraction(value: Inverse10[BaseToken]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: Inverse11[BaseToken]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
-    inline def setOverlay(value: `9`[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: `10`[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
     inline def setText(value: MediumEmphasis[BaseToken]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

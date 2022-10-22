@@ -10,6 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var returnDetails: `true`
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal(returnDetails = true)
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait AllowedHosts extends StObject {
     
     /**
@@ -160,17 +177,38 @@ object anon {
   trait ReturnDetails extends StObject {
     
     var returnDetails: `true`
+    
+    var returnObjects: `true`
   }
   object ReturnDetails {
     
     inline def apply(): ReturnDetails = {
-      val __obj = js.Dynamic.literal(returnDetails = true)
+      val __obj = js.Dynamic.literal(returnDetails = true, returnObjects = true)
       __obj.asInstanceOf[ReturnDetails]
     }
     
     extension [Self <: ReturnDetails](x: Self) {
       
       inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
+      
+      inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ReturnObjects extends StObject {
+    
+    var returnObjects: `true`
+  }
+  object ReturnObjects {
+    
+    inline def apply(): ReturnObjects = {
+      val __obj = js.Dynamic.literal(returnObjects = true)
+      __obj.asInstanceOf[ReturnObjects]
+    }
+    
+    extension [Self <: ReturnObjects](x: Self) {
+      
+      inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     }
   }
 }

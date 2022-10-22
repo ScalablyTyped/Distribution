@@ -11,6 +11,10 @@ trait CaptureUVS extends StObject {
   
   var captureUVS: js.UndefOr[Boolean] = js.undefined
   
+  var cullBackFaces: js.UndefOr[Boolean] = js.undefined
+  
+  var localMode: js.UndefOr[Boolean] = js.undefined
+  
   var normal: js.UndefOr[Vector3] = js.undefined
   
   var position: js.UndefOr[Vector3] = js.undefined
@@ -33,6 +37,14 @@ object CaptureUVS {
     inline def setCaptureUVS(value: Boolean): Self = StObject.set(x, "captureUVS", value.asInstanceOf[js.Any])
     
     inline def setCaptureUVSUndefined: Self = StObject.set(x, "captureUVS", js.undefined)
+    
+    inline def setCullBackFaces(value: Boolean): Self = StObject.set(x, "cullBackFaces", value.asInstanceOf[js.Any])
+    
+    inline def setCullBackFacesUndefined: Self = StObject.set(x, "cullBackFaces", js.undefined)
+    
+    inline def setLocalMode(value: Boolean): Self = StObject.set(x, "localMode", value.asInstanceOf[js.Any])
+    
+    inline def setLocalModeUndefined: Self = StObject.set(x, "localMode", js.undefined)
     
     inline def setNormal(value: Vector3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     

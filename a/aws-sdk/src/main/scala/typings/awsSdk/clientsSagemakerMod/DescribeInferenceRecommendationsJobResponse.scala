@@ -17,6 +17,11 @@ trait DescribeInferenceRecommendationsJobResponse extends StObject {
   var CreationTime: js.Date
   
   /**
+    * The performance results from running an Inference Recommender job on an existing endpoint.
+    */
+  var EndpointPerformances: js.UndefOr[typings.awsSdk.clientsSagemakerMod.EndpointPerformances] = js.undefined
+  
+  /**
     * If the job fails, provides information why the job failed.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.clientsSagemakerMod.FailureReason] = js.undefined
@@ -94,6 +99,12 @@ object DescribeInferenceRecommendationsJobResponse {
     inline def setCompletionTimeUndefined: Self = StObject.set(x, "CompletionTime", js.undefined)
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointPerformances(value: EndpointPerformances): Self = StObject.set(x, "EndpointPerformances", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointPerformancesUndefined: Self = StObject.set(x, "EndpointPerformances", js.undefined)
+    
+    inline def setEndpointPerformancesVarargs(value: EndpointPerformance*): Self = StObject.set(x, "EndpointPerformances", js.Array(value*))
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

@@ -27,14 +27,14 @@ trait Quaternion extends StObject {
     * @param other defines the second operand
     * @returns a new quaternion as the addition result of the given one and the current quaternion
     */
-  def add(other: DeepImmutable[Quaternion]): Quaternion = js.native
+  def add(other: DeepImmutable[Quaternion]): this.type = js.native
   
   /**
     * Add a quaternion to the current one
     * @param other defines the quaternion to add
     * @returns the current quaternion
     */
-  def addInPlace(other: DeepImmutable[Quaternion]): Quaternion = js.native
+  def addInPlace(other: DeepImmutable[Quaternion]): this.type = js.native
   
   /**
     * Copy the quaternion to an array
@@ -46,27 +46,27 @@ trait Quaternion extends StObject {
     * Conjugates (1-q) the current quaternion
     * @returns a new quaternion
     */
-  def conjugate(): Quaternion = js.native
+  def conjugate(): this.type = js.native
   
   /**
     * Conjugates in place the current quaternion
     * @returns the current updated quaternion
     */
-  def conjugateInPlace(): Quaternion = js.native
+  def conjugateInPlace(): this.type = js.native
   
   /**
     * Conjugates the current quaternion and stores the result in the given quaternion
     * @param ref defines the target quaternion
-    * @returns the current quaternion
+    * @returns result input
     */
-  def conjugateToRef(ref: Quaternion): Quaternion = js.native
+  def conjugateToRef[T /* <: Quaternion */](ref: T): T = js.native
   
   /**
     * Copy a quaternion to the current one
     * @param other defines the other quaternion
     * @returns the updated current quaternion
     */
-  def copyFrom(other: DeepImmutable[Quaternion]): Quaternion = js.native
+  def copyFrom(other: DeepImmutable[Quaternion]): this.type = js.native
   
   /**
     * Updates the current quaternion with the given float coordinates
@@ -76,7 +76,7 @@ trait Quaternion extends StObject {
     * @param w defines the w coordinate
     * @returns the updated current quaternion
     */
-  def copyFromFloats(x: Double, y: Double, z: Double, w: Double): Quaternion = js.native
+  def copyFromFloats(x: Double, y: Double, z: Double, w: Double): this.type = js.native
   
   /**
     * Check if two quaternions are equals
@@ -99,7 +99,7 @@ trait Quaternion extends StObject {
     * @param matrix defines the source matrix
     * @returns the current updated quaternion
     */
-  def fromRotationMatrix(matrix: DeepImmutable[Matrix]): Quaternion = js.native
+  def fromRotationMatrix(matrix: DeepImmutable[Matrix]): this.type = js.native
   
   /**
     * Gets the class name of the quaternion
@@ -117,13 +117,13 @@ trait Quaternion extends StObject {
     * Returns the inverse of the current quaternion
     * @returns a new quaternion
     */
-  def invert(): Quaternion = js.native
+  def invert(): this.type = js.native
   
   /**
     * Invert in place the current quaternion
     * @returns this quaternion
     */
-  def invertInPlace(): Quaternion = js.native
+  def invertInPlace(): this.type = js.native
   
   /**
     * Gets length of current quaternion
@@ -142,14 +142,14 @@ trait Quaternion extends StObject {
     * @param q1 defines the second operand
     * @returns a new quaternion set as the multiplication result of the current one with the given one "q1"
     */
-  def multiply(q1: DeepImmutable[Quaternion]): Quaternion = js.native
+  def multiply(q1: DeepImmutable[Quaternion]): this.type = js.native
   
   /**
     * Updates the current quaternion with the multiplication of itself with the given one "q1"
     * @param q1 defines the second operand
     * @returns the currentupdated quaternion
     */
-  def multiplyInPlace(q1: DeepImmutable[Quaternion]): Quaternion = js.native
+  def multiplyInPlace(q1: DeepImmutable[Quaternion]): this.type = js.native
   
   /**
     * Sets the given "result" as the the multiplication result of the current one with the given one "q1"
@@ -157,49 +157,49 @@ trait Quaternion extends StObject {
     * @param result defines the target quaternion
     * @returns the current quaternion
     */
-  def multiplyToRef(q1: DeepImmutable[Quaternion], result: Quaternion): Quaternion = js.native
+  def multiplyToRef[T /* <: Quaternion */](q1: DeepImmutable[Quaternion], result: T): T = js.native
   
   /**
     * Normalize in place the current quaternion
     * @returns the current updated quaternion
     */
-  def normalize(): Quaternion = js.native
+  def normalize(): this.type = js.native
   
   /**
     * Normalize a copy of the current quaternion
     * @returns the normalized quaternion
     */
-  def normalizeToNew(): Quaternion = js.native
+  def normalizeToNew(): this.type = js.native
   
   /**
     * Multiplies the current quaternion by a scale factor
     * @param value defines the scale factor
     * @returns a new quaternion set by multiplying the current quaternion coordinates by the float "scale"
     */
-  def scale(value: Double): Quaternion = js.native
+  def scale(value: Double): this.type = js.native
   
   /**
     * Scale the current quaternion values by a factor and add the result to a given quaternion
     * @param scale defines the scale factor
     * @param result defines the Quaternion object where to store the result
-    * @returns the unmodified current quaternion
+    * @returns result input
     */
-  def scaleAndAddToRef(scale: Double, result: Quaternion): Quaternion = js.native
+  def scaleAndAddToRef[T /* <: Quaternion */](scale: Double, result: T): T = js.native
   
   /**
     * Multiplies in place the current quaternion by a scale factor
     * @param value defines the scale factor
     * @returns the current modified quaternion
     */
-  def scaleInPlace(value: Double): Quaternion = js.native
+  def scaleInPlace(value: Double): this.type = js.native
   
   /**
     * Scale the current quaternion values by a factor and stores the result to a given quaternion
     * @param scale defines the scale factor
     * @param result defines the Quaternion object where to store the result
-    * @returns the unmodified current quaternion
+    * @returns result input
     */
-  def scaleToRef(scale: Double, result: Quaternion): Quaternion = js.native
+  def scaleToRef[T /* <: Quaternion */](scale: Double, result: T): T = js.native
   
   /**
     * Updates the current quaternion from the given float coordinates
@@ -209,21 +209,21 @@ trait Quaternion extends StObject {
     * @param w defines the w coordinate
     * @returns the updated current quaternion
     */
-  def set(x: Double, y: Double, z: Double, w: Double): Quaternion = js.native
+  def set(x: Double, y: Double, z: Double, w: Double): this.type = js.native
   
   /**
     * Subtract two quaternions
     * @param other defines the second operand
     * @returns a new quaternion as the subtraction result of the given one from the current one
     */
-  def subtract(other: Quaternion): Quaternion = js.native
+  def subtract(other: Quaternion): this.type = js.native
   
   /**
     * Subtract a quaternion to the current one
     * @param other defines the quaternion to subtract
     * @returns the current quaternion
     */
-  def subtractInPlace(other: DeepImmutable[Quaternion]): Quaternion = js.native
+  def subtractInPlace(other: DeepImmutable[Quaternion]): this.type = js.native
   
   /**
     * Stores from the starting index in the given array the Quaternion successive values
@@ -244,17 +244,17 @@ trait Quaternion extends StObject {
   /**
     * Sets the given vector3 "result" with the Euler angles translated from the current quaternion
     * @param result defines the vector which will be filled with the Euler angles
-    * @returns the current unchanged quaternion
+    * @returns result input
     * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
     */
-  def toEulerAnglesToRef(result: Vector3): Quaternion = js.native
+  def toEulerAnglesToRef[T /* <: Vector3 */](result: T): T = js.native
   
   /**
     * Updates the given rotation matrix with the current quaternion values
     * @param result defines the target matrix
     * @returns the current unchanged quaternion
     */
-  def toRotationMatrix(result: Matrix): Quaternion = js.native
+  def toRotationMatrix[T /* <: Matrix */](result: T): T = js.native
   
   /** Gets or sets the w coordinate */
   def w: Double = js.native

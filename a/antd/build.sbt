@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "4.23.6-fd34ff"
+version := "4.23.6-7ebec8"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,12 +9,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons-svg" % "4.2.1-acafe5",
   "org.scalablytyped" %%% "ant-design__react-slick" % "0.29.2-ead447",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "dayjs" % "1.11.5-709f0a",
+  "org.scalablytyped" %%% "dayjs" % "1.11.6-be8973",
   "org.scalablytyped" %%% "memoize-one" % "6.0.0-8e0c15",
   "org.scalablytyped" %%% "moment" % "2.29.4-a513be",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
-  "org.scalablytyped" %%% "rc-cascader" % "3.7.0-b3211f",
+  "org.scalablytyped" %%% "rc-cascader" % "3.7.0-50c0f6",
   "org.scalablytyped" %%% "rc-component__portal" % "1.0.0-9-c54a8c",
   "org.scalablytyped" %%% "rc-dialog" % "9.0.0-697491",
   "org.scalablytyped" %%% "rc-drawer" % "6.0.0-8de8d9",
@@ -26,22 +26,22 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-menu" % "9.6.4-334eac",
   "org.scalablytyped" %%% "rc-motion" % "2.6.2-9c3c76",
   "org.scalablytyped" %%% "rc-pagination" % "3.1.17-d4f45e",
-  "org.scalablytyped" %%% "rc-picker" % "2.6.11-7915ab",
+  "org.scalablytyped" %%% "rc-picker" % "2.6.11-7c1f12",
   "org.scalablytyped" %%% "rc-rate" % "2.9.2-0624fb",
   "org.scalablytyped" %%% "rc-segmented" % "2.1.0-42e63c",
-  "org.scalablytyped" %%% "rc-select" % "14.1.13-753641",
+  "org.scalablytyped" %%% "rc-select" % "14.1.13-62fc1f",
   "org.scalablytyped" %%% "rc-slider" % "10.0.1-f47c31",
   "org.scalablytyped" %%% "rc-steps" % "5.0.0-alpha.0-0fc6b6",
   "org.scalablytyped" %%% "rc-table" % "7.27.2-f4f282",
   "org.scalablytyped" %%% "rc-tabs" % "12.2.1-ca3905",
   "org.scalablytyped" %%% "rc-textarea" % "0.4.5-5e2eb3",
   "org.scalablytyped" %%% "rc-tooltip" % "5.2.2-ea82e3",
-  "org.scalablytyped" %%% "rc-tree" % "5.7.0-2b07f5",
-  "org.scalablytyped" %%% "rc-tree-select" % "5.5.0-d7b515",
+  "org.scalablytyped" %%% "rc-tree" % "5.7.0-2f7413",
+  "org.scalablytyped" %%% "rc-tree-select" % "5.5.0-ac9f67",
   "org.scalablytyped" %%% "rc-trigger" % "5.3.1-53f196",
   "org.scalablytyped" %%% "rc-upload" % "4.3.4-6940bb",
   "org.scalablytyped" %%% "rc-util" % "5.24.4-37be05",
-  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-6532fd",
+  "org.scalablytyped" %%% "rc-virtual-list" % "3.4.8-60ed6c",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "react-dom" % "18.0-dt-20220819Z-73fb03",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",

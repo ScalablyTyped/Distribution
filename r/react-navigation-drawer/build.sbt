@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-navigation-drawer"
-version := "2.7.2-2d5cbc"
+version := "2.7.2-711ae7"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.7.1-aba632",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-65a940",
   "org.scalablytyped" %%% "react-navigation" % "4.4.4-fbaff2",
   "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-dc4815",
   "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-400bee",

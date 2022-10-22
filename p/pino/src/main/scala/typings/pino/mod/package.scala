@@ -44,9 +44,11 @@ type ChildLoggerOptions = typings.pino.mod.pino.ChildLoggerOptions
 
 type DestinationStream = typings.pino.mod.pino.DestinationStream
 
+type DestinationStreamWithMetadata = typings.pino.mod.pino.DestinationStreamWithMetadata
+
 type Level = typings.pino.mod.pino.Level
 
-type LevelChangeEventListener = typings.pino.mod.pino.LevelChangeEventListener
+type LevelChangeEventListener = typings.pino.mod.pino.LevelChangeEventListener[typings.pino.mod.pino.LoggerOptions]
 
 type LevelMapping = typings.pino.mod.pino.LevelMapping
 
@@ -77,8 +79,6 @@ type MultiStreamRes = typings.pino.mod.pino.MultiStreamRes
 type OnChildCallback[Options] = js.Function1[
 /* child */ typings.pino.mod.pino.Logger[Options & typings.pino.mod.pino.ChildLoggerOptions], 
 Unit]
-
-type PrettyOptions = typings.pino.mod.pino.PrettyOptions
 
 type SerializedError = typings.pino.mod.pino.SerializedError
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for migrate-mongo
 
-Typings are for version 7.0
+Typings are for version 8.2
 
 ## Library description:
 A database migration tool for MongoDB in Node
@@ -10,10 +10,10 @@ A database migration tool for MongoDB in Node
 | ------------------ | :-------------: |
 | Full name          | migrate-mongo |
 | Keywords           | migrate mongo mongodb migrations database |
-| # releases         | 20 |
-| # dependents       | 3 |
-| # downloads        | 936972 |
-| # stars            | 4 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 274105.6666666667 |
+| # stars            | 673.0 |
 
 ## Links
 - [Homepage](https://github.com/seppevs/migrate-mongo#readme)

@@ -26,6 +26,20 @@ trait GlobalAccelerator extends Service {
   ): Request[AddCustomRoutingEndpointsResponse, AWSError] = js.native
   
   /**
+    * Add endpoints to an endpoint group. The AddEndpoints API operation is the recommended option for adding endpoints. The alternative options are to add endpoints when you create an endpoint group (with the CreateEndpointGroup API) or when you update an endpoint group (with the UpdateEndpointGroup API).  There are two advantages to using AddEndpoints to add endpoints:   It's faster, because Global Accelerator only has to resolve the new endpoints that you're adding.   It's more convenient, because you don't need to specify all of the current endpoints that are already in the endpoint group in addition to the new endpoints that you want to add.  
+    */
+  def addEndpoints(): Request[AddEndpointsResponse, AWSError] = js.native
+  def addEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ AddEndpointsResponse, Unit]): Request[AddEndpointsResponse, AWSError] = js.native
+  /**
+    * Add endpoints to an endpoint group. The AddEndpoints API operation is the recommended option for adding endpoints. The alternative options are to add endpoints when you create an endpoint group (with the CreateEndpointGroup API) or when you update an endpoint group (with the UpdateEndpointGroup API).  There are two advantages to using AddEndpoints to add endpoints:   It's faster, because Global Accelerator only has to resolve the new endpoints that you're adding.   It's more convenient, because you don't need to specify all of the current endpoints that are already in the endpoint group in addition to the new endpoints that you want to add.  
+    */
+  def addEndpoints(params: AddEndpointsRequest): Request[AddEndpointsResponse, AWSError] = js.native
+  def addEndpoints(
+    params: AddEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddEndpointsResponse, Unit]
+  ): Request[AddEndpointsResponse, AWSError] = js.native
+  
+  /**
     * Advertises an IPv4 address range that is provisioned for use with your Amazon Web Services resources through bring your own IP addresses (BYOIP). It can take a few minutes before traffic to the specified addresses starts routing to Amazon Web Services because of propagation delays.  To stop advertising the BYOIP address range, use  WithdrawByoipCidr. For more information, see Bring your own IP addresses (BYOIP) in the Global Accelerator Developer Guide.
     */
   def advertiseByoipCidr(): Request[AdvertiseByoipCidrResponse, AWSError] = js.native
@@ -559,6 +573,20 @@ trait GlobalAccelerator extends Service {
   def removeCustomRoutingEndpoints(params: RemoveCustomRoutingEndpointsRequest): Request[js.Object, AWSError] = js.native
   def removeCustomRoutingEndpoints(
     params: RemoveCustomRoutingEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Remove endpoints from an endpoint group.  The RemoveEndpoints API operation is the recommended option for removing endpoints. The alternative is to remove endpoints by updating an endpoint group by using the UpdateEndpointGroup API operation. There are two advantages to using AddEndpoints to remove endpoints instead:   It's more convenient, because you only need to specify the endpoints that you want to remove. With the UpdateEndpointGroup API operation, you must specify all of the endpoints in the endpoint group except the ones that you want to remove from the group.   It's faster, because Global Accelerator doesn't need to resolve any endpoints. With the UpdateEndpointGroup API operation, Global Accelerator must resolve all of the endpoints that remain in the group.  
+    */
+  def removeEndpoints(): Request[js.Object, AWSError] = js.native
+  def removeEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Remove endpoints from an endpoint group.  The RemoveEndpoints API operation is the recommended option for removing endpoints. The alternative is to remove endpoints by updating an endpoint group by using the UpdateEndpointGroup API operation. There are two advantages to using AddEndpoints to remove endpoints instead:   It's more convenient, because you only need to specify the endpoints that you want to remove. With the UpdateEndpointGroup API operation, you must specify all of the endpoints in the endpoint group except the ones that you want to remove from the group.   It's faster, because Global Accelerator doesn't need to resolve any endpoints. With the UpdateEndpointGroup API operation, Global Accelerator must resolve all of the endpoints that remain in the group.  
+    */
+  def removeEndpoints(params: RemoveEndpointsRequest): Request[js.Object, AWSError] = js.native
+  def removeEndpoints(
+    params: RemoveEndpointsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   

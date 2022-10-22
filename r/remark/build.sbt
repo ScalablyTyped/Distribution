@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "remark"
-version := "14.0.2-c0e1bc"
+version := "14.0.2-369d94"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "mdast" % "3.0-dt-20211202Z-e12bb0",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "unified" % "10.1.2-288603",
+  "org.scalablytyped" %%% "unified" % "10.1.2-7e2642",
   "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-e61dba",
-  "org.scalablytyped" %%% "vfile" % "5.3.5-a5e96f",
+  "org.scalablytyped" %%% "vfile" % "5.3.5-987163",
   "org.scalablytyped" %%% "vfile-message" % "3.1.2-6108f4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

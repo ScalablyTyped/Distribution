@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-create-class
 
-Typings are for version 8.0.3
+Typings are for version 8.0.4
 
 ## Library description:
 Provides a helper to create Inferno Components without needing ES2015

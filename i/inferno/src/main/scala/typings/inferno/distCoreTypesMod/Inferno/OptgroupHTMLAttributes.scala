@@ -8,9 +8,9 @@ trait OptgroupHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String | Null] = js.undefined
 }
 object OptgroupHTMLAttributes {
   
@@ -23,9 +23,13 @@ object OptgroupHTMLAttributes {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
+    
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

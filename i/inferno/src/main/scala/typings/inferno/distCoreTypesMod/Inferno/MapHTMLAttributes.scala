@@ -8,7 +8,7 @@ trait MapHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object MapHTMLAttributes {
   
@@ -20,6 +20,8 @@ object MapHTMLAttributes {
   extension [Self <: MapHTMLAttributes[?], T](x: Self & MapHTMLAttributes[T]) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

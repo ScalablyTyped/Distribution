@@ -5,6 +5,8 @@ import typings.i18next.anon.KeySeparator
 import typings.i18next.anon.PickInitOptionsfallbackLn
 import typings.i18next.anon.PickInitOptionskeySeparat
 import typings.i18next.anon.ReturnDetails
+import typings.i18next.anon.ReturnObjects
+import typings.i18next.anon.`0`
 import typings.i18next.i18nextStrings.added
 import typings.i18next.i18nextStrings.failedLoading
 import typings.i18next.i18nextStrings.initialized
@@ -375,7 +377,7 @@ trait i18n extends StObject {
     Unit, 
     Resources
   ] = js.native
-  def t[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap] & ReturnDetails): TFunctionDetailedResult[
+  def t[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap] & ReturnDetails & `0`): TFunctionDetailedResult[
     TFuncReturn[
       js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], 
       TKeys, 
@@ -428,7 +430,7 @@ trait i18n extends StObject {
     Unit, 
     Resources
   ] = js.native
-  def t[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap] & ReturnDetails): TFunctionDetailedResult[
+  def t[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap] & ReturnDetails & `0`): TFunctionDetailedResult[
     TFuncReturn[
       js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], 
       TKeys, 
@@ -450,7 +452,7 @@ trait i18n extends StObject {
     Resources
   ] = js.native
   @JSName("t")
-  def t_TKeysTDefaultResultTInterpolationMap_TFuncReturn[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TFuncReturn[
+  def t_TKeysTDefaultResultTInterpolationMap_TFuncReturn[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: TKeys, options: (TOptions[TInterpolationMap] & ReturnObjects) | TOptions[TInterpolationMap]): TFuncReturn[
     js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], 
     TKeys, 
     TDefaultResult, 
@@ -466,7 +468,10 @@ trait i18n extends StObject {
     Resources
   ] = js.native
   @JSName("t")
-  def t_TKeysTDefaultResultTInterpolationMap_TFuncReturn[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TFuncReturn[
+  def t_TKeysTDefaultResultTInterpolationMap_TFuncReturn[TKeys /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<std.Array<i18next.i18next.FallbackOrNS<string, keyof i18next.i18next.Resources>>, undefined, i18next.i18next.Resources> | std.TemplateStringsArray extends infer A ? A : never */ js.Any */, TDefaultResult /* <: DefaultTFuncReturn */, TInterpolationMap /* <: js.Object */](
+    key: js.Array[TKeys],
+    options: (TOptions[TInterpolationMap] & ReturnObjects) | TOptions[TInterpolationMap]
+  ): TFuncReturn[
     js.Array[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]], 
     TKeys, 
     TDefaultResult, 

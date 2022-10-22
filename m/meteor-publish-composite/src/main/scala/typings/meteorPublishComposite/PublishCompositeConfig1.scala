@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublishCompositeConfig1[InLevel1, OutLevel] extends StObject {
   
-  var children: js.UndefOr[js.Array[PublishCompositeConfig2[InLevel1, OutLevel, js.Any]]] = js.undefined
+  var children: js.UndefOr[js.Array[PublishCompositeConfig2[InLevel1, OutLevel, Any]]] = js.undefined
   
   var collectionName: js.UndefOr[String] = js.undefined
   
@@ -22,11 +22,11 @@ object PublishCompositeConfig1 {
   
   extension [Self <: PublishCompositeConfig1[?, ?], InLevel1, OutLevel](x: Self & (PublishCompositeConfig1[InLevel1, OutLevel])) {
     
-    inline def setChildren(value: js.Array[PublishCompositeConfig2[InLevel1, OutLevel, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[PublishCompositeConfig2[InLevel1, OutLevel, Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: (PublishCompositeConfig2[InLevel1, OutLevel, js.Any])*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (PublishCompositeConfig2[InLevel1, OutLevel, Any])*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     

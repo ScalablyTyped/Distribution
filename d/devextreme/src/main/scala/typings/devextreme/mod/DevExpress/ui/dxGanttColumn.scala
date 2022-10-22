@@ -8,11 +8,13 @@ import typings.devextreme.mod.DevExpress.common.charts.FilterType
 import typings.devextreme.mod.DevExpress.common.charts.SelectedFilterOperation
 import typings.devextreme.mod.DevExpress.common.grids.ColumnCustomizeTextArg
 import typings.devextreme.mod.DevExpress.common.grids.ColumnHeaderFilter
+import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.ColumnCellTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.ColumnHeaderCellTemplateData
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,6 +71,15 @@ trait dxGanttColumn[TRowData, TKey] extends StObject {
       /* selectedFilterOperation */ String, 
       /* target */ String, 
       String | js.Array[Any] | js.Function
+    ]
+  ] = js.undefined
+  
+  var defaultSetCellValue: js.UndefOr[
+    js.Function3[
+      /* newData */ DeepPartial[Any], 
+      /* value */ Any, 
+      /* currentRowData */ Any, 
+      Unit | PromiseLike[Unit]
     ]
   ] = js.undefined
   
@@ -204,6 +215,12 @@ object dxGanttColumn {
     ): Self = StObject.set(x, "defaultCalculateFilterExpression", js.Any.fromFunction3(value))
     
     inline def setDefaultCalculateFilterExpressionUndefined: Self = StObject.set(x, "defaultCalculateFilterExpression", js.undefined)
+    
+    inline def setDefaultSetCellValue(
+      value: (/* newData */ DeepPartial[Any], /* value */ Any, /* currentRowData */ Any) => Unit | PromiseLike[Unit]
+    ): Self = StObject.set(x, "defaultSetCellValue", js.Any.fromFunction3(value))
+    
+    inline def setDefaultSetCellValueUndefined: Self = StObject.set(x, "defaultSetCellValue", js.undefined)
     
     inline def setEncodeHtml(value: Boolean): Self = StObject.set(x, "encodeHtml", value.asInstanceOf[js.Any])
     

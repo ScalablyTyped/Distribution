@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wix-design-systems-locale-utils" : "1.68.0"
+      "wix-design-systems-locale-utils" : "1.69.0"
     }
   ],
   "test-dependencies" : [
     {
-      "wix-design-systems-locale-utils" : "1.68.0"
+      "wix-design-systems-locale-utils" : "1.69.0"
     }
   ],
   "compile-devDependencies" : [

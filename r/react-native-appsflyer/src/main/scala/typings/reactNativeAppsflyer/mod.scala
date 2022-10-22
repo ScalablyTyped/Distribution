@@ -42,6 +42,8 @@ object mod {
       * */
     inline def disableCollectASA(shouldDisable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableCollectASA")(shouldDisable.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    inline def disableIDFVCollection(shouldDisable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableIDFVCollection")(shouldDisable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
     inline def disableSKAD(disableSkad: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableSKAD")(disableSkad.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def generateInviteLink(params: GenerateInviteLinkParams, successC: SuccessCB, errorC: ErrorCB): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateInviteLink")(params.asInstanceOf[js.Any], successC.asInstanceOf[js.Any], errorC.asInstanceOf[js.Any])).asInstanceOf[Unit]

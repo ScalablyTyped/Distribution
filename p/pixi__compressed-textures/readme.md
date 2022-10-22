@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__compressed-textures
 
-Typings are for version 6.5.6
+Typings are for version 6.5.7
 
 ## Library description:
 Loaders for compressed texture file formats

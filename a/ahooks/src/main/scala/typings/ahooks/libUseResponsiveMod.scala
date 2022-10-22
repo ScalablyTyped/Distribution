@@ -13,7 +13,9 @@ object libUseResponsiveMod {
   
   inline def configResponsive(config: ResponsiveConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configResponsive")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def useResponsive(): Record[String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsive")().asInstanceOf[Record[String, Boolean]]
+  inline def useResponsive(): ResponsiveInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsive")().asInstanceOf[ResponsiveInfo]
   
   type ResponsiveConfig = Record[String, Double]
+  
+  type ResponsiveInfo = Record[String, Boolean]
 }

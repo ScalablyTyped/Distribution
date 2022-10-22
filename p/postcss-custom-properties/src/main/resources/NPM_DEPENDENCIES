@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-custom-properties" : "12.1.9"
+      "postcss-custom-properties" : "12.1.10"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-custom-properties" : "12.1.9"
+      "postcss-custom-properties" : "12.1.10"
     }
   ],
   "compile-devDependencies" : [

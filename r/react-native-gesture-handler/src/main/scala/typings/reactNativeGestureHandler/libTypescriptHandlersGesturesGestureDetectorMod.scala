@@ -2,6 +2,7 @@ package typings.reactNativeGestureHandler
 
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureCompositionMod.ComposedGesture
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.GestureType
 import typings.reactNativeGestureHandler.libTypescriptHandlersGesturesGestureMod.HandlerCallbacks
@@ -65,12 +66,14 @@ object libTypescriptHandlersGesturesGestureDetectorMod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var gesture: js.UndefOr[ComposedGesture | GestureType] = js.undefined
+    var gesture: ComposedGesture | GestureType
+    
+    var userSelect: js.UndefOr[UserSelect] = js.undefined
   }
   object GestureDetectorProps {
     
-    inline def apply(): GestureDetectorProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(gesture: ComposedGesture | GestureType): GestureDetectorProps = {
+      val __obj = js.Dynamic.literal(gesture = gesture.asInstanceOf[js.Any])
       __obj.asInstanceOf[GestureDetectorProps]
     }
     
@@ -82,7 +85,9 @@ object libTypescriptHandlersGesturesGestureDetectorMod {
       
       inline def setGesture(value: ComposedGesture | GestureType): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
       
-      inline def setGestureUndefined: Self = StObject.set(x, "gesture", js.undefined)
+      inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+      
+      inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     }
   }
 }

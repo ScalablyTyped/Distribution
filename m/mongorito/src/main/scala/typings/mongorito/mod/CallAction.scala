@@ -28,7 +28,7 @@ object CallAction {
     
     inline def setArgs(value: js.Array[Args]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: Args*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Args*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

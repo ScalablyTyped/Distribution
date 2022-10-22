@@ -9,7 +9,11 @@ trait EndSessionParameters
   extends StObject
      with /* key */ StringDictionary[Any] {
   
+  var client_id: js.UndefOr[String] = js.undefined
+  
   var id_token_hint: js.UndefOr[TokenSet | String] = js.undefined
+  
+  var logout_hint: js.UndefOr[String] = js.undefined
   
   var post_logout_redirect_uri: js.UndefOr[String] = js.undefined
   
@@ -24,9 +28,17 @@ object EndSessionParameters {
   
   extension [Self <: EndSessionParameters](x: Self) {
     
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    
     inline def setId_token_hint(value: TokenSet | String): Self = StObject.set(x, "id_token_hint", value.asInstanceOf[js.Any])
     
     inline def setId_token_hintUndefined: Self = StObject.set(x, "id_token_hint", js.undefined)
+    
+    inline def setLogout_hint(value: String): Self = StObject.set(x, "logout_hint", value.asInstanceOf[js.Any])
+    
+    inline def setLogout_hintUndefined: Self = StObject.set(x, "logout_hint", js.undefined)
     
     inline def setPost_logout_redirect_uri(value: String): Self = StObject.set(x, "post_logout_redirect_uri", value.asInstanceOf[js.Any])
     

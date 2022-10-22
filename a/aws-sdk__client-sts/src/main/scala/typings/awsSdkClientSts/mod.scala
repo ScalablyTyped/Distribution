@@ -43,6 +43,7 @@ import typings.awsSdkClientSts.distTypesModelsModels0Mod.Tag
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceInputTypes
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceOutputTypes
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
@@ -61,6 +62,15 @@ object mod {
     extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleCommand {
     def this(input: AssumeRoleCommandInput) = this()
   }
+  /* static members */
+  object AssumeRoleCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "AssumeRoleCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
   
   inline def AssumeRoleRequestFilterSensitiveLog(obj: AssumeRoleRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -72,6 +82,15 @@ object mod {
     extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleWithSAMLCommand {
     def this(input: AssumeRoleWithSAMLCommandInput) = this()
   }
+  /* static members */
+  object AssumeRoleWithSAMLCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "AssumeRoleWithSAMLCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
   
   inline def AssumeRoleWithSAMLRequestFilterSensitiveLog(obj: AssumeRoleWithSAMLRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleWithSAMLRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -82,6 +101,15 @@ object mod {
   open class AssumeRoleWithWebIdentityCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleWithWebIdentityCommand {
     def this(input: AssumeRoleWithWebIdentityCommandInput) = this()
+  }
+  /* static members */
+  object AssumeRoleWithWebIdentityCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "AssumeRoleWithWebIdentityCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   inline def AssumeRoleWithWebIdentityRequestFilterSensitiveLog(obj: AssumeRoleWithWebIdentityRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleWithWebIdentityRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
@@ -97,6 +125,15 @@ object mod {
   open class DecodeAuthorizationMessageCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.DecodeAuthorizationMessageCommand {
     def this(input: DecodeAuthorizationMessageCommandInput) = this()
+  }
+  /* static members */
+  object DecodeAuthorizationMessageCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "DecodeAuthorizationMessageCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   inline def DecodeAuthorizationMessageRequestFilterSensitiveLog(obj: DecodeAuthorizationMessageRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DecodeAuthorizationMessageRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
@@ -121,6 +158,15 @@ object mod {
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetAccessKeyInfoCommand {
     def this(input: GetAccessKeyInfoCommandInput) = this()
   }
+  /* static members */
+  object GetAccessKeyInfoCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "GetAccessKeyInfoCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
   
   inline def GetAccessKeyInfoRequestFilterSensitiveLog(obj: GetAccessKeyInfoRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAccessKeyInfoRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -131,6 +177,15 @@ object mod {
   open class GetCallerIdentityCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetCallerIdentityCommand {
     def this(input: GetCallerIdentityCommandInput) = this()
+  }
+  /* static members */
+  object GetCallerIdentityCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "GetCallerIdentityCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   inline def GetCallerIdentityRequestFilterSensitiveLog(obj: GetCallerIdentityRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCallerIdentityRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
@@ -143,6 +198,15 @@ object mod {
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetFederationTokenCommand {
     def this(input: GetFederationTokenCommandInput) = this()
   }
+  /* static members */
+  object GetFederationTokenCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "GetFederationTokenCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
+  }
   
   inline def GetFederationTokenRequestFilterSensitiveLog(obj: GetFederationTokenRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFederationTokenRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -153,6 +217,15 @@ object mod {
   open class GetSessionTokenCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetSessionTokenCommand {
     def this(input: GetSessionTokenCommandInput) = this()
+  }
+  /* static members */
+  object GetSessionTokenCommand {
+    
+    @JSImport("@aws-sdk/client-sts", "GetSessionTokenCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   inline def GetSessionTokenRequestFilterSensitiveLog(obj: GetSessionTokenRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSessionTokenRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]

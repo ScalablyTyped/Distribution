@@ -471,6 +471,10 @@ object chromeStrings {
   inline def buffer_overflow: buffer_overflow = "buffer_overflow".asInstanceOf[buffer_overflow]
   
   @js.native
+  sealed trait cancelled extends StObject
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  
+  @js.native
   sealed trait certificateProvider
     extends StObject
        with ManifestPermissions
@@ -631,6 +635,18 @@ object chromeStrings {
   inline def documentScan: documentScan = "documentScan".asInstanceOf[documentScan]
   
   @js.native
+  sealed trait document_end extends StObject
+  inline def document_end: document_end = "document_end".asInstanceOf[document_end]
+  
+  @js.native
+  sealed trait document_idle extends StObject
+  inline def document_idle: document_idle = "document_idle".asInstanceOf[document_idle]
+  
+  @js.native
+  sealed trait document_start extends StObject
+  inline def document_start: document_start = "document_start".asInstanceOf[document_start]
+  
+  @js.native
   sealed trait downloads
     extends StObject
        with ManifestPermissions
@@ -645,6 +661,10 @@ object chromeStrings {
   @js.native
   sealed trait eight extends StObject
   inline def eight: eight = "eight".asInstanceOf[eight]
+  
+  @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait enterpriseDotdeviceAttributes
@@ -669,6 +689,10 @@ object chromeStrings {
     extends StObject
        with ManifestPermissions
   inline def enterpriseDotplatformKeys: enterpriseDotplatformKeys = "enterprise.platformKeys".asInstanceOf[enterpriseDotplatformKeys]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait even extends StObject
@@ -903,6 +927,10 @@ object chromeStrings {
   inline def management: management = "management".asInstanceOf[management]
   
   @js.native
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
+  
+  @js.native
   sealed trait maximized
     extends StObject
        with windowStateEnum
@@ -1071,6 +1099,10 @@ object chromeStrings {
   inline def parity_error: parity_error = "parity_error".asInstanceOf[parity_error]
   
   @js.native
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
   sealed trait ping
     extends StObject
        with ResourceType
@@ -1181,6 +1213,10 @@ object chromeStrings {
   inline def regular_only: regular_only = "regular_only".asInstanceOf[regular_only]
   
   @js.native
+  sealed trait resume extends StObject
+  inline def resume: resume = "resume".asInstanceOf[resume]
+  
+  @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
@@ -1217,6 +1253,10 @@ object chromeStrings {
     extends StObject
        with ContextType
   inline def selection: selection = "selection".asInstanceOf[selection]
+  
+  @js.native
+  sealed trait sentence extends StObject
+  inline def sentence: sentence = "sentence".asInstanceOf[sentence]
   
   @js.native
   sealed trait separator
@@ -1259,6 +1299,10 @@ object chromeStrings {
   @js.native
   sealed trait standard extends StObject
   inline def standard: standard = "standard".asInstanceOf[standard]
+  
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait storage
@@ -1467,6 +1511,10 @@ object chromeStrings {
     extends StObject
        with PlatformOs
   inline def win: win = "win".asInstanceOf[win]
+  
+  @js.native
+  sealed trait word extends StObject
+  inline def word: word = "word".asInstanceOf[word]
   
   @js.native
   sealed trait `x86-32`

@@ -8,9 +8,9 @@ trait CanvasHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String | Null] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String | Null] = js.undefined
 }
 object CanvasHTMLAttributes {
   
@@ -23,9 +23,13 @@ object CanvasHTMLAttributes {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

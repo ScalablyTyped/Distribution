@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__loaders
 
-Typings are for version 6.5.6
+Typings are for version 6.5.7
 
 ## Library description:
 Load assets and resources

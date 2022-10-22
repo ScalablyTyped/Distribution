@@ -10,11 +10,11 @@ trait DialogHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var onCancel: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  var onCancel: js.UndefOr[InfernoEventHandler[T] | Null] = js.undefined
   
-  var onClose: js.UndefOr[InfernoEventHandler[T]] = js.undefined
+  var onClose: js.UndefOr[InfernoEventHandler[T] | Null] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.undefined
+  var open: js.UndefOr[Boolean | Null] = js.undefined
 }
 object DialogHTMLAttributes {
   
@@ -42,6 +42,8 @@ object DialogHTMLAttributes {
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setOpenNull: Self = StObject.set(x, "open", null)
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }

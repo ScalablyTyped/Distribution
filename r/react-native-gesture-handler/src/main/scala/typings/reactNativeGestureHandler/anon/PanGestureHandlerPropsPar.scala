@@ -5,13 +5,14 @@ import typings.react.mod.Ref
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.GestureEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandlerEventPayload
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler.PanGestureHandlerProps & std.Partial<std.Record<'failOffsetXStart' | 'failOffsetYStart' | 'failOffsetXEnd' | 'failOffsetYEnd' | 'activeOffsetXStart' | 'activeOffsetXEnd' | 'activeOffsetYStart' | 'activeOffsetYEnd', number>> */
+/* Inlined react-native-gesture-handler.react-native-gesture-handler/lib/typescript/handlers/PanGestureHandler.PanGestureHandlerProps & std.Partial<std.Record<'activeOffsetXStart' | 'activeOffsetXEnd' | 'failOffsetXStart' | 'failOffsetXEnd' | 'activeOffsetYStart' | 'activeOffsetYEnd' | 'failOffsetYStart' | 'failOffsetYEnd', number>> */
 trait PanGestureHandlerPropsPar extends StObject {
   
   var activateAfterLongPress: js.UndefOr[Double] = js.undefined
@@ -141,6 +142,8 @@ trait PanGestureHandlerPropsPar extends StObject {
   var simultaneousHandlers: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
+  
+  var userSelect: js.UndefOr[UserSelect] = js.undefined
   
   var waitFor: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
 }
@@ -310,6 +313,10 @@ object PanGestureHandlerPropsPar {
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+    
+    inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     inline def setWaitFor(value: Ref[Any] | js.Array[Ref[Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAccountHealthResponse extends StObject {
   
   /**
+    *  Number of resources that DevOps Guru is monitoring in your Amazon Web Services account. 
+    */
+  var AnalyzedResourceCount: js.UndefOr[typings.awsSdk.clientsDevopsguruMod.AnalyzedResourceCount] = js.undefined
+  
+  /**
     *  An integer that specifies the number of metrics that have been analyzed in your Amazon Web Services account. 
     */
   var MetricsAnalyzed: NumMetricsAnalyzed
@@ -39,6 +44,10 @@ object DescribeAccountHealthResponse {
   }
   
   extension [Self <: DescribeAccountHealthResponse](x: Self) {
+    
+    inline def setAnalyzedResourceCount(value: AnalyzedResourceCount): Self = StObject.set(x, "AnalyzedResourceCount", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzedResourceCountUndefined: Self = StObject.set(x, "AnalyzedResourceCount", js.undefined)
     
     inline def setMetricsAnalyzed(value: NumMetricsAnalyzed): Self = StObject.set(x, "MetricsAnalyzed", value.asInstanceOf[js.Any])
     

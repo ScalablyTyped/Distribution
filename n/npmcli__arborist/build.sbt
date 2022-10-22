@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "npmcli__arborist"
-version := "5.6-dt-20221020Z-675ef0"
+version := "5.6-dt-20221020Z-962a9b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-0c5722",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "node-fetch" % "3.2.10-a51f9b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "node-fetch" % "3.2.10-9450e8",
   "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20211202Z-c872f9",
-  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-e20a7c",
+  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-7363ab",
   "org.scalablytyped" %%% "npmcli__package-json" % "2.0-dt-20220510Z-d8583b",
-  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-82e452",
-  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-41c867",
-  "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-5bafe8",
+  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-2923c2",
+  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-997457",
+  "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-8991bd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

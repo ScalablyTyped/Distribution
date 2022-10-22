@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "libp2p__crypto"
-version := "1.0.4-6a8c2c"
+version := "1.0.4-25016c"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "libp2p__interface-keys" % "1.0.3-83da89",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "protons-runtime" % "3.1.0-6a8691",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-45b6fe")

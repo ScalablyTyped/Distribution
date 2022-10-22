@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure__core-http"
-version := "2.2.7-e5a85a"
+version := "2.2.7-380e5b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "azure__core-auth" % "1.4.0-832d7d",
   "org.scalablytyped" %%% "azure__core-tracing" % "1.0.1-a23c51",
   "org.scalablytyped" %%% "azure__logger" % "1.0.3-be6f9a",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "tunnel" % "0.0-dt-20211202Z-7c0f66")
+  "org.scalablytyped" %%% "tunnel" % "0.0-dt-20211202Z-9dd4ab")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

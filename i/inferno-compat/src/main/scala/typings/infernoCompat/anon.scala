@@ -163,7 +163,7 @@ object anon {
     
     var renderComplete: (js.Function2[
         /* rootInput */ InfernoNode | VNode, 
-        /* parentDOM */ Element | Node | HTMLElement | SVGAElement | ShadowRoot | DocumentFragment, 
+        /* parentDOM */ Element | Node | HTMLElement | ShadowRoot | DocumentFragment | SVGAElement, 
         Unit
       ]) | Null
   }
@@ -189,7 +189,7 @@ object anon {
       inline def setReactStylesUndefined: Self = StObject.set(x, "reactStyles", js.undefined)
       
       inline def setRenderComplete(
-        value: (/* rootInput */ InfernoNode | VNode, /* parentDOM */ Element | Node | HTMLElement | SVGAElement | ShadowRoot | DocumentFragment) => Unit
+        value: (/* rootInput */ InfernoNode | VNode, /* parentDOM */ Element | Node | HTMLElement | ShadowRoot | DocumentFragment | SVGAElement) => Unit
       ): Self = StObject.set(x, "renderComplete", js.Any.fromFunction2(value))
       
       inline def setRenderCompleteNull: Self = StObject.set(x, "renderComplete", null)
@@ -332,6 +332,14 @@ object anon {
   }
   
   @js.native
+  trait FnCallRef extends StObject {
+    
+    def apply(ref: VNode): Node | Null = js.native
+    def apply(ref: Component[js.Object, js.Object]): Node | Null = js.native
+    def apply(ref: Node): Node | Null = js.native
+  }
+  
+  @js.native
   trait FnCallRender extends StObject {
     
     def apply[T, P](
@@ -386,7 +394,7 @@ object anon {
     extends StObject
        with Instantiable0[Component[js.Object, js.Object]] {
     
-    var defaultProps: js.UndefOr[js.Object] = js.native
+    var defaultProps: js.UndefOr[js.Object | Null] = js.native
     
     var getDerivedStateFromProps: js.UndefOr[js.Function2[/* nextProps */ scala.Any, /* state */ scala.Any, scala.Any]] = js.native
   }

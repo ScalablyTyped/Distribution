@@ -25,12 +25,12 @@ object postProcessesRenderPipelinePipelinesDefaultRenderingPipelineMod {
   @JSImport("babylonjs/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline", "DefaultRenderingPipeline")
   @js.native
   /**
-    * @constructor
-    * @param name - The rendering pipeline name (default: "")
-    * @param hdr - If high dynamic range textures should be used (default: true)
-    * @param scene - The scene linked to this pipeline (default: the last created scene)
-    * @param cameras - The array of cameras that the rendering pipeline will be attached to (default: scene.cameras)
-    * @param automaticBuild - if false, you will have to manually call prepare() to update the pipeline (default: true)
+    * Instantiates a DefaultRenderingPipeline.
+    * @param name The rendering pipeline name (default: "")
+    * @param hdr If high dynamic range textures should be used (default: true)
+    * @param scene The scene linked to this pipeline (default: the last created scene)
+    * @param cameras The array of cameras that the rendering pipeline will be attached to (default: scene.cameras)
+    * @param automaticBuild If false, you will have to manually call prepare() to update the pipeline (default: true)
     */
   open class DefaultRenderingPipeline ()
     extends PostProcessRenderPipeline
@@ -190,6 +190,13 @@ object postProcessesRenderPipelinePipelinesDefaultRenderingPipelineMod {
       */
     @JSName("animations")
     var animations_DefaultRenderingPipeline: js.Array[Animation] = js.native
+    
+    /**
+      * Enable or disable automatic building of the pipeline when effects are enabled and disabled.
+      * If false, you will have to manually call prepare() to update the pipeline.
+      */
+    def automaticBuild: Boolean = js.native
+    def automaticBuild_=(value: Boolean): Unit = js.native
     
     /* private */ var bloom: Any = js.native
     

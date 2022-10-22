@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__mixin-cache-as-bitmap
 
-Typings are for version 6.5.6
+Typings are for version 6.5.7
 
 ## Library description:
 Mixin to allow caching container and its children to a bitmap texture

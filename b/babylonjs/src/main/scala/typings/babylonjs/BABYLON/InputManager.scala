@@ -42,9 +42,13 @@ trait InputManager extends StObject {
     */
   def _isPointerSwiping(): Boolean = js.native
   
+  /* private */ var _isSwiping: Any = js.native
+  
   /* private */ var _meshPickProceed: Any = js.native
   
   /* private */ var _meshUnderPointerId: Any = js.native
+  
+  /* private */ var _movePointerInfo: Any = js.native
   
   /* private */ var _onKeyDown: Any = js.native
   
@@ -55,6 +59,9 @@ trait InputManager extends StObject {
   /* private */ var _onPointerMove: Any = js.native
   
   /* private */ var _onPointerUp: Any = js.native
+  
+  /** @internal */
+  def _pickMove(pointerId: Double): Nullable[PickingInfo] = js.native
   
   /* private */ var _pickedDownMesh: Any = js.native
   
@@ -86,11 +93,16 @@ trait InputManager extends StObject {
   
   /* private */ var _scene: Any = js.native
   
-  /* private */ var _setRayOnPointerInfo: Any = js.native
+  /* private */ var _setCursorAndPointerOverMesh: Any = js.native
+  
+  /** @internal */
+  def _setRayOnPointerInfo(pickInfo: Nullable[PickingInfo], event: IMouseEvent): Unit = js.native
   
   /* private */ var _startingPointerPosition: Any = js.native
   
   /* private */ var _startingPointerTime: Any = js.native
+  
+  /* private */ var _swipeButtonPressed: Any = js.native
   
   /* private */ var _totalPointersPressed: Any = js.native
   

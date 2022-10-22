@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sinon-chrome"
-version := "v2.2.4-dt-20220913Z-282065"
+version := "v2.2.4-dt-20220913Z-eed1c4"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20221015Z-def80f",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20221020Z-4b3ce8",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20220818Z-da3d2e",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20220818Z-359de2",
   "org.scalablytyped" %%% "har-format" % "1.2-dt-20220923Z-ddd6ba",

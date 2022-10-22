@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/extract" : "6.5.6"
+      "@pixi/extract" : "6.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/extract" : "6.5.6"
+      "@pixi/extract" : "6.5.7"
     }
   ],
   "compile-devDependencies" : [

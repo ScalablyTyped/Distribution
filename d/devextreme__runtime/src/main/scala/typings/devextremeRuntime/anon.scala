@@ -614,18 +614,23 @@ object anon {
     ): InfernoElement[Any] | Null = js.native
     
     var defaultHooks: js.UndefOr[
-        Refs[
+        (Refs[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any
-        ]
+        ]) | Null
       ] = js.native
     
     var defaultProps: (js.UndefOr[
-        Partial[
+        (Partial[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any
-        ]
+        ]) | Null
       ]) & Any = js.native
     
-    var ref: Ref[
+    def ref(): Any = js.native
+    def ref(
+      instance: /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
+    ): Any = js.native
+    @JSName("ref")
+    var ref_Original: Ref[
         /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
       ] = js.native
   }
@@ -11706,11 +11711,15 @@ object anon {
   @js.native
   trait IComponentanyanydefaultPr extends StObject {
     
+    var componentDidAppear: js.UndefOr[js.Function1[/* domNode */ Element, Unit]] = js.native
+    
     var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
     
     var componentDidUpdate: js.UndefOr[
         js.Function3[/* prevProps */ Children & Any, /* prevState */ Any, /* snapshot */ Any, Unit]
       ] = js.native
+    
+    var componentWillDisappear: js.UndefOr[js.Function2[/* domNode */ Element, /* callback */ js.Function, Unit]] = js.native
     
     var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
     
@@ -11722,7 +11731,7 @@ object anon {
         js.Function3[/* nextProps */ Children & Any, /* nextState */ Any, /* context */ Any, Unit]
       ] = js.native
     
-    var context: Any = js.native
+    var context: js.UndefOr[Any] = js.native
     
     var defaultProps: Any = js.native
     

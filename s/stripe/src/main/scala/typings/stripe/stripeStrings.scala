@@ -16454,6 +16454,36 @@ object stripeStrings {
   inline def jp_rn: jp_rn = "jp_rn".asInstanceOf[jp_rn]
   
   @js.native
+  sealed trait jp_trn
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
+       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
+       with typings.stripe.mod.Stripe.TaxId.Type
+  inline def jp_trn: jp_trn = "jp_trn".asInstanceOf[jp_trn]
+  
+  @js.native
+  sealed trait ke_pin
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
+       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
+       with typings.stripe.mod.Stripe.TaxId.Type
+  inline def ke_pin: ke_pin = "ke_pin".asInstanceOf[ke_pin]
+  
+  @js.native
   sealed trait keep_as_draft
     extends StObject
        with Behavior

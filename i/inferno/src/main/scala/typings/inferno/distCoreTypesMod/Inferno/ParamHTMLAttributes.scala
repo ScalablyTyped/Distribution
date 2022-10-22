@@ -8,9 +8,9 @@ trait ParamHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+  var value: js.UndefOr[String | js.Array[String] | Double | Null] = js.undefined
 }
 object ParamHTMLAttributes {
   
@@ -23,9 +23,13 @@ object ParamHTMLAttributes {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "sass-loader"
-version := "8.0-dt-20220102Z-8a15fa"
+version := "8.0-dt-20220102Z-4c7ede"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "immutable" % "4.1.0-cc1716",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "node-sass" % "4.11-dt-20220630Z-dc6ddb",
-  "org.scalablytyped" %%% "sass" % "1.54.9-f6fca6",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "node-sass" % "4.11-dt-20220630Z-e14747",
+  "org.scalablytyped" %%% "sass" % "1.54.9-3e43c9",
   "org.scalablytyped" %%% "source-map-js" % "1.0.2-c68fae",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

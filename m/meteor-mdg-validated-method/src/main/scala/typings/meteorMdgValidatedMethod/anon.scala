@@ -9,11 +9,11 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var noRetry: js.UndefOr[Boolean] = js.undefined
     
-    var onResultReceived: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+    var onResultReceived: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
     
     var returnStubValue: js.UndefOr[Boolean] = js.undefined
     
@@ -32,7 +32,7 @@ object anon {
       
       inline def setNoRetryUndefined: Self = StObject.set(x, "noRetry", js.undefined)
       
-      inline def setOnResultReceived(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onResultReceived", js.Any.fromFunction1(value))
+      inline def setOnResultReceived(value: /* result */ Any => Unit): Self = StObject.set(x, "onResultReceived", js.Any.fromFunction1(value))
       
       inline def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
       
@@ -48,18 +48,22 @@ object anon {
   
   trait Name[TName /* <: String */] extends StObject {
     
-    var name: String | TName
+    var name: /* import warning: importer.ImportType#apply Failed type conversion: TName extends string ? TName : string */ js.Any
   }
   object Name {
     
-    inline def apply[TName /* <: String */](name: String | TName): Name[TName] = {
+    inline def apply[TName /* <: String */](
+      name: /* import warning: importer.ImportType#apply Failed type conversion: TName extends string ? TName : string */ js.Any
+    ): Name[TName] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name[TName]]
     }
     
     extension [Self <: Name[?], TName /* <: String */](x: Self & Name[TName]) {
       
-      inline def setName(value: String | TName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: TName extends string ? TName : string */ js.Any
+      ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

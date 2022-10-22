@@ -1,7 +1,7 @@
 
 # Scala.js typings for dayjs
 
-Typings are for version 1.11.5
+Typings are for version 1.11.6
 
 ## Library description:
 2KB immutable date time library alternative to Moment.js with the same modern API

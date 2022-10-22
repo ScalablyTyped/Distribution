@@ -13,7 +13,7 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns a new Vector2 set with the addition of the current Vector2 and the given one coordinates
     */
-  def add(otherVector: DeepImmutable[Vector2]): Vector2 = js.native
+  def add(otherVector: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Set the Vector2 coordinates by adding the given Vector2 coordinates
@@ -21,16 +21,16 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
-  def addInPlace(otherVector: DeepImmutable[Vector2]): Vector2 = js.native
+  def addInPlace(otherVector: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Sets the "result" coordinates with the addition of the current Vector2 and the given one coordinates
     * Example Playground https://playground.babylonjs.com/#QYBWV4#12
     * @param otherVector defines the other vector
     * @param result defines the target vector
-    * @returns the unmodified current Vector2
+    * @returns result input
     */
-  def addToRef(otherVector: DeepImmutable[Vector2], result: Vector2): Vector2 = js.native
+  def addToRef[T /* <: Vector2 */](otherVector: DeepImmutable[Vector2], result: T): T = js.native
   
   /**
     * Gets a new Vector2 by adding the current Vector2 coordinates to the given Vector3 x, y coordinates
@@ -38,7 +38,7 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
-  def addVector3(otherVector: Vector3): Vector2 = js.native
+  def addVector3(otherVector: Vector3): this.type = js.native
   
   /**
     * Copy the current vector to an array
@@ -53,7 +53,7 @@ trait Vector2 extends StObject {
     * @param source defines the source Vector2
     * @returns the current updated Vector2
     */
-  def copyFrom(source: DeepImmutable[Vector2]): Vector2 = js.native
+  def copyFrom(source: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Sets the Vector2 coordinates with the given floats
@@ -62,7 +62,7 @@ trait Vector2 extends StObject {
     * @param y defines the second coordinate
     * @returns the current updated Vector2
     */
-  def copyFromFloats(x: Double, y: Double): Vector2 = js.native
+  def copyFromFloats(x: Double, y: Double): this.type = js.native
   
   /**
     * Returns a new Vector2 set with the Vector2 coordinates divided by the given one coordinates
@@ -70,7 +70,7 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
-  def divide(otherVector: Vector2): Vector2 = js.native
+  def divide(otherVector: Vector2): this.type = js.native
   
   /**
     * Divides the current Vector2 coordinates by the given ones
@@ -78,16 +78,16 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
-  def divideInPlace(otherVector: DeepImmutable[Vector2]): Vector2 = js.native
+  def divideInPlace(otherVector: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Sets the "result" coordinates with the Vector2 divided by the given one coordinates
     * Example Playground https://playground.babylonjs.com/#QYBWV4#30
     * @param otherVector defines the other vector
     * @param result defines the target vector
-    * @returns the unmodified current Vector2
+    * @returns result input
     */
-  def divideToRef(otherVector: DeepImmutable[Vector2], result: Vector2): Vector2 = js.native
+  def divideToRef[T /* <: Vector2 */](otherVector: DeepImmutable[Vector2], result: T): T = js.native
   
   /**
     * Gets a boolean if two vectors are equals
@@ -113,7 +113,7 @@ trait Vector2 extends StObject {
     * eg (1.2, 2.31) returns (1, 2)
     * @returns a new Vector2
     */
-  def floor(): Vector2 = js.native
+  def floor(): this.type = js.native
   
   /**
     * Gets a new Vector2 from current Vector2 fractional values
@@ -121,17 +121,17 @@ trait Vector2 extends StObject {
     * eg (1.2, 2.31) returns (0.2, 0.31)
     * @returns a new Vector2
     */
-  def fract(): Vector2 = js.native
+  def fract(): this.type = js.native
   
   /**
     * Update the current vector from an array
     * Example Playground https://playground.babylonjs.com/#QYBWV4#39
     * @param array defines the destination array
     * @param index defines the offset in the destination array
-    * @returns the current Vector3
+    * @returns the current Vector2
     */
-  def fromArray(array: FloatArray): Vector2 = js.native
-  def fromArray(array: FloatArray, index: Double): Vector2 = js.native
+  def fromArray(array: FloatArray): this.type = js.native
+  def fromArray(array: FloatArray, index: Double): this.type = js.native
   
   /**
     * Gets class name
@@ -163,7 +163,7 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
-  def multiply(otherVector: DeepImmutable[Vector2]): Vector2 = js.native
+  def multiply(otherVector: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Gets a new Vector2 set with the Vector2 coordinates multiplied by the given floats
@@ -172,7 +172,7 @@ trait Vector2 extends StObject {
     * @param y defines the second coordinate
     * @returns a new Vector2
     */
-  def multiplyByFloats(x: Double, y: Double): Vector2 = js.native
+  def multiplyByFloats(x: Double, y: Double): this.type = js.native
   
   /**
     * Multiplies in place the current Vector2 coordinates by the given ones
@@ -180,30 +180,30 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
-  def multiplyInPlace(otherVector: DeepImmutable[Vector2]): Vector2 = js.native
+  def multiplyInPlace(otherVector: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Sets "result" coordinates with the multiplication of the current Vector2 and the given one coordinates
     * Example Playground https://playground.babylonjs.com/#QYBWV4#44
     * @param otherVector defines the other vector
     * @param result defines the target vector
-    * @returns the unmodified current Vector2
+    * @returns result input
     */
-  def multiplyToRef(otherVector: DeepImmutable[Vector2], result: Vector2): Vector2 = js.native
+  def multiplyToRef[T /* <: Vector2 */](otherVector: DeepImmutable[Vector2], result: T): T = js.native
   
   /**
     * Gets a new Vector2 with current Vector2 negated coordinates
     * Example Playground https://playground.babylonjs.com/#QYBWV4#22
     * @returns a new Vector2
     */
-  def negate(): Vector2 = js.native
+  def negate(): this.type = js.native
   
   /**
     * Negate this vector in place
     * Example Playground https://playground.babylonjs.com/#QYBWV4#23
     * @returns this
     */
-  def negateInPlace(): Vector2 = js.native
+  def negateInPlace(): this.type = js.native
   
   /**
     * Negate the current Vector2 and stores the result in the given vector "result" coordinates
@@ -211,23 +211,23 @@ trait Vector2 extends StObject {
     * @param result defines the Vector3 object where to store the result
     * @returns the result
     */
-  def negateToRef(result: Vector2): Vector2 = js.native
+  def negateToRef[T /* <: Vector2 */](result: T): T = js.native
   
   /**
     * Normalize the vector
     * Example Playground https://playground.babylonjs.com/#QYBWV4#48
     * @returns the current updated Vector2
     */
-  def normalize(): Vector2 = js.native
+  def normalize(): this.type = js.native
   
   /**
     * Rotate the current vector into a given result vector
     * Example Playground https://playground.babylonjs.com/#QYBWV4#49
     * @param angle defines the rotation angle
     * @param result defines the result vector where to store the rotated vector
-    * @returns the current vector
+    * @returns result input
     */
-  def rotateToRef(angle: Double, result: Vector2): this.type = js.native
+  def rotateToRef[T /* <: Vector2 */](angle: Double, result: T): T = js.native
   
   /**
     * Returns a new Vector2 scaled by "scale" from the current Vector2
@@ -235,16 +235,16 @@ trait Vector2 extends StObject {
     * @param scale defines the scaling factor
     * @returns a new Vector2
     */
-  def scale(scale: Double): Vector2 = js.native
+  def scale(scale: Double): this.type = js.native
   
   /**
     * Scale the current Vector2 values by a factor and add the result to a given Vector2
     * Example Playground https://playground.babylonjs.com/#QYBWV4#58
     * @param scale defines the scale factor
     * @param result defines the Vector2 object where to store the result
-    * @returns the unmodified current Vector2
+    * @returns result input
     */
-  def scaleAndAddToRef(scale: Double, result: Vector2): Vector2 = js.native
+  def scaleAndAddToRef[T /* <: Vector2 */](scale: Double, result: T): T = js.native
   
   /**
     * Multiply the Vector2 coordinates by
@@ -252,16 +252,16 @@ trait Vector2 extends StObject {
     * @param scale defines the scaling factor
     * @returns the current updated Vector2
     */
-  def scaleInPlace(scale: Double): Vector2 = js.native
+  def scaleInPlace(scale: Double): this.type = js.native
   
   /**
     * Scale the current Vector2 values by a factor to a given Vector2
     * Example Playground https://playground.babylonjs.com/#QYBWV4#57
     * @param scale defines the scale factor
     * @param result defines the Vector2 object where to store the result
-    * @returns the unmodified current Vector2
+    * @returns result input
     */
-  def scaleToRef(scale: Double, result: Vector2): Vector2 = js.native
+  def scaleToRef[T /* <: Vector2 */](scale: Double, result: T): T = js.native
   
   /**
     * Sets the Vector2 coordinates with the given floats
@@ -270,7 +270,7 @@ trait Vector2 extends StObject {
     * @param y defines the second coordinate
     * @returns the current updated Vector2
     */
-  def set(x: Double, y: Double): Vector2 = js.native
+  def set(x: Double, y: Double): this.type = js.native
   
   /**
     * Gets a new Vector2 set with the subtracted coordinates of the given one from the current Vector2
@@ -278,7 +278,7 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns a new Vector2
     */
-  def subtract(otherVector: Vector2): Vector2 = js.native
+  def subtract(otherVector: Vector2): this.type = js.native
   
   /**
     * Sets the current Vector2 coordinates by subtracting from it the given one coordinates
@@ -286,16 +286,16 @@ trait Vector2 extends StObject {
     * @param otherVector defines the other vector
     * @returns the current updated Vector2
     */
-  def subtractInPlace(otherVector: DeepImmutable[Vector2]): Vector2 = js.native
+  def subtractInPlace(otherVector: DeepImmutable[Vector2]): this.type = js.native
   
   /**
     * Sets the "result" coordinates with the subtraction of the given one from the current Vector2 coordinates.
     * Example Playground https://playground.babylonjs.com/#QYBWV4#63
     * @param otherVector defines the other vector
     * @param result defines the target vector
-    * @returns the unmodified current Vector2
+    * @returns result input
     */
-  def subtractToRef(otherVector: DeepImmutable[Vector2], result: Vector2): Vector2 = js.native
+  def subtractToRef[T /* <: Vector2 */](otherVector: DeepImmutable[Vector2], result: T): T = js.native
   
   /**
     * Sets the Vector2 coordinates in the given array or Float32Array from the given index.
@@ -304,8 +304,8 @@ trait Vector2 extends StObject {
     * @param index defines the offset in source array
     * @returns the current Vector2
     */
-  def toArray(array: FloatArray): Vector2 = js.native
-  def toArray(array: FloatArray, index: Double): Vector2 = js.native
+  def toArray(array: FloatArray): this.type = js.native
+  def toArray(array: FloatArray, index: Double): this.type = js.native
   
   /** defines the first coordinate */
   var x: Double = js.native

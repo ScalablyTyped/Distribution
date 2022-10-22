@@ -10,10 +10,10 @@ Node.js mongodb migration framework
 | ------------------ | :-------------: |
 | Full name          | mongration |
 | Keywords           | mongration, mongodb, migration, database, node mongodb migration framework |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 11106 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 729.6666666666666 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/awapps/mongration#readme)

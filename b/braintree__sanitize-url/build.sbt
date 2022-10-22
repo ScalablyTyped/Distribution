@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "braintree__sanitize-url"
-version := "6.0.0-fed905"
+version := "6.0.1-9f0900"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

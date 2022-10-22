@@ -17,7 +17,7 @@ trait CustomRoutingAccelerator extends StObject {
   var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Domain Name System (DNS) name that Global Accelerator creates that points to an accelerator's static IPv4 addresses.  The naming convention for the DNS name is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com. If you have a dual-stack accelerator, you also have a second DNS name, DualStackDnsName, that points to both the A record and the AAAA record for all four static addresses for the accelerator (two IPv4 addresses and two IPv6 addresses). For more information about the default DNS name, see  Support for DNS Addressing in Global Accelerator in the Global Accelerator Developer Guide.
+    * The Domain Name System (DNS) name that Global Accelerator creates that points to an accelerator's static IPv4 addresses.  The naming convention for the DNS name is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com. If you have a dual-stack accelerator, you also have a second DNS name, DualStackDnsName, that points to both the A record and the AAAA record for all four static addresses for the accelerator: two IPv4 addresses and two IPv6 addresses. For more information about the default DNS name, see  Support for DNS addressing in Global Accelerator in the Global Accelerator Developer Guide.
     */
   var DnsName: js.UndefOr[GenericString] = js.undefined
   

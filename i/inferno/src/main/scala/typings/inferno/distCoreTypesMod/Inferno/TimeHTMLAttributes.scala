@@ -8,7 +8,7 @@ trait TimeHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var dateTime: js.UndefOr[String] = js.undefined
+  var dateTime: js.UndefOr[String | Null] = js.undefined
 }
 object TimeHTMLAttributes {
   
@@ -20,6 +20,8 @@ object TimeHTMLAttributes {
   extension [Self <: TimeHTMLAttributes[?], T](x: Self & TimeHTMLAttributes[T]) {
     
     inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    
+    inline def setDateTimeNull: Self = StObject.set(x, "dateTime", null)
     
     inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
   }

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "it-pb-stream"
-version := "2.0.2-971604"
+version := "2.0.2-0147e5"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "it-length-prefixed" % "8.0.2-c222a1",
+  "org.scalablytyped" %%% "it-length-prefixed" % "8.0.2-711f8f",
   "org.scalablytyped" %%% "it-reader" % "6.0.1-304f82",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-2bd2ec",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-45b6fe")
 publishArtifact in packageDoc := false

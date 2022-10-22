@@ -1,5 +1,6 @@
 package typings.meteorAstronomy
 
+import typings.meteorAstronomy.MeteorAstronomy.Model
 import typings.meteorAstronomy.MeteorAstronomy.RemoveCallback
 import typings.meteorAstronomy.MeteorAstronomy.SaveAndValidateCallback
 import typings.meteorAstronomy.MeteorAstronomy.SaveAndValidateOptions
@@ -45,24 +46,24 @@ object anon {
   @js.native
   trait Copy[T] extends StObject {
     
-    def copy(): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor-astronomy.MeteorAstronomy.Model<T> */ js.Object = js.native
-    def copy(save: Boolean): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias meteor-astronomy.MeteorAstronomy.Model<T> */ js.Object = js.native
+    def copy(): Model[T] = js.native
+    def copy(save: Boolean): Model[T] = js.native
     
-    def get(field: String): js.Any = js.native
+    def get(field: String): Any = js.native
     def get(fields: js.Array[String]): Partial[T] = js.native
     
-    def getModified(): js.Any = js.native
+    def getModified(): Any = js.native
     
     def getModifiedValues(): Partial[T] = js.native
     def getModifiedValues(options: Old): Partial[T] = js.native
     
-    def getModifier(): js.Any = js.native
+    def getModifier(): Any = js.native
     
     def isModified(): Boolean = js.native
     def isModified(field: String): Boolean = js.native
     
     def raw(): T = js.native
-    def raw(field: String): js.Any = js.native
+    def raw(field: String): Any = js.native
     def raw(fields: js.Array[String]): Partial[T] = js.native
     
     def remove(): Unit = js.native
@@ -73,7 +74,7 @@ object anon {
     def save(optionsOrCallback: SaveAndValidateOptions[/* keyof T */ String]): Unit = js.native
     def save(options: SaveAndValidateOptions[/* keyof T */ String], callback: SaveAndValidateCallback): Unit = js.native
     
-    def set(field: String, value: js.Any): Unit = js.native
+    def set(field: String, value: Any): Unit = js.native
     def set(fields: Partial[T]): Unit = js.native
     def set(fields: Partial[T], options: Cast): Unit = js.native
     
@@ -85,22 +86,22 @@ object anon {
   
   trait GetIdentifier extends StObject {
     
-    def getIdentifier(identifier: js.Any): String
+    def getIdentifier(identifier: Any): String
     
-    def getValues(): js.Array[js.Any]
+    def getValues(): js.Array[Any]
   }
   object GetIdentifier {
     
-    inline def apply(getIdentifier: js.Any => String, getValues: () => js.Array[js.Any]): GetIdentifier = {
+    inline def apply(getIdentifier: Any => String, getValues: () => js.Array[Any]): GetIdentifier = {
       val __obj = js.Dynamic.literal(getIdentifier = js.Any.fromFunction1(getIdentifier), getValues = js.Any.fromFunction0(getValues))
       __obj.asInstanceOf[GetIdentifier]
     }
     
     extension [Self <: GetIdentifier](x: Self) {
       
-      inline def setGetIdentifier(value: js.Any => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction1(value))
+      inline def setGetIdentifier(value: Any => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction1(value))
       
-      inline def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => js.Array[Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     }
   }
   

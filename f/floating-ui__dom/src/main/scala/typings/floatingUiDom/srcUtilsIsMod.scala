@@ -19,6 +19,8 @@ object srcUtilsIsMod {
   
   inline def isHTMLElement(value: Any): /* is std.HTMLElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLElement")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLElement */ Boolean]
   
+  inline def isLastTraversableNode(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLastTraversableNode")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isLayoutViewport(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayoutViewport")().asInstanceOf[Boolean]
   
   inline def isNode(value: Any): /* is std.Node */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Node */ Boolean]

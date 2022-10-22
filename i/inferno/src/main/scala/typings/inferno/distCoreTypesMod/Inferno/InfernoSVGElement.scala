@@ -10,8 +10,8 @@ trait InfernoSVGElement
      with DOMElement[SVGAttributes[SVGElement], SVGElement]
 object InfernoSVGElement {
   
-  inline def apply(props: SVGAttributes[SVGElement], ref: Ref[SVGElement], `type`: String): InfernoSVGElement = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], key = null)
+  inline def apply(props: SVGAttributes[SVGElement], ref: /* instance */ SVGElement | Null => Any, `type`: String): InfernoSVGElement = {
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref), key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InfernoSVGElement]
   }

@@ -26,7 +26,7 @@ trait BoldBrand extends StObject {
   
   var boldWarning: Resting
   
-  var brand: `0`
+  var brand: `1`
   
   var card: PaintToken[BaseToken]
   
@@ -65,7 +65,7 @@ object BoldBrand {
     boldNeutral: Resting,
     boldSuccess: Resting,
     boldWarning: Resting,
-    brand: `0`,
+    brand: `1`,
     card: PaintToken[BaseToken],
     default: PaintToken[BaseToken],
     inverse: DefaultPaintToken,
@@ -103,7 +103,7 @@ object BoldBrand {
     
     inline def setBoldWarning(value: Resting): Self = StObject.set(x, "boldWarning", value.asInstanceOf[js.Any])
     
-    inline def setBrand(value: `0`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: `1`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     inline def setCard(value: PaintToken[BaseToken]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

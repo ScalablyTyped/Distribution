@@ -1,6 +1,7 @@
 package typings.reactNativeGestureHandler.libTypescriptWebInterfacesMod
 
 import typings.reactNativeGestureHandler.libTypescriptDirectionsMod.Directions
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,6 +74,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined
   
   var simultaneousHandlers: js.UndefOr[js.Array[Handler] | Null] = js.undefined
+  
+  var userSelect: js.UndefOr[UserSelect] = js.undefined
   
   var waitFor: js.UndefOr[js.Array[Handler] | Null] = js.undefined
 }
@@ -220,6 +223,10 @@ object Config {
     inline def setSimultaneousHandlersUndefined: Self = StObject.set(x, "simultaneousHandlers", js.undefined)
     
     inline def setSimultaneousHandlersVarargs(value: Handler*): Self = StObject.set(x, "simultaneousHandlers", js.Array(value*))
+    
+    inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+    
+    inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     inline def setWaitFor(value: js.Array[Handler]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     

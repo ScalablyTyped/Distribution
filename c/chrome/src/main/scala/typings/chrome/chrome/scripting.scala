@@ -4,6 +4,9 @@ import typings.chrome.anon.ArgsFunc
 import typings.chrome.anon.Func
 import typings.chrome.anon.Target
 import typings.chrome.anon.filesArraystringtargetInj
+import typings.chrome.chromeStrings.document_end
+import typings.chrome.chromeStrings.document_idle
+import typings.chrome.chromeStrings.document_start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,6 +69,53 @@ object scripting {
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
       inline def setTarget(value: InjectionTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ContentScriptFilter extends StObject {
+    
+    var css: js.UndefOr[String] = js.undefined
+    
+    var files: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var ids: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var origin: js.UndefOr[StyleOrigin] = js.undefined
+    
+    var target: js.UndefOr[InjectionTarget] = js.undefined
+  }
+  object ContentScriptFilter {
+    
+    inline def apply(): ContentScriptFilter = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ContentScriptFilter]
+    }
+    
+    extension [Self <: ContentScriptFilter](x: Self) {
+      
+      inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
+      
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      
+      inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+      
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
+      
+      inline def setOrigin(value: StyleOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      
+      inline def setTarget(value: InjectionTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -135,6 +185,80 @@ object scripting {
       inline def setFrameIdsVarargs(value: Double*): Self = StObject.set(x, "frameIds", js.Array(value*))
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RegisteredContentScript extends StObject {
+    
+    var allFrames: js.UndefOr[Boolean] = js.undefined
+    
+    var css: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var excludeMatches: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var id: String
+    
+    @JSName("js")
+    var js_ : js.UndefOr[js.Array[String]] = js.undefined
+    
+    var matches: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var persistAcrossSessions: js.UndefOr[Boolean] = js.undefined
+    
+    var runAt: js.UndefOr[document_start | document_end | document_idle] = js.undefined
+    
+    var world: js.UndefOr[ExecutionWorld] = js.undefined
+  }
+  object RegisteredContentScript {
+    
+    inline def apply(id: String): RegisteredContentScript = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RegisteredContentScript]
+    }
+    
+    extension [Self <: RegisteredContentScript](x: Self) {
+      
+      inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
+      
+      inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+      
+      inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
+      
+      inline def setExcludeMatches(value: js.Array[String]): Self = StObject.set(x, "excludeMatches", value.asInstanceOf[js.Any])
+      
+      inline def setExcludeMatchesUndefined: Self = StObject.set(x, "excludeMatches", js.undefined)
+      
+      inline def setExcludeMatchesVarargs(value: String*): Self = StObject.set(x, "excludeMatches", js.Array(value*))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+      
+      inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
+      
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
+      
+      inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      
+      inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+      
+      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value*))
+      
+      inline def setPersistAcrossSessions(value: Boolean): Self = StObject.set(x, "persistAcrossSessions", value.asInstanceOf[js.Any])
+      
+      inline def setPersistAcrossSessionsUndefined: Self = StObject.set(x, "persistAcrossSessions", js.undefined)
+      
+      inline def setRunAt(value: document_start | document_end | document_idle): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
+      
+      inline def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
+      
+      inline def setWorld(value: ExecutionWorld): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+      
+      inline def setWorldUndefined: Self = StObject.set(x, "world", js.undefined)
     }
   }
   

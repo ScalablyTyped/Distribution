@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "antd-mobile"
-version := "5.24.1-1355c4"
+version := "5.24.2-c4273f"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "dayjs" % "1.11.5-709f0a",
+  "org.scalablytyped" %%% "dayjs" % "1.11.6-be8973",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "rc-field-form" % "1.27.2-fc2a96",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",

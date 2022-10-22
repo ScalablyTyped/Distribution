@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "constantinople"
-version := "4.0.1-eaebbd"
+version := "4.0.1-8ad994"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__parser" % "7.19.4-d9b25c",
+  "org.scalablytyped" %%% "babel__parser" % "7.19.6-e8951f",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-1978dd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

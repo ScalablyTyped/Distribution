@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catho__quantum"
-version := "9.4.0-d88725"
+version := "9.5.0-bd5983"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ahooks" : "3.7.1"
+      "ahooks" : "3.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ahooks" : "3.7.1"
+      "ahooks" : "3.7.2"
     }
   ],
   "compile-devDependencies" : [

@@ -13,6 +13,8 @@ trait HtmlElementTexture
   
   /* private */ var _createInternalTexture: Any = js.native
   
+  /* private */ val _format: Any = js.native
+  
   /* private */ var _generateMipMaps: Any = js.native
   
   /* private */ var _isVideo: Any = js.native

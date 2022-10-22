@@ -586,6 +586,7 @@ import typings.awsSdk.clientsCognitoidentityserviceproviderMod._ChallengeNameTyp
 import typings.awsSdk.clientsCognitoidentityserviceproviderMod._ChallengeResponse
 import typings.awsSdk.clientsCognitoidentityserviceproviderMod._CompromisedCredentialsEventActionType
 import typings.awsSdk.clientsCognitoidentityserviceproviderMod._DefaultEmailOptionType
+import typings.awsSdk.clientsCognitoidentityserviceproviderMod._DeletionProtectionType
 import typings.awsSdk.clientsCognitoidentityserviceproviderMod._DeliveryMediumType
 import typings.awsSdk.clientsCognitoidentityserviceproviderMod._DeviceRememberedStatusType
 import typings.awsSdk.clientsCognitoidentityserviceproviderMod._DomainStatusType
@@ -872,6 +873,7 @@ import typings.awsSdk.clientsDevopsguruMod._OptInStatus
 import typings.awsSdk.clientsDevopsguruMod._OrganizationResourceCollectionType
 import typings.awsSdk.clientsDevopsguruMod._ResourceCollectionType
 import typings.awsSdk.clientsDevopsguruMod._ResourcePermission
+import typings.awsSdk.clientsDevopsguruMod._ResourceTypeFilter
 import typings.awsSdk.clientsDevopsguruMod._ServiceName
 import typings.awsSdk.clientsDevopsguruMod._UpdateResourceCollectionAction
 import typings.awsSdk.clientsDirectconnectMod._BGPPeerState
@@ -3328,6 +3330,7 @@ import typings.awsSdk.clientsRoute53resolverMod._ResolverRuleAssociationStatus
 import typings.awsSdk.clientsRoute53resolverMod._ResolverRuleStatus
 import typings.awsSdk.clientsRoute53resolverMod._RuleTypeOption
 import typings.awsSdk.clientsRoute53resolverMod._Validation
+import typings.awsSdk.clientsRumMod._MetricDestination
 import typings.awsSdk.clientsRumMod._StateEnum
 import typings.awsSdk.clientsS3Mod._ArchiveStatus
 import typings.awsSdk.clientsS3Mod._BucketAccelerateStatus
@@ -6331,6 +6334,7 @@ object awsSdkStrings {
        with typings.awsSdk.clientsIotanalyticsMod._DatasetStatus
        with _DatastoreStatus
        with typings.awsSdk.clientsIotanalyticsMod._DatastoreStatus
+       with _DeletionProtectionType
        with _DeliverabilityDashboardAccountStatus
        with typings.awsSdk.clientsSesv2Mod._DeliverabilityDashboardAccountStatus
        with _DeliveryStreamStatus
@@ -7547,7 +7551,6 @@ object awsSdkStrings {
   sealed trait ALLOW_REFRESH_TOKEN_AUTH
     extends StObject
        with _ExplicitAuthFlowsType
-  inline def ALLOW_REFRESH_TOKEN_AUTH: ALLOW_REFRESH_TOKEN_AUTH = "ALLOW_REFRESH_TOKEN_AUTH".asInstanceOf[ALLOW_REFRESH_TOKEN_AUTH]
   
   @js.native
   sealed trait ALLOW_USER_PASSWORD_AUTH
@@ -8192,7 +8195,6 @@ object awsSdkStrings {
   sealed trait APPIUM_PYTHON_TEST_SPEC
     extends StObject
        with _UploadType
-  inline def APPIUM_PYTHON_TEST_SPEC: APPIUM_PYTHON_TEST_SPEC = "APPIUM_PYTHON_TEST_SPEC".asInstanceOf[APPIUM_PYTHON_TEST_SPEC]
   
   @js.native
   sealed trait APPIUM_PYTHON_XML_OUTPUT
@@ -14102,6 +14104,12 @@ object awsSdkStrings {
   inline def BestAttainable: BestAttainable = "BestAttainable".asInstanceOf[BestAttainable]
   
   @js.native
+  sealed trait BestRegionRecovery
+    extends StObject
+       with _ConfigRecommendationOptimizationType
+  inline def BestRegionRecovery: BestRegionRecovery = "BestRegionRecovery".asInstanceOf[BestRegionRecovery]
+  
+  @js.native
   sealed trait Bianca_
     extends StObject
        with typings.awsSdk.clientsPollyMod._VoiceId
@@ -15434,7 +15442,6 @@ object awsSdkStrings {
     extends StObject
        with _DatasetStatusMessageCode
        with _FailureCode
-  inline def CLIENT_ERROR: CLIENT_ERROR = "CLIENT_ERROR".asInstanceOf[CLIENT_ERROR]
   
   @js.native
   sealed trait CLIENT_ID
@@ -15544,6 +15551,7 @@ object awsSdkStrings {
   sealed trait CLOUDFRONT_DISTRIBUTION
     extends StObject
        with _ProtectedResourceType
+       with _ResourceTypeFilter
   inline def CLOUDFRONT_DISTRIBUTION: CLOUDFRONT_DISTRIBUTION = "CLOUDFRONT_DISTRIBUTION".asInstanceOf[CLOUDFRONT_DISTRIBUTION]
   
   @js.native
@@ -18925,6 +18933,12 @@ object awsSdkStrings {
   inline def CloudWatchLogs: CloudWatchLogs = "CloudWatchLogs".asInstanceOf[CloudWatchLogs]
   
   @js.native
+  sealed trait CloudWatch_
+    extends StObject
+       with _MetricDestination
+  inline def CloudWatch_ : CloudWatch_ = "CloudWatch".asInstanceOf[CloudWatch_]
+  
+  @js.native
   sealed trait ClusterLogging
     extends StObject
        with _UpdateParamType
@@ -20145,7 +20159,6 @@ object awsSdkStrings {
   sealed trait DATA_INCORRECT
     extends StObject
        with _InsightFeedbackOption
-  inline def DATA_INCORRECT: DATA_INCORRECT = "DATA_INCORRECT".asInstanceOf[DATA_INCORRECT]
   
   @js.native
   sealed trait DATA_INVENTORY_EVALUATION
@@ -21949,7 +21962,6 @@ object awsSdkStrings {
   sealed trait DIGEST
     extends StObject
        with typings.awsSdk.clientsKmsMod._MessageType
-  inline def DIGEST: DIGEST = "DIGEST".asInstanceOf[DIGEST]
   
   @js.native
   sealed trait DIGITAL_SIGNATURE
@@ -23438,6 +23450,12 @@ object awsSdkStrings {
   inline def DYNAMODB_JSON: DYNAMODB_JSON = "DYNAMODB_JSON".asInstanceOf[DYNAMODB_JSON]
   
   @js.native
+  sealed trait DYNAMODB_TABLE
+    extends StObject
+       with _ResourceTypeFilter
+  inline def DYNAMODB_TABLE: DYNAMODB_TABLE = "DYNAMODB_TABLE".asInstanceOf[DYNAMODB_TABLE]
+  
+  @js.native
   sealed trait DYNAMO_DB
     extends StObject
        with _ServiceName
@@ -24804,6 +24822,12 @@ object awsSdkStrings {
   inline def EC2_MALWARE_SCAN: EC2_MALWARE_SCAN = "EC2_MALWARE_SCAN".asInstanceOf[EC2_MALWARE_SCAN]
   
   @js.native
+  sealed trait EC2_NAT_GATEWAY
+    extends StObject
+       with _ResourceTypeFilter
+  inline def EC2_NAT_GATEWAY: EC2_NAT_GATEWAY = "EC2_NAT_GATEWAY".asInstanceOf[EC2_NAT_GATEWAY]
+  
+  @js.native
   sealed trait ECC_NIST_P256
     extends StObject
        with _CustomerMasterKeySpec
@@ -24954,6 +24978,17 @@ object awsSdkStrings {
   inline def ECSTarget: ECSTarget = "ECSTarget".asInstanceOf[ECSTarget]
   
   @js.native
+  sealed trait ECS_CLUSTER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ECS_CLUSTER: ECS_CLUSTER = "ECS_CLUSTER".asInstanceOf[ECS_CLUSTER]
+  
+  @js.native
+  sealed trait ECS_SERVICE
+    extends StObject
+       with _ResourceTypeFilter
+  
+  @js.native
   sealed trait ECS_UPDATE_ERROR
     extends StObject
        with typings.awsSdk.clientsCodedeployMod._ErrorCode
@@ -25089,10 +25124,22 @@ object awsSdkStrings {
        with _DatasourcePackage
   
   @js.native
+  sealed trait EKS_CLUSTER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def EKS_CLUSTER: EKS_CLUSTER = "EKS_CLUSTER".asInstanceOf[EKS_CLUSTER]
+  
+  @js.native
   sealed trait ELASTIC
     extends StObject
        with _FleetType
   inline def ELASTIC: ELASTIC = "ELASTIC".asInstanceOf[ELASTIC]
+  
+  @js.native
+  sealed trait ELASTICACHE_CACHE_CLUSTER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ELASTICACHE_CACHE_CLUSTER: ELASTICACHE_CACHE_CLUSTER = "ELASTICACHE_CACHE_CLUSTER".asInstanceOf[ELASTICACHE_CACHE_CLUSTER]
   
   @js.native
   sealed trait ELASTICSEARCH_CURSOR_NOT_ENABLED
@@ -25101,10 +25148,22 @@ object awsSdkStrings {
   inline def ELASTICSEARCH_CURSOR_NOT_ENABLED: ELASTICSEARCH_CURSOR_NOT_ENABLED = "ELASTICSEARCH_CURSOR_NOT_ENABLED".asInstanceOf[ELASTICSEARCH_CURSOR_NOT_ENABLED]
   
   @js.native
+  sealed trait ELASTICSEARCH_DOMAIN
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ELASTICSEARCH_DOMAIN: ELASTICSEARCH_DOMAIN = "ELASTICSEARCH_DOMAIN".asInstanceOf[ELASTICSEARCH_DOMAIN]
+  
+  @js.native
   sealed trait ELASTIC_BEANSTALK
     extends StObject
        with _ServiceName
   inline def ELASTIC_BEANSTALK: ELASTIC_BEANSTALK = "ELASTIC_BEANSTALK".asInstanceOf[ELASTIC_BEANSTALK]
+  
+  @js.native
+  sealed trait ELASTIC_BEANSTALK_ENVIRONMENT
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ELASTIC_BEANSTALK_ENVIRONMENT: ELASTIC_BEANSTALK_ENVIRONMENT = "ELASTIC_BEANSTALK_ENVIRONMENT".asInstanceOf[ELASTIC_BEANSTALK_ENVIRONMENT]
   
   @js.native
   sealed trait ELASTIC_IP_ALLOCATION
@@ -25113,10 +25172,28 @@ object awsSdkStrings {
   inline def ELASTIC_IP_ALLOCATION: ELASTIC_IP_ALLOCATION = "ELASTIC_IP_ALLOCATION".asInstanceOf[ELASTIC_IP_ALLOCATION]
   
   @js.native
+  sealed trait ELASTIC_LOAD_BALANCER_LOAD_BALANCER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ELASTIC_LOAD_BALANCER_LOAD_BALANCER: ELASTIC_LOAD_BALANCER_LOAD_BALANCER = "ELASTIC_LOAD_BALANCER_LOAD_BALANCER".asInstanceOf[ELASTIC_LOAD_BALANCER_LOAD_BALANCER]
+  
+  @js.native
   sealed trait ELASTIC_LOAD_BALANCING_INVALID
     extends StObject
        with typings.awsSdk.clientsCodedeployMod._ErrorCode
   inline def ELASTIC_LOAD_BALANCING_INVALID: ELASTIC_LOAD_BALANCING_INVALID = "ELASTIC_LOAD_BALANCING_INVALID".asInstanceOf[ELASTIC_LOAD_BALANCING_INVALID]
+  
+  @js.native
+  sealed trait ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER: ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER = "ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER".asInstanceOf[ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER]
+  
+  @js.native
+  sealed trait ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP: ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP = "ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP".asInstanceOf[ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP]
   
   @js.native
   sealed trait ELASTI_CACHE
@@ -27251,6 +27328,11 @@ object awsSdkStrings {
   inline def Event_ : Event_ = "Event".asInstanceOf[Event_]
   
   @js.native
+  sealed trait Evidently
+    extends StObject
+       with _MetricDestination
+  
+  @js.native
   sealed trait Ewa_
     extends StObject
        with typings.awsSdk.clientsPollyMod._VoiceId
@@ -28317,7 +28399,6 @@ object awsSdkStrings {
        with _GeoMatchConstraintValue
        with typings.awsSdk.clientsWafregionalMod._GeoMatchConstraintValue
        with _PhoneNumberCountryCode
-  inline def FI: FI = "FI".asInstanceOf[FI]
   
   @js.native
   sealed trait FIELD1_608
@@ -30950,7 +31031,6 @@ object awsSdkStrings {
   sealed trait GROUP_MESSAGE
     extends StObject
        with _SlackEntity
-  inline def GROUP_MESSAGE: GROUP_MESSAGE = "GROUP_MESSAGE".asInstanceOf[GROUP_MESSAGE]
   
   @js.native
   sealed trait GROUP_NAME extends StObject
@@ -33464,6 +33544,7 @@ object awsSdkStrings {
        with _ContinuousExportStatus
        with typings.awsSdk.clientsAuditmanagerMod._ControlStatus
        with _CostEstimationServiceResourceState
+       with _DeletionProtectionType
        with _DeploymentStatus
        with _DetectorModelVersionStatus
        with _DetectorVersionStatus
@@ -35413,7 +35494,6 @@ object awsSdkStrings {
   sealed trait ITA
     extends StObject
        with _LanguageCode
-  inline def ITA: ITA = "ITA".asInstanceOf[ITA]
   
   @js.native
   sealed trait ITEM_DOES_NOT_EXIST
@@ -36766,7 +36846,6 @@ object awsSdkStrings {
     extends StObject
        with typings.awsSdk.clientsKinesisvideoMod._Format
        with typings.awsSdk.clientsKinesisvideoarchivedmediaMod._Format
-  inline def JPEG: JPEG = "JPEG".asInstanceOf[JPEG]
   
   @js.native
   sealed trait JPEGQuality extends StObject
@@ -36930,7 +37009,6 @@ object awsSdkStrings {
   sealed trait Joanna_
     extends StObject
        with typings.awsSdk.clientsPollyMod._VoiceId
-  inline def Joanna_ : Joanna_ = "Joanna".asInstanceOf[Joanna_]
   
   @js.native
   sealed trait JobFailed
@@ -37335,6 +37413,7 @@ object awsSdkStrings {
   @js.native
   sealed trait KINESIS_STREAM
     extends StObject
+       with _ResourceTypeFilter
        with typings.awsSdk.clientsConnectMod._StorageType
   inline def KINESIS_STREAM: KINESIS_STREAM = "KINESIS_STREAM".asInstanceOf[KINESIS_STREAM]
   
@@ -37791,6 +37870,12 @@ object awsSdkStrings {
        with _ServiceName
        with _ValidatorType
   inline def LAMBDA: LAMBDA = "LAMBDA".asInstanceOf[LAMBDA]
+  
+  @js.native
+  sealed trait LAMBDA_FUNCTION
+    extends StObject
+       with _ResourceTypeFilter
+  inline def LAMBDA_FUNCTION: LAMBDA_FUNCTION = "LAMBDA_FUNCTION".asInstanceOf[LAMBDA_FUNCTION]
   
   @js.native
   sealed trait LAMBDA_FUNCTION_CREATION_RATE_EXCEEDED
@@ -38847,7 +38932,9 @@ object awsSdkStrings {
   inline def LOGICAL: LOGICAL = "LOGICAL".asInstanceOf[LOGICAL]
   
   @js.native
-  sealed trait LOG_GROUPS extends StObject
+  sealed trait LOG_GROUPS
+    extends StObject
+       with _ResourceTypeFilter
   
   @js.native
   sealed trait LONDON
@@ -40209,7 +40296,6 @@ object awsSdkStrings {
   sealed trait MASE
     extends StObject
        with _OptimizationMetric
-  inline def MASE: MASE = "MASE".asInstanceOf[MASE]
   
   @js.native
   sealed trait MASK
@@ -44072,7 +44158,6 @@ object awsSdkStrings {
   sealed trait NOT_TESTED
     extends StObject
        with _TypeTestsStatus
-  inline def NOT_TESTED: NOT_TESTED = "NOT_TESTED".asInstanceOf[NOT_TESTED]
   
   @js.native
   sealed trait NOT_UP_TO_DATE
@@ -45664,6 +45749,12 @@ object awsSdkStrings {
   inline def OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED: OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED = "OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED".asInstanceOf[OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED]
   
   @js.native
+  sealed trait OPEN_SEARCH_SERVICE_DOMAIN
+    extends StObject
+       with _ResourceTypeFilter
+  inline def OPEN_SEARCH_SERVICE_DOMAIN: OPEN_SEARCH_SERVICE_DOMAIN = "OPEN_SEARCH_SERVICE_DOMAIN".asInstanceOf[OPEN_SEARCH_SERVICE_DOMAIN]
+  
+  @js.native
   sealed trait OPEN_TIMERS_LIMIT_EXCEEDED
     extends StObject
        with _StartTimerFailedCause
@@ -46164,7 +46255,6 @@ object awsSdkStrings {
   sealed trait OUTPUT
     extends StObject
        with _ReservationResourceType
-  inline def OUTPUT: OUTPUT = "OUTPUT".asInstanceOf[OUTPUT]
   
   @js.native
   sealed trait OUT_OF_DATE
@@ -50938,6 +51028,17 @@ object awsSdkStrings {
   inline def RDS_AURORA_POSTGRESQL: RDS_AURORA_POSTGRESQL = "RDS_AURORA_POSTGRESQL".asInstanceOf[RDS_AURORA_POSTGRESQL]
   
   @js.native
+  sealed trait RDS_DB_CLUSTER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def RDS_DB_CLUSTER: RDS_DB_CLUSTER = "RDS_DB_CLUSTER".asInstanceOf[RDS_DB_CLUSTER]
+  
+  @js.native
+  sealed trait RDS_DB_INSTANCE
+    extends StObject
+       with _ResourceTypeFilter
+  
+  @js.native
   sealed trait RDS_HTTP_ENDPOINT extends StObject
   inline def RDS_HTTP_ENDPOINT: RDS_HTTP_ENDPOINT = "RDS_HTTP_ENDPOINT".asInstanceOf[RDS_HTTP_ENDPOINT]
   
@@ -51343,6 +51444,12 @@ object awsSdkStrings {
        with typings.awsSdk.clientsGrafanaMod._DataSourceType
        with _ServiceName
   inline def REDSHIFT: REDSHIFT = "REDSHIFT".asInstanceOf[REDSHIFT]
+  
+  @js.native
+  sealed trait REDSHIFT_CLUSTER
+    extends StObject
+       with _ResourceTypeFilter
+  inline def REDSHIFT_CLUSTER: REDSHIFT_CLUSTER = "REDSHIFT_CLUSTER".asInstanceOf[REDSHIFT_CLUSTER]
   
   @js.native
   sealed trait REDSHIFT_DATA_SHARE
@@ -53010,6 +53117,18 @@ object awsSdkStrings {
   inline def ROUTE: ROUTE = "ROUTE".asInstanceOf[ROUTE]
   
   @js.native
+  sealed trait ROUTE53_HEALTH_CHECK
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ROUTE53_HEALTH_CHECK: ROUTE53_HEALTH_CHECK = "ROUTE53_HEALTH_CHECK".asInstanceOf[ROUTE53_HEALTH_CHECK]
+  
+  @js.native
+  sealed trait ROUTE53_HOSTED_ZONE
+    extends StObject
+       with _ResourceTypeFilter
+  inline def ROUTE53_HOSTED_ZONE: ROUTE53_HOSTED_ZONE = "ROUTE53_HOSTED_ZONE".asInstanceOf[ROUTE53_HOSTED_ZONE]
+  
+  @js.native
   sealed trait ROUTE_53
     extends StObject
        with _ServiceName
@@ -53025,7 +53144,6 @@ object awsSdkStrings {
   sealed trait ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT
     extends StObject
        with _ViolationReason
-  inline def ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT: ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT = "ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT".asInstanceOf[ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT]
   
   @js.native
   sealed trait ROUTE_NOT_FOUND
@@ -54939,6 +55057,12 @@ object awsSdkStrings {
   inline def S3_BACKUP_OBJECT_FAILED: S3_BACKUP_OBJECT_FAILED = "S3_BACKUP_OBJECT_FAILED".asInstanceOf[S3_BACKUP_OBJECT_FAILED]
   
   @js.native
+  sealed trait S3_BUCKET
+    extends StObject
+       with _ResourceTypeFilter
+  inline def S3_BUCKET: S3_BUCKET = "S3_BUCKET".asInstanceOf[S3_BUCKET]
+  
+  @js.native
   sealed trait S3_BUCKET_EFFECTIVE_PERMISSION
     extends StObject
        with _SearchResourcesSimpleCriterionKey
@@ -55092,6 +55216,11 @@ object awsSdkStrings {
     extends StObject
        with _locationType
   inline def SAGEMAKER: SAGEMAKER = "SAGEMAKER".asInstanceOf[SAGEMAKER]
+  
+  @js.native
+  sealed trait SAGEMAKER_ENDPOINT
+    extends StObject
+       with _ResourceTypeFilter
   
   @js.native
   sealed trait SAGEMAKER_SP
@@ -57377,6 +57506,7 @@ object awsSdkStrings {
   @js.native
   sealed trait SNS_TOPIC
     extends StObject
+       with _ResourceTypeFilter
        with _SettingAttribute
   inline def SNS_TOPIC: SNS_TOPIC = "SNS_TOPIC".asInstanceOf[SNS_TOPIC]
   
@@ -57814,6 +57944,12 @@ object awsSdkStrings {
        with _NotificationTransport
        with _ServiceName
   inline def SQS: SQS = "SQS".asInstanceOf[SQS]
+  
+  @js.native
+  sealed trait SQS_QUEUE
+    extends StObject
+       with _ResourceTypeFilter
+  inline def SQS_QUEUE: SQS_QUEUE = "SQS_QUEUE".asInstanceOf[SQS_QUEUE]
   
   @js.native
   sealed trait SQUASH_MERGE
@@ -58478,6 +58614,18 @@ object awsSdkStrings {
        with _MaintenanceWindowTaskType
        with _ServiceName
   inline def STEP_FUNCTIONS: STEP_FUNCTIONS = "STEP_FUNCTIONS".asInstanceOf[STEP_FUNCTIONS]
+  
+  @js.native
+  sealed trait STEP_FUNCTIONS_ACTIVITY
+    extends StObject
+       with _ResourceTypeFilter
+  inline def STEP_FUNCTIONS_ACTIVITY: STEP_FUNCTIONS_ACTIVITY = "STEP_FUNCTIONS_ACTIVITY".asInstanceOf[STEP_FUNCTIONS_ACTIVITY]
+  
+  @js.native
+  sealed trait STEP_FUNCTIONS_STATE_MACHINE
+    extends StObject
+       with _ResourceTypeFilter
+  inline def STEP_FUNCTIONS_STATE_MACHINE: STEP_FUNCTIONS_STATE_MACHINE = "STEP_FUNCTIONS_STATE_MACHINE".asInstanceOf[STEP_FUNCTIONS_STATE_MACHINE]
   
   @js.native
   sealed trait STEP_STARTED
@@ -60702,7 +60850,6 @@ object awsSdkStrings {
   sealed trait SourceUrl
     extends StObject
        with _AttachmentsSourceKey
-  inline def SourceUrl: SourceUrl = "SourceUrl".asInstanceOf[SourceUrl]
   
   @js.native
   sealed trait Source_
@@ -71366,10 +71513,9 @@ object awsSdkStrings {
   inline def `cloudwatch-logs`: `cloudwatch-logs` = "cloudwatch-logs".asInstanceOf[`cloudwatch-logs`]
   
   @js.native
-  sealed trait cloudwatch_
+  sealed trait cloudwatch__
     extends StObject
        with typings.awsSdk.clientsRedshiftMod._LogDestinationType
-  inline def cloudwatch_ : cloudwatch_ = "cloudwatch".asInstanceOf[cloudwatch_]
   
   @js.native
   sealed trait `cluster-identifier`
@@ -72366,7 +72512,6 @@ object awsSdkStrings {
   sealed trait dataCollectionTaskFailed
     extends StObject
        with _RunTimeAssessmentStatus
-  inline def dataCollectionTaskFailed: dataCollectionTaskFailed = "dataCollectionTaskFailed".asInstanceOf[dataCollectionTaskFailed]
   
   @js.native
   sealed trait dataCollectionTaskPartialSuccess
@@ -75267,7 +75412,6 @@ object awsSdkStrings {
   sealed trait `id-ID`
     extends StObject
        with typings.awsSdk.clientsTranscribeserviceMod._LanguageCode
-  inline def `id-ID`: `id-ID` = "id-ID".asInstanceOf[`id-ID`]
   
   @js.native
   sealed trait id__
@@ -77102,7 +77246,6 @@ object awsSdkStrings {
     extends StObject
        with _ActivityStreamPolicyStatus
        with _AuditPolicyState
-  inline def locked_ : locked_ = "locked".asInstanceOf[locked_]
   
   @js.native
   sealed trait `locking-policy`
@@ -78810,7 +78953,6 @@ object awsSdkStrings {
   sealed trait mlDotc6iDotlarge
     extends StObject
        with _ProductionVariantInstanceType
-  inline def mlDotc6iDotlarge: mlDotc6iDotlarge = "ml.c6i.large".asInstanceOf[mlDotc6iDotlarge]
   
   @js.native
   sealed trait mlDotc6iDotxlarge
@@ -84641,7 +84783,6 @@ object awsSdkStrings {
   sealed trait t3DotmediumDotsearch
     extends StObject
        with _OpenSearchPartitionInstanceType
-  inline def t3DotmediumDotsearch: t3DotmediumDotsearch = "t3.medium.search".asInstanceOf[t3DotmediumDotsearch]
   
   @js.native
   sealed trait t3Dotmicro
@@ -85295,7 +85436,6 @@ object awsSdkStrings {
   sealed trait `u-12tb1Dotmetal`
     extends StObject
        with typings.awsSdk.clientsEc2Mod._InstanceType
-  inline def `u-12tb1Dotmetal`: `u-12tb1Dotmetal` = "u-12tb1.metal".asInstanceOf[`u-12tb1Dotmetal`]
   
   @js.native
   sealed trait `u-18tb1Dotmetal`

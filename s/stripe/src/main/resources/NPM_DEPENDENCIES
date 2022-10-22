@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stripe" : "10.14.0"
+      "stripe" : "10.15.0"
     }
   ],
   "test-dependencies" : [
     {
-      "stripe" : "10.14.0"
+      "stripe" : "10.15.0"
     }
   ],
   "compile-devDependencies" : [

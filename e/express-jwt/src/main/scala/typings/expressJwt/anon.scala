@@ -1,8 +1,8 @@
 package typings.expressJwt
 
-import typings.express.mod.RequestHandler
+import typings.express.mod.NextFunction
 import typings.express.mod.Request_
-import typings.expressUnless.mod.Options
+import typings.express.mod.Response_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,56 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait FnCall extends StObject {
+  trait Call extends StObject {
     
-    def apply(): RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
     def apply(
-      middleware: RequestHandler[
+      req: Request_[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
           Any, 
           Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
           Record[String, Any]
         ],
-      options: Options
-    ): RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
-    def apply(
-      options: js.Function1[
-          /* req */ Request_[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-            Any, 
-            Any, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-            Record[String, Any]
-          ], 
-          Boolean
-        ]
-    ): RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
-    def apply(options: Options): RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
+      res: Response_[Any, Record[String, Any]],
+      next: NextFunction
+    ): js.Promise[Unit] = js.native
+    
+    var unless: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unless */ Any = js.native
   }
   
   trait Message extends StObject {

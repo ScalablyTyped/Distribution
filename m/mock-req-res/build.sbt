@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mock-req-res"
-version := "1.1-dt-20211202Z-b31acb"
+version := "1.1-dt-20211202Z-8efc9d"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-9fa163",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "express-serve-static-core" % "0.1.1-693358",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-86edef",
   "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-e3da4a",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")

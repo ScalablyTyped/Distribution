@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cheerio"
-version := "1.0.0-rc.12-14d3f7"
+version := "1.0.0-rc.12-976ac1"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "domelementtype" % "2.3.0-424ef8",
   "org.scalablytyped" %%% "domhandler" % "5.0.3-0ed4b9",
   "org.scalablytyped" %%% "domutils" % "3.0.1-18877a",
-  "org.scalablytyped" %%% "htmlparser2" % "8.0.1-6a387e",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "htmlparser2" % "8.0.1-211f83",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

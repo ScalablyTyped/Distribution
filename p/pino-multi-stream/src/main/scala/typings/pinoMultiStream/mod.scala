@@ -6,7 +6,6 @@ import typings.node.httpMod.ServerResponse
 import typings.node.streamMod.Writable
 import typings.pino.mod.DestinationStream
 import typings.pino.mod.LevelWithSilent
-import typings.pino.mod.pino.PrettyOptions
 import typings.pinoStdSerializers.anon.Req
 import typings.pinoStdSerializers.anon.Res
 import typings.pinoStdSerializers.mod.CustomErrorSerializer
@@ -114,7 +113,7 @@ object mod {
     // TODO: use type definitions from 'pino-pretty' when available.
     var prettifier: js.UndefOr[Any] = js.undefined
     
-    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
+    var prettyPrint: js.UndefOr[Any] = js.undefined
   }
   object PrettyStreamOptions {
     
@@ -133,7 +132,7 @@ object mod {
       
       inline def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
       
-      inline def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      inline def setPrettyPrint(value: Any): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
       
       inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     }

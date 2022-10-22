@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-compat
 
-Typings are for version 8.0.3
+Typings are for version 8.0.4
 
 ## Library description:
 Provides a compatibility with React codebases

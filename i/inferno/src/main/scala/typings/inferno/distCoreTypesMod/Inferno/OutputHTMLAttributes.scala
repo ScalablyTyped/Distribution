@@ -8,11 +8,11 @@ trait OutputHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var form: js.UndefOr[String] = js.undefined
+  var form: js.UndefOr[String | Null] = js.undefined
   
-  var htmlFor: js.UndefOr[String] = js.undefined
+  var htmlFor: js.UndefOr[String | Null] = js.undefined
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object OutputHTMLAttributes {
   
@@ -25,13 +25,19 @@ object OutputHTMLAttributes {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
+    inline def setFormNull: Self = StObject.set(x, "form", null)
+    
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     inline def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
     
+    inline def setHtmlForNull: Self = StObject.set(x, "htmlFor", null)
+    
     inline def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

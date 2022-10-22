@@ -88,4 +88,6 @@ type ViewAttributeSource = js.Function2[/* id */ Double, /* path */ js.Array[Str
 
 type ViewElementSource = js.Function2[/* id */ Double, /* inspectedElement */ InspectedElement, Unit]
 
+type ViewUrlSourceFunction = js.Function3[/* url */ String, /* line */ Double, /* col */ Double, Unit]
+
 type getCommitTree = js.Function1[/* options */ typings.reactDevtoolsInline.anon.ProfilerStore, CommitTree]

@@ -23,6 +23,7 @@ open class BlurPostProcess protected ()
     * @param textureType Type of textures used when performing the post process. (default: 0)
     * @param defines
     * @param _blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
+    * @param textureFormat Format of textures used when performing the post process. (default: TEXTUREFORMAT_RGBA)
     */
   def this(
     name: String,
@@ -35,7 +36,8 @@ open class BlurPostProcess protected ()
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     defines: js.UndefOr[String],
-    _blockCompilation: js.UndefOr[Boolean]
+    _blockCompilation: js.UndefOr[Boolean],
+    textureFormat: js.UndefOr[Double]
   ) = this()
 }
 /* static members */

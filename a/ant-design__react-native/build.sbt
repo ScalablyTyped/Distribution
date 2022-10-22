@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__react-native"
-version := "5.0.2-355c98"
+version := "5.0.2-b5eef2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
   "org.scalablytyped" %%% "react-native-collapsible" % "1.6.0-8f6761",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.7.1-aba632",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-65a940",
   "org.scalablytyped" %%% "react-native-modal-popover" % "2.1.0-0bd958",
   "org.scalablytyped" %%% "react-native-picker__picker" % "2.4.7-85f1c5",
   "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-dc4815",

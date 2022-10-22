@@ -51,6 +51,11 @@ trait Event extends StObject {
   var returnValue: Boolean = js.native
   
   /**
+    * Unauthorized and redirect error status codes (for example 401, 403, 301, 307)
+    */
+  val status: js.UndefOr[Double] = js.native
+  
+  /**
     * Invoking this method prevents event from reaching
     * any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any
     * other objects.

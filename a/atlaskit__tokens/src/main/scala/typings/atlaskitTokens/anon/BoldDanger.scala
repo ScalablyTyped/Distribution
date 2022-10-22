@@ -26,11 +26,11 @@ trait BoldDanger extends StObject {
   
   var boldWarning: HoverPressedResting
   
-  var brand: `2`
+  var brand: `3`
   
   var card: PaintToken[BaseToken]
   
-  var inverse: `1`
+  var inverse: `2`
   
   var overlay: PaintToken[BaseToken]
   
@@ -65,10 +65,10 @@ object BoldDanger {
     boldNeutral: HoverPressedResting,
     boldSuccess: HoverPressedResting,
     boldWarning: HoverPressedResting,
-    brand: `2`,
+    brand: `3`,
     card: PaintToken[BaseToken],
     default: PaintToken[BaseToken],
-    inverse: `1`,
+    inverse: `2`,
     overlay: PaintToken[BaseToken],
     selected: HoverResting,
     subtleBorderedNeutral: RestingPaintToken,
@@ -103,13 +103,13 @@ object BoldDanger {
     
     inline def setBoldWarning(value: HoverPressedResting): Self = StObject.set(x, "boldWarning", value.asInstanceOf[js.Any])
     
-    inline def setBrand(value: `2`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: `3`): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     inline def setCard(value: PaintToken[BaseToken]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     inline def setDefault(value: PaintToken[BaseToken]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setInverse(value: `1`): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+    inline def setInverse(value: `2`): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     inline def setOverlay(value: PaintToken[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     

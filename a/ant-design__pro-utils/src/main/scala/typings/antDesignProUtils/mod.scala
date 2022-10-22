@@ -2,7 +2,11 @@ package typings.antDesignProUtils
 
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSObject
+import typings.antDesignProProvider.anon.HashId
+import typings.antDesignProProvider.esUseStyleMod.ProAliasToken
+import typings.antDesignProProvider.esUseStyleMod.UseStyleResult
 import typings.antDesignProUtils.anon.ActionRender
+import typings.antDesignProUtils.anon.Array
 import typings.antDesignProUtils.anon.Cancel
 import typings.antDesignProUtils.anon.CancelEditable
 import typings.antDesignProUtils.anon.ChildrenColumnName
@@ -11,7 +15,6 @@ import typings.antDesignProUtils.anon.Current
 import typings.antDesignProUtils.anon.DataSource
 import typings.antDesignProUtils.anon.DateFormat
 import typings.antDesignProUtils.anon.Ellipsis
-import typings.antDesignProUtils.anon.HashId
 import typings.antDesignProUtils.anon.Id
 import typings.antDesignProUtils.anon.Params
 import typings.antDesignProUtils.anon.ProFormInstanceTypeanyfor
@@ -32,8 +35,6 @@ import typings.antDesignProUtils.esTypingMod.SearchTransformKeyFn
 import typings.antDesignProUtils.esUseEditableArrayMod.RecordKey
 import typings.antDesignProUtils.esUseEditableArrayMod.RowEditableConfig
 import typings.antDesignProUtils.esUseSafeStateMod.SetState
-import typings.antDesignProUtils.esUseStyleMod.ProAliasToken
-import typings.antDesignProUtils.esUseStyleMod.UseStyleResult
 import typings.antd.libFormHooksUseFormMod.FormInstance
 import typings.dayjs.mod.Dayjs
 import typings.rcFieldForm.esInterfaceMod.NamePath
@@ -84,7 +85,7 @@ object mod {
   @js.native
   val ProFormContext: Context[ProFormInstanceTypeanyfor] = js.native
   
-  inline def arrayMoveImmutable[T](array: js.Array[T], fromIndex: Double, toIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveImmutable")(array.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def arrayMoveImmutable[T](hasArrayFromIndexToIndex: Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayMoveImmutable")(hasArrayFromIndexToIndex.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   inline def compareVersions(v1: String, v2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareVersions")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -206,7 +207,7 @@ object mod {
   
   inline def editableRowByKey[RecordType](keyProps: ChildrenColumnName[RecordType], action: update | top | delete): js.Array[RecordType] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableRowByKey")(keyProps.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Array[RecordType]]
   
-  inline def genCopyable(dom: ReactNode, item: Any, text: String): js.UndefOr[String | Double | Boolean | ReactFragment | Element | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("genCopyable")(dom.asInstanceOf[js.Any], item.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double | Boolean | ReactFragment | Element | Null]]
+  inline def genCopyable(dom: ReactNode, item: Any, text: String): js.UndefOr[String | Double | Boolean | Element | ReactFragment | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("genCopyable")(dom.asInstanceOf[js.Any], item.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double | Boolean | Element | ReactFragment | Null]]
   
   inline def getFieldPropsOrFormItemProps(fieldProps: Any): (Record[String, Any]) & ColSize = ^.asInstanceOf[js.Dynamic].applyDynamic("getFieldPropsOrFormItemProps")(fieldProps.asInstanceOf[js.Any]).asInstanceOf[(Record[String, Any]) & ColSize]
   inline def getFieldPropsOrFormItemProps(fieldProps: Any, form: Null, extraProps: Any): (Record[String, Any]) & ColSize = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldPropsOrFormItemProps")(fieldProps.asInstanceOf[js.Any], form.asInstanceOf[js.Any], extraProps.asInstanceOf[js.Any])).asInstanceOf[(Record[String, Any]) & ColSize]
@@ -317,11 +318,6 @@ object mod {
   inline def useSafeState[T](defaultValue: js.Function0[T]): js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.UndefOr[T], SetState[js.UndefOr[T]]]]
   
   inline def useStyle(componentName: String, styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation]): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
-  inline def useStyle(
-    componentName: String,
-    styleFn: js.Function1[/* token */ ProAliasToken, CSSInterpolation],
-    deps: Record[String, Any]
-  ): UseStyleResult = (^.asInstanceOf[js.Dynamic].applyDynamic("useStyle")(componentName.asInstanceOf[js.Any], styleFn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[UseStyleResult]
   
   /**
     * 如果 antd 里面没有，就用我 mock 的，这样 antd@4 和 antd@5 可以兼容

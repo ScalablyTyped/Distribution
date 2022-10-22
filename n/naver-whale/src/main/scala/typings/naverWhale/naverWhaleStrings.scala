@@ -148,6 +148,10 @@ object naverWhaleStrings {
   inline def browsingData: browsingData = "browsingData".asInstanceOf[browsingData]
   
   @js.native
+  sealed trait cancelled extends StObject
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  
+  @js.native
   sealed trait certificateProvider
     extends StObject
        with ManifestPermissions
@@ -294,6 +298,10 @@ object naverWhaleStrings {
   inline def editable: editable = "editable".asInstanceOf[editable]
   
   @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
   sealed trait enterpriseDotdeviceAttributes
     extends StObject
        with ManifestPermissions
@@ -316,6 +324,10 @@ object naverWhaleStrings {
     extends StObject
        with ManifestPermissions
   inline def enterpriseDotplatformKeys: enterpriseDotplatformKeys = "enterprise.platformKeys".asInstanceOf[enterpriseDotplatformKeys]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait experimental
@@ -420,6 +432,10 @@ object naverWhaleStrings {
   inline def incognito_session_only: incognito_session_only = "incognito_session_only".asInstanceOf[incognito_session_only]
   
   @js.native
+  sealed trait interrupted extends StObject
+  inline def interrupted: interrupted = "interrupted".asInstanceOf[interrupted]
+  
+  @js.native
   sealed trait launcher
     extends StObject
        with ContextType
@@ -500,6 +516,10 @@ object naverWhaleStrings {
     extends StObject
        with ManifestPermissions
   inline def management: management = "management".asInstanceOf[management]
+  
+  @js.native
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
   sealed trait maximized
@@ -626,6 +646,10 @@ object naverWhaleStrings {
   inline def panel: panel = "panel".asInstanceOf[panel]
   
   @js.native
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
   sealed trait ping
     extends StObject
        with ResourceType
@@ -712,6 +736,10 @@ object naverWhaleStrings {
   inline def regular_only: regular_only = "regular_only".asInstanceOf[regular_only]
   
   @js.native
+  sealed trait resume extends StObject
+  inline def resume: resume = "resume".asInstanceOf[resume]
+  
+  @js.native
   sealed trait sansserif extends StObject
   inline def sansserif: sansserif = "sansserif".asInstanceOf[sansserif]
   
@@ -738,6 +766,10 @@ object naverWhaleStrings {
     extends StObject
        with ContextType
   inline def selection: selection = "selection".asInstanceOf[selection]
+  
+  @js.native
+  sealed trait sentence extends StObject
+  inline def sentence: sentence = "sentence".asInstanceOf[sentence]
   
   @js.native
   sealed trait separator
@@ -776,6 +808,10 @@ object naverWhaleStrings {
   @js.native
   sealed trait standard extends StObject
   inline def standard: standard = "standard".asInstanceOf[standard]
+  
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait storage
@@ -938,6 +974,10 @@ object naverWhaleStrings {
     extends StObject
        with PlatformOs
   inline def win: win = "win".asInstanceOf[win]
+  
+  @js.native
+  sealed trait word extends StObject
+  inline def word: word = "word".asInstanceOf[word]
   
   @js.native
   sealed trait `x86-32`

@@ -11,11 +11,11 @@ trait PublishCompositeConfigN extends StObject {
   
   var collectionName: js.UndefOr[String] = js.undefined
   
-  def find(args: js.Any*): Cursor[js.Any, js.Any]
+  def find(args: Any*): Cursor[Any, Any]
 }
 object PublishCompositeConfigN {
   
-  inline def apply(find: /* repeated */ js.Any => Cursor[js.Any, js.Any]): PublishCompositeConfigN = {
+  inline def apply(find: /* repeated */ Any => Cursor[Any, Any]): PublishCompositeConfigN = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
     __obj.asInstanceOf[PublishCompositeConfigN]
   }
@@ -26,12 +26,12 @@ object PublishCompositeConfigN {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: PublishCompositeConfigN*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PublishCompositeConfigN*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     
     inline def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
     
-    inline def setFind(value: /* repeated */ js.Any => Cursor[js.Any, js.Any]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: /* repeated */ Any => Cursor[Any, Any]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

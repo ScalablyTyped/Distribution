@@ -1,6 +1,6 @@
 package typings.reactDevtoolsInline
 
-import typings.react.mod.Component
+import typings.react.mod.ComponentType
 import typings.reactDevtoolsInline.commonsMod.DevtoolsProps
 import typings.reactDevtoolsInline.commonsMod.FrontendBridge
 import typings.reactDevtoolsInline.commonsMod.ProfilerStore
@@ -61,16 +61,24 @@ object frontendMod {
   inline def createStore(bridge: FrontendBridge): typings.reactDevtoolsInline.commonsMod.Store = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(bridge.asInstanceOf[js.Any]).asInstanceOf[typings.reactDevtoolsInline.commonsMod.Store]
   inline def createStore(bridge: FrontendBridge, config: Config): typings.reactDevtoolsInline.commonsMod.Store = (^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(bridge.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactDevtoolsInline.commonsMod.Store]
   
-  inline def initialize(contentWindow: Window): Component[DevtoolsProps, js.Object, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(contentWindow.asInstanceOf[js.Any]).asInstanceOf[Component[DevtoolsProps, js.Object, Any]]
-  inline def initialize(contentWindow: Window, options: typings.reactDevtoolsInline.anon.Store): Component[DevtoolsProps, js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(contentWindow.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Component[DevtoolsProps, js.Object, Any]]
+  inline def initialize(contentWindow: Window): ComponentType[DevtoolsProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(contentWindow.asInstanceOf[js.Any]).asInstanceOf[ComponentType[DevtoolsProps]]
+  inline def initialize(contentWindow: Window, options: typings.reactDevtoolsInline.anon.Store): ComponentType[DevtoolsProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(contentWindow.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentType[DevtoolsProps]]
   
   trait Config extends StObject {
     
     var checkBridgeProtocolCompatibility: js.UndefOr[Boolean] = js.undefined
     
+    var isProfiling: js.UndefOr[Boolean] = js.undefined
+    
     var supportsNativeInspection: js.UndefOr[Boolean] = js.undefined
     
     var supportsProfiling: js.UndefOr[Boolean] = js.undefined
+    
+    var supportsReloadAndProfile: js.UndefOr[Boolean] = js.undefined
+    
+    var supportsTimeline: js.UndefOr[Boolean] = js.undefined
+    
+    var supportsTraceUpdates: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -85,6 +93,10 @@ object frontendMod {
       
       inline def setCheckBridgeProtocolCompatibilityUndefined: Self = StObject.set(x, "checkBridgeProtocolCompatibility", js.undefined)
       
+      inline def setIsProfiling(value: Boolean): Self = StObject.set(x, "isProfiling", value.asInstanceOf[js.Any])
+      
+      inline def setIsProfilingUndefined: Self = StObject.set(x, "isProfiling", js.undefined)
+      
       inline def setSupportsNativeInspection(value: Boolean): Self = StObject.set(x, "supportsNativeInspection", value.asInstanceOf[js.Any])
       
       inline def setSupportsNativeInspectionUndefined: Self = StObject.set(x, "supportsNativeInspection", js.undefined)
@@ -92,6 +104,18 @@ object frontendMod {
       inline def setSupportsProfiling(value: Boolean): Self = StObject.set(x, "supportsProfiling", value.asInstanceOf[js.Any])
       
       inline def setSupportsProfilingUndefined: Self = StObject.set(x, "supportsProfiling", js.undefined)
+      
+      inline def setSupportsReloadAndProfile(value: Boolean): Self = StObject.set(x, "supportsReloadAndProfile", value.asInstanceOf[js.Any])
+      
+      inline def setSupportsReloadAndProfileUndefined: Self = StObject.set(x, "supportsReloadAndProfile", js.undefined)
+      
+      inline def setSupportsTimeline(value: Boolean): Self = StObject.set(x, "supportsTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setSupportsTimelineUndefined: Self = StObject.set(x, "supportsTimeline", js.undefined)
+      
+      inline def setSupportsTraceUpdates(value: Boolean): Self = StObject.set(x, "supportsTraceUpdates", value.asInstanceOf[js.Any])
+      
+      inline def setSupportsTraceUpdatesUndefined: Self = StObject.set(x, "supportsTraceUpdates", js.undefined)
     }
   }
 }

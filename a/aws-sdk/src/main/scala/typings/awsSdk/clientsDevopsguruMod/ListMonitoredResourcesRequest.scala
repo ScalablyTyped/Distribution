@@ -9,7 +9,7 @@ trait ListMonitoredResourcesRequest extends StObject {
   /**
     *  Filters to determine which monitored resources you want to retrieve. You can filter by resource type or resource permission status. 
     */
-  var Filters: ListMonitoredResourcesFilters
+  var Filters: js.UndefOr[ListMonitoredResourcesFilters] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
@@ -23,14 +23,16 @@ trait ListMonitoredResourcesRequest extends StObject {
 }
 object ListMonitoredResourcesRequest {
   
-  inline def apply(Filters: ListMonitoredResourcesFilters): ListMonitoredResourcesRequest = {
-    val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any])
+  inline def apply(): ListMonitoredResourcesRequest = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMonitoredResourcesRequest]
   }
   
   extension [Self <: ListMonitoredResourcesRequest](x: Self) {
     
     inline def setFilters(value: ListMonitoredResourcesFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     inline def setMaxResults(value: ListMonitoredResourcesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

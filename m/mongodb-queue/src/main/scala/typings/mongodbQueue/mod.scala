@@ -2,7 +2,6 @@ package typings.mongodbQueue
 
 import typings.mongodb.mod.Db
 import typings.mongodb.mod.MongoError
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("mongodb-queue", "Queue")
   @js.native
-  class Queue protected () extends StObject {
+  open class Queue protected () extends StObject {
     def this(db: Db, name: String) = this()
     def this(db: Db, name: String, opts: QueueOptions) = this()
     
@@ -30,7 +29,7 @@ object mod {
     def add(payload: Payload, callback: QueueCallback[String]): Unit = js.native
     def add(payload: Payload, opts: QueueOptions, callback: QueueCallback[String]): Unit = js.native
     
-    def clean(callback: QueueCallback[js.Any]): Unit = js.native
+    def clean(callback: QueueCallback[Any]): Unit = js.native
     
     def createIndexes(callback: QueueCallback[String]): Unit = js.native
     
@@ -39,7 +38,7 @@ object mod {
     def get(callback: QueueCallback[js.UndefOr[QueueMessage]]): Unit = js.native
     def get(opts: QueueOptions, callback: QueueCallback[js.UndefOr[QueueMessage]]): Unit = js.native
     
-    def inflight(callback: QueueCallback[Double]): Unit = js.native
+    def inFlight(callback: QueueCallback[Double]): Unit = js.native
     
     def ping(ack: String, callback: QueueCallback[String]): Unit = js.native
     def ping(ack: String, opts: QueueOptions, callback: QueueCallback[String]): Unit = js.native
@@ -49,11 +48,11 @@ object mod {
     def total(callback: QueueCallback[Double]): Unit = js.native
   }
   
-  type ArrayPayload = js.Array[String | (Record[String, js.Any])]
+  type ArrayPayload = js.Array[String | (Record[String, Any])]
   
-  type Payload = String | (Record[String, js.Any])
+  type Payload = String | (Record[String, Any])
   
-  type QueueCallback[T] = js.Function2[/* err */ MongoError | Error, /* result */ T, Unit]
+  type QueueCallback[T] = js.Function2[/* err */ MongoError | js.Error, /* result */ T, Unit]
   
   trait QueueMessage extends StObject {
     
@@ -80,7 +79,7 @@ object mod {
       
       inline def setPayload(value: Payload | ArrayPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      inline def setPayloadVarargs(value: (String | (Record[String, js.Any]))*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: (String | (Record[String, Any]))*): Self = StObject.set(x, "payload", js.Array(value*))
       
       inline def setTries(value: Double): Self = StObject.set(x, "tries", value.asInstanceOf[js.Any])
     }

@@ -106,7 +106,36 @@ object libOptionsMod {
     }
   }
   
-  trait Options extends StObject {
+  trait PersonMetadata extends StObject {
+    
+    var email: js.UndefOr[String] = js.undefined
+    
+    var name: String
+    
+    var url: js.UndefOr[String] = js.undefined
+  }
+  object PersonMetadata {
+    
+    inline def apply(name: String): PersonMetadata = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PersonMetadata]
+    }
+    
+    extension [Self <: PersonMetadata](x: Self) {
+      
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
+  
+  trait SquirrelWindowsOptions extends StObject {
     
     /**
       * The folder path of your Electron app
@@ -252,14 +281,14 @@ object libOptionsMod {
       */
     var version: js.UndefOr[String] = js.undefined
   }
-  object Options {
+  object SquirrelWindowsOptions {
     
-    inline def apply(appDirectory: String): Options = {
+    inline def apply(appDirectory: String): SquirrelWindowsOptions = {
       val __obj = js.Dynamic.literal(appDirectory = appDirectory.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[SquirrelWindowsOptions]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: SquirrelWindowsOptions](x: Self) {
       
       inline def setAppDirectory(value: String): Self = StObject.set(x, "appDirectory", value.asInstanceOf[js.Any])
       
@@ -362,35 +391,6 @@ object libOptionsMod {
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-    }
-  }
-  
-  trait PersonMetadata extends StObject {
-    
-    var email: js.UndefOr[String] = js.undefined
-    
-    var name: String
-    
-    var url: js.UndefOr[String] = js.undefined
-  }
-  object PersonMetadata {
-    
-    inline def apply(name: String): PersonMetadata = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PersonMetadata]
-    }
-    
-    extension [Self <: PersonMetadata](x: Self) {
-      
-      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
-      
-      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-      
-      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

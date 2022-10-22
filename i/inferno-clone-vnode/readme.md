@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno-clone-vnode
 
-Typings are for version 8.0.3
+Typings are for version 8.0.4
 
 ## Library description:
 provides helper function to clone Inferno's vNodes

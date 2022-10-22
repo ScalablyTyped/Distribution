@@ -17,6 +17,11 @@ trait RecommendationJobInputConfig extends StObject {
   var EndpointConfigurations: js.UndefOr[EndpointInputConfigurations] = js.undefined
   
   /**
+    * Existing customer endpoints on which to run an Inference Recommender job.
+    */
+  var Endpoints: js.UndefOr[typings.awsSdk.clientsSagemakerMod.Endpoints] = js.undefined
+  
+  /**
     * Specifies the maximum duration of the job, in seconds.&gt;
     */
   var JobDurationInSeconds: js.UndefOr[typings.awsSdk.clientsSagemakerMod.JobDurationInSeconds] = js.undefined
@@ -59,6 +64,12 @@ object RecommendationJobInputConfig {
     inline def setEndpointConfigurationsUndefined: Self = StObject.set(x, "EndpointConfigurations", js.undefined)
     
     inline def setEndpointConfigurationsVarargs(value: EndpointInputConfiguration*): Self = StObject.set(x, "EndpointConfigurations", js.Array(value*))
+    
+    inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    
+    inline def setEndpointsVarargs(value: EndpointInfo*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setJobDurationInSeconds(value: JobDurationInSeconds): Self = StObject.set(x, "JobDurationInSeconds", value.asInstanceOf[js.Any])
     

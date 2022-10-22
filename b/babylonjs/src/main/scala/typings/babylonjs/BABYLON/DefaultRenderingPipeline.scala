@@ -20,7 +20,7 @@ trait DefaultRenderingPipeline
     * @ignore
     * ID of the Fast Approximate Anti-Aliasing post process;
     */
-  val FxaaPostProcessId: String = js.native
+  val FxaaPostProcessId: /* "FxaaPostProcessEffect" */ String = js.native
   
   /**
     * ID of the grain post process
@@ -31,7 +31,7 @@ trait DefaultRenderingPipeline
     * @ignore
     * ID of the image processing post process;
     */
-  val ImageProcessingPostProcessId: String = js.native
+  val ImageProcessingPostProcessId: /* "ImageProcessingPostProcessEffect" */ String = js.native
   
   /**
     * ID of the sharpen post process,
@@ -128,6 +128,13 @@ trait DefaultRenderingPipeline
     */
   @JSName("animations")
   var animations_DefaultRenderingPipeline: js.Array[Animation] = js.native
+  
+  /**
+    * Enable or disable automatic building of the pipeline when effects are enabled and disabled.
+    * If false, you will have to manually call prepare() to update the pipeline.
+    */
+  def automaticBuild: Boolean = js.native
+  def automaticBuild_=(value: Boolean): Unit = js.native
   
   /* private */ var bloom: Any = js.native
   

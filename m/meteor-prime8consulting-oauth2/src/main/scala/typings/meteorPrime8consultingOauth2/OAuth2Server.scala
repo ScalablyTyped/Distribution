@@ -3,7 +3,6 @@ package typings.meteorPrime8consultingOauth2
 import typings.meteor.Meteor.Error
 import typings.meteor.Meteor.SubscriptionHandle
 import typings.meteor.Mongo.Collection
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,13 +15,13 @@ object OAuth2Server {
     
     var clientId: String
     
-    var expires: Date
+    var expires: js.Date
     
     var userId: String
   }
   object AccessToken {
     
-    inline def apply(accessToken: String, clientId: String, expires: Date, userId: String): AccessToken = {
+    inline def apply(accessToken: String, clientId: String, expires: js.Date, userId: String): AccessToken = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessToken]
     }
@@ -33,7 +32,7 @@ object OAuth2Server {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
@@ -45,13 +44,13 @@ object OAuth2Server {
     
     var clientId: String
     
-    var expires: Date
+    var expires: js.Date
     
     var userId: String
   }
   object AuthCode {
     
-    inline def apply(authCode: String, clientId: String, expires: Date, userId: String): AuthCode = {
+    inline def apply(authCode: String, clientId: String, expires: js.Date, userId: String): AuthCode = {
       val __obj = js.Dynamic.literal(authCode = authCode.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthCode]
     }
@@ -62,7 +61,7 @@ object OAuth2Server {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
@@ -72,7 +71,7 @@ object OAuth2Server {
     
     var authorizationCode: String
     
-    var error: js.Any
+    var error: Any
     
     var redirectToUri: String
     
@@ -80,7 +79,7 @@ object OAuth2Server {
   }
   object AuthCodeGrantResult {
     
-    inline def apply(authorizationCode: String, error: js.Any, redirectToUri: String, success: Boolean): AuthCodeGrantResult = {
+    inline def apply(authorizationCode: String, error: Any, redirectToUri: String, success: Boolean): AuthCodeGrantResult = {
       val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], redirectToUri = redirectToUri.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthCodeGrantResult]
     }
@@ -89,7 +88,7 @@ object OAuth2Server {
       
       inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setRedirectToUri(value: String): Self = StObject.set(x, "redirectToUri", value.asInstanceOf[js.Any])
       
@@ -231,7 +230,7 @@ object OAuth2Server {
     
     var methodNames: MethodNames
     
-    var oauthserver: js.Any
+    var oauthserver: Any
     
     var pubSubNames: PubSubNames
     
@@ -243,7 +242,7 @@ object OAuth2Server {
       callMethod: CallMethod,
       collections: Collections,
       methodNames: MethodNames,
-      oauthserver: js.Any,
+      oauthserver: Any,
       pubSubNames: PubSubNames,
       subscribeTo: SubscribeTo
     ): typings.meteorPrime8consultingOauth2.OAuth2Server.OAuth2Server = {
@@ -259,7 +258,7 @@ object OAuth2Server {
       
       inline def setMethodNames(value: MethodNames): Self = StObject.set(x, "methodNames", value.asInstanceOf[js.Any])
       
-      inline def setOauthserver(value: js.Any): Self = StObject.set(x, "oauthserver", value.asInstanceOf[js.Any])
+      inline def setOauthserver(value: Any): Self = StObject.set(x, "oauthserver", value.asInstanceOf[js.Any])
       
       inline def setPubSubNames(value: PubSubNames): Self = StObject.set(x, "pubSubNames", value.asInstanceOf[js.Any])
       
@@ -298,7 +297,7 @@ object OAuth2Server {
     
     var clientId: String
     
-    var expires: Date
+    var expires: js.Date
     
     var refreshToken: String
     
@@ -306,7 +305,7 @@ object OAuth2Server {
   }
   object RefreshToken {
     
-    inline def apply(clientId: String, expires: Date, refreshToken: String, userId: String): RefreshToken = {
+    inline def apply(clientId: String, expires: js.Date, refreshToken: String, userId: String): RefreshToken = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefreshToken]
     }
@@ -315,7 +314,7 @@ object OAuth2Server {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       

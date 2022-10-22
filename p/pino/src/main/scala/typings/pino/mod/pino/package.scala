@@ -1,5 +1,6 @@
 package typings.pino.mod.pino
 
+import typings.pino.anon.needsMetadataGsymfalseund
 import typings.pino.mod.CustomLevelLogger
 import typings.pino.mod.LoggerExtras
 import typings.std.Record
@@ -10,18 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Bindings = Record[String, Any]
 
-type LevelChangeEventListener = js.Function4[
+type DestinationStreamWithMetadata = needsMetadataGsymfalseund | (DestinationStreamHasMetadata & DestinationStream)
+
+type LevelChangeEventListener[Options] = js.Function5[
 /* lvl */ LevelWithSilent | String, 
 /* val */ Double, 
 /* prevLvl */ LevelWithSilent | String, 
 /* prevVal */ Double, 
+/* logger */ Logger[Options], 
 Unit]
 
 type LogDescriptor = Record[String, Any]
 
 type Logger[Options] = BaseLogger & LoggerExtras[Options] & CustomLevelLogger[Options]
-
-type PrettyOptions = typings.pinoPretty.mod.PrettyOptions
 
 type SerializedError = typings.pinoStdSerializers.mod.SerializedError
 

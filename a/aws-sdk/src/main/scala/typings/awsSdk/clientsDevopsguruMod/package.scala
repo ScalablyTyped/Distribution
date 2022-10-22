@@ -1,7 +1,6 @@
 package typings.awsSdk.clientsDevopsguruMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.awsSdkStrings.LOG_GROUPS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type AccountHealths = js.Array[AccountHealth]
 
 type AccountIdList = js.Array[AwsAccountId]
+
+type AnalyzedResourceCount = Double
 
 type AnomalousLogGroups = js.Array[AnomalousLogGroup]
 
@@ -420,7 +421,37 @@ type ResourcePermission = _ResourcePermission | String
 
 type ResourceType = String
 
-type ResourceTypeFilter = LOG_GROUPS | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOG_GROUPS
+  - typings.awsSdk.awsSdkStrings.CLOUDFRONT_DISTRIBUTION
+  - typings.awsSdk.awsSdkStrings.DYNAMODB_TABLE
+  - typings.awsSdk.awsSdkStrings.EC2_NAT_GATEWAY
+  - typings.awsSdk.awsSdkStrings.ECS_CLUSTER
+  - typings.awsSdk.awsSdkStrings.ECS_SERVICE
+  - typings.awsSdk.awsSdkStrings.EKS_CLUSTER
+  - typings.awsSdk.awsSdkStrings.ELASTIC_BEANSTALK_ENVIRONMENT
+  - typings.awsSdk.awsSdkStrings.ELASTIC_LOAD_BALANCER_LOAD_BALANCER
+  - typings.awsSdk.awsSdkStrings.ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER
+  - typings.awsSdk.awsSdkStrings.ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP
+  - typings.awsSdk.awsSdkStrings.ELASTICACHE_CACHE_CLUSTER
+  - typings.awsSdk.awsSdkStrings.ELASTICSEARCH_DOMAIN
+  - typings.awsSdk.awsSdkStrings.KINESIS_STREAM
+  - typings.awsSdk.awsSdkStrings.LAMBDA_FUNCTION
+  - typings.awsSdk.awsSdkStrings.OPEN_SEARCH_SERVICE_DOMAIN
+  - typings.awsSdk.awsSdkStrings.RDS_DB_INSTANCE
+  - typings.awsSdk.awsSdkStrings.RDS_DB_CLUSTER
+  - typings.awsSdk.awsSdkStrings.REDSHIFT_CLUSTER
+  - typings.awsSdk.awsSdkStrings.ROUTE53_HOSTED_ZONE
+  - typings.awsSdk.awsSdkStrings.ROUTE53_HEALTH_CHECK
+  - typings.awsSdk.awsSdkStrings.S3_BUCKET
+  - typings.awsSdk.awsSdkStrings.SAGEMAKER_ENDPOINT
+  - typings.awsSdk.awsSdkStrings.SNS_TOPIC
+  - typings.awsSdk.awsSdkStrings.SQS_QUEUE
+  - typings.awsSdk.awsSdkStrings.STEP_FUNCTIONS_ACTIVITY
+  - typings.awsSdk.awsSdkStrings.STEP_FUNCTIONS_STATE_MACHINE
+  - java.lang.String
+*/
+type ResourceTypeFilter = _ResourceTypeFilter | String
 
 type ResourceTypeFilters = js.Array[ResourceTypeFilter]
 

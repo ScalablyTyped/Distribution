@@ -1,7 +1,7 @@
 
 # Scala.js typings for ahooks
 
-Typings are for version 3.7.1
+Typings are for version 3.7.2
 
 ## Library description:
 react hooks library

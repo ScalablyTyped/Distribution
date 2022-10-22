@@ -48,6 +48,13 @@ open class ShaderSystem protected ()
   var destroyed: Boolean = js.native
   
   /**
+    * Disposes shader.
+    * If disposing one equals with current shader, set current as null.
+    * @param shader - Shader object
+    */
+  def disposeShader(shader: Shader): Unit = js.native
+  
+  /**
     * Generates a glProgram version of the Shader provided.
     * @param shader - The shader that the glProgram will be based on.
     * @returns A shiny new glProgram!

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-macros"
-version := "2.8-dt-20211202Z-47531f"
+version := "2.8-dt-20211202Z-b7bdb8"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-7b08cb",
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20220624Z-317949",
   "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20211223Z-27b6b7",
-  "org.scalablytyped" %%% "babel__parser" % "7.19.4-d9b25c",
-  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-1ba1f6",
+  "org.scalablytyped" %%% "babel__parser" % "7.19.6-e8951f",
+  "org.scalablytyped" %%% "babel__template" % "7.4-dt-20211202Z-f33532",
   "org.scalablytyped" %%% "babel__traverse" % "7.18-dt-20220923Z-0e2ba7",
   "org.scalablytyped" %%% "babel__types" % "7.19.4-1978dd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")

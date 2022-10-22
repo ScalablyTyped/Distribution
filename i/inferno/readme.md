@@ -1,7 +1,7 @@
 
 # Scala.js typings for inferno
 
-Typings are for version 8.0.3
+Typings are for version 8.0.4
 
 ## Library description:
 An extremely fast, React-like JavaScript library for building modern user interfaces

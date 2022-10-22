@@ -10,15 +10,12 @@ Message queues which uses MongoDB.
 | ------------------ | :-------------: |
 | Full name          | mongodb-queue |
 | Keywords           | mongodb, queue |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 122291 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7338.666666666667 |
+| # stars            | 195.0 |
 
 ## Links
-- [Homepage](https://github.com/chilts/mongodb-queue)
-- [Bugs](http://github.com/chilts/mongodb-queue/issues)
-- [Repository](https://github.com/chilts/mongodb-queue)
 - [Npm](https://www.npmjs.com/package/mongodb-queue)
     
 

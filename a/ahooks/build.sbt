@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ahooks"
-version := "3.7.1-bf3cb9"
+version := "3.7.2-a31dc4"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "dayjs" % "1.11.5-709f0a",
+  "org.scalablytyped" %%% "dayjs" % "1.11.6-be8973",
   "org.scalablytyped" %%% "js-cookie" % "3.0-dt-20220422Z-fbf51a",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20220928Z-cacacb",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",

@@ -8,6 +8,7 @@ import typings.reactNative.mod.StatusBarAnimation
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.anon.Left
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -193,6 +194,13 @@ object libTypescriptComponentsDrawerLayoutMod {
     var statusBarAnimation: js.UndefOr[StatusBarAnimation] = js.undefined
     
     var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default 'none'
+      * Defines which userSelect property should be used.
+      * Values: 'none'|'text'|'auto'
+      */
+    var userSelect: js.UndefOr[UserSelect] = js.undefined
   }
   object DrawerLayoutProps {
     
@@ -296,6 +304,10 @@ object libTypescriptComponentsDrawerLayoutMod {
       inline def setUseNativeAnimations(value: Boolean): Self = StObject.set(x, "useNativeAnimations", value.asInstanceOf[js.Any])
       
       inline def setUseNativeAnimationsUndefined: Self = StObject.set(x, "useNativeAnimations", js.undefined)
+      
+      inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+      
+      inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     }
   }
   

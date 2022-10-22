@@ -41,7 +41,7 @@ type MouseEventHandler[T] = EventHandler[InfernoMouseEvent[T]]
 
 type PointerEventHandler[T] = EventHandler[InfernoPointerEvent[T]]
 
-type Ref[T] = (js.Function1[/* instance */ T | Null, Any]) | RefObject[T]
+type Ref[T] = js.Function1[/* instance */ T | Null, Any]
 
 type TouchEventHandler[T] = EventHandler[InfernoTouchEvent[T]]
 

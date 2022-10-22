@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "license-webpack-plugin"
-version := "4.0.2-f4ece3"
+version := "4.0.2-6748ed"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
-  "org.scalablytyped" %%% "webpack-sources" % "3.2-dt-20211202Z-3b8a39")
+  "org.scalablytyped" %%% "webpack-sources" % "3.2-dt-20211202Z-a0b644")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

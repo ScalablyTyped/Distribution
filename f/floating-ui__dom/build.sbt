@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "floating-ui__dom"
-version := "1.0.2-969790"
+version := "1.0.3-95bfd2"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

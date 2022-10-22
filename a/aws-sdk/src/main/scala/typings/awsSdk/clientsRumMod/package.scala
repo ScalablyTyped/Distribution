@@ -16,23 +16,58 @@ type AppMonitorSummaryList = js.Array[AppMonitorSummary]
 
 type Arn = java.lang.String
 
+type BatchCreateRumMetricDefinitionsErrors = js.Array[BatchCreateRumMetricDefinitionsError]
+
+type BatchDeleteRumMetricDefinitionsErrors = js.Array[BatchDeleteRumMetricDefinitionsError]
+
 type Boolean = scala.Boolean
+
+type DestinationArn = java.lang.String
+
+type DimensionKey = java.lang.String
+
+type DimensionKeysMap = StringDictionary[DimensionName]
+
+type DimensionName = java.lang.String
 
 type EventData = java.lang.String
 
 type EventDataList = js.Array[EventData]
 
+type EventPattern = java.lang.String
+
 type FavoritePages = js.Array[String]
 
 type ISOTimestampString = java.lang.String
 
-type IdentityPoolId = java.lang.String
+type IamRoleArn = java.lang.String
 
-type Integer = Double
+type IdentityPoolId = java.lang.String
 
 type JsonValue = java.lang.String
 
 type MaxQueryResults = Double
+
+type MaxResultsInteger = Double
+
+type MetricDefinitionId = java.lang.String
+
+type MetricDefinitionIds = js.Array[MetricDefinitionId]
+
+type MetricDefinitions = js.Array[MetricDefinition]
+
+type MetricDefinitionsRequest = js.Array[MetricDefinitionRequest]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CloudWatch_
+  - typings.awsSdk.awsSdkStrings.Evidently
+  - java.lang.String
+*/
+type MetricDestination = _MetricDestination | java.lang.String
+
+type MetricDestinationSummaryList = js.Array[MetricDestinationSummary]
+
+type MetricName = java.lang.String
 
 type Pages = js.Array[Url]
 
@@ -82,7 +117,11 @@ type Timestamp = js.Date
 
 type Token = java.lang.String
 
+type UnitLabel = java.lang.String
+
 type Url = java.lang.String
+
+type ValueKey = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-05-10`

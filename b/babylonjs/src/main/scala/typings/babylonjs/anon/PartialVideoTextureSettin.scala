@@ -11,6 +11,8 @@ trait PartialVideoTextureSettin extends StObject {
   
   var autoUpdateTexture: js.UndefOr[Boolean] = js.undefined
   
+  var format: js.UndefOr[Double] = js.undefined
+  
   var loop: js.UndefOr[Boolean] = js.undefined
   
   var muted: js.UndefOr[Boolean] = js.undefined
@@ -33,6 +35,10 @@ object PartialVideoTextureSettin {
     inline def setAutoUpdateTexture(value: Boolean): Self = StObject.set(x, "autoUpdateTexture", value.asInstanceOf[js.Any])
     
     inline def setAutoUpdateTextureUndefined: Self = StObject.set(x, "autoUpdateTexture", js.undefined)
+    
+    inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

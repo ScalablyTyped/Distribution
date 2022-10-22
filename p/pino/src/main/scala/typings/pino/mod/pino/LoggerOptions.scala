@@ -117,12 +117,6 @@ trait LoggerOptions extends StObject {
   var prettifier: js.UndefOr[Any] = js.undefined
   
   /**
-    * Enables pino.pretty. This is intended for non-production configurations. This may be set to a configuration
-    * object as outlined in http://getpino.io/#/docs/API?id=pretty. Default: `false`.
-    */
-  var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
-  
-  /**
     * As an array, the redact option specifies paths that should have their values redacted from any log output.
     *
     * Each path must be a string using a syntax which corresponds to JavaScript dot and bracket notation.
@@ -248,10 +242,6 @@ object LoggerOptions {
     inline def setPrettifier(value: Any): Self = StObject.set(x, "prettifier", value.asInstanceOf[js.Any])
     
     inline def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
-    
-    inline def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
-    
-    inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     inline def setRedact(value: js.Array[String] | redactOptions): Self = StObject.set(x, "redact", value.asInstanceOf[js.Any])
     

@@ -23,6 +23,8 @@ object tts {
   inline def getVoices(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")().asInstanceOf[Unit]
   inline def getVoices(callback: js.Function1[/* voices */ js.Array[TtsVoice], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def getVoices_Promise(): js.Promise[js.Array[TtsVoice]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVoices")().asInstanceOf[js.Promise[js.Array[TtsVoice]]]
+  
   inline def isSpeaking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpeaking")().asInstanceOf[Unit]
   inline def isSpeaking(callback: js.Function1[/* speaking */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpeaking")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-gesture-handler"
-version := "2.7.1-aba632"
+version := "2.8.0-65a940"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

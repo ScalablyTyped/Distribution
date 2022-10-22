@@ -24,7 +24,7 @@ trait Matrix extends StObject {
     * @param other defines the matrix to add
     * @returns a new matrix as the addition of the current matrix and the given one
     */
-  def add(other: DeepImmutable[Matrix]): Matrix = js.native
+  def add(other: DeepImmutable[Matrix]): this.type = js.native
   
   /**
     * add a value at the specified position in the current Matrix
@@ -32,22 +32,22 @@ trait Matrix extends StObject {
     * @param value the value to be added
     * @returns the current updated matrix
     */
-  def addAtIndex(index: Double, value: Double): Matrix = js.native
+  def addAtIndex(index: Double, value: Double): this.type = js.native
   
   /**
     * Sets the given matrix "result" to the addition of the current matrix and the given one
     * @param other defines the matrix to add
     * @param result defines the target matrix
-    * @returns the current matrix
+    * @returns result input
     */
-  def addToRef(other: DeepImmutable[Matrix], result: Matrix): Matrix = js.native
+  def addToRef[T /* <: Matrix */](other: DeepImmutable[Matrix], result: T): T = js.native
   
   /**
     * Adds in place the given matrix to the current matrix
     * @param other defines the second operand
     * @returns the current updated matrix
     */
-  def addToSelf(other: DeepImmutable[Matrix]): Matrix = js.native
+  def addToSelf(other: DeepImmutable[Matrix]): this.type = js.native
   
   /**
     * Adds the translation vector (using 3 floats) in the current matrix
@@ -56,7 +56,7 @@ trait Matrix extends StObject {
     * @param z defines the 3rd component of the translation
     * @returns the current updated matrix
     */
-  def addTranslationFromFloats(x: Double, y: Double, z: Double): Matrix = js.native
+  def addTranslationFromFloats(x: Double, y: Double, z: Double): this.type = js.native
   
   /**
     * Returns the matrix as a Float32Array or Array<number>
@@ -69,18 +69,18 @@ trait Matrix extends StObject {
     * @param other defines the source matrix
     * @returns the current updated matrix
     */
-  def copyFrom(other: DeepImmutable[Matrix]): Matrix = js.native
+  def copyFrom(other: DeepImmutable[Matrix]): this.type = js.native
   
-  def copyToArray(array: js.Array[Double]): Matrix = js.native
-  def copyToArray(array: js.Array[Double], offset: Double): Matrix = js.native
+  def copyToArray(array: js.Array[Double]): this.type = js.native
+  def copyToArray(array: js.Array[Double], offset: Double): this.type = js.native
   /**
     * Populates the given array from the starting index with the current matrix values
     * @param array defines the target array
     * @param offset defines the offset in the target array where to start storing values
     * @returns the current matrix
     */
-  def copyToArray(array: js.typedarray.Float32Array): Matrix = js.native
-  def copyToArray(array: js.typedarray.Float32Array, offset: Double): Matrix = js.native
+  def copyToArray(array: js.typedarray.Float32Array): this.type = js.native
+  def copyToArray(array: js.typedarray.Float32Array, offset: Double): this.type = js.native
   
   /**
     * Decomposes the current Matrix into a translation, rotation and scaling components
@@ -143,14 +143,14 @@ trait Matrix extends StObject {
     * Gets only rotation part of the current matrix
     * @returns a new matrix sets to the extracted rotation matrix from the current one
     */
-  def getRotationMatrix(): Matrix = js.native
+  def getRotationMatrix(): this.type = js.native
   
   /**
     * Extracts the rotation matrix from the current one and sets it as the given "result"
     * @param result defines the target matrix to store data to
-    * @returns the current matrix
+    * @returns result input
     */
-  def getRotationMatrixToRef(result: Matrix): Matrix = js.native
+  def getRotationMatrixToRef[T /* <: Matrix */](result: T): T = js.native
   
   /**
     * Gets specific row of the matrix
@@ -163,9 +163,9 @@ trait Matrix extends StObject {
     * Gets specific row of the matrix to ref
     * @param index defines the number of the row to get
     * @param rowVector vector to store the index-th row of the current matrix
-    * @returns the current matrix
+    * @returns result input
     */
-  def getRowToRef(index: Double, rowVector: Vector4): Matrix = js.native
+  def getRowToRef[T /* <: Vector4 */](index: Double, rowVector: T): T = js.native
   
   /**
     * Gets the translation value of the current matrix
@@ -178,20 +178,20 @@ trait Matrix extends StObject {
     * @param result defines the Vector3 where to store the translation
     * @returns the current matrix
     */
-  def getTranslationToRef(result: Vector3): Matrix = js.native
+  def getTranslationToRef[T /* <: Vector3 */](result: T): T = js.native
   
   /**
     * Inverts the current matrix in place
     * @returns the current inverted matrix
     */
-  def invert(): Matrix = js.native
+  def invert(): this.type = js.native
   
   /**
     * Sets the given matrix to the current inverted Matrix
     * @param other defines the target matrix
-    * @returns the unmodified current matrix
+    * @returns result input
     */
-  def invertToRef(other: Matrix): Matrix = js.native
+  def invertToRef[T /* <: Matrix */](other: T): T = js.native
   
   /**
     * Check if the current matrix is identity
@@ -220,7 +220,7 @@ trait Matrix extends StObject {
     * @param other defines the second operand
     * @returns a new matrix set with the multiplication result of the current Matrix and the given one
     */
-  def multiply(other: DeepImmutable[Matrix]): Matrix = js.native
+  def multiply(other: DeepImmutable[Matrix]): this.type = js.native
   
   /**
     * mutiply the specified position in the current Matrix by a value
@@ -228,9 +228,9 @@ trait Matrix extends StObject {
     * @param value the value to be added
     * @returns the current updated matrix
     */
-  def multiplyAtIndex(index: Double, value: Double): Matrix = js.native
+  def multiplyAtIndex(index: Double, value: Double): this.type = js.native
   
-  def multiplyToArray(other: DeepImmutable[Matrix], result: js.Array[Double], offset: Double): Matrix = js.native
+  def multiplyToArray(other: DeepImmutable[Matrix], result: js.Array[Double], offset: Double): this.type = js.native
   /**
     * Sets the Float32Array "result" from the given index "offset" with the multiplication of the current matrix and the given one
     * @param other defines the second operand
@@ -238,50 +238,50 @@ trait Matrix extends StObject {
     * @param offset defines the offset in the target array where to start storing values
     * @returns the current matrix
     */
-  def multiplyToArray(other: DeepImmutable[Matrix], result: js.typedarray.Float32Array, offset: Double): Matrix = js.native
+  def multiplyToArray(other: DeepImmutable[Matrix], result: js.typedarray.Float32Array, offset: Double): this.type = js.native
   
   /**
     * Sets the given matrix "result" with the multiplication result of the current Matrix and the given one
     * @param other defines the second operand
     * @param result defines the matrix where to store the multiplication
-    * @returns the current matrix
+    * @returns result input
     */
-  def multiplyToRef(other: DeepImmutable[Matrix], result: Matrix): Matrix = js.native
+  def multiplyToRef[T /* <: Matrix */](other: DeepImmutable[Matrix], result: T): T = js.native
   
   /**
     * Remove rotation and scaling part from the matrix
     * @returns the updated matrix
     */
-  def removeRotationAndScaling(): Matrix = js.native
+  def removeRotationAndScaling(): this.type = js.native
   
   /**
     * Sets all the matrix elements to zero
     * @returns the current matrix
     */
-  def reset(): Matrix = js.native
+  def reset(): this.type = js.native
   
   /**
     * Compute a new matrix set with the current matrix values multiplied by scale (float)
     * @param scale defines the scale factor
     * @returns a new matrix
     */
-  def scale(scale: Double): Matrix = js.native
+  def scale(scale: Double): this.type = js.native
   
   /**
     * Scale the current matrix values by a factor and add the result to a given matrix
     * @param scale defines the scale factor
     * @param result defines the Matrix to store the result
-    * @returns the current matrix
+    * @returns result input
     */
-  def scaleAndAddToRef(scale: Double, result: Matrix): Matrix = js.native
+  def scaleAndAddToRef[T /* <: Matrix */](scale: Double, result: T): T = js.native
   
   /**
     * Scale the current matrix values by a factor to a given result matrix
     * @param scale defines the scale factor
     * @param result defines the matrix to store the result
-    * @returns the current matrix
+    * @returns result input
     */
-  def scaleToRef(scale: Double, result: Matrix): Matrix = js.native
+  def scaleToRef[T /* <: Matrix */](scale: Double, result: T): T = js.native
   
   /**
     * Sets the index-th row of the current matrix to the vector4 values
@@ -289,7 +289,7 @@ trait Matrix extends StObject {
     * @param row defines the target vector4
     * @returns the updated current matrix
     */
-  def setRow(index: Double, row: Vector4): Matrix = js.native
+  def setRow(index: Double, row: Vector4): this.type = js.native
   
   /**
     * Sets the index-th row of the current matrix with the given 4 x float values
@@ -300,14 +300,14 @@ trait Matrix extends StObject {
     * @param w defines the w component to set
     * @returns the updated current matrix
     */
-  def setRowFromFloats(index: Double, x: Double, y: Double, z: Double, w: Double): Matrix = js.native
+  def setRowFromFloats(index: Double, x: Double, y: Double, z: Double, w: Double): this.type = js.native
   
   /**
     * Inserts the translation vector in the current matrix
     * @param vector3 defines the translation to insert
     * @returns the current updated matrix
     */
-  def setTranslation(vector3: DeepImmutable[Vector3]): Matrix = js.native
+  def setTranslation(vector3: DeepImmutable[Vector3]): this.type = js.native
   
   /**
     * Inserts the translation vector (using 3 floats) in the current matrix
@@ -316,7 +316,7 @@ trait Matrix extends StObject {
     * @param z defines the 3rd component of the translation
     * @returns the current updated matrix
     */
-  def setTranslationFromFloats(x: Double, y: Double, z: Double): Matrix = js.native
+  def setTranslationFromFloats(x: Double, y: Double, z: Double): this.type = js.native
   
   /**
     * Returns the matrix as a Float32Array or Array<number>
@@ -328,30 +328,30 @@ trait Matrix extends StObject {
     * Writes to the given matrix a normal matrix, computed from this one (using values from identity matrix for fourth row and column).
     * @param ref matrix to store the result
     */
-  def toNormalMatrix(ref: Matrix): Unit = js.native
+  def toNormalMatrix[T /* <: Matrix */](ref: T): T = js.native
   
   /**
     * Toggles model matrix from being right handed to left handed in place and vice versa
     */
-  def toggleModelMatrixHandInPlace(): Unit = js.native
+  def toggleModelMatrixHandInPlace(): this.type = js.native
   
   /**
     * Toggles projection matrix from being right handed to left handed in place and vice versa
     */
-  def toggleProjectionMatrixHandInPlace(): Unit = js.native
+  def toggleProjectionMatrixHandInPlace(): this.type = js.native
   
   /**
     * Compute the transpose of the matrix
     * @returns the new transposed matrix
     */
-  def transpose(): Matrix = js.native
+  def transpose(): this.type = js.native
   
   /**
     * Compute the transpose of the matrix and store it in a given matrix
     * @param result defines the target matrix
-    * @returns the current matrix
+    * @returns result input
     */
-  def transposeToRef(result: Matrix): Matrix = js.native
+  def transposeToRef[T /* <: Matrix */](result: T): T = js.native
   
   /**
     * Gets the update flag of the matrix which is an unique number for the matrix.

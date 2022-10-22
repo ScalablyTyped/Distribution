@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/shared-ini-file-loader" : "3.190.0"
+      "@aws-sdk/shared-ini-file-loader" : "3.193.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/shared-ini-file-loader" : "3.190.0"
+      "@aws-sdk/shared-ini-file-loader" : "3.193.0"
     }
   ],
   "compile-devDependencies" : [

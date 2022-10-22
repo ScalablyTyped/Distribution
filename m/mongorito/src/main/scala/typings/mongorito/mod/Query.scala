@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongorito", "Query")
 @js.native
-class Query () extends MQuery {
+open class Query () extends MQuery {
   
   var Model: ModelClass = js.native
   

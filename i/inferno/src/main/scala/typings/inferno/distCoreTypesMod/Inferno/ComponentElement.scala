@@ -1,6 +1,7 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
 import typings.inferno.distCoreTypesMod.IComponent
+import typings.inferno.distCoreTypesMod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ object ComponentElement {
   
   extension [Self <: ComponentElement[?, ?], P, T /* <: IComponent[P, ComponentState] */](x: Self & (ComponentElement[P, T])) {
     
-    inline def setRef(value: Ref[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefFunction1(value: /* instance */ T | Null => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: /* instance */ T | Null => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     

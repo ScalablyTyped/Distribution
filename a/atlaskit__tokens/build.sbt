@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__tokens"
-version := "0.10.24-2c2d58"
+version := "0.10.27-a0538b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

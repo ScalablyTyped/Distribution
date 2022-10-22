@@ -10,6 +10,7 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.anon.Friction
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.left
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.right
 import typings.std.Record
@@ -81,6 +82,7 @@ object libTypescriptComponentsSwipeableMod {
     - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetY
     - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.children
     - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityX
+    - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect
     - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocity
     - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onEnded
     - typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.enabled
@@ -160,6 +162,8 @@ object libTypescriptComponentsSwipeableMod {
     inline def simultaneousHandlers: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers = "simultaneousHandlers".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers]
     
     inline def testID: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.testID = "testID".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.testID]
+    
+    inline def userSelect: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect = "userSelect".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect]
     
     inline def waitFor: typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor = "waitFor".asInstanceOf[typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor]
   }
@@ -366,6 +370,8 @@ object libTypescriptComponentsSwipeableMod {
     var testID: js.UndefOr[String] = js.undefined
     
     var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
+    
+    var userSelect: js.UndefOr[UserSelect] = js.undefined
     
     var waitFor: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
   }
@@ -583,6 +589,10 @@ object libTypescriptComponentsSwipeableMod {
       inline def setUseNativeAnimations(value: Boolean): Self = StObject.set(x, "useNativeAnimations", value.asInstanceOf[js.Any])
       
       inline def setUseNativeAnimationsUndefined: Self = StObject.set(x, "useNativeAnimations", js.undefined)
+      
+      inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+      
+      inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
       
       inline def setWaitFor(value: Ref[Any] | js.Array[Ref[Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
       

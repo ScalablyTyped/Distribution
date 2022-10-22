@@ -4,6 +4,7 @@ import typings.jose.distTypesTypesMod.FlattenedJWSInput
 import typings.jose.distTypesTypesMod.GetKeyFunction
 import typings.jose.distTypesTypesMod.JWSHeaderParameters
 import typings.std.Record
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,10 @@ object distTypesJwksRemoteMod {
       */
     var agent: js.UndefOr[Any] = js.undefined
     
-    /** Maximum time (in milliseconds) between successful HTTP requests. Default is 600000 (10 minutes). */
+    /**
+      * Maximum time (in milliseconds) between successful HTTP requests. Default is 600000 (10
+      * minutes).
+      */
     var cacheMaxAge: js.UndefOr[Double] = js.undefined
     
     /**
@@ -75,23 +79,6 @@ object distTypesJwksRemoteMod {
       inline def setTimeoutDuration(value: Double): Self = StObject.set(x, "timeoutDuration", value.asInstanceOf[js.Any])
       
       inline def setTimeoutDurationUndefined: Self = StObject.set(x, "timeoutDuration", js.undefined)
-    }
-  }
-  
-  trait URL extends StObject {
-    
-    var href: String
-  }
-  object URL {
-    
-    inline def apply(href: String): URL = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
-      __obj.asInstanceOf[URL]
-    }
-    
-    extension [Self <: URL](x: Self) {
-      
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
   }
 }

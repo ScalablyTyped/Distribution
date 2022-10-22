@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-appsflyer"
-version := "6.9.1-cd1635"
+version := "6.9.2-f4d0b7"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

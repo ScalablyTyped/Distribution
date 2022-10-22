@@ -8,13 +8,13 @@ trait OptionHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String | Null] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.undefined
+  var selected: js.UndefOr[Boolean | Null] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+  var value: js.UndefOr[String | js.Array[String] | Double | Null] = js.undefined
 }
 object OptionHTMLAttributes {
   
@@ -27,17 +27,25 @@ object OptionHTMLAttributes {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
+    
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
+    inline def setSelectedNull: Self = StObject.set(x, "selected", null)
+    
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

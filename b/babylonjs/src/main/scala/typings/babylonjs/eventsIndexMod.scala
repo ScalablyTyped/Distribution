@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
 import typings.babylonjs.eventsDeviceInputEventsMod.IKeyboardEvent
 import typings.babylonjs.eventsDeviceInputEventsMod.IMouseEvent
+import typings.babylonjs.inputsSceneDotinputManagerMod.InputManager
 import typings.babylonjs.typesMod.Nullable
 import typings.std.ClipboardEvent
 import org.scalablytyped.runtime.StObject
@@ -256,15 +257,15 @@ object eventsIndexMod {
       * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
       * @param type Defines the type of event (PointerEventTypes)
       * @param event Defines the related dom event
-      * @param pickInfo Defines the picking info associated to the info (if any)\
+      * @param pickInfo Defines the picking info associated to the info (if any)
+      * @param inputManager Defines the InputManager to use if there is no pickInfo
       */
+    def this(`type`: Double, event: IMouseEvent, pickInfo: Nullable[PickingInfo]) = this()
     def this(
       `type`: Double,
       event: IMouseEvent,
-      /**
-      * Defines the picking info associated to the info (if any)\
-      */
-    pickInfo: Nullable[PickingInfo]
+      pickInfo: Nullable[PickingInfo],
+      inputManager: Nullable[InputManager]
     ) = this()
   }
   

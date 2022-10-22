@@ -10,5 +10,8 @@ trait ForwardRef[P, T]
   extends StObject
      with StatelessComponent[P] {
   
-  var ref: Ref[T] = js.native
+  def ref(): Any = js.native
+  def ref(instance: T): Any = js.native
+  @JSName("ref")
+  var ref_Original: Ref[T] = js.native
 }

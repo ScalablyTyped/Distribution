@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-sourcemaps"
-version := "0.6.3-b65907"
+version := "0.6.3-d671d8"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-9389e9",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "rollup" % "3.2.3-eed8d7",
   "org.scalablytyped" %%% "rollup__pluginutils" % "4.2.1-420ef5",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")

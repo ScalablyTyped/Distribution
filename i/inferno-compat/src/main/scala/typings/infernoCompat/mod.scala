@@ -27,6 +27,7 @@ import typings.infernoCompat.anon.FnCallFlagsTypePropsKeyRef
 import typings.infernoCompat.anon.FnCallInputParentDOMCallback
 import typings.infernoCompat.anon.FnCallObj
 import typings.infernoCompat.anon.FnCallParentDOM
+import typings.infernoCompat.anon.FnCallRef
 import typings.infernoCompat.anon.FnCallRender
 import typings.infernoCompat.anon.FnCallTextKey
 import typings.infernoCompat.anon.FnCallTypePropsChildren
@@ -446,9 +447,11 @@ object mod {
     
     @JSImport("inferno-compat", "default.findDOMNode")
     @js.native
-    def findDOMNode: js.Function1[/* ref */ Any, Any] = js.native
-    inline def findDOMNode(ref: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Any]
-    inline def findDOMNode_=(x: js.Function1[/* ref */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findDOMNode")(x.asInstanceOf[js.Any])
+    def findDOMNode: FnCallRef = js.native
+    inline def findDOMNode(ref: VNode): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+    inline def findDOMNode(ref: typings.inferno.mod.Component[js.Object, js.Object]): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+    inline def findDOMNode(ref: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+    inline def findDOMNode_=(x: FnCallRef): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findDOMNode")(x.asInstanceOf[js.Any])
     
     @JSImport("inferno-compat", "default.forwardRef")
     @js.native
@@ -564,7 +567,7 @@ object mod {
     inline def toArray(children: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   }
   
-  @JSImport("inferno-compat", "Component")
+  /* note: abstract class */ @JSImport("inferno-compat", "Component")
   @js.native
   open class Component[P, S] ()
     extends typings.inferno.mod.Component[P, S] {
@@ -581,8 +584,8 @@ object mod {
     
     @JSImport("inferno-compat", "Component.defaultProps")
     @js.native
-    def defaultProps: js.UndefOr[js.Object] = js.native
-    inline def defaultProps_=(x: js.UndefOr[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: js.UndefOr[js.Object | Null] = js.native
+    inline def defaultProps_=(x: js.UndefOr[js.Object | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("inferno-compat", "Component.getDerivedStateFromProps")
     @js.native
@@ -679,7 +682,7 @@ object mod {
     inline def symbol_FPropTypes_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbol")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("inferno-compat", "PureComponent")
+  /* note: abstract class */ @JSImport("inferno-compat", "PureComponent")
   @js.native
   open class PureComponent[P, S] ()
     extends typings.inferno.mod.Component[P, S] {
@@ -864,7 +867,9 @@ object mod {
   
   inline def findDOMFromVNode(vNode: VNode, startEdge: Boolean): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findDOMFromVNode")(vNode.asInstanceOf[js.Any], startEdge.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
   
-  inline def findDOMNode(ref: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def findDOMNode(ref: VNode): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  inline def findDOMNode(ref: typings.inferno.mod.Component[js.Object, js.Object]): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  inline def findDOMNode(ref: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(ref.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
   
   inline def forwardRef[T, P](
     render: js.Function2[/* props */ ReadonlychildrenInfernoNo & P, /* ref */ RefObject[T], InfernoNode]

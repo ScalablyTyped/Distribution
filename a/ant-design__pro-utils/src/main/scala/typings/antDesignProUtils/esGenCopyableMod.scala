@@ -13,5 +13,5 @@ object esGenCopyableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def genCopyable(dom: ReactNode, item: Any, text: String): js.UndefOr[String | Double | Boolean | ReactFragment | Element | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("genCopyable")(dom.asInstanceOf[js.Any], item.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double | Boolean | ReactFragment | Element | Null]]
+  inline def genCopyable(dom: ReactNode, item: Any, text: String): js.UndefOr[String | Double | Boolean | Element | ReactFragment | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("genCopyable")(dom.asInstanceOf[js.Any], item.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Double | Boolean | Element | ReactFragment | Null]]
 }

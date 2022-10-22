@@ -1,6 +1,5 @@
 package typings.antDesignProUtils.anon
 
-import typings.antDesignProUtils.antDesignProUtilsStrings.Array
 import typings.antDesignProUtils.antDesignProUtilsStrings.Map
 import typings.antDesignProUtils.esUseEditableArrayMod.AddLineOptions
 import typings.antDesignProUtils.esUseEditableArrayMod.NewLineConfig
@@ -29,7 +28,7 @@ trait ActionRenderConfiganyNewL extends StObject {
   
   var editableKeys: js.UndefOr[js.Array[Key]] = js.undefined
   
-  var editorType: js.UndefOr[Array | Map] = js.undefined
+  var editorType: js.UndefOr[typings.antDesignProUtils.antDesignProUtilsStrings.Array | Map] = js.undefined
   
   var index: js.UndefOr[Double] = js.undefined
   
@@ -109,7 +108,7 @@ object ActionRenderConfiganyNewL {
     
     inline def setEditableKeysVarargs(value: Key*): Self = StObject.set(x, "editableKeys", js.Array(value*))
     
-    inline def setEditorType(value: Array | Map): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
+    inline def setEditorType(value: typings.antDesignProUtils.antDesignProUtilsStrings.Array | Map): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
     
     inline def setEditorTypeUndefined: Self = StObject.set(x, "editorType", js.undefined)
     

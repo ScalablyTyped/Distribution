@@ -5,6 +5,7 @@ import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetFederationTokenRespo
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientResolvedConfig
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceInputTypes
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceOutputTypes
+import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.mod.Command
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesMiddlewareMod.Handler
@@ -44,6 +45,15 @@ object distTypesCommandsGetFederationTokenCommandMod {
     ): Handler[GetFederationTokenCommandInput, GetFederationTokenCommandOutput] = js.native
     
     /* private */ var serialize: Any = js.native
+  }
+  /* static members */
+  object GetFederationTokenCommand {
+    
+    @JSImport("@aws-sdk/client-sts/dist-types/commands/GetFederationTokenCommand", "GetFederationTokenCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
   type GetFederationTokenCommandInput = GetFederationTokenRequest

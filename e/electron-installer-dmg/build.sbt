@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "electron-installer-dmg"
-version := "3.0-dt-20211216Z-96e625"
+version := "3.0-dt-20211216Z-2a4a87"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "appdmg" % "0.5-dt-20211202Z-06c77e",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "appdmg" % "0.5-dt-20211202Z-97b920",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

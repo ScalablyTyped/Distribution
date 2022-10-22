@@ -21,7 +21,7 @@ open class PrivateKey protected () extends StObject {
   
   def createDiffieHellman(): DiffieHellman = js.native
   
-  def createSign(hashAlgo: AlgorithmType): Signer = js.native
+  def createSign(hashAlgo: AlgorithmHashType): Signer = js.native
   
   def createVerify(): Verify = js.native
   def createVerify(algo: AlgorithmHashType): Verify = js.native

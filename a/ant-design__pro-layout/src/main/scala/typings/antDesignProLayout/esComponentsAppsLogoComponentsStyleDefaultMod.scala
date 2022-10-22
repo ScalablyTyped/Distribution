@@ -2,7 +2,7 @@ package typings.antDesignProLayout
 
 import typings.antDesignCssinjs.esHooksUseStyleRegisterMod.CSSInterpolation
 import typings.antDesignProLayout.esComponentsAppsLogoComponentsStyleMod.AppsLogoComponentsToken
-import typings.antDesignProUtils.esUseStyleMod.GenerateStyle
+import typings.antDesignProProvider.esUseStyleMod.GenerateStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

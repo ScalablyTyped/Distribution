@@ -12,31 +12,31 @@ object libUseCookieStateMod {
   val ^ : js.Any = js.native
   
   inline def default(cookieKey: String): js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cookieKey.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
   ]]
   inline def default(cookieKey: String, options: Options): js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cookieKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]

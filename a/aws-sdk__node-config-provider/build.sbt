@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__node-config-provider"
-version := "3.190.0-29948d"
+version := "3.193.0-f96a31"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.190.0-65cff8",
-  "org.scalablytyped" %%% "aws-sdk__types" % "3.190.0-49d0ee",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "aws-sdk__shared-ini-file-loader" % "3.193.0-34ba1a",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.193.0-dc0323",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

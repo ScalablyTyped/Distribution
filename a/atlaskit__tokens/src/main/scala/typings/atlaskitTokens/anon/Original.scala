@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Original extends StObject {
   
-  var attributes: Deprecated
+  var attributes: Deleted
   
   var filePath: String
   
@@ -14,7 +14,7 @@ trait Original extends StObject {
   
   var name: String
   
-  var original: AttributesDeprecated
+  var original: AttributesDeleted
   
   var path: js.Array[String]
   
@@ -23,11 +23,11 @@ trait Original extends StObject {
 object Original {
   
   inline def apply(
-    attributes: Deprecated,
+    attributes: Deleted,
     filePath: String,
     isSource: Boolean,
     name: String,
-    original: AttributesDeprecated,
+    original: AttributesDeleted,
     path: js.Array[String],
     value: String
   ): Original = {
@@ -37,7 +37,7 @@ object Original {
   
   extension [Self <: Original](x: Self) {
     
-    inline def setAttributes(value: Deprecated): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Deleted): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
@@ -45,7 +45,7 @@ object Original {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOriginal(value: AttributesDeprecated): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: AttributesDeleted): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,8 @@ trait VerifyOptions
   
   /**
     * A list of accepted JWS "alg" (Algorithm) Header Parameter values. By default all "alg"
-    * (Algorithm) values applicable for the used key/secret are allowed. Note: "none" is never accepted.
+    * (Algorithm) values applicable for the used key/secret are allowed. Note: "none" is never
+    * accepted.
     */
   var algorithms: js.UndefOr[js.Array[String]] = js.undefined
 }

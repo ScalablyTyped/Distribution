@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "schematics__angular"
-version := "14.2.3-56f7fd"
+version := "14.2.3-8c3043"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.0-cccf4d",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.3-8be638",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.3-b08282",
+  "org.scalablytyped" %%% "ajv" % "8.11.0-f4a508",
+  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.3-d4bd42",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.3-60c58f",
   "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-f8f486",
   "org.scalablytyped" %%% "magic-string" % "0.26.7-bd69f8",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "re2" % "1.17.7-fadabd",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-02ab95",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "re2" % "1.17.7-9752ba",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-22ee0d",
   "org.scalablytyped" %%% "source-map" % "0.7.4-942cbd",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uri-js" % "4.4.1-d613cd")

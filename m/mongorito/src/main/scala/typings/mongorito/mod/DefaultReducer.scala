@@ -6,32 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DefaultReducer extends StObject {
   
-  def fields(state: js.Object, action: Action): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
+  def fields(state: js.Object, action: Action): Reducer[Any]
   @JSName("fields")
   var fields_Original: Reducer[js.Object]
   
-  def unset(state: js.Array[String], action: Action): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
+  def unset(state: js.Array[String], action: Action): Reducer[Any]
   @JSName("unset")
   var unset_Original: Reducer[js.Array[String]]
 }
 object DefaultReducer {
   
-  inline def apply(
-    fields: (js.Object, /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object,
-    unset: (js.Array[String], /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
-  ): DefaultReducer = {
-    val __obj = js.Dynamic.literal(fields = js.Any.fromFunction2(fields), unset = js.Any.fromFunction2(unset))
+  inline def apply(fields: Reducer[js.Object], unset: Reducer[js.Array[String]]): DefaultReducer = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], unset = unset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultReducer]
   }
   
   extension [Self <: DefaultReducer](x: Self) {
     
-    inline def setFields(
-      value: (js.Object, /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
-    ): Self = StObject.set(x, "fields", js.Any.fromFunction2(value))
+    inline def setFields(value: Reducer[js.Object]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setUnset(
-      value: (js.Array[String], /* action */ Action) => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer<any> */ js.Object
-    ): Self = StObject.set(x, "unset", js.Any.fromFunction2(value))
+    inline def setUnset(value: Reducer[js.Array[String]]): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
   }
 }

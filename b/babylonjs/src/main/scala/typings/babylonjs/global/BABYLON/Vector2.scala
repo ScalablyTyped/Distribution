@@ -42,13 +42,13 @@ object Vector2 {
     * @param amount defines the interpolation factor
     * @returns a new Vector2
     */
-  inline def CatmullRom(
-    value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
+  inline def CatmullRom[T /* <: typings.babylonjs.BABYLON.Vector2 */](
+    value1: DeepImmutable[T],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value3: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value4: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     amount: Double
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("CatmullRom")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], value3.asInstanceOf[js.Any], value4.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("CatmullRom")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], value3.asInstanceOf[js.Any], value4.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets a new Vector2 located at the center of the vectors "value1" and "value2"
@@ -58,10 +58,7 @@ object Vector2 {
     * @param value2 defines second vector
     * @returns a new Vector2
     */
-  inline def Center(
-    value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Center[T /* <: typings.babylonjs.BABYLON.Vector2 */](value1: DeepImmutable[T], value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets the center of the vectors "value1" and "value2" and stores the result in the vector "ref"
@@ -71,11 +68,11 @@ object Vector2 {
     * @param ref defines third vector
     * @returns ref
     */
-  inline def CenterToRef(
+  inline def CenterToRef[T /* <: typings.babylonjs.BABYLON.Vector2 */](
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    ref: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+    ref: T
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a new Vector2 set with same the coordinates than "value" ones if the vector "value" is in the square defined by "min" and "max".
@@ -87,11 +84,11 @@ object Vector2 {
     * @param max defines the upper limit
     * @returns a new Vector2
     */
-  inline def Clamp(
-    value: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
+  inline def Clamp[T /* <: typings.babylonjs.BABYLON.Vector2 */](
+    value: DeepImmutable[T],
     min: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     max: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets the distance between the vectors "value1" and "value2"
@@ -159,8 +156,9 @@ object Vector2 {
     * @param array defines the data source
     * @param offset defines the offset in the data source
     * @param result defines the target vector
+    * @returns result input
     */
-  inline def FromArrayToRef(array: DeepImmutable[ArrayLike[Double]], offset: Double, result: typings.babylonjs.BABYLON.Vector2): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def FromArrayToRef[T /* <: typings.babylonjs.BABYLON.Vector2 */](array: DeepImmutable[ArrayLike[Double]], offset: Double, result: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a new Vector2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2"
@@ -172,13 +170,13 @@ object Vector2 {
     * @param amount defines the interpolation factor
     * @returns a new Vector2
     */
-  inline def Hermite(
-    value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
+  inline def Hermite[T /* <: typings.babylonjs.BABYLON.Vector2 */](
+    value1: DeepImmutable[T],
     tangent1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     tangent2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     amount: Double
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a new Vector2 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
@@ -190,13 +188,13 @@ object Vector2 {
     * @param time define where the derivative must be done
     * @returns 1st derivative
     */
-  inline def Hermite1stDerivative(
-    value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
+  inline def Hermite1stDerivative[T /* <: typings.babylonjs.BABYLON.Vector2 */](
+    value1: DeepImmutable[T],
     tangent1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     tangent2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     time: Double
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a new Vector2 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
@@ -207,15 +205,16 @@ object Vector2 {
     * @param tangent2 defines the second tangent
     * @param time define where the derivative must be done
     * @param result define where the derivative will be stored
+    * @returns result input
     */
-  inline def Hermite1stDerivativeToRef(
+  inline def Hermite1stDerivativeToRef[T /* <: typings.babylonjs.BABYLON.Vector2 */](
     value1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     tangent1: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     value2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     tangent2: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     time: Double,
-    result: typings.babylonjs.BABYLON.Vector2
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    result: T
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a new Vector2 located for "amount" (float) on the linear interpolation between the vector "start" adn the vector "end".
@@ -225,11 +224,7 @@ object Vector2 {
     * @param amount defines the interpolation factor
     * @returns a new Vector2
     */
-  inline def Lerp(
-    start: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    end: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    amount: Double
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Lerp[T /* <: typings.babylonjs.BABYLON.Vector2 */](start: DeepImmutable[T], end: DeepImmutable[typings.babylonjs.BABYLON.Vector2], amount: Double): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
   
   /**
     * Gets a new Vector2 set with the maximal coordinate values from the "left" and "right" vectors
@@ -238,10 +233,7 @@ object Vector2 {
     * @param right defines 2nd vector
     * @returns a new Vector2
     */
-  inline def Maximize(
-    left: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Maximize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Maximize[T /* <: typings.babylonjs.BABYLON.Vector2 */](left: DeepImmutable[T], right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Maximize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets a new Vector2 set with the minimal coordinate values from the "left" and "right" vectors
@@ -250,10 +242,7 @@ object Vector2 {
     * @param right defines 2nd vector
     * @returns a new Vector2
     */
-  inline def Minimize(
-    left: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Minimize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Minimize[T /* <: typings.babylonjs.BABYLON.Vector2 */](left: DeepImmutable[T], right: DeepImmutable[typings.babylonjs.BABYLON.Vector2]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Minimize")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Returns a new Vector2 equal to the normalized given vector
@@ -261,18 +250,16 @@ object Vector2 {
     * @param vector defines the vector to normalize
     * @returns a new Vector2
     */
-  inline def Normalize(vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2]): typings.babylonjs.BABYLON.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Normalize[T /* <: typings.babylonjs.BABYLON.Vector2 */](vector: DeepImmutable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Normalize a given vector into a second one
     * Example Playground https://playground.babylonjs.com/#QYBWV4#50
     * @param vector defines the vector to normalize
     * @param result defines the vector where to store the result
+    * @returns result input
     */
-  inline def NormalizeToRef(
-    vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    result: typings.babylonjs.BABYLON.Vector2
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeToRef")(vector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def NormalizeToRef[T /* <: typings.babylonjs.BABYLON.Vector2 */](vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2], result: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeToRef")(vector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets a new Vector2(1, 1)
@@ -303,10 +290,7 @@ object Vector2 {
     * @param transformation defines the matrix to apply
     * @returns a new Vector2
     */
-  inline def Transform(
-    vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
-    transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix]
-  ): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Transform[T /* <: typings.babylonjs.BABYLON.Vector2 */](vector: DeepImmutable[T], transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Transform")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Transforms the given vector coordinates by the given transformation matrix and stores the result in the vector "result" coordinates
@@ -314,12 +298,13 @@ object Vector2 {
     * @param vector defines the vector to transform
     * @param transformation defines the matrix to apply
     * @param result defines the target vector
+    * @returns result input
     */
-  inline def TransformToRef(
+  inline def TransformToRef[T /* <: typings.babylonjs.BABYLON.Vector2 */](
     vector: DeepImmutable[typings.babylonjs.BABYLON.Vector2],
     transformation: DeepImmutable[typings.babylonjs.BABYLON.Matrix],
-    result: typings.babylonjs.BABYLON.Vector2
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    result: T
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("TransformToRef")(vector.asInstanceOf[js.Any], transformation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets a new Vector2(0, 0)

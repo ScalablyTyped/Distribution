@@ -10,8 +10,8 @@ trait DetailedInfernoHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLEleme
      with DOMElement[P, T]
 object DetailedInfernoHTMLElement {
   
-  inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](props: P, ref: Ref[T], `type`: String): DetailedInfernoHTMLElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], key = null)
+  inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](props: P, ref: /* instance */ T | Null => Any, `type`: String): DetailedInfernoHTMLElement[P, T] = {
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref), key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedInfernoHTMLElement[P, T]]
   }

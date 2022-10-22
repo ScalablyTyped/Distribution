@@ -8,7 +8,7 @@ trait QuoteHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var cite: js.UndefOr[String] = js.undefined
+  var cite: js.UndefOr[String | Null] = js.undefined
 }
 object QuoteHTMLAttributes {
   
@@ -20,6 +20,8 @@ object QuoteHTMLAttributes {
   extension [Self <: QuoteHTMLAttributes[?], T](x: Self & QuoteHTMLAttributes[T]) {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    
+    inline def setCiteNull: Self = StObject.set(x, "cite", null)
     
     inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
   }

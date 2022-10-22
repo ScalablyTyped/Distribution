@@ -103,7 +103,7 @@ object mod {
     
     /**
       * Apply optimizations to assignment expressions
-      * @default ture
+      * @default true
       */
     var assignments: js.UndefOr[Boolean] = js.undefined
     

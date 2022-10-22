@@ -18,6 +18,7 @@ import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onHand
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldActivateOnStart
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.shouldCancelWhenOutside
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.simultaneousHandlers
+import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.userSelect
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.waitFor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,12 +41,13 @@ object libTypescriptHandlersNativeViewGestureHandlerMod {
   
   @JSImport("react-native-gesture-handler/lib/typescript/handlers/NativeViewGestureHandler", "nativeViewProps")
   @js.native
-  val nativeViewProps: js.Tuple16[
+  val nativeViewProps: js.Tuple17[
     id, 
     enabled, 
     shouldCancelWhenOutside, 
     hitSlop, 
     cancelsTouchesInView, 
+    userSelect, 
     waitFor, 
     simultaneousHandlers, 
     onBegan, 

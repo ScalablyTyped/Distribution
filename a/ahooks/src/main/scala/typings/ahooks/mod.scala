@@ -174,6 +174,7 @@ import typings.ahooks.libUseRequestSrcTypesMod.Plugin
 import typings.ahooks.libUseRequestSrcTypesMod.Result
 import typings.ahooks.libUseResetStateMod.ResetState
 import typings.ahooks.libUseResponsiveMod.ResponsiveConfig
+import typings.ahooks.libUseResponsiveMod.ResponsiveInfo
 import typings.ahooks.libUseScrollMod.Position
 import typings.ahooks.libUseScrollMod.ScrollListenController
 import typings.ahooks.libUseSetStateMod.SetState
@@ -281,31 +282,31 @@ object mod {
   inline def useControllableValue[T](props: StandardProps[T]): js.Tuple2[T, js.Function1[/* v */ SetStateAction[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useControllableValue")(props.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* v */ SetStateAction[T], Unit]]]
   
   inline def useCookieState(cookieKey: String): js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCookieState")(cookieKey.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
   ]]
   inline def useCookieState(cookieKey: String, options: typings.ahooks.libUseCookieStateMod.Options): js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCookieState")(cookieKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-    js.UndefOr[String], 
+    State, 
     js.Function2[
-      /* newValue */ js.UndefOr[String | (js.Function1[/* prevState */ State, State])], 
+      /* newValue */ State | (js.Function1[/* prevState */ State, State]), 
       /* newOptions */ js.UndefOr[CookieAttributes], 
       Unit
     ]
@@ -1277,6 +1278,8 @@ object mod {
   
   inline def useHistoryTravel[T](): Back[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistoryTravel")().asInstanceOf[Back[T]]
   inline def useHistoryTravel[T](initialValue: T): Back[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistoryTravel")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Back[T]]
+  inline def useHistoryTravel[T](initialValue: T, maxLength: Double): Back[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useHistoryTravel")(initialValue.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Back[T]]
+  inline def useHistoryTravel[T](initialValue: Unit, maxLength: Double): Back[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useHistoryTravel")(initialValue.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Back[T]]
   
   inline def useHover(target: BasicTarget[Element]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useHover")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def useHover(target: BasicTarget[Element], options: typings.ahooks.libUseHoverMod.Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useHover")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -1383,7 +1386,7 @@ object mod {
   inline def useResetState[S](initialState: S): js.Tuple3[S, Dispatch[SetStateAction[S]], ResetState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResetState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[S, Dispatch[SetStateAction[S]], ResetState]]
   inline def useResetState[S](initialState: js.Function0[S]): js.Tuple3[S, Dispatch[SetStateAction[S]], ResetState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResetState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[S, Dispatch[SetStateAction[S]], ResetState]]
   
-  inline def useResponsive(): Record[String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsive")().asInstanceOf[Record[String, Boolean]]
+  inline def useResponsive(): ResponsiveInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsive")().asInstanceOf[ResponsiveInfo]
   
   inline def useSafeState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")().asInstanceOf[js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]]]
   inline def useSafeState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]

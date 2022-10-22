@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/prepare" : "6.5.6"
+      "@pixi/prepare" : "6.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/prepare" : "6.5.6"
+      "@pixi/prepare" : "6.5.7"
     }
   ],
   "compile-devDependencies" : [

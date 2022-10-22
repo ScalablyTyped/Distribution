@@ -9,6 +9,8 @@ trait EmailEditorProps extends StObject {
   
   val appearance: js.UndefOr[AppearanceConfig] = js.undefined
   
+  val editorId: js.UndefOr[String] = js.undefined
+  
   val minHeight: js.UndefOr[Double | String] = js.undefined
   
   /** @deprecated Use **onReady** instead */
@@ -19,6 +21,8 @@ trait EmailEditorProps extends StObject {
   val options: js.UndefOr[UnlayerOptions] = js.undefined
   
   val projectId: js.UndefOr[Double] = js.undefined
+  
+  val scriptUrl: js.UndefOr[String] = js.undefined
   
   val style: js.UndefOr[CSSProperties] = js.undefined
   
@@ -36,6 +40,10 @@ object EmailEditorProps {
     inline def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
     inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+    
+    inline def setEditorId(value: String): Self = StObject.set(x, "editorId", value.asInstanceOf[js.Any])
+    
+    inline def setEditorIdUndefined: Self = StObject.set(x, "editorId", js.undefined)
     
     inline def setMinHeight(value: Double | String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
@@ -56,6 +64,10 @@ object EmailEditorProps {
     inline def setProjectId(value: Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    
+    inline def setScriptUrl(value: String): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
+    
+    inline def setScriptUrlUndefined: Self = StObject.set(x, "scriptUrl", js.undefined)
     
     inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

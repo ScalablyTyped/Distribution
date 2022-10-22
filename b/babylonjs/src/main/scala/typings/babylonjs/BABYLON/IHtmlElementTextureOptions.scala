@@ -12,6 +12,11 @@ trait IHtmlElementTextureOptions extends StObject {
   var engine: Nullable[ThinEngine]
   
   /**
+    * Defines the associated texture format.
+    */
+  var format: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Defines whether mip maps should be created or not.
     */
   var generateMipMaps: js.UndefOr[Boolean] = js.undefined
@@ -38,6 +43,10 @@ object IHtmlElementTextureOptions {
     inline def setEngine(value: Nullable[ThinEngine]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     inline def setEngineNull: Self = StObject.set(x, "engine", null)
+    
+    inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     

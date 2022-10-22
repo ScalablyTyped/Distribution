@@ -8,9 +8,9 @@ trait DelHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var cite: js.UndefOr[String] = js.undefined
+  var cite: js.UndefOr[String | Null] = js.undefined
   
-  var dateTime: js.UndefOr[String] = js.undefined
+  var dateTime: js.UndefOr[String | Null] = js.undefined
 }
 object DelHTMLAttributes {
   
@@ -23,9 +23,13 @@ object DelHTMLAttributes {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
+    inline def setCiteNull: Self = StObject.set(x, "cite", null)
+    
     inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
     
     inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    
+    inline def setDateTimeNull: Self = StObject.set(x, "dateTime", null)
     
     inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
   }

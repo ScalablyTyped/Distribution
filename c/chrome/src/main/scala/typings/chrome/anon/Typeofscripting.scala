@@ -2,7 +2,9 @@ package typings.chrome.anon
 
 import typings.chrome.chrome.scripting.Awaited
 import typings.chrome.chrome.scripting.CSSInjection
+import typings.chrome.chrome.scripting.ContentScriptFilter
 import typings.chrome.chrome.scripting.InjectionResult
+import typings.chrome.chrome.scripting.RegisteredContentScript
 import typings.chrome.chrome.scripting.ScriptInjection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,13 +21,39 @@ trait Typeofscripting extends StObject {
   @JSName("executeScript")
   def executeScript_ArgsResult_Unit[Args /* <: js.Array[Any] */, Result](injection: ScriptInjection[Args, Result]): Unit = js.native
   
+  def getRegisteredContentScripts(): Unit = js.native
+  def getRegisteredContentScripts(filter: Unit, callback: js.Function1[/* scripts */ js.Array[RegisteredContentScript], Unit]): Unit = js.native
+  def getRegisteredContentScripts(filter: ContentScriptFilter): Unit = js.native
+  def getRegisteredContentScripts(
+    filter: ContentScriptFilter,
+    callback: js.Function1[/* scripts */ js.Array[RegisteredContentScript], Unit]
+  ): Unit = js.native
+  @JSName("getRegisteredContentScripts")
+  def getRegisteredContentScripts_Promise(): js.Promise[js.Array[RegisteredContentScript]] = js.native
+  @JSName("getRegisteredContentScripts")
+  def getRegisteredContentScripts_Promise(filter: ContentScriptFilter): js.Promise[js.Array[RegisteredContentScript]] = js.native
+  
   def insertCSS(injection: CSSInjection): Unit = js.native
   def insertCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = js.native
   @JSName("insertCSS")
   def insertCSS_Promise(injection: CSSInjection): js.Promise[Unit] = js.native
   
+  def registerContentScripts(scripts: js.Array[RegisteredContentScript]): Unit = js.native
+  def registerContentScripts(scripts: js.Array[RegisteredContentScript], callback: js.Function0[Unit]): Unit = js.native
+  @JSName("registerContentScripts")
+  def registerContentScripts_Promise(scripts: js.Array[RegisteredContentScript]): js.Promise[Unit] = js.native
+  
   def removeCSS(injection: CSSInjection): Unit = js.native
   def removeCSS(injection: CSSInjection, callback: js.Function0[Unit]): Unit = js.native
   @JSName("removeCSS")
   def removeCSS_Promise(injection: CSSInjection): js.Promise[Unit] = js.native
+  
+  def unregisterContentScripts(): Unit = js.native
+  def unregisterContentScripts(filter: Unit, callback: js.Function0[Unit]): Unit = js.native
+  def unregisterContentScripts(filter: ContentScriptFilter): Unit = js.native
+  def unregisterContentScripts(filter: ContentScriptFilter, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("unregisterContentScripts")
+  def unregisterContentScripts_Promise(): js.Promise[Unit] = js.native
+  @JSName("unregisterContentScripts")
+  def unregisterContentScripts_Promise(filter: ContentScriptFilter): js.Promise[Unit] = js.native
 }

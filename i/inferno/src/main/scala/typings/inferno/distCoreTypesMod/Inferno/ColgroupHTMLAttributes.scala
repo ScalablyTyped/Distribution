@@ -8,7 +8,7 @@ trait ColgroupHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var span: js.UndefOr[Double] = js.undefined
+  var span: js.UndefOr[Double | Null] = js.undefined
 }
 object ColgroupHTMLAttributes {
   
@@ -20,6 +20,8 @@ object ColgroupHTMLAttributes {
   extension [Self <: ColgroupHTMLAttributes[?], T](x: Self & ColgroupHTMLAttributes[T]) {
     
     inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    
+    inline def setSpanNull: Self = StObject.set(x, "span", null)
     
     inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
   }

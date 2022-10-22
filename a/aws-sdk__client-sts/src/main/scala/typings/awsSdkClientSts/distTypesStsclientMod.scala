@@ -9,6 +9,7 @@ import typings.awsSdkClientSts.distTypesCommandsGetAccessKeyInfoCommandMod.GetAc
 import typings.awsSdkClientSts.distTypesCommandsGetCallerIdentityCommandMod.GetCallerIdentityCommandInput
 import typings.awsSdkClientSts.distTypesCommandsGetFederationTokenCommandMod.GetFederationTokenCommandInput
 import typings.awsSdkClientSts.distTypesCommandsGetSessionTokenCommandMod.GetSessionTokenCommandInput
+import typings.awsSdkClientSts.distTypesEndpointEndpointParametersMod.EndpointParameters
 import typings.awsSdkProtocolHttp.distTypesHttpHandlerMod.HttpHandler
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4CryptoInit
 import typings.awsSdkSignatureV4.distTypesSignatureV4Mod.SignatureV4Init
@@ -18,6 +19,7 @@ import typings.awsSdkTypes.anon.ForceRefresh
 import typings.awsSdkTypes.distTypesAuthMod.AuthScheme
 import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
 import typings.awsSdkTypes.distTypesHttpMod.Endpoint
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
 import typings.awsSdkTypes.distTypesLoggerMod.Logger
@@ -30,9 +32,6 @@ import typings.awsSdkTypes.distTypesUtilMod.Decoder
 import typings.awsSdkTypes.distTypesUtilMod.Encoder
 import typings.awsSdkTypes.distTypesUtilMod.MemoizedProvider
 import typings.awsSdkTypes.distTypesUtilMod.Provider
-import typings.awsSdkTypes.distTypesUtilMod.RegionInfo
-import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProvider
-import typings.awsSdkTypes.distTypesUtilMod.RegionInfoProviderOptions
 import typings.awsSdkTypes.distTypesUtilMod.RetryStrategy
 import typings.awsSdkTypes.distTypesUtilMod.UrlParser
 import typings.awsSdkTypes.distTypesUtilMod.UserAgent
@@ -110,12 +109,6 @@ object distTypesStsclientMod {
       * The AWS region to which this client will send requests
       */
     var region: js.UndefOr[String | Provider[String]] = js.undefined
-    
-    /**
-      * Fetch related hostname, signing name or signing region with given region.
-      * @internal
-      */
-    var regionInfoProvider: js.UndefOr[RegionInfoProvider] = js.undefined
     
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
@@ -237,12 +230,6 @@ object distTypesStsclientMod {
       
       inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      inline def setRegionInfoProvider(
-        value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
-      ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
-      
-      inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
-      
       inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
       inline def setRequestHandler(value: HttpHandler): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
@@ -299,7 +286,7 @@ object distTypesStsclientMod {
   
   type STSClientConfig = STSClientConfigType
   
-  /* Inlined std.Partial<@aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions>> & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/STSClient.ClientDefaults & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionInputConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsInputConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryInputConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderInputConfig & @aws-sdk/middleware-sdk-sts.@aws-sdk/middleware-sdk-sts.StsAuthInputConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentInputConfig */
+  /* Inlined std.Partial<@aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions>> & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/STSClient.ClientDefaults & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionInputConfig & @aws-sdk/middleware-endpoint.@aws-sdk/middleware-endpoint.EndpointInputConfig<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.EndpointParameters> & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryInputConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderInputConfig & @aws-sdk/middleware-sdk-sts.@aws-sdk/middleware-sdk-sts.StsAuthInputConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentInputConfig & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.ClientInputEndpointParameters */
   trait STSClientConfigType extends StObject {
     
     var apiVersion: js.UndefOr[String] = js.undefined
@@ -359,7 +346,15 @@ object distTypesStsclientMod {
       * The fully qualified endpoint of the webservice. This is only required when using
       * a custom endpoint (for example, when using a local version of S3).
       */
-    var endpoint: js.UndefOr[String | Endpoint | Provider[Endpoint]] = js.undefined
+    var endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | Provider[String]])
+    
+    var endpointProvider: js.UndefOr[
+        js.Function2[
+          /* params */ EndpointParameters, 
+          /* context */ js.UndefOr[typings.awsSdkMiddlewareEndpoint.anon.Logger], 
+          EndpointV2
+        ]
+      ] = js.undefined
     
     /**
       * Optional logger for logging debug/info/warn/error.
@@ -378,12 +373,6 @@ object distTypesStsclientMod {
       * The AWS region to which this client will send requests
       */
     var region: js.UndefOr[String | Provider[String]] = js.undefined
-    
-    /**
-      * Fetch related hostname, signing name or signing region with given region.
-      * @internal
-      */
-    var regionInfoProvider: js.UndefOr[RegionInfoProvider] = js.undefined
     
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
@@ -459,6 +448,7 @@ object distTypesStsclientMod {
     
     /**
       * Whether TLS is enabled for requests.
+      * @deprecated
       */
     var tls: js.UndefOr[Boolean] = js.undefined
     
@@ -478,6 +468,8 @@ object distTypesStsclientMod {
       */
     var useFipsEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.undefined
     
+    var useGlobalEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.undefined
+    
     /**
       * The function that will be used to convert a UTF8-encoded string to a byte array.
       * @internal
@@ -493,9 +485,10 @@ object distTypesStsclientMod {
   object STSClientConfigType {
     
     inline def apply(
+      endpoint: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | Provider[String]]),
       requestHandler: (js.UndefOr[RequestHandler[Any, Any, HttpHandlerOptions]]) & js.UndefOr[HttpHandler]
     ): STSClientConfigType = {
-      val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[STSClientConfigType]
     }
     
@@ -547,11 +540,15 @@ object distTypesStsclientMod {
       
       inline def setDisableHostPrefixUndefined: Self = StObject.set(x, "disableHostPrefix", js.undefined)
       
-      inline def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(
+        value: (js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2]) & (js.UndefOr[String | Provider[String]])
+      ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      inline def setEndpointFunction0(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpointProvider(
+        value: (/* params */ EndpointParameters, /* context */ js.UndefOr[typings.awsSdkMiddlewareEndpoint.anon.Logger]) => EndpointV2
+      ): Self = StObject.set(x, "endpointProvider", js.Any.fromFunction2(value))
       
-      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointProviderUndefined: Self = StObject.set(x, "endpointProvider", js.undefined)
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
@@ -566,12 +563,6 @@ object distTypesStsclientMod {
       inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
       inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
-      
-      inline def setRegionInfoProvider(
-        value: (/* region */ String, /* options */ js.UndefOr[RegionInfoProviderOptions]) => js.Promise[js.UndefOr[RegionInfo]]
-      ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
-      
-      inline def setRegionInfoProviderUndefined: Self = StObject.set(x, "regionInfoProvider", js.undefined)
       
       inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
@@ -647,6 +638,12 @@ object distTypesStsclientMod {
       
       inline def setUseFipsEndpointUndefined: Self = StObject.set(x, "useFipsEndpoint", js.undefined)
       
+      inline def setUseGlobalEndpoint(value: Boolean | Provider[Boolean]): Self = StObject.set(x, "useGlobalEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setUseGlobalEndpointFunction0(value: () => js.Promise[Boolean]): Self = StObject.set(x, "useGlobalEndpoint", js.Any.fromFunction0(value))
+      
+      inline def setUseGlobalEndpointUndefined: Self = StObject.set(x, "useGlobalEndpoint", js.undefined)
+      
       inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
       inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
@@ -659,7 +656,7 @@ object distTypesStsclientMod {
   
   type STSClientResolvedConfig = STSClientResolvedConfigType
   
-  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyResolvedConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions> & std.Required<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/STSClient.ClientDefaults> & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionResolvedConfig & @aws-sdk/config-resolver.@aws-sdk/config-resolver.EndpointsResolvedConfig & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryResolvedConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderResolvedConfig & @aws-sdk/middleware-sdk-sts.@aws-sdk/middleware-sdk-sts.StsAuthResolvedConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentResolvedConfig */
+  /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyResolvedConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions> & std.Required<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/STSClient.ClientDefaults> & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionResolvedConfig & @aws-sdk/middleware-endpoint.@aws-sdk/middleware-endpoint.EndpointResolvedConfig<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.EndpointParameters> & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryResolvedConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderResolvedConfig & @aws-sdk/middleware-sdk-sts.@aws-sdk/middleware-sdk-sts.StsAuthResolvedConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentResolvedConfig & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.ClientResolvedEndpointParameters */
   @js.native
   trait STSClientResolvedConfigType extends StObject {
     
@@ -706,6 +703,8 @@ object distTypesStsclientMod {
       */
     var customUserAgent: js.UndefOr[UserAgent] = js.native
     
+    var defaultSigningName: String = js.native
+    
     def defaultUserAgentProvider(): js.Promise[UserAgent] = js.native
     /**
       * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header.
@@ -720,17 +719,24 @@ object distTypesStsclientMod {
     
     /**
       * Resolved value for input {@link EndpointsInputConfig.endpoint}
+      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead
       */
     def endpoint(): js.Promise[Endpoint] = js.native
+    
+    def endpointProvider(params: EndpointParameters): EndpointV2 = js.native
+    def endpointProvider(params: EndpointParameters, context: typings.awsSdkMiddlewareEndpoint.anon.Logger): EndpointV2 = js.native
+    
     /**
       * Resolved value for input {@link EndpointsInputConfig.endpoint}
+      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead
       */
     @JSName("endpoint")
-    var endpoint_Original: Provider[Endpoint] = js.native
+    var endpoint_Original: Provider[Endpoint] & (js.UndefOr[String | Provider[String]]) = js.native
     
     /**
       * Whether the endpoint is specified by caller.
       * @internal
+      * @deprecated
       */
     var isCustomEndpoint: js.UndefOr[Boolean] = js.native
     
@@ -750,17 +756,11 @@ object distTypesStsclientMod {
       * Resolved value for input config {@link RegionInputConfig.region}
       */
     def region(): js.Promise[String] = js.native
-    
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = js.native
-    def regionInfoProvider(region: String, options: RegionInfoProviderOptions): js.Promise[js.UndefOr[RegionInfo]] = js.native
-    @JSName("regionInfoProvider")
-    var regionInfoProvider_Original: RegionInfoProvider = js.native
-    
     /**
       * Resolved value for input config {@link RegionInputConfig.region}
       */
     @JSName("region")
-    var region_Original: (String | Provider[String]) & Provider[String] = js.native
+    var region_Original: (String | Provider[String]) & Provider[String] & (js.UndefOr[String | Provider[String]]) = js.native
     
     /**
       * The HTTP handler to use. Fetch in browser and Https in Nodejs.
@@ -817,6 +817,10 @@ object distTypesStsclientMod {
       */
     var systemClockOffset: Double = js.native
     
+    /**
+      * Whether TLS is enabled for requests.
+      * @deprecated
+      */
     var tls: Boolean = js.native
     
     def urlParser(url: String): Endpoint = js.native
@@ -832,7 +836,7 @@ object distTypesStsclientMod {
       * Resolved value for input {@link EndpointsInputConfig.useDualstackEndpoint}
       */
     @JSName("useDualstackEndpoint")
-    var useDualstackEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] = js.native
+    var useDualstackEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] & (js.UndefOr[Boolean | Provider[Boolean]]) = js.native
     
     /**
       * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
@@ -841,8 +845,13 @@ object distTypesStsclientMod {
     /**
       * Resolved value for input {@link RegionInputConfig.useFipsEndpoint}
       */
+    /**
+      * Resolved value for input {@link EndpointsInputConfig.useFipsEndpoint}
+      */
     @JSName("useFipsEndpoint")
-    var useFipsEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] = js.native
+    var useFipsEndpoint_Original: (Boolean | Provider[Boolean]) & Provider[Boolean] & (js.UndefOr[Boolean | Provider[Boolean]]) = js.native
+    
+    var useGlobalEndpoint: js.UndefOr[Boolean | Provider[Boolean]] = js.native
     
     def utf8Decoder(input: String): js.typedarray.Uint8Array = js.native
     @JSName("utf8Decoder")

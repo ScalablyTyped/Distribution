@@ -1,8 +1,8 @@
 package typings.antDesignProLayout
 
 import typings.antDesignProLayout.anon.ProLayoutCls
-import typings.antDesignProUtils.esUseStyleMod.ProAliasToken
-import typings.antDesignProUtils.esUseStyleMod.UseStyleResult
+import typings.antDesignProProvider.esUseStyleMod.ProAliasToken
+import typings.antDesignProProvider.esUseStyleMod.UseStyleResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +19,14 @@ object esStyleHeaderMod {
     extends StObject
        with ProAliasToken {
     
-    var ProLayoutHeaderHeaderHeight: Double
-    
     var componentCls: String
     
     var proLayoutCls: String
   }
   object ProLayoutHeaderToken {
     
-    inline def apply(
-      ProAliasToken: ProAliasToken,
-      ProLayoutHeaderHeaderHeight: Double,
-      componentCls: String,
-      proLayoutCls: String
-    ): ProLayoutHeaderToken = {
-      val __obj = js.Dynamic.literal(ProLayoutHeaderHeaderHeight = ProLayoutHeaderHeaderHeight.asInstanceOf[js.Any], componentCls = componentCls.asInstanceOf[js.Any], proLayoutCls = proLayoutCls.asInstanceOf[js.Any])
+    inline def apply(ProAliasToken: ProAliasToken, componentCls: String, proLayoutCls: String): ProLayoutHeaderToken = {
+      val __obj = js.Dynamic.literal(componentCls = componentCls.asInstanceOf[js.Any], proLayoutCls = proLayoutCls.asInstanceOf[js.Any])
       js.Dynamic.global.Object.assign(__obj, ProAliasToken)
       __obj.asInstanceOf[ProLayoutHeaderToken]
     }
@@ -43,8 +36,6 @@ object esStyleHeaderMod {
       inline def setComponentCls(value: String): Self = StObject.set(x, "componentCls", value.asInstanceOf[js.Any])
       
       inline def setProLayoutCls(value: String): Self = StObject.set(x, "proLayoutCls", value.asInstanceOf[js.Any])
-      
-      inline def setProLayoutHeaderHeaderHeight(value: Double): Self = StObject.set(x, "ProLayoutHeaderHeaderHeight", value.asInstanceOf[js.Any])
     }
   }
 }

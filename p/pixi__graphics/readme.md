@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__graphics
 
-Typings are for version 6.5.6
+Typings are for version 6.5.7
 
 ## Library description:
 Draw primitive shapes such as lines, circles and rectangles to the display

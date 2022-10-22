@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipfs-http-gateway"
-version := "0.11.1-aa5628"
+version := "0.11.1-7ce4b9"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,26 +8,26 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-7e747b",
   "org.scalablytyped" %%% "hapi__boom" % "10.0.0-7be43c",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20211202Z-830847",
-  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20221019Z-ba9f16",
-  "org.scalablytyped" %%% "hapi__iron" % "7.0.0-6cdf44",
+  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20221019Z-bc9639",
+  "org.scalablytyped" %%% "hapi__iron" % "7.0.0-571c40",
   "org.scalablytyped" %%% "hapi__mimos" % "7.0.0-b3ec1d",
-  "org.scalablytyped" %%% "hapi__shot" % "6.0.0-294bc2",
-  "org.scalablytyped" %%% "ipfs-core-types" % "0.12.1-47bf06",
+  "org.scalablytyped" %%% "hapi__shot" % "6.0.0-de58ae",
+  "org.scalablytyped" %%% "ipfs-core-types" % "0.12.1-ff0a82",
   "org.scalablytyped" %%% "ipfs-unixfs" % "7.0.0-b7daf9",
   "org.scalablytyped" %%% "ipld__dag-pb" % "2.1.18-5f884b",
   "org.scalablytyped" %%% "it-pushable" % "3.1.0-db3546",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-2bd2ec",
-  "org.scalablytyped" %%% "joi" % "17.6.3-e7f424",
-  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-0ac710",
+  "org.scalablytyped" %%% "joi" % "17.6.3-d2af11",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "3.0.2-788a7b",
   "org.scalablytyped" %%% "libp2p__interface-keychain" % "1.0.3-929ca1",
   "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-122bf3",
-  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-02997f",
-  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "2.1.0-587232",
+  "org.scalablytyped" %%% "libp2p__interface-peer-info" % "1.0.3-2c5f47",
+  "org.scalablytyped" %%% "libp2p__interface-pubsub" % "2.1.0-e66b09",
   "org.scalablytyped" %%% "libp2p__interfaces" % "3.0.3-cbc19e",
   "org.scalablytyped" %%% "libp2p__logger" % "2.0.2-d87814",
   "org.scalablytyped" %%% "multiformats" % "10.0.0-e339c8",
-  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-bb0c13",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "11.0.1-9c49c7",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "uint8arraylist" % "2.3.2-45b6fe")
 publishArtifact in packageDoc := false

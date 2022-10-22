@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DevtoolsProps extends StObject {
   
-  var bridge: FrontendBridge
+  var bridge: js.UndefOr[FrontendBridge] = js.undefined
   
   var browserTheme: js.UndefOr[BrowserTheme] = js.undefined
   
@@ -42,11 +42,13 @@ trait DevtoolsProps extends StObject {
   
   var showTabBar: js.UndefOr[Boolean] = js.undefined
   
-  var store: Store
+  var store: js.UndefOr[Store] = js.undefined
   
   var viewAttributeSourceFunction: js.UndefOr[ViewAttributeSource | Null] = js.undefined
   
   var viewElementSourceFunction: js.UndefOr[ViewElementSource | Null] = js.undefined
+  
+  var viewUrlSourceFunction: js.UndefOr[ViewUrlSourceFunction | Null] = js.undefined
   
   var warnIfLegacyBackendDetected: js.UndefOr[Boolean] = js.undefined
   
@@ -54,14 +56,16 @@ trait DevtoolsProps extends StObject {
 }
 object DevtoolsProps {
   
-  inline def apply(bridge: FrontendBridge, store: Store): DevtoolsProps = {
-    val __obj = js.Dynamic.literal(bridge = bridge.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+  inline def apply(): DevtoolsProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DevtoolsProps]
   }
   
   extension [Self <: DevtoolsProps](x: Self) {
     
     inline def setBridge(value: FrontendBridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
+    
+    inline def setBridgeUndefined: Self = StObject.set(x, "bridge", js.undefined)
     
     inline def setBrowserTheme(value: BrowserTheme): Self = StObject.set(x, "browserTheme", value.asInstanceOf[js.Any])
     
@@ -135,6 +139,8 @@ object DevtoolsProps {
     
     inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    
     inline def setViewAttributeSourceFunction(value: (/* id */ Double, /* path */ js.Array[String | Double]) => Unit): Self = StObject.set(x, "viewAttributeSourceFunction", js.Any.fromFunction2(value))
     
     inline def setViewAttributeSourceFunctionNull: Self = StObject.set(x, "viewAttributeSourceFunction", null)
@@ -146,6 +152,12 @@ object DevtoolsProps {
     inline def setViewElementSourceFunctionNull: Self = StObject.set(x, "viewElementSourceFunction", null)
     
     inline def setViewElementSourceFunctionUndefined: Self = StObject.set(x, "viewElementSourceFunction", js.undefined)
+    
+    inline def setViewUrlSourceFunction(value: (/* url */ String, /* line */ Double, /* col */ Double) => Unit): Self = StObject.set(x, "viewUrlSourceFunction", js.Any.fromFunction3(value))
+    
+    inline def setViewUrlSourceFunctionNull: Self = StObject.set(x, "viewUrlSourceFunction", null)
+    
+    inline def setViewUrlSourceFunctionUndefined: Self = StObject.set(x, "viewUrlSourceFunction", js.undefined)
     
     inline def setWarnIfLegacyBackendDetected(value: Boolean): Self = StObject.set(x, "warnIfLegacyBackendDetected", value.asInstanceOf[js.Any])
     

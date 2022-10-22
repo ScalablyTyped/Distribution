@@ -9,7 +9,7 @@ trait MediumEmphasis[BaseToken] extends StObject {
   
   var highEmphasis: PaintToken[BaseToken]
   
-  var link: `8`[BaseToken]
+  var link: `9`[BaseToken]
   
   var lowEmphasis: PaintToken[BaseToken]
   
@@ -23,7 +23,7 @@ object MediumEmphasis {
   
   inline def apply[BaseToken](
     highEmphasis: PaintToken[BaseToken],
-    link: `8`[BaseToken],
+    link: `9`[BaseToken],
     lowEmphasis: PaintToken[BaseToken],
     mediumEmphasis: PaintToken[BaseToken],
     onBold: PaintToken[BaseToken],
@@ -37,7 +37,7 @@ object MediumEmphasis {
     
     inline def setHighEmphasis(value: PaintToken[BaseToken]): Self = StObject.set(x, "highEmphasis", value.asInstanceOf[js.Any])
     
-    inline def setLink(value: `8`[BaseToken]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: `9`[BaseToken]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     inline def setLowEmphasis(value: PaintToken[BaseToken]): Self = StObject.set(x, "lowEmphasis", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/settings" : "6.5.6"
+      "@pixi/settings" : "6.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/settings" : "6.5.6"
+      "@pixi/settings" : "6.5.7"
     }
   ],
   "compile-devDependencies" : [

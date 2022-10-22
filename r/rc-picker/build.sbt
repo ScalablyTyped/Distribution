@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rc-picker"
-version := "2.6.11-7915ab"
+version := "2.6.11-7c1f12"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "csstype" % "3.1.1-775404",
-  "org.scalablytyped" %%% "dayjs" % "1.11.5-709f0a",
+  "org.scalablytyped" %%% "dayjs" % "1.11.6-be8973",
   "org.scalablytyped" %%% "moment" % "2.29.4-a513be",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "rc-motion" % "2.6.2-9c3c76",

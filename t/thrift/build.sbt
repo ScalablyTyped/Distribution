@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "thrift"
-version := "0.10-dt-20211202Z-5268a1"
+version := "0.10-dt-20211202Z-2c39cb"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20220818Z-096d86",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "node-int64" % "v0.4.0-dt-20220818Z-931b34",
   "org.scalablytyped" %%% "q" % "1.5-dt-20220819Z-1566b2",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

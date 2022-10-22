@@ -8,7 +8,7 @@ trait BlockquoteHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var cite: js.UndefOr[String] = js.undefined
+  var cite: js.UndefOr[String | Null] = js.undefined
 }
 object BlockquoteHTMLAttributes {
   
@@ -20,6 +20,8 @@ object BlockquoteHTMLAttributes {
   extension [Self <: BlockquoteHTMLAttributes[?], T](x: Self & BlockquoteHTMLAttributes[T]) {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    
+    inline def setCiteNull: Self = StObject.set(x, "cite", null)
     
     inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
   }

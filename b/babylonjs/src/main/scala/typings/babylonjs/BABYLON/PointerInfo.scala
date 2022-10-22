@@ -4,27 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait PointerInfo
   extends StObject
      with PointerInfoBase {
   
   /**
-    * Defines the picking info associated to the info (if any)\
+    * Generates the picking info if needed
     */
-  var pickInfo: Nullable[PickingInfo]
-}
-object PointerInfo {
+  /** @internal */
+  def _generatePickInfo(): Unit = js.native
   
-  inline def apply(event: IMouseEvent, `type`: Double): PointerInfo = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], pickInfo = null)
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PointerInfo]
-  }
+  /* private */ var _inputManager: Any = js.native
   
-  extension [Self <: PointerInfo](x: Self) {
-    
-    inline def setPickInfo(value: Nullable[PickingInfo]): Self = StObject.set(x, "pickInfo", value.asInstanceOf[js.Any])
-    
-    inline def setPickInfoNull: Self = StObject.set(x, "pickInfo", null)
-  }
+  /* private */ var _pickInfo: Any = js.native
+  
+  /**
+    * Defines the picking info associated with this PointerInfo object (if applicable)
+    */
+  def pickInfo: Nullable[PickingInfo] = js.native
 }

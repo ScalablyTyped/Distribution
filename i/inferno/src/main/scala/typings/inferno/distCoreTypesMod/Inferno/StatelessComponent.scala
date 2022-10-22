@@ -13,7 +13,7 @@ trait StatelessComponent[P] extends StObject {
   def apply(props: Children & P & Refs[P]): InfernoElement[Any] | Null = js.native
   def apply(props: Children & P & Refs[P], context: Any): InfernoElement[Any] | Null = js.native
   
-  var defaultHooks: js.UndefOr[Refs[P]] = js.native
+  var defaultHooks: js.UndefOr[Refs[P] | Null] = js.native
   
-  var defaultProps: js.UndefOr[Partial[P]] = js.native
+  var defaultProps: js.UndefOr[Partial[P] | Null] = js.native
 }

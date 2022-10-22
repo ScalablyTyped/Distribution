@@ -103,6 +103,7 @@ type ConfigRecommendationList = js.Array[ConfigRecommendation]
   - typings.awsSdk.awsSdkStrings.BestAZRecovery
   - typings.awsSdk.awsSdkStrings.LeastErrors
   - typings.awsSdk.awsSdkStrings.BestAttainable
+  - typings.awsSdk.awsSdkStrings.BestRegionRecovery
   - java.lang.String
 */
 type ConfigRecommendationOptimizationType = _ConfigRecommendationOptimizationType | String

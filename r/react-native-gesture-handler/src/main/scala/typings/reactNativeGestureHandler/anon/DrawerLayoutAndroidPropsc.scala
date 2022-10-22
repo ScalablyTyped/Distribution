@@ -22,6 +22,7 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.GestureEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HandlerStateChangeEvent
 import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.HitSlop
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import typings.reactNativeGestureHandler.libTypescriptHandlersNativeViewGestureHandlerMod.NativeViewGestureHandlerPayload
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Dragging
 import typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.Idle
@@ -583,6 +584,8 @@ trait DrawerLayoutAndroidPropsc extends StObject {
     */
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   
+  var userSelect: js.UndefOr[UserSelect] = js.undefined
+  
   var waitFor: js.UndefOr[Ref[Any] | js.Array[Ref[Any]]] = js.undefined
 }
 object DrawerLayoutAndroidPropsc {
@@ -983,6 +986,10 @@ object DrawerLayoutAndroidPropsc {
     inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
+    
+    inline def setUserSelect(value: UserSelect): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
+    
+    inline def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     inline def setWaitFor(value: Ref[Any] | js.Array[Ref[Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     

@@ -1,33 +1,44 @@
 package typings.migrateMongo
 
-import typings.mongodb.anon.BatchSize
-import typings.mongodb.anon.ChangeStreamOptionssessio
-import typings.mongodb.anon.DropTarget
-import typings.mongodb.anon.Full
-import typings.mongodb.anon.ReadPreference
-import typings.mongodb.anon.Scale
-import typings.mongodb.anon.Session
-import typings.mongodb.anon.`1`
+import typings.bson.mod.Document
+import typings.migrateMongo.migrateMongoStrings.nameOnly
+import typings.mongodb.anon.NameOnly
+import typings.mongodb.anon.PickCollectionInfonametyp
+import typings.mongodb.anon.`0`
+import typings.mongodb.mod.AddUserOptions
 import typings.mongodb.mod.Admin
+import typings.mongodb.mod.AggregateOptions
+import typings.mongodb.mod.AggregationCursor
+import typings.mongodb.mod.BSONSerializeOptions
+import typings.mongodb.mod.Callback
 import typings.mongodb.mod.ChangeStream
+import typings.mongodb.mod.ChangeStreamOptions
 import typings.mongodb.mod.Collection
-import typings.mongodb.mod.CollectionCreateOptions
-import typings.mongodb.mod.CommandCursor
-import typings.mongodb.mod.CommonOptions
-import typings.mongodb.mod.DbAddUserOptions
-import typings.mongodb.mod.DbCollectionOptions
-import typings.mongodb.mod.DbCreateOptions
-import typings.mongodb.mod.Default
-import typings.mongodb.mod.IndexOptions
-import typings.mongodb.mod.MongoCallback
+import typings.mongodb.mod.CollectionInfo
+import typings.mongodb.mod.CollectionOptions
+import typings.mongodb.mod.CreateCollectionOptions
+import typings.mongodb.mod.CreateIndexesOptions
+import typings.mongodb.mod.DbOptions
+import typings.mongodb.mod.DbStatsOptions
+import typings.mongodb.mod.DropCollectionOptions
+import typings.mongodb.mod.DropDatabaseOptions
+import typings.mongodb.mod.IndexInformationOptions
+import typings.mongodb.mod.IndexSpecification
+import typings.mongodb.mod.ListCollectionsCursor
+import typings.mongodb.mod.ListCollectionsOptions
+import typings.mongodb.mod.Logger
 import typings.mongodb.mod.MongoClient
 import typings.mongodb.mod.MongoClientOptions
-import typings.mongodb.mod.Mongos
 import typings.mongodb.mod.ProfilingLevel
-import typings.mongodb.mod.ReplSet
-import typings.mongodb.mod.Server
+import typings.mongodb.mod.ProfilingLevelOptions
+import typings.mongodb.mod.ReadConcern
+import typings.mongodb.mod.ReadPreference
+import typings.mongodb.mod.RemoveUserOptions
+import typings.mongodb.mod.RenameOptions
+import typings.mongodb.mod.RunCommandOptions
+import typings.mongodb.mod.SetProfilingLevelOptions
 import typings.mongodb.mod.WriteConcern
-import typings.node.eventsMod.EventEmitterOptions
+import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,31 +68,37 @@ object anon {
   
   trait DatabaseName extends StObject {
     
-    var databaseName: String
+    var databaseName: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.Db['databaseName'] */ js.Any
+      ] = js.undefined
     
-    var options: MongoClientOptions
+    var options: js.UndefOr[MongoClientOptions] = js.undefined
     
-    var url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUriOptionsCallback>[0] */ js.Any
+    var url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCall>[0] */ js.Any
   }
   object DatabaseName {
     
     inline def apply(
-      databaseName: String,
-      options: MongoClientOptions,
-      url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUriOptionsCallback>[0] */ js.Any
+      url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCall>[0] */ js.Any
     ): DatabaseName = {
-      val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatabaseName]
     }
     
     extension [Self <: DatabaseName](x: Self) {
       
-      inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: mongodb.mongodb.Db['databaseName'] */ js.Any
+      ): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      
+      inline def setDatabaseNameUndefined: Self = StObject.set(x, "databaseName", js.undefined)
       
       inline def setOptions(value: MongoClientOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
       inline def setUrl(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUriOptionsCallback>[0] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCall>[0] */ js.Any
       ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
@@ -90,202 +107,376 @@ object anon {
   @js.native
   trait DbcloseMongoClientclose extends StObject {
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /**
+      * Add a user to the database
+      *
+      * @param username - The username for the new user
+      * @param password - An optional password for the new user
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def addUser(username: String): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def addUser(username: String, callback: Callback[Document]): Unit = js.native
+    def addUser(username: String, options: AddUserOptions): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def addUser(username: String, options: AddUserOptions, callback: Callback[Document]): Unit = js.native
+    def addUser(username: String, password: String): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def addUser(username: String, password: String, callback: Callback[Document]): Unit = js.native
+    def addUser(username: String, password: String, options: AddUserOptions): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def addUser(username: String, password: String, options: AddUserOptions, callback: Callback[Document]): Unit = js.native
     
-    def addUser(username: String, password: String): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#addUser */
-    def addUser(username: String, password: String, callback: MongoCallback[js.Any]): Unit = js.native
-    def addUser(username: String, password: String, options: DbAddUserOptions): js.Promise[js.Any] = js.native
-    def addUser(username: String, password: String, options: DbAddUserOptions, callback: MongoCallback[js.Any]): Unit = js.native
-    
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#admin */
+    /** Return the Admin db instance */
     def admin(): Admin = js.native
     
-    var bufferMaxEntries: Double = js.native
+    /**
+      * Execute an aggregation framework pipeline against the database, needs MongoDB \>= 3.6
+      *
+      * @param pipeline - An array of aggregation stages to be executed
+      * @param options - Optional settings for the command
+      */
+    def aggregate[T /* <: Document */](): AggregationCursor[T] = js.native
+    def aggregate[T /* <: Document */](pipeline: js.Array[Document]): AggregationCursor[T] = js.native
+    def aggregate[T /* <: Document */](pipeline: js.Array[Document], options: AggregateOptions): AggregationCursor[T] = js.native
+    def aggregate[T /* <: Document */](pipeline: Unit, options: AggregateOptions): AggregationCursor[T] = js.native
+    
+    def bsonOptions: BSONSerializeOptions = js.native
     
     def close(): js.Promise[Unit] = js.native
-    def close(callback: MongoCallback[Unit]): Unit = js.native
+    def close(callback: Callback[Unit]): Unit = js.native
     def close(force: Boolean): js.Promise[Unit] = js.native
-    def close(force: Boolean, callback: MongoCallback[Unit]): Unit = js.native
+    def close(force: Boolean, callback: Callback[Unit]): Unit = js.native
     @JSName("close")
-    var close_Original: FnCall = js.native
+    var close_Original: FnCallForceCallback = js.native
     
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#collection */
-    def collection[TSchema](name: String): Collection[TSchema] = js.native
-    def collection[TSchema](name: String, callback: MongoCallback[Collection[TSchema]]): Collection[TSchema] = js.native
-    def collection[TSchema](name: String, options: DbCollectionOptions): Collection[TSchema] = js.native
-    def collection[TSchema](name: String, options: DbCollectionOptions, callback: MongoCallback[Collection[TSchema]]): Collection[TSchema] = js.native
+    /**
+      * Returns a reference to a MongoDB Collection. If it does not exist it will be created implicitly.
+      *
+      * @param name - the collection name we wish to access.
+      * @returns return the new Collection instance
+      */
+    def collection[TSchema /* <: Document */](name: String): Collection[TSchema] = js.native
+    def collection[TSchema /* <: Document */](name: String, options: CollectionOptions): Collection[TSchema] = js.native
     
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#collections */
-    def collections(): js.Promise[js.Array[Collection[Default]]] = js.native
-    def collections(callback: MongoCallback[js.Array[Collection[Default]]]): Unit = js.native
+    /**
+      * Fetch all collections for the current db.
+      *
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def collections(): js.Promise[js.Array[Collection[Document]]] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def collections(callback: Callback[js.Array[Collection[Document]]]): Unit = js.native
+    def collections(options: ListCollectionsOptions): js.Promise[js.Array[Collection[Document]]] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def collections(options: ListCollectionsOptions, callback: Callback[js.Array[Collection[Document]]]): Unit = js.native
     
-    def command(command: js.Object): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#command */
-    def command(command: js.Object, callback: MongoCallback[js.Any]): Unit = js.native
-    def command(command: js.Object, options: ReadPreference): js.Promise[js.Any] = js.native
-    def command(command: js.Object, options: Session, callback: MongoCallback[js.Any]): Unit = js.native
+    /**
+      * Execute a command
+      *
+      * @remarks
+      * This command does not inherit options from the MongoClient.
+      *
+      * @param command - The command to run
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def command(command: Document): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def command(command: Document, callback: Callback[Document]): Unit = js.native
+    def command(command: Document, options: RunCommandOptions): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def command(command: Document, options: RunCommandOptions, callback: Callback[Document]): Unit = js.native
     
-    def createCollection[TSchema](name: String): js.Promise[Collection[TSchema]] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#createCollection */
-    def createCollection[TSchema](name: String, callback: MongoCallback[Collection[TSchema]]): Unit = js.native
-    def createCollection[TSchema](name: String, options: CollectionCreateOptions): js.Promise[Collection[TSchema]] = js.native
-    def createCollection[TSchema](name: String, options: CollectionCreateOptions, callback: MongoCallback[Collection[TSchema]]): Unit = js.native
+    /**
+      * Create a new collection on a server with the specified options. Use this to create capped collections.
+      * More information about command options available at https://docs.mongodb.com/manual/reference/command/create/
+      *
+      * @param name - The name of the collection to create
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def createCollection[TSchema /* <: Document */](name: String): js.Promise[Collection[TSchema]] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def createCollection[TSchema /* <: Document */](name: String, callback: Callback[Collection[TSchema]]): Unit = js.native
+    def createCollection[TSchema /* <: Document */](name: String, options: Unit, callback: Callback[Collection[TSchema]]): Unit = js.native
+    def createCollection[TSchema /* <: Document */](name: String, options: CreateCollectionOptions): js.Promise[Collection[TSchema]] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def createCollection[TSchema /* <: Document */](name: String, options: CreateCollectionOptions, callback: Callback[Collection[TSchema]]): Unit = js.native
     
-    def createIndex(name: String, fieldOrSpec: String): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#createIndex */
-    def createIndex(name: String, fieldOrSpec: String, callback: MongoCallback[js.Any]): Unit = js.native
-    def createIndex(name: String, fieldOrSpec: String, options: IndexOptions): js.Promise[js.Any] = js.native
-    def createIndex(name: String, fieldOrSpec: String, options: IndexOptions, callback: MongoCallback[js.Any]): Unit = js.native
-    def createIndex(name: String, fieldOrSpec: js.Object): js.Promise[js.Any] = js.native
-    def createIndex(name: String, fieldOrSpec: js.Object, callback: MongoCallback[js.Any]): Unit = js.native
-    def createIndex(name: String, fieldOrSpec: js.Object, options: IndexOptions): js.Promise[js.Any] = js.native
-    def createIndex(name: String, fieldOrSpec: js.Object, options: IndexOptions, callback: MongoCallback[js.Any]): Unit = js.native
-    
-    var databaseName: String = js.native
-    
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#dropCollection */
-    def dropCollection(name: String): js.Promise[Boolean] = js.native
-    def dropCollection(name: String, callback: MongoCallback[Boolean]): Unit = js.native
-    
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#dropDatabase */
-    def dropDatabase(): js.Promise[js.Any] = js.native
-    def dropDatabase(callback: MongoCallback[js.Any]): Unit = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    def executeDbAdminCommand(command: js.Object): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#executeDbAdminCommand */
-    def executeDbAdminCommand(command: js.Object, callback: MongoCallback[js.Any]): Unit = js.native
-    def executeDbAdminCommand(command: js.Object, options: ReadPreference): js.Promise[js.Any] = js.native
-    def executeDbAdminCommand(command: js.Object, options: ReadPreference, callback: MongoCallback[js.Any]): Unit = js.native
-    
-    def getMaxListeners(): Double = js.native
-    
-    def indexInformation(name: String): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#indexInformation */
-    def indexInformation(name: String, callback: MongoCallback[js.Any]): Unit = js.native
-    def indexInformation(name: String, options: Full): js.Promise[js.Any] = js.native
-    def indexInformation(name: String, options: Full, callback: MongoCallback[js.Any]): Unit = js.native
-    
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
-    def listCollections(): CommandCursor = js.native
-    def listCollections(filter: js.Object): CommandCursor = js.native
-    def listCollections(filter: js.Object, options: BatchSize): CommandCursor = js.native
-    def listCollections(filter: Unit, options: BatchSize): CommandCursor = js.native
-    
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    var native_parser: Boolean = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    var options: js.Any = js.native
-    
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def profilingInfo(): js.Promise[Unit] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingInfo */
-    /** @deprecated Query the system.profile collection directly. */
-    def profilingInfo(callback: MongoCallback[js.Any]): Unit = js.native
-    def profilingInfo(options: `1`): js.Promise[Unit] = js.native
-    def profilingInfo(options: `1`, callback: MongoCallback[Unit]): Unit = js.native
-    
-    def profilingLevel(): js.Promise[ProfilingLevel] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingLevel */
-    def profilingLevel(callback: MongoCallback[ProfilingLevel]): Unit = js.native
-    def profilingLevel(options: `1`): js.Promise[ProfilingLevel] = js.native
-    def profilingLevel(options: `1`, callback: MongoCallback[ProfilingLevel]): Unit = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def removeUser(username: String): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#removeUser */
-    def removeUser(username: String, callback: MongoCallback[js.Any]): Unit = js.native
-    def removeUser(username: String, options: CommonOptions): js.Promise[js.Any] = js.native
-    def removeUser(username: String, options: CommonOptions, callback: MongoCallback[js.Any]): Unit = js.native
-    
-    def renameCollection[TSchema](fromCollection: String, toCollection: String): js.Promise[Collection[TSchema]] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#renameCollection */
-    def renameCollection[TSchema](fromCollection: String, toCollection: String, callback: MongoCallback[Collection[TSchema]]): Unit = js.native
-    def renameCollection[TSchema](fromCollection: String, toCollection: String, options: DropTarget): js.Promise[Collection[TSchema]] = js.native
-    def renameCollection[TSchema](
-      fromCollection: String,
-      toCollection: String,
-      options: DropTarget,
-      callback: MongoCallback[Collection[TSchema]]
+    /**
+      * Creates an index on the db and collection.
+      *
+      * @param name - Name of the collection to create the index on.
+      * @param indexSpec - Specify the field to index, or an index specification
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def createIndex(name: String, indexSpec: IndexSpecification): js.Promise[String] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def createIndex(name: String, indexSpec: IndexSpecification, callback: Callback[String]): Unit = js.native
+    def createIndex(name: String, indexSpec: IndexSpecification, options: CreateIndexesOptions): js.Promise[String] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def createIndex(
+      name: String,
+      indexSpec: IndexSpecification,
+      options: CreateIndexesOptions,
+      callback: Callback[String]
     ): Unit = js.native
     
-    var serverConfig: Server | ReplSet | Mongos = js.native
+    def databaseName: String = js.native
     
-    def setMaxListeners(n: Double): this.type = js.native
+    /**
+      * Drop a collection from the database, removing it permanently. New accesses will create a new collection.
+      *
+      * @param name - Name of collection to drop
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def dropCollection(name: String): js.Promise[Boolean] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def dropCollection(name: String, callback: Callback[Boolean]): Unit = js.native
+    def dropCollection(name: String, options: DropCollectionOptions): js.Promise[Boolean] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def dropCollection(name: String, options: DropCollectionOptions, callback: Callback[Boolean]): Unit = js.native
     
+    /**
+      * Drop a database, removing it permanently from the server.
+      *
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def dropDatabase(): js.Promise[Boolean] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def dropDatabase(callback: Callback[Boolean]): Unit = js.native
+    def dropDatabase(options: DropDatabaseOptions): js.Promise[Boolean] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def dropDatabase(options: DropDatabaseOptions, callback: Callback[Boolean]): Unit = js.native
+    
+    /** Return the db logger */
+    def getLogger(): Logger = js.native
+    
+    /**
+      * Retrieves this collections index info.
+      *
+      * @param name - The name of the collection.
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def indexInformation(name: String): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def indexInformation(name: String, callback: Callback[Document]): Unit = js.native
+    def indexInformation(name: String, options: IndexInformationOptions): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def indexInformation(name: String, options: IndexInformationOptions, callback: Callback[Document]): Unit = js.native
+    
+    def listCollections[T /* <: PickCollectionInfonametyp | CollectionInfo */](): ListCollectionsCursor[T] = js.native
+    def listCollections[T /* <: PickCollectionInfonametyp | CollectionInfo */](filter: Unit, options: ListCollectionsOptions): ListCollectionsCursor[T] = js.native
+    def listCollections[T /* <: PickCollectionInfonametyp | CollectionInfo */](filter: Document): ListCollectionsCursor[T] = js.native
+    def listCollections[T /* <: PickCollectionInfonametyp | CollectionInfo */](filter: Document, options: ListCollectionsOptions): ListCollectionsCursor[T] = js.native
+    /**
+      * List all collections of this database with optional filter
+      *
+      * @param filter - Query to filter collections by
+      * @param options - Optional settings for the command
+      */
+    @JSName("listCollections")
+    def listCollections_nameOnly(filter: Document, options: (Exclude[ListCollectionsOptions, nameOnly]) & NameOnly): ListCollectionsCursor[PickCollectionInfonametyp] = js.native
+    @JSName("listCollections")
+    def listCollections_nameOnly(filter: Document, options: (Exclude[ListCollectionsOptions, nameOnly]) & `0`): ListCollectionsCursor[CollectionInfo] = js.native
+    
+    def logger: Logger = js.native
+    
+    def namespace: String = js.native
+    
+    def options: js.UndefOr[DbOptions] = js.native
+    
+    /**
+      * Retrieve the current profiling Level for MongoDB
+      *
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def profilingLevel(): js.Promise[String] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def profilingLevel(callback: Callback[String]): Unit = js.native
+    def profilingLevel(options: ProfilingLevelOptions): js.Promise[String] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def profilingLevel(options: ProfilingLevelOptions, callback: Callback[String]): Unit = js.native
+    
+    def readConcern: js.UndefOr[ReadConcern] = js.native
+    
+    /**
+      * The current readPreference of the Db. If not explicitly defined for
+      * this Db, will be inherited from the parent MongoClient
+      */
+    def readPreference: ReadPreference = js.native
+    
+    /**
+      * Remove a user from a database
+      *
+      * @param username - The username to remove
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def removeUser(username: String): js.Promise[Boolean] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def removeUser(username: String, callback: Callback[Boolean]): Unit = js.native
+    def removeUser(username: String, options: RemoveUserOptions): js.Promise[Boolean] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def removeUser(username: String, options: RemoveUserOptions, callback: Callback[Boolean]): Unit = js.native
+    
+    /**
+      * Rename a collection.
+      *
+      * @remarks
+      * This operation does not inherit options from the MongoClient.
+      *
+      * @param fromCollection - Name of current collection to rename
+      * @param toCollection - New name of of the collection
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def renameCollection[TSchema /* <: Document */](fromCollection: String, toCollection: String): js.Promise[Collection[TSchema]] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def renameCollection[TSchema /* <: Document */](fromCollection: String, toCollection: String, callback: Callback[Collection[TSchema]]): Unit = js.native
+    def renameCollection[TSchema /* <: Document */](fromCollection: String, toCollection: String, options: RenameOptions): js.Promise[Collection[TSchema]] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def renameCollection[TSchema /* <: Document */](
+      fromCollection: String,
+      toCollection: String,
+      options: RenameOptions,
+      callback: Callback[Collection[TSchema]]
+    ): Unit = js.native
+    
+    /**
+      * Check if a secondary can be used (because the read preference is *not* set to primary)
+      */
+    def secondaryOk: Boolean = js.native
+    
+    /**
+      * Set the current profiling level of MongoDB
+      *
+      * @param level - The new profiling level (off, slow_only, all).
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
     def setProfilingLevel(level: ProfilingLevel): js.Promise[ProfilingLevel] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#setProfilingLevel */
-    def setProfilingLevel(level: ProfilingLevel, callback: MongoCallback[ProfilingLevel]): Unit = js.native
-    def setProfilingLevel(level: ProfilingLevel, options: `1`): js.Promise[ProfilingLevel] = js.native
-    def setProfilingLevel(level: ProfilingLevel, options: `1`, callback: MongoCallback[ProfilingLevel]): Unit = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def setProfilingLevel(level: ProfilingLevel, callback: Callback[ProfilingLevel]): Unit = js.native
+    def setProfilingLevel(level: ProfilingLevel, options: SetProfilingLevelOptions): js.Promise[ProfilingLevel] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def setProfilingLevel(level: ProfilingLevel, options: SetProfilingLevelOptions, callback: Callback[ProfilingLevel]): Unit = js.native
     
-    var slaveOk: Boolean = js.native
+    /**
+      * slaveOk specified
+      * @deprecated Use secondaryOk instead
+      */
+    def slaveOk: Boolean = js.native
     
-    def stats(): js.Promise[js.Any] = js.native
-    /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#stats */
-    def stats(callback: MongoCallback[js.Any]): Unit = js.native
-    def stats(options: Scale): js.Promise[js.Any] = js.native
-    def stats(options: Scale, callback: MongoCallback[js.Any]): Unit = js.native
+    /**
+      * Get all the db statistics.
+      *
+      * @param options - Optional settings for the command
+      * @param callback - An optional callback, a Promise will be returned if none is provided
+      */
+    def stats(): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def stats(callback: Callback[Document]): Unit = js.native
+    def stats(options: DbStatsOptions): js.Promise[Document] = js.native
+    /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
+    def stats(options: DbStatsOptions, callback: Callback[Document]): Unit = js.native
     
-    /** http://mongodb.github.io/node-mongodb-native/3.3/api/Db.html#watch */
-    def watch[TSchema /* <: js.Object */](): ChangeStream[TSchema] = js.native
-    def watch[TSchema /* <: js.Object */](pipeline: js.Array[js.Object]): ChangeStream[TSchema] = js.native
-    def watch[TSchema /* <: js.Object */](pipeline: js.Array[js.Object], options: ChangeStreamOptionssessio): ChangeStream[TSchema] = js.native
-    def watch[TSchema /* <: js.Object */](pipeline: Unit, options: ChangeStreamOptionssessio): ChangeStream[TSchema] = js.native
+    /**
+      * Unref all sockets
+      * @deprecated This function is deprecated and will be removed in the next major version.
+      */
+    def unref(): Unit = js.native
     
-    var writeConcern: WriteConcern = js.native
+    /**
+      * Create a new Change Stream, watching for new changes (insertions, updates,
+      * replacements, deletions, and invalidations) in this database. Will ignore all
+      * changes to system collections.
+      *
+      * @remarks
+      * watch() accepts two generic arguments for distinct use cases:
+      * - The first is to provide the schema that may be defined for all the collections within this database
+      * - The second is to override the shape of the change stream document entirely, if it is not provided the type will default to ChangeStreamDocument of the first argument
+      *
+      * @param pipeline - An array of {@link https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/|aggregation pipeline stages} through which to pass change stream documents. This allows for filtering (using $match) and manipulating the change stream documents.
+      * @param options - Optional settings for the command
+      * @typeParam TSchema - Type of the data being detected by the change stream
+      * @typeParam TChange - Type of the whole change stream document emitted
+      */
+    def watch[TSchema /* <: Document */, TChange /* <: Document */](): ChangeStream[TSchema, TChange] = js.native
+    def watch[TSchema /* <: Document */, TChange /* <: Document */](pipeline: js.Array[Document]): ChangeStream[TSchema, TChange] = js.native
+    def watch[TSchema /* <: Document */, TChange /* <: Document */](pipeline: js.Array[Document], options: ChangeStreamOptions): ChangeStream[TSchema, TChange] = js.native
+    def watch[TSchema /* <: Document */, TChange /* <: Document */](pipeline: Unit, options: ChangeStreamOptions): ChangeStream[TSchema, TChange] = js.native
+    
+    def writeConcern: js.UndefOr[WriteConcern] = js.native
   }
   
   @js.native
   trait FnCall extends StObject {
     
-    def apply(): js.Promise[Unit] = js.native
-    def apply(callback: MongoCallback[Unit]): Unit = js.native
-    def apply(force: Boolean): js.Promise[Unit] = js.native
-    def apply(force: Boolean, callback: MongoCallback[Unit]): Unit = js.native
+    def apply(url: String): js.Promise[MongoClient] = js.native
+    def apply(url: String, callback: Callback[MongoClient]): Unit = js.native
+    def apply(url: String, options: MongoClientOptions): js.Promise[MongoClient] = js.native
+    def apply(url: String, options: MongoClientOptions, callback: Callback[MongoClient]): Unit = js.native
   }
   
   @js.native
-  trait FnCallUriOptionsCallback extends StObject {
+  trait FnCallForceCallback extends StObject {
     
-    def apply(uri: String): js.Promise[MongoClient] = js.native
-    def apply(uri: String, callback: MongoCallback[MongoClient]): Unit = js.native
-    def apply(uri: String, options: MongoClientOptions): js.Promise[MongoClient] = js.native
-    def apply(uri: String, options: MongoClientOptions, callback: MongoCallback[MongoClient]): Unit = js.native
+    def apply(): js.Promise[Unit] = js.native
+    def apply(callback: Callback[Unit]): Unit = js.native
+    def apply(force: Boolean): js.Promise[Unit] = js.native
+    def apply(force: Boolean, callback: Callback[Unit]): Unit = js.native
+  }
+  
+  /* Inlined std.Partial<migrate-mongo.migrate-mongo.config.Config> */
+  trait PartialConfig extends StObject {
+    
+    var changelogCollectionName: js.UndefOr[String] = js.undefined
+    
+    var migrationFileExtension: js.UndefOr[String] = js.undefined
+    
+    var migrationsDir: js.UndefOr[String] = js.undefined
+    
+    var mongodb: js.UndefOr[DatabaseName] = js.undefined
+    
+    var useFileHash: js.UndefOr[Boolean] = js.undefined
+  }
+  object PartialConfig {
+    
+    inline def apply(): PartialConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialConfig]
+    }
+    
+    extension [Self <: PartialConfig](x: Self) {
+      
+      inline def setChangelogCollectionName(value: String): Self = StObject.set(x, "changelogCollectionName", value.asInstanceOf[js.Any])
+      
+      inline def setChangelogCollectionNameUndefined: Self = StObject.set(x, "changelogCollectionName", js.undefined)
+      
+      inline def setMigrationFileExtension(value: String): Self = StObject.set(x, "migrationFileExtension", value.asInstanceOf[js.Any])
+      
+      inline def setMigrationFileExtensionUndefined: Self = StObject.set(x, "migrationFileExtension", js.undefined)
+      
+      inline def setMigrationsDir(value: String): Self = StObject.set(x, "migrationsDir", value.asInstanceOf[js.Any])
+      
+      inline def setMigrationsDirUndefined: Self = StObject.set(x, "migrationsDir", js.undefined)
+      
+      inline def setMongodb(value: DatabaseName): Self = StObject.set(x, "mongodb", value.asInstanceOf[js.Any])
+      
+      inline def setMongodbUndefined: Self = StObject.set(x, "mongodb", js.undefined)
+      
+      inline def setUseFileHash(value: Boolean): Self = StObject.set(x, "useFileHash", value.asInstanceOf[js.Any])
+      
+      inline def setUseFileHashUndefined: Self = StObject.set(x, "useFileHash", js.undefined)
+    }
   }
 }

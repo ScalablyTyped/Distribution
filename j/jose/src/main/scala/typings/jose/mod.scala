@@ -4,7 +4,6 @@ import typings.jose.distTypesJweCompactDecryptMod.CompactDecryptGetKey
 import typings.jose.distTypesJweFlattenedDecryptMod.FlattenedDecryptGetKey
 import typings.jose.distTypesJweGeneralDecryptMod.GeneralDecryptGetKey
 import typings.jose.distTypesJwksRemoteMod.RemoteJWKSetOptions
-import typings.jose.distTypesJwksRemoteMod.URL
 import typings.jose.distTypesJwsCompactVerifyMod.CompactVerifyGetKey
 import typings.jose.distTypesJwsFlattenedVerifyMod.FlattenedVerifyGetKey
 import typings.jose.distTypesJwsGeneralVerifyMod.GeneralVerifyGetKey
@@ -45,6 +44,7 @@ import typings.jose.distTypesUtilDecodeProtectedHeaderMod.ProtectedHeaderParamet
 import typings.jose.joseStrings.sha256
 import typings.jose.joseStrings.sha384
 import typings.jose.joseStrings.sha512
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

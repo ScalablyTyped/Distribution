@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__filter-blur
 
-Typings are for version 6.5.6
+Typings are for version 6.5.7
 
 ## Library description:
 Filter that blurs the display object

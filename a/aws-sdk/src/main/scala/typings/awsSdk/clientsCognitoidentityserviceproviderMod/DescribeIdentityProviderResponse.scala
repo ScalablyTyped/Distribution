@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeIdentityProviderResponse extends StObject {
   
   /**
-    * The IdP that was deleted.
+    * The identity provider details.
     */
   var IdentityProvider: IdentityProviderType
 }

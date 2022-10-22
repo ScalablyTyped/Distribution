@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/index", "DefaultRenderingPipeline")
 @js.native
 /**
-  * @constructor
-  * @param name - The rendering pipeline name (default: "")
-  * @param hdr - If high dynamic range textures should be used (default: true)
-  * @param scene - The scene linked to this pipeline (default: the last created scene)
-  * @param cameras - The array of cameras that the rendering pipeline will be attached to (default: scene.cameras)
-  * @param automaticBuild - if false, you will have to manually call prepare() to update the pipeline (default: true)
+  * Instantiates a DefaultRenderingPipeline.
+  * @param name The rendering pipeline name (default: "")
+  * @param hdr If high dynamic range textures should be used (default: true)
+  * @param scene The scene linked to this pipeline (default: the last created scene)
+  * @param cameras The array of cameras that the rendering pipeline will be attached to (default: scene.cameras)
+  * @param automaticBuild If false, you will have to manually call prepare() to update the pipeline (default: true)
   */
 open class DefaultRenderingPipeline ()
   extends typings.babylonjs.postProcessesIndexMod.DefaultRenderingPipeline {

@@ -8,7 +8,7 @@ trait SlotHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SlotHTMLAttributes {
   
@@ -20,6 +20,8 @@ object SlotHTMLAttributes {
   extension [Self <: SlotHTMLAttributes[?], T](x: Self & SlotHTMLAttributes[T]) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

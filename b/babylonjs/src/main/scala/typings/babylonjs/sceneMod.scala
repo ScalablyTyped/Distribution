@@ -155,6 +155,7 @@ object sceneMod {
     /** @internal */
     var _activeMeshesFrozen: Boolean = js.native
     
+    /** @internal */
     var _activeMeshesFrozenButKeepClipping: Boolean = js.native
     
     /** @internal */
@@ -989,6 +990,9 @@ object sceneMod {
     /** @internal */
     var _pickedDownSprite: Nullable[Sprite] = js.native
     
+    /** @internal */
+    def _pickingAvailable: Boolean = js.native
+    
     /**
       * @internal
       * Defines the actions happening when a pointer down event happens.
@@ -1114,6 +1118,9 @@ object sceneMod {
       * Registers the transient components if needed.
       */
     /* private */ var _registerTransientComponents: Any = js.native
+    
+    /** @internal */
+    var _registeredActions: Double = js.native
     
     /** @internal */
     var _registeredForLateAnimationBindings: SmartArrayNoDuplicate[Any] = js.native

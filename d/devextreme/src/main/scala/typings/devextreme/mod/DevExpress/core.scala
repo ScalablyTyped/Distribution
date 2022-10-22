@@ -8,9 +8,11 @@ import typings.devextreme.devextremeStrings.orientationChanged
 import typings.devextreme.mod.global.JQuery
 import typings.devextreme.mod.global.JQueryEventObject
 import typings.devextreme.mod.global.JQueryPromise
+import typings.std.BigInteger
 import typings.std.Element
 import typings.std.Exclude
 import typings.std.HTMLElement
+import typings.std.Number
 import typings.std.Pick
 import typings.std.Record
 import typings.std.SVGElement
@@ -45,7 +47,7 @@ object core {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
     * TS definition: {{{
-    T extends object ? {[ P in keyof T ]:? T[P] extends std.Function? T[P] : devextreme.devextreme.DevExpress.core.DeepPartial<T[P]>} : T
+    T extends devextreme.devextreme.DevExpress.core.Scalar ? T : {[ P in keyof T ]:? devextreme.devextreme.DevExpress.core.DeepPartial<T[P]>}
     }}}
     */
   @js.native
@@ -139,6 +141,10 @@ object core {
     * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
     */
   type PromiseType[T] = JQueryPromise[T]
+  
+  type Scalar = js.UndefOr[
+    Null | String | Double | Number | js.BigInt | BigInteger | Boolean | js.Date | js.Function | js.Symbol | js.Array[Any]
+  ]
   
   type Skip[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   

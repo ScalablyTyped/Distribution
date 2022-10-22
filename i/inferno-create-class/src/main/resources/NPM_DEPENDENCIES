@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "inferno-create-class" : "8.0.3"
+      "inferno-create-class" : "8.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "inferno-create-class" : "8.0.3"
+      "inferno-create-class" : "8.0.4"
     }
   ],
   "compile-devDependencies" : [

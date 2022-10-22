@@ -4,19 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `3`[BaseToken] extends StObject {
+trait `3` extends StObject {
   
-  var bold: DefaultHoveredPressed[BaseToken]
+  var `[default]`: DefaultHovered
 }
 object `3` {
   
-  inline def apply[BaseToken](bold: DefaultHoveredPressed[BaseToken]): `3`[BaseToken] = {
-    val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`3`[BaseToken]]
+  inline def apply(`[default]`: DefaultHovered): `3` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`3`]
   }
   
-  extension [Self <: `3`[?], BaseToken](x: Self & `3`[BaseToken]) {
+  extension [Self <: `3`](x: Self) {
     
-    inline def setBold(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def `set[default]`(value: DefaultHovered): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

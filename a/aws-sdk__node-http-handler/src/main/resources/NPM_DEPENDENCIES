@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/node-http-handler" : "3.190.0"
+      "@aws-sdk/node-http-handler" : "3.193.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/node-http-handler" : "3.190.0"
+      "@aws-sdk/node-http-handler" : "3.193.0"
     }
   ],
   "compile-devDependencies" : [

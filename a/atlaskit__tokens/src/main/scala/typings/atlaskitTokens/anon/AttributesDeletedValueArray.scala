@@ -8,11 +8,11 @@ trait AttributesDeletedValueArray extends StObject {
   
   var attributes: Deleted
   
-  var value: js.Array[Offset]
+  var value: js.Array[Color | Inset]
 }
 object AttributesDeletedValueArray {
   
-  inline def apply(attributes: Deleted, value: js.Array[Offset]): AttributesDeletedValueArray = {
+  inline def apply(attributes: Deleted, value: js.Array[Color | Inset]): AttributesDeletedValueArray = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributesDeletedValueArray]
   }
@@ -21,8 +21,8 @@ object AttributesDeletedValueArray {
     
     inline def setAttributes(value: Deleted): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Array[Offset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Color | Inset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Offset*): Self = StObject.set(x, "value", js.Array(value*))
+    inline def setValueVarargs(value: (Color | Inset)*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

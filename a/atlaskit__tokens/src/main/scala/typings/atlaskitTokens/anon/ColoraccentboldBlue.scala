@@ -201,6 +201,7 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-container-gutter`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -238,6 +239,18 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-025`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-075`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-150`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-250`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-600`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
@@ -1164,6 +1177,45 @@ trait ColoraccentboldBlue extends StObject {
   @JSName("shadow.overlay")
   val shadowDotoverlay: `--ds-overlay`
   
+  @JSName("spacing.container.gutter")
+  val spacingDotcontainerDotgutter: `--ds-container-gutter`
+  
+  @JSName("spacing.scale.0")
+  val spacingDotscaleDot0: `--ds-scale-0`
+  
+  @JSName("spacing.scale.025")
+  val spacingDotscaleDot025: `--ds-scale-025`
+  
+  @JSName("spacing.scale.050")
+  val spacingDotscaleDot050: `--ds-scale-050`
+  
+  @JSName("spacing.scale.075")
+  val spacingDotscaleDot075: `--ds-scale-075`
+  
+  @JSName("spacing.scale.100")
+  val spacingDotscaleDot100: `--ds-scale-100`
+  
+  @JSName("spacing.scale.150")
+  val spacingDotscaleDot150: `--ds-scale-150`
+  
+  @JSName("spacing.scale.200")
+  val spacingDotscaleDot200: `--ds-scale-200`
+  
+  @JSName("spacing.scale.250")
+  val spacingDotscaleDot250: `--ds-scale-250`
+  
+  @JSName("spacing.scale.300")
+  val spacingDotscaleDot300: `--ds-scale-300`
+  
+  @JSName("spacing.scale.400")
+  val spacingDotscaleDot400: `--ds-scale-400`
+  
+  @JSName("spacing.scale.500")
+  val spacingDotscaleDot500: `--ds-scale-500`
+  
+  @JSName("spacing.scale.600")
+  val spacingDotscaleDot600: `--ds-scale-600`
+  
   @JSName("utility.UNSAFE_util.MISSING_TOKEN")
   val utilityDotUNSAFE_utilDotMISSING_TOKEN: `--ds-UNSAFE_util-MISSING_TOKEN`
   
@@ -2010,6 +2062,32 @@ object ColoraccentboldBlue {
     inline def setShadowDotcard(value: `--ds-card`): Self = StObject.set(x, "shadow.card", value.asInstanceOf[js.Any])
     
     inline def setShadowDotoverlay(value: `--ds-overlay`): Self = StObject.set(x, "shadow.overlay", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotcontainerDotgutter(value: `--ds-container-gutter`): Self = StObject.set(x, "spacing.container.gutter", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot0(value: `--ds-scale-0`): Self = StObject.set(x, "spacing.scale.0", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot025(value: `--ds-scale-025`): Self = StObject.set(x, "spacing.scale.025", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot050(value: `--ds-scale-050`): Self = StObject.set(x, "spacing.scale.050", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot075(value: `--ds-scale-075`): Self = StObject.set(x, "spacing.scale.075", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot100(value: `--ds-scale-100`): Self = StObject.set(x, "spacing.scale.100", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot150(value: `--ds-scale-150`): Self = StObject.set(x, "spacing.scale.150", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot200(value: `--ds-scale-200`): Self = StObject.set(x, "spacing.scale.200", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot250(value: `--ds-scale-250`): Self = StObject.set(x, "spacing.scale.250", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot300(value: `--ds-scale-300`): Self = StObject.set(x, "spacing.scale.300", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot400(value: `--ds-scale-400`): Self = StObject.set(x, "spacing.scale.400", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot500(value: `--ds-scale-500`): Self = StObject.set(x, "spacing.scale.500", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingDotscaleDot600(value: `--ds-scale-600`): Self = StObject.set(x, "spacing.scale.600", value.asInstanceOf[js.Any])
     
     inline def setUtilityDotUNSAFE_utilDotMISSING_TOKEN(value: `--ds-UNSAFE_util-MISSING_TOKEN`): Self = StObject.set(x, "utility.UNSAFE_util.MISSING_TOKEN", value.asInstanceOf[js.Any])
     

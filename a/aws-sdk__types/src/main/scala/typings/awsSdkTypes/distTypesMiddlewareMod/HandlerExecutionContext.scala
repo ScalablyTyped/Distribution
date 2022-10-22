@@ -1,6 +1,7 @@
 package typings.awsSdkTypes.distTypesMiddlewareMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdkTypes.distTypesAuthMod.AuthScheme
 import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
 import typings.awsSdkTypes.distTypesLoggerMod.Logger
 import typings.awsSdkTypes.distTypesUtilMod.UserAgent
@@ -12,6 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HandlerExecutionContext
   extends StObject
      with /* key */ StringDictionary[Any] {
+  
+  /**
+    * Set at the same time as endpointV2.
+    */
+  var authSchemes: js.UndefOr[js.Array[AuthScheme]] = js.undefined
   
   /**
     * Resolved by the endpointMiddleware function of @aws-sdk/middleware-endpoint
@@ -40,6 +46,12 @@ object HandlerExecutionContext {
   }
   
   extension [Self <: HandlerExecutionContext](x: Self) {
+    
+    inline def setAuthSchemes(value: js.Array[AuthScheme]): Self = StObject.set(x, "authSchemes", value.asInstanceOf[js.Any])
+    
+    inline def setAuthSchemesUndefined: Self = StObject.set(x, "authSchemes", js.undefined)
+    
+    inline def setAuthSchemesVarargs(value: AuthScheme*): Self = StObject.set(x, "authSchemes", js.Array(value*))
     
     inline def setEndpointV2(value: EndpointV2): Self = StObject.set(x, "endpointV2", value.asInstanceOf[js.Any])
     

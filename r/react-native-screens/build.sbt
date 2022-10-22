@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-screens"
-version := "3.18.2-2c34ad"
+version := "3.18.2-f4f530"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4c7983",
   "org.scalablytyped" %%% "react" % "18.0-dt-20220922Z-bacd1f",
   "org.scalablytyped" %%% "react-native" % "0.70-dt-20221018Z-7b7723",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.7.1-aba632",
-  "org.scalablytyped" %%% "react-native-reanimated" % "2.11.0-703e40",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "2.8.0-65a940",
+  "org.scalablytyped" %%% "react-native-reanimated" % "2.11.0-0dfef0",
   "org.scalablytyped" %%% "react-native-safe-area-context" % "4.3.4-d58464",
   "org.scalablytyped" %%% "react-navigation" % "4.4.4-fbaff2",
   "org.scalablytyped" %%% "react-navigation__core" % "6.4.0-15a941",

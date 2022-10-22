@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.atlaskitTokens.atlaskitTokensStrings.dark
   - typings.atlaskitTokens.atlaskitTokensStrings.`legacy-light`
   - typings.atlaskitTokens.atlaskitTokensStrings.`legacy-dark`
+  - typings.atlaskitTokens.atlaskitTokensStrings.spacing
 */
 trait Themes extends StObject

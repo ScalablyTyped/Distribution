@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Refs[P] extends StObject {
   
+  var onComponentDidAppear: js.UndefOr[js.Function1[/* domNode */ Element, Unit]] = js.undefined
+  
   var onComponentDidMount: js.UndefOr[js.Function2[/* domNode */ Element | Null, /* nextProps */ P, Unit]] = js.undefined
   
   var onComponentDidUpdate: js.UndefOr[js.Function2[/* lastProps */ P, /* nextProps */ P, Unit]] = js.undefined
   
   var onComponentShouldUpdate: js.UndefOr[js.Function2[/* lastProps */ P, /* nextProps */ P, Boolean]] = js.undefined
+  
+  var onComponentWillDisappear: js.UndefOr[js.Function2[/* domNode */ Element, /* callback */ js.Function, Unit]] = js.undefined
   
   var onComponentWillMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -28,6 +32,10 @@ object Refs {
   
   extension [Self <: Refs[?], P](x: Self & Refs[P]) {
     
+    inline def setOnComponentDidAppear(value: /* domNode */ Element => Unit): Self = StObject.set(x, "onComponentDidAppear", js.Any.fromFunction1(value))
+    
+    inline def setOnComponentDidAppearUndefined: Self = StObject.set(x, "onComponentDidAppear", js.undefined)
+    
     inline def setOnComponentDidMount(value: (/* domNode */ Element | Null, /* nextProps */ P) => Unit): Self = StObject.set(x, "onComponentDidMount", js.Any.fromFunction2(value))
     
     inline def setOnComponentDidMountUndefined: Self = StObject.set(x, "onComponentDidMount", js.undefined)
@@ -39,6 +47,10 @@ object Refs {
     inline def setOnComponentShouldUpdate(value: (/* lastProps */ P, /* nextProps */ P) => Boolean): Self = StObject.set(x, "onComponentShouldUpdate", js.Any.fromFunction2(value))
     
     inline def setOnComponentShouldUpdateUndefined: Self = StObject.set(x, "onComponentShouldUpdate", js.undefined)
+    
+    inline def setOnComponentWillDisappear(value: (/* domNode */ Element, /* callback */ js.Function) => Unit): Self = StObject.set(x, "onComponentWillDisappear", js.Any.fromFunction2(value))
+    
+    inline def setOnComponentWillDisappearUndefined: Self = StObject.set(x, "onComponentWillDisappear", js.undefined)
     
     inline def setOnComponentWillMount(value: () => Unit): Self = StObject.set(x, "onComponentWillMount", js.Any.fromFunction0(value))
     

@@ -11,6 +11,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RUM extends Service {
   
+  /**
+    * Specifies the extended metrics that you want a CloudWatch RUM app monitor to send to a destination. Valid destinations include CloudWatch and Evidently. By default, RUM app monitors send some metrics to CloudWatch. These default metrics are listed in CloudWatch metrics that you can collect with CloudWatch RUM. If you also send extended metrics, you can send metrics to Evidently as well as CloudWatch, and you can also optionally send the metrics with additional dimensions. The valid dimension names for the additional dimensions are BrowserName, CountryCode, DeviceType, FileType, OSName, and PageId. For more information, see  Extended metrics that you can send to CloudWatch and CloudWatch Evidently. The maximum number of metric definitions that you can specify in one BatchCreateRumMetricDefinitions operation is 200.  &lt;p&gt;The maximum number of metric definitions that one destination can contain is 2000.&lt;/p&gt; &lt;p&gt;Extended metrics sent are charged as CloudWatch custom metrics. Each combination of additional dimension name and dimension value counts as a custom metric. For more information, see &lt;a href=&quot;https://aws.amazon.com/cloudwatch/pricing/&quot;&gt;Amazon CloudWatch Pricing&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;You must have already created a destination for the metrics before you send them. For more information, see &lt;a href=&quot;https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_PutRumMetricsDestination.html&quot;&gt;PutRumMetricsDestination&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;If some metric definitions specified in a &lt;code&gt;BatchCreateRumMetricDefinitions&lt;/code&gt; operations are not valid, those metric definitions fail and return errors, but all valid metric definitions in the same operation still succeed.&lt;/p&gt; 
+    */
+  def batchCreateRumMetricDefinitions(): Request[BatchCreateRumMetricDefinitionsResponse, AWSError] = js.native
+  def batchCreateRumMetricDefinitions(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateRumMetricDefinitionsResponse, Unit]
+  ): Request[BatchCreateRumMetricDefinitionsResponse, AWSError] = js.native
+  /**
+    * Specifies the extended metrics that you want a CloudWatch RUM app monitor to send to a destination. Valid destinations include CloudWatch and Evidently. By default, RUM app monitors send some metrics to CloudWatch. These default metrics are listed in CloudWatch metrics that you can collect with CloudWatch RUM. If you also send extended metrics, you can send metrics to Evidently as well as CloudWatch, and you can also optionally send the metrics with additional dimensions. The valid dimension names for the additional dimensions are BrowserName, CountryCode, DeviceType, FileType, OSName, and PageId. For more information, see  Extended metrics that you can send to CloudWatch and CloudWatch Evidently. The maximum number of metric definitions that you can specify in one BatchCreateRumMetricDefinitions operation is 200.  &lt;p&gt;The maximum number of metric definitions that one destination can contain is 2000.&lt;/p&gt; &lt;p&gt;Extended metrics sent are charged as CloudWatch custom metrics. Each combination of additional dimension name and dimension value counts as a custom metric. For more information, see &lt;a href=&quot;https://aws.amazon.com/cloudwatch/pricing/&quot;&gt;Amazon CloudWatch Pricing&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;You must have already created a destination for the metrics before you send them. For more information, see &lt;a href=&quot;https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_PutRumMetricsDestination.html&quot;&gt;PutRumMetricsDestination&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;If some metric definitions specified in a &lt;code&gt;BatchCreateRumMetricDefinitions&lt;/code&gt; operations are not valid, those metric definitions fail and return errors, but all valid metric definitions in the same operation still succeed.&lt;/p&gt; 
+    */
+  def batchCreateRumMetricDefinitions(params: BatchCreateRumMetricDefinitionsRequest): Request[BatchCreateRumMetricDefinitionsResponse, AWSError] = js.native
+  def batchCreateRumMetricDefinitions(
+    params: BatchCreateRumMetricDefinitionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateRumMetricDefinitionsResponse, Unit]
+  ): Request[BatchCreateRumMetricDefinitionsResponse, AWSError] = js.native
+  
+  /**
+    * Removes the specified metrics from being sent to an extended metrics destination. If some metric definition IDs specified in a BatchDeleteRumMetricDefinitions operations are not valid, those metric definitions fail and return errors, but all valid metric definition IDs in the same operation are still deleted. The maximum number of metric definitions that you can specify in one BatchDeleteRumMetricDefinitions operation is 200.
+    */
+  def batchDeleteRumMetricDefinitions(): Request[BatchDeleteRumMetricDefinitionsResponse, AWSError] = js.native
+  def batchDeleteRumMetricDefinitions(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteRumMetricDefinitionsResponse, Unit]
+  ): Request[BatchDeleteRumMetricDefinitionsResponse, AWSError] = js.native
+  /**
+    * Removes the specified metrics from being sent to an extended metrics destination. If some metric definition IDs specified in a BatchDeleteRumMetricDefinitions operations are not valid, those metric definitions fail and return errors, but all valid metric definition IDs in the same operation are still deleted. The maximum number of metric definitions that you can specify in one BatchDeleteRumMetricDefinitions operation is 200.
+    */
+  def batchDeleteRumMetricDefinitions(params: BatchDeleteRumMetricDefinitionsRequest): Request[BatchDeleteRumMetricDefinitionsResponse, AWSError] = js.native
+  def batchDeleteRumMetricDefinitions(
+    params: BatchDeleteRumMetricDefinitionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteRumMetricDefinitionsResponse, Unit]
+  ): Request[BatchDeleteRumMetricDefinitionsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the list of metrics and dimensions that a RUM app monitor is sending to a single destination.
+    */
+  def batchGetRumMetricDefinitions(): Request[BatchGetRumMetricDefinitionsResponse, AWSError] = js.native
+  def batchGetRumMetricDefinitions(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRumMetricDefinitionsResponse, Unit]): Request[BatchGetRumMetricDefinitionsResponse, AWSError] = js.native
+  /**
+    * Retrieves the list of metrics and dimensions that a RUM app monitor is sending to a single destination.
+    */
+  def batchGetRumMetricDefinitions(params: BatchGetRumMetricDefinitionsRequest): Request[BatchGetRumMetricDefinitionsResponse, AWSError] = js.native
+  def batchGetRumMetricDefinitions(
+    params: BatchGetRumMetricDefinitionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRumMetricDefinitionsResponse, Unit]
+  ): Request[BatchGetRumMetricDefinitionsResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_RUM: ConfigBase & ClientConfiguration = js.native
   
@@ -41,6 +87,20 @@ trait RUM extends Service {
     params: DeleteAppMonitorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppMonitorResponse, Unit]
   ): Request[DeleteAppMonitorResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a destination for CloudWatch RUM extended metrics, so that the specified app monitor stops sending extended metrics to that destination.
+    */
+  def deleteRumMetricsDestination(): Request[DeleteRumMetricsDestinationResponse, AWSError] = js.native
+  def deleteRumMetricsDestination(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRumMetricsDestinationResponse, Unit]): Request[DeleteRumMetricsDestinationResponse, AWSError] = js.native
+  /**
+    * Deletes a destination for CloudWatch RUM extended metrics, so that the specified app monitor stops sending extended metrics to that destination.
+    */
+  def deleteRumMetricsDestination(params: DeleteRumMetricsDestinationRequest): Request[DeleteRumMetricsDestinationResponse, AWSError] = js.native
+  def deleteRumMetricsDestination(
+    params: DeleteRumMetricsDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRumMetricsDestinationResponse, Unit]
+  ): Request[DeleteRumMetricsDestinationResponse, AWSError] = js.native
   
   /**
     * Retrieves the complete configuration information for one app monitor.
@@ -85,6 +145,20 @@ trait RUM extends Service {
   ): Request[ListAppMonitorsResponse, AWSError] = js.native
   
   /**
+    * Returns a list of destinations that you have created to receive RUM extended metrics, for the specified app monitor. For more information about extended metrics, see AddRumMetrics.
+    */
+  def listRumMetricsDestinations(): Request[ListRumMetricsDestinationsResponse, AWSError] = js.native
+  def listRumMetricsDestinations(callback: js.Function2[/* err */ AWSError, /* data */ ListRumMetricsDestinationsResponse, Unit]): Request[ListRumMetricsDestinationsResponse, AWSError] = js.native
+  /**
+    * Returns a list of destinations that you have created to receive RUM extended metrics, for the specified app monitor. For more information about extended metrics, see AddRumMetrics.
+    */
+  def listRumMetricsDestinations(params: ListRumMetricsDestinationsRequest): Request[ListRumMetricsDestinationsResponse, AWSError] = js.native
+  def listRumMetricsDestinations(
+    params: ListRumMetricsDestinationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRumMetricsDestinationsResponse, Unit]
+  ): Request[ListRumMetricsDestinationsResponse, AWSError] = js.native
+  
+  /**
     * Displays the tags associated with a CloudWatch RUM resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -111,6 +185,20 @@ trait RUM extends Service {
     params: PutRumEventsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRumEventsResponse, Unit]
   ): Request[PutRumEventsResponse, AWSError] = js.native
+  
+  /**
+    * Creates or updates a destination to receive extended metrics from CloudWatch RUM. You can send extended metrics to CloudWatch or to a CloudWatch Evidently experiment. For more information about extended metrics, see AddRumMetrics.
+    */
+  def putRumMetricsDestination(): Request[PutRumMetricsDestinationResponse, AWSError] = js.native
+  def putRumMetricsDestination(callback: js.Function2[/* err */ AWSError, /* data */ PutRumMetricsDestinationResponse, Unit]): Request[PutRumMetricsDestinationResponse, AWSError] = js.native
+  /**
+    * Creates or updates a destination to receive extended metrics from CloudWatch RUM. You can send extended metrics to CloudWatch or to a CloudWatch Evidently experiment. For more information about extended metrics, see AddRumMetrics.
+    */
+  def putRumMetricsDestination(params: PutRumMetricsDestinationRequest): Request[PutRumMetricsDestinationResponse, AWSError] = js.native
+  def putRumMetricsDestination(
+    params: PutRumMetricsDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRumMetricsDestinationResponse, Unit]
+  ): Request[PutRumMetricsDestinationResponse, AWSError] = js.native
   
   /**
     * Assigns one or more tags (key-value pairs) to the specified CloudWatch RUM resource. Currently, the only resources that can be tagged app monitors. Tags can help you organize and categorize your resources. You can also use them to scope user permissions by granting a user permission to access or change only resources with certain tag values. Tags don't have any semantic meaning to Amazon Web Services and are interpreted strictly as strings of characters. You can use the TagResource action with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the alarm. If you specify a tag key that is already associated with the resource, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource. For more information, see Tagging Amazon Web Services resources.
@@ -153,4 +241,18 @@ trait RUM extends Service {
     params: UpdateAppMonitorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppMonitorResponse, Unit]
   ): Request[UpdateAppMonitorResponse, AWSError] = js.native
+  
+  /**
+    * Modifies one existing metric definition for CloudWatch RUM extended metrics. For more information about extended metrics, see BatchCreateRumMetricsDefinitions.
+    */
+  def updateRumMetricDefinition(): Request[UpdateRumMetricDefinitionResponse, AWSError] = js.native
+  def updateRumMetricDefinition(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRumMetricDefinitionResponse, Unit]): Request[UpdateRumMetricDefinitionResponse, AWSError] = js.native
+  /**
+    * Modifies one existing metric definition for CloudWatch RUM extended metrics. For more information about extended metrics, see BatchCreateRumMetricsDefinitions.
+    */
+  def updateRumMetricDefinition(params: UpdateRumMetricDefinitionRequest): Request[UpdateRumMetricDefinitionResponse, AWSError] = js.native
+  def updateRumMetricDefinition(
+    params: UpdateRumMetricDefinitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRumMetricDefinitionResponse, Unit]
+  ): Request[UpdateRumMetricDefinitionResponse, AWSError] = js.native
 }

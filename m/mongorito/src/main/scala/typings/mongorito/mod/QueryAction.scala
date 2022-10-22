@@ -30,7 +30,7 @@ object QueryAction {
     
     inline def setQuery(value: js.Array[Args]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setQueryVarargs(value: Args*): Self = StObject.set(x, "query", js.Array(value :_*))
+    inline def setQueryVarargs(value: Args*): Self = StObject.set(x, "query", js.Array(value*))
     
     inline def setType(value: QUERY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

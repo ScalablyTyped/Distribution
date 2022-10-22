@@ -29,7 +29,7 @@ trait TypeofTerminal extends StObject {
   
   val ReaderListParams: Any
   
-  val ReaderProcessPaymentIntentParams: Any
+  val ReaderProcessPaymentIntentParams: TypeofReaderProcessPaymen
   
   val ReaderSetReaderDisplayParams: TypeofReaderSetReaderDisp
   
@@ -47,7 +47,7 @@ object TypeofTerminal {
     LocationsResource: Instantiable0[LocationsResource],
     Reader: TypeofReader,
     ReaderListParams: Any,
-    ReaderProcessPaymentIntentParams: Any,
+    ReaderProcessPaymentIntentParams: TypeofReaderProcessPaymen,
     ReaderSetReaderDisplayParams: TypeofReaderSetReaderDisp,
     ReadersResource: Instantiable0[ReadersResource]
   ): TypeofTerminal = {
@@ -75,7 +75,7 @@ object TypeofTerminal {
     
     inline def setReaderListParams(value: Any): Self = StObject.set(x, "ReaderListParams", value.asInstanceOf[js.Any])
     
-    inline def setReaderProcessPaymentIntentParams(value: Any): Self = StObject.set(x, "ReaderProcessPaymentIntentParams", value.asInstanceOf[js.Any])
+    inline def setReaderProcessPaymentIntentParams(value: TypeofReaderProcessPaymen): Self = StObject.set(x, "ReaderProcessPaymentIntentParams", value.asInstanceOf[js.Any])
     
     inline def setReaderSetReaderDisplayParams(value: TypeofReaderSetReaderDisp): Self = StObject.set(x, "ReaderSetReaderDisplayParams", value.asInstanceOf[js.Any])
     

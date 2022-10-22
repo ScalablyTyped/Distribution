@@ -8,19 +8,19 @@ trait SourceHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String | Null] = js.undefined
   
-  var media: js.UndefOr[String] = js.undefined
+  var media: js.UndefOr[String | Null] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.undefined
+  var sizes: js.UndefOr[String | Null] = js.undefined
   
-  var src: js.UndefOr[String] = js.undefined
+  var src: js.UndefOr[String | Null] = js.undefined
   
-  var srcSet: js.UndefOr[String] = js.undefined
+  var srcSet: js.UndefOr[String | Null] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String | Null] = js.undefined
 }
 object SourceHTMLAttributes {
   
@@ -33,19 +33,29 @@ object SourceHTMLAttributes {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaNull: Self = StObject.set(x, "media", null)
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
+    inline def setSizesNull: Self = StObject.set(x, "sizes", null)
+    
     inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
+    inline def setSrcNull: Self = StObject.set(x, "src", null)
+    
     inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+    
+    inline def setSrcSetNull: Self = StObject.set(x, "srcSet", null)
     
     inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
     
@@ -53,9 +63,13 @@ object SourceHTMLAttributes {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

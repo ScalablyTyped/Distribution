@@ -2,7 +2,6 @@ package typings.meteorAstronomy
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
 import typings.meteor.Mongo.Collection
 import typings.meteor.Mongo.Cursor
 import typings.meteor.Mongo.FieldSpecifier
@@ -153,15 +152,21 @@ object MeteorAstronomy {
       
       inline def setIdentifiers(value: js.Array[String] | T): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
       
-      inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+      inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
-  type Fields[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof meteor-astronomy.MeteorAstronomy.NonFunctionProperties<T> ]: meteor-astronomy.MeteorAstronomy.ModelField<T[P], T>}
-    */ typings.meteorAstronomy.meteorAstronomyStrings.Fields & TopLevel[T]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof meteor-astronomy.MeteorAstronomy.NonFunctionProperties<T> ]: meteor-astronomy.MeteorAstronomy.ModelField<T[P], T>}
+    }}}
+    */
+  @js.native
+  trait Fields[T] extends StObject
   
   trait FindOneOptions extends StObject {
     
@@ -179,7 +184,7 @@ object MeteorAstronomy {
     
     var sort: js.UndefOr[SortSpecifier] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var transform: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   }
   object FindOneOptions {
     
@@ -218,7 +223,7 @@ object MeteorAstronomy {
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* repeated */ Any => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
@@ -250,9 +255,15 @@ object MeteorAstronomy {
   
   type FunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] */ js.Any
   
-  type Helpers[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof meteor-astronomy.MeteorAstronomy.FunctionProperties<T> ]: (this : T, args : ...any): any}
-    */ typings.meteorAstronomy.meteorAstronomyStrings.Helpers & TopLevel[js.Any]
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ P in keyof meteor-astronomy.MeteorAstronomy.FunctionProperties<T> ]: (this : T, args : ...any): any}
+    }}}
+    */
+  @js.native
+  trait Helpers[T] extends StObject
   
   type Model[T] = T & Copy[T]
   
@@ -312,13 +323,13 @@ object MeteorAstronomy {
       
       inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: TypeOptionsPrimitives*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: TypeOptionsPrimitives*): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
       inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
       
-      inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+      inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value*))
     }
   }
   
@@ -331,9 +342,9 @@ object MeteorAstronomy {
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type RemoveCallback = js.Function2[/* err */ js.Any, /* result */ js.Any, Unit]
+  type RemoveCallback = js.Function2[/* err */ Any, /* result */ Any, Unit]
   
-  type SaveAndValidateCallback = js.Function2[/* err */ js.Any, /* id */ js.Any, Unit]
+  type SaveAndValidateCallback = js.Function2[/* err */ Any, /* id */ Any, Unit]
   
   trait SaveAndValidateOptions[K] extends StObject {
     
@@ -362,7 +373,7 @@ object MeteorAstronomy {
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: K*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: K*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setSimulation(value: Boolean): Self = StObject.set(x, "simulation", value.asInstanceOf[js.Any])
       
@@ -374,7 +385,7 @@ object MeteorAstronomy {
     }
   }
   
-  type TypeOptions = TypeOptionsPrimitives | js.Array[TypeOptionsPrimitives] | Class[js.Any] | Enum[js.Any]
+  type TypeOptions = TypeOptionsPrimitives | js.Array[TypeOptionsPrimitives] | Class[Any] | Enum[Any]
   
   type TypeOptionsPrimitives = StringConstructor | DateConstructor | BooleanConstructor | ObjectConstructor | NumberConstructor
   
@@ -420,13 +431,13 @@ object MeteorAstronomy {
   
   trait Validator extends StObject {
     
-    var param: js.Any
+    var param: Any
     
     var `type`: String
   }
   object Validator {
     
-    inline def apply(param: js.Any, `type`: String): Validator = {
+    inline def apply(param: Any, `type`: String): Validator = {
       val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Validator]
@@ -434,7 +445,7 @@ object MeteorAstronomy {
     
     extension [Self <: Validator](x: Self) {
       
-      inline def setParam(value: js.Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: Any): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

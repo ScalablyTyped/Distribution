@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-winstaller" : "5.0.0"
+      "electron-winstaller" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-winstaller" : "5.0.0"
+      "electron-winstaller" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

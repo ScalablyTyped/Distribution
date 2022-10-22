@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ssh2-sftp-client"
-version := "7.1-dt-20220707Z-f84968"
+version := "7.1-dt-20220707Z-83d2b6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
-  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-481eb1",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
+  "org.scalablytyped" %%% "ssh2" % "v1.11-dt-20220930Z-0b4949",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")

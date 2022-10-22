@@ -36,7 +36,8 @@ object distTypesJwtProduceMod {
     /**
       * Set "iat" (Issued At) Claim.
       *
-      * @param input "iat" (Issued At) Claim value to set on the JWT Claims Set. Default is current timestamp.
+      * @param input "iat" (Issued At) Claim value to set on the JWT Claims Set. Default is current
+      *   timestamp.
       */
     def setIssuedAt(): this.type = js.native
     def setIssuedAt(input: Double): this.type = js.native

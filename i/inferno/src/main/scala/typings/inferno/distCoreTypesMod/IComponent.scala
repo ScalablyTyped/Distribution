@@ -2,6 +2,7 @@ package typings.inferno.distCoreTypesMod
 
 import typings.inferno.anon.Children
 import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.std.Element
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IComponent[P, S] extends StObject {
   
+  var componentDidAppear: js.UndefOr[js.Function1[/* domNode */ Element, Unit]] = js.native
+  
   var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
   
   var componentDidUpdate: js.UndefOr[
     js.Function3[/* prevProps */ Children & P, /* prevState */ S, /* snapshot */ Any, Unit]
   ] = js.native
+  
+  var componentWillDisappear: js.UndefOr[js.Function2[/* domNode */ Element, /* callback */ js.Function, Unit]] = js.native
   
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -26,7 +31,7 @@ trait IComponent[P, S] extends StObject {
     js.Function3[/* nextProps */ Children & P, /* nextState */ S, /* context */ Any, Unit]
   ] = js.native
   
-  var context: Any = js.native
+  var context: js.UndefOr[Any] = js.native
   
   var displayName: js.UndefOr[String] = js.native
   

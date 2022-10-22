@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - scala.Double
   - scala.Boolean
   - typings.reactNativeGestureHandler.libTypescriptWebInterfacesMod.HitSlop
+  - typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
   - typings.reactNativeGestureHandler.libTypescriptDirectionsMod.Directions
   - js.Array[typings.reactNativeGestureHandler.libTypescriptWebInterfacesMod.Handler]
   - scala.Null

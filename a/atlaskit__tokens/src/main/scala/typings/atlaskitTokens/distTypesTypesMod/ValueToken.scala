@@ -1,6 +1,6 @@
 package typings.atlaskitTokens.distTypesTypesMod
 
-import typings.atlaskitTokens.anon.CategoryGroup
+import typings.atlaskitTokens.anon.CategoryValueCategory
 import typings.atlaskitTokens.atlaskitTokensStrings.palette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,17 +11,17 @@ trait ValueToken
      with BaseToken[Double, palette] {
   
   @JSName("attributes")
-  var attributes_ValueToken: CategoryGroup
+  var attributes_ValueToken: CategoryValueCategory
 }
 object ValueToken {
   
-  inline def apply(attributes: CategoryGroup, value: Double): ValueToken = {
+  inline def apply(attributes: CategoryValueCategory, value: Double): ValueToken = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueToken]
   }
   
   extension [Self <: ValueToken](x: Self) {
     
-    inline def setAttributes(value: CategoryGroup): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: CategoryValueCategory): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }
 }

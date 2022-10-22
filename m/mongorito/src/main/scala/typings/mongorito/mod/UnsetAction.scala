@@ -25,7 +25,7 @@ object UnsetAction {
     
     inline def setKeys(value: String | js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setType(value: UNSET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

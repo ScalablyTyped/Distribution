@@ -8,7 +8,7 @@ trait HtmlHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var manifest: js.UndefOr[String] = js.undefined
+  var manifest: js.UndefOr[String | Null] = js.undefined
 }
 object HtmlHTMLAttributes {
   
@@ -20,6 +20,8 @@ object HtmlHTMLAttributes {
   extension [Self <: HtmlHTMLAttributes[?], T](x: Self & HtmlHTMLAttributes[T]) {
     
     inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    
+    inline def setManifestNull: Self = StObject.set(x, "manifest", null)
     
     inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
   }

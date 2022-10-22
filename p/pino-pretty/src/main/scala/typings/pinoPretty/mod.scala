@@ -1,5 +1,6 @@
 package typings.pinoPretty
 
+import typings.pino.mod.LogDescriptor
 import typings.pinoPretty.pinoPrettyBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,12 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type MessageFormatFunc = js.Function3[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LogDescriptor */ /* log */ Any, 
-    /* messageKey */ String, 
-    /* levelLabel */ String, 
-    String
-  ]
+  type MessageFormatFunc = js.Function3[/* log */ LogDescriptor, /* messageKey */ String, /* levelLabel */ String, String]
   
   type Prettifier = js.Function1[/* inputData */ String | js.Object, String]
   
@@ -180,9 +176,7 @@ object mod {
       
       inline def setMessageFormat(value: `false` | String | MessageFormatFunc): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
       
-      inline def setMessageFormatFunction3(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LogDescriptor */ /* log */ Any, /* messageKey */ String, /* levelLabel */ String) => String
-      ): Self = StObject.set(x, "messageFormat", js.Any.fromFunction3(value))
+      inline def setMessageFormatFunction3(value: (/* log */ LogDescriptor, /* messageKey */ String, /* levelLabel */ String) => String): Self = StObject.set(x, "messageFormat", js.Any.fromFunction3(value))
       
       inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
       

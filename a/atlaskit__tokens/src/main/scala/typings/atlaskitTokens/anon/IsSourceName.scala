@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsSourceName extends StObject {
   
-  var attributes: Deprecated
+  var attributes: Deleted
   
   var filePath: String
   
@@ -14,22 +14,22 @@ trait IsSourceName extends StObject {
   
   var name: String
   
-  var original: AttributesDeprecatedValueArray
+  var original: AttributesDeletedValueArray
   
   var path: js.Array[String]
   
-  var value: js.Array[Offset]
+  var value: js.Array[Color | Inset]
 }
 object IsSourceName {
   
   inline def apply(
-    attributes: Deprecated,
+    attributes: Deleted,
     filePath: String,
     isSource: Boolean,
     name: String,
-    original: AttributesDeprecatedValueArray,
+    original: AttributesDeletedValueArray,
     path: js.Array[String],
-    value: js.Array[Offset]
+    value: js.Array[Color | Inset]
   ): IsSourceName = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], isSource = isSource.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsSourceName]
@@ -37,7 +37,7 @@ object IsSourceName {
   
   extension [Self <: IsSourceName](x: Self) {
     
-    inline def setAttributes(value: Deprecated): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Deleted): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
@@ -45,14 +45,14 @@ object IsSourceName {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOriginal(value: AttributesDeprecatedValueArray): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: AttributesDeletedValueArray): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setValue(value: js.Array[Offset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Color | Inset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Offset*): Self = StObject.set(x, "value", js.Array(value*))
+    inline def setValueVarargs(value: (Color | Inset)*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

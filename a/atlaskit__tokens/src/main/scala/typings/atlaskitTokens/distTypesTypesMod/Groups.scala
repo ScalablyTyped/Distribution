@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.atlaskitTokens.atlaskitTokensStrings.raw
   - typings.atlaskitTokens.atlaskitTokensStrings.paint
   - typings.atlaskitTokens.atlaskitTokensStrings.shadow
-  - typings.atlaskitTokens.atlaskitTokensStrings.opacity
   - typings.atlaskitTokens.atlaskitTokensStrings.palette
+  - typings.atlaskitTokens.atlaskitTokensStrings.opacity
+  - typings.atlaskitTokens.atlaskitTokensStrings.spacing
+  - typings.atlaskitTokens.atlaskitTokensStrings.scale
 */
 trait Groups extends StObject
 object Groups {
@@ -22,5 +24,9 @@ object Groups {
   
   inline def raw: typings.atlaskitTokens.atlaskitTokensStrings.raw = "raw".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.raw]
   
+  inline def scale: typings.atlaskitTokens.atlaskitTokensStrings.scale = "scale".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.scale]
+  
   inline def shadow: typings.atlaskitTokens.atlaskitTokensStrings.shadow = "shadow".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.shadow]
+  
+  inline def spacing: typings.atlaskitTokens.atlaskitTokensStrings.spacing = "spacing".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.spacing]
 }

@@ -13,6 +13,13 @@ trait IsISO8601Options extends StObject {
     * @default false
     */
   var strict: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If `strictSeparator` is true, date strings with date and time separated
+    * by anything other than a T will be invalid
+    *
+    */
+  var strictSeparator: js.UndefOr[Boolean] = js.undefined
 }
 object IsISO8601Options {
   
@@ -24,6 +31,10 @@ object IsISO8601Options {
   extension [Self <: IsISO8601Options](x: Self) {
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictSeparator(value: Boolean): Self = StObject.set(x, "strictSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setStrictSeparatorUndefined: Self = StObject.set(x, "strictSeparator", js.undefined)
     
     inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }

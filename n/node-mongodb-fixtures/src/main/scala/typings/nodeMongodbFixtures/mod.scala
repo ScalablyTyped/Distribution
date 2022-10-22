@@ -16,7 +16,7 @@ object mod {
     */
   @JSImport("node-mongodb-fixtures", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Fixtures {
     def this(options: Options) = this()

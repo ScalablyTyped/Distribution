@@ -8,7 +8,6 @@ import typings.mongration.mongrationStrings.ok
 import typings.mongration.mongrationStrings.pending
 import typings.mongration.mongrationStrings.rollback
 import typings.mongration.mongrationStrings.skipped
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object mod {
   
   @JSImport("mongration", "Migration")
   @js.native
-  class Migration protected () extends StObject {
+  open class Migration protected () extends StObject {
     def this(dbConfig: DbConfig) = this()
     
     def add(paths: String): Unit = js.native
@@ -26,7 +25,7 @@ object mod {
     def addAllFromPath(path: String): Unit = js.native
     
     def migrate(): Unit = js.native
-    def migrate(doneCb: js.Function2[/* err */ Error | Null, /* response */ js.Array[MigrationResponse], Unit]): Unit = js.native
+    def migrate(doneCb: js.Function2[/* err */ js.Error | Null, /* response */ js.Array[MigrationResponse], Unit]): Unit = js.native
   }
   
   trait DbConfig extends StObject {
@@ -106,29 +105,29 @@ object mod {
   trait MigrationStep extends StObject {
     
     var down: js.UndefOr[
-        js.Function2[/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
+        js.Function2[/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], Unit]
       ] = js.undefined
     
     var id: String
     
-    def up(db: Db, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit
+    def up(db: Db, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit
   }
   object MigrationStep {
     
-    inline def apply(id: String, up: (Db, js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): MigrationStep = {
+    inline def apply(id: String, up: (Db, js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit): MigrationStep = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], up = js.Any.fromFunction2(up))
       __obj.asInstanceOf[MigrationStep]
     }
     
     extension [Self <: MigrationStep](x: Self) {
       
-      inline def setDown(value: (/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
+      inline def setDown(value: (/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setUp(value: (Db, js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
+      inline def setUp(value: (Db, js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
     }
   }
 }

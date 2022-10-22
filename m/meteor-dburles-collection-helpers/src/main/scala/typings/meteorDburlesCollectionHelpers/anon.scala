@@ -3,7 +3,7 @@ package typings.meteorDburlesCollectionHelpers
 import org.scalablytyped.runtime.StringDictionary
 import typings.meteor.mongoMod.Mongo.FieldSpecifier
 import typings.meteor.mongoMod.Mongo.SortSpecifier
-import typings.meteorDburlesCollectionHelpers.mod.Full
+import typings.meteorDburlesCollectionHelpers.meteorDburlesColoncollectionHelpersMod.Full
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object anon {
   
   trait ArrayFilters extends StObject {
     
-    var arrayFilters: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
+    var arrayFilters: js.UndefOr[js.Array[StringDictionary[Any]]] = js.undefined
     
     var multi: js.UndefOr[Boolean] = js.undefined
     
@@ -27,11 +27,11 @@ object anon {
     
     extension [Self <: ArrayFilters](x: Self) {
       
-      inline def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+      inline def setArrayFilters(value: js.Array[StringDictionary[Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
       
       inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
       
-      inline def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+      inline def setArrayFiltersVarargs(value: StringDictionary[Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value*))
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -60,7 +60,7 @@ object anon {
           /* userId */ String, 
           /* doc */ Full[T] & T, 
           /* fieldNames */ js.Array[String], 
-          /* modifier */ js.Any, 
+          /* modifier */ Any, 
           Boolean
         ]
       ] = js.undefined
@@ -78,7 +78,7 @@ object anon {
       
       inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+      inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value*))
       
       inline def setInsert(value: (/* userId */ String, /* doc */ Full[T] & T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
@@ -95,7 +95,7 @@ object anon {
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
       inline def setUpdate(
-        value: (/* userId */ String, /* doc */ Full[T] & T, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+        value: (/* userId */ String, /* doc */ Full[T] & T, /* fieldNames */ js.Array[String], /* modifier */ Any) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)

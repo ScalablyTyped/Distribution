@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
 import typings.babylonjs.cullingRayMod.Ray
 import typings.babylonjs.eventsDeviceInputEventsMod.IMouseEvent
+import typings.babylonjs.inputsSceneDotinputManagerMod.InputManager
 import typings.babylonjs.mathsMathDotvectorMod.Vector2
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -74,21 +75,31 @@ object eventsPointerEventsMod {
       * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
       * @param type Defines the type of event (PointerEventTypes)
       * @param event Defines the related dom event
-      * @param pickInfo Defines the picking info associated to the info (if any)\
+      * @param pickInfo Defines the picking info associated to the info (if any)
+      * @param inputManager Defines the InputManager to use if there is no pickInfo
       */
+    def this(`type`: Double, event: IMouseEvent, pickInfo: Nullable[PickingInfo]) = this()
     def this(
       `type`: Double,
       event: IMouseEvent,
-      /**
-      * Defines the picking info associated to the info (if any)\
-      */
-    pickInfo: Nullable[PickingInfo]
+      pickInfo: Nullable[PickingInfo],
+      inputManager: Nullable[InputManager]
     ) = this()
     
     /**
-      * Defines the picking info associated to the info (if any)\
+      * Generates the picking info if needed
       */
-    var pickInfo: Nullable[PickingInfo] = js.native
+    /** @internal */
+    def _generatePickInfo(): Unit = js.native
+    
+    /* private */ var _inputManager: Any = js.native
+    
+    /* private */ var _pickInfo: Any = js.native
+    
+    /**
+      * Defines the picking info associated with this PointerInfo object (if applicable)
+      */
+    def pickInfo: Nullable[PickingInfo] = js.native
   }
   
   @JSImport("babylonjs/Events/pointerEvents", "PointerInfoBase")

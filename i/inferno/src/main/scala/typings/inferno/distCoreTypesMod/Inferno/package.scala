@@ -2,7 +2,6 @@ package typings.inferno.distCoreTypesMod.Inferno
 
 import typings.inferno.distCoreTypesMod.IComponent
 import typings.inferno.distCoreTypesMod.Inferno.^
-import typings.inferno.distCoreTypesMod.RefObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -150,7 +149,5 @@ type InfernoNode = js.UndefOr[InfernoChild | InfernoFragment | Boolean | Null]
 type InfernoText = String | Double
 
 type Key = String | Double
-
-type Ref[T] = String | (js.Function1[/* instance */ T | Null, Any]) | RefObject[T]
 
 type SFC[P] = StatelessComponent[P]

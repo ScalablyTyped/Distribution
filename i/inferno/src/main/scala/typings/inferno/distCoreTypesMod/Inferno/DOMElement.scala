@@ -1,5 +1,6 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import typings.inferno.distCoreTypesMod.Ref
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,24 +10,25 @@ trait DOMElement[P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Elemen
   extends StObject
      with InfernoElement[P] {
   
-  var ref: Ref[T]
+  def ref(): Any
+  def ref(instance: T): Any
+  @JSName("ref")
+  var ref_Original: Ref[T]
   
   @JSName("type")
   var type_DOMElement: String
 }
 object DOMElement {
   
-  inline def apply[P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Element */](props: P, ref: Ref[T], `type`: String): DOMElement[P, T] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], key = null)
+  inline def apply[P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Element */](props: P, ref: /* instance */ T | Null => Any, `type`: String): DOMElement[P, T] = {
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref), key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMElement[P, T]]
   }
   
   extension [Self <: DOMElement[?, ?], P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Element */](x: Self & (DOMElement[P, T])) {
     
-    inline def setRef(value: Ref[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
-    
-    inline def setRefFunction1(value: /* instance */ T | Null => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: /* instance */ T | Null => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs-node"
-version := "4.0.0-77bb36"
+version := "4.0.0-c2869e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221018Z-1e532a",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765",
   "org.scalablytyped" %%% "tensorflow__tfjs" % "4.0.0-470f2c",
   "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "4.0.0-512b78",

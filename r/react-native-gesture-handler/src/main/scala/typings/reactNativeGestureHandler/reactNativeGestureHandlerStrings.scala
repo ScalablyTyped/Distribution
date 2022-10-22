@@ -6,6 +6,7 @@ import typings.reactNativeGestureHandler.libTypescriptComponentsDrawerLayoutMod.
 import typings.reactNativeGestureHandler.libTypescriptComponentsDrawerLayoutMod.DrawerState
 import typings.reactNativeGestureHandler.libTypescriptComponentsDrawerLayoutMod.DrawerType
 import typings.reactNativeGestureHandler.libTypescriptComponentsSwipeableMod.SwipeableExcludes
+import typings.reactNativeGestureHandler.libTypescriptHandlersGestureHandlerCommonMod.UserSelect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,7 +126,9 @@ object reactNativeGestureHandlerStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends StObject
+  sealed trait auto
+    extends StObject
+       with UserSelect
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -360,6 +363,7 @@ object reactNativeGestureHandlerStrings {
   sealed trait none
     extends StObject
        with DrawerKeyboardDismissMode
+       with UserSelect
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -465,10 +469,22 @@ object reactNativeGestureHandlerStrings {
   inline def testID: testID = "testID".asInstanceOf[testID]
   
   @js.native
+  sealed trait text
+    extends StObject
+       with UserSelect
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
   sealed trait unlocked
     extends StObject
        with DrawerLockMode
   inline def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
+  
+  @js.native
+  sealed trait userSelect
+    extends StObject
+       with SwipeableExcludes
+  inline def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
   
   @js.native
   sealed trait waitFor

@@ -13,6 +13,8 @@ trait Atlassiandark extends StObject {
   var `atlassian-legacy-light`: String
   
   var `atlassian-light`: String
+  
+  var `atlassian-spacing`: String
 }
 object Atlassiandark {
   
@@ -20,13 +22,15 @@ object Atlassiandark {
     `atlassian-dark`: String,
     `atlassian-legacy-dark`: String,
     `atlassian-legacy-light`: String,
-    `atlassian-light`: String
+    `atlassian-light`: String,
+    `atlassian-spacing`: String
   ): Atlassiandark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("atlassian-dark")(`atlassian-dark`.asInstanceOf[js.Any])
     __obj.updateDynamic("atlassian-legacy-dark")(`atlassian-legacy-dark`.asInstanceOf[js.Any])
     __obj.updateDynamic("atlassian-legacy-light")(`atlassian-legacy-light`.asInstanceOf[js.Any])
     __obj.updateDynamic("atlassian-light")(`atlassian-light`.asInstanceOf[js.Any])
+    __obj.updateDynamic("atlassian-spacing")(`atlassian-spacing`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Atlassiandark]
   }
   
@@ -39,5 +43,7 @@ object Atlassiandark {
     inline def `setAtlassian-legacy-light`(value: String): Self = StObject.set(x, "atlassian-legacy-light", value.asInstanceOf[js.Any])
     
     inline def `setAtlassian-light`(value: String): Self = StObject.set(x, "atlassian-light", value.asInstanceOf[js.Any])
+    
+    inline def `setAtlassian-spacing`(value: String): Self = StObject.set(x, "atlassian-spacing", value.asInstanceOf[js.Any])
   }
 }

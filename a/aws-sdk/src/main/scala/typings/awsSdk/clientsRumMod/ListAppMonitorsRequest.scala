@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAppMonitorsRequest extends StObject {
   
   /**
-    * The maximum number of results to return in one operation. 
+    * The maximum number of results to return in one operation. The default is 50. The maximum that you can specify is 100.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
   
   /**
     * Use the token returned by the previous operation to request the next page of results.
@@ -25,7 +25,7 @@ object ListAppMonitorsRequest {
   
   extension [Self <: ListAppMonitorsRequest](x: Self) {
     
-    inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

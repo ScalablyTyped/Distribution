@@ -58,7 +58,7 @@ object Action {
     __obj.asInstanceOf[typings.mongorito.mod.CreateAction]
   }
   
-  inline def CreateIndexAction(args: js.Array[js.Any], `type`: CREATE_INDEX): typings.mongorito.mod.CreateIndexAction = {
+  inline def CreateIndexAction(args: js.Array[Any], `type`: CREATE_INDEX): typings.mongorito.mod.CreateIndexAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongorito.mod.CreateIndexAction]
@@ -70,7 +70,7 @@ object Action {
     __obj.asInstanceOf[typings.mongorito.mod.CreatedAction]
   }
   
-  inline def DropIndexAction(args: js.Array[js.Any], `type`: DROP_INDEX): typings.mongorito.mod.DropIndexAction = {
+  inline def DropIndexAction(args: js.Array[Any], `type`: DROP_INDEX): typings.mongorito.mod.DropIndexAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongorito.mod.DropIndexAction]
@@ -88,7 +88,7 @@ object Action {
     __obj.asInstanceOf[typings.mongorito.mod.IncrementAction]
   }
   
-  inline def ListIndexesAction(args: js.Array[js.Any], `type`: LIST_INDEXES): typings.mongorito.mod.ListIndexesAction = {
+  inline def ListIndexesAction(args: js.Array[Any], `type`: LIST_INDEXES): typings.mongorito.mod.ListIndexesAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongorito.mod.ListIndexesAction]

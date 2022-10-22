@@ -1,28 +1,22 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.atlaskitTokensStrings.palette
-import typings.atlaskitTokens.distTypesTypesMod.PaletteCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Group extends StObject {
   
-  var category: PaletteCategory
-  
-  var group: palette
+  var group: String
 }
 object Group {
   
-  inline def apply(category: PaletteCategory): Group = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], group = "palette")
+  inline def apply(group: String): Group = {
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
   
   extension [Self <: Group](x: Self) {
     
-    inline def setCategory(value: PaletteCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
-    
-    inline def setGroup(value: palette): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

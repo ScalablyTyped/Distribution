@@ -1,24 +1,19 @@
 package typings.expressJwt
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
-import typings.expressJwt.anon.FnCall
-import typings.expressJwt.anon.Message
-import typings.expressJwt.expressJwtStrings.credentials_bad_format
-import typings.expressJwt.expressJwtStrings.credentials_bad_scheme
-import typings.expressJwt.expressJwtStrings.credentials_required
-import typings.expressJwt.expressJwtStrings.invalid_token
-import typings.expressJwt.expressJwtStrings.revoked_token
-import typings.node.bufferMod.global.Buffer
-import typings.std.Error
+import typings.expressJwt.anon.Call
+import typings.expressJwt.distErrorsUnauthorizedErrorMod.ErrorCode
+import typings.expressJwt.distErrorsUnauthorizedErrorMod.ErrorLike
+import typings.jsonwebtoken.mod.Algorithm
+import typings.jsonwebtoken.mod.Jwt
+import typings.jsonwebtoken.mod.Secret
+import typings.jsonwebtoken.mod.VerifyOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
-  
-  inline def apply(options: Options): RequestHandler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   @JSImport("express-jwt", JSImport.Namespace)
   @js.native
@@ -27,92 +22,104 @@ object mod {
   @JSImport("express-jwt", "UnauthorizedError")
   @js.native
   open class UnauthorizedError protected ()
-    extends StObject
-       with Error {
-    def this(code: ErrorCode, error: Message) = this()
-    
-    var code: ErrorCode = js.native
-    
-    var inner: Message = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var message: String = js.native
-    
-    /* standard es5 */
-    /* CompleteClass */
-    var name: String = js.native
-    @JSName("name")
-    var name_UnauthorizedError: typings.expressJwt.expressJwtStrings.UnauthorizedError = js.native
-    
-    var status: Double = js.native
+    extends typings.expressJwt.distErrorsUnauthorizedErrorMod.UnauthorizedError {
+    def this(code: ErrorCode, error: ErrorLike) = this()
   }
   
-  type ErrorCode = LiteralUnion[
-    revoked_token | invalid_token | credentials_bad_scheme | credentials_bad_format | credentials_required, 
-    String
-  ]
+  inline def expressjwt(options: Params): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("expressjwt")(options.asInstanceOf[js.Any]).asInstanceOf[Call]
   
-  type GetTokenCallback = js.Function1[
-    /* req */ Request_[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-      Any, 
-      Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-      Record[String, Any]
-    ], 
-    Any
-  ]
-  
-  type IsRevokedCallback = js.Function3[
-    /* req */ Request_[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-      Any, 
-      Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-      Record[String, Any]
-    ], 
-    /* payload */ Any, 
-    /* done */ js.Function2[/* err */ Any, /* revoked */ js.UndefOr[Boolean], Unit], 
-    Unit
-  ]
-  
-  type LiteralUnion[T /* <: U */, U] = T | (U & (Record[scala.Nothing, scala.Nothing]))
-  
-  trait Options
+  @js.native
+  trait ExpressJwtRequest[T]
     extends StObject
-       with /* property */ StringDictionary[Any] {
+       with typings.expressServeStaticCore.mod.Request {
+    
+    var auth: T = js.native
+  }
+  
+  @js.native
+  trait ExpressJwtRequestUnrequired[T]
+    extends StObject
+       with typings.expressServeStaticCore.mod.Request {
+    
+    var auth: js.UndefOr[T] = js.native
+  }
+  
+  type GetVerificationKey = js.Function2[
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* token */ js.UndefOr[Jwt], 
+    Secret | js.Promise[Secret]
+  ]
+  
+  type IsRevoked = js.Function2[
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* token */ js.UndefOr[Jwt], 
+    Boolean | js.Promise[Boolean]
+  ]
+  
+  trait Params
+    extends StObject
+       with VerifyOptions {
     
     /**
-      * The algorithms parameter is required to prevent potential downgrade attacks when providing third party libraries as secrets.
-      * {@link https://github.com/auth0/express-jwt/blob/5fb8c88067b9448d746d04ab60ad3b1996c7e310/README.md#required-parameters}
+      * List of JWT algorithms allowed.
       */
-    var algorithms: js.Array[String]
+    @JSName("algorithms")
+    var algorithms_Params: js.Array[Algorithm]
     
+    /**
+      * If sets to true, continue to the next middleware when the
+      * request doesn't include a token without failing.
+      *
+      * @default true
+      */
     var credentialsRequired: js.UndefOr[Boolean] = js.undefined
     
-    var getToken: js.UndefOr[GetTokenCallback] = js.undefined
+    /**
+      * Defines how to retrieves the token from the request object.
+      */
+    var getToken: js.UndefOr[TokenGetter] = js.undefined
     
-    var isRevoked: js.UndefOr[IsRevokedCallback] = js.undefined
+    /**
+      * Defines how to verify if a token is revoked.
+      */
+    var isRevoked: js.UndefOr[IsRevoked] = js.undefined
     
+    /**
+      * Allows to customize the name of the property in the request object
+      * where the decoded payload is set.
+      * @default 'auth'
+      */
     var requestProperty: js.UndefOr[String] = js.undefined
     
-    var secret: secretType | SecretCallback | SecretCallbackLong
-    
-    var userProperty: js.UndefOr[String] = js.undefined
+    /**
+      * The Key or a function to retrieve the key used to verify the JWT.
+      */
+    var secret: Secret | GetVerificationKey
   }
-  object Options {
+  object Params {
     
-    inline def apply(algorithms: js.Array[String], secret: secretType | SecretCallback | SecretCallbackLong): Options = {
+    inline def apply(algorithms: js.Array[Algorithm], secret: Secret | GetVerificationKey): Params = {
       val __obj = js.Dynamic.literal(algorithms = algorithms.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Options](x: Self) {
+    extension [Self <: Params](x: Self) {
       
-      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
+      inline def setAlgorithmsVarargs(value: Algorithm*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
       inline def setCredentialsRequired(value: Boolean): Self = StObject.set(x, "credentialsRequired", value.asInstanceOf[js.Any])
       
@@ -125,7 +132,7 @@ object mod {
               Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
               Record[String, Any]
-            ] => Any
+            ] => js.UndefOr[String | js.Promise[String]]
       ): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
       
       inline def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
@@ -137,8 +144,8 @@ object mod {
               Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
               Record[String, Any]
-            ], /* payload */ Any, /* done */ js.Function2[/* err */ Any, /* revoked */ js.UndefOr[Boolean], Unit]) => Unit
-      ): Self = StObject.set(x, "isRevoked", js.Any.fromFunction3(value))
+            ], /* token */ js.UndefOr[Jwt]) => Boolean | js.Promise[Boolean]
+      ): Self = StObject.set(x, "isRevoked", js.Any.fromFunction2(value))
       
       inline def setIsRevokedUndefined: Self = StObject.set(x, "isRevoked", js.undefined)
       
@@ -146,91 +153,33 @@ object mod {
       
       inline def setRequestPropertyUndefined: Self = StObject.set(x, "requestProperty", js.undefined)
       
-      inline def setSecret(value: secretType | SecretCallback | SecretCallbackLong): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Secret | GetVerificationKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      inline def setSecretFunction3(
+      inline def setSecretFunction2(
         value: (/* req */ Request_[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
               Any, 
               Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
               Record[String, Any]
-            ], /* payload */ Any, /* done */ js.Function2[/* err */ Any, /* secret */ js.UndefOr[secretType], Unit]) => Unit
-      ): Self = StObject.set(x, "secret", js.Any.fromFunction3(value))
-      
-      inline def setSecretFunction4(
-        value: (/* req */ Request_[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-              Any, 
-              Any, 
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-              Record[String, Any]
-            ], /* header */ Any, /* payload */ Any, /* done */ js.Function2[/* err */ Any, /* secret */ js.UndefOr[secretType], Unit]) => Unit
-      ): Self = StObject.set(x, "secret", js.Any.fromFunction4(value))
-      
-      inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
-      
-      inline def setUserPropertyUndefined: Self = StObject.set(x, "userProperty", js.undefined)
+            ], /* token */ js.UndefOr[Jwt]) => Secret | js.Promise[Secret]
+      ): Self = StObject.set(x, "secret", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
-  trait RequestHandler
-    extends typings.expressServeStaticCore.mod.RequestHandler {
+  trait Request[T]
+    extends StObject
+       with typings.expressServeStaticCore.mod.Request {
     
-    def unless(): typings.express.mod.RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
-    def unless(
-      middleware: typings.express.mod.RequestHandler[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-          Any, 
-          Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-          Record[String, Any]
-        ],
-      options: typings.expressUnless.mod.Options
-    ): typings.express.mod.RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
-    def unless(
-      options: js.Function1[
-          /* req */ Request_[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-            Any, 
-            Any, 
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-            Record[String, Any]
-          ], 
-          Boolean
-        ]
-    ): typings.express.mod.RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
-    def unless(options: typings.expressUnless.mod.Options): typings.express.mod.RequestHandler[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-        Any, 
-        Any, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-        Record[String, Any]
-      ] = js.native
-    @JSName("unless")
-    var unless_Original: FnCall = js.native
+    var auth: js.UndefOr[T] = js.native
   }
   
-  type SecretCallback = js.Function3[
+  type SecretCallback = GetVerificationKey
+  
+  type SecretCallbackLong = GetVerificationKey
+  
+  type TokenGetter = js.Function1[
     /* req */ Request_[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
       Any, 
@@ -238,52 +187,6 @@ object mod {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
       Record[String, Any]
     ], 
-    /* payload */ Any, 
-    /* done */ js.Function2[/* err */ Any, /* secret */ js.UndefOr[secretType], Unit], 
-    Unit
+    js.UndefOr[String | js.Promise[String]]
   ]
-  
-  type SecretCallbackLong = js.Function4[
-    /* req */ Request_[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
-      Any, 
-      Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
-      Record[String, Any]
-    ], 
-    /* header */ Any, 
-    /* payload */ Any, 
-    /* done */ js.Function2[/* err */ Any, /* secret */ js.UndefOr[secretType], Unit], 
-    Unit
-  ]
-  
-  object global {
-    
-    object Express {
-      
-      trait Request extends StObject {
-        
-        var user: js.UndefOr[User] = js.undefined
-      }
-      object Request {
-        
-        inline def apply(): Request = {
-          val __obj = js.Dynamic.literal()
-          __obj.asInstanceOf[Request]
-        }
-        
-        extension [Self <: Request](x: Self) {
-          
-          inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
-          
-          inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
-        }
-      }
-      
-      // tslint:disable-next-line:no-empty-interface
-      trait User extends StObject
-    }
-  }
-  
-  type secretType = String | Buffer
 }

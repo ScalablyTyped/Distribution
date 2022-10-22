@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReducerState
   extends StObject
      with DefaultReducer
-     with Map[js.Any, Reducer[js.Any]]
+     with Map[Any, Reducer[Any]]

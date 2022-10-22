@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umijs__route-utils"
-version := "3.0.0-d9ceb6"
+version := "2.2.1-03389e"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

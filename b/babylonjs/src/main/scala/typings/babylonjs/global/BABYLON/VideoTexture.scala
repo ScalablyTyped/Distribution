@@ -28,6 +28,7 @@ open class VideoTexture protected ()
     * @param samplingMode controls the sampling method and is set to TRILINEAR_SAMPLINGMODE by default
     * @param settings allows finer control over video usage
     * @param onError defines a callback triggered when an error occurred during the loading session
+    * @param format defines the texture format to use (Engine.TEXTUREFORMAT_RGBA by default)
     */
   def this(
     name: Nullable[String],
@@ -41,7 +42,8 @@ open class VideoTexture protected ()
         Nullable[
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
-      ]
+      ],
+    format: js.UndefOr[Double]
   ) = this()
   
   /**

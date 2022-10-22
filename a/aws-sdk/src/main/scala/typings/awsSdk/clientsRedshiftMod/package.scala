@@ -162,7 +162,7 @@ type IntegerOptional = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.s3_
-  - typings.awsSdk.awsSdkStrings.cloudwatch_
+  - typings.awsSdk.awsSdkStrings.cloudwatch__
   - java.lang.String
 */
 type LogDestinationType = _LogDestinationType | java.lang.String

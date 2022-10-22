@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-custom-properties
 
-Typings are for version 12.1.9
+Typings are for version 12.1.10
 
 ## Library description:
 Use Custom Properties Queries in CSS

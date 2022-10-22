@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__service-error-classification
 
-Typings are for version 3.190.0
+Typings are for version 3.193.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/service-error-classification/latest.svg)](https://www.npmjs.com/package/@aws-sdk/service-error-classification) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/service-error-classification.svg)

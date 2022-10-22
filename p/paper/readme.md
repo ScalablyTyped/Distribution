@@ -1,7 +1,7 @@
 
 # Scala.js typings for paper
 
-Typings are for version 0.12.15
+Typings are for version 0.12.16
 
 ## Library description:
 The Swiss Army Knife of Vector Graphics Scripting
