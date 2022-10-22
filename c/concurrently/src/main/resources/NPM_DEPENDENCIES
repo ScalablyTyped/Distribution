@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "concurrently" : "7.4.0"
+      "concurrently" : "7.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "concurrently" : "7.4.0"
+      "concurrently" : "7.5.0"
     }
   ],
   "compile-devDependencies" : [

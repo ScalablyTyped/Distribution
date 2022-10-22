@@ -340,7 +340,7 @@ object i18n {
     var version: String = js.native
   }
   
-  type LocaleCatalog = StringDictionary[String]
+  type LocaleCatalog = StringDictionary[String | Plurals]
   
   trait PluralOptions extends StObject {
     
@@ -374,6 +374,12 @@ object i18n {
       inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
     }
   }
+  
+  /**
+    * This interface represents a plural translation.
+    * e.g. { one: "you have 1 friend", other: "you have many friends" }
+    */
+  type Plurals = StringDictionary[String]
   
   type Replacements = StringDictionary[String]
   

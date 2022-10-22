@@ -163,7 +163,7 @@ object distSrcCommandMod {
     var name: String
     
     /**
-      * Color to use on prefix of command.
+      * Color to use on prefix of the command.
       */
     var prefixColor: js.UndefOr[String] = js.undefined
   }

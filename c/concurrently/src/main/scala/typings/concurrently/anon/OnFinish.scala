@@ -8,12 +8,12 @@ trait OnFinish extends StObject {
   
   var commands: js.Array[typings.concurrently.distSrcCommandMod.Command]
   
-  var onFinish: Unit
+  var onFinish: js.UndefOr[js.Function0[js.UndefOr[Unit]]] = js.undefined
 }
 object OnFinish {
   
-  inline def apply(commands: js.Array[typings.concurrently.distSrcCommandMod.Command], onFinish: Unit): OnFinish = {
-    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], onFinish = onFinish.asInstanceOf[js.Any])
+  inline def apply(commands: js.Array[typings.concurrently.distSrcCommandMod.Command]): OnFinish = {
+    val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnFinish]
   }
   
@@ -23,6 +23,8 @@ object OnFinish {
     
     inline def setCommandsVarargs(value: typings.concurrently.distSrcCommandMod.Command*): Self = StObject.set(x, "commands", js.Array(value*))
     
-    inline def setOnFinish(value: Unit): Self = StObject.set(x, "onFinish", value.asInstanceOf[js.Any])
+    inline def setOnFinish(value: () => js.UndefOr[Unit]): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
+    
+    inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
   }
 }

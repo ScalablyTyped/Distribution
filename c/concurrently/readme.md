@@ -1,7 +1,7 @@
 
 # Scala.js typings for concurrently
 
-Typings are for version 7.4.0
+Typings are for version 7.5.0
 
 ## Library description:
 Run commands concurrently

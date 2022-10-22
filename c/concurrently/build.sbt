@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "concurrently"
-version := "7.4.0-6e27e0"
+version := "7.5.0-d03aaa"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
