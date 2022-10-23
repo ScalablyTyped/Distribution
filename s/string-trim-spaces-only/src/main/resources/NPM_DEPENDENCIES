@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "string-trim-spaces-only" : "4.1.1"
+      "string-trim-spaces-only" : "4.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "string-trim-spaces-only" : "4.1.1"
+      "string-trim-spaces-only" : "4.1.2"
     }
   ],
   "compile-devDependencies" : [

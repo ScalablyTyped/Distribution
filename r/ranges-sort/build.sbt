@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ranges-sort"
-version := "5.1.1-42e5fe"
+version := "5.1.2-bc03e1"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

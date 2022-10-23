@@ -16,6 +16,8 @@ trait SerialPort
   
   def close(): js.Promise[Unit] = js.native
   
+  def forget(): js.Promise[Unit] = js.native
+  
   def getInfo(): PartialSerialPortInfo = js.native
   
   def onconnect(event: Event): Unit = js.native

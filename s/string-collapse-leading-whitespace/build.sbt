@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "string-collapse-leading-whitespace"
-version := "6.1.2-6d0e76"
+version := "6.1.3-e0231b"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

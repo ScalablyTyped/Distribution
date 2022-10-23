@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__hapi"
-version := "20.0-dt-20221019Z-bc9639"
+version := "20.0-dt-20221019Z-aa7c94"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hapi__iron" % "7.0.0-571c40",
   "org.scalablytyped" %%% "hapi__mimos" % "7.0.0-b3ec1d",
   "org.scalablytyped" %%% "hapi__shot" % "6.0.0-de58ae",
-  "org.scalablytyped" %%% "joi" % "17.6.3-d2af11",
+  "org.scalablytyped" %%% "joi" % "17.6.4-bd3b75",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")
 publishArtifact in packageDoc := false

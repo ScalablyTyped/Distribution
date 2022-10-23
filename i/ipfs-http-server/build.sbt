@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipfs-http-server"
-version := "0.13.2-1b8439"
+version := "0.13.2-22882f"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.0-7e747b",
   "org.scalablytyped" %%% "hapi__boom" % "10.0.0-7be43c",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20211202Z-830847",
-  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20221019Z-bc9639",
+  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20221019Z-aa7c94",
   "org.scalablytyped" %%% "hapi__iron" % "7.0.0-571c40",
   "org.scalablytyped" %%% "hapi__mimos" % "7.0.0-b3ec1d",
   "org.scalablytyped" %%% "hapi__shot" % "6.0.0-de58ae",
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "it-multipart" % "2.0.2-1d8634",
   "org.scalablytyped" %%% "it-pushable" % "3.1.0-db3546",
   "org.scalablytyped" %%% "it-stream-types" % "1.0.4-2bd2ec",
-  "org.scalablytyped" %%% "joi" % "17.6.3-d2af11",
+  "org.scalablytyped" %%% "joi" % "17.6.4-bd3b75",
   "org.scalablytyped" %%% "libp2p" % "0.39.2-711660",
   "org.scalablytyped" %%% "libp2p__components" % "2.1.0-80038a",
   "org.scalablytyped" %%% "libp2p__interface-address-manager" % "1.0.3-6ff442",

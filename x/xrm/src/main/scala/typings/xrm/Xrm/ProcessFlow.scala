@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.Events.ContextSensitiveHandler
 import typings.xrm.Xrm.Events.ProcessStatusChangeHandler
+import typings.xrm.Xrm.Events.StageChangeEventHandler
+import typings.xrm.Xrm.Events.StageSelectedEventHandler
 import typings.xrm.anon.GetValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -113,7 +115,7 @@ object ProcessFlow {
       *                anonymous function if you may later want to remove the
       *                event handler.
       */
-    def addOnPreProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
+    def addOnPreProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
     
     /**
       * Use this to add a function as an event handler for the OnPreStageChange event so that it will be called before the
@@ -125,7 +127,7 @@ object ProcessFlow {
       *                anonymous function if you may later want to remove the
       *                event handler.
       */
-    def addOnPreStageChange(handler: ContextSensitiveHandler): Unit = js.native
+    def addOnPreStageChange(handler: StageChangeEventHandler): Unit = js.native
     
     /**
       * Use this to add a function as an event handler for the OnPreProcessStatusChange event so that it will be called when the
@@ -137,7 +139,7 @@ object ProcessFlow {
       *                anonymous function if you may later want to remove the
       *                event handler.
       */
-    def addOnProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
+    def addOnProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
     
     /**
       * Use this to add a function as an event handler for the OnStageChange event so that it will be called when the
@@ -149,7 +151,7 @@ object ProcessFlow {
       *                anonymous function if you may later want to remove the
       *                event handler.
       */
-    def addOnStageChange(handler: ContextSensitiveHandler): Unit = js.native
+    def addOnStageChange(handler: StageChangeEventHandler): Unit = js.native
     
     /**
       * Use this to add a function as an event handler for the OnStageSelected event so that it will be called
@@ -257,28 +259,28 @@ object ProcessFlow {
       * @param handler If an anonymous function is set using the addOnPreStageChange method it
       *                cannot be removed using this method.
       */
-    def removeOnPreStageChange(handler: ContextSensitiveHandler): Unit = js.native
+    def removeOnPreStageChange(handler: StageChangeEventHandler): Unit = js.native
     
     /**
       * Use this to remove a function as an event handler for the OnProcessStatusChange event.
       * @param handler If an anonymous function is set using the addOnProcessStatusChange method it
       *                cannot be removed using this method.
       */
-    def removeOnProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
+    def removeOnProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
     
     /**
       * Use this to remove a function as an event handler for the OnStageChange event.
       * @param handler If an anonymous function is set using the addOnStageChange method it
       *                cannot be removed using this method.
       */
-    def removeOnStageChange(handler: ContextSensitiveHandler): Unit = js.native
+    def removeOnStageChange(handler: StageChangeEventHandler): Unit = js.native
     
     /**
       * Use this to remove a function as an event handler for the OnStageChange event.
       * @param handler If an anonymous function is set using the addOnStageChange method it
       *                cannot be removed using this method.
       */
-    def removeOnStageSelected(handler: ContextSensitiveHandler): Unit = js.native
+    def removeOnStageSelected(handler: StageSelectedEventHandler): Unit = js.native
     
     /**
       * Set a Process as the active process.

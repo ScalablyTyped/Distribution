@@ -1,7 +1,7 @@
 
 # Scala.js typings for ranges-sort
 
-Typings are for version 5.1.1
+Typings are for version 5.1.2
 
 ## Library description:
 Sort string index ranges

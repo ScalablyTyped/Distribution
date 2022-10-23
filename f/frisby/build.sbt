@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "frisby"
-version := "2.0-dt-20220819Z-96c6e1"
+version := "2.0-dt-20220819Z-ad2dc6"
 scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
   "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-0c5722",
-  "org.scalablytyped" %%% "joi" % "17.6.3-d2af11",
+  "org.scalablytyped" %%% "joi" % "17.6.4-bd3b75",
   "org.scalablytyped" %%% "node" % "18.11-dt-20221020Z-d73de4",
   "org.scalablytyped" %%% "node-fetch" % "3.2.10-9450e8",
   "org.scalablytyped" %%% "std" % "4.8-3c7765")

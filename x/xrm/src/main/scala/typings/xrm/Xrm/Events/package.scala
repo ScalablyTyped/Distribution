@@ -27,3 +27,7 @@ type ProcessStatusChangeHandler = js.Function1[/* context */ ProcessStatusChange
 type SaveEventHandler = js.Function1[/* context */ SaveEventContext, Unit]
 
 type SaveEventHandlerAsync = js.Function1[/* context */ SaveEventContextAsync, PromiseLike[Unit]]
+
+type StageChangeEventHandler = js.Function1[/* context */ StageChangeEventContext, Unit]
+
+type StageSelectedEventHandler = js.Function1[/* context */ StageSelectedEventContext, Unit]

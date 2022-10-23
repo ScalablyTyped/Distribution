@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-tooltip" : "4.4.2"
+      "react-tooltip" : "4.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-tooltip" : "4.4.2"
+      "react-tooltip" : "4.4.3"
     }
   ],
   "compile-devDependencies" : [

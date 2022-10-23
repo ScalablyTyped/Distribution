@@ -81,7 +81,7 @@ trait Root extends StObject {
   def binary[TSchema](): BinarySchema[TSchema] = js.native
   
   /**
-    * Generates a schema object that matches a boolean data type (as well as the strings 'true', 'false', 'yes', and 'no'). Can also be called via bool().
+    * Generates a schema object that matches a boolean data type (as well as the strings 'true', 'false', 'yes', and 'no'). Can also be called via boolean().
     */
   def bool[TSchema](): BooleanSchema[TSchema] = js.native
   
